@@ -50,7 +50,7 @@ You can access **Project onboarding** from the hamburger dropdown menu of an imp
 
 ## FastTrack onboarding services
 
-After your LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will contact your project team to discuss onboarding services. For more information about the FastTrack program and the services that it offers, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
+After completing your LCS **project onboarding** setup, the Microsoft FastTrack team will contact your project team to discuss onboarding services. For more information about the FastTrack program and the services that it offers, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
 The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program and help you with the initial configuration of the LCS project and related tasks:
 
