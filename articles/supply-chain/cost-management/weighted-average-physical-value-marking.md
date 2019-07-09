@@ -105,8 +105,8 @@ The following transactions are illustrated in the graphic below:
 -   4a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
 -   4b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
 -   5. Inventory close is performed.
--   6a. "Weighted average inventory close transaction" financial issue is created to sum the settlements of all the inventory financial receipts.
--   6b. "Weighted average inventory close transaction" financial receipt is created as the offset to 5a.
+-   6a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
+-   6b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
 
 The following diagram illustrates this series of transactions with the effects of choosing the Weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
@@ -167,8 +167,8 @@ The following transactions are illustrated in the graphic below:
 -   5a. Inventory physical receipt updated for a quantity of 1 at a cost of USD 14.00 each.
 -   5b. Inventory financial receipt updated for a quantity of 1 at a cost of USD 16.00 each.
 -   6. Inventory close is performed. During inventory close, the system will disregard all inventory transactions that are updated only physically. The summarized settlement principle will be used because only one financial receipt exists. An adjustment of USD 1.50 will be posted to the inventory transaction that has been financially issued as of the inventory closing date. After inventory close, the on- hand inventory will be a quantity of 3 with a running average cost price of USD 15.00.
--   7a. "Weighted average inventory close transaction" financial issue is created to sum the settlements of all the inventory financial receipts.
--   7b. "Weighted average inventory close transaction" financial receipt is created as the offset to 5a.
+-   7a. “Weighted average inventory close transaction” financial issue is created to sum the settlements of all the inventory financial receipts.
+-   7b. “Weighted average inventory close transaction” financial receipt is created as the offset to 5a.
 
 The following diagram illustrates this series of transactions with the effects of choosing the weighted average inventory model and the summarized settlement principle without the Include physical value option. 
 
@@ -191,13 +191,13 @@ The following diagram illustrates this series of transactions with the effects o
 ## Weighted average with marking
 Marking is a process that lets you link, or mark, an issue transaction to a receipt transaction. Marking can occur either before or after a transaction is posted. You can use marking when you want to make sure of the exact cost of the inventory when the transaction is posted or when the inventory close is performed. 
 
-For example, your Customer Service department accepted a rush order from an important customer. Because this is a rush order, you will have to pay more for this item to service your customer's request. You must be certain the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice. 
+For example, your Customer Service department accepted a rush order from an important customer. Because this is a rush order, you will have to pay more for this item to service your customer’s request. You must be certain the cost of this inventory item is reflected in the margin, or cost of goods sold (COGS), for this sales order invoice. 
 
 When the purchase order is posted, the inventory is received at a cost of USD 120.00. For example, this sales order document is marked to the purchase order before the packing slip or invoice is posted. Then COGS will be USD 120.00 instead of the current running average cost for the item. If the sales order packing slip or invoice is posted before the marking occurs, the COGS will be posted at the running average cost price. 
 
 Before inventory close is performed, these two transactions can still be marked to each other. 
 
-A receipt transaction is marked to an issue transaction. Then, the valuation method selected for the item's item model group will be disregarded and the system will settle these transactions to each other. 
+A receipt transaction is marked to an issue transaction. Then, the valuation method selected for the item’s item model group will be disregarded and the system will settle these transactions to each other. 
 
 You can mark an issue transaction to a receipt before the transaction is posted. You can do this from a sales order line in the Sales order details page. The open receipt transactions are viewed in the Marking page. 
 
