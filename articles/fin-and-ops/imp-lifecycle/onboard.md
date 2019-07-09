@@ -5,7 +5,7 @@ title: Onboard a Finance and Operations implementation project
 description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 02/09/2018
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
