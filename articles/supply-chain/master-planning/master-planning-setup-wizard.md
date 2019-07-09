@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up master planning
+title: Master planning setup wizard 
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
 manager: AnnBe
@@ -30,12 +30,9 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Set up master planning
+# Master planning setup wizard 
 
 [!include [banner](../includes/banner.md)]
-
-
-# Master planning  setup wizard 
 
 This page will guide you through the master planning setup wizard. It will guide you through every page of the wizard and give you details of how the parameter suggestions are calculated. Examples of how different companies setup their master planning depending on their business needs will also be provided. 
 
