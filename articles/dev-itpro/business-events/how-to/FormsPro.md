@@ -53,7 +53,7 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
 
 3. Set up the flow that will be triggered by the business event whenever the status of the sales order is updated (see the illustration in the next step). After it's triggered, the flow will use the Forms connector to send the survey to the customer email address that is registered on the sales order.
 
-    The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](../business-events/business-events-dev-doc.md).
+    The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](/business-events/business-events-dev-doc.md).
 
 4. Because Microsoft Flow is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in Microsoft Dynamics 365 for Finance and Operations. Instead, set up Microsoft Flow so that it subscribes directly to the business event.
 
