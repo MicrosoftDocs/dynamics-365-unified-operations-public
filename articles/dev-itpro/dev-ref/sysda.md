@@ -228,6 +228,9 @@ qe.WhereClause(new SysDaEqualsExpression(
 var ds = new SysDaDeleteStatement();
 var delobj = new SysDaDeleteObject(qe);
 
+// The deletion statement, from the SysDaDeleteObject, is:
+// DELETE_FROM intField FROM TestTable WHERE ((TestTable.intField MOD 2) == 0)
+
 ttsbegin;
     ds.executeQuery(delobj);
 ttscommit;
