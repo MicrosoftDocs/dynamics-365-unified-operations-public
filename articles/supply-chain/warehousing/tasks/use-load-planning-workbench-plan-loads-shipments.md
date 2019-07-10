@@ -48,7 +48,7 @@ This topic shows how to use the load planning workbench to create a load for a s
 12. Close the page.
 
 ## Create a new load
-1. Go to the **navigation pane > Modules > Transportation management > Planning > Load planning workbench**.
+1. Go to the **Navigation pane > Modules > Transportation management > Planning > Load planning workbench**.
 2. Select the **Sales lines** tab. Now you'll build the load for the sales order that you just created. Loads can be built based on supply and demand from purchase orders, transfer orders, and sales orders.  
 3. On the Action Pane, select **Supply and demand**.
 4. Select **To new load**.
