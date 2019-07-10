@@ -104,27 +104,26 @@ To run an update statement:
 + Update data by by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to  **execute** in `ttsbegin` and `ttscommit` statements.
 
 ```X++
-// Update stringField to "Updated Value" for all rows where intField = 50.
+// Update stringField to "fifty" for all rows where intField = 50.
 
 TestTable t;
 
 // Create an update query to find rows where intField = 50.
 var uo = new SysDaUpdateObject(t);
 
-// Set stringField to "Updated Value".
+// Set stringField to "fifty".
 uo.settingClause()
-   .add(fieldStr(TestTable, stringField), new SysDaValueExpression("Updated Value"));
+    .add(fieldStr(TestTable, stringField), new SysDaValueExpression("fifty"));
 
 // At this point we have built a query object like:
-// select intField, stringField from t
+// UPDATE_RECORDSET TestTable SETTING stringField=fifty
 
 uo.whereClause(new SysDaEqualsExpression(
     new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
     new SysDaValueExpression(50)));
 
-// At this point we have built a query object like:
-// select intField, stringField from t 
-// where t.intField = 50
+// At this point we have built a statement like:
+// UPDATE_RECORDSET TestTable SETTING stringField=fifty WHERE (TestTable.intField == 50)
 
 // Update the rows.
 ttsbegin;
@@ -133,9 +132,9 @@ ttscommit;
 
 // Verify the results of the update query.
 TestTable t1;
-select * from t1 where t1.intField == 50;
-var updatedValue = t1.stringField;
+select intField, stringField from t1 where t1.intField == 50;
 info("Updated value is: " + t1.stringField);
+// Output is: "Updated value is: fifty".
 ```
 
 ## Insert statement
