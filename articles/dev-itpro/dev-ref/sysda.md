@@ -148,7 +148,7 @@ To run an insert statement:
 + Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
 ```X++
-// Insert rows with intField = 40 and stringField = "en-us".
+// Insert rows into TestTable with intField = 40 and stringField = "en-us".
 TestTable t;
 
 // Specify the fields in the new row.
@@ -156,6 +156,9 @@ var insertObject = new SysDaInsertObject(t);
 insertObject.fields()
     .add(fieldStr(TestTable, stringField))
     .add(fieldStr(TestTable, intField));
+
+// At this point we have built an insert statement like:
+// INSERT_RECORDSET TestTable(stringField, intField) SELECT
 
 // Retrieve the data to insert from the LanguageTable.
 LanguageTable source;
@@ -165,12 +168,21 @@ var s1 = qe.projection()
     .Add(fieldStr(LanguageTable, LanguageId))
     .AddValue(40);
 
+// We have a query statement that looks like this:
+// LanguageId, 40 FROM LanguageTable
+
 qe.WhereClause(new SysDaEqualsExpression(
-                new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
-                new SysDaValueExpression("en-us")));
+        new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
+        new SysDaValueExpression("en-us")));
+
+// Now the query reads:
+// LanguageId, 40 FROM LanguageTable WHERE (LanguageTable.LanguageId == en-us)
 
 // Assign the query to the insert statement.
-insertObject.query(qe);
+insertObject.query(qe); 
+
+// The insert statement now reads:
+//INSERT_RECORDSET TestTable(stringField, intField) SELECT LanguageId, 40 FROM LanguageTable WHERE (LanguageTable.LanguageId == en-us)
 
 var insertStmt = new SysDaInsertStatement();
 ttsbegin;
@@ -181,6 +193,7 @@ ttscommit;
 TestTable t1;
 select * from t1 where t1.stringField == "en-us";
 info(any2Str(t1.intField) + ":" + t1.stringField); 
+// The output is "40:en-us".
 ```
 
 ## Delete statement
