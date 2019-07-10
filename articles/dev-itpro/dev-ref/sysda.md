@@ -55,45 +55,45 @@ To run a select query:
 
 
 ```X++
-        // Find all rows in TestTable where intField <= 5.
+// Find all rows in TestTable where intField <= 5.
 
 // t is the table buffer that will hold the result.
 TestTable t;
 
-        // Create the query.
-        var qe = new SysDaQueryObject(t);
-        // Add clauses to the query. First the projection.
-        var s = qe.projection()
+// Create the query.
+var qe = new SysDaQueryObject(t);
+
+// Add clauses to the query. First the projection.
+var s = qe.projection()
     .add(fieldStr(TestTable, intField))
     .add(fieldStr(TestTable, stringField));
 
-        // At this point we have built a query object like:
+// At this point the query is:
 // intField, stringField FROM TestTable
 
 // Add a where clause to include rows where intField is <= 5.
-        qe.WhereClause(new SysDaLessThanOrEqualsExpression(
+qe.WhereClause(new SysDaLessThanOrEqualsExpression(
     new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
     new SysDaValueExpression(5)));
 
-        // At this point we have built a query object like:
+// Now the query is:
 // intField, stringField FROM TestTable WHERE (TestTable.intField<= 5)
 
 // Order the results by intField.
-        qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
+qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
 
-        // Now the query reads:
+// Now the query is:
 // intField, stringField FROM TestTable ORDER BY intField DESC WHERE (TestTable.intField<= 5)
 
-        var so = new SysDaSearchObject(qe);
-        var ss = new SysDaSearchStatement();
+var so = new SysDaSearchObject(qe);
+var ss = new SysDaSearchStatement();
 
-        // Enumerate the designated values by using ss.
-        while (ss.next(so))
-        {
-            info(t.stringField);
-        }
+// Enumerate the designated values by using ss.
+while (ss.next(so))
+{
+    info(t.stringField);
+}
 
-        info("end query");
 ```
 
 ## Update statement
@@ -115,14 +115,14 @@ var uo = new SysDaUpdateObject(t);
 uo.settingClause()
     .add(fieldStr(TestTable, stringField), new SysDaValueExpression("fifty"));
 
-// At this point we have built a query object like:
+// At this point the update statement is:
 // UPDATE_RECORDSET TestTable SETTING stringField=fifty
 
 uo.whereClause(new SysDaEqualsExpression(
     new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
     new SysDaValueExpression(50)));
 
-// At this point we have built a statement like:
+// Now the update statement is:
 // UPDATE_RECORDSET TestTable SETTING stringField=fifty WHERE (TestTable.intField == 50)
 
 // Update the rows.
@@ -156,10 +156,10 @@ insertObject.fields()
     .add(fieldStr(TestTable, stringField))
     .add(fieldStr(TestTable, intField));
 
-// At this point we have built an insert statement like:
+// At this point the insert statement is:
 // INSERT_RECORDSET TestTable(stringField, intField) SELECT
 
-// Retrieve the data to insert from the LanguageTable.
+// Retrieve the data to insert from the LanguageTable by using a query.
 LanguageTable source;
 var qe = new SysDaQueryObject(source);
 
@@ -167,21 +167,21 @@ var s1 = qe.projection()
     .Add(fieldStr(LanguageTable, LanguageId))
     .AddValue(40);
 
-// We have a query statement that looks like this:
+// The query statement is:
 // LanguageId, 40 FROM LanguageTable
 
 qe.WhereClause(new SysDaEqualsExpression(
         new SysDaFieldExpression(source, fieldStr(LanguageTable, LanguageId)),
         new SysDaValueExpression("en-us")));
 
-// Now the query reads:
+// Now the query is:
 // LanguageId, 40 FROM LanguageTable WHERE (LanguageTable.LanguageId == en-us)
 
 // Assign the query to the insert statement.
 insertObject.query(qe); 
 
-// The insert statement now reads:
-//INSERT_RECORDSET TestTable(stringField, intField) SELECT LanguageId, 40 FROM LanguageTable WHERE (LanguageTable.LanguageId == en-us)
+// The insert statement is now:
+// INSERT_RECORDSET TestTable(stringField, intField) SELECT LanguageId, 40 FROM LanguageTable WHERE (LanguageTable.LanguageId == en-us)
 
 var insertStmt = new SysDaInsertStatement();
 ttsbegin;
@@ -206,12 +206,13 @@ To run an delete statement:
 ```X++
 TestTable t;
 
+// Build the query that specifies which rows to delete.
 var qe = new SysDaQueryObject(t);
 
 var s = qe.projection()
     .add(fieldStr(TestTable, intField));
 
-// At this point we have built this statement:
+// At this point the query is:
 // intField FROM TestTable
 
 // Delete rows where intField is even.
@@ -221,8 +222,8 @@ qe.WhereClause(new SysDaEqualsExpression(
     new SysDaValueExpression(2)),
     new SysDaValueExpression(0)));
 
-// Now the statement is:
-// intField FROM RobinTestTable WHERE ((RobinTestTable.intField MOD 2) == 0)
+// Now the query is:
+// intField FROM TestTable WHERE ((TestTable.intField MOD 2) == 0)
 
 var ds = new SysDaDeleteStatement();
 var delobj = new SysDaDeleteObject(qe);
