@@ -545,7 +545,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-6. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+6. Select the **1070** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 7. Install and activate Modern POS for Windows.
 8. Start Modern POS for Windows, and begin to use the connected peripheral devices.
 

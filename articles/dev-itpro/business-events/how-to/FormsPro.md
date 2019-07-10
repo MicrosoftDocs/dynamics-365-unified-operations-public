@@ -3,9 +3,9 @@
 
 title: Use Microsoft Forms Pro with business events
 description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
-author: Sunil-Garg
+author: murrayfife
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 07/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
@@ -53,7 +53,7 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
 
 3. Set up the flow that will be triggered by the business event whenever the status of the sales order is updated (see the illustration in the next step). After it's triggered, the flow will use the Forms connector to send the survey to the customer email address that is registered on the sales order.
 
-    The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](../business-events/business-events-dev-doc.md).
+    The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
 
 4. Because Microsoft Flow is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in Microsoft Dynamics 365 for Finance and Operations. Instead, set up Microsoft Flow so that it subscribes directly to the business event.
 

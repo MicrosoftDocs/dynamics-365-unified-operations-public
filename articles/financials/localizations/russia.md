@@ -5,7 +5,7 @@ title: Russia
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,6 +100,16 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Tax registration info related to address](emea-registration-ids.md)
 - [Set up officials](rus-officials.md)
 - [Company divisions](rus-company-divisions.md)
+
+## Deferrals
+
+- [Deferral transactions](rus-deferral-transactions.md)
+- [Set up deferrals](rus-set-up-deferrals.md)
+- [Create or generate referrals](rus-create-generate-deferrals.md)
+- [Deferrals counting](rus-counting-deferrals.md)
+- [Write-off deferrals](rus-write-off-deferral.md)
+- [Dispose of deferrals](rus-dispose-deferrals.md)
+- [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Additional resources
 
