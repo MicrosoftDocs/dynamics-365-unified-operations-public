@@ -55,46 +55,45 @@ To run a select query:
 
 
 ```X++
-// Find all rows in TestTable where intField <= 5.
+        // Find all rows in TestTable where intField <= 5.
 
 // t is the table buffer that will hold the result.
-TestTable t; 
+TestTable t;
 
-// Create the query.
-var qe = new SysDaQueryObject(t);
-// Add clauses to the query. First the projection.
-var s = qe.projection()
+        // Create the query.
+        var qe = new SysDaQueryObject(t);
+        // Add clauses to the query. First the projection.
+        var s = qe.projection()
     .add(fieldStr(TestTable, intField))
     .add(fieldStr(TestTable, stringField));
 
-// At this point we have built a query object like:
-// select intField, stringField from t
+        // At this point we have built a query object like:
+// intField, stringField FROM TestTable
 
 // Add a where clause to include rows where intField is <= 5.
-qe.WhereClause(new SysDaLessThanOrEqualsExpression(
+        qe.WhereClause(new SysDaLessThanOrEqualsExpression(
     new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
     new SysDaValueExpression(5)));
 
-// At this point we have built a query object like:
-// select intField, stringField from t 
-// where t.intField < 5
+        // At this point we have built a query object like:
+// intField, stringField FROM TestTable WHERE (TestTable.intField<= 5)
 
 // Order the results by intField.
-qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
+        qe.OrderByClause().addDescending(fieldStr(TestTable, intField));
 
-// Now the query reads:
-// select intField, stringField from t 
-// where t.intField < 5
-// order by infField
+        // Now the query reads:
+// intField, stringField FROM TestTable ORDER BY intField DESC WHERE (TestTable.intField<= 5)
 
-var so = new SysDaSearchObject(qe);
-var ss = new SysDaSearchStatement();
+        var so = new SysDaSearchObject(qe);
+        var ss = new SysDaSearchStatement();
 
-// Enumerate the designated values by using ss.
-while (ss.next(so))
-{
-    info(t.stringField);
-}
+        // Enumerate the designated values by using ss.
+        while (ss.next(so))
+        {
+            info(t.stringField);
+        }
+
+        info("end query");
 ```
 
 ## Update statement
@@ -228,3 +227,9 @@ SysDa queries support several clauses:
 + `joinClause` with `joinClauseKind`
 + `joinedQuery`
 + `settingClause`
+
+## Troubleshooting
+
+You can use the **toString()** method **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the query of statement you are building.
+
+
