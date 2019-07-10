@@ -1007,6 +1007,8 @@
         href: deployment/deploy-retail-onprem.md
     - name: Develop and deploy custom models to on-premises environments
       href: deployment/develop-deploy-custom-models-on-premises.md
+    - name: PowerBI.com integration with on-premises environments
+      href: analytics/entity-store-on-prem.md
     - name: Configure reverse proxies for on-premises environments
       href: deployment/onprem-reverseproxy.md
     - name: Apply updates to an on-premises deployment
@@ -1023,6 +1025,8 @@
       href: user-interface/client-disconnected.md
     - name: Troubleshoot on-premises deployments
       href: deployment/troubleshoot-on-prem.md
+    - name: Certificate rotation
+      href: deployment/certificate-rotation-on-prem.md
   - name: Deploy custom code
     items:
     - name: Create deployable packages of models
@@ -1135,7 +1139,7 @@
       href: migration-upgrade/on-prem-upgrade.md
   - name: Hotfixes
     items:
-    - name: Download hotfixes from Lifecycle Services
+    - name: Get updates from Lifecycle Services
       href: migration-upgrade/download-hotfix-lcs.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md

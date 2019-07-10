@@ -5,7 +5,7 @@ title: X++ variables
 description: This topic describes variables in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -234,7 +234,7 @@ If you're in the scope of the class where the constant (**const**) is defined, y
         const int Green = 0x00FF00;
         const int Red = 0xFF0000;
     }
-    
+
 ## Null values for data types
 Microsoft Dynamics 365 for Finance and Operations doesn't support the concept of **null** values that is available in many other database management systems (DBMSs). A variable in X++ always has a type and a value. However, for each data type, one value is considered **null** (for example, when the **validateField** table method is run).
 

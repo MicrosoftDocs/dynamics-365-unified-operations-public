@@ -88,7 +88,6 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Developer tools add-ins](developer-tools-add-ins.md)
 -   [Distribution of models: How to export and import a model](models-export-import.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
--   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 -   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)

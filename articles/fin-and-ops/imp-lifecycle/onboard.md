@@ -41,7 +41,7 @@ After you've purchased and activated a subscription to Finance and Operations, a
 
 After your LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will contact your project team to discuss onboarding services. For more information about the FastTrack program and the services that it offers, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program and help you with the initial configuration of the LCS project and related tasks:
+The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program. The team will also help you with the initial configuration of the LCS project and related tasks:
 
 - Tenant validation
 - Introduction to LCS
@@ -69,7 +69,7 @@ We recommend that the people in the following project roles participate in the m
 
 We recommend that you add key project members (such as project managers) to the LCS project. Be sure to include each person's work email address. In this way, you help us work best with you and help guarantee that project members don't miss important communication from us.
 
-Keep the milestone dates in your LCS project current to help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
+Be sure to keep the milestone dates in your LCS project current. In this way, you help us connect with you at different project stages. When you're closer to your go-live date, we will contact you for a project Go-live assessment before we deploy your production environment.
 
 Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
 
