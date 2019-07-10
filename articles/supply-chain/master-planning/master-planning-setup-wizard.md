@@ -53,6 +53,7 @@ Read the [number of threads](https://docs.microsoft.com/en-us/dynamics365/unifie
 ### Bundle size
 
 Bundle size will be set to **1**. This is commonly the best value for the bundle size, as it will improve master planning performance.  
+
 Read the [bundle size](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) topic for more information.
 
 ### Firming bundle size**
@@ -98,15 +99,15 @@ Read the [time fences parameters](https://docs.microsoft.com/en-us/dynamics365/u
 
 ## Scheduling options
 
-This page will only be shown in the wizard if you answered yes to --"Do you manufacture any of the items planned?"-- in the first page. 
+This page will appear only if you previously answered yes to the question **Do you manufacture any of the items planned?** on the first page of the wizard. 
 
-In this page you find the first question: --"Do you need to schedule operations divided into individual jobs?"-- . Your answer will change the Scheduling method under the General tab in the master plans page:
+The first question, **Do you need to schedule operations divided into individual jobs?** determines the scheduling method on the **General** tab on the **Master plans** page.
 
-- --Yes--: job scheduling
+- **Yes**: if you select **Yes**, job scheduling will be used.
 
-- --No--: operations scheduling
+- **No**: if you select **No**, operations scheduling will be used.
 
-You can read more about [job scheduling page] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and [operations scheduling page]  (https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling)
+For more information, see the [job scheduling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and the [operations scheduling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) topics.
 
 ## Updates of demand and supply
 
