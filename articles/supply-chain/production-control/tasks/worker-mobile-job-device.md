@@ -34,7 +34,7 @@ This topic explains how to assign the correct roles to the user account of a wor
 
 ## Verify that a worker is assigned a certain role
 
-For this example, we want to verify that User "SHANNON" is assigned the machine operator role before we configure the worker account.
+For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.
 
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.
 2. Search for a user in the quick filter. For this example, enter `shannon`.
