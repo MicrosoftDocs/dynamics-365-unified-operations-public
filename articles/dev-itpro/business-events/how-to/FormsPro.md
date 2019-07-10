@@ -3,7 +3,7 @@
 
 title: Use Microsoft Forms Pro with business events
 description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
-author: Sunil-Garg, murrayfife
+author: murrayfife
 manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: article
