@@ -91,6 +91,17 @@ Regardless of whether the environment is a cloud-hosted environment or a downloa
 
 All Finance and Operations customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
 
+> start changes <
+
+About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
+
+You can download the checklist from Dynamics 365 Community on the Go-live Planning TechTalk page.  
+
+The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
+
+When you've completed the go-live checklist, please email it to Dynamics 365 FO Go-Live d365fogl@microsoft.com. Please always include a key stakeholder from the customer and the implementation partner on the email.
+< end>
+
 About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist:
 
 - If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.
