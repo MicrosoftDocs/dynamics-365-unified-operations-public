@@ -197,7 +197,7 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 ## Delete statement
 
-To run an delete statement:
+To run a delete statement:
 
 + Create and configure a **SysDaQueryObject** object to specify which rows to delete.
 + Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
