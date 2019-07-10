@@ -17,11 +17,11 @@ Find the right online training, in person workshops, and events for your role as
 
         Do you decide whether to invest in new technologies? Start here.
 
-        [Join us at an event](learning-catalog-business-user.md)
+        [Join us at an event](learning-catalog-bdm.md)
 
-        [Get started](learning-catalog-business-user.md)
+        [Get started](learning-catalog-bdm.md)
 
-        [See case studies](learning-catalog-business-user.md)
+        [See case studies](learning-catalog-bdm.md)
 
     :::column-end:::
     :::column:::
