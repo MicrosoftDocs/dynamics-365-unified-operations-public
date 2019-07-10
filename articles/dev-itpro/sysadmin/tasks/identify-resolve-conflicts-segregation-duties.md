@@ -34,7 +34,7 @@ This topic explains how to identify and resolve conflicts in segregation of duti
 
 
 ## Verify whether user role assignments comply with new rules for segregation of duties
-1. Go to **Navigation pane > Modules > System administration > Security > Segregation of duties > Verify compliance of user-role assignments.
+1. Go to **Navigation pane > Modules > System administration > Security > Segregation of duties > Verify compliance of user-role assignments**.
 2. Select **OK**. A notification displays the results of the validation. If there is a conflict, you can open the **Users** page and change the user’s role assignments. Conflicts are also logged on the **Segregation of duties conflicts** page. To run the verification process as a batch job, select **Batch processing**, and then set the other batch parameters. After the batch job runs, you can review the conflicts in the **Segregation of duties conflicts** page.  
 
 ## View and resolve conflicting user role assignments
