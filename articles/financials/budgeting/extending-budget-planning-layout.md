@@ -1,4 +1,4 @@
-Overview
+**Overview**
 
 This article describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if multiple years are being compared, the number of scenarios being evaluated are very large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
 
@@ -13,13 +13,13 @@ This article describes how to extend the number of columns in the BudgetPlanLine
   1. Open Visual Studio
   2. Open Application explorer.
   3. Create a new extension on BudgetPlanLineActiveView to a new project.
-  4. Open the table in designer mode. (Right-click -\&gt; Open).
-  5. Right click on Fields and select New -\&gt; Real
+  4. Open the table in designer mode. 
+  5. Right click on Fields and select New -> Real
   6. Name the field with the next available name with the suffix incremented. Example: TransactionCurrencyAmount37.
   7. Set the Extended Data type to BudgetPlanCurrencyAmount
-  8. Right click on Fields and select New - \&gt; Real
-  9. Name the field with the next available name with the suffix incremented. Example: Quantity37. Set the extended data type to BudgetPlanQuantity.
-  10. Repeat steps 5 through 8 for as many columns required of each type.
+  8. Right click on Fields and select New -> Real
+  9. Name the field with the next available name with the suffix incremented. Example: Quantity37. Set the extended data type to  BudgetPlanQuantity.
+  10. Repeat steps 5 through 9 for as many columns required of each type.
   11. Optionally, add the monetary columns added to the Monetary field group quantity columns  to the Quantity field group.
 
 **Extending the columns on BudgetPlanLineActiveView**
@@ -68,10 +68,10 @@ To update the BudgetPlan form with the new columns, follow the steps below:
     }
 
 
-  3.  Before finishing, verify that a modified event handler exists for every TransactionCurrencyAmount or Quantity column copy you&#39;ve created.
+  3.  Before finishing, verify that a modified event handler exists for every TransactionCurrencyAmount or Quantity column copy you've created.
 
 
-  4. Type &#39;LineViewLinesGrid&#39; in the search window above the form designer and expand the node once found. See figure 4 below.
+  4. Type &#39;LineViewLinesGrid&#39; in the search window above the form designer and expand the node once found. 
 
 Cancel search by clicking the &#39;x&#39; at the end of the search window. The lines view grid will remain expanded and in view.
 
