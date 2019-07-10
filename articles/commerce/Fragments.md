@@ -82,14 +82,15 @@ To convert an already configured module into a reusable fragment:
 
 To add a fragment to your page:
 
-1. First select a container or slot that allows children to be added to it. [^1.1]
+1. First select a container or slot that allows children to be added to it. (See note below)
 2. In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container or slot’s name to show the action dropdown menu.
 3. Select the “Add Fragment” option from the dropdown \[Note: As mentioned above, if the container or slot does not allow new child modules, the “Add Fragment” option will be disabled\].
 4. After selecting “Add Fragment” option, the Fragment Picker modal window will launch. The Fragment Picker modal is automatically filtered to show allowable fragments for the chosen container/slot (as determined by the page’s template or the container module definition).
 5. From the fragment options, search for and select one to add (If there are no options, you may first need to create a fragment from a supported module type for your container/slot).
 6. Click “OK”, and the new fragment will be added to your page within the originally selected container/slot.
 
-[^1.1]: Modules allowed within a container or slot are defined by the page’s template or the module's own definition, both of which are covered elsewhere.
+> [!NOTE]
+> Modules allowed within a container or slot are defined by the page’s template or the module's own definition, both of which are covered elsewhere.
 
 ## Remove a fragment
 
