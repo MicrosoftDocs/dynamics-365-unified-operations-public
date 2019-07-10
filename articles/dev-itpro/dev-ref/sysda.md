@@ -204,7 +204,6 @@ To run an delete statement:
 + Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
 ```X++
-// Delete rows where intField is even.
 TestTable t;
 
 var qe = new SysDaQueryObject(t);
@@ -212,12 +211,18 @@ var qe = new SysDaQueryObject(t);
 var s = qe.projection()
     .add(fieldStr(TestTable, intField));
 
+// At this point we have built this statement:
+// intField FROM TestTable
+
 // Delete rows where intField is even.
 qe.WhereClause(new SysDaEqualsExpression(
     new SysDaModExpression(
-        new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
-        new SysDaValueExpression(2)),
-        new SysDaValueExpression(0)));
+    new SysDaFieldExpression(t, fieldStr(TestTable, intField)),
+    new SysDaValueExpression(2)),
+    new SysDaValueExpression(0)));
+
+// Now the statement is:
+// intField FROM RobinTestTable WHERE ((RobinTestTable.intField MOD 2) == 0)
 
 var ds = new SysDaDeleteStatement();
 var delobj = new SysDaDeleteObject(qe);
@@ -234,8 +239,8 @@ info("Number of rows after deletion: " + any2Str(t.RowCount()));
 SysDa queries support several clauses:
 
 + `whereClause`: The where clause is constructed from objects that inherit from **SysDaQueryExpression**. Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. You can find the full list by filtering in the Application Explorer.
-+ `orderByClause`: .add and .addDescending 
-+ `groupByClause`:
++ `orderByClause`
++ `groupByClause`
 + `joinClause` with `joinClauseKind`
 + `joinedQuery`
 + `settingClause`
