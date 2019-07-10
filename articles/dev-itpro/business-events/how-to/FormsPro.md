@@ -3,9 +3,9 @@
 
 title: Use Microsoft Forms Pro with business events
 description: This topic goes through a scenario where a survey is sent to users when a product has been shipped. The survey information is gathered by using Microsoft Forms Pro.
-author: Sunil-Garg
+author: murrayfife
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 07/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -21,7 +21,7 @@ ms.search.scope: Operations, Core
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: mufife
 ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
