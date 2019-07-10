@@ -251,6 +251,6 @@ SysDa queries support several clauses:
 
 ## Troubleshooting
 
-You can use the **toString()** method **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the query of statement you are building.
+You can use the **toString()** method **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you are building.
 
 
