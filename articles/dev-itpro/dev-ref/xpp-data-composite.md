@@ -40,44 +40,46 @@ This topic describes composite data types in X++. The composite data types in X+
 
 An *array* is a variable that contains a list of items that have the same data type. The elements of an array are accessed by using integer indexes. You use a separate statement to initialize each element in an array. When you use a container data type or an array object to create a collection, you can initialize multiple elements by using a single statement. By default, all the items in an array have the default value of the data type in the array. There are three kinds of arrays: *dynamic arrays*, *fixed-length arrays*, and *partly on disk arrays*.
 
--   **Dynamic arrays** – These arrays are declared by using an empty array option. In other word, they have only brackets (\[\]).
--   **Fixed-length arrays** – These arrays can hold the number of items that is specified in the declaration. Fixed-length arrays are declared like dynamic arrays, but a length option is included in the brackets.
--   **Partly on disk arrays** – These arrays are declared as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory. The other items are stored on disk and are automatically loaded when they are referenced.
+- **Dynamic arrays** – These arrays are declared by using an empty array option. In other word, they have only brackets (\[\]).
+- **Fixed-length arrays** – These arrays can hold the number of items that is specified in the declaration. Fixed-length arrays are declared like dynamic arrays, but a length option is included in the brackets.
+- **Partly on disk arrays** – These arrays are declared as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory. The other items are stored on disk and are automatically loaded when they are referenced.
 
 X++ supports only one-dimensional arrays. However, you can mimic the behavior of multiple array indexes. (For more information, see the "Multiple array indexes" section). Variables in objects and tables can be declared as arrays. For example, this functionality is used in address lines in the standard application. An array collection class lets you store objects in an array. Array indexes begin at 1. The first item in the array is referenced as \[1\], the second item is referenced as \[2\], and so on. The following syntax is used to access an array element: **ArrayItemReference = ArrayVariable \[ Index \]**. In this syntax, **ArrayVariable** is the identifier of the array, and **Index** is the number of the array element. **Index** can be an integer expression. Item zero \[0\] is used to clear the array. If a value is assigned to index 0 in an array, all elements in the array are reset to their default value.
 
 ### Array examples
 
-    public void ArrayMethod()
-    {
-        int myArray[10]; // Fixed-length array with 10 integers.
-        myArray[4] = 1; // Accessing the 4th element in the array.
-        myArray[0] = 0; // Resets all elements in intArray. 
+```X++
+public void ArrayMethod()
+{
+    int myArray[10]; // Fixed-length array with 10 integers.
+    myArray[4] = 1; // Accessing the 4th element in the array.
+    myArray[0] = 0; // Resets all elements in intArray. 
 
-        // Dynamic array of integers.
-        int intArray[];
+    // Dynamic array of integers.
+    int intArray[];
 
-        // Dynamic array of variables of type Datatype.
-        //Datatype arrayVariable[];
+    // Dynamic array of variables of type Datatype.
+    //Datatype arrayVariable[];
 
-        // Fixed-length arrays.
-        boolean boolArray[100]; // Fixed-length array of booleans with 100 items.
+    // Fixed-length arrays.
+    boolean boolArray[100]; // Fixed-length array of booleans with 100 items.
 
-        // Two examples of Partly On Disk Arrays.
-        // Dynamic integer array with only 100 elements in memory.
-        int arrayVariable [ ,100];
-        // Fixed-length string array with 1000 elements, and only 200 in memory.
-        str arrayVariable2 [1000,200];
+    // Two examples of Partly On Disk Arrays.
+    // Dynamic integer array with only 100 elements in memory.
+    int arrayVariable [ ,100];
+    // Fixed-length string array with 1000 elements, and only 200 in memory.
+    str arrayVariable2 [1000,200];
 
-            // A dynamic array of integers.
-            int i[];
-            // A fixed-length real array with 100 elements.
-            real r[100];
-            // A dynamic array of dates with only 10 elements in memory.
-            date d[,10];
-            // A fixed length array of NoYes variables with 100 elements and 10 in memory.
-            NoYes ny[100,10];
-    }
+    // A dynamic array of integers.
+    int i[];
+    // A fixed-length real array with 100 elements.
+    real r[100];
+    // A dynamic array of dates with only 10 elements in memory.
+    date d[,10];
+    // A fixed length array of NoYes variables with 100 elements and 10 in memory.
+    NoYes ny[100,10];
+}
+```
 
 ### Multiple array indexes
 
