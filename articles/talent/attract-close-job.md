@@ -50,7 +50,7 @@ You can cancel a job in Attract at any time.
 
 ## Close a job as Position filled
 
-You can only close a job as **Position filled** when at least one prospect has completed the Offer stage. If the job application doesn't have **Offer accepted** selected, or if the application doesn't display a status of **Accepted** in Offer, the **Position filled** option won't display in the **Reason** dropdown.
+You can close a job as **Position filled** after at least one prospect has completed the Offer stage.
 
 1. In the **Jobs** tab in Attract, select the job you want to cancel.
 
@@ -62,5 +62,7 @@ You can only close a job as **Position filled** when at least one prospect has c
 
    ![[Close job as Position filled](./media/attract-close-job-as-position-filled.png)]](./media/attract-close-job-as-position-filled.png)
 
+   > [!NOTE]
+   > You can only close a job as **Position filled** when at least one prospect has completed the Offer stage. If the job application doesn't have **Offer accepted** selected, or if the application doesn't display a status of **Accepted** in Offer, the **Position filled** option won't display in the **Reason** dropdown.
 
 
