@@ -46,6 +46,22 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### United States: Payroll
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are removing the U.S. Payroll functionality due to low usage and enhanced functionality offered via strategic integrations.  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Payroll |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. We will no longer be offering tax updates to U.S. Payroll customers. Existing functionality will continue to exist "as-is" post support termination. The timeframe for the functionality to be deprecated is October 2021. |
+
+
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
 > [!IMPORTANT]
