@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 
 ---
 
-# Career site functionality in Attract
+# Set up your career site
 
 [!include[banner](../includes/banner.md)]
 

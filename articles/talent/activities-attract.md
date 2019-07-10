@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Activities in the hiring processes
+# Activities in hiring processes
 
 [!include[banner](../includes/banner.md)]
 

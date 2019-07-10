@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Admin settings in Attract
+# Configure company information
 [!include[banner](../includes/banner.md)]
 
 The Admin center in Microsoft Dynamics 365 for Talent: Attract contains configuration settings, integration options, and setup options for the Attract application.

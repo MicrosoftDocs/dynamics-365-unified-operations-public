@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Source candidates by using talent pools
+# Source candidates with talent pools
 
 [!include[banner](../includes/banner.md)]
 

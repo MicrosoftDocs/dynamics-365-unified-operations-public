@@ -112,11 +112,11 @@
       href: attract-overview.md
     - name: Frequently asked questions
       items:
-      - name: LinkedIn FAQ
+      - name: LinkedIn integration FAQ
         href: attract-linkedin-faq.md
     - name: Configure system settings
       items:
-      - name: Configure company information and branding
+      - name: Configure company information
         href: admin-settings-attract.md
       - name: Set user permissions
         href: security-attract.md
@@ -130,13 +130,13 @@
         href: attract-admin-linkedin.md
     - name: Create a hiring process
       items:
-      - name: Create a process template in Attract
+      - name: Create a process template
         href: process-templates-attract.md
-      - name: Activities in the hiring processes 
+      - name: Activities in hiring processes 
         href: activities-attract.md
       - name: Email templates
         href: email-templates.md
-      - name: Use analytic reports for hiring process insights
+      - name: Use analytic reports
         href: analytic-reports.md
     - name: Create and post jobs
       items:
@@ -152,7 +152,7 @@
         href: attract-talent-pools.md
       - name: Source candidates with LinkedIn Recruiter
         href: attract-linkedin-recruiter.md
-      - name: Track sources for candidates
+      - name: Track candidate sources
         href: source-tracking.md    
       - name: Intelligent recommendations
         href: Intelligent-Recommendations.md

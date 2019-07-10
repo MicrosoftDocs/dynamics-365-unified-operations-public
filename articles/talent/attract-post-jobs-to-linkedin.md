@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to LinkedIn from Attract
+# Post jobs to LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
