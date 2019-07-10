@@ -45,7 +45,7 @@ You can now deploy Microsoft Dynamics 365 for Finance and Operations in the clou
 
 The following considerations must be taken when you choose on-premises as a deployment option:
 
-- Regulatory and compliance needs that are not available in the [cloud certifications](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Regulatory and compliance needs that are not available in the cloud certifications
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management
 - [Features currently not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 - [Minimum infrastructure requirements](system-requirements-on-prem.md#minimum-infrastructure-requirements)
