@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 This topic explains how to set up payment terms for vendor invoices. This task uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > Accounts payable > Payment setup > Terms of payment**.
-2. Select **New**.
-  - The Terms of payment page is used to define how the due date will be calculated. It is not used to define how the cash discount date will be calculated.  
+2. Select **New**. The Terms of payment page is used to define how the due date will be calculated. It is not used to define how the cash discount date will be calculated.  
 3. In the **Terms of payment** field, type a value.
 4. In the **Description field**, type a value.
 5. In the **Days** field, enter a number. The number entered here will be used to add to the due date, or to the end of the period identified in the Payment method. For example, if you select **Net**, the number will be added to the due date. If you select **Current month**, it will add the number to the last day of the current month to calculate the due date.  
