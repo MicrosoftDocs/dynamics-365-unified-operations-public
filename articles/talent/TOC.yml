@@ -157,9 +157,11 @@
       - name: Intelligent recommendations
         href: Intelligent-Recommendations.md
     - name: Set up interviews
+      items: 
       - name: Interview scheduling and feedback
         href: interview-scheduling-feedback.md
     - name: Make an offer
+      items:
       - name: Set up offer management
         href: offer-setup.md
       - name: Create, approve, and sign offers
