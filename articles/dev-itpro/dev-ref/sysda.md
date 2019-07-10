@@ -38,6 +38,7 @@ This topic explains how to create extensible queries by using the SysDa API.
 The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler would generate. This means that the using the SysDa classes carry no overhead in contrast to using the **QueryRun** object, for example. It also means that the checking that the X++ compiler does on data access statements are your responsibility. For example, you can create a **where** clause that compares a Guid to an integer, which the compiler would diagnose as an error. 
 
 The SysDa APIs include an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
+
 + Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
 + Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
 + Insert: **SysDaInsertObject** and **SysDaInsertStatement**
@@ -53,10 +54,9 @@ To run a select query:
 + Create a **SysDaSearchObject** object, passing the **SysDaQueryObject** to the constructor. 
 + Iterate over the results of the query by passing the **SysDaSearchObject** to the **SysDaSearchStatement.next()** method.
 
+The following code example finds all rows in TestTable where intField <= 5.
 
 ```X++
-// Find all rows in TestTable where intField <= 5.
-
 // t is the table buffer that will hold the result.
 TestTable t;
 
@@ -103,9 +103,8 @@ To run an update statement:
 + Create an configure a **SysDaUpdateObject** object. 
 + Update data by by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to  **execute** in `ttsbegin` and `ttscommit` statements.
 
+The following code example updates stringField to "fifty" for all rows where intField = 50.
 ```X++
-// Update stringField to "fifty" for all rows where intField = 50.
-
 TestTable t;
 
 // Create an update query to find rows where intField = 50.
@@ -146,8 +145,9 @@ To run an insert statement:
 + Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
 + Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
+The following code example inserts rows into TestTable with intField = 40 and stringField = "en-us".
+
 ```X++
-// Insert rows into TestTable with intField = 40 and stringField = "en-us".
 TestTable t;
 
 // Specify the fields in the new row.
@@ -202,6 +202,8 @@ To run a delete statement:
 + Create and configure a **SysDaQueryObject** object to specify which rows to delete.
 + Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
 + Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
+
+The following code example deletes rows where intField is an even number.
 
 ```X++
 TestTable t;
