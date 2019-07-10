@@ -49,11 +49,13 @@ For this example, we want to verify that User "SHANNON" is assigned the machine 
 4. Select the **Time registration** tab.
 5. Select **Activate on registration terminals**.
 6. Enter or select values in the following fields:  
-- **Calculation group**  
-- **Default calculation group**  
-- **Approval group**  
-- **Standard profile**  
-- **Profile group**  
+
+    - **Calculation group**  
+    - **Default calculation group**  
+    - **Approval group**  
+    - **Standard profile**  
+    - **Profile group**  
+
 7. Select **OK**.
 8. Select **Edit** to enter a badge number for the new time registration worker. Enter a value in the **Badge ID** field.
 9. Select **Save**.
