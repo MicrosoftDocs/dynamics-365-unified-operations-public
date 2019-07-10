@@ -142,6 +142,8 @@
       href: offer-setup.md
     - name: Create, approve, and sign offers
       href: creating-offers.md
+    - name: Close a job
+      href: attract-close-job.md
     - name: Email templates
       href: email-templates.md
     - name: Security and role management in Attract
