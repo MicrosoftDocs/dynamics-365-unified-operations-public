@@ -40,7 +40,12 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 A brief description of the feature, including a link to a topic where customers can read the details.
 
 ## Feature
-A brief description of the feature, including a link to a topic where customers can read the details.
+The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In PU29, additional features have been added, including:
+- Enable all features that are not enabled
+- Automatically enable all features after an update
+- Do not allow a feature to be enabled based on a condition such as an existing config key is turned on
+- Add a button called Check for updates that manually searches for new features and adds them to the list of features
+
 
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
