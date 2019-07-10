@@ -39,14 +39,10 @@ Calendars describe the capacity and working times of operations resources. This 
 5. In the **Name** field, name your calendar.
 6. In the **Standard work day in hours** field, enter a number.
 7. Make sure the row is selected, then select **Working times** from the Action Pane.
-8. Select **Compose working times**.
-    - Generate working hours for each day in the period where you want to be able to schedule work. As time goes by, you can generate working times for additional periods.  
-9. In the **From date** field, enter a date.
-    - This is the first day that this calendar must be open.  
-10. In the **To date field**, enter a date.
-    - This is the last day that this calendar is open.  
-11. In the **Working time template** field, enter or select a value.
-    - The working time template defines the working hours for each day of the week.  
+8. Select **Compose working times**. Generate working hours for each day in the period where you want to be able to schedule work. As time goes by, you can generate working times for additional periods.  
+9. In the **From date** field, enter a date. This is the first day that this calendar must be open.  
+10. In the **To date field**, enter a date. This is the last day that this calendar is open.  
+11. In the **Working time template** field, enter or select a value. The working time template defines the working hours for each day of the week.  
 12. Select **OK**.
 13. Close the page.
 
