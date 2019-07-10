@@ -32,10 +32,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 The following topic explains how a user in the System Administrator role can set the time zone for a user.
 
-1. Go to **navigation pane > Modules > System administration > Users > Users**.
+1. Go to **Navigation pane > Modules > System administration > Users > Users**.
 2. In the list, find and select the desired record.
 3. Select **User options**.
 4. Select the **Preferences** tab.
 5. In the **Time zone** field, select an option from the drop-down list.
-6. select **Save**.
+6. Select **Save**.
 
