@@ -139,6 +139,7 @@
       - name: Use analytic reports for hiring process insights
         href: analytic-reports.md
     - name: Create and post jobs
+      items:
       - name: Create a job
         href: creating-jobs-attract.md
       - name: Post jobs to LinkedIn
