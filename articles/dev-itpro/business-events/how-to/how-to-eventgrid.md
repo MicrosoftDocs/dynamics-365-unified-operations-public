@@ -2,10 +2,10 @@
 # required metadata
 
 title: Consume business events with Azure Event Grid
-description: This topics provides information about the business events that are available for consumption in Azure EventGrid via the Finance and Operations connector.
+description: This topics provides information about the business events that are available for consumption in Azure Event Grid via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/03/2019
+ms.date: 07/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2019-6-30
 ---
 # Consume business events with Azure Event Grid
 
-The objective of this lab is to provide guided steps of how to configure an
+This topic provides steps to help you configure an
 Azure Event Grid Endpoint with Dynamics 365 Finance and Operation and how to
 consume a Business Event form Azure Event Grid.
 
@@ -282,18 +282,18 @@ Account Number, Customer Name and Total of Invoice.
 
     <img src="../../media/BEF-Howto-EventGrid-17.png" width="100%">
 
-15.  Then choose another final action like to send an email to notify with
+15. Then choose another final action like to send an email to notify with
     customer payment details. **Search** for **send email** action, then login
     to your Office365 account.
 
    <img src="../../media/BEF-Howto-EventGrid-18.png" width="50%">
    
-16.  Then fill-in the message with the required fields.
+16. Then fill-in the message with the required fields.
 
      <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
 
 17.  **Save** your logic apps.
 
-18.  Then final step is to **trigger the Business Event** by posting a customer payment
+18. Then final step is to **trigger the Business Event** by posting a customer payment
     then check whether the logic Apps runs and whether you receive an
     email with customer payment details.
