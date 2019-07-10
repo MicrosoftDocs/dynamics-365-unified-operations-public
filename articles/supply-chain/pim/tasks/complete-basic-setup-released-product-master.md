@@ -34,7 +34,7 @@ This topic shows how to complete the minimum setup that is required before the p
 
 This is the third procedure out of eight which explains how to build combinations for dimension-based configuration. The demo data company used to create this procedure is USMF.
 
-1. Go to **navigation pane > Modules > Product information management > Products > Released products**.
+1. Go to **Navigation pane > Modules > Product information management > Products > Released products**.
 2. In the list, find and select the desired record. Select the product master that you have released in the second procedure. This product master is created with the dimension-based configuration technology.  
 3. On the Action Pane, select **Product**.
 4. Select **Dimension groups** to open the drop dialog.
