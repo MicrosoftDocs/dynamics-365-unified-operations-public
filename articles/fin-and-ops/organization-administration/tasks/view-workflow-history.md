@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
 
-1. Go to **navigation pane > Modules > Common > Inquiries > Workflow > Workflow history**.
+1. Go to **Navigation pane > Modules > Common > Inquiries > Workflow > Workflow history**.
     - Use this form to view the status of a document that was submitted to the workflow system for processing and approval.  
     - The **Instance ID** is the identification code of the workflow instance that is processing, or has processed the document.  
     - The **Status** is the workflow status of the document.  
