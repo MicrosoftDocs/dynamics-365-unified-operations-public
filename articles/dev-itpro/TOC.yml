@@ -106,8 +106,18 @@
       items:
       - name: X++ language reference
         href: dev-ref/xpp-language-reference.md
-      - name: X++ variables and data types
-        href: dev-ref/xpp-variables-data-types.md
+      - name: Variables and data types
+        items:
+        - name: Variables
+          href: dev-ref/xpp-variables-data-types.md
+        - name: Primitive data types
+          href: dev-ref/xpp-data-primitive.md
+        - name: Composite data types
+          href: dev-ref/xpp-data-composite.md
+        - name: Collection classes
+          href: dev-ref/xpp-data-collection.md
+        - name: Extended data types
+          href: dev-ref/xpp-data-edt.md
       - name: X++ statements, loops, and exception handling
         href: dev-ref/xpp-statements-loops.md
       - name: SQL connection error X++ exception
