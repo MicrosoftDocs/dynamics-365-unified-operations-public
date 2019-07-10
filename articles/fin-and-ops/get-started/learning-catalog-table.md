@@ -57,8 +57,6 @@ Find the right online training, in person workshops, and events for your role as
 
         Do you need to keep data flowing round-the-clock?
 
-        [Start here](learning-catalog-administrator.md)
-
         [Onboarding](learning-catalog-administrator.md)
 
         [Deployment](learning-catalog-administrator.md)
