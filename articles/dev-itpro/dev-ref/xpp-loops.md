@@ -90,23 +90,23 @@ The **do**...**while** loop is similar to the **while** loop, but the condition 
 
 ### Example of a do...while loop
 
-    // An example of a do...while loop designed to find 
-    // the smallest power of 10 that is larger than _Value.
+The following code example finds the smallest power of 10 that is larger than `realNumber`.
 
 ```X++
-int FindPower(real _Value)
+int FindPower(real realNumber)
+{
+    int exponent = -1;
+    real curVal;
+
+    do
     {
-        int ex=-1;
-        real curVal;
-        ;
-        do
-        {
-            ex += 1;
-            curVal = power(10, ex);
-        }
-        while (_Value>curVal);
-        return ex;
+        exponent++;
+        curVal = power(10, exponent);
     }
+    while (realNumber > curVal);
+
+    return exponent;
+}
 ```
 
 ## continue statement
