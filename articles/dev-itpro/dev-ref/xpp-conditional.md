@@ -154,7 +154,7 @@ You can nest statements with the ternary operator. The following example assigns
 
 ```X++
 int x = 1001;
-int group = x <= 1000 ? 1 : (x <= 2000 ? 2 : 3_;
+int group = x <= 1000 ? 1 : (x <= 2000 ? 2 : 3);
 info(value);
 // Output is 1.
 ```
