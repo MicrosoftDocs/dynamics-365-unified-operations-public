@@ -87,7 +87,7 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
 
 ### Examples of switch statements
 
-When the break keyword is used within a switch statement, the execution of the case branch terminates, and the statement following the switch is executed as shown in the following example. If the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
+When you include the **break** keyword in a switch statement, the execution of the case branch terminates, and the statement following the switch is executed as shown in the following example. If the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
 
 ```X++
 switch (Debtor.AccountNo)
@@ -104,38 +104,38 @@ switch (Debtor.AccountNo)
 }
 ```
 
-Switch statement example to make the execution drop through case branches by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c, the break statement is omitted after the case 10: statement. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
+The following code examples makes the execution drop through the first case branch by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
 
 ```X++
-    switch (x)
-    {
-        case 10:
-            a = b;
-        case 11:
-            c = d;
-            break;
-        case 12:
-            e = f;
-            break;
-    }
+ switch (x)
+ {
+     case 10:
+         a = b;
+     case 11:
+         c = d;
+         break;
+     case 12:
+         e = f;
+         break;
+ }
 ```
 
+If you do not use the break statement, the program flow in the switch statement continues into the next case. Code segments A and B
+have the same behavior. 
 
-    // If you do not use the break statement, the program flow in the switch
-    // statement continues into the next case. Code segments A and B
-    // have the same behavior. 
-    // Code segment A (break omitted)
 ```X++
+// Code segment A (break omitted)
 case 13:
-    case 17:
-    case 21:
-    case 500:
-        print "g";
-        break;
-    // Code segment B (the values are comma-delimited)
-    case 13, 17, 21, 500;
-        print "g";
-        break;
+case 17:
+case 21:
+case 500:
+    print "g";
+    break;
+
+// Code segment B (the values are comma-delimited)
+case 13, 17, 21, 500;
+    print "g";
+    break;
 ```
 
 Break statement example within a while loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for do... while and for loops as well. 
