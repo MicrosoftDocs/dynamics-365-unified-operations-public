@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Attract integration with LinkedIn FAQ
+# LinkedIn integration FAQ
 
 [!include [banner](includes/banner.md)]
 

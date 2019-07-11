@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Security and role management in Attract
+# Set user permissions
 
 [!include[banner](../includes/banner.md)]
 

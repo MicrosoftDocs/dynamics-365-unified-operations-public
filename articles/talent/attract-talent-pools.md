@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Source candidates by using talent pools
-description: This topic explains how to create and set up talent pools in Attract.
+title: Source candidates with talent pools in Microsoft Dynamics 365 for Talent - Attract
+description: This topic explains how to create and set up talent pools in Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Source candidates by using talent pools
+# Source candidates with talent pools
 
 [!include[banner](../includes/banner.md)]
 
