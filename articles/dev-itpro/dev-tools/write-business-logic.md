@@ -204,9 +204,9 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 
 Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
 
-|                       |                           |
-|-----------------------|---------------------------|
-| [![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png) | [![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png) |
+[![ProjectDependencies1\_LinqC](./media/projectdependencies1_linqc2.png)](./media/projectdependencies1_linqc2.png)
+
+[![ProjectDependencies2\_LinqC](./media/projectdependencies2_linqc1.png)](./media/projectdependencies2_linqc1.png)
 
 ### Add your event handler to a delegate
 
