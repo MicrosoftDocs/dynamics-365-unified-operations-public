@@ -55,11 +55,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are removing the U.S. Payroll functionality due to low usage and enhanced functionality offered via strategic integrations.  |
+| **Reason for deprecation/removal** | We are retiring tax updates for the U.S. Payroll functionality due to low usage and enhanced functionality offered via strategic integrations.  |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Payroll |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. We will no longer be offering tax updates to U.S. Payroll customers. Existing functionality will continue to exist "as-is" post support termination. The timeframe for the functionality to be deprecated is October 2021. |
+| **Status**                         | Deprecated. We will no longer be offering tax updates to U.S. Payroll customers. Existing functionality will continue to exist "as-is" post support termination. The timeframe for the functionality to be deprecated is October 1, 2021. |
 
 
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
