@@ -5,7 +5,7 @@ title: Get notified about service updates through Lifecycle Services (LCS)
 description: This topic explains the various ways that you can be notified about service updates to your environments.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,6 +39,7 @@ Microsoft uses service updates to update your configured sandbox and production 
 
 Here are the different types of notifications that you will receive:
 
+- **Notification when an update is made available:** When a new release is made generally available, Microsoft surfaces a notification in your implementation projects' action center. You can then save that update in your projects' asset library, if you want to apply the update to your environments before Microsoft does an automatic update. When Microsoft does an automatic update, it also saves a copy of the update in your projects' asset library. 
 - **Notification that is sent five days before the update:** Microsoft notifies you five days before it updates your environment. After you've configured your update cadence, you will receive notifications about upcoming updates five days before they occur. These notifications take three forms:
 
     - **Email notification:** Project owners, environment managers, and users who are listed as additional stakeholders for an environment are notified by email about the upcoming update.

@@ -168,8 +168,6 @@ The following illustration shows the setup of SMTP on the **Email parameters** p
 
 [![SMTP settings tab on the Email parameters page](./media/smtp.png)](./media/smtp.png)
 
-The permissions SMTP user account is `serviceacct@d365forops.onmicrosoft.com1`. 
-
 > [!IMPORTANT]
 > All users must give the SMTP account Send As permissions on their email setup in Office 365. This configuration is done in the mailbox permissions in Microsoft Exchange or in the Office 365 Admin portal. The following illustration shows the setup for the Test User account, where the STMP service account is added in the **Send As** section. 
 

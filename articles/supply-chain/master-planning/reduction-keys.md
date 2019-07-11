@@ -5,7 +5,7 @@ title: Forecast reduction keys
 description: This topic provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -142,14 +142,14 @@ For this example, you include the following demand forecast in a master plan.
 | Date       | Demand forecast |
 |------------|-----------------|
 | January 1  | 1,000           |
-| February 1 | 500             |
+| February 1 | 1,000             |
 
 You also create the following sales orders.
 
 | Date        | Sales order quantity |
 |-------------|----------------------|
-| January 15  | 500                  |
-| February 15 | 100                  |
+| January 15  | 200                  |
+| February 15 | 400                  |
 
 In this case, the following planned orders are created.
 

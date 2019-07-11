@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Activities in the processes
-description: This topic provides information about the various types of activities that can be used in the hiring process.
+title: Activities in the processes in Microsoft Dynamics 365 for Talent - Attract
+description: This topic provides information about the various types of activities that can be used in the hiring process in Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Activities in the hiring processes
+# Activities in hiring processes
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,6 +42,9 @@ Activities can be added as a part of the hiring process in Microsoft Dynamics 36
 ## Prospect activity
 
 The Prospect activity controls whether prospects can be added to a job. By default, prospects can be added to a job. To turn off the Prospect activity, set the **Enable prospects** option to **Off**. When the Prospect activity is turned on, hiring managers can add and view prospects, and the **Prospect** tab is shown on the job.
+
+> [!NOTE]
+> To allow candidates to be added to a job from LinkedIn, you must set the **Enable prospects** option to **On**.
 
 ## Application activity
 

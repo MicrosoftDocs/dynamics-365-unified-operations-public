@@ -5,7 +5,7 @@ title: X++ statements
 description: This topic describes statements in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -83,13 +83,13 @@ info(int2Str(fortytwo));
 ## TODO comments
 The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
 
-- The **TODO** string can appear in a comment that uses either the **//** style or the **/** style.
+- The **TODO** string can appear in a comment that uses either the **//** style or the **/\*** style.
 - The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
 - No white space is required between the start of the comment and the **TODO**.
 - The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
 - The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
 - The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
-- The**TODO** task description can be spread over multiple lines when the **/** comment style is used.
+- The**TODO** task description can be spread over multiple lines when the **/\*** comment style is used.
 
 ### Examples of TODO comments
 

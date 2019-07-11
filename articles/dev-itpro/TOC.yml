@@ -106,8 +106,18 @@
       items:
       - name: X++ language reference
         href: dev-ref/xpp-language-reference.md
-      - name: X++ variables and data types
-        href: dev-ref/xpp-variables-data-types.md
+      - name: Variables and data types
+        items:
+        - name: Variables
+          href: dev-ref/xpp-variables-data-types.md
+        - name: Primitive data types
+          href: dev-ref/xpp-data-primitive.md
+        - name: Composite data types
+          href: dev-ref/xpp-data-composite.md
+        - name: Collection classes
+          href: dev-ref/xpp-data-collection.md
+        - name: Extended data types
+          href: dev-ref/xpp-data-edt.md
       - name: Statements, loops, and exception handling
         items:
         - name: Statements: comments, using, print
@@ -117,7 +127,7 @@
         - name: Loop statements: for, while, and do...while
           href: dev-ref/xpp-loops.md
         - name: Exception handling: throw, try...catch, finally, and retry
-          href: dev-ref/xpp-exceptions.md        
+          href: dev-ref/xpp-exceptions.md     
       - name: SQL connection error X++ exception
         href: dev-ref/sql-connection-error.md
       - name: X++ operators
@@ -1005,6 +1015,8 @@
         href: deployment/deploy-retail-onprem.md
     - name: Develop and deploy custom models to on-premises environments
       href: deployment/develop-deploy-custom-models-on-premises.md
+    - name: PowerBI.com integration with on-premises environments
+      href: analytics/entity-store-on-prem.md
     - name: Configure reverse proxies for on-premises environments
       href: deployment/onprem-reverseproxy.md
     - name: Apply updates to an on-premises deployment
@@ -1021,6 +1033,8 @@
       href: user-interface/client-disconnected.md
     - name: Troubleshoot on-premises deployments
       href: deployment/troubleshoot-on-prem.md
+    - name: Certificate rotation
+      href: deployment/certificate-rotation-on-prem.md
   - name: Deploy custom code
     items:
     - name: Create deployable packages of models
@@ -1133,7 +1147,7 @@
       href: migration-upgrade/on-prem-upgrade.md
   - name: Hotfixes
     items:
-    - name: Download hotfixes from Lifecycle Services
+    - name: Get updates from Lifecycle Services
       href: migration-upgrade/download-hotfix-lcs.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md

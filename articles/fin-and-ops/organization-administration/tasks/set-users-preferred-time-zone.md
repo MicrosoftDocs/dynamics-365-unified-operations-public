@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Set a user's preferred time zone
-description: The following procedure explains how a user in the System Administrator role can set the time zone for a user. 
+description: This topic explains how a user in the System Administrator role can set the time zone for a user. 
 author: pvillads
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,13 +30,12 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following procedure explains how a user in the System Administrator role can set the time zone for a user.
+The following topic explains how a user in the System Administrator role can set the time zone for a user.
 
-1. Go to System administration > Users > Users.
+1. Go to **Navigation pane > Modules > System administration > Users > Users**.
 2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-4. Click User options.
-5. Click the Preferences tab.
-6. In the Time zone field, select an option.
-7. Click Save.
+3. Select **User options**.
+4. Select the **Preferences** tab.
+5. In the **Time zone** field, select an option from the drop-down list.
+6. Select **Save**.
 

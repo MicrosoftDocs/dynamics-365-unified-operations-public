@@ -5,7 +5,7 @@ title: Create, approve, and post jobs in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Create, approve, and post jobs in Attract
+# Create a job
 
 [!include [banner](includes/banner.md)]
 
@@ -84,38 +84,6 @@ For more information about job postings, see [Career site functionality in Attra
 
 > [!NOTE]
 > The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
-
-### Posting jobs to LinkedIn 
-
-Before posting a job from Attract to LinkedIn, the administrator must add the
-LinkedIn Company ID and LinkedIn Company name in the **Admin Settings**. The
-LinkedIn Company ID is required to ensure your jobs posted from Attract are
-mapped to the correct company page.
-
-Your LinkedIn Company ID is a string of numbers that uniquely identifies your
-company within LinkedIn. For more information on how to find your LinkedIn company ID, please visit the [LinkedIn site](https://aka.ms/findID).
-
-To update your LinkedIn company, select **Admin center** on the **Settings** menu
-(the gear symbol), and then select the **LinkedIn Integration** tab. Under the **Connect to LinkedIn** section, enter your LinkedIn Company Name and Company ID, and then save the settings.
-
-> [!NOTE]
-> There are four important things to note about job posting process to LinkedIn.
-> 1. Jobs posted to LinkedIn are posted as "Limited Listings" jobs. Limited listing jobs cannot be promoted across the LinkedIn site. If you want to promote limited listing jobs posted to LinkedIn from Attract, you should work with LinkedIn to enable "Job Wrapping". Please refer to links below and contact LinkedIn support for more details.
->
->    [Limited Listings vs Premium Job Slots for Job Wrapping](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
->
->    [Job Wrapping FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
->
-> 1. When posting jobs to LinkedIn, Attract passes the Microsoft 365 Organization name against the job. LinkedIn links the jobs to a company on the LinkedIn side based on the organization name that is passed. If your job is listed against the wrong company on LinkedIn, check that your Microsoft 365 Organization name matches the company name on LinkedIn.  
->
->    [Change Address Contact and more](https://docs.microsoft.com/en-us/office365/admin/manage/change-address-contact-and-more)
->
->    If you have problems after this step, please contact LinkedIn support. 
-> 
-> 1. Jobs posted to LinkedIn appear on the live LinkedIn site. There is no test environment for posting jobs to LinkedIn. 
->
-> 1. It may take up to 24 hours for jobs posted to LinkedIn to be visible to candidates from within in LinkedIn, due to the current LinkedIn batch job posting process.
-
 
 ## Activate
 
@@ -191,3 +159,5 @@ Follow these steps to create a job.
 
 13. To activate the job, select **Activate**.
 14. To post the job, go to **Postings**, and then select **Post Now** under the Talent Careers site or LinkedIn.
+
+
