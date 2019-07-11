@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Query using the SysDa API
-description: This topic explains how to create extensible queries by using the SysDA API. 
+title: Access data by using the SysDA classes
+description: This topic explains how to create extensible queries and data access statements by using the SysDA API. 
 author: RobinARH
 manager: AnnBe
 ms.date: 06/24/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Query using the SysDa API
+# Access data by using the SysDA classes
 
 [!include [banner](../includes/banner.md)]
 
