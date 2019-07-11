@@ -31,7 +31,7 @@ ms.dyn365.ops.version:  10.0.4
 
 **Overview**
 
-This topic describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if multiple years are being compared, the number of scenarios being evaluated are  large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
+This topic describes the process of extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if you're comparing information over multiple years, the number of scenarios being evaluated are large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
 
 **BudgetPlanLineActiveView table**   The BudgetPlanLineActiveView table contains the pivoted budget planning data. Out of box, this table contains 36 monetary columns and 36 quantity columns. This default configuration enables the user to manipulate the budget plan layout to display and compare up to 3 years of monthly planning data.
 
@@ -49,10 +49,10 @@ Begin the process by creating a new extension, adding new fields and setting the
   2. Open Application explorer.
   3. Create a new extension on BudgetPlanLineActiveView to a new project.
   4. Open the table in designer mode. 
-  5. Right click on Fields and select New -> Real
+  5. Right click on Fields and select New > Real
   6. Name the field with the next available name with the suffix incremented. Example: TransactionCurrencyAmount37.
   7. Set the Extended Data type to BudgetPlanCurrencyAmount
-  8. Right click on Fields and select New -> Real
+  8. Right click on Fields and select New > Real
   9. Name the field with the next available name with the suffix incremented. Example: Quantity37. Set the extended data type to  BudgetPlanQuantity.
   10. Repeat steps 5 through 9 for as many columns required of each type.
   11. Optionally, add the monetary columns added to the Monetary field group quantity columns  to the Quantity field group.
