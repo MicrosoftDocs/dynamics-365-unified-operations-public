@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/10/2019
+ms.date: 07/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,9 +61,9 @@ If a feature hasn't been turned on, an **Enable Now** button appears in the deta
 
 Some features can't be turned off after you turn them on. If the feature that you're trying to turn on can't be turned off, you receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature turned off. However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.
 
-Some features will display a message that provides additional information before you turn them on. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, can still select **Enable** to turn on the feature.
+Some features will display a message that provides additional information before you turn them on. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, you can still select **Enable** to turn on the feature.
 
-Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a config key is disabled, then you must disable the config key first and then return to feature management to enable the feature.
+Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
 After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
 
@@ -91,7 +91,7 @@ Sometimes, a critical feature is delivered that must be turned on automatically 
 
 ## Enable all features
 
-By default, all features that are added to your environment are turned off. You can enable all features by clicking on the **Enable all** button. 
+By default, all features that are added to your environment are turned off. You can enable all features by clicking the **Enable all** button. 
 
 When you select **Enable all**, a slider will appear and provide the following information:
 - A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
@@ -106,7 +106,7 @@ By default, all features that are added to your environment are turned off, unle
 - Select **All new features will be enabled by default** to automatically turn on all new features when they are added to your environment.
 - Select **All new features will be disabled by default** to automatically turn off all new features when they are added to your environment.
 
-When you enable all feature automatically, it will enable all of the features that would be enabled when you click on the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
+When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
 
 ## Check for updates
 
