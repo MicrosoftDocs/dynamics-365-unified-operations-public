@@ -150,11 +150,11 @@ The following code example returns one of two strings based on a Boolean return 
 result = (custTable::find("1").RecId) ? "found" : "not found";
 ```
 
-You can nest statements with the ternary operator. The following example assigns one of three values to **group** depending on the value of **x**.
+You can nest statements with the ternary operator. The following example assigns one of three values to **level** based on the value of **x**.
 
 ```X++
 int x = 1001;
-int group = x <= 1000 ? 1 : (x <= 2000 ? 2 : 3);
-info(value);
-// Output is 1.
+str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
+info(level);
+// Output is "B".
 ```
