@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 9, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/9/2019
+ms.date: 7/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,49 +29,64 @@ ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (July 9, 2019)"
+# What's new or changed in Dynamics 365 for Talent (July 9, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+
 Changes described in this section apply to build number 8.1.2374.
 
 ### Platform update 28
 
 For more details about Platform update 28, see [Preview features in Dynamics 365 for Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
-### The following entities now support custom fields in CDS: 
+### Entity support for custom fields in Common Data Service 
 
-The following entities have been updated: Compensation fixed plan, Compensation reference point setup, Compensation reference point set up line, Payroll earning code, Pay period, Fixed compensation event and Compensation grid.
-To view all updated entities in Talent go to: System administration->Links->Common data service configuration->CDS entity name drop down list. All entities listed are on the latest version. 
+The following entities support custom fields: 
 
-###  Add FullName to CDS Worker entity
+- **Compensation fixed plan**
+- **Compensation reference point setup**
+- **Compensation reference point set up line**
+- **Payroll earning code**
+- **Pay period**
+- **Fixed compensation event**
+- **Compensation grid**
 
-Full name field has been added to the Worker entity.
+To view all updated entities in Talent:
+
+1. Select **System administration**, select **Links**, and then select **Common data service configuration**.
+2. Select the **CDS entity name** dropdown. All entities listed are on the latest version. 
+
+###  Full name added to Worker entity in Common Data Service
+
+The **Full name** field has been added to the **Worker** entity.
 
 ### Full-time equivalent higher than 1.0
 
-A warning will now be presented if a value greater than 1.0 is entered for the FTE on a position. 
+A warning now displays if a value greater than 1.0 is entered for a full time employee on a position. 
 
-### Future dated employment warning displays on worker form even when there is no future dated employment
+### A warning no longer displays on the Worker form when there is no future dated employment
 
-With this release, you will no longer receive a message indicating that a future employment exists when navigating to the worker form from the exiting employees list on the Personnel Management workspace. 
+You will no longer receive a message indicating that a future employment exists when navigating to the **Worker** form from the **Exiting employees** list in the **Personnel management** workspace. 
 
 ### Unable to delete a business process in Talent
 
-With this release an option has been added to delete business processes that have been created. Business processes can now be removed through the business process workspace.
+You can now delete business processes in the **Business process** workspace.
 
-### Leave balance is always shown as "zero" for plans with no accruals when using "Balance as of accrual period"
+### Leave balance no longer displays zero for plans with no accruals when using Balance as of accrual period
 
-With this release, a change has been made to show the balance of the plans that are set up with no accruals. 
+Plans that are set up with no accruals can now show a balance.
 
 ## In preview
 
@@ -93,4 +108,8 @@ A new option will let managers view the performance of both their direct reports
 
 ### Entities supporting custom fields
 
-The following entities will be enabled for Custom Fields in CDS: Leave type, Worker bank account, Work calendar
+The following entities will be enabled for custom fields in Common Data Service: 
+
+- **Leave type**
+- **Worker bank account**
+- **Work calendar**
