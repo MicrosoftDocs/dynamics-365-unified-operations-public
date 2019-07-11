@@ -120,13 +120,13 @@
           href: dev-ref/xpp-data-edt.md
       - name: Statements, loops, and exception handling
         items:
-        - name: Statements: comments, using, print
+        - name: Comments, using, and print
           href: dev-ref/xpp-statements-loops.md
-        - name: Conditional statements: if, if...else, switch, and ternary operator (?)
+        - name: Conditional statements
           href: dev-ref/xpp-conditional.md
-        - name: Loop statements: for, while, and do...while
+        - name: Loop statements
           href: dev-ref/xpp-loops.md
-        - name: Exception handling: throw, try...catch, finally, and retry
+        - name: Exception handling
           href: dev-ref/xpp-exceptions.md     
       - name: SQL connection error X++ exception
         href: dev-ref/sql-connection-error.md
