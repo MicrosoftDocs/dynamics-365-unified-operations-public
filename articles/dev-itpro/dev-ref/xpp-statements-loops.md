@@ -43,9 +43,9 @@ It's a good practice to add comments to your code. Comments make a program easie
     // This is an example of a comment.
     /* Here is another example of a comment. */
 ## print statements
-You use the **print** statement to show messages (text or selected results) in a temporary window. This window appears when the first **print** statement is executed. During testing, the **print** statement can be a convenient alternative to the **Global::info** method, which shows text in the Infolog. The following table compares the **print** statement and the **Global::info** method.
+You use the **print** statement to show messages (text or selected results) in a temporary window. This window appears when the first **print** statement is executed. During testing, the **print** statement can be a convenient alternative to the **Global::info** method, which shows text in the Infolog. The following table compares the **print** statement and the **info** method.
 
-| Feature   | print statement    | Info method  |
+| Feature   | print statement    | info method  |
 |-----------|--------------------|--------------|
 | Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.               |
 | Ability to copy contents to the clipboard | The contents of the window that the **print** statement opens can't be copied to the clipboard. You can't give the window focus.            | Infolog contents are easily copied from the **Infolog** window to the clipboard. |
@@ -55,7 +55,7 @@ You use the **print** statement to show messages (text or selected results) in a
 
 ### Example of a print statement
 
-The following code example demonstrates the print statement automatically converting any date type to a string. 
+The following code example demonstrates the print statement automatically converting any date type to a string. You do not need to prefix **info** with **Global::** when you call it.
 
 ```X++
 
@@ -76,7 +76,7 @@ info(int2Str(fortytwo));
 
 // Output to Infolog window:
 // Hello
-// Message (02:18:10 pm)
+// 42
 
 ```
 
@@ -122,16 +122,15 @@ You use **using** clauses so that you don't have to provide the fully qualified 
 using System;
 using IONS=System.IO; // Namespace alias
 using Alist=System.Collections.ArrayList; // Class alias
-public class MyClass2
+
+class UsingClass
 {
-    public static void Main(Args a)
+    public static void test()
     {
-        Int32 I; // Alternative to System.Int32
-        Alist al; // Using a class alias
-        al = new Alist();
-        str s;
+        Int32 I;                  // Alternative to System.Int32
+        Alist al = new Alist();   // Using a class alias
         al.Add(1);
-        s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
+        str s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt"); // Using a namespace alias
     }
 }
 ```
