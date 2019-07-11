@@ -21,7 +21,7 @@ ms.reviewer: robinr
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150213
-ms.assetid: 16b30ff1-bb31-4f9d-8105-c73abd2455f6
+ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
@@ -38,22 +38,24 @@ This topic describes loop statements in X++. There are three loop statements: **
 
 ## for loops
 
-The **for** loop repeatedly executes one or more statements for as long as the conditional expression is **true**. The statement is executed as many times as the condition is met. The body of the **for** loop might be executed zero or more times, depending on the results of the condition test. A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays, because they have a fixed number of elements. You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element. Here is the syntax for a **for** statement:
+The syntax of a **for** loop is:
 
 **for (** *initialization* **;** *test* **;** *increment* **) {** *statement* **}**
 
-*tatement* can be a block of statements.
+The **for** loop repeatedly executes **statement** for as long as the conditional expression *test* is **true**. *statement* can be a block of statements. The body of the **for** loop (*statement*) might be executed zero or more times, depending on the results of *test*. A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays, because they have a fixed number of elements. You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element. Here is the syntax for a **for** statement:
 
 ### Example of a for loop
 
-    // An example where all items are printed in 
-    // a fixed array called ra with 100 reals. 
-    int ra[100];
-    int i; // Control variable.
-    for (i=1; i<=100; i+=1)
-    {
-        print ra[i];
-    }
+In the following code example, the items in an array of integers are printed.
+
+```X++
+int ra[100];
+int i; // Control variable.
+for (i=1; i<=100; i+=1)
+{
+    info(int2str(ra[i]));
+}
+```
 
 ## while loops
 
