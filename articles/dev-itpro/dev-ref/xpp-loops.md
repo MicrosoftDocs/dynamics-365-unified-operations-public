@@ -121,3 +121,27 @@ The **continue** statement causes execution to move directly to the next iterati
         continue;
         // Some statements.
     }
+    
+### Example of a break statement
+
+
+Break statement example within a while loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for do... while and for loops as well. 
+
+```X++
+var mainMenu = SysDictMenu::newMainMenu();
+    var enum = mainMenu.getEnumerator();
+    var found = false;
+    while (enum.moveNext())
+    {
+        var menuItem = enum.current();
+        if (menuItem.label() == "StringOfInterest")
+        {
+            found = true;
+            break;
+        }
+    }
+    if (found) 
+    {
+        // do something
+    }
+```
