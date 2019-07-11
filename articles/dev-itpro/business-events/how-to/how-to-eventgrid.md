@@ -5,7 +5,7 @@ title: Consume business events with Azure Event Grid
 description: This topics provides information about the business events that are available for consumption in Azure Event Grid via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/10/2019
+ms.date: 07/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,13 +59,10 @@ Procedure 1: Create a new Event Grid Topic
 
 2.  Select **All services \> Integration \> Event Grid Topics**.
 
-    <img src="../../media/BEF-Howto-EventGrid-01.png" width="70%">
-
 3.  Click **Add** to create a new Event Grid Topic, then fill in the
     parameters and click **Create**. You can create a new resource group
     as a container for your lab or use an existing one.
 
-    <img src="../../media/BEF-Howto-EventGrid-02.png" width="70%">
 
 4.  Once deployment is complete, select you newly created event grid. Click
     **Overview**, and then note the topic endpoint value. You will need this value
@@ -90,7 +87,6 @@ vault on behalf of Finance and Operations.
 
 1.  Select **All services \> Security \> Key vaults**
 
-    <img src="../../media/BEF-Howto-Keyvault-01.png" width="70%">
 
 2.  Create a new key vault within your resource group and default
     parameters.
@@ -142,9 +138,7 @@ used by Finance and Operations to retrieve event grid secrets.
 7.  Then go back to the previously created key vault by selecting **All services
     \> Security \> Key vaults**.
 
-    <img src="../../media/BEF-Howto-Keyvault-10.png" width="70%">
-
-8.  Select your key vault then click Access policies\> Add new**
+8.  Select your key vault then click **Access policies \> Add new**
 
 9.  Select your new registered application in the **Principal** area of the page.
     Selcted **Get** and **List** secret permissions to retrieve key vault
@@ -189,8 +183,7 @@ account number, customer name, and the total of the invoice.
 
 1.  Activate the free text invoice posted business event for USMF.
 
-    <img src="../../media/BEF-Howto-EventGrid-07.png" width="30%">
-
+ 
 2.  Once you activate a business event with a new endpoint, Finance and Operations sends a test
     message to verify that the configuration was right and to cash the
     connection. In order to verify that the test message has been received,
@@ -205,7 +198,6 @@ account number, customer name, and the total of the invoice.
 4.  If the above is fine, then we will create a new Logic Apps to subscribe to
     our Event Grid Topic. Select **All services\> Integration\> Logic Apps**.
 
-    <img src="../../media/BEF-Howto-EventGrid-09.png" width="70%">
 
 5.  Then create a new logic app in your resource group.
 
@@ -230,7 +222,6 @@ account number, customer name, and the total of the invoice.
 10. Search for **Parse Json** data operation. This step is needed to be able
     to parse our message with the schema of our data contract provided by Finance and Operations.
 
-    <img src="../../media/BEF-Howto-EventGrid-13.png" width="50%">
 
 11. Select the content field of **Parse Json** action then a side bar will
     appear and give you option form the previous trigger. You need to select the
@@ -246,7 +237,6 @@ account number, customer name, and the total of the invoice.
     link. This will download a text file. Open the text file and copy
     the content.
 
-    <img src="../../media/BEF-Howto-EventGrid-15.png" width="50%">
 
 13. Go back to Logic Apps and click the **Use sample payload to generate
     schema** link. Then paste the text file content and click
@@ -265,12 +255,9 @@ account number, customer name, and the total of the invoice.
 15. Choose another final action like to send an email to notify with
     customer payment details. Search for **send email** action, then log in
     to your Office 365 account.
-
-   <img src="../../media/BEF-Howto-EventGrid-18.png" width="50%">
    
 16. Fill in the message with the required fields.
 
-     <img src="../../media/BEF-Howto-EventGrid-19.png" width="50%">
 
 17.  Save your logic apps.
 
