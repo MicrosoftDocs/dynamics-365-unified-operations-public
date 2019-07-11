@@ -39,7 +39,7 @@ You can open the **Feature management** workspace by selecting the appropriate t
 The feature list includes the following information:
 
 - **Feature name** – A description of the feature that was added.
-- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), is mandatorily turned on (lock), requires attention before you turn it on (warning), or can't be enabled (X). The setting that is shown here is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
+- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), is mandatorily turned on (lock), requires attention before you turn it on (warning), or can't be enabled (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
 - **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Module** – The module that is affected by the new feature.
@@ -91,13 +91,13 @@ Sometimes, a critical feature is delivered that must be turned on automatically 
 
 ## Enable all features
 
-By default, all features that are added to your environment are turned off. You can enable all features by clicking the **Enable all** button. 
+By default, all features that are added to your environment are turned off. You can enable all features by selecting the **Enable all** button. 
 
-When you select **Enable all**, a slider will appear and provide the following information:
+When you select **Enable all**, an option will appear where you need provide the following information:
 - A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
 - A list of all features that can't be enabled will be shown. Those features will not be enabled.
 
-All features that can be enabled will be enabled. If a feature is already scheduled to be enabled in the future, the schedule will not be changed. 
+All features that can be enabled will be enabled. If a feature is already scheduled to be enabled in the future, the schedule will not change. 
 
 ## Turn on all features automatically
 
