@@ -38,67 +38,75 @@ This topic describes conditional statements in X++. The conditional statements a
 
 ## if and if...else statements
 
-The **if** statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as **false**. Here is the syntax for an **if**...**else** statement:
+The **if** statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as **false**. The syntax for an **if**...**else** statement is:
 
-**if (** *expression* **)** *statement* **\[ else** *statement* **\]**
+**if (** *expression* **)** 
+    *statement* 
+**\[else** 
+    *statement* 
+**\]**
 
-In this syntax, both occurrences of *statement* can be compound statements. The *expression* in the parentheses (the conditional expression) can be any valid expression that is evaluated as **true** or **false**. All numbers except 0 (zero) are **true**. All non-empty strings are also **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you should consider using a **switch** statement instead.
+In this syntax, both occurrences of *statement* can be compound statements (statements enclosed in braces). The *expression* in the parentheses (the conditional expression) can be any valid expression that is evaluated as **true** or **false**. All numbers except 0 (zero) are **true**. All non-empty strings are **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you should consider using a **switch** statement instead.
 
 ### Examples of if and if...else statements
 
-    // if statement
-    if(a > 4)
-    {
-       print a;
-    }
+```X++
+// if statement
+if (a > 4)
+{
+   info("a is greater than 4");
+}
 
-    // if... else statement 
-    if(a > 4)
-    {
-       print a;
-    }
-    else
-    {
-       print "a is less than or equal to 4";
-    }
+// if... else statement 
+if (a > 4)
+{
+   info("a is greater than 4");
+}
+else
+{
+   info("a is less than or equal to 4");
+}
+```
 
 ## switch statements
 
-The **switch** statement is a multibranch language construct, unlike the **if** statement, where you must nest **if** statements to create the same effect. The conditional expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case also contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next set of **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
+The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
 
-**switch (** *expression* **) { { case } \[ default:** *statement* **\] }**
+**switch (** *expression* **) 
+{ 
+    { case } 
+    \[default:** *statement* **\] 
+}**
 
-Here is the syntax for a **case** statement:
+The syntax for a **case** statement is:
 
-**case** *expression* **{ ,** *expression* **} :** *statement*
+**case** *expression* **{ ,** *expression* **} :**
+    *statement*
 
-In the syntax for both a **switch** statement and a **case** statement, every occurrence of s*tatement* can be replaced with a block of statements by enclosing the block in braces ({}).
+In the syntax for both a **switch** statement and a **case** statement, every occurrence of *statement* can be replaced with a block of statements by enclosing the block in braces ({}).
 
 ### Examples of switch statements
 
-    // When the break keyword is used within a switch statement, the execution of 
-    // the case branch terminates, and the statement following the 
-    // switch is executed as shown in the following example.
-    // If the Debtor account number is 1000, the program executes 
-    // "do something", and then continues execution after the switch statement.
-    switch (Debtor.AccountNo)
-    {
-        case "1000":
-            // do something
-            break;
-        case "2000":
-            // do something else
-            break;
-        default:
-            // default statement
-            break;
-    }
+When the break keyword is used within a switch statement, the execution of the case branch terminates, and the statement following the switch is executed as shown in the following example. If the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
 
-    // Switch statement example to make the execution drop 
-    // through case branches by omitting a break statement. 
-    // If x is 10, b is assigned to a, and d is assigned to c, the break 
-    // statement is omitted after the case 10: statement. If x is 11, d 
-    // is assigned to c. If x is 12, f is assigned to e.
+```X++
+switch (Debtor.AccountNo)
+{
+    case "1000":
+        // do something
+        break;
+    case "2000":
+        // do something else
+        break;
+    default:
+        // default statement
+        break;
+}
+```
+
+Switch statement example to make the execution drop through case branches by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c, the break statement is omitted after the case 10: statement. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
+
+```X++
     switch (x)
     {
         case 10:
@@ -110,12 +118,15 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
             e = f;
             break;
     }
+```
+
 
     // If you do not use the break statement, the program flow in the switch
     // statement continues into the next case. Code segments A and B
     // have the same behavior. 
     // Code segment A (break omitted)
-    case 13:
+```X++
+case 13:
     case 17:
     case 21:
     case 500:
@@ -125,12 +136,12 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
     case 13, 17, 21, 500;
         print "g";
         break;
+```
 
-    // Break statement example within a while loop. When used within
-    // a loop, the loop is terminated and execution continues
-    // from the statement following the loop. This works for do... while
-    // and for loops as well. 
-    var mainMenu = SysDictMenu::newMainMenu();
+Break statement example within a while loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for do... while and for loops as well. 
+
+```X++
+var mainMenu = SysDictMenu::newMainMenu();
     var enum = mainMenu.getEnumerator();
     var found = false;
     while (enum.moveNext())
@@ -146,6 +157,7 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
     {
         // do something
     }
+```
 
 ## Ternary operator (?)
 
