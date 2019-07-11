@@ -27,19 +27,23 @@ ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version:  10.0.4
 ---
 
-**Extending the budget planning layout**
+# Extending the budget planning layout
 
 **Overview**
 
 This topic describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if multiple years are being compared, the number of scenarios being evaluated are  large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
 
-**BudgetPlanLineActiveView table** - The BudgetPlanLineActiveView table contains the pivoted budget planning data. Out of box, this table contains 36 monetary columns and 36 quantity columns. This default configuration enables the user to manipulate the budget plan layout to display and compare up to 3 years of monthly planning data.
+**BudgetPlanLineActiveView table**   The BudgetPlanLineActiveView table contains the pivoted budget planning data. Out of box, this table contains 36 monetary columns and 36 quantity columns. This default configuration enables the user to manipulate the budget plan layout to display and compare up to 3 years of monthly planning data.
 
-**BudgetPlanWorksheetEntity entity** - The BudgetPlanWorksheetEntity entity is a counterpart of the BudgetPlanLineActiveView and serves as a datasource for the Excel worksheet. The columns in this entity, map to the columns in the BudgetPlanLineActiveView table. Any changes that happen to the table must also be replicated in the entity.
+**BudgetPlanWorksheetEntity entity**   The BudgetPlanWorksheetEntity entity is a counterpart of the BudgetPlanLineActiveView and serves as a datasource for the Excel worksheet. The columns in this entity, map to the columns in the BudgetPlanLineActiveView table. Any changes that happen to the table must also be replicated in the entity.
 
-**Extending the columns on BudgetPlanLineActiveView**
+## Extending the columns on BudgetPlanLineActiveView
+
+You can extend the columns on the BudgetPlanLineActiveView using a four-step process. After you complete these steps, build and validate your changes. 
 
 **Step 1: Add columns to BudgetPlanLineActiveView table**
+
+Begin the process by creating a new extension, adding new fields and setting the data type for the fields you add.
 
   1. Open Visual Studio
   2. Open Application explorer.
@@ -53,26 +57,24 @@ This topic describes how to extend the number of columns in the BudgetPlanLineAc
   10. Repeat steps 5 through 9 for as many columns required of each type.
   11. Optionally, add the monetary columns added to the Monetary field group quantity columns  to the Quantity field group.
 
-**Extending the columns on BudgetPlanLineActiveView**
+## Extend the columns on BudgetPlanLineActiveView
 
 **Step 2: Add columns to BudgetPlanWorksheetEntity entity**
 
-To add columns to the BudgetPlanWorksheetEntity entity, follow the steps below:
+To add columns to the BudgetPlanWorksheetEntity entity, complete the following steps:
 
   1. Create an extension on  BudgetPlanWorksheetEntity to the existing project
   2. Open the entity extension in designer mode
   3. Drag and drop the columns from the data sources node into the fields node.
 
-
-
-**Extending the BudgetPlan form**
+## Extending the BudgetPlan form
 
 **Step 3: Creating an extension for the BudgetPlan form**
 
 To update the BudgetPlan form with the new columns, follow the steps below:
 
   1. Create an extension on the  BudgetPlan form
-  2. Replicate any events/customizations in a new event handler that exist on the TransactionCurrencyAmount or Quantity fields onto the new fields. Below are the events for both CurrencyAmount and Quantity that are standard as of the when this document was authored. These events will be need to be created for anything beyond the original 36 CurrencyAmount and Quantity values.
+  2. Replicate any events/customizations in a new event handler that exists on the TransactionCurrencyAmount, or Quantity fields, onto the new fields. BThe events for both CurrencyAmount and Quantity that are standard when this document was written are as follows. These events must be created for anything beyond the original 36 CurrencyAmount and Quantity values.
 
     [FormDataFieldEventHandler(formDataFieldStr(BudgetPlan, BudgetPlanLineActiveView, TransactionCurrencyAmount37), FormDataFieldEventType::Modified)]
 
@@ -111,11 +113,11 @@ Cancel search by clicking the &#39;x&#39; at the end of the search window. The l
   7. Reorder the fields so they are in order for quantity and TransactionCurrencyAmounts
   8. Save the changes.
 
-**Extending the columns on BudgetPlanLineFieldActiveViewMapping**
+## Extending the columns on BudgetPlanLineFieldActiveViewMapping
 
 **Step 4: Update the BudgetPlanLineFieldActiveViewMapping class via a Delegate**
 
-To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine tables, follow the steps below:
+To extend the mapping between the BudgetPlanLineActiveView and BudgetPlanLine tables, complete the following steps:
 
 Create a new class and paste in the event handler method from the gettingBudgetPlanLineFieldName delegate. There should be a statement for each of the TransactionCurrencyAmount and Quantity fields you extended.
 
@@ -159,10 +161,10 @@ Create a new class and paste in the event handler method from the gettingBudgetP
 
     }
 
-**Build and Synchronize**
+## Build and Synchronize
 
 Synchronize your database and build your project.
 
-**Validation**
+## Validation
 
 To validate, you&#39;ll need to create a layout in budget planning beyond 36 monetary and/or quantity columns. If everything was done correctly you should be able to enter a value in every column, save the value, and edit the value in Excel as well.
