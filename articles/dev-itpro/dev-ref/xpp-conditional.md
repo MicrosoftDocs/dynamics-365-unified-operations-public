@@ -72,11 +72,7 @@ else
 
 The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
 
-**switch (** *expression* **) 
-{ 
-    { case } 
-    \[default:** *statement* **\] 
-}**
+**switch** **(** *expression* **)** **{** **{ case }** **\[default:** *statement* **\]** **}**
 
 The syntax for a **case** statement is:
 
@@ -138,27 +134,6 @@ case 13, 17, 21, 500;
     break;
 ```
 
-Break statement example within a while loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for do... while and for loops as well. 
-
-```X++
-var mainMenu = SysDictMenu::newMainMenu();
-    var enum = mainMenu.getEnumerator();
-    var found = false;
-    while (enum.moveNext())
-    {
-        var menuItem = enum.current();
-        if (menuItem.label() == "StringOfInterest")
-        {
-            found = true;
-            break;
-        }
-    }
-    if (found) 
-    {
-        // do something
-    }
-```
-
 ## Ternary operator (?)
 
 The ternary operator (**?**) is a conditional statement that is resolved to one of two expressions. The result can be assigned to a variable. By contrast, an **if** statement provides conditional branching of the program flow but can't be assigned to a variable. Here is the syntax for the ternary operator:
@@ -169,20 +144,15 @@ In this syntax, *expression1* must return a value of **true** or **false**. If *
 
 ### Examples of the ternary operator (?)
 
-    // Returns one of two strings based on a Boolean return value from a method call. 
-    // The Boolean expression indicated whether the CustTable table has a row
-    // with a RecId field value of 1. If this Boolean expression is true 
-    // (meaning RecId != 0), found is assigned to result. 
-    // Otherwise, the alternative not found is assigned to result.
+The following code example returns one of two strings based on a Boolean return value from a method call. The Boolean expression indicated whether the CustTable table has a row with a RecId field value of 1. If this Boolean expression is true (meaning RecId != 0), found is assigned to result. Otherwise, the alternative not found is assigned to result.
+    
     result = (custTable::find("1").RecId) ? "found" : "not found";
 
-    // An example of a nested ternary statement. 
-    // If z is not greater than 1000, the expression is equal to the third 
-    // expression and low is printed. If AccountNum is greater than 1000, the second 
-    // expression is evaluated, and this also contains a ternary operator. If AccountNum 
-    // is greater than 1000 and less than 2000, In interval is printed. If AccountNum is 
-    // greater than 1000 and greater than or equal to 2000, Above 2000 is printed.str z = "5";
-    print( (z > "1000") ?
-             ( (z < "2000") ? "In interval" : "Above 2000")
-             : "low");
-    ); 
+An example of a nested ternary statement. If z is not greater than 1000, the expression is equal to the third expression and low is printed. If AccountNum is greater than 1000, the second expression is evaluated, and this also contains a ternary operator. If AccountNum is greater than 1000 and less than 2000, In interval is printed. If AccountNum is greater than 1000 and greater than or equal to 2000, Above 2000 is printed.str z = "5";
+
+```X++
+int x = 1001;
+int group = x > 1000 ? 1 : 2;
+info(value);
+// Output is 10.
+```
