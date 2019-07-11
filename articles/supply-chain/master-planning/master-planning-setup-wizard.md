@@ -5,7 +5,7 @@ title: Master planning setup wizard
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -111,78 +111,81 @@ For more information, see the [job scheduling](https://docs.microsoft.com/en-us/
 
 ## Updates of demand and supply
 
-The questions in this page are related to different options you can use to update supply and demand. These are firming, action messages and delays. 
+The questions on this page are related to firming, action messages, and delays. 
 
-The wizard will update master planning setup following the schema that was shown before, depending on your answer:
+Master planning setup will be updated as per the same schema as described above, depending on your answer. 
 
-- --No--: it will set the time fence for the option in time fence in master plans page to yes and zero to the number of days.
+- **No**: if you select **No**, the **Time fence** option on the **Master plans** page will be set to **Yes**, and the number of days set to zero. 
 
-- --Yes, as defined in this master plan--: it will set the time fence for the option in master plans page to yes and the number of days that you enter. It will override the values set in the coverage groups. 
+- **Yes, as defined in this master plan**: the **Time fence** option will be set to **Yes**, and the number of days that you enter will be used, overriding the values set in the coverage groups.
 
-- --Yes, as defined in the coverage group--: it will set the time fence for the option in the master plans page to No. 
+- **Yes, as defined in the coverage group**: the **Time fence** option will be set to **No**.. 
 
-For calculated delays, you will find more questions:
-
-- You can select which order types you would like master planning to update the requested date with the delayed date. 
-
-- --Would you like to plan orders in the past, prior to the master planning run date?-- 
-
-For both of these questions, the wizard will update the corresponding parameters that can be found under the Calculated delays tab in the master plans page. 
+For calculated delays, your answers to the questions in the wizard will update the corresponding parameters on the **Calculated delays** tab on the **Master plans** page.
 
 ## Summary of your changes
 
-This last page will show you the changes that the master planning setup wizard recommends for you. You will see the value in your setup (Current setup) and the value suggested by the wizard (new configuration). You are also able to modify the parameters in the new configuration. It is divided into the parameters applying to your legal entity and the ones only applying to the master plan selected. 
+The last page of the wizard shows the changes that that are recommended based on your responses. The value in your setup (**Current setup**) and the value suggested by the wizard (**New configuration**) are displayed. 
 
-You are able to see all parameters that can be modified through the wizard with the "Show all parameters" button at the bottom of the page. It will show all the setup parameters that could be changed with the wizard and you are able to modify them. 
+You can also modify the parameters in the new configuration. The parameters are separated into parameters applying to your legal entity and parameters applying only to the master plan selected. To view all the parameters that can be modified, click **Show all parameters** at the bottom of the page. All the setup parameters that can be changed with the wizard will be displayed, and you can modify them there. 
 
-Finally, when you press "Finish" the wizard will apply the new configuration. If you press Cancel none of the changes will be applied. In all the pages of the wizard you are able to cancel and no changes will be applied. 
+Finally, when you click **Finish**, the new configuration will be applied. If you press **Cancel**, none of the changes will be applied. 
 
+## Examples 
 
-## Examples of setup
+In this section, two fictional companies and their respective setup are described to illustrate how the setup can change according to the needs of each businedd.
 
-In this section two fictional companies and their respective setup is shown to illustrate how the setup can change according to the business needs
-
-### Contoso Manufacturer
+### Example 1 -- Contoso Manufacturer
 
 Contoso Manufacturer is a manufacturing company that produces speakers. It purchases different raw materials and components used for the final speaker from different suppliers. Some of the characteristics of its supply and manufacturing are:
 
 - Manufacturing of final items that have a BOM structure.
 
-- All final items and components are planned by master planning, there is not any manual planning. 
+- All final items and components are planned by master planning. Manual planning is not done. 
 
 - Each of the final items has a given route of operations for its production. 
 
-- The manufacturing plant produces the items. It has a defined number of milling and drilling machines used to process the components. The different components need to be processed by these machines. 
+- The manufacturing plant produces the items. It has a defined number of milling and drilling machines used to process the components. The different components must be processed by these machines. 
 
-- Many different suppliers. The average lead time for the items is 1 week, expect for a group of items from the same supplier whose lead time is 7 weeks.
+- There are many different suppliers. The average lead time for items is 1 week. A group of items from the same supplier will have a lead time of 7 weeks.
 
-Among the setup for Contoso Manufacturer:
+In the wizard, the following values for Contoso Manufacturer are entered.
 
-- **Coverage**: --Do you want to specify the number of days of your planning horizon? Yes, as defined in the coverage groups--
+- **Coverage**: 
+Q: "Do you want to specify the number of days of your planning horizon?"
+A: "Yes, as defined in the coverage groups."
 
-As the lead time for the items is very different Contoso does not need to plan all the items for the same period of time in the future. Coverage groups for the items are created such that items that have a similar lead time are assigned to the same coverage group. The planning horizon for each of the coverage groups (or coverage time fence) is approximately the lead time plus a margin on 1 week. Then, master planning will ensure that the items are planned in advance regarding their lead time. 
+As the lead time for items is very different, Contoso does not need to plan all the items for the same period of time in the future. Coverage groups for the items are created such that items that have a similar lead time are assigned to the same coverage group. The planning horizon for each of the coverage groups (or coverage time fence) is approximately the lead time plus a margin on 1 week. Then, master planning will ensure that the items are planned in advance regarding their lead time. 
 
-Therefore, two coverage groups will have the coverage time fence to 2 weeks and 8 weeks respectively. 
+Therefore, two coverage groups will have the coverage time fence to 2 weeks and 8 weeks, respectively. 
 
-Note that it would also be possible to answer Yes, as defined in this master plan. The number of days entered should be larger than the longest lead time of all the items. But in this case, master planning run time will increase as many planned orders will be calculated and never used, as many items do not need to be planned in such advance. 
+It would also be possible to answer "Yes, as defined in this master plan." The number of days entered should be larger than the longest lead time of all the items. But in this case, master planning run time will increase as many planned orders will be calculated and never used, as many items do not need to be planned in such an advanced time. 
 
-- **Scheduling**: --Do you need to schedule operations divided into individual jobs? Yes--
+- **Scheduling**: 
+Q: "Do you need to schedule operations divided into individual jobs?"
+A: "Yes"
 
 Contoso Manufacturing needs to plan and schedule the individual jobs that will be performed in the shop floor, therefore it will use job scheduling. 
 
-- **Capacity**: --Do you want to schedule using the capacity of resources? Yes, as defined in this master plan. 10 days--
+- **Capacity**:
+Q: "Do you want to schedule using the capacity of resources?"
+A: "Yes, as defined in this master plan." "10 days" is entered.
 
-As the milling and drilling machines are limited, the production planning needs to take into account these and arrange the jobs in time according to the capacity of the resources. In other words, the jobs scheduled will take into account the limitation of the resources and be re-planned to meet these. Beyond the period defined, planning will be done using the lead time (planned production orders may overlap). As the production lead time for the item is 7 days, capacity of the resources will be considered for master planning during 10 days. 
+As the milling and drilling machines are limited, production planning needs to take into account these limitations and arrange the jobs in time according to the capacity of the resources. In other words, the jobs scheduled will take into account the limitation of the resources and be replanned. Beyond the period defined, planning will be done using the lead time (planned production orders may overlap). As the production lead time for the item is 7 days, capacity of the resources will be considered for master planning during 10 days. 
 
-- **Sequencing**: --Do you want to sequence planned orders using the product's sequence values? Yes, as defined in the coverage groups--
+- **Sequencing**: 
+Q: "Do you want to sequence planned orders using the product's sequence values?"
+A: "Yes, as defined in the coverage groups."
 
-Each of the final items has a route defined for its production and therefore, master planning will schedule the orders in time according to the defined routes.
+Each of the final items has a route defined for its production, and therefore, master planning will schedule the orders in time according to the defined routes.
 
-- **Explosion**: --Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)? Yes, as defined in the coverage groups--
+- **Explosion**: 
+Q: "Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)?"
+A: "Yes, as defined in the coverage groups."
 
-All the items used for the production are needed to be planned and as they have very different lead times, master planning will have a better performance when using the coverage groups. Again, a margin of 1 week can be given and explosion can be made for the same time as the coverage.
+All the items used for the production must be planned and as they have very different lead times, master planning will have a better performance when using the coverage groups. Again, a margin of 1 week can be given and explosion can be made for the same time as the coverage.
 
-### Contoso Retailer
+### Example 2 -- Contoso Retailer
 
 Contoso Retailer is a distribution company in the fashion industry. It will use master planning to calculate when to place purchase orders according to its forecasted sales. These are some of its characteristics:
 
@@ -192,17 +195,23 @@ Contoso Retailer is a distribution company in the fashion industry. It will use 
 
 - The lead time from the main warehouse to each of the stores is approximately 2 weeks for all the items. 
 
-Among the setup for Contoso Retailer:
+In the wizard, the following values for Contoso Retailer are entered.
 
-- **Forecast demand**: --Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand? Yes, as defined in this master plan--
+- **Forecast demand**: 
+Q: "Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"
+A: "Yes, as defined in this master plan."
 
 Contoso has included a demand forecast to predict its sales in master planning. Therefore, master planning needs to suggest planned orders to fulfill the forecast. 
 
-- **Firming**: --Do you want master planning to automatically firm planned orders into order documents, for example production or purchase orders? Yes, as defined in this master plan. 1 day.--
+- **Firming**: 
+Q: "Do you want master planning to automatically firm planned orders into order documents, for example production or purchase orders?"
+A: "Yes, as defined in this master plan." "1 day" is entered.
 
-As Contoso Retailer will create the purchase orders directly from the planned purchase orders, it is useful to automatically firm them. As the company runs master planning daily, setting a firming time fence of 1 day will automatically firm all the orders needed for the following day. 
+Because Contoso Retailer will create the purchase orders directly from the planned purchase orders, it is useful to automatically firm them. Since the company runs master planning daily, setting a firming time fence of 1 day will automatically firm all the orders needed for the following day. 
 
-- **Approved requisitions**: --Do you want to include demand from approved requisitions to replenish retail stores? Yes, as defined in this master plan. 1 day.--
+- **Approved requisitions**:
+Q: "Do you want to include demand from approved requisitions to replenish retail stores?"
+A: "Yes, as defined in this master plan." "1 day" is entered.
 
 Contoso uses the approved requisitions from its retail stores to create planned purchase orders to replenish them. As master planning is run daily, the requisitions from the last day will be included in the planning. 
 
