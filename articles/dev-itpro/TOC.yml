@@ -108,8 +108,16 @@
         href: dev-ref/xpp-language-reference.md
       - name: X++ variables and data types
         href: dev-ref/xpp-variables-data-types.md
-      - name: X++ statements, loops, and exception handling
-        href: dev-ref/xpp-statements-loops.md
+      - name: Statements, loops, and exception handling
+        items:
+        - name: Statements: comments, using, print
+          href: dev-ref/xpp-statements-loops.md
+        - name: Conditional statements: if, if...else, switch, and ternary operator (?)
+          href: dev-ref/xpp-conditional.md
+        - name: Loop statements: for, while, and do...while
+          href: dev-ref/xpp-loops.md
+        - name: Exception handling: throw, try...catch, finally, and retry
+          href: dev-ref/xpp-exceptions.md        
       - name: SQL connection error X++ exception
         href: dev-ref/sql-connection-error.md
       - name: X++ operators
