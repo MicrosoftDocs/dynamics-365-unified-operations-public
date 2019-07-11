@@ -1,6 +1,37 @@
+---
+# required metadata
+
+title: Extending the budget planning layout
+description: This topic describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
+author: ryansandness
+manager: AnnBe
+ms.date: 07/20/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Developer
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Operations 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: ryansand
+ms.search.validFrom: 2019-07-31 
+ms.dyn365.ops.version:  10.0.4
+---
+
+**Extending the budget planning layout**
+
 **Overview**
 
-This article describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if multiple years are being compared, the number of scenarios being evaluated are very large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
+This topic describes how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. These steps may be necessary if multiple years are being compared, the number of scenarios being evaluated are  large, or weekly or daily periods are being evaluated. This is written from a developer audience perspective.
 
 **BudgetPlanLineActiveView table** - The BudgetPlanLineActiveView table contains the pivoted budget planning data. Out of box, this table contains 36 monetary columns and 36 quantity columns. This default configuration enables the user to manipulate the budget plan layout to display and compare up to 3 years of monthly planning data.
 
