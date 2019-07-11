@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Post jobs to LinkedIn from Attract
+title: Post jobs to LinkedIn from Microsoft Dynamics 365 for Talent - Attract
 description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
 manager: AnnBe
