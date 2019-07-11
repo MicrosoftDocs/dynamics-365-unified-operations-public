@@ -125,12 +125,12 @@ case 13:
 case 17:
 case 21:
 case 500:
-    print "g";
+    info("g");
     break;
 
 // Code segment B (the values are comma-delimited)
 case 13, 17, 21, 500;
-    print "g";
+    info("g");
     break;
 ```
 
@@ -144,15 +144,17 @@ In this syntax, *expression1* must return a value of **true** or **false**. If *
 
 ### Examples of the ternary operator (?)
 
-The following code example returns one of two strings based on a Boolean return value from a method call. The Boolean expression indicated whether the CustTable table has a row with a RecId field value of 1. If this Boolean expression is true (meaning RecId != 0), found is assigned to result. Otherwise, the alternative not found is assigned to result.
-    
-    result = (custTable::find("1").RecId) ? "found" : "not found";
+The following code example returns one of two strings based on a Boolean return value from a method call. The Boolean expression indicates whether the CustTable table has a row with a RecId field value of 1. If this Boolean expression is true (meaning RecId != 0), found is assigned to result. Otherwise, the alternative not found is assigned to result.
 
-An example of a nested ternary statement. If z is not greater than 1000, the expression is equal to the third expression and low is printed. If AccountNum is greater than 1000, the second expression is evaluated, and this also contains a ternary operator. If AccountNum is greater than 1000 and less than 2000, In interval is printed. If AccountNum is greater than 1000 and greater than or equal to 2000, Above 2000 is printed.str z = "5";
+```X++
+result = (custTable::find("1").RecId) ? "found" : "not found";
+```
+
+You can nest statements with the ternary operator. The following example assigns one of three values to **group** depending on the value of **x**.
 
 ```X++
 int x = 1001;
-int group = x > 1000 ? 1 : 2;
+int group = x <= 1000 ? 1 : (x <= 2000 ? 2 : 3_;
 info(value);
-// Output is 10.
+// Output is 1.
 ```
