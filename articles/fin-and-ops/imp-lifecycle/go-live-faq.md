@@ -113,4 +113,4 @@ For more information, see [Apply deployable package](../../dev-itpro/deployment/
 
 ## What should I do if my production environment is down?
 
-To report a production outage, follow the process that is described in the topic [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
+To report a production outage, follow the process described in the topic, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).
