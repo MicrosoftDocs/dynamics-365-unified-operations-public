@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: X++ classes
+title: Classes and methods
 description: This topic describes how to create and use classes in X++.
 author: RobinARH
 manager: AnnBe
@@ -30,42 +30,60 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Classes
+# Classes and methods
 
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to create and use classes in X++.
 
-A *class* is a software construct that defines the data and methods of the objects that are later constructed from that class. The objects that are constructed are known as *instances* or *objects*. (This topic uses the two terms interchangeably.) The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Variables in a class are specific to objects that are constructed from that class. Every object that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data. Typically, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. You can also declare *static methods* and *static fields*.
+A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
 
-## Declaration of classes
-### Create a class in Visual Studio
+You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](static-class-members.md).
 
-Follow these steps to create a class in Microsoft Visual Studio.
+## Declare a class
+
+You must use the **Add new item** dialog in Visual Studio to add a class to your project. 
 
 1.  In Server Explorer, right-click the project, and then click **Add**.
-2.  In the **New Item** dialog box, select **Class**, and then enter a name for the class.
+2.  In the **New Item** dialog box, select **Installed > Dynamics 365 Items > Code** in the left navigation. Then select **Class**, and then enter a name for the class.
 3.  Click **Add**.
 
 All classes are public. If you remove the **public** modifier, the system still treats the class as public. You can specify other modifiers on the class declaration, such as **final** and **extends**.
 
-### Creating variables in a class
+## Variables
 
-All classes are public, but all member variables are implicitly protected. However, you can modify the member variable declaration by using the private, protected or public keywords. All member variables belong to only object instances of the class. The following example shows how to use accessor methods to make the variable data public.
+Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify and instance variable declaration by using the **private**, **protected**, or **public** keywords. 
 
-    public class HasAFirstName
+The following example shows how to use accessor methods to make the variable data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected variable. The variable **lastName** is public, so code can directly get and set the value of the variable.
+
+```X++
+// This is the class definition.
+public class HasAFirstName
+{
+    str firstName;
+    public str lastName;
+    public str getFirstName()
     {
-        str firstName;
-        public str getFirstName()
-        {
-            return firstName;
-        }
-
-        public void setFirstName(str newName)
-        {
-           firstName = newName;
-        }
+        return firstName;
     }
+
+    public void setFirstName(str newName)
+    {
+       firstName = newName;
+    }
+}
+
+// This code creates an instance of the class and gets the variables.
+public static void TestLastName()
+{
+    HasAFirstName hasFirstName = new HasAFirstName();
+    hasFirstName.setFirstName("Dion");
+    info(hasFirstName.getFirstName());
+    hasFirstName.lastName = ("Townes");
+    info(hasFirstName.lastName);
+}
+// The output is "Dion" and "Townes".
+```
 
 ## Constructors
 To create an instance of a class, you must instantiate it by using a *constructor*. The default constructor is the **new** method.
