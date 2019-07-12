@@ -26,11 +26,9 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# Deferral transactions (Russia)
+# Receipt of deferrals
 
 [!include [banner](../includes/banner.md)]
-
-## Receipt of deferrals
 
 You use the **Journal voucher** page to create a receipt transaction for deferrals that were manually created. When you post the receipt transaction, the status of the deferrals is updated to **In process**.
 
