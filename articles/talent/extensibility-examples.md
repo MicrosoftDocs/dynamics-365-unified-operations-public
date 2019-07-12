@@ -125,4 +125,4 @@ To download the **Admin console to manage talent pools** template,  go to [Admin
 
 [The Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Migrate app between tenants and environments](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Migrate app between tenants and environments](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

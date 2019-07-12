@@ -51,4 +51,4 @@ Make sure that the tenant admin has assigned a valid PowerApps P2 license direct
 Note that various Microsoft Office SKUs also provide the right, together with standalone PowerApps Plan 2 SKUs. The important point is that one of these SKUs must be present.
 
 1. Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
