@@ -196,7 +196,7 @@ You can specify IP addresses for network peripherals in two places. If the Moder
 
 #### Modern POS for Android
 
-As of Dynamics 365 for Retail version 8.1.3, the Modern POS for Android application includes a built-in IPC hardware station. This hardware station supports communicating with network printers and payment connectors. For more information, visit the [Hybrid app for Android docs article](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+As of Dynamics 365 for Retail version 8.1.3, the Modern POS for Android application includes a built-in IPC hardware station. This hardware station supports communicating with network printers and payment connectors. For more information, visit the [Hybrid app for Android docs article](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### Cloud POS and Modern POS for iOS
 
@@ -545,7 +545,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-6. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+6. Select the **1070** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 7. Install and activate Modern POS for Windows.
 8. Start Modern POS for Windows, and begin to use the connected peripheral devices.
 

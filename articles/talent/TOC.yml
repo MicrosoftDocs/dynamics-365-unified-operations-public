@@ -8,6 +8,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: July 9, 2019
+        href: whats-new-talent-july-9-2019.md
       - name: July 2, 2019
         href: whats-new-talent-july-2-2019.md
       - name: June 25, 2019
@@ -102,8 +104,6 @@
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service
       href: CoreHREntities.md
-    - name: Access preview features
-      href: access-preview-feature.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Staff your organization with Attract
@@ -112,48 +112,66 @@
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: LinkedIn FAQ
-      href: attract-linkedin-faq.md
-    - name: Configure email settings
-      href: attract-configure-email-settings.md
-    - name: Create a process template in Attract
-      href: Process-templates-Attract.md
+    - name: Frequently asked questions
+      items:
+      - name: LinkedIn integration FAQ
+        href: attract-linkedin-faq.md
+    - name: Configure system settings
+      items:
+      - name: Configure company information
+        href: admin-settings-attract.md
+      - name: Set user permissions
+        href: security-attract.md
+      - name: Manage features
+        href: access-preview-feature.md
+      - name: Set up your career site
+        href: career-site.md
+      - name: Enable Broadbean integration
+        href: attract-admin-job-board-settings.md
+      - name: Configure email settings
+        href: attract-configure-email-settings.md
+      - name: Set up LinkedIn integration
+        href: attract-admin-linkedin.md
+    - name: Create a hiring process
+      items:
+      - name: Create a process template
+        href: process-templates-attract.md
+      - name: Activities in hiring processes 
+        href: activities-attract.md
+      - name: Email templates
+        href: email-templates.md
+      - name: Use analytic reports
+        href: analytic-reports.md
     - name: Create and post jobs
-      href: Creating-jobs-Attract.md
-    - name: Set up integration with LinkedIn
-      href: attract-admin-linkedin.md
-    - name: Post jobs to LinkedIn from Attract
-      href: attract-post-jobs-to-linkedin.md
-    - name: Post jobs to Broadbean from Attract
-      href: posting-jobs-external.md
-    - name: Source candidates by using talent pools
-      href: attract-talent-pools.md
-    - name: Source candidates with LinkedIn Recruiter
-      href: attract-linkedin-recruiter.md
-    - name: Activities in the hiring processes 
-      href: activities-attract.md
-    - name: Interview scheduling and feedback
-      href: interview-scheduling-feedback.md
+      items:
+      - name: Create a job
+        href: creating-jobs-attract.md
+      - name: Post jobs to LinkedIn
+        href: attract-post-jobs-to-linkedin.md
+      - name: Post jobs to Broadbean
+        href: posting-jobs-external.md
+    - name: Source candidates
+      items:
+      - name: Source candidates with talent pools
+        href: attract-talent-pools.md
+      - name: Source candidates with LinkedIn Recruiter
+        href: attract-linkedin-recruiter.md
+      - name: Track candidate sources
+        href: source-tracking.md    
+      - name: Intelligent recommendations
+        href: Intelligent-Recommendations.md
+    - name: Set up interviews
+      items: 
+      - name: Interview scheduling and feedback
+        href: interview-scheduling-feedback.md
+    - name: Make an offer
+      items:
+      - name: Set up offer management
+        href: offer-setup.md
+      - name: Create, approve, and sign offers
+        href: creating-offers.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
-    - name: Career site functionality in Attract
-      href: career-site.md
-    - name: Set up offer management
-      href: offer-setup.md
-    - name: Create, approve, and sign offers
-      href: creating-offers.md
-    - name: Email templates
-      href: email-templates.md
-    - name: Security and role management in Attract
-      href: security-attract.md
-    - name: Admin settings in Attract
-      href: Admin-Settings-Attract.md
-    - name: Intelligent recommendations
-      href: Intelligent-Recommendations.md
-    - name: Track sources for candidate profiles and applications
-      href: source-tracking.md    
-    - name: Use analytic reports for hiring process insights
-      href: analytic-reports.md
   - name: Welcome new hires with Onboard
     items:  
     - name: Get started with Onboard

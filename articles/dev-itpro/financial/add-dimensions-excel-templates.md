@@ -86,7 +86,7 @@ The only value that is present on Microsoft Excel templates after installation i
         | Workers                                   | DimAttributeHcmWorkerEntity               |
 
     -   **Related Data Entity Cardinality** - **ZeroOne**
-    -   **Related Data Entity Role** - Enter a unique name, such as Dimension Department.
+    -   **Related Data Entity Role** - Enter a unique name, such as "Dimension Department Lookup".
     -   **Relationship Type** - **Association**
     -   **Role** - Enter a unique name, such as Dimension Department.
 

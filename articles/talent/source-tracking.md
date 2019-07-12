@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Track sources for candidate profiles and applications 
+# Track candidate sources
 
 [!include[banner](../includes/banner.md)]
 
