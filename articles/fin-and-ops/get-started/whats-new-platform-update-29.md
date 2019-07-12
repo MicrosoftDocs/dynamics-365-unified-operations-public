@@ -36,16 +36,13 @@ ms.dyn365.ops.version: Platform 29
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.XXXX. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
-## Feature
-A brief description of the feature, including a link to a topic where customers can read the details.
 
-## Feature
-The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In PU29, additional features have been added, including:
+## Feature management
+The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In Platform update 29, additional features have been added, including:
 - Enable all features that are not enabled
 - Automatically enable all features after an update
 - Do not allow a feature to be enabled based on a condition such as an existing config key is turned on
 - Add a button called Check for updates that manually searches for new features and adds them to the list of features
-
 
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
