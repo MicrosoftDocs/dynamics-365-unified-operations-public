@@ -5,7 +5,7 @@ title: Go-live for Finance and Operations implementation projects FAQ
 description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
 author: sshashi7
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -49,7 +49,7 @@ For a list of the prerequisites, see [Preparing for Go-live](prepare-go-live.md)
 The Go-live assessment/review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every Finance and Operations project before you can request to go live in a production environment.
 
 ## I want to request my production environment. Who do I contact for a Go-live assessment/review?
-If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <d365fogl@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) page, complete it, and send it to d365fogl@microsoft.com.
+If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <d365fogl@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) page, complete it, and send it to d365fogl@microsoft.com.
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
@@ -100,7 +100,7 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 No. However, you can submit a database refresh service request to copy your production database to your Tier 2 and higher sandbox environment. After the copy request is completed, you can back up your sandbox environment.
 
 ## My golden configuration database is in a Tier 1 sandbox environment. How can I copy and restore it to my production environment?
-Follow the instructions in the topic [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
+To copy and restore your database, follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
 
 > [!NOTE]
 > If your golden configuration is in data packages, you must manually import the data packages to the production environment.
