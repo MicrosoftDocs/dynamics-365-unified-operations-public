@@ -118,8 +118,16 @@
           href: dev-ref/xpp-data-collection.md
         - name: Extended data types
           href: dev-ref/xpp-data-edt.md
-      - name: X++ statements, loops, and exception handling
-        href: dev-ref/xpp-statements-loops.md
+      - name: Statements, loops, and exception handling
+        items:
+        - name: Comments, using, and print
+          href: dev-ref/xpp-statements-loops.md
+        - name: Conditional statements
+          href: dev-ref/xpp-conditional.md
+        - name: Loop statements
+          href: dev-ref/xpp-loops.md
+        - name: Exception handling
+          href: dev-ref/xpp-exceptions.md     
       - name: SQL connection error X++ exception
         href: dev-ref/sql-connection-error.md
       - name: X++ operators
