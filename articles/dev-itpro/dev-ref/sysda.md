@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Access data by using the SysDA classes
-description: This topic explains how to create extensible queries and data access statements by using the SysDA API. 
+title: Access data by using the SysDa classes
+description: This topic explains how to create extensible queries and data access statements by using the SysDa application programming interface (API). 
 author: RobinARH
 manager: AnnBe
 ms.date: 06/24/2019
@@ -29,32 +29,32 @@ ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Access data by using the SysDA classes
+# Access data by using the SysDa classes
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create extensible queries by using the SysDa API. 
+This topic explains how to create extensible queries by using the SysDa application programming interface (API).
 
-The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler would generate. This means that the using the SysDa classes carry no overhead in contrast to using the **QueryRun** object, for example. It also means that the checking that the X++ compiler does on data access statements are your responsibility. For example, you can create a **where** clause that compares a Guid to an integer, which the compiler would diagnose as an error. 
+The extensible SysDa API provides almost all the data access possibilities that are available in X++. In fact, the APIs are wrappers around the code that the X++ compiler would generate. Therefore, use of the SysDa classes carries no overhead, unlike use of the **QueryRun** object, for example. Additionally, the check that the X++ compiler does on data access statements is your responsibility. For example, you create a **where** clause that compares a globally unique identifier (GUID) to an integer. The X++ compiler would diagnose this clause as an error.
 
-The SysDa APIs include an extensive set of APIs for creating custom queries, but there are a smaller set of types that drive the primary query activities:
+The SysDa APIs include an extensive set of APIs for creating custom queries. However, there is a smaller set of types that drives the primary query activities:
 
 + Select: **SysDaQueryObject**, **SysDaSearchObject**, and **SysDaSearchStatement**
 + Update: **SysDaUpdateObject** and **SysDaUpdateStatement**
 + Insert: **SysDaInsertObject** and **SysDaInsertStatement**
-+ Delete: **SysDaQueryObject**, **SysDaDeleteObject** and **SysDaDeleteStatement**
++ Delete: **SysDaQueryObject**, **SysDaDeleteObject**, and **SysDaDeleteStatement**
 
-The following sections provide examples of each type of query, and the customizations they support. The examples use a table named TestTable that has two fields, a string field named **stringField** and an integer field named **intField**.
+The following sections provide examples of each type of query and the customizations that it supports. The examples use a table that is named TestTable. This table has two fields: a string field that is named **stringField** and an integer field that is named **intField**.
 
 ## Select query
 
-To run a select query:
+To run a **select** query, follow these steps.
 
-+ Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.
-+ Create a **SysDaSearchObject** object, passing the **SysDaQueryObject** to the constructor. 
-+ Iterate over the results of the query by passing the **SysDaSearchObject** to the **SysDaSearchStatement.next()** method.
+1. Create and configure a **SysDaQueryObject** object that specifies the table instance that will contain the designated records.
+2. Create a **SysDaSearchObject** object, and pass the **SysDaQueryObject** object to the constructor.
+3. Iterate over the results of the query by passing the **SysDaSearchObject** object to the **SysDaSearchStatement.next()** method.
 
-The following code example finds all rows in TestTable where intField <= 5.
+The following example finds all rows in TestTable where **intField** \<= **5**.
 
 ```X++
 // t is the table buffer that will hold the result.
@@ -93,17 +93,17 @@ while (ss.next(so))
 {
     info(t.stringField);
 }
-
 ```
 
 ## Update statement
 
-To run an update statement:
+To run an **update** statement, follow these steps.
 
-+ Create an configure a **SysDaUpdateObject** object. 
-+ Update data by by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to  **execute** in `ttsbegin` and `ttscommit` statements.
+1. Create and configure a **SysDaUpdateObject** object.
+2. Update data by passing the **SysDaUpdateObject** object to the **SysDaUpdateStatement.execute()** object. Because updates modify the data in the database, you must wrap the call to **execute** in **ttsbegin** and **ttscommit** statements.
 
-The following code example updates stringField to "fifty" for all rows where intField = 50.
+The following example updates **stringField** to **"fifty"** for all rows where **intField** = **50**.
+
 ```X++
 TestTable t;
 
@@ -138,14 +138,14 @@ info("Updated value is: " + t1.stringField);
 
 ## Insert statement
 
-To run an insert statement:
+To run an **insert** statement, follow these steps.
 
-+ Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
-+ Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in  **SysDaQueryObject.projection()** must match the order of the fields in the **SysDaInsertObject.fields()**.
-+ Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
-+ Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
+1. Create and configure a **SysDaInsertObject** object to specify which fields are updated during the insertion.
+2. Create and configure a **SysDaQueryObject** object that specifies the source of the rows to insert. The order of the fields in **SysDaQueryObject.projection()** must match the order of the fields in **SysDaInsertObject.fields()**.
+3. Assign the **SysDaQueryObject** object to the **SysDaInsertObject** object.
+4. Insert the new row by passing the **SysDaInsertObject** object to the **SysDaInsertStatement.executeQuery()** method.
 
-The following code example inserts rows into TestTable with intField = 40 and stringField = "en-us".
+The following example inserts rows where **intField** = **40** and **stringField** = **"en-us"** into TestTable.
 
 ```X++
 TestTable t;
@@ -197,13 +197,13 @@ info(any2Str(t1.intField) + ":" + t1.stringField);
 
 ## Delete statement
 
-To run a delete statement:
+To run a **delete** statement, follow these steps.
 
-+ Create and configure a **SysDaQueryObject** object to specify which rows to delete.
-+ Create a **SysDaDeleteObject** object, passing the **SysDaQueryObject** to the constructor.
-+ Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
+1. Create and configure a **SysDaQueryObject** object to specify which rows to delete.
+2. Create a **SysDaDeleteObject** object, and pass the **SysDaQueryObject** object to the constructor.
+3. Delete the rows by passing the **SysDaDeleteObject** object to the **SysDaDeleteStatement.executeQuery()** method.
 
-The following code example deletes rows where intField is an even number.
+The following example deletes rows where **intField** is an even number.
 
 ```X++
 TestTable t;
@@ -244,15 +244,13 @@ info("Number of rows after deletion: " + any2Str(t.RowCount()));
 
 SysDa queries support several clauses:
 
-+ `whereClause`: The where clause is constructed from objects that inherit from **SysDaQueryExpression**. Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. You can find the full list by filtering in the Application Explorer.
-+ `orderByClause`
-+ `groupByClause`
-+ `joinClause` with `joinClauseKind`
-+ `joinedQuery`
-+ `settingClause`
++ **whereClause** – The **where** clause is constructed from objects that inherit from **SysDaQueryExpression**. Examples are **SysDaEqualsExpression**, **SysDaNotEqualsExpression**, and **SysDaLessThanExpression**. You can find the full list by filtering in Application Explorer.
++ **orderByClause**
++ **groupByClause**
++ **joinClause** with **joinClauseKind**
++ **joinedQuery**
++ **settingClause**
 
 ## Troubleshooting
 
-You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you are building.
-
-
+You can use the **toString()** method on **SysDaQueryObject**, **SysDaUpdateObject**, **SysDaInsertObject**, and **SysDaQueryObject** objects to view the statement that you're building.
