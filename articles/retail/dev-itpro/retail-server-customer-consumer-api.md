@@ -472,7 +472,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | Get         |                                                                                         | PageResult\<Recommendation\>      | Application,Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
 | GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | Application,Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
 
-**Transfer order controller**
+## Transfer order controller
 
 | API                      | Parameter                                                                                                        | Return value                           | Supported Commerce Roles | Description                                                       |
 |--------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------|
@@ -491,7 +491,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | DeleteEntity             | TransferOrder entity                                                                                             | void                                   | Employee                 | Deletes the specified transfer order.                             |
 | CreateEntity             | TransferOrder entity                                                                                             | TransferOrder                          | Employee                 | Creates transfer order.                                           |
 
-**Purchase order controller**
+## Purchase order controller
 
 | API            | Parameter                               | Return value                    | Supported Commerce Roles | Description                                   |
 |----------------|-----------------------------------------|---------------------------------|--------------------------|-----------------------------------------------|
@@ -500,7 +500,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | PatchEntity    | PurchaseOrder entity                    | PurchaseOrder                   | Employee                 | Saves a purchase order to the local database. |
 | GetEntityByKey | string orderId                          | PurchaseOrder                   | Employee                 | Get a purchase order by order identifier.     |
 
-**Org units controller:**
+## Org units controller
 
 | API                                | Parameter                                                                                                                                                                         | Return value                          | Supported Commerce Roles                  | Description                                                                                             |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -519,13 +519,13 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetStoreHours                      | string storeNumber                                                                                                                                                                | StoreHours                            | Application,Employee, Customer, Anonymous | Retrieve the store hours for a given store number.                                                      |
 | GetEntityByKey                     | string orgUnitNumber                                                                                                                                                              | OrgUnit                               | Application,Employee, Customer, Anonymous | Gets organization entity by key.                                                                        |
 
-**Catalogs controller:**
+## Catalogs controller
 
 | API         | Parameter                                                                | Return value                     | Supported Commerce Roles                  | Description                   |
 |-------------|--------------------------------------------------------------------------|----------------------------------|-------------------------------------------|-------------------------------|
 | GetCatalogs | long channelId, bool activeOnly, QueryResultSettings queryResultSettings | PageResult&lt;ProductCatalog&gt; | Application,Employee, Customer, Anonymous | Gets catalogs by OData query. |
 
-**Categories controller:**
+## Categories controller
 
 | API           | Parameter                                                                | Return value                        | Supported Commerce Roles                  | Description                                             |
 |---------------|--------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|---------------------------------------------------------|
@@ -534,32 +534,32 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetAttributes | long categoryId, QueryResultSettings queryResultSettings                 | PageResult&lt;AttributeCategory&gt; | Application                               | Gets categories' attributes by OData query.             |
 | Get           | QueryResultSettings queryResultSettings                                  | PageResult&lt;Category&gt;          | Application, Employee, Anonymous          | Gets full list of categories as IQueryable.             |
 
-**AppInfo controller:**
+## AppInfo controller
 
 | API                      | Parameter         | Return value | Supported Commerce Roles | Description                                           |
 |--------------------------|-------------------|--------------|--------------------------|-------------------------------------------------------|
 | UpdateApplicationVersion | string appVersion | void         | Employee                 | Updates the POS device's current application version. |
 
-**Attribute controller:**
+## Attribute controller
 
 | API                     | Parameter                                                                                        | Return value                          | Supported Commerce Roles | Description                                                      |
 |-------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|------------------------------------------------------------------|
 | GetAttributeDefinitions | AttributeDefinitionCriteria attributeDefinitionCriteria, QueryResultSettings queryResultSettings | PageResult&lt;AttributeDefinition&gt; | Employee                 | Gets the attribute definitions by an attribute group identifier. |
 
-**Attribute group controller:**
+## Attribute group controller
 
 | API                          | Parameter                                                                                                  | Return value                               | Supported Commerce Roles | Description                                                                        |
 |------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------------------|------------------------------------------------------------------------------------|
 | GetAttributeGroupDefinitions | AttributeGroupDefinitionCriteria attributeGroupDefinitionCriteria, QueryResultSettings queryResultSettings | PageResult&lt;AttributeGroupDefinition&gt; | Employee                 | Gets the attribute group definitions by collection of attribute group identifiers. |
 
-**Audit event controller:**
+## Audit event controller
 
 | API                      | Parameter             | Return value | Supported Commerce Roles                           | Description                                |
 |--------------------------|-----------------------|--------------|----------------------------------------------------|--------------------------------------------|
 | RegisterAuditEvent       | AuditEvent auditEvent | void         | Employee                                           | Performs the audit event saving operation. |
 | RegisterAndGetAuditEvent | AuditEvent auditEvent | AuditEvent   | Anonymous, Customer, Device, Employee, Application | Performs the audit event saving operation. |
 
-**Shifts controller:**
+## Shifts controller
 
 | API                         | Parameter                                                                              | Return value                    | Supported Commerce Roles | Description                                                |
 |-----------------------------|----------------------------------------------------------------------------------------|---------------------------------|--------------------------|------------------------------------------------------------|
@@ -584,7 +584,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetSuspendedCartsByShift    | string shiftTerminalId, long shiftId, QueryResultSettings queryResultSettings          | PageResult&lt;SuspendedCart&gt; | Employee                 | Voids the suspended transactions for given shift.          |
 | VoidSuspendedCarts          | long shiftId, string shiftTerminalId                                                   | void                            | Employee                 | Voids the suspended transactions for given shift.          |
 
-**Async service controller:**
+## Async service controller
 
 | API                        | Parameter                                                     | Return value                      | Supported Commerce Roles | Description                     |
 |----------------------------|---------------------------------------------------------------|-----------------------------------|--------------------------|---------------------------------|
@@ -598,40 +598,40 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | UpdateDownloadSession      | DownloadSession downloadSession                               | bool                              | Device                   | Update download session status. |
 | PostOfflineTransactions    | IEnumerable&lt;string&gt; offlineTransactionForMPOS           | bool                              | Device                   | Posts offline transactions.     |
 
-**Card type controller:**
+## Card type controller
 
 | API                          | Parameter                               | Return value                   | Supported Commerce Roles                  | Description                                                           |
 |------------------------------|-----------------------------------------|--------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
 | GetCardTypes                 | QueryResultSettings queryResultSettings | PageResult&lt;CardTypeInfo&gt; | Application,Employee, Customer, Anonymous | Returns the list of card types.                                       |
 | GetSupportedPaymentCardTypes | QueryResultSettings queryResultSettings | PageResult&lt;string&gt;       | Application,Customer,Anonymous                                 | Returns the list of payment cards supported by the payment connector. |
 
-**Commission sales group controller:**
+## Commission sales group controller
 
 | API                         | Parameter                                                  | Return value                           | Supported Commerce Roles | Description                                                                       |
 |-----------------------------|------------------------------------------------------------|----------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
 | GetCommissionSalesGroups    | QueryResultSettings queryResultSettings                    | PageResult&lt;CommissionSalesGroup&gt; | Employee                 | Gets collection of commission sales groups for the channel.                       |
 | SearchCommissionSalesGroups | string searchText, QueryResultSettings queryResultSettings | PageResult&lt;CommissionSalesGroup&gt; | Employee                 | Searches for the commission sales groups for the channel for a given search text. |
 
-**Environment configuration controller:**
+## Environment configuration controller
 
 | API                         | Parameter | Return value             | Supported Commerce Roles         | Description                                                                                                     |
 |-----------------------------|-----------|--------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | GetEnvironmentConfiguration |           | EnvironmentConfiguration | Anonymous, Employee, Application | Gets a single environment configuration.                                                                        |
 | GetExtensionProfile         |           | ExtensionProfile         | Anonymous, Employee, Application | Gets the extension profile which can be used to download extension package and communicate with micro-services. |
 
-**Extension package definition controller:**
+## Extension package definition controller
 
 | API                            | Parameter                               | Return value                                  | Supported Commerce Roles      | Description                                        |
 |--------------------------------|-----------------------------------------|-----------------------------------------------|-------------------------------|----------------------------------------------------|
 | GetExtensionPackageDefinitions | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensionPackageDefinition&gt; | Device, Employee, Application | Gets the configured extension package definitions. |
 
-**Extensible enumeration package definition controller:**
+## Extensible enumeration package definition controller
 
 | API                       | Parameter                               | Return value                                      | Supported Commerce Roles                                       | Description                              |
 |---------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
 | GetExtensibleEnumerations | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensibleEnumerationContainer&gt; | Device, Employee, Application, Anonymous, Customer, Storefront | Gets all extensible enumeration classes. |
 
-**Loyalty card controller:**
+## Loyalty card controller
 
 | API                                                   | Parameter                                                                                          | Return value                                 | Supported Commerce Roles | Description                                                                       |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
@@ -643,7 +643,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetLoyaltyRewardPointActivityTimelineForExpiredPoints | string cardNumber, string rewardPointId, QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyRewardPointActivity&gt; | Employee, Customer       | Gets the expired points timeline activity for the reward point of a loyalty card. |
 | GetLoyaltyRewardPointsExpiringSoon                    | string cardNumber, string rewardPointId, int daysToExpiry, QueryResultSettings queryResultSettings | PageResult&lt;LoyaltyRewardPointActivity&gt; | Employee, Customer       | Gets the loyalty card reward points that are going to expire soon.                |
 
-**Non sales transaction tender operations controller:**
+## Non sales transaction tender operations controller
 
 | API                       | Parameter                                                                                                    | Return value                          | Supported Commerce Roles | Description                                                                                         |
 |---------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
@@ -651,7 +651,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | CreateNonSalesTransaction | NonSalesTransaction nonSalesTransaction                                                                      | NonSalesTransaction                   | Employee                 | Performs saving drawer type of operations like declare start amount / tender removal / float entry. |
 | GetAffiliations           | QueryResultSettings queryResultSettings                                                                      | PageResult&lt;Affiliation&gt;         | Employee                 | Gets affiliations.                                                                                  |
 
-**Operations controller:**
+## Operations controller
 
 | API                            | Parameter                                                                                          | Return value                                  | Supported Commerce Roles | Description                                                                  |
 |--------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------------------|--------------------------|------------------------------------------------------------------------------|
@@ -661,7 +661,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetInventoryAvailableToPromise | long productId, string itemId, string inventoryLocationId, QueryResultSettings queryResultSettings | PageResult&lt;InventoryAvailableToPromise&gt; | Employee                 | Get available inventory across all stores for a product.                     |
 | VoidSuspendedTransactions      | IEnumerable&lt;string&gt; suspendedCartIds                                                         | void                                          | Employee                 | Void the suspended transactions specified by given cart ids.                 |
 
-**Shift reconciliation lines controller:**
+## Shift reconciliation lines controller
 
 | API                         | Parameter                                                                                                                  | Return value                              | Supported Commerce Roles | Description                                                                             |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------|
@@ -669,7 +669,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | ReconcileLines              | IEnumerable&lt;ShiftReconciliationLine&gt; lines, string description                                                       | void                                      | Employee                 | Reconciles the lines.                                                                   |
 | UndoReconciliation          | IEnumerable&lt;ShiftReconciliationLine&gt; lines                                                                           | void                                      | Employee                 | Unreconciles all the lines that are a part of any of the groups in the lines passed in. |
 
-**Stock count journal controller:**
+## Stock count journal controller
 
 | API                                | Parameter                                                                                                         | Return value                                   | Supported Commerce Roles | Description                                                                                               |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -684,8 +684,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetEntityByKey                     | string journalId                                                                                                  | StockCountJournal                              | Employee                 | Creates journal entity.                                                                                   |
 | UpdateEntity                       | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Updates journal entity.                                                                                   |
 | PatchEntity                        | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Partially updates journal entity.                                                                         |
-
-**Scan result controller:**
+## Scan result controller
 
 | API            | Parameter          | Return value | Supported Commerce Roles | Description                        |
 |----------------|--------------------|--------------|--------------------------|------------------------------------|
