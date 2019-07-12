@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consume business events with Azure Service Bus
-description: This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operation and how to consume a business event form Azure Service Bus.
+description: This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operations and how to consume a business event form Azure Service Bus.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 07/12/2019
@@ -27,83 +27,73 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 # Consume business events with Azure Service Bus
-This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operation and how to consume a business event from Azure Service Bus.
+This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operations and how to consume a business event from Azure Service Bus.
 
 ## Scenario overview
-
 Security best practices recommend storing connection strings outside of applications application but in a Key Vault drive and giving applications the right access to the key vault keys, secrets or certificates.
 
 This has many benefits, first, if someone gets access to the application database he will not be able to get the 3rd party connection string. Second, maintainability becomes easier as there is only one place where we need to update connection strings especially when multiple applications access the same resources.
 
-So, the steps will be as follows:
+The process includes the following procedures:
 
--   Create a new Azure Service Bus Topic and Subscription,
+1.   Create a new Service Bus Namespace
+2.   Create a new Azure Service Bus topic and subscription
+3.   Create a new Key Vault to store Service Bus key
+4.   Register an Azure App with permissions to access the key vault on behalf of Finance and Operations
+5.   Configure a Business Events Endpoint in F&O
+6.   Consume your business event
 
--   Create a new Key Vault to store Service Bus key
+## Create a new Service Bus namespace
 
--   Register an Azure App with permissions to access the key vault on behalf of
-    F&O
-
--   Configure F&O endpoint’s parameters
-
--   Consume your business event.
-
-## Create a new Service Bus Namespace
-
-1.  Log into the Azure Portal
+1.  Log into the Azure Portal.
 
 2.  Select **All services \> Integration \> Service Bus**
 
-    <img src="../../media/BEF-Howto-servicebus-01.png" width="100%">
+3.  Click **Add** to create a new Service Bus Namespace, and then fill in the parameters. Select the **Standard** pricing tier. You can create a new resource group as a container for your lab or use an existing one.
 
-3.  Click **Add** to create a new **Service Bus Namespace** then fill in the parameters. Select a **Standard** pricing tier. You can create a new **resource group** as a container for your lab or use an existing one.
+    > [!Note]
+    > With the **Basic** pricing tier, you can create only Queues. You need to select the **Standard** pricing tier for Topics.
 
-    **Note**. With **Basic** pricing tier you can create only Queues, you need to select a **Standard** pricing tier for Topics.
-
-    <img src="../../media/BEF-Howto-servicebus-02.png" width="70%">
-
-4.  Once all parameters are filled click on **Create**
+4.  Once all parameters are filled, click **Create**.
 
 ## Create a new Service Bus Topic and Subscription
 
 
-1.  **Select** your Service Bus you just created, then **Create** a new topic as shown on the image below.
+1.  Select the Service Bus you just created, then create a new topic.
 
     <img src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
-2.  **Select** the newly created Topic then **Create** a new **Subscription** called BE-USMF
+2.  Select the newly created Topic, and then create a new subscription called BE-USMF.
 
     <img src="../../media/BEF-Howto-servicebus-04.png" width="70%">
 
-3.  **Go Back** to your Service Bus panel and **Create** a new **Shared Access Policy** to send events. Only **Send policy** is needed to send events to the Service Bus Topic.
+3.  Go back to your Service Bus panel and create a new shared access policy to send events. Only the **Send** policy is needed to send events to the Service Bus Topic.
 
     <img src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
-4.  **Select** the new send policy then copy the **Primary Connection Key** and save it into your OneNote for later usage.
+4.  Select the new send policy, and then copy the **Primary Connection String** and save it for later usage.
 
     <img src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
 ## Create a Key Vault
 
-For this exercise, you will have to create a Key Vault to store the connection string you copied above. A key vault is a secure drive used to store keys, secrets and certificates. Instead of storing the Connection string in F&O it is more common and secure to store it in a key vault then register a new application with Azure active directory that will have the right to retrieve the secret form the key vault on behalf of F&O.
+For this procedure, you will have to create a Key Vault to store the connection string you copied above. A key vault is a secure drive used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, it is more common and secure to store it in a key vault, and then register a new application with Azure active directory that will have the right to retrieve the secret form the key vault on behalf of Finance and Operations.
 
-1.  Select **All services \> Security \> key vaults**
+1.  Select **All services \> Security \> key vaults**.
 
-    <img src="../../media/BEF-Howto-Keyvault-01.png" width="100%">
-
-2.  **Create** a new key vault within your resource group and **default parameters**
+2.  Create a new key vault within your resource group and **default parameters**
 
     <img src="../../media/BEF-Howto-Keyvault-02.png" width="50%">
 
-3.  Select **Overview** and **copy** the key vault URL **DNS Name** and save it for later use.
+3.  Select **Overview** and copy the key vault URL **DNS Name** and save it for later use.
 
     <img src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4.  Then **select** new **BE-key vault \>Secrets\>Generate/Import**, choose a new name for your secret and **copy** the service bus **connection string** you saved earlier on exercise 2.
+4.  Select **BE-key vault \> Secrets \> Generate/Import** and choose a new name for your secret and **copy** the service bus **connection string** you saved earlier.
 
     <img src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
-5.  Click **Create**
+5.  Click **Create**.
 
 ## Register a new Application
 
