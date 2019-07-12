@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 9, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/09/2019
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -66,7 +66,7 @@ The following entities support custom fields:
 To view all updated entities in Talent:
 
 1. Select **System administration**, select **Links**, and then select **Common data service configuration**.
-2. Select the **CDS entity name** dropdown. All entities listed are on the latest version. 
+2. Select the **CDS entity name** drop-down menu. All entities listed are on the latest version. 
 
 ###  Full name added to Worker entity in Common Data Service
 
@@ -74,11 +74,11 @@ The **Full name** field has been added to the **Worker** entity.
 
 ### Full-time equivalent higher than 1.0
 
-A warning now displays if a value greater than 1.0 is entered for a full time employee on a position. 
+A warning now displays if a value greater than 1.0 is entered for a full-time employee on a position. 
 
-### A warning no longer displays on the Worker form when there is no future dated employment
+### A warning no longer displays on the Worker page when there is no future dated employment
 
-You will no longer receive a message indicating that a future employment exists when navigating to the **Worker** form from the **Exiting employees** list in the **Personnel management** workspace. 
+You will no longer receive a message indicating that a future employment exists when navigating to the **Worker** page from the **Exiting employees** list in the **Personnel management** workspace. 
 
 ### Unable to delete a business process in Talent
 
@@ -104,7 +104,7 @@ Organizations can offer many different types of leave to employees. However, it 
 
 ### View extended information for performance in manager self-service
 
-A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage. In addition, direct managers and their employees can maintain and update performance journals to help guarantee that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
+A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
 
 ### Entities supporting custom fields
 
