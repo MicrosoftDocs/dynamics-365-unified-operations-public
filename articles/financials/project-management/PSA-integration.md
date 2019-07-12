@@ -80,4 +80,4 @@ To use the Project Service Automation to Finance and Operations integration solu
 
 ## Install the Project Service Automation to Finance and Operations integration solution in your Project Service Automation instance
 
-Download the Project Service Automation to Finance and Operations integration solution from [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57016), and follow the instructions that are included with the solution.
+Download the Project Service Automation to Finance and Operations integration solution from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57016), and follow the instructions that are included with the solution.

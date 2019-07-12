@@ -133,6 +133,6 @@ For more information, see the following topics:
 - [Create a sales tax payment](tasks/create-sales-tax-payment.md)
 - [Create sales transactions on documents](tasks/create-sales-tax-transactions-documents.md)
 - [View posted sales tax transactions](tasks/view-posted-sales-tax-transactions.md)
-- [round Function](https://msdn.microsoft.com/en-us/library/aa850656.aspx)
+- [round Function](https://msdn.microsoft.com/library/aa850656.aspx)
 
 

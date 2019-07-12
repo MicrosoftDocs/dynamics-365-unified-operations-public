@@ -83,7 +83,7 @@ Before you create transactions for any fixed or intangible asset, you must first
     - **Ground area** - Select this for the **Start date of building** field to appear on the **Technical Information** FastTab.
 
     > [!NOTE]
-    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-not-valuable-assets) and [Working clothes/Special riggings accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-working-clothes-instruments-accounting).
+    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-not-valuable-assets) and [Working clothes/Special riggings accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-working-clothes-instruments-accounting).
 
 - **Insurance** field group – Fill in the fields for insurance, if needed.
 
