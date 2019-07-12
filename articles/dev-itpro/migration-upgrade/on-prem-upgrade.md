@@ -115,9 +115,9 @@ An overview of each path is given below:
 
     b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Application Version 8.1 Demo Data.
 
-    c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
+    c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
      
-    d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
+    d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#configure-the-finance-and-operations-database).
 
     e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
@@ -254,7 +254,7 @@ An overview of each path is given below:
 
 4.  Using Hyper-V launch a VM and attach the VHD. (Note that the machine must be Generation 1.)
 
-5.  Connect to the VM. You can find the credentials here: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
+5.  Connect to the VM. You can find the credentials here: https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances#running-the-virtual-machine-vm-locally
 
 6.  Before proceeding it will be necessary to upgrade the platform version of the VHD so that it is in the same state as the one in your environment. You basically want the version number of the platform in the VHD to match exactly to the version number in your environment. In order to do this you can check your environments history in LCS to see which packages have been applied from your asset library. Keep in mind that the VHD is already in Platform update 20 (7.0.5030.35333) so it will probably already contain some packages that you installed manually into your environment, but may not include the latest binary updates that you applied to your environment.
 

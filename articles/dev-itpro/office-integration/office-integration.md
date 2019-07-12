@@ -120,7 +120,7 @@ A preview for supported file types is provided on the **Preview** FastTab. Basic
 
 #### What Office 365 licenses are available?
 
-There are lots of [Office 365 license options](https://products.office.com/en-us/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
+There are lots of [Office 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
 
 #### After purchasing an Office 365 license, what needs to be done to set up SharePoint storage for attachments?
 
