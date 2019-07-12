@@ -5,7 +5,7 @@ title: Prepare for go-live
 description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,7 +50,7 @@ The following table lists all the steps in the process, with the expected durati
 |   | Deployment | 48 hours | Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
 | 6 | Deployable package installation request | Self-service | Customer | Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md). |
 |   | Package installation | Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package | Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
-| 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Follow the instructions in the topic [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
+| 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
 |   | Copy database | Five hours lead time and two hours downtime | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of two hours in case a rollback is required for any reason. |
 | 8 | Production ready | After all previous steps have been completed | Customer/Partner | Customer/Partner can take control of the production environment. |
 |   | Cutover activities | Depends on the project | Customer/Partner | |
@@ -93,11 +93,11 @@ All Finance and Operations customers must complete a go-live review with the Mic
 
 About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
 
-You can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://community.dynamics.com/365/b/techtalks/posts/go-live-planning-8-9-18) page.  
+You can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) page.  
 
 The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
 
-When you've completed the go-live checklist, please email it to **Dynamics 365 FO Go-Live** d365fogl@microsoft.com. Please always include a key stakeholder from the customer and the implementation partner on the email.
+When you've completed the go-live checklist, email it to **Dynamics 365 FO Go-Live** d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.
 
 After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.
 
