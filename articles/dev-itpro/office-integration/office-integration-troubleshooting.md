@@ -242,6 +242,14 @@ The following URLs are accessed for authentication.
 
 **Solution:** The user needs to sign out and sign back in. We will improve this behavior in the future by automatically signing the user out to enable faster sign in.
 
+### Issue: When trying to use a document template with Open in Excel a "Record for id GUID not found" error is shown
+
+**Issue:** This "Record for id GUID not found" error can show up when copying a database from one environment to another. 
+
+**Explanation:** Copying the database is problematic for document templates, record attachments, and other files that are stored in Azure blob storage. When the database is copied from one environment to another, the files are not copied along with the records, so the files that the application tries to access are not found. 
+
+**Solution:** For document templates, the solution is to identify the templates that are needed and load a copy of those template files into the target environment.
+
 ## Additional resources
 
 [Office integration](office-integration.md)
