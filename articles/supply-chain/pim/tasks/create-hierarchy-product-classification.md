@@ -64,9 +64,7 @@ This procedure shows how to create a new category hierarchy and assign a commodi
 2. On the **Action Pane**, click **Category hierarchy**.
 3. Click **Associate hierarchy type**.
 4. Click **New**.
-5. In the **Category hierarchy type** field, select an option.
-    
-    Select the **Commodity code category hierarchy type for product classification**.  
+5. In the **Category hierarchy type** field, select an option. Select the **Commodity code category hierarchy type for product classification**.  
 6. In the **Category hierarchy** field, click the drop-down button to open the lookup.
 7. In the list, find and select the desired record.
 8. In the list, click the link in the selected row.
