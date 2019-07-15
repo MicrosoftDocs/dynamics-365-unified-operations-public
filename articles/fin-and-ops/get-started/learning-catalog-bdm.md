@@ -31,38 +31,11 @@ ms.dyn365.ops.version: 7.3
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
 
-For functional consultants, our job-task analysis research showed that everyone must understand the core content set as well as a domain area. 
-
-## Join us at an event
-
-| Content                                                                                                      | Formats                 | Length | Cost |
-|--------------------------------------------------------------------------------------------------------------|-------------------------|--------|------|
-| Event 1                                                                                              |  Convention                       | 3 days       | $$     |
-| Self-paced learning path                                                                                     | Workbook         | 5 hours  | Free      |
-| Learning path 2                                                                                              | Webinar                 | 1 hour | Free |
-| Business applications summit                                                                                 | Event                   |  3 days      | $$     |
-| Workshop 1                                                                                                   | Workshop                | 1 day  | $    |
-| ILT 1                                                                                                        | Instructor-led training | 5 days | $    |
-
 ## Get started
 
-| Content                                                                                                      | Formats                 | Length | Cost |
-|--------------------------------------------------------------------------------------------------------------|-------------------------|--------|------|
-| Event 1                                                                                              |  Convention                       | 3 days       | $$     |
-| Self-paced learning path                                                                                     | Workbook         | 5 hours  | Free      |
-| Learning path 2                                                                                              | Webinar                 | 1 hour | Free |
-| Business applications summit                                                                                 | Event                   |  3 days      | $$     |
-| Workshop 1                                                                                                   | Workshop                | 1 day  | $    |
-| ILT 1                                                                                                        | Instructor-led training | 5 days | $    |
-
-## See case studies
-
-| Content                                                                                                      | Formats                 | Length | Cost |
-|--------------------------------------------------------------------------------------------------------------|-------------------------|--------|------|
-| Event 1                                                                                              |  Convention                       | 3 days       | $$     |
-| Self-paced learning path                                                                                     | Workbook         | 5 hours  | Free      |
-| Learning path 2                                                                                              | Webinar                 | 1 hour | Free |
-| Business applications summit                                                                                 | Event                   |  3 days      | $$     |
-| Workshop 1                                                                                                   | Workshop                | 1 day  | $    |
-| ILT 1                                                                                                        | Instructor-led training | 5 days | $    |
-
+| Content                                                                                                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                            | Format                                      | Length    | Cost |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|-----------|------|
+| [Learn the business value of Microsoft Dynamics 365 and the Power Platform](https://docs.microsoft.com/en-us/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | This learning experience will take you on a journey that will begin by showing you how digital transformation and the power of business applications can transform your business. We will cover how Dynamics 365 and Power Platform help you make informed decisions based on your organization’s needs and goals, through four building blocks of digital transformation—modern, unified, intelligent, and adaptable. | Self-paced online learning path             | 6.5 hours | Free |
+| [Dynamics 365 and Power Platform Fundamentals](https://docs.microsoft.com/en-us/learn/paths/dyn-power-plat-bus-app-fundamentals/)                                                  | Are you interested in learning about business applications? Start with this learning path to see how Dynamics 365 apps are used. Learn about cloud concepts, Power Platform, and how to get started with Dynamics 365 apps.                                                                                                                                                                                            | Self-paced online learning path             | 5.5 hours | Free |
+| [Course MB-900T01-A: Dynamics 365 fundamentals](https://www.microsoft.com/en-us/learning/course.aspx?cid=MB-900T01)                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                        | Instructor-led in person or online training | 1 day     | ?    |
+| [Dynamics 365 Fundamentals](https://www.microsoft.com/en-us/learning/d365-fundamentals.aspx)                                                                                       | Prove that you understand Microsoft Dynamics 365; the Power Platform; cloud concepts; licensing options; and deployment and release options                                                                                                                                                                                                                                                                            | Exam                                        |           | $99  |
