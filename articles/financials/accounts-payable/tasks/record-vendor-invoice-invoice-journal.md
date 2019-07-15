@@ -37,9 +37,7 @@ This task guide will show how to record vendor invoices that are not associated 
 3. Click **New**.
 4. In the **Name** field, enter the journal name or click the drop down button to open the lookup.
 5. In the **Description** field, type a value.
-6. On the **Action pane**, click **Lines**.
-    
-    In the **Date** field, enter the posting date that will update General Ledger.  
+6. On the **Action pane**, click **Lines**. In the **Date** field, enter the posting date that will update General Ledger.  
 7. In the **Account** field, specify the **Vendor account**.
 8. In the **Invoice** field, enter the invoice number.
 9. In the **Description** field, type a value.
