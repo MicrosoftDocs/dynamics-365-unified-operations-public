@@ -17,11 +17,9 @@ Find the right online training, in person workshops, and events for your role as
 
         Do you decide whether to invest in new technologies? 
 
-        [Join us at an event](learning-catalog-bdm.md)
-
         [Get started](learning-catalog-bdm.md)
 
-        [See case studies](learning-catalog-bdm.md)
+
 
     :::column-end:::
     :::column:::
@@ -59,14 +57,6 @@ Find the right online training, in person workshops, and events for your role as
 
         [Onboarding](learning-catalog-administrator.md)
 
-        [Deployment](learning-catalog-administrator.md)
-
-        [Upgrade](learning-catalog-administrator.md)
-
-        [Support](learning-catalog-administrator.md)
-
-        [Maintenance](learning-catalog-administrator.md)
-
         :::column-end:::
     :::column:::
 
@@ -94,17 +84,9 @@ Find the right online training, in person workshops, and events for your role as
 
         [Financial management](learning-catalog-project-manager.md)
 
-        [Human resource management](learning-catalog-project-manager.md)
-
         [Manufacturing](learning-catalog-project-manager.md)
 
-        [Public](learning-catalog-project-manager.md)
-
-        [Sales](learning-catalog-project-manager.md)
-
-        [Purchasing](learning-catalog-project-manager.md)
-
-        [Distribution](learning-catalog-project-manager.md)
+        [Supply chain management](learning-catalog-project-manager.md)
 
     :::column-end:::
     :::column:::
@@ -113,21 +95,13 @@ Find the right online training, in person workshops, and events for your role as
 
         Are you an implementation expert for a business domain? 
 
-        [Get an introduction](learning-catalog-functional-consultant.md)
+        [Core platform knowledge](learning-catalog-project-manager.md)
 
-        [Distribution](learning-catalog-functional-consultant.md)
+        [Financial management](learning-catalog-project-manager.md)
 
-        [Financial management](learning-catalog-functional-consultant.md)
+        [Manufacturing](learning-catalog-project-manager.md)
 
-        [Human resources](learning-catalog-functional-consultant.md)
-
-        [Manufacturing](learning-catalog-functional-consultant.md)
-
-        [Purchasing](learning-catalog-functional-consultant.md)
-
-        [Retail](learning-catalog-functional-consultant.md)
-
-        [Sales](learning-catalog-functional-consultant.md)
+        [Supply chain management](learning-catalog-project-manager.md)
 
 
     :::column-end:::
