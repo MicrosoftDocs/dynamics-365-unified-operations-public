@@ -44,11 +44,11 @@ The Feature management experience provides a workspace where you can view a list
 - Do not allow a feature to be enabled based on a condition such as an existing config key is turned on
 - Add a button called Check for updates that manually searches for new features and adds them to the list of features
 
-## Feature
-A brief description of the feature, including a link to a topic where customers can read the details.
+## Data management job history clean up
+The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality is a step up to the existing staging table clean up functionality which is now deprecated.
 
-## Feature
-A brief description of the feature, including a link to a topic where customers can read the details.
+## Business events catalog security
+Role based security can be now applied to individual business events in the business event catalog. Once this security is enabled and configured, users will be able to only view and subscribe to business events to which thier role(s) have access. This security applies to integration scenarios like Microsoft Flow as well.
 
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
