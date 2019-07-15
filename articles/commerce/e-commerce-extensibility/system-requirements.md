@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # System requirements for an e-Commerce developer environment
 
-This topic lists the system requirements for setting up a Dynamic 365 Commerce e-Commerce developer extensibility environment.  If this step is appropriate, before you install the extensibilty SDK and tools you should verify that the system you're working with meets or exceeds the minimum network, hardware and software requirements.
+This topic lists the system requirements for setting up a Dynamic 365 Commerce e-Commerce developer extensibility environment.  If this step is appropriate, before you install the extensibilty SDK and tools you should verify that the system you're working with meets or exceeds the minimum hardware and software requirements.
 
 ## Operating systems
 The e-commerce extensibility environment requires Windows 10 (latest publicly available version).
