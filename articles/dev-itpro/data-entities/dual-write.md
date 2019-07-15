@@ -271,11 +271,66 @@ It synchronizes name affixes reference data between F&O and CE for both customer
 
 ![](media/dual-write-name-affixes.png)
 
-## Related Topics
+## Integrated Vendor Master
 
--   Organization Hierarchy in Common Data Service
--   Company concept in Common Data Service
--   Integrated customer master
--   Integrated vendor master
--   Unified product master
+Vendors refers to a supplier organization or a sole proprietor who are part of supply chain process and supply goods for the business. Vendor is an established concept in Finance and operations. But in CE, an explicit vendor concept does not exist. Few businesses overload the "Account" entity to store both customer and vendor information. But few others use a custom vendor concept. CDS integration support both these designs. Business can choose to enable either of the designs based on their business scenario. Integrating the vendor data between F&O and CE provides businesses the capability to multi-mastering vendor data. Irrespective of where the vendor information is originating, it gets integrated behind the scenes beyond application boundaries and infrastructure differences.
 
+### Vendor data flow
+
+For businesses who use CE for vendor mastering and want to isolate vendor information from customers, then they can use the new vendor design that's been introduced.
+
+![](dual-write-vendor-data-flow.png)
+
+For businesses who use CE for vendor mastering and want to continue to use "Account" entity for storing vendor information, they can use the extended vendor design that's been introduced. In this design, extended vendor information like vendor group, vendor post profile etc. will be stored in the "vendor detail".
+
+![](dual-write-vendor-detail.png)
+
+Vendor contact information is similar to the customer contact information. Behind the scenes the contact person information is stored and retrieved from same entities.
+
+### Templates
+
+When we say Vendor data, it includes all information about the vendor like vendor group, addresses, contact information, payment profile and invoice profile and so on. So, a collection of entity maps works together in vendor data interaction as listed below.
+
+Finance and Operations  | Customer Engagement Application
+------------------------|---------------------------------
+Vendor V2               | Account
+Vendor V2               | Msdyn\_vendors
+CDS Contacts V2         | Contact
+Vendor groups           | Msdyn\_vendorgroups
+Vendor Payment Method   | Msdyn\_vendorpaymentmethods
+Payment Schedule        | Msdyn\_paymentschedules
+Payment Schedule        | Msdyn\_paymentschedulelines
+Payment day CDS         | Msdyn\_paymentdays
+Payment day lines CDS   | Msdyn\_paymentdaylines
+Terms of Payment        | Msdyn\_paymentterms
+Name Affixes            | Msdyn\_nameaffixes
+
+### Vendor V2 to Account 
+
+Businesses using Account entity to store vendor information can continue to use the same way and also take advantage of the explicit vendor functionality coming due to F&O integration.
+
+### Vendor V2 to Msdyn\_vendors
+
+Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to F&O integration. 
+
+![](dual-write-vendors-1.png)
+
+![](dual-write-vendors-2.png)
+
+![](dual-write-vendors-3.png)
+
+### Contacts
+
+It synchronized all primary, secondary and tertiary contact information of both customers and vendors between F&O and CE. Refer to the entity map details provided under Integrated Customer Master > Templates section.
+
+### Vendor Groups
+
+Synchronize vendor group information between F&O and CE.
+
+![](dual-write-vendor-groups.png)
+
+### Vendor Payment Method
+
+Synchronize vendor payment method information between F&O and CE.
+
+![](dual-write-vendor-payment-method.png)
