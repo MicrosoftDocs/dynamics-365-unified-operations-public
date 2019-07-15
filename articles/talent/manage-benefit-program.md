@@ -44,7 +44,7 @@ Before workers can be enrolled in benefits, you must create the elements of each
 [![Benefit process flow](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## Benefit elements
-Before you begin to create to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
+Before you begin to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
 
 -   **Type** – A collection of plans for a specific benefit, such as medical or parking.
 -   **Plan** – A specific benefit that is contracted from a provider.
