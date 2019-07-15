@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: System Requirements
+title: System requirements for an e-Commerce developer environment
 description: System requirements included here are for use in top Dynamics 365 Commerce e-Commerce Extensibility and supported web browsers.
 author: SamJarawan
 manager: JeffBl
@@ -28,22 +28,20 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# System Requirements
+# System requirements for an e-Commerce developer environment
 
-System requirements included here are for use in top Dynamics 365 Commerce e-Commerce Extensibility and supported web browsers.
+This topic lists the system requirements for setting up a Dynamic 365 Commerce e-Commerce developer extensibility environment.  If this step is appropriate, before you install the extensibilty SDK and tools you should verify that the system you're working with meets or exceeds the minimum network, hardware and software requirements.
 
-## Development Requirements
-### Operating Systems
-* Windows 10
+## Operating systems
+The e-commerce extensibility environment requires Windows 10 (latest publicly available version).
 
-### Memory Requirements
-Recommended 8GB of RAM or higher
+## Memory and hard drive requirements
+8GB of RAM or higher is recommended with at least 20 GB of free hard drive space to run the e-commerce extensibility environment.
 
-### Hard Drive Space
-Recommended 20 GB of free space or higher
+## Supported web browsers
+The e-commerce extensibility environment can preview customizations in any of the following web browsers:
 
-## Supported Browsers
-* Chrome (version upto current - 1)
-* Edge (version upto current - 1)
-* IE (IE11)
-* Firefox (version upto current - 1)
+* Chrome (upto current version minus 1)
+* Internet Explorer (IE11)
+* Firefox (upto current version minus 1)
+* Microsoft Edge (upto current version minus 1)
