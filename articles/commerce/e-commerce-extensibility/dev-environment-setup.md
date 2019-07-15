@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Development Environment Setup
-description: Setting up a development environment involves installing 3 freely available tools (Visual Studio Code, Node.js and Yarn) and installing the Dynamics 365 e-Commerce SDK.  The order of installing the below tools is not important.
+title: Set up a development environment
+description: This topic demonstrates how to set up a development environment for Dynamics 365 for Commerce. 
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -28,25 +28,25 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# Development Environment Setup
+# Set up a development environment
 
-Setting up a development environment involves installing 3 freely available tools (Visual Studio Code, Node.js and Yarn) and installing the Dynamics 365 e-Commerce SDK.  The order of installing the below tools is not important.
+Setting up a development environment for Dynamics 365 for Commerce involves installing three freely available tools--Visual Studio Code, Node.js and Yarn-and installing the Dynamics 365 e-Commerce SDK. The order in which you install the tools is not important.
 
-## Installing Visual Studio Code
+## Instal Visual Studio Code
 
-A source code editor such as Visual Studio Code is recommended.  Visual Studio Code is a lightweight source code editor which runs on your Windows desktop.  It comes with built in support for JavaScript, TypeScript and Node.js.
+A source code editor such as Visual Studio Code is recommended. Visual Studio Code is a lightweight source code editor which runs on your Windows desktop. It comes with built in support for JavaScript, TypeScript, and Node.js.
 
 
-Navigate to https://code.visualstudio.com and download the latest stable build. When the installation is complete, Visual Studio Code will auto launch and should look similar to the below image.
+Go to the [Visual Studio Code site](https://code.visualstudio.com) and download the latest build. When the installation is complete, Visual Studio Code will automatically launch and should look similar to the image below.
 
 ![Installing Visual Studio Code](media/setup-vs-code.png)
 
-## Installing Node.js
+## Instal Node.js
 Node.js is a JavaScript runtime built on [Chrome’s V8 JavaScript Engine](https://v8.dev/).
 
-Navigate to https://nodejs.org and download and install the latest build (LTS).
+Go to the [Node JS site](https://nodejs.org and download) and install the latest build (LTS).
 
-Note: If you rely on other versions of node being installed for other projects you should look into using [Node Version Manager (nvm)](https://github.com/creationix/nvm) to ensure each version runs in their own isolated environment.
+If you rely on other versions of node being installed for other projects, we recommend that you look into using [Node Version Manager (nvm)](https://github.com/creationix/nvm) to ensure each version runs in their own isolated environment.
 
 ## Installing Yarn
 
