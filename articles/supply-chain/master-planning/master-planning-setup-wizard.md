@@ -30,188 +30,181 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Master planning setup wizard 
+# Master planning setup wizard
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a guide for the master planning setup wizard and includes details of how parameter suggestions are calculated. It also provides examples of how different companies set up their master planning based on their business needs. 
+This topic provides a guide for the master planning setup wizard. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
 
 ## Specific requirements of your company
 
-The first page in the wizard asks you about the specific requirements of your company. Your answers don't need to be exact, but you should be able to provide a rough approximation of how many items and planned orders there will be for the legal entity. The data you enter for these questions are used to configure parameters applying to your legal entity (not only to the master plan you selected). The following parametersare calculated according to the formulas below.
+The first page of the wizard asks about the specific requirements of your company. Your answers to these questions don't have to be exact, but you should be able to provide a rough approximation of the number of items and planned orders that there will be for the legal entity. Your answers are used to configure parameters that apply to your legal entity, not just to the master plan that you selected. The following sections describe the parameters that are calculated and the formulas that are used.
 
 ### Number of threads
 
-- If you manufacture any of the items, number of threads = planned orders/1000,
+- **If you manufacture any of the items:** Number of threads = Number of planned orders ÷ 1,000
+- **If you don't manufacture any of the items:** Number of threads = Number of items ÷ 1,000
 
-- If you don't manufacture any of the items, number of threads = number Of items/1000.
+If the number of threads that is calculated exceeds 75 percent of the available number of threads, it's capped at 75 percent of the number of threads that is available for each customer. (The number of available threads will be determined for each customer.)
 
-If the resulting number of threads obtained is larger than 75% of the available threads, it will be capped to 75% of the available in number of threads for each customer (the available threads will be determined for each customer).
-
-Read the [number of threads](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) topic for more information.
+For more information, see [Number of threads](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### Bundle size
 
-Bundle size will be set to **1**. This is commonly the best value for the bundle size, as it will improve master planning performance.  
+The bundle size will be set to **1**. This value is often the best value, because it helps improve the performance of master planning.
 
-Read the [bundle size](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle) topic for more information.
+For more information, see [Number of tasks in helper task bundle](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
-### Firming bundle size**
+### Firming bundle size
 
-Firming bundle size will be equal to the maximum of the two values below.
+- **If you manufacture any of the items:** The firming bundle size will be set to the larger of these two values: **10** and the bundle calculation
+- **If you don't manufacture any of the items:** The firming bundle size will be set to the larger of these two values: **50** and the bundle calculation
 
-- If you manufacture any of the items, maximum between 10 and the bundle calculation,
-
-- If you don't manufacture any of the items, maximum between 50 and the bundle calculation,
-
- The bundle calculation  = (number of planned orders * (Firming Time Fence/ Coverage Time Fence)/ number of threads)/10.
+Bundle calculation = (Number of planned orders × (Firming time fence ÷ Coverage time fence) ÷ Number of threads) ÷ 10
 
 ### Cache size
 
-Cache size will be set to **Maximum**, which is commonly the best value for cache size, because it will improve master planning performance. For more information, see [Allocate time to jobs in a job bundle](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+The cache size will be set to **Maximum**. This value is often the best value, because it helps improve the performance of master planning.
+
+For more information, see [Allocate time to jobs in a job bundle](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### Manufacturing setup
 
-If you manufacture items, a manufacturing setup page will be shown later in the wizard. 
-
+If you manufacture items, a **Manufacturing setup** page will appear later in the wizard.
 
 ## Scope of the current plan
 
-On this page of the wizard, you will answer questions related to how far in the future various requirements will be considered and calculated in master planning. Each of the questions asks if you would like to use a feature and how you want to configure it. 
+On the **Scope of the current plan** page of the wizard, you answer questions that are related to how far in the future various requirements will be considered and calculated in master planning. Each question asks whether you want to use a feature and how you want to configure it.
 
-Using the forecast plan as an example, the wizard asks: **Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?**. The following options are available.
+For example, for the forecast plan feature, the wizard asks, "Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"
 
-- **No**: master planning will not suggest planned orders to fulfill a forecast. In the master plans page, under **Master planning > Setup > Plans > Master plans**, on the **Time fences** tab, the wizard will set the **Forecast plan** option to **Yes**, and set the number of days to zero. This setup will override the time fence specified in the coverage group. By setting the number of days to zero, the feature will not be used. 
+The following options are available:
 
-- **Yes, as defined in this master plan**: when this option is selected, a field is enabled into which you can enter the number of days that master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the **Forecast plan time fence** flag to **Yes** and set it to the number of days entered in the **Forecast plan** (on the **Master plans** page, on the **Time fences** tab). This will override the values set in the coverage groups. 
+- **No** – Master planning won't suggest planned orders to fulfill a forecast. On the **Time fences** tab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**), the wizard will set the **Forecast plan** option to **Yes** and set the number of days to **0** (zero). This setup will override the time fence that is specified in the coverage group. Because the number of days is set to **0** (zero), the feature won't be used.
+- **Yes, as defined in this master plan** – A field becomes available, where you can enter the number of days that master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the **Forecast plan time fence** option to **Yes** and set the number of days to the number of days that is entered in the **Forecast plan** field on the **Time fences** tab of the **Master plans** page. This setup will override the values that are set in the coverage groups.
+- **Yes, as defined in the coverage** – The wizard will set the **Forecast plan** option to **No**. The time fences that are specified in the coverage group will be used to specify how long you will plan for the forecast.
 
-- **Yes, as defined in the coverage**: when this opition is selected, the wizard will set the **Forecast plan** option to **No**. The time fences specified in the coverage group will be used to indicate how long you will be planning for the forecast. 
+The remaining questions on this page and their answers follow the same schema:
 
-The rest of questions on this page and their respective answers will follow the same schema as above, depending on your answer.
+- **No** – The **Forecast plan time fence** option will be set to **Yes**, and the number of days will be set to **0** (zero).
+- **Yes, as defined in this master plan** – The **Forecast plan time fence** option will be set to **Yes**. The number of days that you enter will be used and will override the values that are set in the coverage groups.
+- **Yes, as defined in the coverage group** – The **Forecast plan** option will be set to **No**.
 
-- **No**: the **Forecast plan time fence** flag will be set to **Yes**, and the number of days set to zero. 
-
-- **Yes, as defined in this master plan**: the **Forecast plan time fence** flag will be set to **Yes**, and the number of days that you enter will be used, overriding the values set in the coverage groups. 
-
-- **Yes, as defined in the coverage group**: the **Forecast plan** option will be set to **No**.
-
-Read the [time fences parameters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) topic for more information.
+For more information, see [Job scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## Scheduling options
 
-This page will appear only if you previously answered yes to the question **Do you manufacture any of the items planned?** on the first page of the wizard. 
+The **Scheduling options** page appears only if you answered **Yes** to the "Do you manufacture any of the items planned?" question on the first page of the wizard.
 
-The first question, **Do you need to schedule operations divided into individual jobs?** determines the scheduling method on the **General** tab on the **Master plans** page.
+Your answer to the first question on this page ("Do you need to schedule operations divided into individual jobs?") determines the scheduling method on the **General** tab of the **Master plans** page.
 
-- **Yes**: if you select **Yes**, job scheduling will be used.
+- **Yes** – Job scheduling will be used.
+- **No** – Operations scheduling will be used.
 
-- **No**: if you select **No**, operations scheduling will be used.
-
-For more information, see the [job scheduling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and the [operations scheduling](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/job-scheduling) topics.
+For more information, see [Operations scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and [Job scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## Updates of demand and supply
 
-The questions on this page are related to firming, action messages, and delays. 
+The questions on the **Updates of demand and supply** page are related to firming, action messages, and delays.
 
-Master planning setup will be updated as per the same schema as described above, depending on your answer. 
+The master planning setup will be updated based on your answers, according to the same schema that is described in the previous section:
 
-- **No**: if you select **No**, the **Time fence** option on the **Master plans** page will be set to **Yes**, and the number of days set to zero. 
+- **No** – The **Time fence** option on the **Master plans** page will be set to **Yes**, and the number of days will be set to **0** (zero).
+- **Yes, as defined in this master plan** – The **Time fence** option will be set to **Yes**. The number of days that you enter will be used and will override the values that are set in the coverage groups.
+- **Yes, as defined in the coverage group** – the **Time fence** option will be set to **No**.
 
-- **Yes, as defined in this master plan**: the **Time fence** option will be set to **Yes**, and the number of days that you enter will be used, overriding the values set in the coverage groups.
-
-- **Yes, as defined in the coverage group**: the **Time fence** option will be set to **No**.. 
-
-For calculated delays, your answers to the questions in the wizard will update the corresponding parameters on the **Calculated delays** tab on the **Master plans** page.
+For calculated delays, your answers to the questions in the wizard will update the corresponding parameters on the **Calculated delays** tab of the **Master plans** page.
 
 ## Summary of your changes
 
-The last page of the wizard shows the changes that that are recommended based on your responses. The value in your setup (**Current setup**) and the value suggested by the wizard (**New configuration**) are displayed. 
+The last page of the wizard shows the changes that that are recommended based on your responses. It shows both the value in your setup (**Current setup**) and the value that the wizard recommends (**New configuration**).
 
-You can also modify the parameters in the new configuration. The parameters are separated into parameters applying to your legal entity and parameters applying only to the master plan selected. To view all the parameters that can be modified, click **Show all parameters** at the bottom of the page. All the setup parameters that can be changed with the wizard will be displayed, and you can modify them there. 
+You can also modify the parameters in the new configuration. The parameters are separated into parameters that apply to your legal entity and parameters that apply only to the master plan that you selected. To view all the setup parameters that can be changed by using the wizard, select **Show all parameters** at the bottom of the page. You can then change the parameters.
 
-Finally, when you click **Finish**, the new configuration will be applied. If you press **Cancel**, none of the changes will be applied. 
+Finally, when you select **Finish**, the new configuration is applied. If you select **Cancel**, none of the changes are applied.
 
-## Examples 
+## Examples
 
-In this section, two fictional companies and their respective setup are described to illustrate how the setup can change according to the needs of each businedd.
+This section describes the setup of two fictional companies to show how the setup can change according to the needs of each business.
 
-### Example 1 -- Contoso Manufacturer
+### Example 1: Contoso Manufacturer
 
-Contoso Manufacturer is a manufacturing company that produces speakers. It purchases different raw materials and components used for the final speaker from different suppliers. Some of the characteristics of its supply and manufacturing are:
+Contoso Manufacturer is a manufacturing company that produces speakers. It purchases the various raw materials and components that are used for the final speakers from various suppliers. Here are some of the characteristics of its supply and manufacturing:
 
-- Manufacturing of final items that have a BOM structure.
+- The final items that the company manufactures have a bill of materials (BOM) structure.
+- All final items and components are planned by master planning. Manual planning isn't done.
+- A route of operations is defined for the production of each final item.
+- The manufacturing plant produces the final items. It has a defined number of milling and drilling machines that are used to process the components. The various components must be processed by these machines.
+- There are many suppliers. The average lead time for items is one week. A group of items from the same supplier will have a lead time of seven weeks.
 
-- All final items and components are planned by master planning. Manual planning is not done. 
+In the wizard, the following values are entered for Contoso Manufacturer:
 
-- Each of the final items has a given route of operations for its production. 
+- **Coverage:**
 
-- The manufacturing plant produces the items. It has a defined number of milling and drilling machines used to process the components. The different components must be processed by these machines. 
+    - **Question:** "Do you want to specify the number of days of your planning horizon?"
+    - **Answer:** "Yes, as defined in the coverage groups."
 
-- There are many different suppliers. The average lead time for items is 1 week. A group of items from the same supplier will have a lead time of 7 weeks.
+    Because the lead time for items is very different, Contoso doesn't have to plan all the items for the same period in the future. Coverage groups for the items are created. Items that have a similar lead time are assigned to the same coverage group. The planning horizon for each coverage group (or coverage time fence) is approximately the lead time plus a margin of one week. Master planning then makes sure that the items are planned in advance, based on their lead time.
 
-In the wizard, the following values for Contoso Manufacturer are entered.
+    Therefore, two coverage groups will be created for this example. One coverage group will have a coverage time fence of two weeks, and the other will have a coverage time fence of eight weeks.
 
-- **Coverage**: 
-Q: "Do you want to specify the number of days of your planning horizon?"
-A: "Yes, as defined in the coverage groups."
+    If **Yes, as defined in this master plan** is selected as the answer, the number of days that is entered should exceed the longest lead time of all the items. However, because many items don't have to be planned so far in advance, many planned orders will be calculated but never used. Therefore, the master planning runtime will increase.
 
-As the lead time for items is very different, Contoso does not need to plan all the items for the same period of time in the future. Coverage groups for the items are created such that items that have a similar lead time are assigned to the same coverage group. The planning horizon for each of the coverage groups (or coverage time fence) is approximately the lead time plus a margin on 1 week. Then, master planning will ensure that the items are planned in advance regarding their lead time. 
+- **Scheduling:**
 
-Therefore, two coverage groups will have the coverage time fence to 2 weeks and 8 weeks, respectively. 
+    - **Question:** "Do you need to schedule operations divided into individual jobs?"
+    - **Answer:** "Yes."
 
-It would also be possible to answer "Yes, as defined in this master plan." The number of days entered should be larger than the longest lead time of all the items. But in this case, master planning run time will increase as many planned orders will be calculated and never used, as many items do not need to be planned in such an advanced time. 
+    Contoso Manufacturing must plan and schedule the individual jobs that will be performed on the shop floor. Therefore, it will use job scheduling.
 
-- **Scheduling**: 
-Q: "Do you need to schedule operations divided into individual jobs?"
-A: "Yes"
+- **Capacity:**
 
-Contoso Manufacturing needs to plan and schedule the individual jobs that will be performed in the shop floor, therefore it will use job scheduling. 
+    - **Question:** "Do you want to schedule using the capacity of resources?"
+    - **Answer:** "Yes, as defined in this master plan." **10 days** is entered.
 
-- **Capacity**:
-Q: "Do you want to schedule using the capacity of resources?"
-A: "Yes, as defined in this master plan." "10 days" is entered.
+    The number of milling and drilling machines is limited. Production planning must take this limitation into account and arrange the jobs in time according to the capacity of the resources. In other words, the jobs that are scheduled will be replanned based on the limitations of the resources. Planning will use the lead time in addition to the period that is defined. (Planned production orders can overlap.) Because the production lead time for the items is seven days, the capacity of the resources for master planning will be considered during 10 days.
 
-As the milling and drilling machines are limited, production planning needs to take into account these limitations and arrange the jobs in time according to the capacity of the resources. In other words, the jobs scheduled will take into account the limitation of the resources and be replanned. Beyond the period defined, planning will be done using the lead time (planned production orders may overlap). As the production lead time for the item is 7 days, capacity of the resources will be considered for master planning during 10 days. 
+- **Sequencing:**
 
-- **Sequencing**: 
-Q: "Do you want to sequence planned orders using the product's sequence values?"
-A: "Yes, as defined in the coverage groups."
+    - **Question:** "Do you want to sequence planned orders using the product's sequence values?"
+    - **Answer:** "Yes, as defined in the coverage groups."
 
-Each of the final items has a route defined for its production, and therefore, master planning will schedule the orders in time according to the defined routes.
+    A route is defined for the production of each final item. Therefore, master planning will schedule the orders in time according to the defined routes.
 
-- **Explosion**: 
-Q: "Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)?"
-A: "Yes, as defined in the coverage groups."
+- **Explosion:**
 
-All the items used for the production must be planned and as they have very different lead times, master planning will have a better performance when using the coverage groups. Again, a margin of 1 week can be given and explosion can be made for the same time as the coverage.
+    - **Question:** "Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)?"
+    - **Answer:** "Yes, as defined in the coverage groups."
 
-### Example 2 -- Contoso Retailer
+    All the items that are used for the production must be planned. Because the items have very different lead times, master planning will have better performance when it uses the coverage groups. Again, a margin of one week can be given, and explosion can be done for the same time as the coverage.
 
-Contoso Retailer is a distribution company in the fashion industry. It will use master planning to calculate when to place purchase orders according to its forecasted sales. These are some of its characteristics:
+### Example 2: Contoso Retailer
 
-- Uses a demand forecast to predict sales. Purchase orders will be planned according to the forecast. 
+Contoso Retailer is a distribution company in the fashion industry. It uses master planning to calculate when purchase orders should be placed, based on its forecasted sales. Here are some of its characteristics:
 
-- Retail stores use requisitions to be replenished. 
+- Contoso Retailer uses a demand forecast to predict sales. Purchase orders will be planned according to the forecast.
+- Retail stores use requisitions for replenishment.
+- The lead time from the main warehouse to each store is approximately two weeks for all items.
 
-- The lead time from the main warehouse to each of the stores is approximately 2 weeks for all the items. 
+In the wizard, the following values are entered for Contoso Retailer:
 
-In the wizard, the following values for Contoso Retailer are entered.
+- **Forecast demand:**
 
-- **Forecast demand**: 
-Q: "Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"
-A: "Yes, as defined in this master plan."
+    - **Question:** "Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"
+    - **Answer:** "Yes, as defined in this master plan."
 
-Contoso has included a demand forecast to predict its sales in master planning. Therefore, master planning needs to suggest planned orders to fulfill the forecast. 
+    Contoso has included a demand forecast to predict its sales in master planning. Therefore, master planning must recommend planned orders to fulfill the forecast.
 
-- **Firming**: 
-Q: "Do you want master planning to automatically firm planned orders into order documents, for example production or purchase orders?"
-A: "Yes, as defined in this master plan." "1 day" is entered.
+- **Firming:**
 
-Because Contoso Retailer will create the purchase orders directly from the planned purchase orders, it is useful to automatically firm them. Since the company runs master planning daily, setting a firming time fence of 1 day will automatically firm all the orders needed for the following day. 
+    - **Question:** "Do you want master planning to automatically firm planned orders into order documents, for example production or purchase orders?"
+    - **Answer:** "Yes, as defined in this master plan." **1 day** is entered.
 
-- **Approved requisitions**:
-Q: "Do you want to include demand from approved requisitions to replenish retail stores?"
-A: "Yes, as defined in this master plan." "1 day" is entered.
+    Because Contoso Retailer will create purchase orders directly from the planned purchase orders, it's useful if the planned purchase orders are automatically firmed. Because the company runs master planning every day, a firming time fence of one day will automatically firm all the orders that are required for the next day.
 
-Contoso uses the approved requisitions from its retail stores to create planned purchase orders to replenish them. As master planning is run daily, the requisitions from the last day will be included in the planning. 
+- **Approved requisitions:**
 
+    - **Question:** "Do you want to include demand from approved requisitions to replenish retail stores?"
+    - **Answer:** "Yes, as defined in this master plan." **1 day** is entered.
+
+    Contoso uses the approved requisitions from its retail stores to create planned purchase orders to replenish those stores. Because master planning is run every day, the requisitions from the last day will be included in the planning.
