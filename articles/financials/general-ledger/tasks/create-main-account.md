@@ -37,12 +37,8 @@ This task guide steps through adding a main account to an existing chart of acco
 3. In the **Main account** field, type a value.
 4. In the **Name** field, type a value.
 5. In the **Main account type** field, select the type that best represents the accounts balance and location on financial statements.
-6. In the list, select the account category the main account belongs to.
-    
-    Account category is used for default financial reports and Power BI dashboard content.  
-7. In the list, click the link in the selected row.
-    
-    Change the default debit or credit balance.  
+6. In the list, select the account category the main account belongs to. Account category is used for default financial reports and Power BI dashboard content.  
+7. In the list, click the link in the selected row. Change the default debit or credit balance.  
 8. In the **Default currency** field, select a value from the list of currencies.
 9. In the list, find and select the desired record.
 10. In the list, click the link in the selected row.
