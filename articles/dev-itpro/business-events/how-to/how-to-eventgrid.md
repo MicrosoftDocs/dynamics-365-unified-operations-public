@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 # Consume business events by using Azure Event Grid
+[!include[banner](../../includes/banner.md)]
 
 This topic explains how to configure a Microsoft Azure Event Grid endpoint with Microsoft Dynamics 365 for Finance and Operations, and how to consume a business event from Event Grid.
 
