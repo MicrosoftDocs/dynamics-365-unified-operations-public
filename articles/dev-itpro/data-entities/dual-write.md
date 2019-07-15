@@ -53,7 +53,7 @@ Synchronous, bi-directional near-real time data flows requires the following ver
 -   Dynamics 365 Customer Engagement, Platform version 9.1 (4.2) or
     higher
 
-For system setup instructions, refer to [Announcing Dual Write Preview](https://powerapps.microsoft.com/en-us/blog/announcing-dual-write-preview). It has step-by-step guide as a PDF at the bottom.
+For system setup instructions, refer to [Announcing Dual Write Preview](https://powerapps.microsoft.com/en-us/blog/announcing-dual-write-preview). It includes a [step-by-step guide](https://aka.ms/dualwrite-docs).
 
 ## Organization hierarchy on Common Data Service
 
