@@ -111,7 +111,7 @@ class Point
 
 As a best practice, you should make the **new** method protected. Instead, if initialization isn't required, you should use a **static construct** method as the public constructor for the class. Otherwise, you should use a **static new** method.
 
-### Creating other objects in a constructor
+### Create other objects in a constructor
 
 A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds. In this case, the **Point** class has a constructor that has two **real** parameters.
 
@@ -155,11 +155,9 @@ Rectangle customRectangle = new Rectangle(1.0, 1.0, 2.0, 2.0);
 info(any2Str(customRectangle.lowerLeft.x));
 info(any2Str(customRectangle.lowerLeft.y));
 // Output is "1.0" and "1.0".
-
-
 ```
 
-## Creating an instance of an object
+## Create an instance of an object
 
 The constructor, **new**, returns a new instance of the class. The following code example creates two instances of the Point class.
 
@@ -172,40 +170,38 @@ myPoint = new Point();
 
 // Declare and instantiate a Point instance.
 Point ap = new Point();
-info(any2Str(ap.x));
-info(any2Str(ap.y));
-// Output is "0.0" and "0.0".
 ```
 
 ## Destructors
-A *destructor* is used to explicitly destroy a class object. Objects are automatically destroyed when there are no references to them. However, you can destroy objects explicitly in the following ways:
+You use a *destructor* to explicitly destroy a class instance. Instances are automatically destroyed when there are no references to them. However, you can destroy objects explicitly in the following ways:
 
 -   Use the **finalize** method.
--   Set the object handle to **null**.
+-   Set the reference variable to **null**.
 
-### Using the finalize method
+### Use the finalize method
 
-Use the **finalize** method to explicitly destroy an object. There are no implicit calls to the **finalize** method. You must call the method to run the statements in it. The following example shows the basic structure for a call to the **finalize** method.
+Use the **finalize** method to explicitly destroy an object. There are no implicit calls to the **finalize** method. You must call the method to run the statements in it. In the **finalize** method, you should also put any clean-up code that is required. For example, if your class uses a dynamic-link library (DLL) module, you can use the **finalize** method to release the DLL when you no longer require it. Use the **finalize** method carefully. It will destroy an object even if there are references to it.
 
-    // From any method in a class.
-    if (condition)
-    {
-        // Removes object from memory.
-        this.finalize(); 
-    }
+The following example shows the basic structure for a call to the **finalize** method.
 
-In the **finalize** method, you should also put any clean-up code that is required. For example, if your class uses a dynamic-link library (DLL) module, you can use the **finalize** method to release the DLL when you no longer require it. Use the **finalize** method carefully. It will destroy an object even if there are references to it.
+```X++
+// From any method in a class.
+if (condition)
+{
+    // Removes object from memory.
+    this.finalize(); 
+}
+```
 
-### Setting an object handle to null
+### Set reference variable to null
 
-Set the object handle to **null** to terminate an object. This approach destroys an object only if no other object handles point to that object. You should verify that other code isn't using the object handle. The following example creates an object handle and then sets it to **null**.
+Set the reference variable to **null** to terminate an object. This approach destroys an object only if no other variables point to that object. You should verify that other code isn't using the variable. The following example creates an reference variable and then sets it to **null**.
 
-    // Create an object handle of the type MyObject.
-    MyObject mo;
-    // Create an object of MyObject type and link it to the object handle.
-    mo = new myObject();
-    // Terminate the object.
-    mo = null;
+```X++
+Point myPoint = new Point();
+myPoint = null;
+```
+
 ## Methods
 The following code block types are standard for application classes:
 
