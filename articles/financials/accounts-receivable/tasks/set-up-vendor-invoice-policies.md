@@ -44,7 +44,7 @@ This topic explains how to set up vendor invoice policies in Dynamics 365 for Fi
 4. Select **OK**.
 5. In the **Post invoice with discrepancies** field, select an option.
 6. Close the page.
-7. Go to **navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies.
+7. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
 8. Select **Parameters**.
 9. Select **Add**.
 10. Close the page to return to the home page.
