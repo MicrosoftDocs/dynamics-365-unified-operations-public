@@ -430,122 +430,123 @@ public class Additions
     }
 }
 
+// This code calls the AddThreeInts method.
 // No way to skip the first optional parameter (so it can default)
 // while also specifying the value of the second optional parameter.
 // The next statement does not compile.
-//print Additions::AddThreeInts(1, , 99);
+// info(int2Str(Additions::AddThreeInts(1, 2, 99)));
 
 // Settle for overriding both optional parameters.
-print Additions::AddThreeInts(1, 2, 99);
+info(int2Str(Additions::AddThreeInts(1, 2, 99)));
+// Output is "102".
 ```
 
 ## Accessor methods
-Class variables are private. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
 
-    class Point
+Class variables are protected by default. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
+
+```X++
+class Point
+{
+    // Instance variables
+    real x; 
+    real y;
+
+    // Constructor to initialize to a specific or default value
+    void new(real _x = 10, real _y = 10) 
     {
-        // Instance variables
-        real x; 
-        real y;
-
-        //Constructor to initialize to a specific or default value
-        void new(real _x=10, real _y=10) 
-        {
-            x = _x;
-            y = _y;
-        }
-
-        //Accessor methods
-        void setX(real _x) 
-        {
-            x = _x;
-        }
-
-        void setY(real _y) 
-        {
-            y = _y;
-        }
-
-        real getX() 
-        {
-            return x;
-        }
-
-        real getY() 
-        {
-            return y;
-        }
+        x = _x;
+        y = _y;
     }
+
+    // Accessor methods
+    void setX(real _x) 
+    {
+        x = _x;
+    }
+
+    void setY(real _y) 
+    {
+        y = _y;
+    }
+
+    real getX() 
+    {
+        return x;
+    }
+
+    real getY() 
+    {
+        return y;
+    }
+}
+```
 
 These method declarations show how the **Point** class provides access to its variables from the outside world. Other objects can manipulate the instance variables of **Point** objects by using the accessor methods.
 
-    // Declare a variable to refer to a Point object
-    Point myPoint; 
-    // Create a Point object
-    myPoint = new Point(); 
-    // Set the x variable using the accessor method
-    myPoint.setX(10.0); 
-    // Set the y variable by means of the accessor method
-    myPoint.setY(25.7);
+```X++
+Point myPoint = new Point();
+// Set the x variable using the accessor method.
+myPoint.setX(4.0);
+// Get the x variable using the accessor method.
+info(any2Str(myPoint.getX()));
+```
 
-The depth of the call stack is limited to 100.
 ## Parameters
-All methods have their own *scope*. A method can take one or more parameters. Within the scope of the method, these parameters are treated as local variables and are initialized with a value from the parameter in the method call. All parameters are passed by value. You can't change the value of the original variable. You can change only the local variable in the method. This local variable is a copy of the original variable.
+
+All methods have their own *scope*. A method can take one or more parameters. Within the scope of the method, these parameters are treated as local variables and are initialized with a value from the parameter in the method call. All parameters are passed by value, which means that you can't change the value of the original variable. You can change only the local variable in the method. This local variable is a copy of the original variable.
 
 ## Scope of variables in methods
+
 A scope defines the area in which an item can be accessed. Variables that are defined in a class are available to the methods within that class. Variables in methods can be accessed only within the current block.
 
 ## Local functions
-You can declare local functions inside a method. However, as a best practice, you shouldn't add local functions inside the method. Instead, you should add private methods to the class. The following example shows valid declarations of two local functions, **localFunc55b** and **localFunc66c**. Calls to the local functions occur after the function declarations in the example, as is required.
 
-    static void G_LocalFuncJob2(Args _args) 
-    {
-        int nn = 654;
-        void localFunc55b(int _iNum)  // The local function.
-        {
-            str sInnerString;
-            sInnerString = "String_in_localFunc55b";
-            info(strFmt("localFunc55b: %1 , %2 , %3", 
-                _iNum, sInnerString, nn));
-        }
-
-        void localFunc66c()
-        {
-            info("Printing from inside localFunc66c.");
-        }
-
-        localFunc55b(55);
-        localFunc66c();
-        // Next print statement would fail to compile,
-        // because sInnerString is restricted to the
-        // scope of the local function in which it is declared.
-        // print sInnerString; 
-    }
-    /***  Infolog window display:
-    Message (07:38:54 pm)
-    localFunc55b: 55 , String_in_localFunc55b , 654
-    Printing from inside localFunc66c.
-    ***/
-
-### Declaration of local functions
+You can declare functions inside a method. These are called local functions. While possible, it is not a best practice. Instead, you should add private methods to the class. 
 
 -   The declarations of local functions must physically precede any non-declaration statements in the method.
 -   You can declare more than one local function in your method. However, all local functions must be declared in an uninterrupted series, and the set must be terminated by one semicolon (;).
-
-### Variable scope
-
 -   Code that is inside the local function can access variables that are declared in the method that contains the local function.
 -   Code that is outside the local function can't access variables that are declared in the local function.
-
-### Calls to local functions
-
 -   A local function can be called only by code in the same method where the local function is declared.
 -   A local function should never call itself. Such recursion can prevent successful compilation.
+
+The following example shows valid declarations of two local functions, **localFunctionA** and **localFunctionB**. Calls to the local functions occur after the function declarations in the example, as is required.
+
+```X++
+static void StaticFunction()
+{
+    int number = 654;
+
+    void localFunctionA(int _iNum)  // The local function.
+    {
+        str innerString = "String in localFunctionA";
+        str output = strFmt("localFunctionA: %1 , %2 , %3", _iNum, innerString, number);
+        info(output);
+    }
+
+    void localFunctionB()
+    {
+        info("Printing from inside localFunctionB.");
+    }
+
+    localFunctionA(55);
+    localFunctionB();
+    // Next info statement would fail to compile,
+    // because innerString is restricted to the
+    // scope of the local function in which it is declared.
+    // print innerString;
+}
+
+// When called, the output is:
+// localFunctionA: 55 , String in localFunctionA , 654
+// Printing from inside localFunctionB.
+```
 
 ## The this keyword
 The **this** keyword is a reference to the instance of the class or table where the **this** keyword is used. The **this** reference is never required, but it can clarify your code and enhances the behavior of IntelliSense in the code editor. All calls to instance methods must be qualified by either the **this** reference or a variable. The **this** reference can be used to qualify the following information:
 
--   The names of other instance (non-static) methods in the same class where the **this** reference is used. Here is an example: **boolColorChanged = this.colorItOrange();**
+-   The names of other instance (non-static) methods in the same class where the **this** reference is used. Here is an example: `boolColorChanged = this.colorItOrange();`
 -   The names of methods that are inherited by the **this** object.
 -   The names of fields on the table that contains the method that the **this** keyword is used in.
 
@@ -554,3 +555,8 @@ The **this** reference can't be used in the following ways:
 -   It can't qualify the names of member variables that are declared in the **classDeclaration** code.
 -   It can't be used in a static method.
 -   It can't qualify the names of static methods of the class or table.
+
+## Call stack limitation
+
+The depth of the call stack is limited to 100.
+
