@@ -104,23 +104,23 @@ The page author can then choose the specific configurations for the module on a 
 The module "config" section contains a list of all the modules exposed configuration fields that will be used in the authoring tool.
 * config name:
     * Choose a name that will be used to access the config values from your react source code
-* "config.friendlyName":
+* "friendlyName":
     * This name will show up in authoring tools as the configuration name
-* "config.description":
+* "description":
     * This description will show up in authoring tools as the configuration description
-* "config.type":
+* "type":
     * Type of the configuration.  Possible values “string”, “bool”, “number”, “integer”, “resource” , “richText”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
-* "config.enum":
+* "enum":
     * For an enumerator type must be set to "string".
-* "config.default":
+* "default":
     * Used to set the default value if none is set in the authoring tool.
-* "config.scope":
+* "scope":
     * Used to scope the config to the a module instance or all modules site on the site.  Possible values "module" or "site".  If set to the site, the module configuration will not show up and be configurable on a page, only at the site level settings. This will allow the value to be set once for your whole site.
-* "config.group":
+* "group":
     * Groups are used to organize the configurations into organized groups in the authoring tools.
-* "config.required":
+* "required":
     * This marks if a property must be set on the module.  The rendering of the module and tooling will show an error if this is not set.
-* "config.resourceKey":
+* "resourceKey":
     * Used for localization resources. 
     
 Below is an advanced sample that shows the usage of various supported data types:
