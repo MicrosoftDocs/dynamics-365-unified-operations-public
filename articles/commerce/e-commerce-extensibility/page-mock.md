@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Page Mock
-description: 
+title: Page mock
+description: You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  
+
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -28,8 +29,7 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# Page Mock
-
+# Page mock
 You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  
 
 Page mock files live under the `/src/pageMocks` directory and can be loaded using `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (but does not include the .json file extension).
