@@ -41,6 +41,29 @@ This topic describes the library of classes in X++. There are two kinds of class
 
 For a list of these classes, see [API, class, and table reference](api-reference.md).
 
+## Typical structure of an application class
+
+The following code block types are standard for application classes:
+
+- *<strong><em>classDescription</em>* declaration block</strong> – This declaration block contains class modifiers such as <strong>public</strong>, <strong>private</strong>, and <strong>extends</strong>. It also contains the field members for objects that are constructed from the class. When you type the keyword <strong>this</strong>, IntelliSense can show a list of the members.
+- *<strong><em>new</em>* method</strong> – This method creates an instance of the class. The constructor can be called only by using the <strong>new</strong> keyword. Derived classes can call the <strong>new</strong> method of their constructor by calling the <strong>super</strong> method reference.
+- *<strong><em>finalize</em>* method</strong> – This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the <strong>finalize</strong> method during garbage collection.
+
+Additional methods for a class have the following types:
+
+-   Instance methods
+-   Static methods
+-   Main methods
+
+Methods can be created on many kinds of items. Here are some examples:
+
+-   Classes
+-   Maps
+-   Views
+-   Data Sets
+-   Forms
+-   Queries
+
 ## Substituting application classes for system classes
 You should call the *substitute application classes* instead of the system classes that they extend. In Application Explorer, under **System Documentation** &gt; **Classes**, several kernel or system classes have names that begin with a lowercase *x*. These classes are known as *x-system classes*. Examples of these system classes are **xApplication** and **xVersionControl**. Some of these classes are extended by application classes. For example, the **Application** class extends the **xApplication** system class. The classes that derive from x-system classes are known as substitute application classes. In Application Explorer, under the **Classes** node, the icon next to the substitute application classes differs from the standard icon.
 
