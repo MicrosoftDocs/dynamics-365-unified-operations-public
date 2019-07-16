@@ -34,16 +34,14 @@ An operating unit is an organization that is used to divide the control of econo
 
 1. Go to **Navigation pane > Modules > Organization administration > Organizations > Operating units.**
 2. Click **New** to open the drop dialog.
-3. In the list, find and select the desired record.
-   
-   Select the type of operating unit you want to create.  
+3. In the list, find and select the desired record. Select the type of operating unit you want to create.  
 4. In the list, click the link in the selected row.
 5. In the **Name** field, type a value.
-    * Expand the **General** section, if necessary.  
-    * Provide general information about the operating unit, such as an identification number, DUNS number, and manager.    
-    * Expand the **Addresses** section, if necessary.  
-    * Enter address information, such as the street name and number, postal code, and city. Click **Add** to enter a new address record, or click Edit to modify an existing address record.   
-    * Expand the **Contact information** section, if necessary.  
-    * Enter information about methods of communication, such as email addresses, URLs, and telephone numbers. To enter a new communication record, click New. To modify an existing communication record, click **More options > Advanced**.   
+    + Expand the **General** section, if necessary.  
+    + Provide general information about the operating unit, such as an identification number, DUNS number, and manager.    
+    + Expand the **Addresses** section, if necessary.  
+    + Enter address information, such as the street name and number, postal code, and city. Click **Add** to enter a new address record, or click Edit to modify an existing address record.   
+    + Expand the **Contact information** section, if necessary.  
+    + Enter information about methods of communication, such as email addresses, URLs, and telephone numbers. To enter a new communication record, click New. To modify an existing communication record, click **More options > Advanced**.   
 6. Click **Save**.
 
