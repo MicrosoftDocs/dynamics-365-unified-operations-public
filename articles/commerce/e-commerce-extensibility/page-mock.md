@@ -30,7 +30,9 @@ ms.dyn365.ops.version:
 ---
 # Page Mock
 
-You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  Page mock files live under the `/src/pageMocks` directory and can be loaded using `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (but does not include the .json file extension).
+You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  
+
+Page mock files live under the `/src/pageMocks` directory and can be loaded using `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (but does not include the .json file extension).
 
 ## Creating a new page mock
 To create a new page mock you'll need to create a new blank json file under the `/src/pageMocks` directory, for example `/src/pagemocks/campaignPage.json`.
