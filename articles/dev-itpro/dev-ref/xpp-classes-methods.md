@@ -38,7 +38,7 @@ This topic describes how to create and use classes in X++.
 
 A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
 
-You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](static-class-members.md).
+You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](static-class-classes.md).
 
 ## Declare a class
 
