@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 # Module Data File
-This MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data.  A set of core Data actions are included in the SDK that can get data from the Dynamics 365 Retail, ratings and review or the recommendations service.  The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+This MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data.  A set of core Data actions are included in the SDK that can get data from the Dynamics 365 Retail, ratings and review or the recommendations service.  The list of data actions can be found under the SDK `\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib` directory.
 
 Below is a sample data file for a new module
 
