@@ -38,24 +38,14 @@ The demo data company used to create this procedure is USMF. This procedure show
 2. Click **New**.
 3. In the **Coverage group** field, type a value.
 4. In the **Name** field, type a value.
-5. In the **Calendar** field, type a value.
-    
-    Choose the calendar that master planning uses to create replenishment suggestions for items in this group.  
-6. In the **Coverage code** field, select an option.
-    
-    Select 'Requirement' for this procedure.  
-7. In the **Coverage time fence (days) field**, enter '90'.
-    
-    For items in this group, master planning will create replenishment suggestions for up to 90 days in the future.  
+5. In the **Calendar** field, type a value. Choose the calendar that master planning uses to create replenishment suggestions for items in this group.  
+6. In the **Coverage code** field, select an option. Select 'Requirement' for this procedure.  
+7. In the **Coverage time fence (days) field**, enter '90'. For items in this group, master planning will create replenishment suggestions for up to 90 days in the future.  
 8. In the **Negative days** field, enter '1'.
 9. In the **Positive days** field, enter '1'.
 10. Expand or collapse the **Other** section.
-11. Under the **Safety margins in days** section, in the **Receipt margin added to requirement date** field, enter '1'.
-    
-    For example, if the receipt margin is set to 1 day, and a purchase order line is scheduled for receipt on May 15, master planning calculates the adjusted receipt date as May 16.  
-12. In the **Issue margin deducted from requirement date** field, enter '1'.
-    
-    For example, if the safety margin is set to 1 day, and a sales order line is scheduled for delivery on May 15, master scheduling calculates the adjusted delivery date as May 14.  
+11. Under the **Safety margins in days** section, in the **Receipt margin added to requirement date** field, enter '1'. For example, if the receipt margin is set to 1 day, and a purchase order line is scheduled for receipt on May 15, master planning calculates the adjusted receipt date as May 16.  
+12. In the **Issue margin deducted from requirement date** field, enter '1'. For example, if the safety margin is set to 1 day, and a sales order line is scheduled for delivery on May 15, master scheduling calculates the adjusted delivery date as May 14.  
 13. In the **Reorder margin added to item lead time** field, enter '1'.
 14. Click **Save**.
 
@@ -93,9 +83,7 @@ The demo data company used to create this procedure is USMF. This procedure show
 12. Click **Save**.
 13. In the **Default order type** field select 'Purchase order'.
 14. Click **Save**.
-15. Close the page.
-    
-    Close the Default order settings page.  
+15. Close the page. Close the Default order settings page.  
 
 ## Add an item to a coverage group
 1. Expand or collapse the **Plan** section.
@@ -109,9 +97,7 @@ The demo data company used to create this procedure is USMF. This procedure show
 3. Click **New**.
 4. Click the **General** tab.
 5. Check the box on the header of **Override coverage group** settings.
-6. In the **Coverage time fence (days)** field, enter '60'.
-
-    Although items in coverage group Requiremen are planned 90 days ahead, this item will be planned 60 days ahead.  
+6. In the **Coverage time fence (days)** field, enter '60'. Although items in coverage group Requiremen are planned 90 days ahead, this item will be planned 60 days ahead.  
 7. In the **Negative days** field, enter '2'.
 8. In the **Positive days** field, enter '2'.
 9. Click the **Lead time** tab.
