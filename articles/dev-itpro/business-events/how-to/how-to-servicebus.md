@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Consume business events with Azure Service Bus
-description: This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operations and how to consume a business event form Azure Service Bus.
+title: Consume business events by using Azure Service Bus
+description: This topic explains how to configure a Microsft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 07/12/2019
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -26,205 +26,193 @@ ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
 ---
-# Consume business events with Azure Service Bus
-This topic explains how to configure an Azure Service Bus endpoint with Dynamics 365 Finance and Operations and how to consume a business event from Azure Service Bus.
+# Consume business events by using Azure Service Bus
+
+This topic explains how to configure a Microsoft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
 
 ## Scenario overview
-Security best practices recommend storing connection strings outside of applications application but in a Key Vault drive and giving applications the right access to the key vault keys, secrets or certificates.
 
-This has many benefits, first, if someone gets access to the application database he will not be able to get the 3rd party connection string. Second, maintainability becomes easier as there is only one place where we need to update connection strings especially when multiple applications access the same resources.
+Security best practices recommend that you store connection strings outside applications, in an Azure Key Vault drive, and that you give applications the correct access to the key vault keys, secrets, or certificates.
 
-The process includes the following procedures:
+Here are two of the many benefits of this approach:
 
-1.   Create a new Service Bus Namespace
-2.   Create a new Azure Service Bus topic and subscription
-3.   Create a new Key Vault to store Service Bus key
-4.   Register an Azure App with permissions to access the key vault on behalf of Finance and Operations
-5.   Configure a Business Events Endpoint in F&O
-6.   Consume your business event
+- Someone who gets access to the application database won't be able to get the third-party connection string.
+- Maintenance is easier, especially when multiple applications access the same resources, because you must update connection strings in only one place.
+
+Here is an overview of the procedures that you must complete:
+
+1. Create a new Service Bus namespace.
+2. Create a new Service Bus topic and subscription.
+3. Create a new key vault to store the Service Bus key.
+4. Register an Azure app that has permission to access the key vault on behalf of Finance and Operations.
+5. Configure a Business Events endpoint in Finance and Operations.
+6. Consume the business event.
 
 ## Create a new Service Bus namespace
 
-1.  Log into the Azure Portal.
+1. Sign in to the Azure portal.
+2. Select **All services \> Integration \> Service Bus**.
+3. Select **Add** to create a new Service Bus namespace, and set the parameters. Select the **Standard** pricing tier. You can create a new resource group as a container for your lab, or you can use an existing resource group.
 
-2.  Select **All services \> Integration \> Service Bus**
+    > [!NOTE]
+    > If you select the **Basic** pricing tier, you can create only queues. To create topics, you must select the **Standard** pricing tier.
 
-3.  Click **Add** to create a new Service Bus Namespace, and then fill in the parameters. Select the **Standard** pricing tier. You can create a new resource group as a container for your lab or use an existing one.
+4. When you've finished setting all the parameters, select **Create**.
 
-    > [!Note]
-    > With the **Basic** pricing tier, you can create only Queues. You need to select the **Standard** pricing tier for Topics.
+## Create a new Service Bus topic and subscription
 
-4.  Once all parameters are filled, click **Create**.
-
-## Create a new Service Bus Topic and Subscription
-
-
-1.  Select the Service Bus you just created, then create a new topic.
+1. In the Azure portal, select the Service Bus that you just created, and then create a new topic.
 
     <img src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
-2.  Select the newly created Topic, and then create a new subscription called BE-USMF.
+2. Select the new topic, and then create a new subscription that is named **BE-USMF**.
 
     <img src="../../media/BEF-Howto-servicebus-04.png" width="70%">
 
-3.  Go back to your Service Bus panel and create a new shared access policy to send events. Only the **Send** policy is needed to send events to the Service Bus Topic.
+3. Go back to the blade for your Service Bus, and create a new shared access policy to send events. Only the **Send** policy is required to send events to the Service Bus topic.
 
     <img src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
-4.  Select the new send policy, and then copy the **Primary Connection String** and save it for later usage.
+4. Select the new **Send** policy, and then copy and save the **Primary Connection String** value. You will use this value later.
 
     <img src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
-## Create a Key Vault
+## Create a new key vault
 
-For this procedure, you will have to create a Key Vault to store the connection string you copied above. A key vault is a secure drive used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, it is more common and secure to store it in a key vault, and then register a new application with Azure active directory that will have the right to retrieve the secret form the key vault on behalf of Finance and Operations.
+In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault on behalf of Finance and Operations.
 
-1.  Select **All services \> Security \> key vaults**.
-
-2.  Create a new key vault within your resource group and **default parameters**
+1. In the Azure portal, select **All services \> Security \> Key vaults**.
+2. Create a new key vault in your resource group and **default parameters**.
 
     <img src="../../media/BEF-Howto-Keyvault-02.png" width="50%">
 
-3.  Select **Overview** and copy the key vault URL **DNS Name** and save it for later use.
+3. Select **Overview**, and copy and save the **DNS Name** value for the key vault. You will use this value later.
 
     <img src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4.  Select **BE-key vault \> Secrets \> Generate/Import** and choose a new name for your secret and **copy** the service bus **connection string** you saved earlier.
+4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the Service Bus connection string that you saved earlier.
 
     <img src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
-5.  Click **Create**.
+5. Select **Create**.
 
-## Register a new Application
+## Register a new application
 
-For this procedure, you will register a new application with Azure AD and give read and retrieve access to key vault secrets. Then this application will be used by Finance and Operations to retrieve Service Bus Secrets.
+In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. Finance and Operations will then use this application to retrieve Service Bus secrets.
 
-1.  Select **All services \> Security \> Azure Active Directory**
+1. In the Azure portal, select **All services \> Security \> Azure Active Directory**.
+2. Select **App registrations (preview) \> New registration**, and enter a name for your application.
+3. Select **Register**.
+4. Select the new application, and then select **Certificates & secrets \> New client secret**. Enter a name for your secret, and set the secret so that it never expires. Then select **Add**.
 
-2.  Select **App registrations (preview) \> New registration**, and then type a new name for your application.
+    <img src="../../media/BEF-Howto-Keyvault-07.png" width="50%">
 
-3.  Click on **Register**.
+5. Copy and save your new secret. You will use it later.
 
-4.  Select new application. Click **Certificates & secrets \> New client secret**. Then type a name for your secret and set it to never expire. Click on **Add**.
+    > [!IMPORTANT]
+    > Secrets are visible only one time. If you forget to copy the secret, you will have to delete it and create a new secret.
 
-   <img src="../../media/BEF-Howto-Keyvault-07.png" width="50%">
+    <img src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
 
-5.  Copy your new secret for later use. Secrets are visible only once, if you forget to copy it you will need to delete it and create a new one.
-
-   <img src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
-
-6.  Select **Overview** and copy your application ID. Save it for later use.
+6. Select **Overview**, and copy and save the application ID. You will use this value later.
 
     <img src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
 
-7.  Go back to the previously created Key vault by selecting **All services \> Security \> key vaults**.
-
-8.  Select your key vault and click **Access policies \> Add new**.
-
-9.  Select your new registered application in the **Principal** area. The select **Get** and **List** secret permissions to retrieve key vault secrets.
+7. Select **All services \> Security \> Key vaults**.
+8. Select the key vault that you created earlier, and then select **Access policies \> Add new**.
+9. On the **Principal** blade, select your new registered application. Select the check boxes for the **Get** and **List** secret permissions to retrieve key vault secrets.
 
     <img src="../../media/BEF-Howto-Keyvault-12.png" width="50%">
 
-10.  **Save** your new access policy.
+10. Save your new access policy.
 
-## Configure a business event endpoint in Finance and Operations
+## Configure a Business Events endpoint in Finance and Operations
 
-1.  Log into the Finance and Operations.
-
-2.  Go to **System administration \> Setup \> System parameters**.
-
-3.  Click the **Business events** tab.
-
-4.  Click **Business events**.
-
-5.  Click **Endpoints**.
-
-6.  Click **New**.
-
-7.  Select **Azure Service Bus Topic**.
-
-8.  Click **Next**.
-
-9.  Provide the necessary parameter values.
+1. Sign in to Finance and Operations.
+2. Go to **System administration \> Setup \> System parameters**.
+3. On the **Business events** tab, select **Business events**.
+4. Select **Endpoints**.
+5. Select **New**.
+6. Select **Azure Service Bus Topic**.
+7. Select **Next**.
+8. Set the required parameter values.
 
     <img src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
-10. Click **OK**.
+9. Select **OK**.
 
-## Consuming a Business Event
+## Consume a business event
 
-The business scenario is to send an email or a message to a team channel whenever a customer payment has been posted for the USMF company. The message needs to contain details such as the customer account number, customer name, and amount of payment.
+The business scenario involves sending an email or a message to a team channel whenever a customer payment is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the amount of the payment.
 
-1.  Activate the customer payment posted business event for USMF.
+1. Activate the customer payment posted business event for the USMF company.
 
     <img src="../../media/BEF-Howto-servicebus-09.png" width="30%">
 
-2.  Once you activate a business event with a new endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cash the connection. In order to verify that the test message has been received, navigate to Azure and select your service bus topic **BE-Topic**.
+    After you activate a business event with a new endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
 
-3.  From there jump into your **Service Bus Subscription BE-USMF** that you created earlier.
-
-4.  Verify that the message count of your subscription is showing a value of at least 1. If this is not the case, wait for the batch job to pick up your message.
+2. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
 
     <img src="../../media/BEF-Howto-servicebus-10.png" width="70%">
 
-5.  Select **All services\> Integration\> Logic Apps** in the Azure portal.
+3. Select **All services \> Integration \> Logic Apps**.
 
     <img src="../../media/BEF-Howto-servicebus-11.png" width="70%">
 
-6.  Create a new logic app in your resource group.
+4. Create a new logic app in your resource group.
+5. After your Logic Apps resource has been created, select the option to create a blank logic app.
+6. Search for **Service Bus**, and select it.
+7. Select the trigger that is named **When a message is received in a topic subscription (auto-complete)**.
 
-7.  Once your Logic Apps resource has been created, choose to create a **Blank Logic Apps**.
+    > [!NOTE] 
+    > Auto-complete means that the message is deleted from the subscription queue after it's retrieved. Peek-lock authorizes concurrent consumers. It requires a call to the Service Bus **complete** application programming interface (API) command to delete the message.
 
-8.  Search for **Service Bus** and **select** it.
+    Because Logic Apps is accessing your Service Bus for the first time, it asks for a new connection. This connection will cache connection details as a Service Bus namespace URL and credential.
 
-9.  Select the trigger called **When a message is received in a topic subscription (auto-complete)**.
+8. Select your Service Bus namespace, and enter a name for the new connection.
+9. Select the **RootManageSharedAccessKey** policy for your logic app, and then select **Create**.
 
-    > [!Note] 
-    > Auto complete means that once the message is retrieved, it is deleted from the subscription queue. Peek-lock will authorize concurrent consumers and will need a call to Service Bus “complete” API command to delete the message.
-
-10. As it is the first time Logic Apps will access your Service Bus, it asks you for a new connection that will cash connection details as a service bus namespace URL and credential. Select your service bus namespace and provide a name for your new connection.
-
-11. Choose the **RootManageSharedAccessKey** policy for your Logic Apps and select **Create**.
-
-    > [!Note]
-    > The send policy can’t be used here as we want to retrieve messages instead. A best practice would have been to create a new policy for our use case with Listen permission only.
+    > [!NOTE]
+    > The **Send** policy can't be used here, because you want to *retrieve* messages, not send them. As a best practice, you could have created a new policy for this use case and given it **Listen** permission only.
 
     <img src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
-12. Select your trigger parameters with the right topic name and subscription name you created.
+10. Select your trigger parameters. Be sure to use the correct names for the topic and subscription that you created.
 
-    This API polls Service Bus for new messages continually with a configurable recurrence (each 3 minutes by default). If the volume of messages is low this API will have a cost impact for unnecessary triggers as Logic Apps is priced per trigger calls and action runs. However, a push architecture is possible leveraging Event Grid in the middle. Service Bus can push events to Event Grid when there are messages in a queue or a subscription. For more details, see [Azure Service Bus to Event Grid integration overview](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
+    This API polls Service Bus for new messages at a configurable recurrence (by default, every three minutes). If the volume of messages is low, the API will have a cost impact for unnecessary triggers, because Logic Apps is priced per trigger call and action run. However, you can implement a push architecture that uses Azure Event Grid in the middle. Service Bus can then push events to Event Grid when there are messages in a queue or a subscription. For more information, see [Azure Service Bus to Event Grid integration overview](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
 
     <img src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 
-13. Select the **New step** button to add a new action.
+11. Select **New step** to add a new action.
+12. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
 
-14. Search for **Parse Json** data operation. This step is needed to be able to parse our message with the schema of our data contract provided by Finance and Operations.
+    The body content that is received from the Service Bus is encoded into base64 format. Therefore, you must transform it to string format before the JavaScript Object Notation (JSON) payload can be parsed. 
 
-15. The body content received from the service bus is encoded into base64 so we need to transform into string before parsing the json payload. Select the **Content** field, on the side bar select the **Expression** tab, and then type the following expression **Base64ToString().**
+13. Click in the **Content** field, and then, in the pane that appears, on the **Expression** tab, enter the following expression: **Base64ToString()**
 
     <img src="../../media/BEF-Howto-servicebus-19.png" width="70%">
 
-16. Put your cursor between the parenthesis and select the **Dynamic content** tab to look for the **Content of the message** from the previous service bus trigger. Then select the Content and click on **OK**.
+14. Put the cursor between the parentheses in the expression, and then, on the **Dynamic content** tab, find and select the **Content of the message** content from the previous Service Bus trigger. Then select **OK**.
 
     <img src="../../media/BEF-Howto-servicebus-20.png" width="50%">
 
-17. Type in the schema of the contract received from Finance and Operations. However, Finance and Operations provides only a sample payload instead. Hence, we can use Logic Apps to generate a schema from a payload. Go back to Finance and Operations, select your event in the catalog, and click the **Download schema** link. This will download a text file. Open the text file and copy the content.
+    Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
-18. Go back to Logic Apps. Click the **Use sample payload to generate schema** link. Then paste in the text file content and click  **Done**.
+15. In Finance and Operations, select your event in the catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
+16. Go back to Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
 
     <img src="../../media/BEF-Howto-servicebus-22.png" width="70%">
 
-19. Depending on the quality of your sample payload, your generator will not recognize an Integer from a real especially if the real is provided as a whole number in the sample payload. Review your generated schema and check if you need to change an “integer” field into “number”. (In Json a “number” data type means real).
+17. Depending on the quality of your sample payload, your generator won't recognize an integer from a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
 
     <img src="../../media/BEF-Howto-servicebus-23.png" width="70%">
 
-20. Choose another final action like to send an email to notify with customer payment details. Search for the **send email** action, then login to your Office 365 account.
+    Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
-21. Fill in the message with the required fields.
+18. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
+19. Fill in the message with the required fields.
 
     <img src="../../media/BEF-Howto-servicebus-25.png" width="70%">
 
-22.  Save your logic apps.
-
-23. Trigger the business event by posting a customer payment. Then check whether the logic app runs and whether you receive an email with customer payment details.
+20. Save your logic app.
+21. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
