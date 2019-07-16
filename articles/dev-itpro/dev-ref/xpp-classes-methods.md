@@ -203,48 +203,54 @@ myPoint = null;
 ```
 
 ## Methods
-The following code block types are standard for application classes:
-
-- *<strong><em>classDescription</em>* declaration block</strong> – This declaration block contains class modifiers such as <strong>public</strong>, <strong>private</strong>, and <strong>extends</strong>. It also contains the field members for objects that are constructed from the class. When you type the keyword <strong>this</strong>, IntelliSense can show a list of the members.
-- *<strong><em>new</em>* method</strong> – This method creates an instance of the class. The constructor can be called only by using the <strong>new</strong> keyword. Derived classes can call the <strong>new</strong> method of their constructor by calling the <strong>super</strong> method reference.
-- *<strong><em>finalize</em>* method</strong> – This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the <strong>finalize</strong> method during garbage collection.
-
-Additional methods for a class have the following types:
-
--   Instance methods
--   Static methods
--   Main methods
-
-Methods can be created on many kinds of items. Here are some examples:
-
--   Classes
--   Maps
--   Views
--   Data Sets
--   Forms
--   Queries
 
 ### Instance methods
 
-Instance methods, or object methods, are embedded in each object that is created from the class. You must instantiate the object before you can use the method. If you later convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. Static methods are discussed in the next section. You use the following syntax to call instance methods.
+Instance methods are embedded in each instance that is created from the class. You must instantiate the object before you can use the method. The following code shows how to define an instance method and call it from an instance.
 
-    ClassName objectHandleName = new ClassName();
-    objectHandleName.methodName();
+```X++
+class Square
+{
+
+    int side = 0;
+
+    void new(int _side = 1) {
+        side = _side;
+    }
+
+    int getArea() {
+        return side * side;
+    }
+
+}
+
+// This code creates an instance of Square and calls getArea.
+Square square = new Square(15);
+int area = square.getArea();
+info(int2Str(area));
+// Output is "225".
+```
 
 ### Static methods
 
 Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. You use the following syntax to call static methods.
 
+```X++
     ClassName::methodName();
+```
 
-### Main methods
+If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [Static class members](static-class-classes.md).
+
+### main methods
 
 A **main** method is a class method that is run directly from a menu option. The method should only create an instance of the object and then call the required member methods. The **\_args** parameter lets you transfer data to the method.
 
-    static void main (Args _args)
-    {
-        // Your code here.
-    }
+```X++
+static void main (Args _args)
+{
+    // Your code here.
+}
+```
 
 ### Declaration of methods
 
@@ -252,8 +258,9 @@ Method declarations consist of a header and a body. The method header declares t
 
 ### Return type
 
-If a method doesn't return anything, you must use the **void** keyword. The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
+A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
 
+```X++
     void methodNameNoReturnValue()
     {
         // Your code here.
@@ -264,79 +271,101 @@ If a method doesn't return anything, you must use the **void** keyword. The foll
     {
         return 1;
     }
+```
 
 ### Syntax
 
-Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** If you use the **anytype** return type, the method can return any data type.
+Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *ReturnType*  *MethodName*  **(**  *ParameterList*  **)** 
+
+Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** 
+
+ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* 
+
+ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** 
+
+Parameter = *Datatype*  *Variableidentifier*  **\[ =**  *Expression*  **\]** 
+
+Body = **{ \[**  *VariableDeclarations*  **\] \[**  *EmbeddedFunctionDeclarations*  **\] \[**  *Statements*  **\] }** 
+
+EmbeddedFunctionDeclaration = *Heading*  **{\[**  *VariableDeclarations*  **\] \[**  *Statements*  **\]}** 
+
+If you use the **anytype** return type, the method can return any data type.
 
 ### Example of a method that doesn't have a return type
 
-    void update ()
-    {   
-        // Variable declared and initialized
-        CustTable this_Orig = this.orig();
+```X++
+void update ()
+{   
+    // Variable declared and initialized
+    CustTable this_Orig = this.orig();
 
-        // First statement in body (begin transaction)
-        ttsBegin;
-        this.setNameAlias();
-        // Calls super's implementation of update
-        super();
-        this.setAccountOnVend(this_Orig);
-        if (this_Orig.custGroup != this.custGroup)
-            ForecastSales::setCustGroupId(
-                this.accountNum,
-                this_Orig.custGroup,
-                this.custGroup);
-        // Commits transaction
-        ttsCommit;
-    }
+    // First statement in body (begin transaction)
+    ttsBegin;
+    this.setNameAlias();
+    // Calls super's implementation of update
+    super();
+    this.setAccountOnVend(this_Orig);
+    if (this_Orig.custGroup != this.custGroup)
+        ForecastSales::setCustGroupId(
+            this.accountNum,
+            this_Orig.custGroup,
+            this.custGroup);
+    // Commits transaction
+    ttsCommit;
+}
+```
 
 ### Example of a method that has parameters
 
 In the following example, the **checkAccountBlocked** method returns a Boolean value and acts on the **amountCur** parameter.
 
-    boolean checkAccountBlocked(AmountCur amountCur)
-    {
-        if (this.blocked == CustVendorBlocked::All 
-            ||(this.blocked == CustVendorBlocked::Invoice 
-            && amountCur > 0 ))
-        return checkFailed(strFmt("@SYS7987",this.accountNum));
-        return true;
-    }
+```X++
+boolean checkAccountBlocked(AmountCur amountCur)
+{
+    if (this.blocked == CustVendorBlocked::All 
+        ||(this.blocked == CustVendorBlocked::Invoice 
+        && amountCur > 0 ))
+    return checkFailed(strFmt("@SYS7987",this.accountNum));
+    return true;
+}
+```
 
 ## Method modifiers
 Several modifiers can be applied to method declarations. Some of the modifiers can be combined (for example, **final static**). Here are the method modifier keywords:
 
--   **abstract** – The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
--   **display** – The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
--   **edit** – The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
--   **final** – The method can't be overridden in any class that derives from its class.
--   **public** – Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
--   **protected** – Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.
--   **private** – Methods that are declared as **private** can be called only from methods in the class where the private method is declared.
--   **static** – The method is a class method and doesn't act on an instance. Static methods can't refer to instance variables. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
+-   **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
+-   **display**: The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
+-   **edit**: The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
+-   **final**: The method can't be overridden in any class that derives from its class.
+-   **public**: Methods that are declared as **public** can be accessed anywhere that the class is accessible, and they can be overridden by subclasses. Methods that have no access modifier are implicitly public.
+-   **protected**: Methods that are declared as **protected** can be called only from methods in the class and in subclasses that extend the class where the method is declared.
+-   **private**: Methods that are declared as **private** can be called only from methods in the class where the private method is declared.
+-   **static**: The method is a class method and doesn't act on an instance. Static methods can't refer to instance variables. They aren't invoked on an instance of the class. Instead, they are invoked by using the class name (for example, **MyClass::aStaticProcedure()**).
 
 ### Methods that have modifiers
 
-**Note:** The following examples show only the method headers.
+The following examples show only the method headers.
 
-    // A method that cannot be overridden
-    final int dontAlterMe() 
+```X++
+// A method that cannot be overridden
+final int dontAlterMe() 
 
-    // A static method 
-    static void noChange()
+// A static method 
+static void noChange()
 
-    // A display method that returns an integer
-    display int value()
-    
+// A display method that returns an integer
+display int value()
+```
+
 ## Method access control
+
 You use the accessor keywords **public**, **protected**, and **private** to control whether the methods in other classes can call the methods on your class. The accessor keywords on methods also interact with the rules for class inheritance. Here are the accessor keywords that you use with methods:
 
--   **public** – Methods that are declared as **public** can be called from anywhere that the class is accessible. In addition, a public method can be overridden by a subclass, unless the method is declared as **final**.
--   **protected** – Methods that are declared as **protected** can be called only from the following methods:
+-   **public**: Methods that are declared as **public** can be called from anywhere that the class is accessible. In addition, a public method can be overridden by a subclass, unless the method is declared as **final**.
+-   **protected**: Methods that are declared as **protected** can be called only from the following methods:
     -   Methods in the class.
     -   Methods in a subclass of the class that contains the protected method. Methods that are protected can be overridden in subclasses.
--   **private** – Methods that are declared as **private** can be called only from methods in the class where the private method is declared. No private method can be overridden in a subclass. By default, when you create a new method, the **private** accessor keyword appears in the code editor. For maximum security, **private** is the most conservative default accessor keyword.
+-   **private**: Methods that are declared as **private** can be called only from methods in the class where the private method is declared. No private method can be overridden in a subclass. By default, when you create a new method, the **private** accessor keyword appears in the code editor. For maximum security, **private** is the most conservative default accessor keyword.
 
 ### Static and instance methods
 
@@ -355,64 +384,60 @@ Parameters can be initialized in the method declaration. In this case, the param
 
 ### Examples of optional parameters
 
-    // This is an example of a function being used as the default.
-    public class Person 
+The following code example shows a class with a default parameter.
+```X++
+// This is an example of a function being used as the default.
+public class Person 
+{
+    date birthDate;
+
+    // The constructor that takes a date type as
+    // a parameter. That value is assigned to the field member birthDate. 
+    void new(date _date)
     {
-        date birthDate;
-
-        // The constructor that takes a date type as
-        // a parameter. That value is assigned to the field member birthDate. 
-        void new(date _date)
-        {
-            birthDate = _date;
-        }
-
-        // The CalculateAgeAsOfDate method references
-        // the birthDate field, is called by the Main method, and has an 
-        // optional parameter. In this example, the default value is the
-        // return value of a function. 
-        public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )  
-        {
-            return (_calcToDate - birthDate) / 365;
-        }
-
-        // The Main method calls the CalculateAgeAsOfDate method twice. 
-        static public void Main(Args _args)
-        {
-            Person mc = new Person(13\5\2010);   // birthDate is initialized.
-            // Optional parameter's default is used.
-            print( "Age in years: " + num2str(mc.CalculateAgeAsOfDate(),2,0,0,0));
-            // January 2, 2044  is the parameter value for _date.
-            print "Age in years: " + num2str(mc.CalculateAgeAsOfDate(2\1\2044),2,0,0,0);
-        }
+        birthDate = _date;
     }
 
-    // This is an example of how you cannot skip to a second optional parameter. 
-    // The first method has two optional parameters. The second method is a caller 
-    // of the first method. The caller wants to override only the _i3 default value, but the 
-    // compiler requires that all prior optional parameters also 
-    // be overridden in the call. 
-    public class Additions {
-        static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
-        {
-            return _i1 + _i2 + _i3;
-        }
+    // The CalculateAgeAsOfDate method references the birthDate field and has an
+    // optional parameter. In this example, the default value is the
+    // return value of a function.
+    public real CalculateAgeAsOfDate(date _calcToDate = DateTimeUtil::getToday(DateTimeUtil::getUserPreferredTimeZone()) )  
+    {
+        return (_calcToDate - birthDate) / 365;
     }
 
-    // The second method has a commented section showing the
-    // failed attempt to accept the default of the first optional 
-    // parameter (_i2) while trying to override the final optional 
-    // parameter (_i3).
-    static public void Main(Args _args)
-    { 
-        // No way to skip the first optional parameter (so it can default)
-        // while also specifying the value of the second optional parameter.
-        // The next statement does not compile.
-        //print Additions::AddThreeInts(1, , 99);
 
-        // Settle for overriding both optional parameters.
-        print Additions::AddThreeInts(1, 2, 99);
+// This code instantiates a Person and calls CalculateAgeAsOfDate.
+Person person = new Person(13\5\2010);   // birthDate is initialized.
+// Optional parameter's default is used.
+info("Age in years: " + num2str(person.CalculateAgeAsOfDate(),2,0,0,0));
+// Output is "9" in July 2019.
+
+// January 2, 2044  is the parameter value for _date.
+info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
+// Output is "34".
+}
+```
+
+This is an example of how you cannot skip to a second optional parameter. The first method has two optional parameters. The second method is a caller of the first method. The caller wants to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
+
+```X++
+public class Additions 
+{
+    static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
+    {
+        return _i1 + _i2 + _i3;
     }
+}
+
+// No way to skip the first optional parameter (so it can default)
+// while also specifying the value of the second optional parameter.
+// The next statement does not compile.
+//print Additions::AddThreeInts(1, , 99);
+
+// Settle for overriding both optional parameters.
+print Additions::AddThreeInts(1, 2, 99);
+```
 
 ## Accessor methods
 Class variables are private. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
