@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse charge VAT
-description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries and Saudi Arabia.
+description: This topic explains how to set up the reverse charge value-added tax (VAT) for European countries, Saudi Arabia and Singapore.
 author: epodkolz 
 manager: AnnBe
 ms.date: 04/05/2017
@@ -20,7 +20,7 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
 # ms.search.industry: 
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia and European countries.
+This topic describes a generic approach for setting up reverse charge value-added tax (VAT) for Saudi Arabia, Singapore and European countries.
 
 Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) on their VAT statement.
 
