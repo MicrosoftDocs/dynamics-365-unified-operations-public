@@ -34,7 +34,7 @@ This topic explains how to set up sales tax codes in Dynamics 365 for Finance an
 
 This task uses the USMF demo company.
 
-1. Go to **navigation pane > Tax > Indirect taxes > Sales tax > Sales tax codes**.
+1. Go to **Navigation pane > Tax > Indirect taxes > Sales tax > Sales tax codes**.
 2. Select **New**.
 3. In the **Sales tax code** field, type a value.
 4. In the **Name** field, type a value.
