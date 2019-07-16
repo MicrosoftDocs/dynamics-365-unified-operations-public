@@ -86,7 +86,14 @@ public static void TestLastName()
 ```
 
 ## Constructors
-To create an instance of a class, you must instantiate it by using a *constructor*. The default constructor is the **new** method with no parameters. The following examples defines the default constructor of the **Point** class.
+
+To create an instance of a class, you must instantiate it by using a *constructor*. 
+
++ You can define only one **new** method (constructor) in a class. 
++ If you do not define a constructor, a default constructor with no parameters is created automatically by the compiler. 
++ You can simulate a default constructor by assigning default values to the parameters in the **new** method.
+
+The following examples defines a parameterless constructor in the **Point** class.
 
 ```X++
 class Point
@@ -106,20 +113,50 @@ As a best practice, you should make the **new** method protected. Instead, if in
 
 ### Creating other objects in a constructor
 
-A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds.
+A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds. In this case, the **Point** class has a constructor that has two **real** parameters.
 
 ```X++
+
+class Point
+{
+    // Instance variables that are public. In practice, you would probably make this protected or private
+    // and create accessor methods.
+    public real x = 0.0;
+    public real y = 0.0;
+
+    // Constructor to initialize to a specific or default value
+    void new(real _x = 10, real _y = 10)
+    {
+        x = _x;
+        y = _y;
+    }
+}
+
 class Rectangle
 {
-    Point lowerLeft;
-    Point upperRight;
+    public Point lowerLeft;
+    public Point upperRight;
 
-    void new(real _topLeftX, real _topLeftY, real _bottomRightX, real _bottomRightY)
+    void new(real _topLeftX = 0.0, real _topLeftY = 0.0, real _bottomRightX = 1.0, real _bottomRightY = 1.0)
     {
         lowerLeft  = new Point(_topLeftX, _topLeftY);
         upperRight = new Point(_bottomRightX, _bottomRightY);
     }
+
 }
+
+// This code creates two instances of the Rectangle class.
+Rectangle defaultRectangle = new Rectangle();
+info(any2Str(defaultRectangle.lowerLeft.x));
+info(any2Str(defaultRectangle.lowerLeft.y));
+// Output is "0.0" and "0.0".
+
+Rectangle customRectangle = new Rectangle(1.0, 1.0, 2.0, 2.0);
+info(any2Str(customRectangle.lowerLeft.x));
+info(any2Str(customRectangle.lowerLeft.y));
+// Output is "1.0" and "1.0".
+
+
 ```
 
 ## Creating an instance of an object
