@@ -86,13 +86,21 @@ public static void TestLastName()
 ```
 
 ## Constructors
-To create an instance of a class, you must instantiate it by using a *constructor*. The default constructor is the **new** method.
+To create an instance of a class, you must instantiate it by using a *constructor*. The default constructor is the **new** method with no parameters. The following examples defines the default constructor of the **Point** class.
 
-    // Declare a variable to refer to a Point object
-    Point myPoint; 
+```X++
+class Point
+{
 
-    // Create an instance of a Point object
-    myPoint = new Point(); 
+    // Instance variables that are public. In practice, you would probably make this protected or private 
+    // and create accessor methods.
+    public real x = 0.0;
+    public real y = 0.0;
+
+    void new() {
+    }
+}
+```
 
 As a best practice, you should make the **new** method protected. Instead, if initialization isn't required, you should use a **static construct** method as the public constructor for the class. Otherwise, you should use a **static new** method.
 
@@ -100,17 +108,37 @@ As a best practice, you should make the **new** method protected. Instead, if in
 
 A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds.
 
-    class Rectangle1
-    {
-        Point lowerLeft;
-        Point upperRight;
+```X++
+class Rectangle
+{
+    Point lowerLeft;
+    Point upperRight;
 
-        void new(real _topLeftX, real _topLeftY, real _bottomRightX, real _bottomRightY)
-        {
-            lowerLeft  = new Point(_topLeftX, _topLeftY);
-            upperRight = new Point(_bottomRightX, _bottomRightY);
-        }
+    void new(real _topLeftX, real _topLeftY, real _bottomRightX, real _bottomRightY)
+    {
+        lowerLeft  = new Point(_topLeftX, _topLeftY);
+        upperRight = new Point(_bottomRightX, _bottomRightY);
     }
+}
+```
+
+## Creating an instance of an object
+
+The constructor, **new**, returns a new instance of the class. The following code example creates two instances of the Point class.
+
+```X++
+// Declare a variable to refer to a Point instance.
+Point myPoint;
+
+// Create an instance of the Point class.
+myPoint = new Point();
+
+// Declare and instantiate a Point instance.
+Point ap = new Point();
+info(any2Str(ap.x));
+info(any2Str(ap.y));
+// Output is "0.0" and "0.0".
+```
 
 ## Destructors
 A *destructor* is used to explicitly destroy a class object. Objects are automatically destroyed when there are no references to them. However, you can destroy objects explicitly in the following ways:
