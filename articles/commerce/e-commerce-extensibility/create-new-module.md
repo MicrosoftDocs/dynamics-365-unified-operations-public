@@ -46,7 +46,7 @@ To view the module rendering locally in a browser:
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
-1. Launch the following url in a browser to see the module render in a development environment.  Notice the module name in the query string parameter "type=MODULE_NAME":
+1. Launch the following url in a browser to see the module render in a development environment.  Notice the module name in the query string parameter `type=MODULE_NAME`:
     * http://localhost:4000/modules?type=productFeature
 
 ![Module Preview](media/create-new-module.png)
