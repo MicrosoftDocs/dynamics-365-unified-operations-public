@@ -53,11 +53,11 @@ You can also set up a reason code to help explain why an item was returned. For 
 
 [Disposition codes and return reason codes](disposition-and-return-reason-codes.md)
 
-[Disposition codes (form)](https://technet.microsoft.com/en-us/library/hh597113\(v=ax.60\))
+[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
-[Auto charges (form)](https://technet.microsoft.com/en-us/library/aa582856\(v=ax.60\))
+[Auto charges (form)](https://technet.microsoft.com/library/aa582856\(v=ax.60\))
 
-[External codes (form)](https://technet.microsoft.com/en-us/library/aa583814\(v=ax.60\))
+[External codes (form)](https://technet.microsoft.com/library/aa583814\(v=ax.60\))
 
   
 

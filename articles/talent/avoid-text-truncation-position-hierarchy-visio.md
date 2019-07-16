@@ -47,7 +47,7 @@ This behavior is by design.
 
 **Resolution**
 
-Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Talent and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Talent: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Talent and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Talent: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Follow these steps to export to Visio.
 

@@ -130,4 +130,4 @@ Once the upgraded code in Releases\\\<version number\> compiles sucessfully and 
 
 [![Merge release branch](./media/MergeReleasesBranch.PNG)](./media/MergeReleasesBranch.PNG)
 
-This will open the [Source Control Merge Wizard](https://www.visualstudio.com/en-us/docs/tfvc/merge-folders-files#sourcecontrolwizard) which will guide you through merging the Releases\\\<version number\> branch back into Trunk\\Main. 
+This will open the [Source Control Merge Wizard](https://www.visualstudio.com/docs/tfvc/merge-folders-files#sourcecontrolwizard) which will guide you through merging the Releases\\\<version number\> branch back into Trunk\\Main. 

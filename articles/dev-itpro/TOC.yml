@@ -138,6 +138,8 @@
         href: dev-ref/xpp-classes-methods.md
       - name: X++ data selection and manipulation
         href: dev-ref/xpp-data-query.md
+      - name: Query using the SysDA API
+        href: dev-ref/sysda.md
       - name: X++ macros
         href: dev-ref/xpp-macros.md
       - name: X++ attribute classes

@@ -47,10 +47,10 @@ In Attract, there are multiple fields that are option sets within the Common Dat
 ## Changes in Onboarding
 
 ### Private preview for Onboard teams
-You can now easily share and collaborate on templates across your entire organization. For more information, see [Share best practices across your organization using Onboard Teams](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+You can now easily share and collaborate on templates across your entire organization. For more information, see [Share best practices across your organization using Onboard Teams](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### Private preview for assignee placeholders
-You can enrich your templates by assigning activities to roles instead of individuals. Roles are then assigned to individuals at the time of guide creation. For more information, see [Streamline guide administration by assigning activities to roles](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+You can enrich your templates by assigning activities to roles instead of individuals. Roles are then assigned to individuals at the time of guide creation. For more information, see [Streamline guide administration by assigning activities to roles](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## Changes in Core HR
 **Build 8.1.2178**
@@ -75,7 +75,7 @@ With this change, when requesting changes to existing positions, the payroll fie
 Other minor bug fixes are included with this release.
 
 ### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## Coming soon
 
@@ -83,4 +83,4 @@ Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to 
 In many organizations, compensation and benefits managers can only access certain compensation records, such as records for executives or regional-based employees. With this change, you can manage and maintain the compensation plans for different employee populations in the organization. Fixed and variable plans can be assigned security roles, which will determine the access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the given access will be able to process compensation for those employees.
 
 ###  Platform update 24
-For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

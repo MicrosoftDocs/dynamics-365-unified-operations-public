@@ -59,7 +59,7 @@ Use this procedure to deploy a demo environment on Azure using LCS.
 
 
 ~~~
-**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/en-us/pricing/).
+**Note:** The size of the VM and the number of instances affect the cost of your subscription. For more information, see [Azure pricing](https://azure.microsoft.com/pricing/).
 ~~~
 
 7. Click **Advanced settings** to add customizations to your deployment. For the demo environment, we recommend that you keep the default settings.
