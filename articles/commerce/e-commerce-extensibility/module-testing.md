@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Testing a module locally
+title: Testing a module
 description: During development of a module, the module can be previewed and debugged in your local web browser.
 author: SamJarawan
 manager: JeffBl
