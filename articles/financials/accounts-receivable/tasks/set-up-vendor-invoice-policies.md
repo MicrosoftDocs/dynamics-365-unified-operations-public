@@ -38,7 +38,7 @@ This topic explains how to set up vendor invoice policies in Dynamics 365 for Fi
 
 
 ## Prepare to create vendor invoice policies
-1. Go to **navigation pane > Modules > Accounts payable > Setup > Accounts payable parameters**.
+1. Go to **Navigation pane > Modules > Accounts payable > Setup > Accounts payable parameters**.
 2. Select the **Invoice validation** tab.
 3. Select or clear the **Automatically update invoice header** status check box.
 4. Select **OK**.
@@ -50,7 +50,7 @@ This topic explains how to set up vendor invoice policies in Dynamics 365 for Fi
 10. Close the page to return to the home page.
 
 ## Create policy rule types for vendor invoices
-1. Go to **navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.
+1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.
 2. Select **New**.
 3. In the **Rule name** and **Description** fields, type values.
 4. In the **Query name** field, select the drop-down button to open the lookup, then selec the desired record.
@@ -58,7 +58,7 @@ This topic explains how to set up vendor invoice policies in Dynamics 365 for Fi
 6. Close the page to return to the home page.
 
 ## Define a vendor invoice policy
-1. Go to **navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
+1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
 2. Select **New**.
 3. In the **Name** and **Description** fields, type values.
 4. Expand or collapse the **Policy organizations** section.
