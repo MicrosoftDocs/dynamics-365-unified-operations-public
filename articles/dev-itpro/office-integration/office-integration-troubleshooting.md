@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/29/2019
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -242,9 +242,9 @@ The following URLs are accessed for authentication.
 
 **Solution:** The user needs to sign out and sign back in. We will improve this behavior in the future by automatically signing the user out to enable faster sign in.
 
-### Issue: When trying to use a document template with Open in Excel a "Record for id GUID not found" error is shown
+### Issue: When trying to use a document template with Open in Excel a "Record for id GUID not found" error displays
 
-**Issue:** This "Record for id GUID not found" error can show up when copying a database from one environment to another. 
+**Issue:** The "Record for id GUID not found" error can display when copying a database from one environment to another. 
 
 **Explanation:** Copying the database is problematic for document templates, record attachments, and other files that are stored in Azure blob storage. When the database is copied from one environment to another, the files are not copied along with the records, so the files that the application tries to access are not found. 
 
