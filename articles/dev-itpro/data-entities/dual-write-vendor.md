@@ -72,11 +72,11 @@ Businesses using Account entity to store vendor information can continue to use 
 
 Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to F&O integration. 
 
-![](media\dual-write-vendors-1.png)
+![](media/dual-write-vendors-1.png)
 
-![](media\dual-write-vendors-2.png)
+![](media/dual-write-vendors-2.png)
 
-![](media\dual-write-vendors-3.png)
+![](media/dual-write-vendors-3.png)
 
 ### Contacts
 
@@ -86,10 +86,10 @@ It synchronized all primary, secondary and tertiary contact information of both 
 
 Synchronize vendor group information between F&O and CE.
 
-![](dual-write-vendor-groups.png)
+![](media/dual-write-vendor-groups.png)
 
 ### Vendor Payment Method
 
 Synchronize vendor payment method information between F&O and CE.
 
-![](dual-write-vendor-payment-method.png)
+![](media/dual-write-vendor-payment-method.png)
