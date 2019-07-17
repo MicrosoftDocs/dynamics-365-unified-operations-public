@@ -165,7 +165,7 @@ to D365 application suite.
 
 "Customer" is a well-defined concept in both F&O and CDS. So, integration of customer data involves harmonizing the customer concept between F&O and CDS applications. Here is how the customer data flow looks like:
 
-![customer data flow](media/customer-data-flow.png)
+![customer data flow](media/dual-write-customer-data-flow.png)
 
 Customers can be broadly classified into 2 types namely commercial/organizational customers and consumers/end users. These 2 types of customers are stored and handled differently in F&O and CDS.
 
@@ -279,11 +279,11 @@ Vendors refers to a supplier organization or a sole proprietor who are part of s
 
 For businesses who use CE for vendor mastering and want to isolate vendor information from customers, then they can use the new vendor design that's been introduced.
 
-![](dual-write-vendor-data-flow.png)
+![](media/dual-write-vendor-data-flow.png)
 
 For businesses who use CE for vendor mastering and want to continue to use "Account" entity for storing vendor information, they can use the extended vendor design that's been introduced. In this design, extended vendor information like vendor group, vendor post profile etc. will be stored in the "vendor detail".
 
-![](dual-write-vendor-detail.png)
+![](media/dual-write-vendor-detail.png)
 
 Vendor contact information is similar to the customer contact information. Behind the scenes the contact person information is stored and retrieved from same entities.
 
