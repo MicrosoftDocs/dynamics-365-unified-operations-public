@@ -289,8 +289,9 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 | DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
 
-
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
+
+For enabling flights in a production environment, a support case must be logged with Microsoft.
 
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
