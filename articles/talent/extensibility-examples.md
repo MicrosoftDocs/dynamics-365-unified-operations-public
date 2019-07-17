@@ -5,7 +5,7 @@ title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 05/01/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -59,15 +59,15 @@ When a candidate submits a form, Microsoft Flow captures the form submission, re
 
 To download the **Flow – Form Connect** template and Custom Entity Structure, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
-## Initiate and Extract Parameters Passed to Powerapps
+## Initiate and Extract Parameters Passed to PowerApps
 
-The **Initiate and Extract Parameters Passed to Powerapps** template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as **Job Application**, **Candidate ID**, and **JobID**.
+The **Initiate and Extract Parameters Passed to PowerApps** template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as **Job Application**, **Candidate ID**, and **JobID**.
 
 This template can be used to retrieve a candidate assessment form, so that a hiring manager can view the assessment that a candidate filled in.
 
 Apps that are created by using PowerApps can be embedded into the job template in Attract.
 
-To download the **Initiate and Extract Parameters Passed to Powerapps** template and Custom Entity Structure, go to [Initiate and Extract Parameters Passed to Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
+To download the **Initiate and Extract Parameters Passed to PowerApps** template and Custom Entity Structure, go to [Initiate and Extract Parameters Passed to PowerApps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
 
 ## Integration with Office 365
 
@@ -75,7 +75,7 @@ The **Integration with Office 365** app can be used to extract team information 
 
 This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
 
-To download the **Integration with Office 365** app and Custome Entity Structure, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
+To download the **Integration with Office 365** app and Customer Entity Structure, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
 ## Flow – Email Notification
 
@@ -106,12 +106,11 @@ This template can be extended so that it can be used for any scenario that invol
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
 ## Referral App
+The Referral App can be used to add candidates to a shared talent pool. The referrer can enter Firstname, Lastname, Email, and Linkedln URL when submitting a candidate. The candidate source metadata is then populated with the referrer’s information.
 
-This App can be used to feed candidates into a shared talent pool. Referrer can enter Fistname, Lastname, Email, linkedln URL when submitting candidate. The candidate source metadata is populated with the referrer’s information. 
+The app can be embedded into Employee self-service (ESS) for submitting referrals or can be used as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
-This App can be embedded into ESS for submitting referrals or can use it as hyperlink in Coroporate Portal and run App as standalone App.
-
-To download **Referral App" , go to  [                  ] ( ) on the Microsoft Download Center. You can import this app and can customize it to add additional functionality 
+To download **Referral App** , go to [ ] ( ) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 
