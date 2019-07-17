@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Near-real time data integration between Finance and Operations and Common Data Service
+title: Vendor data flow
 description: 
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -30,11 +30,13 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
+## Integrated Vendor Master
 
+*Vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process and supplies goods for the business. *Vendor* is an established concept in Finance and Operations. But in Customer Engagement, the *Vendor* concept does not exist. Some businesses overload the *Account* entity to store both customer and vendor information. Other uses a custom *Vendor* concept. Common Data Service (CDS) integration supports both these designs. You can choose to enable either of the designs based on your business scenario. Integrating the vendor data between Finance and Operations and Customer Engagement gives you the capability to multi-master vendor data. Regardless of where the vendor data originates, it is integrated behind the scenes across application boundaries and infrastructure differences. 
 
 ### Vendor data flow
 
-For businesses who use CE for vendor mastering and want to isolate vendor information from customers, then they can use the new vendor design that's been introduced.
+If you want to use Customer Engagement for vendor-mastering and want to isolate vendor information from customers, then they can use the new vendor design that's been introduced.
 
 ![](media/dual-write-vendor-data-flow.png)
 
