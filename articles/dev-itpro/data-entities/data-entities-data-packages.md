@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -292,17 +292,25 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
-- INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
-- After making the above change, perform an IISRESET on all AOS's
+- After making the above change, perform an IISReset on all AOS's. 
 
-The parameter descriptions are below.
- - <Flight name> is the name of the flight that must be enabled or disabled.
- - Enabled (1)
+```
+INSERT INTO SYSFLIGHTING
+([FLIGHTNAME]
+,[ENABLED]
+,[FLIGHTSERVICEID]
+,[PARTITION]
+,[RECID]
+,[RECVERSION]
+)
+VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+```
+
  - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
  - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value
-    - RecVersion = 1
+ - RecVersion = 1
 
 ## Additional resources
 - [Data entities](data-entities.md)
