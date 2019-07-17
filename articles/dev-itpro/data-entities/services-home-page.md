@@ -5,7 +5,7 @@ title: Service endpoints
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/24/2017
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -83,11 +83,11 @@ And below is the illustration describes how authorization works for Service to s
 > [!NOTE]
 > These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers.
 
-**Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
+**Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
 
-Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. The steps are expalined in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide). For Finance and Operation specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide). For Finance and Operation specific configuration in this process, the following additional information must be used in context.
 
-Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be greyed out. In that case, make sure you look for the full name as shown above.
+Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:
 
     - Access Dynamics AX Custom Service
@@ -95,7 +95,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
     - Access Dynamics AX online as organization users
 
  > [!IMPORTANT]
- > Make sure that you copy the key, because you won't see it again, and you will require this secret key to complete your OAuth authentication and receive an Azure AD token.
+ > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive an Azure AD token.
 
 ### Register your external application in Finance and Operations
 
@@ -134,7 +134,7 @@ UserCredential userCred = new UserCredential (username, password);
 authenticationContext.AcquireToken("https://axdynamics1001aos.cloud.dynamics.com", clientId, userCred);
 ```
 
-## REST Metadata Service
+## REST metadata service
 The REST metadata service is a read-only service. In other words, users can make only GET requests. The main purpose of this endpoint is to provide metadata information for elements. It is an OData implementation.
 
 This endpoint is hosted at `http://\[baseURI\]/Metadata`.
