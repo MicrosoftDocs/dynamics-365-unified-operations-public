@@ -27,6 +27,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 # Consume business events by using Azure Service Bus
+[!include[banner](../../includes/banner.md)]
 
 This topic explains how to configure a Microsoft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
 
