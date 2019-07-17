@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new module
-description: This topic will cover the steps needed to create a new module in Dynamics 365 for Commerce.
+description: This topic describes the steps needed to create a new module in Dynamics 365 for Commerce.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
