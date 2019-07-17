@@ -292,6 +292,8 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
+For enabling flights in production environment, a support case must be logged with Microsoft.
+
 - INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
