@@ -42,7 +42,7 @@ For CDS integration, because BU and Company are not equivalent constructs, we ca
 + A separate "Owner team" is created by the same name and also associated with that business unit. 
 + By default, any record created in Finance and Operations and dual-written to CDS will have its owner set to the DW "owner team", which is linked to the associated BU. 
 
-![company 1](media/dual-write-company-1.png)
+![Data setup in CDS](media/dual-write-company-1.png)
 
 The impact of this configuration is any Finance and Operations record related to the USMF company will be owned by a team linked to the USMF BU in CDS. Therefore, any user who has access to that Business Unit through a security role, set to BU-level visibility can now see those records. An example of how teams can be used to provide access to these records correctly is shown below. 
 
@@ -51,7 +51,7 @@ The impact of this configuration is any Finance and Operations record related t
 + The USMF Sales team is linked to the USMF BU mentioned earlier.  
 + This means members of the "USMF Sales" team can see any account owned by the "USMF DW" user, which would have come from the USMF company in Finance and Operations. 
 
-![company 1](media/dual-write-company-2.png)
+![How teams can be used](media/dual-write-company-2.png)
 
 As shown in the diagram, this one-to-one mapping between Business Unit, Company, and Team is just a starting point. In this example, a new "Europe BU" is manually created in CDS as the parent for both DEMF and ESMF. This new root BU is unrelated to dual-write, but can be used to give members of the "EUR Sales" team access to both DEMF and ESMF account data by setting the data visibility to "Parent/Child BU" in the associated security role. 
 
