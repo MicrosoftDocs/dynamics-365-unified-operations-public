@@ -427,21 +427,21 @@
         - name: Synchronous, bidirectional integration
           items: 
           - name: Integration with Customer Engagement
-          - href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
           - name: Integration with Organization
-          - href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
           - name: Integration with Company
-          - href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
           - name: Integration with Customer
-          - href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
           - name: Integration with Vendor
-          - href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
             - name: Prospect to cash
             items:
               - name: Configure a prospect to cash scenario
-              - href: ../supply-chain/sales-marketing/prospect-to-cash.md
+                href: ../supply-chain/sales-marketing/prospect-to-cash.md
               - name: Synchronize accounts directly from Sales to customers in Finance and Operations
                 href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
               - name: Synchronize products directly from Finance and Operations to products in Sales
