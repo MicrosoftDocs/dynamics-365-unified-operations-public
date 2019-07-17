@@ -93,7 +93,7 @@ Attract posts jobs to LinkedIn as Limited Listings. If you want to use Premium J
 
 #### Frequency of batch processing on LinkedIn
 
-LinkedIn processes job posts in a batch through Attract once per day. Therefore, it can take up to 24 hours for jobs to appear on LinkedIn after they are posted through Attract. If you need jobs to appear sooner on LinkedIn, or if you need any additional flexibility, you can use the Recruiter System Connect application programming interface (API) from LinkedIn. For more information, see [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect).
+LinkedIn processes job posts in a batch through Attract once per day. Therefore, it can take up to 48 hours for jobs to appear on LinkedIn after they are posted through Attract. If you need jobs to appear sooner on LinkedIn, or if you need any additional flexibility, you can use the Recruiter System Connect application programming interface (API) from LinkedIn. For more information, see [Recruiter System Connect](https://docs.microsoft.com/linkedin/talent/recruiter-system-connect).
 
 #### Table of options for job posting to LinkedIn
 

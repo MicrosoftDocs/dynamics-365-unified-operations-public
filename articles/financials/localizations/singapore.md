@@ -5,7 +5,7 @@ title: Singapore
 description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Singapore. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/03/2018
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,6 +35,7 @@ ms.dyn365.ops.version: July 2017 update
 This topic provides links to documentation resources for Singapore. 
 
 - [Generate the GST-05 report](apac-sgp-generate-gst-05-report.md)
+- [Set up reverse charge for customer accounting and GST on Imported Service](emea-reverse-charge.md)
 
 
 ## Additional resources

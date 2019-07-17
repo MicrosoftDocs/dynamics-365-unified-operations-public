@@ -56,7 +56,7 @@ For information about other ways to post jobs to LinkedIn, see [LinkedIn FAQ](./
 
 Before you can post jobs from Attract to LinkedIn, you need a [LinkedIn Company ID](https://aka.ms/findID). Your LinkedIn Company ID is a string of numbers that uniquely identifies your company in LinkedIn. For more information, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://aka.ms/findID).
 
-Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed once per day. Therefore, it can take up to 24 hours for your jobs to be posted to the site.
+Attract sends a feed of your job postings to LinkedIn, and LinkedIn checks for the feed approximately once per day. It can take up to 48 hours for your jobs to be posted to the site.
 
 Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn doesn't have a test environment for posting jobs. Therefore, make sure that you don't accidentally post any test jobs. 
 
