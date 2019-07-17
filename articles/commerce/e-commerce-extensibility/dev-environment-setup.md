@@ -4,7 +4,7 @@
 title: Set up a development environment
 description: This topic demonstrates how to set up a development environment for Dynamics 365 for Commerce. 
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # Set up a development environment
 
-Setting up a development environment for Dynamics 365 for Commerce involves installing three freely available tools--Visual Studio Code, Node.js and Yarn-and installing the Dynamics 365 e-Commerce SDK. The order in which you install the tools is not important.
+Setting up a development environment for Dynamics 365 for Commerce involves installing three freely available tools--Visual Studio Code, Node.js, and Yarn--and installing the Dynamics 365 e-Commerce SDK. The order in which you install the tools is not important.
 
 ## Instal Visual Studio Code
 
