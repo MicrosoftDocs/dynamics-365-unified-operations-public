@@ -32,48 +32,39 @@ ms.search.validFrom: 2019-07-15
 
 ## Organization hierarchy on Common Data Service
 
-F&O being a financial system, considers organization to be a core
-concept and the system setup starts with configuring an organization
-hierarchy. This allows business financials and operations can be tracked
-at the organization level as well as any level within the organization
-hierarchy. CDS does not contain organization hierarchy concept but has
-few loose concepts like total sales revenue. As part of CDS integration,
-we are introducing organization hierarchy data structure in CDS.
+Finance and Operations, being a financial system, considers *Organization* to be a core concept and the system setup starts with configuring an organization hierarchy. This allows business financials and operations to be tracked at the organization level as well as any level within the organization hierarchy. Common Data Service (CDS) does not contain the organization hierarchy concept but it has a few loose concepts like total sales revenue. As part of CDS integration, the organization hierarchy data structure is added to CDS.
 
-### Data flow
+## Data flow
 
-If a business eco-system is made up of F&O and CDS, it will continue to
-have organization hierarchy built on F&O but exposed in CDS for
-information and extensibility. So, the following organization hierarchy
-information is exposed in CDS as a one-way data flowing from F&O to CDS.
+If a business eco-system is made up of Finance and Operations and CDS, it will continue to have organization hierarchy built on Finance and Operations but exposed in CDS for information and extensibility. The following organization hierarchy information is exposed in CDS as a one-way data flowing from Finance and Operations to CDS.
 
 ![architecture image](media/dual-write-data-flow.png)
 
-### Templates
+## Templates
 
-Following organization hierarchy entity maps are available to synchronize data one-way from F&O to CDS.
+Organization hierarchy entity maps are available to synchronize data one-way from Finance and Operations to CDS.
 
-#### Internal Organization Hierarchy Purpose
+## Internal Organization Hierarchy Purpose
 
-One-way synchronization of internal organization hierarchy purpose information from F&O to CE.
+Provides one-way synchronization of internal organization hierarchy purpose information from Finance and Operations to Customer Engagement.
 
 ![architecture image](media/dual-write-purpose.png)
 
-#### Internal Organization Hierarchy Type
+## Internal Organization Hierarchy Type
 
-One-way synchronization of internal organization hierarchy type information from F&O to CE.
+Provides one-way synchronization of internal organization hierarchy type information from Finance and Operations to Customer Engagement.
 
 ![architecture image](media/dual-write-type.png)
 
-#### Internal Organization Hierarchy
+## Internal Organization Hierarchy
 
-One-way synchronization of internal organization hierarchy information from F&O to CE.
+Provides one-way synchronization of internal organization hierarchy information from Finance and Operations to Customer Engagement.
 
 ![architecture image](media/dual-write-organization.png)
 
-#### Internal Organization
+## Internal Organization
 
-Internal organization information in CDS comes from 2 entities of F&O namely "operating unit" and "legal entities".
+Internal organization information in CDS comes from 2 entities of Finance and Operations, **operating unit** and **legal entities**.
 
 ![architecture image](media/dual-write-operating-unit.png)
 
@@ -81,7 +72,7 @@ Internal organization information in CDS comes from 2 entities of F&O namely "op
 
 #### Company
 
-Bi-directional synchronization of legal entity (aka company) information between F&O and CE.
+Provies bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
 
 ![architecture image](media/dual-write-company.png)
 
