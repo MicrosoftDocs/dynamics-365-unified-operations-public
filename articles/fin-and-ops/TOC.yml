@@ -426,15 +426,15 @@
           href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
         - name: Synchronous, bidirectional integration
           items: 
-          - name: Integration with Customer Engagement
+          - name: Near-real time data integration
             href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
-          - name: Integration with Organization
+          - name: Organization hierarchy on Common Data Service
             href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
-          - name: Integration with Company
+          - name: Company concept in Common Data Services
             href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
-          - name: Integration with Customer
+          - name: Integrated Customer Master
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
-          - name: Integration with Vendor
+          - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
