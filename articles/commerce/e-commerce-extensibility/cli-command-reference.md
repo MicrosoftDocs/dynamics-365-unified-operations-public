@@ -47,7 +47,7 @@ Usage:
 ``` bash
 yarn msdyn365 add-data-action <action-name>
 ```
-This will add an action to the root/src/actions folder. 
+This adds an action to the root/src/actions folder. 
 
 Example:
 
@@ -62,7 +62,7 @@ Usage:
 ``` bash
 yarn msdyn365 add-module <module-name>
 ```
-This will add a module to the root/src/modules folder. 
+This adds a module to the root/src/modules folder. 
 
 Example:
 
@@ -77,7 +77,7 @@ Usage:
 ``` bash
 yarn d365 clone <core-module-name> <new-module-name>
 ```
-This will create a copy of a starter kit module and add the source code to the root/src/modules folder. 
+This creates a copy of a starter kit module and add the source code to the root/src/modules folder. 
 
 Example:
 
@@ -92,9 +92,9 @@ Usage:
 ``` bash
 yarn msdyn365 pack
 ```
-This command will create a package of the local site configurations (modules, data actions, themes, ...) which will be used to upload via LCS to the Node server.  This command should be run from the root directory of your local SDK files.  
+This command creates a package of the local site configurations (modules, data actions, themes, etc.) which will be used to upload via Lifecycle Services (LCS) to the Node server. This command should be run from the root directory of your local SDK files.  
 
-The output will be a zip file in directory it was ran with a file name build using the name and version found in your SDK package.json file in the format Name-Version.zip example: `@msdyn365-commerce-partners-fabrikam-1.2.73.zip`.
+The output will be a zip file in the directory it was run, with a file name build using the name and version found in your SDK package.json file in the format Name-Version.zip. For example: `@msdyn365-commerce-partners-fabrikam-1.2.73.zip`.
 
 Example:
 
@@ -109,8 +109,7 @@ Usage:
 yarn msdyn365 print-package-versions 
 ```
 
-Prints the packageVersions.json file generated at build time to the console.
-The packageVersions.json file includes information on Dynamics 365 Commerce and Dynamics 365 Commerce Module packages, their versions and how the versions in use were determined.
+This command prints the packageVersions.json file generated at build time to the console. The packageVersions.json file includes information on Dynamics 365 for Commerce and Dynamics 365 for Commerce Module packages, their versions, and how the versions in use were determined.
 
 Example:
 
@@ -126,9 +125,9 @@ Usage:
 yarn msdyn365 validate <path/to/directory>
 ```
 
-Runs a series of validation checks on your package and any modules in the package. Specifically, validate ensures that each module has a default export, contains the necessary files and ensures that your package-level initalization.json is properly registering each of the modules in the package.
+This runs a series of validation checks on your package and any modules in the package. Specifically, the validate command ensures that each module has a default export, contains the necessary files, and ensures that your package-level initalization.json is properly registering each of the modules in the package.
 
-The path will be the complete path to the package folder containing the package.json file
+The path will be the complete path to the package folder containing the package.json file.
 
 Example:
 
