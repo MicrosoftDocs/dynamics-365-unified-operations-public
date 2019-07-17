@@ -5,7 +5,7 @@ title: Select analytical workspaces from PowerBI.com
 description: This topic explains how to select a report that is hosted on PowerBI.com and use it for an application workspace.
 author: tjvass
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
