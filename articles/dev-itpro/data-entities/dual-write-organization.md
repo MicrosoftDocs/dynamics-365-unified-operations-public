@@ -70,7 +70,7 @@ Internal organization information in CDS comes from 2 entities of Finance and Op
 
 ![architecture image](media/dual-write-legal-entities.png)
 
-#### Company
+## Company
 
 Provies bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
 
