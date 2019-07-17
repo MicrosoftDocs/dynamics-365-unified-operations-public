@@ -437,7 +437,7 @@
           - name: Integration with Vendor
           - href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
-          items
+          items:
             - name: Configure a prospect to cash scenario
               href: ../supply-chain/sales-marketing/prospect-to-cash.md
             items:
