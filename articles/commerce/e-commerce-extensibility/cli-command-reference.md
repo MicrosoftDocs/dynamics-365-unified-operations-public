@@ -4,7 +4,7 @@
 title: CLI command reference
 description: 
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -30,14 +30,14 @@ ms.dyn365.ops.version:
 ---
 # CLI command reference
 
-This topic covers the [CLI](https://en.wikipedia.org/wiki/Command-line_interface) commands made available as part of the Dynamics Commerce E-Commerce SDK. 
+This topic covers the [CLI](https://en.wikipedia.org/wiki/Command-line_interface) commands made available as part of the Dynamics 365 for Commerce e-Commerce SDK. 
 
-All these commands will need to be run with yarn. They will have the following structure:
+All of the commands must be run with Yarn, and will have the following structure:
 
 ```bash
 yarn msdyn365 {command} {command-arguments}
 ```
-For more information on each command refer to this document or use the command `yarn  --help` or `yarn msdyn365 {command} --help`
+For more information on each command, refer to this document or use the command `yarn  --help` or `yarn msdyn365 {command} --help`.
 
 
 ## add-data-action
