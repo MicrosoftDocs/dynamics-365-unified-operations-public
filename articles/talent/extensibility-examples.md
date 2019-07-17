@@ -105,21 +105,13 @@ This template can be extended so that it can be used for any scenario that invol
 
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
-## Admin console to manage talent pools
+## Referral App
 
-When you enable integration with LinkedIn, Attract automatically createas a LinkedIn talent pool. When a recruiter exchanges InMail with a recruit through LinkedIn, Attract creates a profile for the recruit, and the recruit becomes a member of the LinkedIn talent pool. This PowerApps app is useful for reorganizing candidates in talent pools based on skill.
+This App can be used to feed candidates into a shared talent pool. Referrer can enter Fistname, Lastname, Email, linkedln URL when submitting candidate. The candidate source metadata is populated with the referrer’s information. 
 
-Run this PowerApps app as an admin console to perform the following tasks:
+This App can be embedded into ESS for submitting referrals or can use it as hyperlink in Coroporate Portal and run App as standalone App.
 
-- List candidates in a talent pool
-- Add and remove candidates from a talent pool
-- Move candidates from one talent pool to another
-- Determine whether candidates are already part of a talent pool before moving them
-- Check the skills of candidates before moving them to other talent pools
-
-This PowerApps app uses many-to-many relationships, so you can use it as a template for other scenarios where you need to extract records that have many-to-many relationships.
-
-To download the **Admin console to manage talent pools** template,  go to [Admin console to manage talent pools](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) on the Microsoft Download Center.
+To download **Referral App" , go to  [                  ] ( ) on the Microsoft Download Center. You can import this app and can customize it to add additional functionality 
 
 ## Additional resources
 
