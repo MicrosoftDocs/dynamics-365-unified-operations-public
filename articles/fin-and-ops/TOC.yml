@@ -431,11 +431,11 @@
           - name: Integration with Organization
             href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
           - name: Integration with Company
-            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integration with Customer
-            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
           - name: Integration with Vendor
-            href: ../dev-itpro/data-entities/dual-write.md?toc=/fin-and-ops/toc.json
+            href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
           - name: Prospect to cash
