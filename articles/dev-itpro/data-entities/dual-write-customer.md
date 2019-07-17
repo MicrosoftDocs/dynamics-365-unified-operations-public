@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Near-real time data integration between Finance and Operations and Common Data Service
+title: Integrated Customer Master
 description: 
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -30,27 +30,17 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-
 ## Integrated Customer Master
 
-When a business eco-system is using D365 suite of applications, it's
-natural that customer records get mastered in more than one application.
-Say for example, SMB sales motion can bring in commercial customer
-records through D365 for Sales application and ecommerce or retail sales
-can bring in customer records through D365 for Finance and Operations
-application. Irrespective of where the customer record is originating,
-it gets integrated behind the scenes beyond application boundaries and
-infrastructure differences. Integrated customer mastering helps to
-handle multi-mastering scenarios and provides 360 view of the customer
-to D365 application suite.
+It's common for customer records get mastered in more than one application. Say for example, SMB sales motion can bring in commercial customer records through a Dynamics 365 for Sales application and e-Commerce or retail sales can bring in customer records through a Dynamics 365 for Finance and Operations application. Regardless of where the customer record originates, it is integrated behind the scenes beyond application boundaries and infrastructure differences. Integrated customer mastering helps to handle multi-mastering scenarios and provides a comprehensive view of the customer to Dynamics 365 application suite.
 
 ### Customer data flow
 
-"Customer" is a well-defined concept in both F&O and CDS. So, integration of customer data involves harmonizing the customer concept between F&O and CDS applications. Here is how the customer data flow looks like:
+The "Customer" is a well-defined concept in both Finance and Operations and the Common Data Service (CDS). Therefore, the integration of customer data involves harmonizing the customer concept between Finance and Operations and CDS applications. The following diagram shows the customer data flow:
 
 ![customer data flow](media/dual-write-customer-data-flow.png)
 
-Customers can be broadly classified into 2 types namely commercial/organizational customers and consumers/end users. These 2 types of customers are stored and handled differently in F&O and CDS.
+Customers can be broadly classified into 2 types - commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in Finance and Operations and CDS.
 
 In F&O, both commercial customers and consumers are mastered in a single table called "CustTable" (CustomerCustomerV3Entity) and they are classified based on the "Type" attribute. (Type=Organization =\> Commercial/organizational customer; Type=Person =\> consumer/end user).The primary contact person information is handled through
 "SMMContactPersonEntity" entity.
