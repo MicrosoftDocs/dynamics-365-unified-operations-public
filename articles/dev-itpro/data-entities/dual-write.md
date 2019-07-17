@@ -313,11 +313,11 @@ Businesses using Account entity to store vendor information can continue to use 
 
 Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to F&O integration. 
 
-![](dual-write-vendors-1.png)
+![](media\dual-write-vendors-1.png)
 
-![](dual-write-vendors-2.png)
+![](media\dual-write-vendors-2.png)
 
-![](dual-write-vendors-3.png)
+![](media\dual-write-vendors-3.png)
 
 ### Contacts
 
