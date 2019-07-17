@@ -5,7 +5,7 @@ title: Data management
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -294,7 +294,7 @@ The following steps enable a flight in a non-production environment. Execute the
 
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
-- After making the above change, perform an IISRESET on all AOS's
+- After making the above change, perform an IISReset on all AOS's. 
 
 ```
 INSERT INTO SYSFLIGHTING
