@@ -32,26 +32,25 @@ ms.search.validFrom: 2019-07-15
 
 ## Integrated Customer Master
 
-It's common for customer records get mastered in more than one application. Say for example, SMB sales motion can bring in commercial customer records through a Dynamics 365 for Sales application and e-Commerce or retail sales can bring in customer records through a Dynamics 365 for Finance and Operations application. Regardless of where the customer record originates, it is integrated behind the scenes beyond application boundaries and infrastructure differences. Integrated customer mastering helps to handle multi-mastering scenarios and provides a comprehensive view of the customer to Dynamics 365 application suite.
+It's common for customer records to be mastered in more than one application. For example, SMB sales motion can bring in commercial customer records through a Dynamics 365 for Sales application and e-Commerce or retail sales can bring in customer records through a Dynamics 365 for Finance and Operations application. Regardless of where the customer record originates, it is integrated behind the scenes beyond application boundaries and infrastructure differences. Integrated customer mastering helps to handle multi-mastering scenarios and provides a comprehensive view of the customer to Dynamics 365 application suite.
 
-### Customer data flow
+## Customer data flow
 
-The "Customer" is a well-defined concept in both Finance and Operations and the Common Data Service (CDS). Therefore, the integration of customer data involves harmonizing the customer concept between Finance and Operations and CDS applications. The following diagram shows the customer data flow:
+*Customer* is a well-defined concept in both Finance and Operations and the Common Data Service (CDS). Therefore, the integration of customer data involves harmonizing the customer concept between Finance and Operations and CDS applications. The following diagram shows the customer data flow:
 
 ![customer data flow](media/dual-write-customer-data-flow.png)
 
-Customers can be broadly classified into 2 types - commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in Finance and Operations and CDS.
+Customers can be broadly classified into two types - commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in Finance and Operations and CDS.
 
-In F&O, both commercial customers and consumers are mastered in a single table called "CustTable" (CustomerCustomerV3Entity) and they are classified based on the "Type" attribute. (Type=Organization =\> Commercial/organizational customer; Type=Person =\> consumer/end user).The primary contact person information is handled through
-"SMMContactPersonEntity" entity.
+In Finance and Operations, both commercial customers and consumers are mastered in a single table named **CustTable** (CustomerCustomerV3Entity) and they are classified based on the **Type** attribute. (Type=Organization =\> Commercial/organizational customer; Type=Person =\> consumer/end user).The primary contact person information is handled through the **SMMContactPersonEntity** entity.
 
-In CDS, the commercial customers are mastered in "Account" entity and identified as a customer when "RelationshipType" attribute is set to "Customer". Both consumer/end user and the contact person are represented as "Contact". In order to have a clear separation between a contact person and a consumer/end user, we are introducing a new Boolean flag on the Contact entity called "Sellable". When "Sellable=True", the contact is a consumer/end user and can have quotes/orders created for him. When "Sellable=False", the contact is only a primary contact person of a customer.
+In CDS, the commercial customers are mastered in **Account** entity and identified as a customer when the **RelationshipType** attribute is set to **Customer**. Both consumer/end user and the contact person are represented as **Contact**. To have a clear separation between a contact person and a consumer/end user, there is a Boolean flag on the **Contact** entity named **Sellable**. When **Sellable** is **True**, the contact is a consumer/end user and can have quotes and orders created for them. When **Sellable** is **False**, the contact is only a primary contact person of a customer.
 
-Note: When a non-sellable contact participates in a quote or order process, the contact is flagged as a sellable contact by setting "Sellable=true". Once a contact becomes a sellable contact, he/she remains as a sellable contact.
+When a non-sellable contact participates in a quote or order process, the contact is flagged as a sellable contact by setting **Sellable** to **True**. Once a contact becomes a sellable contact, the contact remains as a sellable contact.
 
-### Templates
+## Templates
 
-When we say Customer data, it includes all information about the customer like customer group, addresses, contact information, payment profile, invoice profile, loyalty status and so on. So, a collection of entity maps works together in customer data interaction as listed below.
+Customer data includes all information about the customer like customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of entity maps works together in customer data interaction as shown in the following table.
 
 Finance and Operations    | Customer Engagement Application
 --------------------------|---------------------------------
@@ -68,79 +67,79 @@ Payment day lines CDS     | Msdyn\_paymentdaylines
 Terms of Payment          | Msdyn\_paymentterms
 Name Affixes              | Msdyn\_nameaffixes
 
-### Customer V3 to Account
+## Customer V3 to Account
 
-It synchronizes the commercial/organization customer master information between F&O and CDS.
+Synchronizes the commercial and organization customer master information between Finance and Operations and CDS.
 
 ![](media/dual-write-account-1.png)
 
 ![](media/dual-write-account-2.png)
 
-### Customer V3 to Contact
+## Customer V3 to Contact
 
-It synchronizes consumer/end user customer master data between F&O and CE.
+Synchronizes consumer and end user customer master data between Finance and Operations and Customer Engagement.
 
 ![](media/dual-write-contact-1.png)
 
 ![](media/dual-write-contact-2.png)
 
-### Contacts
+## Contacts
 
-It synchronized all primary, secondary and tertiary contact information of both customers and vendors between F&O and CE.
+Synchronizes all primary, secondary, and tertiary contact information for both customers and vendors between Finance and Operations and Customer Engagement.
 
 ![](media/dual-write-contacts.png)
 
-### Customer Groups
+## Customer Groups
 
-Synchronize customer group information between F&O and CE.
+Synchronizes customer group information between Finance and Operations and Customer Engagement.
 
 ![](media/dual-write-customer-groups.png)
 
-### Customer Payment Methods
+## Customer Payment Methods
 
-Synchronize customer payment method information between F&O and CE.
+Synchronizes customer payment method information between Finance and Operations and Customer Engagement.
 
 ![](media/dual-write-customer-payment-methods.png)
 
-### Loyalty Cards
+## Loyalty Cards
 
-It synchronizes customer loyalty card information between F&O and CE.
+Synchronizes customer loyalty card information between Finance and Operations and Customer Engagement.
 
 ![](media/dual-write-loyalty-cards.png)
 
-### Payment Schedules
+## Payment Schedules
 
-It synchronizes payment schedule reference data between F&O and CE for both customers and vendors.
+Synchronizes payment schedule reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-payment-schedules.png)
 
-### Payment Schedule Lines
+## Payment Schedule Lines
 
-It synchronizes payment schedule lines reference data between F&O and CE for both customers and vendors.
+Synchronizes payment schedule lines reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-payment-schedule-lines.png)
 
-### Payment days
+## Payment days
 
-It synchronizes payment days reference data between F&O and CE for both customers and vendors.
+Synchronizes payment days reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-payment-days.png)
 
-### Payment Day Lines
+## Payment Day Lines
 
-It synchronizes payment day lines reference data between F&O and CE for both customers and vendors.
+Synchronizes payment day lines reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-payment-day-lines.png)
 
-### Payment Terms
+## Payment Terms
 
-It synchronizes payment terms (aka terms of payment) reference data between F&O and CE for both customers and vendors.
+Synchronizes payment terms (terms of payment) reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-payment-terms.png)
 
-### Name Affixes
+## Name Affixes
 
-It synchronizes name affixes reference data between F&O and CE for both customers and vendors.
+Synchronizes name affixes reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
 ![](media/dual-write-name-affixes.png)
 
