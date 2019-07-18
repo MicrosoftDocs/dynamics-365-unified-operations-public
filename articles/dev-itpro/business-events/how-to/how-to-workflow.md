@@ -6,7 +6,7 @@ description: This topic explains how to configure and consume a workflow busines
 approval.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,6 +27,7 @@ ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
 ---
+
 # Consume workflow approval business events
 
 The objective of this lab is to provide guided steps of how to configure and consume a Workflow Business Event with Microsoft Flow for a purchase requisition approval.
