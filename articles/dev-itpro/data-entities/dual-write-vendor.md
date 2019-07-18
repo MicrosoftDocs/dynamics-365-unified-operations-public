@@ -36,19 +36,19 @@ ms.search.validFrom: 2019-07-15
 
 ### Vendor data flow
 
-If you want to use Customer Engagement for vendor-mastering and want to isolate vendor information from customers, then they can use the new vendor design that's been introduced.
+If you want to use Customer Engagement for vendor-mastering and want to isolate vendor information from customers, then you can use the new vendor design.
 
-![](media/dual-write-vendor-data-flow.png)
+![vendor data flow](media/dual-write-vendor-data-flow.png)
 
-For businesses who use CE for vendor mastering and want to continue to use "Account" entity for storing vendor information, they can use the extended vendor design that's been introduced. In this design, extended vendor information like vendor group, vendor post profile etc. will be stored in the "vendor detail".
+If you want to use Customer Engagement for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, you can use the new extended vendor design. In this design, extended vendor information like vendor group and vendor post profile are stored in the **vendor detail**.
 
-![](media/dual-write-vendor-detail.png)
+![extended vender design](media/dual-write-vendor-detail.png)
 
 Vendor contact information is similar to the customer contact information. Behind the scenes the contact person information is stored and retrieved from same entities.
 
-### Templates
+## Templates
 
-When we say Vendor data, it includes all information about the vendor like vendor group, addresses, contact information, payment profile and invoice profile and so on. So, a collection of entity maps works together in vendor data interaction as listed below.
+Vendor data includes all information about the vendor like vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps works together in vendor data interaction as listed below.
 
 Finance and Operations  | Customer Engagement Application
 ------------------------|---------------------------------
@@ -64,32 +64,32 @@ Payment day lines CDS   | Msdyn\_paymentdaylines
 Terms of Payment        | Msdyn\_paymentterms
 Name Affixes            | Msdyn\_nameaffixes
 
-### Vendor V2 to Account 
+## Vendor V2 and Account 
 
-Businesses using Account entity to store vendor information can continue to use the same way and also take advantage of the explicit vendor functionality coming due to F&O integration.
+Businesses using the **Account** entity to store vendor information can continue to use it in the same way and also take advantage of the explicit vendor functionality coming due to Finance and Operations integration.
 
-### Vendor V2 to Msdyn\_vendors
+## Vendor V2 and Msdyn\_vendors
 
-Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to F&O integration. 
+Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to Finance and Operations integration. 
 
-![](media/dual-write-vendors-1.png)
+![vendor mappings](media/dual-write-vendors-1.png)
 
-![](media/dual-write-vendors-2.png)
+![vendor mappings](media/dual-write-vendors-2.png)
 
-![](media/dual-write-vendors-3.png)
+![vendor mappings](media/dual-write-vendors-3.png)
 
-### Contacts
+## Contacts
 
-It synchronized all primary, secondary and tertiary contact information of both customers and vendors between F&O and CE. Refer to the entity map details provided under Integrated Customer Master > Templates section.
+Synchronizes all primary, secondary, and tertiary contact information of both customers and vendors between Finance and Operations and CE. For the entity map details, see [Integrated Customer Master](dual-write-customer.md#contacts).
 
-### Vendor Groups
+## Vendor Groups
 
-Synchronize vendor group information between F&O and CE.
+Synchronizes vendor group information between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-vendor-groups.png)
+![vendor groups mappings](media/dual-write-vendor-groups.png)
 
 ### Vendor Payment Method
 
-Synchronize vendor payment method information between F&O and CE.
+Synchronizes vendor payment method information between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-vendor-payment-method.png)
+![vendor payment method mappings](media/dual-write-vendor-payment-method.png)
