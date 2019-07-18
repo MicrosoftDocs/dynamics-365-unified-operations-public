@@ -3372,8 +3372,6 @@
         href: ../supply-chain/asset-management/objects/object-view.md
       - name: Asset attribute overview
         href: ../supply-chain/asset-management/objects/object-specification-overview.md
-      - name: Assets and IoT devices
-        href: ../supply-chain/asset-management/objects/objects-and-iot-devices.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
