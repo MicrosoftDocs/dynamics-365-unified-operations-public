@@ -81,7 +81,8 @@ Changes described in this section apply to build number 8.1.2390.
 - OMLegalEntity
 - PayCycle
 - PayPeriod
-- PayrollBenefitCalculationRatePayrollBenefitCalculationRateDetail
+- PayrollBenefitCalculationRate
+- PayrollBenefitCalculationRateDetail
 - PayrollEarningCode
 
 ### Unable to see goals and reviews in manager self-service
