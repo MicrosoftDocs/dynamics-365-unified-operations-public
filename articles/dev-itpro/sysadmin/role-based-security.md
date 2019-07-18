@@ -2,10 +2,10 @@
 # required metadata
 
 title: Role-based security
-description: This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
+This topic provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Finance and Operations. 
 
 In role-based security, access is not granted to individual users, only to security roles. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who is not assigned to any role has no privileges. 
 
@@ -74,7 +74,7 @@ You can assign related duties to separate roles. These duties are said to be seg
 Default duties are provided. The administrator can modify the privileges that are associated with a duty, or create new duties.
 
 ## Privileges
-In the security model for Finance and Operations, a privilege specifies the level of access that is required to perform a job, solve a problem, or complete an assignment. Privileges can be assigned directly to roles. However, for easier maintenance, we recommend that you assign only duties to roles. 
+In the security model for Finance and Operations, a privilege specifies the level of access that is required to perform a job, solve a problem, or complete an assignment. Privileges can be assigned directly to roles, however we recommend that you only assign duties to roles. This is so that the privileges are first grouped together into a duty, which makes it easier maintenance. 
 
 A privilege contains permissions to individual application objects, such as user interface elements and tables. For example, the **Cancel payments** privilege contains permissions to the menu items, fields, and tables that are required to cancel payments. 
 
