@@ -46,7 +46,7 @@ After your organiation has purchased a subscription to Finance and Operations, i
 
    ![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
    
-   For an overview of the security roles that can be assigned to users, see [Configuring LCS Project Security](../../dev-itpro/lifecycle-services/configure-lcs-security#configuring-project-security)
+   For an overview of the security roles that can be assigned to users, see [Configuring LCS Project Security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security)
 
 ## LCS Implementation project workspace
 
