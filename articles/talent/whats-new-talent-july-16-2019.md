@@ -80,10 +80,6 @@ This week's release corrects an issue where the goal form does not close when se
 
 This week's release corrects an issue when saving goals in employee and manager self-service.
 
-### Can't filter on items with In review status on the Work items assigned to me page
-
-### Missing key field in Worker bank account Common Data Service mirror entity
-
 ### Unable to add a field to Position details 
 
 With this release, custom fields are now supported on position details.
