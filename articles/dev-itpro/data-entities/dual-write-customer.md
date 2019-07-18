@@ -93,7 +93,7 @@ Synchronizes all primary, secondary, and tertiary contact information for both c
 Source field | Map type | Destination field
 ---|---|---
 CONTACTPERSONPARTYNUMBER | = | msdyn_partynumber
-ASSOCIATEDCONTACTTYPE |  |
+ASSOCIATEDCONTACTTYPE |  | none
 FIRSTNAME | = | firstname
 MIDDLENAME | = | middlename
 LASTNAME | = | lastname
@@ -116,8 +116,8 @@ MARITALSTATUS | = | familystatuscode
 ISRECEIVINGDIRECTMAIL | = | donotemail
 EMPLOYMENTPROFESSION | = | jobtitle
 SPOUSENAME | = | spousesname
-  | >< | msdyn_contactforvendor
-  | >< | msdyn_contactpersonid
+none | >< | msdyn_contactforvendor
+none | >< | msdyn_contactpersonid
 
 ## Customer Groups
 
