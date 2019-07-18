@@ -5,7 +5,7 @@ title: Videos for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 
 #### Intelligence
 
+- [How to embed PowerBI.com reports in Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
