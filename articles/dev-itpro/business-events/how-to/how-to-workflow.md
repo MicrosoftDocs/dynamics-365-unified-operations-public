@@ -30,20 +30,19 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Consume workflow approval business events
 
-The objective of this lab is to provide guided steps of how to configure and consume a Workflow Business Event with Microsoft Flow for a purchase requisition approval.
+This topic explains how to configure and consume a workflow business event with Microsoft Flow for a purchase requisition approval.
 
-In order to complete this lab, you will need a minimum application version of 10.0.2 with PU26
+In order to complete this topic, you must be running version 10.0.2 with platform update 26 or later.
 
-Scenario overview
-=================
+## Scenario overview
 
-The below logical diagram shows the high-level process view you will need to configure with Microsoft Flow.
+The below diagram shows the high-level process you will need to configure with Microsoft Flow. Note the following points:
 
--   F&O fires a business event whenever a new approval start
+-   Finance and Operations fires a business event whenever a new approval starts.
 
--   Microsoft flow F&O triggers start and call back an Odata action to check that the workflow with Id provided form the trigger is running.
+-   Microsoft flow Finance and Operations triggers start and call back an Odata action to check that the workflow with ID provided form the trigger is running.
 
--   If the check fails, we notify the user by email of the new workitem
+-   If the check fails, we notify the user by email of the new workitem.
 
 -   If the check is successful we start a new Microsoft Flow Approval.
 
@@ -51,22 +50,21 @@ The below logical diagram shows the high-level process view you will need to con
 
     <img src="../../media/BEF-Howto-workflow-01.png" width="70%">
 
-Exercise 1: Create a new Microsoft Flow
-=======================================
+## Exercise 1: Create a new Microsoft Flow
 
-1.  Log into Microsoft Flow portal
+1.  Log into Microsoft Flow portal.
 
 2.  Select an existing environment where you have the right to create a flow resource - (default) environment is open to all company.
 
-3.  Select **New \> Create from blank**
+3.  Select **New \> Create from blank**.
 
-4.  Search for **Dynamics 365 for Finance and Operations** and **select** the connector.
+4.  Search for **Dynamics 365 for Finance and Operations** and select the connector.
 
-5.  You will notice a new trigger for Finance and Operations called “**When a Business Event occurs**”. Select it.
+5.  You will notice a new trigger for Finance and Operations called **When a Business Event occurs**. Select it.
 
     <img src="../../media/BEF-Howto-workflow-02.png" width="70%">
 
-6.  Then **select** your environment instance, Category: **Workflow workitem**, Event Name: **Purchase requisition review (000062) – Approve purchase requisitions** and any Legal entity.
+6.  Then select your environment instance, Category: **Workflow workitem**, Event Name: **Purchase requisition review (000062) – Approve purchase requisitions** and any Legal entity.
 
     <img src="../../media/BEF-Howto-workflow-03.png" width="70%">
 
@@ -116,8 +114,7 @@ Exercise 1: Create a new Microsoft Flow
 
 17. Then click **Save**
 
-Exercise 2: Trigger a Business Event
-====================================
+## Exercise 2: Trigger a business event
 
 Microsoft Flow can configure F&O automatically for you. Once you save your Flow it creates for you an endpoint in F&O then it activates the Business Event for you. There is no remaining configuration step in F&O apart from verifying that the endpoint has been correctly configured then triggering an event.
 
