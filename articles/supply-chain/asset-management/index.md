@@ -34,4 +34,10 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-Asset Management is an advanced module for managing assets and maintenance jobs in Microsoft Dynamics 365 for Finance and Operations. Asset Management integrates seamlessly with several modules in Microsoft Dynamics 365 for Finance and Operations. In Figure 1 you will see a graphic illustration of the interfaces to other modules in Microsoft Dynamics® 365 for Finance and Operations.
+Asset Management is an advanced module for managing assets and maintenance jobs in Microsoft Dynamics 365 for Finance and Operations. Asset Management integrates seamlessly with several modules in Finance and Operations. 
+
+The image below is an illustration of the interfaces to other modules in Finance and Operations.
+
+![Figure 1](media/?.png)
+
+Asset Management enables you to efficiently manage and carry out tasks related to managing and servicing many types of equipment in your company, for example, machines, production equipment, and vehicles. Asset Management supports solutions across numerous industries.
