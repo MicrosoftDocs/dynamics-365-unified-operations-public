@@ -159,6 +159,3 @@ Follow these steps to create a job.
 
 13. To activate the job, select **Activate**.
 14. To post the job, go to **Postings**, and then select **Post Now** under the Talent Careers site or LinkedIn.
-
-
-
