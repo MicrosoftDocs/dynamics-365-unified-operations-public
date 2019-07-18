@@ -109,6 +109,14 @@ Changes now allow you to set expiration dates on earning codes in data managemen
 
 Performance of custom field sync to Common Data Service has been improved with this week's release.
 
+### Entity export to database jobs fail with error message: "Format of the initialization string does not conform to specification starting at index 0."
+
+This weeks changes corrects the issue where database batch jobs are failing. To manually update: go to Data Management -> Configure entity export to database and re-enter the connection string to the target database.
+
+### SMTP email configuration suddenly failing with error message: "The SMTP server requires a secure connection or the client was not authenticated."
+
+This weeks changes corrects a SMTP email configuration that sundenlly fails. To manually correct: go to System administration -> Email parameters -> SMTP settings. Re-enter the user name and password used for the SMTP server and save.
+
 ## In preview
 
 ### Preview features are enabled only in sandbox instances
