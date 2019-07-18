@@ -92,32 +92,32 @@ Synchronizes all primary, secondary, and tertiary contact information for both c
 
 Source field | Map type | Destination field
 ---|---|---
-CONTACTPERSONPARTYNUMBER | 3 | msdyn_partynumber
-ASSOCIATEDCONTACTTYPE | 2 |
-FIRSTNAME | 3 | firstname
-MIDDLENAME | 3 | middlename
-LASTNAME | 3 | lastname
-ASSOCIATEDCONTACTNUMBER | 3 | msdyn_vendorcontactid.msdyn_vendoraccountnumber
-PRIMARYADDRESSCITY | 3 | address1_city
-PRIMARYADDRESSCOUNTRYREGIONID | 3 | address1_country
-PRIMARYADDRESSCOUNTYID | 3 | address1_county
-PRIMARYFAXNUMBER | 3 | fax
-PRIMARYADDRESSSTATEID | 3 | address1_stateorprovince
-PRIMARYADDRESSSTREET | 3 | address1_line1
-PRIMARYADDRESSZIPCODE | 3 | address1_postalcode
-PRIMARYPHONENUMBER | 3 | telephone1
-PRIMARYEMAILADDRESS | 3 | emailaddress1
-EMPLOYMENTDEPARTMENT | 3 | department
-NOTES | 3 | description
-GENDER | 3 | gendercode
-GOVERNMENTIDENTIFICATIONNUMBER | 3 | governmentid
-PRIMARYURL | 3 | websiteurl
-MARITALSTATUS | 3 | familystatuscode
-ISRECEIVINGDIRECTMAIL | 3 | donotemail
-EMPLOYMENTPROFESSION | 3 | jobtitle
-SPOUSENAME | 3 | spousesname
- | 1 | msdyn_contactforvendor
- | 1 | msdyn_contactpersonid
+CONTACTPERSONPARTYNUMBER | = | msdyn_partynumber
+ASSOCIATEDCONTACTTYPE |  |
+FIRSTNAME | = | firstname
+MIDDLENAME | = | middlename
+LASTNAME | = | lastname
+ASSOCIATEDCONTACTNUMBER | = | msdyn_vendorcontactid.msdyn_vendoraccountnumber
+PRIMARYADDRESSCITY | = | address1_city
+PRIMARYADDRESSCOUNTRYREGIONID | = | address1_country
+PRIMARYADDRESSCOUNTYID | = | address1_county
+PRIMARYFAXNUMBER | = | fax
+PRIMARYADDRESSSTATEID | = | address1_stateorprovince
+PRIMARYADDRESSSTREET | = | address1_line1
+PRIMARYADDRESSZIPCODE | = | address1_postalcode
+PRIMARYPHONENUMBER | = | telephone1
+PRIMARYEMAILADDRESS | = | emailaddress1
+EMPLOYMENTDEPARTMENT | = | department
+NOTES | = | description
+GENDER | = | gendercode
+GOVERNMENTIDENTIFICATIONNUMBER | = | governmentid
+PRIMARYURL | = | websiteurl
+MARITALSTATUS | = | familystatuscode
+ISRECEIVINGDIRECTMAIL | = | donotemail
+EMPLOYMENTPROFESSION | = | jobtitle
+SPOUSENAME | = | spousesname
+ | >< | msdyn_contactforvendor
+ | >< | msdyn_contactpersonid
 
 ## Customer Groups
 
