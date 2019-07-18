@@ -51,14 +51,14 @@ This list is intended to help you consider these removals and deprecations for y
 > [!IMPORTANT]
 > Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
-### Feature name
+### Data management staging clean up
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Indicate why the fature is being removed or deprecated. |
-| **Replaced by another feature?**   | Indicate if the feature is replaced by another feature. |
-| **Product areas affected**         | Product areas affected, such as a module name. |
-| **Deployment option**              | Enter: All, Cloud only, or On-premises only  |
-| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is XXX. |
+| **Reason for deprecation/removal** | Does not meet the core requrirements around scheduling periodic clean-up. |
+| **Replaced by another feature?**   | Yes, a new feature *Job history cleanup* is being added to meet the scenarios holistically. |
+| **Product areas affected**         | Data management |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is End of CY2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
