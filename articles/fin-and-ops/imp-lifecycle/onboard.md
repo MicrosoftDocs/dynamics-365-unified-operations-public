@@ -39,10 +39,10 @@ After your organiation has purchased a subscription to Finance and Operations, i
 1. Open an Inprivate/Incognito browser session and navigate to the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
 2. Login with the Tenant Administrator credentials.
 3. Navigate to Billing > Subscriptions and confirm that there is an active **Dynamics 365 Unified Operations** subscription. **Note** that if you do not see a subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same Azure Active Directory (AAD) tenant.
-4. If there is an active Dynamics 365 Unified Operations subscription displayed, you may proceed to the next step by logging in to LCS to trigger the Implementation Project creation flow.
-5. Open another private browser tab and naviate to [Lifecycle Services](https://lcs.dynamics.com). Click Login to access LCS with your current Tenant Admin credentials.
+4. If there is an active **Dynamics 365 Unified Operations** subscription displayed, you may proceed to the next step by logging in to LCS to trigger the Implementation Project creation flow.
+5. Open another private browser tab and naviate to [Lifecycle Services](https://lcs.dynamics.com). Click **Login** to access LCS with your current Tenant Admin credentials.
 6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
-7. The Tenant Administrator is assigned the Project Owner to the provisioned Implementation Project. As a final step, the Tenant Administrator must add additional organization and/or partner team members who will be participating in the Dynamics 365 Finance and Operations implementation project. This is perfomed in LCS Project User Management:
+7. The Tenant Administrator is assigned the Project Owner to the provisioned Implementation Project. As a final step, the Tenant Administrator must add additional organization and/or partner team members who will be participating in the Dynamics 365 Finance and Operations implementation project. This is perfomed in LCS Project User Management, selected from the LCS Implementation Project menu:
 
    ![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
    
@@ -52,13 +52,13 @@ After your organiation has purchased a subscription to Finance and Operations, i
 
 After the Tenant Administrator has completed the Finance and Operations subscription activation and added the appropriate users, team members can access the **Implementation project** workspace. 
 
-If you're a customer and require help to get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). For a comprehensive overview of LCS, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+To get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). For a comprehensive overview of LCS, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## FastTrack onboarding services
 
-After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will email the project team to discuss onboarding services. (Note that this email will originate from ond365@microsoft.com, so please insure that any spam blocker/filter allows email from this address.) For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
+After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will email the project team to request a call to discuss onboarding services. (Note that this email will originate from ond365@microsoft.com, so please insure that any spam blocker/filter allows email from this address.) For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack team will contact all the partner and customer users in your LCS project to schedule a 60-minute onboarding call via Skype. During this call, the team will introduce the FastTrack program. The team will also help you with the initial configuration of the LCS project and related tasks:
+The FastTrack Onboarding meeting is a 60-minute call via Skype. During this call, the team will introduce the implementation team to the FastTrack program as well as assist with the initial configuration of the LCS project and related tasks:
 
 - Tenant validation
 - Introduction to LCS
@@ -70,7 +70,7 @@ The FastTrack team will contact all the partner and customer users in your LCS p
 - Introduction to servicing, support, and service health
 - Readiness planning
 
-It is recommended that the following project roles participate in the onboarding meeting. Other roles are optional.
+It is suggested that the following project roles participate in the onboarding meeting. Other roles are optional.
 
 **Customer**
 
