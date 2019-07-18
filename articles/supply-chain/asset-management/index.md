@@ -38,6 +38,6 @@ Asset Management is an advanced module for managing assets and maintenance jobs 
 
 The image below is an illustration of the interfaces to other modules in Finance and Operations.
 
-![Figure 1](media/?.png)
+![Overview of how Asset Management integrates](media/overview-integrate.jpg)
 
 Asset Management enables you to efficiently manage and carry out tasks related to managing and servicing many types of equipment in your company, for example, machines, production equipment, and vehicles. Asset Management supports solutions across numerous industries.
