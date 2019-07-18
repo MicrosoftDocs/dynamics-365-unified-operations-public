@@ -159,7 +159,7 @@ You can download the staging data in a file for export jobs, or you can download
 From the execution details, you can also open the execution log.
 
 ## Clean up the staging tables
-Starting platform update 29, this functionality has been deprecated. This is replaced by a new version of job history clean up functionality explained below.
+Starting in Platform update 29, this functionality has been deprecated. This is replaced by a new version of job history clean-up functionality explained below.
 
 You can clean up staging tables by using the **Staging clean up** feature in the **Data management** workspace. You can use the following options to select which records should be deleted from which staging table:
 
@@ -169,9 +169,9 @@ You can clean up staging tables by using the **Staging clean up** feature in the
 
 You can also combine the options to further restrict the record set that is deleted.
 
-## Job history clean up (available from platform update 29 onwards)
+## Job history clean up (available in Platform update 29 and later)
 
-The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality is a step up to the existing staging table clean up functionality which is now deprecated. The following tables will be cleaned up by the clean-up process.
+The job history clean-up functionality in data management must be used to schedule a periodic clean-up of the execution history. This functionality is a step up to the existing staging table clean-up functionality which is now deprecated. The following tables will be cleaned up by the clean-up process.
 
 -   All staging tables
 
@@ -189,18 +189,19 @@ The job history clean-up functionality in data management must be used to schedu
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-The functionality can be accessed from Data management \> Job history cleanup
+The functionality can be accessed from **Data management \> Job history cleanup**.
 
-Scheduling parameters
----------------------
+### Scheduling parameters
 
-When scheduling the cleanup process, the following parameters must be specified to define the clean- up criteria.
+When scheduling the clean-up process, the following parameters must be specified to define the clean-up criteria.
 
--   **Number of days to retain history** – this setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the clean up job is scheduled as a recurring batch job, this setting will behave like a continuously
+-   **Number of days to retain history** – This setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the clean-up job is scheduled as a recurring batch job, this setting will behave like a continuously
 moving window thereby, always leaving the history for the specified number of days intact while deleting the rest. The default is 7 days.
 
--   **Number of hours to execute the job** – depending on the amount of history to be cleaned up, the total execution time for the clean up job can vary from a few minutes to a few hours. Since the clean up of the mentioned tables must be done when there is no other data management activity in the system, it becomes important to make sure the clean job executes and finishes before the start of business activity. A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence with oldest being first and  cleans up the related execution history. It will stop picking up new execution ID’s for clean up when the remaining execution duration is within the last 10% of the specified duration. It must be still expected in some cases for the cleanup job to continue execution beyond the specified max time since, this will largely depend on the number of records to be deleted for the current execution ID that was started well before the 10% threshold was hit. The cleanup that was started must be completed to ensure data integrity and hence, the cleanup will continue despite exceeding the specified limit. Once this is complete, new execution ID’s are not picked up and the cleanup job completes. The remaining execution history which was not cleaned up due to lack of enough execution time, will be picked up the next time the cleanup job is scheduled. The default and minimum value for this setting is set to 2 hours.
+-   **Number of hours to execute the job** – Depending on the amount of history to be cleaned-up, the total execution time for the clean-up job can vary from a few minutes to a few hours. Since the clean-up of the mentioned tables must be done when there is no other data management activity in the system, it becomes important to make sure that the clean-up job executes and finishes before the start of business activity. 
 
--   **Recurring batch** – the clean up job can be run as a one-time manual execution or it can be also scheduled for recurring execution in batch. The batch can be scheduled via the *Run in background* set of settings which is the standard batch set up.
+    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence with oldest being first and cleans-up the related execution history. It will stop picking up new execution ID’s for clean-up when the remaining execution duration is within the last 10% of the specified duration. It must be still expected in some cases for the clean-up job to continue execution beyond the specified max time since, this will largely depend on the number of records to be deleted for the current execution ID that was started well before the 10% threshold was hit. The clean-up that was started must be completed to ensure data integrity and hence, the clean-up will continue despite exceeding the specified limit. Once this is complete, new execution ID’s are not picked up and the clean-up job completes. The remaining execution history which was not cleaned-up due to lack of enough execution time, will be picked up the next time the cleanup job is scheduled. The default and minimum value for this setting is set to 2 hours.
+
+-   **Recurring batch** – The clean up job can be run as a one-time, manual execution or it can be also scheduled for recurring execution in batch. The batch can be scheduled via the **Run in background** set of settings which is the standard batch set up.
 
 
