@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 16, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/16/2019
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: andreabichsel
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-07-16
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (July 16, 2019)"
+# What's new or changed in Dynamics 365 for Talent (July 16, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 
 ## Changes in Attract
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
@@ -44,7 +44,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2390.
 
-### CDS Entities now supporting custom fields
+### Common Data Service entities that now support custom fields
 
 | Entity                                     | Entity                           | 
 | -----------------------------------------  | -------------------------------- |
@@ -68,33 +68,33 @@ Changes described in this section apply to build number 8.1.2390.
 |  HcmJob      				                       |  PayrollBenefitCalculationRate 	|
 |  PayrollBenefitCalculationRateDetail       |  PayrollEarningCode		          |
 
-### Unable to see goals and reviews in manager self-service ???????? 
+### Unable to see goals and reviews in manager self-service
 
-This weeks changes now allow displaying and editing of goals and reviews for skip level managers in manager self-service.
+This week's changes now allow displaying and editing of goals and reviews for skip level managers in manager self-service.
 
 ### Goal form cannot be closed once user edits any goal field
 
-This weeks release corrects an issue where the goal form does not close when selecting the close box.
+This week's release corrects an issue where the goal form does not close when selecting **Close**.
 
 ### Creating new goals and saving displays error
 
-This weeks release corrects an issue when saving goals in employee and manager self-service.
+This week's release corrects an issue when saving goals in employee and manager self-service.
 
-### Can't filter on in review status on the work items assigned to me page
+### Can't filter on items with In review status on the Work items assigned to me page
 
-### Missing key field in Worker bank account CDS mirror entity???
+### Missing key field in Worker bank account Common Data Service mirror entity
 
-### Unable to add a field to Position Details 
+### Unable to add a field to Position details 
 
 With this release, custom fields are now supported on position details.
  
 ### Unable to set up expiring date on the earning code through data management
 
-This weeks release includes a change to allow setting expire dates on earning codes in data management.
+This week's release includes a change to allow setting expiration dates on earning codes in data management.
 
-### New custom fields don't sync quick enough
+### New custom fields don't sync quickly enough
 
-Performance of custom field sync to CDS has been improved with this weeks release.
+Performance of custom field sync to Common Data Service has been improved with this week's release.
 
 ## In preview
 
@@ -108,6 +108,6 @@ For more information about how changes are published, see [Provision Talent](htt
 
 Organizations can offer many different types of leave to employees. However, it might not be appropriate for employees to submit time-off requests for some leave types. Those leave types might be managed by HR instead. In this release, you can configure which leave types employees can submit time-off requests for. 
 
-### View extended information for performance in manager self-service
+### View performance information for direct and extended reports in manager self-service
 
-A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
+A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
