@@ -76,7 +76,7 @@ The below diagram shows the high-level process you will need to configure with M
 
 10. Now we need to type in the schema of the contract received from Finance and Operations. However, Finance and Operations provides only a sample payload instead. Hence, we can use Microsoft Flow capability to generate a schema from a payload. Go back to Finance and Operations, select the workflow 00062 event in the catalog, and click the Download schema link. This will download a text file. Open the text file and copy the content.
 
-11. Go back to Microsoft Flow and click the **Use sample payload to generate schema** link. Then paste your text file content and click **Done**
+11. Go back to Microsoft Flow and click the **Use sample payload to generate schema** link. Then paste your text file content and click **Done**.
 
 12. The add a new step as follows to call a workflow action that validate whether a workflow with the right instance ID is running and awaiting approval.
 
