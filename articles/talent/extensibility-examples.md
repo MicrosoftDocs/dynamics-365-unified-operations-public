@@ -110,7 +110,7 @@ The Referral App can be used to add candidates to a shared talent pool. The refe
 
 The app can be embedded into Employee self-service (ESS) for submitting referrals or can be used as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
-To download **Referral App** , go to [ ] ( ) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
+To download **Referral App** , go to [Dynamics 365 for Talent extensibility solution: Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 
