@@ -46,32 +46,43 @@ Changes described in this section apply to build number 8.1.2390.
 
 ### Common Data Service entities that now support custom fields
 
-BusinessProcessCalendar		              
-BusinessProcessGroupAssignment         
-BusinessProcessStage			                
-BusinessProcessTemplateHeader          
-BusinessProcessTemplateTask            
-HcmBenefitOption			                    
-HcmBenefitType			                      HcmSkillType
-HcmCompensationGrid			                 HcmVeteranStatus
-HcmCompensationLevel			                HcmWorkCalendarHoliday
-HcmCompensationPayFrequency		          HcmWorkCalendarHolidayLine
-HcmCompensationReferencePointSetup	    HcmWorker
-HcmCompensationReferencePointSetupLine HcmWorkerPersonalDetail
-HcmCompensationRegion		                LeaveType
-HcmCompFixedPlanTable		                OMDepartment
-HcmEmployment			                       OMLegalEntity
-HcmEthnicOrigin			                     PayCycle
-HcmFixedCompensationEvent		            PayPeriod
-HcmJob      				                       PayrollBenefitCalculationRate
-PayrollBenefitCalculationRateDetail
-PayrollEarningCode
-HcmJobFunction
-HcmJobType
-HcmLanguageCode
-HcmPayrollCalculationFrequency
-HcmPosition
-HcmPositionType
+- BusinessProcessCalendar		              
+- BusinessProcessGroupAssignment         
+- BusinessProcessStage			                
+- BusinessProcessTemplateHeader          
+- BusinessProcessTemplateTask            
+- HcmBenefitOption			                    
+- HcmBenefitType			                      
+- HcmCompensationGrid			                 
+- HcmCompensationLevel			                
+- HcmCompensationPayFrequency		          
+- HcmCompensationReferencePointSetup	    
+- HcmCompensationReferencePointSetupLine 
+- HcmCompensationRegion		                
+- HcmCompFixedPlanTable		                
+- HcmEmployment			                       
+- HcmEthnicOrigin			                     
+- HcmFixedCompensationEvent		            
+- HcmJob      				                       
+- HcmJobFunction
+- HcmJobType
+- HcmLanguageCode
+- HcmPayrollCalculationFrequency
+- HcmPosition
+- HcmPositionType
+- HcmSkillType
+- HcmVeteranStatus
+- HcmWorkCalendarHoliday
+- HcmWorkCalendarHolidayLine
+- HcmWorker
+- HcmWorkerPersonalDetail
+- LeaveType
+- OMDepartment
+- OMLegalEntity
+- PayCycle
+- PayPeriod
+- PayrollBenefitCalculationRatePayrollBenefitCalculationRateDetail
+- PayrollEarningCode
 
 ### Unable to see goals and reviews in manager self-service
 
