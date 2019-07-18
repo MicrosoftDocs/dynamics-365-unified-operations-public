@@ -54,11 +54,11 @@ This list is intended to help you consider these removals and deprecations for y
 ### Data management staging clean up
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Does not meet the core requrirements around scheduling periodic clean-up. |
-| **Replaced by another feature?**   | Yes, a new feature *Job history cleanup* is being added to meet the scenarios holistically. |
+| **Reason for deprecation/removal** | Does not meet the core requirements that are needed for scheduling periodic cleanup. |
+| **Replaced by another feature?**   | Yes, the Job history cleanup feature is being added to meet the scenarios holistically. |
 | **Product areas affected**         | Data management |
 | **Deployment option**              | All  |
-| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is End of CY2020. |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
