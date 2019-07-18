@@ -3304,75 +3304,76 @@
   - name: Asset management
     items:
     - name: Asset management overview
-	    items:
+      href: ../supply-chain/asset-management/index.md
+      items:
       - name: Functional locations and assets
         href: ../supply-chain/asset-management/overview/functional-locations-and-objects.md
-	    - name: Assets and work orders
+      - name: Assets and work orders
         href: ../supply-chain/asset-management/overview/objects-and-work-orders.md     
     - name: Security roles
       href: ../supply-chain/asset-management/security-roles/security-roles.md
     - name: Set up test data
       href: ../supply-chain/asset-management/exercises-and-setup-data/create-data-for-exercises-using-the-data-wizard.md
     - name: Setup for functional locations
-	    items:
+      items:
       - name: Functional location lifecycle states
         href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-stages.md
-	    - name: Maintenance attribute types
+      - name: Maintenance attribute types
         href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-types.md
-	    - name: Functional location types
+      - name: Functional location types
         href: ../supply-chain/asset-management/setup-for-functional-locations/specification-types.md
-  - name: Functional locations
-	  items:
-    - name: Introduction to functional locations
-      href: ../supply-chain/asset-management/functional-locations/introduction-to-functional-locations.md
-	  - name: Create functional locations
-      href: ../supply-chain/asset-management/functional-locations/create-functional-locations.md
-	  - name: Install assets on functional locations
-      href: ../supply-chain/asset-management/functional-locations/install-objects-on-functional-locations.md
-  - name: Setup for assets
-	  items:
-    - name: Asset types
-      href: ../supply-chain/asset-management/setup-for-objects/object-types.md
-	  - name: Condition assessment
-      href: ../supply-chain/asset-management/setup-for-objects/condition-assessment.md
-		- name: Asset manufacturer and model
-      href: ../supply-chain/asset-management/setup-for-objects/product-and-model.md
-	  - name: Counters
-      href: ../supply-chain/asset-management/setup-for-objects/counters.md
-	  - name: Asset management parameters
-      href: ../supply-chain/asset-management/setup-for-objects/enterprise-asset-management-parameters.md
-	  - name: Asset lifecycle states
-      href: ../supply-chain/asset-management/setup-for-objects/object-stages.md
-	  - name: Asset service levels
-      href: ../supply-chain/asset-management/setup-for-objects/object-priorities.md
-	  - name: Asset criticalities
-      href: ../supply-chain/asset-management/setup-for-objects/object-criticalities.md
-	  - name: Asset documents
-      href: ../supply-chain/asset-management/setup-for-objects/object-documents.md
-	  - name: Maintenance workers and worker groups
-      href: ../supply-chain/asset-management/setup-for-objects/workers-and-worker-groups.md
-  - name:	Assets
-	  items: 
-    - name: Introduction to assets
-      href: ../supply-chain/asset-management/objects/introduction-to-objects.md
-	  - name: Create an asset
-      href: ../supply-chain/asset-management/objects/create-an-object.md
-	  - name: Multi-level assets
-      href: ../supply-chain/asset-management/objects/multi-level-objects.md
-	  - name: Move, replace, and install assets
-      href: ../supply-chain/asset-management/objects/move-replace-and-install-objects.md
-	  - name: Create assets based on purchase orders
-      href: ../supply-chain/asset-management/objects/create-objects-based-on-purchase-orders.md
-    - name:	Asset BOM
-      href: ../supply-chain/asset-management/objects/object-bom.md
-	  - name: Asset event history
-      href: ../supply-chain/asset-management/objects/object-timeline.md
-	  - name: Asset view
-      href: ../supply-chain/asset-management/objects/object-view.md
-	  - name: Asset attribute overview
-      href: ../supply-chain/asset-management/objects/object-specification-overview.md
-	  - name: Assets and IoT devices
-      href: ../supply-chain/asset-management/objects/objects-and-iot-devices.md
+    - name: Functional locations
+      items:
+      - name: Introduction to functional locations
+        href: ../supply-chain/asset-management/functional-locations/introduction-to-functional-locations.md
+      - name: Create functional locations
+        href: ../supply-chain/asset-management/functional-locations/create-functional-locations.md
+      - name: Install assets on functional locations
+        href: ../supply-chain/asset-management/functional-locations/install-objects-on-functional-locations.md
+    - name: Setup for assets
+      items:
+      - name: Asset types
+        href: ../supply-chain/asset-management/setup-for-objects/object-types.md
+      - name: Condition assessment
+        href: ../supply-chain/asset-management/setup-for-objects/condition-assessment.md
+      - name: Asset manufacturer and model
+        href: ../supply-chain/asset-management/setup-for-objects/product-and-model.md
+      - name: Counters
+        href: ../supply-chain/asset-management/setup-for-objects/counters.md
+      - name: Asset management parameters
+        href: ../supply-chain/asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+      - name: Asset lifecycle states
+        href: ../supply-chain/asset-management/setup-for-objects/object-stages.md
+      - name: Asset service levels
+        href: ../supply-chain/asset-management/setup-for-objects/object-priorities.md
+      - name: Asset criticalities
+        href: ../supply-chain/asset-management/setup-for-objects/object-criticalities.md
+      - name: Asset documents
+        href: ../supply-chain/asset-management/setup-for-objects/object-documents.md
+      - name: Maintenance workers and worker groups
+        href: ../supply-chain/asset-management/setup-for-objects/workers-and-worker-groups.md
+    - name: Assets
+      items: 
+      - name: Introduction to assets
+        href: ../supply-chain/asset-management/objects/introduction-to-objects.md
+      - name: Create an asset
+        href: ../supply-chain/asset-management/objects/create-an-object.md
+      - name: Multi-level assets
+        href: ../supply-chain/asset-management/objects/multi-level-objects.md
+      - name: Move, replace, and install assets
+        href: ../supply-chain/asset-management/objects/move-replace-and-install-objects.md
+      - name: Create assets based on purchase orders
+        href: ../supply-chain/asset-management/objects/create-objects-based-on-purchase-orders.md
+      - name: Asset BOM
+        href: ../supply-chain/asset-management/objects/object-bom.md
+      - name: Asset event history
+        href: ../supply-chain/asset-management/objects/object-timeline.md
+      - name: Asset view
+        href: ../supply-chain/asset-management/objects/object-view.md
+      - name: Asset attribute overview
+        href: ../supply-chain/asset-management/objects/object-specification-overview.md
+      - name: Assets and IoT devices
+        href: ../supply-chain/asset-management/objects/objects-and-iot-devices.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
