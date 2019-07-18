@@ -5,7 +5,7 @@ title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
 author: negudava
 manager: Annbe
-ms.date: 05/01/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -59,15 +59,15 @@ When a candidate submits a form, Microsoft Flow captures the form submission, re
 
 To download the **Flow – Form Connect** template and Custom Entity Structure, go to [Flow – Form Connect](https://go.microsoft.com/fwlink/?linkid=2081988) on the Microsoft Download Center.
 
-## Initiate and Extract Parameters Passed to Powerapps
+## Initiate and Extract Parameters Passed to PowerApps
 
-The **Initiate and Extract Parameters Passed to Powerapps** template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as **Job Application**, **Candidate ID**, and **JobID**.
+The **Initiate and Extract Parameters Passed to PowerApps** template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as **Job Application**, **Candidate ID**, and **JobID**.
 
 This template can be used to retrieve a candidate assessment form, so that a hiring manager can view the assessment that a candidate filled in.
 
 Apps that are created by using PowerApps can be embedded into the job template in Attract.
 
-To download the **Initiate and Extract Parameters Passed to Powerapps** template and Custom Entity Structure, go to [Initiate and Extract Parameters Passed to Powerapps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
+To download the **Initiate and Extract Parameters Passed to PowerApps** template and Custom Entity Structure, go to [Initiate and Extract Parameters Passed to PowerApps](https://go.microsoft.com/fwlink/?linkid=2081991) on the Microsoft Download Center.
 
 ## Integration with Office 365
 
@@ -75,7 +75,7 @@ The **Integration with Office 365** app can be used to extract team information 
 
 This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
 
-To download the **Integration with Office 365** app and Custome Entity Structure, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
+To download the **Integration with Office 365** app and Customer Entity Structure, go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
 ## Flow – Email Notification
 
@@ -105,21 +105,12 @@ This template can be extended so that it can be used for any scenario that invol
 
 To download the **Flow – SharePoint Integration** template, go to [Flow – SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) on the Microsoft Download Center.
 
-## Admin console to manage talent pools
+## Referral App
+The Referral App can be used to add candidates to a shared talent pool. The referrer can enter Firstname, Lastname, Email, and Linkedln URL when submitting a candidate. The candidate source metadata is then populated with the referrer’s information.
 
-When you enable integration with LinkedIn, Attract automatically createas a LinkedIn talent pool. When a recruiter exchanges InMail with a recruit through LinkedIn, Attract creates a profile for the recruit, and the recruit becomes a member of the LinkedIn talent pool. This PowerApps app is useful for reorganizing candidates in talent pools based on skill.
+The app can be embedded into Employee self-service (ESS) for submitting referrals or can be used as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
-Run this PowerApps app as an admin console to perform the following tasks:
-
-- List candidates in a talent pool
-- Add and remove candidates from a talent pool
-- Move candidates from one talent pool to another
-- Determine whether candidates are already part of a talent pool before moving them
-- Check the skills of candidates before moving them to other talent pools
-
-This PowerApps app uses many-to-many relationships, so you can use it as a template for other scenarios where you need to extract records that have many-to-many relationships.
-
-To download the **Admin console to manage talent pools** template,  go to [Admin console to manage talent pools](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) on the Microsoft Download Center.
+To download **Referral App** , go to [Dynamics 365 for Talent extensibility solution: Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 
