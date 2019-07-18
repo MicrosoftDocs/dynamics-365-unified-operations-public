@@ -64,17 +64,15 @@ The below diagram shows the high-level process you will need to configure with M
 
 6.  Then select your environment instance, where: 
 
-    - Category is **Workflow workitem**, the 
+    - Category is **Workflow workitem** 
     - Event name is **Purchase requisition review (000062) – Approve purchase requisitions**
-    - Any legal entity.
+    - Select any legal entity
 
 7.  Select **New Step** button to add a new action.
 
 8.  Search for **Parse Json** data operation. This step is needed to be able to parse our message with the schema of our data contract provided by Finance and Operations.
 
 9.  Select the content field of **Parse Json** action then the **Body** output from the previous step should appear as an option. Select **Body**.
-
-    <img src="../../media/BEF-Howto-workflow-05.png" width="70%">
 
 10. Now we need to type in the schema of the contract received from Finance and Operations. However, Finance and Operations provides only a sample payload instead. Hence, we can use Microsoft Flow capability to generate a schema from a payload. Go back to Finance and Operations, select the workflow 00062 event in the catalog, and click the Download schema link. This will download a text file. Open the text file and copy the content.
 
