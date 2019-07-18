@@ -33,9 +33,25 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 
+## Microsoft 365 Admin Center
+
+After your organiation has purchased a subscription to Finance and Operations, it is activated on your organization's tenant by the Tenant Administrator who must complete the following steps:
+1. Open a Inprivate/Incognito browser session and navigate to the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
+2. Login with the Tenant Administrator credentials.
+3. Navigate to Billing > Subscriptions and confirm that there is an active Dynamics 365 Unified Operations subscription. Note that if you do not see a subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same AAD tenant.
+4. If there is an active Dynamics 365 Unified Operations subscription, you may proceed by logging in LCS to trigger the LCS Implementation Project creation flow.
+5. Open another private browser tab and naviate to [Lifecycle Services](https://lcs.dynamics.com). Click Login to login to LCS with your current Tenant Admin credentials.
+6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
+7. The Tenant Administrator has now been assigned as the Project Owner to the Implementation Project. 
+8. As a final step, the Tenant Administrator must add the additional internal and partner team members who will be participating in the Dynamics 365 Finance and Operations implementation project. This is perfomed in LCS Project User Management:
+
+[!LCS Project User Management]
+
 ## LCS Implementation project workspace
 
-After you've purchased and activated a subscription to Finance and Operations, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time. If you're a customer and require help to get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). For a comprehensive overview of LCS, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+After the Tenant Administrator has completed the Finance and Operations subscription activation, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time. 
+
+If you're a customer and require help to get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). For a comprehensive overview of LCS, see [Overview of Lifecycle Services](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## FastTrack onboarding services
 
