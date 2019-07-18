@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Near-real time data integration between Finance and Operations and Common Data Service
+title: Organization hierarchy on Common Data Service
 description: 
 author: RamaKrishnamoorthy 
 manager: AnnBe
