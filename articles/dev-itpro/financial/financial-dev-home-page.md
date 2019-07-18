@@ -48,3 +48,4 @@ ms.dyn365.ops.version: AX 7.0.0
 - [Financial dimension configuration for integrating applications](../financial/financial-dimension-configuration-integration.md)
 - [Activating financial dimensions](../financial/activate-financial-dimensions.md)
 - [Add the ability to look up values for financial dimensions in Microsoft Excel templates](../financial/add-dimensions-excel-templates.md)
+- [Extend the budget planning layout](articles/financials/budgeting/extending-budget-planning-layout.md)
