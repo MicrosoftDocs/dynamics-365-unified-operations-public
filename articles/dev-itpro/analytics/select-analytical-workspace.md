@@ -5,7 +5,7 @@ title: Select analytical workspaces from PowerBI.com
 description: This topic explains how to select a report that is hosted on PowerBI.com and use it for an application workspace.
 author: tjvass
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -52,6 +52,10 @@ Here are some of the top motivations for selecting reports that are hosted on Po
 - Organizations that have Microsoft Power BI Premium services want to augment the standard reports.
 
 ### Embed a PowerBI.com report in an analytical workspace
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3lP5m]
+
+The [How to embed PowerBI.com reports in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gGWuNJDoi-M&feature=youtu.be) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 To replace the standard reports, you must be a member of the System Report Editors security group. Members of this security group can access the options in application workspaces that let them customize the standard reports. This example shows how to replace the standard analytical report with a customized report that is hosted on PowerBI.com.
 
