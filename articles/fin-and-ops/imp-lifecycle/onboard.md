@@ -36,7 +36,7 @@ This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Ope
 ## Microsoft 365 Admin Center
 
 After your organiation has purchased a subscription to Finance and Operations, it is activated on your organization's tenant by the Tenant Administrator who must complete the following steps:
-1. Open a Inprivate/Incognito browser session and navigate to the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
+1. Open an Inprivate/Incognito browser session and navigate to the [Microsoft 365 Admin Center](https://admin.microsoft.com/)
 2. Login with the Tenant Administrator credentials.
 3. Navigate to Billing > Subscriptions and confirm that there is an active Dynamics 365 Unified Operations subscription. Note that if you do not see a subscription, consult with your Licensing Partner to confirm the status of the subscription transaction as well as the tenant for the subscription. By default, all Microsoft Online Services should be running on the same AAD tenant.
 4. If there is an active Dynamics 365 Unified Operations subscription, you may proceed by logging in LCS to trigger the LCS Implementation Project creation flow.
@@ -45,7 +45,7 @@ After your organiation has purchased a subscription to Finance and Operations, i
 7. The Tenant Administrator has now been assigned as the Project Owner to the Implementation Project. 
 8. As a final step, the Tenant Administrator must add the additional internal and partner team members who will be participating in the Dynamics 365 Finance and Operations implementation project. This is perfomed in LCS Project User Management:
 
-[!LCS Project User Management]
+![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
 
 ## LCS Implementation project workspace
 
