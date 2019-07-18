@@ -30,7 +30,8 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Configure email settings in Microsoft Dynamics 365 for Talent - Attract
+# Configure email settings
+
 [!include[banner](../includes/banner.md)]
 
 Your brand establishes trust and helps you build a relationship with candidates before they even apply for your positions. Positive brand perception attracts top talent and increases the loyalty of existing employees. Microsoft Dynamics 365 for Talent: Attract lets you configure emails so that they reflect your company's brand. Therefore, you can provide a consistent experience to job candidates as they progress through the application process.

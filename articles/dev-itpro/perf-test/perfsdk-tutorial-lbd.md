@@ -280,7 +280,7 @@ Make sure that the values that you entered when you made the task recording are 
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. Download the installer (.msi) file for Microsoft ODBC Driver 13 for SQL Server from [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420). (Select the 64-bit version of the .msi file.) Put the file in the **Visual Studio Online** folder in the **PerfSDK** directory.
+2. Download the installer (.msi) file for Microsoft ODBC Driver 13 for SQL Server from [https://www.microsoft.com/download/details.aspx?id=50420](https://www.microsoft.com/download/details.aspx?id=50420). (Select the 64-bit version of the .msi file.) Put the file in the **Visual Studio Online** folder in the **PerfSDK** directory.
 3. Modify the contents of the **setup.cmd** file in the **Visual Studio Online** folder so that they match the following code.
 
     ```

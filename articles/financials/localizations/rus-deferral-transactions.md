@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Deferral transactions (Russia)
+title: Receipt of deferrals (Russia)
 description: This topic explains how to create and post receipt transactions for deferrals that were manually created. It also explains how to reverse receipt transactions.
 author: anasyash
 manager: AnnBe
@@ -26,11 +26,9 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# Deferral transactions (Russia)
+# Receipt of deferrals
 
 [!include [banner](../includes/banner.md)]
-
-## Receipt of deferrals
 
 You use the **Journal voucher** page to create a receipt transaction for deferrals that were manually created. When you post the receipt transaction, the status of the deferrals is updated to **In process**.
 

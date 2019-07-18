@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the functionality available for integration from Dynamics 365 for Talent and Dynamics 365 for Finance and Operations. The Talent to Finance and Operations template that is available with the [Data Integrator](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance and Operations. The template does not provide the ability for data to flow back from Finance and Operations into Talent. 
+This topic describes the functionality available for integration from Dynamics 365 for Talent and Dynamics 365 for Finance and Operations. The Talent to Finance and Operations template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance and Operations. The template does not provide the ability for data to flow back from Finance and Operations into Talent. 
 
 ![Talent to Finance and Operations Integration Flow](./media/TalentFinOpsFlow.png)
 
@@ -250,7 +250,7 @@ these are different records and the same ID was generated in either Talent or Fi
 
 The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
 
-To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
+To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
 The location ID used for worker address isn't part of a number sequence. When integrating a worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, a duplicate address record may be created. 
 

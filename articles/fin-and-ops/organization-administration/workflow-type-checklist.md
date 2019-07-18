@@ -40,7 +40,7 @@ This topic describes the steps that are required to create a new workflow type. 
 
 1. If an existing category isn't appropriate, create a new workflow category to use for the workflow type. For more information, see [Create a workflow category](workflow-type-category.md).
 2. Create a query that accesses the document that the new workflow type is being created for. For more information, see [Create a query for a workflow type](workflow-type-query.md).
-3. Create a workflow type in Application Explorer. Typically, you complete this step by using the **Workflow** wizard. For more information, see [Create a new workflow type](workflow-type-create-new).
+3. Create a workflow type in Application Explorer. Typically, you complete this step by using the **Workflow** wizard. For more information, see [Create a new workflow type](workflow-type-create-new.md).
 
 We recommend that you use the **Workflow** wizard to create a workflow type. The wizard performs the following tasks. In some cases, you must add more code for your workflow type. Links are provided so that you can see the details of the actions that the wizard performs and the additional steps that you must perform to complete your workflow type.
 

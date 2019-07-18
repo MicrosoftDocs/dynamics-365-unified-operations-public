@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enter settings for external job boards in Attract
+title: Enable Broadbean integration in Microsoft Dynamics 365 for Talent - Attract
 description: This topic explains how to configure Microsoft Dynamics 365 for Talent - Attract to post jobs to external job boards such as Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Enter settings for external job boards in Attract
+# Enable Broadbean integration
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,9 +44,12 @@ You want to get your open positions in front of as many qualified candidates as 
 ## Configure Broadbean integration
 
 1. Sign in to Attract as an admin.
+
 2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
-3. On the **Job board settings** tab, in the **Enable Broadbean integration** section, turn on the integration.
-4. Contact Broadbean, and enter your information in **Username**, **Client ID**, and **Encryption Token**.
+
+3. Contact Broadbean, and enter your information in the **Username**, **Client ID**, and **Encryption Token** fields.
+
+4. Select **Save**.
 
 > [!WARNING]
 > Your Broadbean credentials are sensitive and confidential. Therefore, store and share them responsibly. Anyone who has an Administrator role in Attract can view these credentials.

@@ -56,7 +56,7 @@ Every request to Retail Server (via retail proxy) operates under these main role
 The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Retail Server. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
 
 > [!NOTE]
-> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
+> By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
 
 
 ## Customer controller
@@ -472,7 +472,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | Get         |                                                                                         | PageResult\<Recommendation\>      | Application,Employee, Customer, Anonymous | Gets the list of recommendations.                                                                    |
 | GetElements | string listId, RecommendationCriteria criteria, QueryResultSettings queryResultSettings | PagedResult\<RecommendedElement\> | Application,Employee, Customer, Anonymous | Gets the collection of recommended elements given the (optional) contextual information as criteria. |
 
-**Transfer order controller**
+## Transfer order controller
 
 | API                      | Parameter                                                                                                        | Return value                           | Supported Commerce Roles | Description                                                       |
 |--------------------------|------------------------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------|-------------------------------------------------------------------|
@@ -491,7 +491,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | DeleteEntity             | TransferOrder entity                                                                                             | void                                   | Employee                 | Deletes the specified transfer order.                             |
 | CreateEntity             | TransferOrder entity                                                                                             | TransferOrder                          | Employee                 | Creates transfer order.                                           |
 
-**Purchase order controller**
+## Purchase order controller
 
 | API            | Parameter                               | Return value                    | Supported Commerce Roles | Description                                   |
 |----------------|-----------------------------------------|---------------------------------|--------------------------|-----------------------------------------------|
@@ -500,7 +500,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | PatchEntity    | PurchaseOrder entity                    | PurchaseOrder                   | Employee                 | Saves a purchase order to the local database. |
 | GetEntityByKey | string orderId                          | PurchaseOrder                   | Employee                 | Get a purchase order by order identifier.     |
 
-**Org units controller:**
+## Org units controller
 
 | API                                | Parameter                                                                                                                                                                         | Return value                          | Supported Commerce Roles                  | Description                                                                                             |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -519,6 +519,175 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetStoreHours                      | string storeNumber                                                                                                                                                                | StoreHours                            | Application,Employee, Customer, Anonymous | Retrieve the store hours for a given store number.                                                      |
 | GetEntityByKey                     | string orgUnitNumber                                                                                                                                                              | OrgUnit                               | Application,Employee, Customer, Anonymous | Gets organization entity by key.                                                                        |
 
+## Catalogs controller
 
+| API         | Parameter                                                                | Return value                     | Supported Commerce Roles                  | Description                   |
+|-------------|--------------------------------------------------------------------------|----------------------------------|-------------------------------------------|-------------------------------|
+| GetCatalogs | long channelId, bool activeOnly, QueryResultSettings queryResultSettings | PageResult&lt;ProductCatalog&gt; | Application,Employee, Customer, Anonymous | Gets catalogs by OData query. |
+
+## Categories controller
+
+| API           | Parameter                                                                | Return value                        | Supported Commerce Roles                  | Description                                             |
+|---------------|--------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|---------------------------------------------------------|
+| GetCategories | long channelId, QueryResultSettings queryResultSettings                  | PageResult&lt;Category&gt;          | Application,Employee, Customer, Anonymous | Gets categories by OData query.                         |
+| GetChildren   | long channelId, long categoryId, QueryResultSettings queryResultSettings | PageResult&lt;Category&gt;          | Application, Employee, Anonymous          | Gets subcategories by given Channel Id and Category Id. |
+| GetAttributes | long categoryId, QueryResultSettings queryResultSettings                 | PageResult&lt;AttributeCategory&gt; | Application                               | Gets categories' attributes by OData query.             |
+| Get           | QueryResultSettings queryResultSettings                                  | PageResult&lt;Category&gt;          | Application, Employee, Anonymous          | Gets full list of categories as IQueryable.             |
+
+## AppInfo controller
+
+| API                      | Parameter         | Return value | Supported Commerce Roles | Description                                           |
+|--------------------------|-------------------|--------------|--------------------------|-------------------------------------------------------|
+| UpdateApplicationVersion | string appVersion | void         | Employee                 | Updates the POS device's current application version. |
+
+## Attribute controller
+
+| API                     | Parameter                                                                                        | Return value                          | Supported Commerce Roles | Description                                                      |
+|-------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|------------------------------------------------------------------|
+| GetAttributeDefinitions | AttributeDefinitionCriteria attributeDefinitionCriteria, QueryResultSettings queryResultSettings | PageResult&lt;AttributeDefinition&gt; | Employee                 | Gets the attribute definitions by an attribute group identifier. |
+
+## Attribute group controller
+
+| API                          | Parameter                                                                                                  | Return value                               | Supported Commerce Roles | Description                                                                        |
+|------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------|--------------------------|------------------------------------------------------------------------------------|
+| GetAttributeGroupDefinitions | AttributeGroupDefinitionCriteria attributeGroupDefinitionCriteria, QueryResultSettings queryResultSettings | PageResult&lt;AttributeGroupDefinition&gt; | Employee                 | Gets the attribute group definitions by collection of attribute group identifiers. |
+
+## Audit event controller
+
+| API                      | Parameter             | Return value | Supported Commerce Roles                           | Description                                |
+|--------------------------|-----------------------|--------------|----------------------------------------------------|--------------------------------------------|
+| RegisterAuditEvent       | AuditEvent auditEvent | void         | Employee                                           | Performs the audit event saving operation. |
+| RegisterAndGetAuditEvent | AuditEvent auditEvent | AuditEvent   | Anonymous, Customer, Device, Employee, Application | Performs the audit event saving operation. |
+
+## Shifts controller
+
+| API                         | Parameter                                                                              | Return value                    | Supported Commerce Roles | Description                                                |
+|-----------------------------|----------------------------------------------------------------------------------------|---------------------------------|--------------------------|------------------------------------------------------------|
+| GetShift                    | long shiftId, string terminalId                                                        | Shift                           | Employee                 | Gets the shift by shift id and terminal id.                |
+| GetByStatus                 | int statusValue, QueryResultSettings queryResultSettings                               | PageResult&lt;Shift&gt;         | Employee                 | Gets the shifts by status.                                 |
+| GetByStatusFilterByUserRole | int statusValue, bool filterByUserRole, QueryResultSettings queryResultSettings        | PageResult&lt;Shift&gt;         | Employee                 | Gets the shifts by status.                                 |
+| GetByRetrievalCriteria      | ShiftRetrievalCriteria shiftRetrievalCriteria, QueryResultSettings queryResultSettings | PageResult&lt;Shift&gt;         | Employee                 | Gets the shifts by retrieval criteria.                     |
+| UpsertAndValidateShifts     | long? shiftId, string terminalId, IEnumerable&lt;Shift&gt; shifts                      | bool                            | Employee                 | Inserts or update given shifts and validate them.          |
+| DeleteShifts                |                                                                                        | bool                            | Employee                 | Delete shifts is not supported in the online context.      |
+| Open                        |                                                                                        | Shift                           | Employee                 | Opens a new shift.                                         |
+| Close                       | long shiftId, string terminalId, string transactionId, bool forceClose                 | Shift                           | Employee                 | Closes the shift for the given terminal.                   |
+| BlindClose                  | long shiftId, string terminalId, string transactionId, bool forceClose                 | Shift                           | Employee                 | Blind closes a shift.                                      |
+| ForceDelete                 | long shiftId, string terminalId, string transactionId                                  | void                            | Employee                 | Forcefully deletes a shift. Used to delete invalid shifts. |
+| Resume                      | long shiftId, string terminalId, string cashDrawer                                     | Shift                           | Employee                 | Resumes a shift.                                           |
+| Use                         | long shiftId, string terminalId                                                        | Shift                           | Employee                 | Uses an existing shift.                                    |
+| Suspend                     | long shiftId, string terminalId, string transactionId                                  | Shift                           | Employee                 | Suspends a shift.                                          |
+| PostShift                   | Shift shift                                                                            | HttpResponseMessage             | Employee                 | Handles POST requests that create new shift                |
+| PatchShift                  | long shiftId, string terminalId, Delta&lt;Shift&gt; delta                              | Shift                           | Employee                 | Handles Patch request that update existing shift.          |
+| GetXReport                  | long shiftId, string terminalId, string transactionId, string hardwareProfileId        | Receipt                         | Employee                 | Gets receipt for X report.                                 |
+| GetZReport                  | string transactionId, string hardwareProfileId                                         | Receipt                         | Employee                 | Gets receipt for Z report.                                 |
+| ValidateCashDrawerLimit     | string shiftTerminalId, long shiftId                                                   | void                            | Employee                 | Gets all suspended carts for given shift.                  |
+| GetSuspendedCartsByShift    | string shiftTerminalId, long shiftId, QueryResultSettings queryResultSettings          | PageResult&lt;SuspendedCart&gt; | Employee                 | Voids the suspended transactions for given shift.          |
+| VoidSuspendedCarts          | long shiftId, string shiftTerminalId                                                   | void                            | Employee                 | Voids the suspended transactions for given shift.          |
+
+## Async service controller
+
+| API                        | Parameter                                                     | Return value                      | Supported Commerce Roles | Description                     |
+|----------------------------|---------------------------------------------------------------|-----------------------------------|--------------------------|---------------------------------|
+| GetDownloadInterval        | string dataStoreName                                          | string                            | Device                   | Gets download interval.         |
+| GetUploadInterval          | GetUploadInterval                                             | string                            | Device                   | Gets upload interval.           |
+| GetTerminalDataStoreName   | string terminalId                                             | string                            | Device                   | Gets data store name.           |
+| GetDownloadLink            | string dataStoreName, long downloadSessionId                  | string                            | Device                   | Gets download link.             |
+| GetDownloadSessions        | string dataStoreName, QueryResultSettings queryResultSettings | PageResult&lt;DownloadSession&gt; | Device                   | Gets the download sessions.     |
+| GetInitialDownloadSessions | string dataStoreName, QueryResultSettings queryResultSettings | PageResult&lt;DownloadSession&gt; | Device                   | Gets initial download sessions. |
+| GetUploadJobDefinitions    | string dataStoreName, QueryResultSettings queryResultSettings | IEnumerable&lt;string&gt;         | Device                   | Gets the download sessions.     |
+| UpdateDownloadSession      | DownloadSession downloadSession                               | bool                              | Device                   | Update download session status. |
+| PostOfflineTransactions    | IEnumerable&lt;string&gt; offlineTransactionForMPOS           | bool                              | Device                   | Posts offline transactions.     |
+
+## Card type controller
+
+| API                          | Parameter                               | Return value                   | Supported Commerce Roles                  | Description                                                           |
+|------------------------------|-----------------------------------------|--------------------------------|-------------------------------------------|-----------------------------------------------------------------------|
+| GetCardTypes                 | QueryResultSettings queryResultSettings | PageResult&lt;CardTypeInfo&gt; | Application,Employee, Customer, Anonymous | Returns the list of card types.                                       |
+| GetSupportedPaymentCardTypes | QueryResultSettings queryResultSettings | PageResult&lt;string&gt;       | Application,Customer,Anonymous                                 | Returns the list of payment cards supported by the payment connector. |
+
+## Commission sales group controller
+
+| API                         | Parameter                                                  | Return value                           | Supported Commerce Roles | Description                                                                       |
+|-----------------------------|------------------------------------------------------------|----------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
+| GetCommissionSalesGroups    | QueryResultSettings queryResultSettings                    | PageResult&lt;CommissionSalesGroup&gt; | Employee                 | Gets collection of commission sales groups for the channel.                       |
+| SearchCommissionSalesGroups | string searchText, QueryResultSettings queryResultSettings | PageResult&lt;CommissionSalesGroup&gt; | Employee                 | Searches for the commission sales groups for the channel for a given search text. |
+
+## Environment configuration controller
+
+| API                         | Parameter | Return value             | Supported Commerce Roles         | Description                                                                                                     |
+|-----------------------------|-----------|--------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| GetEnvironmentConfiguration |           | EnvironmentConfiguration | Anonymous, Employee, Application | Gets a single environment configuration.                                                                        |
+| GetExtensionProfile         |           | ExtensionProfile         | Anonymous, Employee, Application | Gets the extension profile which can be used to download extension package and communicate with micro-services. |
+
+## Extension package definition controller
+
+| API                            | Parameter                               | Return value                                  | Supported Commerce Roles      | Description                                        |
+|--------------------------------|-----------------------------------------|-----------------------------------------------|-------------------------------|----------------------------------------------------|
+| GetExtensionPackageDefinitions | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensionPackageDefinition&gt; | Device, Employee, Application | Gets the configured extension package definitions. |
+
+## Extensible enumeration package definition controller
+
+| API                       | Parameter                               | Return value                                      | Supported Commerce Roles                                       | Description                              |
+|---------------------------|-----------------------------------------|---------------------------------------------------|----------------------------------------------------------------|------------------------------------------|
+| GetExtensibleEnumerations | QueryResultSettings queryResultSettings | IEnumerable&lt;ExtensibleEnumerationContainer&gt; | Device, Employee, Application, Anonymous, Customer, Storefront | Gets all extensible enumeration classes. |
+
+## Loyalty card controller
+
+| API                                                   | Parameter                                                                                          | Return value                                 | Supported Commerce Roles | Description                                                                       |
+|-------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------|--------------------------|-----------------------------------------------------------------------------------|
+| IssueLoyaltyCard                                      | LoyaltyCard loyaltyCard                                                                            | LoyaltyCard                                  | Employee, Customer       | Issues a new loyalty card.                                                        |
+| GetLoyaltyCard                                        | string cardNumber                                                                                  | LoyaltyCard                                  | Employee, Customer       | Gets a loyalty card.                                                              |
+| GetCustomerLoyaltyCards                               | string accountNumber, QueryResultSettings queryResultSettings                                      | PageResult&lt;LoyaltyCard&gt;                | Employee, Customer       | Gets the customer loyalty cards.                                                  |
+| GetLoyaltyCardTransactions                            | string cardNumber, string rewardPointId, QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyCardTransaction&gt;     | Employee, Customer       | Gets the loyalty card transactions.                                               |
+| GetLoyaltyRewardPointActivityTimeline                 | string cardNumber, string rewardPointId, QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyRewardPointActivity&gt; | Employee, Customer       | Gets the timeline activity for the reward point of a loyalty card.                |
+| GetLoyaltyRewardPointActivityTimelineForExpiredPoints | string cardNumber, string rewardPointId, QueryResultSettings queryResultSettings                   | PageResult&lt;LoyaltyRewardPointActivity&gt; | Employee, Customer       | Gets the expired points timeline activity for the reward point of a loyalty card. |
+| GetLoyaltyRewardPointsExpiringSoon                    | string cardNumber, string rewardPointId, int daysToExpiry, QueryResultSettings queryResultSettings | PageResult&lt;LoyaltyRewardPointActivity&gt; | Employee, Customer       | Gets the loyalty card reward points that are going to expire soon.                |
+
+## Non sales transaction tender operations controller
+
+| API                       | Parameter                                                                                                    | Return value                          | Supported Commerce Roles | Description                                                                                         |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------|
+| GetNonSalesTransactions   | string shiftId, string shiftTerminalId, int nonSalesTenderTypeValue, QueryResultSettings queryResultSettings | PageResult&lt;NonSalesTransaction&gt; | Employee                 | Gets the aggregated amount for non sale tender operation.                                           |
+| CreateNonSalesTransaction | NonSalesTransaction nonSalesTransaction                                                                      | NonSalesTransaction                   | Employee                 | Performs saving drawer type of operations like declare start amount / tender removal / float entry. |
+| GetAffiliations           | QueryResultSettings queryResultSettings                                                                      | PageResult&lt;Affiliation&gt;         | Employee                 | Gets affiliations.                                                                                  |
+
+## Operations controller
+
+| API                            | Parameter                                                                                          | Return value                                  | Supported Commerce Roles | Description                                                                  |
+|--------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------------------|--------------------------|------------------------------------------------------------------------------|
+| GetOperationPermissionById     | int operationId                                                                                    | OperationPermission                           | Employee                 | Gets Operation permission by using operation identifier.                     |
+| GetOperationPermissions        | QueryResultSettings queryResultSettings                                                            | PageResult&lt;OperationPermission&gt;         | Employee                 | Returns a collection of operation permissions.                               |
+| SearchJournalTransactions      | TransactionSearchCriteria searchCriteria, QueryResultSettings queryResultSettings                  | PageResult&lt;Transaction&gt;                 | Employee                 | Returns a collection of transactions matching the specified search criteria. |
+| GetInventoryAvailableToPromise | long productId, string itemId, string inventoryLocationId, QueryResultSettings queryResultSettings | PageResult&lt;InventoryAvailableToPromise&gt; | Employee                 | Get available inventory across all stores for a product.                     |
+| VoidSuspendedTransactions      | IEnumerable&lt;string&gt; suspendedCartIds                                                         | void                                          | Employee                 | Void the suspended transactions specified by given cart ids.                 |
+
+## Shift reconciliation lines controller
+
+| API                         | Parameter                                                                                                                  | Return value                              | Supported Commerce Roles | Description                                                                             |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------|
+| GetShiftReconciliationLines | ShiftReconciliationLineRetrievalCriteria shiftReconciliationLineRetrievalCriteria, QueryResultSettings queryResultSettings | PageResult&lt;ShiftReconciliationLine&gt; | Employee                 | Gets download interval.                                                                 |
+| ReconcileLines              | IEnumerable&lt;ShiftReconciliationLine&gt; lines, string description                                                       | void                                      | Employee                 | Reconciles the lines.                                                                   |
+| UndoReconciliation          | IEnumerable&lt;ShiftReconciliationLine&gt; lines                                                                           | void                                      | Employee                 | Unreconciles all the lines that are a part of any of the groups in the lines passed in. |
+
+## Stock count journal controller
+
+| API                                | Parameter                                                                                                         | Return value                                   | Supported Commerce Roles | Description                                                                                               |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------|
+| Get                                | QueryResultSettings queryResultSettings                                                                           | PageResult&lt;StockCountJournal&gt;            | Employee                 | Gets StockCountJournal entities as IQueryable.                                                            |
+| Sync                               | QueryResultSettings queryResultSettings                                                                           | PageResult&lt;StockCountJournal&gt;            | Employee                 | Syncs the Stock Count journal from AX to RetailServer DB and gets the current list of SC journal from DB. |
+| SyncTransactions                   | string journalId, QueryResultSettings queryResultSettings                                                         | PageResult&lt;StockCountJournalTransaction&gt; | Employee                 | Syncs the Stock Count journal from AX to RetailServer and gets the current list of journal transactions.  |
+| RemoveJournal                      | string journalId                                                                                                  | void                                           | Employee                 | Deletes the stock count journals from local.                                                              |
+| RemoveTransaction                  | string journalId, string itemId, string inventSizeId, string inventColorId, string inventStyleId, string configId | void                                           | Employee                 | Deletes the stock count journal transaction from local.                                                   |
+| RemoveStockCountLineByLineId       | string journalId, long stockCountLineId                                                                           | void                                           | Employee                 | Deletes the stock count journal transaction from local by stock count line identifier.                    |
+| RemoveStockCountLineByProductRecId | string journalId, long productRecId                                                                               | void                                           | Employee                 | Deletes the stock count journal transaction from local by product identifier.                             |
+| Commit                             | string journalId                                                                                                  | void                                           | Employee                 | Commits the list of Stock journal transactions to AX.                                                     |
+| GetEntityByKey                     | string journalId                                                                                                  | StockCountJournal                              | Employee                 | Creates journal entity.                                                                                   |
+| UpdateEntity                       | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Updates journal entity.                                                                                   |
+| PatchEntity                        | StockCountJournal entity                                                                                          | StockCountJournal                              | Employee                 | Partially updates journal entity.                                                                         |
+## Scan result controller
+
+| API            | Parameter          | Return value | Supported Commerce Roles | Description                        |
+|----------------|--------------------|--------------|--------------------------|------------------------------------|
+| GetEntityByKey | string scannedText | ScanResult   | Employee                 | Gets the ScanResult entity by key. |
 
 

@@ -2,8 +2,8 @@
 
 # required metadata
 
-title:  Career site functionality in Attract
-description: This topic provides an overview of the candidate-facing career site functionality in Attract.
+title:  Set up your career site in Microsoft Dynamics 365 for Talent - Attract
+description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 
 ---
 
-# Career site functionality in Attract
+# Set up your career site
 
 [!include[banner](../includes/banner.md)]
 

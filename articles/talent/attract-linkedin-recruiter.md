@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Source candidates with LinkedIn Recruiter
+title: Source candidates with LinkedIn Recruiter in Microsoft Dynamics 365 for Talent - Attract
 description: Use the LinkedIn integration provided by Microsoft Dynamics 365 for Talent - Attract to source job candidates through LinkedIn Recruiter.
 author: andreabichsel
 manager: AnnBe

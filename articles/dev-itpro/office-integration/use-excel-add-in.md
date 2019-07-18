@@ -66,7 +66,7 @@ The Excel add-in automatically reads the data for the entity that you selected. 
 
 6. Select **OK**, and then select **Yes** to confirm the change. The Excel add-in is restarted and loads metadata.
 
-    The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the [Troubleshooting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) section of this topic.
+    The **Design** button is now available. If the Excel add-in has a **Load applets** button, you probably aren't signed in as the correct user. For more information, see "The Load applets button is shown" in the [Troubleshooting](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) section of this topic.
 
 7. Select **Design**. The Excel add-in retrieves entity metadata.
 8. Select **Add table**. A list of entities appears. The entities are listed in "Name - Label" format.

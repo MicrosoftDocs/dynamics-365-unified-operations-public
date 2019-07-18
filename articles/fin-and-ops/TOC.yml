@@ -1990,7 +1990,7 @@
               href: ../financials/localizations/apac-ind-GST-purchases-registered-vendor.md
             - name: Purchases of discounted goods
               href: ../financials/localizations/apac-ind-GST-purchase-discounted-goods.md
-            - name: Purchase of exampted goods
+            - name: Purchase of exempted goods
               href: ../financials/localizations/apac-ind-GST-purchase-exempted-goods.md
             - name: Purchase of zero-rated goods
               href: ../financials/localizations/apac-ind-GST-purchase-zero-rated-goods.md
@@ -2042,7 +2042,7 @@
               href: ../financials/localizations/apac-ind-GST-credit-note-against-sales-invoice.md
             - name: Sales invoices that are split based on delivery addresses
               href: ../financials/localizations/apac-ind-GST-sales-invoice-split-based-on-delivery-addresses.md
-            - name: Return oders
+            - name: Return orders
               href: ../financials/localizations/apac-ind-GST-return-order-form.md
           - name: Foreign transactions
             items:
@@ -2541,18 +2541,18 @@
             href: ../financials/localizations/rus-company-divisions.md
         - name: Deferrals
           items:
-          - name: Deferral transactions
-            href: ../financials/localizations/rus-deferral-transactions.md
           - name: Set up deferrals
             href: ../financials/localizations/rus-set-up-deferrals.md
           - name: Create or generate referrals
             href: ../financials/localizations/rus-create-generate-deferrals.md
-          - name: Deferrals counting
-            href: ../financials/localizations/rus-counting-deferrals.md
+          - name: Receipt of deferrals
+            href: ../financials/localizations/rus-deferral-transactions.md
           - name: Write-off deferrals
             href: ../financials/localizations/rus-write-off-deferral.md
-          - name: Dispose of deferrals 
+          - name: Dispose of deferrals
             href: ../financials/localizations/rus-dispose-deferrals.md
+          - name: Deferrals counting
+            href: ../financials/localizations/rus-counting-deferrals.md
           - name: Reporting for deferrals
             href: ../financials/localizations/rus-reporting-deferrals.md
       - name: Saudi Arabia
@@ -3007,7 +3007,7 @@
         href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json  
     - name: Formula designer in Electronic reporting
       href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-    - name: Manage ER model mpaping in separate ER configurations
+    - name: Manage ER model mapping in separate ER configurations
       href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
     - name: Select data model definitions when you create formats
       href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
@@ -3063,7 +3063,7 @@
         href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
     - name: Dynamically add columns to Excel reports as horizontally expandable ranges
       items:
-      - name: Design formats to dynamically addcolumns to Excel repots as horizontally expandable ranges
+      - name: Design formats to dynamically add columns to Excel repots as horizontally expandable ranges
         href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
       - name: Run formats to dynamically add columns to Excel repots as horizontally expandable ranges
         href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
@@ -3071,7 +3071,7 @@
       items: 
       - name: Prepare data models to use Document management files in ER outputs
         href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-      - name: Extend dtaa models to use Document management files in ER outputs
+      - name: Extend data models to use Document management files in ER outputs
         href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
       - name: Create formats to use Document management files in ER outputs
         href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
@@ -3083,13 +3083,13 @@
       items:
       - name: Generate electronic documents and update application data
         href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
-      - name: Import configurations to generate documents iwth application data
+      - name: Import configurations to generate documents with application data
         href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
-      - name: Design configurations to generate documents iwth applciation data
+      - name: Design configurations to generate documents with application data
         href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-      - name: Modify models and mappings to generate documents with applciation data
+      - name: Modify models and mappings to generate documents with application data
         href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
-      - name: Modify formats to generate documents with applciation data
+      - name: Modify formats to generate documents with application data
         href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
       - name: Generate documents that have application data
         href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
@@ -3105,9 +3105,9 @@
         href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
       - name: Import files in XML format
         items:
-        - name: Import files in XML format with optional atrributes
+        - name: Import files in XML format with optional attributes
           href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
-        - name: Configure ER formtas to import XML format files with optional attributes
+        - name: Configure ER formats to import XML format files with optional attributes
           href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
@@ -3125,7 +3125,7 @@
         href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
       - name: Download ER configurations from the RCS repository
         items: 
-        - name: Download configurations from the ER repository fo the RCS type
+        - name: Download configurations from the ER repository of the RCS type
           href: ../dev-itpro/analytics/rcs-download-configurations.md?toc=/fin-and-ops/toc.json
         - name: Import configurations from RCS
           href: ../dev-itpro/analytics/tasks/import-configuration-rcs.md
@@ -3133,13 +3133,13 @@
       items: 
       - name: Configure the framework
         items: 
-        - name: Configure the Electronic rpeorting framework
+        - name: Configure the Electronic reporting framework
           href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
         - name: Create configuration provides and mark them as active
           href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
       - name: Destinations
         items: 
-        - name: Destimations overview
+        - name: Destinations overview
           href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
         - name: Configure destinations
           href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
@@ -3157,7 +3157,7 @@
           href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
         - name: Generate printable free text invoice (FTI) forms
           href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
-      - name: Trace execution of ER ormats to troublehsoot performance issues
+      - name: Trace execution of ER formats to troubleshoot performance issues
         href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
     - name: ER framework API
       items: 

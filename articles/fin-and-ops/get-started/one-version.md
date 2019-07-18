@@ -55,7 +55,7 @@ Customers can always choose to apply the update at an earlier time, or if there 
 
 | Version       | Description |
 |---------------|-------------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 3 months or 2 service updates. To pause an update, refer to [Pause service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
+| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 3 months or 2 service updates. To pause an update, refer to [Pause service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
 | 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months or 2 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 8.1 topic](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
 | 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months and 2 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
 
@@ -206,7 +206,7 @@ The What’s new or Changed documentation is the primary source for the details 
 
 ### How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
 
-Deprecated features will be documented with each release.  For more information, see [Removed or Deprecated features](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json).  
+Deprecated features will be documented with each release.  For more information, see [Removed or Deprecated features](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/fin-and-ops/toc.json).  
 
 ## Preparing for One Version
 

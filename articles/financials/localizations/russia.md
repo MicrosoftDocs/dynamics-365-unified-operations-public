@@ -39,7 +39,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Correspondence of accounts](rus-correspondence-accounts.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
-- [Import currency exchange rates from CBRF](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates)
+- [Import currency exchange rates from CBRF](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates)
 
 ## Advance holders
 
@@ -53,13 +53,13 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Bank
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
-- [Set up and process payment orders](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
-- [Foreign currency sales, purchases, and transfers](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-currency-sale-purchase)
+- [Set up and process payment orders](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
+- [Foreign currency sales, purchases, and transfers](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-currency-sale-purchase)
 
 ## VAT
 
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
-- [VAT declaration](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
+- [VAT declaration](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
@@ -103,12 +103,12 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 ## Deferrals
 
-- [Deferral transactions](rus-deferral-transactions.md)
 - [Set up deferrals](rus-set-up-deferrals.md)
 - [Create or generate referrals](rus-create-generate-deferrals.md)
-- [Deferrals counting](rus-counting-deferrals.md)
+- [Receipt of deferrals](rus-deferral-transactions.md)
 - [Write-off deferrals](rus-write-off-deferral.md)
 - [Dispose of deferrals](rus-dispose-deferrals.md)
+- [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)
 
 ## Additional resources
