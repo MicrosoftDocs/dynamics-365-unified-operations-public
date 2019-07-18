@@ -116,8 +116,8 @@ MARITALSTATUS | = | familystatuscode
 ISRECEIVINGDIRECTMAIL | = | donotemail
 EMPLOYMENTPROFESSION | = | jobtitle
 SPOUSENAME | = | spousesname
- | >< | msdyn_contactforvendor
- | >< | msdyn_contactpersonid
+  | >< | msdyn_contactforvendor
+  | >< | msdyn_contactpersonid
 
 ## Customer Groups
 
