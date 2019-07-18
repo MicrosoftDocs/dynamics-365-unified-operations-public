@@ -70,23 +70,23 @@ Changes described in this section apply to build number 8.1.2390.
 
 ### Unable to see goals and reviews in manager self-service
 
-This week's changes now allow displaying and editing of goals and reviews for skip level managers in manager self-service.
+This week's changes now allow displaying and editing of goals and reviews for skip-level managers in manager self-service.
 
-### Goal form cannot be closed once user edits any goal field
+### Goal form cannot be closed after a user edits any goal field
 
-This week's release corrects an issue where the goal form does not close when selecting **Close**.
+This release corrects an issue where the goal form does not close when selecting **Close**.
 
 ### Creating new goals and saving displays error
 
-This week's release corrects an issue when saving goals in employee and manager self-service.
+This release corrects an issue when saving goals in employee and manager self-service.
 
-### Unable to add a field to Position details 
+### Unable to add a field to position details 
 
 With this release, custom fields are now supported on position details.
  
 ### Unable to set up expiring date on the earning code through data management
 
-This week's release includes a change to allow setting expiration dates on earning codes in data management.
+Changes now allow you to set expiration dates on earning codes in data management.
 
 ### New custom fields don't sync quickly enough
 
