@@ -114,6 +114,29 @@ Document management appears to users as the **Attach** button (keyboard shortcut
 
 The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
 
+## Attachment recovery
+
+In platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments that allows them to be recovered within a configured period of time.
+
+### Configuration of attachment recovery
+
+Attachment recovery can be enabled via **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The **Number of days to defer deletion** defaults to 30 days, but can be changed as needed. A **Number of days to defer deletion** value of zero means that the deleted attachments will be recoverable for an indefinite period. 
+
+Once attachment recovery is enabled, a batch job will be created: **Scans for deleted references which have reached the end of their retention period**. This batch job will use the **Number of days to defer deletion** to determine how long to keep a deleted attachment based on its **Deleted data and time**.
+
+### Deleting attachments when attachment recovery is active
+
+When a user deletes an attachment, a notification will be added to the Message Center providing a confirmation of the deletion and an undo action that can be used in case the deletion was accidental.
+
+Table extension support has been built-in, so that any extension, or custom, field values, on the **DocuRef** or **DocuValue** tables, will be retained to enable their recovery. 
+
+### Recovering attachments
+
+When attachment recovery is enabled, attachments can be recovered in one of three ways:
+1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification
+2. On the **Attachments** form, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
+3. In **System administration** > **Inquiries**, the **Deleted attachments** form provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+
 ## Frequently asked questions
 
 ### What is the difference between document handling and document management?
