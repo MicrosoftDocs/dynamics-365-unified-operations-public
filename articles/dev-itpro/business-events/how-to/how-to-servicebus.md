@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2019-6-30
 # Consume business events by using Azure Service Bus
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to configure a Microsoft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
+This topic explains how to configure a Microsoft Azure Service Bus endpoint and Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
 
 ## Scenario overview
 
@@ -83,7 +83,7 @@ Here is an overview of the procedures that you must complete:
 In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault on behalf of Finance and Operations.
 
 1. In the Azure portal, select **All services \> Security \> Key vaults**.
-2. Create a new key vault in your resource group and **default parameters**.
+2. Create a new key vault in your resource group and set the default parameters.
 
     <img alt="New Key Vault" src="../../media/BEF-Howto-Keyvault-02.png" width="50%">
 
@@ -130,29 +130,29 @@ In this procedure, you will register a new application with Azure AD, and give i
 ## Configure a Business Events endpoint in Finance and Operations
 
 1. Sign in to Finance and Operations.
-2. Go to **System administration \> Setup \> System parameters**.
-3. On the **Business events** tab, select **Business events**.
-4. Select **Endpoints**.
-5. Select **New**.
-6. Select **Azure Service Bus Topic**.
-7. Select **Next**.
-8. Set the required parameter values.
+2. Go to **System administration \> Setup \> Business events**.
+3. Select **Endpoints**.
+4. Select **New**.
+5. Select **Azure Service Bus Topic**.
+6. Select **Next**.
+7. Set the required parameter values.
 
     <img alt="Service Bus Endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
-9. Select **OK**.
+8. Select **OK**.
 
 ## Consume a business event
 
 The business scenario involves sending an email or a message to a team channel whenever a customer payment is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the amount of the payment.
 
-1. Activate the customer payment posted business event for the USMF company.
+1. In F&O select the business event catalog and look for **customer payment posted** business event
+2. Activate the business event for USMF company.
 
     <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
 
-    After you activate a business event with a new endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
+    After you activate a business event that uses the new service bus endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
 
-2. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
+3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
 
     <img alt="Service Bus message count" src="../../media/BEF-Howto-servicebus-10.png" width="70%">
 
@@ -166,7 +166,7 @@ The business scenario involves sending an email or a message to a team channel w
 7. Select the trigger that is named **When a message is received in a topic subscription (auto-complete)**.
 
     > [!NOTE] 
-    > Auto-complete means that the message is deleted from the subscription queue after it's retrieved. Peek-lock authorizes concurrent consumers. It requires a call to the Service Bus **complete** application programming interface (API) command to delete the message.
+    > Auto-complete means that the message is deleted from the subscription queue after it's retrieved. Peek-lock authorizes concurrent consumers. It requires a call to the **complete** command of the Service Bus application programming interface (API) in order to delete the message.
 
     Because Logic Apps is accessing your Service Bus for the first time, it asks for a new connection. This connection will cache connection details as a Service Bus namespace URL and credential.
 
@@ -199,12 +199,12 @@ The business scenario involves sending an email or a message to a team channel w
 
     Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
-15. In Finance and Operations, select your event in the catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
-16. Go back to Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
+15. In Finance and Operations, select your event in the business event catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
+16. Go back to your Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
 
     <img alt="message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">
 
-17. Depending on the quality of your sample payload, your generator won't recognize an integer from a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
+17. Depending on the quality of your sample payload, your generator won't be able to distinguish an integer from a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
 
     <img alt="jason data types " src="../../media/BEF-Howto-servicebus-23.png" width="70%">
 
