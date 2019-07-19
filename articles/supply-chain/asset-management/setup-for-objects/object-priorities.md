@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Asset service levels
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains asset service levels in Asset Management. Asset service levels are related to assets, and are transferred to maintenance requests and work orders. They are used to calculate the priority of work orders during work order scheduling. Asset service levels can be changed, if changes are required.
 
