@@ -1,6 +1,6 @@
 # Hero
 
-Hero is used to market products or promotions using rich imagery combined with some text. For example, a new product is launched in the ecommerce site and the retailer wants to promote this product on the homepage to get the shoppers attention. 
+Hero is used to market products or promotions using rich images. For example, a new product is launched in the ecommerce site and the retailer wants to promote this product on the homepage to get the shoppers attention. 
 
 Hero module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context or any other modules on the page. Technically this allows Hero to be placed on any page where a C1 wants to promote content.
 
