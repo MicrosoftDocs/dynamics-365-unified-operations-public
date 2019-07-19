@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create an asset
 
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to create an asset in Asset Management.
 
@@ -70,7 +71,7 @@ resource groups are set up in **Organization administration** > **Resources** > 
 
 In the **Fixed assets number** field, you can select a fixed asset to be related to the asset. This is relevant if your asset is related to an investment project.
 
-- If the asset is related to a fixed asset, you can create a work order type to be used for work orders related to an investment project. Read more about work order types in [Work order types](../setup-for-work-orders/work-order-types.md).  
+- If the asset is related to a fixed asset, you can create a work order type to be used for work orders related to an investment project. 
 - Information about fixed assets for an asset is related to the **Fixed assets** module in Dynamics 365 for Finance and Operations. This means that in **Fixed assets** > **Fixed assets** > **Fixed assets**, you can get an overview of the Asset Management projects that may be related to a fixed asset by selecting the asset in the list and viewing the contents in the **Related information** pane > **Associated projects** section.
 
 
@@ -103,7 +104,7 @@ On the **Address** FastTab, you can insert the address of the equipment. If no a
 
 ## Asset management plans
 
-Maintenance plans are used for scheduling preventive maintenance jobs at regular intervals on the asset. On this FastTab, you can set up maintenance plan lines for the selected asset. Read more in [Maintenance plans](../preventive-and-reactive-maintenance/maintenance-sequences.md). Maintenance rounds can be set up for various assets, on which you need to carry out a similar task at regular intervals. Read more in [Maintenance rounds](../preventive-and-reactive-maintenance/rounds.md). On the **Functional location maintenance plans** tab, you see the maintenance plans related to the functional location on which the asset is installed.
+Maintenance plans are used for scheduling preventive maintenance jobs at regular intervals on the asset. On this FastTab, you can set up maintenance plan lines for the selected asset. Maintenance rounds can be set up for various assets, on which you need to carry out a similar task at regular intervals. On the **Functional location maintenance plans** tab, you see the maintenance plans related to the functional location on which the asset is installed.
 
 >[!NOTE]
 >If you delete a maintenance plan line or a maintenance round related to an asset in **All Asset**, you also automatically delete all maintenance schedules with status "Created" that have been created based on that maintenance plan or maintenance round.
