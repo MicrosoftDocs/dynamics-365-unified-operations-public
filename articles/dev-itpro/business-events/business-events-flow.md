@@ -58,7 +58,7 @@ Multiple flows can subscribe to the same business event in different legal entit
 > [!NOTE]
 > The Flow endpoint in Finance and Operations must not be configured manually in Finance and Operations. The endpoint will automatically get created from Flow as explained above.
 
-For a how-to guide for using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
+For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
 
 ## Other ways to consume business events in Microsoft Flow
 
