@@ -90,7 +90,7 @@ To add a fragment to your page:
 6. Click “OK”, and the new fragment will be added to your page within the originally selected container/slot.
 
 > [!NOTE]
-> Modules allowed within a container or slot are defined by the page’s template or the module's own definition, both of which are covered elsewhere.
+> Modules allowed within a container or slot are defined by the page’s template or the module's own definition.  Read the module authoring and template authoring documentation for more information.
 
 ## Remove a fragment
 
