@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Condition assessment
 
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create a condition assessment template and registration on an asset in Asset Management. Condition assessment is performed at regular intervals, and the primary objective is to create and maintain condition data on assets. Seen from a preventive maintenance perspective, it is important to monitor key information such as current condition, and remaining life span. Furthermore, if you carry out condition assessment at regular intervals, you will be able to monitor and compare conditions on the machinery in your factory.
 
