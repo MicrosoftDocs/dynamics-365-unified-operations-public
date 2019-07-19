@@ -6,22 +6,20 @@ Hero module is driven by CMS data which can authored in the tooling. It’s a st
 
 Usage examples in ecommerce:
 
-* Hero is used on the ecommerce home page to highlight promotions and new products
-
-1. Hero is used in a product details page to showcase product information
-
-\-          Multiple Hero modules can be placed within a carousel to highlight multiple products or promotions in the store
+- Hero is used on the ecommerce home page to highlight promotions and new products
+- Hero is used in a product details page to showcase product information
+- Multiple Hero modules can be placed within a carousel to highlight multiple products or promotions in the store
 
 ## Hero module properties
 
 | Property name  | Values                                                       | Property Description                                         |
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Image          | Image file                                                   | This is the image that will be used to showcase a product or a   promotion on the Hero. An image can uploaded to the image gallery or an   existing image can be used. |
-| Heading        | Heading Text = free form text   Heading tag = H1, H2, H3, H4, H5, H6 | A hero can have a heading which is embedded on the image. Heading   supports heading tag which defaults to H2 but can be customized to meet   accessibility requirements |
-| Paragraph      | RichText = free form text                                    | Hero has the flexibility to supports additional lines to text as rich   text. Some basic rich text functionality is supported such a Bold, Underline,   Italics, hyperlinks etc. Some of these capabilities may be overridden by the page   theme applied on the module. |
-| Link           | Link text   Link url   Aria label   Open link in new tab     | A Hero can have one or more call to actions. E.g. “Shop Now” which   redirects the shopper to the link       If a link is added, text, url and aria label must be provided.       Aria-label should be descriptive for accessibilty.       If user wants to open the link in a new tab, there is a configuration   to support that. |
-| Text placement | Top Left   Top Right   Top Center   Bottom Left   Bottom Right   Bottom Center   Center Left   Center Right   Center Center | A total of 9 values are supported for text placement and defines the   position on the image where text can be placed |
-| Color scheme   | Light text on dark background   Dark text on light background | A color scheme can be defined for the text based on the image on the   background. If the image has dark background a light theme can be applied on   the text to make it visible and to meet color contrast ratios for   accessibilty. |
+| Heading        | Heading Text = free form text <br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | A hero can have a heading which is embedded on the image. Heading   supports heading tag which defaults to H2 but can be customized to meet   accessibility requirements |
+| Paragraph      | Rich Text = free form text                                   | Hero has the flexibility to supports additional lines to text as rich   text. Some basic rich text functionality is supported such a Bold, Underline,   Italics, hyperlinks etc. Some of these capabilities may be overridden by the page   theme applied on the module. |
+| Link           | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Hero can have one or more call to actions. E.g. “Shop Now” which   redirects the shopper to the link       If a link is added, text, url and aria label must be provided.       Aria-label should be descriptive for accessibilty.       If user wants to open the link in a new tab, there is a configuration   to support that. |
+| Text placement | Top Left<br />Top Right<br />Top Center<br />Bottom Left<br />Bottom Right<br />Bottom<br />Center Left<br />Center Right<br />Center Center | A total of 9 values are supported for text placement and defines the   position on the image where text can be placed |
+| Color scheme   | Light text on dark background<br />Dark text on light background | A color scheme can be defined for the text based on the image on the   background. If the image has dark background a light theme can be applied on the text to make it visible and to meet color contrast ratios for accessibilty. |
 
  
 
@@ -29,26 +27,26 @@ Usage examples in ecommerce:
 
 This section explains how to add a Hero module to a new page and set the required properties for the Hero. Refer to Templates and Pages for more details on these actions.
 
-\1.       We need to first create a template. In tooling, add a new page template “Hero template”.
+1. We need to first create a template. In tooling, add a new page template “Hero template”.
 
-\2.       In the Main slot of the Default Page, add a Hero module. A hero can be placed directly on the page or within a container<link>.  Multiple Hero images can be placed within a Carousel <link>. 
+2. In the Main slot of the Default Page, add a Hero module. A hero can be placed directly on the page or within a container<link>.  Multiple Hero images can be placed within a Carousel <link>. 
 
-\3.       Check-in and Publish. 
+3. Check-in and Publish. 
 
-\4.       Now create a new page with the “Hero template” and call it “Hero page”
+4. Now create a new page with the “Hero template” and call it “Hero page”
 
-\5.       In the page outline, add Default Page and then add Hero module to the Main slot.
+5. In the page outline, add Default Page and then add Hero module to the Main slot.
 
-\6.       Expand the Hero properties, add Image. From the image picker, choose an existing image or upload a new asset. 
+6. Expand the Hero properties, add Image. From the image picker, choose an existing image or upload a new asset. 
 
-\7.       Add a Heading to the Hero, change the default text as needed.
+7. Add a Heading to the Hero, change the default text as needed.
 
-\8.       Add a Paragraph, change the default text as needed.
+8. Add a Paragraph, change the default text as needed.
 
-\9.       Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
+9. Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
 
-\10.   Save the page and preview the changes.
+10. Save the page and preview the changes.
 
-\11.   Other properties of Hero can be changed to achieve a more customized Hero – Text placement, Color scheme etc
+11. Other properties of Hero can be changed to achieve a more customized Hero – Text placement, Color scheme etc
 
-\12.   Check-in and Publish
+12. Check-in and Publish
