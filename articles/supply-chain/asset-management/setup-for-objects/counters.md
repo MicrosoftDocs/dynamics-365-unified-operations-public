@@ -36,9 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The topic explains how to create asset measure types in Asset Management. Asset measure types are used to make measurement registrations on assets, for example, regarding number of production hours, or quantity produced on the asset. Asset types are related to the asset measure types. This means that an asset measure can only be used on an asset if the asset measure is set up on the asset type used on the asset.
 
-Before you can make measurement registrations on assets, you first create the asset measure types you want to use in **Counters**. Next, you can create measurement registrations on assets in **Asset measures**, which is described in [Working on work orders](../work-orders/working-on-work-orders.md). 
+Before you can make measurement registrations on assets, you first create the asset measure types you want to use in **Counters**. Next, you can create measurement registrations on assets in **Asset measures**. 
 
-Asset measures can be used on maintenance plans. A maintenance plan line can be of type "Counter", for example, relating to number of production hours or quantity produced. Refer to the [Maintenance plans](../preventive-and-reactive-maintenance/maintenance-sequences.md) section for more information on maintenance plans using asset measures.
+Asset measures can be used on maintenance plans. A maintenance plan line can be of type "Counter", for example, relating to number of production hours or quantity produced. 
 
 An asset measurement registration can be updated manually or automatically based on production hours or quantity produced. An asset measure can be set up to use one of three update methods (selected in the **Update** field in **Counters**):
   
@@ -74,4 +74,3 @@ When asset types are added to an asset measure type in **Counters**, that asset 
 
 ![Figure 2](media/08-setup-for-objects.png)
 
-Read more about manual and automatic asset measure registrations in [Working on work orders](../work-orders/working-on-work-orders.md).
