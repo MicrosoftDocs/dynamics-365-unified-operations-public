@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a guide for the master planning setup wizard. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
+This topic provides a guide for the **Master planning setup wizard**. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
 
 ## Specific requirements of your company
 
@@ -80,15 +80,15 @@ For example, for the forecast plan feature, the wizard asks, "Do you want to use
 
 The following options are available:
 
-- **No** – Master planning won't suggest planned orders to fulfill a forecast. On the **Time fences** tab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**), the wizard will set the **Forecast plan** option to **Yes** and set the number of days to **0** (zero). This setup will override the time fence that is specified in the coverage group. Because the number of days is set to **0** (zero), the feature won't be used.
-- **Yes, as defined in this master plan** – A field becomes available, where you can enter the number of days that master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the **Forecast plan time fence** option to **Yes** and set the number of days to the number of days that is entered in the **Forecast plan** field on the **Time fences** tab of the **Master plans** page. This setup will override the values that are set in the coverage groups.
-- **Yes, as defined in the coverage** – The wizard will set the **Forecast plan** option to **No**. The time fences that are specified in the coverage group will be used to specify how long you will plan for the forecast.
+- **No** – Master planning won't suggest planned orders to fulfill a forecast. On the **Time fences** tab of the **Master plans** page (**Master planning \> Setup \> Plans \> Master plans**), the wizard will set the **Forecast plan (time fence)** option to **Yes** and set the number of days to **0** (zero). This setup will override the time fence that is specified in the coverage group. Because the number of days is set to **0** (zero), the feature won't be used.
+- **Yes, as defined in this master plan** – A field becomes available, where you can enter the number of days that master planning will suggest planned orders to fulfill the forecasted demand. The wizard will set the **Forecast plan (time fence)** option to **Yes** and set the number of days to the number of days that is entered in the **Forecast plan** field on the **Time fences** tab of the **Master plans** page. This setup will override the values that are set in the coverage groups.
+- **Yes, as defined in the coverage** – The wizard will set the **Forecast plan (time fence)** option to **No**. The time fences that are specified in the coverage group will be used to specify how long you will plan for the forecast.
 
 The remaining questions on this page and their answers follow the same schema:
 
-- **No** – The **Forecast plan time fence** option will be set to **Yes**, and the number of days will be set to **0** (zero).
-- **Yes, as defined in this master plan** – The **Forecast plan time fence** option will be set to **Yes**. The number of days that you enter will be used and will override the values that are set in the coverage groups.
-- **Yes, as defined in the coverage group** – The **Forecast plan** option will be set to **No**.
+- **No** – The **Forecast plan (time fence)** option will be set to **Yes**, and the number of days will be set to **0** (zero).
+- **Yes, as defined in this master plan** – The **Forecast plan (time fence)** option will be set to **Yes**. The number of days that you enter will be used and will override the values that are set in the coverage groups.
+- **Yes, as defined in the coverage group** – The **Forecast plan (time fence)** option will be set to **No**.
 
 For more information, see [Job scheduling](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
@@ -144,7 +144,7 @@ In the wizard, the following values are entered for Contoso Manufacturer:
     - **Question:** "Do you want to specify the number of days of your planning horizon?"
     - **Answer:** "Yes, as defined in the coverage groups."
 
-    Because the lead time for items is very different, Contoso doesn't have to plan all the items for the same period in the future. Coverage groups for the items are created. Items that have a similar lead time are assigned to the same coverage group. The planning horizon for each coverage group (or coverage time fence) is approximately the lead time plus a margin of one week. Master planning then makes sure that the items are planned in advance, based on their lead time.
+    Because the lead time for items is very different, Contoso doesn't have to plan all the items for the same period in the future. Coverage groups for the items are created. Items that have a similar lead time are assigned to the same coverage group. The planning horizon for each coverage group (that is, the coverage time fence) is approximately the lead time plus a margin of one week. Master planning then makes sure that the items are planned in advance, based on their lead time.
 
     Therefore, two coverage groups will be created for this example. One coverage group will have a coverage time fence of two weeks, and the other will have a coverage time fence of eight weeks.
 
@@ -176,7 +176,7 @@ In the wizard, the following values are entered for Contoso Manufacturer:
     - **Question:** "Do you want to plan orders for all the elements in a Bill of Materials (plan for the parent and all children items)?"
     - **Answer:** "Yes, as defined in the coverage groups."
 
-    All the items that are used for the production must be planned. Because the items have very different lead times, master planning will have better performance when it uses the coverage groups. Again, a margin of one week can be given, and explosion can be done for the same time as the coverage.
+    All the items that are used for the production must be planned. Because the items have very different lead times, master planning will have better performance when it uses the coverage groups. Again, a margin of one week can be entered, and explosion can be done for the same time as the coverage.
 
 ### Example 2: Contoso Retailer
 
@@ -193,7 +193,7 @@ In the wizard, the following values are entered for Contoso Retailer:
     - **Question:** "Do you want to use a forecast plan in master planning so that planned orders will be suggested to fulfill the forecasted demand?"
     - **Answer:** "Yes, as defined in this master plan."
 
-    Contoso has included a demand forecast to predict its sales in master planning. Therefore, master planning must recommend planned orders to fulfill the forecast.
+    Contoso has included a demand forecast to predict its sales. Therefore, master planning must recommend planned orders to fulfill the forecast.
 
 - **Firming:**
 
