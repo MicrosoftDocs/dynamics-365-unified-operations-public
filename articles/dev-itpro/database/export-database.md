@@ -58,7 +58,7 @@ When you export a database backup from an environment, some elements of the data
 
 Additionally, all users except the admin are disabled, and all batch jobs are set to a status of **Withhold**.
 
-## Known issues
+### Known issues
 
 #### Export ran for some time and then reached a "Preparation failed" state
 
