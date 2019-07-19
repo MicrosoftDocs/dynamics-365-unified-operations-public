@@ -6,19 +6,19 @@ Feature module is driven by CMS data which can authored in the tooling. It’s a
 
 ## Usage examples in ecommerce:
 
-* Feature is used on the product details page to showcase the product features
-* Feature can be used on the home page to promote products
-* Feature can be used on a category page to highlight the category of products
+- Feature is used on the product details page to showcase the product features
+- Feature can be used on the home page to promote products
+- Feature can be used on a category page to highlight the category of products
 
 ## Feature module properties
 
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Image             | Image file                                                   | This is the image that will be used for marketing the product or   promotion. An image can uploaded to the image gallery or an existing   image can be used. |
-| Heading           | Heading text<br />Heading tag = H1, H2, H3, H4, H5, H6       | A Feature has a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements. |
-| Paragraph         | Paragraph text                                               | Feature supports paragraph in rich text format. Some basic rich text   functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page theme applied on the module. |
-| Link              | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Feature can have one or more call to   actions. E.g. “Shop Now” which redirects the shopper to the link. If a link   is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for   accessibilty.<br />If user wants to open the link in a new   tab, that can be configured. |
-| Image Placement   | Right, Left, Top, Bottom                                     | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
+|   Property name   | Values                                                       | Property Description                                         |
+| :---------------: | :----------------------------------------------------------- | :----------------------------------------------------------- |
+|       Image       | Image file                                                   | This is the image that will be used for marketing the product or   promotion. An image can uploaded to the image gallery or an existing   image can be used. |
+|      Heading      | Heading text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | A Feature has a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements. |
+|     Paragraph     | Paragraph text                                               | Feature supports paragraph in rich text format. Some basic rich text   functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page theme applied on the module. |
+|       Link        | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Feature can have one or more call to   actions. E.g. “Shop Now” which redirects the shopper to the link. If a link   is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for   accessibilty.<br />If user wants to open the link in a new   tab, that can be configured. |
+|  Image Placement  | Right<br />Left<br />Top<br />Bottom                         | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
 | Image Column size | Values from 1-12                                             | This defines the size of the image relative to the text. In the   default experience image and text will have equal size i.e value = 6  (i.e.12 columns total on the page). This can   be configured as needed. |
 
 ##  
@@ -56,4 +56,3 @@ This section explains how to add a Feature module to a new page and set the requ
 See Enriching a product details page for details on how to use Feature to enrich a product details page.
 
 See Enriching a category page for details on how use Feature to enrich a category page. 
-
