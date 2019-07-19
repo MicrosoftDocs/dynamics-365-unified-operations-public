@@ -37,7 +37,7 @@ Business events can be consumed in Microsoft Flow via the Microsoft Finance and 
 It's important that you understand business events. For more information, see the [Business events](home-page.md) documentation.
 
 > [!IMPORTANT]
-> - The **when a business event happens** trigger works only with Finance and Operations instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
+> The **when a business event happens** trigger works only with Finance and Operations instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
 
 ## Subscribing to business events and unsubscribing from them
 
