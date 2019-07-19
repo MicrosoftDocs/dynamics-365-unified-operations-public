@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Asset view
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes the asset view in Asset Management. The **Asset view** page shows active assets and functional locations in a tree view. Therefore, you can easily get an overview of asset relations to functional locations. Additionally, you can view detailed information about functional locations, assets, and related bills of materials (BOMs). You can also get a quick overview of active maintenance requests and work orders that are related to an asset.
 
@@ -50,4 +50,4 @@ Functional location ID / Functional location ID (if there is more than one funct
 
 If you've selected an asset in the tree view, you can select **Active requests** or **Active work orders** to view the maintenance requests or work orders that are related to the asset. You can also select **Open** \> **Functional location**, **Asset**, or **Asset BOM** to open the related view.
 
-The **Asset functional locations** option that you can select in the **View** field is also available in any asset lookup where you can select an asset. The tree view is shown on an **Asset view** tab, for example, where you [create an asset](../objects/create-an-object.md), [create a maintenance request](../manage-requests/create-a-request.md), or [create a work order](../work-orders/manually-created-work-orders.md).
+The **Asset functional locations** option that you can select in the **View** field is also available in any asset lookup where you can select an asset. The tree view is shown on an **Asset view** tab, for example, where you [create an asset](../objects/create-an-object.md), create a maintenance request, or create a work order.
