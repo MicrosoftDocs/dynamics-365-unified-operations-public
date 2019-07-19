@@ -35,7 +35,7 @@ Templates are a foundational element of the D365 for Commerce page model. Learni
 
 The following diagram shows the page model hierarchy behind a rendered webpage:
 
-![Page Model Diagram](./commerce/media/page-model-diagram.png)
+![Page Model Diagram](../commerce/media/page-model-diagram.png)
 
 
 
@@ -134,7 +134,7 @@ results as your site evolves over time.
 
 ### Preset and custom layouts
 
-![Template Figure 1](../../../../OneDrive%20-%20Microsoft/RedTiger/Rushmore%20Documentation/Markdown%20Files/commerce/media/template-figure1.png)
+![Template Figure 1](../commerce/media/template-figure1.png)
 
 Layouts can have one of two forms within your site: **preset** or **custom**.  
 
