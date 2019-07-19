@@ -53,8 +53,6 @@ For more information about the setup that is related to the calculation of ratin
 
 4. In the **Service level** field, select a number that indicates the service level (priority).
 
-    > [!NOTE]
-    > For information about how to create service levels, see [Service level and description](../setup-for-work-orders/priority-and-description.md).
 
 > [!NOTE]
 > If you change an asset service level record on the **Asset service levels** page after you've already used it on a work order, the service level on maintenance requests and work orders isn't updated accordingly.
