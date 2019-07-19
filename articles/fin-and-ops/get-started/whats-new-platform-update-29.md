@@ -50,6 +50,9 @@ The job history clean-up functionality in data management must be used to schedu
 ## Business events catalog security
 Role based security can be now applied to individual business events in the business event catalog. Once this security is enabled and configured, users will be able to only view and subscribe to business events to which thier role(s) have access. This security applies to integration scenarios like Microsoft Flow as well.
 
+## Attachment recovery
+An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For more details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management).
+
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
 
