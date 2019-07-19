@@ -199,13 +199,13 @@ To edit a template, follow these steps.
 
 3. Notice the property panel on the right.  Select a module in the outline to view the template properties for the selected module.  You will notice some unique properties that are specific to template editing, such as:
 
-   | Property Name | Description |
-   | ---- | --- |
-   | Min Occurs | Sets the minimum number of occurrence of the the selected module.  For example, setting "Min Occurs" = 1 makes the module required, whereas setting it = 0 makes the module optional for downstream authors. |
-| Max Occurs| Sets the maximum number of occurrence for the selected module.  For example, setting "Max Occurs" = 1 means that module can only be added once. |
-   | Min Modules (Containers) | Modules that contain other modules (containers), can set the minimum number of total modules that should be added as children.  For example, a carousel module might define that the minimum number of child modules is greater than 1. |
-   | Max Modules (Containers) | Modules that contain other modules (containers), can set the maximum number of total modules that should be added as children.  For example, a carousel module might define that the maximum number of child modules is less than 10. |
-   | Locked | You will notice a boolean control titled "locked" next to all core module properties.  This allows the template author to lock a module setting in the template that can't be overridden by any child layouts or pages.  A locked module setting becomes a centrally editable property value for all layouts and pages that use the template. |
+  | Property Name | Description |
+  | ---- | --- |
+  | Min Occurs | Sets the minimum number of occurrence of the the selected module.  For example, setting "Min Occurs" = 1 makes the module required, whereas setting it = 0 makes the module optional for downstream authors. |
+  | Max Occurs | Sets the maximum number of occurrence for the selected module.  For example, setting "Max Occurs" = 1 means that module can only be added once. |
+  | Min Modules (Containers) | Modules that contain other modules (containers), can set the minimum number of total modules that should be added as children.  For example, a carousel module might define that the minimum number of child modules is greater than 1. |
+  | Max Modules (Containers) | Modules that contain other modules (containers), can set the maximum number of total modules that should be added as children.  For example, a carousel module might define that the maximum number of child modules is less than 10. |
+  | Locked | You will notice a boolean control titled "locked" next to all core module properties.  This allows the template author to lock a module setting in the template that can't be overridden by any child layouts or pages.  A locked module setting becomes a centrally editable property value for all layouts and pages that use the template. |
    
    
 
