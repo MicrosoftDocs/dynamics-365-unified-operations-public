@@ -39,7 +39,7 @@ This topic explains how to create attribute types in Asset Management. Attribute
 - [Functional location types](../setup-for-functional-locations/functional-location-types.md)
 - [Functional locations](../functional-locations/create-functional-locations.md)
 - [Asset types](../setup-for-objects/object-types.md)
-- [Assets](../objects/create-an-object.md)
+- Assets
 
 The attributes that you can set up vary, depending on the element. For example, for a functional location, you can set up attributes for the configuration and physical size of the location. For an asset type or an asset, you can set up attributes for engine volume, power consumption, and maximum load capacity under different conditions.
 
