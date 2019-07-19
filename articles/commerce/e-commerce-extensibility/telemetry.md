@@ -2,7 +2,7 @@
 # required metadata
 
 title: Telemetry
-description: The Dynamics 365 e-commerce SDK comes with a custom telemetrylogger, which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
+description: The Dynamics 365 Commerce e-commerce SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -29,13 +29,24 @@ ms.dyn365.ops.version:
 
 ---
 # Telemetry Logger
-The Dynamics 365 e-commerce SDK comes with a custom telemetrylogger, which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
+The Dynamics 365 Commerce e-commerce SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
 
 ## Accessing the Logger
 The SDK logger is available by default to all react components by simply accessing it with the `telemetry` prop:
 
 ``` js
 // Inside a module view
+this.props.telemetry
+```
+
+TheSDK comes with a custom logger, which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
+
+## Accessing the Logger
+
+The SDK logger is available by default to all react components by simply accessing it as the `telemetry` prop:
+
+``` js
+//Inside a module view
 this.props.telemetry
 ```
 
@@ -71,7 +82,7 @@ telemetry.log(
 )
 ```
 
-The trace logging system uses message templates to enforce a structured logging system of telemetry. This means that the logs will be capturable and renderable in both human- and machine- friendly formats. The `messageTemplate` argument to the `.log` call will use what are called 'named holes' for any event data. When writing trace log messages, you can write human-readable messages, and anywhere where you want to include event data, mark that place in the message template with `{<name>}`, where `<name>` is what you want to call the data that will go there. The actual value that will fill that named hole will be provided in the `logOptions.values` parameter. The `logOptions` parameter contains any of the optional parameters that should be included for a trace log:
+The trace logging system uses message templates to enforce a structured logging system of telemetry. This means that the logs will be capturable and renderable in both human and machine friendly formats. The `messageTemplate` argument to the `.log` call will use what are called 'named holes' for any event data. When writing trace log messages, you can write human-readable messages, and anywhere where you want to include event data, mark that place in the message template with `{<name>}`, where `<name>` is what you want to call the data that will go there. The actual value that will fill that named hole will be provided in the `logOptions.values` parameter. The `logOptions` parameter contains any of the optional parameters that should be included for a trace log:
 
 ``` ts
 type TelemetryLogOptions = {
@@ -86,8 +97,8 @@ The benefits of this structured logging system is that when rendering the log me
 Here are some examples of trace log calls:
 
 ``` ts
-telemetry.log(LogLevel.Debug, "{user} says {word}", {values: ["Sam", "Hi!"]});
-// Output: "Sam says Hi!"
+telemetry.log(LogLevel.Debug, "{user} says {word}", {values: ["Bill", "Hi!"]});
+// Output: "Bill says Hi!"
 
 telemetry.log(LogLevel.Debug, "Customer {customer} purchased item {productID}", {values: [12345, 321]});
 // Output: "Customer 12345 purchased item 321
@@ -131,106 +142,3 @@ this.props.telemetry.exception(new Error("Something is broken!"));
 Due to their similar naming, and the fact that it is possible to log `Error` objects using `.error()` by passing them as additional arguments, there may be some confusion around when you should use `.error()` or `.exception()` to log an error in your application.
 
 The best guidance is to use `.exception()` when you want to log an actual `Error` object, and to use `.error()` when you just want to log a string message saying an error has occured in your business logic. The reason for this is that in the AppInsights backend, `.exception()` logs are more easily correlated with issues, and allow for faster debugging when a real issue arises. The messages from `.error()` are simply treated as another trace log, and may require a more detailed analysis of the logs to find the issue than if you used `.exception()`, which impacts the time it takes to recognize an issue has occurred. In addition `.exception()` allows for better tracking across different requests, and therefore supports things like automatic alerting when an issue begins to affect a large number of requests.
-
-## Business Intelligence Logging
-
-Logging of business intelligence events, such as a product being added to a cart or a checkout action, can be accomplished with the business intelligence portion of the SDK logger. The business intelligence logger supports the following event types:
-
-``` ts
-enum TelemetryEvent {
-    PageView = 'PageView',
-    ProductPageView = 'ProductPageView',
-    AddToCart = 'AddToCart',
-    CheckOut = 'CheckOut',
-    Purchase = 'Purchase',
-    Custom = 'Custom'
-}
-```
-
-Each event type has a required payload, or content, that must be sent when the event is logged. The payloads are defined as:
-
-``` ts
-type TelemetryEventContent =
-    | IPageViewInfo         // Required for PageView events
-    | IProductUnit[]        // Required for ProductPageView, AddToCart, Checkout events
-    | IProductTransaction   // Required for Purchase events
-    | ICustomEvent;         // Required for CustomEvent events
-
-interface IPageViewInfo {
-    title: string;
-    location?: string;
-    page?: string;
-}
-
-interface IProductUnit {
-    productInfo: IProductInfo;
-    quantity: number;
-}
-
-interface IProductInfo {
-    id: string;
-    name: string;
-    brand?: string;
-    category?: string;
-    variant?: string;
-    price?: number;
-    currencyCode?: string;
-}
-
-IProductTransaction {
-    id: string;
-    affiliation?: string;
-    revenue?: number;
-    tax?: number;
-    shippingCost?: number;
-    products?: IProductUnit[];
-}
-
-interface ICustomEvent {
-    contentCategory: string;
-    contentAction?: {};
-}
-```
-
-You can log a business intelligence event by calling `telemetry.logEvent({TelemetryEvent}, {TelemetryEventContent})`. For example:
-
-``` ts
-const product: IProductUnit = {
-            productInfo: {
-              id: 'id_coffee',
-              name: 'Coffee',
-              price: 6.5,
-              currencyCode: 'USD',
-            },
-            quantity: 3
-        };
-
-const transaction: IProductTransaction = {
-            id: transid,
-            revenue: 15,
-            tax: 3,
-            shippingCost: 5,
-            products: [product]
-        };
-
-this.props.telemetry.logEvent(TelemetryEvent.AddToCart, [product]);
-this.props.telemetry.logEvent(TelemetryEvent.CheckOut, [product]);
-this.props.telemetry.logEvent(TelemetryEvent.Purchase, transaction);
-```
-
-### Registering a new Business Intelligence logger
-
-To register a BI event logger, you need to add a following block to the initialization.json:
-
-``` ts static
-    "telemetryEventLoggers": [
-        {
-            "key": "console-event-logger",
-            "path": "telemetry/event-loggers/console-event-logger",
-            "enabled": true
-        }
-    ]
-```
-
-The key can be an arbitrary name while the path needs to point to where the logger code lives. You need to set the enabled to true to make it active.
-Currently, we provide support for Google Tag Manager as one of the logging targets. To use it, you need to install the telemetry package and enable it via the initialization.json. In the future, we will add support for more systems to log to, such as Application Insights or Google Analytics. Multiple business intelligence loggers will be able to be registered with the SDK logger, so that a single call to the `telemetry.logEvent({TelemetryEvent}, {TelemetryEventContent})` API will write the event to multiple systems.
