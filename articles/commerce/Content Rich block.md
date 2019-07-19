@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: Content rich block module
+description: This topic describes content rich block module and how it can be used on ecommerce pages.
+author: Anupama Raju
+manager: Brendan Sullivan
+ms.date: 07/19/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: Anupama Raju
+ms.search.validFrom: 07/19/2019
+ms.dyn365.ops.version: 
+
+---
 # Content Rich block
 
 Content rich block is used for textual content on the page. The textual content can be informational or promotional. Content rich block module is a special container that allows Content Rich Block Items to be placed within it. It allows one or more content rich block items to be placed within the container in a single or multi-column view. 
