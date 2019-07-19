@@ -27,7 +27,6 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
-[TOC]
 
 # Modules overview
 
@@ -42,7 +41,7 @@ As mentioned above, some modules are designed to contain other child modules. Th
 Content modules, as their name suggests, contain actual content and media primitives, such as text (headlines, paragraphs, links) or asset references (images, video, PDFs, etc.). Examples of common content modules are Hero, Feature, Banner, etc., each of which can contain text or media and don’t require any further child modules to actually render something visible on a page. Content modules represent the majority of typical day-to-day page and content authoring activities, primarily because they define the actual content rendered within their parent container modules. There are many different content modules to choose from, and the main takeaway here is that content modules are generally the final pieces in your page’s module nesting hierarchy.
 
 Below is a simple diagram to illustrate how modules nest into parent container module slots:
-![Nesting Modules](./commerce/media/basic-module-nesting.png)
+![Nesting Modules](../commerce/media/basic-module-nesting.png)
 
 # Add or remove modules
 ## Add a module
