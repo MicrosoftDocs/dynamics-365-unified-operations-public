@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Asset measures
 
+[!include [banner](../../includes/banner.md)]
 
 The topic explains how to create asset measure types in Asset Management. Asset measure types are used to make measurement registrations on assets, for example, regarding number of production hours, or quantity produced on the asset. Asset types are related to the asset measure types. This means that an asset measure can only be used on an asset if the asset measure is set up on the asset type used on the asset.
 
