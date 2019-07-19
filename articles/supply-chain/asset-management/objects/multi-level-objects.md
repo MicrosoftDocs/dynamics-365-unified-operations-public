@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Multi-level assets
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to create and delete multi-level assets. You can create assets and related sub-assets in a hierarchical tree structure. In this way, you can show relations and dependencies among assets. Maintenance jobs can be related to all levels of the tree structure. Statistics can also be created for an individual level or as a sum of all sub-asset levels.
 
