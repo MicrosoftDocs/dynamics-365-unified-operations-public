@@ -1,4 +1,33 @@
+---
+# required metadata
 
+title: Carousel module 
+description: This topic explains how to use a Carousel module in ecommerce pages
+author:  anupamar 
+manager: BrendanS
+ms.date: 07/19/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: jeffbl
+ms.search.validFrom: 2019-10-01
+ms.dyn365.ops.version: 
+---
 
 # Carousel
 
