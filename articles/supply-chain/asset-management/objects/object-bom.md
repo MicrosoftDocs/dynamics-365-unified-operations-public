@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Asset BOMs
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes asset bills of materials (BOMs) in Asset Management. The **Asset BOM** page shows a list of all items (spare parts and other items) that are used on an asset during its whole lifetime. When you create a new asset, you should consider setting up an asset BOM as a part of the setup procedure. In this way, you can track item history for the asset from the creation date.
 
