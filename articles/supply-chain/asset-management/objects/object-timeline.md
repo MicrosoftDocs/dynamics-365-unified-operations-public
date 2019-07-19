@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Asset event history
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic explains how to access asset event history in Asset Management. The **Asset event history** page shows the registration history that has been made during the lifetime of an asset. You can access this page from the **All assets**, **Active assets**, and **My active assets** menu items. Select an asset, and then select **Event history**.
 
