@@ -3310,8 +3310,6 @@
         href: ../supply-chain/asset-management/overview/functional-locations-and-objects.md
       - name: Assets and work orders
         href: ../supply-chain/asset-management/overview/objects-and-work-orders.md     
-    - name: Set up test data
-      href: ../supply-chain/asset-management/exercises-and-setup-data/create-data-for-exercises-using-the-data-wizard.md
     - name: Setup for functional locations
       items:
       - name: Functional location lifecycle states
