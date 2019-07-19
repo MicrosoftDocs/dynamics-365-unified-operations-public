@@ -87,7 +87,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
     <img alt="New Key Vault" src="../../media/BEF-Howto-Keyvault-02.png" width="50%">
 
-3. Select **Overview**, and copy and save the **DNS Name** value for the key vault. You will use this value later.
+3. Select **Overview**, then copy and save the **DNS Name** value for the key vault. You will use this value later.
 
     <img alt="Key vault dns name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
@@ -204,7 +204,7 @@ The business scenario involves sending an email or a message to a team channel w
 
     <img alt="message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">
 
-17. Depending on the quality of your sample payload, your generator won't be able to distinguish an integer from a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
+17. Depending on the quality of your sample payload, your generator won't be able to distinguish between an integer and a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
 
     <img alt="jason data types " src="../../media/BEF-Howto-servicebus-23.png" width="70%">
 
