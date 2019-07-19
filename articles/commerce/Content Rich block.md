@@ -16,7 +16,7 @@ Content rich block and content rich block item modules are driven by CMS data wh
 |   Property name   | Values                         | Property Description                                         |
 | :---------------: | :----------------------------- | ------------------------------------------------------------ |
 | Number of columns | 1 to 4                     | A content rich block supports upto 4 columns inside it.      |
-|       Width       | Fit container<br />Fill screen | Fit container restricts the items inside the container to fit within   the container width.   Fill screen does not restrict the items within container, they could   go full-bleed on the screen.<br />The values can be changed per the layout that we want to achieve. |
+|       Width       | Fill container<br />Fill screen | Fill container restricts the items inside the container to fit within the container width. Fill screen allows the items to go full-bleed and does not restrict within container width.<br />The values can be changed to acheive the layout we want. |
 
  
 
