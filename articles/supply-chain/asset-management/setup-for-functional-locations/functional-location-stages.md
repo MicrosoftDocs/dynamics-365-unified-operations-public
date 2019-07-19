@@ -53,7 +53,7 @@ This topic describes how to set up functional location lifecycle states and life
 
 
 >[!NOTE]
->Functional location lifecycle states, lifecycle models, and types are related and used in the same way as work order lifecycle states, work order lifecycle models, and work order types. Refer to the [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md) section for a general explanation regarding lifecycle model, type, and lifecycle state relations.
+>Functional location lifecycle states, lifecycle models, and types are related and used in the same way as work order lifecycle states, work order lifecycle models, and work order types. 
 
 ## Set up functional location lifecycle models
 
