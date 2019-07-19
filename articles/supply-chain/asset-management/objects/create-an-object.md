@@ -56,7 +56,7 @@ This topic describes how to create an asset in Asset Management.
 
 The functional location to which the asset is related is shown in the **Functional location** field. If the asset is a parent asset, the number of children related to the asset is shown in the **Children** field. If the asset is a sub asset to an existing asset, the ID of the parent asset is shown in the **Parent** field.
 
-You can edit **Asset manufacturer** and **Asset model** information on the asset, which is used to manage spare parts, alternative spare parts, and job type defaults. Refer to [Asset manufacturer and model](../setup-for-objects/product-and-model.md) and [Forecasts](../work-orders/forecasts.md) for more information. You can also add information about **Model year** and **Serial number**, if required.
+You can edit **Asset manufacturer** and **Asset model** information on the asset, which is used to manage spare parts, alternative spare parts, and job type defaults. Refer to [Asset manufacturer and model](../setup-for-objects/product-and-model.md) for more information. You can also add information about **Model year** and **Serial number**, if required.
 
 **Current lifecycle state** is used to define if the asset is active or inactive. When creating an asset, the stage is always set to the first stage in the asset stage group. When you are ready to activate an asset, click **Update asset state**, and select the lifecycle state that you have defined as "asset active", and click **OK**.
 
