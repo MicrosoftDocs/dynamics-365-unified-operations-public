@@ -1,10 +1,8 @@
 # Content Rich block
 
-Content rich block is used for textual content on the page. The textual content can be informational or promotional purposes. 
+Content rich block is used for textual content on the page. The textual content can be informational or promotional. Content rich block module is a special container that allows Content Rich Block Items to be placed within it. It allows one or more content rich block items to be placed within the container in a single or multi-column view. 
 
-Content rich block is a special container that allows Content Rich Block Items to be placed within it. Multiple content rich block items can be placed in this container in a single or multi-column view. 
-
-Content rich block and content rich block item modules are driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other modules in the page. Technically this allows content rich block to be placed on any page for inform.
+Content rich block and content rich block item modules are driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other module in the page. Technically this allows content rich block to be placed on any page for informational or marketing content.
 
 ## Usage examples in ecommerce:
 
@@ -17,7 +15,7 @@ Content rich block and content rich block item modules are driven by CMS data wh
 
 |   Property name   | Values                         | Property Description                                         |
 | :---------------: | :----------------------------- | ------------------------------------------------------------ |
-| Number of columns | Values 1-4                     | A content rich block supports upto 4 columns inside it.      |
+| Number of columns | 1 to 4                     | A content rich block supports upto 4 columns inside it.      |
 |       Width       | Fit container<br />Fill screen | Fit container restricts the items inside the container to fit within   the container width.   Fill screen does not restrict the items within container, they could   go full-bleed on the screen.<br />The values can be changed per the layout that we want to achieve. |
 
  
@@ -25,7 +23,7 @@ Content rich block and content rich block item modules are driven by CMS data wh
 ## Content Rich Block Item module properties
 
 | Property name | Values         | Property Description                                         |
-| :-----------: | -------------- | ------------------------------------------------------------ |
+| :-----------: | :--------------: | ------------------------------------------------------------ |
 |   Paragraph   | Paragraph text | This is the text that accompanies each content rich block item. Some basic rich text capabilities such as Bold, Underline, Italics are supported. |
 
  
