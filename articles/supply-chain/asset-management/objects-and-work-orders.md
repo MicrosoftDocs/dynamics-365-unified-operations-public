@@ -40,7 +40,7 @@ Various data, such as product information and asset specification, and required 
 
 ![Figure 1](media/05-overview-image.png)
 
-Every work order has a work order type, such preventive maintenance, corrective maintenance, or inspection. The work order contains one or more work order jobs. Every work order job defines a job that must be performed on an asset and a related job type. Examples of related job types include 10,000 km, 50,000 km, 1-year overhaul, and safety inspection. One work order can be related to multiple assets.
+Every work order has a work order type, such **Preventive maintenance**, **Corrective maintenance**, or **Inspection**. The work order contains one or more work order jobs. Every work order job defines a job that must be performed on an asset and a related job type. Examples of related job types include 10,000 km, 50,000 km, 1-year overhaul, and safety inspection. One work order can be related to multiple assets.
 
 The following illustration shows an overview of the key data in a work order.
 
