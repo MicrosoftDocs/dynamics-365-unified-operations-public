@@ -48,7 +48,7 @@ The below diagram shows the high-level process you will need to configure with M
 
 -   Last step is the complete the workflow with the outcome of the approval be it Approve or Reject.
 
-    <img src="../../media/BEF-Howto-workflow-01.png" width="70%">
+    <img alt="aproval workflow" src="../../media/BEF-Howto-workflow-01.png" width="70%">
 
 ## Exercise 1: Create a new Microsoft Flow
 
@@ -80,30 +80,30 @@ The below diagram shows the high-level process you will need to configure with M
 
 12. The add a new step as follows to call a workflow action that validate whether a workflow with the right instance ID is running and awaiting approval.
 
-    <img src="../../media/BEF-Howto-workflow-08.png" width="70%">
+    <img alt="workflow validate action" src="../../media/BEF-Howto-workflow-08.png" width="70%">
 
 13. Then add a new condition control step to check the result of the validate action. The output to use will not show up from the dynamics field you will need to type manually the following expression: **Body(‘Execute_action’)?[‘value’]** Then click on **OK.**
 
-    <img src="../../media/BEF-Howto-workflow-09.png" width="70%">
+    <img alt="flow condition" src="../../media/BEF-Howto-workflow-09.png" width="70%">
 
     > [!Note]
     > Next time you open your workflow, you will notice that the expression will be updated to show the **value** field, as below, with a Finance and Operations icon.
 
-    <img src="../../media/BEF-Howto-workflow-10.png" width="70%">
+    <img alt="workflow action output" src="../../media/BEF-Howto-workflow-10.png" width="70%">
 
 14. The condition control creates automatically two branches for Yes/No results. If the validate step result is **No** we need to alert by email the user that a new task is needing his attention and needs to login to Finance and Opertions client.
 
     The email that the workflow business event will return is the workflow Approver one. If this has not been configured in your Finance and Operations demo environment, you can use your email instead for demo purpose.
 
-    <img src="../../media/BEF-Howto-workflow-11.png" width="70%">
+    <img alt="aprover alias" src="../../media/BEF-Howto-workflow-11.png" width="70%">
 
 15. Then if the validation is successful we need to start a new Microsoft approval step. Choose within the **Yes** container a new action called **Start and wait for an approval (v2)**. And filling the details as shown in the picture. Again, you can use your email in the **Assign** field for demo purpose if your workflow approver user has not been configured in your demo environment.
 
-    <img src="../../media/BEF-Howto-workflow-12.png" width="70%">
+    <img alt="Microsoft flow aproval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
 16. Last step is to complete the Finance and Operations workflow approval with the outcome from the Microsoft flow approval step. You need to add a new **Finance and Operations Execute Action** step within the **Yes** container. And fill the fields with **WorkflowWorkitem-complete** action and **WorkflowWorkitemInstanceID** parameter. Because approval step can support multiple approver the response output is an Array. Thus, as soon as you select it as an input for an action Microsoft flow automatically embed your action within an **Apply to each** container.
 
-    <img src="../../media/BEF-Howto-workflow-13.png" width="70%">
+    <img alt="apply to each " src="../../media/BEF-Howto-workflow-13.png" width="70%">
 
 17. Then click **Save**
 
