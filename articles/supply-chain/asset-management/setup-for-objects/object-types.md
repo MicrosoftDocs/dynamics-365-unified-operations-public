@@ -82,10 +82,10 @@ Typically, work orders that are manually created are related to corrective maint
 
 3. Select **New** to manually create an asset type setup.
 4. Depending on how specific the asset type setup should be, make selections in the **Asset type**, **Manufacturer**, and **Model** fields.
-5. If a warranty agreement is related to the asset type, select the agreement in the **Vendor warranty** and **Customer warranty** fields. For more information about how to set up a warranty, see [Warranty](../warranty/warranty-on-objects-and-object-types.md).
+5. If a warranty agreement is related to the asset type, select the agreement in the **Vendor warranty** and **Customer warranty** fields. 
 6. On the **Spare parts** FastTab, select **Add** to add spare parts to the selected asset type setup.
 7. To approve a spare part, select the spare part line, and then select **Approve**. You can select multiple lines for approval.
-8. To see whether a spare part is used somewhere else in Asset Management (for example, in relation to assets and work orders), select the spare part line, and then select **Item where used** to open the **Item where used** page. For more information about this page, see [Items where used](../controlling-and-reporting/items-where-used.md). To see all active spare parts in the list, select the **Active** check box. To see only approved spare parts, select the **Approved** check box.
+8. To see whether a spare part is used somewhere else in Asset Management (for example, in relation to assets and work orders), select the spare part line, and then select **Item where used** to open the **Item where used** page. To see all active spare parts in the list, select the **Active** check box. To see only approved spare parts, select the **Approved** check box.
 9. On the **Maintenance plans** FastTab, select **Add** to add maintenance plans to the selected asset type setup.
 10. To copy an asset type setup to another setup, you can use the Copy function. Select the asset type setup to copy a setup to, select **Copy setup**, and select the asset type setup to copy the setup from. The settings of the various options determine how much information is included. When you've finished, select **OK** to copy the setup.
 
@@ -98,4 +98,5 @@ As was described in the "Create asset type setup lines" section, spare parts are
 
 On the **Spare parts** page, you can also create new spare parts for existing combinations of an asset type, asset manufacturer, and asset model. You can decide whether you prefer to create spare part records on the **Asset type setup** page or the **Spare parts** page. The **Asset type setup** page provides an overview of data on the selected combination of an asset type, asset manufacturer, and asset model, whereas the **Spare parts** page provides a complete overview of all asset type setup lines. If the **Spare parts** page contains many records, the **Asset type setup** page might give you a better overview.
 
-To see whether the spare part on the selected line is used anywhere else in Asset Management (for example, in relation to assets and work orders), select **Item where used** to open **Item where used** page. For more information about this page, see [Items where used](../controlling-and-reporting/items-where-used.md).
+To see whether the spare part on the selected line is used anywhere else in Asset Management (for example, in relation to assets and work orders), select **Item where used** to open **Item where used** page. 
+
