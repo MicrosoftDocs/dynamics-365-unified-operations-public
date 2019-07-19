@@ -92,7 +92,7 @@ On this FastTab you can add specific attribute requirements for the assets that 
 Here you can add maintenance plans and maintenance rounds to the functional location, including a start date. The assets installed on a functional location may have other maintenance plans set up. All maintenance plans and maintenance rounds can be used for scheduling asset calendar entries for a functional location and its currently installed assets.
 
 >[!NOTE]
->If you update the setup of asset types, asset brands, and asset models on maintenance plans in **All functional locations** detail view > **Maintenance plans** FastTab after you have scheduled maintenance plans, existing maintenance schedule entries related to that functional location are automatically deleted. In order to create new schedule entries, which correspond with the updated maintenance plan setup on the functional location, you must run a new maintenance plan schedule for that functional location. Read more about maintenance plan scheduling in the [Schedule maintenance plans](../preventive-and-reactive-maintenance/schedule-maintenance-sequences.md) section.
+>If you update the setup of asset types, asset brands, and asset models on maintenance plans in **All functional locations** detail view > **Maintenance plans** FastTab after you have scheduled maintenance plans, existing maintenance schedule entries related to that functional location are automatically deleted. In order to create new schedule entries, which correspond with the updated maintenance plan setup on the functional location, you must run a new maintenance plan schedule for that functional location. 
 
 ## Address
 
