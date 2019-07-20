@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: Content placement item module
+description: This topic describes content placement item module and how it can be used on ecommerce pages.
+author: anupamar-ms
+manager: Brendan Sullivan
+ms.date: 07/19/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: Anupama Raju
+ms.search.validFrom: 07/19/2019
+ms.dyn365.ops.version: 
+
+---
 # Content Placement Item
 
 Content placement item is used for showcasing multiple promotions, policies, product features using both image and text. For example, it can be used on home page to show case store policies, shipping etc. 
