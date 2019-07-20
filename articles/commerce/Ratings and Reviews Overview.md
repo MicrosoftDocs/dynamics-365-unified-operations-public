@@ -1,59 +1,37 @@
-# Feature
+# Ratings and Reviews Overview
 
-Feature is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
+Ratings and Reviews are crucial for consumers to understand how a product is perceived by fellow consumers and make a purchase decision. Dynamics 365 for Commerce’s Ratings and Review’s allows Retailers (C1) to capture reviews along with a rating on a product from consumers (C2) and show average ratings and corresponding reviews information across on eCommerce website. Average ratings information is showed in POS and Call center channels for sales associates to help end users. Retailers also uses Ratings & Reviews as a feedback mechanism to improve the quality of a product thus improve the sales.
 
-Feature module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other modules in the page. Technically this allows Feature to be placed on any page where a C1 wants to promote content.
+## Solution Architecture
 
-## Usage examples in ecommerce:
+Dynamics 365 for Commerce has Ratings and Reviews as an omni-channel solution, and available natively part of the eCommerce platform.  Solution is built on top of Azure to with high-scalability and reliability. Consumers who purchase products online can directly consume ratings and reviews, to evaluate a product, and provide review after purchasing a product.  Sales associates in physical stores, or in a call center, can help customers as the product ratings information is available in those channels as well. 
 
-* Feature is used on the product details page to showcase the product features
-* Feature can be used on the home page to promote products
-* Feature can be used on a category page to highlight the category of products
+<Insert image here?
 
-## Feature module properties
+## Value Proposition
 
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Image             | Image file                                                   | This is the image that will be used for marketing the product or   promotion. An image can uploaded to the image gallery or an existing   image can be used. |
-| Heading           | Heading text<br />Heading tag = H1, H2, H3, H4, H5, H6       | A Feature has a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements. |
-| Paragraph         | Paragraph text                                               | Feature supports paragraph in rich text format. Some basic rich text   functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page theme applied on the module. |
-| Link              | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Feature can have one or more call to   actions. E.g. “Shop Now” which redirects the shopper to the link. If a link   is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for   accessibilty.<br />If user wants to open the link in a new   tab, that can be configured. |
-| Image Placement   | Right, Left, Top, Bottom                                     | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
-| Image Column size | Values from 1-12                                             | This defines the size of the image relative to the text. In the   default experience image and text will have equal size i.e value = 6  (i.e.12 columns total on the page). This can   be configured as needed. |
+1.	Ratings and Review is an integrated solution and offered natively within D365 for Commerce platform. This helps associating ratings information with product information, searching indexing, and eliminates lazy loading ratings information on eCommerce webpages. 
+2.	Ratings and Reviews is an Omni-channel solution to help consumers (C2) in making purchase decisions, directly on online channels, and indirectly, via sales associates, in retail stores and call center channels.  
+3.	Ratings and Reviews, part of Dynamics 365 for Commerce, offers Competitive pricing advantage (needs work)
+4.	Ratings and Reviews offers auto moderation on profane words (in 40 languages) by using Azure Cognitive Services, prevents waiting for human approval and also reduces moderation cost. 
+5.	Ratings and Reviews offers moderator tools to respond to end users concerns, feedback, or take down, and address any data requests from end users.  
+6.	Ratings and Reviews provides UX widgets to show ratings summary in product lists, search results, product details page etc. places, and to show complete reviews list along with sort and filters options, on an E-Commerce website that is hosted on Dynamics 365 for Commerce.  
+7.	Ratings and Reviews offers Power BI template with comprehensive set of metrics to offer business insights around Ratings and Reviews. Customers can export full set of ratings and reviews for further analysis.  
+
 
 ##  
 
-## Creating a page with a Feature module
+## Feature documentation 
 
 This section explains how to add a Feature module to a new page and set the required properties. Refer to Templates and Pages for more details on these actions.
 
-1. We need to first create a template. In tooling, create a new page template “Feature template”.
+1. Opting in for Ratings and Reviews features.
 
-2. In the Main slot the Default Page,, add a Feature module. A Feature can be placed directly on the page or within a container <link>. Multiple Feature modules can be placed within a Carousel<link>.
+2. Configuring eCommerce site and pages with Ratings and Reviews
 
-3. Check-in and Publish. 
+3. Configuring Headquarters to ingest Product Ratings  
 
-4. Now create a new page with the “Feature template” and call it “Feature page”
+4. Enabling Ratings and POS and Call-center channels
 
-5. In the page outline, add Default page. To the Main slot, add Feature module.
 
-6. Expand the Feature properties and add Image. rom the image picker, choose an existing image or upload a new asset. 
-
-7. Add a Heading, change the default text, size and Heading tag as needed
-
-8. Add a Paragraph, change the default text as needed
-
-9. Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
-
-10. Save the page and preview the changes.
-
-11. Other properties can be changed to achieve a more customized Feature – Image placement, Image column size etc.
-
-12. Check-in and Publish.
-
-    
-
-See Enriching a product details page for details on how to use Feature to enrich a product details page.
-
-See Enriching a category page for details on how use Feature to enrich a category page. 
 
