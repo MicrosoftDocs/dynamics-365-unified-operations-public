@@ -4,5 +4,5 @@ Lifecycle Services (LCS) is an administration portal that C1 uses to manage�
 
 The following screenshot illustrates how a tenant on Dynamics 365 for Commerce can opt-in for Ratings and Reviews. 
 
-<Image needs to be created>
+--<Image needs to be created>
 
