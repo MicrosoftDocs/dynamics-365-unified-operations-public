@@ -91,6 +91,22 @@ You can import activities from one or more templates into a guide or template.
 
 The imported activities will contain a **Lock** button, which indicates those activities are managed by the template you imported from. When you make changes to the template you imported, those activities will update in the template you imported them to. However, the changes will not be pushed automatically to any guides created from the template you imported to.
 
+## Push changes from a template to other templates or guides
+
+If you edit a template that contains activities that are used in other templates or guides, you must push the changes if you want them to appear in the other templates or guides.
+
+If you're not sure whether your template's activities are used in other templates or guides, select the **Used in** tab to view where those activities appear.
+
+   [![View guides and templates activities are used in](./media/onboard-edit-guide-view-used-in.png)](./media/onboard-edit-guide-view-used-in.png)
+
+To push your changes:
+
+1. Save your changes by selecting the **Save** button. If you don't do this, you'll be prompted to save your changes in the next step.
+
+2. Select **Push these changes**.
+
+   [![Push changes](./media/onboard-edit-guide-push-changes.png)](./media/onboard-edit-guide-push-changes.png)
+
 ## Add or edit an introduction
 
 1. On the **Introduction** tab, enter a title for your guide and an opening message. To use the sample text, select **Use this message**.
