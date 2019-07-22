@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
 
 An asset is automatically updated with related information. For example, this related information might be about new or updated work orders. You can create assets by using either the **All assets** menu item or the **Pending assets** menu item. This topic explains how to create assets by using the **All assets** menu item. For information about how to create assets by using the **Pending assets** menu item, see [Create assets based on purchase orders](../objects/create-objects-based-on-purchase-orders.md).
