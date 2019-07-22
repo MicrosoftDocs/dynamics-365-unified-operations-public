@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic describes functional locations and assets in Asset Management. Asset Management is an advanced module for managing assets and maintenance jobs in Microsoft Dynamics 365 for Finance and Operations.
 
 ## Overview
