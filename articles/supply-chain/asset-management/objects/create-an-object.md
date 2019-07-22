@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic describes how to create an asset in Asset Management.
 
 1. Click **Asset management** > **Common** > **assets** > **All assets** or **Active assets**.
