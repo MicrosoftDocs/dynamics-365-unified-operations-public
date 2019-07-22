@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 29 (September 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29 (September 2019). 
+title: Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29 (October 2019). 
 author: tonyafehr
 manager: AnnBe
 ms.date: 07/09/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform 29
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 29 (September 2019)
+# Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
