@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic describes how to set up functional location lifecycle states and lifecycle models in Asset Management. Functional location lifecycle states define the states that a functional location can go through, for example, created, active, and ended. You are able to view all functional locations, regardless of their lifecycle state, in the **All functional locations** list page. You can change the state of a functional location by selecting it in the **All functional locations** list page and selecting **Update functional location state**.
 
 ## Set up functional location lifecycle states
