@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a check with a blank status
-description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
+title: Create checks with a blank status on the Checks page
+description: You can create blank status checks for a bank account from the Checks page. 
 author: Annette Bruer
 manager: AnnBe
 ms.date: 10/26/2017
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: BankTreasurerWorkspace
+ms.search.form: BankChequeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,4 +30,9 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create a check with a blank status
+# Create checks with a blank status from the Checks page
+The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. Blank status checks can also be created from this page. An example of blank status check usage is to record a check that has been damaged and cannot be used for payment. After a check has been created with a Blank status, it cannot be deleted or reused in the system. This feature is available from the **Checks** page if the **Create checks with a blank status on the Checks page** parameter on the **Feature management** page is enabled. If the feature is not enabled, then Blank status checks can be created from the **Payment by check** dialog during the Accounts payable payment generation process.
+
+To navigate to the **Checks** page, click **Cash and bank management > Bank accounts > Bank accounts > Manage payments > Checks** or **Cash and Bank management > Inquiries and Reports > Checks**.
+
+Click **Create blank checks** to perform the process. While the system is creating checks with a blank status, the associated bank account will be inactivated temporarily. This reduces the risk of generating payments at the same time that blank status checks are created. When the process completes, the associated bank account is reactivated.
