@@ -46,19 +46,19 @@ After you create an onboarding guide or template in Microsoft Dynamics 365 for T
 
 If you create an onboarding guide from a template, or if you import activities from one template into another, you'll notice a **Lock** button on the imported activities. These are called *managed activities*.
 
-[![Managed activities](.media/onboard-edit-guide-managed-activities.png)](.media/onboard-edit-guide-managed-activities.png)
+[![Managed activities](./media/onboard-edit-guide-managed-activities.png)](./media/onboard-edit-guide-managed-activities.png)
 
 When you select a managed activity, you can see the source template at the top of the activity.
 
-[![Managed activity source](.media/onboard-edit-guide-managed-activity-source.png)](.media/onboard-edit-guide-managed-activity-source.png)
+[![Managed activity source](./media/onboard-edit-guide-managed-activity-source.png)](./media/onboard-edit-guide-managed-activity-source.png)
 
 If you edit an activity in a template, Onboard will push the changes to all templates and unsent guides that are based on that template. If you select an unsent guide based on a template you edited and then select the **Activities** tab in the guide, you will see a notice that your guide has changed. To dismiss the notification, select **OK**. 
 
-[![Change notification](.media/onboard-edit-guide-change-notification.png)](.media/onboard-edit-guide-change-notification.png)
+[![Change notification](./media/onboard-edit-guide-change-notification.png)](./media/onboard-edit-guide-change-notification.png)
 
 You'll see a black dot next to the updated activities.
 
-[![Changed activity](.media/onboard-edit-guide-changed-activity.png)](.media/onboard-edit-guide-changed-activity.png)
+[![Changed activity](./media/onboard-edit-guide-changed-activity.png)](./media/onboard-edit-guide-changed-activity.png)
 
 You can't edit managed activities outside of the original template, except to add an assignee, due date, or other information in the right-hand section of the activity.
 
@@ -81,11 +81,11 @@ You can import activities from one or more templates into a guide or template.
 
 3. Select the **Import** tab in the section on the right.
 
-   [![Import activities](.media/onboard-edit-guide-import-activities.png)](.media/onboard-edit-guide-import-activities.png)
+   [![Import activities](./media/onboard-edit-guide-import-activities.png)](./media/onboard-edit-guide-import-activities.png)
 
 4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
 
-   [![Import activities](.media/onboard-edit-guide-preview-activities.png)](.media/onboard-edit-guide-preview-activities.png)
+   [![Import activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
 
 5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
 
