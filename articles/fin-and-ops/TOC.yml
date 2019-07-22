@@ -3109,8 +3109,8 @@
           href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
         - name: Configure ER formats to import XML format files with optional attributes
           href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-      - name: Split generated XML files based on file size and content quantity
-        href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+    - name: Split generated XML files based on file size and content quantity
+      href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
     - name: Configuration lifecycle
       items:
       - name: Manage configurations lifecycle
