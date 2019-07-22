@@ -70,12 +70,12 @@ Example:
 yarn msdyb365 add-module campaignBanner
 ```
 
-## clone
+## copy
 
 Usage:
 
 ``` bash
-yarn d365 clone <core-module-name> <new-module-name>
+yarn d365 copy <core-module-name> <new-module-name>
 ```
 This creates a copy of a starter kit module and add the source code to the root/src/modules folder. 
 
