@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 After you've created functional location structures, the next step is to install assets on the relevant functional locations. This topic explains how to install assets on those functional locations in Asset Management. For information about how to create assets, see [Assets](../objects/introduction-to-objects.md).
 
 If you've created an asset structure, the whole asset structure must be installed on a functional location. Therefore, only parent assets (top-level assets that have no parent asset) can be selected on a functional location. All related child assets (sub-assets) will also be installed on the functional location. When you install assets on a functional location, the financial dimensions of the functional location might be automatically transferred to them, depending on the setup on the functional location type that is selected for the functional location. For more information about how to set up functional location types, see [Functional location types](../setup-for-functional-locations/functional-location-types.md).
