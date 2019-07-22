@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains asset service levels in Asset Management. Asset service levels are related to assets, and are transferred to maintenance requests and work orders. They are used to calculate the priority of work orders during work order scheduling. Asset service levels can be changed, if changes are required.
 
 For more information about the setup that is related to the calculation of rating scores for work order scheduling, see [Asset management parameters](../setup-for-objects/enterprise-asset-management-parameters.md). You must set up at least one default record for the asset service level. This default record is used if no other match is found during work order scheduling.
