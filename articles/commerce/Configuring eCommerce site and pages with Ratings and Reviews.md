@@ -1,59 +1,17 @@
-# Feature
+# Overview
+Ratings and Reviews on eCommerce website helps consumers (C2) directly to understand how a product is perceived by fellow consumers and make a purchase decision. eCommerce website is also a primary source for receiving ratings and reviews on a product. This document explains how to configure your eCommerce website and pages to show ratings and reviews.
 
-Feature is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
+## Site configuration  
 
-Feature module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other modules in the page. Technically this allows Feature to be placed on any page where a C1 wants to promote content.
+There are some values like Ratings and Reviews Service endpoint, review text length etc. are configured at site level. The following explains on how to configure those values. 
 
-## Usage examples in ecommerce:
+	1. Go to ….. Tool
+	2. Got to Site Setting 
+	3. Configure Ratings and Reviews Service endpoint as https://<tenanteID>.rnr.ms/
+Configure Review text length value (maximum 1000 characters
 
-* Feature is used on the product details page to showcase the product features
-* Feature can be used on the home page to promote products
-* Feature can be used on a category page to highlight the category of products
 
-## Feature module properties
+##Ratings and review on product details page (PDP) 
 
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Image             | Image file                                                   | This is the image that will be used for marketing the product or   promotion. An image can uploaded to the image gallery or an existing   image can be used. |
-| Heading           | Heading text<br />Heading tag = H1, H2, H3, H4, H5, H6       | A Feature has a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements. |
-| Paragraph         | Paragraph text                                               | Feature supports paragraph in rich text format. Some basic rich text   functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page theme applied on the module. |
-| Link              | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Feature can have one or more call to   actions. E.g. “Shop Now” which redirects the shopper to the link. If a link   is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for   accessibilty.<br />If user wants to open the link in a new   tab, that can be configured. |
-| Image Placement   | Right, Left, Top, Bottom                                     | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
-| Image Column size | Values from 1-12                                             | This defines the size of the image relative to the text. In the   default experience image and text will have equal size i.e value = 6  (i.e.12 columns total on the page). This can   be configured as needed. |
-
-##  
-
-## Creating a page with a Feature module
-
-This section explains how to add a Feature module to a new page and set the required properties. Refer to Templates and Pages for more details on these actions.
-
-1. We need to first create a template. In tooling, create a new page template “Feature template”.
-
-2. In the Main slot the Default Page,, add a Feature module. A Feature can be placed directly on the page or within a container <link>. Multiple Feature modules can be placed within a Carousel<link>.
-
-3. Check-in and Publish. 
-
-4. Now create a new page with the “Feature template” and call it “Feature page”
-
-5. In the page outline, add Default page. To the Main slot, add Feature module.
-
-6. Expand the Feature properties and add Image. rom the image picker, choose an existing image or upload a new asset. 
-
-7. Add a Heading, change the default text, size and Heading tag as needed
-
-8. Add a Paragraph, change the default text as needed
-
-9. Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
-
-10. Save the page and preview the changes.
-
-11. Other properties can be changed to achieve a more customized Feature – Image placement, Image column size etc.
-
-12. Check-in and Publish.
-
-    
-
-See Enriching a product details page for details on how to use Feature to enrich a product details page.
-
-See Enriching a category page for details on how use Feature to enrich a category page. 
+Ratings summary is showed across the sites in the products placement lists, category lists, and search results etc. Ratings summary along with review list will be showed on product details page, also allows consumers to submit a rating and review on a product on product details pages.  There are multiple modules those needs to be configure to show ratings summary, write review, and reviews list on product details page as follows:
 
