@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains how to create asset types. It also describes the elements that are related to asset types. Asset types are used as general categories for assets. Examples include CNC machines, measuring equipment, and truck engines. Asset types are used to manage the job types (maintenance tasks), asset lifecycle states, asset measures, asset attributes, condition assessment templates, and asset models that can be selected for an asset. When you create an asset, you must specify the asset type.
 
 For each asset type, variations of the asset type setup can be created. For example, if you have an asset type that is named **Trucks**, you can create variations of that asset type for different asset manufacturers and asset models. To each asset type setup, you can add the required spare parts and maintenance plans.
