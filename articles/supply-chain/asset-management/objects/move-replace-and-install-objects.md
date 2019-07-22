@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains how to move, replace, and install assets in Asset Management. You can create individual assets that have no relations to other assets, or you can create an asset structure that includes a parent asset (top-level asset) and related child assets (sub-assets). In Asset Management, there are three approaches to moving and changing the location of an asset:
 
 - **Move** – Move an asset either to another asset structure or to another location in the same asset structure.
