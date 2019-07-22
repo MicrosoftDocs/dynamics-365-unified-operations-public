@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains how to set up asset manufacturers and related models in Asset Management. Models can be related to asset types.
 
 ## Set up product-model relations
