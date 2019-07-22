@@ -72,7 +72,6 @@ An asset measurement registration can be updated manually or automatically based
 
 When asset types are added to an asset measure type in **Counters**, that asset measure is automatically added to the asset types on the **Counters** FastTab in [Asset types](../setup-for-objects/object-types.md).
 
-![Figure 1](media/07-setup-for-objects.png)
+![Figure 1](media/071-setup-for-objects.png)
 
-![Figure 2](media/08-setup-for-objects.png)
 
