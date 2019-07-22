@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail for IT pros and developers home page
+title: Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail for IT pros and developers home page
+# Retail for IT pros and developers
 
 [!include [banner](../includes/banner.md)]
 
