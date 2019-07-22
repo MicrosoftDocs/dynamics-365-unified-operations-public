@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains maintenance workers and worker groups in Asset Management. In Asset Management, you can connect maintenance workers to functional locations. (For more information about functional locations, see [Create functional locations](../functional-locations/create-functional-locations.md).) This functionality might be useful if, for example, you're scheduling a maintenance job on a machine that is located in functional location 01, and you want to allocate maintenance workers from the same location to perform the job.
 
 You can also create maintenance worker groups and associate maintenance workers with them. This functionality is useful when you do simple work order scheduling, and you want to schedule a group of maintenance workers on a work order. You can use maintenance workers and maintenance worker groups to set up preferred maintenance workers and responsible maintenance workers. 
