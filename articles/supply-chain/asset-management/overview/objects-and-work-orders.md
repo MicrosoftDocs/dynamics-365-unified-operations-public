@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic describes assets and work orders in Asset Management. Assets and work orders are the central parts of Asset Management. An *asset* is a machine or machine part that requires continuous maintenance and service. Assets can be created in a hierarchical structure, and they can be related to functional locations. Maintenance jobs can be planned at all levels in the asset structure.
 
 Various data, such as product information and asset specification, and required maintenance plans are set up on each asset. The following illustration shows an overview of asset data and the affiliation of assets to job types. Red text is used for examples that show inheritance and dependencies.
