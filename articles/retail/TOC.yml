@@ -24,9 +24,9 @@
     href: retail-support.md
   - name: One Version service updates FAQ
     href: ../fin-and-ops/get-started/one-version.md
-- name: Understand the implementation lifecycle
+- name: Implementation lifecycle management
   items:
-  - name: Implementation lifecycle management
+  - name: Implementation lifecycle management home page
     href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   - name: Microsoft FastTrack for Dynamics 365
     href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
