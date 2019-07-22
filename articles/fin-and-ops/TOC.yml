@@ -3167,46 +3167,46 @@
         href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
       - name: Specify a custom storage location for generated documents
         href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
-    - name: Embedded analytical solutions
-      items:
-      - name: Embedded Power BI in workspaces
-        href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
-      - name: Power BI Embedded integration
-        href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
-      - name: Select analytical workspaces from PowerBI.com
-        href: ../dev-itpro/analytics/select-analytical-workspace.md
-    - name: Personalization options with PowerBI.com
-      items:
-      - name: Features and services available via Power BI integration
-        href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
-      - name: Pin Power BI reports to workspaces
-        href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
-      - name: Customize embedded reports in Analytical workspaces 
-        href: ../dev-itpro/analytics/customize-analytical-workspace.md
-    - name: Tools for creating and extending solutions
-      items:
-      - name: Analytics, aggregate measurements, and KPI modeling
-        href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-      - name: Create analytical reports using Power BI Desktop
-        href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
-      - name: Model aggregate data
-        href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
-      - name: Add financial dimensions to aggregate measurements
-        href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
-      - name: Add analytics to workspaces by using Power BI Embedded
-        href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
-      - name: Help secure analytical workspaces and reports using Power BI Embedded
-        href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
-    - name: Power user management tools
-      items:
-      - name: Power BI integration with Entity store
-        href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-      - name: Resolve issues after Entity store maintenance
-        href: ../dev-itpro/analytics/entity-store-maintenance.md
-      - name: Configure Power BI integration for workspaces
-        href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
-      - name: Bring your own database
-        href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
+  - name: Embedded analytical solutions
+    items:
+    - name: Embedded Power BI in workspaces
+      href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
+    - name: Power BI Embedded integration
+      href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+    - name: Select analytical workspaces from PowerBI.com
+      href: ../dev-itpro/analytics/select-analytical-workspace.md
+  - name: Personalization options with PowerBI.com
+    items:
+    - name: Features and services available via Power BI integration
+      href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
+    - name: Pin Power BI reports to workspaces
+      href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+    - name: Customize embedded reports in Analytical workspaces 
+      href: ../dev-itpro/analytics/customize-analytical-workspace.md
+  - name: Tools for creating and extending solutions
+    items:
+    - name: Analytics, aggregate measurements, and KPI modeling
+      href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
+    - name: Create analytical reports using Power BI Desktop
+      href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
+    - name: Model aggregate data
+      href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
+    - name: Add financial dimensions to aggregate measurements
+      href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
+    - name: Add analytics to workspaces by using Power BI Embedded
+      href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
+    - name: Help secure analytical workspaces and reports using Power BI Embedded
+      href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
+  - name: Power user management tools
+    items:
+    - name: Power BI integration with Entity store
+      href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
+    - name: Resolve issues after Entity store maintenance
+      href: ../dev-itpro/analytics/entity-store-maintenance.md
+    - name: Configure Power BI integration for workspaces
+      href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
+    - name: Bring your own database
+      href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
   - name: Inventory management
     href: ../supply-chain/inventory/inventory-home-page.md
     items:
