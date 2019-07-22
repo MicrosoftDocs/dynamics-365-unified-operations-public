@@ -5,7 +5,7 @@ title: Transfer transactions to the Intrastat
 description: This procedure walks you through how to set up Intrastat parameters and transfer transactions to Intrastat. 
 author: Anasyash
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/22/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -34,56 +34,66 @@ This procedure walks you through how to set up Intrastat parameters and transfer
 
 
 ## Create new and update existing commodity code
-1. Go to Product information management > Setup > Categories and attributes > Category hierarchies.
+1. In the Navigation pane, go to **Modules > Product information management > Setup > Categories and attributes > Category hierarchies**.
 2. In the list, find or select the record "Intrastat commodity codes."
 3. In the list, click the link in the selected row.
-4. In the tree, select 'a record'.
-    * For example, select 'Intrastat\Speaker'.  
-5. Click Edit.
-6. Expand the Foreign trade section.
-7. In the Additional units field, enter or select a value.
-    * For example, choose 'pcs'.  
-8. Select Yes in the Weight not applicable field.
+4. In the tree, select a record.
+    
+    For example, select 'Intrastat\Speaker'.  
+5. Click **Edit**.
+6. Expand the **Foreign trade** fastTab.
+7. In the **Additional units** field, enter or select a value.
+    
+    For example, choose 'pcs'.  
+8. Select 'Yes' in the **Weight not applicable** field.
 9. In the tree, select 'Intrastat'.
-10. Click New category node.
-11. In the Name field, enter the name of commodity.
-    * For example, type 'Other commodity'.  
-12. In the Code field, enter the commodity code.
+10. Click **New category node**.
+11. In the **Name** field, enter the name of commodity.
+    
+    For example, type 'Other commodity'.  
+12. In the **Code** field, enter the commodity code.
     * For example, type '995 00 00'.  
 13. In the Friendly name field, type a value.
     * For example, type 'Other'.  
-14. Click Save.
+14. Click **Save**.
 15. Close the page.
 
 ## Assign commodity code to product hierarchy and released product
-1. Use the Quick Filter to find records. For example, filter on the Name field with a value of 'sales'.
+1. Use the quick filter to find records. For example, filter on the **Name** field with a value of 'sales'.
 2. In the list, click the link in the selected row.
 3. In the tree, expand 'a category node'.
-    * For example, expand 'Sales hierarchy\Home audio'.  
+    
+    For example, expand 'Sales hierarchy\Home audio'.  
 4. In the tree, select 'the category to assign to the commodity code'.
-    * For example, select 'Sales hierarchy\Home audio\Speakers.  
-5. Expand the Commodity codes section.
-6. Click Add.
-7. In the Select hierarchy field, select 'Intrastat'.
+    
+    For example, select 'Sales hierarchy\Home audio\Speakers.  
+5. Expand the **Commodity codes** fastTab.
+6. Click **Add**.
+7. In the **Select hierarchy** field, select 'Intrastat'.
 8. In the list, find and select the commodity code
-    * For example, select '920 20 34 Speaker'.  
-9. Click SelectCodes.
-10. Click OK.
-11. Go to Product information management > Products > Released products.
+    
+    For example, select '920 20 34 Speaker'.  
+9. Click the right arrow to select code.
+10. Click **OK**.
+11. In the Navigation pane, go to **Modules > Product information management > Products > Released products**.
 12. In the list, choose the released product that you will assign to the commodity code.
-    * For example, choose 'D0001'.  
-13. Click Edit.
-14. Expand the Foreign trade section.
-15. In the Commodity field, enter the commodity code
-    * For example, select value '920 20 34 Speaker'.    
-16. In the Charges percentage field, enter a number.
-    * For example, enter '3'.  
-17. In the Country/region field, enter or select a country or region of origin
-    * For example, select 'AUT'.  
-18. Expand the Manage inventory section.
-19. In the Net weight field, enter a weight in kg.
+    
+    For example, choose 'D0001'.  
+13. Click **Edit**.
+14. Expand the **Foreign trade** fastTab.
+15. In the **Commodity** field, enter the commodity code.
+    
+    For example, select value '920 20 34 Speaker'.    
+16. In the **Charges percentage** field, enter a number.
+    
+    For example, enter '3'.  
+17. In the **Country/region** field, enter or select a country or region of origin
+    
+    For example, select 'AUT'.  
+18. Expand the **Manage inventory** fastTab.
+19. In the **Net weight** field, enter a weight in kg.
     * For example, enter '2.5'.  
-20. Click Save.
+20. Click **Save**.
 
 ## Set up Intrastat transaction codes and foreign trade parameters
 1. Go to Tax > Setup > Foreign trade > Transaction codes
