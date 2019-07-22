@@ -17,7 +17,7 @@ Find the right online training, in person workshops, and events for your role as
 
         Do you decide whether to invest in new technologies? 
 
-        [Get started](learning-catalog-bdm.md)
+        [Get started](learning-catalog-bdm.md#get-started)
 
 
 
@@ -28,23 +28,13 @@ Find the right online training, in person workshops, and events for your role as
 
         Did you just get a new application to use? 
 
-        [Get an introduction](learning-catalog-business-user.md)
+        [Get an introduction](learning-catalog-business-user.md#get-an-introduction)
 
-        [Distribution](learning-catalog-business-user.md)
+        [Financial management](learning-catalog-business-user.md#financial-management)
 
-        [Financial management](learning-catalog-business-user.md)
+        [Manufacturing](learning-catalog-business-user.md#manufacturing)
 
-        [Human resources](learning-catalog-business-user.md)
-
-        [Manufacturing](learning-catalog-business-user.md)
-
-        [Retail](learning-catalog-business-user.md)
-
-        [Sales](learning-catalog-business-user.md)
-
-        [Purchasing](learning-catalog-business-user.md)
-
-        [Distribution](learning-catalog-business-user.md)
+        [Supply chain management](learning-catalog-business-user.md#supply-chain-management)
 
     :::column-end:::
 :::row-end:::
