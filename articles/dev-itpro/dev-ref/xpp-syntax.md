@@ -5,7 +5,7 @@ title: X++ syntax
 description: This topic contains the syntax reference for X++. 
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -837,12 +837,6 @@ This topic shows the formal grammar of the X++ language.
 
 This section describes the grammar of X++ in Backus Naur Form (BNF). A small example of BNF is described here.
 
-BNF code
-
-Interpretation
-
-Copy Code
-
     AA ::= BB  CC_SYM
     BB ::= JJ_SYM
        ::= KK_SYM
@@ -856,8 +850,6 @@ In the BNF for X++ grammar, most of the terminals have \_SYM as the suffix of th
 ### The Formal X++ Grammar in BNF
 
 This section contains the BNF that defines the grammar of X++.
-
-Copy Code
 
     CMPL_UNIT ::= RETTYPEID  FUNC_HDR  FUNC_HEAD  BODY
               ::= RETTYPEID  DATA_HDR  CLASS_DECL
@@ -1497,6 +1489,5 @@ Additional resources
 --------
 
 [X++ Language Reference](xpp-language-reference.md)
-
 
 
