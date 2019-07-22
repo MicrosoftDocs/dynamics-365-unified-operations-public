@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [banner](../../includes/preview-banner.md)]
+
 This topic explains how to create a condition assessment template and registration on an asset in Asset Management. Condition assessment is performed at regular intervals, and the primary objective is to create and maintain condition data on assets. Seen from a preventive maintenance perspective, it is important to monitor key information such as current condition, and remaining life span. Furthermore, if you carry out condition assessment at regular intervals, you will be able to monitor and compare conditions on the machinery in your factory.
 
 Condition assessment can be used to measure and monitor many conditions on your equipment. Example: You could measure vibrations on your machinery. After you have registered vibration measurements in Asset Management on various types of equipment, you can search for the latest registered assessment and view vibration measurements.
