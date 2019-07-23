@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: shajain
+ms.author: psimolin
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
