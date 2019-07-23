@@ -3,7 +3,7 @@
 
 title: Deploy a new e-Commerce site
 description: This topic covers the tasks associated with deploying a new e-Commerce site in Dynamics 365 for Commerce. 
-author: stuharg
+author: psimolin
 manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
