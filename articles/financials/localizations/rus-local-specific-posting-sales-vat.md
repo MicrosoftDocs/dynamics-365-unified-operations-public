@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Local specific posting of Sales VAT
+title: Local specific posting of sales VAT
 description: This topic explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
 author: anasyash
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.1
 
 ---
 
-# Local specific posting of Sales VAT 
+# Local specific posting of sales VAT 
 
 [!include [banner](../includes/banner.md)]
 
