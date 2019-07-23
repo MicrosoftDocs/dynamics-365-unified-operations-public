@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: Show order confirmation on ecommerce
+description: This topic describes how to show order confirmation on ecommerce
+author: anupamar-ms
+manager: BrendanS
+ms.date: 07/23/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  RetailOperations, RetailFunctionalityProfile
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: anupamar-ms
+ms.search.validFrom: 2019-07-23
+ms.dyn365.ops.version: 
+
+---
 # Order confirmation
 
 Order confirmation page is used to show a confirmation message once an order is placed. This page will have the Order confirmation module which shows the order confirmation number and the email address that was provided during checkout.
