@@ -5,6 +5,7 @@ title: Retail Server customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: mugunthanm
 manager: AnnBe
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
