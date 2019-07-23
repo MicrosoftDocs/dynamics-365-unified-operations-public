@@ -36,6 +36,8 @@ In this digital world,  business eco-systems use the Dynamics 365 suite as a who
 
 The Finance and Operations and Common Data Service provide near real-time data synchronization between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications via a dual-write framework. The coverage is broad and spans across 28 surface areas of Dynamics 365 for Finance and Operations. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect the business processes across applications.
 
+![architecture overview diagram](media/dual-write-overview.jpg)
+
 The following value propositions are available for the customers.
 
 + [Organization hierarchy in Common Data Service](dual-write-organization.md)
@@ -51,4 +53,16 @@ Synchronous, bidirectional near-real time data flows requires the following vers
 + Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 10.0.4 Platform Update 28 or higher
 + Dynamics 365 Customer Engagement, Platform version 9.1 (4.2) or higher
 
-For system setup instructions, see [Announcing Dual Write Preview](https://powerapps.microsoft.com/en-us/blog/announcing-dual-write-preview). It includes a [step-by-step guide](https://aka.ms/dualwrite-docs).
+## Setup instructions
+
+Follow these steps to set up integration between Finance and Operations and Common Data Service:
+	
+1. For dual-write system setup, see [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview. 
+2. Download and install the solution from [Finance and Operations, CDS, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains 5 solutions:
+    + Dynamics365Company
+    + CurrencyExchangeRates
+    + Dynamics365FinanceAndOperationsCommon
+    + Dynamics365FinanceCommon
+    + Dynamics365SupplyChainCommon
+
+Dual-write is not compatible with the [Prospect to Cash](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) solution. If you have the Prospect to cash solution running, you need to un-install the solution as well as disable the customer and vendor dual-write templates that are part of Prospect to Cash.
