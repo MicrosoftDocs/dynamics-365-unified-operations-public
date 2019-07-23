@@ -57,7 +57,7 @@ As shown in the diagram, this one-to-one mapping between Business Unit, Company,
 
 A final element to discuss is how dual-write recognized which owner team to assign records to. This is controlled by the "Default owning team" field on the cdm\_Company record. When a cdm\_Company record is enabled for dual-write, a plugin automatically creates the associated BU and owner team (if it does not exist) and sets the default owning team field. The administrator can change the default owning team to a different value, but can not clear the field as long as the entity is enabled for dual-write. 
 
-![default](media/dual-write-default-owning-team.png)
+![default](media/dual-write-default-owning-team.jpg)
 
 ## Company striping and bootstrapping
 
