@@ -5,7 +5,7 @@ title: Dynamics 365 for Finance and Operations in France
 description: This topic provides information about the availability of Dynamics 365 for Finance and Operations in France's data centers.
 author: tfehr
 manager: AnnBe
-ms.date: 07/18/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
