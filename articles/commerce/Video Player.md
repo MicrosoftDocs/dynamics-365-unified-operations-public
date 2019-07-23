@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title:Video Player
+description: This topic reviews setting up an e-Commerce page with the Video Player module.
+author: anupamar
+manager: brendans
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+
+---
+
 # Video Player 
 
 Video player is used to support video playback. It supports the following media types <insert>.  There are two video players that are supported in starter kit– Ambient Video Player and Video Player.  
