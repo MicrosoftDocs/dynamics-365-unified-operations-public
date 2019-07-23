@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a development environment
-description: This topic demonstrates how to set up a development environment for Dynamics 365 for Commerce. 
+description: This topic demonstrates how to set up an e-Commerce development environment for Dynamics 365 for Commerce. 
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
