@@ -2457,7 +2457,7 @@
             href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
-          - name: Local specific posting of Sales VAT
+          - name: Local specific posting of sales VAT
             href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
           - name: Value-added tax (VAT) for tax agents
             href: ../financials/localizations/rus-tax-agent.md
