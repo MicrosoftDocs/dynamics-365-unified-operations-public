@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Quick tour of product details
+description: 
+author: AnupamaR
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: AnupamaR
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+
+# Quick tour of product details page
+
 The **Product details** page is the page that provides detailed information about a product. It allows your customers to configure and choose the options (dimensions) of the product. It should have all the information about the product so the user can make a purchase decision.
 
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
