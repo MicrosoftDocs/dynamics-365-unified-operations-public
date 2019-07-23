@@ -2,8 +2,7 @@
 # required metadata
 
 title: Consume workflow approval business events
-description: This topic explains how to configure and consume a workflow business event with Microsoft Flow for a purchase requisition
-approval.
+description: This topic explains how to use Microsoft Flow to configure and consume a workflow business event for purchase requisition approval.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 07/18/2019
@@ -14,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,95 +29,81 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Consume workflow approval business events
 
-This topic explains how to configure and consume a workflow business event with Microsoft Flow for a purchase requisition approval.
+This topic explains how to use Microsoft Flow to configure and consume a workflow business event for purchase requisition approval.
 
-In order to complete this topic, you must be running version 10.0.2 with platform update 26 or later.
+To complete this topic, you must be running Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019) with platform update 26 or later.
 
 ## Scenario overview
 
-The below diagram shows the high-level process you will need to configure with Microsoft Flow. Note the following points:
+The following illustration shows the high-level process that you must configure by using Microsoft Flow. Note the following points:
 
--   Finance and Operations fires a business event whenever a new approval starts.
+1. Finance and Operations fires a business event whenever a new approval starts.
+2. Microsoft Flow Finance and Operations triggers start. These triggers call back an OData action to verify that the workflow that has the ID that the triggers provided is running.
+3. If the check is unsuccessful, an email is sent to notify the user about the new work item.
+4. If the check is successful, a new Microsoft Flow approval is started.
+5. The workflow is completed by using the outcome of the approval. The outcome can be either **Approve** or **Reject**.
 
--   Microsoft flow Finance and Operations triggers start and call back an Odata action to check that the workflow with ID provided form the trigger is running.
+<img src="../../media/BEF-Howto-workflow-01.png" width="70%">
 
--   If the check fails, we notify the user by email of the new workitem.
+## Exercise 1: Create a new flow
 
--   If the check is successful we start a new Microsoft Flow Approval.
+1. Sign in to the Microsoft Flow portal.
+2. Select an existing environment where you have the right to create a flow resource. The **(default)** environment is available to all companies.
+3. Select **New \> Create from blank**.
+4. Search for **Dynamics 365 for Finance and Operations**, and select the connector.
+5. A new trigger for Finance and Operations is created. This trigger is named **When a Business Event occurs**. Select it.
+6. Select the environment instance that has these characteristics: 
 
--   Last step is the complete the workflow with the outcome of the approval be it Approve or Reject.
+    - The category is **Workflow workitem**.
+    - The event name is **Purchase requisition review (000062) – Approve purchase requisitions**.
+    - Any legal entity is selected.
 
-    <img alt="aproval workflow" src="../../media/BEF-Howto-workflow-01.png" width="70%">
+7. Select **New Step** to add a new action.
+8. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
+9. Select the content field of the **Parse Json** action. The **Body** output from the previous step should appear as an option. Select **Body**.
 
-## Exercise 1: Create a new Microsoft Flow
+    Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Microsoft Flow to generate a schema from a payload.
 
-1.  Log into Microsoft Flow portal.
+10. In Finance and Operations, select the **000062** workflow event in the catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
+11. Go back to Microsoft Flow, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
+12. Add a new step to call a workflow action that validates whether a workflow that has the correct instance ID is running and awaiting approval.
 
-2.  Select an existing environment where you have the right to create a flow resource - (default) environment is open to all company.
+    <img src="../../media/BEF-Howto-workflow-08.png" width="70%">
 
-3.  Select **New \> Create from blank**.
+13. Add a new condition control step to check the result of the validate action. The dynamic field won't provide the required output. Therefore, you must manually enter the following expression instead: **Body('Execute_action')?\['value'\]**. Then select **OK**.
 
-4.  Search for **Dynamics 365 for Finance and Operations** and select the connector.
+    <img src="../../media/BEF-Howto-workflow-09.png" width="70%">
 
-5.  You will notice a new trigger for Finance and Operations called **When a Business Event occurs**. Select it.
+    > [!NOTE]
+    > The next time that you open the workflow, you will notice that the expression has been updated so that it shows the **value** field. As the following illustration shows, this field will have a Finance and Operations icon.
 
-6.  Then select your environment instance, where: 
+    <img src="../../media/BEF-Howto-workflow-10.png" width="70%">
 
-    - Category is **Workflow workitem** 
-    - Event name is **Purchase requisition review (000062) – Approve purchase requisitions**
-    - Select any legal entity
+14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the Finance and Operations client.
 
-7.  Select **New Step** button to add a new action.
+    The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in your Finance and Operations demo environment, you can use your own email address for demo purposes.
 
-8.  Search for **Parse Json** data operation. This step is needed to be able to parse our message with the schema of our data contract provided by Finance and Operations.
+    <img src="../../media/BEF-Howto-workflow-11.png" width="70%">
 
-9.  Select the content field of **Parse Json** action then the **Body** output from the previous step should appear as an option. Select **Body**.
+15. If the result of the validate step is **Yes**, you must start a new Microsoft Flow approval step. In the **Yes** container, select a new action that is named **Start and wait for an approval (v2)**, and enter details as shown in the following illustration. Again, you can use your own email address in the **Assigned to** field for demo purposes if the workflow approver user hasn't been configured in your demo environment.
 
-10. Now we need to type in the schema of the contract received from Finance and Operations. However, Finance and Operations provides only a sample payload instead. Hence, we can use Microsoft Flow capability to generate a schema from a payload. Go back to Finance and Operations, select the workflow 00062 event in the catalog, and click the Download schema link. This will download a text file. Open the text file and copy the content.
+    <img src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
-11. Go back to Microsoft Flow and click the **Use sample payload to generate schema** link. Then paste your text file content and click **Done**.
+    Next, you must complete the Finance and Operations workflow approval by using the outcome of the Microsoft Flow approval step.
 
-12. The add a new step as follows to call a workflow action that validate whether a workflow with the right instance ID is running and awaiting approval.
+16. In the **Yes** container, add a new **Finance and Operations Execute Action** step, and fill the fields with the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select it as input for an action, Microsoft Flow automatically embeds your action in an **Apply to each** container.
 
-    <img alt="workflow validate action" src="../../media/BEF-Howto-workflow-08.png" width="70%">
+    <img src="../../media/BEF-Howto-workflow-13.png" width="70%">
 
-13. Then add a new condition control step to check the result of the validate action. The output to use will not show up from the dynamics field you will need to type manually the following expression: **Body(‘Execute_action’)?[‘value’]** Then click on **OK.**
-
-    <img alt="flow condition" src="../../media/BEF-Howto-workflow-09.png" width="70%">
-
-    > [!Note]
-    > Next time you open your workflow, you will notice that the expression will be updated to show the **value** field, as below, with a Finance and Operations icon.
-
-    <img alt="workflow action output" src="../../media/BEF-Howto-workflow-10.png" width="70%">
-
-14. The condition control creates automatically two branches for Yes/No results. If the validate step result is **No** we need to alert by email the user that a new task is needing his attention and needs to login to Finance and Opertions client.
-
-    The email that the workflow business event will return is the workflow Approver one. If this has not been configured in your Finance and Operations demo environment, you can use your email instead for demo purpose.
-
-    <img alt="aprover alias" src="../../media/BEF-Howto-workflow-11.png" width="70%">
-
-15. Then if the validation is successful we need to start a new Microsoft approval step. Choose within the **Yes** container a new action called **Start and wait for an approval (v2)**. And filling the details as shown in the picture. Again, you can use your email in the **Assign** field for demo purpose if your workflow approver user has not been configured in your demo environment.
-
-    <img alt="Microsoft flow aproval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
-
-16. Last step is to complete the Finance and Operations workflow approval with the outcome from the Microsoft flow approval step. You need to add a new **Finance and Operations Execute Action** step within the **Yes** container. And fill the fields with **WorkflowWorkitem-complete** action and **WorkflowWorkitemInstanceID** parameter. Because approval step can support multiple approver the response output is an Array. Thus, as soon as you select it as an input for an action Microsoft flow automatically embed your action within an **Apply to each** container.
-
-    <img alt="apply to each " src="../../media/BEF-Howto-workflow-13.png" width="70%">
-
-17. Then click **Save**
+17. Select **Save**.
 
 ## Exercise 2: Trigger a business event
 
-Microsoft Flow can configure Finance and Operations automatically for you. Once you save your Flow, it creates for you an endpoint in Finance and Operations, then it activates the business event for you. There is no remaining configuration step in Finance and Operations apart from verifying that the endpoint has been correctly configured then triggering an event.
+Microsoft Flow can automatically configure Finance and Operations for you. After you save your flow, Microsoft Flow creates an endpoint in Finance and Operations and activates the business event. You don't have to complete any other configuration in Finance and Operations. You just have to verify that the endpoint has been correctly configured and then trigger an event.
 
-1.  Log into the Finance and Opertions client.
-
-2.  Go to **System Administration \> Setup \> Business events**.
-
-3.  Click on **Business Events**.
-
-4.  Click **Endpoints**.
-
-5.  Then verify that a new endpoint has been created with a GUID appended in the name.
-
-6.  If you check the **Active events** tab you can also verify that **Workflow workitem** is activated for USMF.
+1. Sign in to the Finance and Operations client.
+2. Go to **System administration \> Setup \> Business events**.
+3. Select **Business events**.
+4. Select **Endpoints**.
+5. Verify that a new endpoint has been created, and that a globally unique identifier (GUID) has been appended to the name.
+6. On the **Active events** tab, verify that **Workflow workitem** is activated for the USMF company.
