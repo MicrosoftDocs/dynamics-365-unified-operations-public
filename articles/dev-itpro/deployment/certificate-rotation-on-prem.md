@@ -225,19 +225,19 @@ Continue this process following [Clean up an existing environment and redeploy](
 
 2. Select **Maintain** and then select **Update Settings**.
 
-	![](media/addf4f1d0c0a86d840a6a412f774e474.png)
+	!Apply update settings[](media/addf4f1d0c0a86d840a6a412f774e474.png)
 
 3. Change the thumbprints to the new ones that you have previously configured (you can find these in the ConfigTemplate.xml file in the InfrastructureScripts folder).
 
-	![](media/07da4d7e02f11878ee91c61b4f561a50.png)
+	![Deployment settings thumbprint](media/07da4d7e02f11878ee91c61b4f561a50.png)
 
-	![](media/785caaf4ee652d66c0d88cf615a57e26.png)
+	![Deployment settings thumbprint](media/785caaf4ee652d66c0d88cf615a57e26.png)
 
 4. Select **Prepare**.
 
 5. After downloading and preparation is complete, the **Update environment** button will display.
 
-	![](media/0a9d43044593450f1a828c0dd7698024.png)
+	![Update environment button](media/0a9d43044593450f1a828c0dd7698024.png)
 
 6. Select **Update environment** to start updating your environment.
 
@@ -247,9 +247,9 @@ Continue this process following [Clean up an existing environment and redeploy](
 
 	Here is an example of how the name of the same thumbprint might differ.
 
-	![](media/038173714b2fb6cf12acc4bda2a3dde5.png)
+	![Deployment settings thumbprint example](media/038173714b2fb6cf12acc4bda2a3dde5.png)
 
-	![](media/642f6434da9cdeac3651b765acca08fa.png)
+	![Deployment settings thumbprint example](media/642f6434da9cdeac3651b765acca08fa.png)
 
 ## Update other certificates as needed
 
