@@ -5,7 +5,7 @@ title: Goods and Service Tax (GST) project transactions
 description: This topic provides information about transactions for Goods and Service Tax (GST) projects.
 author: kfend
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,13 +32,13 @@ ms.search.validFrom: 2019-7-02
 
 [!include [banner](../includes/banner.md)]
 
-## Project category
+## Create a project category
 
 1. Go to **Project management and accounting** \> **Setup** \> **Categories** \> **Project categories**.
 2. On the **Project** FastTab, in the **Service accounting code** field, select a value.
 3. Close the page.
 
-## Project through an approved project quotation
+## Create a project quotation
 
 1. Go to **Project management and accounting** \> **Quotations** \> **Project quotations**.
 2. Create a project quotation.
@@ -217,7 +217,7 @@ ms.search.validFrom: 2019-7-02
 
 ### Update additional fees
 
-1. Select **Create Fees**.
+1. On the **Projects** page, select **Create Fees**.
 2. Define the values, and then select **OK**.
 3. On the **Fee** tab, select the additional fee record, and then select **View details**.
 4. Select **Tax information**.
@@ -260,7 +260,7 @@ The following illustration shows an example of the **Tax invoice** report.
 
 ![Tax invoice report](media/gst-proj-trans-25.png)
 
-## Service management
+## Create a service management
 
 1. Go to **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
 2. Create a service agreement.
@@ -288,7 +288,7 @@ The following illustration shows an example of the **Tax invoice** report.
 
 ## Create a project invoice proposal
 
-1. On the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Project invoice proposals**.
+1. On the **Service agreements** page, on the Action Pane, on the **Invoice** tab, in the **Related information** group, select **Project invoice proposals**.
 2. Select **New** \> **Invoice proposal**.
 3. Select a project, and then select **Search**.
 4. Select **OK**.
