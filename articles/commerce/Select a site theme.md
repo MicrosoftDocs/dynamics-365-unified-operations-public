@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Select a site theme
+description: This topic shows you how to set or change your site's theme
+author: StuHarg
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: StuHarg
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+
 This topic shows you how to set or change your site's theme
 
 Your site's layout and style (fonts, sizes, colors etc…) is defined by the Theme you select and apply to the site. A theme is built and deployed by a developer at your company. For an overview of themes, see the [Theming overview](http://) topic. See the [Create a new theme](http://) help topic for more information on building and deploying themes.
