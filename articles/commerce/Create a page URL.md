@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Create a page URL
+description: This article covers the basic concepts and procedures for creating the URL slug for a page in your site.
+author: StuHarg
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: StuHarg
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+# Create a page URL
+
 This article covers the basic concepts and procedures for creating the URL slug for a page in your site.
 
 ## Overview
