@@ -27,6 +27,8 @@
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
         - name: Finance and Operations operated by 21Vianet in China
           href: ../dev-itpro/deployment/china-local-deployment.md
+        - name: Finance and Operations in France
+          href: ../dev-itpro/deployment/france-local-deployment.md
       - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
@@ -2433,7 +2435,8 @@
             href: ../financials/localizations/rus-ledger-transactions-preview.md 
           - name: Set up exchange rates for currency transactions
             href: ../financials/localizations/rus-exchange-difference.md
-          - name: Import currency exchange rates from CBRF ../financials/general-ledger/import-currency-exchange-rates.md
+          - name: Import currency exchange rates from CBRF 
+            href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2457,6 +2460,8 @@
             href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
+          - name: Local specific posting of sales VAT
+            href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
           - name: Value-added tax (VAT) for tax agents
             href: ../financials/localizations/rus-tax-agent.md
           - name: VAT declaration
