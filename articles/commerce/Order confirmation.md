@@ -50,9 +50,9 @@ Once an order is placed during checkout, the order confirmation number and the e
 
 ## More modules on Order confirmation page
 
-Recommendations: Recommendations can be placed on the order confirmation page to allow the user to continue their shopping journey. Any existing list can be used except People Also Like and Frequently bought together. 
+**Recommendations**:: Recommendations can be placed on the order confirmation page to allow the user to continue their shopping journey. Any existing list can be used except People Also Like and Frequently bought together. 
 
-Marketing modules: Any marketing content can added to this page – E.g. Feature, Content Placement, Content rich block etc.
+**Marketing modules**: Any marketing content can added to this page – E.g. Feature, Content Placement, Content rich block etc.
 
 ## Authoring order confirmation page
 
