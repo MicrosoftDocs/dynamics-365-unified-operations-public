@@ -39,9 +39,9 @@ This topic describes the steps for initializing Retail Cloud Scale Unit.
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
-2. In Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for Retail Cloud Scale Unit**.
+2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Retail Cloud Scale Units** and indicate the environment ID, number of RCSUs desired and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple RCSUs per environment, you do not need to create a support request. 
 
-The request will be completed within five business days.
+
 
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
