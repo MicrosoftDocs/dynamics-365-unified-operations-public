@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Add telemtry
+description: This topic describes the process for adding the necessary script code to your pages to support the collection of client-side telemetry. 
+author: StuHarg
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: StuHarg
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+# Add telemetry
+
 This topic describes the process for adding the necessary script code to your pages to support the collection of client-side telemetry. 
 
 Web analytics are an essential tool for understanding how your customers interact with your site and helping you make decisions that optimize the experience for maximum conversion. There are many web analytics packages available to help you in this regard, including (but not limited to) Google Analytics, Clicky, Moz Analytics, KISSMetrics and others. 
