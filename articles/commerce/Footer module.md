@@ -1,3 +1,35 @@
+---
+# required metadata
+ 
+title: Footer module
+description:  
+author: AnupamaR
+manager: brendans
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ 
+# optional metadata
+ 
+# ms.search.form: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: AnupamaR
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+ 
+---
+
+
 The **Footer** module is special container that is used for hosting the modules that will be displayed on the page footer. For instance, it includes links to various pages across the site such as Contact Us, Store Policies, Follow us.
 
 ## Properties of Footer
