@@ -217,4 +217,4 @@ The runbook provides the sequence of steps that must be run to update the enviro
     AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
     ```
 
-- To verify database synchronization, in the **aosservce\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
+- To verify database synchronization, in the **aosservice\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
