@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Mobile platform home page
+title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 05/29/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 9
 
 ---
 
-# Mobile platform home page
+# Mobile platform resources
 
 [!include [banner](../../includes/banner.md)]
 
