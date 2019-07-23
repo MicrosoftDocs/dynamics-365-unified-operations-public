@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Customized site navigation
+description: This article discusses how you create an online navigation hierarchy to organize your products for browsing on your Dynamics 365 e-Commerce site.
+author: StuHarg
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: StuHarg
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+# Customized site navigation
+
 This article discusses how you create an online navigation hierarchy to organize your products for browsing on your Dynamics 365 e-Commerce site.
 
 Most online storefronts provide the ability for your customers to discover and browse for product by navigating through product categories. This capability is typically provided through tabs at the top of the page or through a left navigation bar. 
