@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Quick tour of account management
+description: 
+author: AnupamaR
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: AnupamaR
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+
+# Account management
+
 **Account Management** is a group of pages and modules that allow your customers to view their account and order related information. It includes an Account management landing page, User profile page, Address page, Order history page, Order details page, Loyalty rewards page, Wishlist page.
 
 The **Account** landing page provides a quick summary of all account related information, including user profile, orders, wishlist, addresses, loyalty etc. When a user signs in and goes to “My Account” this is first the page that will be shown. From here, the user can access more details on each area. 
