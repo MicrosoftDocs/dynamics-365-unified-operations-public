@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: API, class, and table reference
+title: API, class, and table resources
 description: This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 author: RobinARH
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# API, class, and table reference
+# API, class, and table resources
 
 [!include [banner](../includes/banner.md)]
 
