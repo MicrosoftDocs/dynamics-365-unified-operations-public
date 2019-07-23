@@ -1,3 +1,35 @@
+---
+# required metadata
+ 
+title: Header module
+description:  
+author: AnupamaR
+manager: brendans
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+ 
+# optional metadata
+ 
+# ms.search.form: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: AnupamaR
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+ 
+---
+
+
 The **Header module** is special container that is used for hosting all the modules that will be displayed on the page header. For instance, it includes your site logo, links to the navigation hierarchy, links to other pages on ecommerce, search bar etc. 
 
 The Header module has an optimized design based on the viewport – Desktop vs Mobile.  For instance, the navigation bar collapses to a hamburger menu in Mobile view port.
