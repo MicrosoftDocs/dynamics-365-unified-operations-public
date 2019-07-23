@@ -28,6 +28,7 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
+
 # Header module
 
 The **Header module** is special container that is used for hosting all the modules that will be displayed on the page header. For instance, it includes your site logo, links to the navigation hierarchy, links to other pages on ecommerce, search bar etc. 
