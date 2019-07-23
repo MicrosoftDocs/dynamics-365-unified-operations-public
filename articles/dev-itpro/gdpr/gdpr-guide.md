@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General data protection regulation overview
+title: General Data Protection Regulation overview
 description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: ToddLefor
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# General data protection regulation overview
+# General Data Protection Regulation overview
 
 [!include [banner](../includes/banner.md)]
 
