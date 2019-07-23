@@ -78,7 +78,8 @@ A posting group must be specified for each sales tax code. Use the standard meth
 5. In the **Payment offset account** field, specify corresponding account for
     tax payable.
 
-> [!NOTE] This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this topic for a posting example).
+> [!NOTE] 
+> This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this topic for a posting example).
 
 6. Specify the appropriate accounts in the usual way for the following fields:
 
