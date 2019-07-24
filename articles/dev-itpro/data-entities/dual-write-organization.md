@@ -94,6 +94,8 @@ Internal organization information in CDS comes from 2 entities of Finance and Op
 
 ![architecture image](media/dual-write-operating-unit.png)
 
+![architecture image](media/dual-write-legal-entities.png)
+
 ### Operating unit
 
 Source field | Map type | Destination field
@@ -104,20 +106,9 @@ NAME | > | msdyn_name
 PARTYNUMBER | > | msdyn_partynumber
 OPERATINGUNITTYPE | >> | msdyn_type
 
-### Legal entities
+### Legal entity
+
 Source field | Map type | Destination field
----|---|---
-NAMEALIAS | > 
-### Legal entities| msdyn_namealias
-LANGUAGEID | > | msdyn_languageid
-NAME | > | msdyn_name
-PARTYNUMBER | > | msdyn_partynumber
-none | >> | msdyn_type
-LEGALENTITYID | > | msdyn_companycode
-
-
-
-### Operating Source field | Map type | Destination field
 ---|---|---
 NAMEALIAS | > | msdyn_namealias
 LANGUAGEID | > | msdyn_languageid
@@ -126,23 +117,17 @@ PARTYNUMBER | > | msdyn_partynumber
 none | >> | msdyn_type
 LEGALENTITYID | > | msdyn_companycode
 
-
-Source field | Map type | Destination field
----|---|---
-LANGUAGEID | > | msdyn_languageid
-NAMEALIAS | > | msdyn_namealias
-NAME | > | msdyn_name
-PARTYNUMBER | > | msdyn_partynumber
-OPERATINGUNITTYPE | >> | msdyn_type
-
-
-
-![architecture image](media/dual-write-legal-entities.png)
 
 ## Company
 
 Provies bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
 
 ![architecture image](media/dual-write-company.png)
+
+Source field | Map type | Destination field
+---|---|---
+NAME | = | cdm_name
+LEGALENTITYID | = | cdm_companycode
+
 
 
