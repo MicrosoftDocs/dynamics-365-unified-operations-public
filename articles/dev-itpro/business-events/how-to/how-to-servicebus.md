@@ -5,7 +5,7 @@ title: Consume business events by using Azure Service Bus
 description: This topic explains how to configure a Microsft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/12/2019
+ms.date: 07/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
