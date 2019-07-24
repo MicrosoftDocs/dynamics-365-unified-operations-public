@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/pre-release.md)]
+[!include [preview](../includes/preview-banner.md)]
 
 In this digital world,  business eco-systems use the Dynamics 365 suite as a whole. Data from people, customers, operations, and IoT devices flows in to one source creating the opportunity for digital feedback loops. To achieve this experience, native integration between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications is essential. Dynamics 365 for Customer Engagement Applications is built on top of Common Data Services (CDS). Finance and Operations data integrating with Common Data Services enables the Customer Engagement applications to communicate with Finance and Operations coherently and fluently.
 
