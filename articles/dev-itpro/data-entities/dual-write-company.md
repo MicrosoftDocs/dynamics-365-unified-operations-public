@@ -35,7 +35,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/pre-release.md)]
+[!include [preview](../includes/preview.md)]
 
 The concept of *Company* in Finance and Operations is both a legal and a business construct. It is also a security and visibility boundary for data. Users are always working in the context of a single company. The vast majority of the data is striped by company. We don't have an equivalent concept in the Common Data Service (CDS), but the closest one is "Business unit" (BU) and it is primarily a security and visibility boundary for user data. It does not have the same legal or business implications as as the Company entity in Finance and Operations. 
 
