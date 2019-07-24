@@ -35,6 +35,8 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/pre-release.md)]
+
 The concept of "Company" concept in Finance and Operations is both a legal and a business construct. It is also a security and visibility boundary for data. Users are always working in the context of a single company. The vast majority of the data is striped by company. We don't have an equivalent concept in the Common Data Service (CDS), but the closest one is "Business unit" (BU) and it is primarily a security and visibility boundary for user data. It does not have the same legal or business implications as as the Company entity in Finance and Operations. 
 
 For CDS integration, because BU and Company are not equivalent constructs, we cannot force a 1:1 mapping between them. At the same time, it is necessary to ensure that by default a user will see the same records in Finance and Operations as that user sees in CDS. To support this, we introduce a new entity in CDS called cdm\_Company which is equivalent to Company in Finance and Operations. To ensure visibility of records is equivalent between Finance and Operations and CDS out of the box, we recommend the following setup of data in CDS: 
