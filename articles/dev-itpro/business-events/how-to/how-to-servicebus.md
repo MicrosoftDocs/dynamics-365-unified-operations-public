@@ -145,7 +145,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 
 The business scenario involves sending an email or a message to a team channel whenever a customer payment is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the amount of the payment.
 
-1. In F&O select the business event catalog and look for **customer payment posted** business event
+1. In Finance and Operations select the business event catalog and look for **customer payment posted** business event
 2. Activate the business event for USMF company.
 
     <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
