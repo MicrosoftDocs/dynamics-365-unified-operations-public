@@ -48,7 +48,7 @@ Organization hierarchy entity maps are available to synchronize data one-way fro
 
 Provides one-way synchronization of internal organization hierarchy purpose information from Finance and Operations to Customer Engagement.
 
-![architecture image](media/dual-write-purpose.png)
+<!-- ![architecture image](media/dual-write-purpose.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -63,7 +63,7 @@ SETASDEFAULT | >> | msdyn_setasdefault
 
 Provides one-way synchronization of internal organization hierarchy type information from Finance and Operations to Customer Engagement.
 
-![architecture image](media/dual-write-type.png)
+<!-- ![architecture image](media/dual-write-type.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -74,7 +74,7 @@ NAME | > | msdyn_name
 
 Provides one-way synchronization of internal organization hierarchy information from Finance and Operations to Customer Engagement.
 
-![architecture image](media/dual-write-organization.png)
+<!-- ![architecture image](media/dual-write-organization.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -92,9 +92,9 @@ PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentid.msdyn_partynumber
 
 Internal organization information in CDS comes from 2 entities of Finance and Operations, **operating unit** and **legal entities**.
 
-![architecture image](media/dual-write-operating-unit.png)
+<!-- ![architecture image](media/dual-write-operating-unit.png) -->
 
-![architecture image](media/dual-write-legal-entities.png)
+<!-- ![architecture image](media/dual-write-legal-entities.png) -->
 
 ### Operating unit
 
@@ -122,7 +122,7 @@ LEGALENTITYID | > | msdyn_companycode
 
 Provies bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
 
-![architecture image](media/dual-write-company.png)
+<!-- ![architecture image](media/dual-write-company.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
