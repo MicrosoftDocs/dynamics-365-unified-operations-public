@@ -346,7 +346,7 @@ PERCENTORAMOUNTVALUE | = | msdyn_percentoramountvalue
 
 Synchronizes payment days reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-days.png
+![](media/dual-write-payment-days.png)
 
 Source field | Map type | Destination field
 ---|---|---
@@ -367,7 +367,6 @@ FREQUENCY | >< | msdyn_frequency
 DAYOFWEEK | >< | msdyn_dayofweek
 DAYOFMONTH | = | msdyn_dayofmonth
 NAME | = | msdyn_paymentday.msdyn_name
-
 
 ## Payment Terms
 
