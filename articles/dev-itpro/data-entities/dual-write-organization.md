@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Organization hierarchy on Common Data Service
+title: Organization hierarchy in Common Data Service
 description: 
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -30,40 +30,41 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Organization hierarchy on Common Data Service
+## Organization hierarchy in Common Data Service
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview](../includes/preview-banner.md)]
 
-Finance and Operations, being a financial system, considers *Organization* to be a core concept and the system setup starts with configuring an organization hierarchy. This allows business financials and operations to be tracked at the organization level as well as any level within the organization hierarchy. Common Data Service (CDS) does not contain the organization hierarchy concept but it has a few loose concepts like total sales revenue. As part of CDS integration, the organization hierarchy data structure is added to CDS.
+Because Microsoft Dynamics 365 for Finance and Operations is a financial system, *organization* is a core concept, and system setup starts with the configuration of an organization hierarchy. Business financials and operations can then be tracked at the organization level and also at any level in the organization hierarchy.
+
+Although Common Data Service doesn't have the concept of an organization hierarchy, it does have a few loose concepts, such as total sales revenue. As part of Common Data Service integration, the organization hierarchy data structure is added to Common Data Service.
 
 ## Data flow
 
-If a business eco-system is made up of Finance and Operations and CDS, it will continue to have organization hierarchy built on Finance and Operations but exposed in CDS for information and extensibility. The following organization hierarchy information is exposed in CDS as a one-way data flowing from Finance and Operations to CDS.
+A business ecosystem that consists of Finance and Operations and Common Data Service will continue to have an organization hierarchy. This organization hierarchy is built on Finance and Operations, but it's exposed in Common Data Service for informational and extensibility purposes. The following illustration shows the organization hierarchy information that is exposed in Common Data Service as a one-way data flow from Finance and Operations to Common Data Service.
 
-![architecture image](media/dual-write-data-flow.png)
+![Architecture image](media/dual-write-data-flow.png)
 
 ## Templates
 
-Organization hierarchy entity maps are available to synchronize data one-way from Finance and Operations to CDS.
+Organization hierarchy entity maps are available for one-way synchronization of data from Finance and Operations to Common Data Service.
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
 ## Internal Organization Hierarchy Purpose
 
-Provides one-way synchronization of internal organization hierarchy purpose information from Finance and Operations to Customer Engagement.
+Provides one-way synchronization of internal organization hierarchy purpose information from Finance and Operations to Dynamics 365 for Customer Engagement.
 
 <!-- ![architecture image](media/dual-write-purpose.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
-HIERARCHYTYPE | > | msdyn_hierarchypurposetypename
-HIERARCHYTYPE | > | msdyn_hierarchytype.msdyn_name
-HIERARCHYPURPOSE | >> | msdyn_hierarchypurpose
-IMMUTABLE | >> | msdyn_immutable
-SETASDEFAULT | >> | msdyn_setasdefault
-
+HIERARCHYTYPE | \> | msdyn\_hierarchypurposetypename
+HIERARCHYTYPE | \> | msdyn\_hierarchytype.msdyn\_name
+HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
+IMMUTABLE | \>\> | msdyn\_immutable
+SETASDEFAULT | \>\> | msdyn\_setasdefault
 
 ## Internal Organization Hierarchy Type
 
@@ -73,8 +74,7 @@ Provides one-way synchronization of internal organization hierarchy type informa
 
 Source field | Map type | Destination field
 ---|---|---
-NAME | > | msdyn_name
-
+NAME | \> | msdyn\_name
 
 ## Internal Organization Hierarchy
 
@@ -84,19 +84,18 @@ Provides one-way synchronization of internal organization hierarchy information 
 
 Source field | Map type | Destination field
 ---|---|---
-VALIDTO | > | msdyn_validto
-VALIDFROM | > | msdyn_validfrom
-HIERARCHYTYPE | > | msdyn_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | > | msdyn_childpartyid
-HIERARCHYTYPE | > | msdyn_hierarchytypeid.msdyn_name
-CHILDORGANIZATIONPARTYNUMBER | > | msdyn_childid.msdyn_partynumber
-PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentid.msdyn_partynumber
-
+VALIDTO | \> | msdyn\_validto
+VALIDFROM | \> | msdyn\_validfrom
+HIERARCHYTYPE | \> | msdyn\_hierarchytypename
+PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
+CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
+HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
+CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
+PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
 
 ## Internal Organization
 
-Internal organization information in CDS comes from 2 entities of Finance and Operations, **operating unit** and **legal entities**.
+Internal organization information in Common Data Service comes from two Finance and Operations entities, **operating unit** and **legal entities**.
 
 <!-- ![architecture image](media/dual-write-operating-unit.png) -->
 
@@ -106,34 +105,30 @@ Internal organization information in CDS comes from 2 entities of Finance and Op
 
 Source field | Map type | Destination field
 ---|---|---
-LANGUAGEID | > | msdyn_languageid
-NAMEALIAS | > | msdyn_namealias
-NAME | > | msdyn_name
-PARTYNUMBER | > | msdyn_partynumber
-OPERATINGUNITTYPE | >> | msdyn_type
+LANGUAGEID | \> | msdyn\_languageid
+NAMEALIAS | \> | msdyn\_namealias
+NAME | \> | msdyn\_name
+PARTYNUMBER | \> | msdyn\_partynumber
+OPERATINGUNITTYPE | \>\> | msdyn\_type
 
 ### Legal entity
 
 Source field | Map type | Destination field
 ---|---|---
-NAMEALIAS | > | msdyn_namealias
-LANGUAGEID | > | msdyn_languageid
-NAME | > | msdyn_name
-PARTYNUMBER | > | msdyn_partynumber
-none | >> | msdyn_type
-LEGALENTITYID | > | msdyn_companycode
-
+NAMEALIAS | \> | msdyn\_namealias
+LANGUAGEID | \> | msdyn\_languageid
+NAME | \> | msdyn\_name
+PARTYNUMBER | \> | msdyn\_partynumber
+none | \>\> | msdyn\_type
+LEGALENTITYID | \> | msdyn\_companycode
 
 ## Company
 
-Provies bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
+Provides bidirectional synchronization of legal entity (company) information between Finance and Operations and Customer Engagement.
 
 <!-- ![architecture image](media/dual-write-company.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
-NAME | = | cdm_name
-LEGALENTITYID | = | cdm_companycode
-
-
-
+NAME | = | cdm\_name
+LEGALENTITYID | = | cdm\_companycode
