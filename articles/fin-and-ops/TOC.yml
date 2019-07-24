@@ -274,7 +274,7 @@
       - name: Consume business events by using Azure Service Bus
         href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
       - name: Consume workflow approval business events
-        href: ../business-events/how-to/how-to-workflow.md
+        href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
   - name: Compliance
