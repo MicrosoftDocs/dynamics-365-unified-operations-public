@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:Delete Personal Information
+title: Delete Personal Information
 description: This topic reviews considerations for GDPR and handling Data Subject Requests within the Dynamics 365 e-Commerce tooling and system.
 author: BrianShook
 manager: BrendanSullivanMSFT
