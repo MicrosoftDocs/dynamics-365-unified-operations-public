@@ -33,8 +33,8 @@ ms.search.validFrom: 2019-07-15
 ## Organization hierarchy on Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
+[!include [preview](../includes/preview-banner.md)]
+[!include [preview](../includes/preview-banner.md)]
 
 Finance and Operations, being a financial system, considers *Organization* to be a core concept and the system setup starts with configuring an organization hierarchy. This allows business financials and operations to be tracked at the organization level as well as any level within the organization hierarchy. Common Data Service (CDS) does not contain the organization hierarchy concept but it has a few loose concepts like total sales revenue. As part of CDS integration, the organization hierarchy data structure is added to CDS.
 
