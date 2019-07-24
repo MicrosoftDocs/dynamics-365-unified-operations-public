@@ -71,9 +71,9 @@ Name Affixes              | Msdyn\_nameaffixes
 
 Synchronizes the commercial and organization customer master information between Finance and Operations and CDS.
 
-![](media/dual-write-account-1.png)
+<!-- ![](media/dual-write-account-1.png) -->
 
-![](media/dual-write-account-2.png)
+<!-- ![](media/dual-write-account-2.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -143,9 +143,8 @@ PARTYNUMBER | = | msdyn_partynumber
 
 Synchronizes consumer and end user customer master data between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-contact-1.png)
-
-![](media/dual-write-contact-2.png)
+<!-- ![](media/dual-write-contact-1.png) -->
+<!-- ![](media/dual-write-contact-2.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -217,7 +216,7 @@ SALESMEMO | = | description
 
 Synchronizes all primary, secondary, and tertiary contact information for both customers and vendors between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-contacts.png)
+<!-- ![](media/dual-write-contacts.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -253,7 +252,7 @@ none | >> | msdyn_contactpersonid
 
 Synchronizes customer group information between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-customer-groups.png)
+<!-- ![](media/dual-write-customer-groups.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -268,7 +267,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn_clearingperiodpaymenttermname.msdyn_na
 
 Synchronizes customer payment method information between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-customer-payment-methods.png)
+<!-- ![](media/dual-write-customer-payment-methods.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -293,7 +292,7 @@ DIRECTDEBIT | >< | msdyn_directdebit
 
 Synchronizes customer loyalty card information between Finance and Operations and Customer Engagement.
 
-![](media/dual-write-loyalty-cards.png)
+<!-- ![](media/dual-write-loyalty-cards.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -310,7 +309,7 @@ LOYALTYENROLLMENTDATE | = | msdyn_enrollmentdate
 
 Synchronizes payment schedule reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-schedules.png)
+<!-- ![](media/dual-write-payment-schedules.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -330,7 +329,7 @@ NOTES | = | msdyn_note
 
 Synchronizes payment schedule lines reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-schedule-lines.png)
+<!-- ![](media/dual-write-payment-schedule-lines.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -346,7 +345,7 @@ PERCENTORAMOUNTVALUE | = | msdyn_percentoramountvalue
 
 Synchronizes payment days reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-days.png)
+<!-- ![](media/dual-write-payment-days.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -358,7 +357,7 @@ DESCRIPTION | = | msdyn_description
 
 Synchronizes payment day lines reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-day-lines.png)
+<!-- ![](media/dual-write-payment-day-lines.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -372,7 +371,7 @@ NAME | = | msdyn_paymentday.msdyn_name
 
 Synchronizes payment terms (terms of payment) reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-payment-terms.png)
+<!-- ![](media/dual-write-payment-terms.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -395,7 +394,7 @@ PAYMENTSCHEDULENAME | = | msdyn_paymentschedulename.msdyn_name
 
 Synchronizes name affixes reference data between Finance and Operations and Customer Engagement for both customers and vendors.
 
-![](media/dual-write-name-affixes.png)
+<!-- ![](media/dual-write-name-affixes.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
