@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 23, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/23/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (July 23, 2019)"
+# What's new or changed in Dynamics 365 for Talent (July 23, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -38,9 +38,11 @@ This topic describes features that are either new or changed in Dynamics 365 for
 ## Changes in Attract
 
 ### PDF renderer for candidate documents
-Attract users can now view candidate PDF attachments in the document viewer experience itself and do not have to download to view it anymore. 
+
+Attract users can now view candidate PDF attachments in the document viewer instead of downloading the attachments.
 
 ### Signing up for Attract user research group 
+
 As we plan new product capabilities or ship preview features, we are looking for our users to help inform our direction. Interested users can now sign up to be part of our user research group by using the sign-up link in our app.
 
 ## Changes in Onboard
