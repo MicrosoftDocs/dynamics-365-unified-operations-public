@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Vendor data flow
+title: Integrated vendor master
 description: 
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -30,31 +30,33 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Integrated Vendor Master
+## Integrated vendor master
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview](../includes/preview-banner.md)]
 
-*Vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process and supplies goods for the business. *Vendor* is an established concept in Finance and Operations. But in Customer Engagement, the *Vendor* concept does not exist. Some businesses overload the *Account* entity to store both customer and vendor information. Other uses a custom *Vendor* concept. Common Data Service (CDS) integration supports both these designs. You can choose to enable either of the designs based on your business scenario. Integrating the vendor data between Finance and Operations and Customer Engagement gives you the capability to multi-master vendor data. Regardless of where the vendor data originates, it is integrated behind the scenes across application boundaries and infrastructure differences. 
+The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Microsoft Dynamics 365 for Finance and Operations, a vendor concept doesn't exist in Dynamics 365 for Customer Engagement. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
+
+Integration of vendor data between Finance and Operations and Customer Engagement lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
 
 ### Vendor data flow
 
-If you want to use Customer Engagement for vendor-mastering and want to isolate vendor information from customers, then you can use the new vendor design.
+If you want to use Customer Engagement for vendor mastering, and you want to isolate vendor information from customer information, you can use the new vendor design.
 
-![vendor data flow](media/dual-write-vendor-data-flow.png)
+![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to use Customer Engagement for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, you can use the new extended vendor design. In this design, extended vendor information like vendor group and vendor post profile are stored in the **vendor detail**.
+If you want to use Customer Engagement for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the **vendor detail**.
 
-![extended vender design](media/dual-write-vendor-detail.jpg)
+![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
-Vendor contact information is similar to the customer contact information. Behind the scenes the contact person information is stored and retrieved from same entities.
+Vendor contact information resembles customer contact information. Behind the scenes, the contact person's information is stored and retrieved from same entities.
 
 ## Templates
 
-Vendor data includes all information about the vendor like vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps works together in vendor data interaction as listed below.
+Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps works together during vendor data interaction, as shown in the following table.
 
-Finance and Operations  | Customer Engagement Application
+Finance and Operations  | Customer Engagement application
 ------------------------|---------------------------------
 Vendor V2               | Account
 Vendor V2               | Msdyn\_vendors
@@ -72,11 +74,11 @@ Name Affixes            | Msdyn\_nameaffixes
 
 ## Vendor V2 and Account 
 
-Businesses using the **Account** entity to store vendor information can continue to use it in the same way and also take advantage of the explicit vendor functionality coming due to Finance and Operations integration.
+Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations integration.
 
 ## Vendor V2 and Msdyn\_vendors
 
-Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to Finance and Operations integration. 
+Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations integration. 
 
 <!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
 
@@ -86,136 +88,134 @@ Businesses using a custom solution for vendors can take advantage of the out-of-
 
 Source field | Map type | Destination field
 ---|---|---
-VENDORACCOUNTNUMBER | = | msdyn_vendoraccountnumber
-VENDORGROUPID | = | msdyn_vendorgroupid.msdyn_vendorgroup
-VENDORORGANIZATIONNAME | = | msdyn_name
-VENDORPARTYTYPE | >< | msdyn_isperson
-PERSONFIRSTNAME | = | msdyn_firstname
-PERSONLASTNAME | = | msdyn_lastname
-CREDITLIMIT | = | msdyn_vendorcreditlimit
-ISFOREIGNENTITY | >< | msdyn_isforeignentity
-ISONETIMEVENDOR | >< | msdyn_isonetimevendor
-ADDRESSBUILDINGCOMPLIMENT | = | msdyn_addressbuildingcompliment
-PERSONCHILDRENNAMES | = | msdyn_childrennames
-ADDRESSCITY | = | msdyn_addresscity
-ADDRESSCOUNTRYREGIONID | = | msdyn_addresscountryregionid
-ADDRESSCOUNTRYREGIONISOCODE | = | msdyn_addresscountryregionisocode
-ADDRESSCOUNTYID | = | msdyn_addresscountyid
-CREDITRATING | = | msdyn_creditrating
-ADDRESSDESCRIPTION | = | msdyn_addressdescription
-ADDRESSDISTRICTNAME | = | msdyn_addressdistrictname
-DUNSNUMBER | = | msdyn_dunsnumber
-ETHNICORIGINID | = | msdyn_ethnicorigin
-FORMATTEDPRIMARYADDRESS | = | msdyn_formattedprimaryaddress
-PERSONHOBBIES | = | msdyn_hobbies
-PERSONINITIALS | = | msdyn_initials
-LANGUAGEID | = | msdyn_languageid
-PERSONLASTNAMEPREFIX | = | msdyn_lastnameprefix
-PERSONMIDDLENAME | = | msdyn_middlename
-ORGANIZATIONNUMBER | = | msdyn_organizationnumber
-OURACCOUNTNUMBER | = | msdyn_ourvendoraccountnumber
-PAYMENTID | = | msdyn_paymentid
-PERSONPHONETICFIRSTNAME | = | msdyn_phoneticfirstname
-PERSONPHONETICMIDDLENAME | = | msdyn_phoneticmiddlename
-PERSONPHONETICLASTNAME | = | msdyn_phoneticlastname
-ORGANIZATIONPHONETICNAME | = | msdyn_organizationphoneticname
-ADDRESSPOSTBOX | = | msdyn_addresspostbox
-PRIMARYURL | = | msdyn_primarycontacturl
-PRIMARYEMAILADDRESS | = | msdyn_primaryemailaddress
-PRIMARYEMAILADDRESSDESCRIPTION | = | msdyn_primaryemailaddressdescription
-PRIMARYFACEBOOK | = | msdyn_primaryfacebook
-PRIMARYFACEBOOKDESCRIPTION | = | msdyn_primaryfacebookdescription
-PRIMARYFAXNUMBER | = | msdyn_primaryfaxnumber
-PRIMARYFAXNUMBERDESCRIPTION | = | msdyn_primaryfaxnumberdescription
-PRIMARYFAXNUMBEREXTENSION | = | msdyn_primaryfaxnumberextension
-PRIMARYLINKEDIN | = | msdyn_primarylinkedin
-PRIMARYLINKEDINDESCRIPTION | = | msdyn_primarylinkedindescription
-PRIMARYPHONENUMBER | = | msdyn_pimaryphonenumber
-PRIMARYPHONENUMBERDESCRIPTION | = | msdyn_primaryphonenumberdescription
-PRIMARYPHONENUMBEREXTENSION | = | msdyn_primaryphonenumberextension
-PRIMARYTELEX | = | msdyn_primarytelex
-PRIMARYTELEXDESCRIPTION | = | msdyn_primarytelexdescription
-PRIMARYTWITTER | = | msdyn_primarytwitter
-PRIMARYTWITTERDESCRIPTION | = | msdyn_primarytwitterdescription
-PRIMARYURLDESCRIPTION | = | msdyn_primaryurldescription
-PERSONPROFESSIONALSUFFIX | = | msdyn_professionalsuffix
-PERSONPROFESSIONALTITLE | = | msdyn_professionatitle
-ADDRESSSTATEID | = | msdyn_addressstateid
-ADDRESSSTREET | = | msdyn_addressstreet
-ADDRESSSTREETNUMBER | = | msdyn_addressstreetnumber
-VENDORKNOWNASNAME | = | msdyn_vendorknownasname
-ADDRESSZIPCODE | = | msdyn_addresszipcode
-DEFAULTPAYMENTDAYNAME | = | msdyn_defaultpaymentdayname.msdyn_name
-DEFAULTPAYMENTSCHEDULENAME | = | msdyn_paymentschedule.msdyn_name
-DEFAULTPAYMENTTERMSNAME | = | msdyn_paymentterms.msdyn_name
-HASONLYTAKENBIDS | >< | msdyn_hasonlytakenbids
-ISMINORITYOWNED | >< | msdyn_isminorityowned
-ISVENDORLOCALLYOWNED | >< | msdyn_isvendorlocallyowned
-ISSERVICEVETERANOWNED | >< | msdyn_isserviceveteranowned
-ISOWNERDISABLED | >< | msdyn_ownerisdisabled
-ISWOMANOWNER | >< | msdyn_womanowner
-PERSONANNIVERSARYDAY | = | msdyn_personanniversaryday
-PERSONANNIVERSARYYEAR | = | msdyn_anniversaryyear
-PERSONBIRTHDAY | = | msdyn_birthday
-PERSONBIRTHYEAR | = | msdyn_birthyear
-ORGANIZATIONEMPLOYEEAMOUNT | = | msdyn_numberofemployees
-VENDORHOLDRELEASEDATE | = | msdyn_vendoronholdreleasedate
-VENDORPARTYNUMBER | = | msdyn_vendorpartynumber
-ADDRESSLOCATIONID | = | msdyn_addresslocationid
-PERSONANNIVERSARYMONTH | = | msdyn_vendorpersonanniversarymonth
-PERSONBIRTHMONTH | = | msdyn_vendorpersonbirthmonth
-PERSONMARITALSTATUS | >< | msdyn_maritalstatus
-ADDRESSLATITUDE | >> | msdyn_addresslatitude
-ADDRESSLONGITUDE | >> | msdyn_addresslongitude
-ONHOLDSTATUS | >< | msdyn_onholdstatus
-CURRENCYCODE | = | msdyn_currencycode.isocurrencycode
-ISVENDORLOCATEDINHUBZONE | >< | msdyn_isvendorlocatedinhubzone
-DEFAULTVENDORPAYMENTMETHODNAME | = | msdyn_vendorpaymentmethod.msdyn_name
-INVOICEVENDORACCOUNTNUMBER | = | msdyn_invoicevendoraccountnumber.msdyn_vendoraccountnumber
-PERSONGENDER | >< | msdyn_gender
-AREPRICESINCLUDINGSALESTAX | >< | msdyn_priceincludessalestax
-SALESTAXGROUPCODE | = | msdyn_taxgroup.msdyn_name
-VENDORPRICETOLERANCEGROUPID | = | msdyn_pricetolerancegroup.msdyn_groupid
-
+VENDORACCOUNTNUMBER | = | msdyn\_vendoraccountnumber
+VENDORGROUPID | = | msdyn\_vendorgroupid.msdyn\_vendorgroup
+VENDORORGANIZATIONNAME | = | msdyn\_name
+VENDORPARTYTYPE | \>\< | msdyn\_isperson
+PERSONFIRSTNAME | = | msdyn\_firstname
+PERSONLASTNAME | = | msdyn\_lastname
+CREDITLIMIT | = | msdyn\_vendorcreditlimit
+ISFOREIGNENTITY | \>\< | msdyn\_isforeignentity
+ISONETIMEVENDOR | \>\< | msdyn\_isonetimevendor
+ADDRESSBUILDINGCOMPLIMENT | = | msdyn\_addressbuildingcompliment
+PERSONCHILDRENNAMES | = | msdyn\_childrennames
+ADDRESSCITY | = | msdyn\_addresscity
+ADDRESSCOUNTRYREGIONID | = | msdyn\_addresscountryregionid
+ADDRESSCOUNTRYREGIONISOCODE | = | msdyn\_addresscountryregionisocode
+ADDRESSCOUNTYID | = | msdyn\_addresscountyid
+CREDITRATING | = | msdyn\_creditrating
+ADDRESSDESCRIPTION | = | msdyn\_addressdescription
+ADDRESSDISTRICTNAME | = | msdyn\_addressdistrictname
+DUNSNUMBER | = | msdyn\_dunsnumber
+ETHNICORIGINID | = | msdyn\_ethnicorigin
+FORMATTEDPRIMARYADDRESS | = | msdyn\_formattedprimaryaddress
+PERSONHOBBIES | = | msdyn\_hobbies
+PERSONINITIALS | = | msdyn\_initials
+LANGUAGEID | = | msdyn\_languageid
+PERSONLASTNAMEPREFIX | = | msdyn\_lastnameprefix
+PERSONMIDDLENAME | = | msdyn\_middlename
+ORGANIZATIONNUMBER | = | msdyn\_organizationnumber
+OURACCOUNTNUMBER | = | msdyn\_ourvendoraccountnumber
+PAYMENTID | = | msdyn\_paymentid
+PERSONPHONETICFIRSTNAME | = | msdyn\_phoneticfirstname
+PERSONPHONETICMIDDLENAME | = | msdyn\_phoneticmiddlename
+PERSONPHONETICLASTNAME | = | msdyn\_phoneticlastname
+ORGANIZATIONPHONETICNAME | = | msdyn\_organizationphoneticname
+ADDRESSPOSTBOX | = | msdyn\_addresspostbox
+PRIMARYURL | = | msdyn\_primarycontacturl
+PRIMARYEMAILADDRESS | = | msdyn\_primaryemailaddress
+PRIMARYEMAILADDRESSDESCRIPTION | = | msdyn\_primaryemailaddressdescription
+PRIMARYFACEBOOK | = | msdyn\_primaryfacebook
+PRIMARYFACEBOOKDESCRIPTION | = | msdyn\_primaryfacebookdescription
+PRIMARYFAXNUMBER | = | msdyn\_primaryfaxnumber
+PRIMARYFAXNUMBERDESCRIPTION | = | msdyn\_primaryfaxnumberdescription
+PRIMARYFAXNUMBEREXTENSION | = | msdyn\_primaryfaxnumberextension
+PRIMARYLINKEDIN | = | msdyn\_primarylinkedin
+PRIMARYLINKEDINDESCRIPTION | = | msdyn\_primarylinkedindescription
+PRIMARYPHONENUMBER | = | msdyn\_pimaryphonenumber
+PRIMARYPHONENUMBERDESCRIPTION | = | msdyn\_primaryphonenumberdescription
+PRIMARYPHONENUMBEREXTENSION | = | msdyn\_primaryphonenumberextension
+PRIMARYTELEX | = | msdyn\_primarytelex
+PRIMARYTELEXDESCRIPTION | = | msdyn\_primarytelexdescription
+PRIMARYTWITTER | = | msdyn\_primarytwitter
+PRIMARYTWITTERDESCRIPTION | = | msdyn\_primarytwitterdescription
+PRIMARYURLDESCRIPTION | = | msdyn\_primaryurldescription
+PERSONPROFESSIONALSUFFIX | = | msdyn\_professionalsuffix
+PERSONPROFESSIONALTITLE | = | msdyn\_professionatitle
+ADDRESSSTATEID | = | msdyn\_addressstateid
+ADDRESSSTREET | = | msdyn\_addressstreet
+ADDRESSSTREETNUMBER | = | msdyn\_addressstreetnumber
+VENDORKNOWNASNAME | = | msdyn\_vendorknownasname
+ADDRESSZIPCODE | = | msdyn\_addresszipcode
+DEFAULTPAYMENTDAYNAME | = | msdyn\_defaultpaymentdayname.msdyn\_name
+DEFAULTPAYMENTSCHEDULENAME | = | msdyn\_paymentschedule.msdyn\_name
+DEFAULTPAYMENTTERMSNAME | = | msdyn\_paymentterms.msdyn\_name
+HASONLYTAKENBIDS | \>\< | msdyn\_hasonlytakenbids
+ISMINORITYOWNED | \>\< | msdyn\_isminorityowned
+ISVENDORLOCALLYOWNED | \>\< | msdyn\_isvendorlocallyowned
+ISSERVICEVETERANOWNED | \>\< | msdyn\_isserviceveteranowned
+ISOWNERDISABLED | \>\< | msdyn\_ownerisdisabled
+ISWOMANOWNER | \>\< | msdyn\_womanowner
+PERSONANNIVERSARYDAY | = | msdyn\_personanniversaryday
+PERSONANNIVERSARYYEAR | = | msdyn\_anniversaryyear
+PERSONBIRTHDAY | = | msdyn\_birthday
+PERSONBIRTHYEAR | = | msdyn\_birthyear
+ORGANIZATIONEMPLOYEEAMOUNT | = | msdyn\_numberofemployees
+VENDORHOLDRELEASEDATE | = | msdyn\_vendoronholdreleasedate
+VENDORPARTYNUMBER | = | msdyn\_vendorpartynumber
+ADDRESSLOCATIONID | = | msdyn\_addresslocationid
+PERSONANNIVERSARYMONTH | = | msdyn\_vendorpersonanniversarymonth
+PERSONBIRTHMONTH | = | msdyn\_vendorpersonbirthmonth
+PERSONMARITALSTATUS | \>\< | msdyn\_maritalstatus
+ADDRESSLATITUDE | \>\> | msdyn\_addresslatitude
+ADDRESSLONGITUDE | \>\> | msdyn\_addresslongitude
+ONHOLDSTATUS | \>\< | msdyn\_onholdstatus
+CURRENCYCODE | = | msdyn\_currencycode.isocurrencycode
+ISVENDORLOCATEDINHUBZONE | \>\< | msdyn\_isvendorlocatedinhubzone
+DEFAULTVENDORPAYMENTMETHODNAME | = | msdyn\_vendorpaymentmethod.msdyn\_name
+INVOICEVENDORACCOUNTNUMBER | = | msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber
+PERSONGENDER | \>\< | msdyn\_gender
+AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_priceincludessalestax
+SALESTAXGROUPCODE | = | msdyn\_taxgroup.msdyn\_name
+VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
 
 ## Contacts
 
-Synchronizes all primary, secondary, and tertiary contact information of both customers and vendors between Finance and Operations and CE. For the entity map details, see [Integrated Customer Master](dual-write-customer.md#contacts).
+Syncs all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
 
 ## Vendor Groups
 
-Synchronizes vendor group information between Finance and Operations and Customer Engagement.
+Syncs vendor group information between Finance and Operations and Customer Engagement.
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
-DEFAULTPAYMENTTERMNAME | = | msdyn_paymentterms.msdyn_name
-DESCRIPTION | = | msdyn_description
-VENDORGROUPID | = | msdyn_vendorgroup
-CLEARINGPERIODPAYMENTTERMNAME | = | msdyn_clearingperiodpaymentpermname.msdyn_name
-
+DEFAULTPAYMENTTERMNAME | = | msdyn\_paymentterms.msdyn\_name
+DESCRIPTION | = | msdyn\_description
+VENDORGROUPID | = | msdyn\_vendorgroup
+CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_name
 
 ### Vendor Payment Method
 
-Synchronizes vendor payment method information between Finance and Operations and Customer Engagement.
+Syncs vendor payment method information between Finance and Operations and Customer Engagement.
 
 <!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
-NAME | = | msdyn_name
-DESCRIPTION | = | msdyn_description
-SUMBYPERIOD | >< | msdyn_sumbyperiod
-DISCOUNTGRACEPERIODDAYS | = | msdyn_discountgraceperioddays
-PAYMENTSTATUS | >< | msdyn_paymentstatus
-ALLOWPAYMENTCOPIES | >< | msdyn_allowpaymentcopies
-PAYMENTTYPE | >< | msdyn_paymenttype
-LASTFILENUMBER | = | msdyn_lastfilenumber
-LASTFILENUMBERTODAY | = | msdyn_lastfilenumbertoday
-ACCOUNTTYPE | >< | msdyn_accounttype
-BRIDGINGPOSTINGENABLED | >< | msdyn_bridgingposting
-ENABLEPOSTDATEDCHECKCLEARINGPOSTING | >< | msdyn_postdatedcheckclearingposting
-PROMISSORYNOTEDRAFTTYPE | >< | msdyn_promissorynotedrafttype
-DIRECTDEBIT | >< | msdyn_directdebit
+NAME | = | msdyn\_name
+DESCRIPTION | = | msdyn\_description
+SUMBYPERIOD | \>\< | msdyn\_sumbyperiod
+DISCOUNTGRACEPERIODDAYS | = | msdyn\_discountgraceperioddays
+PAYMENTSTATUS | \>\< | msdyn\_paymentstatus
+ALLOWPAYMENTCOPIES | \>\< | msdyn\_allowpaymentcopies
+PAYMENTTYPE | \>\< | msdyn\_paymenttype
+LASTFILENUMBER | = | msdyn\_lastfilenumber
+LASTFILENUMBERTODAY | = | msdyn\_lastfilenumbertoday
+ACCOUNTTYPE | \>\< | msdyn\_accounttype
+BRIDGINGPOSTINGENABLED | \>\< | msdyn\_bridgingposting
+ENABLEPOSTDATEDCHECKCLEARINGPOSTING | \>\< | msdyn\_postdatedcheckclearingposting
+PROMISSORYNOTEDRAFTTYPE | \>\< | msdyn\_promissorynotedrafttype
+DIRECTDEBIT | \>\< | msdyn\_directdebit
 
