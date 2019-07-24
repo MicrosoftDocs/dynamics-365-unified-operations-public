@@ -269,6 +269,12 @@
       items: 
       - name: Consume business events with Microsoft Flow
         href: ../dev-itpro/business-events/how-to/how-to-flow.md
+      - name: Consume business events by using Azure Event Grid
+        href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
+      - name: Consume business events by using Azure Service Bus
+        href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
+      - name: Consume workflow approval business events
+        href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
   - name: Compliance
