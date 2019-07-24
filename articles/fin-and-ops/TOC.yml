@@ -1435,8 +1435,9 @@
         - name: VAT statement
           href: ../financials/localizations/emea-aut-vat-statement-details.md
       - name: Belgium
-        href: ../financials/localizations/belgium.md
         items:
+        - name: Belgium overview
+          href: ../financials/localizations/belgium.md
         - name: CODA bank statement
           href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
         - name: Create and transfer transactions to the BLWI
@@ -1450,13 +1451,15 @@
         - name: Set up and maintain PRODCOM
           href: ../financials/localizations/emea-bel-prodcom-report.md
       - name: Brazil
-        href: ../financials/localizations/brazil.md
         items:
+        - name: Brazil overview
+          href: ../financials/localizations/brazil.md
         - name: Scope of localization
           href: ../financials/localizations/latam-bra-scope.md
         - name: Fiscal books
-          href: ../financials/localizations/latam-bra-fiscal-books.md
           items:
+          - name: Brazil fiscal books overview
+            href: ../financials/localizations/latam-bra-fiscal-books.md
           - name: Configure fiscal books
             href: ../financials/localizations/latam-bra-configure-fiscal-books.md
           - name: ICMS tax fiscal documents
@@ -1524,8 +1527,9 @@
           - name: Project debit notes
             href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
         - name: NF-e process
-          href: ../financials/localizations/latam-bra-nf-e-process.md
           items:
+          - name: Brazil NF-e process overview 
+            href: ../financials/localizations/latam-bra-nf-e-process.md
           - name: Automatic transmission of NF-e fiscal documents
             href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
           - name: Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails
@@ -1571,8 +1575,9 @@
         - name: Calculate interest and fines on customer payments
           href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
         - name: Taxes
-          href: ../financials/localizations/latam-bra-calculate-taxes.md
           items:
+          - name: Brazil taxes overview
+            href: ../financials/localizations/latam-bra-calculate-taxes.md
           - name: Calculate tax on purchase quotations
             href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
           - name: Create a tax assessment - ICMS
@@ -1618,8 +1623,9 @@
           - name: Withholding taxes on vendor payments
             href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md          
       - name: China
-        href: ../financials/localizations/china.md
         items:
+        - name: China overview
+          href: ../financials/localizations/china.md
         - name: Finance and Operations operated by 21Vianet in China
           href: ../dev-itpro/deployment/china-local-deployment.md
         - name: Bill of materials comparison
@@ -1659,8 +1665,9 @@
         - name: VAT customer invoices FAQ
           href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md         
       - name: The Czech Republic
-        href: ../financials/localizations/czech-republic.md
         items:
+        - name: The Czech Republic
+          href: ../financials/localizations/czech-republic.md
         - name: Credit note on cash discount
           href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
         - name: Fixed assets
@@ -1688,8 +1695,9 @@
         - name: Year-end close
           href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Denmark
-        href: ../financials/localizations/denmark.md
         items:
+        - name: Denmark overview
+          href: ../financials/localizations/denmark.md
         - name: Assign a payment slip format to a customer account
           href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
         - name: Create and post a customer invoice for a public sector customer
@@ -1713,18 +1721,21 @@
         - name: Set up payment slip format
           href: ../financials/localizations/tasks/set-up-payment-slip-format.md
       - name: Estonia
-        href: ../financials/localizations/estonia.md
         items:
+        - name: Estonia overview
+          href: ../financials/localizations/estonia.md
         - name: Personal information requests
           href: ../financials/localizations/emea-est-personal-info.md
         - name: VAT statement
           href: ../financials/localizations/emea-est-vat-statement-details.md
       - name: Europe
-        href: ../financials/localizations/europe.md
-        items: 
+        items:
+        - name: Europe overview
+          href: ../financials/localizations/europe.md
         - name: Advance holders
-          href: ../financials/localizations/emea-advance-holders.md
           items:
+          - name: Advance holders overview
+            href: ../financials/localizations/emea-advance-holders.md
           - name: Advance holders transactions
             href: ../financials/localizations/emea-advance-holders-transactions.md
           - name: Advance payment to an employee (Eastern Europe)
@@ -1780,8 +1791,9 @@
           - name: Create and export vendor payments using ISO20022 payment format
             href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
         - name: Intrastat
-          href: ../financials/localizations/emea-intrastat.md
           items:
+          - name: Intrastat overview
+            href: ../financials/localizations/emea-intrastat.md
           - name: Transfer transactions to the Intrastat
             href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
           - name: Specify a lading address for an intra-community transaction
@@ -1859,8 +1871,9 @@
         - name: View transactions on settlement
           href: ../financials/localizations/emea-transactions-settlement-form.md
       - name: France
-        href: ../financials/localizations/france.md
         items:
+        - name: France overview
+          href: ../financials/localizations/france.md
         - name: Public sector
           items:
           - name: Public sector accounting
@@ -1914,13 +1927,15 @@
           - name: Deployment guidelines for cash registers
             href: ../retail/localizations/emea-fra-deployment.md
       - name: Germany
-        href: ../financials/localizations/germany.md
         items:
+        - name: Germany overview
+          href: ../financials/localizations/germany.md
         - name: Additional acquisition depreciation
           href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
         - name: Audit file
-          href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
           items:
+          - name: Germany audit file overview
+            href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
           - name: Customize audit file configuration
             href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
           - name: Generate audit file
@@ -1936,8 +1951,9 @@
         - name: Set up electronic tax declarations
           href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
       - name: Hungary
-        href: ../financials/localizations/hungary.md
         items:
+        - name: Hungary overview
+          href: ../financials/localizations/hungary.md
         - name: Exchange rate calculation
           href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
         - name: Fixed asset depreciation methods
@@ -1951,8 +1967,9 @@
         - name: Year-end close
           href: ../financials/localizations/emea-cze-hun-year-end.md
       - name: Iceland
-        href: ../financials/localizations/iceland.md
         items:
+        - name: Iceland overview
+          href: ../financials/localizations/iceland.md
         - name: Create a vendor account and attach the invoice declaration category
           href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
         - name: Set up an invoice declaration for vendors
@@ -1962,11 +1979,13 @@
         - name: Update vendor invoice declarations and generate the report
           href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
       - name: India
-        href: ../financials/localizations/india.md
         items:
+        - name: India overview
+          href: ../financials/localizations/india.md
         - name: Fixed assets
-          href: ../financials/localizations/apac-ind-fixed-assets.md
           items:
+          - name: India fixed assets overview
+            href: ../financials/localizations/apac-ind-fixed-assets.md
           - name: Attach a day-based calendar to a fixed asset book
             href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
           - name: Calculate shift depreciation
@@ -1990,8 +2009,9 @@
           - name: Transfer of capital items to the fixed asset
             href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
         - name: India GST
-          href: ../financials/localizations/apac-ind-gst.md
-          items: 
+          items:
+          - name: India GST overview
+            href: ../financials/localizations/apac-ind-gst.md
           - name: India GST reference groups
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
@@ -2134,9 +2154,10 @@
             href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
           - name: Deployment guidelines for cash registers
             href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-        - name: Tax engine overview
-          href: ../financials/general-ledger/tax-engine.md
-          items:     
+        - name: Tax engine
+          items: 
+          - name: Tax engine overview
+            href: ../financials/general-ledger/tax-engine.md
           - name: Import configuration
             href: ../financials/general-ledger/tax-engine-import-configuration.md
           - name: Tax engine applicability
@@ -2148,8 +2169,9 @@
         - name: Tax thresholds FAQ
           href: ../financials/localizations/apac-ind-tax-thresholds.md          
       - name: Italy
-        href: ../financials/localizations/italy.md
         items:
+        - name: Italy overview
+          href: ../financials/localizations/italy.md
         - name: VAT statements details
           href: ../financials/localizations/emea-ita-vat-statements-details.md
         - name: Black list report
@@ -2171,8 +2193,9 @@
         - name: Withholding tax
           href: ../financials/localizations/emea-ita-withholding-tax.md
       - name: Japan
-        href: ../financials/localizations/japan.md
         items:
+        - name: Japan overview
+          href: ../financials/localizations/japan.md
         - name: Acquire a fixed asset and claim for the government grant subsidy
           href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
         - name: Acquire a fixed asset with asset retirement obligations
@@ -2330,8 +2353,9 @@
         - name: Use disassemble list for fixed assets
           href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md          
       - name: Latvia
-        href: ../financials/localizations/latvia.md
         items:
+        - name: Litvia overview
+          href: ../financials/localizations/latvia.md
         - name: Fixed assets accounting
           href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
         - name: Fixed assets location change tracking
@@ -2343,8 +2367,9 @@
         - name: VAT statement details
           href: ../financials/localizations/emea-lva-vat-statement-details.md
       - name: Lithuania
-        href: ../financials/localizations/lithuania.md
         items:
+        - name: Lithuania overview
+          href: ../financials/localizations/lithuania.md
         - name: Fixed asset repair statement
           href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
         - name: Generate a fixed asset transfer between warehouses document
@@ -2354,8 +2379,9 @@
         - name: VAT statement details
           href: ../financials/localizations/emea-ltu-vat-statement-details.md
       - name: Malaysia
-        href: ../financials/localizations/malaysia.md
         items:
+        - name: Malaysia overview
+          href: ../financials/localizations/malaysia.md
         - name: Generate customer credit for project sales
           href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
         - name: Generate customer debit for project sales
@@ -2377,8 +2403,9 @@
         - name: Set up GST relief clauses
           href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
       - name: Mexico
-        href: ../financials/localizations/mexico.md
         items:
+        - name: Mexico overview
+          href: ../financials/localizations/mexico.md
         - name: Scope of localization
           href: ../financials/localizations/latam-mex-scope.md
         - name: Adjustment inflation declaration report
@@ -2416,15 +2443,17 @@
         - name: Vendor registration IDs
           href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
       - name: Netherlands
-        href: ../financials/localizations/netherlands.md
         items:
+        - name: Netherlands overview
+          href: ../financials/localizations/netherlands.md
         - name: Electronic tax declarations (EVAT)
           href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
         - name: Semansys XBRL integration
           href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
       - name: Norway
-        href: ../financials/localizations/norway.md
         items:
+        - name: Norway overview
+          href: ../financials/localizations/norway.md
         - name: Customer and vendor payment formats
           href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
         - name: Customer payment based on payment ID
@@ -2438,8 +2467,9 @@
         - name: Deployment guidelines for cash registers
           href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
       - name: Poland
-        href: ../financials/localizations/poland.md
         items:
+        - name: Poland overview
+          href: ../financials/localizations/poland.md
         - name: Activate storno accounting
           href: ../financials/localizations/emea-pol-red-storno.md
         - name: Calculate line discounts from the unit price
@@ -2467,8 +2497,9 @@
         - name: Turnover balances statement
           href: ../financials/localizations/emea-pol-turnover-balances-statement.md
       - name: Russia
-        href: ../financials/localizations/russia.md
         items:
+        - name: Russia overview
+          href: ../financials/localizations/russia.md
         - name: General ledger
           items: 
           - name: Correspondence of accounts
@@ -2480,8 +2511,9 @@
           - name: Import currency exchange rates from CBRF 
             href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
-          href: ../financials/localizations/rus-advance-holders.md
           items:
+          - name: Russia advance holders overview
+            href: ../financials/localizations/rus-advance-holders.md
           - name: Create an advance holder
             href: ../financials/localizations/emea-advance-holders.md#create-an-advance-holder
           - name: Daily operations for advance holders
@@ -2603,20 +2635,23 @@
           - name: Reporting for deferrals
             href: ../financials/localizations/rus-reporting-deferrals.md
       - name: Saudi Arabia
-        href: ../financials/localizations/saudi-arabia.md
         items:
+        - name: Saudi Arabia overview
+          href: ../financials/localizations/saudi-arabia.md
         - name: Sales tax
           href: ../financials/localizations/apac-sau-sales-tax.md
         - name: Zakat reporting for Saudi Arabia
           href: ../financials/localizations/emea-sau-zakat-reporting.md          
       - name: Singapore
-        href: ../financials/localizations/singapore.md
         items:
+        - name: Singapore overview
+          href: ../financials/localizations/singapore.md
         - name: Generate the GST-05 report
           href: ../financials/localizations/apac-sgp-generate-gst-05-report.md          
       - name: Spain
-        href: ../financials/localizations/spain.md
         items:
+        - name: Spain overview
+          href: ../financials/localizations/spain.md
         - name: Apply cash discounts in the invoice
           href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
         - name: Bill of exchange options
@@ -2646,8 +2681,9 @@
         - name: Special entries and opening sheets
           href: ../financials/localizations/emea-esp-opening-sheets-spain.md
       - name: Sweden
-        href: ../financials/localizations/sweden.md
         items:
+        - name: Sweden overview
+          href: ../financials/localizations/sweden.md
         - name: Export financial information for auditors in Sweden
           href: ../financials/localizations/emea-swe-sie-standard-report.md
         - name: Import payment formats
@@ -2655,13 +2691,15 @@
         - name: Cash registers
           href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
       - name: Switzerland
-        href: ../financials/localizations/switzerland.md
         items:
+        - name: Switzerland overview
+          href: ../financials/localizations/switzerland.md
         - name: Import customer payments in ESR
           href: ../financials/localizations/emea-che-esr-customer-payments-import.md
       - name: Thailand
-        href: ../financials/localizations/thailand.md
         items:
+        - name: Thailand overview
+          href: ../financials/localizations/thailand.md
         - name: Stock card reports
           href: ../financials/localizations/apac-tha-stock-card-reports.md
         - name: Substitution/adjustment tax invoice
@@ -2671,8 +2709,9 @@
         - name: Withholding tax
           href: ../financials/localizations/apac-tha-withholding-tax.md          
       - name: United Kingdom
-        href: ../financials/localizations/united-kingdom.md
         items:
+        - name: United Kingdom overview
+          href: ../financials/localizations/united-kingdom.md
         - name: Construction Industry Scheme
           href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
         - name: Create a credit on the settlement discount
@@ -2690,15 +2729,17 @@
         - name: Making Tax Digital for VAT
           href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
       - name: United States
-        href: ../financials/localizations/united-states.md
         items:
+        - name: United States overview
+          href: ../financials/localizations/united-states.md
         - name: Year-end 1099 reporting for the United States
           href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
         - name: Form 1099 for the public sector
           href: ../financials/localizations/noam-usa-form-1099-public-sector.md
   - name: Human resources
-    href: hr/hr-landing-page.md
     items:
+    - name: Human resources overview
+      href: hr/hr-landing-page.md
     - name: Develop a human resources strategy
       items:
       - name: Create goals
@@ -2850,8 +2891,9 @@
       - name: Maintain employee injury and illness information
         href: hr/tasks/maintain-employee-injury-illness-information.md
     - name: US Payroll
-      href: hr/localizations/noam-usa-payroll.md
       items:
+      - name: US Payroll overview
+        href: hr/localizations/noam-usa-payroll.md
       - name: Payroll setup
         items:
         - name: Set up payroll for workers
@@ -2917,13 +2959,15 @@
         - name: Standard payroll reports
           href: hr/localizations/noam-usa-generate-payroll-reports.md
   - name: Intelligence
-    href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
     items:
+    - name: Intelligence home page
+      href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
     - name: Information access and reporting
       href: ../dev-itpro/analytics/information-access-reporting.md?toc=/fin-and-ops/toc.json
     - name: Power BI content
-      href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
       items:
+      - name: Power BI content home page
+        href: ../dev-itpro/analytics/power-bi-home-page.md?toc=/fin-and-ops/toc.json
       - name: Actual vs budget
         href: ../dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/fin-and-ops/toc.json
       - name: Benefits
@@ -2937,8 +2981,9 @@
       - name: Compensation and benefits
         href: ../dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Cost accounting analysis
-        href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
         items:
+        - name: Cost accounting analysis Power BI content
+          href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
         - name: Set up security for the Cost accounting analysis Power BI content
           href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Cost management
@@ -2986,8 +3031,9 @@
       - name: Configure SSRS for on-premises deployments
         href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
       - name: Printing
-        href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
         items:
+        - name: Document printing overview
+          href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
         - name: Install the Document Routing Agent to enable network printing
           href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
         - name: Upgrade the Document Routing Agent
@@ -3084,10 +3130,8 @@
           href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
     - name: Modify Electronic reporting formats by reapplying Excel templates
       href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-    - name: Design Finance and Operation version dependent ER configurations
-      items: 
-      - name: Define the dependency of ER configurations on other components
-        href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
+    - name: Define the dependency of ER configurations on other components
+      href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
     - name: Design an ER solution to use financial dimensions
       items:
       - name: Design data models to use financial dimensions as data sources
@@ -3255,16 +3299,19 @@
     - name: Bring your own database
       href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
   - name: Inventory management
-    href: ../supply-chain/inventory/inventory-home-page.md
     items:
-    - name: Arrival overview
-      href: ../supply-chain/inventory/arrival-overview.md
+    - name: Inventory management overview
+      href: ../supply-chain/inventory/inventory-home-page.md
+    - name: Arrival
       items:
+      - name: Arrival overview
+        href: ../supply-chain/inventory/arrival-overview.md
       - name: Set up an item arrival overview profile
         href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
     - name: Quality management
-      href: ../supply-chain/inventory/enable-quality-management.md
       items:
+      - name: Quality management overview
+        href: ../supply-chain/inventory/enable-quality-management.md
       - name: Quality management processes
         href: ../supply-chain/inventory/quality-management-processes.md
       - name: Nonconformance management
@@ -3330,8 +3377,9 @@
       - name: Inventory on-hand mobile workspace
         href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
     - name: Outbound process
-      href: ../supply-chain/inventory/outbound-process.md
       items:
+      - name: Outbound process overview
+        href: ../supply-chain/inventory/outbound-process.md
       - name: Reserve inventory quantities
         href: ../supply-chain/inventory/reserve-inventory-quantities.md
       - name: Reserve the same batch for a sales order
@@ -3416,11 +3464,13 @@
       - name: Asset attribute overview
         href: ../supply-chain/asset-management/objects/object-specification-overview.md
   - name: Master planning
-    href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
+    - name: Master planning home page
+      href: ../supply-chain/master-planning/master-planning-home-page.md
     - name: Master plans
-      href: ../supply-chain/master-planning/master-plans.md
       items:
+      - name: Master plans overview
+        href: ../supply-chain/master-planning/master-plans.md
       - name: Set up master plans
         href: ../supply-chain/master-planning/master-planning-setup.md
       - name: Coverage settings
@@ -3452,8 +3502,9 @@
       - name: Improve master planning performance
         href: ../supply-chain/master-planning/master-planning-performance.md
       - name: Master plans and multisite functionality
-        href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         items:
+        - name: Master planning and multisite functionality overview
+          href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
         - name: Master planning for site coverage, mandatory warehouse
           href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
         - name: Master planning for site coverage, warehouse not mandatory
@@ -3475,8 +3526,9 @@
       - name: Collaborate with internal supply chain customers
         href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
     - name: Demand forecasting
-      href: ../supply-chain/master-planning/introduction-demand-forecasting.md
       items:
+      - name: Demand forecasting overview
+        href: ../supply-chain/master-planning/introduction-demand-forecasting.md
       - name: Demand forecasting setup
         href: ../supply-chain/master-planning/demand-forecasting-setup.md
       - name: Import historical data for demand forecasts
@@ -3498,11 +3550,13 @@
       - name: Modify a demand forecast manually
         href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
   - name: Dynamics 365 for Unified Operations mobile app
-    href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
     items:
-    - name: Available mobile workspaces
-      href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+    - name: Dynamics 365 for Unified Operations mobile app home page
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Mobile workspaces
       items:
+      - name: Available mobile workspaces
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
       - name: Company directory
         href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
       - name: Cost controlling
@@ -3530,8 +3584,9 @@
     - name: Publish mobile workspaces
       href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
   - name: Office integration
-    href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
     items:
+    - name: Office integration overview
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
     - name: Office integration tutorial
       href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
     - name: Open entity data in Excel and update it using the Excel add-in
@@ -3549,25 +3604,29 @@
     - name: Troubleshoot the Office integration
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
   - name: Procurement and sourcing
-    href: ../supply-chain/procurement/procurement-sourcing-overview.md
     items:
+    - name: Procurement and sourcing overview
+      href: ../supply-chain/procurement/procurement-sourcing-overview.md
     - name: Procurement and sourcing workflow
       href: ../supply-chain/procurement/procurement-sourcing-workflows.md
     - name: Procurement catalogs
-      href: ../supply-chain/procurement/procurement-catalogs.md
       items:
+      - name: Procurement catalogs overview
+        href: ../supply-chain/procurement/procurement-catalogs.md
       - name: Create a procurement catalog
         href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
       - name: Set up a procurement category hierarchy
         href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
     - name: Purchase requisitions
-      href: ../supply-chain/procurement/purchase-requisitions-overview.md
       items:
+      - name: Purchase requisitions overview
+        href: ../supply-chain/procurement/purchase-requisitions-overview.md
       - name: Purchase requisition workflow
         href: ../supply-chain/procurement/purchase-requisitions-workflow.md
     - name: Request for quotations (RFQs)
-      href: ../supply-chain/procurement/request-quotations.md
       items:
+      - name: Request for quotations (RFQs) overview
+        href: ../supply-chain/procurement/request-quotations.md
       - name: Create a request for quotation
         href: ../supply-chain/procurement/tasks/create-request-quotation.md
       - name: Create a requisition that uses an RFQ
@@ -3619,8 +3678,9 @@
       - name: Vendor rebates
         href: ../supply-chain/procurement/vendor-rebates.md
     - name: Purchasing policies
-      href: ../supply-chain/procurement/purchase-policies.md
       items:
+      - name: Purchasing policies overview
+        href: ../supply-chain/procurement/purchase-policies.md
       - name: Create purchasing policies
         href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
       - name: Set up policies for procurement category hierarchies
@@ -3678,18 +3738,21 @@
       - name: Submit and approve project budget revisions
         href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
   - name: Organization administration
-    href: organization-administration/organization-administration-home-page.md
     items:
+    - name: Organization administration home page
+      href: organization-administration/organization-administration-home-page.md
     - name: Number sequences
-      href: organization-administration/number-sequence-overview.md
       items:
+      - name: Number sequences overview
+        href: organization-administration/number-sequence-overview.md
       - name: Set up number sequences on an individual basis
         href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
       - name: Set up number sequences using a wizard
         href: organization-administration/tasks/set-up-number-sequences-wizard.md
     - name: Organizations and organizational hierarchies
-      href: organization-administration/organizations-organizational-hierarchies.md
       items:
+      - name: Organizations and organizational hierarchies overview
+        href: organization-administration/organizations-organizational-hierarchies.md
       - name: Plan your organizational hierarchy
         href: organization-administration/plan-organizational-hierarchy.md
       - name: Create an organization hierarchy
@@ -3699,8 +3762,9 @@
       - name: Create operating units
         href: organization-administration/tasks/create-operating-unit.md
     - name: Global address book
-      href: organization-administration/overview-global-address-book.md
       items:
+      - name: Global address book overview
+        href: organization-administration/overview-global-address-book.md
       - name: Plan for the global address book and other address books
         href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
       - name: Configure the global address book
@@ -3710,8 +3774,9 @@
       - name: Configure address books
         href: organization-administration/tasks/address-books.md
     - name: Workflow system
-      href: organization-administration/overview-workflow-system.md
       items:
+      - name: Workflow system overview
+        href: organization-administration/overview-workflow-system.md
       - name: Workflow system architecture
         href: organization-administration/workflow-system-architecture.md
       - name: Workflow elements
@@ -3719,8 +3784,9 @@
       - name: Workflow actions
         href: organization-administration/workflow-actions.md
       - name: Create workflows
-        href: organization-administration/create-workflow.md
         items:
+        - name: Create workflows overview
+          href: organization-administration/create-workflow.md
         - name: Configure workflow properties
           href: organization-administration/configure-workflow-properties.md
         - name: Configure manual tasks
@@ -3772,8 +3838,9 @@
       - name: Workflow FAQ
         href: organization-administration/workflow-FAQ.md
     - name: Alerts
-      href: get-started/alerts-overview.md
       items:
+      - name: Alerts overview
+        href: get-started/alerts-overview.md
       - name: Create alert rules
         href: get-started/create-alerts.md
       - name: Batch processing of alerts
@@ -3781,18 +3848,21 @@
       - name: Client alert notifications by email
         href: get-started/alert-email-notifications.md
     - name: Electronic signatures
-      href: organization-administration/electronic-signature-overview.md
       items:
+      - name: Electronic signatures overview
+        href: organization-administration/electronic-signature-overview.md
       - name: Set up electronic signatures
         href: organization-administration/tasks/set-up-electronic-signatures.md
     - name: Case management
-      href: organization-administration/cases.md
       items:
+      - name: Case management overview
+        href: organization-administration/cases.md
       - name: Plan case security, processes, and categories
         href: organization-administration/plan-case-management.md
     - name: Record templates
-      href: organization-administration/record-templates.md
       items:
+      - name: Record templates overview
+        href: organization-administration/record-templates.md
       - name: Create a record template
         href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
       - name: Use a record template to create a new record
@@ -3804,8 +3874,9 @@
     - name: Date/time data and time zones
       href: organization-administration/date-time-zones.md
   - name: Production control
-    href: ../supply-chain/production-control/production-process-overview.md
     items:
+    - name: Production process overview
+      href: ../supply-chain/production-control/production-process-overview.md
     - name: 'Mixed mode planning: Combine discrete, process, and lean sourcing'
       href: ../supply-chain/production-control/mixed-mode-plan.md
     - name: Manage subcontracting work in production
@@ -3869,8 +3940,9 @@
       - name: Operate production jobs
         items:
         - name: Manage production order lifecycle
-          href: ../supply-chain/production-control/create-production-orders.md
           items:
+          - name: Production order lifecycle overview
+            href: ../supply-chain/production-control/create-production-orders.md
           - name: Create a production order
             href: ../supply-chain/production-control/tasks/create-production-order.md
           - name: Estimate a production order
@@ -3930,8 +4002,9 @@
         - name: Production posting
           href: ../supply-chain/cost-management/production-posting.md
       - name: Time and attendance registration
-        href: ../supply-chain/production-control/time-attendance-registrations.md
         items:
+        - name: Time and attendance registration overview
+          href: ../supply-chain/production-control/time-attendance-registrations.md
         - name: Pay based on registrations
           href: ../supply-chain/production-control/pay-based-on-registrations.md
         - name: Absence registration in Time and attendance
@@ -4093,8 +4166,9 @@
         - name: Production posting
           href: ../supply-chain/cost-management/production-posting.md
   - name: Product information management
-    href: ../supply-chain/pim/product-information.md
     items:
+    - name: Product information overview
+      href: ../supply-chain/pim/product-information.md
     - name: Product information
       items:
       - name: Product identifiers
@@ -4120,8 +4194,9 @@
       - name: Create a released product for a single company
         href: ../supply-chain/pim/tasks/create-released-product-single-company.md
       - name: Product lifecycle state
-        href: ../supply-chain/pim/product-lifecycle.md
         items:
+        - name: Product lifecycle state overview
+          href: ../supply-chain/pim/product-lifecycle.md
         - name: Create a new product lifecycle state
           href: ../supply-chain/pim/tasks/new-product-lifecycle-state.md
         - name: Create a default product lifecycle state
@@ -4165,11 +4240,13 @@
       - name: BOM calculations
         href: ../supply-chain/cost-management/bom-calculations.md
     - name: Product configuration
-      href: ../supply-chain/pim/build-product-configuration-model.md
       items:
+      - name: Product configuration overview
+        href: ../supply-chain/pim/build-product-configuration-model.md
       - name: Create dimension-based configuration
-        href: ../supply-chain/pim/dimension-based-product-configuration.md
         items:
+        - name: Dimension-based product configuration overview
+          href: ../supply-chain/pim/dimension-based-product-configuration.md
         - name: Product dimension
           href: ../supply-chain/pim/product-dimensions.md
         - name: Create a dimension-based product master
@@ -4189,8 +4266,9 @@
         - name: Create dimension-based configurations
           href: ../supply-chain/pim/tasks/create-dimension-based-configurations.md
       - name: Create constraint-based configuration
-        href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
         items:
+        - name: Set up a product configuration model
+          href: ../supply-chain/pim/set-up-maintain-product-configuration-model.md
         - name: Calculation for product configuration model FAQ
           href: ../supply-chain/pim/calculate-product-configuration-models.md
         - name: Configuration rule
@@ -4220,8 +4298,9 @@
         - name: Transfer data for product models
           href: ../supply-chain/pim/tasks/transfer-data-product-models.md
   - name: Project management and accounting
-    href: ../financials/project-management/overview-project-management-accounting.md
     items:
+    - name: Project management and accounting overview
+      href: ../financials/project-management/overview-project-management-accounting.md
     - name: Intercompany invoicing
       href: ../financials/project-management/intercompany-invoicing.md
     - name: Configure intercompany project invoicing
@@ -4247,8 +4326,9 @@
     - name: Receive items on purchase order from item requirement
       href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
     - name: Work breakdown structures
-      href: ../financials/project-management/work-breakdown-structures.md
       items:
+      - name: Work breakdown structures overview
+        href: ../financials/project-management/work-breakdown-structures.md
       - name: Microsoft Project client integration
         href: ../financials/project-management/project-integration.md
     - name: Project mobile applications overview
@@ -4262,8 +4342,9 @@
     - name: Implement custom fields for the Project timesheet mobile app
       href: ../financials/project-management/custom-fields-mobile.md
   - name: Sales and marketing
-    href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     items:
+    - name: Sales and marketing overview
+      href: ../supply-chain/sales-marketing/overview-sales-marketing.md
     - name: Sales orders
       items:
       - name: Order promising
@@ -4297,8 +4378,9 @@
       - name: Confirm sales orders
         href: ../supply-chain/sales-marketing/tasks/confirm-sales-orders.md
     - name: Sales agreements
-      href: ../supply-chain/sales-marketing/sales-agreements.md
       items:
+      - name: Sales agreements overview
+        href: ../supply-chain/sales-marketing/sales-agreements.md
       - name: Enter sales agreements
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Fulfill sales agreements
@@ -4332,13 +4414,15 @@
     - name: Create a new trade agreement
       href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Service management
-    href: ../supply-chain/service-management/service-management-home-page.md
     items:
+    - name: Service management overview
+      href: ../supply-chain/service-management/service-management-home-page.md
     - name: Set up customer service
       items:
       - name: Set up service agreements
-        href: ../supply-chain/service-management/service-agreement-groups.md
         items:
+        - name: Service agreements overview
+          href: ../supply-chain/service-management/service-agreement-groups.md
         - name: Create service agreements
           href: ../supply-chain/service-management/create-service-agreements.md
         - name: Service intervals
@@ -4352,13 +4436,15 @@
         - name: Create a service template group
           href: ../supply-chain/service-management/create-service-template-group.md
       - name: Set up service tasks
-        href: ../supply-chain/service-management/service-tasks.md
         items:
+        - name: Service tasks overview
+          href: ../supply-chain/service-management/service-tasks.md
         - name: Create service task relations
           href: ../supply-chain/service-management/create-service-task-relations.md
       - name: Set up service objects
-        href: ../supply-chain/service-management/service-objects.md
         items:
+        - name: Service objects overview
+          href: ../supply-chain/service-management/service-objects.md
         - name: Create service objects
           href: ../supply-chain/service-management/create-service-task-relations.md
         - name: Attach inventory items to service objects
@@ -4378,8 +4464,9 @@
         - name: Attach templates to service objects
           href: ../supply-chain/service-management/attach-templates-service-objects.md
       - name: Define reason codes for service orders
-        href: ../supply-chain/service-management/reason-codes-service-orders.md
-        items:
+        items: 
+        - name: Reason codes for service orders
+          href: ../supply-chain/service-management/reason-codes-service-orders.md
         - name: Service order stages
           href: ../supply-chain/service-management/service-order-stages.md
         - name: Set up service order stages
@@ -4387,8 +4474,9 @@
         - name: Create reason codes
           href: ../supply-chain/service-management/create-reason-codes.md
       - name: Set up service agreements and subscriptions
-        href: ../supply-chain/service-management/service-level-agreements.md
         items:
+        - name: Service level agreements overview
+          href: ../supply-chain/service-management/service-level-agreements.md
         - name: Subscription sales prices
           href: ../supply-chain/service-management/subscription-sales-prices.md
         - name: Subscription groups
@@ -4402,8 +4490,9 @@
       - name: Set up repair management
         href: ../supply-chain/service-management/repair-management.md
       - name: Set up customer returns
-        href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
         items:
+        - name: Customer returns overview
+          href: ../supply-chain/service-management/disposition-and-return-reason-codes.md
         - name: Set up disposition codes
           href: ../supply-chain/service-management/set-up-disposition-codes.md
         - name: Set up return reason codes
@@ -4411,14 +4500,17 @@
         - name: Specify how to dispose of returned items
           href: ../supply-chain/service-management/specify-how-to-dispose-of-returned-items.md
     - name: Work with customer service
-      href: ../supply-chain/service-management/working-with-customer-service.md
       items:
+      - name: Work with customer service overview
+        href: ../supply-chain/service-management/working-with-customer-service.md
       - name: Fulfill service agreements
-        href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
         items:
+        - name: Fulfill service agreements overview
+          href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
         - name: Develop and establish agreements
-          href: ../supply-chain/service-management/service-agreements.md
           items:
+          - name: Develop and establish service agreements overview
+            href: ../supply-chain/service-management/service-agreements.md
           - name: Create service agreements
             href: ../supply-chain/service-management/create-service-agreements.md
           - name: Service subscriptions
@@ -4444,8 +4536,9 @@
           - name: Update and index subscription sales prices
             href: ../supply-chain/service-management/update-and-index-subscription-sales-prices.md
       - name: Handle customer inquiries
-        href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
         items:
+        - name: Fulfill service agreements overview
+          href: ../supply-chain/service-management/fulfill-service-agreements-overview.md
         - name: Start and stop time recording on a service order
           href: ../supply-chain/service-management/start-and-stop-time-recording-on-a-service-order.md
         - name: View the start time and duration of a service order
@@ -4555,8 +4648,9 @@
           - name: Invoice subscription transactions
             href: ../supply-chain/service-management/invoice-subscription-transactions.md
   - name: Transportation management
-    href: ../supply-chain/transportation/transportation-management-overview.md
     items:
+    - name: Transportation management overview
+      href: ../supply-chain/transportation/transportation-management-overview.md
     - name: Transportation management engines
       href: ../supply-chain/transportation/transportation-management-engines.md
     - name: Create a new transportation management engine
@@ -4568,8 +4662,9 @@
     - name: Plan freight transportation routes
       href: ../supply-chain/transportation/plan-freight-transportation-routes-multiple-stops.md
     - name: Plan loads using hub consolidation
-      href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
       items:
+      - name: Plan loads using hub consolidation overview
+        href: ../supply-chain/transportation/plan-loads-hub-consolidation.md
       - name: Plan loads and shipments using the Load planning workbench
         href: ../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
     - name: Include container weight and volume on load
@@ -4599,11 +4694,13 @@
     - name: Set up transportation constraints for an item
       href: ../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md
   - name: Warehouse management
-    href: ../supply-chain/warehousing/warehouse-management-overview.md
     items:
+    - name: Warehouse management overview
+      href: ../supply-chain/warehousing/warehouse-management-overview.md
     - name: Warehouse configuration
-      href: ../supply-chain/warehousing/warehouse-configuration.md
       items:
+      - name: Warehouse configuration overview
+        href: ../supply-chain/warehousing/warehouse-configuration.md
       - name: Set up a warehouse by using a warehouse configuration template
         href: ../supply-chain/inventory/warehouse-template.md
       - name: Control work by using work templates and location directives
@@ -4633,8 +4730,9 @@
       - name: Set up warehouse for transfer orders
         href: ../supply-chain/warehousing/transfer-orders-warehouse.md
     - name: Warehouse work policies
-      href: ../supply-chain/warehousing/warehouse-work-policies.md
       items:
+      - name: Warehouse work policies overview
+        href: ../supply-chain/warehousing/warehouse-work-policies.md
       - name: Set up warehouse work policies
         href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
       - name: Movement of inventory with associated work in Warehouse management
@@ -4692,8 +4790,9 @@
       - name: Inventory tag counting
         href: ../supply-chain/inventory/inventory-tag-counting.md
     - name: Replenishment
-      href: ../supply-chain/warehousing/replenishment.md
       items:
+      - name: Replenishment overview
+        href: ../supply-chain/warehousing/replenishment.md
       - name: Immediate replenishment
         href: ../supply-chain/warehousing/immediate-replenishment.md
       - name: Replenishment with withdrawal kanbans
@@ -4701,8 +4800,9 @@
       - name: Set up a min-max replenishment process
         href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
     - name: Install and configure the warehousing app
-      href: ../supply-chain/warehousing/install-configure-warehousing-app.md
       items:
+      - name: Install and configure overview
+        href: ../supply-chain/warehousing/install-configure-warehousing-app.md
       - name: Configure field names in warehousing app
         href: ../supply-chain/warehousing/configure-app-field-names-priorities-warehouse.md
       - name: Set up mobile devices for warehouse work
