@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated vendor master
-description: 
+description: This topic describes vendor data integration between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -46,7 +46,7 @@ If you want to use Customer Engagement for vendor mastering, and you want to iso
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to use Customer Engagement for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the **vendor detail**.
+If you want to use Customer Engagement for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the vendor detail.
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
@@ -181,11 +181,11 @@ VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
 
 ## Contacts
 
-Syncs all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
+This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
 
 ## Vendor Groups
 
-Syncs vendor group information between Finance and Operations and Customer Engagement.
+This template synchronizes  vendor group information between Finance and Operations and Customer Engagement.
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
@@ -198,7 +198,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_
 
 ### Vendor Payment Method
 
-Syncs vendor payment method information between Finance and Operations and Customer Engagement.
+This template synchronizes vendor payment method information between Finance and Operations and Customer Engagement.
 
 <!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
 
