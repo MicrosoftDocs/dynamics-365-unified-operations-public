@@ -4,8 +4,8 @@ There are several different mapping types. The following table explains the symb
 
 | Symbol | Description |
 |--------|-------------|
-| >  | One way |
-| >> | One way |
+| >  | One-way |
+| >> | One-way, and data is transformed in the process. |
 | =  | Bidirectional |
-| >< | One way |
-| << | One way |
+| >< | Bidirectional, and data is transformed in the process. |
+| << | One-way, and data is transformed in the process. |
