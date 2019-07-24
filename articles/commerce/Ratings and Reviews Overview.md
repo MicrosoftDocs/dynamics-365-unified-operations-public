@@ -1,3 +1,40 @@
+---
+# required metadata
+
+ 
+
+title: Ratings and Reviews Overview 
+description: This topic explains overview of Dynamics 365 for Commerce's Ratings and Reviews 
+author:  gvrmohanreddy 
+manager: JeffBl
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+ 
+
+# optional metadata
+
+ 
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: gmohanv
+ms.search.validFrom: 2019-10-01
+ms.dyn365.ops.version: 
+---
+
 # Ratings and Reviews Overview
 
 Ratings and Reviews are crucial for consumers to understand how a product is perceived by fellow consumers and make a purchase decision. Dynamics 365 for Commerce’s Ratings and Review’s allows Retailers (C1) to capture reviews along with a rating on a product from consumers (C2) and show average ratings and corresponding reviews information across on eCommerce website. Average ratings information is showed in POS and Call center channels for sales associates to help end users. Retailers also uses Ratings & Reviews as a feedback mechanism to improve the quality of a product thus improve the sales.
