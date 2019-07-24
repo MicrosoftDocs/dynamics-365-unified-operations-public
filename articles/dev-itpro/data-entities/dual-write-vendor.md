@@ -72,11 +72,11 @@ Businesses using the **Account** entity to store vendor information can continue
 
 Businesses using a custom solution for vendors can take advantage of the out-of-the-box vendor concept introduced in CDS due to Finance and Operations integration. 
 
-![vendor mappings](media/dual-write-vendors-1.png)
+<-- ![vendor mappings](media/dual-write-vendors-1.png) -->
 
-![vendor mappings](media/dual-write-vendors-2.png)
+<-- ![vendor mappings](media/dual-write-vendors-2.png) -->
 
-![vendor mappings](media/dual-write-vendors-3.png)
+<-- ![vendor mappings](media/dual-write-vendors-3.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -180,7 +180,7 @@ Synchronizes all primary, secondary, and tertiary contact information of both cu
 
 Synchronizes vendor group information between Finance and Operations and Customer Engagement.
 
-![vendor groups mappings](media/dual-write-vendor-groups.png)
+<-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -194,7 +194,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn_clearingperiodpaymentpermname.msdyn_na
 
 Synchronizes vendor payment method information between Finance and Operations and Customer Engagement.
 
-![vendor payment method mappings](media/dual-write-vendor-payment-method.png)
+<-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
