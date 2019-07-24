@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:Cookie Compliance
+title: Cookie Compliance
 description: This topic reviews considerations for Cookie Compliance and the default policies included within Dynamics 365 e-Commerce tooling.
 author: BrianShook
 manager: BrendanSullivanMSFT
