@@ -16,7 +16,7 @@ Dynamics 365 for Commerce has Ratings and Reviews as an omni-channel solution, a
 4.	Ratings and Reviews offers auto moderation on profane words (in 40 languages) by using Azure Cognitive Services, prevents waiting for human approval and also reduces moderation cost. 
 5.	Ratings and Reviews offers moderator tools to respond to end users concerns, feedback, or take down, and address any data requests from end users.  
 6.	Ratings and Reviews provides UX widgets to show ratings summary in product lists, search results, product details page etc. places, and to show complete reviews list along with sort and filters options, on an E-Commerce website that is hosted on Dynamics 365 for Commerce.  
-7.	Ratings and Reviews offers Power BI template with comprehensive set of metrics to offer business insights around Ratings and Reviews. Customers can export full set of ratings and reviews for further analysis.  
+7.	Ratings and Reviews offers a Power BI template with set of metrics to give insights around Ratings and Reviews. Customers can export  ratings and reviews full data for further analysis.  
 
 
 ##  
