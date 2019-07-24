@@ -51,7 +51,7 @@ Finance and Operations and Retail already provide the basic requirements for dev
 
 ## Implementation considerations
 
-This section describes some things that you should consider as you plan to implement features that are related to inventory management in your retail store and distribution locations.
+This section describes some things that you should consider as you plan to implement features that are related to device management in your retail environment.
 
 ### Generate the physical topology
 
