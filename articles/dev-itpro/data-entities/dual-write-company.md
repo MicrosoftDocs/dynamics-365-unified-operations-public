@@ -2,7 +2,7 @@
 # required metadata
 
 title: Company concept in Common Data Service
-description: 
+description: This topic describes the integration of company data between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -45,7 +45,7 @@ Because business unit and company aren't equivalent concepts, it isn't possible 
 + For each Finance and Operations Company record that is enabled for dual-write, an associated cdm\_Company record is created.
 + When a cdm\_Company record is created and enabled for dual-write, a default business unit is created that has the same name. Although a default team is automatically created for that business unit, the business unit isn't used.
 + A separate owner team is created that has the same name. It's also associated with the business unit.
-+ By default, the owner of any record that is created in Finance and Operations and dual-written to Common Data Service is set to the DW owner team that is linked to the associated business unit.
++ By default, the owner of any record that is created in Finance and Operations and dual-written to Common Data Service is set to the "DW Owner" team that is linked to the associated business unit.
 
 The following illustration shows an example of this data setup in Common Data Service.
 
@@ -56,7 +56,7 @@ Because of this configuration, any Finance and Operations record that is related
 + The "Sales Manager" role is assigned to members of the "USMF Sales" team.
 + Users who have the "Sales Manager" role can access any account records that are members of the same business unit that they are members of.
 + The "USMF Sales" team is linked to the USMF business unit that was mentioned earlier.
-+ Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF company in Finance and Operations.
++ Therefore, members of the "USMF Sales" team can see any account that is owned by the "USMF DW" user, which would have come from the USMF Company entity in Finance and Operations.
 
 ![How teams can be used](media/dual-write-company-2.png)
 
