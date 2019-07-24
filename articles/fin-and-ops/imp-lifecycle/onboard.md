@@ -5,7 +5,7 @@ title: Onboard a Finance and Operations implementation project
 description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 07/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,7 +61,7 @@ To get started with LCS, see [Lifecycle Services for Finance and Operations cust
 
 After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will email the project team to request a call to discuss onboarding services. (Note that this email will originate from ond365@microsoft.com, so please ensure that any spam blocker/filter allows email from this address.) For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack Onboarding meeting is a 60-minute call via Skype. During this call, the team will introduce the implementation team to the FastTrack program as well as assist with the initial configuration of the LCS project and related tasks:
+The FastTrack Onboarding meeting is a 60-minute conference call. During this call, the team will introduce the implementation team to the FastTrack program as well as assist with the initial configuration of the LCS project and related tasks:
 
 - Tenant validation
 - Introduction to LCS
