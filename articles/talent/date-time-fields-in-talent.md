@@ -63,9 +63,6 @@ In the example below, employee 000724’s employment becomes active at the same 
 # Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
 
 The Data Management Framework, Excel Add In, Common Data Service and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** is in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
-
-
-
  
 Date time data that is submitted via DMF, Excel, or CDS is assumed to be in UTC by the database. This can cause some confusion when the submitted date time value is not what displays in the Dynamics client because the user viewing the data doesn't have their user time zone option set to UTC. 
  
@@ -101,7 +98,7 @@ Worker form
 
 [![Excel via Common Data Service](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
-### References
+### See also
 
-(Date and time data)(https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)
-(User preferred time zones)(https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+[Date and time data](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
+[User preferred time zones](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
