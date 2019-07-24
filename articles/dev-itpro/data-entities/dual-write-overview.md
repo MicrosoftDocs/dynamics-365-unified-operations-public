@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Near-real time data integration between Finance and Operations and Common Data Service
-description: 
+title: Near-real-time data integration between Finance and Operations and Common Data Service
+description: This topic provides an overview of the integration between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -30,19 +30,19 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-# Near-real time data integration between Finance and Operations and Common Data Service
+# Near-real-time data integration between Finance and Operations and Common Data Service
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview](../includes/preview-banner.md)]
 
-In this digital world,  business eco-systems use the Dynamics 365 suite as a whole. Data from people, customers, operations, and IoT devices flows in to one source creating the opportunity for digital feedback loops. To achieve this experience, native integration between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications is essential. Dynamics 365 for Customer Engagement Applications is built on top of Common Data Services (CDS). Finance and Operations data integrating with Common Data Services enables the Customer Engagement applications to communicate with Finance and Operations coherently and fluently.
+In the current digital world, business ecosystems use the Microsoft Dynamics 365 suite as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications is essential. Customer Engagement applications are built on top of Common Data Service. Integration between Finance and Operations data with Common Data Service lets Customer Engagement applications communicate coherently and fluently with Finance and Operations.
 
-The Finance and Operations and Common Data Service provide near real-time data synchronization between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications via a dual-write framework. The coverage is broad and spans across 28 surface areas of Dynamics 365 for Finance and Operations. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect the business processes across applications.
+Finance and Operations and Common Data Service provide near-real-time data synchronization between Finance and Operations and Customer Engagement applications via a dual-write framework. The coverage is broad and spans 28 surface areas of Finance and Operations. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.
 
-![architecture overview diagram](media/dual-write-overview.jpg)
+![Architecture overview diagram](media/dual-write-overview.jpg)
 
-The following value propositions are available for the customers.
+The following value propositions are available for customers:
 
 + [Organization hierarchy in Common Data Service](dual-write-organization.md)
 + [Company concept in Common Data Service](dual-write-company.md)
@@ -52,21 +52,23 @@ The following value propositions are available for the customers.
 
 ## System requirements
 
-Synchronous, bidirectional near-real time data flows requires the following versions.
+Synchronous, bidirectional, near-real-time data flows require the following versions:
 
-+ Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 10.0.4 Platform Update 28 or higher
-+ Dynamics 365 Customer Engagement, Platform version 9.1 (4.2) or higher
++ Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (July 2019) with Platform update 28, or later
++ Microsoft Dynamics 365 for Customer Engagement, Platform version 9.1 (4.2) or later
 
 ## Setup instructions
 
-Follow these steps to set up integration between Finance and Operations and Common Data Service:
+Follow these steps to set up integration between Finance and Operations and Common Data Service.
 	
-1. For dual-write system setup, see [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview. 
-2. Download and install the solution from [Finance and Operations, CDS, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains 5 solutions:
+1. For the setup of the dual-write system, see the [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview.
+2. Download and install the solution from the [Finance and Operations, Common Data Service, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains five solutions:
+
     + Dynamics365Company
     + CurrencyExchangeRates
     + Dynamics365FinanceAndOperationsCommon
     + Dynamics365FinanceCommon
     + Dynamics365SupplyChainCommon
 
-Dual-write is not compatible with the [Prospect to Cash](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) solution. If you have the Prospect to cash solution running, you need to un-install the solution as well as disable the customer and vendor dual-write templates that are part of Prospect to Cash.
+> [!IMPORTANT]
+> Dual-write isn't compatible with the [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) solution. If you're running the Prospect to cash solution, you must uninstall it. You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.
