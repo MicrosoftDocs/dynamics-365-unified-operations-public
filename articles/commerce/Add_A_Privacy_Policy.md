@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:Add a Privacy Policy
+title: Add a Privacy Policy
 description: This topic reviews setting up a Privacy Policy page within Dynamics 365 e-Commerce.
 author: BrianShook
 manager: BrendanSullivanMSFT
