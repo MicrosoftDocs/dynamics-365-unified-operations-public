@@ -5,7 +5,7 @@ title: Define and manage a benefits program
 description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up an manage benefits.
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -44,7 +44,8 @@ Before workers can be enrolled in benefits, you must create the elements of each
 [![Benefit process flow](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## Benefit elements
-Before you begin to create to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
+
+Before you begin to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
 
 -   **Type** – A collection of plans for a specific benefit, such as medical or parking.
 -   **Plan** – A specific benefit that is contracted from a provider.

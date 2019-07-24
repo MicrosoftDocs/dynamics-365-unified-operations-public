@@ -51,7 +51,7 @@ Changes made in this release enable performance management scenarios when using 
 With this change, you can now select multiple employees and bulk assign one or more checklists to those employees. 
 
 ### Platform update 24
-For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
+For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
 
 - Alerts are enabled in Talent.
 - The updated navigation bar now aligns with the Office header.

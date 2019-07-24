@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Which version of Attract
+title: Which version of Microsoft Dynamics 365 for Talent - Attract
 description: This topic provides information about the capabilities in the different versions of Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe

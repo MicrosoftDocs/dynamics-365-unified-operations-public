@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1
 
 ---
 
-# Create a process template in Attract
+# Create a process template
 
 [!include [banner](includes/banner.md)]
 

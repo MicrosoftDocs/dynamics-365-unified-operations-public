@@ -106,10 +106,28 @@
       items:
       - name: X++ language reference
         href: dev-ref/xpp-language-reference.md
-      - name: X++ variables and data types
-        href: dev-ref/xpp-variables-data-types.md
-      - name: X++ statements, loops, and exception handling
-        href: dev-ref/xpp-statements-loops.md
+      - name: Variables and data types
+        items:
+        - name: Variables
+          href: dev-ref/xpp-variables-data-types.md
+        - name: Primitive data types
+          href: dev-ref/xpp-data-primitive.md
+        - name: Composite data types
+          href: dev-ref/xpp-data-composite.md
+        - name: Collection classes
+          href: dev-ref/xpp-data-collection.md
+        - name: Extended data types
+          href: dev-ref/xpp-data-edt.md
+      - name: Statements, loops, and exception handling
+        items:
+        - name: Comments, using, and print
+          href: dev-ref/xpp-statements-loops.md
+        - name: Conditional statements
+          href: dev-ref/xpp-conditional.md
+        - name: Loop statements
+          href: dev-ref/xpp-loops.md
+        - name: Exception handling
+          href: dev-ref/xpp-exceptions.md     
       - name: SQL connection error X++ exception
         href: dev-ref/sql-connection-error.md
       - name: X++ operators
@@ -120,6 +138,8 @@
         href: dev-ref/xpp-classes-methods.md
       - name: X++ data selection and manipulation
         href: dev-ref/xpp-data-query.md
+      - name: Data access using the SysDa API
+        href: dev-ref/sysda.md
       - name: X++ macros
         href: dev-ref/xpp-macros.md
       - name: X++ attribute classes
@@ -1129,7 +1149,7 @@
       href: migration-upgrade/on-prem-upgrade.md
   - name: Hotfixes
     items:
-    - name: Download hotfixes from Lifecycle Services
+    - name: Get updates from Lifecycle Services
       href: migration-upgrade/download-hotfix-lcs.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md

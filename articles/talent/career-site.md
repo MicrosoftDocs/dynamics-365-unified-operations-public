@@ -2,8 +2,8 @@
 
 # required metadata
 
-title:  Career site functionality in Attract
-description: This topic provides an overview of the candidate-facing career site functionality in Attract.
+title:  Set up your career site in Microsoft Dynamics 365 for Talent - Attract
+description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 for Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 
 ---
 
-# Career site functionality in Attract
+# Set up your career site
 
 [!include[banner](../includes/banner.md)]
 
@@ -74,11 +74,14 @@ select the **Career site management** tab.
 
 -   **Search Engine Optimization** - When enabled, all public jobs posted to
     Attract career site will be searchable using search engines like Bing
-    and Google.
+    and Google. 
 
     > [!NOTE] 
     > There might be a delay between turning this setting on and search results appearing, depending on the search engine that you are using.
-         
+    
+-   **Terms and Conditions** - When enabled, all candidates must consent to the organization's terms and conditions when applying for any job. The Attract Administrator is able to configure their own Consent text as well as the link to their Terms and Conditions page. 
+
+        
 ## Career site URLs
 
 The following list contains the commonly used career site URLs and how to access them.
