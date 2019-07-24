@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:400 / 500 Page Results
+title: 400 / 500 Page Results
 description: This topic reviews setting up an e-Commerce page to show end users for 400 or 500 results.
 author: BrianShook
 manager: BrendanSullivanMSFT
