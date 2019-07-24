@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated customer master
-description: 
+description: This topic describes the integration of customer data between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -75,7 +75,7 @@ Name Affixes              | Msdyn\_nameaffixes
 
 ## Customer V3 to Account
 
-Syncs customer master information for commercial and organizational customers between Finance and Operations and Common Data Service.
+This template synchronizes customer master information for commercial and organizational customers between Finance and Operations and Common Data Service.
 
 <!-- ![](media/dual-write-account-1.png) -->
 
@@ -146,7 +146,7 @@ PARTYNUMBER | = | msdyn\_partynumber
 
 ## Customer V3 to Contact
 
-Syncs customer master data for consumers and end users between Finance and Operations and Customer Engagement.
+This template synchronizes customer master data for consumers and end users between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-contact-1.png) -->
 <!-- ![](media/dual-write-contact-2.png) -->
@@ -218,7 +218,7 @@ SALESMEMO | = | description
 
 ## Contacts
 
-Syncs all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-contacts.png) -->
 
@@ -253,7 +253,7 @@ none | \>\> | msdyn\_contactpersonid
 
 ## Customer Groups
 
-Syncs customer group information between Finance and Operations and Customer Engagement.
+This template synchronizes customer group information between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-customer-groups.png) -->
 
@@ -267,7 +267,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymenttermname.msdyn\_
 
 ## Customer Payment Methods
 
-Syncs customer payment method information between Finance and Operations and Customer Engagement.
+This template synchronizes customer payment method information between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-customer-payment-methods.png) -->
 
@@ -291,7 +291,7 @@ DIRECTDEBIT | \>\< | msdyn\_directdebit
 
 ## Loyalty Cards
 
-Syncs customer loyalty card information between Finance and Operations and Customer Engagement.
+This template synchronizes customer loyalty card information between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-loyalty-cards.png) -->
 
@@ -306,7 +306,7 @@ LOYALTYENROLLMENTDATE | = | msdyn\_enrollmentdate
 
 ## Payment Schedules
 
-Syncs payment schedule reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment schedule reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-payment-schedules.png) -->
 
@@ -340,7 +340,7 @@ PERCENTORAMOUNTVALUE | = | msdyn\_percentoramountvalue
 
 ## Payment days
 
-Syncs payment days reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment days reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-payment-days.png) -->
 
@@ -351,7 +351,7 @@ DESCRIPTION | = | msdyn\_description
 
 ## Payment Day Lines
 
-Syncs payment day lines reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment day lines reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-payment-day-lines.png) -->
 
@@ -365,7 +365,7 @@ NAME | = | msdyn\_paymentday.msdyn\_name
 
 ## Payment Terms
 
-Syncs payment terms (terms of payment) reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-payment-terms.png) -->
 
@@ -387,7 +387,7 @@ PAYMENTSCHEDULENAME | = | msdyn\_paymentschedulename.msdyn\_name
 
 ## Name Affixes
 
-Syncs name affixes reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes name affixes reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
 
 <!-- ![](media/dual-write-name-affixes.png) -->
 
