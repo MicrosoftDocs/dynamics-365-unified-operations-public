@@ -81,19 +81,22 @@ The following illustration shows the high-level process that you must configure 
 
     <img alt="expression value" src="../../media/BEF-Howto-workflow-10.png" width="70%">
 
-14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the Finance and Operations client.
+14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the Finance and Operations client. In order to complet this step create a new send email action within the **No** container and fillin the parameter with the email of the Approver from the previous step **workflowuseremail** and a subject and body of your choice.
 
-    The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in your Finance and Operations demo environment, you can use your own email address for demo purposes.
+    NOTE:*The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in your Finance and Operations demo environment, you can use your own email address for demo purposes.
 
     <img alt="approver email" src="../../media/BEF-Howto-workflow-11.png" width="70%">
 
-15. If the result of the validate step is **Yes**, you must start a new Microsoft Flow approval step. In the **Yes** container, select a new action that is named **Start and wait for an approval (v2)**, and enter details as shown in the following illustration. Again, you can use your own email address in the **Assigned to** field for demo purposes if the workflow approver user hasn't been configured in your demo environment.
+15. If the result of the validate step is **Yes**, you must start a new Microsoft Flow approval step. In the **Yes** container, select a new action that is named **Start and wait for an approval (v2)**, and choose inputs as follows: 
+Approval type: Approve/reject: first to respond
+title: **workflowworkitemsubject** output form Business event payload
+Assigned to: **workflowuseremail** output
+Then you can fill in the details section with as much information as needed from previous step such as **workflowdocument** or **workflowstepinstruction**. 
+Again, you can use your own email address in the **Assigned to** field for demo purposes especially if the workflow approver user hasn't been configured in your demo environment.
 
-    <img alt="Microsoft flow approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
+   <img alt="Microsoft flow approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
-    Next, you must complete the Finance and Operations workflow approval by using the outcome of the Microsoft Flow approval step.
-
-16. In the **Yes** container, add a new **Finance and Operations Execute Action** step, and fill the fields with the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select it as input for an action, Microsoft Flow automatically embeds your action in an **Apply to each** container.
+16. Next, you must complete the Finance and Operations workflow approval by using the outcome of the approval step. Still in the **Yes** container, add a new **Finance and Operations Execute Action** step, and choose the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Then fill in the rest of the parameters from the approval outputs. As a minimum the outcome section with Approval outcome and the comment section with the approver's responses. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select the output **Reponses** as an input for the comment section, Microsoft Flow automatically embeds your action in an **Apply to each** container as shown below.
 
     <img alt="workitem complete action" src="../../media/BEF-Howto-workflow-13.png" width="70%">
 
