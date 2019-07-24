@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization hierarchy in Common Data Service
-description: 
+description: This topic describes the integration of organizational data between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -54,7 +54,7 @@ Organization hierarchy entity maps are available for one-way synchronization of 
 
 ## Internal Organization Hierarchy Purpose
 
-Provides one-way synchronization of internal organization hierarchy purpose information from Finance and Operations to Dynamics 365 for Customer Engagement.
+This template provides one-way synchronization of the Organization Hierarchy Purpose entity from Finance and Operations to Dynamics 365 for Customer Engagement.
 
 <!-- ![architecture image](media/dual-write-purpose.png) -->
 
@@ -68,7 +68,7 @@ SETASDEFAULT | \>\> | msdyn\_setasdefault
 
 ## Internal Organization Hierarchy Type
 
-Provides one-way synchronization of internal organization hierarchy type information from Finance and Operations to Customer Engagement.
+Tihs template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations to Customer Engagement.
 
 <!-- ![architecture image](media/dual-write-type.png) -->
 
@@ -78,7 +78,7 @@ NAME | \> | msdyn\_name
 
 ## Internal Organization Hierarchy
 
-Provides one-way synchronization of internal organization hierarchy information from Finance and Operations to Customer Engagement.
+This template provides one-way synchronization of the Organization Hierarchy Published entity from Finance and Operations to Customer Engagement.
 
 <!-- ![architecture image](media/dual-write-organization.png) -->
 
