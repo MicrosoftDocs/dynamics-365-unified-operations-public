@@ -244,6 +244,7 @@ There are a few standard steps that can help you troubleshoot the configuration 
     2. Verify that SMTP is enabled.
     3. Verify the settings of the SMTP mail server.
     4. Sign in to the SMTP account in a separate window to make sure that the account and password are correct.
+    5. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
 
 2. Verify that the email batch process is running:
 
@@ -262,7 +263,8 @@ There are a few standard steps that can help you troubleshoot the configuration 
 
 4. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
 5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
-6. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+6. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
+7. If you continue to experience issues when email is sent via SMTP, try to enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
 ## Troubleshoot the Exchange mail provider
 
