@@ -72,7 +72,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
 3. Select **Overview**, then copy and save the **DNS Name** value for the key vault. You will use this value later.
 
-    <img alt="Key vault dns name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
+    <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
 4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the Service Bus connection string that you saved earlier.
 
@@ -96,7 +96,7 @@ In this procedure, you will register a new application with Azure AD, and give i
     > [!IMPORTANT]
     > Secrets are visible only one time. If you forget to copy the secret, you will have to delete it and create a new secret.
 
-    <img alt="copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
+    <img alt="Copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
 
 6. Select **Overview**, and copy and save the application ID. You will use this value later.
 
@@ -128,7 +128,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 
 The business scenario involves sending an email message whenever a free text invoice is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the total amount of the invoice.
 
-1. In F&O select the business event catalog and look for **free text invoice posted** business event 
+1. In Finance and Operations select the business event catalog and look for **free text invoice posted** business event.
 2. Then activate the business event for USMF company. Once activated, Finance and Operations sends a test message to validate the configuration and cache the connection.
 3. To verify that the test message has been received, in the Azure portal, select your event grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
@@ -154,7 +154,7 @@ The business scenario involves sending an email message whenever a free text inv
 10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
 11. Click in the **Content** field of the **Parse Json** action. The pane that appears gives you the option form the previous trigger. You must select the **Data object** field of the event grid message that contains the payload that is transmitted by Finance and Operations.
 
-    <img alt="logic appas parse json " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
+    <img alt="Logic appas parse JSON " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
 
     Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
@@ -165,7 +165,7 @@ The business scenario involves sending an email message whenever a free text inv
 
 14. Depending on the quality of your sample payload, your generator won't be able to distinguish between an integer and a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JavaScript Object Notation \[JSON\], the **number** data type represents real values.)
 
-    <img alt="json data types " src="../../media/BEF-Howto-EventGrid-17.png" width="100%">
+    <img alt="JSON data types " src="../../media/BEF-Howto-EventGrid-17.png" width="100%">
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
