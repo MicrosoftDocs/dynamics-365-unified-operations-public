@@ -42,7 +42,7 @@ If you want to use Customer Engagement for vendor-mastering and want to isolate 
 
 If you want to use Customer Engagement for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, you can use the new extended vendor design. In this design, extended vendor information like vendor group and vendor post profile are stored in the **vendor detail**.
 
-![extended vender design](media/dual-write-vendor-detail.png)
+![extended vender design](media/dual-write-vendor-detail.jpg)
 
 Vendor contact information is similar to the customer contact information. Behind the scenes the contact person information is stored and retrieved from same entities.
 
