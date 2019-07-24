@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Requests
-description: This topic provides an overview of requests in Enterprise Asset Management.
+title: Maintenance requests
+description: This topic provides an overview of requests in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -25,22 +25,17 @@ ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Requests
+# Maintenance requests
 
+Maintenance Requests are used to create a request indicating that a work order may be required for a specific job. A Maintenance request can be any user having access to Dynamics 365 for Finance & Operations Asset Management functionality. A planner or manager can then decide whether the request should be converted to a work order or it should complete its own lifecycle. You can set up different request types to be used in your company, for example, maintenance requests.
 
+## All maintenance requests
 
-This topic provides an overview of requests in Enterprise Asset Management. Requests are used to create a request indicating that a work order may be required for a specific job. A planner or manager can then decide whether the request should be converted to a work order. You can set up different request types to be used in your company, for example, maintenance requests.
-
-## All requests
-
-Click **Enterprise asset management** > **Common** > **Requests** > **All requests** or **Active requests** to open the list. **All requests** contain a list of all requests, regardless of the request stage. The following image shows a screenshot of the interface.
+Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests** to open the list. **All maintenance requests** contain a list of all requests, regardless of the maintenance request stage. The following image shows a screenshot of the interface.
 
 ![Figure 1](media/01-setup-for-requests.png)
-
->[!NOTE]
->Customer account information is available in Asset Service Management (external maintenance), but not in Enterprise Asset Management (internal maintenance).
