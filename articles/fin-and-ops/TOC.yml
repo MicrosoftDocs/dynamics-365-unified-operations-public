@@ -27,6 +27,8 @@
           href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
         - name: Finance and Operations operated by 21Vianet in China
           href: ../dev-itpro/deployment/china-local-deployment.md
+        - name: Finance and Operations in France
+          href: ../dev-itpro/deployment/france-local-deployment.md
       - name: Service update availability
         href: get-started/public-preview-releases.md
       - name: Buy Finance and Operations
@@ -267,6 +269,12 @@
       items: 
       - name: Consume business events with Microsoft Flow
         href: ../dev-itpro/business-events/how-to/how-to-flow.md
+      - name: Consume business events by using Azure Event Grid
+        href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
+      - name: Consume business events by using Azure Service Bus
+        href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
+      - name: Consume workflow approval business events
+        href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
   - name: Compliance
@@ -2433,7 +2441,8 @@
             href: ../financials/localizations/rus-ledger-transactions-preview.md 
           - name: Set up exchange rates for currency transactions
             href: ../financials/localizations/rus-exchange-difference.md
-          - name: Import currency exchange rates from CBRF ../financials/general-ledger/import-currency-exchange-rates.md
+          - name: Import currency exchange rates from CBRF 
+            href: ../financials/general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
           href: ../financials/localizations/rus-advance-holders.md
           items:
@@ -2457,6 +2466,8 @@
             href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: VAT
           items:
+          - name: Local specific posting of sales VAT
+            href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
           - name: Value-added tax (VAT) for tax agents
             href: ../financials/localizations/rus-tax-agent.md
           - name: VAT declaration
@@ -2541,18 +2552,18 @@
             href: ../financials/localizations/rus-company-divisions.md
         - name: Deferrals
           items:
-          - name: Deferral transactions
-            href: ../financials/localizations/rus-deferral-transactions.md
           - name: Set up deferrals
             href: ../financials/localizations/rus-set-up-deferrals.md
           - name: Create or generate referrals
             href: ../financials/localizations/rus-create-generate-deferrals.md
-          - name: Deferrals counting
-            href: ../financials/localizations/rus-counting-deferrals.md
+          - name: Receipt of deferrals
+            href: ../financials/localizations/rus-deferral-transactions.md
           - name: Write-off deferrals
             href: ../financials/localizations/rus-write-off-deferral.md
-          - name: Dispose of deferrals 
+          - name: Dispose of deferrals
             href: ../financials/localizations/rus-dispose-deferrals.md
+          - name: Deferrals counting
+            href: ../financials/localizations/rus-counting-deferrals.md
           - name: Reporting for deferrals
             href: ../financials/localizations/rus-reporting-deferrals.md
       - name: Saudi Arabia
@@ -3109,8 +3120,8 @@
           href: ../dev-itpro/analytics/rcs-optional-attributes.md?toc=/fin-and-ops/toc.json
         - name: Configure ER formats to import XML format files with optional attributes
           href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-      - name: Split generated XML files based on file size and content quantity
-        href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+    - name: Split generated XML files based on file size and content quantity
+      href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
     - name: Configuration lifecycle
       items:
       - name: Manage configurations lifecycle
@@ -3167,46 +3178,46 @@
         href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
       - name: Specify a custom storage location for generated documents
         href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
-    - name: Embedded analytical solutions
-      items:
-      - name: Embedded Power BI in workspaces
-        href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
-      - name: Power BI Embedded integration
-        href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
-      - name: Select analytical workspaces from PowerBI.com
-        href: ../dev-itpro/analytics/select-analytical-workspace.md
-    - name: Personalization options with PowerBI.com
-      items:
-      - name: Features and services available via Power BI integration
-        href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
-      - name: Pin Power BI reports to workspaces
-        href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
-      - name: Customize embedded reports in Analytical workspaces 
-        href: ../dev-itpro/analytics/customize-analytical-workspace.md
-    - name: Tools for creating and extending solutions
-      items:
-      - name: Analytics, aggregate measurements, and KPI modeling
-        href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-      - name: Create analytical reports using Power BI Desktop
-        href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
-      - name: Model aggregate data
-        href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
-      - name: Add financial dimensions to aggregate measurements
-        href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
-      - name: Add analytics to workspaces by using Power BI Embedded
-        href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
-      - name: Help secure analytical workspaces and reports using Power BI Embedded
-        href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
-    - name: Power user management tools
-      items:
-      - name: Power BI integration with Entity store
-        href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-      - name: Resolve issues after Entity store maintenance
-        href: ../dev-itpro/analytics/entity-store-maintenance.md
-      - name: Configure Power BI integration for workspaces
-        href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
-      - name: Bring your own database
-        href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
+  - name: Embedded analytical solutions
+    items:
+    - name: Embedded Power BI in workspaces
+      href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/fin-and-ops/toc.json
+    - name: Power BI Embedded integration
+      href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
+    - name: Select analytical workspaces from PowerBI.com
+      href: ../dev-itpro/analytics/select-analytical-workspace.md
+  - name: Personalization options with PowerBI.com
+    items:
+    - name: Features and services available via Power BI integration
+      href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
+    - name: Pin Power BI reports to workspaces
+      href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
+    - name: Customize embedded reports in Analytical workspaces 
+      href: ../dev-itpro/analytics/customize-analytical-workspace.md
+  - name: Tools for creating and extending solutions
+    items:
+    - name: Analytics, aggregate measurements, and KPI modeling
+      href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
+    - name: Create analytical reports using Power BI Desktop
+      href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
+    - name: Model aggregate data
+      href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
+    - name: Add financial dimensions to aggregate measurements
+      href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
+    - name: Add analytics to workspaces by using Power BI Embedded
+      href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
+    - name: Help secure analytical workspaces and reports using Power BI Embedded
+      href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
+  - name: Power user management tools
+    items:
+    - name: Power BI integration with Entity store
+      href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
+    - name: Resolve issues after Entity store maintenance
+      href: ../dev-itpro/analytics/entity-store-maintenance.md
+    - name: Configure Power BI integration for workspaces
+      href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
+    - name: Bring your own database
+      href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
   - name: Inventory management
     href: ../supply-chain/inventory/inventory-home-page.md
     items:
@@ -3301,6 +3312,73 @@
         href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
   - name: Supply chain
     href: ../supply-chain/index.md
+  - name: Asset management
+    items:
+    - name: Asset management overview
+      href: ../supply-chain/asset-management/index.md
+      items:
+      - name: Functional locations and assets
+        href: ../supply-chain/asset-management/overview/functional-locations-and-objects.md
+      - name: Assets and work orders
+        href: ../supply-chain/asset-management/overview/objects-and-work-orders.md     
+    - name: Setup for functional locations
+      items:
+      - name: Functional location lifecycle states
+        href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-stages.md
+      - name: Maintenance attribute types
+        href: ../supply-chain/asset-management/setup-for-functional-locations/functional-location-types.md
+      - name: Functional location types
+        href: ../supply-chain/asset-management/setup-for-functional-locations/specification-types.md
+    - name: Functional locations
+      items:
+      - name: Introduction to functional locations
+        href: ../supply-chain/asset-management/functional-locations/introduction-to-functional-locations.md
+      - name: Create functional locations
+        href: ../supply-chain/asset-management/functional-locations/create-functional-locations.md
+      - name: Install assets on functional locations
+        href: ../supply-chain/asset-management/functional-locations/install-objects-on-functional-locations.md
+    - name: Setup for assets
+      items:
+      - name: Asset types
+        href: ../supply-chain/asset-management/setup-for-objects/object-types.md
+      - name: Condition assessment
+        href: ../supply-chain/asset-management/setup-for-objects/condition-assessment.md
+      - name: Asset manufacturer and model
+        href: ../supply-chain/asset-management/setup-for-objects/product-and-model.md
+      - name: Counters
+        href: ../supply-chain/asset-management/setup-for-objects/counters.md
+      - name: Asset management parameters
+        href: ../supply-chain/asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+      - name: Asset lifecycle states
+        href: ../supply-chain/asset-management/setup-for-objects/object-stages.md
+      - name: Asset service levels
+        href: ../supply-chain/asset-management/setup-for-objects/object-priorities.md
+      - name: Asset criticalities
+        href: ../supply-chain/asset-management/setup-for-objects/object-criticalities.md
+      - name: Asset documents
+        href: ../supply-chain/asset-management/setup-for-objects/object-documents.md
+      - name: Maintenance workers and worker groups
+        href: ../supply-chain/asset-management/setup-for-objects/workers-and-worker-groups.md
+    - name: Assets
+      items: 
+      - name: Introduction to assets
+        href: ../supply-chain/asset-management/objects/introduction-to-objects.md
+      - name: Create an asset
+        href: ../supply-chain/asset-management/objects/create-an-object.md
+      - name: Multi-level assets
+        href: ../supply-chain/asset-management/objects/multi-level-objects.md
+      - name: Move, replace, and install assets
+        href: ../supply-chain/asset-management/objects/move-replace-and-install-objects.md
+      - name: Create assets based on purchase orders
+        href: ../supply-chain/asset-management/objects/create-objects-based-on-purchase-orders.md
+      - name: Asset BOM
+        href: ../supply-chain/asset-management/objects/object-bom.md
+      - name: Asset event history
+        href: ../supply-chain/asset-management/objects/object-timeline.md
+      - name: Asset view
+        href: ../supply-chain/asset-management/objects/object-view.md
+      - name: Asset attribute overview
+        href: ../supply-chain/asset-management/objects/object-specification-overview.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:

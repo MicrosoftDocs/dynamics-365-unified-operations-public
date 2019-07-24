@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 ---
 
-# Access preview features in Talent
+# Manage preview features
 
 [!include[banner](../includes/banner.md)]
 

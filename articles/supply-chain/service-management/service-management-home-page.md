@@ -71,7 +71,7 @@ The following diagram illustrates the high level business processes for **Servic
 Service management can be integrated with the following modules:
 
   - [Sales and marketing](../sales-marketing/overview-sales-marketing.md)
-  - [Human resources](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/index)
+  - [Human resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   
 

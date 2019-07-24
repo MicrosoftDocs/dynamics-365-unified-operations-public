@@ -48,7 +48,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
   - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-For more information, see [Subscription parameters (form)](https://technet.microsoft.com/en-us/library/aa619615.aspx).
+For more information, see [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).
 
 ## Setup requirements
 

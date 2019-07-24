@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Post jobs to LinkedIn from Attract
+title: Post jobs to LinkedIn from Microsoft Dynamics 365 for Talent - Attract
 description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to LinkedIn from Attract
+# Post jobs to LinkedIn
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,7 +66,7 @@ Jobs that are posted to LinkedIn appear on the live LinkedIn site. LinkedIn does
 4. Select **Done**.
 5. In the **Submit for posting** message box, select **Confirm**.
 
-After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**. It can take up to 24 hours for your job to appear in LinkedIn.
+After LinkedIn successfully completes the posting, the **Postings** section of the job in Attract shows the LinkedIn status as **Posted**. It can take up to 48 hours for your job to appear in LinkedIn.
 
 When interested candidates select **View** next to your listing, they will see the full job details, together with your information about how to apply.
 

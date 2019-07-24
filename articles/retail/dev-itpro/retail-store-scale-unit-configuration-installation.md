@@ -312,7 +312,7 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
 15. Start Microsoft Windows Firewall with Advanced Security.
 16. In Windows Firewall, create an inbound rule to open TCP port 1433.
 
-For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
+For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/library/ms175043.aspx).
 
 #### Installation on the second computer
 
@@ -331,7 +331,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. 
 
-    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
+    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
 
 5. When setup is successful, don't exit the installer. 
 

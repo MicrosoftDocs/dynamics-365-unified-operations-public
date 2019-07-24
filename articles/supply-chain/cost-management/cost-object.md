@@ -74,11 +74,11 @@ The following table shows what is a cost object and what is an inventory object.
 Additional resources
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Product dimension group](https://technet.microsoft.com/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Storage dimension group](https://technet.microsoft.com/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Tracking dimension group](https://technet.microsoft.com/library/hh209465.aspx)
 
 [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md)
 

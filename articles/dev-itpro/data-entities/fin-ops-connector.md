@@ -35,13 +35,13 @@ The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, Pow
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
 
-- [Connectors](https://docs.microsoft.com/en-us/connectors/) 
-- [Data management package REST API](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [Open Data Protocol (OData)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [Recurring integrations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [Connectors](https://docs.microsoft.com/connectors/) 
+- [Data management package REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
+- [Open Data Protocol (OData)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
+- [Recurring integrations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## Triggers
-Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
 
 ## Actions
 
