@@ -34,6 +34,8 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/pre-release.md)]
+
 It's common for customer records to be mastered in more than one application. For example, SMB sales motion can bring in commercial customer records through a Dynamics 365 for Sales application and e-Commerce or retail sales can bring in customer records through a Dynamics 365 for Finance and Operations application. Regardless of where the customer record originates, it is integrated behind the scenes beyond application boundaries and infrastructure differences. Integrated customer mastering helps to handle multi-mastering scenarios and provides a comprehensive view of the customer to Dynamics 365 application suite.
 
 ## Customer data flow
