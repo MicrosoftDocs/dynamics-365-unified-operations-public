@@ -5,7 +5,7 @@ title: Device management implementation guidance
 description: This topic is intended for people who implement functionality that is related to device management in a retail environment. It gives implementation tips and guidance that you should consider as you plan your implementation.
 author: jashanno
 manager: AnnBe
-ms.date: 12/06/2017
+ms.date: 07/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
