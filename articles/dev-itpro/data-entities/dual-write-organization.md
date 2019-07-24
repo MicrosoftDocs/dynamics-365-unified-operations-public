@@ -50,11 +50,25 @@ Provides one-way synchronization of internal organization hierarchy purpose info
 
 ![architecture image](media/dual-write-purpose.png)
 
+Source field | Map type | Destination field
+---|---|---
+HIERARCHYTYPE | > | msdyn_hierarchypurposetypename
+HIERARCHYTYPE | > | msdyn_hierarchytype.msdyn_name
+HIERARCHYPURPOSE | >> | msdyn_hierarchypurpose
+IMMUTABLE | >> | msdyn_immutable
+SETASDEFAULT | >> | msdyn_setasdefault
+
+
 ## Internal Organization Hierarchy Type
 
 Provides one-way synchronization of internal organization hierarchy type information from Finance and Operations to Customer Engagement.
 
 ![architecture image](media/dual-write-type.png)
+
+Source field | Map type | Destination field
+---|---|---
+NAME | > | msdyn_name
+
 
 ## Internal Organization Hierarchy
 
@@ -62,11 +76,66 @@ Provides one-way synchronization of internal organization hierarchy information 
 
 ![architecture image](media/dual-write-organization.png)
 
+Source field | Map type | Destination field
+---|---|---
+VALIDTO | > | msdyn_validto
+VALIDFROM | > | msdyn_validfrom
+HIERARCHYTYPE | > | msdyn_hierarchytypename
+PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentpartyid
+CHILDORGANIZATIONPARTYNUMBER | > | msdyn_childpartyid
+HIERARCHYTYPE | > | msdyn_hierarchytypeid.msdyn_name
+CHILDORGANIZATIONPARTYNUMBER | > | msdyn_childid.msdyn_partynumber
+PARENTORGANIZATIONPARTYNUMBER | > | msdyn_parentid.msdyn_partynumber
+
+
 ## Internal Organization
 
 Internal organization information in CDS comes from 2 entities of Finance and Operations, **operating unit** and **legal entities**.
 
 ![architecture image](media/dual-write-operating-unit.png)
+
+### Operating unit
+
+Source field | Map type | Destination field
+---|---|---
+LANGUAGEID | > | msdyn_languageid
+NAMEALIAS | > | msdyn_namealias
+NAME | > | msdyn_name
+PARTYNUMBER | > | msdyn_partynumber
+OPERATINGUNITTYPE | >> | msdyn_type
+
+### Legal entities
+Source field | Map type | Destination field
+---|---|---
+NAMEALIAS | > 
+### Legal entities| msdyn_namealias
+LANGUAGEID | > | msdyn_languageid
+NAME | > | msdyn_name
+PARTYNUMBER | > | msdyn_partynumber
+none | >> | msdyn_type
+LEGALENTITYID | > | msdyn_companycode
+
+
+
+### Operating Source field | Map type | Destination field
+---|---|---
+NAMEALIAS | > | msdyn_namealias
+LANGUAGEID | > | msdyn_languageid
+NAME | > | msdyn_name
+PARTYNUMBER | > | msdyn_partynumber
+none | >> | msdyn_type
+LEGALENTITYID | > | msdyn_companycode
+
+
+Source field | Map type | Destination field
+---|---|---
+LANGUAGEID | > | msdyn_languageid
+NAMEALIAS | > | msdyn_namealias
+NAME | > | msdyn_name
+PARTYNUMBER | > | msdyn_partynumber
+OPERATINGUNITTYPE | >> | msdyn_type
+
+
 
 ![architecture image](media/dual-write-legal-entities.png)
 
