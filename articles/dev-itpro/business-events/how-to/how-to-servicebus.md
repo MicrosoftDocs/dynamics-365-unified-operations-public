@@ -89,7 +89,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
 3. Select **Overview**, then copy and save the **DNS Name** value for the key vault. You will use this value later.
 
-    <img alt="Key vault dns name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
+    <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
 4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the Service Bus connection string that you saved earlier.
 
@@ -113,11 +113,11 @@ In this procedure, you will register a new application with Azure AD, and give i
     > [!IMPORTANT]
     > Secrets are visible only one time. If you forget to copy the secret, you will have to delete it and create a new secret.
 
-    <img alt="copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
+    <img alt="Copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
 
 6. Select **Overview**, and copy and save the application ID. You will use this value later.
 
-    <img alt="Copy App Id " src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
+    <img alt="Copy App ID " src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
 
 7. Select **All services \> Security \> Key vaults**.
 8. Select the key vault that you created earlier, and then select **Access policies \> Add new**.
@@ -137,7 +137,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 6. Select **Next**.
 7. Set the required parameter values.
 
-    <img alt="Service Bus Endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
+    <img alt="Service Bus dndpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
 8. Select **OK**.
 
@@ -150,7 +150,7 @@ The business scenario involves sending an email or a message to a team channel w
 
     <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
 
-    After you activate a business event that uses the new service bus endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
+    After you activate a business event that uses the new Service Bus endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
 
 3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
 
@@ -158,7 +158,7 @@ The business scenario involves sending an email or a message to a team channel w
 
 3. Select **All services \> Integration \> Logic Apps**.
 
-    <img alt="logic apps" src="../../media/BEF-Howto-servicebus-11.png" width="70%">
+    <img alt="Logic apps" src="../../media/BEF-Howto-servicebus-11.png" width="70%">
 
 4. Create a new logic app in your resource group.
 5. After your Logic Apps resource has been created, select the option to create a blank logic app.
@@ -176,13 +176,13 @@ The business scenario involves sending an email or a message to a team channel w
     > [!NOTE]
     > The **Send** policy can't be used here, because you want to *retrieve* messages, not send them. As a best practice, you could have created a new policy for this use case and given it **Listen** permission only.
 
-    <img alt="Service Bus listen policy " src="../../media/BEF-Howto-servicebus-16.png" width="70%">
+    <img alt="Service bus listen policy " src="../../media/BEF-Howto-servicebus-16.png" width="70%">
 
 10. Select your trigger parameters. Be sure to use the correct names for the topic and subscription that you created.
 
     This API polls Service Bus for new messages at a configurable recurrence (by default, every three minutes). If the volume of messages is low, the API will have a cost impact for unnecessary triggers, because Logic Apps is priced per trigger call and action run. However, you can implement a push architecture that uses Azure Event Grid in the middle. Service Bus can then push events to Event Grid when there are messages in a queue or a subscription. For more information, see [Azure Service Bus to Event Grid integration overview](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-to-event-grid-integration-concept).
 
-    <img alt="logic apps trigger " src="../../media/BEF-Howto-servicebus-17.png" width="70%">
+    <img alt="Logic apps trigger " src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 
 11. Select **New step** to add a new action.
 12. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
@@ -202,18 +202,18 @@ The business scenario involves sending an email or a message to a team channel w
 15. In Finance and Operations, select your event in the business event catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
 16. Go back to your Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
 
-    <img alt="message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">
+    <img alt="Message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">
 
 17. Depending on the quality of your sample payload, your generator won't be able to distinguish between an integer and a real value, especially if the real value is provided as a whole number in the sample payload. Review the schema that is generated, and determine whether you must change a field of the **integer** data type to the **number** data type. (In JSON, the **number** data type represents real values.)
 
-    <img alt="jason data types " src="../../media/BEF-Howto-servicebus-23.png" width="70%">
+    <img alt="JSON data types " src="../../media/BEF-Howto-servicebus-23.png" width="70%">
 
     Next, you will select a final action, such as sending a notification email that includes customer payment details.
 
 18. Search for the **send email** action, and then sign in to your Microsoft Office 365 account.
 19. Fill in the message with the required fields.
 
-    <img alt="logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">
+    <img alt="Logic apps action send email " src="../../media/BEF-Howto-servicebus-25.png" width="70%">
 
 20. Save your logic app.
 21. Trigger the business event by posting a customer payment. Then verify that the logic app runs, and that you receive an email that includes customer payment details.
