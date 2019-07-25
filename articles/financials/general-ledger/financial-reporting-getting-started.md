@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial reporting
+title: Financial reporting overview
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 for Finance and Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial reporting
+# Financial reporting overview
 
 [!include [banner](../includes/banner.md)]
 
