@@ -1934,7 +1934,7 @@
           href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
         - name: Audit file
           items:
-          - name: Germany audit file overview
+          - name: German audit file overview
             href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
           - name: Customize audit file configuration
             href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
