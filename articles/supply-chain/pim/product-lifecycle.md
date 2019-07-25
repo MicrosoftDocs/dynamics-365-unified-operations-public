@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Product lifecycle state
+title: Product lifecycle state overview
 description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
 author: cvocph
 manager: AnnBe
-ms.date: 12/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# Product lifecycle state 
+# Product lifecycle state overview
 
 [!include [banner](../includes/banner.md)]
 
