@@ -32,25 +32,28 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Responsible maintenance workers
 
-Responsible maintenance workers can be related to asset types, assets, functional locations, maintenance job type category, maintenance job type, maintenance job type variants, and trades to make a maintenance worker preference on work orders and maintenance requests regarding which maintenance workers should be responsible for a work order (but not necessarily the ones scheduled to carry out a work order). The use of this functionality is optional. For example, it can be used to select responsible workers or worker groups for specific work types or work areas. During a work order life cycle or a maintenance request life cycle, it is possible to change or update responsible maintenance workers, which could be related to, for example, a change in maintenance request stage or work order stage.  The setup in **Responsible workers** is *not* used during work order scheduling.
+[!include [banner](../includes/banner.md)]
 
-Before you can set up rresponsible maintenance workers, you must first set up the workers and maintenance worker groups that should be available for selection. Refer to the [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) section for a description on how to set up workers and worker groups.
+Responsible maintenance workers can be related to asset types, assets, functional locations, maintenance job type categories, maintenance job types, maintenance job type variants, and trades. They can be used on work orders and maintenance requests to indicate a preference about the maintenance workers who should be responsible for a work order. (However, those maintenance workers aren't necessarily the same workers who are scheduled to carry out the work order.) Use of this functionality is optional. For example, it can be used to select responsible workers or worker groups for specific work types or work areas.
 
-## Set up responsible workers
+During a work order lifecycle or a maintenance request lifecycle, responsible maintenance workers can be changed or updated. This change or update might be related to, for example, a change in the maintenance request lifecycle state or the work order lifecycle state.
 
-1. Click **Asset management** > **Setup** > **Workers** > **Responsible maintenance workers**.
-2. Click **New** to create a new record.
-3. Start by creating a "default" responsible worker or responsible maintenance worker worker group setup that has no selections in the **Job trade**, **Job variant**, **Job type**, etc. fields. You will only make a selection in the **Responsible maintenance worker group** field and/or the **Responsible maintenance worker** field. In the figure below, you see an example in the first record in which "Requests" is selected as responsible worker group.
+The setup on the **Responsible maintenance workers** page is *not* used during work order scheduling.
 
-[!NOTES]
->The default setup will be used during work order scheduling in case no other, more specific, combination matches the contents of the work order during work order scheduling.
+> [!NOTE]
+> In Asset Management, you can also set up *preferred* maintenance workers who might be allocated to work orders during work order scheduling.
 
->During creation of a maintenance request, when a responsible maintenance worker or responsible maintenance worker group is made available for selection in **All maintenance requests**, Asset Management goes through all responsible maintenance worker records to check for a possible match, always checking the most specific combination first. This means that, first, a possible match regarding **Trade** is checked. If no match is found, **Variant** is checked. If no match is found, **Job type** is checked, and so on. As you can see in the layout, this means that Asset Management checks each record from right to left for a match (**Trade**, then **Variant**, then **Job type**, **Job group**, **Functional location**, **Object**, and **Object type**) to find the most specific combination. If no match is found, the "default" record with no selections in those seven fields is used.
+Before you can set up responsible maintenance workers, you must set up the workers and maintenance worker groups that should be available for selection. For information about how to set up workers and maintenance worker groups, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).
 
-> In Asset Management, you can also set up preferred maintenance workers, who may be allocated on work orders during work order scheduling. 
+## Set up responsible maintenance workers
 
-The figure below shows a screenshot of the interface.
+1. Select **Asset management** \> **Setup** \> **Workers** \> **Responsible maintenance workers**.
+2. Select **New** to create a record.
+3. First create a default responsible maintenance worker or responsible maintenance worker group setup, where you set only the **Responsible maintenance worker group** field and/or the **Responsible worker** field. Leave the remaining fields blank. This default setup will be used during work order scheduling if no other, more specific combination matches the contents of the work order.
+
+    > [!NOTE]
+    > During creation of a maintenance request, when a responsible maintenance worker or responsible maintenance worker group is made available for selection on the **All maintenance requests** page, Asset Management goes through all responsible maintenance worker records to check for a possible match. It always checks the most specific combination first. In other words, Asset Management first checks for a match for the **Trade** field. If no match is found, it checks for a match for the **Maintenance job type variant** field. If no match is found, it checks for a match for the **Maintenance job type** field, and so on. As you can see in the layout of the page, this behavior means that, to find the most specific combination, Asset Management checks each record from right to left for a match (first **Trade**, then **Maintenance job type variant**, then **Maintenance job type**, then **Maintenance job type category**, then **Functional location**, then **Asset**, and finally **Asset type**). If no match is found, the default record that has no selections in those seven fields is used.
+
+The following illustration shows an example of the **Responsible maintenance workers** page.
 
 ![Figure 1](media/08-setup-for-requests.png)
-
-
