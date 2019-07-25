@@ -42,25 +42,31 @@ You must follow the following order of precedence and make sure that the initial
 
 The order of execution for Vendor is:
 
-    Vendor Group
-        Terms of payment
-            Payment day & lines
-            Payment schedule
-    Vendor payment method
- 
+```
+Vendor Group
+    Terms of payment
+        Payment day & lines
+        Payment schedule
+Vendor payment method
+```
+
 ## Customer (Organization)
 
 The order of execution for Customer is:
 
+```
 Customer Group
     Terms of payment
         Payment day & lines
         Payment 
 Customer payment method
- 
+```
+
 ## Contact (Person)
 
 The order of execution for Contact is:
 
+```
 Customer
 Vendor               
+```
