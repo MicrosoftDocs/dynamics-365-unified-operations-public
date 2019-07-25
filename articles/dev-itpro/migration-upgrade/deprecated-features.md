@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 07/18/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,11 +55,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are retiring tax updates for the U.S. Payroll functionality due to low usage and enhanced functionality offered via strategic integrations.  |
+| **Reason for deprecation/removal** | We are retiring tax updates for the US Payroll functionality due to low usage and enhanced functionality that is now offered via strategic integrations.  |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Payroll |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: We will no longer be offering tax updates to U.S. Payroll customers. Existing functionality will continue to exist "as-is" post support termination. The timeframe for the functionality to be deprecated is October 1, 2021. |
+| **Status**                         | Deprecated: By October 1, 2021, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, however updates or enhancements will no longer keep the functionality up to date. |
 
 
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
