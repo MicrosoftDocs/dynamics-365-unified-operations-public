@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: India
+title: India overview
 description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for India. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/03/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# India 
+# India overview
 
 [!include [banner](../includes/banner.md)]
 
