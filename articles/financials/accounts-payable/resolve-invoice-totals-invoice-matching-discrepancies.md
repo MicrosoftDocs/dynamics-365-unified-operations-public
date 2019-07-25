@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Resolve discrepancies during invoice totals matching
+title: Resolve discrepancies during invoice totals matching overview
 description: You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.
 author: abruer
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Resolve discrepancies during invoice totals matching
+# Resolve discrepancies during invoice totals matching overview
 
 [!include [banner](../includes/banner.md)]
 
