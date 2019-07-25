@@ -71,7 +71,7 @@ For more information about business events, see [Business events](../../dev-itpr
 > The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 ## Batch jobs single scheduler
-Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on batch tables and may increase throughput. This is enabled by default in Platform update 25.
+Improvements are made in the batch framework to optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on batch tables and may increase throughput. This is enabled by default in Platform update 25.
 
 ## Batch Jobs enhanced forms
 The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
