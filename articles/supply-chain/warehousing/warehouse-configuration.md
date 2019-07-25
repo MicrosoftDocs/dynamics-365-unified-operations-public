@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Warehouse configuration
+title: Warehouse configuration overview
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Warehouse configuration
+# Warehouse configuration overview
 
 [!include [banner](../includes/banner.md)]
 
