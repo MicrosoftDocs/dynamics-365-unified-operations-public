@@ -143,7 +143,7 @@ Note that both **PaymentNotes** and **DelimitedSequence** components are labelle
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 
-So, based on this setting, the populated to the generated message for each debtor payment **Ustrd** XML element will contain either text of payment notes or, when such text is blank – separated by comma invoice numbers used to settle this payment.
+Finally, based on this setting, the populated to the generated message for each debtor payment **Ustrd** XML element will contain either text of payment notes or, when such text is blank – separated by comma invoice numbers used to settle this payment.
 
 ### Basic syntax
 
