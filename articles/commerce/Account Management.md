@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Account manangement on ecommerce
+description: This topic describes how to create account manangement modules and pages on ecommerce
+author: anupamar-ms
+manager: BrendanS
+ms.date: 07/25/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  RetailOperations, RetailFunctionalityProfile
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: anupamr-ms
+ms.search.validFrom: 2019-07-25
+ms.dyn365.ops.version: 
+
+---
+
 # Account Management
 
  
