@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Czech Republic
+title: Czech Republic overview
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to the Czech Republic.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Czech Republic
+# Czech Republic overview
 
 [!include [banner](../includes/banner.md)]
 
