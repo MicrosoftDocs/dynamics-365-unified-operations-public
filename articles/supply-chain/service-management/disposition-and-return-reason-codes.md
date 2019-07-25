@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Disposition codes and return reason codes   
+title: Customer returns overview
 description: Create and use return reason codes and disposition codes to support the process for returning products.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Disposition codes and return reason codes 
+# Customer returns overview
 
 [!include [banner](../includes/banner.md)]
 
