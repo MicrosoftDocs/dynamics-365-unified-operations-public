@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Execution order for initial sychronization of Finance and Operations and Common Data Service
+# Execution order for initial sychronization of Finance and Operations and Common Data Service
 
 Before you use data integration, you must create the initial data required for customers, vendors and contacts. For example, if you want to create a new **Vendor group** item and set its **Terms of Payment** as **Net30**, then before you attempt to create the **Vendor group** item you need to make sure that **Net30** exists in both Finance and Operations and Common Data Service. (In the future, we will release a  dual-write platform functionality called **Initial Sync**. It will do a one-time data synchronization between Finance and Operations and Common Data Service as part of the dual-write setup.)
 
