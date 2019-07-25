@@ -58,18 +58,12 @@ You can update links by following these steps:
 + Navigate to the Finance and Operations environment.
 + Open Data Management.
 + Click on **Link to CDS for apps**.
-+ Select **all running mapping** and click **Stop**. 
-+ Select all mapping and click delete
++ Select all the running mappings and click **Stop**. 
++ Select all the mappings and click **Delete**.
 
-Note: Delete option will not appear if CustomerV3- Account template is selected (it’s older provisioned template and works with P2C solution, but since its globally released, it’s will be showing up under all templates) unselect it
-•	Now click Unlink environment
-•	Click Yes for confirmation
-•	To link new environment please follow steps from  step-by-step documentation here.
+    Note: The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
 
-Related Topics
-•	Company concept in Common Data Service
-•	Organization hierarchy on Common Data Service
-•	Integrated customer master
-•	Unified product master
-Feedback
- 
++ Click **Unlink environment**.
++ Click **Yes** for confirmation.
++ To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).
+
