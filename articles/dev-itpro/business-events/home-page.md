@@ -39,7 +39,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
+Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
