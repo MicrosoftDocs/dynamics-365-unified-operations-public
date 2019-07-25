@@ -444,6 +444,10 @@
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+          - name: Initial synchronization
+            href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
+          - name: Troubleshooting data integration
+            href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
           - name: Prospect to cash
