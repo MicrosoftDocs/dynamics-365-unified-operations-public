@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Japan
+title: Japan overview
 description: This topic provides an overview of functionality specific to Japan.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Japan
+# Japan overview
 
 [!include[banner](../includes/banner.md)]
 
