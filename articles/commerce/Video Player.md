@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title:Video Player
+title: Video Player
 description: This topic reviews setting up an e-Commerce page with the Video Player module.
-author: anupamar
-manager: brendans
+author: anupamar-ms
+manager: BrendanSullivanMSFT
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
