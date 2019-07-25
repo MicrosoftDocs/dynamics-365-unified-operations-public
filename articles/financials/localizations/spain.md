@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Spain
+title: Spain overview
 description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Spain. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Spain 
+# Spain overview
 
 [!include [banner](../includes/banner.md)]
 
