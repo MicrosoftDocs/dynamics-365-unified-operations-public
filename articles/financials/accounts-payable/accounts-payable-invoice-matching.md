@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounts payable invoice matching
+title: Accounts payable invoice matching overview
 description: Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 author: abruer
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Accounts payable invoice matching
+# Accounts payable invoice matching overview
 
 [!include [banner](../includes/banner.md)]
 
