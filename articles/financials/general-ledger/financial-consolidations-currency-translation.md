@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial consolidations and currency translation
+title: Financial consolidations and currency translation overview
 description: This topic describes financial consolidations and currency translation in General ledger.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.0.1
 
 ---
 
-# Financial consolidations and currency translation
+# Financial consolidations and currency translation overview
 
 [!include [banner](../includes/banner.md)]
 
