@@ -42,9 +42,9 @@ In Microsoft Dynamics 365 for Retail version 10.0 and earlier, retailers can pro
 By using linked refunds, retailers can greatly reduce risk by making sure that refunds are processed only to the card that was authorized during the original transaction. To help prevent unauthorized card balance transfers, the system can prompt cashiers to use the confirmed and approved card token to process refunds. By using the original mode of payment for refunds, retailers can help reduce their card authorization costs.
 
 ## Prerequisites
-[Payment method Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods) 
+[Payment method Setup](../payment-methods) 
 
-[Omni channel payments setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-channel-payments)
+[Omni channel payments setup](../omni-channel-payments)
 
 ### Additional setup
 
