@@ -3397,6 +3397,16 @@
         href: ../supply-chain/asset-management/objects/object-view.md
       - name: Asset attribute overview
         href: ../supply-chain/asset-management/objects/object-specification-overview.md
+    - name: Setup for maintenance requests
+      items:
+      - name: Maintenance requests
+        href: ../supply-chain/asset-management/setup-for-maintenance-requests/requests.md
+      - name: Maintenance request lifecycle states
+        href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-stages.md
+      - name: Maintenance request types
+        href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-types.md
+      - name: Responsible maintenance workers
+        href: ../supply-chain/asset-management/setup-for-maintenance-requests/responsible-workers.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
