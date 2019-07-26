@@ -33,20 +33,27 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
+Retailers consider product discovery as a primary tool for customer interaction across all retail channel. Product discoverability is easiest & quick way for Retailer’s customer to be able to discover the product via browsing thru categories, search & filtering.
 This topic explains the concepts that are control the display order for various merchandising entities. 
-## Concepts
-The custom "Display sort order" for various merchandising entities feature will empower the merchandising manager to be able to configure the custom sort order for various merchandising entities across all end-user clients including headquarters and call centers. 
+
+## Overview
+The existing support for sorting various merchandising related entities will be enhanced to better align with existing customer scenarios that are currently requiring extensions from our implementation partners. 
+
+Current implementation of the sort order for Categories in Navigation hierarchy are alphabetically sorted 
+
+The custom "Display sort order" for various merchandising entities feature will empower the merchandising manager to be able to configure the custom sort order for various merchandising entities across all end-user clients including headquarters and call centers.
 
 ### Control sort order for categories in the navigation hierarchy
 
-It has been 
+With this capability, Merchandising managers can control the order of categories and the order shall be reflected across all the clients including the back-office. 
+
+
 
 #### Note
-By default this feature is turned off - 
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview
+By default this feature is turned off - more about the [Feature management] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview)
 
 1.	Go to System administration > Workspaces > Feature management.
-2.	In the list, find and select the 'Enable merchn.
+2.	In the list, find and select the 'Enable display order for merchandising entities'.
 3.	Click Enable now.
 
 
