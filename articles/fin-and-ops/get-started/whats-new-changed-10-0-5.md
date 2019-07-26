@@ -46,7 +46,19 @@ On **Currecnies** page, click **Declension**. In the **Gender** field, select **
 
 For more information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms).
 
+## Cash Control (Public Sector)
 
+Cash control lets you define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. Accounts payable vendor invoices and General ledger advanced ledger entries are validated when they are created, edited, and posted. If transaction posting will cause the related cash account's balance to be reduced below the limit that is defined for the account, the user receives an error message and must change the account to continue.
+
+For more information, see [Cash Control](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/public-sector/cash-control).
+
+## Forecast position distribution (Public Sector)
+
+You can maintain financial dimension default templates for forecast positions by using the controls on the Financial dimensions FastTab of the Forecast position page. The grid in the upper part of the FastTab shows all the distribution lines together with their percentage. The lower part of the FastTab shows the forecast position's default dimensions.
+
+You can validate whether the default dimensions for a forecast position are correct for your organization's chart of accounts. For any forecast position, on the Forecast position page, select Validate on the Action Pane to determine whether the setup of financial dimensions for that forecast position is valid. This validation is quick and can help you identify errors before you generate a budget plan from a forecast position. You can also validate many forecast positions at the same time on the Forecast positions list page.
+
+For more information, see [Forecast position distribution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/public-sector/forecast-positions).
 
 ## Additional resources
 
