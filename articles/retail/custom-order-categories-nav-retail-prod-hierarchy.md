@@ -47,6 +47,29 @@ The custom "Display sort order" for various merchandising entities feature will 
 
 With this capability, Merchandising managers can control the order of categories and the order shall be reflected across all the clients including the back-office. 
 
+#### How to configure the display order for the categories in Retail product hierarchy? 
+1.	Go to Retail > Products and categories > Retail product hierarchy.
+1.	Click Edit category hierarchy.
+1.	Click Edit.
+1.	In the tree, expand 'ALL\Action Sports'.
+1.	In the tree, expand 'ALL\Team Sports'.
+1.	In the Display order field, enter a number. (This can be negative value too) 
+1.	In the tree, select 'ALL\Team Sports\Soccer'.
+1.	In the Display order field, enter a number.
+1.	In the tree, select 'ALL\Electronics'.
+1.	In the tree, expand 'ALL\Electronics'.
+1.	In the Display order field, enter a number.
+1.  Repeat this for any additional categories that you may want to control the order. 
+
+
+#### How to configure the display order for the categories in Channel navigation hierarchy? 
+
+
+Display order for channel navigation hierarchy is acknowleged in HQ across all forms - 
+
+####
+
+
 ![POS with Custom sorted categories](./media/POSChannelCategoriesCustomSorted.png)
 
 
