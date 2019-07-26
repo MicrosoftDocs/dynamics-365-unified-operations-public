@@ -33,21 +33,19 @@ ms.dyn365.ops.version: Version 7.0.0
 This topic explains how to create and assign an advanced rule structure to an account structure. This guide uses the USMF demo company.
 
 ## Create an advanced rule structure
-1. Go to **navigation pane > Modules > General ledger > Chart of accounts > Structures > Advanced rule structures**.
+1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Structures > Advanced rule structures**.
 2. Select **New** to open the drop dialog.
 3. In the **Advanced rule structure** field, type a name to describe the rule structure.
 4. Select **OK**.
 5. Select **Add segment**.
-6. In the list of segments, select a financial dimension.
-- For example, **Store**.  
+6. In the list of segments, select a financial dimension. For example, **Store**.  
 7. Select **Add segment**.
 8. Select **Activate**.
 
 ## Apply an advanced rule structure to an account structure
 1. Go to **navigation pane > Modules > General ledger > Chart of accounts > Structures > Configure account structures**.
 2. In the list, find and select the account structure you want to apply the advanced rule to.
-3. Select **Edit**.
-- You can also select **Advanced rules** and you will be prompted to put the account structure in **Draft mode**.  
+3. Select **Edit**. You can also select **Advanced rules** and you will be prompted to put the account structure in **Draft mode**.  
 4. Select **Advanced rules**.
 5. Select **New** to open the drop dialog.
 6. In the **Advanced rule** field, type a value.
