@@ -36,9 +36,11 @@ ms.search.validFrom: 2019-07-15
 
 If you are facing an issue or error with dual-write synchronization, you can inspect the errors in the trace log:
 
-+ Follow the [instructions](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) to enable Plugin trace. 
-+ Navigate to the Plug-in Trace log section.
-+ Click the type name **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** to display the error details.
+1. Before you can inspect the errors, you must enable plugin trace using the instructions in [Register plug-in](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) to enable Plugin trace. Now you can inspect the errors.
+2. Login to Dynamics 365 for Sales.
+3. Click on the Settings icon (a gear), and select **Advanced Settings**.
+4. In the **Settings** menu, choose **Customization > Plug-In Trace Log**.
+5. Click the type name **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** to display the error details.
 
 ## Check dual-write synchronization errors in Finance and Operations
 
