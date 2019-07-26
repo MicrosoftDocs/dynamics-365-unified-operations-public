@@ -34,8 +34,7 @@ This topic explains how to create a procurement catalog. This task would typical
 
 
 ## Ensure that a procurement category hierarchy exists
-1. Go to **navigation pane > Modules > Procurement and sourcing > Procurement categories**.
-- A procurement category hierarchy is available in the USMF demo data company and products have been added to the **Office machines/Computers** category. If you’re running this procedure as a task guide, you’ll need to unlock the guide if you want to browse through the category. If a hierarchy was not available, you’d create it by clicking **New**. This can only be done once.  
+1. Go to **navigation pane > Modules > Procurement and sourcing > Procurement categories**. A procurement category hierarchy is available in the USMF demo data company and products have been added to the **Office machines/Computers** category. If you’re running this procedure as a task guide, you’ll need to unlock the guide if you want to browse through the category. If a hierarchy was not available, you’d create it by clicking **New**. This can only be done once.  
 2. Close the page.
 
 ## Create a catalog
@@ -46,16 +45,17 @@ This topic explains how to create a procurement catalog. This task would typical
 5. In the tree, expand **CORP PROCUREMENT CATEGORIES**.
 6. In the tree, expand **OFFICE MACHINES**.
 7. In the tree, select **Computers**.
-- The products from the procurement category are displayed in the list. If you want to add a product to the category you need to do this on the **Procurement category hierarchy** page or on the **Item details** page.  
-- The **Default** update type determines whether new products that have been added to the procurement category hierarchy are immediately visible in the catalog. If the update type is set to **Dynamic**, changes are visible immediately. If the update type is **Static**, new products are only visible to people using the catalog after the catalog has been re-published. The **Publish** action is available on the Action Pane at the top of the page. If products are removed from the procurement category hierarchy, the change is immediately visible, regardless of the value in the **Default** update type field.  
+
+  - The products from the procurement category are displayed in the list. If you want to add a product to the category you need to do this on the **Procurement category hierarchy** page or on the **Item details** page.  
+  - The **Default** update type determines whether new products that have been added to the procurement category hierarchy are immediately visible in the catalog. If the update type is set to **Dynamic**, changes are visible immediately. If the update type is **Static**, new products are only visible to people using the catalog after the catalog has been re-published. The **Publish** action is available on the Action Pane at the top of the page. If products are removed from the procurement category hierarchy, the change is immediately visible, regardless of the value in the **Default** update type field.  
+
 8. On the Action Pane, select **Category navigation** and ensure that **Enable** is selected.
 9. Select **Activate catalog**.
 10. Close the page.
 
 ## Make the catalog visible
 1. Go to **navigation pane > Modules > Procurement and sourcing > Setup > Policies > Purchasing policies**.
-2. Select **Procurement Policy USMF**.
-- You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in. In the USMF demo data, the Admin user is connected to the worker called **Julia Funderburk**, and she orders products in USMF by default.  
+2. Select **Procurement Policy USMF**. You need to select the purchasing policy for the legal entity that the worker connected to your user profile is allowed to order products in. In the USMF demo data, the Admin user is connected to the worker called **Julia Funderburk**, and she orders products in USMF by default.  
 3. Select the catalog that you’ve just created.
 4. Select **OK**.
 
@@ -65,8 +65,7 @@ This topic explains how to create a procurement catalog. This task would typical
 3. In the **Name** field, type a value.
 4. Select **OK**.
 5. Select **Add products**.
-6. In the list, find and select the desired record.
-- You can use the category hierarchy on the left or the filter at the top of the list to filter the products.  
+6. In the list, find and select the desired record. You can use the category hierarchy on the left or the filter at the top of the list to filter the products.  
 7. Select **Add to lines**.
 8. Select **OK**.
 
