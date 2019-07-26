@@ -39,7 +39,7 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ### PDF renderer for candidate documents
 
-Attract users can now view candidate PDF attachments in the document viewer instead of downloading the attachments.
+Attract users can now view PDF attachments for candidates in the document viewer instead of downloading the attachments.
 
 ### Signing up for Attract user research group 
 
@@ -53,7 +53,7 @@ Changes described in this section apply to build number 8.1.2395.
 
 ### Entity support for custom fields in Common Data Service 
 
-With this release, Work calendar and Work calendar day now support custom fields in CDS.
+With this release, **Work calendar** and **Work calendar** day now support custom fields in Common Data Service.
 
 ### Restrict leave types in time-off requests
 
@@ -75,6 +75,6 @@ A new option will let managers view the performance of both their direct reports
 
 ### Region support for Canada and Southeast Asia
 
-We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent August 1, 2019. With this change, you can create environments in the Canadian and Asian regions and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to the these new supported regions.
