@@ -62,23 +62,21 @@ In the example below, employee 000724’s employment becomes active at the same 
 
 # Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
 
-The Data Management Framework, Excel Add In, Common Data Service and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** is in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
+The Data Management Framework, Excel Add-In, Common Data Service, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
  
-Date time data that is submitted via DMF, Excel, or CDS is assumed to be in UTC by the database. This can cause some confusion when the submitted date time value is not what displays in the Dynamics client because the user viewing the data doesn't have their user time zone option set to UTC. 
+**Date and Time** data that is submitted via DMF, Excel, or Common Data Service is assumed to be in UTC by the database. This can cause some confusion when the submitted **Date and Time** value doesn't display as expected because the user viewing the data doesn't have their user time zone  set to UTC. 
  
-The same thing can happen in reverse when data is exported. The date time data in the exported DMF entity can be different then what is displayed in the Dynamics client. 
+The same thing can happen in reverse when data is exported. The **Date and Time** data in the exported DMF entity can be different then what is displayed in the Dynamics client. 
  
-When using external sources like DMF to view or author data it is important to keep in mind that the date time values are by default considered to be in UTC regardless of the time zone of the user's computer or their current User time zone option setting. 
+When using external sources like DMF to view or author data, it is important to keep in mind that the **Date and Time** values are considered by default to be in UTC regardless of the time zone of the user's computer or their current user time zone settings. 
 
 ## Examples of the same record being displayed in different product areas 
 
 **Talent with user time zone set to UTC**
-Worker form
 
 [![Worker form](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Talent with user time zone set to GMT +12:00** 
-Worker form 
 
 [![Worker form](./media/worker-form4.png)](./media/worker-form4.png)
 
