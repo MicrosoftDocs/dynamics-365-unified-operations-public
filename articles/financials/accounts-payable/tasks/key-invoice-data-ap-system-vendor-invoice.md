@@ -43,9 +43,7 @@ This task guide will help you create a vendor invoice from a purchase order and 
 7. In the **Item number** field, click the drop-down button to open the lookup.
 8. Select an inventory item. For example, select item number 1000.
 9. Expand the **Line details** fastTab.
-10. Click the **Setup** tab.
-    
-    You can override the matching policy to use no matching, 2-way matching, or 3-way matching.  
+10. Click the **Setup** tab. You can override the matching policy to use no matching, 2-way matching, or 3-way matching.  
 11. On the Action Pane, click **Purchase**.
 12. Click **Confirm**.
 
@@ -68,23 +66,13 @@ This task guide will help you create a vendor invoice from a purchase order and 
 9. Click **Add line**.
 10. In the **Item number** field, click the drop-down button to open the lookup.
 11. In the list, find the installation charge item number. For example, S0001
-12. Select the installation charge item number.
-    
-    Note that matching has not been performed since you made the changes.  
+12. Select the installation charge item number. Note that matching has not been performed since you made the changes.  
 13. Click **Update match status**.
 14. On the Action Pane, click **Review**.
-15. Click **Matching details**.
-    
-    The new line with services does not need to be matched so the status stays "Not performed".  
-16. Select the product receipt for the inventory item that you received.
-    
-    The line with the product receipt was matched but there is a mismatch of quantity or price so it fails.  
-17. In the **Unit price** field, enter a number.
-    
-    Now that the unit price matches, the status is updated to Passed. If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.  
+15. Click **Matching details**. The new line with services does not need to be matched so the status stays "Not performed".  
+16. Select the product receipt for the inventory item that you received. The line with the product receipt was matched but there is a mismatch of quantity or price so it fails.  
+17. In the **Unit price** field, enter a number. Now that the unit price matches, the status is updated to Passed. If your policy allows discrepancies or if matching is only a warning, you can still post the invoice.  
 18. Close the page.
 19. Click **Post**.
-20. Close the form.
-    
-    Note that the purchase order is no longer listed as received but not invoiced.  
+20. Close the form. Note that the purchase order is no longer listed as received but not invoiced.  
 
