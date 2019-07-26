@@ -52,14 +52,14 @@ Maintenance request lifecycle states define the stages that a request can go thr
 6. Set he **Set actual end** option to **Yes** if an actual end date and time should automatically be entered on a maintenance request that is in this lifecycle state.
 7. Set the **Create work order** option to **Yes** if a work order can be created from a maintenance request that is in this lifecycle state.
 8. Set the **Delete** option to **Yes** if a maintenance request can be deleted while it's in this lifecycle state.
-9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair. (For more information, see [Manage requests](../manage-requests/requests.md).) Set the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
+9. On the **Update** FastTab, the **Inbound** and **Outbound** options in the **Asset** section are relevant if you use depot repair.cSet the appropriate option to **Yes** if the asset lifecycle state of assets that are selected on a maintenance request should automatically be updated to **Inbound** or **Outbound** when the maintenance request lifecycle state of that maintenance request is set to **Inbound** or **Outbound**.
 
 The follow illustration shows an example of the **Maintenance request lifecycle states** page.
 
 ![Figure 1](media/02-setup-for-requests.png)
 
 > [!NOTE]
-> Maintenance request lifecycle states, lifecycle state groups, and types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and types. For general information about lifecycle state group, type, and lifecycle state relations, see [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md).
+> Maintenance request lifecycle states, lifecycle state groups, and types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and types. 
 
 ## Set up maintenance request lifecycle models
 
