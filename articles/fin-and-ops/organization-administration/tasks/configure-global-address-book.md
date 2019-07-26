@@ -46,8 +46,6 @@ The demo data company used to create this task is USMF. This task is intended fo
 10. In the **Prospect** field, select an option.
 11. In the **Competitor** field, select an option.
 12. Click the **Private location security** tab.
-13. In the list, find and select the desired record.
-    
-    Press the Shift key to select multiple roles to add to the **Selected roles** pane and then click the arrow to add the selected roles.  
+13. In the list, find and select the desired record. Press the Shift key to select multiple roles to add to the **Selected roles** pane and then click the arrow to add the selected roles.  
 14. Click **Save**.
 
