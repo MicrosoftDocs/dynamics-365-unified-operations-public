@@ -5,7 +5,7 @@ title: Maintenance request types
 description: This topic explains how to set up a maintenance request types in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance request types
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 Maintenance request types are used to categorize maintenance requests. For example, you might have maintenance request types that are related to preventive maintenance and corrective maintenance. Or you might have a special maintenance request type that is used to manage repair of assets (depot repair).
 
