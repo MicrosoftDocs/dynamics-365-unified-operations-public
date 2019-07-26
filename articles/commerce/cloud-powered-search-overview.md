@@ -12,6 +12,8 @@ With Dynamics 365 for Commerce, search experience shall have following improved 
 
 + **Browse and search:** Search relevance and performance is key to our omnichannel experience, as product discovery relies primarily on search f+or information retrieval and content navigation. An effective and efficient search helps increase conversion.
 
+![Search landing] (./media/Search Landing.png)
+
 + **Refiners/faceted navigation:** Faceted navigation helps users browse for content more easily by filtering on refiners that are tied to terms in a term set. By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages.
 
 + **Immersive auto-suggest:** Current auto-suggest shows only keywords that trigger search for the matching keyword. With new enhancements, users will be able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
