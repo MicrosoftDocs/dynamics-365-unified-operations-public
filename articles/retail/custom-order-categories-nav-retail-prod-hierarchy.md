@@ -47,6 +47,7 @@ The custom "Display sort order" for various merchandising entities feature will 
 
 With this capability, Merchandising managers can control the order of categories and the order shall be reflected across all the clients including the back-office. 
 
+![POS with Custom sorted categories](./media/POSChannelCategoriesCustomSorted.png)
 
 
 #### Note
@@ -56,6 +57,6 @@ By default this feature is turned off - more about the [Feature management] (htt
 2.	In the list, find and select the 'Enable display order for merchandising entities'.
 3.	Click Enable now.
 
-![Enable from feature management](./media/ConfirmationFeatureEnabledForCustomOrderingMerchEntities.png)
+![Enable merchandising display order from feature management](./media/ConfirmationFeatureEnabledForCustomOrderingMerchEntities.png)
 
 ### 
