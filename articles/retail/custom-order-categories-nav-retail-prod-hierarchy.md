@@ -48,17 +48,13 @@ The custom "Display sort order" for various merchandising entities feature will 
 With this capability, Merchandising managers can control the order of categories and the order shall be reflected across all the clients including the back-office. 
 
 ### Configure the display order for the categories in Retail product hierarchy 
+Assuming, you have the 'Demo data' set up in your environment
 1.	Go to Retail > Products and categories > Retail product hierarchy.
 1.	Click Edit category hierarchy.
 1.	Click Edit.
 1.	In the tree, expand 'ALL\Action Sports'.
 1.	In the tree, expand 'ALL\Team Sports'.
 1.	In the Display order field, enter a number. (This can be negative value too) 
-1.	In the tree, select 'ALL\Team Sports\Soccer'.
-1.	In the Display order field, enter a number.
-1.	In the tree, select 'ALL\Electronics'.
-1.	In the tree, expand 'ALL\Electronics'.
-1.	In the Display order field, enter a number.
 1.  Repeat this for any additional categories that you may want to control the order. 
 
 #### Display order for channel navigation hierarchy is acknowleged in HQ for Retail product hierarchy and Released products by category
@@ -69,29 +65,20 @@ With this capability, Merchandising managers can control the order of categories
 
 
 ### Configure the display order for the categories in Channel navigation hierarchy
+Assuming, you have the 'Demo data' set up in your environment
 1.	Go to Retail > Products and categories > Channel navigation categories.
 1.	In the list, find and select the Fashion navigation hierarchy
 1.	Click Edit category hierarchy.
 1.	Click Edit.
-1.	In the tree, select 'Fashion\Womenswear'.
-1.	In the tree, expand 'Fashion\Womenswear'.
-1.	In the Display order field, enter a number.
-1.	Click Close.
-1.	In the tree, select 'Fashion\Womenswear\Coats'.
 1.	In the tree, select 'Fashion\Womenswear\Womens Shoes'.
 1.	In the Display order field, enter a number.
 1.	In the tree, select 'Fashion\Womenswear\Tops'.
-1.	In the Display order field, enter a number.
-1.	In the tree, select 'Fashion\Womenswear\Sweaters'.
-1.	In the Display order field, enter a number.
-1.	In the tree, expand 'Fashion\Menswear'.
+1.	Likewise, you can define the sort order for the sub-categories. 
+1.  In the tree, expand 'Fashion\Menswear'.
 1.	In the tree, select 'Fashion\Menswear\Casual Shirts'.
+1.	In the Display order field, enter a number.
 1.	In the tree, select 'Fashion\Menswear\Coats & Jackets'.
 1.	In the Display order field, enter a number.
-1.	In the tree, select 'Fashion\Menswear\Mens Jeans'.
-1.	In the Display order field, enter a number.
-1.	In the tree, expand 'Fashion\Fashion Accessories'.
-1.  In the Display order field, enter a number.
 1.  Continue this for every category you may want to control the order.
 
 #### Display order for channel navigation hierarchy is acknowleged in HQ, Catalog, & Retail Channels.
