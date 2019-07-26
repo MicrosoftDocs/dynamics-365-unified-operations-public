@@ -48,7 +48,9 @@ After your organization has purchased a subscription to Finance and Operations, 
 7. The Tenant Administrator is assigned the Project Owner to the provisioned Implementation Project. As a final step, the Tenant Administrator must add additional organization and/or partner team members who will be participating in the Dynamics 365 for Finance and Operations implementation. This is performed in LCS Project User Management, selected from the LCS Implementation Project menu.
 
    ![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
-   
+   > [!NOTE]
+   > If the Tenant Administrator will not be a participant in the Dynamics 365 for Finance and Operations implementation, an additional Project Owner must be assigned to the Implementation Project.
+
    For an overview of the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
 ## LCS implementation project workspace
