@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a development environment
-description: This topic demonstrates how to set up an e-Commerce development environment for Dynamics 365 for Commerce. 
+description: This topic explains how to set up a development environment for Microsoft Dynamics 365 for Commerce.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -30,101 +30,112 @@ ms.dyn365.ops.version:
 ---
 # Set up a development environment
 
-Setting up a development environment for Dynamics 365 for Commerce involves installing three freely available tools--Visual Studio Code, Node.js, and Yarn--and installing the Dynamics 365 e-Commerce SDK. The order in which you install the tools is not important.
+To set up a development environment for Microsoft Dynamics 365 for Commerce, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 e-Commerce software development kit (SDK). You can install these tools in any order.
 
-## Instal Visual Studio Code
+## Install Visual Studio Code
 
-We recommend using a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor which runs on your Windows desktop. It comes with built in support for JavaScript, TypeScript, and Node.js.
+We recommend that you use a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your Microsoft Windows desktop. It has built-in support for JavaScript, TypeScript, and Node.js.
 
+Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following illustration.
 
-Go to the [Visual Studio Code site](https://code.visualstudio.com) and download the latest build. When the installation is complete, Visual Studio Code will automatically launch and should look similar to the image below.
+![Visual Studio Code](media/setup-vs-code.png)
 
-![Installing Visual Studio Code](media/setup-vs-code.png)
+## Install Node.js
 
-## Instal Node.js
+Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
 
-Node.js is a JavaScript runtime built on [Chrome’s V8 JavaScript Engine](https://v8.dev/).
+Go to the [Node.js site](https://nodejs.org), and download and install the latest build (Long Term Support \[LTS\]).
 
-Go to the [Node JS site](https://nodejs.org and download) and install the latest build (LTS).
+If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
 
-If you rely on other versions of node being installed for other projects, we recommend that you look into using [Node Version Manager (nvm)](https://github.com/creationix/nvm) to ensure each version runs in their own isolated environment.
+## Install Yarn
 
-## Installing Yarn
+Yarn is a dependency management tool that will help guarantee that you have all the latest packages for your e-Commerce extensibility needs.
 
-Yarn is a dependency management tool that will ensure you have all the latest packages needed for your Dynamics 365 e-Commerce extensibility needs.
+Go to the [Yarn site](https://yarnpkg.com), and download and install the latest stable build.
 
-Navigate to the [Yarn site](https://yarnpkg.com) to download and install the latest stable build.
+## Install the SDK
 
-## Installing the SDK 
+The SDK provides everything that you require to extend your e-Commerce site. It even lets you create new modules, data actions, and themes.
 
-The SDK will give you everything you need to extend your e-Commerce site including the ability to create new modules, data actions, and themes.  
+The SDK configuration package is available through the private, read-only [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
 
-The SDK configuration package is available through the following private read-only GitHub repository: [Project.Rushmore](https://github.com/Microsoft/Project.Rushmore). Download or clone the repo to a local folder on your development machine. The complete SDK and Yarn will not be downloaded and installed until you run the 'yarn' command (see the section below on dowloading SDK dependencies).
+> [!NOTE]
+> The whole SDK and Yarn won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
 
-If you chose to clone the repo, you can remove the .git folder (hidden directory under the root) to unlink, since you'll be using Yarn to pull down updated dependencies.
+If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 
-We reccommend that you use a source code repository to manage your configuration changes. There are many options you can use, including [Git](https://git-scm.com/downloads).
+We recommend that you use a source code repository to manage your configuration changes. Many options are available, such as [Git](https://git-scm.com/downloads).
 
 ## Download SDK dependencies
 
-To download the SDK dependency packages, do the following:
-1. From a command prompt, navigate to the root folder of your e-Commerce SDK (c:\repos\myEcommerceSite in the example below).
-1. Run the `yarn` command to grab all the latest dependency packages needed.
-    * This step can take several minutes to complete and should be done after any update to packages.json:
+To download the SDK dependency packages, follow these steps.
+
+1. At a command prompt, go to the root folder of the e-Commerce SDK (**c:\\repos\\MyEcommerceSite** in the following example).
+2. To get all the latest dependency packages that are required, run the **yarn** command.
+
+    > [!IMPORTANT]
+    > This step should be done after you've completed any update to the packages.json file.
+
     ```
     c:\repos\MyEcommerceSite>yarn
     ```
 
+    This command can take several minutes to run.
+
 ## Run the app
 
-To run the app, do the following:
-1. Start the app with `yarn start`.
-    * This step will take several seconds to complete. When complete, you will see an output indicating the server has started, and the allocated port number (default 4000).
-    
+To run the app, follow these steps.
+
+1. To open the app, run the **yarn start** command.
+
     ```
     c:\repos\MyEcommerceSite>yarn start
     ```
-    
-1. To test that the app is running successfully, launch the below pages in a browser:
-    * http://localhost:4000/version
-    * http://localhost:4000/?mock=default-page
-    
-1. To stop the app, in the command prompt hit Ctrl-c twice.
+
+    This command will take several seconds to run. When it's completed, you will see output that indicates that the server has been started. This output will also show the allocated port number (**4000**, by default).
+
+2. To test that the app is running correctly, open the following URLs in a web browser:
+
+    * `http://localhost:4000/version`
+    * `http://localhost:4000/?mock=default-page`
+
+3. To close the app, at the command prompt, press **Ctrl+C** two times.
 
 ## Create a new module
 
-To add a new module called `campaignBanner`, run the `yarn d365 add-module MODULE_NAME` command. 
-
-Example:
+To add a new module that is named **campaignBanner**, run the **yarn d365 add-module MODULE_NAME** command. Here is an example.
 
 ```
 c:\repos\MyEcommerceSite>yarn d365 add-module campaignBanner
 ```
 
-This can take up to a minute to complete and will add a new module under `\src\modules\campaignBanner`.
+This command can take up to a minute. It adds a new module under \\src\\modules\\campaignBanner.
 
 ## Modify an existing core module
 
-There are several available core modules that can be modified, such as alert, banner, and hero.
+Several of the available core modules can be modified, such as the alert, banner, and hero modules.
 
-To modify the `hero` module, run the `yarn d365 modify STARTER_KIT_MODULE` command to pull down the source code:
+For example, to modify the hero module, run the **yarn d365 modify STARTER\_KIT\_MODULE** command to pull down the source code.
+
 ```
 c:\repos\MyEcommerceSite>yarn d365 modify hero
 ```
 
-You will find the module under `\src\modules\hero`.
+You can find the hero module under \\src\\modules\\hero.
 
 ## Preview modules
 
-To view a specific module rendering locally in a browser, such as `campaignBanner`, do the following.
+To preview the rendering of a specific module (for example, campaignBanner) in a local web browser, follow these steps.
 
-1. Start the app from a command prompt with `yarn start`:
-    
+1. At a command prompt, open the app by running the **yarn start** command.
+
     ```
     c:\repos\MyEcommerceSite>yarn start
     ```
 
-2. Launch the following pages in a browser (notice the module name in the query string parameter "type=MODULE_NAME"):
-    * http://localhost:4000/modules?type=campaignBanner
-    * http://localhost:4000/modules?type=hero
-    * http://localhost:4000/modules?type=banner
+2. Open the following URLs in a web browser. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
+
+    * `http://localhost:4000/modules?type=campaignBanner`
+    * `http://localhost:4000/modules?type=hero`
+    * `http://localhost:4000/modules?type=banner`
