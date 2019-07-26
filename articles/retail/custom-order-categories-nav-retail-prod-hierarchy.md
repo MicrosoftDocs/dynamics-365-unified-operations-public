@@ -56,6 +56,6 @@ By default this feature is turned off - more about the [Feature management] (htt
 2.	In the list, find and select the 'Enable display order for merchandising entities'.
 3.	Click Enable now.
 
-![Enable from feature management](articles/retail/media/ConfirmationFeatureEnabledForCustomOrderingMerchEntities.png)
+![Enable from feature management](./media/ConfirmationFeatureEnabledForCustomOrderingMerchEntities.png)
 
 ### 
