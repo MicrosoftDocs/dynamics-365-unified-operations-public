@@ -102,3 +102,8 @@ A customer comes to return an item that was purchased by using multiple credit c
 When the cashier selects a credit card authorization, the payment refund is processed. If more must be refunded, the current transaction screen shows the remaining amount. When the cashier processes the payment refund for this amount, the remaining credit card authorizations are shown. This process continues until there is no remaining amount that must be refunded.
 
 After the full amount is successfully refunded, the cashier can complete the transaction, and a receipt can be printed as configured.
+
+## Related topics
+
+- [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
