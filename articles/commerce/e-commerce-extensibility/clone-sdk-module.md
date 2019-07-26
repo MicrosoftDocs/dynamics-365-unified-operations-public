@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Modify a Starter Kit module
-description: The Dynamics 365 for Commerce e-Commerce SDK includes a set of starter kit modules for use on an e-Commerce site.
+title: System requirements for e-Commerce developer environments
+description: This topic lists the system requirements for setting up a Microsoft Dynamic 365 for Commerce e-Commerce developer extensibility environment.
 author: SamJarawan
-manager: annbe
+manager: JeffBl
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -28,27 +28,25 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# Modify a Starter Kit module
+# System requirements for e-Commerce developer environments
 
-The Dynamics 365 for Commerce e-Commerce SDK includes a set of starter kit modules for use on an e-Commerce site. These modules can't be modified, but they can be cloned into a new module and then changed.
+This topic lists the system requirements for setting up a Microsoft Dynamic 365 for Commerce e-Commerce developer extensibility environment. Before you install the extensibility software development kit (SDK) and tools (if you plan to install them), you should verify that the system that you're working with meets or exceeds the minimum hardware and software requirements.
 
-To clone a module and change it, use the CLI command `yarn msdyn365 clone SDK_MODULE_NAME NEW_MODULE_NAME`, where `SDK_MODULE_NAME` is the name of the module to modify and `NEW_MODULE_NAME` is the name of the new module. This will add the modules source code to the `/src/modules/` directory and pull in any required dependencies for the module.
+## Operating systems
 
-Below is an example to modify the **hero** SDK module:
-```
-yarn msdyn365 clone hero heroV2
-```
+An e-Commerce extensibility environment requires Windows 10 (the latest publicly available version).
 
-Modifying the module could take a minute or two, as it pulls down all the dependencies. When complete, you can find the new module in the `\src\modules\` directory.
+## Memory and hard drive requirements
 
-## Previewing a module
-To view the module rendered locally in a browser:
+At least eight gigabytes (GB) of RAM are recommended.
 
-1. Start the app from a command prompt, navigate to your root SDK folder, and run `yarn start`:
-    ```
-    c:\repos\MyEcommerceSite\yarn start
-    ```
-1. Launch the following pages in a browser. Notice the module name in the query string parameter "type=MODULE_NAME":
-    * https://localhost:4000/modules?type=heroV2
+At least 20 GB of free hard drive space are recommended to run an e-Commerce extensibility environment.
 
-You can now modify the module code as required.
+## Supported web browsers
+
+An e-Commerce extensibility environment can preview customizations in any of the following web browsers:
+
+* Google Chrome (up to the current version minus 1)
+* Internet Explorer 11
+* Mozilla Firefox (up to the current version minus 1)
+* Microsoft Edge (up to the current version minus 1)
