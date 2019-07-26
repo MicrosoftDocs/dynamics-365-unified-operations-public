@@ -5,7 +5,7 @@ title: Maintenance request lifecycle states
 description: This topic describes how to set up maintenance request lifecycle states in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance request states
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
 
 Maintenance request lifecycle states define the stages that a request can go through. Examples include **Created**, **Active**, and **Ended**. When a maintenance request is converted to a work order, the maintenance request lifecycle state should be updated to **Ended** or **Closed** to indicate that the maintenance request is no longer active. On the **All maintenance requests** list page, you can view all maintenance requests, regardless of their lifecycle state.
 
