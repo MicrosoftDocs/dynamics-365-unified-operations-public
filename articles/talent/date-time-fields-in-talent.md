@@ -60,7 +60,7 @@ In the example below, employee 000724’s employment becomes active at the same 
 
 [![Worker form](./media/worker-form2.png)](./media/worker-form2.png)
 
-# Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
+## Date and Time data in Data Management Framework, Excel, Common Data Service, and Power BI 
 
 The Data Management Framework, Excel Add-In, Common Data Service, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust **Date and Time** data to the time zone of the user, all **Date and Time** values are in UTC, which can lead to some incorrect assumptions when entering or viewing data.  
  
