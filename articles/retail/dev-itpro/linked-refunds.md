@@ -42,13 +42,13 @@ In Microsoft Dynamics 365 for Retail version 10.0 and earlier, retailers can pro
 By using linked refunds, retailers can greatly reduce risk by making sure that refunds are processed only to the card that was authorized during the original transaction. To help prevent unauthorized card balance transfers, the system can prompt cashiers to use the confirmed and approved card token to process refunds. By using the original mode of payment for refunds, retailers can help reduce their card authorization costs.
 
 ## Prerequisites
-[Payment method Setup](../payment-methods) 
+[Payment method Setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/payment-methods) 
 
-[Omni channel payments setup](../omni-channel-payments)
+[Omni channel payments setup](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/omni-channel-payments)
 
 ### Additional setup
 
-Customer who aren't using the out-of-box implementation of the Adeyn Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
@@ -60,9 +60,7 @@ To turn on the linked refunds functionality, go to **Retail \> Headquarters setu
 
 When you turn on the omni-channel payments functionality, you change the business process flow for calculating shipping charges and other charges, and for adding those charges to point of sale (POS) sales. Therefore, make sure that you test and train your employees before you turn on this functionality.
 
-When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Retail Modern POS \[MPOS\]) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. However, for call center, MPOS, and e-Commerce applications will continue to have the same behavior that they have historically had with regard to manual entry of card numbers for payment.
-
-
+When the omni-channel payments functionality is turned on, the card payment tokens that are used in one channel (for example, a call center or Retail Modern POS \[MPOS\]) will be available in all channels that are set up for the retailer. For POS applications, the linked refunds functionality will also be turned on. For call center, MPOS, and e-Commerce applications, customers can still continue to have the same behavior that they have historically had with regard to manual entry of card numbers for payment.
 
 ### Supported flows
 
@@ -73,29 +71,27 @@ Cashiers can process a refund to the card that was used during the original tran
  
 ### Unsupported flows
 
-- Linked refunds with gift cards
-- Linked refunds with loyalty cards
-- Exchange orders support
+- Linked refunds for transactions that use gift cards
+- Linked refunds for transactions that use loyalty cards
+- Linked refunds for exchange orders
 - Multiple return orders in the same transaction
 - Returns without a receipt or customer account details
 
-
-
 ## Use case examples
 
-This section presents examples of use cases to help you understand the configuration and use of linked refunds and payment authorizations in the context of a customer order or a return where a receipt is presented. These examples show the behavior of the application when the **Omni-channel payment** parameter has been turned on.
+This section presents examples of use cases to help you understand the configuration and use of linked refunds and payment authorizations in the context of a customer order or a return where a receipt is presented. These examples show the behavior of the application when the **Omni-channel payments** parameter has been turned on.
 
 ### Customer account–based or receipt-based return that has a single card authorization
 
-A customer comes to return an item that was purchased by using a single credit card. The customer provides a receipt, and the return is being made within the allowed period for returns. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by using any payment method button selected, the existing credit card authorization is shown.
+A customer comes to return an item that was purchased by using a single credit card. The customer provides a receipt, and the return is being made within the allowed period for returns. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by selecting the button for any payment method, the existing credit card authorization is shown.
 
 ![Single card authorization](media/LinkedRefundsSingleAuthorization.jpg)
 
-When the cashier selects the credit card authorization, the payment refund is processed, and the transaction end screen appears. If a receipt printing is configured, the cashier is prompted to print a receipt.
+When the cashier selects the credit card authorization, the payment refund is processed, and the **Transaction end** screen appears. If a receipt printing is configured, the cashier is prompted to print a receipt.
 
 ### Customer account–based or receipt-based return that has multiple card authorizations
 
-A customer comes to return an item that was purchased by using multiple credit cards. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by using any payment method button selected, all the existing credit card authorizations are shown.
+A customer comes to return an item that was purchased by using multiple credit cards. When the cashier scans the receipt, the item for return is processed. When the cashier processes the payment refund by selecting the button for any payment method, all the existing credit card authorizations are shown.
 
 ![Multiple card authorizations](media/LinkedRefundsMultipleAuthorization.jpg)
 
