@@ -46,6 +46,6 @@ The procedure uses the Accountant role and demo data for the USMF legal entity.
 10. In the **Quantity** field, enter a number. The total cost will have no impact on the value of the fixed asset and is for tracking and informational purposes only. If the cost will be capitalized, then a write-up adjustment transaction must be posted separately.  
 11. Click the **General** tab.
 
-    * Set **Increases service life** to 'Yes' if the addition increases the service life of the asset.  
+    * Set **Increases service life** to **Yes** if the addition increases the service life of the asset.  
     * This field is informational only. To increase the service life, modify the Service life on the Value models and/or Depreciation books for the asset.  
 
