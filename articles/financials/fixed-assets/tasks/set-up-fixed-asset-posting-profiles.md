@@ -35,32 +35,20 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 1. In the Navigation pane, go to **Modules > Fixed assets > Setup > Fixed asset posting profiles**.
 2. Click **New**.
 3. In the **Posting profile** field, type a value.
-4. In the **Description** field, type a value.
-    
-    You will need to create a posting profile for each fixed asset transaction type you will be using when working with fixed assets. This task guide will start with the Acquisition transaction type.  
+4. In the **Description** field, type a value. You will need to create a posting profile for each fixed asset transaction type you will be using when working with fixed assets. This task guide will start with the Acquisition transaction type.  
 5. In the toolbar, click **Add**.
-6. In the **Book** field, enter or select a value.
-    
-    The **Groupings** field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group). For this task guide, leave the value set to “All” to apply to all fixed assets with the specified Book.  
-7. In the **Main account** field, specify the desired values.
-    
-    For acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
-8. In the drop-down menu under the **Ledger accounts** fastTab, select 'Acquisition adjustment'.
-    
-    For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
+6. In the **Book** field, enter or select a value. The **Groupings** field allows you to define the posting profile down to the Table (one account set up for each fixed asset) or Group (one account set up for each fixed asset group). For this task guide, leave the value set to “All” to apply to all fixed assets with the specified Book.  
+7. In the **Main account** field, specify the desired values. For acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
+8. In the drop-down menu under the **Ledger accounts** fastTab, select 'Acquisition adjustment'. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
 9. Click **Add**.
 10. In the **Book** field, enter or select a value.
-11. In the **Main account** field, specify the desired values.
-    
-    For acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
+11. In the **Main account** field, specify the desired values. For acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
 12. In the drop-down menu under the **Ledger accounts** fastTab, select 'Depreciation'.
 13. Click **Add**.
 14. In the **Book** field, enter or select a value.
 15. In the **Main account** field, specify the desired values.
 16. In the **Offset account** field, specify the desired values.
-17. In the drop-down menu under the **Ledger accounts** fastTab, select 'Depreciation adjustment'.
-    
-    For depreciation adjustment transactions, we will use the same accounts as used for Depreciation transactions.  
+17. In the drop-down menu under the **Ledger accounts** fastTab, select 'Depreciation adjustment'. For depreciation adjustment transactions, we will use the same accounts as used for Depreciation transactions.  
 18. Click **Add**.
 19. In the **Book** field, enter or select a value.
 20. In the **Main account** field, specify the desired values.
@@ -68,20 +56,12 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 22. In the drop-down menu under the **Ledger accounts** fastTab, select 'Disposal - sale'.
 23. Click **Add**.
 24. In the **Book** field, enter or select a value.
-25. In the **Main account** field, specify the desired values.
-    
-    For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.  
-26. IIn the drop-down menu under the **Ledger accounts** fastTab, select 'Disposal - scrap'.
-    
-    Use the same accounts for 'Disposal sale' and 'Disposal scrap'.  
+25. In the **Main account** field, specify the desired values. For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.  
+26. In the drop-down menu under the **Ledger accounts** fastTab, select 'Disposal - scrap'. Use the same accounts for 'Disposal sale' and 'Disposal scrap'.  
 27. Click **Add**.
 28. In the **Book** field, enter or select a value.
-29. In the **Main account** field, specify the desired values.
-    
-    For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.  
-30. Expand the **Disposal** fastTab.
-    
-    You must set up disposal posting profiles for both sale and scrap.  We will start with disposal sale transactions.  
+29. In the **Main account** field, specify the desired values. For disposals, you can enter an offset account or leave it blank to be filled in for the specific transaction.  
+30. Expand the **Disposal** fastTab. You must set up disposal posting profiles for both sale and scrap.  We will start with disposal sale transactions.  
 31. Click **Add**.
 32. In the **Book** field, enter or select a value.
 33. In the **Post value** field, select 'Acquisition value'.
@@ -91,8 +71,7 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 35. In the **Offset account** field, specify the desired values.
 36. Click **Add**.
 37. In the **Book** field, enter or select a value.
-    
-    In the **Post value** field, select 'Depreciation (prior years)'.  
+38. In the **Post value** field, select 'Depreciation (prior years)'.  
 38. In the **Main account** field, specify the desired values.
 39. In the **Offset account** field, specify the desired values.
 40. Click **Add**.
@@ -123,8 +102,7 @@ This task guide will set up Fixed asset posting profiles.  It uses the Accountan
 65. In the **Offset account** field, specify the desired values.
 66. Click **Add**.
 67. In the **Book** field, enter or select a value.
-    
-    In **Post value** field, select 'Depreciation (prior years)'.  
+67. In **Post value** field, select 'Depreciation (prior years)'.  
 68. In the **Main account** field, specify the desired values.
 69. In the **Offset account** field, specify the desired values.
 70. Click **Add**.
