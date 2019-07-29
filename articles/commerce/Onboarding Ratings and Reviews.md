@@ -44,9 +44,10 @@ Lifecycle Services (LCS) is an administration portal that C1 uses to manage�
   
 ## Steps to opt in for Ratings and Reviews 
   
-  1. Go through [Deploy a new e-Commerce site](https://docs.microsoft.com/en-us/dynamics365/) process. 
-  2. In other settings, select Yes for "Enable Ratings and Reviews service" 
-  3. Completed eCommerce initialization process. 
+	1. Go through [Deploy a new e-Commerce site](https://docs.microsoft.com/en-us/dynamics365/) process. 
+	2. In other settings, select Yes for "Enable Ratings and Reviews service" 
+	3. Provide Azure Active Directory Security Group which includes moderators in "AAD Security Group for Ratings and Reviews Moderation (Security Group Object ID)" field. 
+ 4. Complete eCommerce initialization process. 
 
 ![Enabling Ratings and Reviews service](media/LCS_RnR_Preference.png) 
 
