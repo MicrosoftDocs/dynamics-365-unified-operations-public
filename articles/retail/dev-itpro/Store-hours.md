@@ -9,10 +9,20 @@ Retailers can now create and manage their store hours in Retail AX Headquarters 
 ## How to use the store hours feature
 This feature is only available from Dynamics 365 Version 8.1.2 and latter
 
+This configuration page is in AX Headquarters, **Retail** -> **Channel Setup** -> **Store hours**.
+
 When the holiday and store hours are known, the admin can set the store hours for the whole year or to an even longer schedule.
 
-![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template") 
+The First step is to create a **Store hours template** -> Click +**New**  (If you have an exisiting **Store hours template**, it will be listed on the left pane) 
 
+![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template")  
+
+After a Template is created or selected, user needs to define the period of the date range. 
+1. If the store hours are constant and do not change - then select 'End Date' = Never ends. 
+2. If the store hours are for a specific month/week/day - set the 'Start Date' & 'End Date'
+3. Users can create mutliple templates with overlapping 'start Date' & 'End Date' - different store hours for stores in different time-zones. 
+
+The next step, is to associate the 'Store hours' template to mutliple stores, 
 This calendar is now made available for the different store or store groups. The calendar is set for all the stores and should be visible in the POS for reference.
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
