@@ -39,7 +39,6 @@ This topic describes features that are either new or changed in Microsoft Dynami
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ### Coming soon in Attract
-
 #### Job approvals appear on the home page
 
 Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which shows the job ID, the job title, other approvers, and the date when the job was assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which shows the approvers who must still approve the submitted job.
