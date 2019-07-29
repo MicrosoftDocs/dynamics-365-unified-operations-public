@@ -49,7 +49,7 @@ After your organization has purchased a subscription to Finance and Operations, 
 
    ![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
    > [!NOTE]
-   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, an additional Project Owner must be assigned to the Implementation Project.
+   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, an additional Project Owner must be assigned to the implementation project.
 
    For an overview of the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
