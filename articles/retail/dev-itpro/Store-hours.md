@@ -13,19 +13,41 @@ This configuration page is in AX Headquarters, **Retail** -> **Channel Setup** -
 
 When the holiday and store hours are known, the admin can set the store hours for the whole year or to an even longer schedule.
 
-The First step is to create a **Store hours template** -> Click +**New**  (If you have an exisiting **Store hours template**, it will be listed on the left pane) 
+The First step is to create a **Store hours template**, Click **New** , If you have an exisiting **Store hours template**, it will be listed on the left pane. 
 
 ![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template")  
 
-After a Template is created or selected, user needs to define the period of the date range. 
+After a template is created or selected, user needs to define the period of the date range, The store hours and holidays(if any)
 1. If the store hours are constant and do not change - then select 'End Date' = Never ends. 
 2. If the store hours are for a specific month/week/day - set the 'Start Date' & 'End Date'
 3. Users can create mutliple templates with overlapping 'start Date' & 'End Date' - different store hours for stores in different time-zones. 
 
-The next step, is to associate the 'Store hours' template to mutliple stores, 
-This calendar is now made available for the different store or store groups. The calendar is set for all the stores and should be visible in the POS for reference.
+The next step, is to associate the 'Store hours' template to mutliple stores. Use the Organization Hierarchy table to select the stores/regions/orgs that the template needs to be associated with. 
+- One store can have only one store hours template associated to it. 
+- There will be a error if user attmpets to associate more than one 'Store hours' template to a Store / Region / Org
+- Use the arrow keys to select the Stores / Region / Org that needs to be associated. 
+- This calendar is now made available for the different store or store groups. 
+- The calendar is set for all the stores and should be visible in the POS for reference.
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
+
+Run the 1070 and 1090 jobs for the store hours to now flow through to the POS
+
+If a customer has a pickup order for a different store, the cashier can select the right dates where the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier will choose a date and location and print a pickup receipt with the store hours. 
+
+![Store Card Template](../dev-itpro/media/Storehours4.png "Store Card template") 
+
+### Adding Store hours to the printed receipts
+
+To add 'Store Hours' to the Printed POS receipts.
+- Open **Receipt Designer** 
+- Select **Footer** TAB in the receipt template
+- Drag the **Store hours** tab from the left navigation pane to the bottom of the receipt template in the footer. 
+- Save the receipt and exit **Receipt designer** 
+- Run 1070 & 1090 jobs in **Distribution Scehdule** 
+
+- Log into POS. 
+- Complete a Sale and select Printed receipt.
 
 A cashier completing a sale prints the receipt, where the store hours are visible for the customer. Upcoming holidays—when the store is closed—are also made visible on the receipt.
 
