@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Create formats to use Document Management files in ER output
+# ER Use Document Management files in format outputs (Part 3: Create format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
