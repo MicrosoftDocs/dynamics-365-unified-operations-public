@@ -3,7 +3,7 @@
 
 The new store hours feature provides the ability to capture and maintain multiple sets of store operating hours for a retailer. Dynamics 365 for Retail currently had no out-of-box solution to let retailers showcase their store operating hours across different channels like store, call center, mobile, e-commerce, and so on.
 
-In Dynamics 365 10.0 a new feature for 'Store Hours' has been introduced. Retailers can now create and manage their store hours in Retail AX Headquarters and have cashiers look up store hours across various locations to assist customers in their shopping experience. It also allows retailers to print them at the footer of the receipt to notify customers when the stores are accessible to retail customers. 
+In Dynamics 365 8.1.2, a new feature for 'Store Hours' has been introduced. Retailers can now create and manage their store hours in Retail AX Headquarters and have cashiers look up store hours across various locations to assist customers in their shopping experience. It also allows retailers to print them at the footer of the receipt to notify customers when the stores are accessible to retail customers. 
 
 
 ## How to use the store hours feature
