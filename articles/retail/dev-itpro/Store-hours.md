@@ -16,16 +16,16 @@ Store hours functionality can be leveraged on e-commerce websites, mobile apps, 
 ## How to use the store hours feature
 When the holiday and store hours are known, the admin can set the store hours for the whole year or to an even longer schedule.
 
-![Store Hours Template](../../media/Storehours1.png "Store hours template") 
+![Store Hours Template](../media/Storehours1.png "Store hours template") 
 
 This calendar is now made available for the different store or store groups. The calendar is set for all the stores and should be visible in the POS for reference.
 
-![Save Store Hours Template](../../media/Storehours2.png "Save Store hours template") 
+![Save Store Hours Template](../media/Storehours2.png "Save Store hours template") 
 
 A cashier completing a sale prints the receipt, where the store hours are visible for the customer. Upcoming holidays—when the store is closed—are also made visible on the receipt.
 
-![Receipt Template](../../media/Storehours3.png "Receipt template") 
+![Receipt Template](../media/Storehours3.png "Receipt template") 
 
 If a customer has a pickup order for a different store, the cashier can select the right dates where the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier will choose a date and location and print a pickup receipt with the store hours. 
 
-![Store Card Template](../../media/Storehours4.png "Store Card template") 
+![Store Card Template](../media/Storehours4.png "Store Card template") 
