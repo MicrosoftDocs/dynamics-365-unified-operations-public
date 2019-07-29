@@ -41,7 +41,7 @@ This topic demonstrates how to create a record template so that field values tha
 - For example, enter 'laptop.'  
 6. Expand the **Technical information** section.
 7. In the **Make**, **Model**, and **Model year** fields, type values.
-8. On the **Action Pane**, select **Options**.
+8. On the Action Pane, select **Options**.
 9. Select **Record info**.
 10. Select **User template**.
 11. In the **Name** field, type a value.
