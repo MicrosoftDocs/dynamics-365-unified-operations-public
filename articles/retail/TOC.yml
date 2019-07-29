@@ -315,6 +315,8 @@
     href: set-up-retail-products.md
   - name: Manage Retail product categories and products
     href: category-management-product-creation.md
+  - name: Change the sort order for merchandising entities
+    href: custom-order-categories-nav-retail-prod-hierarchy.md
   - name: Product dimensions
     href: ../supply-chain/pim/product-dimensions.md
   - name: Set up bar codes
