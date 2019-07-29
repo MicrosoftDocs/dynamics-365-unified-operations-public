@@ -43,13 +43,15 @@ To add 'Store Hours' to the Printed POS receipts.
 - Open **Receipt Designer** 
 - Select **Footer** TAB in the receipt template
 - Drag the **Store hours** tab from the left navigation pane to the bottom of the receipt template in the footer. 
+- If you need to change the label, edit the default label names in the 'Store hours' tab of the receipt designer. 
 - Save the receipt and exit **Receipt designer** 
 - Run 1070 & 1090 jobs in **Distribution Scehdule** 
 
 - Log into POS. 
-- Complete a Sale and select Printed receipt.
+- Complete a sale and select printed receipt.
 
-A cashier completing a sale prints the receipt, where the store hours are visible for the customer. Upcoming holidays—when the store is closed—are also made visible on the receipt.
+A cashier completing a sale prints the receipt, where the store hours are visible for the customer. If any Upcoming holidays were included in the template, then these also be visible on the receipt.
+
 
 ![Receipt Template](../dev-itpro/media/Storehours3.png "Receipt template") 
 
