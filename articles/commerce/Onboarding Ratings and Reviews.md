@@ -11,5 +11,5 @@ Lifecycle Services (LCS) is an administration portal that C1 uses to manage�
   2. In other settings, select Yes for "Enable Ratings and Reviews service" 
   3. Completed eCommerce initialization process. 
 
-<Image needs to be created>
+![Enabling Ratings and Reviews service](media/LCS_RnR_Preference.png) 
 
