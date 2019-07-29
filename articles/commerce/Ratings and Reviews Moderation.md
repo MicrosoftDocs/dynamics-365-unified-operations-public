@@ -54,7 +54,7 @@ Dynamics 365 for Commerce uses Azure Cognitive Service to auto moderate review t
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
 
-## Respond to Reviews 
+## Respond to a review 
 Sometimes end users who purchased product express their satisfaction or dissatisfaction, or may have misunderstanding about a product usage. As a C1's moderator, you can respond to the review that will be visible on the eCommerce website.  Use the following steps to respond to a review. 
 
 	1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
@@ -65,13 +65,13 @@ Sometimes end users who purchased product express their satisfaction or dissatis
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
 
 
-## Takedown a reviews 
+## Takedown a review 
 When you have a right business justification to takedown a review, use the following steps: 
 
 	1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
 	2. Click on Reviews in the left nav and click on moderation link. 
 	3. Identify the review that needs to be taken down.
-4. In the right panel, Select a takedown reason and click on Take down button. 
+	4. In the right panel, Select a takedown reason and click on Take down button. 
 
 
 
