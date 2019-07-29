@@ -257,6 +257,8 @@
     href: Notifications-POS.md
 - name: Returns
   items:
+  - name: Linked refunds
+    href: dev-itpro/linked-refunds.md
   - name: Sell and return products not included in a store's assortment
     href: sell-return-outside-assortments.md
   - name: Configure and process an exchange on a return order
