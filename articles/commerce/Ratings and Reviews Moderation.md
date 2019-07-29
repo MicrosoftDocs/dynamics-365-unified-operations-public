@@ -60,9 +60,18 @@ Sometimes end users who purchased product express their satisfaction or dissatis
 	1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
 	2. Click on Reviews in the left nav and click on moderation link. 
 	3. Identify the review that needs a response.
-	4. Additionally there are many filters to see review by duration, rating, takedown, or responded etc. status. 
+	4. In the right panel, provide your response and click Post response button. 
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
+
+
+## Takedown a reviews 
+When you have a right business justification to takedown a review, use the following steps: 
+
+	1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
+	2. Click on Reviews in the left nav and click on moderation link. 
+	3. Identify the review that needs to be taken down.
+4. In the right panel, Select a takedown reason and click on Take down button. 
 
 
 
