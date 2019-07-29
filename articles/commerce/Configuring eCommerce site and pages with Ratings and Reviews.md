@@ -1,3 +1,40 @@
+---
+# required metadata
+
+ 
+
+title: Ratings and Reviews Site Configuration 
+description: This topic explains how to configure  Dynamics 365 for Commerce's Ratings and Reviews settings and eCommerce site level. 
+author:  gvrmohanreddy 
+manager: JeffBl
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+ 
+
+# optional metadata
+
+ 
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: 
+ms.search.industry: 
+ms.author: gmohanv
+ms.search.validFrom: 2019-10-01
+ms.dyn365.ops.version: 
+---
+
 # Overview
 Ratings and Reviews on eCommerce website helps consumers (C2) directly to understand how a product is perceived by fellow consumers and make a purchase decision. eCommerce website is also a primary source for receiving ratings and reviews on a product. This document explains how to configure your eCommerce website and pages to show ratings and reviews.
 
