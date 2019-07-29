@@ -45,6 +45,10 @@ Attract users can now view PDF attachments for candidates in the document viewer
 
 As we plan new product capabilities or ship preview features, we are looking for our users to help inform our direction. Interested users can now sign up to be part of our user research group by using the sign-up link in our app.
 
+### Job approvals appear on the home page
+
+Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which shows the job ID, the job title, other approvers, and the date when the job was assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which shows the approvers who must still approve the submitted job.
+
 ## Changes in Onboard
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
