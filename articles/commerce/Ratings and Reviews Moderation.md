@@ -1,5 +1,3 @@
-
-
 ---
 # required metadata
 
@@ -46,9 +44,6 @@ Dynamics 365 for Commerce uses Azure Cognitive Service to auto moderate review t
 	2. Bulk import reviews data across products, and use Power BI template to analyze ratings and reviews trends.
 	3. Delete end user's reviews up on a request by C2. 
 
- [LCS - eCommerce ](https://docs.microsoft.com/en-us/dynamics365/)
-
-
   
 ## Reading Reviews 
   
@@ -56,6 +51,8 @@ Dynamics 365 for Commerce uses Azure Cognitive Service to auto moderate review t
 	2. Click on Reviews in the left nav and click on moderation link. 
 	3. Search feature at the top of page allows you to filter the reviews by a product or a review text.
 	4. Additionally there are many filters to see review by duration, rating, takedown, or responded etc. status. 
+
+![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
 
 ## Respond to Reviews 
 Sometimes end users who purchased product express their satisfaction or dissatisfaction, or may have misunderstanding about a product usage. As a C1's moderator, you can respond to the review that will be visible on the eCommerce website.  Use the following steps to respond to a review. 
@@ -65,8 +62,8 @@ Sometimes end users who purchased product express their satisfaction or dissatis
 	3. Identify the review that needs a response.
 	4. Additionally there are many filters to see review by duration, rating, takedown, or responded etc. status. 
 
+![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
 
 
-![Enabling Ratings and Reviews service](media/LCS_RnR_Preference.png) 
 
 
