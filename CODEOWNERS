@@ -1,6 +1,7 @@
 # Testing the new code owners feature in GitHub. Please contact DAX Content Publishing FTEs if you have questions.
 
 /articles/dev-itpro/analytics	@kfend
+/articles/dev-itpro/business-events @sericks007
 /articles/dev-itpro/database	@sericks007
 /articles/dev-itpro/data-entities	@sericks007
 /articles/dev-itpro/deployment	@sericks007 @kfend
@@ -8,6 +9,8 @@
 /articles/dev-itpro/dev-tools @robinarh
 /articles/dev-itpro/extensibility @robinarh
 /articles/dev-itpro/financial @robinarh
+/articles/dev-itpro/gdpr @robinarh
+/articles/dev-itpro/includes @robinarh
 /articles/dev-itpro/lcs-solutions	@sericks007
 /articles/dev-itpro/lifecycle-services	@sericks007
 /articles/dev-itpro/migration-upgrade	@sericks007
@@ -30,19 +33,23 @@
 /articles/fin-and-ops/get-started	@sericks007 @kfend
 /articles/fin-and-ops/hr	@andreabichsel
 /articles/fin-and-ops/hr/localizations	@kfend
+/articles/fin-and-ops/imp-lifecycle	@kfend
 /articles/fin-and-ops/organization-administration	@sericks007
 /articles/retail	@josaw1
 /articles/retail/dev-itpro  @robinarh
-/articles/retail/dev-itpro/retail-sdk @robinarh
 /articles/retail/get-started	@josaw1
 /articles/retail/localizations	@josaw1
+/articles/retail/tasks	@josaw1
+/articles/supply-chain/asset-management  @josaw1	@roschlom
 /articles/supply-chain/cost-management  @josaw1	@roschlom
 /articles/supply-chain/inventory	 @josaw1	@roschlom
+/articles/supply-chain/localizations	 @josaw1	@roschlom
 /articles/supply-chain/master-planning	 @josaw1	@roschlom
 /articles/supply-chain/pim	 @josaw1	@roschlom
 /articles/supply-chain/procurement	 @josaw1	@roschlom
 /articles/supply-chain/production-control	 @josaw1	@roschlom
 /articles/supply-chain/sales-marketing	 @josaw1	@roschlom
+/articles/supply-chain/service-management	 @josaw1	@roschlom
 /articles/supply-chain/transportation	 @josaw1	@roschlom
 /articles/supply-chain/warehousing	 @josaw1	@roschlom
 /articles/talent	@andreabichsel
