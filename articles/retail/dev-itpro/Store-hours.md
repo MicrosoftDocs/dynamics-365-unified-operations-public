@@ -65,7 +65,7 @@ The calendar will be available to the store or store groups, and will become vis
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
 
-5. Run the **1070** and **1090** jobs in **Distribution Schedule** for the store hours to be available to POS.
+5. Run the **1070** and **1090** jobs on the **Distribution schedule** page for the store hours to be available to POS.
 
 
 ## Add store hours to printed receipts
@@ -76,7 +76,7 @@ To add store hours to the printed POS receipts, do the following.
 1. Drag the **Store hours** tab from the left navigation pane to the bottom of the receipt template in the footer. 
 1. If you need to change the label, edit the default label names in the **Store hours** tab of the receipt designer. 
 1. Save the receipt and exit **Receipt designer**.
-1. Run the **1070** and **1090** jobs in **Distribution Schedule**.
+1. Run the **1070** and **1090** jobs on the **Distribution schedule** page.
 1. Log into POS. 
 1. Complete a sale and select printed receipt.
 
