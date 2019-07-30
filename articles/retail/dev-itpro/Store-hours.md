@@ -38,19 +38,20 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 ## Overview
 Retailers can create, maintain, and manage the store hours for different stores across geographies from a single point. Retailers can showcase the store hours in point of sale (POS) terminals, letting the cashiers share store hours to customers and assist shoppers while looking for inventory in different stores. Customers also can see the new store hours printed on their receipts in case they wish to return to the store. 
 
-Multiple store hours can be configured across different channels, such as brick and mortar store, call center, mobile, and e-Commerce.
+Multiple store hours can be configured across different channels, such as brick and mortar stores, call centers, mobile devices, and e-Commerce sites.
 
 If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier will choose a date and location, and can print a pickup receipt with the store hours. 
 
-## Configure store hours
 This functionality is available in Dynamics 365 for Retail versions 8.1.2 and later.
+
+## Configure store hours
 
 1. To configure store hours, go to **Retail** > **Channel Setup** > **Store hours**.
 2. Create a new **Store hours template** or choose an existing one. To create a new template, click **New**. To use an existing template, choose the template from the left pane.  
 
 ![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template")  
 
-3. Next, define the period of the date range, the store hours, and holidays (if anneeded).
+3. Next, define the period of the date range, the store hours, and holidays (if needed).
   - If store hours are constant and do not change, select **Never ends** in the **End date** field. 
   - If the store hours are for a specific month/week/day, set the appropriate dates in the **Start Date** and **End date** fields.
   
@@ -60,7 +61,7 @@ This functionality is available in Dynamics 365 for Retail versions 8.1.2 and la
 4. Next, you need to associate the **Store hours template** to the stores. Use the **Organization heirarchy** table to select the stores, regions, and organizations that you want the template to be associated with. 
   - Each store can have only one store hours template associated to it. 
   - Use the arrow keys to select the stores, region, organization. 
-The calendar will now be available to the store or store groups, and will become visible in the point of sale (POS) for reference.
+The calendar will now be available to the store or store groups, and will become visible in POS for reference.
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
 
