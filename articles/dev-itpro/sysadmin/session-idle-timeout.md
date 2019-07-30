@@ -49,8 +49,8 @@ To change the value from the UI, follow these steps:
 
 1. From the Finance and Operations Dashboard, click on the **System Administration** workspace.
 2. Click on **System Settings**. This opens the **System parameters** form.
-3. In the **Session management** section, set the **Session idle timout in minutes** up to a maximum of 60 minutes.
-4. Click Save. 
+3. In the **Session management** section, set the **Session idle timout in minutes** to the desired value.
+4. Click **Save**. 
 
     If you set the value greater than 30, you will be prompted to confirm your selection. The confirmation prompt is "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value is, the higher the load will be, and the load can affect system performance negatively. Click **Yes** to save the changes, or **No** to revert to the existing value.
 
