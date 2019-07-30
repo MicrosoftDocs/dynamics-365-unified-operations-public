@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Regression Suite Automation Tool
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 ## Overview
 The Regression Suite Automation Tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your Dynamics 365 for Finance and Operations production environment.
