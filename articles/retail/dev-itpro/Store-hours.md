@@ -47,7 +47,7 @@ This functionality is available in Dynamics 365 for Retail versions 8.1.2 and la
 ## Configure store hours
 
 1. To configure store hours, go to **Retail** > **Channel Setup** > **Store hours**.
-2. Create a new **Store hours template** or choose an existing one. To create a new template, click **New**. To use an existing template, choose the template from the left pane.  
+2. Create a new store hours template or choose an existing one. To create a new template, click **New**. To use an existing template, choose the template from the left pane.  
 
 ![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template")  
 
@@ -58,9 +58,9 @@ This functionality is available in Dynamics 365 for Retail versions 8.1.2 and la
   > [!NOTE]
   > You can create mutliple templates with overlapping start and end dates, for example, to define store hours for stores in different time-zones. 
 
-4. Next, you need to associate the **Store hours template** to the stores. Use the **Organization heirarchy** table to select the stores, regions, and organizations that you want the template to be associated with. 
+4. Next, you need to associate the store hours template to the stores. In the **Choose organization nodes** dialog, select the stores, regions, and organizations that you want the template to be associated with. 
   - Each store can have only one store hours template associated to it. 
-  - Use the arrow keys to select the stores, region, organization. 
+  - Use the arrow keys to select stores, regions, or organizations. 
 The calendar will now be available to the store or store groups, and will become visible in POS for reference.
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
