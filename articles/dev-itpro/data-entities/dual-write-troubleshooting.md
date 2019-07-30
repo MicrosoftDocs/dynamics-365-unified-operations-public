@@ -62,8 +62,10 @@ You can update links by following these steps:
 + Click on **Link to CDS for apps**.
 + Select all the running mappings and click **Stop**. 
 + Select all the mappings and click **Delete**.
-        > [!NOTE]
-        > The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
+
+    > [!NOTE]
+    > The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
+
 + Click **Unlink environment**.
 + Click **Yes** for confirmation.
 + To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).
