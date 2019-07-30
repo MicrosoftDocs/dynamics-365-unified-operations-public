@@ -43,17 +43,17 @@ You can set the values from 5 minutes to 60 minutes.
 This function is exposed to the UI and has a default value of 30 minutes. You can set the value up to 60 minutes, but doing so might cause extra load on the system.
 
 > [!IMPORTANT]
-> If you previously set a session idle timeout in the web.config (*WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session idle timeout in the web config.
+> If you previously set a session idle timeout in the web.config (**WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session idle timeout in the web config.
 
-To change the Value from the UI, follow these steps:
+To change the value from the UI, follow these steps:
 
-1. From the Finance and Operations Dashboard, click on the System Administration workspace.
-2. Click on System Settings. This opens the **System parameters** form.
+1. From the Finance and Operations Dashboard, click on the **System Administration** workspace.
+2. Click on **System Settings**. This opens the **System parameters** form.
 3. In the **Session management** section, set the **Session idle timout in minutes** up to a maximum of 60 minutes.
 4. Click Save. 
 
     > [!NOTE]
     > If you set the value greater than 30, you will be prompted to confirm your selection. The confirmation prompt is "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value is, the higher the load will be, and the load can affect system performance negatively.
  
-5.	Click Yes to Save and No to revert to the Old value
+5.	Click **Yes** to save the changes, or **No** to revert to the existing value.
 
