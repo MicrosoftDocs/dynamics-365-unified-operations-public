@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 If you are facing an issue or error with dual-write synchronization, you can inspect the errors in the trace log:
 
-1. Before you can inspect the errors, you must enable plugin trace using the instructions in [Register plug-in](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) to enable Plugin trace. Now you can inspect the errors.
+1. Before you can inspect the errors, you must enable Plugin trace using the instructions in [Register plug-in](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) to enable Plugin trace. Now you can inspect the errors.
 2. Login to Dynamics 365 for Sales.
 3. Click on the Settings icon (a gear), and select **Advanced Settings**.
 4. In the **Settings** menu, choose **Customization > Plug-In Trace Log**.
@@ -62,9 +62,8 @@ You can update links by following these steps:
 + Click on **Link to CDS for apps**.
 + Select all the running mappings and click **Stop**. 
 + Select all the mappings and click **Delete**.
-
-    Note: The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
-
+        > [!NOTE]
+        > The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
 + Click **Unlink environment**.
 + Click **Yes** for confirmation.
 + To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).
