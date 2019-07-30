@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,11 +62,11 @@ Additionally, all users except the admin are disabled, and all batch jobs are se
 
 #### Export ran for some time and then reached a "Preparation failed" state
 
-The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by following the related section below.
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can manually export by following the related section below.
 
 #### Export doesn't show any progress in LCS
 
-The export process differs from other database movement operations and the general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by following the related section below.
+The export process differs from other database movement operations and the general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The LCS team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by following the related section below.
 
 ## Manual Export
 
