@@ -1182,6 +1182,8 @@
     href: sysadmin/pre-configured-system-accounts.md
   - name: Export B2B users to Azure AD
     href: sysadmin/implement-b2b.md
+  - name: Set the session idle timeout
+    href: sysadmin/session-idle-timeout.md
   - name: Role-based security
     href: sysadmin/role-based-security.md
     items:
