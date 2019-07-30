@@ -4,8 +4,8 @@
 title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
@@ -121,29 +121,30 @@ The ER formula designer can also be used to generate a file name for a generatin
 
 ### Documents content control
 
-The ER formula designer can be used to configure expressions for controlling what data will be placed to generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. Such expression can be entered for a single format element in the **Enabled** field at the **Mapping** tab of the Operations designer as a logic condition returning the **Boolean** value:
+The ER formula designer can be used to configure expressions that control what data will be placed in generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. Such expression can be entered for a single format element in the **Enabled** field on the **Mapping** tab of the **Operations designer** page as a logic condition returning the **Boolean** value:
 
 -	when the **True** value is returned, the current format element is executed
 -	when the **False** value is returned, the current format element is skipped
 
-The following illustration shows expressions of this type (the version **11.12.11** of the provided by Microsoft **ISO20022 Credit transfer (NO)** format configuration is taken as an example). The **XMLHeader** format component is configured to describe the structure of the credit transfer message in accordance with ISO 20022 XML message standards. The **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** format component is configured to add to generated message the **Ustrd** XML element and place remittance information in unstructured format as a text of this XML element:
+The following illustration shows expressions of this type (the version, **11.12.11** of the **ISO20022 Credit transfer (NO)** format configuration provided by Microsoft is an example). The **XMLHeader** format component is configured to describe the structure of the credit transfer message following the ISO 20022 XML message standards. The **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** format component is configured to add to the generated message, the **Ustrd** XML element, and place the remittance information in an unstructured format as a text of the follwoing XML elements:
 
--	**PaymentNotes** component is used to output the text of payment notes
--	**DelimitedSequence** component is used to output separated by comma invoice numbers used to settle the current credit transfer
+-	The **PaymentNotes** component is used to output the text of payment notes
+-	The **DelimitedSequence** component outputs comma separated invoice numbers that are used to settle the current credit transfer
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
-Note that both **PaymentNotes** and **DelimitedSequence** components are labelled by the question mark. It means that the usage of both components is conditional:
+> [!NOTE]
+> The **PaymentNotes** and **DelimitedSequence** components are labeled by a question mark. This means that the usage of both components is conditional on the following:
 
--	Defined for the **PaymentNote**s component **@.PaymentsNotes<>""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element the text of payment notes when this text for the current credit transfer is not blank
+-	Defined for the **PaymentNote**s component, the **@.PaymentsNotes<>""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element the text of payment notes when this text for the current credit transfer is not blank.
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 
--	Defined for the **DelimitedSequence** component **@.PaymentsNotes=""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element separated by comma invoice numbers used to settle the current credit transfer when the text of payment notes for this credit transfer is blank
+-	Defined for the **DelimitedSequence** component, **@.PaymentsNotes=""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element separated by comma invoice numbers that are used to settle the current credit transfer when the text of payment notes for this credit transfer is blank.
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 
-Finally, based on this setting, the populated to the generated message for each debtor payment **Ustrd** XML element will contain either text of payment notes or, when such text is blank – separated by comma invoice numbers used to settle this payment.
+Based on this setting, the populated generated message for each debtor payment, **Ustrd** XML element will contain either text of payment notes or, when such text is blank, separated by comma invoice numbers used to settle this payment.
 
 ### Basic syntax
 
