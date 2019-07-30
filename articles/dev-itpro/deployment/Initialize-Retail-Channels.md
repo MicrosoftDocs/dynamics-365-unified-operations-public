@@ -5,7 +5,7 @@ title: Initialize Retail Cloud Scale Unit
 description: This topics explains how to initialize Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 04/05/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -81,7 +81,7 @@ If you have multiple scale units, you need to perform the operation above for ea
 
 ## Deploy additional Retail Cloud Scale Units (optional)
 
-After you have initialized the first Retail Cloud Scale Unit (RCSU), you can optionally deploy one additional RCSU. If you need more than 2 RCSUs, you need to file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
+After you have initialized the first Retail Cloud Scale Unit (RCSU), if you require additional cloud scale units, enter a support request. In the support request, state the number of RCSUs needed, environment name, and desired regions.
 
 For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps:
 
