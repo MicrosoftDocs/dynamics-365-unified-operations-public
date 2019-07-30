@@ -61,7 +61,7 @@ This functionality is available in Dynamics 365 for Retail versions 8.1.2 and la
 4. Next, you need to associate the store hours template to the stores. In the **Choose organization nodes** dialog, select the stores, regions, and organizations that you want the template to be associated with. 
   - Each store can have only one store hours template associated to it. 
   - Use the arrow keys to select stores, regions, or organizations. 
-The calendar will now be available to the store or store groups, and will become visible in POS for reference.
+The calendar will be available to the store or store groups, and will become visible in POS for reference.
 
 ![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
 
