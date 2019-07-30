@@ -47,7 +47,7 @@ In the following illustration, an InventTable extension is used to define an ind
 
 ## Extend standard indexes
 
-You can extend standard indexes and add more (included) columns but there are some conditions:
+You can extend standard indexes and add additional (included) columns but there are some conditions:
 
 +	The index is non-clustered.
 +	The index is not unique.
