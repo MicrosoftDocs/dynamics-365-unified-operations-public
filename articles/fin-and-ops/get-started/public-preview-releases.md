@@ -77,7 +77,6 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
-Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com.   Once your nomination has been accepted, join the program "Finance & Operations:  Preview Early Access Program (PEAP)".
+Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com.   Once your nomination has been accepted, join the program **Finance and Operations: Preview Early Access Program (PEAP)**.
 
-Public preview bits are made available as a deployable package via the shared asset library in Lifecycle Services.
-> For more details, see [One Version service updates FAQ](one-version.md).  
+Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).  
