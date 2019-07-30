@@ -81,7 +81,7 @@ If you have multiple scale units, you need to perform the operation above for ea
 
 ## Deploy additional Retail Cloud Scale Units (optional)
 
-After you have initialized the first Retail Cloud Scale Unit (RCSU), you can optionally deploy one additional RCSU. If you need more than 2 RCSUs, you need to file a support request to increase the limit, stating the number of RCSUs needed, environment name, and desired regions.
+After you have initialized the first Retail Cloud Scale Unit (RCSU), if you require additional cloud scale units, this can be achieved by filing a support request. In the support request, state the number of RCSUs needed, environment name, and desired regions.
 
 For each additional RCSU that you deploy, it is also recommended that you create a separate channel database group for each RCSU. To do this, follow these steps:
 
