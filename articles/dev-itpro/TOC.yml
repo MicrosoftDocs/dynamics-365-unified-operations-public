@@ -431,6 +431,12 @@
         href: perf-test/atl-best-practices.md
       - name: Frequently asked questions
         href: perf-test/atl-faq.md
+    - name: Regression suite automation tool
+      items:
+      - name: Regression suite automation tool overview
+        href: perf-test/rsat/rsat-overview.md
+      - name: Installation and configuration
+        href: perf-test/rsat/rsat-install-configure.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
