@@ -59,10 +59,10 @@ The session idle timeout is the amount of time a user can be inactive before the
 ## Visual refresh of the web client to align with the Fluent design language
 As part of the Dynamics 365 app-wide effort, Finance and Operations will be incrementally working towards a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. See the corresponding [Visual refresh of the web client to align with the Fluent design language]() article in the Release plan for more details.
 
-## (PREVIEW) Saved views 
+## (Preview) Saved views 
 [Saved views]() is now available in Public Preview! This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. See the [Saved views](saved-views.md) article for more information, including details on how to enable this feature in developer environments. Note this preview feature will continue to evolve and change until it becomes generally available. 
 
-## (PREVIEW) New grid control
+## (Preview) New grid control
 The [new grid control]() is now available in Public Preview! This new grid serves as a replacement for the existing grid control and boasts faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-React extensible control, in which case the existing grid control will be used on that page. Note this preview feature will continue to evolve and change until it becomes generally available.
 
 To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.  
