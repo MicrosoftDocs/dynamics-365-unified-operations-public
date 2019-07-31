@@ -155,16 +155,17 @@ Any changes made in this dialog box will take effect after the **Save** button i
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
-To enable saved views while the feature is in public preview, follow the steps below: 
+To enable saved views while the feature is in preview, follow the steps below: 
 
-2.	Enable the flight on a local development box by executing the following SQL statement: 
-      INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);
+1.	**Enable the flight**: Execute the following SQL statement: 
 
-3.	Navigate to the Feature management workspace. If Saved views does not appear in the list, select the "Check for updates" button. At this point, the Saved views feature should be visible in the Feature management workspace, but will not be enabled.  
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-4.	Find the Saved views feature in the list of features, and click the "Enable now" button on the details pane.
+2.	**Find the feature**: Navigate to the **Feature management** workspace. If **Saved views** does not appear in the list, select the "Check for updates" button.   
 
-After this feature is enabled, all subsequent user sessions will start with views enabled.  
+3.	**Enable the feature**: Find the Saved views feature in the list of features, and click the **Enable now** button on the details pane.
+
+All subsequent user sessions will start with saved views enabled.  
 
 Note that if personalization is turned off for the environment, views will be disabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
 
