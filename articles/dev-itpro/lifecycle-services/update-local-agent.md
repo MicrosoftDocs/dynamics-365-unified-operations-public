@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.1.1, which was released in February 2019.
+This topic explains how to update the local agent. The latest version of the local agent is version 2.3.0, which was released in August 2019.
 
 | Local agent version | Capability | 
 |---------------------|------------|
@@ -45,6 +45,16 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.  |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisits for supporting an ADFS that also is used for Office365. |
+| 2.3.0               | This version |
+
+## What's new in local agent 2.3.0
+
+- Local agent 2.3.0 enables the execution of custom [Pre and Post deployment scripts](../../dev-itpro/lifecycle-services/pre-post-scripts.md).
+- It fixes the problem introduced in 2.2.0 with regards to deploying older platform updates.
+- This release removes the monitoring agent and introduces a new service called LBDTelemetry which will be used to install the ETWManifests.
+
+> [!IMPORTANT]
+> This release requires that a new local agent configuration file be downloaded from LCS. Please check the [Troubleshooting Guide](../../dev-itpro/deployment/troubleshoot-on-prem.md) if you encounter problems. 
 
 ## What's new in local agent 2.1.0?
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.
