@@ -159,7 +159,7 @@ If you install RSAT on more than one computer, you need to generate a new certif
 </keys>
 ```
 
-## Install Selenium Drivers
+## Install Selenium drivers
 
 For manual installation of Selenium drivers, follow these steps:
 1. Download [Selenium 3.13.1](http://selenium-release.storage.googleapis.com/3.13/selenium-dotnet-strongnamed-3.13.1.zip). Or, go to http://docs.seleniumhq.org/download and click **Previous releases**. Choose **3.13** and download **selenium-dotnet-strongnamed-3.13.1.zip**.
@@ -174,3 +174,45 @@ If you want to use Google Chrome as your browser, follow these steps:
 1. Go to https://sites.google.com/a/chromium.org/chromedriver/downloads. 
 2. Download **chromedriver_win32.zip** from the latest/current release.
 3. Unzip the downloaded file and move the contents to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
+
+
+
+## Manual configuration of authentication certificates
+
+Optionally, you can manually configure the RSAT authentication certificate.
+
+If you are not familiar with this process, get help from your system administrator. Make sure you have Windows Kits installed on your machine. If you do not have Windows Kits installed on your machine, you can download the Windows 10 SDK from https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk. You will need these components for the steps described in this document.
+
++ Windows SDK Signing Tools for Desktop Apps
++ Windows SDK for UWP Managed Apps.
+
+### Generate the certificate
+
+You must generate the certificate file on the RSAT client computer. **The certificate must be generated on the same computer that the test tool is running on.** To generate the certificate file, follow these steps:
+1. Create the **C:\Temp** folder if it does not already exist on your computer.
+2. Open a command line window as Administrator.
+3. Navigate to the folder where you installed the Windows SDK. Your exact folder maybe different, depending on where you have installed the windows SDK) You can also use Windows Kits 8.1.
+
+    ```
+    cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
+    ```
+
+4. Run the following command. When you are prompted to enter a private key password, enter **None**. 
+
+    ```
+	makecert.exe -n "CN=127.0.0.1" -ss My -sr LocalMachine -a sha256 -len 2048 -cy end -r -eku 1.3.6.1.5.5.7.3.1 c:\temp\authCert.cer
+    ````
+
+### Install the certificate to the Trusted Root
+
+To install the certificate, follow these steps:
+
+1. Double-click **authCert.cer** to install the certificate.
+2. Click **Install Certificate…**
+3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities**, by clicking **Next** through each screen.
+4. Leave the **Password** field blank.
+5. In the **Certificate** dialog, browse to **Details** and look for **Thumbprint**.
+
+    ![Certificate dialog showing thumbpring listing](media/certificate-dialog.png)
+ 
+6. Copy and save the thumbprint. You will need it to configure the Finance and Operations AOS as described earlier in this topic.

@@ -445,6 +445,10 @@
         href: perf-test/rsat/rsat-chain-test-cases.md
       - name: Derived test cases
         href: perf-test/rsat/rsat-derived-test-cases.md
+      - name: Best practices
+        href: perf-test/rsat/rsat-best-practices.md
+      - name: Troubleshooting
+        href: perf-test/rsat/rsat-troubleshooting.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
