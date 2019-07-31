@@ -97,7 +97,7 @@ Configure your connection to the test environment.
 + **SOAP Host Name**: SOAP Hostname of the Dynamics 365 for Finance and Operations test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. Example: <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
 + **Admin User Name**: Email address of an admin user on the Finance and Operations test environment.
 + **Thumbprint**: Thumbprint of the authentication certificate you are using.
-    1. Click the New button to create and install a new authentication certificate. When prompted, place the .cer file anywhere on disk for your records.
+    1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file anywhere on disk for your records.
     2. When the process completes, the new certification is installed in the local machine’s trusted root store.
         
         ![Successfully created](media/thumbprint-certificate.png)
@@ -116,7 +116,7 @@ Configure your local settings.
 Click **Ok** to apply your settings and close the dialog. Click **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Click **Save As** to save your current settings into a configuration file on your computer. Click **Open** to restore your settings from a configuration file.
 
 ### Optional Settings
-Select the Optional tab to configure optional settings.
+Select the **Optional** tab to configure optional settings.
 
 + **Test Run Prefix**: RSAT reports test run results to Azure DevOps. Test runs are named using the following convention: **<Run ID> <Prefix> <Test Suite>**. Use this setting to set the **<Prefix>**.
 + **Test Run Timeout**: Timeout (in minutes) of a test run. All active windows are closed and pending test cases fail when this timeout is reached.
