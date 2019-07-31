@@ -51,7 +51,7 @@ The job history clean-up functionality in data management must be used to schedu
 Role based security can be now applied to individual business events in the business event catalog. Once this security is enabled and configured, users will be able to only view and subscribe to business events to which thier role(s) have access. This security applies to integration scenarios like Microsoft Flow as well.
 
 ## Attachment recovery
-An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For more details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management).
+An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For more details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
 
 ## Session idle timeout
 The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the UI, and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that might cause an extra load on the system. For more information, see [Set the session idle timeout](../../fin-and-ops/dev-itpro/sysadmin/session-idle-timeout.md).
@@ -67,6 +67,32 @@ The [new grid control]() is now available in Public Preview! This new grid serve
 
 To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.  
 
+## Workflow work item notifications in the action center 
+Users can now opt-in to receive notifications in the Action Center by toggling on **Settings** > **User options** > **Workflow** > **Notifications** > **Send notifications to Action Center**. When enabled, the user will receive a notification for each new work item that is assigned to them.
+
+## Workflows can now support reset
+Workflows can now support reset from the Workflow History form by optionally implementing the **WorkflowIRecallUnrecoverable** interface. The vendor invoice workflow has used this interface to allow unrecoverable vendor invoice workflows to be recalled and placed in a cancelled state.
+
+## Workflow deletion will confirm business event subscription deletions
+When business event subscriptions associated with the workflow are found, a confirmation dialog will provide a list of any related business event subscriptions so that the user is fully aware of the effects of deleting the workflow.
+
+## Improved payloads for workflow business events
+Standard workflow context has been added to the payloads for all Workflow Business Events including owner, orginator, and last note.
+
+## Flow templates for workflow work item
+Flow templates have been created to provide a useful starting point for building Flows that faciliate work item completion. See [Workflow Business Events]](../../fin-and-ops/dev-itpro/business-events/business-events-workflow.md) for more information.
+
+## Extensibility enhancements
+The following enhanced extensibility capabilities have been added in Platform update 29:
+
+- Enable extension of WorkflowApproval properties, WorkflowTask properties, and addition of WorkflowOutcomes into a WorkflowTask (Ref# 198831).
+- Enable event triggering for fields on forms that come from table field groups (Ref# 247364).
+- Enable the use of the FormObservable attribute in class declarations (Ref# 198797).
+- Add model name to extension default naming to reduce conflicts (Ref# 300468).
+- Enable use of extension table fields in form datasources and security privileges (Ref# 315634).
+- Custom privilege for a standard form control should consider needed permission property value set on extension form (Ref# 313650).
+- Allow table display methods added via extension to be used as lookup methods (Ref# 243486).
+- Enable display methods to be added to Form Datasources via extension (Ref# 256004).
 
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
