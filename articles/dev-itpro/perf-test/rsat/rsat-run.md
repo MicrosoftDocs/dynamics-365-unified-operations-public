@@ -73,7 +73,7 @@ By default, tests are executed in Finance and Operations using the admin role. I
 ![Test user column](media/run-specific-user.png)
  
 ### Run a test in the context of a specific company
-The General tab of the Excel parameter file also allows you to specify the name of a Finance and Operations legal entity (Company). The test will run in the context of this company. You can specify your default company in the Settings dialog of the tool.
+The **General** tab of the Excel parameter file also allows you to specify the name of a Finance and Operations legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog of the tool.
 
 ### Infolog and Message Validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
