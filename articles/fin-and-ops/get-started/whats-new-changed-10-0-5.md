@@ -41,12 +41,16 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 ## Revenue recognition
 
-This feature lets users enter a price that they will recognize as different from what they charge the customer. It included the following components. 
+Revenue recognition allows the definition of revenue prices and revenue schedules for multi element sales of hardware, software, support, subscriptions, etc to fulfill US GAAP and IFRS requirements. 
+
+* Revenue prices
+> > Revenue prices can be defined on the released products which is then used to determine the price at which to recognize revenue. The revenue price can be different than the sale prices offered to the customer. 
 
 * Revenue schedules
 > > Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
 
 * Mulitple sales order reallocation
+> > Reallocation allows the revenue price to be recalculated after a new sales order line is added to an invoiced sales order or to a new sales order. The new line would be reallocated in situation where the additional item should be have been included in the original contractual agreement. 
 
 * Workspace
 > > The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
