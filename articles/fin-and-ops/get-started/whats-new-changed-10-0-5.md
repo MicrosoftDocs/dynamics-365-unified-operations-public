@@ -66,10 +66,10 @@ A new button is available on the journal page to unlock a journal that has a sta
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.4, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
-### Platform update 28
-Microsoft Dynamics 365 for Finance and Operations version 10.0.4 includes Platform update 28. To learn more about Platform update 28, see [Preview features in Finance and Operations platform update 28 (July 2019)](whats-new-platform-update-28.md).
+### Platform update 29
+Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [Preview features in Finance and Operations platform update 29 (October 2019)](whats-new-platform-update-29.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
