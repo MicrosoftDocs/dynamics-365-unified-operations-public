@@ -1257,7 +1257,7 @@ Import-Module -Name AzureRM -RequiredVersion 5.7.0
 > Error event: SourceId='MonitoringAgentService', Property='ServiceState'.  
 > System.Management.Automation.RuntimeException: Error: **The GUID passed was not recognized as valid by a WMI data provider.** (Exception from HRESULT: 0x80071068). Stack trace:
 
-**Steps:** To resolve this issue, restart the application package that generated the warning message. For more information, see [Restart applications (such as AOS)](troubleshoot-on-prem#restartapplications).
+**Steps:** To resolve this issue, restart the application package that generated the warning message. For more information, see [Restart applications (such as AOS)](./troubleshoot-on-prem.md#restartapplications).
 
 ## The internal time zone version number that is stored in the database is higher than the version that is supported by the kernel (13/12)
 
