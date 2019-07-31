@@ -1330,6 +1330,8 @@
   items:
   - name: Get support for Finance and Operations and Lifecycle Services
     href: lifecycle-services/lcs-support.md
+  - name: Dynamics 365 support overview
+    href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json
   - name: Get support for Finance and Operations operated by 21Vianet in China
     href: lifecycle-services/21vianet-support.md
   - name: Log a premier support ticket
