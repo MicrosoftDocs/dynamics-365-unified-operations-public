@@ -84,9 +84,9 @@ These settings are required.
 Configure your connection to the Azure DevOps project and test plan.
 
 + **Azure DevOps Url**: This is the URL of your Azure DevOps organization. Example: https://yourAzureDevOpsUrlHere.visualStudio.com
-+ **Access Token**: The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate 
++ **Access Token**: The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate). 
 + **Project Name**: The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
-+ **Test Plan**: The Azure DevOps test plan that contains your test cases. For more information, see https://www.visualstudio.com/en-us/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan 
++ **Test Plan**: The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/en-us/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). 
 
 Click **Test Connection** to test your connection to Azure DevOps.
 
@@ -181,7 +181,7 @@ If you want to use Google Chrome as your browser, follow these steps:
 
 Optionally, you can manually configure the RSAT authentication certificate.
 
-If you are not familiar with this process, get help from your system administrator. Make sure you have Windows Kits installed on your machine. If you do not have Windows Kits installed on your machine, you can download the Windows 10 SDK from https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk. You will need these components for the steps described in this document.
+If you are not familiar with this process, get help from your system administrator. Make sure you have Windows Kits installed on your machine. If you do not have Windows Kits installed on your machine, you can download the Windows 10 SDK from [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk). You will need these components for the steps described in this document.
 
 + Windows SDK Signing Tools for Desktop Apps
 + Windows SDK for UWP Managed Apps.

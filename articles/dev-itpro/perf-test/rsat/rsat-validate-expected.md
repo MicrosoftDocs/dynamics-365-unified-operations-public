@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-An important component of a test case is validation of expected values. You can define validation parameters during the authoring of your test cases using Task Recorder. While recording, right-click on a control and select **CurrentValue** under the **Task Recorder > Validate** menu. This action becomes a validation step that you can use with RSAT The control value will become a validation variable in the automatically generated Excel parameters file. Tne menu item is shown in the following image:
+An important component of a test case is validation of expected values. You can define validation parameters during the authoring of your test cases using Task Recorder. While recording, right-click on a control and select **CurrentValue** under the **Task Recorder > Validate** menu. This action becomes a validation step that you can use with RSAT The control value will become a validation variable in the automatically generated Excel parameters file. The menu item is shown in the following image:
 
 ![Validate menu item](media/validate-test-case.png)
  

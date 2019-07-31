@@ -51,7 +51,7 @@ Variables can be used in the same test case where they are defined and can also 
 
 ## Support for formulas of saved variables
 
-You can create formulas that contain saved (copied) variables. If you have been using an older version of RSAT, you will need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are **+, -, /** and <strong>\*<strong>. Only numerical variables can be used in RSAT formulas; strings or dates are not supported. Always specify variable names within double braces **{{varname}}**. For example, **{{var1}} + {{var2}}**.
+You can create formulas that contain saved (copied) variables. If you have been using an older version of RSAT, you will need to regenerate new Excel parameter files to take advantage of this functionality. Supported operators are **+**, **-**, **/** and **\***. Only numerical variables can be used in RSAT formulas; strings or dates are not supported. Always specify variable names within double braces **{{varname}}**. For example, **{{var1}} + {{var2}}**.
 
 In the image below, two different variables are being used in a formula:
  

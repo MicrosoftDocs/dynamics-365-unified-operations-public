@@ -123,6 +123,6 @@ You can also review the response time of each step of the test case by opening t
 
 You need version 1.200 or newer for response times to be available.
 
-## Save your Work
+## Save your work
 To preserve your work, click **Upload**. This will upload test automation files, including Excel test parameter files, of all selected test cases to Azure DevOps for future use.
 Once test automation files are uploaded to Azure DevOps, the next time you use RSAT, even from a different computer, you will simply need to **Load** then **Run** without the need to generate test execution files or edit Excel parameter files.
