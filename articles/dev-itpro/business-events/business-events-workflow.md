@@ -87,5 +87,4 @@ An approval or task work item can be completed in Flow using the following steps
 
 Templates for work item completion in Microsoft Flow will be available soon and a link will be provided here for easy reference.
 
-## Completion of a work item in Flow - step-by-step guide
 For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
