@@ -90,7 +90,7 @@ Microsoft Flow can configure Finance and Operations automatically for you. After
 
 1. Sign in to the Finance and Operations client.
 
-2.  Go to **System Administration \> Setup \> Buinsess Events**.
+2.  Go to **System Administration \> Setup \> Business Events**.
 
 3.  Select **Endpoints**.
 
