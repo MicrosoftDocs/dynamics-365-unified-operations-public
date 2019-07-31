@@ -8,6 +8,3 @@
     - name: Development & administration for Finance and Operations
       tocHref: /power-platform/admin
       topicHref: /dynamics365/unified-operations/dev-itpro/
-      items:
-      - name: Dynamics 365 support overview
-        tocHref: /power-platform/admin/support-overview
