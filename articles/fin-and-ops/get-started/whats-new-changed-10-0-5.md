@@ -39,6 +39,44 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
 
+## Revenue recognition
+
+Users can enter a different price that they will recognize as different from what they charge the customer.
+
+### Revenue schedules
+Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
+
+### Mulitple sales order reallocation
+
+### Workspace
+The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
+
+## Cancel bank reconciliation
+
+Users will be able to cancel bank reconciliations in chronological order of reconciliation starting with the most recent. History is tracked to show when and by whom the reconciliation was reversed. This will prevent users from having to manually adjust journals to correct any errors that occurred during the periodic process.
+
+## Create checks with a Blank status on the Checks page
+
+The Checks page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. When this feature is enabled, you cannot create checks with a blank status during the payment process, which results in wasted check stock.
+
+## Reset workflow status for vendor invoices from Unrecoverable to DraftReset workflow status for vendor invoices from Unrecoverable to Draft
+
+You can use the Workflow history page to reset the workflow status to Draft. This page can be opened from the Vendor invoice page or by going to **Common > Inquires > Workflow**. To reset the workflow status to Draft, select Recall. You can also reset the workflow status to Draft by selecting the Recall action on either the Vendor invoice or Pending vendor invoices page. After the workflow status is reset to Draft, it becomes available for editing on the Vendor invoice page.
+
+## “Select consolidation amount from” control on the consolidate online for dual currency consolidation
+
+### Business value
+This features helps you control the currency (either the accounting or reporting currency) that's used as the transaction currency in the consolidation company and can automatically copy amounts from the source company to the consolidation company if the currencies are the same.
+
+### Feature details
+> * **Add the “Select consolidation amount from” control on the consolidate online form.**
+
+> > >When the feature is enabled, the user can choose whether the accounting currency or the reporting currency from the source company will be used as the transaction currency in the consolidation company.
+
+> * **Directly copy amounts from the source company to the consolidation company if the currencies are the same.**
+
+> > >When the feature is enabled, the accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
+
 ## Gender in currency declension for Eastern Europe 
 
 You can now define the currency gender. 
