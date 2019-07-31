@@ -41,15 +41,15 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 ## Revenue recognition
 
-Users can enter a different price that they will recognize as different from what they charge the customer.
+This feature lets users enter a price that they will recognize as different from what they charge the customer. It included the following components. 
 
-### Revenue schedules
-Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
+* Revenue schedules
+> > Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
 
-### Mulitple sales order reallocation
+* Mulitple sales order reallocation
 
-### Workspace
-The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
+* Workspace
+> > The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
 
 ## Cancel bank reconciliation
 
