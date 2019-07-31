@@ -54,7 +54,7 @@ To enable secure authentication, RSAT requires a certificate to be installed on 
 ## Installation
 
 ### Installer
-Download Regression Suite Automation Tool.msi to your machine and double-click it to run the installer. 
+Download **Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. 
 
 ![Installer](media/download-msi.png)
  
