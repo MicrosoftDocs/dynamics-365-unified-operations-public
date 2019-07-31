@@ -5,7 +5,7 @@
   tocHref: /power-platform/
   topicHref: /dynamics365/index
   items:
-    - name: Development &amp; administration for Finance and Operations
+    - name: Development & administration for Finance and Operations
       tocHref: /power-platform/admin
       topicHref: /dynamics365/unified-operations/dev-itpro/
       items:
