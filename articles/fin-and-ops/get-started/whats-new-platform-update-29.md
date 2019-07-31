@@ -54,7 +54,10 @@ Role based security can be now applied to individual business events in the busi
 An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For more details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management).
 
 ## Session idle timeout
-The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform Update 29, the web browser session timeout setting is exposed in the UI, and it is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that might cause an extra load on the system. For more information, see [Set the session idle timeout](../../fin-and-ops/dev-itpro/sysadmin/session-idle-timeout.md).
+The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the UI, and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that might cause an extra load on the system. For more information, see [Set the session idle timeout](../../fin-and-ops/dev-itpro/sysadmin/session-idle-timeout.md).
+
+## Visual refresh of the web client to align with the Fluent design language
+As part of the Dynamics 365 app-wide effort, Finance and Operations will be incrementally working towards a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. See the corresponding [Visual refresh of the web client to align with the Fluent design language]() article in the Release plan for more details.
 
 ## Feature
 A brief description of the feature, including a link to a topic where customers can read the details.
