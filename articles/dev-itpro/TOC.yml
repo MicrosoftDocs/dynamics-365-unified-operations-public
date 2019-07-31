@@ -437,6 +437,8 @@
         href: perf-test/rsat/rsat-overview.md
       - name: Installation and configuration
         href: perf-test/rsat/rsat-install-configure.md
+      - name: Run test cases
+        href: perf-test/rsat/rsat-run.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
