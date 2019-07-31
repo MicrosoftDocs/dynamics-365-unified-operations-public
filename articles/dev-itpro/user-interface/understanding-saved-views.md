@@ -79,7 +79,7 @@ While most forms will work well with saved views, there are some areas that may 
      -    Form changes post super() of run() can result in some user personalizations not applying correctly.  
 
 -    Extra work may be required to ensure the values of custom filters always align to the current view or query.  
-     -    Forms may need to be instrumented to ensure the values of custom filters update based on the current query and aren’t just initialized to the same default value with each form load.  
+     -    To make sure custom filters work properly with saved views, additional work needs to be done by the platform and there will likely be uptake by forms with custom filters. More information will be provided in the future.  
 
 -    Looking forward, in the long-term, views are meant to replace modeled secondary list pages.  
      -   Typically, secondary list pages, such as Customers on hold, are menu items that point at the same form but have a different query. Because menu items that pass in queries will override any query defined on the default view, these entry points can create confusion for users. Long-term, the current plan is to deprecate secondary list pages and move them to views.
@@ -87,5 +87,5 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
--    Publishing views that contain personalizations on subforms (FactBoxes or form parts) will currently not publish the subform portion of the view. 
--    While re-publishing the current view, an update of the name of the view creates a second view instead of replacing the original one.  
+- The QuickFilter condition is not being saved to the view definition
+- Filtering done via custom filters or Advanced filter or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter or Advanced filter or sort query conditions will be saved to the view.  
