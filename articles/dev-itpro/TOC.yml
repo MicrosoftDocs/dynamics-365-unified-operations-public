@@ -439,6 +439,12 @@
         href: perf-test/rsat/rsat-install-configure.md
       - name: Run test cases
         href: perf-test/rsat/rsat-run.md
+      - name: Validate expected values
+        href: perf-test/rsat/rsat-validate-expected.md
+      - name: Chain test cases
+        href: perf-test/rsat/rsat-chain-test-cases.md
+      - name: Derived test cases
+        href: perf-test/rsat/rsat-derived-test-cases.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
