@@ -30,6 +30,7 @@ Header:
 - Budget planning process
 - Position count
 - Grand total
+- Currency
 
 Body:
 - Financial dimension set
