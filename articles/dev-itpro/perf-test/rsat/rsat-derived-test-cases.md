@@ -44,8 +44,6 @@ The derived test case is automatically created in Azure DevOps. It is a child it
 
 ![](media/derived-1.png)
  
-![](media/derived-2.png)
- 
 When you run (playback) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 
 A derived test case does not need to be part of the same test suite as its parent test case. You can move it to another suite.

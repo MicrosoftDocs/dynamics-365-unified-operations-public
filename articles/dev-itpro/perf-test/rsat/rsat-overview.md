@@ -43,7 +43,7 @@ This tool is part of the end to end flow described below. Finance and Operations
 
 ![Author, configure, and execute](media/end-to-end.png)
 
-Get familiar with this process by reading [Create and automate user acceptance tests](../../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+Get familiar with this process by reading [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
 ## Lifecycle Services
 Using Lifecycle Services (LCS) and BPM is recommended but not mandatory. BPM is a great tool to manage and distribute test libraries, especially for Microsoft partners and independent software vendors. 

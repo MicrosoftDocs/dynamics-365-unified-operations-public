@@ -37,7 +37,7 @@ An important component of a test case is validation of expected values. You can 
 
 ![Validate menu item](media/validate-test-case.png)
  
-For more information on how to create task recordings, see [Task recorder](../../user-interface/task-recorder).
+For more information on how to create task recordings, see [Task recorder](../../user-interface/task-recorder.md).
 
 ## Validate expected values using operators
 
