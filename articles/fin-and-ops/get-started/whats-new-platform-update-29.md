@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29 (October 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,13 +57,13 @@ An attachment recovery feature has been added that provides a recycle bin for re
 The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the UI, and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that might cause an extra load on the system. For more information, see [Set the session idle timeout](../../fin-and-ops/dev-itpro/sysadmin/session-idle-timeout.md).
 
 ## Visual refresh of the web client to align with the Fluent design language
-As part of the Dynamics 365 app-wide effort, Finance and Operations will be incrementally working towards a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. See the corresponding [Visual refresh of the web client to align with the Fluent design language]() article in the Release plan for more details.
+As part of the Dynamics 365 app-wide effort, Finance and Operations will be incrementally working towards a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. See the corresponding [Visual refresh of the web client to align with the Fluent design language](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) topic in the Release plan for more details.
 
 ## (Preview) Saved views 
 [Saved views]() is now available in Public Preview! This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. See the [Saved views](saved-views.md) article for more information, including details on how to enable this feature in developer environments, as well as the [Build forms that fully utilize saved views](../../fin-and-ops/dev-itpro/understanding-saved-views.md) article. Note this preview feature will continue to evolve and change until it becomes generally available. 
 
 ## (Preview) New grid control
-The [new grid control]() is now available in Public Preview! This new grid serves as a replacement for the existing grid control and boasts faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-React extensible control, in which case the existing grid control will be used on that page. Note this preview feature will continue to evolve and change until it becomes generally available.
+The [new grid control](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in Public Preview! This new grid serves as a replacement for the existing grid control and boasts faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-React extensible control, in which case the existing grid control will be used on that page. Note this preview feature will continue to evolve and change until it becomes generally available.
 
 To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.  
 
@@ -102,10 +102,10 @@ A brief description of the feature, including a link to a topic where customers 
 ### Platform update 29 bug fixes
 For information about the bug fixes included in each of the updates that are part of Platform update 29, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com).
 
-### Dynamics 365 April '19 release notes
+### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
