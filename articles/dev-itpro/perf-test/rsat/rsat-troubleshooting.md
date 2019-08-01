@@ -39,7 +39,8 @@ To troubleshoot issues with the tool during Playback operation, open the develop
 
 ## Authentication certificate and installation
 
-+ The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter an error message when you try to run a test case: **Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.**
++ The authentication certificate must be created and installed by an administrator on the same computer where RSAT is installed. If it is not created by an admin, you will encounter an error message when you try to run a test case:  
+ - **Cannot access Finance and Operations environment. Verify your settings and make sure the environment is available.**  
 + If you have used a previous version of RSAT on the same computer, close it and uninstall it before installing a new version.
 
 ## Screen resolution
