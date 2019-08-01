@@ -39,7 +39,7 @@ To save the value of a variable while recording the test in Task Recorder, right
  
 ![Copy menu item in task recorder](media/task-recorder-copy.png)
 
-In the Excel parameters file, these saved values appear in the **Saved** variables table of the **General** Tab.
+In the Excel parameters file, these saved values appear in the **Saved variables** table of the **General** Tab.
  
 ![Saved variables in Excel](media/saved-variables.png)
  
