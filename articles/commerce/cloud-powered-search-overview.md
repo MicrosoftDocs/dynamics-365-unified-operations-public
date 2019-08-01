@@ -40,7 +40,7 @@ This investment for powering product discoverability in Dynamics 365 for Commerc
 
 With Dynamics 365 for Commerce, search experience shall have following improved capabilities to help retailer achieve better product discoverability, and be scalable and performant for eCommerce traffic.
 
-+ **Browse and search:** Search relevance and performance is key to our omnichannel experience, as product discovery relies primarily on search f+or information retrieval and content navigation. An effective and efficient search helps increase conversion.
++ **Browse and search:** Search relevance and performance is key to our omnichannel experience, as product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient search helps increase conversion.
 
     ![Search landing](./media/SearchLanding.png)
 
