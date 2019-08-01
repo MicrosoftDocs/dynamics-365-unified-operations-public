@@ -68,8 +68,8 @@ This topic provides information on how to use the same ADFS for Microsoft Dynami
 
 ## New deployments
 
-1.	Run through the LocalAgent Installation instructions in the [Setup and Deploy On-Premises](setup-deploy-on-premises-pu12.md#configureconnector) guide. However, before installing the LocalAgent do step 2 below. 
+1.	Run through the local agent installation instructions in the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) content. However, before installing the local agent, do step 2 below. 
 2.	Modify the local agent configuration file and set the **office365AdfsCompatibility** value to **True**.
-3.	Continue going through the [Setup and deploy on-premises](setup-deploy-on-premises-pu12.md#configureconnector) guide and deploy a base version that contains Plafrom update 28 or later. If there is no base Plafrom update 28 version, deploy the highest base version available. Then service with Platform update 28 on top.
+3.	Continue going through the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) guide and deploy a base version that contains Plafrom update 28 or later. If there is no base Plafrom update 28 version, deploy the highest base version available. Then service with Platform update 28 on top.
 
 
