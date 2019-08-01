@@ -1,3 +1,5 @@
+# Enrich a category landing page
+
 This topic describes what enriching a category means and how you can do that from the authoring tool.
 Your site has a default category page which is used when rendering category data, unless you have a different category page defined for a specific category. It contains required things like refiners, categorized product placement, sorting options, choice summary and pagination controls.
 
