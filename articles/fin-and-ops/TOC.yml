@@ -277,14 +277,7 @@
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
-  - name: Compliance
-    items:
-    - name: Audit policy rules
-      href: ../financials/general-ledger/audit-policy-rules.md
-    - name: Audit policy violations and cases
-      href: ../financials/general-ledger/audit-policy-violations-cases.md
-    - name: Define audit policies for source documents
-      href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+ 
   - name: Cost management
     href: ../supply-chain/cost-management/cost-management-home-page.md
     items:
@@ -1259,7 +1252,14 @@
           href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
           href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md     
-    - name: Public sector
+      - name: Compliance
+       items:
+       - name: Audit policy rules
+      href: ../financials/general-ledger/audit-policy-rules.md
+    - name: Audit policy violations and cases
+      href: ../financials/general-ledger/audit-policy-violations-cases.md
+    - name: Define audit policies for source documents
+      href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md - name: Public sector
       href: ../financials/public-sector/public-sector-functionality.md
       items:
       - name: Plan for public sector functionality
