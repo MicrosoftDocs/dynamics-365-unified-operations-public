@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form:  RetailHardwareProfile
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: 
 
 # ms.tgt_pltfrm: 
