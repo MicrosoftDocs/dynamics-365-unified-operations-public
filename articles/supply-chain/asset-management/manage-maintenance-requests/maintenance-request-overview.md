@@ -72,15 +72,16 @@ The action pane buttons are organized in tabs on the action pane. Here is a brie
 
 | Button name        | Description                                                                                |
 |--------------------|--------------------------------------------------------------------------------------------|
-| Edit               | Edit the selected request.                                                                 |
-| New                | Create a new request.                                                                      |
-| Delete             | Delete the selected request.                                                               |
-| Work order pool    | Connect the selected request to a work order pool.                                         |
-| Work order         | Create a work order based on the selected request.                                         |
-| Object fault       | Open **Object faults** and create a fault registration on the request.                     |
-| Work orders        | Show a list of all work orders connected to the request.                                   |
-| Send loan object   | Select a loan object to be a temporary replacement for the object selected on the request. |
-| Return loan object | Register the loan object as returned.                                                      |
-| Request stage      | Update request stage.                                                                      |
-| Stage log          | Log displaying the stages of the selected request.                                         |
-| Request details    | Print a report displaying details of the selected request.                                 |
+| Edit               | Edit the selected maintenance request.                                                                 |
+| New                | Create a new maintenance request.                                                                      |
+| Delete             | Delete the selected maintenance request.                                                               |
+| Work order pool    | Connect the selected maintenance request to a work order pool.                                         |
+| Work order         | Create a work order based on the selected maintenance request.                                         |
+| Asset fault        | Open **Asset faults** and create a fault registration on the maintenance request.                     |
+| Work orders        | Show a list of all work orders connected to the maintenance request.                                   |
+| Update maintenance request state      | Update maintenance request state.                                                                      |
+| Lifecycle state log          | Log displaying the lifecycle states of the selected maintenance request.                                         |
+| Maintenance request details    | Print a report displaying details of the selected maintenance request.                                 |
+| Send loan asset    | Select a loan asset to be a temporary replacement for the asset selected on the maintenance request. |
+| Return loan asset    | Register the loan asset as returned. |
+
