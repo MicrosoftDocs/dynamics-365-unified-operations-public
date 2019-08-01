@@ -5,7 +5,7 @@ title: Create maintenance requests
 description: This topic explains how to create a maintenance request in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,12 +25,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Create maintenance requests
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 
