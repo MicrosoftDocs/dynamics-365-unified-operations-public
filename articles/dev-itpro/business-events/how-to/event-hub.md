@@ -39,23 +39,23 @@ This tutorial provides the steps you must follow to make business events work wi
 
 2. Give this app permissions to the Azure Key Vault API.
 
-    ![Business event catalog](../media/BE_EH_api.png)
+    ![Business event catalog](../../media/BE_EH_api.png)
 
 3. On the App registration, create an application secret (Copy down the value.)
 
-   ![Business event catalog](../media/BE_EH_secret.jpg)
+   ![Business event catalog](../../media/BE_EH_secret.jpg)
 
 4. On the azure key vault give permissions to the newly created app registration
     
-    ![Business event catalog](../media/BE_EH_permission.jpg)
+    ![Business event catalog](../../media/BE_EH_permission.jpg)
 
 5. Create a new secret in the vault , the value of this secret needs to be the connection string to your Event hub
 
-    ![Business event catalog](../media/BE_EH_connectionstring.jpg)
+    ![Business event catalog](../../media/BE_EH_connectionstring.jpg)
 
 6. Create a new endpoint configuration in Finance & Operations for the Event Hu.b Go to **System administration > Setup > Business events > Business events catalog > Tabpage Endpoints**.
 
-    ![Business event catalog](../media/BE_EH_endpointconfig.jpg)
+    ![Business event catalog](../../media/BE_EH_endpointconfig.jpg)
 
 7. Choose **Azure Event Hub** as the end point type in the **End point configuration wizard**.
 
