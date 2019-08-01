@@ -1253,7 +1253,7 @@
         - name: View posted sales tax transactions
           href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md     
       - name: Compliance
-       items:
+        items:
        - name: Audit policy rules
          href: ../financials/general-ledger/audit-policy-rules.md
        - name: Audit policy violations and cases
