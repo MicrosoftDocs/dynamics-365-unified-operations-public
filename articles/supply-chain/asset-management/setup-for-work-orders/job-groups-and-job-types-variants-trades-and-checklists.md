@@ -141,23 +141,25 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 ![Figure 5](media/05-setup-for-work-orders.png)
 
 
-## Create a Job Type
+## Create a maintenance job type
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job types**.
+1. Click **Asset management** > **Setup** > **Jobs** > **Maintenance job types**.
 2. Click **New**.
-3. Insert a job type ID in the **Job type** field.
-4. Insert a name for the job type in the **Name** field. In the **Details** group, you can see an overview of the number of job variants, skills, certificates, succeeding jobs, and object types created on the job type. In the **Setup lines** field, you see the number of job type setup lines set up on the job type. In the **Objects** field, you see the number of active objects that are currently using the job type.
-5. On the **General** FastTab, select a job group in the **Job group** field.
-6. Select "Yes" on the **Maintenance stop** toggle button if this job type requires a maintenance stop of the equipment before the job can be carried out.
-7. On the **Description** FastTab, insert a description of the job type.
-8. On the **Variants** FastTab, you can add job variants to the job type.
-9. On the **Competencies** FastTab, you can add skills and certificate requirements to the job type.
-10. If a specific job type is required as the next job type to be carried out, add it on the **Succeeding jobs** FastTab. You can also set up **Variant** and **Trade** related to the job type. In the **Displacement** field, you can add number of days that the succeeding job should start before or after the job using this job type has started. If you insert a positive number, for example "5", it means that the succeeding job starts five days after the start of the job that is related to the job type. If you insert a negative number, for example "-3", it means that the succeeding job will start three days before the scheduled start of the job that is related to the job type.  
+3. Insert an ID in the **Maintenance job type** field.
+4. Insert a name for the maintenance job type in the **Name** field. In the **Details** group, you can see an overview of the number of maintenance job type variants, skills, certificates, succeeding jobs, and asset types created on the maintenance job type. In the **Setup lines** field, you see the number of maintenance job type default lines set up on the maintenancejob type. In the **Assets** field, you see the number of active assets that are currently using the maintenance job type.
+5. On the **General** FastTab, select a maintenance job type category in the **Maintenance job type category** field.
+6. Select "Yes" on the **Maintenance downtime activities** toggle button if this maintenance job type requires a maintenance stop of the equipment before the job can be carried out.
+7. On the **Description** FastTab, insert a description of the maintenance job type.
+8. On the **Maintenance job type variants** FastTab, you can add variants to the maintenance job type.
+9. On the **Required skills** and **Required certificates** FastTabs, you can add skills and certificate requirements to the maintenance job type.
+10. If a specific maintenance job type is required as the next job type to be carried out, add it on the **Succeeding jobs** FastTab. You can also set up **Maintenance job type variant** and **Trade** related to the maintenance job type. In the **Delay by days** field, you can add number of days that the succeeding job should start before or after the job using this maintenance job type has started. If you insert a positive number, for example "5", it means that the succeeding job starts five days after the start of the job that is related to the maintenance job type. If you insert a negative number, for example "-3", it means that the succeeding job will start three days before the scheduled start of the job that is related to the maintenance job type.  
 >[!NOTE]
->If you add more than one job type line, the sequence of the lines indicate the order in which they should be carried out, starting from the top of the list.  
-11. On the **Object types** FastTab, you can add object types to the job type, as shown in the figure below.
+>If you add more than one maintenance job type line, the sequence of the lines indicate the order in which they should be carried out, starting from the top of the list.  
+11. On the **Asset types** FastTab, you can add asset types to the maintenance job type.
+
 
 ![Figure 6](media/06-setup-for-work-orders.png)
+
 
 ## Create job type setup lines and related forecasts, checklists, tools, description, and attachments
 
