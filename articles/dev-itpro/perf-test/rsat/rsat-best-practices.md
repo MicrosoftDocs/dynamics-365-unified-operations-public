@@ -44,7 +44,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Using RSAT
 
-1. Upon opening the tool for the first time, click on Settings and ensure you have all the desired settings. 
+1. Upon opening the tool for the first time, select **Settings** and ensure you have all the desired settings. 
 2. Before installing a new version of the tool, it is recommended to close and uninstall the previous version. 
 3. When you install a new version of the tool, regenerate ALL test execution files.
  
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The following are typical usage sequences.
 
-**Sequence A:  Load->New->Edit->Run->Upload**
+**Sequence A: Load > New > Edit > Run > Upload**
 
 1. Click **Load**.
 2. Select desired test cases.
@@ -69,14 +69,14 @@ The following are typical usage sequences.
 5. Click **Run**.
 6. Optional: After a successful run, click **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
 
-**Sequence B:  Load->Edit->Run->Upload**
+**Sequence B: Load > Edit > Run > Upload**
 
 1. Click **Load**. If all parameter files already exist, there is no need to click **New** to regenerate them.
 2. Optional: Edit Excel file to run tests with different parameters.
 3. Click **Run**.
 4. Optional: After a successful run, click **Upload** to upload all generated automation files (including Excel test parameter files) to Azure DevOps. 
 
-**Sequence C:  Load->New (for All Test Cases)->Run->Upload**
+**Sequence C: Load > New (for All Test Cases) > Run > Upload**
 
 This sequence is recommended after installing a new version of the tool. 
 
