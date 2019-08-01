@@ -2,10 +2,10 @@
 # required metadata
 
 title: Maintenance request reports
-description: This topic explains how to create maintenance request reports in Enterprise Asset Management.
+description: This topic explains how to create maintenance request reports in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,52 +13,53 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Maintenance request reports
 
+[!include [banner](../../includes/banner.md)]
 
-In Asset Management, you can generate two reports regarding maintenance requests, one displaying details, and one providing a list to be used for planning and follow-up.
+[!include [banner](../../includes/preview-banner.md)]
 
-## Create maintenance request details report
+In Asset Management, you can generate two reports that are related to maintenance requests. One report shows details, and the other report provides a list that can be used for planning and follow-up.
 
-You can create a detailed report for maintenance requests that shows various information related to the request.
+## Create a Maintenance request details report
 
-1. Click **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request details**.
-2. On the **Records to include** FastTab, you can select specific maintenance requests to be included in the report.
-3. If required, you can set up report generation as a batch job by filling out the fields on the **Run in the background** FastTab.
-4. Click **OK** to generate the report.
+The **Maintenance request details** report shows various information that is related to maintenance requests.
 
-Below you see an example of a maintenance request details report.
+1. Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request details**.
+2. On the **Records to include** FastTab, you can select specific maintenance requests to include on the report.
+3. On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.
+4. Select **OK** to generate the report.
+
+The following illustration shows an example of the **Maintenance request details** report.
 
 ![Figure 1](media/09-manage-maintenance-requests.png)
 
+## Create a Maintenance request list report
 
-## Create maintenance request list report
+The **Maintenance request list** report shows a list of all maintenance requests of the same request type.
 
-You can create a maintenance request list report displaying a list of all maintenance requests using the same request type.
+1. Select **Asset management** \> **Reports** \> **Maintenance requests** \> **Maintenance request list**.
+2. On the **Records to include** FastTab, you can make selections to define which maintenance requests are included on the report.
+3. On the **Run in the background** FastTab, you can set up report generation as a batch job, as you require.
+4. Select **OK** to generate the report.
 
-1. Click **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request list**.
-2. On the **Records to include** FastTab, you can make selections to be included in the report.
-3. If required, you can set up report generation as a batch job by filling out the fields on the **Run in the background** FastTab.
-4. Click **OK** to generate the report.
-
-Below you see an example of a maintenance request list report for all active maintenance requests.
+The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.
 
 ![Figure 2](media/10-manage-maintenance-requests.png)
-
