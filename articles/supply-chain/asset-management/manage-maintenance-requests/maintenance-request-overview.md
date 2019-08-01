@@ -2,10 +2,10 @@
 # required metadata
 
 title: Maintenance requests
-description: This topic provides an overview for managing maintenance requests in Asset Management
+description: This topic provides an overview about managing maintenance requests in Asset Management
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,65 +13,64 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Maintenance requests
 
-Maintenance requests are notes or declarations that can be created to make a manager or planner aware that an asset may require a maintenance or repair job - without creating a work order. A work order may subsequently be created based on a maintenance request if the contents of the maintenance request are considered to be valid for a work order to be created.
+Maintenance requests are notes or declarations that are created to notify a manager or planner that an asset might require a maintenance or repair job, but without creating a work order. If the contents of a maintenance request are considered valid, a work order can then be created based on the maintenance request.
 
-Maintenance requests can be created for any asset in **Asset Management**. Various maintenance request types can be created, depending on how your company uses maintenance requests. Here are some examples:
+Maintenance requests can be created for any asset in Asset Management. Various types of maintenance requests can be created, depending on how your company uses maintenance requests. Here are some examples:
 
+- Maintenance requests
+- Notes
+- Corrections or enhancements
+- Investments
+- Depot repair (This type is used when you receive assets from another location so that you can do a maintenance or repair job, and you then return the asset after the job is completed.)
 
-- Maintenance requests  
-- Notes  
-- Corrections / Enhancements  
-- Investments  
-- Depot repair - for the purpose of managing repair of assets that you receive from another location to carry out a maintenance or repair job, and then return the asset after the job is completed.
+## View maintenance requests
 
-
-## All maintenance requests
-
-Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests**. The list displays some of the information related to a maintenance request.
+To view maintenance requests, select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests**, **Active maintenance requests**, or **My functional location maintenance requests**. Each list page shows some of the information that is related to a maintenance request.
 
 ![Figure 1](media/01-manage-maintenance-requests.png)
 
->[!NOTE]
->Click **Asset management** > **Common** > **Maintenance requests** > **My functional location maintenance requests** to see a list of maintenance requests containing functional locations, or assets installed on functional locations, you are related to as a worker (set up in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)).  
-- Customer account information is available in Asset Service Management (external maintenance), but not in Enterprise Asset Management (internal maintenance).  
+> [!NOTE]
+> Use the **My functional location maintenance requests** list page to view a list of maintenance requests that contain either functional locations that you're related to as a worker or assets that are installed on functional locations that you're related to as a worker. (For information about how to set up functional locations on maintenance workers, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+> 
+> Although customer account information is available in Asset Service Management (external maintenance), it isn't available in Asset Management (internal maintenance).
 
-In the **All maintenance requests** list (grid view), click on a link in the **Maintenance request** column to show the Details view of the selected record.
+To open the details view of a record, on the **All maintenance requests** list page, in the grid view, select a link in the **Maintenance request** column.
 
 ![Figure 2](media/02-manage-maintenance-requests.png)
 
-The action pane buttons are organized in tabs on the action pane. Here is a brief description of the buttons relating to Asset Management:
+The buttons on the Action Pane are organized on tabs. The following table briefly describes the buttons that are related to Asset Management.
 
-| Button name        | Description                                                                                |
-|--------------------|--------------------------------------------------------------------------------------------|
-| Edit               | Edit the selected maintenance request.                                                                 |
-| New                | Create a new maintenance request.                                                                      |
-| Delete             | Delete the selected maintenance request.                                                               |
-| Work order pool    | Connect the selected maintenance request to a work order pool.                                         |
-| Work order         | Create a work order based on the selected maintenance request.                                         |
-| Asset fault        | Open **Asset faults** and create a fault registration on the maintenance request.                     |
-| Work orders        | Show a list of all work orders connected to the maintenance request.                                   |
-| Update maintenance request state      | Update maintenance request state.                                                                      |
-| Lifecycle state log          | Log displaying the lifecycle states of the selected maintenance request.                                         |
-| Maintenance request details    | Print a report displaying details of the selected maintenance request.                                 |
-| Send loan asset    | Select a loan asset to be a temporary replacement for the asset selected on the maintenance request. |
-| Return loan asset    | Register the loan asset as returned. |
+| Button name                      | Description |
+|----------------------------------|-------------|
+| Edit                             | Edit the selected maintenance request. |
+| New                              | Create a new maintenance request. |
+| Delete                           | Delete the selected maintenance request. |
+| Work order pool                  | Connect the selected maintenance request to a work order pool. |
+| Work order                       | Create a work order, based on the selected maintenance request. |
+| Asset fault                      | Open **Asset faults**, where you can create a fault registration on the selected maintenance request. |
+| Work orders                      | Show a list of all work orders that are connected to the selected maintenance request. |
+| Update maintenance request state | Update the maintenance request state. |
+| Lifecycle state log              | View a log that shows the lifecycle states of the selected maintenance request. |
+| Maintenance request details      | Print a report that shows details of the selected maintenance request. |
+| Send loan asset                  | Select a loan asset that should be a temporary replacement for the asset that is selected on the selected maintenance request. |
+| Return loan asset                | Register the loan asset as returned. |
 
