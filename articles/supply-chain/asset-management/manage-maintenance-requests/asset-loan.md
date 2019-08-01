@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Object loan
-description: This topic describes how to register loan objects in Enterprise Asset Management.
+title: Asset loan
+description: This topic describes how to register loan assets in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/26/2019
@@ -30,36 +30,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object loan
+# Asset loan
 
 
+If your company receives assets for repair or maintenance jobs from other locations, internally or from customers, and you loan assets temporarily to the locations or customers that send assets you to be repaired, **Asset Management** can keep track of your asset loans.
 
-This topic describes how to register loan objects in Enterprise Asset Management. If your company receives objects for repair or maintenance jobs from other locations, internally or from customers, and you loan objects temporarily to the locations or customers that send objects to you to be repaired, **Enterprise Asset Management** can keep track of your object loans.
+## Register loan asset on a maintenance request
 
-## Register loan object on a request
-
-1. Click **Enterprise asset management** > **Common** > **Requests** > **All requests** or **Active requests**.
-2. Select the request on which you want to register a loan, and click **Edit**.
-3. In the **Request** form, click **Send loan object**.
-4. Select the object and insert an expected return date.
+1. Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
+2. Select the maintenance request on which you want to register a loan, and click **Edit**.
+3. In the **Request** form, click **Send loan asset**.
+4. Select the asset and insert an expected return date.
 5. Click **OK**.
 
 >[!NOTE]
->It is only possible to send a loan object if an object of the same object type is available. The loan object must have an object stage that allows it to be used as a loan object, for example, "InStorage". When the loan object has been registered, the object stage of that object is automatically updated, for example, to "OnLoan".
+>
+- It is only possible to send a loan asset if an asset of the same asset type is available. 
+- The loan asset must have an asset lifecycle state that allows it to be used as a loan asset, for example, "InStorage". When the loan asset has been registered, the asset lifecycle state of that asset is automatically updated to, for example, "OnLoan".
 
-Click **Enterprise asset management** > **Common** > **Object loan** > **All object loans** to see a complete list of all the objects you have loaned to other locations or customers. If the **Ended** check box is selected on an object, it means that the object has been registered as returned to your company. The figure below shows a screenshot of the interface.
+Click **Asset management** > **Common** > **Asset loan** > **All asset loans** to see a complete list of all the assets you have loaned to other locations or customers. If the **Ended** check box is selected on an asset, it means that the asset has been registered as returned to your company.
 
-![Figure 1](media/05-manage-requests.png)
+![Figure 1](media/06-manage-maintenance-requests.png)
 
-In **Active object loans**, you see a list of all the loan objects that have not
-yet been returned to your company.
+In **Active asset loans**, you see a list of all the loan assets that have not yet been returned to your company.
 
->[!NOTE]
->In **All object loans**, if you select a loan and click **Transfer to customer**, the loan object is transferred to the customer as an active object.
 
-## Register loan object as returned
+## Register loan asset as returned
 
-1. Click **Enterprise asset management** > **Common** > **Object loan** > **Active object loans**.
-2. Select the object loan that you want to register as returned and click **Return object loan**.
+1. Click **Asset management** > **Common** > **Asset loan** > **Active asset loans**.
+2. Select the asset loan that you want to register as returned and click **Return asset loan**.
 3. Insert date and time in the **Returned** field and click **OK**.
-4. Update the **Active object loans** list by pressing **F5**. You will notice that the loan is no longer on the active list.
+4. Update the **Active asset loans** list, and you will notice that the loan is no longer on the active list.
