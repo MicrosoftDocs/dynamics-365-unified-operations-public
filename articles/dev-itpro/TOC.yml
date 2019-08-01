@@ -520,7 +520,7 @@
       href: user-interface/messaging-api-center-bar-details.md
     - name: Message center, message bar, and message details FAQ
       href: user-interface/messaging-user.md
-  - name: Primary form pattern guidelines
+  - name: Form pattern guidelines
     items:
     - name: Form patterns for migrated forms
       href: user-interface/select-form-pattern.md
