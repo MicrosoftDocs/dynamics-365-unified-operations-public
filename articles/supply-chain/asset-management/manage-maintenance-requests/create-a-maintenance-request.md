@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a maintenance request
+title: Create maintenance requests
 description: This topic explains how to create a maintenance request in Asset Management.
 author: josaw1
 manager: AnnBe
@@ -25,54 +25,53 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Create a maintenance request
+# Create maintenance requests
 
+Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 
-Maintenance requests can be used if maintenance workers or production workers discover a need for equipment repair, and it is not possible to carry out that repair job right away.
+**Example:** While a maintenance worker is making a repair, she discovers that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, she creates a maintenance request on the asset and enters a short description of the issue.
 
-**Example:** A maintenance worker is making a repair. During this repair he discovers that another asset at the same location needs to be serviced, but he has no time or spare parts to carry out the repair job. Therefore, he creates a maintenance request on the asset containing a short description of the problem.
+The **Active maintenance requests** section of the **Related information** pane on the right side of the **All assets** or **Active assets** page (**Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**) shows the active maintenance requests that are attached to the selected asset.
 
-In **All assets** or **Active assets** (**Asset management** > **Common** > **Assets** > **All assets** or **Active assets**), you can see the active maintenance requests attached to the selected asset in the **Related information** pane > **Active maintenance requests** section, placed on the right side of the screen.
+1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
+2. Select **New**.
+3. In the **Create request** dialog box, in the **Maintenance request type** field, select the type of maintenance request. A default type is suggested.
+4. In the **Description** field, enter a name or title that briefly describes the maintenance request.
+5. In the **Functional location** and **Asset** fields, select a functional location or an asset, or a combination of a functional location and an asset, as you require. You can create a maintenance request without selecting an asset, and the asset can be added to the maintenance request later. If the maintenance worker who is signed in to Microsoft Dynamics 365 for Finance and Operations is related to a resource that is related to an asset, the **Asset** field is automatically set.
 
-1. Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
-2. Click the **New** button.
-3. In the **Create request** drop-down dialog, select the maintenance request type in the **Maintenance request type** field. A default type is suggested.
-4. Insert a name or title that briefly describes the maintenance request in the **Description** field.
-5. Select **Functional location** or **Asset**, or a combination, as required. It is possible to create a maintenance request without selecting an asset. Then the asset is added to the maintenance request later. If the maintenance worker who is logged in to Dynamics 365 for Finance and Operations is related to a resource, which is related to an asset, the **Asset** field is automatically filled out.
+    If a maintenance request is already attached to the selected asset, a message bar appears at the top of the **Create request** dialog box to notify you about the ID of the existing maintenance request. A message bar also notifies you if the asset is covered by a warranty agreement.
 
-- If the selected asset already has maintenance requests attached to it, an info message is shown at the top of the **Create request** drop-down dialog, showing the maintenance request ID of an existing maintenance request. If the asset is covered by a warranty, an info message is also shown.  
+6. In the **Service level** field, select a service level that indicates the urgency of the request.
+7. If you selected an asset in step 5, you can use the **Fault symptom**, **Fault area**, and **Fault type** fields to create a fault registration.
+8. If the maintenance request has caused maintenance downtime, enter the start date and time of the downtime.
 
-6. Select a service level regarding the urgency of the request in the **Service level** field.
-7. If you have selected an asset, you can create a fault registration by selecting fault data in the **Fault symptom**, **Fault area**, and **Fault type** fields.
-8. If the maintenance request has caused a maintenance downtime, insert start date and time.
-9. Your name is automatically inserted in the **Started by** field.
-10. The **Actual start** field is automatically filled out with current date and time, but you can change it, if required.
-11. If required, insert further notes in the **Notes** field.
-12. Click **OK**.
+    The **Started by** field is automatically set to your name.
 
-
+10. The **Actual start** field is automatically set to the current date and time. However, you can change the value as you require.
+11. In the **Notes** field, enter any additional notes that are required.
+12. Select **OK**.
 
 ![Figure 1](media/03-manage-maintenance-requests.png)
 
+## Subsequent processing of maintenance requests
 
-## Subsequent processing of the maintenance request
+After a maintenance request is created, but before it's converted to a work order, various information should be updated on it. Typically, a planner or another administrative employee completes this task.
 
-After the maintenance request has been created, and before it is converted to a work order, various data should be updated on the maintenance request. This is typically done by a planner or another administrative employee. In **All maintenance requests** or **Active maintenance requests**, select the request you want to work with, and click **Edit**.
+- On the **All maintenance requests** or **Active maintenance requests** page, select the request to work with, and then select **Edit**.
 
-In the Details view, you can update various information. For example, you can
+In the details view, you can update various information. Here are some examples:
 
-- select and verify the asset. If, required it is possible to set the **Asset verified** toggle button to "No" later, to select another object.  
-- select responsible maintenance worker group and/or responsible maintenance worker. For more information on that setup, refer to [Responsible maintenance workers](../setup-for-requests/responsible-workers.md).  
-- select a maintenance job type and, if relevant, the related maintenance job variant and job trade.  
-- insert geographic coordinates in the **Latitude** and **Longitude** fields. If coordinates are added to a maintenance request, they are automatically transferred to a related work order. 
-
+- Select and verify the asset. If you must select a different asset later, you can set the **Asset verified** option to **No**.
+- Select a responsible maintenance worker group and/or a responsible maintenance worker. For more information about the required setup, see [Responsible maintenance workers](../setup-for-requests/responsible-workers.md).
+- Select a maintenance job type and, if this information is relevant, a related maintenance job variant and a job trade.
+- In the **Latitude** and **Longitude** fields, enter geographic coordinates. Any coordinates that are added to a maintenance request are automatically transferred to a related work order. 
 
 ![Figure 2](media/04-manage-maintenance-requests.png)
 
->[!NOTE]
->If you select an asset when you create the maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, if required, by clicking the **Asset fault** button in **All maintenance requests**.
+> [!NOTE]
+> If you select an asset when you create a maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, as you require. To add faults, select **Asset fault** on the **All maintenance requests** page.
