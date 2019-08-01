@@ -5,7 +5,7 @@ title: Asset loans
 description: This topic describes how to register loan assets in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,12 +25,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08031
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Asset loans
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 If your company receives assets for repair or maintenance jobs from either internal locations or customers, and if you temporarily loan assets to those locations or customers, Asset Management can track the asset loans.
 
