@@ -17,7 +17,7 @@ ms.search.form: SystemParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
