@@ -31,7 +31,9 @@ ms.dyn365.ops.version:
 # Enrich a category landing page
 
 This topic describes what enriching a category means and how you can do that from the authoring tool.
-Your site has a default category page which is used when rendering category data, unless you have a different category page defined for a specific category. It contains required things like refiners, categorized product placement, sorting options, choice summary and pagination controls.
+Your site has a default category page which is used when rendering category data, unless you have a different category page defined for a specific category. Default category landing page contains required things like refiners, categorized product placement, sorting options, choice summary and pagination controls.
+
+ ![Enriched category landing page](./media/CategoryLandingPages.png)
 
 In many cases you will want to have more and specific content for your categories landing page. When you navigate to "Retail" in the authoring tool, you will see a list of categories from the channel assigned to the site. You will notice a column called "Enriched", when ticked, indicates that the category page has been enriched. Unticked "Enriched" column indicates that the category page for that specific category will use the default category page and content. You can preview the category page for both enriched and non-enriched categories by clicking the category name.
 
