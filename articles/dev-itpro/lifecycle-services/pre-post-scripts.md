@@ -1,12 +1,40 @@
+---
+# required metadata
 
+title: Local agent pre- and post- deployment scripts
+description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+author: faix
+manager: AnnBe
+ms.date: 08/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-# Local Agent Pre and Post Deployment Scripts
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: osfaixat
+ms.search.validFrom: 2019-07-31 
+ms.dyn365.ops.version: Platform update 28 
+
+---
+
+# Local agent pre- and post- deployment scripts
 
 [!include [banner](../includes/banner.md)]
 
-Local Agent 2.3.0. supports the execution of pre and post deployment scripts. Customers can now setup PowerShell scripts that will be executed before and after deploying the environment. This is applicable to both deployments/redeployments as well as servicing operations.
+Local agent 2.3.0. supports the execution of pre- and post- deployment scripts. Customers can now setup PowerShell scripts that will be executed before and after deploying the environment. This is applicable to both deployments/redeployments as well as servicing operations.
 
-To enable this feature, a **Scripts** folder needs to be created in the agent file share. To enable executing a pre deployment script create a **PreDeployment.ps1** file in this folder. Similarly, to enable executing a post deployment script create a **PostDeployment.ps1** file. Examples of the folder structure are shown below:
+To enable this feature, a **Scripts** folder needs to be created in the agent file share. To enable executing a pre-deployment script, create a **PreDeployment.ps1** file in this folder. Similarly, to enable executing a post-deployment script, create a **PostDeployment.ps1** file. Examples of the folder structure are shown below:
 
 - \\\fileserver\agent\scripts\PreDeployment.ps1 
 - \\\fileserver\agent\scripts\PostDeployment.ps1  
@@ -37,6 +65,7 @@ Servicing:
 ## Customizations
 
 The default timeout for a scripts execution is set to 30 minutes. This value can be changed by modifying the localagent-config.json file and reinstalling the Local Agent using the modified file. The following attribute defines timeout value and needs to be set as shown below (this is part of the LocalAgent component in the file):
+
 ```json 
 "powershellScriptRunner": { 
     "timeoutMinutes": { 
