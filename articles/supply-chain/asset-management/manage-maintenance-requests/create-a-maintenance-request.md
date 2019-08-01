@@ -57,6 +57,7 @@ In **All assets** or **Active assets** (**Asset management** > **Common** > **As
 12. Click **OK**.
 
 
+
 ![Figure 1](media/03-manage-maintenance-requests.png)
 
 
@@ -64,16 +65,15 @@ In **All assets** or **Active assets** (**Asset management** > **Common** > **As
 
 After the maintenance request has been created, and before it is converted to a work order, various data should be updated on the maintenance request. This is typically done by a planner or another administrative employee. In **All maintenance requests** or **Active maintenance requests**, select the request you want to work with, and click **Edit**.
 
-In the Details view, you can update various information. For example you can
+In the Details view, you can update various information. For example, you can
 
 - select and verify the asset. If, required it is possible to set the **Asset verified** toggle button to "No" later, to select another object.  
-- select responsible group and/or responsible worker. For more information on how to set up responsible workers and worker groups, refer to [Responsible workers](../setup-for-requests/responsible-workers.md).  
-- select a job type and, if relevant, the related job variant and job trade.  
-- insert geographic coordinates in the **Latitude** and **Longitude** fields. If coordinates are added to a request, they are automatically transferred to a related work order. This information is useful if you work with linear asset management.
+- select responsible maintenance worker group and/or responsible maintenance worker. For more information on that setup, refer to [Responsible maintenance workers](../setup-for-requests/responsible-workers.md).  
+- select a maintenance job type and, if relevant, the related maintenance job variant and job trade.  
+- insert geographic coordinates in the **Latitude** and **Longitude** fields. If coordinates are added to a maintenance request, they are automatically transferred to a related work order. 
 
-The figure below shows a screenshot of the interface.
 
-![Figure 2](media/02-manage-requests.png)
+![Figure 2](media/04-manage-maintenance-requests.png)
 
 >[!NOTE]
->If you select an object when you create the request, you can add one fault to the object. After the request has been created, you can add more faults, if required, by clicking the **Object fault** button in **All Requests**.
+>If you select an asset when you create the maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, if required, by clicking the **Asset fault** button in **All maintenance requests**.
