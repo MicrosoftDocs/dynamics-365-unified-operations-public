@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
