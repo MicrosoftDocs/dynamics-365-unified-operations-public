@@ -49,6 +49,7 @@ With Dynamics 365 for Commerce, search experience shall have following improved 
     ![ChoiceSummary](./media/ChoiceSummary.png)
 
 + **Immersive auto-suggest:** Current auto-suggest shows only keywords that trigger search for the matching keyword. With new enhancements, users will be able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
+
     ![immersiveAutoSuggest](./media/ImmersiveAutoSuggest.png)
 
 + **Sort:** With this enhancement, users will be able to sort search, browse, and refine search results by details, such as price, product name, product number, new, top-selling, or recently added.
