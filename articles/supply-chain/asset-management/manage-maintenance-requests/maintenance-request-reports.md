@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Request reports
-description: This topic explains how to request reports in Enterprise Asset Management.
+title: Maintenance request reports
+description: This topic explains how to create maintenance request reports in Enterprise Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/26/2019
@@ -30,39 +30,35 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Request reports
+# Maintenance request reports
 
 
+In Asset Management, you can generate two reports regarding maintenance requests, one displaying details, and one providing a list to be used for planning and follow-up.
 
-This topic explains how to request reports. In Enterprise Asset Management, you can generate two reports regarding requests, one displaying details, and one providing a list to be used for planning and follow-up.
+## Create maintenance request details report
 
-## Create request details report
+You can create a detailed report for maintenance requests that shows various information related to the request.
 
-You can create a detailed report for requests that shows various information related to the request.
-
-1. Click **Enterprise asset management** > **Reports** > **Requests** > **Request details**.
-2. On the **Records to include** FastTab, you can select specific requests to be included in the report.
+1. Click **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request details**.
+2. On the **Records to include** FastTab, you can select specific maintenance requests to be included in the report.
 3. If required, you can set up report generation as a batch job by filling out the fields on the **Run in the background** FastTab.
 4. Click **OK** to generate the report.
 
-Below you see an example of a request details report.
+Below you see an example of a maintenance request details report.
 
-![Figure 1](media/08-manage-requests.png)
+![Figure 1](media/09-manage-maintenance-requests.png)
 
-![Figure 2](media/09-manage-requests.png)
 
-## Create request list report
+## Create maintenance request list report
 
-You can create a request list report displaying a list of all requests using the
-same request type.
+You can create a maintenance request list report displaying a list of all maintenance requests using the same request type.
 
-1. Click **Enterprise asset management** > **Reports** > **Requests** > **Request list**.
+1. Click **Asset management** > **Reports** > **Maintenance requests** > **Maintenance request list**.
 2. On the **Records to include** FastTab, you can make selections to be included in the report.
 3. If required, you can set up report generation as a batch job by filling out the fields on the **Run in the background** FastTab.
 4. Click **OK** to generate the report.
 
-Below you see an example of a request list report for all active requests.
+Below you see an example of a maintenance request list report for all active maintenance requests.
 
-![Figure 3](media/10-manage-requests.png)
+![Figure 2](media/10-manage-maintenance-requests.png)
 
-![Figure 4](media/11-manage-requests.png)
