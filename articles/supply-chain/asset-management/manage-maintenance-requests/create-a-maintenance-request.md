@@ -71,7 +71,7 @@ After a maintenance request is created, but before it's converted to a work orde
 In the details view, you can update various information. Here are some examples:
 
 - Select and verify the asset. If you must select a different asset later, you can set the **Asset verified** option to **No**.
-- Select a responsible maintenance worker group and/or a responsible maintenance worker. For more information about the required setup, see [Responsible maintenance workers](../setup-for-requests/responsible-workers.md).
+- Select a responsible maintenance worker group and/or a responsible maintenance worker. For more information about the required setup, see [Responsible maintenance workers](../setup-for-maintenance-requests/responsible-workers.md).
 - Select a maintenance job type and, if this information is relevant, a related maintenance job variant and a job trade.
 - In the **Latitude** and **Longitude** fields, enter geographic coordinates. Any coordinates that are added to a maintenance request are automatically transferred to a related work order. 
 
