@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Review collections information
-description: This procedure walks you through how to review collections information as well as various setup options and collections transactions. 
+description: This topic explains how to review collections information as well as various setup options and collections transactions. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,42 +30,36 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks you through how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
-
+This topic explains how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
 
 ## Create customer pools
-1. Go to Credit and collections > Setup > Customer pools.
-    * Use this page to set up customer pools, which are queries that define a group of customer accounts that can be displayed and managed for collections or aging processes. Use customer pools to filter information on the Collections list page and on related list pages. You can also use customer pools to filter the customer accounts that are included when aging snapshots are created.  
-    * You can use customer pools to filter the customer accounts that are included when aging snapshots are created.  
-2. Click New.
-3. In the Pool ID field, type a value.
-4. In the Pool description field, type a value.
-5. Click Select pool criteria.
-6. In the Criteria field, type a value.
-7. Click OK.
-8. Click Preview customer pool.
+1. In the navigation pane, go to **Modules > Credit and collections > Setup > Customer pools**.
+- Use this page to set up customer pools, which are queries that define a group of customer accounts that can be displayed and managed for collections or aging processes. Use customer pools to filter information on the **Collections** list page and on related list pages. You can also use customer pools to filter the customer accounts that are included when aging snapshots are created.  
+- You can use customer pools to filter the customer accounts that are included when aging snapshots are created.  
+2. Select **New**.
+3. In the **Pool ID** field, type a value.
+4. In the **Pool description** field, type a value.
+5. Click **Select pool criteria**.
+6. In the **Criteria** field, type a value.
+7. Select **OK**.
+8. Select **Preview customer pool**.
 
 ## Create collections agents
-1. Go to Credit and collections > Setup > Collections agents.
-    * Use this page to set up workers as collections agents and optionally assign customer pools to them. A collections agent is a person who works with customers to make sure that payments are collected in a timely manner.  
-    * Collections agents that are set up in this page are automatically added to a collections team. If a team is selected in the Team field in the Accounts receivable parameters page, collections agents are added to that team. If a team is not selected, a new team named Collections is created automatically and the collections agents are added to that team.  
-2. Click New.
-3. Click Add.
-4. Click Close.
-5. Click Add.
-6. In the list, mark the selected row.
-7. In the Pool ID field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record.
-9. Select or clear the Default pool check box.
-    * Select this option to include all customer pools in filter lists for the selected collections agent. If this option is not selected, only the customer pools that are assigned to the collections agent are available in filter lists.  
+1. In the navigation pane, go to **Modules > Credit and collections > Setup > Collections agents**.  
+- Use this page to set up workers as collections agents and optionally assign customer pools to them. A *collections agent* is a person who works with customers to make sure that payments are collected in a timely manner.  
+- Collections agents that are set up in this page are automatically added to a collections team. If a team is selected in the **Team** field in the **Accounts receivable parameters** page, collections agents are added to that team. If a team is not selected, a new team named Collections is created automatically and the collections agents are added to that team.  
+2. Select the desired agent, then select **Add** in the page.
+3. In the **Pool ID** field, select the desired record in the drop-down menu.
+4. Select or clear the **Default pool** check box.
+- Select this option to include all customer pools in filter lists for the selected collections agent. If this option is not selected, only the customer pools that are assigned to the collections agent are available in filter lists.  
 
 ## Create aging period definition
-1. Go to Credit and collections > Setup > Aging period definitions.
-    * You can use aging period definitions to analyze the maturity of customer accounts and vendor accounts, based on a date that you enter. Each aging period that you set up for the aging period definition corresponds to a column on the list page or in the form or report when the analysis is performed.  
-2. Click New.
-3. In the Aging period definition field, type a value.
-4. In the Description field, type a value.
-    * Specify the period name, unit, and interval for each aging period to include in the aging period definition. The line that has 0 (zero) in the Unit field represents the date that the analysis is run. Lines before zero will have -1, and lines after zero will have 1 as a default entry in the Unit field, but can be changed.  Click the Up and Down buttons to rearrange the lines. The 0 (zero) line cannot be moved.  
+1. In the navigation pane, go to **Modules > Credit and collections > Setup > Aging period definitions**.
+- You can use aging period definitions to analyze the maturity of customer accounts and vendor accounts, based on a date that you enter. Each aging period that you set up for the aging period definition corresponds to a column on the list page or in the form or report when the analysis is performed.  
+2. Select **New**.
+3. In the **Aging period definition** field, type a value.
+4. In the **Description** field, type a value.
+- Specify the period name, unit, and interval for each aging period to include in the aging period definition. The line that has 0 (zero) in the Unit field represents the date that the analysis is run. Lines before zero will have -1, and lines after zero will have 1 as a default entry in the Unit field, but can be changed. Select **Up** and **Down** to rearrange the lines. The 0 (zero) line cannot be moved.  
     * Place the pointer where you want to insert a new line and then click Add.  
     * Select an indicator to represent the aging period in the Collections form and list page. For example, you might select a green indicator for a current period, a yellow indicator for a 30-days-past period, and a red indicator for a 90-days-past period.  
     * Select the printing direction for the aging period definition. This selection determines the order in which the columns appear on the Customer aging report or the Vendor aging report.  Forward – Print columns in the same order in which the headings appear in the table, starting with the top row.  Backward – Print columns in the reverse order in which the headings appear in the table, starting with the bottom row.    
