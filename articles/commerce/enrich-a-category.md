@@ -1,3 +1,33 @@
+---
+# required metadata
+
+title: Enrich a category landing page
+description: 
+author: Ashish Harchwani
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: Ashish Harchwani
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+
 # Enrich a category landing page
 
 This topic describes what enriching a category means and how you can do that from the authoring tool.
