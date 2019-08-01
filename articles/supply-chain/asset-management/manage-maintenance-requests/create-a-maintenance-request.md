@@ -5,7 +5,7 @@ title: Create a maintenance request
 description: This topic explains how to create a maintenance request in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,15 +13,15 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
@@ -46,7 +46,6 @@ In **All assets** or **Active assets** (**Asset management** > **Common** > **As
 5. Select **Functional location** or **Asset**, or a combination, as required. It is possible to create a maintenance request without selecting an asset. Then the asset is added to the maintenance request later. If the maintenance worker who is logged in to Dynamics 365 for Finance and Operations is related to a resource, which is related to an asset, the **Asset** field is automatically filled out.
 
 - If the selected asset already has maintenance requests attached to it, an info message is shown at the top of the **Create request** drop-down dialog, showing the maintenance request ID of an existing maintenance request. If the asset is covered by a warranty, an info message is also shown.  
-- When you select an asset, two or three tabs are available: The **My assets** tab contains assets related to the functional locations to which you (the maintenance worker who is logged on the system) may be allocated. If no functional locations are set up on a maintenance worker in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md), the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". 
 
 6. Select a service level regarding the urgency of the request in the **Service level** field.
 7. If you have selected an asset, you can create a fault registration by selecting fault data in the **Fault symptom**, **Fault area**, and **Fault type** fields.
