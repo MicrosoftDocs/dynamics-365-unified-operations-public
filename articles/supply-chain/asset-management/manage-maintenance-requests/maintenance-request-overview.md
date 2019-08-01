@@ -70,7 +70,7 @@ The buttons on the Action Pane are organized on tabs. The following table briefl
 | Delete                           | Delete the selected maintenance request. |
 | Work order pool                  | Connect the selected maintenance request to a work order pool. |
 | Work order                       | Create a work order, based on the selected maintenance request. |
-| Asset fault                      | Open **Asset faults**, where you can create a fault registration on the selected maintenance request. |
+| Asset fault                      | Click **Asset faults**, where you can create a fault registration on the selected maintenance request. |
 | Work orders                      | Show a list of all work orders that are connected to the selected maintenance request. |
 | Update maintenance request state | Update the maintenance request state. |
 | Lifecycle state log              | View a log that shows the lifecycle states of the selected maintenance request. |
