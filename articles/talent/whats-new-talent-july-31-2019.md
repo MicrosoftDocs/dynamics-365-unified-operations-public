@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 31, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/31/2019
+ms.date: 7/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,11 +25,11 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2019-07-31
+ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (July 31, 2019)"
+# What's new or changed in Dynamics 365 for Talent (July 30, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -47,25 +47,25 @@ Changes described in this section apply to build number 8.1.2409.
 
 ### Region support for Canada and Southeast Asia
 
-We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to the these new supported regions.
 
 ### New Active positions list page
 
-With this week's changes, the options for position based lists include: All positions, Active positions, Open positions and Inactive positions. The new active positions list page will display only those position, open or filled, that are active as of the current date. 
+The options for position-based lists now include: **All positions**, **Active positions**, **Open positions**, and **Inactive positions**. The new **Active positions** list page displays only those positions, open or filled, that are active as of the current date. 
 
-### Allow course participants to be added to open courses.
+### Allow course participants to be added to open courses
 
-This week's changes, corrects an issue where only direct reports can be registered for open courses.
+This week's changes correct an issue where only direct reports can be registered for open courses.
 
 ### FTE Analysis displaying incorrect FTE number
 
-With this week's changes, the FTE analysis has been corrected in the Analytics tab of personnel management.
+**FTE analysis** has been corrected in the **Analytics** tab of **Personnel management**.
 
 ### Final comments label translation
 
-In this release the "final comments" label is now translated in the review form.
+The **Final comments** label is now translated in the review form.
 
 ## In preview
 
@@ -77,4 +77,4 @@ For more information about how changes are published, see [Provision Talent](htt
 
 ### View extended information for performance in manager self-service
 
-A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews, which their employees co-manage. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports. 
+A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
