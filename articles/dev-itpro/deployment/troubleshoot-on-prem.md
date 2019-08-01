@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -313,7 +313,7 @@ Press any key to exit
 
 **Reason:** You are trying to install LoalAgent v2.3.0 or later and you are not using an up to date localagent-config.json
 
-**Steps:** You can get the newer version of the localagent-config.json from LCS by following the "Configure a connector" step from the [Deployment Guide](setup-deploy-on-premises-pu12.md#configureconnector)
+**Steps:** You can get the newer version of the localagent-config.json from LCS by following the "Configure a connector and install an on-premises local agent" step from the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) content.
 
 You can also add the following values to the localagent-config.json file manually under components:
 
