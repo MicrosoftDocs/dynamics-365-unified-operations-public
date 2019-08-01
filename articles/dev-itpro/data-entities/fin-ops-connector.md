@@ -55,7 +55,7 @@ This action can be used to fetch a record for a specific data entity from the ta
 
 *Entity name* refers to the data entity in Finance and Operations from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
 
-*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The following syntax must be followed to specify the keys.
+*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The values must be specified as a comma separated list of values in the order defined in the entity.
 
 **Create a record**
 
