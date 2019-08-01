@@ -48,67 +48,69 @@ Maintenance checklist templates and maintenance checklist variables are used for
 
 First, you set up the required maintenance job type categories, maintenance job type variants, and maintenance job trades. Next you create maintenance job types. Then, you create all the variations of maintenance job types that are required for your equipment in **Maintenance job type defaults**. Forecasts, maintenance checklists, and tools can be set up for a combination of maintenance job type in **Maintenance job type defaults**.
 
-**Note:** A job type can only be related to one job group.
 
-## Create a job group
+>[!NOTE]
+>A maintenance job type can only be related to one maintenance job type category.
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job groups**.
+
+## Create a mainteance job type category
+
+1. Click **Asset management** > **Setup** > **Jobs** > **Maintenance job type categories**.
 2. Click **New**.
-3. Insert a job group ID in the **Job group** field.
-4. Insert a name for the group in the **Name** field.
+3. Insert an ID in the **Maintenance job type category** field.
+4. Insert a name in the **Name** field.
 
-When you have related job groups to job types, you will see how many job types are related to the job group in the **Job types** field.
-
-The following figure shows a screenshot of the interface.
+When you have related maintenance job type categories to maintenance job types, you will see how many maintenance job types are related to the maintenance job type category in the **Job types** field.
 
 ![Figure 1](media/01-setup-for-work-orders.png)
 
-## Create a job variant
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job variants**.
+## Create a maintenance job type variant
+
+1. Click **Asset management** > **Setup** > **Jobs** > **Maintenance job type variants**.
 2. Click **New**.
-3. Insert the job variant ID in the **Variant** field and a description of the job variant in the **Description** field.
-4. On the **Job types** FastTab, click **Add** to add a job type.
-5. Select the job type in the **Job type** field.
-6. Repeat steps 4-5 to add more job types to the variant. In the **Job types** field you can see the number of job types added to the selected job variant.
+3. Insert the job variant ID in the **Maintenance job type variant** field and a description in the **Description** field.
+4. On the **Maintenance job types** FastTab, click **Add** to add a maintenance job type.
+5. Select the maintenance job type in the **Maintenance job type** field.
+6. Repeat steps 4-5 to add more maintenance job types to the maintenance job type variant. In the **Job types** field, you see the number of maintenance job types added to the selected maintenance job type variant.
 
-The following figure shows a screenshot of the interface.
 
 ![Figure 2](media/02-setup-for-work-orders.png)
 
-## Create a job trade
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job trades**.
+## Create a maintenance job trade
+
+1. Click **Asset management** > **Setup** > **Jobs** > **Maintenance job trade**.
 2. Click **New**.
-3. Insert the job trade ID in the **Trade** field and a description of the job trade in the **Description** field.
-4. On the **Competencies** FastTab > **Skills** tab, click **Add** to add a new skill to be related to the job trade.
+3. Insert the maintenance job trade ID in the **Trade** field and a description in the **Description** field.
+4. On the **Skills** FastTab, click **Add** to add a new skill to be related to the maintenance job trade.
 5. Select the skill in the **Skill** field.
 6. Select the skill level in the **Level** field.
-7. Repeat steps 4-6 to add more skills to the job trade. In the **Skills** field you can see the number of skills added to the selected job trade.
-8. Click the **Certificates** tab if you want to add certificates to the job trade.
+7. Repeat steps 4-6 to add more skills to the maintenance job trade. In the **Skills** field, you see the number of skills added to the selected maintenance job trade.
+8. Click the **Certificates** FastTab if you want to add certificates to the maintenance job trade.
 9. Click **Add** to add a new certificate.
 10. Select the certificate in the **Certificate type** field.
-11. Repeat steps 9-10 to add more certificates to the job trade. In the **Certificates** field you can see the number of certificates added to the selected job trade.
+11. Repeat steps 9-10 to add more certificates to the maintenance job trade. In the **Certificates** field, you see the number of certificates added to the selected maintenance job trade.
 
-The following figure shows a screenshot of the interface.
 
 ![Figure 3](media/03-setup-for-work-orders.png)
 
-## Create a checklist variable
 
-When you create checklist lines in the job type setup, you must select a checklist type. "Variable" is a checklist type. It is used to define a possible result in a range on a checklist line, which is related to a work order line. A variable is a way to create a set of predefined outcomes without having to make an exact measurement.
+## Create a maintenance checklist variable
+
+When you create maintenance checklist lines in maintenance job type default, you must select a maintenance checklist type. "Variable" is a maintenance checklist type. It is used to define a possible result in a range on a maintenance checklist line, which is related to a work order line. A variable is a way to create a set of predefined outcomes without having to make an exact measurement.
 
 *Example 1:* You can measure oil level by defining 'Level too high', 'Level too low', and 'Level within range'. For each of the three values, you define if the value result is "Pass", "Fail", or "None".
 
 *Example 2:* Make a visual inspection or assessment of a piece of equipment regarding wear and tear.
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Checklists** > **Checklist variables**.
-2. Press CTRL+N, or click the **New** button.
+1. Click **Asset management** > **Setup** > **Maintenance checklists** > **Maintenance checklist variables**.
+2. Click the **New** button.
 3. Insert an ID in the **Variable** field and a name in the **Name** field.
 4. Click **Add** to add a line for a variable.
 5. A sequential line number is automatically inserted in the **Line number** field. You can change the line numbers when you have added all the lines, if required. When a line is selected, and you press the arrow-down button on your keyboard, the next number in the sequence is automatically inserted below.
 6. Insert a value description in the **Value** field.
-7. Select a status for the line in the **Status** field.
+7. Select a result for the line in the **Result** field.
 
 ![Figure 4](media/04-setup-for-work-orders.png)
 
