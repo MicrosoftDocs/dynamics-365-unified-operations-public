@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
