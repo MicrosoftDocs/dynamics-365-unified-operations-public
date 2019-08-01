@@ -78,9 +78,9 @@ For the latest regulatory update plans, refer to the following table.
    | July 2019            |   10.0.4      | Mexico   |  DIOT third party declaration - changes in layout 2019   |
    | July 2019            |   10.0.4      | Brazil    |   NF-e ICMS-ST - ordinance CAT 42/18 for SP state - CAT 42/18
    | July 2019            |   10.0.4      | Brazil    |   NF-e Decree 54.308/18 - RS NF   |
-     | Pending            |   10.0.5      | Brazil    |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags   |
        | Pending            |   10.0.5      | Brazil    |   Sped contributions practical guide 1.31. new guidance   |
          | Pending            |   10.0.5      | Brazil    |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00   |
+          | Pending            |   10.0.5      | Spain    |   Validation rules change from October 1, 2019   |
    
 
 
