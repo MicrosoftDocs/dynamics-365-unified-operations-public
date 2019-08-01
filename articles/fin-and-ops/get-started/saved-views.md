@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [private preview banner](../includes/preview-banner.md)]
 
 ## Introduction
 Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
