@@ -1252,7 +1252,7 @@
           href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
           href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md     
-      - name: Compliance
+      - name: Audit workbench
         items:
         - name: Audit policy rules
           href: ../financials/general-ledger/audit-policy-rules.md
