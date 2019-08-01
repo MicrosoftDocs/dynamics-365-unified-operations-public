@@ -35,46 +35,47 @@ This tutorial provides the steps you must follow to make business events work wi
 
 1. Create an active directory application registration. Be sure to note the app ID.
 
-  ![Business event catalog](../media/BE_EH_aad.png)
+    ![Business event catalog](../media/BE_EH_aad.png)
 
 2. Give this app permissions to the Azure Key Vault API.
 
-  ![Business event catalog](../media/BE_EH_api.png)
+    ![Business event catalog](../media/BE_EH_api.png)
 
 3. On the App registration, create an application secret (Copy down the value.)
 
-  ![Business event catalog](../media/BE_EH_secret.jpg)
+   ![Business event catalog](../media/BE_EH_secret.jpg)
 
 4. On the azure key vault give permissions to the newly created app registration
-![Business event catalog](../media/BE_EH_permission.jpg)
+    
+    ![Business event catalog](../media/BE_EH_permission.jpg)
 
 5. Create a new secret in the vault , the value of this secret needs to be the connection string to your Event hub
-![Business event catalog](../media/BE_EH_connectionstring.jpg)
 
-6. Create a new Endpoint configuration in Finance & Operations for the Event Hub from ** System Administration > Setup > Business events > Business events
-catalog > Tabpage Endpoints**
+    ![Business event catalog](../media/BE_EH_connectionstring.jpg)
 
-![Business event catalog](../media/BE_EH_endpointconfig.jpg)
+6. Create a new endpoint configuration in Finance & Operations for the Event Hu.b Go to **System administration > Setup > Business events > Business events catalog > Tabpage Endpoints**.
 
-7. Choose Azure Event Hub as the end point type in the end point configuration wizard
+    ![Business event catalog](../media/BE_EH_endpointconfig.jpg)
 
-8. Click Next
+7. Choose **Azure Event Hub** as the end point type in the **End point configuration wizard**.
 
-9: Choose an Endpoint name
+8. Click **Next**.
 
-10. For the hub name, fill in the name of your Event Hub
+9. Choose an endpoint name.
 
-11. In Azure active directory application id fill in the application id created above
+10. For the hub name, fill in the name of your Event Hub.
 
-12. In application secret , fill in the value that was created and copied above
+11. In the **Azure active directory application ID** field, enter the application ID that was created above.
 
-13. In Key vault name fill in the DNS name that can be found on the overview tab of the Key vault configuration in your Azure portal
+12. In the **Application secret** field, enter the value that was created and copied above.
 
-14. In Key vault secret name, fill in the name from the secret created above
+13. In the **Key vault name** field, enter the DNS name that can be found on the **Overview** tab of the Key vault configuration in your Azure portal.
 
-15. Click ok.
+14. In the **Key vault secret name** field, enter the name from the secret that was created above.
 
-16. You can now activate one or more business events to be sent to this end point
+15. Click **OK**.
+
+16. You can now activate one or more business events to be sent to this end point.
 
 
 
