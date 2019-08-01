@@ -114,31 +114,32 @@ When you create maintenance checklist lines in maintenance job type default, you
 
 ![Figure 4](media/04-setup-for-work-orders.png)
 
-## Create a checklist template
 
-Checklist templates can be used as a common set of tasks that a worker must perform in order to complete a work order correctly. The templates are referenced from checklist lines on the job type setup. Templates can be referenced across multiple job type setup lines, making it easy to reuse a set of common checklist tasks. Examples include general safety instructions, or a list of items and conditions to be checked on a specific pump or similar models of a conveyor belt.
+## Create a maintenance checklist template
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Checklists** > **Checklist templates**.
-2. Press CTRL+N, or click the **New** button. A template ID is automatically inserted in the **Checklist template** field.
+Maintenance checklist templates can be used as a common set of tasks that a worker must perform in order to complete a work order correctly. The templates are referenced from maintenance checklist lines on the maintenance job type default. Templates can be referenced across multiple maintenance job type default lines, making it easy to reuse a set of common maintenance checklist tasks. Examples include general safety instructions, or a list of items and conditions to be checked on a specific pump or similar models of a conveyor belt.
+
+1. Click **Asset management** > **Setup** > **Maintenance checklists** > **Maintenance checklist templates**.
+2. Click the **New** button. A template ID is automatically inserted in the **Maintenance checklist template** field.
 3. Insert a template name in the **Name** field.
-4. Click **Add** to add a template line.
+4. On the **Maintenance checklist lines** FastTab, click **Add** to add a template line.
 5. A sequential line number is automatically inserted in the **Line number** field. You can change the line numbers when you have added all the lines, if required. When a line is selected, and you press the arrow-down button on your keyboard, the next number in the sequence is automatically inserted below.
-6. In the **Type** field, select a type for the checklist line. For each checklist type, the related fields are shown on the **Properties** FastTab.
+6. In the **Type** field, select a type for the maintenance checklist line. For each maintenance checklist type, the related fields are shown on the **Line details** FastTab.
 
-  a. "Text" is used to add a checklist line with a text description of what to do. This checklist type can be used if you want a worker to check or inspect something, without expecting a specific (measurable) result. Insert a name/heading in the **Name** field, and insert a description of what to do in the Instructions field. If this step is mandatory for the checklist, select "Yes" on the **Mandatory** toggle button.
-  b. "Header" is used as a heading to group the checklist lines shown below the header. This is useful if you have several checklist lines that can be divided into specific areas. In that case, the use of headers provides an overview for the worker who is going to complete a checklist with many checklist lines. Insert a descriptive name in the **Name** field.
-  c. "Template" is used if you want to make a reference to an existing template. Insert a name for the template in the **Name** field, and select the template in the **Template** field.
-  d. "Variable" is used to define a possible result in a range on a checklist line. The setup of checklist variables is described in the sub section above. Insert a name to describe the variable in the **Name** field. Select the variable in the **Variable** field. Insert a description of what to do in the Instructions field. If this step is mandatory for the checklist, select "Yes" on the **Mandatory** toggle button.
-  e. "Measurement" is used to record a specific measurement. You can set up the measurement to be related to a predefined counter. Insert a name for the template in the **Name** field. If this step is mandatory for the checklist, select "Yes" on the **Mandatory** toggle button. If you want to use the measurement line as a counter registration, select the counter in the **Counter** field; the related **Unit** field is automatically updated. If you have selected a counter, select the update method in the **Value** field. Insert the allowed value range in the **Min. value** and **Max. value** fields. Insert a description of what to do in the **Instructions** field.
+- "Text" is used to add a maintenance checklist line with a text description of what to do. This maintenance checklist type can be used if you want a worker to check or inspect something, without expecting a specific (measurable) result. Insert a name/heading in the **Name** field, and insert a description of what to do in the **Instructions** field. If this step is mandatory for the maintenance checklist, select "Yes" on the **Mandatory** toggle button.
+- "Header" is used as a heading to group the maintenance checklist lines shown below the header. This is useful if you have several maintenance checklist lines that can be divided into specific areas. In that case, the use of headers provides an overview for the worker who is going to complete a maintenance checklist with many maintenance checklist lines. Insert a descriptive name in the **Name** field.
+- "Template" is used if you want to make a reference to an existing template. Insert a name for the template in the **Name** field, and select the template in the **Template** field.
+- "Variable" is used to define a possible result in a range on a maintenance checklist line. The setup of maintenance checklist variables is described in the sub section above. Insert a name to describe the variable in the **Name** field. Select the variable in the **Variable** field. Insert a description of what to do in the **Instructions** field. If this step is mandatory for the checklist, select "Yes" on the **Mandatory** toggle button.
+- "Measurement" is used to record a specific measurement. You can set up the measurement to be related to a predefined counter. Insert a name for the template in the **Name** field. If this step is mandatory for the maintenance checklist, select "Yes" on the **Mandatory** toggle button. If you want to use the measurement line as a counter registration, select the counter in the **Counter** field; the related **Unit** field is automatically updated. If you have selected a counter, select the update method in the **Value** field. Insert the allowed value range in the **Min. value** and **Max. value** fields. Insert a description of what to do in the **Instructions** field.
 
 >[!NOTE]
->The "Measurement" type without a counter setup is treated as an independent measurement registration for which there is no automatic follow-up in Enterprise Asset Management. Likewise, if the selected counter type is not present on the object related to the work order, the checklist task is handled as an independent measurement. The counter value can be changed multiple times; it will not be posted until the [work order stage](../setup-for-work-orders/work-order-stages.md) is changed to a stage in which the **Process checklist** toggle button is set to "Yes".
+>The "Measurement" type without a counter setup is treated as an independent measurement registration for which there is no automatic follow-up in Asset Management. Likewise, if the selected counter type is not present on the asset related to the work order, the maintenance checklist task is handled as an independent measurement. The counter value can be changed multiple times; it will not be posted until the [work order lifecycle state](../setup-for-work-orders/work-order-stages.md) is changed to a state in which the **Process maintenance checklist** toggle button is set to "Yes".
 
 7. The **Checks** field at the top of the form shows the total number of checklist lines in your template, including the nested lines in an existing template, which you may have referenced in your template.
 
-The following figure shows a screenshot of the interface.
 
 ![Figure 5](media/05-setup-for-work-orders.png)
+
 
 ## Create a Job Type
 
