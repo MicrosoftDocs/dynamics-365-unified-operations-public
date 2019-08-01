@@ -56,6 +56,6 @@ These are the following components that are considered to be essential for categ
 ## Enriching a category landing page
 
 If you want a category landing page to have a more tailored experience for a specific category, you can choose to enrich the category landing page for that category. For example, if you might choose to add a marketing video and some category storytelling to get the shoppers attention. This can be done via enriching the page for this category. Refer to [Enriching a category landing page]() for more details.
-  ![Enriched category landing view](./media/CategoryLandingPages.png)
+ ![Enriched category landing view](./media/CategoryLandingPages.png)
 
 ## Auto-suggest & search results page
