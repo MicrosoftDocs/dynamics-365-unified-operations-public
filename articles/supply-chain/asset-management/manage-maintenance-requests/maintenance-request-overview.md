@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage maintenance requests
+title: Maintenance requests
 description: This topic provides an overview for managing maintenance requests in Asset Management
 author: josaw1
 manager: AnnBe
@@ -30,17 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage maintenance requests
-
-Contents of this session:
-
-- Create maintenance requests  
-- Register asset loan  
-- View list of asset loans  
-- Register inbound and outbound assets  
-
-
-## Maintenance requests
+# Maintenance requests
 
 Maintenance requests are notes or declarations that can be created to make a manager or planner aware that an asset may require a maintenance or repair job - without creating a work order. A work order may subsequently be created based on a maintenance request if the contents of the maintenance request are considered to be valid for a work order to be created.
 
@@ -54,7 +44,7 @@ Maintenance requests can be created for any asset in **Asset Management**. Vario
 - Depot repair - for the purpose of managing repair of assets that you receive from another location to carry out a maintenance or repair job, and then return the asset after the job is completed.
 
 
-### All maintenance requests
+## All maintenance requests
 
 Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests**. The list displays some of the information related to a maintenance request.
 
