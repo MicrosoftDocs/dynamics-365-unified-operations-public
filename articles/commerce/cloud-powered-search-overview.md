@@ -1,4 +1,34 @@
-# Cloud powered product discoverability
+---
+# required metadata
+
+title: Cloud powered search for e-commerce scale & traffic
+description: 
+author: Ashish Harchwani
+manager: annbe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Consumer
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: Ashish Harchwani
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 
+---
+
+# Cloud powered search for e-commerce scale & traffic
 
 Product discoverability is easiest & quick way for Retailer’s customer to be able to discover the product via browsing thru categories, search & filtering. 
 
