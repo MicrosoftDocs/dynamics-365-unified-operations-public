@@ -22,7 +22,6 @@ ms.search.scope: Operations, Retail
 ms.search.region: Mexico
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.scope: Retail
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.2
 
