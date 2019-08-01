@@ -5,7 +5,7 @@ title: Build forms that fully utilize saved views
 description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.  
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: SysUserSetup, DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
@@ -32,9 +31,7 @@ ms.dyn365.ops.version: Platform update 28
 # Build forms that fully utilize saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
-
-
+[!include [private preview banner](../includes/preview-banner.md)]
 
 Saved views are an important expansion of personalization capabilities in Dynamics 365 for Finance and Operations. While the [Saved views](../../fin-and-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
@@ -87,5 +84,5 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
-- The QuickFilter condition is not being saved to the view definition
-- Filtering done via custom filters or Advanced filter or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter or Advanced filter or sort query conditions will be saved to the view.  
+- The QuickFilter condition is not being saved to the view definition.
+- Filtering done via custom filters, advanced filters, or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  
