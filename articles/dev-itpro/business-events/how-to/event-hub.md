@@ -35,7 +35,7 @@ This tutorial provides the steps you must follow to make business events work wi
 
 1. Create an active directory application registration. Be sure to note the app ID.
 
-    ![Business event catalog](../../../media/BE_EH_aad.png)
+    ![Business event catalog](../../media/BE_EH_aad.png)
 
 2. Give this app permissions to the Azure Key Vault API.
 
