@@ -111,7 +111,7 @@ With the saved views feature, organizational management of personalizations is s
 The publish capability allows organizations to define corporate standard views that are optimized for their business, targeted at users in specific security roles.  
 
 ## Publishing views
-During the publish process, views can be assigned to one or more security roles, meaning any user with that role will be able to access and use that view, though they cannot edit the view. Currently, only system administrators have rights to the **Publish** action in the view selector drop-down menu, but a new security role will be available in Platform update 30 to give publish rights to other trusted users.  
+During the publish process, views can be assigned to one or more security roles, meaning any user with that role will be able to access and use that view, though they cannot edit the view. Currently, only system administrators have rights to the **Publish** action in the view selector drop-down menu, but a new security role will be available in a future update to give publish rights to other trusted users.  
 
 To publish a view, follow these steps: 
 1.	Create and save a personal copy of the view that you want to publish. 
@@ -160,9 +160,9 @@ To enable saved views while the feature is in preview, follow the steps below:
 
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-2.	**Find the feature**: Navigate to the **Feature management** workspace. If **Saved views** does not appear in the list, select the "Check for updates" button.   
+2.	**Find the feature**: Navigate to the **Feature management** workspace. If **Saved views** does not appear in the list, select the **Check for updates** button.   
 
-3.	**Enable the feature**: Find the Saved views feature in the list of features, and click the **Enable now** button on the details pane.
+3.	**Enable the feature**: Find the **Saved views** feature in the list of features, and click the **Enable now** button on the details pane.
 
 All subsequent user sessions will start with saved views enabled.  
 
@@ -175,7 +175,7 @@ When views are enabled, any existing personalizations for a user and form are sa
 Views are available on most but not all pages in Finance and Operations. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
 
 ### Who is allowed to publish views?
-Currently system administrators are the only users who have rights to publish views.  A new security role is planned for Platform update 30, which would provide customers more flexibility to who can publish.  
+Currently system administrators are the only users who have rights to publish views.  A new security role is planned in a future update, which would provide customers more flexibility to who can publish.  
 
 ### Why am I not able to save filters with this view? 
 There are a few reasons why a filter may not appear to save with a view: 
