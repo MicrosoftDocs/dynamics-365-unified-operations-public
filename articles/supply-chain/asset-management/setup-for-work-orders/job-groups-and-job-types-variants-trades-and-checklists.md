@@ -161,32 +161,30 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 ![Figure 6](media/06-setup-for-work-orders.png)
 
 
-## Create job type setup lines and related forecasts, checklists, tools, description, and attachments
+## Create maintenance job type default lines and related forecasts, maintenance checklists, tools, description, and attachments
 
-1. Click **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job type setup** or **Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job types** > select a job type > **Job type setup** button.
+1. Click **Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults** or **Asset management** > **Setup** > **Jobs** > **Maintenance job types** > select a maintenance job type > **Maintenance job type defaults** button.
 2. Click **New**.
-3. Depending on how specific the job type setup should be, make selections in the **Functional location**, **Object type**, **Product**, **Model**, and/or **Object** fields.
-4. If a job type has not automatically been inserted, select a job type in the **Job type** field.
-5. If required, select a job variant and a job trade in the **Variant** and **Trade** fields.
-6. Click the **Forecast** button. In **Job type setup forecast**, you can make forecasts on hours, items, and expenses.
-7. Click **Add** on the relevant tabs and make your selections to create the required forecasts for the job type.
-8. On the **Items** tab, you can select inventory dimensions to be shown on the item line. Select **Inventory** > **Dimensions**, select the dimensions you want to display, select "Yes" on the **Save setup** toggle button, and click **OK**.
-9. On the **Items** tab, click **Item where used** if you want to get an overview of where the item on the selected line is used in Enterprise Asset Management in relation to objects, job type setup, spare parts, and work orders. Read more about this overview in [Items where used](../controlling-and-reporting/items-where-used.md).
-10. On the **Forecast totals** FastTab, you see an overview of forecast totals showing total number of hours and forecast lines created.
+3. Depending on how specific the maintenance job type default should be, make selections in the **Functional location**, **Asset type**, **Manufacturer**, **Model**, and/or **Asset** fields.
+4. If a maintenance job type has not automatically been inserted, select a maintenance job type in the **Maintenance job type** field.
+5. If required, select a maintenance job type variant and a maintenance job trade in the **Maintenance job type variant** and **Trade** fields.
+6. Click the **Forecast** button. In **Maintenance job type default forecast**, you can make forecasts on hours, items, and expenses.
+7. Click **Add** on the relevant tabs and make your selections to create the required forecasts for the maintenance job type.
+8. On the **Item forecast** tab, you can select inventory dimensions to be shown on the item line. Select **Inventory** > **Dimensions**, select the dimensions you want to display, select "Yes" on the **Save setup** toggle button, and click **OK**.
+9. On the **Item forecast** tab, click **Item where used** if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type default, spare parts, and work orders. Read more about this overview in [Items where used](../controlling-and-reporting/items-where-used.md).
+10. On the **Maintenance forecast totals** FastTab, you see an overview of forecast totals showing total number of hours and forecast lines created.
 
 >[!NOTE]
->If you want to copy a forecast setup from another job type, select the **Copy forecast** button and select the job type from which to copy the setup.
+>If you want to copy a forecast setup from another maintenance job type, select the **Copy forecast** button and select the maintenance job type from which to copy the setup.
 
 11. Click **Save** to save your updates.
-12. Close **Job type setup forecast**.
-13. In **Job type setup**, click the **Checklist** button.
-14. In **Job type setup checklist**, you can add checklist lines to the selected job type setup. Click **New** to add a checklist line. Line numbers are inserted automatically in the **Line number** field to indicate the sequence of the checklist lines. You can edit line numbers, if required. When you have created the first checklist line, select the line and press the arrow-down button on your keyboard to add a line below. You can also select a checklist line and click the **New** button, then the new line is inserted above the selected checklist line.
-15. In the **Type** field, select the line type, then add information related to the
-checklist type. See a description of available types and related fields in the
-"Create a Checklist Template" sub section above.
+12. Close **Maintenance job type default forecast**.
+13. In **Maintenance job type defaults**, click the **Maintenance checklist** button.
+14. In **Maintenance job type defaults checklist**, you can add maintenance checklist lines to the selected maintenance job type default. Click **New** to add a maintenance checklist line. Line numbers are inserted automatically in the **Line number** field to indicate the sequence of the maintenance checklist lines. You can edit line numbers, if required. When you have created the first maintenance checklist line, select the line and press the arrow-down button on your keyboard to add a line below. You can also select a maintenance checklist line and click the **New** button, then the new line is inserted above the selected maintenance checklist line.
+15. In the **Type** field, select the line type, then add information related to the maintenance checklist type. See a description of available types and related fields in the "Create a maintenance checklist template" sub section above.
 
 - If you want to copy checklist setup from another job type, click the **Copy checklist** button and select the job type from which to copy the setup.  
-- You can easily create a template from an existing checklist, which can be reused across multiple checklists. The new template will be an exact copy of the active checklists. Click the **Create templat**e button and insert a **Name** for the template. You can set the **Replace** toggle button to "Yes" to replace the existing checklist with a single line referencing the new template. You can see the contents of the template in the **Checklist templates** detail view.  
+- You can easily create a template from an existing checklist, which can be reused across multiple checklists. The new template will be an exact copy of the active checklists. Click the **Create template** button and insert a **Name** for the template. You can set the **Replace** toggle button to "Yes" to replace the existing checklist with a single line referencing the new template. You can see the contents of the template in the **Checklist templates** detail view.  
 
 16. Click **Save** to save your updates.
 17. Close **Job type setup checklist**.
