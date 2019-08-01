@@ -115,7 +115,7 @@ This topic explains how to review collections information as well as various set
 - Select one or more legal entities in the customer’s aging snapshot for which to view information. The legal entities that are shown in the list were selected when the aging snapshot was created.  
 - View the customer’s statement in Microsoft Excel format. You can select a starting date for the range of transactions to include on the statement and decide whether to include only open transactions, or both open and settled transactions. If the aging snapshot contains information for multiple legal entities, transactions are included for all the legal entities.  
 - Open the **Documents** form, in which you can create or edit documents or notes.  
-7. On the Action Pane, select **Communicate**.  
+4. On the Action Pane, select **Communicate**.  
 - Open Outlook, where you can send an email message to the contact that is specified in the Contact field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** form. The transactions that are selected are included as an attachment. The attachment is in Excel format and contains three worksheets. An email template for messages to customer contacts can be specified in the **Accounts receivable parameters** form.  
 - This button is not available if the contact that is selected in this form does not have an email address set up.  
 - Prepare a statement and open Outlook, where you can send an email message that has an attached statement to the address specified in the **Contact** field. If a collections contact is not specified, the primary address for the customer is used. If a primary contact is not specified, email messages will be sent to the first address listed in the **Contacts** form.  
@@ -143,6 +143,6 @@ This topic explains how to review collections information as well as various set
   - Open – Display only activities that are not closed.    
   - Open and closed – Display all activities, regardless of their status.  
 - Select a collections case that is assigned to the customer or leave this field blank. If a case is selected, only transactions and activities that are associated with the case are displayed in this form.  
-8. Select **Show list**.
+5. Select **Show list**.
 - Select a customer account or accept the default entry. By default this is the selected customer account on the list page or in the form from which you opened this form. If you opened the form from a list page, the customers in the list are the customers who are included in the collections pool that is used on the list page.  
 
