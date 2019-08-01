@@ -30,36 +30,45 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Requests
+# Manage maintenance requests
+
+Contents of this session:
+
+- Create maintenance requests  
+- Register asset loan  
+- View list of asset loans  
+- Register inbound and outbound assets  
 
 
+## Maintenance requests
 
-This topic provides an overview for managing requests in Enterprise Asset Management. Requests are notes or declarations that can be created to make a manager or planner aware that an object may require a maintenance or repair job - without actually creating a work order. A work order may subsequently be created based on a request if the contents of the request are considered to be valid for a work order to be created.
+Maintenance requests are notes or declarations that can be created to make a manager or planner aware that an asset may require a maintenance or repair job - without creating a work order. A work order may subsequently be created based on a maintenance request if the contents of the maintenance request are considered to be valid for a work order to be created.
 
-Requests can be created for any object in **Enterprise Asset Management**.
-Various request types can be created, depending on how your company uses
-requests. Here are some examples:
+Maintenance requests can be created for any asset in **Asset Management**. Various maintenance request types can be created, depending on how your company uses maintenance requests. Here are some examples:
+
 
 - Maintenance requests  
 - Notes  
 - Corrections / Enhancements  
 - Investments  
-- Depot repair - for the purpose of managing repair of objects that you receive from another location to carry out a maintenance or repair job, and then return the object after the job is completed.
+- Depot repair - for the purpose of managing repair of assets that you receive from another location to carry out a maintenance or repair job, and then return the asset after the job is completed.
 
-## All requests
 
-Click **Enterprise asset management** > **Common** > **Requests** > **All requests** or **Active requests** or **My functional location requests**. The list displays some of the information related to a request, as shown in the figure below.
+### All maintenance requests
 
-![Figure 1](media/01-manage-requests.png)
+Click **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests**. The list displays some of the information related to a maintenance request.
 
-- Click **Enterprise asset management** > **Common** > **Requests** > **My functional location requests** to see a list of requests containing functional locations, or objects installed on functional locations, you are related to as a worker (set up in [Workers](../setup-for-objects/workers-and-worker-groups.md)).  
+![Figure 1](media/01-manage-maintenance-requests.png)
+
+>[!NOTE]
+>Click **Asset management** > **Common** > **Maintenance requests** > **My functional location maintenance requests** to see a list of maintenance requests containing functional locations, or assets installed on functional locations, you are related to as a worker (set up in [Maintenance workers](../setup-for-objects/workers-and-worker-groups.md)).  
 - Customer account information is available in Asset Service Management (external maintenance), but not in Enterprise Asset Management (internal maintenance).  
 
-In the **All requests** list (grid view), click on a link in the **Request** column to show the Details view of the selected record. Click the **Edit** button to open for editing. The figure below shows a screenshot of the interface.
+In the **All maintenance requests** list (grid view), click on a link in the **Maintenance request** column to show the Details view of the selected record.
 
-![Figure 2](media/02-manage-requests.png)
+![Figure 2](media/02-manage-maintenance-requests.png)
 
-The action pane buttons are organized in tabs on the action pane. Here is a brief description of the buttons relating to Enterprise Asset Management:
+The action pane buttons are organized in tabs on the action pane. Here is a brief description of the buttons relating to Asset Management:
 
 | Button name        | Description                                                                                |
 |--------------------|--------------------------------------------------------------------------------------------|
