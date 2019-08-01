@@ -25,11 +25,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 # Create work orders from maintenance requests
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
 
 After you've created maintenance requests, you can easily convert them to work orders. This topic describes the quickest way to work with maintenance requests, update several maintenance requests at the same time, and then create a work order for several maintenance requests at the same time. On the **Active maintenance requests** or **My functional location maintenance requests** page, you can also work with one maintenance request at a time and convert one maintenance request to a work order.
 
