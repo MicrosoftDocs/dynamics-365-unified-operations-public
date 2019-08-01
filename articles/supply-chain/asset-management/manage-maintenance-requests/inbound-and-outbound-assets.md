@@ -55,7 +55,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 ## Register inbound assets as received
 
 1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Inbound assets**.
-2. Select the asset/maintenance request.
+2. Select the asset or maintenance request.
 3. Select **Receive assets**.
 4. In the **Received** field, enter the date and time. Then select **OK**. The record is removed from the **Inbound assets** list page.
 
@@ -73,6 +73,6 @@ When you've completed the maintenance or repair job, you can register the asset 
 ## Register outbound assets as delivered
 
 1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Outbound assets**.
-2. Select the asset/maintenance request.
+2. Select the asset or maintenance request.
 3. Select **Deliver assets**.
 4. In the **Delivered** field, enter the date and time. Then select **OK**. The record is removed from the **Outbound assets** list page.
