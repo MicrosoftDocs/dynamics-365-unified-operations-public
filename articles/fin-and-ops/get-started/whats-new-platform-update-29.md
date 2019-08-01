@@ -39,16 +39,18 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 
 ## Feature management
 The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In Platform update 29, additional features have been added, including:
-- Enable all features that are not enabled
-- Automatically enable all features after an update
-- Do not allow a feature to be enabled based on a condition such as an existing config key is turned on
-- Add a button called Check for updates that manually searches for new features and adds them to the list of features
+- Enable all features that are not enabled.
+- Automatically enable all features after an update.
+- Do not allow a feature to be enabled based on a condition, such as an existing config key is turned on.
+- Add a button called **Check for updates** that manually searches for new features and adds them to the list of features.
+
+For more information, see [Feature management overivew](feature-management/feature-management-overview.md).
 
 ## Data management job history clean up
-The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality is a step up to the existing staging table clean up functionality which is now deprecated.
+[Job history clean-up functionality](../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up-available-in-platform-update-29-and-later) in Data management must be used to schedule a periodic cleanup of the execution history. This functionality is a step up to the existing staging table clean-up functionality which is now deprecated.
 
 ## Business events catalog security
-Role based security can be now applied to individual business events in the business event catalog. Once this security is enabled and configured, users will be able to only view and subscribe to business events to which thier role(s) have access. This security applies to integration scenarios like Microsoft Flow as well.
+[Role-based security](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) can be now applied to individual business events in the business event catalog. Once this security is enabled and configured, users will be able to only view and subscribe to business events to which thier role(s) have access. This security applies to integration scenarios like Microsoft Flow, as well.
 
 ## Attachment recovery
 An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For more details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
@@ -60,10 +62,10 @@ The session idle timeout is the amount of time a user can be inactive before the
 As part of the Dynamics 365 app-wide effort, Finance and Operations will be incrementally working towards a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. See the corresponding [Visual refresh of the web client to align with the Fluent design language](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) topic in the Release plan for more details.
 
 ## (Preview) Saved views 
-Saved views are now available in Public Preview! This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. See [Saved views](saved-views.md) for more information, including details on how to enable this feature in developer environments, as well as the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) topic. Note this preview feature will continue to evolve and change until it becomes generally available. 
+Saved views are now available in Preview! This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. See [Saved views](saved-views.md) for more information, including details on how to enable this feature in developer environments, as well as the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) topic. Note that this preview feature will continue to evolve and change until it becomes generally available. 
 
 ## (Preview) New grid control
-The [new grid control](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in Public Preview! This new grid serves as a replacement for the existing grid control and boasts faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-React extensible control, in which case the existing grid control will be used on that page. Note this preview feature will continue to evolve and change until it becomes generally available.
+The [new grid control](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in Preview! This new grid serves as a replacement for the existing grid control and boasts faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-React extensible control, in which case the existing grid control will be used on that page. Note that this preview feature will continue to evolve and change until it becomes generally available.
 
 To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.  
 
@@ -93,9 +95,6 @@ The following enhanced extensibility capabilities have been added in Platform up
 - Custom privilege for a standard form control should consider needed permission property value set on extension form (Ref# 313650).
 - Allow table display methods added via extension to be used as lookup methods (Ref# 243486).
 - Enable display methods to be added to Form Datasources via extension (Ref# 256004).
-
-## Feature
-A brief description of the feature, including a link to a topic where customers can read the details.
 
 ## Additional resources
 
