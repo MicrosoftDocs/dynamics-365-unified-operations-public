@@ -2,7 +2,7 @@
 # required metadata
 
 title: Requests
-description: This topic provides an overview for managing requests in Enterprise Asset Management
+description: This topic provides an overview for managing maintenance requests in Asset Management
 author: josaw1
 manager: AnnBe
 ms.date: 06/26/2019
@@ -61,7 +61,7 @@ Click **Asset management** > **Common** > **Maintenance requests** > **All maint
 ![Figure 1](media/01-manage-maintenance-requests.png)
 
 >[!NOTE]
->Click **Asset management** > **Common** > **Maintenance requests** > **My functional location maintenance requests** to see a list of maintenance requests containing functional locations, or assets installed on functional locations, you are related to as a worker (set up in [Maintenance workers](../setup-for-objects/workers-and-worker-groups.md)).  
+>Click **Asset management** > **Common** > **Maintenance requests** > **My functional location maintenance requests** to see a list of maintenance requests containing functional locations, or assets installed on functional locations, you are related to as a worker (set up in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)).  
 - Customer account information is available in Asset Service Management (external maintenance), but not in Enterprise Asset Management (internal maintenance).  
 
 In the **All maintenance requests** list (grid view), click on a link in the **Maintenance request** column to show the Details view of the selected record.
