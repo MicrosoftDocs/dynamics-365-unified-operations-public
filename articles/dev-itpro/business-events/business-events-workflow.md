@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -85,4 +85,6 @@ An approval or task work item can be completed in Flow using the following steps
 - If the workitem is ready for completion, then request a response from the assigned user by sending the available response options to the user.
 - After a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
 
-Template examples of these scenarios will be available soon and a link will be provided here for easy reference..
+Templates for work item completion in Microsoft Flow will be available soon and a link will be provided here for easy reference.
+
+For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
