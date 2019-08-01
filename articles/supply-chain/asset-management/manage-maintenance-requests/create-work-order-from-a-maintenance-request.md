@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create work order from request
-description: This topic explains how to create a work order from a request in Enterprise Asset Management.
+title: Create work order from a maintenance request
+description: This topic explains how to create a work order from a maintenance request in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/26/2019
