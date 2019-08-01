@@ -3493,7 +3493,7 @@
         href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
       - name: Modify a demand forecast manually
         href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-  - name: Dynamics 365 for Unified Operations mobile app
+  - name: Mobile app
     href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
     items:
     - name: Available mobile workspaces
