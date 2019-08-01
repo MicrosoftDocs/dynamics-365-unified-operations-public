@@ -5,7 +5,7 @@ title: Inbound and outbound assets
 description: This topic explains how to register inbound and outbound assets in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,67 +13,62 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Inbound and outbound assets
 
+If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.
 
-If your company makes repair jobs or maintenance jobs on assets received from other locations or customers, **Asset Management** can keep track of inbound assets on the way to your company and outbound (returned) assets.
+> [!NOTE]
+> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Setup for maintenance requests](../setup-for-requests/requests.md).
 
->[!NOTE]
->If you want to use Inbound and Outbound lifecycle states to manage assets coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. Refer to [Setup for maintenance requests](../setup-for-requests/requests.md).
+The setup of Asset Management determines whether you can work with inbound and outbound assets.
 
-Whether you are able to work with inbound and outbound assets depends on the setup of **Asset Management**.
+## Register assets as inbound
 
-## Register asset as inbound
-
-1. Click **Asset management** > **Common** > **Maintenance requests** > **Active maintenance requests**.
+1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.
 2. Select the maintenance request.
-3. Click **Update maintenance request state**.
-4. Select **Inbound** (or the lifecycle state you have created for inbound assets), and click **OK**.
+3. Select **Update maintenance request state**.
+4. Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.
 
 ![Figure 1](media/07-manage-maintenance-requests.png)
 
-
 ## Register inbound assets as received
 
-1. Click **Asset management** > **Common** > **Inbound/outbound** > **Inbound assets**.
-2. Select the asset / maintenance request.
-3. Click **Receive assets**.
-4. Insert date and time in the **Received** field, and click **OK**. The record is removed from the **Inbound assets** list.
+1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Inbound assets**.
+2. Select the asset/maintenance request.
+3. Select **Receive assets**.
+4. In the **Received** field, enter the date and time. Then select **OK**. The record is removed from the **Inbound assets** list page.
 
 ![Figure 2](media/08-manage-maintenance-requests.png)
 
+## Register assets as outbound
 
-## Register asset as outbound
+When you've completed the maintenance or repair job, you can register the asset as returned.
 
-When you have completed the maintenance or repair job, you can register the asset as returned.
-
-1. Click **Asset management** > **Common** > **Maintenance requests** > **Active maintenance requests**.
+1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.
 2. Select the maintenance request.
-3. Click **Update maintenance request state**.
-4. Select **Outbound** (or the lifecycle state you have created for outbound assets), and click **OK**.
-
+3. Select **Update maintenance request state**.
+4. Select **Outbound** (or another lifecycle state that you've created for outbound assets), and then select **OK**.
 
 ## Register outbound assets as delivered
 
-1. Click **Asset management** > **Common** > **Inbound/outbound** > **Outbound assets**.
-2. Select the asset / maintenance request.
-3. Click **Deliver assets**.
-4. Insert date and time in the **Delivered** field, and click **OK**. The record is removed from the **Outbound assets** list.
-
+1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Outbound assets**.
+2. Select the asset/maintenance request.
+3. Select **Deliver assets**.
+4. In the **Delivered** field, enter the date and time. Then select **OK**. The record is removed from the **Outbound assets** list page.
