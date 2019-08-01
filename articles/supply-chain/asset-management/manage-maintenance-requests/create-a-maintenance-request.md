@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a request
+title: Create a maintenance request
 description: This topic explains how to create a maintenance request in Asset Management.
 author: josaw1
 manager: AnnBe
