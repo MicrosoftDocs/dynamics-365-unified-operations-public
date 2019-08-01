@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Job groups and job types, variants, trades, and checklists
-description: This topic describes job groups and job types, variants, trades, and checklists in Enterprise Asset Management.
+title: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+description: This topic describes maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -30,26 +30,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Job groups and job types, variants, trades, and checklists
+# Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
 
+An asset has an asset type attached to it. The asset type defines which maintenance job types, meaning which maintenance jobs, can be carried out on an asset. When you create a work order, selecting a maintenance job type is mandatory. It is only possible to select the maintenance job types that are related to the asset type setup used on the object.
 
+Refer to [Assets and work orders](../overview/functional-locations-and-objects.md) for a graphic outline of assets and maintenance job types, and their connection to a work order.
 
-This topic describes job groups and job types, variants, trades, and checklists in Enterprise Asset Management. An object has an object type attached to it. The object type defines which job types, meaning which maintenance jobs, can be carried out on an object. When you create a work order, selecting a job type is mandatory. It is only possible to select the job types that are related to the object type setup used on the object.
+Maintenance job type variants can be set up on a maintenance job type. Maintenance job type variants define variations of a job type, for example, size (small, medium, large), periods (weekly, bi-weekly, 1 month, 3 months), and configurations (low standard, flexible, high performance).
 
-Refer to [Enterprise Asset Management overview](../overview/functional-locations-and-objects.md) for a graphic outline of objects and job types, and their connection to a work order.
+Maintenance job trades are information regarding professional trade, for example, mechanical, electrical, and hydraulic. Competency requirements can be set up on a maintenance job trade. All maintenance job trades can be used in relation to all maintenance job types. Selecting maintenance job type variant and/or maintenance job trade on work a order is optional.
 
-Job variants can be set up on a job type. Job variants define variations of a job type, for example, size (small, medium, large), periods (weekly, bi-weekly, 1 month, 3 months), and configurations (low standard, flexible, high
-performance).
+For each maintenance job type, variations of maintenance job type setup can be created. Example: If you have a maintenance job type called "Service", you can create variations for that maintenance job type relating to "Trucks 30,000 km", "Cars 30,000 km", and "Vans 30,000 km".
 
-Job trades are information regarding professional trade, for example, mechanical, electrical, and hydraulic. Competency requirements can be set up on a job trade. All job trades can be used in relation to all job types. Selecting job variant and/or job trade on work a order is optional.
+Maintenance job type categories are used to collect a group of maintenance job types for overview purposes. Examples could be "Calibration", "Inspection", "Overhaul", and "Instrumentation".
 
-For each job type, variations of job type setup can be created. Example: If you have a job type called "Service", you can create variations for that job type relating to "Trucks 30,000 km", "Cars 30,000 km", and "Vans 30,000 km".
+Maintenance checklist templates and maintenance checklist variables are used for setup of maintenance checklists. Maintenance checklists are set up on maintenance job types and used on work orders.
 
-Job groups are used to collect a group of job types for overview purposes. Examples could be "Calibration", "Inspection", "Overhaul", and "Instrumentation".
-
-Checklist templates and checklist variables are used for setup of checklists. Checklists are set up on job types and used on work orders.
-
-First, you set up the required job groups, job variants, and job trades. Next you create job types. Then, you create all the variations of job types that are required for your equipment in **Job type setup**. Forecasts, checklists, and tools can be set up for a combination of job type in **Job type setup**.
+First, you set up the required maintenance job type categories, maintenance job type variants, and maintenance job trades. Next you create maintenance job types. Then, you create all the variations of maintenance job types that are required for your equipment in **Maintenance job type defaults**. Forecasts, maintenance checklists, and tools can be set up for a combination of maintenance job type in **Maintenance job type defaults**.
 
 **Note:** A job type can only be related to one job group.
 
