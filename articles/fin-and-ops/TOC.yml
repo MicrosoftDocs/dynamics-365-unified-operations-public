@@ -1262,13 +1262,13 @@
           href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md 
       - name: Public sector
         href: ../financials/public-sector/public-sector-functionality.md
-       items:
-       - name: Plan for public sector functionality
-         href: ../financials/public-sector/plan-public-sector-functionality.md
-       - name: Create cover and signature pages for a payments report for the public sector
-         href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-       - name: Accounts payable in the public sector
-         href: ../financials/public-sector/accounts-payable-public-sector.md
+      items:
+      - name: Plan for public sector functionality
+        href: ../financials/public-sector/plan-public-sector-functionality.md
+      - name: Create cover and signature pages for a payments report for the public sector
+        href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+      - name: Accounts payable in the public sector
+        href: ../financials/public-sector/accounts-payable-public-sector.md
         items:
         - name: Purchase order codes in the public sector
           href: ../financials/public-sector/purchase-order-codes-public-sector.md
