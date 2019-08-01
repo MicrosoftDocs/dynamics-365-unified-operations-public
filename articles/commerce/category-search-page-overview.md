@@ -34,6 +34,8 @@ ms.dyn365.ops.version:
 
 The **category default landing** page is the page that a website visitor generally lands on upon selecting a category from the navigation hierarchy that's part of the universal header footer. It allows a website visitor to be able to browse, sort and refine the categorized products for an individual category. 
 
+  ![Default category landing view](./media/SimpleCategoryLandingDressCategory.png)
+
 The top of the page has a Header which shows all the product categories, based on configuration by Merchandising manager in the back-office as part of channel navigation hierarchy and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
 
 These are the following components that are considered to be essential for category browse experience - 
@@ -55,5 +57,6 @@ These are the following components that are considered to be essential for categ
 
 If you want a category landing page to have a more tailored experience for a specific category, you can choose to enrich the category landing page for that category. For example, if you might choose to add a marketing video and some category storytelling to get the shoppers attention. This can be done via enriching the page for this category. Refer to [Enriching a category landing page]() for more details.
 
+ ![Enriched category landing view](./media/CategoryLandingPages.png)
 
 ## Auto-suggest & search results page
