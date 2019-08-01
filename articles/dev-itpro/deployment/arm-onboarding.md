@@ -72,7 +72,7 @@ Follow these steps to assign the **Contributor** role to the **Dynamics Deployme
 
 1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 2.  Click **Add**, select **Add role assignment**. In the dialog select **Contributor** under "Role" and **Azure AD user, group, or service principal** under "Assign access to". Under "Select", search for and then select **Dynamics Deployment Services \[wsfed-enabled\]**. Once it is selected click **Save**. **Note:** Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then click **Select**.
-3.  On the **Role assignments** tab, you can see that the App is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_01-1024x407.png)](./media/arm_redo_01.png)
+3.  On the **Role assignments** tab, you can see that the App is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
 
 ### Enable the Azure subscription to deploy ARM resources
 
