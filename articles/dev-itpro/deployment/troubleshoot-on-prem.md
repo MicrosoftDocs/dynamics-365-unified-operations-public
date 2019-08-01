@@ -311,9 +311,9 @@ LocalAgentCLI.exe Error: 0 : Exception System.InvalidOperationException: unable 
 Press any key to exit
 ```
 
-**Reason:** You are trying to install LoalAgent v2.3.0 or above and you are not using an up to date localagent-config.json
+**Reason:** You are trying to install LoalAgent v2.3.0 or later and you are not using an up to date localagent-config.json
 
-**Steps:** You can get the newer version of the localagent-config.json from LCS by following the Configure a connector step from the [Deployment Guide](setup-deploy-on-premises-pu12.md#configureconnector)
+**Steps:** You can get the newer version of the localagent-config.json from LCS by following the "Configure a connector" step from the [Deployment Guide](setup-deploy-on-premises-pu12.md#configureconnector)
 
 You can also add the following values to the localagent-config.json file manually under components:
 
