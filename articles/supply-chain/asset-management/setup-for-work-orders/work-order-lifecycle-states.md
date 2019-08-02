@@ -39,6 +39,10 @@ The work order lifecycle states required for your work orders must be attached t
 
 Here is a short description of the toggle buttons in the **Work order lifecycle state** form > **General** FastTab > **Work order** and **Schedule** groups:
 
+
+![Figure 1](media/09-setup-for-work-orders.png)
+
+
 | Field name            | Description                                                                                                                                                    |
 |---------------------- |----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Active                | Select "Yes" if the work order should be active at this state.   |
@@ -93,13 +97,11 @@ balances, and so on.
 - When a work order is updated to a work order lifecycle state for which the **Maintenance downtime** toggle button is set to "Yes", a maintenance downtime validation is made on the asset related to a work order. If a maintenance downtime registration has been made, and it does not have an 'ended' registration, a message is displayed when the work order is updated to this lifecycle state.
 
 
-![Figure 2](media/11-setup-for-work-orders.png)
+
 
 
 - In **Project management and accounting parameters**, you can set up user-defined project stages if you require special stages for your **Enterprise Asset Management** setup that are not included in the standard project setup.  
 - See the [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) section for more information on the relation between work order stages, project stages, and work order projects. The figure below shows a screenshot of the interface.  
-
-![Figure 3](media/11-setup-for-work-orders.png)
 
 - When you change stage on a work order to a work order stage that is not active (meaning "No" is selected on the **Active** toggle button on the **General** FastTab for that stage in the **Work order stages** view), not yet posted journals related to the work order will automatically be deleted. This is done to ensure automatic cleanup of unused data.
 
@@ -115,7 +117,7 @@ The idea behind using types is that when a type is defined on, for example, a wo
 
 The figure below shows the relation between work order types, work order stage groups, and related work order stages.
 
-![Figure 3](media/12-setup-for-work-orders.png)
+![Figure 2](media/10-setup-for-work-orders.png)
 
 ## Work order stage groups
 
