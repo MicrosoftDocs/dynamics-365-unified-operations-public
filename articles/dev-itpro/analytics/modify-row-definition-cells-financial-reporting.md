@@ -407,7 +407,7 @@ The **Link to Financial Dimensions** cell contains links to the financial data t
 2. Double-click a cell in the **Link to Financial Dimensions** column.
 3. In the **Dimensions** dialog box, double-click a cell under the dimension name.
 4. In the dialog box for the dimension, select **Individual or range**.
-5. In the **From** field, enter the starting dimension, or click ![Browse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
+5. In the **From** field, enter the starting dimension, or click ![Browse](media/browse.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
 6. Click **OK** to close the dialog box for the dimension. The **Dimensions** dialog box displays the updated dimension or range.
 7. Click **OK** to close the **Dimensions** dialog box.
 
