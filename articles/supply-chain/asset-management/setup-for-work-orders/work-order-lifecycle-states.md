@@ -56,7 +56,7 @@ Here is a short description of the toggle buttons in the **Work order lifecycle 
 | Delete schedule lines | If you select "Yes", when a work order is set to this state, and it has already been scheduled, scheduling will be deleted on all work order jobs created on that work order. This means capacity reservations on the asset, the related maintenance worker, and related tools will be deleted. *Example:* Select this parameter on a work order state called "Estimated", to allow scheduling to be deleted on a work order which is 'rolled back' to this state, because rescheduling is required.                                                                                    |
 
 
-## Set up project stages and work order stages
+## Set up project stages and work order lifecycle states
 
 1. Click **Project management and accounting** > **Setup** > **Project management and accounting parameters**.
 2. Click **Project stage**.
@@ -64,46 +64,42 @@ Here is a short description of the toggle buttons in the **Work order lifecycle 
 balances, and so on.
 
 >[!NOTE]
->If the project stage for the project type is not selected, and that project stage is used on a work order stage, the work order projects will not be updated accordingly.
+>If the project stage for the project type is not selected, and that project stage is used on a work order lifecycle state, the work order projects will not be updated accordingly.
 
 4. Close **Project management and accounting parameters**.
-5. Click **Enterprise asset management** > **Setup** > **Work order** > **Stage** > **Stages**.
-6. Click **New**, to create a new work order stage.
-7. Insert a stage ID in the **Stage** field and a name for the stage in the **Name** field. In the **Stage groups** field, you can see the number of work order stage groups that uses the work order stage.
-8. On the **General** FastTab, in the **Work order** and **Schedule** sections, select the functions that should be available for the stage by selecting "Yes" on the relevant toggle buttons. Refer to the table above for some of the stage descriptions.
-9. In the **Project** section > **Stage** field, select the the project stage to be related to the work order stage.
-10. In the **Project** section, select "Yes" on the **Close activities** toggle button if project activities related to each work order line should be automatically closed at this stage.
+5. Click **Asset management** > **Setup** > **Work orders** > **Lifecycle states**.
+6. Click **New**, to create a new work order lifecycle state.
+7. Insert an ID in the **Lifecycle state** field and a name for the lifecycle state in the **Name** field. In the **Lifecycle models** field, you can see the number of work order lifecycle models that uses the work order lifecycle state.
+8. On the **General** FastTab, in the **Work order** and **Schedule** sections, select the functions that should be available for the lifecycle state by selecting "Yes" on the relevant toggle buttons. Refer to the table above for some of the lifecycle state descriptions.
+9. In the **Project** section > **Stage** field, select the the project stage to be related to the work order lifecycle state.
+10. In the **Project** section, select "Yes" on the **Close activities** toggle button if project activities related to each work order job should be automatically closed at this state.
 
 >[!NOTE]
->The project activity number related to a work order line is shown in **Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** or **My active work orders** > select work order > **Edit** button > select work order line > **Line details** FastTab > **General** tab > **Project** section > **Activity number** field.
+>The project activity number related to a work order job is shown in **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** or **My active work orders** > open a work order > select work order job > **Line details** FastTab > **General** tab > **Project** section > **Activity number** field.
 
-11. Select "Yes" on one or more of the **Copy hour forecast**, **Copy item forecast**, **Copy expense forecast** toggle buttons if you want to automatically copy work order project forecasts to work order journals at this stage.
-12. In the **Schedule** group, select "Yes" on one of the toggle buttons if you want schedule status for work order lines to be updated at this stage. Refer to the descriptions of **Ready**, **Start**, and **End** in the table above.
+11. Select "Yes" on one or more of the **Copy hour forecast**, **Copy item forecast**, **Copy expense forecast** toggle buttons if you want to automatically copy work order project forecasts to work order journals at this lifecycle state.
+12. In the **Schedule** group, select "Yes" on one of the toggle buttons if you want schedule status for work order jobs to be updated at this state. Refer to the descriptions of **Ready**, **Start**, **End**, and **Delete schedule lines** in the table above.
 >[!NOTE]
->Schedule lines related to work order lines are shown in **Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** or **My active work orders** > select work order > **Edit** button. In **All Work orders** Details view, select a work order line on the **Work order lines** FastTab > see related schedule lines on the **Line details** FastTabs. The status of a schedule line is shown on the **Schedule** tab in the **Status** field. The **Status** field may show one of the following statuses: Scheduled - Ready - Started - Stopped - Ended.
+>Schedule lines related to work order jobs are shown in **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** or **My active work orders** > select and open work order > select a work order job on the **Work order jobs** FastTab > see related information on the **Line details** FastTab. The status of the work order job is shown on the **Schedule** tab in the **Status** field. The **Status** field may show one of the following statuses: Scheduled - Ready - Started - Stopped - Ended.
 
-13. In the **Requests** section > **Stage** field, select the the request stage to which related requests are updated. This is an automatic update of related requests. The update can only be done if the request stage is selected in the request stage group used for the request. 
-14. Select "Yes" on the **Update object BOM** toggle button if all items used on a work order should automatically be updated in **Object BOM** when the work order is updated to this stage. For example, this could be relevant for a work order stage defining that the work order is completed / ended.
-15. Select the **Delete pool reference** field if you want work orders to be automatically deleted from work order pools at this stage.
-16. The **Kanban stage** field is used if your company uses kanban functionality on a Mobile EAM Client to let workers manage and complete work orders using the **Kanban** module. Select the kanban stage to which a work order should be updated at this work order stage.
+13. In the **Maintenance requests** section > **Lifecycle state** field, select the the maintenance request lifecycle state to which related maintenance requests are updated. This is an automatic update of related maintenance requests. The update can only be done if the maintenance request lifecycle state is selected in the maintenance request lifecycle model used for the maintenance request. 
+14. Select "Yes" on the **Update asset BOM** toggle button if all items used on a work order should automatically be updated in **Asset BOM** when the work order is updated to this state. For example, this could be relevant for a work order lifecycle state defining that the work order is completed or ended.
+15. Select "Yes" on the **Delete pool reference** toggle button if you want work orders to be automatically deleted from work order pools at this lifecycle state.
+16. On the **Validate** FastTab, select "Yes" on the toggle buttons for the validation types you want to activate at this lifecycle state. In the **Type** field regarding each validation type, select the type of message that should be shown if mandatory fields related to the validation type have not been validated. If you select the message type "Error", the work order lifecycle state update is canceled until the related mandatory fields have been updated on the work order.
 
-- You can read more about kanban functionality in the document "Mobile EAM Client Training Material", which describes the features and functions of the mobile client.  
+- The **Maintenance downtime**, **Maintenance checklist**, **Fault symptom**, **Fault cause**, and **Fault remedy** toggle buttons on the **Validate** FastTab relate to the toggle buttons in the **Mandatory** section in **Work order types** (**Asset management** > **Setup** > **Work orders** > **Work order types**). In order to activate those validations, the related toggle buttons must also be set to "Yes" on the work order type used on the work order.  
+- When a work order is updated to a work order lifecycle state for which the **Maintenance checklist** toggle button is set to "Yes" on the **Validate** FastTab, it means that the mainteance checklist lines marked "Mandatory" are validated as being either 'Checked' or 'Not applicable'. If none of those registrations have been made on the mandatory lines, an info message or error or warning will be shown when the work order lifecycle state is updated to this state.  
+- When a work order is updated to a work order lifecycle state for which the **Committed cost** toggle button is set to "Yes" on the **Validate** FastTab, it means that total committed costs (meaning total amount of expenses that the legal entity has committed to pay) are calculated for each work order job. An Infolog is shown if the committed cost amount is larger than zero. The types of cost commitment to be included are selected in **Project management and accounting** > **Setup** > **Project management and accounting parameters** > **Cost control** > **Cost commitments** section.  
+- When a work order is updated to a work order lifecycle state for which the **Maintenance downtime** toggle button is set to "Yes", a maintenance downtime validation is made on the asset related to a work order. If a maintenance downtime registration has been made, and it does not have an 'ended' registration, a message is displayed when the work order is updated to this lifecycle state.
 
-17. On the **Validate** FastTab, select "Yes" on the toggle buttons for the validation types you want to activate at this stage. In the **Type** field regarding each validation type, select the type of message that should be shown if mandatory fields related to the validation type have not been validated. If you select the message type "Error", the work order stage update is canceled until the related mandatory fields have been updated on the work order.
 
-- The **Production stop**, **Fault symptom**, **Fault cause**, and **Fault remedy** toggle buttons on the **Validate** FastTab relate to the toggle buttons in the **Mandatory** section in **Work order types** (**Enterprise asset management** > **Setup** > **Work orders** > **Work order types**). In order to activate those validations, the related toggle buttons must also be set to "Yes" on the work order type used on the work order.  
-- When a work order is updated to a work order stage for which the **Checklist** toggle button is set to "Yes" on the **Validate** FastTab, it means that the checklist lines marked "Mandatory" are validated as being either 'Checked' or 'Not applicable'. If none of those registrations have been made on the mandatory lines, an info message or error or warning will be shown when the work order stage is updated to this stage.  
-- When a work order is updated to a work order stage for which the **Committed cost** toggle button is set to "Yes" on the **Validate** FastTab, it means that total committed costs (meaning total amount of expenses that the legal entity has committed to pay) are calculated for each work order line. An Infolog is shown if the committed cost amount is larger than zero. The types of cost commitment to be included are selected in **Project management and accounting** > **Setup** > **Project management and accounting parameters** > **Cost control** > **Cost commitments** section.  
-- When a work order is updated to a work order stage for which the **Production stop** toggle button is set to "Yes", a production stop validation is made on the object related to a work order. If a production stop has been registered, and it does not have an 'ended' registration, a message is displayed when the work order is updated to this stage.
+![Figure 2](media/11-setup-for-work-orders.png)
 
-The following figure shows a screenshot of the interface.
-
-![Figure 1](media/10-setup-for-work-orders.png)
 
 - In **Project management and accounting parameters**, you can set up user-defined project stages if you require special stages for your **Enterprise Asset Management** setup that are not included in the standard project setup.  
 - See the [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) section for more information on the relation between work order stages, project stages, and work order projects. The figure below shows a screenshot of the interface.  
 
-![Figure 2](media/11-setup-for-work-orders.png)
+![Figure 3](media/11-setup-for-work-orders.png)
 
 - When you change stage on a work order to a work order stage that is not active (meaning "No" is selected on the **Active** toggle button on the **General** FastTab for that stage in the **Work order stages** view), not yet posted journals related to the work order will automatically be deleted. This is done to ensure automatic cleanup of unused data.
 
