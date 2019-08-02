@@ -44,7 +44,7 @@ For a quick overview of the tax engine, watch the following video.
 Tax type is analogous to a tax regime, Sales tax, value-added tax (VAT), and GST (Goods and Service tax) are three typical tax type. Tax component should be created under a specific tax type. 
 Select Lines, click button ***Add>Tax document>Tax type***, specify the name, description and rounding rule, click button ***OK***.
 
-![GTE create tax type](../localizations/media/GTE-Create-Taxtype.png)
+![GTE create tax type](../localizations/media/GTE-Create-TaxType.png)
 
 ## Create tax component 
 Select the tax type under where you want to create tax component, click button ***Add>Tax document>Tax component***. 
