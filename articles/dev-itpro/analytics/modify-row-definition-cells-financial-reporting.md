@@ -484,7 +484,7 @@ The following table describes the fields in the **Dimensions** dialog box.
 
 | Item                | Description |
 |---------------------|-------------|
-| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
+| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse](media/browse.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
 | Dimension Value Set | In the **Name** field, enter the name of a dimension value set. To create, modify, copy, or delete a set, click **Manage Dimension Value Sets**. The **Formula** field is populated with the formula from the **Link to Financial Dimensions** cell for this dimension value set in the row definition. |
 | Totaling accounts   | In the **Name** field, enter or browse for a dimension of totaling accounts. The **Formula** field is populated with the formula in the **Link to Financial Dimensions** cell for this totaling account in the report definition. |
 
