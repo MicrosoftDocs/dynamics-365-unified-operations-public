@@ -277,14 +277,7 @@
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
-  - name: Compliance
-    items:
-    - name: Audit policy rules
-      href: ../financials/general-ledger/audit-policy-rules.md
-    - name: Audit policy violations and cases
-      href: ../financials/general-ledger/audit-policy-violations-cases.md
-    - name: Define audit policies for source documents
-      href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
+ 
   - name: Cost management
     href: ../supply-chain/cost-management/cost-management-home-page.md
     items:
@@ -1259,8 +1252,16 @@
           href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
           href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md     
-    - name: Public sector
-      href: ../financials/public-sector/public-sector-functionality.md
+      - name: Audit workbench
+        items:
+        - name: Audit policy rules
+          href: ../financials/general-ledger/audit-policy-rules.md
+        - name: Audit policy violations and cases
+          href: ../financials/general-ledger/audit-policy-violations-cases.md
+        - name: Define audit policies for source documents
+          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md 
+      - name: Public sector
+        href: ../financials/public-sector/public-sector-functionality.md
       items:
       - name: Plan for public sector functionality
         href: ../financials/public-sector/plan-public-sector-functionality.md
@@ -3411,6 +3412,20 @@
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-types.md
       - name: Responsible maintenance workers
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/responsible-workers.md
+    - name: Manage maintenance requests
+      items:
+      - name: Maintenance requests
+        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-overview.md
+      - name: Create a maintenance request
+        href: ../supply-chain/asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+      - name: Create a work order from a maintenance request
+        href: ../supply-chain/asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+      - name: Asset loans
+        href: ../supply-chain/asset-management/manage-maintenance-requests/asset-loan.md
+      - name: Inbound and outbound assets
+        href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+      - name: Maintenance request reports
+        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
