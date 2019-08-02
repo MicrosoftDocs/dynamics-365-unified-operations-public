@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations version 10.0.5 (August 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in August.
+title: Preview features in Finance and Operations version 10.0.5 (September 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in September.
 author: tonyafehr
 manager: AnnBe
 ms.date: 07/31/2019
@@ -29,7 +29,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Preview features in Finance and Operations version 10.0.5 (August 2019)
+# Preview features in Finance and Operations version 10.0.5 (September 2019)
 
 [!include [banner](../includes/banner.md)]
 
@@ -111,7 +111,7 @@ A new button is available on the journal page to unlock a journal that has a sta
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
 ### Platform update 29
-Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [Preview features in Finance and Operations platform update 29 (October 2019)](whats-new-platform-update-29.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [Preview features in Finance and Operations platform update 29 (September 2019)](whats-new-platform-update-29.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
