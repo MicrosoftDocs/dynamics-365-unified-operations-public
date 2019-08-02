@@ -119,7 +119,7 @@ The idea behind using types is that when a type is defined on, for example, a wo
 
 The figure below shows the relation between work order types, work order stage groups, and related work order stages.
 
-![Figure 2](media/10-setup-for-work-orders.png)
+![Figure 3](media/11-setup-for-work-orders.png)
 
 ## Work order stage groups
 
