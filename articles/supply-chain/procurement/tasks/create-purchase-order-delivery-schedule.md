@@ -64,16 +64,16 @@ You can change the quantity on delivery lines. If you do this, the commercial li
 - The quantity on the commercial line has been changed to 11.  
 
 ## Process product receipt using delivery schedules
-The purchase order must be confirmed before product receipt can be processed. In this example, receipt is recorded directly on the purchase order. Receipt could also have been recorded when the goods arrived in the warehouse.  
+The purchase order must be confirmed before the product receipt can be processed. In this example, receipt is recorded directly on the purchase order. The receipt could also have been recorded when the goods arrived in the warehouse.  
 1. On the Action Pane, select **Purchase**.
 2. Select **Confirm**.
 3. On the Action Pane, select **Receive**.
 4. Select **Product receipt**. In the **Product receipt** field, type any value.
 - This field is used to enter a reference that will be used as voucher for the product receipt journal.  
-- In the **Quantity** field, select **Ordered quantity**. This option means that receipt will process for the quantity that the order lines were created with.  
+- In the **Quantity** field, select **Ordered quantity**. This option means that the receipt will process for the quantity that the order lines were created with.  
 - Make sure that the **Print product receipt** field is set to **No**. Printing isn’t needed in this example.  
 5. Expand the **Lines** section.
-- Notice how the product receipt is created for the two delivery lines and not the original order line. If receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.  
+- Notice how the product receipt is created for the two delivery lines and not the original order line. If the receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.  
 6. Collapse the **Lines** section.
 7. Select **OK** to post the receipt.
 
