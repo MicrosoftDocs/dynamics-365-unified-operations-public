@@ -223,17 +223,13 @@ When the system selects the available maintenance job type default to be used on
 - For each maintenance job type default line you create, a project activity ID is automatically related to the line. The project activity is created on the forecast project selected in **Asset management parameters** > **Assets** link > **Maintenance forecast project** field. The purpose of the project activity is to manage forecasts on hours, items, and expenses in relation to work orders. Maintenace job type forecasts are automatically transferred to the work order line, and they are copied from the forecast project to the work order project created for the work order line. The purpose of the project activity is to manage forecasts in relation to work orders.  
 - A batch job can be set up to update maintenance job type default references to run manually or at regular intervals. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Update maintenance job type default references** to create a batch job or run a manual update.
 
-## Overview of job types related to objects
+## Overview of maintenance job types related to assets
 
-When you have created the required job type setup combinations, it is possible
-to get an overview of the current job type setup related to a specific object in
-**All Objects**. The overview shows a combination of all job type setup
-combinations that can be used on the object type selected on the object,
-including combinations with variations of job variants and job trades.
+When you have created the required maintenance job type default combinations, it is possible to get an overview of the current maintenance job type default related to a specific asset in **All Assets**. The overview shows a combination of all maintenance job type default combinations that can be used on the asset type selected on the asset, including combinations with variations of maintenance job type variants and maintenance job trades.
 
-1. Click **Enterprise asset management** > **Common** > **Objects** > **All Objects** or **Active objects**.
-2. In the list, select the object for which you want to see an overview of job type combinations.
-3. On the **General** tab, click the **Job types** button.
+1. Click **Asset management** > **Common** > **Assets** > **All assets** or **Active assets**.
+2. In the list, select the asset for which you want to see an overview of maintenance job type combinations.
+3. On the **General** tab, click the **Maintenance job types** button.
 4. In the left side of **Object job types**, you will see a list of all the job type combinations related to the selected object.
 5. Select a job type combination to see the related setup for checklists, forecasts, and tools. At the top of the form, in the **Details** group, you will see number of related checklists, measurements, hours, and so on, that are related to the selected job type combination.
 6. If you want to see details for the selected job type, click the **Job types** button.
