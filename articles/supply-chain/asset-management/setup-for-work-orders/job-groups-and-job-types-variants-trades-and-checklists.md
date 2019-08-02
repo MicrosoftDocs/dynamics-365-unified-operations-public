@@ -230,24 +230,21 @@ When you have created the required maintenance job type default combinations, it
 1. Click **Asset management** > **Common** > **Assets** > **All assets** or **Active assets**.
 2. In the list, select the asset for which you want to see an overview of maintenance job type combinations.
 3. On the **General** tab, click the **Maintenance job types** button.
-4. In the left side of **Object job types**, you will see a list of all the job type combinations related to the selected object.
-5. Select a job type combination to see the related setup for checklists, forecasts, and tools. At the top of the form, in the **Details** group, you will see number of related checklists, measurements, hours, and so on, that are related to the selected job type combination.
-6. If you want to see details for the selected job type, click the **Job types** button.
+4. In the left side of **Asset maintenance job types**, you will see a list of all the maintenance job type combinations related to the selected asset.
+5. Select a maintenance job type combination to see the related setup for maintenance checklists, forecasts, and tools. On the **Maintenance job type defaults** FastTab > **Details** group, you will see number of related maintenance checklists, forecasted hours, items, and so on, that are related to the selected maintenance job type combination.
+6. If you want to see details for the selected maintenance job type, click the **Maintenance job types** button.
 
-The figure below shows a screenshot of the interface.
 
 ![Figure 8](media/08-setup-for-work-orders.png)
 
-## Automatic update of job type forecasts
 
-In Enterprise Asset Management, you can automatically update any changes in job type forecasts regarding hour costs, item costs, and expenses, which have been updated in other modules in Dynamics 365 for Finance and Operations. This is done to ensure that the latest cost prices are always used in your job type forecasts. It is also possible to make similar updates for [work order forecasts](../work-orders/forecasts.md).
+## Automatic update of maintenance job type forecasts
 
-1. Click **Enterprise asset management** > **Periodic** > **Forecast** > **Update job type forecast**.
-2. In the **Update job type forecast** dialog, you can add selections regarding specific job types, if required.
+In Asset Management, you can automatically update any changes in maintenance job type forecasts regarding hour costs, item costs, and expenses, which have been updated in other modules in Dynamics 365 for Finance and Operations. This is done to ensure that the latest cost prices are always used in your maintenance job type forecasts. It is also possible to make similar updates for [Maintenance forecasts](../work-orders/forecasts.md).
+
+1. Click **Asset management** > **Periodic** > **Forecast** > **Update maintenance job type forecast**.
+2. In the **Update maintenance job type forecast** dialog, you can add selections regarding specific maintenance job types, if required.
 3. Click **Filter**, then click **Select** to make those selections.
 4. If required, you can set up automatic update as a batch job by filling out the fields on the **Run in the background** FastTab.
 5. Click **OK** to start the forecast update.
 
-The figure below shows a screenshot of the interface.
-
-![Figure 9](media/09-setup-for-work-orders.png)
