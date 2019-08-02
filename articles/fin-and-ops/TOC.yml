@@ -3412,6 +3412,20 @@
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-types.md
       - name: Responsible maintenance workers
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/responsible-workers.md
+    - name: Manage maintenance requests
+      items:
+      - name: Maintenance requests
+        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-overview.md
+      - name: Create a maintenance request
+        href: ../supply-chain/asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+      - name: Create a work order from a maintenance request
+        href: ../supply-chain/asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+      - name: Asset loans
+        href: ../supply-chain/asset-management/manage-maintenance-requests/asset-loan.md
+      - name: Inbound and outbound assets
+        href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+      - name: Maintenance request reports
+        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
