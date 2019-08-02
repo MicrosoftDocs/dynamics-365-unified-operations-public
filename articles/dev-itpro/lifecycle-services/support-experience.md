@@ -148,7 +148,7 @@ The duty **DownloadHotfix** controls the ability to directly download fixes fro
 
 The Azure DevOps administrator can publish project work items to your organization users by tagging the work items with **#SearchableInFinanceAndOperations**. The tagged work items will be searchable for users from the client support search box. The search result will include tagged Azure DevOps work items in addition to Microsoft published updates and fixes. The following graphic shows a tagged Azure DevOps work item for publishing.
 
-[![vstsTag](./media/VSTS%20Tagging.png)](./media/VSTS%20Tagging.png)
+[![vstsTag](./media/VSTS-Tagging.png)](./media/VSTS-Tagging.png)
 
 When you search for published Azure DevOps work items using the support search box, search results show the work item's type, title, state, and description in a new browser tab with **view** mode.  Users with proper permissions can edit the work item in Azure DevOps. The following graphic shows the search result of a published Azure DevOps work item.
 
