@@ -16,7 +16,7 @@ ms.technology:
 # keywords: 
 audience: IT Pro, Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1587884
