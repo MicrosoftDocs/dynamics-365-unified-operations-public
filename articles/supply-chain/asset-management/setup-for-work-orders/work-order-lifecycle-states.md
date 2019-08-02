@@ -96,16 +96,18 @@ balances, and so on.
 - When a work order is updated to a work order lifecycle state for which the **Committed cost** toggle button is set to "Yes" on the **Validate** FastTab, it means that total committed costs (meaning total amount of expenses that the legal entity has committed to pay) are calculated for each work order job. An Infolog is shown if the committed cost amount is larger than zero. The types of cost commitment to be included are selected in **Project management and accounting** > **Setup** > **Project management and accounting parameters** > **Cost control** > **Cost commitments** section.  
 - When a work order is updated to a work order lifecycle state for which the **Maintenance downtime** toggle button is set to "Yes", a maintenance downtime validation is made on the asset related to a work order. If a maintenance downtime registration has been made, and it does not have an 'ended' registration, a message is displayed when the work order is updated to this lifecycle state.
 
+- In **Project management and accounting parameters**, you can set up user-defined project stages if you require special stages for your **Asset Management** setup that are not included in the standard project setup.  
+- See the [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) section for more information on the relation between work order lifecycle states, project stages, and work order projects. The figure below shows a screenshot of **Project management and accounting parameters** > **Project stage**.  
 
 
+![Figure 2](media/10-setup-for-work-orders.png)
 
 
-- In **Project management and accounting parameters**, you can set up user-defined project stages if you require special stages for your **Enterprise Asset Management** setup that are not included in the standard project setup.  
-- See the [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) section for more information on the relation between work order stages, project stages, and work order projects. The figure below shows a screenshot of the interface.  
+>[!NOTE]
+>When you change lifecycle state on a work order to a state that is not active (meaning "No" is selected on the **Active** toggle button on the **General** FastTab for that lifecycle state in **Work order lifecycle state**), not yet posted journals related to the work order will automatically be deleted. This is done to ensure automatic cleanup of unused data.
 
-- When you change stage on a work order to a work order stage that is not active (meaning "No" is selected on the **Active** toggle button on the **General** FastTab for that stage in the **Work order stages** view), not yet posted journals related to the work order will automatically be deleted. This is done to ensure automatic cleanup of unused data.
+However, if you manually set a work order to be inactive (**Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** > select and open work order > **Header** link > **General** FastTab > **Edit** button > set the **Active** toggle button to "No"), related but not yet posted journals will not automatically be deleted.
 
-- However, if you manually set a work order to be inactive (**Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** > select work order in list > **Edit** button > **Header** link > **General** FastTab > set the **Active** toggle button to "No"), related but not yet posted journals will not automatically be deleted.
 
 ## Stage group, type, and stage relations
 
