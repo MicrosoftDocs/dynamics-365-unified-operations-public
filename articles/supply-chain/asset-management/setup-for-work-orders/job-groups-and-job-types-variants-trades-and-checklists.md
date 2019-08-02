@@ -180,48 +180,48 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 11. Click **Save** to save your updates.
 12. Close **Maintenance job type default forecast**.
 13. In **Maintenance job type defaults**, click the **Maintenance checklist** button.
-14. In **Maintenance job type defaults checklist**, you can add maintenance checklist lines to the selected maintenance job type default. Click **New** to add a maintenance checklist line. Line numbers are inserted automatically in the **Line number** field to indicate the sequence of the maintenance checklist lines. You can edit line numbers, if required. When you have created the first maintenance checklist line, select the line and press the arrow-down button on your keyboard to add a line below. You can also select a maintenance checklist line and click the **New** button, then the new line is inserted above the selected maintenance checklist line.
+14. In **Maintenance job type defaults checklist**, you can add maintenance checklist lines to the selected maintenance job type default. On the **Maintenance check lines** FastTab, click **New** to add a maintenance checklist line. Line numbers are inserted automatically in the **Line number** field to indicate the sequence of the maintenance checklist lines. You can edit line numbers, if required. When you have created the first maintenance checklist line, select the line and press the arrow-down button on your keyboard to add a line below. You can also select a maintenance checklist line and click the **New** button, then the new line is inserted above the selected maintenance checklist line.
 15. In the **Type** field, select the line type, then add information related to the maintenance checklist type. See a description of available types and related fields in the "Create a maintenance checklist template" sub section above.
 
-- If you want to copy checklist setup from another job type, click the **Copy checklist** button and select the job type from which to copy the setup.  
-- You can easily create a template from an existing checklist, which can be reused across multiple checklists. The new template will be an exact copy of the active checklists. Click the **Create template** button and insert a **Name** for the template. You can set the **Replace** toggle button to "Yes" to replace the existing checklist with a single line referencing the new template. You can see the contents of the template in the **Checklist templates** detail view.  
+- If you want to copy maintenance checklist setup from another maintenance job type, click the **Copy maintenance checklist** button and select the maintenance job type from which to copy the setup.  
+- You can easily create a template from an existing maintenance checklist, which can be reused across multiple maintenance checklists. The new template will be an exact copy of the active maintenance checklists. Click the **Create template** button and insert a **Name** for the template. You can set the **Replace** toggle button to "Yes" to replace the existing maintenance checklist with a single line referencing the new template. You can see the contents of the template in the **Maintenance checklist templates** detail view.  
 
 16. Click **Save** to save your updates.
-17. Close **Job type setup checklist**.
-18. In **Job type setup**, click the **Tools** button.
-19. In **Job type setup tools**, you can add the tools (resources) to be used for the job type. Select the tool in the **Resource** field.
+17. Return to **Maintenance job type defaults**.
+18. In **Maintenance job type defaults**, click the **Tools** button.
+19. You can add the tools (resources) to be used for the maintenance job type. Click **New** and select the tool in the **Resource** field.
 
-- If you want to copy a tool setup from another job type, select the **Copy tools** button and select the job type from which to copy the setup.
+- If you want to copy a tool setup from another maintenance job type, select the **Copy tools** button and select the maintenance job type from which to copy the setup.
 
 20. Click **Save** to save your updates.
-21. Close **Job type setup tools**.
-22. In **Job type setup**, click the **Description** button > **Edit**, and add a description related to the selected job type setup, if required.
+21. Return to **Maintenance job type defaults**.
+22. In **Maintenance job type defaults**, click the **Work description** button > **Edit**, and add a description related to the selected maintenance job type default, if required.
 23. Click **Save** to save the description.
 
-- If a description is added, that description overrules a description set up on the job type. If no description is added in this form, the description, if any, in **Job types** is used. Descriptions are automatically transferred to work orders using the job type or job type setup.
+- If a work description is added, that description overrules a description set up on the maintenance job type. If no description is added in this form, the description, if any, in **Maintenance job types** is used. Descriptions are automatically transferred to work orders using the maintenance job type or maintenance job type default.
 
-24. Close **Description**.
-25. If you want to set up attachments on a selected job type setup line, click **Attach documents**. Attachments set up on a job type setup line will automatically be included on a work order line that uses that particular job type setup line.
+24. Return to **Maintenance job type defaults**.
+25. If you want to set up attachments on a selected maintenance job type default line, click **Attach documents**. Attachments set up on a maintenance job type default line will automatically be included on a work order line that uses that particular maintenance job type default line.
 26. Click the **New** button and select a document type.
 27. Upload the document or file.
 28. Fill out the **Attachments** form. This attachment setup uses standard Dynamics 365 for Finance and Operations document setup functionality.
 29. Click **Save** to save the attachment.
 
-- Attachments on a job type setup line are only printed with a work order report if the document types of the attachments are selected in **Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Document types**.  
-- Examples of attachments could be a guideline explaining how to complete a specific job, or a predefined checklist (if you do not use the checklist functionality for job type setup lines).  
+- Attachments on a maintenance job type default line are only printed with a work order report if the document types of the attachments are selected in **Asset management** > **Setup** > **Asset management parameters** > **Document types**.  
+- Examples of attachments could be a guideline explaining how to complete a specific job, or a predefined maintenance checklist (if you don't use the maintenance checklist functionality for maintenance job type default lines).  
 
-30. In **Job type setup**, you can see the number of forecasted hours as well as the number of setup lines created for items, expenses, checklists, measuring points, and tools on each line. In the **Objects** field, you see the number of active objects related to the job type setup.
-31. If you want to copy a job type setup to another job type setup, select the setup line to which you want to copy another setup, click **Copy setup**, and select a job type setup to copy.
-32. If you want to see a list of the objects, maintenance sequences, or rounds that currently use a job type setup line, select the line and click **Used by**.
+30. In **Maintenance job type defaults**, you can see the number of forecasted hours as well as the number of lines created for items, expenses, maintenance checklists, and tools on each line. In the **Assets** field, you see the number of active assets related to the maintenance job type default line.
+31. If you want to copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to which you want to copy another setup, click **Copy setup**, and select a maintenance job type default to copy.
+32. If you want to see a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line and click **Used by**.
 
-The figure below shows a screenshot of the interface.
 
 ![Figure 7](media/07-setup-for-work-orders.png)
 
-When the system selects the available job type setup to be used on a work order line, the selection is based on the object and the related object type setup. Enterprise Asset Management goes through all job type setup records related to the job type, which is related to the object type, to check for a possible match, always checking the most specific combination first. This means that, first, a possible match regarding **Trade** is checked. If no match is found, **Variant** is checked. If no match is found, **Job type** is checked, and so on. As you can see in the layout of **Job type setup**, this means that Enterprise Asset Management checks each record from right to left for a match (**Trade**, then **Variant**, then **Job type**, **Object**, **Model**, **Product**, and **Object type** to find the most specific combination. If no match is found, the "default" record is used in which only the job type is selected.
 
-- For each job type setup line you create, a project activity ID is automatically related to the line. The project activity is created on the forecast project selected in **Enterprise asset management parameters** > **Objects** link > **Forecast project** field. The purpose of the project activity is to manage forecasts on hours, items, and expenses in relation to work orders. Job type forecasts are automatically transferred to the work order line, and they are copied from the forecast project to the work order project created for the work order line. The purpose of the project activity is to manage forecasts in relation to work orders.  
-- A batch job can be set up to update job type setup references to run manually or at regular intervals. Click **Enterprise asset management** > **Periodic** > **Preventive maintenance** > **Update job type setup references** to create a batch job or run a manual update.
+When the system selects the available maintenance job type default to be used on a work order line, the selection is based on the asset and the related asset type setup. Asset Management goes through all maintenance job type default records related to the maintenance job type, which is related to the asset type, to check for a possible match, always checking the most specific combination first. This means that, first, a possible match regarding **Trade** is checked. If no match is found, **Maintenance job type variant** is checked. If no match is found, **Maintenance job type** is checked, and so on (**Trade**, then **Maintenance job type variant**, then **Maintenance job type**, **Asset**, **Model**, **Manufacturer**, and **Asset type**) to find the most specific combination. If no match is found, the "default" record is used in which only the maintenance job type is selected.
+
+- For each maintenance job type default line you create, a project activity ID is automatically related to the line. The project activity is created on the forecast project selected in **Asset management parameters** > **Assets** link > **Maintenance forecast project** field. The purpose of the project activity is to manage forecasts on hours, items, and expenses in relation to work orders. Maintenace job type forecasts are automatically transferred to the work order line, and they are copied from the forecast project to the work order project created for the work order line. The purpose of the project activity is to manage forecasts in relation to work orders.  
+- A batch job can be set up to update maintenance job type default references to run manually or at regular intervals. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Update maintenance job type default references** to create a batch job or run a manual update.
 
 ## Overview of job types related to objects
 
