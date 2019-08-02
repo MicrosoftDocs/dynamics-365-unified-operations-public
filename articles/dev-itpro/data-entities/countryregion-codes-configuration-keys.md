@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
 ms.search.scope: Operations
