@@ -109,34 +109,35 @@ balances, and so on.
 However, if you manually set a work order to be inactive (**Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders** > select and open work order > **Header** link > **General** FastTab > **Edit** button > set the **Active** toggle button to "No"), related but not yet posted journals will not automatically be deleted.
 
 
-## Stage group, type, and stage relations
+## Work order lifecycle model, work order type, and work order lifecycle state relations
 
-Stage groups refer to work flows, and stages are selected in a stage group in a sequential order. Stage groups are set up on types. Types determine the size or extent of work flows and work processes. For example, a standard work order type, "Maintenance", may be related to a work order stage group containing many stages. A "Corrective" work order type, which is used for work orders that have not been scheduled, or work orders for which the job was completed before the work order was made because of a need of urgency, may have a related work order stage group that only contains a few work order stages.
+Lifecycle models refer to work flows, and Lifecycle states are selected in a lifecycle model in sequential order. Lifecycle models are set up on work order types. Work order types determine the size or extent of work flows and work processes. For example, a standard work order type, "Maintenance", may be related to a work order lifecycle model containing many lifecycle states. A "Corrective" work order type, which is used for work orders that have not been scheduled, or work orders for which the job was completed before the work order was made because of a need of urgency, may have a related work order lifecycle model that only contains a few work order lifecycle states.
 
-The idea behind using types is that when a type is defined on, for example, a work order or an object, the related work processes (stages) are automatically defined. Refer to the [Work order types](../setup-for-work-orders/work-order-types.md) section for more information about how to set up work order types.
+The idea behind using types is that when a type is defined on, for example, a work order or an asset, the related work processes (lifecycle states) are automatically defined. Refer to the [Work order types](../setup-for-work-orders/work-order-types.md) section for more information on how to set up work order types.
 
-**Note:** Stages, stage groups, and types apply to: [Functional locations](../setup-for-functional-locations/functional-location-stages.md) - [Objects](../setup-for-objects/object-stages.md) - [Requests](../setup-for-requests/request-stages.md) - Work orders.
+>[!NOTE]
+>Lifecycle states, lifecycle models, and types apply to: [Functional locations](../setup-for-functional-locations/functional-location-stages.md) - [Assets](../setup-for-objects/object-stages.md) - [Maintenance requests](../setup-for-requests/request-stages.md) - Work orders.
 
-The figure below shows the relation between work order types, work order stage groups, and related work order stages.
+The figure below shows the relation between work order types, work order lifecycle models, and related work order lifecycle states.
 
 ![Figure 3](media/11-setup-for-work-orders.png)
 
-## Work order stage groups
 
-When you have created the work order stages required for your work orders, stages can be divided into work order groups. As a minimum, one standard work order stage group should be created.
+## Work order lifecycle models
 
-1. Click **Enterprise asset management** > **Setup** > **Work order** > **Stage** > **Stage groups**.
-2. Click **New** to create a new work order stage.
-3. Insert the stage group ID in the **Stage group** field and a name for the stage group in the **Name** field. In the **Stages** and **Work order types** fields, you can see the number of stages selected in the stage group, and the number of work order types that uses the stage group.
-4. On the **Stages** FastTab, select the stages that should be included in the group. This is done by clicking on a stage in the **Stages remaining** section and clicking the ![forward arrow](media/13-setup-for-work-orders.png) button.
-5. If you want to select all the available stages for a group, click the ![select all available stages](media/14-setup-for-work-orders.png) button. All stages are transferred to the **Stages selected** section.
-6. If you want to remove a selected stage from the group, select the stage in the
-**Stages selected** section and click the ![back arrow](media/15-setup-for-work-orders.png) button.
-7. Click **Stage updates** to define which stages can follow a selected stage.
-8. On the **General** FastTab, in the **Scheduled stage** field, select the stage that should always be selected for a work order when you have completed [Work order scheduling](../work-order-scheduling/set-up-worker-calendar.md) on that work order, regardless of the previous stage of the work order.
-9. In the **Unscheduled stage** field, select the stage that should always be selected for a work order in case work order scheduling is deleted.
-10. Save the work order stage group.
+When you have created the work order lifecycle states required for your work orders, states can be divided into work order lifecycle models. As a minimum, one standard work order lifecycle model should be created.
 
-The figure below shows a screenshot of the interface.
+1. Click **Asset management** > **Setup** > **Work orders** > **Lifecycle models**.
+2. Click **New** to create a new work order lifecycle model.
+3. Insert an ID in the **Lifecycle model** field and a name for the lifecycle model in the **Name** field. In the **Lifecycle states** and **Work order types** fields, you can see the number of lifecycle states selected in the lifecycle model, and the number of work order types that uses the lifecycle model.
+4. On the **Lifecycle states** FastTab, select the lifecycle states that should be included in the lifecycle model. This is done by clicking on a lifecycle state in the **Lifecycle states remaining** section and clicking the ![forward arrow](media/12-setup-for-work-orders.png) button.
+5. If you want to select all available lifecycle states for a lifecycle model, click the ![select all available stages](media/13-setup-for-work-orders.png) button. All lifecycle states are transferred to the **Lifecycle states selected** section.
+6. If you want to remove a selected lifecycle state from the lifecycle model, select the stage in the **Lifecycle states selected** section and click the ![back arrow](media/14-setup-for-work-orders.png) button.
+7. Click **Lifecycle state updates** to define which lifecycle states can follow a selected lifecycle state.
+8. On the **Updates** FastTab, in the **Scheduled state** field, select the lifecycle state that should always be selected for a work order when you have completed [Work order scheduling](../work-order-scheduling/set-up-worker-calendar.md) on that work order, regardless of the previous lifecycle state of the work order.
+9. In the **Unscheduled lifecycle state** field, select the lifecycle state that should always be selected for a work order in case work order scheduling is deleted.
+10. Save the work order lifecycle model.
 
-![Figure 4](media/16-setup-for-work-orders.png)
+
+![Figure 4](media/15-setup-for-work-orders.png)
+
