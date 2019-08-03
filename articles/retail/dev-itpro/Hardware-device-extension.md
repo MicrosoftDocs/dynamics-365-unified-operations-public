@@ -1,0 +1,145 @@
+**POS and New Hardware device extension:**
+
+In this topic, we will walkthrough how you can integrate POS with new hardware device. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail platform update 8.
+
+To call hardware station (HWS) from POS we added the below request and response:
+
+-   **HardwareStationDeviceActionRequest** – Request sent from POS to Hardware station.
+
+-   **HardwareStationDeviceActionResponse** – Response received from Hardware station to POS.
+
+**HardwareStationDeviceActionRequest:**
+
+```C#
+class HardwareStationDeviceActionRequest<TResponse extends HardwareStationDeviceActionResponse> extends Request<TResponse> {
+readonly device: string;
+readonly action: string;
+readonly actionData: any;
+constructor(device: string, action: string, actionData: any, correlationId?: string);
+
+}
+```
+| Parameters | Data type | Description                                                                                                                                                                                                                                                                                                               |
+|------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| device     | String    | Device name passed to the HWS request should be same as the Export attribute added in the HWS Device extension controller class.                                                                                                                                                                                          |
+| action     | String    | Method to be called in the HWS extension. The method name should be passed as string value and the core POS hardware station layer will call the corresponding method from your HWS extension code. The method should exactly match the method name in your HWS extension.HWS extension should be passed as paremetr, and |
+| actionData | any       | Custom parameter for extension to pass.                                                                                                                                                                                                                                                                                   |
+
+**Sample code:**
+```C#
+ let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<HardwareStationDeviceActionResponse> =
+ new HardwareStationDeviceActionRequest("Export attribute in HWS controller class",
+"extension method name in HWS", "Custom parameters/you can also pass custom object");
+return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
+```
+**HardwareStationDeviceActionResponse:**
+
+```C#
+class HardwareStationDeviceActionResponse extends Response {
+readonly response: any;
+constructor(response: any);
+
+}
+```
+| Parameters | Data type | Description                                       |
+|------------|-----------|---------------------------------------------------|
+| response   | any       | Response sent from the HWS extension code to POS. |
+
+**E2E Flow:**
+
+<img src="media/image1.png" width="518" height="388" />
+
+**HWS extension:**
+
+To call your new hardware device, you must implement the Hardware station code. From the Hardware station code call your hardware device.
+
+**To implement the HWS extension follow the below steps:**
+
+1.  Create a new C# class library project.
+
+2.  Add a new controller class extending it from HardwareStationController, IHardwareStationController
+
+3.  Add the Export attribute to the controller class. The Export attribute must be in capital letters and this value must be passed as a parameter from POS extension. The device parameter passed from POS HardwareStationDeviceActionRequest must match this value.
+
+4.  Add your method in controller class to implement your custom logic to call the hardware device. This method will be passed as the second parameter (action parameter) to the POS HardwareStationDeviceActionRequest.
+
+5.  Build the project.
+
+**Deploy the HWS extension in MPOS to test it using the local HWS:**
+
+1.  Copy the output library and paste it in C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext folder.
+
+2.  Open the HardwareStation.Extension.config
+
+3.  Add the extension library details under the composition section.
+
+  <add source="assembly" value="your extension library name" />
+
+1.  Save the file.
+
+2.  Close Modern POS if running.
+
+3.  Open Task manager and kill all the dllhost.exe
+
+4.  Launch MPOS and configure it to use local hardware station and then validate your scenario.
+
+To test with Cloud POS, deploy the HWS extension dll to shared HWS ext folder and update the HardwareStation.Extension.config with the custom library in the shared HWS folder.
+
+**Note:** We have few samples in Retail SDK for refernce.
+**POS -** \RetailSDK\POS\Extensions\FiscalRegisterSample
+**HWS -** \RetailSDK\SampleExtensions\HardwareStation\Extension.FiscalRegisterSample
+
+**Sample HWS code:**
+```C#
+namespace Contoso
+{
+  namespace Commerce.HardwareStation.ISVExtensionDevice
+  {
+
+  using System;
+  using System.Composition;
+  using System.Web.Http;
+  using Microsoft.Dynamics.Commerce.HardwareStation;
+  /// <summary>;
+  /// Fiscal register peripheral web API controller class.
+  /// </summary>
+
+  [Export("ISVEXTENSIONDEVICE", typeof(IHardwareStationController))]
+  [Authorize]
+  public class ISVExtensionDeviceController : HardwareStationController, IHardwareStationController
+  {
+  /// <summary>
+  /// Sample.
+  /// </summary>
+
+  /// <param name="request">Custom request.<param>
+  /// <returns>Result of Custom response.</returns>
+
+      [HttpPost]
+      public CustomResponse Sample(CustomRequest request)
+      {
+        ThrowIf.Null(request, "request");
+        try
+        {
+          return null;
+        }
+
+        catch (Exception ex)
+          {
+            throw ex;
+          }
+      }
+   }
+   }
+ }
+
+```
+**Sample POS code on how to call the above HWS extension:**
+
+From your POS extension call the HWS following similar pattern:
+```C#
+let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<HardwareStationDeviceActionResponse> =
+new HardwareStationDeviceActionRequest("ISVEXTENSIONDEVICE",
+ "Sample", "Custom parameters or custom object");
+ return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
+ ```
