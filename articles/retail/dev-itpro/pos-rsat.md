@@ -91,9 +91,9 @@ To Start test recorder, login to Retail Cloud POS and navigate to the **Settings
 
 [![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
 
-### **Controls in the test recorder: **
+### Controls in the test recorder:
 
-### **Stop**
+### Stop
 
 [![Stop](./media/Stop.png)](./media/Stop.png)
 
@@ -101,13 +101,13 @@ Click **Stop** to end the recording session. Note that you can't restart a sessi
 
 ### 
 
-### **Pause**
+### Pause
 
 [![Pause](./media/Pause.png)](./media/Pause.png)
 
 Click **Pause** to temporarily stop (pause) the recording session. Steps that you perform after you click **Pause** aren't recorded.
 
-### **Continue**
+### Continue
 
 **Recording**:
 
@@ -117,7 +117,7 @@ To resume the recording session after you've paused it, click **Recording**.
 
 ### 
 
-### **Start task and End task**
+### Start task and End task
 
 You can specify the beginning and end of a set of grouped steps by using the **Start task** and **End** **task** buttons. Click **Start task** to add a "Start Task" step, and then perform the steps that should be included in the group. After you've finished performing the steps for the group, click **End task**. Tasks help you organize your procedures. Tasks can be nested within other tasks. In this way, you can better organize very long and complex business processes.
 
@@ -128,19 +128,19 @@ An annotation is additional text that you add to a step in a recording. For exam
 
 [![Annotation](./media/Annotation.png)](./media/Annotation.png)
 
-### **Texts and notes**
+### Texts and notes
 
 You can use the **Texts** and **Notes** fields in the annotation dialog to add text that should be associated with a step in a Task guide.
 
 #### 
 
-#### **Text**
+#### Text
 
 Text that you enter in the **Text** field appears *above* the step text in the test steps.
 
 #### 
 
-#### **Notes**
+#### Notes
 
 Text that you enter in the **Notes** field appears *below* the step text in the LCS.
 
@@ -172,7 +172,7 @@ The move control allows you to move the floater control within the POS app.
 
 Turn on the validation mode and pauses the recording. You need to turn of the validation mode to continue with the recording.
 
-### **Pause**
+### Pause
 
 Click **Pause** button to temporarily stop (pause) the recording session and continue with the operation. Steps that you perform after you click **Pause** aren't recorded.
 
@@ -193,15 +193,15 @@ Follow these steps to create a new recording using test recorder:
 
 [![Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
 
-1.  Click the Create a new recording.
+3.  Click the Create a new recording.
 
 [![New recording](./media/NewTest.png)](./media/Newtest.png)
 
-1.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**.
+4.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**.
 
-2.  After you click **Start**, test recorder enters recording mode. The **test recorder** pane shows information and controls that are related to the recording process.
+5.  After you click **Start**, test recorder enters recording mode. The **test recorder** pane shows information and controls that are related to the recording process.
 
-3.  Perform the actions that you want to perform in the Retail POS user interface (UI).
+6.  Perform the actions that you want to perform in the Retail POS user interface (UI).
 
 [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
 
@@ -209,15 +209,15 @@ Follow these steps to create a new recording using test recorder:
 
 Validation mode during recording allows the user to validate values during test execution. Ex: If you want to validate a label text, or the item price or tax is calculated correctly or validate any error message etc. can be done using the validation mode feature. To enable validation during recording enable the validation mode by clicking the enable validation mode toggle button.
 
-1.  Turn on the Enable validation mode toggle button.
+7.  Turn on the Enable validation mode toggle button.
 
-2.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
+8.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
 
 **Note:** In validation mode, test recorder will be in paused state, test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. Ex: In validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
 
 [![Test recorder validation](./media/Validation.png)](./media/Validation.png)
 
-1.  To end the recording session, click **Stop**.
+9.  To end the recording session, click **Stop**.
 
 Download options
 ----------------
@@ -262,25 +262,25 @@ Note: You must setup Azure DevOps and complete the required general setting and 
 
 **Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
 
-1.  Click the POS login credentials tab.
+6.  Click the POS login credentials tab.
 
 Test recorder only captures the username during the recording from the POS, it will not store any password but to execute the test we need both the login username and password to login to POS. To securely store the password information instead of the recording file, we added this tab to capture the POS logon username and password. During test execution we will map the user id used in the recording file with the same user id entered in the RSAT tool and get the password. Please enter all the username and password used during the recording in the RSAT tool so that during test execution we can map and get the password or else the test execution will fail saying logon details not found.
 
  [![Test credential](./media/PosLogin.png)](./media/PosLogin.png)
 
-2.  Click the New button.
+6.  Click the New button.
 
 [![New test user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-3.  In the username field enter the POS logon username.
+7.  In the username field enter the POS logon username.
 
-4.  Password field enter the POS logon password.
+8.  Password field enter the POS logon password.
 
-5.  Repeat steps 6-8 to enter different POS logon username and password.
+9.  Repeat steps 6-8 to enter different POS logon username and password.
 
-6.  To edit the POS logon credential, click the Edit button.
+10.  To edit the POS logon credential, click the Edit button.
 
-7.  To delete the POS logon credential, click the Delete button.
+11.  To delete the POS logon credential, click the Delete button.
 
 **Run **
 
