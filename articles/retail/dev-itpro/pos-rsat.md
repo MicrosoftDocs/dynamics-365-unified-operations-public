@@ -282,13 +282,13 @@ Test recorder only captures the username during the recording from the POS, it w
 
 11.  To delete the POS logon credential, click the Delete button.
 
-**Run **
+**Run**
 
 The following sections explain how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
 **Note:** The detailed steps on how to setup Azure DevOps, test cases etc. are available in the RSAT manual, please complete those steps before starting your test execution.
 
-**Load Test Cases and Create parameter Files **
+**Load Test Cases and Create parameter Files**
 
 Click Load to download test cases and test case automation files from Azure DevOps. All test cases belonging to the test plan specified in the Settings dialog are downloaded.
 
@@ -320,7 +320,7 @@ An important component of a test case is validation of expected values. You can 
 
 [![Edit values](./media/RSATExcel.png)](./media/RSATExcel.png)
 
-Run
+### Run
 
 Click **Run** to execute the selected test cases. Only test cases with automation files generated can be run. The tool will open Retail POS and execute these tests with the data you entered in Excel. After the test run the results will be updated in the RSAT tool Result column and in Azure DevOps.
 
