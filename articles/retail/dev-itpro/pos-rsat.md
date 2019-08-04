@@ -54,15 +54,15 @@ The Regression Suite Automation Tool (RSAT) enables functional power users to ex
 
 **E2E Flow:**
 
-**Prerequisites **
+**Prerequisites**
 
 Dynamics 365 for Finance and Operations Retail POS environment. Your test environment must be running binary update 10.0.5 or newer. The Regression Suite Automation Tool must have access to your test environment via a web browser.
 
-**Excel **
+**Excel**
 
 You need Microsoft Excel installed to generate and edit test parameters.
 
-**Azure DevOps **
+**Azure DevOps**
 
 You must have an Azure DevOps project to store and manage your test cases, test plans and test case results.
 
@@ -249,22 +249,28 @@ Note: You must setup Azure DevOps and complete the required general setting and 
 
 
 **Cloud POS URL:** This is the URL of your Cloud POS environment where you want to do the test execution.
+
 **Retail Server URL:** Retail server URL to do activation. We will use this Retail Server URL to activate the device if it’s not activated before.
+
 **AAD user email:** AAD user email address to activate the device. AAD user must have permission to activate the device.
+
 **AAD password:** AAD user password to activate the device.
+
 **Store:** Store id (Retail channel) to execute the test. The test will be executed in this Store.
+
 **Device:** Device id to execute the test. The test will be executed in this device.
+
 **Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
 
 1.  Click the POS login credentials tab.
 
 Test recorder only captures the username during the recording from the POS, it will not store any password but to execute the test we need both the login username and password to login to POS. To securely store the password information instead of the recording file, we added this tab to capture the POS logon username and password. During test execution we will map the user id used in the recording file with the same user id entered in the RSAT tool and get the password. Please enter all the username and password used during the recording in the RSAT tool so that during test execution we can map and get the password or else the test execution will fail saying logon details not found.
 
- [![Test credential](./media/POSLogin.png)](./media/POSLogin.png)
+ [![Test credential](./media/PosLogin.png)](./media/PosLogin.png)
 
 2.  Click the New button.
 
-[![New test user](./media/EditPOSUser.png)](./media/EditPOSUser.png)
+[![New test user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
 3.  In the username field enter the POS logon username.
 
@@ -308,7 +314,7 @@ For the retail test recording files ***Generate Test Execution files only*** opt
 
 This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and click Edit. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. In addition to the summary tab, the Excel file contains a variables tab which has the details of all the variables generated. Retail POS automatically generate variables for all the input values entered during the recording so you don’t need to generate the variables separately and each variables will have unique variable id and you can pass the variable id to different test cases in a single instance of execution in sequence. All the variables generated in the variables tab are organized in the sequence which they are entered during the recording.
 
-Validate Expected Values
+**Validate Expected Values**
 
 An important component of a test case is validation of expected values. You can define validation parameters during the authoring of your test cases using Test Recorder in the validation mode. Enable validation mode during recording and click all the fields to be validated while recording. This action becomes a validation step that you can use with RSAT and the validation values will also show up in the same excel file variables tab in the sequence entered, so before execution you can modify and values in the excel and test execution will use this new value for data entry and validation.
 
@@ -320,7 +326,7 @@ Click **Run** to execute the selected test cases. Only test cases with automatio
 
 Note: You can modify the order in which test cases are executed using the up and down arrow buttons.
 
-**Investigate Results **
+**Investigate Results**
 
 When test cases complete execution, pass or fail status will be populated in the RSAT result column. You can click on the result column to see the error messages. More investigation details are available in Azure DevOps. From your Azure DevOps project page, go to **Test &gt; Runs**.
 
@@ -342,9 +348,9 @@ Below is the list of different files generated during recording, Test execution 
 
 The user must manually delete these files and secure it if required. All the above files are stored in RSAT working directory.
 
-**Best Practices **
+**Best Practices**
 
-**Authoring test cases using the Test Recorder: **
+**Authoring test cases using the Test Recorder:**
 
 1. Make sure all your recordings start from the POS login screen.
 
