@@ -204,17 +204,17 @@ Follow these steps to create a new recording using test recorder:
 3.  Perform the actions that you want to perform in the Retail POS user interface (UI).
 
 [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
->
-> **Validation mode:**
->
-> Validation mode during recording allows the user to validate values during test execution. Ex: If you want to validate a label text, or the item price or tax is calculated correctly or validate any error message etc. can be done using the validation mode feature. To enable validation during recording enable the validation mode by clicking the enable validation mode toggle button.
+
+**Validation mode:**
+
+Validation mode during recording allows the user to validate values during test execution. Ex: If you want to validate a label text, or the item price or tax is calculated correctly or validate any error message etc. can be done using the validation mode feature. To enable validation during recording enable the validation mode by clicking the enable validation mode toggle button.
 
 1.  Turn on the Enable validation mode toggle button.
 
 2.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
 
-> **Note:** In validation mode, test recorder will be in paused state, test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. Ex: In validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
->
+**Note:** In validation mode, test recorder will be in paused state, test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. Ex: In validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
+
 [![Test recorder validation](./media/Validation.png)](./media/Validation.png)
 
 1.  To end the recording session, click **Stop**.
@@ -245,31 +245,26 @@ Note: You must setup Azure DevOps and complete the required general setting and 
 
 4.  Click the **Playback environment**.
 
-> <img src="media/image15.png" width="432" height="553" />
->
-> **Cloud POS URL:** This is the URL of your Cloud POS environment where you want to do the test execution.
->
-> **Retail Server URL:** Retail server URL to do activation. We will use this Retail Server URL to activate the device if it’s not activated before.
->
-> **AAD user email:** AAD user email address to activate the device. AAD user must have permission to activate the device.
->
-> **AAD password:** AAD user password to activate the device.
->
-> **Store:** Store id (Retail channel) to execute the test. The test will be executed in this Store.
->
-> **Device:** Device id to execute the test. The test will be executed in this device.
->
-> **Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
+[![Playback environment](./media/Setting.png)](./media/Setting.png)
+
+
+**Cloud POS URL:** This is the URL of your Cloud POS environment where you want to do the test execution.
+**Retail Server URL:** Retail server URL to do activation. We will use this Retail Server URL to activate the device if it’s not activated before.
+**AAD user email:** AAD user email address to activate the device. AAD user must have permission to activate the device.
+**AAD password:** AAD user password to activate the device.
+**Store:** Store id (Retail channel) to execute the test. The test will be executed in this Store.
+**Device:** Device id to execute the test. The test will be executed in this device.
+**Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
 
 1.  Click the POS login credentials tab.
 
-    Test recorder only captures the username during the recording from the POS, it will not store any password but to execute the test we need both the login username and password to login to POS. To securely store the password information instead of the recording file, we added this tab to capture the POS logon username and password. During test execution we will map the user id used in the recording file with the same user id entered in the RSAT tool and get the password. Please enter all the username and password used during the recording in the RSAT tool so that during test execution we can map and get the password or else the test execution will fail saying logon details not found.
+Test recorder only captures the username during the recording from the POS, it will not store any password but to execute the test we need both the login username and password to login to POS. To securely store the password information instead of the recording file, we added this tab to capture the POS logon username and password. During test execution we will map the user id used in the recording file with the same user id entered in the RSAT tool and get the password. Please enter all the username and password used during the recording in the RSAT tool so that during test execution we can map and get the password or else the test execution will fail saying logon details not found.
 
-    [![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
+ [![Test credential](./media/POSLogin.png)](./media/POSLogin.png)
 
 2.  Click the New button.
 
-   [![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
+[![New test user](./media/EditPOSUser.png)](./media/EditPOSUser.png)
 
 3.  In the username field enter the POS logon username.
 
@@ -291,7 +286,7 @@ The following sections explain how to load test cases from Azure DevOps, generat
 
 Click Load to download test cases and test case automation files from Azure DevOps. All test cases belonging to the test plan specified in the Settings dialog are downloaded.
 
-[![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
+[![RSAT load](./media/RSATLoad.png)](./media/RSATLoad.png)
 
 Test cases are organized by test suites under a common test plan. These are test suites you created in your Azure DevOps project. Using this tool, you can work with one test suite at a time. If the tool fails to load any test case, verify that your test plan in Azure DevOps is properly created and contains the desired test suites and test cases.
 
@@ -303,7 +298,7 @@ If this is the first time you load this test plan, the Parameters File column wi
 
 When you click the New button, test automation files are generated in your working directory. The Excel test parameter files will appear on the grid under Parameters File column.
 
-[![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
+[![Variable generation](./media/RSATParameter.png)](./media/RSATParameter.png)
 
 For the retail test recording files ***Generate Test Execution files only*** option will be disabled because Retail Cloud POS uses the selenium web directly to do the playback so no additional script file generation is required.
 
