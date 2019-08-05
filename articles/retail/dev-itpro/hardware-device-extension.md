@@ -114,13 +114,16 @@ To deploy the HWS extension in MPOS and test it using the local HWS
 7. Launch MPOS and configure it to use local hardware station
 8. Validate your scenario.
 
-To test with Cloud POS, deploy the HWS extension dll to shared HWS ext folder and update the HardwareStation.Extension.config with the custom library in the shared HWS folder.
+To test with Cloud POS, deploy the HWS extension dll to the shared HWS **ext** folder and update the **HardwareStation.Extension.config** file with the custom library in the shared HWS folder.
 
-**Note:** We have few samples in Retail SDK for refernce.
-**POS -** \RetailSDK\POS\Extensions\FiscalRegisterSample
-**HWS -** \RetailSDK\SampleExtensions\HardwareStation\Extension.FiscalRegisterSample
+## Retail SDK samples.
+There are some samples in Retail SDK for reference:
 
-**Sample HWS code:**
++ **POS**: \RetailSDK\POS\Extensions\FiscalRegisterSample
++ **HWS**: \RetailSDK\SampleExtensions\HardwareStation\Extension.FiscalRegisterSample
+
+## Sample HWS code
+
 ```C#
 namespace Contoso
 {
@@ -165,12 +168,14 @@ namespace Contoso
  }
 
 ```
-**Sample POS code on how to call the above HWS extension:**
 
-From your POS extension call the HWS following similar pattern:
-```C#
+## Sample POS code on how to call the above HWS extension
+
+From your POS extension call the HWS by using this pattern:
+
+```TypeScript
 let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<HardwareStationDeviceActionResponse> =
-new HardwareStationDeviceActionRequest("ISVEXTENSIONDEVICE",
- "Sample", "Custom parameters or custom object");
+    new HardwareStationDeviceActionRequest("ISVEXTENSIONDEVICE",
+     "Sample", "Custom parameters or custom object");
  return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequest);
  ```
