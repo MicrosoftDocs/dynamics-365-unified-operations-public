@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Maintenance Forecasts
+# Maintenance forecasts
 
 
 When you create a work order, you create work order jobs with related assets and maintenance job types. When you select a maintenance job type containing maintenance forecasts, the forecasts are automatically copied to the work order.
