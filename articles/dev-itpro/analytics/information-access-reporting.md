@@ -93,7 +93,7 @@ Information access scenarios supported in Finance and Operations applications ca
 
 The following table can be used as a guide when choosing the right tool for the reporting solution.
 
-[![Report scorecard](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)
+![Report scorecard](media/report-scorecard.png)
 
 > [!NOTE]
 > "Near real-time" denotes processed data that is slightly slower than real-time.
