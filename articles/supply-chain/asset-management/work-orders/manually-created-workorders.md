@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manually created work orders
-description: This topic explains how to create work orders manually in Enterprise Asset Management.
+description: This topic explains how to create work orders manually in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -33,30 +33,29 @@ ms.dyn365.ops.version: AX 7.0.0
 # Manually created work orders
 
 
-
-This topic explains how to create work orders manually in Enterprise Asset Management. You can create work orders manually in two ways:
+You can create work orders manually in two ways:
 
 - in **All work orders** or **Active work orders**  
-- in **All requests** or **Active requests** or **My functional location requests**  
+- in **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests**  
 
 ## Create work order
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Click the **New** button.
 
 3. In the **Create work order** drop-down, select a work order type.
 
-4. If required, select a description and a customer account in the related fields.
+4. If required, select a description.
 
-5. Select the object for the work order as well as the related job type.
+5. Select the asset for the work order as well as a maintenance job type.
 
 >[!NOTE]
->When you select an object, three tabs are available: The **My objects** tab contains objects related to the functional locations to which you (the worker who is logged on the system) may be allocated (set up in [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)). If no functional locations are set up on a worker in [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md), the **My objects** tab will not be visible. The **Active objects** tab contains a list of all objects with object stage "Active". The **Object view** tab displays a tree view of functional locations and objects installed on those locations.
+>When you select an asset, three tabs may be available: The **My assets** tab contains assets related to the functional locations to which you (the worker who is logged on the system) may be allocated (set up in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)). If no functional locations are set up on a worker in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md), the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". The **Asset view** tab displays a tree view of functional locations and assets installed on those locations.
 
-6. If required, select **Variant** and **Trade**.
+6. If required, select **Maintenance job type variant** and **Trade**.
 
-7. If required, you can change the work order priority in the **Priority** field.
+7. If required, you can change the work order service level in the **Service level** field.
 
 8. Select expected start and end dates in the related fields.
 
@@ -64,8 +63,8 @@ This topic explains how to create work orders manually in Enterprise Asset Manag
 
 10. Edit the work order in **All work orders**, if required.
 
-- In **All work orders**, You can add several objects to a work order in Details view by adding lines on the **Work order lines** FastTab. On an object, you can only select the job types that are defined on the object type related to the object.  
-- If you have changed an object priority or an object criticality after you have used them on a work order (refer to [Object priorities](../setup-for-objects/object-priorities.md) and [Object criticalities](../setup-for-objects/object-criticalities.md)), the priority or criticality on the work order is not updated accordingly.
+- In **All work orders**, You can add several assets to a work order in Details view by adding lines on the **Work order maintenance jobs** FastTab. On an asset, you can only select the maintenance job types that are defined on the asset type selected for the asset.  
+- If you have changed an asset priority or an object criticality after you have used them on a work order (refer to [Object priorities](../setup-for-objects/object-priorities.md) and [Object criticalities](../setup-for-objects/object-criticalities.md)), the priority or criticality on the work order is not updated accordingly.
 - Criticality on a work order is re-calculated each time a work order line is added or deleted on the work order.
 - In **All work orders** Details view > **Header** view > **Schedule** FastTab, you can select a responsible worker group or a responsible worker in the **Responsible group** or **Responsible** fields. These settings can be changed as long as the work order is active, for example, when the work order stage changes. The automatic selection made during work order creation is based on the setup in **Responsible workers**. If you add or remove work order lines after you have created a work order, and the **Responsible group** field and the **Responsible** field are blank when you update e work order, Enterprise Asset Management searches for a possible match in the setup form for a responsible group or a responsible worker. If the **Responsible group** field or the **Responsible** field is already filled out when you update the work order, no changes are made. Read more about responsible workers and worker groups in [Responsible workers](../setup-for-requests/responsible-workers.md).
 
