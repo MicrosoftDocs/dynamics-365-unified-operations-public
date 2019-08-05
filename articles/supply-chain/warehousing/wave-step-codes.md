@@ -61,67 +61,66 @@ errors.
 existing wave steps codes in the specific legal entity will be upgraded into the
 new structure.
 
-## Demo setup 
+## Setup demo 
 
-Pre-condition: Demo data, Company USMF
+For this demo, you will need to have demo data installed, and use demo data company USMF.
 
-Enable wave step codes, navigate to Warehouse management Setup Warehouse
-management parameters General Wave processing Enable wave step codes.
+### Enable step codes
 
-Note: *Once the upgrade of all existing wave step free texts into the new
-structure ends with success for a legal entity, the menu item Enable wave step
-codes will no longer be available in the form. During the upgrade, more
-validations are performed and if the upgrade fails, then the user is presented
-an error messages. Reasons for upgrade failure can be, but is not excluded to,
-duplicate wave step code free texts, customizations, mismatch on a wave step
-free text associated with a wave step method which does not match the expected
-template type. Once the user has resolved the conflicts identified during the
-validations, the upgrade process can be re-run.*
+To enable wave step codes, go to **Warehouse management > Setup > Warehouse
+management parameters.** On the **General** tab, on the **Wave processing** FastTab, select **Yes* for **Enable wave step codes**.
 
-When the upgrade succeeds the following form be accessible:
+All existing wave step free texts will be upgraded into the new
+structure. Once this is complete for a legal entity, the item **Enable wave step
+codes** will no longer be available in the form. Validations are performed during the upgrade,
+and if the upgrade fails, an error message will appear. An upgrade may fail for the following reasons; duplicate wave step code free texts, customizations, or a wave step
+free text associated with a wave step method does not match the expected
+template type. Once the conflicts identified during the
+validations are resolved, the upgrade process can be re-run.
 
-Navigate to Warehouse management Setup Waves Wave step codes.
+When the upgrade succeeds, the **Wave step codes** page will be available. The **Warehouse management > Setup > Waves > Wave step codes** page lists the wave step codes upgraded during the enabling
+process. 
 
-In this form you can see the wave step codes upgraded during the enabling
-process. This is also the form where you create and delete wave step codes. The
-wave step code, the ID, must be unique across all wave step types and is
-specified for a specific wave step type.
+### Create new step codes
 
-Once the appropriate wave steps codes have been defined, they can be applied for
-the wave processing methods. In order to do such, navigate to the appropriate
-target template. The target templates for which the wave step codes are
+You can use the **Warehouse management > Setup > Waves > Wave step codes** page to create and delete wave step codes. 
+
+Any new wave step code and its associated ID must be unique across all wave step types, and must be 
+defined for a specific wave step type.
+
+### Apply step codes
+
+Once the appropriate wave step codes have been defined, they can be applied for
+the wave processing methods. 
+
+To apply step codes, go to the appropriate target template. The target templates for which the wave step codes are
 designated to point to are:
 
-**Replenishment Templates**: Warehouse management Setup Replenishment
-Replenishment Templates
+- **Replenishment templates**. **Warehouse management > Setup > Replenishment > Replenishment templates**
 
-**Load Build Templates**: Warehouse management Setup Load Load Build Templates
+- **Load build templates**: **Warehouse management > Setup > Load > Load build templates**
 
-**Sort Templates**: Warehouse management Setup Packing Outbound Sorting
-Templates
+- **Sort templates**: **Warehouse management > Setup > Packing > Outbound sorting templates**
 
-**Containerization Templates**: Warehouse management Setup Containers Container
-Build Templates
+- **Containerization templates**: **Warehouse management > Setup > Containers > Container build templates**
 
-**Label Printing Templates**: Warehouse management Setup Document Routing Wave
-Label Templates
+- **Label printing templates**: **Warehouse management > Setup > Document routing > Wave label templates**
 
-The above templates will be applied when referenced from a wave processing
-method selected in a wave templates. When the wave step code on a wave
+The templates above will be applied when referenced from a wave processing
+method selected in a wave template. When the wave step code on a wave
 processing method in a wave template matches the wave step code on a one of the
-5 templates types, then the template on applied.
+templates types, then the template will be applied.
 
-Consider the setup:
+### Sample scenario
 
-Navigate to Warehouse management Setup Waves Wave step codes. Create a wave step
-code for the type **Replenishment**. Navigate to Warehouse management Setup
-Replenishment Replenishment Templates. Create a replenishment template. On the
-replenishment template select the wave step code created for the type. Navigate
-to Warehouse management Setup Waves Wave Templates. Select the wave template
-that you intent to use. On the template, in the **Methods** fast tab, select the
-method Replenishment. Once selected, in the wave step code field, select the
-wave step code you also selected for the replenishment template.
+1. Go to **Warehouse management > Setup > Waves > Wave step codes**. Create a wave step code for the type **Replenishment**. 
+1. Go to **Warehouse management > Setup > Replenishment > Replenishment templates.** Create a replenishment template. 
+1. On the replenishment template, select the wave step code created for the type.
+1. Go to **Warehouse management > Setup > Waves > Wave templates**. Select the wave template
+that you intent to use. 
+1. On the template, on the **Methods** FastTab, select the method **Replenishment**. 
+1. In the **Wave step code** field, select the wave step code you also selected for the replenishment template.
 
-With these steps you have now ensured that the replenishment template created
+By following these steps, you ensured that the replenishment template you created
 will be the replenishment template that will be applied for the wave template
 when used as the wave step codes selected match.
