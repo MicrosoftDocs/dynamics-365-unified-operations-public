@@ -81,20 +81,16 @@ For information about existing functionality, see [Update how amounts are displa
 
 Cash control lets you define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. Accounts payable vendor invoices and General ledger advanced ledger entries are validated when they are created, edited, and posted. If transaction posting will cause the related cash account's balance to be reduced below the limit that is defined for the account, the user receives an error message and must change the account to continue.
 
-For more information, see [Cash control](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/public-sector/cash-control).
-
 ## Forecast position distribution (Public Sector)
 
 You can maintain financial dimension default templates for forecast positions by using the controls on the **Financial dimensions** FastTab on the **Forecast position** page. The grid in the upper part of the FastTab shows all the distribution lines together with their percentage. The lower part of the FastTab shows the forecast position's default dimensions.
 
 You can validate whether the default dimensions for a forecast position are correct for your organization's chart of accounts. For any forecast position, on the **Forecast position** page, select **Validate** on the Action Pane to determine whether the setup of financial dimensions for that forecast position is valid. This validation is quick and can help you identify errors before you generate a budget plan from a forecast position. You can also validate multiple forecast positions at the same time on the **Forecast positions** page.
 
-For more information, see [Forecast position distribution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/public-sector/forecast-positions).
-
 ## Deferred put
 The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
-For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put.md)
+For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
 
 ## Journal unlock
 A new button is available on the journal page to unlock a journal that has a status of **Locked by system** set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.
