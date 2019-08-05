@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition overview 
-description: Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out these multi-element orders to recognize revenue based on a set of company and industry-specific guidelines.
+description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
 author: kweekley
 manager: aolson
 ms.date: 08/24/2018
@@ -30,29 +30,26 @@ ms.dyn365.ops.version: 8.0.4
 
 # Revenue recognition overview
 
-[!Note] The Revenue recognition feature is not enabled through Feature management yet. Currently you must use configuration keys to enable it. 
+> [!NOTE]
+> The Revenue recognition feature can't yet be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
-Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out these multi-element orders to recognize revenue based on a set of company and industry-specific guidelines.
+Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
-In general, the revenue recognition process can be used to:
+In general, the revenue recognition process can be used to perform these tasks:
 
-*	Allocate revenue to help ensure that the appropriate revenue price is recognized based on the value of the components within the multi-element orders
-*	Defer revenue based on a revenue schedule that represents the contractual timeframe and percentages for recognizing revenue over time
-The Revenue recognition feature provides a flexible framework for defining company specific rules for recognizing both the revenue price and the revenue schedule. 
+* Allocate revenue, to help guarantee that the appropriate revenue price is recognized based on the value of the components on the multi-element orders.
+* Defer revenue, based on a revenue schedule that represents the contractual timeframe and percentages for recognizing revenue over time.
 
-The Revenue recognition feature provides a flexible framework for defining company specific rules for recognizing both the revenue price and the revenue schedule. 
+The Revenue recognition feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule.
 
-Revenue recognition is supported on the sales order document with released products. The sales order can also originate from a time and material project. The released products contain the setup required to determine the revenue price and the revenue schedule. 
+Released products are used to support revenue recognition on sales order documents. The released products contain the setup that is required to determine the revenue price and the revenue schedule. The sales order can originate from a Time and material project.
 
-Companies can use the revenue schedule functionality without using the revenue price functionality, which means that the price on the sales order lines will be used, either as revenue or deferred revenue. If a revenue schedule exists on the sales order line, the price on the sales order line will be deferred. If a revenue schedule does not exist, the price on the sales order line will be posted to a revenue account when it is invoiced. 
+Companies can use the revenue schedule functionality without using the revenue price functionality. Therefore, the price on the sales order lines will be used as either revenue or deferred revenue. If a revenue schedule exists on the sales order line, the price on the sales order line will be deferred. If a revenue schedule doesn't exist on the sales order line, the price on the sales order line will be posted to a revenue account when it's invoiced.
 
-The revenue price is calculated at either when the sales order is confirmed, or when the invoice is posted. To preview the revenue price before posting the invoice, the sales order must be confirmed.  
+The revenue price is calculated either when the sales order is confirmed or when the invoice is posted. To preview the revenue price before the invoice is posted, you must confirm the sales order.
 
-When the sales order is confirmed, an expected revenue schedule is also created if any sales order line contains a revenue schedule. The expected revenue schedule is deleted when the order is invoiced, and the expected revenue schedule is replaced with the actual revenue recognition schedule.  
+When the sales order is confirmed, an expected revenue schedule is also created if any sales order line contains a revenue schedule. When the sales order is invoiced, the expected revenue schedule is deleted, and the expected revenue schedule is replaced with the actual revenue recognition schedule.
 
-The details of the revenue recognition schedule are maintained for each sales order line, allowing the revenue recognition manager to view the details, and release lines to revenue when the contractual obligation has been completed. The revenue recognition manager can create a revenue journal at the end of each period to release any schedule lines that are due on or before the date defined by the manager. The revenue journal is not posted immediately, allowing the manager to verify that the correct amounts are being released from deferred revenue to actual revenue. 
+The details of the revenue recognition schedule are maintained for each sales order line. Therefore, the revenue recognition manager can view the details and can release lines to revenue when the contractual obligation has been completed. At the end of each period, the revenue recognition manager can create a revenue journal to release any schedule lines that are due on or before a date that he or she defines. This revenue journal isn't posted immediately. Therefore, the revenue recognition manager can verify that the correct amounts are being released from deferred revenue to actual revenue.
 
-If there is a contractual change which results in a new sales order line, added to either the existing sales order or a new sales order, a reallocation process can be run to correct the revenue price across all lines of the sales order(s). 
-
-
-
+If a contractual change causes a new sales order line to be added either to the existing sales order or a new sales order, a reallocation process can be run to correct the revenue price across all lines the sales orders.
