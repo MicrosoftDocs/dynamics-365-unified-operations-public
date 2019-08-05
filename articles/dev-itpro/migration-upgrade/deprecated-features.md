@@ -46,6 +46,20 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### Data management staging clean up
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Does not meet the core requirements that are needed for scheduling periodic cleanup. |
+| **Replaced by another feature?**   | Yes, the Job history cleanup feature is being added to meet the scenarios holistically. |
+| **Product areas affected**         | Data management |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
+
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
 ### France: FEC Accounting data export in XML
