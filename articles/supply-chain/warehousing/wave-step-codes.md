@@ -113,6 +113,10 @@ templates types, then the template will be applied.
 
 ### Sample scenario
 
+The following steps ensure that the replenishment template you created
+will be the replenishment template applied for the wave template
+when used as the wave step codes selected match.
+
 1. Go to **Warehouse management > Setup > Waves > Wave step codes**. Create a wave step code for the type **Replenishment**. 
 1. Go to **Warehouse management > Setup > Replenishment > Replenishment templates.** Create a replenishment template. 
 1. On the replenishment template, select the wave step code created for the type.
@@ -120,7 +124,3 @@ templates types, then the template will be applied.
 that you intent to use. 
 1. On the template, on the **Methods** FastTab, select the method **Replenishment**. 
 1. In the **Wave step code** field, select the wave step code you also selected for the replenishment template.
-
-By following these steps, you ensured that the replenishment template you created
-will be the replenishment template that will be applied for the wave template
-when used as the wave step codes selected match.
