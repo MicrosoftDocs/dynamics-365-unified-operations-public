@@ -5,7 +5,7 @@ title: Complete the Azure Resource Manager (ARM) onboarding process
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: sarvanisathish
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 141093
@@ -71,8 +71,15 @@ The administrator of the tenant must complete the following procedure.
 Follow these steps to assign the **Contributor** role to the **Dynamics Deployment Services \[wsfed-enabled\]** application.
 
 1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
-2.  Click **Add**, select **Contributor**, and then click **OK**. **Note:** Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then click **Select**.
-3.  On the **Add access** page, click **OK**. The **Users** page opens, and you can see that the user is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_01-1024x407.png)](./media/arm_redo_01.png)
+2.  Click **Add**, select **Add role assignment**. In the dialog box, set **Role** to **Contributor** and set **Assign access to** to **Azure AD user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Select **Save**. 
+    > [!NOTE]
+    > Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then select **Select**.
+    
+[![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_02.png)](./media/arm_redo_02.png)
+
+3.  On the **Role assignments** tab, the App is assigned as a **Contributor**. 
+    > [!NOTE]
+    > If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the authorize process hasn't been completed, or it was completed on another Azure subscription. 
 
 ### Enable the Azure subscription to deploy ARM resources
 
@@ -83,13 +90,17 @@ Complete the following procedures to enable the Azure subscription to deploy ARM
 Follow these steps to enable the Azure Connector and, as required, add an LCS user.
 
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
-2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. **Note:** If you're enabling ARM for an existing connector, click **Edit**.
+2.  On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, click **Add**. 
+    > [!NOTE]
+    > If you're enabling ARM for an existing connector, click **Edit**.
 3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
 4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then click **Next**.
 5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the Management certificate. **Important:** If you're adding an LCS user, continue with step 6. If you must upload a Management certificate, don't complete steps 6 through 8 of this procedure. Instead, complete the next procedure, "Upload the Management certificate."
 6.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 7.  In the **Access Control (IAM)** dialog box, click **Add**, select **Contributor**, and then click **OK**.
-8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. **Note:** You must specifically enter a user. You can't just add a group that the user is a member of. When the **Users** page opens, you can see that the user is assigned as a **Contributor**.
+8.  In the **Add users** dialog box, in the **Select** field, enter the LCS user, and then press Enter. 
+    > [!NOTE]
+    > You must specifically enter a user. You can't just add a group that the user is a member of. When the **Users** page opens, you can see that the user is assigned as a **Contributor**.
 
 #### Upload the Management certificate
 
