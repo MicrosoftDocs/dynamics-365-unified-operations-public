@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -116,26 +116,26 @@ The **Attach** button will also show a count of attachments for the currently se
 
 ## Attachment recovery
 
-In platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments that allows them to be recovered within a configured period of time.
+In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.
 
 ### Configuration of attachment recovery
 
-Attachment recovery can be enabled via **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The **Number of days to defer deletion** defaults to 30 days, but can be changed as needed. A **Number of days to defer deletion** value of zero means that the deleted attachments will be recoverable for an indefinite period. 
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero this means that the deleted attachments will be recoverable for an indefinite period. 
 
-Once attachment recovery is enabled, a batch job will be created: **Scans for deleted references which have reached the end of their retention period**. This batch job will use the **Number of days to defer deletion** to determine how long to keep a deleted attachment based on its **Deleted data and time**.
+After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
 
 ### Deleting attachments when attachment recovery is active
 
-When a user deletes an attachment, a notification will be added to the Message Center providing a confirmation of the deletion and an undo action that can be used in case the deletion was accidental.
+When a user deletes an attachment, a notification will be added to the Message Center to provide confirmation of the deletion and an option to undo to the action if the deletion was unintended.
 
-Table extension support has been built-in, so that any extension, or custom, field values, on the **DocuRef** or **DocuValue** tables, will be retained to enable their recovery. 
+Table extension support has been built-in, so that any extension or custom field values on the **DocuRef** or **DocuValue** tables will be retained to enable their recovery. 
 
 ### Recovering attachments
 
 When attachment recovery is enabled, attachments can be recovered in one of three ways:
-1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification
-2. On the **Attachments** form, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
-3. In **System administration** > **Inquiries**, the **Deleted attachments** form provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification.
+2. On the **Attachments** page, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
+3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
 
 ## Frequently asked questions
 
