@@ -40,7 +40,7 @@ Scheduled execution can be set up for various levels related to a work order. Yo
 1. Click **Asset management** > **Setup** > **Work orders** > **Scheduled execution**.
 2. Click **New** to create a new scheduled execution line.
 3. Make selections as required in the **Functional location**, **Work order type**, **Asset type**, **Manufacturer**, **Model**, **Maintenance job type category**, **Maintenance job type**, **Maintenance job type variant**, or **Trade** fields.
-4. Select a work order service level in the **Service level** field. If you leave this field blank, you can make the most generic scheduled execution line - as shown in the figure below. That line is set up to allow all work orders that have no work order priority to be scheduled for a specific date and time.
+4. Select a work order service level in the **Service level** field. If you leave this field blank, you can make the most generic scheduled execution line - as shown in the first record in the figure below. That line is set up to allow all work orders that have no work order service level to be scheduled for a specific date and time.
 5. Select the time interval in the **Scheduled execution** field.
 6. Click **Save**.
 
