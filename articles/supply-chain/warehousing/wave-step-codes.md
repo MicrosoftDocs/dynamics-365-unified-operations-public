@@ -56,6 +56,7 @@ errors.
 
 > [!NOTES]
 > The use of wave step codes is optional. 
+
 > Uptake for wave step codes is per legal entity. As such, all
 existing wave steps codes in the specific legal entity will be upgraded into the
 new structure.
