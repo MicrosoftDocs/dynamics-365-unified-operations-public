@@ -73,19 +73,18 @@ Click **Asset management** > **Common** > **Work orders** > **All Work orders** 
 
 The action pane buttons are organized in tabs on the action pane. Here is a brief description of the buttons relating to Enterprise Asset Management:
 
-| Button name                     | Description                                                                                                                                                                                                             |
+
+
+| Button name                     | Description                                                                                                                                                                                                                                                             |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Edit                            | Edit the selected work order.                                                                                                                                                                                                                                           |
 | New                             | Create new work order.                                                                                                                                                                                                                                                  |
 | Delete                          | Delete the selected work order.                                                                                                                                                                                                                                         |
 | Work order pool                 | Add selected work order to a work order pool, or remove from work order pool.                                                                                                                                                                                           |
-| Adjust                          | Adjust information about expected start and end, service level, responsible maintenance worker, or responsible maintenance worker group on selected work orders.                                                                                                                                     |
-| Related work order              | Create a new work order related to the selected work order job. This is useful if you want to register primary and secondary work orders.                                                                                                                              |
+| Adjust                          | Adjust information about expected start and end, priority, responsible worker, or responsible worker group on selected work orders.                                                                                                                                     |
+| Related work order              | Create a new work order related to the selected work order line. This is useful if you want to register primary and secondary work orders.                                                                                                                              |
 | Copy work order                 | Create a new work order based on an existing work order.                                                                                                                                                                                                                |
-| Event history                 | See work history.                                                                                                                                                                        |
-
-| Work order maintenance job notes       | Create a description, or insert notes or remarks, on a work order. Start by clicking the **Add timestamp** button to add your user name and a timestamp to the note. Notes are displayed in the **Work order** form > **Line details** FastTab > **Description** tab. |
-
+| Notes                           | Create a description, or insert notes or remarks, on a work order. Start by clicking the **Add timestamp** button to add your user name and a timestamp to the note. Notes are displayed in the **Work order** form > **Line details** FastTab > **Description** tab. |
 | Tools                           | Create a list of required tools on a work order. Tools are set up as resources in **Organization administration** > **Common** > **Resources** > **Resources**.                                                                                                      |
 | Checklist                       | View checklist for the object connected to the work order.                                                                                                                                                                                                              |
 | Object fault                    | View or register fault information on an object to be used for error management.                                                                                                                                                                                        |
@@ -108,6 +107,21 @@ The action pane buttons are organized in tabs on the action pane. Here is a brie
 | Work order report               | Print work order report.                                                                                                                                                                                                                                                |
 | Work order consumption          | Print consumption report.                                                                                                                                                                                                                                               |
 | Work order times                | Print work order times report.                                                                                                                                                                                                                                          |
+
+
+
+
+
+
+
+
+**Work order maintenance job notes**
+Create a description, or insert notes or remarks, on a work order. Start by clicking the **Add timestamp** button to add your user name and a timestamp to the note. Notes are displayed in the **Work order** form > **Line details** FastTab > **Description** tab. 
+
+
+
+
+
 
 The buttons on the **Work order** tab > **Project** section relate to functionality in the **Project management and accounting** module regarding forecasts, journals and invoicing.
 
