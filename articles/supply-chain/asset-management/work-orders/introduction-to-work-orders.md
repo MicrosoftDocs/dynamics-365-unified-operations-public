@@ -40,7 +40,7 @@ Work orders can be created automatically or manually:
 
 - Automatically using the **Schedule maintenance rounds** form, for maintenance rounds set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
 
-- Create from asset calendar (refer to the [Asset calendar](../preventive-and-reactive-maintenance/object-calendar.md) section), which can be preventive maintenance jobs or maintenance requests.  
+- Create from maintenance schedule (refer to the [Maintenance schedule](../preventive-and-reactive-maintenance/object-calendar.md) section), which can be preventive maintenance jobs or maintenance requests.  
 
 - Create a work order manually.  
 
