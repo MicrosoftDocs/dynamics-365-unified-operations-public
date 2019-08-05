@@ -63,7 +63,7 @@ new structure.
 
 ## Setup demo 
 
-For this demo, you will need to have demo data installed, and use demo data company USMF.
+For this demo, you need to have demo data installed, and use demo data company USMF.
 
 ### Enable step codes
 
