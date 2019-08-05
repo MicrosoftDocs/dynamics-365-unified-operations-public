@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 29 (September 2019)
+title: Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 29
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.XXXX. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
 ## Feature management
