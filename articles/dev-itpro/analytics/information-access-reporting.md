@@ -104,6 +104,7 @@ The following table can be used as a guide when choosing the right tool for the 
 |Effort|Days|Days|Minutes|Hours|Hours|
 
 |VIEWER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
+|-----|-----------|------------------|---------------------------------|--------------------|-------------------|
 |Target|Organization|Back Office|Power user|Power user|Finance officers|
 |Data accuracy|Near real-time|Real-time|Near real-time|Real-time|Cached views|
 |Personalization|Medium-Modeled|None|High — Free form designer|Low Expressions|Medium — Modeled|
