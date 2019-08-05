@@ -82,7 +82,7 @@ When business event subscriptions associated with the workflow are found, a conf
 Standard workflow context has been added to the payloads for all Workflow Business Events including owner, originator, and last note.
 
 ## Flow templates for workflow work item
-Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see [Workflow Business Events](../../fin-and-ops/dev-itpro/business-events/business-events-workflow.md).
+Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see [Workflow Business Events](../../dev-itpro/business-events/business-events-workflow.md).
 
 ## Extensibility enhancements
 The following enhanced extensibility capabilities have been added in Platform update 29:
