@@ -41,8 +41,8 @@ ms.dyn365.ops.version: AX 7.0.0
 There are four product dimensions -  Color, Configuration, Size and Style. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 
 Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
-Product variants
-----------------
+
+## Product variants
 
 Product variants are also referred to as items. An item is a tangible product, which is not the same as a service. It is also possible to define a product master with the Service type. By using the Service type, you can specify product variants that include services. For example, you can specify a product master for Consultancy work and product variants for work that is performed by senior consultants and junior consultants.
 
