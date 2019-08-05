@@ -50,8 +50,8 @@ This topic explains how to update the local agent. The latest version of the loc
 ## What's new in local agent 2.3.0
 
 - Local agent 2.3.0 enables the execution of custom [pre- and post- deployment scripts](../../dev-itpro/lifecycle-services/pre-post-scripts.md).
-- It fixes the problem introduced in 2.2.0 with regards to deploying older platform updates.
-- This release removes the monitoring agent and introduces a new service called LBDTelemetry which will be used to install the ETWManifests.
+- It fixes the problem introduced in 2.2.0 with regard to deploying older platform updates.
+- This release removes the monitoring agent and introduces a new service called LBDTelemetry, which will be used to install the ETWManifests.
 
 > [!IMPORTANT]
 > This release requires that a new local agent configuration file be downloaded from LCS. Please check the [troubleshooting topic](../../dev-itpro/deployment/troubleshoot-on-prem.md) if you encounter problems. 
