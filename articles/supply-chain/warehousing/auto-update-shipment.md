@@ -42,18 +42,18 @@ shipment or load has not been processed on a wave. The functionaltity
 will allow any order updates to automatically flow through to the warehouse
 without manual intervention for as long as warehouse work hasn’t been created.
 
-Without the auto-update functionality, only quantity decreases automatically flow, as
-long as warehouse work hasn’t been created. Users always have to manually update or delete lines and then re-release
+Without the auto-update functionality, only quantity decreases will automatically flow, as
+long as warehouse work hasn’t been created. Users have to manually update or delete lines and then re-release
 lines if order quantities increase or new order lines are added. With the auto-update functionality, the business can
 seamlessly provide updates to the warehouse without having to worry about order
 line updates not being reflected on related shipments and loads. 
 
-The auto-update shipment functionality applies to sales order lines and transfer order lines and is enabled for a specific warehouse. This allows the company to
+The auto-update shipment functionality applies to sales order lines and transfer order lines and is enabled for a specific warehouse. This allows a company to
 apply different auto update shipment policies across warehouses, when required.
 By default, the auto update shipment policy applied for all warehouses that use
-warehouse management process is on quantity decrease. With this policy
+warehouse management process is for quantity decrease. With this policy
 setting, only quantity decreases automatically flow through to a shipment and
-load for as long as warehouse work hasn’t been created. This is similar to
+load as long as warehouse work hasn’t been created. This is similar to
 legacy behavior without the functionality.
 
 Determining factor for the feature
