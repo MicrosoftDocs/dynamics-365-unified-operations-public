@@ -30,7 +30,8 @@ ms.dyn365.ops.version: 8.0.4
 
 # Revenue recognition overview
 
-[!includebanner]
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
 > The Revenue recognition feature can't yet be turned on through Feature management. Currently, you must use configuration keys to turn it on.
