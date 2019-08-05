@@ -458,6 +458,10 @@
       href: user-interface/page-layout.md
     - name: Dynamics Symbol font
       href: user-interface/symbol-font.md
+    - name: Saved views
+      href: ../fin-and-ops/get-started/saved-views.md
+    - name: Build forms that fully utilize saved views
+      href: user-interface/understanding-saved-views.md
     - name: Test forms that use custom patterns
       href: user-interface/testing-forms-custom-patterns.md
     - name: Create shareable, secured URLs (deep links)
@@ -516,7 +520,7 @@
       href: user-interface/messaging-api-center-bar-details.md
     - name: Message center, message bar, and message details FAQ
       href: user-interface/messaging-user.md
-  - name: Primary form pattern guidelines
+  - name: Form pattern guidelines
     items:
     - name: Form patterns for migrated forms
       href: user-interface/select-form-pattern.md

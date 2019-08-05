@@ -158,6 +158,8 @@
         href: get-started/navigation-search.md
       - name: Personalize the user experience
         href: get-started/personalize-user-experience.md
+      - name: Saved views
+        href: get-started/saved-views.md
       - name: Create and work with custom fields
         href: get-started/user-defined-fields.md
       - name: Embed PowerApps apps
