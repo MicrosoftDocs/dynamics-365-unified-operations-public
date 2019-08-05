@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Integrate POS with new Hardware device
-description: This topic explains how to integrate POS with new Hardware device.
+title: Integrate POS with a new hardware device
+description: This topic explains how to integrate POS with a new hardware device.
 author: mugunthanm
 manager: AnnBe
 ms.date: 08/03/2019
