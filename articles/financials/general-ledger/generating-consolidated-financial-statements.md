@@ -55,11 +55,11 @@ As the consolidated report in the following illustration shows, when you use the
 
 You can also create a multilevel reporting tree that includes as many levels as you require. The following illustration shows a multilevel reporting tree definition that has roll-ups by worldwide region.
 
-![Multilevel reporting tree definition with roll ups by region](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Multilevel reporting tree definition with roll ups by region")
+![Multilevel reporting tree definition with roll ups by region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Multilevel reporting tree definition with roll ups by region")
 
 The following illustration shows a multilevel reporting tree definition that has roll-ups by function.
 
-![Multilevel reporting tree definition with roll ups by function](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Multilevel reporting tree definition with roll ups by function")
+![Multilevel reporting tree definition with roll ups by function](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Multilevel reporting tree definition with roll ups by function")
 
 ### Viewing companies side by side
 Many customers prefer reports where the companies appear side by side, and where a column shows the consolidated total. This format is easy to achieve after you've created the reporting tree. Here are the high-level steps to view companies side by side on consolidated financial statements.
@@ -104,7 +104,7 @@ In the reporting tree definition, enter the percentage of ownership in the **Rol
 > [!NOTE]
 > You can apply this ownership percentage to any reporting unit, not just at the company level. 
 
-![Using reporting tree definition percentage](./media/Using-reporting%20tree-definition-percentage.png "Using reporting tree definition percentage")
+![Using reporting tree definition percentage](./media/Using-reporting-tree-definition-percentage.png "Using reporting tree definition percentage")
 
 When the report is generated, the Contoso Germany report will show 100 percent of the sales amount, and 80 percent of the amount will be allocated and rolled up to the consolidated level for sales.
 
