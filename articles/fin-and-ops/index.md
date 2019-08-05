@@ -3,7 +3,7 @@
 
 title: Microsoft Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 04/11/2019
 ms.topic: index-page
@@ -17,7 +17,7 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62303

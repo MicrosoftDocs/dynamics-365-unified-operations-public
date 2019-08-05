@@ -5,7 +5,7 @@ title: Consume business events with Microsoft Flow
 description: This topics provides information about the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -90,7 +90,7 @@ Microsoft Flow can configure Finance and Operations automatically for you. After
 
 1. Sign in to the Finance and Operations client.
 
-2.  Go to **System Administration \> Setup \> Buinsess Events**.
+2.  Go to **System Administration \> Setup \> Business Events**.
 
 3.  Select **Endpoints**.
 

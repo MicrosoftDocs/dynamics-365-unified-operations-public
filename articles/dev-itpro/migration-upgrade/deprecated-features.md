@@ -62,6 +62,15 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: By October 1, 2021, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, however enhancements will no longer keep the functionality up to date and any product defects will be evaluated on a case-by-case basis. For more information, see [Tax updates being retired for US Payroll feature in Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
 
 
+### Data management staging clean up
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Does not meet the core requirements that are needed for scheduling periodic cleanup. |
+| **Replaced by another feature?**   | Yes, the Job history cleanup feature is being added to meet the scenarios holistically. |
+| **Product areas affected**         | Data management |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
+
 ## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
 
 ### France: FEC Accounting data export in XML
@@ -299,7 +308,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspaces](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
