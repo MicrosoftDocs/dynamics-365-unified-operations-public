@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Auto-update shipments
+title: Shipment auto-updates
 description: This topic provides an overview of functionality providing auto-updates for shipments.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Auto-update shipments
+# Shipment auto-updates
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -56,72 +56,70 @@ setting, only quantity decreases automatically flow through to a shipment and
 load as long as warehouse work hasn’t been created. This is similar to
 legacy behavior without the functionality.
 
-Determining factor for the feature
-----------------------------------
+## What determines changes in status
 
-The Auto update shipment feature relies foremost on the shipment status in order
-to determine whether to change the quantity on a load line should happen when a
-change is done on a sales and transfer order line. And when to add a new load
+The auto-update shipment functionality relies foremost on the shipment status
+to determine whether a change to the quantity on a load line should occur when a
+change is made on a sales and transfer order line. It also relies foremost on shipment status to determine when to add a new load
 line automatically to an existing load. When the shipment status is waved or
-higher, then no automatic update takes places.
+higher, no automatic update takes places.
 
-Related to the shipment and shipment status is the wave status. When the wave
-related to the load line is in held, executing, released, picked, or shipped
-status, and the user attempts to reduce the quantity on a load line (via a
+Wave status is also considered for auto-updates. When the wave
+related to the load line has a status of held, executing, released, picked, or shipped, and the user attempts to reduce the quantity on a load line (via a
 quantity decrease on the sales or transfer order line), the user will receive
-the error: “Reservations cannot be removed because there is work created which
-relies on the reservations.” Similarly, when indirectly attempting to increase
-the load line quantity given these wave statuses via a quantity decrease on the
-sales or transfer order line, then no increase will automatically happen on the
-load line. In this scenario the update of the load line is a manual task.
+the following error message: “Reservations cannot be removed because there is work created which
+relies on the reservations.” Similarly, if attempting to increase
+the load line quantity with the above wave statuses indirectly by decreasing quantity on the
+sales or transfer order line, the load line will not automatically be increased. In this scenario, the load line must be updated manually.
 
-Four scenarios exist for the Auto update shipment feature: Add new order line,
-increase line quantity, decrease order line quantity, remove order line.
+## Scenarios
+The following four scenarios are supported by auto-update shipment functionality: add a new order line,
+increase the line quantity, decrease the order line quantity, and remove an order line.
 
-**Add new order line:** With the parameter **Auto update shipment** set to
-**Always**, shipment exists for the order, and when a new order line is added to
-a sales or transfer order *while* a load has already been created for the sales
-order, **then** the existing load is not updated. A new load line without
-reference to the existing load is created and associated with the existing
+- **Add a new order line:** When the **Auto update shipment** paramater, located on the **Warehouse** FastTab on the **Warehouse management > Setup > Warehouse > Warehouses** page, is set to
+**Always**, a shipment exists for the order, and a new order line is added to
+a sales or transfer order while a load has already been created for the sales
+order, the existing load will not be updated. A new load line with no
+reference to the existing load will be created and associated with the existing
 shipment.
 
-**Increase order line quantity:** With the parameter **Auto update shipment**
-set to **Always**, shipment exists for the order, and when the quantity on an
-existing sales or transfer order line is increased *while* a load has already
-been created for the sales order, **then** the load line is increased by same
-quantity as the order line. In case the load had already been released but no
-work created, **then** the load line is increased by same quantity as the order
+- **Increase order line quantity:** When the parameter **Auto update shipment**
+is set to **Always**, a shipment exists for the order, and the quantity on an
+existing sales or transfer order line is increased while a load has already
+been created for the sales order, the load line will be increased by the same
+quantity as the order line. If the load was released but no
+work was created, the load line will be increased by the same quantity as the order
 line.
 
-**Decrease order line quantity:** With the parameter **Auto update shipment**
-set to **Always** or **On quantity decrease**, shipment exists for the order,
-and when the quantity on an existing sales or transfer order line is decreased
-*while* a load has already been created for the sales order, **then** the
+- **Decrease order line quantity:** When the parameter **Auto update shipment**
+is set to **Always** or **On quantity decrease**, a shipment exists for the order,
+and the quantity on an existing sales or transfer order line is decreased
+while a load has already been created for the sales order, the
 associated load line quantity will be updated to match, unless the load line is
-already equal to or lower than the new order line quantity, in which case the
-load line is unaffected. In case the load had already been released however no
-work created, **then** the associated load line quantity will be updated to
+already equal to or lower than the new order line quantity. In that case, the
+load line will not be affected. If the load has been released but no
+work was created, the associated load line quantity will be updated to
 match, unless the load line is already equal to or lower than the new order line
-quantity, in which case the load line is unaffected.
+quantity. In that case, the load line will not be affected.
 
-**Remove order line:** With the parameter **Auto update shipment** set to
-**Always** or **On quantity decrease** and the user attempts to remove an order
-line for which a load line exists, then an error message is thrown.
+- **Remove order line:** When the parameter **Auto update shipment** is set to
+**Always** or **On quantity decrease**, and the user attempts to remove an order
+line for which a load line exists, then an error message is shown.
 
-Simple demo
-===========
+## Demo
 
-Pre-condition: Demo data, Company USMF
+For this demo, you need to have demo data installed, and use demo data company USMF.
 
-Enable Auto update shipment, navigate to Warehouse management Setup Warehouse
-Warehouses. Select warehouse 24. Expand the **Warehouse** fast tab. For the
-parameter **Auto update shipment** change the setting from **On quantity
-decrease** to **Always**.
+### Enable shipment auto-updates
+To enable shipment auto-updates, do the following.
 
-*Note: Once you have changed the Auto update shipment policy to Always,
-increases as well as decrease to sales and transfer order line quantities
-including adding new lines will be reflected on shipments and loads for the
-specific warehouse given the before mentioned update constraints.*
+1. Go to **Warehouse management > Setup > Warehouse > Warehouses**. Select "Warehouse 24". 
+1. Expand the **Warehouse** FastTab. Change the **Auto update shipment** parameter from **On quantity decrease** to **Always**.
+
+Once you change the policy to "Always", any
+increase or decrease to the sales and transfer order line quantities
+(including adding new lines) will be reflected on shipments and loads for the
+specific warehouse.
 
 Change wave template to not automatically process, navigate to Warehouse
 management Setup Waves Wave templates. Select wave template **24 Shipping
