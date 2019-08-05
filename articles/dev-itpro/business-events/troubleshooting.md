@@ -5,7 +5,7 @@ title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
