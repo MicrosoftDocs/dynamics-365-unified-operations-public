@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Retail version 10.0.5
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 08/2/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail in 10.0.5. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.5 (September 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.5 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
 
 ## Test recorder and Regression suite automation tool for Retail Cloud POS
   
