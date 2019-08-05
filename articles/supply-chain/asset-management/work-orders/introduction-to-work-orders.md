@@ -2,7 +2,7 @@
 # required metadata
 
 title: Introduction to work orders
-description: This topic provides an overview of work orders in Enterprise Asset Management.
+description: This topic provides an overview of work orders in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -32,59 +32,60 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Introduction to work orders
 
-
-
-This topic provides an overview of work orders in Enterprise Asset Management. Work orders are used to manage, provide required information for, and register consumption on maintenance jobs. A work order may contain one or more work order lines, and one or more objects can be connected to a work order. Each work order line defines a maintenance job scheduled on the object.
+Work orders are used to manage, provide required information for, and register consumption on maintenance jobs. A work order may contain one or more work order jobs, and one or more assets can be connected to a work order. Each work order line defines a maintenance job scheduled on the asset.
 
 Work orders can be created automatically or manually:
 
-- Automatically using the **Schedule maintenance sequences** form, for calendar-based sequences set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
+- Automatically using the **Schedule maintenance plans** form, for calendar-based maintenance plans set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
 
-- Automatically using the **Schedule rounds** form, for rounds set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
+- Automatically using the **Schedule maintenance rounds** form, for maintenance rounds set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
 
-- Create from object calendar (refer to the [Object calendar](../preventive-and-reactive-maintenance/object-calendar.md) section), which can be preventive maintenance jobs or requests.  
+- Create from asset calendar (refer to the [Asset calendar](../preventive-and-reactive-maintenance/object-calendar.md) section), which can be preventive maintenance jobs or maintenance requests.  
 
 - Create a work order manually.  
 
-- Create a work order from the **All requests** or **Active requests** or **My functional location requests**.
+- Create a work order from the **All maintenance requests** or **Active maintenance requests** or **My functional location maintenance requests**.
 
 >[!NOTE]
->Work order lines related to the same object are related to the same project ID.
+>Work order jobs related to the same asset are related to the same project ID.
 
 ## All work orders
 
-Click **Enterprise asset management** > **Common** > **Work orders** > **All Work orders** to open the list. **All work orders** contain a list of all work orders and displays some of the information related to a work order.
+Click **Asset management** > **Common** > **Work orders** > **All Work orders** to open the list. **All work orders** contain a list of all work orders and displays some of the information related to a work order.
 
 ![Figure 1](media/01-work-orders.png)
 
-- Click **Enterprise asset management** > **Common** > **Work orders** > **Active work orders** to see a list of active work orders.
+- Click **Asset management** > **Common** > **Work orders** > **Active work orders** to see a list of active work orders.
 
-- Click **Enterprise asset management** > **Common** > **Work orders** > **My functional location work order lines** to see a list of work order lines containing objects installed on functional locations, you are related to as a worker (set up in [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)).
+- Click **Asset management** > **Common** > **Work orders** > **My functional location work order maintenance jobs** to see a list of work order jobs containing assets installed on functional locations, you are related to as a worker (set up in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)).
 
 - In the **All Work orders** list (grid view), click on a link in the **Work order** column to show the Details view of the selected record. Click the **Edit** button to open for editing.  
 
 - In the Details view, you see detailed information related to the work order.  
 
-- In the Details view, select the **Lines** link to see work order line details, or select the **Header** link to see work order details.  
+- In the Details view, select the **Lines** link to see work order job details, or select the **Header** link to see work order details.  
 
 - The vertical **Related information** pane to the right of the screen contains additional work order-related information. Expand the pane to see related information for the selected work order.  
 
-The figure below shows a screenshot of the interface.
 
 ![Figure 2](media/02-work-orders.png)
 
+
 The action pane buttons are organized in tabs on the action pane. Here is a brief description of the buttons relating to Enterprise Asset Management:
 
-| Button name                     | Description                                                                                                                                                                                                                                                             |
+| Button name                     | Description                                                                                                                                                                                                             |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Edit                            | Edit the selected work order.                                                                                                                                                                                                                                           |
 | New                             | Create new work order.                                                                                                                                                                                                                                                  |
 | Delete                          | Delete the selected work order.                                                                                                                                                                                                                                         |
 | Work order pool                 | Add selected work order to a work order pool, or remove from work order pool.                                                                                                                                                                                           |
-| Adjust                          | Adjust information about expected start and end, priority, responsible worker, or responsible worker group on selected work orders.                                                                                                                                     |
-| Related work order              | Create a new work order related to the selected work order line. This is useful if you want to register primary and secondary work orders.                                                                                                                              |
+| Adjust                          | Adjust information about expected start and end, service level, responsible maintenance worker, or responsible maintenance worker group on selected work orders.                                                                                                                                     |
+| Related work order              | Create a new work order related to the selected work order job. This is useful if you want to register primary and secondary work orders.                                                                                                                              |
 | Copy work order                 | Create a new work order based on an existing work order.                                                                                                                                                                                                                |
-| Notes                           | Create a description, or insert notes or remarks, on a work order. Start by clicking the **Add timestamp** button to add your user name and a timestamp to the note. Notes are displayed in the **Work order** form > **Line details** FastTab > **Description** tab. |
+| Event history                 | See work history.                                                                                                                                                                        |
+
+| Work order maintenance job notes       | Create a description, or insert notes or remarks, on a work order. Start by clicking the **Add timestamp** button to add your user name and a timestamp to the note. Notes are displayed in the **Work order** form > **Line details** FastTab > **Description** tab. |
+
 | Tools                           | Create a list of required tools on a work order. Tools are set up as resources in **Organization administration** > **Common** > **Resources** > **Resources**.                                                                                                      |
 | Checklist                       | View checklist for the object connected to the work order.                                                                                                                                                                                                              |
 | Object fault                    | View or register fault information on an object to be used for error management.                                                                                                                                                                                        |
