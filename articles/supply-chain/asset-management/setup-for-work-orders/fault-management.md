@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fault management
-description: This topic explains fault management in Enterprise Asset Management.
+description: This topic explains fault management in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -33,10 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Fault management
 
 
+In **Asset Management**, you can manage faults detected on assets by describing symptoms, areas, and fault types. The fault designer allows you to set up symptoms, areas, and fault types on asset types. Also, fault causes and suggestions to remedy faults can be registered on a work order.
 
-This topic explains fault management in Enterprise Asset Management. In **Enterprise Asset Management**, you can manage faults detected on objects by describing symptoms, areas, and fault types. The fault designer allows you to set up symptoms, areas, and fault types on object types. Also, fault causes and suggestions to remedy faults can be registered on a work order.
-
-The sequence of registration and management of faults is: First, you create a list of fault symptoms, fault areas, and fault types that may occur on your object types. Next step is setting up symptoms, fault areas, and fault types in the Fault designer. To understand the distinction between fault symptoms, fault areas, and fault types, here are a few examples:
+The sequence of registration and management of faults is: First, you create a list of fault symptoms, fault areas, and fault types that may occur on your asset types. Next step is setting up symptoms, fault areas, and fault types in the Fault Designer. To understand the distinction between fault symptoms, fault areas, and fault types, here are a few examples:
 
 **Fault symptoms:**
 
@@ -50,6 +49,7 @@ The sequence of registration and management of faults is: First, you create a li
 
 - Vibrations  
 
+
 **Fault areas:**
 
 - Electrical  
@@ -59,6 +59,7 @@ The sequence of registration and management of faults is: First, you create a li
 - Hydraulic  
 
 - Pneumatic  
+
 
 **Fault types:**
 
@@ -72,21 +73,12 @@ The sequence of registration and management of faults is: First, you create a li
 
 - Defective sensor  
 
-The relations between fault symptoms, fault areas, and fault types depend on the license configuration setup of the **Enterprise Asset Management** module. In **License configuration** (**System administration** > **Setup** > **License configuration**), you can select a **Fault hierarchy** check box. If that check box is selected, it means that when you select a symptom in **Fault designer**, the fault areas related to that symptom are shown on the **Fault area** FastTab. Likewise, when you select a fault area in **Fault designer**, the fault types related to that area are shown on the **Fault type** FastTab.
 
->[!NOTE]
->If the **Fault hierarchy** check box is cleared in **License configuration**, it means that when you select a fault symptom in **Fault designer**, you will see all the fault areas and fault types that have been added in **Fault designer**. In that case, there is no hierarchical relationship between the selected fault symptom, fault areas, and fault types displayed.
-
-Cause and remedy for a specific fault can be selected on a work order or a request.
-
->[!NOTE]
->You can only create fault records on work orders and requests if they contain objects with object types that have faults connected to them in the Fault designer.
-
-## Fault symptom
+## Create fault symptom
 
 Create a list of symptoms to be used in the fault designer.  
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Fault** > **Fault symptoms**.  
+1. Click **Asset management** > **Setup** > **Fault** > **Fault symptoms**.  
 
 2. Click **New** to create a new record.  
 
@@ -96,11 +88,12 @@ Create a list of symptoms to be used in the fault designer.
 
 5. Click **Save**.
 
-## Fault area
+
+## Create fault area
 
 Create a list of areas or locations to be used in the fault designer.
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Fault** > **Fault areas**.
+1. Click **Asset management** > **Setup** > **Fault** > **Fault areas**.
 
 2. Click **New** to create a new record.
 
@@ -110,11 +103,12 @@ Create a list of areas or locations to be used in the fault designer.
 
 5. Click **Save**.
 
-## Fault type
+
+## Create fault type
 
 Create a list of fault types to be used in the fault designer.
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Fault** > **Fault types**.
+1. Click **Asset management** > **Setup** > **Fault** > **Fault types**.
 
 2. Click **New** to create a new record.
 
@@ -124,13 +118,14 @@ Create a list of fault types to be used in the fault designer.
 
 5. Click **Save**.
 
-## Fault designer
 
-In Fault designer, you set up fault data on object types.
+## Set up Fault designer
 
-1. Click **Enterprise asset management** > **Setup** > **Objects** > **Fault** > **Fault designer**.
+In Fault designer, you set up fault data on asset types.
 
-2. In the left-hand side of the form, select the object type for which you want to set up a fault record.
+1. Click **Asset management** > **Setup** > **Fault** > **Fault designer**.
+
+2. In the left-hand side of the form, select the asset type for which you want to set up a fault record.
 
 3. On the **Fault symptom** FastTab, click **Add line**, and select a symptom in the **Fault symptom** field.
 
@@ -138,21 +133,21 @@ In Fault designer, you set up fault data on object types.
 
 5. On the **Fault type** FastTab, click **Add line**, and select a type in the **Fault type** field.
 
-6. Click the **Create combinations** button to quickly create combinations of all existing fault symptoms, areas, and types to the selected object type. This function is useful if you have created many combinations. If you do not want to use all combinations on the object type, it is easier to delete the lines that are not relevant than to create new lines manually.
+6. Click the **Create fault combinations** button to quickly create combinations of all existing fault symptoms, areas, and types to the selected asset type. This function is useful if you have created many combinations. If you do not want to use all combinations on the asset type, it is easier to delete the lines that are not relevant than to create new lines manually.
 
-7. Click the **Copy from object type** button to copy the specific setup of fault symptoms, areas, and types from one object type to another object type.
+7. Click the **Copy from asset type** button to copy the specific setup of fault symptoms, areas, and types from one asset type to another asset type.
 
 8. Click **Save** to save the changes.
 
-The figure below shows a screenshot of the interface.
 
-![Figure 1](media/22-setup-for-work-orders.png)
+![Figure 1](media/21-setup-for-work-orders.png)
 
-## Fault cause
 
-Create a list of known fault causes, which can be added to a work order or a request.
+## Create fault cause
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Fault** > **Fault causes**.
+Create a list of known fault causes, which can be added to a work order or a maintenance request.
+
+1. Click **Asset management** > **Setup** > **Fault** > **Fault causes**.
 
 2. Click **New** to create a new record.
 
@@ -162,11 +157,12 @@ Create a list of known fault causes, which can be added to a work order or a req
 
 5. Click **Save**.
 
-## Fault remedy
 
-Create a list of suggestions for remedy and repair, which can be added to a work order or a request.
+## Create fault remedy
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Fault** > **Fault remedies**.
+Create a list of suggestions for remedy and repair, which can be added to a work order or a maintenance request.
+
+1. Click **Asset management** > **Setup** > **Fault** > **Fault remedies**.
 
 2. Click **New** to create a new record.
 
@@ -176,5 +172,7 @@ Create a list of suggestions for remedy and repair, which can be added to a work
 
 5. Click **Save**.
 
+
 >[!NOTE]
 >If required, you can change or update the names of your fault symptoms, areas, types, causes, and remedies. The name changes are automatically reflected in the related fault registrations.
+
