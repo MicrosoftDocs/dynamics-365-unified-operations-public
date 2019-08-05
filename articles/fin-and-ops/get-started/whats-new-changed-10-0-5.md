@@ -63,15 +63,13 @@ The **Checks** page is where you perform maintenance tasks on checks, such as cr
 
 You can use the Workflow history page to reset the workflow status to Draft. This page can be opened from the **Vendor invoice** page or by going to **Common > Inquires > Workflow**. To reset the workflow status to Draft, select **Recall**. You can also reset the workflow status to Draft by selecting the **Recall** action on either the **Vendor invoice** or **Pending vendor invoices** page. After the workflow status is reset to Draft, it becomes available for editing on the **Vendor invoice** page.
 
-## “Select consolidation amount from” control on the consolidate online for dual currency consolidation
+## Dual currency consolidation
 
 This feature helps you control the currency (either the accounting or reporting currency) that is used as the transaction currency in the consolidation company. You can also automatically copy amounts from the source company to the consolidation company, if the currencies are the same.
 
-**Add the “Select consolidation amount from” control on the consolidate online form.**
-When this feature is enabled, the user can choose whether the accounting currency or the reporting currency from the source company will be used as the transaction currency in the consolidation company.
+- **Add the “Select consolidation amount from” control on the consolidate online form** - When this feature is enabled, the user can choose whether the accounting currency or the reporting currency from the source company will be used as the transaction currency in the consolidation company.
 
-**Directly copy amounts from the source company to the consolidation company if the currencies are the same.**
-When the feature is enabled, the accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
+- **Directly copy amounts from the source company to the consolidation company if the currencies are the same** - When the feature is enabled, the accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
 
 ## Gender in currency declension for Eastern Europe 
 
