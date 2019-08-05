@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations version 10.0.5 (September 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in September.
+title: Preview features in Finance and Operations version 10.0.5 (October 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,13 +29,13 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Preview features in Finance and Operations version 10.0.5 (September 2019)
+# Preview features in Finance and Operations version 10.0.5 (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in August and has a build number of 10.0.xxx. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
 
@@ -91,6 +91,11 @@ You can validate whether the default dimensions for a forecast position are corr
 
 For more information, see [Forecast position distribution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/public-sector/forecast-positions).
 
+## Deferred put
+The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
+
+For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put.md)
+
 ## Journal unlock
 A new button is available on the journal page to unlock a journal that has a status of **Locked by system** set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.
 
@@ -100,7 +105,7 @@ A new button is available on the journal page to unlock a journal that has a sta
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=320385&dbType=3&qc=d5539716f56ccea45e2187c269570772af20e1f10a78371811220da6315a3c34).
 
 ### Platform update 29
-Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [Preview features in Finance and Operations platform update 29 (September 2019)](whats-new-platform-update-29.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [Preview features in Finance and Operations platform update 29 (October 2019)](whats-new-platform-update-29.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
