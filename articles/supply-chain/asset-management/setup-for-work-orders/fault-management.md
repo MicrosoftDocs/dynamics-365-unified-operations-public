@@ -119,7 +119,7 @@ Create a list of fault types to be used in the fault designer.
 5. Click **Save**.
 
 
-## Set up Fault designer
+## Set up fault designer
 
 In Fault designer, you set up fault data on asset types.
 
