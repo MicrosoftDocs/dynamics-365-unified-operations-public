@@ -61,8 +61,7 @@ errors.
 existing wave steps codes in the specific legal entity will be upgraded into the
 new structure.
 
-Simple demo setup 
-==================
+## Demo setup 
 
 Pre-condition: Demo data, Company USMF
 
