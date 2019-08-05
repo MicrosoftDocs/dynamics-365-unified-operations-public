@@ -41,6 +41,8 @@ To call Hardware Station (HWS) from POS you use a request and a response:
 
 ## HardwareStationDeviceActionRequest
 
+The definition of **HardwareStationDeviceActionRequest** is shown in the following code example.
+
 ```TypeScript
 class HardwareStationDeviceActionRequest<TResponse extends HardwareStationDeviceActionResponse> extends Request<TResponse> {
 
@@ -52,13 +54,17 @@ class HardwareStationDeviceActionRequest<TResponse extends HardwareStationDevice
 }
 ```
 
+The parameters are described in the following table.
+
 | Parameters | Data type | Description                     |
 |------------|-----------|---------------------------------|
 | device     | String    | Device name passed to the HWS request should be the same as the **Export** attribute added in the HWS Device extension controller class.                                          |
 | action     | String    | Method to be called in the HWS extension. The method name should be passed as string value and the core POS hardware station layer will call the corresponding method from your HWS extension code. The method should exactly match the method name in your HWS extension.HWS extension should be passed as paremeter. |
 | actionData | any       | Custom parameter for extension to pass.  |
 
-###Sample code
+### Sample code
+
+The following code examples creates a **HardwareStationDeviceActionRequest** object.
 
 ```TypeScript
 let hardwareStationDeviceActionRequest: HardwareStationDeviceActionRequest<HardwareStationDeviceActionResponse> =
@@ -69,12 +75,15 @@ return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequ
 
 ## HardwareStationDeviceActionResponse
 
+The definition of **HardwareStationDeviceActionResponse** is shown in the following code example.
+
 ```TypeScript
 class HardwareStationDeviceActionResponse extends Response {
   readonly response: any;
   constructor(response: any);
 }
 ```
+The parameters are described in the following table.
 
 | Parameters | Data type | Description                                       |
 |------------|-----------|---------------------------------------------------|
@@ -84,7 +93,7 @@ class HardwareStationDeviceActionResponse extends Response {
 
 The follow diagram shows the flow between POS, Hardware Station, and the hardware device.
 
-[![POS-HWS-Device Sequence diagram](./media/POSDeviceExtension.png)](./media/POSDeviceExtension.png)
+![POS-HWS-Device Sequence diagram](./media/POSDeviceExtension.png)
 
 ## HWS extension
 
@@ -98,7 +107,7 @@ To implement the HWS extension follow these steps:
 4.  Add your method in controller class to implement your custom logic to call the hardware device. This method will be passed as the second parameter (action parameter) to the POS **HardwareStationDeviceActionRequest**.
 5.  Build the project.
 
-To deploy the HWS extension in MPOS and test it using the local HWS
+To deploy the HWS extension in MPOS and test it using the local HWS:
 
 1. Copy the output library to the **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder.
 2. Open the **HardwareStation.Extension.config**.
