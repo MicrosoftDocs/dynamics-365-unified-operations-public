@@ -1445,20 +1445,20 @@
     items:
     - name: Globalization resources
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
-      - name: Regulatory updates
-        href: ../financials/localizations/regulatory-updates.md
-      - name: Australia
-        items:
-        - name: Australia overview
-          href: ../financials/localizations/australia.md
-        - name: Business activity statement (BAS)
-          href: ../financials/localizations/apac-aus-business-activity-statement.md
-        - name: Add report boxes and generate the BAS
-          href: ../financials/localizations/tasks/add-bas-report-boxes.md
-        - name: Low-value pool depreciation
-          href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
-        - name: Set up reason codes for the BAS
-          href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
+    - name: Regulatory updates
+      href: ../financials/localizations/regulatory-updates.md
+    - name: Australia
+      items:
+      - name: Australia overview
+        href: ../financials/localizations/australia.md
+      - name: Business activity statement (BAS)
+        href: ../financials/localizations/apac-aus-business-activity-statement.md
+      - name: Add report boxes and generate the BAS
+        href: ../financials/localizations/tasks/add-bas-report-boxes.md
+      - name: Low-value pool depreciation
+        href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
+      - name: Set up reason codes for the BAS
+        href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
       - name: Austria
         items:
         - name: Austria overview
