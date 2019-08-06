@@ -44,8 +44,8 @@ If these files don't exist, the deployment continues as usual. The following exa
 **Deployment or redeployment:**
 
 1. Get unhealthy modules. In this step, the health of existing services is obtained to find which are unhealthy. This step applies only to redeployment scenarios.
-2. Clean up modules. In this step, the services are removed and the contents of the**wp** folder are deleted. This step applies only to redeployment scenarios.
-3. Link download artifacts. In this step, download, extraction, and processing of artifacts from Microsoft Dynamics Lifecycle Service (LCS) takes place.
+2. Clean up modules. In this step, the services are removed and the contents of the **wp** folder are deleted. This step applies only to redeployment scenarios.
+3. Link download artifacts. In this step, download, extraction, and processing of artifacts from Microsoft Dynamics Lifecycle Services (LCS) takes place.
 4. Pre-deployment script. In this step the **PreDeployment.ps1** script is executed (if it exists).
 5. Set up modules. In this step, the new services are deployed.
 6. Post-Deployment script. In this step the **PostDeployment.ps1** script is executed (if it exists).
@@ -53,8 +53,8 @@ If these files don't exist, the deployment continues as usual. The following exa
 **Servicing:**
 
 1. Prepare for servicing. In this step, the package is prepared in LCS and gets downloaded to the environment.
-2. Clean up modules. In this step, the services are removed and the contents of the**wp** folder are deleted.
-3. Link download artifacts. In this step, extraction and processing of previously downloaded artifacts from Microsoft Dynamics Lifecycle Service (LCS) takes place.
+2. Clean up modules. In this step, the services are removed and the contents of the **wp** folder are deleted.
+3. Link download artifacts. In this step, extraction and processing of previously downloaded artifacts from LCS takes place.
 4. Pre-deployment script. In this step the **PreDeployment.ps1** script is executed (if it exists).
 5. Set up modules. In this step, the new services are deployed.
 6. Post-Deployment script. In this step the **PostDeployment.ps1** script is executed (if it exists).
