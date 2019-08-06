@@ -35,8 +35,8 @@ down his computer or the server during typical working hours. The tasks in a bat
 India GSTR returns are required to be file by every legal entity and the volumn of transactions are general very high as all the sales and purchase Invoice details are reported to the Government.Even exectution of report generation through Batch some time takes substaintial time. To make this process more dynamic and efficent Multi batch processing feature is enabled for GSTR reports for India. 
 
 ## Enable Multi-batch processing feature 
-
-First user has to enable Multi-batch process feature 
+Go to **Work spaces**\>**Feature management**
+User has to enable Multi-batch process feature 
 
 ![Enable Multi-batch process ](media/Multi-batch processing-001.png)
 
