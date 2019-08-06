@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database for Microsoft Dynamics 365 for Finance and Operations from a sandbox user acceptance testing (UAT) environment to the Asset library.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database for Dynamics 365 for Finance and Operations from a sandbox user acceptance testing (UAT) environment to the Asset library.
 
 ## Self-service export database
 
@@ -62,13 +62,13 @@ Additionally, all users except the admin are disabled, and all batch jobs are se
 
 #### Export ran for some time and then reached a "Preparation failed" state
 
-The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can manually export by following the related section below.
+The export process can time out on Azure SQL Database when large databases are involved. In some cases, the export process can be recovered by using the **Resume** action from LCS. The Lifecycle Services team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can manually export by following the “Manual export” section below.
 
 #### Export doesn't show any progress in LCS
 
-The export process differs from other database movement operations and the general package deployment in that it doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The LCS team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by following the related section below.
+The export process differs from other database movement operations and the general package deployment doesn't use a runbook. Therefore, the progress indicator in LCS doesn't show any output, as it would typically show in other scenarios. The LCS team is working to identify known error codes, so these can be added to the logs for the export database operation to help guide users toward a resolution. These known error codes will be added in a future release of LCS. If you encounter an issue, you can export manually by following the “Manual export” section below.
 
-## Manual Export
+## Manual export
 
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
 
@@ -114,7 +114,7 @@ SELECT * FROM sys.dm_database_copies
 
 ### Prepare the database
 
-Run the following script against the copy of the database to turn off change tracking, and to remove SQL Database users and a system view. The script also corrects system flags, removes references to the previous environment, withholds batches, and removes email configuration. All these changes are required for a successful export and import of the database. These changes also help guarantee that, when the AOS computer is started in the target environment, nothing automatically starts to run.
+Run the following script against the copy of the database to turn off change tracking, and to remove SQL Database users and a system view. The script also corrects system flags, removes references to the previous environment, withholds batches, and removes email configuration. All these changes are required for a successful export and import of the database. These changes also help to ensure that when the AOS computer is started in the target environment, nothing automatically starts to run.
 
 > [!NOTE]
 > You must edit the following **ALTER DATABASE** command so that it uses the name of your database copy.
@@ -263,7 +263,7 @@ Here is an explanation of the parameters:
 - **sdn (source database name)** – The name of the database to export.
 - **tf (target file)** – The path and name of the file to export to.
 - **sp (source password)** – The SQL password for the source SQL Server.
-- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Finance and Operations SQL instance during deployment. You can retrieve the password for this user from your project in Microsoft Dynamics Lifecycle Services (LCS).
+- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Finance and Operations SQL instance during deployment. You can retrieve the password for this user from your project in Dynamics Lifecycle Services.
 
 After the export is completed, run the following command to delete the database copy.
 
