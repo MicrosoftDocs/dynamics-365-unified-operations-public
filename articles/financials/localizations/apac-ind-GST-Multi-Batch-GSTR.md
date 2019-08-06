@@ -52,7 +52,7 @@ Enable Multi-batch process feature
 
 ## Get CSV files
 
-1.Go to **Organization administration\>**Electronic reporting**\>**Electronic reporting job**.
+1. Go to **Organization administration\>**Electronic reporting**\>**Electronic reporting job**.
 2. **GER export** to **GSTR CSV_**_Merged** which is generated as a **merged file**
 
 
