@@ -1027,8 +1027,14 @@
       href: deployment/on-premises-diagnostics.md
     - name: Redeploy on-premises deployments
       href: deployment/redeploy-on-prem.md
-    - name: Update the local agent
-      href: lifecycle-services/update-local-agent.md
+    - name: Local agent
+     items:
+     - name: Local agent 2.2.0 ADFS Office 365 compatibility
+       href: deployment/onprem-adfscompatibility.md
+     - name: Local agent pre- and post- deployment scripts
+       href: lifecycle-services/pre-post-scripts.md
+     - name: Update the local agent
+       href: lifecycle-services/update-local-agent.md
     - name: Reconfigure environments
       href: lifecycle-services/reconfigure-environment.md
     - name: Client internet connectivity
