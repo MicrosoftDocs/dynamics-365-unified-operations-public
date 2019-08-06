@@ -32,9 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 Many tasks in Finance and Operations can be run as part of batch jobs. Batch jobs are generally created for task like processing reports,
 co-ordinating schedule maintenance,and creating and sending document such as invoices. By using batch jobs, user can avoid slowing 
 down his computer or the server during typical working hours. The tasks in a batch job can run either sequentially or at the same time . 
-India GSTR returns are required to be file by every legal entity and the volumn of transaction general very high as all the sales and purchase
-Invoice details are reported to Government. Even exectution of  report generation through Batch takes substaintial time some times. To make 
-this process more dynamic and efficent Multi batch processing feature is enable for GSTR reports for India. 
+India GSTR returns are required to be file by every legal entity and the volumn of transactions are general very high as all the sales and purchase Invoice details are reported to the Government.Even exectution of report generation through Batch some time takes substaintial time. To make this process more dynamic and efficent Multi batch processing feature is enabled for GSTR reports for India. 
+
 ## Enable Multi-batch processing feature 
 
 First user has to enable Multi-batch process feature 
