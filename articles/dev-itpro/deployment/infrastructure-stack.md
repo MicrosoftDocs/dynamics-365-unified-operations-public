@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Self-service deployment
+title: Self-service deployment overview
 description: This topic provides an overview self-service deployment for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/19/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Self-service deployment
+# Self-service deployment overview
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]

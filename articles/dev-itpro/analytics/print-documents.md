@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 69161

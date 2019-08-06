@@ -8,6 +8,10 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: July 30, 2019
+        href: whats-new-talent-july-31-2019.md
+      - name: July 23, 2019
+        href: whats-new-talent-july-24-2019.md
       - name: July 16, 2019
         href: whats-new-talent-july-16-2019.md
       - name: July 9, 2019
@@ -208,6 +212,8 @@
         href: set-up-hr-parameters-across-legal-entities.md
       - name: Set up company-specific HR parameters
         href: set-up-company-specific-hr-parameters.md
+      - name: Date and Time fields in Talent
+        href: date-time-fields-in-talent.md
       - name: Personnel actions FAQ
         href: personnel-actions-faq.md
       - name: Formalize business processes

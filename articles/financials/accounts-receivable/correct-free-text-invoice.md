@@ -17,7 +17,7 @@ ms.search.form: CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13991
@@ -52,7 +52,7 @@ You can identify canceling and correcting invoices in two ways:
 -   The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.
 
 > [!NOTE]
-> This feature is available only if the **Free text invoice correction** configuration key is selected.
+> This feature is available only if the **Free text invoice correction** configuration key is selected. For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/maintenance-mode) topic. 
 
 
 

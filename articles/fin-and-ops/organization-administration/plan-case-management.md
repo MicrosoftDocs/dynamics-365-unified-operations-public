@@ -17,7 +17,7 @@ ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23581

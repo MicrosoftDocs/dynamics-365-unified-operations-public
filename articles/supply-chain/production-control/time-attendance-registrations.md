@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCa
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53351

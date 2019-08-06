@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Create and assign advanced rule structures
-description: This task guide steps through creating and assigning an advanced rule structure to an account structure. 
+description: This topic explains how to create and assign an advanced rule structure to an account structure. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DimensionConfigureAccountRuleStructure, DimensionCreateAccountRuleStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate, DimensionConfigureAccountStructure, DimensionConfigureAccountRule, DimensionCreateAccountRule, DimensionSelectAccountRuleStructure   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,45 +30,35 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This task guide steps through creating and assigning an advanced rule structure to an account structure. This guide uses the USMF demo company.
-
+This topic explains how to create and assign an advanced rule structure to an account structure. This guide uses the USMF demo company.
 
 ## Create an advanced rule structure
-1. Go to General ledger > Chart of accounts > Structures > Advanced rule structures.
-2. Click New to open the drop dialog.
-3. In the Advanced rule structure field, type a name to descritbe the rule structure.
-4. In the Description field, type a value to describe the structure.
-5. Click OK.
-6. Click Add segment.
-7. In the list of segments, select a financial dimension.
-    * For example, Store.  
-8. Click Add segment.
-9. In the list, click the link of the advanced rule structure to view it.
-10. Click Activate.
-11. Click Activate.
+1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Structures > Advanced rule structures**.
+2. Select **New** to open the drop dialog.
+3. In the **Advanced rule structure** field, type a name to describe the rule structure.
+4. Select **OK**.
+5. Select **Add segment**.
+6. In the list of segments, select a financial dimension. For example, **Store**.  
+7. Select **Add segment**.
+8. Select **Activate**.
 
 ## Apply an advanced rule structure to an account structure
-1. Close the form.
-2. Close the page.
-3. Go to General ledger > Chart of accounts > Structures > Configure account structures.
-4. In the list, find and select the account structure you want to apply the advanced rule to.
-5. Click the name of the account structure to open it.
-6. Click Edit.
-    * You can also click Advanced rules and you will be prompted to put the account structure in Draft mode.  
-7. Click Advanced rules.
-8. Click New to open the drop dialog.
-9. In the Advanced rule field, type a value.
-10. In the Name field, type a value.
-11. Click Create.
-12. Click Add new criteria.
-13. In the Where field, select main account or a financial dimension.
-14. In the Operator field, select an option, such as is between and includes.
-15. In the Value field, type a value.
-16. In the through field, type a value.
-17. Click Add to open the drop dialog.
-18. In the list, find the advanced rule structure you want to use when the criteria you entered is met.
-19. Click Add.
-20. Close the page.
-21. Click Activate.
-22. Click Activate.
+1. Go to **navigation pane > Modules > General ledger > Chart of accounts > Structures > Configure account structures**.
+2. In the list, find and select the account structure you want to apply the advanced rule to.
+3. Select **Edit**. You can also select **Advanced rules** and you will be prompted to put the account structure in **Draft mode**.  
+4. Select **Advanced rules**.
+5. Select **New** to open the drop dialog.
+6. In the **Advanced rule** field, type a value.
+7. In the **Name** field, type a value.
+8. Select **Create**.
+9. Select **Add new criteria**.
+10. In the **Where** field, select main account or a financial dimension.
+11. In the **Operator** field, select an option, such as **is between** and **includes**.
+12. In the **Value** field, type a value.
+13. In the **through** field, type a value.
+14. Select **Add** to open the drop dialog.
+15. In the list, find the advanced rule structure you want to use when the criteria you entered is met.
+16. Select **Add**.
+17. Close the page.
+18. Select **Activate**.
 
