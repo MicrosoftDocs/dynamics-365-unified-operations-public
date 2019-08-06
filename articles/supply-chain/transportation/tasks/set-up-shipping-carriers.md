@@ -34,7 +34,7 @@ This topic shows how to set up a shipping carrier and define details such as ser
 
 
 ## Create a new shipping carrier
-1. Go to **navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers**.
+1. Go to **Navigation pane > Modules > Transportation management > Setup > Carriers > Shipping carriers**.
 2. Select **New** in the Action pane.
 3. In the **Shipping carrier** field, type a value.
 4. In the **Name** field, type a value.
@@ -43,10 +43,8 @@ This topic shows how to set up a shipping carrier and define details such as ser
 ## Fill in the general information for the shipping carrier
 1. Toggle the expansion of the **Overview** section.
 2. Check or uncheck the **Activate shipping carrier** checkbox.
-3. In the **Vendor account** field, select an option from the drop-down menu.
-- Select the vendor account to assign the shipping carrier to.  
-4. In the **Transportation tender type** field, select an option.
-- Select **Manual** to use the Transportation Tender page, or select **EDI** to update the tender by using Electronic Data Interchange (EDI).  
+3. In the **Vendor account** field, select an option from the drop-down menu. Select the vendor account to assign the shipping carrier to.  
+4. In the **Transportation tender type** field, select an option. Select **Manual** to use the Transportation Tender page, or select **EDI** to update the tender by using Electronic Data Interchange (EDI).  
 5. Check or uncheck the **Activate carrier rating** checkbox.
 
 ## Create the necessary services for the shipping carrier
