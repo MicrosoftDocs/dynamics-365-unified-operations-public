@@ -105,8 +105,7 @@ To push your changes:
 
 2. Select **Push these changes**.
 
-   [![Push changes](./media/onboard-edit-guide-push-changes.png)](./media/onboard-edit-guide-push-changes.png)
-
+   
 ## Add or edit an introduction
 
 1. On the **Introduction** tab, enter a title for your guide and an opening message. To use the sample text, select **Use this message**.
