@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 

@@ -3,7 +3,7 @@
 
 title: Development and administration for Finance and Operations
 description: This page helps developers and IT Pros get started with Finance and Operations.
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: index-page
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 
 # ms.tgt_pltfrm: 
 ms.custom: 62303
