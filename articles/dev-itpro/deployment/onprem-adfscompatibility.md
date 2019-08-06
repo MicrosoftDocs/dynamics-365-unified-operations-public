@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include [banner](../includes/banner.md)]
 
+>[!IMPORTANT]
+>It is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 or later.
+
 This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
 
 ## Existing deployments
@@ -51,21 +54,21 @@ This topic explains how to use the same instance of Active Directory Federation 
     .\LocalAgentCLI.exe Install '<path of localagent-config.json>'
     ```
 
-6. For existing environments that are running Platform update 28 or later, perform any servicing operation to make the new configuration available.
+6. Perform any servicing operation with Platform update 28 or later to make the new configuration available.
 7. After servicing is completed, run the following script.
 
     ```powershell
-    .\Reset-DatabaseUsers.ps1 -DatabaseServer '<FQDN of the SQL server>' -DatabaseName '<AX database name>'.
+    .\Reset-DatabaseUsers.ps1 -DatabaseServer '<FQDN of the SQL server>' -DatabaseName '<AX database name>'
     ```
 
     > [!IMPORTANT]
     > If you skip this step, the primary admin user won't be able to sign in.
 
 8. Use Service Fabric Explorer to [restart an Application Object Server (AOS) node](troubleshoot-on-prem.md#restartapplications).
-9. Run a SQL query on the USERINFO table to modify the **NETWORKDOMAIN** field. If your old configuration was `https://ax.contoso.com/adfs`, you should change all your users entries to `http://ax.contoso.com/adfs/services/trust`.
+9. Run a SQL query on the USERINFO table to modify the **NETWORKDOMAIN** field. If your old configuration was `https://ax.contoso.com/adfs`, you should change all your user entries to `http://ax.contoso.com/adfs/services/trust`.
 
 ## New deployments
 
 1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
 2. Modify the local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
-3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it with Platform update 28 on top.
+3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
