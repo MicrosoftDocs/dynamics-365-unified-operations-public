@@ -70,8 +70,7 @@ This topic shows how to set up a shipping carrier and define details such as ser
 4. In the **Name** field, type a value.
 5. In the **Site** field, select an option from the drop-down menu.
 6. In the **Warehouse** field, select an option from the drop-down menu.
-7. In the **Rate engine** field, select an option from the drop-down menu.
-- Select the Rate engine that is in accordance with the contract that you have with the carrier.  
+7. In the **Rate engine** field, select an option from the drop-down menu. Select the Rate engine that is in accordance with the contract that you have with the carrier.  
 8. In the **Rate master** field, select an option from the drop-down menu.
 9. In the **Transit time engine** field, select an option from the drop-down menu.
 10. Select **Save**.
