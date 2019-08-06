@@ -82,7 +82,7 @@ Before you can complete this procedure, demo data must be installed in your envi
 11. In the **Display order** field, enter a number.
 12. Repeat for any additional categories that you want to change the order of.
 
-The display order for the channel navigation hierarchy is acknowledged in HQ, catalog, and retail channels.
+The display order for the channel navigation hierarchy is reflected in HQ, catalog, and retail channels.
 
 ![Channel navigation hierarchy custom sorted](./media/ChannelNavCustomSorted.png)
 
