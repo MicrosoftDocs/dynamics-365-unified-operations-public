@@ -3,9 +3,9 @@
 
 title: Fixed assets (Russia)
 description: This topic provides information about fixed asset management for Russia.
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
