@@ -36,7 +36,7 @@ India GSTR returns are required to be file by every legal entity and the volumn 
 
 ## Enable Multi-batch processing feature 
 Go to **Work spaces**\>**Feature management**
-User has to enable Multi-batch process feature 
+Enable Multi-batch process feature 
 
 ![Enable Multi-batch process ](media/Multi-batch processing-001.png)
 
