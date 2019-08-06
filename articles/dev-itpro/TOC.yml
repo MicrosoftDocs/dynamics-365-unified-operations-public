@@ -1028,6 +1028,7 @@
     - name: Redeploy on-premises deployments
       href: deployment/redeploy-on-prem.md
     - name: Local agent
+      href: href: deployment/onprem-adfscompatibility.md
      items:
      - name: Local agent 2.2.0 ADFS Office 365 compatibility
        href: deployment/onprem-adfscompatibility.md
