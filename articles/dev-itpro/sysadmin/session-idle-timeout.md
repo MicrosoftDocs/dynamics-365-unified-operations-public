@@ -5,7 +5,7 @@ title: Set the session idle timeout
 description: This topic describes how to et the session idle timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,17 +24,15 @@ ms.custom: 13531
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: hasaid
-ms.search.validFrom: 2019-08-02
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: Platform update 29
 
 ---
 
 # Set the session idle timeout
 
 [!include [banner](../includes/banner.md)]
-
-> [!NOTE]
-> This feature is available in Platform update 29 and later.
+[!include [preview banner](../includes/preview-banner.md)]
 
 The session idle timeout setting represents the amount of time a user can be inactive before the user's session times out and closes. It only affects user browser sessions.
 
