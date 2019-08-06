@@ -29,7 +29,7 @@ On product details page, rating summary is showed below the product title. Ratin
 Refer to the below screenshot for more details:
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-buy-box-rating-summary.png)
 
-##Ratings and review on product details page (PDP) 
+## Ratings and review on product details page (PDP) 
 
 Ratings summary is showed across the sites in the products placement lists, category lists, and search results etc. Ratings summary along with review list will be showed on product details page, also allows consumers to submit a rating and review on a product on product details pages.  There are multiple modules those needs to be configure to show ratings summary, write review, and reviews list on product details page as follows:
 
