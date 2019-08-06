@@ -35,9 +35,25 @@ down his computer or the server during typical working hours. The tasks in a bat
 India GSTR returns are required to be file by every legal entity and the volumn of transaction general very high as all the sales and purchase
 Invoice details are reported to Government. Even exectution of  report generation through Batch takes substaintial time some times. To make 
 this process more dynamic and efficent Multi batch processing feature is enable for GSTR reports for India. 
-
-## 1．	Enable this feature
+## Enable Multi-batch processing feature 
 
 First user has to enable Multi-batch process feature 
 
-![Enable Multi-batch process ](media/Multii-batch processing-001.png)
+![Enable Multi-batch process ](media/Multi-batch processing-001.png)
+
+## Generate GSTR report 
+
+1. Go to **Tax**\>**Sales tax report**\>**GER export to GSTR CSV**.
+2. Set **‘batch processing’** to **true**.
+3. Set **‘number of days per batch’** greater than **0**.
+4. Click **ok**.
+
+![Enable Multi-batch process ](media/Multi-batch processing-002.png)
+
+## Get CSV files
+
+1.Go to **Organization administration\>**Electronic reporting**\>**Electronic reporting job**.
+2. **GER export** to **GSTR CSV_**_Merged** which is generated as a **merged file**
+
+
+![Enable Multi-batch process ](media/Multi-batch processing-003.png)
