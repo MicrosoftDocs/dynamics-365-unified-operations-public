@@ -40,4 +40,4 @@ this process more dynamic and efficent Multi batch processing feature is enable 
 
 First user has to enable Multi-batch process feature 
 
-
+![Enable Multi-batch process ](media/Multii-batch processing-001.png)
