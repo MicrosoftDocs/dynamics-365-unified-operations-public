@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-Retailers consider product discovery as a primary tool for customer interaction across all retail channels. Product discoverability functionality includes browsing though categories, searching, and filtering, and is an easy way for customers to discover products. 
+Retailers consider product discovery as a primary tool for customer interaction across all retail channels. Product discoverability functionality includes browsing through categories, searching, and filtering, and is an easy way for customers to discover products. 
 
 This topic explains the concepts that are related to controlling the display order for various merchandising entities, and how to change the sort order. 
 
@@ -50,19 +50,18 @@ The new custom sort order functionality empowers the merchandising manager to co
 
 You must have demo data installed on your environment to do the following. 
 1.	Go to **Retail > Products and categories > Retail product hierarchy**.
-1.	Click **Edit category hierarchy**.
-1.	Click **Edit**.
+1.	Select **Edit category hierarchy**.
+1.	Select **Edit**.
 1.	In the tree, expand 'ALL\Action Sports'.
 1.	In the tree, expand 'ALL\Team Sports'.
 1.	In the **Display order field**, enter a number (the number can be a negative value).
-1.  Repeat for any additional categories you want to change the order of. 
+1.  Repeat for any additional categories that you want to change the order for. 
 
-The display order for the channel navigation hierarchy is acknowleged in HQ for **Retail product hierarchy** and **Released products by category**.
+The display order for the channel navigation hierarchy is acknowledged in HQ for the **Retail product hierarchy** and **Released products by category**.
 
 ![RetailProductHierarchyCustomSortedWithNegativeValues](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
 ![ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
-
 
 
 ### Configure the display order for categories in channel navigation hierarchy
@@ -70,8 +69,8 @@ The display order for the channel navigation hierarchy is acknowleged in HQ for 
 You must have demo data installed on your environment to do the following. 
 1.	Go to **Retail > Products and categories > Channel navigation categories**.
 1.	In the list, find and select the 'Fashion navigation' hierarchy
-1.	Click **Edit category hierarchy**.
-1.	Click **Edit**.
+1.	Select **Edit category hierarchy**.
+1.	Select **Edit**.
 1.	In the tree, select 'Fashion\Womenswear\Womens Shoes'.
 1.	In the **Display order** field, enter a number.
 1.	In the tree, select 'Fashion\Womenswear\Tops'.
@@ -81,9 +80,9 @@ You must have demo data installed on your environment to do the following.
 1.	In the **Display order** field, enter a number.
 1.	In the tree, select 'Fashion\Menswear\Coats & Jackets'.
 1.	In the **Display order** field, enter a number.
-1.  Repeat for any additional categories you want to change the order of. 
+1.  Repeat for any additional categories that you want to change the order for. 
 
-The display order for the channel navigation hierarchy is acknowleged in HQ, catalog, and Retail channels.
+The display order for the channel navigation hierarchy is acknowledged in HQ, catalog, and Retail channels.
 
 
 ![ChannelNavCustomSorted](./media/ChannelNavCustomSorted.png)
@@ -92,4 +91,4 @@ The display order for the channel navigation hierarchy is acknowleged in HQ, cat
 
 
 > [!NOTE]
-> By default this feature is turned off. To learn how to turn this and other features on, see [Feature management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> By default, this feature is turned off. To learn how to turn this and other features on, see [Feature management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
