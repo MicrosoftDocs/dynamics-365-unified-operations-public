@@ -2,7 +2,7 @@
 # required metadata
 
 title: Debug modules
-description: There are various options available to aid in debugging modules during development in Dynamics 365 for Commerce.
+description: This topic explains the various options that are available to help you debug modules during development in Microsoft Dynamics 365 for Commerce.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -29,10 +29,13 @@ ms.dyn365.ops.version:
 
 ---
 # Debug modules
-There are various options available to aid in debugging your modules during development. Dynamics 365 for Commerce e-Commerce functionality leverages React and Node which support client-side debugging. Standard React and Node debugging patterns can be used but are not covered in this topic.
 
-## Debug query string paramater
-The `&debug=true` query parameter can be added to your query string as you test your modules on a local developer environment. Using this parameter will provide extended trace output in the Command Prompt window running Yarn.
+Various options are available to help you debug your modules during development. The e-Commerce functionality in Microsoft Dynamics 365 for Commerce uses React and Node, which support client-side debugging. Although you can also use standard React and Node debugging patterns, they aren't covered in this topic.
+
+## Debug query string parameter
+
+When you test your modules in a local developer environment, you can add the **&debug=true** query parameter to the query string. This parameter provides extended trace output in the **Command Prompt** window that is running Yarn.
 
 ## Browser debugging
-Standard browser debugging tools can be leveraged during the development of modules. Reference the documentation for the specific browser for further details.
+
+During the development of modules, you can take advantage of the standard debugging tools that are available in your web browser. For more information, see the documentation for your web browser.
