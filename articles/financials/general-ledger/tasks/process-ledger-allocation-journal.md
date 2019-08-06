@@ -36,7 +36,7 @@ This topic explains how to process an allocation request in Dynamics 365 for Fin
 2. In the **Rule** field, select the desired record in the drop-down menu.
 3. In the **As of date** field, enter a date.
 
-- The **As of Date** is very important when the Ledger is the Data source for the rule. This date controls which ledger balances to include for allocation.  
+    - The **As of Date** is very important when the Ledger is the Data source for the rule. This date controls which ledger balances to include for allocation.  
     - In the **Zero source** field select **Stop**. This will stop the allocation process and display a message that states that a zero source amount is selected.  
 
 4. In the **Proposal options** field, select **Proposal only**. Select **Proposal only** to review and optionally approve the result in Allocation journals prior to posting the allocation to General ledger.  
