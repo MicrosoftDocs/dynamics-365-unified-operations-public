@@ -5,7 +5,7 @@ title: Posting of online sales and payments
 description: This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. 
 author: psimolin
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,40 +30,43 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Posting of online sales and payments is a two stage process
-1) Pulling the online retail transaction data in HQ
-2) Synchronizing orders to create sales orders in HQ
+This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.
+
+Posting online sales and payments is a two-stage process.
+
+- Pulling the online retail transaction data in HQ.
+- Synchronizing orders to create sales orders in HQ.
 
 Pulling the online retail transaction data can be done either by manually running the P-job or by creating a recurrent batch job.
 
 ### Manually running the P-job
 
-1. Go to All workspaces > Retail IT
-2. Click Distribution schedule
-3. Select P-0001
-4. Adjust channel database groups if required
-5. Click Run now
-6. Click Yes
+1. Go to All workspaces > Retail IT.
+2. Click Distribution schedule.
+3. Select P-0001.
+4. Adjust channel database groups, if required.
+5. Click Run now.
+6. Click Yes.
 
-### Scheduling recurring P-job
+### Scheduling a recurring P-job
 
-1. Go to All workspaces > Retail IT
-2. Click Distribution schedule
-3. Select P-0001
-4. Click "Create batch job"
-5. Click Run in the background
-5. Enable Batch processing
-6. Click Recurrence.
+1. Go to All workspaces > Retail IT.
+2. Click Distribution schedule.
+3. Select P-0001.
+4. Click Create batch job.
+5. Click Run in the background.
+5. Enable Batch processing.
+6. Click Recurrence..
 7. Select the No end date option.
-8. In the Count field, enter interval between the runs in minutes. Typically this would be 5-10
+8. In the Count field, enter interval between the runs in minutes. Typically this would be 5-10.
 9. Click OK.
 10. Click OK.
 
-Orders can be synchronized either by manually running the "Synchronize orders"-job or by creating a recurrent batch job.
+Orders can be synchronized either by manually running the "Synchronize orders"-job or by creating a recurring batch job.
 
-### Manually running order synchronization once
+### Manually running order synchronization 
 
-This procedure walks through the steps required to manually run "Synchronize orders"-job once.
+Follow these steps to manually run "Synchronize orders" job once.
 
 1. Go to All workspaces > Retail store financials.
 2. Click Synchronize orders.
@@ -78,7 +81,7 @@ This procedure walks through the steps required to manually run "Synchronize ord
 9. Click OK.
 10. Click OK.
 
-### Scheduling recurring Order synchronization
+### Scheduling recurring order synchronization
 
 This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. This procedure uses the USRT company in demo data.
 
@@ -108,4 +111,3 @@ This procedure walks through configuring and running a recurrent batch job to cr
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
-
