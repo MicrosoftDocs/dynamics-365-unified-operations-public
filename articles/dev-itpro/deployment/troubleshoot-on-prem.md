@@ -301,21 +301,21 @@ Follow these steps to troubleshoot general issues with local agent validation.
 
 ### Issue
 
-**Error:** When installing the LocalAgent you receive the following error:
+**Error:** When you install the local agent, you receive the following error:
 
 ```stacktrace
 LocalAgentCLI.exe Error: 0 : Exception System.InvalidOperationException: unable to get settings for telemetry setup component
-   at LBDTelemetryCommon.LBDTelemetrySetupManager.GetComponentSettings()
-   at LBDTelemetryCommon.LBDTelemetrySetupManager.ApplyParameters()
-   at LocalAgentCLI.Program.Main(String[] args)
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.GetComponentSettings()
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.ApplyParameters()
+    at LocalAgentCLI.Program.Main(String[] args)
 Press any key to exit
 ```
 
-**Reason:** You are trying to install LoalAgent v2.3.0 or later and you are not using an up to date localagent-config.json
+**Reason:** You're trying to install local agent version 2.3.0 or later, but the localagent-config.json file that you're using isn't up to date.
 
-**Steps:** You can get the newer version of the localagent-config.json from LCS by following the "Configure a connector and install an on-premises local agent" step from the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) content.
+**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector).
 
-You can also add the following values to the localagent-config.json file manually under components:
+You can also manually add the following values to the localagent-config.json file under components.
 
 ```json
 {
@@ -323,11 +323,12 @@ You can also add the following values to the localagent-config.json file manuall
     "placementCriteria": "(IsOrchestratorEnabled == True)",
     "parameters": {
         "applicationPackagePath": {
-        	"value": "Applications\\LBDTelemetry"
+            "value": "Applications\\LBDTelemetry"
         }
     }
 },
 ```
+
 ### Issue
 
 **Error:** You might receive the following errors:
@@ -500,7 +501,7 @@ The local agent user can't connect to the SQL Server instance or the database.
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
-## <a name="restartapplications"></a> Restart applications (such as AOS)
+## <a name="restartapplications"></a>Restart applications (such as AOS)
 
 In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis button (**...**), and then select **Restart**. When you're prompted, enter the code.
 
