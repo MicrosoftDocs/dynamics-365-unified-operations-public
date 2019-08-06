@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new e-Commerce site
-description: This topic covers the tasks associated with creating a new e-Commerce site in Dynamics 365 for Commerce. 
+description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
 author: stuharg
 manager: AnnBe
 ms.date: 09/06/2019
@@ -36,20 +36,19 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/preview-banner.md)]
 
-This topic covers the tasks associated with creating a new e-Commerce site in Dynamics 365 for Commerce. 
+This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
 
-To get started with development of your e-Commerce experience, you first need to establish a new site in the site authoring environment. To create a new site, you must have at least one online store created in headquarters (HQ). For more information on creating an online store, see the [Create a Dynamics 365 e-Commerce online store]().  
+To start to develop your e-Commerce experience, you must first establish a new site in the site authoring environment. Before you can create a new site, at least one online store must be created in headquarters (HQ). For more information about how to create an online store, see [Create a Dynamics 365 e-Commerce online store]().
 
-To set up your site, click the link in Dynamics Lifecycle Services (LCS) for the site authoring environment. On the home page of the site authoring environment, click **New site**. The **New site** dialog will open and will ask you to provide the following information.
+To set up your site, in Microsoft Dynamics Lifecycle Services (LCS), select the link for the site authoring environment. On the home page for the site authoring environment, select **New site**, and then, in the **New site** dialog box, provide the following information.
 
-| **Site name**                           | The display name for your site within the site authoring environment. The name you give your   site is only visible within the authoring environment and it will not be shown to customers. |
-| --------------------------------------- | ------------------------------------------------------------ |
-| **Site Administrator's Security Group** | The Azure AD security group that manages the users that perform the Site Administrator   role within this site. For more information about granting permissions to users, see [Manage users and roles](). |
-| **Online store**                        | Choose the online store that this site will serve as the web storefront for. If you want your e-Commerce site to support multiple online stores, you need to associate the stores to your site through **Site settings** after your site is set up. |
-| **Domain**                              | Select a domain name that will serve as the domain for this online store. If you have not   configured any domains in LCS, this field may be left empty. Once your domain is configured in LCS, you need to add it to your online store through **Site settings**. See [Configure your domain names]() to learn more about how to set up domains for your site. |
-| **Market**                              | Choose a country that best represents this online store. If you choose to configure your site to support multiple online stores, the value you enter here will be used to guide your customers to the most appropriate online store given their geographic location. For example, if your site supports a U.S. and Japan store, and a customer who resides in Japan is requesting a URL for your U.S. store, you can show them a message that tells them you offer an online store for their particular region. After your site is set up, you can add more markets to this online store. |
-| **Language**                            | Specify the language you want your customers to view content in for this online store and   market. An online store can support multiple languages. If you wish to support multiple languages for this or another online store, you can do that through **Site settings** after your site is set up. See [Add other languages to your site]() for more information on configuration languages. |
+| Field                               | Description |
+|-------------------------------------|-------------|
+| Site name                           | Enter the display name that should be used for your site in the site authoring environment. This name is visible only in the authoring environment. It won't be shown to customers. |
+| Site Administrator's Security Group | Specify the Microsoft Azure Active Directory (Azure AD) security group that manages users who have the **Site Administrator** role in this site. For more information about how to grant permissions to users, see [Manage users and roles](). |
+| Online store                        | Select the online store that this site will serve as the web storefront for. If you want your e-Commerce site to support multiple online stores, you must associate the stores with your site in **Site settings** after the site is set up. |
+| Domain                              | Select a domain name that will serve as the domain for this online store. If you haven't configured any domains in LCS, you can leave this field blank. After your domain is configured in LCS, you must add it to your online store in **Site settings**. For more information about how to set up domains for a site, see [Configure your domain names](). |
+| Market                              | Select the country or region that best represents this online store. If you configure your site to support multiple online stores, the value that you select here will be used to guide your customers to the most appropriate online store for their geographic location. For example, your site supports separate stores for the United States and Japan, and a customer who resides in Japan requests a URL for your US store. In this case, the customer can receive a message that states that you offer an online store for Japan. After your site is set up, you can add more markets to this online store. |
+| Language                            | Specify the language that you want customers to view content in for this online store and market. An online store can support multiple languages. If you want to support multiple languages for this online store or another online store, you can configure that support in **Site settings** after the site is set up. For more information about how to configure languages, see [Add other languages to your site](). |
 
-
-
-Once your site is created, you can verify that it is associated with your online store by clicking the **Retail** tab. You should see the products that have been assorted to that online store and be able to access them by category by using the dropdown in the upper-left of the page. 
+After your site is created, you can verify that it's associated with your online store by selecting the **Retail** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down field in the upper left of the page to access those products by category.
