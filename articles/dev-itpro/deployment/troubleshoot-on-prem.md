@@ -301,7 +301,7 @@ Follow these steps to troubleshoot general issues with local agent validation.
 
 ### Issue
 
-**Error:** When you install the local agent, you receive the following error:
+**Error:** When you install the local agent, you receive the following error.
 
 ```stacktrace
 LocalAgentCLI.exe Error: 0 : Exception System.InvalidOperationException: unable to get settings for telemetry setup component
