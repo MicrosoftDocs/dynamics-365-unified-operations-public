@@ -59,10 +59,10 @@ When produced quantities or production hours have been registered on the resourc
 
 5. Click **OK**. When the automatic asset counter update is done, you can see the counter registrations related to the asset in **Asset counters** (**Asset management** > **Common** > **Assets** > **All assets** > select asset > **Counters** button).
 
-In **Asset counter totals**, you can get an overview of the latest registration made on all counter types on all assets. Click **Asset management** > **Inquiries** > **Assets** > **Asset aggregated value**. The view is very similar to **Asset counters**, but you cannot add or edit registrations in **Asset aggregated value**. It is for overview only. See the figure below for a screenshot of the interface.
+In **Asset counter totals**, you can get an overview of the latest registration made on all counter types on all assets. Click **Asset management** > **Inquiries** > **Assets** > **Asset aggregated value**. The view is very similar to **Asset counters**, but you cannot add or edit registrations in **Asset aggregated value**. It is for overview only.
 
 ![Figure 2](media/13-work-orders.png)
 
 
-- It is still possible to create manual counter value registrations for counter types that are automatically updated. Refer to the Manual update of object counters section for more information. objects and objects...
+- It is still possible to create manual counter value registrations for counter types that are automatically updated. Refer to the "Manual update of asset counters" section for more information.
 - You can set up counters related to another counter, which means that when a counter is updated, related counters are automatically updated at the same time. Refer to [Counters](../setup-for-objects/counters.md) regarding setup of related counters.
