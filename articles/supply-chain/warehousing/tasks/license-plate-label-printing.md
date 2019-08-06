@@ -34,13 +34,13 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 
 
 ## Set up the GS1 company prefix
-1. Go to **navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse management parameters**.
 2. In the **GS1 company prefix** field, enter the 7 numbers for your GS1 company number.
 3. Select **Save**.
 4. Close the page.
 
 ## Setup the SSCC license plate number sequence
-1. Go to **navigation pane > Modules > Organization administration > Number sequences > Number sequences**.
+1. Go to **Navigation pane > Modules > Organization administration > Number sequences > Number sequences**.
 2. In the **Area** field, select an option.
 3. In the **Reference** field, select an option.
 4. In the **Company** field, type a value.
@@ -53,8 +53,7 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 11. Close the page.
 
 ## Create the document route layout
-1. Go to **navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**.
-- Enable the SSCC layout.  
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing layouts**. Enable the SSCC layout.  
 2. Select **New**.
 3. In the **Layout ID** field, type a value.
 4. In the **Description** field, type a value.
@@ -63,7 +62,7 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 7. Close the page.
 
 ## Set up the document routing
-1. Go to **navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Document routing > Document routing**.
 2. In the **Work order type** field, select an option.
 3. Select **New**.
 4. In the **Warehouse** field, type a value.
@@ -75,7 +74,7 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 10. Close the page.
 
 ## Create mobile device menu
-1. Go to **navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Mobile device > Mobile device menu items**.
 2. Select **New**.
 3. In the **Menu item name** field, type a value.
 4. In the **Title** field, type a value.
@@ -95,7 +94,7 @@ This topic shows how to enable the automatic printing of a Serial shipping conta
 18. Close the page.
 
 ## Update a work template
-1. Go to **navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Work > Work templates**.
 2. Select **Edit**.
 3. Select **New**.
 4. In the **Work type** field, select **Print**.
