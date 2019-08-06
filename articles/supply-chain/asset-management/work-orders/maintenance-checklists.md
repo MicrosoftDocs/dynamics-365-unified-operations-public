@@ -57,25 +57,25 @@ When you work with maintenance checklists on a work order, you can fill out the 
 
 ## Add a maintenance checklist line
 
-Checklists are created from the definition on the job type setup and transferred to a work order line. If required, you can add checklist lines to a work order line. Manually added checklist lines get the reference "Manual".
+Maintenance checklists are created from the definition on the maintenance job type default and transferred to a work order job. If required, you can add maintenance checklist lines to a work order job. Manually added maintenance checklist lines get the reference "Manual".
 
-1. In **Checklists**, select the work order line number for which you want to add a checklist.
+1. In **Work order maintenance job checklist**, select the work order job for which you want to add a maintenance checklist.
 
-2. On the **Checklist** FastTab, select a checklist line and press the arrow-down button on your keyboard if you want to insert a new line after the selected checklist line. The next number in the sequence is automatically inserted in the **Line number** field. You can also select a checklist line and click the **Add line** button if you want to insert a new line above the selected checklist line.
+2. On the **Maintenance checklist lines** FastTab, select a maintenance checklist line and press the arrow-down button on your keyboard if you want to insert a new line after the selected maintenance checklist line. The next number in the sequence is automatically inserted in the **Line number** field. You can also select a maintenance checklist line and click the **Add line** button if you want to insert a new line above the selected maintenance checklist line.
 
-3. Insert a name for the checklist in the **Name** field.
+3. Insert a name for the maintenance checklist line in the **Name** field.
 
-4. In the **Type** field, select a type for the checklist line. For each checklist type, the related fields are shown on the **Properties** FastTab.  
-  a. "Text" is used to add a checklist line with a text description of what to do. This checklist type can be used if you want a worker to check or inspect something, without expecting a specific (measurable) result. Insert a description of what to do on the **Instructions** tab.  
-  b. "Header" is used as a heading to group the checklist lines shown below the header. This is useful if you have several checklist lines that can be divided into specific areas. Insert a descriptive name in the **Name** field.  
-  c. "Template" is not applicable when you add a checklist line manually on a work order line.  
-  d. "Variable" is used to define a possible result in a range on a checklist line. The setup of checklist variables is described in [Job groups and job types, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). Insert a name to describe the variable in the **Name** field. Select the variable in the **Variable** field. Insert a description of what to do on the **Instructions** tab.  
-  e. "Measurement" is used to record a specific measurement. Insert a name for the measurement in the **Name** field. Select the unit for the measure in the **Unit** field. Insert a description of what to do on the **Instructions** tab.  
+4. In the **Type** field, select a type for the maintenance checklist line. For each maintenance checklist type, the related fields are shown on the **Line details** FastTab.  
+  a. "Text" is used to add a maintenance checklist line with a text description of what to do. This maintenance checklist type can be used if you want a worker to check or inspect something, without expecting a specific (measurable) result. Insert a description of what to do in the **Instructions** section on the **Line details** FastTab. 
+  b. "Header" is used as a heading to group the maintenance checklist lines shown below the header. This is useful if you have several maintenance checklist lines that can be divided into specific areas. Insert a descriptive name in the **Name** field.  
+  c. "Template" is not applicable when you add a maintenance checklist line manually on a work order job.  
+  d. "Variable" is used to define a possible result in a range on a maintenance checklist line. The setup of maintenance checklist variables is described in [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md). Insert a name to describe the variable in the **Name** field. Select the variable in the **Variable** field. Insert a description of what to do in the **Instructions** section on the **Line details** FastTab.  
+  e. "Measurement" is used to record a specific measurement. Insert a name for the measurement in the **Name** field. On the **Line details** FastTab, select **Counter** and **Unit**. Insert a description of what to do in the **Instructions** section.  
 
-5. When you are done adding checklist lines manually, fill out the lines as described in the section above.
+5. When you are done adding maintenance checklist lines manually, fill out the lines as described in the section above.
 
 >[!NOTE]
->In the **Checklists**, you cannot delete checklist lines with the reference "Job type". You can only delete checklist lines with the reference "Manual", which you or other workers have created manually.
+>In the **Work order maintenance job checklist**, you cannot delete maintenance checklist lines with the reference "Job type". You can only delete maintenance checklist lines with the reference "Manual", which you or other maintenance workers have created manually.
 
 
 ![Figure 1](media/14-work-orders.png)
