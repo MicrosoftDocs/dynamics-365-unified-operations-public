@@ -47,7 +47,7 @@ First user has to enable Multi-batch process feature
 3. Set **‘number of days per batch’** greater than **0**.
 4. Click **ok**.
 
-![Enable Multi-batch process ](media/Multi-batch processing-002.png)
+![Generate GSTR Report ](media/Multi-batch processing-002.png)
 
 ## Get CSV files
 
@@ -55,5 +55,5 @@ First user has to enable Multi-batch process feature
 2. **GER export** to **GSTR CSV_**_Merged** which is generated as a **merged file**
 
 
-![Enable Multi-batch process ](media/Multi-batch processing-003.png)
+![Get CSV Files ](media/Multi-batch processing-003.png)
  
