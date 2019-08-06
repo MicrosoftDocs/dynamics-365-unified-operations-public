@@ -439,11 +439,9 @@
           href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
         - name: Create records using record templates
           href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
-      - name: Data integration using the Common Data Service
+      - name: Data integration using Common Data Service
         items:
-        - name: Data integration using the Common Data Service overview
-          href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
-        - name: Data integration using the Common Data Service overview
+        - name: Data integration using Common Data Service overview
           href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
         - name: Synchronous, bidirectional integration
           items: 
