@@ -5,7 +5,7 @@ title: Globalization resources
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

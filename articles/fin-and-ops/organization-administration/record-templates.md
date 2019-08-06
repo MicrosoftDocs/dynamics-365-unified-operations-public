@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Record templates
+title: Record templates overview
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Record templates
+# Record templates overview
 
 [!include [banner](../includes/banner.md)]
 

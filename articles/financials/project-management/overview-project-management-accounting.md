@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Project management and accounting
+title: Project management and accounting overview
 description: The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
 author: KimANelson
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Project management and accounting
+# Project management and accounting overview
 
 [!include [banner](../includes/banner.md)]
 

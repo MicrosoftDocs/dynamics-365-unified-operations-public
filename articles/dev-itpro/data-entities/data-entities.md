@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities
+title: Data entities overview
 description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/16/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities
+# Data entities overview
 
 [!include [banner](../includes/banner.md)]
 

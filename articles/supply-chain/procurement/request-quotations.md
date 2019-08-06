@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Requests for quotation (RFQs)
+title: Requests for quotation (RFQs) overview
 description: This topic provides an overview of requests for quotation (RFQs). Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/21/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Requests for quotation (RFQs)
+# Requests for quotation (RFQs) overview
 
 [!include [banner](../includes/banner.md)]
 

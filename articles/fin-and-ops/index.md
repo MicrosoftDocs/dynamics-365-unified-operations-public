@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations documentation
+title: Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
 author: robinarh
 manager: AnnBe
-ms.date: 04/11/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations documentation
+# Dynamics 365 for Finance and Operations documentation
 
 [!include [banner](includes/banner.md)]
 

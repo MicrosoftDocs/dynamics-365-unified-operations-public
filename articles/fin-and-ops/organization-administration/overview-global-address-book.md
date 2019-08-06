@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Global address book
+title: Global address book overview
 description: The global address book can help you understand the relationships among people and organizations that are associated with your organization. For example, a customer may also be a vendor in a marketing campaign, or a worker in your organization may also be a vendor.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 07/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Global address book
+# Global address book overview
 
 [!include [banner](../includes/banner.md)]
 

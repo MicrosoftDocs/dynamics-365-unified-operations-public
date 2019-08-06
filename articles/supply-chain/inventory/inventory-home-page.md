@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Inventory management home page
+title: Inventory management overview
 description: This topic provides an overview of Inventory management.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Inventory management 
+# Inventory management overview
 
 [!include [banner](../includes/banner.md)]
 
