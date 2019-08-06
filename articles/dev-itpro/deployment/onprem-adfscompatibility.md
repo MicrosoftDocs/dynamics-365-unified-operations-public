@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Local Agent 2.2.0 ADFS Office 365 compatibility
+title: Local agent 2.2.0 ADFS Office 365 compatibility
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: faix
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 ---
 
 
-# Local Agent 2.2.0 ADFS Office 365 compatibility
+# Local agent 2.2.0 ADFS Office 365 compatibility
 
 [!include banner]
 
