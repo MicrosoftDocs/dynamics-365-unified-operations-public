@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-After you create an onboarding guide or template in Microsoft Dynamics 365 for Talent: Onboard, you must add an introduction, activities, contacts, and resources. Onboard lets you include rich content in your onboarding guides. Here are some examples of rich content:
+After you create an onboarding guide or template in Microsoft Dynamics 365 for Talent: Onboard, you must add an introduction, activities, contacts, and resources. Onboard lets you include rich content in your onboarding guides, including:
 
 - YouTube videos
 - Microsoft Sway presentations
@@ -42,6 +42,70 @@ After you create an onboarding guide or template in Microsoft Dynamics 365 for T
 - Microsoft Forms forms
 - Iframes that contains web content
 
+## Edit introductions or activities imported from a template
+
+If you create an onboarding guide from a template, or if you import activities from one template into another, you'll notice a **Lock** button on the imported activities. These are called *managed activities*.
+
+[![Managed activities](./media/onboard-edit-guide-managed-activities.png)](./media/onboard-edit-guide-managed-activities.png)
+
+When you select a managed activity, you can see the source template at the top of the activity.
+
+[![Managed activity source](./media/onboard-edit-guide-managed-activity-source.png)](./media/onboard-edit-guide-managed-activity-source.png)
+
+If you edit an activity in a template, Onboard will push the changes to all templates and unsent guides that are based on that template. If you select an unsent guide based on a template you edited and then select the **Activities** tab in the guide, you will see a notice that your guide has changed. To dismiss the notification, select **OK**. 
+
+[![Change notification](./media/onboard-edit-guide-change-notification.png)](./media/onboard-edit-guide-change-notification.png)
+
+You'll see a black dot next to the updated activities.
+
+[![Changed activity](./media/onboard-edit-guide-changed-activity.png)](./media/onboard-edit-guide-changed-activity.png)
+
+You can't edit managed activities outside of the original template, except to add an assignee, due date, or other information in the right-hand section of the activity.
+
+If you want to edit a managed activity, or if you don't want an activity to receive updates from the template it came from, select the **Lock** button for that activity. The **Lock** button will disappear. The activity will no longer be managed by the original template, and it will no longer receive updates from that template. Updates you make to an activity do not affect the original template.
+
+If you delete an activity from a guide and push changes from that guide's template, the activity will remain deleted in the guide.
+
+> [!NOTE]
+> Contacts and resources aren't managed by templates. In addition, sections aren't managed, so if you add or edit a section in a template, the changes won't be pushed to any guides or templates that use that template.
+> 
+> If you add new activities to a template, the new activities are pushed to guides and templates based on that template, and the new activities display at the top.
+
+## Import activities from another template
+
+You can import activities from one or more templates into a guide or template.
+
+1. Select the guide or template you want to edit.
+
+2. Select the **Activities** tab.
+
+3. Select the **Import** tab in the section on the right.
+
+   [![Import activities](./media/onboard-edit-guide-import-activities.png)](./media/onboard-edit-guide-import-activities.png)
+
+4. To preview the tasks in a new tab in your browser, select the **Open in new tab** button on any template.
+
+   [![Import activities](./media/onboard-edit-guide-preview-activities.png)](./media/onboard-edit-guide-preview-activities.png)
+
+5. Drag and drop the desired template to the place in your guide template where you want the activities to appear. Continue editing your guide or template.
+
+The imported activities will contain a **Lock** button, which indicates those activities are managed by the template you imported from. When you make changes to the template you imported, those activities will update in the template you imported them to. However, the changes will not be pushed automatically to any guides created from the template you imported to.
+
+## Push changes from a template to other templates or guides
+
+If you edit a template that contains activities that are used in other templates or guides, you must push the changes if you want them to appear in the other templates or guides.
+
+If you're not sure whether your template's activities are used in other templates or guides, select the **Used in** tab to view where those activities appear.
+
+   [![View guides and templates activities are used in](./media/onboard-edit-guide-view-used-in.png)](./media/onboard-edit-guide-view-used-in.png)
+
+To push your changes:
+
+1. Save your changes by selecting the **Save** button. If you don't do this, you'll be prompted to save your changes in the next step.
+
+2. Select **Push these changes**.
+
+   
 ## Add or edit an introduction
 
 1. On the **Introduction** tab, enter a title for your guide and an opening message. To use the sample text, select **Use this message**.
