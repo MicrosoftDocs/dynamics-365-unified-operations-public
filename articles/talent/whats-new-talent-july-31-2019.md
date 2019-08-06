@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (July 31, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -47,9 +47,9 @@ Changes described in this section apply to build number 8.1.2409.
 
 ### Region support for Canada and Southeast Asia
 
-We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the **New Environment** dialog box. You can then use that environment to provision Talent in Lifecycle Services (LCS) as described in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
-Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to the these new supported regions.
+Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to these new supported regions.
 
 ### New Active positions list page
 
@@ -61,7 +61,7 @@ This week's changes correct an issue where only direct reports can be registered
 
 ### FTE Analysis displaying incorrect FTE number
 
-**FTE analysis** has been corrected in the **Analytics** tab of **Personnel management**.
+**FTE analysis** has been corrected on the **Analytics** tab for **Personnel management**.
 
 ### Final comments label translation
 
