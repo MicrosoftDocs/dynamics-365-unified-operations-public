@@ -40,7 +40,9 @@ This topic guides you through the creation of a purchase agreement. This would t
 4. In the **Purchase agreement classification** field, select the drop-down menu and select the row of the desired record.
 5. Expand the **General** FastTab.
 6. In the **Expiration date** field, enter a date.
-- This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.  
+
+    - This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.  
+
 7. In the **Document title** field, type a name for your purchase agreement.
 
     - Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it’s not set to this).  
