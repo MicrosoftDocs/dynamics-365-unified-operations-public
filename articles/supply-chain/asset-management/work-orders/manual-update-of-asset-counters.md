@@ -53,7 +53,6 @@ In **All assets**, you create hours or quantity counter registrations on an asse
 - If you physically install a new counter on an asset, you need to register the change on the asset in **Asset counters**. Next, you must create two registration lines with identical timestamps, and on the line regarding the new counter, you select the **Counter reset** check box. When you create the two registration lines, the first line must be for the counter that you are replacing. In the **Totals** field, the total count number is the sum of the counter total of all registered values on that counter type.  
 - If the **Counter reset** check box is selected on an asset using a maintenance plan with a "Once from..." or "Once reached..." interval type, the counter is still active on the new counter line because you create a separate counter line and start over with a new counter.
 
-
 ![Figure 1](media/11-work-orders.png)
 
 
