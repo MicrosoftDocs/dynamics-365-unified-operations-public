@@ -88,5 +88,6 @@ If no resource is selected on the asset, the standard calendar selected in **Ass
 
 Click **Enterprise asset management** > **Inquiries** > **Maintenance downtime** to see an overview of all maintenance downtime registrations.
 
-**Note:** All calendars used in the **Enterprise Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.
+>[!NOTE]
+>All calendars used in the **Asset Management** module are set up in **Organization administration** > **Setup** > **Calendars** > **Calendars**.
 
