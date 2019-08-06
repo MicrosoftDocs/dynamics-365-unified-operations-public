@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Local agent pre- and post- deployment scripts
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+title: Local agent pre-deployment and post-deployment scripts
+description: This topic provides information about local agent pre-deployment and post-deployment scripts.
 author: faix
 manager: AnnBe
 ms.date: 08/01/2019
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,54 +28,55 @@ ms.dyn365.ops.version: Platform update 28
 
 ---
 
-# Local agent pre- and post- deployment scripts
+# Local agent pre-deployment and post-deployment scripts
 
 [!include [banner](../includes/banner.md)]
 
-Local agent 2.3.0. supports the execution of pre- and post- deployment scripts. Customers can now setup PowerShell scripts that will be executed before and after deploying the environment. This is applicable to both deployments/redeployments as well as servicing operations.
+Local agent 2.3.0 supports the execution of pre-deployment and post-deployment scripts. Therefore, customers can now set up Microsoft Windows PowerShell scripts that are run before and after the environment is deployed. This feature applies to deployments and redeployments, and also to servicing operations.
 
-To enable this feature, a **Scripts** folder needs to be created in the agent file share. To enable executing a pre-deployment script, create a **PreDeployment.ps1** file in this folder. Similarly, to enable executing a post-deployment script, create a **PostDeployment.ps1** file. Examples of the folder structure are shown below:
+To make this feature available, you must create a Scripts folder in the agent file share. To run a pre-deployment script, create a **PreDeployment.ps1** file in the Scripts folder. To run a post-deployment script, create a **PostDeployment.ps1** file. The following examples show the folder structure:
 
-- \\\fileserver\agent\scripts\PreDeployment.ps1 
-- \\\fileserver\agent\scripts\PostDeployment.ps1  
+- \\\\\\fileserver\\agent\\scripts\\PreDeployment.ps1
+- \\\\\\fileserver\\agent\\scripts\\PostDeployment.ps1
 
-If these files don't exist, the deployment will carry on as usual. Examples of the new deployment flow are shown below:
+If these files don't exist, the deployment continues as usual. The following examples show the new deployment flow.
 
-Deploy/Redeploy:
+**Deployment or redeployment:**
 
-1. Get unhealthy modules – Gets the health of existing apps to get the unhealthy ones (only in Redeploy)
-2. Cleanup setup modules – Cleaning up environment
-3. Link download artifacts – Download extract and process artifacts from LCS
-4. Execute PreDeployment.ps1 script (if exists) 
-5. Setup modules – Deploy Services
-6. Execute PostDeployment.ps1 script (if exists) 
+1. Get unhealthy modules. In this step, you get the health of existing apps to find the unhealthy ones. This step applies only to redeployment scenarios.
+2. Cleanup setup modules. In this step, you clean up the environment.
+3. Link download artifacts. In this step, you download, extract, and process artifacts from Microsoft Dynamics Lifecycle Service (LCS).
+4. Run the **PreDeployment.ps1** script (if it exists).
+5. Setup modules. In this step, you deploy services.
+6. Run the **PostDeployment.ps1** script (if it exists).
 
-Servicing:
+**Servicing:**
 
-1. Preparation Phase - Preparation of the package on LCS and download to the environment.
-2. Cleanup setup modules - Cleaning up environment
-3. Link download artifacts - Extract and process previously downloaded artifacts from LCS
-4. Execute PreDeployment.ps1 script (if exists) 
-5. Setup modules – Deploy Services
-6. Execute PostDeployment.ps1 script (if exists) 
+1. Prepare for servicing. In this step, you prepare the package in LCS and download it to the environment.
+2. Cleanup setup modules. In this step, you clean up the environment.
+3. Link download artifacts. In this step, you extract and process previously downloaded artifacts from LCS.
+4. Run the **PreDeployment.ps1** script (if it exists).
+5. Setup modules. In this step, you deploy services.
+6. Run the **PostDeployment.ps1** script (if it exists).
 
 > [!NOTE]
-> These scripts can contain anything, and it is solely the customer’s responsibility what they execute. The Local Agent will simply invoke them.
+> The pre-deployment and post-deployment scripts can contain anything. The code that the scripts run is solely the customer's responsibility. The local agent just invokes the scripts.
 
 ## Customizations
 
-The default timeout for a scripts execution is set to 30 minutes. This value can be changed by modifying the localagent-config.json file and reinstalling the Local Agent using the modified file. The following attribute defines timeout value and needs to be set as shown below (this is part of the LocalAgent component in the file):
+The default time-out for script execution is 30 minutes. To change this value, modify the localagent-config.json file, and then reinstall the local agent by using the modified file. The following attribute defines time-out value and must be set as shown here. (The code that is shown here is part of the **LocalAgent** component in the file.)
 
-```json 
-"powershellScriptRunner": { 
-    "timeoutMinutes": { 
-        "value": "30" 
-        } 
+```json
+"powershellScriptRunner": {
+    "timeoutMinutes": {
+        "value": "30"
+        }
     }
 ```
 
 ## Logging
- 
-Outputs and errors of the script will be written into the the Logs folder located in the Scripts directory as .log and .err files. In case the script times out, only an error message with a timeout message will be logged, other outputs will not be logged.
 
-Execution of the scripts will also be logged as ETW events which can be seen in the Event Viewer. In case a script produces any errors, an error event will be logged, and deployment will continue as usual. 
+The outputs and error messages from the scripts are written, as .log and .err files, into the Logs folder in the Scripts folder. If a script times out, only an error message is logged. This error message has a time-out message. No other outputs are logged in this situation.
+
+Execution of the scripts is also logged as Event Tracing for Windows (ETW) events. You can view these events in Event Viewer. If a script produces any errors, an error event is logged, but deployment continues as usual.
+
