@@ -43,8 +43,8 @@ This topic guides you through the creation of a purchase agreement. This would t
 - This expiration date will be the default for all commitment lines and will determine how long each specific commitment is valid.  
 7. In the **Document title** field, type a name for your purchase agreement.
 
-  - Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it’s not set to this).  
-  - The default commitment value determines your options on the agreement lines. If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header. There are 4 types of commitments: **Product quantity commitment** - for a specific quantity of a product; **Product value commitment** - for a specific currency amount of a product; **Product category value commitment** - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; **Value commitment** - for a specific currency amount which can be fulfilled by any product or by any procurement category.  
+    - Leave the **Default commitment** field set to **Product quantity commitment** (or change it if it’s not set to this).  
+    - The default commitment value determines your options on the agreement lines. If you need a new commitment type when you’re creating the agreement lines, you need to change the default commitment on the header. There are 4 types of commitments: **Product quantity commitment** - for a specific quantity of a product; **Product value commitment** - for a specific currency amount of a product; **Product category value commitment** - for a specific currency amount in a procurement category where the amount can be for a catalog item or a non-catalog item; **Value commitment** - for a specific currency amount which can be fulfilled by any product or by any procurement category.  
 
 8. Select **OK**.
 
