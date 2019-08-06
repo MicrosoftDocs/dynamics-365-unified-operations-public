@@ -47,15 +47,15 @@ When you work with maintenance checklists on a work order, you can fill out the 
 
 4. Complete all the maintenance checklist lines, one at a time, in the sequential order they are shown. A maintenance checklist line of type "Header" is used as a heading to group the maintenance checklist lines below. You are not required to fill out a header, but as for all maintenance checklist line types, it is possible to add a **Note** to the header.
 
-5. If instructions are related to a checklist line, the **Instructions** check box is selected. Read instructions for the selected checklist line on the **Instructions** tab.
+5. If instructions are related to a maintenance checklist line, the **Instructions** check box is selected. Read instructions for the selected maintenance checklist line on the **Line details** FastTab > **Instructions** section.
 
-6. The information required to complete a checklist line may vary, depending on the related checklist type. You complete a checklist line by filling out the fields on the **Properties** FastTab. For example, on a line of type "Text", you add a **Note** explaining what was the result of that checklist line. On a line of type "Measurement", you add the **Measured value** you read on the equipment, and you can also add a **Note**, if required.
+6. The information required to complete a maintenance checklist line may vary, depending on the related maintenance checklist type. You complete a maintenance checklist line by filling out the fields on the **Line details** FastTab. For example, on a line of type "Text", you add a **Note** explaining what was the result of that checklist line. On a line of type "Measurement", you add the **Counter value** you read on the equipment, and you can also add a **Note**, if required.
 
-- When you have completed a checklist line, select the **Checked** check box to mark the line as completed. If you want to discard a checklist line because it is not relevant for the work order line, select the **N/A** check box on the line. If a checklist line is marked **Mandatory**, you must mark it as either "Checked" or "N/A".  
-- You can only update checklist registrations if the work order is in an [Active](../setup-for-work-orders/work-order-stages.md) stage.  
-- In the left side of the view, on the work order line, the **Checks** field informs you of the number of checklist lines to be completed. Note that a checklist line of type "Header" is not included in the count because "Header" is used to divide a checklist into different sections. A header line is not a check that you need to complete.  
+- When you have completed a maintenance checklist line, select the **Checked** check box on the line to mark it as completed. If you want to discard a maintenance checklist line because it's not relevant for the work order job, select the **N/A** check box on the line. If a maintenance checklist line is marked **Mandatory**, you must mark it as either "Checked" or "N/A".  
+- You can only update maintenance checklist registrations if the work order is in an [Active](../setup-for-work-orders/work-order-stages.md) lifecycle state.  
 
-## Add a checklist line
+
+## Add a maintenance checklist line
 
 Checklists are created from the definition on the job type setup and transferred to a work order line. If required, you can add checklist lines to a work order line. Manually added checklist lines get the reference "Manual".
 
@@ -77,6 +77,6 @@ Checklists are created from the definition on the job type setup and transferred
 >[!NOTE]
 >In the **Checklists**, you cannot delete checklist lines with the reference "Job type". You can only delete checklist lines with the reference "Manual", which you or other workers have created manually.
 
-The figure below shows a screenshot of the interface.
 
-![Figure 4](media/19-work-orders.png)
+![Figure 1](media/14-work-orders.png)
+
