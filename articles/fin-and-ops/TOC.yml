@@ -224,7 +224,7 @@
       href: get-started/implement-multiple-projects-aad-tenant.md
   - name: One Version service updates 
     items:
-    - name: One Version servie updates overview
+    - name: One Version service updates overview
       href: ../dev-itpro/lifecycle-services/oneversion-overview.md
     - name: One Version service updates FAQ
       href: get-started/one-version.md
