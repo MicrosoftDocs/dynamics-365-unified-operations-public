@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Working on work orders
-description: This topic describes working on work orders in Enterprise Asset Management.
+title: Maintenance checklists
+description: This topic describes maintenance checklists in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -31,19 +31,19 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Checklists
+# Maintenance checklists
 
-Checklists are set up on job types and used when you work on a work order. Filling out checklists is part of completing a work order. See the [Job groups and job types, variants,trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section for more information on how to set up checklists on job types in the **Job type setup** detail view.
+Maintenance checklists are set up on maintenance job types and used when you work on a work order. Filling out maintenance checklists is part of completing a work order. See the [Job groups and job types, variants,trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section for more information on how to set up checklists on job types in the **Job type setup** detail view.
 
 When you work with checklists on a work order, you can fill out the predefined checklists that are related to job types. It is also possible to add additional checklists.
 
 ## Fill out a checklist
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
-2. Select the work order and click **Checklist**.
+2. Select the work order and click **Maintenance checklist**.
 
-3. In **Checklists**, you see checklists for all work order lines. If the work order lines have different job types, the checklists may be different on each work order line. Click on the work order line that you want to work with. The related checklist is shown on the **Checklist** FastTab. The properties of the selected checklist line are shown on the **Properties** FastTab.
+3. In **Work order maintenance job checklist**, you see maintenance checklists for all work order jobs. If the work order lines have different job types, the checklists may be different on each work order line. Click on the work order line that you want to work with. The related checklist is shown on the **Checklist** FastTab. The properties of the selected checklist line are shown on the **Properties** FastTab.
 
 4. Complete all the checklist lines, one at a time, in the sequential order they are shown. A checklist line of type "Header" is used as a heading to group the checklist lines below. You are not required to fill out a header, but as for all checklist line types, it is possible to add a **Note** to the header.
 
