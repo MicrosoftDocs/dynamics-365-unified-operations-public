@@ -17,7 +17,7 @@ ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19891

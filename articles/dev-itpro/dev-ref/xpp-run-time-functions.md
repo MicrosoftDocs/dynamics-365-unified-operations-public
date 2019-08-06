@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31461
 ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

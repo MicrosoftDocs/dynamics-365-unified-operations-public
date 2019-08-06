@@ -17,7 +17,7 @@ ms.search.form: CreditCardProcessors, CustTable, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 3041

@@ -15,9 +15,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer
+audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4644

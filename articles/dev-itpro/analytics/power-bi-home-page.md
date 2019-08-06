@@ -18,7 +18,7 @@ ms.search.form: PowerBIPbixDeployForm
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265694

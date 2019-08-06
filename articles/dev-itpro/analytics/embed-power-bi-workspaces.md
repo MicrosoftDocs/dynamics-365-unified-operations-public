@@ -5,7 +5,7 @@ title: Embed Power BI in workspaces
 description: Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270794
@@ -47,12 +47,19 @@ The following screenshot shows Power BI in a workspace.
 
 ![Power BI in a workspace](./media/Power-BI-in-D365-Workspace.png)
 
-### Power BI vs operational workspaces
+## Power BI vs operational workspaces
 Power BI workspaces complement operational views with analytical insights based on near real-time information. The following offers a visual comparison of a Power BI workspace and an operational workspace.
 
 The following screenshot shows an operational workspace.
 
 ![Operational workspace](./media/D365-Operational-Workspace.png)
+
+## Edit embedded reports in analytical workspaces
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3nnj4]
+
+The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
 
 ## What's next?
 Going forward, new cloud deployments will come bundled with the Power BI Embedded service. Additional documentation describing the Developer ALM process will be made available to help partners and ISVs create new solutions that take advantage of the Power BI Embedded service integration options that are available.

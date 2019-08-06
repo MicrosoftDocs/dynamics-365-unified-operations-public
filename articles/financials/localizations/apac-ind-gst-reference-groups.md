@@ -16,7 +16,7 @@ ms.technology:
 #ms.search.form:
 audience: IT Pro, Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 # ms.suite: 
 # ms.tgt_pltfrm: 
 # ms.custom: 

@@ -18,7 +18,7 @@ ms.search.form: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
