@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Local agent 2.2.0 ADFS Office 365 compatibility
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+title: Local agent 2.2.0 AD FS Office 365 compatibility
+description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
 author: faix
 manager: AnnBe
 ms.date: 08/01/2019
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,48 +28,44 @@ ms.dyn365.ops.version: Platform update 28
 
 ---
 
+# Local agent 2.2.0 AD FS Office 365 compatibility
 
-# Local agent 2.2.0 ADFS Office 365 compatibility
+[!include [banner](../includes/banner.md)]
 
-[!include banner]
-
-This topic provides information on how to use the same ADFS for Microsoft Dynamics 365 for Finance and Operation on-premises environment and Office 365.
+This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
 
 ## Existing deployments
 
-1.	Download the new local agent version from Lifecycle Services (LCS). It should be version 2.2.0 or later.  
-2.	Redownload the configuration file as it has additional configuration needed for this functionality. 
-3.	Modify the new local agent configuration file and set the **office365AdfsCompatibility** value to **True**.
-4.	Uninstall the old local agent version from your cluster using the following command:
+1. Download the new local agent version from Microsoft Dynamics Lifecycle Services (LCS). It should be version 2.2.0 or later.
+2. Download the new version of the local agent configuration file, because it has additional configuration that is required for this functionality.
+3. Modify the new local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
+4. Run the following command to uninstall the old local agent version from your cluster.
 
     ```powershell
-    .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>' 
+    .\LocalAgentCLI.exe Cleanup '<path of localagent-config.json>'
     ```
-    
-5.	Install the new local agent version using:
+
+5. Run the following command to install the new local agent version.
 
     ```powershell
-    .\LocalAgentCLI.exe Install  '<path of localagent-config.json>' 
+    .\LocalAgentCLI.exe Install '<path of localagent-config.json>'
     ```
-    
-6.	Servicing the environment with Plafrom update 28 or later will enable this new configuration. For existing environments with Plafrom update 28 or later, doing any servicing operation will enable this new configuration.
 
-7. After servicing is complete, run the following script:
+6. For existing environments that are running Platform update 28 or later, perform any servicing operation to make the new configuration available.
+7. After servicing is completed, run the following script.
 
     ```powershell
-    .\Reset-DatabaseUsers.ps1 -DatabaseServer '<FQDN of the SQL server>' -DatabaseName '<AX database name>'. 
+    .\Reset-DatabaseUsers.ps1 -DatabaseServer '<FQDN of the SQL server>' -DatabaseName '<AX database name>'.
     ```
-    
-    Otherwise, the primary administrator user won’t be able to login. 	
 
-8. Using the Service Fabric Explorer, [restart an AOS node](troubleshoot-on-prem.md#restartapplications).
+    > [!IMPORTANT]
+    > If you skip this step, the primary admin user won't be able to sign in.
 
-9.	Run a SQL query on the USERINFO table to modify the NETWORKDOMAIN field. If your old configuration was `https://ax.contoso.com/adfs`, then you should change all your users entries to `http://ax.contoso.com/adfs/services/trust`. 
+8. Use Service Fabric Explorer to [restart an Application Object Server (AOS) node](troubleshoot-on-prem.md#restartapplications).
+9. Run a SQL query on the USERINFO table to modify the **NETWORKDOMAIN** field. If your old configuration was `https://ax.contoso.com/adfs`, you should change all your users entries to `http://ax.contoso.com/adfs/services/trust`.
 
 ## New deployments
 
-1.	Run through the local agent installation instructions in the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) content. However, before installing the local agent, do step 2 below. 
-2.	Modify the local agent configuration file and set the **office365AdfsCompatibility** value to **True**.
-3.	Continue going through the [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector) guide and deploy a base version that contains Plafrom update 28 or later. If there is no base Plafrom update 28 version, deploy the highest base version available. Then service with Platform update 28 on top.
-
-
+1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
+2. Modify the local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
+3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it with Platform update 28 on top.
