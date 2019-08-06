@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a new e-Commerce site
-description: This topic covers the tasks associated with deploying a new e-Commerce site in Dynamics 365 for Commerce. 
+description: This topic explains how to deploy a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
 author: psimolin
 manager: AnnBe
 ms.date: 09/06/2019
@@ -36,28 +36,26 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/preview-banner.md)]
 
-
-## Overview of Microsoft Dynamics Lifecycle Services (LCS)
+## Overview of Microsoft Dynamics Lifecycle Services
 	
-Lifecycle Services (LCS) is a cloud-based collaborative workspace which allows partners and customers to manage their projects and environments, view latest information on Dynamics products and features, and create, track and browse support incidents. e-Commerce management features are integrated in the LCS portal.
+Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that partners and customers can use to manage their projects and environments, view the latest information about Microsoft Dynamics products and features, and create, track, and browse support incidents. e-Commerce management features are integrated into LCS.
 
-To learn more about Lifecycle Services, please see the [Lifecycle Services user guide](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
+To learn more about LCS, see the [Lifecycle Services user guide](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
 	
 ## Getting started
 
-Before you can initialize e-Commerce, you need to have a project, environment, and Retail Cloud Scale Unit (RCSU) deployed. To perform  the initialization in the LCS portal, you need to have either Project Owner or Environment Admin role permissions. The environment topologies that are supported are production and sandbox.
+Before you can initialize the e-Commerce feature, a project, environment, and Retail Cloud Scale Unit (RCSU) must be deployed. To do the initialization in LCS, you must have permissions for either the **Project Owner** role or the **Environment Admin** role. The production and sandbox environment topologies are supported.
 
-For more information on environments, please see [Environment planning](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning).
-
-For more information on RCSU, please see [Initialize retail Cloud Scale Unit](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
+For more information about environments, see [Environment planning](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). For more information about RCSU, see [Initialize retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
 ## Initialize e-Commerce
 
-This procedure walks through the initialization of the e-Commerce feature in an existing environment.
+Use this procedure to initialize the e-Commerce feature in an existing environment.
 
-Before you proceed with the initialization, please make sure you have all the required information available:
+Before you begin, make sure that you have all the required information:
 
-- AAD B2C information (optional, can be added later with service request).
+- Optional: Microsoft Azure Active Directory (Azure AD) B2C information:
+
 	- Client ID
 	- Reply URL
 	- SignUp SignIn Policy ID
@@ -65,27 +63,32 @@ Before you proceed with the initialization, please make sure you have all the re
 	- Tenant Name
 	- Edit Profile Policy ID
 	- Reset password Policy ID
-- RCSU to be used.
-- AAD security group to be used for system admins.
-- Ratings and reviews moderation security group (optional).
-- Domains to be associated with the environment.
 
-When you have collected the above information, proceed with the following steps to initialize e-Commerce.
+    > [!NOTE]
+    > This information can be added later, through a service request.
 
-1. Log in to the [LCS portal](https://lcs.dynamics.com).
-2. Navigate to the project that contains the environment on which you are planning to initialize e-Commerce.
-3. Under **Environments**, click the the environment you want to use.
-4. Under **Environment features**, click the **Retail manage** link.
-5. On the **e-Commerce** tab, you should see that the e-Commerce components are not initialized yet and the only action available is to initialize e-Commerce.
-6. Click **Initialize e-Commerce**. A pane will open on which you need to enter the information required for provisioning. 
-7. Fill in the required information and proceed to the next page.
-8. Fill in the required information on the new page and submit the form.
-9. You will be returned to the **e-Commerce** view where you can see that the initialization started.
-10. You can refresh the page or return to this view later to see the initialization status.
+- The RCSU that will be used
+- The Azure AD security group that will be used for system admins
+- Optional: The security group that will be used for moderation of ratings and reviews
+- The domains that will be associated with the environment
+
+After you've collected this information, follow these steps to initialize e-Commerce.
+
+1. Sign in to [LCS](https://lcs.dynamics.com).
+2. Go to the project that contains the environment where you want to initialize e-Commerce.
+3. In the **Environments** section, select the environment.
+4. Under **Environment features**, select the **Retail manage** link.
+5. On the **e-Commerce** tab, notice that the e-Commerce components aren't yet initialized, and that **Initialize e-Commerce** is the only action that is available.
+6. Select **Initialize e-Commerce**. A pane appears, where you must enter the information that is required for provisioning.
+7. Fill in the required information, and then go to the next page.
+8. On the next page, fill in the required information, and then submit the form.
+
+    You're returned to the **e-Commerce** tab, where you should see that initialization has been started.
+
+9. To see the initialization status, either refresh the page or return to the **e-Commerce** tab later.
 	
-When e-Commerce is initialized from the LCS portal, the system provisions several components required for e-Commerce and associates them with the environment. After provisioning is done, the **e-Commerce** tab in the **Retail management** view will be updated to reflect the provisioning. The view shows the latest customization deployments and the status of any other ongoing deployments. The view also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
+When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab in the **Retail management** view is updated to reflect the provisioning. The view shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
 
 ## Access your authoring environment
 
-You can find links to your e-Commerce site and the site management tool from the **e-Commerce** view in the **Retail management** view.
-
+You can find links to your e-Commerce site and the site management tool on the **e-Commerce** tab in the **Retail management** view.
