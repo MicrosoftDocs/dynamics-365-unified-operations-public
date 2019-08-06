@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
+
 # Maintenance checklists
 
 Maintenance checklists are set up on maintenance job types and used when you work on a work order. Filling out maintenance checklists is part of completing a work order. See the [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section for more information on how to set up maintenance checklists on maintenance job types in the **Maintenance job type defaults** form.
@@ -74,7 +75,7 @@ Maintenance checklists are created from the definition on the maintenance job ty
 5. When you are done adding maintenance checklist lines manually, fill out the lines as described in the section above.
 
 >[!NOTE]
->In the **Work order maintenance job checklist**, you cannot delete maintenance checklist lines with the reference "Job type". You can only delete maintenance checklist lines with the reference "Manual", which you or other maintenance workers have created manually.
+>In **Work order maintenance job checklist**, you can't delete maintenance checklist lines with the reference "Job type". You can only delete maintenance checklist lines with the reference "Manual", which you or other maintenance workers have created manually.
 
 
 ![Figure 1](media/14-work-orders.png)
