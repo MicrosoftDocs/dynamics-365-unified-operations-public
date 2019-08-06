@@ -111,9 +111,11 @@ line for which a load line exists, then an error message is shown.
 For this demo, you need to have demo data installed, and use demo data company USMF.
 
 ### Enable shipment auto-updates
+
 To enable shipment auto-updates, do the following.
 
-1. Go to **Warehouse management > Setup > Warehouse > Warehouses**. Select "Warehouse 24". 
+1. Go to **Warehouse management > Setup > Warehouse > Warehouses**. 
+1. Select "Warehouse 24". 
 1. Expand the **Warehouse** FastTab. Change the **Auto update shipment** parameter from **On quantity decrease** to **Always**.
 
 Once you change the policy to "Always", any
@@ -121,70 +123,82 @@ increase or decrease to the sales and transfer order line quantities
 (including adding new lines) will be reflected on shipments and loads for the
 specific warehouse.
 
-Change wave template to not automatically process, navigate to Warehouse
-management Setup Waves Wave templates. Select wave template **24 Shipping
-default**. In the **General** fast tab edit, such that **only** the **Automate
-wave creation** parameter is Yes. All others must be set to No.
+### Change wave template to not automatically process
 
-Note: *It is important that no work is automatically created and subsequently
-released as part of the wave creation process. Once work is created relative to
-the load line created for the sales order line, then the load line will no
-longer be updated automatically from a sales order line quantity change.*
+To configure the wave template so it doesn't automatically process, do the following.
 
-Create a sales order, navigate to Sales and marketing Sales orders all sales
-orders. Select customer US-003. Create a line for item number A0001, quantity
-10. Ensure that the warehouse is 24. Reserve the quantity and release to
-warehouse. A shipment and a wave will be created. Due to the wave template
-change, no load and no work are created. The status of the shipment is open, and
-the status of the wave is created.
+1. Go to **Warehouse management > Setup > Waves > Wave templates**. Select the wave template "24 Shipping default". 
+1. In the **General** FastTab, set the **Automate wave creation** parameter to **Yes** and make sure all other parameters are set to **No**. 
 
-Decrease the quantity on the sales order line, navigate to Sales and marketing
-Sales orders all sales orders. Select the sales order that you just released to
-warehouse. Change the line quantity from 10 to 8. From the sales order line,
-navigate to action pane Warehouse Shipment details. In the Shipment details
-form, fast tab Load Lines the quantity is reflecting the change on the sales
-order line.
+It's important that there's no work that's automatically created and released as part of the wave creation process. Once work is created relative to the load line created for the sales order line, the load line will no
+longer be updated automatically from a sales order line quantity change.
 
-Increase the quantity on the sales order line, navigate to Sales and marketing
-Sales orders all sales orders. Select the sales order that you just released to
-warehouse. Change the line quantity from 8 to 12. From the sales order line,
-navigate to action pane Warehouse Shipment details. In the Shipment details
-form, fast tab Load Lines the quantity is reflecting the change on the sales
-order line.
+### Create a sales order
 
-*Note: Even though the load line quantity is increased from 8 to 12, only 8
-remain reserved unless you enable automatic reservation. As the added quantity
-to the existing shipment has not been reserved, subsequently processing the wave
-without reservation will only create work for the already reserved quantity.*
+To create a sales order, do the following.
 
-*Note: For order line quantity decrease, if the load line quantity is already
-equal to or lower than the new order line quantity, then load line quantity is
-unaffected. For order line quantity increase, the load line is increased by same
-quantity as the order line. If there is a discrepancy between order line and
-load line quantity that discrepancy will remain.*
+1. Go to **Sales and marketing > Sales orders > All sales orders**. 
+1. Select customer "US-003". 
+1. Create a line for item number "A0001".
+1. Enter a quantity of "10". (Make sure you are using warehouse "24".)
+1. Reserve the quantity, and release it to the warehouse. A shipment and a wave will be created.
 
-Add a new sales order line, navigate to Sales and marketing Sales orders all
-sales orders. Select the sales order that you just released to warehouse. Create
-a line for item number A0002, quantity 10. Ensure that the warehouse is 24. As
-the warehouse is 24, the new line will automatically be added to the existing
-shipment. From the sales order line, navigate to action pane Warehouse Shipment
-details. In the Shipment details form, fast tab Load Lines, notice the second
-load line.
+Because the wave template was modified in the steps above, no load or work will be created. The shipment status will be "Open", and the wave status will be "Created".
 
-*Note: As the new sales order line added to the existing shipment has not been
-reserved, subsequently processing the wave as-is will create work for the
-quantity for the first sales order line/ first load line only.*
+### Decrease quantity on a sales order line
 
-Process the wave, navigate to Warehouse management Outbound waves Shipment waves
-All Waves. Select the wave created previously. Navigate to ribbon Wave pane Wave
-(action) Process. Process the wave.
+To decrease the quantity on a sales order line, do the following.
 
-*Note: The wave will process and create work for the reserved quantities for the
-load lines. The shipment status will transition from Open to Waved.*
+1. Go to **Sales and marketing > Sales orders > All sales orders**. 
+1. Select the sales order that you just released to the warehouse. 
+1. Change the line quantity from "10" to "8". 
+1. From the sales order line, go to **Warehouse > Shipment details**. 
+1. On the **Shipment details** page, on the **Load lines** FastTab, the quantity reflects the change on the sales order line.
 
-As the shipment status is updated to waved, any line quantity decrease, increase
-or new line added to the sales order will not impact the existing load lines
-associated with the waved shipment.
+
+
+### Increase quantity on a sales order line
+
+To increase the quantity on a sales order line, do the following.
+
+1. Go to **Sales and marketing > Sales orders > All sales orders**.
+1. Select the sales order that you just released to the warehouse.
+1. Change the line quantity from "8" to "12". 
+1. From the sales order line, go to **Warehouse > Shipment details**. 
+1. On the **Shipment details** page, on the **Load lines** FastTab, the quantity reflects the change on the sales order line.
+
+Even though the load line quantity is increased from "8" to "12", only 8 items will remain reserved unless automatic reservation is enabled. If the wave is processed at this point, work will only be created for the reserved quantity.
+
+> [!NOTE]
+> When an order line is decreased, the load line quantity will not be affected if the load line quantity is already equal to or lower than the new order line quantity. When an order line is increased, the load line will increased by the same
+quantity as the order line. If there is a discrepancy between the order line quantity and the load line quantity, the discrepancy will remain.
+
+### Add a sales order line
+
+To add a sales order line, do the following.
+
+1. Go to **Sales and marketing > Sales orders > All sales orders".
+1. Select the sales order that you just released to the warehouse. 
+1. Create a line for item number "A0002".
+1. Enter a quantity of "10". (Make sure you are using warehouse "24".) The new line will automatically be added to the existing
+shipment. 
+1. From the sales order line, go to **Warehouse > Shipment details**.
+1. On the **Shipment details** page, on the **Load lines** FastTab, take note of the second load line.
+
+Because the new sales order line added to the existing shipment wasn't reserved, processing the wave at this point will create work only for the quantity for the first sales order line/first load line.
+
+### Process a wave
+
+To process the wave, do the following.
+
+1. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**. 
+1. Select the wave that previously created.
+1. On the ribbon, click **Wave** and then click **Process*. 
+
+The wave will process and create work for the reserved quantities for the
+load lines. The shipment status will transition from "open" to "waved".
+
+As the shipment status is updated to "waved", any changes such as line quantity decrease, increase, or new line added to the sales order won't impact the existing load lines associated with the waved shipment.
 
 *Note: Sales order line quantity updates will not be reflected on or validated
 against a load line associated with a shipment in status waved or higher.
