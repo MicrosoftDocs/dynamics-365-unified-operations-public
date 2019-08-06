@@ -1282,7 +1282,7 @@
     href: lifecycle-services/issue-search-lcs.md
   - name: Configuration manager
     items:
-    - name: Configuration in lifecycle services overview
+    - name: Configuration manager overview
       href: lifecycle-services/configuration-manager-lcs.md
     - name: Set up Configuration manager
       href: lifecycle-services/set-up-configuration-manager-lcs.md
