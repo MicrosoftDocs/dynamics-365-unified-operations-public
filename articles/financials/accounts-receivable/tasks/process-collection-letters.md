@@ -66,12 +66,12 @@ This topic shows how to create, print, and post collection letters. This task us
 8. Select **OK** to print the collection letter.
 9. Post the collection letter.
 
-    a. Select **Post**.
-    b. Enter the posting date for the collection letter.
-    c. Expand the **Records to include** section.
-    d. Select **OK**.
-    e. In the **Status** field, select **Posted**.
-    f. In the **Printed** field, select an option.
+    1. Select **Post**.
+    1. Enter the posting date for the collection letter.
+    1. Expand the **Records to include** section.
+    1. Select **OK**.
+    1. In the **Status** field, select **Posted**.
+    1. In the **Printed** field, select an option.
 
 ## Control collection letters at the customer level
 You can also set up collection letters at the customer level so that the collection letter code for each transaction is 
