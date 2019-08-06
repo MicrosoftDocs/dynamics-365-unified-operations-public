@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new module
-description: This topic describes the steps needed to create a new module in Dynamics 365 for Commerce.
+description: This topic explains how to create a new module in Microsoft Dynamics 365 for Commerce.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -30,30 +30,30 @@ ms.dyn365.ops.version:
 ---
 # Create a new module
 
-This topic covers the steps needed to create a new module. The Dynamics 365 e-Commerce SDK provides a CLI command `yarn msdyn365 add-module MODULE_NAME`, where `MODULE_NAME` is the name to provide your module.
+This topic explains how to create a new module.
 
-Below is an example for how to create a module called `productFeature`:
+The Microsoft Dynamics 365 e-Commerce software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. When you run this command, you replace **MODULE\_NAME** with the name that you want to give to the new module. The following example shows how to create a module that is named **productFeature**.
 
 ```
 yarn msdyn365 add-module productFeature
 ```
 
-Creating the module could take 20-30 seconds, as it pulls down all the dependencies. When complete, the new module can be found in the `\src\modules\` directory.
+Creation of a module might take 20 to 30 seconds, because all the dependencies must be pulled down. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 ## Preview a module
 
-To view the module rendered locally in a browser:
+To preview the new module in a local web browser, follow these steps.
 
-1. Start the app from a command prompt, navigate to your root SDK folder, and run `yarn start`.
-    Example:
+1. At a command prompt, open the app, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
 
-1. Launch the following url in a browser to see the module render in a development environment. Notice the module name in the query string parameter `type=MODULE_NAME`:
-    * https://localhost:4000/modules?type=productFeature
+2. Open the following URL in a web browser to view the module in a development environment: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
 
-![Module Preview](media/create-new-module.png)
+![Module preview](media/create-new-module.png)
 
 ## Module naming conventions
-You should camelCase module names, using whole words where possible.
+
+You should use camel case (camelCase) for module names. You should also use whole words whenever you can.
