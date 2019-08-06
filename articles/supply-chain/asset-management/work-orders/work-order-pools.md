@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order pools
-description: This topic describes how to create work order pools and add work orders to pools in Enterprise Asset Management.
+description: This topic describes how to work with work order pools in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Work order pools
 
 
-
-This topic describes how to create work order pools and add work orders to pools in Enterprise Asset Management. You can use work order pools to group work orders that have something in common. For example, you can create work order pools for
+You can use work order pools to group work orders that have something in common. For example, you can create work order pools for
 
 - work crews, for example, Maintenance Crew A, Maintenance Crew B  
 
@@ -44,15 +43,15 @@ This topic describes how to create work order pools and add work orders to pools
 
 - time schedules, for example, weeks or other periods  
 
+
 If required, one work order can be placed in many work order pools.
 
-In [Job Groups and Job Types, Variants, and Trades](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md), job types can also be grouped. Job groups relate specifically to job types used in your company (such as service, maintenance, overhaul) whereas work order pools can be used for grouping on a wider scale, as suggested in the above list.
 
 ## Create work order pool
 
 In **All work order pools** or **Active work order pools**, you can get an overview of your work order pools and create new pools.
 
-1. Click **Enterprise asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.
+1. Click **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.
 
 2. Click **New**.
 
@@ -62,7 +61,7 @@ In **All work order pools** or **Active work order pools**, you can get an overv
 
 5. Select "Yes" on the **Delete work order relations** toggle button if you want work orders to be automatically removed from the work order pool.
 
-6. In the **Delete stage** field, select the work order stage. For example, the work order stage for completing a work order could be set to automatically delete relations to work order pools.
+6. In the **Delete lifecycle state** field, select the work order lifecycle state. For example, the work order lifecycle state for completing a work order could be set to automatically delete relations to work order pools.
 
 7. You can start adding work orders to your work order pool right away. On the **Work orders** FastTab, click **Add line**.
 
@@ -74,28 +73,28 @@ In **All work order pools** or **Active work order pools**, you can get an overv
 
 11. Click the **Work orders** button to see a list of all the work orders included in the work order pool.
 
-12. Click the **Capacity load** button to open **Capacity load** to calculate and view capacity load for object calendar lines, not scheduled work orders, and scheduled work orders.
+12. Click the **Capacity load** button to open **Capacity load** to calculate and view capacity load for maintenance schedule, not-scheduled work orders, and scheduled work orders.
 
-13. Click the **Item forecast** button to open **Item forecast** to calculate and view forecasts for items (spare parts and other required items) related to object calendar lines, not scheduled work orders, and scheduled work orders.
+13. Click the **Item forecast** button to open **Item forecast** to calculate and view forecasts for items (spare parts and other required items) related to maintenance schedule, not-scheduled work orders, and scheduled work orders.
 
 14. Click the **Work order purchase requisition** button to open the **Work order purchase requisition** list to see a list of purchase requisitions related to the work orders in the work order pool.
 
 15. Click the **Work order purchase** button to open the **Work order purchase** list to see a list of purchase orders related to the work orders in the work order pool.
 
 >[!NOTE]
->When a work order pool is no longer relevant for your work planning, clear the Active** check box in the **Work order pool** list view.
+>When a work order pool is no longer relevant for your work planning, set the **Active** check box for that pool to "No" in the **Work order pool** list view.
 
 Select the **Delete work order relations** check box if you want to delete all work order lines, for example to create an empty pool that you can later use for other work orders. Remember to clear the **Delete work order relations** check box if you want to use the work order pool to create new work order relations later.
 
-The figure below shows a screenshot of the interface.
 
-![Figure 1](media/27-work-orders.png)
+![Figure 1](media/22-work-orders.png)
+
 
 ## Add work order to a work order pool
 
 As described in the section above, you can add work orders to a work order pool when you create the pool. You can also add a work order to a work order pool from one of the **All work orders** list.
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order in the list, and click **Work order pool**.
 
@@ -108,3 +107,4 @@ As described in the section above, you can add work orders to a work order pool 
 6. After you have added a work order to a work order pool, if you want to place the work order in a specific sequence in the pool: Open one of the work order pools list pages, select the pool and click **Edit**, and adjust the sort order of the work orders included in pool in the **Work order pool** form > **Work orders** FastTab > **Sort order** field.
 
 If you want to remove the selected work order from a work order pool, select "Remove" in step 3.
+
