@@ -106,7 +106,7 @@ The search is case-insensitive. The following special characters can be used to 
     + **match("ab: cd","ab cd");** returns **1**. 
     + **match("ab: cd","ab\ncd");** returns **1**. 
     + **match("ab: cd","ab\tcd");** returns **1**. 
-    + **match("ab: cd","ab  cd");** returns **0**. Only the first space is matched. 
+    + **match("ab: cd","ab&nbsp;&nbsp;cd");** returns **0**. Only the first space is matched. 
 
 + **\***: An expression that is followed by an asterisk ("\*") requires a match for zero, one, or more occurrences of the preceding expression. Examples:
 
