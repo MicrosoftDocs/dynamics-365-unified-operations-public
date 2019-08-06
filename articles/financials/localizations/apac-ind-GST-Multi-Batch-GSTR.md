@@ -56,3 +56,4 @@ First user has to enable Multi-batch process feature
 
 
 ![Enable Multi-batch process ](media/Multi-batch processing-003.png)
+ 
