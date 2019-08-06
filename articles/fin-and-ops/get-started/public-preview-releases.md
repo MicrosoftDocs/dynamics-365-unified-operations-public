@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: meeramahabala
 manager: AnnBe
-ms.date: 06/03/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,7 +60,7 @@ Customers will be able to take up to 8 service updates per year and are required
 ### Targeted release schedule (dates subject to change)
 
 > [!NOTE] 
-> Sandbox auto-update takes place 7 days prior to the production update.
+> Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
 
 | Version                   | Preview availability (PEAP) | Generally available (self update) | Auto-update schedule (via LCS update settings) | End of service    |
 |---------------------------|-----------------------------|-----------------------------------|-----------------------------------------------|-------------------|
@@ -68,13 +68,15 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.2 Platform update 26 | April 12, 2019              | May 17,2019                       | Production starting: June 1, 2019            | August 12, 2019   |
 | 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting: July 1, 2019            | September 9, 2019 |
 | 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting: August 1, 2019          | October 14, 2019  |
-| 10.0.5 Platform update 29 | August 2, 2019              | September 13, 2019                | Production starting: October 1, 2019         | December 2, 2019  |
+| 10.0.5 Platform update 29 | August 2, 2019 (Public Preview)              | September 13, 2019                | Production starting: October 1, 2019         | December 2, 2019  |
 | 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting: November 1, 2019         | January 13, 2019  
 | 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting: January 1, 2020          | March 9, 2020     |
 | 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting: February 1, 2020         | April 13, 2020    |
-| 10.0.9 Platform update 33 | Februrary 1, 2020           | March 13, 2020                    | Production starting: April 1, 2020           | TBD               |
+| 10.0.9 Platform update 33 | February 1, 2020 (Public Preview)           | March 13, 2020                    | Production starting: April 1, 2020           | TBD               |
 
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
-> 
-> For more details, see [One Version service updates FAQ](one-version.md).  
+
+Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. Once your nomination has been accepted, join the program **Finance and Operations: Preview Early Access Program (PEAP)**.
+
+Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).  

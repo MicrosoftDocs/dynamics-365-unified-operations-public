@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prepare application-specific metadata for RCS and ER
+title: Import files in XML format with optional attributes
 description: This topic provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
 author: NickSelin
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: EROperationDesigner
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Prepare application-specific metadata for RCS and ER
+# Import files in XML format with optional attributes
 
 You can design Electronic reporting (ER) formats to parse incoming electronic documents in XML format. Certain attributes of XML elements can be specified in designed ER format as optional. It will allow you to handle incoming files with and without such XML attributes properly. You can then use the content from these files to update application data.
 

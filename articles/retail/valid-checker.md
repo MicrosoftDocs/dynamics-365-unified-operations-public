@@ -54,6 +54,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Customer account** – Validates that the customer account in the retail transaction tables exists in the HQ customer master.
 - **Line count** – Validates that the number of lines, as captured on the transaction header table, matches the number of lines in the sales transaction tables.
 - **Price includes tax** – Validates that the **Price includes tax** parameter is consistent across transaction lines.
+- **Payment amount** - Validates that the payment records match the payment amount on header.
 - **Gross amount** – Validates that the gross amount on the header is the sum of the net amounts on the lines plus the tax amount.
 - **Net amount** – Validates that the net amount on the header is the sum of the net amounts on the lines.
 - **Under / Over payment** – Validates that the difference between the gross amount on the header and the payment amount doesn't exceed the maximum underpayment/overpayment configuration.
@@ -62,6 +63,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Gift card item** – Retail doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the retail transaction tables are gift card cash-out lines.
 - **Negative price** – Validates that there are no negative price transaction lines.
 - **Item & Variant** – Validates that items and variants on the transaction lines exist in the item and variant master file.
+- **Tax amount** - Validate tax records match the tax amounts on the lines. 
 
 ## Set up the consistency checker
 

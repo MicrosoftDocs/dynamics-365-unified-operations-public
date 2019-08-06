@@ -17,7 +17,7 @@ ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalA
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269404

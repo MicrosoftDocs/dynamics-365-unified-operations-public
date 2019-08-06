@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 

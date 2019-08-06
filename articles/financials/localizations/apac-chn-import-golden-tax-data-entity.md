@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261394

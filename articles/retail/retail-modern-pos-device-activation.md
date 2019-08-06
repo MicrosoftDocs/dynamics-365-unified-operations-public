@@ -17,7 +17,7 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501
