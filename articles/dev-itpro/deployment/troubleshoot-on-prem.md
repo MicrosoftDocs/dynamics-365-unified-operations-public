@@ -315,8 +315,7 @@ Press any key to exit
 
 **Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector).
 
-You can also manually add the following values to the localagent-config.json file under components.
-
+You can also manually add the following values in the **components** section of the localagent-config.json file.
 ```json
 {
     "name": "LBDTelemetry",
