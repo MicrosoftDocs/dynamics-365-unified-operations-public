@@ -196,28 +196,35 @@ To process the wave, do the following.
 1. On the ribbon, click **Wave** and then click **Process*. 
 
 The wave will process and create work for the reserved quantities for the
-load lines. The shipment status will transition from "open" to "waved".
+load lines. The shipment status will transition from "open" to "waved". As the shipment status is updated to "waved", any changes such as line quantity decrease, increase, or new line added to the sales order won't impact the existing load lines associated with the waved shipment.
 
-As the shipment status is updated to "waved", any changes such as line quantity decrease, increase, or new line added to the sales order won't impact the existing load lines associated with the waved shipment.
+Sales order line quantity updates won't be reflected on or validated against a load line associated with a shipment with the status of "waved" or higher. Changes to the load line quantity must be done directly on the load line. 
 
-*Note: Sales order line quantity updates will not be reflected on or validated
-against a load line associated with a shipment in status waved or higher.
-Changes to the load line quantity must be done directly on the load line. Update
-validation in the scenario is performed when work has been created for the load
-line and reservations made. Then a decrease in the sales order line quantity is
-validated against work line reservation.*
+Validation can be performed when work has been created for the load
+line and a reservation has been made. A decrease in the sales order line quantity can then be validated against the work line reservation.
 
-Add new order line. Create a **new** sales order, navigate to Sales and
-marketing Sales orders all sales orders. Select customer US-003. Create a line
-for item number A0001, quantity 5. Ensure that the warehouse is 24. Reserve the
-quantity and release to warehouse. A shipment and a wave will be created. Due to
-the wave template change, no load and no work are created. The status of the
-shipment is open, and the status of the wave is created. As you want to manually
-start preparing the load, navigate to Sales and marketing ribbon Warehouse Loads
-Load planning workbench (action). In the **Load planning workbench** form with
-the sales line selected, navigate to Load planning workbench ribbon **Supply and
-Demand** Add To new load. Select any load template ID and proceed adding the
-sales line to a new load.
+### Add new order line
 
-*Note: In such a scenario, it is possible to transfer the new load line to the
-existing load for consolidation in the shipment details form.*
+To add a new order line, do the following.
+1. Go to **Sales and marketing > Sales orders > All sales orders".
+1. Click **New**. 
+1. Select customer "US-003". 
+1. Create a line for item number "A0001".
+1. Enter a quantity of "5". (Make sure you are using warehouse "24".)
+1. Reserve the quantity and release to warehouse. A shipment and a wave will be created. 
+
+Because of the change to the wave template made in the steps above, no load and no work will be created. The shipment status will be "open", and the wave status will be "created".
+
+### Manually prepare a load 
+
+To manually prepare the load, do the following.
+
+1. Go to **Warehouse management > Loads > Load planning workbench**. 
+1. On the **Load planning workbench** page, click **Sales lines** and then select the sales line you are preparing. 
+1. With the sales line selected, click **Supply and demand** on the ribbon.
+1. Under **Add**, click **To new load**. 
+1. In the **Load template ID** field, select any ID, and then add the sales line.
+1. Click **Ok**.
+
+> [!NOTE]
+> In this scenario, you can transfer the new load line to the existing load for consolidation on the **Shipment details** page.
