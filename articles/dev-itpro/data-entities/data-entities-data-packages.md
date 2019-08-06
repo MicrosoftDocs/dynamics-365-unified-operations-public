@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data management
+title: Data management overview
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data management
+# Data management overview
 
 [!include [banner](../includes/banner.md)]
 

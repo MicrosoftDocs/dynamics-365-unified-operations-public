@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budgeting in the public sector
+title: Budgeting in the public sector overview
 description: This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Budgeting in the public sector
+# Budgeting in the public sector overview
 
 [!include [banner](../includes/banner.md)]
 

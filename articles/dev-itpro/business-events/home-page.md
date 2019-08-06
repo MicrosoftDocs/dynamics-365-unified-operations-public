@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Business events
+title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business events
+# Business events overview
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]

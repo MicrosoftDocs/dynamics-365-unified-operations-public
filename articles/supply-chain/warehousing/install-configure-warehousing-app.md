@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install and configure Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing
+title: Install and configure the warehousing app overview
 description: This topic describes how to install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/12/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Install and configure Microsoft Dynamics 365 for Finance and Operations &#8211; Warehousing
+# Install and configure the warehousing app overview
 
 [!include [banner](../includes/banner.md)]
 
