@@ -15,10 +15,6 @@ Refer to the below screenshot for more details:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-site-appsettings.png)
 
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
-
-
 
 
 ## Product details - buy box configuration  
