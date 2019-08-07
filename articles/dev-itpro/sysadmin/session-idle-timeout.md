@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set the session idle timeout
-description: This topic describes how to et the session idle timeout.
+description: This topic describes how to set the session idle timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,17 +38,17 @@ The session idle timeout setting represents the amount of time a user can be ina
 
 You can set the values from 5 minutes to 60 minutes.
 
-This function is exposed to the UI and has a default value of 30 minutes. You can set the value up to 60 minutes, but doing so might cause extra load on the system.
+This function has a default value of 30 minutes. You can set the value up to 60 minutes, however doing so might cause extra load on the system.
 
 > [!IMPORTANT]
 > If you previously set a session idle timeout in the web.config (**WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session idle timeout in the web config.
 
-To change the value from the UI, follow these steps:
+To change the value, follow these steps:
 
-1. From the Finance and Operations Dashboard, click on the **System Administration** workspace.
-2. Click on **System Settings**. This opens the **System parameters** form.
-3. In the **Session management** section, set the **Session idle timout in minutes** to the desired value.
-4. Click **Save**. 
+1. From the Finance and Operations dashboard, select the **System Administration** workspace.
+2. Select **System Settings**. This opens the **System parameters** page.
+3. In the **Session management** section, set **Session idle timeout in minutes**.
+4. Select **Save**. 
 
-    If you set the value greater than 30, you will be prompted to confirm your selection. The confirmation prompt is "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value is, the higher the load will be, and the load can affect system performance negatively. Click **Yes** to save the changes, or **No** to revert to the existing value.
+    If you set the value to greater than 30, you will be prompted to confirm your selection. The confirmation prompt says "Increasing the idle session timeout can cause extra load on your system, which can lead to a decrease in performance. Are you sure you want to continue?" The higher the value, the higher the load will be, which can affect negatively system performance. Select **Yes** to save the changes, or **No** to revert to the existing value.
 
