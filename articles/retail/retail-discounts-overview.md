@@ -164,6 +164,9 @@ When you select a variant on a discount line, the discount will be applied to ju
 
 Starting with the Dynamics 365 for Retail 8.1.1 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the merchandizing manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
 
+> [!NOTE]
+> The capability to set up promotions based on dimensions is NOT supported for Price adjustments. The columns to specify the dimensions are removed starting 10.0.4 release .
+
 ## Best practices
 
 - Before you create discounts, document your discounting strategy and procedure. Keep your documentation up to date as your use of the product evolves.
