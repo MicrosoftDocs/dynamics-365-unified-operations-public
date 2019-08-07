@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: andreabichsel
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,20 +29,24 @@ ms.search.validFrom: 2019-08-06
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (August 6, 2019)"
+# What's new or changed in Dynamics 365 for Talent (August 6, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
+
 Changes described in this section apply to build number 8.1.2412.
+
 This release includes minor bug fixes for Dynamics 365 Talent: Core HR.
 
 ## In Preview
