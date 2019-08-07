@@ -5,7 +5,7 @@ title: Set the session idle timeout
 description: This topic describes how to set the session idle timeout.
 author: hasaid
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
