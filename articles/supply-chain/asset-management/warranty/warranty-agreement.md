@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warranty agreement
-description: This topic explains the warranty agreement in Enterprise Asset Management.
+description: This topic explains warranty agreements in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -32,35 +32,32 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warranty agreement
 
-This topic explains the warranty agreement in Enterprise Asset Management. In **Enterprise Asset Management**, you can set up warranty terms that can be connected to an object or an object type. Warranty terms are created for a specific period. Warranty can be set up to provide full coverage or partial coverage, and you can set up terms to relate to hours, expenses, and items. Furthermore, you can also define specific items that are not covered by the warranty.
+In **Asset Management**, you can set up warranty terms that can be connected to an asset or an asset type. Warranty terms are created for a specific period. Warranty can be set up to provide full coverage or partial coverage, and you can set up terms to relate to hours, expenses, and items.
 
-First step is to set up the vendor warranty agreements that you may have on your equipment, which is described in this section. Next, you attach warranty agreements to objects or object types, which is described in the following section. Vendor warranty agreements are only used for information purposes. If vendor warranty is set up on the object, you can see the warranty coverage period on the object.
+First step is to create the vendor warranty agreements that you may have on your equipment. Next, you attach warranty agreements to assets or asset types. Vendor warranty agreements are only used for information purposes. If vendor warranty is set up on the asset, you can see the warranty coverage period on the asset.
 
 ## Create warranty agreement
 
-A warranty agreement may include several agreement lines covering warranty for work hours, expenses, items, as well as a list of items that may not be included in the warranty.
+A warranty agreement may include several agreement lines covering warranty for work hours, expenses, and items.
 
-1. Click **Enterprise asset management** > **Setup** > **Objects** > **Warranty**.
+1. Click **Asset management** > **Setup** > **Assets** > **Warranty**.
 
 2. Click **New** to create a new product.
 
 3. Insert a warranty ID in the **Warranty** field and a description in the **Name** field.
 
-4. Select warranty type in the **Vendor** field.
+4. In the **Assets** field, you see the number of active assets that use the warranty agreement.
 
-5. In the **Objects** field, you see the number of active objects that use the warranty agreement.
+5. On the **Hour warranty** and **Item warranty** FastTabs, you add the lines to be included in the agreement pertaining to hours or items. Steps 6-9 explain how to fill out the lines.
 
-6. On the **Hour warranty** and **Item warranty** FastTabs, you add the lines to be included in the agreement pertaining to hours or items. Steps 7-10 explain how to fill out the lines.
+6. Click **Add line** to add a new condition to the warranty. A sequential line number is automatically inserted in the **Line** field.
 
-7. Click **Add line** to add a new condition to the warranty. A sequential line number is automatically inserted in the **Line** field.
+7. Select a period type for the warranty period in the **Period** field.
 
-8. Select a period type for the warranty period in the **Period** field.
+8. Insert an interval in the **Interval** field. This number defines how many periods the warranty should be valid for.
 
-9. Insert an interval in the **Interval** field. This number defines how many periods the warranty should be valid for.
-
-10. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
-
-11. If some items should be excluded from the warranty agreement, you can create a list of those items on the **Chargeable items** FastTab. Click **Add line**, and select the item that should not be covered by the warranty in the **Item number** field.
+9. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
 
 ![Figure 1](media/01-warranty.png)
+
