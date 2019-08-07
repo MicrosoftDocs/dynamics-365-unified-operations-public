@@ -81,5 +81,5 @@ Basic Navigation
 | ENTER | Commits any changes to the current cell and row and moves the focus to the cell directly below the current cell. If the focus is in the last row, commits any changes without moving the focus. |
 | ESC | If the control is in edit mode, cancels the edit. If the control is not in edit mode, reverts any changes that have been made to the current row.
 | BACKSPACE | Deletes the character before the insertion point when editing a cell. |
-| CTRL+ENTER | Commits any changes to the current cell without moving the focus. Also commits any changes to the current row.ss |
+| CTRL+ENTER | Commits any changes to the current cell without moving the focus. Also commits any changes to the current row. |
 |   |   |
