@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 This topic describes what enriching a category page means and how you can enrich a category page using the authoring tool in Dynamics 365 for Commerce e-Commerce.
 
-Commerce provides a default category landing page that is used when rendering category data. A default category page contains required elements such as refiners, categorized product placement, sorting options, choice summary, and pagination controls. Instead of using a default page, you can instead define a different category page for a specific category.
+Commerce provides a default category landing page that is used when rendering category data. A default category page contains required elements such as refiners, categorized product placement, sorting options, choice summary, and pagination controls. Instead of using a default page, you can instead modify the default page or define a different category page for a specific category.
 
  ![Enriched category landing page](./media/CategoryLandingPages.png)
 
