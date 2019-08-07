@@ -48,8 +48,7 @@ This topic describes how to set up information about the locations in a warehous
 3. In the **Warehouse** field, type a value.
 4. In the **Name** field, type a value.
 5. In the **Site** field, select the desired record in the lookup.
-6. Toggle the expansion of the **Location names** section.
-- The options in this section define the default format for location names. In our example, we'll include the aisle number, rack number and shelf number.  
+6. Toggle the expansion of the **Location names** section. The options in this section define the default format for location names. In our example, we'll include the aisle number, rack number and shelf number.  
 7. Set the **Include aisle** option to **Yes**.
 8. Set the **Include rack** option to **Yes**. 
 9. In the **Format** field, for the rack, type a value.
