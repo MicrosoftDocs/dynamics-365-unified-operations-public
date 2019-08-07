@@ -38,17 +38,14 @@ The demo data company used to create this procedure is USMF. This procedure is i
 ## Set up a constrained plan
 1. In the home page, select the **Master planning** workspace.
 2. Select **Master plans** in the list of links on the far right side of the workspace.
-3. In the list, find and select the desired record.
-- Example: **StaticPlan**  
+3. In the list, find and select the desired record. Example: **StaticPlan**  
 4. Select **Yes** in the **Finite capacity** field.
 5. In the **Finite capacity time fence** field, enter `30`.
 6. Expand the **Time fences in days** section.
 7. Select **Yes** in the **Capacity** field.
-8. In the **Capacity scheduling time fence (days)** field, enter a number.
-- Example: `60`  
+8. In the **Capacity scheduling time fence (days)** field, enter a number. Example: `60`  
 9. Select **Yes** in the **Calculated delays** field.
-10. In the **Calculate delays time fence (days)** field, enter a number.
-- Example: `60` 
+10. In the **Calculate delays time fence (days)** field, enter a number. Example: `60` 
 11. Expand the **Calculated delays** section.
 12. Select **Yes** in all **Add the calculated delay to the requirement date** fields.
 13. Close the page.
