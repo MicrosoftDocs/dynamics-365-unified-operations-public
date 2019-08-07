@@ -5,7 +5,7 @@ title: Local agent pre-deployment and post-deployment scripts
 description: This topic provides information about local agent pre-deployment and post-deployment scripts.
 author: faix
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
