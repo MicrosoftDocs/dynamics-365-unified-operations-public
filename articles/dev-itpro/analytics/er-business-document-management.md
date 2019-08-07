@@ -361,10 +361,10 @@ A complete list of all the reports planned for the October 2019 release can be f
 
 ## Frequently asked questions
 
-### I selected **New document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
+#### I selected **New document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
 This is a known issue with the Office 365 redirection back to Finance and Operations. This happens when you sign to Office 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back to Finance and Operations.
 
-### I understand how to edit a template by using Office 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
+#### I understand how to edit a template by using Office 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
 Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template changes in the generated business document:
 
 1. Make changes in the template by using the Office desktop application.
@@ -372,7 +372,7 @@ Yes, you can. In the first application session, select **Open in Desktop App**. 
 3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
 4. Execute this template ER format in the second application session.
 
-### I get the error ‘Value cannot be null. Parameter name: externalId’ when I select **Open in Desktop App**. How do I work around this? 
+#### I get the error ‘Value cannot be null. Parameter name: externalId’ when I select **Open in Desktop App**. How do I work around this? 
 Most likely you signed in to the current instance of Finance and Operations of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance of Finance and Operations. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain as Finance and Operations, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance of Finance and Operations using the credentials of a user with the correct Azure AD domain.
 
 ## Additional resources
