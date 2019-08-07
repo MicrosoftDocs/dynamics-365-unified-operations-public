@@ -1,1 +1,198 @@
+---
+# required metadata
 
+title: Maintenance sequences
+description: This topic explains maintenance sequences in Enterprise Asset Management.
+author: josaw1
+manager: AnnBe
+ms.date: 06/28/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 2214
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mkirknel
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Maintenance sequences
+
+This topic explains maintenance sequences in Enterprise Asset Management. A maintenance sequence defines when a pre-planned preventive maintenance job is to be carried out on an object. Maintenance sequences can be related to objects, object types, functional locations, or functional location types, but first you create the maintenance sequences to be used in your company.
+
+A maintenance sequence can have multiple maintenance sequence lines. Job type and interval are specified on the maintenance sequence line. There are two types of maintenance sequence lines:
+
+- Time  
+- Counter  
+
+Maintenance sequence lines of type "Time" are used for recurring planned maintenance based on a fixed time interval. Maintenance sequence lines of type "Counter" are used for planned maintenance or reactive maintenance based on object counter registrations. A maintenance sequence may include several maintenance sequence lines of both types.
+
+>[!NOTE]
+>If no counter values have been registered for a counter type on an object, the maintenance sequence lines are omitted.
+
+First, you create the maintenance sequences you require for your preventive maintenance jobs and select the object types, objects, functional location types, and functional locations that should be related to each maintenance sequence. Afterwards, if required, you can also add maintenance sequences to an object or a functional location, which is done in **All objects** > select object > **Preventive maintenance** FastTab, or **All functional locations** > select functional location > **Preventive maintenance** FastTab.
+
+If you add a maintenance sequence to object types or functional location types, it means that when you create new objects or functional locations with those object types or location types, the object or functional location will automatically be added to the maintenance sequence. The start date of the relation to a maintenance sequence will be the current date, which may need to be adjusted.
+
+## Set up maintenance sequences
+
+This sub section describes how to set up maintenance sequence lines and provides examples of how they can be used.
+
+1. Click **Enterprise asset management** > **Setup** > **Preventive maintenance** > **Maintenance sequences**.
+
+2. Click **New** to create a new sequence.
+
+3. Insert a maintenance sequence ID in the **Maintenance sequence** field, and a name in the **Name** field.
+
+4. In the **Plan date** field, insert the start date from which planning can be done on the maintenance sequence. Note that time-based maintenance sequence lines may have other plan dates.
+
+5. Select "Yes" in the **Active** toggle button to activate the maintenance sequence.
+
+>[!NOTE]
+>If you deactivate a maintenance sequence, no calendar posts will be created in the object calendar when you run a [schedule maintenance sequence](../preventive-and-reactive-maintenance/schedule-maintenance-sequences.md) job.
+
+6. The **Tolerance before** and **Tolerance after** fields relate to maintenance sequence lines in which the **Omit overlap** check box is selected (refer to step 17). The "Tolerance" fields are used to extend the interval in days in which, if several maintenance lines overlap, the most comprehensive / largest job is created as an object calendar line during maintenance sequence scheduling, while more frequent, overlapping jobs are omitted during maintenance sequence scheduling. Insert number of days in the **Tolerance before** field, for example "2".
+
+7. If you have inserted a value in **Tolerance before**, also insert number of days in the **Tolerance after** field, for example "2".
+
+>[!NOTE]
+>The example described in this and the previous step means that if several maintenance sequence lines overlap, and **Omit overlap** is selected for one or more lines, the period of omitting object calendar lines is extended to a total of five days (the expected start date on the object calendar line *and* two days before *and* two days after that date).
+
+8. The fields in the **Details** section show number of maintenance sequence lines
+set up on the maintenance sequence, and number of objects and functional
+locations related to the maintenance sequence.
+
+9. On the **Lines** FastTab, click **Add line** to create a new line.
+
+10. Select the relevant line type, "Time" or "Counter", and click **Create**.
+
+11. Insert a description for the line in the **Description** field. The description is later transferred to the related work orders.
+
+12. In the **Job type** field, select the job type for which the maintenance sequence line is relevant.
+
+13. In the **Variant** and **Trade** fields, select the job variant and job trade related to the job type.
+
+14. In the **End days** and **End hours** fields, you can insert expected end date in days or hours. The expected end date is inserted relative to the expected start date, which is calculated when object calendar lines are created. For example, you can insert "7" in the **End days** field to indicate that the related job should be completed within a week from the expected start date.
+
+15. In the **Interval type** field, select the type of interval to be used on the maintenance sequence line, for example, "Repeated..." or "Once...". In the [Interval types overview](## Interval types overview) table below, you will see a description of the relation between interval types and line types.
+
+16. In the **Interval** field, insert the number of times the line should be used for planning preventive maintenance jobs. Example: If you have created a line of type "Counter", and your counter is production quantity, and you insert the number "20000" in this field, new object calendar lines are created during preventive maintenance scheduling every time you are expected to produce 20,000 more items.
+
+17. The **Omit overlap** check box relates to time-based as well as counter-based line types. Select the check box to delete object calendar entries that are created on the same date. This is relevant if, for example, you have created a 1-month inspection line, a 6-month inspection line, and a 1-year inspection line. For the 1-year inspection you only want that inspection to be done, not the other two inspections, which would also fit in the time frame. In order to set up this example correctly, you set up the 1-year inspection line as the first line, the 6-month line as the second line, and the 1-month line as the third line, and you select the **Omit overlap** check box for the 1-month and 6-month lines. That way you ensure that when you reach the 1-year mark, the inspections for one month and six months are omitted, and an object calendar line is only created for the 1-year inspection line.
+
+>[!NOTE]
+>The example described in this step shows that the most comprehensive job, which contains the largest number of tasks, and which is not done so often, should always be inserted as the first line. The more frequent jobs are then inserted as separate lines in the order of frequency, placing the most frequent job at the bottom of the list.
+
+18. The **Counter** field only relates to counter-based line types. Select the counter type to be used on the line. If a counter type is not active on a related object, the maintenance sequence line is omitted.
+
+19. The **Counter time fence** field only relates to counter-based line types. Insert a number that defines how many days back counter registrations are checked when maintenance sequence scheduling is done. This means how far back are data (existing counter registrations) used as basis for calculating the trend that determines how many object calendar lines are created.
+
+>*Example:* If counter registrations are expected to be made once a month, you may insert the number '365' in this field because maintenance sequence scheduling will always be based on the last 12 months and therefore create object calendar lines based on the trend of the past year. On the other hand, if you insert the number '10' in this field, you expect counter registrations to be made more often, for example, on a daily basis. This means that when you schedule maintenance sequences, counter registrations for the last 10 days are used as the basis for the scheduling of object calendar lines.
+
+20. The **Period** field only relates to time-based line types. Select the period
+type related to the interval.
+
+21. The **Plan date** field only relates to time-based line types. If the maintenance sequence line has another planning date than the entire maintenance sequence, select a date in the **Plan date** field on the line.
+
+22. In the **Priority** field, you can select a work order priority as a further delimitation on the maintenance sequence line - to be used as a priority on work orders.
+
+23. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance sequence line when scheduling maintenance sequences.
+
+24. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in the **Enterprise asset management parameters** form is used (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Work orders** link > **Preventive work order type** field).
+
+25. Use the **From date** and **To date** fields to create a repeated time-based maintenance sequence line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **From date** field.
+
+26. Insert the end date of the period to be repeated in the **To date** field.
+
+27. In the **Repeat period** field, the current period to be repeated is shown. When the current period has passed, and you start a new year, the period shown in this field will be updated to reflect the next period in the repeat sequence.
+
+28. On the **Objects** FastTab, select the objects that should be related to the maintenance sequence.
+
+29. On the **Object types** FastTab, select the object types that should be related to the maintenance sequence.
+
+30. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance sequence. If required, you can make the setup more specific by selecting a related object type, product, and model.
+
+31. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance sequence.
+
+>[!NOTE]
+>When work orders are manually created on objects that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.
+
+## Interval types overview
+
+| Interval type and Description                                                                                                                                                                                                                                                                                                                                                                                                       | Line Type: Time                                                                                                                                                                                                                                                                                                                                                           | Line Type: Counter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Interval type: Repeated from plan date** The count starts from the plan date used, and when you schedule maintenance sequences, object calendar lines are created for when the interval is expected to be reached.                                                                                                                                                                                                                | The **Plan date** on the maintenance sequence line is used. If no plan date is selected on the line, the **Plan date** for the maintenance sequence is used. Example: If the number "3" is inserted in the **Interval** field, and "Year" is selected in the **Period** field, a new object calendar line will be created once every 3 years.                             | The **Plan date** for the maintenance sequence is used. If the counter has been replaced, the latest replacement date is used as the plan date.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Interval type: Repeated from start date** The count starts from the start date on the object relation. The date is selected in the **Object** form > **Preventive maintenance** FastTab > **Start date** field, or in the **Functional location** form > **Preventive maintenance** FastTab > **Start date** field. When you schedule maintenance sequences, an object calendar line is created when the interval is reached. | The start date of the maintenance sequence line on object or functional location is used. If that field is blank, the **Plan date** for the maintenance sequence is used.                                                                                                                                                                                                 | The start date of the maintenance sequence line on object or functional location is used. If that field is blank, the **Plan date** for the maintenance sequence is used.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Interval type: Repeated from last work order** The count starts from the actual end date and time of the latest work order that was completed on the object *and* the job type variant trade combination. That date and time is shown in the **Actual end** field in the **Work order** form.                                                                                                                                 | The actual end date and time of the work order completed on the object *and* the job type / variant / trade combination. is used. If no completed work order is found, one of the dates used in the "Repeated from start date" interval type described above is used instead.                                                                                             | The actual end date and time of the work order completed on the object *and* the job type / variant / trade combination. is used. If the end date and time was left blank on the work order, one of the dates used in the "Repeated from start date" interval type described above is used instead.                                                                                                                                                                                                                                                                                                                                                                           |
+| **Interval type: Once from plan date** See description for the "Repeated from plan date" interval type above. Only difference is that this interval type is to be used only once.                                                                                                                                                                                                                                                   | See description for "Repeated from plan date" interval type above. This interval is typically used for a one-time maintenance or service job.                                                                                                                                                                                                                             | See description for "Repeated from plan date" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1:** This interval type is only relevant if the counter is replaced every time you carry out a maintenance or service job. If, for some reason, a counter has been replaced before the end of the planned interval, a new time is calculated for the job from the time of the counter replacement. **Note 2:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from plan date" interval type above.                                             |
+| **Interval type: Once from start date** See description for the "Repeated from start date" interval type above. Only difference is that this interval type is to be used only once.                                                                                                                                                                                                                                                 | See description for "Repeated from start date" interval type above. This interval is typically used for a one-time maintenance or service job.                                                                                                                                                                                                                            | See description for "Repeated from start date" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1** above also applies to this interval type. **Note 3:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from start date" interval type above.                                                                                                                                                                                                                                                                                                |
+| **Interval type: Once from last work order** See description for the "Repeated from last work order" interval type above. Only difference is that this interval type is to be used only once.                                                                                                                                                                                                                                       | See description for "Repeated from last work order" interval type above. This interval is typically used for a one-time maintenance or service job.                                                                                                                                                                                                                       | See description for "Repeated from last work order" interval type above. This interval is typically used for a one-time maintenance or service job. **Note 1** above also applies to this interval type. **Note 4:** If the counter is replaced when completing the maintenance or service job, this interval type functions as the "Repeated from last work order" interval type above.                                                                                                                                                                                                                                                                                      |
+| **Interval type: Once reached above** This interval type only relates to counters and is used for indicating an upper limit set up on the maintenance sequence line. Object calendar entries will have the expected start date and time of the counter registration meaning that these entries will be created with an expected start date equal to or earlier than the system date.                                                | N/A                                                                                                                                                                                                                                                                                                                                                                       | The counter interval indicates an upper limit. If that limit is exceeded when you create a counter registration, an object calendar line is created when you schedule preventive maintenance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Interval type: Once reached below** This interval type only relates to counters and is used for indicating a lower limit set up on the maintenance sequence line. Object calendar entries will have the expected start date and time of the counter registration meaning that these entries will be created with an expected start date equal to or earlier than the system date.                                                 | N/A                                                                                                                                                                                                                                                                                                                                                                       | The counter interval indicates a lower limit. If that limit is passed when you create a counter registration, an object calendar line is created when you schedule preventive maintenance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Interval type: Linked from start date**                                                                                                                                                                                                                                                                                                                                                                                           | See description for "Once from start date" above. Example: You create two lines in a maintenance sequence for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. An object calendar line is created for the limit that is reached first. For this line type you create the line with the 1-year period. | See description for "Once from start date" above. Example: You create two lines in a maintenance sequence for a service job on a car: one time-based line with a 1-year period, and one counter-based line with a 25,000 km limit. An object calendar line is created for the limit that is reached first. For this line type you create the line with the 25,000 km limit. Example creating two counter lines: You can also set up a maintenance sequence with two linked, counter-based lines in which the first line has a limit of 10,000 items quantity produced, and the second line relates to the machine or work center requiring service after running 3,000 hours. |
+| (once only) A maintenance sequence can contain more lines using this interval type, and those lines are linked. Typically, you will create a maintenance sequence that contains lines of only this interval type. Object calendar lines are created by identifying the maintenance sequence line that has the first expected start date and time.                                                                                   |                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Interval type: Linked from last work order**                                                                                                                                                                                                                                                                                                                                                                                      | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the object *and* the job type / variant / trade combination.                                                                             | This interval type basically works as "Linked from start date" described above. Only difference is the date on which the interval type is based. The date used is the actual date and time on the latest work order completed on the object *and* the job type / variant / trade combination.                                                                                                                                                                                                                                                                                                                                                                                 |
+| (repeated after every completed work order) A maintenance sequence can contain more lines using this interval type, and those lines are linked. Typically, you will create a maintenance sequence that contains lines of only this interval type. Object calendar lines are created by identifying the maintenance sequence line that has the first expected start date and time.                                                   |                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+>[!NOTE]
+>When object calendar lines are created for time-based maintenance sequence lines, expected time is always at the start of the day. For counter-based maintenance sequence lines, expected time can be anytime during the day.
+
+Below you will find examples of the setup of time-based and counter-based maintenance sequence lines:
+
+**Example 1 - Time-based maintenance sequence line:** A lubrication job may be set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the Interval type field, as shown in the figure below.
+
+![Figure 2](media/02-preventive-maintenance.png)
+
+**Example 2 - Time-based maintenance sequence line:** An inspection job may be set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the Interval type field, as shown in the figure below.
+
+![Figure 3](media/03-preventive-maintenance.png)
+
+**Example 3 - Counter-based maintenance sequence line:** A graphical illustration of an hour counter for which a new object calendar line is created each time 250 hours have passed. The interval type for this counter-based line is "Repeated from start date". The start date is the start date of the related objects in the **Object** detail view > **Preventive maintenance** FastTab > **Start date** field, or in the **Functional location** form > **Preventive maintenance** FastTab > **Start date** field. This is an example of a *preventive* maintenance sequence because the object calendar line is automatically created each time the threshold (+ 250) is reached. The figure below shows a graphical example.
+
+![Figure 4](media/04-preventive-maintenance.png)
+
+**Example 4 - Counter-based maintenance sequence line:** A graphical illustration of a decrease in counter value, measuring brake pad wear. An object calendar line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance sequence because the object calendar line is not created until a measurement below 20 mm is registered. The figure below shows a graphical example.
+
+![Figure 5](media/05-preventive-maintenance.png)
+
+**Example 5 - Counter-based maintenance sequence line:** A graphical illustration of a counter with a threshold of -18° Celsius. An object calendar line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance sequence because the object calendar line is not created until a measurement higher than -18° Celsius is registered. The figure below shows a graphical example.
+
+![Figure 6](media/06-preventive-maintenance.png)
+
+- When you create a new object, and that object uses an object type related to a maintenance sequence, the maintenance sequence is automatically inserted in **All objects** > **Preventive maintenance** FastTab. Also, in the **Object types** setup, on the **Maintenance sequences** FastTab, the related maintenance sequences will automatically be inserted.  
+- If you add or remove object types or functional location types in **Maintenance sequences**, that change will only reflect on new objects created after you made the change.  
+- If you add or remove objects or functional locations in **Maintenance sequences**, that change will automatically be updated in **All objects** > **Preventive maintenance** FastTab, or in **All functional locations** > **Preventive maintenance** FastTab.  
+
+The figure below shows a screenshot of the interface.
+
+![Figure 7](media/07-preventive-maintenance.png)
+
+## Add a maintenance sequence to an object
+
+1. Click **Enterprise asset management** > **Common** > **Objects** > **All Objects** or **Active objects**.
+
+2. Select the object on which you want to set up a maintenance sequence and click **Edit**.
+
+3. On the **Preventive maintenance** FastTab, click **Add line** to add a maintenance sequence to the object.
+
+4. In the **Maintenance sequence** field, select the relevant sequence.
+
+5. In the **Start date** field, select the date from which planning of preventive maintenance jobs can be done.
+
+The figure below shows a screenshot of the interface.
+
+![Figure 8](media/08-preventive-maintenance.png)
