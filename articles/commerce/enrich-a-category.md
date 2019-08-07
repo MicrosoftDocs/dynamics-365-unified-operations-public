@@ -48,4 +48,5 @@ To enrich a category page, do the following.
 
 > [!NOTES]
 > Modules that use category specification data will use the date from your selected category. 
+
 > The settings of the template you selected will determine what modifications you can make. 
