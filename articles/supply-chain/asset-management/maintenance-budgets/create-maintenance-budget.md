@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create maintenance budget
-description: This topic explains how to create a maintenance budget in Enterprise Asset Management.
+description: This topic explains how to create a maintenance budget in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create maintenance budget
 
-This topic explains how to create a maintenance budget in Enterprise Asset Management. Maintenance budgets are used to get an overview of expected costs for preventive maintenance. Budget lines are calculated based on object calendar lines with an expected start date in the budget period.
+Maintenance budgets are used to get an overview of expected costs for preventive maintenance. Budget lines are calculated based on maintenance schedule lines with an expected start date in the budget period.
 
-Maintenance budgets are based on the cost types used in Enterprise Asset Management: Preventive, Corrective, and Investment. Investment budget costs are included for active objects that have a replacement date in the budget period, and a related replacement value. Budget costs for corrective maintenance are included if a past corrective date is included in the budget calculation. In that case, corrective costs from an earlier period will be calculated for the same future period for which you calculate the maintenance budget.
+Maintenance budgets are based on the cost types used in Asset Management: Preventive, Corrective, and Investment. Investment budget costs are included for active assets that have a replacement date in the budget period, and a related replacement value. Budget costs for corrective maintenance are included if a past corrective date is included in the budget calculation. In that case, corrective costs from an earlier period will be calculated for the same future period for which you calculate the maintenance budget.
 
 ## Create maintenance budget
 
-1. Click **Enterprise asset management** > **Inquiries** > **Maintenance budget** > **Budget**.
+1. Click **Asset management** > **Inquiries** > **Maintenance budget** > **Budget**.
 
 2. Click **Create budget**.
 
@@ -59,9 +59,9 @@ Maintenance budgets are based on the cost types used in Enterprise Asset Managem
 - When you have approved a budget, you cannot recalculate or adjust the related lines in **Maintenance budget lines**. It is possible to remove approval of a maintenance budget by clicking **Approve** > **OK**.  
 - In **Maintenance budgets**, there is a **Copy** function that allows you to copy a budget to make a new budget. This is useful if, for example, you have created a budget for one month and want to copy that budget to other months.
 
-The figure below shows a screenshot of the interface.
-
 ![Figure 1](media/01-maintenance-budgets.png)
 
+
 >[!NOTE]
->The maintenance budget only calculates budget costs based on object calendar lines. If you want to calculate actual costs for the same period, make that calculation in **Object cost control**. Refer to [Cost and date control](../controlling-and-reporting/cost-and-date-control.md) for more information.
+>The maintenance budget only calculates budget costs based on maintenance schedule lines. If you want to calculate actual costs for the same period, make that calculation in **Asset cost control**. Refer to [Cost and date control](../controlling-and-reporting/cost-and-date-control.md) for more information.
+
