@@ -43,8 +43,7 @@ This topic explains how to split a percentage of one asset book to a new asset b
 
 ## Split a fixed asset
 1. In the list, find and select the link of the fixed asset to split.
-2. Select **Books**.
-- Select the book to split to the new asset.  
+2. Select **Books**. Select the book to split to the new asset.  
 3. Select **Functions**.
 4. Select **Split fixed asset**.
 5. In the **To fixed asset** field, enter or select a value.
@@ -58,8 +57,10 @@ This topic explains how to split a percentage of one asset book to a new asset b
 1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.
 2. In the list, select the journal created with the split process.
 3. Select **Lines**.
-- Verify the journal lines created.  
-- An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.  
-- An Acquisition transaction is created for the new asset for the same amount.  
+
+    - Verify the journal lines created.  
+    - An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.  
+    - An Acquisition transaction is created for the new asset for the same amount.  
+
 4. Select **Post**.
 
