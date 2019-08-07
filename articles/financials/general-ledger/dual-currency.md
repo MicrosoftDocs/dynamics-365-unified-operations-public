@@ -80,7 +80,7 @@ The following modules use the reporting currency as a second accounting currency
 - [Accounts receivable](#accounts-payable-and-accounts-receivable)
 - [Cash and bank management](#cash-and-bank-management)
 - [Fixed assets](#fixed-assets)
-- [Consolidations](#Consolidations)
+- [Consolidations](#consolidations)
 
 ### General ledger
 
