@@ -100,7 +100,7 @@ The following table can be used as a guide when choosing the right tool for the 
 |Persona|Developer|Developer|Power user|Power user|Power user|
 |Authoring tool|Visual Studio|Visual Studio|PowerBl.com<br>PowerBl app|Excel|Management Reporter Designer|
 |Time to market|Weeks|Weeks|Hours|Hours|Hours|
-|Data sources|Entity DB, OLTP|OLTP|Entity DB<br>Azure Catalog|OLTP|OLTP|
+|Data sources|Entity DB<br>OLTP|OLTP|Entity DB<br>Azure Catalog|OLTP|OLTP|
 |Effort|Days|Days|Minutes|Hours|Hours|
 
 |VIEWER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
@@ -109,7 +109,7 @@ The following table can be used as a guide when choosing the right tool for the 
 |Data accuracy|Near real-time|Real-time|Near real-time|Real-time|Cached views|
 |Personalization|Medium-Modeled|None|High - Free form designer|Low - Expressions|Medium - Modeled|
 |Sharing|None|PDF export<br>0365 export<br>Email|Dashboards<br>Reports<br>Tiles|Excel export|Excel export|
-|Printing|Screen captures|Local printer, Network devices|Screen captures|Excel|Local printer|
+|Printing|Screen captures|Local printer<br>Network devices|Screen captures|Excel|Local printer|
 |Automation|Auto-refresh|Batch integration|Scheduled refresh|Batch jobs|None|
 |Scenarios|Monitoring|Transactions|Exploratory|Transactions|Accounting|
 
