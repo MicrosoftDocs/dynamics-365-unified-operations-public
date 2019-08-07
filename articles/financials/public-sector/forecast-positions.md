@@ -41,4 +41,4 @@ You can validate whether the dimensions for a forecast position are correct for 
 
 You can see when a forecast position was last validated on the **Forecast position validation** section on the **Budget planning** FastTab of the **Forecast position** page. The validation fields are also included on the **Forecast positions** list page.
 
-For more information, see, [Position forecasting](../budgeting/position-forecasting).
+For more information, see, [Position forecasting](../budgeting/position-forecasting.md).
