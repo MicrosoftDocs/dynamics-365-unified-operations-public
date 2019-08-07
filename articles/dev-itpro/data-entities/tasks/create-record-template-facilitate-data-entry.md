@@ -35,10 +35,8 @@ This topic demonstrates how to create a record template so that field values tha
 1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
 2. Select **New**.
 3. In the **Fixed asset group** field, enter or select a value.
-4. In the **Name** field, type a value.
-- For example, enter 'Corporate lead laptop'.  
-5. In the **Search name** field, type a value.
-- For example, enter 'laptop.'  
+4. In the **Name** field, type a value. For example, enter **Corporate lead laptop**.  
+5. In the **Search name** field, type a value. For example, enter **laptop**.  
 6. Expand the **Technical information** section.
 7. In the **Make**, **Model**, and **Model year** fields, type values.
 8. On the Action Pane, select **Options**.
