@@ -109,7 +109,14 @@ class Point
 }
 ```
 
-As a best practice, you should make the **new** method protected. Instead, if initialization isn't required, you should use a **static construct** method as the public constructor for the class. Otherwise, you should use a **static new** method.
+Following is information about how to create a clean inheritance model and minimize problems when code is upgraded:
+
+  - Each class must have a single public construction method unless the class is abstract. If no initialization is required, use a static construct method. Otherwise, use a static new… method (the default constructor (new method) for the class should be protected).
+  - Each class should have at least one [static construct method](best-practices-for-static-construct-methods.md) method.
+  - Each class should have at least one [static new… method](best-practices-for-new-and-static-new-methods.md).
+  - Each class should have a [new method](best-practices-for-new-and-static-new-methods.md) (the default constructor). This method should be **protected**.
+  - Create [accessor methods](best-practices-for-accessor-methods.md) to get and set class variables.
+  - Create [init methods](best-practices-for-init-methods.md) to carry out any specialized initialization tasks that should be carried out after instantiation.
 
 ### Create other objects in a constructor
 
