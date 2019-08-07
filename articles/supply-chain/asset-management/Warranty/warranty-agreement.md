@@ -56,7 +56,7 @@ A warranty agreement may include several agreement lines covering warranty for w
 
 8. Insert an interval in the **Interval** field. This number defines how many periods the warranty should be valid for.
 
-9. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
+9. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company....
 
 
 ![Figure 1](media/01-warranty.png)
