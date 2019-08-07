@@ -38,8 +38,7 @@ This topic describes how to use the invoice register to create invoices. Then us
 2. Select **New** to create a purchase order.
 3. In the **Vendor account** field, select a vendor for the drop-down list. For example, select vendor **1001**.
 4. Select **OK**.
-5. In the **Item number** field, select the services item number in the drop-down list. For example, select **S0001**.
-- The net amount is 75.00.  That is the amount that we will expect on the invoice.  
+5. In the **Item number** field, select the services item number in the drop-down list. For example, select **S0001**. The net amount is 75.00.  That is the amount that we will expect on the invoice.  
 6. On the action pane, select **Purchase**.
 7. Select **Confirm**.
 
@@ -71,6 +70,5 @@ This topic describes how to use the invoice register to create invoices. Then us
 11. Select the vendor that was on the purchase order. For example, select vendor **1001**.
 12. On the action pane, select **Vendor**.
 13. Select **Transactions**.
-14. Select the invoice that you created.
-- The invoice register accrual was reversed and posted to the appropriate expense account.  
+14. Select the invoice that you created. The invoice register accrual was reversed and posted to the appropriate expense account.  
 
