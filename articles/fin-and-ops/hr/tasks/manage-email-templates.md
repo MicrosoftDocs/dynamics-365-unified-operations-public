@@ -43,8 +43,7 @@ You can transfer information from your organization’s database to the bookmark
 ## Create an email template
 1. In the navigation pane, go to **Modules > Human resources > Recruitment > Communication > Application e-mail templates**.
 2. Select **New**.
-3. In the **Correspondence action** field, select **Interview**.
-- Select the correspondence action that contains the bookmarks to use for this type of email communication.  
+3. In the **Correspondence action** field, select **Interview**. Select the correspondence action that contains the bookmarks to use for this type of email communication.  
 4. In the **E-mail template** field, type a value.
 5. In the **Subject** field, type a value.
 6. In the **Text** field, type a value.
