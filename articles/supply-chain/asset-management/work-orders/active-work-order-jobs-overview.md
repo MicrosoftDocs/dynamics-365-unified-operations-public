@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Active work order jobs overview
-description: This topic explains active work order jobs overview in Asset Management.
+title: Active work order maintenance jobs overview
+description: This topic explains active work order maintenance jobs overview in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Active work order jobs overview
+# Active work order maintenance jobs overview
 
 In **Active work order maintenance jobs**, you can get an overview of work orders in relation to how many work orders have been created on specific assets, asset types, manufacturers, models, maintenance job types, and so on. If you select a work order job and click **Edit**, you open the related work order. If you select a job and click one of the buttons on the **Work order maintenance jobs** tab, you see data for the work order to which the work order job is related.
 
 Click **Asset management** > **Common** > **Work orders** > **Active work order maintenance jobs** to open the list. The list contains all active work order jobs and displays some of the information related to the work order or work order job.
 
-In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecasted hours, and number of maintenance checklists completed or not completed...
+In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecasted hours, and number of maintenance checklists completed.
 
 ![Figure 1](media/23-work-orders.png)
 
