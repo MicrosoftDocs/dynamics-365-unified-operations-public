@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Maintenance sequences
-description: This topic explains maintenance sequences in Enterprise Asset Management.
+title: Maintenance plans
+description: This topic explains maintenance plans in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Maintenance sequences
+# Maintenance plans
 
 This topic explains maintenance sequences in Enterprise Asset Management. A maintenance sequence defines when a pre-planned preventive maintenance job is to be carried out on an object. Maintenance sequences can be related to objects, object types, functional locations, or functional location types, but first you create the maintenance sequences to be used in your company.
 
