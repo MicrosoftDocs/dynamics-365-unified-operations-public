@@ -164,6 +164,17 @@ Support for creating project-based sales orders where the project contract has m
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
+## Dynamics 365 for Finance and Operations 10.0.0 with platform update 24
+
+### Renaming released products 
+|   |  |
+|------------|--------------------|
+| **Reason for depreciaton/removal** | When you use the Rename primary key function to change the ItemId of a released product, only direct foreign key references are updated. Any other references to the released product, e.g. from production orders, will retain the old ItemId and hence you may end up with inconsistent data that will eventually block business processes. |
+| **Replaced by another feature?**   | No. |
+| **Product areas affected**         | Product information management. |
+| **Deployment option**              | All  |
+| **Status**                         |Removed as of Dynamics 365 for Finance and Operations 10.0.0 with platform update 24. In exceptional cases, e.g. to recover from a previous rename of the primary key of a released product, it will be possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
+
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
