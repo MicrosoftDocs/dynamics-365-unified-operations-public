@@ -36,15 +36,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the library of classes in X++. There are two kinds of classes: *application classes* and *system classes*.
 
-- **Application classes** – These classes are implemented in X++. They are available in the **Classes** node in Application Explorer.
+- **Application classes** – These classes are implemented in X++. They are available in the **Code > Classes** node in Application Explorer.
 - **System classes** – These classes are sometimes known as *kernel classes*. They are listed under the **System Documentation > Classes** node in Application Explorer. The source code for these classes isn't available. For a list of the system classes, see [API, class, and table reference](api-reference.md).
 
 ## Typical structure of an application class
 
 The following code block types are standard for application classes:
 
-- **classDescription** declaration block: The declaration block contains class modifiers such as **public**, **private**, and **extends**. It also contains the field members for objects that are constructed from the class. When you type the keyword **this**, IntelliSense can show a list of the members.
-- **new** method: This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference. For more information, see [Inheritance](inheritance.md)
+- **class and variable declarations**: The class declaration contains modifiers such as **public**, **private**, and **extends**. 
+- **variable declarations**: These are the field members for objects that are constructed from the class. When you type the keyword **this** on a class instance variable, IntelliSense can show a list of the members.
+- **new** method: This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference. For more information, see [Inheritance](inheritance.md).
 - **finalize** method: This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the **finalize** method during garbage collection.
 
 Additional methods for a class have the following types:
