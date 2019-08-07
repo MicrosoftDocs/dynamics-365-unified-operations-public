@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Active work order lines overview
-description: This topic explains active work order lines in Enterprise Asset Management.
+title: Active work order jobs overview
+description: This topic explains active work order jobs overview in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/27/2019
@@ -30,15 +30,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Active work order lines overview
+# Active work order jobs overview
 
+In **Active work order maintenance jobs**, you can get an overview of work orders in relation to how many work orders have been created on specific assets, asset types, manufacturers, models, maintenance job types, and so on. If you select a work order job and click **Edit**, you open the related work order. If you select a job and click one of the buttons on the **Work order maintenance jobs** tab, you see data for the work order to which the work order job is related.
 
-This topic explains active work order lines in Enterprise Asset Management. In **Active work order lines**, you can get an overview of work orders in relation to how many work orders have been created on specific objects, object types, products, models, job types, and so on. If you select a work order line and click **Edit**, you open the related work order. If you select a line and click one of the buttons on the **Work order lines** tab, you see data for the work order to which the work order line is related.
+Click **Asset management** > **Common** > **Work orders** > **Active work order maintenance jobs** to open the list. The list contains all active work order jobs and displays some of the information related to the work order or work order job.
 
-Click **Enterprise asset management** > **Common** > **Active work order lines** to open the list. The list contains all active work order lines and displays some of the information related to the work order or work order line.
+In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecasted hours, and number of maintenance checklists completed.
 
-In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecast hours, and number of checklists completed.
+![Figure 1](media/23-work-orders.png)
 
-![Figure 1](media/28-work-orders.png)
-
-For a short description of the buttons in **Active work order lines**, refer to [Introduction to work orders](../work-orders/introduction-to-work-orders.md) in which identical buttons are described.
+For a short description of the buttons in **Active work order maintenance jobs**, refer to [Introduction to work orders](../work-orders/introduction-to-work-orders.md) in which identical buttons are described.
