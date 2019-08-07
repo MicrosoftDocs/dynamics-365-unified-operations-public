@@ -32,74 +32,73 @@ ms.dyn365.ops.version: 10.0.5
 
 # Business document management overview
 
-[Electronic reporting (ER) framework](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting) can be used by business users to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Such users can also define the dataflow specifying what application data will be placed to generated documents. ER framework is capable to generate outbound documents in Microsoft office formats (Excel workbook, Word document) by using predefined templates. Such templates are filled in by required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This part of an ER solution is represented by an ER format configuration that may contain templates for generation of different outbound documents. This ER capability allows business users to use this framework for managing required business documents.
+Business users use the [Electronic reporting (ER) framework](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting) to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Users can also define the dataflow to specify what application data is placed in generated documents. The ER framework generates outbound documents in Microsoft Office formats (Excel workbook, Word document) by using predefined templates. The templates are populated with required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This is represented by an ER format configuration that may contain templates you can use to generate different outbound documents. Business users can use this framework to manage required business documents.
 
-**Business document management** (BDM) is built on top of the ER framework. It enables business users to edit templates of business documents from the provided ER solutions by using either Microsoft Office 365 service or appropriate Microsoft Office desktop application including changing business documents designs and adding placeholders for additional data from within Dynamics 365 for Finance and Operations without source code changes and new deployments. No knowledge of the ER framework is required from such business users to update templates of business documents.
+**Business document management** (BDM) is built on top of the ER framework and enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business documents designs and adding placeholders for additional data from within Dynamics 365 for Finance and Operations without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
 
 ## Configure ER parameters
 
-As BDM is built on top of the ER framework, you must configure necessary ER parameters to start working with BDM. Set up the ER parameters as described in the [Configure the ER framework](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters) page. Add a new configuration provider as described in the  [Create configuration providers and mark them as active](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11) page.
+Because BDM is built on top of the ER framework, you must configure the ER parameters to start working with BDM. Set up the ER parameters as described in the topic, [Configure the ER framework](electronic-reporting-er-configure-parameters.md). Add a new configuration provider as described in the topic, [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) page.
 
 ![ER workspace](./media/BDM-Overview-ERSetting.png)
 
 ## Import ER solutions
 
-You must import to the current instance of the Dynamics 365 for Finance and Operations some ER configurations containing templates of business documents. Download and locally store the following files to complete this procedure:
+You must import ER configurations that contain business documents templates to the current instance of Finance and Operations. Download and locally store the following files to complete this procedure:
 
-**Sample ER customer invoicing solution:**
+**Sample ER customer invoicing solution**
 
 | **File**                                  | **Content**                                |
 |-------------------------------------------|--------------------------------------------|
 | Customer invoicing model.version.2.xml    | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Customer FTI report (GER).version.2.3.xml | [Free text invoice ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
-**Sample ER payment cheques solution:**
+**Sample ER payment checks solution**
 
 | **File**                                  | **Content**                                |
 |-------------------------------------------|--------------------------------------------|
 | Model for cheques.version.10.xml          | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Cheques printing format.version.10.9.xml  | [Payment cheque ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
-**Sample ER foreign trade solution:**
+**Sample ER foreign trade solution**
 
 | **File**                                  | **Content**                                |
 |-------------------------------------------|--------------------------------------------|
 | Intrastat model.version.1.xml             | [ER data model configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Intrastat report.version.1.9.xml          | [Intrastat control report ER format configuration](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
-Use the following procedure for each mentioned above XML file to perform this import. Import ER data model configuration of each mentioned above ER solution before importing the corresponding ER format configuration.
+Use the following procedure to import each file. Import the ER *data model* configuration of each ER solution in the tables above before you import the corresponding ER *format* configuration.
 
-1. Open the **Organization administration \> Electronic reporting \> Configurations** page.
-2. On the top-most ribbon, select the **Exchange** option.
-3. Select the **Load from XML file** option.
+1. Open the **Organization administration** \> **Electronic reporting** \> **Configurations** page.
+2. On the top of the page, select **Exchange**.
+3. Select **Load from XML file**.
 4. Select **Browse** to load the required XML file.
 5. Select **OK** to confirm configuration’s import.
 
 ![ER configurations page](./media/BDM-Overview-ERSolutions.png)
 
-Find more details about the import ER configurations in the [Manage the ER configuration lifecycle](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle) page.
+For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md) page.
 
-## Initiate BDM
+## Enable BDM
 
-To initiate the BDM usage, you need to open the **Feature management** workspace and enable the **Business document management** feature.
+To start BDM, you need to open the **Feature management** workspace and enable the **Business document management** feature.
 Use the following procedure to enable the BDM functionality for all legal entities.
 
-1.	Open the **Feature management** workspace page.
-2.	Activate the **New** tab.
-3.	Select the **Business document management** feature in the list.
-4.	Select the **Enable now** option to turn on the selected feature.
-5.	Refresh the application page in using browser to access new feature related UI elements.
+1. Open the **Feature management** workspace page.
+2. On the **New** tab, select the **Business document management** feature in the list.
+3. Select **Enable now** to turn on the selected feature.
+4. Refresh the page to access the new feature.
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
-Find more details about the activation of new features in the [Feature management overview](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview) page.
+For more information about acticating new features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview) page.
 
 ## Configure BDM parameters
 
-This topic explains how to set up the basic parameters for BDM. It also describes the steps that you must complete before you can set up BDM.
+Use the information in the following sections to set up the basic parameters for BDM.
 
-### Prerequisites for BDM parameters setup
-Before you can set up BDM, you must set up the required document type in the Document management (DM) framework. This document type is used in BDM to specify a temporary storage of documents in Office formats (Excel, Word) that are used as templates for ER reports. Storing in this temporary storage templates can be edited by using the Office desktop applications.
+### Prerequisites for BDM parameter setup
+Before you can set up BDM, you must set up the required document type in the Document management (DM) framework. This document type is used in BDM to specify a temporary storage of documents in Office formats (Excel and Word) that are used as templates for ER reports. Storing in this temporary storage template can be edited by using the Office desktop applications.
 
 For this document type, the following attribute values must be selected:
 
@@ -109,249 +108,238 @@ For this document type, the following attribute values must be selected:
 | Group               | File                  |
 | Location            | SharePoint            |
 
-Review the [Configure document management](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-document-management) page to set up the required DM parameters and document type.
+Review the topic, [Configure document management](../../fin-and-ops/organization-administration/configure-document-management) to set up the required DM parameters and document type.
 
 ![Setting of Document management document type](./media/BDM-Overview-DMSetting.png)
 
 ### Set up BDM parameters
 
-Basic parameters of BDM can be set up in the **Business document parameters** page. Note that the only following users can access it:
+Basic parameters of BDM can be set up on the **Business document parameters** page. Only specific users can access the page. This includes:
 
-- Users playing the **System administrator** role.
-- Users playing any other role that is configured to perform the **Maintain Business document management parameters** (AOT name **ERBDMaintainParameters**) duty.
+- Users who are assigned to the **System administrator** role.
+- Users who are assigned to any role that is configured to perform the duty, **Maintain Business document management parameters** (AOT name **ERBDMaintainParameters**).
 
 Use the following procedure to set up the basic parameters of BDM for all legal entities.
 
-1.	Login to the current instance of the Dynamics 365 for Finance and Operations as a user having access to the **Business document parameters** page.
-2.	Open the **Organization administration \> Electronic reporting \> Business document management \> Business document parameters** page.
-3.	On the **Business document parameters** page, on the **Attachments** tab, for the **SharePoint document type** parameter define the document type that should be used to temporary store templates in Microsoft Office formats while they are edited by using the Office desktop applications. Note that the only configured as using SharePoint location document types are available for this parameter.
+1. Log in to Finance and Operations as a user with access to the **Business document parameters** page.
+2. Go to **Organization administration** \> **Electronic reporting** \> **Business document management** \> **Business document parameters**.
+3.	On the **Business document parameters** page, on the **Attachments** tab, in the **SharePoint document type** field, define the document type that should be used to temporarily store templates in Office formats while they are edited by using the Office desktop applications. 
+> [!NOTE]
+> Only document types that are configured using SharePoint location are available for this parameter.
 
 ![Setting of BDM parameters](./media/BDM-Overview-BDMSetting.png)
 
-Pay attention to the fact that the selected document type is company specific. It will be used when user is working with the BDM in the company for which the selected document type is configured. When user is working with the BDM in any other company, selected in this parameter document type will be used as well if the document type with same name has not been configured for this company. When such document type has been configured for this company, it will be used instead of the one selected in the **SharePoint document type** parameter.
+The selected document type is company-specific and will be used when the user is working with the BDM in the company for which the selected document type is configured. When the user is working with the BDM in another company, the same selected the document type will be used if one has not been configured for this company. When a document type has been configured, it will be used instead of the one selected in the **SharePoint document type** parameter field.
 
 ## Configure BDM access permissions
 
-By default when the usage of access permissions for BDM is disabled, every user that has access to the BDM workspace will see in this workspace all templates of the ER solutions that are available in the current instance of the Dynamics 365 for Finance and Operations. Note that the BDM workspace will show only templates that reside in ER format configurations that are marked by any **Business document type** tag.
+By default, when access to the BDM permissions is not enabled, every user with access to the BDM workspace will see all of the ER solution templates that are available in Finance and Operations. The BDM workspace will show only those templates that reside in ER format configurations and that are marked by a **Business document type** tag.
 
 ![ER configurations page](./media/BDM-Overview-ERFormatTags.png)
 
-The list of offered for a single user in the BDM workspace templates can be restricted by configuring BDM access permissions. It is rather important when different templates are used to produce business documents for different business domains (functional areas), and you want to allow accessing different templates for editing in the BDM workspace for users playing different roles.
+The list of templates available in the BDM workspace can be restricted by configuring BDM access permissions. This may be important when different templates are used to produce business documents for different business domains (functional areas), and you want to allow specific users access to different templates for editing in the BDM workspace.
 
-BDM access permissions can be set up in the **Configurator of access permissions** page. Note that the only following users can access it:
+BDM access permissions can be set up in the **Configurator of access permissions** page. Only the following users can access the page:
 
-- Users playing the **System administrator** role.
-- Users playing any other role that is configured to perform the **Configure permissions to access Business document templates for editing** (AOT name **ERBDTemplatesSecurity**) duty.
+- Users assigned to the **System administrator** role.
+- Users assigned to any other role that is configured to perform the duty, **Configure permissions to access Business document templates for editing** (AOT name **ERBDTemplatesSecurity**).
 
-Use the following procedure to set up access permissions of BDM for all legal entities.
+Use the following procedure to set up the access permissions of BDM for all legal entities.
 
-- Login to the current instance of the Dynamics 365 for Finance and Operations as a user having access to the **Configurator of access permissions** page.
-- Open the **Organization administration \> Electronic reporting \> Business document management \> Manage access permissions** to edit templates page.
+1. Log in to Finance and Operations as a user with access to the **Configurator of access permissions** page.
+2. Navigate to **Organization administration** \> **Electronic reporting** \> **Business document management** \> **Manage access permissions**.
 
-Pay attention to the notification informing you that currently the usage of access permissions for BDM is disabled.
+Pay attention to the notification informing you that currently the usage of access permissions for BDM is not enabled.
 
 ![Configurator of BDM access permissions page](./media/BDM-Overview-TemplatesAccess1.png)
 
-It means that, with this setting, every user playing any security role that is configured to perform the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty is able to open the BDM workspace accessing for editing every template that is available in the current instance of the Dynamics 365 for Finance and Operations.
+With this setting, every user assigned to any security role that is configured to perform the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty is able to open the BDM workspace and can edit any template that is available in Finance and Operations.
 
-The presented below picture shows what the BDM workspace will offer for **ALICE** persona playing the **Accounts receivable clerk** role – with the current BDM access permissions setting she is able to edit templates of business document from different functional areas (**Invoicing**, **Foreign trade** and **Payments**).
+The following graphic shows what is available in the BDM workspace for users assigned to the **Accounts receivable clerk** role. With the current BDM access permissions setting, the user can edit business document templates from different functional areas including invoicing, foreign trade, and payments.
 
 ![BDM workspace page](./media/BDM-Overview-TemplatesForAlice1.png)
 
-- On the **Configurator of access permissions** page, select the **Access permissions setting**.
-- On the **Settings of access permissions to edit templates** dialog, turn on the **Apply configured access permissions** option.
-- Select **OK** to confirm that the usage of BDM access permissions has been turned on.
-
-Note that now you are informed about the necessity of setting access permissions. Lack of access permissions now means that none of templates will be shown in the BDM workspace for any user.
+3. On the **Configurator of access permissions** page, select the **Access permissions setting**.
+4. On the **Settings of access permissions to edit templates** dialog, enable the **Apply configured access permissions** option.
+5. Select **OK** to confirm that BDM access permissions have been enabled.
 
 ![Configurator of BDM access permissions page](./media/BDM-Overview-TemplatesAccess2.png)
 
-- Select **Add** to enter a new business role for which permissions to access BDM templates must be configured.
-- On the **Security roles** pop-up dialog, select the **Accounts receivable clerk** role.
-- Select **OK** to confirm the role selection.
-- On the **Access permissions per tags of configurations** tab, select the **New** option.
-- Select the **Functional area** value in the **Tag type** field.
-- Select the **Invoicing** value in the **Id** field.
-- Select **Save** to store configured access permissions for the selected role.
+6. Select **Add** to enter a new business role for which permissions to access BDM templates must be configured.
+7. In the **Security roles** pop-up dialog, select the **Accounts receivable clerk** role and then select **OK** to confirm the role selection.
+8. On the **Access permissions per tags of configurations** tab, select **New**.
+9. In the **Tag type** field, select **Functional area**, and in the **ID** field, select **Invoicing**.
+10. Select **Save** to store configured access permissions for the selected role.
 
-The current setting means that for any user playing the **Accounts receivable clerk** role and performing the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty the BDM workspace will offer for editing templates from only ER format configurations having the **Invoicing** value for the **Functional area** tag.
+  The current setting means that for any user who is assigned to the **Accounts receivable clerk** role and performing the duty, **Manage Business document templates** (AOT name **ERBDManageTemplates**), ER format configuration templates that have the **Invoicing** value for the **Functional area** tag will be available to edit in the BDM workspace.
 
-- Toggle the **Related information** pane from the right-hand side of the current page.
-
-Note that the **Related information** pane shows how the configured access permissions will be applied – templates from what ER format configurations will be available for what users playing the currently selected **Accounts receivable clerk** role.
+11. Toggle the **Related information** pane from the right-hand side of the current page. The **Related information** pane shows how the configured access permissions will be applied, including from what ER configuration templates will be available for users that are assigned to the **Accounts receivable clerk** role.
 
 ![Configurator of BDM access permissions page](./media/BDM-Overview-TemplatesAccess3.png)
 
-- On the **Access permissions per configurations** tab, select the **Add** option.
-- On the **Select configuration** pop-up dialog, mark the **Intrastat report** ER format configuration.
-- Select **OK** to confirm the entry of the selected configurations.
-- Select **Save** to store configured access permissions for the selected role.
+12. On the **Access permissions per configurations** tab, select the **Add** option.
+13. On the **Select configuration** pop-up dialog, mark the **Intrastat report** ER format configuration.
+14. Select **OK** to confirm the entry of the selected configurations and then select **Save** to store the configured access permissions for the selected role.
 
-The current setting means that for any user playing the **Accounts receivable clerk** role and performing the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty the BDM workspace will offer for editing the following templates:
+The current setting means that for any user assigned to the **Accounts receivable clerk** role and performing the duty, **Manage Business document templates** (AOT name **ERBDManageTemplates**), the following templates will be available to edit in the BDM workspace:
 
-- Templates from ER format configurations having the **Invoicing** value for the **Functional area** tag.
-- Templates from ER format configurations mentioned in the **Access permissions per configurations** tab (templates from the **Intrastat report** format configuration of the **Statutory reporting** domain in our case).
+- Templates that have the value, **Invoicing** for the **Functional area** tag.
+- Templates from ER format configurations that are listed in the **Access permissions per configurations** tab (templates from the **Intrastat report** format configuration of the **Statutory reporting** domain in our case).
 
 ![Configurator of BDM access permissions page](./media/BDM-Overview-TemplatesAccess4.png)
 
-The presented below picture shows what the BDM workspace will offer for **ALICE** persona playing the **Accounts receivable clerk** role – with the current BDM access permissions setting she is able to edit templates of business document from the only **Invoicing** domain and the **Intrastat report** ER format configuration. Templates of business document from the **Payments** domain are not accessible for **ALICE** persona any longer.
+The following graphic shows what the BDM workspace offers to a user assigned to the **Accounts receivable clerk** role. With the current BDM access permissions setting, the user can edit business document templates from the **Invoicing** domain and the **Intrastat report** ER format configuration. Templates from the **Payments** domain are not accessible for for the **Accounts receivable clerk** role.
 
 ![BDM workspace page](./media/BDM-Overview-TemplatesForAlice2.png)
 
-Be aware that the **Access permissions per configurations** rules are stored by using the unique identification ID of an ER format configuration. It means that these rules will not be deleted while referred ER configurations are deleted. When you imported deleted configurations back to this instance of the Dynamics 365 for Finance and Operations, these rules will refer to them again. There is no need to set these rules up again after the re-importing of earlier deleted ER format configurations.
+Be aware that the **Access permissions per configurations** rules are stored by using the unique identification ID of an ER format configuration. This means that these rules will not be deleted when an ER configuration that refers to them are deleted. When you import deleted configurations back to this instance of Finance and Operations, these rules will refer to them again. There is no need to set up the rules again after the deleted configurations are imported again.
 
 ## Use BDM to edit templates
 
-Business users can access for editing templates of business documents in the BDM workspace. Note that the only following users can access this workspace:
+Business users can access business document templates for editing in the BDM workspace. Only the following users can access the BDM workspace:
 
-- Users playing the **System administrator** role.
-- Users playing any other role that is configured to perform the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty.
+- Users assigned to the role, **System administrator**.
+- Users assigned to any role that is configured to perform the duty, **Manage Business document templates** (AOT name **ERBDManageTemplates**).
 
-Use the following procedure to utilize the BDM workspace for editing the template using to generate free text invoices. Make sure that all the described above procedures have been previously completed.
+Use the following procedure to edit free text invoice templates in the BDM workspace. Before you complete this procedure, you must have completed all of the preceeding procedures in this topic.
 
-- Login to the current instance of the Dynamics 365 for Finance and Operations as a user having access to the BDM workspace.
-- Open the BDM workspace.
+1. Log in to Finance and Operations as a user with access to the BDM workspace.
+2. Open the BDM workspace.
 
 ![BDM workspace page](./media/BDM-Overview-EditingTemplate1.png)
 
-Note that the **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Note that all templates are in **Published** status with no details in the **Revision** column. It means that nobody is currently editing these templates.
+The **Template** tab contains the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
 
-### Initiate editing process for own templates
+### Initiate editing templates owned by your configuration provider
 
-- Select the **Cheques printing format** template in the list.
-- Select the **Details** tab.
+1. On the BDM workapce, select the **Cheques printing format** template in the list.
+2. Select the **Details** tab.
 
 ![BDM workspace page](./media/BDM-Overview-EditingTemplate2.png)
 
-Note that the **Edit template** option is available for the selected template. This option is always available for a template residing in an ER format configuration owned by the ER configuration provider that is currently selected as active (**Litware, Inc.** in our case). When this option is executed, the existing template from the draft version of the underlying ER format configuration will be offered for editing.
+The **Edit template** option is available for the selected template. This option is always available for a template in an ER format configuration that is owned by the active ER configuration provider (**Litware, Inc.** in our case). When **Edit template** is selected, the existing template from the draft version of the underlying ER format configuration will be available to edit.
 
-### Initiate editing process for templates owned by other providers
+### Initiate editing templates owned by other providers
 
-- Select the **Customer FTI report (GER)** template in the list.
-- Select the **Details** tab.
+1. In the BDM workspace, select the **Customer FTI report (GER)** template in the list.
+2. Select the **Details** tab.
 
 ![BDM workspace page](./media/BDM-Overview-EditingTemplate3.png)
 
-Note that the **New document** option is available for the selected template. This option is always available for a template residing in an ER format configuration provided by other (**Microsoft** in our case) than the currently selected as active provider (**Litware, Inc.** in our case). When this option is executed, a new template will be offered for editing. It will be resided in a new derived ER format configuration creating automatically.
+The **New document** option is available for the selected template. This option is always available for a template in an ER format configuration provided by another provider (**Microsoft** in our case). When **New document** is selected, a new template will be available to edit. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
 ### Start editing template
 
-- Select **New document**.
-- If needed, in the Title field change the title of the editable template. Note that same text will be used to name the automatically created derived ER format configuration. Be aware that the draft version of this configuration (**Customer FTI report (GER) Copy** in this case) that will contain the edited template will be automatically marked as using to run this ER format for the current user. At the same time non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
-- If needed, in the **Name** field change the name of the 1st revision of the editable template that will be created automatically.
-- If needed, in the **Comment** field change the remark for the automatically created revision of the editable template.
+1. From the selected template, select **New document**.
+2. In the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Be aware that the draft version of this configuration (**Customer FTI report (GER) Copy** in this case) that will contain the edited template will be automatically marked as using to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+3. In the **Name** field, change the name of the 1st revision of the editable template that will be created automatically.
+4. In the **Comment** field, change the remark for the automatically created revision of the editable template.
 
 ![BDM workspace page](./media/BDM-Overview-EditingTemplate4.png)
 
-- Select **OK** to confirm the initiation of editing process.
+5. Select **OK** to confirm the start of the editing process.
 
-BDM template editor page of the Dynamics 365 for Finance and Operations is opened offering the selected template for online editing by using the Office 365.
+The **BDM template editor** page of Finance and Operations will open. The selected template will be available for online editing by using Office 365.
 
 ![BDM workspace page](./media/BDM-Overview-EditingLayout1.png)
 
-### Edit template in Office 365
+### Edit a template in Office 365
 
-- Modify the template by using the functionality of the Office 365. For example, in the presented Office online control change the font of the fields prompts in the template header: update its style from **Regular** to **Bold**. Note that these changes are automatically stored for editable template that resides the primary template’s storage (by default, the Azure blob storage) configured for the ER framework.
+Modify the template by using the functionality of the Office 365. For example, in Office online, change the font of the fields prompts in the template header from **Regular** to **Bold**. These changes are automatically stored for the editable template that is stored in the primary template’s storage (by default, the Azure blob storage) that is configured for the ER framework.
 
 ![BDM BDM template editor page](./media/BDM-Overview-EditingLayout2.png)
 
-### Edit template in Office desktop application
+### Edit a template in the Office desktop application
 
-- Select the **Open in Desktop App** option to modify the template by using the functionality of the Office desktop application – Excel in this case. Note that the editable template is copied from the permanent storage to the temporary one configured in BDM parameters as a SharePoint folder.
-- Upon request, confirm the opening of the editable template from the temporary file storage in the Office desktop Excel application.
+1. Select the **Open in Desktop App** option to modify the template by using the functionality of the Office desktop application; Excel in this case. The editable template is copied from the permanent storage to the temporary storage configured in the BDM parameters as a SharePoint folder.
+2. Confirm that you want to open the template from the temporary file storage in the Office desktop Excel application.
 
 ![BDM workspace page](./media/BDM-Overview-EditingLayout3.png)
 
-- Modify located in the temporary storage template by using the functionality of the Excel desktop application. For example, change the font of the fields prompts in the template header: update its color from **Black** to **Blue**.
+3. Modify the template. For example, change the font of the fields prompts in the template header: update its color from **Black** to **Blue**.
 
 ![BDM BDM template editor page](./media/BDM-Overview-EditingLayout4.png)
 
-- Select **Save** in the Excel desktop application to store template’s changes in the temporary storage.
+4. Select **Save** in the Excel desktop application to store the template’s changes in the temporary storage.
 
 ![BDM BDM template editor page](./media/BDM-Overview-EditingLayout5.png)
 
-- Close the Excel desktop application.
-- Select **Sync stored copy** to bring changes of the template introduced by using the Excel desktop application from the temporary to the permanent template’s storage.
+5. Close the Excel desktop application.
+6. Select **Sync stored copy** to synchronize the temporary template's storage to the permanent template’s storage.
 
-Note that the copy of the editable template in the temporary file storage is kept for the only current session of template editing. When you finish this session by closing the **BDM template editor** page, this copy will be deleted.  If you adjusted the templated in the temporary file storage, did not select **Sync stored copy** and try to close the **BDM template editor** page,  the confirmation dialog will be offered asking whether you want to store introduced changes. Select **Yes** if you want to store introduced changes of the editable template in the permanent file location.
+> [!NOTE]
+> The copy of the editable template in the temporary file storage is kept for the only current session of template editing. When you finish this session by closing the **BDM template editor** page, this copy will be deleted. If you adjusted the template in the temporary file storage, did not select **Sync stored copy**,  and then tried to close the **BDM template editor** page, the confirmation dialog will ask whether you want to store introduced changes. Select **Yes** if you want to save your changes to the template in the permanent file location.
 
 ### Validate template
 
-- Select **Check for issues** to validate the modified template against the underlying ER format configuration. Follow the recommendations (if any) to align the template with the structure of the format from the base ER format configuration.
-- Select **Show format** toggle button to open the pane presenting the current structure of the format from the base ER format configuration that must be aligned with the editable template. Select **Hide format** to toggle this pane off.
+1. On the **BDM template editor** page, select **Check for issues** to validate the modified template against the underlying ER format configuration. Follow the recommendations (if any) to align the template with the structure of the format from the base ER format configuration.
+2. Select **Show format** to view the current structure of the format from the base ER format configuration that must be aligned with the editable template. 
+3. Select **Hide format** to close the pane.
 
 ![BDM BDM template editor page](./media/BDM-Overview-EditingTemplate6.png)
 
-- Close the **BDM template editor** page.
+4. Close the **BDM template editor** page.
 
-Note that the updated template is shown in the **Template** tab. Note that the status of the edited template has been changed to **Draft** and the current revision is not empty any longer. It means that the process of this template’s editing has been started.
+The updated template is shown on the **Template** tab. Notice that the status of the edited template is now **Draft** and the current revision is no longer empty. This means that the process of this template’s editing has been started.
 
 ![BDM workspace page](./media/BDM-Overview-EditingTemplate5.png)
 
-### Test modified template using it to generate business documents
+### Test the modified template 
 
-- Change the currently logged company to **USMF**.
-- Go to **Accounts receivable \> Invoices \> All free text invoices**.
-- Select the **FTI-00000002** invoice.
-- Select **Print management**.
-- Select the **Module - accounts receivable \> Documents \> Free text invoice \> Original document** level to specify the scope of invoices for processing.
-- Select the **Customer FTI report (GER) Copy** ER format for the specified document level in the **Report format** field.
+1. In Finance and Operations, change to the company, **USMF**.
+2. Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+3. Select the **FTI-00000002** invoice, and then select **Print management**.
+4. Select the **Module - accounts receivable** \> **Documents** \> **Free text invoice** \> **Original document** level to specify the scope of invoices for processing.
+5. In the **Report format** field, select the **Customer FTI report (GER) Copy** ER format for the specified document level.
 
 ![Print management setting page](./media/BDM-Overview-TestRun1.png)
 
-- Press **Escape** to close the current page.
-- Select **Print**.
-- Select **Selected**.
-- Download the offered by browser document and open it by using the Excel desktop application.
+6. Press **Escape** to close the current page.
+7. Select **Print**, and then click **Selected**.
+8. Download the document and open it using the Excel desktop application.
 
 ![Free text invoices page](./media/BDM-Overview-TestRun2.png)
 
-Note that the modified template is used to generate the free text invoice report for the selected item. To analyze how this report is affected by changes of the template that you introduced, run this report in one application session any time right after you modified the template in another application session.
+The modified template is used to generate the free text invoice report for the selected item. To analyze how this report is affected by the changes that you introduced to the template, run this report in one application session any time right after you modified the template in another application session.
 
-### Create alternative revision of template
+### Create an alternative template revision
 
-- Open the **BDM template editor** page.
-- Select the **Customer FTI report (GER) Copy** template.
-- Select the **Revisions** tab.
-- Select **New**.
-- If needed, in the **Name** field change the name of the 2nd revision of the editable template that will be created automatically based on the currently active 1st revision.
-- If needed, in the **Comment** field change the remark for the automatically created revision of the editable template.
+1. Open the **BDM template editor** page andsSelect the **Customer FTI report (GER) Copy** template.
+2. On the **Revisions** tab, select **New**.
+3. If needed, in the **Name** field, change the name of the second revision and base it on the currently active first revision.
+4. If needed, in the **Comment** field, change the remark for the automatically created revision of the editable template.
 
 ![BDM workspace page](./media/BDM-Overview-AddRevision.png)
 
-You created a new revision of your template that has been stored in the permanent template’s storage.  Now you will continue editing the template of the 2nd revision that is currently selected as active.
+You created a new revision of your template that has been stored in the permanent template’s storage and now you can continue editing the template of the second revision that is currently selected as active.
 
-- Select the 1st revision.
-- Select **Set active**. You can select any other revision (the 1st one in this case) as active at any time you want to come back to this revision of the template.
-- Select the 2nd revision.
-- Select **Delete**.
-- Select **OK** to confirm the deletion of the selected revision. You can delete any of non-active revision when you think you don’t need it any longer.
+5. Select the first revision and then select **Set active**. You can select another revision as active if at any time you want to return to that revision of the template.
+6. Select the second revision, and then select **Delete**.
+7. Select **OK** to confirm that you want to delete the selected revision. You can delete any of the non-active revisions when they are no longer needed.
 
-### Delete modified template
+### Delete a modified template
 
-- Select the **Template** tab.
-- Select **Delete**.
-- If you select **OK** to confirm deletion, the derived **Customer FTI report (GER) Copy** ER format containing the modified template will be deleted. Select **Cancel** to explore other options.
+1. On the **BDM template editor** page, select the **Template** tab.
+2. Select **Delete**.
+3. If you select **OK** to confirm deletion, the **Customer FTI report (GER) Copy** ER format with the modified template will be deleted. Select **Cancel** to explore other options.
 
 ### Revoke changes of template
 
-When you started editing the template from an ER format that is owned by the currently marked as active provider, you will be offered by the option to revoke changes introduced for the template residing in such ER format.
+When you edit the template from an ER format that is owned by the current active provider, you will be offered the option to revoke changes introduced for the template.
 
 ![BDM workspace page](./media/BDM-Overview-RevokeChanges.png)
 
-- Select the **Template** tab.
-- Select **Undo**.
-- If you select **OK** to revoke changes introduced for the template, the modified template will be replaced by the original one removing all introduced changes of it. As soon as you revoked changes of the template, the template deletion option **Delete** will be offered. Select **Cancel** to explore other options.
+1. On the **BDM template editor** page, select the **Template** tab.
+2. Select **Undo**.
+3. If you select **OK** to revoke the changes introduced for the template, the modified template will be replaced by the original one and all changes will be removed. When you revoke changes to the template, you will be able to delete the template. Select **Cancel** to explore other options.
 
-### Publish modified template
-
-- Select the **Template** tab.
-- Select **Publish**.
-- If you select **OK** to confirm publishing, the draft version of the derived **Customer FTI report (GER) Copy** ER format containing the modified template will be marked as completed. The modified template becomes available for other users of the instance of the Dynamics 365 for Finance and Operations. Note that the completed versions of this ER format will keep the only last active revision of your template. Other revisions will be deleted. Select **Cancel** to explore other options.
+### Publish a modified template
+1. On the **BDM template editor** page, on the **Template** tab, select **Publish**.
+2. If you select **OK** to confirm publishing, the draft version of the derived **Customer FTI report (GER) Copy** ER format that contains the modified template will be marked as completed. The modified template becomes available for other users of Finance and Operations. The completed versions of this ER format will keep the only last active revision of your template. Other revisions will be deleted. Select **Cancel** to explore other options.
 
 ## Business document availability
 
-The following reports with well-designed Microsoft Excel templates are available by the beginning of the Public preview program.
+The following reports, with Excel-based templates, will available with the release of the public preview:
 
 **Account Receivable** (August 2019):
 
@@ -364,37 +352,37 @@ The following reports with well-designed Microsoft Excel templates are available
 - Purchase order
 - Purchase order packing slip
 
-More reports will be available during the Public preview program. Special notifications about additional reports readiness will be separately sent. 
+More reports will become available. Special notifications about additional reports readiness will be sent separately. 
 
-The complete list of all the reports planned for October 2019 release can be found here: [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+A complete list of all the reports planned for the October 2019 release can be found here: [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
 ## Related links
 
-[Electronic reporting overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
+[Electronic reporting overview](general-electronic-reporting.md)
 
-[Design a configuration for generating reports in OPENXML format](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11)
+[Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
 
-[Design ER configurations to generate reports in Word format](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11)
+[Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
 
-[Embed images and shapes in documents that you generate by using ER](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-embed-images-shapes)
+[Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
 
-[Configure Electronic reporting to pull data into Power BI](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi)
+[Configure Electronic reporting to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## Frequently asked questions
 
-**Q**: I selected the **New document** option. But instead of the **BDM template editor** page of the Dynamics 365 for Finance and Operations, I have been navigated to the Office 365 web page.
+**Q**: I selected **New document**, but instead of navigating to the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
 
-**A**: It is the known issue with the Office 365 redirection back to the Dynamics 365 for Finance and Operations. It happens when you log on to the office 365 the first time. To work around this issue, click the **Back** button of your browser to navigate back to the Dynamics 365 for Finance and Operations.
+**A**: This is a known issue with the Office 365 redirection back to Finance and Operations. This happens when you log on to Office 365 the first time. To work around this issue, click the **Back** button of your browser to navigate back to Finance and Operations.
 
-**Q**: It has been described how I can edit a template by using the Office 365 in 1st  application session and execute the containing this template ER format in 2nd application session every time I adjusted this template to see how my changes affects the finally generated business document. can I do the same using the Office desktop application for editing same template?
+**Q**: I understand how to edit a template by using Office 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affects the generated business document. Can I do this using the Office desktop application?
 
-**A**: Yes, you can do this. Select the **Open in Desktop App** option in 1st application session: your template will be stored in the temporary file storage and opened in the Office desktop application. Now you can perform the following steps to preview your template’s changes in the generated business document:
+**A**: Yes, you can. In the first application session, select **Open in Desktop App**. Your template will be stored in the temporary file storage and opened in the Office desktop application. Next, complete the following steps to preview your template’s changes in the generated business document:
 
--	Make changes in the template by using the Office desktop application.
--	Select **Save** in using the Office desktop application.
--	Select **Sync stored copy** in the **BDM template editor** page of 1st application session.
--	Execute the containing this template ER format in 2nd application session.
+1. Make changes in the template by using the Office desktop application.
+2. Select **Save** in the Office desktop application.
+3. On the **BDM template editor** page of the first application session, select **Sync stored copy**.
+4. Execute this template ER format in the second application session.
 
-**Q**: I selected the **Open in Desktop App** option but gets the ‘Value cannot be null. Parameter name: externalId’ error message. How this issue can be resolved to allow me using the Office desktop application for editing my templates?
+**Q**: I get the ‘Value cannot be null. Parameter name: externalId’ error message when I select **Open in Desktop App**. How do I work around this? 
 
-**A**: Most likely, you logged into the current instance of the Dynamics 365 for Finance and Operations as a user configured as user of the Azure AD domain which differs from the Azure AD domain used to deploy this Dynamics 365 for Finance and Operations instance. As the SharePoint service (that is used to store templates for making them available for editing by using the office desktop applications) belongs to the same domain as the Dynamics 365 for Finance and Operations, we have no permissions to access the SharePoint service. To resolve this issue, login to the current instance of the Dynamics 365 for Finance and Operations using credentials of a user of the proper Azure AD domain.
+**A**: Most likely, you logged into the current instance of Finance and Operations of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance of Finance and Operations. Because the SharePoint service, which is used to store templates for making them available for editing by using the office desktop applications, belongs to the same domain as Finance and Operations, we have no permissions to access the SharePoint service. To resolve this issue, log in to the current instance of Finance and Operations using the credentials of a user of the proper Azure AD domain.
