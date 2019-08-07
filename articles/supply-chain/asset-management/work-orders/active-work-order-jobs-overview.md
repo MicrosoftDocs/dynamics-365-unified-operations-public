@@ -36,7 +36,7 @@ In **Active work order maintenance jobs**, you can get an overview of work order
 
 Click **Asset management** > **Common** > **Work orders** > **Active work order maintenance jobs** to open the list. The list contains all active work order jobs and displays some of the information related to the work order or work order job.
 
-In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecasted hours, and number of maintenance checklists completed.
+In the **%** column, a number indicates completion of the work order in percent. Completion is based on two calculations: Posted hours compared to forecasted hours, and number of maintenance checklists completed or not completed...
 
 ![Figure 1](media/23-work-orders.png)
 
