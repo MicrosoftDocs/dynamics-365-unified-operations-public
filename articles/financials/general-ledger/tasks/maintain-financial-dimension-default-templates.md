@@ -38,8 +38,7 @@ This topic shows how to set up financial dimension default templates. The templa
 4. Enter the percentage for the first dimension values.
 5. Enter the financial dimension values that correspond to the percent entered.
 6. Select **Add**.
-7. Enter another percent for the next dimension values.
-- For this example, enter a percentage so you still have less than 100% allocated.  
+7. Enter another percent for the next dimension values. For this example, enter a percentage so you still have less than 100% allocated. 
 8. Enter the financial dimension values that correspond to the percent entered.
 9. Select **Add**.
 10. Enter another percent, which will make the total percent equal to 100%.
