@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150303
-ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes static class memebers in X++. In general, static methods are intended for these cases:
+This topic describes static class members in X++. In general, static methods are intended for these cases:
 
 -   The method has no reason to access the member variables that are declared in the class.
 -   The method has no reason to call any instance (non-static) methods of the class.
@@ -46,16 +45,20 @@ You declare static class members by using the **static** keyword. The **static**
 This section describes a scenario where a software key type is used to help prevent piracy. Each instance of a software key can have its own unique value. However, because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys. Therefore, the method that contains the conformance validation logic should be static. Here is an example of a method that is declared by using the **static** keyword.
 
 ```X++
-static public boolean validateSoftwareKey(str _softwareKeyString)
+public class SoftwareKey
 {
-      // Your code here.
+    static public boolean validateSoftwareKey(str _softwareKeyString)
+    {
+        // Your code here.
+        return false;
+    }
 }
 ```
 
 In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class. When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method. A pair of colons (::) is used to connect the class name to the static method name.
 
 ```X++
-    boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
+boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
 ```
 
 ### Static fields
@@ -66,7 +69,9 @@ Static fields are variables that are declared by using the **static** keyword. C
 
 A static constructors is guaranteed to run before any static or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. The static constructor has the following syntax.
 
-**static void TypeNew()** 
+```X++
+static void TypeNew()
+```
 
 You never explicitly call the static constructor. The compiler will generate code to make sure that the constructor is called exactly one time before any other method on the class. A static constructor is used to initialize any static data or perform a particular action that must be performed only one time. No parameters can be provided for the static constructor, and it must be marked as **static**. 
 
@@ -96,9 +101,7 @@ public class Singleton
 The singleton guarantees that only one instance of the class will ever be called. The following example shows how to instantiate the singleton.
 
 ```X++
-{
-    Singleton i = Singleton::Instance();
-}
+Singleton i = Singleton::Instance();
 ```
 
 ## Static methods
