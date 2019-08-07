@@ -5,7 +5,7 @@ title: Dual currency
 description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,7 +35,17 @@ ms.dyn365.ops.version: 8.1
 
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) enables the reporting currency to be repurposed and used as a second accounting currency. This functionality is referred to as *dual currency*. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
-In addition, various modules have been enhanced to track, report, and use the reporting currency in various processes. The modules that are affected include **General ledger**, **Financial reporting**, **Accounts payable**, **Accounts receivable**, **Cash and bank management**, **Fixed assets**, and **Consolidations. After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read the relevant sections of this topic carefully.
+In addition, several modules have been enhanced to track, report, and use the reporting currency in various processes. The modules that are affected include:
+
+- General ledger 
+- Financial reporting 
+- Accounts payable
+- Accounts receivable 
+- Cash and bank management 
+- Fixed assets 
+- Consolidations
+
+After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read and understand the relevant sections of this topic.
 
 ## Posting process
 
