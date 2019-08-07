@@ -59,4 +59,4 @@ The figure below shows a screenshot of the interface.
 ![Figure 1](media/02-warranty.png)
 
 >[!NOTE]
->If an object is covered by a vendor warranty, and a work order is created for that object with expected start date in the warranty period, you will see a notification regarding the warranty agreement when you create the work order. It is then possible to cancel the work order, if required.
+>If an object is covered by a vendor warranty, and a work order is created for that object with expected start date in the warranty period, you will see a notification regarding the warranty agreement when you create the work order. It is then possible to cancel the work order, if required....
