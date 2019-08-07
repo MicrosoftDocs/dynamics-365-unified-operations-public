@@ -1,1 +1,111 @@
+---
+# required metadata
 
+title: Rounds
+description: This topic explains rounds in Enterprise Asset Management.
+author: josaw1
+manager: AnnBe
+ms.date: 06/28/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 2214
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mkirknel
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Rounds
+
+This topic explains rounds in Enterprise Asset Management. In **Enterprise Asset Management**, you can create rounds for various objects, on which you need to carry out a similar task at regular intervals. For example, lubrication jobs or safety inspection jobs that need to be carried out on a number of machines within the same intervals. First step is to create a round, including objects that require the same form of maintenance job. Next, you schedule the rounds. When you have completed the rounds schedule, you can see all the job records relating to the round in the **All object calendars**, **Open object calendars**, or **Open object calendar pools** grid views.
+
+>[!NOTE]
+>Rounds can also be set up on functional locations to be completed on the objects installed on the functional location at the time of creation of the round-based work order. Refer to [Create functional locations](../functional-locations/create-functional-locations.md) for more information on the
+setup of rounds on functional locations.
+
+## Set up a round
+
+1. Click **Enterprise asset management** > **Setup** > **Preventive maintenance** > **Rounds**.
+
+2. Click **New** to create a new round.
+
+3. Insert and ID in the **Round** field, and a name for the round in the **Name** field.
+
+4. Select a start date for the round in the **Start date** field.
+
+5. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from object calendar lines that are created from this round.
+
+6. In the **Work order type** field, select the work order type to be used on work orders created from this round.
+
+7. In the **Priority** field, select the work order priority to be used on work orders created from this round.
+
+8. On the **Lines** FastTab, click **Add** to add an object to the round.
+
+9. Insert a line number in the **Line number** field to indicate the sequence of the objects in round.
+
+10. Select the object in the **Object** field.
+
+11. Select the job type for the object in the **Job type** field.
+
+12. Select the job variant and job trade related to the job type in the **Variant** and **Trade** fields.
+
+13. Select the recurrence (day, week, etc.) in the **Period type** field.
+
+14. In the **Period length** field, insert the number of recurrences for the round.
+
+15. Select a start date for the object to be included in the round in the **Start date** field. This date may differ from the start date set on the round.
+
+16. Repeat steps 8-15 to add more objects to the round.
+
+17. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the round. Several work order pools can be connected to one round.
+
+>[!NOTE]
+>The **Objects** and **Lines** fields located in the **Details** section at the top of the form show the total number of objects and lines related to the selected round.
+
+The figure below shows a screenshot of the interface.
+
+![Figure 1](media/13-preventive-maintenance.png)
+
+## Schedule rounds
+
+When you have set up a round, you run a schedule job to schedule all the jobs related to the round.
+
+1. Click **Enterprise asset management** > **Periodic** > **Preventive maintenance** > **Schedule rounds**, or **Enterprise asset management** > **Common** > **Object calendar** > **All object calendars** or **Open object calendar lines** or **Open object calendar pools** > select calendar entry in the list > **Rounds** button.
+
+2. In the **Period** field, select the period to be used for the scheduling job.
+
+3. In the **Interval** field, insert the number of periods to be included in the scheduling job. The start of the scheduling is the current date.
+
+4. Select "Yes" on the **Auto create** toggle button if a work order should automatically be created on the basis of a round.
+
+>[!NOTE]
+>If this toggle button is set to "Yes", and the **Auto create** toggle button is also set to "Yes" on maintenance sequence lines in **Maintenance sequences**, work orders are created based on the maintenance sequence lines, and object calendar lines with status "Work order created" are also created. If only one of the **Auto create** toggle buttons is set to "Yes", in this drop-down or in **Maintenance sequences**, only object calendar lines are created with status "Created". In that case, no work orders are created.
+
+5. If required, you can select specific rounds or another start date for the schedule job. Click **Filter**, and add the rounds to be included.
+
+6. Click **OK**.
+
+7. You are now able to see the rounds jobs in **Enterprise asset management** > **Common** > **Object calendar** > **All object calendars** or **Open object calendars**. If the scheduled rounds are connected to a work order pool, you can also see the calendar posts in **Open object calendar pools**. The rounds jobs in the calendar have the reference type "Rounds".
+
+The figure below shows a screenshot of the interface.
+
+![Figure 2](media/14-preventive-maintenance.png)
+
+- When work orders are manually created on objects that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.  
+- You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  
+- If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open object calendar pools**. This is done to optimize the filtering options on work order pools.
