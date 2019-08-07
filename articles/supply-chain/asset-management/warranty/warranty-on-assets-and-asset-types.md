@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Warranty on objects and object types
-description: This topic explains how to set up warranty on objects and object types in Enterprise Asset Management.
+title: Warranty on assets and asset types
+description: This topic explains how to set up warranty on assets and asset types in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,25 +30,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Warranty on objects and object types
+# Warranty on assets and asset types
 
-This topic explains how to set up warranty on objects and object types in Enterprise Asset Management.
+This topic explains how to set up warranty on assets and asset types in Asset Management.
 
-## Set up warranty on object type
+## Set up warranty on asset type
 
-1. Click **Enterprise asset management** > **Setup** > **Object** > **Types**.
+1. Click **Asset management** > **Setup** > **Asset types** > **Asset types**.
 
-2. Select the object type to which you want to attach a warranty agreement.
+2. Select the asset type to which you want to attach a vendor warranty agreement and click **Asset type defaults**.
 
 3. On the **General** FastTab, select the agreement in the **Vendor warranty** field.
 
+
 ## Set up warranty on object
 
-1. Click **Enterprise asset management** > **Common** > **Objects** > **All Objects**.
+1. Click **Asset management** > **Common** > **Assets** > **All assets**.
 
-2. Select the object and click **Edit**.
+2. Select the asset and click **Edit**.
 
-3. On the **Vendor** FastTab, select the warranty agreement in the **Vendor warranty** section.
+3. On the **Vendor** FastTab, select the warranty agreement in the **Vendor warranty** section > **Warranty** field.
 
 4. Select the start and end dates in the **Warranty start** and **Warranty end** fields.
 
