@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Enable multi batch processing for GSTR reports
@@ -37,7 +38,7 @@ In India GSTR returns are required to be filed by every legal entity and the vol
 Go to **Work spaces**\>**Feature management**
 Enable Multi-batch process feature 
 
-![Enable Multi-batch process ](media/Multi-batch processing-001.png)
+![Enable Multi-batch process ](media/Multi-batchprocessing-001.png)
 
 ## Generate GSTR report 
 
@@ -46,7 +47,7 @@ Enable Multi-batch process feature
 3. Set **‘number of days per batch’** greater than **0**.
 4. Click **ok**.
 
-![Generate GSTR Report ](media/Multi-batch processing-002.png)
+![Generate GSTR Report ](media/Multi-batchprocessing-002.png)
 
 ## Get CSV files
 
@@ -54,5 +55,5 @@ Enable Multi-batch process feature
 2. **GER export** to **GSTR CSV_**_Merged** which is generated as a **merged file**
 
 
-![Get CSV Files ](media/Multi-batch processing-003.png)
+![Get CSV Files ](media/Multi-batchprocessing-003.png)
  
