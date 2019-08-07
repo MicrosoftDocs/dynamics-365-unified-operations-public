@@ -43,7 +43,7 @@ This topic explains how to set up warranty on assets and asset types in Asset Ma
 3. On the **General** FastTab, select the agreement in the **Vendor warranty** field.
 
 
-## Set up warranty on object
+## Set up warranty on an asset
 
 1. Click **Asset management** > **Common** > **Assets** > **All assets**.
 
@@ -53,9 +53,11 @@ This topic explains how to set up warranty on assets and asset types in Asset Ma
 
 4. Select the start and end dates in the **Warranty start** and **Warranty end** fields.
 
-**Caution:** If a date is selected in the Contract / warranty **Date** field on a work order, that is the date from which the warranty or contract is valid for the work order. When you create a work order, the date of creation is automatically inserted in this field. You can change the date in this field to, for example, correspond with the start date in a warranty agreement.
+**Caution:** If a date is selected in the **Warranty start** field on a work order, that is the date from which the warranty or is valid for the work order. When you create a work order, the date of creation is automatically inserted in this field. You can change the date in this field to, for example, correspond with the start date in a warranty agreement.
 
 ![Figure 1](media/02-warranty.png)
 
+
 >[!NOTE]
->If an object is covered by a vendor warranty, and a work order is created for that object with expected start date in the warranty period, you will see a notification regarding the warranty agreement when you create the work order. It is then possible to cancel the work order, if required.
+>If an asset is covered by a vendor warranty, and a work order is created for that asset with expected start date in the warranty period, you see a notification regarding the warranty agreement when you create the work order. It is then possible to cancel the work order, if required.
+
