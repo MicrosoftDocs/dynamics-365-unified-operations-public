@@ -93,8 +93,6 @@ Information access scenarios supported in Finance and Operations applications ca
 
 The following table can be used as a guide when choosing the right tool for the reporting solution.
 
-![Report scorecard](media/report-scorecard.png)
-
 |MAKER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
 |-----|-----------|------------------|---------------------------------|--------------------|-------------------|
 |Persona|Developer|Developer|Power user|Power user|Power user|
