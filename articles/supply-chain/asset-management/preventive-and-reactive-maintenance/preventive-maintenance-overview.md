@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preventive maintenance overview
-description: This topic explains preventive maintenance in Enterprise Asset Management.
+description: This topic explains preventive maintenance in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
