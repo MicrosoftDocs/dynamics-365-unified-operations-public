@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounts receivable in the public sector
+title: Accounts receivable in the public sector overview
 description: This topic describes the Accounts receivable functionality that is available for the public sector.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: CustInvoiceJournal, CustParameters, CustTradingPartnerCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26281
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Accounts receivable in the public sector
+# Accounts receivable in the public sector overview
 
 [!include [banner](../includes/banner.md)]
 

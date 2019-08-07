@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service endpoints
+title: Service endpoints overview
 description: This topic describes the service endpoints that are available.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service endpoints
+# Service endpoints overview
 
 [!include [banner](../includes/banner.md)]
 

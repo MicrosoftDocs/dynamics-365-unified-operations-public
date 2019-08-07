@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -53,7 +53,7 @@ Approvals appear in an **Approvals** section on the dashboard. Approvers can rev
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2395.
+Changes described in this section apply to build number 8.1.2394.
 
 ### Entity support for custom fields in Common Data Service 
 

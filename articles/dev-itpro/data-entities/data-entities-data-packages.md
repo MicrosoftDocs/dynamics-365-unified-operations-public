@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data management
+title: Data management overview
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data management
+# Data management overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -186,7 +186,7 @@ If you have fields in entities that you want the system to generate data for on 
 ### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.
 
-[![Automatic number sequence.png](./media/dataentitiesdatapackages15.png-300x213.jpg)](./media/dataentitiesdatapackages15.png.jpg)
+[![Automatic number sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 It is possible to enable manual assignment of number sequences for a specific entity.
 

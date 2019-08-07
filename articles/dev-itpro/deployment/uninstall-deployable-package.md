@@ -5,7 +5,7 @@ title: Uninstall a package
 description: This topic explains how to remove a deployable package from your environment.
 author: manado
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
@@ -47,8 +47,8 @@ A model is a design-time concept that is part of a package. When a model isn't t
 
 ## Uninstall a package
 
-1. Create a file that is named **ModuleToRemove.txt**.
+1. Create a file that is named **ModulesToRemove.txt**.
 2. In the file, put the name of each module that you want to remove on a separate line. Make sure that you've completed the prerequisites for each module that you're removing.
-3. Create a valid deployable package, and put the ModuleToRemove.txt file in the **package\\AOSService\\Scripts** folder.
+3. Create a valid deployable package, and put the ModulesToRemove.txt file in the **package\\AOSService\\Scripts** folder.
 4. Install the deployable package. For more information about how to install deployable packages, see [Apply updates to a cloud deployment](apply-deployable-package-system.md).
 5. Verify that the package was uninstalled before you complete this procedure in a production environment.

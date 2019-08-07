@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Work breakdown structures
+title: Work breakdown structures overview
 description: A work breakdown structure (WBS) is a description of the work that will be done for a project. It’s a hierarchy of tasks that represents the project team’s understanding of the composition of work, and of the size, cost, and duration of each component or task.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: ProjWorkBreakdownStructure
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23861
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Work breakdown structures
+# Work breakdown structures overview
 
 [!include [banner](../includes/banner.md)]
 

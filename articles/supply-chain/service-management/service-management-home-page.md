@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service management   
+title: Service management overview
 description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Service management 
+# Service management overview
 
 [!include [banner](../includes/banner.md)]
 
