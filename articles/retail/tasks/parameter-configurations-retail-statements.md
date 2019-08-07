@@ -34,14 +34,14 @@ This topic demonstrates configurations for Retail parameters that affect how Ret
 
 1. In the navigation pane, go to **Modules > Retail and commerce > Headquarters setup  > Parameters > Retail parameters**.
 2. Select the **Posting** tab.
-- Select **Yes** if you want to post the periodic discount amounts specifically.  
-- Select **Standard** to use default accounts, or select **Periodic** if you want to define which account to use for each periodic discount.  
-  - Select **Summary** if inventory lines should get aggregated whenever possible.  
-  - Select **Yes** if Invoices and Payments should get automatically settled as part of the Statement posting process.  
-  - Select **Yes** if Safe drop transactions should get aggregated.  
-  - Select **Yes** if Bank drop transactions should get aggregated.  
-  - Select **Yes** to turn aggregation on for Statement posting.  
-  - Select **Yes** to create and process orders in parallel when statements are posted.  
-  - Enter the maximum orders to be processed in each batch job task.  
+    - Select **Yes** if you want to post the periodic discount amounts specifically.  
+    - Select **Standard** to use default accounts, or select **Periodic** if you want to define which account to use for each periodic discount.  
+      - Select **Summary** if inventory lines should get aggregated whenever possible.  
+      - Select **Yes** if Invoices and Payments should get automatically settled as part of the Statement posting process.  
+      - Select **Yes** if Safe drop transactions should get aggregated.  
+      - Select **Yes** if Bank drop transactions should get aggregated.  
+      - Select **Yes** to turn aggregation on for Statement posting.  
+      - Select **Yes** to create and process orders in parallel when statements are posted.  
+      - Enter the maximum orders to be processed in each batch job task.  
 3. Select **Save**.
 
