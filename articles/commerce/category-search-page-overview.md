@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Quick tour of default category landing page & search results
-description: 
-author: Ashish Harchwani
+title: Quick tour of default category landing page and search results
+description: This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
+author: josaw1
 manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Retail, Core, Operations
@@ -23,34 +23,36 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Ashish Harchwani
+ms.author: asharchw
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 ---
 
-# Quick tour of default category landing page & search results
+# Quick tour of default category landing page and search results
+
+This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
 
 ## Default category landing page
 
-The **category default landing** page is the page that a website visitor generally lands on upon selecting a category from the navigation hierarchy that's part of the universal header footer. It allows a website visitor to be able to browse, sort and refine the categorized products for an individual category. 
+The default category landing page is the page that a website visitor generally lands on when selecting a category from the navigation hierarchy, It's part of the universal header-footer. The category page enables browsing, and sorting and refining the categorized products. 
 
   ![Default category landing view](./media/SimpleCategoryLandingDressCategory.png)
 
-The top of the page has a Header which shows all the product categories, based on configuration by Merchandising manager in the back-office as part of channel navigation hierarchy and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
+The top of the page has a header that shows all the product categories and other pages that have been configured by the merchandising manager. Configuration is done as part of the channel navigation hierarchy configuration. On the bottom of the page is a footer with quick links to various topics that a shopper may be interested in. 
 
-These are the following components that are considered to be essential for category browse experience - 
+The following components are essential for a category. 
 
-1. **Product placement** - these are the product tiles of the products that are categorized to this category by a Merchandising manager as part of the navigation hierarchy configuration in back-office.
-1. **Refiners & Choice summary** - these are the filters with counts that are marked to be available as an option to refine by  a Merchandising manager as part of the 'Channel categories & product attributes' metadata configuration in the back-office. 
-1. **Sorting options** - these are the options a website visitor can sort these products. By default, sorting options that shall be available are the following 
-	- Price low to high
-	- Price high to low
-	- Product name [A-Z]
-	- Product name [Z-A]
-	- Ratings low to high
-	- Ratings high to low
-1. **Pagination** - Allowing a website visitor to be able to navigate from one page results to another page of categorized product results. 
-1. **Total count** - Providing hint to a website visitor about number of products that are in total categorized to a particular category. 
+- **Product placement** tiles are for the products that have been defined in this category by the merchandising manager as part of the navigation hierarchy configuration.
+- **Refiners and choice summary** are filters with counts that can be used to refine items. They are configured by the merchandising manager as part of the configuration of the "channel categories and product attributes" metadata. 
+- **Sorting options** are used by a website visitor to sort the products. By default, the following sorting options are available.
+	- Price low to high.
+	- Price high to low.
+	- Product name [A-Z].
+	- Product name [Z-A].
+	- Ratings low to high.
+	- Ratings high to low.
+- **Pagination** makes it posible for a website visitor to navigate from one page of categorized product results to another. 
+- **Total count** provides the total number of products that are defined in a particular category. 
 
 
 ## Enriching a category landing page
