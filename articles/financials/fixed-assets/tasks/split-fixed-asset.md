@@ -36,8 +36,7 @@ This topic explains how to split a percentage of one asset book to a new asset b
 ## Create a new fixed asset
 1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
 2. Select **New**.
-3. In the **Fixed asset group** field, enter or select a value.
-- Note the fixed asset number to use in the split process later.  
+3. In the **Fixed asset group** field, enter or select a value. Note the fixed asset number to use in the split process later.  
 4. In the **Name** field, type a value.
 5. Close the form.
 
