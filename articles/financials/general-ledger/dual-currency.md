@@ -31,6 +31,7 @@ ms.dyn365.ops.version: 8.1
 # Dual currency
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) enables the reporting currency to be repurposed and used as a second accounting currency. This functionality is referred to as *dual currency*. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
@@ -195,10 +196,8 @@ In addition, major changes have been made to the depreciation process. These cha
     - If the accounting currency and the reporting currencies on the ledger are the same, the amounts will be kept in sync. If you change the **Credit** amount, the **Credit in reporting currency** amount will automatically be changed so that it matches it.
     - If any other transaction type is entered in the Fixed asset journal, the **Debit in reporting currency** and **Credit in reporting currency** amounts are never shown, either before or after posting. The accounting currency and reporting currency amounts are still available on the voucher that posts to the general ledger.
     
-    ### Consolidations
+### Consolidations
     
-[!include [banner](../includes/banner.md)]
-
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, navigate to the **Feature management** workspace and enable **Enable dual currency functionality in General ledger consolidation**.
 
 In General ledger consolidation, a new option has been added to consolidate either the accounting or reporting currency amounts from the source companies. If the accounting or reporting currency is the same as the accounting or reporting currency in the consolidation company, it will the amounts will be copied directly rather than translated.
