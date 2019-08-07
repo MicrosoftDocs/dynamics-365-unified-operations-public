@@ -359,18 +359,6 @@ More reports will become available. Special notifications about additional repor
 
 A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-## Additional resources
-
-[Electronic reporting overview](general-electronic-reporting.md)
-
-[Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
-
-[Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
-
-[Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
-
-[Configure Electronic reporting to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
 ## Frequently asked questions
 
 ### I selected **New document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
@@ -386,3 +374,15 @@ Yes, you can. In the first application session, select **Open in Desktop App**. 
 
 ### I get the error ‘Value cannot be null. Parameter name: externalId’ when I select **Open in Desktop App**. How do I work around this? 
 Most likely you signed in to the current instance of Finance and Operations of the Azure AD domain which differs from the Azure AD domain that was used to deploy this instance of Finance and Operations. Because the SharePoint service, which is used to store templates for making them available for editing by using the Office desktop applications, belongs to the same domain as Finance and Operations, we have no permissions to access the SharePoint service. To resolve this issue, sign in to the current instance of Finance and Operations using the credentials of a user with the correct Azure AD domain.
+
+## Additional resources
+
+[Electronic reporting overview](general-electronic-reporting.md)
+
+[Design a configuration for generating reports in OPENXML format](tasks/er-design-reports-openxml-2016-11.md)
+
+[Design ER configurations to generate reports in Word format](tasks/er-design-configuration-word-2016-11.md)
+
+[Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
+
+[Configure Electronic reporting to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
