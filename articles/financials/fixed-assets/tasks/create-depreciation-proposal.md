@@ -37,10 +37,12 @@ This topic describes how depreciation batch proposals work and explains how to p
 1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Create depreciation proposal**.
 2. In the **Name of journal** field, select an option from the drop-down menu.
 3. In the **To date** field, enter a date.
-- Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.  
-- For example, if the To date value is March 31, 2015, the following description is generated: “Depreciation since January 31, 2015.” The **Date** field on the proposed journal lines is then set to March 31, 2015.  
-- The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.  
-- When you use the **Create acquisition or depreciation proposals for fixed assets** form, you can propose depreciation in batches. This is recommended for larger proposals that will use more system resources. If you select the batch option, you can still complete other tasks during that time. When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.  
+
+    - Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.  
+    - For example, if the To date value is March 31, 2015, the following description is generated: “Depreciation since January 31, 2015.” The **Date** field on the proposed journal lines is then set to March 31, 2015.  
+    - The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.  
+    - When you use the **Create acquisition or depreciation proposals for fixed assets** form, you can propose depreciation in batches. This is recommended for larger proposals that will use more system resources. If you select the batch option, you can still complete other tasks during that time. When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.  
+
 4. Select **Create journal**.
 
 ## Review depreciation entries
