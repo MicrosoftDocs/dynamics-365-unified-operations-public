@@ -37,12 +37,13 @@ This topic explains how to create a performance review and describes the purpose
 3. In the **Review type** field, enter or select a value.
 4. In the **Performance period** field, enter or select a value.
 5. In the **End date** field, enter a date.
-6. Select **OK**.
-- You can also create a review from a template. This is the best way to create a review because each section will contain the information that you need to start a review.  
+6. Select **OK**. You can also create a review from a template. This is the best way to create a review because each section will contain the information that you need to start a review.  
 7. You can show or hide tabs such as the attachments tab:
- a. In the action pane, select **Show sections** to open the drop dialog.
- b. Select **Yes** or **No** in the **Show attachments** field to show or hide the attachments tab.
- c. Select **Save**.
+
+    1. In the action pane, select **Show sections** to open the drop dialog.
+    1. Select **Yes** or **No** in the **Show attachments** field to show or hide the attachments tab.
+    1. Select **Save**.
+
 8. Select **Add goal to review** to add a goal. Select **OK** when finished.
 9. Select **Add competency** to open the drop dialog.
 10. In the **Title** field, type a value.
@@ -67,16 +68,17 @@ This topic explains how to create a performance review and describes the purpose
 28. In the **Keywords** field, type a value.
 29. Select **Save**.
 30. Select the **Ratings** tab.  
-- The **rating details** FastTab allows employees to rate themselves and the manager to rate the employee. If weights are used, the weight value of the scores will be calculated automatically.  
-- To see this section, enable the parameter settings for showing employee ratings.  
-31. Select the **Sign offs** tab.  
-- If the review uses workflow, then the signoffs will appear only after the workflow is complete. If no workflow is used, then both the worker and the manager are listed here. The required check box is selected based on the settings of the review type.  
+
+    - The **rating details** FastTab allows employees to rate themselves and the manager to rate the employee. If weights are used, the weight value of the scores will be calculated automatically.  
+    - To see this section, enable the parameter settings for showing employee ratings.  
+
+31. Select the **Sign offs** tab. If the review uses workflow, then the signoffs will appear only after the workflow is complete. If no workflow is used, then both the worker and the manager are listed here. The required check box is selected based on the settings of the review type.  
 32. Select the **General** tab.
-- The performance period creates the default start and end dates. Those dates are editable.  
-- The statuses control the access to the review. The **Not started** status allows everyone to edit the review. The **In progress** status allows only the employee to view and edit the review. Ready for review allows only the manager to view and edit the review. Final review status allows both the employee and manager to view the review and also edit it if set up in the review type. The **Completed**, **Rejected**, and **Canceled** statuses make the review read-only.  
+
+    - The performance period creates the default start and end dates. Those dates are editable.  
+    - The statuses control the access to the review. The **Not started** status allows everyone to edit the review. The **In progress** status allows only the employee to view and edit the review. Ready for review allows only the manager to view and edit the review. Final review status allows both the employee and manager to view the review and also edit it if set up in the review type. The **Completed**, **Rejected**, and **Canceled** statuses make the review read-only.  
+
 33. In the **Overview** field, type a value.
-34. Select the **Review** tab.
-- As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
-35. Select the **Sign offs** tab.
-- The worker and manager can sign off on the review. When all required signoffs are complete, the status is changed to **Completed** and no more changes can be made.  
+34. Select the **Review** tab. As the review moves through the statuses, the employee and manager can add comments for each goal or competency.  
+35. Select the **Sign offs** tab. The worker and manager can sign off on the review. When all required signoffs are complete, the status is changed to **Completed** and no more changes can be made.  
 
