@@ -199,10 +199,10 @@ In addition, major changes have been made to the depreciation process. These cha
     
 [!include [banner](../includes/banner.md)]
 
-Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, navigate to the feature management workspace and enable **Enable dual currency functionality in General ledger consolidation**
+Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, navigate to the **Feature management** workspace and enable **Enable dual currency functionality in General ledger consolidation**.
 
-In General ledger consolidation, a new option is added to consolidate either the accounting or reporting currency amounts from the source companies. If the accounting or reporting currency is the same as the accounting or reporting currency in the consolidation company, it will directly copy the amounts rather than translating them.
+In General ledger consolidation, a new option has been added to consolidate either the accounting or reporting currency amounts from the source companies. If the accounting or reporting currency is the same as the accounting or reporting currency in the consolidation company, it will the amounts will be copied directly rather than translated.
 
--  Users can now choose if the accounting currency or the reporting currency from the source company will be used as the transaction currency in the consolidation company.
+-  You can now choose whether to use the accounting currency or the reporting currency from the source company as the transaction currency in the consolidation company.
 
-- The accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
+- The accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company, if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
