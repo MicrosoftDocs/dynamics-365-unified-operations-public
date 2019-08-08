@@ -102,5 +102,11 @@ You can find **Simulate posting** on the **Validate** menu for most journals. Wh
 
 **Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
 
+## Journal unlock
+A new button is available on the journal page to unlock a journal that has a status of "locked by system" set to yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named 'Journal Unlock button' in the feature management page. 
+
+## Workflow recall 
+The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled from the workflow button on a journal, and in the workflow history page. This is enabled by the feature named 'Resetting the workflow status for journals' in the feature management page.
+
 ## Delete Journal Lines
 The ability to delete all journal lines quickly is enabled in a journal under Functions - **Delete Journal Lines**. This feature has been enhanced for better performance and reliability. This enhanced version can be enabled in feature management with the feature named, **Delete journal performance optimizations**.
