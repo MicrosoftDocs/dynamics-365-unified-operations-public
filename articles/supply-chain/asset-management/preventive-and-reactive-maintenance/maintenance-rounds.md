@@ -47,31 +47,33 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 4. Select a start date for the round in the **Start date** field.
 
-5. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from object calendar lines that are created from this round.
+5. In the **Finish within days** and **Finish within hours** fields, you can insert expected end date in days or hours. The expected end date is inserted relative to the start date, which is calculated when maintenance schedule lines are created. For example, you can insert "7" in the **Finish within days** field to indicate that the related job should be completed within a week from the start date.
 
-6. In the **Work order type** field, select the work order type to be used on work orders created from this maintenance round.
+6. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from object calendar lines that are created from this round.
 
-7. In the **Service level** field, select the work order service level to be used on work orders created from this maintenance round.
+7. In the **Work order type** field, select the work order type to be used on work orders created from this maintenance round.
 
-8. On the **Lines** FastTab, click **Add** to add an object to the round.
+8. In the **Service level** field, select the work order service level to be used on work orders created from this maintenance round.
 
-9. Insert a line number in the **Line number** field to indicate the sequence of the objects in round.
+9. On the **Lines** FastTab, click **Add** to add an object to the round.
 
-10. Select the object in the **Object** field.
+10. Insert a line number in the **Line number** field to indicate the sequence of the objects in round.
 
-11. Select the job type for the object in the **Job type** field.
+11. Select the object in the **Object** field.
 
-12. Select the job variant and job trade related to the job type in the **Variant** and **Trade** fields.
+12. Select the job type for the object in the **Job type** field.
 
-13. Select the recurrence (day, week, etc.) in the **Period type** field.
+13. Select the job variant and job trade related to the job type in the **Variant** and **Trade** fields.
 
-14. In the **Period length** field, insert the number of recurrences for the round.
+14. Select the recurrence (day, week, etc.) in the **Period type** field.
 
-15. Select a start date for the object to be included in the round in the **Start date** field. This date may differ from the start date set on the round.
+15. In the **Period length** field, insert the number of recurrences for the round.
 
-16. Repeat steps 8-15 to add more objects to the round.
+16. Select a start date for the object to be included in the round in the **Start date** field. This date may differ from the start date set on the round.
 
-17. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the round. Several work order pools can be connected to one round.
+17. Repeat steps 9-16 to add more assets to the round.
+
+18. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the round. Several work order pools can be connected to one round.
 
 >[!NOTE]
 >The **Objects** and **Lines** fields located in the **Details** section at the top of the form show the total number of objects and lines related to the selected round.
