@@ -1,12 +1,9 @@
 ---
 # required metadata
-
- 
-
 title: Ratings and Reviews Overview 
-description: This topic explains overview of Dynamics 365 for Commerce's Ratings and Reviews 
+description: This topic explains ratings and reviews in Dynamics 365 for Commerce. 
 author:  gvrmohanreddy 
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -35,13 +32,17 @@ ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 
 ---
 
-# Ratings and Reviews Overview
+# Ratings and reviews
 
-Ratings and Reviews are crucial for consumers to understand how a product is perceived by fellow consumers and make a purchase decision. Dynamics 365 for Commerce’s Ratings and Review’s allows Retailers (C1) to capture reviews along with a rating on a product from consumers (C2) and show average ratings and corresponding reviews information across on eCommerce website. Average ratings information is showed in POS and Call center channels for sales associates to help end users. Retailers also uses Ratings & Reviews as a feedback mechanism to improve the quality of a product thus improve the sales.
+Ratings and reviews are crucial for consumers to understand how a product is perceived by fellow consumers and they help consumers make a purchase decision. Ratings and reviews in Dynamics 365 for Commerce allow retailers to capture reviews along with a rating for a product from consumers and show the average ratings and reviews information across an e-Commerce website. 
 
-## Solution Architecture
+Average ratings information is displayed in point of sale (POS) and call center channels so that sales associates can help end users make decisions. Retailers also can use ratings and reviews as a feedback mechanism to improve the quality of a product and thus improve sales.
 
-Dynamics 365 for Commerce has Ratings and Reviews as an omni-channel solution, and available natively part of the eCommerce platform.  Solution is built on top of Azure to with high-scalability and reliability. Consumers who purchase products online can directly consume ratings and reviews, to evaluate a product, and provide review after purchasing a product.  Sales associates in physical stores, or in a call center, can help customers as the product ratings information is available in those channels as well. 
+## Architecture
+
+In Commerce, the ratings and reviews solution is an omni-channel solution, and is available natively as part of the e-Commerce platform. The ratings and reviews solution is built on top of Azure, which provides high scalability and reliability. 
+
+Consumers who purchase products online can directly consume ratings and reviews to evaluate a product and provide a review after purchasing a product. Sales associates in physical stores or in a call center can use the ratings and reviews to help customers, as the information is also available in those channels. 
 
 ![Dynamics 365 for Commerce - Ratings and Reviews](media/Dynamics 365 for Commerce - RnR Overview.jpg)
 
