@@ -57,8 +57,8 @@ This procedure lets you create a timesheet by using an empty timesheet form. The
     
     Hours should be entered in a decimal format. For example, if you worked for two hours and fifteen minutes, enter 2.25.   
 17. In the **Line details** fastTab, the following options are available:
-- Add information about taxes and financial dimensions in the **General** and the **Financial Dimensions** tab.
-- Add comments about the timesheet line in the **Comment** tab.
+    - Add information about taxes and financial dimensions in the **General** and the **Financial Dimensions** tab.
+    - Add comments about the timesheet line in the **Comment** tab.
 20. In the **Action pane**, click **Workflow** to open the drop dialog.
 21. Click **Submit**.
 22. Click **Submit**.
