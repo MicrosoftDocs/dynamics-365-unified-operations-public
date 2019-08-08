@@ -46,7 +46,8 @@ This procedure shows how to create, print, and post interest notes. This task us
 4. In the **From date** field, enter a date from which the interest will be calculated. If you do not specific a **From date**, then all unposted interest notes will be canceled and interest will be recalculated from the transaction date.
 5. In the **To date** field, enter a date to which the interest would be calculated.
 6. In the **Use posting profile from** field, select an option. There are three posting profile options:
-    - Account – Use the posting profile that is assigned to the customer account for each interest note.       - Select – Use the posting profile that you select in the Posting profile field.
+    - Account – Use the posting profile that is assigned to the customer account for each interest note. 
+    - Select – Use the posting profile that you select in the Posting profile field.
     - Transaction – Use the individual posting profile from transactions on which interest is calculated for each interest note. Transactions that do not have an assigned posting profile will use the posting profile that is specified in the Ledger and sales tax area of the Accounts receivable parameters form.  
 7. Expand the **Records to include** fastTab.
 8. Click **Filter**.
