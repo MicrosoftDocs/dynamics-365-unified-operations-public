@@ -145,15 +145,17 @@ point3.write();
 
 Static methods can't be overridden, because they exist per class. To protect other sensitive methods, or core methods, from being overridden, use the **final** modifier. In the following example, because **methodAtt** is declared as **final**, it can't be overridden in any class that extends **Attribute**. You should not specify **new** or **finalize** methods as **final**. The following example shows how to use the **final** keyword.
 
-    public class Attribute
-    {
-        int objectVariable;
+```X++
+public class Attribute
+{
+    int objectVariable;
 
-        final void methodAtt()
-        {
-            //Some statements
-        }
+    final void methodAtt()
+    {
+        //Some statements
     }
+}
+```
 
 ### Overriding vs. overloading
 
