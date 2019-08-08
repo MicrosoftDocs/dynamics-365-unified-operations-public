@@ -2655,7 +2655,7 @@
         items:
         - name: Set up deferrals
           href: ../financials/localizations/rus-set-up-deferrals.md
-        - name: Create or generate referrals
+        - name: Create or generate deferrals
           href: ../financials/localizations/rus-create-generate-deferrals.md
         - name: Receipt of deferrals
           href: ../financials/localizations/rus-deferral-transactions.md
