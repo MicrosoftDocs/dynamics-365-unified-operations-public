@@ -62,5 +62,5 @@ This topic explains how to create a sales agreement that commits one of your cus
 10. Select **Yes** in the **Print report** field.
 11. Select **OK**.
 12. Close the page.
-- The agreement is now effective and you can start linking the customer's orders to the agreement, to offset against the committed target.  
+- The agreement is now effective. You can start linking the customer's orders to the agreement to offset against the committed target.  
 
