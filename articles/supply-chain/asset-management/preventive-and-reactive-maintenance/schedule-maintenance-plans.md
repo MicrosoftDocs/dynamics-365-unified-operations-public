@@ -67,7 +67,7 @@ The figure below provides a graphic illustration of a time-based maintenance pla
 
 ![Figure 2](media/10-preventive-maintenance.png)
 
-Regarding counter-based maintenance sequences: In the figures below, two different counter registration cycles are shown. They are based on a maintenance sequence set up for object "V0001", expecting the object (a car) to run approx. 2,000 km every month.
+Regarding counter-based maintenance plans: In the figures below, two different counter registration cycles are shown. They are based on a maintenance plan set up for object "V0001", expecting the object (a car) to run approx. 2,000 km every month.
 
 In the first example, the expected 2,000 km are not reached every month. According to the counter-based maintenance sequence, the threshold is 2,000 km, meaning when you run a maintenance sequence scheduling, an object calendar line should be created each time the 2,000-kilometer threshold is reached. In example 1, there are 4 registration lines, but the 2,000-kilometer threshold is only reached once. This means that when you run schedule maintenance sequences for this object, for example for a 3-month period, only one object calendar line will be created.
 
