@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Schedule maintenance sequences
-description: This topic explains schedule maintenance sequences in Enterprise Asset Management.
+title: Schedule maintenance plans
+description: This topic explains schedule maintenance plans in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,18 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Schedule maintenance sequences
+# Schedule maintenance plans
 
-This topic explains schedule maintenance sequences in Enterprise Asset Management. Preventive maintenance scheduling generates calendar entries on objects, based on the maintenance sequences set up on the objects. You can schedule calendar entries based on selected maintenance sequences, object types, and objects.
+Preventive maintenance scheduling generates calendar entries on assets, based on the maintenance plans set up on the assets. You can schedule calendar entries based on selected maintenance plans, asset types, and assets.
 
-1. Click **Enterprise asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance sequences**.
+1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance plans**.
 
-2. You can select a time interval in the **Interval** and **Period** fields.
+2. You can select a time interval in the **Period** and **Period frequency** fields.
 
 >[!NOTE]
->The **Period** and **Interval** fields indicate how far ahead in time you want object calendar lines to be created, based on the maintenance sequences that you have created (time-based or counter-based). In the figure below, object calendar lines (= work order proposals) are created from the current date and three months onwards.
+>The **Period** and **Period frequencey** fields indicate how far ahead in time you want maintenance schedule lines to be created, based on the maintenance plans you have created (time-based or counter-based). In the figure below, maintenance schedule lines (= work order proposals) are created from the current date and three months onwards.
 
-3. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created according to the maintenance sequence line.
+3. Select "Yes" on the **Auto create if specified in the line** toggle button if work orders should automatically be created according to the maintenance plan line.
 
 >[!NOTe]
 >If this toggle button is set to "Yes", and the **Auto create** toggle button is also set to "Yes" on maintenance sequence lines in **Maintenance sequences**, work orders are created based on the maintenance sequence lines, and object calendar lines with status "Work order created" are also created. If only one of the **Auto create** toggle buttons is set to "Yes", in this form or in **Maintenance sequences**, only object calendar lines are created with status "Created". In that case, no work orders are created.
@@ -61,9 +61,9 @@ The figure below shows a screenshot of the interface.
 ![Figure 1](media/09-preventive-maintenance.png)
 
 - In **Schedule maintenance sequences**, you can set up batch jobs on the **Run in the background** FastTab to automatically generate calendar entries at regular intervals.  
-- When you schedule preventive maintenance, object calendar lines with expected start date and time earlier than the system date and time will not be created.  
+- When you schedule preventive maintenance, maintenance schedule lines with expected start date and time earlier than the system date and time will not be created.  
 
-The figure below provides a graphic illustration of a time-based maintenance sequence calculation.  
+The figure below provides a graphic illustration of a time-based maintenance plan calculation.  
 
 ![Figure 2](media/10-preventive-maintenance.png)
 
