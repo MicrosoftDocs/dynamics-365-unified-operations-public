@@ -32,147 +32,105 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fault management
 
+In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types. In this way, you can manage faults that are detected on assets. Additionally, fault causes and suggestions for fixing faults can be registered on a work order.
 
-In **Asset Management**, you can manage faults detected on assets by describing symptoms, areas, and fault types. The fault designer allows you to set up symptoms, areas, and fault types on asset types. Also, fault causes and suggestions to remedy faults can be registered on a work order.
+The process for fault registration and management consists of these steps.
 
-The sequence of registration and management of faults is: First, you create a list of fault symptoms, fault areas, and fault types that may occur on your asset types. Next step is setting up symptoms, fault areas, and fault types in the Fault Designer. To understand the distinction between fault symptoms, fault areas, and fault types, here are a few examples:
+1. Create a list of fault symptoms, fault areas, and fault types that might occur on your asset types.
+2. In the fault designer, set up symptoms, fault areas, and fault types.
+
+Here are some examples to help you understand the difference between fault symptoms, fault areas, and fault types.
 
 **Fault symptoms:**
 
-- Unbalanced voltages  
-
-- Short circuit  
-
-- Noise  
-
-- Leak  
-
-- Vibrations  
-
+- Unbalanced voltages
+- Short circuit
+- Noise
+- Leak
+- Vibrations
 
 **Fault areas:**
 
-- Electrical  
-
-- Mechanical  
-
-- Hydraulic  
-
-- Pneumatic  
-
+- Electrical
+- Mechanical
+- Hydraulic
+- Pneumatic
 
 **Fault types:**
 
-- Faulty main stator winding  
+- Faulty main stator winding
+- Faulty diode
+- Dirty windings
+- Defective generator
+- Defective sensor
 
-- Faulty diode  
+## Create fault symptoms
 
-- Dirty windings  
+Follow these steps to create a list of symptoms that can be used in the fault designer.
 
-- Defective generator  
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault symptoms**.
+2. Select **New** to create a record.
+3. In the **Fault symptom** field, enter a name for the fault symptom.
+4. In the **Description** field, enter a description.
+5. Select **Save**.
 
-- Defective sensor  
+## Create fault areas
 
+Follow these steps to create a list of areas or locations that can be used in the fault designer.
 
-## Create fault symptom
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault areas**.
+2. Select **New** to create a record.
+3. In the **Fault area** field, enter a name for the fault area.
+4. In the **Description** field, enter a description.
+5. Select **Save**.
 
-Create a list of symptoms to be used in the fault designer.  
+## Create fault types
 
-1. Click **Asset management** > **Setup** > **Fault** > **Fault symptoms**.  
+Follow these steps to create a list of fault types that can be used in the fault designer.
 
-2. Click **New** to create a new record.  
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault types**.
+2. Select **New** to create a record.
+3. In the **Fault type** field, enter a name for the fault type.
+4. In the **Description** field, enter a description.
+5. Select **Save**.
 
-3. Insert a name for the symptom in the **Fault symptom** field.
+## Set up the fault designer
 
-4. Insert a description in the **Description** field.
+In the fault designer, you set up fault data on asset types.
 
-5. Click **Save**.
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault designer**.
+2. In the left pane, select the type of asset to set up a fault record for.
+3. On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.
+4. On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.
+5. On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.
+6. To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**. This function is useful if you've created many combinations. It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.
 
+    > [!NOTE]
+    > To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.
 
-## Create fault area
-
-Create a list of areas or locations to be used in the fault designer.
-
-1. Click **Asset management** > **Setup** > **Fault** > **Fault areas**.
-
-2. Click **New** to create a new record.
-
-3. Insert a name for the area in the **Fault area** field.
-
-4. Insert a description in the **Description** field.
-
-5. Click **Save**.
-
-
-## Create fault type
-
-Create a list of fault types to be used in the fault designer.
-
-1. Click **Asset management** > **Setup** > **Fault** > **Fault types**.
-
-2. Click **New** to create a new record.
-
-3. Insert a name for the type in the **Fault type** field.
-
-4. Insert a description in the **Description** field.
-
-5. Click **Save**.
-
-
-## Set up fault designer
-
-In Fault designer, you set up fault data on asset types.
-
-1. Click **Asset management** > **Setup** > **Fault** > **Fault designer**.
-
-2. In the left-hand side of the form, select the asset type for which you want to set up a fault record.
-
-3. On the **Fault symptom** FastTab, click **Add line**, and select a symptom in the **Fault symptom** field.
-
-4. On the **Fault area** FastTab, click **Add line**, and select an area in the **Fault area** field.
-
-5. On the **Fault type** FastTab, click **Add line**, and select a type in the **Fault type** field.
-
-6. Click the **Create fault combinations** button to quickly create combinations of all existing fault symptoms, areas, and types to the selected asset type. This function is useful if you have created many combinations. If you do not want to use all combinations on the asset type, it is easier to delete the lines that are not relevant than to create new lines manually.
-
-7. Click the **Copy from asset type** button to copy the specific setup of fault symptoms, areas, and types from one asset type to another asset type.
-
-8. Click **Save** to save the changes.
-
+7. Select **Save** to save your changes.
 
 ![Figure 1](media/21-setup-for-work-orders.png)
 
+## Create fault causes
 
-## Create fault cause
+Follow these steps to create a list of known fault causes that can be added to a work order or a maintenance request.
 
-Create a list of known fault causes, which can be added to a work order or a maintenance request.
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault causes**.
+2. Select **New** to create a record.
+3. In the **Fault cause** field, enter a name for the fault cause.
+4. In the **Description** field, enter a description.
+5. Select **Save**.
 
-1. Click **Asset management** > **Setup** > **Fault** > **Fault causes**.
+## Create fault remedies
 
-2. Click **New** to create a new record.
+Follow these steps to create a list of suggestions for remedy and repair that can be added to a work order or a maintenance request.
 
-3. Insert a name for the fault cause in the **Fault cause** field.
+1. Select **Asset management** \> **Setup** \> **Fault** \> **Fault remedies**.
+2. Select **New** to create a record.
+3. In the **Fault remedy** field, enter a name for the fault remedy.
+4. In the **Description** field, enter a description.
+5. Select **Save**.
 
-4. Insert a description in the **Description** field.
-
-5. Click **Save**.
-
-
-## Create fault remedy
-
-Create a list of suggestions for remedy and repair, which can be added to a work order or a maintenance request.
-
-1. Click **Asset management** > **Setup** > **Fault** > **Fault remedies**.
-
-2. Click **New** to create a new record.
-
-3. Insert a name for the remedy in the **Fault remedy** field.
-
-4. Insert a description in the **Description** field.
-
-5. Click **Save**.
-
-
->[!NOTE]
->If required, you can change or update the names of your fault symptoms, areas, types, causes, and remedies. The name changes are automatically reflected in the related fault registrations.
-
+> [!NOTE]
+> You can change the names of your fault symptoms, areas, types, causes, and remedies as you require. The name changes are automatically reflected in the related fault registrations.
