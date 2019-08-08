@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Acceptance test library
+title: Acceptance test library resources
 description: This topic provides information about the Acceptance test library.
 author: MichaelFruergaardPontoppidan
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 ---
 
-# Acceptance test library
+# Acceptance test library resources
 
 [!include [banner](../includes/banner.md)]
 

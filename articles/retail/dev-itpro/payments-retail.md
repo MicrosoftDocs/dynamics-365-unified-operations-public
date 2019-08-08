@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 65801
@@ -47,7 +47,7 @@ ms.dyn365.ops.version: Version 1611
 
         
 ## Which payment providers are supported and in what regions?
-- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - Verifone is supported in the United States for transactions where the card is present (performed using devices), and for transactions where the card is not present (for example, e-commerce or call center transactions).
 - Mastercard Simplify is no longer supported for new customers.
 
@@ -61,7 +61,7 @@ Microsoft-provided connectors such as Verifone and Adyen can be used, or custom 
 Yes, but you must connect them using customization.
 
 ## What is the Service level agreement (SLA) for out-of-box payment connectors like Verifone and Adyen?
-The SLA for the out-of-box Verifone connector is owned by Verifone. Please contact Verifone support for information about their SLA. For the Adyen connector, refer to the Adyen connector [overview page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to setup. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com. 
+The SLA for the out-of-box Verifone connector is owned by Verifone. Please contact Verifone support for information about their SLA. For the Adyen connector, refer to the Adyen connector [overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to setup. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com. 
         
 ## If a supported payment provider issues an update, will Microsoft automatically update the payment connector or do I need to work with the payment provider to get the updated payment connector?
 If a payment connector update is issued by the payment connector provider, the updated version of the payment connector will be included in the next planned release of Dynamics 365 for Retail. However, the customer can also work directly with the payment connector provider to uptake it earlier.

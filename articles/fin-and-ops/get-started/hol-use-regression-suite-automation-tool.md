@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
@@ -29,12 +29,14 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Use Regression suite automation tool tutorial
+# Use the Regression suite automation tool tutorial
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Use your internet browser tools to download and save this page in pdf format. 
+
+This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points.
 
 ## Features of RSAT/Task recorder
 

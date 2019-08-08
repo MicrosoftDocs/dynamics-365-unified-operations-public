@@ -5,7 +5,7 @@ title: End-to-end scenario for the Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10254
@@ -51,31 +51,31 @@ To work with the sample, you must install the provided demo data.
 
     [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
 
-4.  Click **Setup Demo Data**. 
+4.  Select **Setup Demo Data**. 
 
     [![Load Demo Data](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
 
 5.  If you're prompted to reload the demo data, click **Yes**.
-6.  When the data is finished loading, click **Close**.
+6.  When the data is finished loading, select **Close**.
 
 ## Use the Fleet Management application to rent a vehicle
-Keep in mind that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
+Remember that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
 1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Finance and Operations.
-2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
+2.  To return to the **Dashboard**, select the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
 
     [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
 
     [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
 
-4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel **to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
+4.  On the Action Pane, select the Microsoft Office logo, then select **Customers** under **Export to Excel** to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
 
     [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
 
 5.  When prompted, click **Open** to view the data in Excel.
 6.  Close Excel.
-7.  To switch to the **Details** view, click on a value in the **First Name** column. 
+7.  To switch to the **Details** view, select a value in the **First Name** column. 
 
     [![First name](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
 
@@ -109,7 +109,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
 ## Use Fleet Management to run a workflow
 1.  Click the Dynamics icon to return to the dashboard.
-2.  Find the **Reservation Management** tile and click on it to open the Reservation Management workspace.
+2.  Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
 3.  Click **Current rentals**.
 4.  On the **Rentals** form, click the ID of your rental.
 5.  On the Details view of the **Rentals** form, on the Action Pane, click **Complete rental**.
@@ -119,8 +119,9 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
     [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
 
-    In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department. **Note**: You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
-9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. **Note**: You may need to refresh the page to get the full set of options under Workflow.
+    In the **Vehicle Maintenance** form, the **Status** field shows that your rental is awaiting examination by the service department. > [!NOTE]
+> You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
+9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. You may need to refresh the page to get the full set of options under Workflow.
 10. Enter a comment, and then click **Examination complete**.
 11. You might again need to wait up to two minutes for the batch framework to process the change. On the Action Pane, click **Refresh** periodically, until you see the **Status** field change. Notice that the vehicle now has a status of **Awaiting Service**.
 12. Optionally, you can continue to repeat these workflow steps to take the vehicle through the service and cleaning phases. After cleaning is completed, the final status is **Done**.
@@ -134,7 +135,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
     [![Workflow setup](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
 
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
-3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. **Note:** This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
+3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
 
     [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
 
@@ -143,7 +144,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 ## Create a new KPI definition
 The web client enables users who have appropriate permissions to modify KPI definitions that have been modeled and deployed by developers. Users also have the ability to create new KPI definitions in the client. In this walkthrough, you create a new KPI definition in the client.
 
-1.  Open the **Reservation Management** workspace. On the navigation bar, go to** Fleet Management **&gt;** Workspaces &gt; Reservation Management**.
+1.  Open the **Reservation Management** workspace. On the navigation bar, go to **Fleet Management &gt; Workspaces &gt; Reservation Management**.
 2.  Notice the Total revenue KPI tile shown on the bottom left of the workspace. Click the **Total Revenue KPI** tile. Details of the total revenue KPI tile along with charts indicating top and bottom contributors to revenue will be shown on screen.
 3.  Next, you will define a new KPI to monitor the number of rentals.
 4.  On the Action Pane, click **New**. The **New KPI** dialog will open.
@@ -173,9 +174,9 @@ The web client enables users who have appropriate permissions to modify KPI defi
     | **Green if more than** | 110       |
 
 
-9.  In the application bar, click **Save 
+9.  In the application bar, click **Save**. 
 
-    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)**
+    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)
 
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.

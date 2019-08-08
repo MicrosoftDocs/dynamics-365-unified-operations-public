@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Talent (June 11, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/11/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -80,9 +80,9 @@ The Task group entity has been added.
 
 ### Preview features will be enabled only in sandbox environments
 
-For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+For more information about how changes are published, see [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
-When you provision a new instance of Talent, you can indicate whether the instance type is Production or Sandbox. The Sandbox instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
+When you provision a new instance of Talent, you can indicate whether the instance type is Production or Sandbox. The Sandbox instance type allows for early testing of new features. All existing Talent instances will be updated to the **Production** instance type. If you want one of your existing instances to be updated to the **Sandbox** instance type, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support) to initiate the change request.
 
 ### Restrict the leave types in time-off requests
 

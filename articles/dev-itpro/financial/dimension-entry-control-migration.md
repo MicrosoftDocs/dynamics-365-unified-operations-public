@@ -3,7 +3,7 @@
 
 title: Migrate default dimensions controls to Dimension Entry controls
 description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25531

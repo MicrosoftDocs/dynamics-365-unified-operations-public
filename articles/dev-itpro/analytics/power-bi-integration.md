@@ -17,7 +17,7 @@ ms.search.form: PowerBIConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31001
@@ -101,7 +101,7 @@ PowerBI.com is a service that is offered by Microsoft. It lets you create dashbo
 
 After your reports are uploaded, your users can view, adjust, and explore them either on the web (when they are connected to the Internet at home or in the office) or by using apps on a device.
 
-For more information about Power BI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/).
+For more information about Power BI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/documentation/powerbi-service-how-should-i-share-my-dashboard/).
 
 ## Pinning Power BI content to the Finance and Operations client
 PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to workspaces in Finance and Operations. Power BI content in Dynamics 365 provides contextual insights that are related to business operations.

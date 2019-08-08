@@ -18,7 +18,7 @@ ms.technology:
 # ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Warehouse work policies
+title: Warehouse work policies overview
 description: Warehouse work policies control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Warehouse work policies
+# Warehouse work policies overview
 
 [!include [banner](../includes/banner.md)]
 

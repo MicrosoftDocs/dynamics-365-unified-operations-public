@@ -17,7 +17,7 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetails
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266544
@@ -340,7 +340,7 @@ To view the values that are entered in a free text field, click **Lock and claim
 #### Line display &gt; Advanced tab settings
 
 - **Binary conversion** – Some line displays require that text be converted into binary format. To determine whether this conversion is required, see the device’s documentation.
-- **Character set** – The code page for the characters that are sent to the device. For the identifiers of specific code pages, see <https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx>.
+- **Character set** – The code page for the characters that are sent to the device. For the identifiers of specific code pages, see <https://msdn.microsoft.com/library/windows/desktop/dd317756(v=vs.85).aspx>.
 
 #### MSR
 

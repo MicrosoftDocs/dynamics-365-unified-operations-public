@@ -6,7 +6,7 @@ description: This topic explains how to perform a data upgrade from Dynamics AX 
 author: tariqbell
 manager: AnnBe
 
-ms.date: 06/06/2018
+ms.date: 07/10/2019
 
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -300,12 +300,14 @@ Run the following script against the imported database. The script performs the 
 
 ## Run the data upgrade deployable package
 
-To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+Tier 2 Sandbox environments do not allow running DataUpgrade packages against them via LCS. To get the latest data upgrade deployable package for a target environment that is running the latest Finance and Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/)
 2. Select the **Shared asset library** tile.
 3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
+
+Next, execute the package manually via Remote Desktop on the AOS VM. 
 
 For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
 

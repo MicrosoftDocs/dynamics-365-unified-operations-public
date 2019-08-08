@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: India GST
+title: India Goods and Services Tax (GST) overview
 description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 for Finance and Operations. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 12/08/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # keywords: 
 audience: IT Pro, Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 # ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1587884
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-12-31
 
 ---
 
-# India Goods and Services Tax
+# India Goods and Services Tax (GST) overview
 
 [!include [banner](../includes/banner.md)]
 

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer, Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254844
@@ -97,5 +97,5 @@ For technical questions that are related to signing in to and accessing Customer
 ## Additional resources
 - [Get support for Dynamics 365 for Retail](../../retail/retail-support.md)
 - [Get support for Dynamics 365 for Talent](../../talent/talent-support.md)
-- For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
+- For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
 

@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -102,7 +102,7 @@ To indicate the dates when a customer can accept deliveries, you can assign a re
 
 Note that it is only possible to include one calendar per customer. If you need to include a calendar for each different address for a customer, you can create one customer per address and then assign its respective calendar. 
 
-The requested receipt date on the sales order lines is affected by the customer calendar and by the delivery date control method. You can read more about how the earliest delivery date is calculated in [Order Promising.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+The requested receipt date on the sales order lines is affected by the customer calendar and by the delivery date control method. You can read more about how the earliest delivery date is calculated in [Order Promising.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### Shipping calendar for a legal entity
 To indicate the dates in which a legal entity can ship goods, you can set up a shipping calendar under **Organization administration > Organizations > Legal entities**. Select the legal entity and add the calendar in the **Foreign trade and logistics** tab in the  **Shipping calendar** field. The shipping calendar will act as a source of defaults for all warehouse calendars in the legal entity. 

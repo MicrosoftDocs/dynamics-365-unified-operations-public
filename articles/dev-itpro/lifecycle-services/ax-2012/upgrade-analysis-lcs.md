@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 11394
@@ -106,9 +106,9 @@ The following table describes the Excel worksheets that the detailed report prov
 Additional resources
 --------
 
-[Upgrading to a new version of Microsoft Dynamics AX](https://msdn.microsoft.com/en-us/library/aa588216.aspx)
+[Upgrading to a new version of Microsoft Dynamics AX](https://msdn.microsoft.com/library/aa588216.aspx)
 
-[Scenario: Perform in-place upgrade to AX 2012 R2 or AX 2012 R3](https://technet.microsoft.com/en-us/library/jj733502.aspx)
+[Scenario: Perform in-place upgrade to AX 2012 R2 or AX 2012 R3](https://technet.microsoft.com/library/jj733502.aspx)
 
 
 

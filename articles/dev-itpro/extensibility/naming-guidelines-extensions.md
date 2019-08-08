@@ -5,7 +5,7 @@ title: Naming guidelines for extensions
 description: This topic describes the naming guidelines for extensions. Artifacts added via extension must have a name that is unique across all models at installation time. 
 author: LarsBlaaberg
 manager: AnnBe
-ms.date: 03/19/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -58,6 +58,7 @@ Extension classes that are used to augment the logic on tables, classes, or othe
 + Start the name of the extension class with the name of the type that is being augmented, and end the name with the term **\_Extension**.
 Therefore, an extension class that augments the ContactPerson table should start with the name **ContactPerson** and end with **\_Extension**. For example, one extension class might be named **ContactPersonWHS\_Extension**.
 + Include either the name of the model where the extension element resides or the prefix that the extension is associated with. For example, a Warehousing module uses an extension class to augment the ContactPerson table and uses the **WHS** prefix in the name of all other elements. In this case, the extension class might be named **ContactPersonWHS\_Extension**. Notice that the prefix that is used to name other elements in the module is inserted as an infix in the name. As another example, an extension class that augments the ContactPerson table in the ApplicationSuite model might be named **ContactPersonApplicationSuite\_Extension** if the extension class is intended to contain all extensions to the ContactPerson table in the ApplicationSuite model.
++ Consider adding additional element type information in case you create a class extension for elements that can't be declared in the code (like Forms, DataSources, or FormControls). For example, **CustTableFormWHS\_Extension** is the extension for the **CustTable** form.
 + Don't name the extension just **&lt;Element that is being extended&gt;\_Extension**. For example, an extension class that augments the InventLocation table must not be named **InventLocation\_Extension**, because the risk of conflicts is too high.
 
 ## Naming fields, field groups, indexes, relations, and metadata elements added in extensions

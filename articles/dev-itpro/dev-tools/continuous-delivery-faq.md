@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202614
@@ -121,9 +121,9 @@ The following is a summary of a Visual Studio (VS) with MSDN subscriptions benef
 
 -   Includes a Microsoft Azure subscription with a $50 monthly credit for Visual Studio Professional with MSDN and $150 for VS Enterprise with MSDN.
 -   Subscriptions come with lower dev/test rate, you will pay the Linux rates instead of the Windows rates.
--   For more details, visit <https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/>
+-   For more details, visit <https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/>
 
-As a Microsoft partner, acquire Microsoft core competencies to earn free VS Enterprise with MSDN subscriptions. For example, an application development competency for a gold partner will earn 25 free MSDN Enterprise licenses in addition to the 10 licenses that come with the core benefits. For more details, visit [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/). These benefits make cloud development very economical, for example:
+As a Microsoft partner, acquire Microsoft core competencies to earn free VS Enterprise with MSDN subscriptions. For example, an application development competency for a gold partner will earn 25 free MSDN Enterprise licenses in addition to the 10 licenses that come with the core benefits. For more details, visit [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/). These benefits make cloud development very economical, for example:
 
 -   D12v2 VM list price = $470/month (4 core, 28 Gigs)
 -   D12v2 VM price if running on MSDN Azure subscription or any other dev/test subscription = $276/month

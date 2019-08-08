@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266574
@@ -45,7 +45,7 @@ Here are some important points that you should be aware of before you apply this
 
 - Print management settings are scoped to the active legal entity. Custom designs can be associated with one or more Print management settings.
 - Standard report designs continue to be available alongside custom solutions. Use Print management settings to select the appropriate design, based on transaction details.
-- If you introduce a business document for a custom business process, more work is required. For more information about how to create a custom business document solution, see the [Print Management Integration Guide](https://www.microsoft.com/en-us/download/details.aspx?id=36049).
+- If you introduce a business document for a custom business process, more work is required. For more information about how to create a custom business document solution, see the [Print Management Integration Guide](https://www.microsoft.com/download/details.aspx?id=36049).
 
 ## Customize a business document
 The following walkthrough shows the process of introducing a custom report design for an existing application business document and then using Print management to select the new design. The solution includes a custom design definition for the **Sales confirmation** report that is provided in the standard application as part of the Application Suite model. The application customizations will be defined in an extension model.

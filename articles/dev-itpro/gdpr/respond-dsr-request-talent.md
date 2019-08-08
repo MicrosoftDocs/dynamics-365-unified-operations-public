@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
@@ -114,7 +114,7 @@ Compensation isn't assigned to contractors. Therefore, those steps can be skippe
 An admin can search and export personal data in Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboarding via <https://attract.talent.dynamics.com/personreport>.
 
 ## Additional resources
-You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 

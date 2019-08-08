@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
@@ -148,7 +148,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
 -   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md) subpattern guidelines.
 
 ## Radio button guidelines
--   Follow all [standard Microsoft guidelines for radio buttons.](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for radio buttons.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-radio-buttons) Specifically, observe these guidelines:
     -   The radio button control is used to select one option from a set of mutually exclusive choices.
     -   There are between two and seven choices. If there are more than seven choices, use a combo box instead.
     -   If none of the options is a valid choice, there is another option to reflect this situation, such as **None** or **Does not apply**.
@@ -170,7 +170,7 @@ Toggle buttons are typically used instead of traditional check boxes.
 
 [![checkboxtoggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
--   Follow all [standard Microsoft guidelines for check boxes.](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-check-boxes ) Specifically, observe these guidelines:
+-   Follow all [standard Microsoft guidelines for check boxes.](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-check-boxes ) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
         -   **Exceptions:**
             -   Use a check box when a large number of related options must be set in a group.

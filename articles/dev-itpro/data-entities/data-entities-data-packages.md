@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data management
+title: Data management overview
 description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 
 # ms.tgt_pltfrm: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data management
+# Data management overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -186,7 +186,7 @@ If you have fields in entities that you want the system to generate data for on 
 ### Turn off automatically generated number sequences
 Many entities support automatic generation of identifiers based on number sequence setup. For example, when creating a product, the product number is automatically generated and the form does not allow you to edit values manually.
 
-[![Automatic number sequence.png](./media/dataentitiesdatapackages15.png-300x213.jpg)](./media/dataentitiesdatapackages15.png.jpg)
+[![Automatic number sequence.png](./media/dataentitiesdatapackages15-300x213.jpg)](./media/dataentitiesdatapackages15.jpg)
 
 It is possible to enable manual assignment of number sequences for a specific entity.
 
@@ -289,20 +289,29 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 | DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
 
-
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
-- INSERT INTO SYSFLIGHTING VALUES ('<Flight name>', 1, 12719367, Partition, RecID, 1)
+For enabling flights in a production environment, a support case must be logged with Microsoft.
+
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
-- After making the above change, perform an IISRESET on all AOS's
+- After making the above change, perform an IISReset on all AOS's. 
 
-The parameter descriptions are below.
- - <Flight name> is the name of the flight that must be enabled or disabled.
- - Enabled (1)
+```
+INSERT INTO SYSFLIGHTING
+([FLIGHTNAME]
+,[ENABLED]
+,[FLIGHTSERVICEID]
+,[PARTITION]
+,[RECID]
+,[RECVERSION]
+)
+VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
+```
+
  - Partition - Partition ID from the environment, which can be obtained by querying (select) for any record. Every record will have a partition ID that must be copied and used here.
  - RecID - Same ID as partition. However, if multiple flights are enabled, then this can be partition ID + 'n' to ensure it has a unique value
-    - RecVersion = 1
+ - RecVersion = 1
 
 ## Additional resources
 - [Data entities](data-entities.md)

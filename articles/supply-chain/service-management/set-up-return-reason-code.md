@@ -60,9 +60,9 @@ This procedure helps you set up return reason codes that you can use to indicate
 
 ## See also
 
-[Return reason code groups (form)](https://technet.microsoft.com/en-us/library/hh209604\(v=ax.60\))
+[Return reason code groups (form)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))
 
-[Return reason codes (form)](https://technet.microsoft.com/en-us/library/hh227372\(v=ax.60\))
+[Return reason codes (form)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))
 
  
 

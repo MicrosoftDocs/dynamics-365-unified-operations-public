@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Create a bar code for a product
-description: This procedure shows how to manually create a bar code using the item number M0001 as an example. 
+description: This topic shows how to manually create a bar code using the item number M0001 as an example. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,27 +30,19 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to manually create a bar code using the item number M0001 as an example. The demo data company used to create this procedure is USMF.
+This topic shows how to manually create a bar code using the item number M0001 as an example. The demo data company used to create this procedure is USMF.
 
-1. Click Released product maintenance.
-2. Click Released products.
-3. In the list, find and select the desired record.
-4. On the Action Pane, click Manage inventory.
-5. Click Bar codes.
-6. Click New.
-7. In the list, mark the selected row.
-8. In the Barcode setup field, enter or select a value.
-9. In the Bar code field, enter or select a value.
-10. In the Bar code field, type a value.
-    * Press the Tab key.  
-11. Close the page.
-12. In the Quantity field, enter a number.
-13. Click Save.
-    * When you click Save, the barcode check is run, and in this case it will display an error stating that the expected check digit is 8, but that 3 was found. Manually update the barcode number so that 8 is at the end.  
-14. In the Bar code field, enter or select a value.
-15. In the Bar code field, type a value.
-    * Press the Tab key.  
-16. Close the page.
-17. Click Save.
-18. Close the page.
+1. Select **Released product maintenance** on the homepage.
+2. Go to **Products > Released products** under the **Links** section.
+3. In the list, find and select the desired record. For this example, select item number **M0001**.
+4. On the Action Pane, select **Manage inventory**.
+5. Select **Bar codes**.
+6. Select **New**.
+7. Mark the selected row that is created in the list below.
+8. In the **Barcode setup** field, enter or select a value.
+9. In the **Bar code** field, enter or select a value.
+10. In the **Bar code** field, type a value.  
+11. In the **Quantity** field, enter a number.
+12. Select **Save**.
+13. Close the page. 
 

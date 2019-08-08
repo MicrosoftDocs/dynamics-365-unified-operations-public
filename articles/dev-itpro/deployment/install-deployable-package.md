@@ -5,7 +5,7 @@ title: Install deployable packages from the command line
 description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24191
@@ -217,4 +217,4 @@ The runbook provides the sequence of steps that must be run to update the enviro
     AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
     ```
 
-- To verify database synchronization, in the **aosservce\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.
+- To verify database synchronization, in the **aosservice\\scripts\\** folder, find and open the **dbsync.error.txt** file, and look for any errors.

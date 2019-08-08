@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ProjManagementWorkspace 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -60,7 +60,7 @@ The following table provides details about the metrics that are found on each re
 | Hours             | <ul><li>Actual billable utilized hours vs. actual billable burden hours vs. budget hours</li><li>Actual billable utilized hours vs. actual billable burden hours by project</li><li>Actual billable utilized hours vs. actual billable burden hours by resource</li><li>Actual billable hours ratio by project</li><li>Actual billable hours ratio by resource</li></ul> |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
-in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
+in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
 
 ## Understanding the data model and entities
 

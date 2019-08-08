@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Set up vendor invoice policies
-description: Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. 
+description: This topic explains how to set up vendor invoice policies in Dynamics 365 for Finance and Operatoins. 
 author: ShivamPandey-msft
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,62 +30,49 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
+This topic explains how to set up vendor invoice policies in Dynamics 365 for Finance and Operatoins. Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
 
-Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal. 
-
-Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.
-
-This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the Invoice matching configuration key is selected.
+- Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.  
+- Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.  
+- This recording uses the USMF demo company. The accounts payable manager or accounting manager role would perform these steps. Before you begin, make sure that the Invoice matching configuration key is selected.
 
 
 ## Prepare to create vendor invoice policies
-1. Go to Accounts payable > Setup > Accounts payable parameters.
-2. Click the Invoice validation tab.
-3. Select or clear the Automatically update invoice header status check box.
-4. Click OK.
-5. In the Post invoice with discrepancies field, select an option.
+1. Go to **Navigation pane > Modules > Accounts payable > Setup > Accounts payable parameters**.
+2. Select the **Invoice validation** tab.
+3. Select or clear the **Automatically update invoice header** status check box.
+4. Select **OK**.
+5. In the **Post invoice with discrepancies** field, select an option.
 6. Close the page.
-7. Go to Accounts payable > Policy setup > Vendor invoice policies.
-8. Click Parameters.
-9. Click btnAdd.
-10. Close the page.
+7. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
+8. Select **Parameters**.
+9. Select **Add**.
+10. Close the page to return to the home page.
 
 ## Create policy rule types for vendor invoices
-1. Go to Accounts payable > Policy setup > Vendor invoice policy rule types.
-2. Click New.
-3. In the Rule name field, type a value.
-4. In the Description field, type a value.
-5. In the Query name field, click the drop-down button to open the lookup.
-6. In the list, find and select the desired record.
-7. In the list, click the link in the selected row.
-8. Click Save.
-9. Close the page.
+1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policy rule types**.
+2. Select **New**.
+3. In the **Rule name** and **Description** fields, type values.
+4. In the **Query name** field, select the drop-down button to open the lookup, then selec the desired record.
+5. Select **Save**.
+6. Close the page to return to the home page.
 
 ## Define a vendor invoice policy
-1. Go to Accounts payable > Policy setup > Vendor invoice policies.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Description field, type a value.
-5. Expand or collapse the Policy organizations section.
-6. In the tree, select 'Contoso Entertainment System USA'.
-7. Click Add.
-8. Expand or collapse the Policy rules section.
-9. Click Create policy rule.
-10. In the Policy rule description field, type a value.
-11. Click Filter.
-12. Click Add.
-13. In the list, mark the selected row.
-14. In the Table field, click the drop-down button to open the lookup.
-15. In the list, click the link in the selected row.
-16. In the Derived table field, click the drop-down button to open the lookup.
-17. In the list, click the link in the selected row.
-18. In the Field field, click the drop-down button to open the lookup.
-19. In the Field field, type a value.
-20. Close the page.
-21. In the Criteria field, type a value.
-22. Click OK.
-23. Click OK.
-24. Close the page.
-25. Close the page.
+1. Go to **Navigation pane > Modules > Accounts payable > Policy setup > Vendor invoice policies**.
+2. Select **New**.
+3. In the **Name** and **Description** fields, type values.
+4. Expand or collapse the **Policy organizations** section.
+5. In the tree, select **Contoso Entertainment System USA**.
+6. Select **Add**.
+7. Expand or collapse the **Policy rules** section.
+8. Select **Create policy rule**.
+9. In the **Policy rule description** field, type a value.
+10. Select **Filter**.
+11. Select **Add**. Select the desired record.
+12. In the **Table**, **Derived table**, and **Field** fields, select or enter options from the drop-down menus.
+13. Close the page.
+14. In the **Criteria** field, type a value.
+15. Select **OK**.
+16. Select **OK**.
+17. Close the pages to return to the home page.
 

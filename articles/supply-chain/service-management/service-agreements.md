@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service agreements
+title: Develop and establish service agreements overview
 description: Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service agreements
+# Develop and establish service agreements overview
 
 [!include [banner](../includes/banner.md)]
 

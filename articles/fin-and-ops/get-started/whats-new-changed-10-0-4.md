@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations version 10.0.4 (July 2019)
+title: What's new or changed in Finance and Operations version 10.0.4 (July 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,17 +29,16 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.4
 
 ---
-# Preview features in Finance and Operations version 10.0.4 (July 2019)
+# What's new or changed in Finance and Operations version 10.0.4 (July 2019)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July and has a build number of 10.0.136. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
-
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version was released in July and has a build number of 10.0.136. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
 
 
-## Set up interest distribution for cash accounts
+
+## Set up interest distribution for cash accounts (Public Sector)
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
 For more information, see [Interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
@@ -58,12 +57,12 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.4, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=328732&dbType=3&qc=cdb2117c03722ee9cdbcb2a2e0558dd5b40a37e3caa32850aca4c9a89c476eb2).
 
 ### Platform update 28
-Microsoft Dynamics 365 for Finance and Operations version 10.0.4 includes Platform update 28. To learn more about Platform update 28, see [Preview features in Finance and Operations platform update 28 (July 2019)](whats-new-platform-update-28.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.4 includes Platform update 28. To learn more about Platform update 28, see [What's new or changed in Finance and Operations platform update 28 (July 2019)](whats-new-platform-update-28.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
