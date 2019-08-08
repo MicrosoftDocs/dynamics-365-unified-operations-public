@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 ---
 
-# Quick tour of default category landing page and search results page
+# Quick tour of default category landing page and search results pages
 
-This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
+This topic provides an overview of the default category landing page and search results page in Dynamics 365 for Commerce e-Commerce.
 
 ## Default category landing page
 
