@@ -114,18 +114,16 @@ info("Method is ending. This is a message in the Infolog.");
 ```
 
 ## Running startup commands
-You use the **SysStartupCmd** class framework to run commands at startup. When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The following example shows the order that calls are run in when Finance and Operations starts.
+You use the **SysStartupCmd** class framework to run commands at startup. When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The startup calls are run in the following order:
 
-```X++
-appl.startup() // The SysStartupCmd class is instantiated here.
-sysStartupCmd.applInit()
-super()
-sysStartupCmd.applRun()
-info.startup()
-sysStartupCmd.infoInit()
-super()
-sysStartupCmd.infoRun()
-```
+1. **appl.startup()**: The SysStartupCmd class is instantiated here.
+1. **sysStartupCmd.applInit()**
+1. **super()**
+1. **sysStartupCmd.applRun()**
+1. **info.startup()**
+1. **sysStartupCmd.infoInit()**
+1. **super()**
+1. **sysStartupCmd.infoRun()**
 
 ### Commands that are available when Finance and Operations starts
 
@@ -138,33 +136,33 @@ The **SysStartupCmd.construct** method lists the commands that are available whe
 The following example shows how to run a new command when Finance and Operations starts. First, a class that extends **SysStartupCmd** is created. This new class performs your specific task. You then modify the construct method on **SysStartupCmd** to call your class. In the Finance and Operations Configuration Utility, on the **General** tab, in the **Command to run at application startup** field, you can add commands that are run at startup. Alternatively, you can use the **-startupcmd= MyCommand** command-line parameter.
 
 ```X++
-    public class SysStartupCmdAutoRun : extends SysStartupCmd 
+public class SysStartupCmdAutoRun : extends SysStartupCmd 
+{
+    void new(str s, str parm) 
     {
-        void new(str s, str parm) 
-        {
-            // Your code here.
-        }
+        // Your code here.
     }
+}
 
-    // This is a framework class. Customizing this class may cause problems with future upgrades to the software.
-    class SysStartupCmd
+// This is a framework class. Customizing this class may cause problems with future upgrades to the software.
+class SysStartupCmd
+{
+    // Code delete for readability
+
+    static SysStartupCmd construct(str startupCommand)
     {
         // Code delete for readability
-
-        static SysStartupCmd construct(str startupCommand)
+        switch (s)
         {
-            // Code delete for readability
-            switch (s)
-            {
-                // Other cases delete for readability    
-                case 'autorun':
-                    sysStartupCmd = new SysStartupCmdAutoRun(s,parm);
-                    break;
-                // Other cases delete for readability
-            }
-            // Code delete for readability
+            // Other cases delete for readability    
+            case 'autorun':
+                sysStartupCmd = new SysStartupCmdAutoRun(s,parm);
+                break;
+            // Other cases delete for readability
         }
+        // Code deleted for readability
     }
+}
 ```
 
 ## Batch processing classes
@@ -178,11 +176,13 @@ You implement classes by using the batch processing system, and by extending the
 1.  Create a class that extends the **RunBaseBatch** class.
 2.  Override the **RunBaseBatch.runsImpersonated** method to return a value of **true**, as shown in the following example.
 
-        public boolean runsImpersonated()
-        {
-            return true;
-        }
-
+    ```X++
+    public boolean runsImpersonated()
+    {
+        return true;
+    }
+    ```
+    
 3.  Confirm that the class calls only the following **Info** and **Global** class methods:
     -   add
     -   Info.copy
@@ -195,28 +195,30 @@ You implement classes by using the batch processing system, and by extending the
     -   Global::info
     -   Global::warning
 
-    **Note:** The **Info.line** and **Info.num** methods are inherited from the **xInfo** class.
+    The **Info.line** and **Info.num** methods are inherited from the **xInfo** class.
 
 ### Removing the Recurrence button from the batch processing dialog box
 
 When you implement a class by using the batch processing system, you can remove the **Recurrence** button by calling the **Args.parmEnum** method and passing the **NoYes::Yes** system enumeration value. The **NoYes** system enumeration determines whether the **Recurrence** button is removed from the dialog box. The default value is **NoYes::No**. In the following example, the **InventTransferMultiShip** class is implemented. The **BatchDialog::main** method creates the **Batch processing** dialog box.
 
-    static void noRecurrenceButton(Args _args)
-    {
-        Args a;
-        InventTransferMultiShip inventTransferMultiShip;
-        a = new Args();
-        inventTransferMultiShip = InventTransferMultiShip::construct();
-        a.caller(inventTransferMultiShip);
-        a.parmEnum(NoYes::Yes);
-        BatchDialog::main(a);
-    }
+```X++
+static void noRecurrenceButton(Args _args)
+{
+    Args a;
+    InventTransferMultiShip inventTransferMultiShip;
+    a = new Args();
+    inventTransferMultiShip = InventTransferMultiShip::construct();
+    a.caller(inventTransferMultiShip);
+    a.parmEnum(NoYes::Yes);
+    BatchDialog::main(a);
+}
+```
 
 ## Image manipulation classes
 Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.
 
 - **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
-- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the <strong>ImageListAppl\_\</strong>* application classes.
+- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the ImageListAppl\* application classes.
 
 ## Query object model
 The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. The following table describes the classes in the query object model.
@@ -230,6 +232,8 @@ The query object model contains classes that are used to define and run a query.
 | QueryBuildRange      | This class defines a subset of records that is returned, based on a single field. A range is translated into a **WHERE** clause in the query SQL statement. If more than one field is used to limit the query (**WHERE** clause), the data source will contain more than one range. |
 | QueryBuildDynalink   | This class contains information about a relation (limitation) to an external record. When the query is run, this information is converted to additional entries in the **WHERE** clause of the query SQL statement. This class can exist only on the parent data source of a query. Forms use the function when two data sources are synchronized. The child data source will then contain one or more DLLs to the parent data source. The function is used even if the two data sources are put in two different forms but are still synchronized. |
 | QueryBuildLink       | This class specifies the relation between the two data sources in the join. This class can exist only on a child data source. |
+
+You can also use the [SysDa API](sysda.md) to query data.
 
 ## System classes overview
 The source for system classes isn't available. A system class can have the following characteristics:
