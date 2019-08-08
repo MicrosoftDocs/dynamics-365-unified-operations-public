@@ -32,45 +32,45 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance plans
 
-This topic explains maintenance sequences in Enterprise Asset Management. A maintenance sequence defines when a pre-planned preventive maintenance job is to be carried out on an object. Maintenance sequences can be related to objects, object types, functional locations, or functional location types, but first you create the maintenance sequences to be used in your company.
+A maintenance plan defines when a pre-planned preventive maintenance job is to be carried out on an asset. Maintenance plans can be related to assets, asset types, functional locations, or functional location types, but first you create the maintenance plans to be used in your company.
 
-A maintenance sequence can have multiple maintenance sequence lines. Job type and interval are specified on the maintenance sequence line. There are two types of maintenance sequence lines:
+A maintenance plan can have multiple maintenance plan lines. Maintenance job type and interval are specified on the maintenance plan line. There are two types of maintenance plan lines:
 
 - Time  
 - Counter  
 
-Maintenance sequence lines of type "Time" are used for recurring planned maintenance based on a fixed time interval. Maintenance sequence lines of type "Counter" are used for planned maintenance or reactive maintenance based on object counter registrations. A maintenance sequence may include several maintenance sequence lines of both types.
+Maintenance plan lines of type "Time" are used for recurring planned maintenance based on a fixed time interval. Maintenance plan lines of type "Counter" are used for planned maintenance or reactive maintenance based on asset counter registrations. A maintenance plan may include several maintenance plan lines of both types.
 
 >[!NOTE]
->If no counter values have been registered for a counter type on an object, the maintenance sequence lines are omitted.
+>If no counter values have been registered for a counter type on an asset, the maintenance plan lines are omitted.
 
-First, you create the maintenance sequences you require for your preventive maintenance jobs and select the object types, objects, functional location types, and functional locations that should be related to each maintenance sequence. Afterwards, if required, you can also add maintenance sequences to an object or a functional location, which is done in **All objects** > select object > **Preventive maintenance** FastTab, or **All functional locations** > select functional location > **Preventive maintenance** FastTab.
+First, you create the maintenance plans you require for your preventive maintenance jobs and select the asset types, assets, functional location types, and functional locations that should be related to each maintenance plan. Afterwards, if required, you can also add maintenance plans to an asset or a functional location, which is done in **All assets** > select asset > **Asset maintenance plans** FastTab, or **All functional locations** > select functional location > **Maintenance plans** FastTab.
 
-If you add a maintenance sequence to object types or functional location types, it means that when you create new objects or functional locations with those object types or location types, the object or functional location will automatically be added to the maintenance sequence. The start date of the relation to a maintenance sequence will be the current date, which may need to be adjusted.
+If you add a maintenance plan to asset types or functional location types, it means that when you create new assets or functional locations with those asset types or functional location types, the asset or functional location will automatically be added to the maintenance plan. The start date of the relation to a maintenance plan will be the current date, which may need to be adjusted.
 
-## Set up maintenance sequences
+## Set up maintenance plans
 
-This sub section describes how to set up maintenance sequence lines and provides examples of how they can be used.
+This section describes how to set up maintenance plan lines and provides examples of how they can be used.
 
-1. Click **Enterprise asset management** > **Setup** > **Preventive maintenance** > **Maintenance sequences**.
+1. Click **Asset management** > **Setup** > **Preventive maintenance** > **Maintenance plans**.
 
 2. Click **New** to create a new sequence.
 
-3. Insert a maintenance sequence ID in the **Maintenance sequence** field, and a name in the **Name** field.
+3. Insert an ID in the **Maintenance sequence** field, and a name in the **Name** field.
 
-4. In the **Plan date** field, insert the start date from which planning can be done on the maintenance sequence. Note that time-based maintenance sequence lines may have other plan dates.
+4. In the **Plan date** field, insert the start date from which planning can be done on the maintenance plan. Note that time-based maintenance plan lines may have other plan dates.
 
-5. Select "Yes" in the **Active** toggle button to activate the maintenance sequence.
-
->[!NOTE]
->If you deactivate a maintenance sequence, no calendar posts will be created in the object calendar when you run a [schedule maintenance sequence](../preventive-and-reactive-maintenance/schedule-maintenance-sequences.md) job.
-
-6. The **Tolerance before** and **Tolerance after** fields relate to maintenance sequence lines in which the **Omit overlap** check box is selected (refer to step 17). The "Tolerance" fields are used to extend the interval in days in which, if several maintenance lines overlap, the most comprehensive / largest job is created as an object calendar line during maintenance sequence scheduling, while more frequent, overlapping jobs are omitted during maintenance sequence scheduling. Insert number of days in the **Tolerance before** field, for example "2".
-
-7. If you have inserted a value in **Tolerance before**, also insert number of days in the **Tolerance after** field, for example "2".
+5. Select "Yes" in the **Active** toggle button to activate the maintenance plan.
 
 >[!NOTE]
->The example described in this and the previous step means that if several maintenance sequence lines overlap, and **Omit overlap** is selected for one or more lines, the period of omitting object calendar lines is extended to a total of five days (the expected start date on the object calendar line *and* two days before *and* two days after that date).
+>If you deactivate a maintenance plan, no schedule posts will be created in the maintenance schedule when you run a schedule maintenenance plan job.
+
+6. The **Tolerance days before** and **Tolerance days after** fields relate to maintenance plan lines in which the **Supress overlappping maintenance jobs** check box is selected (refer to step 17). The "Tolerance" fields are used to extend the interval in days in which, if several maintenance plans overlap, the most comprehensive / largest job is created as a maintenance schedule line during maintenance plan scheduling, while more frequent, overlapping jobs are omitted during maintenance plan scheduling. Insert number of days in the **Tolerance days before** field, for example "2".
+
+7. If you have inserted a value in **Tolerance days before**, also insert number of days in the **Tolerance days after** field, for example "2".
+
+>[!NOTE]
+>The example described in this and the previous step means that if several maintenance plan lines overlap, and **Supress overlappping maintenance jobs** is selected for one or more lines, the period of omitting maintenance schedule lines is extended to a total of five days (the expected start date on the maintenance schedule line *and* two days before *and* two days after that date).
 
 8. The fields in the **Details** section show number of maintenance sequence lines
 set up on the maintenance sequence, and number of objects and functional
@@ -92,7 +92,7 @@ locations related to the maintenance sequence.
 
 16. In the **Interval** field, insert the number of times the line should be used for planning preventive maintenance jobs. Example: If you have created a line of type "Counter", and your counter is production quantity, and you insert the number "20000" in this field, new object calendar lines are created during preventive maintenance scheduling every time you are expected to produce 20,000 more items.
 
-17. The **Omit overlap** check box relates to time-based as well as counter-based line types. Select the check box to delete object calendar entries that are created on the same date. This is relevant if, for example, you have created a 1-month inspection line, a 6-month inspection line, and a 1-year inspection line. For the 1-year inspection you only want that inspection to be done, not the other two inspections, which would also fit in the time frame. In order to set up this example correctly, you set up the 1-year inspection line as the first line, the 6-month line as the second line, and the 1-month line as the third line, and you select the **Omit overlap** check box for the 1-month and 6-month lines. That way you ensure that when you reach the 1-year mark, the inspections for one month and six months are omitted, and an object calendar line is only created for the 1-year inspection line.
+17. The **Supress overlapping maintenance jobs** check box relates to time-based as well as counter-based line types. Select the check box to delete object calendar entries that are created on the same date. This is relevant if, for example, you have created a 1-month inspection line, a 6-month inspection line, and a 1-year inspection line. For the 1-year inspection you only want that inspection to be done, not the other two inspections, which would also fit in the time frame. In order to set up this example correctly, you set up the 1-year inspection line as the first line, the 6-month line as the second line, and the 1-month line as the third line, and you select the **Omit overlap** check box for the 1-month and 6-month lines. That way you ensure that when you reach the 1-year mark, the inspections for one month and six months are omitted, and an object calendar line is only created for the 1-year inspection line.
 
 >[!NOTE]
 >The example described in this step shows that the most comprehensive job, which contains the largest number of tasks, and which is not done so often, should always be inserted as the first line. The more frequent jobs are then inserted as separate lines in the order of frequency, placing the most frequent job at the bottom of the list.
