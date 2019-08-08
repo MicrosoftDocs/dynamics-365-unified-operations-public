@@ -113,58 +113,6 @@ info("Method is ending. This is a message in the Infolog.");
 // Output is "Method is ending. This is a message in the Infolog."
 ```
 
-## Running startup commands
-You use the **SysStartupCmd** class framework to run commands at startup. When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The startup calls are run in the following order:
-
-1. **appl.startup()**: The SysStartupCmd class is instantiated here.
-1. **sysStartupCmd.applInit()**
-1. **super()**
-1. **sysStartupCmd.applRun()**
-1. **info.startup()**
-1. **sysStartupCmd.infoInit()**
-1. **super()**
-1. **sysStartupCmd.infoRun()**
-
-### Commands that are available when Finance and Operations starts
-
-The **SysStartupCmd.construct** method lists the commands that are available when Finance and Operations starts. Here are some of these commands:
-
-+ AutoRun
-+ AOTImport
-+ Synchronize
-
-The following example shows how to run a new command when Finance and Operations starts. First, a class that extends **SysStartupCmd** is created. This new class performs your specific task. You then modify the construct method on **SysStartupCmd** to call your class. In the Finance and Operations Configuration Utility, on the **General** tab, in the **Command to run at application startup** field, you can add commands that are run at startup. Alternatively, you can use the **-startupcmd= MyCommand** command-line parameter.
-
-```X++
-public class SysStartupCmdAutoRun : extends SysStartupCmd 
-{
-    void new(str s, str parm) 
-    {
-        // Your code here.
-    }
-}
-
-// This is a framework class. Customizing this class may cause problems with future upgrades to the software.
-class SysStartupCmd
-{
-    // Code delete for readability
-
-    static SysStartupCmd construct(str startupCommand)
-    {
-        // Code delete for readability
-        switch (s)
-        {
-            // Other cases delete for readability    
-            case 'autorun':
-                sysStartupCmd = new SysStartupCmdAutoRun(s,parm);
-                break;
-            // Other cases delete for readability
-        }
-        // Code deleted for readability
-    }
-}
-```
-
 ## Batch processing classes
 You implement classes by using the batch processing system, and by extending the **RunBase** and **RunBaseBatch** classes. To remove the **Recurrence** button from the **Batch processing** dialog box, you use the **Args::parmEnum** method. We recommend that you designate a class to run as a server-bound batch method. Server-bound batch methods are more secure than batch methods that aren't server-bound for the following reasons:
 
