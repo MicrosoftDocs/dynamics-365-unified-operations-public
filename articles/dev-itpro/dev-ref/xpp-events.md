@@ -3,7 +3,7 @@
 
 title: X++ event terminology and keywords
 description: This topic describes event terminology and keywords in X++.
-author: RobinARH
+author: robinarh
 manager: AnnBe
 ms.date: 06/18/2019
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150303
 ms.assetid: 1b2d76d1-52d9-46b2-937f-5a3b62f2d516
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -49,8 +49,59 @@ The following table shows the keywords that describe the use of delegates.
 
 | Keyword or term           | Code      | Description           |
 |---------------------------|-----------|-----------------------|
-| delegate                                | `delegate myDelegate(str \_information) {}`                                | The code shows what the delegate looks like in the code editor. Because the return type is always **void**, it isn't mentioned in the syntax. No code is allowed inside the braces ({}).                                                               |
+| delegate                                | `delegate myDelegate(str information) {}`                                | The code shows what the delegate looks like in the code editor. Because the return type is always **void**, it isn't mentioned in the syntax. No code is allowed inside the braces ({}).                                                               |
 | eventHandler                            | `myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod);` | Although the syntax of the **eventHandler** keyword might give the impression that **eventHandler** is an X++ function, it isn't a function. The **eventHandler** keyword tells the compiler that a method is being subscribed to a delegate.         |
 | Subscribe or add a method to a delegate | `myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);`   | In the code, the static method **OtherClass::aStaticMethod** becomes subscribed to the delegate.              |
 | Call a delegate                         | `myClassInstance.myDelegate("Hello");`                                     | This call to the delegate prompts the delegate to call each method that is subscribed to the delegate. The subscribed methods are called in the same order in which they were added to the delegate. One subscribed method must be completed before the delegate calls the next method. |
 
+## Example
+
+The two classes in the following code example demostrate how to define an event, subscribe to an event, and raise an event. The **PointWithEvent** class defines a delegate, **moved**. The **move** method calls the **moved** delegate, thereby notifing any objects that have subscribed to the event. The **PointKeeper** class defines the **writeMove** method and assigns it as the event handler for the **moved** delegate of the **Point** instance created in the **createAndMove** method. 
+
+```X++
+class PointWithEvent
+{
+    // Instance fields.
+    real x;
+    real y;
+
+    // Constructor to initialize fields x and y.
+    void new(real _x, real _y)
+    {
+        x = _x;
+        y = _y;
+    }
+
+    void move(real x_offset, real y_offset)
+    {
+        x += x_offset;
+        y += y_offset;
+        this.moved(abs(x_offset) + abs(y_offset));
+    }
+
+    delegate void moved(real distance)
+    {
+    }
+
+}
+
+class PointKeeper
+{
+
+    public void createAndMove()
+    {
+        PointWithEvent point = new PointWithEvent(1.0, 2.0);
+
+        point.moved += eventhandler(this.writeMove);
+
+        point.move(4.0, 5.0);
+        // Output is "9.0".
+    }
+
+    public void writeMove(real distance)
+    {
+        info(any2Str(distance));
+    }
+
+}
+```
