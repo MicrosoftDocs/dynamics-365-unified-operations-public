@@ -101,30 +101,30 @@ This section describes how to set up maintenance plan lines and provides example
 
 >*Example:* If counter registrations are expected to be made once a month, you may insert the number '365' in this field because maintenance plan scheduling will always be based on the last 12 months and therefore create maintenance schedule lines based on the trend of the past year. On the other hand, if you insert the number '10' in this field, you expect counter registrations to be made more often, for example, on a daily basis. This means that when you schedule maintenance plan, counter registrations for the last 10 days are used as the basis for the scheduling of maintenance schedule lines.
 
-20. The **Plan date** field only relates to time-based line types. If the maintenance sequence line has another planning date than the entire maintenance sequence, select a date in the **Plan date** field on the line.
+20. The **Plan date** field only relates to time-based line types. If the maintenance plan line has another planning date than the entire maintenance plan, select a date in the **Plan date** field on the line.
 
-21. In the **Priority** field, you can select a work order priority as a further delimitation on the maintenance sequence line - to be used as a priority on work orders.
+21. In the **Service level** field, you can select a work order service level as a further delimitation on the maintenance plan line - to be used as a service level on work orders.
 
-22. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance sequence line when scheduling maintenance sequences.
+22. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance plan line when scheduling maintenance plans.
 
-23. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in the **Enterprise asset management parameters** form is used (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Work orders** link > **Preventive work order type** field).
+23. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in **Asset management** > **Setup** > **Asset management parameters** > **Work orders** link > **Preventive work order type** field is used.
 
-24. Use the **From date** and **To date** fields to create a repeated time-based maintenance sequence line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **From date** field.
+24. Use the **Season from** and **Season to** fields to create a repeated time-based maintenance plan line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **Season from** field.
 
-25. Insert the end date of the period to be repeated in the **To date** field.
+25. Insert the end date of the period to be repeated in the **Season to** field.
 
-26. In the **Repeat period** field, the current period to be repeated is shown. When the current period has passed, and you start a new year, the period shown in this field will be updated to reflect the next period in the repeat sequence.
+26. In the **Resulting period** field, the current period to be repeated is shown. When the current period has passed, and you start a new year, the period shown in this field will be updated to reflect the next period in the repeat sequence.
 
-27. On the **Objects** FastTab, select the objects that should be related to the maintenance sequence.
+27. On the **Assets** FastTab, select the assets that should be related to the maintenance plan.
 
-28. On the **Object types** FastTab, select the object types that should be related to the maintenance sequence.
+28. On the **Asset types** FastTab, select the asset types that should be related to the maintenance plan.
 
-29. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance sequence. If required, you can make the setup more specific by selecting a related object type, product, and model.
+29. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance plan. If required, you can make the setup more specific by selecting a related asset type, manufacturer, and model.
 
-30. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance sequence.
+30. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance plan.
 
 >[!NOTE]
->When work orders are manually created on objects that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.
+>When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.
 
 ## Interval types overview
 
