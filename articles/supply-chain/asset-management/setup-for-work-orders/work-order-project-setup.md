@@ -32,59 +32,58 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Work order project setup
 
-In the **Asset management** module, a project relation on a work order job is mandatory. The project associated with the work order job allows you to track costs on different projects related to Asset Management, for example, internal maintenance projects, service management projects, and investment projects. Refer to [Integration to project management and accounting](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md) for more information about project relations to work orders and assets.
+In the **Asset management** module, a project relation is required for every work order job. The project that is associated with a work order job lets you track costs on various projects that are related to Asset Management, such as internal maintenance projects, service management projects, and investment projects. For more information about how projects are related to work orders and assets, see [Integration to project management and accounting](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 ## Project setup for a work order job
 
-When you create a new work order job on a work order, the project setup in the **Project management and accounting** module, and the work order project setup in **Asset management** determine how projects can be used for cost control on the asset selected on the work order job. This section describes different parts of the project setup used on a work order: Parent project (Project ID) - Project type - Project activities - Financial dimensions:
+When you create a work order job on a work order, the project setup in the **Project management and accounting** module and the work order project setup in the **Asset management** module determine how projects can be used for cost control on the asset that is selected on that work order job. This section describes the following parts of the project setup that is used for a work order: the parent project (project ID), project type, project activities, and financial dimensions:
 
-- When you create a new work order job on a work order, a unique Project ID and a related project activity are automatically created for the work order job. However, if several work order jobs on a work order include the same asset, the same Project ID is used on those work order jobs, meaning one Project ID is created for each asset on a work order.  
-  - The parent project (Project ID) for a work order job is found in the parent project setup, explained in the procedure below. You can associate, for example, a customer or a functional location to a specific parent project. In that case, that parent project will be used each time you create work orders for that specific customer or that specific functional location. If you have not related a specific Project ID to, for example, a functional location, the next relevant parent project in the work order project setup will be used.  
-  - A project type is required for a Project ID. The project type is found in the project group setup, explained in the section and procedure below, or, if no match is found in the project group setup, the project group setup on the parent project is used.  
-  - The setup for requiring project activities on forecasts and journals is copied from the parent project to the work order project. If "Yes" is selected in the **Hour**, **Expense**, and **Item** toggle buttons in **Project management and accounting** > **Projects** > **All Projects** > select the project used as a parent project > **Setup** FastTab > **Require activity on journals** section, a project activity is mandatory on forecasts and journals.  
+- When you create a work order job on a work order, a unique project ID and a related project activity are automatically created for it. However, if several work order jobs on a work order include the same asset, the same project ID is used for them. In other words, one project ID is created for every asset on a work order.
+
+    - The parent project (project ID) for a work order job is found in the parent project setup. (For more information about the parent project setup, see the next section.) For example, if you associate a customer or a functional location with a specific parent project, the parent project is used every time that you create work orders for that customer or that functional location. If you don't relate a specific project ID to, for example, a functional location, the next relevant parent project in the work order project setup is used.
+    - A project type is required for every project ID. The project type is found in the setup of the project group setup. (For more information about the project group setup, see the next section.) If no match is found in the project group setup, the project group setup on the parent project is used.
+    - The setup for requiring project activities on forecasts and journals is copied from the parent project to the work order project. If the **Hour**, **Expense**, and **Item** options are set to **Yes** for the project that is used as a parent project, a project activity is mandatory on forecasts and journals. (To access these options, select **Project management and accounting** \> **Projects** \> **All Projects**, and then select the project that is used as a parent project. The options are in the **Require activity on journals** section on the **Setup** FastTab.)
+
 - Financial dimensions are copied from the asset and merged with the parent project.
 
-The section below explains how to set up parent projects and project groups, which are used for controlling and reporting regarding work orders.
+The next section explains how to set up parent projects and project groups. Parent project and parent groups are used to control work orders. They are also used for reporting about work orders.
 
 ## Set up work order projects
 
-Before you start creating work orders, you must set up work order projects. **Work order project setup** contains two links, **Parent project** and **Project group**. In the **Parent project** section, you can set up project relations to be used in case no project is set up on the asset selected on the work order job. Parent project setup is not required if your company uses asset projects. It is only relevant if you want to use work order projects instead of asset projects - in that case you must set up at least one parent project.
+Before you start to create work orders, you must set up work order projects. The **Work order project setup** page (**Asset management** \> **Setup** \> **Work orders** \> **Project setup**) contains two tabs: **Parent project** and **Project group**.
 
-In the **Project group** section, you can set up project groups to be associated with work order types, asset types, and assets.
+On the **Parent project** tab, you can set up project relations that can be used if no project is set up on the asset that is selected on the work order job. A parent project setup isn't required if your company uses asset projects. It's relevant only if you want to use work order projects instead of asset projects. In that case, you must set up at least one parent project.
 
-Project groups can be used to create specific categories (groups) used for cost control. *Example:* Creating project groups for specific asset types or work order types allow you to track maintenance costs by type on a detailed level.
+On the **Project group** tab, you can set up project groups that can be associated with work order types, asset types, and assets.
 
-Project groups are not mandatory. If you do not set up project groups, the parent project is used to determine the project group, and a child project is created from the parent project's project group.
+Project groups can be used to create specific categories (groups) that are used for cost control. For example, by creating project groups for specific asset types or work order types, you can do detailed tracking of maintenance costs by type.
 
-The setup allows complete integration with the **Project management and accounting** module, allowing you to track costs related to work orders in the related projects. Read more about the relation between work order projects, project stages and work order lifecycle states in [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md). The following procedure describes the work order project setup.
+Project groups aren't mandatory. If you don't set up project groups, the parent project is used to determine the project group, and a child project is created from the parent project's project group.
 
-1. Click **Asset management** > **Setup** > **Work orders** > **Project setup**. Make sure the **Parent project** link is selected.
-2. Click the **Add** button.
-3. Select a **Work order type**, **Functional location**, **Asset type**, **Asset**, as required, in the related fields. It is possible to fill out only one field, two fields, or all fields for each line. The number of fields you fill out determine the combination used when selection of a project ID is done in Asset Management. Read more about the combinations and the selection process in [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+The setup allows for complete integration with the **Project management and accounting** module. Therefore, you can track the costs that are related to work orders in the related projects. For more information about the relation between work order projects, project stages, and work order lifecycle states, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md). The following procedure describes the setup for work order projects.
 
-- If you select a functional location, the related child locations are automatically included. If you select an asset, it is possible to create more work order project setup lines for the same asset, but select different projects for the same asset.   
+1. Select **Asset management** \> **Setup** \> **Work orders** \> **Project setup**.
+2. On the **Parent project** tab, select **Add**.
+3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field, two fields, or all fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management. For more information about combinations and the selection process, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-4. In the **Project ID** field, select the project to be related to the setup you created in step 3.
-5. In the **End date** field, you can select a date if the project setup is to be valid for only a limited period. If no limitation is relevant, make sure the "None" option is selected.
+    If you select a functional location, the related child locations are automatically included. If you select an asset, you can create more work order project setup lines for the same asset, but you can select different projects for that asset.
 
-- Select **View** > **All** to see the **Valid from** field. The standard setup regarding start date is the date you add the work order project to the form. If required, you can set up a limited period for the work order project in the **Valid from** and **End date** fields.
+4. In the **Project ID** field, select the project that should be related to the setup that you created in step 3.
+5. If the project setup should be valid for only a limited period, select an end date in the **End date** field. Otherwise, select **None**.
 
+    By default, the start date is the date when you add the work order project to the page. It's controlled by the **Valid from** field, which is hidden by default. To show the **Valid from** field, select **View** \> **All**. You can then use the **Valid from** field together with the **End date** field to set up a limited period of validity for the work order project.
 
-![Figure 1](media/17-setup-for-work-orders.png)
+    ![Figure 1](media/17-setup-for-work-orders.png)
 
-6. Click the **Project group** link, and click the **Add** button.
+6. On the **Project group** tab, select **Add**.
 7. In the **Work order type** field, select a work order type.
-8. If you want the project group association to be more specific, select **Asset type** or **Asset** in the related fields.
-9. In the **Project group** field, select the project group to be related to the work order type. Examples: A work order type called "Preventive maintenance" may be associated with a project group called "Prev Maint" or "Internal". A work order type called "Investment", to be used for work orders related to investments and fixed assets, may be associated with a project group called "Invest" or "Investment".
-10. Click **Save**.
+8. If you want the project group association to be more specific, select an asset type in the **Asset type** field or an asset in the **Asset** field.
+9. In the **Project group** field, select the project group that should be related to the work order type. For example, a work order type that is named **Preventive maintenance** might be associated with a project group that is named **Prev Maint** or **Internal**. Alternatively, an **Investment** work order type that is used for work orders that are related to investments and fixed assets might be associated with a project group that is named **Invest** or **Investment**.
+10. Select **Save**.
 
 ![Figure 2](media/18-setup-for-work-orders.png)
 
-
->[!NOTE]
->Each time a new work order line is created, Asset management searches for a project group to be related to the work order job project, based on the setup described in this section. All project groups have a related project type. Project groups that use the project type "Time and material" or "Fixed-price" are only valid for assets that are related to a customer account.  
-
-
->[!NOTE]
->Regarding Parent project and Project group, when the system selects the available work order project or project group, the selection is based on the records you created in the procedure above. Asset Management goes through records related to the work order project to check for a possible match, always checking the most specific combination first. For the work order parent project, this means that, first, a possible match regarding Asset is checked. If no match is found, Asset type is checked. If no match is found, Functional location is checked, and so on. As you can see in the layout of the form, this means that Asset Management checks each record from right to left for a match (Asset, then Asset type, Functional location, and Work order type) to find the most specific combination. If no match is found, the "default" record is used in which only a Project ID is selected. Finding the related project group is a similar process. First, a possible match regarding Asset is checked, then Asset type, and Work order type. Also in this case, if no match is found, the "default" record is used in which only a Project group is selected.
-
+> [!NOTE]
+> Every time that a work order line is created, Asset Management searches for a project group that should be related to the work order job project. The search is based on the setup that is described in this topic. Every project group has a related project type. Project groups that have the **Time and material** or **Fixed-price** project type are valid only for assets that are related to a customer account.
+>
+> For parent projects and project groups, when the system selects the available work order project or project group, the selection is based on the records that you created by using the preceding procedure. Asset Management goes through records that are related to the work order project to check for a possible match. It always checks the most specific combination first. In other words, for the work order parent project, Asset Management first checks for a possible match for the **Asset** field. If no match is found, it checks for a match for the **Asset type** field. If no match is found, it checks for a match for the **Functional location** field, and so on. As you can see in the layout of the **Work order project setup** page, this behavior means that, to find the most specific combination, Asset Management checks each record from right to left for a match. If no match is found, the default record where only a project ID is selected is used. The process for finding the related project group is similar. Asset Management first checks for a possible match for the **Asset** field, then the **Asset type** field, and then the **Work order type** field. If no match is found, the default record where only a project group is selected is used.
