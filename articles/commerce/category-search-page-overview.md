@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quick tour of default category landing page and search results
+title: Quick tour of default category landing page and search results page
 description: This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
 author: josaw1
 manager: annbe
@@ -28,13 +28,13 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 ---
 
-# Quick tour of default category landing page and search results
+# Quick tour of default category landing page and search results page
 
 This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
 
 ## Default category landing page
 
-The default category landing page is the page that a website visitor generally lands on when selecting a category from the navigation hierarchy, It's part of the universal header-footer. The category page enables browsing, and sorting and refining the categorized products. 
+The default category landing page is the page that a website user generally lands on when selecting a category from the navigation hierarchy, It's part of the universal header-footer. The category page enables browsing, and sorting and refining the categorized products. 
 
   ![Default category landing view](./media/SimpleCategoryLandingDressCategory.png)
 
@@ -55,23 +55,23 @@ The following components are essential for a category.
 - **Total count** provides the total number of products that are defined in a particular category. 
 
 
-## Enriching a category landing page
+## Enrich a category landing page
 
-If you want a category landing page to have a more tailored experience for a specific category, you can choose to enrich the category landing page for that category. For example, if you might choose to add a marketing video and some category storytelling to get the shoppers attention. This can be done via enriching the page for this category. Refer to [Enriching a category landing page](./articles/commerce/enrich-a-category.md) for more details.
+If you want a category landing page to have a more tailored experience for a specific category, you can choose to enrich the category landing page for that category. For example, if you might choose to add a marketing video and some category storytelling to get the shoppers' attention. Refer to [Enriching a category landing page](./articles/commerce/enrich-a-category.md) for more details.
 
  ![Enriched category landing view](./media/CategoryLandingPages.png)
 
-## Auto-suggest & search results page
+## Auto-suggest and search results page
 
-Journey of product discovery for a website visitor begins with either navigating to a category from the navigation hierarchy or by typing the search term in the search-bar. 
+A website user may explore a site by either navigating to a category from the navigation hierarchy or by typing a search term in the search-bar. 
 
-As soon as website visitor starts typing in the search bar they encounter the **immersive auto-suggest**. 
+As soon as the user starts typing in the search bar, they encounter immersive auto-suggest, which are suggested search terms that offered by the site. 
 
-With new enhancements, here are the following kind of suggestions that a website visitor may discover as part of the immersive auto-suggest - 
+The following are some of the types of suggestions that mmay come up. 
 
-+ **Keywords** search for keywords across all products assorted to the channel
-+ **Products** directly navigable to product details page
-+ **Scoped category search suggestions** support for "keywords" match in various categories, which enables users to trigger the search for the keyword for that category.
+- **Keywords** are used by search to find items across all products assorted to the channel.
+- **Products** adirectly navigable to product details page
+- **Scoped category search suggestions** support for "keywords" match in various categories, which enables users to trigger the search for the keyword for that category.
  
 ![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
 
