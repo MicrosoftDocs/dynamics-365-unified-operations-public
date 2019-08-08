@@ -32,23 +32,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Work order types
 
+Work order types are used to categorize work orders. For example, you might have work orders that are related to preventive maintenance or corrective maintenance.
 
-A work order type is used to categorize a work order, for example relating to preventive maintenance or corrective maintenance. A work order type defines the work order lifecycle model affiliation. **Work order lifecycle model** defines which work order lifecycle states can be set on a work order, for example, "Created", "In Process", and "Finished".
+A work order type defines an affiliation with a work order lifecycle model. A work order lifecycle model defines the work order lifecycle states that can be set on a work order. (Examples of work order lifecycle states include **Created**, **In Process**, and **Finished**.)
 
-Refer to [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md) for more information about work order lifecycle states and project stages.
+For more information about work order lifecycle states and project stages, see [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md).
 
-1. Click **Asset management** > **Setup** > **Work orders** > **Work order types**.
-2. Click **New** to create a new work order type.
-3. Insert the work order type ID in the **Work order type** field and a name in the **Name** field.
-4. Select a lifecycle model in the **Work order lifecycle model** field.
-5. Select "Yes" on the **One maintenance worker** toggle button if all work order jobs related to a work order of this type should be scheduled to the same maintenance worker.
-6. In the **Cost type** field, select cost type, "Corrective", "Preventive", or "Investment". All work order jobs on a work order must contain the same cost type.
-7. In the **Mandatory** section, select "Yes" on the toggle buttons for which you want to ensure that information relating to faults or maintenance downtime is added to the work order.
-8. Click **Save**.
+1. Select **Asset management** \> **Setup** \> **Work orders** \> **Work order types**.
+2. Select **New** to create a work order type.
+3. In the **Work order type** field, enter an ID for the work order type.
+4. In the **Name** field, enter a name.
+5. In the **Work order lifecycle model** field, select a lifecycle model.
+5. Set the **One maintenance worker** option to **Yes** if all work order jobs that are related to a work order of this type should be scheduled to the same maintenance worker.
+6. In the **Cost type** field, select **Corrective**, **Preventive**, or **Investment**, as appropriate. All work order jobs on a work order must have the same cost type.
+7. In the **Mandatory** section, set the relevant options to **Yes** to specify which fault-related or maintenance downtime–related information is added to a work order of this type.
 
->[!NOTE]
->The toggle buttons in the **Mandatory** section relate to the toggle buttons on the **Validate** FastTab in **Work order lifecycle states** (**Asset management** > **Setup** > **Work orders** > **Lifecycle states**).
+    > [!NOTE]
+    > The options in the **Mandatory** section are related to the options on the **Validate** FastTab of the **Work order lifecycle states** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**).
 
+8. Select **Save**.
 
 ![Figure 1](media/16-setup-for-work-orders.png)
-
