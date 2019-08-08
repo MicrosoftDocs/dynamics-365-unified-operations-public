@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Rounds
-description: This topic explains rounds in Enterprise Asset Management.
+title: Maintenance rounds
+description: This topic explains maintenance rounds in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,29 +30,28 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Rounds
+# Maintenance rounds
 
-This topic explains rounds in Enterprise Asset Management. In **Enterprise Asset Management**, you can create rounds for various objects, on which you need to carry out a similar task at regular intervals. For example, lubrication jobs or safety inspection jobs that need to be carried out on a number of machines within the same intervals. First step is to create a round, including objects that require the same form of maintenance job. Next, you schedule the rounds. When you have completed the rounds schedule, you can see all the job records relating to the round in the **All object calendars**, **Open object calendars**, or **Open object calendar pools** grid views.
+In **Asset Management**, you can create maintenance rounds for various assets, on which you need to carry out a similar task at regular intervals. For example, lubrication jobs or safety inspection jobs that need to be carried out on a number of machines within the same intervals. First step is to create a maintenance round, including assets that require the same form of maintenance job. Next, you schedule the maintenance rounds. When you have completed the maintenance rounds schedule, you can see all the job records relating to the round in the **All maintenance schedule** and **Open maintenance schedule lines**.
 
 >[!NOTE]
->Rounds can also be set up on functional locations to be completed on the objects installed on the functional location at the time of creation of the round-based work order. Refer to [Create functional locations](../functional-locations/create-functional-locations.md) for more information on the
-setup of rounds on functional locations.
+>Maintenance rounds can also be set up on functional locations to be completed on the assets installed on the functional location at the time of creation of the round-based work order. Refer to [Create functional locations](../functional-locations/create-functional-locations.md) for more information on the setup of maintenance rounds on functional locations.
 
-## Set up a round
+## Set up a maintenance round
 
-1. Click **Enterprise asset management** > **Setup** > **Preventive maintenance** > **Rounds**.
+1. Click **Asset management** > **Setup** > **Preventive maintenance** > **Maintenance rounds**.
 
-2. Click **New** to create a new round.
+2. Click **New** to create a new maintenance round.
 
-3. Insert and ID in the **Round** field, and a name for the round in the **Name** field.
+3. Insert and ID in the **Maintenance round** field, and a name for the maintenance round in the **Name** field.
 
 4. Select a start date for the round in the **Start date** field.
 
 5. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from object calendar lines that are created from this round.
 
-6. In the **Work order type** field, select the work order type to be used on work orders created from this round.
+6. In the **Work order type** field, select the work order type to be used on work orders created from this maintenance round.
 
-7. In the **Priority** field, select the work order priority to be used on work orders created from this round.
+7. In the **Service level** field, select the work order service level to be used on work orders created from this maintenance round.
 
 8. On the **Lines** FastTab, click **Add** to add an object to the round.
 
