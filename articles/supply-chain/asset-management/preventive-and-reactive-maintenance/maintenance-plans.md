@@ -72,61 +72,56 @@ This section describes how to set up maintenance plan lines and provides example
 >[!NOTE]
 >The example described in this and the previous step means that if several maintenance plan lines overlap, and **Supress overlappping maintenance jobs** is selected for one or more lines, the period of omitting maintenance schedule lines is extended to a total of five days (the expected start date on the maintenance schedule line *and* two days before *and* two days after that date).
 
-8. The fields in the **Details** section show number of maintenance sequence lines
-set up on the maintenance sequence, and number of objects and functional
-locations related to the maintenance sequence.
+8. The fields in the **Details** group on the **Details** FastTab show number of maintenance plan lines set up on the maintenance plan, and number of assets and functional locations related to the maintenance plan.
 
-9. On the **Lines** FastTab, click **Add line** to create a new line.
+9. On the **Lines** FastTab, click **Add time line** or **Add asset counter line** to create a new maintenance plan line.
 
-10. Select the relevant line type, "Time" or "Counter", and click **Create**.
+10. Insert a description for the line in the **Work order description** field. The description is transferred to related work orders.
 
-11. Insert a description for the line in the **Description** field. The description is later transferred to the related work orders.
+11. In the **Maintenance job type** field, select the job type to which the maintenance plan line is related.
 
-12. In the **Job type** field, select the job type for which the maintenance sequence line is relevant.
+12. In the **Maintenance job type variant** and **Trade** fields, select the variant and trade related to the maintenance job type.
 
-13. In the **Variant** and **Trade** fields, select the job variant and job trade related to the job type.
+13. In the **Finish within days** and **Finish within hours** fields, you can insert expected end date in days or hours. The expected end date is inserted relative to the expected start date, which is calculated when maintenance schedule lines are created. For example, you can insert "7" in the **Finish within days** field to indicate that the related job should be completed within a week from the expected start date.
 
-14. In the **End days** and **End hours** fields, you can insert expected end date in days or hours. The expected end date is inserted relative to the expected start date, which is calculated when object calendar lines are created. For example, you can insert "7" in the **End days** field to indicate that the related job should be completed within a week from the expected start date.
+14. In the **Interval type** field, select the type of interval to be used on the maintenance plan line, for example, "Repeated..." or "Once...". Refer to the [Interval types overview](## Interval types overview) table below for a description of the relation between interval types and line types.
 
-15. In the **Interval type** field, select the type of interval to be used on the maintenance sequence line, for example, "Repeated..." or "Once...". In the [Interval types overview](## Interval types overview) table below, you will see a description of the relation between interval types and line types.
+15. The **Period** field only relates to time-based line types. Select the period type related to the period frequency.
 
-16. In the **Interval** field, insert the number of times the line should be used for planning preventive maintenance jobs. Example: If you have created a line of type "Counter", and your counter is production quantity, and you insert the number "20000" in this field, new object calendar lines are created during preventive maintenance scheduling every time you are expected to produce 20,000 more items.
+16. In the **Period frequency** field, insert the number of times the line should be used for planning preventive maintenance jobs. Example: If you have created a line of type "Counter", and your counter is production quantity, and you insert the number "20000" in this field, new maintenance sequence lines are created during preventive maintenance scheduling every time you are expected to produce 20,000 more items.
 
-17. The **Supress overlapping maintenance jobs** check box relates to time-based as well as counter-based line types. Select the check box to delete object calendar entries that are created on the same date. This is relevant if, for example, you have created a 1-month inspection line, a 6-month inspection line, and a 1-year inspection line. For the 1-year inspection you only want that inspection to be done, not the other two inspections, which would also fit in the time frame. In order to set up this example correctly, you set up the 1-year inspection line as the first line, the 6-month line as the second line, and the 1-month line as the third line, and you select the **Omit overlap** check box for the 1-month and 6-month lines. That way you ensure that when you reach the 1-year mark, the inspections for one month and six months are omitted, and an object calendar line is only created for the 1-year inspection line.
+17. The **Supress overlapping maintenance jobs** check box relates to time-based as well as counter-based line types. Select the check box to delete maintenance schedule entries that are created on the same date. This is relevant if, for example, you have created a 1-month inspection line, a 6-month inspection line, and a 1-year inspection line. For the 1-year inspection you only want that inspection to be done, not the other two inspections, which would also fit in the time frame. In order to set up this example correctly, you set up the 1-year inspection line as the first line, the 6-month line as the second line, and the 1-month line as the third line, and you select the **Supress overlapping maintenance jobs** check box for the 1-month and 6-month lines. That way you ensure that when you reach the 1-year mark, the inspections for one month and six months are omitted, and a maintenance schedule line is only created for the 1-year inspection line.
 
 >[!NOTE]
 >The example described in this step shows that the most comprehensive job, which contains the largest number of tasks, and which is not done so often, should always be inserted as the first line. The more frequent jobs are then inserted as separate lines in the order of frequency, placing the most frequent job at the bottom of the list.
 
-18. The **Counter** field only relates to counter-based line types. Select the counter type to be used on the line. If a counter type is not active on a related object, the maintenance sequence line is omitted.
+18. The **Counter** field only relates to counter-based line types. Select the counter type to be used on the line. If a counter type is not active on a related asset, the maintenance plan line is omitted.
 
-19. The **Counter time fence** field only relates to counter-based line types. Insert a number that defines how many days back counter registrations are checked when maintenance sequence scheduling is done. This means how far back are data (existing counter registrations) used as basis for calculating the trend that determines how many object calendar lines are created.
+19. The **Asset counter time fence in days** field only relates to counter-based line types. Insert a number that defines how many days back counter registrations are checked when maintenance plan scheduling is done. This means how far back are data (existing counter registrations) used as basis for calculating the trend that determines how many maintenance schedule lines are created.
 
->*Example:* If counter registrations are expected to be made once a month, you may insert the number '365' in this field because maintenance sequence scheduling will always be based on the last 12 months and therefore create object calendar lines based on the trend of the past year. On the other hand, if you insert the number '10' in this field, you expect counter registrations to be made more often, for example, on a daily basis. This means that when you schedule maintenance sequences, counter registrations for the last 10 days are used as the basis for the scheduling of object calendar lines.
+>*Example:* If counter registrations are expected to be made once a month, you may insert the number '365' in this field because maintenance plan scheduling will always be based on the last 12 months and therefore create maintenance schedule lines based on the trend of the past year. On the other hand, if you insert the number '10' in this field, you expect counter registrations to be made more often, for example, on a daily basis. This means that when you schedule maintenance plan, counter registrations for the last 10 days are used as the basis for the scheduling of maintenance schedule lines.
 
-20. The **Period** field only relates to time-based line types. Select the period
-type related to the interval.
+20. The **Plan date** field only relates to time-based line types. If the maintenance sequence line has another planning date than the entire maintenance sequence, select a date in the **Plan date** field on the line.
 
-21. The **Plan date** field only relates to time-based line types. If the maintenance sequence line has another planning date than the entire maintenance sequence, select a date in the **Plan date** field on the line.
+21. In the **Priority** field, you can select a work order priority as a further delimitation on the maintenance sequence line - to be used as a priority on work orders.
 
-22. In the **Priority** field, you can select a work order priority as a further delimitation on the maintenance sequence line - to be used as a priority on work orders.
+22. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance sequence line when scheduling maintenance sequences.
 
-23. Select the **Auto create** check box if you want a work order to be automatically created according to the selected maintenance sequence line when scheduling maintenance sequences.
+23. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in the **Enterprise asset management parameters** form is used (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Work orders** link > **Preventive work order type** field).
 
-24. If you have selected the **Auto create** check box, you can select a work order type for the auto-created work order in the **Work order type** field. If you have selected the **Auto create** check box, and you do not select a work order type in this field, the work order type selected in the **Enterprise asset management parameters** form is used (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Work orders** link > **Preventive work order type** field).
+24. Use the **From date** and **To date** fields to create a repeated time-based maintenance sequence line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **From date** field.
 
-25. Use the **From date** and **To date** fields to create a repeated time-based maintenance sequence line within a 12-month period. *Example:* Equipment used for maintaining green areas requires service each spring within a predefined period. Insert the start date of the period to be repeated in the **From date** field.
+25. Insert the end date of the period to be repeated in the **To date** field.
 
-26. Insert the end date of the period to be repeated in the **To date** field.
+26. In the **Repeat period** field, the current period to be repeated is shown. When the current period has passed, and you start a new year, the period shown in this field will be updated to reflect the next period in the repeat sequence.
 
-27. In the **Repeat period** field, the current period to be repeated is shown. When the current period has passed, and you start a new year, the period shown in this field will be updated to reflect the next period in the repeat sequence.
+27. On the **Objects** FastTab, select the objects that should be related to the maintenance sequence.
 
-28. On the **Objects** FastTab, select the objects that should be related to the maintenance sequence.
+28. On the **Object types** FastTab, select the object types that should be related to the maintenance sequence.
 
-29. On the **Object types** FastTab, select the object types that should be related to the maintenance sequence.
+29. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance sequence. If required, you can make the setup more specific by selecting a related object type, product, and model.
 
-30. On the **Functional locations** FastTab, select the functional locations that should be related to the maintenance sequence. If required, you can make the setup more specific by selecting a related object type, product, and model.
-
-31. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance sequence.
+30. On the **Functional location types** FastTab, select the functional location types that should be related to the maintenance sequence.
 
 >[!NOTE]
 >When work orders are manually created on objects that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.
