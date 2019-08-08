@@ -85,20 +85,20 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 ![Figure 1](media/13-preventive-maintenance.png)
 
 
-## Schedule rounds
+## Schedule maintenance rounds
 
-When you have set up a round, you run a schedule job to schedule all the jobs related to the round.
+When you have set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
 
-1. Click **Enterprise asset management** > **Periodic** > **Preventive maintenance** > **Schedule rounds**, or **Enterprise asset management** > **Common** > **Object calendar** > **All object calendars** or **Open object calendar lines** or **Open object calendar pools** > select calendar entry in the list > **Rounds** button.
+1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select calendar entry in the list > **Maintenance rounds** button.
 
-2. In the **Period** field, select the period to be used for the scheduling job.
+2. In the **Period** field, select the period type to be used for the scheduling job.
 
-3. In the **Interval** field, insert the number of periods to be included in the scheduling job. The start of the scheduling is the current date.
+3. In the **Period frequency** field, insert the number of periods to be included in the scheduling job. The start of the scheduling is the current date.
 
-4. Select "Yes" on the **Auto create** toggle button if a work order should automatically be created on the basis of a round.
+4. Select "Yes" on the **Auto create** toggle button if a work order should automatically be created on the basis of a maintenance round.
 
 >[!NOTE]
->If this toggle button is set to "Yes", and the **Auto create** toggle button is also set to "Yes" on maintenance sequence lines in **Maintenance sequences**, work orders are created based on the maintenance sequence lines, and object calendar lines with status "Work order created" are also created. If only one of the **Auto create** toggle buttons is set to "Yes", in this drop-down or in **Maintenance sequences**, only object calendar lines are created with status "Created". In that case, no work orders are created.
+>If this toggle button is set to "Yes", and the **Auto create** toggle button is also set to "Yes" on the maintenance round in **Maintenance rounds** form, work orders are created based on the maintenance round lines, and maintenance schedule lines with status "Work order created" are also created. If only one of the **Auto create** toggle buttons is set to "Yes", in this drop-down or in **Maintenance rounds**, only maintenance schedule lines are created with status "Created". In that case, no work orders are created.
 
 5. If required, you can select specific rounds or another start date for the schedule job. Click **Filter**, and add the rounds to be included.
 
