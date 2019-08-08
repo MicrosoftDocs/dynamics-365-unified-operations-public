@@ -47,40 +47,43 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 4. Select a start date for the round in the **Start date** field.
 
-5. In the **Finish within days** and **Finish within hours** fields, you can insert expected end date in days or hours. The expected end date is inserted relative to the start date, which is calculated when maintenance schedule lines are created. For example, you can insert "7" in the **Finish within days** field to indicate that the related job should be completed within a week from the start date.
+5. In the **Finish within days** and **Finish within hours** fields, you can insert expected end date in days or hours. The expected end date is calculated relative to the start date, which is calculated when maintenance schedule lines are created. For example, you can insert "7" in the **Finish within days** field to indicate that the related job should be completed within a week from the start date.
 
-6. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from object calendar lines that are created from this round.
+6. Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from maintenance schedule lines that are created from this maintenance round.
 
 7. In the **Work order type** field, select the work order type to be used on work orders created from this maintenance round.
 
 8. In the **Service level** field, select the work order service level to be used on work orders created from this maintenance round.
 
-9. On the **Lines** FastTab, click **Add** to add an object to the round.
+9. On the **Asset lines** FastTab, click **Add** to add an asset to the maintenance round.
 
-10. Insert a line number in the **Line number** field to indicate the sequence of the objects in round.
+10. A line number is automatically inserted in the **Line number** field to indicate the sequence of the assets in maintenance round.
 
-11. Select the object in the **Object** field.
+11. Select the asset in the **Asset** field.
 
-12. Select the job type for the object in the **Job type** field.
+12. Select the maintenance job type for the asset in the **Maintenance job type** field.
 
-13. Select the job variant and job trade related to the job type in the **Variant** and **Trade** fields.
+13. If required, select **Maintenance job typ variant** and **Trade** related to the maintenance job type.
 
 14. Select the recurrence (day, week, etc.) in the **Period type** field.
 
-15. In the **Period length** field, insert the number of recurrences for the round.
+15. In the **Period frequency** field, insert the number of recurrences for the maintenance round.
 
-16. Select a start date for the object to be included in the round in the **Start date** field. This date may differ from the start date set on the round.
+16. Select a start date for the asset to be included in the maintenance round in the **Start date** field. This date may differ from the start date set on the maintenance round.
 
-17. Repeat steps 9-16 to add more assets to the round.
+17. Repeat steps 9-16 to add more assets to the maintenance round.
 
-18. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the round. Several work order pools can be connected to one round.
+18. On the **Functional location lines** FastTab, click **Add** to add a functional location to the maintenance round. Refer to the description of the related fields above. The same fields are available as for creating an asset line, but you can also select a **Manufacturer** and a **Model** for a functional location, if required.
+
+19. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the maintenance round. Several work order pools can be connected to one maintenance round.
+
+20. Save your setup.
 
 >[!NOTE]
->The **Objects** and **Lines** fields located in the **Details** section at the top of the form show the total number of objects and lines related to the selected round.
-
-The figure below shows a screenshot of the interface.
+>The **Assets** and **Lines** fields located in the **Details** group on the **Header** FastTab show the total number of assets and lines related to the selected maintenance round.
 
 ![Figure 1](media/13-preventive-maintenance.png)
+
 
 ## Schedule rounds
 
