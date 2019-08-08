@@ -45,7 +45,7 @@ The following code block types are standard for application classes:
 
 - **class and variable declarations**: The class declaration contains modifiers such as **public**, **private**, and **extends**. 
 - **variable declarations**: These are the field members for objects that are constructed from the class. When you type the keyword **this** on a class instance variable, IntelliSense can show a list of the members.
-- **new** method: This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference. For more information, see [Inheritance](inheritance.md).
+- **new** method: This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference. For more information, see [X++ inheritance](xpp-inheritance.md).
 - **finalize** method: This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the **finalize** method during garbage collection.
 
 Additional methods for a class have the following types:
