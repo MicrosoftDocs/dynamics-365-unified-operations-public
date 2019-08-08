@@ -45,12 +45,12 @@ The following components are essential for a category.
 - **Product placement** tiles are for the products that have been defined in this category by the merchandising manager as part of the navigation hierarchy configuration.
 - **Refiners and choice summary** are filters with counts that can be used to refine items. They are configured by the merchandising manager as part of the configuration of the "channel categories and product attributes" metadata. 
 - **Sorting options** are used by a website visitor to sort the products. By default, the following sorting options are available.
-	- Price low to high.
-	- Price high to low.
-	- Product name [A-Z].
-	- Product name [Z-A].
-	- Ratings low to high.
-	- Ratings high to low.
+	- Price - low to high.
+	- Price - high to low.
+	- Product name - [A-Z].
+	- Product name - [Z-A].
+	- Ratings - low to high.
+	- Ratings - high to low.
 - **Pagination** makes it posible for a website visitor to navigate from one page of categorized product results to another. 
 - **Total count** provides the total number of products that are defined in a particular category. 
 
@@ -61,38 +61,37 @@ If you want a category landing page to have a more tailored experience for a spe
 
  ![Enriched category landing view](./media/CategoryLandingPages.png)
 
-## Auto-suggest and search results page
+## Auto-suggest and search results pages
 
-A website user may explore a site by either navigating to a category from the navigation hierarchy or by typing a search term in the search-bar. 
+A website user may choose to explore a site by either navigating to a category from the navigation hierarchy or by typing a search term in the search bar. 
 
-As soon as the user starts typing in the search bar, they encounter immersive auto-suggest, which are suggested search terms that offered by the site. 
+As soon as the user starts typing in the search bar, they will encounter the immersive auto-suggest functionality, which provides  suggested search terms. 
 
 The following are some of the types of suggestions that mmay come up. 
 
 - **Keywords** are used by search to find items across all products assorted to the channel.
-- **Products** adirectly navigable to product details page
-- **Scoped category search suggestions** support for "keywords" match in various categories, which enables users to trigger the search for the keyword for that category.
+- **Products** provide direct links to the product details page.
+- **Scoped category search suggestions** list various categories and enable users to search for the keyword for that category.
  
 ![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
 
-Now, if a website visitor would've clicked on the "Keywords" or "Scoped category search suggestions" or "entered triggered the search for no-known suggestions" then they are navigated to the search results page. 
+When a user clicks a keyword or scoped category search suggestion, or enters a search with no-known suggestions, the search results page comes up. 
 
-**Search results page** allows a website visitor to be able to browse, sort and refine the search results for their intended action.
+The search results page provides a list of search results that the user can browse, sort, and refine to find their desired item.
 
  ![Search landing](./media/SearchLanding.png)
 
-Apart from the Universal header footer section on the search page these are the following components that are considered to be essential for browsing of search results - 
+In addition to the universal header and footer section, the following components are essential for a search results page.
 
-1. **Product placement** - these are the product tiles of the products that are sorted (by default) based on the cloud-powered search relevancy score for the user-triggered search interaction.
-1. **Refiners & Choice summary** - these are the filters with counts that are marked to be available as an option to refine by  a Merchandising manager as part of the 'Channel categories & product attributes' metadata configuration in the back-office. 
-1. **Sorting options** - these are the options a website visitor can sort these search results. By default, sorting options that shall be available are the following 
-	- Price low to high
-	- Price high to low
-	- Product name [A-Z]
-	- Product name [Z-A]
-	- Ratings low to high
-	- Ratings high to low
+- **Product placement** tiles are for the products that are sorted (by default) based on the cloud-powered search relevancy score for the user search.
+- **Refiners and choice summary** are filters with counts that can be used to refine items. They are configured by the merchandising manager as part of the configuration of the "channel categories and product attributes" metadata. 
+- **Sorting options** are used by a website visitor to sort the products. By default, the following sorting options are available.
+	- Price - low to high.
+	- Price - high to low.
+	- Product name - [A-Z].
+	- Product name - [Z-A].
+	- Ratings - low to high.
+	- Ratings - high to low.
 	- Default
-1. **Pagination** - Allowing a website visitor to be able to navigate from one page results to another page of search results. 
-1. **Total count** - Providing hint to a website visitor about number of products that are in total matching their search criteria. 
-
+ **Pagination** makes it posible for a website visitor to navigate from one page of categorized product results to another. 
+- **Total count** provides the total number of products that are defined in a particular category that match the search criteria. 
