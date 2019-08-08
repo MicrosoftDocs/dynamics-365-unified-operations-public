@@ -142,32 +142,34 @@ This section describes how to set up maintenance plan lines and provides example
 
 
 >[!NOTE]
->When object calendar lines are created for time-based maintenance sequence lines, expected time is always at the start of the day. For counter-based maintenance sequence lines, expected time can be anytime during the day.
+>When maintenance schedule lines are created for time-based maintenance plan lines, expected time is always at the start of the day. For counter-based maintenance plan lines, expected time can be anytime during the day.
 
-Below you will find examples of the setup of time-based and counter-based maintenance sequence lines:
+Below you will find examples of the setup of time-based and counter-based maintenance plan lines:
 
-**Example 1 - Time-based maintenance sequence line:** A lubrication job may be set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the Interval type field, as shown in the figure below.
+**Example 1 - Time-based maintenance plan line:** A lubrication job may be set up in a fixed interval, occurring once a week. For that purpose, select "Repeated from plan date" in the **Interval type** field, as shown in the figure below.
 
 ![Figure 2](media/02-preventive-maintenance.png)
 
-**Example 2 - Time-based maintenance sequence line:** An inspection job may be set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the Interval type field, as shown in the figure below.
+**Example 2 - Time-based maintenance plan line:** An inspection job may be set up to be carried out approximately once a week. For that purpose, select "Repeated from last work order" in the **Interval type** field, as shown in the figure below.
 
 ![Figure 3](media/03-preventive-maintenance.png)
 
-**Example 3 - Counter-based maintenance sequence line:** A graphical illustration of an hour counter for which a new object calendar line is created each time 250 hours have passed. The interval type for this counter-based line is "Repeated from start date". The start date is the start date of the related objects in the **Object** detail view > **Preventive maintenance** FastTab > **Start date** field, or in the **Functional location** form > **Preventive maintenance** FastTab > **Start date** field. This is an example of a *preventive* maintenance sequence because the object calendar line is automatically created each time the threshold (+ 250) is reached. The figure below shows a graphical example.
+**Example 3 - Counter-based maintenance plan line:** A graphical illustration of an hour counter for which a new maintenance schedule line is created each time 250 hours have passed. The interval type for this counter-based line is "Repeated from start date". The start date is the start date of the related assets in the **All assets** details view > **Asset maintenance plans** FastTab > **Start date** field, or in the **Functional location** details view > **Maintenance plans** FastTab > **Start date** field. This is an example of a *preventive* maintenance plan because the maintenance schedule line is automatically created each time the threshold (+ 250) is reached. The figure below shows a graphical example.
 
 ![Figure 4](media/04-preventive-maintenance.png)
 
-**Example 4 - Counter-based maintenance sequence line:** A graphical illustration of a decrease in counter value, measuring brake pad wear. An object calendar line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance sequence because the object calendar line is not created until a measurement below 20 mm is registered. The figure below shows a graphical example.
+
+**Example 4 - Counter-based maintenance plan line:** A graphical illustration of a decrease in counter value, measuring brake pad wear. A maintenance schedule line is created when a counter registration below 20 mm is created on the brake pad. The interval type for this counter-based line is "Once reached below" or "Once from last start date". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement below 20 mm is registered. The figure below shows a graphical example.
 
 ![Figure 5](media/05-preventive-maintenance.png)
 
-**Example 5 - Counter-based maintenance sequence line:** A graphical illustration of a counter with a threshold of -18° Celsius. An object calendar line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance sequence because the object calendar line is not created until a measurement higher than -18° Celsius is registered. The figure below shows a graphical example.
+
+**Example 5 - Counter-based maintenance plan line:** A graphical illustration of a counter with a threshold of -18° Celsius. A maintenance schedule line is created when a counter registration above -18° Celsius is made. The interval type for this counter-based line is "Once reached above". This is an example of a *reactive* maintenance plan because the maintenance schedule line is not created until a measurement higher than -18° Celsius is registered. The figure below shows a graphical example.
 
 ![Figure 6](media/06-preventive-maintenance.png)
 
-- When you create a new object, and that object uses an object type related to a maintenance sequence, the maintenance sequence is automatically inserted in **All objects** > **Preventive maintenance** FastTab. Also, in the **Object types** setup, on the **Maintenance sequences** FastTab, the related maintenance sequences will automatically be inserted.  
-- If you add or remove object types or functional location types in **Maintenance sequences**, that change will only reflect on new objects created after you made the change.  
+- When you create a new asset, and that asset uses an asset type related to a maintenance plan, the maintenance plan is automatically inserted in **All objects** > **Asset maintenance plans** FastTab. Also, in the **Asset type defaults**, on the **Maintenance plans** FastTab, the related maintenance plans will automatically be inserted.  
+- If you add or remove asset types or functional location types in **Maintenance sequences**, that change will only reflect on new objects created after you made the change.  
 - If you add or remove objects or functional locations in **Maintenance sequences**, that change will automatically be updated in **All objects** > **Preventive maintenance** FastTab, or in **All functional locations** > **Preventive maintenance** FastTab.  
 
 
