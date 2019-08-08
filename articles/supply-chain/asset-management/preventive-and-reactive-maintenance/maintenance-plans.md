@@ -169,25 +169,27 @@ Below you will find examples of the setup of time-based and counter-based mainte
 ![Figure 6](media/06-preventive-maintenance.png)
 
 - When you create a new asset, and that asset uses an asset type related to a maintenance plan, the maintenance plan is automatically inserted in **All objects** > **Asset maintenance plans** FastTab. Also, in the **Asset type defaults**, on the **Maintenance plans** FastTab, the related maintenance plans will automatically be inserted.  
-- If you add or remove asset types or functional location types in **Maintenance sequences**, that change will only reflect on new objects created after you made the change.  
-- If you add or remove objects or functional locations in **Maintenance sequences**, that change will automatically be updated in **All objects** > **Preventive maintenance** FastTab, or in **All functional locations** > **Preventive maintenance** FastTab.  
+- If you add or remove asset types or functional location types in **Maintenance plans**, that change will only reflect on new assets created after you made the change.  
+- If you add or remove assets or functional locations in **Maintenance plans**, that change will automatically be updated in **All assets** > **Asset maintenance plans** FastTab, or in **All functional locations** > **Maintenance plans** FastTab.  
 
 
 ![Figure 7](media/07-preventive-maintenance.png)
 
 
-## Add a maintenance sequence to an object
+## Add a maintenance plan to an asset
 
-1. Click **Enterprise asset management** > **Common** > **Objects** > **All Objects** or **Active objects**.
+1. Click **Asset management** > **Common** > **Assets** > **All assets** or **Active assets**.
 
-2. Select the object on which you want to set up a maintenance sequence and click **Edit**.
+2. Select the asset on which you want to set up a maintenance plan and click **Edit**.
 
-3. On the **Preventive maintenance** FastTab, click **Add line** to add a maintenance sequence to the object.
+3. On the **Asset maintenance plans** FastTab, click **Add line** to add a maintenance plan to the asset.
 
-4. In the **Maintenance sequence** field, select the relevant sequence.
+4. In the **Maintenance plan** field, select the relevant maintenance plan.
 
-5. In the **Start date** field, select the date from which planning of preventive maintenance jobs can be done.
+5. In the **Start date** field, select the date from which planning of preventive maintenance jobs can be done. 
 
-The figure below shows a screenshot of the interface.
+6. Click **Save**. The **Active** field is automatically updated.
+
 
 ![Figure 8](media/08-preventive-maintenance.png)
+
