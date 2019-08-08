@@ -38,7 +38,7 @@ This topic describes how to create and use classes in X++.
 
 A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
 
-You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](static-class-classes.md).
+You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](xpp-static-classes.md).
 
 ## Declare a class
 
@@ -111,12 +111,12 @@ class Point
 
 Following is information about how to create a clean inheritance model and minimize problems when code is upgraded:
 
-  - Each class must have a single public construction method unless the class is abstract. If no initialization is required, use a static construct method. Otherwise, use a static new… method (the default constructor (new method) for the class should be protected).
-  - Each class should have at least one [static construct method](best-practices-for-static-construct-methods.md) method.
-  - Each class should have at least one [static new… method](best-practices-for-new-and-static-new-methods.md).
-  - Each class should have a [new method](best-practices-for-new-and-static-new-methods.md) (the default constructor). This method should be **protected**.
-  - Create [accessor methods](best-practices-for-accessor-methods.md) to get and set class variables.
-  - Create [init methods](best-practices-for-init-methods.md) to carry out any specialized initialization tasks that should be carried out after instantiation.
+  - Each class must have a single public construction method unless the class is abstract. If no initialization is required, use a static construct method. Otherwise, use a static **new** method (the default constructor for the class should be protected).
+  - Each class should have at least one static **construct** method method.
+  - Each class should have at least one static **new** method.
+  - Each class should have a **new** method (the default constructor). This method should be **protected**.
+  - Create accessor methods to get and set class variables.
+  - Create **init** methods to carry out any specialized initialization tasks that should be carried out after instantiation.
 
 ### Create other objects in a constructor
 
@@ -246,7 +246,7 @@ Static methods, which are also known as *class methods*, belong to a class and a
     ClassName::methodName();
 ```
 
-If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [Static class members](static-class-classes.md).
+If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [Static class members](xpp-static-classes.md).
 
 ### main methods
 
