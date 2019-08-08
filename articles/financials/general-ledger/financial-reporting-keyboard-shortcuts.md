@@ -77,7 +77,7 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 | Ctrl+Arrow | Moves the focus to the farthest cell in the direction of the arrow. |
 | Ctrl+Home | Moves the focus to the first cell in the control. |
 | Ctrl+End | Moves the focus to the last cell in the control. |
-| Ctrl+Page down/Up | Same as Page down or Page up. |
+| Ctrl+Page down/Page Up | Same as Page down or Page up. |
 | Space| Changes the state of a check box, otherwise clears the value for an editable cell |
 | Enter | Commits any changes to the current cell and row and moves the focus to the cell directly below the current cell. If the focus is in the last row, commits any changes without moving the focus. |
 | Esc | If the control is in edit mode, cancels the edit. If the control is not in edit mode, reverts any changes that have been made to the current row. |
