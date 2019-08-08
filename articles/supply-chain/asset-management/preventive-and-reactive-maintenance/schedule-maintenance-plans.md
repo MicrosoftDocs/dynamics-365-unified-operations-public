@@ -69,11 +69,10 @@ Regarding counter-based maintenance plans: In the figures below, two different c
 
 In the first example, the expected 2,000 km are not reached every month. According to the counter-based maintenance plan, the threshold is 2,000 km, meaning when you run a maintenance plan scheduling, a maintenance schedule line should be created each time the 2,000-kilometer threshold is reached. In example 1, there are 4 registration lines, but the 2,000-kilometer threshold is only reached once. This means that when you run schedule maintenance plans this asset, for example for a 3-month period, only one maintenance schedule line will be created.
 
-In the next figure, 2,000 km or more are registered every month. Therefore, three maintenance lines would be created if you schedule maintenance plans for this asset for a 3-month period.
+In the next figure, 2,000 km or more are registered every month. Therefore, three maintenance lines would be created if you schedule maintenance plans for this asset for a 3-month period. 
 
 The examples described here show that all counter registrations made on an asset show a trend describing wear and tear on the asset. That trend is used as calculation basis at the time of maintenance plan scheduling.
 
 ![Figure 3](media/11-preventive-maintenance.png)
 
 ![Figure 4](media/12-preventive-maintenance.png)
-
