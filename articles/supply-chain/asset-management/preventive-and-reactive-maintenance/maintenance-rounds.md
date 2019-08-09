@@ -67,7 +67,7 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 14. Select the recurrence (day, week, etc.) in the **Period type** field.
 
-15. In the **Period frequency** field, insert the number of recurrences for the maintenance round.
+15. In the **Period frequency** field, insert the number of recurrences for the maintenance round, for example...
 
 16. Select a start date for the asset to be included in the maintenance round in the **Start date** field. This date may differ from the start date set on the maintenance round.
 
