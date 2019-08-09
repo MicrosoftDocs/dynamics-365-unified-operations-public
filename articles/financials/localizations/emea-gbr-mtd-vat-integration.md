@@ -566,14 +566,7 @@ Determining the corresponding values of the headers is supported by calling the 
 
 ### Setup
 
-To activate the transmission of fraud prevention headers during interoperating with API of the HMRC, import the following versions of ER configurations from the Lifecycle Services (LCS) portal.
-
-| \#  | GER configuration name              | Type                              | Version |
-|--------|-----------------------------------------|--------------------------------------|-------------|
-| 1      | **Electronic Messages framework model** | **Model**                            | 22          |
-| 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 22.24       |
-| 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 22.13       |
-
+To activate the transmission of fraud prevention headers during interoperating with API of the HMRC, import the ER configurations of versions mentioned in the previouse paragrahp from the Lifecycle Services (LCS) portal.
 
 > [!IMPORTANT]
 > When new versions of ER configurations are imported, check that following configurations are marked as **Default for model mapping**:
@@ -582,11 +575,13 @@ To activate the transmission of fraud prevention headers during interoperating w
 
 When the ER configurations are imported, fraud prevention parameters will be transmitted as part of the HTTP request the HMRC.
 
-When you initiate a request to the HMRC without activating a batch job, the following dialog will inform about what information will be sent to the HMRC.
+When you initiate a request to the HMRC without activating a batch job, the following page will inform about what information will be sent to the HMRC.
 
 ![JSON object](media/fraud-prevention-headers-message.png)
 
-If the transmission on this stage is canceled, the status of the electronic message will change to **Error** and a description of the error will be attached to the Action log. You can click **Send report** to continue the transmission of the same electronic message.
+User must consent transmission of the information listed in the page by marking the check box, “Submit” will be activate and user will be able to click it to proceed further with request to HMRC. 
+
+If the transmission on this stage is canceled (“Do not submit” button is clicked), the status of the electronic message will change to **Error** and a description of the error will be attached to the Action log. You can click **Send report** to continue the transmission of the same electronic message.
 
 When a request to the HMRC in a batch job is initiated, the fraud prevention headers will be transmitted to the HMRC and information about what headers were sent will be attached to the batch job. To view this information, go to **System administration** \> **Inquires** \> **Batch jobs**, and select your batch job. You can review the log details by selecting **Batch job** \> **Log** on the Action Pane.
 
