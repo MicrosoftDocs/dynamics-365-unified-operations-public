@@ -489,21 +489,19 @@ The **WEB_APP_VIA_SERVER** connection method assumes transmission of the followi
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Gov-Client-Public-IP**             | The public IP address (IPv4 or IPv6) from which the originating device makes the request.                                               | Not included |
 | **Gov-Client-Public-Port**           | The public TCP port that the originating device uses when initiating the request.                                                       | Not included |
-| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | Not included |
+| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | **Included** (in part 2) |
 | **Gov-Client-User-IDs**              | A key-value data structure containing the user identifiers.                                                                             | Not included |
-| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | Not included |
+| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | **Included** (in part 2) |
 | **Gov-Client-Local-IPs**             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included |
-| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | Not included |
-| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | Not included |
-| **Gov-Client-User-Agent**            | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | Not included |
-| **Gov-Client-Browser-Plugins**       | A list of browser plug-ins on the originating device.                                                                                    | Not included |
-| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not included |
-| **Gov-Client-Browser-Do-Not-Track**  | Whether the **Do Not Track option** is enabled on the browser.                                                                              | Not included |
+| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | **Included** (in part 2) |
+| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | **Included** (in part 2) |
+| **Gov-Client-Browser-Plugins**       | A list of browser plug-ins on the originating device.                                                                                    | **Included** (in part 2) |
+| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | **Included** (in part 2) |
+| **Gov-Client-Browser-Do-Not-Track**  | Whether the **Do Not Track option** is enabled on the browser.                                                                              | **Included** (in part 2) |
 | **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not included |
-| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | **Included**  |
+| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | **Included** (in part 1) |
 | **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included |
 | **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not included |
-| **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not included |
 | **Gov-Vendor-Forwarded**             | A list that details hops over the internet between services that terminate TLS.                                                         | Not included |
 
 
@@ -513,16 +511,24 @@ The **BATCH_PROCESS_DIRECT** connection method assumes transmission of the follo
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not included |
 | **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not included |
-| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | **Included**   |
+| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | **Included** (in part 1)  |
 | **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included. |
-| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | **Included**   |
-| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | **Included**   |
+| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | **Included**  (in part 1) |
+| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | **Included** (in part 1) |
 | **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included |
-| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | **Included**   |
+| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | **Included** (in part 1)  |
 
-### Implementation details
+### "Included in (in part 1)"
 
-To support the possibility of detecting the parameters required by HMRC for fraud prevention, such as time-zone and MAC address in BATCH_PROCESS_DIRECT connection method and the software version in both WEB_APP_VIA_SERVER and BATCH_PROCESS_DIRECT connection methods, X++ methods were included into the application part. The following table provides information about versions of Finance and Operations that include these methods.
+HTTP headers marked in the "Coverage" column as "Included in (in part 1)" are supported in the following and later versions of Electronic reporting configurations:
+
+| \#  | GER configuration name              | Type                              | Version |
+|--------|-----------------------------------------|--------------------------------------|-------------|
+| 1      | **Electronic Messages framework model** | **Model**                            | 22          |
+| 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 22.24       |
+| 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 22.13       |
+
+In respect to these versions of Electronic reporting configurations, application must be of the following or later version:
 
 | Finance and Operations version     | Build number |
 |-----------------------------------------------------|------------------|
@@ -532,7 +538,27 @@ To support the possibility of detecting the parameters required by HMRC for frau
 
 For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4504462 must be installed.
 
-In Finance and Operations, request headers are composed by the **MTD VAT web request headers format (UK)** format in the Electronic Reporting (ER) module. To support fraud prevention headers, this format configuration was extended with necessary nodes.
+### "Included in (in part 2)"
+
+HTTP headers marked in the "Coverage" column as "Included in (in part 2)" are supported in the following and later versions of Electronic reporting configurations:
+
+| \#  | GER configuration name              | Type                              | Version |
+|--------|-----------------------------------------|--------------------------------------|-------------|
+| 1      | **Electronic Messages framework model** | **Model**                            | 24          |
+| 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 24.31       |
+| 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 24.24       |
+
+In respect to these versions of Electronic reporting configurations, application must be of the following or later version:
+
+| Finance and Operations version     | Build number |
+|-----------------------------------------------------|------------------|
+| 10.0.5                                              | 10.0.197.0       |
+
+For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4513878 must be installed.
+
+### Implementation details
+
+In Finance and Operations, request headers are composed by the **MTD VAT web request headers format (UK)** format in the Electronic Reporting (ER) module, this format configuration was extended with necessary nodes.
 
 ![JSON object](media/format-new-nodes.png)
 
