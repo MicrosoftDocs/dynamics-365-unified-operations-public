@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,20 +40,19 @@ Business users use the [Electronic reporting (ER) framework](general-electronic-
 > Be aware that Business document management allows you to modify templates that are used to produce business documents such as orders, invoices, etc. While a template has been modified and a new version of it has been published, this version is used to generate required business documents. Business document management cannot be used to modify already generated business documents.
 
 ## Supported Microsoft Office applications
-The following Microsoft Office applications are supported in cloud and on-premises deployments of Finance and Operations:
 
-- To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed.
+To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed. This is supported in cloud and on-premises deployment of Finance and Operations.
 
 ## Business document availability
 
 The following reports, with Excel-based templates, will available with the release of the public preview:
 
-**Account receivable** (August 2019)
+**Accounts receivable** (August 2019)
 
 - Sales advance invoice
 - Sales order packing slip
 
-**Account payable** (August 2019)
+**Accounts payable** (August 2019)
 
 - Purchase advance invoice
 - Purchase order
@@ -63,7 +62,7 @@ More reports will become available. Special notifications about additional repor
 
 A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-# Example: Enable, configure and use Business document management
+# Example: Enable, configure, and use Business document management
 
 To learn more about this feature, complete the example in this topic.
 
