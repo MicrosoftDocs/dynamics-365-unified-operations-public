@@ -84,11 +84,15 @@ Workspace icon image
 
 Workspace icon image overlaid to show the circular portion visible on the tile as well as the area set aside for the icon.
 
+Using this image on a workspace tile yields the following result on the dashboard. 
+
+[![newWorkspaceIcon](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+
 
 ### Platform update 28 or earlier
 For older versions of the product, the icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
 
-![Workspace icon for older versions](./media/baseIcon.png) 
+![Workspace icon for older versions](./media/newicon.png) 
 
 Workspace icon image
 
@@ -96,7 +100,7 @@ Workspace icon image
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newworkspaceicon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
 
 
 
