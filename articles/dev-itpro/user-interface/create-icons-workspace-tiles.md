@@ -39,17 +39,18 @@ This topic provides guidelines and recommendations for creating and assigning ic
 The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Symbol font](symbol-font.md). This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
 
 ## Implementation details
+For workspace icons, we recommend using an AOT resource for the icon. While the out-of-the-box symbols will work, we recommend creating your own so that multiple workspaces don't use the same icons. For each workspace that needs an icon, create a new image file that adheres to the guidelines below. Note that the recommended guidance for newer versions of the product has changed.
+
 ### Icon creation
-
-For workspace icons we recommend using an AOT resource for the icon. While the out-of-the-box symbols will work, we recommend creating your own so that multiple workspaces don't use the same icons. For each workspace that needs an icon, create a new image file that adheres to the following guidelines:
-
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The icon should have a transparent background with white content. The framework will then set a default background color to match the theme.
 -   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered 21 x 21 px square (see the illustration below).
     -   The recommended image and icon sizes correspond to the out-of-the-box workspaces. Larger images are allowed; however, the size and positioning of the icon relative to the full image should be maintained regardless of image size.
     -   Following this recommendation ensures the following:
-        -   Your workspace icon matches the size of other workspace icons.
+        -   Your workspace icon matches the styling and size of other workspace icons.
         -   The content of your workspace icon does not get cropped by the CSS that renders the image as a circle.
+-   **Platform update 29 or later** -- The icon should have a **white background with transparent content**. 
+-   **Platform update 28 or earlier** -- The icon should have a transparent background with white content.
+-    In either case, the framework will set a default background color for the transparent portions of your image that will match the current user theme.
 
 ![workspaceIconSizing](./media/workspaceiconsizing.png)
 
@@ -62,14 +63,16 @@ As you create a workspace tile, adhere to the following guidelines:
     -   ImageLocation=AOTResource
     -   NormalImage=&lt;name of AOTResource&gt;
 
-## Example
+## Example 
 Consider the following image/icon that is to be used for a new workspace. 
 
 [![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
 
-This icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
+### Platform update 29 or later 
 
-![newIcon](./media/newicon.png) 
+This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas. 
+
+![Workspace icon following new guidance](./media/baseIcon-PU29.png) 
 
 Workspace icon image
 
@@ -77,9 +80,15 @@ Workspace icon image
 
 Workspace icon image overlaid to show the circular portion visible on the tile as well as the area set aside for the icon.
 
+
+### Platform update 28 or earlier
+For older versions of the product, the icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
+
+![Workspace icon for older versions](./media/baseIcon-PU28.png) 
+
+Workspace icon image
+
 Using this image on a workspace tile yields the following result on the dashboard. 
 
 [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
-
-
 
