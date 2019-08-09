@@ -47,10 +47,9 @@ When you have scheduled preventive maintenance jobs, next step is to create work
 
 3. In the **Parameters** section, select how many work orders should be created. You can create one work order per maintenance schedule line, or a number of work orders based on your selections in the **One work order per** section.
 
-4. Select a **Work order type** to be used on all the work orders you create.
+4. Select a **Work order type** that will be used on all the work orders you create.
 
 5. Click **OK**. One or more work orders are created.
-
 
 ![Figure 1](media/18-preventive-maintenance.png)
 
