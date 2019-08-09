@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Object calendar
-description: This topic explains the object calendar in Enterprise Asset Management.
+title: Maintenance schedule
+description: This topic explains maintenance schedule in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,14 +30,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object calendar
+# Maintenance schedule
+The maintenance schedule contains a list of all the expected preventive maintenance plans, maintenance requests, and maintenance rounds to be carried out. Some schedule lines may have been converted to work orders.
 
-This topic explains the object calendar in Enterprise Asset Management. The object calendar contains a list of all the expected preventive maintenance sequences, requests, and rounds to be carried out. Some calendar entries may have been converted to work orders.
+The four maintenance schedule views are slightly different, depending on which maintenance schedule lines you want to see.
 
-There are four object calendar views that are slightly different, depending on which calendar posts you want to see.
-
-| All object calendars       | All calendar entries are shown in this calendar.                                                                                                                                             |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| All maintenance schedule       | All maintenance schedule lines are shown in this calendar. |
 | My object calendars        | All calendar entries containing objects installed on functional locations to which you are related as a worker (set up in [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)) are shown in this calendar. |
 | Open object calendar lines | Calendar entries with status "Created" - meaning that they have not yet been converted to a work order or discarded - are shown in this calendar.                                            |
 | Open object calendar pools | Calendar entries connected to a work order pool are shown in this calendar.                                                                                                                  |
@@ -67,4 +65,4 @@ object](../objects/create-an-object.md).
 
 The figure below shows a screenshot of the interface.
 
-![Figure 1](media/15-preventive-maintenance.png)
+![Figure 1](media/16-preventive-maintenance.png)
