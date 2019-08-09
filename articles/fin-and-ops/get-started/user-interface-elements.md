@@ -44,7 +44,7 @@ This topic names and describes the UI (User Interface) components used in Dynami
 - **Action Pane**: The bar beneath the navigation bar. Here, you can select tabs to change records shown in the page. You can **Edit** and **Save** the records here.  
 - **tab**: When referring to the Action Pane, it's a menu of options that appears when you select a given option in the Action Pane.  
 
-![The following image shows the placement of these elements on the interface.](../media/user-interface-01.png)
+![The following image shows the placement of these elements on the interface.](media/user-interface-01.png)
 
 ## Tabs, fields, and sections
 
