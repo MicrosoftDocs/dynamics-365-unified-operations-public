@@ -135,7 +135,7 @@ The following table provides details about the result values.
 | **VATDue**       | <ul><li>[Tax amount] of **vatDueSales** box.</li><li>[Tax base amount] **totalValueSalesExVAT** box.</li><li>[Tax base amount] of **totalValueGoodsSuppliedExVAT** box. In addition to calculating this box, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the Sales tax code is set as **EU**.</li></ul>| <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul>|
 | **VATDueEC**     |<ul><li>[Tax amount] of **vatDueAcquisitions** and [Tax base amount] of **totalAcquisitionsExVAT** boxes. In addition to calculating these boxes, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li><li>[Tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul>|
 | **ECSupplies**   | <ul><li>[Tax base amount]of **totalValueSalesExVAT** box.</li><li>[Tax base amount] of **totalValueGoodsSuppliedExVAT** box. In addition to calculating the **totalValueGoodsSuppliedExVAT** box amount, the reporting type of the item sales tax group is not **Service**. The **Country/region type** of the sales tax code is "EU".</li></ul>| <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul>|
-| **VATReclaimed** | <ul><li>[Deductible sales tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li><li>[Tax amount] of **vatDueAcquisitions** box. In addition to calculating this box, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li></ul>| <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li></ul> |
+| **VATReclaimed** | <ul><li>[Deductible sales tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li><li>[Tax amount] of **vatDueAcquisitions** box. In addition to calculating this box, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li></ul>| <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
 | **Other**        | Use the **Not blank** value for this result and set it up at the end of your list of result values.| **Not blank**|
 
 
@@ -552,7 +552,7 @@ In respect to these versions of Electronic reporting configurations, application
 
 | Finance and Operations version     | Build number |
 |-----------------------------------------------------|------------------|
-| 10.0.5                                              | 10.0.197.0       |
+| 10.0.5                                              | 10.0.197.14       |
 
 For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4513878 must be installed.
 
@@ -602,6 +602,8 @@ If for some reason a company decides to address requests to the HMRC without tra
 > [!IMPORTANT]
 > API requests without fraud prevention headers may be rejected by HMRC. We recommend that you address API requests to HMRC with fraud prevention headers.
 
+When at least one fraud preventions header about originating device is enabled, user will  see on the page for consenting the whole list of all the parameters defined during the request to API of the HMRC, but only enabled parameters will be transmitted as part of the request.
+
 ### Making Tax Digital feature usage outside of the United Kingdom
 
 It is possible that a company registered for VAT on the territory of the United Kingdom has a primary address outside of the UK. 
@@ -634,10 +636,9 @@ When company with primary address outside of the United Kingdom considers VAT ma
 6.	Open Tax > Setup > Electronic messages > Message processing actions, select "Preview VAT return" action and select child configuration of the VAT Declaration Excel (UK) in the "Format mapping" field.
 
 Learn more how to derive Electronic reporting configurations in: [Version control](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json#version-control) and 
-[Building a format selecting another format as a base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/fin-and-ops/toc.json#building-a-format-selecting-another-format-as-a-base-customization) partd of the documentation.
+[Building a format selecting another format as a base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/fin-and-ops/toc.json#building-a-format-selecting-another-format-as-a-base-customization) parts of the documentation.
 
 Learn more how to setup Application specific parameters for MTD VAT: [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters)
-
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
@@ -858,3 +859,185 @@ The following electronic processing actions are used by the **UK MTD VAT returns
 | Request VAT liabilities             | Yes            |                      |
 | Create VAT payments request         | Yes            |                      |
 | Request VAT payments                | Yes            |                      |
+
+## Appendix 2: History of the changes of VAT MTD feature
+
+This section is dedicated to the history of the changes of Making Tax Digital for VAT feature. In this section you will find information about related versions of the Electronic reporting (ER) configurations and versions of the application and the KB numbers.
+
+### Initial feature release
+
+ER configurations versions:
+
+| **ER configuration name**                   | **Type**                             | **Version** |
+|---------------------------------------------|--------------------------------------|-------------|
+| Tax declaration model                       | Model                                | 31          |
+| Tax declaration model mapping               | Model mapping                        | 31.30       |
+| VAT Declaration JSON (UK)                   | Format (exporting)                   | 31.24       |
+| VAT Declaration Excel (UK)                  | Format (exporting)                   | 31.24.3     |
+| MTD VAT interoperation (UK)                 | Format (exporting)                   | 31.7        |
+| MTD VAT importing model mapping (UK)        | Model mapping (importing)            | 31.35       |
+| MTD VAT obligations importing JSON (UK)     | Format (importing)                   | 31.8        |
+| Electronic Messages framework model         | Model                                | 19          |
+| MTD VAT model mapping (UK)                  | Model mapping (exporting, importing) | 19.18       |
+| MTD VAT return response importing JSON (UK) | Format (importing)                   | 19.9        |
+| MTD VAT web request headers format (UK)     | Format (exporting)                   | 19.9        |
+| MTD VAT authorization format (UK)           | Format (exporting)                   | 19.6        |
+| MTD VAT import token format (UK)            | Format (importing)                   | 19.7        |
+
+Sufficient versions of the applications:
+
+| **Version**       | **Build** |
+|-------------------|-----------|
+| 10.0.1 and higher | 10.0.51.0 |
+
+For version 7.3 of Finance and Operations the following KBs must be installed:
+4489431, 4492999, 4493076.
+
+### Hotfix “VAT report Box 5 should not be negative” (KB 4499784)
+
+This hotfix provides additional check that amount reported in Box 5 of the VAT100 report in SSRS format is always positive.
+
+This hotfix provides additional check that amount reported in Box 5 of the
+VAT100 report in SSRS format is always positive.
+
+Sufficient versions of the applications:
+
+| **Version**       | **Check-in build** |
+|-------------------|--------------------|
+| 10.0.3 and higher | 10.0.100.0         |
+
+Any previously published versions of the ER configurations can be used.
+
+### Hotfix “UK MTD VAT declaration tax transaction filter by period interval is missing when called from EM” (KB 4502252)
+
+This hotfix introduces filtering by additional fields to avoid unexpected tax
+transactions in the report.
+
+The hotfix delivered in the “Tax declaration model mapping” of version ​31.32.
+
+This version of the configuration can be imported to any version of the
+application sufficient for the previous version of this configuration (31.30).
+
+### Hotfix “UK Making tax digital: JSON and Excel format wrongly report Box3 amount for non-zero use tax transactions for services” (KB 4505110)
+
+This hotfix fixes the issue in the ER formats: JSON and Excel formats wrongly
+report Box3 amount for non-zero use tax transactions for services
+
+The hotfix delivered in the following versions of ER configurations:
+
+-   VAT Declaration JSON (UK).version.31.**25**
+
+-   VAT Declaration Excel (UK).version.31.**25.4**
+
+These versions of the configurations can be imported to any version of the
+application sufficient for the initial versions of these configurations.
+
+### “UK VAT Declaration does not report Tax-Free purchase” (4514862)
+
+This change is related to the case when VAT Declaration (Excel and JSON) does
+not report Tax-Free purchase.
+
+**"UK MTD VAT ReportFieldLookup v2.zip"** with example of application specific
+parameters is updated respectively for this type of scenario and published on
+the LCS.
+
+More details in the KB: <https://support.microsoft.com/en-us/help/4514862>
+
+New version of the Application specific parameters configuration example can be
+used for any versions of the ER configurations and application from the initial
+ones.
+
+### Support of fraud prevention headers – part 1 (KB 4504462)
+
+This update provides support of requirements introduced by HM Revenue and
+Customs (HMRC) to supply compulsory header information for VAT API to prevent
+fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+
+In scope of this update the following ER configurations are released:
+
+-   Electronic Messages framework model.version.22
+
+-   MTD VAT model mapping.version.22.25
+
+-   MTD VAT web request headers format (UK).version.22.13
+
+These versions of the ER configurations must be imported and used on the
+following or higher versions of the application:
+
+| **Version** | **Check-in build** |
+|-------------|--------------------|
+| 10.0.1      | 10.0.51.30002      |
+| 10.0.2      | 10.0.80.10022      |
+| 10.0.3      | 10.0.107.0         |
+
+For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4504462
+must be installed.
+
+### “United Kingdom: Making Tax Digital (MTD) - Electronic reporting format configurations - remove country/region code” (KB 4513582)
+
+In scope of this update the following electronic reporting formats are delivered
+without any ISO country/region code parameter:
+
+-   MTD VAT return response importing JSON (UK).version.19.10
+
+-   MTD VAT import token format (UK).version.19.8
+
+-   MTD VAT web request headers format (UK).version.22.22
+
+-   MTD VAT authorization format (UK).version.19.7
+
+-   MTD VAT interoperation (UK).version.31.8
+
+-   MTD VAT obligations importing JSON (UK).version.31.9
+
+With these and further versions of the formats listed above it will be possible
+to setup and use MTD VAT feature in legal entities with primary address in any
+country.
+
+These versions of the ER configurations can be imported to any version of the
+application sufficient for the previouse versions of these ER configurations:
+
+| **Version** | **Check-in build** |
+|-------------|--------------------|
+| 10.0.1      | 10.0.51.30002      |
+| 10.0.2      | 10.0.80.10022      |
+| 10.0.3      | 10.0.107.0         |
+
+For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4504462
+must be installed.
+
+ER formats used for generation of VAT declaration (VAT 100 report in Excel and
+VAT return in JSON):
+
+-   VAT Declaration JSON (UK)
+
+-   VAT Declaration Excel (UK)
+
+contain “GB” as a ISO country/region code parameter still.
+
+Learn more in [Making Tax Digital feature usage outside of the United Kingdom]().
+
+### Support of fraud prevention headers – part 2 (about originating device) (KB 4513878)
+
+This update provides additionally to the previously delivered scope of the fraud
+prevention parameters possibility of identifying and transmission of fraud
+prevention parameters about originating device when “**WEB_APP_VIA_SERVER**”
+connection method is used for interoperation with HMRC.
+
+In scope of this update the following ER configurations are released:
+
+-   Electronic Messages framework model.version.24
+
+-   MTD VAT model mapping.version.24.31
+
+-   MTD VAT web request headers format (UK).version.24.24
+
+These versions of the ER configurations must be imported and used on the
+following or higher versions of the application:
+
+| **Version** | **Check-in build** |
+|-------------|--------------------|
+| 10.0.5      | 10.0.197.14        |
+
+For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4513878
+must be installed.
