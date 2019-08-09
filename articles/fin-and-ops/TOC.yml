@@ -144,6 +144,8 @@
           href: get-started/new-task-guides-available-february-2016.md
     - name: Explore the user interface
       items:
+      - name: User interface elements
+        href: get-started/user-interface-elements.md
       - name: Accessibility features
         href: get-started/accessibility-features.md
       - name: Feature management overview
