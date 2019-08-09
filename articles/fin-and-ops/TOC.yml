@@ -2191,16 +2191,19 @@
         items: 
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-        - name: Import configuration
-          href: ../financials/general-ledger/tax-engine-import-configuration.md
-        - name: Tax engine applicability
-          href: ../financials/general-ledger/tax-engine-applicability.md
-        - name: Tax engine integration
-          href: ../financials/general-ledger/tax-engine-integration.md
-        - name: Extending the Tax engine
-          href: ../financials/general-ledger/extend-tax-engine-configurations.md
-      - name: Tax thresholds FAQ
-        href: ../financials/localizations/apac-ind-tax-thresholds.md          
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
+          - name: Tax engine integration
+            href: ../financials/general-ledger/tax-engine-integration.md
+          - name: Extending the Tax engine
+            href: ../financials/general-ledger/extend-tax-engine-configurations.md
+        - name: Tax thresholds FAQ
+          href: ../financials/localizations/apac-ind-tax-thresholds.md          
+        - name: Stock transfers
+          href: ../financials/localizations/apac-ind-stock-transfer.md    
     - name: Italy
       items:
       - name: Italy overview
@@ -3283,6 +3286,8 @@
             href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
         - name: Trace execution of ER formats to troubleshoot performance issues
           href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: Business document management overview
+          href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
       - name: ER framework API
         items: 
         - name: Extend the list of Electronic reporting functions
