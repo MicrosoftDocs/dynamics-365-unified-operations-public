@@ -44,8 +44,7 @@ In Commerce, the ratings and reviews solution is an omni-channel solution, and i
 
 Consumers who purchase products online can directly consume ratings and reviews to evaluate a product and provide a review after purchasing a product. Sales associates in physical stores or in a call center can use the ratings and reviews to help customers, as the information is also available in those channels. 
 
-![Dynamics 365 Commerce - Ratings and Reviews](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview
-.jpg)
+![Dynamics 365 Commerce - Ratings and Reviews](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 ## Value Proposition
 
