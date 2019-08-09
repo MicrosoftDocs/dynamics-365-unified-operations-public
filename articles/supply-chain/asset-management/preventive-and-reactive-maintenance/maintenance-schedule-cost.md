@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Objects calendar cost
-description: This topic explains object calendar cost in Enterprise Asset Management.
+title: Maintenance schedule cost
+description: This topic explains maintenance schedule cost in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,27 +30,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object calendar cost
+# Maintenance schedule cost
 
-This topic explains object calendar cost in Enterprise Asset Management. In Enterprise Asset Management, you can calculate budget costs on object calendar lines. This is useful if you want to get an overview of expected costs, for example, costs relating to planned preventive maintenance jobs for the next year. The calculations are based on existing object calendar lines of type "Maintenance sequence" or "Round" or "Request".
+In Asset Management, you can calculate budget costs on maintenance schedule lines. This is useful if you want to get an overview of expected costs, for example, costs relating to planned preventive maintenance jobs for the next year. The calculations are based on existing maintenance schedule lines of type "Maintenance plans" and "Maintenance rounds" and "Maintenance requests".
 
-1. Click **Enterprise asset management** > **Inquiries** > **Objects** > **Object calendar cost**.
+1. Click **Asset management** > **Inquiries** > **Assets** > **Maintenance schedule cost**.
 
-2. On the **Object calendar cost** tab, click **Calculate cost**.
-
-3. In the **Object calendar cost control** form, you can select a financial dimension set if you want to see costs grouped in financial dimensions.
+2. In the **Maintenance schedule cost** dialog, you can select a **Financial dimension set** if you want to see costs grouped in financial dimensions.
 
 >[!NOTE]
->Financial dimension sets are set up in **General ledger** > **Setup** > **Financial dimensions** > **Financial dimension set**.
+>Financial dimension sets are set up in **General ledger** > **Chart of accounts** > **Dimensions** > **Financial dimension sets**.
 
-4. You can use the **Level** field to indicate how detailed you want the object calendar lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all object calendar lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object calendar lines on all the functional location level to which they are related.
+3. You can use the **Level** field to indicate how detailed you want the maintenance schedule lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance schedule lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all maintenance schedule lines on all the functional location levels to which they are related.
 
-5. If you want to make a calculation for specific objects, click **Filter** on the **Records to include** FastTab, and select the relevant objects.
+4. If you want to make a calculation for specific assets, click **Filter** on the **Records to include** FastTab, and select the relevant assets. If required, you can also specify an **Expected start** date for the cost calculation or select a different **Status** for the cost calculation
 
-6. Click **OK** to start the calculation.
+5. Click **OK** to start the cost calculation.
 
-7. On the **Object calendar cost** tab > the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted in orange color. Click on a button to activate or deactivate it.
+6. On the **Maintenance schedule cost** tab > in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the cost calculation. The selected action pane group buttons are highlighted in blue color. Click on a button to activate or deactivate it.
 
-The figure below shows a screenshot of the interface.
+7. Click the **Calculate cost** button if you want to make a new cost calculation.
 
-![Figure 1](media/16-preventive-maintenance.png)
+
+![Figure 1](media/17-preventive-maintenance.png)
+
