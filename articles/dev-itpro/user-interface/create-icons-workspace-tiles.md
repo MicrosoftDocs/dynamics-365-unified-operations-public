@@ -57,14 +57,14 @@ Following these recommendations ensure that your workspace icon matches the styl
 
 ### Images for Platform update 29 or later
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered 30 x 30 px square (see the illustration below).
+-   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered **30 x 30 px** square (see the illustration below).
 -   The icon should have a **white background with transparent content**. 
 -   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
 
 ### Images for Platform update 28 or earlier
 -   The image file should be a PNG file with a 1:1 aspect ratio.
--   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered 21 x 21 px square (see the illustration below).
--   The icon should have a transparent background with white content.
+-   The recommended image size is 50 x 50 pixels, with the icon being contained within a centered **21 x 21 px** square (see the illustration below).
+-   The icon should have a **transparent background with white content**.
 -   The framework will set a default background color for the transparent portions of your image so that it will match the current user theme.
 
 ## Example 
@@ -74,15 +74,13 @@ Consider the following image/icon that is to be used for a new workspace.
 
 ### Platform update 29 or later 
 
-This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas. 
+This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas as shown.  
 
 ![Workspace icon following new guidance](./media/baseIcon_img_PU29.png) 
 
-Workspace icon image
+To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
 
 ![newIcon\_guides](./media/baseIcon_Guides_PU29.png) 
-
-Workspace icon image overlaid to show the circular portion visible on the tile as well as the area set aside for the icon.
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
@@ -90,11 +88,11 @@ Using this image on a workspace tile yields the following result on the dashboar
 
 
 ### Platform update 28 or earlier
-For older versions of the product, the icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
+For older versions of the product, the icon would be converted to an image with a transparent background and white content with the icon centered in the image canvas as shown. 
 
 ![Workspace icon for older versions](./media/newicon.png) 
 
-Workspace icon image
+To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the previous sizing recommendations.   
 
 ![newIcon\_guides](./media/newicon_guides.png) 
 
