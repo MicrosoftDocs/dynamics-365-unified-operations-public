@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: RSAT installation and configuration
+title: Regression suite automation tool installation and configuration
 description: 
 author: robadawy
 manager: AnnBe
@@ -29,27 +29,29 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# RSAT installation and configuration
+# Regression Suite Automation Tool installation and configuration
 
 [!include [banner](../../includes/banner.md)]
+
+This topic contains information about how install and configure the Regression suite automation tool (RSAT).
 
 ## Prerequisites
 
 ### Dynamics 365 for Finance and Operations test environment
-Your Dynamics 365 for Finance and Operations test environment must be running Platform update 15 or newer. The Regression Suite Automation Tool must have access to your Dynamics 365 for Finance and Operations test environment via a web browser.  
+Your Dynamics 365 for Finance and Operations test environment must be running Platform update 15 or newer. The Regression suite automation tool must have access to your Dynamics 365 for Finance and Operations test environment via a web browser.  
 
 ### Excel
 You need Microsoft Excel installed to generate and edit test parameters. 
 
 ### Azure DevOps
-You must have an Azure DevOps project to store and manage your test cases, test plans and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/).
+You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/).
 
 ### Authentication Certificate
 RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to a Dynamics 365 for Finance and Operations environment.
 
 ![Client computer and environment](media/client-environment.png)
 
-To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog allows you to automatically create and install the authentication certificate, you will also need to configure the Finance and Operations VMs to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
+To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the Finance and Operations virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
 
 ## Installation
 
@@ -59,7 +61,7 @@ Download **Regression Suite Automation Tool.msi** to your machine and double-cli
 ![Installer](media/download-msi.png)
  
 ### Selenium and Browser Drivers
-RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select yes when you see the following (or similar) dialogs.
+RSAT requires Selenium and web browser driver libraries. RSAT will prompt you if needed libraries are missing and will automatically install them for you. Select Yes when you see the following (or similar) messages.
  
 ![Selenium driver](media/driver-1.png)
  
@@ -73,69 +75,69 @@ Open RSAT from your desktop.
 
 ![RSAT desktop icon](media/desktop-icon.png)
  
-Click the **Settings** button on the top right to configure RSAT.
+Select **Settings** button in the upper right to configure RSAT.
 
 ![RSAT settings](media/rsat-settings.png)
 
-### General Settings
+### General settings
 These settings are required.
 
 #### Azure DevOps
 Configure your connection to the Azure DevOps project and test plan.
 
-+ **Azure DevOps Url**: This is the URL of your Azure DevOps organization. Example: https://yourAzureDevOpsUrlHere.visualStudio.com
-+ **Access Token**: The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate). 
-+ **Project Name**: The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
-+ **Test Plan**: The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/en-us/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). 
++ **Azure DevOps Url** - This is the URL of your Azure DevOps organization. For example, https://yourAzureDevOpsUrlHere.visualStudio.com.
++ **Access Token** - The access token that allows the tool to connect to Azure DevOps. You need to create a Personal Access Token or use an existing one that you have saved. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate). 
++ **Project Name** - The name of your Azure DevOps project. RSAT will automatically detect project names and test plans available based the Azure DevOps URL specified. You can then select the Test Project and Test Plan.
++ **Test Plan** - The Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/en-us/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). 
 
-Click **Test Connection** to test your connection to Azure DevOps.
+Select **Test Connection** to test your connection to Azure DevOps.
 
 #### Finance and Operations Test Environment
 Configure your connection to the test environment.
 
-+ **Hostname**: Hostname of the Dynamics 365 for Finance and Operations test environment. Example: <myaos>.cloudax.dynamics.com. Do not include the **https://** or **http:/** prefix.
-+ **SOAP Host Name**: SOAP Hostname of the Dynamics 365 for Finance and Operations test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. Example: <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
-+ **Admin User Name**: Email address of an admin user on the Finance and Operations test environment.
++ **Hostname** - Hostname of the Dynamics 365 for Finance and Operations test environment. For example, <myaos>.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
++ **SOAP Host Name** - SOAP Hostname of the Dynamics 365 for Finance and Operations test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. For example, <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
++ **Admin User Name** - Email address of an admin user on the Finance and Operations test environment.
 + **Thumbprint**: Thumbprint of the authentication certificate you are using.
-    1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file anywhere on disk for your records.
+    1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
     2. When the process completes, the new certification is installed in the local machine’s trusted root store.
         
         ![Successfully created](media/thumbprint-certificate.png)
 
     3. The thumbprint of the newly created certificate is automatically inserted on this form. Copy this thumbprint, you will use it in the next section to configure the AOS to trust the connection.
 
-+ **Company name**: Specify a company name to use as you default Finance and Operations company during creation of Excel Parameters files. It can be changed later my editing an Excel file.
++ **Company name** - Specify a company name to use as your default Finance and Operations company during creation of Excel pParameters files. It can be changed later by editing an Excel file.
 
 
 #### Run setting
 Configure your local settings.
 
-+ **Working directory**: Folder location for storing test automation files, including Excel test data files. For example: **C:\Temp\RegressionTool**.
-+ **Default browser**: Select the browser to use for test execution.
++ **Working directory** - Folder location for storing test automation files, including Excel test data files. For example: **C:\Temp\RegressionTool**.
++ **Default browser** - Select the browser to use for test execution.
 
-Click **Ok** to apply your settings and close the dialog. Click **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Click **Save As** to save your current settings into a configuration file on your computer. Click **Open** to restore your settings from a configuration file.
+Select **Ok** to apply your settings and close the dialog box. Select **Cancel** to cancel your changes and close the dialog. The **Save As** and **Open** buttons allow you to save your settings for reuse later. Select **Save As** to save your current settings into a configuration file on your computer. Select **Open** to restore your settings from a configuration file.
 
 ### Optional Settings
 Select the **Optional** tab to configure optional settings.
 
-+ **Test Run Prefix**: RSAT reports test run results to Azure DevOps. Test runs are named using the following convention: **<Run ID> <Prefix> <Test Suite>**. Use this setting to set the **<Prefix>**.
-+ **Test Run Timeout**: Timeout (in minutes) of a test run. All active windows are closed and pending test cases fail when this timeout is reached.
-+ **Test Action Timeout**: Timeout (in minutes) of individual test steps. When a test step times out, the test case fails.
++ **Test Run Prefix** - RSAT reports test run results to Azure DevOps. Test runs are named using the following convention: **<Run ID> <Prefix> <Test Suite>**. Use this setting to set the **<Prefix>**.
++ **Test Run Timeout** - Timeout (in minutes) of a test run. All active windows are closed and pending test cases fail when this timeout is reached.
++ **Test Action Timeout** - Timeout (in minutes) of individual test steps. When a test step times out, the test case fails.
 
 ### Configure the AOS machine to trust the connection
-After creating the certificate, configure the Finance and Operations AOS to trust the test automation connection. On a multi-AOS environment, repeat the steps below for all AOS machines.
+After creating the certificate, configure the Finance and Operations AOS to trust the test automation connection. On a multi-AOS environment, repeat the following steps for all AOS machines.
 
 1.	Open a Remote Desktop connection to the AOS machine.
 2.	Open IIS and find AOSService in the list of sites.
 
     ![Find AOS in IIS](media/configure-aos.png)
 
-3.	Right-click **AOSService** then click **Explore**.
+3.	Right-click **AOSService**, then click **Explore**.
 4.	Open and find the file **wif.config**.
   
     ![Open wif.config](media/open-wif-config.png)
 
-5.	Update the **wif.config** file by adding a new authority entry as show inthe following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
+5.	Update the **wif.config** file by adding a new authority entry, as shown in the following example. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
 
 ```
 <issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">
@@ -175,8 +177,6 @@ If you want to use Google Chrome as your browser, follow these steps:
 2. Download **chromedriver_win32.zip** from the latest/current release.
 3. Unzip the downloaded file and move the contents to **C:\Program Files (x86)\Regression Suite Automation Tool\Common\External\Selenium**.
 
-
-
 ## Manual configuration of authentication certificates
 
 Optionally, you can manually configure the RSAT authentication certificate.
@@ -191,7 +191,7 @@ If you are not familiar with this process, get help from your system administrat
 You must generate the certificate file on the RSAT client computer. **The certificate must be generated on the same computer that the test tool is running on.** To generate the certificate file, follow these steps:
 1. Create the **C:\Temp** folder if it does not already exist on your computer.
 2. Open a command line window as Administrator.
-3. Navigate to the folder where you installed the Windows SDK. Your exact folder maybe different, depending on where you have installed the windows SDK) You can also use Windows Kits 8.1.
+3. Go to the folder where you installed the Windows SDK. Your exact folder may be different, depending on where you have installed the windows SDK). You can also use Windows Kits 8.1.
 
     ```
     cd c:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64
@@ -208,10 +208,10 @@ You must generate the certificate file on the RSAT client computer. **The certif
 To install the certificate, follow these steps:
 
 1. Double-click **authCert.cer** to install the certificate.
-2. Click **Install Certificate…**
-3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities**, by clicking **Next** through each screen.
+2. Click **Install Certificate**.
+3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities** and click **Next** through each screen.
 4. Leave the **Password** field blank.
-5. In the **Certificate** dialog, browse to **Details** and look for **Thumbprint**.
+5. In the **Certificate** dialog box, browse to **Details** and look for **Thumbprint**.
 
     ![Certificate dialog showing thumbpring listing](media/certificate-dialog.png)
  
