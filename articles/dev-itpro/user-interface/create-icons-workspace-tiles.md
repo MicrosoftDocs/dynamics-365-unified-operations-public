@@ -76,7 +76,7 @@ Consider the following image/icon that is to be used for a new workspace.
 
 This icon would be converted to an image with a **white background and transparent content** with the icon centered in a larger image canvas. 
 
-![Workspace icon following new guidance](./media/baseIcon-PU29.png) 
+![Workspace icon following new guidance](./media/baseIcon_img_PU29.png) 
 
 Workspace icon image
 
@@ -88,7 +88,7 @@ Workspace icon image overlaid to show the circular portion visible on the tile a
 ### Platform update 28 or earlier
 For older versions of the product, the icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
 
-![Workspace icon for older versions](./media/baseIcon-PU28.png) 
+![Workspace icon for older versions](./media/baseIcon.png) 
 
 Workspace icon image
 
@@ -96,7 +96,7 @@ Workspace icon image
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newworkspaceicon_PU29.png)](./media/newworkspaceicon_PU29.png)                
+[![newWorkspaceIcon](./media/newworkspaceicon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 
