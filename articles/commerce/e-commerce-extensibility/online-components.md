@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: E-Commerce components
-description: This topic contains a high-level summary of some frequently used e-Commerce configuration components that the e-Commerce software development kit (SDK) provides access to in Microsoft Dynamics 365 for Commerce.
+title: Online components
+description: This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
