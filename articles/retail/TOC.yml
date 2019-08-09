@@ -602,6 +602,8 @@
       href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
+  - name: Integrate POS with a new hardware device
+    href: dev-itpro/hardware-device-extension.md
   - name: Retail Server extensibility
     items:
     - name: Extend a Retail Server OData controller
