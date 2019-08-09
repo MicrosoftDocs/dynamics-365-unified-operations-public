@@ -50,21 +50,21 @@ This topic names and describes the UI (User Interface) components used in Dynami
 
 A *tab* is a selection made on the page that opens up a different aspect of a record on the same page. Often, it will allow you to change certain *fields*, or UI elements that allow typed input. A *FastTab* is a tab with the added benefit of allowing multiple tabs to be visible at the same. You can expand a FastTab by selecting the downward-pointing arrow on the right end of it.
 
-![The following image shows an example of tabs and FastTabs.](../media/user-interface-02.png)
+![The following image shows an example of tabs and FastTabs.](media/user-interface-02.png)
 
 A *section* is similar to a tab. The word "section" is often used to describe any area of a page that organizes a specific category of information. Summary, Orders and favorites, and Links are all examples of sections.
 
-![The following image shows an example of tabs and a section.](../media/user-interface-03.png)
+![The following image shows an example of tabs and a section.](media/user-interface-03.png)
 
 ## Dialog boxes and drop-down menus
 
 A *dialog box* is a pane that opens when certain selections are made to change or create a record. Dialog boxes contain fields that allow you to enter typed input. Sometimes, a given field will allow you to select a downward facing arrow that opens a list of options to choose from. This is called a *drop-down menu*. In the following image, the **Type** and **Customer group** fields contain the option to open a drop-down menu.
 
-![The following image shows an example of a dialog box.](../media/user-interface-04.png)
+![The following image shows an example of a dialog box.](media/user-interface-04.png)
 
 In some cases, a dialog box will open near a given button when you select it. This is called a *drop-down dialog box*. In the following image, the **As of date** button was selected, which opened a drop-down dialog box.
 
-![The following image shows an example of a drop-down dialog box.](../media/user-interface-05.png)
+![The following image shows an example of a drop-down dialog box.](media/user-interface-05.png)
 
 ## Notifications
 
@@ -77,11 +77,11 @@ Notifications appear in a variety of ways.
 
 The following image shows examples of these types of notifications.
 
-![The following image shows examples of notifications.](../media/user-interface-06.png)
+![The following image shows examples of notifications.](media/user-interface-06.png)
 
 - **Message box**: This will appear over the interface and must be interacted with before you can continue to use the product.  
 
-![The following image shows an example of a message box](../media/user-interface-07.png)
+![The following image shows an example of a message box](media/user-interface-07.png)
 
 ## Toolbars, grids, and lists
 
@@ -89,4 +89,4 @@ A *toolbar* contains tools, such as the ability to add fields or remove records.
 
 A *list* is the name given to a collection of records that you can scroll through. You can bring these records into the page by selecting them. Often, this will bring up a grid.
 
-![The following image shows examples of toolbars, grids, and lists.](../media/user-interface-08.png)
+![The following image shows examples of toolbars, grids, and lists.](media/user-interface-08.png)
