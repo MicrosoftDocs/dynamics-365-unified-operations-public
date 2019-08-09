@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Maintenance stop
-description: This topic explains maintenance stops in Enterprise Asset Management.
+title: Maintenance downtime
+description: This topic explains maintenance downtime in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Maintenance stop
+# Maintenance downtime
 
 This topic explains maintenance stops in Enterprise Asset Management. Maintenance stops are used to get an overview of the capacity required to carry out maintenance jobs on specific objects during a specific period. For example, you can create a maintenance stop for Production line 10 in Production Hall 29-A on production site 02. The maintenance stop has a start and end time indicating the period in which the objects related to the maintenance stop are not available for production.
 
@@ -44,9 +44,10 @@ When objects have been selected on a maintenance stop, all open object calendar 
 
 ## All maintenance stops
 
-Click **Enterprise asset management** > **Common** > **Maintenance stops** > **All Maintenance stops** to open the list. **All maintenance stops** contains a list of all maintenance stop records and displays some of the information related to the maintenance stops.
+Click **Enterprise asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open the list. **All maintenance downtime activities** contains a list of all maintenance downtime registrations and displays some of the information related to the maintenance downtime registrations.
 
-![Figure 1](media/18-preventive-maintenance.png)
+![Figure 1](media/19-preventive-maintenance.png)
+
 
 ## Create a maintenance stop
 
