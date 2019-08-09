@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for an e-Commerce developer extensibility environment
-description: This topic lists the system requirements for setting up a developer extensibility environment for Dynamic 365 Commerce e-Commerce.
+description: This topic lists the system requirements for setting up a Dynamic 365 Commerce online extensibility development environment.
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -28,18 +28,18 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# System requirements for an e-Commerce developer extensibility environment
+# System requirements for an online developer extensibility environment
 
-This topic lists the system requirements for setting up a developer extensibility environment for Dynamic 365 Commerce e-Commerce. If this step is appropriate, before you install the extensibility SDK and tools you should verify that the system you're working with meets or exceeds the minimum hardware and software requirements.
+This topic lists the system requirements for setting up a Dynamic 365 Commerce online extensibility development environment. If this step is appropriate, before you install the Online SDK and tools you should verify that the system you're working with meets or exceeds the minimum hardware and software requirements.
 
 ## Operating systems
-The e-Commerce extensibility environment requires Windows 10 (latest publicly available version).
+The online extensibility environment requires Windows 10 (latest publicly available version).
 
 ## Memory and hard drive requirements
-8 GB of RAM or higher is recommended with at least 20 GB of free hard drive space to run the e-Commerce extensibility environment.
+8 GB of RAM or higher is recommended with at least 20 GB of free hard drive space to run the online extensibility environment.
 
 ## Supported web browsers
-The e-Commerce extensibility environment can preview customizations in any of the following web browsers:
+The online extensibility environment can preview customizations in any of the following web browsers:
 
 * Chrome (up to current version minus 1)
 * Internet Explorer (IE 11)
