@@ -2624,6 +2624,8 @@
           href: ../financials/localizations/rus-not-valuable-assets.md
       - name: Accounts payable and receivable
         items:
+        - name: Credit note corrections (Russia)
+          href: ../financials/localizations/rus-credit-note-correction.md
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Set up dimension control for settlements
