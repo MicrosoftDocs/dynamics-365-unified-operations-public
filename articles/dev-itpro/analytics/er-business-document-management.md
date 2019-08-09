@@ -36,6 +36,37 @@ Business users use the [Electronic reporting (ER) framework](https://docs.micros
 
 **Business document management** is built on top of the ER framework and enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data from within Dynamics 365 for Finance and Operations without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
 
+> [!NOTE]
+> Be aware that Business document management allows you to modify templates that are used to produce business documents such as orders, invoices, etc. While a template has been modified and a new version of it has been published, this version is used to generate required business documents. Business document management cannot be used to modify already generated business documents.
+
+## Supported Microsoft Office applications
+The following Microsoft Office applications are supported in cloud and on-premises deployments of Finance and Operations:
+
+- To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed.
+
+## Business document availability
+
+The following reports, with Excel-based templates, will available with the release of the public preview:
+
+**Account receivable** (August 2019)
+
+- Sales advance invoice
+- Sales order packing slip
+
+**Account payable** (August 2019)
+
+- Purchase advance invoice
+- Purchase order
+- Purchase order packing slip
+
+More reports will become available. Special notifications about additional reports will be sent separately. 
+
+A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+
+# Example: Enable, configure and use Business document management
+
+To learn more about this feature, complete the example in this topic.
+
 ## Configure ER parameters
 
 Because Business document management is built on top of the ER framework, you must configure the ER parameters to start working with Business document management. To do this, you need to set up the ER parameters as described in [Configure the ER framework](electronic-reporting-er-configure-parameters.md). You also need to add a new configuration provider as described in [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
@@ -109,7 +140,7 @@ For this document type, the following attribute values must be selected.
 | Group               | File                  |
 | Location            | SharePoint            |
 
-For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management) .
+For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
@@ -157,7 +188,7 @@ Pay attention to the notification informing you that the usage of access permiss
 
 With this setting, every user assigned to any security role that is configured to perform the **Manage Business document templates** (AOT name **ERBDManageTemplates**) duty is able to open the Business document management workspace and can edit any template that is available in Finance and Operations.
 
-The following graphic shows what is available in the Business document management workspace for users assigned to the **Accounts receivable clerk** role. With the current access permissions setting, the user can edit business document templates from different functional areas including invoicing, foreign trade, and payments.
+The following graphic shows what is available in the Business document management workspace for users assigned to the **Accounts receivable clerk** role. With the current access permissions setting, the user can edit business document templates from different functional areas including invoicing, regulatory reporting, and payments.
 
 ![Business document management workspace page](./media/BDM-Overview-TemplatesForAlice1.png)
 
@@ -211,7 +242,7 @@ Use the following procedure to edit free text invoice templates in the Business 
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate1.png)
 
-The **Template** tab contains the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
+The **Template** tab presents the content of the selected template. Select the **Details** tab to review details of the selected template as well as details of an ER format configuration this template resides in. Notice that all of the templates have a status of **Published**, and contain no details in the **Revision** column. This means that these templates are not currently being edited.
 
 ### Initiate editing templates owned by your configuration provider
 
@@ -339,25 +370,6 @@ When you edit the template from an ER format that is owned by the current active
 ### Publish a modified template
 1. On the **BDM template editor** page, on the **Template** tab, select **Publish**.
 2. If you select **OK** to confirm publishing, the draft version of the derived **Customer FTI report (GER) Copy** ER format that contains the modified template will be marked as completed. The modified template becomes available for other users of Finance and Operations. The completed versions of this ER format will keep only the last active revision of your template. Other revisions will be deleted. Select **Cancel** to explore other options.
-
-## Business document availability
-
-The following reports, with Excel-based templates, will available with the release of the public preview:
-
-**Account receivable** (August 2019)
-
-- Sales advance invoice
-- Sales order packing slip
-
-**Account payable** (August 2019)
-
-- Purchase advance invoice
-- Purchase order
-- Purchase order packing slip
-
-More reports will become available. Special notifications about additional reports will be sent separately. 
-
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
 ## Frequently asked questions
 
