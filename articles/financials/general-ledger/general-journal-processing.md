@@ -5,7 +5,7 @@ title: General journal processing
 description: This topic describes capabilities in Microsoft Dynamics 365 for Finance and Operations that can help make general journal processing easier, and that can also help ensure that correct data is captured and internal control isn't compromised.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/24/2018
+ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -104,10 +104,10 @@ You can find **Simulate posting** on the **Validate** menu for most journals. Wh
 **Simulate posting** is not available for batch processing. However, there is code available to simulate posting in batch and developers can extend the code to add that functionality.  
 
 ## Journal unlock
-A new button is available on the journal page to unlock a journal that has a status of "locked by system" set to yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named 'Journal Unlock button' in the feature management page. 
+A button is available on the journal page to unlock a journal that has a status of "locked by system" set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page. 
 
 ## Workflow recall 
-The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled from the workflow button on a journal, and in the workflow history page. This is enabled by the feature named 'Resetting the workflow status for journals' in the feature management page.
+The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the feature named **Resetting the workflow status for journals** on the **Feature management** page.
 
 ## Delete Journal Lines
-The ability to delete all journal lines quickly is enabled in a journal under Functions - **Delete Journal Lines**. This feature has been enhanced for better performance and reliability. This enhanced version can be enabled in feature management with the feature named, **Delete journal performance optimizations**.
+The ability to delete all journal lines quickly is enabled in a journal under **Functions** > **Delete Journal Lines**. To enable this feature, on the **Feature management**, select **Delete journal performance optimizations**.
