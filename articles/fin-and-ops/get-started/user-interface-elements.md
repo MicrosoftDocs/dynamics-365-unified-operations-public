@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: User Interface elements
-description: This topic names and describes the UI (User Interface) components used in Dynamics 365 for Finance and Operations.
+title: User interface elements
+description: This topic names and describes the UI (user interface) components used in Dynamics 365 for Finance and Operations.
 author: 
 manager: AnnBe
 ms.date: 08/09/2019
@@ -27,9 +27,9 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 7.3
 ---
 
-# User Interface elements
+# User interface elements
 
-This topic names and describes the UI (User Interface) components used in Dynamics 365 for Finance and Operations. Before users can navigate the interface, it's necessary to know the names and functions of the elements that make up the interface.
+This topic names and describes the UI (user interface) components used in Dynamics 365 for Finance and Operations. Before users can navigate the interface, it's necessary to know the names and functions of the elements that make up the interface.
 
 ## Overview
 
