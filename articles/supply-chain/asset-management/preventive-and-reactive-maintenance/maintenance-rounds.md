@@ -67,13 +67,13 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 14. Select the recurrence (day, week, etc.) in the **Period type** field.
 
-15. In the **Period frequency** field, insert the number of recurrences for the maintenance round, for example...
+15. In the **Period frequency** field, insert the number of recurrences for the maintenance round. Example: If you have selected "Day" in the **Period type** field, and you insert the number "7" in this field, new maintenance round lines are created during preventive maintenance scheduling once a week.
 
 16. Select a start date for the asset to be included in the maintenance round in the **Start date** field. This date may differ from the start date set on the maintenance round.
 
 17. Repeat steps 9-16 to add more assets to the maintenance round.
 
-18. On the **Functional location lines** FastTab, click **Add** to add a functional location to the maintenance round. Refer to the description of the related fields above. The same fields are available as for creating an asset line, but you can also select a **Manufacturer** and a **Model** for a functional location, if required.
+18. On the **Functional location lines** FastTab, click **Add** to add a functional location to the maintenance round. Refer to the description of the related fields above. The same fields are available as for creating an asset line, but you can also select a **Manufacturer** and a **Model** for a functional location, if required. If you only select a functional location on a line, but make no selections in **Asset type**, **Manufacturer**, **Model**, **Maintenance job type**, **Maintenance job type variant** and **Trade**, all assets related to that functional location at the time of maintenance scheduling will be included in the maintenance round.
 
 19. On the **Pools** FastTab, click **Add** to select a work order pool to which you want to connect the maintenance round. Several work order pools can be connected to one maintenance round.
 
