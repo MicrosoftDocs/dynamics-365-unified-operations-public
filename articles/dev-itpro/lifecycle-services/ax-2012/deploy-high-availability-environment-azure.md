@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 21231
@@ -89,15 +89,15 @@ The following sections provide information about how to configure the Azure virt
 
 To enable corporate users to access resources on the virtual machines in the Azure virtual network, you’ll need to create a site-to-site VPN connection between the Azure virtual network and your on-premises, corporate network. For information about how to do this, see:
 
--   [Virtual network overview](https://msdn.microsoft.com/en-us/library/windowsazure/jj156007.aspx)
--   [Virtual network configuration tasks](https://msdn.microsoft.com/en-us/library/jj156206.aspx)
--   [Set up a simulated hybrid cloud environment for testing](http://azure.microsoft.com/en-us/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
+-   [Virtual network overview](https://msdn.microsoft.com/library/windowsazure/jj156007.aspx)
+-   [Virtual network configuration tasks](https://msdn.microsoft.com/library/jj156206.aspx)
+-   [Set up a simulated hybrid cloud environment for testing](http://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
 -   [Site-to-site VPN in Azure virtual network using Windows Server 2012 Routing and Remote Access Service (RRAS)](https://msdn.microsoft.com/library/dn636917.aspx)
--   [Configure a virtual network gateway in the management portal](https://msdn.microsoft.com/en-us/library/azure/jj156210.aspx)
+-   [Configure a virtual network gateway in the management portal](https://msdn.microsoft.com/library/azure/jj156210.aspx)
 
 ### Create an active directory in Azure
 
-An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://msdn.microsoft.com/en-us/library/azure/jj156090.aspx). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
+An Active Directory is required in the Azure virtual network. An Active Directory can be deployed to the Azure virtual network. Please follow [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://msdn.microsoft.com/library/azure/jj156090.aspx). Please note that Active Directory Federation Services is not presently supported with AX 2012 R3. If you are providing the Active Directory, you will need to create the following service accounts within it that can be used by LCS deployment services when you deploy the environment.
 
 <table>
 <colgroup>
@@ -163,7 +163,7 @@ You will need to provide the passwords for these accounts when you deploy the en
 
 ### Create a domain trust
 
-To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/en-us/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
+To enable corporate users to access resources on the virtual machines in your Azure domain, you must create an Active Directory trust between the domains. For information about how to create a trust, see [Create a Forest Trust](https://technet.microsoft.com/library/cc754626.aspx). This process is the same process you would use to create a trust between two on-premises domains.
 
 ### Give the Administrators group the right to log on as a batch group
 
@@ -317,7 +317,7 @@ Complete the following procedure to deploy a high availability environment on Az
 14. Click **Done**. The **Deploy environment** panel is redisplayed.
 15. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
     -   For information about the software installed on each virtual machine in this environment, see the High availability environment section in the article, [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 16. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 17. Click **Next**.
@@ -332,11 +332,11 @@ Log on to an AOS- virtual machine using the DynamicsInstallUser account. For ins
 
 ### Compile AX 2012 R3
 
-Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/en-us/library/dn528954.aspx).
+Compile AX 2012 R3 by using AxBuild.exe. For instructions, see [AxBuild.exe for Parallel Compile on AOS of X++ to p-code](https://technet.microsoft.com/library/dn528954.aspx).
 
 ### Initialize AX 2012 R3
 
-Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/en-us/library/aa497061.aspx).
+Open the AX 2012 R3 client and complete the initialization checklists. For instructions, see [Initialization checklists](https://technet.microsoft.com/library/aa497061.aspx).
 
 ### Install sample data
 
@@ -348,14 +348,14 @@ If you want sample data installed in your environment, complete the following st
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**Note:** The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/en-us/subscriptions/securedownloads/hh442898#FileId=57028).
+**Note:** The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
 
 ### Give users access
 
 To enable your users to access AX 2012 R3, complete the following tasks:
 
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI- virtual machine.
--   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/en-us/library/aa548139.aspx).
+-   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/library/aa548139.aspx).
 
 **Note:** If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
 
@@ -376,31 +376,31 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <tr class="even">
 <td>See the instructions on TechNet</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/en-us/library/gg732218.aspx">System setup for Microsoft Dynamics AX</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg732158.aspx">The Microsoft Dynamics AX client</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg731868.aspx">Application Object Servers</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a> <strong>Note:</strong> Be default, reports are deployed to one business intelligence (BI) virtual machine. For each additional BI virtual machine in your environment, you’ll need to:
+<li><a href="https://technet.microsoft.com/library/gg732218.aspx">System setup for Microsoft Dynamics AX</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732158.aspx">The Microsoft Dynamics AX client</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731868.aspx">Application Object Servers</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873263.aspx">Reporting in Microsoft Dynamics AX</a> <strong>Note:</strong> Be default, reports are deployed to one business intelligence (BI) virtual machine. For each additional BI virtual machine in your environment, you’ll need to:
 <ol>
-<li><a href="https://technet.microsoft.com/EN-US/library/dd309703.aspx">Deploy the default reports.</a></li>
-<li><a href="https://technet.microsoft.com/EN-US/library/aa496432.aspx">Grant users access to the reports.</a></li>
-<li>Open the <a href="https://technet.microsoft.com/EN-US/library/aa548504.aspx">Report servers form</a> to connect each AOS instance with each SSRS instance. To see a step-by-step procedure of how to this is done, see <a href="https://technet.microsoft.com/en-us/library/hh389773.aspx">Connect Microsoft Dynamics AX to the new Reporting Services instance</a>.</li>
+<li><a href="https://technet.microsoft.com/library/dd309703.aspx">Deploy the default reports.</a></li>
+<li><a href="https://technet.microsoft.com/library/aa496432.aspx">Grant users access to the reports.</a></li>
+<li>Open the <a href="https://technet.microsoft.com/library/aa548504.aspx">Report servers form</a> to connect each AOS instance with each SSRS instance. To see a step-by-step procedure of how to this is done, see <a href="https://technet.microsoft.com/library/hh389773.aspx">Connect Microsoft Dynamics AX to the new Reporting Services instance</a>.</li>
 </ol></li>
-<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=5916">Management Reporter 2012</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a> <strong>Note:</strong> To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200.</li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg866975.aspx">Help server</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg751374.aspx">Enterprise Portal and Role Centers</a> <strong>Note:</strong> Enterprise Portal is configured to run on port 81, so be sure to exclude that port in your firewall settings.</li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg731850.aspx">Enterprise Search</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg731810.aspx">Services and Application Integration Framework (AIF)</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/jj710398.aspx">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/aa834453.aspx">.NET Business Connector</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg731779.aspx">Security</a></li>
+<li><a href="https://www.microsoft.com/download/details.aspx?id=5916">Management Reporter 2012</a></li>
+<li><a href="https://technet.microsoft.com/library/ee873272.aspx">Analytics in Microsoft Dynamics AX</a> <strong>Note:</strong> To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200.</li>
+<li><a href="https://technet.microsoft.com/library/gg866975.aspx">Help server</a></li>
+<li><a href="https://technet.microsoft.com/library/gg751374.aspx">Enterprise Portal and Role Centers</a> <strong>Note:</strong> Enterprise Portal is configured to run on port 81, so be sure to exclude that port in your firewall settings.</li>
+<li><a href="https://technet.microsoft.com/library/gg731850.aspx">Enterprise Search</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731810.aspx">Services and Application Integration Framework (AIF)</a></li>
+<li><a href="https://technet.microsoft.com/library/jj710398.aspx">Microsoft Dynamics AX Retail for IT pros and developers</a></li>
+<li><a href="https://technet.microsoft.com/library/aa834453.aspx">.NET Business Connector</a></li>
+<li><a href="https://technet.microsoft.com/library/gg731779.aspx">Security</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>View printable guides and white papers</td>
 <td><ul>
-<li><a href="https://technet.microsoft.com/en-us/library/gg732268.aspx">Printable guides</a></li>
-<li><a href="https://technet.microsoft.com/en-us/library/gg188985.aspx">White papers for system administrators</a></li>
+<li><a href="https://technet.microsoft.com/library/gg732268.aspx">Printable guides</a></li>
+<li><a href="https://technet.microsoft.com/library/gg188985.aspx">White papers for system administrators</a></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -429,7 +429,7 @@ The high availability environment includes an availability set for each tier of 
 
 ### Install the data import/export framework and RapidStart Connector
 
-For high availability, the **Data import/export framework** and the **RapidStart Connector** should be installed on all virtual machines that are AOS servers. You may need to install these components. For instructions, see: • [Install the Data import/export framework (DIXF, DMF)](install-dixf.md) • [Install the RapidStart Connector](https://technet.microsoft.com/en-us/library/hh771574.aspx)
+For high availability, the **Data import/export framework** and the **RapidStart Connector** should be installed on all virtual machines that are AOS servers. You may need to install these components. For instructions, see: • [Install the Data import/export framework (DIXF, DMF)](install-dixf.md) • [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx)
 
 ### Configure Microsoft SQL Server Reporting Services for load balancing
 
@@ -441,15 +441,15 @@ When Lifecycle Services deploys Enterprise Portal servers, each server is deploy
 
 ### Configure the environment for optimal performance
 
-Configure the environment for optimal performance by completing the following tasks: • [Initialize database files](https://msdn.microsoft.com/en-us/library/ms175935.aspx) • [Enable lock pages](https://technet.microsoft.com/en-us/library/ms190730.aspx) • [Improve client startup times by configuring clients to use roaming profiles](https://technet.microsoft.com/en-us/library/dn479031.aspx)
+Configure the environment for optimal performance by completing the following tasks: • [Initialize database files](https://msdn.microsoft.com/library/ms175935.aspx) • [Enable lock pages](https://technet.microsoft.com/library/ms190730.aspx) • [Improve client startup times by configuring clients to use roaming profiles](https://technet.microsoft.com/library/dn479031.aspx)
 
 ### Learn more about the high availability configuration
 
 To learn more about how we’ve configured this environment for high availability, see the following resources:
 
 -   [FSMO placement and optimization on Active Directory domain controllers](http://support.microsoft.com/kb/223346)
--   [Configure SQL Server and storage settings](https://technet.microsoft.com/en-us/library/dd309734.aspx)
--   [WSFC Quorum Modes and Voting Configuration](https://msdn.microsoft.com/en-us/library/hh270280.aspx)
+-   [Configure SQL Server and storage settings](https://technet.microsoft.com/library/dd309734.aspx)
+-   [WSFC Quorum Modes and Voting Configuration](https://msdn.microsoft.com/library/hh270280.aspx)
 -   [Remote Desktop Cmdlets in Windows PowerShell](/powershell/module/remotedesktop/?view=win10-ps)
 
 ## 9. Learn more about the service accounts for this environment

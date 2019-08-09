@@ -17,7 +17,7 @@ ms.search.form: ERSolutionRepositoryTable
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 8.1
 
 You can use Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations. The ER tool provides access to the list of configurations that have been configured in each instance of RCS that has been provisioned for your company. You can use this feature to import configurations that you configured in an RCS instance into the current instance of Microsoft Dynamics 365 for Finance and Operations. After configurations are imported, they can be used to handle incoming documents or generate outgoing electronic documents.
 
-To learn more about this feature, complete the example in this topic. Alternatively, play the **ER Import configurations from RCS** task guide, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. This task guide can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). It walks you through the process of importing ER configurations from an RCS instance into the current Finance and Operations instance.
+To learn more about this feature, complete the example in this topic. Alternatively, play the **ER Import configurations from RCS** task guide, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. This task guide can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2082739). It walks you through the process of importing ER configurations from an RCS instance into the current Finance and Operations instance.
 
 ## Example: Import an ER configuration from RCS
 

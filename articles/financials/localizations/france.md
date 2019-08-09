@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: France
+title: France overview
 description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for France. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# France 
+# France overview
 
 [!include [banner](../includes/banner.md)]
 

@@ -5,7 +5,7 @@ title: Images on a page or in a grid
 description: This topic describes the steps for displaying images on a page or in a grid. The topic also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
-ms.date: 11/09/2017
+ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55871
@@ -158,18 +158,23 @@ An image control has a property that is named **imageList**. You pass in an inst
     public void init()
     {
         int imgCnt;
+        
         // create an imagelist instance
         Imagelist imageList = new ImageList(ImageList::smallIconWidth(), Imagelist::smallIconHeight());
+        
         super();
+        
         // add images to the instance (return value is not needed)
         // Note that a legacy ResID is used in the new Image contstructor. 
         // This is a compatibility mapping of resource to symbol.
         imgCnt = imagelist.add(new Image(#ImageInfo));
         imgCnt = imagelist.add(new Image(#ImageWarning));
         imgCnt = imagelist.add(new Image(#ImageError));
+        
         // pass the image list instance to the control
         ImageListDM.imageList(imageList);
     }
+    
     // at runtime, select the image you want to show: when the control has an imagelist instance, 
     // this int value is used to index into that array
     public display int imageListDataMethod()
@@ -178,6 +183,7 @@ An image control has a property that is named **imageList**. You pass in an inst
         imageCnt++;
         return imgCnt;
     }
+    
     /*
        Note: The legacy image resource ID's #ImageInfo, #ImageWarning, #ImageError are 
        mapped from the legacy resource id to a symbol name in the X++
@@ -191,29 +197,29 @@ An image control has a property that is named **imageList**. You pass in an inst
         if (!_hrmCompEventEmpl.RecId)
         {
             return 0;
-        }
+        }       
         if (_hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Ignore   ||
-        _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Approved ||
-        _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Loaded)
+            _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Approved ||
+            _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Loaded)
         {
             return 0;
         }
         else
         {
             if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Error)
-        {
-            return #ImageError;
-        }
-        if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Warning)
-        {
-            return #ImageWarning;
-        }
-        if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Info)
-        {
-            return #ImageInfo;
-        }
-    }
-    return 0;
+            {
+                return #ImageError;
+            }
+            if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Warning)
+            {
+                return #ImageWarning;
+            }
+            if (_hrmCompEventEmpl.ErrorStatus == HRMCompEventErrorStatus::Info)
+            {
+                return #ImageInfo;
+            }
+        }      
+        return 0;
     }
 
 ## Display method that returns a container
@@ -249,6 +255,7 @@ Model a page that has an image control and a **FileUpload** button.
     // model a new FileUpload control (style=minimal)
     // class declaration
     FileUpload uploadControl;
+    
     // form init() create a callback event handler to be notified when upload is complete
     public void init()
     {
@@ -256,6 +263,7 @@ Model a page that has an image control and a **FileUpload** button.
         uploadControl = FileUpload1;
         uploadControl.notifyUploadCompleted +=  eventhandler(this.UploadCompleted);
     }
+    
     // form close() release the callback event handler
     public void close()
     {
@@ -265,6 +273,7 @@ Model a page that has an image control and a **FileUpload** button.
         //  uploadControl = FileUpload1;
         uploadControl.notifyUploadCompleted -=  eventhandler(this.UploadCompleted);
     }
+    
     // when the upload completes, grab the image and store it in the database
     /// <summary> 
     /// This method is called by the file upload mechanism, when the upload completes
@@ -279,15 +288,20 @@ Model a page that has an image control and a **FileUpload** button.
         {
             InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
             perm.assert();
+            
             // BP Deviation Documented
             webClient = new System.Net.WebClient();
+            
             // BP Deviation Documented
             // if success, downloadURL contains the path to the Azure blob location for the file
             stream = new System.IO.MemoryStream(webClient.DownloadData(uploadControl.downloadUrl()));
+            
             // grab the data and assign to the image field
             binaryImage = Binary::constructFromMemoryStream(stream);
+            
             // assign to the database field (type=container)
             FMVehicleModel.Image = binaryImage.getContainer();
+            
             CodeAccessPermission::revertAssert();
         }
     }
@@ -300,15 +314,19 @@ In this example, an image is created from scratch. However, developers can also 
         Binary binaryImage;
         Image  image;
         int x,y;
+        
         super();
+        
         InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
         perm.assert();
+        
         /* 
         In this example, we’ll create a bitmap programmatically, we’ll use a memory
         Stream o’bytes to then convert to the container format the image control expects.
         */
         System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(100,100);
         System.IO.MemoryStream myStream = new System.IO.MemoryStream();
+        
         // draw some stuff (or load a bitmap from an alternative source)
         for( x=0; x < bitmap.Height; ++x)
         {
@@ -317,23 +335,31 @@ In this example, an image is created from scratch. However, developers can also 
                 bitmap.SetPixel(x,y,System.Drawing.Color::White);
             }
         }
+        
         for(x=0; x < bitmap.Height; ++x)
         {
             bitmap.SetPixel(x,x, System.Drawing.Color::Red);
         }
+        
         // move our bitmap to an in memory stream
         bitmap.Save(myStream, System.Drawing.Imaging.ImageFormat::Bmp);
+        
         // stream goes to raw binary
         binaryImage = Binary::constructFromMemoryStream(myStream);
+        
         // create a blank image and copy our binary data to the image format
         image = new Image();
         image.setData(binaryImage.getContainer());
+        
         // copy the image data to the image control
         MyImage.image(image);
+        
         // alternatively, skip the image conversion step and assign directly to the data field
         binaryImage = Binary::constructFromMemoryStream(myStream);
+        
         // assign to the database field (type=container)
         datafield.Image = binaryImage.getContainer();
+        
         CodeAccessPermission::revertAssert();
     }
 

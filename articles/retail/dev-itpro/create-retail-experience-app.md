@@ -5,7 +5,7 @@ title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 251594
@@ -43,7 +43,7 @@ The Retail Experience app supports the Android and iOS phone platforms. The app 
 
 You can download Xamarin from [Visual Studio Tools for Xamarin](https://www.xamarin.com/download). 
 
-For a tutorial that shows how to install Xamarin on Windows, see [Xamarin resources](https://developer.xamarin.com/videos/?v=Installing_Xamarin_on_Windows).
+For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows).
 
 ### Update Xamarin
 
@@ -229,4 +229,4 @@ For detailed information about the distribution techniques that are available fo
 To learn how to maintain your signing identities and certificates, refer to [What is app signing](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html). 
 
 [!NOTE]
-> If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/en-us/HT204460).
+> If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).

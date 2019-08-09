@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260954
@@ -47,10 +47,10 @@ Microsoft Azure ExpressRoute lets you create dedicated, readily available, highl
 This information is necessary to determine whether a standard or premium offering of ExpressRoute is required.
 
 ## Resources for getting started
--   [ExpressRoute service page](https://azure.microsoft.com/en-us/services/expressroute/)
--   [ExpressRoute technical overview](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/)
--   [ExpressRoute partners and peering locations](https://azure.microsoft.com/en-us/documentation/articles/expressroute-locations/)
--   [ExpressRoute pricing](https://azure.microsoft.com/en-us/pricing/details/expressroute/)
+-   [ExpressRoute service page](https://azure.microsoft.com/services/expressroute/)
+-   [ExpressRoute technical overview](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)
+-   [ExpressRoute partners and peering locations](https://azure.microsoft.com/documentation/articles/expressroute-locations/)
+-   [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute/)
 
 
 

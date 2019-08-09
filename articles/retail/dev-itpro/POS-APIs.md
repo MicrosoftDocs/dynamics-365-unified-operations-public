@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -428,3 +428,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | GetCurrenciesServiceRequest                     |
 | GetSrsReportDataSetServiceRequest               |
 | SearchCommissionSalesGroupsServiceRequest       |
+| IssueLoyaltyCardOperationRequest                |
+| GetPickingAndReceivingOrdersClientRequest       |
+
+

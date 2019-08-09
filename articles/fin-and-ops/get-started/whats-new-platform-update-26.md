@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -54,7 +54,7 @@ Entity store in Azure Data Lake is available as public preview with Platform upd
 New features are regularly being developed for Finance and Operations. While documentation is helpful for explaining new features, raising awareness of these new capabilities to users directly in the product when they are encountered is powerful. To this end, [Feature callouts](../../dev-itpro/user-interface/feature-callouts.md) are available in Platform update 26 to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature.  
 
 ## Extensibility enhancements
-The [third wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) included in Platform update 26 is documented in the April 2019 Release notes. There are seven enhancements detailed, with one of the highlights being that Chain of Command can now target and extend other method extensions.
+The [third wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility3) included in Platform update 26 is documented in the April 2019 Release notes. There are seven enhancements detailed, with one of the highlights being that Chain of Command can now target and extend other method extensions.
 
 ## Additional resources
 
@@ -64,7 +64,7 @@ For information about the bug fixes included in each of the updates that are par
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 This topic provides links to other topics that will help new implementers of Retail projects with important aspects of the implementation process, so that they can avoid complications. The guidelines that are mentioned are best practices that have been collected during previous implementation projects. Therefore, implementers can focus on the actual feature work and not become bogged down by the procedures.
 
-Some of the information in these topics can also be found on blogs and pages at other locations, such as <https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index> and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this topic from beginning to end and review the linked documents within the subtopics as you require them during the implementation process.
+Some of the information in these topics can also be found on blogs and pages at other locations, such as <https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/index> and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this topic from beginning to end and review the linked documents within the subtopics as you require them during the implementation process.
 
 The information focuses on implementations of Microsoft Dynamics 365 for Finance and Operations that include Retail functionality.
 

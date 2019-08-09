@@ -99,7 +99,7 @@ To link your contract ID/access ID to your account, complete the following steps
 
 3. Enter your access ID and your password or contract ID, and then select **Add contract**.
 
-   ![Add contract](media/4abba1127549ef484a58daf51609d924.png)
+   ![Add contract credentials](media/4abba1127549ef484a58daf51609d924.png)
 
 ### PartnerSource Business Center account
 The following support plan incidents can be used as part of your PartnerSource Business Center (PSBC) account if they exist: 
@@ -113,7 +113,7 @@ The following support plan incidents can be used as part of your PartnerSource B
 
 If you do not find the PartnerSource Business Center account, ensure that your sign in is added as a professional in your organization in PSBC. Make sure that you are signing in with the same Microsoft or work account login. This account is only applicable in an on-premises project.
 
-![](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
+![Add contract](media/56c7bfd469f6d850d456e9e7a89e0d8d.png)
 
 ### Sign-in specfic options
 The following incidents and support benefits will appear based on your sign in, if applicable:
@@ -145,7 +145,7 @@ To add, select **Add a Software Assurance plan** when you create the support inc
 For a quick and effective way to escalate issues to Microsoft Support in the event that the services in a production environment are degraded or become unavailable, see [Report a production outage](report-production-outage.md).
 
 ## Phone support
-We prefer that you contact Support following the steps in [Open a new incident](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using one of the following options:
+We prefer that you contact Support following the steps in [Open a new incident](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs#open-a-new-incident). If you're unable to open a new incident in LCS, phone support is available using one of the following options:
 
-- [Premier phone support](https://support.microsoft.com/en-us/premier/contacts)
+- [Premier phone support](https://support.microsoft.com/premier/contacts)
 - [Broad commercial phone support](https://mbs.microsoft.com/customersource/northamerica/GP/support/support-news/global_support_contacts_eng)

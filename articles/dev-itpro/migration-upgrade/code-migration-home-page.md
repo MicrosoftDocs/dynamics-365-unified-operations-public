@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
@@ -54,7 +54,7 @@ The following links (also included in the methodology) describe key concepts and
 ## Additional concepts
 
 - [Delegates for migration](delegates-migration.md)
-- [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/en-us/library/dn754850.aspx)
+- [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/library/dn754850.aspx)
 - [Database synchronization](../dev-tools/database-synchronization.md)
 <!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)-->
 - [Upgrade and migration](upgrade-home-page.md)

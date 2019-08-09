@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -110,7 +110,7 @@ To use the Person search report, you must complete these tasks.
 
 ## Additional resources
 
-You can learn more about the GDPR on the [European Union's website](https://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx) and in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md) topic.
+You can learn more about the GDPR on the [European Union's website](https://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) and in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md) topic.
 
 
 ### Disclaimer

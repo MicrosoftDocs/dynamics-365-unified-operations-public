@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,25 +46,57 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### US Payroll tax updates
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are retiring tax updates for the US Payroll functionality due to low usage and enhanced functionality that is now offered via strategic integrations.  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Payroll |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2021, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, however enhancements will no longer keep the functionality up to date and any product defects will be evaluated on a case-by-case basis. For more information, see [Tax updates being retired for US Payroll feature in Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### Data management staging clean up
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Does not meet the core requirements that are needed for scheduling periodic cleanup. |
+| **Replaced by another feature?**   | Yes, the Job history cleanup feature is being added to meet the scenarios holistically. |
+| **Product areas affected**         | Data management |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
+
+## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+
+### France: FEC Accounting data export in XML
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | General ledger |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
+
 
 ### Legacy navigation bar
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Replaced by another feature?**   | Starting in Platform update 24, a restyled navigation bar that features search was introduced. |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available. Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page. |
 
+
 ## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### Legacy default action behavior
 
@@ -109,9 +141,6 @@ Support for creating project-based sales orders where the project contract has m
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with Platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
-
 ### Deprecated APIs and potential breaking changes
 
 
@@ -134,6 +163,17 @@ Support for creating project-based sales orders where the project contract has m
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
+
+## Dynamics 365 for Finance and Operations 10.0.0 with platform update 24
+
+### Renaming released products 
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | When you use the **Rename primary key** function to change the ItemId of a released product, only direct foreign key references are updated. Any other references to the released product, such as from production orders, will retain the old ItemId. As a result, there could be inconsistent data that will eventually block business processes. |
+| **Replaced by another feature?**   | No. |
+| **Product areas affected**         | Product information management |
+| **Deployment option**              | All  |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 10.0.0 with platform update 24. In exceptional cases, such as to recover from a previous rename of the primary key of a released product, it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
 
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
@@ -279,7 +319,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspaces](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
@@ -1234,7 +1274,7 @@ Sites Services let you build websites that extend your business processes to the
 
 ### Virtual company accounts
 
-The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
+The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
 |   |  | 
 |------------|--------------------|

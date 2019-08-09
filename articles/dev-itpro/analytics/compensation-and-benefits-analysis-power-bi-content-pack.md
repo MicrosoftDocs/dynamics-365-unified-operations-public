@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263914
@@ -37,14 +37,14 @@ ms.dyn365.ops.version: Version 1611
 This topic describes the Finance and Operations - Compensation and Benefits Power BI content. 
 
 ## Reports that are included in the content pack
-After you've connected the content pack to your Finance and Operations data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+After you've connected the content pack to your Finance and Operations data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                     | Contents                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Comp and Benefits Analysis | Hourly and salaried employees by company, average hourly pay, average salaried pay, employees by employment type, and plan enrollment |
 | Employee Benefits          | Employee enrollment by selected benefit                                                                                               |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 Finance and Operations data is used to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack was based on.

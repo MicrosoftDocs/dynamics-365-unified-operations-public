@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -38,7 +38,7 @@ Microsoft Dynamics 365 for Talent is built on top of the Common Data Service pla
 
 ## Extending Option sets in Attract
 
-An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add. For more information, see [Customize option set labels](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+An **Option Set** (picklist) is a type of field that can be included in an entity. It defines a set of options. When an option set is displayed in a form it uses a drop-down list control.  In Attract there are multiple fields that are option sets.  We are beginning to introduce the capability to extend the options sets, beginning with the Rejection reason field, Employment type field, and Seniority type field.   Also, you can add localized display labels for the options that you add. For more information, see [Customize option set labels](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > The job posting to LinkedIn functionality requires the use of the **Employment type** and **Seniority type** field on the **Job details** page. The default values in these fields are supported by LinkedIn and are displayed when the job is posted. Therefore, if you are posting jobs to LinkedIn and you modify the existing option set values for these fields, the job will still post, but LinkedIn will not display the custom **Employment type** and **Seniority type** values.  
@@ -67,15 +67,15 @@ Because all the data from Attract resides in Common Data Service, you can use to
 
 You can use PowerApps to easily build apps that connect to your Attract data, and that use expressions like the expressions in Microsoft Excel to add logic. Apps that you build by using PowerApps can run on the web, and on Apple iOS and Google Android devices.
 
-For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about PowerApps and how to use it to build apps, see [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps).
+For example, you can make university career fairs easier for recruiters by building a lightweight app that lets them scan resumes and feed candidates to a position in Attract. Alternatively, you can build an app that helps meet your organization's compliance needs. For more information about PowerApps and how to use it to build apps, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps).
 
 ### Microsoft Flow 
 
-You can use Microsoft Flow to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application entities in Common Data Service, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Flow documentation](https://docs.microsoft.com/en-us/flow/).
+You can use Microsoft Flow to create automated workflows that run on top of Attract data. You can easily connect to hundreds of popular apps and services without having to write code. By building flows that interact with the Attract Job, Candidate, and Application entities in Common Data Service, you can automate various actions. For example, when a candidate accepts an offer, a notification can be sent to an onboarding team, or the news can be announced on Twitter. For more information about flows, see the [Microsoft Flow documentation](https://docs.microsoft.com/flow/).
 
 ### Power BI
 
-Power BI lets you build and view custom reports and dashboards that give you deeper insight into your Attract data. For more information about Power BI and how to build interactive reports and dashboards, see the [Power BI documentation](https://docs.microsoft.com/en-us/power-bi/).
+Power BI lets you build and view custom reports and dashboards that give you deeper insight into your Attract data. For more information about Power BI and how to build interactive reports and dashboards, see the [Power BI documentation](https://docs.microsoft.com/power-bi/).
 
 ### Custom activities 
 

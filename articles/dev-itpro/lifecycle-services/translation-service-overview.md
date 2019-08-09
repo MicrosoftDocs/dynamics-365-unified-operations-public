@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service
+title: Dynamics 365 Translation Service overview
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS). DTS is designed to enhance the experience for partners and ISVs when they translate their solutions or add a new language for supported Microsoft Dynamics products.
 author: ejcho
 manager: AnnBe
-ms.date: 04/10/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service
+# Dynamics 365 Translation Service overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +49,7 @@ Existing linguistic assets can be recycled only when the assets are uploaded in 
 DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
 
 > [!NOTE]
-> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/en-us/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support#customization). 
+> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](https://docs.microsoft.com/azure/cognitive-services/translator/language-support#customization). 
 
 ## Supported products
 DTS currently supports the following product versions.

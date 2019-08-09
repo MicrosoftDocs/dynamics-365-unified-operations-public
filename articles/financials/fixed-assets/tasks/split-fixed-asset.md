@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Split a fixed asset
-description: This task guide will split a percentage of one asset book to a new asset book. 
+description: This topic explains how to split a percentage of one asset book to a new asset book. 
 author: saraschi2
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,35 +30,36 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This task guide will split a percentage of one asset book to a new asset book.  It uses the Accountant role and USMF demo data.
+This topic explains how to split a percentage of one asset book to a new asset book. It uses the Accountant role and USMF demo data.
 
 
 ## Create a new fixed asset
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-3. In the Fixed asset group field, enter or select a value.
-4. Note the fixed asset number to use in the split process later.
-5. In the Name field, type a value.
-6. Close the form.
+1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
+2. Select **New**.
+3. In the **Fixed asset group** field, enter or select a value. Note the fixed asset number to use in the split process later.  
+4. In the **Name** field, type a value.
+5. Close the form.
 
 ## Split a fixed asset
-1. In the list, find and select the fixed asset to split.
-2. In the list, click the link in the selected row.
-3. Click Books.
-    * Select the book to split to the new asset.  
-4. Click Functions.
-5. Click Split fixed asset.
-6. In the To fixed asset field, enter or select a value.
-7. In the To book field, click the drop-down button to open the lookup.
-8. In the Transaction date field, enter a date.
-9. In the Percent field, enter a number.
-10. In the Journal name field, enter or select a value.
-11. Click OK.
+1. In the list, find and select the link of the fixed asset to split.
+2. Select **Books**. Select the book to split to the new asset.  
+3. Select **Functions**.
+4. Select **Split fixed asset**.
+5. In the **To fixed asset** field, enter or select a value.
+6. In the **To book** field, select the drop-down button to open the lookup.
+7. In the **Transaction date** field, enter a date.
+8. In the **Percent** field, enter a number.
+9. In the **Journal name** field, enter or select a value.
+10. Select **OK**.
 
 ## Post the journal transaction
-1. Go to Fixed assets > Journal entries > Fixed assets journal.
+1. In the navigation pane, go to **Modules > Fixed assets > Journal entries > Fixed assets journal**.
 2. In the list, select the journal created with the split process.
-3. Click Lines.
-    * Verify the journal lines created.  An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.  An Acquisition transaction is created for the new asset for the same amount.  
-4. Click Post.
+3. Select **Lines**.
+
+    - Verify the journal lines created.  
+    - An Acquisition adjustment transaction is created for the original asset to decrease the value by the percentage specified during the split process.  
+    - An Acquisition transaction is created for the new asset for the same amount.  
+
+4. Select **Post**.
 

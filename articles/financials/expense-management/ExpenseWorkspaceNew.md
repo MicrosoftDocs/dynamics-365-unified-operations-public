@@ -5,7 +5,7 @@ title: Expense reports reimagined
 description: This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 for Finance and Operations. The new experience simplifies the process of completing expense reports and decreases the time that is required.
 author: ryansandness
 manager: AnnBe
-ms.date: 05/20/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: 10.0.3
 # Expense reports reimagined
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Expense report entry has been redesigned to simplify the process of completing expense reports and decrease the time that is required. Here are the major components of the new expense experience:
 
@@ -51,7 +50,7 @@ To turn on the new experience, use the **Feature management** workspace to turn 
 
 ## Getting started video for new users
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE2Y7gO]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y7gO]
 
 The [Expense experience in Dynamics 365 for Finance and Operations](https://youtu.be/Ocy-MsTvEE0) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 

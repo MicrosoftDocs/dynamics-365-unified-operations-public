@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 141393
@@ -216,8 +216,8 @@ The following table shows the set of Dynamics 365 payment features that the Dyna
 
 | Scheme | Card present | Card not present |
 |---|:-:|:-:|
-| [Cash Out Gift Card Balance](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
-| [Duplicate Payment Protection](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| [Cash Out Gift Card Balance](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
+| [Duplicate Payment Protection](https://docs.microsoft.com/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔<br>(Starting with 10.0.1) | ✔<br>(Starting with 10.0.1) |
 | [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔<br>(Starting with 10.0.2) | 

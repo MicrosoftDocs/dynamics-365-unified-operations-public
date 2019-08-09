@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
@@ -93,7 +93,7 @@ To enable Dynamics 365 for Finance and Operations to use your AD FS application,
 ## Certificates 
 
 Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
-certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx).
+certificate](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx).
 
 ## Configure the application
 

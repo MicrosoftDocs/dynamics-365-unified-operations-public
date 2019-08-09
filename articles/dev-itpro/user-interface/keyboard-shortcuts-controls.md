@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -57,9 +57,9 @@ Because of these potential issues, we recommend that you adhere to this guidance
 Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Finance and Operations and supported browsers:
 
 - <a href="../../fin-and-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
-- <a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a>
+- <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>
 - <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
-- <a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
+- <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
 ### Planned keyboard shortcuts for Dynamics 365 for Finance and Operations

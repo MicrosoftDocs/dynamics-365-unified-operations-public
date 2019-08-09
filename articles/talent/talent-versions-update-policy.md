@@ -70,10 +70,10 @@ You can download a PDF file of the countries, regions, and languages Talent supp
 > [!NOTE]
 > While the user interface is localized into other languages, all user data is stored in the language in which it was entered. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.
 
-If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
 ## Update policy
 
 Microsoft Dynamics 365 for Talent is serviced as a cloud offering. Updates to Dynamics 365 for Talent are continuous and applied automatically by Microsoft.
 
-Updates are released on a regular cadence and will be made to all environments. Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
+Updates are released on a regular cadence and will be made to all environments. Dynamics 365 for Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.

@@ -5,7 +5,7 @@ title: Abort an executing batch job
 description: This topic provides information about how cancel an executing batch job in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
@@ -33,7 +33,8 @@ ms.dyn365.ops.version: Platform update 27
 # Abort an executing batch job
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+> [!NOTE] 
+> This feature is available as of Platform update 27.
 
 Sometimes canceling a batch job can take a long time if already executing tasks will take a long time to finish. The abort option provides a system administrator or batch job manager with the ability to abort already executing tasks for jobs which are in the process of being canceled. This provides a much faster mechanism to cancel a long running job which is impacting system usage elsewhere.
 

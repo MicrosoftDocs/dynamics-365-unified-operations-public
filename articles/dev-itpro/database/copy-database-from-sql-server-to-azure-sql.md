@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256464
@@ -63,7 +63,7 @@ If you encounter issues, see the "Known issues and limitations" section at the e
 ## Prerequisites
 
 - The source environment (the environment where the source database was created) must run a version of the Finance and Operations platform that is earlier than or the same as the version of the platform that the destination environment runs.
-- To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
+- To import a database from a sandbox environment, you must be running the same version of SQL Server Management Studio that is in the environment you will be importing the database to. This may require you to install the [latest version of SQL Server Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) on the computer that runs Application Object Server (AOS) in the sandbox environment. You can then do the bacpac export on that AOS computer. There are two reasons for this requirement:
 
     - Because of an Internet Protocol (IP) access restriction on the sandbox instance of SQL Server, only computers in that environment can connect to the instance.
     - The exported \*.bacpac file may be dependent on version specific features of Management Studio.
@@ -156,7 +156,7 @@ update dbo.RETAILHARDWAREPROFILE set SECUREMERCHANTPROPERTIES = null where SECUR
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> The **140** folder reflects the current version, you are required to use the version that is available in your sandbox environment. This may require you to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx) in your development environment.
+> The **140** folder reflects the current version, you are required to use the version that is available in your sandbox environment. This may require you to install the [latest version of Management Studio](https://msdn.microsoft.com/library/mt238290.aspx) in your development environment.
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -179,7 +179,7 @@ Copy the .bacpac file that was generated in the previous section to the AOS comp
 Open a **Command Prompt** window and run the following commands.
 
 > [!IMPORTANT]
-> The version of SqlPackage.exe must match the version used to export the .bacpac file. You may be required to install the [latest version of Management Studio](https://msdn.microsoft.com/en-us/library/mt238290.aspx).
+> The version of SqlPackage.exe must match the version used to export the .bacpac file. You may be required to install the [latest version of Management Studio](https://msdn.microsoft.com/library/mt238290.aspx).
 
 ```
 cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\
@@ -417,5 +417,5 @@ The following guidelines can help you achieve optimal performance:
 - Always export from a computer that is in the same Azure datacenter as the Azure SQL database instance. In practice, this guideline means that when you export a copy of your sandbox database, you should export it from the sandbox AOS computer.
 - Always import the .bacpac file locally on the computer that runs the SQL Server instance. Don't import it from Management Studio on a remote computer.
 - In a one-box environment that is hosted in Azure, put the .bacpac file on drive D when you export it. (A one-box environment is also known as a Tier 1 environment.) For more information about the temporary drive on Azure computers, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) post on the Azure Support Team blog.
-- Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
+- Grant the account that runs the SQL Server Windows service [Instance File Initialization](https://msdn.microsoft.com/library/ms175935.aspx) rights. In this way, you can help improve the speed of the import process and the speed of a restore from a \*.bak file. For a developer environment, you can easily make sure that the account that runs the SQL Server service has these rights by setting SQL Server to run as the axlocaladmin account.
 - We recommend that you not use the option to export and import from Azure SQL Database in Management Studio. (This option is also known as **Export data tier application**.) You should not use this option because there can be memory limitations for larger databases.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic reporting (ER)
+title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: ERWorkspace
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58941
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic reporting (ER)
+# Electronic reporting (ER) overview
 
 [!include [banner](../includes/banner.md)]
 

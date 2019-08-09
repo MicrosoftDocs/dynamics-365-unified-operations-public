@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advance holders
+title: Advance holders overview
 description: Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/23/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262574
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Advance holders
+# Advance holders overview
 
 [!include [banner](../includes/banner.md)]
 

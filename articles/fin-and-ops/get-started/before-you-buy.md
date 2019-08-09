@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Before you buy
+title: Before you buy home page
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
 author: kfend
 manager: AnnBe
-ms.date: 01/04/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Before you buy
+# Before you buy home page
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,7 +45,7 @@ You can now deploy Microsoft Dynamics 365 for Finance and Operations in the clou
 
 The following considerations must be taken when you choose on-premises as a deployment option:
 
-- Regulatory and compliance needs that are not available in the [cloud certifications](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Regulatory and compliance needs that are not available in the cloud certifications
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management
 - [Features currently not implemented in on-premises deployments](features-not-implemented-on-prem.md)
 - [Minimum infrastructure requirements](system-requirements-on-prem.md#minimum-infrastructure-requirements)

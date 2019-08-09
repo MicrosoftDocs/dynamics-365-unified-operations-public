@@ -5,7 +5,7 @@ title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -134,12 +134,12 @@ The following table lists the possible course statuses and the actions that you 
 </table>
 
 ## Course participants
-Course participants are workers, applicants, or contact persons who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
+Course participants are workers who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
 
 Workflow
 --------
 
-Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.  A workflow can be assigned to a course on the **General** FastTab on the **Courses** page.
+Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval. You can assign a workflow to a course on the **General** FastTab on the **Courses** page.
 
 
 

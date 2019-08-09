@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Retail version 10.0.3
+title: What's new or changed in Dynamics 365 for Retail version 10.0.3
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 05/09/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -29,14 +29,13 @@ ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Release 10
 
 ---
-# Preview features in Dynamics 365 for Retail version 10.0.3
+# What's new or changed in Dynamics 365 for Retail version 10.0.3
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail in 10.0.3. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
 ## New calculation logic for autocharges in call center for mixed delivery mode sales lines
 

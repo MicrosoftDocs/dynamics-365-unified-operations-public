@@ -128,3 +128,4 @@ The Microsoft Dynamics 365 for Unified Operations mobile app enables your organi
 - [Maintenance mode](maintenance-mode.md)
 - [Pre-configured system accounts](pre-configured-system-accounts.md)
 - [Export B2B users to Azure AD](implement-b2b.md)
+- [Set the session idle timeout](session-idle-timeout.md)

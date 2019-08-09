@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

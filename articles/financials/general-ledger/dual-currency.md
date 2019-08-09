@@ -5,7 +5,7 @@ title: Dual currency
 description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 for Finance and Operations.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -31,10 +31,21 @@ ms.dyn365.ops.version: 8.1
 # Dual currency
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) enables the reporting currency to be repurposed and used as a second accounting currency. This functionality is referred to as *dual currency*. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
-In addition, various modules have been enhanced to track, report, and use the reporting currency in various processes. The modules that are affected include **General ledger**, **Financial reporting**, **Accounts payable**, **Accounts receivable**, **Cash and bank management**, and **Fixed assets**. After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read the relevant sections of this topic carefully.
+In addition, several modules have been enhanced to track, report, and use the reporting currency in various processes. The modules that are affected include:
+
+- General ledger 
+- Financial reporting 
+- Accounts payable
+- Accounts receivable 
+- Cash and bank management 
+- Fixed assets 
+- Consolidations
+
+After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read and understand the relevant sections of this topic.
 
 ## Posting process
 
@@ -80,6 +91,7 @@ The following modules use the reporting currency as a second accounting currency
 - [Accounts receivable](#accounts-payable-and-accounts-receivable)
 - [Cash and bank management](#cash-and-bank-management)
 - [Fixed assets](#fixed-assets)
+- [Consolidations](#consolidations)
 
 ### General ledger
 
@@ -129,6 +141,8 @@ Previously, the **Fixed assets** module didn't track any reporting currency amou
 In addition, major changes have been made to the depreciation process. These changes require user action after an upgrade. It's important that you read and understand the following changes, even if you aren't yet using Fixed assets.
 
 - The way that the depreciation process determines the reporting currency amount has changed. The following scenario compares how depreciation previously determined the reporting currency amount and how it determines the reporting currency amount now.
+
+
 
     **Depreciation scenario**
 
@@ -191,3 +205,13 @@ In addition, major changes have been made to the depreciation process. These cha
     - If a deprecation transaction type is entered in the Fixed asset journal, the reporting currency amounts will appear in the new columns. Those amounts can be changed.
     - If the accounting currency and the reporting currencies on the ledger are the same, the amounts will be kept in sync. If you change the **Credit** amount, the **Credit in reporting currency** amount will automatically be changed so that it matches it.
     - If any other transaction type is entered in the Fixed asset journal, the **Debit in reporting currency** and **Credit in reporting currency** amounts are never shown, either before or after posting. The accounting currency and reporting currency amounts are still available on the voucher that posts to the general ledger.
+    
+### Consolidations
+    
+Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, go to the **Feature management** workspace and select **Enable dual currency functionality in General ledger consolidation**.
+
+In General ledger consolidation, a new option has been added to consolidate either the accounting or reporting currency amounts from the source companies. If the accounting or reporting currency is the same as the accounting or reporting currency in the consolidation company, the amounts will be copied directly rather than translated.
+
+-  You can now choose whether to use the accounting currency or the reporting currency from the source company as the transaction currency in the consolidation company.
+
+- The accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company, if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
