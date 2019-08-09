@@ -560,7 +560,7 @@ For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4513878 m
 
 In Finance and Operations, request headers are composed by the **MTD VAT web request headers format (UK)** format in the Electronic Reporting (ER) module, this format configuration was extended with necessary nodes.
 
-![JSON object](media/format-new-nodes.png)
+![JSON object](media/format-new-nodes-all.png)
 
 Determining the corresponding values of the headers is supported by calling the X++ methods by the **MTD VAT model mapping** configuration. The **Electronic Messages framework model** was also extended to support the include nodes that are used for mapping the values of fraud prevention headers.
 
@@ -577,9 +577,9 @@ When the ER configurations are imported, fraud prevention parameters will be tra
 
 When you initiate a request to the HMRC without activating a batch job, the following page will inform about what information will be sent to the HMRC.
 
-![JSON object](media/fraud-prevention-headers-message.png)
+![JSON object](media/fraud-prevention-headers-message-page.png)
 
-User must consent transmission of the information listed in the page by marking the check box, “Submit” will be activate and user will be able to click it to proceed further with request to HMRC. 
+User must consent transmission of the information listed in the page by marking the check box, “Submit” button will be activated and user will be able to click it to proceed further with request to HMRC. 
 
 If the transmission on this stage is canceled (“Do not submit” button is clicked), the status of the electronic message will change to **Error** and a description of the error will be attached to the Action log. You can click **Send report** to continue the transmission of the same electronic message.
 
@@ -601,6 +601,43 @@ If for some reason a company decides to address requests to the HMRC without tra
 
 > [!IMPORTANT]
 > API requests without fraud prevention headers may be rejected by HMRC. We recommend that you address API requests to HMRC with fraud prevention headers.
+
+### Making Tax Digital feature usage outside of the United Kingdom
+
+It is possible that a company registered for VAT on the territory of the United Kingdom has a primary address outside of the UK. 
+To simplify adoption of MTD VAT feature for usage in legal entities with primary address outside of the United Kingdom the following Electronic reporting formats are delivered without any ISO country/region code parameter:
+
+<ul><li> MTD VAT return response importing JSON (UK).version.19.10 </li>
+<li> MTD VAT import token format (UK).version.19.8 </li>
+<li> MTD VAT web request headers format (UK).version.22.22 </li>
+<li> MTD VAT authorization format (UK).version.19.7 </li>
+<li> MTD VAT interoperation (UK).version.31.8 </li>
+<li> MTD VAT obligations importing JSON (UK).version.31.9 </li></ul>
+
+With these and further versions of the formats listed above it will be possible to setup and use MTD VAT feature in legal entities with primary address in any country.
+
+Following electronic reporting formats used for generation of VAT declaration (VAT 100 report in Excel and VAT return in JSON):
+<ul><li> VAT Declaration JSON (UK) </li>
+<li> VAT Declaration Excel (UK) </li></ul>
+
+These formats are delivered still with "GB" in **ISO country/region code** parameter.
+
+It is important that a company with primary address outside of the United Kingdom which decides to use MTD for VAT feature must control that VAT setup in the related legal entity is done in accordance with United Kingdom rules and VAT management is carried out appropriately to generate VAT declaration properly and in accordance with requirements of HMRC. 
+
+When company with primary address outside of the United Kingdom considers VAT management in the legal entity is appropriate with requirements to VAT in the United Kingdom and decides to report VAT return in the United Kingdom, the following steps must be additionally to common setup of MTD VAT feature:
+
+1.	Derive VAT Declaration JSON (UK) electronic reporting format and define for the child configuration ISO country/region code (you can do this on "ISO country/region code" fast tab for the selected format) related to the ISO code in the primary address of this legal entity.
+2.	Derive VAT Declaration Excel (UK) electronic reporting format and define for the child configuration ISO country/region code (you can do this on "ISO country/region code" fast tab for the selected format)related to the ISO code in the primary address of this legal entity.
+3.	Import or setup Application specific parameters for child configuration of the VAT Declaration JSON (UK).
+4.	Import or setup Application specific parameters for child configuration of the VAT Declaration Excel (UK).
+5.	Open Tax > Setup > Electronic messages > Message processing actions, select "Generate file for submission" action and select child configuration of the VAT Declaration JSON (UK) in the "Format mapping" field.
+6.	Open Tax > Setup > Electronic messages > Message processing actions, select "Preview VAT return" action and select child configuration of the VAT Declaration Excel (UK) in the "Format mapping" field.
+
+Learn more how to derive Electronic reporting configurations in: [Version control](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/fin-and-ops/toc.json#version-control) and 
+[Building a format selecting another format as a base](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/fin-and-ops/toc.json#building-a-format-selecting-another-format-as-a-base-customization) partd of the documentation.
+
+Learn more how to setup Application specific parameters for MTD VAT: [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters)
+
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
