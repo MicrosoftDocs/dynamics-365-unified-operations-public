@@ -89,7 +89,7 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 
 When you have set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
 
-1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select calendar entry in the list > **Maintenance rounds** button.
+1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select maintenance schedule line in the list > **Maintenance rounds** button.
 
 2. In the **Period** field, select the period type to be used for the scheduling job.
 
@@ -104,12 +104,13 @@ When you have set up a maintenance round, you run a schedule job to schedule all
 
 6. Click **OK**.
 
-7. You are now able to see the rounds jobs in **Enterprise asset management** > **Common** > **Object calendar** > **All object calendars** or **Open object calendars**. If the scheduled rounds are connected to a work order pool, you can also see the calendar posts in **Open object calendar pools**. The rounds jobs in the calendar have the reference type "Rounds".
-
-The figure below shows a screenshot of the interface.
+7. You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you can also see the maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
 
 ![Figure 2](media/14-preventive-maintenance.png)
 
-- When work orders are manually created on objects that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.  
+![Figure 3](media/15-preventive-maintenance.png)
+
+- When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty. The creation of the work order can then be canceled. The check for a warranty relation is omitted for work orders that are automatically created.  
 - You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.  
-- If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open object calendar pools**. This is done to optimize the filtering options on work order pools.
+- If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open maintenance schedule pools**. This is done to optimize the filtering options for work order pools.
+
