@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regression suite automation tool installation and configuration
-description: 
+description: This topic contains information about how install and configure the Regression suite automation tool (RSAT).
 author: robadawy
 manager: AnnBe
 ms.date: 08/01/2019
