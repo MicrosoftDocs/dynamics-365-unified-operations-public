@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a development environment
-description: This topic explains how to set up a development environment for Microsoft Dynamics 365 for Commerce.
+description: This topic explains how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # Set up a development environment
 
-To set up a development environment for Microsoft Dynamics 365 for Commerce, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 e-Commerce software development kit (SDK). You can install these tools in any order.
+To set up a development environment for Microsoft Dynamics 365 Commerce Online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online software development kit (SDK). You can install these tools in any order.
 
 ## Install Visual Studio Code
 
@@ -54,14 +54,14 @@ Yarn is a dependency management tool that will help guarantee that you have all 
 
 Go to the [Yarn site](https://yarnpkg.com), and download and install the latest stable build.
 
-## Install the SDK
+## Install the Online SDK and Store Starter Kit
 
-The SDK provides everything that you require to extend your e-Commerce site. It even lets you create new modules, data actions, and themes.
+The Online SDK provides everything that you require to extend your Online channel. It even lets you create new modules, data actions, and themes.
 
-The SDK configuration package is available through the private, read-only [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
+The SDK configuration package is available through the [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
 
 > [!NOTE]
-> The whole SDK and Yarn won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
+> The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
 
 If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 
@@ -93,36 +93,36 @@ To run the app, follow these steps.
     c:\repos\MyEcommerceSite>yarn start
     ```
 
-    This command will take several seconds to run. When it's completed, you will see output that indicates that the server has been started. This output will also show the allocated port number (**4000**, by default).
+    This command will take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. This output will also show the allocated port number (**4000**, by default).
 
 2. To test that the app is running correctly, open the following URLs in a web browser:
 
-    * `http://localhost:4000/version`
-    * `http://localhost:4000/?mock=default-page`
+    * `https://localhost:4000/version`
+    * `https://localhost:4000/_sdk/allmodules`
 
 3. To close the app, at the command prompt, press **Ctrl+C** two times.
 
 ## Create a new module
 
-To add a new module that is named **campaignBanner**, run the **yarn d365 add-module MODULE_NAME** command. Here is an example.
+To add a new module that is named **campaignBanner**, run the **yarn msdyn365 add-module MODULE_NAME** command. Here is an example.
 
 ```
-c:\repos\MyEcommerceSite>yarn d365 add-module campaignBanner
+c:\repos\MyEcommerceSite>yarn msdyn365 add-module campaignBanner
 ```
 
 This command can take up to a minute. It adds a new module under \\src\\modules\\campaignBanner.
 
-## Modify an existing core module
+## Clone an existing core module
 
-Several of the available core modules can be modified, such as the alert, banner, and hero modules.
+Several of the available core modules can be clones, such as the alert, banner, and hero modules.
 
-For example, to modify the hero module, run the **yarn d365 modify STARTER\_KIT\_MODULE** command to pull down the source code.
+For example, to modify the hero module, run the **yarn msdyn365 clone STARTER_KIT_MODULE_NAME NEW_MODULE_NAME** command to pull down the source code.
 
 ```
-c:\repos\MyEcommerceSite>yarn d365 modify hero
+c:\repos\MyEcommerceSite>yarn msdyn365 clone hero heroExtended
 ```
 
-You can find the hero module under \\src\\modules\\hero.
+You can find the hero module under \\src\\modules\\heroExtended.
 
 ## Preview modules
 
@@ -136,6 +136,6 @@ To preview the rendering of a specific module (for example, campaignBanner) in a
 
 2. Open the following URLs in a web browser. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
 
-    * `http://localhost:4000/modules?type=campaignBanner`
-    * `http://localhost:4000/modules?type=hero`
-    * `http://localhost:4000/modules?type=banner`
+    * `https://localhost:4000/modules?type=campaignBanner`
+    * `https://localhost:4000/modules?type=hero`
+    * `https://localhost:4000/modules?type=banner`
