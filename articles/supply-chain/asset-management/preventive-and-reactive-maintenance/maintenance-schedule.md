@@ -35,10 +35,12 @@ The maintenance schedule contains a list of all the expected preventive maintena
 
 The four maintenance schedule views are slightly different, depending on which maintenance schedule lines you want to see.
 
-| All maintenance schedule       | All maintenance schedule lines are shown in this calendar. |
-| My object calendars        | All calendar entries containing objects installed on functional locations to which you are related as a worker (set up in [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)) are shown in this calendar. |
-| Open object calendar lines | Calendar entries with status "Created" - meaning that they have not yet been converted to a work order or discarded - are shown in this calendar.                                            |
-| Open object calendar pools | Calendar entries connected to a work order pool are shown in this calendar.                                                                                                                  |
+| Menu item                  | Description of contents.                                                                                                                                             |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| All maintenance schedule       | All maintenance schedule lines are shown.     |
+| My asset schedule        | All maintenance schedule lines containing assets installed on functional locations to which you are related as a worker (set up in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md)) are shown in this list. |
+| Open maintenance schedule lines | maintenance schedule lines with status "Created" - meaning they have not yet been converted to a work order or discarded - are shown in this list.                                            |
+| Open maintenance schedule pools | maintenance schedule lines connected to a work order pool are shown in this list.                                                                                                                  |
 
 >[!NOTE]
 >If an object calendar entry is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open object calendar pools**. This is done to optimize the filtering options on work order pools.
