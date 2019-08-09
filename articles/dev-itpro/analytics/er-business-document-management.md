@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Business document management overview
 
-Business users use the [Electronic reporting (ER) framework](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting) to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Users can also define the dataflow to specify what application data is placed in generated documents. The ER framework generates outbound documents in Microsoft Office formats (Excel workbooks or Word documents) by using predefined templates. The templates are populated with required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This is represented by an ER format configuration that can contain templates you can use to generate different outbound documents. Business users can use this framework to manage required business documents.
+Business users use the [Electronic reporting (ER) framework](general-electronic-reporting.md) to configure formats for outbound documents in accordance with the legal requirements of various countries/regions. Users can also define the dataflow to specify what application data is placed in generated documents. The ER framework generates outbound documents in Microsoft Office formats (Excel workbooks or Word documents) by using predefined templates. The templates are populated with required data in accordance to configured dataflow while required documents are generated. Each configured format can be published as part of an ER solution to generate specific outbound documents. This is represented by an ER format configuration that can contain templates you can use to generate different outbound documents. Business users can use this framework to manage required business documents.
 
 **Business document management** is built on top of the ER framework and enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data from within Dynamics 365 for Finance and Operations without source code changes and new deployments. No knowledge of the ER framework is required to update templates of business documents.
 
@@ -123,7 +123,7 @@ Use the following procedure to enable Business document management functionality
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
-For more information about activating new features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview).
+For more information about activating new features, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure parameters
 
@@ -140,7 +140,7 @@ For this document type, the following attribute values must be selected.
 | Group               | File                  |
 | Location            | SharePoint            |
 
-For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management).
+For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
