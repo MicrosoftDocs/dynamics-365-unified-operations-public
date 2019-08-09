@@ -3283,6 +3283,8 @@
             href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
         - name: Trace execution of ER formats to troubleshoot performance issues
           href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: Business document management overview
+          href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
       - name: ER framework API
         items: 
         - name: Extend the list of Electronic reporting functions
