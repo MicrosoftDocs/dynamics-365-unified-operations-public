@@ -104,7 +104,7 @@ When you have set up a maintenance round, you run a schedule job to schedule all
 
 6. Click **OK**.
 
-7. You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you can also see the maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
+7. You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
 
 ![Figure 2](media/14-preventive-maintenance.png)
 
