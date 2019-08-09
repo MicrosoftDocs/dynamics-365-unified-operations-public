@@ -260,7 +260,7 @@ Role-based security for business events must be enabled via Feature management.
 
 6.   Enable security by selecting the **Enable** menu button on the **Security** menu on the top navigation pane. An informational message will confirm if security is enabled or disabled.
 
-7.  Modify the necessary security role to add the appropriate privilege or the duty per the above narrative.
+7.  Modify the necessary security role to add the appropriate privilege or the duty based on security noted in the informational message.
 
 ### Subscribe to business events from service
 
