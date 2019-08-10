@@ -2560,7 +2560,7 @@
           href: ../financials/localizations/rus-advance-adjustment-parameters.md
         - name: Advance holder reports
           href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-      - name: Bank
+      - name: Cash and Bank
         items: 
         - name: Set up bank accounts
           href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
@@ -2568,6 +2568,8 @@
           href: ../financials/localizations/rus-payment-order-settings-processing.md 
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md 
+        - name: Petty cash
+          href: ../financials/localizations/emea-petty-cash
       - name: VAT
         items:
         - name: Local specific posting of sales VAT
