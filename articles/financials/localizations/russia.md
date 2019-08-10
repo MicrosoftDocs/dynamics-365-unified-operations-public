@@ -50,11 +50,12 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Revaluate foreign currency for advance holders](rus-advance-adjustment-parameters.md)
 - [Advance holder reports](rus-local-management-reports-primary-forms.md)
 
-## Bank
+## Cash and Bank
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
 - [Foreign currency sales, purchases, and transfers](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-currency-sale-purchase)
+- [Petty cash](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
 
 ## VAT
 
