@@ -89,7 +89,7 @@ Use the following guidance when determining which PowerApps environment to deplo
    
     - **Trial environments** - These environments are created with an expiration date and will expire after that time, causing your environment and any Talent instances contained within to be removed automatically.
    
-    - **Unsupported regions** - Currently Talent is only supported in the following regions: United States, Europe, United Kingdom, or Australia.
+    - **Unsupported regions** - Currently Talent is only supported in the following regions: United States, Europe, United Kingdom, Australia, Canada and Asia.
   
 6. After you have determined the correct environment to use, you can continue with the provisioning process. 
  

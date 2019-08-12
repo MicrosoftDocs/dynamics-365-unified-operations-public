@@ -5,7 +5,7 @@ title: Consume business events with Microsoft Flow
 description: This topics provides information about the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,7 +50,9 @@ This topic shows how to perform the following tasks:
      
 5.  You will notice a trigger for Finance and Operations named **When a Business Event occurs**. Select this trigger.
 
-6.  Select your environment instance, category, event name, and legal entity.
+6.  Select your environment instance, category, event name, and legal entity. 
+    > [!TIP]
+    > Take advantage of the auto-complete that Flow provides by entering only part of the environment instance URL or part of the event name.
 
     <img alt="Microsoft Flow buisness event trigger" src="../../media/BEF-Howto-Flow-04.png" width="50%">
 
@@ -90,7 +92,7 @@ Microsoft Flow can configure Finance and Operations automatically for you. After
 
 1. Sign in to the Finance and Operations client.
 
-2.  Go to **System Administration \> Setup \> Buinsess Events**.
+2.  Go to **System Administration \> Setup \> Business Events**.
 
 3.  Select **Endpoints**.
 
@@ -103,3 +105,9 @@ Microsoft Flow can configure Finance and Operations automatically for you. After
     <img alt="Active business events " src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
 6.  The final step is to trigger the business event of a posted customer payment and check whether the Flow runs and you receive an email with customer payment details.
+
+## Troubleshooting a Flow
+Here are some troubleshooting suggestions:
+- Microsoft Flow provides a full history of runs so can review this information to determine what might be wrong with a failing Flow.
+- When reviewing a failed run, carefully review the inputs and outputs of trigger and action blocks. 
+- After changes have been made to Flow, go to the latest run or a particular run, and **Resubmit** the inputs to run the Flow again.

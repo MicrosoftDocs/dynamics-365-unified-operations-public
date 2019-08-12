@@ -15,14 +15,13 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: kfend
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Mexico
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.scope: Retail
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.2
 

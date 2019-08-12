@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Russia
+title: Russia overview
 description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Russia
+# Russia overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,6 +59,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## VAT
 
 - [Local specific posting of sales VAT](rus-local-specific-posting-sales-vat.md)
+- [Invoice factures processing and printing](rus-invoice-facture-process-print.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [VAT declaration](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
@@ -82,6 +83,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Transfer fixed assets](rus-fixed-asset-transfer.md)
 
 ## Accounts payable and receivable
+- [Credit note corrections](rus-credit-note-correction.md)
 - [Invoices for payment](rus-invoice-payment.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)

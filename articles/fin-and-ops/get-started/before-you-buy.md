@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Before you buy
+title: Before you buy home page
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
 author: kfend
 manager: AnnBe
-ms.date: 01/04/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21761
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Before you buy
+# Before you buy home page
 
 [!include [banner](../includes/banner.md)]
 

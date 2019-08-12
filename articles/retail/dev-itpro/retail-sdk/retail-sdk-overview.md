@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail software development kit (SDK)
+title: Retail software development kit (SDK) architecture
 description: This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/16/2018
+ms.date: 7/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17771
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail software development kit (SDK)
+# Retail software development kit (SDK) architecture
 
 [!include [banner](../../includes/banner.md)]
 

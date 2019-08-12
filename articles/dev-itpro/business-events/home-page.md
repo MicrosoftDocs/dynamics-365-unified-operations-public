@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Business events
-description: This topic provides information about business events, which s provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
+title: Business events overview
+description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,9 +26,10 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business events
+# Business events overview
 
 [!include[banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
@@ -38,7 +39,7 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
+Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
@@ -228,3 +229,56 @@ this information to subscribe to more specific topics as required.
 > [!NOTE]
 > The filterable fields that are sent in a business event can be modified to
 include custom fields. This is a developer experience.
+
+## Role-based security for business events
+Starting in Platform update 29, role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
+
+| **Requirement**                                                                                                                                | **Privilege**                                 | **Duty**                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------|
+| Only certain users must have access to view the business events catalog.                                                                       | **BusinessEventsCatalogView**                 | None                              |
+| Only certain users must have access to activate business events.                                                                               | **BusinessEventsCatalogMaintain**             | None                              |
+| Only certain users must have access to create and manage endpoints.                                                                            | **Business events security privilege**        | **Business events security duty** |
+| Users must only be able to subscribe to business events which they have been granted access to from external applications like Microsoft Flow. | **Subscribe to business events from service** | None                              |
+| Only certain users must be able to view the business events security setup.                                                                    | **BusinessEventsCatalogSecuritySetupView**    | None                              |
+| Only certain users must be able to manage business events security.                                                                            | **Maintain business events catalog security** | None                              |
+
+These privileges can be added to the required duties to grant corresponding roles appropriate access levels.
+
+### Enabling role-based security for business events
+
+Role-based security for business events must be enabled via Feature management.
+
+1.   Go to **System administration \> Feature management**.
+
+2.   Select the **Business events catalog security** feature.
+
+3.   Enable the feature.
+
+4.   Go to the business events catalog via **System administration \> Set up \> Business events \> Business events catalog.**
+
+5.   The **Security** tab in the catalog is where a business event must be mapped to one or more roles. You must complete the configuration as required.
+
+6.   Enable security by selecting the **Enable** menu button on the **Security** menu on the top navigation pane. An informational message will confirm if security is enabled or disabled.
+
+7.  Modify the necessary security role to add the appropriate privilege or the duty based on security noted in the informational message.
+
+### Subscribe to business events from service
+
+Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, which is described below. The organizational assignments that are done, if any, as part of role-based security is honored in the context of business events by letting users to only subscribe
+to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Microsoft Flow or Logic Apps.
+
+### Backward compatibility
+
+To ensure backward compatibility of business events with versions prior to Platform update 29, the following behavior must be understood.
+
+-   Role-based security for business events will be disabled by default.
+
+-   Even if the feature is enabled in Feature management, role-based security will not take effect.
+
+-   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
+
+-   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with administration role will not notice any change in behavior. However, any non-admin users will either only see business events to which their roles were assigned to in the business events catalog security configuration or they will not see any business events because their roles were not assigned to any business events.
+
+
+> [!NOTE]
+> To ensure uninterrupted functionality, it is important to understand the backward-compatibility behavior described above before you enable security on business events.

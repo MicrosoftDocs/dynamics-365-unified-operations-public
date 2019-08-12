@@ -17,7 +17,7 @@ ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23341

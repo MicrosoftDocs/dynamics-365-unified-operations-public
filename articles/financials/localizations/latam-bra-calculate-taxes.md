@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Brazilian taxes
+title: Brazil taxes overview
 description: Microsoft Dynamics 365 for Finance and Operations calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes on sales, purchases, transfers between fiscal establishments, delivery of items to a third party, or receipt of items from a third party.
 author: sndray
 manager: AnnBe
-ms.date: 08/11/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268704
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Brazilian taxes
+# Brazil taxes overview
 
 [!include [banner](../includes/banner.md)]
 
