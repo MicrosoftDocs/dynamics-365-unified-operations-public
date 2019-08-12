@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2019
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -261,4 +261,4 @@ through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to t
 
 ### Do write backward compatible channel database extensions
 
-The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Retail Server or POS must not prevent existing Retail Server or POS operations from functioning correctly. During deployment flows, the different components of your Retail Cloud Scale Unit, Retail Store Scale Unit and Modern POS are updated in the inverse orther of dependency. This means that the Channel Database is the first component to be updated, and Retail Server or POS are updated next. In case that Retail Server or POS fails to update successfully, those components are rolledback to restore them to their previous working state. However, in such situations, the Channel Database is not rolledback to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successfull deployment is performed.
+The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Retail Server or POS must not prevent existing Retail Server or POS operations from functioning correctly. During deployment flows, the different components of your Retail Cloud Scale Unit, Retail Store Scale Unit, and Modern POS are updated in the inverse other of dependency. This means that the Channel Database is the first component to be updated, and Retail Server or POS are updated next. If Retail Server or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the Channel Database is not rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.
