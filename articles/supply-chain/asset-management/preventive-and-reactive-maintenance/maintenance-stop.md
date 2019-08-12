@@ -87,17 +87,14 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 >[!NOTE]
 >Work order maintenance jobs and maintenance schedule lines that are not included in the maintenance downtime period after you have made adjustments are automatically removed from **Maintenance downtime activities**.
 
-14. In **All maintenance downtime activities** > **Maintenance downtime activities** > select a maintenance downtime activity in the list and click **Item forecast** to open the **Calculate item forecast** dialog. Use this dialog to calculate forecasts for items (spare parts and other required items) and group them to get an overview, for example, by date, asset, asset type, and maintenance job type. Note that the dates shown in the dialog are the start and end dates selected in **Maintenance downtime activities**. This calculation includes the spare parts and items related to the assets that are selected on the maintenance downtime activity.
+14. In **All maintenance downtime activities** > **Maintenance downtime activities** > select a maintenance downtime activity in the list and click **Item forecast** to open the **Calculate item forecast** dialog. Use this dialog to calculate forecasts for items (spare parts and other required items) and group them to get an overview, for example, by date, asset, asset type, and maintenance job type. Note that the dates shown in the dialog are the start and end dates selected in **Maintenance downtime activities**. This calculation includes spare parts and items related to the assets that are selected on the maintenance downtime activity.
 
 15. In the **Calculate capacity load** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-16. Click **OK** in the **Calculate item forecast** dialog. Note that the dates shown in the **Item forecast** calculation form are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
-
-17. The total number of item forecasts is shown in **Item forecast**, and you can now select the relevant check boxes to get a more detailed overview of the allocation of forecasted items.
-
-
-- You can copy objects from one maintenance stop to another. In **All maintenance stops**, select the **Copy maintenance stop** button, and make your selections in the **From maintenance stop** and **To maintenance stop** fields, and click **OK**.
-- In **All maintenance stops**, click the **Object calendar lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance stop.
+16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.
 
 ![Figure 4](media/22-preventive-maintenance.png)
+
+- You can copy assets from one maintenance downtime activity to another. In **All maintenance downtime activities**, select the **Copy maintenance downtime activities** button, and make your selections in the **From maintenance downtime activities** and **To maintenance downtime activities** fields, and click **OK**.
+- In **All maintenance downtime activities**, click the **Maintenance schedule lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance downtime activity.
 
