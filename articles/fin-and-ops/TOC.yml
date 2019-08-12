@@ -277,6 +277,8 @@
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
+      - name: Use business events with Azure Event Hubs
+        href: ../dev-itpro/business-events/how-to/event-hub.md
   - name: Compliance
     items:
     - name: Audit policy rules
