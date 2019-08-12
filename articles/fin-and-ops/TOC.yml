@@ -2569,7 +2569,7 @@
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: Petty cash
-          href: ../financials/localizations/emea-petty-cash
+          href: ../financials/localizations/emea-petty-cash.md
       - name: VAT
         items:
         - name: Local specific posting of sales VAT
