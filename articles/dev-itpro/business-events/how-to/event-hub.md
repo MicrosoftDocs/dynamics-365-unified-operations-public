@@ -5,7 +5,7 @@ title: Use business events with Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 author: AXnU
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
