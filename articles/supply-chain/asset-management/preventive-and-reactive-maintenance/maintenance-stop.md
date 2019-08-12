@@ -44,7 +44,7 @@ When assets have been selected on a maintenance downtime registration, all open 
 
 ## Maintenance downtime activities
 
-Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime registrations and see some of the information related to the maintenance downtime registrations. Click on a link in the **Maintenance downtime activities** column to open the details view.
+Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view.
 
 ![Figure 1](media/19-preventive-maintenance.png)
 
@@ -61,37 +61,34 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
 5. On the**Maintenance downtime activities assets** FastTab> click **Add line** to add assets, one at a time, to the maintenance downtime activity.
 
-6. Click **Save** when all objects have been added and return to the **All maintenance stops** list.
+6. Click **Save** when all objects have been added.
 
-7. Click **Save** in **All maintenance stops** to update the number of objects added to the selected record.
-
-8. The work order lines and open object calendar lines related to the selected objects are shown on the tabs on the **Related** FastTab. On the **General** FastTab > **Forecast hours** fields, you see the total number of hours forecasted for object calendar lines and work order lines.
+7. The work order lines and open object calendar lines related to the selected objects are shown on the tabs on the **Related** FastTab. On the **General** FastTab > **Forecast hours** fields, you see the total number of hours forecasted for object calendar lines and work order lines.
 
 >[!NOTE]
 >The object calendar lines and work order lines related to the selected objects are automatically updated if new work orders or object calendar lines have been created after you created the maintenance stop. For example, if you schedule maintenance sequences or rounds on the related objects two days after the maintenance stop was created, new object calendar lines are automatically added to the maintenance stop record.
 
-9. In **All maintenance stops** > **Maintenance stop** tab > click **Capacity load** > **Capacity load** > **Calculate capacity load** to calculate forecasted hours and group them to get an overview of capacity load on, for example, by date, object, object type and job type. Click **OK** in the **Capacity load** drop-down. Note that the dates shown in the Capacity load drop-down are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
+8. In **All maintenance stops** > **Maintenance stop** tab > click **Capacity load** > **Capacity load** > **Calculate capacity load** to calculate forecasted hours and group them to get an overview of capacity load on, for example, by date, object, object type and job type. Click **OK** in the **Capacity load** drop-down. Note that the dates shown in the Capacity load drop-down are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
 
-10. The total number of hours is shown in the **Capacity load** overview.
+9. The total number of hours is shown in the **Capacity load** overview.
 
-11. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
+10. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
 
-12. After you get an overview of the capacity load, if you want to make adjustments on object calendar lines or work order lines, return to **All maintenance stops** detail view and select the lines you want to adjust on the **Related** FastTab.
+11. After you get an overview of the capacity load, if you want to make adjustments on object calendar lines or work order lines, return to **All maintenance stops** detail view and select the lines you want to adjust on the **Related** FastTab.
 
-13. Click the **Adjust** button and update expected start/end dates, priority, or responsible workers for the selected object calendar lines or work order lines.
+12. Click the **Adjust** button and update expected start/end dates, priority, or responsible workers for the selected object calendar lines or work order lines.
 
-14. Click **OK** when you have made the required adjustments. Object calendar lines or work order lines that are not included in the maintenance stop period after you have made adjustments are automatically removed from **All maintenance stops**.
+13. Click **OK** when you have made the required adjustments. Object calendar lines or work order lines that are not included in the maintenance stop period after you have made adjustments are automatically removed from **All maintenance stops**.
 
 >[!NOTE]
 >When you make adjustments to work order lines, you change the related work order.
 
-15. In **All maintenance stops** > **Maintenance stop** tab > click **Item forecast** > **Item forecast** > **Calculate item forecast** to calculate forecasts for items (spare parts and other required items) and group them to get an overview, for example, by date, object, object type and job type. Click **OK** in the **Calculate item forecast** drop-down. Note that the dates shown in the **Item forecast** calculation form are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
+14. In **All maintenance stops** > **Maintenance stop** tab > click **Item forecast** > **Item forecast** > **Calculate item forecast** to calculate forecasts for items (spare parts and other required items) and group them to get an overview, for example, by date, object, object type and job type. Click **OK** in the **Calculate item forecast** drop-down. Note that the dates shown in the **Item forecast** calculation form are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
 
-16. The total number of item forecasts is shown in **Item forecast**, and you can now select the relevant check boxes to get a more detailed overview of the allocation of forecasted items.
-
-The figure below shows a screenshot of the interface.
+15. The total number of item forecasts is shown in **Item forecast**, and you can now select the relevant check boxes to get a more detailed overview of the allocation of forecasted items.
 
 ![Figure 2](media/20-preventive-maintenance.png)
+
 
 - You can copy objects from one maintenance stop to another. In **All maintenance stops**, select the **Copy maintenance stop** button, and make your selections in the **From maintenance stop** and **To maintenance stop** fields, and click **OK**.
 - In **All maintenance stops**, click the **Object calendar lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance stop.
