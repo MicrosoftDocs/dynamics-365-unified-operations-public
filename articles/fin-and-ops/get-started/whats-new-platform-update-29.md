@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
