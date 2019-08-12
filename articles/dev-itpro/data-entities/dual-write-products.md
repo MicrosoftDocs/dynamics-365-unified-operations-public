@@ -43,6 +43,7 @@ The richness of the supply chain management related fields to the product will a
 ## Templates
 
 Product information contains all information related to the product and its definition such as the product dimensions or the tracking and storage dimension.  A collection of entity maps are created to synchronize products and its related information, as shown in the following table:
+
 Finance and Operations  | Customer Engagement application
 --------------------------|---------------------------------
 Released products V2      | Product
@@ -60,7 +61,7 @@ Sizes          | msdyn_productsizes
 Styles         | msdyn_productsytles
 Configurations | msdyn_productconfigurations
 
-[!include banner]
+[!include [banner](../includes/dual-write-symbols.md)]
 <!--- the banner above needs to be  https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/dev-itpro/includes/dual-write-symbols.md                 --->
 
 ## Integration of products 
