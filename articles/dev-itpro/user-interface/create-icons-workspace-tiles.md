@@ -5,7 +5,7 @@ title: Create icons for workspace tiles
 description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,7 +51,7 @@ When you create a workspace tile, adhere to the following guidelines:
     -   NormalImage=&lt;name of AOTResource&gt;
 
 ## Icon creation
-Guidelines for creating images for custom workspace tiles are below. The recommended dimensions for the image and icon are based on the out-of-the-box workspace icons. While images of other sizes are allowed; the size and positioning of the icon relative to the full image should be maintained regardless of the image size.  
+Guidelines for creating images for custom workspace tiles are below. The recommended dimensions for the image and icon are based on the out-of-the-box workspace icons. While images of other sizes are allowed, the size and positioning of the icon relative to the full image should be maintained regardless of the image size.  
 
 Following these recommendations ensure that your workspace icon matches the styling and size of other workspace icons and that the content of your workspace icon does not get cropped by the CSS applied to the image.renders the image as a circle.
 
