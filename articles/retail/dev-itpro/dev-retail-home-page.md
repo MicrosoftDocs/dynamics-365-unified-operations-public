@@ -97,6 +97,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 ## Retail hardware station
 -   [Retail hardware station configuration and installation](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
+-   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Retail Store Scale Unit
 -   [Retail Store Scale Unit overview](retail-store-system-begin.md)
