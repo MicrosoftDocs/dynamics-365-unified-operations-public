@@ -39,7 +39,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Correspondence of accounts](rus-correspondence-accounts.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
-- [Import currency exchange rates from CBRF](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates)
+- [Import currency exchange rates from CBRF](../general-ledger/import-currency-exchange-rates.md)
 
 ## Advance holders
 
@@ -53,15 +53,15 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Cash and Bank
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
-- [Set up and process payment orders](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
-- [Foreign currency sales, purchases, and transfers](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-currency-sale-purchase)
-- [Petty cash](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
+- [Set up and process payment orders](../financials/localizations/rus-payment-order-settings-processing.md)
+- [Foreign currency sales, purchases, and transfers](../financials/localizations/rus-currency-sale-purchase.md)
+- [Petty cash](../financials/localizations/emea-petty-cash.md)
 
 ## VAT
 
 - [Local specific posting of sales VAT](rus-local-specific-posting-sales-vat.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
-- [VAT declaration](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
+- [VAT declaration](../financials/localizations/rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
