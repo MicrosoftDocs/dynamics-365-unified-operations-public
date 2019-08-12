@@ -39,19 +39,16 @@ To complete these steps, you must first complete the steps in the “Create a co
 
 ## Upload the Payments data model configuration
 1. In the navigation pane, go to **Modules > Organization administration > Workspaces > Electronic reporting**.
-2. In the list, mark the select the configuration provider for sample company, Litware, Inc. If you don’t see this configuration provider, you must first complete the steps in [Create a configuration provider and mark it as active](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md
-).  
+2. In the list, mark the select the configuration provider for sample company, Litware, Inc. If you don’t see this configuration provider, you must first complete the steps in [Create a configuration provider and mark it as active](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).  
 3. Select **Set active**.
-4. Select **Repositories**.
-- Select a repository for the Operations Resources type, if available. If its available, skip the following steps about creating a new repository.  
+4. Select **Repositories**. Select a repository for the Operations Resources type, if available. If its available, skip the following steps about creating a new repository.  
 5. Select **Add** to open the drop dialog.
 6. In the **Configuration repository type** field, enter `Operations resourcesdd`.
 7. Select **Create repository**.
 8. Select **OK**.
 9. Select **Open**.
 10. In the tree, select **Payment model**.
-11. Select **Import**.
-- Import this data model. It will be used as a data source in a new format configuration. Skip this step if this configuration has been already imported.  
+11. Select **Import**. Import this data model. It will be used as a data source in a new format configuration. Skip this step if this configuration has been already imported.  
 12. Select **Yes**.
 13. Close the pages until you return to the Electronic reporting page.
 
@@ -59,14 +56,10 @@ To complete these steps, you must first complete the steps in the “Create a co
 1. Select **Reporting configurations**.
 2. In the tree, select **Payment model**.
 3. Select **Create configuration** to open the drop dialog.
-4. In the **New** field, enter `Format based on data model PaymentModel`.
-- Create a format that is based on the PaymentModel data model.  
-5. In the **Name** field, type `Sample worksheet report`.
-- Sample worksheet report  
-6. In the **Description** field, type `Sample worksheet report for vendors’ payments`.
-- Sample worksheet report for vendors’ payments.  
-7. In the **Data model definition** field, enter or select a value.
-- Select the **CustomerCreditTransferInitiation** definition.  
+4. In the **New** field, enter `Format based on data model PaymentModel`. Create a format that is based on the PaymentModel data model.
+5. In the **Name** field, type `Sample worksheet report`. Sample worksheet report  
+6. In the **Description** field, type `Sample worksheet report for vendors’ payments`. Sample worksheet report for vendors’ payments.  
+7. In the **Data model definition** field, enter or select a value. Select the **CustomerCreditTransferInitiation** definition.  
 8. Select **Create configuration**.
 
 ## Design a new document in OPENXML worksheet format
@@ -74,16 +67,12 @@ To complete these steps, you must first complete the steps in the “Create a co
 2. Select **Designer**.
 3. On the Action Pane, select **Import**.
 4. Select **Import from Excel**.
-5. Select **Attachments**.
-- Attach the existing Excel document as a template.  
+5. Select **Attachments**. Attach the existing Excel document as a template.  
 6. Select **New**.
-7. Select **File**.
-- Point to the existing Excel file.  
+7. Select **File**. Point to the existing Excel file.  
 8. Close the page.
-9. In the **Template** field, enter or select a value.
-- Select the attached Excel file to be used as a template.  
-10. Select **OK**.
-- Note that ER format components have been created in the designing format based on the structure of the referring MS Excel document (named ranges).  
+9. In the **Template** field, enter or select a value. Select the attached Excel file to be used as a template.  
+10. Select **OK**. Note that ER format components have been created in the designing format based on the structure of the referring MS Excel document (named ranges).  
 
 ## Create a new data source to calculate totals by currency codes
 1. Select the **Mapping** tab.
@@ -99,8 +88,7 @@ To complete these steps, you must first complete the steps in the “Create a co
 11. Select **Grouped fields**.
 12. In the tree, select **model\Payments\Instructed Amount(InstructedAmount)**.
 13. Select **Add field to**, then select **Aggregation fields**.
-14. In the **Method** field, select an option.
-- Select the **SUM aggregation** function.  
+14. In the **Method** field, select an option. Select the **SUM aggregation** function.  
 15. In the **Name** field, type `TotalInstructuredAmount`.
 16. Select **Save**.
 17. Close the page.
@@ -142,8 +130,7 @@ To complete these steps, you must first complete the steps in the “Create a co
 6. Select **Edit**.
 7. Expand the **File formats** section.
 8. Select **Yes** in the **Generic electronic reporting** field.
-9. In the **Export format configuration** field, enter or select a value.
-- Select the **Sample worksheet report** configuration.  
+9. In the **Export format configuration** field, enter or select a value. Select the **Sample worksheet report** configuration.  
 10. Select **Save**.
 11. Close the page.
 
@@ -165,6 +152,5 @@ To complete these steps, you must first complete the steps in the “Create a co
 15. In the **Method of payment** field, type `Electronic`.
 16. In the **File name** field, type `Payments`.
 17. In the **Bank account** field, type `GBSI OPER`.
-18. Select **OK**, then select **OK** again.
-- Review the created worksheet, including details of payment lines as well as totals for each currency code used in this payment message.  
+18. Select **OK**, then select **OK** again. Review the created worksheet, including details of payment lines as well as totals for each currency code used in this payment message.  
 
