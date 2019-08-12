@@ -70,7 +70,7 @@ The representation of the product as an SKU also allows the concepts of distinct
 - **Distinct products** (without variants) are products that are defined by themselves. They do not need any dimensions to be defined. For example, a specific book. For these, one record is created in the **Product** entity and one record is created in the **msdyn_sharedproductdetails**. No product family record is created.
 - **Product masters** in Finance and Operations are used as generic products to hold the definition and rules to behave in business processes. Based on these definitions, distinct products known as product variants can be generated. For example, a t-shirt would be the product master that could have as dimensions color and size. Different variants could be released with the combination of these dimensions such a small blue t-shirt or a green medium t-shirt. In the integration one record will be created per variant in the product table. This record will contain the variant specific information, such as the different dimensions. The generic information for the product (which in Finance and Operations is hold in the product master) is stored in the **msdyn_sharedproductdetails**. Additionally, one product family record is created per product master. The product master information will be synchronized to Common Data Service as soon as the released product master is created (even before variants are released).  
 
-![data model for products](capture.png)
+![data model for products](dual-write-product.png)
 
 ### Common Data Service released distinct products to Product
 
