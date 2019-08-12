@@ -72,9 +72,9 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
  Click **OK** in the **Capacity load** drop-down. Note that the dates shown in the Capacity load drop-down are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
 
-9. In the **Calculate capacity load** dialog, insert start and end times, and select if you want to include work orders and maintenance schedules in the calculation. The **Level** field...............
+9. In the **Calculate capacity load** dialog, insert start and end times, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the maintenance schedule lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all maintenance schedule lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all maintenance schedule lines on all the functional location levels to which they are related.
 
-10. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
+10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
 
 11. After you get an overview of the capacity load, if you want to make adjustments on object calendar lines or work order lines, return to **All maintenance stops** detail view and select the lines you want to adjust on the **Related** FastTab.
 
