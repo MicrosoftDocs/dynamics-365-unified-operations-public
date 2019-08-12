@@ -53,9 +53,9 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## Cash and Bank
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
-- [Set up and process payment orders](../financials/localizations/rus-payment-order-settings-processing.md)
-- [Foreign currency sales, purchases, and transfers](../financials/localizations/rus-currency-sale-purchase.md)
-- [Petty cash](../financials/localizations/emea-petty-cash.md)
+- [Set up and process payment orders](rus-payment-order-settings-processing.md)
+- [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
+- [Petty cash](emea-petty-cash.md)
 
 ## VAT
 
