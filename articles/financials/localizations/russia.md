@@ -59,6 +59,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 ## VAT
 
 - [Local specific posting of sales VAT](rus-local-specific-posting-sales-vat.md)
+- [Invoice factures processing and printing](rus-invoice-facture-process-print.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [VAT declaration](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)

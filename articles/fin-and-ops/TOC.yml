@@ -2574,6 +2574,8 @@
         items:
         - name: Local specific posting of sales VAT
           href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+        - name: Invoice factures processing and printing
+          href: ../financials/localizations/rus-invoice-facture-process-print.md
         - name: Value-added tax (VAT) for tax agents
           href: ../financials/localizations/rus-tax-agent.md
         - name: VAT declaration
