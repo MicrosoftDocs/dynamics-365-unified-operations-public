@@ -32,34 +32,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance downtime
 
-This topic explains maintenance stops in Enterprise Asset Management. Maintenance stops are used to get an overview of the capacity required to carry out maintenance jobs on specific objects during a specific period. For example, you can create a maintenance stop for Production line 10 in Production Hall 29-A on production site 02. The maintenance stop has a start and end time indicating the period in which the objects related to the maintenance stop are not available for production.
+Maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period. For example, you can create a maintenance downtime registration for Production line 10 in Production Hall 29-A on production site 02. The maintenance downtime registration has a start and end time indicating the period in which the assets related to the maintenance stop are not available for production.
 
-The maintenance stop is an overview of object calendar lines and work orders on related objects during a specified period. The lines related to work orders all have an expected start date within the maintenance stop period. You can extract useful information and make adjustments to planned maintenance jobs:
+**Maintenance downtime activities** is an overview of maintenance schedule lines and work order maintenance jobs on related assets during a specified period. The lines related to work order maintenance jobs all have an expected start date within the maintenance stop period. You can extract useful information and make adjustments to planned maintenance jobs:
 
-- Get an overview of required shut-down periods of production equipment (objects).  
-- Get an overview of planned maintenance (hours), grouped by competencies (responsible worker groups or workers), for example capacity load on electricians, smiths, or other work groups required to do the planned maintenance jobs.  
-- Make adjustments to object calendar lines or work order lines related to the objects, for example, change expected start and end times on a line, or select other workers to optimize the workflow for workers and worker groups.
+- Get an overview of required shut-down periods of production equipment (assets).  
+- Get an overview of planned maintenance (hours), grouped by competencies (responsible maintenance worker groups or maintenance workers), for example capacity load on electricians, smiths, or other maintenance work groups required to do the planned maintenance jobs.  
+- Make adjustments to maintenance schedule lines or work order maintenance jobs related to the assets, for example, change expected start and end times on a line, or select other maintenance workers to optimize the workflow for maintenance workers and maintenance worker groups.
 
-When objects have been selected on a maintenance stop, all open object calendar lines and work order lines relating to active work orders are included in the maintenance stop.
+When assets have been selected on a maintenance downtime registration, all open maintenance schedule lines and work order maintenance jobs relating to active work orders are included in the maintenance downtime registration.
 
-## All maintenance stops
+## Maintenance downtime activities
 
-Click **Enterprise asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open the list. **All maintenance downtime activities** contains a list of all maintenance downtime registrations and displays some of the information related to the maintenance downtime registrations.
+Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime registrations and see some of the information related to the maintenance downtime registrations. Click on a link in the **Maintenance downtime activities** column to open the details view.
 
 ![Figure 1](media/19-preventive-maintenance.png)
 
 
-## Create a maintenance stop
+## Create a maintenance downtime registration
 
-1. Click **Enterprise asset management** > **Common** > **Maintenance stops** > **All maintenance stops** or **Active maintenance stops**.
+1. Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** or **Active maintenance downtime activities**.
 
 2. Click **New**.
 
-3. Insert an ID in the **Maintenance stop** field and a name in the **Name** field.
+3. Insert an ID in the **Maintenance downtime activities** field and a name in the **Name** field.
 
 4. Insert the period for the maintenance stop in the **Start date/time** and **End date/time** fields.
 
-5. Click **Objects** > **New** button and add objects one at a time to the maintenance stop.
+5. On the**Maintenance downtime activities assets** FastTab> click **Add line** to add assets, one at a time, to the maintenance downtime activity.
 
 6. Click **Save** when all objects have been added and return to the **All maintenance stops** list.
 
@@ -91,15 +91,14 @@ Click **Enterprise asset management** > **Common** > **Maintenance downtime acti
 
 The figure below shows a screenshot of the interface.
 
-![Figure 2](media/19-preventive-maintenance.png)
+![Figure 2](media/20-preventive-maintenance.png)
 
 - You can copy objects from one maintenance stop to another. In **All maintenance stops**, select the **Copy maintenance stop** button, and make your selections in the **From maintenance stop** and **To maintenance stop** fields, and click **OK**.
 - In **All maintenance stops**, click the **Object calendar lines** button or the **Active work orders** button to open the related lists and view the lines related to the selected maintenance stop.
 
-The figures below show screenshots of the interface.
+![Figure 3](media/21-preventive-maintenance.png)
 
-![Figure 3](media/20-preventive-maintenance.png)
+![Figure 4](media/22-preventive-maintenance.png)
 
-![Figure 4](media/21-preventive-maintenance.png)
+![Figure 5](media/23-preventive-maintenance.png)
 
-![Figure 5](media/22-preventive-maintenance.png)
