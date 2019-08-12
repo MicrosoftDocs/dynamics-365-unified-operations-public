@@ -166,6 +166,8 @@
     href: retail-hardware-station-configuration-installation.md
   - name: Time and attendance in Retail
     href: retail-time-attendance.md
+  - name: Create and change store hours
+    href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) and Cloud POS
   items:
   - name: Choose between MPOS and Cloud POS
