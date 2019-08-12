@@ -61,18 +61,20 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
 5. On the**Maintenance downtime activities assets** FastTab> click **Add line** to add assets, one at a time, to the maintenance downtime activity.
 
-6. Click **Save** when all objects have been added.
+6. Click **Save** when all assets have been added.
 
-7. The work order lines and open object calendar lines related to the selected objects are shown on the tabs on the **Related** FastTab. On the **General** FastTab > **Forecast hours** fields, you see the total number of hours forecasted for object calendar lines and work order lines.
+7. The work order maintenance jobs and open maintenance schedule lines related to the selected assets are shown on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs. On the **General** FastTab > **Work orders** group > **Maintenance forecast hours** field and **General** FastTab > **Maintenance schedule** group > **Maintenance forecast hours** field , you see the total number of hours forecasted for work order maintenance jobs and maintenance schedule lines.
 
 >[!NOTE]
->The object calendar lines and work order lines related to the selected objects are automatically updated if new work orders or object calendar lines have been created after you created the maintenance stop. For example, if you schedule maintenance sequences or rounds on the related objects two days after the maintenance stop was created, new object calendar lines are automatically added to the maintenance stop record.
+>The work order maintenance jobs and maintenance schedule lines related to the selected assets are automatically updated if new work orders or maintenance schedule lines are created after you created the maintenance downtime activity. For example, if you schedule maintenance plans or maintenance rounds on the related assets two days after the maintenance downtime activity was created, new maintenance schedule lines are automatically added to the maintenance downtime activity.
 
-8. In **All maintenance stops** > **Maintenance stop** tab > click **Capacity load** > **Capacity load** > **Calculate capacity load** to calculate forecasted hours and group them to get an overview of capacity load on, for example, by date, object, object type and job type. Click **OK** in the **Capacity load** drop-down. Note that the dates shown in the Capacity load drop-down are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
+8. In **All maintenance downtime activities** > **Maintenance downtime activities** tab > click **Capacity load** to open the **Calculate capacity load** dialog. Use this dialog to get an overview of capacity load on, for example, dates, assets, asset types, and maintenance job types. 
 
-9. The total number of hours is shown in the **Capacity load** overview.
+ Click **OK** in the **Capacity load** drop-down. Note that the dates shown in the Capacity load drop-down are the start and end dates selected in **All maintenance stops**. This calculation only includes the objects related to the maintenance stop.
 
-10. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
+9. In the **Calculate capacity load** dialog, insert start and end times, and select if you want to include work orders and maintenance schedules in the calculation. The **Level** field...............
+
+10. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
 
 11. After you get an overview of the capacity load, if you want to make adjustments on object calendar lines or work order lines, return to **All maintenance stops** detail view and select the lines you want to adjust on the **Related** FastTab.
 
