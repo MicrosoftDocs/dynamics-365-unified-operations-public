@@ -61,7 +61,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 - [Local specific posting of sales VAT](rus-local-specific-posting-sales-vat.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
-- [VAT declaration](../financials/localizations/rus-VAT-declaration.md)
+- [VAT declaration](rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
