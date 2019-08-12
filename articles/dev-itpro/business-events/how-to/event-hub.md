@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 2019-07-31
 
 This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 
-1. Create an Active Directory application registration. Make a note of the application ID.
+1. In Azure portal, create an Active Directory application registration. Make a note of the application ID.
 
     ![Application (client) ID value](../../media/BE_EH_aad.PNG)
 
-2. Give the app permission to the Azure Key Vault application programming interface (API).
+2. Give the app, permission to the Azure Key Vault application programming interface (API).
 
     ![Giving the app permission to the Azure Key Vault API](../../media/BE_EH_api.png)
 
