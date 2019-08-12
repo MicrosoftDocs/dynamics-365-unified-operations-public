@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Integrated products
-description: This topic describes the integration of products data between Finance and Operations and Common Data Service.
+title: Integrated product master
+description: This topic describes the integration of product data between Finance and Operations and Common Data Service.
 author: benebotg 
 manager: AnnBe
 ms.date: 08/6/2019
@@ -36,13 +36,11 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-With the integration of products, you will be able to synchronize the products from Microsoft Dynamics 365 for Finance and Operations to CDS. The integration will enable you to view and use in Customer Engagement the products originated in Finance and Operations. 
-As the concept of products is much richer in Finance and Operations than in Customer Engagement, Finance and Operations will be considered the master of the integration and in Customer Engagement the products originated from the integration will be read-only. 
-The richness of the supply chain management related fields to the product will also be available in CDS and all the existing concepts to define the product will also be defined. To harmonize the representation of product between Finance and Operations and Customer Engagement the following model is being introduced:
+With the integration of products, you can synchronize the product data from Microsoft Dynamics 365 for Finance and Operations to Common Data Service. Integration lets you view and use in Customer Engagement the product data that originates in Finance and Operations. As the concept of a product is  richer in Finance and Operations than in Customer Engagement, Finance and Operations is considered the master of the integration. In Customer Engagement the product data from Finance and Operations is read-only. The richness of the supply chain management related fields to product data is also be available in Common Data Service and all the existing concepts to define the product will also be defined. 
 
 ## Templates
 
-Product information contains all information related to the product and its definition such as the product dimensions or the tracking and storage dimension.  A collection of entity maps are created to synchronize products and its related information, as shown in the following table:
+Product information contains all information related to the product and its definition such as the product dimensions or the tracking and storage dimension. A collection of entity maps are created to synchronize products and its related information, as shown in the following table:
 
 Finance and Operations  | Customer Engagement application
 --------------------------|---------------------------------
@@ -62,20 +60,21 @@ Styles         | msdyn_productsytles
 Configurations | msdyn_productconfigurations
 
 [!include [banner](../includes/dual-write-symbols.md)]
-<!--- the banner above needs to be  https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/articles/dev-itpro/includes/dual-write-symbols.md                 --->
 
 ## Integration of products 
 
-With this model the product will be represented by the combination of two different entities in CDS: **Product** and **msdyn_sharedproductdetails**. While the first entity contains the definition of a product (unique identification for the product, product name and description), the second entity contains the fields stored at the product level in Finance and Operations. The combination of these two entities is used to define the product following the Stock Keeping Unit Concept (SKU). 
-The representation of the product as an SKU also allows the concepts of distinct products, product masters and product variants from Finance and Operations to be captured in CDS in the following way:
-- **Distinct products** (without variants) are products that are defined by themselves, they do not need any dimensions to be defined. For example, a specific book. For these, one record is created in the Product entity and one record in the msdyn_sharedproductdetails. No product family record is created.
-- **Product masters** in Finance and Operations are used as generic products to hold the definition and rules to behave in business processes. Based on these definitions, distinct products known as product variants can be generated. For example, a t-shirt would be the product master that could have as dimensions color and size. Different variants could be released with the combination of these dimensions such a small blue t-shirt or a green medium t-shirt. In the integration one record will be created per variant in the product table. This record will contain the variant specific information, such as the different dimensions. [check that this has been done]. The generic information for the product (which in Finance and Operations is hold in the product master) will be kept in the msdyn_sharedproductdetails. Additionally, one product family record is created per product master. The product master information will be synchronized to CDS as soon as the released product master is created (even before variants are released).  
+With this model the product will be represented by the combination of two different entities in Common Data Service: **Product** and **msdyn_sharedproductdetails**. While the first entity contains the definition of a product (unique identification for the product, product name and description), the second entity contains the fields stored at the product level in Finance and Operations. The combination of these two entities is used to define the product following the Stock Keeping Unit Concept (SKU). 
+
+The representation of the product as an SKU also allows the concepts of distinct products, product masters and product variants from Finance and Operations to be captured in Common Data Service in the following way:
+
+- **Distinct products** (without variants) are products that are defined by themselves. They do not need any dimensions to be defined. For example, a specific book. For these, one record is created in the **Product** entity and one record is created in the **msdyn_sharedproductdetails**. No product family record is created.
+- **Product masters** in Finance and Operations are used as generic products to hold the definition and rules to behave in business processes. Based on these definitions, distinct products known as product variants can be generated. For example, a t-shirt would be the product master that could have as dimensions color and size. Different variants could be released with the combination of these dimensions such a small blue t-shirt or a green medium t-shirt. In the integration one record will be created per variant in the product table. This record will contain the variant specific information, such as the different dimensions. The generic information for the product (which in Finance and Operations is hold in the product master) is stored in the **msdyn_sharedproductdetails**. Additionally, one product family record is created per product master. The product master information will be synchronized to Common Data Service as soon as the released product master is created (even before variants are released).  
 
 ![data model for products](capture.png)
 
-### CDS released distinct products to Product
+### Common Data Service released distinct products to Product
 
-The product entity contains the fields to define the product. Below the mapping are shown:
+The **product** entity contains the fields to define the product. Below the mapping are shown:
 
 Source field | Map type | Destination field
 ---|---|---
@@ -208,11 +207,11 @@ PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
 
 ## Product dimensions and product dimension group
 
-Product dimensions are characteristics that serve to identify a product variant. The four product dimensions - **Color**, **Size**, **Style** and **Configuration** - are also mapped to CDS to define the product variant. 
+Product dimensions are characteristics that serve to identify a product variant. The four product dimensions - **Color**, **Size**, **Style** and **Configuration** are also mapped to Common Data Service to define the product variant. 
 
 ### Colors
 
-All the available colors present in Finance and Operations are available in CDS thanks to the following mappings:
+All the available colors present in Finance and Operations are available in Common Data Service using the following mappings:
 
 Source field | Map type | Destination field
 ---|---|---
@@ -221,7 +220,7 @@ COLORID | >> | msdyn_productcolorname
 
 ### Sizes
 
-All the possible sizes in Finance and Operations are available in CDS using the mappings:
+All the possible sizes in Finance and Operations are available in Common Data Service using the mappings:
 
 Source field | Map type | Destination field
 ---|---|---
@@ -230,7 +229,7 @@ SIZEID | >> | msdyn_name
 
 ### Styles
 
-All the possible styles in Finance and Operations are available in CDS using the mappings:
+All the possible styles in Finance and Operations are available in Common Data Service using the mappings:
 
 Source field | Map type | Destination field
 ---|---|---
@@ -239,7 +238,7 @@ STYLEID | >> | msdyn_name
 
 ### Configurations
 
-All the possible configurations in Finance and Operations are available in CDS using the mappings:
+All the possible configurations in Finance and Operations are available in Common Data Service using the mappings:
 
 Source field | Map type | Destination field
 ---|---|---
@@ -251,7 +250,7 @@ CONFIGURATIONID | >> | msdyn_productconfiguration
 
 ## Product number identified barcode
 
-To uniquely identify products the product barcodes are used. These product barcodes will be available in CDS using the following mappings:
+To uniquely identify products the product barcodes are used. These product barcodes will be available in Common Data Service using the following mappings:
 
 Source field | Map type | Destination field
 ---|---|---
