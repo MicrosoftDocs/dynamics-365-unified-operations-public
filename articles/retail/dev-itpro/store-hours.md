@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and update store hours
-description: This topic describes how to create and update store hours in Retail HQ.
+description: This topic describes how to create and update store hours in Retail headquarters.
 author: josaw1
 manager: AnnBe
 ms.date: 7/30/2019
@@ -29,59 +29,58 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 ---
 
-
-
 # Create and update store hours
 
 [!include [banner](../../includes/banner.md)]
 
 ## Overview
-Retailers can create, maintain, and manage the store hours for different stores across geographies from a single point. Retailers can showcase the store hours in point of sale (POS) terminals, letting the cashiers share store hours to customers and assist shoppers while looking for inventory in different stores. Customers also can see the new store hours printed on their receipts in case they wish to return to the store. 
 
-Multiple store hours can be configured across different channels, such as brick and mortar stores, call centers, mobile devices, and e-Commerce sites.
+From a single place, retailers can create, maintain, and manage the store hours for different stores across geographic regions. The store hours can then be shown on point of sale (POS) terminals. In this way, cashiers can share store hours with customers and better help shoppers who are interested in inventory in other stores. The store hours can also be printed on receipts, in case customers want to return to the store later.
 
-If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier will choose a date and location, and can print a pickup receipt with the store hours. 
+Multiple store hours can be configured across different channels. These channels include brick-and-mortar stores, call centers, mobile devices, and e-Commerce sites.
 
-This functionality is available in Dynamics 365 for Retail versions 8.1.2 and later.
+If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier can select a date and location, and can also print a pickup receipt that includes the store hours.
+
+This functionality is available in Microsoft Dynamics 365 for Retail versions 8.1.2 and later.
 
 ## Configure store hours
 
-1. To configure store hours, go to **Retail** > **Channel Setup** > **Store hours**.
-2. Create a new store hours template or choose an existing one. To create a new template, click **New**. To use an existing template, choose the template from the left pane.  
+Follow these steps to configure store hours.
 
-![Store Hours Template](../dev-itpro/media/Storehours1.png "Store hours template")  
+1. Go to **Retail** \> **Channel Setup** \> **Store hours**.
+2. Select **New** to create a new store hours template. To use an existing template, select the template in the left pane.
+3. In the **Add range** dialog box, define the date range, the store hours, and any holidays that are required.
 
-3. Next, define the period of the date range, the store hours, and holidays (if needed).
-  - If store hours are constant and do not change, select **Never ends** in the **End date** field. 
-  - If the store hours are for a specific month/week/day, set the appropriate dates in the **Start Date** and **End date** fields.
-  
-  > [!NOTE]
-  > You can create mutliple templates with overlapping start and end dates, for example, to define store hours for stores in different time-zones. 
+    - If store hours don't change, select **Never ends** in the **End date** field.
+    - If the store hours are for a specific month, week, or day, set the appropriate dates in the **Start Date** and **End date** fields.
 
-4. Next, you need to associate the store hours template to the stores. In the **Choose organization nodes** dialog, select the stores, regions, and organizations that you want the template to be associated with. 
-  - Each store can have only one store hours template associated to it. 
-  - Use the arrow keys to select stores, regions, or organizations. 
-The calendar will be available to the store or store groups, and will become visible in POS for reference.
+    > [!NOTE]
+    > You can create multiple templates that have overlapping start and end dates. Therefore, you can, for example, define store hours for stores in different time zones.
 
-![Save Store Hours Template](../dev-itpro/media/Storehours2.png "Save Store hours template") 
+    ![Add range dialog box](../dev-itpro/media/Storehours1.png "Add range dialog box")
 
-5. Run the **1070** and **1090** jobs on the **Distribution schedule** page for the store hours to be available to POS.
+4. Associate the store hours template with the stores where it will be used. In the **Choose organization nodes** dialog box, select the stores, regions, and organizations that the template should be associated with.
 
+    - Only one store hours template can be associated with each store.
+    - Use the arrow buttons to select stores, regions, or organizations. The calendar will be available to the stores or store groups, and it will be visible at the POS for reference.
+
+    ![Choose organization nodes dialog box](../dev-itpro/media/Storehours2.png "Choose organization nodes dialog box")
+
+5. On the **Distribution schedule** page, run the **1070** and **1090** jobs to make the store hours available to the POS.
 
 ## Add store hours to printed receipts
 
-To add store hours to the printed POS receipts, do the following.
-1. Open **Receipt Designer**.
-1. Select **Footer** tab in the receipt template.
-1. Drag the **Store hours** tab from the left navigation pane to the bottom of the receipt template in the footer. 
-1. If you need to change the label, edit the default label names in the **Store hours** tab of the receipt designer. 
-1. Save the receipt and exit **Receipt designer**.
-1. Run the **1070** and **1090** jobs on the **Distribution schedule** page.
-1. Log into POS. 
-1. Complete a sale and select printed receipt.
+Follow these steps to add store hours to the printed POS receipts.
 
-POS receipts will now include store hours. If any holidays were included in the template, they will also be visible on the receipt.
+1. Open the receipt designer.
+2. Select **Footer** in the lower-left corner.
+3. Drag the **Store hours** element from the left pane to the footer at the bottom of the receipt template.
+4. You can edit the default label on the **Store hours** element as you require.
+5. Save the receipt, and close the receipt designer.
+6. On the **Distribution schedule** page, run the **1070** and **1090** jobs.
+7. Sign in to the POS.
+8. Complete a sale, and select to print a receipt.
 
+POS receipts now include the store hours. If any holidays were included in the template, they are shown on the receipt.
 
-![Receipt Template](../dev-itpro/media/Storehours3.png "Receipt template") 
-
+![Receipt example](../dev-itpro/media/Storehours3.png "Receipt example")
