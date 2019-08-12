@@ -453,6 +453,8 @@
             href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integrated Customer Master
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+          - name: Integrated Product Master
+            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
