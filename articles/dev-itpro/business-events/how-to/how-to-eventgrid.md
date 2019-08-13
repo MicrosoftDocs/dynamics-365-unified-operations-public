@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consume business events by using Azure Event Grid
+title: Business events and Azure Event Grid
 description: This topics provides information about the business events that are available for consumption in Azure Event Grid via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,7 +26,7 @@ ms.search.validFrom: Platform update 27
 ms.dyn365.ops.version: 2019-6-30 
 
 ---
-# Consume business events by using Azure Event Grid
+# Business events and Azure Event Grid
 [!include[banner](../../includes/banner.md)]
 
 This topic explains how to configure a Microsoft Azure Event Grid endpoint with Microsoft Dynamics 365 for Finance and Operations, and how to consume a business event from Event Grid.
