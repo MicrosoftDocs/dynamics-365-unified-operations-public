@@ -145,7 +145,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
     - **Measurement** – The line is used to record a specific measurement. You can set up the measurement that should be related to a predefined counter. After you select this type, enter a name for the template in the **Name** field. If this step is mandatory for the maintenance checklist, set the **Mandatory** option to **Yes**. If you want to use the measurement line as a counter registration, select the counter in the **Counter** field. The related **Unit** field is then automatically updated. If you've selected a counter, select the update method in the **Value** field. In the **Min. value** and **Max. value** fields, enter the allowed value range. In the **Instructions** field, enter a description of what must be done.
 
         > [!NOTE]
-        > Any line of the **Measurement** type that doesn't have a counter setup is treated as an independent measurement registration that there is no automatic follow-up for in Asset Management. Likewise, if the selected counter type isn't present on the asset that is related to the work order, the maintenance checklist task is treated as an independent measurement. The counter value can be changed multiple times. It isn't posted until the [work order lifecycle state](../setup-for-work-orders/work-order-stages.md) is changed to a state where the **Process maintenance checklist** option is set to **Yes**.
+        > Any line of the **Measurement** type that doesn't have a counter setup is treated as an independent measurement registration that there is no automatic follow-up for in Asset Management. Likewise, if the selected counter type isn't present on the asset that is related to the work order, the maintenance checklist task is treated as an independent measurement. The counter value can be changed multiple times. It isn't posted until the [work order lifecycle state](work-order-stages.md) is changed to a state where the **Process maintenance checklist** option is set to **Yes**.
 
     On the **Details** FastTab, the **Checks** field shows the total number of checklist lines in your template. This number includes the nested lines in any existing template that you've referenced in your template.
 
@@ -189,7 +189,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 6. Select **Forecast**.
 7. On the **Maintenance job type default forecast** page, you can make forecasts on hours, items, and expenses. On the relevant tabs, select **Add**, and make selections to create the required forecasts for the maintenance job type.
 8. On the **Item forecast** tab, you can select inventory dimensions that should be shown on the item line. Select **Inventory** \> **Dimensions**, select the dimensions to show, set the **Save setup** option to **Yes**, and then select **OK**.
-9. On the **Item forecast** tab, select **Item where used** to see an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type default, spare parts, and work orders. For more information about this overview, see [Items where used](../controlling-and-reporting/items-where-used.md).
+9. On the **Item forecast** tab, select **Item where used** to see an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type default, spare parts, and work orders. 
 
     The **Maintenance forecast totals** FastTab shows an overview of forecast totals. This overview includes the total number of hours and forecast lines that have been created.
 
@@ -266,7 +266,7 @@ After you've created the required maintenance job type default combinations, you
 
 ## Automatic update of maintenance job type forecasts
 
-In Asset Management, you can automatically update any changes to maintenance job type forecasts for hour costs, item costs, and expenses that have been updated in other modules in Finance and Operations. In this way, you help guarantee that your maintenance job type forecasts always use the latest cost prices. You can also make similar updates for [maintenance forecasts](../work-orders/forecasts.md).
+In Asset Management, you can automatically update any changes to maintenance job type forecasts for hour costs, item costs, and expenses that have been updated in other modules in Finance and Operations. In this way, you help guarantee that your maintenance job type forecasts always use the latest cost prices.
 
 1. Select **Asset management** \> **Periodic** \> **Forecast** \> **Update maintenance job type forecast**.
 2. In the **Update maintenance job type forecast** dialog box, on the **Records to include** FastTab, you can add selections for specific maintenance job types as you require. Select **Filter**, and then select **Select** to make the selections.
