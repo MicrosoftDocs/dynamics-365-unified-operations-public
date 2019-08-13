@@ -41,5 +41,4 @@ To preview the new module in a local web browser, follow these steps.
 
 2. Open the following URL in a web browser to view the module: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
     
-* Adding &debug=true will provide more verbose debug information in the yarn output window.
-    * https://localhost:4000/modules?type=productFeature&debug=true
+Adding **&debug=true** will provide more verbose debug information in the yarn output window: `https://localhost:4000/modules?type=productFeature&debug=true`. 
