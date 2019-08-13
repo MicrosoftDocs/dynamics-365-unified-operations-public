@@ -30,14 +30,14 @@ ms.dyn365.ops.version:
 ---
 # Modify a starter kit module
 
-The Microsoft Dynamics 365 for Commerce e-Commerce SDK includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into a new module and then changed.
+The Microsoft Dynamics 365 Commerce Online SDK includes a set of Starter Kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into a new module and then changed.
 
 To clone a module and change it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. In this command, **SDK\_MODULE\_NAME** is the name of the module that you want to modify, and **NEW\_MODULE\_NAME** is the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
 
 The following example shows the command that is used to clone the **hero** SDK module so that you can change it.
 
 ```
-yarn msdyn365 clone hero heroV2
+yarn msdyn365 clone hero heroExtended
 ```
 
 It can take one to two minutes to clone the module, because all the dependencies must be pulled down. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
@@ -46,7 +46,7 @@ It can take one to two minutes to clone the module, because all the dependencies
 
 To preview the new module in a local web browser, follow these steps.
 
-1. At a command prompt, open the app, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
     c:\repos\MyEcommerceSite\yarn start
