@@ -50,16 +50,16 @@ As an alternative to recalculating the entire maintenance budget, you can adjust
 
 1. In **Maintenance budget lines**, select the lines for which you want to update budget cost.
 
-2. Click **Adjust**.
+2. Click **Adjust**. In the **Adjust selected budget lines** dialog, 
 
-3. If you want to add an amount to the selected lines, select the **Add cost** check box, insert the value in the **Add value** field, and click **OK**.
+- If you want to add an amount to the selected lines, select the **Add cost** check box, insert the value in the **Add value** field, and click **OK**.
 
-4. If you want to multiply the budget cost in the selected budget lines with a factor, select the **Multiply cost** check box, insert the multiply factor in the **Multiply value** field, and click **OK**.
+- If you want to multiply the budget cost in the selected budget lines with a factor, select the **Multiply cost** check box, insert the multiply factor in the **Multiply value** field, and click **OK**.
 
 >[!NOTE]
 >If you insert "1.2" in the **Multiply value** field, you add 20% to the budget cost on the selected lines. If you insert "0.7" in the **Multiply value** field, you reduce the budget cost on the selected lines with 30%.
 
-5. The selected budget lines are updated according to the selections made in steps 3 or 4.
+3. The selected budget lines are updated according to the selections made in step 2.
 
 
 ## Update actual cost
