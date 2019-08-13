@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update maintenance budget
+title: Update maintenance budgets
 description: This topic explains how to update a maintenance budget in Asset Management.
 author: josaw1
 manager: AnnBe
@@ -30,54 +30,49 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Update maintenance budget
+# Update maintenance budgets
 
-In **Maintenance budget lines**, you see all the budget lines created for the budget selected in **Maintenance budgets**, which is described in the previous section. You can recalculate and adjust maintenance budget lines as long as the maintenance budget has not been approved. You can also update budget lines with actual costs when the budget period has passed, and costs have been posted in Asset Management.
+The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
 
+## Recalculate a maintenance budget
 
-## Recalculate maintenance budget
+You can recalculate a maintenance budget on the **Maintenance budget lines** page. When you recalculate a maintenance budget, the existing budget lines are deleted, and a new calculation is done.
 
-You can recalculate a maintenance budget in **Maintenance budget lines**. This means that you delete the existing budget lines and make a new calculation.
+1. On the **Maintenance budget lines** page, select **Recalculate**.
+2. In the **Recalculate budget** dialog box, make the required changes for the new calculation, and then select **OK**.
 
-1. In **Maintenance budget lines**, click **Recalculate**.
-
-2. Make the changes for the new calculation, and click **OK**. New budget lines are created according to the selections you made for recalculation.
-
+New budget lines are created according to the values that you set.
 
 ## Adjust budget lines
 
-As an alternative to recalculating the entire maintenance budget, you can adjust selected lines regarding budget costs.
+Instead of recalculating the whole maintenance budget, you can adjust selected lines that are related to budget costs.
 
-1. In **Maintenance budget lines**, select the lines for which you want to update budget cost.
+1. On the **Maintenance budget lines** page, select the lines to update the budget cost for.
+2. Select **Adjust**.
+3. To add an amount to the selected lines, select the **Add cost** check box, and then enter the value in the **Add value** field.
+4. To multiply the budget cost on the selected budget lines by a factor, select the **Multiply cost** check box, and enter the factor in the **Multiply value** field.
 
-2. Click **Adjust**. In the **Adjust selected budget lines** dialog,
+    For example, if you enter **1.2** in the **Multiply value** field, you increase the budget cost on the selected lines by 20 percent. If you enter **0.7**, you reduce the budget cost on the selected lines by 30 percent.
 
-    - If you want to add an amount to the selected lines, select the **Add cost** check box, insert the value in the **Add value** field, and click **OK**, or
+5. Select **OK**.
 
-    - If you want to multiply the budget cost in the selected budget lines with a factor, select the **Multiply cost** check box, insert the multiply factor in the **Multiply value** field, and click **OK**.
+The selected budget lines are updated according to the values that you set in step 3 or 4.
 
->[!NOTE]
->If you insert "1.2" in the **Multiply value** field, you add 20% to the budget cost on the selected lines. If you insert "0.7" in the **Multiply value** field, you reduce the budget cost on the selected lines with 30%.
+## Update actual costs
 
-3. The selected budget lines are updated according to the selections made in step 2.
+After the dates on the budget lines have passed, and actual costs have been posted in Asset Management, you can update the actual costs on the maintenance budget.
 
+1. On the **Maintenance budget lines** page, select **Update cost**.
+2. In the **Calculate actual cost** dialog box, select **OK**.
 
-## Update actual cost
+The **Actual cost** fields on the budget lines are updated if actual costs have been posted. New budget lines might be generated if new asset types have been created since you created the budget, and if those asset types have been used on assets that work orders have been created for and related costs have been posted for. New budget lines show only actual costs, because no budget costs were calculated for them.
 
-When the dates on the budget lines have passed, and actual costs have been posted in Asset Management, you can update actual costs on the maintenance budget.
+> [!NOTE]
+> To see an overview of actual costs divided into preventive, corrective, and investment costs, you can do a calculation for the same period on the **Asset cost control** page. For more information, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
-1. In **Maintenance budget lines**, click **Update cost**, and click **OK**.
+## Manually add budget lines
 
-2. The **Actual cost** fields on the budget lines are updated if actual costs have been posted. New budget lines may be generated if new asset types have been created since you created the budget, and those asset types have been used on assets for which work orders have been created and related costs have been posted. New budget lines will only show actual cost because no budget costs were calculated for those lines.
+On the **Maintenance budget lines** page, you can manually add a new budget line by selecting **New** and then making selections on the line. Here are some examples of situations where this approach might be useful:
 
->[!NOTE]
->If you want to get an overview of actual costs divided into Preventive, Corrective, and Investment costs, you can make a calculation for the same period in **Asset cost control**. Refer to the [Cost and date control](../controlling-and-reporting/cost-and-date-control.md) section for more information.
-
-
-## Add budget lines manually
-
-In **Maintenance budget lines**, you can manually add a new line by clicking the **New** button and making selections on the budget line. This may be useful if, for example,
-
-- you know that refurbishment on some assets is currently in the planning phase, but related jobs have not yet been created in Asset Management, and you want budget costs for those jobs to be included in the maintenance budget.  
-- new assets or asset types have been created since you made the maintenance budget, but maintenance plans have not yet been set up on those assets or asset types, and you want budget costs for those asset types to be included in the maintenance budget.
-
+- You know that refurbishment of some assets is currently in the planning phase, but related jobs haven't yet been created in Asset Management. However, you want budget costs for those jobs to be included in the maintenance budget.
+- New assets or asset types have been created since you made the maintenance budget, but maintenance plans haven't yet been set up on those assets or asset types. However, you want budget costs for those asset types to be included in the maintenance budget.
