@@ -2,10 +2,9 @@
 # required metadata
 
 title: Page mock
-description: You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  
-
+description: Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment. 
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -30,12 +29,12 @@ ms.dyn365.ops.version:
 
 ---
 # Page mock
-You may have scenarios where you’d like to test multiple modules running locally in your development environment on a single rendered page.  This will be particularly helpful when building modules that interact with each other or container modules.  This is easy to do with page mocks.  
+Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment.
 
-Page mock files live under the `/src/pageMocks` directory and can be loaded using `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (but does not include the .json file extension).
+Page mock files live under the **/src/pageMocks** directory and can be loaded using the URL: `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (without the .json file extension).
 
 ## Creating a new page mock
-To create a new page mock you'll need to create a new blank json file under the `/src/pageMocks` directory, for example `/src/pagemocks/campaignPage.json`.
+To create a new page mock you'll need to create a new blank json file under the **/src/pageMocks** directory, for example `/src/pagemocks/campaignPage.json`.
 
 ## Example
 Below is an example page mock that adds two insances of the same module to a page using different mock data for each.
@@ -109,7 +108,7 @@ Below is an example page mock that adds two insances of the same module to a pag
 ```
 
 ## pageRoot
-Let’s examine the “pageRoot” section (see below).  Every page needs to have a root page container.  In our example, a page container “default-page” is used.
+Every page needs to have a root page container.  In our example, a page container “default-page” is used.
 
 There is a node called “modules” that lists the modules inside of the page.  The page container “default-container” is then used which has a slot called “primary”.  The container is responsible for laying out the modules inside it.  You can then see we have a `productFeature` module rendered twice in a row:
 
@@ -129,4 +128,4 @@ There is a node called “modules” that lists the modules inside of the page. 
 …
 ```
 
-Above you’ll also see we defined an “id” for each module: "ProductFeature__0" and "ProductFeature__1", which represent the mock data you’d like to use for the module (defined lower in the file).  These can be any name but need a matching section in the “modules” mock section.  Here you can configure different mock data per each instance of the module.  Notice one module has a “left” imageAlignment config setting and the other has a “right” config setting.
+In the above example there is "id" for each module: **ProductFeature__0** and **ProductFeature__1**, which represent the mock data to use for the module.  These can be any name but need a matching section in the "modules" mock section.  Here you can configure different mock data per each instance of the module.  Notice in the above example one module has a "left" imageAlignment config setting and the other has a "right" config setting.
