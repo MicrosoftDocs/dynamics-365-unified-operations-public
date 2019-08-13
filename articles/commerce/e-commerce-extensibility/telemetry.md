@@ -2,9 +2,9 @@
 # required metadata
 
 title: Telemetry
-description: The Dynamics 365 Commerce e-commerce SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
+description: The Dynamics 365 Commerce online SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple resources while maintaining a unified context on both the server and the client.
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -29,33 +29,20 @@ ms.dyn365.ops.version:
 
 ---
 # Telemetry Logger
-The Dynamics 365 Commerce e-commerce SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
+The Dynamics 365 Commerce online SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple resources while maintaining a unified context on both the server and the client.
 
 ## Accessing the Logger
-The SDK logger is available by default to all react components by simply accessing it with the `telemetry` prop:
+The SDK logger is available by default to all react components by simply accessing it as the **this.prop.telemetry** prop:
 
-``` js
-// Inside a module view
+```typescript
 this.props.telemetry
 ```
 
-TheSDK comes with a custom logger, which provides the ability to log at various levels to multiple different resources while maintaining a unified context on both the server and the client.
-
-## Accessing the Logger
-
-The SDK logger is available by default to all react components by simply accessing it as the `telemetry` prop:
-
-``` js
-//Inside a module view
-this.props.telemetry
-```
-
-There are instances where you will want to access the logger in a shared component, rather than having to pass down the logger through the props of every component within your module, we have provided a utility HOC `WithContext()` within the SDK repository which allows you to inject the logger directly into your component.
+There are instances where you will want to access the logger in a shared component, rather than having to pass down the logger through the props of every component within your module, the SDK provideds a utility `WithContext()` within the SDK repository which allows you to inject the logger directly into your component.
 
 By default, the SDK logger will log all events to an Application Insights instance. When running on a development environment, all logs will also be displayed on the console.
 
 ## Trace Logging
-
 Logging of messages, ranging in importance from debug statements to critical errors, can be accomplished with the trace logging portion of the SDK logger. The trace logger uses the following logging methods/levels:
 
 ``` ts
@@ -71,7 +58,6 @@ enum LogLevel {
 ```
 
 ### Trace Logging APIs
-
 The primary API used to log a trace message is:
 
 ``` ts
@@ -94,7 +80,7 @@ type TelemetryLogOptions = {
 
 The benefits of this structured logging system is that when rendering the log messages for a human to read, the system can replace the named holes with the values provided. But when sending and storing the message, or when processing the telemetry by a machine, the event data can be kept separate, and used for things like aggregation or filtering specific messages, without requiring any string parsing. More information on structured logging and message templates can be found at https://messagetemplates.org/.
 
-Here are some examples of trace log calls:
+Below are some examples of trace log calls:
 
 ``` ts
 telemetry.log(LogLevel.Debug, "{user} says {word}", {values: ["Bill", "Hi!"]});
@@ -127,7 +113,7 @@ this.props.telemetry.trace("This is the first message", "This is the second mess
 // Output will be: "This is the first message,This is the second message,{.toString result of {some object}}"
 ```
 
-The console logs are controlled by a query string called ```?debug=true```
+The console logs are controlled by a query string called **?debug=true**
 
 ## Exception Logging
 
@@ -141,4 +127,4 @@ this.props.telemetry.exception(new Error("Something is broken!"));
 
 Due to their similar naming, and the fact that it is possible to log `Error` objects using `.error()` by passing them as additional arguments, there may be some confusion around when you should use `.error()` or `.exception()` to log an error in your application.
 
-The best guidance is to use `.exception()` when you want to log an actual `Error` object, and to use `.error()` when you just want to log a string message saying an error has occured in your business logic. The reason for this is that in the AppInsights backend, `.exception()` logs are more easily correlated with issues, and allow for faster debugging when a real issue arises. The messages from `.error()` are simply treated as another trace log, and may require a more detailed analysis of the logs to find the issue than if you used `.exception()`, which impacts the time it takes to recognize an issue has occurred. In addition `.exception()` allows for better tracking across different requests, and therefore supports things like automatic alerting when an issue begins to affect a large number of requests.
+The best guidance is to use `.exception()` to log an actual `Error` object, and to use `.error()` to log a string message saying an error has occured in your business logic. The reason for this is that in the AppInsights backend, `.exception()` logs are more easily correlated with issues, and allow for faster debugging when a real issue arises. The messages from `.error()` are simply treated as another trace log, and may require a more detailed analysis of the logs to find the issue than if you used `.exception()`, which impacts the time it takes to recognize an issue has occurred. In addition `.exception()` allows for better tracking across different requests, and therefore supports things like automatic alerting when an issue begins to affect a large number of requests.
