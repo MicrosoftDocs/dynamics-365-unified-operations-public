@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module Test File
-description: This file is used for local unit test and contains the mock data needed for the tests to run. 
+description: The module test file is used for local unit test and contains the mock data needed for the tests to run. 
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 # Module test file
-This file is used for local unit test and contains the mock data needed for the tests to run. 
+The module test file is used for local unit testing and contains the mock data needed for the tests to run. 
 
 Below is the default test file created for a new module, note that the mock data fields are set inside this file:
 
