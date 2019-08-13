@@ -3554,7 +3554,7 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
       - name: Work order project setup
         href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
-      - href: Service level and description
+      - name: Service level and description
         href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
       - name: Scheduled execution
         href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
