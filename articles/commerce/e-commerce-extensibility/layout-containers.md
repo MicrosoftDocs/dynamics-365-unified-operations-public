@@ -4,7 +4,7 @@
 title: Create a layout container module
 description: To create a new layout container module the SDK provides a CLI command `yarn msdyn365 add-module MODULE_NAME` to create a standard module, where `MODULE_NAME` is the name to provide your module.
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -29,20 +29,17 @@ ms.dyn365.ops.version:
 
 ---
 ## Create a layout container module
-To create a new layout container module the SDK provides a CLI command `yarn msdyn365 add-module MODULE_NAME` to create a standard module, where `MODULE_NAME` is the name to provide your module.  The `$type` will then need be be changed to `containerModule`.
+To create a new layout container module, use the online SDK CLI command **yarn msdyn365 add-module MODULE_NAME** to create a standard module, where `MODULE_NAME` is the name to provide your module and change the **$type** to **containerModule**.
 
-Below is an example to create a module called `campaignContainer`:
+Below is an example to create a container module called `campaignContainer`:
 ```
 yarn msdyn365 add-module campaignContainer
 ```
 
-Creating the module could take 20-30 seconds as it pulls down any required dependencies.  When it's complete you will find the module in the `\src\modules\` directory.
-
-Open the new module definition file campaignContainer.definition.json and change the `$type` to `containerModule`. 
+Open the new module definition file campaignContainer.definition.json and change the **$type** to **containerModule**.
 
 The below example shows the addition of a “slots” section containing two slots for this container:
-
-```
+```json
 {
     "$type": "containerModule",
     "friendlyName": "Sample Container",
@@ -74,7 +71,7 @@ The below example shows the addition of a “slots” section containing two slo
 }
 ```
 
-Below is an example of the react view file (campaignContainer.tsx) leveraging the slots for the container:
+The example below shows the modules react view file (campaignContainer.tsx) leveraging the slots for the container:
 
 ```
 import * as React from 'react';
@@ -110,9 +107,9 @@ export default CampaignContainer;
 ```
 
 ## Testing a layout container module
-To test a container module locally, we’ll need to leverage a page mock. 
+To test a container module in a local development environment, we’ll need to use a page mock.
 
-Below is a sample PageMock that can be leveraged for testing and is saved in the pageMocks directory as campaignContainerMock.json.
+Below is a sample page mock **campaignContainerMock.json** that can be leveraged for testing and is saved in the **\src\pageMocks** directory.
 
 ```
 {
@@ -172,10 +169,12 @@ Below is a sample PageMock that can be leveraged for testing and is saved in the
 ```
 
 ## Run the module locally
-To view the module rendering locally in a browser:
-1. Start the app from a command prompt, navigate to your root SDK folder and run `yarn start`:
+To preview the page in a local web browser, follow these steps.
+
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
-1. Launch the following pages in a browser.  Notice the module name in the query string parameter "type=MODULE_NAME":
-    * https://localhost:4000/page?mock=campaignContainerMock
+
+2. Open the following URL in a web browser to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Notice the page mock name in the **"mock=** query string parameter.
