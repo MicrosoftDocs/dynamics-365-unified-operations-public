@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Warranty agreement
+title: Warranty agreements
 description: This topic explains warranty agreements in Asset Management.
 author: josaw1
 manager: AnnBe
@@ -30,36 +30,28 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Warranty agreement
+# Warranty agreements
 
-In **Asset Management**, you can set up warranty terms that can be connected to an asset or an asset type. Warranty terms are created for a specific period. Warranty can be set up to provide full coverage or partial coverage, and you can set up terms to relate to hours, expenses, and items.
+In Asset Management, you can set up warranty terms that can be connected to an asset or an asset type. Warranty terms are created for a specific period. Warranty can be set up to provide full coverage or partial coverage, and you can set up terms that are related to hours, expenses, and items.
 
-First step is to create the vendor warranty agreements that you may have on your equipment. Next, you attach warranty agreements to assets or asset types. Vendor warranty agreements are only used for information purposes. If vendor warranty is set up on the asset, you can see the warranty coverage period on the asset.
+The first step is to create any vendor warranty agreements that you have for your equipment. You then attach warranty agreements to assets or asset types. Vendor warranty agreements are used only for informational purposes. If vendor warranty is set up on an asset, you can see the warranty coverage period on the asset.
 
-## Create warranty agreement
+## Create a warranty agreement
 
-A warranty agreement may include several agreement lines covering warranty for work hours, expenses, and items.
+A warranty agreement can include several agreement lines to cover the warranty for work hours, expenses, and items.
 
-1. Click **Asset management** > **Setup** > **Assets** > **Warranty**.
+1. Select **Asset management** \> **Setup** \> **Assets** \> **Warranty**.
+2. Select **New** to create a product.
+3. In the **Warranty** field, enter a warranty ID.
+4. In the **Name** field, enter a description.
 
-2. Click **New** to create a new product.
+    On the **Details** FastTab, the **Assets** field shows the number of active assets that use the warranty agreement.
 
-3. Insert a warranty ID in the **Warranty** field and a description in the **Name** field.
+5. On the **Hour warranty** and **Item warranty** FastTabs, follow these steps to add lines that should be included in a warranty agreement that pertains to hours or items:
 
-4. In the **Assets** field, you see the number of active assets that use the warranty agreement.
-
-5. On the **Hour warranty** and **Item warranty** FastTabs, you add the lines to be included in the agreement pertaining to hours or items. Steps 6-9 explain how to fill out the lines.
-
-6. Click **Add line** to add a new condition to the warranty. A sequential line number is automatically inserted in the **Line** field.
-
-7. Select a period type for the warranty period in the **Period** field.
-
-8. Insert an interval in the **Interval** field. This number defines how many periods the warranty should be valid for.
-
-9. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
-
-
-The figure below shows an example of a 1-year warranty agreement with full coverage.
+    1. Select **Add line** to add a new condition to the warranty. A sequential line number is automatically entered in the **Line** field.
+    2. In the **Period** field, select the type of warranty period.
+    3. In the **Interval** field, enter a number. This field defines the number of periods that the warranty should be valid for.
+    4. In the **Percent** field, enter the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
 ![Figure 1](media/01-warranty.png)
-
