@@ -431,24 +431,6 @@
         href: perf-test/atl-best-practices.md
       - name: Frequently asked questions
         href: perf-test/atl-faq.md
-    - name: Regression suite automation tool
-      items:
-      - name: Regression suite automation tool overview
-        href: perf-test/rsat/rsat-overview.md
-      - name: Installation and configuration
-        href: perf-test/rsat/rsat-install-configure.md
-      - name: Run test cases
-        href: perf-test/rsat/rsat-run.md
-      - name: Validate expected values
-        href: perf-test/rsat/rsat-validate-expected.md
-      - name: Chain test cases
-        href: perf-test/rsat/rsat-chain-test-cases.md
-      - name: Derived test cases
-        href: perf-test/rsat/rsat-derived-test-cases.md
-      - name: Best practices
-        href: perf-test/rsat/rsat-best-practices.md
-      - name: Troubleshooting
-        href: perf-test/rsat/rsat-troubleshooting.md
   - name: Date effectivity
     href: dev-tools/date-effectivity.md
   - name: ISV licensing
@@ -887,6 +869,24 @@
     href: dev-tools/manage-runtime-packages.md
   - name: Update model versions in the automated build
     href: dev-tools/version-models-build.md
+- name: Regression suite automation tool
+  items:
+  - name: Regression suite automation tool overview
+    href: perf-test/rsat/rsat-overview.md
+  - name: Installation and configuration
+    href: perf-test/rsat/rsat-install-configure.md
+  - name: Run test cases
+    href: perf-test/rsat/rsat-run.md
+  - name: Validate expected values
+    href: perf-test/rsat/rsat-validate-expected.md
+  - name: Chain test cases
+    href: perf-test/rsat/rsat-chain-test-cases.md
+  - name: Derived test cases
+    href: perf-test/rsat/rsat-derived-test-cases.md
+  - name: Best practices
+    href: perf-test/rsat/rsat-best-practices.md
+  - name: Troubleshooting
+    href: perf-test/rsat/rsat-troubleshooting.md
 - name: Release solutions using Lifecycle Services
   items:
   - name: Develop and release
