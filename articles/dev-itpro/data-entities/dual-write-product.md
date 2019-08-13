@@ -207,7 +207,8 @@ PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
 
 ## Product dimensions and product dimension group
 
-Product dimensions are characteristics that serve to identify a product variant. The four product dimensions - **Color**, **Size**, **Style** and **Configuration** are also mapped to Common Data Service to define the product variant. 
+Product dimensions are characteristics that serve to identify a product variant. The four product dimensions - **Color**, **Size**, **Style** and **Configuration** are also mapped to Common Data Service to define the product variant. The data model can be seen in the following diagram:
+![data model for products](media/dual-write-product-2.png)
 
 ### Colors
 
