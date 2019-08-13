@@ -282,17 +282,17 @@
       href: ../dev-itpro/business-events/potential-use-cases.md
     - name: Tutorials
       items: 
-      - name: Consume business events with Microsoft Flow
+      - name: Business events and Microsoft Flow
         href: ../dev-itpro/business-events/how-to/how-to-flow.md
-      - name: Consume business events by using Azure Event Grid
+      - name: Business events and Azure Event Grid
         href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-      - name: Consume business events by using Azure Service Bus
+      - name: Business events and Azure Service Bus
         href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-      - name: Consume workflow approval business events
+      - name: Business events and workflow approvals
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-      - name: Use Microsoft Forms Pro with business events
+      - name: Business events and Microsoft Forms Pro 
         href: ../dev-itpro/business-events/how-to/FormsPro.md
-      - name: Use business events with Azure Event Hubs
+      - name: Business events and Azure Event Hubs
         href: ../dev-itpro/business-events/how-to/event-hub.md
   - name: Compliance
     items:

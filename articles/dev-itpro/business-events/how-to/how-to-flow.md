@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Consume business events with Microsoft Flow
+title: Business events and Microsoft Flow
 description: This topics provides information about the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: ibenbouzid
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 
-# Consume business events with Microsoft Flow
+# Business events and Microsoft Flow
 
 [!include[banner](../../includes/banner.md)]
 
