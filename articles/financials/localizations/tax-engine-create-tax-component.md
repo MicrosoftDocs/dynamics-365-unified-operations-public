@@ -44,7 +44,7 @@ A tax type is analogous to a tax regime. Sales tax, value-added tax (VAT), and G
 
 To create a tax type, select **Lines**, select **Add \> Tax document \> Tax type**, specify the name, description, and rounding rule, and then select **OK**.
 
-![Creating a tax type](../localizations/media/GTE-Create-Taxtype.png)
+![Creating a tax type](media/GTE-Create-TaxType.png)
 
 ## Create a tax component
 
@@ -53,7 +53,7 @@ To create a tax component, select the tax type to create the tax component under
 > [!TIP]
 > Try to use the predefined rules if they meet your requirements. In this case, the system will help create tax measures, formulas, and posting profiles.
 
-![Creating a tax component](../localizations/media/GTE-Create-TaxComponent.png)
+![Creating a tax component](media/GTE-Create-TaxComponent.png)
 
 The following sections provide information about some of the fields in the **Tax component** dialog box.
 
