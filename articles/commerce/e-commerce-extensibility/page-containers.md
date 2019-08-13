@@ -29,20 +29,18 @@ ms.dyn365.ops.version:
 
 ---
 # Create a page container module
-A page container contains the core structure for page authoring.  An example could be a page container with a slot defined for the header, main content area and footer area.  A page container is simply a module that controls the layout of a set of named slots.  A page container can only be imbedded at the root of a page.  Each page must have one and only one page container.
+A page container contains the core structure for page authoring.  An example could be a page container with a **slot** (region the UI will be rendered) defined for the header, main content area and footer area.  A page container is simply a module that controls the layout of a set of slots.  A page container can only be imbedded at the root of a page and each page must have one and only one page container.
 
-Similarly, to layout container modules, page container modules can define names slots which are surfaced to template authors.  Page authors can configure which modules go into each slot and the container render code controls the layout of those slots.  Configuration settings can also be exposed to page authors to further configure the layout.
+Similarly to layout container modules, page container modules can define **named slots** which are surfaced in the template authoring tools.  Page authors can configure which modules go into each slot and the container render code controls the layout of those slots.  Configuration settings can also be exposed to page authors to further configure the layout.
 
-To create a new page container module the SDK provides a CLI command `yarn msdyn365 add-module MODULE_NAME`, where `MODULE_NAME` is the name to provide your module.  The `$type` will then need to be changed to `containerModule`.
+To create a new page container module use the online SDK CLI command **yarn msdyn365 add-module MODULE_NAME** to create a new module and change the **$type** to **containerModule**.
 
-Below is an example to create a module called `campaignPageContainer`:
+Below example creates a module called `campaignPageContainer`:
 ```
 yarn msdyn365 add-module campaignPageContainer
 ```
 
-Creating the module could take 20-30 seconds as it pulls down any required dependencies.  When it's complete you will find the module in the `\src\modules\` directory.
-
-Open the new module definition file campaignPageContainer.definition.json and change the `$type` to `containerModule`. In the below example note the “slots” section contains the various slots the page container will support. 
+Open the new module definition file campaignPageContainer.definition.json and change the **$type** to **containerModule**. In the below example note the **slots** section contains the various named slots the page container will support. To restrict the slot to only allow a specific set of modules, the "allowedTypes" array is used.  You can specify the allow list or use "*" to allow any module to be placed in the slot.  
 
 ```
 {
@@ -86,8 +84,7 @@ Open the new module definition file campaignPageContainer.definition.json and ch
 }
 ```
 
-Notice above in the “slots” section, each named slot allows you to define what “allowedTypes” of modules are allowed.  You can specify the allow list or use “*” to allow any module to be placed in the slot.  
-The HTML structure for our page can now be defined in the MODULE_NAME.tsx view file.
+The HTML structure for the slots on the page can be defined in the MODULE_NAME.tsx view file.
 
 Below is an example of the react view file (campaignPageContainer.tsx) leveraging the slots for the container:
 
@@ -132,9 +129,9 @@ export default CampaignPageContaine;
 ```
 
 ## Testing a page container module
-To test a page container module locally, we’ll need to leverage a page mock. 
+A page mock is needed to test a page container module in a local development environment.
 
-Below is a sample page mock that can be leveraged for testing and is saved in the pageMocks directory as campaignContainerMock.json.
+Below is a sample page mock that can be leveraged for testing and is saved in the **/src/pageMocks** directory as campaignContainerMock.json.
 
 ```
 {
@@ -194,11 +191,13 @@ Below is a sample page mock that can be leveraged for testing and is saved in th
 ```
 Note the above page mock only defines the page container primary slot, the header and footer slots can also be included as desired.
 
-## Run the module locally
-To view the module rendering locally in a browser:
-1. Start the app from a command prompt, navigate to your root SDK folder and run `yarn start`:
+## Preview the page
+To preview the page in a local web browser, follow these steps.
+
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
-1. Launch the following pages in a browser.  Notice the module name in the query string parameter "type=MODULE_NAME":
-    * https://localhost:4000/page?mock=campaignContainerMock
+
+2. Open the following URL in a web browser to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Notice the page mock name in the **"mock=** query string parameter.
