@@ -226,13 +226,13 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 26. To set up attachments on a selected maintenance job type default line, select **Attach documents**. Attachments that are set up on a maintenance job type default line are automatically included on work order lines that use that maintenance job type default line.
 27. Select **New**, and then select a document type.
 28. Upload the document or file.
-29. Set the fields in the **Attachments** form. The attachment setup uses standard document setup functionality in Microsoft Dynamics 365 for Finance and Operations.
+29. Set the fields on the **Attachments** page. The attachment setup uses standard document setup functionality in Microsoft Dynamics 365 for Finance and Operations.
 30. Select **Save** to save the attachment.
 
     > [!NOTE]
     > Attachments on a maintenance job type default line are printed together with a work order report only if the document types of the attachments are selected on the **Document types** tab of the **Asset management parameters** page (**Asset management** \> **Setup** \> **Asset management parameters**). Examples of attachments include guidelines that explain how to complete a specific job or a predefined maintenance checklist (if you don't use the maintenance checklist functionality for maintenance job type default lines).
 
-    On the **Maintenance job type defaults** page, you can see the number of forecasted hours, and also the number of lines that have been created for items, expenses, maintenance checklists, and tools on each line. The **Assets** field shows the number of active assets that are related to the maintenance job type default line.
+    On the **Maintenance job type defaults** page, each line shows the number of forecasted hours, and also the number of lines that have been created for items, expenses, maintenance checklists, and tools. The **Assets** field shows the number of active assets that are related to the maintenance job type default line.
 
 31. To copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to copy another setup to, select **Copy setup**, and then select the maintenance job type default to copy.
 32. To view a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
@@ -247,7 +247,7 @@ You can set up a batch job to update maintenance job type default references at 
 
 ## Overview of maintenance job types that are related to assets
 
-After you've created the required maintenance job type default combinations, you can use the **All assets** page to get an overview of the current maintenance job type default that is related to a specific asset. The overview shows a combination of all maintenance job type default combinations that can be used on the asset type that is selected for the asset. These combinations include combinations that have variations of maintenance job type variants and maintenance job trades.
+After you've created the required maintenance job type default combinations, you can use the **All assets** page to get an overview of the current maintenance job type default that is related to a specific asset. The overview shows all maintenance job type default combinations that can be used on the asset type that is selected for the asset. These combinations include combinations that have variations of maintenance job type variants and maintenance job trades.
 
 1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the asset to see an overview of maintenance job type combinations for.
