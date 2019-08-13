@@ -3544,6 +3544,34 @@
         href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
       - name: Maintenance request reports
         href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
+    - name: Setup for work orders
+      items:
+      - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+        href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+      - name: Work order lifecycle states
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+      - name: Work order types
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+      - name: Work order project setup
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+      - name: Service level and description
+        href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+      - name: Scheduled execution
+        href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+      - name: Fault management
+        href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+    - name: Warranty
+      items: 
+      - name: Warranty agreement
+        href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+      - name: Warranty on assets and asset types
+        href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+    - name: Create maintenance budgets
+      items:
+      - name: Create maintenance budgets
+        href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+      - name: Update maintenance budgets
+        href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
   - name: Master planning
     items:
     - name: Master planning home page

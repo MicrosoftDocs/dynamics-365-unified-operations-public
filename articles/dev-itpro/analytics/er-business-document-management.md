@@ -39,6 +39,10 @@ Business users use the [Electronic reporting (ER) framework](general-electronic-
 > [!NOTE]
 > Be aware that Business document management allows you to modify templates that are used to produce business documents such as orders, invoices, etc. While a template has been modified and a new version of it has been published, this version is used to generate required business documents. Business document management cannot be used to modify already generated business documents.
 
+## Supported deployments
+
+Currently, the Business document management feature is implemented only for cloud deployments. If this feature is critical to your on-premises deployment, let us know by providing feedback on the [Ideas](https://experience.dynamics.com/ideas/) site.
+
 ## Supported Microsoft Office applications
 
 To use Business document management for editing templates in Excel or Word formats by using Microsoft Office desktop applications, you must have Microsoft Office 2010 or later installed. This is supported in cloud and on-premises deployment of Finance and Operations.
