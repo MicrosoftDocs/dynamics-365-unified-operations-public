@@ -2,7 +2,7 @@
 # required metadata
 
 title: Derived test cases
-description: 
+description: This topic shows how you can use the Regression suite automation tool to execute the same test case with multiple configurations.
 author: robadawy
 manager: AnnBe
 ms.date: 08/01/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-RSAT lets you execute the same test case with multiple configurations. To achieve that, select a test case in RSAT and then select **New > Create Derived Test Case**. This creates a child test case in Azure Dev Ops. The resulting derived test case is linked to its parent test case in Azure DevOps. It has an Excel parameters file attached but no recording file. The derived test case will appear in the RSAT grid under the same test suite with the Derived column checked. Derived test cases are named after their parent test case with a numeric suffix.
+The Regression suite automation tool lets you execute the same test case with multiple configurations. To do this, select a test case in the Regression suite automation tool and then select **New > Create Derived Test Case**. This creates a child test case in Azure DevOps. The resulting derived test case is linked to its parent test case in Azure DevOps. It has an Excel parameters file attached but no recording file. The derived test case will appear in the Regression suite automation tool grid under the same test suite with the **Derived** column selected. Derived test cases are named after their parent test case with a numeric suffix.
 
 In the following image, a derived test case has been created from a test case called **Create Vendor**.
 
@@ -44,6 +44,6 @@ The derived test case is automatically created in Azure DevOps. It is a child it
 
 ![](media/derived-1.png)
  
-When you run (playback) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
+When you run (play back) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 
 A derived test case does not need to be part of the same test suite as its parent test case. You can move it to another suite.
