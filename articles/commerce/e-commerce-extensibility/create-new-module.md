@@ -44,7 +44,7 @@ Creation of a module might take 20 to 30 seconds to create all of the new module
 
 To preview the new module in a local web browser, follow these steps.
 
-1. At a command prompt, open the app, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
     c:\repos\MyEcommerceSite\yarn start
