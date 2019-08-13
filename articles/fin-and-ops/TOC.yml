@@ -292,7 +292,16 @@
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
       - name: Use Microsoft Forms Pro with business events
         href: ../dev-itpro/business-events/how-to/FormsPro.md
- 
+      - name: Use business events with Azure Event Hubs
+        href: ../dev-itpro/business-events/how-to/event-hub.md
+  - name: Compliance
+    items:
+    - name: Audit policy rules
+      href: ../financials/general-ledger/audit-policy-rules.md
+    - name: Audit policy violations and cases
+      href: ../financials/general-ledger/audit-policy-violations-cases.md
+    - name: Define audit policies for source documents
+      href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
   - name: Cost management
     items:
     - name: Cost management home page
@@ -2562,7 +2571,7 @@
           href: ../financials/localizations/rus-advance-adjustment-parameters.md
         - name: Advance holder reports
           href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-      - name: Bank
+      - name: Cash and Bank
         items: 
         - name: Set up bank accounts
           href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
@@ -2570,10 +2579,16 @@
           href: ../financials/localizations/rus-payment-order-settings-processing.md 
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md 
+        - name: Petty cash
+          href: ../financials/localizations/emea-petty-cash.md
       - name: VAT
         items:
         - name: Local specific posting of sales VAT
           href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+        - name: Invoice factures processing and printing
+          href: ../financials/localizations/rus-invoice-facture-process-print.md
+        - name: Revision factures and corrective factures
+          href: ../financials/localizations/rus-revise-invoice-facture.md
         - name: Value-added tax (VAT) for tax agents
           href: ../financials/localizations/rus-tax-agent.md
         - name: VAT declaration
