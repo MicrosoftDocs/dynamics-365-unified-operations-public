@@ -2,7 +2,7 @@
 # required metadata
 
 title: Debug modules
-description: This topic explains the various options that are available to help you debug modules during development in Microsoft Dynamics 365 for Commerce.
+description: Various options are available to help you debug your modules during development.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # Debug modules
 
-Various options are available to help you debug your modules during development. The e-Commerce functionality in Microsoft Dynamics 365 for Commerce uses React and Node, which support client-side debugging. Although you can also use standard React and Node debugging patterns, they aren't covered in this topic.
+Various options are available to help you debug your modules during development. The e-Commerce functionality in Microsoft Dynamics 365 Commerce uses React and Node, which support client-side debugging. Although you can also use standard React and Node debugging patterns, they aren't covered in this topic.
 
 ## Debug query string parameter
 
