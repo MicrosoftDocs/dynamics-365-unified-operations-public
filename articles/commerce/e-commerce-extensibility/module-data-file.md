@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module Data File
-description: Modules can expose data fields to e-Commerce page authors to enter in content used for rendering the module on a page.  This content could include a module title or heading, rich text description, call to action link, image URLs or Dynamics 365 Retail product data. 
+description: The MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data. 
 author: SamJarawan
 manager: JeffBl
 ms.date: 08/30/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 # Module Data File
-This MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data.  A set of core Data actions are included in the SDK that can get data from the Dynamics 365 Retail, ratings and review or the recommendations service.  The list of data actions can be found under the SDK `\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib` directory.
+The MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data.  A set of core data actions are included in the SDK that can get data from the Dynamics 365 Retail, Ratings and Review or the Recommendations service.  The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
 Below is a sample data file for a new module
 
