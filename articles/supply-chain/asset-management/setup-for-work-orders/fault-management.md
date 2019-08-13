@@ -103,7 +103,7 @@ In the fault designer, you set up fault data on asset types.
 3. On the **Fault symptom** FastTab, select **Add line**, and then, in the **Fault symptom** field, select a fault symptom.
 4. On the **Fault area** FastTab, select **Add line**, and then, in the **Fault area** field select a fault area.
 5. On the **Fault type** FastTab, select **Add line**, and then, in the **Fault type** field, select a fault type.
-6. To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**. This function is useful if you've created many combinations. It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.
+6. To quickly create combinations of all existing fault symptoms, areas, and types for the selected asset type, select **Create fault combinations**. This function is useful if you've added many fault symptoms, areas, and types. It's easier to delete the lines for any combinations that aren't relevant to the asset type than to create new lines manually.
 
     > [!NOTE]
     > To copy the setup of fault symptoms, areas, and types from one asset type to the selected asset type, select **Copy from asset type**.
