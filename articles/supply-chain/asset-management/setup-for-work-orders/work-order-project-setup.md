@@ -64,7 +64,7 @@ The setup allows for complete integration with the **Project management and acco
 
 1. Select **Asset management** \> **Setup** \> **Work orders** \> **Project setup**.
 2. On the **Parent project** tab, select **Add**.
-3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field, two fields, or all fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management. For more information about combinations and the selection process, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field or multiple fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management. For more information about combinations and the selection process, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
     If you select a functional location, the related child locations are automatically included. If you select an asset, you can create more work order project setup lines for the same asset, but you can select different projects for that asset.
 
