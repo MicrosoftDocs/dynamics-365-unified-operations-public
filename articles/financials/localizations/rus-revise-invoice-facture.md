@@ -120,49 +120,49 @@ Corrective and revision factures can be created on the basis of documents (invoi
 
 #### Create a corrective or revision facture for a purchase order
 
-1.	Go to Accounts payable > Purchase orders > All purchase orders.
+1.	Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 2.	Create a purchase order.
-3.	On the Action Pane, on the Invoice tab, in the Generate group, select Facture.
-4.	Switch to the Header view.
-5.	On the Additional FastTab, in the Correction type field, select Correction or Revision, as appropriate.
-6.	In the Invoice field, select the number of the invoice that must be corrected or revised.
-7.	In the Invoice date field, select the invoice date.
-8.	In the Facture field, select the facture that requires correction or revision.
-9.	In the Facture date field, select the facture date.
+3.	On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
+4.	Switch to the **Header** view.
+5.	On the **Additional** FastTab, in the **Correction type** field, select **Correction** or **Revision**, as appropriate.
+6.	In the **Invoice** field, select the number of the invoice that must be corrected or revised.
+7.	In the **Invoice date** field, select the invoice date.
+8.	In the **Facture** field, select the facture that requires correction or revision.
+9.	In the **Facture date** field, select the facture date.
  
  ![Facture date field](media/revision-facture-01.png)
  
-10.	Select Update facture to post the corrective or revision facture.
+10.	Select **Update facture** to post the corrective or revision facture.
 
 #### Create a corrective or revision facture for a vendor invoice
 
-1.	Go to Accounts payable > Invoices > Open vendor invoices.
+1.	Go to **Accounts payable** \> **Invoices** \> **Open vendor invoices**.
 2.	Create a vendor invoice, and specify all the fields that are required in order to update the corrective or revision facture (see the steps in the previous section, Create a corrective or revision facture for a purchase order).
 
 #### Create a corrective or revision facture for a sales order
 
-1.	Go to Accounts receivable > Orders > All sales orders.
+1.	Go to **Accounts receivable** \> **Orders** \> **All sales orders**.
 2.	Create a sales order.
-3.	On the Action Pane, on the Invoice tab, in the Generate group, select Facture.
-4.	On the Update facture page, on the Additional FastTab, in the Correction type field, select Correction or Revision, as appropriate.
-5.	In the Invoice field, select the number of the invoice that must be corrected or revised.
-6.	In the Invoice date field, select the invoice date.
-7.	In the Facture field, select the facture that requires correction or revision.
-8.	In the Facture date field, select the facture date.
-9.	Select Update facture to post the corrective or revision facture.
+3.	On the Action Pane, on the **Invoice** tab, in the **Generate** group, select **Facture**.
+4.	On the **Update facture** page, on the **Additional** FastTab, in the **Correction type** field, select **Correction** or **Revision**, as appropriate.
+5.	In the **Invoice** field, select the number of the invoice that must be corrected or revised.
+6.	In the **Invoice date** field, select the invoice date.
+7.	In the **Facture** field, select the facture that requires correction or revision.
+8.	In the **Facture date** field, select the facture date.
+9.	Select **Update facture** to post the corrective or revision facture.
 
 #### Create a corrective or revision facture for a free text invoice
 
-1.	Go to Accounts receivable > Invoices > All free text invoices.
+1.	Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
 2.	Create a free text invoice.
-3.	Switch to the Header view.
-4.	In the Correction type field, select Correction or Revision, as appropriate.
-5.	In the Invoice field, select the number of the invoice that must be corrected or revised.
-6.	In the Invoice date field, select the invoice date.
-7.	In the Facture field, select the facture that requires correction or revision.
-8.	In the Facture date field, select the facture date.
-9.	On the Action Pane, on the Invoice tab, in the Post group, select Update facture.
-10.	On the Post facture page, select OK to post the corrective or revision facture.
+3.	Switch to the **Header** view.
+4.	In the **Correction type** field, select **Correction** or **Revision**, as appropriate.
+5.	In the **Invoice** field, select the number of the invoice that must be corrected or revised.
+6.	In the **Invoice date** field, select the invoice date.
+7.	In the **Facture** field, select the facture that requires correction or revision.
+8.	In the **Facture date** field, select the facture date.
+9.	On the Action Pane, on the **Invoice** tab, in the **Post** group, select **Update facture**.
+10.	On the **Post facture** page, select **OK** to post the corrective or revision facture.
 
 ### Create a corrective or revision facture based on a tax transaction
 Corrective and revision factures can be created based on a tax transaction. In this case, the amount excluding VAT and the amount including VAT are calculated based on the tax transaction amount.
@@ -174,69 +174,74 @@ Correction or revision amounts are distributed to the lines of the original fact
 
 #### Example of automatic correction distribution
 This example shows the process of automatic correction distribution for an original sales facture that contains three lines.
-1.	Go to Accounts receivable > Invoices > All free text invoices.
-2.	Create a free text invoice that has three lines. For the first two lines, set the item sales tax group to VAT18. For the third, set it to VAT10.
+
+1.	Go to **Accounts receivable** \> **Invoices** \> **All free text invoices**.
+2.	Create a free text invoice that has three lines. For the first two lines, set the item sales tax group to **VAT18**. For the third, set it to **VAT10**.
 
 ![Free text invoice lines](media/revision-facture-02.png)
  
 3.	Post the invoice and update facture in the usual way.
-4.	Go to General ledger > Journal entries > General journal.
-5.	Select New to create a journal.
-6.	Select Lines.
-7.	Create tax transactions in the usual way. On the List tab, set the Account, Credit, and Offset account fields.
-8.	On the General tab, set the Sales tax code field.
+4.	Go to **General ledger** \> **Journal entries** \> **General journal**.
+5.	Select **New** to create a journal.
+6.	Select **Lines**.
+7.	Create tax transactions in the usual way. On the **List** tab, set the **Account**, **Credit**, and **Offset account** fields.
+8.	On the **General** tab, set the **Sales tax code** field.
 
 ![Journal voucher page](media/revision-facture-03.png)
  
 > [!NOTE]
-> Depending on the setup of the Ledger posting group account that you selected in the Sales tax code field, you must select values in the Account and Offset account fields.
+> Depending on the setup of the Ledger posting group account that you selected in the **Sales tax code** field, you must select values in the **Account** and **Offset account** fields.
 >
 > ![Journal voucher lines](media/revision-facture-04.png)
  
-9.	Select Post to post the journal.
-10.	Select Functions > Sales book to open the Update facture page. (For a purchase facture correction based on a tax transaction, select Functions > Purchase book.).
-11.	In the Correction type field, select Correction or Revision, as appropriate.
-12.	In the Facture field, select the number of the facture that requires correction or revision. The Facture date field is automatically set.
-13.	In the Distribution field, select Automatic.
+9.	Select **Post** to post the journal.
+10.	Select **Functions** \> **Sales book** to open the **Update facture** page. (For a purchase facture correction based on a tax transaction, select **Functions** \> **Purchase book**.).
+11.	In the **Correction type** field, select **Correction** or **Revision**, as appropriate.
+12.	In the **Facture** field, select the number of the facture that requires correction or revision. The Facture date field is automatically set.
+13.	In the **Distribution** field, select **Automatic**.
 
 ![Upate facture page](media/revision-facture-05.png)
  
 14.	In the lower part of the page, use the To facture check box to select the journal.
-15.	Select Posting > Update and print to update and print the facture.
-16.	Go to Accounts receivable > Inquires and reports > Facture. The upper part of the Facture journal page shows the facture that was created. The lower part of the page shows only two lines of the facture, where the item sales tax group equals VAT18. Facture lines show the amounts of deviations that are calculated as a result of the distribution.
+15.	Select **Posting** \> **Update and print** to update and print the facture.
+16.	Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**. The upper part of the **Facture journal** page shows the facture that was created. The lower part of the page shows only two lines of the facture, where the item sales tax group equals **VAT18**. Facture lines show the amounts of deviations that are calculated as a result of the distribution.
  
 ![Facture journal](media/revision-facture-06.png)
  
 ## Revise a facture header on the Facture journal page
-Use the Revise header button to correct the header fields of the facture.
-1.	Go to Accounts payable > Inquires and reports > Facture.
+Use the **Revise header** button to correct the header fields of the facture.
+
+1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 –or–
-Go to Accounts receivable > Inquires and reports > Facture.
-2.	Select a facture, and then select Revise header to open the Update facture page.
-3.	In the Shipper field, select the account number of the customer or vendor who is the shipper.
-4.	In the Consignee field, select the account number of the customer or vendor who is the consignee.
-5.	Select Posting > Update to update and post the facture.
+Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+2.	Select a facture, and then select **Revise header** to open the **Update facture** page.
+3.	In the **Shipper** field, select the account number of the customer or vendor who is the shipper.
+4.	In the **Consignee** field, select the account number of the customer or vendor who is the consignee.
+5.	Select **Posting** \> **Update** to update and post the facture.
 
 ## Review a history of corrective or revision factures in the Facture journal
-1.	Go to Accounts payable > Inquires and reports > Facture.
+1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 –or–
-Go to Accounts receivable > Inquires and reports > Facture.
-2.	Select the Show correction history check box to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
+Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+2.	Select the **Show correction history** check box to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
  
 ![Facture journal corrections](media/revision-facture-07.png) 
  
-In the upper part of the page, documents are sorted by the Date of the registration value, in descending order.
-The Facture and Revision number fields on the left side of the grid show information about the current document. The Facture and Revision number fields on the right side of the grid show information about the original document.
-A warning symbol in the Not actualized field indicates that the original facture was revised after the invoice was corrected. Therefore, the corrective document is no longer accurate. The warning symbol will disappear after a revision for the corrective facture is created that has a date that is later than the correction of the original facture.
-3.	Select the Show revised check box to view the history of facture revisions. All revision facture lines are shown in gray.
-4.	Select the Totals after correction tab to view the details of the total facture amount after the correction or revision. In the lower part of the page, select the Line after correction tab to view the amount for each facture line after the correction or revision.
-5.	On the Action Pane, select Final state to open the Facture final state page, where you can view the final status of all facture lines. The lines for all corrective and revision factures are include.
-Print a corrective or revision facture
-1.	Go to Accounts payable > Inquires and reports > Facture.
+ In the upper part of the page, documents are sorted by the **Date of the registration** value, in descending order.
+ The **Facture** and **Revision number** fields on the left side of the grid show information about the current document. The **Facture** and **Revision number** fields on the right side of the grid show information about the original document.
+
+ A warning symbol in the Not actualized field indicates that the original facture was revised after the invoice was corrected. Therefore, the corrective document is no longer accurate. The warning symbol will disappear after a revision for the corrective facture is created that has a date that is later than the correction of the original facture.
+
+3.	Select the **Show revised** check box to view the history of facture revisions. All revision facture lines are shown in gray.
+4.	Select the **Totals after correction** tab to view the details of the total facture amount after the correction or revision. In the lower part of the page, select the **Line after correction** tab to view the amount for each facture line after the correction or revision.
+5.	On the Action Pane, select **Final state** to open the **Facture final state** page, where you can view the final status of all facture lines. The lines for all corrective and revision factures are included.
+
+## Print a corrective or revision facture
+1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 –or–
-Go to Accounts receivable > Inquires and reports > Facture.
-2.	Select a facture, and then select Print > Correction to print a corrective or revision facture.
-3.	Select Print > Original to print the original facture.
+Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+2.	Select a facture, and then select **Print** \> **Correction** to print a corrective or revision facture.
+3.	Select **Print** \> **Original** to print the original facture.
 –or–
-Select Print > Copy to print the original facture.
+Select **Print** \> **Copy** to print the original facture.
 
