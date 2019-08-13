@@ -2,9 +2,9 @@
 # required metadata
 
 title: Page containers
-description: A page container contains the core structure for page authoring.  An example could be a page container with a slot defined for the header, main content area and footer area.  A page container is simply a module that controls the layout of a set of named slots.  A page container can only be imbedded at the root of a page.  Each page must have one and only one page container.
+description: A page container is a module that controls the core structure of a page with specific layout regions called **slots**.
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 # Create a page container module
-A page container contains the core structure for page authoring.  An example could be a page container with a **slot** (region the UI will be rendered) defined for the header, main content area and footer area.  A page container is simply a module that controls the layout of a set of slots.  A page container can only be imbedded at the root of a page and each page must have one and only one page container.
+A page container is a module that controls the core structure of a page with specific layout regions called **slots**.  An example could be a page container with a slot defined for the header, main content area and footer area. A page container can only be imbedded at the root of a page and each page must have one and only one page container.
 
 Similarly to layout container modules, page container modules can define **named slots** which are surfaced in the template authoring tools.  Page authors can configure which modules go into each slot and the container render code controls the layout of those slots.  Configuration settings can also be exposed to page authors to further configure the layout.
 
