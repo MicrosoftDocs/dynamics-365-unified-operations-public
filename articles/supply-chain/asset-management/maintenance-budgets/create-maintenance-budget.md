@@ -59,6 +59,8 @@ Maintenance budgets are based on the cost types used in Asset Management: Preven
 - When you have approved a budget, you cannot recalculate or adjust the related lines in **Maintenance budget lines**. It is possible to remove approval of a maintenance budget by clicking **Approve** > **OK**.  
 - In **Maintenance budgets**, there is a **Copy** function that allows you to copy a budget to make a new budget. This is useful if, for example, you have created a budget for one month and want to copy that budget to other months.
 
+The figure below shows and example of a 6-month maintenance budget with three budget lines.
+
 ![Figure 1](media/01-maintenance-budgets.png)
 
 
