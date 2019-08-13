@@ -34,6 +34,10 @@ ms.search.validFrom: 2019-07-15
 
 ## Enable plug-in trace logs in Common Data Service and inspect the dual-write plug-in error details
 
+[!include [banner](../includes/banner.md)]
+
+[!include [preview](../includes/preview-banner.md)]
+
 If you experience an issue or error during dual-write synchronization, follow these steps to inspect the errors in the trace log.
 
 1. Before you can inspect the errors, you must enable plug-in trace logs. For instructions, see the "View trace logs" section of [Tutorial: Write and register a plug-in](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
