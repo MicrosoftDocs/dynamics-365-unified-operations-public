@@ -59,5 +59,7 @@ A warranty agreement may include several agreement lines covering warranty for w
 9. In the **Percent** field, insert the coverage percentage for the warranty line. The percentage indicates how much is covered by your company.
 
 
+The figure below shows an example of a 1-year warranty agreement with full coverage.
+
 ![Figure 1](media/01-warranty.png)
 
