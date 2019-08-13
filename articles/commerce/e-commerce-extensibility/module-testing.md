@@ -4,7 +4,7 @@
 title: Testing a module
 description: During development of a module, the module can be previewed and debugged in your local web browser.
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -31,13 +31,15 @@ ms.dyn365.ops.version:
 # Testing a module
 During development of a module, the module can be previewed and debugged in your local web browser.
 
-To view the module rendering locally in a browser:
-1. Start the app from a command prompt, navigate to your root SDK folder and run `yarn start`:
+To preview the new module in a local web browser, follow these steps.
+
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
-1. Launch the following pages in a browser.  Notice the module name in the query string parameter `type=MODULE_NAME`:
-    * https://localhost:4000/modules?type=productFeature
+
+2. Open the following URL in a web browser to view the module: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
     
 * Adding &debug=true will provide more verbose debug information in the yarn output window.
     * https://localhost:4000/modules?type=productFeature&debug=true
