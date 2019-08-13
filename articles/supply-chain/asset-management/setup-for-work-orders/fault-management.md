@@ -5,7 +5,7 @@ title: Fault management
 description: This topic explains fault management in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/27/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,17 +20,21 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-08-30
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Fault management
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types. In this way, you can manage faults that are detected on assets. Additionally, fault causes and suggestions for fixing faults can be registered on a work order.
 
