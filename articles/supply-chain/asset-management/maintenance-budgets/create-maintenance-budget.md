@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create maintenance budget
+title: Create maintenance budgets
 description: This topic explains how to create a maintenance budget in Asset Management.
 author: josaw1
 manager: AnnBe
@@ -30,40 +30,31 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create maintenance budget
+# Create maintenance budgets
 
-Maintenance budgets are used to get an overview of expected costs for preventive maintenance. Budget lines are calculated based on maintenance schedule lines with an expected start date in the budget period.
+Maintenance budgets are used to provide an overview of expected costs for preventive maintenance. Budget lines are calculated based on maintenance schedule lines that have an expected start date during the budget period.
 
-Maintenance budgets are based on the cost types used in Asset Management: Preventive, Corrective, and Investment. Investment budget costs are included for active assets that have a replacement date in the budget period, and a related replacement value. Budget costs for corrective maintenance are included if a past corrective date is included in the budget calculation. In that case, corrective costs from an earlier period will be calculated for the same future period for which you calculate the maintenance budget.
+Maintenance budgets are based on the cost types that are used in Asset Management: **Preventive**, **Corrective**, and **Investment**. Budget costs for investment maintenance are included for active assets that have a replacement date during the budget period and a related replacement value. Budget costs for corrective maintenance are included if a past corrective date is included in the budget calculation. In that case, corrective costs from an earlier period are calculated for the same future period that you calculate the maintenance budget for.
 
-## Create maintenance budget
+## Create a maintenance budget
 
-1. Click **Asset management** > **Inquiries** > **Maintenance budget** > **Budget**.
+1. Select **Asset management** \> **Inquiries** \> **Maintenance budget** \> **Budget**.
+2. Select **Create budget**.
+3. In the **Maintenance budget** field, enter a budget ID.
+4. In the **Description** field, enter a description.
+4. On the **Period** FastTab, in the **From date** and **To date** fields, enter the start and end dates of the budget period.
+5. To include corrective budget costs that are calculated on the basis of actual costs from a previous period, in the **Corrective from date** field, enter the start date of the period that those costs should be included from.
+6. Depending on the level of detail that is required in the budget, set the relevant options on the five **Group by** FastTabs.
+7. Select **OK**.
+8. Select **Budget lines** to open **Maintenance budget lines** page, where you can view all the budget lines that have been created for the period.
+9. To approve the budget, select it on the **Maintenance budgets** page, and then select **Approve**. Then, in the **Approve budget** dialog box, select **OK**. Your name is entered in the **Approved by** field on the **Maintenance budgets** page.
 
-2. Click **Create budget**.
-
-3. Insert a budget ID in the **Maintenance budget** field and a description in the **Description** field.
-
-4. Insert the start and end period for the budget in the **From date** and **To date** fields.
-
-5. If you want to include corrective budget costs, which are calculated on the basis of actual costs from a previous period, insert the start date from which those costs should be included in the **Corrective from date** field.
-
-6. Depending on the requirements for detail level in the budget, select the relevant check boxes in the five **Group by...** sections.
-
-7. Click **OK**.
-
-8. Click **Budget lines** to open **Maintenance budget lines** and see all the budget lines created for the period.
-
-9. If you want to approve the budget in the **Maintenance budgets** form, select it, and click **Approve** > **OK**. Your name is inserted in the **Approved by** field.
-
-- When you have approved a budget, you cannot recalculate or adjust the related lines in **Maintenance budget lines**. It is possible to remove approval of a maintenance budget by clicking **Approve** > **OK**.  
-- In **Maintenance budgets**, there is a **Copy** function that allows you to copy a budget to make a new budget. This is useful if, for example, you have created a budget for one month and want to copy that budget to other months.
-
-The figure below shows and example of a 6-month maintenance budget with three budget lines.
+    > [!NOTE]
+    > After you've approved a maintenance budget, you can't recalculate or adjust the related lines on the **Maintenance budget lines** page unless you first remove the approval. To remove the approval of a maintenance budget, select it on the **Maintenance budgets** page, and then select **Approve**. Then, in the **Approve budget** dialog box, select **OK**.
 
 ![Figure 1](media/01-maintenance-budgets.png)
 
+You can also create a new maintenance budget by copying an existing budget. On the **Maintenance budgets** page, select the budget to copy, and then select **Copy**. This approach is useful if, for example, you've created a budget for one month and want to copy it to other months.
 
->[!NOTE]
->The maintenance budget only calculates budget costs based on maintenance schedule lines. If you want to calculate actual costs for the same period, make that calculation in **Asset cost control**. Refer to [Cost and date control](../controlling-and-reporting/cost-and-date-control.md) for more information.
-
+> [!NOTE]
+> The maintenance budget calculates only budget costs based on maintenance schedule lines. To calculate actual costs for the same period, you can do that calculation on the **Asset cost control** page. For more information, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
