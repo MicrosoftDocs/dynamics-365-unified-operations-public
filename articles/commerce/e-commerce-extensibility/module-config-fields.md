@@ -2,9 +2,9 @@
 # required metadata
 
 title: Module configuration fields
-description: 
+description: Configurations fields can be added to a module that will be presented to page authors giving them control of various module features.  
 author: SamJarawan
-manager: JeffBl
+manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # Module configuration fields
 
-Configurations fields can be exposed on a module that will be presented to page authors giving them control of some of the module features.  These features can be layout properties such as different views, alignment properties, boolean switches to turn features on or off, a module title or heading, rich text description, call to action link, image URLs or Dynamics 365 Retail product data.
+Configurations fields can be added to a module that will be presented to page authors giving them control of various module features.  These features can be layout properties such as different views, alignment properties, boolean switches to turn features on or off, a module title or heading, rich text description, call to action link, image URLs or Dynamics 365 Retail product data.
 
 Below is a screen shot of how these fields show up in the page authoring tools.
 
@@ -63,14 +63,11 @@ In the below module definition file `MODULE_NAME.definition.json` a configuratio
                 "right": "Right"
             },
             "default": "left",
-            "scope": "module",
             "group": "Layout Properties"
         }
     }
 }
 ```
-
-Take note of the “scope” property above, module configurations can be scoped to the “module” or “site” level.  Site level configurations allow a site admin the ability to set the value of the module config for all pages the module is rendered on, in this case the config cannot be changed at the individual page level.
 
 ## Module Config Schema
 The module "config" section contains a list of all the modules exposed configuration fields that will be used in the authoring tool.
@@ -224,7 +221,7 @@ Below is an advanced sample that shows the usage of various supported data types
 
 ### Local testing configuration fields with mock data
 
-The below example shows how to set a Mock value for the new configuration field in the `mocks/MODULE_NAME.json` file.  This will help us when rendering the module in our local dev environment.
+The below example shows how to set a Mock value for the new configuration field in the `mocks/MODULE_NAME.json` file.  This will help when rendering the module in a local development environment.
 
 ```
 {
@@ -242,7 +239,7 @@ The below example shows how to set a Mock value for the new configuration field 
 ### Accessing the configuration fields within the module React component
 To access configuration fields in the React component, use the `props.config` API.
 
-Below code change in `MODULE_NAME.tsx` uses an **if** statement to check the new imageAlignment config field and renders the appropriate HTML. When finished save the file and it will auto compile (check your command prompt window where you ran “yarn start”).
+Below sample code uses an **if** statement to check the new imageAlignment config field and renders the appropriate HTML.
 
 ```typescript
 import * as React from 'react';
