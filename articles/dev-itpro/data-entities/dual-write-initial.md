@@ -32,6 +32,10 @@ ms.search.validFrom: 2019-07-15
 
 # Execution order for initial synchronization of Finance and Operations and Common Data Service
 
+[!include [banner](../includes/banner.md)]
+
+[!include [preview](../includes/preview-banner.md)]
+
 Before you use data integration, you must create the initial data that is required for customers, vendors, and contacts. For example, you want to create a new **Vendor group** item and set its **Terms of Payment** value to **Net30**. In this case, before you try to create the **Vendor group** item, you must make sure that **Net30** exists in both Microsoft Dynamics 365 for Finance and Operations and Common Data Service. (In the future, Microsoft will release dual-write platform functionality that is named Initial Sync. This functionality will do a one-time data synchronization between Finance and Operations and Common Data Service as part of the dual-write setup.)
 
 > [!TIP]
@@ -41,7 +45,7 @@ You must follow the following order of precedence and make sure that the initial
 
 ## Vendor
 
-Here is the order of execution for Vendor:
+Here is the order of execution for the **Vendor** entity:
 
 1. Vendor group
 
@@ -54,7 +58,7 @@ Here is the order of execution for Vendor:
 
 ## Customer (Organization)
 
-Here is the order of execution for Customer:
+Here is the order of execution for the **Customer** entity:
 
 1. Customer group
 
@@ -67,7 +71,7 @@ Here is the order of execution for Customer:
 
 ## Contact (Person)
 
-Here is the order of execution for Contact:
+Here is the order of execution for the **Contact** entity:
 
 1. Customer
 2. Vendor
