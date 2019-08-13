@@ -5,7 +5,7 @@ title: Update maintenance budgets
 description: This topic explains how to update a maintenance budget in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,17 +20,21 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Update maintenance budgets
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
 
@@ -68,7 +72,7 @@ After the dates on the budget lines have passed, and actual costs have been post
 The **Actual cost** fields on the budget lines are updated if actual costs have been posted. New budget lines might be generated if new asset types have been created since you created the budget, and if those asset types have been used on assets that work orders have been created for and related costs have been posted for. New budget lines show only actual costs, because no budget costs were calculated for them.
 
 > [!NOTE]
-> To see an overview of actual costs divided into preventive, corrective, and investment costs, you can do a calculation for the same period on the **Asset cost control** page. For more information, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+> To see an overview of actual costs divided into preventive, corrective, and investment costs, you can do a calculation for the same period on the **Asset cost control** page. 
 
 ## Manually add budget lines
 
