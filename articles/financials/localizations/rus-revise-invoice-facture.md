@@ -213,9 +213,9 @@ Use the **Revise header** button to correct the header fields of the facture.
 
 1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 
-   –or–
+    –or–
 
-   Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+    Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
 
 2.	Select a facture, and then select **Revise header** to open the **Update facture** page.
 3.	In the **Shipper** field, select the account number of the customer or vendor who is the shipper.
@@ -225,9 +225,9 @@ Use the **Revise header** button to correct the header fields of the facture.
 ## Review a history of corrective or revision factures in the Facture journal
 1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
 
-   –or–
+    –or–
 
-   Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+    Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
 
 2.	Select the **Show correction history** check box to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
  
@@ -245,14 +245,14 @@ Use the **Revise header** button to correct the header fields of the facture.
 ## Print a corrective or revision facture
 1.	Go to **Accounts payable** \> **Inquires and reports** \> **Facture**.
   
-  –or–
+    –or–
 
-  Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+    Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
 
 2.	Select a facture, and then select **Print** \> **Correction** to print a corrective or revision facture.
 3.	Select **Print** \> **Original** to print the original facture.
 
-  –or–
+    –or–
 
-  Select **Print** \> **Copy** to print the original facture.
+    Select **Print** \> **Copy** to print the original facture.
 
