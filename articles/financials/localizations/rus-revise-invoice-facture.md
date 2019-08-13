@@ -216,6 +216,7 @@ Use the **Revise header** button to correct the header fields of the facture.
    –or–
 
    Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+
 2.	Select a facture, and then select **Revise header** to open the **Update facture** page.
 3.	In the **Shipper** field, select the account number of the customer or vendor who is the shipper.
 4.	In the **Consignee** field, select the account number of the customer or vendor who is the consignee.
@@ -227,6 +228,7 @@ Use the **Revise header** button to correct the header fields of the facture.
    –or–
 
    Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+
 2.	Select the **Show correction history** check box to view the history of all facture corrections or revisions. The original facture and the associated corrective or revision factures are shown.
  
 ![Facture journal corrections](media/revision-facture-07.png) 
@@ -246,6 +248,7 @@ Use the **Revise header** button to correct the header fields of the facture.
   –or–
 
   Go to **Accounts receivable** \> **Inquires and reports** \> **Facture**.
+
 2.	Select a facture, and then select **Print** \> **Correction** to print a corrective or revision facture.
 3.	Select **Print** \> **Original** to print the original facture.
 
