@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting guide for data integration
-description: This topic provides troubleshooting information about data integration between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
+description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/25/2019
@@ -32,41 +32,47 @@ ms.search.validFrom: 2019-07-15
 
 # Troubleshooting guide for data integration
 
-## Enable Plugin Trace in Common Data Service and check the dual-write Plugin error details
+## Enable plug-in trace logs in Common Data Service and inspect the dual-write plug-in error details
 
-If you are facing an issue or error with dual-write synchronization, you can inspect the errors in the trace log:
+[!include [banner](../includes/banner.md)]
 
-1. Before you can inspect the errors, you must enable Plugin trace using the instructions in [Register plug-in](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) to enable Plugin trace. Now you can inspect the errors.
-2. Login to Dynamics 365 for Sales.
-3. Click on the Settings icon (a gear), and select **Advanced Settings**.
-4. In the **Settings** menu, choose **Customization > Plug-In Trace Log**.
-5. Click the type name **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** to display the error details.
+[!include [preview](../includes/preview-banner.md)]
 
-## Check dual-write synchronization errors in Finance and Operations
+If you experience an issue or error during dual-write synchronization, follow these steps to inspect the errors in the trace log.
 
-You can check the errors during testing by following these steps:
+1. Before you can inspect the errors, you must enable plug-in trace logs. For instructions, see the "View trace logs" section of [Tutorial: Write and register a plug-in](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
 
-+ Login to LifeCycle Services (LCS).
-+ Open the LCS project that you chose to perform dual-write testing.
-+ Go to Cloud Hosted Environments.
-+ Remote desktop to Finance and Operations VM using local account that is displayed in LCS.
-+ Open the event viewer. 
-+ Navigate to **Applications and Services logs > Microsoft > Dynamics > AX-DualWriteSync > Operational**. The errors and details are displayed.
+    You can now inspect the errors.
 
-## How to unlink and link another Common Data Service environment from Finance and Operations
+2. Sign in to Microsoft Dynamics 365 for Sales.
+3. Select the **Settings** button (the gear symbol), and then select **Advanced Settings**.
+4. On the **Settings** menu, select **Customization \> Plug-In Trace Log**.
+5. Select **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** as the type name to show the error details.
 
-You can update links by following these steps:
+## Inspect dual-write synchronization errors in Finance and Operations
 
-+ Navigate to the Finance and Operations environment.
-+ Open Data Management.
-+ Click on **Link to CDS for apps**.
-+ Select all the running mappings and click **Stop**. 
-+ Select all the mappings and click **Delete**.
+Follow these steps to inspect errors during testing.
+
+1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
+2. Open the LCS project to do dual-write testing for.
+3. Select **Cloud-hosted environments**.
+4. Make a Remote desktop connection to the Dynamics 365 for Finance and Operations virtual machine (VM) by using local account that is shown in LCS.
+5. Open Event Viewer. 
+6. Go to **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**. The errors and details are shown.
+
+## Unlink one Common Data Service environment from Finance and Operations and link another environment
+
+Follow these steps to update links.
+
+1. Go to the Finance and Operations environment.
+2. Open Data Management.
+3. Select **Link to CDS for apps**.
+4. Select all the mappings that are running, and then select **Stop**.
+5. Select all the mappings, and then select **Delete**.
 
     > [!NOTE]
-    > The **Delete** option will not appear if **CustomerV3-Account** template is selected. Unselect it if needed. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it is globally released, it shows up under all templates.
+    > The **Delete** option isn't available if the **CustomerV3-Account** template is selected. Clear the selection of this template as required. **CustomerV3-Account** is an older provisioned template and works with the Prospect to Cash solution. Because it's globally released, it appears under all templates.
 
-+ Click **Unlink environment**.
-+ Click **Yes** for confirmation.
-+ To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).
-
+6. Select **Unlink environment**.
+7. Select **Yes** to confirm the operation.
+8. To link the new environment, follow the steps in the [installation guide](https://aka.ms/dualwrite-docs).
