@@ -40,7 +40,7 @@ Work order types are used to categorize work orders. For example, you might have
 
 A work order type defines an affiliation with a work order lifecycle model. A work order lifecycle model defines the work order lifecycle states that can be set on a work order. (Examples of work order lifecycle states include **Created**, **In Process**, and **Finished**.)
 
-For more information about work order lifecycle states and project stages, see [Work order lifecycle states](work-order-stages.md).
+For more information about work order lifecycle states and project stages, see [Work order lifecycle states](work-order-lifecycle-states.md).
 
 1. Select **Asset management** \> **Setup** \> **Work orders** \> **Work order types**.
 2. Select **New** to create a work order type.
