@@ -5,7 +5,7 @@ title: Create maintenance budgets
 description: This topic explains how to create a maintenance budget in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,30 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Create maintenance budgets
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
+
 
 Maintenance budgets are used to provide an overview of expected costs for preventive maintenance. Budget lines are calculated based on maintenance schedule lines that have an expected start date during the budget period.
 
@@ -57,4 +63,4 @@ Maintenance budgets are based on the cost types that are used in Asset Managemen
 You can also create a new maintenance budget by copying an existing budget. On the **Maintenance budgets** page, select the budget to copy, and then select **Copy**. This approach is useful if, for example, you've created a budget for one month and want to copy it to other months.
 
 > [!NOTE]
-> The maintenance budget calculates only budget costs based on maintenance schedule lines. To calculate actual costs for the same period, you can do that calculation on the **Asset cost control** page. For more information, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+> The maintenance budget calculates only budget costs based on maintenance schedule lines. To calculate actual costs for the same period, you can do that calculation on the **Asset cost control** page. 
