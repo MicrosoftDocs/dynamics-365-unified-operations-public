@@ -3543,7 +3543,8 @@
       - name: Inbound and outbound assets
         href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
       - name: Maintenance request reports
-        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md    - name: Setup for work orders
+        href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
+    - name: Setup for work orders
       items:
       - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
         href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
