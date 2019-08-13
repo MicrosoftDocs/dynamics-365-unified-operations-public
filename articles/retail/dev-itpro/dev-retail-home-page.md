@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail for IT pros and developers home page
+title: Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail for IT pros and developers home page
+# Retail for IT pros and developers
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,6 +97,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 ## Retail hardware station
 -   [Retail hardware station configuration and installation](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
+-   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Retail Store Scale Unit
 -   [Retail Store Scale Unit overview](retail-store-system-begin.md)

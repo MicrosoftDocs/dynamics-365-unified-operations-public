@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,6 @@ ms.technology:
 # optional metadata
 
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -32,7 +31,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## Introduction
 Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
@@ -54,13 +53,13 @@ There are two size variations to the view selector:
 
 -   **Large view selectors**: Pages that prominently feature a list will have a larger view selector for a few reasons. Most importantly, the larger view selector indicates the pages where the view can include user-defined filters. Because filters are included in the views, the larger selector size is also warranted as the view names will often be the best description of the data shown on the screen and the expectation is that users will switch between views more often on these page types.  
  
--   **Small view selectors**: All other full-page forms have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the form caption or record title is often the most important information at the top of the form. The smaller size also reflects a lower expected frequency of view switching on these pages. 
+-   **Small view selectors**: All other full-page forms (with the exception of workspaces and the dashboard) have a smaller view selector that appears next to the page caption. Views on these pages only include personalizations (and not user-defined filters). On these pages, the form caption or record title is often the most important information at the top of the form. The smaller size also reflects a lower expected frequency of view switching on these pages. 
  
 If you click on the view name, the view selector opens and shows the list of available views for this page
 
 -    **Classic view**: The Classic view is the out-of-the-box view of the page with no explicit personalizations applied.  
 -    **Personal views**: The views without padlocks represent your personal views. These are views that either you have created or that an administrator has given to you.  
--    **Locked views**: Some views (like the Classic view and any views published to your role) have a padlock next to them in the view selector, indicating that you cannot edit those views. However, implicit personalizations around page usage are automatically saved, such as changing the width of a grid column or expanding or collapsing a FastTab. You can, however, make a personal view based on a locked view using the **Save a copy** action, if you have personalization privileges.
+-    **Locked views**: Some views (like the Classic view and any views published to your role) have a padlock next to them in the view selector, indicating that you cannot edit those views. However, implicit personalizations that reflect page usage are automatically saved, such as changing the width of a grid column or expanding or collapsing a FastTab. You can, however, make a personal view based on a locked view using the **Save a copy** action, if you have personalization privileges.
 -    **New views**: Published views that have not yet been opened are delineated with a spark to the left of the view name.  
 
 To switch to a different view, first open the view selector and then select the view that you want to load. 
@@ -80,7 +79,7 @@ If you want to save those changes, follow these steps.
      3.    Select **Save**.
 
 ## Changing the default view
-The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view that you expect to use often.  
+The default view is the view that the system will try to open when you first navigate to the page. You should set this to the view that you expect to use most often.  
 
 To change the default view for a page, follow these steps: 
 1.	Switch to the view that you use as the default. 
@@ -105,14 +104,14 @@ Any changes made in this dialog box will take effect after you select the **Save
 ## Managing personalizations at an organizational level with views
 To understand the improvements in managing personalizations at an organizational level, let’s first look at how management of personalization worked before views.  
 
-Without views, administrators would apply a set of personalizations for a page to a user, a group of users, or users using the Personalization form. If those users had personalization rights, the personalizations would be applied to that page. However, there was no ability to prevent users from further personalizing the page, which meant the organization could not ensure that its users had a consistent user interface. If any of those users didn’t have personalization rights, the personalizations given to them by an administrator were not loaded. Further, if new users were hired into an organization, administrators needed to manually load a set of personalizations for the user. There was no automatic mechanism for specifying a certain set of personalizations should be available to that user.
+Without views, administrators would apply a set of personalizations for a page to a user or a group of users via the Personalization page. If those users had personalization rights, the personalizations would be applied to that page. However, there was no ability to prevent users from further personalizing the page, which meant the organization could not ensure that its users had a consistent user interface. If any of those users didn’t have personalization rights, the personalizations given to them by an administrator were not loaded. Further, if new users were hired into an organization, administrators needed to manually load a set of personalizations for the user. There was no automatic mechanism for specifying that a certain set of personalizations should be available for users in that role.
 
 With the saved views feature, organizational management of personalizations is significantly easier, primarily due to the ability to publish views to security roles. After a view has been published, any user with that role will be able to access and use the view, regardless of the user’s ability to personalize. While each user has a copy of the published view in which page usage (implicit personalizations) are automatically applied, no user can save explicit personalizations or updates to the query to the published view (meaning that published views are locked). Additionally, if new users are given a role the view was published to, they will automatically see the views associated with their roles without any action from the administrator. Similarly, if a user changes roles in an organization, the views associated with their old role will no longer be accessible to them, again without any action from the administrator. Updates to a published view can be easily distributed to users by republishing the view to the appropriate security roles.
 
 The publish capability allows organizations to define corporate standard views that are optimized for their business, targeted at users in specific security roles.  
 
 ## Publishing views
-During the publish process, views can be assigned to one or more security roles, meaning any user with that role will be able to access and use that view, though they cannot edit the view. Currently, only system administrators have rights to the **Publish** action in the view selector drop-down menu.  
+During the publish process, views can be assigned to one or more security roles, meaning any user with that role will be able to access and use that view, though they cannot edit the view. Currently, only system administrators have rights to the **Publish** action in the view selector drop-down menu, but a new security role will be available in a future update to give publish rights to other trusted users.  
 
 To publish a view, follow these steps: 
 1.	Create and save a personal copy of the view that you want to publish. 
@@ -155,14 +154,21 @@ Any changes made in this dialog box will take effect after the **Save** button i
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
-To enable saved views, a system administrator should do the following: 
-1.	Go to the **Personalization** page using navigation search. 
-2.	Select the **Settings** tab.
-3.	Set the **Enable saved views** option to **Yes**.
+To enable saved views while the feature is in preview, follow the steps below: 
 
-After this feature is enabled, all subsequent user sessions will start with views enabled.  
+1.	**Enable the flight**: Execute the following SQL statement: 
 
-Note that if personalization is turned off for the environment, views will be enabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2. **Reset IIS** to flush the static flighting cache. 
+
+3.	**Find the feature**: Go to the **Feature management** workspace. If **Saved views** does not appear in the list, select **Check for updates**.   
+
+4.	**Enable the feature**: Find the **Saved views** feature in the list of features, and select **Enable now** on the details pane.
+
+All subsequent user sessions will start with saved views enabled.  
+
+Note that if personalization is turned off for the environment, views will be disabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
 
 ### What happens to existing personalizations when views are enabled? 
 When views are enabled, any existing personalizations for a user and form are saved into a new view called **My view** that is automatically set as the default view. This is meant to ensure that there is a consistent user experience before and after views are enabled, except for the view selector control appearing on forms.  
@@ -171,7 +177,7 @@ When views are enabled, any existing personalizations for a user and form are sa
 Views are available on most but not all pages in Finance and Operations. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
 
 ### Who is allowed to publish views?
-Currently system administrators are the only users who have rights to publish views.  A new security role is planned, which would  provide customers more flexibility to who can publish.  
+Currently system administrators are the only users who have rights to publish views.  A new security role is planned in a future update, which would provide customers more flexibility to who can publish.  
 
 ### Why am I not able to save filters with this view? 
 There are a few reasons why a filter may not appear to save with a view: 
@@ -184,4 +190,4 @@ There are a few reasons why a filter may not appear to save with a view:
      
   You should be alerted when these situations occur by an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.  
 
-- The page in question may not properly support views, as it may ignore the view query completely. Please report any such instances through the **Feedback** mechanism. To get to the feedback page, click **Help and Support** and then **Feedback**.  
+- The page in question may not properly support views, as it may ignore the view query completely or may operate on a temporary table whose data is not persistent. 

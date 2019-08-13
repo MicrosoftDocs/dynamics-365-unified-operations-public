@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Mobile platform client APIs
+title: Client APIs home page
 description: Mobile platform client APIs
 author: shadykdc
 manager: AnnBe
-ms.date: 08/09/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Mobile platform client APIs
+# Client APIs home page
 
 [!include [banner](../../../includes/banner.md)]
 

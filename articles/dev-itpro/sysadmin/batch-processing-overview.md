@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Batch processing
+title: Batch processing overview
 description: This topic provides an overview of batch processing in Microsoft Dynamics 365 for Finance and Operations.
 author: hasaid
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Batch processing
+# Batch processing overview
 
 [!include [banner](../includes/banner.md)]
 

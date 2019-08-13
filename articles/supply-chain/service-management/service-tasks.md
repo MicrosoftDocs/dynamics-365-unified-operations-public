@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service tasks 
+title: Service tasks overview
 description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service tasks  
+# Service tasks overview
 
 [!include [banner](../includes/banner.md)]
 

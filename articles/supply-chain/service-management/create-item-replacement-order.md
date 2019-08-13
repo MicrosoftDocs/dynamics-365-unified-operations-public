@@ -3,6 +3,7 @@
 
 title: Create an item replacement order   
 description: Item replacement orders are usually created after a product is returned and inspected.
+author: josaw1
 manager: AnnBe
 ms.date: 05/01/2018
 ms.topic: article
@@ -23,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShylaThompson
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -70,5 +70,8 @@ Follow these steps to set up integration between Finance and Operations and Comm
     + Dynamics365FinanceCommon
     + Dynamics365SupplyChainCommon
 
+3. Follow the execution order for [synchronizing initial reference data](dual-write-initial.md).
+4. If you encounter dual-write synchronization issues, see the [Troubleshooting guide for data integration](dual-write-troubleshooting.md).
+
 > [!IMPORTANT]
-> Dual-write isn't compatible with the [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) solution. If you're running the Prospect to cash solution, you must uninstall it. You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.
+> You can’t run dual-write and [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) side-by-side. If you're running the Prospect to cash solution, you must uninstall it. You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.

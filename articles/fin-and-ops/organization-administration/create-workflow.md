@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create workflows
+title: Create workflows overview
 description: This topic explains how to create a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Create workflows
+# Create workflows overview
 
 [!include [banner](../includes/banner.md)]
 

@@ -5,7 +5,7 @@ title: Finance and Operations Connector
 description: This topic provides information about the Finance and Operations Connector for Microsoft Flow and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,7 +55,7 @@ This action can be used to fetch a record for a specific data entity from the ta
 
 *Entity name* refers to the data entity in Finance and Operations from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
 
-*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The following syntax must be followed to specify the keys.
+*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The values must be specified as a comma-separated list of values in the order that is defined in the entity.
 
 **Create a record**
 
