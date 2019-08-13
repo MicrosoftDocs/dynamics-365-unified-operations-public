@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 
-For legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia, you can set up full names and short names for currency units and subunits. These names can be used to transform how amounts are represented on documents and reports. For example: The amount **LTL 100.20** can be displayed as **100 Litas 20 Centas**.
+For legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia, you can set up full names and short names for currency units and subunits. These names can be used to transform how amounts are represented on documents and reports. For example, the amount **LTL 100.20** can be displayed as **100 Litas 20 Centas**.
 
 ## Set up full and short names for currency units and subunits
 To set up full and short names for currency units and subunits for a language, complete the following steps:
 
 1. Open the **Currencies** page.
 2. Select a currency.
-3. On the Action Pane, click **Declension**.
-4. To add full name and short name for a language, click **New** and complete the following fields.
+3. On the Action Pane, select **Declension**.
+4. To add full name and short name for a language, select **New** and enter information the following fields.
 
    |                                                                        |                                                                                                                                                                                                                                                                        |
    |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -55,11 +55,7 @@ To set up full and short names for currency units and subunits for a language, c
    |    <strong>Shortcut name of units (Short name field group)</strong>    |                                                                                         Enter the ISO code to identify the currency. For example, enter LTL to identify Litas.                                                                                         |
    |   <strong>Shortcut name for parts (Short name field group)</strong>    |                                                                                               Enter the denomination of the currency subunit. For example, enter Centas.                                                                                               |
    |       <strong>Conjunction 'and' between units and parts</strong>       |                                     Select to print the conjunction “and” between the currency units and unit parts. For example, on invoices or reports, the amount for LTL 100.20 will be displayed as 100 Litas and 20 Centas.                                      |
-   |       <strong>Gender</strong>       |  Select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on the text of the amount declension which is shown in text of the local language on Cash order. For example, when you set up **Gender** for EUR currency as **Neuter**, the amount 1,01 EUR is written in Czech language on a Cash order as *Edno euro 01 cent*.  |
+   |       <strong>Gender</strong>       |  Select **Masculine**, **Feminine**, or **Neuter**. This parameter can influence the text of the amount declension that is shown in text of the local language on Cash order. For example, when you set up **Gender** for EUR currency as **Neuter**, the amount 1,01 EUR is written in Czech language on a Cash order as *Edno euro 01 cent*.  |
 
-
-5. Click **Save**.
-
-
-
+5. Select **Save**.
 
