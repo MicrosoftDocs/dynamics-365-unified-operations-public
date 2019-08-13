@@ -248,6 +248,59 @@ CONFIGURATIONID | >> | msdyn_name
 CONFIGURATIONID | >> | msdyn_productconfiguration
 
 
+When a product has different product dimensions (a product master with size and color as product dimensions, for example), each of the individual products (each product variant) will be determined as a combination of these product dimensions. For example, B0001 is a black XS t-shirt and B0002 is a black S t-shirt. In this case, the existing combinations of product dimensions are defined. For example, the t-shirt from the example before could be in black XS, black S, black M and black L, but not existing in black XL. In other words, the product dimensions that a product master can take are specified and variants can be released taking these values. To keep track of which product dimensions a product master can take the following entities are created and mapped in CDS for each of the product dimensions. 
+You can read more about products in Finance and Operations ![here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/product-information).
+
+### Shared product color
+It indicates the colors that a specific product master of Finance and Operations can take. This concept is migrated to CDS to keep data consistency. The mappings can be seen in the following table:
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTCOLORID | >> | msdyn_productcolorintegration
+PRODUCTCOLORID | >> | msdyn_productcolorid.msdyn_productcolorname
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductnumberintegration
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductdetailid.msdyn_itemnumber
+REPLENISHMENTWEIGHT | >> | msdyn_replenishmentweight
+DISPLAYSEQUENCENUMBER | >> | msdyn_retaildisplayorder
+
+### Shared product size
+It indicates the colors that a specific product master of Finance and Operations can take. This concept is migrated to CDS to keep data consistency. The mappings can be seen in the following table:
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductnumberintegration
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductdetailid.msdyn_itemnumber
+PRODUCTSIZEID | >> | msdyn_productsizeid.msdyn_productsize
+PRODUCTSIZEID | >> | msdyn_productsizeintegration
+REPLENISHMENTWEIGHT | >> | msdyn_replenishmentweight
+DISPLAYSEQUENCENUMBER | >> | msdyn_displaysequencenumber
+
+### Shared product style
+It indicates the colors that a specific product master of Finance and Operations can take. This concept is migrated to CDS to keep data consistency. The mappings can be seen in the following table:
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductdetailintegration
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductdetailsid.msdyn_itemnumber
+PRODUCTSTYLEID | >> | msdyn_productstyleintegration
+PRODUCTSTYLEID | >> | msdyn_productstyleid.msdyn_productstyle
+REPLENISHMENTWEIGHT | >> | msdyn_replenishmentweight
+DISPLAYSEQUENCENUMBER | >> | msdyn_displaysequencenumber
+
+### Shared product configuration
+It indicates the colors that a specific product master of Finance and Operations can take. This concept is migrated to CDS to keep data consistency. The mappings can be seen in the following table:
+
+Source field | Map type | Destination field
+---|---|---
+CONTAINERUNITSYMBOL | >> | msdyn_containerunitsymbol
+PRODUCTCONFIGURATIONID | >> | msdyn_configurationintegration
+PRODUCTCONFIGURATIONID | >> | msdyn_productconfigurationid.msdyn_productconfiguration
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductnumberintegration
+PRODUCTMASTERNUMBER | >> | msdyn_sharedproductdetailid.msdyn_itemnumber
+REPLENISHMENTWEIGHT | >> | msdyn_replenishmentweight
+DISPLAYSEQUENCENUMBER | >> | msdyn_displaysequencenumber
+
+
 ## Product number identified barcode
 
 To uniquely identify products the product barcodes are used. These product barcodes will be available in Common Data Service using the following mappings:
