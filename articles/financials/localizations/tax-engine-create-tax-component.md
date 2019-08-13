@@ -5,7 +5,7 @@ title: Create tax components
 description: This topic explains how to create tax components manually and by using predefined rules.
 author: yijialuan
 manager: Krstin Fender
-ms.date: 07/30/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-Tax components are like sub-tax types that a tax authority can levy in the same jurisdiction or a different jurisdiction. For example, in the US, sales tax is levied at various levels of jurisdiction, such as the state, county, or city level. Different tax components can be treated differently from an accounting, tax reporting, tax settlement, or other perspective. In India, Central Goods and Services Tax (CGST), State GST (SGST), and Integrated GST (IGST) are all GST.
+Tax components are like sub-tax types that a tax authority can levy in the same jurisdiction or a different jurisdiction. For example, in the US, sales tax is levied at various levels of jurisdiction, such as the state, county, or city level. Different tax components can be treated differently from an accounting, tax reporting, tax settlement, or other perspective. In India, Central Goods and Services Tax (CGST), State GST (SGST), and Integrated GST (IGST) are all types of GST.
 
 > [!NOTE]
 > The tax engine functionality is available only for legal entities that have their primary address in India.
@@ -42,7 +42,7 @@ For a quick overview of the tax engine, watch [Tax engine overview (YouTube vide
 
 A tax type is analogous to a tax regime. Sales tax, value-added tax (VAT), and GST are three typical tax types. Tax components should be created under a specific tax type.
 
-To create a tax type, select **Lines**, select **Add \> Tax document \> Tax type**, specify the name, description, and rounding rule, and then select **OK**.
+To create a tax type, on the **Tax document** page, select **Lines**, select **Add** \> **Tax document** \> **Tax type**, specify the name, description, and rounding rule, and then select **OK**.
 
 ![Creating a tax type](media/GTE-Create-TaxType.png)
 
