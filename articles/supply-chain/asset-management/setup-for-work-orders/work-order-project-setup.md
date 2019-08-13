@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/preview-banner.md)]
 
-In the **Asset management** module, a project relation is required for every work order job. The project that is associated with a work order job lets you track costs on various projects that are related to Asset Management, such as internal maintenance projects, service management projects, and investment projects. For more information about how projects are related to work orders and assets, see [Integration to project management and accounting](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+In the **Asset management** module, a project relation is required for every work order job. The project that is associated with a work order job lets you track costs on various projects that are related to Asset Management, such as internal maintenance projects, service management projects, and investment projects. 
 
 ## Project setup for a work order job
 
@@ -64,11 +64,11 @@ Project groups can be used to create specific categories (groups) that are used 
 
 Project groups aren't mandatory. If you don't set up project groups, the parent project is used to determine the project group, and a child project is created from the parent project's project group.
 
-The setup allows for complete integration with the **Project management and accounting** module. Therefore, you can track the costs that are related to work orders in the related projects. For more information about the relation between work order projects, project stages, and work order lifecycle states, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md). The following procedure describes the setup for work order projects.
+The setup allows for complete integration with the **Project management and accounting** module. Therefore, you can track the costs that are related to work orders in the related projects. The following procedure describes the setup for work order projects.
 
 1. Select **Asset management** \> **Setup** \> **Work orders** \> **Project setup**.
 2. On the **Parent project** tab, select **Add**.
-3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field or multiple fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management. For more information about combinations and the selection process, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+3. In the **Work order type**, **Functional location**, **Asset type**, and **Asset** fields, select values as you require. For each line that you add, you can set just one field or multiple fields. The number of fields that you set determines the combination that is used when a project ID is selected in Asset Management. 
 
     If you select a functional location, the related child locations are automatically included. If you select an asset, you can create more work order project setup lines for the same asset, but you can select different projects for that asset.
 
