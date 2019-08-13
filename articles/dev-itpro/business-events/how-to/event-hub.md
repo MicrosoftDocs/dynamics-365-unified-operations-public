@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use business events with Azure Event Hubs
+title: Business events and Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 author: AXnU
 manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-07-31
 
 ---
 
-# Use business events with Azure Event Hubs
+# Business events and Azure Event Hubs
 
 [!include[banner](../../includes/banner.md)]
 
