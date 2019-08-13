@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can use work order service levels to set up scheduled execution. (For more information about work order service levels, see [Service level and description](service-level-and-description.md).) Scheduled execution provides flexibility in work planning for maintenance workers, because you can set up more detailed or less detailed requirements for the interval that a work order should be completed during. For example, a maintenance worker who completes a job faster than expected in a production facility might be able to move on to another nearby job that was planned for the current week but not necessarily for the current day. This approach allows for optimization of worker planning and job completion.
 
-Scheduled execution can be set up for various levels that are related to a work order. You can set up generic lines that aren't limited to specific work order types, asset types, or other levels. Alternatively, you can create scheduled execution lines that apply to a specific work order type, asset type, maintenance job type, or other level, or to a combination of levels.
+Scheduled execution setup, which is related to work orders, can be generic or specific. You can set up generic lines that aren't limited to specific work order types, asset types, and so on. Alternatively, you can create scheduled execution lines that apply to a specific work order type, asset type, maintenance job type, and so on.
 
 1. Select **Asset management** \> **Setup** \> **Work orders** \> **Scheduled execution**.
 2. Select **New** to create a scheduled execution line.
