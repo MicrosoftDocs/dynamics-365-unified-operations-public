@@ -453,8 +453,6 @@
             href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integrated Customer Master
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
-          - name: Integrated Product Master
-            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
@@ -465,6 +463,8 @@
           items:
           - name: Configure a prospect to cash scenario
             items:
+            - name: Integrated Product Master
+              href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
             - name: Prospect to cash
               href: ../supply-chain/sales-marketing/prospect-to-cash.md
             - name: Synchronize accounts directly from Sales to customers in Finance and Operations
