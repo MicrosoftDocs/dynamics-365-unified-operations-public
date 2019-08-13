@@ -82,4 +82,4 @@ If you set the **Reverse charge** option to **Yes**, the component supports reve
 
 If you set the **Non deductible** option to **Yes**, the component supports non-deductible behavior. The user can then specify the conditions where non-deductible behavior applies, and tax will be calculated and posted accordingly.
 
-After the tax component is created by using predefined rules, you should define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax applicability](tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
+After the tax component is created by using predefined rules, you should define the applicability rule for the tax component itself, the rate, reverse charge, and so on. For more information, see [Tax applicability](../general-ledger/tax-engine-applicability.md). You can always manually edit the tax measures, formulas, posting profiles, and so on.
