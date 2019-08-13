@@ -2,7 +2,7 @@
 # required metadata
 
 title: Container modules
-description: This topic provides information about container modules in Microsoft Dynamics 365 for Commerce. Container modules can help control the layout when complex modules or pages are built out of small component modules.
+description: Container modules can help you control the layout when you build complex modules or pages out of small component modules. For example, a container module might be a header, footer, or buy box module that has nested modules inside it.
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -42,7 +42,7 @@ Container modules are created just like regular modules. However, in the MODULE\
 "$type": "containerModule"
 ```
 
-There are two types of container modules: layout container modules and page container modules.
+There are two types of container modules: **layout container modules** and **page container modules**.
 
 ## Layout container modules
 
@@ -50,6 +50,6 @@ Layout container modules are useful when you must make a complex module out of m
 
 ## Page container modules
 
-Page container modules contain the core structure for page authoring. For example, you can create a page container where slots are defined for the header area, main content area, and footer area. A page container is just a module that controls the layout of a set of named slots. A page container can be embedded only at the root of a page. Each page must have only one page container. This page container is defined in the master template.
+Page container modules contain the core structure for page authoring. For example, you can create a page container where slots are defined for the header area, main content area, and footer area. A page container is just a module that controls the layout of a set of named slots and can be embedded only at the root of a page. Each page must have only one page container. This page container is added to a template in the authoring tools.
 
 Like layout container modules, page container modules can define named slots that are surfaced to template authors. Page authors can configure which modules go into each slot, and the rendering code for the container controls the layout of those slots. Configuration settings can also be exposed to page authors, so that they can do additional configuration of the layout.
