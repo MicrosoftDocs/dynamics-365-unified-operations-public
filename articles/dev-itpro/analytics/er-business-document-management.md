@@ -41,7 +41,7 @@ Business users use the [Electronic reporting (ER) framework](general-electronic-
 
 ## Supported deployments
 
-Business document management feature has been currently implemented for the only cloud deployments. If this feature is critical to your on-premises deployment, please let us know by providing feedback on the [Ideas](https://experience.dynamics.com/ideas/) site.
+Currently, the Business document management feature is implemented only for cloud deployments. If this feature is critical to your on-premises deployment, let us know by providing feedback on the [Ideas](https://experience.dynamics.com/ideas/) site.
 
 ## Supported Microsoft Office applications
 
