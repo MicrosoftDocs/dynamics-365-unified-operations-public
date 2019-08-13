@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cross module communication
+title: Sharing State Across Modules
 description: Data actions fill the important role of state management in situations where you need to share state across multiple modules on the same page.
 author: SamJarawan
 manager: JeffBl
