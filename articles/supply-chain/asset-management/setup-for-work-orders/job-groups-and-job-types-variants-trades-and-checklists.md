@@ -204,37 +204,38 @@ Maintenance checklist templates can be used as a common set of tasks that a work
     > [!NOTE]
     > To copy the maintenance checklist setup from another maintenance job type, select **Copy maintenance checklist**, and then select the maintenance job type to copy the setup from.
     >
-    > You can easily create a template from an existing maintenance checklist. You can then reuse the template across multiple maintenance checklists. The new template will be an exact copy of the active maintenance checklist. Select **Create template**, and then enter a name for the template. To replace the existing maintenance checklist with a single line that references the new template, set the **Replace** option to **Yes**. You can view the contents of the template in the **Maintenance checklist templates** detail view.
+    > You can easily create a template from an existing maintenance checklist. You can then reuse the template across multiple maintenance checklists. The new template will be an exact copy of the active maintenance checklist. Select **Create template**, and then enter a name for the template. To replace the existing maintenance checklist with a single line that references the new template, set the **Replace** option to **Yes**. You can view the contents of the template in the **Maintenance checklist templates** details page.
 
 16. Select **Save** to save your changes.
 17. Return to the **Maintenance job type defaults** page.
 18. Select **Tools**.
-19. You can add the tools (resources) that should be used for the maintenance job type. Select **New**, and then select the tool in the **Resource** field.
+19. On the **Maintenance job type default tools** page, you can add the tools (resources) that should be used for the maintenance job type. Select **New**, and then select the tool in the **Resource** field.
 
     > [!NOTE]
     > To copy the tool setup from another maintenance job type, select **Copy tools**, and then select the maintenance job type to copy the setup from.
 
 20. Select **Save** to save your changes.
 21. Return to the **Maintenance job type defaults** page.
-22. Select **Work description**, select **Edit**, and then add a description that is related to the selected maintenance job type default, as you require.
-23. Select **Save** to save the description.
+22. Select **Work description**.
+23. On the **Work description** page, select **Edit**, and then add a description that is related to the selected maintenance job type default, as you require.
+24. Select **Save** to save the description.
 
     If you add a work description here, it overrides any description that is set up for the maintenance job type on the **Maintenance job types** page. If you don't add a work description here, any description that is set up for the maintenance job type is used. Descriptions are automatically transferred to work orders that use the maintenance job type or maintenance job type default.
 
-24. Return to the **Maintenance job type defaults** page.
-25. To set up attachments on a selected maintenance job type default line, select **Attach documents**. Attachments that are set up on a maintenance job type default line are automatically included on work order lines that use that maintenance job type default line.
-26. Select **New**, and then select a document type.
-27. Upload the document or file.
-28. Set the fields in the **Attachments** form. The attachment setup uses standard document setup functionality in Microsoft Dynamics 365 for Finance and Operations.
-29. Select **Save** to save the attachment.
+25. Return to the **Maintenance job type defaults** page.
+26. To set up attachments on a selected maintenance job type default line, select **Attach documents**. Attachments that are set up on a maintenance job type default line are automatically included on work order lines that use that maintenance job type default line.
+27. Select **New**, and then select a document type.
+28. Upload the document or file.
+29. Set the fields in the **Attachments** form. The attachment setup uses standard document setup functionality in Microsoft Dynamics 365 for Finance and Operations.
+30. Select **Save** to save the attachment.
 
     > [!NOTE]
     > Attachments on a maintenance job type default line are printed together with a work order report only if the document types of the attachments are selected on the **Document types** tab of the **Asset management parameters** page (**Asset management** \> **Setup** \> **Asset management parameters**). Examples of attachments include guidelines that explain how to complete a specific job or a predefined maintenance checklist (if you don't use the maintenance checklist functionality for maintenance job type default lines).
 
     On the **Maintenance job type defaults** page, you can see the number of forecasted hours, and also the number of lines that have been created for items, expenses, maintenance checklists, and tools on each line. The **Assets** field shows the number of active assets that are related to the maintenance job type default line.
 
-30. To copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to copy another setup to, select **Copy setup**, and then select the maintenance job type default to copy.
-31. To view a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
+31. To copy a maintenance job type default to another maintenance job type default, select the maintenance job type default line to copy another setup to, select **Copy setup**, and then select the maintenance job type default to copy.
+32. To view a list of the assets, maintenance plans, or maintenance rounds that currently use a maintenance job type default line, select the line, and then select **Used by**.
 
 ![Figure 7](media/07-setup-for-work-orders.png)
 
