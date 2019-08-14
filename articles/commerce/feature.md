@@ -1,10 +1,13 @@
-# Feature
+# Create a page with a Feature module
 
-Feature is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
+## Overview of the Feature module
+
+The Feature module is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
 
 Feature module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other modules in the page. Technically this allows Feature to be placed on any page where a C1 wants to promote content.
 
-## Usage examples in ecommerce:
+## e-Commerce scenarios
+
 
 - Feature is used on the product details page to showcase the product features
 - Feature can be used on the home page to promote products
@@ -21,7 +24,7 @@ Feature module is driven by CMS data which can authored in the tooling. It’s a
 |  Image Placement  | Right<br />Left<br />Top<br />Bottom                         | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
 | Image Column size | Values from 1-12                                             | This defines the size of the image relative to the text. In the   default experience image and text will have equal size i.e value = 6  (i.e.12 columns total on the page). This can   be configured as needed. |
 
-##  
+
 
 ## Creating a page with a Feature module
 
@@ -29,7 +32,7 @@ This section explains how to add a Feature module to a new page and set the requ
 
 1. We need to first create a template. In tooling, create a new page template “Feature template”.
 
-2. In the Main slot the Default Page,, add a Feature module. A Feature can be placed directly on the page or within a container <link>. Multiple Feature modules can be placed within a Carousel<link>.
+2. In the **Main** slot the Default Page,, add a Feature module. A Feature can be placed directly on the page or within a container <link>. Multiple Feature modules can be placed within a Carousel<link>.
 
 3. Check-in and Publish. 
 
