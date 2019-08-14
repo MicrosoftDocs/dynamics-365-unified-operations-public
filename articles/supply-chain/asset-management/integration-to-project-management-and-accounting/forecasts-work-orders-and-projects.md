@@ -65,22 +65,11 @@ The purpose of the project ID on the work order job, and the related activity nu
 
 In the figure below, you see a graphic overview of work order projects and related project activities.
 
-![Figure 2](media/06-integration-to-pma.png)
+![Figure 2](media/02-integration-to-pma.png)
 
 - When a new work line is created on a work order, a work order project is automatically created for the line. The financial dimensions for the object related to the work order line are automatically transferred to the work order project. The project activity created for a work order line has related information attached to it regarding job type, variant, and trade. Those data are useful if, for example, you create a purchase order from a work order (see [Procurement](../work-orders/procurement.md)), or if you use the **Project management and accounting** module for time registration.  
 - If the object was installed on a functional location, and that object is later installed on another functional location, the financial dimensions related to the new functional location is automatically updated on the object. Subsequently, when you create a work order line for the object, the work order project for the work order line automatically gets the financial dimensions that are now related to the object. This means that when you use functional locations, costs can always be tracked on the functional locations on which an object was installed at any given time. The automatic update of financial dimensions ensures complete traceability of costs when carrying out project controlling and reporting.  
 
-**Object Projects:**
-
-It is optional if you want to make a project relation to an object when you create the object. Setup regarding object-project relations is done in **Enterprise asset management parameters** > **Objects** link > **Project** FastTab. It may be useful to use object projects for large construction projects for continuous project, cost, and lifecycle management.
-
-**Work Order Projects:**
-
-A work order must always have a project relation. If the object selected on the work order has a project relation, the object project is used. If the object does not have a project relation, a work order project is created based on the setup in **Work order project setup**. Work order projects with no related object projects may be useful for maintenance and repair jobs related to discrete or process production equipment.
-
-Whether your company chooses to use object project setup or work order project setup, or a combination, depends on the company's focus on construction or maintenance as well as the requirements for cost management and reporting. In the figure below, you will see an example of the different phases in a construction project, and how you can use both object projects and work order projects in the different phases.
-
-![Figure 3](media/07-integration-to-pma.png)
 
 ## Work order projects, work order stages, project stages, and project types
 
