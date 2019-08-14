@@ -3,7 +3,7 @@
 
 title: Integrated product masters
 description: This topic describes the integration of product data between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
-author: benebotg 
+author: t-benebo 
 manager: AnnBe
 ms.date: 08/6/2019
 ms.topic: article
@@ -40,7 +40,7 @@ Integration of products lets you synchronize product data from Microsoft Dynamic
 
 Because the concept of a product is richer in Finance and Operations than in Customer Engagement, Finance and Operations is considered the master of the integration. In Customer Engagement, the product data from Finance and Operations is read-only.
 
-The richness of the supply chain management related fields to product data is also available in Common Data Service, and all the existing concepts that are used to define the product are also defined.
+The richness of the supply chain management related fields that hold product data is also available in Common Data Service, and all the existing concepts that are used to define the product are also defined.
 
 ## Templates
 
@@ -72,7 +72,7 @@ In this model, the product is represented by the combination of two entities in 
 Because the product is represented as an SKU, the concepts of distinct products, product masters, and product variants from Finance and Operations can be captured in Common Data Service in the following way:
 
 - **Distinct products** (without variants) are products that are defined by themselves. No dimensions have to be defined for them. An example is a specific book. For these products, one record is created in the **Product** entity, and one record is created in the **msdyn\_sharedproductdetails** entity. No product family record is created.
-- **Product masters** in Finance and Operations are used as generic products that hold the definition and rules to behave in business processes. Based on these definitions, distinct products that are known as product variants can be generated. For example, T-shirt is the product master, and it can have Color and Size as dimensions. Variants can be released that have different combinations of these dimensions, such a small blue T-shirt or a medium green T-shirt. In the integration, one record per variant is created in the product table. This record contains the variant-specific information, such as the different dimensions. The generic information for the product is stored in the **msdyn\_sharedproductdetails** entity. (In Finance and Operations, this generic information is held in the product master.) Additionally, one product family record is created per product master. The product master information is synced to Common Data Service as soon as the released product master is created (but before variants are released).
+- **Product masters** in Finance and Operations are used as generic products that hold the definition and rules that determine the behavior in business processes. Based on these definitions, distinct products that are known as product variants can be generated. For example, T-shirt is the product master, and it can have Color and Size as dimensions. Variants can be released that have different combinations of these dimensions, such a small blue T-shirt or a medium green T-shirt. In the integration, one record per variant is created in the product table. This record contains the variant-specific information, such as the different dimensions. The generic information for the product is stored in the **msdyn\_sharedproductdetails** entity. (In Finance and Operations, this generic information is held in the product master.) Additionally, one product family record is created per product master. The product master information is synced to Common Data Service as soon as the released product master is created (but before variants are released).
 
 ![Data model for products](media/dual-write-product.png)
 
@@ -258,7 +258,7 @@ To keep track of the product dimensions that a product master can take, the foll
 
 ### Shared product color
 
-The **Shared product color** entity indicates the colors that a specific product master of Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
+The **Shared product color** entity indicates the colors that a specific product master in Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -271,7 +271,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
 
 ### Shared product size
 
-The **Shared product size** entity indicates the sizes that a specific product master of Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
+The **Shared product size** entity indicates the sizes that a specific product master in Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -284,7 +284,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 ### Shared product style
 
-The **Shared product style** entity indicates the styles that a specific product master of Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
+The **Shared product style** entity indicates the styles that a specific product master in Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -297,7 +297,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 ### Shared product configuration
 
-The **Shared product configuration** entity indicates the configurations that a specific product master of Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
+The **Shared product configuration** entity indicates the configurations that a specific product master in Finance and Operations can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
