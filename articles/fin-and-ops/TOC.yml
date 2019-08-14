@@ -466,6 +466,8 @@
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+          - name: Integrated sites and warehouses
+            href: ../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
             href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
           - name: Troubleshooting data integration
