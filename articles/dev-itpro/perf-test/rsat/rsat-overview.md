@@ -42,12 +42,12 @@ RSAT usage is described in these topics:
 
 + [Regression Suite Automation Tool (this topic)](rsat-overview.md)
 + [Regression Suite Automation Tool installation and configuration](rsat-install-configure.md)
-+ [Run Regression Suite Automation Tool test cases](rsat-run)
-+ [Validate expected values](rsat-validate-expected)
-+ [Chain test cases](rsat-chain-test-cases)
-+ [Derived test cases](rsat-derived-test-cases)
-+ [Regression Suite Automation Tool best practices](rsat-best-practices)
-+ [Troubleshoot the Regression Suite Atomation Tool](rsat-troubleshooting)
++ [Run Regression Suite Automation Tool test cases](rsat-run.md)
++ [Validate expected values](rsat-validate-expected.md)
++ [Chain test cases](rsat-chain-test-cases.md)
++ [Derived test cases](rsat-derived-test-cases.md)
++ [Regression Suite Automation Tool best practices](rsat-best-practices.md)
++ [Troubleshoot the Regression Suite Atomation Tool](rsat-troubleshooting.md)
 
 ## End-to-end flow
 This tool is part of the end to end flow described below. Finance and Operations, along with LCS and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
