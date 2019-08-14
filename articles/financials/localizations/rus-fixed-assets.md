@@ -81,7 +81,7 @@ Before you create transactions for any fixed or intangible asset, you must regis
 
     - **Policy number**, **Insurance amount**, **Replacement cost**, **Insurance date 1**, and **Insurance date 2** – Set the insurance-related fields as you require.
     - **Flag of ownership** – By default, this field is set to **Ownership**, but you can change the value.
-    - **Bar code** – You can manually enter the bar code, or it can be automatically generated. To automatically generate a bar code, set the **Bar code equals inventory number** option to **Yes** in the Fixed assets parameters (**Fixed assets \> Fixed assets \> Parameters**).
+    - **Bar code** – You can manually enter the bar code, or it can be automatically generated. To automatically generate a bar code, set the **Bar code equals inventory number** option to **Yes** in the Fixed assets parameters (**Fixed assets (Russia) \> Setup \> Parameters**).
 
         > [!NOTE]
         > The **Location** and **Worker ID** fields are automatically set when you create a record on the **Transfer FA** page list (go to **Fixed assets (Russia) \> Common \> Fixed assets**, and then, on the **Fixed asset** tab, in the **History** group, select **Transfer**).
@@ -92,7 +92,7 @@ Before you create transactions for any fixed or intangible asset, you must regis
 
 4. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
 
-    In the **FA structure** field, all fixed asset accounts that have a reference to the asset are displayed in the main fixed asset.
+    In the **FA structure** field shows all the fixed asset accounts that have a reference to the fixed asset (if the fixed asset is the main fixed asset).
 
 5. Select the **Purchase/Sale** FastTab to view information about the purchase and sale of the fixed asset.
 
@@ -105,17 +105,17 @@ Follow these steps to update or create value models for the fixed asset.
     > [!NOTE]
     > If value models are set up for the fixed asset group that the fixed asset is assigned to on the **FA groups** page (**Fixed assets (Russia) \> Setup \> FA groups**), the system automatically creates the value models. However, you can update the field values.
 
-    You must create a value model for every asset. The settings are used to register a transaction.
+    You must create a value model for every asset. The settings are used to register transactions.
 
 2. On the Action Pane, select **New** to create a line.
 3. On the **General** FastTab, set the following fields:
 
     - **Value model** – Select the model code for the asset.
     - **Depreciation group** – Select a depreciation group in the value model that the fixed asset is related to.
-    - **Depreciation methods** – Select the depreciation profile. By default, this field is set to the value that is specified for the depreciation group.
+    - **Depreciation method in FA group** – Select the depreciation profile. By default, this field is set to the value that is specified for the depreciation group.
     - **Posting profile** – Select the posting profile that is used in the value model. By default, this field is set according to the value model settings.
-    - **Acquisition cost** – Enter the acquisition amount of the fixed asset. If an asset purchase transaction has been created, the transaction amount without taxes is shown. If the fixed asset acquisition currency differs from the currency that is set up for the value model, the currencies are converted on the acquisition date.
-    - **Date of depreciation beginning** – Select the date to start accruing depreciation. By default, this field is set according to the setting that is selected for the depreciation group. If the **Depreciation start date** field is set to **Next month start**, this field is set to the period after the period of acquisition.
+    - **Putting into operation amount** – Enter the acquisition amount of the fixed asset. If an asset purchase transaction has been created, the transaction amount without taxes is shown. If the fixed asset acquisition currency differs from the currency that is set up for the value model, the currencies are converted on the acquisition date.
+    - **Depreciation start date** – Select the date to start accruing depreciation. By default, this field is set according to the setting that is selected for the depreciation group. If the **Depreciation start date** field in the depreciation group is set to **Next month start**, this field is set to the period after the period of acquisition.
     - **Currency** – Select a currency for the value model for the asset. By default, this field is set to the currency from the value model settings.
     - **Remains cost after writing-off** – Enter the remaining amount of the fixed asset after writing off. If you enter a value, the book value that is used in the depreciation calculation is less than the value of this field. After a writing-off transaction is created, an amount that is equal to the cost of remainders after writing off can be posted to the inventory or the general ledger account.
     - **Don't lock** – Set this option to **Yes** to create depreciation transactions for the asset. By default, this option is set to **Yes**.
@@ -124,8 +124,8 @@ Follow these steps to update or create value models for the fixed asset.
     ![FA value model](media/RUS_FA_3%20value%20models.JPG)
 
 4. On the **Financial dimensions** FastTab, select the default finance dimension codes that register transactions for the asset.
-5. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset letting. If a letting transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
-6. On the **Dimension of rented FA** FastTab, select the dimension codes that should be used when accounting for transactions of this fixed asset is let out.
+5. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset leasing. If a leasing transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
+6. On the **Dimension of rented FA** FastTab, select the dimension used when posting transactions of the fixed asset.
 7. On the Action Pane, select **Depreciation accounts**. On the **Depreciation accounts** page, you can configure the fixed asset depreciation posting amount for the general ledger accounts in the required proportions. You might have to complete this step if, for example, you must calculate the depreciation on a building that is used for various purposes.
 
 ## Inquiries on the Fixed assets page
@@ -157,6 +157,6 @@ The value of an asset on a specific date reflects the results of all transaction
 3. Select **Balance**.
 4. In the **Transaction date** field, enter the date for the balance sheet. By default, this field is set to the current date.
 
-The amounts on the **Balance by FA** page for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
+The amounts on the **Balance by FA** dialog box for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
 
 ![FA value model balance](media/RUS_FA_4%20model%20balance.JPG)
