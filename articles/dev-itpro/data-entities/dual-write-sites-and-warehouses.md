@@ -36,17 +36,22 @@ ms.search.validFrom: 2019-08-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-As Dynamics 365 for Finance and Operations is a Supply Chain Management application, it holds the concepts of operational sites and warehouses. These are used to model the supply chain of your company.
-With the integration with CDS, these concepts and all its related information will be available in CDS using the sites and warehouses data entities:
+As Dynamics 365 for Finance and Operations is a supply chain management application, it includes the concepts of operational sites and warehouses. These are used to model the supply chain of your company. \
+
+## Templates
+
+With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table:
 
 Finance and Operations  | Customer Engagement application
 --------------------------|---------------------------------
 Sites                     | msdyn_operationalsites
 Warehouses                | msdyn_inventwarehouses
 
+[!include [banner](../includes/dual-write-symbols.md)]
+
 ## Operational sites
 
-The operational sites are available in CDS using the following mappings:
+The operational sites are available in Common Data Service using the following mappings:
 
 Source field | Map type | Destination field
 ---|---|---
