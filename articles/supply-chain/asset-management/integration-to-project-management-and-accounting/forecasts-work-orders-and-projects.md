@@ -98,4 +98,3 @@ The figure below shows a graphic overview of the various projects that are creat
 
 ![Figure 6](media/06-integration-to-pma.png)
 
-
