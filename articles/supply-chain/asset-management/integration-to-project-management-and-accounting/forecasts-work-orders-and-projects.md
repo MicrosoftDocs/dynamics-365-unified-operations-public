@@ -36,13 +36,13 @@ In Asset Management, integration to the **Project management and accounting** mo
 
 To track maintenance job type forecasts, two settings must be made:
 
-1. In **Enterprise asset management parameters**, select a project in the **Forecast project** field (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Objects** link > **Project** FastTab > **Forecast project** field).
+1. Select a project in **Asset management** > **Setup** > **Asset management parameters** > **Assets** link > **Project** FastTab > **Maintenance forecast project** field.
 
-2. In **Job type setup**, when you create a job type setup line, an activity number is automatically created for the line (**Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job type setup**).
+2. In **Maintenance job type defaults**, when you create a mainteance job type default line, an activity number is automatically created for the line (**Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**).
 
 Job type forecasts serve two purposes: You are able to track costs on job type forecasts in the **Project management and accounting** module. Furthermore, forecasts are automatically transferred to a work order line project when you select a job type on a work order line.
 
-To track costs on work order lines, you must first set up work order projects. Refer to the [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) section for a description of the procedure.
+To track costs on work order jobs, you must first set up work order projects. Refer to the [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) section for a description of the procedure.
 
 ## Work order line projects
 
