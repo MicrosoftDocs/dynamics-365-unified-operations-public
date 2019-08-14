@@ -2,7 +2,7 @@
 # required metadata
 
 title: Forecasts, work orders, and projects
-description: This topic explains forecasts, work orders, and projects in Enterprise Asset Management.
+description: This topic explains forecasts and work order integration with the Project management and accounting module in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Forecasts, work orders, and projects
 
-This topic explains forecasts, work orders, and projects in Enterprise Asset Management. In Enterprise Asset Management, integration to the **Project management and accounting** module is done to optimize cost control, allowing users to track costs on job type forecasts and work order lines.
+In Asset Management, integration to the **Project management and accounting** module is done to optimize cost control, allowing users to track costs on maintenance job type forecasts and work order jobs.
 
-To track job type forecasts, two settings must be made:
+To track maintenance job type forecasts, two settings must be made:
 
 1. In **Enterprise asset management parameters**, select a project in the **Forecast project** field (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Objects** link > **Project** FastTab > **Forecast project** field).
 
