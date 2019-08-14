@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Asset Management, you can calculate capacity load on
 
-- asset calendar lines  
+- maintenance schedule lines  
 - work orders that have not yet been scheduled  
 - scheduled work orders
 
@@ -52,7 +52,7 @@ This is useful if you want to get an overview of expected capacity load for a sp
 
 6. Click **OK** to start the calculation.
 
-7. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. In the figure below, you will see a calculation example in which three worker order lines and 15 object calendar lines are shown. The selected action pane group buttons are highlighted in orange color. Click on a button to activate or deactivate it.
+7. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted in blue color. Click on a button to activate or deactivate it.
 
 The figure below shows an example of the interface.
 
@@ -60,3 +60,6 @@ The figure below shows an example of the interface.
 
 >[!NOTE]
 >If you want to focus only on capacity planning regarding scheduled work orders, refer to [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
+
+
+
