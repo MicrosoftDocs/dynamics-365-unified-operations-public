@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Fixed asset disposal scrap scenario
+title: Fixed asset disposal as scrap scenario
 description: The topic describesthe process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down.
 
 author: moaamer
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Fixed asset disposal scrap scenario
+# Fixed asset disposal as scrap scenario
 
 The topic describesthe process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
 
