@@ -412,19 +412,18 @@ A copied line of the string that is specified by the *string* parameter.
 
 ### Remarks
 
-The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *n* or *rn* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
+The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *\n* or *\r\n* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
 
 ### Example
 
     static void strLineExample(Args _arg)
     {
-            str mytxt = "first-linensecond-linenlast-line";
+            str mytxt = "first-line\nsecond-line\nlast-line";
             ;
             // Prints "second-line".
             print strLine(mytxt,1);
             // Prints "last-line".
-            print strLine(mytxt,2);
-            pause;
+            print strLine(mytxt,2);            
     }
 
 ## strLTrim
