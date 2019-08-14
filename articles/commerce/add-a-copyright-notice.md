@@ -1,5 +1,42 @@
+---
+# required metadata
+
+title: Add a copyright notice
+description:  This article explains the steps required in order to add a copyright notice to your e-Commerce website.
+author: josaw1
+manager: AnnBe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope:  Operations, Retail
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: josaw
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+
 # Add a copyright notice
+
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+
 This article explains the steps required in order to add a copyright notice to your e-Commerce website
+
 ## Prerequisites
 Before you can add a copyright notice on your site, you must
 
