@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Objects and projects
-description: This topic explains object projects in Enterprise Asset Management.
+title: Assets and projects
+description: This topic explains asset projects in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,17 +30,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Objects and projects
+# Assets and projects
 
-This topic explains object projects in Enterprise Asset Management. Objects in the **Enterprise asset management** module can be related to a project. A project related to an object is called an object project. Using an object project means that all work order projects, which are related to the object, will be created as sub projects to the object project. Sub projects may have different project types compared to the parent project, meaning that it is possible to have projects of type "Internal", "Time and Material", or "Investment" related to the same object project.
+In the **Asset management** module, assets can be related to a project. A project related to an asset is called an asset project. Using an asset project means that all work order projects, which are related to the asset, will be created as sub projects to the asset project. Sub projects may have different project types compared to the parent project, meaning that it is possible to have projects of type "Internal", "Time and Material", or "Investment" related to the same asset project.
 
-Object projects can be set up on the objects manually in **Enterprise asset management** > **Common** > **Objects** > **All Objects** > select object > **Edit** button > **Project** FastTab > **Project ID** field. An object project can also be created automatically, either when the object is created, or manually by using the "Create project integration" function (**Enterprise asset management** > **Common** > **Objects** > **All Objects** > select object > **Edit** button > **Project** FastTab > **Create project integration** button). If you want object projects to be created automatically when creating objects, select "Yes" on the **Auto create projects** toggle button in the **Enterprise asset management parameters** form (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Objects** link > **Auto create projects** toggle button).
+Asset projects can be set up on the assets manually in **Asset management** > **Common** > **Assets** > **All assets** > select asset > **Edit** button > **Project** FastTab > **Project ID** field. An asset project can also be created automatically, either when the asset is created, or manually by using the "Create project integration" function (**Asset management** > **Common** > **Assets** > **All Assets** > select asset > **Edit** button > **Project** FastTab > **Create project integration** button). If you want asset projects to be created automatically when creating objects, select "Yes" on the **Auto create projects** toggle button in **Asset management parameters** > **Setup** > **Asset management parameters** > **Assets** link > **Auto create projects** toggle button.
 
-## Top level objects
+## Top level assets
 
 You can create object projects for objects without a parent project, also called top level objects. This means that for the top level object, the project created will be a sub-project to the main object project set up in **Enterprise asset management parameters** (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Objects** link > **Main project** field). Project type and other related settings will be inherited from the parent project.
 
-## Sub-projects
+## Sub projects
 
 In **Enterprise asset management parameters** \> **Objects** link \> **Project hierarchy** field, the parent project when creating object projects for sub objects is determined. If "No hierarchy" is selected, the parent project will be the main project setup in parameters, same as top-level objects. If "Hierarchy" is selected, the parent project will be the object project set up on the parent object. With the "Hierarchy" option, the project structure will be identical to the object structure. If using "Hierarchy", it is recommended that you expand length of the project ID data type, as you can easily exceed the 20 characters allocated.
 
