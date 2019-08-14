@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
+Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
 > [!NOTE]
 > Dynamics 365 for Retail is closely related to Dynamics 365 for Finance and Operations, and Dynamics 365 for Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail; in topics that are primarily related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations; in topics that are primarily related to human resources, the product name will be Dynamics 365 for Talent.
@@ -43,7 +43,7 @@ In the left pane, select a feature area to learn more about it.
 
 ## Channel management
 
-As you set up your Retail experience, you will decide how to define and configure your stores. They can be brick-and-mortar stores, online stores, or call centers.
+As you set up your Retail experience, you will decide how to define and configure your stores, which can be brick-and-mortar stores, online stores, or call centers.
 
 Each retail store can have its own payment methods, delivery methods, price groups, income and expense accounts, registers, and staff. After you create your retail store, you create an assortment of products that you want the store to carry. You can also define store-specific prices and discounts that apply to products that are available in the store.
 
