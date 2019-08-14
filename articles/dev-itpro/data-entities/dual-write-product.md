@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integrated product masters
+title: Unified product experience
 description: This topic describes the integration of product data between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
 author: t-benebo 
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-# Integrated product masters
+# Unified product experience
 
 [!include [banner](../includes/banner.md)]
 
