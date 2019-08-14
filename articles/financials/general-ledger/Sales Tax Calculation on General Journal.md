@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Sales tax calculation on general journal
+description: This article explains the sales tax calculation logic of different account types (vendor, customer, ledger, project) on general journal lines.
+author: EricWang
+manager: RichardLuan
+ms.date: 08/14/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: TaxTable
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations, Retail
+
+# ms.tgt_pltfrm: 
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: vstehman
+ms.search.validFrom: 2019-08-14
+ms.dyn365.ops.version: 10.0.6
+
+---
 
 # Sales Tax Calculation on General Journal
 
