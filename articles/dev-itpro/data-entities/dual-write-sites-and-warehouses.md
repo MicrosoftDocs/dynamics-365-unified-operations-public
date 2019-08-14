@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated sites and warehouses
-description: This topic describes the integration of sites and warehouses data between Finance and Operations and Common Data Service.
+description: This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service.
 author: benebotg 
 manager: AnnBe
 ms.date: 15/8/2019
@@ -30,17 +30,17 @@ ms.search.validFrom: 2019-08-15
 
 ---
 
-# Integrated Sites and Warehouses
+# Integrated sites and warehouses
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview](../includes/preview-banner.md)]
 
-As Dynamics 365 for Finance and Operations is a supply chain management application, it includes the concepts of operational sites and warehouses. These are used to model the supply chain of your company. \
+This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. As Dynamics 365 for Finance and Operations is a supply chain management application, it includes the concepts of operational sites and warehouses.  These are used to model the supply chain of your company.
 
 ## Templates
 
-With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table:
+With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table.
 
 Finance and Operations  | Customer Engagement application
 --------------------------|---------------------------------
@@ -51,7 +51,7 @@ Warehouses                | msdyn_inventwarehouses
 
 ## Operational sites
 
-The operational sites are available in Common Data Service using the following mappings:
+The operational sites are available in Common Data Service using the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -87,7 +87,7 @@ PRIMARYADDRESSSTREETNUMBER | >< | msdyn_primaryaddressstreetnumber
 
 ## Warehouses
 
-The warehouses are available using the following mappings:
+The warehouses are available using the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
