@@ -461,7 +461,7 @@
             href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
-          - name: Integrated Product Master
+          - name: Unified product experience
             href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Configure a prospect to cash scenario
             items:
