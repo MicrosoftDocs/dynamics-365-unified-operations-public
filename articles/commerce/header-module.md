@@ -5,16 +5,16 @@ title: Author a header module
 description: This topic describes what a header module is and how to author a header module in Dynamics 365 for Commerce.
 author: AnupamaR
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Retail, Core, Operations
@@ -24,9 +24,12 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
+
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 # Author a header module
 
