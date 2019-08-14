@@ -74,10 +74,10 @@ If the asset was installed on a functional location, and that asset is later ins
 
 ## Work order projects, work order lifecycle states, project stages, and project types
 
-To ensure correct use of work order lifecycle states, and related project stages, on work orders, consider the dependencies in relation to the **Project management and accounting** module:
+To ensure correct use of work order lifecycle states and related project stages on work orders, consider the dependencies in relation to the **Project management and accounting** module:
 
-- In the **Project management and accounting** module, project stages are set up on project types in the **Project management and accounting parameters** form.  
-- In the **Project management and accounting parameters** form, remember to select relevant project stage check boxes for all the project types you are going to use. In the figure below, five stages **Created** - **Estimated** - **Scheduled** - **In process** - **Finished** have been selected for the project types "Time and material" and "Internal". Those five stages are relevant for both internal maintenance and service maintenance jobs.  
+- In the **Project management and accounting** module, project stages are set up on project types in **Project management and accounting parameters**.  
+- In **Project management and accounting parameters**, remember to select relevant project stage check boxes for all the project types you are going to use. In the figure below, five stages **Created** - **Estimated** - **Scheduled** - **In process** - **Finished** have been selected for the project types "Time and material" and "Internal". Those five stages are relevant for both internal maintenance and service maintenance jobs.  
 - In **Enterprise Asset Management**, project types are defined by the project groups you set up in the **Work order project setup** form > **Project group** link.  
 - The project groups setup in the **Work order project setup** form is used when you create work orders.
 - When a work order is created, a work order project is automatically created for the work order, according to the setup in the **Work order project setup** form.  
@@ -87,14 +87,14 @@ To ensure correct use of work order lifecycle states, and related project stages
 
 Associations between work order project groups, related project types, project stages, and work order stages are shown in the figure below.  
 
-![Figure 4](media/08-integration-to-pma.png)
+![Figure 3](media/03-integration-to-pma.png)
 
-![Figure 5](media/09-integration-to-pma.png)
+![Figure 4](media/04-integration-to-pma.png)
 
-![Figure 6](media/10-integration-to-pma.png)
+![Figure 5](media/05-integration-to-pma.png)
 
 Refer to [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) regarding how to set up work order projects, and to [Work order stages](../setup-for-work-orders/work-order-stages.md) regarding how to create work order stages.
 
 The figure below shows a graphic overview of the various projects that are created in the **Enterprise asset management** module to allow integration with the **Project management and accounting** module, and the work processes to which the projects are related.
 
-![Figure 7](media/11-integration-to-pma.png)
+![Figure 6](media/06-integration-to-pma.png)
