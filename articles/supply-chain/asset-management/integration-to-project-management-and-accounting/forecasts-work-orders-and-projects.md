@@ -40,35 +40,30 @@ To track maintenance job type forecasts, two settings must be made:
 
 2. In **Maintenance job type defaults**, when you create a mainteance job type default line, an activity number is automatically created for the line (**Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**).
 
-Job type forecasts serve two purposes: You are able to track costs on job type forecasts in the **Project management and accounting** module. Furthermore, forecasts are automatically transferred to a work order line project when you select a job type on a work order line.
+Maintenance job type forecasts serve two purposes: You are able to track costs on maintenance job type forecasts in the **Project management and accounting** module. Furthermore, forecasts are automatically transferred to a work order job project when you select a maintenance job type on a work order job.
 
 To track costs on work order jobs, you must first set up work order projects. Refer to the [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) section for a description of the procedure.
 
-## Work order line projects
+## Work order job projects
 
-When you create a work order line on a work order, and the object selected on the work order line is not related to an object project, the work order project is determined by the setup of the parent project for work orders in **Work order project setup** (**Enterprise asset management** > **Setup** > **Work order** > **Project setup**).
+When you create a work order job on a work order, the work order project is determined by the setup of the parent project for work orders in **Asset management** > **Setup** > **Work orders** > **Project setup**.
 
-Work order line projects are created by using a combination of the following work order information:
+Work order job projects are created by using a combination of the following work order information:
 
-- The Work order type selected on the work order  
-- The Object type related to the object on the work order line  
+- The Work order type selected on the work order 
+- The functional location related to the asset on the work order job
+- The Asset type related to the asset on the work order job  
 - The Expected start and end time set on the work order  
 
-It is possible that not all of the information types mentioned above are found on a work order. Therefore, the search for a work order parent project is done by using a combination of the information types and selecting the project ID for the combination that corresponds with work order data:
+It is possible that not all of the information mentioned above is found on a work order. Therefore, the search for a work order parent project is done by using the available combination of data and selecting the project ID that corresponds with work order data.
 
-1. Work order type, Object type, and Expected start and end time
+Example: In the figure below, the setup of asset type "Truck Engine" means that every work order job created with that asset type will be a sub project of Project ID "000186".
 
-2. Object type, and Expected start and end time
+![Figure 1](media/01-integration-to-pma.png)
 
-3. Expected start and end time
+The purpose of the project ID on the work order job, and the related activity number (**Asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order job, and the asset selected on the work order job, in the **Project management and accounting** module. Read more about cost control in Asset Management in [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
-Example: In the figure below, the setup of object type "Truck Engine" means that every work order line created with that object type will be a sub project of Project ID "000007", found by using the combination shown in step 2. above.
-
-![Figure 1](media/05-integration-to-pma.png)
-
-The purpose of the project ID on the work order line, and the related activity number (**Enterprise asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Edit** button > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order line (and the object selected on the work order line) in the **Project management and accounting** module. Read more about cost control in Enterprise Asset Management in [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
-
-In the figure below, you will see a graphic overview of work order projects and related project activities.
+In the figure below, you see a graphic overview of work order projects and related project activities.
 
 ![Figure 2](media/06-integration-to-pma.png)
 
