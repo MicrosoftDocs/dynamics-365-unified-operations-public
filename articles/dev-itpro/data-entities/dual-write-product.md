@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integrated product master
+title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations and Common Data Service.
 author: benebotg 
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-# Integrated product master
+# Unified product experience
 
 [!include [banner](../includes/banner.md)]
 
