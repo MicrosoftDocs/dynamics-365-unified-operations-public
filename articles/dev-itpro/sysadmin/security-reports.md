@@ -5,7 +5,7 @@ title: Out-of-box security reports
 description: Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
 author:  maertenm
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. In addition to the reports below, developers can generate a workbook containing all user security privileges for all roles via **Visual Studio > Dynamics 365 > Addins > View related objects and licenses for all roles**.
+Dynamics 365 for Finance and Operations provides a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. In addition to the reports noted in this topic, developers can generate a workbook containing all user security privileges for all roles using **Visual Studio > Dynamics 365 > Addins > View related objects and licenses for all roles**.
 
 Each of the security reports can be found under **System administration \> Inquiries \> Security.** A description of each report is provided below.
 
