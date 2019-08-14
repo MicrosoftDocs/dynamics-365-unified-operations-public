@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ERWorkspace, ERSolutionTable
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
