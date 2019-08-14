@@ -1,1 +1,115 @@
+---
+# required metadata
 
+title: Forecasts, work orders, and projects
+description: This topic explains forecasts, work orders, and projects in Enterprise Asset Management.
+author: josaw1
+manager: AnnBe
+ms.date: 06/28/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 2214
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mkirknel
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Forecasts, work orders, and projects
+
+This topic explains forecasts, work orders, and projects in Enterprise Asset Management. In Enterprise Asset Management, integration to the **Project management and accounting** module is done to optimize cost control, allowing users to track costs on job type forecasts and work order lines.
+
+To track job type forecasts, two settings must be made:
+
+1. In **Enterprise asset management parameters**, select a project in the **Forecast project** field (**Enterprise asset management** > **Setup** > **Enterprise asset management parameters** > **Objects** link > **Project** FastTab > **Forecast project** field).
+
+2. In **Job type setup**, when you create a job type setup line, an activity number is automatically created for the line (**Enterprise asset management** > **Setup** > **Work orders** > **Jobs** > **Job type setup**).
+
+Job type forecasts serve two purposes: You are able to track costs on job type forecasts in the **Project management and accounting** module. Furthermore, forecasts are automatically transferred to a work order line project when you select a job type on a work order line.
+
+To track costs on work order lines, you must first set up work order projects. Refer to the [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) section for a description of the procedure.
+
+## Work order line projects
+
+When you create a work order line on a work order, and the object selected on the work order line is not related to an object project, the work order project is determined by the setup of the parent project for work orders in **Work order project setup** (**Enterprise asset management** > **Setup** > **Work order** > **Project setup**).
+
+Work order line projects are created by using a combination of the following work order information:
+
+- The Work order type selected on the work order  
+- The Object type related to the object on the work order line  
+- The Expected start and end time set on the work order  
+
+It is possible that not all of the information types mentioned above are found on a work order. Therefore, the search for a work order parent project is done by using a combination of the information types and selecting the project ID for the combination that corresponds with work order data:
+
+1. Work order type, Object type, and Expected start and end time
+
+2. Object type, and Expected start and end time
+
+3. Expected start and end time
+
+Example: In the figure below, the setup of object type "Truck Engine" means that every work order line created with that object type will be a sub project of Project ID "000007", found by using the combination shown in step 2. above.
+
+![Figure 1](media/05-integration-to-pma.png)
+
+The purpose of the project ID on the work order line, and the related activity number (**Enterprise asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Edit** button > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order line (and the object selected on the work order line) in the **Project management and accounting** module. Read more about cost control in Enterprise Asset Management in [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+
+In the figure below, you will see a graphic overview of work order projects and related project activities.
+
+![Figure 2](media/06-integration-to-pma.png)
+
+- When a new work line is created on a work order, a work order project is automatically created for the line. The financial dimensions for the object related to the work order line are automatically transferred to the work order project. The project activity created for a work order line has related information attached to it regarding job type, variant, and trade. Those data are useful if, for example, you create a purchase order from a work order (see [Procurement](../work-orders/procurement.md)), or if you use the **Project management and accounting** module for time registration.  
+- If the object was installed on a functional location, and that object is later installed on another functional location, the financial dimensions related to the new functional location is automatically updated on the object. Subsequently, when you create a work order line for the object, the work order project for the work order line automatically gets the financial dimensions that are now related to the object. This means that when you use functional locations, costs can always be tracked on the functional locations on which an object was installed at any given time. The automatic update of financial dimensions ensures complete traceability of costs when carrying out project controlling and reporting.  
+
+**Object Projects:**
+
+It is optional if you want to make a project relation to an object when you create the object. Setup regarding object-project relations is done in **Enterprise asset management parameters** > **Objects** link > **Project** FastTab. It may be useful to use object projects for large construction projects for continuous project, cost, and lifecycle management.
+
+**Work Order Projects:**
+
+A work order must always have a project relation. If the object selected on the work order has a project relation, the object project is used. If the object does not have a project relation, a work order project is created based on the setup in **Work order project setup**. Work order projects with no related object projects may be useful for maintenance and repair jobs related to discrete or process production equipment.
+
+Whether your company chooses to use object project setup or work order project setup, or a combination, depends on the company's focus on construction or maintenance as well as the requirements for cost management and reporting. In the figure below, you will see an example of the different phases in a construction project, and how you can use both object projects and work order projects in the different phases.
+
+![Figure 3](media/07-integration-to-pma.png)
+
+## Work order projects, work order stages, project stages, and project types
+
+To ensure correct use of work order stages, and related project stages, on work orders, consider the dependencies in relation to the **Project management and accounting** module:
+
+- In the **Project management and accounting** module, project stages are set up on project types in the **Project management and accounting parameters** form.  
+- In the **Project management and accounting parameters** form, remember to select relevant project stage check boxes for all the project types you are going to use. In the figure below, five stages **Created** - **Estimated** - **Scheduled** - **In process** - **Finished** have been selected for the project types "Time and material" and "Internal". Those five stages are relevant for both internal maintenance and service maintenance jobs.  
+- In **Enterprise Asset Management**, project types are defined by the project groups you set up in the **Work order project setup** form > **Project group** link.  
+- The project groups setup in the **Work order project setup** form is used when you create work orders.
+- When a work order is created, a work order project is automatically created for the work order, according to the setup in the **Work order project setup** form.  
+- Work order stages must each have a related project stage.  
+- The project stage related to a work order stage must be defined as an active stage for the project group defined in the work order project, which is automatically created on a work order.  
+- The automatic allocation of a work order project, when you create a new work order, is based on the setup in the **Work order project setup** form.  
+
+Associations between work order project groups, related project types, project stages, and work order stages are shown in the figure below.  
+
+![Figure 4](media/08-integration-to-pma.png)
+
+![Figure 5](media/09-integration-to-pma.png)
+
+![Figure 6](media/10-integration-to-pma.png)
+
+Refer to [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) regarding how to set up work order projects, and to [Work order stages](../setup-for-work-orders/work-order-stages.md) regarding how to create work order stages.
+
+The figure below shows a graphic overview of the various projects that are created in the **Enterprise asset management** module to allow integration with the **Project management and accounting** module, and the work processes to which the projects are related.
+
+![Figure 7](media/11-integration-to-pma.png)
