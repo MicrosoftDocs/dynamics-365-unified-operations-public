@@ -38,6 +38,17 @@ The Regression suite automation tool (RSAT) significantly reduces the time and c
 
 This tool enables functional power users to record business tasks using the Finance and Operations Task recorder and convert these recordings into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services (LCS) using the Business Process Modeler (BPM) libraries. These libraries are also fully integrated with Azure DevOps Services (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
+RSAT usage is described in these topics:
+
++ [Regression Suite Automation Tool (this topic)](rsat-overview.md)
++ [Regression Suite Automation Tool installation and configuration](rsat-install-configure.md)
++ [Run Regression Suite Automation Tool test cases](rsat-run)
++ [Validate expected values](rsat-validate-expected)
++ [Chain test cases](rsat-chain-test-cases)
++ [Derived test cases](rsat-derived-test-cases)
++ [Regression Suite Automation Tool best practices](rsat-best-practices)
++ [Troubleshoot the Regression Suite Atomation Tool](rsat-troubleshooting)
+
 ## End-to-end flow
 This tool is part of the end to end flow described below. Finance and Operations, along with LCS and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
 
