@@ -110,5 +110,8 @@ Dynamics 365 Commerce - Ratings and Reviews allows C1's to import bulk data of r
 7.It will take 1-2 minutes to apply the data source, then click on Trends sheet to view ratings and reviews trends.
 
 
+Refer to the following screenshots for more details:
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-reports.png) 
+![Ratings and Reviews Moderation home page](media/rnr-powerbi-datasource-settings.png) 
+![Ratings and Reviews Moderation home page](media/rnr-powerbi-dashboard-template.png) 
