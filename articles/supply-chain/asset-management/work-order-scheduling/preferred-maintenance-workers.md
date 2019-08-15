@@ -40,12 +40,12 @@ Before you can set up preferred maintenance workers, you must first set up the m
 
 A preferred maintenance worker or worker group can be related to a specific
 
-- Trade  
-- Maintenance job type variant  
-- Maintenance job type  
-- Maintenance job type category  
-- Asset  
-- Asset type  
+- trade  
+- maintenance job type variant  
+- maintenance job type  
+- maintenance job type category  
+- asset  
+- asset type  
 
 or a combination of those selections. The more selections you make for the same record, the more specific your setup will be.
 
