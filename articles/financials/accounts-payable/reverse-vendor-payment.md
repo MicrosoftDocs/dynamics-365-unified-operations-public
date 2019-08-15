@@ -53,7 +53,7 @@ To learn which method your organization uses, view the **Cash and bank managemen
 If your organization wants to post check reversals immediately when you click **Payment reversal** on the **Checks** page. On the **Cash and bank management parameters** page, set the **Use review process for payment reversals** option to **No**. On the **Checks** page, you can select the check to reverse and select **Payment reversal**. You can then enter the date, and select a reason for the reversal.
 
 ## Reverse posted checks after they are reviewed in the check reversal journal
-If your organization wants to review check reversals before they are posted, create a check reversal journal for review and on the **Cash and bank management parameters** page, set the **Use review process for payment reversals** option to **Yes**. On the **Checks** page, you can select check to reverse, select **Payment reversal**. You can then enter the date, and select a reason for the reversal. You must also select a journal name to create a journal in the check reversal journal.
+If your organization wants to review check reversals before they are posted, create a check reversal journal for review and on the **Cash and bank management parameters** page, set the **Use review process for payment reversals** option to **Yes**. On the **Checks** page, you can select check to reverse, select **Payment reversal**. You can then enter the date, and select a reason for the reversal. The financial reason must be set up for both Bank and Vendor types. You must also select a journal name to create a journal in the check reversal journal.
 
 ### Review a reversal
 

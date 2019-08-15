@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Maintain financial dimension default templates
-description: This procedure shows how to set up financial dimension default templates. 
+description: This topic shows how to set up financial dimension default templates. 
 author: aprilolson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/30/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,19 +30,18 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows how to set up financial dimension default templates. The templates can be used to quickly distribute amounts on source documents.
+This topic shows how to set up financial dimension default templates. The templates can be used to quickly distribute amounts on source documents.
 
-1. Go to General ledger > Chart of accounts > Dimensions > Financial dimension default templates.
-2. Click New.
-3. In the Template ID field, enter a Template ID..
+1. In the navigation pane, go to **Modules > General ledger > Chart of accounts > Dimensions > Financial dimension default templates**.
+2. Select **New**.
+3. In the **Template ID** field, enter a Template ID.
 4. Enter the percentage for the first dimension values.
 5. Enter the financial dimension values that correspond to the percent entered.
-6. Click Add.
-7. Enter another percent for the next dimension values.
-    * For this example, enter a percentage so you still have less than 100% allocated.  
+6. Select **Add**.
+7. Enter another percent for the next dimension values. For this example, enter a percentage so you still have less than 100% allocated. 
 8. Enter the financial dimension values that correspond to the percent entered.
-9. Click Add.
+9. Select **Add**.
 10. Enter another percent, which will make the total percent equal to 100%.
 11. Enter the financial dimension values that correspond to the percent entered.
-12. Click Save.
+12. Select **Save**.
 

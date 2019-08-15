@@ -5,7 +5,7 @@ title: Retail discounts
 description: This topic provides an overview of the discount functionality in Dynamics 365 for Retail. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
 manager: AnnBe
-ms.date: 10/23/2018
+ms.date: 07/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -163,6 +163,9 @@ When you select a variant on a discount line, the discount will be applied to ju
 #### Dimensions
 
 Starting with the Dynamics 365 for Retail 8.1.1 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the merchandizing manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
+
+> [!NOTE]
+> The capability to set up promotions based on dimensions is not supported for price adjustments. The specific interface for defining the dimensions are removed in Retail versions 10.0.4 and later.
 
 ## Best practices
 

@@ -158,11 +158,13 @@ To enable saved views while the feature is in preview, follow the steps below:
 
 1.	**Enable the flight**: Execute the following SQL statement: 
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLISavedViewsEnableFeature', 1, 0, 5637144576);`
 
-2.	**Find the feature**: Navigate to the **Feature management** workspace. If **Saved views** does not appear in the list, select the **Check for updates** button.   
+2. **Reset IIS** to flush the static flighting cache. 
 
-3.	**Enable the feature**: Find the **Saved views** feature in the list of features, and click the **Enable now** button on the details pane.
+3.	**Find the feature**: Go to the **Feature management** workspace. If **Saved views** does not appear in the list, select **Check for updates**.   
+
+4.	**Enable the feature**: Find the **Saved views** feature in the list of features, and select **Enable now** on the details pane.
 
 All subsequent user sessions will start with saved views enabled.  
 

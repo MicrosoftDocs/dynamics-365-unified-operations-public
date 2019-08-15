@@ -39,7 +39,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Correspondence of accounts](rus-correspondence-accounts.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
-- [Import currency exchange rates from CBRF](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates)
+- [Import currency exchange rates from CBRF](../general-ledger/import-currency-exchange-rates.md)
 
 ## Advance holders
 
@@ -50,17 +50,20 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Revaluate foreign currency for advance holders](rus-advance-adjustment-parameters.md)
 - [Advance holder reports](rus-local-management-reports-primary-forms.md)
 
-## Bank
+## Cash and Bank
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
-- [Set up and process payment orders](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-payment-order-settings-processing)
-- [Foreign currency sales, purchases, and transfers](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-currency-sale-purchase)
+- [Set up and process payment orders](rus-payment-order-settings-processing.md)
+- [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
+- [Petty cash](emea-petty-cash.md)
 
 ## VAT
 
 - [Local specific posting of sales VAT](rus-local-specific-posting-sales-vat.md)
+- [Invoice factures processing and printing](rus-invoice-facture-process-print.md)
+- [Revision factures and corrective factures](rus-revise-invoice-facture.md)
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
-- [VAT declaration](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration)
+- [VAT declaration](rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
@@ -82,6 +85,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Transfer fixed assets](rus-fixed-asset-transfer.md)
 
 ## Accounts payable and receivable
+- [Credit note corrections](rus-credit-note-correction.md)
 - [Invoices for payment](rus-invoice-payment.md)
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)

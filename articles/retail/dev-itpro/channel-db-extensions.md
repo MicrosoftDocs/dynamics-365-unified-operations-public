@@ -5,24 +5,24 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2019
+ms.date: 08/12/2019
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:
+# ROBOTS:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 ms.custom: 83892
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry:
 ms.author: mumani
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
@@ -37,7 +37,7 @@ The channel database (channel DB) holds transactional and master data from one o
 
 In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations.
 
-Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions. 
+Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions.
 
 We have made some improvements to how extensions are handled during an upgrade. We recommend using one of the following environment configurations:
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with application update 5.
@@ -50,7 +50,7 @@ We have made some improvements to how extensions are handled during an upgrade. 
 In Dynamics 365 for Retail and Dynamics 365 Finance and Operations we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Retail and Finance and Operations, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
 
 > [!NOTE]
-> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Dynamics 365 Finance and Operations will not automatically push the changes to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail. 
+> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Dynamics 365 Finance and Operations will not automatically push the changes to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
 
 ## Best practices for channel DB extensions
 
@@ -67,7 +67,7 @@ tp.PARENTRECID, tp.PROPERTYVALUE as [EMAILOPTIN], ct.ACCOUNTNUM, ct.DATAAREAID
 FROM @TVP_EXTENSIONPROPERTIESTABLETYPE tp
 JOIN [ax].CUSTTABLE ct on ct.RECID = tp.PARENTRECID  --DONT access ax schema object
 WHERE tp.PARENTRECID <> 0 and tp.PROPERTYNAME = 'EMAILOPTIN') AS SOURCE
-ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID   
+ON [ax].RETAILCUSTPREFERENCE.RECID = SOURCE.PARENTRECID
 and [ax].RETAILCUSTPREFERENCE.DATAAREAID = SOURCE.DATAAREAID --DONT access ax schema object
 and [ax].RETAILCUSTPREFERENCE.ACCOUNTNUM = SOURCE.ACCOUNTNUM
 WHEN MATCHED THEN
@@ -144,7 +144,7 @@ We extended the attribute framework in HQ to support attributes for Customers, C
 With the new customer attribute framework, you can use configurations to add new fields to the customer add/edit or customer details screens in POS or HQ. After configuring the customer attribute group in retail parameters, POS and HQ will automatically show up the new attribute without any code change or customization. The screen layout designer will also be configured to show the customer attributes in the transaction screen - **Customer** panel.
 
 ### Order attributes
-The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration. 
+The attribute framework was extended to support attributes in cash and carry transactions, customer orders, and call center orders. You can edit and set values directly in HQ or in CRT. All this can be done through configurations, without any database changes. (You can customization the attribute values for core business logic, not required for basic CRUD operations.) Previously, you had to create new tables in HQ and channel DB, and then modify CRT to do this. Now all the attribute creation can be done through configuration.
 
 ## Adding a new table
 
@@ -258,3 +258,7 @@ If the extension script fails due to any error, it may be rerun. Rerunning the s
 
 The Channel Database is a transactional database that provides storage support for operations performed by Retail Server. All data that is stored in the Channel Database that must be kept for long periods of time must be uploaded to the headquarters
 through the [Commerce Data Exchange](./cdx-extensibility.md). Data uploaded to the headquarters can be accessed by the [Commerce Data Exchange Real-time Service](./extend-commerce-data-exchange.md).
+
+### Do write backward compatible channel database extensions
+
+The Channel Database is expected to be backward compatible. This means that updating only the Channel Database without updating Retail Server or POS must not prevent existing Retail Server or POS operations from functioning correctly. During deployment flows, the different components of your Retail Cloud Scale Unit, Retail Store Scale Unit, and Modern POS are updated in the inverse other of dependency. This means that the Channel Database is the first component to be updated, and Retail Server or POS are updated next. If Retail Server or POS fails to update successfully, those components are rolled back to restore them to their previous working state. However, in such situations, the Channel Database is not rolled back to prevent data loss. If your extensions are not backward compatible, they may fail to work properly until a successful deployment is performed.

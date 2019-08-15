@@ -144,6 +144,8 @@
           href: get-started/new-task-guides-available-february-2016.md
     - name: Explore the user interface
       items:
+      - name: User interface elements
+        href: get-started/user-interface-elements.md
       - name: Accessibility features
         href: get-started/accessibility-features.md
       - name: Feature management overview
@@ -280,17 +282,26 @@
       href: ../dev-itpro/business-events/potential-use-cases.md
     - name: Tutorials
       items: 
-      - name: Consume business events with Microsoft Flow
+      - name: Business events and Microsoft Flow
         href: ../dev-itpro/business-events/how-to/how-to-flow.md
-      - name: Consume business events by using Azure Event Grid
+      - name: Business events and Azure Event Grid
         href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
-      - name: Consume business events by using Azure Service Bus
+      - name: Business events and Azure Service Bus
         href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
-      - name: Consume workflow approval business events
+      - name: Business events and workflow approvals
         href: ../dev-itpro/business-events/how-to/how-to-workflow.md
-      - name: Use Microsoft Forms Pro with business events
+      - name: Business events and Microsoft Forms Pro 
         href: ../dev-itpro/business-events/how-to/FormsPro.md
- 
+      - name: Business events and Azure Event Hubs
+        href: ../dev-itpro/business-events/how-to/event-hub.md
+  - name: Compliance
+    items:
+    - name: Audit policy rules
+      href: ../financials/general-ledger/audit-policy-rules.md
+    - name: Audit policy violations and cases
+      href: ../financials/general-ledger/audit-policy-violations-cases.md
+    - name: Define audit policies for source documents
+      href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
   - name: Cost management
     items:
     - name: Cost management home page
@@ -2191,16 +2202,19 @@
         items: 
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
-        - name: Import configuration
-          href: ../financials/general-ledger/tax-engine-import-configuration.md
-        - name: Tax engine applicability
-          href: ../financials/general-ledger/tax-engine-applicability.md
-        - name: Tax engine integration
-          href: ../financials/general-ledger/tax-engine-integration.md
-        - name: Extending the Tax engine
-          href: ../financials/general-ledger/extend-tax-engine-configurations.md
+          items:     
+          - name: Import configuration
+            href: ../financials/general-ledger/tax-engine-import-configuration.md
+          - name: Tax engine applicability
+            href: ../financials/general-ledger/tax-engine-applicability.md
+          - name: Tax engine integration
+            href: ../financials/general-ledger/tax-engine-integration.md
+          - name: Extending the Tax engine
+            href: ../financials/general-ledger/extend-tax-engine-configurations.md
       - name: Tax thresholds FAQ
         href: ../financials/localizations/apac-ind-tax-thresholds.md          
+      - name: Stock transfers
+        href: ../financials/localizations/apac-ind-stock-transfer.md    
     - name: Italy
       items:
       - name: Italy overview
@@ -2557,7 +2571,7 @@
           href: ../financials/localizations/rus-advance-adjustment-parameters.md
         - name: Advance holder reports
           href: ../financials/localizations/rus-local-management-reports-primary-forms.md
-      - name: Bank
+      - name: Cash and Bank
         items: 
         - name: Set up bank accounts
           href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
@@ -2565,10 +2579,16 @@
           href: ../financials/localizations/rus-payment-order-settings-processing.md 
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md 
+        - name: Petty cash
+          href: ../financials/localizations/emea-petty-cash.md
       - name: VAT
         items:
         - name: Local specific posting of sales VAT
           href: ../financials/localizations/rus-local-specific-posting-sales-vat.md
+        - name: Invoice factures processing and printing
+          href: ../financials/localizations/rus-invoice-facture-process-print.md
+        - name: Revision factures and corrective factures
+          href: ../financials/localizations/rus-revise-invoice-facture.md
         - name: Value-added tax (VAT) for tax agents
           href: ../financials/localizations/rus-tax-agent.md
         - name: VAT declaration
@@ -2621,6 +2641,8 @@
           href: ../financials/localizations/rus-not-valuable-assets.md
       - name: Accounts payable and receivable
         items:
+        - name: Credit note corrections (Russia)
+          href: ../financials/localizations/rus-credit-note-correction.md
         - name: Invoices for payment
           href: ../financials/localizations/rus-invoice-payment.md
         - name: Set up dimension control for settlements
@@ -2655,7 +2677,7 @@
         items:
         - name: Set up deferrals
           href: ../financials/localizations/rus-set-up-deferrals.md
-        - name: Create or generate referrals
+        - name: Create or generate deferrals
           href: ../financials/localizations/rus-create-generate-deferrals.md
         - name: Receipt of deferrals
           href: ../financials/localizations/rus-deferral-transactions.md
@@ -3283,6 +3305,8 @@
             href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
         - name: Trace execution of ER formats to troubleshoot performance issues
           href: ../dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/fin-and-ops/toc.json
+        - name: Business document management overview
+          href: ../dev-itpro/analytics/er-business-document-management.md?toc=/fin-and-ops/toc.json
       - name: ER framework API
         items: 
         - name: Extend the list of Electronic reporting functions
@@ -3520,6 +3544,22 @@
         href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
       - name: Maintenance request reports
         href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
+    - name: Setup for work orders
+      items:
+      - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+        href: ../supply-chain/asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+      - name: Work order lifecycle states
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+      - name: Work order types
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-types.md
+      - name: Work order project setup
+        href: ../supply-chain/asset-management/setup-for-work-orders/work-order-project-setup.md
+      - name: Service level and description
+        href: ../supply-chain/asset-management/setup-for-work-orders/service-level-and-description.md
+      - name: Scheduled execution
+        href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
+      - name: Fault management
+        href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
     - name: Preventative and reactive maintenance
       items: 
       - name: Preventative maintenance
@@ -3538,6 +3578,18 @@
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
       - name: Maintenance stop
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+    - name: Warranty
+      items: 
+      - name: Warranty agreement
+        href: ../supply-chain/asset-management/warranty/warranty-agreement.md
+      - name: Warranty on assets and asset types
+        href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
+    - name: Create maintenance budgets
+      items:
+      - name: Create maintenance budgets
+        href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
+      - name: Update maintenance budgets
+        href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
   - name: Master planning
     items:
     - name: Master planning home page

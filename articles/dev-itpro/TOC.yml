@@ -138,8 +138,20 @@
         href: dev-ref/xpp-operators.md
       - name: X++ operator precedence
         href: dev-ref/xpp-operator-precedence.md
-      - name: X++ classes and methods
-        href: dev-ref/xpp-classes-methods.md
+      - name: X++ Classes and methods
+        items:
+        - name: Classes and methods
+          href: dev-ref/xpp-classes-methods.md
+        - name: Inheritance
+          href: dev-ref/xpp-inheritance.md
+        - name: Static class members
+          href: dev-ref/xpp-static-classes.md
+        - name: Interfaces
+          href: dev-ref/xpp-interfaces.md
+        - name: Libraries
+          href: dev-ref/xpp-library-objects.md
+        - name: Events
+          href: dev-ref/xpp-events.md
       - name: X++ data selection and manipulation
         href: dev-ref/xpp-data-query.md
       - name: Data access using the SysDa API
@@ -888,6 +900,24 @@
     href: dev-tools/manage-runtime-packages.md
   - name: Update model versions in the automated build
     href: dev-tools/version-models-build.md
+- name: Regression suite automation tool
+  items:
+  - name: Regression suite automation tool overview
+    href: perf-test/rsat/rsat-overview.md
+  - name: Installation and configuration
+    href: perf-test/rsat/rsat-install-configure.md
+  - name: Run test cases
+    href: perf-test/rsat/rsat-run.md
+  - name: Validate expected values
+    href: perf-test/rsat/rsat-validate-expected.md
+  - name: Chain test cases
+    href: perf-test/rsat/rsat-chain-test-cases.md
+  - name: Derived test cases
+    href: perf-test/rsat/rsat-derived-test-cases.md
+  - name: Best practices
+    href: perf-test/rsat/rsat-best-practices.md
+  - name: Troubleshooting
+    href: perf-test/rsat/rsat-troubleshooting.md
 - name: Release solutions using Lifecycle Services
   items:
   - name: Develop and release
@@ -1052,8 +1082,14 @@
       href: deployment/on-premises-diagnostics.md
     - name: Redeploy on-premises deployments
       href: deployment/redeploy-on-prem.md
-    - name: Update the local agent
-      href: lifecycle-services/update-local-agent.md
+    - name: Local agent
+      items:
+      - name: AD FS Office 365 compatibility
+        href: deployment/onprem-adfscompatibility.md
+      - name: Local agent pre-deployment and post-deployment scripts
+        href: lifecycle-services/pre-post-scripts.md
+      - name: Update the local agent
+        href: lifecycle-services/update-local-agent.md
     - name: Reconfigure environments
       href: lifecycle-services/reconfigure-environment.md
     - name: Client internet connectivity

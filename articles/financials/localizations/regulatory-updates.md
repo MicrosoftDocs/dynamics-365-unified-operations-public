@@ -64,7 +64,6 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
 |      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
-|      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
 |      June 2019            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
 |      June 2019            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
 |      June 2019            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |

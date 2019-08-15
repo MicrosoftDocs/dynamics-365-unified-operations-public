@@ -166,6 +166,8 @@
     href: retail-hardware-station-configuration-installation.md
   - name: Time and attendance in Retail
     href: retail-time-attendance.md
+  - name: Create and change store hours
+    href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) and Cloud POS
   items:
   - name: Choose between MPOS and Cloud POS
@@ -602,6 +604,8 @@
       href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
+  - name: Integrate POS with a new hardware device
+    href: dev-itpro/hardware-device-extension.md
   - name: Retail Server extensibility
     items:
     - name: Extend a Retail Server OData controller
