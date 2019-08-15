@@ -5,7 +5,7 @@ title: Maintenance schedule
 description: This topic explains maintenance schedule in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,29 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-15
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Maintenance schedule
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
 The maintenance schedule contains a list of all the expected preventive maintenance plans, maintenance requests, and maintenance rounds to be carried out. Some schedule lines may have been converted to work orders.
 
 The four maintenance schedule views are slightly different, depending on which maintenance schedule lines you want to see.
@@ -49,7 +54,7 @@ To open a maintenance schedule:
 
 1. Click **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools**.
 
-2. To update the maintenance schedule, click **Maintenance plan** or **Maintenance rounds**. Refer to [Schedule preventive maintenance](../preventive-and-reactive-maintenance/schedule-maintenance-sequences.md).
+2. To update the maintenance schedule, click **Maintenance plan** or **Maintenance rounds**. 
 
 3. You can edit a maintenance schedule line by selecting it and clicking **Edit**. For example, you can easily update the service level or the worker responsible for the job. You can only edit maintenance schedule lines that have not yet been connected to a work order.
 
