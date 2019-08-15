@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up worker calendar
-description: This topic explains how to set up a worker calendar in Asset Management.
+title: Maintenance worker calendar and scheduling
+description: This topic explains the maintenance worker calendar in relation to scheduling in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -39,5 +39,4 @@ The screenshot below shows an example of a maintenance worker who is related to 
 ![Figure 1](media/01-work-order-scheduling.png)
 
 Calendar setup for tools and assets is not needed in relation to work order scheduling. The assumption is that tools and assets are available 24 hours a day for maintenance.
-
 
