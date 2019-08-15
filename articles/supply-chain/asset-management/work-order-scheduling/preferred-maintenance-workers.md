@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Preferred maintenance workers
 
-You can make a preference regarding which workers are allocated to complete work orders during work order scheduling. The use of this functionality is optional, but it can help you make a choice for the most qualified maintenance worker to complete a job, based on worker skills and competencies. Therefore, during work order scheduling, the setup in the **Preferred workers** form is used to determine if a specific worker or worker group should be scheduled for a work order. Only workers that are available at scheduling time will be scheduled. If a preferred worker setup matches a work order during scheduling, but the selected worker is allocated to other jobs, the work order will be scheduled to another, available, worker.
+You can make a preference regarding which workers are allocated to complete work orders during work order scheduling. The use of this functionality is optional, but it can help you make a choice for the most qualified maintenance worker to complete a job, based on worker skills and competencies. Therefore, during work order scheduling, the setup in **Preferred maintenance workers** is used to determine if a specific maintenance worker or worker group should be scheduled for a work order. Only maintenance workers that are available at scheduling time will be scheduled. If a preferred maintenance worker setup matches a work order during scheduling, but the selected maintenance worker is allocated to other jobs, the work order will be scheduled to another, available, maintenance worker.
 
 Before you can set up preferred maintenance workers, you must first set up the maintenance workers and worker groups that should be available for selection. Refer to [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) for a description on how to set up maintenance workers and worker groups.
 
 ## Set up preferred workers
 
-A preferred worker or worker group can be related to a specific
+A preferred maintenance worker or worker group can be related to a specific
 
 - Job trade  
 - Job variant  
@@ -49,11 +49,11 @@ A preferred worker or worker group can be related to a specific
 
 or a combination of those selections. The more selections you make for the same record, the more specific your setup becomes.
 
-1. Click **Enterprise asset management** > **Setup** > **Workers** > **Preferred workers**.
+1. Click **Asset management** > **Setup** > **Workers** > **Preferred maintenance workers**.
 
 2. Click **New** to create a new record.
 
-3. Start by creating a "default" worker or worker group setup that has no selections in the fields shown in the bullet list above. This means that you only make a selection in the **Preferred worker group** field and/or the **Preferred worker** field. In the figure below, you see an example in the first record in which "Requests" is selected as preferred worker group.
+3. Start by creating a "default" maintenance worker or worker group setup that has no selections in the fields shown in the bullet list above. This means that you only make a selection in the **Preferred worker group** field and/or the **Preferred worker** field. In the figure below, you see an example in the first record in which "Requests" is selected as preferred worker group.
 
 >[!NOTE]
 >The default setup will be used during work order scheduling in case no other, more specific, combination matches the contents of the work order during work order scheduling.
