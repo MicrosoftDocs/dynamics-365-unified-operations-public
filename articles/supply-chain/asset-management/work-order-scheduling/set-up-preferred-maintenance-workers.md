@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up preferred workers
-description: This topic explains how to set up preferred workers in Enterprise Asset Management.
+title: Set up preferred maintenance workers
+description: This topic explains how to set up preferred maintenance workers in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up preferred workers
+# Preferred maintenance workers
 
-This topic explains how to set up preferred workers in Enterprise Asset Management. You can make a preference regarding which workers are allocated to complete work orders during work order scheduling. The use of this functionality is optional, but it can help you make a choice for the most qualified worker to complete a job, based on worker skills and competencies. Therefore, during work order scheduling, the setup in the **Preferred workers** form is used to determine if a specific worker or worker group should be scheduled for a work order. Only workers that are available at scheduling time will be scheduled. If a preferred worker setup matches a work order during scheduling, but the selected worker is allocated to other jobs, the work order will be scheduled to another, available, worker.
+You can make a preference regarding which workers are allocated to complete work orders during work order scheduling. The use of this functionality is optional, but it can help you make a choice for the most qualified maintenance worker to complete a job, based on worker skills and competencies. Therefore, during work order scheduling, the setup in the **Preferred workers** form is used to determine if a specific worker or worker group should be scheduled for a work order. Only workers that are available at scheduling time will be scheduled. If a preferred worker setup matches a work order during scheduling, but the selected worker is allocated to other jobs, the work order will be scheduled to another, available, worker.
 
-Before you can set up preferred workers, you must first set up the workers and worker groups that should be available for selection. Refer to [Workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) for a description on how to set up workers and worker groups.
+Before you can set up preferred maintenance workers, you must first set up the maintenance workers and worker groups that should be available for selection. Refer to [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) for a description on how to set up maintenance workers and worker groups.
 
 ## Set up preferred workers
 
