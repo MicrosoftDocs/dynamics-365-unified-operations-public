@@ -58,15 +58,15 @@ or a combination of those selections. The more selections you make for the same 
 >[!NOTE]
 >The default setup will be used during work order scheduling in case no other, more specific, combination matches the contents of the work order during work order scheduling.
 
-4. Repeat step 2 to create a new record. Make the required selections, depending on the detail level for the preferred worker or worker group. *Example:* In the figure below, in the sixth record, the worker Miles Reid is selected as preferred worker. He will automatically be selected during scheduling of a work order that includes the job trade "Electrical" as well as the job type "Cal. Electrical", if he is available at the scheduled time.
+4. Repeat step 2 to create a new record. Make the required selections, depending on the detail level for the preferred worker or worker group. *Example:* In the figure below, in the sixth record, the maintenance worker Shawn Richardson is selected as preferred worker. He will automatically be selected during scheduling of a work order that includes the asset "CH-BP1-03-02 and the maintennace job type "Facility assessment", if he is available at the scheduled time.
 
 >[!NOTE]
->Generally, when a preferred worker is selected during work order scheduling, Enterprise Asset Management goes through all preferred worker records to check for a possible match, always checking the most specific combination first. This means that, first, a possible match regarding **Trade** is checked. If no match is found, **Variant** is checked. If no match is found, **Job type** is checked, and so on. As you can see in the layout of the form, this means that Enterprise Asset Management checks each record from right to left for a match (**Trade**, then **Variant**, then **Job type**, **Job group**, **Object**, **Object type**) to find the most specific combination. If no match is found, the "default" record with no selections in those fields is used.
+>Generally, when a preferred maintenance worker is selected during work order scheduling, Asset Management goes through all **Preferred maintenance workers** records to check for a possible match, always checking the most specific combination first. If no match is found, the "default" record with a selection in either the **Preferred maintenance worker group** field or the **Preferred maintenance worker** field is used.
 
-The figure below shows a screenshot of the interface.
 
 ![Figure 1](media/02-work-order-scheduling.png)
 
-You can also set up responsible workers who can be selected when a request or a work order is created. In **All work orders** and **All requests**, you can edit the selection, if required. Refer to [Responsible workers](../setup-for-requests/responsible-workers.md) for more information.
+You can also set up responsible maintenance workers who can be selected when a maintenance request or a work order is created. In **All work orders** and **All maintenance requests**, you can edit the selection, if required. Refer to [Responsible maintenance workers](../setup-for-requests/responsible-workers.md) for more information.
 
-During work order scheduling, different scores are calculated to determine which workers should complete the jobs related to a work order. If two or more preferred workers or responsible workers get the same score during work order scheduling, one worker is randomly selected. Otherwise, it is always the worker with the highest scores who is allocated to complete a work order.
+During work order scheduling, different scores are calculated to determine which workers should complete the jobs related to a work order (those scores are set up in **Asset management parameters** > **Work order scheduling** link). If two or more preferred maintenance workers or responsible maintenance workers get the same score during work order scheduling, one worker is randomly selected. Otherwise, it is always the worker with the highest scores who is allocated to complete a work order.
+
