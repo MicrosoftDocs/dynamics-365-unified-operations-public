@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 When you create a work order, you create work order jobs with related assets and maintenance job types. When you select a maintenance job type containing maintenance forecasts, the forecasts are automatically copied to the work order.
 
-You may be able to add or delete forecast lines on a work order. The setup of a work order lifecycle state, the related project type, and the stage rules related to the project type determines if you are able to add or edit forecast lines. Read more about work order lifecycle states and related project stages in [Integration to project management and accounting](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+You may be able to add or delete forecast lines on a work order. The setup of a work order lifecycle state, the related project type, and the stage rules related to the project type determines if you are able to add or edit forecast lines. 
 
 1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
@@ -77,7 +77,8 @@ There are three ways to add items to a work order maintenance forecast: You can 
 
 9. If you want to add asset BOM items to the forecast, click **Add BOM items**, select the item, edit related information if required, and click **OK**.
 
-10. Click **Item where used** if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. Read more about this overview in [Items where used](../controlling-and-reporting/items-where-used.md).
+10. Click **Item where used** if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. 
+
 
 
 ## Add expense forecast to a work order
