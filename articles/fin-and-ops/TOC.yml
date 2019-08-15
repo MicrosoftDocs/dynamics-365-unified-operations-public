@@ -3566,8 +3566,8 @@
         href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
       - name: Manually created work orders
         href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
-      - name: Forecasts
-        href: ../supply-chain/asset-management/work-orders/forecasts.md
+      - name: Maintenance forecasts
+        href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
       - name: Procurement
         href: ../supply-chain/asset-management/work-orders/procurement.md
       - name: Manual update of asset counters
