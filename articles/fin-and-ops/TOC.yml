@@ -3588,6 +3588,24 @@
         href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
       - name: Work orders and fixed assets
         href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+    - name: Preventative and reactive maintenance
+      items: 
+      - name: Preventative maintenance
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+      - name: Maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+      - name: Schedule maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+      - name: Maintenance rounds
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+      - name: Maintenance schedule
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+      - name: Maintenance schedule cost
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+      - name: Create work orders
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+      - name: Maintenance downtime
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
     - name: Warranty
       items: 
       - name: Warranty agreement
