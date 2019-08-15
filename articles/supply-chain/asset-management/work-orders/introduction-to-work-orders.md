@@ -5,7 +5,7 @@ title: Introduction to work orders
 description: This topic provides an overview of work orders in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/27/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,28 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-15
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Introduction to work orders
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 Work orders are used to manage, provide required information for, and register consumption on maintenance jobs. A work order may contain one or more work order jobs, and one or more assets can be connected to a work order. Each work order line defines a maintenance job scheduled on the asset.
 
@@ -40,7 +44,7 @@ Work orders can be created automatically or manually:
 
 - Automatically using the **Schedule maintenance rounds** form, for maintenance rounds set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
 
-- Create from maintenance schedule (refer to the [Maintenance schedule](../preventive-and-reactive-maintenance/object-calendar.md) section), which can be preventive maintenance jobs or maintenance requests.  
+- Create from maintenance schedule, which can be preventive maintenance jobs or maintenance requests.  
 
 - Create a work order manually.  
 
