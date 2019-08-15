@@ -3411,6 +3411,10 @@
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/request-types.md
       - name: Responsible maintenance workers
         href: ../supply-chain/asset-management/setup-for-maintenance-requests/responsible-workers.md
+    - name: Work orders
+      items:
+        - name: Active work order maintenance jobs overview
+          href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
   - name: Master planning
     href: ../supply-chain/master-planning/master-planning-home-page.md
     items:
