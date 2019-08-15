@@ -182,39 +182,6 @@ After the metadata backup has been restored, delete (or rename) the metadata bac
 
 After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
 
-## Upgrading to platform update 3 from an earlier build
-When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
-
-- It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
-- You need to delete all X++ hotfixes to the platform that are in you version control (see the section below)
-- The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.
-
-This means two things:
-
-1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
-    -   Application Platform
-    -   Application Foundation
-    -   Test Essentials
-    -   Directory
-
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
-
-### Delete platform metadata hotfixes from your Azure DevOps project (Platform update 2 or earlier)
-
-> [!NOTE]
-> This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
-
-Before you install the new platform update, you must clean up your Microsoft Azure DevOps source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your Azure DevOps project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
-
--   Application Platform
--   Application Foundation
--   TestEssentials
--   Directory
-
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
-![View History](./media/checkinhistory.png)
-
 Additional resources
 --------
 

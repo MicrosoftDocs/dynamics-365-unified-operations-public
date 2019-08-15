@@ -49,18 +49,8 @@ In Tier 2 or higher environments, including Production, you will run through the
 
 1. Back up your current database.
 2. You must have a functional environment that is already successfully running the latest Finance and Operations update.
-3. If you're upgrading from Microsoft Dynamics AX 7.0 (February 2016) to Microsoft Dynamics AX application version 7.0.1 (May 2016), install the following hotfixes in the **destination** environment:
+3. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
 
-   - KB 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync."
-   - KB 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys."
-    
-       This hotfix is a binary hotfix that will cause database synchronization process to fail.
-
-     If you're upgrading to a version that is newer than the May 2016 release, you do **not** have to install these hotfixes. They are already included.
-
-4. In the **source** environment, you must install one of the following hotfixes, depending on the version that you're upgrading from. These hotfixes correct an issue in the SysSetupLog logic, so that the upgrade process can detect the version that you're upgrading from:
-
-   - **If you're upgrading from the February 2016 release (also known as RTW or 7.0, build 7.0.1265.3015):** KB 4023685, "'Could not find source system version information' error when you upgrade to the latest Application Release."
    - **If you're upgrading from the November 2016 release (also known as 1611 or 7.1, build 7.1.1541.3036):** KB 4023686, "'Could not find source system version information' error when you upgrade to the latest Application Release."
    - **If you're upgrading from the July 2017 release (also known as 7.2, build 7.2.11792.56024):** No hotfix is required for this version.
    - After you install application hotfixes required in this step, run a full database synchronization. This step is especially important for golden database environments. A full database synchronization fills the SysSetupLog table, which is used when the database is upgraded. Don't run the database synchronization from Microsoft Visual Studio for this step, because the SysSetup interface won't be triggered. To trigger the SysSetup interface, run the following command from an Administrator **Command Prompt** window.
@@ -71,27 +61,19 @@ In Tier 2 or higher environments, including Production, you will run through the
      Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "J:\AosService\PackagesLocalDirectory" -metadatadir        J:\AosService\PackagesLocalDirectory -sqluser axdeployuser -sqlserver localhost -sqldatabase axdb -setupmode sync -syncmode fullall -isazuresql false -sqlpwd \<password for axdeployuser\>
      ```
 
-5. If you're upgrading to the July 2017 release (also known as 7.2) (build 7.2.11792.56024), apply the following application X++ hotfixes in the **destination** environment before you run the data upgrade in that environment. These hotfixes will prevent various errors from occurring during the data upgrade.
-
-    - KB 4036156 - Retail minor version upgrade - 'Variant number sequence is not set.'
-    
-        This hotfix package also includes KB 4035399 and KB 4035751. To use this package, you must have, at a minimum, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 9 (July 2017). If you're unsure, install the latest binaries.
-
-    - KB 4045801 - "Scheduler job has failed" error encountered when upgrading from Fall 2016 update to July 2017 update.
-
-6. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
+4. If you're upgrading from Microsoft Dynamics AX 2012, install the following application X++ hotfixes in the destination environment before you run the data upgrade:
 
     - KB 4033183 - Dynamics AX 2012 R2 or Dynamics AX 2012 R3 Pre-CU8 non-retail upgrade fails with Object not found for dbo.RETAILTILLLAYOUTZONE.
     - KB 4040692 - Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations 7.2 upgrade fails on RetailSalesLine duplicate index on SalesLineIdx.
     - KB 4035490 - Performance issue with GeneralJournalAccountEntry MainAccount field upgrade script.
 
-7. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
+5. If you're upgrading a database that began as a standard demo data database, you must also run the following script. This step is required, because the demo data contains bad records for some kernel X++ classes.
 
     ```
     delete from classidtable where id >= 0xf000 and id <= 0xffff
     ```
 
-8. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
+6. Make sure that all Commerce Data Exchange (CDX) jobs have been successfully run, and that there is no unsynchronized transactional data in the cloud version of the channel database.
 
 ## Select the correct data upgrade deployable package
 
@@ -105,20 +87,6 @@ To obtain the latest data upgrade deployable package for a target environment th
     - If you're upgrading from a previous release of Finance and Operations to the latest 10.0.X release, the package name is  **DataUpgrade-10-0**. 
     - If you're upgrading from a previous release to a preview release, the package name contains PREVIEW. For example, **DataUpgrade-10-0-2-PREVIEW**.
 5. Select the package that corresponds to the release that you are upgrading to. 
-
-
-### Fix the duplicate key issue (February 2016 release only)
-
-This step is required if you're upgrading a database from the February 2016 release (also known as RTW or 7.0).
-
-1. In a text editor, open the **C:\\Temp\\DataUpgrade\\AOSService\\Scripts\\AutoDataUpgradePreReqs.ps1** file.
-2. Comment out or remove the following line.
-
-    ```
-    Invoke-SQL -sqlCommand:$adjustsqlseq
-    ```
-
-3. Save the file.
 
 ## Upgrade the database
 

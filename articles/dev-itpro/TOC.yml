@@ -1196,8 +1196,6 @@
       href: migration-upgrade/versions-update-policy.md
     - name: Apply the latest platform update to environments
       href: migration-upgrade/upgrade-latest-platform-update.md
-    - name: Upgrade the Dynamics AX platform to the August 2016 release
-      href: migration-upgrade/update-platform-each-release.md
     - name: Upgrade data in development, or demo environments
       href: migration-upgrade/upgrade-data-to-latest-update.md
     - name: Update development tools
