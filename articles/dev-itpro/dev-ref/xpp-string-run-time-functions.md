@@ -416,15 +416,13 @@ The first line of the string has an offset of 0. You can assign multiple lines t
 
 ### Example
 
-    static void strLineExample(Args _arg)
-    {
-            str mytxt = "first-line\nsecond-line\nlast-line";
-            ;
-            // Prints "second-line".
-            print strLine(mytxt,1);
-            // Prints "last-line".
-            print strLine(mytxt,2);            
-    }
+```X++
+str mytxt = "first-line\nsecond-line\nlast-line";
+// Prints "second-line".
+print strLine(mytxt,1);
+// Prints "last-line".
+print strLine(mytxt,2);            
+```
 
 ## strLTrim
 Removes leading blanks from a text string.
