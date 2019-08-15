@@ -3562,10 +3562,28 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
     - name: Work orders
       items:
-      - name: Active work order maintenance jobs overview
-        href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+      - name: Introduction to work orders
+        href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+      - name: Manually created work orders
+        href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+      - name: Forecasts
+        href: ../supply-chain/asset-management/work-orders/forecasts.md
+      - name: Procurement
+        href: ../supply-chain/asset-management/work-orders/procurement.md
+      - name: Manual update of asset counters
+        href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+      - name: Automatic update of asset counters
+        href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
       - name: Add fault to work order
         href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+      - name: Work order report
+        href: ../supply-chain/asset-management/work-orders/work-order-report.md
+      - name: Work order pools
+        href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+      - name: Active work order maintenance jobs
+        href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+      - name: Work orders and fixed assets
+        href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
     - name: Warranty
       items: 
       - name: Warranty agreement
