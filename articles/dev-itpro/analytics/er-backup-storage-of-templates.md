@@ -78,6 +78,9 @@ If you upgraded your environment to the 10.0.5 release and want to migrate it to
 
 If you decided to stop making backup copies of templates enabling the **Stop making backup copies of template** option and don’t want to keep already collected backup copies of templates, select the **Clean backup storage** option in the Electronic reporting parameters page.
 
+## Supported deployments
+Starting from the 10.0.5 release, the **Backup storage of ER templates** feature is implemented only for cloud deployments. The implementation for on-premises deployments is planned for the 10.0.6 release.
+
 ## Additional resources
 
 [Electronic reporting overview](general-electronic-reporting.md)
