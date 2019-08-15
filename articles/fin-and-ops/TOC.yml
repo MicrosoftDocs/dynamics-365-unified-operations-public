@@ -3576,7 +3576,7 @@
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
       - name: Create work orders
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-      - name: Maintenance stop
+      - name: Maintenance downtime
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
     - name: Warranty
       items: 
