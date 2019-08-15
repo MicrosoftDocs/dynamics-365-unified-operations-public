@@ -5,7 +5,7 @@ title: Create an operating unit
 description: An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. 
 author: sericks007
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -43,5 +43,5 @@ An operating unit is an organization that is used to divide the control of econo
     + Enter address information, such as the street name and number, postal code, and city. Click **Add** to enter a new address record, or click Edit to modify an existing address record.   
     + Expand the **Contact information** section, if necessary.  
     + Enter information about methods of communication, such as email addresses, URLs, and telephone numbers. To enter a new communication record, click New. To modify an existing communication record, click **More options > Advanced**.   
-6. Click **Save**.
-
+6. Optionally, change the **Operating unit number** as needed. Note that this number is a unique idenitifier for the correspondng **Party** record and cannot be the same as any other operating unit.
+7. Select **Save**.
