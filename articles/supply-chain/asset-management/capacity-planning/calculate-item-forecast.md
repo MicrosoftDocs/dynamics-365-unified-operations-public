@@ -48,7 +48,7 @@ This is useful if you want to get an overview of expected item consumption (spar
 
 4. Select "Yes" on the **Include work order** toggle button if you want to include work order jobs in the forecast calculation.
 
-5. You can use the **Level** field to indicate how detailed you want the capacity load lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all object calendar lines and work orders for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object calendar lines and all work orders on all the functional location level to which they are related.
+5. You can use the **Level** field to indicate how detailed you want the item forecast lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all object calendar lines and work orders for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object calendar lines and all work orders on all the functional location level to which they are related.
 
 6. Click **OK** to start the calculation.
 
