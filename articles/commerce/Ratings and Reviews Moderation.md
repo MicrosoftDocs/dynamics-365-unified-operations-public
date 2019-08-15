@@ -74,7 +74,7 @@ When you have a right business justification to takedown a review, use the follo
 	
 	
 ## Delete user reviews 
-Sometimes end users (c2) wants their reviews data to be deleted permanently on an eCommerce website. When C1 receives such a request from C2, Delete review feature in Ratings and Reviews moderation tool allows C1's to fulfill C2's request.  C1 needs C2's email address that was used to sign-in and provided reviews. 
+Sometimes end users (c2) wants their ratings and reviews data to be deleted permanently on a given eCommerce website. When C1 receives such a request from C2, Delete reviews feature in Ratings and Reviews moderation tool allows C1's to fulfill C2's request.  C1 will need C2's email address that was used by C2 to sign-in and provided reviews on the given eCommerce website. 
 
 1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
 2. Click on Reviews in the left nav and then click on Delete link. 
