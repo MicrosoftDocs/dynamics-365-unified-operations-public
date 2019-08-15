@@ -5,7 +5,7 @@ title: Active work order maintenance jobs overview
 description: This topic explains active work order maintenance jobs overview in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/27/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,28 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Active work order maintenance jobs overview
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 In **Active work order maintenance jobs**, you can get an overview of work orders in relation to how many work orders have been created on specific assets, asset types, manufacturers, models, maintenance job types, and so on. If you select a work order job and click **Edit**, you open the related work order. If you select a job and click one of the buttons on the **Work order maintenance jobs** tab, you see data for the work order to which the work order job is related.
 
