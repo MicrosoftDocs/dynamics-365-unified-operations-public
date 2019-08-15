@@ -3564,6 +3564,8 @@
       items:
       - name: Active work order maintenance jobs overview
         href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+      - name: Add fault to work order
+        href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
     - name: Warranty
       items: 
       - name: Warranty agreement
