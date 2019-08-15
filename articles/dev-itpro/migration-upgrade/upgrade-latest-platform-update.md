@@ -46,7 +46,7 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on a platform that is older than Platform update 3, see the section [Upgrading to platform update 3 from an earlier build](#upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
