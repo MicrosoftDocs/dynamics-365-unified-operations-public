@@ -81,6 +81,7 @@ Sometimes end users (c2) wants their ratings and reviews data to be deleted perm
 3. Input C2's email address in "Search for users by email address" text box.
 4. Click Search button.
 5. If specified user has any reviews activity (e.g. Review submission, or voted on helpfulness of other's reviews, or expressed concern on others review) results will show up and gives "Delete" action for C1 to act on.
+6. C1 will be prompted for confirmation, "Are you sure you want to delete?" with Yes and No options. 
 	
 Refer to the following screenshot for more details.  
 	
