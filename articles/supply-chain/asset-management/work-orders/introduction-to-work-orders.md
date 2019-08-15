@@ -40,9 +40,9 @@ Work orders are used to manage, provide required information for, and register c
 
 Work orders can be created automatically or manually:
 
-- Automatically using the **Schedule maintenance plans** form, for calendar-based maintenance plans set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
+- Automatically using the **Schedule maintenance plans** form, for calendar-based maintenance plans set to "Auto create".  
 
-- Automatically using the **Schedule maintenance rounds** form, for maintenance rounds set to "Auto create" (refer to [Preventive and reactive maintenance](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md)).  
+- Automatically using the **Schedule maintenance rounds** form, for maintenance rounds set to "Auto create".  
 
 - Create from maintenance schedule, which can be preventive maintenance jobs or maintenance requests.  
 
