@@ -5,7 +5,7 @@ title: Refresh database
 description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -46,7 +46,6 @@ With the goal of providing Data Application Lifecycle Management (also referred 
 2. Select the **Refresh database** option and choose your source environment.
 3. Note the warnings and review the list of data elements that are not copied from the source environment.
 4. The refresh operation will begin immediately.
-5. After the refresh operation is completed, you must **sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.
 
 ### Refresh operation failed
 In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization, that is present in the target sandbox, cannot complete a database synchronization with the newly refreshed data.
@@ -62,7 +61,8 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* Document attachments in the DocuValue table.
+* Document attachments in the DocuValue table. This includes any Office Templates that were overriden in the source environment.
+* Connection string in the PersonnellIntegrationConfiguration table
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 
@@ -76,7 +76,6 @@ If you have used the Admin User Provisioning Tool on your environment to change 
 ### Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
-- Any previous servicing operation, such as a package deployment or prior database refresh, *must be signed off* from your environment details page.
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
 - The refresh will affect only the Finance and Operations and Financial Reporting databases.
@@ -91,8 +90,8 @@ Here is the list of requirements and conditions of operation for a database refr
 
 ## Known issues
 
-### Refresh is denied for environments running Platform update 12 or earlier
-The database refresh process can't be completed if the environment is running Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017) or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
+### Refresh is denied for environments running Platform update 11 or earlier
+The database refresh process can't be completed if the environment is running Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 or earlier. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
