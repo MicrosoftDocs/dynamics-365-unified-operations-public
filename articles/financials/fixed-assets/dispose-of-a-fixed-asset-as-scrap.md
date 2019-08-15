@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Fixed asset disposal as scrap scenario
-description: The topic describesthe process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down.
+title: Dispose of a fixed asset as scrap
+description: The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down.
 
 author: moaamer
 manager: Ann Beebe
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Fixed asset disposal as scrap scenario
+# Dispose of a fixed asset as scrap
 
-The topic describesthe process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
+The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
 
 | Transaction                         |   | Dr | Cr |
 |-------------------------------------|---|----|----|
@@ -47,9 +47,9 @@ The topic describesthe process of eliminating transactions for a fixed asset tha
 | Dr. Fixed assets gain/loss (NBV)    |   | xx |    |
 | Cr. Fixed assets gain/loss (NBV)    |   |    | xx |
 
-[!Note] We recommend working closely with your company's CFO/Controller to identify the correct accounts to use for each transaction type, and to verify that the disposal process and the transactions that it generates, update accounts correctly.     
+[!Note] We recommend working closely with your company's CFO/Controller to identify the correct accounts to use for each transaction type, and to verify that the disposal process and the transactions that it generates, update those accounts correctly.     
 
-When disposing of a fixed asset as scrap you must have created ledger accounts associated with the asset's acquisition value, depreciation for the current year, depreciation for prior years, and the asset's net book value. The fixed assets transaction types are listed in the Fixed assets posting profile under **Disposal** FastTab. To view the Fixed assets posting profile, go to **Fixed assets > Setup > Fixed assets posting profile**, then open the **Disposal** FastTab and select **Scrap**. The following illustration shows the Fixed assets posting profile:
+When disposing of a fixed asset as scrap, you must have created ledger accounts associated with the asset's acquisition value, depreciation for the current year, depreciation for prior years, and the asset's net book value. The fixed assets transaction types are listed in the Fixed assets posting profile under the **Disposal** FastTab. To view the Fixed assets posting profile, go to **Fixed assets > Setup > Fixed assets posting profile**, then open the **Disposal** FastTab and select **Scrap**. The following illustration shows the **Fixed assets posting profile** page:
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_1.png">
 
