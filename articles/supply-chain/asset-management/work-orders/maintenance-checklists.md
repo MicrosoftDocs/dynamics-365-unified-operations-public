@@ -52,7 +52,7 @@ When you work with maintenance checklists on a work order, you can fill out the 
 6. The information required to complete a maintenance checklist line may vary, depending on the related maintenance checklist type. You complete a maintenance checklist line by filling out the fields on the **Line details** FastTab. For example, on a line of type "Text", you add a **Note** explaining what was the result of that checklist line. On a line of type "Measurement", you add the **Counter value** you read on the equipment, and you can also add a **Note**, if required.
 
 - When you have completed a maintenance checklist line, select the **Checked** check box on the line to mark it as completed. If you want to discard a maintenance checklist line because it's not relevant for the work order job, select the **N/A** check box on the line. If a maintenance checklist line is marked **Mandatory**, you must mark it as either "Checked" or "N/A".  
-- You can only update maintenance checklist registrations if the work order is in an [Active](../setup-for-work-orders/work-order-stages.md) lifecycle state.  
+- You can only update maintenance checklist registrations if the work order is in an [Active](../setup-for-work-orders/work-order-lifecycle-states.md) lifecycle state.  
 
 
 ## Add a maintenance checklist line
