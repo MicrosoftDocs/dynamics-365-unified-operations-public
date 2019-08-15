@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculate item forecast
-description: This topic explains how to calculate item forecast in Enterprise Asset Management.
+description: This topic explains how to calculate item forecast in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -32,21 +32,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Calculate item forecast
 
-This topic explains how to calculate item forecast in Enterprise Asset Management. Just as you can make capacity load calculations, which are described in the previous section, you can also make item forecast calculations on
+Just as you can make capacity load calculations, which are described in the previous section, you can also make item forecast calculations on
 
-- Object calendar lines  
+- Maintenance schedule lines  
 - Work orders that have not yet been scheduled  
 - Scheduled work orders
 
-This is useful if you want to get an overview of expected item consumption (spare parts as well as other items required for completing work orders) for a specific period. Calculation of item forecast can be done on all objects or selected objects. You can also make a calculation on a maintenance stop (**All maintenance stops** or **Active maintenance stops**), or on a work order pool (**All work order pools** or **Active work order pools**).
+This is useful if you want to get an overview of expected item consumption (spare parts as well as other items required for completing work orders) for a specific period. Calculation of item forecast can be done on all assets or selected assets. You can also make a calculation on a maintenance downtime activity (**All maintenance downtime activities** or **Active maintenance downtime activities**), or on a work order pool (**All work order pools** or **Active work order pools**).
 
-1. Click **Enterprise asset management** > **Inquiries** > **Item forecast**, or **Enterprise asset management** > **Common** > **Work order pools** > **All work order pools** / **Active work order pools** > select work order pool in the list > **Item forecast** button, or **Enterprise asset management** > **Common** > **Maintenance stops** > **All maintenance stops** / **Active maintenance stops** > select maintenance stop in the list > **Item forecast** button.
+1. Click **Asset management** > **Inquiries** > **Item forecast**, or **Enterprise asset management** > **Common** > **Work order pools** > **All work order pools** / **Active work order pools** > select work order pool in the list > **Item forecast** button, or **Enterprise asset management** > **Common** > **Maintenance stops** > **All maintenance stops** / **Active maintenance stops** > select maintenance stop in the list > **Item forecast** button.
 
 2. Click the **Calculate item forecast** button.
 
 3. Select a period for the calculation in the **Start date/time** and **End date/time** fields.
 
-4. Select "Yes" on the **Include object calendar** toggle button if you want to include object calendar lines in the forecast calculation.
+4. Select "Yes" on the **Include maintenance schedule** toggle button if you want to include maintenance schedule lines in the forecast calculation.
 
 5. Select "Yes" on the **Include work order** toggle button if you want to include work order lines in the forecast calculation.
 
