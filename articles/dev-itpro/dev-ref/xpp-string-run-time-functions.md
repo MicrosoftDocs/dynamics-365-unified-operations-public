@@ -5,7 +5,7 @@ title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -412,20 +412,17 @@ A copied line of the string that is specified by the *string* parameter.
 
 ### Remarks
 
-The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *n* or *rn* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
+The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *\n* or *\r\n* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
 
 ### Example
 
-    static void strLineExample(Args _arg)
-    {
-            str mytxt = "first-linensecond-linenlast-line";
-            ;
-            // Prints "second-line".
-            print strLine(mytxt,1);
-            // Prints "last-line".
-            print strLine(mytxt,2);
-            pause;
-    }
+```X++
+str mytxt = "first-line\nsecond-line\nlast-line";
+// Prints "second-line".
+print strLine(mytxt,1);
+// Prints "last-line".
+print strLine(mytxt,2);            
+```
 
 ## strLTrim
 Removes leading blanks from a text string.
