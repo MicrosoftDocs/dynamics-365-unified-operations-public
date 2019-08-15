@@ -39,7 +39,7 @@ In the **Work order purchase requisition** list (**Asset management** > **Common
 
 - Select a work order job in the **Work order purchase requisition** list, and click the **Purchase requisition** button to open the related purchase requisition.  
 - Select a work order job in the **Work order purchase requisition** list, and click the **Work order** button to open the related work order.  
-- Select a work order job in the **Work order purchase requisition** list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. Read more about this overview in the [Items where used](../controlling-and-reporting/items-where-used.md) section.
+- Select a work order job in the **Work order purchase requisition** list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. 
 
 ![Figure 1](media/08-work-orders.png)
 
@@ -48,7 +48,7 @@ In the **Work order purchase** list (**Enterprise asset management** > **Common*
 
 - Select a work order job in the **Work order purchase** list, and click the **Purchase order** button to open the related purchase order.  
 - Select a work order job in the **Work order purchase** list, and click the **Work order** button to open the related work order.  
-- Select a work order job in the **Work order** purchase list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. Read more about this overview in the [Items where used](../controlling-and-reporting/items-where-used.md) section.
+- Select a work order job in the **Work order** purchase list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. 
 
 ![Figure 2](media/09-work-orders.png)
 
