@@ -3520,6 +3520,24 @@
         href: ../supply-chain/asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
       - name: Maintenance request reports
         href: ../supply-chain/asset-management/manage-maintenance-requests/maintenance-request-reports.md
+    - name: Preventative and reactive maintenance
+      items: 
+      - name: Preventative maintenance
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+      - name: Maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+      - name: Schedule maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+      - name: Maintenance rounds
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+      - name: Maintenance schedule
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+      - name: Maintenance schedule cost
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+      - name: Create work orders
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+      - name: Maintenance stop
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
   - name: Master planning
     items:
     - name: Master planning home page
