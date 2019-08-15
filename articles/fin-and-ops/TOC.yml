@@ -3574,6 +3574,10 @@
         href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
       - name: Automatic update of asset counters
         href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+      - name: Maintenance checklists
+        href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+      - name: Maintenance downtime
+        href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
       - name: Add fault to work order
         href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
       - name: Work order report
