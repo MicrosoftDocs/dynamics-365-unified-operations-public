@@ -30,16 +30,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up worker calendar
+# Maintenance worker calendar and scheduling
 
-When you schedule work orders, you create a schedule for maintenance workers, tools, and assets. In order to carry out scheduling on maintenance workers, a calendar is related to each maintenance worker. Maintenance workers are related to a resource, and working time calendars are set up on resoures. You set up the resource and calendar related to a worker in **Asset management** > **Setup** > **Workers** > **Workers**.
+When you schedule work orders, you create a schedule for maintenance workers, tools, and assets. In order to carry out scheduling on maintenance workers, a calendar must be set up for each maintenance worker. Maintenance workers are related to a resource, and working time calendars are set up on resoures. You set up the resource and calendar related to a worker in **Asset management** > **Setup** > **Workers** > **Workers**, which is described in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).
 
-
-............ which are described in the [Create functional locations](../functional-locations/create-functional-locations.md)
-
-
-The following figure shows a screenshot of the interface. The screenshot below shows an example of a maintenance worker who is related to a resource that uses the working time calendar "Production".
+The screenshot below shows an example of a maintenance worker who is related to a resource that uses the working time calendar "Production".
 
 ![Figure 1](media/01-work-order-scheduling.png)
 
-Calendar setup for tools and objects is not needed in relation to work order scheduling. The assumption is that tools and objects are available 24 hours a day for maintenance.
+Calendar setup for tools and assets is not needed in relation to work order scheduling. The assumption is that tools and assets are available 24 hours a day for maintenance.
+
+
+
