@@ -5,7 +5,7 @@ title: Manually created work orders
 description: This topic explains how to create work orders manually in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/27/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,29 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-15
+ms.dyn365.ops.version: 10.0.5
+
 
 ---
 
 # Manually created work orders
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 
 You can create work orders manually in two ways:
@@ -66,9 +71,9 @@ You can create work orders manually in two ways:
 - In **All work orders**, You can add several assets to a work order in Details view by adding lines on the **Work order maintenance jobs** FastTab. On an asset, you can only select the maintenance job types that are defined on the asset type selected for the asset.  
 - If you have changed an asset service level or an asset criticality after you have used them on a work order (refer to [Asset service levels](../setup-for-objects/object-priorities.md) and [Asset criticalities](../setup-for-objects/object-criticalities.md)), the service level or criticality on the work order is not updated accordingly.
 - Criticality on a work order is re-calculated each time a work order line is added or deleted on the work order.
-- In **All work orders** Details view > **Header** view > **Schedule** FastTab, you can select a responsible maintenance worker group or a responsible maintenance worker in the **Responsible group** or **Responsible** fields. These settings can be changed as long as the work order is active, for example, when the work order lifecycle state changes. The automatic selection made during work order creation is based on the setup in **Responsible maintenance workers**. If you add or remove work order jobs after you have created a work order, and the **Responsible group** field and the **Responsible** field are blank when you update the work order, Asset Management searches for a possible match in the setup form for a responsible maintenance worker group or a responsible maintenance worker. If the **Responsible group** field or the **Responsible** field is already filled out when you update the work order, no changes are made. Read more about responsible maintenance workers and worker groups in [Responsible maintenance workers](../setup-for-requests/responsible-workers.md).
+- In **All work orders** Details view > **Header** view > **Schedule** FastTab, you can select a responsible maintenance worker group or a responsible maintenance worker in the **Responsible group** or **Responsible** fields. These settings can be changed as long as the work order is active, for example, when the work order lifecycle state changes. The automatic selection made during work order creation is based on the setup in **Responsible maintenance workers**. If you add or remove work order jobs after you have created a work order, and the **Responsible group** field and the **Responsible** field are blank when you update the work order, Asset Management searches for a possible match in the setup form for a responsible maintenance worker group or a responsible maintenance worker. If the **Responsible group** field or the **Responsible** field is already filled out when you update the work order, no changes are made. 
 
-- In [Maintenance status](../controlling-and-reporting/maintenance-status.md), you can make a calculation to get an overview of workload regarding incoming and completed work orders.  
+- In **Maintenance status**, you can make a calculation to get an overview of workload regarding incoming and completed work orders.  
 
 - On the **Line details** FastTab, use the **Latitude** and **Longitude** fields to add geographic coordinates for the asset selected on the work order job.  
 
@@ -105,7 +110,7 @@ You can create a related work order to an existing work order if, for example, y
 
 ## Copy work order
 
-It is possible to quickly create a new work order from an existing work order. This way of working with work orders is different from creating work orders based on [Maintenance plans](../preventive-and-reactive-maintenance/maintenance-sequences.md). It is useful if, for example, you have a work order containing many work order jobs with various jobs on different assets that should be completed at regular intervals.
+It is possible to quickly create a new work order from an existing work order. This way of working with work orders is different from creating work orders based on maintenance plans. It is useful if, for example, you have a work order containing many work order jobs with various jobs on different assets that should be completed at regular intervals.
 
 1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
@@ -143,5 +148,5 @@ It is possible to quickly create a new work order from an existing work order. T
 
 
 >[!NOTE]
->Work orders can also be created automatically by scheduling maintenance plan jobs, or by setting up "Auto create" maintenance plans or maintenance rounds on an asset. Read more about automatically created work orders in [Maintenance plans](../preventive-and-reactive-maintenance/preventive-maintenance-overview.md). Work orders created from maintenance requests in **Maintenance schedule** are created with the maintenance job types selected in the maintenance requests.
+>Work orders can also be created automatically by scheduling maintenance plan jobs, or by setting up "Auto create" maintenance plans or maintenance rounds on an asset. Work orders created from maintenance requests in **Maintenance schedule** are created with the maintenance job types selected in the maintenance requests.
 
