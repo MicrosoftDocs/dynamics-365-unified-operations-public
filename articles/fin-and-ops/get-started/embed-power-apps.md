@@ -127,12 +127,13 @@ public final class ClassTest_Extension
     public static boolean isPowerAppPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
+    
     public static boolean isPowerAppTabPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppTabPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
 }
 ```
