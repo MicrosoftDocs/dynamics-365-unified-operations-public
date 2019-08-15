@@ -61,5 +61,3 @@ The figure below shows an example of the interface.
 >[!NOTE]
 >If you want to focus only on capacity planning regarding scheduled work orders, refer to [Calculate capacity load on scheduled work orders](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
-
-
