@@ -51,7 +51,7 @@ We are happy to announce that we have moved to a continuous update cycle for the
 
 As you know, the cloud platform is [locked](whats-new-platform-update-3.md) as of update 3. A locked platform not only enables rich customizations that use extensions but also lets you to make updates without doing costly code upgrades. Starting with update 4, the cloud platform will release monthly updates. Therefore, you can keep new and existing environments up to date with the latest innovations at the click of a button.
 
-To install the latest monthly platform updates in an existing environment, on [LCS](https://lcs.dynamics.com/), go to the Shared asset library, and select the **Software deployable package** tab. There, you will see that the platform update 4 package is ready for deployment, as shown in the following illustration. You can import this package into the project's asset library and then apply it to a specific environment through the update flows. For more details, see the [upgrade topic](../../dev-itpro/migration-upgrade/update-platform-each-release.md).
+To install the latest monthly platform updates in an existing environment, on [LCS](https://lcs.dynamics.com/), go to the Shared asset library, and select the **Software deployable package** tab. There, you will see that the platform update 4 package is ready for deployment, as shown in the following illustration. You can import this package into the project's asset library and then apply it to a specific environment through the update flows. For more details, see the [platform update topic](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md).
 
 [![Platform update 4 package](./media/1111111-1024x171.png)](./media/1111111.png)
 
