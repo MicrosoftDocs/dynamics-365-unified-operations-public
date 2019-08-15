@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up worker calendar
-description: This topic explains how to set up a worker calendar in Enterprise Asset Management.
+description: This topic explains how to set up a worker calendar in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -32,9 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up worker calendar
 
-This topic explains how to set up a worker calendar in Enterprise Asset Management. When you schedule work orders, you create a schedule for workers, tools, and objects. In order to carry out scheduling on workers, a calendar is related to each worker. Workers are related to a resource, and resources have calendars defined along with the possibility of creating calendar deviations, if required. The resource and calendar related to a worker is shown in **Enterprise asset management** > **Setup** > **Workers** > **Workers**.
+When you schedule work orders, you create a schedule for maintenance workers, tools, and assets. In order to carry out scheduling on maintenance workers, a calendar is related to each maintenance worker. Maintenance workers are related to a resource, and working time calendars are set up on resoures. You set up the resource and calendar related to a worker in **Asset management** > **Setup** > **Workers** > **Workers**.
 
-The following figure shows a screenshot of the interface.
+
+............ which are described in the [Create functional locations](../functional-locations/create-functional-locations.md)
+
+
+The following figure shows a screenshot of the interface. The screenshot below shows an example of a maintenance worker who is related to a resource that uses the working time calendar "Production".
 
 ![Figure 1](media/01-work-order-scheduling.png)
 
