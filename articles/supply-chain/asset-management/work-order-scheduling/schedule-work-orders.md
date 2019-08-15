@@ -1,1 +1,119 @@
+---
+# required metadata
 
+title: Schedule work orders
+description: This topic explains how to schedule work orders in Enterprise Asset Management.
+author: josaw1
+manager: AnnBe
+ms.date: 06/28/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 2214
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mkirknel
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Schedule work orders
+
+This topic explains how to schedule work orders in Enterprise Asset Management. The required number of hours for a work order is defined by the sum of forecasted hours on the work order lines minus posted hours. If more time is required, the forecast on the work order must be adjusted accordingly. In the **All work orders** list (**Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**), you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast**. When work orders have been created and estimated, next step is to allocate the required workers and tools to complete the work orders.
+
+Only work orders with a stage that allows scheduling can be scheduled. Allow scheduling is set up in **Work order stages** (**Enterprise asset management** > **Setup** > **Work order** > **Stage** > **Stages** > **General** FastTab > **Allow scheduling** toggle button).
+
+1. Click **Enterprise asset management** > **Common** > **Work orders** > **All work orders**.
+
+2. Select the work orders you want to schedule in the list. For example, you can sort the list by stage.
+
+3. On the **General** tab, click **Schedule**.
+
+4. In the **Schedule work orders** drop-down, you can add selections regarding expected start date or work order priority, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Object**, **Tool**, and **Worker** toggle buttons are set to "Yes".
+
+>[!NOTE]
+>If you set the **Object**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open the work order and reschedule, if required.
+
+5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and workers will be shown in the Infolog.
+
+6. Click **OK** to start the scheduling process.
+
+7. When scheduling is completed, an Infolog shows the number of work orders scheduled, and also more detailed information if the **Verbose** toggle button was set to "Yes".
+
+>[!NOTE]
+>Work orders are scheduled in one cycle per work order, not per work order line. You can also access the **Schedule work orders** drop-down directly from the area page. Click **Enterprise asset management** > **Periodic** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** drop-down, on the **Run in the background** FastTab.
+
+The figure below shows a screenshot of the interface.
+
+![Figure 1](media/03-work-order-scheduling.png)
+
+*Example:* In the figure above, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
+
+The work order type related to work orders may set up scheduling for one worker--refer to [Work order types](../setup-for-work-orders/work-order-types.md). This means that if the work order type is used on a work order, the **One worker** toggle button is automatically set to "Yes" in **All work orders** on the **Schedule** FastTab. During work order scheduling, all work order lines created on the work order will subsequently be scheduled to the same worker. It is possible to clear or select "No" on the **One worker** toggle button in **All work orders** if you want to allow scheduling of several workers or one worker on the work order lines.
+
+The scheduling process in the Enterprise asset management module is done by including different factors in the scheduling calculation:
+
+- Calculating scores for both work orders and workers. The setup of three scores for work orders, and six scores relating to worker selections are done in **Enterprise asset management parameters**. 
+- Checking for matching competencies, meaning skills and certificates, required to perform the job. Skills and certificates are set up on workers in the **Human resources** module (**Human resources** > **Workers** > **Workers** > select worker in the list > **Worker** tab > **Competencies** section > **Skills** and **Certificates** buttons). Also, skills and certificates can be added to job types and job trades. Read more about competencies and job types in [Job groups and job types, variants, and trades](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section.  
+
+## Scores used in work order scheduling
+
+Calculating scores for a work order line is based on expected start date and priority of the work order.
+
+**Start date** calculation: For every future date calculated from the expected start date, the start date score is subtracted and multiplied by the score, which is "10" in the examples below.
+
+**Criticality** calculation: Criticality score multiplied by the criticality on the work order.
+
+**Priority** calculation: Priority score divided by the priority on the work order.
+
+In the examples below, the criticality scores is "2", and the priority scores are "5" and "100".
+
+**Example 1:**
+
+| Work order ID | Expected start date | Work order criticality | Work order priority | Calculation                    | Score    |
+|---------------|---------------------|------------------------|---------------------|--------------------------------|----------|
+| WO-00010816   | Tomorrow            | 2                      | 20                  | (-1 \* 10) + (2 \* 2) + 5 / 20 | \- 5.75  |
+| WO-00010817   | Two days from now   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 5 / 20 | \- 15.75 |
+| WO-00010818   | Two days from now   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 5 / 5  | \- 13    |
+
+The work orders will be scheduled in the following order: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+
+**Example 2:**
+
+| Work order ID | Expected start date | Work order criticality | Work order priority | Calculation                      | Score |
+|---------------|---------------------|------------------------|---------------------|----------------------------------|-------|
+| WO-00010816   | Tomorrow            | 2                      | 20                  | (-1 \* 10) + (2 \* 2) + 100 / 20 | \- 1  |
+| WO-00010817   | Two days from now   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11 |
+| WO-00010818   | Two days from now   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6     |
+
+If the priority score was increased to '100' instead of '5', the order would be: WO-000108**18**, WO-000108**16**, WO-000108**17**.
+
+The six rating scores relating to calculating which workers should work on the work orders are all set up as numbers, which are added to each worker during work order scheduling. The worker with the highest score is selected on the work order. Here is a short description of the worker scores:
+
+| Responsible worker       | If the worker is selected as responsible worker on the work order, the score is added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Responsible worker group | If the worker is part of the responsible worker group on the work order, the score is added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Preferred worker         | If the worker is selected as preferred worker on the object, the score is added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Preferred worker group   | If the worker is part of the preferred worker group on the object, the score is added.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Location                 | If your company uses functional locations, workers get full score if they are located on the functional location related to the object. If the functional location of the object has a parent location, workers on that functional location get 1/2 score. If that location also has a parent, workers on that location get 1/3 score. If that location also has a parent, workers on that location get 1/4 score, and so on. If you company uses object location, which we do not recommend, location, area, and zone are used to calculate location scores. Workers get full score if they are located in the location and area and zone related to the object. If worker location only matches location and area, the rating score for the worker is 2/3 of the full score. If worker location only matches location, the rating score for the worker is 1/3 of the full score. |
+| Start date               | For every date that the scheduled start date is later than the expected start date, the score is subtracted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+
+>[!NOTE]
+>If a score is set to "0", that score is not calculated. This is useful if, for example, you do not want to include responsible worker in your scheduling.
+
+## Competencies used in work order scheduling
+
+Skills and certificate requirements can be set up on job types (**Enterprise asset management** > **Setup** > **Object** > **Job** > **Job types**) and job trades (**Enterprise asset management** > **Setup** > **Object** > **Job** > **Job trades**). Job types and job trades are selected on work order lines. If skills or certificates have been selected on a job type or job trade, and that job type or job trade is used on a work order line, only workers with matching skills and certificates are scheduled to work on the work order.
