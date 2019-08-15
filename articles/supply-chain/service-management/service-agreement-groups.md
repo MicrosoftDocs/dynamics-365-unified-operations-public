@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service agreement groups  
+title: Service agreements overview
 description: Service agreement groups are useful for sorting and filtering service agreements.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Service agreement groups 
+# Service agreements overview
 
 [!include [banner](../includes/banner.md)]
 

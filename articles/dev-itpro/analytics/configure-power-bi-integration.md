@@ -5,7 +5,7 @@ title: Configure Power BI integration for workspaces
 description: This topic describes how to configure a new Microsoft Dynamics 365 for Finance and Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 author: MilindaV2
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: PowerBIConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27661
@@ -65,7 +65,10 @@ By completing this configuration step, you enable Finance and Operations to cont
 
 - **Name** - Your app name.
 - **Application type** - Web app/API
-- **Sign-on URL** - The base URL of your Finance and Operations client and the OAuth suffix. For example, http://contosoax7.cloud.dynamics.com/oauth.
+- **Sign-on URL** - The base URL of your Finance and Operations client. For example, `https://contosoax7.cloud.dynamics.com`.
+
+> [!NOTE]
+> Depending on your version of Finance and Operations, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth/` or `http://contosoax7.cloud.dynamics.com/oauth/`.
 			 
 4. Click **Create**.
 5. Copy the **Application ID**. This will be used in Finance and Operations to connect to the PowerBI.com service.

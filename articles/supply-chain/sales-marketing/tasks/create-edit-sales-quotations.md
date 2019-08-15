@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

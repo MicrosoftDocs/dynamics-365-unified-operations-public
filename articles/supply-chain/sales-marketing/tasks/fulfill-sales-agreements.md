@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesTableListPage, SalesTable, AgreementLine, SalesCreateOrder,  SalesEditLines   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

@@ -16,7 +16,7 @@ ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, Retai
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 219744

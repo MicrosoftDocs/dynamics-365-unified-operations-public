@@ -17,7 +17,7 @@ ms.search.form: RetailSharedParameters, RetailDevice
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 18341

@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 

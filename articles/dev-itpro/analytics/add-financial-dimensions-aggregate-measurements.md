@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

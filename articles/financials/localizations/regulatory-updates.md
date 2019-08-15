@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
@@ -64,20 +64,22 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
 |      April 2019            |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019 on Microsoft Dynamics 365 for Finance and Operations  |
-|      May 2019            |   10.0.2      | Brazil      |   SPED ECD Layout 7   |
-|      Pending            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
-|      Pending            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
-|      Pending            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |
-|      Pending            |   10.0.3      | Lithuania    |   i.SAF report let's user define system Sales tax codes in association with legal tax codes    |
-|      Pending            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
-|      Pending            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
-|      Pending            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
-  | Pending            |   10.0.4      | Brazil    |   Incoming fiscal document 66   |
-   | Pending            |   10.0.4      | Brazil    |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e.   |
-   | Pending            |   10.0.4      | India   |   Display of "Place of supply" and "State" in the GST Tax Invoice  |
-   | Pending            |   10.0.4      | Mexico   |  DIOT third party declaration - changes in layout 2019   |
-   | Pending            |   10.0.4      | Brazil    |   NF-e ICMS-ST - ordinance CAT 42/18 for SP state - CAT 42/18
-   | Pending            |   10.0.4      | Brazil    |   NF-e Decree 54.308/18 - RS NF   |
+|      June 2019            |   10.0.3      | Brazil      |   NF-e new NT 2018.005 - v.1.20   |
+|      June 2019            |   10.0.3      | Brazil      |   SPED ECD Layout 7   |
+|      June 2019            |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019   |
+|      June 2019            |   10.0.3      | Lithuania    |   i.SAF report let's user define system Sales tax codes in association with legal tax codes    |
+|      June 2019            |   10.0.3      | Poland     |   SAF invoices (JPK_FA) v.2 from 1Jul2019  |
+|      June 2019            |   10.0.3      | Brazil   |   ICMS fiscal document adjustments enable table 5.2   |
+|      June 2019            |   10.0.3      | Brazil    |   NF-e Decree 54.308/18 (RS)   |
+  | July 2019            |   10.0.4      | Brazil    |   Incoming fiscal document 66   |
+   | July 2019            |   10.0.4      | Brazil    |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e.   |
+   | July 2019            |   10.0.4      | India   |   Display of "Place of supply" and "State" in the GST Tax Invoice  |
+   | July 2019            |   10.0.4      | Mexico   |  DIOT third party declaration - changes in layout 2019   |
+   | July 2019            |   10.0.4      | Brazil    |   NF-e ICMS-ST - ordinance CAT 42/18 for SP state - CAT 42/18
+   | July 2019            |   10.0.4      | Brazil    |   NF-e Decree 54.308/18 - RS NF   |
+       | Pending            |   10.0.5      | Brazil    |   Sped contributions practical guide 1.31. new guidance   |
+         | Pending            |   10.0.5      | Brazil    |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00   |
+          | Pending            |   10.0.5      | Spain    |   Validation rules change from October 1, 2019   |
    
 
 

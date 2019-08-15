@@ -5,7 +5,7 @@ title: Uninstall a package
 description: This topic explains how to remove a deployable package from your environment.
 author: manado
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211

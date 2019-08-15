@@ -17,7 +17,7 @@ ms.search.form: EventCreateRule
 # ROBOTS:
 audience: Application user
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom:

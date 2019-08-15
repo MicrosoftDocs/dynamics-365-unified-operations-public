@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: AssetBookTable, AssetGroupBookSetup, AssetDepProfileChangeApply_JP,  AssetUndepreciatedBalancedSchedule_JP   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

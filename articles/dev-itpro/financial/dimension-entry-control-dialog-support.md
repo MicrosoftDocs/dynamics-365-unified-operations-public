@@ -3,7 +3,7 @@
 
 title: Support for Dimension Entry controls on dialogs
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
-author: ShylaThompson
+author: robinarh
 manager: AnnBe
 ms.date: 02/06/2019
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26321

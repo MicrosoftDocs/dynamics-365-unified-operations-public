@@ -2,10 +2,10 @@
 # required metadata 
  
 title: View posted sales tax transactions
-description: You can view posted sales tax transactions from various page depending on what you need to view. 
+description: This topic describes some ways to view posted sales tax transactions.
 author: twheeloc
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: TaxTrans, TaxPeriod, TaxTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,18 +30,25 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-You can view posted sales tax transactions from various page depending on what you need to view. This task uses the USMF demo company.
+This topic describes some ways to view posted sales tax transactions. You can view posted sales tax transactions from various pages depending on what you need to view. This task uses the USMF demo company.
 
-1. Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.
-2. Click Show filters.
+# Posted sales tax page
+
+1. In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.
+2. Select **Show filters** to narrow the view to specific transactions.
 3. Close the page.
-4. Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.
-5. Expand the Period intervals section.
-6. Select the interval you are interested in.
-7. Display posted sales tax transactions for the selected settlement period interval.
-8. You can further filter the list of posted sales tax transactions.
-9. Close the page.
-10. Go to Tax > Indirect taxes > Sales tax > Sales tax codes.
-11. On the Action Pane, click Sales tax code.
-12. Click Posted sales tax.
+
+# Sales tax settlement periods page
+
+1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
+2. Expand the **Period intervals** section.
+3. Select the interval you are interested in.
+4. You can further filter the list of posted sales tax transactions.
+5. Close the page.
+
+# Sales tax codes page
+
+1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax codes**.
+2. On the Action Pane, select **Sales tax code**.
+3. Select **Posted sales tax**.
 

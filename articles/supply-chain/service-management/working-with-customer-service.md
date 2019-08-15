@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Work with customer service  
+title: Work with customer service overview 
 description: Customer service supports professional, service-based companies and manufacturing service organizations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/07/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
-# Work with customer service 
+# Work with customer service overview
 
 [!include [banner](../includes/banner.md)]
 

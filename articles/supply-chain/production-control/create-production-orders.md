@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create production orders
+title: Production order lifecycle overview
 description: When a production order is created, a request is initiated to start producing an item. The production order contains information about what will be produced, the quantity to produce, and the planned finish date. It also contains information about which materials to consume and which process to follow to produce the item.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create production orders
+# Production order lifecycle overview
 
 [!include [banner](../includes/banner.md)]
 

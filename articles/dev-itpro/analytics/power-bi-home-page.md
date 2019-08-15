@@ -2,11 +2,11 @@
 # required metadata
 
 
-title: PowerBI.com solutions home page
+title: Power BI content home page
 description: This topic lists PowerBI.com solutions that are available and points you to resources where you can learn more about the solutions.
 author: sericks007
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: PowerBIPbixDeployForm
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265694
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# PowerBI.com solutions home page
+# Power BI content home page
 
 [!include [banner](../includes/banner.md)]
 

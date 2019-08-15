@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: BankParameters, VendPaymMode, CustPaymMode   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
