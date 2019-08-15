@@ -5,7 +5,7 @@ title: Maintenance checklists
 description: This topic describes maintenance checklists in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/27/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,25 +13,30 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-15
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 
 # Maintenance checklists
+
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 Maintenance checklists are set up on maintenance job types and used when you work on a work order. Filling out maintenance checklists is part of completing a work order. See the [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section for more information on how to set up maintenance checklists on maintenance job types in the **Maintenance job type defaults** form.
 
