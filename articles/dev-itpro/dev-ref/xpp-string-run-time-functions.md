@@ -5,7 +5,7 @@ title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
