@@ -39,7 +39,7 @@ To complete these steps, you must first complete the steps in the “Create a co
 
 ## Upload the Payments data model configuration
 1. In the navigation pane, go to **Modules > Organization administration > Workspaces > Electronic reporting**.
-2. In the list, mark the select the configuration provider for sample company, Litware, Inc. If you don’t see this configuration provider, you must first complete the steps in [Create a configuration provider and mark it as active](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).  
+2. In the list, mark the configuration provider for sample company, Litware, Inc. If you don’t see this configuration provider, you must first complete the steps in [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md).
 3. Select **Set active**.
 4. Select **Repositories**. Select a repository for the Operations Resources type, if available. If its available, skip the following steps about creating a new repository.  
 5. Select **Add** to open the drop dialog.
