@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schedule work orders
-description: This topic explains how to schedule work orders in Enterprise Asset Management.
+description: This topic explains how to schedule work orders in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
@@ -32,17 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Schedule work orders
 
-This topic explains how to schedule work orders in Enterprise Asset Management. The required number of hours for a work order is defined by the sum of forecasted hours on the work order lines minus posted hours. If more time is required, the forecast on the work order must be adjusted accordingly. In the **All work orders** list (**Enterprise asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**), you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast**. When work orders have been created and estimated, next step is to allocate the required workers and tools to complete the work orders.
+This topic explains how to schedule work orders in Asset Management. The required number of hours for a work order is defined by the sum of forecasted hours on the work order jobs minus posted hours. If more time is required, the forecast on the work order must be adjusted accordingly. In **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**, you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast** on the **Work order** tab. When work orders have been created and estimated, next step is to allocate the required maintenance workers and tools to complete the work orders.
 
-Only work orders with a stage that allows scheduling can be scheduled. Allow scheduling is set up in **Work order stages** (**Enterprise asset management** > **Setup** > **Work order** > **Stage** > **Stages** > **General** FastTab > **Allow scheduling** toggle button).
+Only work orders with a work order lifecycle state that allows scheduling can be scheduled. Allow scheduling is set up in **Asset management** > **Setup** > **Work orders** > **Lifecycle states** > **General** FastTab > **Allow scheduling** toggle button.
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All work orders**.
 
-2. Select the work orders you want to schedule in the list. For example, you can sort the list by stage.
+2. Select the work orders you want to schedule in the list. For example, you can sort the list by **Current lifecycle state**.
 
 3. On the **General** tab, click **Schedule**.
 
-4. In the **Schedule work orders** drop-down, you can add selections regarding expected start date or work order priority, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Object**, **Tool**, and **Worker** toggle buttons are set to "Yes".
+4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
 >[!NOTE]
 >If you set the **Object**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open the work order and reschedule, if required.
@@ -56,11 +56,9 @@ Only work orders with a stage that allows scheduling can be scheduled. Allow sch
 >[!NOTE]
 >Work orders are scheduled in one cycle per work order, not per work order line. You can also access the **Schedule work orders** drop-down directly from the area page. Click **Enterprise asset management** > **Periodic** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** drop-down, on the **Run in the background** FastTab.
 
-The figure below shows a screenshot of the interface.
+*Example:* In the figure below, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
 
 ![Figure 1](media/03-work-order-scheduling.png)
-
-*Example:* In the figure above, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
 
 The work order type related to work orders may set up scheduling for one worker--refer to [Work order types](../setup-for-work-orders/work-order-types.md). This means that if the work order type is used on a work order, the **One worker** toggle button is automatically set to "Yes" in **All work orders** on the **Schedule** FastTab. During work order scheduling, all work order lines created on the work order will subsequently be scheduled to the same worker. It is possible to clear or select "No" on the **One worker** toggle button in **All work orders** if you want to allow scheduling of several workers or one worker on the work order lines.
 
