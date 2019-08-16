@@ -3606,6 +3606,12 @@
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
       - name: Maintenance downtime
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+    - name: Capacity planning
+      items:
+      - name: Calculate capacity load
+        href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+      - name: Calculate item forecast
+        href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
     - name: Warranty
       items: 
       - name: Warranty agreement
