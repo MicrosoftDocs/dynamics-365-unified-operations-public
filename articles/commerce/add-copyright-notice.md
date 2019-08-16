@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This article explains the steps required in order to add a copyright notice to your e-Commerce website.
 
 ## Prerequisites
-Before you can add a copyright notice on your site, you must:
+Before you can add a copyright notice on your site, you must do the following.
 
 - Have a template that includes the footer fragment you'll be editing in the instructions below.
 - Have a page that uses that template.
