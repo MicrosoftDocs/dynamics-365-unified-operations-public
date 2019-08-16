@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.6
 
 # Dispose of a fixed asset as scrap
 
-The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
+The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset’s acquisition and accumulated depreciation transactions, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
 
 | Transaction                         |   | Dr | Cr |
 |-------------------------------------|---|----|----|
