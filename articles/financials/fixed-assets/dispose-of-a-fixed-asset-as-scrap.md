@@ -49,11 +49,11 @@ The topic describes the process of eliminating transactions for a fixed asset th
 
 [!Note] We recommend working closely with your company's CFO/Controller to identify the correct accounts to use for each transaction type, and to verify that the disposal process and the transactions that it generates, update those accounts correctly.     
 
-When disposing of a fixed asset as scrap, you must have created ledger accounts associated with the asset's acquisition value, depreciation for the current year, depreciation for prior years, and the asset's net book value. The fixed assets transaction types are listed in the Fixed assets posting profile under the **Disposal** FastTab. To view the Fixed assets posting profile, go to **Fixed assets > Setup > Fixed assets posting profile**, then open the **Disposal** FastTab and select **Scrap**. The following illustration shows the **Fixed assets posting profile** page:
+When disposing of a fixed asset as scrap, you must have created ledger accounts associated with the asset's acquisition value, depreciation for the current year, depreciation for prior years, and the asset's net book value. The fixed assets transaction types are listed in the Fixed assets posting profile under the **Disposal** FastTab. To view the Fixed assets posting profile, go to **Fixed assets > Setup > Fixed assets posting profile**, then open the **Disposal** FastTab and select **Scrap**. The following illustration shows the **Fixed assets posting profile** form:
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_1.png">
 
-For the following example, assume that there is a fixed asset that was acquired on January 1, 2018,, and that it will be scrapped on March 31st 2019. 
+For the following example, assume that there is a fixed asset that was acquired on January 1, 2018, and that it will be scrapped on March 31st 2019. 
 
 Acquisition price 	  		= 24,000.00 USD
 
@@ -64,6 +64,7 @@ Depreciation method is straight line service line.
 Depreciation amount			= 1000.00 USD per month
 
 This fixed asset was acquired and depreciated for 15 months from January 2018 through March 2019. This means the asset's net book value is 9,000.00 USD.
+
 Acquisition price 	= 24,000.00 USD
 
 Depreciation 		    = (15,000.00) USD
@@ -72,7 +73,7 @@ Net book value	  	=    9,000.00 USD
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_2.png">
 
-To create a disposal journal, go to **Fixed assets > Journal entries > Fixed assets journal** then move to **Lines**, select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, do not enter an amount in either either the **Debit** or **Credit** fields.  
+To create a disposal journal, go to **Fixed assets > Journal entries > Fixed assets journal** then move to **Lines**, select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, do not enter an amount in either the **Debit** or **Credit** fields.  
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_3.png">
 
