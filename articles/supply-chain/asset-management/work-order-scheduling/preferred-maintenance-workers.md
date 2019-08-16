@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can make a preference regarding which maintenance workers are allocated to complete work orders during work order scheduling. The use of this functionality is optional, but it can help you make a choice for the most qualified maintenance worker to complete a job, based on worker skills and competencies. Therefore, during work order scheduling, the setup in **Preferred maintenance workers** is used to determine if a specific maintenance worker or worker group should be scheduled for a work order. Only maintenance workers that are available at scheduling time will be scheduled. If a preferred maintenance worker setup matches a work order during scheduling, but the maintenance worker is allocated to other jobs, the work order will be scheduled to another, available, maintenance worker.
 
-Before you can set up preferred maintenance workers, you must first set up the maintenance workers and worker groups that should be available for selection. Refer to [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) for a description on how to set up maintenance workers and worker groups.
+Before you can set up preferred maintenance workers, you must first set up the maintenance workers and worker groups that should be available for selection. Refer to [Maintenance workers and worker groups](../setup-for-assets/maintenance-workers-and-worker-groups.md) for a description on how to set up maintenance workers and worker groups.
 
 ## Set up preferred workers
 
@@ -66,7 +66,7 @@ or a combination of those selections. The more selections you make for the same 
 
 ![Figure 1](media/02-work-order-scheduling.png)
 
-You can also set up responsible maintenance workers who can be selected when a maintenance request or a work order is created. In **All work orders** and **All maintenance requests**, you can edit the selection, if required. Refer to [Responsible maintenance workers](../setup-for-requests/responsible-workers.md) for more information.
+You can also set up responsible maintenance workers who can be selected when a maintenance request or a work order is created. In **All work orders** and **All maintenance requests**, you can edit the selection, if required. Refer to [Responsible maintenance workers](../setup-for-maintenance-requests/responsible-maintenance-workers.md) for more information.
 
 During work order scheduling, different scores are calculated to determine which workers should complete the jobs related to a work order (those scores are set up in **Asset management parameters** > **Work order scheduling** link). If two or more preferred maintenance workers or responsible maintenance workers get the same score during work order scheduling, one worker is randomly selected. Otherwise, it is always the worker with the highest score who is allocated to complete a work order.
 
