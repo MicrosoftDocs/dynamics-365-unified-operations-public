@@ -30,31 +30,31 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Schedule exclusively
+# Dispatch work order
 
-This topic explains how to schedule exlusively in Enterprise Asset Management. You can schedule one work order or work order lines to one worker using the **Schedule exclusively** functionality.
+You can schedule one work order or work order jobs to one worker using the **Dispatch** functionality.
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order in the list.
 
-3. On the **General** tab, click **Schedule exclusively**.
+3. On the **General** tab, click **Dispatch**.
 
-4. Select the worker in the **Worker** field.
+4. n the **Schedule work order** dialog, select the worker in the **Worker** field.
 
-5. In the **Schedule hours** field, you can insert expected work hours, in case expected work hours differ from forecast hours.
+5. In the **Schedule hours** field, you can insert expected work hours in case expected work hours differ from forecast hours.
 
-6. In the **Scheduled start** field, you can insert another start date and time if you do not want to use expected start date and time.
+6. In the **Scheduled start** field, you can edit start date and time, if required.
 
-7. If the scheduling process should observe capacity limitations regarding resources already scheduled on other jobs, make sure that the **Object**, **Tool**, and **Worker** toggle buttons are set to "Yes". If you want to see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means detailed information about the calculated scores on the work order is shown in the Infolog.
+7. If the scheduling process should observe capacity limitations regarding resources already scheduled on other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes". If you want to see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means detailed information about the calculated scores on the work order is shown in the Infolog.
 
-8. Select "Yes" on the **Ignore calendar** toggle button to ignore closed days in the calendar (applies to object, worker, and tools). Select "Yes" on the **Ignore scheduled execution** toggle button to ignore limitations that may have been selected on the work order regarding scheduling. Refer to the [Scheduled execution](../setup-for-work-orders/scheduled-execution.md) section for information on the setup of scheduled execution.
+8. Select "Yes" on the **Ignore schedule** toggle button to ignore closed days in the calendar (applies to asset, worker, and tools). Select "Yes" on the **Ignore scheduled execution** toggle button to ignore limitations that may have been selected on the work order regarding scheduling. Refer to the [Scheduled execution](../setup-for-work-orders/scheduled-execution.md) section for information on the setup of scheduled execution.
 
-9. Click **OK**. The work order stage is automatically updated to the "Scheduled" stage specified in the work order stage group.
+9. Click **OK**. The work order lifecycle state is automatically updated to the "Scheduled" lifecycle state specified **Asset management** > **Setup** > **Work orders** > **Lifecycle models**.
 
-The figure below shows a screenshot of the interface.
+The figure below shows an example of dispatch selections in the **Schedule work order** dialog.
 
 ![Figure 1](media/04-work-order-scheduling.png)
 
 >[!NOTE]
->If you want to delete the schedule on a work order, this is done by selecting the work order in the **All work orders** list, and clicking **Delete schedule** on the **General** tab. Remember to manually update the work order stage if you delete the schedule.
+>If you want to delete the schedule on a work order, this is done by selecting the work order in **All work orders** and clicking **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.
