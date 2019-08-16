@@ -67,6 +67,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
+- [Fixed assets (Russia)](rus-fixed-assets.md)
 - [Set up fixed assets](rus-set-up-fixed-assets.md)
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)

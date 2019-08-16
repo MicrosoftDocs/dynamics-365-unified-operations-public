@@ -90,8 +90,6 @@
     items:
     - name: X++ and debugger features
       href: dev-tools/new-x-debugger-features.md
-    - name: Debug X++ against copies of production databases
-      href: dev-tools/debug-x-issue-against-copy-of-production.md
     - name: Debug X++ code
       href: dev-tools/debug-xpp.md
     - name: EventHandlerResult classes in request or response scenarios
