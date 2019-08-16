@@ -122,8 +122,6 @@ After you complete the steps in Set up default descriptions, earlier in this top
 
 4.  Repeat steps 1 through 3 to add more parameters.
 
-## See also
 
-[Default descriptions (form)](https://technet.microsoft.com/en-us/library/aa615730\(v=ax.60\))
 
   
