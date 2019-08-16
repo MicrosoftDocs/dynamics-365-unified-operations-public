@@ -81,7 +81,7 @@ In the examples below, the criticality score is "2", and the service level score
 
 **Example 1:**
 
-| Work order ID | Expected start date | Work order criticality | Work orderservice level | Calculation               | Score    |
+| Work order ID | Expected start date | Work order criticality | Work order               service level | Calculation               | Score    |
 |---------------|---------------------|------------------------|--------------------------|---------------------------|----------|
 | WO-00010816   | Tomorrow            | 2                      | 20              | (-1 \* 10) + (2 \* 2) + 5 / 20 | \- 5.75  |
 | WO-00010817   | Two days from now   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20 | \- 15.75 |
