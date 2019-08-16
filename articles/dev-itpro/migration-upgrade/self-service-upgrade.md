@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,6 @@ ms.dyn365.ops.version: 10.0.1
 > [!IMPORTANT]
 > This topic applies to the following starting versions:
 >
-> - Microsoft Dynamics AX 7.0 (February 2016)
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
 > - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
 > - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
