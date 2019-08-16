@@ -36,8 +36,8 @@ ms.dyn365.ops.version: Platform update 30
 
 This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 30. This version has a build number of 7.0.XXXX. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
-## Feature name
-Provide a brief description of the feature and link to the topic where they can read the details.
+## Readable date time format for dateTime fields in business event payload
+When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
 
 ## Feature name
 Provide a brief description of the feature and link to the topic where they can read the details.
