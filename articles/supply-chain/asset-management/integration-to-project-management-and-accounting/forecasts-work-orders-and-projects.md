@@ -61,7 +61,7 @@ Example: In the figure below, the setup of asset type "Truck Engine" means that 
 
 ![Figure 1](media/01-integration-to-pma.png)
 
-The purpose of the project ID on the work order job, and the related activity number (**Asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order job, and the asset selected on the work order job, in the **Project management and accounting** module. Read more about cost control in Asset Management in [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+The purpose of the project ID on the work order job, and the related activity number (**Asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order job, and the asset selected on the work order job, in the **Project management and accounting** module. 
 
 In the figure below, you see a graphic overview of work order projects and related project activities.
 
@@ -92,7 +92,7 @@ Associations between work order project groups, related project types, project s
 
 ![Figure 5](media/05-integration-to-pma.png)
 
-Refer to [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) regarding how to set up work order projects, and to [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md) regarding how to create work order lifecycle states.
+Refer to [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) regarding how to set up work order projects, and to [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md) regarding how to create work order lifecycle states.
 
 The figure below shows a graphic overview of the various projects that are created in the **Asset management** module to allow integration with the **Project management and accounting** module, as well as the work processes to which the projects are related.
 
