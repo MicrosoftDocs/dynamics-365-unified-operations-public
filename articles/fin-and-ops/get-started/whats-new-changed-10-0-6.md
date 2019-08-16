@@ -52,6 +52,9 @@ What do you need to do to take this change?
 -	As the V1 entity has been deprecated, you should start migrating from V1 to V2. If you are using the  “418-product configuration models” template, you can click on “load default templates” button and reload the template “418 – product configuration models”
 -	If you need to keep compatibility with existing systems, you can for now continue using the existing template and the (deprecated) V1 entity until you move your integrations to the new template. 
 
+## Feature management enhancements
+Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
+
 ## Additional resources
 
 ### Bug fixes
