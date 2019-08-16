@@ -45,31 +45,31 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
 >[!NOTE]
->If you set the **Object**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open the work order and reschedule, if required.
+>If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
 
-5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and workers will be shown in the Infolog.
+5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Infolog.
 
 6. Click **OK** to start the scheduling process.
 
 7. When scheduling is completed, an Infolog shows the number of work orders scheduled, and also more detailed information if the **Verbose** toggle button was set to "Yes".
 
 >[!NOTE]
->Work orders are scheduled in one cycle per work order, not per work order line. You can also access the **Schedule work orders** drop-down directly from the area page. Click **Enterprise asset management** > **Periodic** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** drop-down, on the **Run in the background** FastTab.
+>Work orders are scheduled in one cycle per work order, not per work order job. You can also open the **Schedule work orders** dialog directly in **Asset management** > **Periodic** > **Work orders** > **Schedule work orders**. Make your selections and click **OK** to start work order scheduling. It is possible to set up work order scheduling as a batch job in the **Schedule work orders** dialog > the **Run in the background** FastTab.
 
 *Example:* In the figure below, the formula inserted in the **Expected start** field will generate work order scheduling for all work orders with expected start date a week from now and later. This formula may be useful when you run work order scheduling on an ongoing basis, but you want to make sure the work orders scheduled for the next 5-6 days are not rescheduled.
 
 ![Figure 1](media/03-work-order-scheduling.png)
 
-The work order type related to work orders may set up scheduling for one worker--refer to [Work order types](../setup-for-work-orders/work-order-types.md). This means that if the work order type is used on a work order, the **One worker** toggle button is automatically set to "Yes" in **All work orders** on the **Schedule** FastTab. During work order scheduling, all work order lines created on the work order will subsequently be scheduled to the same worker. It is possible to clear or select "No" on the **One worker** toggle button in **All work orders** if you want to allow scheduling of several workers or one worker on the work order lines.
+The work order type related to work orders may set up scheduling for one maintenance worker (**Asset management** > **Setup** > **Work orders** > **Work order types** > **One maintenance worker** toggle button set to "Yes"). This means that if the work order type is used on a work order, the **One maintenance worker** toggle button is automatically set to "Yes" on the **All work orders** details page > **Header** view > **Schedule** FastTab. During work order scheduling, all work order jobs created on the work order will subsequently be scheduled to the same maintenance worker. If required, you can edit the selection on the **One maintenance worker** toggle button in **All work orders** to allow scheduling of several workers or one worker on the work order jobs.
 
-The scheduling process in the Enterprise asset management module is done by including different factors in the scheduling calculation:
+The scheduling process in Asset Management includes several factors in the scheduling calculation:
 
-- Calculating scores for both work orders and workers. The setup of three scores for work orders, and six scores relating to worker selections are done in **Enterprise asset management parameters**. 
-- Checking for matching competencies, meaning skills and certificates, required to perform the job. Skills and certificates are set up on workers in the **Human resources** module (**Human resources** > **Workers** > **Workers** > select worker in the list > **Worker** tab > **Competencies** section > **Skills** and **Certificates** buttons). Also, skills and certificates can be added to job types and job trades. Read more about competencies and job types in [Job groups and job types, variants, and trades](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) section.  
+- Calculating scores for both work orders and maintenance workers. Scores for work orders and maintenance workers are set up in **Asset management parameters**. 
+- Checking for matching competencies, meaning skills and certificates, required to perform the job. Skills and certificates are set up on maintenance workers in the **Human resources** module (**Human resources** > **Workers** > **Workers** > select worker in the list > **Worker** tab > **Competencies** section > **Skills** and **Certificates** buttons). Also, skills and certificates can be added to maintenance job types and maintenance job trades. Read more about competencies and maintenance job types in [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).  
 
 ## Scores used in work order scheduling
 
-Calculating scores for a work order line is based on expected start date and priority of the work order.
+Calculating scores for a work order job is based on expected start date and the service level of the work order.
 
 **Start date** calculation: For every future date calculated from the expected start date, the start date score is subtracted and multiplied by the score, which is "10" in the examples below.
 
