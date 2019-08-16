@@ -47,7 +47,7 @@ The Revenue recognition module includes the following setup options.
 
 A new Revenue recognition module has been added, which includes menu items for all the setup. 
 
-## Revenyue recognition journals
+## Revenue recognition journals
 A new journal type has been introduced for revenue recognition. The journal is required and will be used in two scenarios. 
 
 The first scenario occurs when after the contractual obligations are complete, the deferred revenue is recognized by creating a revenue recognition journal based on the details on the revenue schedule. The journal contains an accounting entry to move the balance from the deferred revenue ledger account to the revenue ledger account. 
