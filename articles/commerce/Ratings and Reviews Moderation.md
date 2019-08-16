@@ -35,7 +35,7 @@ ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 
 ---
 
-# Ratings and Reviews  Moderation Overview
+# Ratings and Reviews Moderation Tool
 
 Dynamics 365 for Commerce uses Azure Cognitive Service to auto moderate review text on filtering profane words.  Additionally there is review moderation tool, under eCommerce Authoring tool, available for the following actions:
 
