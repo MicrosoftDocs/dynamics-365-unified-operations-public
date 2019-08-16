@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a copyright notice
-description:  This article explains the steps required in order to add a copyright notice to your e-Commerce website.
+description:  This article explains the steps required to add a copyright notice to your e-Commerce website.
 author: psimolin
 manager: AnnBe
 ms.date: 10/01/2019
@@ -45,13 +45,13 @@ Before you can add a copyright notice on your site, you must:
 
 To add a copyright notice to the footer for your site, follow these steps:
 
-1. Open the footer fragment by going to the **Fragments** tab and selecting Footer
-1. Click **Check out** to make the Footer fragment writeable 
-1. Expand the footer module and sub footer Slot
-1. Select **Sub footer** or if it does not exist, click the ellipsis menu in order to add it using "Add module"
-1. Click **Add Data Source** from the properties pane, Choose **Heading**
+1. Open the footer fragment by going to the **Fragments** tab and selecting **Footer**. 
+1. Click **Check out** to make the footer fragment writeable.
+1. Expand the footer module and sub footer slot.
+1. Select **Sub footer**, or if it does not exist click the ellipsis menu in order to add it using **Add module**.
+1. Click **Add Data Source** from the properties pane, Choose **Heading**.
 1. Add your copyright notice in **Input text** field.
 
-After saving the fragment your copyright notice is visible automatically on all pages that use the Footer.
+After saving the fragment your copyright notice is visible automatically on all pages that use the footer.
 
 
