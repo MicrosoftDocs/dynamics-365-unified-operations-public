@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/dev-itpro/migration-upgrade/update-platform-each-release.md",
+      "redirect_url": "upgrade-latest-platform-update",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production.md",
       "redirect_url": "../database/dbmovement-scenario-debugdiag",
       "redirect_document_id": "false"
@@ -25,7 +30,6 @@
       "redirect_url": "../../fin-and-ops/get-started/whats-new-changed",
       "redirect_document_id": "false"
     },
-
   {
     "source_path": "articles/dev-itpro/perf-test/perfsdk-tutorial.md",
     "redirect_url": "/dynamics365/unified-operations/dev-itpro/perf-test/single-user-test-perf-sdk",
