@@ -56,6 +56,6 @@ The figure below shows the **Schedule work orders** dialog with the selections f
 
 8. If the scheduling process results in double bookings, you will see a message on the screen, and you can adjust the related work orders.
 
-<NOTE
+>[!NOTE]
 >In order to schedule a maintenance worker for the work order, that maintenance worker must be available at the expected start date and time. Worker availability is set up in the worker calendar. 
 
