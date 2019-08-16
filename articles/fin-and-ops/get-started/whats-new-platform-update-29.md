@@ -98,6 +98,9 @@ The following enhanced extensibility capabilities have been added in Platform up
 - Allow table display methods added via extension to be used as lookup methods (Ref# 243486).
 - Enable display methods to be added to Form Datasources via extension (Ref# 256004).
 
+## CodeLens for method references in the X++ editor
+The X++ source code editor now takes advantage of the CodeLens functionality of Visual Studio. The number of references to an X++ method is shown in CodeLens right above method declaration line. You can click on the reference count to find all references to the method. 
+
 ## Additional resources
 
 ### Platform update 29 bug fixes
