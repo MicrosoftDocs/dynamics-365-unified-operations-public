@@ -71,6 +71,7 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 | 7.3 with PU 24 – PU 26<br>10.0.0 with PU 24 – 10.0.2 with PU 26 | Week of May 13, 2019 | Week of May 27, 2019 |
 | 7.3 with PU 25 – PU 27<br>10.0.1 with PU 25 – 10.0.3 with PU 27 | Week of June 10, 2019 | Week of June 24, 2019 |
 | 7.3 with PU 26 – PU 28<br>10.0.2 with PU 26 – 10.0.4 with PU 28 | Week of July 8, 2019 | Week of July 29, 2019 |
+| 7.3 with PU 27 – PU 29<br>10.0.3 with PU 27 – 10.0.5 with PU 29 | Week of October 7, 2019 | Week of October 21, 2019 |
 
 ## Refactor your customizations as extensions
 
