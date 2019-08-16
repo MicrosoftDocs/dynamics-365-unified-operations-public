@@ -84,7 +84,7 @@ Before you create transactions for any fixed or intangible asset, you must regis
     - **Bar code** – You can manually enter the bar code, or it can be automatically generated. To automatically generate a bar code, set the **Bar code equals inventory number** option to **Yes** in the Fixed assets parameters (**Fixed assets (Russia) \> Setup \> Parameters**).
 
         > [!NOTE]
-        > The **Location** and **Worker ID** fields are automatically set when you create a record on the **Transfer FA** page list (go to **Fixed assets (Russia) \> Common \> Fixed assets**, and then, on the **Fixed asset** tab, in the **History** group, select **Transfer**).
+        > The **Location** and **Worker ID** fields are automatically set when you create a record on the **Transfer FA** page list (go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**, and then, on the **Fixed asset** tab, in the **History** group, select **Transfer**).
 
     - **Output/mileage** – Enter the size of the assumed production/travel for the fixed asset if the **Product output/mileage** depreciation profile is selected for the fixed asset in a value model. In this case, you should enter records on the **Product output/mileage** page list.
 
@@ -92,7 +92,7 @@ Before you create transactions for any fixed or intangible asset, you must regis
 
 4. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
 
-    In the **FA structure** field shows all the fixed asset accounts that have a reference to the fixed asset (if the fixed asset is the main fixed asset).
+    The **FA structure** field shows all the fixed asset accounts that have a reference to the fixed asset (if the fixed asset is the main fixed asset).
 
 5. Select the **Purchase/Sale** FastTab to view information about the purchase and sale of the fixed asset.
 
