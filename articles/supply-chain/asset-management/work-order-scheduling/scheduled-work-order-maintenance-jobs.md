@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The **Scheduled work order maintenance jobs** page is used to get an overview of the work orders allocated to a resource. Work orders using resource types "Human resources", "Tool", and "Machine" are shown in the list. The list can be used to get an overview of work orders allocated to a specific resource. You can also use it to quickly find a work order allocated to a maintenance worker who, for example, called in sick this morning, and then quickly allocate another maintenance worker to the job.
 
-## View Scheduled work order maintenance jobs
+## View scheduled work order maintenance jobs
 
 1. Click **Asset management** > **Common** > **Work orders** > **Scheduled work order maintenance jobs**. You see a list of all work orders set to work order lifecycle state "Scheduled" or "In progress".
 
