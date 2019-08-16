@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Operations platform update 4 (F
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 4. This version was released in February 2017 and has a build number of 7.0.4425.16161.
 author: sericks007
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
