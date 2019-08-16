@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Schedule exclusively
-description: This topic explains how to schedule exlusively in Enterprise Asset Management.
+title: Dispatch work order
+description: This topic explains how to dispatch a work order in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 06/28/2019
