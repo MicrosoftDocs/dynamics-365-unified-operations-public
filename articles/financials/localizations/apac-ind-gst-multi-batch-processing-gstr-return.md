@@ -31,6 +31,7 @@ ms.dyn365.ops.version: 10.0.6
 # Enable multi-batch processing for GSTR reports
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Many tasks in Microsoft Dynamics 365 for Finance and Operations can be run as part of a batch job. Batch jobs are typically created for tasks such as processing reports, coordinating scheduled maintenance, and creating and sending documents such as invoices. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. The tasks in a batch job can run either sequentially or at the same time.
 
