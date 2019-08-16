@@ -5,7 +5,7 @@ title: Export a database
 description: This topic explains how to export a database for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,15 +48,16 @@ To determine the root cause of the failure, download the runbook logs by using t
 
 When you export a database backup from an environment, some elements of the database aren't exported in the backup file. Here are some examples:
 
-* Email addresses in the LogisticsElectronicAddress table
-* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables
-* SMTP password in the SysEmailSMTPPassword table
-* SMTP Relay server in the SysEmailParameters table
-* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables
-* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables
-* Document attachments in the DocuValue table
-
-Additionally, all users except the admin are disabled, and all batch jobs are set to a status of **Withhold**.
+* Email addresses in the LogisticsElectronicAddress table.
+* Batch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
+* SMTP password in the SysEmailSMTPPassword table.
+* SMTP Relay server in the SysEmailParameters table.
+* Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
+* Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
+* Document attachments in the DocuValue table. This includes any Office Templates that were overriden in the source environment.
+* Connection string in the PersonnellIntegrationConfiguration table
+* All users except the admin will be set to **Disabled** status.
+* All batch jobs are set to **Withhold** status.
 
 ### Known issues
 
