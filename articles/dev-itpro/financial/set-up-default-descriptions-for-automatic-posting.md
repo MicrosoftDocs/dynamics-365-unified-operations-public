@@ -33,11 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up default descriptions for automatic posting 
 
-
-_**Applies To:** Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2_
-
 This topic explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger. You can set up default description text by using freeform text or by selecting fixed variables.
-
 
 > [!NOTE]
 > <P>For certain transaction types in some countries/regions, you can also include text from fields in the Microsoft Dynamics AX database that are related to those transaction types. These transaction types and countries/regions are listed in Optional: Add other text to default descriptions, later in this topic.</P>
@@ -64,7 +60,7 @@ This topic explains how to set up default text that is used to describe accounti
 
 ## Optional: Add other text to default descriptions
 
-For certain transactions types in some countries/regions, you can include text in your default descriptions that come from fields in the Microsoft Dynamics AX database that are related to those transaction types. The following lists show the transaction types and countries/regions for which this option is available.
+For certain transactions types in some countries/regions, you can include text in your default descriptions that come from fields in your data that are related to those transaction types. The following lists show the transaction types and countries/regions for which this option is available.
 
 **Transaction types**
 
