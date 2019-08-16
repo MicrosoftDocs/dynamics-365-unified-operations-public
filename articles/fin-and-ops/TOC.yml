@@ -1031,7 +1031,9 @@
         href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
       - name: Dispose of a fixed asset using a free text invoice
         href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-      - name: Fixed asset mass update
+       - name: Dispose of a fixed asset as scrp
+        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
+     - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
         href: ../financials/fixed-assets/acquire-assets-procurement.md
