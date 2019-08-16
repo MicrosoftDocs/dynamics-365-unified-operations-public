@@ -116,7 +116,7 @@ Import the latest versions of the configurations. The version description usuall
 >
 > ![Default for model mapping option](media/emea-gbr-default-for-model-mapping-parameter.png)
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Set up application-specific parameters
 
@@ -134,10 +134,9 @@ The following table provides details about the result values.
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
 | **VATDue**       | <ul><li>[Tax amount] of **vatDueSales** box.</li><li>[Tax base amount] **totalValueSalesExVAT** box.</li><li>[Tax base amount] of **totalValueGoodsSuppliedExVAT** box. In addition to calculating this box, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the Sales tax code is set as **EU**.</li></ul>| <ul><li>Sales</li><li>SalesCreditNote</li><li>SalesReverseCharge</li><li>SalesReverseChargeCreditNote</li></ul>|
 | **VATDueEC**     |<ul><li>[Tax amount] of **vatDueAcquisitions** and [Tax base amount] of **totalAcquisitionsExVAT** boxes. In addition to calculating these boxes, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li><li>[Tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li></ul> | <ul><li>UseTax</li><li>UseTaxCreditNote</li></ul>|
-| **ECSupplies**   | <ul><li>[Tax base amount]of **totalValueSalesExVAT** box.</li><li>[Tax base amount] of **totalValueGoodsSuppliedExVAT** box. In addition to calculating the **totalValueGoodsSuppliedExVAT** box amount, the reporting type of the item sales tax group is not **Service**. The **Country/region type** of the sales tax code is "EU".</li></ul>| <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul>|
-| **VATReclaimed** | <ul><li>[Deductible sales tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li><li>[Tax amount] of **vatDueAcquisitions** box. In addition to calculating this box, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li></ul>| <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li></ul> |
+| **ECSupplies**   | <ul><li>[Tax base amount] of **totalValueSalesExVAT** box.</li><li>[Tax base amount] of **totalValueGoodsSuppliedExVAT** box. In addition to calculating the **totalValueGoodsSuppliedExVAT** box amount, the reporting type of the item sales tax group is not **Service**. The **Country/region type** of the sales tax code is "EU".</li></ul>| <ul><li>SaleExempt</li><li>SalesExemptCreditNote</li></ul>|
+| **VATReclaimed** | <ul><li>[Deductible sales tax amount] of **vatReclaimedCurrPeriod** box.</li><li>[Tax base amount] of **totalValuePurchasesExVAT** box.</li><li>[Tax amount] of **vatDueAcquisitions** box. In addition to calculating the **vatDueAcquisitions** box amount, the reporting type of the item sales tax group is not **Service**. The **Country/region** type of the sales tax code is **EU**.</li></ul> | <ul><li>Purchase</li><li>PurchaseCreditNote</li><li>PurchaseReverseCharge</li><li>PurchaseReverseChargeCreditNote</li><li>PurchaseExempt</li><li>PurchaseExemptCreditNote</li></ul> |
 | **Other**        | Use the **Not blank** value for this result and set it up at the end of your list of result values.| **Not blank**|
-
 
 For each value, users can define a set of sales tax codes together with a classifier that is associated with the direction of the tax transaction and the credit note identifier. The following table provides a definition of this classifier.
 
@@ -176,11 +175,11 @@ In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and selec
 After the UK MTD-VAT setup.zip file is downloaded, open Finance and Operations, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
 
 Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synchronized. To do this, complete the following steps.
-1.	In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for the confirmation that the refresh has completed. For more information about refreshing the entity list, see [“Entity list refresh”](../../dev-itpro/data-entities/data-entities.md#entity-list-refresh) for details.
-2.	Validate that the source data and target data are mapped correctly. For more information, see the validation section in the topic, [Data import and export jobs](../../dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
-3.	Before the data entities are used for the first time to import the data from the package, synchronize the source data and target data mapping. Select each data entity in the list of the package, on the Action Pane select **Map target mapping**, and then click **Generate mapping** on top of the grid to create a mapping from scratch. Save the mapping. Repeat this step for each of the data entities in the package before you start import.
-For more information about data management, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md). 
 
+1.	In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for the confirmation that the refresh has completed. For more information about refreshing the entity list, see ["Entity list refresh"](../../dev-itpro/data-entities/data-entities.md#entity-list-refresh) for details.
+2.	Validate that the source data and target data are mapped correctly. For more information, see the validation section in the topic, [Data import and export jobs](../../dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+3.	Before the data entities are used for the first time to import the data from the package, sync the mapping of source data and target data. In the list for the package, select each data entity, and then, on the Action Pane, select **Modify target mapping**. Then, above the grid for the package, select **Generate mapping** to create a mapping from scratch. Finally, save the mapping. Repeat this step for each data entity in the package before you start the import.
+For more information about data management, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md). 
 
 You must now import data from the UK MTD-VAT setup.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **UK MTD-VAT setup.zip** file on your computer, and upload it.
 
@@ -306,7 +305,7 @@ To work with MTD for VAT, the VAT registration number of your legal entity must 
 1. Create a registration type that you will use for VAT registration numbers. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation). 
 2. Associate the registration type with a **VAT ID**. For more information, see [Registration category](emea-registration-ids.md#supported-registration-categories).
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and on the Action Pane, select **Registration ID**.
-4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**” registration category.
+4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**" registration category.
 
 ![Sales tax inquiry](media/reg-ids-setup.png)
 
@@ -481,66 +480,45 @@ The following security privileges are available for electronic messages.
 
 To prevent fraud, the HMRC APIs provide HTTP headers that must be used to pass audit data.
 
-Depending on the architecture of the environment that is used by a company which interoperates with the MTD for VAT, a different set of HTTP headers for fraud prevention must be transmitted. The header, **Gov-Client-Connection-Method** must represent the connection method used for the request made by the company. It is supposed that most companies using Finance and Operations in cloud architecture use the **WEB_APP_VIA_SERVER** connection method interoperating with HMRC through Electronic messages functionality. It is also possible that a user may initiate a batch job for interoperation with HMRC. In this case, the connection method will be transmitted as **BATCH_PROCESS_DIRECT**. 
+Depending on the architecture of the environment that is used by a company which interoperates with the MTD for VAT, a different set of HTTP headers for fraud prevention must be transmitted. The header, **Gov-Client-Connection-Method** must represent the connection method used for the request made by the company. It is supposed that most companies using Finance and Operations in cloud architecture use the **WEB\_APP\_VIA\_SERVER** connection method interoperating with HMRC through Electronic messages functionality. It is also possible that a user may initiate a batch job for interoperation with HMRC. In this case, the connection method will be transmitted as **BATCH\_PROCESS\_DIRECT**. 
 
-The **WEB_APP_VIA_SERVER** connection method assumes transmission of the following headers.
+The **WEB\_APP\_VIA\_SERVER** connection method assumes transmission of the following headers.
 
 | HTTP header                      | Description                                                                                                                         | Coverage                        |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Gov-Client-Public-IP**             | The public IP address (IPv4 or IPv6) from which the originating device makes the request.                                               | Not included |
 | **Gov-Client-Public-Port**           | The public TCP port that the originating device uses when initiating the request.                                                       | Not included |
-| **Gov-Client-Device-ID**             | An identifier unique to an originating device.                                                                                          | Not included |
+| **Gov-Client-Device-ID**             | An identifier that is unique to an originating device.                                                                                          | **Included** (in part 2) |
 | **Gov-Client-User-IDs**              | A key-value data structure containing the user identifiers.                                                                             | Not included |
-| **Gov-Client-Timezone**              | The local time-zone of the originating device.                                                                                          | Not included |
+| **Gov-Client-Timezone**              | The local time zone of the originating device.                                                                                          | **Included** (in part 2) |
 | **Gov-Client-Local-IPs**             | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included |
-| **Gov-Client-Screens**               | Information related to the originating device’s screens. The fields include: width is the reported width of the screen, in pixels; height is the reported height of the screen, in pixels; scaling-factor is the reported scaling factor of the screen; color-depth is the color depth of the screen, in bits.                                                           | Not included |
-| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device in which the user initiated (directly or indirectly) the API call to HMRC. | Not included |
-| **Gov-Client-User-Agent**            | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | Not included |
-| **Gov-Client-Browser-Plugins**       | A list of browser plug-ins on the originating device.                                                                                    | Not included |
-| **Gov-Client-Browser-JS-User-Agent** | JavaScript-reported user agent string from the originating device.                                                                      | Not included |
-| **Gov-Client-Browser-Do-Not-Track**  | Whether the **Do Not Track option** is enabled on the browser.                                                                              | Not included |
+| **Gov-Client-Screens**               | Information that is related to the originating device's screens. The following fields are included:<ul><li><strong>width</strong> – The reported width of the screen, in pixels</li><li><strong>height</strong> – The reported height of the screen, in pixels</li><li><strong>scaling-factor</strong> – The reported scaling factor of the screen</li><li><strong>color-depth</strong> – The color depth of the screen, in bits.</li></ul> | **Included** (in part 2) |
+| **Gov-Client-Window-Size**           | The number of pixels of the window on the originating device where the user initiated (directly or indirectly) the API call to HMRC. | **Included** (in part 2) |
+| **Gov-Client-Browser-Plugins**       | A list of browser plug-ins on the originating device.                                                                                    | **Included** (in part 2) |
+| **Gov-Client-Browser-JS-User-Agent** | The JavaScript-reported user agent string from the originating device.                                                                      | **Included** (in part 2) |
+| **Gov-Client-Browser-Do-Not-Track**  | A value that indicates whether the **Do Not Track** option is turned on in the browser.                                                                              | **Included** (in part 2) |
 | **Gov-Client-Multi-Factor**          | A list of key-value data structures containing details of the multi-factor authentication (MFA) statuses related to the API call.       | Not included |
-| **Gov-Vendor-Version**               | A key-value data structure of software versions involved in handling a request.                                                         | **Included**  |
+| **Gov-Vendor-Version**               | A key-value data structure of the software versions that are involved in handling a request.                                                         | **Included** (in part 1) |
 | **Gov-Vendor-License-IDs**           | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included |
 | **Gov-Vendor-Public-IP**             | The public IP address of the servers to which the originating device sent their requests.                                               | Not included |
-| **Gov-Client-MAC-Addresses**         | The list of MAC addresses available on the originating device.                                                                          | Not included |
 | **Gov-Vendor-Forwarded**             | A list that details hops over the internet between services that terminate TLS.                                                         | Not included |
 
-
-The **BATCH_PROCESS_DIRECT** connection method assumes transmission of the following headers.
+The **BATCH\_PROCESS\_DIRECT** connection method assumes transmission of the following headers.
 
 | HTTP header              | Description                                                                                                                         | Coverage                        |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Gov-Client-Device-ID**     | An identifier unique to an originating device.                                                                                          | Not included |
 | **Gov-Client-User-IDs**      | A key-value data structure containing the user identifiers.                                                                             | Not included |
-| **Gov-Client-Timezone**      | The local time-zone of the originating device.                                                                                          | **Included**   |
+| **Gov-Client-Timezone**      | The local time zone of the originating device.                                                                                          | **Included** (in part 1)  |
 | **Gov-Client-Local-IPs**     | A list of all local IP addresses (IPv4 and IPv6) available to the originating device.                                                   | Not included. |
-| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | **Included**   |
-| **Gov-Vendor-Version**       | A key-value data structure of software versions involved in handling a request.                                                         | **Included**   |
+| **Gov-Client-User-Agent**    | An attempt to identify the operating system family, version, device manufacturer, and model of the originating device.                   | **Included**  (in part 1) |
+| **Gov-Vendor-Version**       | A key-value data structure of the software versions that are involved in handling a request.                                                         | **Included** (in part 1) |
 | **Gov-Vendor-License-IDs**   | A key-value data structure of hashed license keys relating to the vendor software initiating the API request on the originating device. | Not included |
-| **Gov-Client-MAC-Addresses** | The list of MAC addresses available on the originating device.                                                                          | **Included**   |
+| **Gov-Client-MAC-Addresses** | The list of media access control (MAC) addresses that are available on the originating device.                                                                          | **Included** (in part 1)  |
 
-### Implementation details
+### Headers that are marked "Included (in part 1)"
 
-To support the possibility of detecting the parameters required by HMRC for fraud prevention, such as time-zone and MAC address in BATCH_PROCESS_DIRECT connection method and the software version in both WEB_APP_VIA_SERVER and BATCH_PROCESS_DIRECT connection methods, X++ methods were included into the application part. The following table provides information about versions of Finance and Operations that include these methods.
-
-| Finance and Operations version     | Build number |
-|-----------------------------------------------------|------------------|
-| 10.0.1                                              | 10.0.51.30002    |
-| 10.0.2                                              | 10.0.80.10022    |
-| 10.0.3                                              | 10.0.107.0       |
-
-For versions 7.3 of Dynamics 365 for Finance and Operations, the KB \# 4504462 must be installed.
-
-In Finance and Operations, request headers are composed by the **MTD VAT web request headers format (UK)** format in the Electronic Reporting (ER) module. To support fraud prevention headers, this format configuration was extended with necessary nodes.
-
-![JSON object](media/format-new-nodes.png)
-
-Determining the corresponding values of the headers is supported by calling the X++ methods by the **MTD VAT model mapping** configuration. The **Electronic Messages framework model** was also extended to support the include nodes that are used for mapping the values of fraud prevention headers.
-
-### Setup
-
-To activate the transmission of fraud prevention headers during interoperating with API of the HMRC, import the following versions of ER configurations from the Lifecycle Services (LCS) portal.
+HTTP headers that are marked "Included (in part 1)" in the "Coverage" column are supported in the following and later versions of ER configurations.
 
 | \#  | GER configuration name              | Type                              | Version |
 |--------|-----------------------------------------|--------------------------------------|-------------|
@@ -548,19 +526,61 @@ To activate the transmission of fraud prevention headers during interoperating w
 | 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 22.24       |
 | 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 22.13       |
 
+With respect to these versions of ER configurations, the application must be the following versions or later.
+
+| Finance and Operations version     | Build number |
+|-----------------------------------------------------|------------------|
+| 10.0.1                                              | 10.0.51.30002    |
+| 10.0.2                                              | 10.0.80.10022    |
+| 10.0.3                                              | 10.0.107.0       |
+
+For Dynamics 365 for Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+
+### Headers that are marked "Included (in part 2)"
+
+HTTP headers that are marked "Included (in part 2)" in the "Coverage" column are supported in the following and later versions of ER configurations.
+
+| \#  | GER configuration name              | Type                              | Version |
+|--------|-----------------------------------------|--------------------------------------|-------------|
+| 1      | **Electronic Messages framework model** | **Model**                            | 24          |
+| 2      | MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 24.31       |
+| 3      | MTD VAT web request headers format (UK) | Format (exporting)                   | 24.24       |
+
+With respect to these versions of ER configurations, the application must be the following versions or later.
+
+| Finance and Operations version     | Build number |
+|-----------------------------------------------------|------------------|
+| 10.0.5                                              | 10.0.197.14       |
+
+For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
+
+### Implementation details
+
+In Finance and Operations, request headers are composed in the **MTD VAT web request headers format (UK)** format in the ER module. This format configuration was extended so that it includes the necessary nodes.
+
+![JSON object](media/format-new-nodes-all.png)
+
+To determine the corresponding values of the headers, the **MTD VAT model mapping** configuration can call the X++ methods. The **Electronic Messages framework model** was also extended to support the included nodes that are used to map the values of fraud prevention headers.
+
+### Setup
+
+To activate the transmission of fraud prevention headers during interoperation with the HMRC API, import the previously mentioned versions of ER configurations from LCS.
 
 > [!IMPORTANT]
 > When new versions of ER configurations are imported, check that following configurations are marked as **Default for model mapping**:
+>
 > - Tax declaration model mapping
 > - MTD VAT model mapping (UK)
 
-When the ER configurations are imported, fraud prevention parameters will be transmitted as part of the HTTP request the HMRC.
+When the ER configurations are imported, fraud prevention parameters will be transmitted as part of the HTTP request to HMRC.
 
-When you initiate a request to the HMRC without activating a batch job, the following dialog will inform about what information will be sent to the HMRC.
+When you initiate a request to the HMRC without activating a batch job, the **Request identification information** page informs you about the information that will be sent to HMRC.
 
-![JSON object](media/fraud-prevention-headers-message.png)
+![Request identification information page](media/fraud-prevention-headers-message-page.png)
 
-If the transmission on this stage is canceled, the status of the electronic message will change to **Error** and a description of the error will be attached to the Action log. You can click **Send report** to continue the transmission of the same electronic message.
+The user must consent to the transmission of the information that is listed on the page by selecting the check box. The **Submit** button then becomes available, and user can select it to proceed with request to HMRC. 
+
+If the user cancels the transmission at this point by selecting **Do not submit**, the status of the electronic message is changed to **Error**, and a description of the error is attached to the Action log. Select **Send report** to continue the transmission of the same electronic message.
 
 When a request to the HMRC in a batch job is initiated, the fraud prevention headers will be transmitted to the HMRC and information about what headers were sent will be attached to the batch job. To view this information, go to **System administration** \> **Inquires** \> **Batch jobs**, and select your batch job. You can review the log details by selecting **Batch job** \> **Log** on the Action Pane.
 
@@ -568,18 +588,57 @@ If for some reason a company decides to address requests to the HMRC without tra
 
 1. Select the **MTD VAT web request headers format (UK)** format in the ER **Configurations** tree, and create a child format by **Deriving** it. For more information, see [Building a format selecting another format as a base](../../dev-itpro/analytics/general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization).
 2. On the Action Pane, select **Designer** to open the child format in the designer.
-3.  Select the node, **Gov-Client-Connection-Method** and set the **Enabled** parameter to **false**.
+3. Select the node, **Gov-Client-Connection-Method** and set the **Enabled** parameter to **false**.
 
-![JSON object](media/format-disable-nodes.png)
+    ![JSON object](media/format-disable-nodes.png)
 
 4. Repeat steps 1-3 for other fraud prevention headers including Gov-Client-Timezone, Gov-Client-User-Agent, Gov-Vendor-Version, and Gov-Client-MAC-Addresses.
-5.Save and complete your configuration..
-6. Go to **Tax** \> **Setup** \> **Electronic reporting** \> **Web service settings** and select your child format in the “**Request headers format mapping**” field of all the web services used for interoperation with the HMRC, instead of the parent format used by default.
-    
+5.Save and complete your configuration.
+6. Go to **Tax** \> **Setup** \> **Electronic reporting** \> **Web service settings** and select your child format in the "**Request headers format mapping**" field of all the web services used for interoperation with the HMRC, instead of the parent format used by default.
+
 ![JSON object](media/web-service-format-setup.png)
 
 > [!IMPORTANT]
 > API requests without fraud prevention headers may be rejected by HMRC. We recommend that you address API requests to HMRC with fraud prevention headers.
+
+When at least one fraud prevention header about the originating device is enabled, the list of all parameters that were defined during the request to the HMRC API is shown. However, only the enabled parameters are transmitted as part of the request. 
+
+### Using the MTD feature outside the UK
+
+A company that is registered for VAT in the territory of the UK might have a primary address that is outside the UK. To simplify adoption of the MTD for VAT feature in legal entities that have a primary address outside the UK, the following ER formats are delivered without any **ISO country/region code** parameter:
+
+- MTD VAT return response importing JSON (UK).version.19.10 
+- MTD VAT import token format (UK).version.19.8 
+- MTD VAT web request headers format (UK).version.22.22 
+- MTD VAT authorization format (UK).version.19.7 
+- MTD VAT interoperation (UK).version.31.8 
+- MTD VAT obligations importing JSON (UK).version.31.9 
+
+When these ER formats, and later versions of them, are used, the MTD for VAT feature can be set up and used in legal entities that have a primary address in any country or region.
+
+The following ER formats are used to generate a VAT declaration (VAT 100 report in Excel format and VAT return in JSON format):
+
+- VAT Declaration JSON (UK) 
+- VAT Declaration Excel (UK) 
+
+These formats are delivered still with **GB** set as the value of the **ISO country/region code** parameter.
+
+When a company that has a primary address outside the UK uses MTD for VAT, it's important that the VAT setup in the related legal entity be completed according to UK rules. VAT management must be done in an appropriate manner to correctly generate a VAT declaration in accordance with the requirements of HMRC. 
+
+When a company that has a primary address outside the UK considers VAT management in the legal entity, the following steps must be completed to set up the MTD for VAT feature.
+
+1. Derive the VAT Declaration JSON (UK) ER format, and then, for the child configuration, define the ISO country/region code that is related to the ISO code in the primary address of this legal entity. You can complete this step on the **ISO country/region code** FastTab for the selected format.
+2. Derive the VAT Declaration Excel (UK) ER format, and then, for the child configuration, define the ISO country/region code that is related to the ISO code in the primary address of this legal entity. You can complete this step on the **ISO country/region code** FastTab for the selected format.
+3. Import or set up application-specific parameters for the child configuration of the VAT Declaration JSON (UK) and VAT Declaration Excel (UK) formats.
+4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing**, and then select **Generate file for submission**.
+5. In the **Format mapping** field, select the child configuration of the VAT Declaration JSON (UK) format.
+6. On the **Electronic messages** page, select **Message processing**, and then select **Preview VAT return**. 
+7. In the **Format mapping** field, select the child configuration of the VAT Declaration Excel (UK) format.
+
+For more information about how to derive ER configurations, see [Version control](../../dev-itpro/analytics/electronic-reporting-configuration.md) and 
+[Building a format selecting another format as a base](../../dev-itpro/analytics/general-electronic-reporting.md).
+
+For more information about how to set up application-specific parameters for MTD for VAT, see [Set up application-specific parameters](emea-gbr-mtd-vat-integration.md#set-up-application-specific-parameters).
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
@@ -653,7 +712,6 @@ The following table shows other request parameters which must be defined for the
 | HMRC sandbox GET    | GET                                 | 200 |
 | HMRC sandbox POST   | POST                                | 201 |
 | HMRC TEST USER POST | POST                                | 201 |
-
 
 ### Additional fields
 
@@ -800,3 +858,144 @@ The following electronic processing actions are used by the **UK MTD VAT returns
 | Request VAT liabilities             | Yes            |                      |
 | Create VAT payments request         | Yes            |                      |
 | Request VAT payments                | Yes            |                      |
+
+## Appendix 2: History of the changes of VAT MTD feature
+
+This section is dedicated to the history of the changes for the MTD for VAT feature. In this section, you will find information about related versions of the ER configurations, versions of the application, and the KB numbers.
+
+### Initial feature release
+
+ER configuration versions:
+
+| ER configuration name                       | Type                                 | Version |
+|---------------------------------------------|--------------------------------------|---------|
+| Tax declaration model                       | Model                                | 31      |
+| Tax declaration model mapping               | Model mapping                        | 31.30   |
+| VAT Declaration JSON (UK)                   | Format (exporting)                   | 31.24   |
+| VAT Declaration Excel (UK)                  | Format (exporting)                   | 31.24.3 |
+| MTD VAT interoperation (UK)                 | Format (exporting)                   | 31.7    |
+| MTD VAT importing model mapping (UK)        | Model mapping (importing)            | 31.35   |
+| MTD VAT obligations importing JSON (UK)     | Format (importing)                   | 31.8    |
+| Electronic Messages framework model         | Model                                | 19      |
+| MTD VAT model mapping (UK)                  | Model mapping (exporting, importing) | 19.18   |
+| MTD VAT return response importing JSON (UK) | Format (importing)                   | 19.9    |
+| MTD VAT web request headers format (UK)     | Format (exporting)                   | 19.9    |
+| MTD VAT authorization format (UK)           | Format (exporting)                   | 19.6    |
+| MTD VAT import token format (UK)            | Format (importing)                   | 19.7    |
+
+Sufficient versions of the applications:
+
+| Version           | Build     |
+|-------------------|-----------|
+| 10.0.1 and higher | 10.0.51.0 |
+
+For Finance and Operations, Enterprise edition 7.3, the following KBs must be installed: 4489431, 4492999, and 4493076.
+
+### Hotfix "VAT report Box 5 should not be negative" (KB 4499784)
+
+This hotfix provides an additional check that the amount that is reported in Box 5 of the VAT 100 report in SSRS format is always positive.
+
+Sufficient versions of the applications:
+
+| Version           | Check-in build |
+|-------------------|----------------|
+| 10.0.3 and higher | 10.0.100.0     |
+
+Any previously published versions of the ER configurations can be used.
+
+### Hotfix "UK MTD VAT declaration tax transaction filter by period interval is missing when called from EM" (KB 4502252)
+
+This hotfix introduces filtering by additional fields to help prevent unexpected tax transactions from appearing on the report.
+
+The hotfix is delivered in version 31.32 of the "Tax declaration model mapping" configuration.
+
+This version of the configuration can be imported into any version of the application that is sufficient for the previous version of this configuration (31.30).
+
+### Hotfix "UK Making tax digital: JSON and Excel format wrongly report Box3 amount for non-zero use tax transactions for services" (KB 4505110)
+
+This hotfix fixes an issue where the JSON and Excel formats wrongly report the Box 3 amount for non-zero use tax transactions for services.
+
+The hotfix is delivered in the following versions of ER configurations:
+
+- VAT Declaration JSON (UK).version.31.**25**
+- VAT Declaration Excel (UK).version.31.**25.4**
+
+These versions of the configurations can be imported into any version of the application that is sufficient for the initial versions of these configurations.
+
+### "UK VAT Declaration does not report Tax-Free purchase" (4514862)
+
+This change is related to a case where the VAT declaration (Excel and JSON formats) doesn't report tax-free purchases.
+
+The UK MTD VAT ReportFieldLookup v2.zip file that contains the example of application-specific parameters is updated for this type of scenario and is published on LCS.
+
+For more details, see the KB at <https://support.microsoft.com/help/4514862>.
+
+A new version of the application-specific parameters configuration example can be used for any versions of the ER configurations and application, starting from the initial version.
+
+### Support of fraud prevention headers – part 1 (KB 4504462)
+
+This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+
+In the scope of this update, the following ER configurations are released:
+
+- Electronic Messages framework model.version.22
+- MTD VAT model mapping.version.22.25
+- MTD VAT web request headers format (UK).version.22.13
+
+These versions of the ER configurations must be imported and used in the following versions of the application or later versions.
+
+| Version | Check-in build |
+|---------|----------------|
+| 10.0.1  | 10.0.51.30002  |
+| 10.0.2  | 10.0.80.10022  |
+| 10.0.3  | 10.0.107.0     |
+
+For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+
+### "United Kingdom: Making Tax Digital (MTD) - Electronic reporting format configurations - remove country/region code" (KB 4513582)
+
+In the scope of this update, the following ER formats are delivered without any **ISO country/region code** parameter:
+
+- MTD VAT return response importing JSON (UK).version.19.10
+- MTD VAT import token format (UK).version.19.8
+- MTD VAT web request headers format (UK).version.22.22
+- MTD VAT authorization format (UK).version.19.7
+- MTD VAT interoperation (UK).version.31.8
+- MTD VAT obligations importing JSON (UK).version.31.9
+
+When these versions of the formats or later versions are used, the MTD for VAT feature can be set up and used in legal entities that have a primary address in any country or region.
+
+These versions of the ER configurations can be imported into any version of the application that is sufficient for the previous versions of these ER configurations.
+
+| Version | Check-in build |
+|---------|----------------|
+| 10.0.1  | 10.0.51.30002  |
+| 10.0.2  | 10.0.80.10022  |
+| 10.0.3  | 10.0.107.0     |
+
+For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+
+The following ER formats that are used to generate a VAT declaration (VAT 100 report in Excel format and VAT return in JSON format) still have **GB** as the value of the **ISO country/region code** parameter:
+
+- VAT Declaration JSON (UK)
+- VAT Declaration Excel (UK)
+
+For more information, see [Making Tax Digital for VAT](emea-gbr-mtd-vat-integration.md).
+
+### Support of fraud prevention headers – part 2 (about originating device) (KB 4513878)
+
+This update supplements the previously delivered scope of the fraud prevention parameters. It enables the identification and transmission of fraud prevention parameters about the originating device when the **WEB\_APP\_VIA\_SERVER** connection method is used for interoperation with HMRC.
+
+In the scope of this update, the following ER configurations are released:
+
+- Electronic Messages framework model.version.24
+- MTD VAT model mapping.version.24.31
+- MTD VAT web request headers format (UK).version.24.24
+
+These versions of the ER configurations must be imported and used on the following versions of the application or later versions.
+
+| Version | Check-in build |
+|---------|----------------|
+| 10.0.5  | 10.0.197.14    |
+
+For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
