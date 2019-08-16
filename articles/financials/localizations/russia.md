@@ -54,6 +54,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
+- [Exchange adjustment](rus-exchange-adjustment.md)
 - [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 
