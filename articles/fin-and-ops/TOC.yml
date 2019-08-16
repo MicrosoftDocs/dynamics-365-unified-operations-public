@@ -3560,6 +3560,12 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
       - name: Fault management
         href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+    - name: Capacity planning
+      items:
+      - name: Calculate capacity load
+        href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+      - name: Calculate item forecast
+        href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
     - name: Warranty
       items: 
       - name: Warranty agreement
