@@ -58,3 +58,4 @@ The figure below shows an example of dispatch selections in the **Schedule work 
 
 >[!NOTE]
 >If you want to delete the schedule on a work order, this is done by selecting the work order in **All work orders** and clicking **Delete schedule** on the **General** tab. Remember to manually update the work order lifecycle state if you delete the schedule.
+
