@@ -3,9 +3,9 @@
 
 title: X++ statements
 description: This topic describes statements in X++.
-author: RobinARH
+author: robinarh
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,8 +40,47 @@ This topic describes statements in X++.
 
 It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\*** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
+```X++
     // This is an example of a comment.
     /* Here is another example of a comment. */
+```
+
+## print statements
+
+You use the **print** statement to output text through **System.Diagnostics.WriteLine** to the Visual Studio **Output** window. During testing, the **print** statement is an alternative to the **Global::info** method, which shows text in the **Infolog** window. The following table compares the **print** statement and the **info** method.
+
+| Feature   | print statement    | info method  |
+|-----------|--------------------|--------------|
+| Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.     |
+| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily easily copied from the **Infolog** window to the clipboard. |
+| Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.     |
+
+### Example of a print statement
+
+The following code example demonstrates the print statement automatically converting any date type to a string. You do not need to prefix **info** with **Global::** when you call it.
+
+```X++
+
+str hello = "Hello";
+int fortytwo = 42;
+utcDateTime now = DateTimeUtil::utcNow();
+Dialog dialog = new Dialog();
+
+print "The print statement automatically converts data types to strings.";
+print hello, " -- ", fortytwo, " -- ", now, " -- ", dialog;
+// Output to the Print window:
+// The print statement automatically converts data types to strings.
+// Hello -- 42 -- 10/3/2011 09:18:10 pm -- 1
+
+// int2Str converter is needed when using info().
+info("Hello");
+info(int2Str(fortytwo)); 
+
+// Output to Infolog window:
+// Hello
+// 42
+
+```
 
 ## TODO comments
 The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
@@ -74,11 +113,9 @@ public boolean isLate()
 }
 ```
 
-## Unsupported statements: changeSite, pause, print, and window
+## Unsupported statements: changeSite, pause, and window
 
 The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
-
-The **print** statement is deprecated and produces no result. Use the **Global::info** method instead.
 
 ## using clauses
 You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. The following example shows a **using** clause, a namespace alias, and a class alias.
