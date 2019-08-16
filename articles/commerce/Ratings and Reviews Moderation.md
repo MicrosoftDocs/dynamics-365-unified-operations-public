@@ -102,7 +102,7 @@ Dynamics 365 Commerce - Ratings and Reviews allows C1's to import bulk data of r
 ##  Steps to use PowerBI template to view ratings and review trends
 
 1. C1 can also download "Power BI template" to view trends in a dashboard
-2. Now Open downloaded Template, It will open in Power BI app. After opening this template it will show "Access to web content." then close this popup, and then close the "Refresh" error message as well.
+2. Now open the downloaded Template, it will open in Power BI app. After opening this template it will show "Access to web content." then close this popup, and then close the "Refresh" error message as well.
 3. Now go to Home menu, and click on "Edit queries", and then click on "Data source settings".
 4. Now on "Data source settings" popup window, click on Change Source there is a url edit box.
 5. In the URL text box, give the path of the previously downloaded reviews data, e.g. c:\reviews\ReviewsData.csv file.
