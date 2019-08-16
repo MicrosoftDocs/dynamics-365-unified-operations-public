@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
