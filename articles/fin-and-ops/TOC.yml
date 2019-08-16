@@ -3560,6 +3560,10 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
       - name: Fault management
         href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+    - name: Integration to Project management and accounting
+      items:
+      - name: Forecasts, work orders, and projects
+        href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
     - name: Warranty
       items: 
       - name: Warranty agreement
