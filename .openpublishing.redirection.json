@@ -1,5 +1,25 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md",
+      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md",
+      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/dev-itpro/database/request-point-in-time-restore.md",
+      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/financials/accounts-receivable/customer-payment-insights.md",
+      "redirect_url": "../../fin-and-ops/get-started/whats-new-changed",
+      "redirect_document_id": "false"
+    },
+
   {
     "source_path": "articles/dev-itpro/perf-test/perfsdk-tutorial.md",
     "redirect_url": "/dynamics365/unified-operations/dev-itpro/perf-test/single-user-test-perf-sdk",
