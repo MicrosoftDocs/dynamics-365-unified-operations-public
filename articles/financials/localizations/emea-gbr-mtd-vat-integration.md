@@ -116,7 +116,7 @@ Import the latest versions of the configurations. The version description usuall
 >
 > ![Default for model mapping option](media/emea-gbr-default-for-model-mapping-parameter.png)
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Set up application-specific parameters
 
@@ -638,7 +638,7 @@ When a company that has a primary address outside the UK considers VAT managemen
 For more information about how to derive ER configurations, see [Version control](../../dev-itpro/analytics/electronic-reporting-configuration.md) and 
 [Building a format selecting another format as a base](../../dev-itpro/analytics/general-electronic-reporting.md).
 
-For more information about how to set up application-specific parameters for MTD for VAT, see [Set up application-specific parameters](emea-gbr-mtd-vat-integration#set-up-application-specific-parameters.md)
+For more information about how to set up application-specific parameters for MTD for VAT, see [Set up application-specific parameters](emea-gbr-mtd-vat-integration.md#set-up-application-specific-parameters).
 
 ## Appendix 1: Electronic messages setup for MTD for VAT
 
