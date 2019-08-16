@@ -62,7 +62,7 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
 * Document attachments in the DocuValue table. This includes any Office Templates that were overriden in the source environment.
-* Connection string in the PersonnellIntegrationConfiguration table
+* Connection string in the PersonnellIntegrationConfiguration table.
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
 
