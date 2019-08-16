@@ -43,6 +43,15 @@ To learn about the new features and changes in the latest releases of Microsoft 
 
 description of feature
 
+## Product configuration models V2 data entity
+
+A second version for the “product configuration models” data entity is released (called “products configuration models V2”). The default template “418-product configuration models” is also needs to be so that it uses the new “product configuration models V2” data entity in the import/export framework templates. 
+The template will not be auto-updated so that you will have to load the template from the default manually. The V2 entity exports one row as separate file in an attachment instead of inline, solving the size limitations of the V1 entity. 
+ 
+What do you need to do to take this change?
+-	As the V1 entity has been deprecated, you should start migrating from V1 to V2. If you are using the  “418-product configuration models” template, you can click on “load default templates” button and reload the template “418 – product configuration models”
+-	If you need to keep compatibility with existing systems, you can for now continue using the existing template and the (deprecated) V1 entity until you move your integrations to the new template. 
+
 ## Additional resources
 
 ### Bug fixes
