@@ -3588,9 +3588,9 @@
         href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
       - name: Work orders and fixed assets
         href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
-    - name: Preventative and reactive maintenance
+    - name: Preventive and reactive maintenance
       items: 
-      - name: Preventative maintenance
+      - name: Preventive maintenance
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
       - name: Maintenance plans
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
