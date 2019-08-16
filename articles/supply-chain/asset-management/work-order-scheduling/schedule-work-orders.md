@@ -75,13 +75,13 @@ Calculating scores for a work order job is based on expected start date and the 
 
 **Criticality** calculation: Criticality score multiplied by the criticality on the work order.
 
-**Priority** calculation: Priority score divided by the priority on the work order.
+**Service level** calculation: Service level score divided by the service level on the work order.
 
-In the examples below, the criticality scores is "2", and the priority scores are "5" and "100".
+In the examples below, the criticality score is "2", and the service level scores are "5" and "100".
 
 **Example 1:**
 
-| Work order ID | Expected start date | Work order criticality | Work order priority | Calculation                    | Score    |
+| Work order ID | Expected start date | Work order criticality | Work order service level | Calculation                    | Score    |
 |---------------|---------------------|------------------------|---------------------|--------------------------------|----------|
 | WO-00010816   | Tomorrow            | 2                      | 20                  | (-1 \* 10) + (2 \* 2) + 5 / 20 | \- 5.75  |
 | WO-00010817   | Two days from now   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 5 / 20 | \- 15.75 |
