@@ -1,17 +1,23 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
+      "source_path": "articles/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production.md",
+      "redirect_url": "../database/dbmovement-scenario-debugdiag",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md",
-      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_url": "dbmovement-operations",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md",
-      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_url": "dbmovement-operations",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/dev-itpro/database/request-point-in-time-restore.md",
-      "redirect_url": "/dynamics365/unified-operations/dev-itpro/database/dbmovement-operations",
+      "redirect_url": "dbmovement-operations",
       "redirect_document_id": "false"
     },
     {
