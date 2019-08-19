@@ -41,16 +41,16 @@ When you have posted consumption on work orders, you can print an asset consumpt
 
 1. Click **Asset management** > **Reports** > **Assets** > **Asset consumption**.
 
-2. In the **Asset consumption** dialog, select the parameters and detail level you want to see by selecting the relevant check boxes ad functional location level in the **Show** section.
-- You can use the **Level** field to indicate how detailed you want the asset lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location will be shown on the top level, and therefore a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all assets on all the functional location levels to which they are related.
+2. In the **Asset consumption** dialog, select the parameters and detail level you want to see by selecting "Yes" on the relevant toggle buttons, and inserting a functional location level in the **Show** section.
+- You can use the **Levels** field to indicate how detailed you want the asset lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location will be shown on the top level, and therefore a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Levels** field, you will see a detailed result showing all assets on all the functional location levels to which they are related. If you insert the number "1" or a higher number in the **Levels** field, select "Yes" on the **Sum on all sub assets** toggle button to see sums for each sub asset in the report.
 
 3. Select a date interval in the **Dates** section.
 
-4. On the **Destination** FastTab, select if you want to display the report on screen, print it, or save it as a file.
+4. On the **Destination** FastTab, select if you want to display the report on screen, print it, or save it as a file or email.
 
-4. If required, you can select specific assets to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the assets you want to include in the report.
+5. If required, you can select specific assets to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the assets you want to include in the report.
 
-5. Click **OK** to generate the report.
+6. Click **OK** to generate the report.
 
 
 ## Work order consumption report
@@ -59,14 +59,16 @@ When you have posted consumption on work orders, you can print a work order cons
 
 1. Click **Asset management** > **Reports** > **Work orders** > **Work order consumption**.
 
-2. Select the parameters you want to include in the report by selecting the the relevant check boxes in the **Show** section.
+2. In the **Work order consumption** dialog, select the parameters you want to include in the report by selecting "Yes" on the relevant toggle buttons in the **Show** section.
 
-3. Select the date interval in the **Dates** section.
+3. Select a date interval in the **Dates** section.
 
-4. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
+4. On the the **Destination** FastTab, select if you want to display the report on screen, print it, or save it as a file or email.
 
-5. Click **OK** to generate the report.
+5. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
+
+6. Click **OK** to generate the report.
+
 
 >[!NOTE]
 >You can also generate a [work order report](../work-orders/work-order-report.md), which contains more work order details.
-
