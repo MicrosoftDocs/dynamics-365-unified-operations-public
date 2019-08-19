@@ -38,20 +38,22 @@ ms.dyn365.ops.version: Release 10.0.5
 This article explains the steps required in order to add a copyright notice to your e-Commerce website.
 
 ## Prerequisites
-Before you can add a copyright notice on your site, you must do the following.
+Before you can add a copyright notice on your site, you must have the following:
 
-- Have a template that includes the footer fragment you'll be editing in the instructions below.
-- Have a page that uses that template.
+- A template that includes the footer fragment you'll be editing
+- A page that uses that template
 
-To add a copyright notice to the footer for your site, follow these steps:
+To add a copyright notice to the footer, do the following.
 
-1. Open the footer fragment by going to the **Fragments** tab and selecting **Footer**. 
-1. Click **Check out** to make the footer fragment writeable.
-1. Expand the footer module and sub footer slot.
-1. Select **Sub footer**, or if it does not exist click the ellipsis menu in order to add it using **Add module**.
-1. Click **Add Data Source** from the properties pane, Choose **Heading**.
-1. Add your copyright notice in **Input text** field.
+1. Click the **Fragments** tab.
+1. In the fragment list, click **Footer**. 
+1. Click **Check out**.
+1. Expand the footer module slots.
+1. Click **Sub footer**. If a sub footer does not exist, click the ellipsis menu to add one using **Add module**.
+1. In the properties pane, click **Add Data Source**, then click **Heading**.
+1. Add the copyright notice in the **Text** field, select the heading level, then click **OK**.
+1. Click **Save**, then click **Check in**.
 
-After saving the fragment your copyright notice is visible automatically on all pages that use the footer.
+After saving the fragment, the copyright notice will automatically be visible on all pages that use the footer.
 
 
