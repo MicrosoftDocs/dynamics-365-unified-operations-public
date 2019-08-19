@@ -36,11 +36,11 @@ When you have created consumption registrations in Asset Management...
 
 
 
-## Object consumption report
+## Asset consumption report
 
 When you have posted consumption on work orders, you can print an object consumption report. The report displays hours, hour costs, item costs, and expenses posted on objects.
 
-1. Click **Enterprise asset management** > **Reports** > **Objects** > **Object consumption**.
+1. Click **Asset management** > **Reports** > **Assets** > **Asset consumption**.
 
 2. Select the parameters and detail level you want to see by selecting the relevant check boxes in the **Show** section.
 
@@ -50,11 +50,12 @@ When you have posted consumption on work orders, you can print an object consump
 
 5. Click **OK** to generate the report.
 
+
 ## Work order consumption report
 
 When you have posted consumption on work orders, you can print a work order consumption report. The report displays hours, hour costs, item costs, and expenses posted on work orders.
 
-1. Click **Enterprise asset management** > **Reports** > **Work orders** > **Work order consumption**.
+1. Click **Asset management** > **Reports** > **Work orders** > **Work order consumption**.
 
 2. Select the parameters you want to include in the report by selecting the the relevant check boxes in the **Show** section.
 
@@ -63,15 +64,3 @@ When you have posted consumption on work orders, you can print a work order cons
 4. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
 
 5. Click **OK** to generate the report.
-
-## Work order times rport
-
-When you have completed work on a work order, you can print a work order times report to get an overview of planned start and end dates compared to actual start and end dates. For each work order, details for the related objects, job types, and resources are displayed.
-
-1. Click **Enterprise asset management** > **Reports** > **Work orders** > **Work order times**.
-
-2. Click **OK** to include all work orders.
-
-3. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
-
-4. Click **OK** to generate the report.
