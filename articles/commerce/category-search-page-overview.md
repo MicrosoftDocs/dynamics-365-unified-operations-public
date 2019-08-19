@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Quick tour of default category landing page and search results page
-description: This topic provides an overview of the deault category landing page and search results in Dynamics 365 for Commerce e-Commerce.
+title: Default category landing page and search results page
+description: This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 for Commerce e-Commerce.
 author: josaw1
 manager: annbe
 ms.date: 08/30/2019
@@ -28,70 +28,71 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 ---
 
-# Quick tour of default category landing page and search results pages
+# Default category landing page and search results page
 
-This topic provides an overview of the default category landing page and search results page in Dynamics 365 for Commerce e-Commerce.
+This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 for Commerce e-Commerce.
 
 ## Default category landing page
 
-The default category landing page is the page that a website user generally lands on when selecting a category from the navigation hierarchy, It's part of the universal header-footer. The category page enables browsing, and sorting and refining the categorized products. 
+The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy. It's part of the universal header-footer. The category page lets you browse, and you can also sort and refine the categorized products.
 
-  ![Default category landing view](./media/SimpleCategoryLandingDressCategory.png)
+![Default category landing page](./media/SimpleCategoryLandingDressCategory.png)
 
-The top of the page has a header that shows all the product categories and other pages that have been configured by the merchandising manager. Configuration is done as part of the channel navigation hierarchy configuration. On the bottom of the page is a footer with quick links to various topics that a shopper may be interested in. 
+At the top of the page is a header that shows all the product categories and other pages that the merchandising manager has categorized. Configuration is done as part of the configuration of the channel navigation hierarchy. At the bottom of the page is a footer that includes quick links to various topics that a shopper might be interested in.
 
-The following components are essential for a category. 
+The following components are essential for a category:
 
-- **Product placement** tiles are for the products that have been defined in this category by the merchandising manager as part of the navigation hierarchy configuration.
-- **Refiners and choice summary** are filters with counts that can be used to refine items. They are configured by the merchandising manager as part of the configuration of the "channel categories and product attributes" metadata. 
-- **Sorting options** are used by a website visitor to sort the products. By default, the following sorting options are available.
-	- Price - low to high.
-	- Price - high to low.
-	- Product name - [A-Z].
-	- Product name - [Z-A].
-	- Ratings - low to high.
-	- Ratings - high to low.
-- **Pagination** makes it posible for a website visitor to navigate from one page of categorized product results to another. 
-- **Total count** provides the total number of products that are defined in a particular category. 
+- **Product placement tiles** show the products that the merchandising manager has defined in a category as part of the navigation hierarchy configuration.
+- **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
+- **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
+    - Price – low to high
+    - Price – high to low
+    - Product name – \[A-Z\]
+    - Product name – \[Z-A\]
+    - Ratings – low to high
+    - Ratings – high to low
+
+- **Pagination** lets website visitors move from one page of categorized product results to another page.
+- **Total count** provides the total number of products that are defined in a category.
 
 ## Enrich a category landing page
 
-If you want a category landing page to have a more tailored experience for a specific category, you can choose to enrich the category landing page for that category. For example, if you might choose to add a marketing video and some category storytelling to get the shoppers' attention. Refer to [Enriching a category landing page](./articles/commerce/enrich-a-category.md) for more details.
+If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category. For example, you can add a marketing video and some category storytelling to get the shopper's attention. For more information, see [Enrich a category landing page](./articles/commerce/enrich-a-category.md).
 
- ![Enriched category landing view](./media/CategoryLandingPages.png)
+![Enriched category landing page](./media/CategoryLandingPages.png)
 
 ## Auto-suggest and search results pages
 
-A website user may choose to explore a site by either navigating to a category from the navigation hierarchy or by typing a search term in the search bar. 
+Website users can explore a site either by going to a category from the navigation hierarchy or by typing a search term in the search bar.
 
-As soon as the user starts typing in the search bar, they will encounter the immersive auto-suggest functionality, which provides  suggested search terms. 
+As soon as users start to type in the search bar, they experience the immersive auto-suggest functionality that suggests search terms.
 
-The following are some of the types of suggestions that mmay come up. 
+Here are some of the types of suggestions that might be shown:
 
-- **Keywords** are used by search to find items across all products assorted to the channel.
+- **Keywords** are used to find items across all products that are assorted to the channel.
 - **Products** provide direct links to the product details page.
-- **Scoped category search suggestions** list various categories and enable users to search for the keyword for that category.
- 
+- **Scoped category search suggestions** list various categories and let users search for the keyword in a specific category.
+
 ![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
 
-When a user clicks a keyword or scoped category search suggestion, or enters a search with no-known suggestions, the search results page comes up. 
+When users click a keyword or a scoped category search suggestion, or when they enter a search that has no known suggestions, the search results page appears. Users can then browse, sort, and refine the list of search results to find the desired item.
 
-The search results page provides a list of search results that the user can browse, sort, and refine to find their desired item.
+![Search landing](./media/SearchLanding.png)
 
- ![Search landing](./media/SearchLanding.png)
+In addition to the universal header and footer sections, the following components are essential for a search results page:
 
-In addition to the universal header and footer section, the following components are essential for a search results page.
+- **Product placement tiles** show the products for the user's search. By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.
+- **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
+- **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
-- **Product placement** tiles are for the products that are sorted (by default) based on the cloud-powered search relevancy score for the user search.
-- **Refiners and choice summary** are filters with counts that can be used to refine items. They are configured by the merchandising manager as part of the configuration of the "channel categories and product attributes" metadata. 
-- **Sorting options** are used by a website visitor to sort the products. By default, the following sorting options are available.
-	- Price - low to high.
-	- Price - high to low.
-	- Product name - [A-Z].
-	- Product name - [Z-A].
-	- Ratings - low to high.
-	- Ratings - high to low.
-	- Default
- **Pagination** makes it posible for a website visitor to navigate from one page of categorized product results to another. 
-- **Total count** provides the total number of products that are defined in a particular category that match the search criteria. 
+    - Price – low to high
+    - Price – high to low
+    - Product name – \[A-Z\]
+    - Product name – \[Z-A\]
+    - Ratings – low to high
+    - Ratings – high to low
+    - Default
+
+- **Pagination** lets website visitors move from one page of categorized product results to another page.
+- **Total count** provides the total number of products that are defined in a category and that match the search criteria.
