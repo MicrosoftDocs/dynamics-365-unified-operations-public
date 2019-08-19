@@ -61,21 +61,21 @@ The screenshot below shows an example of hour and item registrations on a work o
 ![Figure 1](media/01-consumption.png)
 
 
-## Split hours on work orders with several work order lines
+## Split hours on work orders with several work order jobs
 
-If a work order contains several work order lines, you can register work hours using the **Split hours** functionality, meaning the hours will be distributed evenly on each work order line.
+If a work order contains several work order jobs, you can register work hours using the **Split hours** functionality, meaning the hours will be distributed evenly on each work order job.
 
-1. Click **Enterprise asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order and click **Journals**.
 
-3. Click **Split hours**.
+3. Select the hour registration line you want to split, and click **Split hours**.
 
-4. The name of the worker who is logged in is automatically shown in the **Worker** field. If required, you can select another worker.
+4. In the **Split hours on work order maintenance jobs** dialog, the name of the worker who is logged in is automatically shown in the **Worker** field. If required, you can select another worker.
 
 5. Select a category for the hour registration in the **Category** field.
 
-6. Insert number of work hours in the **Hours** field.
+6. Insert number of work hours to be split in the **Hours** field.
 
 7. Click **OK**. Edit or delete the original forecast line, as required.
 
