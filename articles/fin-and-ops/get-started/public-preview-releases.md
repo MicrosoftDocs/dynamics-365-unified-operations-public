@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
 author: meeramahabala
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
