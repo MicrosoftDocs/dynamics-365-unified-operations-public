@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Scope of India localization
-description: This topic provides information about the strategy and scope of the tax, finance, and accounting laws regulations in India that were implemented as part of Microsoft Dynamics 365 for Finance and Operations. 
+title: Scope of the Indian localization
+description: This topic provides information about the strategy and scope of the tax, finance, and accounting laws and regulations in India that were implemented as part of Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
 ms.date: 08/05/2019
@@ -29,183 +29,347 @@ ms.search.validFrom: 2019-6-21
 ---
 
 
-# Scope of India localization
+# Scope of the Indian localization
 
 [!include [banner](../includes/banner.md)]
 
-Generally, Microsoft deploys significant resources to generate the business process functionality of Microsoft Dynamics applications by developing the features and functionality to address certain tax accounting or financial regulatory requirements in countries where Microsoft Dynamics is generally available. 
-Microsoft Dynamics 365 for Finance and Operations helps business operations to comply with country-specific laws, regulations, and common business practices for handling routine activities. The software is designed with features and functionality that address specific central and state government taxes, accounting, and financial or statutory reporting laws or regulations that usually govern business in India. However, because laws and regulations are diverse and numerous, Microsoft Dynamics 365 for Finance and Operations does not cover all laws, regulations, or commercial requirements in India. For example, regulatory features that Microsoft develops and makes generally available for Microsoft Dynamics 365 for Finance and Operations in India do not usually support industry-specific laws or national standards, particular state-specific laws, or city or municipal law requirements except as is specifically noted in this topic. 
-Following the global strategy to deliver Finance and Operations, channel partners are a very important part of the process and their deliberation crystallizes the thought process and helps Microsoft to design a roadmap to achieve excellence in localization requirements. The flexible, need-based architecture of Finance and Operations is useful for channel partners in addressing a customer’s specific business needs during development, configuration, and implementation. Although channel partners may provide solutions that meet specific regulatory requirements that are unique to cities, states, or other regions in India, Microsoft does not provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax, and regulatory, legal, or other applicable requirements. Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations (including any update for each of the same) that they create or implement on behalf of customers. This includes any support or other service that is provided to customers for such solutions. User must contact their channel partner for information about the solutions that they create for licensed versions of Finance and Operations. 
-This topic outlines the strategy and scope of localization that Microsoft has implemented as part of the version of Finance and Operations that is commercially available in India. 
+In general, Microsoft devotes significant resources to generating the business process functionality of Microsoft Dynamics applications by developing features and functionality that address specific tax accounting or financial regulatory requirements in countries or regions where Microsoft Dynamics is generally available.
+
+Microsoft Dynamics 365 for Finance and Operations helps business operations comply with country/region-specific laws, regulations, and common business practices for handling routine activities. The software is designed to include features and functionality that address specific central and state government tax, accounting, and financial or statutory reporting laws or regulations that usually govern business in India. However, because laws and regulations are diverse and numerous, Finance and Operations doesn't cover all laws, regulations, or commercial requirements in India. For example, regulatory features that Microsoft develops and makes generally available for Finance and Operations in India don't usually support industry-specific laws or national standards, laws that are specific to particular states, or city or municipal legal requirements, except as noted in this topic.
+
+Channel partners are a very important part of the global strategy for delivering Finance and Operations. Their deliberation helps crystallize the thought process and helps Microsoft design a roadmap for achieving excellence in localization requirements. The flexible, need-based architecture of Finance and Operations is useful to channel partners as they try to address a customer's specific business needs during development, configuration, and implementation. Although channel partners might provide solutions that meet specific regulatory requirements that are unique to cities, states, or other regions in India, Microsoft doesn't provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax, and regulatory, legal, or other applicable requirements. Channel partners and customers are solely responsible for any configurations, customizations, localizations, or translations (and any updates to these configurations, customizations, localizations, or translations) that they create or implement on behalf of customers. They are also solely responsible for any support or other service that is provided to customers for such solutions. Users must contact their channel partner for information about the solutions that the channel partner creates for licensed versions of Finance and Operations.
+
+This topic outlines the strategy and scope of the localization that Microsoft has implemented as part of the version of Finance and Operations that is commercially available in India.
 
 ## Definitions
 
-**Customization**: 
+- **Customization:**
 
-- Any configuration, modifications, or changes that are made by partners or customers to Microsoft Dynamics software or, when applicable, software documentation to fit a customer’s specific business needs, such as adding or renaming fields or tables, creating custom reports, or integrating with third-party solutions.
-- Any software developed by or for partners or customers for the Microsoft Dynamics software.
+    - Any configurations or modifications that partners or customers make to Microsoft Dynamics software or applicable software documentation to fit a customer's specific business needs. For example, a partner or customer might add or rename fields or tables, create custom reports, or integrate with third-party solutions.
+    - Any software that is developed for the Microsoft Dynamics software by or for partners or customers.
 
-**Localization**: Any modification to, addition to, or adaptation of Microsoft Dynamics software to enable or include certain features or functionality in the software to comply with applicable regulatory requirements. This includes but is not limited to, versions and updates of the Microsoft Dynamics software, user assistance tools, or end-user documentation. Examples of laws or regulatory requirements that may require localization of software include local tax reporting (GST, Customs and Tax Deduction at Source (TDS)/Tax collection at source (TCS)), specific law driven- tax calculations (reverse charge, price exclusive, and price inclusive tax), local accounting rules, and local regulatory and statutory reporting.
+- **Localization:** Any modification to, addition to, or adaptation of Microsoft Dynamics software to enable or include specific features or functionality for compliance with applicable regulatory requirements. Localization can apply to, for example, versions and updates of the Microsoft Dynamics software, user assistance tools, or end-user documentation. Examples of laws or regulatory requirements that might require localization of software include local tax reporting (Goods and Services Tax \[GST\], Customs, and Tax Deduction at Source \[TDS\]/Tax Collection at Source \[TCS\]), specific law-driven tax calculations (reverse charge, price exclusive, and price inclusive tax), local accounting rules, and local regulatory and statutory reporting.
+- **National standards:** Local requirements that aren't required by law or regulation, but that are widely adopted inside a geographic region and critical to the sale of licenses for business management software in that geographic region.
 
-**National Standards**: Local requirements that are not required by law or regulation but are widely adopted inside a geographic region and are critical to the sale of licenses for business management software in that geographic region.
+## Indian localization strategy
 
-## India localization strategy
-To address the tax (direct and indirect), financial accounting, and statutory reporting requirements for India, the strategy that was adopted by Microsoft is to provide localizations for Finance and Operations. This strategy consists of:   
+To address the tax (direct and indirect), financial accounting, and statutory reporting requirements for India, the strategy that Microsoft adopted involves providing localizations for Finance and Operations. This strategy consists of the following elements:
 
-- Meet the Central-level tax requirements that are described in the India localization scope section.
-- Meet state- and region-specific tax requirements if they are generic across all states in India. 
-- Meet tax requirements on export and import transactions.
-- Deliver new regulatory feature requirements through configurations or new development according to the localization scope and rules that are specified in this topic and implementation opportunities that are driven by the Finance and Operations roadmap.
+- Meet the central-level tax requirements that are described in the [Indian localization scope](#indian-localization-scope) section of this topic.
+- Meet state-specific and region-specific tax requirements if they are generic across all states in India.
+- Meet tax requirements for export and import transactions.
+- Deliver new regulatory feature requirements through configurations or new development, according to the localization scope and rules that are specified in this topic, and according to implementation opportunities that are driven by the Finance and Operations roadmap.
 - Deliver new regulatory features for all supported versions of Finance and Operations.
 
 > [!NOTE]
-> There is no focus on requirements of specific businesses, segments, verticals, regions, even when this is required by laws, statutes, or regulations at the federal, state, or city levels. City-specific tax requirements, except for those that are described in the India localization scope section, are not included.
+> There is no focus on the requirements of specific businesses, segments, verticals, or regions, even when this focus is required by laws, statutes, or regulations at the federal, state, or city level. Only those city-specific tax requirements that are described in the [Indian localization scope](#indian-localization-scope) section are included.
 
-There are specific laws and requirements that are out of scope for Finance and Operations. Localization that is developed by Microsoft for Finance and Operations is limited to the features and functionality that are described in this document. Therefore, the localization  must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, a tax law firm, or a tributary consulting firm who can perform an assessment to determine whether the functionality will meet the customer’s business needs, or whether custom solutions are required. 
+Some laws and requirements are out of scope for Finance and Operations. The localization that Microsoft develops for Finance and Operations is limited to the features and functionality that are described in this topic. Therefore, the localization must be analyzed by prospective customers or a tax professional, such as an accounting and tax auditor, a tax law firm, or a tributary consulting firm that can assess whether the functionality will meet the customer's business needs, or whether custom solutions are required.
 
-## India localization scope
-Finance and Operations localization provides a configuration for language user interface and Help settings. India localization is available in English-IN. Additional documentation such as white papers and comprehensive training materials are also available in English. 
-The localization scope for Finance and Operations in India is limited to fiscal and financial accounting transactions in the following areas: 
+## Indian localization scope
 
-- Tax 
+Finance and Operations localization provides a configuration for language user interface and Help settings. The Indian localization is available in English-IN. Additional documentation, such as white papers and comprehensive training materials, is also available in English.
+
+The localization scope for Finance and Operations in India is limited to fiscal and financial accounting transactions in the following areas:
+
+- Tax
 - General ledger
 - Accounts payable
 - Accounts receivable
 - Inventory management
-- Product information and Management 
-- Organization and management 
-- Project and service anagement  
+- Product information and management
+- Organization and management
+- Project and service management
 - Fixed assets
-- Retail 
+- Retail
 
-The features that Microsoft delivers and supports as part of the India localization for Finance and Operations are listed later in this topic. 
+The features that Microsoft delivers and supports as part of the Indian localization for Finance and Operations are listed later in this topic.
 
-## Market availability 
-Microsoft tries to deliver regulatory updates and changes with enough time for installation and implementation. Our goal is to release tax and regulatory updates to be incorporated into Microsoft Dynamics 365 for Finance and Operations in advance of the effective date or other date that is mandated by the tax authorities, regardless of whether it is central or state government tax, so that our channel partners can acquaint themselves with features and have enough time to update their customer solutions. Internally, we call this delivery date the “market required date” (MRD). 
-We try to meet our established MRDs and dates that are mandated by the various government authorities. However, various factors can adversely affect the timely delivery of tax and regulatory updates. These include the following: 
-•	Legislative or regulatory changes that are made by the government with short notice before the date of law enforcement
-•	Feature, functionality, infrastructure, or architectural limitations of the affected software versions that are generally available in the marketplace 
-•	Complexity and coverage of the coding, redesign, or improvement of the software that is required to implement the legislation or regulatory requirements 
-•	Schedule conflicts
-In any situation in which Microsoft finds it difficult to meet these dates, we use reasonable efforts to develop and release tax and regulatory updates as soon as possible.
-Disclaimer: 
-Any dates that Microsoft publishes are for planning only and are subject to change at any time without notice.
-Microsoft makes no representations, warranties, or guarantees about the timeliness or completeness of any tax or regulatory updates it provides and, to the maximum extent permitted under applicable law, disclaims all implied warranties and conditions, such as implied warranties or conditions of merchantability and fitness for a particular purpose. 
+## Market availability
 
-## Localization India: Key benefits 
-- Configurable localization of [GTE](../general-ledger/tax-engine) and [GER](../../dev-itpro/analytics/general-electronic-reporting) offers key major benefits:
+Microsoft tries to deliver regulatory updates and changes so that there is enough time to install and implement them. For tax and regulatory updates that must be incorporated into Finance and Operations, the goal is to release the updates before the effective date or other date that is mandated by the tax authorities, regardless of whether the tax is central or state government tax. In that way, channel partners can acquaint themselves with features and have enough time to update their customer solutions. Internally, Microsoft calls this delivery date the "market required date" (MRD).
 
-  - Extensibility in transaction type: A unified model is used in the tax calculation. Adding additional transaction types will require additions only to the model mapping.
-  - Extensibility in tax calculation: Formula-based calculation can be completed by a power user.
-  - Extensibility in tax behavior: Configurable tax posting and accounting and configurable settlement rule
-  - Extensibility in tax return 
-  - Database independent
-  - Easy to upgrade
-  - Lean 
-  
-- Generated as configuration in XML format 
-- Base configurations, India GST and GSTR are provided by Microsoft 
-- ISV can create their own configurations on top of Microsoft software
-- Delta customization is supported for configuration
-- India localization is enabled to work in parallel with the standard Dynamics 365 features in a global environment
-- The registration-number details of the company, vendors, and customers regarding GST and direct taxes can be stored at a centralized location
-- Flexible tax settlement process where tax settlement hierarchy can be defined based on the users needs
-- User-definable inquiry forms provide the relevant information that is used for statutory reporting
-- Users can make manual adjustments of taxes before they run the periodic tax settlement process
-- Component depreciation is calculated according to the Companies Act and Income tax Act of India, as required by the user
+Microsoft tries to meet its established MRDs and dates that are mandated by the various government authorities. However, various factors can adversely affect the timely delivery of tax and regulatory updates. Here are some examples:
 
-## Localization India: Key tax areas that are covered 
-The key features that are covered in this localization are as follows. 
+- Legislative or regulatory changes that the government makes at short notice before the date of law enforcement
+- Feature, functionality, infrastructure, or architectural limitations of the affected software versions that are generally available in the marketplace
+- The complexity and coverage of any coding, redesign, or improvement of the software that is required to implement the legislation or regulatory requirements
+- Schedule conflicts
 
-- Direct taxes 
+In any situation where Microsoft finds it difficult to meet these dates, it makes reasonable efforts to develop and release tax and regulatory updates as soon as possible.
 
-  - Tax deduction at source (TDS) 
-  - Tax collection at source (TCS)
+#### Disclaimer
 
-- GTE (Generic Tax engine) and GER (Generic Electronic Reporting)
+Any dates that Microsoft publishes are for planning only and are subject to change at any time, without notice.
 
-  - Configurable tax engine 
-  - Tax calculation, accounting logic and report are now configuration instead of code Selection of multiple tax bases 
-  - Allow the functional consultants to make the configuration alongside with a power user and confirm the outcome instantly
-  - The lead time can be counted in days or even hours before a user can try out how the system is likely to work. Faster interaction with the user would lead to higher satisfaction and less project risk
+Microsoft makes no representations, warranties, or guarantees about the timeliness or completeness of any tax or regulatory updates that it provides and, to the maximum extent that is permitted under applicable law, disclaims all implied warranties and conditions, such as implied warranties or conditions of merchantability and fitness for a particular purpose.
 
-- GST 
+## Indian localization: Key benefits
 
-  - Outward supplies: 
-	  
-    - B2B sales
-    - B2C sales
-    - Export sales
-    - Goods
-    - Services 
-
-  - Deemed export 
-  - Sales
+- Configurable localization of [the Tax engine (GTE)](../general-ledger/tax-engine) and [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting) offers major benefits:
 
-    - Non-GST items 
-    - Zero rated goods/services
-    - Exempted goods/services 
-	
-  - Reverse charge sales
-  - E-commerce sales 
+    - **Extensible transaction type** – A unified model is used in the tax calculation. The addition of transaction types requires additions only to the model mapping.
+    - **Extensible tax calculation** – Formula-based calculation can be done by a power user.
+    - **Extensible tax behavior** – Tax posting and accounting can be configured. Settlement rules can also be configured.
+    - **Extensible tax return**
+    - **Database-independent**
+    - **Easy to upgrade**
+    - **Lean**
 
-- Inward supplies: 
+- Generated as a configuration in XML format.
+- Base configurations (India GST and GSTR) are provided by Microsoft.
+- Independent software vendors (ISVs) can create their own configurations on top of Microsoft software.
+- Delta customization is supported for configuration.
+- The Indian localization can work in parallel with the standard Dynamics 365 features in a global environment.
+- The registration number details of the company, vendors, and customers for GST and direct taxes can be stored in a centralized location.
+- The tax settlement process is flexible. The tax settlement hierarchy can be defined based on the user's needs.
+- User-definable inquiry pages provide the relevant information that is required for statutory reporting.
+- Users can make manual adjustments to taxes before they run the periodic tax settlement process.
+- Component depreciation is calculated according to the Companies Act 2013 and the Income-tax Act, 1961, as required by the user.
 
-  - Supply from registered vendor 
-  - Supply from composite vendor
-  - Supply from unregistered vendor 
-  - Supply from reverse charge vendor 
-  - Supply from foreign vendor 
-  
-    - General import 
-    - Import from Associate enterprise 
-	
-  - Supply of exempted goods/Services
-  - Supply of Non-GST items
-  
-- Depreciation on fixed assets 
+## Indian localization: Key tax areas that are covered
 
-  - Depreciation as per Companies Act,2013
-    - Component depreciation accounting 
-    - Depreciation as per reducing balance with residual value 
+Here are the main features that are covered in this localization:
 
-  - Depreciation as per Income Tax Act,1961
-  
-    - Depreciation as per block of assets
-    - Depreciation as per >180 or <180 days 
+- Direct taxes:
 
-- GST Report 
+    - TDS
+    - TCS
 
-  - GSTR -1 Govt. offline tool
-  - GSTR -1 
-  - GSTR -2 
+- GTE and ER:
 
-- Retail 
+    - The Tax engine is configurable.
+    - Tax calculation, accounting logic, and reports are now configuration instead of code. Multiple tax bases can be selected.
+    - Functional consultants can do the configuration alongside power users and can immediately confirm the outcome.
+    - The lead time before a user can test how the system is likely to work can be counted in days or even hours. Faster interaction with the user can help increase satisfaction and decrease project risk.
 
-  - Intrastate and interstate transactions 
-  - Normal sales
-  - Customer order
-  - Return order
-  - GST price inclusive
-  - GST price exclusive
-  - Discounts and offers
-  - Exempted sales
-  - Replenishment
-  - Uniform invoice number and POS receipt number 
+- GST:
 
-## India localization features
-Finance and Operations India localization provides a configurable tax engine that enables users to comply with the complex Indian statutory requirements by doing extension in configuration. 
+    - Outward supplies:
+
+        - Business-to-business (B2B) sales
+        - Business-to-consumer (B2C) sales
+        - Export sales
+        - Goods
+        - Services
+
+    - Deemed export
+    - Sales:
+
+        - Non-GST items
+        - Zero-rated goods and services
+        - Exempted goods and services
+
+    - Reverse charge sales
+    - E-commerce sales
+
+- Inward supplies:
+
+    - Supply from registered vendors
+    - Supply from composite vendors
+    - Supply from unregistered vendors
+    - Supply from reverse charge vendors
+    - Supply from foreign vendors:
+
+        - General import
+        - Import from an associate enterprise
+
+    - Supply of exempted goods and services
+    - Supply of non-GST items
+
+- Depreciation on fixed assets:
+
+    - Depreciation per the Companies Act 2013:
+
+        - Component depreciation accounting
+        - Depreciation per reducing balance with residual value
+
+    - Depreciation per the Income-tax Act, 1961:
+
+        - Depreciation per block of assets
+        - Depreciation per period \> 180 days or \< 180 days
+
+- GST report:
+
+    - GSTR -1 Govt. Offline tool
+    - GSTR -1
+    - GSTR -2
+
+- Retail:
+
+    - Intrastate and interstate transactions
+    - Normal sales
+    - Customer orders
+    - Return orders
+    - Price-inclusive GST
+    - Price-exclusive GST
+    - Discounts and offers
+    - Exempted sales
+    - Replenishment
+    - Uniform invoice numbers and point of sale (POS) receipt numbers
+
+## Indian localization features
+
+The Indian localization for Finance and Operations provides a configurable Tax engine that helps users comply with complex Indian statutory requirements by extending the configuration.
+
 ![Tax document page](media/india-scope-01.png)
 
-The following table lists the localization features that are supported in Finance and Operations. Any specific feature that is not listed in this table is not supported in the current localization version.
+The following table lists the localization features that are supported in Finance and Operations. Any specific feature that isn't listed in this table isn't supported in the current version of the localization.
 
-| Tax area                              | Features                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Direct tax - Tax deduction at source  | - Simple and user-friendly. <br> - Define the Tax Account Numbers (TAN) of the company, vendors, and customers in a master page.<br> - User can set the TDS authority account and define settlement periods specifically for the TDS component group settlement process.<br> - User can create TDS tax component groups, components, and tax codes per the legal requirements.<br> - Threshold designer feature provides the user options for defining threshold hierarchies as either single-threshold or progressive-threshold hierarchies.<br> - Various threshold types can be applied to the selected threshold. These include cumulative, per transaction, and per transaction line.<br> - User can set up withholding tax groups for each TDS type and define the tax calculation formula by using the Designer.<br> - The threshold limits and exception threshold limits can be defined through advance threshold feature.<br> - Automated calculation of TDS at a higher rate if the Permanent Account Number (PAN) is not quoted by the deductee.<br> - User has the option to include or exclude GST or any other tax or charge for TDS calculation.<br> - Calculation and financial posting of TDS is provided on purchase invoices and payments to residents and non-residents.<br> - Calculation and financial posting of TDS is provided on advance payments and setting off the same against related invoices.<br> - Calculation and financial posting of TDS recoverable is provided on sales invoices and payments.<br> - Reversal of TDS through the Withholding tax journal.<br> - Calculation and accounting of TDS is provided on centralized payments and cross-company payments.<br> - Users can record the TDS concessional certificate numbers that are received from vendors under section 197 and 197A.<br> - Users can adjust the posted TDS before the it is paid to the Income Tax Authority.<br> - TDS adjustment feature an adjust excess TDS.<br> - Periodic settlement process of TDS can be conducted and the net payable amount is transferred to the authority account.<br> - User-defined inquiry page enables users to view the detailed information about tax that is deducted on transactions and deposited to the authority.<br> - User can generate quarterly e-TDS and e-TDS correction reports for 26Q and 27Q.<br> - Print Form 27A.<br> - Print Form 26, 26Q, 27, 27Q with Annexure(s).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Direct tax - Tax collection at source | - Simple and user-friendly.<br> - Users can set the TCS authority account and define settlement periods specifically for the TCS component group settlement process.<br>  - Users can create TCS tax component groups, components, and tax codes according to the legal requirements.<br>  - Users can set up withholding tax groups for each TCS type and define the tax calculation formula by using the Designer.<br> - Calculation and financial posting of TCS is provided on sales invoices and receipts and on advance receipts and sets off these against related invoices.<br>  - Users can adjust posted TCS before these are paid to the Income Tax Authority.<br>  - Users can record the TCS concessional certificate numbers that re received from customers under section 206C.<br> - Calculation and financial posting of TCS recoverable is provided on purchase invoices and payments.<br> - Calculation and accounting of TCS is provided on centralized payments and cross-company payments.<br>  - Periodic settlement process of TCS can be conducted and can transfer the net payable amount to the authority account.<br>  - User-defined inquiry page enables users to view the detailed information about tax that is collected on transactions and deposited to the tax authority.<br>  - Process of creating user-defined TCS certificate numbers is available.<br> - Users can generate TCS certificates to customers and record the information about the TCS certificates that are received from vendors.<br>  - Users can generate the quarterly e-TCS and e-TCS correction reports for 27EQ.<br> - Print Form 27D.<br> - Print Form 27B.<br>  - Print Form 27EQ with Annexure(s).<br> - TCS adjustment feature to adjust excess TCS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Indirect tax - Goods and services tax | - Auto-computation of CSGT, SGST, and IGST on Intra- and Inter-state transaction of sales and purchase.<br> - Tax calculation for Goods and Services.<br> - Easy to extend configuration for any tax calculation logic for new tax component added by government such as Special Cess, Karala Cess, etc.<br>  - Forward charge and Reverse charge calculation of taxes can be managed through tax setup.<br> - Tax calculation on import and export transaction in transaction currency or accounting currency can be managed through tax setup. <br>- Selection of "Tax Rate Type" allow user to squeeze rate setup for multiple tax rates. <br>- Configuration extension allows user to take care of complex scenarios such as Tax on slab price basis. <br>- Flexible posting mechanism allows users to post tax in any desired account.<br> - Tax document number can be generated in sequential manner for set of transaction types defined by the government for purchase and sales transaction.<br> - Separate ledger accounts can be maintained for taxes for each GSTIN number separately.<br> - User has an option to post tax in recoverable, payable, expense, refund, interim account following the business needs in an automated manner.<br> - Tax calculation per the customs exchange rate for import and export transactions of goods in a standardized manner.<br> - Tax can be computed on a **Ship to** and **Bill to** basis.<br> - Tax Invoice can be generated for the transaction types, Sales, Export, Reverse charge, and Advance payment.<br> - User has the option to calculate tax as the **Invoice date** or **Posting date** through setup.<br> - The **Exporter** and **SEZ seller** can post transactions with the option of **With payment** or **Without payment** of tax transaction with the desired calculation of tax and posting by extending the GST configuration. <br>- GST on Project supply covers Project contract, Project quotation, and Project invoice.<br> - User has the option to apply GST-TDS at the time of receiving payment from a government customer or making a payment to a government company.<br> - E-commerce company can apply GST-TCS on making a payment to a vendor or any selling company at the time of receiving payment from the e-commerce operator. <br> - User can compute and claim input credit of GST paid on bank charges and bank fees.<br> - Auto-reversal of posted tax can be made through credit note/debit note/return orders or negative purchase or sales transactions.<br> - Users can adjust recoverable amount and payable amount per transaction during the tax payment process.<br>  - Flexible tax settlement process allows users to set off GST tax components in any priority with other GST tax components. <br> - Allow users to record **E-Way bill** for posted purchase and sales transactions.<br> - User-defined posted tax inquiries are provided to generate transaction details with taxes. <br> - Easy process to generate GSTR returns in CSV format for any time frame including, GSTR -1 Govt. Offline tool, GSTR -1 Return (Clear Tax format), and GSTR -3 Return (Clear Tax format).<br> - Reports can be exported to Microsoft Excel.  |
-| Indirect tax - Customs duty           | - Allow users to define Import Exporter Code (IEC) in alpha-numeric or numeric format.<br> - Customs exchange rates that are applicable for imports and exports can be defined as specified by the authority in the **Exchange rates** page.<br> - Users can define the customs import and export tariff codes for the items that are used in the business in a page and can link this to the items.<br> - Users can create custom tax components and tax codes according to the legal requirements and as applicable to the business. The tax code rates can be defined for each tariff code according to the statutory requirements.<br>  - A vendor account or a customer account can be identified as a preferential vendor or customer. The customs code rates can be defined separately for preferential vendors and customers. <br> - Assessable value can be calculated in the order forms by using the transaction amount, landing charges, and other miscellaneous charges according to the statutory requirements for customs. <br> - Users can post import orders together with the importer invoice details and the fill of entry details in the **Purchase order** page.<br>  - Users can post export orders for partly and fully invoiced sales orders and can update the shipping bill details separately for each export order.  <br>- The customs tax amounts can be viewed in the transaction currency and in the base currency as well that is converted by using the customs exchange rate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Retail transactions                   | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Stock-transfer transactions           | - Calculation and financial posting of indirect taxes can be performed on Shipment and Receive forms of transfer orders.<br> - Users can define the financial dimension in a stock transfer order.<br> - GST Tax document will display the system-calculated tax amounts. These calculated amounts can be adjusted for shipment and receipt separately.<br> - GST is calculated on Inter-state transaction automatically based on the setup. No tax is calculated on the intra-state transfer with the same GSTIN number. In the GSTIN number is different, a configuration extension is required.<br> - Duty on short received quantity, in stock-transfer orders can be charged to Profit and Loss, and the duty on the short receipt quantity is also reflected in the GSTR report.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Depreciation - Companies Act          | Depreciation can be calculated per the Companies Act with the following feature highlights:<br>  - Calculation of depreciation on component accounting basis.<br> - Calculation of depreciation on a shift basis. This includes single shift, double shift, and triple shift. <br> - Depreciation with decrease in asset's life. <br> - Depreciation with increase in asset's life.<br> - Allow posting the balance asset value to the retained earnings when the asset's life is already over after the change in rates. <br> - Depreciation for an asset with applied shift depreciation rates.<br> - Generation of Component depreciation schedule report.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Depreciation - Income Tax Act         | Depreciation can be calculated according to the Income Tax Act of India. This includes the following feature highlights:<br> - Calculation of depreciation on the fixed asset group value for a period.<br> - Depreciation on fixed asset group value can be applied for depreciation books and tax layer value models. <br> - The acquisition and sale value of assets that form a part of a block of assets will be adjusted to the group value.<br> - Fifty percent (or a pre-defined percentage) of the actual depreciation can be applied to an asset that is used for less than the minimum number of days that are defined for a financial year. <br> - Future depreciation and the net book value (balance) can be viewed for the group value of the fixed asset.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+<table>
+<thead>
+<tr>
+<th>Tax area</th>
+<th>Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct tax – TDS</td>
+<td>
+<ul>
+<li>The feature is simple and user-friendly.</li>
+<li>Define the Tax Deduction and Collection Account Numbers (TANs) of the company, vendors, and customers on a master page.</li>
+<li>Users can set the TDS authority account and define settlement periods specifically for the settlement process for TDS tax component groups.</li>
+<li>Users can create TDS tax component groups, components, and tax codes per the legal requirements.</li>
+<li>The threshold designer feature lets users define threshold hierarchies as either single-threshold or progressive-threshold hierarchies.</li>
+<li>Various threshold types can be applied to the selected threshold. These threshold types include cumulative, per transaction, and per transaction line.</li>
+<li>Users can set up withholding tax groups for each TDS type and define the tax calculation formula by using the designer.</li>
+<li>The threshold limits and exception threshold limits can be defined through the advance threshold feature.</li>
+<li>TDS is automatically calculated at a higher rate if the Permanent Account Number (PAN) isn't quoted by the deductee.</li>
+<li>Users can include or exclude GST, or any other tax or charge, for the TDS calculation.</li>
+<li>Calculation and financial posting of TDS are provided on purchase invoices and payments to residents and non-residents.</li>
+<li>Calculation and financial posting of TDS are provided on advance payments, and those advance payments are set off against related invoices.</li>
+<li>Calculation and financial posting of TDS recoverable are provided on sales invoices and payments.</li>
+<li>Reversal of TDS is provided through the Withholding tax journal.</li>
+<li>Calculation and accounting of TDS are provided on centralized payments and cross-company payments.</li>
+<li>Users can record the TDS concessional certificate numbers that are received from vendors under sections 197 and 197A.</li>
+<li>Users can adjust posted TDS before it's paid to the Income Tax Authority.</li>
+<li>The TDS adjustment feature can adjust excess TDS.</li>
+<li>Periodic settlement of TDS can be done and can transfer the net payable amount to the authority account.</li>
+<li>A user-defined inquiry page lets users view detailed information about tax that is deducted on transactions and deposited to the authority.</li>
+<li>Users can generate quarterly e-TDS and e-TDS correction reports for 26Q and 27Q.</li>
+<li>Users can print Form 27A.</li>
+<li>Users can print Forms 26, 26Q, 27, and 27Q together with Annexures.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Direct tax – TCS</td>
+<td>
+<ul>
+<li>The feature is simple and user-friendly.</li>
+<li>Users can set the TCS authority account and define settlement periods specifically for the settlement process for TCS tax component groups.</li>
+<li>Users can create TCS tax component groups, components, and tax codes according to the legal requirements.</li>
+<li>Users can set up withholding tax groups for each TCS type and define the tax calculation formula by using the designer.</li>
+<li>Calculation and financial posting of TCS are provided on sales invoices and receipts, and on advance receipts, and those documents are set off against related invoices.</li>
+<li>Users can adjust posted TCS before it's paid to the Income Tax Authority.</li>
+<li>Users can record the TCS concessional certificate numbers that are received from customers under section 206C.</li>
+<li>Calculation and financial posting of TCS recoverable are provided on purchase invoices and payments.</li>
+<li>Calculation and accounting of TCS are provided on centralized payments and cross-company payments.</li>
+<li>Periodic settlement of TCS can be done and can transfer the net payable amount to the authority account.</li>
+<li>A user-defined inquiry page lets users view detailed information about tax that is collected on transactions and deposited to the tax authority.</li>
+<li>A process for creating user-defined TCS certificate numbers is available.</li>
+<li>Users can generate TCS certificates for customers and record information about the TCS certificates that are received from vendors.</li>
+<li>Users can generate the quarterly e-TCS and e-TCS correction reports for 27EQ.</li>
+<li>Users can print Form 27D.</li>
+<li>Users can print Form 27B.</li>
+<li>Users can print Form 27EQ together with Annexures.</li>
+<li>A TCS adjustment feature is provided to adjust excess TCS.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Indirect tax – GST</td>
+<td>
+<ul>
+<li>Automatically compute CSGT, SGST, and IGST on intrastate and interstate transactions for sales and purchases.</li>
+<li>Calculate tax for goods and services.</li>
+<li>Easily extend the configuration of any tax calculation logic for new tax components that are added by the government, such as Special Cess, and Karala Cess.</li>
+<li>Calculation of forward charges and reverse charges of taxes can be managed through the tax setup.</li>
+<li>Tax calculation on import and export transactions in the transaction currency or the accounting currency can be managed through the tax setup.</li>
+<li>By selecting a tax rate type, users can squeeze the rate setup for multiple tax rates.</li>
+<li>Configuration extension lets users handle complex scenarios, such as tax on a slab price basis.</li>
+<li>A flexible posting mechanism lets users post tax in any desired account.</li>
+<li>Sequential tax document numbers can be generated for a set of transaction types that the government defines for purchase and sales transactions.</li>
+<li>Separate ledger accounts can be maintained for the taxes for each GST Identification Number (GSTIN).</li>
+<li>Tax can automatically be posted in recoverable, payable, expense, refund, or interim accounts, according to your business requirements.</li>
+<li>Tax for import and export transactions of goods is calculated in a standardized manner, according to the customs exchange rate.</li>
+<li>Tax can be computed on a "Ship to" and "Bill to" basis.</li>
+<li>Tax invoices can be generated for the following transaction types: <strong>Sales</strong>, <strong>Export</strong>, <strong>Reverse charge</strong>, and <strong>Advance payment</strong>.</li>
+<li>Users can calculate tax as the invoice date or the posting date through the setup.</li>
+<li>Exporters and Special Economic Zone (SEZ) sellers can post transactions with the option of <strong>With payment</strong> or <strong>Without payment</strong> of tax transaction with the desired calculation of tax and posting by extending the GST configuration.</li>
+<li>GST on project supplies covers the project contract, project quotation, and project invoice.</li>
+<li>Users can apply GST-TDS when payment is received from a government customer or when a payment is made to a government company.</li>
+<li>When payment is received from the e-commerce operator, e-commerce companies can apply GST-TCS when they make a payment to a vendor or any selling company.</li>
+<li>Users can compute and claim input credit of GST that is paid on bank charges and bank fees.</li>
+<li>Automatic reversal of posted tax can be done through credit notes, debit notes, or return orders, or through negative purchase or sales transactions.</li>
+<li>Users can adjust recoverable amounts and payable amounts per transaction during the tax payment process.</li>
+<li>A flexible tax settlement process lets users set off GST tax components in any priority against other GST tax components.</li>
+<li>Users can record e-way bills for posted purchase and sales transactions.</li>
+<li>User-defined posted tax inquiries are provided to generate transaction details that show taxes.</li>
+<li>There is an easy process for generating GST return (GSTR) reports in comma-separate values (CSV) format for any time frame. These reports include GSTR -1 Govt. Offline tool, GSTR -1 Return (Clear Tax format), and GSTR -3 Return (Clear Tax format).</li>
+<li>Reports can be exported to Microsoft Excel.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Indirect tax – Customs duty</td>
+<td>
+<ul>
+<li>Users can define Import Exporter Codes (IECs) in alphanumeric or numeric format.</li>
+<li>On the <strong>Exchange rates</strong> page, customs exchange rates that are applicable to imports and exports can be defined as specified by the authority.</li>
+<li>Users can define customs import and export tariff codes for items that are used in the business. They can then link this definition to the items.</li>
+<li>Users can create custom tax components and tax codes, according to the legal requirements and as applicable to the business. The tax code rates can be defined for each tariff code, according to the statutory requirements.</li>
+<li>A vendor account or a customer account can be identified as a preferential vendor or customer. Customs code rates can be defined separately for preferential vendors and customers.</li>
+<li>Assessable value can be calculated on the order pages by using the transaction amount, landing charges, and other miscellaneous charges, according to the statutory requirements for customs.</li>
+<li>On the <strong>Purchase order</strong> page, users can post import orders together with the importer invoice details and the fill of entry details.</li>
+<li>Users can post export orders for partially and fully invoiced sales orders, and they can update the shipping bill details separately for each export order.</li>
+<li>The customs tax amounts can be viewed in the transaction currency and also in the base currency that is converted by using the customs exchange rate.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Retail transactions</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>Stock-transfer transactions</td>
+<td>
+<ul>
+<li>Calculation and financial posting of indirect taxes can be done on the shipment and receive pages for transfer orders.</li>
+<li>Users can define the financial dimension in a stock transfer order.</li>
+<li>GST tax documents show the system-calculated tax amounts. These calculated amounts can be adjusted separately for shipments and receipts.</li>
+<li>GST is automatically calculated on interstate transactions, based on the setup. No tax is calculated on intrastate transfers that have the same GSTIN. If the GSTIN differs, a configuration extension is required.</li>
+<li>The duty on short-receipt quantities on stock transfer orders can be charged to Profit and Loss, and the GSTR report reflects the duty on short-receipt quantities.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Depreciation – The Companies Act 2013</td>
+<td>Depreciation can be calculated according to the Companies Act 2013. Here are some feature highlights:
+<ul>
+<li>Depreciation can be calculated on a component accounting basis.</li>
+<li>Depreciation can be calculated on a shift basis (single shift, double shift, or triple shift).</li>
+<li>Depreciation can involve a decrease in the asset's life.</li>
+<li>Depreciation can involve an increase in the asset's life.</li>
+<li>The balance asset value can be posted to the retained earnings if the asset's life has already ended after the change in rates.</li>
+<li>Shift depreciation rates can be applied to the depreciation for an asset.</li>
+<li>A <strong>Component depreciation schedule</strong> report can be generated.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Depreciation – The Income-tax Act, 1961</td>
+<td>Depreciation can be calculated according to the Income-tax Act, 1961. Here are some feature highlights:
+<ul>
+<li>Depreciation can be calculated on the fixed asset group value for a period.</li>
+<li>Depreciation on the fixed asset group value can be applied to depreciation books and tax layer value models.</li>
+<li>The acquisition and sale values of assets that are part of a block of assets are adjusted to the group value.</li>
+<li>Fifty percent (or another predefined percentage) of the actual depreciation can be applied to an asset that is used for less than the minimum number of days that are defined for a financial year.</li>
+<li>Future depreciation and the net book value (balance) can be viewed for the group value of the fixed asset.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
