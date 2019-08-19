@@ -63,7 +63,7 @@ When you have posted consumption on work orders, you can print a work order cons
 
 3. Select a date interval in the **Dates** section.
 
-4. On the the **Destination** FastTab, select if you want to display the report on screen, print it, or save it as a file or email.
+4. On the **Destination** FastTab, select if you want to display the report on screen, print it, or save it as a file or email.
 
 5. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
 
