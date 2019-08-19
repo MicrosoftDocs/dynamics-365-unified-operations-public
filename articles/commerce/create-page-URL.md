@@ -54,7 +54,7 @@ There are two ways to create page URLs:
 
 If you provide a name in the URL field when you create a new page, a page URL will automatically be created for you in the URLs section of your site that will point to the page you are creating. When you publish the URL and the page it references, your customers can then access the page associated with that URL. 
 
-[!NOTE] NOTE: If you publish a URL without publishing the page it points to, your customers will receive a 404 error. Conversely, if you publish the page without publishing the URL, it will not be addressable using a URL on your site.
+[!NOTE] NOTE: If you publish a URL without publishing the page it points to, site users will receive a 404 error when trying to access the page. Conversely, if you publish a page without publishing its corresponding URL, the page will not be accessible using a URL on your site.
 
 ### Create a page URL manually
 
@@ -66,12 +66,12 @@ If you choose not to create a page URL for a new page, you must manually create 
 
 After a page URL is created and set to point to a page, you can change the page it points to with the following steps:
 
-1. Go to the **URLs** section in your site
-2. Select the URL you want to update
-3. Click on the ellipsis next to the linked page to open the property panel at right
-4. Select a different page and click OK.
-5. Save the URL
-6. Publish the URL
+1. Click the **URLs** tab.
+2. Click the URL you want to update.
+3. In the property panel at right, click on the ellipsis next to the target page field.
+4. In the Select a Page dialog box, select a different page and click **OK**.
+5. Click **Save**.
+6. Click **Publish**.
 
 ## Redirect a page URL
 
