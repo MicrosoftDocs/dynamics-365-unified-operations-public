@@ -81,7 +81,7 @@ If a work order contains several work order jobs, you can register work hours us
 
 ![Figure 2](media/02-consumption.png)
 
-*Example:* If you make a registration for three work hours, and the work order contains three work order lines, one hour will be registered on each work order line.
+*Example:* In the screenshot below, journal lines for a work order containing three work order jobs are shown. The first line, containing three work hours, has been split, and one work hour is registered on each work order job. After the three hour registration lines have been created, you decide what to do with the original hour registration line (the first line in the example). You can keep it as is, edit it, or delete it. 
 
 ![Figure 3](media/03-consumption.png)
 
