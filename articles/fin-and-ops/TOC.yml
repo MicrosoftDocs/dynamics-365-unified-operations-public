@@ -3560,6 +3560,22 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
       - name: Fault management
         href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+    - name: Work order scheduling
+      items: 
+      - name: Maintenance worker calendar and scheduling
+        href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+      - name: Preferred maintenance workers
+        href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+      - name: Schedule work orders
+        href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+      - name: Dispatch work order
+        href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+      - name: Schedule work order on specific date and time
+        href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+      - name: Scheduled work order maintenance jobs
+        href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+      - name: Calculate capacity load on scheduled work orders
+        href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
     - name: Warranty
       items: 
       - name: Warranty agreement
