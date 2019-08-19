@@ -44,7 +44,7 @@ The ratings and reviews solution provides widgets that show rating summaries in 
 
 The solution also provides a business intelligence (BI) template that includes a set of metrics to provide insights into ratings and reviews. Full data can be exported for further analysis.
 
-## More resources
+## Additional resources
 
 - [Opting in for Ratings and Reviews features](https://docs.microsoft.com/dynamics365/)
 - [Configuring eCommerce site and pages with Ratings and Reviews](https://docs.microsoft.com/dynamics365/)
