@@ -81,11 +81,11 @@ If a work order contains several work order lines, you can register work hours u
 
 6. Insert number of work hours in the **Hours** field.
 
-7. Click **OK**.
-
-*Example:* If you make a registration for three work hours, and the work order contains three work order lines, one hour will be registered on each work order line. The figure below shows a screenshot of the interface.
+7. Click **OK**. Edit or delete the original forecast line, as required.
 
 ![Figure 2](media/02-consumption.png)
+
+*Example:* If you make a registration for three work hours, and the work order contains three work order lines, one hour will be registered on each work order line.
 
 ![Figure 3](media/03-consumption.png)
 
