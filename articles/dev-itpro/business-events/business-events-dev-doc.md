@@ -881,8 +881,8 @@ CustomFields))).visible(true);
 
 ```
 
-## Adding human readable dateTime field to the payload (available from platform update 30 onwards)
-The serialization of Business events, uses the FormJsonSerializer for serializing object (e.g. in data contracts), now has the
+## Adding human readable dateTime field to the payload (available in platform update 30 and later)
+The serialization of business events uses the FormJsonSerializer for serializing object (e.g. in data contracts), now has the
 ability to format UtcDataTime values in the ISO 8601 datetime format. This format is much more readable for humans when looking at the payload of a business event. As such, a datetime value can now be formatted as "2007-12-05T14:30Z" instead of "/Date(1196865000000)/"
 where the numeric argument specifies the number of milliseconds passed since Jan 1st of 1970 UTC+0. The ISO format is more readily understood by many tools that parse JSON.
 
