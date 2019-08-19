@@ -75,7 +75,7 @@ The URL will now be in a draft state, and must be published before site users ca
 After a page URL is created and set to point to a page, you can change the page it points to with the following steps:
 
 1. Click the **URLs** tab.
-1. Click the URL you want to update.
+1. Select    the URL you want to update.
 1. In the property panel at right, click on the ellipsis next to the target page field.
 1. In the Select a Page dialog box, select a different page and click **OK**.
 1. Click **Save**.
@@ -87,21 +87,16 @@ If you want your customers to view a different page when they request a certain 
 
 To redirect requests for a URL to a new URL:
 
-1. Go into the **URLs** section in the authoring environment and select the URL you wish to update
-
-2. In the property panel at right, select the **Redirect** radio option
-
-3. Choose a destination for the redirect
-
-4. 1. To point to another page on your site, select **Internal URL**, click on the ellipsis and select the URL you wish to redirect to
-   2. To point to a page on an external site, select **External URL** and enter the full URL for that page, including the protocol (e.g. https://domain.com/new/page.) NOTE: If the URL is already redirecting to an internal URL, you must first click **Clear  selection** to enter an external URL.
-
-5. Choose a redirect type
-
-6. 1. Choose **Permanent redirect (301)** when you know your content is moving permanently and will not revert to its previous URL again. Search engines will assign the SEO value of the redirecting URL to URL being redirected to and will update their record to show the new URL. 
-   2. Choose **Temporary redirect (302)** if you want to redirect traffic without updating search engines. This  usually makes sense if the URL will revert to the original content at  some point in the near future. 
-
-7. Publish the URL to make your changes take effect. 
+1. Click the **URLs** tab.
+1. Select the URL you want to update.
+1. In the property panel at right, select **Redirect**.
+1. Choose a destination for the redirect
+   - To point to another page on your site, select **Internal URL**, click on the ellipsis and select the URL you wish to redirect to
+   - To point to a page on an external site, select **External URL** and enter the full URL for that page, including the protocol (e.g. https://domain.com/new/page.) NOTE: If the URL is already redirecting to an internal URL, you must first click **Clear  selection** to enter an external URL.
+1. Choose a redirect type
+   - Choose **Permanent redirect (301)** when you know your content is moving permanently and will not revert to its previous URL again. Search engines will assign the SEO value of the redirecting URL to URL being redirected to and will update their record to show the new URL. 
+   - Choose **Temporary redirect (302)** if you want to redirect traffic without updating search engines. This usually makes sense if the URL will revert to the original content at some point in the near future. 
+1. Publish the URL to make your changes take effect. 
 
  
 
