@@ -53,7 +53,7 @@ You may be able to add or delete forecast lines on a work order. The setup of a 
 
 7. After you've posted the consumption journals, you can update the work order lifecycle state, for example to "Ended", to indicate that the work order has been completed.
 
-- In the **Show** field placed at the top of the form, select which journal lines you want to see: All, Not posted, or Posted. Posted journals have a check mark in the **Posted** check box.  
+- In the **Show** field placed at the top of the **Work order journals** page, select which journal lines you want to see: All, Not posted, or Posted. Posted journals have a check mark in the **Posted** check box.  
 - When item lines are created in the work order journal, product dimensions and tracking dimensions related to the item are automatically transferred to the journal line.  
 
 The screenshot below shows an example of hour and item registrations on a work order in **Work order journals**.
@@ -63,7 +63,7 @@ The screenshot below shows an example of hour and item registrations on a work o
 
 ## Split hours on work orders with several work order jobs
 
-If a work order contains several work order jobs, you can register work hours using the **Split hours** functionality, meaning the hours will be distributed evenly on each work order job.
+If a work order contains several work order jobs, you can register work hours using the **Split hours** functionality, meaning one hour registration line can be distributed evenly on each work order job.
 
 1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
 
@@ -77,9 +77,9 @@ If a work order contains several work order jobs, you can register work hours us
 
 6. Insert number of work hours to be split in the **Hours** field.
 
-7. Click **OK**. Edit or delete the original forecast line, as required.
-
 ![Figure 2](media/02-consumption.png)
+
+7. Click **OK**.
 
 *Example:* In the screenshot below, journal lines for a work order containing three work order jobs are shown. The first line, containing three work hours, has been split, and one work hour is registered on each work order job. After the three hour registration lines have been created, you decide what to do with the original hour registration line (the first line in the example). You can keep it as is, edit it, or delete it. 
 
@@ -89,9 +89,9 @@ If a work order contains several work order jobs, you can register work hours us
 
 When you make consumption registrations, financial dimensions related to the different registration types are added to the registrations in a specific sequence.
 
-*Hour and Expense Registrations:* First, financial dimensions from the journal header are added, if any. Next, financial dimensions from the related work order project are added. Finally, financial dimensions from the resource (worker) are added.
+*Hour and Expense registrations:* First, financial dimensions from the journal header are added, if any. Next, financial dimensions from the related work order project are added. Finally, financial dimensions from the resource (worker) are added.
 
-*Item Registrations:* First, financial dimensions from the journal header are added, if any. Then, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
+*Item registrations:* First, financial dimensions from the journal header are added, if any. Then, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
 
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup in Dynamics 365 for Finance and Operations.
