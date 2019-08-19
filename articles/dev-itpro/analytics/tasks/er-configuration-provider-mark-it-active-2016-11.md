@@ -47,4 +47,4 @@ This topic explains how a user assigned to the System Administrator or Electroni
 1. Select the Litware, Inc. provider.
 2. Select **Set active**.
 
-![Electronic reporting workspace page](./media/GER-Task-ActiveProvider-1.png)
+![Electronic reporting workspace page](../media/GER-Task-ActiveProvider-1.png)
