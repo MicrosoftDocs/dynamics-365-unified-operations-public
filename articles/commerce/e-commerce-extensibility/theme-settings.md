@@ -2,7 +2,7 @@
 # required metadata
 
 title: Theme settings
-description: The Dynamics 365 Commerece online SDK allows a theme designer to specify various layouts per module to control specific image layout options.
+description: The Microsoft Dynamics 365 for Commerce e-Commerce Extensibility software development kit (SDK) lets theme designers specify various layouts for each module. In this way, they can control specific layout options for images.
 author: SamJarawan
 manager: Annbe
 ms.date: 08/30/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version:
 ---
 # Theme settings
 
-The Dynamics 365 Commerece online SDK allows a theme designer to specify various layouts per module to control specific image layout options.  These are done in the **/src/settings/src/settings/theme.settings.json** file.
-
+The Microsoft Dynamics 365 for Commerce e-Commerce Extensibility software development kit (SDK) lets theme designers specify various layouts for each module. In this way, theme designers can control specific layout options for images. These layouts are specified in the theme.settings.json file in /src/settings/src/settings.
 
 ## Sample theme.settings.json file
-The sample below demonstrates how module layouts can be added with specific image settings size values. Each layout will be exposed in the authoring tools when configuring the module. In the example below the "productFeature" module is configured with 2 layouts: "layout1" and "layout2" where "layout1" specifies specific height and width image settings for the "sm" and "lg" viewport sizes.
+
+The following example shows how module layouts can be added that have specific size values for image settings. Each layout will be exposed in the authoring tools when the module is configured. In this example, the **productFeature** module is configured so that it has two layouts: **layout1** and **layout2**. The **layout1** layout specifies height and width image settings for the **sm** and **lg** viewport sizes.
 
 ``` json
 {
@@ -80,4 +80,4 @@ The sample below demonstrates how module layouts can be added with specific imag
     }
 ```
 
-Default grid breakpoint settings can also be set in this file (see `gridSettings` in above example).
+Default grid breakpoint settings can also be set in the theme.settings.json file. (See **gridSettings** in the preceding example.)
