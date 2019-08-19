@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate UAT testing using the POS test recorder and Regression suite automation tool.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/03/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
