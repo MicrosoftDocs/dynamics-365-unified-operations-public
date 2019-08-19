@@ -3,9 +3,9 @@
 
 title: X++ statements
 description: This topic describes statements in X++.
-author: RobinARH
+author: robinarh
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,18 +40,20 @@ This topic describes statements in X++.
 
 It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\*** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
+```X++
     // This is an example of a comment.
     /* Here is another example of a comment. */
+```
+
 ## print statements
-You use the **print** statement to show messages (text or selected results) in a temporary window. This window appears when the first **print** statement is executed. During testing, the **print** statement can be a convenient alternative to the **Global::info** method, which shows text in the Infolog. The following table compares the **print** statement and the **info** method.
+
+You use the **print** statement to output text through **System.Diagnostics.WriteLine** to the Visual Studio **Output** window. During testing, the **print** statement is an alternative to the **Global::info** method, which shows text in the **Infolog** window. The following table compares the **print** statement and the **info** method.
 
 | Feature   | print statement    | info method  |
 |-----------|--------------------|--------------|
-| Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.               |
-| Ability to copy contents to the clipboard | The contents of the window that the **print** statement opens can't be copied to the clipboard. You can't give the window focus.            | Infolog contents are easily copied from the **Infolog** window to the clipboard. |
-| Scope of lifetime                         | The window closes when the X++ application ends, and it might close before you have time to read it.                                        | The window persists for the whole client session.                                |
-| Size and location                         | The window can be a specific size and in a specific location on the screen.                                                                 | The window is sized and placed by the system.                                    |
-| Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.                        |
+| Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.     |
+| Ability to copy contents to the clipboard | Text is easily copied from the **Output** window to the clipboard.            | Text is easily easily copied from the **Infolog** window to the clipboard. |
+| Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.     |
 
 ### Example of a print statement
 

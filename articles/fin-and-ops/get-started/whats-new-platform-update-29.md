@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -97,6 +97,9 @@ The following enhanced extensibility capabilities have been added in Platform up
 - Custom privilege for a standard form control should consider needed permission property value set on extension form (Ref# 313650).
 - Allow table display methods added via extension to be used as lookup methods (Ref# 243486).
 - Enable display methods to be added to Form Datasources via extension (Ref# 256004).
+
+## CodeLens for method references in the X++ editor
+The X++ source code editor now takes advantage of the CodeLens functionality of Visual Studio. The number of references to an X++ method is shown in CodeLens right above the method declaration line. You can click on the reference count to find all references to the method. 
 
 ## Additional resources
 

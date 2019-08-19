@@ -5,7 +5,7 @@ title: Self-service upgrade to the latest version
 description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,6 @@ ms.dyn365.ops.version: 10.0.1
 > [!IMPORTANT]
 > This topic applies to the following starting versions:
 >
-> - Microsoft Dynamics AX 7.0 (February 2016)
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
 > - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
 > - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -71,6 +70,7 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 | 7.3 with PU 24 – PU 26<br>10.0.0 with PU 24 – 10.0.2 with PU 26 | Week of May 13, 2019 | Week of May 27, 2019 |
 | 7.3 with PU 25 – PU 27<br>10.0.1 with PU 25 – 10.0.3 with PU 27 | Week of June 10, 2019 | Week of June 24, 2019 |
 | 7.3 with PU 26 – PU 28<br>10.0.2 with PU 26 – 10.0.4 with PU 28 | Week of July 8, 2019 | Week of July 29, 2019 |
+| 7.3 with PU 27 – PU 29<br>10.0.3 with PU 27 – 10.0.5 with PU 29 | Week of October 7, 2019 | Week of October 21, 2019 |
 
 ## Refactor your customizations as extensions
 

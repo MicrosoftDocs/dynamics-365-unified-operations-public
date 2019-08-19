@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Microsoft Dynamics 365 for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -155,7 +155,10 @@ Upload the .bacpac file that was created in the previous step to the **Database 
 
 ## Perform master data migration
 
-Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.
+Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can do this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). We recommend that you complete your data migration activities before you copy the UAT environment to production, because you will have access to the database in the UAT environment for troubleshooting.  
+
+> [!IMPORTANT]
+> Document attachments are not copied from UAT to Production in the next step.  If your go live requires attachments, you will want to import those in the Production environment directly.
 
 ## Copy the sandbox database to production
 
@@ -182,6 +185,8 @@ First, sign in to the environment by using the admin account that can be found o
 * **System administration** \> **Setup** \> **Entity Store:** Update the various entities that you require for Microsoft Power BI reporting.
 * **System administration** \> **Setup** \> **System parameters:** Reconnect the environment to the LCS Help configuration for task guides.
 * **System administration** \> **Setup** \> **Email** \> **Email parameters:** Enter the Simple Mail Transfer Protocol (SMTP) settings if you use email in your UAT environment.
+* **System administration** \> **Setup** \> **Integration configuration** \> **Azure storage account connection string:** Enter the storage account string.
+* **System administration** \> **Setup** \> **System Parameters:** On the **Document connections** tab enter the Azure Key and Application Secret.
 * **System administration** \> **Inquiries** \> **Batch jobs:** Select the jobs that you want to run in your UAT environment, and update the status to **Waiting**.
 
 > [!NOTE]

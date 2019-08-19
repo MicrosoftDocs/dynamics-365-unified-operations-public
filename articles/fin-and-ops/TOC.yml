@@ -2577,6 +2577,8 @@
           href: ../financials/localizations/rus-local-settings-requisites-bank-module.md 
         - name: Set up and process payment orders
           href: ../financials/localizations/rus-payment-order-settings-processing.md 
+        - name: Exchange adjustment
+          href: ../financials/localizations/rus-exchange-adjustment.md
         - name: Foreign currency sales, purchases, and transfers
           href: ../financials/localizations/rus-currency-sale-purchase.md 
         - name: Petty cash
@@ -3560,6 +3562,62 @@
         href: ../supply-chain/asset-management/setup-for-work-orders/scheduled-execution.md
       - name: Fault management
         href: ../supply-chain/asset-management/setup-for-work-orders/fault-management.md
+    - name: Work orders
+      items:
+      - name: Introduction to work orders
+        href: ../supply-chain/asset-management/work-orders/introduction-to-work-orders.md
+      - name: Manually created work orders
+        href: ../supply-chain/asset-management/work-orders/manually-created-workorders.md
+      - name: Maintenance forecasts
+        href: ../supply-chain/asset-management/work-orders/maintenance-forecasts.md
+      - name: Procurement
+        href: ../supply-chain/asset-management/work-orders/procurement.md
+      - name: Manual update of asset counters
+        href: ../supply-chain/asset-management/work-orders/manual-update-of-asset-counters.md
+      - name: Automatic update of asset counters
+        href: ../supply-chain/asset-management/work-orders/automatic-update-of-asset-counters.md
+      - name: Maintenance checklists
+        href: ../supply-chain/asset-management/work-orders/maintenance-checklists.md
+      - name: Maintenance downtime
+        href: ../supply-chain/asset-management/work-orders/maintenance-downtime.md
+      - name: Add fault to work order
+        href: ../supply-chain/asset-management/work-orders/add-fault-to-work-order.md
+      - name: Work order report
+        href: ../supply-chain/asset-management/work-orders/work-order-report.md
+      - name: Work order pools
+        href: ../supply-chain/asset-management/work-orders/work-order-pools.md
+      - name: Active work order maintenance jobs
+        href: ../supply-chain/asset-management/work-orders/active-work-order-jobs-overview.md
+      - name: Work orders and fixed assets
+        href: ../supply-chain/asset-management/work-orders/work-orders-and-fixed-assets.md
+    - name: Integration to Project management and accounting
+      items:
+      - name: Forecasts, work orders, and projects
+        href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+    - name: Preventive and reactive maintenance
+      items: 
+      - name: Preventive maintenance
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+      - name: Maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+      - name: Schedule maintenance plans
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+      - name: Maintenance rounds
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+      - name: Maintenance schedule
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+      - name: Maintenance schedule cost
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+      - name: Create work orders
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+      - name: Maintenance downtime
+        href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+    - name: Capacity planning
+      items:
+      - name: Calculate capacity load
+        href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
+      - name: Calculate item forecast
+        href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
     - name: Work order scheduling
       items: 
       - name: Maintenance worker calendar and scheduling

@@ -54,6 +54,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
+- [Exchange adjustment](rus-exchange-adjustment.md)
 - [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 
@@ -67,6 +68,7 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 
 ## Fixed assets (Russia)
+- [Fixed assets (Russia)](rus-fixed-assets.md)
 - [Set up fixed assets](rus-set-up-fixed-assets.md)
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)
