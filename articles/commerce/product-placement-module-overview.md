@@ -3,29 +3,29 @@
 
 title: Product placement module
 description: 
-author: Ashish Harchwani
+author: asharchw
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: Ashish Harchwani
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: asharchw
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Product placement module 
