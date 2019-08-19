@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a page URL
-description: This article covers the basic concepts and procedures for creating the URL slug for a page in your site.
+description: This article covers the basic concepts and procedures for creating a page URL on your site.
 author: StuHarg
 manager: annbe
 ms.date: 10/01/2019
@@ -47,8 +47,8 @@ The URL slug, or page URL for a page exists as a standalone entity in the site a
 
 There are two ways to create page URL: 
 
-1. Automatically, when you create a page
-2. Manually, through the URLs page 
+-Automatically, when you create a page
+-Manually, through the URLs page 
 
 ### Create a page URL when you create a page
 
