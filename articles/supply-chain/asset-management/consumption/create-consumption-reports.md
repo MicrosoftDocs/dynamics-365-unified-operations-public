@@ -42,6 +42,7 @@ When you have posted consumption on work orders, you can print an asset consumpt
 1. Click **Asset management** > **Reports** > **Assets** > **Asset consumption**.
 
 2. In the **Asset consumption** dialog, select the parameters and detail level you want to see by selecting the relevant check boxes ad functional location level in the **Show** section.
+- You can use the **Level** field to indicate how detailed you want the asset lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location will be shown on the top level, and therefore a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all assets on all the functional location levels to which they are related.
 
 3. Select a date interval in the **Dates** section.
 
