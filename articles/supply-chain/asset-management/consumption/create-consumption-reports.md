@@ -64,3 +64,8 @@ When you have posted consumption on work orders, you can print a work order cons
 4. If required, you can select specific work orders to be displayed in the report. On the **Records to include** FastTab, click **Filter**, and add the work orders you want to include in the report.
 
 5. Click **OK** to generate the report.
+
+>[!NOTE]
+>You can also generate a work order report, which contains more work order details.
+
+
