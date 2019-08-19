@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: andreabichsel
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (August 13, 2019)"
+# What's new or changed in Dynamics 365 for Talent (August 13, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -64,4 +64,6 @@ For more details about Platform update 29, see [Preview features in Dynamics 365
 
 ### Streamlined employee entry and navigation
 
-Rarely do changes to the employee records take affect immediately. New hires rarely start “today” so data needs to be updated as of the start date of the employee. This is also true for past employees. With this feature we will allow for updates to future and past data without navigating to multiple forms or changing date context in these common scenarios. A streamlined navigation model including consolidating additional data links across the worker form will be available. Key infromation will also be promoted and displayed dynamically in the upper "banner" of the worker. 
+Changes to employee records rarely take effect immediately. You need to update data as of the employee's start date, which is often in the future, and you also need to update information in the past. With this streamlined navigation model, you'll be able to update future and past data without navigating to multiple forms or changing the date context. This change also dynamically promotes and displays key information in the upper banner area of the employee record.
+
+
