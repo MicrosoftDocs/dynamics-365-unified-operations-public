@@ -5,64 +5,64 @@ title: Create a page URL
 description: This article covers the basic concepts and procedures for creating the URL slug for a page in your site.
 author: StuHarg
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: StuHarg
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 # Create a page URL
 
-This article covers the basic concepts and procedures for creating the URL slug for a page in your site.
+This article covers the basic concepts and procedures for creating a page URL on your site.
 
 ## Overview
 
-The full, or absolute URL that points to a page on your site is composed of distinct parts. Using the example URL https://www.contoso.com/en-us/contactus:
+The full, or absolute, URL that points to a page on your site is composed of distinct parts. Using the example URL https://www.contoso.com/en-us/contactus:
 
-- https://www.contoso.com is your site's HTTP protocol and domain
-- /en-us is your site's language path
-- /contactus is the relative URL for your Contact Us page (sometimes referred to as a URL slug) 
+- https://www.contoso.com is the site's HTTP protocol and domain.
+- /en-us is the site's language path.
+- /contactus is the relative URL for the Contact Us page (also known as a page URL *slug*).
 
 You establish your site's domain and optional language path when you set up your site. You may also add additional domains and language paths to your site through the **online stores** page in your site settings. To learn more about setting up domains and language paths for additional online stores, see the [Associate a site with a Dynamics 365 online store](http://) help topic. 
 
 The URL slug, or page URL for a page exists as a standalone entity in the site authoring environment. A page URL is composed of a name that represents the URL slug, and a pointer to a page on your site or another. URLs can also be configured to serve as a redirection to another page on your site or an external site. 
 
-## Creating page URLs
+## Create a page URL
 
 There are two ways to create page URL: 
 
 1. Automatically, when you create a page
 2. Manually, through the URLs page 
 
-### Creating a page URL when you create a page
+### Create a page URL when you create a page
 
 If you provide a name in the URL field when you create a new page, a page URL will automatically be created for you in the URLs section of your site that will point to the page you are creating. When you publish the URL and the page it references, your customers can now make a request to that URL and get back the page tied to it. 
 
 NOTE: If you publish a URL without publishing the page it points to, your customers will receive a 404. Conversely, if you publish the page without publishing the URL, it will not be addressable via a URL on your site.
 
-### Manually creating page URLs
+### Manually create a page URL
 
 When creating new pages, you are not required to specify a page URL. If you leave the URL field empty, the page will be created in an unlinked state, and will not be reachable by your customers even if the page is published. 
 
 If you choose not to create a page URL for a new page, you must manually create the URL and link it to the page. You do this in the URLs tab by clicking on **New** -> **New URL**, selecting the page you wish this URL to link to, and giving the URL a name. After you click **OK**, the URL will be in a draft state, and you must publish the URL before 
 
-## Updating page URLs 
+## Update a page URLs 
 
 After a page URL is created and set to point to a page, you can change the page it points to with the following steps:
 
@@ -73,7 +73,7 @@ After a page URL is created and set to point to a page, you can change the page 
 5. Save the URL
 6. Publish the URL
 
-## Redirecting page URLs
+## Redirect a page URLs
 
 If you want your customers to view a different page when they request a certain URL, often the best approach is to simply change the page that the URL points to. However,  you may also have legitimate reasons for redirecting requests for a URL to a different URL using HTTP 301 or 302 redirects. 
 
