@@ -5,7 +5,7 @@ title: Scheduled work order maintenance jobs
 description: This topic explains scheduled work order maintenance jobs in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,24 +13,28 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Scheduled work order maintenance jobs
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
 
 The **Scheduled work order maintenance jobs** page is used to get an overview of the work orders allocated to a resource. Work orders using resource types "Human resources", "Tool", and "Machine" are shown in the list. The list can be used to get an overview of work orders allocated to a specific resource. You can also use it to quickly find a work order allocated to a maintenance worker who, for example, called in sick this morning, and then quickly allocate another maintenance worker to the job.
 
