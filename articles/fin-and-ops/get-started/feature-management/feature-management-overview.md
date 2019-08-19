@@ -104,8 +104,9 @@ All features that can be enabled will be enabled. If a feature is already schedu
 
 By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Select **All new features will be enabled by default** to automatically turn on all new features when they are added to your environment.
-- Select **All new features will be disabled by default** to automatically turn off all new features when they are added to your environment.
+- Select **Enable new features automatically** to automatically turn on all new features when they are added to your environment.
+- Select **Do not enable new features automatically** to default all new features to off when they are added to your environment.
+
 
 When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
 
