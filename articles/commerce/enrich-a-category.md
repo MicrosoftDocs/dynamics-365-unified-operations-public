@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enrich a category landing page
-description: This topic describes what enriching a category page means and how you can enrich a category page using the authoring tool in Dynamics 365 for Commerce.
+description: This topic describes what is meant by enrichment of a category page and explains how you can enrich a category page by using the authoring tool in Microsoft Dynamics 365 for Commerce e-Commerce.
 author: josaw1
 manager: annbe
 ms.date: 08/30/2019
@@ -30,23 +30,23 @@ ms.dyn365.ops.version:
 
 # Enrich a category landing page
 
-This topic describes what enriching a category page means and how you can enrich a category page using the authoring tool in Dynamics 365 for Commerce e-Commerce.
+This topic describes what is meant by enrichment of a category page. It also explains how you can enrich a category page by using the authoring tool in Microsoft Dynamics 365 for Commerce e-Commerce.
 
-Commerce provides a default category landing page that is used when rendering category data. A default category page contains required elements such as refiners, categorized product placement, sorting options, choice summary, and pagination controls. Instead of using a default page, you can instead modify the default page or define a different category page for a specific category.
+Dynamics 365 for Commerce provides a default category landing page that is used when category data is shown. A default category page contains required elements, such as refiners, categorized product placement, sorting options, choice summary, and pagination controls. 
 
- ![Enriched category landing page](./media/CategoryLandingPages.png)
+However, instead of using the default category page, you might want to use an "enriched" category landing page that has more content and more specific elements. A typical enrichment might involve adding category-specific marketing content to the category page. This content might include cross-category product placement for cross-sell purposes, editorial lists, images, videos, and other text. You can either modify the default category page or define a different category page for a specific category.
 
-On the **Retail** page in the authoring tool, there is a list of categories from the channel assigned to the site. If a category page has the status "enriched" selected, that category page has been enriched. If "enriched" is not selected for a page, the category page for that specific category will use the default category page and content. You can preview the category page for both enriched and non-enriched categories by clicking the category name.
+![Enriched category landing page](./media/CategoryLandingPages.png)
 
-In many cases, you will want to enrich a category landing page so that it will have more content and more specific elements. A typical enrichment may include adding category-specific marketing content on the category page, including cross-category product placement for cross-sell purposes, editorial lists, images, videos, and other text. 
+In the authoring tool, the **Retail** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
 
-To enrich a category page, do the following.
+To enrich a category page, follow these steps.
 
-1. In the **Retail** view, click the name of the category you want to entrich. The category page will open in the page editor and render using the default category page. 
-1. Click **Enrich category page** on the ribbon. 
-1. Select a template for your enriched category page. You can select the default category page if you want to make minor modifications, or you can select a specific category page template if needed. When you select the template, the page editor will open and a new page is created for the category using the template you selected. The page will be checked out to you and you can now make your modifications.
+1. On the **Retail** page, select the name of the category that you want to enrich the category page for. The default category page for the selected category is opened in the page editor.
+2. Select **Enrich category page**.
+3. Select a template for the enriched category page. If you're making only minor changes, you can select the default category page. Alternatively, you can select a specific category page template. When you select the template, the page editor is opened, and the selected template is used to create a new category page for the selected category. The page is checked out to you, and you can now make your changes.
 
-> [!NOTES]
-> Modules that use category specification data will use the date from your selected category. 
-
-> The settings of the template you selected will determine what modifications you can make. 
+> [!NOTE]
+> Modules that use category specification data use the date from your selected category.
+>
+> The settings of the template that you select determine the changes that you can make.
