@@ -48,30 +48,38 @@ The URL slug, or relative URL for a page exists as a standalone entity in the si
 There are two ways to create page URLs: 
 
 - Automatically, when you create a page
-- Manually, through the URLs page 
+- Manually, from the URLs page 
 
 ### Create a page URL when you create a page
 
-If you provide a name in the URL field when you create a new page, a page URL will automatically be created for you in the URLs section of your site that will point to the page you are creating. When you publish the URL and the page it references, your customers can then access the page associated with that URL. 
+If you provide a name in the URL field when you create a new page, a page URL will automatically be created for you in the URLs page that will point to the page you are creating. When you publish the URL and the page it references, your customers can then access the page associated with that URL. 
 
 [!NOTE] NOTE: If you publish a URL without publishing the page it points to, site users will receive a 404 error when trying to access the page. Conversely, if you publish a page without publishing its corresponding URL, the page will not be accessible using a URL on your site.
 
 ### Create a page URL manually
 
-When creating new pages, you are not required to specify a page URL. If you leave the URL field empty, the page will be created in an unlinked state, and will not be reachable by your customers even if the page is published. 
+When creating new pages, you are not required to specify a page URL. If you leave the URL field empty, the page will be created in an unlinked state, and will not be reachable by your customers even if the page is published. To make the site page accessible, you must manually create the URL and link it to the page.
 
-If you choose not to create a page URL for a new page, you must manually create the URL and link it to the page. You do this in the URLs tab by clicking on **New** -> **New URL**, selecting the page you wish this URL to link to, and giving the URL a name. After you click **OK**, the URL will be in a draft state, and you must publish the URL before 
+To manually create the URL, do the following.
+
+1. Click the **URLs** tab.
+1. Click **New**.
+1. Under Select a Page, click on the site page to be associated with the URL.
+1. Under URL, enter the URL slug.
+1. Click **OK**.
+
+The URL will now be in a draft state, and must be published before site users can access the associated page. 
 
 ## Update a page URL 
 
 After a page URL is created and set to point to a page, you can change the page it points to with the following steps:
 
 1. Click the **URLs** tab.
-2. Click the URL you want to update.
-3. In the property panel at right, click on the ellipsis next to the target page field.
-4. In the Select a Page dialog box, select a different page and click **OK**.
-5. Click **Save**.
-6. Click **Publish**.
+1. Click the URL you want to update.
+1. In the property panel at right, click on the ellipsis next to the target page field.
+1. In the Select a Page dialog box, select a different page and click **OK**.
+1. Click **Save**.
+1. Click **Publish**.
 
 ## Redirect a page URL
 
