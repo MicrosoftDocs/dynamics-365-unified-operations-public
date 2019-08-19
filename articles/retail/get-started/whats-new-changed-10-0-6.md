@@ -38,6 +38,15 @@ This topic describes features that are new or changed in Microsoft Dynamics 365 
 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [Preview features in Finance and Operations version 10.0.6 (November 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
 
+## New Inventory Availability API's for E-commerce use
+4 new API's will be made available to provide e-commerce or 3rd party solutions with an estimation of on-hand inventory for a requested item and warehouse.  These API's are intended to replace the existing GetProductAvailabilities and GetAvailableInventoryNearby API's that are currently in-market.   These new API's will have improved calculation logic and caching to improve performance.  The names of the new API's are:
+* GetEstimatedProductWarehouseAvailability
+* GetEstimatedAvailabilityDefaultWarehouse
+* GetEstimatedAvailabilityNearby
+* GetEstimatedAvailabilityAllWarehouses
+
+Additionally, new tables have been added for tracking available ecommerce inventory in the channel database.  Retail and Retail Shared parameters will be made available that must be configured to uptake these new API's and tables turn off the existing expensive e-commerce inventory availability logic that existed in previous versions.
+
 ## Feature name
   
 Description
