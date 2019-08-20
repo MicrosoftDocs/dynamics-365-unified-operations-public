@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 400 / 500 Page Results
-description: This topic reviews setting up an e-Commerce page to show end users for 400 or 500 results.
+title: Build custom response pages for 400/500 errors
+description: This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
 author: brshoo
 manager: annbe
 ms.date: 10/01/2019
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Support 400/500 error pages 
+# Build custom response pages for 400/500 errors 
 
-This topic describes how to implement 400 and 500 error page support for your site using the authoring tools in Dynamics 365 Retail.
+This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
 
 ## Overview
 
-HTTP protocol will send error codes when a request is not successful. All 4xx categorical error codes are client error responses. All 5xx categorical error codes are server error responses. In Dynamics 365 Retail, application users can build customized response pages to display to end users in the event of 4xx or 5xx error code responses.
+A server will issue HTTP response status code errors when a client request is not successful. All 4xx categorical status codes are client error responses, and all 5xx categorical status codes are server error responses. In Dynamics 365 Retail, application users can build custom response pages to display to end users in the event of 4xx or 5xx status code error responses.
 
 ## Build the Error Response Page
 To begin, build the error page you would like displayed to your end users if an error occurs. 
