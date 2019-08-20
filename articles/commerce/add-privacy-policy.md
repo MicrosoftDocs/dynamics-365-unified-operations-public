@@ -1,55 +1,55 @@
 ---
 # required metadata
 
-title: Add a Privacy Policy
-description: This topic reviews setting up a Privacy Policy page within Dynamics 365 e-Commerce.
-author: BrianShook
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+title: Add a privacy policy
+description: This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
+author: brshoo
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: brshoo
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a Privacy Policy
+# Add a privacy policy
 
-Applies to Dynamics 365 e-Commerce Privacy Policy and building a Privacy Policy for your site.
+This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
 
-Privacy compliance includes organizational measures or transparency to data subjects on how their data is collected and handled. This information empowers users to act on how they want their personal data to be handled.
+## Overview
 
-## Dynamics 365 e-Commerce's Privacy Policy
+Privacy compliance includes organizational measures that inform site users on how their data is collected and handled. This information empowers users to then act on how they want their personal data to be handled.
 
-As a user of the Dynamics 365 e-Commerce Authoring Tools, you can review Microsoft's Privacy Policy by the following:
+## Review Microsoft's privacy policy in Dynamics 365 Commerce
 
-- At any time while logged in to Dynamics 365 e-Commerce Authoring Tools, look for the question mark (?) icon in the top-right corner.
-- Click the question mark icon to drop down the context menu and select "Privacy and cookies".
-- A new tab will launch with a link to the [**Microsoft Privacy Statement**](https://privacy.microsoft.com/en-US/privacystatement). 
+To review Microsoft's Privacy Policy while logged into Dynamics 365 Commerce Authoring Tools, do the following.
 
+- Click the question mark icon in the top-right corner and select **Privacy and cookies** from the drop down menu. 
 
+A new tab will launch with a link to the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement). 
 
-## Building a Privacy Policy page for your site
+## Build a Privacy Policy page for your site
 
-With Dynamics 365 e-Commerce, there are a number of ways to provide users of your site access to your Privacy Policy. This section will review building a Privacy Policy page and referencing the page using a Footer Fragment.
+With Dynamics 365 Commerce, there are a number of ways to provide users of your site access to your Privacy Policy. This section will review building a Privacy Policy page and referencing the page using a Footer Fragment.
 
-### Building a Privacy Page
+### Build a Privacy Page
 
 In the e-Commerce Authoring Tools, navigate to the Site you will be building the Privacy Policy page. Then perform the following:
 
