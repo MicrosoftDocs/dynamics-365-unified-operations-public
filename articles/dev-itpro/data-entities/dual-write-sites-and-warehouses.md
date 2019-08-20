@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-08-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. As Dynamics 365 for Finance and Operations is a supply chain management application, it includes the concepts of operational sites and warehouses.  These are used to model the supply chain of your company.
+This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. Operational sites and warehouses are common concepts in a supply chain management application. They are used to model the supply chain of your company.
 
 ## Templates
 
