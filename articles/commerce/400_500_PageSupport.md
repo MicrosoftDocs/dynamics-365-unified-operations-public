@@ -56,6 +56,8 @@ To build the master template, do the following.
 
 #### Build the error page
 
+To build the error page, do the following.
+
 1. From the site menu, select **Pages**.
 1. Click **New Page**. 
 1. Name the error page. Do not fill in the **URL** field at this time. 
@@ -65,7 +67,9 @@ To build the master template, do the following.
 
 [!Note] You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
 
-#### Set the page for error redirection
+#### Set up a redirect for the error page
+
+To set up a redirect for the error page, do the following.
 
 1. From the site menu, select **URLs**.
 1. Go to **New > New Alias** and select the new error page.
