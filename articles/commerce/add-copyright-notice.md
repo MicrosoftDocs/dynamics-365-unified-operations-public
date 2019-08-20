@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This article explains the steps required in order to add a copyright notice to your e-Commerce website.
+This article explains the steps required to add a copyright notice to your e-Commerce website.
 
 ## Prerequisites
 Before you can add a copyright notice on your site, you must have the following:
