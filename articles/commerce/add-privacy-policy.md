@@ -49,11 +49,9 @@ A new tab will launch with a link to the [Microsoft Privacy Statement](https://p
 
 With Dynamics 365 Commerce, there are a number of ways to provide users of your site access to your privacy policy. This section will review building a privacy policy page and referencing the page using a footer fragment.
   
-### Build a Privacy Page
+### Create a template
 
-In Dynamics 365 Commerce Authoring Tools, navigate to the site you will be building the privacy policy page. Then perform the following:
-
-#### Create a template
+In Commerce Authoring Tools, navigate to the site for which you will be building the privacy policy page.
 
 [!NOTE] If you already have a template created that can be used for your privacy page, skip ahead to the **Build a Privacy Page** section.
 
@@ -71,21 +69,27 @@ To create a template, do the following.
 1. Check in the template.
 1. Publish the template.
 
-#### Build a Privacy Page
+### Build a Privacy Page
 
-1. Navigate back to the Main page and select the Pages section in the navigation menu.
-1. Select 'New Page', and select your Privacy Page Master Template.  Provide a name and URL for your Privacy Page. 
-1. In the **Main Slot** of your Default Page, add a 'Content Rich Block' module.
-1. Add a 'Content rich block item' to your Content Rich Block module.
-1. In the Properties panel of the Content rich block item, click on "Add Data Source" and select "RICH TEXT CONTENT".
-1. Enter your information in the Rich Text Editor. Use the expand icon to bring the Rich Text Editor into full screen mode if needed.
-1. Once completed, use the "Preview" button to preview the page in the Browser.
+To build a privacy page, do the following.
+
+1. Click the **Pages** tab.
+1. Click **New Page**.
+1. Select the template you will use for the privacy page.  
+1. Enter a page name and URL, then click **OK**. 
+1. In the **Main Slot** of your page, add a **Content Rich Block** module.
+1. In the Content Rich Block module, add a **Content rich block item**.
+1. In the properties panel of the Content rich block item, click **Add Data Source** and then select **RICH TEXT CONTENT**.
+1. Enter privacy page content into the rich text editor. Expand the rich text editor to full screen mode if needed.
+1. When content entry is completed, click **Preview** to preview the page in the browser.
 1. Complete any remaining additions to the page and module properties.
-1. Check-in and then Publish your Privacy Page.
-1. Navigate to **Main** and then to the **URLs** section. Find the URL/Page reference in the URLs list for the site.
-1. Select and Publish the URL item for the page.
+1. Check in the privacy page.
+1. Publish the privacy page.
+1. Navigate to the main page and click the **URLs** tab. 
+1. In the URLs list, find and select the privacy page URL.
+1. Publish the selected URL for the privacy page.
 
-#### Create a link to the privacy page
+### Create a link to the privacy page
 
 A reference page such as a privacy page can be created in a page fragment and easily utilized or updated across multiple sites using the fragment. For this example, we will use a footer fragment to link to the privacy page created.
 
