@@ -1,6 +1,7 @@
 # Online channel reporting
 
-The following e-Commerce channel specific reports are available in HQ 
+The following reports are available in HQ.
+They can be accessed from Retail -> Inquiries and reports -> Sales reports
 
 ### Channel summary report
 Report showing summary of following transactions for the selected channel - 
