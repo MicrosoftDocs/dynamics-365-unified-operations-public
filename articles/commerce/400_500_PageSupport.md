@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Build custom response pages for 400/500 errors
+title: Build custom response pages for 400/500 status code errors
 description: This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
 author: brshoo
 manager: annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Build custom response pages for 400/500 errors 
+# Build custom response pages for 400/500 status code errors 
 
 This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
 
@@ -37,19 +37,21 @@ This topic describes how to build custom response pages for 400 and 500 status c
 
 A server will issue HTTP response status code errors when a client request is not successful. All 4xx categorical status codes are client error responses, and all 5xx categorical status codes are server error responses. In Dynamics 365 Retail, application users can build custom response pages to display to end users in the event of 4xx or 5xx status code error responses.
 
-## Build the Error Response Page
-To begin, build the error page you would like displayed to your end users if an error occurs. 
-  * Log in to the Microsoft Dynamics 365 for Retail Authoring Tools in your preferred browser. 
+## Build a status code error response page
+To begin building a status code error response page, do the following.
 
-  * Select the Site which you will be building the 4xx/5xx error message page. 
+1. Log in to the Microsoft Dynamics 365 Retail Authoring Tools in your preferred browser. 
+1. Select the site for which you will be building the 4xx/5xx status code error response page. 
 
-##### Build the Master Template
+#### Build the master template
 
-  * Select the **Master Template** section and create a New Master Template.
+To build the master template, do the following.
 
-  *  Name the Master Template and begin building the template as you would want your Error Page to be structured.
-  
-  * Check-in and Publish the Master Template.
+1. Select the **Master Template** section and create a new master template.
+1. Name the master template.
+1. Build the template according to how you want the error page to be structured.
+1. Check in the master template.
+1. Publish the master template.
 
 ##### Build the Error Page
 
