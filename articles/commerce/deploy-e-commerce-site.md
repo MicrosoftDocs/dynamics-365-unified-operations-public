@@ -79,7 +79,7 @@ After you've collected this information, follow these steps to initialize e-Comm
 3. In the **Environments** section, select the environment.
 4. Under **Environment features**, select the **Retail manage** link.
 5. On the **e-Commerce** tab, notice that the e-Commerce components aren't yet initialized, and that **Initialize e-Commerce** is the only action that is available.
-6. Select **Initialize e-Commerce**. A pane appears, where you must enter the information that is required for provisioning.
+6. Select **Initialize e-Commerce**. A dialog box appears, where you must enter the information that is required for provisioning.
 7. Fill in the required information, and then go to the next page.
 8. On the next page, fill in the required information, and then submit the form.
 
@@ -87,7 +87,7 @@ After you've collected this information, follow these steps to initialize e-Comm
 
 9. To see the initialization status, either refresh the page or return to the **e-Commerce** tab later.
 	
-When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab in the **Retail management** view is updated to reflect the provisioning. The view shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
+When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab in the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
 
 ## Access your authoring environment
 
