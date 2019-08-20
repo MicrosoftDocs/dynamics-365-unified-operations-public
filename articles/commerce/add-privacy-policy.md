@@ -62,7 +62,7 @@ To create a template, do the following.
 1. Enter the template name in the **Template Name** field.
 1. Click **OK**.
 1. In the template, add any required modules to the necessary page slots (hover over red exclamation marks for guidance).
-  - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
+    - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
 1. In the **Body** slot, add a **Default Page** module.
 1. In the **Main Slot** of the Default Page module, add a **Content Rich Block** module.
 1. In the Content Rich Block module, add a **Content rich block item**.
@@ -85,7 +85,10 @@ To build a privacy page, do the following.
 1. Complete any remaining additions to the page and module properties.
 1. Check in the privacy page.
 1. Publish the privacy page.
-1. Navigate to the main page and click the **URLs** tab. 
+
+To publish the URL for the privacy page, do the following.
+
+1. From the main page, click the **URLs** tab. 
 1. In the URLs list, find and select the privacy page URL.
 1. Publish the selected URL for the privacy page.
 
