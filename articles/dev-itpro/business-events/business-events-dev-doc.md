@@ -33,40 +33,17 @@ ms.dyn365.ops.version: 2019-02-28
 This topic walks you through the development process and best practices for implementing business events.
 
 ## What is a business event and what is not a business event?
-This question comes up every time we start to think about use cases where
-business events can help. Is creation of a vendor a business event? Or is
-confirming a purchase order a business event? Is it a business event if you
-capture the event at the table level? Or should business events only be captured
-at the business logic level in a business process? These are not only valid
-questions, but also a key topic of discussion when planning and architecting a
-solution for integration. The following guidelines can be used to help with this
-thought process and decision making.
+This question comes up every time we start to think about use cases where business events can help. Is creation of a vendor a business event? Or is confirming a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events only be captured at the business logic level in a business process? These are not only valid questions, but also a key topic of discussion when planning and architecting a solution for integration. The following guidelines can be used to help with this thought process and decision making.
 
-Intent
-------
+## Intent
 
-The intent behind capturing the business event must be clearly understood. In
-other words, what is the reason for capturing the business event and how it is
-going to be used by the recipient.
+The intent behind capturing the business event must be clearly understood. In other words, what is the reason for capturing the business event and how it is going to be used by the recipient.
 
-If the intent for capturing a business event is to take a business action
-outside of Finance and Operations in response to the business event happening in
-Finance and Operations, then this is a valid intent to capture the business
-event. The business action that is taken in response to the business event can
-be to notify users about the business event and/or to call into another
-business application to take a business action like, creating a sales order. It is important to look at the business action generically and not
-base the need for a business event on the type of business action that will be
-taken.
+If the intent for capturing a business event is to take a business action outside of Finance and Operations in response to the business event happening in Finance and Operations, then this is a valid intent to capture the business event. The business action that is taken in response to the business event can be to notify users about the business event and/or to call into another business application to take a business action like, creating a sales order. It is important to look at the business action generically and not base the need for a business event on the type of business action that will betaken.
 
-If the intent of capturing the business event is to transfer data to the
-recipient and in effect, realizing a data export scenario, then this will not be
-a good use case for using business events. In fact, the use of business events
-for data transfer use cases will be a misuse of the business events framework.
-Such scenarios must continue to use data export mechanisms already available in
-data management.
+If the intent of capturing the business event is to transfer data to the recipient and in effect, realizing a data export scenario, then this will not be a good use case for using business events. In fact, the use of business events for data transfer use cases will be a misuse of the business events framework. Such scenarios must continue to use data export mechanisms already available in data management.
 
-Fidelity
---------
+## Fidelity
 
 When the intent is clear and a legitimate need for a business event is
 established, the next step is to evaluate the approach that must be taken to
@@ -104,11 +81,11 @@ intent discussed previously must be used for such decisions.
     can not only be taxing on performance but, it may also get complicated based
     on specific use cases.
 
-| **Capturing at business logic level**                                                                                    | **Capturing at table level**                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Ensures durability by being in the transaction                                                                           | Ensures durability by being in the transaction.                                                                      |
-| Allows for targeted business events.                                                                                     | Difficult to enable targeted business events due to the lower level capturing of events.                             |
-| Makes it easy to remain noiseless.                                                                                       | Difficult to remain noiseless unless additional effort is taken to put sound logic in place to filter out the noise. |
+| Capturing at business logic level | Capturing at table level |
+|-----------------------------------|--------------------------|
+| Ensures durability by being in the transaction             | Ensures durability by being in the transaction.       |
+| Allows for targeted business events.                       | Difficult to enable targeted business events due to the lower level capturing of events. |
+| Makes it easy to remain noiseless.                         | Difficult to remain noiseless unless additional effort is taken to put sound logic in place to filter out the noise. |
 | Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
 
 
@@ -659,23 +636,15 @@ The Business Events framework supports a concept of *payload context*, which pro
 A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
 
 ```
-class CustomCommitLogPayloadContext extends
-BusinessEventsCommitLogPayloadContext
-
+class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
+    private utcdatetime eventTime;
 
-private utcdatetime eventTime;
-
-public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
-
-{
-
-eventTime = \_eventTime;
-
-return eventTime;
-
-}
-
+    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    {
+        eventTime = \_eventTime;
+        return eventTime;
+    }
 }  
 ```
 
@@ -685,30 +654,19 @@ A Chain of Command (CoC) extension will need to be written for the BusinessEvent
 
 ```
 [ExtensionOf(classStr(BusinessEventsSender))]
-
 public final class CustomPayloadContextBusinessEventsSender_Extension
-
 {
-
-protected BusinessEventsCommitLogPayloadContext
-buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
-
-{
-
-BusinessEventsCommitLogPayloadContext payloadContext = next
-buildPayloadContext(_commitLogEntry);
-
-CustomCommitLogPayloadContext customPayloadContext = new
-CustomCommitLogPayloadContext();
-
-customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
-
-customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
-
-return customPayloadContext;
-
-}
-
+    protected BusinessEventsCommitLogPayloadContext
+    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    {
+        BusinessEventsCommitLogPayloadContext payloadContext = next
+        buildPayloadContext(_commitLogEntry);
+        CustomCommitLogPayloadContext customPayloadContext = new
+        CustomCommitLogPayloadContext();
+        customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
+        customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
+        return customPayloadContext;
+    }
 }  
 ```
 
@@ -720,42 +678,25 @@ The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
 
 ```
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
-
 public final class CustomBusinessEventsServiceBusAdapter_Extension
-
 {
-
-protected void addProperties(BrokeredMessage \_message,
-BusinessEventsEndpointPayloadContext \_context)
-
-{
-
-if (_context is CustomCommitLogPayloadContext)
-
-{
-
-CustomCommitLogPayloadContext customPayloadContext = \_context as
-CustomCommitLogPayloadContext;
-
-var propertyBag = \_message.Properties;
-
-propertyBag.Add('EventId', customPayloadContext.parmEventId());
-
-propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
-
-*// Convert the enum to string to be able to serialize the property.*
-
-propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
-customPayloadContext.parmBusinessEventCategory()));
-
-propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
-
-propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
-
-}
-
-}
-
+    protected void addProperties(BrokeredMessage \_message,
+    BusinessEventsEndpointPayloadContext \_context)
+    {
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = \_context as
+            CustomCommitLogPayloadContext;
+            var propertyBag = \_message.Properties;
+            propertyBag.Add('EventId', customPayloadContext.parmEventId());
+            propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
+            // Convert the enum to string to be able to serialize the property.
+            propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
+            customPayloadContext.parmBusinessEventCategory()));
+            propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
+            propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
 }  
 ```
 
@@ -783,41 +724,29 @@ The new table will then hold the definition of the custom fields needed to initi
 The new endpoint adapter class must implement the IBusinessEventsEndpoint interface as well as be decorated with the BusinessEventsEndpointAttribute attribute.
 
 ```
-
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
-
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
-
 {  
 ```
 
 The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
 
 ```
-
 if (!(_endpoint is CustomBusinessEventsEndpoint))
-
 {
-
-BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-\_endpoint.RecId);
-
+    BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
+    \_endpoint.RecId);
 }
 
 CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
 CustomBusinessEventsEndpoint;
-
 customField = customBusinessEventsEndpoint.CustomField;
 
 if (!customField)
-
 {
-
-throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
-classStr(CustomEndpointAdapter), varStr(customField)));
-
+    throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
+    classStr(CustomEndpointAdapter), varStr(customField)));
 }
-
 ```
 
 ### Extend the EndpointConfiguration form
@@ -832,59 +761,50 @@ The custom field input should be bound to the new table and field created in the
 ![Business event endpoint](../media/customendpoint5.png)
 
 ```
-
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
-
 final public class CustomBusinessEventsEndpointConfiguration_Extension
-
 {
+    public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
+    {
+        TableName tableName = next getConcreteTableType(_endpointType);
+        if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
+        {
+            tableName = tableStr(CustomBusinessEventsEndpoint);
+        }
+        return tableName;
+    }
 
-public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
-
-{
-
-TableName tableName = next getConcreteTableType(_endpointType);
-
-if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
-
-{
-
-tableName = tableStr(CustomBusinessEventsEndpoint);
-
+    public void showOtherFields()
+    {
+        next showOtherFields();
+        BusinessEventsEndpointType selection =
+        any2Enum(EndpointTypeSelection.selection());
+        if (selection == BusinessEventsEndpointType::CustomEndpoint)
+        {
+            this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
+            CustomFields))).visible(true);
+        }
+    }
 }
-
-return tableName;
-
-}
-
-public void showOtherFields()
-
-{
-
-next showOtherFields();
-
-BusinessEventsEndpointType selection =
-any2Enum(EndpointTypeSelection.selection());
-
-if (selection == BusinessEventsEndpointType::CustomEndpoint)
-
-{
-
-this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
-CustomFields))).visible(true);
-
-}
-
-}
-
-}
-
 ```
 
-## Adding human readable dateTime field to the payload (available in platform update 30 and later)
-The serialization of business events uses the FormJsonSerializer for serializing object (e.g. in data contracts), now has the ability to format UtcDataTime values in the ISO 8601 datetime format. This format is much more readable for humans when looking at the payload of a business event. As such, a datetime value can now be formatted as "2007-12-05T14:30Z" instead of "/Date(1196865000000)/" where the numeric argument specifies the number of milliseconds passed since Jan 1st of 1970 UTC+0. The ISO format is more readily understood by many tools that parse JSON.
+## Adding human-readable data fields to the payload
 
-To get the new behavior, use the extended data type called DateTimeIso8601 (or an extended data type that is derived from it) as the type of the value in the data contract as shown in the below example.
+This feature is available in platform update 30 and later.
 
-![Business event date time](../media/BE-DateTimeCode.PNG)
+The serialization of business events uses the **FormJsonSerializer** for serializing objects in the data contract. **FormJsonSerializer** can format **UtcDataTime** values using the ISO 8601 datetime format. This format is human-readable when viewing  the payload of a business event. For example, a **UtcDataTime** value can now be formatted as "2007-12-05T14:30Z" instead of "/Date(1196865000000)/". In the "/Date(N)" format, N is the number of milliseconds passed since January 1, 1970, UTC+0. The ISO format is more commonly understood by tools that parse JSON.
 
+To get the human-readable format, use the extended data type called **DateTimeIso8601** (or an extended data type that is derived from it) as the type of the value in the data contract.
+
+```X++
+[DataMember("TestIsoEdtUtcDateTime")]
+public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._testIsoDateTime)
+{
+    if (!prmIsDefault(_value))
+    {
+        this._testIsoDateTime = _value;
+    }
+
+    return this._testIsoDateTime;
+}
+```
