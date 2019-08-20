@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Build custom response pages for 400/500 status code errors
-description: This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
+title: Build custom response pages for 4xx/5xx status code errors
+description: This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
 author: brshoo
 manager: annbe
 ms.date: 10/01/2019
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Build custom response pages for 400/500 status code errors 
+# Build custom response pages for 4xx/5xx status code errors 
 
-This topic describes how to build custom response pages for 400 and 500 status code errors using the authoring tools in Dynamics 365 Retail.
+This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
 
 ## Overview
 
