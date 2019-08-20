@@ -45,7 +45,7 @@ To review Microsoft's Privacy Policy while logged into Dynamics 365 Commerce Aut
 
 A new tab will launch with a link to the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement). 
 
-## Build a Privacy Policy page for your site
+## Build a privacy Policy page for your site
 
 With Dynamics 365 Commerce, there are a number of ways to provide users of your site access to your Privacy Policy. This section will review building a Privacy Policy page and referencing the page using a Footer Fragment.
 
