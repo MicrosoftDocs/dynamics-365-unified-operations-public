@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: eCommerce platform extensibility
+title: Online platform extensibility
 description: The Dynamics 365 for Commerce platform provides a rich eCommerce developer extensibility SDK and starter kit with a set of ready-built modules and data actions for your site.
 author: SamJarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# eCommerce platform extensibility
+# Online platform extensibility
 
 The Dynamics 365 Commerce platform provides a rich online developer extensibility SDK and starter kit with a set of ready-built modules and data actions for your site.
 
