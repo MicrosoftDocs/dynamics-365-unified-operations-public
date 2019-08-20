@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a new e-Commerce site
-description: This topic explains how to deploy a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
+description: This topic explains how to deploy a new e-Commerce site in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: AnnBe
 ms.date: 09/06/2019
