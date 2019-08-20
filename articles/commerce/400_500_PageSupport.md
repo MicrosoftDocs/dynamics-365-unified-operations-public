@@ -3,39 +3,39 @@
 
 title: 400 / 500 Page Results
 description: This topic reviews setting up an e-Commerce page to show end users for 400 or 500 results.
-author: BrianShook
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+author: brshoo
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: brshoo
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# 400/500 Page Support
+# Support 400/500 error pages 
 
-This topic describes how to include 400 and 500 Error Page support for your site using the Authoring Tools in Microsoft Dynamics 365 for Retail.
+This topic describes how to implement 400 and 500 error page support for your site using the authoring tools in Dynamics 365 Retail.
 
 ## Overview
 
-HTTP protocol will send error codes when a request is not successful. All 4xx categorical error codes are client error responses. All 5xx categorical error codes are server error responses. In Microsoft Dynamics 365 for Retail, customers can build a customized response page to show an end user in the case of a 4xx or 5xx error code response.
+HTTP protocol will send error codes when a request is not successful. All 4xx categorical error codes are client error responses. All 5xx categorical error codes are server error responses. In Dynamics 365 Retail, application users can build customized response pages to display to end users in the event of 4xx or 5xx error code responses.
 
 ## Build the Error Response Page
 To begin, build the error page you would like displayed to your end users if an error occurs. 
