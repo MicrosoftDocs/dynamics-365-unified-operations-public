@@ -57,3 +57,9 @@ When you generate this report, the following default parameters are displayed. Y
 |Totals only|Select this check box to show totals only|
 |Main accounts only|Select this check box to print only main accounts on the report|
 
+## How to show Non-Tax Account only in this report
+
+If you only want to show non-tax account in this report, you could setup any filter condition as follows
+
+![](media/taxspecperledgertrans.png)
+
