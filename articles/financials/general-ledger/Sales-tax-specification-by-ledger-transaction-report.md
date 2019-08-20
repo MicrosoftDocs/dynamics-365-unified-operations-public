@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
+# Sales tax specification by ledger transaction report
+
 This article explains how to use this report to show and print information about ledger transactions for which sales tax is calculated.
 
 ## Tax Account and Non-Tax Account
@@ -59,7 +61,7 @@ When you generate this report, the following default parameters are displayed. Y
 
 ## How to show Non-Tax Account only in this report
 
-If you only want to show non-tax account in this report, you could setup any filter condition as follows
+If you only want to show non-tax account in this report, you could setup any filter condition (e.g. *) as follows
 
 ![](media/taxspecperledgertrans.png)
 
