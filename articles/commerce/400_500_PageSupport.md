@@ -47,31 +47,30 @@ To begin building a status code error response page, do the following.
 
 To build the master template, do the following.
 
-1. Select the **Master Template** section and create a new master template.
+1. From the site menu, select **Master Template**.
+1. Create a new master template.
 1. Name the master template.
 1. Build the template according to how you want the error page to be structured.
 1. Check in the master template.
 1. Publish the master template.
 
-##### Build the Error Page
+#### Build the error page
 
-  *  Navigate back to the Site Menu and select the **Pages** section.
-  *  Click the **New Page** button and provide a Page Name for your error page. 
-  * **<u>Do not</u>** fill in the **URL** field at this time. 
+1. From the site menu, select **Pages**.
+1. Click **New Page**. 
+1. Name the error page. Do not fill in the **URL** field at this time. 
+1. Build out the page in the Authoring Tool as you want presented to end users.
+1. Check in the error page.
+1. Publish the error page.
 
-  **Note:** You may choose to use the same general error page, or create separate error pages per 4xx and 5xx errors.
+[!Note] You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
 
-- Build out the page in the Authoring Tool as you want presented to end users.
+#### Set the page for error redirection
 
-- Once completed, be sure to Check In and Publish your error page.
+1. From the site menu, select **URLs**.
+1. Go to **New > New Alias** and select the new error page.
+1. For the alias, enter *default-4xx* or *default-5xx*, depending on which error page you are setting up.
+1. Click **OK** to commit the linking.
 
-##### Set the Page for Error Redirection
-
-- Navigate back to the Site Menu and go to the **URLs** section.
-- Go to **New > New Alias** and Select the new error page just created
-- For the **Alias**, enter "<u>default-4xx</u>" or "<u>default-5xx</u>" depending on which page you are setting up, 4xx or 5xx respectively.
-- Select "OK" to commit the linking.
-- **Note:** If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
-
-Your error pages are now ready for this Site.
+[!Note] If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
 
