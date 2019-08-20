@@ -39,7 +39,7 @@ Privacy compliance includes organizational measures that inform site users on ho
 
 ## Review Microsoft's privacy policy in Dynamics 365 Commerce
 
-To review Microsoft's Privacy Policy while logged into Dynamics 365 Commerce Authoring Tools, do the following.
+To review Microsoft's Privacy Policy while logged into Commerce Authoring Tools, do the following.
 
 - Click the question mark icon in the top-right corner and select **Privacy and cookies** from the drop down menu. 
 
@@ -48,21 +48,28 @@ A new tab will launch with a link to the [Microsoft Privacy Statement](https://p
 ## Build a privacy policy page for your site
 
 With Dynamics 365 Commerce, there are a number of ways to provide users of your site access to your privacy policy. This section will review building a privacy policy page and referencing the page using a footer fragment.
-
+  
 ### Build a Privacy Page
 
 In Dynamics 365 Commerce Authoring Tools, navigate to the site you will be building the privacy policy page. Then perform the following:
 
-#### Create a Master Template
+#### Create a template
 
-- If you already have a master template created that can be utilized for your privacy page, skip ahead to the **Build a Privacy Page** section.
-- Select "New Master Template" and name your template to reference for your Privacy Page.  
-- Add any required modules to the necessary page slots within the template.
-  - Example: The HTML Head slot may require a module, like the 'Default External Script Module'
-- In the **Body** slot, add a 'Default Page' module.
-- Within the **Main Slot** of the Default Page, add a 'Content Rich Block' module.
-- Next, add a 'Content rich block item' to the Content Rich Block module.
-- Check-In and then Publish your Master Page.
+[!NOTE] If you already have a template created that can be used for your privacy page, skip ahead to the **Build a Privacy Page** section.
+
+To create a template, do the following.
+
+1. Click the **Templates** tab.
+1. Click **New Template**.
+1. Enter the template name in the **Template Name** field.
+1. Click **OK**.
+1. In the template, add any required modules to the necessary page slots (hover over red exclamation marks for guidance).
+  - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
+1. In the **Body** slot, add a **Default Page** module.
+1. In the **Main Slot** of the Default Page module, add a **Content Rich Block** module.
+1. In the Content Rich Block module, add a **Content rich block item**.
+1. Check in the template.
+1. Publish the template.
 
 #### Build a Privacy Page
 
@@ -71,12 +78,12 @@ In Dynamics 365 Commerce Authoring Tools, navigate to the site you will be build
 1. In the **Main Slot** of your Default Page, add a 'Content Rich Block' module.
 1. Add a 'Content rich block item' to your Content Rich Block module.
 1. In the Properties panel of the Content rich block item, click on "Add Data Source" and select "RICH TEXT CONTENT".
-- Enter your information in the Rich Text Editor. Use the expand icon to bring the Rich Text Editor into full screen mode if needed.
-- Once completed, use the "Preview" button to preview the page in the Browser.
-- Complete any remaining additions to the page and module properties.
-- Check-in and then Publish your Privacy Page.
-- Navigate to **Main** and then to the **URLs** section. Find the URL/Page reference in the URLs list for the site.
-- Select and Publish the URL item for the page.
+1. Enter your information in the Rich Text Editor. Use the expand icon to bring the Rich Text Editor into full screen mode if needed.
+1. Once completed, use the "Preview" button to preview the page in the Browser.
+1. Complete any remaining additions to the page and module properties.
+1. Check-in and then Publish your Privacy Page.
+1. Navigate to **Main** and then to the **URLs** section. Find the URL/Page reference in the URLs list for the site.
+1. Select and Publish the URL item for the page.
 
 #### Create a link to the privacy page
 
