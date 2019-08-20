@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the references available to handle a data subject rights request per General Data Protection Regulation (GDPR) standards for Dynamics 365 e-Commerce. To best understand this topic, please review the [Dynamics 365 for Finance and Operations GDPR Guide](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide). 
+This topic discusses the references available to handle a data subject rights request per General Data Protection Regulation (GDPR) standards for Dynamics 365 Commerce. To best understand this topic, please review the [Dynamics 365 for Finance and Operations GDPR Guide](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide). 
 
 ## Overview
 
-Users of Dynamics 365 e-Commerce own and control the data that power a site as published. The Dynamics 365 e-Commerce system is built to act as a data processor for all out-of-the-box default e-Commerce features. This enables the site data controller to process GDPR requests when submitted. The following guidelines cover handling GDPR data subject rights (DSR) requests in Dynamics 365 e-Commerce (where customizations have not been made).
+Users of Dynamics 365 Commerce own and control the data that power a published e-Commerce website. Dynamics 365 Commerce is built to act as a data processor for all out-of-the-box default e-Commerce features. This enables the site data controller to process GDPR requests when submitted. The following guidelines cover handling GDPR data subject rights (DSR) requests in Dynamics 365 Commerce (where customizations have not been made).
 
 ## Respond to your customer DSR requests
 
-By default, e-Commerce functionality uses internal data inventory and tagging for all telemetry and system data to classify customer data in accordance with GDPR. This allows the data controller to use the Dynamics 365 for Finance and Operations [Person Report](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report) to respond when a user DSR request is received.
+By default, Dynamics 365 Commerce functionality uses internal data inventory and tagging for all telemetry and system data to classify customer data in accordance with GDPR. This allows the data controller to use the Dynamics 365 for Finance and Operations [Person Report](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report) to respond to user DSR requests when received.
 
 [!Important] Review the considerations noted throughout the [GDPR Guide](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide). Additional actions may be needed dependent upon any customizations made to the e-Commerce instance, Retail Server Instance, or any operating practices enabled that may upload content or data into e-Commerce.
 
