@@ -68,7 +68,7 @@ Product reviews module is used to display list of product’s reviews along with
 
 | Property name     | Values                                                       | Property Description                                         |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| review shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
+| reviews shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
 
 
 
