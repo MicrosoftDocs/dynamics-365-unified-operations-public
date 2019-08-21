@@ -60,7 +60,7 @@ The figure below shows an example of the **asset cost control** dialog.
 
 ![Figure 1](media/01-controlling-and-reporting.png)
 
-10. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted. Click on a button to activate or deactivate it.
+10. In the **Group by...** action pane groups on the **Asset cost control** page, click the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
 
 The figure below shows an example of calculation results in **Asset cost control**.
 
