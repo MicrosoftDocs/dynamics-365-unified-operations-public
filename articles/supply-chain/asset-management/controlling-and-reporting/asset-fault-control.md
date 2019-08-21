@@ -62,14 +62,14 @@ In the screenshot below, the **Symptom** button is selected.
 
 The figure below shows a screenshot of the interface.
 
-![Figure 1](media/10-controlling-and-reporting.png)
+![Figure 1](media/06-controlling-and-reporting.png)
 
 In the screenshot below, **Year** and **Month** are added to show how you can view fault registrations during a selected period.
 
 - The fault symptoms are now shown as registrations per year/month.  
 - In the **Probability %** column, if you add all percentages for each month, they add up to 100%. Probability is based on **Fault symptom** registrations in this fault control calculation. If you have a large number of lines on an object, but a large percentage stands out on a line, that would be an indication of a fault symptom to examine more closely to find a way to limit the number of registrations for that fault symptom.
 
-![Figure 2](media/11-controlling-and-reporting.png)
+![Figure 2](media/07-controlling-and-reporting.png)
 
 - The combination objects and an object type is used as a basis for the calculations shown in the three screenshots below, which will increase in detail level.  
 - Generally, the buttons in the **Group by date**, **Group by object**, **Group by functional location** action pane groups, as well as the **Fault** button (Fault ID), contain periods or object relations. The **Fault symptom**, **Fault area**, **Fault type**, **Fault cause**, and **Fault remedy** buttons are categorizations used in Enterprise Asset Management fault management to analyze object fault registrations and pinpoint problem areas.  
@@ -79,21 +79,21 @@ In the screenshot below, **Object** and **Object type** were added to provide mo
 - The six fault symptoms on "Poor fuel economy" are now split up in **Object** / **Object type** / **Fault symptom** combinations.  
 - In the **Probability %** column, if you add all percentages for the combination of **Object** / **Object type** / **Fault symptom** respectively, they each add up to 100%. Probability is based on **Fault symptom** registrations in this fault control calculation. If you have a large number of lines on an object, but a large percentage stands out on a line, that would be an indication of a fault symptom to examine more closely to find a way to limit the number of registrations for that fault symptom.
 
-![Figure 3](media/12-controlling-and-reporting.png)
+![Figure 3](media/08-controlling-and-reporting.png)
 
 In the screenshot below, **Area** was added to **Symptom**, **Object**, and **Object type** to provide more detail regarding fault registrations.
 
 - We have added further specification to the calculation, in the form of **Fault area**.  
 - In the **Probability %** column, if you add all percentages for the combination of **Object** / **Object type** / **Fault symptom** on an object, they each add up to 100%. Probability is based on the combination of **Fault symptom** and **Fault area** in this fault control calculation. If you have a large number of lines on an object, but a large percentage stands out on a line, that would be an indication of a fault area to examine more closely to find a way to limit the number of registrations for that fault area.  
 
-![Figure 4](media/13-controlling-and-reporting.png)
+![Figure 4](media/09-controlling-and-reporting.png)
 
 In the screenshot below, **Type** has been added, and the most detailed calculation in this example is shown.
 
 - We have added further specification to the calculation, in the form of **Fault type**.  
 - In the **Probability %** column, if you add all percentages for the combination of **Object** / **Object type** / **Fault symptom** on an object, they each add up to 100%. Probability is based on the combination of **Fault symptom**, **Fault area**, and **Fault type** in this fault control calculation. If you have a large number of lines on an object, but a large percentage stands out on a line, that would be an indication of a fault type to examine more closely to find a way to limit the number of registrations on that fault type.
 
-![Figure 5](media/14-controlling-and-reporting.png)
+![Figure 5](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]
