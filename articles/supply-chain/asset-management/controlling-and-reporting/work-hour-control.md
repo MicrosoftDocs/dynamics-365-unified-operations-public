@@ -38,7 +38,7 @@ In Asset Management, you can calculate hours to get an overview of actual hours 
 
 The calculations made for assets, functional locations, and work orders are almost identical. Only difference is that for assets and functional locations, you can also include sub assets and sub locations in your calculation. The date is the transaction date when the registration was recorded.
 
-1. Click **Asset management** > **Inquiries** > **Objects** > **Object hour control** or **Functional location hour control**, or **Enterprise asset management** > **Inquiries** > **Work orders** > **Work order hour control**.
+1. Click **Asset management** > **Inquiries** > **Assets** > **Asset hour control** or **Functional location hour control**, or **Asset management** > **Inquiries** > **Work orders** > **Work order hour control**.
 
 2. Click **Hour control** > **Calculate hours**.
 
