@@ -58,7 +58,7 @@ The calculations made for assets, functional locations, and work orders are almo
 
 10. On the **Asset hour control** page, in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
 
-The figure below shows an example of the **Asset hour control** calculation.
+The figure below shows an example of an **Asset hour control** calculation.
 
 ![Figure 1](media/04-controlling-and-reporting.png)
 
