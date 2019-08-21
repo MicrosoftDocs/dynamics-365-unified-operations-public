@@ -36,7 +36,7 @@ In Asset Management, you can calculate costs on asset fault registrations to get
 
 1. Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault cost control**.
 
-2. In the **Asset fault cost control** drop-down, select a financial dimension set to be included in the calculation, if required.
+2. In the **Asset fault cost control** dialog, select a financial dimension set to be included in the calculation, if required.
 
 4. Select "Yes" on the **Skip zero** toggle button if you don't want to show results with a cost of zero.
 
