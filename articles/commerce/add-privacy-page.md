@@ -62,7 +62,7 @@ To create a template, do the following.
 1. Go to **Templates /> New Template**.
 1. Enter the template name and click **OK**.
 1. In the template, add any required modules to the necessary page slots (hover over any red exclamation marks for guidance).
-  - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
+   - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
 1. In the **Body** slot, add a **Default Page** module.
 1. In the **Main Slot** of the default page module, add a **Content Rich Block** module.
 1. In the content rich block module, add a **Content rich block item**.
@@ -99,7 +99,7 @@ To add a link to a footer fragment, do the following.
 1. Under the **sub footer** slot, add a sub footer module.
 1. Click **Add Data Source** in the properties panel and select **Links**.
 1. Enter the link text and privacy page URL.
-  - To obtain the URL for the privacy page, go to the privacy page in **Pages** and copy the URL from the properties panel.
+   - To obtain the URL for the privacy page, go to the privacy page in **Pages** and copy the URL from the properties panel.
 1. Save, check in, and publish the fragment.
 1. Preview the fragment and test the link to the privacy policy page.
 
