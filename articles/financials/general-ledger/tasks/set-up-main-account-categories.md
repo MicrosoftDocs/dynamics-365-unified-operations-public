@@ -41,8 +41,7 @@ This topic explains how to set up main account categories in Dynamics 365 for Fi
 
 ## Link main accounts to account category
 1. Click **Link main accounts**.
-2. In the list, select the main accounts to assign to the main account category by checking the boxes in the **Linked** column.  
-- Assigning main accounts to a main account category will aggregate the balances of the accounts when that category is used for financial reporting and analysis.  
+2. In the list, select the main accounts to assign to the main account category by checking the boxes in the **Linked** column. Assigning main accounts to a main account category will aggregate the balances of the accounts when that category is used for financial reporting and analysis.  
 3. Select or clear the **Linked** option to choose the main accounts.
 4. Select **OK**.
 5. Select **Yes**.
