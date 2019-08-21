@@ -56,24 +56,28 @@ The second item, S0008, is a service item that is set up as a post contract supp
 The third item, S0012, is hardware and doesn’t default with a revenue schedule. The revenue for the hardware will be recognized as soon as the item is invoiced. 
 
 ## Confirm sales order
-Additional details about the revenue price and revenue schedule can be found on the action pane of the sales order on the Manage tab.  At this point the sales order is not confirmed, so the buttons used for the recognizing revenue are inactive. The buttons will become active or inactive as the sales order progresses through the stages leading to fulfillment. 
-
+Additional details about the revenue price and revenue schedule can be found on the action pane of the sales order on the **Manage** tab. At this point the sales order is not confirmed, so the buttons used for the recognizing revenue are inactive. The buttons will become active or inactive as the sales order progresses through the stages leading to fulfillment. 
 
 [![ ](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 The first three buttons provide revenue price details for the items on the sales order setup for revenue recognition.  
+
 **Revenue price allocation** – The button becomes available after the sales order is confirmed  or after the invoice is posted. Both the confirmation and invoice posting will calculate the Revenue to recognize price that will be recognized or deferred on the accounting entry. Depending on setup, the calculated revenue price can differ from the unit price shown to the customer. 
+
 **Reallocate price** with new order lines – The button becomes available after the sales order is confirmed or after the invoice is posted. The reallocation process is used to recalculate the Revenue to recognize after a new line is added to either the current sales order after it’s invoiced, or added to a new sales order.  In both scenarios, there is a ‘change to the contract’ through the addition of a new item. As a result, the revenue price must be reallocated. 
+
 **Update revenue price allocation** – The button becomes available after the sales order is confirmed but is disabled after the sales order is invoiced. The update is used to run the revenue price allocation again without having to confirm the sales order. After the sales order is invoiced, the revenue price cannot be recalculated. 
+
 The last two buttons provide revenue schedule details for the items on the sales order with a revenue schedule.   
-> **Expected revenue recognition schedule** – The button becomes available after the sales order is confirmed but is disabled after the sales order is invoiced.  This button opens a page that shows the expected revenue schedule. The final schedule may change because the expected schedule uses the Requested ship date but the final schedule uses the actual ship date. 
+
+> **Expected revenue recognition schedule** – The button becomes available after the sales order is confirmed but is disabled after the sales order is invoiced. This button opens a page that shows the expected revenue schedule. The final schedule may change because the expected schedule uses the Requested ship date but the final schedule uses the actual ship date. 
 
 The last two buttons provide revenue schedule details for the items on the sales order with a revenue schedule.   
 
 **Expected revenue recognition schedule** – The button becomes available after the sales order is confirmed but is disabled after the sales order is invoiced.  This button opens a page that shows the expected revenue schedule. The final schedule may change because the expected schedule uses the Requested ship date but the final schedule uses the actual ship date. 
 
 **Revenue recognition schedule** – The button becomes available after the sales order is invoiced. The final revenue recognition schedule is not created upon confirmation or packing slip, but only upon invoicing the sales order.  
-Revenue recognition schedule** – The button becomes available after the sales order is invoiced. The final revenue recognition schedule is not created upon confirmation or packing slip, but only upon invoicing the sales order.  
+**Revenue recognition schedule** – The button becomes available after the sales order is invoiced. The final revenue recognition schedule is not created upon confirmation or packing slip, but only upon invoicing the sales order.  
 
 The revenue price allocation occurred when the sales order was confirmed. Even though the revenue prices are allocated differently, it’s important to note that the total amount on the **Revenue to recognize** field must still equal the sum of the sales order lines invoiced to the customer.  For example, the sales order lines summed to $1499 (without tax) so the sum of the **Revenue to recognize** must also total $1499.    
 
@@ -91,13 +95,13 @@ The final step is to invoice the sales order.  When looking at the invoice’s v
 
 [![ ](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
-After the invoice is created, the buttons for Revenue recognition will appear as follows:
+After the invoice is created, the buttons for recognizing revenue will appear as follows:
 
 [![ ](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 The revenue price allocation is still available for visibility into the revenue price calculation.  If nothing changed on the sales order after it was confirmed, posting the invoice will not change the calculated amount in the **Revenue to recognize** field.  
 
-The Expected revenue recognition schedule is removed and replaced with the final revenue recognition schedule.  The revenue schedule details are maintained for each sales order line and are used to release the deferred revenue to actual revenue as the contractual obligation is met. 
+The expected revenue recognition schedule is removed and replaced with the final revenue recognition schedule. The revenue schedule details are maintained for each sales order line and are used to release the deferred revenue to actual revenue as the contractual obligation is met. 
 
 [![ ](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
 
