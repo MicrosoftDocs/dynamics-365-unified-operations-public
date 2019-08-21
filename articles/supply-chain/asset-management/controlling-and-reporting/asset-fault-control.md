@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Object fault control
-description: This topic explains object fault control in Enterprise Asset Management.
+title: Asset fault control
+description: This topic explains asset fault control in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object fault control
+# Asset fault control
 
-This topic explains object fault control in Enterprise Asset Management. In Enterprise Asset Management, you can analyze object fault registrations to get an overview of the total number of faults registered during a specific period. Fault registrations can be analyzed from different perspectives, for example with focus on objects, object types, functional locations, fault symptoms, or fault types.
+In Asset Management, you can analyze asset fault registrations to get an overview of the total number of faults registered during a specific period. Fault registrations can be analyzed from different perspectives, for example with focus on assets, asset types, functional locations, fault symptoms, or fault types.
 
-1. Click **Enterprise asset management** > **Inquiries** > **Object fault** > **Object fault control**.
+1. Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault control**.
 
 2. Click **Object fault control** > **Select faults**.
 
