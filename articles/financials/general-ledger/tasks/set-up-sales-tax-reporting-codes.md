@@ -36,10 +36,7 @@ This recording uses the DEMF demo company.
 
 1. In the **Navigation pane**, go to **Tax > Setup > Sales tax > Sales tax reporting codes**.
 2. Click **New**.
-3. Select the report layout that the reporting code belongs to.
-    
-    This layout is used to filter the available reporting codes for a Sales tax code. Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.  
-    
+3. Select the report layout that the reporting code belongs to. This layout is used to filter the available reporting codes for a Sales tax code. Each Sales tax code belongs to a settlement period which belongs to a Sales tax authority which uses a Report layout.  
 4. In the **Reporting code** field, enter a number.
 5. In the **Report text** field, enter a description to display on reports.
 6. In the **Brief description** field, enter a description for internal purposes.
