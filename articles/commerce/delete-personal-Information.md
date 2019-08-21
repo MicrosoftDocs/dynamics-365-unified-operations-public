@@ -29,10 +29,10 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
+# Delete personal information
+
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-# Delete personal information
 
 This topic discusses the references available to handle a data subject rights request per General Data Protection Regulation (GDPR) standards for Dynamics 365 Commerce. To best understand this topic, please review the [Dynamics 365 for Finance and Operations GDPR Guide](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide). 
 
