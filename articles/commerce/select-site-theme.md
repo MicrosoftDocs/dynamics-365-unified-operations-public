@@ -5,10 +5,10 @@ title: Select a site theme
 description: This topic shows you how to set or change your site's theme.
 author: StuHarg
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -24,8 +24,8 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: StuHarg
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Select a site theme
@@ -35,22 +35,19 @@ ms.dyn365.ops.version:
 
 This topic shows you how to set or change your site's theme.
 
-Your site's layout and style (fonts, sizes, colors etc…) is defined by the Theme you select and apply to the site. A theme is built and deployed by a developer at your company. For an overview of themes, see the [Theming overview](http://) topic. See the [Create a new theme](http://) help topic for more information on building and deploying themes.
+Your site's layout and style (fonts, sizes, colors, etc.) is defined by the theme you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](http://). See [Create a new theme](http://) for more information on building and deploying themes.
 
-When you create a new site, it is provisioned with a theme called Fabrikam which is provided as part of the Starter Kit. After you have deployed an additional theme or themes for your site, you can set the site to use one of those themes from Settings. 
+When you create a new site, it is configured with a theme called Fabrikam which is provided as part of the starter kit. After you have deployed additional themes for your site, you can configure the site to use one of those themes. 
 
-To change the theme that is applied to your site:
+To change the theme that is applied to your site, do the following.
 
 1. Navigate to your site in the site authoring environment
-1. Open **Settings**, which appears at the bottom of the left navigation pane
-1. Open **Extensions**
-1. Scroll down to the **Site Theme** section and expand it
-1. Choose a theme from the dropdown menu
+1. Go to **Site Management > Site Settings > Extensions**.
+1. Scroll down to the **Site Theme** section and expand it.
+1. Choose a theme from the dropdown menu.
 
- 
-
-> [!NOTE]
-> The theme you select will be applied to your published site as soon as you click **Save** on the Extensions page. If you wish to preview a theme on your site, you can use your Development or Sandbox environment. 
+[!NOTE]
+The theme you select will be applied to your published site as soon as you click **Save** on the Extensions page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
 
  
 
