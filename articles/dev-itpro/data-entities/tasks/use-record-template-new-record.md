@@ -35,9 +35,7 @@ This procedure shows how to use a previously defined record template to create a
 This procedure uses the USMF company.
 
 1. In the **Navigation pane**, go to **Fixed assets > Fixed assets > Fixed assets**.
-2. Click **New**.
-    
-    You will be prompted to select a template. Select the one that corresponds to your business need.  
+2. Click **New**. You will be prompted to select a template. Select the one that corresponds to your business need.  
 3. In the list, find and select the desired record.
 4. Click **OK**.
 
