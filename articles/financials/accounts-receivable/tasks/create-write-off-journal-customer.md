@@ -41,9 +41,7 @@ This task guide will show you how to set up the parameters for write-offs and th
     - You can attach a reason code to every write-off. You can override this default at the time of the write-off.  
     - Set the **Separate sales tax** to Yes if you want to separate the sales tax from the original transaction in the write-off.  
 4. Close the page.
-5. Go to **Credit and collections > Setup > Customer posting profiles**.
-    
-    The write-off account will be used as the expense account or reserve adjustment in the general journal.
+5. Go to **Credit and collections > Setup > Customer posting profiles**. The write-off account will be used as the expense account or reserve adjustment in the general journal.
 6. Close the page.
 
 ## Write off a customer balance from the aged balances page
@@ -54,9 +52,7 @@ This task guide will show you how to set up the parameters for write-offs and th
 5. Click **OK**.
 6. Close the page.
 7. Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.
-8. Select the journal batch number for the journal that contains your write-off.
-    
-    One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
+8. Select the journal batch number for the journal that contains your write-off. One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
 9. Close the page.
 10. Close the page.
 
@@ -71,9 +67,7 @@ This task guide will show you how to set up the parameters for write-offs and th
 8. Close the page.
 9. Close the page.
 10. Go to **General ledger > Journal entries > General journals**.
-11. Select the journal batch number for the journal that contains your write-off.
-    
-    One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
+11. Select the journal batch number for the journal that contains your write-off. One line is created to reverse the customer balance. One or more lines are created to post the write-off to the write-off account.  
 12. Close the page.
 13. Close the page.
 
