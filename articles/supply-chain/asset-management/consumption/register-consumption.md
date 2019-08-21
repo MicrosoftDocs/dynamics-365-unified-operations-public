@@ -91,7 +91,7 @@ If a work order contains several work order jobs, you can register work hours us
 
 ## Financial dimensions on consumption registrations
 
-When you make consumption registrations, financial dimensions related to the different registration types are added to the registrations in a specific sequence.
+When you make consumption registrations, financial dimensions related to the different registration types are added to the registrations in a specific sequence. 
 
 *Hour and Expense registrations:* First, financial dimensions from the journal header are added, if any. Next, financial dimensions from the related work order project are added. Finally, financial dimensions from the resource (worker) are added.
 
@@ -99,3 +99,4 @@ When you make consumption registrations, financial dimensions related to the dif
 
 >[!NOTE]
 >For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup in Dynamics 365 for Finance and Operations.
+
