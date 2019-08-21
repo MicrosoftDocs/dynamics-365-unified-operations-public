@@ -42,30 +42,26 @@ A server will issue HTTP response status code errors when a client request is no
 ## Build a status code error response page
 To begin building a status code error response page, do the following.
 
-1. Log in to the Microsoft Dynamics 365 Retail Authoring Tools in your preferred browser. 
+1. Sign in to Dynamics 365 Retail Authoring Tools in your preferred browser. 
 1. Select the site for which you will be building the 4xx/5xx status code error response page. 
 
-#### Build the master template
+#### Build the template
 
-To build the master template, do the following.
+To build the template, do the following.
 
-1. From the site menu, select **Master Template**.
-1. Create a new master template.
-1. Name the master template.
+1. Go to **Templates /> New template**.
+1. Name the new template.
 1. Build the template according to how you want the error page to be structured.
-1. Check in the master template.
-1. Publish the master template.
+1. Check in and publish the template.
 
 #### Build the error page
 
 To build the error page, do the following.
 
-1. From the site menu, select **Pages**.
-1. Click **New Page**. 
+1. Go to **Pages /> New Page**.
 1. Name the error page. Do not fill in the **URL** field at this time. 
-1. Build out the page in the Authoring Tool as you want presented to end users.
-1. Check in the error page.
-1. Publish the error page.
+1. Build out the error page.
+1. Check in and publish the error page.
 
 [!Note] You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
 
@@ -73,9 +69,8 @@ To build the error page, do the following.
 
 To set up a redirect for the error page, do the following.
 
-1. From the site menu, select **URLs**.
-1. Go to **New > New Alias** and select the new error page.
-1. For the alias, enter *default-4xx* or *default-5xx*, depending on which error page you are setting up.
+1. Go to **URLs /> New > New Alias** and select the new error page.
+1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up.
 1. Click **OK** to commit the linking.
 
 [!Note] If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
