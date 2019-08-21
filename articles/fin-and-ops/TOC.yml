@@ -2020,6 +2020,8 @@
       items:
       - name: India overview
         href: ../financials/localizations/india.md
+      - name: Scope of the Indian localizations
+        href: ../financials/localizations/apac-ind-scope.md
       - name: Fixed assets
         items:
         - name: India fixed assets overview
