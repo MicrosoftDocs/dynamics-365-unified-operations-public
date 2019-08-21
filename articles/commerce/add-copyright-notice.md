@@ -45,14 +45,13 @@ Before you can add a copyright notice on your site, you must have the following:
 
 To add a copyright notice to the footer, do the following.
 
-1. Click the **Fragments** tab.
-1. In the fragment list, click **Footer**. 
-1. Click **Check out**.
+1. Go to **Fragments**, then click **Footer**. 
+1. Check out the footer.
 1. Expand the footer module slots.
 1. Click **Sub footer**. If a sub footer does not exist, click the ellipsis menu to add one using **Add module**.
 1. In the properties pane, click **Add Data Source**, then click **Heading**.
-1. Add the copyright notice in the **Text** field, select the heading level, then click **OK**.
-1. Click **Save**, then click **Check in**.
+1. Enter the copyright notice text in the **Text** field, select the heading level, then click **OK**.
+1. Save the fragment, then check it in.
 
 After saving the fragment, the copyright notice will automatically be visible on all pages that use the footer.
 
