@@ -49,7 +49,7 @@ To begin building a status code error response page, do the following.
 
 To build the template, do the following.
 
-1. Go to **Templates /> New template**.
+1. Go to **Templates > New template**.
 1. Name the new template.
 1. Build the template according to how you want the error page to be structured.
 1. Check in and publish the template.
@@ -58,7 +58,7 @@ To build the template, do the following.
 
 To build the error page, do the following.
 
-1. Go to **Pages /> New Page**.
+1. Go to **Pages > New Page**.
 1. Name the error page. Do not fill in the **URL** field at this time. 
 1. Build out the error page.
 1. Check in and publish the error page.
@@ -69,7 +69,7 @@ To build the error page, do the following.
 
 To set up a redirect for the error page, do the following.
 
-1. Go to **URLs /> New > New Alias** and select the new error page.
+1. Go to **URLs > New > New Alias** and select the new error page.
 1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up.
 1. Click **OK** to commit the linking.
 
