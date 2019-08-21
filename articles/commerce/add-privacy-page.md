@@ -29,10 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
+# Add a privacy policy page
+
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-# Add a privacy policy page
 This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
 
 ## Overview
@@ -55,7 +56,8 @@ With Dynamics 365 Commerce, there are a number of ways to provide users of your 
 
 In Commerce Authoring Tools, navigate to the site for which you will be building the privacy policy page.
 
-[!NOTE] If you already have a template created that can be used for your privacy page, skip ahead to the **Build a Privacy Page** section.
+[!NOTE]
+If you already have a template created that can be used for your privacy page, skip ahead to the **Build a Privacy Page** section.
 
 To create a template, do the following.
 
