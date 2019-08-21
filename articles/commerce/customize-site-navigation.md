@@ -38,7 +38,7 @@ This article describes how to create a customized online navigation hierarchy to
 
 Most online storefronts provide the ability for customers to discover and browse products by navigating through product categories. This capability is typically provided using tabs at the top of the page or a left navigation bar. 
 
-You create and manage the hierarchal structure of your category navigation and the products contained in those categories in back office. 
+In Commerce, you can create and manage the hierarchal structure of your category navigation and the products contained within those categories. 
 
 ## Create a retail channel navigation hierarchy
 
