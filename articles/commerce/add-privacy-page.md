@@ -59,7 +59,7 @@ In Commerce Authoring Tools, navigate to the site for which you will be building
 
 To create a template, do the following.
 
-1. Go to **Templates /> New Template**.
+1. Go to **Templates > New Template**.
 1. Enter the template name and click **OK**.
 1. In the template, add any required modules to the necessary page slots (hover over any red exclamation marks for guidance).
    - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
@@ -72,7 +72,7 @@ To create a template, do the following.
 
 To build a privacy page, do the following.
 
-1. Go to **Pages /> New Page**.
+1. Go to **Pages > New Page**.
 1. Select the template to be used for the privacy page.  
 1. Enter a page name and URL, then click **OK**. 
 1. In the **Main Slot** of the page, add a **Content Rich Block** module.
@@ -94,7 +94,7 @@ A link to the privacy page can be added to a fragment and then shared and update
 
 To add a link to a footer fragment, do the following.
 
-1. Go to **Fragments /> New Page Fragment**.
+1. Go to **Fragments > New Page Fragment**.
 1. Select the **Footer** module and enter a name under **Page Fragment Name**.
 1. Under the **sub footer** slot, add a sub footer module.
 1. Click **Add Data Source** in the properties panel and select **Links**.
