@@ -36,18 +36,10 @@ Users are internal employees of your organization, or external customers and ven
 ## Add a new user
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.
 2. On the **Action pane**, click **New**.
-3. In the **User ID** field, type a value.
-   
-    Enter a unique identifier for the user. A user ID is required.  
-4. In the **User name** field, type a value.
-    
-    Enter the user's name.  
-5. In the **Domain** field, type a value.
-   
-    Enter the user's domain.  
-6. In the **Alias** field, type a value.
-   
-    Enter the user's alias.  
+3. In the **User ID** field, type a value. Enter a unique identifier for the user. A user ID is required.  
+4. In the **User name** field, type a value. Enter the user's name.  
+5. In the **Domain** field, type a value. Enter the user's domain.  
+6. In the **Alias** field, type a value. Enter the user's alias.  
 7. In the **Company** field, click the drop-down button to open the lookup.
 8. In the list, find and select the desired record. 
 9. In the **User's roles** section, click **Assign roles**.
