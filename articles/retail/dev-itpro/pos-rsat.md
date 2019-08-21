@@ -76,7 +76,7 @@ To enable task recording in POS, follow these steps in Retail headquarters:
 
 2.  Click the register to enable task recording on.
 
-3.  On the **Register** tab, on the **General** FastTab, set the **Enable task recording** option to **Yes**.
+3.  On the **Register** tab, on the **General** FastTab, set the **Enable task and test recorder** option to **Yes**.
 
 4.  Click **Save**.
 
