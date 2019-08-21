@@ -211,9 +211,9 @@ The Recording.xml file is stored to the local file system, user have to manually
 
 ### Install the RSAT:
 
-**Download the Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. After installing the RSAT tool you need to install the selenium and browser drivers. The RSAT tool and RSAT tool user manual can downloaded from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=57357).
+**Download the Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. After installing the RSAT tool you need to install the selenium and browser drivers. The RSAT tool can be downloaded from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=57357).
 
-Note: You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are available in the RSAT manual. Below are the required configurations for executing the Retail POS test cases:
+Note: You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are mentioned  in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool). Below are the required configurations for executing the Retail POS test cases using RSAT:
 
 ### Configure the Retail POS setting:
 
