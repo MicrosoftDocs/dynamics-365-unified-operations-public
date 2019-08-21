@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add telemetry
+title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: StuHarg
 manager: annbe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-# Add telemetry
+# Add script code to site pages to support telemetry 
 
 This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 
@@ -46,7 +46,7 @@ Web analytics are an essential tool for understanding how your customers interac
 To create a reusable fragment to contain your script code, do the following.
 
 1. Go to **Fragments > New page fragment**.
-3. Select **External Script,** enter a name for the fragment and click **OK**.
+3. Select **External Script**, enter a name for the fragment and click **OK**.
 4. In the fragment hierarchy, click the **script injector** module child of the fragment you just created.
 5. Add your client-side script and make other configuration options in the property panel on the right. See the help topic for the [External Script module](http://) for information about configuring this module.  
 
