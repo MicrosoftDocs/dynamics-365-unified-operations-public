@@ -5,7 +5,7 @@ title: Apply the latest platform update to environments
 description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ The Microsoft Dynamics 365 for Finance and Operations platform consists of the f
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on a platform that is older than Platform update 3, see the section [Upgrading to platform update 3 from an earlier build](#upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
+> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
@@ -181,39 +181,6 @@ After the metadata backup has been restored, delete (or rename) the metadata bac
 ### Apply the platform update package
 
 After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
-
-## Upgrading to platform update 3 from an earlier build
-When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
-
-- It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
-- You need to delete all X++ hotfixes to the platform that are in you version control (see the section below)
-- The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.
-
-This means two things:
-
-1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
-    -   Application Platform
-    -   Application Foundation
-    -   Test Essentials
-    -   Directory
-
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
-
-### Delete platform metadata hotfixes from your Azure DevOps project (Platform update 2 or earlier)
-
-> [!NOTE]
-> This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
-
-Before you install the new platform update, you must clean up your Microsoft Azure DevOps source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your Azure DevOps project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
-
--   Application Platform
--   Application Foundation
--   TestEssentials
--   Directory
-
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
-![View History](./media/checkinhistory.png)
 
 Additional resources
 --------

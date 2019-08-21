@@ -81,6 +81,8 @@ The following table describes the parameters that are used in this command.
 | --sqlpwd                    | Use this parameter to specify the SQL Server password.                                                            |
 | --isinmaintenancemode       | Use this parameter to turn configuration mode on or off. Use **true** to turn it on and **false** to turn it off. |
 
+## Enable (or disable) configuration keys
+
 After the instance of Finance and Operations Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screenshot. 
 
 [![license-configuration-page-when-not-in-maintenance-mode](./media/license-configuration-page-when-not-in-maintenance-mode.png)](./media/license-configuration-page-when-not-in-maintenance-mode.png) 

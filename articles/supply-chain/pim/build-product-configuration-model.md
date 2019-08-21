@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build a product configuration model
+title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Build a product configuration model
+# Product configuration overview
 
 [!include [banner](../includes/banner.md)]
 

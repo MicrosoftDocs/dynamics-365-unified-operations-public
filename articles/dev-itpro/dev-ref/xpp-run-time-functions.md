@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ runtime functions
+title: X++ runtime function resources
 description: This topic describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ runtime functions
+# X++ runtime function resources
 
 [!include [banner](../includes/banner.md)]
 

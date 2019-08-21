@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Expense management
+title: Expense management overview
 description: This topic provides general information about Expense management and links to additional resources. You can use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees spend when they incur expenses for your business.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Expense management
+# Expense management overview
 
 [!include [banner](../includes/banner.md)]
 

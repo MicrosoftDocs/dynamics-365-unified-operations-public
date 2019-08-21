@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Globalization
+title: Globalization resources
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Globalization
+# Globalization resources
 
 ## Local and regional deployments
 If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider when you deploy Finance and Operations. Consider the following resources that might be relevant to you:

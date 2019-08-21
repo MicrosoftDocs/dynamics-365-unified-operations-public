@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Human resources
+title: Human resources overview
 description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Human resources
+# Human resources overview
 
 [!include [banner](../includes/banner.md)]
 

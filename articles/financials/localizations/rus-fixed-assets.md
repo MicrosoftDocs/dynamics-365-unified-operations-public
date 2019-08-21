@@ -3,9 +3,9 @@
 
 title: Fixed assets (Russia)
 description: This topic provides information about fixed asset management for Russia.
-author: ShylaThompson
+author: kfend
 manager: AnnBe
-ms.date: 04/19/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: shylaw
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
@@ -32,148 +32,131 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
+To help manage your company's fixed assets, you can use the **Fixed assets** page to store all information about assets. This information includes both financial information and non-financial information.
 
-To manage your company's fixed assets, you can use the **Fixed assets** page to store all information (both financial and non-financial) on assets. The following examples show the types of financial information that is related to fixed assets:
+The following examples show the types of financial information that are related to fixed assets:
 
--   Asset acquisition cost
--   Cost adjustment
--   Asset depreciation amount
--   Asset budget
--   Tax information
+- Asset acquisition cost
+- Cost adjustment
+- Asset depreciation amount
+- Asset budget
+- Tax information
 
-The following examples show the types of non-financial information that is related to fixed assets:
+The following examples show the types of non-financial information that are related to fixed assets:
 
--   Technical information
--   Location
--   Bar codes and inventory numbers
--   Insurance
--   Relationships between different assets
+- Technical information
+- Location
+- Bar codes and inventory numbers
+- Insurance
+- Relationships among different assets
 
 ## Register fixed assets
 
-Before you create transactions for any fixed or intangible asset, you must first register the asset record, and provide basic information about it.
+Before you create transactions for any fixed or intangible asset, you must register the asset record and provide basic information about the asset.
 
-1. To register a fixed asset, select **Fixed Assets (Russia)** \> **Common** \> **Fixed Assets**. Select **New** to create a new fixed asset.
-
-    > [!NOTE]
-    > You can create a new fixed asset using the copy function (**FIXED ASSET** \> **Copy FA** button). The system copies the selected fixed asset with all its parameters, but with a different inventory number.
-
-![FA page General tab](media/RUS_FA_1%20General%20tab.JPG)
-
-2. Fill in the following fields on the **General** FastTab:
-
-- **FA group** - Select the fixed asset group the fixed asset should be related to.
-
-- **Inventory number** - If automatic numbering is set up in the **Fixed asset parameters** or for the fixed assets group, the information is filled in automatically.
-
-- **Name** - Enter the name of the fixed asset.
-
-- **Acquisition date** - By default, this field is filled in automatically with the current system date but can be changed.
-
-- **Acquisition cost** - Enter a fixed asset acquisition value in the company's home currency. If the fixed asset came from the deferrals model, the invoice amount without taxes in the company's home currency is displayed.
-
-- **Notes** - Enter any additional information about this fixed asset.
-
-- **Type** - Select a fixed asset type. Depending on the value in this field, the different fields are activated on the **Technical Information** and **Tax Reporting** FastTabs. The following are examples of fixed asset types. 
-
-    - **Vehicle** - Select this for the **Government registration** field group to appear on the **Technical Information** FastTab.
-
-    - **Realty** - Select this for the **Tax base** field to appear on the **Tax Reporting** FastTab.
-
-    - **Ground area** - Select this for the **Start date of building** field to appear on the **Technical Information** FastTab.
+1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
+2. On the Action Pane, select **New** to create a fixed asset.
 
     > [!NOTE]
-    > The following types cannot be selected on the **Fixed asset** page: NVFA, Working clothes, Special rigging. There are special pages for these types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-not-valuable-assets) and [Working clothes/Special riggings accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-working-clothes-instruments-accounting).
+    > You can also create a fixed asset by using the Copy function. Select the fixed asset to copy, and then, on the Action Pane, on the **Fixed asset** tab, in the **New** group, select **Copy**. In this case, the system copies the selected fixed asset together with all its parameters, but the new asset has a different inventory number.
 
-- **Insurance** field group – Fill in the fields for insurance, if needed.
+    ![Fixed assets page](media/RUS_FA_1%20General%20tab.JPG)
 
-- **Flag of ownership** - Select the appropriate value, by default the value is equal to **Ownership**.
+3. On the **General** FastTab, set the following fields:
 
-- **Bar code** - You can enter the bar code manually, or the bar code can be generated automatically (the same as the asset inventory number). To generate a bar code automatically, select **Bar code equals inventory number** in the **Fixed assets** parameters (**Fixed Assets \> Fixed Assets** \> **Parameters**).
+    - **FA group** – Select the fixed asset group that the fixed asset should be related to.
+    - **Number** – If automatic numbering is set up in the Fixed asset parameters or for the fixed assets group, this field is automatically set. Otherwise, enter the inventory number.
+    - **Name** – Enter the name of the fixed asset.
+    - **Acquisition date** – By default, this field is set to the current system date, but you can change the value.
+    - **Acquisition cost** – Enter the acquisition value of the fixed asset in the company's home currency. If the fixed asset came from the deferrals model, this field is set to invoice amount, excluding taxes, in the company's home currency.
+    - **Note** – Enter any additional information about the fixed asset.
+    - **Type** – Select the fixed asset type. Depending on the value that you select, different fields are available on the **Technical information** and **Tax reporting** FastTabs. Here are some examples of fixed asset types:
 
-    > [!NOTE]
-    > The **Location** and **Worker ID** fields are filled in automatically when you create a record in the **Transfer FA** page list. (**Fixed asset (Russia)** \> **Common** \> **Fixed assets**, click **FIXED ASSET** \> **HISTORY** \> **Transfer**).
+        - **Vehicle** – If you select this value, the **Government registration** section appears on the **Technical information** FastTab.
+        - **Realty** – If you select this value, the **Tax base** field appears on the **Tax reporting** FastTab.
+        - **Ground area** – If you select this value, the **Start date of building** field appears on the **Technical information** FastTab.
 
-- **Output/mileage** - Enter the size of assumed production/travel of the fixed asset if **Product output/mileage** depreciation profile is selected for FA in a **Value model**. In this case, you  should input records on the **Product Output/Mileage** page list.
+        > [!NOTE]
+        > The following fixed asset types can't be selected on the **Fixed assets** page: **NVFA**, **Working clothes**, and **Special rigging**. There are special pages for these fixed asset types. For more information, see [Not valuable fixed assets (NVFAs) accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-not-valuable-assets) and [Working clothes/Special riggings accounting for Russia](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-working-clothes-instruments-accounting).
 
-![Output mileage page](media/RUS_FA_2%20Output_Mileage%20page.JPG)
+    - **Policy number**, **Insurance amount**, **Replacement cost**, **Insurance date 1**, and **Insurance date 2** – Set the insurance-related fields as you require.
+    - **Flag of ownership** – By default, this field is set to **Ownership**, but you can change the value.
+    - **Bar code** – You can manually enter the bar code, or it can be automatically generated. To automatically generate a bar code, set the **Bar code equals inventory number** option to **Yes** in the Fixed assets parameters (**Fixed assets (Russia) \> Setup \> Parameters**).
 
-3. If a fixed asset is included in the composition of another fixed asset, select the **Structure** FastTab. Select the fixed asset code in the **Main fixed asset** field.
+        > [!NOTE]
+        > The **Location** and **Worker ID** fields are automatically set when you create a record on the **Transfer FA** page list (go to **Fixed assets (Russia)** \> **Common** \> **Fixed assets**, and then, on the **Fixed asset** tab, in the **History** group, select **Transfer**).
 
-4. In the **FA structure** field, all fixed asset accounts that have a reference to the asset are displayed in the main fixed asset.
+    - **Output/mileage** – Enter the size of the assumed production/travel for the fixed asset if the **Product output/mileage** depreciation profile is selected for the fixed asset in a value model. In this case, you should enter records on the **Product output/mileage** page list.
 
-5. Select the **Purchase/Sale** FastTab. Information about the purchase and sale of the fixed asset is displayed.
+        ![Product output/mileage page](media/RUS_FA_2%20Output_Mileage%20page.JPG)
+
+4. If the fixed asset is included in the composition of another fixed asset, on the **Structure** FastTab, in the **Main fixed asset** field, select the fixed asset code.
+
+    The **FA structure** field shows all the fixed asset accounts that have a reference to the fixed asset (if the fixed asset is the main fixed asset).
+
+5. Select the **Purchase/Sale** FastTab to view information about the purchase and sale of the fixed asset.
 
 ## Fixed asset value models
 
 Follow these steps to update or create value models for the fixed asset.
 
-1. Select the **Value Models** button.
+1. On the **Fixed assets** page, on the Action Pane, select **Value models**.
 
     > [!NOTE]
-    > If value models are set up for the fixed asset group, which the fixed asset is assigned to (**Fixed asset (Russia) \> Setup \> FA groups**), then the system creates the value models automatically and you can update field values.
+    > If value models are set up for the fixed asset group that the fixed asset is assigned to on the **FA groups** page (**Fixed assets (Russia) \> Setup \> FA groups**), the system automatically creates the value models. However, you can update the field values.
 
-2. You need to create a value model for each asset, and the settings are used to register a transaction. Select **New** to create a new line. Fill in the following fields on the **General** FastTab.
+    You must create a value model for every asset. The settings are used to register transactions.
 
-![FA value model](media/RUS_FA_3%20value%20models.JPG)
+2. On the Action Pane, select **New** to create a line.
+3. On the **General** FastTab, set the following fields:
 
-- **Value model** - Select the model code for the asset.
+    - **Value model** – Select the model code for the asset.
+    - **Depreciation group** – Select a depreciation group in the value model that the fixed asset is related to.
+    - **Depreciation method in FA group** – Select the depreciation profile. By default, this field is set to the value that is specified for the depreciation group.
+    - **Posting profile** – Select the posting profile that is used in the value model. By default, this field is set according to the value model settings.
+    - **Putting into operation amount** – Enter the acquisition amount of the fixed asset. If an asset purchase transaction has been created, the transaction amount without taxes is shown. If the fixed asset acquisition currency differs from the currency that is set up for the value model, the currencies are converted on the acquisition date.
+    - **Depreciation start date** – Select the date to start accruing depreciation. By default, this field is set according to the setting that is selected for the depreciation group. If the **Depreciation start date** field in the depreciation group is set to **Next month start**, this field is set to the period after the period of acquisition.
+    - **Currency** – Select a currency for the value model for the asset. By default, this field is set to the currency from the value model settings.
+    - **Remains cost after writing-off** – Enter the remaining amount of the fixed asset after writing off. If you enter a value, the book value that is used in the depreciation calculation is less than the value of this field. After a writing-off transaction is created, an amount that is equal to the cost of remainders after writing off can be posted to the inventory or the general ledger account.
+    - **Don't lock** – Set this option to **Yes** to create depreciation transactions for the asset. By default, this option is set to **Yes**.
+    - **Last depreciation date**, **Disposal date**, and **Disposal cost** – These fields are automatically set when depreciation and writing-off transactions are created.
 
-- **Depreciation groups** - Select a depreciation group within the value model that the fixed asset relates to.
+    ![FA value model](media/RUS_FA_3%20value%20models.JPG)
 
-- **Depreciation methods** - Select the depreciation profile. By default, the value specified for the depreciation group is displayed, but you can change it.
+4. On the **Financial dimensions** FastTab, select the default finance dimension codes that register transactions for the asset.
+5. On the **Lease** FastTab, in the **Posting profile** field, select the posting profile to use for fixed asset leasing. If a leasing transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
+6. On the **Dimension of rented FA** FastTab, select the dimension used when posting transactions of the fixed asset.
+7. On the Action Pane, select **Depreciation accounts**. On the **Depreciation accounts** page, you can configure the fixed asset depreciation posting amount for the general ledger accounts in the required proportions. You might have to complete this step if, for example, you must calculate the depreciation on a building that is used for various purposes.
 
-- **Posting profile** - Select the posting profile used in the value model. By default, the value is based on the value model settings.
-
-- **Acquisition cost** - Enter the acquisition amount of the fixed asset. If an asset purchase transaction has been created, the transaction amount without taxes is displayed. If the fixed asset acquisition currency is different from the currency set up for this value model, the currencies are converted on the acquisition date.
-
-- **Date of depreciation beginning** - Select the date to start accruing depreciation. By default, this field is filled in according to the setting selected in the **Depreciation group**. If the **Depreciation start date** parameter is set up as **Next month start**, then this field is filled in with the period that follows the period of acquisition.
-
-- **Currency** - Select a currency for the value model for the asset. The default currency from the value model settings is displayed.
-
-- **Remains cost after writing-off** - Enter the remaining amount of the fixed asset after writing off. If a value is filled in, then the book value used in the depreciation calculation is less than the value in this field. After a writing-off transaction is created, an amount equal to the cost of remainders after writing off can be posted to the inventory or the general ledger account.
-
-- **Don't lock** – Set this option to **Yes** to create depreciation transactions for the asset. By default, this option is set to **Yes**.
-
-- **Date of last depreciation, Disposal date** and **Disposal cost** – Filled in automatically when depreciation and writing-off transactions are created.
-
-3. Select the **Dimension** FastTab. Select the default finance dimension codes that will register transactions for the asset.
-
-4. Select the **Lease** FastTab and fill in the **Posting profile** field, select the posting profile used for fixed asset letting. If a letting transaction should be created for a fixed asset, set the **Leased** option to **Yes**.
-
-5. Select **Dimension of rented FA**. Select the dimension codes that should be used when accounting for transactions of this fixed asset is let out.
-
-6. Select **Depreciation accounts.** On this page you can configure the fixed asset depreciation posting amount for the general ledger accounts in the proportions required, as needed. You might need to do this, for example, to calculate the depreciation on a building used for various purposes.
-
-## Inquiries on the Fixed asset page
+## Inquiries on the Fixed assets page
 
 ### View asset transactions
 
 Follow these steps to view the fixed asset transactions.
 
-1. Select **Fixed Assets (Russia) \> Fixed Assets \> Value models \> Transactions.**
+1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
+2. On the Action Pane, select **Value models**.
+3. On the Action Pane, select **Transactions**.
 
-2. All fixed asset transactions, executed for the value model, are listed on the **FA transactions** page, regardless of which module they were posted in:
+    The **FA transactions** page lists all fixed asset transactions that were run for the value model, regardless of the module that they were posted in. Fixed asset transactions can be posted in the following modules:
 
-- **Fixed asset (Russia)** module.
-- **General ledger** module.
-- **Account payable** module.
-- **Account receivable** module.
+    - Fixed assets (Russia)
+    - General ledger
+    - Accounts payable
+    - Accounts receivable
 
-3.  On the **Overview** and **General** tabs, the fixed asset transaction details are displayed.
+2. On the **Overview** and **General** tabs, view the details of the fixed asset transactions.
 
 ### View the balance of an asset
 
-The value of an asset on a specific date reflects the results of all transactions for the asset. Follow these steps to view the balance of an asset.
+The value of an asset on a specific date reflects the results of all transactions for that asset. Follow these steps to view the balance of an asset.
 
-1. Select **Fixed Assets (Russia)\> Common \> Fixed Assets \> Value models**.
-
+1. Go to **Fixed assets (Russia) \> Common \> Fixed assets**.
+2. On the Action Pane, select **Value models**.
 2. Select the value model to view the balance for.
+3. Select **Balance**.
+4. In the **Transaction date** field, enter the date for the balance sheet. By default, this field is set to the current date.
 
-3. Select the **Balance** button.
-
-4. In the **Transaction date** field, enter the date for the balance sheet. The default date is the current date.
-
-5. The amounts on the fixed asset **Balance by FA** page are displayed in the currency of the fixed asset value model. If the value model currency is different from the company's default currency, the default currency is also displayed.
+The amounts on the **Balance by FA** dialog box for the fixed asset are shown in the currency of the fixed asset value model. If the value model currency differs from the company's default currency, the default currency is also shown.
 
 ![FA value model balance](media/RUS_FA_4%20model%20balance.JPG)

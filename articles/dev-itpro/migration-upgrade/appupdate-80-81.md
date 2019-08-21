@@ -5,7 +5,7 @@ title: Update environments from version 8.0 to 10.0.X
 description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -101,6 +101,9 @@ Using the merged update package, deploy this to your various test environments. 
 After you have marked the Release Candidate in your Asset Library, you can schedule the deployment to your Production environment.  This will follow the same process for applying other software deployable packages.
 
 ## Known issues
+
+### GlobalUpdate script for service model: AOSService with error 'The specified module 'C:\Program Files\Microsoft Security Client\MpProvider' 
+This error is transient and can be ignored.  To bypass, hit the **Resume** button from Lifecycle Services.
 
 ### Deploying the 10.0.X binary update to Developer environments causes ApplicationSuite compilation errors
 The package can be applied to your 8.0 environments and it will update your source code.  Compiling of your extension packages should not be impacted.  If you had overlayering and have removed objects from the ApplicationSuite package, and try to recompile it, you may run in to errors.  Until this is resolved, please redeploy your developer environments on 10.0.X and sync in your source code from version control.

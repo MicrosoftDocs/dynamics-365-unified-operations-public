@@ -4,6 +4,8 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
+  - name: Preview features in Dynamics 365 for Retail 10.0.5
+    href: get-started/whats-new-10-0-5.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.3
     href: get-started/whats-new-10-0-3.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.2
@@ -24,9 +26,10 @@
     href: retail-support.md
   - name: One Version service updates FAQ
     href: ../fin-and-ops/get-started/one-version.md
-- name: Understand the implementation lifecycle
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Implementation lifecycle management
   items:
+  - name: Implementation lifecycle management home page
+    href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   - name: Microsoft FastTrack for Dynamics 365
     href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
   - name: Onboarding
@@ -163,6 +166,8 @@
     href: retail-hardware-station-configuration-installation.md
   - name: Time and attendance in Retail
     href: retail-time-attendance.md
+  - name: Create and change store hours
+    href: dev-itpro/store-hours.md
 - name: Modern Point of Sale (MPOS) and Cloud POS
   items:
   - name: Choose between MPOS and Cloud POS
@@ -317,6 +322,8 @@
     href: set-up-retail-products.md
   - name: Manage Retail product categories and products
     href: category-management-product-creation.md
+  - name: Change the sort order for merchandising entities
+    href: custom-order-categories-nav-retail-prod-hierarchy.md
   - name: Product dimensions
     href: ../supply-chain/pim/product-dimensions.md
   - name: Set up bar codes
@@ -498,8 +505,9 @@
   - name: Configure retail workers
     href: tasks/worker.md
 - name: Retail development and administration
-  href: dev-itpro/dev-retail-home-page.md
   items:
+  - name: Retail for IT pros and developers
+    href: dev-itpro/dev-retail-home-page.md
   - name: Architecture
     items:
     - name: Retail components
@@ -596,6 +604,8 @@
       href: dev-itpro/view-pos-extension-package-details.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
+  - name: Integrate POS with a new hardware device
+    href: dev-itpro/hardware-device-extension.md
   - name: Retail Server extensibility
     items:
     - name: Extend a Retail Server OData controller
@@ -653,8 +663,9 @@
     - name: Enable duplicate payment protection for payment connector
       href: dev-itpro/duplicate-payment-protection.md
   - name: Retail SDK
-    href: dev-itpro/retail-sdk/retail-sdk-overview.md
     items:
+    - name: Retail SDK architecture
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
     - name: Upcoming changes in the Retail SDK
       href: dev-itpro/UpcomingSDKChanges.md
     - name: Merge the build systems for Retail and Finance and Operations
@@ -665,9 +676,8 @@
       href: dev-itpro/retail-sdk/retail-sdk-packaging.md
     - name: Retail SDK samples
       href: dev-itpro/retail-sdk/retail-sdk-samples.md
-      items:
-      - name: Extension points for packing slips
-        href: dev-itpro/extensions-shipping-carrier-integration.md
+    - name: Extension points for packing slips
+      href: dev-itpro/extensions-shipping-carrier-integration.md
     - name: Channel database extensions
       href: dev-itpro/channel-db-extensions.md
     - name: Enable custom CDX synchronization via extension

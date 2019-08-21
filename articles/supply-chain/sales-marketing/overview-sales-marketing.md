@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales and marketing
+title: Sales and marketing overview
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Sales and marketing
+# Sales and marketing overview
 
 [!include [banner](../includes/banner.md)]
 

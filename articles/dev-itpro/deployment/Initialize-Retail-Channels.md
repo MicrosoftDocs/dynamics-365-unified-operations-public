@@ -2,10 +2,10 @@
 # required metadata
 
 title: Initialize Retail Cloud Scale Unit
-description: This topics explains how to initialize Retail Cloud Scale Unit.
+description: This topic explains how to initialize Retail Cloud Scale Unit.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/06/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -32,16 +32,14 @@ ms.dyn365.ops.version: 8.0
 
 [!include[banner](../includes/banner.md)]
 
-If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Retail Cloud Scale Unit before you can use retail channel functionality either for point of sale (POS) operations or for e-Commerce operations that use Retail Server in the cloud. Initialization will deploy a Retail Cloud Scale Unit.
+If you're using a Tier-2 sandbox or production environment that has application version 8.1.2.x or later, you must initialize Retail Cloud Scale Unit (RCSU) before you can use retail channel functionality either for point of sale (POS) operations or for e-Commerce operations that use Retail Server in the cloud. Initialization will deploy a Retail Cloud Scale Unit.
 
 This topic describes the steps for initializing Retail Cloud Scale Unit.
 
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
-2. In Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for Retail Cloud Scale Unit**.
-
-The request will be completed within five business days.
+2. If you require more than 1 RCSU per environment, in Microsoft Dynamics Lifecycle Services (LCS), create a support request, and enter **Access request for multiple Retail Cloud Scale Units** and indicate the environment ID, number of RCSUs, and corresponding datacenter regions. The request will be completed within five business days. If you do not require multiple RCSUs per environment, you do not need to create a support request. 
 
 ## Initialize Retail Cloud Scale Unit as part of a new environment deployment
 
@@ -98,7 +96,7 @@ If you're already using cloud-hosted Retail channel components in an environment
 
 When you initialize your first Cloud Scale Unit in an environment that uses cloud-hosted Retail channel components, the initialization process will migrate your channels associated to the cloud-hosted channel components to the first scale unit. Channels associated with Store Scale units are unaffected.
 
-The migration process is transparant to the channels. Once the scale unit innitialization starts, the following operations are automatically performed:
+The migration process is transparent to the channels. After the scale unit initialization starts, the following operations are automatically performed:
 
 1. A new Cloud Scale Unit will be created and associated with the environment.
 2. The Cloud Scale Unit will be registered as an available Channel Database in the headquarters.
@@ -109,7 +107,7 @@ You should plan for a five-hour downtime window for store and any online channel
 
 This process should be first performed in a sandbox environment after a database refresh with production data is performed. This will allow for business validations and will provide guidance on the amount of time the migration process will take.
 
-Since the Cloud Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
+Because the Cloud Scale Unit provides dedicated and isolated compute and storage resources from other components, it has its own channel database. This means the following precautions should be taken before migration:
 
 1. **Make sure that all shifts at the POS are closed.** After migration, you won't be able to close any shifts that were active during the migration process
 2. **Make sure that all P-jobs have been successfully completed.** While the previous channel database is maintained and any transactional data will still be synced back to the headquarters, it is recommended that you run P-JOBs before you start.

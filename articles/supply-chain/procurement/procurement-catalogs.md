@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Procurement catalogs
+title: Procurement catalogs overview
 description: This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Procurement catalogs
+# Procurement catalogs overview
 
 [!include [banner](../includes/banner.md)]
 

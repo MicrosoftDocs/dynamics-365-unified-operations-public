@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Create a record template to facilitate data entry
-description: This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
+description: This topic demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
 author: margoc
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,26 +30,20 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
+This topic demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. In this procedure, you’ll create a new record for new laptops that should be added to your fixed assets. This procedure uses the USMF sample company.
 
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-3. In the Fixed asset group field, enter or select a value.
-4. In the Name field, type a value.
-    * For example, enter 'Corporate lead laptop'.  
-5. In the Search name field, type a value.
-    * For example, enter 'laptop.'  
-6. Expand the Technical information section.
-7. In the Make field, type a value.
-8. In the Model field, type a value.
-9. In the Model year field, type a value.
-10. On the Action Pane, click Options.
-11. Click Record info.
-12. Click User template.
-13. In the Name field, type a value.
-    * For example, enter 'Corporate laptop.'  
-14. In the Description field, type a value.
-    * For example, enter 'Corporate laptop'.  
-15. Click OK.
-16. Click Close.
+1. In the navigation pane, go to **Modules > Fixed assets > Fixed assets > Fixed assets**.
+2. Select **New**.
+3. In the **Fixed asset group** field, enter or select a value.
+4. In the **Name** field, type a value. For example, enter **Corporate lead laptop**.  
+5. In the **Search name** field, type a value. For example, enter **laptop**.  
+6. Expand the **Technical information** section.
+7. In the **Make**, **Model**, and **Model year** fields, type values.
+8. On the Action Pane, select **Options**.
+9. Select **Record info**.
+10. Select **User template**.
+11. In the **Name** field, type a value.
+12. In the **Description** field, type a value.
+13. Select **OK**.
+14. Select **Close**.
 

@@ -5,7 +5,7 @@ title: X++ string runtime functions
 description: This topic describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,143 +58,87 @@ Searches for a string or expression in another string.
 
 The search is case-insensitive. The following special characters can be used to create the pattern for the *pattern* parameter.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Character</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;/td&gt;
-<td>A backslash () nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one non-special backslash. Examples:
-<ul>
-<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>0</strong>. The backslash isn&#39;t escaped.</li>
-<li><strong>match(&quot;ab$cd&quot;,&quot;ab$cd&quot;);</strong> returns <strong>1</strong>. The backslash and dollar sign are escaped.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>&lt; or ^</td>
-<td>A left angle bracket (&lt;) or a circumflex (^) at the start of an expression is used to match the start of a line. Examples:
-<ul>
-<li><strong>match(&quot;&lt;abc&quot;,&quot;abcdef&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;&lt;abc&quot;,&quot;defabc&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;^abc&quot;,&quot;abcdef&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;^abc&quot;,&quot;defabc&quot;);</strong> returns <strong>0</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>&gt; or $</td>
-<td>A right angle bracket (&gt;) or a dollar sign (?) at the end of the expression is used to match the end of a line. Examples:
-<ul>
-<li><strong>match(&quot;abc&gt;&quot;,&quot;abcdef&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;abc&gt;&quot;,&quot;defabc&quot;);</strong> returns <strong>1</strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>? or .</td>
-<td>A question mark (?) or a period (.) matches any one character in the same position. Examples:
-<ul>
-<li><strong>match(&quot;abc.def&quot;,&quot;abc#def&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;colou?r&quot;,&quot;colouXr&quot;);</strong> returns <strong>1</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:x</td>
-<td>A colon specifies a group of characters to match, as indicated by the character that immediately follows.</td>
-</tr>
-<tr class="even">
-<td>:a</td>
-<td>Sets the match to letters. Examples:
-<ul>
-<li><strong>match(&quot;ab:acd&quot;,&quot;ab#cd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab:acd&quot;,&quot;abxyzcd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab:acd&quot;,&quot;abxcd&quot;);</strong> returns <strong>1</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:d</td>
-<td>Sets the match to numeric characters. Examples:
-<ul>
-<li><strong>match(&quot;ab:dcd&quot;,&quot;ab3cd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;ab:dcd&quot;,&quot;ab123cd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab:dcd&quot;,&quot;abcd&quot;);</strong> returns <strong>0</strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>:n</td>
-<td>Sets the match to alphanumeric characters. Examples:
-<ul>
-<li><strong>match(&quot;ab:ncd&quot;,&quot;ab%cd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;ab:ncd&quot;,&quot;ab9cd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;ab:ncd&quot;,&quot;abXcd&quot;);</strong> returns <strong>1</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>:SPACE</td>
-<td>SPACE is the space character ( ). Sets the match to blanks, tabulations, and control characters such as Enter (new line). Examples:
-<ul>
-<li><strong>match(&quot;ab: cd&quot;,&quot;ab cd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;ab: cd&quot;,&quot;ab\ncd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;ab: cd&quot;,&quot;ab\tcd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;ab: cd&quot;,&quot;ab cd&quot;);</strong> returns <strong>0</strong>. Only the first space is matched.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><em></td>
-<td>An expression that is followed by an asterisk (</em>) requires a match for zero, one, or more occurrences of the preceding expression. Examples:
-<ul>
-<li><strong>match(&quot;abc<em>d&quot;,&quot;abd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc</em>d&quot;,&quot;abcd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc<em>d&quot;,&quot;abcccd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc</em>d&quot;,&quot;abxd&quot;);</strong> returns <strong>0</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>+</td>
-<td>An expression that is followed by a plus sign (+) requires a match for one or more occurrences of the preceding expression. Examples:
-<ul>
-<li><strong>match(&quot;abc+d&quot;,&quot;abd&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;abc+d&quot;,&quot;abcd&quot;);</strong> returns <strong>1</strong></li>
-<li><strong>match(&quot;abc+d&quot;,&quot;abcccd&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;abc+d&quot;,&quot;abxd&quot;);</strong> returns <strong>0</strong>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>-</td>
-<td>An expression that is followed by a minus sign (-) requires a match for zero or one occurrence of the preceding expression. In other words, the preceding expression is optional. Examples:
-<ul>
-<li><strong>match(&quot;colou-r&quot;,&quot;color&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;colou-r&quot;,&quot;colour&quot;);</strong> returns <strong>1</strong>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>[]</td>
-<td>Matches a single character with any character that is enclosed in the brackets. A range of characters can be specified by two characters that are separated by a minus sign (-). For example, <strong>[a-z]</strong> matches all letters between a and z, <strong>[0-9]</strong> matches a digit, and <strong>[0-9a-f]</strong> matches a hexadecimal digit. Examples:
-<ul>
-<li><strong>match(&quot;[abc]&quot;,&quot;apple&quot;);</strong> returns <strong>1</strong>, because it matches the a in &quot;apple.&quot;</li>
-<li><strong>match(&quot;[abc]&quot;,&quot;kiwi&quot;);</strong> returns <strong>0</strong>, because &quot;kiwi&quot; doesn&#39;t contain an a, b, or c.</li>
-<li><strong>match(&quot;gr[ae]y&quot;,&quot;grey&quot;);</strong> returns 1. This expression also matches &quot;gray.&quot;</li>
-<li><strong>match(&quot;gr[ae]y&quot;,&quot;graey&quot;);</strong> returns <strong>0</strong>, because only one character between &quot;gr&quot; and &quot;y&quot; is matched.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>[^]</td>
-<td>If the first character in the text that is enclosed in brackets is a circumflex (^), the expression matches all characters except the characters that are enclosed in the brackets. Examples:
-<ul>
-<li><strong>match(&quot;[^bc]at&quot;,&quot;bat&quot;);</strong> returns <strong>0</strong>.</li>
-<li><strong>match(&quot;[^bc]at&quot;,&quot;hat&quot;);</strong> returns <strong>1</strong>.</li>
-<li><strong>match(&quot;[^abc]&quot;,&quot;bat&quot;);</strong> returns <strong>1</strong>. Anything except a, b, or c is matched. Therefore, the t is matched.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
++ **\\**: A backslash (**\\**) nullifies, or escapes, the special treatment of special characters, so that a special character can be matched like a normal letter. A pair of backslashes is translated into one non-special backslash. Examples:
+
+    + **match("ab$cd","ab$cd");** returns **0**. 
+    + **match("ab\\$cd","ab$cd");** returns **0**. The backslash isn't escaped.
+    + **match("ab\\\\$cd","ab$cd");** returns **1**. The backslash and dollar sign are escaped.
+
++ **< or ^**: A left angle bracket (**<**) or a circumflex (**^**) at the start of an expression is used to match the start of a line. Examples:
+
+    + **match("<abc","abcdef");** returns **1**. 
+    + **match("<abc","defabc");** returns **0**. 
+    + **match("^abc","abcdef");** returns **1**. 
+    + **match("^abc","defabc");** returns **0**. 
+
++ **> or $**: A right angle bracket (**>**) or a dollar sign (**$**) at the end of the expression is used to match the end of a line. Examples:
+
+    + **match("abc>","abcdef");** returns **0**. 
+    + **match("abc>","defabc");** returns **1**. 
+
++ **? or .**: A question mark (**?**) or a period (**.**) matches any one character in the same position. Examples:
+
+    + **match("abc.def","abc#def");** returns **1**. 
+    + **match("colou?r","colouXr");** returns **1**. 
+
++ **:x**: A colon (**:**) specifies a group of characters to match, as indicated by the character that immediately follows.
+
++ **:a**: Sets the match to letters. Examples:
+
+    + **match("ab:acd","ab#cd");** returns **0**. 
+    + **match("ab:acd","abxyzcd");** returns **0**. 
+    + **match("ab:acd","abxcd");** returns **1**. 
+
++ **:d**: Sets the match to numeric characters. Examples:
+
+    + **match("ab:dcd","ab3cd");** returns **1**. 
+    + **match("ab:dcd","ab123cd");** returns **0**. 
+    + **match("ab:dcd","abcd");** returns **0**. 
+
++ **:n**: Sets the match to alphanumeric characters. Examples:
+
+    + **match("ab:ncd","ab%cd");** returns **0**. 
+    + **match("ab:ncd","ab9cd");** returns **1**. 
+    + **match("ab:ncd","abXcd");** returns **1**. 
+
++ **:SPACE**: SPACE is the space character (" "). Sets the match to blanks, tabulations, and control characters such as Enter (new line). Examples:
+
+    + **match("ab: cd","ab cd");** returns **1**. 
+    + **match("ab: cd","ab\ncd");** returns **1**. 
+    + **match("ab: cd","ab\tcd");** returns **1**. 
+    + **match("ab: cd","ab&nbsp;&nbsp;cd");** returns **0**. Only the first space is matched. 
+
++ **\***: An expression that is followed by an asterisk ("\*") requires a match for zero, one, or more occurrences of the preceding expression. Examples:
+
+    + **match("abc\*d","abd");** returns **1**. 
+    + **match("abc\*d","abcd");** returns **1**. 
+    + **match("abc\*d","abcccd");** returns **1**. 
+    + **match("abc\*d","abxd");** returns **0**. 
+
++ **\+**: An expression that is followed by a plus sign (**\+**) requires a match for one or more occurrences of the preceding expression. Examples:
+
+    + **match("abc+d","abd");** returns **0**. 
+    + **match("abc+d","abcd");** returns **1** 
+    + **match("abc+d","abcccd");** returns **1**. 
+    + **match("abc+d","abxd");** returns **0**. 
+
++ **\-**: An expression that is followed by a minus sign (**\-**) requires a match for zero or one occurrence of the preceding expression. In other words, the preceding expression is optional. Examples:
+
+    + **match("colou-r","color");** returns **1**. 
+    + **match("colou-r","colour");** returns **1**. 
+
++ **[]**: Matches a single character with any character that is enclosed in the brackets. A range of characters can be specified by two characters that are separated by a minus sign (**-**). For example, **[a-z]** matches all letters between a and z, **[0-9]** matches a digit, and **[0-9a-f]** matches a hexadecimal digit. Examples:
+
+    + **match("[abc]","apple");** returns **1**, because it matches the a in "apple." 
+    + **match("[abc]","kiwi");** returns **0**, because "kiwi" doesn't contain an a, b, or c. 
+    + **match("gr[ae]y","grey");** returns 1. This expression also matches "gray." 
+    + **match("gr[ae]y","graey");** returns **0**, because only one character between "gr" and "y" is matched. 
+
++ **[^]**: If the first character in the text that is enclosed in brackets is a circumflex (**^**), the expression matches all characters except the characters that are enclosed in the brackets. Examples:
+
+    + **match("[^bc]at","bat");** returns **0**. 
+    + **match("[^bc]at","hat");** returns **1**. 
+    + **match("[^abc]","bat");** returns **1**. Anything except a, b, or c is matched. Therefore, the t is matched. 
 
 ## strAlpha
 Copies only the alphanumeric characters from a string.
@@ -468,20 +412,17 @@ A copied line of the string that is specified by the *string* parameter.
 
 ### Remarks
 
-The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *n* or *rn* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
+The first line of the string has an offset of 0. You can assign multiple lines to one string by embedding the *\n* or *\r\n* characters in the string. Additionally, you can use the at sign (@) immediately before the opening quotation mark and use the Enter key to spread parts of the string value over multiple lines in the X++ code editor.
 
 ### Example
 
-    static void strLineExample(Args _arg)
-    {
-            str mytxt = "first-linensecond-linenlast-line";
-            ;
-            // Prints "second-line".
-            print strLine(mytxt,1);
-            // Prints "last-line".
-            print strLine(mytxt,2);
-            pause;
-    }
+```X++
+str mytxt = "first-line\nsecond-line\nlast-line";
+// Prints "second-line".
+print strLine(mytxt,1);
+// Prints "last-line".
+print strLine(mytxt,2);            
+```
 
 ## strLTrim
 Removes leading blanks from a text string.

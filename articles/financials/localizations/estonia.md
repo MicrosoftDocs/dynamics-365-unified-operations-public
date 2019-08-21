@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Estonia
+title: Estonia overview
 description: This topic provides an overview of functionality specific to Estonia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/08/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Estonia
+# Estonia overview
 
 [!include[banner](../includes/banner.md)]
 

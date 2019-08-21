@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cloud deployment option
+title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Microsoft Dynamics 365 for Finance and Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
 
 ---
-# Cloud deployment option
+# Cloud deployment overview
 
 [!include [banner](../includes/banner.md)]
  

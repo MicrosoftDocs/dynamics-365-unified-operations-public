@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data import and export jobs
+title: Data import and export jobs overview
 description: Use the Data management workspace to create and manage data import and export jobs.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -28,9 +28,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data import and export jobs
+# Data import and export jobs overview
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 To create and manage data import and export jobs in Microsoft Dynamics 365 for Finance and Operations, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
@@ -135,8 +136,8 @@ A job can be secured by roles, users, and legal entity at the same time.
 ## Run the import or export job
 You can run a job one time by selecting the **Import** or **Export** button after you define the job. To set up a recurring job, select **Create recurring data job**.
 
-[!NOTE]
-An import or an export job can be run asynchronously by selecting the **Import** or **Export** button. Running in async uses the async framework in Finance and Operations, which is different than batch framework. However, like batch framework, async framework can also undergo throttling and as a result, the job may not execute immediately. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if async or a batch does not start due to throttling. The jobs can also be executed in a batch by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. The async option is useful when users interact directly with the user interface and are not power users to understand batch scheduling. Using a batch is an alternate option if large volumes need to be exported or imported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective. If async and batch are both undergoing throttling due to high resource utilization on the system, then as an immediate workaround, the synchronous version of import/export can be used. The synchronous option will start immediately and will block the user interface because its executing synchronously. The browser window must remain open when the synchronous operation is in progress.
+> [!NOTE]
+> An import or an export job can be run asynchronously by selecting the **Import** or **Export** button. Running in async uses the async framework in Finance and Operations, which is different than batch framework. However, like batch framework, async framework can also undergo throttling and as a result, the job may not execute immediately. The jobs can also be run synchronously by selecting **Import now** or **Export now**. This starts the job immediately and is useful if async or a batch does not start due to throttling. The jobs can also be executed in a batch by choosing the **Run in batch** option. Batch resources are subject to throttling, so the batch job might not start immediately. The async option is useful when users interact directly with the user interface and are not power users to understand batch scheduling. Using a batch is an alternate option if large volumes need to be imported or exported. Batch jobs can be scheduled to run on a specific batch group, which allows more control from a load balancing perspective. If async and batch are both undergoing throttling due to high resource utilization on the system, then as an immediate workaround, the synchronous version of import/export can be used. The synchronous option will start immediately and will block the user interface because its executing synchronously. The browser window must remain open when the synchronous operation is in progress.
 
 ## Validate that the job ran as expected
 The job history is available for troubleshooting and investigation on both import and export jobs. Historical job runs are organized by time ranges.
@@ -150,15 +151,17 @@ Each job run provides the following details:
 
 Execution details show the state of each data entity that the job processed. Therefore, you can quickly find the following information:
 
-- Which entities were processed
-- For an entity, how many records were successfully processed, and how many failed
-- The staging records for each entity
+- Which entities were processed.
+- For an entity, how many records were successfully processed, and how many failed.
+- The staging records for each entity.
 
 You can download the staging data in a file for export jobs, or you can download it as a package for import and export jobs.
 
 From the execution details, you can also open the execution log.
 
 ## Clean up the staging tables
+Starting in Platform update 29, this functionality has been deprecated. This is replaced by a new version of job history clean-up functionality explained below.
+
 You can clean up staging tables by using the **Staging clean up** feature in the **Data management** workspace. You can use the following options to select which records should be deleted from which staging table:
 
 - **Entity** – If only an entity is provided, all records from that entity’s staging table are deleted. Select this option to clean up all the data for the entity across all data projects and all jobs.
@@ -166,3 +169,38 @@ You can clean up staging tables by using the **Staging clean up** feature in the
 - **Data projects** – If only a data project is selected, all records for all entities and across all jobs for the selected data project are deleted.
 
 You can also combine the options to further restrict the record set that is deleted.
+
+## Job history clean up (available in Platform update 29 and later)
+
+The job history clean-up functionality in data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the previous staging table clean-up functionality, which is now deprecated. The following tables will be cleaned up by the clean-up process.
+
+-   All staging tables
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+The functionality must be enabled in feature management and then can be accessed from **Data management \> Job history cleanup**.
+
+### Scheduling parameters
+
+When scheduling the clean-up process, the following parameters must be specified to define the clean-up criteria.
+
+-   **Number of days to retain history** – This setting is used to control the amount of execution history to be preserved. This is specified in number of days. When the clean-up job is scheduled as a recurring batch job, this setting will act like a continuously
+moving window thereby, always leaving the history for the specified number of days intact while deleting the rest. The default is 7 days.
+
+-   **Number of hours to execute the job** – Depending on the amount of history to be cleaned up, the total execution time for the clean-up job can vary from a few minutes to a few hours. Because the cleanup of the mentioned tables must be done when there is no other data management activity in the system, it becomes important to make sure that the clean-up job executes and finishes before the start of business activity.
+
+    A maximum execution time can be specified by setting a max limit on the number of hours the job must run using this setting. The clean-up logic goes through one job execution ID at a time in a chronologically arranged sequence, with oldest being first for the cleanup of related execution history. It will stop picking up new execution ID’s for cleanup when the remaining execution duration is within the last 10% of the specified duration. In some cases, it will be expected that the clean-up job will continue beyond the specified max time. This will largely depend on the number of records to be deleted for the current execution ID that was started before the 10% threshold was reached. The cleanup that was started must be completed to ensure data integrity, which means that cleanup will continue despite exceeding the specified limit. When this is complete, new execution ID’s are not picked up and the clean-up job completes. The remaining execution history that was not cleaned up due to lack of enough execution time, will be picked up the next time the clean-up job is scheduled. The default and minimum value for this setting is set to 2 hours.
+
+-   **Recurring batch** – The clean-up job can be run as a one-time, manual execution, or it can be also scheduled for recurring execution in batch. The batch can be scheduled using the **Run in background** settings, which is the standard batch set up.

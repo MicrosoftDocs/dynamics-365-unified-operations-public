@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Develop and customize 
+title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/27/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop and customize 
+# Develop and customize home page
 
 [!include [banner](../includes/banner.md)]
 

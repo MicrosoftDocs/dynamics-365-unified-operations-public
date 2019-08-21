@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implementation lifecycle management
+title: Implementation lifecycle management home page
 description: These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Microsoft Dynamics 365 for Finance and Operations project.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Implementation lifecycle management
+# Implementation lifecycle management home page
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Intrastat
+title: Intrastat overview
 description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Intrastat
+# Intrastat overview
 
 [!include [banner](../includes/banner.md)]
 

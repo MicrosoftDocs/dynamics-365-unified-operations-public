@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.2
 # Feature management overview
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
@@ -39,7 +40,7 @@ You can open the **Feature management** workspace by selecting the appropriate t
 The feature list includes the following information:
 
 - **Feature name** – A description of the feature that was added.
-- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), or is mandatorily turned on (lock). The setting that is shown here is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
+- **Enabled status** – A symbol indicates whether a feature has been turned on (check mark), hasn't been turned on (blank), is scheduled to be turned on (clock), is mandatorily turned on (lock), requires attention before you turn it on (warning), or can't be enabled (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it, based on their security role. It will also be available only in legal entities that the user has access to.
 - **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
 - **Module** – The module that is affected by the new feature.
@@ -60,6 +61,10 @@ If a feature hasn't been turned on, an **Enable Now** button appears in the deta
 - Select the feature to turn on, and then, in the details pane, select **Enable Now**. The feature is turned on.
 
 Some features can't be turned off after you turn them on. If the feature that you're trying to turn on can't be turned off, you receive a warning. At that point, you can select **Cancel** to cancel the operation and leave the feature turned off. However, if you select **Enable** to turn on the feature, you won't be able to turn it off later.
+
+Some features will display a message that provides additional information before you turn them on. These features are indicated by a yellow warning symbol. You should read the additional information carefully to better understand what will happen when the feature is enabled. However, you can still select **Enable** to turn on the feature.
+
+Some features will display a message that the feature can't be enabled until an action is taken. These features are indicated by a red X symbol. You must take the actions described in the description before the feature is enabled. For example, if you can't use a feature until a configuration key is disabled, then you must disable the configuration key first and then return to Feature management to enable the feature.
 
 After a feature is turned on, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature is scheduled to be turned on. It appears every time that you select the feature in the feature list.
 
@@ -85,12 +90,29 @@ After a feature is turned off, a message appears below the **Learn more** link i
 
 Sometimes, a critical feature is delivered that must be turned on automatically when you do an update. These features will be turned on automatically on the date that is specified in the **Enable date** field. For these features, a message appears below the **Learn more** link in the details pane. This message either states that the feature was turned on or indicates the future date when the feature will be turned on. It appears every time that you select the feature in the feature list.
 
+## Enable all features
+
+By default, all features that are added to your environment are turned off. You can enable all features by selecting the **Enable all** button. 
+
+When you select **Enable all**, an option will appear where you need provide the following information:
+- A list of all features that require confirmation before they can be enabled. If you want to enable the features in the list, select **Yes** for the **Enable features requiring confirmation** button.
+- A list of all features that can't be enabled will be shown. Those features will not be enabled.
+
+All features that can be enabled will be enabled. If a feature is already scheduled to be enabled in the future, the schedule will not change. 
+
 ## Turn on all features automatically
 
 By default, all features that are added to your environment are turned off, unless they are mandatory features. However, if you want to automatically turn on all new features, you can use the drop-down list under the workspace title to change what occurs when new features are added.
 
-- Select **All new features will be enabled by default** to automatically turn on all new features when they are added to your environment.
-- Select **All new features will be disabled by default** to automatically turn off all new features when they are added to your environment.
+- Select **Enable new features automatically** to automatically turn on all new features when they are added to your environment.
+- Select **Do not enable new features automatically** to default all new features to off when they are added to your environment.
+
+
+When you enable all feature automatically, it will enable all of the features that would be enabled when you click the **Enable all** button. It will not enable the features that require confirmation or the features that can't be enabled until an action is taken.
+
+## Check for updates
+
+Features are added to your environment after each update. However, you can manually check for updates by clicking on the **Check for updates** button. Any feature that was added to the system after the update will be added to the list of features. For example, if a flighted feature is enabled after a release, then you can check for updates and the feature will be added to your list.
 
 ## Assigning roles
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Brazil
+title: Brazil overview
 description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/13/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Brazil 
+# Brazil overview
 
 [!include [banner](../includes/banner.md)]
 

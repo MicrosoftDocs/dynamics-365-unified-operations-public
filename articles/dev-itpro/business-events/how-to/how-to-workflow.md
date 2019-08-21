@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consume workflow approval business events
+title: Business events and workflow approvals
 description: This topic explains how to use Microsoft Flow to configure and consume a workflow business event for purchase requisition approval.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 07/24/2019
+ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 ---
 
-# Consume workflow approval business events
+# Business events and workflow approvals
 [!include [banner](../../includes/banner.md)]
 
 This topic explains how to use Microsoft Flow to configure and consume a workflow business event for purchase requisition approval.

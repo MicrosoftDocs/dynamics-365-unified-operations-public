@@ -93,7 +93,24 @@ Information access scenarios supported in Finance and Operations applications ca
 
 The following table can be used as a guide when choosing the right tool for the reporting solution.
 
-[![Report scorecard](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)](https://msdnshared.blob.core.windows.net/media/2016/07/Report-scorecard.png)
+|MAKER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
+|-----|-----------|------------------|---------------------------------|--------------------|-------------------|
+|Persona|Developer|Developer|Power user|Power user|Power user|
+|Authoring tool|Visual Studio|Visual Studio|PowerBl.com<br>PowerBl app|Excel|Management Reporter Designer|
+|Time to market|Weeks|Weeks|Hours|Hours|Hours|
+|Data sources|Entity DB<br>OLTP|OLTP|Entity DB<br>Azure Catalog|OLTP|OLTP|
+|Effort|Days|Days|Minutes|Hours|Hours|
+
+|VIEWER|Operational views|Business documents|Analytical tools & visualizations|Electronic reporting|Financial reporting|
+|-----|-----------|------------------|---------------------------------|--------------------|-------------------|
+|Target|Organization|Back Office|Power user|Power user|Finance officers|
+|Data accuracy|Near real-time|Real-time|Near real-time|Real-time|Cached views|
+|Personalization|Medium-Modeled|None|High - Free form designer|Low - Expressions|Medium - Modeled|
+|Sharing|None|PDF export<br>0365 export<br>Email|Dashboards<br>Reports<br>Tiles|Excel export|Excel export|
+|Printing|Screen captures|Local printer<br>Network devices|Screen captures|Excel|Local printer|
+|Automation|Auto-refresh|Batch integration|Scheduled refresh|Batch jobs|None|
+|Scenarios|Monitoring|Transactions|Exploratory|Transactions|Accounting|
+
 
 > [!NOTE]
 > "Near real-time" denotes processed data that is slightly slower than real-time.

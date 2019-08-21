@@ -166,7 +166,7 @@ The formatting that is specified in the row definition overrides any formatting 
 
 1. In Report Designer, open the row definition to modify.
 2. Select the cells to format. To select multiple cells, hold down the Ctrl key while you select the cell.
-3. Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](https://i-technet.sec.s-msft.com/dynimg/IC679497.gif "Increase Indent") on the toolbar.
+3. Click the toolbar button of the format to apply. For example, to indent a row, select the row, and then click **Increase Indent** ![Increase Indent](media/indent.gif "Increase Indent") on the toolbar.
 
 ### Adjust columns while you design reports
 
