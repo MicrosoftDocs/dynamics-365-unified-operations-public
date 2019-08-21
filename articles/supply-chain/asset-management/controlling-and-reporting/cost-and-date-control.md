@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost and date control
-description: This topic explains cost and date control in Enterprise Asset Management.
+description: This topic explains cost and date control in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -32,45 +32,39 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost and date control
 
-This topic explains cost and date control in Enterprise Asset Management. In Enterprise Asset Management, you can calculate costs to get an overview of actual costs compared to budget costs on objects, functional locations, or work orders. Actual costs are based on posted transactions. You can also make a date calculation if you want to compare scheduled start and end dates to actual start and end dates on work orders.
+In Asset Management, you can calculate costs to get an overview of actual costs compared to budget costs on assets, functional locations, and work orders. Actual costs are based on posted transactions. You can also make a date calculation if you want to compare scheduled start and end dates to actual start and end dates on work orders.
 
-## Cost control for objects, functional locations, and work orders
+## Cost control for assets, functional locations, and work orders
 
-The calculations made for objects, functional locations, and work orders are almost identical. Only difference is that for objects and functional locations, you can also include sub objects and sub locations in your calculation. The date is the transaction date when the registration was recorded.
+The calculations made for assets, functional locations, and work orders are almost identical. Only difference is that for assets and functional locations, you can also include sub assets and sub locations in your calculation. The date is the transaction date when the registration was recorded.
 
-1. Click **Enterprise asset management** > **Inquiries** > **Objects** > **Object cost control** or **Functional location cost control**, or **Enterprise asset management** > **Inquiries** > **Work orders** > **Work order cost control**.
+1. Click **Asset management** > **Inquiries** > **Assets** > **Asset cost control** or **Functional location cost control**, or **Asset management** > **Inquiries** > **Work orders** > **Work order cost control**.
 
-2. Click **Cost control** > **Calculate cost**.
+2. In the **Asset cost control** / **Functional location cost control** / **Work order cost control** dialog, select a period to be calculated.
 
-3. In the **Object cost control** / **Functional location cost control** / **Work order cost control** drop-down dialog box, select a period to be calculated.
+3. If required, select a financial dimension set to be included in the calculation.
 
-4. If required, select a financial dimension set to be included in the calculation.
+4. Select the **Skip zero** check box if you do not want to show results with a cost of zero.
 
-5. Select the **Skip zero** check box if you do not want to show results with a cost of zero.
+5. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all cost control lines on all the functional location level to which they are related.
 
-6. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all cost control lines on all the functional location level to which they are related.
+6. Select "Yes" in the **Show open committed cost** check box if you want to include that column in the calculation.
 
-7. Select "Yes" in the **Show open committed cost** check box if you want to include that column in the calculation.
+7. Select "Yes" in the **Include sub objects** check box to show costs related to child objects as separate lines.
 
-8. Select "Yes" in the **Include sub objects** check box to show costs related to child objects as separate lines.
+8. If you want to limit the search, you can select specific objects / functional locations / work orders on the **Records to include** FastTab.
 
-9. If you want to limit the search, you can select specific objects / functional locations / work orders on the **Records to include** FastTab.
+9. Click **OK** to start the calculation.
 
-10. Click **OK** to start the calculation.
-
-The figure below shows a screenshot of the interface.
+The figure below shows an example of the **asset cost control** dialog.
 
 ![Figure 1](media/01-controlling-and-reporting.png)
 
 11. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted in orange color. Click on a button to activate or deactivate it.
 
-The figures below show screenshots of the interface.
+The figure below shows an example of calculation results in **Asset cost control"".
 
 ![Figure 2](media/02-controlling-and-reporting.png)
-
-![Figure 3](media/03-controlling-and-reporting.png)
-
-![Figure 4](media/04-controlling-and-reporting.png)
 
 Another way of making a cost calculation is to multi-select objects in **All objects** or **Active objects** grid view. Then, you click the **Cost control** button > **Cost control** > **Calculate cost**, and you will see that the selected objects are automatically inserted in the **Object** field on the **Records to include** FastTab. Click **OK** in the **Object cost control** drop-down, and a cost calculation for the selected objects is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in the **All work orders** or **Active work orders**.
 
