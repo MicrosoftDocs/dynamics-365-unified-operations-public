@@ -28,13 +28,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # Build custom response pages for 4xx/5xx status code errors 
 
 This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
-
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
 
 ## Overview
 
