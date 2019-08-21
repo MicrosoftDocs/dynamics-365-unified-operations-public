@@ -53,7 +53,8 @@ This topic explains how to add price and vendor information to a purchase requis
 17. Select **Submit**.
 
 ## Reassign a workflow task
-- The next task is to create an RFQ to get bids from vendors for the product. In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ. To continue with this guide, you need to re-assign that task to another user (yourself). You can only do this if you are logged in as an Admin.  
+The next task is to create an RFQ to get bids from vendors for the product. In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ. To continue with this guide, you need to re-assign that task to another user (yourself). You can only do this if you are logged in as an Admin.  
+
 1. Select **Workflow** to open the drop dialog.
 2. Select **View history**.
 3. Refresh the page.
@@ -67,12 +68,11 @@ This topic explains how to add price and vendor information to a purchase requis
 11. Close the two pages.
 
 ## Create an RFQ
+
 1. Refresh the page.
 2. Select **Request for quotation**.
-3. In the **Buying legal entity** field, select **USMF**.
-- You must select the same legal entity that’s on the requisition line.  
-4. In the list, mark the selected row.
-- If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.  
+3. In the **Buying legal entity** field, select **USMF**. You must select the same legal entity that’s on the requisition line.  
+4. In the list, mark the selected row. If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.  
 5. Select **OK**.
 6. Refresh the page.
 7. Ensure that the FactBox is open, then expand the **Related documents** section.
@@ -86,10 +86,8 @@ This topic explains how to add price and vendor information to a purchase requis
 15. Select **OK**.
 16. Select **Enter reply**.
 17. On the Action Pane, select **Reply**.
-18. Select **Copy data to reply**.
-- This copies data, such as the quantity and dates, from the RFQ to the reply.  
-19. In the **Unit price** field, enter a number.
-- This is the price that you’ve received from the vendor. You might also want to enter additional information from the vendor.  
+18. Select **Copy data to reply**. This copies data, such as the quantity and dates, from the RFQ to the reply.  
+19. In the **Unit price** field, enter a number. This is the price that you’ve received from the vendor. You might also want to enter additional information from the vendor.  
 20. Select **Accept**.
 21. Select **OK**.
 
@@ -98,8 +96,7 @@ This topic explains how to add price and vendor information to a purchase requis
 2. Select **Lines**.
 3. Select **Related information**.
 4. Select **Purchase requisition**.
-5. Select the line that was transferred to the RFQ.
-- Verify that the price and vendor have been copied to the requisition.  
+5. Select the line that was transferred to the RFQ. Verify that the price and vendor have been copied to the requisition.  
 6. Select **Workflow** to open the drop dialog.
 7. Select Complete.
 8. Select the page.
