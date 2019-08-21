@@ -34,11 +34,9 @@ This procedure lets you create a timesheet by using an empty timesheet form. The
 
 1. In the **Navigation pane**, go to **Modules > Project management and accounting > Timesheets > My timesheets**.
 2. To enter a new timesheet, click **New**.
-    * The Resource drop-down list shows the worker assigned to the current user, by default.  
-    * If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.  
-3. In the **Date** field, enter a date.
-    
-    If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favorites.  
+    - The Resource drop-down list shows the worker assigned to the current user, by default.  
+    - If the user is designated as a delegate, this will list the names so that a user can enter a timesheet on their behalf.  
+3. In the **Date** field, enter a date. If this option is selected, new timesheet lines will be created by using the timesheet settings that were configured as favorites.  
 4. Click **OK**.
 5. Click **New line**.
 6. In the list, mark the selected row. The **Legal Entity** field displays the current Legal entity by default.   
