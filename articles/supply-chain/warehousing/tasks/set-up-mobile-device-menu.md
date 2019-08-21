@@ -40,19 +40,15 @@ This topic shows how to set up a Mobile device menu item. In this example, the m
 4. In the **Title** field, type a value. This is the title which will be displayed on the mobile device. For example, you could type `PO Move`.  
 5. In the **Mode** field, select **Work**.
 6. Select **Yes** in the **Use existing work** field.
-
     - This mobile device menu item is used to perform existing work. Therefore you must set this value to **Yes**.  
     - The **Display inventory status** field determines whether the inventory status of the on-hand inventory will be displayed to the warehouse worker on the mobile device.  
-
 7. In the **Directed by** field, select **System grouping**. When you select something in the **Directed by** field, additional fields appear in the **General** section on this page. The fields that appear depend on what you selected. When you select **System grouping**, two new fields are added. These are explained below.  
 8. In the **System grouping** field, select **WorkPoolId**. When warehouse workers open this menu item, they’ll be asked to scan a Work pool ID. All work orders with this Work pool ID and open work order lines with one of the work classes added to this menu item will be pushed to the user.  
 9. In the **System grouping label** field, type a value. This is the text displayed to the user on the mobile device. For example, you could type **Work pool**.  
 10. Select **Yes** in the **Override license plate during put** field. This option allows warehouse workers to override the target license plate when items are put down on a license plate controlled location.  
 11. Select **Yes** in the **Group put away** field.
-
     - If all the Put lines on the work order share the same location, the user will receive one combined Put instruction for all lines. 
     - Audit template ID: A work audit template allows you to specify that the work process for a menu item should be interrupted so that another operation can be performed. For example, if this menu item is for inbound work, the audit template might require that the worker checks the temperature. The point at which the process is interrupted is specified on the audit template and can be, for example, when work is started or completed, or when its status changes.  
-
 12. Expand the **Work classes** section.
 13. Select **New**.
 14. In the **Work class ID** field, type `Purchase`. The work pool restricts the work that the menu item can be used for. In this case it will be used for open work order lines that have the Purchase work class ID.  
