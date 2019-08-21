@@ -28,10 +28,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
 
 # Build custom response pages for 4xx/5xx status code errors 
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
 
@@ -63,7 +64,8 @@ To build the error page, do the following.
 1. Build out the error page.
 1. Check in and publish the error page.
 
-[!Note] You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
+[!NOTE]
+You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
 
 #### Set up a redirect for the error page
 
@@ -73,5 +75,6 @@ To set up a redirect for the error page, do the following.
 1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up.
 1. Click **OK** to commit the linking.
 
-[!Note] If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
+[!NOTE]
+If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
 
