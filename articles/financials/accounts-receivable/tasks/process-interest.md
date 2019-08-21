@@ -36,8 +36,7 @@ This procedure shows how to create, print, and post interest notes. This task us
 ## Set up interest on the posting profile
 1. In the **Navigation pane**, go to **Modules > Credit and collections > Setup > Customer posting profiles**.
 2. Click **Edit**.
-3. In the **Setup fastTab**, in the **Interest code** field, select an interest code from the drop-down list. If you do not want interest calculated for transactions using this posting profile, leave the field blank.  
-    * The **Table restriction** fastTab allows you to change the way that interest is processed. If this field is set to Yes, then interest will be calculated for this posting profile.  
+3. In the **Setup fastTab**, in the **Interest code** field, select an interest code from the drop-down list. If you do not want interest calculated for transactions using this posting profile, leave the field blank. The **Table restriction** fastTab allows you to change the way that interest is processed. If this field is set to Yes, then interest will be calculated for this posting profile.  
 
 ## Calculate interest
 1. In the **Navigation pane**, go to **Modules > Credit and collections > Interest > Create interest notes**.
@@ -67,8 +66,7 @@ This procedure shows how to create, print, and post interest notes. This task us
 ## Post the interest note
 1. Select an interest note that is ready to post (status is created).
 2. Click **Post**.
-3. Enter the posting date for the interest note.
-    * Select Yes to create a general ledger transaction for each interest note. If you do not select Yes, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction.  
+3. Enter the posting date for the interest note. Select Yes to create a general ledger transaction for each interest note. If you do not select Yes, the interest on all interest notes to the customer is accumulated and posted to the general ledger in one transaction.  
 4. Expand the **Records to include** fastTab.
 5. Click **OK**.
 6. In the **Status** field, select 'Posted'.
