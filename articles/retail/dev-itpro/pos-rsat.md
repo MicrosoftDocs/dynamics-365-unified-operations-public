@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test recorder and Regression suite automation tool for Retail Cloud POS
-description: This topic explains how to automate UAT testing using the POS test recorder and Regression suite automation tool.
+description: This topic explains how to automate UAT testing using the POS test recorder and the Regression suite automation tool.
 author: mugunthanm
 manager: AnnBe
 ms.date: 08/19/2019
@@ -32,124 +32,99 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # Test recorder and Regression suite automation tool for Retail Cloud POS
 
-This topic explains how you can use the new test recorder tool in Cloud POS to record business scenarios for user acceptance/UI testing and automate the test validation using the Regression suite automation tool (RSAT). The RSAT tool uses the Azure DevOps test suite to download the test cases and reports the result back to Azure DevOps with the test execution status. The test cases can be manually created in Azure DevOps or it can be synced from LCS Business process model (BPM) to Azure DevOps and then to RSAT.
+[!include [banner](../includes/banner.md)]
+
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic explains how to use the new test recorder tool in Cloud POS to record business scenarios for user acceptance/UI testing and automate the test validation using the Regression suite automation tool (RSAT). The RSAT tool uses the Azure DevOps test suite to download the test cases and reports the result back to Azure DevOps with the test execution status. The test cases can be manually created in Azure DevOps or they can be synced from the LCS Business process model (BPM) to Azure DevOps and then to RSAT.
 
 This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations version 10.0.5 and later.
 
-**Note:** Test recorder is supported only in Cloud POS using Chrome browser, support for another browser and device type will be added later.  
+> [!NOTE]
+> Test recorder is supported only in Cloud POS using Chrome browser. Support for other browsers and device types will be added later.  
 
-**Test Recorder:**
+## Test Recorder
 
-Test recorder is a new feature added in POS to significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your Retail POS production environments.
+Test recorder is a new feature added in POS that significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your Retail POS production environments.
 
-Test recorder can record user actions in the client with exact fidelity for all the controls and DOM elements in POS, test recorder captures the event occurred and stores along all pertinent information about the corresponding user action in real time. From this information, test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to the user action (such as the input data value and type, view context, or record context etc.) expect the password information. Test recorder persists all the recorder information in memory during the recording and generate output file at the end of the recording with enough detail to help playback later using the RSAT tool exactly as the user performed them.
+Test recorder can record user actions in the client with exact fidelity for all the controls and DOM elements. In POS, test recorder captures the event that has occurred and stores along all pertinent information about the corresponding user action in real time. From this information, test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to the user action (such as the input data value and type, view context, or record context etc.) except for password information. Test recorder persists all the recorder information in memory during the recording and generate output file at the end of the recording with enough detail to help playback later using the RSAT tool exactly as the user performed them.
 
-**Note:** Test recorder will capture all the data entered during the recording expect the POS user passwords, please don’t record any PII, secrets, sensitive, user specific data etc. All the data entered during recording will be stored in the Recording.xml and other users can see it in Lifecycle service, Azure DevOps, variables.xlsx, Recording.xml and during playback.
+> [!NOTE]
+> Test recorder captures all the data entered during the recording except for POS user passwords. Do not record any PII, secrets, sensitive, or user-specific data. All data entered during recording will be stored in the Recording.xml and other users can see it in Lifecycle service, Azure DevOps, variables.xlsx, Recording.xml, and during playback.
 
-**Regression Suite Automation Tool:**
+## Regression Suite Automation Tool
 
-The Regression Suite Automation Tool (RSAT) enables functional power users to execute the test case in Retail POS and updates the test execution result back in Azure DevOps for reporting and investigation. RSAT provides options to investigate the test failures. RSAT decouples the test parameters from test steps and stores the parameters in Microsoft Excel files for easy editing of the test parameter values.
+The Regression Suite Automation Tool (RSAT) enables functional power users to execute a test case in Retail POS. RSAT then updates the test execution result in Azure DevOps for reporting and investigation. RSAT provides options to investigate the test failures. RSAT decouples the test parameters from test steps and stores the parameters in Microsoft Excel files for easy editing of the test parameter values.
 
-### Overall flow:
+## Prerequisites
 
-### E2E Flow:
++ Dynamics 365 for Finance and Operations Retail POS environment. Your test environment must be running binary update 10.0.5 or later. The Regression Suite Automation Tool must have access to your test environment via a web browser.
++ You need Microsoft Excel installed to generate and edit test parameters.
++ You must have an Azure DevOps project to store and manage your test cases, test plans and test case results.
 
-### Prerequisites:
+## Install and configure
 
-Dynamics 365 for Finance and Operations Retail POS environment. Your test environment must be running binary update 10.0.5 or newer. The Regression Suite Automation Tool must have access to your test environment via a web browser.
-
-### Excel:
-
-You need Microsoft Excel installed to generate and edit test parameters.
-
-### Azure DevOps:
-
-You must have an Azure DevOps project to store and manage your test cases, test plans and test case results.
-
-### Install and Configure:
-
-### Enable Test recording in Retail POS application:
+### Enable Test recording in Retail POS application
 
 To enable task recording in POS, follow these steps in Retail headquarters:
 
 1.  Click **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
-
 2.  Click the register to enable task recording on.
-
 3.  On the **Register** tab, on the **General** FastTab, set the **Enable task and test recorder** option to **Yes**.
-
 4.  Click **Save**.
-
 5.  Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
-
 6.  Select the **Registers (1090)** job, and then click **Run now**.
 
-Test recorder controls:
------------------------
+## Controlling Test recorder
+
+### Start
 
 To Start test recorder, login to Retail Cloud POS and navigate to the **Settings** page, in the **Task and Test recorders** section, click **Open test recorder**.
 
 [![POS Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
 
-### Controls in the test recorder:
-
-### Stop:
+### Stop
 
 [![Stop](./media/Stop.png)](./media/Stop.png)
 
 Click **Stop** to end the recording session. Note that you can't restart a session after you end it. Therefore, make sure that the recording is completed before you end it.
 
-### 
-
-### Pause:
+### Pause
 
 [![Pause](./media/Pause.png)](./media/Pause.png)
 
 Click **Pause** to temporarily stop (pause) the recording session. Steps that you perform after you click **Pause** aren't recorded.
 
-### Continue:
-
-### Recording:
+### Continue
 
 To resume the recording session after you've paused it, click **Recording**.
 
 [![Recording](./media/Recording.png)](./media/Recording.png)
 
-### 
-
-### Start task and End task:
+### Start task and End task
 
 You can specify the beginning and end of a set of grouped steps by using the **Start task** and **End** **task** buttons. Click **Start task** to add a "Start Task" step, and then perform the steps that should be included in the group. After you've finished performing the steps for the group, click **End task**. Tasks help you organize your procedures. Tasks can be nested within other tasks. In this way, you can better organize very long and complex business processes.
 
 [![Task](./media/StartTask.png)](./media/Recording.png)
 
-### New task:
+### New task
+
 [![New task](./media/NewTask.png)](./media/NewTask.png)
 
-Adding annotations
-------------------
+### Adding annotations
 
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add an annotation to any step by clicking the **Edit** button (pencil symbol) to the right of the step.
 
 [![Annotation](./media/Annotation.png)](./media/Annotation.png)
 
-### Texts and notes:
+### Texts and notes
 
 You can use the **Texts** and **Notes** fields in the annotation dialog to add text that should be associated with a step in a Task guide.
 
-#### 
++ **Text:** Text that you enter in the **Text** field appears *above* the step text in the test steps.
++ **Note:** Text that you enter in the **Notes** field appears *below* the step text in the LCS.
 
-#### Text:
-
-Text that you enter in the **Text** field appears *above* the step text in the test steps.
-
-#### 
-
-#### Notes:
-
-Text that you enter in the **Notes** field appears *below* the step text in the LCS.
-
-### Value:
+### Value
 
 User input values entered during the recording can be changed here. Ex: If you added product “0005” during recording, by default this value will be stored in the Recording.xml file but if you want to change you can change it to different product id and you can change the value here. The value will show up only f there is user input.
 
