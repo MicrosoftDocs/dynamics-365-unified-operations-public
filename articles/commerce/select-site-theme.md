@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Select a site theme
 
-[!include [banner](../../includes/preview-banner.md)]
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic shows you how to set or change your site's theme.
 
