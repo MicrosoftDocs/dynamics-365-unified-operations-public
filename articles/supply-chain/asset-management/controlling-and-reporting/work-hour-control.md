@@ -62,7 +62,7 @@ The figure below shows and example of an **Asset hour control** calculation.
 
 ![Figure 1](media/04-controlling-and-reporting.png)
 
-Another way of making a cost calculation is to multi-select objects in **All objects** or **Active objects** grid view. Then, you click the **Hour control** button > **Hour control** > **Calculate hours**, and you will see that the selected objects are automatically inserted in the **Object** field on the **Records to include** FastTab. Click **OK** in the **Object hour control** drop-down, and an hour calculation for the selected objects is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in the **All work orders** or **Active work orders**.
+Another way of making an hour calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Hour control** button on the **General** FastTab. The selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK** in the **Asset hour control** dialog, and the calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
 
 >[!NOTE]
 >The **Original budget** field shows budget hours from the work order forecast. The **Actual hours** field shows posted hours on work orders. The **Committed hours** field shows total amount of hours that your company is committed to in relation to work orders.
