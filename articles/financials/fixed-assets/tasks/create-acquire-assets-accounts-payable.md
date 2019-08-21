@@ -47,13 +47,9 @@ This task guide will walk through creation and acquisition of a fixed asset with
 5. In the **Number** field, type a value.
 6. In the **Posting date** field, enter a date.
 7. Click **Add line**.
-8. In the **Item number** field, click the drop-down button to open the lookup.
-    
-    Either non-stocked items or procurement categories can be used for fixed asset acquisition.  
+8. In the **Item number** field, click the drop-down button to open the lookup. Either non-stocked items or procurement categories can be used for fixed asset acquisition.  
 9. In the list, click the link in the selected row.
-10. In the **Quantity** field, enter a number.
-    
-    One invoice line will only create one fixed asset, regardless of quantity. The invoice quantity field value will be transferred to the fixed asset quantity.  
+10. In the **Quantity** field, enter a number. One invoice line will only create one fixed asset, regardless of quantity. The invoice quantity field value will be transferred to the fixed asset quantity.  
 11. In the **Unit price** field, enter a number.
 12. Expand the **Line details** fastTab.
 13. Click the **Fixed assets** tab.
@@ -61,7 +57,5 @@ This task guide will walk through creation and acquisition of a fixed asset with
 15. In the **Fixed asset group** field, click the drop-down button to open the lookup.
 16. In the list, select the fixed asset group to be used when creating the new fixed asset.
 17. In the list, click the link in the selected row.
-18. Click **Post**.
-    
-    The fixed asset will be created and acquired when the invoice is posted.  
+18. Click **Post**. The fixed asset will be created and acquired when the invoice is posted.  
 
