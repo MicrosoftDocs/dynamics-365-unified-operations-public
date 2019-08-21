@@ -50,13 +50,13 @@ The calculations made for assets, functional locations, and work orders are almo
 
 6. You can use the **Level** field to indicate how detailed you want the hour control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all hour control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all hour control lines on all the functional location levels to which they are related.
 
-7. 
+7. Select "Yes" on the **Include sub assets** toggle button to show costs related to sub assets as separate lines.
 
-7. If you want to limit the search, you can select specific assets / functional locations / work orders on the **Records to include** FastTab.
+8. If you want to limit the search, you can select specific assets / functional locations / work orders on the **Records to include** FastTab.
 
-8. Click **OK** to start the calculation.
+9. Click **OK** to start the calculation.
 
-9. On the **Asset hour control** page, in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted. Click on a button to activate or deactivate it.
+10. On the **Asset hour control** page, in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
 
 The figure below shows and example of an **Asset hour control** calculation.
 
