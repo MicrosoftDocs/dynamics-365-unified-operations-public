@@ -254,14 +254,8 @@
       href: ../dev-itpro/data-entities/data-task-automation.md
     - name: Delivering ISV solutions using One Version
       href: ../dev-itpro/lifecycle-services/oneversion-isv.md
-    - name: Test Automation
-      items:
-      - name: Create and automate user acceptance tests
-        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
-      - name: Set up Regression suite automation tool tutorial
-        href: get-started/hol-set-up-regression-suite-automation-tool.md
-      - name: Use Regression suite automation tool tutorial
-        href: get-started/hol-use-regression-suite-automation-tool.md
+    - name: Create and automate user acceptance tests
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: Business events
     items:
     - name: Business events overview
@@ -3618,6 +3612,22 @@
         href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
       - name: Calculate item forecast
         href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+    - name: Work order scheduling
+      items: 
+      - name: Maintenance worker calendar and scheduling
+        href: ../supply-chain/asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+      - name: Preferred maintenance workers
+        href: ../supply-chain/asset-management/work-order-scheduling/preferred-maintenance-workers.md
+      - name: Schedule work orders
+        href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-orders.md
+      - name: Dispatch work order
+        href: ../supply-chain/asset-management/work-order-scheduling/dispatch-work-order.md
+      - name: Schedule work order on specific date and time
+        href: ../supply-chain/asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+      - name: Scheduled work order maintenance jobs
+        href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+      - name: Calculate capacity load on scheduled work orders
+        href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
     - name: Consumption
       items: 
       - name: Register consumption
