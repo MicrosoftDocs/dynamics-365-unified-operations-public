@@ -59,40 +59,34 @@ In Commerce Authoring Tools, navigate to the site for which you will be building
 
 To create a template, do the following.
 
-1. Click the **Templates** tab.
-1. Click **New Template**.
-1. Enter the template name in the **Template Name** field.
-1. Click **OK**.
-1. In the template, add any required modules to the necessary page slots (hover over red exclamation marks for guidance).
-    - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
+1. Go to **Templates /> New Template**.
+1. Enter the template name and click **OK**.
+1. In the template, add any required modules to the necessary page slots (hover over any red exclamation marks for guidance).
+  - Example: The **HTML Head** slot may require a module, like the Default External Script Module.
 1. In the **Body** slot, add a **Default Page** module.
-1. In the **Main Slot** of the Default Page module, add a **Content Rich Block** module.
-1. In the Content Rich Block module, add a **Content rich block item**.
-1. Check in the template.
-1. Publish the template.
+1. In the **Main Slot** of the default page module, add a **Content Rich Block** module.
+1. In the content rich block module, add a **Content rich block item**.
+1. Check and publish the template.
 
 ### Build a Privacy Page
 
 To build a privacy page, do the following.
 
-1. Click the **Pages** tab.
-1. Click **New Page**.
-1. Select the template you will use for the privacy page.  
+1. Go to **Pages /> New Page**.
+1. Select the template to be used for the privacy page.  
 1. Enter a page name and URL, then click **OK**. 
-1. In the **Main Slot** of your page, add a **Content Rich Block** module.
-1. In the Content Rich Block module, add a **Content rich block item**.
-1. In the properties panel of the Content rich block item, click **Add Data Source** and then select **RICH TEXT CONTENT**.
+1. In the **Main Slot** of the page, add a **Content Rich Block** module.
+1. In the content rich block module, add a **Content rich block item**.
+1. In the properties panel of the content rich block module, click **Add Data Source** and then select **RICH TEXT CONTENT**.
 1. Enter privacy page content into the rich text editor. Expand the rich text editor to full screen mode if needed.
 1. When content entry is completed, click **Preview** to preview the page in the browser.
 1. Complete any remaining additions to the page and module properties.
-1. Check in the privacy page.
-1. Publish the privacy page.
+1. Check in and publish the privacy page.
 
 To publish the URL for the privacy page, do the following.
 
-1. From the main page, click the **URLs** tab. 
-1. In the URLs list, find and select the privacy page URL.
-1. Publish the selected URL for the privacy page.
+1. Go to **URLs** and select the privacy page URL.
+1. Publish the selected URL.
 
 ### Create a link to the privacy page in a footer
 
@@ -100,15 +94,13 @@ A link to the privacy page can be added to a fragment and then shared and update
 
 To add a link to a footer fragment, do the following.
 
-1. Click the **Fragments** tab.
-1. Click **New Page Fragment**.
+1. Go to **Fragments /> New Page Fragment**.
 1. Select the **Footer** module and enter a name under **Page Fragment Name**.
 1. Under the **sub footer** slot, add a sub footer module.
 1. Click **Add Data Source** in the properties panel and select **Links**.
-1. Enter the label text of the link into the **Link Text** field.
-1. Enter the privacy page URL into the **Url of content** field.
-  - To obtain the URL for the privacy page, go to the privacy page created in the **Pages** section and copy the URL from the properties panel.
-1. Save the fragment, check it in, and then publish.
+1. Enter the link text and privacy page URL.
+  - To obtain the URL for the privacy page, go to the privacy page in **Pages** and copy the URL from the properties panel.
+1. Save, check in, and publish the fragment.
 1. Preview the fragment and test the link to the privacy policy page.
 
-This fragment can now be referenced in a template for other site pages. Referencing this fragment in the footer module of the template will include the link reference in any pages built with the template.
+The fragment can now be referenced in a template for other site pages. Referencing this fragment in the footer module of the template will place the link reference on any pages built with the template.
