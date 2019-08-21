@@ -39,10 +39,9 @@ This topic explains how to update a sales order when products are shipped to the
 4. Select **Post packing slip**.
 5. Expand or collapse the **Parameters** section.
 6. In the **Quantity** field, select **All**.
-- Other options include **Deliver now** and **Picked**. If the order line is to be shipped partially and the **Deliver now** field on the order line contains a quantity, you would select **Deliver now**. If your organization's fulfillment flow includes picking as a separate process that is managed by and registered with a picking list, you would select **Picked**.  
-- Check that the **Posting** option is set to **Yes**.  
-7. Set the **Print packing slip** option to **Yes**.
-- The **Overview** tab contains a list of packing slips to be generated in this posting. If you are shipping an individual order, there will typically be one packing slip. However, if that order's lines are to be shipped from different sites, posting will automatically be split into the appropriate number of documents. This is a mandatory condition that cannot be changed. Similarly, the posting will also be split into multiple documents if the order’s lines are to be shipped to different delivery addresses, and the shipping policy is set up to require a split.  
+    - Other options include **Deliver now** and **Picked**. If the order line is to be shipped partially and the **Deliver now** field on the order line contains a quantity, you would select **Deliver now**. If your organization's fulfillment flow includes picking as a separate process that is managed by and registered with a picking list, you would select **Picked**.  
+    - Check that the **Posting** option is set to **Yes**.  
+7. Set the **Print packing slip** option to **Yes**. The **Overview** tab contains a list of packing slips to be generated in this posting. If you are shipping an individual order, there will typically be one packing slip. However, if that order's lines are to be shipped from different sites, posting will automatically be split into the appropriate number of documents. This is a mandatory condition that cannot be changed. Similarly, the posting will also be split into multiple documents if the order’s lines are to be shipped to different delivery addresses, and the shipping policy is set up to require a split.  
 8. On the **Lines** tab, select the row for the order line to be shipped.
 9. In the **Update** field, enter a number lower than the original quantity.
 10. Select **OK**.
@@ -51,13 +50,12 @@ This topic explains how to update a sales order when products are shipped to the
 13. On the Action Pane, select **Options**.
 14. Select **Change view**.
 15. Select **Header view**.
-- If all of the lines on the order have been fully shipped, the order status changes from Open to Delivered.  
-- In this example, the order line has been shipped partially. This is why the the order status remains Open.     
-- The **Document status** field is set to Packing slip because at least one of the order lines have been shipped.  
+    - If all of the lines on the order have been fully shipped, the order status changes from Open to Delivered.  
+    - In this example, the order line has been shipped partially. This is why the the order status remains Open.     
+    - The **Document status** field is set to Packing slip because at least one of the order lines have been shipped.  
 16. On the Action Pane, select **General**.
 17. Select **Line quantity**.
 18. Close the page.
 19. On the Action Pane, select **Pick and pack**.
-20. Select **Packing slip**.
-- The **Packing slip journal** page contains all the packing slip documents that were generated for your order. You can review details of each document and print them, if you wish.  
+20. Select **Packing slip**. The **Packing slip journal** page contains all the packing slip documents that were generated for your order. You can review details of each document and print them, if you wish.  
 
