@@ -36,7 +36,7 @@ This article describes how to create a customized online navigation hierarchy to
 
 ## Overview
 
-Most online storefronts provide the ability for your customers to discover and browse products by navigating through product categories. This capability is typically provided by tabs at the top of the page or a left navigation bar. 
+Most online storefronts provide the ability for customers to discover and browse products by navigating through product categories. This capability is typically provided using tabs at the top of the page or a left navigation bar. 
 
 You create and manage the hierarchal structure of your category navigation and the products contained in those categories in back office. 
 
@@ -47,7 +47,7 @@ To create a retail channel navigation hierarchy, do the following.
 1. Go to **Retail > Products and categories > Category and product management**.
 1. Click **Category hierarchies**, then click **New**.
 1. Name the hierarchy.
- - The topmost category you create is the root category node and will not be displayed on your site. If you wish to create a category hierarchy that has a single top-level node on your site, create and name that category as a child of the root category. 
+    - The topmost category you create is the root category node and will not be displayed on your site. If you wish to create a category hierarchy that has a single top-level node on your site, create and name that category as a child of the root category. 
 1. Click **New category node** and name the category. 
 1. Continue creating sibling and child categories as needed.
 
@@ -79,24 +79,23 @@ To make your navigation hierarchy available to your online storefront, do the fo
 
 ## Display categories on your site
 
-To display your category hierarchy on your online storefront, you will add the Navigation menu module in the appropriate location within a template or fragment. See the [Creating templates](http://) and [Creating fragments](http://) help topics for more information. Provided that you have published your retail navigation hierarchy to the channel that your site is bound to, the Navigation menu module will display your navigation hierarchy. 
+To display your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location within a template or fragment. See [Creating templates](http://) and [Creating fragments](http://) for more information. Provided that you have published your retail navigation hierarchy to the channel that your site is bound to, the Navigation menu module will display your navigation hierarchy. 
 
 [!NOTE]
-The Navigation menu module that comes with the Store Starter Kit will only allow users to navigate to categories that do not have subcategories. If you would like your customers to be able to navigate to categories that contain subcategories, you will need to customize the Navigation menu module. 
+The navigation menu module that comes with the store starter kit will only allow users to navigate to categories that do not have subcategories. If you would like your customers to be able to navigate to categories that contain subcategories, you will need to customize the navigation menu module. 
 
 ## Customizing navigation options
 
-You can also add navigation options to your navigation menu that aren't part of your product category hierarchy in HQ. For instance, you can add a Contact us menu item at the end of the list of product categories which can point to a specific page on your site that you have built for this purpose. 
+You can also add navigation options to your navigation menu that aren't part of your product category hierarchy. For example, you can add a Contact Us menu item at the end of the list of product categories which can point to a specific page on your site that you have built for this purpose. 
 
-To add custom navigation options to your navigation menu:
+To add custom navigation options to your navigation menu, do the following.
 
-1. Select the navigation menu module within the template or fragment that you wish to customize
-2. In the property panel, click on the Data tab
-3. Click **+Add item** to create a new CMS nav item
-4. Provide link text and a URL
-5. Repeat steps 3 and 4 to add more custom menu items.
-
-When finished, save the fragment and check it in. 
+1. Select the navigation menu module within the template or fragment that you wish to customize.
+1. In the property panel, click the **Data** tab.
+1. Click **+Add item** to create a new CMS navigation item.
+1. Enter link text and a URL.
+1. Repeat steps 3 and 4 to add more custom menu items.
+1. When finished, save and check in the fragment. 
 
  
 
