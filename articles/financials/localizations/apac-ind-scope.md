@@ -106,7 +106,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 
 ## Indian localization: Key benefits
 
-- Configurable localization of [the Tax engine (GTE)](../general-ledger/tax-engine) and [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting) offers major benefits:
+- Configurable localization of [the Tax engine (GTE)](../general-ledger/tax-engine.md) and [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md) offers major benefits:
 
     - **Extensible transaction type** – A unified model is used in the tax calculation. The addition of transaction types requires additions only to the model mapping.
     - **Extensible tax calculation** – Formula-based calculation can be done by a power user.
