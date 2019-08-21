@@ -30,16 +30,17 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
+# Select page layouts
+
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
-
-# Select page layouts
 
 This article explains how to create and select page layouts.
 
 ## Create layouts for an existing page
 
-[!NOTE] To be able to create layouts, the page will need at least two modules under the main slot.
+[!NOTE]
+To be able to create layouts, the page will need at least two modules under the main slot.
 
 To create layouts for an existing page, do the following.
 
@@ -57,7 +58,8 @@ To create layouts for an existing page, do the following.
 
 ### Prerequisites
 
-[!NOTE] To select a different layout, the existing page must have been created using a template with more than one layout.
+[!NOTE]
+To select a different layout, the existing page must have been created using a template with more than one layout.
 
 Select a different layout for an existing page, do the following.
 
