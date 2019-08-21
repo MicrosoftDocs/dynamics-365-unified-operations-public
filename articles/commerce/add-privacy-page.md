@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a privacy policy page
-This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
-
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
+# Add a privacy policy page
+This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
 
 ## Overview
 
