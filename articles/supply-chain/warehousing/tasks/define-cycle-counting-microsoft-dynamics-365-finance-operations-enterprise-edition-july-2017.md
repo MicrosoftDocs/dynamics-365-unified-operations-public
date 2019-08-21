@@ -36,9 +36,7 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 ## Set the priority of counting work
 1. In the **Navigation pane**, go to **Modules > Warehouse management > Setup > Warehouse management parameters**.
 2. Click the **Cycle counting** tab.
-3. In the **Default cycle count work priority** field, enter a number.
-    
-    This step changes the priority of cycle counting work compared to other types of work in the warehouse. By entering a number that is lower than the number for other types of work, you raise the priority of the cycle counting work.  
+3. In the **Default cycle count work priority** field, enter a number. This step changes the priority of cycle counting work compared to other types of work in the warehouse. By entering a number that is lower than the number for other types of work, you raise the priority of the cycle counting work.  
 4. Click **Save**.
 5. Close the page.
 
@@ -48,15 +46,9 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 3. In the **Menu item name** field, type a value.
 4. In the **Title** field, type a value.
 5. In the **Mode** field, select 'Work'.
-6. Set the **Use existing work** option to Yes.
-    
-    When you set this option to Yes, the system will look for existing work when the mobile device menu item is used.  
-7. In the **Directed by** field, select 'System directed'.
-    
-    When "System directed" is selected, the warehouse worker will be directed to open work that is in defined work classes. (We will create these work classes next.)  
-8. Expand the **Work classes** fastTab.
-    
-    Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
+6. Set the **Use existing work** option to Yes. When you set this option to Yes, the system will look for existing work when the mobile device menu item is used.  
+7. In the **Directed by** field, select 'System directed'. When "System directed" is selected, the warehouse worker will be directed to open work that is in defined work classes. (We will create these work classes next.)  
+8. Expand the **Work classes** fastTab. Next, we will create two work classes that will be used with this mobile device menu item. When the menu item is used, these work classes will be queried, and the work that has the highest priority will be shown to the user.  
 9. Click **New**.
 10. In the**Work class ID** field, select a value.
 11. Click **New**.
@@ -94,14 +86,10 @@ Cycle counting is a warehouse process that you can use to audit on-hand inventor
 8. In the list, mark the selected row.
 9. In the **Criteria** field, select a value.
 10. Click **OK**.
-11. In the **Days between cycle counting** field, enter a number.
-    
-    For example, if the **Days between cycle counting** field is set to 5, cycle counting work will be created every five days. However, if cycle counting work is processed on day three, the next cycle counting work will be created five days after the last cycle counting was processed, on day 8.  
+11. In the **Days between cycle counting** field, enter a number. For example, if the **Days between cycle counting** field is set to 5, cycle counting work will be created every five days. However, if cycle counting work is processed on day three, the next cycle counting work will be created five days after the last cycle counting was processed, on day 8.  
 12. Click **Save**.
 13. Click **New**.
-14. In the **Sequence number** field, enter a number.
-    
-    The sort is from the smallest number to the largest number. The value must be more than 0 (zero).  
+14. In the **Sequence number** field, enter a number. The sort is from the smallest number to the largest number. The value must be more than 0 (zero).  
 15. In the list, mark the selected row.
 16. In the **Description** field, type a value.
 17. Click **Save**.
