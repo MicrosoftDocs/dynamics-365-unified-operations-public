@@ -26,27 +26,25 @@ Refer to the below screenshot for more details:
 
 
 
+## Product details page - buy box configuration  
 
+On product details page, rating summary is showed below the product title at the top of page. Rating summary also can be a link to reviews section on the product details page. To make rating summary as a link to reviews list, use the following steps:  
 
-## Product details - buy box configuration  
+1. Go to product details page template that you have created for your e-Commerce website. 
+2. Go to Buy box container module settings
+3. Choose Product ratings module under Buy box, then check "Link the click to full reviews module"
 
-On product details page, rating summary is showed below the product title. Rating summary also can be a link to reviews section on the product details page. To make rating summary as a link to reviews list, use the following steps:  
-
-	1. Go to product details page template 
-	2. Go to Buy box container module settings
-	3. Choose Product ratings module under Buy box, then check "Link the click to full reviews module"
-	
 
 Refer to the below screenshot for more details:
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-buy-box-rating-summary.png)
 
-## Ratings and review on product details page (PDP) 
+## Ratings histogram and reviews list on product details page (PDP) 
 
 Ratings summary is showed across the sites in the products placement lists, category lists, and search results etc. Ratings summary along with review list will be showed on product details page, also allows consumers to submit a rating and review on a product on product details pages.  There are multiple modules those needs to be configure to show ratings summary, write review, and reviews list on product details page as follows:
 
-	1. Write review module 
-	2. Product reviews list module 
-	3. Ratings histogram  module 
+1. Write review module. 
+2. Product reviews list module. 
+3. Ratings histogram module.
 
 Refer to the below screenshot for more details on how the ratings and reviews modules are structured on product details page :
 
