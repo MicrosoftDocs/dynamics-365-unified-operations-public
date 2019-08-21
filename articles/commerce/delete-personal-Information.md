@@ -56,10 +56,9 @@ In Dynamics 365 Commerce, when a content item is selected (page, template, video
 
 To pull a list or remove all of the references to the DSR user's username in Dynamics 365 Commerce history logs, do the following. 
 
-1. Go to the Main Menu and select **GDPR**. 
-1. Enter the username to be searched.
-1. If removing references to the username, enter the replacement string to be used to anonymize the username.
-1. Select the **Run Tool** action
+1. Go to **GDPR** and enter the username to be searched.
+1. If removing references to the username, enter a replacement string that will anonymize the username.
+1. Select **Run Tool**.
 
 A list of all found instances can be saved once the operation is completed.
 
