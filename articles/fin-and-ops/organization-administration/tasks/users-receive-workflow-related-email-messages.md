@@ -35,9 +35,7 @@ You can configure the system to send email messages to users when workflow-relat
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.
 2. In the list, find and select the desired record.
 3. On the **Action pane**, click **User options**.
-4. Click the **Workflow** tab.
-    
-    Make sure that the **Notifications** section is expanded. In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.  
+4. Click the **Workflow** tab. Make sure that the **Notifications** section is expanded. In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.  
 5. In the **Line-item workflow notification type** field, select an option.
     - Grouped – Notifications for line items are grouped into a single email message.
     - Individual – An email message is sent for each line item.  
