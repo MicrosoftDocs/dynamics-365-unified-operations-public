@@ -94,3 +94,8 @@ In the screenshot below, **Type** has been added, and the most detailed calculat
 - In the **Probability %** column, if you add all percentages for the combination of **Object** / **Object type** / **Fault symptom** on an object, they each add up to 100%. Probability is based on the combination of **Fault symptom**, **Fault area**, and **Fault type** in this fault control calculation. If you have a large number of lines on an object, but a large percentage stands out on a line, that would be an indication of a fault type to examine more closely to find a way to limit the number of registrations on that fault type.
 
 ![Figure 5](media/14-controlling-and-reporting.png)
+
+
+>[!NOTE]
+>For an overview of all fault registrations created on work orders and maintenance requests, click **Asset management** > **Inquiries** > **Asset fault** > **Asset faults**. On the **Asset faults** page, select an asset fault registration and expand the **Related information** pane to see information on the related work order or maintenance request.
+
