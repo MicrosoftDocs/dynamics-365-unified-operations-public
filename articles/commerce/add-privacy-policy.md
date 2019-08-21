@@ -100,19 +100,12 @@ To add a link to a footer fragment, do the following.
 1. Click the **Fragments** tab.
 1. Click **New Page Fragment**.
 1. Select the **Footer** module and enter a name under **Page Fragment Name**.
-1. Under the **sub footer** slot, add a 'sub footer' module.
-1. Click **Add Data Source** in the sub footer properties panel and select **Links**.
-1. Add the **Link Text** to set the label text of the link; and set the **Url of content** to the URL of the Privacy Page created.
-  - **Note:** Navigate to the Privacy Page created in the **Pages** section and reference the URL from the Page Properties panel.
-1. Save the fragment, Check-in, and then publish.
+1. Under the **sub footer** slot, add a sub footer module.
+1. Click **Add Data Source** in the properties panel and select **Links**.
+1. Enter the label text of the link into the **Link Text** field.
+1. Enter the privacy page URL into the **Url of content** field.
+  - To obtain the URL for the privacy page, go to the privacy page created in the **Pages** section and copy the URL from the properties panel.
+1. Save the fragment, check it in, and then publish.
 1. Preview the fragment and test the link to the privacy policy page.
-1. This fragment can now be referenced in a template for other site pages. Referencing this fragment in the footer module of the template will include the link reference in any pages built with the template.
 
-### Summary
-
-This is a very basic example of how a Privacy Page can be created and easily referenced across site pages. The e-Commerce Authoring Tools can be utilized to build reference pages such as a Privacy Page as full featured as needed for your company.
-
-## Additional References
-
-- [GDPR: Rights of the data subject](https://gdpr.eu/tag/chapter-3/)
-
+This fragment can now be referenced in a template for other site pages. Referencing this fragment in the footer module of the template will include the link reference in any pages built with the template.
