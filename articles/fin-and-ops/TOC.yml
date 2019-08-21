@@ -3628,6 +3628,12 @@
         href: ../supply-chain/asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
       - name: Calculate capacity load on scheduled work orders
         href: ../supply-chain/asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+    - name: Consumption
+      items: 
+      - name: Register consumption
+        href: ../supply-chain/asset-management/consumption/register-consumption.md
+      - name: Create consumption reports
+        href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
     - name: Warranty
       items: 
       - name: Warranty agreement
