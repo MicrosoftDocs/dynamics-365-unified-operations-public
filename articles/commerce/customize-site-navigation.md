@@ -59,8 +59,8 @@ By default, the categories you define will be displayed in alphabetical order on
 
 ## Assign a category hierarchy type
 
-1. Go to **Retail > Products and categories > Category and product management > Category hierarchies.
-1. Click **Associate hierarchy type** below **SET UP** in the top menu.
+1. Go to **Retail > Products and categories > Category and product management > Category hierarchies**.
+1. Under **SET UP** in the top menu, click **Associate hierarchy type**.
 1. Click **New**.
 1. In the dropdown in the **Category hierarchy type** column, select **Retail channel navigation hierarchy**.
 1. In the dropdown in the **Category hierarchy** column, select the channel navigation hierarchy you just created.
