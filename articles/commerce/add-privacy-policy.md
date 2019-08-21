@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a privacy policy
+title: Add a privacy policy page
 description: This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
 author: brshoo
 manager: annbe
@@ -29,8 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a privacy policy
-
+# Add a privacy policy page
 This topic describes how to add a privacy policy page to your site in Dynamics 365 Commerce.
 
 ## Overview
@@ -92,19 +91,22 @@ To publish the URL for the privacy page, do the following.
 1. In the URLs list, find and select the privacy page URL.
 1. Publish the selected URL for the privacy page.
 
-### Create a link to the privacy page
+### Create a link to the privacy page in a footer
 
-A reference page such as a privacy page can be created in a page fragment and easily utilized or updated across multiple sites using the fragment. For this example, we will use a footer fragment to link to the privacy page created.
+A link to the privacy page can be added to a fragment and then shared and updated across multiple site pages by referencing the fragment. For this example, we will add a link to the privacy page to a footer fragment.
 
-1. Navigate to the Fragments section on the navigation pane.
-1. Select 'New Page Fragment', choosing the 'Footer' module and providing a fragment name.
+To add a link to a footer fragment, do the following.
+
+1. Click the **Fragments** tab.
+1. Click **New Page Fragment**.
+1. Select the **Footer** module and enter a name under **Page Fragment Name**.
 1. Under the **sub footer** slot, add a 'sub footer' module.
-1. Click 'Add Data Source' in the Sub footer Properties panel and choose 'Links'.
+1. Click **Add Data Source** in the sub footer properties panel and select **Links**.
 1. Add the **Link Text** to set the label text of the link; and set the **Url of content** to the URL of the Privacy Page created.
   - **Note:** Navigate to the Privacy Page created in the **Pages** section and reference the URL from the Page Properties panel.
 1. Save the fragment, Check-in, and then publish.
-1. Preview the fragment and test the link to the Privacy Policy page.
-1. This fragment can now be referenced in a Master Template for other site pages. Referencing this fragment in the footer module of the Master Template will include the link reference in any pages built with the Master Template.
+1. Preview the fragment and test the link to the privacy policy page.
+1. This fragment can now be referenced in a template for other site pages. Referencing this fragment in the footer module of the template will include the link reference in any pages built with the template.
 
 ### Summary
 
