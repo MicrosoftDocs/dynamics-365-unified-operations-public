@@ -46,8 +46,7 @@ This topic explains how to perform nonconformance management, based on an existi
 
 ## Approve/reject a nonconformance
 1. Select **Functions**.
-2. Select **Approve non conformance**.
-- For this example, approve the nonconformance. Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this topic, the processing of correction handling.  
+2. Select **Approve non conformance**. For this example, approve the nonconformance. Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this topic, the processing of correction handling.  
 3. Select **Yes**.
 
 ## Create a correction action
@@ -55,11 +54,9 @@ This topic explains how to perform nonconformance management, based on an existi
 2. Select **New**.
 3. In the **Personnel number** field of the new row, select the desired record from the drop down menu.
 4. Click **Select**.
-5. Select **Attach**.
-- Create a note about the correction. For this example, the action is to contact the vendor to discuss the nonconformance case.  
+5. Select **Attach**. Create a note about the correction. For this example, the action is to contact the vendor to discuss the nonconformance case.  
 6. Select **New**.
-7. Select **Note**.
-- Depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.  
+7. Select **Note**. Depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.  
 8. In the **Description** field, type a value.
 9. Close the page.
 
