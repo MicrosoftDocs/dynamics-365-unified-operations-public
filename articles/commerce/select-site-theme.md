@@ -35,9 +35,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic shows you how to set or change your site's theme.
 
+## Overview
+
 Your site's layout and style (fonts, sizes, colors, etc.) is defined by the theme you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](http://). See [Create a new theme](http://) for more information on building and deploying themes.
 
 When you create a new site, it is configured with a theme called Fabrikam which is provided as part of the starter kit. After you have deployed additional themes for your site, you can configure the site to use one of those themes. 
+
+## Change the site theme
 
 To change the theme that is applied to your site, do the following.
 
