@@ -73,25 +73,23 @@ Another way of making a cost calculation is to multi-select assets in **All asse
 
 ## Work order date control
 
-Use this form to get an overview of expected start and end dates compared to actual start and end dates on work orders. Select a period for the calculation, then select the information you want to display by selecting the check boxes in the **Group by** section, and click **Calculate**.
+Use this page to get an overview of expected start and end dates compared to actual start and end dates on work orders. Select a period for the calculation, then select the information you want to display by selecting the check boxes in the **Group by** section, and click **Calculate**.
 
-1. Click **Enterprise asset management** > **Inquiries** > **Work orders** > **Work order date control**.
+1. Click **Asset management** > **Inquiries** > **Work orders** > **Work order date control**.
 
-2. Click **Edit**.
+2. Click **Calculate**.
 
 3. Select a functional location in the **Functional location** field.
 
 4. Insert the period for which you want to make the calculation in the **From date** and **To date** fields. All work orders with expected start within the period will be included.
 
-5. In the **Group by** section, select which information you want to include in the calculation by selecting the relevant check boxes.
+5. Click **OK**.
 
-6. Click **Calculate**.
+6. In the **Group by** section, select which information you want to include in the calculation by selecting the relevant check boxes.
 
 7. After you have made the calculation, if you select or clear check boxes in the **Group by** section, click the **Calculate** button again to update the calculation.
 
-The figure below shows a screenshot of the interface.
-
-![Figure 5](media/05-controlling-and-reporting.png)
+![Figure 3](media/03-controlling-and-reporting.png)
 
 - The **Avg. start delay** field shows the difference in days between scheduled start date for a work order compared to actual start date. If, for example, the actual start date was two days before the scheduled start date, "-2" will be displayed in this field.  
 - The **Avg. end delay** field shows the difference in days between scheduled end date for a work order compared to actual end date. If, for example, the actual end date was three days after the scheduled end date, "3" will be displayed in this field.  
