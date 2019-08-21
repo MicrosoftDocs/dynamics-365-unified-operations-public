@@ -66,11 +66,9 @@ When creating new pages, you are not required to specify a page URL. If you leav
 
 To manually create the URL, do the following.
 
-1. Click the **URLs** tab.
-1. Click **New**.
-1. Under Select a Page, click on the site page to be associated with the URL.
-1. Under URL, enter the URL slug.
-1. Click **OK**.
+1. Go to **URLs /> New**.
+1. Click on the site page to be associated with the URL.
+1. Enter the URL slug and click **OK**.
 
 The URL will now be in a draft state, and must be published before site users can access the associated page. 
 
@@ -78,12 +76,10 @@ The URL will now be in a draft state, and must be published before site users ca
 
 To update the target page of a page URL, do the following.
 
-1. Click the **URLs** tab.
-1. Select the URL you want to update.
+1. Go to **URLs** and select the URL you want to update.
 1. In the property panel at right, click on the ellipsis next to the target page field.
-1. In the Select a Page dialog box, select a different page and click **OK**.
-1. Click **Save**.
-1. Click **Publish**.
+1. In the dialog box, select a different page and click **OK**.
+1. Save and then publish the URL.
 
 ## Redirect a page URL
 
@@ -91,8 +87,7 @@ If you want your customers to view a different page when they request a certain 
 
 To redirect a URL to a new URL, do the following.
 
-1. Click the **URLs** tab.
-1. Select the URL you want to update.
+1. Go to **URLs** and select the URL you want to update.
 1. In the property panel at right, select **Redirect**.
 1. Choose a destination for the redirect:
    - To point to another page on your site, select **Internal URL**, click on the ellipsis and select the URL you want to redirect to.
@@ -100,8 +95,7 @@ To redirect a URL to a new URL, do the following.
 1. Choose a redirect type:
    - Choose **Permanent redirect (301)** when you know your content is moving permanently and will not revert to its previous URL again. Search engines will assign the SEO value of the redirecting URL to the URL being redirected to and will update their record to show the new URL. 
    - Choose **Temporary redirect (302)** if you want to redirect traffic without updating search engines. This usually makes sense if the URL will revert to the original content at some point in the near future. 
-1. Click **Save**.
-1. Click **Publish** when ready to implement the redirect. 
+1. Save and publish when ready to implement the redirect. 
 
  
 
