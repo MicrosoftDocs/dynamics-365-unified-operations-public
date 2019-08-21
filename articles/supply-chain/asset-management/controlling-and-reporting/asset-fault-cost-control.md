@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Object fault cost control
-description: This topic explains object fault cost control in Enterprise Asset Management.
+title: Asset fault cost control
+description: This topic explains asset fault cost control in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,21 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object fault cost control
+# Asset fault cost control
 
-This topic explains object fault cost control in Enterprise Asset Management. In Enterprise Asset Management, you can calculate costs on object fault registrations to get an overview of actual costs compared to budget costs on faults. Actual costs are based on posted transactions. The date is the fault date on which the symptom was recorded.
+In Asset Management, you can calculate costs on asset fault registrations to get an overview of actual costs compared to budget costs on faults. Actual costs are based on posted transactions. The date is the fault date on which the symptom was recorded.
 
-1. Click **Enterprise asset management** > **Inquiries** > **Object fault** > **Object fault cost control**.
+1. Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault cost control**.
 
-2. Click **Object fault cost control** > **Calculate cost**.
+2. In the **Asset fault cost control** drop-down, select a financial dimension set to be included in the calculation, if required.
 
-3. In the **Object fault cost control** drop-down, select a financial dimension set to be included in the calculation, if required.
+4. Select "Yes" on the **Skip zero** toggle button if you don't want to show results with a cost of zero.
 
-4. Select the **Skip zero** check box if you do not want to show results with a cost of zero.
+5. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location  hierarchy, all object fault cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object fault cost control lines on all the functional location level to which they are related.
 
-5. If you want to limit the search, you can select specific objects, fault dates, or fault causes on the **Records to include** FastTab.
-
-6. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location  hierarchy, all object fault cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object fault cost control lines on all the functional location level to which they are related.
+6. If you want to limit the search, you can select specific assets, fault dates, and fault causes on the **Records to include** FastTab.
 
 7. Click **OK** to start the calculation.
 
