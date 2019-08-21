@@ -1,6 +1,41 @@
+---
+# required metadata
+
+title: Select page layouts
+description: This article explains how to create and select page layouts.
+author: psimolin
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope:  Operations, Retail, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: psimolin
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 # Select page layouts
 
-This article explains the steps required to create and select layouts
+This article explains how to create and select page layouts.
 
 ## Creating layouts for existing web page
 
