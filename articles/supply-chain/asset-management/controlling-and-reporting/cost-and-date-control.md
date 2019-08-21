@@ -44,15 +44,15 @@ The calculations made for assets, functional locations, and work orders are almo
 
 3. If required, select a financial dimension set to be included in the calculation.
 
-4. Select the **Skip zero** check box if you do not want to show results with a cost of zero.
+4. Select "Yes" on the **Skip zero** toggle button if you don't want to show results with a cost of zero.
 
 5. You can use the **Level** field to indicate how detailed you want the cost control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all cost control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all cost control lines on all the functional location level to which they are related.
 
-6. Select "Yes" in the **Show open committed cost** check box if you want to include that column in the calculation.
+6. Select "Yes" on the **Show open committed cost** toggle button if you want to include that column in the calculation.
 
-7. Select "Yes" in the **Include sub objects** check box to show costs related to child objects as separate lines.
+7. Select "Yes" on the **Include sub assets** toggle button to show costs related to sub assets as separate lines.
 
-8. If you want to limit the search, you can select specific objects / functional locations / work orders on the **Records to include** FastTab.
+8. If you want to limit the search, you can select specific assets / functional locations / work orders on the **Records to include** FastTab.
 
 9. Click **OK** to start the calculation.
 
@@ -60,13 +60,13 @@ The figure below shows an example of the **asset cost control** dialog.
 
 ![Figure 1](media/01-controlling-and-reporting.png)
 
-11. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted in orange color. Click on a button to activate or deactivate it.
+11. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane group buttons are highlighted. Click on a button to activate or deactivate it.
 
-The figure below shows an example of calculation results in **Asset cost control"".
+The figure below shows an example of calculation results in **Asset cost control**.
 
 ![Figure 2](media/02-controlling-and-reporting.png)
 
-Another way of making a cost calculation is to multi-select objects in **All objects** or **Active objects** grid view. Then, you click the **Cost control** button > **Cost control** > **Calculate cost**, and you will see that the selected objects are automatically inserted in the **Object** field on the **Records to include** FastTab. Click **OK** in the **Object cost control** drop-down, and a cost calculation for the selected objects is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in the **All work orders** or **Active work orders**.
+Another way of making a cost calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Cost control** button on the **General** tab. In the **Asset cost control** dialog, the selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK**, and a cost calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in the **All work orders** or **Active work orders**.
 
 >[!NOTE]
 >The **Original budget** field shows budget costs from the work order forecast. The **Committed cost** field shows the total amount of expenses that a legal entity has committed itself to pay. The **Open committed cost** field shows commitments to pay for items, hours, and services you have ordered or received but not yet paid for. When all consumption registrations have been posted, the related costs are included in the **Actual cost** field.
