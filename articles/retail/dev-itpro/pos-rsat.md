@@ -339,3 +339,5 @@ The user must manually delete these files and secure it if required. All the abo
 3. Don’t record any scenario which includes secrets.
 
 4. Recording and playback must be done in the same screen layout and resolution. If recording and playback done in different layout and resolution, then playback will fail.
+
+5. Once recorded, you will not be able to change the POS username during playback. Always record using the right username which will be later used for playback.
