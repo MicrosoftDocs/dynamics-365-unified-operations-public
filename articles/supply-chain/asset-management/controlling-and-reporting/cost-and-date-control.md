@@ -73,7 +73,7 @@ Another way of making a cost calculation is to multi-select assets in **All asse
 
 ## Work order date control
 
-Use this page to get an overview of expected start and end dates compared to actual start and end dates on work orders. Select a period for the calculation, then select the information you want to display by selecting the check boxes in the **Group by** section, and click **Calculate**.
+Use this page to get an overview of expected start and end dates compared to actual start and end dates on work orders.
 
 1. Click **Asset management** > **Inquiries** > **Work orders** > **Work order date control**.
 
