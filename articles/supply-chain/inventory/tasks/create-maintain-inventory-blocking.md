@@ -37,27 +37,16 @@ This procedure shows how to prevent physical on-hand inventory from being reserv
 1. In the **Navigation pane**, go to **Modules > Inventory management > Periodic tasks > Inventory blocking**.
 2. Click **New**.
 3. In the **Item number** field, click the drop-down button to open the lookup.
-4. In the list, select the item you want to choose. 
-    
-    Select an item number with physical on-hand inventory that you want to block. If you’re using USMF you can select item M9201.  
-5. In the **Quantity** field, enter a number.
-    
-    If you’re using item M9201, you need to select less than 200.
-    
+4. In the list, select the item you want to choose. Select an item number with physical on-hand inventory that you want to block. If you’re using USMF you can select item M9201.  
+5. In the **Quantity** field, enter a number. If you’re using item M9201, you need to select less than 200.
 6. Expand the **Inventory dimensions** fastTab.
 7. In the **Warehouse** field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record.
-    
-    If you’re using item M9201, you can select warehouse 51.  
+8. In the list, find and select the desired record. If you’re using item M9201, you can select warehouse 51.  
 9. Click **Save**.
 
 ## Update the conditions of the inventory blocking
-1. In the **General** fastTab, in the **Quantity** field, enter a number.
-    
-    Update the inventory quantity field to reflect the quantity to block.  
-2. In the **Expected date** field, enter a date.
-    
-    You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date. If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.  
+1. In the **General** fastTab, in the **Quantity** field, enter a number. Update the inventory quantity field to reflect the quantity to block.  
+2. In the **Expected date** field, enter a date. You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date. If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.  
 3. Click **Save**.
 
 ## Remove the inventory blocking
