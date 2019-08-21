@@ -146,10 +146,12 @@ The Retail hardware station installer first extracts the associated files and th
     > - The installer automatically enters the host name. If, for any reason, you must change the host name for the installation, you can change it here. The host name must be the fully-qualified domain name (FQDN) of the system, and it must be entered in the **Host name** field for the selected hardware station entry.
 
 6. The installer installs Retail hardware station and then indicates whether the installation was successful.
-7. When the installation is completed, the Install merchant information tool starts. This installer connects to the environment and installs the merchant account information (such as the EFT ID) for the selected hardware station.
+7. When the installation is completed, the Install merchant information tool may start. This installer connects to the environment and installs the merchant account information (such as the EFT ID) for the selected hardware station.
 
     > [!NOTE]
-    > If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
+    > - If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
+    
+    > - For version 10.0.6 and above, the Install merchant information tool is no longer used. Instead, the merchant information is retrieved by the POS at the time of login. If the retail server is not available at the time of login, the last known merchant properties will be used by until the connetion to the retail server is re-established and the MPOS goes through a log out, log in cycle. After 10.0.6, all retrieval of merchant properties is transparent to the user experience and no longer included in the install experience. 
 
 8. The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
