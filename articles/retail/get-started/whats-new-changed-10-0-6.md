@@ -47,6 +47,9 @@ To learn about the features in Microsoft Dynamics 365 for Finance and Operations
 
 Additionally, new tables have been added for tracking available ecommerce inventory in the channel database.  Retail and Retail Shared parameters will be made available that must be configured to uptake these new API's and tables turn off the existing expensive e-commerce inventory availability logic that existed in previous versions.
 
+### Install merchant properties deprecated from the Hardware station installer
+To better support future enhancements to headless installation, the merchant properties installer has been removed from the Hardware station installation experience. New for 10.0.6, the hardware station merchant properties will be set at runtime when the POS is paired to a hardware station and updated when the hardware station is made active, if needed. If both the POS and hardware station are not updated to 10.0.6 at the same time, the setting and updating of merchant properties by POS will not function correctly. This means that if the POS is updated, but not the hardware station, then the hardware station will continue to use old merchant properties until it is updated as well. 
+
 ## Feature name
   
 Description
