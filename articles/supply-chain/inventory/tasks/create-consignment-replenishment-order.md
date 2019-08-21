@@ -40,13 +40,11 @@ This topic explains how to create a consignment replenishment order where you ca
 5. Select **Add line**.
 6. In the **Item number** field, type `M9211CI` (you must select an item that is set up for consignment inventory).
 7. In the **Quantity** field, enter a number.
-8. In the **Requested delivery date** field, enter a date.
-- The requested and confirmed dates are used by the MRP engine for the expected arrival of the goods.  
+8. In the **Requested delivery date** field, enter a date. The requested and confirmed dates are used by the MRP engine for the expected arrival of the goods.  
 9. In the **Confirmed delivery date** field, enter a date.
 10. Expand the **Line details** section.
 11. Select the **Inventory dimensions** tab.
-12. To show the owner in the **Inventory dimensions owner** field, refresh the page.
-- Vendor US-104 is now listed as the owner.  
+12. To show the owner in the **Inventory dimensions owner** field, refresh the page. Vendor US-104 is now listed as the owner.  
 
 ## Check the inventory transaction status
 1. Select **Inventory**.
@@ -63,7 +61,6 @@ This topic explains how to create a consignment replenishment order where you ca
 ## Check the on-hand inventory
 1. Select **Inventory**.
 2. Select **On-hand**.
-3. Select **Overview**.
-- The items that have been received as consignment inventory owned by the vendor are available on-hand. The remaining quantity on the consignment replenishment order is shown in the **Ordered in total** field.  
+3. Select **Overview**. The items that have been received as consignment inventory owned by the vendor are available on-hand. The remaining quantity on the consignment replenishment order is shown in the **Ordered in total** field.  
 4. Close the page.
 
