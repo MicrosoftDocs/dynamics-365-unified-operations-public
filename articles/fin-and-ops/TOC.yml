@@ -3618,6 +3618,12 @@
         href: ../supply-chain/asset-management/capacity-planning/calculate-capacity-load.md
       - name: Calculate item forecast
         href: ../supply-chain/asset-management/capacity-planning/calculate-item-forecast.md
+    - name: Consumption
+      items: 
+      - name: Register consumption
+        href: ../supply-chain/asset-management/consumption/register-consumption.md
+      - name: Create consumption reports
+        href: ../supply-chain/asset-management/consumption/create-consumption-reports.md
     - name: Warranty
       items: 
       - name: Warranty agreement
