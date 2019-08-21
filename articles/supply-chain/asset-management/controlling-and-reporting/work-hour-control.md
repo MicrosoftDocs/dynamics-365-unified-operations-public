@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work hour control
-description: This topic explains work hour control in Enterprise Asset Management.
+description: This topic explains work hour control in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Work hour control
 
-This topic explains work hour control in Enterprise Asset Management. In Enterprise Asset Management, you can calculate hours to get an overview of actual hours compared to budget hours on objects, functional locations, or work orders. Actual hours are based on posted transactions.
+In Asset Management, you can calculate hours to get an overview of actual hours compared to budget hours on assets, functional locations, or work orders. Actual hours are based on posted transactions.
 
-## Work hour control for objects, functional locations, and work orders
+## Work hour control for assets, functional locations, and work orders
 
-The calculations made for objects, functional locations, and work orders are almost identical. Only difference is that for objects and functional locations, you can also include sub objects and sub locations in your calculation. The date is the transaction date when the registration was recorded.
+The calculations made for assets, functional locations, and work orders are almost identical. Only difference is that for assets and functional locations, you can also include sub assets and sub locations in your calculation. The date is the transaction date when the registration was recorded.
 
-1. Click **Enterprise asset management** > **Inquiries** > **Objects** > **Object hour control** or **Functional location hour control**, or **Enterprise asset management** > **Inquiries** > **Work orders** > **Work order hour control**.
+1. Click **Asset management** > **Inquiries** > **Objects** > **Object hour control** or **Functional location hour control**, or **Enterprise asset management** > **Inquiries** > **Work orders** > **Work order hour control**.
 
 2. Click **Hour control** > **Calculate hours**.
 
