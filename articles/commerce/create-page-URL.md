@@ -58,7 +58,8 @@ There are two ways to create page URLs:
 
 If you provide a name in the URL field when you create a new page, a page URL will automatically be created for you in the URLs page that will point to the page you are creating. When you publish the URL and the page it references, your customers can then access the page associated with that URL. 
 
-[!NOTE] NOTE: If you publish a URL without publishing the page it points to, site users will receive a 404 error when trying to access the page. Conversely, if you publish a page without publishing its corresponding URL, the page will not be accessible using a URL on your site.
+[!NOTE]
+NOTE: If you publish a URL without publishing the page it points to, site users will receive a 404 error when trying to access the page. Conversely, if you publish a page without publishing its corresponding URL, the page will not be accessible using a URL on your site.
 
 ### Create a page URL manually
 
