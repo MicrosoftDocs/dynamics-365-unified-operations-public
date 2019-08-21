@@ -1920,6 +1920,8 @@
       - name: India
         href: ../financials/localizations/india.md
         items:
+        - name: Scope of the Indian localizations
+          href: ../financials/localizations/apac-ind-scope.md
         - name: Fixed assets
           href: ../financials/localizations/apac-ind-fixed-assets.md
           items:
