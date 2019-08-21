@@ -1,19 +1,30 @@
 # Overview
-Ratings and Reviews on eCommerce website helps consumers (C2) directly to understand how a product is perceived by fellow consumers and make a purchase decision. eCommerce website is also a primary source for receiving ratings and reviews on a product. This document explains how to configure your eCommerce website and pages to show ratings and reviews.
+Ratings and Reviews on e-Commerce website helps consumers (C2) directly to understand how a product is perceived by fellow consumers and make a purchase decision. E-Commerce website is also a primary source for receiving feedback from end users in the form of ratings and reviews on a product. This document explains how to configure your e-Commerce website and pages to show ratings and reviews as follows:
 
-## Site configuration  
+1. E-Commerce site configuration.
+2. Product details page - buy box configuration.
+3. Ratings histogram and reviews list on product details page (PDP). 
+4. Privacy and policy link configuration.
 
-There are some values like Ratings and Reviews Service endpoint, review text length etc. are configured at site level. The following explains on how to configure those values. 
 
-	1. Go to ….. Tool
-	2. Got to Site Setting 
-	3. Configure Ratings and Reviews Service endpoint as https://<tenanteID>.rnr.ms/
-	4. Configure Review text length value (maximum 1000 characters) 
-	5. Configure Review Title max length (maximum 55 characters) 
+## E-Commerce site configuration  
+
+Ratings and reviews configuration values like tenantId, review text length etc. are configured at site level. The following steps explains on how to configure those values. 
+
+1. Go to e-Commerce authoring tool.
+2. On the home page, under sites list, click on your site name. 
+3. On the left navigation menu, click on Site management, and then click on App settings in the left navigation. 
+3. Configure tenantID e.g. d247ff89-1bb8-42bf-955e-a731fbc57c75, which you can find in your D365 LCS settings. 
+4. Configure Review text length value (maximum 1000 characters). 
+5. Configure Review Title max length (maximum 55 characters). 
+6. Click "Save and Publish" link at the top to publish your site configurations. 
+
 
 Refer to the below screenshot for more details:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-site-appsettings.png)
+
+
 
 
 
