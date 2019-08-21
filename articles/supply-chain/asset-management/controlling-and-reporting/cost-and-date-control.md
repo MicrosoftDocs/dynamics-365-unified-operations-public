@@ -66,7 +66,7 @@ The figure below shows an example of calculation results in **Asset cost control
 
 ![Figure 2](media/02-controlling-and-reporting.png)
 
-Another way of making a cost calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Cost control** button on the **General** tab. In the **Asset cost control** dialog, the selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK**, and a cost calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in the **All work orders** or **Active work orders**.
+Another way of making a cost calculation is to multi-select assets in **All assets** or **Active assets**. Then, you click the **Cost control** button on the **General** tab. In the **Asset cost control** dialog, the selected assets are automatically inserted in the **Asset** field on the **Records to include** FastTab. Click **OK**, and a cost calculation for the selected assets is shown. The same procedure can be done for functional locations in **All functional locations** or **Active functional locations**, and for work orders in **All work orders** or **Active work orders**.
 
 >[!NOTE]
 >The **Original budget** field shows budget costs from the work order forecast. The **Committed cost** field shows the total amount of expenses that a legal entity has committed itself to pay. The **Open committed cost** field shows commitments to pay for items, hours, and services you have ordered or received but not yet paid for. When all consumption registrations have been posted, the related costs are included in the **Actual cost** field.
