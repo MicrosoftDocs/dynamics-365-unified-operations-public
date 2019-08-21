@@ -66,7 +66,7 @@ When creating new pages, you are not required to specify a page URL. If you leav
 
 To manually create the URL, do the following.
 
-1. Go to **URLs /> New**.
+1. Go to **URLs > New**.
 1. Click on the site page to be associated with the URL.
 1. Enter the URL slug and click **OK**.
 
