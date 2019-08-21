@@ -34,8 +34,7 @@ This topic explains how to grant workers permission to prepare purchase requisit
 
 
 ## Grant permission to enter purchase requisitions on behalf of another worker
-1. In the navigation pane, go to **Modules > Procurement and sourcing > Setup > Policies > Purchase requisition permissions**.
-- Make sure that the **Current view** field is set to **By preparer**. The list in the left pane shows the people who can be granted permission to prepare requisitions on behalf of other people.  
+1. In the navigation pane, go to **Modules > Procurement and sourcing > Setup > Policies > Purchase requisition permissions**. Make sure that the **Current view** field is set to **By preparer**. The list in the left pane shows the people who can be granted permission to prepare requisitions on behalf of other people.  
 2. Select the person to grant permission to (the preparer).
 3. Select **Add**.
 4. Find and select the person to add as a requester.
