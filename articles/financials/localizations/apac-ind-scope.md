@@ -68,7 +68,7 @@ Some laws and requirements are out of scope for Finance and Operations. The loca
 
 ## Indian localization scope
 
-Finance and Operations localization provides a configuration for language user interface and Help settings. The Indian localization is available in English-IN. Additional documentation, such as white papers and comprehensive training materials, is also available in English.
+Finance and Operations localization provides a configuration for language, user interface, and Help settings. The Indian localization is available in English-IN. Additional documentation, such as white papers and comprehensive training materials, is also available in English.
 
 The localization scope for Finance and Operations in India is limited to fiscal and financial accounting transactions in the following areas:
 
@@ -116,7 +116,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
     - **Easy to upgrade**
     - **Lean**
 
-- Generated as a configuration in XML format.
+- Configurations are generated in XML format.
 - Base configurations (India GST and GSTR) are provided by Microsoft.
 - Independent software vendors (ISVs) can create their own configurations on top of Microsoft software.
 - Delta customization is supported for configuration.
@@ -139,7 +139,7 @@ Here are the main features that are covered in this localization:
 - GTE and ER:
 
     - The Tax engine is configurable.
-    - Tax calculation, accounting logic, and reports are now configuration instead of code. Multiple tax bases can be selected.
+    - Tax calculation, accounting logic, and reports are now configuration-based instead of code-based. Multiple tax bases can be selected.
     - Functional consultants can do the configuration alongside power users and can immediately confirm the outcome.
     - The lead time before a user can test how the system is likely to work can be counted in days or even hours. Faster interaction with the user can help increase satisfaction and decrease project risk.
 
@@ -235,7 +235,7 @@ The following table lists the localization features that are supported in Financ
 <li>The threshold designer feature lets users define threshold hierarchies as either single-threshold or progressive-threshold hierarchies.</li>
 <li>Various threshold types can be applied to the selected threshold. These threshold types include cumulative, per transaction, and per transaction line.</li>
 <li>Users can set up withholding tax groups for each TDS type and define the tax calculation formula by using the designer.</li>
-<li>The threshold limits and exception threshold limits can be defined through the advance threshold feature.</li>
+<li>The threshold limits and exception threshold limits can be defined through the advanced threshold feature.</li>
 <li>TDS is automatically calculated at a higher rate if the Permanent Account Number (PAN) isn't quoted by the deductee.</li>
 <li>Users can include or exclude GST, or any other tax or charge, for the TDS calculation.</li>
 <li>Calculation and financial posting of TDS are provided on purchase invoices and payments to residents and non-residents.</li>
@@ -288,7 +288,7 @@ The following table lists the localization features that are supported in Financ
 <li>Easily extend the configuration of any tax calculation logic for new tax components that are added by the government, such as Special Cess, and Karala Cess.</li>
 <li>Calculation of forward charges and reverse charges of taxes can be managed through the tax setup.</li>
 <li>Tax calculation on import and export transactions in the transaction currency or the accounting currency can be managed through the tax setup.</li>
-<li>By selecting a tax rate type, users can squeeze the rate setup for multiple tax rates.</li>
+<li>By selecting a tax rate type, users can consolidate the rate setup for multiple tax rates.</li>
 <li>Configuration extension lets users handle complex scenarios, such as tax on a slab price basis.</li>
 <li>A flexible posting mechanism lets users post tax in any desired account.</li>
 <li>Sequential tax document numbers can be generated for a set of transaction types that the government defines for purchase and sales transactions.</li>
@@ -297,8 +297,8 @@ The following table lists the localization features that are supported in Financ
 <li>Tax for import and export transactions of goods is calculated in a standardized manner, according to the customs exchange rate.</li>
 <li>Tax can be computed on a "Ship to" and "Bill to" basis.</li>
 <li>Tax invoices can be generated for the following transaction types: <strong>Sales</strong>, <strong>Export</strong>, <strong>Reverse charge</strong>, and <strong>Advance payment</strong>.</li>
-<li>Users can calculate tax as the invoice date or the posting date through the setup.</li>
-<li>Exporters and Special Economic Zone (SEZ) sellers can post transactions with the option of <strong>With payment</strong> or <strong>Without payment</strong> of tax transaction with the desired calculation of tax and posting by extending the GST configuration.</li>
+<li>Users can calculate tax as of the invoice date or the posting date through the setup.</li>
+<li>By extending the GST configuration, exporters and Special Economic Zone (SEZ) sellers can post tax transactions with or without the desired calculation of tax. When the necessary calculations are complete, the transactions can be posted.</li>
 <li>GST on project supplies covers the project contract, project quotation, and project invoice.</li>
 <li>Users can apply GST-TDS when payment is received from a government customer or when a payment is made to a government company.</li>
 <li>When payment is received from the e-commerce operator, e-commerce companies can apply GST-TCS when they make a payment to a vendor or any selling company.</li>
