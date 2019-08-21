@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Person search report for Microsoft Dynamics 365 for Finance and Operations is backed by an intelligent search processor that is designed to manage a collection of entities for a single person. The Person search report searches Finance and Operations data and creates a set of resulting identifiers. Each result references a search category (for example, Customer) and a result record in a related table. For information about using the Person search report, refer the [Person search report](gdpr-person-search-report.md) topic.
 
 > [!NOTE]
-> The Person search report will be available in an upconming release for Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The Person search report is not currently available for Microsoft Dynamics AX 2012.
+> The Person search is available for Finance and Operations, Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The Person search report is not currently available for Microsoft Dynamics AX 2012.
 
 ## Add another entity to the default template
 
