@@ -3,7 +3,7 @@
 
 title: Select a site theme
 description: This topic shows you how to set or change your site's theme.
-author: StuHarg
+author: bicyclingfool
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
