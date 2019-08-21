@@ -13,11 +13,11 @@ Ratings and reviews configuration values like tenantId, review text length etc. 
 
 1. Go to e-Commerce authoring tool.
 2. On the home page, under sites list, click on your site name. 
-3. On the left navigation menu, click on Site management, and then click on App settings in the left navigation. 
-3. Configure tenantID e.g. d247ff89-1bb8-42bf-955e-a731fbc57c75, which you can find in your D365 LCS settings. 
-4. Configure Review text length value (maximum 1000 characters). 
-5. Configure Review Title max length (maximum 55 characters). 
-6. Click "Save and Publish" link at the top to publish your site configurations. 
+3. On the left navigation menu, click on Site management, and then click on Extensibility in the left navigation. 
+4. Configure tenantID e.g. d247ff89-1bb8-42bf-955e-a731fbc57c75, which you can find in your D365 LCS settings. 
+5. Configure Review text length value (maximum 1000 characters). 
+6. Configure Review Title max length (maximum 55 characters). 
+7. Click "Save and Publish" link at the top to publish your site configurations. 
 
 
 Refer to the below screenshot for more details:
@@ -53,7 +53,8 @@ Refer to the below screenshot for more details on how the ratings and reviews mo
 ### Write review module 
 Write review module allows users to sign-in, give a rating, and write a review on a product. The same module also allows users to edit the previously given rating and review.  This module is typically placed above the Reviews list and Rating histogram modules on product details page.
 
-
+Below screenshot shows how review submission module would look like when use clicks on "Write a review"
+![e-Commerce site settings - Write review module ](media/rnr-eCommerce-write-review-module.png)
 
 | Property name     | Values                                                       | Property Description                                         |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -78,7 +79,23 @@ Ratings histogram module shows ratings summary and histogram of a product’s ra
 This module has no additional configurations required, apart from adding it within the Reviews list module. 
 
 
-Refer to the below screenshot for more details on how Template would look like with ratings and reviews modules on product details page:
+Refer to the below screenshot for more details on how PDP template would look like with ratings and reviews modules on product details page:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
+
+
+
+## Privacy and policy link configuration  
+
+Refer to the below screenshot for more details on how to configure Ratings and review "Privacy and policy" link that is showed on "Write review" module:
+
+1. Go to e-Commerce authoring tool.
+2. On the home page, under sites list, click on your site name. 
+3. On the left navigation menu, click on Site management, and then click on Extensibility in the left navigation. 
+4. Click on "Routes" tab at the top of "Extensibility" section. 
+5. Find RNR Privacy and Policy link section, and choose the page with Privacy and policy terms you have created for you site. 
+6. Click "Save and Publish" link at the top to publish your site configurations. 
+
+
+![eCommerce site settings - Privacy and policy link ](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
