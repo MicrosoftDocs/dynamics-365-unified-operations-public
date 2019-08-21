@@ -5,7 +5,7 @@ title: Set up earning codes and earning code groups
 description: This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: andreabichsel
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221384
@@ -34,9 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability.
-
-Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability. Earning codes are also used to calculate various amounts that are used by the payroll system. For example, earning codes are required in order to determine the following amounts:
+This topic explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability. You also use earning codes to calculate various amounts that are used by the payroll system. For example, earning codes are required in order to determine the following amounts:
 
 - Deductions and contributions for certain benefits
 - Balances in benefit accrual plans
