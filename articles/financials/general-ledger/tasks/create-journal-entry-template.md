@@ -33,9 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 Posted journal vouchers can be saved as Voucher templates and applied in a new journal voucher. This procedure uses the USMF demo company.
 
 1. Go to **Navigation pane > Modules > General ledger > Journal entries > General journals**.
-2. On the **Action pane**, click **New**.
-    
-    This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.  
+2. On the **Action pane**, click **New**. This procedure starts by creating and posting a journal voucher, but any previously posted journal voucher can be saved as a template.  
 3. In the **Name** field, click the drop-down button to open the lookup.
 4. In the list, find and select the desired record.
 5. In the list, click the link in the selected row.
@@ -64,11 +62,7 @@ Posted journal vouchers can be saved as Voucher templates and applied in a new j
 25. Click **Lines**.
 26. Click **Functions**.
 27. Click **Select voucher template**.
-28. Find the template that you created earlier. Click **OK**.
-    
-    You may need to click **Previous step** and then select the correct template if other templates exist.  
-29. In the **Amount** field, enter the amount to be applied to the voucher.
-    
-    The **Amount** field is only displayed if the voucher template is of type Percent.  
+28. Find the template that you created earlier. Click **OK**. You may need to click **Previous step** and then select the correct template if other templates exist.  
+29. In the **Amount** field, enter the amount to be applied to the voucher. The **Amount** field is only displayed if the voucher template is of type Percent.  
 30. Click **OK**.
 
