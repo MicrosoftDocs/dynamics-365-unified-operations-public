@@ -34,12 +34,8 @@ This task guide uses the USMF demo company.  It will create a new fixed asset us
 
 1. Go to **Navigation pane > Modules > Fixed assets > Fixed assets > Fixed assets**.
 2. On the **Action pane**, click **New**.
-3. In **the Fixed asset group** field, enter or select a value.
-   
-   The **Number** field will default if you have enabled **Autonumber fixed assets functionality** in the **Fixed assets parameters** and the **Fixed asset group**.  If not, you must enter a unique number to identify the fixed asset.  
-4. In the **Name** field, type a value.
-   
-   Enter the additional information that your business needs for this asset.  
+3. In **the Fixed asset group** field, enter or select a value. The **Number** field will default if you have enabled **Autonumber fixed assets functionality** in the **Fixed assets parameters** and the **Fixed asset group**.  If not, you must enter a unique number to identify the fixed asset.  
+4. In the **Name** field, type a value. Enter the additional information that your business needs for this asset.  
 5. On the **Action pane**, click **Books**.
 6. In the **Acquisition date** field, enter a date.
 7. In the **Acquisition price** field, enter a number.
