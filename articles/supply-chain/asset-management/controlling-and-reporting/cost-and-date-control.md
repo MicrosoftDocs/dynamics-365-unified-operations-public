@@ -56,7 +56,7 @@ The calculations made for assets, functional locations, and work orders are almo
 
 9. Click **OK** to start the calculation.
 
-The figure below shows an example of the **asset cost control** dialog.
+The figure below shows an example of the **Asset cost control** dialog.
 
 ![Figure 1](media/01-controlling-and-reporting.png)
 
@@ -85,12 +85,13 @@ Use this page to get an overview of expected start and end dates compared to act
 
 5. Click **OK**.
 
-6. In the **Group by** section, select which information you want to include in the calculation by selecting the relevant check boxes.
+6. In the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
 
-7. After you have made the calculation, if you select or clear check boxes in the **Group by** section, click the **Calculate** button again to update the calculation.
+The figure below shows an example of calculation results in **Work order date control**.
 
 ![Figure 3](media/03-controlling-and-reporting.png)
 
 - The **Avg. start delay** field shows the difference in days between scheduled start date for a work order compared to actual start date. If, for example, the actual start date was two days before the scheduled start date, "-2" will be displayed in this field.  
 - The **Avg. end delay** field shows the difference in days between scheduled end date for a work order compared to actual end date. If, for example, the actual end date was three days after the scheduled end date, "3" will be displayed in this field.  
 - The **Occurrences** fields show the number of times deviations occur in relation to scheduled and actual start date, and scheduled and actual end date on the work order.
+
