@@ -162,8 +162,7 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 Suppose that a customer decides that he or she wants to understand what personal data of theirs is maintained by an organization. That customer approaches that organization and asks to exercise his or her DSR. When data subjects exercise their DSRs, controllers must address each of the following items specifically:
 
 + Properly identify the person and role (is the person an employee, a customer, a vendor?) by using information that the data subject gave you as part of his or her request. This information might be a name, an employee ID or customer number, or another identifier.
-+ Confirm that the data subject is a resident or citizen of an EU nation (or the United Kingdom [UK]).
-+ Record the data and time of the request. (You have 30 days to complete the request.)
++ Record the date and time of the request. (You have 30 days to complete the request.)
 + Affirm that the DSR request is proper and valid. You will need to work with your legal counsel to determine what is valid. For example, you must make sure that compliance with a DSR request doesn't conflict with any other legal obligations that you have.
 + Verify that you have the information that is related to the request.
 
@@ -182,14 +181,14 @@ The following table lists several reasons why personal data modification or dele
 
 An organization might decide to take any of the following actions in response to a DSR request to view data:
 
-+ Use the Person search report to find and collect personal data. This report will be available in an upcoming release.
++ Use the Person search report to find and collect personal data. To access this report, from the navigation pane, select **Modules > System administration > Inquiries > Person search report**. 
 + Extend the Person search report by authoring a new entity or extending an existing entity.
 + Use search and filter features to find specific personal data and export that data by using the Microsoft Office Export functionality or print that information to a .pdf using browser extensions.
 + Use provided documentation to identify data tables that contain data that the controller has identified as personal data.
 + Author a custom form that locates and exports personal data.
 + Author an external portal or website that allows an authenticated customer to see his or her personal data.
 
-The Person search report, which will be available in a future release of Finance and Operations, might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities, or extending the provided entities.
+The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the Microsoft Dynamics Lifecycle Services (LCS) site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities, or extending the provided entities.
 
 If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./gdpr-extend-person-search-report.md).
 
@@ -197,7 +196,7 @@ If the Person search report doesn't contain all the information that the data su
 
 An organization might decide to take any of the following actions in response to a DSR request to correct data:
 
-+ Use the Person search report to find and collect personal data. This report will be available in an upcoming release.
++ Use the Person search report to find and collect personal data. 
 + Extend the Person search report by authoring a new entity or extending an existing entity.
 + Use search and filter features to find specific personal data.
 + Author a custom form that locates personal data.
@@ -229,7 +228,7 @@ An organization might decide to take any of the following actions in response to
 + Author a customization that exports personal data.
 + Use or extend the Person search report to gather information in support of a request for a copy of the data subject's personal information.
 
-The Person search report, which might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the LCS site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities.
+The Person search report might help you discover personal data that is subject to a DSR request. If the report doesn't include the information that you're looking for, check the LCS site for possible hotfixes that include the information. You can also extend the report yourself by creating additional entities.
 
 If the Person search report doesn't contain all the information that the data subject is requesting, you can extend it by using tools that Microsoft has provided. For information about how to extend the Person search report, see [Extend the Person search report](./gdpr-extend-person-search-report.md).
 
@@ -252,7 +251,7 @@ Controllers can use the following information to complete DSR requests.
 
 + **Data inventory and tagging** – Microsoft has enabled a tagging infrastructure that developers and customers can use. Each data field that is defined in metadata contains a classification property that has a suggested value that the controller can confirm or change to any value or term they choose in order to identify data that they deem fits within the definition of personal data.
 + **Data flow diagram** – Microsoft will publish a data flow diagram that identifies flows of data between systems in the customers production environments.
-+ **Person search report** – Finance and Operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. (The Person search report will available in a future release.)
++ **Person search report** – Finance and Operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
 
 ## Activity and diagnostic information
 
@@ -288,7 +287,7 @@ Some organizations conduct their activities only through business-to-business re
 To support the controller, this report offers a refinement of the existing entity model reporting functionality that is available in the **Data management** workspace. The **Data management** workspace offers a collection of pre-packaged representations of most role types. These representations are known as entities.
 
 > [!NOTE]
-> The Person search report will be available for Finance and Operations, Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent, in a future release. Currently the report does not support Microsoft Dynamics AX 2012. 
+> The Person search report is available for Finance and Operations, Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent. Currently the report does not support Microsoft Dynamics AX 2012. 
 
 An entity represents an instance of a specific role. The data management functionality lets the controller export entity data to several formats, such as colon-separated values, comma-separated values (CSV), semicolon-separated values, tab-separated values, Microsoft Excel, and XML.
 
