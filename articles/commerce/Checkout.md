@@ -1,47 +1,51 @@
 ---
 # required metadata
 
-title: Checkout
-description: This topic reviews setting up a Checkout module in a Dynamics 365 e-Commerce page.
+title: Add a checkout module to a page
+description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+manager: annbe
+ms.date: 0/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Retail, Core, Operations
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupamar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Checkout 
+# Add a checkout module to a page 
 
-Checkout module is container that is used for hosting all the modules that are necessary to create an order. For instance, it includes Shipping address, Shipping methods, Billing information, Order summary etc. It presents a step-by-step flow for the user to enter all the relevant information to make a purchase.  
+This topic describes how to add a checkout module to a page and set the required properties.
 
-Checkout module renders data based on the Cart id which is derived from the page context. This means Checkout module cannot be used on a page that does not have the Cart context E.g. Marketing page or Home page. 
+## Overview
 
-## Properties of Checkout 
+A checkout module is container that is used for hosting all the modules that are necessary to create an order. A checkout module can include modules that handle shipping address, shipping methods, billing information, order summary, and other infomation related to a customer order. It presents a step-by-step flow for the user to enter all the relevant information needed to make a purchase.  
 
-Checkout has multiple steps such as Shipping address, Shipping methods etc. The section heading for each step can authored in the checkout container with a heading tag. A Width property is provided to indicate if items in container should fit to width or fill screen.  
+A checkout module renders data based on the cart id, which is derived from the page context. This means that a checkout module cannot be used on a page that does not have the cart context, like a marketing or home page. 
 
-Checkout container has multiple slots – Checkout information, Order summary, Place order. Each slot has a set of modules that are supported and will appear in a specific layout on the page. Checkout information slot has all modules that are needed to trigger a checkout e.g. shipping address, payment method etc. Order summary slot shows the order summary and place order action. Place order slot also supports place order action. To optimize placing order in various view ports, there are two slots where each Place order module can be defined.  
+## Properties of the checkout module 
 
-## Modules available in Checkout 
+A checkout module appears to the user as a series of steps that handle information such as shipping address, shipping method, etc. The section heading for each step is authored in the checkout module with a heading tag. A width property can be configured to indicate if items in the module should fit to width or fill the screen.  
+
+A checkout module has multiple slots that can contain other modules such as Checkout information, Order summary, and Place order. Each slot supports a set of modules that will appear in a specific layout on the page. For example, the Checkout information slot has all of the modules needed to trigger a checkout, like shipping address, payment method, etc. The Order summary slot shows the order summary and place order action. The Place order slot also supports place order action. To optimize placing order in various view ports, there are two slots where each Place order module can be defined.  
+
+### Modules available in Checkout 
 
 **Shipping address:** This module allows a user to add or select the shipping address for the order. If the user is signed-in, any address that was previously saved will be shown for the user to choose. In addition, the user can add a new address. The shipping address is for all items in the order that require shipping and cannot be customized on a line item basis. Shipping address formats are defined in HQ per country which is respected by the shipping address module.  The module does not provide address validation though it can be achieved via a customization. 
 
@@ -69,11 +73,11 @@ Checkout container has multiple slots – Checkout information, Order summary, P
 
 ## Retail server interaction 
 
-All the checkout information such as shipping address, shipping methods are stored in the Cart and processed as part of the order. The only exception is the credit card information. Credit card information is processed directly via Adyen Payment connector. The payment is authorized but not charged. 
+All the checkout information such as shipping address and shipping methods are stored in the cart and processed as part of the order. The only exception is the credit card information, which is processed directly using Adyen payment connector. The payment is authorized but not charged. 
 
-## Authoring Checkout  
+## Add a checkout module to a new page and set the required properties  
 
-This section explains how to add a checkout module to a new page and set the required properties.
+To add a checkout module to a new page and set the required properties, do the following.
 
 1. In tooling, create a new page template “Checkout template”.
 2. In the Main slot of the template, add Checkout.
