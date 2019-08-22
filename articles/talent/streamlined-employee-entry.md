@@ -40,7 +40,7 @@ You can also enable a simplified navigation experience to quickly find related i
 
 ## View options
 
-You can use **View options** on the worker form to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view Active, Pending, and Exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you will only see those employees and contractors in the legal entities you have access to.
+You can use **View options** on the worker form to select any combination of employees and contractors from a single list. These options allow you to view workers across legal entities or for the legal entity you're currently signed into. You can also view active, pending, and exited workers, and you can restrict results based on the type of worker (employee or contractor). If advanced security is enabled, you will only see those employees and contractors in the legal entities you have access to.
 
 Columns in the list view change based on your selections. For example, when viewing exited employees, the termination date and reason codes display as additional columns in the list. 
 
