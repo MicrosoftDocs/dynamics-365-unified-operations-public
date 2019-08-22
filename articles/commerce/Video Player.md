@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Video Player 
 
-Video player is used to support video playback. It supports the following media types <insert>.  There are two video players that are supported in starter kit– Ambient Video Player and Video Player.  
+Video player is used to support video playback. There are two video players that are supported in starter kit– Ambient Video Player and Video Player. They both support mp4 media type.
 
 ## Ambient video player 
 
@@ -51,7 +51,7 @@ Properties for Ambient video player :
 | Auto play         | True or False | Auto plays the video when this setting is turned on          |
 | Mute              | True or False | Mutes the audio. The default value is True for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user plays the video.  |
 | Loop              | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media             |               | This is video file that should be played in the video player.Only mp4 media type is supported |
+| Media             |               | This is video file that should be played in the video player. |
 | Playback controls | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
 
  
@@ -63,7 +63,6 @@ Video player can be used for videos that we want to showcase in the ecommerce si
 Usage examples for ecommerce: 
 
 - It can be used for instructional video in product details page or marketing page 
-
 - It can be used to market promotions and policies on any marketing page 
 - It can be used to market products by highlighting its features on a product details page or marketing page 
 
@@ -76,7 +75,7 @@ Properties for Video player:
 | Auto play              | True or False | Auto plays the video when this setting is turned on          |
 | Mute                   | True or False | Mutes the audio. The default value is false for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user chooses to play the video.  |
 | Loop                   | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media                  |               | This is the video file that should be played in the video player. Only mp4 media type is supported |
+| Media                  |               | This is the video file that should be played in the video player|
 | Playback controls      | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
 | Play full screen       | True or False | The video can be played in full screen if this option is true |
 | Controls               | True or False | All controls will be shown when this option is shown. This includes Play, Pause, Progress, Closed captions etc |
@@ -91,24 +90,24 @@ This section explains how to add a video player module to a new page and set the
 
 1. We need to first create a template. In tooling, create a new page template “Video player template”. 
 
-1. In the Main slot the Default Page, add a default container. See container topic for more details on its application 
+2. In the Main slot of the Default Page, add a Container module. See Container topic for more details. 
 
-1. To the default container, add a Video player module and Ambient Video player module. 
+3. To the Container, add a Video player module and Ambient Video player module. 
 
-1. Check-in and Publish.  
+4. Check-in and Publish.  
 
-1. Now create a new page with the “Video player template” and call it “Video player page” 
+5. Now create a new page with the “Video player template” and call it “Video player page” 
 
-1. In the page outline, add Ambient Video player module to the Main slot 
+6. In the page outline, add Ambient Video player module to the Main slot 
 
-1. In the settings for Ambient Video player module, go to Media and upload a video file. You can change the Auto play and Loop properties as needed, 
+7. In the settings for Ambient Video player module, go to Media and upload a video file. You can change the Auto play, Loop and other properties as needed.
 
-1. Save and Preview 
+8. Save and Preview 
 
-1. Go back to the page outline, add Video player module to the Main slot 
+9. Go back to the page outline, add Video player module to the Main slot 
 
-1. In the settings for Video player module, go to Media and upload a video file.  
+10. In the settings for Video player module, go to Media and upload a video file.  
 
-1. Save and Preview. On Preview, you should see both video modules on the page. Additional settings can be changed to customize the behavior of each module 
+11. Save and Preview. On Preview, you should see both video modules on the page. Additional settings can be changed to customize the behavior of each module 
 
-1. Check-in and Publish
+12. Check-in and Publish
