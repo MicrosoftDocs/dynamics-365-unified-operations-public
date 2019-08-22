@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a checkout module to a page 
 
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 This topic describes how to add a checkout module to a page and set the required properties.
 
 ## Overview
@@ -43,27 +46,27 @@ A checkout module renders data based on the cart id, which is derived from the p
 
 A checkout module appears to the user as a series of steps that handle information such as shipping address, shipping method, etc. The section heading for each step is authored in the checkout module with a heading tag. A width property can be configured to indicate if items in the module should fit to width or fill the screen.  
 
-A checkout module has multiple slots that can contain other modules such as Checkout information, Order summary, and Place order. Each slot supports a set of modules that will appear in a specific layout on the page. For example, the Checkout information slot has all of the modules needed to trigger a checkout, like shipping address, payment method, etc. The Order summary slot shows the order summary and place order action. The Place order slot also supports place order action. To optimize placing order in various view ports, there are two slots where each Place order module can be defined.  
+A checkout module has multiple slots that can contain other modules such as a checkout information module, order summary module, and place order module. Each slot supports a set of modules that will appear in a specific layout on the page. For example, the checkout information slot contains all of the modules needed to trigger a checkout, such as shipping address and payment method. The order summary slot shows the order summary and place order action. The place order slot also supports place order action. To optimize placing orders from various platforms, there are two slots where place order modules can be defined.  
 
 ### Modules available in Checkout 
 
-**Shipping address:** This module allows a user to add or select the shipping address for the order. If the user is signed-in, any address that was previously saved will be shown for the user to choose. In addition, the user can add a new address. The shipping address is for all items in the order that require shipping and cannot be customized on a line item basis. Shipping address formats are defined in HQ per country which is respected by the shipping address module.  The module does not provide address validation though it can be achieved via a customization. 
+**Shipping address:** The Shipping address module enables a user to add or select the shipping address for the order. If the user is signed in, any address that was previously saved will be displayed for the user to choose from. The user can also add a new address. The shipping address is for all items in the order that require shipping and cannot be customized on a line item basis. Shipping address formats are defined per country, which is respected by the shipping address module. The module does not provide address validation, although address validation can be implemented using a customization. 
 
-**Delivery options:** Delivery options allows the user to choose a delivery option for the order. Delivery options is based on the shipping address. If the shipping address is changed, the delivery options must retrieved again.  
+**Delivery options:** Delivery options enables the user to choose a delivery option for the order. Delivery options is based on the shipping address. If the shipping address is changed, the delivery options must retrieved again.  
 
 **Checkout section container:** This is a container that allows multiple modules to be placed inside to create a section within the Checkout flow.  For example, all payment modules can be configured inside this container to make them appear as one section. This container is added only to control the layout of the flow. 
 
-**Gift card:** Gift card allows the user to pay for the order using a gift card. This module supports Dynamics 365 Internal gift cards only. One or more gift cards can be applied to an order. If the gift card balance is not sufficient, it can be combined with another payment method.  
+**Gift card:** Gift card enables the user to pay for the order using a gift card. This module supports Dynamics 365 Internal gift cards only. One or more gift cards can be applied to an order. If the gift card balance is not sufficient, it can be combined with another payment method.  
 
-**Loyalty points:** Loyalty points allows the user to pay for the order using loyalty points. It provides a summary of available points and expiring points. It lets the user choose the amount they want to redeem using points. If the user is not signed-in or not a loyalty member this module will be hidden. 
+**Loyalty points:** Loyalty points enables the user to pay for the order using loyalty points. It provides a summary of available points and expiring points. It lets the user choose the amount they want to redeem using points. If the user is not signed-in or not a loyalty member this module will be hidden. 
 
-**Credit card:** This module allows the user to pay for the order using credit card. Credit card integration is provided via Adyen payment connector.  See Adyen payment connector for more details on how to use this connector. 
+**Credit card:** This module enables the user to pay for the order using credit card. Credit card integration is provided via Adyen payment connector.  See Adyen payment connector for more details on how to use this connector. 
 
-**Billing address****:** This module allows the user to provide the billing information. This information is processed along with credit card by Adyen. It has an option to use Shipping address to Billing if the user prefers to do the same.  
+**Billing address**:** This module enables the user to provide the billing information. This information is processed along with credit card by Adyen. It has an option to use Shipping address to Billing if the user prefers to do the same.  
 
-**Contact information:** This module allows the user to add or change the contact information (email) for the order. 
+**Contact information:** This module enables the user to add or change the contact information (email) for the order. 
 
-**Place order**: This module allows the user to place the order. A link must be configured on the module to indicate the order confirmation page.  
+**Place order**: This module enables the user to place the order. A link must be configured on the module to indicate the order confirmation page.  
 
 **Content rich block**: A content rich block can be added in checkout container for any CMS driven messaging. E.g. “For issues with order contact 1-800-FABRIKAM” 
 
