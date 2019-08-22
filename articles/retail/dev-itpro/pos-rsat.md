@@ -239,83 +239,79 @@ Below are the required configurations for executing the Retail POS test cases:
 10.  To edit the POS logon credential, click the Edit button.
 11.  To delete the POS logon credential, click the Delete button.
 
-### Run:
+## Run tests
 
 The following sections explain how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
-### Note: The detailed steps on how to setup Azure DevOps, test cases etc. are available in the RSAT manual, please complete those steps before starting your test execution.
+> [!NOTE]
+> The detailed steps on how to setup Azure DevOps, test cases etc. are available in the RSAT manual, please complete those steps before starting your test execution.
 
-### Load Test Cases and Create parameter Files
+### Load test cases and create parameter Files
 
-Click Load to download test cases and test case automation files from Azure DevOps. All test cases belonging to the test plan specified in the Settings dialog are downloaded.
+Click **Load** to download test cases and test case automation files from Azure DevOps. All test cases belonging to the test plan specified in the Settings dialog are downloaded.
 
-[![RSAT load](./media/RSATLoad.png)](./media/RSATLoad.png)
+![RSAT load](./media/RSATLoad.png)
 
-Test cases are organized by test suites under a common test plan. These are test suites you created in your Azure DevOps project. Using this tool, you can work with one test suite at a time. If the tool fails to load any test case, verify that your test plan in Azure DevOps is properly created and contains the desired test suites and test cases.
+Test cases are organized by test suites under a common test plan. These are the test suites you created in your Azure DevOps project. Using this tool, you can work with one test suite at a time. If the tool fails to load any test case, verify that your test plan in Azure DevOps is properly created and contains the desired test suites and test cases.
 
-If this is the first time you load this test plan, the Parameters File column will be blank. You must create test automation parameter files for your test cases. To execute the tests, generate the below two test automation files:
+If this is the first time you have loaded the test plan, then the **Parameters File** column will be blank. You must create test automation parameter files for your test cases. To execute the tests, generate these test automation files:
 
--   Test parameter files (Microsoft Excel files contain test case parameters)
+- Test parameter files (Microsoft Excel files contain test case parameters)
+- XML files needed to execute the tests.
 
--   XML files needed to execute the tests.
+When you click the **New** button, test automation files are generated in your working directory. The Excel test parameter files will appear on the grid under Parameters File column.
 
-When you click the New button, test automation files are generated in your working directory. The Excel test parameter files will appear on the grid under Parameters File column.
+![Variable generation](./media/RSATParameter.png)
 
-[![Variable generation](./media/RSATParameter.png)](./media/RSATParameter.png)
+For the retail test recording files, the **Generate Test Execution files only** option will be disabled because Retail Cloud POS uses the Selenium web directly to do the playback, so no additional script file generation is required.
 
-For the retail test recording files ***Generate Test Execution files only*** option will be disabled because Retail Cloud POS uses the selenium web directly to do the playback so no additional script file generation is required.
+![Generate Test parameter file](./media/RSATNewOption.png)
 
-[![Generate Test parameter file](./media/RSATNewOption.png)](./media/RSATNewOption.png)
+### Modify test parameters and validation values
 
-### Modify Test Parameters and validation values:
+This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and click **Edit**. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. In addition to the summary tab, the Excel file contains a variables tab which has the details of all the variables generated. Retail POS automatically generates variables for all the input values entered during the recording. You don’t have to generate the variables separately, and each variables will have unique variable id that you can pass to different test cases in a single instance of execution in sequence. All the variables generated in the variables tab are organized in the sequence which they are entered during the recording.
 
-This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and click Edit. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. In addition to the summary tab, the Excel file contains a variables tab which has the details of all the variables generated. Retail POS automatically generate variables for all the input values entered during the recording so you don’t need to generate the variables separately and each variables will have unique variable id and you can pass the variable id to different test cases in a single instance of execution in sequence. All the variables generated in the variables tab are organized in the sequence which they are entered during the recording.
-
-### Validate Expected Values:
+### Validate expected values
 
 An important component of a test case is validation of expected values. You can define validation parameters during the authoring of your test cases using Test Recorder in the validation mode. Enable validation mode during recording and click all the fields to be validated while recording. This action becomes a validation step that you can use with RSAT and the validation values will also show up in the same excel file variables tab in the sequence entered, so before execution you can modify and values in the excel and test execution will use this new value for data entry and validation.
 
-[![Edit values](./media/RSATExcel.png)](./media/RSATExcel.png)
+![Edit values](./media/RSATExcel.png)
 
 ### Run
 
 Click **Run** to execute the selected test cases. Only test cases with automation files generated can be run. The tool will open Retail POS and execute these tests with the data you entered in Excel. After the test run the results will be updated in the RSAT tool Result column and in Azure DevOps.
 
-Note: You can modify the order in which test cases are executed using the up and down arrow buttons.
+You can modify the order in which test cases are executed using the up and down arrow buttons.
 
 ### Investigate Results
 
 When test cases complete execution, pass or fail status will be populated in the RSAT result column. You can click on the result column to see the error messages. More investigation details are available in Azure DevOps. From your Azure DevOps project page, go to **Test &gt; Runs**.
 
-All error messages are also available locally under: C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg-&lt;TestCaseId&gt;.txt
+All error messages are also available locally under: **C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg<TestCaseId>.txt**.
 
-### System and metadata files:
+## System and metadata files
 
 Below is the list of different files generated during recording, Test execution and parameters files and playback.
 
-| File Name      | Description                                                                                                                                                                                                                                                                                   | File generation flow                                                                                 | File save flow                                                          |
-|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| Recording.xml  | Contains all steps necessary to playback a recording, including all user-specific values for each of the steps in the recording.                                                                                                                                                              | Generated by the user when recording a test case and uploaded to DevOps to be used by the RSAT tool. | It is saved into disk when the test case is loaded into RSAT.           |
-| Variables.xml  | Contains the values for each of the variables used in the recording file, used by the playback tool.                                                                                                                                                                                          | Generated when the user clicks the button ‘Generate Test Execution and Parameter Files’ in RSAT      | When the user clicks ‘Generate Test Execution and Parameter Files’.     |
-| Variables.xlsx | Contains the values for each of the variables used in the recording file. It is modifiable by the user and used by the playback tool.                                                                                                                                                         | Generated when the button ‘Generate Test Execution and Parameter Files’ in RSAT                      | When the user clicks ‘Generate Test Execution and Parameter Files’.     |
-| OutputLog.txt  | Contains a log of execution of the playback process. Contains a description of each of the steps executed and may contain an exception which may contain data available in the Recording.xml file based on the exception.                                                                     | Generated after execution of the playback tool in RSAT, regardless of success/failure                | When a test case is played back.                                        |
-| Time.xml       | Contains the list of steps, user edited description and the amount of time taken to execute each.                                                                                                                                                                                             | Generated after execution of the playback tool in RSAT in case of success.                           | When a test case is played back successfully.                           |
-| Out.xml        | Contains the values for each of the variables used in the recording file, using the updated values from Variables.xlsx for each of them. It is used by the playback tool to support test cases that depend on variables from other test cases.                                                | Generated after execution of the playback tool in RSAT, regardless of success/failure                | When a test case is played back.                                        |
+| File Name      | Description | File generation flow | File save flow |
+|----------------|-------------|----------------------|----------------|
+| Recording.xml  | Contains all steps necessary to playback a recording, including all user-specific values for each of the steps in the recording. | Generated by the user when recording a test case and uploaded to DevOps to be used by the RSAT tool. | It is saved into disk when the test case is loaded into RSAT.           |
+| Variables.xml  | Contains the values for each of the variables used in the recording file, used by the playback tool. | Generated when the user clicks the button ‘Generate Test Execution and Parameter Files’ in RSAT      | When the user clicks ‘Generate Test Execution and Parameter Files’.     |
+| Variables.xlsx | Contains the values for each of the variables used in the recording file. It is modifiable by the user and used by the playback tool. | Generated when the button ‘Generate Test Execution and Parameter Files’ in RSAT                      | When the user clicks ‘Generate Test Execution and Parameter Files’.     |
+| OutputLog.txt  | Contains a log of execution of the playback process. Contains a description of each of the steps executed and may contain an exception which may contain data available in the Recording.xml file based on the exception. | Generated after execution of the playback tool in RSAT, regardless of success/failure                | When a test case is played back.                                        |
+| Time.xml       | Contains the list of steps, user edited description and the amount of time taken to execute each. | Generated after execution of the playback tool in RSAT in case of success.                           | When a test case is played back successfully. |
+| Out.xml        | Contains the values for each of the variables used in the recording file, using the updated values from Variables.xlsx for each of them. It is used by the playback tool to support test cases that depend on variables from other test cases. | Generated after execution of the playback tool in RSAT, regardless of success/failure             | When a test case is played back. |
 | In.xml         | Contains the values for each of the variables used in the recording file of all test cases run before the current one, using the updated values from each of their Variables.xlsx file. It is used by the playback tool to support test cases that depend on variables from other test cases. | Generated before execution of the playback tool in RSAT when running multiple test cases             | When the previous test case finishes and before a new test case is run. |
 
-The user must manually delete these files and secure it if required. All the above files are stored in RSAT working directory.
+You must manually delete these files and secure them if required. All the above files are stored in RSAT working directory.
 
-### Best Practices
+## Best Practices
 
-### Authoring test cases using the Test Recorder:
+### Authoring test cases using the Test Recorder
 
-1. Make sure all your recordings start from the POS login screen.
-
-2. Keep individual recordings short and focus on a business task performed by one user, like creating a sale transaction. This simplifies maintainability and reusability of test cases.
-
-3. Don’t record any scenario which includes secrets.
-
-4. Recording and playback must be done in the same screen layout and resolution. If recording and playback done in different layout and resolution, then playback will fail.
-
-5. Once recorded, you will not be able to change the POS username during playback. Always record using the right username which will be later used for playback.
++ Make sure all your recordings start from the POS login screen.
++ Keep individual recordings short and focus on a business task performed by one user, like creating a sale transaction. This simplifies maintainability and reusability of test cases.
++ Don’t record any scenario which includes secrets.
++ Recording and playback must be done in the same screen layout and resolution. If recording and playback done in different layout and resolution, then playback will fail.
++ Once recorded, you will not be able to change the POS username during playback. Always record using the right username which will be later used for playback.
 
