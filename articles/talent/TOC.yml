@@ -8,6 +8,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: August 22, 2019
+        href: whats-new-talent-august-21-2019.md
       - name: August 13, 2019
         href: whats-new-talent-august-15-2019.md
       - name: August 6, 2019
@@ -210,6 +212,8 @@
         href: departments-jobs-positions.md
       - name: Set up the components of a job
         href: create-job.md
+      - name: Streamlined employee entry and navigation
+        href: streamlined-employee-entry.md
       - name: Create departments and include them in the department hierarchy
         href: create-department-add-department-hierarchy.md
       - name: Set up HR parameters across legal entities
