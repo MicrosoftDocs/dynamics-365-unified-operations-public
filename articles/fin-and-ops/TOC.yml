@@ -3207,9 +3207,9 @@
           href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
       - name: Dynamically add columns to Excel reports as horizontally expandable ranges
         items:
-        - name: Design formats to dynamically add columns to Excel repots as horizontally expandable ranges
+        - name: Design formats to dynamically add columns to Excel reports as horizontally expandable ranges
           href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-        - name: Run formats to dynamically add columns to Excel repots as horizontally expandable ranges
+        - name: Run formats to dynamically add columns to Excel reports as horizontally expandable ranges
           href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
       - name: Use Document management files in format outputs
         items: 
