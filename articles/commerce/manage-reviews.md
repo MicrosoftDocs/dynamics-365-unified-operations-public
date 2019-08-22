@@ -44,12 +44,13 @@ Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate rev
 - Bulk import review data across products into a provided Power BI template and analyze ratings and reviews trends
 - Delete a user's reviews after a request by the user
 
-## Reading Reviews 
+## Read a review 
   
 1. Go to **Site Management > Global Settings**.
 1. Under **RnR Moderator**, click **Manage**.
+1. ???
 1. Use the **Search** feature at the top of page to filter reviews by product ID, product name, or review text.
-1. Additionally, there are filters to limit displayed reviews by time period, rating, channel, or takedown / responded / reported concern status.
+    - There are also filters to limit displayed reviews by time period, rating, channel, or concern status (takedown/responded/reported).
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
 
@@ -89,10 +90,11 @@ To locate and delete user data, do the following.
 
 1. Go to **Site Management > Global Settings**.
 1. Under **RnR Moderator**, click **Manage**. 
-2. Click on Reviews in the left nav and then click on **Delete**. 
-3. In the **Search for users by email address** box, enter the customer's email address and click **Search**.
-5. If the customer has any reviews activity (for example, review submissions, votes on the helpfulness of other's reviews, or comments on another customer's review), the results will be displayed and each item will have a "Delete" option for the moderator to act on.
-6. Click **Delete** for the review item you want to delete. When prompted for confirmation, click **Yes**. 
+1. ???
+1. Click **Delete**. 
+1. In the **Search for users by email address** box, enter the customer's email address and click **Search**.
+1. If the customer has any reviews activity (for example, review submissions, votes on the helpfulness of other's reviews, or comments on another customer's review), the results will be displayed and each item will have a "Delete" option for the moderator to act on.
+1. Click **Delete** for the review item you want to delete. When prompted for confirmation, click **Yes**. 
 	
 Refer to the following screenshot for more details.  
 	
@@ -102,24 +104,31 @@ Refer to the following screenshot for more details.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-delete-reviews.png) 
 
-##  Downloading Ratings and Review data
-Dynamics 365 Commerce - Ratings and Reviews allows C1's to import bulk data of ratings and reviews for analyzing trends.  There is a PowerBI template, with basic metrics, available for customer to connect the imported bulk data and see a dashboard, without needing to create your own dashboard.  C1 can also enhance the PowerBI template to meet their custom needs. 
+##  Download ratings and reviews data
 
-1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
-2. Click on Reviews in the left nav and then click on Reporting link. 
-3. Click on "Download reviews data" link to download ratings and reviews bulk data in .csv format and then save to your file location, e.g. c:\reviews\ReviewsData.csv file.
+The Commerce Ratings and Reviews Moderation tool enables moderators to import bulk data of ratings and reviews for analyzing trends.  There is a Power BI template with basic metrics available for moderators to connect imported bulk data and see a dashboard, without needing to create a custom dashboard.  Moderators can also customize the PowerBI template to meet their specific needs. 
 
+To download ratings and reviews data, do the following.
 
-##  Steps to use PowerBI template to view ratings and review trends
+1. Go to **Site Management > Global Settings**.
+1. Under **RnR Moderator**, click **Manage**. 
+1. ??? 
+1. Click **Reporting**. 
+1. Click **Download reviews data** to download ratings and reviews bulk data in .csv format.
 
-1. C1 can also download "Power BI template" to view trends in a dashboard
-2. Now open the downloaded Template, it will open in Power BI app. After opening this template it will show "Access to web content." then close this popup, and then close the "Refresh" error message as well.
-3. Now go to Home menu, and click on "Edit queries", and then click on "Data source settings".
-4. Now on "Data source settings" popup window, click on Change Source there is a url edit box.
-5. In the URL text box, give the path of the previously downloaded reviews data, e.g. c:\reviews\ReviewsData.csv file.
-6. Now click ok and then click Apply changes 
-7.It will take 1-2 minutes to apply the data source, then click on Trends sheet to view ratings and reviews trends.
+##  View ratings and reviews trends
 
+Moderators can also download the PowerBI template to view trends in a dashboard.
+
+To view ratings and reviews trends, do the following.
+
+1. ???download the PowerBI template???
+1. Open the downloaded template using the Power BI app. After opening the template, the **Access to web content** appears. Close the dialog box, and then close the "Refresh" error message as well.
+1. Go to **Home** and click **Edit queries**, and then click **Data source settings**.
+1. In the **Data source settings** dialog box, click **Change Source**.
+1. In the **URL** text box, enter the path of the previously downloaded reviews data, e.g. c:\reviews\ReviewsData.csv file.
+1. Click **OK** and then click **Apply changes**. It will take 1-2 minutes to apply changes to the data source.
+1. Click **Trends sheet** to view ratings and reviews trends.
 
 Refer to the following screenshots for more details:
 
