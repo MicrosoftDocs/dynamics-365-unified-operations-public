@@ -35,7 +35,7 @@ Video player is used to support video playback. It supports the following media 
 
 ## Ambient video player 
 
-Ambient video player supports short informational videos. It should be used for videos less than 5 seconds that don’t have audio. It supports limited video playback controls such as play and pause.  
+Ambient video player supports short informational videos. It should be used for videos less than 5 seconds. It supports limited video playback controls such as play and pause.  
 
 ### Usage examples for ecommerce: 
 
@@ -49,8 +49,9 @@ Properties for Ambient video player :
 | Property name     | Values        | Property Description                                         |
 | ----------------- | ------------- | ------------------------------------------------------------ |
 | Auto play         | True or False | Auto plays the video when this setting is turned on          |
+| Mute              | True or False | Mutes the audio. The default value is True for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user plays the video.  |
 | Loop              | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media             |               | This is video file that should be played in the video player |
+| Media             |               | This is video file that should be played in the video player.Only mp4 media type is supported |
 | Playback controls | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
 
  
@@ -73,8 +74,9 @@ Properties for Video player:
 | Property name          | Values        | Property Description                                         |
 | ---------------------- | ------------- | ------------------------------------------------------------ |
 | Auto play              | True or False | Auto plays the video when this setting is turned on          |
+| Mute                   | True or False | Mutes the audio. The default value is false for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user chooses to play the video.  |
 | Loop                   | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media                  |               | This is the video file that should be played in the video player |
+| Media                  |               | This is the video file that should be played in the video player. Only mp4 media type is supported |
 | Playback controls      | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
 | Play full screen       | True or False | The video can be played in full screen if this option is true |
 | Controls               | True or False | All controls will be shown when this option is shown. This includes Play, Pause, Progress, Closed captions etc |
@@ -82,7 +84,6 @@ Properties for Video player:
 | Mask level             | 0-100         | A mask can be applied to the video for styling.              |
 | Full screen icon style | Square Arrow  | This defines the style of the full screen icon shown on the video player. |
 
- 
 
 ## Creating a page with a Video player module  
 
