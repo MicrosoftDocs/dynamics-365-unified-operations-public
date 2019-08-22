@@ -47,7 +47,7 @@ In Asset Management, you can analyze asset fault registrations to get an overvie
 6. Click **Update calculations** to show your selections on the screen. 
 
 >[!NOTE]
->Every time you activate or deactivate buttons in the **Group by...** action pane groups, remember to click the **Update calculations** button after you have changed the selections. This is required because a large amount of data is processed as you are recalculating fault probability.
+>Every time you activate or deactivate buttons in the **Group by...** action pane groups, remember to click the **Update calculations** button after you changed the selections. This is required because a large amount of data is processed as you are recalculating fault probability.
 
 There are many ways to analyze fault registrations. Below you see examples in five screenshots of how different data selections provide different pieces of information. You will see how different selections provide more insight and detail when analyzing asset fault registrations.
 
