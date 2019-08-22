@@ -48,7 +48,7 @@ You can make a calculation for a specific item to get an overview of where in As
 
 [Work order purchase](../work-orders/procurement.md)
 
-## Make an item where used calculation
+## Make an item-where-used calculation
 
 1. Click **Asset management** > **Inquiries** > **Item where used**, or select the **Item where used** button on one of the pages mentioned above.
 
