@@ -44,7 +44,7 @@ In Asset Management, you can calculate various Key Performance Indicators (KPIs)
 
 5. On the **Overview** FastTab, the results of the calculation are displayed in grid view. Each asset is displayed on a separate line.
 
-6. On the **KPIs for selected line** FastTab, you see calculations for the asset selected on the **Overview** FastTab. The KPI values are categorized regarding **Time**, **Availability**, **Work orders**, **Maintenance**, **Faults**, and **Maintenance downtime**. You're also able to see cost registrations and, if available, the replacement value registered on the asset.
+6. On the **KPIs for selected line** FastTab, you see calculations for the asset selected on the **Overview** FastTab. The KPI values are categorized regarding **Time**, **Availability**, **Work orders**, **Maintenance**, **Faults**, **Maintenance downtime**, and **Cost**.
 
 In the table below, you'll find a description of the fields on the **Asset KPIs** page.
 
