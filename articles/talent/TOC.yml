@@ -213,7 +213,7 @@
       - name: Set up the components of a job
         href: create-job.md
       - name: Streamlined employee entry and navigation
-        href: streamlinedemployeeentry.md
+        href: streamlined-employee-entry.md
       - name: Create departments and include them in the department hierarchy
         href: create-department-add-department-hierarchy.md
       - name: Set up HR parameters across legal entities
