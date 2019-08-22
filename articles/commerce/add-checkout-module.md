@@ -38,41 +38,40 @@ This topic describes how to add a checkout module to a page and set the required
 
 ## Overview
 
-A checkout module is container that is used for hosting all the modules that are necessary to create an order. A checkout module can include modules that handle shipping address, shipping methods, billing information, order summary, and other infomation related to a customer order. It presents a step-by-step flow for the user to enter all the relevant information needed to make a purchase.  
+A checkout module is container that is used for hosting all the modules that are necessary to create an order. A checkout module can include modules that handle shipping address, shipping methods, billing information, order summary, and other infomation related to a customer order. It presents a step-by-step flow for the customer to enter all the relevant information needed to make a purchase.  
 
 A checkout module renders data based on the cart id, which is derived from the page context. This means that a checkout module cannot be used on a page that does not have the cart context, like a marketing or home page. 
 
 ## Properties of the checkout module 
 
-A checkout module appears to the user as a series of steps that handle information such as shipping address, shipping method, etc. The section heading for each step is authored in the checkout module with a heading tag. A width property can be configured to indicate if items in the module should fit to width or fill the screen.  
+A checkout module appears to the customer as a series of steps that handle information such as shipping address, shipping method, etc. The section heading for each step is authored in the checkout module with a heading tag. A width property can be configured to indicate if items in the module should fit to width or fill the screen.  
 
 A checkout module has multiple slots that can contain other modules such as a checkout information module, order summary module, and place order module. Each slot supports a set of modules that will appear in a specific layout on the page. For example, the checkout information slot contains all of the modules needed to trigger a checkout, such as shipping address and payment method. The order summary slot shows the order summary and place order action. The place order slot also supports place order action. To optimize placing orders from various platforms, there are two slots where place order modules can be defined.  
 
 ### Modules available in Checkout 
 
-**Shipping address:** The Shipping address module enables a user to add or select the shipping address for the order. If the user is signed in, any address that was previously saved will be displayed for the user to choose from. The user can also add a new address. The shipping address is for all items in the order that require shipping and cannot be customized on a line item basis. Shipping address formats are defined per country, which is respected by the shipping address module. The module does not provide address validation, although address validation can be implemented using a customization. 
+**Shipping address:** This module enables a customer to add or select the shipping address for the order. If the customer is signed in, any address that was previously saved will be displayed for the customer to choose from. The customer can also add a new address. The shipping address is for all items in the order that require shipping and cannot be customized on a line item basis. Shipping address formats are defined per country, which is respected by the shipping address module. The module does not provide address validation, although address validation can be implemented using a customization. 
 
-**Delivery options:** Delivery options enables the user to choose a delivery option for the order. Delivery options is based on the shipping address. If the shipping address is changed, the delivery options must retrieved again.  
+**Delivery options:** This module enables the customer to choose a delivery option for the order. Delivery options is based on the shipping address. If the shipping address is changed, the delivery options must retrieved again.  
 
-**Checkout section container:** This is a container that allows multiple modules to be placed inside to create a section within the Checkout flow.  For example, all payment modules can be configured inside this container to make them appear as one section. This container is added only to control the layout of the flow. 
+**Checkout section container:** This module is a container that allows multiple modules to be placed inside to create a section within the Checkout flow.  For example, all payment modules can be configured inside this container to make them appear as one section. This container is added only to control the layout of the flow. 
 
-**Gift card:** Gift card enables the user to pay for the order using a gift card. This module supports Dynamics 365 Internal gift cards only. One or more gift cards can be applied to an order. If the gift card balance is not sufficient, it can be combined with another payment method.  
+**Gift card:** This module enables the customer to pay for the order using a gift card. This module supports Dynamics 365 Commerce gift cards only. One or more gift cards can be applied to an order. If the gift card balance is not sufficient, it can be combined with another payment method method.  
 
-**Loyalty points:** Loyalty points enables the user to pay for the order using loyalty points. It provides a summary of available points and expiring points. It lets the user choose the amount they want to redeem using points. If the user is not signed-in or not a loyalty member this module will be hidden. 
+**Loyalty points:** This module enables the customer to pay for the order using loyalty points. It provides a summary of available points and expiring points, and allows the customer choose the amount they want to redeem using points. If the customer is not signed in or not a loyalty member, this module will be hidden. 
 
-**Credit card:** This module enables the user to pay for the order using credit card. Credit card integration is provided via Adyen payment connector.  See Adyen payment connector for more details on how to use this connector. 
+**Credit card:** This module enables the customer to pay for the order using credit card. Credit card integration is provided using the Adyen payment connector. See [Adyen payment connector](https://) for more details on how to use this connector. 
 
-**Billing address**:** This module enables the user to provide the billing information. This information is processed along with credit card by Adyen. It has an option to use Shipping address to Billing if the user prefers to do the same.  
+**Billing address**:** This module enables the customer to provide billing information, which is processed (along with credit card information) by Adyen. It has an option to use the customer's billing address as the shipping address if the customer prefers to do so.  
+**Contact information:** This module enables the customer to add or change the contact information (email) for the order. 
 
-**Contact information:** This module enables the user to add or change the contact information (email) for the order. 
+**Place order**: This module enables the customer to place the order. A link must be configured in the module to point to the order confirmation page.  
 
-**Place order**: This module enables the user to place the order. A link must be configured on the module to indicate the order confirmation page.  
+**Content rich block**: This module is used to contain any CMS-driven messaging, for example "For issues with your order, please contact 1-800-FABRIKAM." 
 
-**Content rich block**: A content rich block can be added in checkout container for any CMS driven messaging. E.g. “For issues with order contact 1-800-FABRIKAM” 
+**Order summary**: This module is used to show the cost breakdown of the order. 
 
-**Order summary**: Order summary is used to show the cost breakdown for the order 
-
-**Order line items:** Order line items is used for showing a summary of the items that will be included in the order 
+**Order line items:** This module is used to show a summary of the items that will be included in the order.
 
 ## Retail server interaction 
 
