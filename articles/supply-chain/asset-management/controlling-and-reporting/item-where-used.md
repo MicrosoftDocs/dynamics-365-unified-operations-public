@@ -64,7 +64,7 @@ You can make a calculation for a specific item to get an overview of where in As
 
 7. If you want to show dimensions related to the item, click **Dimensions display**, and select the dimensions to be shown.
 
-In the figure below, you see an example of an item where used calculation for item number "1000".
+In the figure below, you see an example of an item-where-used calculation for item number "1000".
 
 ![Figure 1](media/12-controlling-and-reporting.png)
 
