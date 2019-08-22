@@ -45,9 +45,9 @@ This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and O
 
 ## Test Recorder
 
-Test recorder is a new feature added in POS that significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your Retail POS production environments.
+Test recorder in POS significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before applying a Microsoft application update or applying custom code and configurations to your Retail POS production environments.
 
-Test recorder can record user actions in the client with exact fidelity for all the controls and DOM elements. In POS, test recorder captures the event that has occurred and stores along all pertinent information about the corresponding user action in real time. From this information, test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to the user action (such as the input data value and type, view context, or record context etc.) except for password information. Test recorder persists all the recorder information in memory during the recording and generate output file at the end of the recording with enough detail to help playback later using the RSAT tool exactly as the user performed them.
+Test recorder can record user actions in the client with exact fidelity for all the controls and DOM elements. In POS, test recorder captures the event that has occurred and stores along all pertinent information about the corresponding user action in real time. From this information, test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to the user action (such as the input data value and type, view context, or record context) except for password information. Test Recorder persists all the recorder information in memory during the recording and generate output file at the end of the recording with enough detail to help playback later using the RSAT tool exactly as the user performed them.
 
 > [!NOTE]
 > Test recorder captures all the data entered during the recording except for POS user passwords. Do not record any PII, secrets, sensitive, or user-specific data. All data entered during recording will be stored in the Recording.xml and other users can see it in Lifecycle service, Azure DevOps, variables.xlsx, Recording.xml, and during playback.
@@ -124,19 +124,19 @@ You can use the **Texts** and **Notes** fields in the annotation dialog to add t
 
 ### Input values
 
-User input values entered during the recording can be changed here. Ex: If you added product “0005” during recording, by default this value will be stored in the Recording.xml file but if you want to change you can change it to different product id and you can change the value here. The value will show up only f there is user input.
+User input values entered during the recording can be changed here. For example, if you added product “0005” during recording, by default this value will be stored in the Recording.xml file. If you want to change to different product id, then you can change the value here. The value will show up only if there is user input.
 
 [![Edit value and annotation](./media/EditAnnotation.png)](./media/EditAnnotation.png)
 
 ### Hide the test recorder panel
 
-Click the collapse icon to hide/show the test recorder panel during recording.
+Click the collapse icon to hide and show the test recorder panel during recording.
 
 [![Hide panel](./media/Hide.png)](./media/Hide.png)
 
 ### Test recorder floater control
 
-[![Floatter control](./media/Floatter.png)](./media/Floatter.png)
+[![Floater control](./media/Floatter.png)](./media/Floatter.png)
 
 The test recorder floater control helps during recording when the test recorder panel is hidden. The test recorder panel overrides the non-error dialogs or and portion of the POS view and sometimes you need to hide the panel to add validation in the dialogs or click the controls etc. If the test recorder panel is hidden and if you still need to access any of the test recording functionality like validation, pause or continue you can use this floater control.
 
@@ -156,7 +156,7 @@ Click **Pause** button to temporarily stop (pause) the recording session and con
 
 To resume the recording session after you've paused it, click **Recording**.
 
-## Record a test case in Retail POS:
+## Record a test case in Retail POS
 
 ### Create a recording
 
@@ -182,7 +182,7 @@ Follow these steps to create a new recording using test recorder:
 Validation mode during recording allows the user to validate values during test execution. For example, if you want to validate label text, an error message, or that the item price or tax is calculated correctly, you can do that using the validation mode feature. To enable validation during recording, click the enable validation mode toggle button.
 
 1.  Turn on the Enable validation mode toggle button.
-2.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
+2.  Click on values or text in the POS to add the validation step. There is no validation for password, sensitive data, and for fields where test recorder is not able to get the field values. During test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
 
     > [!NOTE]
     > In validation mode, test recorder will be in a paused state. Test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. For example, in validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
@@ -191,7 +191,7 @@ Validation mode during recording allows the user to validate values during test 
 
 3.  To end the recording session, click **Stop**.
 
-## Download options
+### Download options
 
 After you end the recording session, you can download your recording by clicking the Save to this PC.
 
@@ -201,12 +201,12 @@ The Recording.xml file is stored to the local file system, you must manually upl
 
 ## Install RSAT
 
-Download the RSAT .msi installer from [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Double-click the .mse file to run is. After installing the RSAT tool you need to install the Selenium and browser drivers. 
+Download the RSAT .msi installer from [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Double-click the .msi file to run is. After installing the RSAT tool you need to install the Selenium and browser drivers. 
 
 > [!NOTE]
 > You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are described in [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md). 
 
-Below are the required configurations for executing the Retail POS test cases:
+Below are the required configurations for executing the Retail POS test cases.
 
 ### Configure the Retail POS setting
 
@@ -287,11 +287,11 @@ You can modify the order in which test cases are executed using the up and down 
 
 When test cases complete execution, pass or fail status will be populated in the RSAT result column. You can click on the result column to see the error messages. More investigation details are available in Azure DevOps. From your Azure DevOps project page, go to **Test > Runs**.
 
-All error messages are also available locally under: **C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg<TestCaseId>.txt**.
+All error messages are also available locally under: **C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg\<TestCaseId\>.txt**.
 
 ## System and metadata files
 
-Below is the list of different files generated during recording, Test execution and parameters files and playback.
+Below is the list of files generated during recording, test execution, and playback.
 
 | File Name      | Description | File generation flow | File save flow |
 |----------------|-------------|----------------------|----------------|
@@ -313,5 +313,5 @@ You must manually delete these files and secure them if required. All the above 
 + Keep individual recordings short and focus on a business task performed by one user, like creating a sale transaction. This simplifies maintainability and reusability of test cases.
 + Don’t record any scenario which includes secrets.
 + Recording and playback must be done in the same screen layout and resolution. If recording and playback done in different layout and resolution, then playback will fail.
-+ Once recorded, you will not be able to change the POS username during playback. Always record using the right username which will be later used for playback.
++ Once recorded, you will not be able to change the POS username during playback. Always record using the same username which will be later used for playback.
 
