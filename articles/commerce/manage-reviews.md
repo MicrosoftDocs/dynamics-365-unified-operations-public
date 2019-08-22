@@ -48,7 +48,7 @@ Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate rev
   
 1. Go to **Site Management > Global Settings**.
 1. Under **RnR Moderator**, click **Manage**.
-1. Search feature at the top of page allows you to filter the reviews by product id, product name, or review text.
+1. Use the **Search** feature at the top of page to filter reviews by product ID, product name, or review text.
 1. Additionally, there are filters to limit displayed reviews by time period, rating, channel, or takedown / responded / reported concern status.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
@@ -61,11 +61,11 @@ To respond to a review, do the following.
 
 1. Go to **Site Management > Global Settings**.
 1. Under **RnR Moderator**, click **Manage**.
-1. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
-1. Identify the review that needs a response by selecting it in the left panel.
-1. In the right panel, provide your response by first clicking “Add a response” button.
-1. Type the response text and choose what responder name to show. By default, the response is posted as “Moderator”.
-1. Finally, click the “Post response” button.
+1. ???
+1. In the left pane, select the review that needs a response.
+1. In the right pane, click **Add a response** to provide a response.
+1. Enter the response text and choose which responder name to display. The default responder name is "Moderator."
+1. When done, click **Post response**.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
 
@@ -77,28 +77,28 @@ To take down a review, do the following.
 
 1. Go to **Site Management > Global Settings**.
 1. Under **RnR Moderator**, click **Manage**.
-1. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
-1. Identify the review that needs a response by selecting it in the left panel.
-1. In the right panel, select a takedown reason and click on Take down button.
+1. ???
+1. In the left pane, select the review that needs to be taken down.
+1. In the right pane, select a takedown reason and click **Take down**.
 	
 ## Delete a customer's reviews on request 
 
-Sometimes customers want their ratings and reviews data to be permanently deleted from an e-Commerce website. When a moderator receives a removal request from a customer, they can remove the customer's data by using the Delete reviews feature. To locate users, the email address the customer used to sign-in and provide reviews is required. 
+Sometimes a customer wants their ratings and reviews data to be permanently deleted from an e-Commerce website. When a moderator receives a removal request from a customer, they can remove the customer's data by using the delete reviews feature. To locate users, the email address the customer used to sign in and provide reviews is required. 
 
 To locate and delete user data, do the following.
 
-1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
-2. Click on Reviews in the left nav and then click on Delete link. 
-3. Input C2's email address in "Search for users by email address" text box.
-4. Click Search button.
-5. If specified user has any reviews activity (e.g. Review submission, or voted on helpfulness of other's reviews, or expressed concern on others review) results will show up and gives "Delete" action for C1 to act on.
-6. C1 will be prompted for confirmation, "Are you sure you want to delete?" with Yes and No options. 
+1. Go to **Site Management > Global Settings**.
+1. Under **RnR Moderator**, click **Manage**. 
+2. Click on Reviews in the left nav and then click on **Delete**. 
+3. In the **Search for users by email address** box, enter the customer's email address and click **Search**.
+5. If the customer has any reviews activity (for example, review submissions, votes on the helpfulness of other's reviews, or comments on another customer's review), the results will be displayed and each item will have a "Delete" option for the moderator to act on.
+6. Click **Delete** for the review item you want to delete. When prompted for confirmation, click **Yes**. 
 	
 Refer to the following screenshot for more details.  
 	
-Notes:
-1. It may take up to 7 days to remove the data completely across our system entities. C1 should instruct their C2's, those requested data deletion, appropriately.
-2. If a user has changed their name, in the account settings, during their tenure on their website, multiple records will show up in the search results.  C1 should click on "Delete" action per each record to delete C2's data completely. 
+[!NOTE]
+ - It may take up to 7 days for data to be completely removed from the system. Moderators should notify customers of this delay.
+ - If a customer has changed their name in account settings, multiple items may display in the search results. The moderator should click **Delete** for each item to completely delete the customer's data. 
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-delete-reviews.png) 
 
