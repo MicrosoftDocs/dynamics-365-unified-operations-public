@@ -45,47 +45,30 @@ After your organization has purchased a subscription to Finance and Operations, 
 4. If there is an active **Dynamics 365 Unified Operations** subscription displayed, you can proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
 5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
 6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
-7. The Tenant Administrator is assigned the Project Owner to the provisioned Implementation Project. As a final step, the Tenant Administrator must add additional organization and/or partner team members who will be participating in the Dynamics 365 for Finance and Operations implementation. This is performed in LCS Project User Management, selected from the LCS Implementation Project menu.
-
-   ![LCS Project User Management](./media/LCSProjectUsersMenu.PNG)
+7. The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.  
    > [!NOTE]
-   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, an additional Project Owner must be assigned to the implementation project.
+   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, at least one additional Project Owner must be assigned to the implementation project.
 
-   For an overview of the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
+   For an overview of LCS user management, including the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
 ## LCS implementation project workspace
 
-After the Tenant Administrator has completed the Finance and Operations subscription activation and added the appropriate users, team members can access the **Implementation project** workspace. 
+After the Tenant Administrator has completed the Finance and Operations subscription activation and added additional project owners as appropriate, those team members can access the **Implementation project** workspace.
+
+The first activity to be completed in LCS is **Project onboarding**. For all LCS implementation projects created **on or after August 22, 2019, PST**, this step is mandatory prior to deploying any of the Microsoft-managed environments. You can access the **Project onboarding** feature using the action center notification or the LCS Implementation project menu. You must have Project owner security role to access **Project onboarding** in LCS.
 
 To get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). 
 
 ## FastTrack onboarding services
 
-After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will email the project team to request a call to discuss onboarding services. (Note that this email will originate from ond365@microsoft.com, so please ensure that any spam blocker/filter allows email from this address.) For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
+After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will monitor your Onboarding progress. For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
 
-The FastTrack Onboarding meeting is a 60-minute conference call. During this call, the team will introduce the implementation team to the FastTrack program as well as assist with the initial configuration of the LCS project and related tasks:
+All LCS **Implementation projects** will receive an email from the FastTrack team welcoming them to the service upon successful completion of Project Onboarding. Should Project onboarding not be completed within a few weeks after LCS **Implementation project** creation, we will send a reminder to the project team.
 
-- Tenant validation
-- Introduction to LCS
-- Setup of LCS project users
-- Setup of Microsoft Azure DevOps
-- Subscription estimator/Usage profiler
-- Environment planning
-- Environment deployment
-- Introduction to servicing, support, and service health
-- Readiness planning
+For qualifying projects (see [Eligibility for FastTrack for Finance and Operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview#eligibility-for-fasttrack-for-finance-and-operations)), FastTrack will email the project team offering an Onboarding meeting, which is a 60-minute conference call. The onboarding meeting is optional. During this call, the FastTrack team will introduce the FastTrack program and discuss important topics such as tenant validation, environment planning, application lifecycle management, go-live readiness. If necessary, we will assist the team complete **Project onboarding** during this call. It is suggested that Project managers and Delivery leads as well as Solution Architects from customer and partner participate in the onboarding meeting. 
+>Note
+> All onboarding-related emails from the FastTrack team will originate from Dynamics 365 Onboarding (<ond365@microsoft.com>), so please ensure that any spam blocker/filter allows email from this address.
 
-It is suggested that the following project roles participate in the onboarding meeting. Other roles are optional.
-
-**Customer**
-
-- Project owner
-- Microsoft Business Center administrator, if the license was procured through a Volume Service agreement with Microsoft
-
-**Partner**
-
-- Delivery lead/solution architect
-- Project manager
 
 ## Key data to keep current in LCS
 
@@ -95,4 +78,4 @@ Be sure to keep the milestone dates in your LCS project current. In this way, yo
 
 Milestone dates are stored in the LCS implementation methodology. For more information, see the [Methodologies](../../dev-itpro/lifecycle-services/lcs-works-lcs.md#methodologies) section of the "LCS for Customers" topic.
 
-The onboarding call is an optional service. Partners who are experienced with Finance and Operations implementations can work through the tasks with their customers without the help of the FastTrack team. In these cases, it's especially important that you keep the project users and milestone dates current.
+
