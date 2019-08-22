@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Asset fault control
-description: This topic explains asset fault control in Asset Management.
+title: Asset fault analysis
+description: This topic explains asset fault analysis in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,25 +30,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset fault control
+# Asset fault analysis
 
 In Asset Management, you can analyze asset fault registrations to get an overview of the total number of faults registered during a specific period. Fault registrations can be analyzed from different perspectives, for example with focus on assets, asset types, functional locations, fault symptoms, or fault types.
 
-1. Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault control**.
+1. Click **Asset management** > **Inquiries** > **Asset fault** > **Asset fault analysis**.
 
-2. Click **Object fault control** > **Select faults**.
+2. In the **Asset fault analysis calculation** dialog, you can use the **Level** field to indicate how detailed you want the asset fault lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all asset fault lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all asset fault lines on all the functional location level to which they are related.
 
-3. If you want to limit the search, you can select specific objects, fault dates, fault causes, and fault remedies on the **Records to include** FastTab.
+3. If you want to limit the search, you can select specific assets, fault dates, fault causes, and fault remedies on the **Records to include** FastTab.
 
-4. You can use the **Level** field to indicate how detailed you want the fault control lines to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location hierarchy, all object fault control lines for a functional location will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all object fault control lines on all the functional location level to which they are related.
+4. Click **OK** to start the calculation.
 
-5. Click **OK** to start the calculation.
+5. On the **Asset fault analysis** tab, click one or more buttons in the **Group by...** action pane groups to display the detail level you want to see. Activated buttons are highlighted. You can activate or deactivate a button by clicking on it..
 
-6. Click **Edit**.
+6. Click **Update calculations** to show your selections on the screen. 
 
-7. On the **Object fault control** tab, click one or more buttons in the **Group by...** action pane groups to display the detail level you want to see. Activated buttons are highlighted. You can activate or deactivate a button by clicking on it.
-
-8. On the **Object fault control** tab, click **Update**.
+7. Activate or deactivate buttons as required, and click **Update calculations** to update the screen.
 
 >[!NOTE]
 >Every time you activate or deactivate buttons in the **Group by...** action pane groups, remember to click the **Update** button after you have changed the selections. This is required because a large amount of data is processed as you are recalculating fault probability.
