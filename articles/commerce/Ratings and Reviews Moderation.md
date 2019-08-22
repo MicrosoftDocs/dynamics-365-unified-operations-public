@@ -1,84 +1,91 @@
 ---
 # required metadata
 
- 
-
-title: Ratings and Reviews Moderation tool. 
-description: This topic explains how to use Ratings and Reviews Moderation tool 
+title: Manage ratings and reviews 
+description: This topic explains how to manage ratings and reviews using the Ratings and Reviews Moderation tool.
 author:  gvrmohanreddy 
-manager: JeffBl
-ms.date: 08/30/2019
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
- 
-
 # optional metadata
-
- 
 
 # ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: 
+ms.search.region: Global
 ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Ratings and Reviews  Moderation Tool
+# Manage ratings and reviews
 
-Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate review text by redacting profane words. Additionally, there is review moderation tool, under eCommerce Authoring tool, available for the following actions:
-1. Moderate reviews by responding to reviews or taking them down.
-2. Bulk import review data across products into a provided Power BI template and analyze ratings and reviews trends.
-3. Delete end user's reviews upon a request by C2.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-  
+This topic explains how to manage ratings and reviews using the Dynamics 365 Commerce Ratings and Reviews Moderation tool.
+
+## Overview
+
+Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, the Ratings and Reviews Moderation tool can be used to do the following.
+
+- Moderate reviews by responding to them or taking them down
+- Bulk import review data across products into a provided Power BI template and analyze ratings and reviews trends
+- Delete a user's reviews after a request by the user
+
 ## Reading Reviews 
   
-1. Go to eCommerce Authoring Tools .
-2. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
-3. Search feature at the top of page allows you to filter the reviews by product id, product name, or review text.
-4. Additionally, there are filters to limit displayed reviews by time period, rating, channel, or takedown / responded / reported concern status.
+1. Go to **Site Management > Global Settings**.
+1. Under **RnR Moderator**, click **Manage**.
+1. Search feature at the top of page allows you to filter the reviews by product id, product name, or review text.
+1. Additionally, there are filters to limit displayed reviews by time period, rating, channel, or takedown / responded / reported concern status.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
 
 ## Respond to a review 
 
-Sometimes end users who purchased a product express their satisfaction or dissatisfaction or may have misunderstandings about a product’s usage. As a C1 moderator, you can post a response to a review that will be in-line with the review on the eCommerce website. Use the following steps to respond to a review.
+Sometimes customers who have purchased a product express their satisfaction or dissatisfaction or may have misunderstandings about a product's usage. As a moderator, you can post a response to a review that will display inline with the review on the site. 
 
-1. Go to eCommerce Authoring Tools .
-2. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
-3. Identify the review that needs a response by selecting it in the left panel.
-4. In the right panel, provide your response by first clicking “Add a response” button.
-5. Type the response text and choose what responder name to show. By default, the response is posted as “Moderator”.
-6. Finally, click the “Post response” button.
+To respond to a review, do the following.
+
+1. Go to **Site Management > Global Settings**.
+1. Under **RnR Moderator**, click **Manage**.
+1. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
+1. Identify the review that needs a response by selecting it in the left panel.
+1. In the right panel, provide your response by first clicking “Add a response” button.
+1. Type the response text and choose what responder name to show. By default, the response is posted as “Moderator”.
+1. Finally, click the “Post response” button.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
 
+## Take down a review 
 
-## Takedown a review 
+Sometimes there is a business justification for a moderator to take down a customer review. 
 
-When you have a right business justification to takedown a review, use the following steps:
+To take down a review, do the following.
 
-1. Go to eCommerce Authoring Tools .
-2. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
-3. Identify the review that needs a response by selecting it in the left panel.
-4. In the right panel, select a takedown reason and click on Take down button.
+1. Go to **Site Management > Global Settings**.
+1. Under **RnR Moderator**, click **Manage**.
+1. Click to expand the Reviews section in the left navigation menu, then choose the moderation link.
+1. Identify the review that needs a response by selecting it in the left panel.
+1. In the right panel, select a takedown reason and click on Take down button.
 	
-	
-## Delete user reviews 
-Sometimes end users (C2) want their ratings and reviews data to be permanently deleted on a given eCommerce website. When C1 receives such a request from C2, they can remove the data by using the Delete reviews feature. To locate users, the email address the C2 used to sign-in and provide reviews is required. Use the following steps to locate and delete user data:
+## Delete a customer's reviews on request 
 
+Sometimes customers want their ratings and reviews data to be permanently deleted from an e-Commerce website. When a moderator receives a removal request from a customer, they can remove the customer's data by using the Delete reviews feature. To locate users, the email address the customer used to sign-in and provide reviews is required. 
+
+To locate and delete user data, do the following.
 
 1. Go to [eCommerce Authoring Tools](https://eCommerceAuthoringTool/) . 
 2. Click on Reviews in the left nav and then click on Delete link. 
