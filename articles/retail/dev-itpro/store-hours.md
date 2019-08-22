@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application users
+audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
