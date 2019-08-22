@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Object KPIs
-description: This topic explains object KPIs in Enterprise Asset Management.
+title: Asset KPIs
+description: This topic explains asset KPIs in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,23 +30,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Object KPIs
+# Asset KPIs
 
-This topic explains object KPIs in Enterprise Asset Management. In Enterprise Asset Management, you can calculate various Key Performance Indicators (KPIs) for objects and object types. KPIs are used to get an overview of performance on objects in relation to, for example, uptime, downtime, repair time, and Mean Time Between Failure (MTBF).
+In Asset Management, you can calculate various Key Performance Indicators (KPIs) for assets and asset types. You use KPIs to get an overview of performance on assets in relation to, for example, uptime, downtime, repair time, and Mean Time Between Failure (MTBF).
 
-1. Click **Enterprise asset management** > **Inquiries** > **Objects** > **Object KPIs**.
+1. Click **Asset management** > **Inquiries** > **Assets** > **Asset KPIs**.
 
-2. Click **Calculate**.
+2. In the **Calculate asset KPIs** dialog, you select the **Time scale** to be used in the calcualtion, and a period in the **From date** and **To date** fields. 
 
-3. In the **Calculate object KPIs** drop-down, you select a period for KPIs to be calculated. On the **Records to include** FastTab, you can select objects and object types to be included in the calculation.
+3. On the **Records to include** FastTab, you can select specific assets and asset types to be included in the calculation, if required.
 
 4. Click **OK** to start the calculation.
 
-5. On the **Overview** FastTab in the **Object KPIs** form, the results of the calculation are displayed in grid view. Each object is displayed on a separate line.
+5. On the **Overview** FastTab, the results of the calculation are displayed in grid view. Each asset is displayed on a separate line.
 
-6. On the **General** FastTab, you see calculations for the object selected on the **Overview** FastTab. The KPI values are categorized regarding **Time**, **Availability**, **Faults**, and **Cost**.
+6. On the **KPIs for selected line** FastTab, you see calculations for the asset selected on the **Overview** FastTab. The KPI values are categorized regarding **Time**, **Availability**, **Work orders**, **Maintenance**, **Faults**, and **Maintenance downtime**. You're also able to see cost registrations and, if available, the replacement value registered on the asset.
 
-In the table below, you will find a short explanation of the fields in Object KPIs.
+In the table below, you'll find a description of the asset KPIs.
 
 | Field                   | Description                                                                                                                                                                                                                                                                                           |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
