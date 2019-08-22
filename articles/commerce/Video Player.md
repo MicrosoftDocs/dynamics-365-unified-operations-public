@@ -44,7 +44,7 @@ Ambient video player supports short informational videos. It should be used for 
 
 
 
-Properties for Ambient video player :
+### Properties for Ambient video player:
 
 | Property name     | Values        | Property Description                                         |
 | ----------------- | ------------- | ------------------------------------------------------------ |
@@ -60,7 +60,7 @@ Properties for Ambient video player :
 
 Video player can be used for videos that we want to showcase in the ecommerce site. It supports all play back capabilities such as play, pause, full size, closed captions etc. The video player supports closed captions and also supports customization of closed captions – font size, background color etc to meet Microsoft Accessibility Standards. 
 
-Usage examples for ecommerce: 
+### Usage examples for ecommerce: 
 
 - It can be used for instructional video in product details page or marketing page 
 - It can be used to market promotions and policies on any marketing page 
@@ -68,7 +68,7 @@ Usage examples for ecommerce:
 
  
 
-Properties for Video player:
+### Properties for Video player:
 
 | Property name          | Values        | Property Description                                         |
 | ---------------------- | ------------- | ------------------------------------------------------------ |
@@ -84,7 +84,7 @@ Properties for Video player:
 | Full screen icon style | Square Arrow  | This defines the style of the full screen icon shown on the video player. |
 
 
-## Creating a page with a Video player module  
+## Creating a page with video player module  
 
 This section explains how to add a video player module to a new page and set the required properties. Refer to Templates and Pages for more details. 
 
