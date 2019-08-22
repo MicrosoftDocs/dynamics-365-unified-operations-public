@@ -5,7 +5,7 @@ title: Add a checkout module to a page
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 manager: annbe
-ms.date: 0/01/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
