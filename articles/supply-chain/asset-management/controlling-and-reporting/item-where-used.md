@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Items where used
-description: This topic explains how to get an overview of where items have been used in Asset Management.
+title: Item where used
+description: This topic explains how to get an overview of where an item is used in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Items where used
+# Item where used
 
 You can make a calculation for a specific item to get an overview of where in Asset Management the item has been used. The results show the context in which the item has been used during its lifetime. The **Item where used** page can be opened from the main Asset management menu, and it can also be accessed from the following pages:
 
