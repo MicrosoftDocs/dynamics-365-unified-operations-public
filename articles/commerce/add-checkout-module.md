@@ -42,7 +42,7 @@ A checkout module is container that is used for hosting all the modules that are
 
 A checkout module renders data based on the cart id, which is derived from the page context. This means that a checkout module cannot be used on a page that does not have the cart context, like a marketing or home page. 
 
-## Properties of the checkout module 
+## Checkout module properties
 
 A checkout module appears to the customer as a series of steps that handle information such as shipping address, shipping method, etc. The section heading for each step is authored in the checkout module with a heading tag. A width property can be configured to indicate if items in the module should fit to width or fill the screen.  
 
@@ -75,30 +75,27 @@ A checkout module has multiple slots that can contain other modules such as a ch
 
 ## Retail server interaction 
 
-All the checkout information such as shipping address and shipping methods are stored in the cart and processed as part of the order. The only exception is the credit card information, which is processed directly using Adyen payment connector. The payment is authorized but not charged. 
+Checkout information such as shipping address and shipping method are stored in the cart and processed as part of the order. The only exception is the credit card information, which is processed directly using the Adyen payment connector. The payment is authorized but not charged. 
 
 ## Add a checkout module to a new page and set the required properties  
 
 To add a checkout module to a new page and set the required properties, do the following.
 
-1. In tooling, create a new page template “Checkout template”.
-2. In the Main slot of the template, add Checkout.
-3. Check-in and Publish.
-4. Now create a new page with the “Checkout template” and call it “Checkout page”.
-5. On the page outline, add Default page.
-6. To the Default page, add Checkout module.
-7. Add a Heading for the page. Add a section heading for each section of the Checkout – Shipping address, Shipping Methods, Payment information, Contact information.
-8. To the Checkout information slot, add Shipping address module.
-9. To the Checkout information slot, add Delivery options module.
-10. To the Checkout information slot, add Checkout section container module.
-11. To the Checkout section container, add Gift Card, Loyalty and Credit card modules. This will ensure all payment methods appear within a section. 
-12. To the Checkout information slot, add Contact information module.
-13. In the above setup, there should be 4 sections on the Checkout information slot.
-14. In the Order summary slot, add  order summary module and place order module.
-15. In the order summary slot, add a content rich block with text “For questions on orders, contact 1-800-FABRIKAM”.
-16. In the Place order slot, add place order module.
-17. Save and Preview. Some modules may not render in preview as they don’t have a Cart context.
-18. Check-in and Publish.
+1. Go to **Templates > New Template** and name the new template "Checkout template."
+1. In the **Main** slot of the template, add **Checkout**.
+1. Save, check in, and publish the template.
+1. Go to **Pages > New Page**, select "Checkout template" and name the page "Checkout page."
+1. Add a default page module to the page.
+1. Add a checkout module to the default page module.
+1. Add a heading for the page. Add a section heading for each section of the checkout module (shipping address, shipping methods, payment information, contact information).
+1. In the **Checkout information** slot, add shipping address, delivery options, checkout section container, and contact information modules.
+    - There should now be four sections in the **Checkout information** slot.
+1. In the **Checkout section container** module, add gift card, loyalty and credit card modules. This will ensure that all payment methods appear within a section. 
+1. In the **Order summary** slot, add order summary, place order, and content rich block modules. 
+1. In the content rich block module, add the text "For questions about your order, contact 1-800-FABRIKAM."
+1. In the **Place order** slot, add a place order module.
+1. Save and preview the page. Some modules may not render in preview as they don't have a cart context.
+1. Check in and publish the page.
     
 
-Checkout can be built as a Fragment <link> since there is only one instance of Checkout. 
+Checkout functionality can also be built using a fragment, since there is only one instance of checkout. To configure checkout using a fragment instead of a module, see [TBD](https://). 
