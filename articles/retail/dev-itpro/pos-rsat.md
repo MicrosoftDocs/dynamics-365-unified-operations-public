@@ -62,9 +62,7 @@ The Regression Suite Automation Tool (RSAT) enables functional power users to ex
 + You need Microsoft Excel installed to generate and edit test parameters.
 + You must have an Azure DevOps project to store and manage your test cases, test plans and test case results.
 
-## Install and configure
-
-### Enable Test recording in Retail POS application
+## Enable Test recording in Retail POS application
 
 To enable task recording in POS, follow these steps in Retail headquarters:
 
@@ -124,142 +122,121 @@ You can use the **Texts** and **Notes** fields in the annotation dialog to add t
 + **Text:** Text that you enter in the **Text** field appears *above* the step text in the test steps.
 + **Note:** Text that you enter in the **Notes** field appears *below* the step text in the LCS.
 
-### Value
+### Input values
 
 User input values entered during the recording can be changed here. Ex: If you added product “0005” during recording, by default this value will be stored in the Recording.xml file but if you want to change you can change it to different product id and you can change the value here. The value will show up only f there is user input.
 
 [![Edit value and annotation](./media/EditAnnotation.png)](./media/EditAnnotation.png)
 
-### Hide test recorder panel:
+### Hide the test recorder panel
 
 Click the collapse icon to hide/show the test recorder panel during recording.
 
 [![Hide panel](./media/Hide.png)](./media/Hide.png)
 
-### Test recorder floater control:
+### Test recorder floater control
 
 [![Floatter control](./media/Floatter.png)](./media/Floatter.png)
 
-We added the new test recorder floater control to help during recording when the test recorder panel is hidden. The test recorder panel overrides the non-error dialogs or and portion of the POS view and sometimes you need to hide the panel to add validation in the dialogs or click the controls etc. If the test recorder panel is hidden and if you still need to access any of the test recording functionality like validation, pause or continue you can use this floater control.
+The test recorder floater control helps during recording when the test recorder panel is hidden. The test recorder panel overrides the non-error dialogs or and portion of the POS view and sometimes you need to hide the panel to add validation in the dialogs or click the controls etc. If the test recorder panel is hidden and if you still need to access any of the test recording functionality like validation, pause or continue you can use this floater control.
 
-### Test recorder floater controls:
-
-### Move:
+#### Move
 
 The move control allows you to move the floater control within the POS app.
 
-### Validation:
+#### Validation
 
 Turn on the validation mode and pauses the recording. You need to turn of the validation mode to continue with the recording.
 
-### Pause:
+#### Pause
 
 Click **Pause** button to temporarily stop (pause) the recording session and continue with the operation. Steps that you perform after you click **Pause** aren't recorded.
 
-### Recording:
+#### Recording
 
 To resume the recording session after you've paused it, click **Recording**.
 
-### Record test case in Retail POS:
+## Record a test case in Retail POS:
 
-Create a recording
-------------------
+### Create a recording
 
 Follow these steps to create a new recording using test recorder:
 
 1.  Start Retail Cloud POS, and sign in.
-
 2.  On the **Settings** page, in the **Task Recorder** section, click **Open test recorder**.
 
-[![Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
+    [![Test recorder](./media/CreateTest.png)](./media/CreateTest.png)
 
 3.  Click the Create a new recording.
 
-[![New recording](./media/NewTest.png)](./media/Newtest.png)
+    [![New recording](./media/NewTest.png)](./media/Newtest.png)
 
 4.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**.
-
 5.  After you click **Start**, test recorder enters recording mode. The **test recorder** pane shows information and controls that are related to the recording process.
-
 6.  Perform the actions that you want to perform in the Retail POS user interface (UI).
 
-[![Test recorder steps](./media/Steps.png)](./media/Steps.png)
+    [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
 
-### Validation mode:
+### Validation mode
 
-Validation mode during recording allows the user to validate values during test execution. Ex: If you want to validate a label text, or the item price or tax is calculated correctly or validate any error message etc. can be done using the validation mode feature. To enable validation during recording enable the validation mode by clicking the enable validation mode toggle button.
+Validation mode during recording allows the user to validate values during test execution. For example, if you want to validate label text, an error message, or that the item price or tax is calculated correctly, you can do that using the validation mode feature. To enable validation during recording, click the enable validation mode toggle button.
 
-7.  Turn on the Enable validation mode toggle button.
+1.  Turn on the Enable validation mode toggle button.
+2.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
 
-8.  Click on values or text in the POS to add the validation step. We will not be able to add validation for password, sensitive data and for fields where test recorder is not able to get the field values. Later during test execution, the playback engine will check whether the value is same or not, accordingly the test case will be passed or failed.
+    > [!NOTE]
+    > In validation mode, test recorder will be in a paused state. Test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. For example, in validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
 
-**Note:** In validation mode, test recorder will be in paused state, test recorder will add only validations steps and POS will not respond to any user action other than adding validation steps. Ex: In validation mode you will not be able to navigate to different POS view or perform any POS functionality. You must turn off the validation mode to continue with the recording by clicking the Enable validation mode toggle button.
+    [![Test recorder validation](./media/Validation.png)](./media/Validation.png)
 
-[![Test recorder validation](./media/Validation.png)](./media/Validation.png)
+3.  To end the recording session, click **Stop**.
 
-9.  To end the recording session, click **Stop**.
-
-Download options
-----------------
+## Download options
 
 After you end the recording session, you can download your recording by clicking the Save to this PC.
 
 [![Save Test recorder output file](./media/Save.png)](./media/Save.png)
 
-The Recording.xml file is stored to the local file system, user have to manually upload to LCS or Azure DevOps and delete the file from the file system or secure it.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The Recording.xml file is stored to the local file system, you must manually upload to LCS or Azure DevOps and delete the file from the file system or secure it.
 
-### Install the RSAT:
+## Install RSAT
 
-**Download the Regression Suite Automation Tool.msi** to your machine and double-click it to run the installer. After installing the RSAT tool you need to install the selenium and browser drivers. The RSAT tool can be downloaded from this [link](https://www.microsoft.com/en-us/download/details.aspx?id=57357).
+Download the RSAT .msi installer from [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Double-click the .mse file to run is. After installing the RSAT tool you need to install the Selenium and browser drivers. 
 
-Note: You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are mentioned  in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool). Below are the required configurations for executing the Retail POS test cases using RSAT:
+> [!NOTE]
+> You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are mentioned  in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool). 
 
-### Configure the Retail POS setting:
+Below are the required configurations for executing the Retail POS test cases:
+
+### Configure the Retail POS setting
 
 1.  Open RSAT from your desktop.
-
 2.  Click the “Settings” button on the top right to configure RSAT.
-
 3.  Click the Retail POS tab.
-
 4.  Click the **Playback environment**.
 
-[![Playback environment](./media/Setting.png)](./media/Setting.png)
+    [![Playback environment](./media/Setting.png)](./media/Setting.png)
 
+    + **Cloud POS URL:** This is the URL of your Cloud POS environment where you want to do the test execution.
+    + **Retail Server URL:** Retail server URL to do activation. We will use this Retail Server URL to activate the device if it’s not activated before.
+    + **AAD user email:** AAD user email address to activate the device. AAD user must have permission to activate the device.
+    + **AAD password:** AAD user password to activate the device.
+    + **Store:** Store id (Retail channel) to execute the test. The test will be executed in this Store.
+    + **Device:** Device id to execute the test. The test will be executed in this device.
+    + **Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
 
-**Cloud POS URL:** This is the URL of your Cloud POS environment where you want to do the test execution.
+5.  Click the POS login credentials tab. Test recorder only captures the username during the recording from the POS. It does not store any password, but to execute the test you'll need both the login username and password for POS. To securely store the password information outside of the recording file, this tab captures the POS username and password. During test execution the user id is mapped to the same user id entered in the RSAT tool, and the password is retrieved. Enter all the username and password information used during the recording in the RSAT tool so that during test execution the password can be retrieved. If you do not do this, the test execution will fail saying logon details not found.
 
-**Retail Server URL:** Retail server URL to do activation. We will use this Retail Server URL to activate the device if it’s not activated before.
-
-**AAD user email:** AAD user email address to activate the device. AAD user must have permission to activate the device.
-
-**AAD password:** AAD user password to activate the device.
-
-**Store:** Store id (Retail channel) to execute the test. The test will be executed in this Store.
-
-**Device:** Device id to execute the test. The test will be executed in this device.
-
-**Default wait time:** Wait time in seconds before failing the test case if any element is not found. During test execution the playback engine will try to find the find element till this default wait time after that it will fail the test case saying element recorded is not found or loaded for playback.
-
-6.  Click the POS login credentials tab.
-
-Test recorder only captures the username during the recording from the POS, it will not store any password but to execute the test we need both the login username and password to login to POS. To securely store the password information instead of the recording file, we added this tab to capture the POS logon username and password. During test execution we will map the user id used in the recording file with the same user id entered in the RSAT tool and get the password. Please enter all the username and password used during the recording in the RSAT tool so that during test execution we can map and get the password or else the test execution will fail saying logon details not found.
-
- [![Test credential](./media/PosLogin.png)](./media/PosLogin.png)
+    [![Test credential](./media/PosLogin.png)](./media/PosLogin.png)
 
 6.  Click the New button.
 
-[![New test user](./media/EditPosUser.png)](./media/EditPosUser.png)
+    [![New test user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
 7.  In the username field enter the POS logon username.
-
 8.  Password field enter the POS logon password.
-
 9.  Repeat steps 6-8 to enter different POS logon username and password.
-
 10.  To edit the POS logon credential, click the Edit button.
-
 11.  To delete the POS logon credential, click the Delete button.
 
 ### Run:
@@ -341,3 +318,4 @@ The user must manually delete these files and secure it if required. All the abo
 4. Recording and playback must be done in the same screen layout and resolution. If recording and playback done in different layout and resolution, then playback will fail.
 
 5. Once recorded, you will not be able to change the POS username during playback. Always record using the right username which will be later used for playback.
+
