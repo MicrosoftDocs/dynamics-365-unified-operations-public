@@ -84,9 +84,10 @@ In the table below, you'll find a description of the asset KPIs.
 | Total cost              | Total costs posted on the object in the selected period.                                                                                                                                                                                                                                              |
 | Investment cost         | Costs posted on the object related to cost type "Investment" in the selected period. Cost types are set up on work order types.                                                                                                                                                                       |
 
-The figure below shows a screenshot of the interface.
+The figure below shows a screenshot of a KPI calculation for four assets.
 
-![Figure 1](media/15-controlling-and-reporting.png)
+![Figure 1](media/11-controlling-and-reporting.png)
 
-- You can multi-select several objects in **All objects** and click the **Object KPIs** button on the **General** tab. Then, click **Calculate** in **Object KPIs** to calculate KPIs for the selected objects.  
-- Results from a KPI calculation may or may not include production stop registrations, depending on the setup and use of production stop types. 
+- You can multi-select several assets in **All assets** and click the **Asset KPIs** button on the **General** tab. Then, click **OK** in the **Calculate asset KPIs** dialog to calculate KPIs for the selected assets.  
+- Results from a KPI calculation may or may not include [maintenance downtime registrations](../work-orders/maintenance-downtime.md), depending on the setup and use of maintenance downtime reason codes. 
+
