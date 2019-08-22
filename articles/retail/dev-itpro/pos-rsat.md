@@ -204,7 +204,7 @@ The Recording.xml file is stored to the local file system, you must manually upl
 Download the RSAT .msi installer from [Regression Suite Automation Tool](https://www.microsoft.com/en-us/download/details.aspx?id=57357). Double-click the .mse file to run is. After installing the RSAT tool you need to install the Selenium and browser drivers. 
 
 > [!NOTE]
-> You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are mentioned  in this [link](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool). 
+> You must setup Azure DevOps and complete the required general setting and other required settings in the RSAT tool before doing the test execution, detailed steps are described in [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md). 
 
 Below are the required configurations for executing the Retail POS test cases:
 
@@ -244,7 +244,7 @@ Below are the required configurations for executing the Retail POS test cases:
 The following sections explain how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 
 > [!NOTE]
-> The detailed steps on how to setup Azure DevOps, test cases etc. are available in the RSAT manual, please complete those steps before starting your test execution.
+> The detailed steps on how to setup Azure DevOps and test cases test cases are described in [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md). You must complete those steps before starting your test execution.
 
 ### Load test cases and create parameter Files
 
@@ -285,7 +285,7 @@ You can modify the order in which test cases are executed using the up and down 
 
 ### Investigate Results
 
-When test cases complete execution, pass or fail status will be populated in the RSAT result column. You can click on the result column to see the error messages. More investigation details are available in Azure DevOps. From your Azure DevOps project page, go to **Test &gt; Runs**.
+When test cases complete execution, pass or fail status will be populated in the RSAT result column. You can click on the result column to see the error messages. More investigation details are available in Azure DevOps. From your Azure DevOps project page, go to **Test > Runs**.
 
 All error messages are also available locally under: **C:\\Users\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg<TestCaseId>.txt**.
 
