@@ -94,7 +94,7 @@ The **Work history** tab shows work history accross all legal entities and is av
 
 ## Position history
 
-The **Position** tab on the main worker page provides a full view of all positions held within the organization, including past, present, and any future assignments. You can still navigate directly to the worker's position history in the action pane as well.
+The **Positions** tab on the main worker page provides a full view of all positions held within the organization, including past, present, and any future assignments. You can still navigate directly to the worker's position history in the action pane as well.
 
 [![Positions](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
