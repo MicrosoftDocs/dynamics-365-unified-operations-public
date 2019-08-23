@@ -40,9 +40,9 @@ This topic explains how to manage ratings and reviews using the Dynamics 365 Com
 
 Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate review text by redacting profane words. In addition, the Ratings and Reviews Moderation tool can be used to do the following.
 
-- Moderate reviews by responding to them or taking them down
-- Bulk import review data across products into a provided Power BI template and analyze ratings and reviews trends
+- Moderate reviews by responding to them or removing them
 - Delete a user's reviews after a request by the user
+- Bulk import review data across products into a provided Power BI template and analyze ratings and reviews trends
 
 ## Read a review 
   
@@ -122,7 +122,7 @@ Moderators can also download the PowerBI template to view trends in a dashboard.
 
 To view ratings and reviews trends, do the following.
 
-1. ???download the PowerBI template???
+1. Download the Power BI template.
 1. Open the downloaded template using the Power BI app. After opening the template, the **Access to web content** appears. Close the dialog box, and then close the "Refresh" error message as well.
 1. Go to **Home** and click **Edit queries**, and then click **Data source settings**.
 1. In the **Data source settings** dialog box, click **Change Source**.
