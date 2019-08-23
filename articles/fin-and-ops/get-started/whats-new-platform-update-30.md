@@ -39,6 +39,11 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 ## Readable date time format for dateTime fields in business event payload
 When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
 
+## Personalization improvements
+Two enhancements to personalization are included in Platform update 30: 
+-    Hiding fields in personalization mode is now **significantly** faster. This same optimization has also been applied for skipping controls, locking fields, and adding fields as FastTab summary fields.   
+-    The Settings menu in the navigation bar now has a Personalize action, which opens the personalization toolbar for the current page. This entry point was added to align with other Dynamics 365 products. 
+
 ## Feature name
 Provide a brief description of the feature and link to the topic where they can read the details.
 
