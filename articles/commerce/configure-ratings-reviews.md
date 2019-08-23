@@ -88,7 +88,7 @@ Refer to the below screenshot for more details on how PDP template would look li
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
 
-### Configure a site to display ratings and reviews  
+## Configure a site to display ratings and reviews  
 
 Ratings and reviews configuration values such as tenant ID, review text length, and review title length are configured at the site level. 
 
