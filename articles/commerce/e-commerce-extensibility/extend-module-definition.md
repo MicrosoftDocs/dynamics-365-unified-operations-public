@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 # Create a new script injector module
 This topic covers information on how to extend a module definition file. An example could be to create an extended module of another module to add new configuration fields.
 
+When extending a property that is an object you must extend the entire object. For example, if you wish to add a config property to your extended module, you would first copy the existing config properties from the parent module, copy them over to your child module and then add the desired property.
+
+
 Below example module definition file shows how a core module can be extended using a **$ref** command to the core script injector module:
 ```json
 {
