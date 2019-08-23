@@ -2,7 +2,7 @@
 # required metadata
 
 title: Target entities
-description: This topic explains how to import and export data as well as get an overview of target entities in Enterprise Asset Management.
+description: This topic explains how to get an overview of target entities in Asset Management.
 author: josaw1
 manager: AnnBe
 ms.date: 07/01/2019
@@ -32,15 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Target entities
 
-This topic explains how to import and export data as well as get an overview of target entities in Enterprise Asset Management. This is possible by going to **Dynamics 365 for Finance and Operations** > **Data management** workspace. The figure below shows a screenshot of the interface.
+In the **Data management** workspace in **Dynamics 365 for Finance and Operations** you can import and export data as well as get an overview of target entities in the **Asset management** framework.
+
+
 
 ![Figure 1](media/01-data-management.png)
 
 In the **Data management** workspace, you can get an overview of target entities, related types and tables, as well as staging / target relations.
 
-1. Click the blue **Dynamics AX** button in the upper-left corner of the screen > **Data management** > **Data entities**.
+1. Click the **Finance and Operations** button in the upper-left corner of the screen, and select the **Data management** tile.
 
-2. In the filter, insert "mro".
+2. In the filter, insert "asset management".
 
 3. Select **Target entity: "mro"**. A list of target entities related to Enterprise Asset Management is shown. Currently, entities for setup data are available.
 
