@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Module Data File
+title: Module data file
 description: The MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data. 
 author: SamJarawan
 manager: JeffBl
@@ -28,8 +28,8 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 
 ---
-# Module Data File
-The MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data.  A set of core data actions are included in the SDK that can get data from the Dynamics 365 Retail, Ratings and Review or the Recommendations service.  The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+# Module data file
+The MODULE_NAME.data.ts file contains the typings for data actions that are used by the module to fetch data. A set of core data actions are included in the SDK that can get data from the Dynamics 365 Retail, Ratings and Review or the Recommendations service. The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
 Below is a sample data file for a new module
 
@@ -41,20 +41,11 @@ Below is a sample data file for a new module
  *--------------------------------------------------------------------------------------------*/
 
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
-import { ObservablePromise } from '@msdyn365-commerce/core';
+import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
 import { IGetProductReviewsData } from '../../actions/getProductReviews';
 
 export interface IProductFeatureData {
-    /**
-     * @dataAction @msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products
-     * @runAt server
-     */
-    products: ObservablePromise<SimpleProduct>[];
-
-    /**
-     * @dataAction ../../actions/getProductReviews
-     * @runAt server
-     */
-   productReviews: IGetProductReviewsData;
+    products: AsyncResult<SimpleProduct>[];
+    productReviews: AsyncResult<IGetProductReviewsData>;
 }
 ```
