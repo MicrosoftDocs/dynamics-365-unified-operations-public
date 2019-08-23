@@ -96,9 +96,51 @@ The page author can then choose the specific configurations for the module on a 
 * "tags"
     * Tags used to search modules, all the categories are automatically added as tags.
 * "module"
-    * The module section contains the file name for the default react view to load.  Only 1 view can be provided here.
+    * The module section contains the file name for the default react view to load and is used to register the data actions that should be run for the module. Only 1 view can be provided here but you may register multiple data actions
 * "slots" 
     * Slots are defined only on “containerModules” and exposed in the authoring tool.  Slots can define allow and deny lists to allow or disallow specific modules from being accepted in the slot.
+
+## Registering Data Actions To A Module
+If a module is dependent on some data coming from a data action, the data-action should be registered in the `module` section of the module definition file.
+
+Below is an example module definition with data action registration:
+
+```json
+// test-module.definition.json
+{
+    "$type": "contentModule",
+    "friendlyName": "test-module",
+    "name": "test-module",
+    "description": "Module for testing observable data actions",
+    "categories": ["test-module"],
+    "tags": ["samples"],
+    "module": {
+        "view": "./test-module",
+        "dataActions": {
+            "testResult":{
+                "path": "./actions/test-action",
+                "runOn": "client"
+            }
+        }
+    }
+}
+
+* "path"
+    * The path to the data action. Can be a local path or a path to an action in another package, e.g. "@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"
+* "runOn" 
+    * Controls when to run the data action. Valid values are either "server" or "client".
+
+Once the data action is registered, the module will automatically run the data-action on the server or client and bind the result to `testResult` in the data.ts file.
+
+```typescript
+// test-module.data.ts
+
+export interface IAsyncTestModuleData {
+    testResult: string;
+}
+```
+
+You can now access the results of this data-action in your module
     
 ## Module Config Schema
 The module "config" section contains a list of all the modules exposed configuration fields that will be used in the authoring tool.
