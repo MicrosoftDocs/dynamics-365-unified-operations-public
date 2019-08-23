@@ -141,7 +141,7 @@ Usage:
 yarn msdyn365 validate <path/to/directory>
 ```
 
-Runs a series of validation checks on your package and any modules in the package. Specifically, validate ensures that each module has a default export, contains the necessary files and ensures that your package-level initalization.json is properly registering each of the modules in the package.
+Runs a series of validation checks on your package and any modules in the package. Specifically, validate ensures that each module has a valid definition json file.
 
 The path will be the complete path to the package folder containing the package.json file
 
