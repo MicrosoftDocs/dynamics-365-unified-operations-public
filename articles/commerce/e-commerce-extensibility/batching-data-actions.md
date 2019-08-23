@@ -78,10 +78,10 @@ async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionConte
     }
 ```
 
-Now that our data action method has been updated to handle an array of inputs, we need to set the `isBatched` in the action creation call to truee:
+Now that our data action method has been updated to handle an array of inputs, we need to set the `isBatched` in the action creation call to true:
 
 ```typescript
-export default createDataAction({
+export default createObservableDataAction({
     action: <IAction<SimpleProduct[]>>getSimpleProductsAction,
     input: createInput,
     isBatched: true
