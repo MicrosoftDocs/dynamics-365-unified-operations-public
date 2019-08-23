@@ -55,13 +55,13 @@ In Asset Management, you can make a calculation to see an overview of new, activ
 
 *Example 1:*
 
-In the figure below, the **Year** and **Month** buttons have been activated. Here, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders.
+In the figure below, the **Year** and **Month** buttons have been activated. Here, you get a general overview on a monthly basis of workload and throughput related to maintenance requests and work orders. 
 
 ![Figure 1](media/13-controlling-and-reporting.png)
 
 *Example 2:*
 
-In the figure below, information about functional locations has been added. Now, it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas.
+In the figure below, information about functional locations has been added. Now, it is possible to compare workload and throughput across functional locations, which may represent geographical locations, factories, or work areas. 
 
 ![Figure 2](media/14-controlling-and-reporting.png)
 
