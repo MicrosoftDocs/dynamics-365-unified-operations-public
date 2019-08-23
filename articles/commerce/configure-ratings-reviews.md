@@ -47,7 +47,6 @@ This document explains how to configure your e-Commerce website and pages to sho
 3. Ratings histogram and reviews list on product details page (PDP). 
 4. Privacy and policy link configuration.
 
-
 ## Configure a site to display ratings and reviews  
 
 Ratings and reviews configuration values such as tenant ID, review text length, and review title length are configured at the site level. 
@@ -55,28 +54,26 @@ Ratings and reviews configuration values such as tenant ID, review text length, 
 To configure a site to display ratings and reviews, do the following. 
 
 1. Go to **Home > Sites**.
-2. Click on your site name. 
-3. Go to **Site management > Extensibility**. 
-4. In the **Ratings/Reviews tenant id** box, enter your tenant ID (for example, d247ff89-1bb8-42bf-955e-a731fbc57c75). You can find the tenant ID in your Dynamics 365 Lifecycle Services settings. 
-5. In the **reviewTextMaxLength** box, enter the review text maximum length value (maximum 1000 characters). 
-6. In the **reviewTitleMaxLength** box, enter the review title maximum length value (maximum 55 characters). 
-7. Click **Save and Publish**. 
-
+1. Click on your site name. 
+1. Go to **Site management > Extensibility**. 
+1. In the **Ratings/Reviews tenant id** box, enter your tenant ID (for example, d247ff89-1bb8-42bf-955e-a731fbc57c75). You can find the tenant ID in your Dynamics 365 Lifecycle Services settings. 
+1. In the **reviewTextMaxLength** box, enter the review text maximum length value (maximum 1000 characters). 
+1. In the **reviewTitleMaxLength** box, enter the review title maximum length value (maximum 55 characters). 
+1. Click **Save and Publish**. 
 
 Refer to the below screenshot for more details:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-site-appsettings.png)
 
-## Configure the buy box on a product details page 
+## Link a rating to the reviews section of a product details page 
 
-On a product details page, rating summary is showed below the product title at the top of page. Rating summary also can be a link to reviews section on the product details page. 
+On a product details page, a rating is shown below the product title at the top of page. The rating can be configured to link to the reviews section of the same product details page. 
 
-To make rating summary as a link to reviews list, use the following steps:  
+To link the rating to the reviews section of the product detail page, do the following.  
 
-1. Go to product details page template that you have created for your e-Commerce website. 
-2. Go to Buy box container module settings
-3. Choose Product ratings module under Buy box, then check "Link the click to full reviews module"
-
+1. Open the product details page template. 
+2. Go to **Buy box container module settings**.
+3. Under **Buy box**, select **Product ratings** , then check **Link the click to full reviews module**.
 
 Refer to the below screenshot for more details:
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-buy-box-rating-summary.png)
@@ -113,32 +110,26 @@ Product reviews module is used to display list of product’s reviews along with
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | reviews shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
 
-
-
-
 ### Ratings histogram module 
 Ratings histogram module shows ratings summary and histogram of a product’s rating. This module is typically placed above the Product Review List module on product details page.
 
 This module has no additional configurations required, apart from adding it within the Reviews list module. 
 
-
 Refer to the below screenshot for more details on how PDP template would look like with ratings and reviews modules on product details page:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
 
-
-
-## Privacy and policy link configuration  
+## Configure the privacy and policy link  
 
 Refer to the below screenshot for more details on how to configure Ratings and review "Privacy and policy" link that is showed on "Write review" module:
 
-1. Go to e-Commerce authoring tool.
-2. On the home page, under sites list, click on your site name. 
-3. On the left navigation menu, click on Site management, and then click on Extensibility in the left navigation. 
-4. Click on "Routes" tab at the top of "Extensibility" section. 
-5. Find RNR Privacy and Policy link section, and choose the page with Privacy and policy terms you have created for you site. 
-6. Click "Save and Publish" link at the top to publish your site configurations. 
-
+1. Go to **Home > Sites**.
+1. Click on your site name. 
+1. Go to **Site management > Extensibility**
+4. Click the **Routes** tab. 
+5. Under **RNR Privacy and Policy**, click **Add a link**. If a link is already entered and you want to replace it, click the link. 
+1. In the Add a link dialog box, select the link for the privacy and policy page, then click **OK**. 
+6. Click **Save and Publish**. 
 
 ![eCommerce site settings - Privacy and policy link ](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
