@@ -30,9 +30,9 @@ ms.dyn365.ops.version:
 ---
 # Observable data actions
 
-Observable data actions are used to track the status of the data action as it is running, this is helpful if you need to run logic or render UI in response to the current status of your data action.  Observable data actions use a special promise-like class `ObservablePromise` which adds "observer" functionality to a standard promise.
+Observable data actions are used to track the status of the data action as it is running, this is helpful if you need to run logic or render UI in response to the current status of your data action.  Observable data actions use a special promise-like class `AsyncResult` which adds "observer" functionality to a standard promise.
 
-Below example shows you how to take advantage of an observable promise.  This data action example waits three seconds before it returns a string.
+Below example shows you how to take advantage of an `AsyncResult`.  This data action example waits three seconds before it returns a string.
 
 ```typescript
 // test-action.ts
@@ -60,17 +60,16 @@ const testAction = async (input: TestAsyncActionInput, context: IActionContext):
 /**
  * Test Action Input
  */
-export class TestAsyncActionInput extends CommerceEntityInput implements IActionInput {
+export class TestAsyncActionInput implements IActionInput {
     public shouldError: Boolean = false;
 
     constructor(shouldError?: Boolean) {
-        super({
-            cacheObjectType: 'test',
-            cacheKey: 'test',
-            dataCacheType: 'none'
-        });
         this.shouldError = shouldError || this.shouldError;
     }
+
+    public getCacheKey = () => `test`;
+    public getCacheObjectType = () => 'test';
+    public dataCacheType = (): Msdyn365.CacheType => 'none';
 }
 
 /**
@@ -93,7 +92,7 @@ export default createObservableDataAction({
 });
 ```
 
-This new method `createObservableDataAction` is equivalent to `createDataAction` except it returns an `IObservableAction` instead of an `IAction`, which returns an `ObservablePromise` instead of a `Promise` like a standard `IAction`. This gives us access to additional data when the data action is consumed including the `status` and `error` of the data action. 
+This new method `createObservableDataAction` is equivalent to `createDataAction` except it returns an `IObservableAction` instead of an `IAction`, which returns an `AsyncResult` instead of a `Promise` like a standard `IAction`. This gives us access to additional data when the data action is consumed including the `status` and `error` of the data action. 
 
 A mock can be created to test the data action:
 
@@ -170,21 +169,21 @@ Below is a sample module definition, which registers the sample observable data 
 }
 ```
 
-When creating the data.ts file, we have to make sure that all observableDataAction's are wrapped with ObservablePromise. This ensures the correct typings when writing a module:
+When creating the data.ts file, we have to make sure that all observableDataAction's are wrapped with AsyncResult. This ensures the correct typings when writing a module:
 
 ```typescript
 // test-module.data.ts
-import { ObservablePromise } from '@msdyn365-commerce/action';
+import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
 
 export interface IAsyncTestModuleData {
-    testResult: ObservablePromise<string>;
+    testResult: AsyncResult<string>;
 }
 ```
 
-Now that the data action is wrapped with `ObservablePromise` we can see during module development that we have access to new properties including `testResult.status` which will contains the current state of our data action ('Success', 'Loading', or 'Failed') and `testResult.result` which will contain the actual data returned by our action if our action succeeds.
+Now that the data action is wrapped with `AsyncResult` we can see during module development that we have access to new properties including `testResult.status` which will contains the current state of our data action ('Success', 'Loading', or 'Failed') and `testResult.result` which will contain the actual data returned by our action if our action succeeds.
 
 Initially, our module renders and shows that the data action is in a loading state, because of the `setTimeout` that we are using to simulate an API call in progress. Once the `setTimeout` completes and the action successfully returns data, our module automatically rerenders, this time showing the `SUCCESS` state along with the data we returned from the action, available within the `result` property.
 
-In addition, if we have the data action throw an error the module updates accordingly on the page, instead of our result property getting populated, the `error` property of our `ObservablePromise` has been filled in because our action was not able to execute.
+In addition, if we have the data action throw an error the module updates accordingly on the page, instead of our result property getting populated, the `error` property of our `AsyncResult` has been filled in because our action was not able to execute.
 
 By taking advantage of the `status`, `result` and `error` properties provided by observable data actions, handling complicated scenarios in a module such as displaying a loading screen while an API call runs, or providing a user contextual error messages in response to a failed data actions, becomes very simple.
