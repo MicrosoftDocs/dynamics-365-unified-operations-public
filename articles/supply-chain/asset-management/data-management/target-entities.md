@@ -54,8 +54,3 @@ The figure below shows a screenshot of the interface.
 
 ![Figure 3](media/03-data-management.png)
 
->[!NOTE]
->For further information on how to use the **Data management**
-workspace, refer to Microsoft Help for Dynamics 365 for Finance and Operations
-and related resources.
-
