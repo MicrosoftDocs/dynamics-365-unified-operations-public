@@ -34,15 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In the **Data management** workspace in **Dynamics 365 for Finance and Operations** you can import and export data as well as get an overview of target entities in the **Asset management** framework.
 
+In the **Data management** workspace, you can get an overview of target entities, related types and tables, as well as staging / target relations.
 
+1. Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.
 
 ![Figure 1](media/01-data-management.png)
 
-In the **Data management** workspace, you can get an overview of target entities, related types and tables, as well as staging / target relations.
+2. In the **Import / Export** section, click the **Data entities** tile. 
 
-1. Click the **Finance and Operations** button in the upper-left corner of the screen, and select the **Data management** tile.
-
-2. In the filter, insert "asset management".
+3. In the filter, insert "asset management" and press Enter to see a list of the entities related to Asset Management.
 
 3. Select **Target entity: "mro"**. A list of target entities related to Enterprise Asset Management is shown. Currently, entities for setup data are available.
 
