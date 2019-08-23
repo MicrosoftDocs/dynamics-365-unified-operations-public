@@ -78,7 +78,7 @@ The module "config" section contains a list of all the modules exposed configura
 * "description":
     * This description will show up in authoring tools as the configuration description
 * "type":
-    * Type of the configuration.  Possible values “string”, “bool”, “number”, “integer”, “resource” , “richText”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
+    * Type of the configuration.  Possible values “string”, “boolean”, “number”, “integer”, “resource”, "link", "productList", “object”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
 * "enum":
     * For an enumerator type must be set to "string".
 * "default":
