@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 To create a maintainable and compact codebase, you will often need a suite of composable data actions that can utilize one another easily to create more complex code flows. The Dynamics 365 Commerce Online SDK offers the ability to seamlessly chain data actions while still providing all the out of the box benefits of the data action architecture (caching, batching and deduping).
 
-Below is an example of data action chaining which first makes a product information call followed by an inventory call. 
+Below is an example of data action chaining which first makes a product information call followed by an inventory call.
 
 First you'll see a data action to get product information then a data action to get inventory information.
 
@@ -40,26 +40,25 @@ First you'll see a data action to get product information then a data action to 
 // get-product.ts
 import { IAction, IActionInput } from '@msdyn365-commerce/action';
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
-import { CommerceEntityInput, createDataAction, IAny, ICreateActionContext, IActionContext, IGeneric, IHTTPError, IHTTPResponse, sendCommerceRequest } from '@msdyn365-commerce/core';
+import { CommerceEntityInput, createObservableDataAction, IAny, ICreateActionContext, IActionContext, IGeneric, IHTTPError, IHTTPResponse, sendCommerceRequest } from '@msdyn365-commerce/core';
 import { ProductInput } from './inputs/product-input';
 
 /**
  * Product Action Input Class
  * This class is used by our Action Function, so that it has access to a productId
  */
-export class ProductInput extends CommerceEntityInput implements IActionInput {
+export class ProductInput implements IActionInput {
+    public channelId: number;
     public productId: number;
 
     constructor(productId: number, channelId: number) {
-        // CommerceEntityInput allows for easy setting of cache related properties
-        super({
-            shouldCacheOutput: true,
-            cacheObjectType: 'Product',
-            cacheKey: `${productId}`
-        });
-
+        this.channelId = channelId;
         this.productId = productId;
     }
+
+    public getCacheKey = () => `${this.channelId}-${this.productId}`;
+    public getCacheObjectType = () => 'Product';
+    public dataCacheType = (): Msdyn365.CacheType => 'application';
 }
 
 /**
@@ -94,7 +93,7 @@ async function getSimpleProductAction(input: ProductInput, ctx: IActionContext):
  * This exports the action Data Action, which the result of passing your action method and createInput method (if used)
  * to the createDataAction method.
  */
-export default createDataAction({
+export default createObservableDataAction({
     action: <IAction<SimpleProduct>>getSimpleProductAction
 });
 ```
@@ -103,7 +102,7 @@ export default createDataAction({
 // check-inventory.ts
 import { IAction, IActionInput } from '@msdyn365-commerce/action';
 import { ProductAvailableQuantity } from '@msdyn365-commerce/commerce-entities';
-import { createDataAction, IAny, IActionContext, IGeneric, IHTTPError, IHTTPResponse, sendCommerceRequest } from '@msdyn365-commerce/core';
+import { createObservableDataAction, IAny, IActionContext, IGeneric, IHTTPError, IHTTPResponse, sendCommerceRequest } from '@msdyn365-commerce/core';
 
 // Because this API also only needs a productId, we can re-use the ProductInput we created earlier here.
 import { ProductInput } from './get-product.ts';
@@ -139,7 +138,7 @@ async function getProductAvailabilityAction(input: ProductInput, ctx: IActionCon
         });
 }
 
-export default createDataAction({
+export default createObservableDataAction({
     action: getProductAvailabilityAction
 })
 ```
@@ -175,7 +174,7 @@ async function getProductWithAvailabilityAction(input: ProductInput, ctx: IActio
     }
 }
 
-export default createDataAction({
+export default createObservableDataAction({
     action: getProductWithAvailabilityAction
 })
 ```
