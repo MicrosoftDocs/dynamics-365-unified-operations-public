@@ -38,9 +38,9 @@ In the **Data management** workspace, you can get an overview of target entities
 
 1. Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.
 
-![Figure 1](media/01-data-management.png)
-
 2. In the **Import / Export** section, click the **Data entities** tile. 
+
+![Figure 1](media/01-data-management.png)
 
 3. In the filter, insert "asset management" and press Enter to see a list of the entities related to Asset Management.
 
