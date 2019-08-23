@@ -44,13 +44,18 @@ In the **Data management** workspace, you can get an overview of target entities
 
 3. In the filter, insert "asset management" and press Enter to see a list of the entities related to Asset Management.
 
-4. Select **Target entity: "mro"**. A list of target entities related to Enterprise Asset Management is shown. Currently, entities for setup data are available.
-
-The figure below shows a screenshot of the interface.
+The figure below shows some of the Asset management entities.
 
 ![Figure 2](media/02-data-management.png)
 
-5. Select a target entity and click **Modify target mapping** on the **Mapping visualization** tab to see a graphic overview of how staging data and target data are related. In the figure below, an overview of functional location types and object types is shown.
+4. Select a target entity and click **Modify target mapping**.
+
+5. On the **Map staging to target** page, you see a list of the staging fields related to the selected entity. Click **Mapping visualization** to see a graphic overview of how staging data and target data are related. 
+
+In the figure below, a visualization of the fields related to the asset types entity is shown.
 
 ![Figure 3](media/03-data-management.png)
+
+
+
 
