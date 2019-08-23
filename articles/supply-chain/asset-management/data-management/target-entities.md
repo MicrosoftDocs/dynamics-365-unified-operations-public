@@ -32,13 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Target entities
 
-In **Dynamics 365 for Finance and Operations** > **Data management** workspace, you can import and export data as well as get an overview of target entities in the **Asset management** module.
-
-In the **Data management** workspace, you can get an overview of target entities, related types and tables, as well as staging-target relations.
+In **Dynamics 365 for Finance and Operations** > **Data management** workspace, you can get an overview of target entities, entity types, and staging tables related to the **Asset management** module. 
 
 1. Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.
 
-2. In the **Import / Export** section, click the **Data entities** tile. 
+2. In the **Import / Export** section, click **Data entities**. 
 
 ![Figure 1](media/01-data-management.png)
 
@@ -48,14 +46,13 @@ The figure below shows some of the Asset management entities.
 
 ![Figure 2](media/02-data-management.png)
 
-4. Select a target entity and click **Modify target mapping**.
+4. Select an entity and click **Modify target mapping**.
 
 5. On the **Map staging to target** page, you see a list of the staging fields related to the selected entity. Click **Mapping visualization** to see a graphic overview of how staging data and target data are related. 
 
 In the figure below, a visualization of the fields related to the asset types entity is shown.
 
 ![Figure 3](media/03-data-management.png)
-
 
 
 
