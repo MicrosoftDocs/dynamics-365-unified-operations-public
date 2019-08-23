@@ -46,8 +46,7 @@ Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate rev
 
 ## Read a review 
   
-1. Go to **Site Management > Global Settings**.
-1. Under **RnR Moderator**, click **Manage**.
+1. Go to **Home > Reviews > Moderation**.
 1. Use the **Search** feature at the top of page to filter reviews by product ID, product name, or review text.
     - There are also filters to limit displayed reviews by time period, rating, channel, or concern status (takedown/responded/reported).
 
@@ -59,8 +58,7 @@ Sometimes customers who have purchased a product express their satisfaction or d
 
 To respond to a review, do the following.
 
-1. Go to **Site Management > Global Settings**.
-1. Under **RnR Moderator**, click **Manage**.
+1. Go to **Home > Reviews > Moderation**.
 1. In the left pane, select the review that needs a response.
 1. In the right pane, click **Add a response** to provide a response.
 1. Enter the response text and choose which responder name to display. The default responder name is "Moderator."
@@ -74,8 +72,7 @@ Sometimes there is a business justification for a moderator to take down a custo
 
 To take down a review, do the following.
 
-1. Go to **Site Management > Global Settings**.
-1. Under **RnR Moderator**, click **Manage**.
+1. Go to **Home > Reviews > Moderation**.
 1. In the left pane, select the review that needs to be taken down.
 1. In the right pane, select a takedown reason and click **Take down**.
 	
@@ -85,8 +82,7 @@ Sometimes a customer wants their ratings and reviews data to be permanently dele
 
 To locate and delete user data, do the following.
 
-1. Go to **Site Management > Global Settings**.
-1. Under **RnR Moderator**, click **Manage**. 
+1. Go to **Home > Reviews > Moderation**. 
 1. Click **Delete**. 
 1. In the **Search for users by email address** box, enter the customer's email address and click **Search**.
 1. If the customer has any reviews activity (for example, review submissions, votes on the helpfulness of other's reviews, or comments on another customer's review), the results will be displayed and each item will have a "Delete" option for the moderator to act on.
@@ -106,8 +102,7 @@ The Commerce Ratings and Reviews Moderation tool enables moderators to import bu
 
 To download ratings and reviews data, do the following.
 
-1. Go to **Site Management > Global Settings**.
-1. Under **RnR Moderator**, click **Manage**. 
+1. Go to **Home > Reviews > Moderation**.
 1. Click **Reporting**. 
 1. Click **Download reviews data** to download ratings and reviews bulk data in .csv format.
 
