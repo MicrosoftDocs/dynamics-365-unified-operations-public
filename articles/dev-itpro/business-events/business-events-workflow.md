@@ -88,3 +88,10 @@ An approval or task work item can be completed in Flow using the following steps
 Templates for work item completion in Microsoft Flow will be available soon and a link will be provided here for easy reference.
 
 For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
+
+## Troubleshooting Workflow Business Events
+
+There are a number of things that need to be working correctly for the Workflow Business Events to fire correctly:
+- Workflow - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside Finance and Operations so that state changes are occuring, then the events won't fire. Adjust the workflow configuration as needed. Review the workflow details in the Workflow History form.
+- Flow - Ensure that the Flow subscription can be seen on **System administration > Setup > Business events > Business events catalog** in the **Active events** tab. If the Flow subscription isn't there, then check the Flow and recreate it if needed.
+- Business events - Ensure that other Business Events are firing by creating a Flow to trigger off another Business Event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it.
