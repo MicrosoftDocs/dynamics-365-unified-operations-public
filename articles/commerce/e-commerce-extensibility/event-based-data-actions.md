@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 ---
 # Event based data actions
 
-In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event. 
+In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event.
 
 ## Example
 In this example, we will use a very basic module that will load product information in response to a user clicking a button. To start, lets show an example react component which contains a button for a user to click:
