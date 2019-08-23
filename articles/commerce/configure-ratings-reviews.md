@@ -1,5 +1,46 @@
-# Overview
-Ratings and Reviews on e-Commerce website helps consumers (C2) directly to understand how a product is perceived by fellow consumers and make a purchase decision. E-Commerce website is also a primary source for receiving feedback from end users in the form of ratings and reviews on a product. This document explains how to configure your e-Commerce website and pages to show ratings and reviews as follows:
+---
+# required metadata
+
+title: Configure ratings and reviews
+description: This topic describes how to configure your e-Commerce site to display customer ratings and reviews.
+author: gvrmohanreddy
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: gmohanv
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+
+# Configure ratings and reviews
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to configure your e-Commerce site to display customer ratings and reviews.
+
+## Overview
+
+Ratings and reviews on e-Commerce websites help inform customers about a product before they make a purchase decision by showing them what other customers think of that product. For e-Commerce websites, they are also a source for collecting customer feedback about a product. 
+
+This document explains how to configure your e-Commerce website and pages to show ratings and reviews as follows:
 
 1. E-Commerce site configuration.
 2. Product details page - buy box configuration.
@@ -7,28 +48,30 @@ Ratings and Reviews on e-Commerce website helps consumers (C2) directly to under
 4. Privacy and policy link configuration.
 
 
-## E-Commerce site configuration  
+## Configure a site to display ratings and reviews  
 
-Ratings and reviews configuration values like tenantId, review text length etc. are configured at site level. The following steps explains on how to configure those values. 
+Ratings and reviews configuration values such as tenant ID, review text length, and review title length are configured at the site level. 
 
-1. Go to e-Commerce authoring tool.
-2. On the home page, under sites list, click on your site name. 
-3. On the left navigation menu, click on Site management, and then click on Extensibility in the left navigation. 
-4. Configure tenantID e.g. d247ff89-1bb8-42bf-955e-a731fbc57c75, which you can find in your D365 LCS settings. 
-5. Configure Review text length value (maximum 1000 characters). 
-6. Configure Review Title max length (maximum 55 characters). 
-7. Click "Save and Publish" link at the top to publish your site configurations. 
+To configure a site to display ratings and reviews, do the following. 
+
+1. Go to **Home > Sites**.
+2. Click on your site name. 
+3. Go to **Site management > Extensibility**. 
+4. In the **Ratings/Reviews tenant id** box, enter your tenant ID (for example, d247ff89-1bb8-42bf-955e-a731fbc57c75). You can find the tenant ID in your Dynamics 365 Lifecycle Services settings. 
+5. In the **reviewTextMaxLength** box, enter the review text maximum length value (maximum 1000 characters). 
+6. In the **reviewTitleMaxLength** box, enter the review title maximum length value (maximum 55 characters). 
+7. Click **Save and Publish**. 
 
 
 Refer to the below screenshot for more details:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-site-appsettings.png)
 
+## Configure the buy box on a product details page 
 
+On a product details page, rating summary is showed below the product title at the top of page. Rating summary also can be a link to reviews section on the product details page. 
 
-## Product details page - buy box configuration  
-
-On product details page, rating summary is showed below the product title at the top of page. Rating summary also can be a link to reviews section on the product details page. To make rating summary as a link to reviews list, use the following steps:  
+To make rating summary as a link to reviews list, use the following steps:  
 
 1. Go to product details page template that you have created for your e-Commerce website. 
 2. Go to Buy box container module settings
