@@ -120,6 +120,11 @@ async function action(input:GetProductReviewsInput, ctx: Msdyn365.IActionContext
     // const response = await Msdyn365.sendRequest<IGetProductReviewsData[]>('/get/example/id/1', 'get');
     return {text: 'Static data from action'};
 }
+
+// TODO: Create a data model here or import one to capture the response of the action
+export interface IGetProductReviewsData {
+    text: string;
+}
 ```
 
 * The "Action" input
@@ -137,11 +142,6 @@ export class GetProductReviewsInput extends Msdyn365.CommerceEntityInput impleme
     public getCacheKey = () => `TODO`;
     public getCacheObjectType = () => 'TODO';
     public dataCacheType = (): Msdyn365.CacheType => 'application';
-}
-
-// TODO: Create a data model here or import one to capture the response of the action
-export interface IGetProductReviewsData {
-    text: string;
 }
 ```
 
