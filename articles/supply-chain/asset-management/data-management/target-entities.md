@@ -44,13 +44,13 @@ In the **Data management** workspace, you can get an overview of target entities
 
 3. In the filter, insert "asset management" and press Enter to see a list of the entities related to Asset Management.
 
-3. Select **Target entity: "mro"**. A list of target entities related to Enterprise Asset Management is shown. Currently, entities for setup data are available.
+4. Select **Target entity: "mro"**. A list of target entities related to Enterprise Asset Management is shown. Currently, entities for setup data are available.
 
 The figure below shows a screenshot of the interface.
 
 ![Figure 2](media/02-data-management.png)
 
-4. Select a target entity and click **Modify target mapping** on the **Mapping visualization** tab to see a graphic overview of how staging data and target data are related. In the figure below, an overview of functional location types and object types is shown.
+5. Select a target entity and click **Modify target mapping** on the **Mapping visualization** tab to see a graphic overview of how staging data and target data are related. In the figure below, an overview of functional location types and object types is shown.
 
 ![Figure 3](media/03-data-management.png)
 
@@ -58,5 +58,4 @@ The figure below shows a screenshot of the interface.
 >For further information on how to use the **Data management**
 workspace, refer to Microsoft Help for Dynamics 365 for Finance and Operations
 and related resources.
-
 
