@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/31/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -89,9 +89,9 @@ Templates for work item completion in Microsoft Flow will be available soon and 
 
 For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
 
-## Troubleshooting Workflow Business Events
+## Troubleshooting workflow business events
 
-There are a number of things that need to be working correctly for the Workflow Business Events to fire correctly:
-- Workflow - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside Finance and Operations so that state changes are occuring, then the events won't fire. Adjust the workflow configuration as needed. Review the workflow details in the Workflow History form.
-- Flow - Ensure that the Flow subscription can be seen on **System administration > Setup > Business events > Business events catalog** in the **Active events** tab. If the Flow subscription isn't there, then check the Flow and recreate it if needed.
-- Business events - Ensure that other Business Events are firing by creating a Flow to trigger off another Business Event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it.
+There are a number of key factors that need to work correctly in order for workflow business events to run without errors:
+- Workflow - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside Finance and Operations so that state changes are occurring, then the events won't occur. Adjust the workflow configuration as needed. If needed, review the workflow details in the **Workflow History** form.
+- Flow - Ensure that the Flow subscription is available in the **System administration > Setup > Business events > Business events catalog** on the **Active events** tab. If the Flow subscription isn't there, then check the Flow and recreate it if needed.
+- Business events - Ensure that other business events are occurring by creating a Flow to trigger off another business event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it.
