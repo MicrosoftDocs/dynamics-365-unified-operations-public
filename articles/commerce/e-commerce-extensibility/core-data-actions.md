@@ -32,6 +32,8 @@ ms.dyn365.ops.version:
 
 This topic covers the list of core data actions included with the Dynamics 365 Commerce Online SDK.  All core data actions can be found in the `\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib` directory.
 
+Note: All core data actions are Observable data actions, which return the result specified below, wrapped in an AsyncResult.
+
 Data Action| Description
 --- | --- 
 add-address |  Adds a new address to an existing customer
