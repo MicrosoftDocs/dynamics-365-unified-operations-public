@@ -47,7 +47,7 @@ Dynamics 365 Commerce uses Azure Cognitive Service to automatically moderate rev
 ## Read a review 
   
 1. Go to **Home > Reviews > Moderation**.
-1. Use the **Search** feature at the top of page to filter reviews by product ID, product name, or review text.
+1. Use **Search** at the top right of the page to filter reviews by product ID, product name, or review text.
     - There are also filters to limit displayed reviews by time period, rating, channel, or concern status (takedown/responded/reported).
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-home.png) 
@@ -59,9 +59,9 @@ Sometimes customers who have purchased a product express their satisfaction or d
 To respond to a review, do the following.
 
 1. Go to **Home > Reviews > Moderation**.
-1. In the left pane, select the review that needs a response.
-1. In the right pane, click **Add a response** to provide a response.
-1. Enter the response text and choose which responder name to display. The default responder name is "Moderator."
+1. Under **Moderation**, find and select the review that needs a response.
+1. In the right properties pane, click **Add a response**.
+1. Enter the response text and the responder name to display. The default responder name is "Moderator."
 1. When done, click **Post response**.
 
 ![Ratings and Reviews Moderation home page](media/rnr-moderation-response.png) 
@@ -73,8 +73,8 @@ Sometimes there is a business justification for a moderator to take down a custo
 To take down a review, do the following.
 
 1. Go to **Home > Reviews > Moderation**.
-1. In the left pane, select the review that needs to be taken down.
-1. In the right pane, select a takedown reason and click **Take down**.
+1. Under **Moderation**, find and select the review that needs to be taken down.
+1. In the right properties pane, select a takedown reason and click **Take down**.
 	
 ## Delete a customer's reviews on request 
 
@@ -82,8 +82,7 @@ Sometimes a customer wants their ratings and reviews data to be permanently dele
 
 To locate and delete user data, do the following.
 
-1. Go to **Home > Reviews > Moderation**. 
-1. Click **Delete**. 
+1. Go to **Home > Reviews > Delete**.
 1. In the **Search for users by email address** box, enter the customer's email address and click **Search**.
 1. If the customer has any reviews activity (for example, review submissions, votes on the helpfulness of other's reviews, or comments on another customer's review), the results will be displayed and each item will have a "Delete" option for the moderator to act on.
 1. Click **Delete** for the review item you want to delete. When prompted for confirmation, click **Yes**. 
@@ -102,8 +101,7 @@ The Commerce Ratings and Reviews Moderation tool enables moderators to import bu
 
 To download ratings and reviews data, do the following.
 
-1. Go to **Home > Reviews > Moderation**.
-1. Click **Reporting**. 
+1. Go to **Home > Reviews > Reporting**.
 1. Click **Download reviews data** to download ratings and reviews bulk data in .csv format.
 
 ##  View ratings and reviews trends
@@ -112,7 +110,8 @@ Moderators can also download the PowerBI template to view trends in a dashboard.
 
 To view ratings and reviews trends, do the following.
 
-1. Download the Power BI template.
+1. Go to **Home > Reviews > Reporting**.
+1. Click **PowerBI template** to download the template.
 1. Open the downloaded template using the Power BI app. After opening the template, the **Access to web content** appears. Close the dialog box, and then close the "Refresh" error message as well.
 1. Go to **Home** and click **Edit queries**, and then click **Data source settings**.
 1. In the **Data source settings** dialog box, click **Change Source**.
