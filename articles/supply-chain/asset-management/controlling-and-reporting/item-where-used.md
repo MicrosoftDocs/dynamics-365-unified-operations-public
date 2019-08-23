@@ -36,13 +36,11 @@ You can make a calculation for a specific item to get an overview of where in As
 
 [Asset BOM](../objects/object-BOM.md)
 
-[Spare parts on asset type setup](../setup-for-objects/object-types.md)
+[Spare parts on asset type defaults](../setup-for-objects/object-types.md)
 
-[Asset type setup](../setup-for-objects/object-types.md)
+[Item forecast on Maintenance job type defaults forecast](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-[Maintenance job type setup forecast](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
-
-[Work order forecast](../work-orders/maintenance-forecasts.md)
+[Work order maintenance forecast](../work-orders/maintenance-forecasts.md)
 
 [Work order purchase requisition](../work-orders/procurement.md)
 
@@ -60,9 +58,9 @@ You can make a calculation for a specific item to get an overview of where in As
 
 5. Click **OK** to start the calculation.
 
-6. On the **Item where used** tab > the **Group by...** action pane groups, select the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
+6. On the **Item where used** tab > **Group by...** action pane groups, select the relevant buttons to show the required detail level of the calculation. The selected action pane buttons are highlighted. Click on a button to activate or deactivate it.
 
-7. If you want to show dimensions related to the item, click **Dimensions display**, and select the dimensions to be shown.
+7. If you want to show dimensions related to the item, click **Display dimensions**, and select the dimensions to be shown.
 
 In the figure below, you see an example of an item-where-used calculation for item number "1000".
 
