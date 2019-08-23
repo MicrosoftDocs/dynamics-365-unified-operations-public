@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Target entities
 
-In **Dynamics 365 for Finance and Operations** > **Data management** workspace, you can import and export data as well as get an overview of target entities in the **Asset management** framework.
+In **Dynamics 365 for Finance and Operations** > **Data management** workspace, you can import and export data as well as get an overview of target entities in the **Asset management** module.
 
 In the **Data management** workspace, you can get an overview of target entities, related types and tables, as well as staging / target relations.
 
