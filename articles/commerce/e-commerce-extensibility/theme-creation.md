@@ -49,15 +49,19 @@ body {
 ```
 
 ## Testing a theme
-A theme is easy to test your theme on your development environment using a query string parameter **?theme=THEME_NAME**.
+It is easy to test your theme on your development environment using the following query string parameter: **?theme=THEME_NAME**.
+
+To get started testing your theme,
+
 * Run **yarn start** in a command prompt under the directory of your local code repository
 * Load up your module test page in a web browser and add the additional query string parameter. 
+
 Example: `https://localhost:4000/modules?type=campaignBanner&theme=spring`
 
 ## Exposing themes to authoring tools
 For themes to show up in the tooling theme selector there needs to be an entry in the **\src\settings\app.settings.json** file.  Below shows an example entry for a spring theme.
 
-```
+```json
 {
     "config":{
         "logoUrl":{
@@ -85,3 +89,6 @@ For themes to show up in the tooling theme selector there needs to be an entry i
     }
 }
 ```
+## Naming convention
+
+Note that themes are registered as **THEMENAME**.theme.scss where **THEMENAME** is the name of your theme.  Via the **app.settings.json** file, you provide the friendly name for your theme which will show up in the authoring tools
