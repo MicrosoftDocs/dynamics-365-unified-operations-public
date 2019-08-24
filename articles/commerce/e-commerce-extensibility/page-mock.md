@@ -97,6 +97,23 @@ Below is an example page mock that adds two insances of the same module to a pag
       }
     },
     "renderingContext": {
+      "gridSettings":{  
+        "xs":{  
+          "w":767
+        },
+        "sm":{  
+          "w":991
+         },
+         "md":{  
+           "w":1199  
+         },
+         "lg":{  
+           "w":1599
+         },
+         "xl":{  
+           "w":1600
+         },
+      },
       "staticContext": {
         "staticCdnUrl": "/_scnr/"
       },
