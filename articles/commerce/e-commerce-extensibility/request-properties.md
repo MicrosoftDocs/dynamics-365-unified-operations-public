@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 The module react component can access a read only request context object to get request information, which includes properties such as the URL, user, locale and device type information.
 
 ## Example
-Below example shows how to access request properties fromwithin the request context:
+Below example shows how to access request properties from within the request context:
 
 ```
 if (this.props.context.request.user.isAuthenticated) {
@@ -43,21 +43,14 @@ if (this.props.context.request.user.isAuthenticated) {
 ```
 
 ## General Properties
-* url - Provided the requested URL
+* url - Provides the requested URL
 * locale - The locale context (example "en-us")
-* market - The market context 
 * textDirection - The text direction, possible values "rtl" and "ltr"
 * sitePath - The sites full path
-* params - List of supported query string parameters includes:
-  * mock - Name of mock file specified
-  * isDebug - Debug setting
-  * isEditor - Editor setting
-  * concatJs - ConcatJs value
-  * theme - Theme specificed
 * device - Device request came from
   * Type - Device type (example: 'pc')
 * user - Information about the user including
-  * toekn
+  * token
   * isAuthenticated
   * signinURL
   * signoutURL
@@ -74,55 +67,74 @@ if (this.props.context.request.user.isAuthenticated) {
 
 ## Interface
 
-```
-export interface IRequestContext {
-    url: {
-        serverUrl: string;
-        serverPageUrl: string;
-        requestUrl: URL;
-        staticCdnUrl: string;
-    };
+```typescript
+interface IParsedQSP<TValue> {
+    hasValue: boolean;
+    isTruthy: boolean;
+    value: TValue | undefined;
+}
+
+interface IRequestContextUrl {
+    serverUrl: string;
+    serverPageUrl: string;
+    requestUrl: URL;
+    staticCdnUrl: string;
+}
+
+interface IRequestContextParams {
+    mock?: string;
+    isDebug: boolean;
+    isEditor: boolean;
+    concatJs: IParsedQSP<boolean | string | number | undefined>;
+    theme: string;
+}
+
+interface IRequestContextDevice {
+    Type: string;
+}
+
+interface IRequestContextUser {
+    token: string;
+    isAuthenticated: boolean;
+    signInUrl?: string;
+    signOutUrl?: string;
+    signUpUrl?: string;
+    editProfileUrl?: string;
+    signinName?: string;
+    name?: string;
+    firstName?: string;
+    lastName?: string;
+    emailAddress?: string;
+    customerAccountNumber?: string;
+}
+
+interface IRequestContextFeatures {
+    [switchName: string]: boolean;
+}
+
+interface IRequestContextHeaders {
+    readonly [header: string]: string;
+}
+
+interface IRequestContext {
+    url: IRequestContextUrl;
     locale: string;
     market?: string;
     textDirection: string;
     sitePath?: string;
-    params: {
-        mock?: string;
-        isDebug: boolean;
-        isEditor: boolean;
-        concatJs: IParsedQSP<boolean | string | number | undefined>;
-        theme: string;
-    };
-    device: {
-        Type: string;
-    };
-    user: {
-        token: string;
-        isAuthenticated: boolean;
-        signInUrl?: string;
-        signOutUrl?: string;
-        signUpUrl?: string;
-        editProfileUrl?: string;
-        signinName?: string;
-        name?: string;
-        firstName?: string;
-        lastName?: string;
-        emailAddress?: string;
-        customerAccountNumber?: string;
-    };
+    params: IRequestContextParams;
+    device: IRequestContextDevice;
+    user: IRequestContextUser;
     app: IGeneric<IAny>;
     query?: IDictionary<string>;
     apiSettings: ICommerceApiSettings;
+    channel?: IChannelConfiguration;
     gridSettings?: IGridSettings;
     urlTokens: IUrlTokens;
     operationId: string;
-    features: {
-        [switchName: string]: boolean;
-    };
+    features: IRequestContextFeatures;
     pageData: IGeneric<IAny>;
-    headers: {
-        readonly [header: string]: string;
-    };
+    headers: IRequestContextHeaders;
     cookies: ICookieContext;
 }
 ```
