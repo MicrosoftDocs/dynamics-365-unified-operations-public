@@ -190,6 +190,12 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
 
+## Reason code triggers
+| Trigger              | Type           | Description                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered(before the reason code added to the cart). |
+
+
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
 
