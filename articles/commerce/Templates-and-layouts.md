@@ -53,10 +53,19 @@ The following diagram shows the page model hierarchy behind a rendered webpage:
 represent a key early step for site configuration. Conceptually,
 templates control consistency across a family of
 child **layouts** and **pages** by defining the base structure and authoring
-options for down-stream layout and page creation workflows. Templates can simplify the content authoring process with pre-determined centrally managed elements (headers, footers, etc.), and guided authoring flows that ensure on-brand module configuration choices.  For example, a basic template
-could be configured and described like this:
+options for down-stream layout and page creation workflows. Templates can simplify the content authoring process with pre-determined centrally managed elements (headers, footers, etc.), and guided authoring flows that ensure on-brand module configuration choices.  
 
-*Example template configuration description:*
+### Controlling Consistency
+The biggest business decision to make when designing a template is how much control to exert over the page creation process. A Template that leaves everything open for a downstream author is the simplest template to create, but may have long-term maintenance consequences for pages created from it. A well-written template will provide guidance and a stream-lined authoring experience for an author while allowing them enough flexibility to complete their task. All of that is based on the level of control enforced by the template.
+
+Templates can help content authors be more efficient and stay on-brand in the following ways:
+
+- Narrow down which modules should be used in a page
+- Suggest default module choices and configuration
+- Explicitly make some module and configuration choices that are controlled at the template level, also known as 'locking' a setting.
+
+A basic template example
+could be configured and described like this:
 
 - All child layouts of template "X" must have a header, body,
   and a footer container
