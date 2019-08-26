@@ -40,12 +40,7 @@ This topic describes how to configure your e-Commerce site to display customer r
 
 Ratings and reviews on e-Commerce websites help inform customers about a product before they make a purchase decision by showing them what other customers think of that product. For e-Commerce websites, they are also a source for collecting customer feedback about a product. 
 
-This document explains how to configure your e-Commerce website and pages to show ratings and reviews as follows:
-
-1. E-Commerce site configuration.
-2. Product details page - buy box configuration.
-3. Ratings histogram and reviews list on product details page (PDP). 
-4. Privacy and policy link configuration.
+Ratings are displayed on product list pages, category list pages, search results pages, and other site pages. Ratings histograms and product reviews are displayed on product details pages, along with a **Write a review** button that enables customers to submit a rating and review on a product.
 
 ### Ratings and reviews modules displayed on product details pages 
 
@@ -55,17 +50,16 @@ There are three modules that display the ratings and reviews summary on a produc
  - Product reviews list module
  - Ratings histogram module
  
-Ratings are displayed on product list pages, category list pages, search results pages, and other site pages. Ratings and product reviews are displayed on product details pages, along with the **Write a review** button that enables customers to submit a rating and review on a product.
-
 Refer to the below screenshot for more details on how the ratings and reviews modules are structured on product details page :
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 #### Write review module
 
-The write review module display a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating and review. This module is typically placed above the reviews list and rating histogram modules on product details page.
+The write review module displays a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating or review. This module is typically placed above the rating histogram and reviews list modules on product details page.
 
-Below screenshot shows how review submission module would look like when use clicks on "Write a review"
+The following screenshot shows how a review submission looks when a customer clicks **Write a review**.
+
 ![e-Commerce site settings - Write review module ](media/rnr-eCommerce-write-review-module.png)
 
 | Property name     | Values                                                       | Property Description                                         |
@@ -75,11 +69,11 @@ Below screenshot shows how review submission module would look like when use cli
 
 #### Ratings histogram module
 
-The ratings histogram module displays ratings summary and histogram of a product’s rating. This module is typically placed between the write review module and reviews list module on product details page.
+The ratings histogram module displays a ratings histogram on a product detail page. This module is typically placed between the write review module and reviews list module.
 
-This module has no additional configurations required, apart from adding it within the Reviews list module. 
+The ratings histogram module requires no configuration apart from adding it within the reviews list module. 
 
-Refer to the below screenshot for more details on how PDP template would look like with ratings and reviews modules on product details page:
+The following screenshot shows how a PDP template looks with ratings and reviews modules configured for display on product details pages:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
 
@@ -90,7 +84,7 @@ The product reviews module displays a list of product reviews along with sort, f
 
 | Property name     | Values                                                       | Property Description                                         |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| reviews shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
+| Reviews shown on each page             | 10                                                   | Number of reviews to be displayed on a product details page. Next and previous buttons are displayed to page through the reviews. |
 
 ## Configure a site to display ratings and reviews  
 
