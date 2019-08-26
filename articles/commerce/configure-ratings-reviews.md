@@ -50,13 +50,13 @@ There are three modules that display the ratings and reviews summary on a produc
  - Product reviews list module
  - Ratings histogram module
  
-Refer to the below screenshot for more details on how the ratings and reviews modules are structured on product details page :
+The following screenshot shows how the ratings and reviews modules are displayed on a product details page.
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 #### Write review module
 
-The write review module displays a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating or review. This module is typically placed above the rating histogram and reviews list modules on product details page.
+The write review module displays a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating or review. This module is typically placed above the rating histogram and reviews list modules on a product details page.
 
 The following screenshot shows how a review submission looks when a customer clicks **Write a review**.
 
@@ -114,7 +114,8 @@ To link the rating to the reviews section of the product detail page, do the fol
 1. Go to **Buy box container module settings**.
 1. Under **Buy box**, select **Product ratings** , then check **Link the click to full reviews module**.
 
-Refer to the below screenshot for more details:
+The following screenshot shows how is done in the product details template.
+
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## Configure the privacy and policy page link  
@@ -129,7 +130,7 @@ To configure the privacy and policy page link, do the following.
 1. In the Add a link dialog box, select the link for the privacy and policy page, then click **OK**. 
 1. Click **Save and Publish**. 
 
-Refer to the below screenshot for more details on how to configure Ratings and review "Privacy and policy" link that is showed on "Write review" module.
+The following screenshot shows how the ratings and review privacy and policy link is configured.
 
 ![eCommerce site settings - Privacy and policy link ](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
