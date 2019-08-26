@@ -40,7 +40,7 @@ In **Dynamics 365 for Finance and Operations** > **Data management** workspace, 
 
 ![Figure 1](media/01-data-management.png)
 
-3. On the **Target entities** page, insert "asset management" in the filter, and press Enter to see a list of the entities related to Asset Management.
+3. On the **Target entities** page, search for "asset management" in the filter, and press Enter to see a list of the entities related to Asset management.
 
 The figure below shows some of the Asset management entities.
 
@@ -53,6 +53,4 @@ The figure below shows some of the Asset management entities.
 In the figure below, a visualization of the fields related to the asset types entity is shown.
 
 ![Figure 3](media/03-data-management.png)
-
-
 
