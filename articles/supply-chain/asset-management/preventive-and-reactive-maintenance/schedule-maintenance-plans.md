@@ -58,7 +58,7 @@ Preventive maintenance scheduling generates calendar entries on assets, based on
 
 - If you make changes to asset types, manufacturers and models in **Asset types**, those changes only affect new assets that use the updated asset type. Read more about asset type setup in [Asset types](../setup-for-objects/object-types.md).  
 
-5. Click **OK** to start the generation of maintenance schedule entries on assets. The generated entries will be shown in the **All maintenance schedule** list page.
+5. Click **OK** to start the generation of maintenance schedule entries on assets. The generated entries will be shown in the **All maintenance schedule** list page. The following illustration shows an example of the **Schedule maintenance plans** dialog.
 
 ![Figure 1](media/09-preventive-maintenance.png)
 
