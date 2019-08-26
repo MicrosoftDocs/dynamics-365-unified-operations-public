@@ -3642,12 +3642,28 @@
         href: ../supply-chain/asset-management/warranty/warranty-agreement.md
       - name: Warranty on assets and asset types
         href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
-    - name: Create maintenance budgets
+    - name: Maintenance budgets
       items:
       - name: Maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
       - name: Update maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+    - name: Controlling and reporting
+      items: 
+      - name: Cost and date control
+        href: ../supply-chain/asset-management/controlling-and-reporting/cost-and-date-control.md
+      - name: Work hour control
+        href: ../supply-chain/asset-management/controlling-and-reporting/work-hour-control.md
+      - name: Asset fault cost control
+        href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-cost-control.md
+      - name: Asset fault analysis
+        href: ../supply-chain/asset-management/controlling-and-reporting/asset-fault-analysis.md
+      - name: Asset KPIs
+        href: ../supply-chain/asset-management/controlling-and-reporting/asset-kpis.md
+      - name: Item where used
+        href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
+      - name: Maintenance status
+        href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
     - name: Data management
       items:
       - name: Target entities
