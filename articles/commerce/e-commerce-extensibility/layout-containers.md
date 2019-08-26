@@ -2,13 +2,13 @@
 # required metadata
 
 title: Create a layout container module
-description: To create a new layout container module the SDK provides a CLI command `yarn msdyn365 add-module MODULE_NAME` to create a standard module, where `MODULE_NAME` is the name to provide your module.
-author: SamJarawan
+description: This topic describes how to create, test, and preview a layout container module.
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,29 +16,40 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-## Create a layout container module
+
+# Create a layout container module
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to create, test, and preview a layout container module.
+
+## Overview
+
 To create a new layout container module, use the online SDK CLI command **yarn msdyn365 add-module MODULE_NAME** to create a standard module, where `MODULE_NAME` is the name to provide your module and change the **$type** to **containerModule**.
 
-Below is an example to create a container module called `campaignContainer`:
+### Examples
+
+The example below shows how to create a container module called `campaignContainer`.
 ```
 yarn msdyn365 add-module campaignContainer
 ```
 
 Open the new module definition file campaignContainer.definition.json and change the **$type** to **containerModule**.
 
-The below example shows the addition of a “slots” section containing two slots for this container:
+The example below shows the addition of a "slots" section containing two slots for this container.
 ```json
 {
     "$type": "containerModule",
@@ -71,7 +82,7 @@ The below example shows the addition of a “slots” section containing two slo
 }
 ```
 
-The example below shows the modules react view file (campaignContainer.tsx) leveraging the slots for the container:
+The example below shows the modules react view file (campaignContainer.tsx) leveraging the slots for the container.
 
 ```
 import * as React from 'react';
@@ -106,10 +117,10 @@ class CampaignContainer extends React.PureComponent<ICampaignContainerProps<ICam
 export default CampaignContainer;
 ```
 
-## Testing a layout container module
-To test a container module in a local development environment, we’ll need to use a page mock.
+## Test a layout container module
+To test a container module in a local development environment, we'll need to use a page mock.
 
-Below is a sample page mock **campaignContainerMock.json** that can be leveraged for testing and is saved in the **\src\pageMocks** directory.
+Below is a sample page mock **campaignContainerMock.json** that can be leveraged for testing. It is saved in the **\src\pageMocks** directory.
 
 ```
 {
@@ -169,7 +180,7 @@ Below is a sample page mock **campaignContainerMock.json** that can be leveraged
 ```
 
 ## Preview the page
-To preview the page in a local web browser, follow these steps.
+To preview the page in a local web browser, do the following.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
