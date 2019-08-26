@@ -5,7 +5,7 @@ title: Maintenance downtime
 description: This topic explains maintenance downtime in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,13 +25,12 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Maintenance downtime
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -49,12 +48,12 @@ When assets have been selected on a maintenance downtime registration, all open 
 
 ## Maintenance downtime activities
 
-Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view.
+Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view. The illustration below shows an example of the **Maintenance downtime activities** list.
 
 ![Figure 1](media/19-preventive-maintenance.png)
 
 
-## Create a maintenance downtime registration
+## Create a maintenance downtime activity
 
 1. Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** or **Active maintenance downtime activities**.
 
@@ -66,20 +65,22 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
 5. On the **Maintenance downtime activities assets** FastTab> click **Add line** to add assets, one at a time, to the maintenance downtime activity.
 
-6. Click **Save** when all assets have been added.
+6. Click **Save** when all assets have been added. The illustration below shows an example of a maintenance downtime activity with related assets and maintenance jobs.
 
 7. The work order maintenance jobs and open maintenance schedule lines related to the selected assets are shown on the **Resulting work order maintenance jobs** and **Maintenance schedule lines** FastTabs. On the **General** FastTab > **Work orders** group > **Maintenance forecast hours** field and **General** FastTab > **Maintenance schedule** group > **Maintenance forecast hours** field , you see the total number of hours forecasted for work order maintenance jobs and maintenance schedule lines.
+
+The illustration below shows an example of the **Maintenance downtime activities** details view.
 
 ![Figure 2](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >The work order maintenance jobs and maintenance schedule lines related to the selected assets are automatically updated if new work orders or maintenance schedule lines are created after you created the maintenance downtime activity. For example, if you schedule maintenance plans or maintenance rounds on the related assets two days after the maintenance downtime activity was created, new maintenance schedule lines are automatically added to the maintenance downtime activity.
 
-8. In **All maintenance downtime activities** > **Maintenance downtime activities** > select a mainteance downtime activity in the list and click **Capacity load** to open the **Calculate capacity load** dialog. Use this dialog to get an overview of capacity load on, for example, dates, assets, asset types, and maintenance job types. Note that the dates shown in the dialog are the start and end dates selected in **Maintenance downtime activities**. This calculation includes the assets related to the maintenance downtime activity.
+8. In **All maintenance downtime activities** > **Maintenance downtime activities** > select a maintenance downtime activity in the list and click **Capacity load** to open the **Calculate capacity load** dialog. Use this dialog to get an overview of capacity load on, for example, dates, assets, asset types, and maintenance job types. Note that the dates shown in the dialog are the start and end dates selected in **Maintenance downtime activities**. This calculation includes the assets related to the maintenance downtime activity.
 
 9. In the **Calculate capacity load** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours.
+10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows an example of a **Capacity load** calculation.
 
 ![Figure 3](media/21-preventive-maintenance.png)
 
@@ -96,7 +97,7 @@ Click **Asset management** > **Common** > **Maintenance downtime activities** > 
 
 15. In the **Calculate item forecast** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.
+16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows an example of an **Item forecast** calculation.
 
 ![Figure 4](media/22-preventive-maintenance.png)
 
