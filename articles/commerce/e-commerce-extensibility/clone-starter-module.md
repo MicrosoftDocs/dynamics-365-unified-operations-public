@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -37,15 +37,15 @@ This topic describes how to clone a starter kit module.
 
 ## Overview
 
-The Dynamics 365 Commerce Online SDK includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then changed.
+The Dynamics 365 Commerce Online SDK includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.
 
-## Clone a module and change it
+## Clone and update a module
 
-To clone a module and change it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. In this command, **SDK\_MODULE\_NAME** is the name of the module that you want to modify, and **NEW\_MODULE\_NAME** is the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
+To clone a module and then update it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. In this command, **SDK\_MODULE\_NAME** is the name of the module that you want to modify, and **NEW\_MODULE\_NAME** is the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
 
 ## Example
 
-The following example shows the command that is used to clone the hero SDK module so that you can change it.
+The following example shows the command that is used to clone the hero SDK module so that you can update it.
 
 ```
 yarn msdyn365 clone hero heroExtended
@@ -68,4 +68,4 @@ To preview the new module in a local web browser, do the following.
 
 1. Open the following URL in a web browser: `https://localhost:4000/modules?type=heroV2`. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
 
-You can now change the module code as needed.
+You can now update the module code as needed.
