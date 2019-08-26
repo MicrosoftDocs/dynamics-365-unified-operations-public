@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
 author: jasongre
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -161,8 +161,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
-| Enter the session date in a date field                                       | D+Tab                         |
-| Enter the current date in a date field                                       | T+Tab                         |
+| Enter the session date in a date field                                       | D                         |
+| Enter the current date in a date field                                       | T                         |
 | Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
