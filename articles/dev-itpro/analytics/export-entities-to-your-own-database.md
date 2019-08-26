@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -200,17 +200,17 @@ You might face this limitation especially when you try to incrementally export r
 
 ### SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005
 
-**Issue** - export to BYOD fails with an SSIS exception shown below.
+**Issue** - Export to BYOD fails with an SSIS exception shown below.
 
-An OLE DB error has occurred. Error code: 0x80004005.
+    An OLE DB error has occurred. Error code: 0x80004005.
 
-An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
+    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
 
-An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
+    An OLE DB record is available. Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
 
-Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
+    Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
 
-OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+    OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 
-**Solution** - One of the reasons why this can happen is when the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture)
+**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture)
 
