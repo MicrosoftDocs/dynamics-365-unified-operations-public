@@ -29,17 +29,18 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 #  Extend a module definition file
-This topic describes how to extend a module definition file. An example of this would be creating an extended module of another module to add new configuration fields.
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
+This topic describes how to extend a module definition file. An example of this would be creating an extended module of another module to add new configuration fields.
 
 ## Overview
 When extending a property that is an object, you must extend the entire object. For example, if you wish to add a config property to your extended module, you would first copy the existing config properties from the parent module, copy them over to your child module, and then add the desired property.
 
 ## Examples
 
-The module definition file example below shows how a core module can be extended using a **$ref** command to the core script injector module:
+The module definition file example below shows how a core module can be extended using a **$ref** command to the core script injector module.
 ```json
 {
     "$ref": "@d365-commerce-modules/core-components/dist/lib/modules/script-injector/script-injector.definition.json",
@@ -68,4 +69,4 @@ The `$ref` can also include a relative path to another module in your `/src/modu
 }
 ```
 
-Once deployed, both the base and extended modules will show up in the authoring tools.
+Once deployed, both the base and extended modules will appear in Dynamics 365 Commerce.
