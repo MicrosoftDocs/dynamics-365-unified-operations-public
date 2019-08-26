@@ -54,7 +54,7 @@ Follow these steps to create new RS extensions.
 
 The following image describes the flow of the extension.
 
-[![RS Extension Flow](media/RSExtensionFlow.png)
+![RS Extension Flow](media/RSExtensionFlow.png)
 
 ### RS extension class diagram
 
@@ -112,72 +112,68 @@ public class SampleController : CommerceController<SampleEntity, long>;
 
     The **IEdmModelExtender** interface contains the abstract **ExtendModel** method. When you extend this interface you must implement the **ExtendModel** method. Inside the **ExtendModel** is where you will build your EDM entities and functions that are exposed for the client using the **CommerceModelBuilder** class.
 
-The CommerceModelBuilder Contains the build method to build the entities and functions:
+    The CommerceModelBuilder Contains the build method to build the entities and functions:
 
-| Method name                                                                     | Return type                                  | Description                                                                    |
-|---------------------------------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------|
-| BuildEntity<TEntity>() where TEntity : class                              | EntityTypeConfiguration<TEntity>       | Builds the entity.                                                             |
-| BuildEntitySet<TEntity>(string entitySetName) where TEntity : class       | EntitySetConfiguration<TEntity>        | Builds entity set.                                                             |
-| BuildComplexType<TComplexType>() where TComplexType : class               | ComplexTypeConfiguration<TComplexType> | Builds complex entity type.                                                    |
-| BuildEnumType<TEnumType>()                                                | EnumTypeConfiguration<TEnumType>       | Builds enumeration type.                                                       |
-| BindAction(string actionName)                                                   | ActionConfiguration                          | Binds action in the model builder. An action represents a HTTP POST request.   |
-| BindEntityAction<TEntity>(string actionName) where TEntity : class        | ActionConfiguration                          | Binds entity action of the model. An action represents a HTTP POST request.    |
-| BindEntitySetAction<TEntity>(string actionName) where TEntity : class     | ActionConfiguration                          | Binds entity set action. An action represents a HTTP POST request.             |
-| BindFunction(string functionName)                                               | FunctionConfiguration                        | Binds function in the model builder. A function represents a HTTP GET request. |
-| BindEntityFunction<TEntity>(string functionName) where TEntity : class    | FunctionConfiguration                        | Binds entity function of the model. A function represents a HTTP GET request.  |
-| BindEntitySetFunction<TEntity>(string functionName) where TEntity : class | FunctionConfiguration                        | Binds entity set function. A function represents a HTTP GET request.           |
+    | Method name              | Return type                                    | Description                                       |
+    |--------------------------|------------------------------------------------|---------------------------------------------------|
+    | BuildEntity\<TEntity\>() where TEntity : class                            | EntityTypeConfiguration<TEntity>       | Builds the entity.                                                             |
+    | BuildEntitySet<TEntity>(string entitySetName) where TEntity : class       | EntitySetConfiguration<TEntity>        | Builds entity set.                                                             |
+    | BuildComplexType<TComplexType>() where TComplexType : class               | ComplexTypeConfiguration<TComplexType> | Builds complex entity type.                                                    |
+    | BuildEnumType<TEnumType>()                                                | EnumTypeConfiguration<TEnumType>       | Builds enumeration type.                                                       |
+    | BindAction(string actionName)                                             | ActionConfiguration                    | Binds action in the model builder. An action represents a HTTP POST request.   |
+    | BindEntityAction<TEntity>(string actionName) where TEntity : class        | ActionConfiguration                    | Binds entity action of the model. An action represents a HTTP POST request.    |
+    | BindEntitySetAction<TEntity>(string actionName) where TEntity : class     | ActionConfiguration                    | Binds entity set action. An action represents a HTTP POST request.             |
+    | BindFunction(string functionName)                                         | FunctionConfiguration                  | Binds function in the model builder. A function represents a HTTP GET request. |
+    | BindEntityFunction<TEntity>(string functionName) where TEntity : class    | FunctionConfiguration                  | Binds entity function of the model. A function represents a HTTP GET request.  |
+    | BindEntitySetFunction<TEntity>(string functionName) where TEntity : class | FunctionConfiguration                  | Binds entity set function. A function represents a HTTP GET request.           |
 
-**Sample:**
+    The following examples shows who to extend the EDM model.
 
-```C#
-/// <summary>;
-/// The class to extend the EDM model.
-/// <summary>;
-[Export(typeof(IEdmModelExtender))]
-[ComVisible(false)]
-public class EdmModelExtender : IEdmModelExtender
-{
-/// <summary>;
-/// Extends the EDM model.
-/// <summary>;
-/// <param name="builder">The builder to build the EDM model.</param>
-public void ExtendModel(CommerceModelBuilder builder)
-{
-ThrowIf.Null(builder, "builder");
-// Extends entity sets.
-builder.BuildEntitySet<SampleEntity>("SampleEntity");
-// Extends entity set actions.
-var action = builder.BindEntitySetAction<SampleDataModel.StoreDayHours>("GetSampleEntity");
-action.Parameter<string>("Key");
-action.ReturnsCollectionFromEntitySet<SampleEntity>("SampleEntity");
-}
-}
-```
+    ```C#
+    /// <summary>;
+    /// The class to extend the EDM model.
+    /// <summary>;
+    [Export(typeof(IEdmModelExtender))]
+    [ComVisible(false)]
+    public class EdmModelExtender : IEdmModelExtender
+    {
+        /// <summary>;
+        /// Extends the EDM model.
+        /// <summary>;
+        /// <param name="builder">The builder to build the EDM model.</param>
+        public void ExtendModel(CommerceModelBuilder builder)
+        {
+            ThrowIf.Null(builder, "builder");
+            // Extends entity sets.
+            builder.BuildEntitySet<SampleEntity>("SampleEntity");
+            // Extends entity set actions.
+            var action = builder.BindEntitySetAction<SampleDataModel.StoreDayHours>("GetSampleEntity");
+            action.Parameter<string>("Key");
+            action.ReturnsCollectionFromEntitySet<SampleEntity>("SampleEntity");
+        }
+    }
+    ```
+
 6.  Build the extension project and drop the binary in the \\RetailServer\\webroot\\bin\\Ext folder.
-
 7.  Update the Retail server web.config form the \\RetailServer\\webroot folder with the new RS extension library name under the extension composition section.
 
-```
+    ```
     <extensionComposition>
-
     <!-- Please use fully qualified assembly names for ALL if you need to support loading from the Global Assembly Cache.
-
     If you host in an application with a bin folder, this is not required. -->
-
     <add source="assembly" value="SampleExtension" >;
+    </extensionComposition>
+    ```
 
-   </extensionComposition>
-```
 8.  Restart the Retail server in IIS to load the new RS extension.
-
-9.  To verify the extension successfully loaded, you can browse the metadata of the Retail server and confirm whether your entities and methods shows up in the list.
+9.  To verify the extension successfully loaded, you can browse the metadata of the Retail Server and confirm that your entities and methods show up in the list.
 
     To browse the Retail server metadata, use the below URL type in the browser:
 
-    **https://Your reatil server URL/Commerce/$metadata**
+    **https://Your retail server URL/Commerce/$metadata**
 
-10.  To call the Retail server extension in your client, you need to generate the Retail proxy and using generated proxy you can call your new RS APIs from the client.
+10. To call the Retail Server extension in your client, you need to generate the Retail proxy. Using the generated proxy you can call your new RS APIs from the client.
 
-   To generate the proxy, follow the steps mentioned in the [Generate Retail proxy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos) doc.
+    To generate the proxy, follow the steps mentioned in [Generate Retail proxy](typescript-proxy-retail-pos).
 
 
