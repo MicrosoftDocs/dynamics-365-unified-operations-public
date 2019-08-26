@@ -225,7 +225,7 @@ action.ReturnsCollectionFromEntitySet&lt;SampleEntity&gt;("SampleEntity");
 
     To browse the Retail server metadata, use the below URL type in the browser:
 
-    **server URL/Commerce/$metadata**
+    **https://Your reatil server URL/Commerce/$metadata**
 
 10.  To call the Retail server extension in your client, you need to generate the Retail proxy and using generated proxy you can call your new RS APIs from the client.
 
