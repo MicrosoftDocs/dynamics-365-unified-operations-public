@@ -45,7 +45,7 @@ With the integration with Common Data Service, these concepts and all their rela
 Finance and Operations  | Customer Engagement application
 --------------------------|---------------------------------
 Sites                     | msdyn_operationalsites
-Warehouses                | msdyn_inventwarehouses
+Warehouses                | warehouses
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
