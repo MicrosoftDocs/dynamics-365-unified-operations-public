@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Chaining Data Actions
-description: To create a maintainable and compact codebase, you will often need a suite of composable data actions that can utilize one another easily to create more complex code flows. The Dynamics 365 Commerce Online SDK allows for seamless chaining of data actions while still providing all the out of the box benefits of the data action architecture (caching, batching, deduping).
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Chain Data Actions
+description: This topic describes how to chain data actions.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,25 +16,34 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Chaining data actions
+# Chain data actions
 
-To create a maintainable and compact codebase, you will often need a suite of composable data actions that can utilize one another easily to create more complex code flows. The Dynamics 365 Commerce Online SDK offers the ability to seamlessly chain data actions while still providing all the out of the box benefits of the data action architecture (caching, batching and deduping).
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Below is an example of data action chaining which first makes a product information call followed by an inventory call.
+This topic describes how to chain data actions.
 
-First you'll see a data action to get product information then a data action to get inventory information.
+## Overview
+
+To create a maintainable and compact codebase, you will often need a suite of composable data actions that can use one another easily to create more complex code flows. The Dynamics 365 Commerce Online SDK offers the ability to seamlessly chain data actions while still providing all the out-of-the-box benefits of the data action architecture (caching, batching and deduping).
+
+## Examples
+
+The example below shows data action chaining which first makes a product information call, followed by an inventory call.
+
+First you'll see a data action to get product information, then a data action to get inventory information.
 
 ```Typescript
 // get-product.ts
@@ -142,9 +151,9 @@ export default createObservableDataAction({
     action: getProductAvailabilityAction
 })
 ```
-Now that we have an action for getting the product data and `ProductAvailableQuantity` of a Product, we can create a new chain data action. Chain data actions are just data actions that invoke other data actions as part of their execution.
+Now that we have an action for getting the product data and `ProductAvailableQuantity` of a product, we can create a new chain data action. Chain data actions are just data actions that invoke other data actions as part of their execution.
 
-Below is an example of a chain data action `getProductWithAvailability` that uses both of these actions:
+The example below shows a chain data action `getProductWithAvailability` that uses both of these actions.
 
 ```typescript
 import getProduct, { ProductInput } from './get-product';
@@ -179,4 +188,4 @@ export default createObservableDataAction({
 })
 ```
 
-Now we can use our newly created chain action anywhere we need both the basic product information and it's current inventory status. In addition the calls that exist within our chain action will still be run through the cache, and also batched and deduped with other actions being run on the same page.
+Now we can use our newly created chain action anywhere we need both the basic product information and its current inventory status. In addition, the calls that exist within the chain action will still be run through the cache, and also batched and deduped with other actions being run on the same page.
