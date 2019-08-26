@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Extend a module definition
-description: This topic covers information on how to extend a module definition file. An example could be to create an extended module of another module to add new configuration fields.
-author: SamJarawan
+title: Extend a module definition file
+description: This topic describes how to extend a module definition file.
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,25 +16,30 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Create a new script injector module
-This topic covers information on how to extend a module definition file. An example could be to create an extended module of another module to add new configuration fields.
+#  Extend a module definition file
+This topic describes how to extend a module definition file. An example of this would be creating an extended module of another module to add new configuration fields.
 
-When extending a property that is an object you must extend the entire object. For example, if you wish to add a config property to your extended module, you would first copy the existing config properties from the parent module, copy them over to your child module and then add the desired property.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
+## Overview
+When extending a property that is an object, you must extend the entire object. For example, if you wish to add a config property to your extended module, you would first copy the existing config properties from the parent module, copy them over to your child module, and then add the desired property.
 
-Below example module definition file shows how a core module can be extended using a **$ref** command to the core script injector module:
+## Examples
+
+The module definition file example below shows how a core module can be extended using a **$ref** command to the core script injector module:
 ```json
 {
     "$ref": "@d365-commerce-modules/core-components/dist/lib/modules/script-injector/script-injector.definition.json",
@@ -63,4 +68,4 @@ The `$ref` can also include a relative path to another module in your `/src/modu
 }
 ```
 
-Once deployed both the base and extended modules will show up in the authoring tools.
+Once deployed, both the base and extended modules will show up in the authoring tools.
