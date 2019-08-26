@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -193,7 +193,7 @@ The following table lists the available triggers and denotes whether they can be
 ## Reason code triggers
 | Trigger              | Type           | Description                                             |
 |----------------------|----------------|---------------------------------------------------------|
-| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered(before the reason code added to the cart). |
+| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
 
 
 ## Business scenario
