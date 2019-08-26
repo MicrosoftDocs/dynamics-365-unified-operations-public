@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure your e-Commerce site to display customer ratings and reviews.
+This topic describes how to configure your e-Commerce site to display end user's ratings and reviews and accept a ratings and review from an end user.
 
 ## Overview
 
@@ -44,15 +44,28 @@ Ratings are displayed on product list pages, category list pages, search results
 
 ### Ratings and reviews modules displayed on product details pages 
 
-There are three modules that display the ratings and reviews summary on a product details page.
+There are three modules that display the ratings and reviews list on a product details page.
 
  - Write review module
  - Product reviews list module
  - Ratings histogram module
  
-The following screenshot shows how the ratings and reviews modules are displayed on a product details page.
+The following screenshot shows how ratings and reviews modules section appears on product details page.
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+
+
+   > [!TIP] 
+   > Refer to authoring templates and layouts documentation to learn how to create PDP template and layout to optimize the efforts needed to create hundreds and thousands of product details pages, and configuring the ratings and reviews modules once through template and layout to surface on product details pages on your e-Commerce sites. 
+
+
+#### Create PDP Layout or page with ratings and review modules
+
+The write review module displays a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating or review. This module is typically placed above the rating histogram and reviews list modules on a product details page.
+
+The following screenshot shows how the **Add module** popup shows modules for **Ratings and reviews** container.
+![eCommerce site settings - Adding Ratings and Reviews modules](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+
 
 #### Write review module
 
@@ -71,7 +84,7 @@ The following screenshot shows how a review submission looks when a customer cli
 
 The ratings histogram module displays a ratings histogram on a product detail page. This module is typically placed between the write review module and reviews list module.
 
-The ratings histogram module requires no configuration apart from adding it within the reviews list module. 
+The ratings histogram module requires no configuration apart from adding the module in the PDP template. 
 
 The following screenshot shows how a PDP template looks with ratings and reviews modules configured for display on product details pages:
 
@@ -85,6 +98,18 @@ The product reviews module displays a list of product reviews along with sort, f
 | Property name     | Values                                                       | Property Description                                         |
 | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Reviews shown on each page             | 10                                                   | Number of reviews to be displayed on a product details page. Next and previous buttons are displayed to page through the reviews. |
+
+> [!NOTE]
+>Product review list module has a slot to include the ratings histogram module, that would show in the form of rating summary. Please refer to the all module UX design screenshot at the top of this document.
+
+
+#### Ratings histogram - summary view
+
+The following screenshot shows how you can add ***Rating histogram** within the **Reviews list module** to show product's ratings summary:
+
+![eCommerce site settings - Ratings summary in reviews list ](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+
+
 
 ## Configure a site to display ratings and reviews  
 
@@ -133,4 +158,3 @@ To configure the privacy and policy page link, do the following.
 The following screenshot shows how the ratings and review privacy and policy link is configured.
 
 ![eCommerce site settings - Privacy and policy link ](media/rnr-eCommerce-rnr-privacy-policy-link.png)
-
