@@ -198,3 +198,19 @@ You might face this limitation especially when you try to incrementally export r
 
 **Solution** - In cases like this it is recommended to disable and re-enable change tracking for the entity in question. The state of the SQL change tracking tables might not be in the expected state. Also verify that there are no other incremental exports that cover the same tables (DMF, MR, Retail).
 
+### SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005
+
+**Issue** - export to BYOD fails with an SSIS exception shown below.
+
+An OLE DB error has occurred. Error code: 0x80004005.
+
+An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "Communication link failure".
+
+An OLE DB record is available.  Source: "Microsoft SQL Server Native Client 11.0"  Hresult: 0x80004005  Description: "TCP Provider: An existing connection was forcibly closed by the remote host.
+
+Failed to open a fastload rowset for <entityStaging>. Check that the object exists in the database.
+
+OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
+
+**Solution** - One of the reasons why this can happen is when the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture)
+
