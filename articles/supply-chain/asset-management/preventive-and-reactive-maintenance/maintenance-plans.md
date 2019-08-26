@@ -198,3 +198,4 @@ The following illustration shows an example of a "Truck service" maintenance pla
 The following illustration shows an example of maintenance plans set up on an asset on the **All assets** page.
 
 ![Figure 7](media/08-preventive-maintenance.png)
+
