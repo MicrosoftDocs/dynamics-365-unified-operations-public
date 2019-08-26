@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax specification by ledger transaction report
-description: This article explains how to use this report to show and print information about ledger transactions for which sales tax is calculated.
+description: This topic explains how to use this report to view and print information about ledger transactions for which sales tax is calculated.
 author: ericwang
 manager: Ann Beebe
 ms.date: 08/19/2019
@@ -33,16 +33,16 @@ ms.dyn365.ops.version: 10.0.6
 
 # Sales tax specification by ledger transaction report
 
-This article explains how to use this report to show and print information about ledger transactions for which sales tax is calculated.
+This topic explains how to use this report to view and print information about ledger transactions for which sales tax is calculated.
 
 ## Tax Account and Non-Tax Account
 
-This report will show tax transaction for both tax account and non-tax account. Definition of the two accounts is:
+This report will show tax transactions for both tax and non-tax accounts. These accounts are categorized as follows:
 
-- Tax account: when tax transaction is posted, main account on "Sales Tax" journal line is tax account. e.g. sales tax payable, sales tax receivable
-- Non-tax account: when tax transaction is posted, main account on original transaction is non-tax account. e.g. revenue account, expense account
+- The account is considered a tax account when a tax transaction is posted and the main account on the **Sales Tax** journal line is tax account, such as a sales tax payable or a sales tax receivable account.
+- The account is considered a non-tax account when a tax transaction is posted and the main account on the original transaction is non-tax account, such as a revenue account or an expense account.
 
-In this report, report columns "Origin", "Sales tax receivable", "Sales tax payable" amount will show for non-tax account and will show 0 for tax account
+In this report, amounts will be displayed in the report columns **Origin**, **Sales tax receivable**, and **Sales tax payable** for non-tax accounts, and 0 will be displayed for tax accounts.
 
 
 ## How to filter the data on this report
@@ -51,17 +51,17 @@ When you generate this report, the following default parameters are displayed. Y
 
 |Field|Description|
 |-------|-----------------|
-|Main accounts only|Tax transaction date range|
-|From/To Main account|Main account range|
-|From/To sales tax code|Sales tax code range|
-|Grouping|Report is grouped by ledger account or sales tax code|
-|Subtotal by sales tax code|Select this check box to show subtotal by sales tax code|
-|Totals only|Select this check box to show totals only|
-|Main accounts only|Select this check box to print only main accounts on the report|
+|Main accounts only|Shows the tax transaction date range|
+|From/To Main account|Shows the main account range|
+|From/To sales tax code|Shows the sales tax code range|
+|Grouping|Shows that the report is grouped by ledger account or sales tax code|
+|Subtotal by sales tax code|Used to display subtotals by sales tax code|
+|Totals only|Used to show totals only|
+|Main accounts only|Used to include only main accounts on the report|
 
 ## How to show Non-Tax Account only in this report
 
-If you only want to show non-tax account in this report, you could setup any filter condition (e.g. *) as follows
+If you want to show only non-tax accounts in this report, set up a filter condition, such as an asterisk (\*) as follows
 
 ![](media/taxspecperledgertrans.png)
 
