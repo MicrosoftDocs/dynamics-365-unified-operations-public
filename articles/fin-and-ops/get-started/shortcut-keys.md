@@ -161,8 +161,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
-| Enter the session date in a date field                                       | D+Tab                         |
-| Enter the current date in a date field                                       | T+Tab                         |
+| Enter the session date in a date field                                       | D                         |
+| Enter the current date in a date field                                       | T                         |
 | Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
