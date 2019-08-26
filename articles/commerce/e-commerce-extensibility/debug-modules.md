@@ -2,7 +2,7 @@
 # required metadata
 
 title: Debug modules
-description: This topic describes the various options available to help debug modules during development.
+description: This topic describes the options available to debug modules during development.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various options available to help debug modules during development.
+This topic describes the options available to debug modules during development.
 
 ## Overview
 
