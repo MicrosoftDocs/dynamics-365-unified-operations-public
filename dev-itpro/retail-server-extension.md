@@ -53,11 +53,11 @@ Retail SDK have few E2E Retail server extension samples including the CRT, pleas
 
 **Flow:**
 
-[![RS Extension Flow](./media/RSExtensionFlow.png)](./media/RSExtensionFlow.png)
+![RS Extension Flow](media/RSExtensionFlow.png)
 
 **RS extension class diagram:**
 
-[![RS Extension Class diagram](media/RSClassFlow.png)](media/RSClassFlow.png)
+![RS Extension Class diagram](media/RSClassFlow.png)
 
 1.  Before creating the Retail server extension, create the Commerce Runtime extension first. RS APIs should not have any logic other than calling the commerce runtime with the parameters.
 
