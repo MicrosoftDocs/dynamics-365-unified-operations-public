@@ -114,18 +114,18 @@ public class SampleController : CommerceController<SampleEntity, long>;
 
     The CommerceModelBuilder Contains the build method to build the entities and functions:
 
-    | Method name              | Return type                                    | Description                                       |
-    |--------------------------|------------------------------------------------|---------------------------------------------------|
-    | BuildEntity\<TEntity\>() where TEntity : class                            | EntityTypeConfiguration<TEntity>       | Builds the entity.                                                             |
-    | BuildEntitySet<TEntity>(string entitySetName) where TEntity : class       | EntitySetConfiguration<TEntity>        | Builds entity set.                                                             |
-    | BuildComplexType<TComplexType>() where TComplexType : class               | ComplexTypeConfiguration<TComplexType> | Builds complex entity type.                                                    |
-    | BuildEnumType<TEnumType>()                                                | EnumTypeConfiguration<TEnumType>       | Builds enumeration type.                                                       |
-    | BindAction(string actionName)                                             | ActionConfiguration                    | Binds action in the model builder. An action represents a HTTP POST request.   |
-    | BindEntityAction<TEntity>(string actionName) where TEntity : class        | ActionConfiguration                    | Binds entity action of the model. An action represents a HTTP POST request.    |
-    | BindEntitySetAction<TEntity>(string actionName) where TEntity : class     | ActionConfiguration                    | Binds entity set action. An action represents a HTTP POST request.             |
-    | BindFunction(string functionName)                                         | FunctionConfiguration                  | Binds function in the model builder. A function represents a HTTP GET request. |
-    | BindEntityFunction<TEntity>(string functionName) where TEntity : class    | FunctionConfiguration                  | Binds entity function of the model. A function represents a HTTP GET request.  |
-    | BindEntitySetFunction<TEntity>(string functionName) where TEntity : class | FunctionConfiguration                  | Binds entity set function. A function represents a HTTP GET request.           |
+    | Method name              | Return type                                      | Description                                    |
+    |--------------------------|--------------------------------------------------|------------------------------------------------|
+    | BuildEntity\<TEntity\>() where TEntity : class                              | EntityTypeConfiguration\<TEntity\>       | Builds the entity.                                                             |
+    | BuildEntitySet\<TEntity\>(string entitySetName) where TEntity : class       | EntitySetConfiguration\<TEntity\>        | Builds entity set.                                                             |
+    | BuildComplexType\<TComplexType\>() where TComplexType : class               | ComplexTypeConfiguration\<TComplexType\> | Builds complex entity type.                                                    |
+    | BuildEnumType\<TEnumType\>()                                                | EnumTypeConfiguration\<TEnumType\>       | Builds enumeration type.                                                       |
+    | BindAction(string actionName)                                               | ActionConfiguration                      | Binds action in the model builder. An action represents a HTTP POST request.   |
+    | BindEntityAction\<TEntity\>(string actionName) where TEntity : class        | ActionConfiguration                      | Binds entity action of the model. An action represents a HTTP POST request.    |
+    | BindEntitySetAction\<TEntity\>(string actionName) where TEntity : class     | ActionConfiguration                      | Binds entity set action. An action represents a HTTP POST request.             |
+    | BindFunction(string functionName)                                           | FunctionConfiguration                    | Binds function in the model builder. A function represents a HTTP GET request. |
+    | BindEntityFunction\<TEntity\>(string functionName) where TEntity : class    | FunctionConfiguration                    | Binds entity function of the model. A function represents a HTTP GET request.  |
+    | BindEntitySetFunction\<TEntity\>(string functionName) where TEntity : class | FunctionConfiguration                    | Binds entity set function. A function represents a HTTP GET request.           |
 
     The following examples shows who to extend the EDM model.
 
