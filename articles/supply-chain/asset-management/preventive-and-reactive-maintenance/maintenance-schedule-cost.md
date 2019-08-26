@@ -5,7 +5,7 @@ title: Maintenance schedule cost
 description: This topic explains maintenance schedule cost in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 
@@ -33,11 +33,9 @@ ms.dyn365.ops.version: 10.0.5
 
 # Maintenance schedule cost
 
-
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 In Asset Management, you can calculate budget costs on maintenance schedule lines. This is useful if you want to get an overview of expected costs, for example, costs relating to planned preventive maintenance jobs for the next year. The calculations are based on existing maintenance schedule lines of type "Maintenance plans" and "Maintenance rounds" and "Maintenance requests".
 
@@ -58,6 +56,7 @@ In Asset Management, you can calculate budget costs on maintenance schedule line
 
 7. Click the **Calculate cost** button if you want to make a new cost calculation.
 
+The illustration below shows the results of a maintenance schedule cost calculation.
 
 ![Figure 1](media/17-preventive-maintenance.png)
 
