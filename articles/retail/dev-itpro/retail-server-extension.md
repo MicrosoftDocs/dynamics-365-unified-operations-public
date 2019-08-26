@@ -116,63 +116,41 @@ The CommerceModelBuilder Contains the build method to build the entities and fun
 
 | Method name                                                                     | Return type                                  | Description                                                                    |
 |---------------------------------------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------|
-| BuildEntity&lt;TEntity&gt;() where TEntity : class                              | EntityTypeConfiguration&lt;TEntity&gt;       | Builds the entity.                                                             |
-| BuildEntitySet&lt;TEntity&gt;(string entitySetName) where TEntity : class       | EntitySetConfiguration&lt;TEntity&gt;        | Builds entity set.                                                             |
-| BuildComplexType&lt;TComplexType&gt;() where TComplexType : class               | ComplexTypeConfiguration&lt;TComplexType&gt; | Builds complex entity type.                                                    |
-| BuildEnumType&lt;TEnumType&gt;()                                                | EnumTypeConfiguration&lt;TEnumType&gt;       | Builds enumeration type.                                                       |
+| BuildEntity<TEntity>() where TEntity : class                              | EntityTypeConfiguration<TEntity>       | Builds the entity.                                                             |
+| BuildEntitySet<TEntity>(string entitySetName) where TEntity : class       | EntitySetConfiguration<TEntity>        | Builds entity set.                                                             |
+| BuildComplexType<TComplexType>() where TComplexType : class               | ComplexTypeConfiguration<TComplexType> | Builds complex entity type.                                                    |
+| BuildEnumType<TEnumType>()                                                | EnumTypeConfiguration<TEnumType>       | Builds enumeration type.                                                       |
 | BindAction(string actionName)                                                   | ActionConfiguration                          | Binds action in the model builder. An action represents a HTTP POST request.   |
-| BindEntityAction&lt;TEntity&gt;(string actionName) where TEntity : class        | ActionConfiguration                          | Binds entity action of the model. An action represents a HTTP POST request.    |
-| BindEntitySetAction&lt;TEntity&gt;(string actionName) where TEntity : class     | ActionConfiguration                          | Binds entity set action. An action represents a HTTP POST request.             |
+| BindEntityAction<TEntity>(string actionName) where TEntity : class        | ActionConfiguration                          | Binds entity action of the model. An action represents a HTTP POST request.    |
+| BindEntitySetAction<TEntity>(string actionName) where TEntity : class     | ActionConfiguration                          | Binds entity set action. An action represents a HTTP POST request.             |
 | BindFunction(string functionName)                                               | FunctionConfiguration                        | Binds function in the model builder. A function represents a HTTP GET request. |
-| BindEntityFunction&lt;TEntity&gt;(string functionName) where TEntity : class    | FunctionConfiguration                        | Binds entity function of the model. A function represents a HTTP GET request.  |
-| BindEntitySetFunction&lt;TEntity&gt;(string functionName) where TEntity : class | FunctionConfiguration                        | Binds entity set function. A function represents a HTTP GET request.           |
+| BindEntityFunction<TEntity>(string functionName) where TEntity : class    | FunctionConfiguration                        | Binds entity function of the model. A function represents a HTTP GET request.  |
+| BindEntitySetFunction<TEntity>(string functionName) where TEntity : class | FunctionConfiguration                        | Binds entity set function. A function represents a HTTP GET request.           |
 
 **Sample:**
 
 ```C#
-
 /// <summary>;
-
 /// The class to extend the EDM model.
-
 /// <summary>;
-
 [Export(typeof(IEdmModelExtender))]
-
 [ComVisible(false)]
-
 public class EdmModelExtender : IEdmModelExtender
-
 {
-
 /// <summary>;
-
 /// Extends the EDM model.
-
 /// <summary>;
-
 /// <param name="builder">The builder to build the EDM model.</param>
-
 public void ExtendModel(CommerceModelBuilder builder)
-
 {
-
 ThrowIf.Null(builder, "builder");
-
 // Extends entity sets.
-
 builder.BuildEntitySet<SampleEntity>("SampleEntity");
-
 // Extends entity set actions.
-
 var action = builder.BindEntitySetAction<SampleDataModel.StoreDayHours>("GetSampleEntity");
-
 action.Parameter<string>("Key");
-
-action.ReturnsCollectionFromEntitySet&lt;SampleEntity&gt;("SampleEntity");
-
+action.ReturnsCollectionFromEntitySet<SampleEntity>("SampleEntity");
 }
-
 }
 ```
 6.  Build the extension project and drop the binary in the \\RetailServer\\webroot\\bin\\Ext folder.
