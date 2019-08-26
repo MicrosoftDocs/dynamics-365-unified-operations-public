@@ -3644,10 +3644,14 @@
         href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
     - name: Create maintenance budgets
       items:
-      - name: Create maintenance budgets
+      - name: Maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
       - name: Update maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
+    - name: Data management
+      items:
+      - name: Target entities
+        href: ../supply-chain/asset-management/data-management/target-entities.md
   - name: Master planning
     items:
     - name: Master planning home page
