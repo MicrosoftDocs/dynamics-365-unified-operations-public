@@ -195,7 +195,7 @@ The following illustration shows an example of a "Truck service" maintenance pla
 
 6. Click **Save**. The **Active** field is automatically updated.
 
-The following illustration shows an example of maintenance plan lines set up on an asset on the **All assets** page.
+The following illustration shows an example of maintenance plans set up on an asset on the **All assets** page.
 
 ![Figure 7](media/08-preventive-maintenance.png)
 
