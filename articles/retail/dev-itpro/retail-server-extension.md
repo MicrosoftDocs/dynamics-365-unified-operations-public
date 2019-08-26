@@ -229,8 +229,6 @@ action.ReturnsCollectionFromEntitySet&lt;SampleEntity&gt;("SampleEntity");
 
 10.  To call the Retail server extension in your client, you need to generate the Retail proxy and using generated proxy you can call your new RS APIs from the client.
 
-   To generate the proxy, follow the steps mentioned in the below doc:
-
-   <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos>
+   To generate the proxy, follow the steps mentioned in the [Generate Retail proxy](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/typescript-proxy-retail-pos) doc.
 
 
