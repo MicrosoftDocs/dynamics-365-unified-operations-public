@@ -80,7 +80,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 9. In the **Calculate capacity load** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows an example of a **Capacity load** calculation.
+10. Click **OK** to start the calculation. The total number of hours is shown in the **Capacity load** overview. On the **Capacity load** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted hours. The illustration below shows the results of a **Capacity load** calculation.
 
 ![Figure 3](media/21-preventive-maintenance.png)
 
@@ -97,7 +97,7 @@ The illustration below shows an example of the **Maintenance downtime activities
 
 15. In the **Calculate item forecast** dialog, edit start and end times if required, and select if you want to include work orders and maintenance schedules in the calculation. You can use the **Level** field to indicate how detailed you want the capacity load calculation to be regarding functional locations. For example, if you insert the number "1" in the field, and you have a multi-level functional location structure, all assets for a functional location, which are selected on the maintenance downtime activity, will be shown on the top level, and therefore the hours on a line may be added up from functional locations located at a lower level. If you insert the number "0" in the **Level** field, you will see a detailed result showing all capacity load lines on all the functional location levels to which they are related.
 
-16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows an example of an **Item forecast** calculation.
+16. Click **OK** to start the calculation. The total number of item forecasts is shown in the  **Item forecast** overview. On the **Item forecast** tab > the **Group by...** action pane groups, click the relevant buttons to get a more detailed overview of the allocation of forecasted items.The illustration below shows the results of an **Item forecast** calculation.
 
 ![Figure 4](media/22-preventive-maintenance.png)
 
