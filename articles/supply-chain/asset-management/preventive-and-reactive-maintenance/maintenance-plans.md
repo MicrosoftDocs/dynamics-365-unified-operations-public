@@ -5,7 +5,7 @@ title: Maintenance plans
 description: This topic explains maintenance plans in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
