@@ -1,34 +1,38 @@
 ---
 # required metadata
 
-title: Working with Cookies
+title: Work with Cookies
 description: This topic provides an overview of the Dynamics 365 Commerce e-Commerce SDK APIs to set and get Cookie data.
-author: SamJarawan
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: josaw
+# ms.devlang: 
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Working with Cookies
+# Work with Cookies
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 This topic provides an overview of the Dynamics 365 Commerce online SDK APIs to set and get Cookie data.
 
 ## Cookie consent
