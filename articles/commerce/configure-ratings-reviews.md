@@ -47,20 +47,23 @@ This document explains how to configure your e-Commerce website and pages to sho
 3. Ratings histogram and reviews list on product details page (PDP). 
 4. Privacy and policy link configuration.
 
-### Ratings histogram and reviews list on product details page (PDP) 
+### Ratings and reviews modules displayed on product details pages 
 
-Ratings summary is showed across the sites in the products placement lists, category lists, and search results etc. Ratings summary along with review list will be showed on product details page, also allows consumers to submit a rating and review on a product on product details pages.  There are multiple modules those needs to be configure to show ratings summary, write review, and reviews list on product details page as follows:
+There are three modules that display the ratings and reviews summary on a product details page.
 
- - Write review module. 
- - Product reviews list module. 
- - Ratings histogram module.
+ - Write review module
+ - Product reviews list module
+ - Ratings histogram module
+ 
+Ratings are displayed on product list pages, category list pages, search results pages, and other site pages. Ratings and product reviews are displayed on product details pages, along with the **Write a review** button that enables customers to submit a rating and review on a product.
 
 Refer to the below screenshot for more details on how the ratings and reviews modules are structured on product details page :
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
-#### Write review module 
-Write review module allows users to sign-in, give a rating, and write a review on a product. The same module also allows users to edit the previously given rating and review.  This module is typically placed above the Reviews list and Rating histogram modules on product details page.
+#### Write review module
+
+The write review module display a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating and review. This module is typically placed above the reviews list and rating histogram modules on product details page.
 
 Below screenshot shows how review submission module would look like when use clicks on "Write a review"
 ![e-Commerce site settings - Write review module ](media/rnr-eCommerce-write-review-module.png)
@@ -70,23 +73,24 @@ Below screenshot shows how review submission module would look like when use cli
 | Name             | Write review                                                   | This is name of the "Write review" module|
 
 
-#### Product Reviews list module 
-Product reviews module is used to display list of product’s reviews along with sort, filter, and pagination options. This module is typically placed on product details page.
+#### Ratings histogram module
 
-
-
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| reviews shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
-
-### Ratings histogram module 
-Ratings histogram module shows ratings summary and histogram of a product’s rating. This module is typically placed above the Product Review List module on product details page.
+The ratings histogram module displays ratings summary and histogram of a product’s rating. This module is typically placed between the write review module and reviews list module on product details page.
 
 This module has no additional configurations required, apart from adding it within the Reviews list module. 
 
 Refer to the below screenshot for more details on how PDP template would look like with ratings and reviews modules on product details page:
 
 ![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
+
+#### Product reviews list module
+
+The product reviews module displays a list of product reviews along with sort, filter, and pagination options. This module is typically placed after the ratings histogram module on a product details page.
+
+
+| Property name     | Values                                                       | Property Description                                         |
+| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| reviews shown on each page             | 10                                                   | Count of reviews to be showed in a pagination model. User will see next and previous buttons to paginate through the reviews. |
 
 ## Configure a site to display ratings and reviews  
 
