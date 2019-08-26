@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create new Retail server extension.
-description: This topic explains how to create new Retail server extension.
+title: Create new Retail Server extension
+description: This topic explains how to create new Retail Server extension.
 author: mugunthanm
 manager: AnnBe
 ms.date: 08/25/2019
@@ -30,116 +30,87 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create new Retail server extension
+# Create new Retail Server extension
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to create new Retail server (RS) API and expose it for POS or other clients to consume it, modifying the existing Retail server APIs are not supported.
+This document explains how to create new Retail Server (RS) API and expose it for POS or other clients to consume. Modifying the existing Retail server APIs are not supported.
 
-Retail SDK have few E2E Retail server extension samples including the CRT, please use these sample as template to start your extensions. You can find the sample extensions in RetailSDK\\SampleExtensions\\RetailServer folder.
+There are only a few end-to-end Retail Server extension samples including CRT in the Retail SDK. You can use these sample as template to start your extensions. You can find the sample extensions in the **RetailSDK\\SampleExtensions\\RetailServer** folder.
 
-**E2E Sample repository in Retail SDK:**
+## End-to-end sample repository in Retail SDK
 
-| Sample Extension                            
-                                              
- (RetailSDK\\SampleExtensions\\RetailServer)  | CRT sample RetailSDK\\SampleExtensions\\CommerceRuntime) | POS Sample RetailSDK\\POS\\Extensions) |
-|---------------------------------------------|----------------------------------------------------------|----------------------------------------|
-| Extensions.StoreHoursSample                 | Extensions.StoreHoursSample                              | StoreHoursSample                       |
-| Extensions.SalesTransactionSignatureSample  | Extensions.SalesTransactionSignatureSample               | SalesTransactionSignatureSample        |
-| Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample                        |                                        |
-| Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample                            |                                        |
+| Sample Extension<br>(RetailSDK\\SampleExtensions\\RetailServer)  | CRT sample<br>(RetailSDK\\SampleExtensions\\CommerceRuntime) | POS Sample<br>(RetailSDK\\POS\\Extensions) |
+|---------------------------------------------|--------------------------------------------|----------------------------------------|
+| Extensions.StoreHoursSample                 | Extensions.StoreHoursSample                | StoreHoursSample                       |
+| Extensions.SalesTransactionSignatureSample  | Extensions.SalesTransactionSignatureSample | SalesTransactionSignatureSample        |
+| Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample          |                                        |
+| Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample              |                                        |
 
-**Please follow the below steps to create new RS extensions:**
+## Create a new RS extension
+Follow these steps to create new RS extensions.
 
-**Flow:**
+### End-to-end flow
 
-[![RS Extension Flow](./media/RSExtensionFlow.png)](./media/RSExtensionFlow.png)
+The following image describes the flow of the extension.
 
-**RS extension class diagram:**
+[![RS Extension Flow](media/RSExtensionFlow.png)
 
-[![RS Extension Class diagram](./media/RSClassFlow.png)](./media/RSClassFlow.png)
+### RS extension class diagram
 
-1.  Before creating the Retail server extension, create the Commerce Runtime extension first. RS APIs should not have any logic other than calling the commerce runtime with the parameters.
+The following diagram shows the class structure of the extension.
 
-2.  Create new C\# class library project using the .NET target framework minimum 4.6.1.
+![RS Extension Class diagram](media/RSClassFlow.png)
 
-3.  Add reference to your CRT extension library or project to the RS extension project. Because you will call the CRT request, response and use the entities from the Retail server extension project.
+### Steps
 
-4.  Inside the RS extension project create a new controller class and extend it form NonBindableOperationController or CommerceController depends on the scenario. The Controller class will contain the method to be exposed by the RS API. Inside the controller class add methods to call the commerce runtime request.
+1. Before creating the Retail server extension, create the Commerce Runtime extension. RS APIs should not have any logic other than calling the commerce runtime with the parameters.
+2. Create new C\# class library project using the .NET target framework minimum 4.6.1.
+3. Add a reference to your CRT extension library or project to the RS extension project. This lets you call the CRT request and response, lets you use the entities from the Retail Server extension project.
+4.  Inside the RS extension project create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. The **Controller** class will contain the method to be exposed by the RS API. Inside the controller class add methods to call the commerce runtime request.
 
 ```C#
 /// <summary>;
-
 /// The controller to retrieve a new entity.
-
 /// <summary>
-
 [ComVisible(false)]
-
 public class SampleController : CommerceController<SampleEntity, long>;
-
 {
+    ///<summary>;
+    /// Gets the controller name used to load extended controller.
+    /// <summary>
+    public override string ControllerName
+    {
+        get { return "SampleEntity"; }
+    }
 
-///<summary>;
+    /// <summary>;
+    /// Gets the sample entity.
+    /// <summary>;
+    /// <param name="parameters">The parameters to this action.</param>
+    /// <returns>The list of sample entity.</returns>
+    [HttpPost]
+    [CommerceAuthorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+    public System.Web.OData.PageResult<SampleEntity> GetSampleEntity(ODataActionParameters parameters)
+    {
+        if (parameters == null)
+        {
+            throw new ArgumentNullException("parameters");
+        }
 
-/// Gets the controller name used to load extended controller.
-
-/// <summary>
-
-public override string ControllerName
-
-{
-
-get { return "SampleEntity"; }
-
+        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+        QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
+        queryResultSettings.Paging = new PagingInfo(10);
+        var request = new CRTDataRequest((string)parameters["key"]) { QueryResultSettings = queryResultSettings };
+        PagedResult<SampleEntity> sample = runtime.Execute<CRTDataResponse>(request, null);
+        return this.ProcessPagedResults(sample);
+    }
 }
-
-/// <summary>;
-
-/// Gets the sample entity.
-
-/// <summary>;
-
-/// <param name="parameters">The parameters to this action.</param>
-
-/// <returns>The list of sample entity.</returns>
-
-[HttpPost]
-
-[CommerceAuthorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
-
-public System.Web.OData.PageResult&lt;SampleEntity&gt; GetSampleEntity(ODataActionParameters parameters)
-
-{
-
-if (parameters == null)
-
-{
-
-throw new ArgumentNullException("parameters");
-
-}
-
-var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-
-QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-
-queryResultSettings.Paging = new PagingInfo(10);
-
-var request = new CRTDataRequest((string)parameters["key"]) { QueryResultSettings = queryResultSettings };
-
-PagedResult<SampleEntity> sample = runtime.Execute<CRTDataResponse>(request, null);
-
-return this.ProcessPagedResults(sample);
-
-}
-
- }
 ```
 
-5.  Next create new EdmModelExtender class which will extend form the IEdmModelExtender interface. The EdmModelExtender (EDM) class contains the abstract data model that is used to describe the data exposed by an RS API. An OData Metadata Document is a representation of a service's data model exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
+5.  Create the new **EdmModelExtender** class that extends the **IEdmModelExtender** interface. The **EdmModelExtender** (EDM) class contains the abstract data model that is used to describe the data exposed by an RS API. An OData Metadata Document is a representation of a service's data model exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
 
-IEdmModelExtender interface contains the abstract ExtendModel method. When you extend from this interface you must implement the ExtendModel method. Inside the ExtendModel is where you will build your EDM entities and functions to be exposed for the client using the CommerceModelBuilder class.
+    The **IEdmModelExtender** interface contains the abstract **ExtendModel** method. When you extend this interface you must implement the **ExtendModel** method. Inside the **ExtendModel** is where you will build your EDM entities and functions that are exposed for the client using the **CommerceModelBuilder** class.
 
 The CommerceModelBuilder Contains the build method to build the entities and functions:
 
