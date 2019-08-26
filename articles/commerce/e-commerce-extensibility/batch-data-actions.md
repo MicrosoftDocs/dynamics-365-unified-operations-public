@@ -37,7 +37,7 @@ This topic describes how to batch data actions.
 
 ## Overview
 
-In many scenarios, you will have an application that requires many calls to the same API during the load of a single page. An example is a product feature page that showcases information about not just one, but many products. A typical solution would be to call the data action to get products multiple times resulting in many inidividual HTTP requests to get the product info, which may not be very efficient. To solve this problem, the data action architecture supports batchable data actions.
+In many scenarios, you will have an application that requires many calls to the same API during the load of a single page. An example of this is a product feature page that showcases information about not just one, but many products. A typical solution would be to call the data action to get products multiple times resulting in many individual HTTP requests to get the product info, which may not be very efficient. To solve this problem, the data action architecture supports batchable data actions.
 
 ## Examples
 
@@ -53,7 +53,7 @@ If we wanted to turn this into a batch data action, we would update the method s
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]>
 ```
 
-Notice we are expecting our action to receive an array of inputs and return an array of products back from our API. In order to support this, the action function needs to be updated:
+Notice that we are expecting our action to receive an array of inputs and return an array of products back from our API. In order to support this, the action function needs to be updated:
 
 ```typescript
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]> {
@@ -87,7 +87,7 @@ async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionConte
     }
 ```
 
-Now that our data action method has been updated to handle an array of inputs, we need to set the `isBatched` in the action creation call to true:
+Now that the data action method has been updated to handle an array of inputs, we need to set the `isBatched` in the action creation call to true:
 
 ```typescript
 export default createObservableDataAction({
