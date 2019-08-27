@@ -166,7 +166,7 @@ Follow these steps in the development environment.
 
 11. In the **CloudEnvironment.Config** file, specify values for the following keys. These values replace the placeholder values in square brackets in the template.
 
-    - **HostName** – Specify the URL that is used to access your Microsoft Dynamics 365 for Finance and Operations on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
+    - **HostName** – Specify the URL that is used to access your on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
     - **SoapHostName** – Specify the same URL that you specified for **HostName**.
     - **SelfSigningCertificateThumbprint** – Specify the thumbprint that you retrieved from Windows PowerShell in step 7.
     - **UserFormat** – Specify the email address of a user who has the System Administrator role in your Finance and Operations on-premises environment. The user must be an Active Directory Federation Services (AD FS) user.
