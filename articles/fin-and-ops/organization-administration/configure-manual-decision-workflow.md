@@ -169,7 +169,7 @@ You can send notifications to people when a decision has been made, delegated, o
     </tr>
     <tr>
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
+    <td>Specific users</td>
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
