@@ -35,13 +35,14 @@ Globalizing an online site should not only include string localization but also 
 Dynamics 365 Commerce online SDK provides a **CultureInfoFormatter** class to serve common globalization requirements to format numbers, currency and date/time.
 
 ## Accessing CultureInfoFormatter in a module's view
-An instance of the **CultureInfoFormatter** constructed with the market and locale derived from the `RenderingContext` is passed along in the props object to a modules's view file. To access this use the following syntax:
+An instance of CultureInfoFormatter constructed with the locale derived from the `RenderingContext` is
+passed along in the props object to a modules's view file. To access this use the following syntax
 
-```typescript
+```ts
 public render(): JSX.Element | null {
     ...
     // this.props.context.cultureFormatter contains an initialized formatter
-    // with locale of 'en-US' and market 'US' in this example
+    // with locale of 'en-US' in this example
     const intlFormatter = this.props.context.cultureFormatter
     intlFormatter.formatCurrency(34.12);
     // expected output: $ 34.12
@@ -49,42 +50,42 @@ public render(): JSX.Element | null {
 ```
 
 ## Constructing an instance of CultureInfoFormatter
-The constructor of **CultureInfoFormatter** takes in two arguments, lang-locale and the market.
+
+The constructor of `CultureInfoFormatter` takes in one argument, lang-locale.
 
 The lang-locale argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. A default value of 'en-US' will be used if no language tag is specified. Language tags are **not** case-sensitive but the locale
 is generally capitalized by convention.
 
-Market is two letter country code as defined by [ISO 3166-1 alpha-2](https://www.iso.org/iso-3166-country-codes.html) representing the market where this content will be served.
-A default value of 'US' will be used if no market is specified. 
-
-
 ### Examples
-```typescript
+
+```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
 
 // Default constructor will use 'en-US' for locale
 let intlFormatter = new CultureInfoFormatter();
 
 // Constructs a new intl formatter using the French language as spoken in France
-intlFormatter = new CultureInfoFormatter('fr-FR', 'FR');
+intlFormatter = new CultureInfoFormatter('fr-FR');
 
 // Constructs a new intl formatter using the English language as spoken in Great Britain
-intlFormatter = new CultureInfoFormatter('en-GB', 'GB');
+intlFormatter = new CultureInfoFormatter('en-GB');
 ```
 
 ## Using CultureInfoFormatter
-**CultureInfoFormatter** provides the following functionality
+
+`CultureInfoFormatter` provides the following functionality
 - Currency Formatting
 - Date Formatting
-- Number Formatting
 - Time Formatting
+- Number Formatting
 
 The following section will cover each of these in detail.
 
-### Currency Formatting
-To format currency in accordance with a certain locale use the **formatCurrency()** method.
+## Currency Formatting
 
-```typescript
+To format currency in accordance with a certain locale use the `formatCurrency()` method.
+
+```ts
 /**
  * Returns a localized currency formatted version of a price.
  *
@@ -97,12 +98,13 @@ formatCurrency(price: string | number, currencyCode?: string): string;
 The currency code argument is optional but if provided must be in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format.
 If the currency code is not provided the formatter will use the locale to determine the best currency code to use.
 
-#### Examples
-```typescript
+### Examples
+
+```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
 
 // Set locale to fr-FR
-let cultureInfoFormatter = new CultureInfoFormatter('fr-FR', 'FR);
+let cultureInfoFormatter = new CultureInfoFormatter('fr-FR');
 
 // Using a string argument for the price
 cultureInfoFormatter.formatCurrency('34.12', 'eur');
@@ -113,15 +115,16 @@ cultureInfoFormatter.formatCurrency('34.12', 'eur');
 cultureInfoFormatter.formatCurrency(34.12); 
 // expected output: "34,12 €"
 
-cultureInfoFormatter = new CultureInfoFormatter('en-IN', 'IN');
+cultureInfoFormatter = new CultureInfoFormatter('en-IN');
 cultureInfoFormatter.formatCurrency(34.12, 'inr');
 // expected output: ₹ 34.12
 ```
 
-### Date Formatting
-To format a date in accordance with a certain locale use **formatDate()**.
+## Date Formatting
 
-```typescript
+To format a date in accordance with a certain locale use `formatDate()`.
+
+```ts
 /**
  * Returns a localized formatted version of a date
  *
@@ -130,29 +133,29 @@ To format a date in accordance with a certain locale use **formatDate()**.
  */
 formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
-
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [IDateFormatOptions](#IDateFormatOptions).
 
-#### Examples
-```typescript
+### Examples
+
+```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
 
 const testDate = new Date(2012, 11, 20, 3, 0, 0); // 12/20/2012 (in US format-mm/dd/yyyy)
 
-let cultureInfoFormatter = new CultureInfoFormatter('en-US', 'US');
+let cultureInfoFormatter = new CultureInfoFormatter('en-US');
 
 // Basic format with no options
 cultureInfoFormatter.formatDate(testDate);
 // expected output:  "12/20/2012"
 
 // Set lang-locale to English as spoken in Great Britain
-cultureInfoFormatter = new CultureInfoFormatter('en-GB', 'GB');
+cultureInfoFormatter = new CultureInfoFormatter('en-GB');
 cultureInfoFormatter.formatDate(testDate);
 // expected output:  "20/12/2012"
 
 
 // Set lang-locale to German as spoken in Germany
-cultureInfoFormatter = new CultureInfoFormatter('de-DE', 'DE');
+cultureInfoFormatter = new CultureInfoFormatter('de-DE');
 
 let options: IDateFormatOptions = <IDateFormatOptions>{};
 options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -161,10 +164,11 @@ cultureInfoFormatter.formatDate(testDate);
 // expected output:  "Donnerstag, 20. Dezember 2012"
 ```
 
-### Time Formatting
-To format a time in accordance with a certain locale use **formatTime()**.
+## Time Formatting
 
-```typescript
+To format a time in accordance with a certain locale use `formatTime()`.
+
+```ts
 /**
  * Returns a localized formatted version of a time
  *
@@ -175,30 +179,32 @@ formatTime(time: Date, options?: ITimeFormatOptions): string;
 ```
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [ITimeFormatOptions](#ITimeFormatOptions).
 
-#### Examples
-```typescript
+### Examples
+
+```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
 
 const testDate = new Date(2012, 11, 20, 13, 34, 23); // 1:34:23 PM in en-US Format
 
-let cultureInfoFormatter = new CultureInfoFormatter('en-US', 'US');
+let cultureInfoFormatter = new CultureInfoFormatter('en-US');
 
 let options: ITimeFormatOptions = <ITimeFormatOptions>{};
 options.hour12 = false;
 // Format time with 24 hour time
 cultureInfoFormatter.formatTime(testDate, options);
 
-cultureInfoFormatter = new CultureInfoFormatter('fr-FR', 'FR');
+cultureInfoFormatter = new CultureInfoFormatter('fr-FR');
 options = <ITimeFormatOptions>{};
 options.second = 'numeric';
 cultureInfoFormatter.formatTime(testDate, options);
 // expected output:  "13:34:23"
 ```
 
-### Number Formatting
-To format a number in accordance with a certain locale use **formatNumber()**.
+## Number Formatting
 
-```typescript
+To format a number in accordance with a certain locale use `formatNumber()`.
+
+```ts
 /**
  * Returns a localized formatted version of a number
  *
@@ -209,18 +215,20 @@ formatNumber(value: number, options?: INumberFormatOptions): string;
 ```
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [INumberFormatOptions](#INumberFormatOptions).
 
-#### Examples
-```typescript
+### Examples
+
+```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
 
-let cultureInfoFormatter = new CultureInfoFormatter('en-US', 'US');
+
+let cultureInfoFormatter = new CultureInfoFormatter('en-US');
 cultureInfoFormatter.formatNumber(123456789);
 // expected output:  "123,456,789"
 cultureInfoFormatter.formatNumber(1234567.89);
 // expected output:  "1,234,567.89"
 
 // German langauge uses comma as decimal separator and period for thousands
-cultureInfoFormatter = new CultureInfoFormatter('de-DE', 'DE');
+cultureInfoFormatter = new CultureInfoFormatter('de-DE');
 cultureInfoFormatter.formatNumber(1234567.89);
 // expected output:  "1.234.567,89"
 
@@ -229,18 +237,22 @@ options.style = 'percent';
 (cultureInfoFormatter.formatNumber(0.7842, options);
 // expected output:  "78,42 %"
 
+
 // Setting the language to Arabic formats numbers using Arabic numerals
-cultureInfoFormatter = new CultureInfoFormatter('ar-EG', 'EG');
+cultureInfoFormatter = new CultureInfoFormatter('ar-EG');
 cultureInfoFormatter.formatNumber(1234567.89);
-// expected output:  "١٬٢٣٤٬٥٦٧٫٨٩"  
+// expected output:  "١٬٢٣٤٬٥٦٧٫٨٩" 
 ```
 
-### Formatting Options
+## Formatting Options
+
 The following section covers all the formatting options available to use as part of ITimeFormatOptions, IDateFormatOptions, INumberFormatOptions. 
 
+ 
 
-### ITimeFormatOptions 
-```typescript
+## ITimeFormatOptions 
+
+```ts
 interface ITimeFormatOptions {
     localeMatcher?: 'best fit' | 'lookup';
     formatMatcher?: 'basic' | 'best fit';
@@ -254,7 +266,8 @@ interface ITimeFormatOptions {
 }
 ```
 
-#### Property Details
+### Property Details
+
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
 | localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the Lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the Lookup algorithm |
@@ -267,8 +280,9 @@ interface ITimeFormatOptions {
 | second | enum | 'numeric' or '2-digit' | Controls the representation of the second. '2-digit' forces seconds to be displayed with two digits. |  
 | timeZoneName | enum | 'short' or 'long' | Controls the representation of the time-zone name. 'short' is the three character abbreviation for the time-zone while 'long' is the full time-zone name | 
 
-### IDateFormatOptions
-```typescript
+## IDateFormatOptions
+
+```ts
 interface IDateFormatOptions extends ITimeFormatOptions {
     weekday?: 'narrow' | 'short' | 'long';
     year: 'numeric' | '2-digit';
@@ -278,7 +292,8 @@ interface IDateFormatOptions extends ITimeFormatOptions {
 ```
 _Note: All options provided in ITimeFormatOptions can be used in IDateFormatOptions. This is because time is a sub-component of date._
 
-#### Property Details
+### Property Details
+
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
 | weekday | enum | 'narrow', 'short' or 'long' | Controls the representation of the weekday. 'narrow' is the 1-2 character representation of the weekday, 'short is the 3 character representation and 'long' is the full name |
@@ -288,8 +303,9 @@ _Note: All options provided in ITimeFormatOptions can be used in IDateFormatOpti
 
 The default value for each date-time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric".
 
-###  INumberFormatOptions 
-```typescript
+##  INumberFormatOptions 
+
+```ts
 export interface INumberFormatOptions {
     localeMatcher?: 'best fit' | 'lookup';
     style?: 'decimal' | 'percent' | 'currency';
@@ -301,8 +317,8 @@ export interface INumberFormatOptions {
     maximumSignificantDigits?: number;
 }
 ```
+### Property Details
 
-#### Property Details
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
 | localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the Lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the Lookup algorithm |
