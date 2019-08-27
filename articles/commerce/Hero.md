@@ -19,7 +19,8 @@ Usage examples in ecommerce:
 | Paragraph      | Paragraph text                                   | Hero has the flexibility to supports additional lines to text as rich   text. Some basic rich text functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page   theme applied on the module. |
 | Link           | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Hero can have one or more call to actions. E.g. “Shop Now” which   redirects the shopper to the link. If a link is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for accessibilty.<br />If user wants to open the link in a new tab, that can be configured. |
 | Text placement | Top Left<br />Top Right<br />Top Center<br />Bottom Left<br />Bottom Right<br />Bottom<br />Center Left<br />Center Right<br />Center Center | This property defines the placement of text placement on the image. A total of 9 different placements are supported.|
-| Color scheme   | Light text on dark background<br />Dark text on light background | A color scheme can be defined for the text based on the image on the   background. If the image has dark background a light theme can be applied on the text to make it visible and to meet color contrast ratios for accessibilty. |
+| Text theme   | Light<br />Dark | A color scheme can be defined for the text based on the image on the  background. If the image has dark background a light theme can be applied on the text to make it visible and to meet color contrast ratios for accessibilty. |
+| Gradient |True or false| Applies a gradient to the image. It can be used to meet color contrast ratio for accessiblity |
 
  
 
@@ -47,6 +48,6 @@ This section explains how to add a Hero module to a new page and set the require
 
 10. Save the page and preview the changes.
 
-11. Other properties of Hero can be changed to achieve a more customized Hero – Text placement, Color scheme etc
+11. Other properties of Hero can be changed to achieve a more customized Hero – Text placement, Text theme etc
 
 12. Check-in and Publish
