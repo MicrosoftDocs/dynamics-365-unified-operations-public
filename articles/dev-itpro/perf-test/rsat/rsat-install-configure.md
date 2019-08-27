@@ -95,8 +95,8 @@ Select **Test Connection** to test your connection to Azure DevOps.
 #### Finance and Operations Test Environment
 Configure your connection to the test environment.
 
-+ **Hostname** - Hostname of the Dynamics 365 for Finance and Operations test environment. For example, <myaos>.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
-+ **SOAP Host Name** - SOAP Hostname of the Dynamics 365 for Finance and Operations test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. For example, <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
++ **Hostname** - Hostname of the test environment. For example, <myaos>.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
++ **SOAP Host Name** - SOAP Hostname of the test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. For example, <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
 + **Admin User Name** - Email address of an admin user on the Finance and Operations test environment.
 + **Thumbprint**: Thumbprint of the authentication certificate you are using.
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
