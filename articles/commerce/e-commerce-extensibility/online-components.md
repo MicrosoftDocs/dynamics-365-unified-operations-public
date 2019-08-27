@@ -3,7 +3,7 @@
 
 title: Online components
 description: This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
-author: SamJarawan
+author: samjarawan
 manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
@@ -52,7 +52,7 @@ Data actions are used to get data and apply business logic to a module and share
 
 ### Core data actions
 
-The e-Commerce platform includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. Core data actions can't be modified.
+The e-Commerce platform Store Starter Kit (SSK) includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database or getting ratings and reviews information for a product. Core data actions can't be modified.
 
 ### Custom data actions
 
