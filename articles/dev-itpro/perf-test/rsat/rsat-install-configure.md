@@ -51,7 +51,7 @@ RSAT is designed to be installed on any Windows 10 computer and connect remotely
 
 ![Client computer and environment](media/client-environment.png)
 
-To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the Finance and Operations virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
+To enable secure authentication, RSAT requires a certificate to be installed on the RSAT client computer. The RSAT settings dialog box allows you to automatically create and install the authentication certificate. You will also need to configure the virtual machine (VM) to trust the connection. Follow the instructions in the next sections to install and configure RSAT.
 
 ## Installation
 
@@ -92,12 +92,12 @@ Configure your connection to the Azure DevOps project and test plan.
 
 Select **Test Connection** to test your connection to Azure DevOps.
 
-#### Finance and Operations Test Environment
+#### Test Environment
 Configure your connection to the test environment.
 
 + **Hostname** - Hostname of the test environment. For example, <myaos>.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
 + **SOAP Host Name** - SOAP Hostname of the test environment. The SOAP hostname is typically the same as the Hostname with a soap suffix. For example, <myaos>soap.cloudax.dynamics.com. Do not include the https:// or http:/ prefix.
-+ **Admin User Name** - Email address of an admin user on the Finance and Operations test environment.
++ **Admin User Name** - Email address of an admin user on the test environment.
 + **Thumbprint**: Thumbprint of the authentication certificate you are using.
     1. Select **New** to create and install a new authentication certificate. When prompted, place the .cer file somewhere so you have it saved for your records.
     2. When the process completes, the new certification is installed in the local machine’s trusted root store.
@@ -106,7 +106,7 @@ Configure your connection to the test environment.
 
     3. The thumbprint of the newly created certificate is automatically inserted on this form. Copy this thumbprint, you will use it in the next section to configure the AOS to trust the connection.
 
-+ **Company name** - Specify a company name to use as your default Finance and Operations company during creation of Excel pParameters files. It can be changed later by editing an Excel file.
++ **Company name** - Specify a company name to use as your default company during creation of Excel pParameters files. It can be changed later by editing an Excel file.
 
 
 #### Run setting
@@ -125,7 +125,7 @@ Select the **Optional** tab to configure optional settings.
 + **Test Action Timeout** - Timeout (in minutes) of individual test steps. When a test step times out, the test case fails.
 
 ### Configure the AOS machine to trust the connection
-After creating the certificate, configure the Finance and Operations AOS to trust the test automation connection. On a multi-AOS environment, repeat the following steps for all AOS machines.
+After creating the certificate, configure AOS to trust the test automation connection. On a multi-AOS environment, repeat the following steps for all AOS machines.
 
 1.	Open a Remote Desktop connection to the AOS machine.
 2.	Open IIS and find AOSService in the list of sites.
@@ -215,4 +215,4 @@ To install the certificate, follow these steps:
 
     ![Certificate dialog showing thumbpring listing](media/certificate-dialog.png)
  
-6. Copy and save the thumbprint. You will need it to configure the Finance and Operations AOS as described earlier in this topic.
+6. Copy and save the thumbprint. You will need it to configure the AOS as described earlier in this topic.
