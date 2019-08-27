@@ -46,6 +46,22 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### FormDateTimeControl.setUtcString()
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are retiring the setUtcString() method as a better replacement method is available.   |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Platform |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the setUtcString() method. Developers should be using the setUtcDateTime() method instead. |
+
+
 ## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
 
 > [!IMPORTANT]
