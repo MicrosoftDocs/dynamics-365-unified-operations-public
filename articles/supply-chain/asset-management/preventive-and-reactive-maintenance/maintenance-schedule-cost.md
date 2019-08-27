@@ -52,7 +52,7 @@ In Asset Management, you can calculate budget costs on maintenance schedule line
 
 5. Click **OK** to start the cost calculation.
 
-6. On the **Maintenance schedule cost** tab > in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the cost calculation. The selected action pane group buttons are highlighted in blue color. Click on a button to activate or deactivate it.
+6. On the **Maintenance schedule cost** tab > in the **Group by...** action pane groups, click the relevant buttons to show the required detail level of the cost calculation. The selected action pane group buttons are highlighted. Click on a button to activate or deactivate it.
 
 7. Click the **Calculate cost** button if you want to make a new cost calculation.
 
