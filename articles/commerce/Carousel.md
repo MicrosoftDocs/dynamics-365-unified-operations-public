@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 A Carousel is used to place multiple promotional items within a carousel view. It’s a special container module that hosts other modules inside it and provides a carousel for the user to browse the content. For example, on the home page a retailer can showcase multiple new products or promotions within a carousel.
 
-You can add Hero, Feature, Video modules inside a carousel and the properties of the carousel define how these items will be rendered. 
+You can add Hero and Feature modules inside a carousel and the properties of the carousel define how these items will be rendered. 
 
 ## Usage examples in ecommerce:
 
@@ -62,7 +62,7 @@ This section explains how to add a Carousel module to a new page and set the req
 
 1. We need to first create a template. In tooling, create a new page template “Carousel template”.
 
-2. In the Main slot the Default Page, add a Carousel module. 
+2. In the Main slot of the Default Page, add a Carousel module. 
 
 3. Add a Hero module to the carousel.
 
@@ -74,11 +74,15 @@ This section explains how to add a Carousel module to a new page and set the req
 
 7. In the page outline, add Default Page. To the Main slot,  add Carousel module.
 
-8. To the Carousel module, add a Hero module. On the Hero module, add an Image and a Heading and save. See Hero module for more details.
+8. Set Carousel module property Width to Fill screen. 
 
-9. To the Carousel module, add a Feature module.  On the Feature module, add an Image, Heading and Paragraph. See Feature module for more details
+9. Set Carousel module property Transition animation to Slide.
 
-10. Save and Preview.  Preview will show a carousel with 2 modules inside it -Hero, Feature.
+10. To the Carousel module, add a Hero module. On the Hero module, add an Image and a Heading and save. See Hero module for more details.
 
-11. Check-in and Publish the page.
+11. To the Carousel module, add a Feature module.  On the Feature module, add an Image, Heading and Paragraph. See Feature module for more details
+
+12. Save and Preview.  Preview will show a carousel with 2 modules inside it -Hero, Feature. Additional propertis for Carousel, Hero or Feature can be changed to achieve the desired effect.
+
+13. Check-in and Publish the page.
 
