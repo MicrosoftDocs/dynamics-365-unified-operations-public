@@ -2,41 +2,48 @@
 # required metadata
 
 title: Set up a development environment
-description: This topic explains how to set up a development environment for Microsoft Dynamics 365 Commerce.
-author: SamJarawan
+description: This topic describes how to set up a development environment for Dynamics 365 Commerce.
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Set up a development environment
 
-To set up a development environment for Microsoft Dynamics 365 Commerce Online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online software development kit (SDK). You can install these tools in any order.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to set up a development environment for Dynamics 365 Commerce.
+
+## Overview
+
+To set up a development environment for Dynamics 365 Commerce Online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online software development kit (SDK). You can install these tools in any order.
 
 ## Install Visual Studio Code
 
-We recommend that you use a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your Microsoft Windows desktop. It has built-in support for JavaScript, TypeScript, and Node.js.
+We recommend that you use a source code editor such as Visual Studio Code. Visual Studio Code is a lightweight source code editor that runs on your Windows desktop. It has built-in support for JavaScript, TypeScript, and Node.js.
 
-Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is automatically opened and should resemble the following illustration.
+Go to the [Visual Studio Code site](https://code.visualstudio.com), and download and install the latest build. After installation is completed, Visual Studio Code is opens automatically and should look like the following screenshot.
 
 ![Visual Studio Code](media/setup-vs-code.png)
 
@@ -60,8 +67,8 @@ The Online SDK provides everything that you require to extend your Online channe
 
 The SDK configuration package is available through the [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
 
-> [!NOTE]
-> The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
+[!NOTE]
+The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
 
 If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 
@@ -100,11 +107,11 @@ To run the app, follow these steps.
     * `https://localhost:4000/version`
     * `https://localhost:4000/_sdk/allmodules`
 
-3. To close the app, at the command prompt, press **Ctrl+C** two times.
+3. To close the app, at the command prompt, select **Ctrl+C** two times.
 
 ## Create a new module
 
-To add a new module that is named **campaignBanner**, run the **yarn msdyn365 add-module MODULE_NAME** command. Here is an example.
+To add a new module that is named *campaignBanner*, run the **yarn msdyn365 add-module MODULE_NAME** command. Here is an example.
 
 ```
 c:\repos\MyEcommerceSite>yarn msdyn365 add-module campaignBanner
@@ -126,7 +133,7 @@ You can find the hero module under \\src\\modules\\heroExtended.
 
 ## Preview modules
 
-To preview the rendering of a specific module (for example, campaignBanner) in a local web browser, follow these steps.
+To preview the rendering of a specific module (for example, campaignBanner) in a local web browser, do the following.
 
 1. At a command prompt, open the app by running the **yarn start** command.
 
@@ -134,7 +141,7 @@ To preview the rendering of a specific module (for example, campaignBanner) in a
     c:\repos\MyEcommerceSite>yarn start
     ```
 
-2. Open the following URLs in a web browser. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
+1. Open the following URLs in a web browser. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
 
     * `https://localhost:4000/modules?type=campaignBanner`
     * `https://localhost:4000/modules?type=hero`
