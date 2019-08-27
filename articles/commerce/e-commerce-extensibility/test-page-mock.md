@@ -1,43 +1,54 @@
 ---
 # required metadata
 
-title: Page mock
+title: Test modules using page mocks
 description: Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment. 
-author: SamJarawan
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Page mock
+# Test modules using page mocks
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to test modules using page mocks.
+
+## Overview
+
 Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment.
 
-Page mock files live under the **/src/pageMocks** directory and can be loaded using the URL: `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (without the .json file extension).
+Page mock files live under the **/src/pageMocks** directory and can be loaded using the URL `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (without the .json file extension).
 
-## Creating a new page mock
-To create a new page mock you'll need to create a new blank json file under the **/src/pageMocks** directory, for example `/src/pagemocks/campaignPage.json`.
+## Create a new page mock
+To create a new page mock you'll need to create a new blank json file under the **/src/pageMocks** directory, as in the following example.
+
+`/src/pagemocks/campaignPage.json`.
 
 ## Example
-Below is an example page mock that adds two insances of the same module to a page using different mock data for each.
+
+The following example shows a page mock that adds two instances of the same module to a page, using different mock data for each.
 
 ```
 {
@@ -124,10 +135,10 @@ Below is an example page mock that adds two insances of the same module to a pag
 
 ```
 
-## pageRoot
+## Root page container (pageRoot)
 Every page needs to have a root page container.  In our example, a page container “default-page” is used.
 
-There is a node called “modules” that lists the modules inside of the page.  The page container “default-container” is then used which has a slot called “primary”.  The container is responsible for laying out the modules inside it.  You can then see we have a `productFeature` module rendered twice in a row:
+There is a node called "modules" that lists the modules inside of the page. The page container "default-container" is then used which has a slot called "primary." The container is responsible for laying out the modules inside it. You can then see we have a `productFeature` module rendered twice in a row:
 
 ```
 {
@@ -145,4 +156,4 @@ There is a node called “modules” that lists the modules inside of the page. 
 …
 ```
 
-In the above example there is "id" for each module: **ProductFeature__0** and **ProductFeature__1**, which represent the mock data to use for the module.  These can be any name but need a matching section in the "modules" mock section.  Here you can configure different mock data per each instance of the module.  Notice in the above example one module has a "left" imageAlignment config setting and the other has a "right" config setting.
+In the above example there is an "id" for each module **ProductFeature__0** and **ProductFeature__1**, which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the above example that one module has a "left" imageAlignment config setting and the other has a "right" config setting.
