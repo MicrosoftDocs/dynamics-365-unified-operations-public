@@ -53,38 +53,36 @@ Content placement item is driven by CMS data which can authored in the tooling. 
 
 ## Creating a page with a Content placement item module 
 
-This section explains how to add a Carousel module to a new page and set the required properties. 
+This section explains how to add a Content placement module to a new page and set the required properties. 
 
-1. We need to first create a template. In tooling, create a new page “Content placement template”.
+1. We need to first create a template. In tooling, create a new template “Content placement template”.
 
 2. In the Main slot the Default Page, add a Content placement module. 
 
-3. Add a Content placement item module to the content placement
+3. Add a Content placement item module to the content placement module
 
 4. Check-in and Publish. 
 
 5. Now create a new page with the “Content placement template” and call it “Content placement page”.
 
-6. In the page outline, add Content placement module to the Main slot.
+6. Add Default page. In the page outline, add Content placement module to the Main slot of the Default page.
 
-7. To the Content placement module, add a Content Placement Item module.
+7. To the Content placement module, add a Content Placement item module.
 
-8. In the Content placement item module, select settings, choose an Image from the image picker. 
+8. In the Content placement item module property panel, choose an Image from the image picker. 
 
-9. In the Content placement item module, select settings, set a Heading 
+9. In the Content placement item module property panel, set a Heading 
 
-10. In the Content placement item module, select settings, add a Paragraph 
+10. In the Content placement item module property panel, add a Paragraph 
 
-11. In the Content placement item module, select settings, add a link and set the link url to some page.
+11. In the Content placement item module property panel,, add a link and set the link url to some page.
 
 12. Set Tile size =6
 
-13. Save
+13. To the Content placement module, add another content placement item module and repeat steps 10-12
 
-14. To the Content placement module, add another content placement item module and repeat steps 10-
+14. Save and Preview. 
 
-15. Save and Preview. 
+15. Preview will show two content placement items placed side by side. You can further alter the Tile size property of each content placement item module or add more modules to achieve the desired layout. 
 
-16. Preview will show two content placement items placed side by side. You can further alter the Tile size property of each content placement item module or add more modules to achieve the desired layout. 
-
-17. Check-in and Publish the page. 
+16. Check-in and Publish the page. 
