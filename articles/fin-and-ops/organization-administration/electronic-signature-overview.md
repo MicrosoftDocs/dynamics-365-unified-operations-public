@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic signatures overview
-description: This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Finance and Operations.
+description: This article provides an overview of electronic signatures and describes how they can be used in Finance and Operations applications.
 author: maertenm
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Finance and Operations.
+This article provides an overview of electronic signatures and describes how they can be used.
 
 ## What is an electronic signature?
 
@@ -43,9 +43,9 @@ An electronic signature confirms the identity of a person who is about to start 
 Electronic signatures are a regulations compliance requirement for several regulated industries, such as pharmaceuticals, food and beverage, and aerospace and defense. They are also required for compliance with regulations in 21 CFR Part 11 that was issued by the Food and Drug Administration (FDA) in the United States.
 
 > [!NOTE]
-> An electronic signature by itself isn't the same as a digital signature. An electronic signature is just a substitute for a handwritten signature, whereas a digital signature provides additional security measures. A digital signature can help identify whether another user or process has tampered with the data. A digital signature can also be verified, and this verification can't be refuted by the owner of the certificate that was used to sign the data. As described below, electronic signatures in Microsoft Dynamics 365 for Finance and Operations have built-in digital signature functionality.
+> An electronic signature by itself isn't the same as a digital signature. An electronic signature is just a substitute for a handwritten signature, whereas a digital signature provides additional security measures. A digital signature can help identify whether another user or process has tampered with the data. A digital signature can also be verified, and this verification can't be refuted by the owner of the certificate that was used to sign the data. As described below, electronic signatures have built-in digital signature functionality.
 
-## Electronic signatures in Dynamics 365 for Finance and Operations
+## Electronic signatures
 
 In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
