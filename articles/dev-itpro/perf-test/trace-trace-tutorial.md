@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial provides guidelines on how to take traces in Microsoft Dynamics 365 for Finance and Operations.
+This tutorial provides guidelines on how to take traces.
 
 In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Microsoft Dynamics AX 2012 version, but it is not backward compatible and can't be used to analyze AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
 
