@@ -3594,7 +3594,7 @@
         href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
     - name: Preventive and reactive maintenance
       items: 
-      - name: Preventive maintenance
+      - name: Preventive maintenance overview
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
       - name: Maintenance plans
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
