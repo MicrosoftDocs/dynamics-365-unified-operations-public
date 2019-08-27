@@ -44,7 +44,7 @@ The extensibility design avoids dependency between the platform and application 
 The below list represents a typical architecural flow when a customer requests a page on an online store through the Dynamics 365 Commerce platform.
 
 * The platform gets a request, performs authentication, routing, and locale detection.
-* The platform generates hydrated page object which contains page configuration and data from external services using Data Actions.
+* The platform generates a hydrated page object which contains page configuration and data from external services using data actions.
 * Data actions allow for batching, aggregation, and chaining of multiple service calls, including de-duping.
 * The platform provides a set of core data actions providing connections to Dynamics 365 Commerce services (catalog, ratings, etc.).
 * Once the hydrated page object is created, the platform calls the react application running on node express server.
