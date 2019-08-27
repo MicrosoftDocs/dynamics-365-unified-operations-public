@@ -42,7 +42,7 @@ Use the information in this topic to do single-user testing by using Visual Stud
   > - If you are using the cloud-based load testing service, it will continue to run through March 31, 2020. Until then, you can continue to use all of the experiences powered by this service without interruption. Alternatively, you can switch to on-premises load testing. For more information, see [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
 ## Prerequisites
 
-To complete the steps in this topic, you must have a Microsoft Dynamics 365 for Finance and Operations development environment that has platform update 21 or later.
+To complete the steps in this topic, you must have a development environment that has platform update 21 or later.
 
 ## Use Task recorder to define and record an end-to-end business scenario
 
