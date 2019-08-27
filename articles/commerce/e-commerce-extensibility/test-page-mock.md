@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test modules using page mocks
-description: Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment. 
+description: This topic describes how to test modules using page mocks.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
