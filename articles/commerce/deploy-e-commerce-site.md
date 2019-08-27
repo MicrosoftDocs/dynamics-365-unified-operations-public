@@ -45,7 +45,7 @@ To learn more about LCS, see the [Lifecycle Services User Guide](https://docs.mi
 	
 ## Get started
 
-Before you can initialize the e-Commerce feature, a project, environment, and Retail Cloud Scale Unit (RCSU) must be deployed. To do the initialization in LCS, you must have permissions for either the Project Owner or Environment Admin roles. The production and sandbox environment topologies are supported.
+Before you can initialize e-Commerce, a project, environment, and Retail Cloud Scale Unit (RCSU) must be deployed. To do the initialization in LCS, you must have permissions for either the Project Owner or Environment Admin roles. The production and sandbox environment topologies are supported.
 
 For more information about environments, see [Environment planning](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/environment-planning). For more information about RCSU, see [Initialize Retail Cloud Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/initialize-retail-channels).
 
@@ -53,11 +53,14 @@ For more information about environments, see [Environment planning](https://docs
 
 Use this procedure to initialize the e-Commerce feature in an existing environment.
 
-Before you begin, make sure that you have all the required information:
+Before you begin, make sure that you have the following required information:
 
 - The RCSU that will be used
 - The Azure Active Directory (Azure AD) security group that will be used for system admins
 - The domains that will be associated with the environment
+
+In addition, you can also collect the following optional information.
+
 - Azure AD business-to-consumer (B2C) information (optional):
 	- Client ID
 	- Reply URL
@@ -71,7 +74,7 @@ Before you begin, make sure that you have all the required information:
     This information can be added later, through a service request.
 - The security group that will be used for moderation of ratings and reviews (optional)
 
-After you've collected this information, follow these steps to initialize e-Commerce.
+After you've collected the required information, to initialize e-Commerce do the following.
 
 1. Sign in to [LCS](https://lcs.dynamics.com).
 1. Go to the project that contains the environment where you want to initialize e-Commerce.
@@ -86,4 +89,4 @@ When e-Commerce is initialized from LCS, the system provisions several component
 
 ## Access the authoring environment
 
-To access the authoring environment, you can find links to your e-Commerce site and the site management tool on the **e-Commerce** tab on the **Retail management** page.
+To access the authoring environment, go to the **e-Commerce** tab on the **Retail management** page. There you will find links to your e-Commerce site and the site management tool.
