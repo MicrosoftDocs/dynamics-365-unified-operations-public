@@ -154,4 +154,4 @@ There is a node called "modules" that lists the modules inside of the page. The 
 …
 ```
 
-In the example, there is an "id" for each module (ProductFeature__0 and ProductFeature__1), which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the above example that one module has a "left" imageAlignment config setting and the other has a "right" imageAlignment config setting.
+In the example, there is an "id" for each module (ProductFeature__0 and ProductFeature__1), which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the example that one module has a "left" imageAlignment config setting and the other has a "right" imageAlignment config setting.
