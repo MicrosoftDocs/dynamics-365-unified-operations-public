@@ -77,3 +77,54 @@ Routes can be accessed in your module view file with the `this.props.context.app
 
 ## Theme section
 The **theme** section in the **app.settings.json** file provides support for exposing themes to the authoring tools.  Themes here should match theme names in your **\src\themes\** directory and provides localizable friendly names which the authoring tool will show when setting a theme at the site level or in the template, layout or page editors.
+
+### Localizing app settings
+Both friendlyName and description properties of each app setting should be localized for the localized experience in the Commerce authoring tools.
+**src/resources/authoring/global.json** should be updated to add a settings property under which all the settings related resource strings should be mentioned.
+
+#### Resource Schema:
+```json
+{
+    "settings": {
+        "<setting_property>": {
+            "friendlyName": {
+                "value": "",
+                "_value.comment": ""
+            },
+            "description": {
+                "value": "",
+                "_value.comment": ""
+            },
+        }
+    },
+}
+```
+
+Sample resource file:
+
+``` json
+{
+    "settings": {
+         "logoUrl": {
+            "friendlyName": {
+                "value": "Logo Image",
+                "_value.comment": ""
+            },
+            "description": {
+                "value": "Logo Image",
+                "_value.comment": ""
+            }
+        },
+         "cart": {
+            "friendlyName": {
+                "value": "Cart URL",
+                "_value.comment": ""
+            },
+            "description": {
+                "value": "Cart page route",
+                "_value.comment": ""
+            }
+        }
+    }
+}
+```
