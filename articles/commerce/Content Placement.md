@@ -43,7 +43,6 @@ Content placement is a container of other modules and derives data from the chil
 
 | Property name | Values                                                    | Property Description                                         |
 | :-----------: | :-------------------------------------------------------- | ------------------------------------------------------------ |
-|    Heading    | Heading text<br />   Heading tag = H1, H2, H3, H4, H5, H6 | A content placement can have a heading.  Heading supports heading tag which defaults to H2 but can be changed to meet accessibility requirements. |
 |     Width     | Fit container<br />Fill screen                            | Fill container restricts the items inside   the content placement to fit within the content placement width. Fill screen   allows the items to go full-bleed and does not restrict within carousel width. <br/>The values can be changed to achieve the layout that we  want. |
 
  
