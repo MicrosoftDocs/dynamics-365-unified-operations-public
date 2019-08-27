@@ -895,7 +895,7 @@ Initializes a new instance of the RelativeFieldBinding class.
 ## Class Report
     class Report extends TreeNode
 
-The Report class lets users use reports that are present in the Finance and Operations Application Object Tree (AOT) and report creation by using code instead of the AOT.
+The Report class lets users use reports that are present in the Application Object Tree (AOT) and report creation by using code instead of the AOT.
 
 ### Remarks
 
@@ -948,7 +948,7 @@ The following code example creates and runs a report that is not present in the 
 | public int designCount()                                            | Retrieves the number of designs in a given report.                                                                                        |
 | public ReportDesign designNumber(\[int number\])                    | Gets an existing design.                                                                                                                  |
 | public boolean interactive(\[boolean value\])                       |                                                                                                                                           |
-| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                                  |                                                                                                                                           |
 | public container pack()                                             | Serializes the current instance of the Report class.                                                                                      |
 | public Query query(\[Query query\])                                 |                                                                                                                                           |
@@ -1221,7 +1221,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1569,7 +1569,7 @@ You must have access to the development security key (SysDevelopment) before thi
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -2391,7 +2391,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3425,7 +3425,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -4433,7 +4433,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -5101,7 +5101,7 @@ unit
 | public str menuItemName(\[str value\])                                   |                                                                                                                                            |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                            |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                            |
-| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                            |
 | public int position(\[int value\])                                       |                                                                                                                                            |
 | public str previewInfo(str string)                                       |                                                                                                                                            |
@@ -6109,7 +6109,7 @@ value
 
 ### Method name
 
-Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -6688,7 +6688,7 @@ The ReportDesign class determines the contents of a report.
 
 ### Remarks
 
-A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Finance and Operations Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
+A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
 
 ### Examples
 
@@ -6776,7 +6776,7 @@ The following example creates a simple report that is not present in the AOT.
 | public str lookupCaption(\[str lan\])                                                                  |                                                                                                                                           |
 | public str lookupLabel(str label, \[str lan\])                                                         |                                                                                                                                           |
 | public int makeAutoSection(\[Query query\])                                                            |                                                                                                                                           |
-| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int orientation(\[int value\])                                                                  |                                                                                                                                           |
 | public container pack()                                                                                | Serializes the current instance of the ReportDesign class.                                                                                |
 | public container packPageSettings()                                                                    |                                                                                                                                           |
@@ -7536,7 +7536,7 @@ query
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -8317,7 +8317,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -9285,7 +9285,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -10021,7 +10021,7 @@ The ReportGuidControl class enables you to create, read, update, and delete X++ 
 | public str menuItemName(\[str value\])                                   |                                                                                                                                               |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                               |
 | public int position(\[int value\])                                       |                                                                                                                                               |
 | public str previewInfo(str string)                                       |                                                                                                                                               |
@@ -10979,7 +10979,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -11654,7 +11654,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -12703,7 +12703,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -13365,7 +13365,7 @@ The height and height calculation mode can be set separately.
 | public Date creationDate(\[Date value\])     | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])       |                                                                                                                                           |
 | public str designs(\[str value\])            |                                                                                                                                           |
-| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])           |                                                                                                                                           |
 | public str projectGuid(\[str value\])        |                                                                                                                                           |
 | public str referencedProjects(\[str value\]) |                                                                                                                                           |
@@ -13462,7 +13462,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -14347,7 +14347,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -15184,7 +15184,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -15851,7 +15851,7 @@ The ReportRealControl class enables you to create, read, update, and delete X++ 
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                               |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                               |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                               |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                               |
@@ -16968,7 +16968,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -19432,7 +19432,7 @@ The following example adds a section to a report:
 | public LineType lineLeft(\[LineType value\])                                                 | Gets or sets the type of line that is used as the left border of a section.                                                               |
 | public LineType lineRight(\[LineType value\])                                                |                                                                                                                                           |
 | public TableId map(\[TableId value\])                                                        |                                                                                                                                           |
-| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int noOfHeadingLines(\[int value\], \[AutoMode mode\])                                |                                                                                                                                           |
 | public AutoMode noOfHeadingLinesMode(\[AutoMode mode\])                                      |                                                                                                                                           |
 | public int noOfHeadingLinesValue(\[int value\])                                              |                                                                                                                                           |
@@ -20782,7 +20782,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -21236,7 +21236,7 @@ Prints the section on the report.
 
 #### Remarks
 
-This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Finance and Operations Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
+This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
 
 ### Method rightMargin
 
@@ -22913,7 +22913,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -23897,7 +23897,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -24578,7 +24578,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                   |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                   |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                   |
-| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or other application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                   |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                   |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                   |
@@ -25693,7 +25693,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -26455,7 +26455,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -27402,7 +27402,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -28087,7 +28087,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -29050,7 +29050,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -30193,7 +30193,6 @@ The following example shows a new instance of the RunAsPermission class. The Sys
         _userInfo = SysUserInfo::find(); 
         _userId = _userInfo.Id; 
         _perm = new RunAsPermission(_userId); 
+
     }
-
-
 
