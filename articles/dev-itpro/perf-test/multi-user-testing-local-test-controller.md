@@ -43,7 +43,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Before you complete the steps in this topic, verify that the following prerequisites are met:
 
-- You have a Microsoft Dynamics 365 for Finance and Operations development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
+- You have a development environment that has Platform update 21 or later in own your Microsoft Azure subscription.
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox environment that has the same release (application version and platform update) as your development environment.
 - You've configured your development environment by following the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md).
