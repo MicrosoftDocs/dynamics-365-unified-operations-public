@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 Order confirmation page is used to show a confirmation message once an order is placed. This page will have the Order confirmation module which shows the order confirmation number and the email address that was provided during checkout.
 
-Once an order is placed during checkout, the order confirmation number and the email address are passed as query string to the order confirmation page. Order confirmation module receives the order confirmation number and the email address from the page url to render this module. Without this page context, the module will not be able to provide the status of the order.
+Once an order is placed during checkout, the order confirmation number and the email address are passed as query string to the order confirmation page. Order confirmation module receives the order confirmation number and the email address from the page url to render this module. This page context is required for the module to provide the status of the order.
 
 ## Usage in ecommerce:
 
@@ -44,19 +44,18 @@ Once an order is placed during checkout, the order confirmation number and the e
 |     Property name     | Values                                                       | Property Description                                         |
 | :-------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |        Heading        | Heading text<br />Heading tag                                | The module can have a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements |
-| Back to shopping link | Link text<br />Link URL<br /> Aria label<br />Open link in new tab | A link can be to allow the user to continue their shopping journey |
 
  
 
 ## More modules on Order confirmation page
 
-**Recommendations**:: Recommendations can be placed on the order confirmation page to allow the user to continue their shopping journey. Any existing list can be used except People Also Like and Frequently bought together. 
+**Recommendations**:: Recommendations can be placed on the order confirmation page to allow the user to continue their shopping journey. Any existing list can be used except Frequently bought together. 
 
 **Marketing modules**: Any marketing content can added to this page – E.g. Feature, Content Placement, Content rich block etc.
 
 ## Authoring order confirmation page
 
-1. Create a template for Order confirmation page “order confirmation template”
+1. Create a template for Order confirmation page “Order confirmation template”
 
 2. To Main Slot of the Default page, add Order confirmation module and Recommendations.
 
@@ -76,12 +75,10 @@ Once an order is placed during checkout, the order confirmation number and the e
 
 10. In the property panel of the order confirmation module, add Heading “Order confirmation”
 
-11. In the property panel of the order confirmation module, configure the Back to Shopping link to redirect to Home page
+11. Below the Order confirmation module, add Recommendations – New, Best Selling.
 
-12. Below the Order confirmation module, add Recommendations – New, Best Selling.
+12. Save and preview. 
 
-13. Save and preview. 
+13. Check-in and Publish
 
-14. Check-in and Publish
-
-15. Any other marketing module can be added to this page if needed. 
+14. Any other marketing module can be added to this page if needed. 
