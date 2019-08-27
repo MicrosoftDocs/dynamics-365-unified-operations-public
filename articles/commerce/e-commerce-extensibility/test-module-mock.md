@@ -37,7 +37,7 @@ This topic describes how to test modules using module mocks.
 
 ## Overview
 
-Modules generally get their data from data actions and config fields and present HTML based on that data. Modules may not have direct access to the data (such as the retail server data) when running in a local development environment, but module mock files can be used for testing. Module mock files are used to set data that a module can use to render when running locally through a web browser. 
+Modules generally get their data from data actions and config fields and present HTML based on that data. Because modules may not have direct access to the data (such as the retail server data) when running in a local development environment, module mock files can be used for testing. Module mock files are used to set data that a module can use to render when running locally through a web browser. 
 
 ## Example
 
