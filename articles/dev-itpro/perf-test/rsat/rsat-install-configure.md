@@ -37,8 +37,8 @@ This topic contains information about how install and configure the Regression s
 
 ## Prerequisites
 
-### Dynamics 365 for Finance and Operations test environment
-Your Dynamics 365 for Finance and Operations test environment must be running Platform update 15 or newer. The Regression suite automation tool must have access to your Dynamics 365 for Finance and Operations test environment via a web browser.  
+### Test environment
+Your test environment must be running Platform update 15 or newer. The Regression suite automation tool must have access to your test environment via a web browser.  
 
 ### Excel
 You need Microsoft Excel installed to generate and edit test parameters. 
@@ -47,7 +47,7 @@ You need Microsoft Excel installed to generate and edit test parameters.
 You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results. You will need an Azure DevOps Test Manager or Test Plans license. For example, if you have a Visual Studio Enterprise subscription, you already have a license to Test Plans. For more information, see [Pricing for Azure DevOps](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/).
 
 ### Authentication Certificate
-RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to a Dynamics 365 for Finance and Operations environment.
+RSAT is designed to be installed on any Windows 10 computer and connect remotely via a web browser to a an environment.
 
 ![Client computer and environment](media/client-environment.png)
 
