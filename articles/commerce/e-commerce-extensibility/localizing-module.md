@@ -35,7 +35,7 @@ This topic provides details on localizing a module for rendering your online sit
 Modules that render strings may get their data localized from the CMS system already, for example a product title may come back from Dynamics 365 Commerce in a localized format and no work is needed on the module.  However some strings may be defined in the module that needs localization, an example could be a module that renders a paged list may have a 'next' or 'previous' button for paging.
 
 ### Create a new resource string
-Resources are stored in locale specific JSON files stored under the **/src/resources/modules/** directory.  A **global.json** file is the used for the base for all locales and n-part locales (https://wiki.mozilla.org/L10n:Locale_Codes) are supported. 
+Resources are stored in locale specific JSON files stored under the **/src/resources/** directory.  A **global.json** file is the used for the base for all locales and n-part locales (https://wiki.mozilla.org/L10n:Locale_Codes) are supported. 
 
 Example file sturcture:
 * /src
@@ -54,10 +54,10 @@ Each resource file contains key/value pairs with an optional comment property th
 ### Resource Schema:
 ```json
 {
-    "<property_name>": 
+    "<property_name>":
     {
         "value": "",
-        "comment": ""
+        "_value.comment": ""
     }
 }
 ```
@@ -68,11 +68,11 @@ Sample resource file:
 {
     "noResultsForRefinersText": {
         "value": "No results found for refinement criteria",
-        "comment": "Message to display when no products are returned with applied refinement criteria"
+        "_value.comment": "Message to display when no products are returned with applied refinement criteria"
     },
     "resultNotFoundText": {
         "value": "Result not found text",
-        "comment": "Result not found text for a category"            
+        "_value.comment": "Result not found text for a category"
     },
 }
 ```
@@ -109,7 +109,7 @@ To use a resource string in a module, the resource string keys must be *referenc
     "resources": {
         "resultNotFoundText": {
             "value": "Result not found text",
-            "comment": "Result not found text for a category"            
+            "comment": "Result not found text for a category"
         }
     }
 }
@@ -141,7 +141,7 @@ Example file structure
       * fr-fr.json
       * fr.json
  
-Each resource file shall contain modules and properties groups. All the modules related authoring strings should be grouped under modules section with children as the modulenames and the related authoring property pairs.  Each property is an object with "value" and optional comment properties inside the module section. 
+Each resource file shall contain modules and properties groups. All the modules related authoring strings should be grouped under modules section with children as the modulenames and the related authoring property pairs.  Each property is an object with "value" and optional _value.comment properties inside the module section. 
 
 #### Resource Schema:
 ```json
@@ -150,40 +150,29 @@ Each resource file shall contain modules and properties groups. All the modules 
         "<module_name>": {
             "friendlyName": {
                 "value": "",
-                "comment": ""
+                "_value.comment": ""
             },
             "description": {
-                "alue": "",
-                "comment": ""
+                "value": "",
+                "_value.comment": ""
             },
-           "images": {
-	        "<imageName>": {
-		    "value": "",
-		    "comment": ""
-                }
-           },
+        },
         "config": {
             "<property_name>": {
                 "friendlyName": {
                     "value": "",
-                    "comment": "" 
-		},
+                    "_value.comment": ""
+                },
                 "description": {
-                    "value": "", 
-		    "comment": ""
-		},
+                    "value": "",
+                    "_value.comment": ""
+                },
                 "errorMessage": {
-		    "value": "",
-		    "comment": ""
-		},
-                "options": {
-		    "enumKey": {
-		        "value": "",
-			"comment": ""
-                    }
-		}
+                    "value": "",
+                    "_value.comment": ""
+                },
                 "properties": {
-	            ...
+                    ...
                 }
             }
         },
@@ -194,11 +183,14 @@ Each resource file shall contain modules and properties groups. All the modules 
                     "comment": ""
                 }
             }
-        }
-    }
-    editorGroups: {
-        "<groupName>": { "value": "", "comment": ""}
-    }
+        },
+        "options": {
+            "enumKey": {
+                "value": "",
+                "_value.comment": ""
+            }
+        },
+    },
 }
 ```
 
@@ -210,54 +202,63 @@ Sample resource file:
         "hero": {
             "friendlyName": {
                 "value": "Hero Module",
-                "comment": ""
+                "_value.comment": ""
             },
             "description": {
                 "value": "Hero with slides",
-                "comment": ""
-            },
-            "images": {
-                "thumbnail1": {
-                    "value": "Left aligned hero depiction",
-                    "comment": "Alt text for thumbnail"
-                }
+                "_value.comment": ""
             },
             "config": {
                 "headerText": {
                     "friendlyName": {
                         "value": "Partner hero",
-                        "comment": ""
+                        "_value.comment": ""
                     }
                 },
                 "alignment": {
                     "friendlyName": {
                         "value": "Hero Image Alignment",
-                        "comment": ""
+                        "_value.comment": ""
                     },
                 "options": {
                     "left": {
                         "value": "Left Image",
-                        "comment": ""
+                        "_value.comment": ""
                     },
                     "right": {
                         "value": "Right Image",
-                        "comment": ""
+                        "_value.comment": ""
                         }
                     }
                 }
             },
             "slots": {
                 "content": {
-                    "friendlyName": "Content Slots",
-                    "description": "Content to be rendered in container. Max 2",
+                    "friendlyName": {
+                        "value": "Content Slots",
+                        "_value.comment": ""
+                    },
+                    "description": {
+                        "value": "Content to be rendered in container. Max 2",
+                        "_value.comment": ""
+                    }
+                }
             },
-            "group": {
-                "Layout": {
-                    "value": "Layout",
-                    "comment": ""
+            "options": {
+                "text": {
+                    "value": "text",
+                    "_value.comment": ""
+                },
+                "glyph": {
+                    "value": "glyph",
+                    "_value.comment": ""
                 }
             }
-        } 
+        }
     }
 }
 ```
+
+### Generating resource global.json file
+Both modules and authoring resource global.json files can be generated by running the command **yarn msdyn365 generate-resources src** in SDK root folder. This command will pick both the modules and authoring strings defined in *.definition.json files and generates the
+**resources/modules/global.json** and **resources/authoring/global.json** files.
