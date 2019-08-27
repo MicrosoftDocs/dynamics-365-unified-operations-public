@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
+description: This topic points to resources that will help you Finance and Operations applications in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations. This content will help them configure the system to work smoothly and effectively for your organization and business.
+This topic points to content that will help power users and administrators configure Finance and Operations applications. This content will help them configure the system to work smoothly and effectively for your organization and business.
 
 Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently.
 
