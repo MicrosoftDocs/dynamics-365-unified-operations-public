@@ -44,7 +44,7 @@ Page mock files live under the **/src/pageMocks** directory and can be loaded us
 ## Create a new page mock
 To create a new page mock you'll need to create a new blank json file under the **/src/pageMocks** directory, as in the following example.
 
-`/src/pagemocks/campaignPage.json`.
+`/src/pagemocks/campaignPage.json`
 
 ## Example
 
@@ -134,11 +134,9 @@ The following example shows a page mock that adds two instances of the same modu
 }
 
 ```
+Every page needs to have a root page container (pageRoot). In our example, a page container "default-page" is used.
 
-## Root page container (pageRoot)
-Every page needs to have a root page container.  In our example, a page container “default-page” is used.
-
-There is a node called "modules" that lists the modules inside of the page. The page container "default-container" is then used which has a slot called "primary." The container is responsible for laying out the modules inside it. You can then see we have a `productFeature` module rendered twice in a row:
+There is a node called "modules" that lists the modules inside of the page. The page container "default-container" is then used which has a slot called "primary." The container is responsible for laying out the modules inside it. In the example, the `productFeature` module is rendered twice in a row.
 
 ```
 {
@@ -156,4 +154,4 @@ There is a node called "modules" that lists the modules inside of the page. The 
 …
 ```
 
-In the above example there is an "id" for each module **ProductFeature__0** and **ProductFeature__1**, which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the above example that one module has a "left" imageAlignment config setting and the other has a "right" config setting.
+In the example, there is an "id" for each module (ProductFeature__0 and ProductFeature__1), which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the above example that one module has a "left" imageAlignment config setting and the other has a "right" imageAlignment config setting.
