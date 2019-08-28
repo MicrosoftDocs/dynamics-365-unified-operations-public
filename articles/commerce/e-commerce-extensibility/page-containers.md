@@ -54,6 +54,13 @@ Open the new module definition file campaignPageContainer.definition.json and ch
         "view": "./campaignPageContainer"
     },
     "config": {
+        "skipToMainText": {
+            "friendlyName": "Skip to main text",
+            "description": "Skip to main text",
+            "type": "string",
+            "default": "Skip to main content",
+            "group": "data"
+        }
     },
     "slots": {
         "header":
@@ -100,27 +107,49 @@ import { ICampaignPageContaineProps } from './campaignPageContaine.props.autogen
  * @extends {React.PureComponent<ICampaignPageContaineProps<ICampaignPageContaineData>>}
  */
 class CampaignPageContaine extends React.PureComponent<ICampaignPageContaineProps<ICampaignPageContaineData>> {
-    public render(): JSX.Element {
-        const { data, slots } = this.props;
+    public render(): JSX.Element | null {
+        const { slots, telemetry, id, typeName } = this.props;
 
-        if (!slots) {
-            return (
-                <div className='row'> No Slots Configured</div>
-            );
+        let skipToMainText = this.props.config && this.props.config.skipToMainText;
+        telemetry.log(LogLevel.Debug, 'CampaignPageContaine rendering for \'{id}/{typeName}\'', { values: [id, typeName] });
+
+        if (!skipToMainText) {
+            skipToMainText =
+                this.props.context.app && this.props.context.app.platform ? this.props.context.app.platform.skipToMainText : '';
         }
 
         return (
-            <div>
-                <div className='row'>
-                    {slots.header[0]}
-                </div>
-                <div className='row'>
-                    {slots.primary[0]}
-                </div>
-                <div className='row'>
-                    {slots.footer[0]}
-                </div>
-            </div>
+            <React.Fragment>
+                <a
+                    className='skip-to-main'
+                    href='#main'
+                    tabIndex={0}
+                    style={{ height: '1px', left: '-999px', position: 'absolute', width: '1px', zIndex: 300002 }}
+                >
+                    {skipToMainText}
+                </a>
+                 <header>
+                    {slots &&
+                        slots.header &&
+                        slots.header.map((children: React.ReactNode) => {
+                            return children;
+                        })}
+                </header>
+                <main id='main'>
+                    {slots &&
+                        slots.primary &&
+                        slots.primary.map((children: React.ReactNode) => {
+                            return children;
+                        })}
+                </main>
+                <footer>
+                    {slots &&
+                        slots.footer &&
+                        slots.footer.map((children: React.ReactNode) => {
+                            return children;
+                        })}
+                </footer>
+            </React.Fragment>
         );
     }
 }
@@ -137,48 +166,50 @@ Below is a sample page mock that can be leveraged for testing and is saved in th
 {
     "exception": null,
     "pageRoot": {
-      "modules": {
-        "primary": [{
-            "modules": {
-                "slot1": [{ "id": "ProductFeature__0", "typeName": "productFeature" }],
-                "slot2": [{ "id": "ProductFeature__1", "typeName": "productFeature" }]
-                },
-            "id": "primaryArea__0",
-            "typeName": "myContainer"
-        }]  
-      },
-      "id": "default-page_0",
-      "typeName": "myPageContainer"
-    },
-    "modules": {
-      "default-page_0": {
-        "id": "default-page_0",
-        "typeName": "myPageContainer"
-      },
-      "primaryArea__0": {
-        "id": "primaryArea__0",
-        "typeName": "myContainer"
-      },
-      "ProductFeature__0": {
-        "config": {
-            "imageAlignment": "left",
-            "productTitle": "Men's Wingtip Shoe",
-            "productDetails": "Genuine leather crafted with care.",
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__0",
-        "typeName": "productFeature"
-      },
-      "ProductFeature__1": {
-        "config": {
-            "imageAlignment": "right",
-            "productTitle": "Men's Wingtip Shoe",
-            "productDetails": "Genuine leather crafted with care.",
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__1",
-        "typeName": "productFeature"
-      }
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "myPageContainer",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "primaryArea__0",
+                                "typeName": "myContainer"
+                                "modules": {
+                                    "slot1": [
+                                        { 
+                                            "id": "ProductFeature__0",
+                                            "typeName": "productFeature",
+                                            "config": {
+                                                "imageAlignment": "left",
+                                                "productTitle": "Men's Grand Wingtip Shoe",
+                                                "productDetails": "Genuine leather crafted with perfection.",           
+                                                "buttonText": "Buy Now"
+                                            }
+                                        }
+                                    ],
+                                    "slot2": [
+                                        { 
+                                            "id": "ProductFeature__1",
+                                            "typeName": "productFeature" ,
+                                            "config": {
+                                                "imageAlignment": "right",
+                                                "productTitle": "Men's Grand Wingtip Shoe",
+                                                "productDetails": "Genuine leather crafted with perfection.",   
+                                                "buttonText": "Buy Now"
+                                            }
+                                        }
+                                    ]
+                                }                   
+                            }
+                        ] 
+                    }
+                }
+            ]         
+        } 
     },
     "renderingContext": {
       "staticContext": {
