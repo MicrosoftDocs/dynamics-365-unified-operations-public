@@ -64,14 +64,14 @@ and stored locally.
 ## Sign in to your RCS instance
 In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
 
-1.  On the default dashboard, select **Electronic reporting**.
-2.  Select **Reporting configurations**.
-3.  Import the downloaded configurations to RCS in the following sequence: data model, metadata, model mapping, format. Complete the following steps for each ER configuration:
+1. On the default dashboard, select **Electronic reporting**.
+2. Select **Reporting configurations**.
+3. Import the downloaded configurations to RCS in the following sequence: data model, metadata, model mapping, format. Complete the following steps for each ER configuration:
 
-    1.  Select **Exchange.**
-    2.  Select **Load from XML file**.
-    3.  Select **Browse**, and then select the required ER configuration in XML format.
-    4.  Select **OK.**
+    1. Select **Exchange.**
+    2. Select **Load from XML file**.
+    3. Select **Browse**, and then select the required ER configuration in XML format.
+    4. Select **OK.**
 
 ## Review the provided ER solution
 
@@ -174,15 +174,11 @@ You can improve the provided format by adding one calculated field to filter the
 
 By adding this parameter, you specify the condition that must be in place to call this calculated field. Whenever you call this calculated field, you need to specify the argument of the **Taxation Level** parameter as a value with **String** format.
 
-    Make sure that you define parameters only for those calculated fields that
-    reside in a container (either **Record list** or **Record** or
-    **Container**).
+   Make sure that you define parameters only for those calculated fields that reside in a container (either **Record list** or **Record** or **Container**).
 
-    The configured parameter is available in the list of data sources for this
-    calculated field. You can add the parameter to the configured expression by
-    selecting **Add data source**.
+   The configured parameter is available in the list of data sources for this calculated field. You can add the parameter to the configured expression by selecting **Add data source**.
 
-    ![](media/er-calculated-field-type-06.png)
+   ![](media/er-calculated-field-type-06.png)
 
 ### Define an expression for adding a calculated field
 
@@ -217,12 +213,12 @@ On the **Format designer** page, the configured parameterized calculated field *
 3. Select **Bind**.
 4. Select **Yes** to confirm the replacement of the currently used data source, **Level1,** by the new data source, **Levels,** in all nested format elements of the selected format element.
 
-> Applied binding has been built as a call of the parameterized calculated field. By default, the name of the bound format element is used as an argument of used parameterized calculated field under the following conditions:
+    Applied binding has been built as a call of the parameterized calculated field. By default, the name of the bound format element is used as an argument of used parameterized calculated field under the following conditions:
 
-    - The calculated field is configured to use a single parameter.
-    - The data type of this parameter is defined as **String**.
+      - The calculated field is configured to use a single parameter.
+      - The data type of this parameter is defined as **String**.
 
-> When the name of the bound format element is blank, the data source name of this element is used in applied binding.
+    When the name of the bound format element is blank, the data source name of this element is used in applied binding.
 
 5. Select the **Statement.Taxation.Reduced** format element.
 6. Select **Bind**.
@@ -231,7 +227,7 @@ On the **Format designer** page, the configured parameterized calculated field *
 9. Select **Bind**.
 10. Select **Yes** to confirm the replacement of the currently used data source, **Level3,** by the new data source, **Levels,** in all nested format elements under the selected format element.
 
->   When you specify the argument of the parameterized calculated field for the XML element representing taxation level (for example, **Model.Data2.Levels("Reduced")** as a text value), you don’t need to do the same for nested XML attributes—their bindings will automatically inherit the value of the argument defined on the parent level (**Model.Data2.Levels.aggregated.Base**, not **Model.Data2.Levels("Reduced").aggregated.Base**).
+   When you specify the argument of the parameterized calculated field for the XML element representing taxation level (for example, **Model.Data2.Levels("Reduced")** as a text value), you don’t need to do the same for nested XML attributes—their bindings will automatically inherit the value of the argument defined on the parent level (**Model.Data2.Levels.aggregated.Base**, not **Model.Data2.Levels("Reduced").aggregated.Base**).
 
   ![](media/er-calculated-field-type-09.png)
 
