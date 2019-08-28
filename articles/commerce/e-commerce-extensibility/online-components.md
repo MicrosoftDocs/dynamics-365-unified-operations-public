@@ -40,12 +40,6 @@ Modules represent the core building blocks that make up an online page. Here are
 - A hero module that highlights a campaign or provides marketing information
 - A header module that is made up of smaller module components, such as a search module, a sign-in module, and a navigation module
 
-## Module configuration fields
-
-Each module can expose configuration fields that are surfaced on the authoring page. The configuration fields are typically used for module settings or layout options. For example, you can use an image alignment field that lets the page author set the alignment to the left, center, or right inside the module. You can also use a title string field to show a heading in a module.
-
-The module code reads the field value and creates the appropriate HTML in the view. Multiple types of values are supported, such as Boolean values, numbers, strings, rich text, enumerators, images, and videos.
-
 ## Data actions
 
 Data actions are used to get data and apply business logic to a module and share data across modules.
