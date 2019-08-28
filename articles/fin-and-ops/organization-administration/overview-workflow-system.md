@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow system overview
-description: This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes the workflow system in Finance and Operations applications.
 author: sericks007
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+This topic describes the workflow system in Finance and Operations applications.
 
 ## What is workflow?
 
