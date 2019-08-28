@@ -1422,7 +1422,7 @@
       - name: Report designer interface
         href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
       - name: Keyboard shortcuts for financial reporter
-        href: ../../financials/general-ledger/financial-reporting-keyboard-shortcuts.md
+        href: ../financials/general-ledger/financial-reporting-keyboard-shortcuts.md
       - name: User preferences in financial report designer
         href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
       - name: Advanced formatting options
