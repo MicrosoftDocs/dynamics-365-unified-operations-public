@@ -40,7 +40,7 @@ The main body of the Cart page shows all the items added to the Cart by the shop
 
 The Order summary module shows the amount due after discounts, shipping, taxes etc. A shopper can shop anonymously or as a signed-in user. If a user is signed-in, items in their cart are preserved. This allows them to continue their shopping journey from multiple devices.
 
-From the Cart, a shopper can proceed to checkout. Checkout can be initiated as a guest user or as a signed-in user.
+From the Cart, a shopper can proceed to checkout. Checkout can be initiated as a guest user or as a signed-in user. See Cart topic for authoring a cart page. 
 
 ## Checkout
 
@@ -72,4 +72,4 @@ When an order is placed, a confirmation number is provided to the shopper. At th
 
 Once an order is created, an order confirmation email is sent to the customer to confirm that the order was created.
 
-For details on authoring a checkout page, see the Checkout container help topic.
+For details on authoring a checkout page, see the Checkout help topic.
