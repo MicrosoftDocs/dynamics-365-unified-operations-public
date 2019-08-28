@@ -39,7 +39,7 @@ Below is the default test file created for a new module, note that the mock data
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { buildMockModuleProps} from '@msdyn365-commerce/core-internal';
+import { buildMockModuleProps} from '@msdyn365-commerce/core';
 /// <reference types="jest" />
 
 // tslint:disable-next-line:no-unused-variable
