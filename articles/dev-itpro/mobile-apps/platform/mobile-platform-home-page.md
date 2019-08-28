@@ -174,9 +174,11 @@ Here are some tips for workspace creation and modification:
 - After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
 - Verify that recordings are correct using the "Job steps".
 - Play back recordings using task recorder playback to verify them.
+- Don't navigate to a page before starting the recording, since the context from the previous page often needs to be captured.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
 - When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
 - Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
+- When adding a lookup field, select a value in a lookup instead of just adding the lookup field, since that will ensure the correct value is chosen.
 - If you re-record a lookup, all the references also need to be re-recorded because the GUID for the lookup will change.
 - If you want to add a field to a page, you need to add all the fields again, because the list is cleared at the beginning of each edit. This is a limitation of task recorder. Note that reordering is also not possible.
 - In the workspace XML, GUIDs are used as references to forms and controls instead of names. GUIDs are used to ensure uniqueness, but this comes at the cost of maintainability. Those GUIDs are regenerated on each modification, so partial edits are very difficult. The use of GUIDs would be very costly to change, so it is unlikely that changes would be made in the future to use simpler string name references.
