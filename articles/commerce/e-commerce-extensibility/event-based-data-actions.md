@@ -3,32 +3,39 @@
 
 title: Event based data actions
 description: In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event. 
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 
 ---
 # Event based data actions
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how use event based Data Actions.
+
+## Overview
 
 In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event.
 
@@ -52,7 +59,7 @@ class ProductButton extends React.Component {
     }
 
     // On-Click handler function
-    private _getProductInfo() {
+    private _getProductInfo = () => {
         console.log('We need to get the product!');
     }
 }
@@ -89,12 +96,12 @@ class ProductButton extends React.Component {
     }
 
     // On-click handler
-    private async _getProductInfo() {
+    private _getProductInfo = async() => {
         // Create the input for our data-action
         const actionInput = new ProductInput('12345');
         
         // Run and await the result of the data action
-        const product = await getProductDataAction(actionInput, this.props.context.actionContext);
+        const product = await getProductDataAction(actionInput, {callerContext: this.props.context.actionContext});
         
         // Log the result to the console
         console.log(product);
