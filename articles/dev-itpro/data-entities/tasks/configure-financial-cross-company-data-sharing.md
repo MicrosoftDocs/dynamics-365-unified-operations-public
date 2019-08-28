@@ -37,10 +37,7 @@ This task guide requires Dynamics AX platform 7.1 or later.
 1. Go to **Navigation pane > Modules > System administration > Workspaces > Data management**.
 2. Click **Import**.
 3. In the **Name** field, type a value.
-4. In the **Source data format** field, select the 'Package' type.
-    
-    Click **Upload**. Navigate to the location of the Financial data sharing template package file and select that file.
-    
+4. In the **Source data format** field, select the 'Package' type. Click **Upload**. Navigate to the location of the Financial data sharing template package file and select that file.
 5. Click **Save**.
 6. In the list, mark the selected row. Select the data sharing policy that was just created.  
 7. Click **Import**.
