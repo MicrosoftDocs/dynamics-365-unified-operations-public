@@ -74,30 +74,24 @@ Cart uses three settings that are defined in the App Settings
 
 This section explains how to add a cart module to a new page and set the required properties.  
 
-1. In tooling, create a new page template “Cart template”.  
+1. In tooling, create a new fragment “Cart fragment”.  
 
-1. In the Main slot of the template, add Buy Box. 
+2. Add Cart module
+3. In the Cart line items slot, add Cart line items module 
+4. In the Order summary and promo code module, add promo code and order summary module 
 
-1. Check-in and Publish.  
+5. In the Checkout slot, add the Checkout module. [TBD Checkout configuration] 
 
-1. Now create a new page with the “Cart template” and call it “Cart page” 
+6. In the Find in Store slot, add the Pick up in Store module 
 
-1. On the page outline, add Default page 
+7. In the Pick up in Store module, select the store search slot and add the Store search by Bing Maps module 
 
-1. To the Default page, add Cart module 
+8. Check-in and Publish.  
 
-1. In the Cart line items slot, add Cart line items module 
+9. Now create a new template and add the Cart fragment to it
 
-1. In the Order summary and promo code module, add promo code and order summary module 
+10. Create a page with the newly added template
 
-1. In the Checkout slot, add the Checkout module. [TBD Checkout configuration] 
 
-1. In the Find in Store slot, add the Pick up in Store module 
 
-1. In the Pick up in Store module, select the store search slot and add the Store search by Bing Maps module 
 
-1. Save and Preview. Some modules may not render in preview as they don’t have a Cart context 
-
-1. Check-in and Publish 
-
-Cart can be built as a Fragment <link> since there is only one instance of Cart. 
