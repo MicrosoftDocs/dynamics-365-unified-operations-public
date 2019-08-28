@@ -89,8 +89,8 @@ const createInput = () => {
 
 The example data action simulates an outgoing API call, and also includes a flag which can be set to allow a failure simulation. In certain scenarios you may want to create a module that can send updates about the status of a data action, which would not be possible with a normal data action.
 
-## Create your observable data action
-To create your observable data action, use the data action creation utility method `createObservableDataAction`:
+## Create the observable data action
+To create the observable data action, use the data action creation utility method `createObservableDataAction`:
 
 ```typescript
 export default createObservableDataAction({
@@ -99,9 +99,9 @@ export default createObservableDataAction({
 });
 ```
 
-This new method `createObservableDataAction` is equivalent to `createDataAction` except that it returns an `IObservableAction` instead of an `IAction`, which returns an `AsyncResult` instead of a `Promise` like a standard `IAction`. This gives us access to additional data when the data action is consumed including the `status` and `error` of the data action. 
+This new method `createObservableDataAction` is equivalent to `createDataAction` except that it returns an `IObservableAction` instead of an `IAction`, which returns an `AsyncResult` instead of a `Promise` like a standard `IAction`. This gives us access to additional data when the data action is consumed, including the `status` and `error` of the data action. 
 
-A mock can be created to test the data action:
+A mock can be created to test the data action, as in the following example.
 
 ```tsx
 // test-module.tsx
@@ -176,7 +176,7 @@ The following example shows a sample module definition, which registers the samp
 }
 ```
 
-When creating the data.ts file, we have to make sure that all observableDataAction's are wrapped with AsyncResult. This ensures the correct typings when writing a module:
+When creating the data.ts file, you have to ensure that all observableDataAction's are wrapped with AsyncResult. This ensures the correct typings when writing a module:
 
 ```typescript
 // test-module.data.ts
@@ -187,10 +187,10 @@ export interface IAsyncTestModuleData {
 }
 ```
 
-Now that the data action is wrapped with `AsyncResult`, we can see during module development that we have access to new properties. These properties include `testResult.status`, which will contains the current state of our data action ('Success', 'Loading', or 'Failed'), and `testResult.result`, which will contain the actual data returned by the action if it succeeds.
+Now that the data action is wrapped with `AsyncResult`, we can see during module development that we have access to new properties. These properties include `testResult.status`, which will contains the current state of the data action ('Success', 'Loading', or 'Failed'), and `testResult.result`, which will contain the actual data returned by the action if it succeeds.
 
 Initially, the module renders and shows that the data action is in a loading state because the `setTimeout` used simulates an API call in progress. Once the `setTimeout` completes and the action successfully returns data, the module automatically renders again, this time showing the `SUCCESS` state along with the data returned from the action, which is available within the `result` property.
 
 If the data action throws an error, the module updates accordingly on the page instead of the `result` property getting populated. The `error` property of the `AsyncResult` is filled in because the action was unable to execute.
 
-By taking advantage of the `status`, `result`, and `error` properties provided by observable data actions, handling complicated scenarios in a module becomes very simple. Examples of these types of complicated scenarios include displaying a loading screen while an API call runs, or providing a user contextual error messages in response to a failed data action.
+By taking advantage of the `status`, `result`, and `error` properties provided by observable data actions, handling complicated scenarios in a module becomes very simple. Examples of these types of complicated scenarios include displaying a loading screen while an API call runs, or providing contextual error messages in response to a failed data action.
