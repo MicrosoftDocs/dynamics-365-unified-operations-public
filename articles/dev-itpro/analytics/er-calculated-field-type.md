@@ -90,7 +90,7 @@ This ER model mapping is designed to do the following:
     **TaxTrans** table:
     
     - Group the list of fetched transactions (**Gr** data source) by tax code.
-    - Calculate for grouped transactions the following aggregated values per
+    - Calculate for grouped transactions following aggregated values per
         tax code:
 
         - Sum of tax base values.
@@ -111,8 +111,8 @@ The model mapping in this configuration implements the base data model for any o
 3. Select **Designer**. This ER format is designed to do the following:
 
   - Generate a tax statement in XML format.
-  - Present the following levels of taxation in the tax statement: regular,reduced, and none.
-  - Present multiple details at each taxation level, having a different numberof details in each level.
+  - Present the following levels of taxation in the tax statement: regular, reduced, and none.
+  - Present multiple details at each taxation level, having a different number of details in each level.
 
   ![](media/er-calculated-field-type-02.png)
 
@@ -130,11 +130,11 @@ The model mapping in this configuration implements the base data model for any o
 
   ![](media/er-calculated-field-type-04.png)
 
-8. Review the calculated fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2,** and **Model**.**Data2.Level3.** These calculated fields are used to filter the **Model**.**Data2.Summary2** records list and return only records that represent a particular taxation level.
+8. Review the calculated fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** These calculated fields are used to filter the **Model**.**Data2.Summary2** records list and return only records that represent a particular taxation level.
 9. Close the **Format designer** page.
 
 ## Create a derived format
-You can improve the provided format by adding one calculated field to filter the required taxation level instead of using the existing three fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2,** and **Model**.**Data2.Level3**. The required taxation level can be specified in the location where this new calculated field will be called.
+You can improve the provided format by adding one calculated field to filter the required taxation level instead of using the existing three fields: **Model**.**Data2.Level1**, **Model**.**Data2.Level2,** and **Model**.**Data2.Level3**. The required taxation level can be specified in the location where this new calculated field will be called.
 
 1. In the configuration tree, expand the content of the **Model to learn parameterized calls** item.
 2. Select **Format to learn parameterized calls**.
@@ -172,9 +172,9 @@ You can improve the provided format by adding one calculated field to filter the
 
 5. Select **OK**.
 
-By adding this parameter, you specify the condition that must be in place to call this calculated field. Whenever you call this calculated field, you need to specify the argument of the **Taxation Level** parameter as a value with **String** format.
+By adding this parameter, you specify the condition that must be in place to call this calculated field. When you call this calculated field, you need to specify the argument of the **Taxation Level** parameter as a value with **String** format.
 
-   Make sure that you define parameters only for those calculated fields that reside in a container (either **Record list** or **Record** or **Container**).
+   Make sure that you define parameters only for those calculated fields that reside in a container (either **Record list**, **Record**, or **Container**).
 
    The configured parameter is available in the list of data sources for this calculated field. You can add the parameter to the configured expression by selecting **Add data source**.
 
@@ -211,9 +211,9 @@ On the **Format designer** page, the configured parameterized calculated field *
 1. Select **Model.Data2.Levels** to select the configured calculated field.
 2. Select the **Statement.Taxation.Regular** format element.
 3. Select **Bind**.
-4. Select **Yes** to confirm the replacement of the currently used data source, **Level1,** by the new data source, **Levels,** in all nested format elements of the selected format element.
+4. Select **Yes** to confirm the replacement of the currently used data source, **Level1**, by the new data source, **Levels**, in all nested format elements of the selected format element.
 
-    Applied binding has been built as a call of the parameterized calculated field. By default, the name of the bound format element is used as an argument of used parameterized calculated field under the following conditions:
+    Applied binding has been built as a call of the parameterized calculated field. By default, the name of the bound format element is used as an argument for parameterized calculated field under the following conditions:
 
       - The calculated field is configured to use a single parameter.
       - The data type of this parameter is defined as **String**.
@@ -222,10 +222,10 @@ On the **Format designer** page, the configured parameterized calculated field *
 
 5. Select the **Statement.Taxation.Reduced** format element.
 6. Select **Bind**.
-7. Select **Yes** to confirm the replacement of the currently used data source, **Level2,** by the new data source, **Levels,** in all nested format elements under the selected format element.
+7. Select **Yes** to confirm the replacement of the currently used data source, **Level2**, by the new data source, **Levels**, in all nested format elements under the selected format element.
 8. Select the **Statement.Taxation.None** format element.
 9. Select **Bind**.
-10. Select **Yes** to confirm the replacement of the currently used data source, **Level3,** by the new data source, **Levels,** in all nested format elements under the selected format element.
+10. Select **Yes** to confirm the replacement of the currently used data source, **Level3**, by the new data source, **Levels**, in all nested format elements under the selected format element.
 
    When you specify the argument of the parameterized calculated field for the XML element representing taxation level (for example, **Model.Data2.Levels("Reduced")** as a text value), you don’t need to do the same for nested XML attributes—their bindings will automatically inherit the value of the argument defined on the parent level (**Model.Data2.Levels.aggregated.Base**, not **Model.Data2.Levels("Reduced").aggregated.Base**).
 
@@ -277,7 +277,7 @@ When a parameterized calculated field returns a record, you need to support bind
 
 ### Use the configured calculated field to bind format elements
 
-1. Expand the **Model.Data2.LevelRecord** to select the configured calculated field.
+1. Expand **Model.Data2.LevelRecord** to select the configured calculated field.
 2. Expand the **Model.Data2.LevelRecord.aggregated** container of the configured calculated field.
 3. Select the **Model.Data2.LevelRecord.aggregated.Base** field.
 4. Select the **Statement.Taxation.None** format element.
@@ -285,7 +285,7 @@ When a parameterized calculated field returns a record, you need to support bind
 6. Select the **Statement.Taxation.None.Base** format element.
 7. Select **Bind**.
 8. Select **Edit formula**.
-9. Change the expression to, **Model.Data2.LevelRecord("None").aggregated.Base**.
+9. Change the expression to **Model.Data2.LevelRecord("None").aggregated.Base**.
 
 ![](media/er-calculated-field-type-11.png)
 
@@ -300,7 +300,7 @@ When a parameterized calculated field returns a record, you need to support bind
 7. Select **Save**.
 
   > [!NOTE]
-  > You reused same calculated field **Model.Data2.Levels** several times in format bindings. It is much easier to use and maintain a single calculated field instead of doing this for multiple similar ones.
+  > You reused the same calculated field **Model.Data2.Levels** several times in format bindings. It is much easier to use and maintain a single calculated field instead of doing this for multiple similar fields.
 
 8. Close the **Format designer** page.
 
@@ -315,13 +315,13 @@ When a parameterized calculated field returns a record, you need to support bind
 2. In the **Versions** FastTab, select the completed version 1.1.1.
 3. Select **Exchange**.
 4. Select **Export as XML file**.
-5. Store locally the downloaded configuration in XML format.
+5. Store the downloaded configuration locally, in XML format.
 
-## Test ER formats in Finance and Operations
+## Test ER formats 
 You can run the initial and improved ER formats to make sure that configured parameterized calculated fields work properly.
 
-### Import ER configurations to Finance and Operations
-You can import reviewed configurations from RCS to Finance and Operations byusing the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting configurations from Regulatory Configuration Services](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
+### Import ER configurations
+You can import reviewed configurations from RCS to Finance and Operations by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting configurations from Regulatory Configuration Services](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
 
 1. Select the **DEMF** company and on the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.
@@ -336,7 +336,7 @@ You can import reviewed configurations from RCS to Finance and Operations byusin
 
     1. Select **Exchange.**
     2. Select **Load from XML file**.
-    3. Select **Browse** to select the locally stored file of the **Format to learn parameterized calls (custom)** format configuration in XML format.
+    3. Select **Browse** to select the locally stored **Format to learn parameterized calls (custom)** file in XML format.
     4. Select **OK**.
 
 ### Run ER formats
@@ -347,7 +347,7 @@ You can import reviewed configurations from RCS to Finance and Operations byusin
 4. Save the locally generated output.
 5. Select the **Format to learn parameterized calls (custom)** item.
 6. Select **Run** on the top-most ribbon.
-7. Save locally generated output.
+7. Save the generated output locally. 
 8. Compare the contents of the generated outputs.
 
 ## Additional resources
