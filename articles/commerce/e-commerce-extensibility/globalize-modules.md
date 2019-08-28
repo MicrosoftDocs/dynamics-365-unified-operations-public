@@ -37,13 +37,13 @@ This topic describes how to globalize modules using CultureInfoFormatter.
 
 ## Overview
 
-Globalizing an online site should not only include string localization but also number, date, and currency formatting for the various languages and regions your web site serves.
+Globalizing an online site should not only include string localization but also number, date, and currency formatting for the various languages and regions your website serves.
 
 The Dynamics 365 Commerce online SDK provides a **CultureInfoFormatter** class to help meet common globalization requirements to format numbers, currency, and date/time.
 
-## Access CultureInfoFormatter in a module's view file
+## Access CultureInfoFormatter in a module view file
 An instance of CultureInfoFormatter constructed with the locale derived from the `RenderingContext` is
-passed along in the props object to a modules's view file. To access this, use the following syntax.
+passed along in the props object to a modules view file. To access this, use the following syntax.
 
 ```ts
 public render(): JSX.Element | null {
@@ -58,7 +58,7 @@ public render(): JSX.Element | null {
 
 ## Construct an instance of CultureInfoFormatter
 
-The constructor of `CultureInfoFormatter` takes in one argument, lang-locale.
+The constructor of CultureInfoFormatter takes in one argument, lang-locale.
 
 The lang-locale argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. A default value of 'en-US' will be used if no language tag is specified. Language tags are not case-sensitive but the locale is generally capitalized by convention.
 
@@ -79,7 +79,7 @@ intlFormatter = new CultureInfoFormatter('en-GB');
 
 ## CultureInfoFormatter formatting functions
 
-`CultureInfoFormatter` provides the following formatting functions.
+CultureInfoFormatter provides the following formatting functions.
 - Currency formatting
 - Date formatting
 - Time formatting
@@ -99,8 +99,7 @@ To format currency in accordance with a certain locale use the `formatCurrency()
  */
 formatCurrency(price: string | number, currencyCode?: string): string;
 ```
-The currency code argument is optional but if provided must be in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format.
-If the currency code is not provided the formatter will use the locale to determine the best currency code to use.
+The currency code argument is optional, but if it is provided it must be in the [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format. If the currency code is not provided, the formatter will use the locale to determine the best currency code to use.
 
 #### Examples
 
@@ -126,7 +125,7 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 
 ### Date formatting
 
-To format a date in accordance with a certain locale use `formatDate()`.
+To format a date in accordance with a certain locale, use `formatDate()` as in the following example.
 
 ```ts
 /**
@@ -137,7 +136,7 @@ To format a date in accordance with a certain locale use `formatDate()`.
  */
 formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
-The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [IDateFormatOptions](#IDateFormatOptions).
+The options argument is optional and enables you to control the localization and formatting. For more information on the available date formatting properties, see [IDateFormatOptions](#IDateFormatOptions).
 
 #### Date formatting examples
 
@@ -157,7 +156,6 @@ cultureInfoFormatter = new CultureInfoFormatter('en-GB');
 cultureInfoFormatter.formatDate(testDate);
 // expected output:  "20/12/2012"
 
-
 // Set lang-locale to German as spoken in Germany
 cultureInfoFormatter = new CultureInfoFormatter('de-DE');
 
@@ -170,7 +168,7 @@ cultureInfoFormatter.formatDate(testDate);
 
 ### Time formatting
 
-To format a time in accordance with a certain locale use `formatTime()`.
+To format a time in accordance with a certain locale, use `formatTime()` as in the following example.
 
 ```ts
 /**
@@ -181,7 +179,7 @@ To format a time in accordance with a certain locale use `formatTime()`.
  */
 formatTime(time: Date, options?: ITimeFormatOptions): string;
 ```
-The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [ITimeFormatOptions](#ITimeFormatOptions).
+The options argument is optional and enables you to control the localization and formatting. For more information on the available time formatting properties, see [ITimeFormatOptions](#ITimeFormatOptions).
 
 #### Time formatting examples
 
@@ -206,7 +204,7 @@ cultureInfoFormatter.formatTime(testDate, options);
 
 ### Number formatting
 
-To format a number in accordance with a certain locale use `formatNumber()`.
+To format a number in accordance with a certain locale use `formatNumber()` as in the following example.
 
 ```ts
 /**
@@ -217,7 +215,7 @@ To format a number in accordance with a certain locale use `formatNumber()`.
  */
 formatNumber(value: number, options?: INumberFormatOptions): string;
 ```
-The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [INumberFormatOptions](#INumberFormatOptions).
+The options argument is an optional argument that allows one to control the localization and formatting. For more information on the available number formatting properties, see [INumberFormatOptions](#INumberFormatOptions).
 
 #### Number formatting examples
 
@@ -250,7 +248,7 @@ cultureInfoFormatter.formatNumber(1234567.89);
 
 ## Formatting options
 
-The following section covers all the formatting options available to use as part of ITimeFormatOptions, IDateFormatOptions, INumberFormatOptions. 
+The following section covers the formatting options and property details for ITimeFormatOptions, IDateFormatOptions, and INumberFormatOptions. 
 
 ### ITimeFormatOptions 
 
@@ -272,15 +270,15 @@ interface ITimeFormatOptions {
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
-| localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the Lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the Lookup algorithm |
+| localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the lookup algorithm |
 | formatMatcher | enum | 'basic' or 'best-fit' | The format matching algorithm to use when. The default is 'best fit' |
 | hourCycle | enum | 'h11', 'h12', 'h23' or 'h24' | The hour cycle to use | 
-| timeZone | string | Timezone names as defined by [IANA time zone database](https://www.iana.org/time-zones) | Sets the timezone to use. The default is the runtime's default timezone. If environment **lacks native Intl support and Intl is polyfilled, this option will not be supported** (Intl polyfill does not support timezones) |
-| hour12 | boolean | 'true' or 'false' | Whether to use 12 hour time, as opposed to 24 hour time. This option overrides hourCycle property and its default value is depdendant on locale |
+| timeZone | string | Timezone names as defined by [IANA time zone database](https://www.iana.org/time-zones) | Sets the timezone to use. The default is the runtime's default timezone. If environment lacks native Intl support and Intl is polyfilled, this option will not be supported (since Intl polyfill does not support timezones). |
+| hour12 | boolean | 'true' or 'false' | Whether or not to use 12 hour time, as opposed to 24 hour time. This option overrides the hourCycle property and its default value is dependant on locale. |
 | hour | enum | 'numeric' or '2-digit' | Controls the representation of the hour. '2-digit' forces hours to be displayed with two digits. |  
 | minute | enum | 'numeric' or '2-digit' | Controls the representation of the minute. '2-digit' forces minutes to be displayed with two digits. |  
 | second | enum | 'numeric' or '2-digit' | Controls the representation of the second. '2-digit' forces seconds to be displayed with two digits. |  
-| timeZoneName | enum | 'short' or 'long' | Controls the representation of the time-zone name. 'short' is the three character abbreviation for the time-zone while 'long' is the full time-zone name | 
+| timeZoneName | enum | 'short' or 'long' | Controls the representation of the time-zone name. The 'short' value is the three character abbreviation for the time-zone, and 'long' is the full time-zone name. | 
 
 ### IDateFormatOptions
 
@@ -299,9 +297,9 @@ All options provided in ITimeFormatOptions can be used in IDateFormatOptions. Th
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
-| weekday | enum | 'narrow', 'short' or 'long' | Controls the representation of the weekday. 'narrow' is the 1-2 character representation of the weekday, 'short is the 3 character representation and 'long' is the full name |
-| year | enum | 'numeric' or '2-digit' | Controls the representation of the year. 2-digit will display the two most significant digits of the year (2018 -> 18) while numeric will display the entire year |
-| month | enum | 'numeric', '2-digit', 'narrow', 'short' or 'long' | Controls the representation of the month. 'numeric' is the numeric representation of the month (April -> 4), '2-digit' is the two digit numeric representation (April -> 04), 'narrow is the two character representation of the month (April -> AP), 'short' is the three character representation of the month (April -> Apr) and 'long' is the full month name (April -> April) |
+| weekday | enum | 'narrow', 'short', or 'long' | Controls representation of the day. The 'narrow' value is the 1-2 character representation of the day, 'short is the 3 character representation, and 'long' is the full name. |
+| year | enum | 'numeric' or '2-digit' | Controls the representation of the year. '2-digit' will display the two most significant digits of the year (2018 -> 18), and 'numeric' will display the entire year |
+| month | enum | 'numeric', '2-digit', 'narrow', 'short', or 'long' | Controls the representation of the month. The 'numeric' value is the numeric representation of the month (April -> 4), '2-digit' is the two digit numeric representation (April -> 04), 'narrow is the two character representation of the month (April -> AP), 'short' is the three character representation of the month (April -> Apr), and 'long' is the full month name (April -> April) |
 | day | enum | 'numeric' or '2-digit' | Controls the representation of the day. '2-digit' forces days to be displayed with two digits. | 
 
 The default value for each date/time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric."
@@ -324,11 +322,11 @@ export interface INumberFormatOptions {
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
-| localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the Lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the Lookup algorithm |
+| localeMatcher | enum | 'best fit' or 'lookup' | Allows one to set the algorithm used to match and find the locale. The "lookup" matcher follows the lookup algorithm specified in BCP 47. The "best fit" matcher lets the runtime provide a locale that's at least, but possibly more, suited for the request than the result of the lookup algorithm. |
 | style | enum | 'decimal', 'percent', or 'currency' | The formatting style to use. Possible values are 'decimal' for plain number formatting, 'currency' for currency formatting, and 'percent' for percent formatting; the default is 'decimal'. |
-| currency | string | 3 character [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) curreny codes | The currency to use in currency formatting. There is no default value. If style is set to 'currency' the currency property must be provided |
+| currency | string | 3 character [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) currency codes | The currency to use in currency formatting. There is no default value. If style is set to 'currency', the currency property must be provided. |
 | minimumIntegerDigits | number | Any integer value between 1-21 | The minimum number of integer digits to use. The default is 1. |
-| minimumFractionDigits | number | Any integer value between 0-20  | The minimum number of fraction digits to use. The default for number and percent formatting is 0 while the default for currency formatting is provided by [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standards.  |
+| minimumFractionDigits | number | Any integer value between 0-20  | The minimum number of fraction digits to use. The default for number and percent formatting is 0, and the default for currency formatting is provided by [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) standards.  |
 | maximumFractionDigits | number | Any integer value between 0-20 | The maximum number of fraction digits to use. |
 | minimumSignificantDigits | number | Any integer value between 1-21  | The minimum number of significant digits to use. The default is 1.  |
 | maximumSignificantDigits | number | Any integer value between 1-21  | The maximum number of significant digits to use. The default is 21.  |
