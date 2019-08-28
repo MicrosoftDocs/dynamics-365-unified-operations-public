@@ -96,10 +96,8 @@ individual child levels down the page hierarchy.
 
 ## Layouts
 
-Layouts reside in the middle of the page hierarchy and define the
-final choice and arrangement of modules as allowed by their parent
-template. Pages then sit below a layout in the hierarchy and define
-the page specific content that populates the modules chosen and arranged
+Where a Template defines all of the possible combinations of modules allowed for a page, a layout is an explicit selection of one of those combinations. Pages then sit below a layout in the hierarchy and define
+the localized content for the modules selected
 within the layout. Building upon our template example in the section above, a basic layout could be configured and described like this:
 
 *Example layout configuration:*
