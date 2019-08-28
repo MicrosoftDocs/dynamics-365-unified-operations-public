@@ -54,84 +54,68 @@ The following example shows a page mock that adds two instances of the same modu
 {
     "exception": null,
     "pageRoot": {
-      "modules": {
-        "primary": [
-          { "id": "ProductFeature__0", "typeName": "productFeature" },
-          { "id": "ProductFeature__1", "typeName": "productFeature" }
-        ]
-      },
-      "id": "default-page_0",
-      "typeName": "default-page"
-    },
-    "modules": {
-      "default-page_0": {
-        "id": "default-page_0",
-        "typeName": "default-page"
-      },
-      "ProductFeature__0": {
-        "config": {
-            "imageAlignment": "left"
-        },
-        "data": {
-            "$type": "productFeature",
-            "productTitle": {
-                "text": "Ethiopian Natural Limu"
-              },
-              "productDetails": {
-                "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast."
-              },
-              "buttonText": {
-                "text": "Buy Now"
-              }
-        },
-        "id": "ProductFeature__0",
-        "typeName": "productFeature"
-      },
-      "ProductFeature__1": {
-        "config": {
-            "imageAlignment": "right"
-        },
-        "data": {
-            "$type": "productFeature",
-            "productTitle": {
-                "text": "Ethiopian Natural Limu"
-              },
-              "productDetails": {
-                "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast."
-              },
-              "buttonText": {
-                "text": "Buy Now"
-              }
-        },
-        "id": "ProductFeature__1",
-        "typeName": "productFeature"
-      }
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "productFeature",
+                                "config": {
+                                    "imageAlignment": "left"
+                                },
+                                "data": {
+                                    "$type": "productFeature",
+                                    "productTitle": {
+                                        "text": "Ethiopian Natural Limu"
+                                    },
+                                    "productDetails": {
+                                        "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness..."
+                                    },
+                                    "buttonText": {
+                                        "text": "Buy Now"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "ProductFeature__1",
+                                "typeName": "productFeature",
+                                "config": {
+                                    "imageAlignment": "right"
+                                },
+                                "data": {
+                                    "$type": "productFeature",
+                                    "productTitle": {
+                                        "text": "Ethiopian Natural Limu"
+                                    },
+                                    "productDetails": {
+                                        "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness..."
+                                    },
+                                    "buttonText": {
+                                        "text": "Buy Now"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     },
     "renderingContext": {
-      "gridSettings":{  
-        "xs":{  
-          "w":767
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
         },
-        "sm":{  
-          "w":991
-         },
-         "md":{  
-           "w":1199  
-         },
-         "lg":{  
-           "w":1599
-         },
-         "xl":{  
-           "w":1600
-         },
-      },
-      "staticContext": {
-        "staticCdnUrl": "/_scnr/"
-      },
-      "locale": "en-us"
+        "locale": "en-us"
     },
     "statusCode": 200
 }
+
 
 ```
 Every page needs to have a root page container (pageRoot). In our example, a page container "default-page" is used.
@@ -142,14 +126,20 @@ There is a node called "modules" that lists the modules inside of the page. The 
 {
     …
     "pageRoot": {
+      "id": "core-root_0",
+      "typeName": "core-root",      
       "modules": {
-        "primary": [
-          { "id": "ProductFeature__0", "typeName": "productFeature" },
-          { "id": "ProductFeature__1", "typeName": "productFeature" }
-        ]
-      },
-      "id": "default-page_0",
-      "typeName": "default-page"
+        "body":[
+          "id": "default-page_0",
+          "typeName": "default-page",
+          "modules": {
+            "primary": [
+              { "id": "ProductFeature__0", "typeName": "productFeature", ... },
+              { "id": "ProductFeature__1", "typeName": "productFeature", ... }
+            ]
+          }
+        ]        
+      }      
     },
 …
 ```
