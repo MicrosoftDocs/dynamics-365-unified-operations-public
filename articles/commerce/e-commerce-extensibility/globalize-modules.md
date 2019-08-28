@@ -1,42 +1,49 @@
 ---
 # required metadata
 
-title: Module globalization with CultureInfoFormatter
-description: Globalizing an online site should not only include string localization but also number, date and currency formatting for the various languages and regions your web site serves.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Globalize modules using CultureInfoFormatter
+description: This topic describes how to globalize modules using CultureInfoFormatter.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Module globalization with CultureInfoFormatter
-Globalizing an online site should not only include string localization but also number, date and currency formatting for the various languages and regions your web site serves.
+# Globalize modules using CultureInfoFormatter
 
-## CultureInfoFormatter
-Dynamics 365 Commerce online SDK provides a **CultureInfoFormatter** class to serve common globalization requirements to format numbers, currency and date/time.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## Accessing CultureInfoFormatter in a module's view
+This topic describes how to globalize modules using CultureInfoFormatter.
+
+## Overview
+
+Globalizing an online site should not only include string localization but also number, date, and currency formatting for the various languages and regions your web site serves.
+
+The Dynamics 365 Commerce online SDK provides a **CultureInfoFormatter** class to help meet common globalization requirements to format numbers, currency, and date/time.
+
+## Access CultureInfoFormatter in a module's view file
 An instance of CultureInfoFormatter constructed with the locale derived from the `RenderingContext` is
-passed along in the props object to a modules's view file. To access this use the following syntax
+passed along in the props object to a modules's view file. To access this, use the following syntax.
 
 ```ts
 public render(): JSX.Element | null {
@@ -49,14 +56,13 @@ public render(): JSX.Element | null {
 }
 ```
 
-## Constructing an instance of CultureInfoFormatter
+## Construct an instance of CultureInfoFormatter
 
 The constructor of `CultureInfoFormatter` takes in one argument, lang-locale.
 
-The lang-locale argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. A default value of 'en-US' will be used if no language tag is specified. Language tags are **not** case-sensitive but the locale
-is generally capitalized by convention.
+The lang-locale argument must be a valid [BCP-47](https://tools.ietf.org/html/bcp47) language tag. A default value of 'en-US' will be used if no language tag is specified. Language tags are not case-sensitive but the locale is generally capitalized by convention.
 
-### Examples
+### Example
 
 ```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
@@ -71,17 +77,15 @@ intlFormatter = new CultureInfoFormatter('fr-FR');
 intlFormatter = new CultureInfoFormatter('en-GB');
 ```
 
-## Using CultureInfoFormatter
+## CultureInfoFormatter formatting functions
 
-`CultureInfoFormatter` provides the following functionality
-- Currency Formatting
-- Date Formatting
-- Time Formatting
-- Number Formatting
+`CultureInfoFormatter` provides the following formatting functions.
+- Currency formatting
+- Date formatting
+- Time formatting
+- Number formatting
 
-The following section will cover each of these in detail.
-
-## Currency Formatting
+### Currency Formatting
 
 To format currency in accordance with a certain locale use the `formatCurrency()` method.
 
@@ -98,7 +102,7 @@ formatCurrency(price: string | number, currencyCode?: string): string;
 The currency code argument is optional but if provided must be in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) format.
 If the currency code is not provided the formatter will use the locale to determine the best currency code to use.
 
-### Examples
+#### Examples
 
 ```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
@@ -120,7 +124,7 @@ cultureInfoFormatter.formatCurrency(34.12, 'inr');
 // expected output: ₹ 34.12
 ```
 
-## Date Formatting
+### Date formatting
 
 To format a date in accordance with a certain locale use `formatDate()`.
 
@@ -135,7 +139,7 @@ formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [IDateFormatOptions](#IDateFormatOptions).
 
-### Examples
+#### Date formatting examples
 
 ```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
@@ -164,7 +168,7 @@ cultureInfoFormatter.formatDate(testDate);
 // expected output:  "Donnerstag, 20. Dezember 2012"
 ```
 
-## Time Formatting
+### Time formatting
 
 To format a time in accordance with a certain locale use `formatTime()`.
 
@@ -179,7 +183,7 @@ formatTime(time: Date, options?: ITimeFormatOptions): string;
 ```
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [ITimeFormatOptions](#ITimeFormatOptions).
 
-### Examples
+#### Time formatting examples
 
 ```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
@@ -200,7 +204,7 @@ cultureInfoFormatter.formatTime(testDate, options);
 // expected output:  "13:34:23"
 ```
 
-## Number Formatting
+### Number formatting
 
 To format a number in accordance with a certain locale use `formatNumber()`.
 
@@ -215,7 +219,7 @@ formatNumber(value: number, options?: INumberFormatOptions): string;
 ```
 The options argument is an optional argument that allows one to control the localization and formatting. For more information on the properties available see [INumberFormatOptions](#INumberFormatOptions).
 
-### Examples
+#### Number formatting examples
 
 ```ts
 import {CultureInfoFormatter} from '@msdyn365-commerce/core';
@@ -244,13 +248,11 @@ cultureInfoFormatter.formatNumber(1234567.89);
 // expected output:  "١٬٢٣٤٬٥٦٧٫٨٩" 
 ```
 
-## Formatting Options
+## Formatting options
 
 The following section covers all the formatting options available to use as part of ITimeFormatOptions, IDateFormatOptions, INumberFormatOptions. 
 
- 
-
-## ITimeFormatOptions 
+### ITimeFormatOptions 
 
 ```ts
 interface ITimeFormatOptions {
@@ -266,7 +268,7 @@ interface ITimeFormatOptions {
 }
 ```
 
-### Property Details
+#### Property details
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
@@ -280,7 +282,7 @@ interface ITimeFormatOptions {
 | second | enum | 'numeric' or '2-digit' | Controls the representation of the second. '2-digit' forces seconds to be displayed with two digits. |  
 | timeZoneName | enum | 'short' or 'long' | Controls the representation of the time-zone name. 'short' is the three character abbreviation for the time-zone while 'long' is the full time-zone name | 
 
-## IDateFormatOptions
+### IDateFormatOptions
 
 ```ts
 interface IDateFormatOptions extends ITimeFormatOptions {
@@ -290,9 +292,10 @@ interface IDateFormatOptions extends ITimeFormatOptions {
     day?: 'numeric' | '2-digit';
 }
 ```
-_Note: All options provided in ITimeFormatOptions can be used in IDateFormatOptions. This is because time is a sub-component of date._
+[!NOTE] 
+All options provided in ITimeFormatOptions can be used in IDateFormatOptions. This is because time is a subcomponent of date.
 
-### Property Details
+#### Property details
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
@@ -301,9 +304,9 @@ _Note: All options provided in ITimeFormatOptions can be used in IDateFormatOpti
 | month | enum | 'numeric', '2-digit', 'narrow', 'short' or 'long' | Controls the representation of the month. 'numeric' is the numeric representation of the month (April -> 4), '2-digit' is the two digit numeric representation (April -> 04), 'narrow is the two character representation of the month (April -> AP), 'short' is the three character representation of the month (April -> Apr) and 'long' is the full month name (April -> April) |
 | day | enum | 'numeric' or '2-digit' | Controls the representation of the day. '2-digit' forces days to be displayed with two digits. | 
 
-The default value for each date-time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric".
+The default value for each date/time component property is undefined, but if all component properties are undefined, then year, month, and day are assumed to be "numeric."
 
-##  INumberFormatOptions 
+###  INumberFormatOptions 
 
 ```ts
 export interface INumberFormatOptions {
@@ -317,7 +320,7 @@ export interface INumberFormatOptions {
     maximumSignificantDigits?: number;
 }
 ```
-### Property Details
+#### Property details
 
 | Name | Type | Allowed Values | Description |
 | ----------- | ----------- |----------- | ----------- |
