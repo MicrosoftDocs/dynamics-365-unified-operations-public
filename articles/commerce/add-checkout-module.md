@@ -40,7 +40,7 @@ This topic describes how to add a checkout module to a page and set the required
 
 A checkout module is container that is used for hosting all the modules that are necessary to create an order. A checkout module can include modules that handle shipping address, shipping methods, billing information, order summary, and other infomation related to a customer order. It presents a step-by-step flow for the customer to enter all the relevant information needed to make a purchase.  
 
-A checkout module renders data based on the cart ID, which is derived from the page context. This means that a checkout module cannot be used on a page that does not have the cart context, like a marketing or home page. 
+A checkout module renders data based on the cart ID, which is saved as a browser cookie. This cart id required to render the information on checkout module - items in the order, total amount, discounts etc.
 
 ## Checkout module properties
 
