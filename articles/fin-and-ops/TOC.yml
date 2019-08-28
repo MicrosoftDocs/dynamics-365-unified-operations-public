@@ -4170,6 +4170,8 @@
           href: ../supply-chain/production-control/release-production-orders.md
         - name: Report production orders as finished
           href: ../supply-chain/production-control/report-production-orders-as-finished.md
+        - name: Report as finished to a license plate controlled location 
+          href: ../supply-chain/production-control/report-finished-job-device.md        
         - name: Reverse the production order status
           href: ../supply-chain/production-control/reverse-production-order-status.md
         - name: Visibility into material exceptions
