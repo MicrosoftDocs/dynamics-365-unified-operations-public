@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipment auto-updates
-description: This topic provides an overview of functionality providing auto-updates for shipments.
+description: This topic provides an overview of functionality that provides automatic updates for shipments.
 author: josaw1
 manager: AnnBe
 ms.date: 08/13/2019
@@ -35,175 +35,116 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-Auto-update shipment functionality automatically updates quantities--increases
-as well as decreases--on a load line associated with a shipment after it’s been
-released to a warehouse. This functionality is enabled for as long as the load line on the
-shipment or load has not been processed on a wave. The functionaltity
-will allow any order updates to automatically flow through to the warehouse
-without manual intervention for as long as warehouse work hasn’t been created.
+The auto-update shipment functionality automatically updates quantities (both increases and decreases) on a load line that is associated with a shipment, after it has been released to a warehouse. This functionality remains turned on until the load line on the shipment or load is processed on a wave. When it's used, order updates can automatically flow through to the warehouse, without requiring manual intervention, until warehouse work is created.
 
-Without the auto-update functionality, only quantity decreases will automatically flow, as
-long as warehouse work hasn’t been created. Users have to manually update or delete lines and then re-release
-lines if order quantities increase or new order lines are added. With the auto-update functionality, the business can
-seamlessly provide updates to the warehouse without having to worry about order
-line updates not being reflected on related shipments and loads. 
+When the auto-update shipment functionality isn't used, only quantity decreases automatically flow until warehouse work is created. Users must manually update or delete lines, and they must then re-release lines if order quantities are increased or new order lines are added. By using the auto-update shipment functionality, businesses can seamlessly provide updates to the warehouse without having to worry that related shipments and loads won't reflect order line updates.
 
-The auto-update shipment functionality applies to sales order lines and transfer order lines and is enabled for a specific warehouse. This allows a company to
-apply different auto update shipment policies across warehouses, when required.
-By default, the auto update shipment policy applied for all warehouses that use
-warehouse management process is for quantity decrease. With this policy
-setting, only quantity decreases automatically flow through to a shipment and
-load as long as warehouse work hasn’t been created. This is similar to
-legacy behavior without the functionality.
+The auto-update shipment functionality applies to both sales order lines and transfer order lines, and it's turned on for a specific warehouse. Therefore, companies can apply different auto-update shipment policies across warehouses, as they require. By default, the auto-update shipment policy for quantity decreases is applied for all warehouses that use warehouse management processes. When this default policy setting is used, only quantity decreases automatically flow through to a shipment and load until warehouse work is created. This behavior resembles the behavior that was used before the auto-update shipment functionality was introduced.
 
-## Key elements in functionality
+## Main elements of the functionality
 
-The auto-update shipment functionality relies foremost on the shipment status
-to determine whether a change to the quantity on a load line should occur when a
-change is made on a sales and transfer order line. It also relies foremost on shipment status to determine when to add a new load
-line automatically to an existing load. When the shipment status is waved or
-higher, no automatic update takes places.
+The auto-update shipment functionality relies primarily on the shipment status to determine whether the quantity on a load line should be changed when a change is made on a sales order line or transfer order line. It also relies primarily on the shipment status to determine when a new load line should automatically be added to an existing load. When the shipment status is **Waved** or higher, no automatic update occurs.
 
-Wave status is also considered for auto-updates. When the wave
-related to the load line has a status of held, executing, released, picked, or shipped, and the user attempts to reduce the quantity on a load line (via a
-quantity decrease on the sales or transfer order line), the user will receive
-the following error message: “Reservations cannot be removed because there is work created which
-relies on the reservations.” Similarly, if attempting to increase
-the load line quantity with the above wave statuses indirectly by decreasing quantity on the
-sales or transfer order line, the load line will not automatically be increased. In this scenario, the load line must be updated manually.
+Wave status is also considered for automatic updates. When the wave that is related to the load line has a status of **Held**, **Executing**, **Released**, **Picked**, or **Shipped**, if a user tries to reduce the quantity on a load line (via a quantity decrease on the sales order line or transfer order line), the following error message is shown: "Reservations cannot be removed because there is work created which relies on the reservations." Additionally, when the wave has one of the previously mentioned wave statuses, if a user tries to indirectly increase the load line quantity by decreasing the quantity on the sales order line or transfer order line, the quantity on the load line isn't automatically increased. In this case, the load line must be manually updated.
 
 ## Scenarios
-The following four scenarios are supported by auto-update shipment functionality: add a new order line,
-increase the line quantity, decrease the order line quantity, and remove an order line.
 
-- **Add a new order line:** When the **Auto update shipment** parameter, located on the **Warehouse** FastTab on the **Warehouse management > Setup > Warehouse > Warehouses** page, is set to
-**Always**, a shipment exists for the order, and a new order line is added to
-a sales or transfer order while a load has already been created for the sales
-order, the existing load will not be updated. A new load line with no
-reference to the existing load will be created and associated with the existing
-shipment. The new line will be added to the load and released. 
+The auto-update shipment functionality supports four scenarios: adding a new order line, increasing the quantity on an order line, decreasing the quantity on an order line, and removing an order line.
 
-- **Increase order line quantity:** When the parameter **Auto update shipment**
-is set to **Always**, a shipment exists for the order, and the quantity on an
-existing sales or transfer order line is increased while a load has already
-been created for the sales order, the load line will be increased by the same
-quantity as the order line. If the load was released but no
-work was created, the load line will be increased by the same quantity as the order
-line.
-
-- **Decrease order line quantity:** When the parameter **Auto update shipment**
-is set to **Always** or **On quantity decrease**, a shipment exists for the order,
-and the quantity on an existing sales or transfer order line is decreased
-while a load has already been created for the sales order, the
-associated load line quantity will be updated to match, unless the load line is
-already equal to or lower than the new order line quantity. In that case, the
-load line will not be affected. If the load has been released but no
-work was created, the associated load line quantity will be updated to
-match, unless the load line is already equal to or lower than the new order line
-quantity. In that case, the load line will not be affected.
-
-- **Remove order line:** When the parameter **Auto update shipment** is set to
-**Always** or **On quantity decrease**, and the user attempts to remove an order
-line for which a load line exists, then an error message is shown.
+- **Add a new order line** – When the **Auto update shipment** field on the **Warehouse** FastTab of the **Warehouses** page (**Warehouse management \> Setup \> Warehouse \> Warehouses**) is set to **Always**, if a shipment exists for the order, and a new order line is added to a sales order or transfer order after a load has already been created for the sales order, the existing load isn't updated. A new load line that has no reference to the existing load is created and associated with the existing shipment. The new line is added to the load and released.
+- **Increase the quantity on an order line** – When the **Auto update shipment** field is set to **Always**, if a shipment exists for the order, and the quantity on an existing sales order line or transfer order line is increased after a load has already been created for the sales order, the load line is increased by the same quantity as the order line. If the load was released, but no work was created, the load line is increased by the same quantity as the order line.
+- **Decrease the quantity on an order line** – When the **Auto update shipment** field is set to **Always** or **On quantity decrease**, if a shipment exists for the order, and the quantity on an existing sales order line or transfer order line is decreased after a load has already been created for the sales order, the quantity on the associated load line is updated to match, unless the quantity on that load line already equals or is less than the new quantity on the order line. In that case, the load line isn't affected. If the load was released, but no work was created, the quantity on the associated load line is updated to match, unless the quantity on the load line already equals or is less than the new quantity on the order line. In that case, the load line is affected.
+- **Remove an order line** – When the **Auto update shipment** field is set to **Always** or **On quantity decrease**, if the user tries to remove an order line that a load line exists for, an error message is shown.
 
 ## Demo
 
-For this demo, you need to have demo data installed, and use demo data company USMF.
+For this demo, you must have demo data installed, and you must use the **USMF** demo data company.
 
-### Enable shipment auto-updates
+### Turn on the auto-update shipment functionality
 
-To enable shipment auto-updates, do the following.
+To turn on the auto-update shipment functionality, follow these steps.
 
-1. Go to **Warehouse management > Setup > Warehouse > Warehouses**. 
-1. Select "Warehouse 24". 
-1. Expand the **Warehouse** FastTab. Change the **Auto update shipment** parameter from **On quantity decrease** to **Always**.
+1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
+2. Select warehouse **24**.
+3. On the **Warehouse** FastTab, in the **Auto update shipment** field, change the value from **On quantity decrease** to **Always**.
 
-Once you change the policy to "always", any
-increase or decrease to the sales and transfer order line quantities
-(including adding new lines) will be reflected on shipments and loads for the
-specific warehouse given the before mentioned update constraints.
+After you change the value to **Always**, any increases or decreases in the quantities on sales order lines and transfer order lines, and any additions of new lines, are reflected on shipments and loads for the selected warehouse, given the previously mentioned update constraints.
 
-### Change wave template to not automatically process
+### Change the wave template so that it doesn't automatically process
 
-To configure the wave template so it doesn't automatically process, do the following.
+To configure the wave template so that it doesn't automatically process, follow these steps.
 
-1. Go to **Warehouse management > Setup > Waves > Wave templates**. 
-1. Select the wave template "24 Shipping default". 
-1. Click **Edit**.
-1. In the **General** FastTab, set the **Automate wave creation** parameter to **Yes** and make sure all other parameters are set to **No**. 
+1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
+2. Select wave template **24 Shipping default**.
+3. Select **Edit**.
+4. On the **General** FastTab, set the **Automate wave creation** option to **Yes**, and make sure that all other options are set to **No**.
 
-It's important that there's no work that's automatically created and released as part of the wave creation process. Once work is created relative to the load line created for the sales order line, the load line will no
-longer be updated automatically from a sales order line quantity change.
+It's important that no work be automatically created and released as part of the wave creation process. After work is created that is related to the load line that was created for the sales order line, the load line is no longer automatically updated if the quantity on the sales order line is changed.
 
 ### Create a sales order
 
-To create a sales order, do the following.
+To create a sales order, follow these steps.
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**. 
-1. Select customer "US-003". 
-1. Create a line for item number "A0001".
-1. Enter a quantity of "10". (Make sure you are using warehouse "24".)
-1. Click **Save**.
-1. Click **Warehouse**, and under **Actions**, click **Release to warehouse**. A shipment and a wave will be created.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+2. Select customer **US-003**.
+3. Create a line for item number **A0001**.
+4. Enter a quantity of **10**. (Make sure that you're using warehouse **24**.)
+5. Select **Save**.
+6. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**. A shipment and a wave are created.
 
-Because the wave template was modified in the steps above, no load or work will be created. The shipment status will be "open", and the wave status will be "created".
+Because you changed the wave template in the previous procedure, no load or work is created. The shipment status is **Open**, and the wave status is **Created**.
 
-### Decrease quantity on a sales order line
+### Decrease the quantity on a sales order line
 
-To decrease the quantity on a sales order line, do the following.
+To decrease the quantity on a sales order line, follow these steps.
 
-1. Go to **Sales and marketing > Sales orders > All sales orders**. 
-1. Select the sales order that you just released to the warehouse. 
-1. Select the sales order line. In the **Quantity** field, change the value from "10" to "8". 
-1. From the sales order line, go to **Warehouse > Shipment details**. 
-1. On the **Shipment details** page, on the **Load lines** FastTab, the quantity reflects the change on the sales order line.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+2. Select the sales order that you just released to the warehouse.
+3. Select the sales order line. In the **Quantity** field, change the value from **10** to **8**.
+4. From the sales order line, select **Warehouse \> Shipment details**. On the **Shipment details** page, on the **Load lines** FastTab, the quantity reflects the change on the sales order line.
 
+### Increase the quantity on a sales order line
 
+To increase the quantity on a sales order line, follow these steps.
 
-### Increase quantity on a sales order line
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+2. Select the sales order that you previously released to the warehouse.
+3. Change the line quantity from **8** to **12**.
+4. Select **Save**.
+5. Go back to the **All sales orders** page, and select the sales order again.
+5. On the Action Pane, on the **Warehouse** tab, in the **Related information** group, select **Shipment details**. On the **Shipment details** page, on the **Load lines** FastTab, the quantity reflects the change on the sales order line.
 
-To increase the quantity on a sales order line, do the following.
-
-1. Go to **Sales and marketing > Sales orders > All sales orders**.
-1. Select the sales order that you just released to the warehouse.
-1. Change the line quantity from "8" to "12". 
-1. Click **Save**.
-1. Go back to **Sales and marketing > Sales orders > All sales orders** and select the sales order. Click **Warehouse** and under **Related information** click **Shipment details**. 
-1. On the **Shipment details** page, the quantity on the **Load lines** FastTab reflects the change on the sales order line.
-
-Even though the load line quantity is increased from "8" to "12", only 8 items will remain reserved unless automatic reservation is enabled. If the wave is processed at this point, work will only be created for the reserved quantity.
+Although the quantity on the load line was increased from 8 to 12, only eight items remain reserved, unless automatic reservation is turned on. If the wave is processed at this point, work is created only for the reserved quantity.
 
 > [!NOTE]
-> When an order line is decreased, the load line quantity will not be affected if the load line quantity is already equal to or lower than the new order line quantity. When an order line is increased, the load line will be increased by the same
-quantity as the order line. If there is a discrepancy between the order line quantity and the load line quantity, the discrepancy will remain. Even though the load line quantity is increased from 8 to 12 in the example above, only 8 remain reserved unless you enable automatic reservation. As the added quantity to the existing shipment has not been reserved, subsequently processing the wave without reservation will only create work for the already reserved quantity.
+> When the quantity on an order line is decreased, the quantity on the load line isn't affected if it already equals or is less than the new quantity on the order line. When the quantity on an order line is increased, the load line is increased by the same quantity as the order line. If the quantity on the order line differs from the quantity on the load line, the difference remains.
+> 
+> In the previous example, although the quantity on the load line was increased from 8 to 12, only eight items remain reserved, unless automatic reservation is turned on. Because the quantity that was added to the existing shipment hasn't been reserved, if the wave is processed at this point, without reservation, work is created only for the quantity that has already been reserved.
 
 ### Add a sales order line
 
-To add a sales order line, do the following.
+To add a sales order line, follow these steps.
 
-1. Go to **Sales and marketing > Sales orders > All sales orders".
-1. Select the sales order that you just released to the warehouse. 
-1. Create a line for item number "A0002".
-1. In the **Quantity** field, enter "10". (Make sure you are using warehouse "24".) The new line will automatically be added to the existing shipment. 
-1. Click **Save**.
-1. Go back to **Sales and marketing > Sales orders > All sales orders** and select the sales order. Click **Warehouse** and under **Related information** click **Shipment details**. 
-1. On the **Shipment details** page, on the **Load lines** FastTab, take note of the second load line.
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+2. Select the sales order that you previously released to the warehouse.
+3. Create a line for item number **A0002**.
+4. In the **Quantity** field, enter **10**. (Make sure that you're using warehouse **24**.) The new line is automatically added to the existing shipment.
+5. Select **Save**.
+6. Go back to the **All sales orders** page, and select the sales order again.
+7. On the Action Pane, on the **Warehouse** tab, in the **Related information** group, select **Shipment details**. On the **Shipment details** page, on the **Load lines** FastTab, notice the second load line.
 
-Because the new sales order line added to the existing shipment wasn't reserved, processing the wave at this point will create work only for the quantity for the first sales order line/first load line.
+Because the sales order line that you just added to the existing shipment hasn't been reserved, if the wave is processed at this point, work is created only for the quantity on the first sales order line and the first load line.
 
 ### Process a wave
 
-To process the wave, do the following.
+To process the wave, follow these steps.
 
-1. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**. 
-1. Select the wave that you previously created.
-1. Click **Wave** and then under **Wave**, click **Process*. 
+1. Go to **Warehouse management \> Outbound waves \> Shipment waves \> All waves**.
+2. Select the wave that you previously created.
+3. On the Action Pane, on the **Wave** tab, in the **Wave** group, select **Process**.
 
-The wave will process and create work for the reserved quantities for the
-load lines. The shipment status will transition from "open" to "waved". As the shipment status is updated to "waved", any changes such as line quantity decrease, increase, or new line added to the sales order won't impact the existing load lines associated with the waved shipment.
+The wave is processed and creates work for the reserved quantities on the load lines. The shipment status is updated from **Open** to **Waved**. As the shipment status is updated to **Waved**, any changes that occur, such as decreases or increases in line quantities, or the addition of new lines to the sales order, don't affect the existing load lines that are associated with the waved shipment.
 
-Sales order line quantity updates won't be reflected on or validated against a load line associated with a shipment with the status of "waved" or higher. Changes to the load line quantity must be done directly on the load line. 
+If a shipment has a status of **Waved** or higher, updates to the quantity on a sales order line aren't reflected on or validated against a load line that is associated with the shipment. Changes to the quantity on a load line must be made directly on the load line.
 
-Validation is performed when work has been created for the load
-line and a reservation has been made. A decrease in the sales order line quantity is then  validated against the work line reservation.
-
+Validation is done after work has been created for the load line and a reservation has been made. A decrease in the quantity on the sales order line is then validated against the work line reservation.
