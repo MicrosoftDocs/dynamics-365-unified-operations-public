@@ -36,13 +36,13 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic provides an overview of the Dynamics 365 Commerce online SDK APIs to set and get Cookie data.
 
 ## Cookie consent
-Before cookies can be stored the end user must provide consent.  The SDK provides a consent UI prompt to ensure the user approves the writing of cookies.
+Before cookies can be stored the end user must provide consent.  The SDK provides utilites to ensure read/write operation of cookie based on the user approves the writing of cookies.
 
 ##  Cookie APIs
 The SDK provides the following set of APIs to access Cookies from within the `props.context.request` API
 
 ```
-get<T>(cookieName: string): ICookieValue<T>;
+    get<T>(cookieName: string, isEssential?: boolean): ICookieValue<T>;
     set<T>(cookieName: string, cookieValue: T, options?: ICookieSetOptions): void;
     remove(cookieName: string): void;
     isConsentGiven(): boolean;
@@ -51,11 +51,11 @@ get<T>(cookieName: string): ICookieValue<T>;
 ```
 
 ## Getting user consent
-The **setConsentCookie()** API is used to acquire user consent before cookies can be written. When the API is called the user will be prompted for the user to approve.  The **isConsetGiven()** api can be used to determine if consent has been given.
+The **setConsentCookie()** API is used to acquire user consent before cookies can be written. The **isConsetGiven()** api can be used to determine if consent has been given.
 
 ## Setting a cookie
 The following is an example usage to set a cookie:
-`this.props.context.request.cookies.set<string>('favoriteColor') = 'blue';`
+`this.props.context.request.cookies.set<string>('favoriteColor', 'blue');`. If consent is not provided before calling this api, sdk maintian a queue of all set opertion and set all these cookie onces user provides consent
 
 ## Getting a cookie
 The following is an example usage to get the value of a cookie
