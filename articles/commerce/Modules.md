@@ -100,6 +100,8 @@ To configure a container module that is in your page:
 
 3. In either the Outline View or the Canvas, click the ellipse button (“…”) next to the container’s name or next to any slots within the container. The action menu will display and you can follow the same steps enumerated in the “Add a Module” section above to populate your selected container with child modules.
 
+4. If multiple modules reside as siblings within container, re-ordering their display order within the parent container can be done by clicking the up and down arrow buttons within the module's action menu ("...")
+
 
 
 
