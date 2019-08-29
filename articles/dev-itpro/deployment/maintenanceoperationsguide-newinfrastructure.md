@@ -38,7 +38,7 @@ This topic explains how to perform maintenance operations for a Microsoft Dynami
 
 ## Restart services
 
-You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AX (AOS service)**, **DIXF (Data import export framework service)**, and **MR (Management Reporter service)**.
+You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AOS service**, **DIXF (Data import export framework service)**, and **MR (Management Reporter service)**.
 
 To restart a service, follow these steps.
 
