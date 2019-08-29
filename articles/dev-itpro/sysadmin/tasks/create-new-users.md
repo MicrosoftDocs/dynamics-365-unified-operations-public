@@ -30,8 +30,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. System administrators can complete this procedure to add users to the system. The demo data company used to create this procedure is USMF. 
+Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs.
 
+## Associate a user with a license (new license types only)
+For customers on one of the new Finance and Operations license types added in October 2019, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
+System administrators can [assign licenses to users](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) in the [Microsoft 365 Admin Center](https://docs.microsoft.com/en-us/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## Add a new user
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.
