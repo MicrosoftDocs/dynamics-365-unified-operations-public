@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Event based data actions
-description: In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event. 
+title: Use event-based data actions
+description: This topic describes how to use event-based data actions. 
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,19 +28,22 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 
 ---
-# Event based data actions
+# Use event-based data actions
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how use event based Data Actions.
+This topic describes how to use event-based data actions.
 
 ## Overview
 
-In some scenarios you don't need a Data Action to run on the inital load of a page, but instead you want them to run dynamically in response to some event on the client. This could be adding a product to a customers cart in response to a button click, displaying search results in response to a text input changing, or updating banner text because of a time-based event.
+In some scenarios you don't need a data action to run on the initial load of a page, but instead want it to run dynamically in response to some event on the client. Examples of such scenarios include adding a product to a customers cart in response to a button click, displaying search results in response to a text input change, or updating banner text because of a time-based event.
 
 ## Example
-In this example, we will use a very basic module that will load product information in response to a user clicking a button. To start, lets show an example react component which contains a button for a user to click:
+
+In the following example, a very basic module loads product information in response to a user clicking a button. 
+
+First we show a react component that contains a button for a user to click.
 
 ```tsx
 // product-button.tsx
@@ -67,13 +70,13 @@ class ProductButton extends React.Component {
 export default ProductButton;
 ```
 
-Currently this component will just log a message to the console when the button is clicked, to replace that with our data action, we need to do three things:
+Currently this component will just log a message to the console when the button is clicked. To replace that with the data action, we need to do three things:
 
-1. Import the data action and it's Input Class
-2. Create an input for the data action
-3. Invoke the data action
+- Import the data action and its input class
+- Create an input for the data action
+- Invoke the data action
 
-Here is an updated React component which will now make a call for a product when the button is clicked:
+The following code shows an updated react component that will now make a call for a product when the button is clicked.
 
 ```tsx
 // product-button.tsx
@@ -111,4 +114,4 @@ class ProductButton extends React.Component {
 export default ProductButton;
 ```
 
-Note: This example uses a hardcoded `productId`, but could be updated to read the `productId` from a text input or from the modules configuration properties.
+[!NOTE] This example uses a hardcoded `productId`, but could be updated to read the `productId` from a text input or from the module's configuration properties.
