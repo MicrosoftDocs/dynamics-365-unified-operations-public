@@ -5,7 +5,7 @@ title: Forecasts, work orders, and projects
 description: This topic explains forecasts and work order integration with the Project management and accounting module in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/27/2019
+ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,17 +36,20 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/preview-banner.md)]
 
-In Asset Management, integration to the **Project management and accounting** module is done to optimize cost control, allowing users to track costs on maintenance job type forecasts and work order jobs.
+In Asset Management, integration with the **Project management and accounting** module helps optimize cost control, so that users can track costs on maintenance job type forecasts and work order jobs.
 
-To track maintenance job type forecasts, two settings must be made:
+Tracking of maintenance job type forecasts requires two settings:
 
-1. Select a project in **Asset management** > **Setup** > **Asset management parameters** > **Assets** link > **Project** FastTab > **Maintenance forecast project** field.
+1. Select a project in **Asset management** > **Setup** > **Asset management parameters**, and then, on the **Assets** tab > on the **Project** FastTab, in the **Maintenance forecast project** field, select a project.
 
-2. In **Maintenance job type defaults**, when you create a mainteance job type default line, an activity number is automatically created for the line (**Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**).
+2. When you create a maintenance job type default line, an activity number is automatically created for the line on the **Maintenance job type defaults** page (**Asset management** > **Setup** > **Jobs** > **Maintenance job type defaults**).
 
-Maintenance job type forecasts serve two purposes: You are able to track costs on maintenance job type forecasts in the **Project management and accounting** module. Furthermore, forecasts are automatically transferred to a work order job project when you select a maintenance job type on a work order job.
+Maintenance job type forecasts serve two purposes: 
 
-To track costs on work order jobs, you must first set up work order projects. Refer to the [Work order project setup](../setup-for-work-orders/work-order-project-setup.md) section for a description of the procedure.
+- You can track costs on maintenance job type forecasts in the **Project management and accounting** module. 
+- Forecasts are automatically transferred to a work order job project when you select a maintenance job type on a work order job.
+
+To track costs on work order jobs, you must first set up work order projects. For more information, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md).
 
 ## Work order job projects
 
