@@ -2,39 +2,42 @@
 # required metadata
 
 title: Theme settings
-description: The Microsoft Dynamics 365 for Commerce e-Commerce Extensibility software development kit (SDK) lets theme designers specify various layouts for each module. In this way, they can control specific layout options for images.
-author: SamJarawan
-manager: Annbe
-ms.date: 08/30/2019
+description: The Dynamics 365 Commerce e-Commerce extensibility software development kit (SDK) enables theme designers specify various layouts for each module. In this way, they can control specific layout options for images.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
-
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
+
 # Theme settings
 
-The Microsoft Dynamics 365 for Commerce e-Commerce Extensibility software development kit (SDK) lets theme designers specify various layouts for each module. In this way, theme designers can control specific layout options for images. These layouts are specified in the theme.settings.json file in /src/settings/src/settings.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+The Dynamics 365 Commerce e-Commerce extensibility software development kit (SDK) enables theme designers to specify various layouts for each module. Theme designers can then control specific layout options for images. These layouts are specified in the theme.settings.json file in /src/settings/src/settings.
 
 ## Sample theme.settings.json file
 
-The following example shows how module layouts can be added that have specific size values for image settings. Each layout will be exposed in the authoring tools when the module is configured. In this example, the **productFeature** module is configured so that it has two layouts: **layout1** and **layout2**. The **layout1** layout specifies height and width image settings for the **sm** and **lg** viewport sizes.
+The following example shows how module layouts with specific size values for image settings can be added to the the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. In this example, the **productFeature** module is configured so that it has two layouts: **layout1** and **layout2**. The **layout1** layout specifies height and width image settings for the **sm** and **lg** viewport sizes.
 
 ``` json
 {
@@ -80,4 +83,4 @@ The following example shows how module layouts can be added that have specific s
     }
 ```
 
-Default grid breakpoint settings can also be set in the theme.settings.json file. (See **gridSettings** in the preceding example.)
+Default grid breakpoint settings can also be set in the theme.settings.json file (see gridSettings in the preceding example).
