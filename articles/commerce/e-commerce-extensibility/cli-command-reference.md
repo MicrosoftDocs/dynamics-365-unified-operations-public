@@ -37,12 +37,12 @@ This topic covers the command line interface ([CLI](https://en.wikipedia.org/wik
 
 ## Overview
 
-All these commands must be run with Yarn. They will have the following structure:
+All of the following commands must be run with Yarn and will have the following structure:
 
 ```bash
 yarn msdyn365 {command} {command-arguments}
 ```
-For more information on each command, refer to the entries in this topic or use the command `yarn  --help` or `yarn msdyn365 {command} --help`.
+For information on each command, refer to the entries in this topic or use the command `yarn  --help` or `yarn msdyn365 {command} --help`.
 
 ## add-data-action
 
@@ -82,7 +82,7 @@ Usage:
 ``` bash
 yarn d365 clone <starter-kit-module-name> <new-module-name>
 ```
-This will create a renamed copy of a Starter Kit module and add the source code to the local root/src/modules folder.
+This will create a renamed copy of a starter kit module and add the source code to the local root/src/modules folder.
 
 Example:
 
