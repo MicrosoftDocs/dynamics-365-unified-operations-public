@@ -185,7 +185,7 @@ data
 ## Class VSItemNode
     class VSItemNode extends TreeNode
 
-The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
+The VSItemNode class is a base class for Microsoft Visual Studio project nodes in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -327,7 +327,7 @@ fileName
 ## Class VSProjectFileNode
     class VSProjectFileNode extends VSItemNode
 
-The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
+The VSProjectFileNode class represents files in the Microsoft Visual Studio project nodes in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -455,7 +455,7 @@ This method is overridden by nodes that have source code.
 ## Class VSProjectFolderNode
     class VSProjectFolderNode extends TreeNode
 
-The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
+The VSProjectFolderNode class represents folders in the Microsoft Visual Studio project nodes in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -773,7 +773,7 @@ aotPath
 ## Class VSProjectNode
     class VSProjectNode extends xResourceNode
 
-The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
+The VSProjectNode class represents projects in the Microsoft Visual Studio project nodes in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -940,7 +940,7 @@ The deployTo property value.
 ## Class VSProjectsNode
     class VSProjectsNode extends xResourceNode
 
-The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Finance and Operations Application Object Tree (AOT).
+The VSProjectNode class is the root of the Microsoft Visual Studio project nodes in the Application Object Tree (AOT).
 
 ### Remarks
 

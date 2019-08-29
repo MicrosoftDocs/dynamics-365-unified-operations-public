@@ -78,7 +78,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int updatePermissions(\[int value\])              |                                                                                                             |
 | public int viewUserLicense(\[int value\])                | Microsoft internal use only.                                                                                |
 | ::public static void runCalled(str name, \[xArgs args\]) |                                                                                                             |
-| public void AOTrun(\[xArgs args\])                       | Compiles this node and its sub-tree in the Finance and Operations Application Object Tree (AOT).             |
+| public void AOTrun(\[xArgs args\])                       | Compiles this node and its sub-tree in the Application Object Tree (AOT).             |
 | ::public static void runClient(str name, \[xArgs args\]) |                                                                                                             |
 | public void run(\[xArgs args\])                          |                                                                                                             |
 | public void new(str name)                                | Initializes a new instance of the TreeNode class.                                                           |
@@ -378,7 +378,7 @@ args
 
 ### Method AOTrun
 
-Compiles this node and its sub-tree in the Finance and Operations Application Object Tree (AOT).
+Compiles this node and its sub-tree in the Application Object Tree (AOT).
 
     public void AOTrun([xArgs args])
 

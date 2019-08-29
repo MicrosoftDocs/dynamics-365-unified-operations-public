@@ -2761,7 +2761,7 @@ The iterator points to the next element after the delete method is invoked.
 ## Class MemberFunction
     class MemberFunction extends TreeNode
 
-The MemberFunction class provides information about a specified node in the Finance and Operations Application Object Tree (AOT), such as a form, report, or class.
+The MemberFunction class provides information about a specified node in the Application Object Tree (AOT), such as a form, report, or class.
 
 ### Remarks
 
@@ -2912,11 +2912,11 @@ A Boolean value: true for a static method or false for an instance method; optio
 ## Class Menu
     class Menu extends TreeNode
 
-The Menu system class lets you configure and run any of the Finance and OperationsMenu objects from code.
+The Menu system class lets you configure and run any of the menu objects from code.
 
 ### Remarks
 
-The TreeNode system class serves as a more general approach to the menus in the Finance and Operations Application Object Tree (AOT). You use the Menu class to create or manipulate the menus contents, such as submenus and menu items. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called.
+The TreeNode system class serves as a more general approach to the menus in the Application Object Tree (AOT). You use the Menu class to create or manipulate the menus contents, such as submenus and menu items. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called.
 
 ### Examples
 

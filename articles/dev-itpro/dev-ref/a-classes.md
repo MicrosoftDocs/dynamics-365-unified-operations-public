@@ -244,7 +244,7 @@ Control of the input to the new method could be a security risk. Therefore, this
 ## Class AOSSessionInfo
     class AOSSessionInfo extends Object
 
-The AOSSessionInfo class is used to provide information about a session for Finance and Operations Application Object Server (AOS).
+The AOSSessionInfo class is used to provide information about a session for the Application Object Server (AOS).
 
 ### Remarks
 

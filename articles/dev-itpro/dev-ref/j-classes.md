@@ -63,7 +63,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                               |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code of this node.                                                                                                            |
-| public void AOTrun()                                       | Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).                                                |
+| public void AOTrun()                                       | Compiles this node and its subtree in the Application Object Tree (AOT).                                                |
 | public void AOTedit(\[int Line\], \[int Column\])          | Opens the appropriate editor for this node.                                                                                                   |
 
 ### Method AOTgetSource
@@ -216,7 +216,7 @@ This method is overridden by nodes that have source code.
 
 ### Method AOTrun
 
-Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).
+Compiles this node and its subtree in the Application Object Tree (AOT).
 
     public void AOTrun()
 

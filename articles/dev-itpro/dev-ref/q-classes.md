@@ -1208,7 +1208,7 @@ The source to base the query object on; optional.
 
 #### Remarks
 
-If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Finance and Operations Application Object Tree (AOT) for subsequent use.
+If no arguments are supplied when this method is called, a temporary query is created that is not stored in the Application Object Tree (AOT) for subsequent use.
 
 ### Method checkFieldAccess
 
@@ -3464,7 +3464,7 @@ QueryRun objects are used to traverse tables in the database and fetch records t
 
 ### Examples
 
-In the following example, it is assumed that there is a query named Customer in the Finance and Operations Application Object Tree (AOT), and that it has one data source, the CustTable table.
+In the following example, it is assumed that there is a query named Customer in the Application Object Tree (AOT), and that it has one data source, the CustTable table.
 
     static void example() 
     { 

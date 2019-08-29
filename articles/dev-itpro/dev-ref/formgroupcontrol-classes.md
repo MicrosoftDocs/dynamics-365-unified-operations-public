@@ -1055,7 +1055,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -4347,7 +4347,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -6823,7 +6823,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -9137,7 +9137,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 

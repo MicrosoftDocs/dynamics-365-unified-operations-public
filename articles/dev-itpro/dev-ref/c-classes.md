@@ -41,7 +41,7 @@ Class ClassNode
 
     class ClassNode extends TreeNode
 
-The ClassNode class is a specialization of the TreeNode class that represents a class in the Finance and Operations Application Object Tree (AOT).
+The ClassNode class is a specialization of the TreeNode class that represents a class in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -985,7 +985,7 @@ You must call the assert method in the derived class for a protected API before 
 -   A server static method
 -   A class instance method that is set to run on the server by using the RunOn class property
 
-Finance and Operations does not support multiple, successive calls to the assert method in the same calling code. Either call the CodeAccessPermission::revertAssert method between each call to the assert method, or call the CodeAccessPermission::assertMultiple method. If you make multiple, successive calls to the assertmethod, the Infolog displays an error when you execute the code.
+Multiple, successive calls to the assert method in the same calling code are not supported. Either call the CodeAccessPermission::revertAssert method between each call to the assert method, or call the CodeAccessPermission::assertMultiple method. If you make multiple, successive calls to the assertmethod, the Infolog displays an error when you execute the code.
 
 #### Examples
 
@@ -1123,7 +1123,7 @@ If the arguments to omit from the COM object appear at the end of the argument l
 -   real
 -   str
 
-If a COM object returns a date, and if the extended syntax is used, the return value of the COM method should be assigned to a COMVariant class variable. The actual date and time (format) can then be extracted from the COMVariant class by using the date and time properties. If the date return value is assigned to a date variable instead of a COMVariant class, the time component of the date is lost. When the extended syntax is used, you can still call the COM class methods (the methods that appear in the Lookup list) on the objects. The COM class methods have a higher priority than the methods on the actual COM object. If a method on the COM object has the same name as a method on the COM class (for example, attach), you cannot call that method on the COM object. To enable Finance and Operations to call the method on the COM object instead of the method that has the same name on the COM class, prefix the duplicate method name with an underscore (for example, com.\_detach();). The extended syntax for the COM class is evaluated at run time, not compile time, which causes a slight decrease in performance. If high-performance code is required, consider using the COMDispFunction class. This class offers performance improvements over the extended syntax for the COM class.
+If a COM object returns a date, and if the extended syntax is used, the return value of the COM method should be assigned to a COMVariant class variable. The actual date and time (format) can then be extracted from the COMVariant class by using the date and time properties. If the date return value is assigned to a date variable instead of a COMVariant class, the time component of the date is lost. When the extended syntax is used, you can still call the COM class methods (the methods that appear in the Lookup list) on the objects. The COM class methods have a higher priority than the methods on the actual COM object. If a method on the COM object has the same name as a method on the COM class (for example, attach), you cannot call that method on the COM object. To be able to call the method on the COM object instead of the method that has the same name on the COM class, prefix the duplicate method name with an underscore (for example, com.\_detach();). The extended syntax for the COM class is evaluated at run time, not compile time, which causes a slight decrease in performance. If high-performance code is required, consider using the COMDispFunction class. This class offers performance improvements over the extended syntax for the COM class.
 
 ### Examples
 
@@ -2563,11 +2563,11 @@ The possible values for the newType parameter are a subset of the values that ar
 -   VT\_INT
 -   VT\_UINT
 
-If you pass in a value that has a different data type than the object, the data type of the object will be changed to match the data type of the value. When a container is stored in a COMVariant object, the binary representation of the container is stored in a binary array (see the COMVariant.safeArray method). The container property is useful when you need to store data in a database COM object and then later read the data back into Finance and Operations without the COM object processing the data. The container property is an advanced property of the COMVariant class. It should be used with caution because the content of the binary array that the container is stored in, inside the COMVariant object, must not be changed by any COM object.
+If you pass in a value that has a different data type than the object, the data type of the object will be changed to match the data type of the value. When a container is stored in a COMVariant object, the binary representation of the container is stored in a binary array (see the COMVariant.safeArray method). The container property is useful when you need to store data in a database COM object and then later read the data back into a Finance and Operations application without the COM object processing the data. The container property is an advanced property of the COMVariant class. It should be used with caution because the content of the binary array that the container is stored in, inside the COMVariant object, must not be changed by any COM object.
 
 #### Examples
 
-The following example creates a new COMVariant object of type container. The data in the container is passed to, and used by, a database COM object. Note The code in the following section contains a hypothetical COM object MyDatabaseCOM.Object" and will therefore not run in Finance and Operations, unless such an object is created outside Finance and Operations.
+The following example creates a new COMVariant object of type container. The data in the container is passed to, and used by, a database COM object. Note The code in the following section contains a hypothetical COM object MyDatabaseCOM.Object" and will therefore not run, unless such an object is created outside a Finance and Operations application.
 
     { 
         COM com; 
@@ -3248,7 +3248,7 @@ The variant property is used to nest one COMVariant object in another COMVariant
 
 #### Examples
 
-The following example creates a COMVariant object of type VT\_I4 (long), and a COMVariant object of type VT\_VARIANT. The object of type VT\_VARIANT is assigned the value of the object of type VT\_I4. The code below contains a hypothetical COM object ("MyCOM.Object"), and will therefore not run in Finance and Operations, unless such an object is created outside Finance and Operations.
+The following example creates a COMVariant object of type VT\_I4 (long), and a COMVariant object of type VT\_VARIANT. The object of type VT\_VARIANT is assigned the value of the object of type VT\_I4. The code below contains a hypothetical COM object ("MyCOM.Object"), and will therefore not run, unless such an object is created outside a Finance and Operations application.
 
     { 
         COM com; 
@@ -3422,7 +3422,7 @@ The new COMVariant object.
 
 #### Remarks
 
-The COMVariant object that is created by this method has the data type VT\_DATE (date/time). This method allows you to use dates that are outside the range for the Finance and Operationsdate data type (0111901 to 31122154). For dates within the date range, you can use the COMVariant.createFromDate method.
+The COMVariant object that is created by this method has the data type VT\_DATE (date/time). This method allows you to use dates that are outside the range for the date data type (0111901 to 31122154). For dates within the date range, you can use the COMVariant.createFromDate method.
 
 #### Examples
 
@@ -3884,7 +3884,7 @@ A no-value variant can be used when a COM method has parameters that can be null
 
 #### Examples
 
-The following example shows how to call the COM.multiply method with the third argument unspecified. The code below contains a hypothetical COM object ("MyCOM.Object"), and will therefore not run in Finance and Operations, unless such an object is created outside Finance and Operations.
+The following example shows how to call the COM.multiply method with the third argument unspecified. The code below contains a hypothetical COM object ("MyCOM.Object"), and will therefore not run, unless such an object is created outside a Finance and Operations application.
 
     { 
         COM        com; 
@@ -3946,7 +3946,7 @@ When a new ConfigurationKeySet is created, a tree of configuration keys is creat
 
 | Method                                                                            | Description                                                                                                             |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| public int cnt()                                                                  | Retrieves the number of configuration keys that are defined in the Finance and Operations Application Object Tree (AOT). |
+| public int cnt()                                                                  | Retrieves the number of configuration keys that are defined in the Application Object Tree (AOT). |
 | public ConfigurationKeyId cnt2Id(int cnt)                                         | Retrieves the ID of the *n*th configuration key.                                                                        |
 | public boolean enabled(ConfigurationKeyId configurationKeyId, \[boolean enable\]) | Determines whether to enable or disable the object.                                                                     |
 | public container pack()                                                           | Serializes the current instance of the ConfigurationKeySet class.                                                       |
@@ -3956,7 +3956,7 @@ When a new ConfigurationKeySet is created, a tree of configuration keys is creat
 
 ### Method cnt
 
-Retrieves the number of configuration keys that are defined in the Finance and Operations Application Object Tree (AOT).
+Retrieves the number of configuration keys that are defined in the Application Object Tree (AOT).
 
     public int cnt()
 
