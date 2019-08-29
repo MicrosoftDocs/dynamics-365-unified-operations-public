@@ -37,7 +37,7 @@ This topic provides an overview of the Dynamics 365 Commerce online software dev
 
 ## Cookie consent
 
-Before cookies can be stored, the end user must provide consent. The SDK provides utilities that ensure the read/write operation of a cookie is contingent on user consent.
+Before cookies can be stored, the user must provide consent. The Commerce online SDK provides utilities that ensure the read/write operation of a cookie is contingent on user consent.
 
 ##  Cookie APIs
 
@@ -52,9 +52,13 @@ The Commerce online SDK provides the following set of APIs that access cookies f
     deleteConsentCookie(): void;
 ```
 
-### Get user consent
+### Obtain user consent
 
-The **setConsentCookie()** API is used to obtain user consent before cookies can be written. The **isConsetGiven()** API can be used to determine if consent has been given.
+The **setConsentCookie()** API is used to obtain user consent before cookies can be written. 
+
+### Determine if user consent has been granted
+
+The **isConsentGiven()** API is used to determine if consent has been given.
 
 ### Set a cookie
 
@@ -62,7 +66,7 @@ The following example shows how to set a cookie.
 
 `this.props.context.request.cookies.set<string>('favoriteColor', 'blue');` 
 
-If consent is not provided before calling this API, the SDK maintains a queue of all set operations and only sets the cookie once the user provides consent.
+If consent is not provided before calling this API, the SDK maintains a queue of all set operations and sets a cookie only once the user has provided consent.
 
 ### Get the value of a cookie
 
