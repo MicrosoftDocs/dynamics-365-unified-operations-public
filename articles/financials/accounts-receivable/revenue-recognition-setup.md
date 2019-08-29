@@ -27,6 +27,8 @@ ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 
 ---
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 # Revenue recognition setup
 This topic describes the setup options and their implications for Revenue recognition.  
