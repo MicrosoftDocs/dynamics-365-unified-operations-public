@@ -33,19 +33,14 @@ The **Footer** module is special container that is used for hosting the modules 
 
 ## Properties of Footer
 
-Footer supports Heading and Width property similar to most containers. 
-
-Footer container has multiple slots – Footer items, Back to top, Follow us on social, Sub footer.   Each slot supports a specific set of modules.
+Footer supports Heading and Width property similar to most containers. Footer container has multiple Footer category slots. Each Footer category will render as a column in the footer module.
 
 ## Modules available in Footer
 
-**Footer category.** Each Footer category will render as a column in the footer module. 
+**Footer items:** Footer items can be a Heading, Image and/or a link. A Heading can be used standalone or in combination with image and link. Each web link on the footer can be configured as a Link E.g. Contact Us, Privacy etc. Image can also supported be for items in footer that require image and a link E.g. Social links.
 
-**Footer items.** Footer items can be a Heading, Image and/or a link. A Heading can be used standalone or in combination with image and link. Every link on the footer can be configured as a Link. Image can also supported be for items in footer that require image and a link.
+**Back to top.** Back to top allows quick navigation to the top of the page. A destination must be provided, the default is # which takes to the top of the page. 
 
-**Back to top.** Back to top allows quick navigation to the top of the page. A destination must be provided, the default is # which takes to the top of the page.
-
-**Social links:** TBD
 
 ## Authoring a Footer Module
 
