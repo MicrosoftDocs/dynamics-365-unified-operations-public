@@ -1040,7 +1040,7 @@ The AsciiIo class provides functionality for reading and writing ASCII files.
 
 ### Remarks
 
-The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Finance and Operations, such as an .xpo file.
+The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in a Finance and Operations application, such as an .xpo file.
 
 ### Examples
 

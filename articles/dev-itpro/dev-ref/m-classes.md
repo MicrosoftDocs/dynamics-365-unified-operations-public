@@ -3614,7 +3614,7 @@ The MenuReference class enables you to create, read, update, and delete X++ code
 ## Class MessageWin
     class MessageWin extends Object
 
-The MessageWin class gives access to the messageWindow class of the Finance and Operations development environment.
+The MessageWin class gives access to the messageWindow class development environment.
 
 ### Remarks
 

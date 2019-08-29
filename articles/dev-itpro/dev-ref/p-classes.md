@@ -486,7 +486,7 @@ Returns the processId value of the process that is running this method.
 
 #### Return Value
 
-The processId value of the Finance and Operations process that is running this method.
+The processId value of the process that is running this method.
 
 #### Examples
 
