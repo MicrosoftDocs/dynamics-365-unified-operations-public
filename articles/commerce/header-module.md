@@ -59,9 +59,9 @@ The following modules can be used in the header.
 
 - **Alert**: An alert is used to show an inline message on the header that applies to all pages on the site. For example, an alert may be a message such as “Annual sale ends in 2 days”. 
 
-- **Search bar**: The search bar allows the user to enter search terms to search for products. The module must be configured with the search page URL, which is the URL to the search results page. The query string parameter should be provided--the default value is “q”. The search bar has an auto-suggest slot where the auto-suggest module should be added. 
+- **Search bar**: The search bar allows the user to enter search terms to search for products. The module must be configured with the search page URL, which is the URL to the search results page. The query string parameter can be configured -the default value is “q”. The search bar has an auto-suggest slot where the auto-suggest module should be added. 
 
-- **Auto suggest**: The auto suggest module shows the auto suggest results. The results can be textual or immersive. Textual results show only the list of matching product names. Immersive results display the product name, price, and image, in-line for matching products. You can configure the number of results to be shown in auto suggest.
+- **Auto suggest**: The auto suggest module shows the auto suggest results. The auto-suggest results can show keywords, products and categories where the search term is found.
 
 ## Author a header
 
