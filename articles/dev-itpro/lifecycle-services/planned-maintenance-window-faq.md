@@ -103,4 +103,6 @@ If the update takes longer than the scheduled maintenance window, the extra time
 Microsoft doesn't offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
 
 ### How do I opt out of the current maintenance cycle?
-To opt out of the current maintenance cycle, file a support ticket with Microsoft. The deadline for filing the support ticket to request an opt-out will be included in your notification email. Any opt-out submitted after that deadline will not be honored. Your environment will be excluded from the maintenance cycle for the current month, however your environment will be updated in the next month.
+To opt out of the current maintenance cycle on Tier 2 through Tier 5 sandbox environments and production environments, file a support ticket with Microsoft. The deadline for filing the support ticket to request an opt-out will be included in your notification email. Any opt-out submitted after that deadline will not be honored. Your environment will be excluded from the maintenance cycle for the current month, however your environment will be updated in the next month.
+
+We do not allow you to opt out of the patching scheduled on Microsoft-managed Tier 1 environments.
