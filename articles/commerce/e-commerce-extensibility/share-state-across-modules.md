@@ -1,38 +1,44 @@
 ---
 # required metadata
 
-title: Sharing State Across Modules
-description: Data actions fill the important role of state management in situations where you need to share state across multiple modules on the same page.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Share state across modules
+description: This topic covers sharing state across multiple modules by using data actions in Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Sharing State Across Modules
+# Share state across modules
+
+This topic covers sharing state across multiple modules by using data actions in Dynamics 365 Commerce.
+
+## Overview
 
 Data actions fill the important role of state management in situations where you need to share state across multiple modules on the same page.
 
-Lets take an example with two modules that share basic interaction. One module will have a button (`sample-button`) and the other module will display a message when that button is clicked(`sample-message`). We'll start with a data action that returns an object containing the number of times the button has been clicked, which looks like the following:
+## Examples
+
+Let's start with an example that has two modules that share basic interaction. One module will have a button (`sample-button`) and the other module will display a message when that button is clicked (`sample-message`). We'll start with a data action that returns an object containing the number of times the button has been clicked, which looks like the following.
 
 ```typescript
 // sample-state.ts
@@ -74,7 +80,7 @@ export default createObservableDataAction<ISampleState>({
 });
 ```
 
-This action has no implementation in its current state, all it does in create a place in the cache where we are storing an object. But this can be very useful for helping modules talk to each other, by observing this object. To get modules acceess to this object we just need to make sure these modules register this data action we have created as a Page Load data action:
+This data action has no implementation in its current state, all it does is create a place in the cache where we are storing an object. Observing this object can be very useful for helping modules talk to each other. To get modules access to this object, we must ensure that the modules register the data action we have created as a page load data action.
 
 ```json
 // sample-button.definition.json
@@ -114,7 +120,7 @@ This action has no implementation in its current state, all it does in create a 
 }
 ```
 
-Both of our modules are now registered to this data action, which means they are both observing the same object in our application state. The only thing left to do is update the application state when our `sample-button` module has its button pressed, and then all modules observering the app state should automatically update accordingly. Below is a `sample-message` module:
+Both of the modules are now registered to the data action, which means they are both observing the same object in the application state. The only thing left to do is update the application state when the `sample-button` module has a user click event. Then all modules observing the app state should automatically update accordingly. Below is an example of a `sample-message` module.
 
 ```typescript
 // sample-message.data.ts
@@ -151,7 +157,9 @@ export default class SampleMessage extends React.Component<ISampleMessageProps<I
 }
 ```
 
-This module is very straightforward, all it does is ask for our `ISampleState` via a Page Load data action and then render a simple message based off the data returned. Because our application state is internally powered by [MobX](https://mobx.js.org/), this module can automatically react when the data it is observing changes! Now let's look at `sample-button` which will update our application state based on a user click event:
+The `sample-message` module is very straightforward, all it does is ask for the `ISampleState` using a page load data action and render a simple message based on the data returned. Because the application state is internally powered by [MobX](https://mobx.js.org/), this module can automatically react when the data it is observing changes. 
+
+Next let's look at `sample-button`, which will update the application state based on a user click event:
 
 ```typescript
 // sample-button.data.ts
@@ -199,4 +207,4 @@ export default class SampleButton extends React.Component<ISampleButtonProps<ISa
 }
 ```
 
-Above you can see the onClick handler makes a call to `actionContext.update()`, which let's us directly mutate our application state. When the state is mutated, MobX takes over and re-renders all modules which are observing that piece of state which includes our `sample-message` module.
+Above you can see that the onClick handler makes a call to `actionContext.update()`, which lets us directly mutate the application state. When the state is mutated, MobX takes over and rerenders all modules which are observing the piece of state that includes the `sample-message` module.
