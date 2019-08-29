@@ -265,9 +265,7 @@ The **Shared product color** entity indicates the colors that a specific product
 
 Source field | Map type | Destination field
 ---|---|---
-PRODUCTCOLORID | \>\> | msdyn\_productcolorintegration
 PRODUCTCOLORID | \>\> | msdyn\_productcolorid.msdyn\_productcolorname
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductnumberintegration
 PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
 REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
 DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
@@ -278,10 +276,8 @@ The **Shared product size** entity indicates the sizes that a specific product m
 
 Source field | Map type | Destination field
 ---|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductnumberintegration
 PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
 PRODUCTSIZEID | \>\> | msdyn\_productsizeid.msdyn\_productsize
-PRODUCTSIZEID | \>\> | msdyn\_productsizeintegration
 REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
 DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
@@ -291,7 +287,6 @@ The **Shared product style** entity indicates the styles that a specific product
 
 Source field | Map type | Destination field
 ---|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailintegration
 PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailsid.msdyn\_itemnumber
 PRODUCTSTYLEID | \>\> | msdyn\_productstyleintegration
 PRODUCTSTYLEID | \>\> | msdyn\_productstyleid.msdyn\_productstyle
@@ -305,9 +300,7 @@ The **Shared product configuration** entity indicates the configurations that a 
 Source field | Map type | Destination field
 ---|---|---
 CONTAINERUNITSYMBOL | \>\> | msdyn\_containerunitsymbol
-PRODUCTCONFIGURATIONID | \>\> | msdyn\_configurationintegration
 PRODUCTCONFIGURATIONID | \>\> | msdyn\_productconfigurationid.msdyn\_productconfiguration
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductnumberintegration
 PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
 REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
 DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
