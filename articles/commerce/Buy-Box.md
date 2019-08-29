@@ -39,14 +39,16 @@ On a product details page, the page context has the product id information from 
 
 As a container, Buy box provides some basic properties such as Width which allows the modules inside this container to fit within or fill screen.  
 
-Buy Box is divided into two regions – Media region on the left and Content region on the right. Both regions occupy equal column width.  This is represented as slots in the buy box module. Each slot is pre-configured to only accept specific modules that are supported by the slot. E.g. Media slot will only support Media gallery module. On Mobile view port, Media and Content slots will stack one below the other.  
+Buy Box is divided into two regions – Media region on the left and Content region on the right. By default they have a 2:1 column width but this can be overriden by theme. These two regions are represented as slots in the buy box module. Each slot is pre-configured to only accept specific modules that are supported by the slot. E.g. Media slot will only support Media gallery module.
+
+On Mobile view port, Media and Content slots will stack one below the other.  
 
 ## Modules available in Buy Box 
 
 **Media Gallery:** Media gallery is used for showcasing images of a product in a product details page. It can support one to many images. It also supports thumbnails which can be arranged horizontally (below the image as a row) or vertically (next to the image as a column). Media gallery can be added to Media slot in the buy box container. Media gallery supports only images. Videos and other formats are currently not supported. 
 
 **Product title:** Product title is used for displaying title of a product in a product details page. It has a default heading tag of H1 but can be changed as needed. 
-
+                  
 **Product rating:** Product rating is used to display star ratings based on user rating for the product. The buy box integrates with the Ratings service to retrieve the product ratings for each product. See Ratings service for more details. 
 
 **Product price:** Product price is used to display the price of the product including strikethrough price and discounts.  
