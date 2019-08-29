@@ -1,38 +1,45 @@
 ---
 # required metadata
 
-title: Module Definition File
-description: The module definition file `MODULE_NAME.definition.json` is used to register the module and provide meta data to the Dynamics 365 e-Commerce authoring tools including the module name, description, categories and configurations.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Module definition file
+description: This topic covers module definition files in Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Module Definition File
 
-The module definition file `MODULE_NAME.definition.json` is used to register the module and provide meta data to the Dynamics 365 e-Commerce authoring tools including the module name, description, categories and the module view file.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Below is a sample definition file for a module:
+This topic covers module definition files in Dynamics 365 Commerce.
+
+## Overview
+
+The module definition file `MODULE_NAME.definition.json` is used to register a module and provide metadata to Dynamics 365 Commerce including the module name, description, categories, and configurations.
+
+The following example shows a sample definition file for a module.
 
 ```
 {
@@ -78,32 +85,34 @@ Below is a sample definition file for a module:
 }
 ```
 
-The definition file is also used to expose configuration fields, which allow a page author to set module settings. An example may be a layout alignment setting (with left, right and center values to choose from), a module title or heading, rich text description, call to action link, image URLs or Dynamics Retail product data.  
+The module definition file is also used to expose configuration fields, which enables a page author to set module settings. Examples of this could be a layout alignment setting (with left, right, and center values to choose from), a module title or heading, a rich text description, a call to action link, an image URL, or Dynamics Retail product data.  
 
-The page author can then choose the specific configurations for the module on a specific page without affecting the setting of the module on other pages. 
+The page author can choose the configurations for a module on a specific page without affecting the setting of the module on other pages. 
 
 ## Module Definition Schema
+
 * "$type"
-    * A module can be either a “containerModule” if it can render child modules or “contentModule” if it’s a stand-alone module. Container modules will also define “slots” which are used for layout regions.  
+    * A module can be either a “containerModule” if it can render child modules or a “contentModule” if it's a stand-alone module. Container modules will also define “slots” which are used for layout regions.  
 * "friendlyName"
     * Friendly name that gets displayed to page authors. Minimum length is 3 characters.
 * "name":
-    * Name of the module, this must be unique across the application. This is the ID of the module referenced by authoring and should not be changed.
+    * Name of the module, which must be unique across the application. This is the ID of the module referenced by authoring and should not be changed.
 * "description": 
     * The description provides a friendly string which will be shown in the authoring tools when adding modules to pages.
 * "categories": 
     * Categories that this module can subscribe to. The values specified here are used by container modules to allow or disallow certain modules in specific slots.
 * "tags"
-    * Tags used to search modules, all the categories are automatically added as tags.
+    * Tags used to search modules, all the categories are automatically added as tags
 * "module"
-    * The module section contains the file name for the default react view to load and is used to register the data actions that should be run for the module. Only 1 view can be provided here but you may register multiple data actions
+    * The module section contains the file name for the default react view to load and is used to register the data actions that should be run for the module. Only one view can be provided here but you may register multiple data action.
 * "slots" 
-    * Slots are defined only on “containerModules” and exposed in the authoring tool.  Slots can define allow and deny lists to allow or disallow specific modules from being accepted in the slot.
+    * Slots are defined only on “containerModules” and exposed in the authoring tool. Slots can define allow and deny lists to allow or disallow specific modules from being accepted in the slot.
 
 ## Registering Data Actions To A Module
-If a module is dependent on some data coming from a data action, the data-action should be registered in the `module` section of the module definition file.
 
-Below is an example module definition with data action registration:
+If a module is dependent on data coming from a data action, the data action must be registered in the `module` section of the module definition file.
+
+The following example shows a module definition with data action registration.
 
 ```json
 // test-module.definition.json
@@ -140,32 +149,35 @@ export interface IAsyncTestModuleData {
 }
 ```
 
-You can now access the results of this data-action in your module
+The result is that you can now access the results of this data action in your module.
     
 ## Module Config Schema
-The module "config" section contains a list of all the modules exposed configuration fields that will be used in the authoring tool.
+
+The module "config" section contains a list of all the module's exposed configuration fields that will be used in the authoring tool.
+
 * config name:
-    * Choose a name that will be used to access the config values from your react source code
+    * This local name will be used to access the config values from your react source code.
 * "friendlyName":
-    * This name will show up in authoring tools as the configuration name
+    * This name will show up in authoring tools as the configuration name.
 * "description":
-    * This description will show up in authoring tools as the configuration description
+    * This description will show up in authoring tools as the configuration description.
 * "type":
     * Type of the configuration.  Possible values “string”, “bool”, “number”, “integer”, “resource” , “richText”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
 * "enum":
-    * For an enumerator type must be set to "string".
+    * For an enumerator type must be set to "string"
 * "default":
-    * Used to set the default value if none is set in the authoring tool.
+    * Used to set the default value if none is set in the authoring tool
 * "scope":
     * Used to scope the config to the a module instance or all modules site on the site.  Possible values "module" or "site".  If set to the site, the module configuration will not show up and be configurable on a page, only at the site level settings. This will allow the value to be set once for your whole site.
 * "group":
-    * Groups are used to organize the configurations into organized groups in the authoring tools.
+    * Groups are used to organize the configurations into organized groups in the authoring tool.
 * "required":
     * This marks if a property must be set on the module.  The rendering of the module and tooling will show an error if this is not set.
 * "resourceKey":
-    * Used for localization resources. 
+    * Used for localization resources
     
-Below is an advanced sample that shows the usage of various supported data types:
+The following example shows an advanced sample that shows the usage of various supported data types.
+
 ```
 {
   "$type": "contentModule",
