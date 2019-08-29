@@ -35,30 +35,12 @@ ms.dyn365.ops.version: 10.0.7
 This topic explains how to set up and use separate accounts for credit notes.
 
 ## Prerequisites
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Category</th>
-<th>Prerequisite</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Country/region</td>
-<td>The primary address of the legal entity must be in Italy.</td>
-</tr>
-<tr class="even">
-<td>Related setup tasks</td>
-<td><ul>
-<li>In <strong>Feature management</strong> enable <strong>Separate accounts for credit notes</strong> feature.
-</ul></td>
-</tr>
-</tbody>
-</table>
+### Country/region
+The primary address of the legal entity must be in Italy.
+### Feature activation
+In <strong>Feature management</strong> enable <strong>Separate accounts for credit notes</strong> feature.
+
+For more information, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview)
 
 ## Set up 
 ### Subtitle
