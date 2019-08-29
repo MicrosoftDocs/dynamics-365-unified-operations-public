@@ -48,20 +48,28 @@ Product information contains all the information that is related to the product 
 
 Finance and Operations | Customer Engagement application
 -----------------------|--------------------------------
-Released products V2 | Product
 Released products V2 | msdyn\_sharedproductdetails
 CDS released distinct products | Product
-CDS released distinct products | msdyn\_sharedproductdetails
 Product number identified barcode | msdyn\_productbarcodes
 Default order settings | msdyn\_productdefaultordersettings
+Product specific default order settings | msdyn_productspecificdefaultordersettings
 Product dimension groups | msdyn\_productdimensiongroups
 Storage dimension groups | msdyn\_productstoragedimensiongroups
-Sites | msdyn\_operationalsites
-Warehouses | msdyn\_inventwarehouses
+Tracking dimension groups | msdyn\_producttrackingdimensiongroups
 Colors | msdyn\_productcolors
 Sizes | msdyn\_productsizes
 Styles | msdyn\_productsytles
 Configurations | msdyn\_productconfigurations
+Product master colors | msdyn_sharedproductcolors
+Product master sizes | msdyn_sharedproductsizes
+Product master styles | msdyn_sharedproductstyles
+Product master configurations | msdyn_sharedproductconfigurations
+All products | msdyn_globalproducts
+Unit | uoms
+Unit conversions | msdyn_ unitofmeasureconversions
+Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
+Sites | msdyn\_operationalsites
+Warehouses | msdyn\_inventwarehouses
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
@@ -71,14 +79,17 @@ In this model, the product is represented by the combination of two entities in 
 
 Because the product is represented as an SKU, the concepts of distinct products, product masters, and product variants from Finance and Operations can be captured in Common Data Service in the following way:
 
-- **Distinct products** (without variants) are products that are defined by themselves. No dimensions have to be defined for them. An example is a specific book. For these products, one record is created in the **Product** entity, and one record is created in the **msdyn\_sharedproductdetails** entity. No product family record is created.
+- **Products with subtype product** are products that are defined by themselves. No dimensions have to be defined for them. An example is a specific book. For these products, one record is created in the **Product** entity, and one record is created in the **msdyn\_sharedproductdetails** entity. No product family record is created.
 - **Product masters** in Finance and Operations are used as generic products that hold the definition and rules that determine the behavior in business processes. Based on these definitions, distinct products that are known as product variants can be generated. For example, T-shirt is the product master, and it can have Color and Size as dimensions. Variants can be released that have different combinations of these dimensions, such a small blue T-shirt or a medium green T-shirt. In the integration, one record per variant is created in the product table. This record contains the variant-specific information, such as the different dimensions. The generic information for the product is stored in the **msdyn\_sharedproductdetails** entity. (In Finance and Operations, this generic information is held in the product master.) Additionally, one product family record is created per product master. The product master information is synced to Common Data Service as soon as the released product master is created (but before variants are released).
+- **Distinct products** refer to all the products subtype product and all the product variants. 
 
 ![Data model for products](media/dual-write-product.png)
 
+With the dual-write functionality enabled, the released products from Dynamics 365 for Finance and Operations will be syncronized in Dynamics 365 for Customer Engagement with **Active** state, so you can directly used in sales order quotations, for example. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in Dynamics 365 for Customer Engagement that matches the currency of your legal entity where the product is released in Dynamics 365 for Finance and Operations. 
+
 ### CDS released distinct products to Product
 
-The **Product** entity contains the fields that define the product. The following table shows the mappings.
+The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -173,10 +184,8 @@ SALESPRICINGPRECISION | \> | msdyn\_salespricingprecision
 SALESUNDERDELIVERYPERCENTAGE | \> | msdyn\_salesunderdeliverypercentage
 SALESUNITSYMBOL | \> | msdyn\_salesunitsymbol.name
 SCALEINDICATOR | \>\> | msdyn\_scaleindicator
-SELLSTARTDATE | \> | msdyn\_sellstartdate
 SHELFADVICEPERIODDAYS | \> | msdyn\_shelfadviceperioddays
 SHELFLIFEPERIODDAYS | \> | msdyn\_shelflifeperioddays
-SHIPSTARTDATE | \> | msdyn\_shipstartdate
 TAREPRODUCTWEIGHT | \> | msdyn\_tareproductweight
 TRANSFERORDEROVERDELIVERYPERCENTAGE | \> | msdyn\_transferorderoverdeliverypercentage
 TRANSFERORDERUNDERDELIVERYPERCENTAGE | \> | msdyn\_transferorderunderdeliverypercentage
@@ -208,9 +217,9 @@ PRIMARYVENDORACCOUNTNUMBER | \>\> | msdyn\_vendorid.msdyn\_vendoraccountnumber
 ISCATCHWEIGHTPRODUCT | \>\> | msdyn\_iscatchweight
 PRODUCTDIMENSIONGROUPNAME | \>\> | msdyn\_productdimensiongroupid.msdyn\_groupname
 
-## Product dimensions and product dimension group
+## Product dimensions 
 
-Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model.
+Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
 ![Data model for products](media/dual-write-product-2.png)
 
@@ -325,3 +334,266 @@ PRODUCTQUANTITYUNITSYMBOL | \> | msdyn\_unitofmeasureid.name
 ISDEFAULTSCANNEDBARCODE | \>\> | msdyn\_isdefaultscannedbarcode
 ISDEFAULTPRINTEDBARCODE | \>\> | msdyn\_isdefaultprintedbarcode
 ISDEFAULTDISPLAYEDBARCODE | \>\> | msdyn\_isdefaultdisplayedbarcode
+
+## Default order settings and product specific default order settings
+
+Default order settings in Microsoft Dynamics 365 for Finance and Operations define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. These information will be available in CDS using the default order settings and product specific default order settings entity. You can read more information about the functionality on [Default order settings page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/default-order-settings)
+
+### Default order settings
+
+The following mappings are used to make the default order settings available in Common Data Service.
+
+Source field | Map type | Destination field
+---|---|---
+INVENTWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
+INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
+INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
+INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
+ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
+INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
+INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
+INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
+MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
+MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
+MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
+MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
+MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
+MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
+STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
+STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
+STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
+INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
+INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
+PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
+SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
+PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
+PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
+SALESSITEID | = | msdyn_salessite.msdyn_siteid
+SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
+SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
+SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
+SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
+SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
+SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
+PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
+SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
+AREINVENTORYORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
+INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
+ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
+ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
+ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
+ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
+ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
+ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
+ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
+ARESALESORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
+SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
+ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
+ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
+ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
+ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
+ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
+ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
+ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
+
+### Product specific default order settings
+
+The following mappings are used to make the product specific default order settings available in Common Data Service.
+
+Source field | Map type | Destination field
+---|---|---
+INVENTORYWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
+INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
+INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
+INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
+ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
+INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
+INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
+INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
+MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
+MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
+MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
+MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
+MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
+MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
+STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
+STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
+STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
+INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
+INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
+PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
+SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
+PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
+PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
+SALESSITEID | = | msdyn_salessite.msdyn_siteid
+SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
+SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
+SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
+SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
+SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
+SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
+PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
+SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
+AREINVENTORYDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
+INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
+ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
+ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
+ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
+ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
+ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
+ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
+ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
+ARESALESDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
+SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
+ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
+ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
+ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
+ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
+ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
+ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
+ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
+OPERATIONALSITEID | = | msdyn_operationalsite.msdyn_siteid
+PRODUCTCOLORID | = | msdyn_productcolor.msdyn_productcolorname
+PRODUCTCONFIGURATIONID | = | msdyn_productconfiguration.msdyn_productconfiguration
+PRODUCTSIZEID | = | msdyn_productsize.msdyn_productsize
+PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle
+
+## Unit of measure and unit of measure conversions
+
+The units of measure and its respective conversions will be available in the Common Data Service following the data model shown in the diagram.
+
+![Data model for products](media/dual-write-product-3.png)
+
+The unit of measure concept is harmonized between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement. For each unit class of Dynamics 365 for Finance and Operations a unit group is created in Dynamics 365 for Customer Engagement, which contains the untis belonging to the unit class. A default base unit is also created for every unit group. 
+
+### Unit of measure
+
+The following mappings are used to make the units of measure of Dynamics 365 for Finance and Operations available in Common Data Service.
+
+Source field | Map type | Destination field
+---|---|---
+UNITSYMBOL | >> | msdyn_symbol
+UNITCLASS | >> | msdyn_externalunitclassname
+DECIMALPRECISION | >> | msdyn_decimalprecision
+ISBASEUNIT | >> | msdyn_isbaseunit
+ISSYSTEMUNIT | >> | msdyn_issystemunit
+SYSTEMOFUNITS | >> | msdyn_systemofunits
+UNITSYMBOL | >> | name
+UNITDESCRIPTION | >> | msdyn_description
+
+### Unit of measure conversions
+
+The following mappings are used to make the units of measure conversions of Dynamics 365 for Finance and Operations available in Common Data Service.
+
+Source field | Map type | Destination field
+---|---|---
+DENOMINATOR | = | msdyn_denominator
+NUMERATOR | = | msdyn_numerator
+FACTOR | = | msdyn_factor
+INNEROFFSET | = | msdyn_inneroffset
+OUTEROFFSET | = | msdyn_outeroffset
+ROUNDING | >< | msdyn_rounding
+TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
+FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
+
+### Product specific unit of measure conversions
+
+The following mappings are used to make the product specific unit of measure conversions of Dynamics 365 for Finance and Operations available in Common Data Service.
+
+Source field | Map type | Destination field
+---|---|---
+DENOMINATOR | = | msdyn_denominator
+NUMERATOR | = | msdyn_numerator
+FACTOR | = | msdyn_factor
+FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
+TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
+PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber
+INNEROFFSET | = | msdyn_inneroffset
+OUTEROFFSET | = | msdyn_outeroffset
+ROUNDING | >< | msdyn_rounding
+
+## Product policies: dimension, tracking and storage groups
+
+The product policies are sets of policies used for defining products and its characteristics in inventory. The product dimension group, product tracking dimension group and storage dimension group can be found as product policies in Dynamics 365 for Finance and Operations. 
+
+### Product dimension group
+
+The product dimension group defined which product dimensions define the product. The four possible product dimension groups are: size, color, style and configuration. The product dimension groups are available in the Common Data Service using the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+WILLSALESPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willsalespricesearchuseproductstyle
+WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willpurchasepricesearchuseproductsize
+WILLSALESPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willsalespricesearchuseprodconfig
+WILLSALESPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willsalespricesearchuseproductcolor
+WILLPURCHASEPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willpurchasepricesearchuseproductstyle
+WILLPURCHASEPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willpurchpricesearchuseprodconfig
+WILLPURCHASEPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willpurchpricesearchuseproductcolor
+ISPRODUCTSTYLEACTIVE | >< | msdyn_isproductstyleactive
+ISPRODUCTSIZEACTIVE | >< | msdyn_isproductsizeactive
+ISPRODUCTCONFIGURATIONACTIVE | >< | msdyn_isproductconfigurationactive
+ISPRODUCTCOLORACTIVE | >< | msdyn_isproductcoloractive
+GROUPNAME | = | msdyn_groupname
+GROUPDESCRIPTION | = | msdyn_groupdescription
+PRODUCTVARIANTNOMENCLATURENAME | = | msdyn_productvariantnomenclaturename
+WILLSALESPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willsalespricesearchuseproductsize
+
+### Product tracking dimension group
+
+The product tracking dimension group represents the method used to track the product in inventory. These are available in the Common Data Service using the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+SERIALNUMBERCAPTURINGOPERATION | >< | msdyn_serialnumbercapturingoperation
+GROUPNAME | = | msdyn_groupname
+GROUPDESCRIPTION | = | msdyn_groupdescription
+ISSERIALNUMBERENABLEDFORPRODUCTIONCONSUMPTIONPROCESS | >< | msdyn_issnenabledforpcprocess
+ISSERIALNUMBERCONTROLENABLED | >< | msdyn_isserialnumbercontrolenabled
+ISSERIALNUMBERENABLEDFORSALESPROCESS | >< | msdyn_isserialnumberenabledforsalesprocess
+ISSERIALNUMBERACTIVE | >< | msdyn_isserialnumberactive
+ISSALESPRICEBYSERIALNUMBER | >< | msdyn_issalespricebyserialnumber
+ISSALESPRICEBYBATCHNUMBER | >< | msdyn_issalespricebybatchnumber
+ISPURCHASEPRICEBYSERIALNUMBER | >< | msdyn_ispurchasepricebyserialnumber
+ISPURCHASEPRICEBYBATCHNUMBER | >< | msdyn_ispurchasepricebybatchnumber
+ISPRIMARYSTOCKINGENABLEDFORSERIALNUMBER | >< | msdyn_isprimarystockingenabledforsn
+ISPRIMARYSTOCKINGENABLEDFORBATCHNUMBER | >< | msdyn_isprimarystockingenabledforbn
+ISPHYSICALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isphysicalinventoryenabledforsn
+ISPHYSICALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isphysicalinventoryenabledforbn
+ISFINANCIALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isfinancialinventoryenabledforsn
+ISFINANCIALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isfinancialinventoryenabledforbn
+ISCOVERAGEPLANENABLEDFORSERIALNUMBER | >< | msdyn_iscoverageplanenabledforserialnumber
+ISCOVERAGEPLANENABLEDFORBATCHNUMBER | >< | msdyn_iscoverageplanenabledforbatchnumber
+ISBLANKRECEIPTALLOWEDFORSERIALNUMBER | >< | msdyn_isblankreceiptallowedforserialnumber
+ISBLANKRECEIPTALLOWEDFORBATCHNUMBER | >< | msdyn_isblankreceiptallowedforbatchnumber
+ISBLANKISSUEALLOWEDFORSERIALNUMBER | >< | msdyn_isblankissueallowedforserialnumber
+ISBLANKISSUEALLOWEDFORBATCHNUMBER | >< | msdyn_isblankissueallowedforbatchnumber
+ISBATCHNUMBERACTIVE | >< | msdyn_isbatchnumberactive
+ISINVENTORYOWNERACTIVE | >< | msdyn_isinventoryowneractive
+
+### Product storage dimension group
+
+The product storage dimension group represents the method used to define the placement the product in the warehouse. These are available in the Common Data Service using the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+WILLSALESPRICESEARCHUSEWAREHOUSE | >< | msdyn_willsalespricesearchusewarehouse
+WILLSALESPRICESEARCHUSESITE | >< | msdyn_willsalespricesearchusesite
+WILLSALESPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willsalespricesearchuseinventorystatus
+WILLPURCHASEPRICESEARCHUSEWAREHOUSE | >< | msdyn_willpurchasepricesearchusewarehouse
+WILLPURCHASEPRICESEARCHUSESITE | >< | msdyn_willpurchasepricesearchusesite
+WILLPURCHASEPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willpurchpricesearchuseinventstatus
+WILLCOVERAGEPLANNINGUSEWAREHOUSE | >< | msdyn_willcoverageplanusewarehouse
+WILLCOVERAGEPLANNINGUSELOCATION | >< | msdyn_iscoverageplanenabledforlocation
+WILLCOVERAGEPLANNINGUSEINVENTORYSTATUS | >< | msdyn_willcoverageplanuseinventorystatus
+AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED | >< | msdyn_areadvancedwmprocessesenabled
+ISWAREHOUSEPRIMARYSTORAGEDIMENSION | >< | msdyn_iswarehouseprimarystoragedimension
+ISWAREHOUSEMANDATORY | >< | msdyn_iswarehousemandatory
+ISPHYSICALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isphysicalinventoryenabledforwarehouse
+ISPHYSICALINVENTORYENABLEDFORLOCATION | >< | msdyn_isphysicalinventoryenabledforlocation
+ISLOCATIONACTIVE | >< | msdyn_islocationactive
+ISFINANCIALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isfinancialinventoryenabledforwarehouse
+GROUPNAME | = | msdyn_groupname
+GROUPDESCRIPTION | = | msdyn_groupdescription
+ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
+ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
+
