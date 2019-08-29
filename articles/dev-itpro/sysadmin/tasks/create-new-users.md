@@ -45,7 +45,7 @@ System administrators can [assign licenses to users](https://docs.microsoft.com/
 6. In the **Alias** field, type a value. Enter the user's alias.  
 7. In the **Company** field, click the drop-down button to open the lookup.
 8. In the list, find and select the desired record. 
-9. In the **User's roles** section, click **Assign roles** to [assign users to security roles](assign-users-security-roles)
+9. In the **User's roles** section, click **Assign roles** to [assign users to security roles](assign-users-security-roles.md)
 11. Click **OK**.
 12. Click **Save**.
 
