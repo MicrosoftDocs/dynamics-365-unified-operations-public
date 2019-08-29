@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can design an electronic reporting (ER) data source by using the **Calculated field** type. This type contains expressions that, when executed, can be controlled by the values of the parameter arguments that are configured for this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
+This topic explains how you can design an Electronic reporting (ER) data source by using the **Calculated field** type. This data source may contain an ER expression that, when executed, can be controlled by the values of the parameter arguments that are configured in a binding that calls this data source. By configuring parameterized calls of such a data source, you can reuse a single data source in many bindings, which reduces the total number of data sources that must be configured in ER model mappings or ER formats. It also simplifies the configured ER component, which reduces the maintenance costs and the cost of use by other consumers.
 
 ## Prerequisites
 To complete the examples in this topic, you must have the following access:
@@ -204,7 +204,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
 On the **Format designer** page, the configured parameterized calculated field **Levels** requires a **String** argument.
 
-![](media/er0calculated-field-type-08.png)
+![](media/er-calculated-field-type-08.png)
 
 ### Use the configured calculated field for binding format elements
 
@@ -233,12 +233,12 @@ On the **Format designer** page, the configured parameterized calculated field *
 
 Recurrent calls of any parameterized calculated field are not supported.
 
-You can select **Edit formula**, and change the applied-by-default argument of the parameterized calculated field in the selected binding. If this argument is missing, it can cause errors at run time—users are informed about such a situation when the current format is validated.
+You can select **Edit formula**, and change the applied-by-default argument of the parameterized calculated field in the selected binding. If this argument is missing, it can cause errors at run time — users are informed about such a situation when the current format is validated.
 
 ![](media/er-calculated-field-type-10.png)
 
 ## Configure a parameterized calculated field to return a record
-When a parameterized calculated field returns a record, you need to support binding of individual fields of this record to format elements. In such cases there will be no parent binding that contains the value of an argument to call a parameterized calculated field—this value must be defined in the binding of a single record’s field.
+When a parameterized calculated field returns a record, you need to support binding of individual fields of this record to format elements. In such cases there will be no parent binding that contains the value of an argument to call a parameterized calculated field — this value must be defined in the binding of a single record’s field.
 
 ### Start adding a new calculated field
 
