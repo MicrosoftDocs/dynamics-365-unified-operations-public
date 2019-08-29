@@ -79,7 +79,7 @@ For more information about the updates that will be applied, see [Microsoft Secu
 During operating system–level updates, LCS doesn't currently indicate that any patching is in progress. However, Microsoft plans to add this functionality at some point.
 
 ### What environments are updated?
-Operating system–level updates are applied to all Tier-2 sandbox environments that are included as part of the Microsoft base offer. They are also applied to add-ons that have been purchased. However, other environments, such as Tier-1 sandbox and demo environments, are the responsibility of the customer or partner.
+Operating system–level updates are applied to all Microsoft managed environments that are included as part of the Microsoft base offer. This includes your Tier 1, Tier 2 through Tier 5 and Production environments. They are also applied to add-ons that have been purchased. However, other environments, such as environments hosted in your subscription (known as Cloud hosted environments), are the responsibility of the customer or partner.
 
 ### What notifications will I receive about upcoming planned maintenance?
 You will receive a notification email five days before the update is scheduled to occur. This email will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you might have to take.
