@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: andreabichsel
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,20 +29,23 @@ ms.search.validFrom: 2019-08-27
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (August 27, 2019)"
+# What's new or changed in Dynamics 365 for Talent (August 27, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2447.
+
+Changes described in this section apply to build number 8.1.2447. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Preview features are enabled only in sandbox instances
 
@@ -54,35 +57,35 @@ For more information about how changes are published, see [Provision Talent](./p
 
 A new option will let managers view the performance of both their direct reports and their extended reports. Currently, line managers can assign and update performance goals and issue new reviews. In addition, direct managers and their employees can maintain and update performance journals to help ensure that the performance review process goes smoothly. When this change is implemented, managers will be able to view and maintain performance-related information for their extended reports in addition to their direct reports.
 
-### Deleting legal entities is allowed if employees exist within the company (339849)
+### Deleting legal entities isn't allowed if employees exist within the company (339849)
 
-With this change, companies cannot be removed/deleted when employees and other related data exists for the legal entity.
+With this change, you can't remove or delete companies if employees and other related data exist for the legal entity.
 
-### Compensation management BI analytics not matching on the compensation workspace (322493)
+### Compensation management business intelligence analytics don't match on the compensation workspace (322493)
 
-In this release, the compensation analytics has been adjusted to accurately reflect the plans assigned to employees.
+In this release, compensation analytics have been adjusted to accurately reflect the plans assigned to employees.
 
-### Workflow "placeholder" %company% displays DAT in when hiring employees through workflow (343905)
+### Workflow placeholder %company% displays DAT when hiring employees through workflow (343905)
 
-With this release, the company placeholder will display the legal entity that is associated with the employment of the new employee.
+With this release, the company placeholder displays the legal entity that is associated with the employment of the new employee.
 
-### CDSJobPositionEntity displays an error when valid to date is set (349387)
+### The CDSJobPosition entity displays an error when valid to date is set (349387)
 
-In this release, the Position Detail and the Position Duration data sources on the CDSJobPosition entity allow for edits from CDS to the date effective fields. 
+In this release, the **Position detail** and the **Position duration** data sources on the **CDSJobPosition** entity allow for edits from Common Data Service to the **Date effective** fields. 
 
-### Employee Termination, last day worked is populated on the Assignment end date (332496)
+### For employee termination, the last day worked is populated on Assignment end date (332496)
 
-This change will now default the position assignment end date to the employment end date. These defaults can be changed during the entry process.
+This change now defaults the position **Assignment end date** to the **Employment end date**. You can change these defaults while entering data.
 
-### Legal entities not limited with hire (338871)
+### Legal entities aren't limited with hire (338871)
  
-This change will restrict the hiring process to only show those legal entities the user has access to.  
+This change restricts the hiring process to only show those legal entities the user has access to.  
 
 ## In preview
 
 ### Streamlined employee entry and navigation
 
-This functionality is now available in sandbox and trial environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
+This functionality is now available in sandbox and trial environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This enables these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md).
 
