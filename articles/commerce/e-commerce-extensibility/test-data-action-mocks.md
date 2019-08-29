@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Test modules with data action mocks
-description: This topic describes how to test modules with data action mocks.
+title: Test modules by using data action mocks
+description: This topic describes how to test modules by using data action mocks.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,22 +28,22 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Test modules with data action mocks
+# Test modules by using data action mocks
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test modules with data action mocks.
+This topic describes how to test modules by using data action mocks.
 
 ## Overview
 
-To test a module without invoking the actual actions, you can create a data action mock that will replace the output of an action with the data specified in the loaded actionmock.json file. 
+To test a module without invoking the actual actions, you can create a data action mock that replaces the output of an action with the data that is specified in the loaded actionmock.json file. 
 
 ## Action mock structure
 
-Action mocks should be created by the action developer and represent the expected output data of an action.
+Action mocks should be created by the action developer. They should represent the expected output data of an action.
 
-The placement of the mock file is as follows.
+The following example shows the placement of the action mock file.
 
 ```
 src
@@ -53,7 +53,7 @@ src
 |__|__my-package.actionmock.json
 ```
 
-Alternatively, it could be placed under a module.
+Alternatively, the mock file can be put under a module.
 
 ```
 src
@@ -64,7 +64,7 @@ src
 |__|__|__|__MODULE_NAMEMock.actionmock.json
 ```
 
-The MODULE_NAMEMock.actionmock.json should be structured as follows.
+The following example shows how the MODULE\_NAMEMock.actionmock.json file should be structured.
 
 ```json
 {
@@ -78,11 +78,12 @@ The MODULE_NAMEMock.actionmock.json should be structured as follows.
 }
 ```
 
-If no CacheKey is specified, all actions with the corresponding CacheObjectType will receive the mock output.
+If no **CacheKey** value is specified, all actions that have the corresponding **CacheObjectType** value receive the mock output.
 
 ## Example
 
-The following example is for a data action mock that returns product data.
+The following example shows a data action mock that returns product data.
+
 ```
 [
     {
@@ -105,14 +106,15 @@ The following example is for a data action mock that returns product data.
         }
     }
 ]
-
-Note the “CacheObjectType” and “CacheKey” values should match the ones in the data action you are mocking.  If no CacheKey is specified all actions with the corresponding CacheObjectType will get the mock output.
 ```
 
-## Use an action mock in preview
+> [!NOTE]
+> The **CacheObjectType** and **CacheKey** values should match the values in the data action that you're mocking. If no **CacheKey** value is specified, all actions that have the corresponding **CacheObjectType** value receive the mock output.
 
-To use an action mock in your preview, include the 'actionMock' query string parameter using the name of the module along with the file name for the mock file created above "MODULE_NAME:MOCK_FILE_NAME":
+## Use an action mock in a preview
+
+To use an action mock in your preview, include the **actionMock=MODULE\_NAME:MOCK\_FILE\_NAME** query string parameter. Replace **MODULE\_NAME** with the name of the module and **MOCK\_FILE\_NAME** with the file name of the action mock file that you created earlier.
 
 `https://localhost:4000/modules?type=MODULE_NAME&actionMock=MODULE_NAME:MODULE_NAMEMock`
 
-If no action mock file name is used, the package name will be used to search for a mock.
+If no mock file name is specified, the package name is used to search for a mock.
