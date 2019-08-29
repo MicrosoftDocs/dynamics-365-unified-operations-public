@@ -5,7 +5,7 @@ title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: manalidongre
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 08/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-and-ops/get-started/one-version.md) to your cloud service.
 
 ### How does a planned maintenance window work?
-For planned maintenance scheduled on your Tier 2 through Tier 5 sandbox environments and production environments, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders. For Microsoft-managed Tier 1 environments we will not send any notifications before the update. 
+For planned maintenance scheduled on your Tier 2 through Tier 5 sandbox environments and production environments, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders. For Microsoft-managed Tier 1 environments, we will not send any notifications before the update. 
 
 ### When is this planned maintenance window taken?
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall into one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
