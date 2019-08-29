@@ -1,34 +1,37 @@
 ---
 # required metadata
 
-title: Online components
+title: E-Commerce components
 description: This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # E-Commerce components
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic contains a high-level summary of some frequently used configuration components that the Microsoft Dynamics 365 Commerce online software development kit (SDK) provides access to.
 
@@ -54,7 +57,7 @@ You can create custom data actions and use them in your modules. Custom data act
 
 ## Themes
 
-Themes contain site-wide Cascading Style Sheets (CSS) style definitions. They also let you add custom module specific CSS style definitions. You can set a site theme in the authoring tools. All pages will then use that theme by default. You can add additional themes and set them either on a template, or a layout, or on a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They also let you add custom module specific CSS style definitions. You can set a site theme in the authoring tools. All pages will then use that theme by default. You can add additional themes and set them either on a template, or a layout, or on a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
 
 ## Script injectors
 
