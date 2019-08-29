@@ -229,7 +229,6 @@ All the possible colors in Finance and Operations are available in Common Data S
 
 Source field | Map type | Destination field
 ---|---|---
-COLORID | \>\> | msdyn\_name
 COLORID | \>\> | msdyn\_productcolorname
 
 ### Sizes
@@ -239,7 +238,6 @@ All the possible sizes in Finance and Operations are available in Common Data Se
 Source field | Map type | Destination field
 ---|---|---
 SIZEID | \>\> | msdyn\_productsize
-SIZEID | \>\> | msdyn\_name
 
 ### Styles
 
@@ -248,7 +246,6 @@ All the possible styles in Finance and Operations are available in Common Data S
 Source field | Map type | Destination field
 ---|---|---
 STYLEID | \>\> | msdyn\_productstyle
-STYLEID | \>\> | msdyn\_name
 
 ### Configurations
 
