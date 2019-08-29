@@ -37,15 +37,15 @@ This topic describes how to clone a starter kit module.
 
 ## Overview
 
-The Dynamics 365 Commerce Online SDK includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.
+The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.
 
 ## Clone and update a module
 
-To clone a module and then update it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. In this command, **SDK\_MODULE\_NAME** is the name of the module that you want to modify, and **NEW\_MODULE\_NAME** is the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
+To clone a module and then update it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. When you run this command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
 
 ## Example
 
-The following example shows the command that is used to clone the hero SDK module so that you can update it.
+The following example shows how to clone the hero SDK module so that you can update it.
 
 ```
 yarn msdyn365 clone hero heroExtended
@@ -53,19 +53,19 @@ yarn msdyn365 clone hero heroExtended
 
 It can take one to two minutes to clone the module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
-[!NOTE]
-Cloning a module does not pull down the module dependencies automatically. You will need to run Yarn and fix any missing dependencies before building the module.
+> [!NOTE]
+> Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.
 
 ## Preview a module
 
-To preview the new module in a local web browser, do the following.
+To preview the new module in a local web browser, follow these steps.
 
-1. At a command prompt, go to your root SDK folder and run the **yarn start** command. Here is an example:
+1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
 
-1. Open the following URL in a web browser: `https://localhost:4000/modules?type=heroV2`. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
+2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=heroV2`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 You can now update the module code as needed.
