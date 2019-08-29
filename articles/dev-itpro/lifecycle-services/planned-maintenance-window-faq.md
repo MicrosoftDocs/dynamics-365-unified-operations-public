@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-and-ops/get-started/one-version.md) to your cloud service.
 
 ### How does a planned maintenance window work?
-For all planned maintenance, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders.
+For planned maintenance scheduled on your Tier 2 through Tier 5 sandbox environments and production environments, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders. For Microsoft-managed Tier 1 environments we will not send any notifications before the update. 
 
 ### When is this planned maintenance window taken?
 To limit the impact on users, the maintenance window is planned according to the region where environments are deployed. The following list shows the maintenance window for each region. All environments fall into one of these three regions. The times are shown in Coordinated Universal Time (UTC, which is also known as Greenwich Mean Time).
@@ -72,6 +72,9 @@ Most operating system–level updates are completed in approximately one hour. H
 
 The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
 
+### How frequent are the updates?
+Operation system level updates are applied monthly to your Microsoft-managed Tier 2 through Tier 5 sandbox environments and to the production environments. However, Microsoft-managed Tier 1 environments are updated weekly in the maintenance windows defined per region.
+
 ### Where can I learn more about what is applied?
 For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/security/bulletins.aspx).
 
@@ -79,10 +82,10 @@ For more information about the updates that will be applied, see [Microsoft Secu
 During operating system–level updates, LCS doesn't currently indicate that any patching is in progress. However, Microsoft plans to add this functionality at some point.
 
 ### What environments are updated?
-Operating system–level updates are applied to all Microsoft managed environments that are included as part of the Microsoft base offer. This includes your Tier 1, Tier 2 through Tier 5 and Production environments. They are also applied to add-ons that have been purchased. However, other environments, such as environments hosted in your subscription (known as Cloud hosted environments), are the responsibility of the customer or partner.
+Operating system–level updates are applied to all Microsoft-managed environments that are included as part of the Microsoft base offer. This includes your Tier 1, Tier 2 through Tier 5 and Production environments. They are also applied to add-ons that have been purchased. However, other environments, such as environments hosted in your subscription (known as Cloud hosted environments), are the responsibility of the customer or partner.
 
 ### What notifications will I receive about upcoming planned maintenance?
-You will receive a notification email five days before the update is scheduled to occur. This email will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you might have to take.
+You will receive a notification email for the scheduled update on your Tier 2 to Tier 5 sandbox environment and production environment, five days before the update is scheduled to occur. This email will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you might have to take. We do not send notifications for Microsoft-managed Tier 1 environments. 
 
 ### Will I be notified when the update is completed?
 If your update is completed within the defined maintenance window, you won't receive any notification when the update is completed. 
