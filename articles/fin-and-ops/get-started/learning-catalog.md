@@ -43,7 +43,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Administrators
 
-        Do you need to keep data flowing round-the-clock?
+        Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
         [Onboarding](learning-catalog-administrator.md)
 
@@ -52,7 +52,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Developers
 
-        Do you need to build an application, connect to a new data source, or extend core functionality? 
+        Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
         [Get started](learning-catalog-developer.md)
 
@@ -68,7 +68,7 @@ Find the right online training, in person workshops, and events for your role as
 
         ### Implementation Project Managers
 
-        Are you in charge of making sure an implementation goes smoothly? 
+        Are you in charge of making sure your company’s implementation goes smoothly?
 
         [Core platform knowledge](learning-catalog-project-manager.md)
 
