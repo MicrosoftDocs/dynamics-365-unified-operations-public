@@ -100,7 +100,7 @@ The following illustrations show the associations between work order project gro
 
 ![Figure 5](media/05-integration-to-pma.png)
 
-For information about how to set up work order projects, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md). For information about how to create work order lifecycle states, see [Work order lifecycle states](../setup-for-work-orders/work-order-stages.md).
+For information about how to set up work order projects, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md). For information about how to create work order lifecycle states, see [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 The following illustration shows a graphical overview of the various projects that are created in the **Asset management** module to enable integration with the **Project management and accounting** module. It also shows the work processes that the projects are related to.
 
