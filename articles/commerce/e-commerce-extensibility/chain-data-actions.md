@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Chain Data Actions
+title: Chain data actions
 description: This topic describes how to chain data actions.
 author: samjarawan
 manager: annbe
@@ -37,13 +37,13 @@ This topic describes how to chain data actions.
 
 ## Overview
 
-To create a maintainable and compact codebase, you will often need a suite of composable data actions that can use one another easily to create more complex code flows. The Dynamics 365 Commerce Online SDK offers the ability to seamlessly chain data actions while still providing all the out-of-the-box benefits of the data action architecture (caching, batching and deduping).
+To create a maintainable and compact codebase, you will often need a suite of composable data actions that can easily use each another to create more complex code flows. The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) lets you seamlessly chain data actions but still provide all the out-of-box benefits of the data action architecture (caching, batching, and deduplicating).
 
 ## Examples
 
-The example below shows data action chaining which first makes a product information call, followed by an inventory call.
+The following examples show data action chaining. First, a product information call is made. This call is followed by an inventory call.
 
-First you'll see a data action to get product information, then a data action to get inventory information.
+The first example shows a data action that gets product information.
 
 ```Typescript
 // get-product.ts
@@ -59,12 +59,10 @@ import { ProductInput } from './inputs/product-input';
 export class ProductInput implements IActionInput {
     public channelId: number;
     public productId: number;
-
     constructor(productId: number, channelId: number) {
         this.channelId = channelId;
         this.productId = productId;
     }
-
     public getCacheKey = () => `${this.channelId}-${this.productId}`;
     public getCacheObjectType = () => 'Product';
     public dataCacheType = (): Msdyn365.CacheType => 'application';
@@ -82,11 +80,9 @@ async function getSimpleProductAction(input: ProductInput, ctx: IActionContext):
     // Make the HTTP Request
     return sendCommerceRequest<SimpleProduct>(requestUrl, 'get'})
         .then((response: IHTTPResponse) => {
-
             if(response.data) {
                 return response.data;
             }
-
             ctx.trace('[getSimpleProductAction] Invalid response from server');
             return <SimpleProduct>[];
         })
@@ -106,6 +102,8 @@ export default createObservableDataAction({
     action: <IAction<SimpleProduct>>getSimpleProductAction
 });
 ```
+
+The second example shows a data action that gets inventory information.
 
 ```typescript
 // check-inventory.ts
@@ -131,11 +129,9 @@ async function getProductAvailabilityAction(input: ProductInput, ctx: IActionCon
     // Make the HTTP Call and handle the response
     return sendCommerceRequest<ProductAvailableQuantity>(requestUrl, 'post', requestBody)
         .then((response: IHTTPResponse) => {
-
             if(response.data) {
                 return response.data;
             }
-
             ctx.trace('[getProductAvailabilityAction] Invalid response from server');
             return <ProductAvailableQuantity>[];
         })
@@ -151,9 +147,10 @@ export default createObservableDataAction({
     action: getProductAvailabilityAction
 })
 ```
-Now that we have an action for getting the product data and `ProductAvailableQuantity` of a product, we can create a new chain data action. Chain data actions are just data actions that invoke other data actions as part of their execution.
 
-The example below shows a chain data action `getProductWithAvailability` that uses both of these actions.
+Now that you have actions for getting the product data and the **ProductAvailableQuantity** value of a product, you can create a new chain data action. Chain data actions are just data actions that invoke other data actions as part of their execution.
+
+The following example shows the **getProductWithAvailability** chain data action, which uses both the preceding actions.
 
 ```typescript
 import getProduct, { ProductInput } from './get-product';
@@ -161,7 +158,7 @@ import getProductAvailability from './check-inventory';
 
 /**
  * This interface will be the return type of our chain data action.
- * This contains both the basic product information in addition to the products availablility information.
+ * This contains both the basic product information in addition to the product's availability information.
  */
 export interface SimpleProductWithAvailablility extends SimpleProduct {
     availability: ProductAvailableQuantity
@@ -174,7 +171,7 @@ async function getProductWithAvailabilityAction(input: ProductInput, ctx: IActio
     // First we get the product
     const product: SimpleProductWithAvailablility = await <SimpleProductWithAvailablility>getProduct(input, ctx);
 
-    // If we successfully get the product, then we try to get it's availability information.
+    // If we successfully get the product, then we try to get its availability information.
     if(product) {
         // Get the availability information
         product.availability = await getProductAvailability(input, ctx)
@@ -188,4 +185,4 @@ export default createObservableDataAction({
 })
 ```
 
-Now we can use our newly created chain action anywhere we need both the basic product information and its current inventory status. In addition, the calls that exist within the chain action will still be run through the cache, and also batched and deduped with other actions being run on the same page.
+You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action are still run through the cache. They are also batched and deduplicated together with other actions that are run on the same page.
