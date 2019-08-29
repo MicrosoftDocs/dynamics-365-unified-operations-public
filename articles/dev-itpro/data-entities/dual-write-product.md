@@ -257,9 +257,6 @@ All the possible configurations in Finance and Operations are available in Commo
 Source field | Map type | Destination field
 ---|---|---
 CONFIGURATIONID | \>\> | msdyn\_name
-CONFIGURATIONID | \>\> | msdyn\_productconfiguration
-CONFIGURATIONID | \>\> | msdyn\_name
-CONFIGURATIONID | \>\> | msdyn\_productconfiguration
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
 
