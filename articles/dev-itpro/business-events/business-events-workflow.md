@@ -97,4 +97,4 @@ There are a number of key factors that need to work correctly in order for workf
 
 - **Flow** - Ensure that the Flow subscription is available in the **System administration > Setup > Business events > Business events catalog** on the **Active events** tab. If the Flow subscription isn't there, then check the Flow and recreate it if needed.
 
-- **Business events** - Ensure that other business events are occurring by creating a Flow to trigger off another business event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it.
+- **Business events** - Ensure that other business events are occurring by creating a Flow to trigger off another business event. For example, the Free Text Invoice Posted event can be triggered by simply creating a Free Text Invoice with a single line and posting it. For help with this, see [Business Events Troubleshooting](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/troubleshooting).
