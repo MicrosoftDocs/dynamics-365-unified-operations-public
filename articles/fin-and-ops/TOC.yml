@@ -4540,7 +4540,7 @@
       items:
       - name: Work breakdown structures overview
         href: ../financials/project-management/work-breakdown-structures.md
-      - name: Microsoft Project client integration
+      - name: Microsoft Project Client integration
         href: ../financials/project-management/project-integration.md
     - name: Project mobile applications overview
       href: ../financials/project-management/project-mobile-application-overview.md
