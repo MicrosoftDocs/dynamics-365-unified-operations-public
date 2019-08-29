@@ -638,7 +638,7 @@ fileName
 ## Class VSProjectLinkNode
     class VSProjectLinkNode extends VSItemNode
 
-The VSProjectLinkNode class represents links to other Finance and Operations Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.
+The VSProjectLinkNode class represents links to other Application Object Tree (AOT) nodes in the Microsoft Visual Studio project nodes in the AOT.
 
 ### Remarks
 

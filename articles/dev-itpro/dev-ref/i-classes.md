@@ -3199,7 +3199,7 @@ usTableId
 | public str createdBy(\[str value\])      | Gets or sets the name of the user who created the application object.                                                                     |
 | public Date creationDate(\[Date value\]) | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])   |                                                                                                                                           |
-| public str name(\[str value\])           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])       |                                                                                                                                           |
 | public str query(\[str value\])          |                                                                                                                                           |
 | public void new()                        | Initializes a new instance of the InfoPart class.                                                                                         |
@@ -3300,7 +3300,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3364,7 +3364,7 @@ Initializes a new instance of the InfoPart class.
 | public str dataSource(\[str value\])              | Gets or sets a data source that will be used by the control or the form.                                                                  |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                     |
 | public boolean manualRetrieval(\[boolean value\]) |                                                                                                                                           |
-| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int style(\[int value\])                   |                                                                                                                                           |
 | public void new()                                 | Initializes a new instance of the InfoPartField class.                                                                                    |
 
@@ -3432,7 +3432,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3485,7 +3485,7 @@ Initializes a new instance of the InfoPartField class.
 | public str dataGroup(\[str value\])                            |                                                                                                                                               |
 | public str dataSource(\[str value\])                           | Gets or sets a data source that will be used by the control or the form.                                                                      |
 | public int labelPosition(\[int value\])                        |                                                                                                                                               |
-| public str name(\[str value\])                                 | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                 | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public boolean repeating(\[boolean value\])                    |                                                                                                                                               |
 | public int rowCountWhenSmall(\[int value\], \[AutoMode mode\]) |                                                                                                                                               |
 | public AutoMode rowCountWhenSmallMode(\[AutoMode mode\])       |                                                                                                                                               |
@@ -3546,7 +3546,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

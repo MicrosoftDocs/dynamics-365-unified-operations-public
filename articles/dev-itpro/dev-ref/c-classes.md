@@ -64,7 +64,7 @@ This class lets you create, read, update, and delete X++ code and metadata. Make
 | public int iD(\[int value\])                      |                                                                                                                                               |
 | public boolean isDetached()                       |                                                                                                                                               |
 | public int legacyId(\[int value\])                |                                                                                                                                               |
-| public str name(\[str value\])                    | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                |                                                                                                                                               |
 | public int runOn(\[int value\])                   |                                                                                                                                               |
 | public void AOTedit(\[int Line\], \[int Column\]) | Opens the class so that it can be modified in the editor.                                                                                     |
@@ -197,7 +197,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -4630,7 +4630,7 @@ salt
 | public str label(\[str value\])                | Gets or sets the label for a control.                                                                                                     |
 | public str LabelId()                           |                                                                                                                                           |
 | public str menuItemName(\[str value\])         |                                                                                                                                           |
-| public str name(\[str value\])                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                 | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])             |                                                                                                                                           |
 | public str previewPartReference(\[str value\]) |                                                                                                                                           |
 | public boolean showAlert(\[boolean value\])    |                                                                                                                                           |
@@ -4776,7 +4776,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -4901,7 +4901,7 @@ cueName
 | public str creationTime(\[str value\])   |                                                                                                                                               |
 | public str label(\[str value\])          | Gets or sets the label for a control.                                                                                                         |
 | public str LabelId()                     |                                                                                                                                               |
-| public str name(\[str value\])           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])       |                                                                                                                                               |
 | public void new(str cueGroupName)        | Initializes a new instance of the TreeNode class.                                                                                             |
 
@@ -5011,7 +5011,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -5065,7 +5065,7 @@ cueGroupName
 | Method                                | Description                                                                                                                       |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | public str cue(\[str value\])         |                                                                                                                                   |
-| public str name(\[str value\])        | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])        | Gets or sets the name used in code to identify a form, report, table, query, or other application object. |
 | public void new(str cueReferenceName) | Initializes a new instance of the TreeNode class.                                                                                 |
 
 ### Method cue
@@ -5080,7 +5080,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

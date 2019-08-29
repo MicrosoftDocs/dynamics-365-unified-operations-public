@@ -60,7 +60,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str createdBy(\[str value\])                        | Gets or sets the name of the user who created the application object.                                                                         |
 | public Date creationDate(\[Date value\])                   | Gets or sets the date that an application object was created.                                                                                 |
 | public str creationTime(\[str value\])                     |                                                                                                                                               |
-| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                               |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code of this node.                                                                                                            |
 | public void AOTrun()                                       | Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).                                                |
@@ -162,7 +162,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

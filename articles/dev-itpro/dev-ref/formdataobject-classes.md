@@ -602,7 +602,7 @@ The following example supplies a custom query for a field instead of the automat
 | public int maxAccessRight(\[int value\])                                                                                       |                                                                                                                                                          |
 | public int maxRecordsToLoad(\[int value\])                                                                                     |                                                                                                                                                          |
 | public Int64 maxPagingRowCountValue(\[Int64 newValue\])                                                                        |                                                                                                                                                          |
-| public str name(\[str value\])                                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                  |
+| public str name(\[str value\])                                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                  |
 | public int next()                                                                                                              | Moves the focus to the next record in the data source.                                                                                                   |
 | public int nextPage(int pageSize)                                                                                              | Moves a specified number of records forward in the data source.                                                                                          |
 | public int numberOfRowsLoaded(\[boolean redirectToMasterDS\])                                                                  |                                                                                                                                                          |
@@ -1580,7 +1580,7 @@ newValue
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2820,7 +2820,7 @@ e
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -4557,7 +4557,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -5714,7 +5714,7 @@ Displays the control.
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -7298,7 +7298,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -9944,7 +9944,7 @@ form
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                                                                     |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                                                              |
 | public int multiSelect(\[int value\])                                                                       |                                                                                                                                                                                                                       |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                                                               |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                                                               |
 | public int neededPermission(\[int value\])                                                                  | Specifies the minimum permission level that is required to be allowed access to the control.                                                                                                                          |
 | public int needsRecord(\[int value\])                                                                       | Specifies whether a button is enabled if no record is present. The default value is No.                                                                                                                               |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                                                                                                       |
@@ -11240,7 +11240,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -12319,7 +12319,7 @@ overrideObject
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                 |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                                           |
@@ -13695,7 +13695,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

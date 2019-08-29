@@ -2367,7 +2367,7 @@ The attachments are numbered from 1. Therefore, the first attachment should be n
 | Method                                    | Description                                                                                                                                   |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | public str address(\[str Address\])       |                                                                                                                                               |
-| public str name(\[str Name\])             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str Name\])             | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int recipClass(\[int RecipClass\]) |                                                                                                                                               |
 | public void new()                         | Initializes a new instance of the MapiRecipDesc class.                                                                                        |
 | public void finalize()                    |                                                                                                                                               |
@@ -2384,7 +2384,7 @@ Address
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str Name])
 
@@ -2805,7 +2805,7 @@ The following example uses the TreeNode::findNode method to assign the node for 
 | public boolean canAddEventHandler()                        |                                                                                                                                         |
 | public boolean isEvent()                                   |                                                                                                                                         |
 | public boolean isStatic()                                  | Indicates whether a method is static.                                                                                                   |
-| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public void AOTedit(\[int Line\], \[int Column\])          | Opens the appropriate editor for a specified node in the AOT.                                                                           |
 | public void new()                                          | Initializes a new instance of the MemberFunction class.                                                                                 |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code for a specified node in the AOT, such as a class or method.                                                        |
@@ -2848,7 +2848,7 @@ This method is associated with a specified node in the AOT, such as a form, repo
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3430,7 +3430,7 @@ A menu item represents the user interface of a menu function. Menu items are lin
 | public str menuFunctionName(\[str name\])                  |                                                                                                                                               |
 | public str menuItemName(\[str value\])                     |                                                                                                                                               |
 | public MenuItemType menuItemType(\[MenuItemType value\])   |                                                                                                                                               |
-| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public str parameter(\[str parameter\])                    |                                                                                                                                               |
 | public str parameters(\[str value\])                       | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                        |
 | public str shortCut(\[str value\])                         |                                                                                                                                               |
@@ -3500,7 +3500,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
