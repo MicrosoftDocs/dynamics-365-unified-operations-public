@@ -2,38 +2,44 @@
 # required metadata
 
 title: Module data file
-description: The MODULE_NAME.data.ts file contains data actions that are used by the module to fetch data. 
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+description: A module data file contains the typings for data actions that are used by the module to fetch data. 
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
-
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 # Module data file
-The MODULE_NAME.data.ts file contains the typings for data actions that are used by the module to fetch data. A set of core data actions are included in the SDK that can get data from the Dynamics 365 Retail, Ratings and Review or the Recommendations service. The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
-Below is a sample data file for a new module
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+A module data file contains the typings for data actions that are used by the module to fetch data. The naming convention for a module data file is MODULE_NAME.data.ts.
+
+A set of core data actions are included in the SDK that can get data from Dynamics 365 Retail ratings and reviews or the recommendations service.  The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
 
 ## Example
+
+The following example shows a sample data file for a new module.
+
 ```typescript
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
