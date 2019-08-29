@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named Fleet Management tutorial in Microsoft Dynamics 365 for Finance and Operations. You'll also create and edit new model elements.
+In this tutorial, you'll use Visual Studio's Dynamics 365 menu to create a new model named **Fleet Management tutorial**. You'll also create and edit new model elements.
 
 ## Prerequisites
 
-This tutorial requires that you have access to a Finance and Operations environment, and that you be provisioned as an administrator
+This tutorial requires that you have access to an environment, and that you be provisioned as an administrator
 
 ## Keywords
 - **Model** - You configure your model to refer to two other models. This enables your model to reference metadata and code elements that are in other packages.
