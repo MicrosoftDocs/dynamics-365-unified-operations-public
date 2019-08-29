@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Share state across modules
 
-This topic covers sharing state across multiple modules by using data actions in Dynamics 365 Commerce.
+This topic describes how to share state across multiple modules by using data actions in Dynamics 365 Commerce.
 
 ## Overview
 
@@ -120,7 +120,7 @@ This data action has no implementation in its current state, all it does is crea
 }
 ```
 
-Both of the modules are now registered to the data action, which means they are both observing the same object in the application state. The only thing left to do is update the application state when the `sample-button` module has a user click event. Then all modules observing the app state should automatically update accordingly. Below is an example of a `sample-message` module.
+Both of the modules are now registered to the data action, which means they are both observing the same object in the application state. The only thing left to do is update the application state when the `sample-button` module has a user click event, after which all modules observing the app state should update automatically. The following example shows a `sample-message` module.
 
 ```typescript
 // sample-message.data.ts
