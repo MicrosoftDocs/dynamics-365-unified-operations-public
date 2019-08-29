@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Theme settings
-description: The Dynamics 365 Commerce e-Commerce extensibility software development kit (SDK) enables theme designers to specify various layouts for each module.
+title: Configure theme settings
+description: This topic describes how to configure theme settings in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,16 +28,20 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Theme settings
+# Configure theme settings
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
+This topic describes how to configure theme settings in Dynamics 365 Commerce.
+
+## Overview
 
 The Dynamics 365 Commerce e-Commerce extensibility software development kit (SDK) enables theme designers to specify various layouts for each module. Theme designers can then control specific layout options for images. These layouts are specified in the theme.settings.json file in /src/settings/src/settings.
 
 ## Example theme.settings.json file
 
-The following example shows how module layouts with specific size values for image settings can be added to the the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. In the following example, the **productFeature** module is configured so that it has two layouts: **layout1** and **layout2**. The **layout1** layout specifies height and width image settings for the **sm** and **lg** viewport sizes.
+The following example shows how module layouts with specific size values for image settings can be added to the theme.settings.json file. Each layout will be exposed in the authoring tool when the module is configured. The **productFeature** module is configured so that it has two layouts: **layout1** and **layout2**. The **layout1** layout specifies height and width image settings for the **sm** and **lg** viewport sizes.
 
 ``` json
 {
