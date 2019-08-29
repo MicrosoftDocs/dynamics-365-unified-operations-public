@@ -81,37 +81,39 @@ Buy box uses three settings that are defined in the App Settings
 
 ## Retail server interaction 
 
-Buy box retrieves product information using Retail Server APIs. Using the product id from the page context all information is retrieved. [TBD more details] 
+Buy box retrieves product information using Retail Server APIs. Using the product id from the page context all information is retrieved. 
 
 ## Authoring a Buy Box 
 
 This section explains how to add a buy box module to a new page and set the required properties.  
 
-1. In tooling, create a new page template “Buy Box template”.  
+1. In tooling, create a new fragment “Buy Box fragment” and add BuyBox module.
 
-1. In the Main slot of the template, add Buy Box. 
+2. In the Media slot of the Buy Box module, add Media Gallery 
 
-1. Check-in and Publish.  
+3. In the Content slot of the Buy Box module, add the modules– Product Name, Product Ratings, Product Price, Product Description, Product Configure, Add to Cart, Add to Wishlist and Find in store. 
 
-1. Now create a new page with the “Buy Box template” and call it “Buy box page” 
+4. The modules in Content slot can be rearranged as needed to achieve the layout needed 
 
-1. On the page outline, add Default page 
+5. Select the Find in Store module. To the slot inside this module, add Pick up in Store.  
 
-1. To the Default page, add Buy Box module 
+6. To the slot inside Pick up in store module, add Store search by Bing Maps.  
 
-1. In the Media slot of the Buy Box module, add Media Gallery 
+7. Check-in and publish.
 
-1. In the Content slot of the Buy Box module, add the modules– Product Name, Product Ratings, Product Price, Product Description, Product Configure, Add to Cart, Add to Wishlist and Find in store. 
+8. Create a template for a PDP, "PDP template"
 
-1. The modules in Content slot can be rearranged as needed to achieve the layout needed 
+9. Add Default page. To the Main slot of the Default page, add "Buy box fragment"
 
-1. Select the Find in Store module. To the slot inside this module, add Pick up in Store.  
+10. Save. Checkin and Publish
 
-1. To the slot inside Pick up in store module, add Store search by Bing Maps.  
+11. Create a page with "PDP template" called "PDP page"
 
-1. Save and Preview. Some modules may not render as they don’t have a product context. To the Preview URL add *?productid=<insert product id>*. This will load the Preview page with the product context and will render the page in preview correctly. 
+12. Add the buy box fragment to the Main slot of the default page.
 
-1. Check-in and Publish 
+13. Save.  To Preview URL add *?productid=<insert product id>*. This will load the Preview page with the product context and will render the page in preview correctly. 
+
+14. Check-in and Publish 
 
  
 
@@ -119,4 +121,3 @@ A buy box appears on the product details page.  See Quick Tour of Product Detail
 
 If specific products need a more enriched or specialized product details page, see Enrich a product details page for details <link>. 
 
-Buy box can be built as a Fragment since it does not change from page to page. The Pickup in Store module can also be built as a Fragment<link> as it will be used in both Cart and Buy Box. 
