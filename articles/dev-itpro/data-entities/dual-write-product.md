@@ -597,3 +597,11 @@ GROUPDESCRIPTION | = | msdyn_groupdescription
 ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
 ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
 
+### All product to msdyn_global products
+
+The all products entity contains all the products available in Dynamics 365 for Finance and Operations, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTNAME | >> | msdyn_productname
+PRODUCTNUMBER | >> | msdyn_productnumber
