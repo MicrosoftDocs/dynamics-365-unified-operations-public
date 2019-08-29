@@ -73,7 +73,7 @@ Most operating system–level updates are completed in approximately one hour. H
 The exact downtime for all updates will be included in the maintenance window notification email that is sent to you before the start of the update.
 
 ### How frequent are the updates?
-Operation system level updates are applied monthly to your Microsoft-managed Tier 2 through Tier 5 sandbox environments and to the production environments. However, Microsoft-managed Tier 1 environments are updated weekly in the maintenance windows defined per region.
+Operating system–level updates are applied monthly to your Microsoft-managed Tier 2 through Tier 5 sandbox environments and to the production environments. However, Microsoft-managed Tier 1 environments are updated weekly in the maintenance windows defined per region.
 
 ### Where can I learn more about what is applied?
 For more information about the updates that will be applied, see [Microsoft Security Bulletins](https://technet.microsoft.com/security/bulletins.aspx).
@@ -82,7 +82,7 @@ For more information about the updates that will be applied, see [Microsoft Secu
 During operating system–level updates, LCS doesn't currently indicate that any patching is in progress. However, Microsoft plans to add this functionality at some point.
 
 ### What environments are updated?
-Operating system–level updates are applied to all Microsoft-managed environments that are included as part of the Microsoft base offer. This includes your Tier 1, Tier 2 through Tier 5 and Production environments. They are also applied to add-ons that have been purchased. However, other environments, such as environments hosted in your subscription (known as Cloud hosted environments), are the responsibility of the customer or partner.
+Operating system–level updates are applied to all Microsoft-managed environments that are included as part of the Microsoft base offer. This includes your Tier 1, Tier 2 through Tier 5, and Production environments. They are also applied to add-ons that have been purchased. However, other environments, such as environments hosted in your subscription (known as Cloud hosted environments), are the responsibility of the customer or partner.
 
 ### What notifications will I receive about upcoming planned maintenance?
 You will receive a notification email for the scheduled update on your Tier 2 to Tier 5 sandbox environment and production environment, five days before the update is scheduled to occur. This email will include information about the environments that will be updated, the update type, the estimated amount of time that the update will take, and any action that you might have to take. We do not send notifications for Microsoft-managed Tier 1 environments. 
