@@ -75,7 +75,7 @@ Class FormListBoxControl
 | public int displayLength(\[int value\], \[AutoMode mode\])                                                  |                                                                                                                                                                         |
 | public AutoMode displayLengthMode(\[AutoMode mode\])                                                        |                                                                                                                                                                         |
 | public int displayLengthValue(\[int value\])                                                                |                                                                                                                                                                         |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int doubleClick()                                                                                    |                                                                                                                                                                         |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
@@ -679,7 +679,7 @@ value
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -2850,7 +2850,7 @@ Width
 | public boolean delete(int Idx)                                                                              | Deletes a specified item from a form list control.                                                                                                                      |
 | public boolean deleteAll()                                                                                  | Deletes all the items from a form list control.                                                                                                                         |
 | public boolean deleteColumn(int Idx)                                                                        | Deletes a specified column in a form list control.                                                                                                                      |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Identifies when a user drags an object over an item within the bounds of a form list control.                                                                           |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -4109,7 +4109,7 @@ The following example shows a call to the deleteColumn method to delete the firs
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -8069,7 +8069,7 @@ Data
 | public CLRObject control()                                                                                  |                                                                                                                                                                         |
 | public str countryRegionCodes(\[str value\])                                                                | Gets or sets the comma-separated list of country/region codes for the control.                                                                                          |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -8353,7 +8353,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -9776,7 +9776,7 @@ Sets the focus on the control.
 | public str disabledImage(\[str value\])                                                                             | Gets or sets the disabled image of the button.                                                                                                                          |
 | public int disabledImageLocation(\[int value\])                                                                     |                                                                                                                                                                         |
 | public int disabledResource(\[int value\])                                                                          | Gets or sets the resource ID of the image to use as the disabled button image.                                                                                          |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -10482,7 +10482,7 @@ The resource ID of the image to use as the disabled button image. Both icon and 
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
