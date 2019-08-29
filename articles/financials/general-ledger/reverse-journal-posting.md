@@ -55,8 +55,7 @@ The transactions will be reversed.
 If the number of voucher lines exceeds 100 lines, the reversal process will be run using the batch process. You can review the results
 of the reversal by viewing the comments in the batch job that was run. All failures will be noted in the batch job history.
 
-If the number of voucher lines is 100 lines or less, the reversal process will run immediately. The results will be presented in a dialog
-that shows any voucher that could not be reversed and the reason why it could not be reversed. Click on Ok to close the dialog.
+If the number of voucher lines is 100 lines or less, the reversal process will run immediately. The results will be presented in a dialog that shows any voucher that could not be reversed and the reason why it could not be reversed. Click on Ok to close the dialog.
 
 ## Reversing vouchers from the voucher transaction list. 
 
@@ -77,6 +76,5 @@ The transactions will be reversed.
 If the number of voucher lines exceeds 100 lines, the reversal process will be run using the batch process. You can review the results
 of the reversal by viewing the comments in the batch job that was run. All failures will be noted in the batch job history.
 
-If the number of voucher lines is 100 lines or less, the reversal process will run immediately. The results will be presented in a dialog
-that shows any voucher that could not be reversed and the reason why it could not be reversed. Click on Ok to close the dialog.
+If the number of voucher lines is 100 lines or less, the reversal process will run immediately. The results will be presented in a dialog that shows any voucher that could not be reversed and the reason why it could not be reversed. Click on Ok to close the dialog.
 
