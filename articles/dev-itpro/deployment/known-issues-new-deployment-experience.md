@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/14/2018
+ms.date: 08/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
