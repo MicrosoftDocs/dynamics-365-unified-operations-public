@@ -89,7 +89,7 @@ The module "config" section contains a list of all the module's exposed configur
 * "description":
     * This description will show up in authoring tools as the configuration description.
 * "type":
-    * Type of the configuration.  Possible values "string," "boolean," "number," "integer," "resource," "link," "productList," "object," "image," "imageSettings," video," or "array."  The "resource" type will not show up in authoring tool, but will allow the string to be localized.
+    * This is is type of the configuration. Possible values are "string," "boolean," "number," "integer," "resource," "link," "productList," "object," "image," "imageSettings," video," or "array."  The "resource" type will not show up in authoring tool, but will allow the string to be localized.
 * "enum":
     * For an enumerator type this must be set to "string."
 * "default":
@@ -232,7 +232,7 @@ The following example shows the usage of various supported data types:
 }
 ```
 
-### Local testing configuration fields with mock data
+### Use mock data in configuration fields for local testing 
 
 The following example shows how to set a mock value for a new configuration field in the `mocks/MODULE_NAME.json` file. This will help when rendering the module in a local development environment.
 
@@ -253,7 +253,7 @@ The following example shows how to set a mock value for a new configuration fiel
 
 To access configuration fields in the React component, use the `props.config` API.
 
-The example code below uses an **if** statement to check the new imageAlignment config field and render the appropriate HTML.
+The example code below uses an `if` statement to check the new imageAlignment config field and render the appropriate HTML.
 
 ```typescript
 import * as React from 'react';
