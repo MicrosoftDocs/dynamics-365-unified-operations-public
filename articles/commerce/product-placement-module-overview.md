@@ -14,7 +14,7 @@ The source for the product groups or collection – could be an editorial collec
 | # | Product collection kind     | Description                                                                                                                                                                                                                   |
 |---|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 | Related products           | This list shows products configured as related products in the back office by a Merchandising manager for the relation type chosen by the author.|
-| 2 | Editorial product lists    | Here are the custom lists created in the back office by merchandizers and editors.|
+| 2 | Curated product lists    | Here are the custom lists created in the back office by merchandizers and editors.|
 | 3 | New                        | This list shows the newest products assorted to channels and catalogs.|
 | 4 | Best selling               | This list shows products ranked by the highest number of sales.                      |               
 | 5 | Trending                   | This list shows the highest performing products for a given time period.|
@@ -22,7 +22,6 @@ The source for the product groups or collection – could be an editorial collec
 | 7 | People also like           | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
 
 Related Articles:
--	[Product recommendations FAQ]( faq-recommendations.md)
 -	[Omni-channel Product Recommendations Overview](product-recommendations-overview.md)
--	[Create curated product recommendation lists]( create-editorial-recommendation-lists.md)
--	[Modify AI-ML based product recommendation results]( modify-product-recommendation-results.md)
+-	[Create curated product lists]( create-editorial-recommendation-lists.md)
+-	[Product recommendations FAQ]( faq-recommendations.md)
