@@ -89,7 +89,7 @@ The module definition file is also used to expose configuration fields, which en
 
 The page author can choose the configurations for a module on a specific page without affecting the setting of the module on other pages. 
 
-## Module Definition Schema
+## Module definition schema
 
 * "$type"
     * A module can be either a “containerModule” if it can render child modules or a “contentModule” if it's a stand-alone module. Container modules will also define “slots” which are used for layout regions.  
@@ -108,7 +108,7 @@ The page author can choose the configurations for a module on a specific page wi
 * "slots" 
     * Slots are defined only on “containerModules” and exposed in the authoring tool. Slots can define allow and deny lists to allow or disallow specific modules from being accepted in the slot.
 
-## Registering Data Actions To A Module
+## Registering data actions To a module
 
 If a module is dependent on data coming from a data action, the data action must be registered in the `module` section of the module definition file.
 
@@ -151,7 +151,7 @@ export interface IAsyncTestModuleData {
 
 The result is that you can now access the results of this data action in your module.
     
-## Module Config Schema
+## Module config schema
 
 The module "config" section contains a list of all the module's exposed configuration fields that will be used in the authoring tool.
 
@@ -176,7 +176,7 @@ The module "config" section contains a list of all the module's exposed configur
 * "resourceKey":
     * Used for localization resources
     
-The following example shows an advanced sample that shows the usage of various supported data types.
+The following example shows the usage of various supported data types.
 
 ```
 {
