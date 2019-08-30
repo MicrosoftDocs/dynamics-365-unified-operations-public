@@ -1642,6 +1642,8 @@
           href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
         - name: Set up adjustment codes for ICMS taxes on fiscal documents
           href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+        - name: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
+          href: ../financials/localizations/latam-bra-complement-restitution.md
         - name: Set up adjustment codes for IPI taxes
           href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
         - name: PIS and COFINS fixed assets
