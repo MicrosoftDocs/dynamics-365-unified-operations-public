@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.5
 ---
 
 # Create checks with a blank status
-This topic describes creating blank checks, such as one used to record a check that has been damaged and can't be used for payment. 
+This topic describes the abitlity to create blank checks, such as one used to record a check that has been damaged and can't be used for payment. 
 
 The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. Blank status checks can also be created from this page. After a check has been created with a Blank status, it cannot be deleted or reused in the system. This feature is available from the **Checks** page if the **Create checks with a blank status on the Checks page** parameter on the **Feature management** page is enabled. If the feature is not enabled, then Blank status checks can be created from the **Payment by check** dialog during the Accounts payable payment generation process.
 
