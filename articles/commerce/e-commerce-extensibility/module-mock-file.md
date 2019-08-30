@@ -37,11 +37,11 @@ This topic covers how to work with module mock files in Dynamics 365 Commerce.
 
 ## Overview
 
-The default mock file located at \src\MODULE_NAME\MOCKS\MODULE_NAME.json is used to configure mock data for modules to help with local testing.
+The default mock file located at `\src\MODULE_NAME\MOCKS\MODULE_NAME.json` is used to configure mock data for modules to help with local testing.
 
 There are several config properties that set values for config fields set in the module definition file.  When modules are run on a production server, this data comes from the Dynamics CMS database as configured by the page authors instead of a mock file.
 
-### Example
+### Example of a mock file
 
 The following example shows a sample mock file.
 
