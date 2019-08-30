@@ -5,7 +5,7 @@ title: ICMS-ST complement and restitution process and declaration for RS, SC, an
 description: This topic provides information about the process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers when goods are acquired under the Tax substitution regime (ICMS-ST). .
 author: sndray
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -262,7 +262,7 @@ The following records are out of scope: 2112 (outgoing fiscal documents that are
   -  **ICMS-ST presumed tax** – Enable this process to generate related tags in XML format when an NF-e is issued to tax authorities.
   -  **ICMS-ST presumed tax fiscal books** – Enable this process to calculate ICMS-ST restitution and compensation amounts, and generate related reports, depending on the state where the fiscal establishment has the ICMS-ST registration (SC, SP or RS).
 
-  ![](media/abd5a0bbed994cf9a8e766061f9bd42b.png)
+  ![Brazilian parameters page, ISMS-ST section](media/brazil-icms-01.png)
 
 3. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters per state**, and then select the appropriated state (**SP**, **SC**, or **RS**).
 
@@ -279,7 +279,7 @@ On the **Presumed tax** FastTab of the **Fiscal books parameters per state** pag
     -  **Average** – Calculate the average amount from incoming fiscal documents. This method must be selected for SP or SC state.
     -  **Last purchase** – Use information from the latest incoming fiscal documents that were posted during the period. This method must be selected for RS state.
 
-  ![](media/24961d920e8709ea277be9694940121c.png)
+  ![Fiscal books parameters per state page, Presumed tax FastTab](media/brazil-icms-02.png)
 
 ### **ICMS-ST sub-tax assessment in RS state**
 
@@ -302,7 +302,7 @@ Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters per state**, se
 -  **Restitution (E111)** – Select the related adjustment code for this type of adjustment. When this adjustment is created, the ICMS tax assessment will be updated because only credits are allowed in the ICMS tax assessment.
 -  **Consolidate record 1923** – Set this option to **Yes** to consolidate or report on record 1923 per fiscal document (no items will be detailed). The **08 COD_ITEM** field will remain blank.
 
-  ![](media/85b9917aaf312584446eb432ea0dc905.png)
+  ![Fiscal books parameters per state page, Sub assessment ICMS-ST parameters FastTab](media/brazil-icms-03.png)
 
 ## Repro steps
 
@@ -313,12 +313,12 @@ Before you generate a statement for each state, you must create a fiscal booking
 > [!NOTE]
 > The credit adjustment related to inventory position is only applicable for RS and SC states.
 
-![](media/26e74c00d00b14e696ff1d7d126010f9.png)
+![ICMS-ST tax assessment page](media/brazil-icms-04.png)
 
 1. Go to **Fiscal books** \> **Common** \> **Tax assessment** \> **ICMS-ST**.
 2. On the **ICMS-ST** page, on the Action Pane, on the **General** tab, in the **View** group, select **Presumed taxes balance**.
 
-  ![](media/d70ee4a02e7c65561b036d45b6ad0470.png)
+  ![ICMS-ST page, General tab on the Action Pane](media/brazil-icms-05.png)
 
 The **Presumed taxes balance** page includes fields that are required for reporting purposes. Here are some examples of these fields:
 
@@ -331,7 +331,7 @@ The **Presumed taxes balance** page includes fields that are required for report
   - ICMS tax rate and ICMS-ST base amounts
   - Amount per inventory unit and totals
 
-  ![](media/f0c127f0640473daa51c5cd8be26c084.png)
+  ![Presumed taxes balance page](media/brazil-icms-06.png)
 
 On the Action Pane, on the **General** tab, in the **Calculations** group, select **Calculate inventory balances**. The system calculates the initial opening balance and the closing balance, and shows the values per item number.
 
@@ -358,7 +358,7 @@ Here is how the function for the closing balance calculation works. This functio
 
 After the balances are calculated for the first time, open the **Presumed taxes** page, and select **Calculate presumed tax**.
 
-![](media/615aba14bac0e8c8b422782e9fa84e3a.png)
+![Presumed taxes page](media/brazil-icms-07.png)
 
 The page includes fields that are required for reporting purposes. Each tab shows the related fiscal documents that are applicable for compensation and restitution according to the criteria that have been established by state law.
 
@@ -367,7 +367,7 @@ The page includes fields that are required for reporting purposes. Each tab show
 
 The lower part of the page shows the total amounts.
 
-![](media/756984622b3fc40b8e8a13f1a9cd8e3a.png)
+![Total amounts shown on Presumed taxes page](media/brazil-icms-08.png)
 
 Here is how the average algorithm for presumed tax calculation works:
 
@@ -428,7 +428,7 @@ The text file that is generated should first be validated by using the tax autho
 1. Go to **Fiscal books \> Setup \> Tax statements parameters**, and then select **SPED DRCST**.
 2. On the **Setup parameters** FastTab, add the internet address and the request header address, so that the related XML file can be submitted to the government tax authorities.
 
-  ![](media/80ebe01ec2988aeb98f0c21687a72802.png)
+  ![Tax statements parameters page, Setup parameters FastTab](media/brazil-icms-09.png)
 
 3. Go to **Organization administration \> Setup \> Brazilian parameters**.
 4.  On the **Fiscal document** tab, in the **ICMS-ST** section, set the following options to **Yes** to enable the functionality for calculating presumed tax in the NF-e issuing process, and in the SPED Fiscal ICMS-ST tax assessment:
