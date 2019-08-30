@@ -1,37 +1,47 @@
 ---
 # required metadata
 
-title: Module Test File
-description: The module test file is used for local unit test and contains the mock data needed for the tests to run. 
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Module test file
+description: This topic covers the module test file in Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Module test file
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers the module test file in Dynamics 365 Commerce.
+
+## Overview
+
 The module test file is used for local unit testing and contains the mock data needed for the tests to run. 
 
-Below is the default test file created for a new module, note that the mock data fields are set inside this file:
+## Example
+
+The following example shows a default test file created for a new module.
 
 ```
 /*---------------------------------------------------------------------------------------------
@@ -79,3 +89,4 @@ describe('ProductFeature', () => {
   });
 });
 ```
+Note that the mock data fields are set inside this file.
