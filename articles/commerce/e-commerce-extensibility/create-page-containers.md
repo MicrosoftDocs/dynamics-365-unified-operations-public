@@ -3,7 +3,7 @@
 
 title: Page containers
 description: A page container is a module that controls the core structure of a page with specific layout regions called **slots**.
-author: SamJarawan
+author: samjarawan
 manager: annbe
 ms.date: 08/30/2019
 ms.topic: article
