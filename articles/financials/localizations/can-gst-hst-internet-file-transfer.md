@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Canada GST/HST Internet File Transfer
-description: This article explains how to configure and use Canada GST/HST internet file transfer feature.
+title: Canada GST/HST Internet File Transfer (GIFT)
+description: This topic explains how to configure and use the Canada Goods and Services Tax or Harmonized Sales Tax (GST/HST) Internet File Fransfer (GIFT) feature.
 author: ericwang
 manager: Ann Beebe
 ms.date: 08/20/2019
@@ -31,83 +31,62 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
+# Canada GST/HST Internet File Transfer (GIFT)
 
-# Canada GST/HST Internet File Transfer 
+Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or Harmonized Sales Tax (GST/HST) returns, and to remit payments to the Canada Revenue Agency (CRA). However, the CRA allows taxpayers to electronically file and remit taxes that are calculated on acquired fixed assets. You can electronically file GST/HST returns by using any of the following methods:
 
-Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or Harmonized Sales Tax (GST/HST) returns and to remit payments to the Canada Revenue Agency (CRA). However, the CRA allows taxpayers to file and remit taxes calculated on acquired fixed assets electronically. You can file GST/HST returns electronically using any of the following methods:
+- **Net file transfer** – An internet-based filing service that taxpayers can use to file their returns directly over the internet.
+- **Electronic Data Interchange (EDI)** – A data transfer method that taxpayers can use to file their returns either directly with the CRA or through a third-party service provider.
+- **GST/HST Internet File Transfer (GIFT)** – An upload tool that taxpayers can use to submit text files to the CRA website to file GST/HST returns and remit payments.
 
-  - Net file transfer – An Internet-based filing service that allows taxpayers to file their returns directly over the Internet.
+Both Microsoft Dynamics AX and Microsoft Dynamics 365 for Finance and Operations support GIFT. Before you generate a GIFT file, you have to set up your software identification code, sales tax code, and sales tax group.
 
-  - Electronic Data Interchange (EDI) – A data transfer method that taxpayers can use to file their returns directly with the CRA or through a third-party service provider.
-
-  - GST/HST Internet File Transfer (GIFT) – An uploading tool used to submit text files to the CRA website for filing GST/HST returns and remitting payments.
-
-GIFT is supported by Microsoft Dynamics AX and Dynamics 365 for Finance and Operation. Before you generate a GIFT file, you should set up your software identification code, sales tax code, and sales tax group. 
-
-Use the following procedures to enter legal entity details, sales tax code, and sales tax group for GIFT, and to create sales tax entries for taxes paid on acquisition.
+Use the following procedures to enter legal entity details, a sales tax code, and a sales tax group for GIFT, and to create sales tax entries for taxes that were paid on fixed asset acquisition.
 
 ## Set up legal entities for GIFT
 
-When you submit a request to CRA to perform an Internet file transfer, CRA provides a software identification code. The first two characters are alphabetical and the last six characters are numerical. You must enter this identification code in the **Legal entities** form correctly to process your returns.
+When you submit a request to the CRA to do an internet file transfer, the CRA provides a software identification code. The first two characters are alphabetical, and the last six characters are numerical. To process your returns, you must enter this code on the **Legal entities** page.
 
-1.  Click **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
-
-2.  Click the **Statutory reporting** FastTab, and in the **Registration number** field, enter the registration number that the CRA provided to you when you registered for GST/HST.
-
-3.  In the **Software identification code** field, enter AX030003 to transfer the returns.
-
-4.  Click **Account identifiers** to open the **Account identifiers** form.
-
-5.  On the **Overview** tab, in the **Program identifier** field, select **GST/HST**.
-
-6.  In the **Reference number** field, enter the reference number provided by the CRA.
-
-7.  Close the forms to save your changes.
+1. Go to **Organization administration** \> **Setup** \> **Organization** \> **Legal entities**.
+2. On the **Statutory reporting** FastTab, in the **Registration number** field, enter the registration number that the CRA provided when you registered for GST/HST.
+3. In the **Software identification code** field, enter **AX030003** to transfer the returns.
+4. Select **Account identifiers** to open the **Account identifiers** page.
+5. On the **Overview** tab, in the **Program identifier** field, select **GST/HST**.
+6. In the **Reference number** field, enter the reference number that the CRA provided.
+7. Close the pages to save your changes.
 
 ## Set up tax codes for GIFT
 
-Use the **Sales tax codes** form to set up tax codes to calculate GST/HST for the GIFT file.
+Use the **Sales tax codes** page to set up tax codes to calculate GST/HST for the GIFT file.
 
-1.  Click **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax codes**.
-
-2.  Press CTRL+N to create a new tax code.
-
-3.  In the **Sales tax code** field, enter a code, such as GST/HST, and then enter general information about the sales tax code.
-
-4.  Click the **Calculation** tab and enter the calculation details to calculate the GST/HST amount.
-
-5.  Click **Values** to open the **Values** form. Enter the dates during which the tax code is in effect.
-
-6.  In the **Value** field, enter the percentage for the calculation.
-
-7.  Close the forms to save your changes.
+1. Go to **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax codes**.
+2. Press **Ctrl+N** to create a tax code.
+3. In the **Sales tax code** field, enter a code, such as **GST/HST**, and then enter general information about the sales tax code.
+4. On the **Calculation** tab, enter the calculation details that should be used to calculate the GST/HST amount.
+5. Select **Values** to open the **Values** page.
+6. Enter the dates when the tax code is in effect.
+7. In the **Value** field, enter the percentage for the calculation.
+8. Close the pages to save your changes.
 
 ## Set up tax groups for GIFT
 
-Use the **Sales tax groups** form to set up sales tax groups. You can assign the sales tax groups to companies, and the taxes will be calculated based on the tax codes that were in effect when the transactions took place.
+Use the **Sales tax groups** page to set up sales tax groups. You can assign the sales tax groups to companies. Taxes will then be calculated based on the tax codes that were in effect when the transactions occurred.
 
-1.  Click **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax groups**.
-
-2.  Press CTRL+N to create a new sales tax group.
-
-3.  In the **Sales tax group** field, enter a name, such as GST/HST, and then enter general information about the sales tax group.
-
-4.  Click the **Setup** tab, and in the **Sales tax code** field, select a sales tax code to add to the sales tax group.
-
-5.  Close the form to save your changes.
+1. Go to **General ledger** \> **Setup** \> **Sales tax** \> **Sales tax groups**.
+2. Press **Ctrl+N** to create a sales tax group.
+3. In the **Sales tax group** field, enter a name, such as **GST/HST**, and then enter general information about the sales tax group.
+4. On the **Setup** tab, in the **Sales tax code** field, select a sales tax code to add to the sales tax group.
+5. Close the page to save your changes.
 
 ## Generate a GIFT file
 
-You can generate a Goods and Services Tax or Harmonized Sales Tax (GST/HST) Internet File Transfer (GIFT) file and upload it to the Canadian Revenue Agency (CRA) website to file your GST/HST returns and remit payments.
+To file your GST/HST returns and remit payments, you can generate a GIFT file and upload it to the CRA website.
 
-1. Click **General ledger** > **Periodic** > **GST/HST Internet File Transfer (GIFT)**.
+1. Go to **General ledger** \> **Periodic** \> **GST/HST Internet File Transfer (GIFT)**.
+2. In the **From date** and **To date** fields, select the start and end dates of the reporting period.
+3. In the **File name** field, select the path and enter the name of the GIFT file.
 
-2. In the **From date** and **To date** fields, select the starting and ending dates of the reporting period.
+    > [!NOTE]
+    > For easy identification of the GIFT file, use the format *GSTYYYYMMDD.tax* for the file name. (In other words, enter **GST** followed by the reporting date, and then add the **.tax** file name extension.) For example, if the reporting date is July 28, 2010, enter **GST20100728.tax** as the name of the GIFT file.
 
-3. In the **File name** field, select the path and enter the name for the GIFT file.
-
-    Note
-
-   For easy identification, use the format GSTYYYYMMDD.tax (GST, followed by the reporting date, with a .tax extension) as in this example: GST20100728.tax.
-
-4. Click **OK** to export the GIFT file to the specified path.
+4. Select **OK** to export the GIFT file to the specified path.
