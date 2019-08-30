@@ -2,36 +2,47 @@
 # required metadata
 
 title: Module view file
-description: The module view file is a Typescript file with a React component that controls the module's view.  You'll find a React `render()` method who's role is to render HTML for the module.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+description: This topic covers the module view file in Dynamics 365 Commerce. 
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
-
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
+
 # Module view file
-The module view file is a Typescript file with a React component that controls the module's view.  You'll find a React `render()` method who's role is to render HTML for the module.
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers the module view file in Dynamics 365 Commerce. 
+
+## Overview
+
+The module view file is a TypeScript file with a React component that controls a module's view. The React `render()` method renders HTML for the module.
 
 ## Example 
+
+The following example shows a React component in a module view file.
+
 ```typescript
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
@@ -63,4 +74,4 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
 export default ProductFeature;
 ```
 
-Configuration properties that are defined in the module definition file (MODULE_NAME.definition.json) and data properties (MODULE_NAME.data.ts) file can be accessed within this file using the `this.props.config.*` and `this.props.data.*` API properties.
+Configuration properties that are defined in the module definition file (MODULE_NAME.definition.json) and data properties (MODULE_NAME.data.ts) file can be accessed within the module view file using the `this.props.config.*` and `this.props.data.*` API properties.
