@@ -47,6 +47,12 @@ For more information, see [Feature management overview](https://docs.microsoft.c
 ## Posting accounts setup 
 Define specific ledger accounts for Sales orders on the **Posting** form using a new option for **Credit notes**.
 
+You can set up different accounts for various combinations of specific Customers, Items
+and related groups.
+
+![Posting accounts setup](media/emea-ita-exil-separate-account-credit-pic1.jpg)
+
+
 ## Use
 ### Subtitle
 When you post an invoice or a credit note, .
