@@ -1,39 +1,49 @@
 ---
 # required metadata
 
-title: Module mock file
-description: The default mock file located at `\src\MODULE_NAME\MOCKS\MODULE_NAME.json` is used to configure mock data for your module which will help with local testing.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+title: Work with module mock files
+description: This topic covers how to work with module mock files in Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Module mock file
-The default mock file located at `\src\MODULE_NAME\MOCKS\MODULE_NAME.json` is used to configure mock data for your module which will help with local testing.
+# Work with module mock files
 
-As you can see in the below sample mock file, there are several config properties that set values for config fields set in the module defintion file.  When modules are run on a production server this data comes from the Dynamics CMS database as configured by the page authors instead of the mock file.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-To render the module with the mock file's data, run `yarn start` and navigate to https://localhost:4000/modules?type=MODULE_NAME
+This topic covers how to work with module mock files in Dynamics 365 Commerce.
+
+## Overview
+
+The default mock file located at \src\MODULE_NAME\MOCKS\MODULE_NAME.json is used to configure mock data for modules to help with local testing.
+
+There are several config properties that set values for config fields set in the module definition file.  When modules are run on a production server, this data comes from the Dynamics CMS database as configured by the page authors instead of a mock file.
+
+### Example
+
+The following example shows a sample mock file.
 
 ```
 {
@@ -53,21 +63,27 @@ To render the module with the mock file's data, run `yarn start` and navigate to
 }
 ```
 
-# Adding multiple mock files
+## Render a module with mock file data
 
-In addition to the default mock file, you may add additional multiple mock files to view and test different scenarios. Create a new json file in the mocks folder and give it a unique name. For example, `\src\MODULE_NAME\MOCKS\MODULE_NAME_TEST.json`
+To render a module with mock file data, run `yarn start` and navigate to https://localhost:4000/modules?type=MODULE_NAME.
 
-To render the module using a different mock, run `yarn start` and https://localhost:4000/modules?type=MODULE_NAME:MODULE_NAME_TEST
+## Add mock files
 
-# Mocking actions
+In addition to the default mock file, you may add multiple additional mock files to view and test different scenarios. 
 
-Mocking out actions in msdyn365-commerce will replace the output of an action with the data specified it the loaded actionmock.json file. This is useful
-if you want to test your module without invoking the actual action.
+To add a mock file, create a new json file in the mocks folder and give it a unique name (for example, `\src\MODULE_NAME\MOCKS\MODULE_NAME_TEST.json`).
+
+To render a module using a different mock, run `yarn start` and navigate to https://localhost:4000/modules?type=MODULE_NAME:MODULE_NAME_TEST.
+
+## Mocking actions
+
+Mocking actions in Commerce will replace the output of an action with the data specified in the loaded actionmock.json file. This is useful if you want to test your module without invoking the actual action.
 
 ## Action mock structure
 
-Actions mocks should be created by the action developer and represent the expected output data of an action.
-the placement of the mock file is as follows:
+Action mocks should be created by the action developer and represent the expected output data of an action.
+
+The following example shows the placement of the mock file.
 
 ```
 my-package
@@ -80,7 +96,7 @@ my-package
 |___tslint.json
 ```
 
-the my-package.actionmock.json should be structured as follows:
+The my-package.actionmock.json should be structured as follows.
 
 ```json
 {
@@ -90,14 +106,16 @@ the my-package.actionmock.json should be structured as follows:
 }
 ```
 
-If no CacheKey is specified all actions with the corresponding CacheObjectType will get the mock output.
+If no `CacheKey` is specified, all actions with the corresponding `CacheObjectType` will get the mock output.
 
-## Using an action mock
+## Use an action mock
 
-To use the action mock in your module include the 'actionMock' query string parameter eg:
+To use the action mock in your module, include the action mock query string parameter, as in the following example.
 
 ```http://localhost:3000/modules?type=action-tester&actionMock=core-actions:get-categories```
 
-the value of the qsp is as follows ````{package-name}:{action-mock-file-name}````
+The syntax of the query string parameter is as follows.
 
-if no action mock file name is used the package name will be used to search for a mock.
+````{package-name}:{action-mock-file-name}````
+
+If no action mock file name is used, the package name will be used to search for the mock.
