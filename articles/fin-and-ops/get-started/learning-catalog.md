@@ -16,13 +16,13 @@ Find the right online training, in person workshops, and events for your role as
 
 Do you decide whether to invest in new technologies? 
 
->[Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#get-started)
+>[Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
 
 ## Business users
 
 Did you just get a new application to use? 
 
->[Business Users Learning Catalog](learning-catalog-business-user.md#get-started-partner-sales)
+>[Business Users Learning Catalog](learning-catalog-business-user.md)
 
 ## Administrators
 
