@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
+In Italy companies can define accounting policy for posting credit notes amounts to ledger accounts that are different from revenue accounts in order to specificly underline the amount of issued credit notes.
+
 This topic explains how to set up and use separate accounts for credit notes.
 
 ## Prerequisites
@@ -42,12 +44,11 @@ In <strong>Feature management</strong> enable <strong>Separate accounts for cred
 
 For more information, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview)
 
-## Set up 
-### Subtitle
-
-On the **Accounts receivable parameters** page.
+## Posting accounts setup 
+Define specific ledger accounts for Sales orders on the **Posting** form using a new option for **Credit notes**.
 
 ## Use
+### Subtitle
 When you post an invoice or a credit note, .
 
 
