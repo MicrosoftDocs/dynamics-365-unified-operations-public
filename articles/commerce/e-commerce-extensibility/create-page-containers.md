@@ -1,46 +1,57 @@
 ---
 # required metadata
 
-title: Page containers
-description: A page container is a module that controls the core structure of a page with specific layout regions called **slots**.
+title: Create a page container module
+description: This topic describes how to create a page container module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Create a page container module
-A page container is a module that controls the core structure of a page with specific layout regions called **slots**.  An example could be a page container with a slot defined for the header, main content area and footer area. A page container can only be imbedded at the root of a page and each page must have one and only one page container.
 
-Similarly to layout container modules, page container modules can define **named slots** which are surfaced in the template authoring tools.  Page authors can configure which modules go into each slot and the container render code controls the layout of those slots.  Configuration settings can also be exposed to page authors to further configure the layout.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to create a page container module in Dynamics 365 Commerce.
+
+## Overview
+
+A page container is a module that controls the core structure of a page with specific layout regions called *slots*. An example could be a page container with a slot defined for the header, main content area, and footer area. A page container can only be embedded at the root of a page, and each page must only have one page container.
+
+Similarly to layout container modules, page container modules can define *named slots* which are exposed in the template authoring tool. Page authors can configure which modules go into each slot and the container render code controls the layout of those slots.  Configuration settings can also be exposed to page authors to further configure the layout.
+
+## Create a new page container module
 
 To create a new page container module use the online SDK CLI command **yarn msdyn365 add-module MODULE_NAME** to create a new module and change the **$type** to **containerModule**.
 
-Below example creates a module called `campaignPageContainer`:
+The following example creates a module called `campaignPageContainer`:
+
 ```
 yarn msdyn365 add-module campaignPageContainer
 ```
 
-Open the new module definition file campaignPageContainer.definition.json and change the **$type** to **containerModule**. In the below example note the **slots** section contains the various named slots the page container will support. To restrict the slot to only allow a specific set of modules, the "allowedTypes" array is used.  You can specify the allow list or use "*" to allow any module to be placed in the slot.  
+Open the new module definition file campaignPageContainer.definition.json and change the **$type** to **containerModule**. In the example below, note that the **slots** section contains the various named slots that the page container supports. To restrict the slot to only allow a specific set of modules, the "allowedTypes" array is used. You can specify the allow list or use "&#42;" to allow any module to be placed in the slot.  
 
 ```
 {
@@ -93,7 +104,7 @@ Open the new module definition file campaignPageContainer.definition.json and ch
 
 The HTML structure for the slots on the page can be defined in the MODULE_NAME.tsx view file.
 
-Below is an example of the react view file (campaignPageContainer.tsx) leveraging the slots for the container:
+The following example shows a react view file (campaignPageContainer.tsx) leveraging the slots for the container.
 
 ```
 import * as React from 'react';
@@ -157,10 +168,10 @@ class CampaignPageContaine extends React.PureComponent<ICampaignPageContaineProp
 export default CampaignPageContaine;
 ```
 
-## Testing a page container module
+## Test a page container module
 A page mock is needed to test a page container module in a local development environment.
 
-Below is a sample page mock that can be leveraged for testing and is saved in the **/src/pageMocks** directory as campaignContainerMock.json.
+The following example shows a page mock that can be used for testing. It is saved in the **/src/pageMocks** directory as campaignContainerMock.json.
 
 ```
 {
@@ -220,15 +231,16 @@ Below is a sample page mock that can be leveraged for testing and is saved in th
     "statusCode": 200
 }
 ```
-Note the above page mock only defines the page container primary slot, the header and footer slots can also be included as desired.
+Note that the page mock above only defines the page container primary slot. The header and footer slots can also be included as needed.
 
 ## Preview the page
-To preview the page in a local web browser, follow these steps.
 
-1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
+To preview the page in a local web browser, do the following.
+
+1. At a command prompt, go to your root SDK folder and run the **yarn start** command. Here is an example.
 
     ```
     c:\repos\MyEcommerceSite\yarn start
     ```
 
-2. Open the following URL in a web browser to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Notice the page mock name in the **"mock=** query string parameter.
+1. Open the following URL in a web browser to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Note the page mock name in the **mock=** query string parameter.
