@@ -1,46 +1,55 @@
 ---
 # required metadata
 
-title: Module configuration fields
-description: Configurations fields can be added to a module that will be presented to page authors giving them control of various module features.  
-author: SamJarawan
+title: Add module configuration fields
+description: This topic describes how to add module configuration fields in Dynamics 365 Commerce. 
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Module configuration fields
+# Add module configuration fields
 
-Configurations fields can be added to a module that will be presented to page authors giving them control of various module features.  These features can be layout properties such as different views, alignment properties, boolean switches to turn features on or off, a module title or heading, rich text description, call to action link, image URLs or Dynamics 365 Retail product data.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Below is a screen shot of how these fields show up in the page authoring tools.
+This topic describes how to add module configuration fields in Dynamics 365 Commerce.
+
+## Overview
+
+Configuration fields can be added to a module to expose them to page authors and give them control of various module features. Examples of these features include different views, alignment properties, boolean switches to turn features on or off, module titles or headings, rich text descriptions, call to action links, image URLs, or Dynamics 365 Retail product data.
+
+The following screenshot shows how these fields appear in the page authoring tools.
 
 ![Module config fields in authoring tools](media/module-config-fields.png)
 
-## Adding new module configuration fields
+## Add new module configuration fields
+
 Adding configuration fields is done with an entry in the `config` section of the module definition file.
 
 ### Example
-In the below module definition file `MODULE_NAME.definition.json` a configuration field **imageAlignment**  has been added to allow configuration of the image alignment inside a module. We’ll have two enum options: “Left” which will be the default and “Right”.
+
+In the module definition file `MODULE_NAME.definition.json` below, a configuration field **imageAlignment** has been added to enable configuration of the image alignment inside a module. There are two enum options: "Left" (the default option) and "Right."
 
 ```
 {
@@ -69,30 +78,34 @@ In the below module definition file `MODULE_NAME.definition.json` a configuratio
 }
 ```
 
-## Module Config Schema
-The module "config" section contains a list of all the modules exposed configuration fields that will be used in the authoring tool.
+## Module config schema
+
+The module "config" section contains a list of all the module's exposed configuration fields that will be used in the authoring tool.
+
 * config name:
-    * Choose a name that will be used to access the config values from your react source code
+    * This name that will be used to access the config values from the react source code.
 * "friendlyName":
-    * This name will show up in authoring tools as the configuration name
+    * This name will show up in authoring tools as the configuration name.
 * "description":
-    * This description will show up in authoring tools as the configuration description
+    * This description will show up in authoring tools as the configuration description.
 * "type":
-    * Type of the configuration.  Possible values “string”, “boolean”, “number”, “integer”, “resource”, "link", "productList", “object”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
+    * Type of the configuration.  Possible values "string," "boolean," "number," "integer," "resource," "link," "productList," "object," "image," "imageSettings," video," or "array."  The "resource" type will not show up in authoring tool, but will allow the string to be localized.
 * "enum":
-    * For an enumerator type must be set to "string".
+    * For an enumerator type this must be set to "string."
 * "default":
-    * Used to set the default value if none is set in the authoring tool.
+    * This is used to set the default value if none is set in the authoring tool.
 * "scope":
-    * Used to scope the config to the a module instance or all modules site on the site.  Possible values "module" or "site".  If set to the site, the module configuration will not show up and be configurable on a page, only at the site level settings. This will allow the value to be set once for your whole site.
+    * This is used to scope the config to a module instance or all modules on the site. Possible values are "module" or "site." If set to the site, the module configuration will only appear in the site level settings and will not appear or be configurable on a page. This will allow the value to be set once for your whole site.
 * "group":
     * Groups are used to organize the configurations into organized groups in the authoring tools.
 * "required":
-    * This marks if a property must be set on the module.  The rendering of the module and tooling will show an error if this is not set.
+    * This marks if a property must be set on the module. The rendering of the module and tooling will show an error if this is not set.
 * "resourceKey":
-    * Used for localization resources. 
+    * This is used for localization resources. 
     
-Below is an advanced sample that shows the usage of various supported data types:
+### Example
+
+The following example shows the usage of various supported data types:
 ```
 {
   "$type": "contentModule",
@@ -221,7 +234,7 @@ Below is an advanced sample that shows the usage of various supported data types
 
 ### Local testing configuration fields with mock data
 
-The below example shows how to set a Mock value for the new configuration field in the `mocks/MODULE_NAME.json` file.  This will help when rendering the module in a local development environment.
+The following example shows how to set a mock value for a new configuration field in the `mocks/MODULE_NAME.json` file. This will help when rendering the module in a local development environment.
 
 ```
 {
@@ -236,10 +249,11 @@ The below example shows how to set a Mock value for the new configuration field 
 }
 ```
 
-### Accessing the configuration fields within the module React component
+### Access configuration fields within the module React component
+
 To access configuration fields in the React component, use the `props.config` API.
 
-Below sample code uses an **if** statement to check the new imageAlignment config field and renders the appropriate HTML.
+The example code below uses an **if** statement to check the new imageAlignment config field and render the appropriate HTML.
 
 ```typescript
 import * as React from 'react';
