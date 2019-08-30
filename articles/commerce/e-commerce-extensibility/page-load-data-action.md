@@ -3,50 +3,58 @@
 
 title: Page load data actions
 description: Whether rendering a product details page, department page, or a home page, every page needs data and data actions are the way to get it!
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
+
 # Page load data actions
 
-Whether rendering a product details page, department page, or a home page, every page needs data and data actions are the way to get it!
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers page load data actions in Dynamics 365 Commerce. 
+
+## Overview
+
+Whether rendering a product details page, department page, or home page, every page needs data and page load data actions are used to obtain that data.
 
 ## The `createInput` method
-A data action supports being called on page load with the `createInput` method.  Below shows the sample code created in the data action typescript file that the CLI tool `yarn d365 add-data-action DATA_ACTION_NAME` creates.
+A data action supports being called on page load with the `createInput` method. The following example shows the sample code created in a data action TypeScript file using the Command Line Interface (CLI) tool `yarn d365 add-data-action DATA_ACTION_NAME`.
 
 ```typescript
 const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput => {
     return new GetProductReviewsInput();
 };
 ```
-The `ICreateActionContext` type, represents an object that is passed to every `createInput` method, containing three pieces of information:
+The `ICreateActionContext` type represents an object that is passed to every `createInput` method, and it contains three pieces of information:
 
-1. The requestContext (inputData.requestContext)
-1. The modules configuration (inputData.config)
-1. The modules data (inputData.data)
+- The requestContext (inputData.requestContext)
+- The modules configuration (inputData.config)
+- The modules data (inputData.data)
 
-Notice the `createInput` method in the typescript template file has been added to the `createDataAction` call so that the Dynamics 365 Commerce Online SDK understands that this action is capable of running on page load.
+In the following example, notice that the `createInput` method in the TypeScript template file has been added to the `createDataAction` call so that the Commerce online software develpoment kit (SDK) understands that this action is capable of running on page load.
 
 ```typescript
 export default Msdyn365.createObservableDataAction({
@@ -55,9 +63,9 @@ export default Msdyn365.createObservableDataAction({
 });
 ```
 
-### Example createInput method
+### Example of the `createInput` method
 
-In the  `createInput` method example below we assume that the module calling this Data Action will have a configuration string property called `productId`, which is the ID of a product the Data Action will use as input.
+In the following `createInput` method example, we assume that the module calling the data action will have a configuration string property called `productId`, which is the ID of a product the data action will use as input.
 
 ```typescript
 /**
@@ -72,11 +80,11 @@ const createInput = (inputData: ICreateActionContext<IGeneric<IAny>>): IActionIn
 };
 ```
 
-## Registering the Data Action on a module
+## Register the data action on a module
 
-To have a module call a Data Action on page load, the Data action needs to be registered in the module definition file.
+To have a module call a data action on page load, the data action must be registered in the module definition file.
 
-Below is an example of a module using the example Data Action above to get product information to display inside their module.  
+The following example shows a module using the data action above to get product information to display inside the module.  
 
 ```json
 {
@@ -103,11 +111,12 @@ Below is an example of a module using the example Data Action above to get produ
     }
 }
 ```
-Here the `module.dataActions` property indicates which data actions should be run when a module is loaded on a page. The name of every key in the data actions object refers to the property name the result will be assigned to within the data props of the module (in this case `this.props.data.prodiuct`), and the path property for every data action points to a file whose default export is the data action that should be run. 
+Here the `module.dataActions` property indicates which data actions should be run when a module is loaded on a page. The name of every key in the data actions object refers to the property name the result will be assigned to within the data props of the module (in this case `this.props.data.product`). Also, the path property for every data action points to a file whose default export is the data action that should be run. 
 
-Also notice the config property `productId` defined which is used as the input to the Data Action.  This config property allows a page author to specify a Product Id as input to the module when building the page.  This same productId is also required by the `createInput` method example above. When this module is configured on a page, whatever `productId` is specified in the modules configuration is the one that will be loaded on that page.
+Notice that the config property `productId` defines what is used as the input to the data action. This config property enables a page author to specify a product ID as input to the module when building the page. This same `productId` is also required by the `createInput` method example above. When this module is configured on a page, whichever `productId` is specified in the modules configuration is the one that will be loaded on that page.
 
-Finally to ensure we have the correct typing for our module when developing our module view, we need to update our module data file with corresponding types based on the data actions we have registered:
+To ensure that we have the correct typing for the module when developing our module view, we must update the module data file with corresponding types based on the data actions we have registered, as in the following example.
+
 ```typescript
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
 
@@ -119,9 +128,9 @@ export interface IProductModuleData {
 
 Now when developing this module, you will have access to the product information via `this.props.data.product`.
 
-## Registering a core Data Action
+## Register a core data action
 
-The Online SDK contains a set of core data actions to perform common retail data tasks. Core data action interfaces can be found under the `\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib` directory.  To register to use a core Data Action inside your module use the following format inside your `MODULE_data.ts` file where:
+The Commerce online SDK contains a set of core data actions to perform common retail data tasks. Core data action interfaces can be found under the `\node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib` directory. To register to use a core data action inside your module, use the following format inside your `MODULE_data.ts` file.
 
 ```typescript
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';
@@ -136,4 +145,4 @@ export interface IProductFeatureData {
 }
 ```
 
-Notice above example is calling a core Data Action called "get-simple-products" which returns an array of `SimpleProduct`s.  The interface for the return type `SimpleProduct` is defined in the `\node_modules\@msdyn365-commerce\commerce-entities\dist\types\commerce-entities` directory which is imported at the top of the example.
+Notice that the example above is calling a core data action named "get-simple-products" that returns an array of `SimpleProduct` results. The interface for the return type `SimpleProduct` is defined in the `\node_modules\@msdyn365-commerce\commerce-entities\dist\types\commerce-entities` directory, which is imported at the top of the example.
