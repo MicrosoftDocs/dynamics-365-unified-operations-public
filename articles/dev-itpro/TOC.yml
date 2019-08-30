@@ -1226,7 +1226,7 @@
       href: migration-upgrade/deprecated-features.md  
     - name: Deprecation of methods and metadata elements
       href: migration-upgrade/deprecation-deletion-apis.md
-    - name: Deprecated APIs (June 2017)
+    - name: Deprecated APIs
       href: migration-upgrade/deprecated-apis.md
 - name: System administration
   items:
