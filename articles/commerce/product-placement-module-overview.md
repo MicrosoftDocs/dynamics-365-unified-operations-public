@@ -4,12 +4,11 @@ Product collection represent physical products and services on the website. On i
 
 Retailers consider product discovery as a primary tool for customer interaction across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
 
-> **Note** Always use product collection to show a group of products of a similar type or theme other than the categorized products or search results. And for categorized products & search results use Category page summary > Category page > Product Slot > Product search result.
-
 The source for the product groups or collection – could be an editorial collections (manually defined in back-office as related products for a product, or product lists), smart-logic based grouped results like new, best-selling, trending etc & machine-learning based recommendations. 
 
   ![product collection across various interactions on the site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
+> **Note** Always use product collection to show a group of products of a similar type or theme other than the categorized products or search results. And for categorized products & search results use Category page summary > Category page > Product Slot > Product search result.
 
 | # | Product collection kind     | Description                                                                                                                                                                                                                   |
 |---|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
