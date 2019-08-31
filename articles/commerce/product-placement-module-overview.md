@@ -4,7 +4,7 @@ Product collection represent physical products and services on the website. On i
 
 Retailers consider product discovery as a primary tool for customer interaction across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
 
-Thumb-rule: Always use product placements to show a group of products of a similar type or theme. 
+> **Note** Always use product collection to show a group of products of a similar type or theme other than the categorized products or search results. And for categorized products & search results use Category page summary > Category page > Product Slot > Product search result.
 
 The source for the product groups or collection – could be an editorial collections (manually defined in back-office as related products for a product, or product lists), smart-logic based grouped results like new, best-selling, trending etc & machine-learning based recommendations. 
 
@@ -21,7 +21,7 @@ The source for the product groups or collection – could be an editorial collec
 | 6 | Frequently bought together | This list uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased for a given seed item.|
 | 7 | People also like           | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
 
-Related Articles:
--	[Omni-channel Product Recommendations Overview](product-recommendations-overview.md)
--	[Create curated product lists]( create-editorial-recommendation-lists.md)
--	[Product recommendations FAQ]( faq-recommendations.md)
+ > Related Articles:
+>  -	[Omni-channel Product Recommendations Overview](product-recommendations-overview.md)
+>  -	[Create curated product lists]( create-editorial-recommendation-lists.md)
+>  -	[Product recommendations FAQ]( faq-recommendations.md)
