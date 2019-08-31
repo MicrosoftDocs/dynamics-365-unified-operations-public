@@ -38,11 +38,11 @@ However, instead of using the default category page, you might want to use an "e
 
 ![Enriched category landing page](./media/CategoryLandingPages.png)
 
-In the authoring tool, the **Retail** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
+In the authoring tool, the **Product** page includes a list of categories from the channel that are assigned to the site. If the **Enriched** status is selected for a category page, that category page has been enriched. Otherwise, the default category page and content are used for the category. You can preview both the enriched and non-enriched category pages for a category by selecting the category name.
 
 To enrich a category page, follow these steps.
 
-1. On the **Retail** page, select the name of the category that you want to enrich the category page for. The default category page for the selected category is opened in the page editor.
+1. On the **Products** page, select the name of the category that you want to enrich the category page for. The default category page for the selected category is opened in the page editor.
 2. Select **Enrich category page**.
 3. Select a template for the enriched category page. If you're making only minor changes, you can select the default category page. Alternatively, you can select a specific category page template. When you select the template, the page editor is opened, and the selected template is used to create a new category page for the selected category. The page is checked out to you, and you can now make your changes.
 
