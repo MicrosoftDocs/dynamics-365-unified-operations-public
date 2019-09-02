@@ -31,3 +31,40 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Get started
+
+In order to use Planning Optimization you have to install the Planning Optimization Add-in for Finance and Operations from your LCS project and enable the use of Planning Optimization from the Finance and Operations UI. 
+
+## LCS setup
+In order to use Planning Optimization you have to install the Planning Optimization Add-in for Finance and Operations from your LCS project.
+ 
+	- From Lifecycle Services open the LCS project
+	- Expand the **Environment add-ins tab** and click **Install a new add-in**
+	- Select **Planning Optimization**
+	- Follow the installation guide and agree to terms and conditions
+	- Click **Install**
+
+## Finance and Operations setup 
+
+### Planning Optimization integration
+From the Master Planning > Setup > Planning Optimization integration > Integration parameters you control if Planning Optimization Add-in for Finance and Operations should be used for master planning. 
+
+**Note:** The use of Planning Optimization impacts the master planning result and features depending on master planning. 
+
+#### Connection status
+**Connection status** show the current status of the connection to the Planning Optimization service. The following table show the possible status values.
+| Connection status	   | Description	                                                                                  | Possible to use Planning Optimization |
+| Connected	           | Connection is established between Planning Optimization service and Finance and Operations.    | Yes                                   |
+| Enabling connection	 | A request to enable the connection to Planning Optimization service is currently in progress.  | No                                    |
+| Disconnected	       | There is no connection to Planning Optimization service. Connection can be enabled from LCS as described earlier on this page. | No    |
+| Disabling connection | A request to disable the connection to Planning Optimization service is currently in progress. | No                                    |
+| Getting status       | System is waiting for status from the Planning Optimization service.	                          | No                                    |
+
+#### Use Planning Optimization
+This option is used to control the planning engine used for master planning
+**Yes** - Planning Optimization is used for master planning.
+**No** - The "classic X++" planning engine is used for master planning.
+
+**Note:** If existing planning batch jobs created for the "classic X++" planning engine are triggered when Use Planning Optimization is set to Yes these will fail, as the "classic X++" planning engine is disabled.
+
+??Setup integration with the Planning Optimization
+??With Planning Optimization preview enabled master planning is done using the Planning Optimization Add-in for Finance and Operations. This impacts the master planning result and features depending on master planning. 
