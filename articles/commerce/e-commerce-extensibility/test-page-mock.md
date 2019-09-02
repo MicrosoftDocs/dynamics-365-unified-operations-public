@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Test modules using page mocks
-description: This topic describes how to test modules using page mocks.
+title: Test modules by using page mocks
+description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,86 +28,102 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Test modules using page mocks
+# Test modules by using page mocks
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test modules using page mocks.
+This topic describes how to test modules by using page mocks.
 
 ## Overview
 
-Some modules are built to interact with other modules and page mocks can be used to test them together in a local development environment.
+Some modules are built to interact with other modules. You can use page mocks to test those modules together in a local development environment.
 
-Page mock files live under the **/src/pageMocks** directory and can be loaded using the URL `https://localhost:4000/page?mock=PAGE_MOCK` where PAGE_MOCK is your mock file name (without the .json file extension).
+Page mock files are stored under the /src/pageMocks directory. They can be loaded by using the URL `https://localhost:4000/page?mock=PAGE_MOCK`, where **PAGE\_MOCK** is the file name of the mock file, but without the **.json** file name extension.
 
 ## Create a new page mock
-To create a new page mock you'll need to create a new blank json file under the **/src/pageMocks** directory, as in the following example.
 
-`/src/pagemocks/campaignPage.json`
+To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as /src/pageMocks/campaignPage.json.
 
 ## Example
 
-The following example shows a page mock that adds two instances of the same module to a page, using different mock data for each.
+The following example shows a page mock that adds two instances of the same module to a page, but that uses different mock data for each instance.
 
 ```
 {
     "exception": null,
     "pageRoot": {
-        "id": "core-root_0",
-        "typeName": "core-root",
         "modules": {
-            "body": [
-                {
-                    "id": "default-page_0",
-                    "typeName": "default-page",
-                    "modules": {
-                        "primary": [
-                            {
-                                "id": "ProductFeature__0",
-                                "typeName": "productFeature",
-                                "config": {
-                                    "imageAlignment": "left"
-                                },
-                                "data": {
-                                    "$type": "productFeature",
-                                    "productTitle": {
-                                        "text": "Ethiopian Natural Limu"
-                                    },
-                                    "productDetails": {
-                                        "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness..."
-                                    },
-                                    "buttonText": {
-                                        "text": "Buy Now"
-                                    }
-                                }
-                            },
-                            {
-                                "id": "ProductFeature__1",
-                                "typeName": "productFeature",
-                                "config": {
-                                    "imageAlignment": "right"
-                                },
-                                "data": {
-                                    "$type": "productFeature",
-                                    "productTitle": {
-                                        "text": "Ethiopian Natural Limu"
-                                    },
-                                    "productDetails": {
-                                        "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness..."
-                                    },
-                                    "buttonText": {
-                                        "text": "Buy Now"
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                }
+            "primary": [
+                { "id": "ProductFeature__0", "typeName": "productFeature" },
+                { "id": "ProductFeature__1", "typeName": "productFeature" }
             ]
+        },
+        "id": "default-page_0",
+        "typeName": "default-page"
+    },
+    "modules": {
+        "default-page_0": {
+            "id": "default-page_0",
+            "typeName": "default-page"
+        },
+        "ProductFeature__0": {
+            "config": {
+                "imageAlignment": "left"
+            },
+            "data": {
+                "$type": "productFeature",
+                "productTitle": {
+                    "text": "Ethiopian Natural Limu"
+                },
+                "productDetails": {
+                    "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast."
+                },
+                "buttonText": {
+                    "text": "Buy Now"
+                }
+            },
+            "id": "ProductFeature__0",
+            "typeName": "productFeature"
+        },
+        "ProductFeature__1": {
+            "config": {
+                "imageAlignment": "right"
+            },
+            "data": {
+                "$type": "productFeature",
+                "productTitle": {
+                    "text": "Ethiopian Natural Limu"
+                },
+                "productDetails": {
+                    "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast."
+                },
+                "buttonText": {
+                    "text": "Buy Now"
+                }
+            },
+            "id": "ProductFeature__1",
+            "typeName": "productFeature"
         }
     },
     "renderingContext": {
+        "gridSettings":{
+            "xs":{
+                "w":767
+            },
+            "sm":{
+                "w":991
+            },
+            "md":{
+                "w":1199
+            },
+            "lg":{
+                "w":1599
+            },
+            "xl":{
+                "w":1600
+            },
+        },
         "staticContext": {
             "staticCdnUrl": "/_scnr/"
         },
@@ -115,33 +131,26 @@ The following example shows a page mock that adds two instances of the same modu
     },
     "statusCode": 200
 }
-
-
 ```
-Every page needs to have a root page container (pageRoot). In our example, a page container "default-page" is used.
 
-There is a node called "modules" that lists the modules inside of the page. The page container "default-container" is then used which has a slot called "primary." The container is responsible for laying out the modules inside it. In the example, the `productFeature` module is rendered twice in a row.
+Every page must have a root page container (**pageRoot**). In this example, the **default-page** page container is used.
+
+A node that is named **modules** lists the modules that are included inside the page. The **default-container** page container is then used. This page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row.
 
 ```
 {
-    …
+    ...
     "pageRoot": {
-      "id": "core-root_0",
-      "typeName": "core-root",      
-      "modules": {
-        "body":[
-          "id": "default-page_0",
-          "typeName": "default-page",
-          "modules": {
+        "modules": {
             "primary": [
-              { "id": "ProductFeature__0", "typeName": "productFeature", ... },
-              { "id": "ProductFeature__1", "typeName": "productFeature", ... }
+                { "id": "ProductFeature__0", "typeName": "productFeature" },
+                { "id": "ProductFeature__1", "typeName": "productFeature" }
             ]
-          }
-        ]        
-      }      
+        },
+        "id": "default-page_0",
+        "typeName": "default-page"
     },
-…
+...
 ```
 
-In the example, there is an "id" for each module (ProductFeature__0 and ProductFeature__1), which represents the mock data to use for the module. These can be named anything but require a matching section in the "modules" mock section, were you can configure different mock data per each instance of the module. Notice in the example that one module has a "left" imageAlignment config setting and the other has a "right" imageAlignment config setting.
+In this example, each module has an **id** value (**ProductFeature\_\_0** and **ProductFeature\_\_1**). The **id** value represents the mock data that should be used for the module. These can be named anything, but they require a matching section in the **modules** mock section, where you can configure different mock data for each instance of the module. In the example, notice that one module has an **imageAlignment** configuration setting of **left**, and the other module has an **imageAlignment** configuration setting of **right**.
