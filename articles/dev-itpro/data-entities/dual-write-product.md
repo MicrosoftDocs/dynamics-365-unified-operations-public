@@ -93,17 +93,21 @@ The **Product** entity contains the fields that define the product. It includes 
 
 Source field | Map type | Destination field
 ---|---|---
-PRODUCTNUMBER | \> | productnumber
-PRODUCTNAME | \> | name
-PRODUCTDESCRIPTION | \> | description
-ITEMNUMBER | \> | msdyn\_itemnumber
-CURRENCYCODE | \> | transactioncurrencyid.isocurrencycode
-SALESUNITSYMBOL | \> | msdyn\_integrationdefaultuomname
-SALESPRICE | \> | price
-UNITCOST | \> | currentcost
-\[None\] | \>\> | msdyn\_integrationdefaultuomschedulename
-PRODUCTTYPE | \>\> | producttypecode
-SALESUNITDECIMALPRECISION | \>\> | quantitydecimal
+PRODUCTNUMBER | >> | productnumber
+PRODUCTNAME | >> | name
+PRODUCTDESCRIPTION | >> | description
+ITEMNUMBER | >> | msdyn_itemnumber
+CURRENCYCODE | >> | transactioncurrencyid.isocurrencycode
+SALESUNITSYMBOL | >> | defaultuomid.msdyn_symbol
+SALESPRICE | >> | price
+UNITCOST | >> | currentcost
+PRODUCTTYPE | >> | producttypecode
+SALESUNITDECIMALPRECISION | >> | quantitydecimal
+ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
+PRODUCTCOLORID | >> | msdyn_productcolor.msdyn_productcolorname
+PRODUCTCONFIGURATIONID | >> | msdyn_productconfiguration.msdyn_productconfiguration
+PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize
+PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle
 
 ### Released products V2 to msdyn\_sharedproductdetails
 
