@@ -47,11 +47,11 @@ The following set of capabilities was introduced as a part of this feature:
  
 3. On the Retail transaction form, for the record that failed validation, the user can modify the concerned record by clicking on the record and clicking on the **Office Add in** button and clicking on the option **Edit selected transaction**. This will open an Excel file with the details of the selected transaction in multiple excel worksheet as per below:
 
-  1. Lines: This has the header and product lines related data for the transaction
-  2. Payments: This has the details of the payment lines for the transaction
-  3. Discounts: This has the discount related details for the transaction
-  4. Taxes: This has the tax related details for the transaction
-  5. Charges: This has the charges related data for the transaction
+    1. Lines: This has the header and product lines related data for the transaction
+    2. Payments: This has the details of the payment lines for the transaction
+    3. Discounts: This has the discount related details for the transaction
+    4. Taxes: This has the tax related details for the transaction
+    5. Charges: This has the charges related data for the transaction
 
    In the Excel worksheet, the user can modify the required fields and upload it back into the system using the standard Dynamics Excel    Add in publish capability.
 
