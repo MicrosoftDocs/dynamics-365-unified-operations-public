@@ -30,8 +30,6 @@ ms.dyn365.ops.version: 10.0.7
 
 # Separate accounts for credit notes
 
-[!include [banner](../includes/banner.md)]
-
 In Italy companies can define accounting policy for posting credit notes amounts to ledger accounts that are different from revenue accounts in order to specificly underline the amount of issued credit notes.
 
 This topic explains how to set up and use separate accounts for credit notes.
@@ -53,8 +51,12 @@ and related groups.
 ![Posting accounts setup](media/emea-ita-exil-separate-account-credit-pic1.jpg)
 
 
-## Use
-### Subtitle
-When you post an invoice or a credit note, .
+## Posting of credit notes
+### Newly created credit note
+When you post a credit note, the ledger account from setup above will be used instead of a standard revenue account defined for sales orders.
+
+If no separate ledger account for credit note is defined or a required Customer/Item combination is not found then a standard sales order revenue account will be used when posting.
+### Credit note created from a sales order
+If you create a credit note based on an existing sales order, make sure **Main account** of each credit note line is cleared up. Initially it is pre-populated with a revenue account from the sales order.
 
 
