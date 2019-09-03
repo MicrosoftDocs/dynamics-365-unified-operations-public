@@ -69,7 +69,7 @@ The following set of capabilities was introduced as a part of this feature:
 
 7. By default, the system would only allow to edit the retail transactions that has failed validation. If the customer wants to edit records that has passed validation, they can flip the status of the validation status of the transaction to **Error** or **None**. This would allow the transaction to be edited. 
 
-8. As of the version 10.0.5, only cash & carry transactions like sales, returns etc. and cash mgmt. transactions like Declare start amount, Tender declaration, Safe drop, etc. can be edited using this feature. Editing of Customer order or Online order is not supported. Starting the 10.0.6 release, support to edit cash management transactions has also been included in the feature.
+8. As of the version 10.0.5, only cash & carry transactions like sales, returns etc. can be edited using this feature. Editing of Customer order or Online order is not supported. Starting the 10.0.6 release, support to edit cash management transactions has also been introduced in this feature.
 
 9. In version 10.0.6 the option to bulk edit retail transactions at a statement level has been introduced. When the Excel Add-in is opened in the context of a Retail statement for which transactions must be modified, the user is presented with the following options:
 
