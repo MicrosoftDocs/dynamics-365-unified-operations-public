@@ -99,7 +99,7 @@ This ER model mapping is designed to do the following:
 
 The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
 
-  ![](media/er-calculated-field-type-01.png)
+  ![Model mapping designer page showing Tax and Gr data sources](media/er-calculated-field-type-01.png)
 
 5.  Close the **Model mapping designer** page.
 6.  Close the **Model mapping** page.
@@ -114,21 +114,21 @@ The model mapping in this configuration implements the base data model for any o
   - Present the following levels of taxation in the tax statement: regular, reduced, and none.
   - Present multiple details at each taxation level, having a different number of details in each level.
 
-  ![](media/er-calculated-field-type-02.png)
+  ![Format designer page](media/er-calculated-field-type-02.png)
 
 4. Select **Mapping**.
 5. Expand the **Model**, **Data,** and **Summary** items. 
 
    The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None,** or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
 
-  ![](media/er-calculated-field-type-03.png)
+  ![Format designer page showing details of the Data model Model to learn parameterized calls](media/er-calculated-field-type-03.png)
 
 6. Expand the **Model**.**Data2** item.
 7. Expand the **Model**.**Data2.Summary2** item.
    
    The **Model**.**Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
 
-  ![](media/er-calculated-field-type-04.png)
+  ![Format designer page showing details of the Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
 
 8. Review the calculated fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** These calculated fields are used to filter the **Model**.**Data2.Summary2** records list and return only records that represent a particular taxation level.
 9. Close the **Format designer** page.
@@ -168,7 +168,7 @@ You can improve the provided format by adding one calculated field to filter the
 
     The maximum number of parameters that can be specified for a single calculated field is 8.
 
-    ![](media/er-calculated-field-type-05.png)
+    ![Parameter data source list](media/er-calculated-field-type-05.png)
 
 5. Select **OK**.
 
@@ -178,7 +178,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
    The configured parameter is available in the list of data sources for this calculated field. You can add the parameter to the configured expression by selecting **Add data source**.
 
-   ![](media/er-calculated-field-type-06.png)
+   ![Data source fields](media/er-calculated-field-type-06.png)
 
 ### Define an expression for adding a calculated field
 
@@ -194,7 +194,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
 5. Select **Save**.
 
-    ![](media/er-calculated-field-type-07.png)
+    ![Data source field information](media/er-calculated-field-type-07.png)
 
 6. Close the **Formula designer** page.
 
@@ -204,7 +204,7 @@ By adding this parameter, you specify the condition that must be in place to cal
 
 On the **Format designer** page, the configured parameterized calculated field **Levels** requires a **String** argument.
 
-![](media/er-calculated-field-type-08.png)
+![Expanded list of calculated field levels](media/er-calculated-field-type-08.png)
 
 ### Use the configured calculated field for binding format elements
 
@@ -229,13 +229,11 @@ On the **Format designer** page, the configured parameterized calculated field *
 
    When you specify the argument of the parameterized calculated field for the XML element representing taxation level (for example, **Model.Data2.Levels("Reduced")** as a text value), you don’t need to do the same for nested XML attributes—their bindings will automatically inherit the value of the argument defined on the parent level (**Model.Data2.Levels.aggregated.Base**, not **Model.Data2.Levels("Reduced").aggregated.Base**).
 
-  ![](media/er-calculated-field-type-09.png)
-
 Recurrent calls of any parameterized calculated field are not supported.
 
 You can select **Edit formula**, and change the applied-by-default argument of the parameterized calculated field in the selected binding. If this argument is missing, it can cause errors at run time — users are informed about such a situation when the current format is validated.
 
-![](media/er-calculated-field-type-10.png)
+![Validation warning notification](media/er-calculated-field-type-10.png)
 
 ## Configure a parameterized calculated field to return a record
 When a parameterized calculated field returns a record, you need to support binding of individual fields of this record to format elements. In such cases there will be no parent binding that contains the value of an argument to call a parameterized calculated field — this value must be defined in the binding of a single record’s field.
@@ -287,7 +285,7 @@ When a parameterized calculated field returns a record, you need to support bind
 8. Select **Edit formula**.
 9. Change the expression to **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![](media/er-calculated-field-type-11.png)
+![Updated expression](media/er-calculated-field-type-11.png)
 
 ## Remove calculated fields that are not used
 
