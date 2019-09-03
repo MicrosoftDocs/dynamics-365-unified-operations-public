@@ -63,7 +63,9 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Gift card item** – Retail doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the retail transaction tables are gift card cash-out lines.
 - **Negative price** – Validates that there are no negative price transaction lines.
 - **Item & Variant** – Validates that items and variants on the transaction lines exist in the item and variant master file.
-- **Tax amount** - Validate tax records match the tax amounts on the lines. 
+- **Tax amount** - Validate tax records match the tax amounts on the lines.
+- **Serial number** - Validates that the serial number is present in the transaction lines for items that are serial number controlled
+- **Sign** - Validates that the sign on the quantity and the net amount are the same in all the transaction lines
 
 ## Set up the consistency checker
 
