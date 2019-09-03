@@ -158,7 +158,7 @@ const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput
 To create a new custom data action, do the following.
 
 1. Open a command prompt and navigate to your Commerce extensibility code directory. For the example below we are using `c:\repos\myEcommerce`.
-1. Run the `yarn msdyn365 add-data-action DATA_ACTION_NAME` command line interface (CLI) command to create a new module, as in the following example.
+1. Run the `yarn msdyn365 add-data-action DATA_ACTION_NAME` command-line interface (CLI) command to create a new module, as in the following example.
     ```
     c:\repos\myEcommerceSite>yarn msdyn365 add-data-action getProductReviews
     ```
