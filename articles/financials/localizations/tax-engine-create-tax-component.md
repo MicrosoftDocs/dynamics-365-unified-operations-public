@@ -31,6 +31,8 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 Tax components are like sub-tax types that a tax authority can levy in the same jurisdiction or a different jurisdiction. For example, in the US, sales tax is levied at various levels of jurisdiction, such as the state, county, or city level. Different tax components can be treated differently from an accounting, tax reporting, tax settlement, or other perspective. In India, Central Goods and Services Tax (CGST), State GST (SGST), and Integrated GST (IGST) are all types of GST.
 
 > [!NOTE]
