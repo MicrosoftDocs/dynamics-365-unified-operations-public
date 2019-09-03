@@ -55,6 +55,15 @@ What do you need to do to take this change?
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
+## Project contact committed detail
+You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
+
+## Purchase agreement responsible party
+You now have the ability to define primary and secondary responsible parties on the Purchase agreement classification form and resulting Purchase agreements.  This provides the user access to who oversees the agreements.
+
+## RFQ link on the Purchase order line
+You can add a reference link from the Purchase order lines back to the corresponding RFQ lines they originated from, allowing the user to easily be provided with the supporting request for quotation document.
+
 ## Additional resources
 
 ### Bug fixes
