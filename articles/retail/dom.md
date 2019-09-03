@@ -99,10 +99,9 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         - **Fulfill order from one location only** – If this option is set to **Yes**, DOM makes sure that all lines on an order are fulfilled from a single location.
 	
 > [!NOTE]
-> In the 10.0.5 release, the pararmeter **Fulfill order from one location only** has been repurposed to **Maximum fulfilling locations** where instead of this being able to set to either fulfill from one location only or open it to be fufilled from as many locations as it can be, users can now specify if the fullfilment can be from a definite set of locations (upto 5) or from as many locations as it can be. This provides lot more flexibility to the users in terms of how many locations can the order be fulfilled from. 
+> In the 10.0.5 release, the pararmeter **Fulfill order from one location only** has been repurposed to **Maximum fulfilling locations** where instead of this being able to set to either fulfill from one location only or open it to be fufilled from as many locations as it can be, users can now specify if the fullfilment can be from a definite set of locations (upto 5) or from as many locations as it can be. This provides lot more flexibility to the users in terms of how many locations can the order be fulfilled from.
 
-        The following table explains the behavior when a combination of these parameters is defined.
-
+The following table explains the behavior when a combination of these parameters is defined.
         |      | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
         |------|------------------------|-----------------------|--------------------------------------|-------------|
         | 1    | Yes                    | Yes                   | Yes                                  | A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |
