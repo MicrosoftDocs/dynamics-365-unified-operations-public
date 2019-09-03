@@ -49,11 +49,11 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <tbody>
 <tr>
 <td>Set up business verticals.</td>
-<td>On the <strong>Business verticals</strong> page (<strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>Business verticals</strong>), create business verticals.</td>
+<td>On the <strong>Business verticals</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Business verticals</strong>), create business verticals. For more information, see <a href="apac-ind-GST-create-business-vertical.md"> Create a business vertical</td>
 </tr>
 <tr>
 <td>Set up state codes and the union territory designation for Indian states.</td>
-<td>On the <strong>Address setup</strong> page (<strong>Organization administration</strong> &gt; <strong>Global address book</strong> &gt; <strong>Addresses</strong> &gt; <strong>Address setup</strong>), be sure to enter state codes for each Indian state. Additionally, if the state is a union territory, set the <strong>Union territory</strong> option to <strong>Yes</strong>.</td>
+<td>On the <strong>Address setup</strong> page (<strong>Organization administration</strong> &gt; <strong>Global address book</strong> &gt; <strong>Addresses</strong> &gt; <strong>Address setup</strong>), be sure to enter state codes for each Indian state. Additionally, if the state is a union territory, set the <strong>Union territory</strong> option to <strong>Yes</strong>. For more information, see <a href="apac-ind-GST-update-state-code-union-territory.md"> Update the state code an union territory<td>
 </tr>
 <tr>
 <td>Set up enterprise tax registration numbers.</td>
@@ -63,7 +63,8 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <li><strong>Companies:</strong> Create an entry for the Goods and Services Taxpayer Identification Number (GSTIN) for every company, and specify casual registration periods.</li>
 <li><strong>Vendors:</strong> Define state GST type registration numbers for vendors.</li>
 <li><strong>Customers:</strong> Define state GST type registration numbers for customers.</li>
-</ul>
+
+For more information, see <a href="apac-ind-GST-create-gstin-master.md"> Create a GSTIN master </ul>
 </td>
 </tr>
 <tr>
@@ -151,6 +152,14 @@ Before you complete this task, be sure to save all the configuration files in a 
 Follow these steps to load the configurations and map them to a legal entity.
 
 ### Tax configurations
+| Version                                                                                                            | Details                                                                                                                                                                                       |
+|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Taxable Document.version.61.xml Taxable Document (India).version.61.112.xml Tax (India GST).version.61.113.213.xml | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (7.3) GA configuration                                                                                                  |
+| Taxable Document.version.62.xml Taxable Document (India).version.62.115.xml Tax (India GST).version.62.115.217.xml | KB#4094699                                                                                                                                                                                    |
+| Taxable Document.version.63.xml Taxable Document (India).version.63.116.xml Tax (India GST).version.63.116.218.xml | Support GST on project module Microsoft Dynamics 365 for Finance and Operations (8.0) GA configuration 7.3 with KB#4094699 and KB#4135145                                                     |
+| Taxable Document.version.64.xml Taxable Document (India).version.64.117.xml Tax (India GST).version.64.117.221.xml | Support GST on Bank charge 7.3 with KB#4094699, KB#4135145 and KB#4457539 8.0 with KB#4458726                                                                                                 |
+| Taxable Document.version.71.xml Taxable Document (India).version.71.120.xml Tax (India GST).version.71.120.225.xml | Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1 |
+| Taxable Document.version.81.xml Taxable Document (India).version.81.138.xml Tax (India GST).version.81.138.247.xml | Add invoice date into GST.Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable  Microsoft Dynamics 365 for Finance and Operations (10.0)        |
 
 1. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**, and select the **Tax configurations** tile.
 2. Select **Exchange** &gt; **Load from XML files**.
