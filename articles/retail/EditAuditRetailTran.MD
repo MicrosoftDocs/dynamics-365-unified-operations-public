@@ -69,7 +69,7 @@ The following set of capabilities was introduced as a part of this feature:
 
 7. By default, the system would only allow to edit the retail transactions that has failed validation. If the customer wants to edit records that has passed validation, they can flip the status of the validation status of the transaction to **Error** or **None**. This would allow the transaction to be edited. 
 
-8. As of the version 10.0.5, only cash & carry transactions like sales, returns etc. and cash mgmt. transactions like Declare start amount, Tender declaration, Safe drop, etc. can be edited using this feature. Editing of Customer order or Online order is not supported. 
+8. As of the version 10.0.5, only cash & carry transactions like sales, returns etc. and cash mgmt. transactions like Declare start amount, Tender declaration, Safe drop, etc. can be edited using this feature. Editing of Customer order or Online order is not supported. Starting the 10.0.6 release, support to edit cash management transactions has also been included in the feature.
 
 9. In version 10.0.6 the option to bulk edit retail transactions at a statement level has been introduced. When the Excel Add-in is opened in the context of a Retail statement for which transactions must be modified, the user is presented with the following options:
 
@@ -86,9 +86,10 @@ The following set of capabilities was introduced as a part of this feature:
         2. **Bank tender transactions** - This worksheet has all the bank drop transaction details
         3. **Safe tender transactions** - This worksheet has all the safe drop transaction details
         4. **Tender declaration** - This worksheet has all the tender declaration transaction details
-        5. **Income-Expense Transaction** - This worksheet has all the Income-Expense transaction details
-        6. **Payment transactions** - This worksheet has all the payment related information for the **Pay invoice** operation 
+        5. **Income-Expense Transaction** - This worksheet has all the Income-Expense transaction line details
+        6. **Payment transactions** - This worksheet has all the payment related information for the **Pay invoice** operation as well 
+             as the Income-Expense transaction
 
-10)	As with option to edit & upload selected transactions, there is no validation performed even during the publishing of transactions edited in bulk. The user must ensure that all the edits performed is accurate and the fidelity of data across the worksheets is maintained. For e.g.: If the user wants to change the date of transaction to handle the scenarios where the fiscal or inventory period for the open retail transactions is closed, the user needs to change the date on all Excel worksheets that has the Business date column. Changing in one worksheet will not be enough.
+10)	As with option to **Edit selected transactions**, there is no validation performed even during the publishing of transactions edited in bulk. The user must ensure that all the edits performed is accurate and the fidelity of data across the worksheets is maintained. For e.g.: If the user wants to change the date of transaction to handle the scenarios where the fiscal or inventory period for the open retail transactions is closed, the user needs to change the date on all Excel worksheets that has the Business date column. Changing in one worksheet will not be enough.
 
 11)	The user can validate the retail store transactions for a statement after it has been edited by using the new action introduced on Retail statements called as Revalidate transactions
