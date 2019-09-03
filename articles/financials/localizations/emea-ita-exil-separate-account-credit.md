@@ -59,4 +59,7 @@ If no separate ledger account for credit note is defined or a required Customer/
 ### Credit note created from a sales order
 If you create a credit note based on an existing sales order, make sure **Main account** of each credit note line is cleared up. Initially it is pre-populated with a revenue account from the sales order.
 
-![Main account clearing](media/emea-ita-exil-separate-account-credit-pic2.jpg)
+![Main account clearing](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+
+> [!NOTE] 
+    > Separate accounts are applicable only for credit notes based on sales orders and not applicable for Free text credit notes because Free text credit notes require a ledger account to be explicitly entered.
