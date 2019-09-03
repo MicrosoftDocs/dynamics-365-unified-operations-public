@@ -5,7 +5,7 @@ title: Configure a domain name
 description: This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-Commerce site.
 author: psimolin
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -15,9 +15,9 @@ ms.technology:
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -25,16 +25,15 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: psimolin
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Configure a domain name
 
-[!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-Commerce site. 
 
