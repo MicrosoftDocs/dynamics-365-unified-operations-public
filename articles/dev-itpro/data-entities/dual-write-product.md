@@ -5,7 +5,7 @@ title: Unified product experience
 description: This topic describes the integration of product data between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
 author: t-benebo 
 manager: AnnBe
-ms.date: 08/6/2019
+ms.date: 09/3/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ ms.search.validFrom: 2019-07-15
 
 Integration of products lets you synchronize product data from Microsoft Dynamics 365 for Finance and Operations to Common Data Service. Because of the integration, product data that originates in Finance and Operation can be viewed and used in Dynamics 365 for Customer Engagement.
 
-Because the concept of a product is richer in Finance and Operations than in Customer Engagement, Finance and Operations is considered the master of the integration. In Customer Engagement, the product data from Finance and Operations is read-only.
+Because the concept of a product is richer in Finance and Operations than in Customer Engagement, Finance and Operations is considered the master of the integration. In Customer Engagement, you will be able to use and modify the product data from Finance and Operations but these modifications will not synchronize back to Finance and Operations. Furthermore, as Finance and Operations is the master of the data, if changes are made to the product, these will always apply to the product, updating the existing product information in Customer Engagement.
 
 The richness of the supply chain management related fields that hold product data is also available in Common Data Service, and all the existing concepts that are used to define the product are also defined.
 
@@ -85,7 +85,9 @@ Because the product is represented as an SKU, the concepts of distinct products,
 
 ![Data model for products](media/dual-write-product.png)
 
-With the dual-write functionality enabled, the released products from Dynamics 365 for Finance and Operations will be syncronized in Dynamics 365 for Customer Engagement with **Active** state, so you can directly used in sales order quotations, for example. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in Dynamics 365 for Customer Engagement that matches the currency of your legal entity where the product is released in Dynamics 365 for Finance and Operations. 
+With the dual-write functionality enabled, the products from Dynamics 365 for Finance and Operations will be syncronized in Dynamics 365 for Customer Engagement in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in Dynamics 365 for Customer Engagement that matches the currency of your legal entity where the product is released in Dynamics 365 for Finance and Operations. 
+
+To synchronize the product with **Active** state, so you can directly used in sales order quotations, for example, the following setting needs to be chosen: under **System> Adminstration > System administration > System settings > Sales** select **Create products in active state = yes**. 
 
 ### CDS released distinct products to Product
 
@@ -115,111 +117,121 @@ The **msdyn\_sharedproductdetails** entity contains the fields from Finance and 
 
 Source field | Map type | Destination field
 ---|---|---
-PRODUCTNUMBER | \> | msdyn\_productnumber
-INTRASTATCHARGEPERCENTAGE | \> | msdyn\_intrastatchargepercentage
-ITEMNUMBER | \>\> | msdyn\_itemnumber
-APPROXIMATESALESTAXPERCENTAGE | \> | msdyn\_approximatesalestaxpercentage
-ARRIVALHANDLINGTIME | \> | msdyn\_arrivalhandlingtime
-BESTBEFOREPERIODDAYS | \> | msdyn\_bestbeforeperioddays
-CARRYINGCOSTABCCODE | \>\> | msdyn\_carryingcostabccode
-CONSTANTSCRAPQUANTITY | \> | msdyn\_constantscrapquantity
-COSTCHARGESQUANTITY | \> | msdyn\_costchargesquantity
-DEFAULTRECEIVINGQUANTITY | \> | msdyn\_defaultreceivingquantity
-FIXEDPURCHASEPRICECHARGES | \> | msdyn\_fixedpurchasepricecharges
-FIXEDSALESPRICECHARGES | \> | msdyn\_fixedsalespricecharges
-GROSSDEPTH | \> | msdyn\_grossdepth
-GROSSPRODUCTHEIGHT | \> | msdyn\_grossproductheight
-GROSSPRODUCTWIDTH | \> | msdyn\_grossproductwidth
-INVENTORYUNITSYMBOL | \> | msdyn\_inventoryunitsymbol.name
-ISDISCOUNTPOSREGISTRATIONPROHIBITED | \>\> | msdyn\_isdiscountposregistrationprohibited
-ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION | \>\> | msdyn\_exemptautomaticnotificationcancel
-ISINSTALLMENTELIGIBLE | \>\> | msdyn\_isinstallmenteligible
-ISINTERCOMPANYPURCHASEUSAGEBLOCKED | \>\> | msdyn\_isintercompanypurchaseusageblocked
-ISINTERCOMPANYSALESUSAGEBLOCKED | \>\> | msdyn\_isintercompanysalesusageblocked
-ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED | \>\> | msdyn\_ismanualdiscposregistrationprohibited
-ISPHANTOM | \>\> | msdyn\_isphantom
-ISPOSREGISTRATIONBLOCKED | \>\> | msdyn\_isposregistrationblocked
-ISPOSREGISTRATIONQUANTITYNEGATIVE | \>\> | msdyn\_isposregistrationquantitynegative
-ISPURCHASEPRICEAUTOMATICALLYUPDATED | \>\> | msdyn\_ispurchasepriceautomaticallyupdated
-ISPURCHASEPRICEINCLUDINGCHARGES | \>\> | msdyn\_ispurchasepriceincludingcharges
-ISSALESWITHHOLDINGTAXCALCULATED | \>\> | msdyn\_issaleswithholdingtaxcalculated
-ISRESTRICTEDFORCOUPONS | \>\> | msdyn\_isrestrictedforcoupons
-ISSALESPRICEADJUSTMENTALLOWED | \>\> | msdyn\_issalespriceadjustmentallowed
-ISSALESPRICEINCLUDINGCHARGES | \>\> | msdyn\_issalespriceincludingcharges
-ISSCALEPRODUCT | \>\> | msdyn\_isscaleproduct
-ISSHIPALONEENABLED | \>\> | msdyn\_isshipaloneenabled
-ISUNITCOSTPRODUCTVARIANTSPECIFIC | \>\> | msdyn\_isunitcostproductvariantspecific
-ISVARIANTSHELFLABELSPRINTINGENABLED | \>\> | msdyn\_isvariantshelflabelsprintingenabled
-ISZEROPRICEPOSREGISTRATIONALLOWED | \>\> | msdyn\_iszeropriceposregistrationallowed
-KEYINPRICEREQUIREMENTSATPOSREGISTER | \>\> | msdyn\_keyinpricerequirementsatposregister
-KEYINQUANTITYREQUIREMENTSATPOSREGISTER | \>\> | msdyn\_keyinquantityrequirementsatposregister
-MARGINABCCODE | \>\> | msdyn\_marginabccode
-MAXIMUMPICKQUANTITY | \> | msdyn\_maximumpickquantity
-MUSTKEYINCOMMENTATPOSREGISTER | \>\> | msdyn\_mustkeyincommentatposregister
-NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID | \> | msdyn\_necessaryproductionworkingtimeschedulingp
-NETPRODUCTWEIGHT | \> | msdyn\_netproductweight
-PACKINGDUTYQUANTITY | \> | msdyn\_packingdutyquantity
-POSREGISTRATIONACTIVATIONDATE | \> | msdyn\_posregistrationactivationdate
-POSREGISTRATIONBLOCKEDDATE | \> | msdyn\_posregistrationblockeddate
-POSREGISTRATIONPLANNEDBLOCKEDDATE | \> | msdyn\_posregistrationplannedblockeddate
-POTENCYBASEATTIBUTETARGETVALUE | \> | msdyn\_potencybaseattibutetargetvalue
-POTENCYBASEATTRIBUTEVALUEENTRYEVENT | \>\> | msdyn\_potencybaseattributevalueentryevent
-PRODUCTTYPE | \>\> | msdyn\_producttype
-PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR | \> | msdyn\_productionconsumptiondensityconversion
-PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR | \> | msdyn\_productionconsumptiondepthconversion
-PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR | \> | msdyn\_productionconsumptionheightconversion
-PRODUCTIONCONSUMPTIONWIDTHCONVERSIONFACTOR | \> | msdyn\_productionconsumptionwidthconversion
-PRODUCTVOLUME | \> | msdyn\_productvolume
-PURCHASECHARGESQUANTITY | \> | msdyn\_purchasechargesquantity
-PURCHASEOVERDELIVERYPERCENTAGE | \> | msdyn\_purchaseoverdeliverypercentage
-PURCHASEPRICE | \> | msdyn\_purchaseprice
-PURCHASEPRICEDATE | \> | msdyn\_purchasepricedate
-PURCHASEPRICINGPRECISION | \> | msdyn\_purchasepricingprecision
-PURCHASEUNDERDELIVERYPERCENTAGE | \> | msdyn\_purchaseunderdeliverypercentage
-RAWMATERIALPICKINGPRINCIPLE | \>\> | msdyn\_rawmaterialpickingprinciple
-SALESCHARGESQUANTITY | \> | msdyn\_saleschargesquantity
-SALESOVERDELIVERYPERCENTAGE | \> | msdyn\_salesoverdeliverypercentage
-SALESPRICE | \> | msdyn\_salesprice
-SALESPRICECALCULATIONCHARGESPERCENTAGE | \> | msdyn\_salespricecalculationchargespercentage
-SALESPRICECALCULATIONCONTRIBUTIONRATIO | \> | msdyn\_salespricecalculationcontributionratio
-SALESPRICECALCULATIONMODEL | \>\> | msdyn\_salespricecalculationmodel
-SALESPRICEDATE | \> | msdyn\_salespricedate
-SALESPRICINGPRECISION | \> | msdyn\_salespricingprecision
-SALESUNDERDELIVERYPERCENTAGE | \> | msdyn\_salesunderdeliverypercentage
-SALESUNITSYMBOL | \> | msdyn\_salesunitsymbol.name
-SCALEINDICATOR | \>\> | msdyn\_scaleindicator
-SHELFADVICEPERIODDAYS | \> | msdyn\_shelfadviceperioddays
-SHELFLIFEPERIODDAYS | \> | msdyn\_shelflifeperioddays
-TAREPRODUCTWEIGHT | \> | msdyn\_tareproductweight
-TRANSFERORDEROVERDELIVERYPERCENTAGE | \> | msdyn\_transferorderoverdeliverypercentage
-TRANSFERORDERUNDERDELIVERYPERCENTAGE | \> | msdyn\_transferorderunderdeliverypercentage
-UNITCOST | \> | msdyn\_unitcost
-UNITCOSTDATE | \> | msdyn\_unitcostdate
-UNITCOSTQUANTITY | \> | msdyn\_unitcostquantity
-VARIABLESCRAPPERCENTAGE | \> | msdyn\_variablescrappercentage
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1 | \> | msdyn\_warehousemobiledevicedescriptionline1
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2 | \> | msdyn\_warehousemobiledevicedescriptionline2
-WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED | \>\> | msdyn\_willinventoryissueautoreportasfinished
-WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE | \>\> | msdyn\_willinventoryreceiptignoreflushing
-WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC | \>\> | msdyn\_willpickingworkbenchapplyboxinglogic
-WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT | \>\> | msdyn\_willtotalpurchdiscountcalcincludeproduct
-WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT | \>\> | msdyn\_willtotalsalesdiscountcalcincludeproduct
-WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY | \>\> | msdyn\_willworkcenterpickingallownegativeinvent
-YIELDPERCENTAGE | \> | msdyn\_yieldpercentage
-ISUNITCOSTAUTOMATICALLYUPDATED | \>\> | msdyn\_isunitcostautomaticallyupdated
-PURCHASEUNITSYMBOL | \> | msdyn\_purchaseunitsymbol.name
-PURCHASEPRICEQUANTITY | \> | msdyn\_purchasepricequantity
-ISUNITCOSTINCLUDINGCHARGES | \>\> | msdyn\_isunitcostincludingcharges
-FIXEDCOSTCHARGES | \>\> | msdyn\_fixedcostcharges
-MINIMUMCATCHWEIGHTQUANTITY | \>\> | msdyn\_minimumcatchweightquantity
-MAXIMUMCATCHWEIGHTQUANTITY | \>\> | msdyn\_maximumcatchweightquantity
-ALTERNATIVEITEMNUMBER | \>\> | msdyn\_alternativeitemnumber.msdyn\_itemnumber
-BOMUNITSYMBOL | \>\> | msdyn\_bomunitsymbol.name
-CATCHWEIGHTUNITSYMBOL | \>\> | msdyn\_catchweightunitsymbol.name
-COMPARISONPRICEBASEUNITSYMBOL | \>\> | msdyn\_comparisonpricebaseunitsymbol.name
-PRIMARYVENDORACCOUNTNUMBER | \>\> | msdyn\_vendorid.msdyn\_vendoraccountnumber
-ISCATCHWEIGHTPRODUCT | \>\> | msdyn\_iscatchweight
-PRODUCTDIMENSIONGROUPNAME | \>\> | msdyn\_productdimensiongroupid.msdyn\_groupname
+PRODUCTNUMBER | > | msdyn_globalproduct.msdyn_productnumber
+INTRASTATCHARGEPERCENTAGE | > | msdyn_intrastatchargepercentage
+ITEMNUMBER | >> | msdyn_itemnumber
+APPROXIMATESALESTAXPERCENTAGE | > | msdyn_approximatesalestaxpercentage
+BESTBEFOREPERIODDAYS | > | msdyn_bestbeforeperioddays
+CARRYINGCOSTABCCODE | >> | msdyn_carryingcostabccode
+CONSTANTSCRAPQUANTITY | > | msdyn_constantscrapquantity
+COSTCHARGESQUANTITY | > | msdyn_costchargesquantity
+DEFAULTRECEIVINGQUANTITY | > | msdyn_defaultreceivingquantity
+FIXEDPURCHASEPRICECHARGES | > | msdyn_fixedpurchasepricecharges
+FIXEDSALESPRICECHARGES | > | msdyn_fixedsalespricecharges
+GROSSDEPTH | > | msdyn_grossdepth
+GROSSPRODUCTHEIGHT | > | msdyn_grossproductheight
+GROSSPRODUCTWIDTH | > | msdyn_grossproductwidth
+INVENTORYUNITSYMBOL | > | msdyn_inventoryunitsymbol.msdyn_symbol
+ISDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_isdiscountposregistrationprohibited
+ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION | >> | msdyn_exemptautomaticnotificationcancel
+ISINSTALLMENTELIGIBLE | >> | msdyn_isinstallmenteligible
+ISINTERCOMPANYPURCHASEUSAGEBLOCKED | >> | msdyn_isintercompanypurchaseusageblocked
+ISINTERCOMPANYSALESUSAGEBLOCKED | >> | msdyn_isintercompanysalesusageblocked
+ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_ismanualdiscposregistrationprohibited
+ISPHANTOM | >> | msdyn_isphantom
+ISPOSREGISTRATIONBLOCKED | >> | msdyn_isposregistrationblocked
+ISPOSREGISTRATIONQUANTITYNEGATIVE | >> | msdyn_isposregistrationquantitynegative
+ISPURCHASEPRICEAUTOMATICALLYUPDATED | >> | msdyn_ispurchasepriceautomaticallyupdated
+ISPURCHASEPRICEINCLUDINGCHARGES | >> | msdyn_ispurchasepriceincludingcharges
+ISSALESWITHHOLDINGTAXCALCULATED | >> | msdyn_issaleswithholdingtaxcalculated
+ISRESTRICTEDFORCOUPONS | >> | msdyn_isrestrictedforcoupons
+ISSALESPRICEADJUSTMENTALLOWED | >> | msdyn_issalespriceadjustmentallowed
+ISSALESPRICEINCLUDINGCHARGES | >> | msdyn_issalespriceincludingcharges
+ISSCALEPRODUCT | >> | msdyn_isscaleproduct
+ISSHIPALONEENABLED | >> | msdyn_isshipaloneenabled
+ISUNITCOSTPRODUCTVARIANTSPECIFIC | >> | msdyn_isunitcostproductvariantspecific
+ISVARIANTSHELFLABELSPRINTINGENABLED | >> | msdyn_isvariantshelflabelsprintingenabled
+ISZEROPRICEPOSREGISTRATIONALLOWED | >> | msdyn_iszeropriceposregistrationallowed
+KEYINPRICEREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinpricerequirementsatposregister
+KEYINQUANTITYREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinquantityrequirementsatposregister
+MARGINABCCODE | >> | msdyn_marginabccode
+MAXIMUMPICKQUANTITY | > | msdyn_maximumpickquantity
+MUSTKEYINCOMMENTATPOSREGISTER | >> | msdyn_mustkeyincommentatposregister
+NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID | > | msdyn_necessaryproductionworkingtimeschedulingp
+NETPRODUCTWEIGHT | > | msdyn_netproductweight
+PACKINGDUTYQUANTITY | > | msdyn_packingdutyquantity
+POSREGISTRATIONACTIVATIONDATE | > | msdyn_posregistrationactivationdate
+POSREGISTRATIONBLOCKEDDATE | > | msdyn_posregistrationblockeddate
+POSREGISTRATIONPLANNEDBLOCKEDDATE | > | msdyn_posregistrationplannedblockeddate
+POTENCYBASEATTIBUTETARGETVALUE | > | msdyn_potencybaseattibutetargetvalue
+POTENCYBASEATTRIBUTEVALUEENTRYEVENT | >> | msdyn_potencybaseattributevalueentryevent
+PRODUCTTYPE | >> | msdyn_producttype
+PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR | > | msdyn_productionconsumptiondensityconversion
+PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR | > | msdyn_productionconsumptiondepthconversion
+PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR | > | msdyn_productionconsumptionheightconversion
+PRODUCTIONCONSUMPTIONWIDTHCONVERSIONFACTOR | > | msdyn_productionconsumptionwidthconversion
+PRODUCTVOLUME | > | msdyn_productvolume
+PURCHASECHARGESQUANTITY | > | msdyn_purchasechargesquantity
+PURCHASEOVERDELIVERYPERCENTAGE | > | msdyn_purchaseoverdeliverypercentage
+PURCHASEPRICE | > | msdyn_purchaseprice
+PURCHASEPRICEDATE | > | msdyn_purchasepricedate
+PURCHASEPRICINGPRECISION | > | msdyn_purchasepricingprecision
+PURCHASEUNDERDELIVERYPERCENTAGE | > | msdyn_purchaseunderdeliverypercentage
+RAWMATERIALPICKINGPRINCIPLE | >> | msdyn_rawmaterialpickingprinciple
+SALESCHARGESQUANTITY | > | msdyn_saleschargesquantity
+SALESOVERDELIVERYPERCENTAGE | > | msdyn_salesoverdeliverypercentage
+SALESPRICE | > | msdyn_salesprice
+SALESPRICECALCULATIONCHARGESPERCENTAGE | > | msdyn_salespricecalculationchargespercentage
+SALESPRICECALCULATIONCONTRIBUTIONRATIO | > | msdyn_salespricecalculationcontributionratio
+SALESPRICECALCULATIONMODEL | >> | msdyn_salespricecalculationmodel
+SALESPRICEDATE | > | msdyn_salespricedate
+SALESPRICINGPRECISION | > | msdyn_salespricingprecision
+SALESUNDERDELIVERYPERCENTAGE | > | msdyn_salesunderdeliverypercentage
+SALESUNITSYMBOL | > | msdyn_salesunitsymbol.msdyn_symbol
+SCALEINDICATOR | >> | msdyn_scaleindicator
+SELLSTARTDATE | > | msdyn_sellstartdate
+SHELFADVICEPERIODDAYS | > | msdyn_shelfadviceperioddays
+SHELFLIFEPERIODDAYS | > | msdyn_shelflifeperioddays
+SHIPSTARTDATE | > | msdyn_shipstartdate
+TAREPRODUCTWEIGHT | > | msdyn_tareproductweight
+TRANSFERORDEROVERDELIVERYPERCENTAGE | > | msdyn_transferorderoverdeliverypercentage
+TRANSFERORDERUNDERDELIVERYPERCENTAGE | > | msdyn_transferorderunderdeliverypercentage
+UNITCOST | > | msdyn_unitcost
+UNITCOSTDATE | > | msdyn_unitcostdate
+UNITCOSTQUANTITY | > | msdyn_unitcostquantity
+VARIABLESCRAPPERCENTAGE | > | msdyn_variablescrappercentage
+WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1 | > | msdyn_warehousemobiledevicedescriptionline1
+WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2 | > | msdyn_warehousemobiledevicedescriptionline2
+WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED | >> | msdyn_willinventoryissueautoreportasfinished
+WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE | >> | msdyn_willinventoryreceiptignoreflushing
+WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC | >> | msdyn_willpickingworkbenchapplyboxinglogic
+WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalpurchdiscountcalcincludeproduct
+WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalsalesdiscountcalcincludeproduct
+WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY | >> | msdyn_willworkcenterpickingallownegativeinvent
+YIELDPERCENTAGE | > | msdyn_yieldpercentage
+ISUNITCOSTAUTOMATICALLYUPDATED | >> | msdyn_isunitcostautomaticallyupdated
+PURCHASEUNITSYMBOL | > | msdyn_purchaseunitsymbol.msdyn_symbol
+PURCHASEPRICEQUANTITY | > | msdyn_purchasepricequantity
+ISUNITCOSTINCLUDINGCHARGES | >> | msdyn_isunitcostincludingcharges
+FIXEDCOSTCHARGES | >> | msdyn_fixedcostcharges
+MINIMUMCATCHWEIGHTQUANTITY | >> | msdyn_minimumcatchweightquantity
+MAXIMUMCATCHWEIGHTQUANTITY | >> | msdyn_maximumcatchweightquantity
+ALTERNATIVEITEMNUMBER | >> | msdyn_alternativeitemnumber.msdyn_itemnumber
+BOMUNITSYMBOL | >> | msdyn_bomunitsymbol.msdyn_symbol
+CATCHWEIGHTUNITSYMBOL | >> | msdyn_catchweightunitsymbol.msdyn_symbol
+COMPARISONPRICEBASEUNITSYMBOL | >> | msdyn_comparisonpricebaseunitsymbol.msdyn_symbol
+PRIMARYVENDORACCOUNTNUMBER | >> | msdyn_vendorid.msdyn_vendoraccountnumber
+ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
+PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
+
+## All product to msdyn_global products
+
+The all products entity contains all the products available in Dynamics 365 for Finance and Operations, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTNAME | >> | msdyn_productname
+PRODUCTNUMBER | >> | msdyn_productnumber
 
 ## Product dimensions 
 
@@ -588,11 +600,3 @@ GROUPDESCRIPTION | = | msdyn_groupdescription
 ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
 ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
 
-## All product to msdyn_global products
-
-The all products entity contains all the products available in Dynamics 365 for Finance and Operations, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
-
-Source field | Map type | Destination field
----|---|---
-PRODUCTNAME | >> | msdyn_productname
-PRODUCTNUMBER | >> | msdyn_productnumber
