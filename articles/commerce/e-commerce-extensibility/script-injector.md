@@ -1,53 +1,61 @@
 ---
 # required metadata
 
-title: Script Injectors
-description: This topic covers details on how script can be added to your e-Commerce page using the Starter Kit modules and how to extend them. This may include 3rd party analtyics integration or other service scripts. 
-author: SamJarawan
+title: Script injectors
+description: This topic covers script injectors that can be used to add scripts to online pages in Dynamics 365 Commerce.
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Script Injectors
-This topic covers details on how script can be added to your online page using Starter Kit modules and how to extend them. Examples include adding script for 3rd party analtyics integration or other service scripts.
+# Script injectors
 
-The Dynamics 365 Commerce online Starter Kit provides several pre-built **script injector** modules that can be added to a master page to inject inline or external script into the HTML head, body begin or body end parts of a page as required.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Below is a screen shot of a script injector module being configured on a master page.
+This topic covers script injectors that can be used to add scripts to online pages in Dynamics 365 Commerce.
+
+## Overview
+
+The Commerce online starter kit provides several pre-built script injector modules that can be added to a master page to inject inline or external script into the HTML head, body begin, or body end parts of a page as required. Examples of this include adding script for third-party analytics integration or other service scripts.
+
+The following screenshot shows a script injector module being configured on a master page.
 
 ![Script injector in authoring tools](media/script-injector.png)
 
 ## Custom script injector modules
-There may be scenarios where you need to inject script into your site or site pages and the built in script injector modules are not as flexible as needed, for example you may need additional configuration fields exposed to the authoring tools. In this scennario the Starter Kit script injectors can be extended into new modules. This new script injector module(s) can then be placed directly on a page, in a shared template or in a master template.
 
-## Create a custom script injector
-To get started use the following command to create a new module. This is an example: 
+There may be scenarios where you need to inject script into your site or site pages and the built-in script injector modules are not as flexible as needed. For example, you may need additional configuration fields exposed in the authoring tools. In these cases, starter kit script injector modules can be extended into new custom script injector modules. A custom script injector module can then be placed on a page, in a shared template, or in a master template.
+
+### Create a custom script injector
+
+To create a custom script injector, use the following command to create a new module. 
 
 ```
 C:\repos\MySite>yarn msdyn365 add-module myAnalytics
 ```
 
-The myAnalytics.definition.json file can then reference a Starter Kit script injector base definition file:
+The myAnalytics.definition.json file can then reference a starter kit script injector base definition file.
 
 ```json
 {
@@ -57,7 +65,7 @@ The myAnalytics.definition.json file can then reference a Starter Kit script inj
 }
 ```
 
-If you open the script injector base definition file, you can see the pre-configured attributes and configuration fields:
+If you open the script injector base definition file, you can see the preconfigured attributes and configuration fields.
 
 ```json
 {
@@ -114,6 +122,6 @@ If you open the script injector base definition file, you can see the pre-config
   }
 }
 ```
-The myAnalytics.tsx can now be modified as needed which could include adding additional config fields.
+The myAnalytics.tsx file can now be modified as needed, for example by adding additional config fields.
 
-Once the script injector module is deployed to a Dynamics 365 Commerce environment, thew new extended script injector module will show up in the authoring tools.
+Once the custom script injector module is deployed to a Commerce environment, it will appear in the authoring tools.
