@@ -898,6 +898,8 @@
         href: ../financials/cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
         href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
+      - name: Simple bank reconciliation
+        href: ../financials/cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
         - name: Advanced bank reconciliation setup tasks
