@@ -41,19 +41,13 @@ In many scenarios, you will have an application that requires many calls to the 
 
 ## Examples
 
-The main difference between a batch data action and a standard data action is its support for an array of action inputs. In the following example of an action method inside a data action, notice that only one **ProductInput** class is accepted.
+The main difference between a batch data action and a standard data action is its support for an array of action inputs. Notice in the following data action example, the action method **getSimpleProductAction** accepts only a single **ProductInput** class.
 
 ```typescript
 async function getSimpleProductAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProduct>
 ```
 
-To change the previous data action into a batch data action, you update the method signature as shown in the following example.
-
-```typescript
-async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]>
-```
-
-Notice that you're expecting the action to receive an array of inputs and return an array of products back from the API. To support this behavior, you must update the action function.
+To change this example to a batch data action, the method signature can be changed to accept an array of **ProductImage's** and return an array of **SimpleProduct's**.  The below examples also shows the changes needed in the data action method to process the input array and return an array.
 
 ```typescript
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]> {
@@ -85,7 +79,7 @@ async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionConte
     }
 ```
 
-Now that the data action method has been updated to handle an array of inputs, you must set **isBatched** in the action creation call to **true**.
+Now that the data action method has been updated to handle an array of inputs, the **isBatched** property in the action creation call needs to be set to **true**.
 
 ```typescript
 export default createObservableDataAction({
