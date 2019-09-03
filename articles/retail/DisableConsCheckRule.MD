@@ -33,9 +33,9 @@ This topic describes the capability to disable individual rules for retail trans
 
 Every retailer have specific business scenarios and processes that are unique to them and as such not all of the retail transaction consistency checker rules that are shipped in the product might be applicable to every retailer. Given this, with this feature, retailers can now choose to disable the rules that are not applicable to them.
 
-A new tab has been introduced in the **Retail parameters** form under the path **Headquarters setup > Parameters > Retail parameters** called as **Transaction validation**  wherein the user can see the list of retail transaction consistency checker rules that are available in their environment and their status. 
+A new tab has been introduced in the **Retail parameters** form under the path **Retail > Headquarters setup > Parameters > Retail parameters** called as **Transaction validation**  wherein the user can see the list of retail transaction consistency checker rules that are available in their environment and their status. 
 
 By default, all the rules are set to an **Enabled** status which denotes that by default all the rules will be used to validate the retail transactions before they are pulled into the retail statements. To disable individual rules, the user will have to set the respective rule status to **Disabled**. Disabled rules are not considered in the validation run of the retail transactions during the statement calculation process. 
 
-In addition to the status on the individual rules, an additional parameter called as **Disable consistency checker for Retail transactions** has been introduced on the same form, which when turned on will bypass the entire validation process irrespective of the rule status during the statement calculation process.
+In addition to the status on the individual rules, an additional parameter called as **Disable consistency checker for Retail transactions** has been introduced on the same form, which when turned on will bypass the entire validation process irrespective of the rule status during the statement calculation process. Once the flag is turned **Off**, then it is not possible to turn it **On** again from the UI. 
 
