@@ -61,7 +61,7 @@ This feature aims to create a statement posting model where retail stores transa
 
 5)	Both statement types can also be created manually, using the **Retail statements** menu item available under **Retail > Channels > Retail stores**. On clicking **New** on this form, the user will be prompted to choose the type of statement that needs to be created.
 
-6)	The batch jobs **Calculate statements in batch** and **Post statements in batch** will also be redundant with this feature and should not be used.
+6)	The batch jobs **Calculate statements in batch** and **Post statements in batch** will also be redundant with this feature and will not be available on the menu.
 
 7)	All unposted statements of either types can be seen using the **Retail statements** form with type identifier available as column on the form. The same is true for the **Posted statements** form as well.  
 
