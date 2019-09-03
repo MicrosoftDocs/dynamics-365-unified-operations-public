@@ -55,11 +55,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We are retiring the setUtcString() method as a better replacement method is available.   |
+| **Reason for deprecation/removal** | We are retiring the **setUtcString()** method, because a better replacement method is available. |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the setUtcString() method. Developers should be using the setUtcDateTime() method instead. |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
 
 ## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
