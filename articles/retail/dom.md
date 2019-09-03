@@ -97,6 +97,9 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         - **Fulfill partial orders?** – If this option is set to **Yes**, DOM can fulfill only part of the quantity on an order line. This partial fulfillment is achieved by splitting the order line.
         - **Fulfill partial lines?** – If this option is set to **Yes**, DOM can fulfill a partial quantity of order lines. This partial fulfillment is achieved by splitting the order line.
         - **Fulfill order from one location only** – If this option is set to **Yes**, DOM makes sure that all lines on an order are fulfilled from a single location.
+	
+> [!NOTE]
+> In the 10.0.5 release, the pararmeter **Fulfill order from one location only** has been repurposed to **Maximum fulfilling locations** where instead of this being able to set to either fulfill from one location only or open it to be fufilled from as many locations as it can be, users can now specify if the fullfilment can be from a definite set of locations (upto 5) or from as many locations as it can be. This provides lot more flexibility to the users in terms of how many locations can the order be fulfilled from. 
 
         The following table explains the behavior when a combination of these parameters is defined.
 
