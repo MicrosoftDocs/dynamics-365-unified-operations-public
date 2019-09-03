@@ -66,8 +66,9 @@ Find the right online training, in person workshops, and events for your role as
 
     Are you an implementation expert for a business domain? 
 
-    [Functional Application Consultant Learning Catalog](learning-catalog-functional-consultant.md)
-
+    [Get started](learning-catalog-functional-consultant.md#get-started)
+    [Core platform knowledge](learning-catalog-functional-consultant.md#core-platform-knowledge)
+    
     :::column-end:::
 :::row-end:::
 :::row:::
