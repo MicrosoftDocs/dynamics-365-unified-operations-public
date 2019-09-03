@@ -2,58 +2,54 @@
 # required metadata
 
 title: Data actions
-description: Data Actions are JavaScript functions that are used within the Dynamics 365 Commerce e-Commerce architecture to facilitate the fetching and mapping of data needed by modules across your application.
-author: SamJarawan
-manager: JeffBl
-ms.date: 08/30/2019
+description: This topic covers data actions in Dynamics 365 Commerce.
+author: samjarawan
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Data actions
 
-Data actions are JavaScript functions that are used within the Dynamics 365 Commerce e-Commerce architecture to facilitate the fetching and mapping of data needed by modules across your application.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Data Actions offer improved performance with:
+This topic covers data actions in Dynamics 365 Commerce.
 
-1. Integrated app-level and request-level caches, enabling state-sharing scenarios
-2. Built-in utilities to support batching to minimize external requests required by your application
-3. Automatic de-duplication to ensure multiple data action calls are not duplicated
+## Overview
 
-The Dynamics 365 Commerce platform includes a set of core Data Actions that can be called from your module to perform common retail data retrieval such as returning product details or custom Data Actions can be created to fetch and process data needed by your modules.
+Data actions are JavaScript functions that are used within the Commerce architecture to facilitate the fetching and mapping of data needed by modules across applications.
 
+Data actions offer improved performance with:
 
-## Creating a new custom Data Action
+- Integrated app-level and request-level caches, enabling state-sharing scenarios.
+- Built-in utilities that support batching to minimize external requests required by your application.
+- Automatic de-duplication to ensure multiple data action calls are not duplicated.
 
-To create a new data action:
-1. Open a command prompt and navigate to your Dynamics 365 Commerce extensibility code directory.  For our example below we are using `c:\repos\myEcommerce`.
-1. run the `yarn msdyn365 add-data-action DATA_ACTION_NAME` CLI command to create a new module, example:
-    ```
-    c:\repos\myEcommerceSite>yarn msdyn365 add-data-action getProductReviews
-    ```
-You will find a new typescript Data Action file created under the `\src\actions\` directory with the name of the data action.  In the example above we would have a new file: `\src\actions\getProductReviews.ts`.
+The Commerce platform includes a set of core data actions that can be called from modules to perform common retail data retrieval such as returning product details. Also, you can create custom data actions to fetch and process data needed by modules.
 
-## Anatomy of a Data Action
+## Anatomy of a data action
 
-Below is the template typescript file that is created for a new data action.
+A template TypeScript file that is created for a new data action looks like the following example.
 
 ```Typescript
 /*---------------------------------------------------------------------------------------------
@@ -108,10 +104,12 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
     input: createInput
 });
 ```
-### Key parts of a Data Action
+### Key parts of a data action
+
 * The "Action" function
 
-This is the main function that contains the logic to execute when the action is called. This may include making API calls, reading cookies, or transforming passed in data.
+The "Action" function is the main function that contains the logic that executes when the action is called. This may include making API calls, reading cookies, or transforming passed-in data.
+
 ```Typescript
 async function action(input:GetProductReviewsInput, ctx: Msdyn365.IActionContext):Promise<IGetProductReviewsData> {
     // const apiSettings = Msdyn365.msdyn365Commerce.apiSettings;
@@ -129,7 +127,8 @@ export interface IGetProductReviewsData {
 
 * The "Action" input
 
-This class is used to pass data into the action function. The "cacheObjectType" and "cacheKey" are used to indicate where in the cache it should put the result of your action.
+The "Action" input class is used to pass data into the action function. The "cacheObjectType" and "cacheKey" values indicate where in the cache it should put the result of the action.
+
 ```Typescript
 export class GetProductReviewsInput extends Msdyn365.CommerceEntityInput implements Msdyn365.IActionInput {
 
@@ -147,9 +146,20 @@ export class GetProductReviewsInput extends Msdyn365.CommerceEntityInput impleme
 
 * The createInput method
 
-This is an optional method that you can create which is used to build an instance of you Action Input for use on loading data to initally populate your page. See Page Load Data Actions for more information.
+The optional createInput method can be employed to build an instance of an action input that is used to load data when initially populating a page. See [Page Load Data Actions](TBD) for more information.
+
 ```Typescript
 const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput => {
     return new GetProductReviewsInput();
 };
 ```
+## Create a new custom data action
+
+To create a new custom data action, do the following.
+
+1. Open a command prompt and navigate to your Commerce extensibility code directory. For the example below we are using `c:\repos\myEcommerce`.
+1. Run the `yarn msdyn365 add-data-action DATA_ACTION_NAME` command line interface (CLI) command to create a new module, as in the following example.
+    ```
+    c:\repos\myEcommerceSite>yarn msdyn365 add-data-action getProductReviews
+    ```
+New TypeScript custom data action files are created under the `\src\actions\` directory using the name of the data action. For the example above, the new custom data action file path and name would be `\src\actions\getProductReviews.ts`.
