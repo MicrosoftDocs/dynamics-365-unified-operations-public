@@ -129,11 +129,11 @@ Learn how to create or modify existing modules, data actions and themes to exten
 
 ## Get Started
 * [System requirements](system-requirements.md)
-* [Development environment setup](dev-environment-setup.md)
+* [Development environment setup](setup-dev-environment.md)
 
 ## Platform Overview
 * [Architectural overview](architectural-overview.md)
-* [Online components](online-components.md)
+* [Online components](ecommerce-components.md)
 * [CLI command reference](cli-command-reference.md)
 
 ## Anatomy of a module
