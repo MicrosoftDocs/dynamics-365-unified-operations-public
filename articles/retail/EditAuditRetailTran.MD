@@ -59,11 +59,11 @@ The following set of capabilities was introduced as a part of this feature:
 
 5. The system maintains a complete audit trail of the change made by the user and the same can be viewed using the **View audit trail** button in the **Retail transaction** header for the header level changes and in the relevant section and record under the **Transactions** form. For e.g.; all sales line related changes will be visible under the **Sales transactions** form under the **Transaction** button, payment related changes will be visible under the **Payment transactions** form under the **Transaction** button and so on. The details of the audit that are maintained for the changes are as below:
 
-  1. Modified date and time
-  2. Field 
-  3. Old value
-  4. New value
-  5. Modified by
+     1. Modified date and time
+     2. Field 
+     3. Old value
+     4. New value
+     5. Modified by
 
 6. After changes are made and published for retail transactions, the **Validate store transactions** option must be run again to validate that the changes made are all consistent & as per expectations.
 
