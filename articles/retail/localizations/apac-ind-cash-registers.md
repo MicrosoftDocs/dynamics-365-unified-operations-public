@@ -422,3 +422,18 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     5. Select **Tax document**.
     6. Verify that the return receipt number is updated as the transaction ID.
+
+## Update retail credit notes with references to original invoices
+
+> [!NOTE]
+> This functionlaity is available from the update 10.0.3
+
+This feature creates a procedure that periodically updates the Original GST transaction ID link in credit notes so that the link correctly references the related original sales invoice. This link is also used in GSTR reporting.
+
+Enable Skip aggregation for returns
+
+## Manage customer registration numbers from POS
+
+The feature enables entering a customer’s registration number, such as GSTIN, when creating a new customer record from Retail point of sale (POS). The registration numbers are further used for invoicing and reporting purposes.
+
+In many cases, having a GSTIN number specified for a named customer is required in retail sales. Without the ability to manage customer registration numbers from Retail point of sale (POS), the only workaround is to manage the registration numbers from retail headquarters, which leads to additional efforts and significant delays due to data synchronization. This is especially critical when a new customer record is being created from POS.
