@@ -146,8 +146,8 @@ Learn how to create or modify existing modules, data actions and themes to exten
 
 ## Develop Modules
 * [Create a new module](create-new-module.md)
-* [Clone a starter kit module](clone-sdk-module.md)
-* [Module configuration fields](module-config-fields.md)
+* [Clone a starter kit module](clone-starter-module.md)
+* [Add module configuration fields](add-module-config-fields.md)
 * [Testing a module](module-testing.md)
   * [Module mock](module-mock.md)
   * [Page mock](test-page-mock.md)
