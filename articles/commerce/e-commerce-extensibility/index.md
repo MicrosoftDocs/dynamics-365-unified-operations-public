@@ -148,18 +148,18 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Create a new module](create-new-module.md)
 * [Clone a starter kit module](clone-starter-module.md)
 * [Add module configuration fields](add-module-config-fields.md)
-* [Testing a module](module-testing.md)
-  * [Module mock](module-mock.md)
-  * [Page mock](test-page-mock.md)
+* [Test a module](test-module.md)
+  * [Test modules by using module mocks](test-module-mock.md)
+  * [Test modules by using page mocks](test-page-mock.md)
 * [Container modules](container-modules.md)
-  * [Create a layout container module](layout-containers.md)
+  * [Create a layout container module](create-layout-container.md)
   * [Create a page container module](create-page-containers.md)
-* [Localizing a module](localizing-module.md)
-* [Module debugging](debugging-module.md)
+* [Localizing a module](localize-module.md)
+* [Debug modules](debug-modules.md)
 
 ## Advanced module topics
-* [Module globalization with CultureInfoFormatter](module-globalization.md)
-* [Request properties](request-properties.md)
+* [Module globalization with CultureInfoFormatter](globalize-modules.md)
+* [Request properties](request-properties-object.md)
 * [App settings](app-settings.md)
 * [Extend a module definition](extend-module-definition.md)
 * [Working with Cookies](cookie-data.md) 
@@ -170,24 +170,24 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Event based data actions](event-based-data-actions.md)
 * [Chaining data actions](chain-data-actions.md)
 * [Batched data actions](batch-data-actions.md)
-* [Observable data actions](observable-data-actions.md)
-* [Sharing state across modules](cross-module-communication.md)
+* [Observable data actions](create-observable-data-action.md)
+* [Share state across modules](share-state-across-modules.md)
 * [Core data actions](core-data-actions.md)
-* [Testing data actions with mocks](data-action-testing.md)
+* [Testing data actions with mocks](test-data-action-mocks.md)
 
 ## Injecting script
 * [Script injectors](script-injector.md)
 
 ## Develop themes
 * [Theming overview](theming.md)
-* [Create a new theme](theme-creation.md)
-* [Theme settings](image-settings.md)
+* [Create a new theme](create-theme.md)
+* [Configure theme settings](configure-theme-settings.md)
 
 ## TS-proxy
 * [TS-proxy API] (TBD)
 
 ## Telemetry and analytics
-* [Telemetry](telemetry.md)
+* [Telemetry logger](telemetry-logger.md)
 
 ## Deployment and maintenance
 * [Package and deploy to a D365 E-Commerce environment](package-deploy.md)
