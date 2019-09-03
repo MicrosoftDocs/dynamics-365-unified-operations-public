@@ -5,7 +5,7 @@ title: Purchasing cards
 description: This topic explains how to setup and track purchasing card transactions.
 author: velofog
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: v-alpavk
-ms.search.validFrom: 2019-8-02
+ms.search.validFrom: 2019-9-03
 ms.dyn365.ops.version: 10.0.7
 
 ---
