@@ -5,7 +5,7 @@ title: AD FS Office 365 compatibility
 description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
 author: faix
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 28
 [!include [banner](../includes/banner.md)]
 
 >[!IMPORTANT]
->It is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 or later.
+>It is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 for Finance and Operations or later.
 
 This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
 
@@ -71,4 +71,4 @@ This topic explains how to use the same instance of Active Directory Federation 
 
 1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
 2. Modify the local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
-3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 or later. If there is no base version that runs Platform update 28 or later, deploy the latest base version that is available. Then service it so that Platform update 28 is deployed on top.
+3. Continue to follow the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector), and deploy a base version that runs Platform update 28 of Finance and Operations or later. If there is no base version that runs Platform update 28 of Finance and Operations or later, deploy the latest base version that is available. Then service it so that Platform update 28 of Finance and Operations is deployed on top.
