@@ -29,6 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Assign users to security roles
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 To use anything other than common capabilities, users must be assigned to security roles. This procedure explains how system administrators can assign users to roles automatically, based on business data. 
 
