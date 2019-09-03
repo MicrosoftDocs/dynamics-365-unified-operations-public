@@ -75,7 +75,7 @@ Warehouses | msdyn\_inventwarehouses
 
 ## Integration of products
 
-In this model, the product is represented by the combination of two entities in Common Data Service: **Product** and **msdyn\_sharedproductdetails**. Whereas the first entity contains the definition of a product (the unique identifier for the product, the product name, and the description), the second entity contains the fields that are stored at the product level in Finance and Operations. The combination of these two entities is used to define the product according to the concept of the stock keeping unit (SKU).
+In this model, the product is represented by the combination of two entities in Common Data Service: **Product** and **msdyn\_sharedproductdetails**. Whereas the first entity contains the definition of a product (the unique identifier for the product, the product name, and the description), the second entity contains the fields that are stored at the product level in Finance and Operations. The combination of these two entities is used to define the product according to the concept of the stock keeping unit (SKU). Each released product will have its information in the mentioned entities (Product and Shared Product Details). To keep track of all products (released and not released the **Global products** entity is used. 
 
 Because the product is represented as an SKU, the concepts of distinct products, product masters, and product variants from Finance and Operations can be captured in Common Data Service in the following way:
 
