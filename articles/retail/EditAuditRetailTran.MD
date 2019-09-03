@@ -73,21 +73,21 @@ The following set of capabilities was introduced as a part of this feature:
 
 9. In version 10.0.6 the option to bulk edit retail transactions at a statement level has been introduced. When the Excel Add-in is opened in the context of a Retail statement for which transactions must be modified, the user is presented with the following options:
 
-   1. **Edit cash and carry transactions** – This option allows you to edit all the cash & carry transactions included in the statement and it opens the following Excel worksheets:
-     1. **Transaction** – This worksheet has all the header level information for the sales transactions
-     2. **Sales transaction** – This worksheet has all the lines level information for the sales transactions
-     3. **Payment transactions** – This worksheet has all the payment lines information for the sales transactions
-     4. **Discount transactions** – This worksheet has all the discount lines information for the sales transactions
-     5. **Tax transactions** - This worksheet has all the tax lines information for the sales transactions
-     6. **Charge transactions** - This worksheet has all the charge lines information for the sales transactions
+    1. **Edit cash and carry transactions** – This option allows you to edit all the cash & carry transactions included in the statement and it opens the following Excel worksheets:
+      1. **Transaction** – This worksheet has all the header level information for the sales transactions
+      2. **Sales transaction** – This worksheet has all the lines level information for the sales transactions
+      3. **Payment transactions** – This worksheet has all the payment lines information for the sales transactions
+      4. **Discount transactions** – This worksheet has all the discount lines information for the sales transactions
+      5. **Tax transactions** - This worksheet has all the tax lines information for the sales transactions
+      6. **Charge transactions** - This worksheet has all the charge lines information for the sales transactions
 
-   2. **Edit cash management transactions** - This option allows you to edit all the cash management transactions included in the statement and it opens the following Excel worksheets: 
-     1. **Transaction** – This worksheet has all the header level information for the cash management transactions
-     2. **Bank tender transactions** - This worksheet has all the bank drop transaction details
-     3. **Safe tender transactions** - This worksheet has all the safe drop transaction details
-     4. **Tender declaration** - This worksheet has all the tender declaration transaction details
-     5. **Income-Expense Transaction** - This worksheet has all the Income-Expense transaction details
-     6. **Payment transactions** - This worksheet has all the payment related information for the Pay invoice operation 
+    2. **Edit cash management transactions** - This option allows you to edit all the cash management transactions included in the statement and it opens the following Excel worksheets: 
+      1. **Transaction** – This worksheet has all the header level information for the cash management transactions
+      2. **Bank tender transactions** - This worksheet has all the bank drop transaction details
+      3. **Safe tender transactions** - This worksheet has all the safe drop transaction details
+      4. **Tender declaration** - This worksheet has all the tender declaration transaction details
+      5. **Income-Expense Transaction** - This worksheet has all the Income-Expense transaction details
+      6. **Payment transactions** - This worksheet has all the payment related information for the Pay invoice operation 
 
 10)	As with option to edit & upload selected transactions, there is no validation performed even during the publishing of transactions edited in bulk. The user must ensure that all the edits performed is accurate and the fidelity of data across the worksheets is maintained. For e.g.: If the user wants to change the date of transaction to handle the scenarios where the fiscal or inventory period for the open retail transactions is closed, the user needs to change the date on all Excel worksheets that has the Business date column. Changing in one worksheet will not be enough.
 
