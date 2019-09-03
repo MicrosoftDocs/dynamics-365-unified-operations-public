@@ -1,38 +1,47 @@
 ---
 # required metadata
 
-title: Telemetry
-description: The Dynamics 365 Commerce online SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple resources while maintaining a unified context on both the server and the client.
-author: SamJarawan
+title: Telemetry logger
+description: This topics covers the telemetry logger in Dynamics 365 Commerce.
+author: samjarawan
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
-# optional metadataA
+# optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: SamJar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Telemetry Logger
-The Dynamics 365 Commerce online SDK comes with a custom telemetry logger which provides the ability to log at various levels to multiple resources while maintaining a unified context on both the server and the client.
 
-## Accessing the Logger
-The SDK logger is available by default to all react components by simply accessing it as the **this.prop.telemetry** prop:
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topics covers the telemetry logger in Dynamics 365 Commerce.
+
+## Overview
+
+The Commerce online software develpoment kit (SDK) comes with a custom telemetry logger which provides the ability to log at various levels to multiple resources while maintaining a unified context on both the server and the client.
+
+## Access the telemetry Logger
+
+The SDK logger is available by default to all react components by accessing it as the **this.prop.telemetry** prop:
 
 ```typescript
 this.props.telemetry
