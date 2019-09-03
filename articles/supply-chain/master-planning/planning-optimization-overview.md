@@ -56,11 +56,11 @@ Enabling customers to achieve:
 When the Planning Optimization add-in is installed, for a project via LCS, a secure connection is created to the Planning Optimization service. The service is located in the same data center geo as the related Finance and Operations. During master planning with Planning Optimization relevant setup, master and tractional data will be sent from Finance and Operations to the Planning Optimization service. If the Planning Optimization add-in is uninstalled from LCS, then all related data in the Planning Optimization service will be removed.
 
 ### High level data flow for regeneration run
-	1. The Finance and Operations client send a signal to request a planning run from Planning Optimization
-	2. Planning Optimization request needed data via the connector for Finance and Operations that is integrated in Planning Optimization.
-	3. Data base (SQL) supplies Planning Optimization with the requested information about setup, master and transactional data. The information is send via the connector that translates information between Finance and Operations and the Planning Optimization service.
-	4. The Planning Optimization service holds planning related data in memory and performs the needed calculations.
-	5. Planning result is sent to the Finance and Operations data base via the connector. This include information like Planned orders and pegging information.
-	6. Planning Optimization send a signal to Finance and Operations that the planning run is completed along with relevant messages and warnings from Planning Optimization.
+1. The Finance and Operations client send a signal to request a planning run from Planning Optimization
+2. Planning Optimization request needed data via the connector for Finance and Operations that is integrated in Planning Optimization.
+3. Data base (SQL) supplies Planning Optimization with the requested information about setup, master and transactional data. The information is send via the connector that translates information between Finance and Operations and the Planning Optimization service.
+4. The Planning Optimization service holds planning related data in memory and performs the needed calculations.
+5. Planning result is sent to the Finance and Operations data base via the connector. This include information like Planned orders and pegging information.
+6. Planning Optimization send a signal to Finance and Operations that the planning run is completed along with relevant messages and warnings from Planning Optimization.
 
 IMAGE
