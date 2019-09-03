@@ -87,7 +87,7 @@ The following set of capabilities was introduced as a part of this feature:
         3. **Safe tender transactions** - This worksheet has all the safe drop transaction details
         4. **Tender declaration** - This worksheet has all the tender declaration transaction details
         5. **Income-Expense Transaction** - This worksheet has all the Income-Expense transaction details
-        6. **Payment transactions** - This worksheet has all the payment related information for the Pay invoice operation 
+        6. **Payment transactions** - This worksheet has all the payment related information for the **Pay invoice** operation 
 
 10)	As with option to edit & upload selected transactions, there is no validation performed even during the publishing of transactions edited in bulk. The user must ensure that all the edits performed is accurate and the fidelity of data across the worksheets is maintained. For e.g.: If the user wants to change the date of transaction to handle the scenarios where the fiscal or inventory period for the open retail transactions is closed, the user needs to change the date on all Excel worksheets that has the Business date column. Changing in one worksheet will not be enough.
 
