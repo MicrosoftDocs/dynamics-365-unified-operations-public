@@ -38,8 +38,7 @@ In order to use Planning Optimization you have to install the Planning Optimizat
 
 ## Possibility to run master planning in minutes during office hours
 
-
-IMAGE
+![Data model for products](media/PlanningOptimization1.png)
 
 ## Improved performance
 
@@ -63,4 +62,4 @@ When the Planning Optimization add-in is installed, for a project via LCS, a sec
 5. Planning result is sent to the Finance and Operations data base via the connector. This include information like Planned orders and pegging information.
 6. Planning Optimization send a signal to Finance and Operations that the planning run is completed along with relevant messages and warnings from Planning Optimization.
 
-IMAGE
+![Data model for products](media/PlanningOptimization2.png)
