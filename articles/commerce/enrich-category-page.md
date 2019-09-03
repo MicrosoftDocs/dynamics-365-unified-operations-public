@@ -47,6 +47,6 @@ To enrich a category page, follow these steps.
 3. Select a template for the enriched category page. If you're making only minor changes, you can select the default category page. Alternatively, you can select a specific category page template. When you select the template, the page editor is opened, and the selected template is used to create a new category page for the selected category. The page is checked out to you, and you can now make your changes.
 
 > [!NOTE]
-> Modules that use category specification data use the date from your selected category.
+> Modules that use category specification data use the data from your selected category.
 >
 > The settings of the template that you select determine the changes that you can make.
