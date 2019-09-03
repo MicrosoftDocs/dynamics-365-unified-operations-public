@@ -51,8 +51,9 @@ This feature aims to create a statement posting model where retail stores transa
       1. Transactional statement
       2. Financial statement
 
-    The Transactional statement will pick up all unposted & validated retail transactions and create Sales order, sales invoices,     payment & discount journals, Income/ Expense transactions at a cadence as configured by the customer. The expectation is that customers configures this process to run at much higher frequency so that documents are created as and when the retail transactions are uploaded into HQ through the P-job. With this process, the **Post inventory** batch job becomes redundant and should not be used with this feature
-    The Financial statement is designed to be created at the end of the day and **will only support the Closing method of Shift**. This document will be limited to financial reconciliation and will only create the journals for the difference amounts between counted amount and transaction amount for the different tenders along with journals for other cash mgmt. transactions.   
+      The Transactional statement will pick up all unposted & validated retail transactions and create Sales order, sales invoices,           payment & discount journals, Income/ Expense transactions at a cadence as configured by the customer. The expectation is that           customers configures this process to run at much higher frequency so that documents are created as and when the retail                   transactions are uploaded into HQ through the P-job. With this process, the **Post inventory** batch job becomes redundant and           should not be used with this feature
+   
+      The Financial statement is designed to be created at the end of the day and **will only support the Closing method of Shift**.           This document will be limited to financial reconciliation and will only create the journals for the difference amounts between           counted amount and transaction amount for the different tenders along with journals for other cash mgmt. transactions.   
 
 3)	The Transactional statement can be calculated in batch using the new menu item **Calculate transactional statements in batch** and the same can be posted in batch using the new menu item **Post transactional statements** in a batch
 
