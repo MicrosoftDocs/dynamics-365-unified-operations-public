@@ -64,6 +64,8 @@ A product configuration model consists of one or more components that are tied t
 
 Each component has one or more attributes that identify its properties. The attributes are what users will choose during the configuration process. Attributes control both inter-component and intra-component relationships through inclusion in constraints or calculations. Through conditions that are applied to BOM lines, the attributes can be used to determine which physical parts the configured product will consist of. Additionally, an attribute can control the property of a BOM line through a mapping mechanism. Similar functionality exists for route operations regarding both inclusion and property settings.
 
+>![Note] When creating attribute types avoid creating a high numbner of values for the attribute type domain. Doing so may cause slowdowns in the product configurator. 
+
 ### Expression constraints
 
 Use of a constraint-based product configuration model implies that some limitations exist when the user selects values for the various attributes. Such limitations can be implemented as expression constraints by using the Optimization Modeling Language (OML). Alternatively, a constraint can be implemented in the form of a table constraint.
