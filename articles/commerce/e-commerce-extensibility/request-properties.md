@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request Properties
-description: The module react component can access a read only request context object to get request information, which includes properties such as the URL, user, locale and device type information.
+description: The request object represents the HTTP request and includes properties for data such as the requested URL, locale, device, user, cookie and query string parameters
 author: SamJarawan
 manager: annbe
 ms.date: 08/30/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 # Request Properties
-The module react component can access a read only request context object to get request information, which includes properties such as the URL, user, locale and device type information.
+The request object represents the HTTP request and includes properties for data such as the requested URL, locale, device, user, cookie and query string parameters.  Modules can access a read only request context object **this.props.context** to get the request information and can change module behavior as needed.  
 
 ## Example
 Below example shows how to access request properties from within the request context:
