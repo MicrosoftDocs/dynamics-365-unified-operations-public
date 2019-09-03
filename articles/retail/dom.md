@@ -97,9 +97,11 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         - **Fulfill partial orders?** – If this option is set to **Yes**, DOM can fulfill only part of the quantity on an order line. This partial fulfillment is achieved by splitting the order line.
         - **Fulfill partial lines?** – If this option is set to **Yes**, DOM can fulfill a partial quantity of order lines. This partial fulfillment is achieved by splitting the order line.
         - **Fulfill order from one location only** – If this option is set to **Yes**, DOM makes sure that all lines on an order are fulfilled from a single location.
-
-        The following table explains the behavior when a combination of these parameters is defined.
-
+	
+	> [!NOTE]
+	> In the 10.0.5 release, the pararmeter **Fulfill order from one location only** has been repurposed to **Maximum fulfilling locations** where instead of this being able to set to either fulfill from one location only or open it to be fufilled from as many locations as it can be, users can now specify if the fullfilment can be from a definite set of locations (upto 5) or from as many locations as it can be. This provides lot more flexibility to the users in terms of how many locations can the order be fulfilled from.
+	
+	The following table explains the behavior when a combination of these parameters is defined.
         |      | Fulfill partial orders | Fulfill partial lines | Fulfill order from one location only | Description |
         |------|------------------------|-----------------------|--------------------------------------|-------------|
         | 1    | Yes                    | Yes                   | Yes                                  | A few lines of the order can be fulfilled, and individual lines can be partially fulfilled, but all the lines must be from the same location in an instance of the DOM run. (This combination isn't currently supported.) |
@@ -112,7 +114,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         | 8    | Yes                    | No                    | No                                   | A few lines of the order can be fulfilled, but individual lines can't be partially fulfilled, and the various order lines can be fulfilled from more than one location in an instance of the DOM run. |
         | 9\*  | No                     | Not applicable        | Yes                                  | All order lines must be fulfilled, and all the order lines must be fulfilled from one location only. |
 
-        \* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.
+	\* If **Fulfill partial orders** is set to **No**, **Fulfill partial lines** is always considered to be set to **No**, regardless of how it's actually set.
 
     - **Offline fulfillment location rule** – This rule lets organizations specify a location or group of locations as offline or unavailable to DOM, so that orders can't be assigned there for fulfillment.
     - **Maximum rejects rule** – This rule lets organizations define a threshold for rejections. When the threshold is reached, the DOM processor will mark an order or order line as an exception, and exclude it from further processing.
