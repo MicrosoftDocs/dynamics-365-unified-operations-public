@@ -41,13 +41,13 @@ In many scenarios, you will have an application that requires many calls to the 
 
 ## Examples
 
-The main difference between a batch data action and a standard data action is its support for an array of action inputs. Notice in the following data action example, the action method **getSimpleProductAction** accepts only a single **ProductInput** class.
+The main difference between a batch data action and a standard data action is its support for an array of action inputs. Notice that in the following data action example, the action method **getSimpleProductAction** only accepts a single **ProductInput** class.
 
 ```typescript
 async function getSimpleProductAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProduct>
 ```
 
-To change this example to a batch data action, the method signature can be changed to accept an array of **ProductImage's** and return an array of **SimpleProduct's**.  The below examples also shows the changes needed in the data action method to process the input array and return an array.
+To change this example to a batch data action, the method signature can be modified to accept an array of **ProductInput**s and return an array of **SimpleProduct**s. The following example shows the changes needed in the data action method to process the input array and return an array.
 
 ```typescript
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]> {
