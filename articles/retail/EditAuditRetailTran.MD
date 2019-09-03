@@ -69,4 +69,4 @@ The following set of capabilities was introduced as a part of this feature:
 
 8)	To bulk edit retail transactions, the Excel Add-in option 
 
-9)	As of the version 10.0.5, only cash & carry transactions like sales, returns etc. and cash mgmt. transactions like Declare start amount, Tender declaration, Safe drop, etc. can be edited using this feature. Editing of Customer order or Online order is not supported. 
+9)	As of the version 10.0.6, only cash & carry transactions like sales, returns etc. and cash mgmt. transactions like Declare start amount, Tender declaration, Safe drop, etc. can be edited using this feature. Editing of Customer order or Online order is not supported. 
