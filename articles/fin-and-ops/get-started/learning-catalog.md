@@ -17,48 +17,180 @@ Find the right online training, in person workshops, and events for your role as
 
 Do you decide whether to invest in new technologies? 
 
->[Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
+[Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
 
 ## Business users
 
 Did you just get a new application to use? 
 
->[Business Users Learning Catalog](learning-catalog-business-user.md)
+[Business Users Learning Catalog](learning-catalog-business-user.md)
 
 ## Administrators
 
 Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
 
->[Administrators Learning Catalog](learning-catalog-administrator.md)
+[Administrators Learning Catalog](learning-catalog-administrator.md)
 
 ## Developers
 
 Do you need to write code to integrate with other data sources,extend core system functionality, or build a complex application?
 
->[Developer Learning Catalog](learning-catalog-developer.md)
+[Developer Learning Catalog](learning-catalog-developer.md)
 
 ## Implementation Project Managers
 
 Are you in charge of making sure your company’s implementation goes smoothly?
 
->[Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
+[Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
 
 ## Functional consultants
 
 Are you an implementation expert for a business domain? 
 
->[Functional Application Consultant Learning Catalog](learning-catalog-functional-consultant.md)
+[Functional Application Consultant Learning Catalog](learning-catalog-functional-consultant.md)
 
 ## Partner Sales and Marketing
 
 Are you responsible for helping your customers buy the right solution? 
 
->[Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
+[Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
 
 ## Solution architects
 
 Do you design solutions that meet your customers' needs and budgets?
 
->[Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
+[Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
 
+
+
+:::row:::
+    :::column:::
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+
+    ### Business and Technical Decision Makers
+
+    Do you decide whether to invest in new technologies? 
+
+    [Business and Technical Decision Makers Learning Catalog](learning-catalog-bdm.md#)
+
+        :::column-end:::
+    :::column:::
+    ### Business users
+
+    Did you just get a new application to use? 
+
+    [Business Users Learning Catalog](learning-catalog-business-user.md)
+
+    [Get Started](learning-catalog-business-user.md#get-started)
+
+    [Core platform knowledge](learning-catalog-business-user.md#core-platform-knowledge)
+
+    [Supply chain management](learning-catalog-business-user.md#supply-chain-management)
+
+    [Manufacturing](learning-catalog-business-user.md#manufacturing)
+
+    [Financial management](learning-catalog-business-user.md#financial-management)
+
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Administrators
+
+    Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
+
+    [Administrators Learning Catalog](learning-catalog-administrator.md)
+
+    [Get started](learning-catalog-administrator.md#get-started)
+
+    [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Tech talks](learning-catalog-administrator.md#tech-talks)
+
+        :::column-end:::
+    :::column:::
+
+    ### Developers
+
+    Do you need to write code to integrate with other data sources,extend core system functionality, or build a complex application?
+
+    [Developer Learning Catalog](learning-catalog-developer.md)
+
+    [Get started](learning-catalog-developer.md#get-started)
+
+    [Developer](learning-catalog-developer.md#developer)
+
+    [Tech talks](learning-catalog-developer.md#tech-talks)
+
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Implementation Project Managers
+
+    Are you in charge of making sure your company’s implementation goes smoothly?
+
+    [Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
+
+    [Get started](learning-catalog-project-manager.md#get-started)
+
+    [Core platform knowledge](learning-catalog-project-manager.md#core-platform-knowledge)
+
+    [Financial management](learning-catalog-project-manager.md#financial-management)
+
+    [Manufacturing](learning-catalog-project-manager.md#manufacturing)
+
+    [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Tech talks](learning-catalog-project-manager.md#tech-talks)
+
+        :::column-end:::
+    :::column:::
+
+    ### Functional consultants
+
+    Are you an implementation expert for a business domain? 
+
+    [Functional Application Consultant Learning Catalog](learning-catalog-functional-consultant.md)
+
+    [Get started](learning-catalog-functional-consultant.md#get-started)
+
+    [Core platform knowledge](learning-catalog-functional-consultant.md#core-platform-knowledge)
+
+    [Financial management](learning-catalog-functional-consultant.md#financial-management)
+
+    [Manufacturing](learning-catalog-functional-consultant.md#manufacturing)
+
+    [Supply chain management](learning-catalog-functional-consultant.md#supply-chain-management)
+
+    [Tech talks](learning-catalog-functional-consultant.md#tech-talks)
+
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+
+    ### Partner Sales and Marketing
+
+    Are you responsible for helping your customers buy the right solution? 
+
+    [Microsoft Partner Sales and Marketing Learning Catalog](learning-catalog-partner-sales.md)
+
+        :::column-end:::
+    :::column:::
+
+    ### Solution architects
+
+    Do you design solutions that meet your customers' needs and budgets?
+
+    [Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
+
+    [Events](learning-catalog-solution-architect.md#events)
+
+    [Tech talks](learning-catalog-solution-architect.md#tech-talks)
+
+    :::column-end:::
+:::row-end:::
 
