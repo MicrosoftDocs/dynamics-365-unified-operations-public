@@ -52,12 +52,14 @@ From the Master Planning > Setup > Planning Optimization integration > Integrati
 
 #### Connection status
 **Connection status** show the current status of the connection to the Planning Optimization service. The following table show the possible status values.
-| Connection status	   | Description	                                                                                  | Possible to use Planning Optimization |
-| Connected	           | Connection is established between Planning Optimization service and Finance and Operations.    | Yes                                   |
-| Enabling connection	 | A request to enable the connection to Planning Optimization service is currently in progress.  | No                                    |
-| Disconnected	       | There is no connection to Planning Optimization service. Connection can be enabled from LCS as described earlier on this page. | No    |
-| Disabling connection | A request to disable the connection to Planning Optimization service is currently in progress. | No                                    |
-| Getting status       | System is waiting for status from the Planning Optimization service.	                          | No                                    |
+
+Connection status	   | Description	                                                                                  | Possible to use Planning Optimization 
+---------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------
+Connected	           | Connection is established between Planning Optimization service and Finance and Operations.    | Yes                                   
+Enabling connection	 | A request to enable the connection to Planning Optimization service is currently in progress.  | No                                    
+Disconnected	       | There is no connection to Planning Optimization service. Connection can be enabled from LCS as described earlier on this page. | No    
+Disabling connection | A request to disable the connection to Planning Optimization service is currently in progress. | No                                    
+Getting status       | System is waiting for status from the Planning Optimization service.	                          | No                                
 
 #### Use Planning Optimization
 This option is used to control the planning engine used for master planning
