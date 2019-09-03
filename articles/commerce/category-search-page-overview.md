@@ -34,7 +34,7 @@ This topic provides an overview of the default category landing page and search 
 
 ## Default category landing page
 
-The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy. It's part of the universal header-footer. The category page lets you browse, and you can also sort and refine the categorized products.
+The default category landing page is the page that website users typically are taken to when they select a category from the navigation hierarchy. The category page lets you browse, and you can also sort and refine the categorized products.
 
 ![Default category landing page](./media/SimpleCategoryLandingDressCategory.png)
 
@@ -76,11 +76,11 @@ Here are some of the types of suggestions that might be shown:
 
 ![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
 
-When users click a keyword or a scoped category search suggestion, or when they enter a search that has no known suggestions, the search results page appears. Users can then browse, sort, and refine the list of search results to find the desired item.
+When users clicks a 'keyword' or a 'scoped category search' suggestion, or when they enter a search that has no known suggestions, the user is re-directed to a search results page. Users can then browse, sort, and refine the list of search results to find the desired item.
 
 ![Search landing](./media/SearchLanding.png)
 
-In addition to the universal header and footer sections, the following components are essential for a search results page:
+The following components are essential for a search results page:
 
 - **Product placement tiles** show the products for the user's search. By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.
 - **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
