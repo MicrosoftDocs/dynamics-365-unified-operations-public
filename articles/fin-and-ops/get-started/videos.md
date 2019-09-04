@@ -130,7 +130,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Release production picking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-## Finance and Operations FastTrack Tech Talks
+## FastTrack Tech Talks
 
-[Finance and Operations FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
+[FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
 
