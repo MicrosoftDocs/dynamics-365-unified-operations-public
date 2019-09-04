@@ -82,7 +82,7 @@ To display your category hierarchy on your online storefront, you must add the n
 [!NOTE]
 The navigation menu module that comes with the store starter kit will only allow users to navigate to categories that do not have subcategories. If you would like your customers to be able to navigate to categories that contain subcategories, you will need to customize the navigation menu module. 
 
-## Customizing navigation options
+## Add custom navigation options
 
 You can also add navigation options to your navigation menu that aren't part of your product category hierarchy. For example, you can add a Contact Us menu item at the end of the list of product categories which can point to a specific page on your site that you have built for this purpose. 
 
