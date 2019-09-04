@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 Users are internal employees of your organization, or external customers and vendors, who require access to the system to do their jobs.
 
 ## Associate a user with a license (new license types only)
-For customers who are on one of the new license types that were added in October 2019, users must be associated with a license. Users who are associated with a license are automatically added as system users who have no roles the first time that they sign in. User who aren't associated with a licence receive a warning message.
+For customers who are on one of the new license types that were added in October 2019, users must be associated with a license. Users who are associated with a license are automatically added as system users who have no roles the first time that they sign in. Users who aren't associated with a licence receive a warning message.
 
 System admins can [assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) in the [Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
