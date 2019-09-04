@@ -36,7 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-When a business eco-system is made up of Dynamics 365 applications including Dynamics 365 for Finance and Operations and Dynamics 365 for Sales, it’s natural for the majority of the customers to use Dynamics 365 for Finance and Operations as the application to source product data. It is because, Dynamics 365 for Finance and Operations provides a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. The few customers who use an external Product Lifecycle Management (PLM) system for sourcing the product data can always channelize products via Dynamics 365 for Finance and Operations to other dynamics applications. “Unified Product Experience” brings in the harmonized product data model to Common Data Service, so that all application users including power platform users can take advantage of the rich product data coming from Dynamics 365 for Finance and Operations.
+When a business ecosystem is made up of Dynamics 365 applications including Dynamics 365 for Finance and Operations and Dynamics 365 for Sales, it’s natural for customers to use Dynamics 365 for Finance and Operations as the application to source product data. This is because Dynamics 365 for Finance and Operations provides a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Customers who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products via Dynamics 365 for Finance and Operations to other dynamics applications. The unified product experience brings in the integrated product data model to Common Data Service, so that all application users including Power Platform users can take advantage of the rich product data coming from Dynamics 365 for Finance and Operations.
 
 Here is the product data model from Dynamics 365 for Sales:
 
@@ -46,11 +46,11 @@ Here is the product data model from Dynamics 365 for Finance and Operations:
 
 ![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-products-5.jpg)
 
-These two product data models have been harmonized in the Common Data Service as shown below:
+These two product data models have been integrated in the Common Data Service as shown below:
 
 ![Data model for products in Dynamics 365 for Finance and Operations and CE](media/dual-write-products-6.jpg)
 
-In order to address majority of the customers, the dual-write entity maps for products have been designed to flow data one-way only and it’s a near-real time experience from Dynamics 365 for Finance and Operations to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Customers can customize it at their own risk althought Microsoft does not recommend this approach.
+The dual-write entity maps for products have been designed to flow data one-way only and it’s a near-real time experience from Dynamics 365 for Finance and Operations to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Customers can customize it, at their own risk, as Microsoft does not recommend this approach.
 
 ## Templates
 
@@ -81,13 +81,13 @@ Product specific unit of measure conversion | msdyn_productspecificunitofmeasure
 Sites | msdyn\_operationalsites
 Warehouses | msdyn\_inventwarehouses
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
 ## Integration of products
 
-In this model, the product is represented by the combination of two entities in Common Data Service: **Product** and **msdyn\_sharedproductdetails**. Whereas the first entity contains the definition of a product (the unique identifier for the product, the product name, and the description), the second entity contains the fields that are stored at the product level in Finance and Operations. The combination of these two entities is used to define the product according to the concept of the stock keeping unit (SKU). Each released product will have its information in the mentioned entities (Product and Shared Product Details). To keep track of all products (released and not released the **Global products** entity is used. 
+In this model, the product is represented by the combination of two entities in Common Data Service: **Product** and **msdyn\_sharedproductdetails**. Whereas the first entity contains the definition of a product (the unique identifier for the product, the product name, and the description), the second entity contains the fields that are stored at the product level in Finance and Operations. The combination of these two entities is used to define the product according to the concept of the stock keeping unit (SKU). Each released product will have its information in the mentioned entities (Product and Shared Product Details). To keep track of all products (released and not released) the **Global products** entity is used. 
 
-Because the product is represented as an SKU, the concepts of distinct products, product masters, and product variants from Finance and Operations can be captured in Common Data Service in the following way:
+Because the product is represented as a SKU, the concepts of distinct products, product masters, and product variants from Finance and Operations can be captured in Common Data Service in the following way:
 
 - **Products with subtype product** are products that are defined by themselves. No dimensions have to be defined for them. An example is a specific book. For these products, one record is created in the **Product** entity, and one record is created in the **msdyn\_sharedproductdetails** entity. No product family record is created.
 - **Product masters** in Finance and Operations are used as generic products that hold the definition and rules that determine the behavior in business processes. Based on these definitions, distinct products that are known as product variants can be generated. For example, T-shirt is the product master, and it can have Color and Size as dimensions. Variants can be released that have different combinations of these dimensions, such a small blue T-shirt or a medium green T-shirt. In the integration, one record per variant is created in the product table. This record contains the variant-specific information, such as the different dimensions. The generic information for the product is stored in the **msdyn\_sharedproductdetails** entity. (In Finance and Operations, this generic information is held in the product master.) Additionally, one product family record is created per product master. The product master information is synced to Common Data Service as soon as the released product master is created (but before variants are released).
@@ -97,7 +97,7 @@ Because the product is represented as an SKU, the concepts of distinct products,
 
 With the dual-write functionality enabled, the products from Dynamics 365 for Finance and Operations will be syncronized in Dynamics 365 for Customer Engagement in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in Dynamics 365 for Customer Engagement that matches the currency of your legal entity where the product is released in Dynamics 365 for Finance and Operations. 
 
-To synchronize the product with **Active** state, so you can directly used in sales order quotations, for example, the following setting needs to be chosen: under **System> Adminstration > System administration > System settings > Sales** select **Create products in active state = yes**. 
+To synchronize the product with **Active** state, so you can directly use it in sales order quotations, for example, the following setting needs to be chosen: under **System> Adminstration > System administration > System settings > Sales** select **Create products in active state = yes**. 
 
 ### CDS released distinct products to Product
 
@@ -251,7 +251,7 @@ Product dimensions are characteristics that identify a product variant. The four
 
 ### Colors
 
-All the possible colors in Finance and Operations are available in Common Data Service through the following mappings.
+The possible colors in Finance and Operations are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -259,7 +259,7 @@ COLORID | \>\> | msdyn\_productcolorname
 
 ### Sizes
 
-All the possible sizes in Finance and Operations are available in Common Data Service through the following mappings.
+The possible sizes in Finance and Operations are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -267,7 +267,7 @@ SIZEID | \>\> | msdyn\_productsize
 
 ### Styles
 
-All the possible styles in Finance and Operations are available in Common Data Service through the following mappings.
+The possible styles in Finance and Operations are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -275,7 +275,7 @@ STYLEID | \>\> | msdyn\_productstyle
 
 ### Configurations
 
-All the possible configurations in Finance and Operations are available in Common Data Service through the following mappings.
+The possible configurations in Finance and Operations are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -475,9 +475,9 @@ PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle
 
 The units of measure and its respective conversions will be available in the Common Data Service following the data model shown in the diagram.
 
-![Data model for products](media/dual-write-product-3.png)
+![Data model for products](media/dual-write-product-3.PNG)
 
-The unit of measure concept is harmonized between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement. For each unit class of Dynamics 365 for Finance and Operations a unit group is created in Dynamics 365 for Customer Engagement, which contains the untis belonging to the unit class. A default base unit is also created for every unit group. 
+The unit of measure concept is integrated between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement. For each unit class of Dynamics 365 for Finance and Operations a unit group is created in Dynamics 365 for Customer Engagement, which contains the untis belonging to the unit class. A default base unit is also created for every unit group. 
 
 ### Unit of measure
 
