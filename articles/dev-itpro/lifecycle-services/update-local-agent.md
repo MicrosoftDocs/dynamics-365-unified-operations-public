@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,10 +42,11 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
 | 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.  |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the LCS Maintain button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting an ADFS that also is used for Office365. |
-| 2.3.0               | The latest version. |
+| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
+| 2.3.1               | This version fixes orchestration service crash during cleanup on some environments.<BR><BR>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config, which can be found on [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) |
 
 ## What's new in local agent 2.3.0?
 
