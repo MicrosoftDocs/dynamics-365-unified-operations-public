@@ -44,7 +44,7 @@ These instructions are equally applicable for any other custom client-side funct
 
 ### Create a reusable fragment to contain your script code
 
-To create a reusable fragment to contain your script code, do the following.
+To create a fragment for your script code that can be reused across all pages on your site, do the following.
 
 1. Go to **Fragments > New page fragment**.
 3. Select **External Script**, enter a name for the fragment and click **OK**.
