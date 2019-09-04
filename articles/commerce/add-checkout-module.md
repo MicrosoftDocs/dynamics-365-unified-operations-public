@@ -58,9 +58,9 @@ A checkout module has multiple slots that can contain other modules such as a ch
 
 **Gift card:** This module enables the customer to pay for the order using a gift card. This module only supports Dynamics 365 Commerce gift cards. One or more gift cards can be applied to an order. If the gift card balance is not sufficient, it can be combined with another payment method method. Gift cards can only be redeemed if the user is signed in. 
 
-**Loyalty points:** This module enables the customer to pay for the order using loyalty points. It provides a summary of available points and expiring points, and allows the customer to choose the amount of points they want to redeem. If the customer is not signed in or not a loyalty member, this module will be hidden. 
+**Loyalty points:** This module enables the customer to pay for the order using loyalty points. It provides a summary of available points and expiring points, and allows the customer to choose the amount of points they want to redeem. If the customer is not signed in, not a loyalty member, or if the total amount in the cart is 0, this module will be hidden. 
 
-**Credit card:** This module enables the customer to pay for the order using a credit card. Credit card integration is provided using the Adyen payment connector. See [Adyen payment connector](https://) for more details on how to use this connector. 
+**Credit card:** This module enables the customer to pay for the order using a credit card. If the total amount is covered by loyalty points or a gift card, or if the total amount is 0, this module will be hidden. Credit card integration is provided using the Adyen payment connector. See [Adyen payment connector](https://) for more details on how to use this connector. 
 
 **Billing address:** This module enables the customer to provide billing information, which is processed (along with credit card information) by Adyen. It has an option to use the customer's billing address as the shipping address if the customer prefers to do so.  
 **Contact information:** This module enables the customer to add or change the contact information (email) for the order. 
