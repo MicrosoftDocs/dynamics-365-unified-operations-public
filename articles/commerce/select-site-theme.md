@@ -46,12 +46,12 @@ When you create a new site, it is configured with a theme called Fabrikam which 
 To change the theme that is applied to your site, do the following.
 
 1. Navigate to your site in the site authoring environment
-1. Go to **Site Management > Site Settings > Extensions**.
+1. Go to **Site Management** and open **Extensions**.
 1. Scroll down to the **Site Theme** section and expand it.
 1. Choose a theme from the dropdown menu.
 
 [!NOTE]
-The theme you select will be applied to your published site as soon as you click **Save** on the Extensions page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
+The theme you select will be applied to your published site as soon as you click **Save and publish** on the Extensions page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
 
  
 
