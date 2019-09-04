@@ -107,6 +107,8 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 #### Organization administration
 
 - [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+- [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s)
+- [Alert rule options](https://youtu.be/cpzimwOjicM)
 
 #### Procurement and sourcing
 
