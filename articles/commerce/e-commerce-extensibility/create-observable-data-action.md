@@ -182,7 +182,7 @@ export interface IAsyncTestModuleData {
 
 Now that the data action is wrapped by an **AsyncResult** class, you will notice that you have access to new properties during module development. These properties include **testResult.status**, which contains the current state of the data action (**'Success'**, **'Loading'**, or **'Failed'**), and **testResult.result**, which contains the actual data that is returned by the action if it succeeds.
 
-When the module is first rendered, it shows that the data action is in a loading state, because the **setTimeout** that is used simulates an API call that is in progress. After the **setTimeout** is completed, and the action successfully returns data, the module is automatically rendered again. This time, it shows the **SUCCESS** state together with the data that is returned from the action and available in the **result** property.
+When the module is first rendered, it shows that the data action is in a loading state, because the **setTimeout** that is used simulates an API call that is in progress. After the **setTimeout** is completed, and the action successfully returns data, the module is automatically rendered again. This time, it shows the **success** state together with the data that is returned from the action and available in the **result** property.
 
 If the data action throws an error, the **result** property isn't filled in. Instead, the module is updated accordingly on the page. The **error** property of the **AsyncResult** class is filled in, because the action wasn't able to run.
 
