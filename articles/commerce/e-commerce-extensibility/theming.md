@@ -41,7 +41,7 @@ Dynamics 365 Commerce allows you to apply a Sassy CSS (SCSS) theme to your entir
 
 Once a theme is created and uploaded to your production site, authoring tools can be used to set the theme on the site within a template, layout, or single page. When an online page is rendered, the appropriate theme will be applied, giving all the modules on that page a consistent look and feel.
 
-The following screenshot shows how a theme is selected for a page in Commerce. Note that the page container (named "Default page) is selected, and the page **Theme** setting drop-down list box appears in the right-hand properties pane.
+The following screenshot shows how a theme is selected for a page in Commerce. Note that the page container (named "Default page") is selected, and the page **Theme** setting drop-down list box appears in the right-hand properties pane.
 
 ![Theme Selection](media/theming-1.png)
 
@@ -52,7 +52,7 @@ A theme can similarly be set on the master page, so that all pages that inherit 
 * There is no limit to the number of **.scss** files your theme may contain.
 * Your theme entry point may import other **.scss** files using relative paths.
 * Starter kit modules are built using Bootstrap 4 classes, so the recommended SCSS framework to include in any theme is either Bootstrap 4 or Bootstrap 4 RTL.
-* To leverage starter kit modules built with Font Awesome glyphicons, font-awesome should be included in the scss.
+* To leverage starter kit modules built with Font Awesome glyphicons, font-awesome should be included in the SCSS.
 * You can optionally import the **react-ts-strap-default-theme** which addresses accessibility issues with Bootstrap 4.
 
 ## Consume SCSS files distributed using node package manager (NPM)
@@ -72,19 +72,19 @@ The following list shows the recommended structure for any custom theme.
 
 Import or define the following:
 
-*	Fonts and glyph icons
-*	Mixins and functions
-  *	Bootstrap: dependencies, excluding components and utilities
+* Fonts and glyph icons
+* Mixins and functions
+  * Bootstrap: dependencies, excluding components and utilities
   * Shared components: dependencies, excluding components and utilities
-  *	Custom theme mixins and functions
-*	Theme variables
-  *	Custom theme variables
+  * Custom theme mixins and functions
+* Theme variables
+  * Custom theme variables
   * Bootstrap: theme variable defaults (fallbacks)
-*	Components and modules SCSS
+* Components and modules SCSS
   * Shared components: components
-  *	Custom components and modules
-*	Utilities
-  *	Bootstrap, shared component, and custom utilities
+  * Custom components and modules
+* Utilities
+  * Bootstrap, shared component, and custom utilities
 
 ## Hooks for theming modules
 
