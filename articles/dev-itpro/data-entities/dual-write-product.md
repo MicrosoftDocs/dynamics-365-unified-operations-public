@@ -48,7 +48,7 @@ Here is the product data model from Dynamics 365 for Finance and Operations:
 
 These two product data models have been harmonized in the Common Data Service as shown below:
 
-![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-product-6.jpg)
+![Data model for products in Dynamics 365 for Finance and Operations and CE](media/dual-write-product-6.jpg)
 
 In order to address majority of the customers, the dual-write entity maps for products have been designed to flow data one-way only and it’s a near-real time experience from Dynamics 365 for Finance and Operations to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Customers can customize it at their own risk althought Microsoft does not recommend this approach.
 
