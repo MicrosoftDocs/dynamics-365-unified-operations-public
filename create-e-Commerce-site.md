@@ -5,10 +5,10 @@ title: Create a new e-Commerce site
 description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
 author: stuharg
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -23,18 +23,17 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
+ms.search.industry:
 ms.author: bicyclingfool
-ms.search.validFrom: 2019-09-30
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Create a new e-Commerce site
 
-[!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 Commerce.
 
