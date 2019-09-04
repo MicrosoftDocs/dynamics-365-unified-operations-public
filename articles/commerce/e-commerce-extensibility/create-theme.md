@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new theme
-description: This topic describes how to create a new theme for a Dynamics 365 Commerce online site. 
+description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,27 +33,27 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a new theme for a Dynamics 365 Commerce online site.  
+This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site.
 
 ## Overview
 
-Dynamics 365 Commerce enables you to apply a theme to your entire online site, and also to individual templates or pages. For example, you may have a default theme set up site-wide, and also have a campaign theme which is only applied to some pages of the site.
+Dynamics 365 Commerce lets you apply a theme to your whole online site, and also to individual templates or pages. For example, you can have a default, site-wide theme, and you can also have a campaign theme that is applied only to some pages of the site.
 
-Once a theme is created and uploaded to your production site, authoring tools can be used to set the theme on your site. Themes can be set in a template, layout, or single page. When an online page is rendered, the appropriate theme will be applied, giving all the modules on that page a consistent look and feel.
+After a theme is created and uploaded to your production site, you can use authoring tools to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
 
 ## Create the theme directory and theme file
 
-To create a new theme, do the following.
+To create a new theme, follow these steps.
 
-1. Create a new directory under the **/src/themes** directory, using the local name of the theme.
-1. In the new directory, create a new **&#42;.theme.scss** file, using the local name of the theme.
+1. Under the **/src/themes** directory, create a directory. Use the local name of the theme as the name.
+1. In the new directory, create a **\*.theme.scss** file. Use the local name of the theme as the name.
 
-For example, to create a new theme called **spring**, the steps would be as follows.
+For example, to create a new theme that is named **spring**, follow these steps.
 
-1. Create a new directory **spring** under the  **/src/themes/** directory.
-1. In the **/src/themes/spring** directory, create a new file named **spring.theme.scss**.  
+1. Under the **/src/themes/** directory, create a directory that is named **spring**.
+1. In the **/src/themes/spring** directory, create a file that is named **spring.theme.scss**.
 
-The following example shows a theme file that has pulled in Bootstrap and FontAwesome dependencies.
+The following example shows a theme file that pulls in Bootstrap and FontAwesome dependencies.
 
 ```
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
@@ -66,21 +66,22 @@ body {
 
 ### Naming convention
 
-Note that themes are registered as **THEMENAME**.theme.scss where **THEMENAME** is the local name of your theme.  Using the **app.settings.json** file, you provide the friendly name for your theme which will show up in the authoring tools.
+Themes are registered as **THEMENAME.theme.scss**, where **THEMENAME** is the local name of your theme. In the app.settings.json file, you provide the friendly name for your theme. This friendly name will appear in the authoring tools.
 
 ## Test a theme
-It is easy to test a theme in your development environment using the following query string parameter: **?theme=THEME_NAME**.
 
-To test your theme, do the following.
+You can easily test a theme in your development environment by using the **?theme=THEME\_NAME** query string parameter.
 
-1. In a command prompt under the directory of your local code repository, run **yarn start**. 
-1. Load a module test page in a web browser and add the query string parameter **?theme=THEME_NAME**. 
+To test your theme, follow these steps.
 
-Example: `https://localhost:4000/modules?type=campaignBanner&theme=spring`
+1. At a command prompt, under the directory of your local code repository, run **yarn start**. 
+1. In a web browser, load a module test page, and add the **?theme=THEME\_NAME** query string parameter. Here is an example.
 
-## Expose themes to authoring tools
+    `https://localhost:4000/modules?type=campaignBanner&theme=spring`
 
-For themes to appear in the tooling theme selector, there must be a "themes" entry in the **\src\settings\app.settings.json** file that specifies the friendly name of the theme. Below shows an example entry for a spring theme.
+## Surface a theme in the authoring tools
+
+For a theme to appear in the theme selector in the authoring tools, the \\src\\settings\\app.settings.json file must include a **themes** entry that specifies the friendly name of the theme. The following example shows an entry for a theme that is named **spring**.
 
 ```json
 {
@@ -110,4 +111,3 @@ For themes to appear in the tooling theme selector, there must be a "themes" ent
     }
 }
 ```
-
