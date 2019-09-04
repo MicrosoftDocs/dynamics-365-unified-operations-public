@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select page layouts
-description: This article explains how to create and select page layouts.
+description: This article explains how to create and select page layouts in Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This article explains how to create and select page layouts.
+This article explains how to create and select page layouts in Dynamics 365 Commerce.
 
 ## Create layouts for an existing page
 
@@ -55,8 +55,6 @@ To create layouts for an existing page, do the following.
 1. Click **Change Layout**, then select the layout you created first and click **OK**. Make note of the module order change to match the module order saved with the layout.
 
 ## Select a different layout for an existing page
-
-### Prerequisites
 
 [!NOTE]
 To select a different layout, the existing page must have been created using a template with more than one layout.
