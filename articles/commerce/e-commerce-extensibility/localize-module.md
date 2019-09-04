@@ -136,9 +136,9 @@ Resources can be accessed in the module view file by using the **this.props.reso
 
 ## Localize module fields for authoring tools
 
-Modules should be built with supported localization for authoring tool usage. This guideline applies to any authoring metadata in the module definition file, including the module name, description, and configuration fields.
+Modules should be built so that they support localization. This guideline applies to any authoring metadata in the module definition file, including the module name, description, and configuration fields.
  
-Each resource file must contain modules and properties groups. All the module-related authoring strings should be grouped under the **modules** section, with children as the module names and the related authoring property pairs. Each property is an object that has a **"value"** property and an optional **"\_value.comment"** property inside the module section. 
+Each resource file must contain modules and properties groups. All the module-related authoring strings should be grouped under the **modules** section. There should be a child section for each module, and each module section should, in turn, include the related authoring property pairs as children. Each property is an object that has a **"value"** property and an optional **"\_value.comment"** property inside the module section. 
 
 The following example shows a resource schema.
 
