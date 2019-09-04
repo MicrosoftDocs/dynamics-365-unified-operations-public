@@ -28,6 +28,16 @@ Find the right online training, in person workshops, and events for your role as
 
     [Business Users Learning Catalog](learning-catalog-business-user.md)
 
+    [Get Started](learning-catalog-business-user.md#get-started)
+
+    [Core platform knowledge](learning-catalog-business-user.md#core-platform-knowledge)
+
+    [Supply chain management](learning-catalog-business-user.md#supply-chain-management)
+
+    [Manufacturing](learning-catalog-business-user.md#manufacturing)
+
+    [Financial management](learning-catalog-business-user.md#financial-management)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -39,6 +49,12 @@ Find the right online training, in person workshops, and events for your role as
 
     [Administrators Learning Catalog](learning-catalog-administrator.md)
 
+    [Get started](learning-catalog-administrator.md#get-started)
+
+    [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
+
+    [Tech talks](learning-catalog-administrator.md#tech-talks)
+
         :::column-end:::
     :::column:::
 
@@ -47,6 +63,12 @@ Find the right online training, in person workshops, and events for your role as
     Do you need to write code to integrate with other data sources,extend core system functionality, or build a complex application?
 
     [Developer Learning Catalog](learning-catalog-developer.md)
+
+    [Get started](learning-catalog-developer.md#get-started)
+
+    [Developer](learning-catalog-developer.md#developer)
+
+    [Tech talks](learning-catalog-developer.md#tech-talks)
 
     :::column-end:::
 :::row-end:::
@@ -59,6 +81,18 @@ Find the right online training, in person workshops, and events for your role as
 
     [Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
 
+    [Get started](learning-catalog-project-manager.md#get-started)
+
+    [Core platform knowledge](learning-catalog-project-manager.md#core-platform-knowledge)
+
+    [Financial management](learning-catalog-project-manager.md#financial-management)
+
+    [Manufacturing](learning-catalog-project-manager.md#manufacturing)
+
+    [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Tech talks](learning-catalog-project-manager.md#tech-talks)
+
         :::column-end:::
     :::column:::
 
@@ -66,9 +100,20 @@ Find the right online training, in person workshops, and events for your role as
 
     Are you an implementation expert for a business domain? 
 
+    [Functional Application Consultant Learning Catalog](learning-catalog-functional-consultant.md)
+
     [Get started](learning-catalog-functional-consultant.md#get-started)
+
     [Core platform knowledge](learning-catalog-functional-consultant.md#core-platform-knowledge)
-    
+
+    [Financial management](learning-catalog-functional-consultant.md#financial-management)
+
+    [Manufacturing](learning-catalog-functional-consultant.md#manufacturing)
+
+    [Supply chain management](learning-catalog-functional-consultant.md#supply-chain-management)
+
+    [Tech talks](learning-catalog-functional-consultant.md#tech-talks)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -89,5 +134,13 @@ Find the right online training, in person workshops, and events for your role as
 
     [Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
 
+    [Events](learning-catalog-solution-architect.md#events)
+
+    [Tech talks](learning-catalog-solution-architect.md#tech-talks)
+
+    :::column-end:::
+:::row-end:::
+
+=======
     :::column-end:::
 :::row-end:::
