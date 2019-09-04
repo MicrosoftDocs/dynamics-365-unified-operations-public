@@ -62,8 +62,6 @@ To create a fragment for your script code that can be reused across all pages on
 [!NOTE]
 When done, you will need to publish the fragment and the master template. 
 
-You can also add scripts to individual pages by adding an external script module directly to the HTML Head slot of a page. 
-
 For further information about adding script to master templates, see the [Add script to master templates](http://) help topic
 
  
