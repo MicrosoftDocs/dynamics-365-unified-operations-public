@@ -141,6 +141,3 @@ Find the right online training, in person workshops, and events for your role as
     :::column-end:::
 :::row-end:::
 
-=======
-    :::column-end:::
-:::row-end:::
