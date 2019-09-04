@@ -453,6 +453,8 @@
             href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integrated Customer Master
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+          - name: Unified product experience
+            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
@@ -461,8 +463,6 @@
             href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
-          - name: Unified product experience
-            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Configure a prospect to cash scenario
             items:
             - name: Prospect to cash
