@@ -72,9 +72,9 @@ export default ProductButton;
 
 Currently, this component just logs a message to the console when the button is clicked. To replace that behavior with the data action, you must do three things:
 
-- Import the data action and its input class.
-- Create an input for the data action.
-- Invoke the data action.
+1. Import the data action and its input class.
+1. Create an input for the data action.
+1. Invoke the data action.
 
 The following code shows an updated **react** component that makes a call for a product when the button is clicked.
 
