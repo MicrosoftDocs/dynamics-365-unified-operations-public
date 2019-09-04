@@ -44,7 +44,7 @@ Here is the product data model from Dynamics 365 for Sales:
 
 Here is the product data model from Dynamics 365 for Finance and Operations:
 
-![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-product-5.jpg)
+![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-products-5.jpg)
 
 These two product data models have been harmonized in the Common Data Service as shown below:
 
