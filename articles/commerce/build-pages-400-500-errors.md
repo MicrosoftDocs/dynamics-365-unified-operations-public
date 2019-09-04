@@ -38,7 +38,7 @@ This topic describes how to build custom response pages for 4xx and 5xx status c
 
 ## Overview
 
-A server will issue HTTP response status code errors when a client request is not successful. All 4xx categorical status codes are client error responses, and all 5xx categorical status codes are server error responses. In Dynamics 365 Retail, application users can build custom response pages to display to end users in the event of 4xx or 5xx status code error responses.
+A server will issue HTTP response status code errors when a request is not successful. The 404 and 500 status codes are captured and returned in the case of a page not found our server error. In Dynamics 365 Retail, application users can build custom response pages to display to end users in the event of these status code error responses.
 
 ## Build a status code error response page
 To begin building a status code error response page, do the following.
