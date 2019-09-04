@@ -45,7 +45,7 @@ Note: All statics form e-Commerce (JS or CSS files) will get served from the *co
 
 ## Setting up SSL for Custom Domain
 
-To ensure the SSL is set up for a custom domain and your statics (JS/CSS) are cached, your CDN will need to be configured to direct to your Dynamics 365 Commerce generated hostname for your environment. You must also cache the following pattern for statics only: /_msdyn365/_scnr/*
+To ensure the SSL is set up for a custom domain and your statics (JS/CSS) are cached, your CDN will need to be configured to direct to your Dynamics 365 Commerce generated hostname for your environment. You must also cache the following pattern for statics only: /_msdyn365/_scnr/*.
 
 Any CDN service can be used. 
 
