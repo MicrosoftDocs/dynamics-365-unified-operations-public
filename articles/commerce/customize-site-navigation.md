@@ -36,9 +36,7 @@ This article describes how to create a customized online navigation hierarchy to
 
 ## Overview
 
-Most online storefronts provide the ability for customers to discover and browse products by navigating through product categories. This capability is typically provided using tabs at the top of the page or a left navigation bar. 
-
-In Commerce, you can create and manage the hierarchal structure of your category navigation and the products contained within those categories. 
+Online storefronts typically provide the ability for customers to discover and browse products by navigating through product categories. This capability is usually provided by tabs at the top of the page or a left navigation bar. In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products contained within those categories. 
 
 ## Create a retail channel navigation hierarchy
 
