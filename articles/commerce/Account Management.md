@@ -42,7 +42,7 @@ This page uses the following modules:
 
 **Account Welcome item:** This module is used to provide a welcome message to the account management page. It supports a Heading. Tile size defines the width of this module within the content placement. Tile size can be values 1-12. A 12 implies full width of the content placement container.
 
-**Account order placement item:** This module is used to provide a summary of the orders placed by this user account. It supports a Heading, Tile size and a View details link. The View details link should be configured to redirect to Order history page.. See Order History page for more details.
+**Account order placement item:** This module is used to provide a summary of the number of orders placed by this user account. It supports a Heading, Tile size and a View details link. The View details link should be configured to redirect to Order history page.. See Order History page for more details.
 
 **Account profile placement item:** This module is used to provide a summary of the user profile. It supports Heading, Tile size and a View details link. The View details link should be configured to redirect to the User profile page. See User profile page for more details.
 
@@ -54,11 +54,11 @@ This page uses the following modules:
 
 ## Order History Page
 
-The page shows all the recent orders placed by the user. It uses Order History module. The module supports Order details page link, which redirects to the Order details page.  It supports a Heading and Back to Shopping link
+The page shows all the recent orders placed by the user. It uses Order History module. 
 
 ## Order Details page
 
-The Order details page provides a more detailed information of each order. It uses the order details module which requires the order item context for retrieving the details. It is accessed from the order history page.
+The Order details page provides a more detailed information of each order. It uses the order details module which requires the sales id or transaction id to retrieve the order details. It is accessed from the order history page.
 
 ## User Profile page
 
@@ -66,7 +66,7 @@ The user profile page shows user account details such as Name, Email. Email cann
 
 ## User Addresses page
 
-The user address page shows the list of addresses associated to the user account. These are addresses the user provided during checkout or added directly from this page. The Address module is used Add/Edit and render existing addresses on this page.
+The user address page shows the list of addresses associated to the user account. These are addresses the user provided during checkout or added directly from this page. The Address module is used Add, Edit, Set Primary address and render existing addresses on this page.
 
 ## Wishlist page
 
