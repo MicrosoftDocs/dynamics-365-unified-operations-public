@@ -89,12 +89,12 @@ Email notifications from alerts are not yet enabled. This will be enabled in a f
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3DWZ3]
 
-The [How to use alerts to monitor filtered data in Dynamics 365 for Finance and Operations ](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Alert rule options
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E4PV]
 
-The [Alert rule options in Dynamics 365 for Finance and Operations](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
