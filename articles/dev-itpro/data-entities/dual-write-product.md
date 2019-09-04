@@ -36,11 +36,21 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-Integration of products lets you synchronize product data from Microsoft Dynamics 365 for Finance and Operations to Common Data Service. Because of the integration, product data that originates in Finance and Operation can be viewed and used in Dynamics 365 for Customer Engagement.
+When a business eco-system is made up of Dynamics 365 applications including Dynamics 365 for Finance and Operations and Dynamics 365 for Sales, it’s natural for the majority of the customers to use Dynamics 365 for Finance and Operations as the application to source product data. It is because, Dynamics 365 for Finance and Operations provides a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. The few customers who use an external Product Lifecycle Management (PLM) system for sourcing the product data can always channelize products via Dynamics 365 for Finance and Operations to other dynamics applications. “Unified Product Experience” brings in the harmonized product data model to Common Data Service, so that all application users including power platform users can take advantage of the rich product data coming from Dynamics 365 for Finance and Operations.
 
-Because the concept of a product is richer in Finance and Operations than in Customer Engagement, Finance and Operations is considered the master of the integration. In Customer Engagement, you will be able to use and modify the product data from Finance and Operations but these modifications will not synchronize back to Finance and Operations. Furthermore, as Finance and Operations is the master of the data, if changes are made to the product, these will always apply to the product, updating the existing product information in Customer Engagement.
+Here is the product data model from Dynamics 365 for Sales:
 
-The richness of the supply chain management related fields that hold product data is also available in Common Data Service, and all the existing concepts that are used to define the product are also defined.
+![Data model for products in CE](media/dual-write-product-4.jpg)
+
+Here is the product data model from Dynamics 365 for Finance and Operations:
+
+![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-product-5.jpg)
+
+These two product data models have been harmonized in the Common Data Service as shown below:
+
+![Data model for products in Dynamics 365 for Finance and Operations](media/dual-write-product-6.jpg)
+
+In order to address majority of the customers, the dual-write entity maps for products have been designed to flow data one-way only and it’s a near-real time experience from Dynamics 365 for Finance and Operations to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Customers can customize it at their own risk althought Microsoft does not recommend this approach.
 
 ## Templates
 
