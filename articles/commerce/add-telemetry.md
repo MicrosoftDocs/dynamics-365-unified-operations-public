@@ -62,7 +62,7 @@ To create a fragment for your script code that can be reused across all pages on
 [!NOTE]
 When done, you will need to publish the fragment and the master template. 
 
-For further information about adding script to master templates, see the [Add script to master templates](http://) help topic
+For further information about adding script to master templates, see the [Add script to master templates](http://) help topic.
 
  
 
