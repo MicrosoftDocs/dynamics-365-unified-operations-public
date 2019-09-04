@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build custom response pages for 4xx/5xx status code errors
-description: This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
+description: This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Commerce.
 author: brshoo
 manager: annbe
 ms.date: 10/01/2019
@@ -34,19 +34,19 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Retail.
+This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Commerce.
 
 ## Overview
 
-A server will issue HTTP response status code errors when a request is not successful. The 404 and 500 status codes are captured and returned in the case of a page not found our server error. In Dynamics 365 Retail, application users can build custom response pages to display to end users in the event of these status code error responses.
+A server will issue HTTP response status code errors when a request is not successful. The 404 and 500 status codes are captured and returned in the case of a page not found our server error. In Dynamics 365 Commerce, application users can build custom response pages to display to end users in the event of these status code error responses.
 
 ## Build a status code error response page
 To begin building a status code error response page, do the following.
 
-1. Sign in to Dynamics 365 Retail Authoring Tools in your preferred browser. 
+1. Sign in to Dynamics 365 Commerce in your preferred browser. 
 1. Select the site for which you will be building the 4xx/5xx status code error response page. 
 
-#### Build the template
+### Build the template
 
 To build the template, do the following.
 
@@ -55,7 +55,7 @@ To build the template, do the following.
 1. Build the template according to how you want the error page to be structured.
 1. Check in and publish the template.
 
-#### Build the error page
+### Build the error page
 
 To build the error page, do the following.
 
@@ -67,7 +67,7 @@ To build the error page, do the following.
 [!NOTE]
 You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
 
-#### Set up a redirect for the error page
+### Set up a redirect for the error page
 
 To set up a redirect for the error page, do the following.
 
