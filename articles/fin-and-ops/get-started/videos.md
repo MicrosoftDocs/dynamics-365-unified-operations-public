@@ -5,7 +5,7 @@ title: Videos for Finance and Operations
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Dynamics 365 for Finance and Operations that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -128,83 +128,7 @@ Videos are listed by feature, so scroll down to see the entire list of video con
 - [Release production picking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-## FastTrack Tech Talks
+## Finance and Operations FastTrack Tech Talks
 
-[FastTrack for Dynamics 365 Tech Talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas. The following section lists FastTrack Tech talk recordings that are available to stream or download. You can also download a PDF copy of the presentation deck from the Tech Talk site. 
+[Finance and Operations FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
 
-#### Data management
-
-- [Copy into legal entity (DYN383PAL)](https://infopedia.eventbuilder.com/event?eventid=q3h0m7&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Data management (DYN445PAL2)](https://infopedia.eventbuilder.com/event?eventid=a7n1v0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Reduce data import and export time using configurations (DYN315PAL)](https://infopedia.eventbuilder.com/event?eventid=s6v1q3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Demo data
-
-- [Demo data packages (DYN443PAL)](https://infopedia.eventbuilder.com/event?eventid=m2r4o6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Deployment
-
-- [On-premises deployment (DYN382PAL2)](https://infopedia.eventbuilder.com/event?eventid=m9i7a2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Develop and customize
-
-- [Azure Integration tools for Dynamics 365 for Finance and Operations (DYN386PAL)](https://infopedia.eventbuilder.com/event?eventid=l7f2i9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Extensibility (DYN384PAL2)](https://infopedia.eventbuilder.com/event?eventid=e0x4q5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [How to extend or build new analytical workspaces (DYN321PAL)](https://infopedia.eventbuilder.com/event?eventid=r7z0f5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Performance testing approach (DYN449PAL2)](https://infopedia.eventbuilder.com/event?eventid=k6c6g9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Performance testing approach (DYN449PAL)](https://infopedia.eventbuilder.com/event?eventid=i1u5m9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Financial reporting
-
-- [Financial reporting (DYN305PAL)](https://infopedia.eventbuilder.com/event?eventid=s0d0n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) 
-- [Reporting options in Dynamics 365 for Finance and Operations (VIR810PAL)](https://infopedia.eventbuilder.com/event?eventid=p8x0s5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Integration
-
-- [CDS data integrator (DYN451PAL2)](https://infopedia.eventbuilder.com/event?eventid=i8v2n3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Integration (VIR806PAL)](https://infopedia.eventbuilder.com/event?eventid=y0w0k9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Integration between Dynamics 365 for Sales and Dynamics 365 for Finance & Operations via CDS (DYN340PAL)](https://infopedia.eventbuilder.com/event?eventid=d8s3b6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Integration framework within Dynamics 365 for Finance & Operations (DYN385PAL)](https://infopedia.eventbuilder.com/event?eventid=y4y2v9&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Task automation framework for Data management (DYN447PAL2)](https://youtu.be/KqnXjNpR4AY)
-
-#### Intelligence
-
-- [Analytics & reporting options, printing, and the Document Routing Agent (DYN442PAL)](https://infopedia.eventbuilder.com/event?eventid=r6d9a6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Introducing analytical workspaces (DYN317PAL)](https://infopedia.eventbuilder.com/event?eventid=h6e1a7&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Mobile
-
-- [Expense & project mobile workspace (DYN379PAL2)](https://infopedia.eventbuilder.com/event?eventid=u0g9h5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Mobile framework (VIR824PAL)](https://infopedia.eventbuilder.com/event?eventid=p2o7n7&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Procurement and sourcing
-
-- [Punch out (DYN332PAL2)](https://infopedia.eventbuilder.com/event?eventid=w5u5q8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Vendor collaboration (DYN327PAL)](https://infopedia.eventbuilder.com/event?eventid=c3e4c0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Retail
-
-- [Dynamics 365 for Retail POS extensibility: Deep dive (DYN342PAL)](https://infopedia.eventbuilder.com/event?eventid=f4s5w1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Retail architecture & Retail Store Scale Unit (DYN307PAL)](https://infopedia.eventbuilder.com/event?eventid=j0j7h2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [What's new in Dynamics 365 for Retail POS extensibility (DYN339PAL2)](https://infopedia.eventbuilder.com/event?eventid=h8b0l1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Support
-
-- [Servicing (VIR805PAL)](https://infopedia.eventbuilder.com/event?eventid=c2k8k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Upgrade and migration
-
-- [AX 2009 to Dynamics 365 for Operations migration tools (VIR809PAL)](https://infopedia.eventbuilder.com/event?eventid=c3g5k3&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [AX 2009 migration tools (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [AX 2012 to Dynamics 365 for Operations upgrade (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [How to upgrade to 7.2 (July 2017) from 7.0 (RTW)/7.1 (Release 1611) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Azure DevOps setup (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-
-#### Warehouse management
-
-- [Additions to mixed license plate receiving (DYN331PAL)](https://infopedia.eventbuilder.com/event?eventid=e0u6t2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Demand replenishment for raw material picking (DYN333PAL2)](https://infopedia.eventbuilder.com/event?eventid=i5p9d2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Item and warehouse migration process to use advanced warehouse management (DYN316PAL)](https://infopedia.eventbuilder.com/event?eventid=w0k4b4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Piece by piece picking process (DYN330PAL2)](https://infopedia.eventbuilder.com/event?eventid=u6e0z6&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Visual scheduling for Production orders and kanbans (DYN328PAL)](https://infopedia.eventbuilder.com/event?eventid=h0o0n0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Warehouse integration with Production (DYN344PAL)](https://infopedia.eventbuilder.com/event?eventid=y8p6o1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks) - [Warehousing mobile app (VIR816PAL)](https://infopedia.eventbuilder.com/event?eventid=t8t7l8&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
