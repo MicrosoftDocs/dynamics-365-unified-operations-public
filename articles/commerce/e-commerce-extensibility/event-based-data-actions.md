@@ -37,13 +37,13 @@ This topic describes how to use event-based data actions.
 
 ## Overview
 
-In some scenarios you don't need a data action to run on the initial load of a page, but instead want it to run dynamically in response to some event on the client. Examples of such scenarios include adding a product to a customers cart in response to a button click, displaying search results in response to a text input change, or updating banner text because of a time-based event.
+In some scenarios, you don't want a data action to run when a page is first loaded. Instead, you want it to run dynamically in response to some event on the client. For example, a product can be added to a customer's cart in response to a button click, search results can be shown in response to a change in the text input, or banner text can be updated in response to a time-based event.
 
 ## Example
 
-In the following example, a very basic module loads product information in response to a user clicking a button. 
+In the following example, a very basic module loads product information when a user clicks a button. 
 
-First we show a react component that contains a button for a user to click.
+The following code shows a **react** component that contains a button that users can click.
 
 ```tsx
 // product-button.tsx
@@ -70,13 +70,13 @@ class ProductButton extends React.Component {
 export default ProductButton;
 ```
 
-Currently this component will just log a message to the console when the button is clicked. To replace that with the data action, we need to do three things:
+Currently, this component just logs a message to the console when the button is clicked. To replace that behavior with the data action, you must do three things:
 
-- Import the data action and its input class
-- Create an input for the data action
-- Invoke the data action
+- Import the data action and its input class.
+- Create an input for the data action.
+- Invoke the data action.
 
-The following code shows an updated react component that will now make a call for a product when the button is clicked.
+The following code shows an updated **react** component that makes a call for a product when the button is clicked.
 
 ```tsx
 // product-button.tsx
@@ -114,4 +114,5 @@ class ProductButton extends React.Component {
 export default ProductButton;
 ```
 
-[!NOTE] This example uses a hardcoded `productId`, but could be updated to read the `productId` from a text input or from the module's configuration properties.
+> [!NOTE]
+> This example uses a hard-coded **productId** value. However, it can be updated so that the **productId** value is read from text input or the module's configuration properties.
