@@ -1,4 +1,34 @@
-# Quick tour for ecommerce site
+---
+# required metadata
+
+title: E-Commerce site overview
+description: 
+author: anupamar
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: samjar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+# E-Commerce site overview
 
 Retailers want to create a customized ecommerce solution that is responsive and showcases their products. It needs to be unique and relate to their customer base. Customers should be able to continue their shopping journey across devices (Desktop or Mobile) and channels (Online, Brick and Mortar or Call center) seamlessly.
 
