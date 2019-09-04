@@ -30,15 +30,13 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cloud powered search for e-commerce scale & traffic
 
-Product discoverability is easiest & quick way for Retailer’s customer to be able to discover the product via browsing thru categories, search & filtering. 
+Product discoverability is easiest & quick way for Retailer’s customer to be able to discover the product via browsing thru categories, search & filtering. Retailers consider product discovery as a primary tool for customer interaction across all retail channel.
 
-All Retailers consider product discovery as a primary tool for customer interaction across all retail channel.
+Retailer’s customers are used to Web search engines, sophisticated ecommerce websites and social apps that offer great relevance, search suggestions as you type, faceted navigation, highlighting and more, all with near-instantaneous response times. If their customer cannot find the right product quickly enough they do not hesitate to move over the next best eCommerce store, as it is that easy.
 
-Retailer’s customers are used to Web search engines, sophisticated ecommerce websites and social apps that offer great relevance, search suggestions as you type, faceted navigation, highlighting and more, all with near-instantaneous response times.If they do not find the right product quickly enough they do not hesitate to move over the next best eCommerce store, as it is that easy.
+This cloud-powered product discoverability in Dynamics 365 Commerce will help Retailers to continue to grow their share of consumer retention & conversion rates across all channels including both eCommerce & POS. 
 
-This investment for powering product discoverability in Dynamics 365 for Commerce will help Retailers to continue to grow their share of consumer retention & conversion rates across all channels including both eCommerce & POS. 
-
-With Dynamics 365 for Commerce, search experience shall have following improved capabilities to help retailer achieve better product discoverability, and be scalable and performant for eCommerce traffic.
+With Dynamics 365 Commerce, search experience shall have following improved capabilities to help retailer achieve better product discoverability, and be scalable and performant for eCommerce traffic.
 
 + **Browse and search:** Search relevance and performance is key to our omnichannel experience, as product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient search helps increase conversion.
 
