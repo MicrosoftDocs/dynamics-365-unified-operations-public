@@ -72,7 +72,7 @@ You can create separate error pages for 4xx and 5xx status code errors, or use t
 To set up a redirect for the error page, do the following.
 
 1. Go to **URLs > New > New Alias** and select the new error page.
-1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up.
+1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up. These aliases must be published to work actively.
 1. Click **OK** to commit the linking.
 
 [!NOTE]
