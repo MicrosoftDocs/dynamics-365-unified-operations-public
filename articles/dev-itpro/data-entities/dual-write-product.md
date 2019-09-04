@@ -247,7 +247,7 @@ PRODUCTNUMBER | >> | msdyn_productnumber
 
 Product dimensions are characteristics that identify a product variant. The four product dimensions (Color, Size, Style, and Configuration) are also mapped to Common Data Service to define the product variants. The following illustration shows the data model for the product dimension Color. The same model is applied to Sizes, Styles and Configurations. 
 
-![Data model for products](media/dual-write-product-2.png)
+![Data model for products](media/dual-write-product-2.PNG)
 
 ### Colors
 
