@@ -74,7 +74,7 @@ To enable the app to interact with a specific Finance and Operations server, you
 8.  Your new app registration will open. [![WMA-04-active-directory-configure-app](./media/WMA-04-active-directory-configure-app.png)](./media/WMA-04-active-directory-configure-app.png)
 9.  Remember the **Application ID**, you will need it later. The **Application ID** will later be referred to as the **Client ID**.
 10. Click **Certificate & secrets** in the **Manage** pane. Click on **New client secret**. [![WMA-05-active-directory-create-key](./media/WMA-05-active-directory-create-key.png)](./media/WMA-05-active-directory-create-key.png)
-11. Create a key by entering a key description and a duration in the **Passwords** section. Click **Add** and copy the key. This key will later be referred to as the **Client secret**.
+11. Create a key by entering a key description and a duration in the **Passwords** section. Click **Add** and copy the key. This key will later be referred to as the **Client secret**. [![WMA-06-active-directory-save-key](./media/WMA-06-active-directory-save-key.png)](./media/WMA-06-active-directory-save-key.png)
 
 ## Create and configure a user account in Finance and Operations
 To enable Finance and Operations to use your Azure AD application, you need to complete the following configuration steps:
