@@ -55,10 +55,13 @@ If you don't select the **Publish assets after upload** option, you will need to
 
 ### Create the HTML for the favicon image
 
-To create the HTML for the favican image, do the following.
+To create the HTML for the favicon image, do the following.
 
 - Use the following HTML snippet, replacing the value of the href attribute ("Public_URL_for_your_favicon") with the public URL of your favicon copied earlier. 
-  - &lt;link rel="shortcut icon" href="Public_URL_for_your_favicon" /&gt;
+
+  ``
+  &lt;link rel="shortcut icon" href="Public_URL_for_your_favicon" /&gt;
+  ``
 
 ### Add the HTML for the favicon to the <head> tag of your pages
 
