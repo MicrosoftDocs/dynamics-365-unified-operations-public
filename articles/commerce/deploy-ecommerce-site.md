@@ -31,9 +31,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Deploy a new e-Commerce site
 
-[!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
 
@@ -53,13 +52,13 @@ For more information about environments, see [Environment planning](https://docs
 
 Use this procedure to initialize the e-Commerce feature in an existing environment.
 
-Before you begin, make sure that you have the following **required** information:
+Before you begin, make sure that you have the following required information:
 
 - The RCSU that will be used
 - The Microsoft Azure Active Directory (Azure AD) security group that will be used for system admins
 - The domains that will be associated with the environment
 
-In addition, you can collect the following **optional** information:
+In addition, you can collect the following optional information:
 
 - Azure AD business-to-consumer (B2C) information:
 
@@ -70,11 +69,10 @@ In addition, you can collect the following **optional** information:
 	- SignUp SignIn Policy ID
 	- Reset password Policy ID
 	- Edit Profile Policy ID
+	- The security group that will be used for moderation of ratings and reviews
 
-    > [!NOTE]
-    > This information can be added later, through a service request.
-
-- The security group that will be used for moderation of ratings and reviews
+[!NOTE]
+This information can be added later, through a service request.
 
 After you've collected the required information, follow these steps to initialize e-Commerce.
 
