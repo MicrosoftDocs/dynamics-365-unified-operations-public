@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select a site theme
-description: This topic shows you how to set or change your site's theme.
+description: This topic describes how to set or change your site's theme in Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
 ms.date: 10/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic shows you how to set or change your site's theme.
+This topic describes how to set or change your site's theme in Dynamics 365 Commerce.
 
 ## Overview
 
@@ -41,17 +41,16 @@ Your site's layout and style (fonts, sizes, colors, etc.) are defined by the the
 
 When you create a new site, it is configured with a theme called Fabrikam which is provided as part of the starter kit. After you have deployed additional themes for your site, you can configure the site to use one of those themes. 
 
-## Change the site theme
+## Select the site theme
 
-To change the theme that is applied to your site, do the following.
+To select the theme that is applied to your site, do the following.
 
 1. Navigate to your site in the site authoring environment
-1. Go to **Site Management** and open **Extensions**.
-1. Scroll down to the **Site Theme** section and expand it.
-1. Choose a theme from the dropdown menu.
+1. Go to **Site Management** > **Extensibility**.
+1. Under **Theme**, select a theme option from the drop-down menu.
 
 [!NOTE]
-The theme you select will be applied to your published site as soon as you click **Save and publish** on the Extensions page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
+The theme you select will be applied to your published site as soon as you click **Save and publish** on the Extensibility page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
 
  
 
