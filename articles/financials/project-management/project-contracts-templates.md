@@ -54,9 +54,21 @@ The following illustration shows how the data is synchronized between Project Se
 
 To access the available templates, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
+The following templates and underlying tasks are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
 
+### Integrating with Dynamics 365 Project Service Automation v2.x
 - **Name of the template in Data integration:** Projects and contracts (PSA to Fin and Ops)
+- **Name of the tasks in the project:**
+
+    - Project contracts PSA to Fin and Ops
+    - Projects PSA to Fin and Ops
+    - Project contract lines PSA to Fin and Ops
+    - Project contract line milestones PSA to Fin and Ops
+  
+### Integrating with Dynamics 365 Project Service Automation v3.x
+There is a schema change in Project Service Automation that impacts the Project contract line milestone template and use of the v2 version of the template is required to integrate Project Service Automation v3.x with Finance and Operations.
+
+- **Name of the template in Data integration:** Projects and Contracts (PSA 3.x to Fin and Ops) - v2
 - **Name of the tasks in the project:**
 
     - Project contracts PSA to Fin and Ops
