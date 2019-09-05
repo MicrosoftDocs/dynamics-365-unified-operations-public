@@ -28,9 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Account Management
-
- 
+# Account management
 
 Account Management is a group of pages that are used to manage user account related information. The pages include Account Management landing page, User Profile page, Address page, Order history page, Order details page, Loyalty page and Wishlist page.
 
@@ -75,7 +73,3 @@ The Wishlist page, shows the items added to the user Wishlist. It uses the Wishl
 ## Loyalty page
 
 The user can join a loyalty program or if the user is already a loyalty member they can view their program details. They can also view the points earned and redeemed in recent transactions.
-
- 
-
- 
