@@ -44,7 +44,7 @@ We plan to deliver regulatory updates in One Version service updates that are re
 
 In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for relevant available monthly updates.
 
-Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the following abbreviation HF and PEAP respectively. 
+Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and PEAP, respectively. 
 
 For the latest regulatory update plans, refer to the following table.   
 
