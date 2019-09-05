@@ -32,20 +32,21 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the regulatory updates that are planned for release in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might change or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
+This topic lists the regulatory updates that are planned and released in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. To learn about other planned and released country-specific features, refer to the following resources:
-
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the following resources:
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change. 
+Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
 We plan to deliver regulatory updates in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the Preview Early Adoption Program (PEAP).
 
-In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for some available monthly updates.
+In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for relevant available monthly updates.
 
-For the latest regulatory update plans, refer to the following table. 
+Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the following abbreviation HF and PEAP respectively. 
+
+For the latest regulatory update plans, refer to the following table.   
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
