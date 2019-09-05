@@ -27,6 +27,7 @@ ms.author: AnupamaR
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 
 ---
+
 # Footer module
 
 The **Footer** module is special container that is used for hosting the modules that will be displayed on the page footer. For instance, it includes links to various pages across the site such as Contact Us, Store Policies, Follow us.
