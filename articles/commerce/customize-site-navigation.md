@@ -94,13 +94,3 @@ To add custom navigation options to your navigation menu, do the following.
 1. Enter link text and a URL.
 1. Repeat steps 3 and 4 to add more custom menu items.
 1. When finished, save and check in the fragment. 
-
- 
-
- 
-
- 
-
- 
-
- 
