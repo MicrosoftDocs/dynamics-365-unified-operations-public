@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -665,7 +665,7 @@ To see the new folders, you must close and reopen Event Viewer. To see additiona
 
 ###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
 
-Issue: You are running Local Agent version 2.3.1 or above and you received the following stacktrace in the event logs while deploying a package that contains platform update 29 or lower:
+**Issue**: You are running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
 
 ```stacktrace
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
@@ -676,9 +676,9 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- Resolution: 
-   1. You need to configure the execution of Pre/Post deployment scripts. Check out the [guide](../../lifecycle-services/pre-post-scripts.md).
-   2. Add the following snippet to your Predeployment.ps1 script:
+ **Resolution**: 
+   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../../lifecycle-services/pre-post-scripts.md).
+   2. Add the following code to your Predeployment.ps1 script:
 
         ```powershell
             $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
