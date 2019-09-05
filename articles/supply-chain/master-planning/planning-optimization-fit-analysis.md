@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
+[!include [banner](../includes/preview-banner.md)]
+
 # Planning optimization fit analysis
 
 From **Master planning** > **Setup** > **Planning Optimization fit analysis** you can check your current setup and data against the capabilities of Planning Optimization. Any inconsistencies will be shown in the list after clicking **Run analysis** (can take a few minutes to run). If no inconsistencies were found during the fit analysis a message will appear, after running, and no data is shown in the list.
