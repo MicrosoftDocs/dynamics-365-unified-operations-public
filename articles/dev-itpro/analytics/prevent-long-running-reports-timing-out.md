@@ -53,8 +53,6 @@ If the report uses the Report Data Provider (RDP) to retrieve data, the report s
 6. Introduce a **Controller** class to run the report.
 7. Update the Output Menu Item so that it points to the **Controller** class instead of the report.
 
-The following video demonstrates the process: [Ep 59 Long Running Reports](https://www.youtube.com/watch?v=6tdQtHV2WAc)
-
 ## Use batch processing
 To improve performance when you print statements or reports that include large amounts of data, use batch processing. When you use batch processing, you can run specific tasks as batch jobs and then schedule those batch jobs to run on a different computer (a batch server). By moving the processing of these tasks to a batch server, you can improve the report performance on the client computer. You can also apply range restrictions to limit the size of each batch.
 
