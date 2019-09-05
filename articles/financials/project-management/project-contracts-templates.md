@@ -155,4 +155,4 @@ The following illustrations show examples of the template task mappings in Data 
 
 #### Project contract line milestone mapping in the Projects and Contracts (PSA 3.x to Fin and Ops) - v2 template:
 
-[![Template mapping](./media/ProjectContractLineMilestoneMapping_v2.JPG)](./media/ProjectContractLineMilestoneMapping_v2.JPG)
+[![Template mapping](./media/ProjectContractLineMilestoneMapping_v2.jpg)](./media/ProjectContractLineMilestoneMapping_v2.jpg)
