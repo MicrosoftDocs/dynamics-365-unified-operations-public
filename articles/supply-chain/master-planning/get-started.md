@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master planning home page
-description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
-author: ShylaThompson
+title: Get started
+description: Get started with Planning Optimization. 
+author: ChristianRytt
 manager: AnnBe
-ms.date: 2/09/2019
+ms.date: 2019-09-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2019-02-19
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-09-06
+ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
