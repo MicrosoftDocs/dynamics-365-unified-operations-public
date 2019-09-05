@@ -668,12 +668,16 @@ To see the new folders, you must close and reopen Event Viewer. To see additiona
 Issue: You are running Local Agent version 2.3.1 or above and you received the following stacktrace in the event logs while deploying a package that contains platform update 29 or lower:
 
 ```stacktrace
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The system cannot find the file specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.RefreshAdapters()
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
+System.IO.FileNotFoundException: Could not load file or assembly 'EntityFramework, Version=6.0.0.0,
+Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The system cannot find the file
+specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.RefreshAdapters()
 --- End of inner exception stack trace ---
  ```
 
  Resolution: 
-   1. You need to configure the execution of Pre/Post deployment scripts.
+   1. You need to configure the execution of Pre/Post deployment scripts. Check out the [guide](../../lifecycle-services/pre-post-scripts.md).
    2. Add the following snippet to your Predeployment.ps1 script:
 
         ```powershell
