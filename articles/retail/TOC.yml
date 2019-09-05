@@ -4,6 +4,8 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
+  - name: Preview features in Dynamics 365 for Retail 10.0.6
+    href: get-started/whats-new-10-0-6.md
   - name: Preview features in Dynamics 365 for Retail 10.0.5
     href: get-started/whats-new-10-0-5.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.3
