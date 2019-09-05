@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master planning home page
-description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
-author: ShylaThompson
+title: Plan history and logs
+description: View the history of planning jobs triggered with Planning Optimzation.
+author: ChrsitianRytt
 manager: AnnBe
-ms.date: 12/03/2018
+ms.date: 2019-09-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
