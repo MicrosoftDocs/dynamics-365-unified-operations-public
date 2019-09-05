@@ -50,18 +50,17 @@ For the latest regulatory update plans, refer to the following table.
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6/10.05HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6/10.0.5HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
-|      August 2019          |   10.0.6      | Brazil      |   DRCST declaration SC   |
-|      August 2019          |   10.0.6/10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
-|      August 2019          |   10.0.6      | Brazil      |   Tax statement CAT 42/18    |
-|      August 2019          |   10.0.6      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6/10.0.5HF/10.0.4HF/10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
+|      August 2019          |   10.0.6(PEAP)/10.05HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
+|      August 2019          |   10.0.6(PEAP)      | Brazil      |   DRCST declaration SC   |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
+|      August 2019          |   10.0.6(PEAP)      | Brazil      |   Tax statement CAT 42/18    |
+|      August 2019          |   10.0.6(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
 |      August/July 2019          |   10.0.5/10.0.4HF/10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
 |      July 2019          |   10.0.5/10.0.4HF/10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
 |      July 2019          |   10.0.5      | Brazil      |   Sped contributions practical guide 1.31. new guidance    |
 |      July 2019          |   10.0.5      | Mexico      |   MX -CFDI 3.3 - The detail of IEPS tax transactions in XML should be optional depending on customer profile    |
-|      July 2019          |   10.0.5/10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019 - Dynamics 365 for Finance and Operations v.10     |
 |      June/July 2019          |   10.0.5/10.03HF      | United Kingdom      |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
 |      May 2019          |   10.0.4      | Brazil      |   Incoming fiscal document 66    |
 |      May 2019          |   10.0.4/10.0.3HF/10.02HF/10.0.1HF      | Brazil      |   NF-e Decree 54.308/18 - RS    |
@@ -84,7 +83,6 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
 |      April 2019          |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019  |
 |      April 2019          |   10.0.1      | Japan      |  2019 Japanese Calendar Era Change  |
-|      April 2019          |   10.0.1      |    Lithuania     |i.SAF report let's user define system Sales tax codes in association with legal tax codes  |
 |      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
 |      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
