@@ -1,6 +1,6 @@
 # Dynamics 365 Commerce online channel documentation (DRAFT)
 # Online channel management
-* [E-Commerce overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/ecommerce-site-overview?branch=anupamar-Overview-docs)
+* [E-Commerce overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Overview-docs/articles/commerce/ecommerce-site-overview.md)
 
 ## Create a new e-Commerce site
 * [Deploy a new e-Commerce site (LCS)](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/psimolin-deploy-site/articles/commerce/deploy-ecommerce-site.md)
