@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Creating, approving, and signing offers
+# Create, approve, and sign offers
 
 [!include[banner](../includes/banner.md)]
 

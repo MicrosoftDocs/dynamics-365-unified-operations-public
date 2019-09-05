@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72424
 ms.assetid: 9e0b3126-aa04-4b76-a254-bfbd3fcd6552
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -76,7 +76,8 @@ This section contains two simple code samples. One sample is written in X++, and
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
 
-**Note**: The best practice is to use double quotation marks for any string that might be displayed to the user.
+> [!NOTE]
+> The best practice is to use double quotation marks for any string that might be displayed to the user.
 
 #### X++ Sample
 
@@ -474,7 +475,7 @@ X++ features that are different in C\# are listed in the following table.
 | Feature | X++ | C# | Comments |
 |---|---|---|---|
 | `== `comparison operator| Insensitive: the `==` operator is insensitive to differences in string casing.| In C#, the `==` operator is sensitive to differences in string casing.| In X++ you can use the strCmp Function for case sensitive comparisons between strings.|
-| String delimiters| In X++ you can use either the single (') or double (`"`) quotation mark as the string delimiter. **Note**: Usually the best practice is to use double quotation marks for strings that might be displayed to the user. However, it is convenient to delimit a string with single quotation marks when a double quotation mark is one of the characters in the string.| In C# you must use the double quotation mark as the string delimiter. This refers to the type `System.String`.| In X++ and C# you have the option of embedding a delimiter in a literal string and escaping it with \. <br>In X++ you also have the alternative of embedding single quotation marks in a string that is delimited by double quotation marks (or the reverse), without having to use the escape.|
+| String delimiters| In X++ you can use either the single (') or double (`"`) quotation mark as the string delimiter.<p><strong>Note:</strong> Usually the best practice is to use double quotation marks for strings that might be displayed to the user. However, it is convenient to delimit a string with single quotation marks when a double quotation mark is one of the characters in the string.</p>| In C# you must use the double quotation mark as the string delimiter. This refers to the type `System.String`.| In X++ and C# you have the option of embedding a delimiter in a literal string and escaping it with \. <br>In X++ you also have the alternative of embedding single quotation marks in a string that is delimited by double quotation marks (or the reverse), without having to use the escape.|
 | Character delimiters| X++ has a string data type (`str`), but no character type.| In C# you must use the single quotation mark as the character delimiter. This refers to the type `System.Char`.| In the .NET Framework, a `System.String` of length one is a different data type than a `System.Char` character.|
 
 ### Example 1: Case Sensitivity of the == Operator
@@ -528,7 +529,7 @@ The following table lists areas in the [] syntax for arrays that are different f
 
 | Category | X++ | C# | Comments |
 |---|---|---|---|
-| Declaration| An array is declared with square brackets appended to the variable name.| An array is declared with square brackets appended to the data type.| `int myInts[]; // X++` <br>**Note**: An X++ array cannot be a parameter in a method.<br>`int[] myInts; // C#`|
+| Declaration| An array is declared with square brackets appended to the variable name.| An array is declared with square brackets appended to the data type.| `int myInts[]; // X++` <p><strong>Note:</strong> An X++ array cannot be a parameter in a method.</p><p>`int[] myInts; // C#`</p>|
 | Declaration| The array syntax supports only primitive data types, such as `int` and `str`. The syntax does not support classes or tables.|The array syntax supports primitive data types and classes.| In X++ you can use the `Array` Array for an array of objects.|
 | Declaration| X++ is limited to single dimension arrays (myStrings[8]).| C# adds support for multi-dimensional arrays (myStrings[8,3]) and for jagged arrays (myStrings[8][3]).| In X++ you cannot have an array of arrays. However, there is advanced syntax for limiting the amount of active memory that a large array can consume, which looks like the multi-dimensional syntax in C#: int intArray[1024,16];. For more information, see Best Practice Performance Optimizations: Swapping Arrays to Disk.|
 | Declaration| In X++ an array is a special construct but it is not an object.| In C# all arrays are objects regardless of syntax variations.| X++ does have an Array class, but its underlying mechanism differs from arrays created by using the [] syntax. In C# all arrays use the same underlying mechanism, regardless of whether [] syntax of the `System.Array` class is used in your code.|
@@ -1196,7 +1197,7 @@ The following table lists the arithmetic operators.
 
 |X++ and C# | Differences |
 |---|---|
-| *| As the multiplication operator, there are no differences.<br>**Note**: The asterisk is also used in the SQL statements that are part of the X++ language. In these SQL statements the asterisk can also be one of the following:<ul><li>A wildcard indicating that all the columns should be returned.</li><li>A wildcard for characters in a string that is used on a <strong>like</strong> clause.</li></ul>|
+| *| As the multiplication operator, there are no differences.<p><strong>Note:</strong> The asterisk is also used in the SQL statements that are part of the X++ language. In these SQL statements the asterisk can also be one of the following:</p><ul><li>A wildcard indicating that all the columns should be returned.</li><li>A wildcard for characters in a string that is used on a <strong>like</strong> clause.</li></ul>|
 | `/`| The division operator is the same in X++ and C#.|
 | `MOD`| For modulo operations, the only difference is that the % symbol is used in C#.|
 | +| The addition operator is the same in X++ and C#. The plus sign is also used for string concatenation. This operator adds numbers and concatenates strings in both languages.|
@@ -1250,7 +1251,11 @@ There are differences in the way delegates are used for events in X++ versus C#.
 
 The important things to notice in the X++ example are the following:
 
--   The `XppClass` has a delegate member that is named `myDelegate`. **Note**: The AOT contains a node for the delegate. The node is located at AOT > Classes > XppClass > myDelegate. Several event handler nodes can be located under the myDelegate node. Event handlers that are represented by nodes in the AOT cannot be removed by the -= operator during run time. 
+-   The `XppClass` has a delegate member that is named `myDelegate`.
+
+    > [!NOTE]
+    > The AOT contains a node for the delegate. The node is located at AOT > Classes > XppClass > myDelegate. Several event handler nodes can be located under the myDelegate node. Event handlers that are represented by nodes in the AOT cannot be removed by the -= operator during run time.
+
 -   The {} braces at the end of the delegate declaration are required, but they cannot have any code in them.
 -   The `XppClass` has two methods whose parameter signatures are compatible with the delegate. One method is static.
 -   The two compatible methods are added to the delegate with the += operator and the **eventHandler** keyword. These statements do not call the event handler methods, the statements only add the methods to the delegate.
@@ -1419,7 +1424,7 @@ The following table lists the OOP-related keywords in X++ and C#.
 | <strong>final</strong>| A <strong>final</strong> method cannot be overridden in a derived class. A <strong>final</strong> class cannot be extended.| The keyword <strong>sealed</strong> on a class means the same thing that <strong>final</strong> means on an X++ class.| |
 | <strong>implements</strong>| A class declaration can implement an <strong>interface</strong> by using the <strong>implements</strong> keyword.| | |
 | <strong>interface</strong>| An <strong>interface</strong> can specify methods that the class must implement.| An <strong>interface</strong> can specify methods that the class must implement.| |
-| <strong>new</strong>| The <strong>new</strong> keyword is used to allocate a new instance of a class. Then the constructor is automatically called. Each class has exactly one constructor, and the constructor is named `new`. You can decide what parameters the constructor should input.| The <strong>new</strong> keyword is used to create a new instance of a class. Then the constructor is automatically called. Constructor methods themselves are not named `new`, they have the same name as the class.<br>**Note**: The <strong>new</strong> keyword can also be used on a method, to modify the way in which the method overrides the same method in the base class.| Both X++ and C# assume a default constructor for classes that have no constructor explicitly written in their code.|
+| <strong>new</strong>| The <strong>new</strong> keyword is used to allocate a new instance of a class. Then the constructor is automatically called. Each class has exactly one constructor, and the constructor is named `new`. You can decide what parameters the constructor should input.| The <strong>new</strong> keyword is used to create a new instance of a class. Then the constructor is automatically called. Constructor methods themselves are not named `new`, they have the same name as the class.<p><strong>Note:</strong> The <strong>new</strong> keyword can also be used on a method, to modify the way in which the method overrides the same method in the base class.</p> | Both X++ and C# assume a default constructor for classes that have no constructor explicitly written in their code.|
 | <strong>null</strong>| | | No difference.|
 | <strong>private</strong> and <strong>protected</strong>| The <strong>private</strong> and <strong>protected</strong> keywords can be used to modify the declaration of a class member.| The <strong>private</strong> and <strong>protected</strong> keywords can be used to modify the declaration of a class member.||
 | <strong>public</strong>| A method that is not modified with <strong>public</strong>, <strong>protected</strong>, or <strong>private</strong> has the default access level of <strong>public</strong>.| A method that is not modified with <strong>public</strong>, <strong>protected</strong>, or <strong>private</strong> has the default access level of <strong>private</strong>.||
@@ -1459,7 +1464,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 | WINAPI::createDirectory WINAPI::folderExists WINAPI::removeDirectory| `Directory` `DirectoryInfo` `Path`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve directories.|
 | WINAPI::getDriveType| `DriveInfo` `DriveType`| These classes and methods are used to obtain drive related information.|
 | WINAPI::copyFile WINAPI::createFile WINAPI::deleteFile WINAPI::fileExists| `File` `FileAttributes` `FileInfo`| X++ can use static methods in the `WINAPI` class for many basic operating system functions that involve files.|
-| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="http://epplus.codeplex.com/">EPPlus</a> library reference is available for additional interaction with Excel.|
+| `CommaIo` `Comma7Io`| (No corresponding class.)| These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="https://epplus.codeplex.com/">EPPlus</a> library reference is available for additional interaction with Excel.|
 | `AsciiIo` `TextIo`| `FileStream` `TextReader` `TextWriter`| These classes use different code pages.|
 | `Io`| `Stream` `StreamReader` `StreamWriter` `FileStream`| These are often used as base classes that other classes extend.|
 | `CodeAccessPermission` `FileIoPermission`| `System.Security` `.CodeAccessPermission` The namespace `System.Security.Permissions` includes the following classes:<ul><li>`CodeAccessSecurityAttribute`</li><li>`FileIOPermissionAttribute`</li><li>`FileIOPermission`</li><li>`FileIOPermissionAccess`</li></ul>| The concepts and methods of `assert`, `demand`, and `revertAssert` apply to both languages. However, the `deny` and `revertDeny` methods that are available in C# are not available in X++.|

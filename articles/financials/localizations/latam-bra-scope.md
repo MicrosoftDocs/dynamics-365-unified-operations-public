@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -471,7 +471,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td></td>
 <td>The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
-    <blockquote><strong>NOTE</strong><br>The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.</blockquote>
+<p><strong>Note:</strong> The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>
@@ -810,7 +810,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td></td>
 <td>The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-<blockquote><strong>NOTE</strong><br>Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/en-hk/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</blockquote>
+<p><strong>Note:</strong> Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>

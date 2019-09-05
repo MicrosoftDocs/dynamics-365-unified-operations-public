@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Enter and compare RFQ bids, and award contracts
-description: This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. 
+title: Enter and compare RFQ bids and award contracts
+description: This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
 author: mkirknel
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -26,97 +26,88 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Enter and compare RFQ bids, and award contracts
+
+# Enter and compare RFQ bids and award contracts
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows you how to enter replies to an RFQ, score and compare bids, and then award the bid to one of the vendors. You can use this procedure in demo data company USMF. Before you start, you must have an RFQ with two lines that has been sent to at least two vendors. You can run the "Create a request for quotation" procedure as a prerequisite to create this. You need to have set up scoring criteria before you can run this procedure.
+This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. You can use this procedure in the **USMF** demo data company.
 
+Before you start this procedure, you must have an RFQ that has two lines, and that has been sent to at least two vendors. To create this RFQ, complete the [Create a request for quotation](create-request-quotation.md) procedure. Scoring criteria must also be set up before you can complete this procedure.
 
-## Enter a reply from a vendor
-1. Go to Procurement and sourcing > Requests for quotations > All requests for quotations.
-2. Select an RFQ that has a status of Sent and click the link on the Request for quotation case number.
-    * The RFQ should have been sent to at least 2 vendors.  
-3. Click Header to go to the list of vendors.
-4. Select the vendor for whom you want to enter a response on the RFQ.
-5. Click Enter reply.
-6. On the Action Pane, click Reply.
-7. Click Copy data to reply.
-    * This action will copy selected data, for example, the quantity from the RFQ case to the RFQ reply. Alternatively you can skip this action and fill in all the response fields manually when you edit the reply.  
-8. Click Edit.
-9. In the Unit price field, enter a number.
-10. Choose the other quotation line.
-11. In the Unit price field, enter a number.
+You can enter the bid as either a vendor or a procurement professional. For more information, see [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
 
-## Score the bid
-1. Click Header to go to the scoring of the bid.
-2. Expand the Bid scoring section.
-3. In the Score field, enter a number for one of the scoring criteria.
-    * If you hover over one of the scoring criteria a tooltip shows the range that you have to score within. In this demo you can add a number between 1 and 5 to any of the criteria.  
-4. Select another scoring criterion.
-5. In the Score field, enter a number.
-6. Expand the Questionnaires section.
-    * If the RFQ case has a questionnaire that was sent to the vendors, you can enter their responses in the questionnaire section.  
-7. Close the page.
+## Enter a reply as a vendor
 
-## Enter a reply for another vendor
-1. Select the next vendor by clearing the vendor you have just entered the reply for and then selecting the row for the next vendor.
-2. In the list, find and select the desired record.
-3. Click Enter reply.
-4. Click Copy data to reply.
-5. Click Edit.
-6. In the Unit price field, enter a number.
-7. Choose the other quotation line.
-8. In the Unit price field, enter a number.
+1. On the dashboard, select **Vendor bidding**.
+2. In the **New bid invitations** list, find an RFQ that was just sent. Select the RFQ to review what was requested.
+3. Select **RFQ attachments** to review any attachments that have been added.
+4. Select **Bid** to make the fields editable. Notice that the **Bid progress** field is set to **Vendor is updating**.
+5. On the header and lines, enter the values from the bid reply.
+6. If any attachments should be added to the bid, select **Bid attachments**.
+7. Select the **Bidding guiding items** FastTab to view whether any documents are required.
+8. Select the **Amendments** FastTab to view whether the RFQ has been amended.
+9. Select the **Questionnaire** FastTab. Any questionnaires that appear here must be answered.
+10. Select the **Line details** FastTab to view extended information about the line.
+11. Select **Reset from RFQ** only if you must reset the values that have been entered to the original RFQ values.
+12. You can save the bid at any time and do additional processing later, provided that the expiration date and time haven't passed. In this case, you can find the bid in the **Bids in progress** list in the **Vendor bidding** workspace.
+13. When the bid is ready to be sent, select **Submit**. If you don't want to bid, select **Decline**. Submitted bids are available in the **Submitted bids** list in the **Vendor bidding** workspace.  
+14. After the bid is submitted, you can recall it at any time before the expiration date and time. Note that when a bid is recalled, it isn't treated as submitted. When the bid is accepted or rejected by the procurement department, it appears in either the **Awarded bids** or **Lost bids** list in the **Vendor bidding** workspace.  
 
-## Score the second bid
-1. Click Header to go to scoring of the bid.
-2. In the Score field, enter a number.
-3. In the list, find and select the desired record.
-4. In the Score field, enter a number.
+## Enter a reply from a vendor as a procurement professional
+
+1. Make sure that the permission to edit vendor bids is set up. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**. On the **Request for quotations** tab, set the **Purchaser can edit vendors bid** option to **Yes**.
+2. Go to **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
+3. Select an RFQ that has a status of **Sent**, and then select the link in the **Request for quotation case** field.
+4. Select **Manage replies**. The page that appears shows an RFQ for each vendor that was invited to bid.
+5. Select an RFQ that hasn't been replied to. (The **Reply progress** field should be set to **Not started**.)
+6. Select **Edit \> Edit RFQ reply**. The **RFQ reply** page appears. As a procurement professional, you can now enter the reply on behalf of the vendor. Notice that the **Bid progress** field is set to **Purchaser is updating**.  
+7. Enter the bid data. When you've finished, select **Submit**.
+
+## Score the bids
+
+1. On the **All requests for quotations** page, select the RFQ case that you want to score replies for.
+2. Select **Manage replies**.
+3. Select the reply to score.
+4. Select **Header** so that you can view the scoring for the bid.
+5. On the **Bid scoring** FastTab, enter a number in the **Score** field for one of the scoring criteria. If you hover over a scoring criterion, a tooltip shows the range that the score must be within. In this demo, you can enter a number between 1 and 5 for any of the scoring criteria.  
+6. Repeat step 5 for another scoring criterion.
+7. If the RFQ case has a questionnaire that was sent to the vendors, you can enter the vendor responses on the **Questionnaires** FastTab.
+8. Close the page.
+9. Repeat steps 1 through 8 for all the other bids.
 
 ## Compare the replies
-1. On the Action Pane, click General.
-2. Click Compare replies.
-3. In the Rank field, enter a number.
-    * This page shows the bids with the header and lines, and the total score on the header level. You can compare the lines by sorting in the grid so that comparable lines are next to each other. The information also includes:   Quantity: The quantity quoted by the vendor. This might not equal the quantity specified in the RFQ.   Net amount: The price quoted by a vendor, after subtracting any discounts, for the items on the line.   Deviation: The number of days that the delivery date in the bid header or line deviates from the requested delivery date in the RFQ header or RFQ line.   You can enter a rank for each bid.  
-4. Select the header line for the other bid that you want to rank.
-5. In the Rank field, enter a number.
-6. Click Save.
+
+1. On the Action Pane, on the **General** tab, select **Compare replies**.
+2. In the **Rank** field, enter a number.  
+    - This page shows the bids, together with the header and line information, and also the total score at the header level. You can compare the lines by sorting the grid so that comparable lines are next to each other. The following information is also included:
+    - **Quantity** – The quantity that the vendor quoted. This quantity might not equal the quantity that is specified in the RFQ.
+    - **Net amount** – The price that the vendor quoted for the items on the line, minus any discounts.
+    - **Deviation** – The number of days by which the delivery date on the bid header or line differs from the requested delivery date on the RFQ header or line. You can enter a rank for each bid.  
+3. Select the header line for the other bid that you want to rank.
+4. In the **Rank** field, enter a number.
+5. Select **Save**.
 
 ## Reject a bid
-1. Select the header line for the bid that you want to reject.
-    * You can only accept, reject, or return one bid or lines within one bid at a time.  
-2. Select the Mark check box.
-    * If you select the Mark check box on the Header of the bid then all the lines will be marked as well. You could also choose to mark a subset of the lines within the bid to reject or accept those. It’s possible to accept one vendor’s bid for some lines of an RFQ, and then award other RFQ lines to a different vendor, however you need to do this in 2 steps, one bid at a time. If alternate lines are present, you can only accept either the original bid line or its alternate, but not both.  
-3. Click Reject.
-4. Click Parameters to open the drop dialog.
-5. In the Reason reject field, enter or select a value.
-    * The reason for rejection will be stored on the reply.  
-6. Click OK.
-7. Click OK.
-8. Close the page.
-9. Close the page.
-10. Refresh the page.
+
+1. Select the header line for the bid that you want to reject. You can accept, reject, or return only one bid or the lines on only one bid at a time.
+2. Select the **Mark** check box.  
+    - If you select the **Mark** check box on the header of the bid, all the lines are also marked. To reject or accept only some of the lines on the bid, you can mark just those lines. Additionally, you can accept one vendor's bid for some lines of an RFQ and then award other RFQ lines to a different vendor. However, you must do one bid at a time.  
+    - If alternate lines are present, you can accept either the original bid line or its alternate, but not both.  
+3. Select **Reject**.
+4. Select **Parameters**, and then, in the **Reason reject** field, enter or select your reason for rejecting the bid. The reason is stored in the reply.  
+5. Select **OK**.
+6. Select **OK**.
 
 ## Accept a bid
-1. Select the bid that you want to accept and then click the link in the Request for quotation field.
-2. On the Action Pane, click Reply.
-3. Click Accept.
-    * If you have marked specific lines and not others then the accept action will only include the marked lines. If you want to accept all lines on the bid then you do not have to mark the lines.  
-4. Click Parameters to open the drop dialog.
-    * This allows you to record a reason for accepting the bid. The reason will be stored on the bid.  
-5. In the Reason accept field, enter or select a value.
-6. Click OK.
-7. Click OK.
-    * When you click OK this generates a purchase order based on the lines that are included in the RFQ acceptance. If there are other bids that have not been processed (accepted, rejected, or returned) then the system will prompt you to reject the remaining bids.  
 
-## View the purchase order that's been generated
-1. On the Action Pane, click General.
-2. Click Purchase order.
-    * Here you can see the purchase order that was generated when you accepted the bid.  
-3. Close the page.
-4. Close the page.
-5. Close the page.
-6. Close the page.
+1. Select the bid to accept, and then select the link in the **Request for quotation** field. If you're on the **Compare request for quotation replies** page, the highlighted bid that has focus is the bid that the system will consider during the Accept action. You can accept lines from only one bid at a time.  
+2. On the Action Pane, select **Reply**.
+3. Select **Accept**. If you marked only specific lines, the Accept action will include only those lines. If you want to accept all the lines on the bid, you don't have to mark the lines.  
+4. Select **Parameters**, and then, in the **Reason accept** field, enter or select your reason for accepting the bid. The reason is stored in the bid.  
+5. Select **OK**.
+6. Select **OK**. When you select **OK**, a purchase order is generated based on the lines that are included in the RFQ acceptance. If there are other bids that haven't been processed (accepted, rejected, or returned), the system prompts you to reject them.  
 
+## View the purchase order that is generated
+
+On the Action Pane, on the **General** tab, select **Purchase order**. The page that appears shows the purchase order that was generated when you accepted the bid.

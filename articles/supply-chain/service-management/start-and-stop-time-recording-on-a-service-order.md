@@ -62,9 +62,9 @@ Use this procedure to start and stop time recording for a service order for whic
 
 ## See also
 
-[Start SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242297\(v=ax.60\))
+[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))
 
-[Stop SLA time recording (form)](https://technet.microsoft.com/en-us/library/hh242241\(v=ax.60\))
+[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))
 
   
 

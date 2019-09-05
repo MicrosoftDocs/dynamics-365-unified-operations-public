@@ -17,7 +17,7 @@ ms.search.form: PurchLineMatchingPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3101
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
+The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. When the **Post invoice with discrepancies** field in the **Accounts payable parameters** form is set to **Require approval**, invoice matching validation will be performed. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
 
 The examples in this topic use the following setup for intercompany trade:
 -   Fabrikam Purchase is the purchasing legal entity.

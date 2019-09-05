@@ -17,7 +17,7 @@ ms.search.form: TaxIntervat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 273023
@@ -133,11 +133,6 @@ To enter correction, click **Tax corrections** &gt; **Adjustments**, and fill in
 | Amount            | Enter the correction amount.                                                                                                                                                              |
 
 
-
-Additional resources
---------
-
-[Belgian sales tax reporting codes](http://www.taxexpert.be/bestand/Betekenis%20vakken%20BTW-aangifte.pdf)
 
 
 

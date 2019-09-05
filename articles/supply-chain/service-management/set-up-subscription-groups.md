@@ -46,7 +46,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## See also
 
-[Subscription groups (form)](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))
+[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
 
 [Subscription groups](subscription-groups.md)
 

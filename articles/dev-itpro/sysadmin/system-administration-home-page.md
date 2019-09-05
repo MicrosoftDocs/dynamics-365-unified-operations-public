@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 11/21/2017
+ms.date: 05/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,6 +35,17 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
+
+## One Version
+In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
+
+- [One Version service updates overview](../lifecycle-services/oneversion-overview.md)
+- [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md)
+- [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md)
+- [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
+- [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md)
+- [Pause service updates through Lifecycle Services (LCS)](../lifecycle-services/pause-service-updates.md)
+- [Get notified about service updates through Lifecycle Services (LCS)](../lifecycle-services/notifications-service-updates.md)
 
 ## Implementation management with Lifecycle Services
 Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your Finance and Operations implementations.
@@ -117,3 +128,4 @@ The Microsoft Dynamics 365 for Unified Operations mobile app enables your organi
 - [Maintenance mode](maintenance-mode.md)
 - [Pre-configured system accounts](pre-configured-system-accounts.md)
 - [Export B2B users to Azure AD](implement-b2b.md)
+- [Set the session idle timeout](session-idle-timeout.md)

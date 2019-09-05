@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 72124
@@ -54,7 +54,7 @@ After you've completed these steps, you're ready to publish the product schema t
 5.  The Retail publishing job runs from the CRT application programming interface (API) and creates hierarchies for the site that you created in the online store.
 6.  Commerce Data Exchange: Real-time Service receives the status of the Retail publishing job actions from the CRT API and publishes that status. The status is either **Published** or **Error**.
 
-For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/en-us/jj682095). After you've published the channel, you can publish a catalog.
+For the specific procedures to publish a channel, see [Set up an online store](https://msdn.microsoft.com/jj682095). After you've published the channel, you can publish a catalog.
 
 ## Publish a Retail online store catalog
 A retail product catalog lets you identify the products that you want to offer in your online stores. When you create a catalog, you identify the online stores where the products will be offered, add products, and enhance the product offerings by adding merchandising details. After the catalog is approved, you publish it to make products available in the online store. Before you can publish a retail product catalog, you must complete the following setup tasks:

@@ -4,4 +4,3 @@ To import a database prepared from a developer environment to a standard user ac
 2. Select the **Import database** option and choose your source database backup (.bacpac format) file from the Asset Library.
 3. Note the warnings. Review the list of data elements that are cleaned up from the backup file.
 4. The import operation will begin immediately.
-5. After the import operation is completed, you must **Sign off** on the operation before you can perform another servicing operation, such as package deployment, database movement, or upgrade.

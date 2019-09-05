@@ -3,7 +3,7 @@
 
 title: Enable duplicate payment protection for payment connector
 description: This topic describes how to enable duplicate payment protection for a given payment connector.
-author: 
+author: Reza-Assadi
 manager: AnnBe
 ms.date: 12/28/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -37,10 +37,10 @@ This topic describes how to enable duplicate payment protection functionality in
 
 ## Overview
 
-- [Required reading](#Required-reading) - List of topics that you should be read before starting the implementation of the duplicate payment protection functionality in a payment connector. 
-- [Prerequisites](#Prerequisites) - List of prerequisites to enable duplicate payment protection in a payment connector implementation.
-- [Understanding duplicate payment protection flows](#Understanding-duplicate-payment-protection-flows) - Describes the various flows where the duplicate payment protection is invoked in the POS.
-- [Implement duplicate payment requests](#Implement-duplicate-payment-requests) - Describes the various payment-related requests that need to be implemented to support the duplicate payment protection feature.
+- [Required reading](#required-reading) - List of topics that you should be read before starting the implementation of the duplicate payment protection functionality in a payment connector. 
+- [Prerequisites](#prerequisites) - List of prerequisites to enable duplicate payment protection in a payment connector implementation.
+- [Understanding duplicate payment protection flows](#understanding-duplicate-payment-protection-flows) - Describes the various flows where the duplicate payment protection is invoked in the POS.
+- [Implement duplicate payment requests](#implement-duplicate-payment-requests) - Describes the various payment-related requests that need to be implemented to support the duplicate payment protection feature.
 
 ## Required reading
 Be sure to read the following topics before enabling duplicate payment protection for a given payment connector.
@@ -186,7 +186,7 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string l
 | Variable | Description |
 |---|---|
 | lockToken | Unique token value that is generated when the payment terminal is initially locked for the transaction. |
-| transactionReferenceData | Property bag containing various properties used to uniquely identify a payment transaction. For more information, see the section [PaymentTransactionReferenceData](#PaymentTransactionReferenceData) in this topic. |
+| transactionReferenceData | Property bag containing various properties used to uniquely identify a payment transaction. For more information, see the section [PaymentTransactionReferenceData](#paymenttransactionreferencedata) in this topic. |
 
 #### Response signature
 ``` csharp

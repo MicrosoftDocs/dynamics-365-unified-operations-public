@@ -17,7 +17,7 @@ ms.technology:
 ms.search.form: RetailSharedParameters
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Retail, Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -41,7 +41,7 @@ Learn how you can manage Bing Maps for your application. When Bing Maps is turne
 
 ## Enter a Bing Maps key
 
-Go to the [Bing Maps licensing page](http://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to
+Go to the [Bing Maps licensing page](https://go.microsoft.com/fwlink/p/?LinkID=390116) for details about how to
 obtain a key.
 
 1. Go to **Retail Shared Parameters** > **Bing Maps**.
@@ -49,6 +49,6 @@ obtain a key.
 
 ## Privacy notice
 
-If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](http://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](http://go.microsoft.com/?linkid=9710837).  
+If you enable the Bing Maps feature, address information is automatically sent over the internet to the Bing Maps service to display an online map of the address within this application. If you click on Bing Maps within this application, you will be redirected to [www.bing.com/maps](https://www.bing.com/maps). Your use of Bing Maps is also governed by the [Bing Maps End User Terms of Use](https://go.microsoft.com/?linkid=9710837).  
   
 Administrators can turn the Bing Maps feature on or off under **Retail Shared Parameters** > **Bing Maps**. Turning the Bing Maps app off makes the feature unavailable in this application.

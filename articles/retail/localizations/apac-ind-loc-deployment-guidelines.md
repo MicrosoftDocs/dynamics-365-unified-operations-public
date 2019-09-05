@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -42,7 +42,7 @@ This sample consists of extensions for the Commerce runtime (CRT). To run this s
 
 ## Prerequisites
 
-Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running Goods and Services Tax (GST) calculations on. For Cloud POS, and for Modern POS in online mode, this machine is Retail server. For Modern POS in offline mode, it's the Modern POS machine itself. To get the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=30679).
+Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running Goods and Services Tax (GST) calculations on. For Cloud POS, and for Modern POS in online mode, this machine is Retail server. For Modern POS in offline mode, it's the Modern POS machine itself. To get the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=48145).
 
 ## Development environment
 

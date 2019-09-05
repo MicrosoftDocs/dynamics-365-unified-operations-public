@@ -5,7 +5,7 @@ title: Enter payroll beginning balances
 description: The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for Partners to migrate or transfer data for a new Payroll implementation from another system.
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20931
@@ -77,7 +77,7 @@ This step manually creates an earnings statement for each worker for the last pa
     |------------------|-------------|
     | Earnings code    | Regular pay |
     | Quantity         | 1.00        |
-    | Rage             | 30,000      |
+    | Rate             | 30,000      |
     | Line details tab |             |
     | Manual           | (marked)    |
 

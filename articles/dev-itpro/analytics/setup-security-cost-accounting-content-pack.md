@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270294
@@ -69,4 +69,4 @@ If updates are made to access-level security in Cost accounting, and you want Po
 We assume that your organization wants to restrict data access. If, for some reason, the security parameters are disabled when you run Cost accounting, the owner must add users to the **Cost accountant** role in Power BI instead. If you change security from an enabled state to a disabled state, it's a good idea to remove users from the **Cost object controller** role. And vice versa if you re-enable security. Users can belong to both roles. Joint access is the union of both roles. In the case of the **Cost accounting analysis** Power BI content, users who have joint access have unrestricted data access. If your goal is to apply restricted access, users must be assigned only to the **Cost object controller** role. These row-level security updates take effect immediately. Affected users should refresh their browsers.
 
 ## Additional resources
-To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).

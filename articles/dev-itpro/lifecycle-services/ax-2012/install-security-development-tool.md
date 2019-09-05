@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18391
@@ -59,7 +59,7 @@ This section lists the procedures required to install and configure the Security
 
 ### Import and compile the tool
 
-1.  Drain the client connections from the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](http://technet.microsoft.com/en-us/library/hh433538.aspx).
+1.  Drain the client connections from the instance of Application Object Server (AOS) that you are working with. For more information, see [Drain users from an AOS](http://technet.microsoft.com/library/hh433538.aspx).
 2.  Go to **Administrative Tools**, click **Services**, and stop the **Microsoft Dynamics AX Object Server 6.0** service.
 3.  Use Windows PowerShell or AXUtil to import the **SecurityDevelopmentTool.axmodel** model into the Microsoft Dynamics AX AOT.
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.

@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/21/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events developer documentation
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 This topic walks you through the development process and best practices for implementing business events.
 
@@ -113,6 +112,9 @@ intent discussed previously must be used for such decisions.
 | Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
 
 
+> [!NOTE]
+> In general, implementing business events at the table level may pose additional challenges than what is described above. For example, if the business logic is executed via a stored procedure that updates data in the underlying table, then it is possible that the business event will not even get generated because it was implemented in the table insert method in X++. You could potentially encounter additional challenges based on specific use cases. As a result, it is not recommended that you implement business events at the table level.
+
 ## Implementing a business event
 
 Implementing a business event and sending it is a fairly straightforward process:
@@ -142,17 +144,7 @@ The <noun/noun phrase> part of the name should comply with existing definitions 
 
 The process of implementing a **BusinessEventsBase** extension is straightforward. It involves extending the **BusinessEventsBase** class, and implementing a static constructor method, a private **new** method, methods to maintain internal state, and the **buildContract** method.
 
-1. Extend the **BusinessEventsBase** class.
-
-    ```
-    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
-    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
-    ```
-
-    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid storing localized data.
-
-2. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
+1. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
     ```
     static public SalesInvoicePostedBusinessEvent
@@ -164,6 +156,16 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
         return businessEvent;
     }
     ```
+
+2. Extend the **BusinessEventsBase** class.
+
+    ```
+    [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
+    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
+    ```
+
+    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid storing localized data.
 
 3. Implement a private **new** method. This method is called only from the static constructor method.
 
@@ -644,6 +646,237 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 }
 ```
 
-## Summary
+## Extending filters to have custom fields (if supported by the middleware)
 
-You can easily extend the payload of a business event by implementing a business event contract that supplements the standard business event contract, and an extension class that uses Chain of Command (CoC) to wrap the implementation of the **buildContract** method.
+Some middleware systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
+
+### Payload context
+
+The Business Events framework supports a concept of *payload context*, which provides a means for decorating messages sent by the framework with context about the payload. In some scenarios, additional context may be required when sending messages to endpoints, so the framework has hookpoints where the context can be overwritten and the adapters can be customized.
+
+### Adding a custom payload context
+
+A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
+
+```
+class CustomCommitLogPayloadContext extends
+BusinessEventsCommitLogPayloadContext
+
+{
+
+private utcdatetime eventTime;
+
+public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+
+{
+
+eventTime = \_eventTime;
+
+return eventTime;
+
+}
+
+}  
+```
+
+### Constructing the custom payload context
+
+A Chain of Command (CoC) extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload context type.
+
+```
+[ExtensionOf(classStr(BusinessEventsSender))]
+
+public final class CustomPayloadContextBusinessEventsSender_Extension
+
+{
+
+protected BusinessEventsCommitLogPayloadContext
+buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+
+{
+
+BusinessEventsCommitLogPayloadContext payloadContext = next
+buildPayloadContext(_commitLogEntry);
+
+CustomCommitLogPayloadContext customPayloadContext = new
+CustomCommitLogPayloadContext();
+
+customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
+
+customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
+
+return customPayloadContext;
+
+}
+
+}  
+```
+
+### Consuming the custom payload context from an adapter
+
+Adapters that consume payload context are written in such a way that they expose CoC methods to allow consuming new payload contexts. The following example explores what this looks like for the Service Bus adapter, which has a generic property bag that can be filtered on by the consumers of the Service Bus.
+
+The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
+
+```
+[ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
+
+public final class CustomBusinessEventsServiceBusAdapter_Extension
+
+{
+
+protected void addProperties(BrokeredMessage \_message,
+BusinessEventsEndpointPayloadContext \_context)
+
+{
+
+if (_context is CustomCommitLogPayloadContext)
+
+{
+
+CustomCommitLogPayloadContext customPayloadContext = \_context as
+CustomCommitLogPayloadContext;
+
+var propertyBag = \_message.Properties;
+
+propertyBag.Add('EventId', customPayloadContext.parmEventId());
+
+propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
+
+*// Convert the enum to string to be able to serialize the property.*
+
+propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
+customPayloadContext.parmBusinessEventCategory()));
+
+propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
+
+propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+
+}
+
+}
+
+}  
+```
+
+## Adding a custom endpoint type
+The Business Events framework supports adding new endpoint types in addition to the ones that ship out of the box. An example of how to do this is describe with the below.
+
+### Add new endpoint type
+
+Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum, as shown in the following section.
+
+![Business event endpoint](../media/customendpoint1.png)
+
+### Add new endpoint table to the hierarchy
+
+All endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. A new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
+
+![Business event endpoint](../media/customendpoint2.png)
+
+The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, field names should be qualified to the specific endpoint where they belong. For example, two endpoints can have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”.
+
+![Business event endpoint](../media/customendpoint3.png)
+
+### Add new EndpointAdapter class that implements IBusinessEventsEndpoint
+
+The new endpoint adapter class must implement the IBusinessEventsEndpoint interface as well as be decorated with the BusinessEventsEndpointAttribute attribute.
+
+```
+
+[BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
+
+public class CustomEndpointAdapter implements IBusinessEventsEndpoint
+
+{  
+```
+
+The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
+
+```
+
+if (!(_endpoint is CustomBusinessEventsEndpoint))
+
+{
+
+BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
+\_endpoint.RecId);
+
+}
+
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
+CustomBusinessEventsEndpoint;
+
+customField = customBusinessEventsEndpoint.CustomField;
+
+if (!customField)
+
+{
+
+throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
+classStr(CustomEndpointAdapter), varStr(customField)));
+
+}
+
+```
+
+### Extend the EndpointConfiguration form
+
+Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold
+your custom field input.
+
+![Business event endpoint](../media/customendpoint4.png)
+
+The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form, as shown below.
+
+![Business event endpoint](../media/customendpoint5.png)
+
+```
+
+[ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
+
+final public class CustomBusinessEventsEndpointConfiguration_Extension
+
+{
+
+public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
+
+{
+
+TableName tableName = next getConcreteTableType(_endpointType);
+
+if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
+
+{
+
+tableName = tableStr(CustomBusinessEventsEndpoint);
+
+}
+
+return tableName;
+
+}
+
+public void showOtherFields()
+
+{
+
+next showOtherFields();
+
+BusinessEventsEndpointType selection =
+any2Enum(EndpointTypeSelection.selection());
+
+if (selection == BusinessEventsEndpointType::CustomEndpoint)
+
+{
+
+this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
+CustomFields))).visible(true);
+
+}
+
+}
+
+}
+
+```

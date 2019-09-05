@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DimensionDetails,  DimensionAttributeTableExtensionActivate, DimensionValueDetails   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -36,7 +36,7 @@ This task guide demonstrates adding an entity backed financial dimension and a c
 ## Create an entity backed financial dimension
 1. Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.
 2. Click New.
-3. In the User values from field, select a system-defined entity to base the financial dimension on. 
+3. In the User values form field, select a system-defined entity to base the financial dimension on. 
 4. In the Dimension name field, type a value to describe the financial dimension.
     * The name can be different than the system-defined entity but cannot contain spaces or special characters.  
 5. Click Activate.
@@ -50,7 +50,7 @@ This task guide demonstrates adding an entity backed financial dimension and a c
 ## Create a custom financial dimension
 1. Close the page.
 2. Click New.
-3. In the Use values from field, select <Custom dimension>.
+3. In the Use values from field, select Custom dimension.
 4. In the Dimension name field, type a value to describe the financial dimension.
     * The name cannot contain spaces or special characters.  
     * You can also specify an account mask to limit the amount and type of information that you can enter for dimension values.   

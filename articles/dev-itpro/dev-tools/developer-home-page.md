@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Develop and customize 
+title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 04/27/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.assetid: 06e26767-6056-4755-b47e-0bda71833581
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Develop and customize 
+# Develop and customize home page
 
 [!include [banner](../includes/banner.md)]
 
@@ -57,7 +57,7 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Deprecated features](../migration-upgrade/deprecated-features.md)
 -   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
 -   [Rename and reboot machines for Azure DevOps](../migration-upgrade/vso-machine-renaming.md)
--   [Introduction to Azure DevOps (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Introduction to Azure DevOps (Video)](https://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
@@ -88,7 +88,6 @@ Microsoft Dynamics 365 for Finance and Operations represents the next-generation
 -   [Developer tools add-ins](developer-tools-add-ins.md)
 -   [Distribution of models: How to export and import a model](models-export-import.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
--   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 -   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)

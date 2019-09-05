@@ -5,7 +5,7 @@ title: Business events in Microsoft Flow
 description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/29/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,17 +29,15 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events in Microsoft Flow
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
-Business events can be consumed in Microsoft Flow via the Microsoft Finance and Operations connector. The Finance and Operations connector has a trigger that is named **when a business event happens**. This trigger can be used to subscribe to any of the business events that are available in the target instance of Microsoft Dynamics 365 for Finance and Operations.
+Business events can be consumed in Microsoft Flow via the Microsoft Finance and Operations connector. The Finance and Operations connector has a trigger that is named **when a business event occurs**. This trigger can be used to subscribe to any of the business events that are available in the target instance of Microsoft Dynamics 365 for Finance and Operations.
 
 ## Prerequisite
 
 It's important that you understand business events. For more information, see the [Business events](home-page.md) documentation.
 
 > [!IMPORTANT]
-> - The Finance and Operations connector for Microsoft Flow is in preview.
-> - The **when a business event happens** trigger works only with Finance and Operations instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
+> The **when a business event happens** trigger works only with Finance and Operations instances that run Platform update 24 or later, because business events aren't available in earlier platform releases.
 
 ## Subscribing to business events and unsubscribing from them
 
@@ -52,9 +50,14 @@ After the **when a business event happens** trigger is added to a flow, the foll
 
 When the flow is saved, a subscription to the selected business event is added into the environment instance. As part of the subscription process, the required endpoint is set up, and the corresponding business event is activated.
 
-If either the trigger or the flow is deleted, the business event is automatically unsubscribed from.
+If either the trigger or the flow is deleted or disabled, the business event is automatically unsubscribed from.
 
-Multiple flows can subscribe to the same business event in different legal entities.
+Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
+
+> [!NOTE]
+> The Flow endpoint in Finance and Operations must not be configured manually in Finance and Operations. The endpoint will automatically get created from Flow as explained above.
+
+For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
 
 ## Other ways to consume business events in Microsoft Flow
 

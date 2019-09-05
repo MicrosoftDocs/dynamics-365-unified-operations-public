@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196873
@@ -33,9 +33,9 @@ ms.author: omarc
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to upload the marketing content of your Microsoft Dynamics 365 for Finance and Operations solution package to the Microsoft Cloud Partner Portal. It also explains how to stage and publish your solution. Access to the portal is granted after you've been formally onboarded and registered as a publisher by the Microsoft AppSource Team for Finance and Operations. To start the onboarding process, see [Tell us about your company](https://appsource.microsoft.com/en-us/partners/signup).
+This topic explains how to upload the marketing content of your Microsoft Dynamics 365 for Finance and Operations solution package to the Microsoft Cloud Partner Portal. It also explains how to stage and publish your solution. Access to the portal is granted after you've been formally onboarded and registered as a publisher by the Microsoft AppSource Team for Finance and Operations. To start the onboarding process, see [Tell us about your company](https://appsource.microsoft.com/partners/signup).
 
-Before you can publish the marketing content for your Finance and Operations solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. You can then upload your marketing content and manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/en-us/documentation/articles/marketplace-publishing-accounts-creation-registration/).
+Before you can publish the marketing content for your Finance and Operations solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. You can then upload your marketing content and manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
 ## Upload marketing materials, set up legal information, identify the support team, and set up lead management
 After you've been registered as a publisher on the Cloud Partner Portal, you can create your new offer, upload a marketing summary, a description of your solution, and other marketing materials, and set up lead management.

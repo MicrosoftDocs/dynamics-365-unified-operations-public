@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: CustOpenInvoicesListPage, CustInvoiceJournal, SalesTable, ERSolutionTable  
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 
 ---
-# Run formats to use Document Management files in ER output
+# ER Use Document Management files in format outputs (Part 4: Run format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

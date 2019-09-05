@@ -5,7 +5,7 @@ title: Post jobs to external career sites from Attract
 description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -29,34 +29,17 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to external career sites from Attract
+# Post jobs to Broadbean
 
 [!include [banner](../includes/banner.md)]
 
-You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
+Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean. After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.
+
+Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers various products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
+
+If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
 
 ## Post jobs to Broadbean
-
-Before you can post jobs to Broadbean, you must configure the Broadbean integration.
-
-> [!NOTE]
-> - To post jobs to external sites, you must have the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - This feature is currently in preview. If you want to try it, you must [turn it on in the Attract admin settings](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
-
-### Configure Broadbean integration
-
-1. Sign in to Attract as an admin.
-2. Select the **Settings** button (the gear symbol) in the upper-right corner of the page, and then select **Admin center**.
-3. On the **Job board settings** tab, in the **Enable Broadbean integration** section, turn on the integration.
-4. Contact Broadbean, and enter your information in **Username, Client ID, Encryption Token**.
-
-> [!WARNING]
-> Your Broadbean credentials are sensitive and confidential. Therefore, store and share them responsibly. Anyone who has an Administrator role in Attract can view these credentials.
-
-> [!NOTE]
-> Microsoft and Attract aren't involved in creating and maintaining these values. It's your responsibility to keep them up to date in Attract and to work with Broadbean to resolve any issues that involve your credentials.
-
-### Post a job to Broadbean
 
 After Broadbean has been turned on, recruiters and admins can post a job to it. You must have an apply URL for the job.
 
@@ -84,7 +67,7 @@ After Broadbean successfully completes the posting, the **Postings** section of 
 After you post a job to Broadbean, you can view it from Attract.
 
 1. In Attract, open the job that you want to view on Broadbean.
-2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
+2. On the **Postings** tab, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
 
 The Broadbean job posting appears in a new window.
 
@@ -111,10 +94,16 @@ You can remove a job posting from Broadbean as you require.
 
 After Broadbean removes the job, the Broadbean item in Attract has a **Post Now** button. The presence of this button indicates that the job has been removed and can be posted again.
 
-### Troubleshoot the Broadbean integration
+### Troubleshoot job posting to Broadbean
 
 If you're having trouble posting a job to Broadbean, try these steps.
 
 1. Verify that the Broadbean credentials that you entered in Attract are valid and correct.
 2. If the credentials are valid and correct, contact [Broadbean support](https://www.broadbean.com/resources/support/).
-3. If the issue persists, contact [Microsoft support](./talent-support.md#talent-support--attract-and-onboard).
+3. If the issue persists, contact [Microsoft support](./talent-support.md).
+
+## See also
+
+[Create jobs](./creating-jobs-attract.md)
+
+[Enter settings for external job boards](./attract-admin-job-board-settings.md)

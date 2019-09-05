@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install BaseX for AppChecker
+title: Install BaseX for Application Checker
 description: This topic explains how to install and set up BaseX in a developer environment.
 author: AndreasHassing
 manager: AnnBe
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Install BaseX for AppChecker
+# Install BaseX for Application Checker
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-AppChecker depends on an installation of BaseX to store and query abstract syntax trees that the X++ compiler generates. This topic explains how to install and set up BaseX in a developer environment.
+Application Checker depends on an installation of BaseX to store and query abstract syntax trees that the X++ compiler generates. This topic explains how to install and set up BaseX in a developer environment.
 
 The sections of this topic should be completed in the order that they appear in.
 
@@ -134,4 +134,4 @@ By default, BaseX is configured to use a maximum of about 1200 megabytes (MB) of
     Leave the rest of the script unchanged.
 
 > [!NOTE]
-> You don't have to start the BaseX server, because AppChecker will use the standalone executable file for storage and queries.
+> You don't have to start the BaseX server, because Application Checker will use the standalone executable file for storage and queries.

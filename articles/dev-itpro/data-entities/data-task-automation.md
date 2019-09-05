@@ -5,7 +5,7 @@ title: Data task automation
 description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
@@ -34,6 +34,8 @@ Data task automation in Microsoft Dynamics 365 for Finance and Operations lets y
 
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
+
+> The user who executes data task automation must be in the same tenant as the Finance and Operations environment and LCS project.
 
 We recommend the following approach for data task automation.
 
@@ -150,7 +152,6 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |                   | \<PreventUploadWhenZeroRecords\> | 1..1                |           | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Export*. |
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
 |                   | \<LegalEntity\>                  | 1..1                |           | This is used to specify the legal entity in which the import/export job must be executed. |
-|                   | \<ConfigurationOnly\>            | 1..1                |           | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No. |
 |                   | \<PackageAPIExecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
 |                   | \<PackageAPIOverwrite\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
 |                   | \<PackageAPIReexecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |

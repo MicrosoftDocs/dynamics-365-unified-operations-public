@@ -5,7 +5,7 @@ title: Configure address books
 description: Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization. 
 author: kfend
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DirAddressBook, DirAddressBookTeam   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -36,12 +36,12 @@ The demo data company used to create this task is USMF. This recording is intend
 
 
 ## Configure address books
-1. Go to Organization administration > Global address book > Address books.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Description field, type a value.
-5. Click Save.
+1. In the **Navigation pane**, go to **Modules > Organization administration > Global address book > Address books**.
+2. Click **New**.
+3. In the **Name** field, type a value.
+4. In the **Description** field, type a value.
+5. Click **Save**.
 6. In the list, find and select the desired record.
 7. Click the arrow to add the selected available teams to the address book.
-8. Click Save.
+8. Click **Save**.
 

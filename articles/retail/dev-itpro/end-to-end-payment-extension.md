@@ -3,7 +3,7 @@
 
 title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
-author: 
+author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -49,8 +49,8 @@ The following illustration shows a high-level overview of the payment terminal i
 
 This topic describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
 
-- **[Write a payment connector](#Write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
-- **[Write a payment processor](#Write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
+- **[Write a payment connector](#write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
+- **[Write a payment processor](#write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
 
 ## Write a payment connector
 This section describes how to write a new payment connector.

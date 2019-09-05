@@ -5,7 +5,7 @@ title: AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -111,8 +111,8 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>General budget reservations</td>
-<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
-<td>Not implemented</td>
+<td>Thw General budget reservations document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes.</td>
+<td>Implemented in version 8.1</td>
 </tr>
 <tr>
 <td><strong>Graphics</strong> tab on the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> pages</td>

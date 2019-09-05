@@ -5,7 +5,7 @@ title: Maintenance mode
 description: This topic provides information about maintenance mode in Microsoft Dynamics 365 for Finance and Operations. Maintenance mode is a system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,18 +41,26 @@ This topic provides information about maintenance mode in Microsoft Dynamics 365
 ## Turn maintenance mode on and off on sandbox and production environments through Lifecycle Services 
 You can now turn maintenance mode on and off directly through Lifecycle Services (LCS) on your sandbox and production environments. Refer to the following steps to do this:
 
-1. Go to the environment details page and on the **Maintain** menu and click **Configure Maintenance Mode**. This menu item will display for customers added to the preview.
+1. Go to the environment details page and on the **Maintain** menu, click **Enable Maintenance Mode**. 
 2. In the slider, set **Turn maintenance mode on** for the environment and select **Confirm**.
 3. A servicing operation will begin and your system  will go into maintenance mode.
 4. On completion, the environment state will be **In Maintenance**. At this point, only the system administrator will have access to the environment.
-5. After you are done making system-wide changes, you can turn off maintenance mode by clicking **Disable Maintenance Mode** in the environment updates section.
+5. After you are done making system-wide changes, you can turn off maintenance mode by clicking **Disable Maintenance Mode** under the **Maintain** menu.
 6. This will start a servicing operation that takes your environment out of maintenance mode. You can see the progress of the operation in the environment details page.
 7. After this is complete, your environment goes back to the **Deployed** state. Now all users can sign in to the environment.
 8. You can check the environment history page to see when the maintenance mode was turned on or turned off. To get to the environment history page, select **History** and **Environment changes** on the environment details page.
 
 Turning maintenance mode on and off for your sandbox and production environment is very similar to a servicing operation. If turning maintenance mode on or off fails, you will see options such as **Resume**, **Rollback**, and **Abort**. You also have the option to **download the logs** to troubleshoot why the operation failed.
 
-## Turn maintenance mode on and off in DevTest/Demo environments and VHD-based hosted environments
+## Turn maintenance mode on and off in DevTest/Demo environments hosted in a Microsoft subscription
+1. Establish an RDP connection to the developer machine.
+2. On the developer machine, sign in to SQL Server by using the credentials for the axdbadmin user from LCS. Then switch to the AXDB database, and run the following command.
+      update SQLSYSTEMVARIABLES SET VALUE = 1 where PARM = 'CONFIGURATIONMODE'
+3. Restart the **World Wide Web Publishing Service** to reset IIS.
+4. After the service is restarted, the system will be in maintenance mode.
+5. When you've completed your maintenance mode activities, repeat steps 2 and 3, but set the value to 0 in step 2.
+
+## Turn maintenance mode on and off in DevTest/Demo environments and VHD-based environments hosted in customers' subscription
 
 You can turn on maintenance mode locally by running the following command. 
 
@@ -72,6 +80,8 @@ The following table describes the parameters that are used in this command.
 | --sqluser                   | Use this parameter to specify the SQL Server user. You should use **AOSUser**.                                    |
 | --sqlpwd                    | Use this parameter to specify the SQL Server password.                                                            |
 | --isinmaintenancemode       | Use this parameter to turn configuration mode on or off. Use **true** to turn it on and **false** to turn it off. |
+
+## Enable (or disable) configuration keys
 
 After the instance of Finance and Operations Application Object Server (AOS) is restarted, the system will be in maintenance mode. You can then enable configuration keys, as shown in the following screenshot. 
 

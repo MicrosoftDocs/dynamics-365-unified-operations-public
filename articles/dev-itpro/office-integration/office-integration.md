@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Office integration concepts and features
+title: Office integration overview
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/18/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25511
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Office integration concepts and features
+# Office integration overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -99,100 +99,6 @@ To retrieve the resulting workbook, click **Create workbook** in the app bar.
 
 Click **View related form** to see the data that the entity exposes. This button is only enabled for entities that have a **FormRef** property value.
 
-## Export API
-### The Open in Microsoft Office menu and static exports
-
-The **Open in Microsoft Office** menu is available on any page that has a data source. The **Open in Microsoft Office** menu provides three types of options:
-
--   **Open in Excel** options that are automatically added for entities and entity-based templates that share the same root data source as the current page. These options make it easier to read data into Excel and publish data changes back to the OData services for those entities.
--   **Open in Excel** options that are manually added via the Export API. These options can be custom-generated exports or custom template exports.
--   **Export to Excel** options that are automatically added for all the visible grids on the page. These options are static exports of data from a grid.
-
-### Export API
-
-The Export API is used on a page to provide custom export options for that page. The Export API consists of three parts that let a developer perform the following tasks:
-
--   Provide a set of custom export options that appear on the **Export** menu on a page.
--   Provide the context for a custom-generated export.
--   Provide the template for a custom template export.
-
-### Custom-generated exports
-
-To provide a custom-generated export, implement the ExporttoExcelIGeneratedCustomExport interface. Here is an example.
-
-    public class FMCustomer extends FormRun implements ExportToExcelIGeneratedCustomExport
-
-Add an export option by implementing the **getExportOptions** method and adding an export option to the list that is returned. Here is an example.
-
-```
-    public List getExportOptions()
-    {
-        List exportOptions = new List(Types::Class); 
-        ExportToExcelExportOption exportOption = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomGenerated);
-        exportOption.setDisplayNameWithDataEntity(tablestr(FMCustomerEntity));
-        exportOptions.addEnd(exportOption); 
-        return exportOptions;
-    }
-```
-
-Provide the export context by implementing the **getDataEntityContext** method and returning an **ExportToExcelDataEntityContext** for the appropriate **exportOption** after the **ExportToExcelExportOption.id()** method is checked. The context specifies the data entity and fields to include in the workbook that is generated. Here is an example. 
-
-```
-    public ExportToExcelDataEntityContext getDataEntityContext(ExportToExcelExportOption _exportOption)
-    {
-        ExportToExcelDataEntityContext context = null;
-        if (_exportOption.id() == ExportToExcelExportOption::DefaultId)
-        {
-            context = ExportToExcelDataEntityContext::construct(tablestr(FMCustomerEntity), tablefieldgroupstr(FMCustomerEntity, AutoReport));
-        }
-        return context;
-    }
-```
-
-### Custom template exports
-
-To provide a custom template export, implement the **ExportToExcelITemplateCustomExport** interface. Here is an example.
-
-```
-    public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
-```
-
-Add an export option by implementing the **getExportOptions** method and adding an export option to the list that is returned. Here is an example.
-
-```
-    public List getExportOptions()
-    {
-        List exportOptions = new List(Types::Class);
-        //Other options...
-        ExportToExcelExportOption exportOption2 = ExportToExcelExportOption::construct(ExportToExcelExportType::CustomTemplate, int2str(2));
-        exportOption2.displayName("Analyze rentals");
-        exportOptions.addEnd(exportOption2);        
-        return exportOptions;
-    }
-```
-
-Provide the export template by implementing the **getTemplate** method and returning a **System.IO.Stream** for the appropriate **exportOption** after the **ExportToExcelExportOption.id** method is checked. Templates can be stored as Application Object Tree (AOT) resources and retrieved at run time by using the **Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream** method. Here is an example.
-
-```
-    public System.IO.Stream getTemplate(ExportToExcelExportOption _exportOption)
-    {
-        System.IO.Stream stream = null;
-        if (_exportOption.id() == int2str(2))
-        {
-            stream = Microsoft.Dynamics.Ax.Xpp.MetadataSupport::GetResourceContentStream(resourcestr(FMRentalEditableExportTemplate));
-        }
-        return stream;
-    }
-```
-
-You must also implement the **updateTemplateSettings** method to satisfy the interface. Eventually, this method will be used to provide filtering information, but that capability is still under development. Here is an example.
-
-```
-    public void updateTemplateSettings(ExportToExcelExportOption _exportOption, Microsoft.Dynamics.Platform.Integration.Office.ExportToExcelHelper.SettingsEditor _settingsEditor)
-    {
-    }
-```
-
 ## Document management
 Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through the application and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
 
@@ -214,7 +120,7 @@ A preview for supported file types is provided on the **Preview** FastTab. Basic
 
 #### What Office 365 licenses are available?
 
-There are lots of [Office 365 license options](https://products.office.com/en-us/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
+There are lots of [Office 365 license options](https://products.office.com/business/compare-office-365-for-business-plans). You should select the license that makes sense for your organization.
 
 #### After purchasing an Office 365 license, what needs to be done to set up SharePoint storage for attachments?
 

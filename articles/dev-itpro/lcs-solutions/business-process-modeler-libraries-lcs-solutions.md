@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196953
@@ -49,7 +49,7 @@ There are two ways to create a BPM library. You can create a new library that ha
 2.  To create a new library, right-click any library, and then, in the lower-left corner of the window, select **Create**. To copy an existing library, right-click that library, and then, in the lower-left corner of the window, select **Copy**.
 
     [![Location of the Copy button](./media/bpm_03.png)](./media/bpm_03.png)
-=======
+
     -   **Global libraries** – Cross-industry standard business processes. [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  Enter a name for the library.
@@ -137,8 +137,6 @@ Task recordings can be played as task guides. Task guides are used to guide user
 5.  Follow the steps in the task guide. If you select **Unlock**, you can work without following the task guide.
 6.  When you've finished, select **Stop Task guide**.
 
-
-Additional resources
---------
+## Additional resources
 
 [Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)

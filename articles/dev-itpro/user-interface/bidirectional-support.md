@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104543
@@ -58,10 +58,10 @@ When you evaluate the examples in this article, remember that, regardless of the
 **English  Arabic  English  Arabic**
 
 ## English and Arabic/Hebrew text together: Bidirectional issues
-The visual presentation (glyphs) of English, Arabic, and Hebrew characters on the corresponding keyboards clearly differ. However, those three keyboards also share some symbols. These symbols include numerals, and formatting characters such as parentheses, brackets, and underscores. According to the Unicode bidirectional algorithm, when these characters are used in a bidirectional string, their RTL/LTR orientation depends on **the context of the characters that surround them**. From the Unicode standard (<http://www.unicode.org/versions/Unicode5.1.0/>): 
+The visual presentation (glyphs) of English, Arabic, and Hebrew characters on the corresponding keyboards clearly differ. However, those three keyboards also share some symbols. These symbols include numerals, and formatting characters such as parentheses, brackets, and underscores. According to the Unicode bidirectional algorithm, when these characters are used in a bidirectional string, their RTL/LTR orientation depends on **the context of the characters that surround them**. From the [Unicode standard](https://www.unicode.org/versions/Unicode5.1.0/): 
 
 > [!NOTE]
-> You can find the Unicode display algorithm at <http://www.unicode.org/reports/tr9/>. (Section 3.3.4 of the algorithm describes how to position neutrals.)
+> You can find the Unicode display algorithm at <https://www.unicode.org/reports/tr9/>. (Section 3.3.4 of the algorithm describes how to position neutrals.)
 
 -   Characters that have a weak bidirectional type determine their directionality according to their proximity to other characters that have strong directionality.
 -   Characters that have a neutral bidirectional type determine their directionality from either the surrounding strong text or the embedding level.
@@ -123,7 +123,8 @@ Numbers are read from left to right in Arabic and Hebrew. “Item” numbers, re
 
 **Recommendation:** None of the off-the-shelf controls provide the requested behavior. One alternative is to identify fields that must allow for this directional formatting and flag those fields as LTR for data input (right-aligned for display purposes). The program can't automatically determine that a field must have this behavior. Therefore, if we expose an RTL/LTR flag, a customizer can modify targeted fields for the desired behavior. Although this approach enables this specific scenario, it's important to understand that, if you extend the scenario by using characters in a combination of RTL and LTR languages, you will introduce other issues. Another alternative is to educate users about the fundamental behavior when underscore characters and numbers are used together. When underscore characters and numbers are required, users can then use a workaround to obtain the desired display behavior. 
 
-**Note:** The underscore character doesn't present an issue when you combine English and RTL languages (pattern: RTL\_LTR\_RTL). Therefore, if you force a control to LTR when the input includes numbers/text/underscore characters, the behavior won't be as expected. Users will have to manually reposition the cursor after each use of an underscore when they type RTL text. However, the behavior will be as expected for the use of numbers/text/underscore characters. 
+> [!NOTE]
+> The underscore character doesn't present an issue when you combine English and RTL languages (pattern: RTL\_LTR\_RTL). Therefore, if you force a control to LTR when the input includes numbers/text/underscore characters, the behavior won't be as expected. Users will have to manually reposition the cursor after each use of an underscore when they type RTL text. However, the behavior will be as expected for the use of numbers/text/underscore characters. 
 
 **Hebrew:** קשגכ\_english\_יקנקרק 
 

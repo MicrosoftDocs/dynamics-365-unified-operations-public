@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Security and role management in Attract
+# Set user permissions
 
 [!include[banner](../includes/banner.md)]
 
@@ -75,6 +75,16 @@ Any user who has a Microsoft Azure Active Directory (Azure AD) account in the or
 
 Users who are assigned to the Read-only role have read-only access to all data in the Attract environment. However, they can't create or edit any data.
 
+## Find out which roles you have
+
+1.  In Attract, click the question mark (**?**) in the top right corner of the page.
+
+2.  Click **About**.
+
+    You will see which roles you have for Attract in the window that appears:
+
+    ![View your Attract license type](media/attract-license-types.png)
+    
 ## Delegated roles
 
 For each job that they are on the hiring team for, recruiters and hiring managers can designate one or more delegates for themselves. However, they can't designate delegates for other people on the hiring team.

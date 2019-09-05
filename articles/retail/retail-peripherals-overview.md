@@ -160,13 +160,13 @@ The **Windows** device type is used for printers only. When a Windows printer is
 
 ### Network
 
-Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows application or through the IIS hardware station for other Modern POS clients.
+Network-addressable cash drawers, receipt printers, and payment terminals can be used over a network, either directly through the Interprocess Communications (IPC) hardware station that is built into the Modern POS for Windows and Modern POS for Android applications or through the IIS hardware station for other Modern POS clients.
 
 ## Hardware station deployment options
 
 ### IPC (built-in)
 
-The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows application. To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application. Then create a hardware station of the **Dedicated** type for the store where the register will be used. When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use. If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities. Modern POS can also use the IPC hardware station to communicate directly with network peripherals.
+The Interprocess Communications (IPC) hardware station is built into the Modern POS for Windows and Modern POS for Android application. To use the IPC hardware station, assign a hardware profile to a register that will use the Modern POS for Windows application. Then create a hardware station of the **Dedicated** type for the store where the register will be used. When you start Modern POS, the IPC hardware station will be active, and the POS peripherals that have been configured will be ready to use. If you temporarily don't require the local hardware for some reason, use the **Manage hardware stations** operation to turn off the hardware station capabilities. Modern POS can also use the IPC hardware station to communicate directly with network peripherals.
 
 ### IIS
 
@@ -194,7 +194,11 @@ The network designation for devices in the hardware profile enables cash drawers
 
 You can specify IP addresses for network peripherals in two places. If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself. In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station. To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station. For hardware stations that have only network devices, you don't have to deploy the hardware station itself. In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.
 
-#### Cloud POS, Modern POS for iOS, and Modern POS for Android
+#### Modern POS for Android
+
+As of Dynamics 365 for Retail version 8.1.3, the Modern POS for Android application includes a built-in IPC hardware station. This hardware station supports communicating with network printers and payment connectors. For more information, visit the [Hybrid app for Android docs article](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### Cloud POS and Modern POS for iOS
 
 The logic that drives physically connected and network-addressable peripherals is contained in the hardware station. Therefore, for all POS clients except Modern POS for Windows, an IIS hardware station must be deployed and active to enable the POS to communicate with peripherals, regardless of whether those peripherals are physically connected to a hardware station or addressed over the network.
 
@@ -227,7 +231,7 @@ The following table shows the topologies and deployment scenarios that are suppo
 |-------------|----------------------|----------------------|
 | Windows app | Yes                  | Yes                  |
 | Cloud POS   | No                   | Yes                  |
-| Android     | No                   | Yes                  |
+| Android     | Yes                  | Yes                  |
 | iOS         | No                   | Yes                  |
 
 ### Network peripherals
@@ -238,7 +242,7 @@ Network peripherals can be supported directly through the hardware station that 
 |-------------|----------------------|----------------------|
 | Windows app | Yes                  | Yes                  |
 | Cloud POS   | No                   | Yes                  |
-| Android     | No                   | Yes                  |
+| Android     | Yes                  | Yes                  |
 | iOS         | No                   | Yes                  |
 
 ## Supported device types by hardware station type
@@ -299,7 +303,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -310,7 +314,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -378,7 +382,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Windows driver
-<blockquote>NOTE: For Windows printers on a network, the user of the hardware station must have permission to access the printer.</blockquote>
+<p><strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</p>
 </li>
 <li>Network</li>
 </ul>
@@ -408,7 +412,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -473,7 +477,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Windows driver
-<blockquote>NOTE: For Windows printers on a network, the user of the hardware station must have permission to access the printer.</blockquote>
+<p><strong>Note:</strong> For Windows printers on a network, the user of the hardware station must have permission to access the printer.</p>
 </li>
 <li>Network</li>
 </ul>
@@ -495,7 +499,7 @@ Network peripherals can be supported directly through the hardware station that 
 <ul>
 <li>OPOS</li>
 <li>Network
-<blockquote>NOTE: Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</blockquote>
+<p><strong>Note:</strong> Only one drawer per hardware profile can be set up if <strong>Use shared shift</strong> is configured on the drawer.</p>
 </li>
 </ul>
 </td>
@@ -541,7 +545,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
-6. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
+6. Select the **1070** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 7. Install and activate Modern POS for Windows.
 8. Start Modern POS for Windows, and begin to use the connected peripheral devices.
 
@@ -665,14 +669,15 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 #### Printer
 
-| Manufacturer | Model    | Interface | Comments                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Custom    | Connected via network   |
-| Star         | mPOP     | OPOS      | Connected via Bluetooth |
-| HP           | F7M67AA  | OPOS      | Powered USB             |
+| Manufacturer | Model      | Interface | Comments                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Print | Custom    | Connected via network   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Custom    | Connected via network   |
+| Star         | mPOP       | OPOS      | Connected via Bluetooth |
+| HP           | F7M67AA    | OPOS      | Powered USB             |
 
 #### Bar code scanner
 
@@ -692,11 +697,12 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 #### Payment terminal
 
-| Manufacturer | Model | Interface | Comments                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Custom    | Requires customization of the payment connector                                |
-| VeriFone     | MX925 | Custom    | Requires customization of the payment connector; connected via network and USB |
-| VeriFone     | MX915 | Custom    | Requires customization of the payment connector; connected via network and USB |
+| Manufacturer | Model        | Interface | Comments                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Custom    | Requires customization of the payment connector                                |
+| VeriFone     | MX925        | Custom    | Requires customization of the payment connector; connected via network and USB |
+| VeriFone     | MX915        | Custom    | Requires customization of the payment connector; connected via network and USB |
+| Verifone     | See comments | Adyen     | The Adyen connector supports all devices listed [here](https://www.adyen.com/pos-payments/terminals) |
 
 #### Cash drawer
 

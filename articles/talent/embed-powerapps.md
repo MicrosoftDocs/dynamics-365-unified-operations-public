@@ -46,7 +46,7 @@ The user interface (UI) design has been changed, and Microsoft PowerApps is now 
 
 The way that PowerApps apps are embedded has been changed. PowerApps apps are now added through the personalization model. You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 for Talent.
 
-For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Any PowerApps customer who embedded apps before the change should have been upgraded to the new model.
 

@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -206,10 +206,11 @@ For more information about how to work with receipt formats, see [Receipt templa
 
 The SAF-T Cash Register configuration is available for download from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following configurations:
 
-- **Retail channel data** data model
-- **NO SAF-T Cash Register** format
+- **Retail channel data.version.1** – The data model configuration.
+- **DMM Retail channel data.version.1.6** – The data model mapping configuration.
+- **NO SAF T Cash Register.version.1.15** – The format configuration.
 
-After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the **NO SAF-T Cash Register** format.
+After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
 
 You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, you must set the new **SAF-T Cash register code** field on the following pages:
 

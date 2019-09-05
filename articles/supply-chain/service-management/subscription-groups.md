@@ -52,7 +52,7 @@ You can also complete the following tasks for all subscriptions that are attache
 
 ## See also
 
-[Subscription groups (form)](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))
+[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
 
 [Set up subscription groups](set-up-subscription-groups.md)
 

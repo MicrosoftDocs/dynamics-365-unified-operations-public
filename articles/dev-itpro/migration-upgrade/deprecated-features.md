@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,35 +44,137 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> [!NOTE]
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+
+## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### US Payroll tax updates
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are retiring tax updates for the US Payroll functionality due to low usage and enhanced functionality that is now offered via strategic integrations.  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Payroll |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2021, we plan to no longer provide tax updates to US Payroll customers. The functionality will remain in the product, however enhancements will no longer keep the functionality up to date and any product defects will be evaluated on a case-by-case basis. For more information, see [Tax updates being retired for US Payroll feature in Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### Data management staging clean up
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Does not meet the core requirements that are needed for scheduling periodic cleanup. |
+| **Replaced by another feature?**   | Yes, the Job history cleanup feature is being added to meet the scenarios holistically. |
+| **Product areas affected**         | Data management |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
+
+## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+
+### France: FEC Accounting data export in XML
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Replaced by TXT format, **French FEC audit file** is available through **General ledger** \> **Periodic tasks** \> **Data export**.
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | General ledger |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. Target timeframe for the functionality to be removed is July 2020. |
+
+
+### Legacy navigation bar
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Header alignment with other Dynamics and Office products. For more details, see [Updated navigation bar that aligns with the Office header](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Replaced by another feature?**   | Starting in Platform update 24, a restyled navigation bar that features search was introduced. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available. Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page. |
+
+
+## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
+
+
+### Legacy default action behavior
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The legacy behavior for default actions in grids results in an unexpected column having the default action link after grid columns have been reordered via personalization. The new sticky default action feature corrects this. For more details, see [Sticky default actions in grids](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Replaced by another feature?**   | Starting in Platform update 21, a feature for "sticky default actions" was introduced. This feature can be enabled on the **Client performance options** page. |
+| **Product areas affected**         | Grids in the web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, sticky default actions will be the default behavior, without a mechanism to revert to the legacy behavior. |
+
+### Legacy "is one of" filtering experience
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The "is one of" filtering experience went through a redesign in Platform update 22,with the plan for this to eventually be the only "is one of" filtering experience. |
+| **Replaced by another feature?**   | Starting in Platform update 22, an improved "is one of" filtering experience became available on the **Client performance options** page. For more information, see [Optimized is one of filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Starting in April 2020, the improved "is one of" experience will be the default behavior, without a mechanism to revert to the legacy behavior. |
+
+### Parameter to enable sales orders with multiple project contract funding sources
+Support for creating project-based sales orders where the project contract has multiple funding sources is enabled with the **Project management parameters** setting **Allow sales orders for project with multiple funding sources**. By default, this parameter is not enabled. 
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionality will always be enabled after the parameter is removed. |
+| **Replaced by another feature?**   | No. The functionality to support project-based sales orders with multiple funding sources will always be enabled.   |
+| **Product areas affected**         |The **Allow sales orders for projects with multiple funding sources** parameter will be removed. The following methods will be modified when the parameter is removed: **ctrlSalesOrderTable** method in **ProjStatusType** class, **validate** method for **ProjId** field, and **run** method in **SalescreateOrder** form. The following methods will be deprecated when the parameter is removed: **IsSalesOrderAllowedForMultipleFundingSources** in **ProjTable** table file, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** method in **ProjTable** table file, **AllowSalesOrdersForMultipleFundingSources** data field in **ProjParameters** form and **ProjParameterEntity** files, **IsAssociatedToMultipleFundingSourcesContract** private method in **ProjTable** table file. |
+| **Deployment option**              | All  |
+| **Status**                         | Deprecation is planned for the April 2020 release wave. |
+
+### Legacy workflow reports for tracking and instance status
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The legacy workflow reports for tracking and instance status are being deprecated because they are no longer referenced from the navigation. The report names are WorkflowWorkflowInstanceByStatusReport and WorkflowWorkflowTrackingReport. |
+| **Replaced by another feature?**   | The workflow history form can be used instead. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Target timeframe for the functionality to be removed is April 2020. |
 
 ## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 with platform update 25 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Standard and First release service updates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
-
 ### Deprecated APIs and potential breaking changes
+
 
 #### Deriving from internal classes is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | The compiler warning will be replaced by an error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to create a class or table that derives from an internal class/table that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | The compiler warning will be replaced by an error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time.|
+| **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
 #### Overriding internal methods is deprecated
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In releases prior to Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. Starting in Platform update 25, the compiler will display a warning message if you attempt to do this.|
-| **Replaced by another feature?**   | This warning will be replaced by a compile error in an upcoming platform update. This change is backward compatible at runtime, which means that if you are running Platform update 25 or later this can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
-| **Product areas affected**         | Visual Studio development tools. |
+| **Reason for deprecation/removal** | Before Platform update 25, it was possible to override an internal method in a derived class that is defined in another package/module. This is not a safe coding practice. As of Platform update 25, the compiler will display a warning. |
+| **Replaced by another feature?**   | This warning will be replaced by a compile error in Platform update 26. This change is backward compatible at runtime, which means that Platform update 25 or newer can be deployed on any sandbox or production environment without the need to modify custom code. This change only affects development and compile time. |
+| **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated - The warning will become a compilation error in Platform update 26. |
+| **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
+
+## Dynamics 365 for Finance and Operations 10.0.0 with platform update 24
+
+### Renaming released products 
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | When you use the **Rename primary key** function to change the ItemId of a released product, only direct foreign key references are updated. Any other references to the released product, such as from production orders, will retain the old ItemId. As a result, there could be inconsistent data that will eventually block business processes. |
+| **Replaced by another feature?**   | No. |
+| **Product areas affected**         | Product information management |
+| **Deployment option**              | All  |
+| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 10.0.0 with platform update 24. In exceptional cases, such as to recover from a previous rename of the primary key of a released product, it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
+
 
 ## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
 
@@ -108,7 +210,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Replaced by another feature?**   | This warning will be replaced by a compile error in the future.  |
 | **Product areas affected**         | Visual Studio development tools. |
 | **Deployment option**              | All. |
-| **Status**                         | Deprecated - The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
+| **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
@@ -178,7 +280,7 @@ No features have been removed or deprecated with this release. Platform update 1
 ## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -217,7 +319,7 @@ The **Cost management**, **Financial performance**, and **Retail channel perform
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product updates in Microsoft Power BI. |
-| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspackes](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Replaced by another feature?**   | The **Cost management**, **Financial performance**, and **Retail channel performance** content packs, available on the [AppSource](https://appsource.microsoft.com) site, are being replaced by analytical applications which allow for solution integrations at the database level. For more information about analytical applications, see [Embedded Power BI in workspaces](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Product areas affected**         | Cost management, Finance, and Retail                                                                                               |
 | **Deployment option**              | Cloud only (Integration with PowerBI.com is not supported in on-premises deployments.)                                                                                                            |
 | **Status**                         | Deprecated: Target timeframe for the functionality removal is Q2 2018.    |
@@ -283,7 +385,7 @@ Users can download this from the government portal.
 ## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -315,7 +417,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality.       |
-| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q4 2019.   |
@@ -1085,7 +1187,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.  |
-| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
+| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 
@@ -1172,7 +1274,7 @@ Sites Services let you build websites that extend your business processes to the
 
 ### Virtual company accounts
 
-The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
+The virtual companies feature is no longer supported in Dynamics AX. The virtual companies feature let users set up tables that could be shared by a set of companies. For a description of the feature, see [Company accounts and Virtual company accounts](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). The feature works by grouping tables into collections that are assigned to virtual companies, which are groups of existing “real” companies. Queries are created so that all the companies in the virtual company can access the data in the tables of the associated table collections.
 
 |   |  | 
 |------------|--------------------|

@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2019
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
@@ -151,6 +151,10 @@ The following table lists the available triggers and denotes whether they can be
 | PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
 | PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
+| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by clicking the ship button.|
+| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
+| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
+
 
 ## Shift triggers
 | Trigger              | Type           | Description                                             |

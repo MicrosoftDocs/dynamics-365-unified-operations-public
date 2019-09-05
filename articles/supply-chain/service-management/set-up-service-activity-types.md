@@ -51,7 +51,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## See also
 
-[Activity types (form)](https://technet.microsoft.com/en-us/library/aa583718\(v=ax.60\))
+[Activity types (form)](https://technet.microsoft.com/library/aa583718\(v=ax.60\))
 
 [Dispatch board](dispatch-board.md)
 

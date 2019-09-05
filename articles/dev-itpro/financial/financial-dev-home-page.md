@@ -17,13 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -48,3 +48,4 @@ ms.dyn365.ops.version: AX 7.0.0
 - [Financial dimension configuration for integrating applications](../financial/financial-dimension-configuration-integration.md)
 - [Activating financial dimensions](../financial/activate-financial-dimensions.md)
 - [Add the ability to look up values for financial dimensions in Microsoft Excel templates](../financial/add-dimensions-excel-templates.md)
+- [Extend the budget planning layout](../../financials/budgeting/extending-budget-planning-layout.md)

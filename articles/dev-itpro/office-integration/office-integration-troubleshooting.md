@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 04/02/2012
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,11 +57,11 @@ For more information, see the "Troubleshooting issue" section later in this topi
 
 ### How can I force an update of Office?
 
-If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates will be installed immediately.
+If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. The easiest method is to use the Office Deployment Tool to switch to the Current channel. In this case, the latest updates will be installed immediately.
 
 ### Why can't you tell me what version of Office or Excel a particular issue is fixed in?
 
-Office has many releases. These releases receive updates at different times and have different version numbers that don't correspond. Some frequently used Office versions and update methods are Click to Run (C2R) Current channel, C2R Deferred, C2R First Update Deferred, Office Insider Fast, Office Insider Slow, and MSI/MSO (install from DVD). For more information about Office versions, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page.
+Office has many releases. These releases receive updates at different times and have different version numbers that don't correspond. Some frequently used Office versions and update methods are Click to Run (C2R) Current channel, C2R Deferred, C2R First Update Deferred, Office Insider Fast, Office Insider Slow, and MSI/MSO (install from DVD). For more information about Office versions, see the [Office 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page.
 
 ### Why am I having trouble signing into the Excel Add-in?
 
@@ -107,18 +107,26 @@ For all environments, including on-premises, the Excel and Word Add-ins, and the
 
 ### Can the Excel Add-in and Word Add-in be made available to users using Centralized Deployment?
 
-Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment). 
+Yes, Centralized Deployment is supported. For more information, see [Centralized Deployment](https://docs.microsoft.com/office/dev/add-ins/publish/centralized-deployment). 
 
-The important standard values on the **App parameters** tab on the **Office App Parameters** page are:
-- App ID: "WA104379629"
-- Store: "en-US"
-- Store Type: "Office Store"
+To use Centralized Deployment, on the **App parameters** tab on the **Office App Parameters** page change the **App ID**, **Store**, and **Store Type**:
+
+- **App ID**: 61bcc63f-b860-4280-8280-3e4fb5ea7726
+- **Store**: EXCatalog
+- **Store Type**: Centralized Deployment
+
+In case a change back to Office Store is needed, the standard values are:
+- **App ID**: WA104379629
+- **Store**: en-US
+- **Store Type**: Office Store
 
 > [!NOTE]
 >- **Name**, **Version**, and **Notes** are values that provide information but they are not needed to run the Excel Add-in.
 >- These same values are also used for the Word Add-in when it is run from the Document Templates form.
 
-To use Centralized Deployment, change the **Store Type** to "Centralized Deployment" and **Store** to "EXCatalog".
+If you encounter issues with Centralized Deployment for some users, it could be one of these problems:
+-	One or more users are members in a group that is more restrictive than others
+-	The user referenced is on a different Office 365 account (such as a personal account)
 
 ## Troubleshooting issues
 
@@ -154,13 +162,11 @@ To use Centralized Deployment, change the **Store Type** to "Centralized Deploym
 
 **Explanation:** This issue is usually caused by incorrect setup of the Send As permissions for the email account. 
 
-**Fix:** You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin). Click **Users** > **Active users** > **User** > **Edit mailbox permissions** > **Send email from this mailbox**. For more information, see [Give mailbox permissions to another user in Office 365 - Admin Help](https://support.office.com/en-us/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). 
+**Fix:** You can configure Send As permissions in the Office 365 admin center (portal.office.com/Admin). Click **Users** > **Active users** > **User** > **Edit mailbox permissions** > **Send email from this mailbox**. For more information, see [Give mailbox permissions to another user in Office 365 - Admin Help](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). 
 
 The following illustration shows the setup of SMTP on the **Email parameters** page. Here, you must provide the outgoing mail server, port, user name, password, and Secure Sockets Layer (SSL) requirements. 
 
 [![SMTP settings tab on the Email parameters page](./media/smtp.png)](./media/smtp.png)
-
-The permissions SMTP user account is `serviceacct@d365forops.onmicrosoft.com1`. 
 
 > [!IMPORTANT]
 > All users must give the SMTP account Send As permissions on their email setup in Office 365. This configuration is done in the mailbox permissions in Microsoft Exchange or in the Office 365 Admin portal. The following illustration shows the setup for the Test User account, where the STMP service account is added in the **Send As** section. 
@@ -177,9 +183,9 @@ The permissions SMTP user account is `serviceacct@d365forops.onmicrosoft.com1`.
 
 **Long-term fix:** The long-term fix for this issue was put in place on May 10, 2016. The Office Add-ins now use a new Dialog API that the Office team added. 
 
-**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/en-us/office/forum/office_2016-office_install/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2?auth=1)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/en-us/office/mt465751?f=255&MSPPError=-2147217396) page. 
+**Taking advantage of the add-in updates that support AD FS:** All Office installations should be updated via **File** > **Account** > **Updates** (for click-to-run installations) or via Windows Update (for MSI installations). The AD FS Dialog API was included in the May update ([16.0.6868.2060](https://answers.microsoft.com/en-us/msoffice/forum/all/may-update-16068682060-for-office-2016-on-windows/ea082237-7ec3-4b06-895b-83490980e6d2)). For information about updates, see the [Office 365 client update channel releases](https://technet.microsoft.com/office/mt465751?f=255&MSPPError=-2147217396) page. 
 
-If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/en-us/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/en-us/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/en-us/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/en-us/library/cc303401(v=office.16).aspx). 
+If your Office build isn't updated, you might be on the deferred track ([Microsoft Office 365 ProPlus update channel option](https://technet.microsoft.com/library/mt455210.aspx)). In this case, you can [use the Office Deployment Tool to move to the Current channel](https://technet.microsoft.com/library/jj219422.aspx?f=255&MSPPError=-2147217396) or sign up for the [Office Insider program](https://products.office.com/office-insider) to help guarantee that you have the latest updates. Additionally, see [Install the latest version of Office 2016](https://dev.office.com/docs/add-ins/develop/install-latest-office-version) and [Office 2016 Deployment Guides for Admins](https://technet.microsoft.com/library/cc303401(v=office.16).aspx). 
 
 If Office updates can't be installed, the following workaround can unblock users.
 
@@ -227,6 +233,22 @@ The following URLs are accessed for authentication.
 - `https://login.windows.net`
 - `https://login.microsoftonline.com:443`
 - `https://login.microsoftonline.com`
+
+### Issue: The Excel Add-in needs an explicit sign out after encountering an AADSTS50058 "silent sign in failed" error
+
+**Issue:** When users try to sign in to the Excel Add-in after some period of inactivity, the user encounters the AADSTS50058 "silent sign in failed" error and is forced to sign out before signing back in.
+
+**Explanation:** The Excel Add-in uses Azure AD for authentication. When authentication occurs, a token is created for the user. That token has an expiration period. After the token has expired, an AADSTS50058 error will occur indicating that "silent sign in failed".
+
+**Solution:** The user needs to sign out and sign back in. We will improve this behavior in the future by automatically signing the user out to enable faster sign in.
+
+### Issue: When trying to use a document template with Open in Excel a "Record for id GUID not found" error displays
+
+**Issue:** The "Record for id GUID not found" error can display when copying a database from one environment to another. 
+
+**Explanation:** Copying the database is problematic for document templates, record attachments, and other files that are stored in Azure blob storage. When the database is copied from one environment to another, the files are not copied along with the records, so the files that the application tries to access are not found. 
+
+**Solution:** For document templates, the solution is to identify the templates that are needed and load a copy of those template files into the target environment.
 
 ## Additional resources
 

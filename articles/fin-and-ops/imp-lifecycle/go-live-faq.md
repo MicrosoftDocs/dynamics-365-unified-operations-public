@@ -5,7 +5,7 @@ title: Go-live for Finance and Operations implementation projects FAQ
 description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
 author: sshashi7
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -49,8 +49,7 @@ For a list of the prerequisites, see [Preparing for Go-live](prepare-go-live.md)
 The Go-live assessment/review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every Finance and Operations project before you can request to go live in a production environment.
 
 ## I want to request my production environment. Who do I contact for a Go-live assessment/review?
-
-If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <go-live@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can [download the Pre go-live checklist from CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops), complete it, and send it to <go-live@microsoft.com>.
+If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <d365fogl@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) page, complete it, and send it to d365fogl@microsoft.com.
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
@@ -101,13 +100,7 @@ For more information, see [Learn about automatic SQL Database backups](/azure/sq
 No. However, you can submit a database refresh service request to copy your production database to your Tier 2 and higher sandbox environment. After the copy request is completed, you can back up your sandbox environment.
 
 ## My golden configuration database is in a Tier 1 sandbox environment. How can I copy and restore it to my production environment?
-
-To copy and restore from a Tier 1 sandbox environment, follow these steps.
-
-1. Move your golden configuration database from a Tier 1 sandbox environment to a Tier 2 sandbox environment.
-2. Submit a service request to copy your golden configuration from the Tier 2 sandbox environment to the production environment.
-
-For more information, see [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md).
+To copy and restore your database, follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). 
 
 > [!NOTE]
 > If your golden configuration is in data packages, you must manually import the data packages to the production environment.
@@ -120,4 +113,4 @@ For more information, see [Apply deployable package](../../dev-itpro/deployment/
 
 ## What should I do if my production environment is down?
 
-To report a production outage, follow the process that is described in the [New process to report a production outage through Lifecycle Services](https://blogs.msdn.microsoft.com/lcs/2017/12/18/report-production-outage-through-lcs/) blog post.
+To report a production outage, follow the process described in the topic, [Report a production outage](../../dev-itpro/lifecycle-services/report-production-outage.md).

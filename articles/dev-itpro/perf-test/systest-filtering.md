@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
@@ -50,7 +50,7 @@ The **Owner** attribute, **SysTestOwner**, has also been added. This attribute w
 
 The **Test Property** attribute, **SysTestProperty**, has existed in previous releases of the platform, but wasn't fully functional. Unfortunately, the **SysTestProperty** attribute exists in the **Application Foundation** package as opposed to the other attributes which exist in the **Test Essentials** package. Because of our commitment to backward compatibility of the platform, we currently cannot move this attribute to its expected location, so your code will need a reference to the **Application Foundation** package to use it. **SysTestProperty** specifies a property and a value (two strings), and can now be used in the **Test Toolbox** window in Visual Studio. **Test Property** can be specified multiple times, and can exist on both the class and method level. **Test Property** is not available for test filtering in the Visual Studio Test Console, in line with the MSTest adaptor.
 
-For advanced filtering syntax that can be used with the Visual Studio Test Console and to review the filtering example for the MSTest framework, see [Running selective unit tests](https://docs.microsoft.com/en-us/dotnet/core/testing/selective-unit-tests). 
+For advanced filtering syntax that can be used with the Visual Studio Test Console and to review the filtering example for the MSTest framework, see [Running selective unit tests](https://docs.microsoft.com/dotnet/core/testing/selective-unit-tests). 
 
 > [!NOTE]
 > For test filtering purposes, the SysTest framework allows you to filter on **FullyQualifiedName** and **Name**.

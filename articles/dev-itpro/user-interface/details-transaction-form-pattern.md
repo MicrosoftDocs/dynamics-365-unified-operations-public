@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16281
@@ -200,8 +200,8 @@ None currently.
 
 #### AX 2012 links
 
--   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/gg886601.aspx)
--   [MSDN Details Form \[AX 2012\]](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
+-   [MSDN Details Form with Lines User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886601.aspx)
+-   [MSDN Details Form \[AX 2012\]](https://msdn.microsoft.com/library/hh397318.aspx)
 
 #### AX 2012 example
 

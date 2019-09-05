@@ -1,0 +1,94 @@
+---
+# required metadata
+
+title: Customize embedded reports in analytical workspaces
+description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
+author: TJVass
+manager: AnnBe
+ms.date: 7/08/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: PowerBIConfiguration
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 27661
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: milindav
+ms.search.validFrom: 2019-07-20
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Customize embedded reports in analytical workspaces
+
+[!include [banner](../includes/banner.md)]
+
+
+## Analytical workspaces
+
+Analytical workspaces are bundled with the application suite. Through reporting, they offer users insights into data that is based on standard business operations. The reports are generic reports that are defined by business professionals. They include metrics that are considered interesting to a wide range of users from any industry.
+
+However, in some cases, the standard reports include data that isn't relevant to all customers. More often, customers might want to access data points or calculations that are left out of the standard reports.
+
+Power users can use web-friendly design tools to customize the analytical reports that are embedded in the application. By using the free-form canvas designer, users who are familiar with the relevant business insights that are required can help make the organization successful.
+
+> [!IMPORTANT]
+> Customizations that are made to the embedded analytical reports are automatically deployed by the service and made available to other users of the system.
+
+### Important points about embedded analytical reports
+
+Although the standard reports deliver insights that are tailored to a given business persona, customizations can often maximize the value of these standard reports.
+
+Here are some important points to note about this service capability:
+
+- Customizations are limited to the report design canvas. Users can't change the definitions of report data sets.
+- Report customizations that are made to the analytical workspace apply to all users in the environment.
+- The service automatically preserves report customizations during product upgrades.
+- The Microsoft Dynamics 365 for Finance and Operations service doesn't support the export of customizations that are made to analytical workspaces.
+
+### Customize an analytical workspace
+
+To customize the embedded application solutions, a user must be a member of the System Report Editors security group. Members of this security group can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
+
+1. Sign in to Finance and Operations, and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
+
+    ![Compensation management workspace](media/compensation-management-workspace.png)
+
+2. Select the **Analytics** tab to access the workspace's embedded analytical report.
+
+    ![Analytics tab in the Compensation management analytical workspace](media/compensation-management-analytics.png)
+
+    By default, you see the standard analytical workspace solution that is packaged with your Finance and Operations application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
+
+    > [!NOTE]
+    > The analytical workspaces require a hosted Microsoft Power BI service that is available only for dedicated environments. For more information, see [Accessing Analytical Workspaces and Reports on 1Box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/).
+
+3. On the Action Pane, on the **Options** tab, in the **Power BI** group, select **Edit Analytics**.
+
+    ![Edit Analytics button](media/analytical-workspace-edit-entry.png)
+
+    The analytical workspace is opened in edit mode, and you have direct access to the Power BI web designer tools.
+
+    ![Analytical workspace report editor](media/analytical-workspace-edit-view.png)
+
+4. Use the Power BI web designer tools to customize the report canvas. The intuitive web controls let you perform typical actions such as adding and removing visuals, changing visual types, and formatting the content. You can also inspect the source of the report visualizations to make sure that decisions are based on the most relevant data that is available in the system. For more information, see [Add visualizations to a Power BI report](https://docs.microsoft.com/power-bi/visuals/power-bi-report-add-visualizations-i).
+5. After you've completed your report customizations, select the **Save** button to promote the report edits. Customizations to the report are reflected immediately in the service. Therefore, users in your organization have access to the latest innovations.
+
+## Restore the standard application solution
+
+Follow these steps to restore the analytical workspaces that are bundled with the application solution.
+
+1. In the analytical workspace, on the Action Pane, on the **Options** tab, in the **Power BI** group, select **Restore Analytics**.
+2. To view the updates to the workspace, reload the page. Either move away from the workspace and then return, or refresh your browser.
+3. In the **Compensation management** workspace, select the **Analytics** tab to access the original analytical workspace that was packaged with the application.

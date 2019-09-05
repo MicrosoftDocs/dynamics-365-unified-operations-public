@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations version 10.0.1 (April 2019)
+title: What's new or changed in Finance and Operations version 10.0.1 (April 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/29/2019
+ms.date: 04/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,24 +29,57 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.1
 
 ---
-# Preview features in Finance and Operations version 10.0.1 (April 2019)
+# What's new or changed in Finance and Operations version 10.0.1 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](whats-new-changed-10-0-1.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.1](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
 
 
 ## Enable edit for externally maintained fields
 
 Due to integration scenarios with external systems, such as the Prospect to cash integration, certain fields on Global address book and customer records were marked as externally maintained with the expectation that these values would be maintained in an external system. The **Enable edit for externally maintained fields** option has been added to the Global address book parameters (**Organization administration > Global address book > Global address book parameters**) with the default value of **No**.  If the user scenario requires these fields to be available for edit even though maintained externally, the value can be set to **Yes**.
 
+## Russian features
+
+### Journal of alcohol sales
+This functionality includes printing the journal of Alcohol retail sales in statutory format.
+
+### Electronic format of accounting reporting
+Electronic reporting configuration is now available. It allows you to generate accounting reporting in electronic format, and contains data calculated based on the configured Financial report. For more information, see [Accounting reporting in electronic format (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-accounting-reporting)
+
+You can find information about how to do the following tasks in [Financial reporting (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-financial-reports):
+- Set up financial reports.
+- Configure Electronic reporting to use the results of financial report calculations.
+- Configure electronic messages to generate the financial report and store the results.
+
+For more information about configuring printing for financial reports in Excel, see [Configure financial reports in Excel (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-excel-financial-report)
+
+### Assessed tax registers and electronic format of declaration version 5.05 (2019)
+This functionality allows you to keep technical and tax information for realty assets, calculate assessed tax registers, and generate assessed tax declaration in electronic format, applicable from the reporting for year 2019. For more information, see [Assessed tax declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-assessed-tax-declaration)
+
+### Transport tax registers and electronic format of declaration
+This functionality allows you to keep technical and tax information for vehicles, calculate transport tax registers, and generate transport tax declaration in electronic format.
+
+### Land tax registers and electronic format of declaration version 5.06 (2018)
+This functionality allows you to keep technical and tax information for ground areas, calculate land tax registers, and generate land tax declaration in electronic format, applicable from the annual reporting for year 2018.
+
+### VAT declaration in electronic format version 5.06 (2019)
+This functionality allows you to generate a VAT statement in XML format that is applicable from the reporting for year 2019.
+For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-VAT-declaration).
+
+### Sales, purchase books, and factures journals in electronic format (2019)
+This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+
 ## Regulatory updates
 For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
+## Extensibility enhancements
+
+In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1](../../dev-itpro/extensibility/extensibility-changes-10-1.md).
 
 ## Additional resources
 
@@ -54,12 +87,12 @@ For information about the regulatory updates for Finance and Operations, see [Lo
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.1, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
 
 ### Platform update 25
-Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [Preview features in Finance and Operations platform update 25 (April 2019)](whats-new-platform-25.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [What's new or changed in Finance and Operations platform update 25 (April 2019)](whats-new-platform-25.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

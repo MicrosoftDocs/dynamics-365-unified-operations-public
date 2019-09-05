@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ReverseChargeItemGroup_W, EcoResCategorySingleLookup, ReverseChargeRule_W, LedgerParameters, TaxGroupLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  

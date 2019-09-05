@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50211
@@ -39,7 +39,7 @@ This topic provides reference content for extensible control programming.
 This document describes the API, HTML, and JavaScript support for creating extensible controls.
 
 ## Examples
-This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on Github. [Extensible Control Examples on Github](http://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
+This document contains small code snippets that show how to use each API that is documented. More complete examples of finished controls that leverage many of these APIs can be found on Github. [Extensible Control Examples on Github](https://github.com/Microsoft/Dynamics-AX-Extensible-Control-Samples)
 
 ## Control block diagram
 This high-level diagram illustrates the key components of an extensible control and how they interact with each other. Your extensible control solution will contain two X++ classes that implement your control. The runtime class implements the runtime data, presentation, and behavior of your control. The build class defines how your control is displayed in Form Designer, Property Window, and Application Explorer. [![ExtensibilityArchitecture](./media/extensibilityarchitecture.png)](./media/extensibilityarchitecture.png)
@@ -94,9 +94,9 @@ The following example declares a command with the name of "SetText".
 ## Runtime: FormPropertyAttribute
 The **FormPropertyAttribute** is applied to a method in your control class, which allows an X++ method to be called as a **FormProperty** getter/setter from the control's JavaScript class. A method with this attribute applied is called a **property.** Only use the **FormPropertyAttribute** on those X++ methods which need to be accessed directly from the control’s JavaScript class. The **FormPropertyAttribute** has no effect on the behavior of the X++ method when the method is used from within X++. Every property exposes an endpoint to the browser. As such, every property should be threat modeled and tested for exploits. The underlying X++ method should be declared private so that it is not accessible from other X++ code. If other X++ code needs to access the property, then declare a separate public X++ method without the **FormPropertyAttibute,** and move the shared property logic to this method. Then call this method from the private X++ method with the **FormPropertyAttribute. This practice allows the property to perform logic that is specific to calls coming from JavaScript (such as argument type deserialization, argument validation, security validation, etc.) before executing the core shared X++ logic.** The underlying X++ method must accept and return the desired type of the property. If the desired type if an EDT, the property must accept and return the base type of the EDT. The supported property types are:
 
--   [X++ primitive types](https://msdn.microsoft.com/en-us/library/aa602290.aspx)
--   [X++ data contracts](https://msdn.microsoft.com/en-us/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (whose members are also supported types)
--   [X++ List](https://msdn.microsoft.com/en-us/library/list.aspx) (whose items are also supported types)
+-   [X++ primitive types](https://msdn.microsoft.com/library/aa602290.aspx)
+-   [X++ data contracts](https://msdn.microsoft.com/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx) (whose members are also supported types)
+-   [X++ List](https://msdn.microsoft.com/library/list.aspx) (whose items are also supported types)
 
 You supply the following arguments to the **FormPropertyAttribute** constructor:
 
@@ -124,7 +124,7 @@ private str parmText(str _value = textProperty.parmValue())
 ## Runtime: FormProperty
 ##### Behavior
 
-**FormProperty** is an X++ [derived type](https://msdn.microsoft.com/en-us/library/esd9wew8(v=vs.100).aspx) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by properties. Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
+**FormProperty** is an X++ [derived type](https://msdn.microsoft.com/library/esd9wew8(v=vs.100).aspx) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by properties. Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
 
 1.  The **FormProperty** is declared, usually right below the class declaration
 2.  The **FormProperty** is instantiated in the **new** method of the class
@@ -345,7 +345,7 @@ The following section documents the HTML attributes that are used in the control
 
 ### data-dyn-bind
 
-**data-dyn-bind**, the data binding attribute, standardizes many common DOM manipulations - such as modifying an element’s attributes, properties and CSS, or handling DOM events - through a declarative HTML-based API. The data binding attribute allows for these behaviors without requiring complex JavaScript. Using the data binding attribute rather than writing complex JavaScript can save the control developer valuable time by making things such as designing, debugging and maintaining the control much easier. However, complex JavaScript is still available when scenarios require its use. The data binding attribute binds HTML element behaviors to values supplied by the control developer. The values supplied can be simple JavaScript [variables](http://www.w3schools.com/js/js_variables.asp), JavaScript [comparison](http://www.w3schools.com/js/js_comparisons.asp) or [arithmetic](http://www.w3schools.com/js/js_arithmetic.asp) expressions, JavaScript [functions](http://www.w3schools.com/js/js_functions.asp) and JSON [objects](https://www.w3schools.com/js/js_json_objects.asp). The values supplied can also be observable variables, created using the APIs described in this document. The way in which the supplied value is bound to the HTML element is determined by the binding handler that is used with the data binding attribute. A list of all supported binding handlers is provided in this document. The data binding attribute requires the following syntax when used with any binding handler. The syntax for **data-dyn-bind** is:
+**data-dyn-bind**, the data binding attribute, standardizes many common DOM manipulations - such as modifying an element’s attributes, properties and CSS, or handling DOM events - through a declarative HTML-based API. The data binding attribute allows for these behaviors without requiring complex JavaScript. Using the data binding attribute rather than writing complex JavaScript can save the control developer valuable time by making things such as designing, debugging and maintaining the control much easier. However, complex JavaScript is still available when scenarios require its use. The data binding attribute binds HTML element behaviors to values supplied by the control developer. The values supplied can be simple JavaScript [variables](https://www.w3schools.com/js/js_variables.asp), JavaScript [comparison](https://www.w3schools.com/js/js_comparisons.asp) or [arithmetic](https://www.w3schools.com/js/js_arithmetic.asp) expressions, JavaScript [functions](https://www.w3schools.com/js/js_functions.asp) and JSON [objects](https://www.w3schools.com/js/js_json_objects.asp). The values supplied can also be observable variables, created using the APIs described in this document. The way in which the supplied value is bound to the HTML element is determined by the binding handler that is used with the data binding attribute. A list of all supported binding handlers is provided in this document. The data binding attribute requires the following syntax when used with any binding handler. The syntax for **data-dyn-bind** is:
 
     data-dyn-bind="[first binding handler]: [value to bind to]"
 
@@ -366,7 +366,7 @@ The data binding attribute is a custom HTML attribute understood by the control 
 ## HTML: Binding handlers
 ### attr
 
-The **attr** binding handler applies the supplied HTML attribute and value to the element. For a list of HTML attributes see [W3 Schools – HTML Attributes](http://www.w3schools.com/html/html_attributes.asp). The arguments are passed in as an object array. Each argument is dual-valued. The first value is the name of the attribute, and the second value is the value of the attribute.
+The **attr** binding handler applies the supplied HTML attribute and value to the element. For a list of HTML attributes see [W3 Schools – HTML Attributes](https://www.w3schools.com/html/html_attributes.asp). The arguments are passed in as an object array. Each argument is dual-valued. The first value is the name of the attribute, and the second value is the value of the attribute.
 
 -   **Name**: a string that specifies the desired name of the attribute to create.
 -   **Value or Expression:** a string that specifies the value to set on the attribute. If an expression is supplied, the value returned by evaluating the expression will be used.
@@ -395,7 +395,7 @@ The following example uses expressions and functions. However, using JavaScript 
 
 ##### Behavior
 
-Subscribes the supplied function to the click event on the element. For more information on subscribing to the click event see [jQuery – click()](http://api.jquery.com/click/).
+Subscribes the supplied function to the click event on the element. For more information on subscribing to the click event see [jQuery – click()](https://api.jquery.com/click/).
 
 ##### Arguments
 
@@ -507,11 +507,11 @@ self.yellow = $dyn.observable(true);
 
 ##### Behavior
 
-Subscribes the supplied event handler to the specified DOM event. For a list of supported DOM events, see [jQuery - Event](http://api.jquery.com/Types/#Event).
+Subscribes the supplied event handler to the specified DOM event. For a list of supported DOM events, see [jQuery - Event](https://api.jquery.com/Types/#Event).
 
 ##### Arguments
 
-For details on the arguments to the event binding handler, see [jQuery - .bind()](http://api.jquery.com/bind/). The following example subscribes to the mouseover event and shows an alert when the element is hovered.
+For details on the arguments to the event binding handler, see [jQuery - .bind()](https://api.jquery.com/bind/). The following example subscribes to the mouseover event and shows an alert when the element is hovered.
 
 ```
 // In your control’s code-behind JS file
@@ -1093,7 +1093,7 @@ console.log($dyn.label("greeting"));
 Add namespaces to all CSS class names by prepending the class name with the control’s template ID. This will prevent your control and its styles from conflicting with other controls in the client.
 
 ## Flexbox
-For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible with the Extensible Control framework. [Using CSS flexible boxes (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Please see the [public Flexbox documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) for explanations and examples of the following topics:
+For advanced layout scenarios we encourage using Flexbox. Flexbox is compatible with the Extensible Control framework. [Using CSS flexible boxes (Mozilla Developer Network)](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) Please see the [public Flexbox documentation](https://developer.mozilla.org/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes) for explanations and examples of the following topics:
 
 -   Responsive layouts
 -   Building columns and rows

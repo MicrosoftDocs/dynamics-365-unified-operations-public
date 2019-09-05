@@ -5,7 +5,7 @@ title: Configure the Warehousing app for on-premises deployments
 description: This topic describes the prerequisites for the warehousing app for on-premises deployments.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 05/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
@@ -93,7 +93,7 @@ To enable Dynamics 365 for Finance and Operations to use your AD FS application,
 ## Certificates 
 
 Make sure that the devices with the app installed have the correct certificates to access the resources. If you are using self-signed certificates, these will need to be installed on each device by importing star(AX) and AD FS to the trusted route of the computer account/user account. For more information, see [Create and export a self-signed
-certificate](https://technet.microsoft.com/en-us/library/ff710475(v=ws.10).aspx).
+certificate](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx).
 
 ## Configure the application
 
@@ -117,3 +117,5 @@ You must configure the Warehousing app on the device to connect to the Finance a
 4.  Select the **Back** button in the top-left corner of the application.
 
     The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display.
+    
+5. If you do not have a telemetry ID for the Warehouse app, you might encounter some errors. This is a known issue. The workaround is to sign in to an existing client to get a Telemetry ID. This issue will be fixed in a future release.

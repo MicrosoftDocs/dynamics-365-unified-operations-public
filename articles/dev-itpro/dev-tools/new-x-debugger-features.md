@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26801
@@ -142,7 +142,7 @@ We'll show how a singleton, called instance in the example below, can be created
         instance = new Singleton();
       }
 
-      public static Singleton Instance()
+      public static Singleton instance()
       {
         return Singleton::instance;
       }
@@ -152,7 +152,7 @@ The singleton will guarantee that only one instance of the class will ever be ca
 
     {
         …
-        Singleton i = Singleton::Instance();
+        Singleton i = Singleton::instance();
       }
 
 ## Assignment of field members inline

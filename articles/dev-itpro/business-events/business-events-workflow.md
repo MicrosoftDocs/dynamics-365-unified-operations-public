@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 07/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Platform update 24
 
 # Workflow business events
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Workflow business events are generated at various points in the processing of a workflow.   
 
@@ -75,3 +74,17 @@ There are five different categories of workflow business events. The category wi
      - These events will fire when a workflow work item is created for a user. All enabled workflow tasks and workflow approvals within a workflow instance will be represented in this category. 
      - **ID format** - "Workflow_" + Workflow name + Workflow instance ID + "_" + Workflow element name + "_WorkItem", for example "Workflow_BudgetPlanReview_000002_BudgetActivateBudgetPlanChild_WorkItem"
      - **Name format** - Workflow label + " (" + Workflow instance ID ") - " + Workflow element label, for example "Prepare department budget (000002) - Activate associated budget plan"
+
+## Completion of a work item in Flow
+Workflow business events are a good target for triggering approval flows. The **workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow.
+
+An approval or task work item can be completed in Flow using the following steps:
+- Trigger the Flow using the **when a business event occurs** trigger targeting the appropriate **workflow workitem** event.
+- Validate that the **workflow workitem**  contains a valid set of information so it is ready for completion by calling the **Validate** method on the **WorkflowWorkItems** entity. 
+- If the workitem is not ready for completion, then send a notification to the assigned user to let them know that there is a workitem that needs their attention.
+- If the workitem is ready for completion, then request a response from the assigned user by sending the available response options to the user.
+- After a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
+
+Templates for work item completion in Microsoft Flow will be available soon and a link will be provided here for easy reference.
+
+For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).

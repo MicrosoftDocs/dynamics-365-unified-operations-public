@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General ledger and Financial reporting home page
+title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
 author: ShylaThompson
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65431
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# General ledger 
+# General ledger overview
 
 [!include [banner](../includes/banner.md)]
 

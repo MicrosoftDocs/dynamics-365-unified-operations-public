@@ -45,7 +45,7 @@ View and modify the list of stage reasons for a service order. Use stage reasons
 
 ## See also
 
-[Stage reasons (form)](https://technet.microsoft.com/en-us/library/aa582897\(v=ax.60\))
+[Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))
 
   
 

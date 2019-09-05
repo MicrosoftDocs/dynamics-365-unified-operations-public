@@ -5,7 +5,7 @@ title: Embed PowerApps apps
 description: This topic describes how to embed PowerApps into the Finance and Operations client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
-ms.date: 09/04/2018
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: sericks
 ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -127,12 +127,13 @@ public final class ClassTest_Extension
     public static boolean isPowerAppPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
+    
     public static boolean isPowerAppTabPersonalizationEnabled(str pageName)
     {
         var result = next isPowerAppTabPersonalizationEnabled(pageName);
-        return true;
+        return result;
     }
 }
 ```

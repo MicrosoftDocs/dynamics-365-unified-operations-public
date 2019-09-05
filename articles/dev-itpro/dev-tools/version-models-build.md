@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26731
@@ -59,7 +59,7 @@ All version numbers are in .NET assembly format. They consist of four numbers th
 As code is updated, the build is used to produce new packages that can be deployed to environments. Microsoft Azure DevOps tracks the changes that have been included in each build since the previous build. When the version number of the build is included in the models that are produced, it provides end-to-end traceability of the code changes that are available in a specific environment. You can find the build number and then review the changes that are included in that build in Azure DevOps. For customers and partners that use builds on different branches, or that use different build definitions for nightly builds, gated check-in builds, or deployment builds, each build can have a different versioning scheme. This approach helps differentiate the model metadata in the deployable packages and tie them back to their originating build definition.
 
 ## Setting up versioning
-For build definitions that are created by Platform update 6 or newer deployments, the task to include build version in models is automatically added and active. The default build number of a new build definition in Azure DevOps consists of the year, month, and day, and the incremental number of the build for that day. For more information about build numbers in Azure DevOps, and the options that are available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) on the Microsoft Visual Studio docs site.
+For build definitions that are created by Platform update 6 or newer deployments, the task to include build version in models is automatically added and active. The default build number of a new build definition in Azure DevOps consists of the year, month, and day, and the incremental number of the build for that day. For more information about build numbers in Azure DevOps, and the options that are available, see [Build definition options](https://www.visualstudio.com/docs/build/define/options#Buildnumberformat) on the Microsoft Visual Studio docs site.
 
 The automated build will apply the build version number to the models that are built.
 

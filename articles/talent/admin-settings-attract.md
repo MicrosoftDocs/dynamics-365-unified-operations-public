@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Admin settings in Attract
-description: This topic explains how to enable feature functionality for organizations and users in Attract.
+title: Configure company information in Microsoft Dynamics 365 for Talent - Attract
+description: This topic explains how to configure company information and branding for Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 12/07/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Admin settings in Attract
+# Configure company information
 [!include[banner](../includes/banner.md)]
 
 The Admin center in Microsoft Dynamics 365 for Talent: Attract contains configuration settings, integration options, and setup options for the Attract application.

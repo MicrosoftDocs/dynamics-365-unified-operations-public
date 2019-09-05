@@ -44,13 +44,13 @@ You can display product recommendations on your POS device when you use Microsof
 ## Open Layout designer
 
 1. Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
-2. Use the Quick Filter to find the screen that you want to add the control to. For example, filter on the **Screen layout ID** field using a value of 'F2CP16:9M'.
-3. In the list, find and select the desired record. For example, select 'Name: F2CP16:9M Screen Layout ID: F2CP16:9M'.
+2. Use the Quick Filter to find the screen that you want to add the control to. For example, filter on the **Screen layout ID** field using a value of **F2CP16:9M**.
+3. In the list, find and select the desired record. For example, select **Name: F2CP16:9M Screen Layout ID: F2CP16:9M**.
 4. Click **Layout designer**.
 5. Follow the prompts to launch the layout designer. When prompted for credentials, enter the same credentials that were in use when the Layout designer was launched from **Screen layouts** page.
 6. When you log in, a page similar to the one below appears. The layout will be different depending on the customizations that were made for your store.
 
-    [![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Layout designer](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## Choose a display option
 
@@ -63,11 +63,11 @@ There are two configurations options available. Choose the option that works bes
 
 1. Reduce the height of the transaction lines details area so that it is the same height as the customer panel to its left.
 
-    [![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Height of the transaction lines details area reduced](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. From the menu on the left, drag and drop the recommendations control to between the transaction line details area and the button grid in the center bottom of the transaction screen. Resize the control so it fits in that space.
 
-    [![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Recommendations control added to the layout](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Click the **X** to save and exit Layout designer.
 4. In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
@@ -79,13 +79,13 @@ There are two configurations options available. Choose the option that works bes
 1. Right-click in the empty space below the last tab on the button grid located on the right side of the page.
 2. Click **Customize**.
 
-    [![pic-5](./media/pic-5.png)](./media/pic-5.png)
+    [![Customization - Tab control dialog box](./media/pic-5.png)](./media/pic-5.png)
 
 3. Click **New tab**.
 4. Find the new tab that you just added. You may need to scroll down.
 5. In the **Contents** drop-down, select **Recommended products**.
 
-    [![pic-6](./media/pic-6.png)](./media/pic-6.png)
+    [![Selecting Recommended products in the Contents field](./media/pic-6.png)](./media/pic-6.png)
 
 6. In the **Label** field, type a name for the recommendations tab. For example, type 'Recommended products'.
 7. In the **Image** field, select the image to appear on the tab.

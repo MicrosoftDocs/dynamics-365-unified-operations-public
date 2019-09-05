@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Project Service Automation
+title: Project Service Automation overview
 description: This topic provides information about the Project Service Automation to Finance and Operations integration solution. This integration solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 for Finance and Operations and Microsoft Dynamics 365 for Project Service Automation via Common Data Service.
 author: KimANelson
 manager: AnnBe
-ms.date: 06/29/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Project Service Automation
+# Project Service Automation overview
 
 [!include[banner](../includes/banner.md)]
 
@@ -80,4 +80,4 @@ To use the Project Service Automation to Finance and Operations integration solu
 
 ## Install the Project Service Automation to Finance and Operations integration solution in your Project Service Automation instance
 
-Download the Project Service Automation to Finance and Operations integration solution from [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57016), and follow the instructions that are included with the solution.
+Download the Project Service Automation to Finance and Operations integration solution from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=57016), and follow the instructions that are included with the solution.

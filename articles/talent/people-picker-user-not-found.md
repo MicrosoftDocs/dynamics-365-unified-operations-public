@@ -42,9 +42,9 @@ Certain valid users in Microsoft Azure Active Directory (Azure AD) for the tenan
 
 Certain user types are not currently supported in the Attract and Onboard applications. Verify that the user is not an Azure AD Business to Business (B2B) guest user. "User Type" information can be found in the Azure Active Directory blade on the Azure portal.
 
-For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+For more information about Azure B2B, see [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+For non-B2B users, there are certain users who may have an incomplete "User Type" property on the **User** object. This can be verified and fixed using the Azure AD Powershell module. For more information, see [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## Resolution
 

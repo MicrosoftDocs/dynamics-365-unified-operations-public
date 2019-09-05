@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27231
@@ -123,7 +123,7 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
     > [!NOTE]
     > You must specify **Tax** as the posting layer for the selected value model on the **Value models** page.
 
-3. Create a depreciation group. For more information, see [Set up a depreciation group](rus-depreciation-setup.md##set-up-depreciation-groups).
+3. Create a depreciation group. For more information, see [Set up a depreciation group](rus-depreciation-setup.md#set-up-depreciation-groups).
 4. In the **Depreciation group** and **Name** fields, enter the depreciation group and name.
 5. In the **Depreciation method** field, select **Tax nonlinear**.
 6. In the **Lifetime** field, enter the maximum service life during which depreciation is accrued for the fixed assets in the depreciation group. The value is expressed in months.

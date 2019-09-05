@@ -85,7 +85,7 @@ In the first scenario, **Best price and compound within priority, never compound
 
     The following image shows a concise view of how the pricing algorithm loops through the discounts across various priorities. Note that this diagram applies for both the discount concurrency control models, but the difference is in the way in which the pricing algorithm treats discounts at different priorities. This difference is elaborated using the following example.
 
-    ![Simplified pricing logic](./media/Simplified%20pricing%20logic.png "Simplified pricing logic")
+    ![Simplified pricing logic](./media/Simplified-pricing-logic.png "Simplified pricing logic")
 
 2. Within priority 10, the retail pricing engine first considers the discounts that have the concurrency mode set to **Exclusive**. If there is more than one exclusive discount applicable to the product, then the best exclusive discount is applied. When a product gets an exclusive discount, no other discounts can be applied to this product at any priority.
 
@@ -104,7 +104,7 @@ At this point, all the discounts at the highest priorities have been evaluated.
 
 The above logic is showcased in the following image, which shows the detailed view of how the pricing algorithm loops through the discounts across various priorities. Note that this diagram applies for both the discount concurrency control models, but the difference is in the way in which the pricing algorithm treats discounts at different priorities.
 
-![Detailed pricing logic](./media/Detailed%20pricing%20logic.png "Detailed pricing logic")
+![Detailed pricing logic](./media/Detailed-pricing-logic.png "Detailed pricing logic")
 
 In this example, let's assume the following setup.
 

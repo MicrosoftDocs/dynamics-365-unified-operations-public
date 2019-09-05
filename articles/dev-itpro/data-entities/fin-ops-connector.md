@@ -5,7 +5,7 @@ title: Finance and Operations Connector
 description: This topic provides information about the Finance and Operations Connector for Microsoft Flow and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/31/2019
+ms.date: 08/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,20 +29,19 @@ ms.dyn365.ops.version: 2019-02-28
 # Finance and Operations Connector
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
-The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with an instance of Dynamics 365 for Finance and Operations. An integration can use the available actions to affect a create, update, or delete operation in the target instance. 
+The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with an instance of Dynamics 365 for Finance and Operations. An external application can use the available trigger and actions to integrate with Finance and Operations.
 
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
 
-- [Connectors](https://docs.microsoft.com/en-us/connectors/) 
-- [Data management package REST API](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
-- [Open Data Protocol (OData)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
-- [Recurring integrations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
+- [Connectors](https://docs.microsoft.com/connectors/) 
+- [Data management package REST API](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-api?toc=/fin-and-ops/toc.json)
+- [Open Data Protocol (OData)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/fin-and-ops/toc.json) 
+- [Recurring integrations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## Triggers
-Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
 
 ## Actions
 
@@ -56,7 +55,7 @@ This action can be used to fetch a record for a specific data entity from the ta
 
 *Entity name* refers to the data entity in Finance and Operations from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
 
-*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The following syntax must be followed to specify the keys.
+*Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The values must be specified as a comma-separated list of values in the order that is defined in the entity.
 
 **Create a record**
 

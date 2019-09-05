@@ -72,5 +72,5 @@ If an item requirement is created on a service order, you cannot delete the serv
 
 ## See also
 
-[Item requirements (form)](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\))
+[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 

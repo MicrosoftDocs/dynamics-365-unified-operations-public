@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13511
@@ -40,14 +40,14 @@ The workflow system in Finance and Operations will already be familiar to you if
 
 | To learn about this subject | See this topic                                             |
 |-----------------------------|------------------------------------------------------------|
-| The workflow system         | <http://technet.microsoft.com/en-us/library/dd309672.aspx> |
-| Workflow types by module    | <http://technet.microsoft.com/EN-US/library/dd362043.aspx> |
-| Workflow elements           | <http://technet.microsoft.com/en-us/library/dd309626.aspx> |
-| Workflow actions            | <http://technet.microsoft.com/EN-US/library/dd362144.aspx> |
-| Workflow participants       | <http://technet.microsoft.com/EN-US/library/dd309598.aspx> |
-| Workflow examples           | <http://technet.microsoft.com/en-us/library/dd309636.aspx> |
-| Developing a workflow       | <http://msdn.microsoft.com/EN-US/library/cc967389.aspx>    |
-| Implementing a workflow     | <http://msdn.microsoft.com/en-us/library/cc585061.aspx>    |
+| The workflow system         | <https://technet.microsoft.com/library/dd309672.aspx> |
+| Workflow types by module    | <https://technet.microsoft.com/library/dd362043.aspx> |
+| Workflow elements           | <https://technet.microsoft.com/library/dd309626.aspx> |
+| Workflow actions            | <https://technet.microsoft.com/library/dd362144.aspx> |
+| Workflow participants       | <https://technet.microsoft.com/library/dd309598.aspx> |
+| Workflow examples           | <https://technet.microsoft.com/library/dd309636.aspx> |
+| Developing a workflow       | <https://msdn.microsoft.com/library/cc967389.aspx>    |
+| Implementing a workflow     | <https://msdn.microsoft.com/library/cc585061.aspx>    |
 
 ## Primary changes to the workflow system
 Here are the primary changes that have been implemented in Finance and Operations:

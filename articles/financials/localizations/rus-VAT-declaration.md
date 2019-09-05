@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.1
 # VAT declaration (Russia)
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview-banner](../includes/preview-banner.md)]
 
 This topic provides information about the the value-added tax (VAT) declaration for Russia. It includes instructions for setting up and generating the VAT declaration.
 

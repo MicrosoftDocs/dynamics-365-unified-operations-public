@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Integration with Microsoft Dynamics 365 for Field Service
+title: Integration with Microsoft Dynamics 365 for Field Service overview
 description: This topic provides an overview of the Integration with Microsoft Dynamics 365 for Field Service. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 02/05/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Integration with Microsoft Dynamics 365 for Field Service
+# Integration with Microsoft Dynamics 365 for Field Service overview
 
 [!include[banner](../includes/banner.md)]
 
