@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master planning home page
-description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
-author: ShylaThompson
+title: Planning optimization fit analysise
+description: Check your current setup and data against the capabilities of Planning Optimization. 
+author: ChristianRytt
 manager: AnnBe
-ms.date: 12/03/2018
+ms.date: 2019-09-06
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,9 +24,9 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: crytt
+ms.search.validFrom: 2019-09-06
+ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
