@@ -45,11 +45,11 @@ Modules represent the core building blocks that make up an online page. Here are
 
 ## Data actions
 
-Data actions are used to get data and apply business logic to a module and share data across modules.
+Data actions are used to get data, apply business logic to a module, and share data across modules.
 
 ### Core data actions
 
-The e-Commerce platform Store Starter Kit (SSK) includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database or getting ratings and reviews information for a product. Core data actions can't be modified.
+The e-Commerce platform Store Starter Kit (SSK) includes a set of data actions for performing typical actions, such as getting product data from the Dynamics 365 Commerce database, or getting ratings and reviews information for a product. Core data actions can't be modified.
 
 ### Custom data actions
 
@@ -57,7 +57,7 @@ You can create custom data actions and use them in your modules. Custom data act
 
 ## Themes
 
-Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They also let you add custom module specific CSS style definitions. You can set a site theme in the authoring tools. All pages will then use that theme by default. You can add additional themes and set them either on a template, or a layout, or on a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They also let you add custom, module-specific CSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
 
 ## Script injectors
 
