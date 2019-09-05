@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure ratings and reviews
-description: This topic describes how to configure your e-Commerce site to display customer ratings and reviews in Dynamics 365 Commerce.
+description: This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 manager: annbe
 ms.date: 10/01/2019
@@ -34,114 +34,112 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure your e-Commerce site to display customer ratings and reviews in Dynamics 365 Commerce.
+This topic describes how to configure your e-Commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Ratings and reviews on e-Commerce websites help inform customers about a product before they make a purchase decision by showing them what other customers think of that product. For e-Commerce websites, they are also a source for collecting customer feedback about a product. 
+Ratings and reviews on e-Commerce websites help customers learn about products before they make a purchase decision, by showing them what other customers think about those products. For e-Commerce websites, ratings and reviews are also a mechanism for collecting customer feedback about products. 
 
-Ratings are displayed on product list pages, category list pages, search results pages, and other site pages. Ratings histograms and product reviews are displayed on product details pages (PDPs), along with a **Write a review** button that enables customers to submit a rating and review on a product.
+Ratings are shown on product list pages, category list pages, search results pages, and other site pages. Ratings histograms and product reviews are shown on product details pages (PDPs). A **Write a review** button lets customers submit ratings and reviews for a product.
 
-## Ratings and reviews modules displayed on product details pages 
+## Ratings and reviews modules on PDPs 
 
-There are three modules that display the ratings and reviews summary on a product details page.
+Three modules show the ratings and reviews summary on PDPs:
 
- - Write review module
- - Product reviews list module
- - Ratings histogram module
+- Write review module
+- Product reviews list module
+- Ratings histogram module
  
-The following screenshot shows how ratings and reviews modules appears on a PDP.
+The following illustration shows what the ratings and reviews modules look like on a PDP.
 
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Ratings and reviews modules on a PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
-[!TIP] 
-Refer to the authoring template and layout documentation to learn how to optimize PDP templates and layouts to share ratings and reviews module configurations between multiple PDPs on your e-Commerce site.
-   
-The following screenshot shows how the **Add module** popup displays ratings and reviews modules in Commerce.
-![eCommerce site settings - Adding Ratings and Reviews modules](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+> [!TIP] 
+> For information about how to optimize PDP templates and layouts so that you can share the configurations for ratings and reviews modules among multiple PDPs on your e-Commerce site, see the authoring template and layout documentation.
+
+The following illustration shows how the **Add module** dialog box presents ratings and reviews modules in Dynamics 365 Commerce.
+
+![Add module dialog box](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### Write review module
 
-The write review module displays a button that enables users to sign in, assign a rating, and write a review on a product. This module also enables users to edit a previously submitted rating or review. This module is typically placed above the ratings histogram and reviews list modules on a product details page.
+The write review module includes a **Write a review** button that lets users sign in, assign a rating, and write a review of a product. This module also lets users edit a rating or review that they previously submitted. This module typically appears above the ratings histogram and product reviews list modules on a PDP.
 
-The following screenshot shows how a review submission looks when a customer clicks **Write a review**.
+The following illustration shows the **Write a review** dialog box that appears when a customer selects **Write a review**. The customer can use this dialog box to submit a rating and a review.
 
-![e-Commerce site settings - Write review module ](media/rnr-eCommerce-write-review-module.png)
+![Write a review dialog box](media/rnr-eCommerce-write-review-module.png)
 
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Name             | Write review                                                   | This is name of the "Write review" module|
-
+| Property name | Value        | Property description                 |
+|---------------|--------------|--------------------------------------|
+| Name          | Write review | The name of the write review module. |
 
 ### Ratings histogram module
 
-The ratings histogram module displays a ratings histogram on a product detail page. This module is typically placed between the write review module and reviews list module.
+The ratings histogram module shows a ratings histogram. This module typically appears between the write review module and the product reviews list module on a PDP.
 
-The ratings histogram module requires no configuration apart from adding the module in the PDP template. 
+The ratings histogram module requires no configuration. You just have to add the module in the PDP template. 
 
-The following screenshot shows how a PDP template looks in Commerce with ratings and reviews modules configured for display on product details pages.
+The following illustrations shows what a PDP template looks like in Dynamics 365 Commerce when ratings and reviews modules are configured for display on PDPs.
 
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-pdp-reviews-modules.png)
+![PDP template when ratings and reviews are configured for display on PDPs](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### Product reviews list module
 
-The product reviews module displays a list of product reviews along with sort, filter, and pagination options. This module is typically placed after the ratings histogram module on a product details page.
+The product reviews list module shows a list of product reviews together with sort, filter, and pagination options. This module typically appears after the ratings histogram module on a PDP.
 
+| Property name              | Value | Property description |
+|----------------------------|-------| ---------------------|
+| Reviews shown on each page | 10    | The number of reviews that should be shown at a time on a PDP. **Next** and **Previous** buttons are included, so that users can move through the pages of reviews. |
 
-| Property name     | Values                                                       | Property Description                                         |
-| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Reviews shown on each page             | 10                                                   | Number of reviews to be displayed on a product details page. Next and previous buttons are displayed to page through the reviews. |
+#### Ratings histogram – Summary view
 
-#### Ratings histogram - summary view
+The product reviews list module includes a slot where you can add a ratings histogram module. The following illustration shows how you can add a ratings histogram module in the product reviews list module in Dynamics 365 Commerce.
 
-The product review list module has a slot to include the ratings histogram module. The following screenshot shows how you can add a rating histogram within the reviews list module in Commerce.
+![Adding a ratings histogram module in a product reviews list module](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
-![eCommerce site settings - Ratings summary in reviews list ](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+## Configure a site to show ratings and reviews
 
-## Configure a site to display ratings and reviews  
+Configuration values for ratings and reviews, such as the tenant ID, review text length, and review title length, are configured at the site level. 
 
-Ratings and reviews configuration values such as tenant ID, review text length, and review title length are configured at the site level. 
+To configure a site to show ratings and reviews, follow these steps. 
 
-To configure a site to display ratings and reviews, do the following. 
+1. Go to **Home \> Sites**.
+1. Select the name of your site. 
+1. Go to **Site management \> Extensibility**. 
+1. In the **Ratings/Reviews tenant id** field, enter your tenant ID (for example, **d247ff89-1bb8-42bf-955e-a731fbc57c75**). You can find the tenant ID in your Microsoft Dynamics 365 Lifecycle Services (LCS) settings. 
+1. In the **Review Text Max Length** field, enter the maximum number of characters that review text can have (for example, **1000**). 
+1. In the **Review Title Max Length** field, enter the maximum number of characters that review titles can have (for example, **55**). 
+1. Select **Save and Publish**. 
 
-1. Go to **Home > Sites**.
-1. Click on your site name. 
-1. Go to **Site management > Extensibility**. 
-1. In the **Ratings/Reviews tenant id** box, enter your tenant ID (for example, d247ff89-1bb8-42bf-955e-a731fbc57c75). You can find the tenant ID in your Dynamics 365 Lifecycle Services (LCS) settings. 
-1. In the **reviewTextMaxLength** box, enter the review text maximum length value (maximum 1000 characters). 
-1. In the **reviewTitleMaxLength** box, enter the review title maximum length value (maximum 55 characters). 
-1. Click **Save and Publish**. 
+The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-The following screenshot shows how this looks in Commerce.
+![Configuring a site to show ratings and reviews](media/rnr-eCommerce-site-appsettings.png)
 
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-site-appsettings.png)
+## Link a product rating to the Reviews section of a PDP
 
-## Link a rating to the reviews section of a product details page 
+A product rating is shown below the product title at the top of PDP. The product rating can be configured so that it's linked to the **Reviews** section of the same PDP. 
 
-On a product details page, a product rating is shown below the product title at the top of page. The rating can be configured to link to the reviews section of the same product details page. 
+To link a product rating to the **Reviews** section of the PDP, follow these steps.
 
-To link a product rating to the reviews section of the product detail page, do the following.  
-
-1. Open the product details page template. 
+1. Open the PDP template. 
 1. Go to **Buy box container module settings**.
-1. Under **Buy box**, select **Product ratings** , then check **Link the click to full reviews module**.
+1. Under **Buy box**, select **Product ratings**, and then select the **Link the click to full reviews module** check box.
 
-The following screenshot shows how this looks in Commerce.
+The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![eCommerce site settings - Ratings and Reviews ](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Linking a product rating to the Reviews section of a PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
 
-## Configure the privacy and policy page link  
+## Configure the link for the privacy and policy page
 
-To configure the privacy and policy page link, do the following.
+To configure the link for the privacy and policy page, follow these steps.
 
-1. Go to **Home > Sites**.
-1. Click on your site name. 
-1. Go to **Site management > Extensibility**
-1. Click the **Routes** tab. 
-1. Under **RNR Privacy and Policy**, click **Add a link**. If a link is already entered and you want to replace it, click the link. 
-1. In the Add a link dialog box, select the link for the privacy and policy page, then click **OK**. 
-1. Click **Save and Publish**. 
+1. Go to **Home \> Sites**.
+1. Select the name of your site. 
+1. Go to **Site management \> Extensibility**
+1. On the **Routes** tab, under **RNR Privacy and Policy**, select **Add a link**. If a link is already entered, and you want to replace it, select the link. 
+1. In the **Add a link** dialog box, select the link for the privacy and policy page, and then select **OK**. 
+1. Select **Save and Publish**. 
 
-The following screenshot shows how this looks in Commerce.
+The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
-![eCommerce site settings - Privacy and policy link ](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
