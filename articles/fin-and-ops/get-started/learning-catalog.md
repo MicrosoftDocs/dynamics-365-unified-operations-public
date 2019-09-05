@@ -154,7 +154,6 @@ Find the right online training, in person workshops, and events for your role as
     [Testing](learning-catalog-solution-architect.md#testing)
 
     
-
     :::column-end:::
 :::row-end:::
 
