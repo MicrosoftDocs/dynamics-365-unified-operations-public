@@ -24,11 +24,13 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: roxanad
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: crytt
+ms.search.validFrom: 2019-09-06
+ms.dyn365.ops.version: AX 10.0.5
 
 ---
+
+[!include [banner](../includes/preview-banner.md)]
 
 # Plan history and logs
 
