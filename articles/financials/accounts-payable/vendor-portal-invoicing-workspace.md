@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 
-The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to Microsoft Dynamics 365 for Finance and Operations using workflow capabilities.
+The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to the system using workflow capabilities.
 
 
 Vendor collaboration invoicing workspace
