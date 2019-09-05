@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Finance and Operations platform upda
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 30. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 30
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 30. This version has a build number of 7.0.XXXX. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 30. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-30.md#additional-resources).
 
 ## Readable date time format for dateTime fields in business event payload
 When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
@@ -59,19 +59,11 @@ Currently, the Feature Class property and the FeatureStateProvider API can be us
 ## New license types support associating users with a license
 New Finance and Operations license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
 
-## Feature name
-Provide a brief description of the feature and link to the topic where they can read the details.
-
-## Feature name
-Provide a brief description of the feature and link to the topic where they can read the details.
-
-## Feature name
-Provide a brief description of the feature and link to the topic where they can read the details.
 
 ## Additional resources
 
 ### Platform update 30 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com).
+For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com)(TBD).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
