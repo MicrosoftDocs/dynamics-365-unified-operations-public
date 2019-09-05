@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
+[!include [banner](../includes/preview-banner.md)]
+
 # Get started
 
 In order to use Planning Optimization you have to install the Planning Optimization Add-in for Finance and Operations from your LCS project and enable the use of Planning Optimization from the Finance and Operations UI.
@@ -40,11 +42,11 @@ Long term, Planning Optimization is expected to replace the existing build-in Fi
 
 It is strongly recommended to evaluate results from the Planning Optimization fit analysis before enabling Planning Optimization. Read more about Planning Optimization fit analysis [link] .
 
-## What is the license impact
+### What is the license impact
 
 If your license allow you to run master planning there is no additional license needed to start using Planning Optimization.
 
-## LCS
+### LCS
 
 In order to use Planning Optimization you have to install the Planning Optimization Add-in for Finance and Operations from your LCS project.
 
@@ -54,7 +56,7 @@ In order to use Planning Optimization you have to install the Planning Optimizat
 - Follow the installation guide and agree to terms and conditions
 - Click **Install**
 
-## Planning Optimization integration
+### Planning Optimization integration
 
 From the **Master Planning \&gt; Setup \&gt; Planning Optimization integration \&gt; Integration parameters** you control if Planning Optimization Add-in for Finance and Operations should be used for master planning.
 
