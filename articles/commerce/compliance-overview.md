@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Compliance Overview
+# Compliance overview
 This section will review guidance on using Dynamics 365 e-Commerce to make your sites compliant through various modules and features.
 
 Compliance is an important factor for all businesses as it helps your userbase to better connect with your site content. Staying compliant can also protect a company from expensive legal actions or hefty fines. The subsequent pages will review using the Dynamics 365 e-Commerce Authoring Tools for these main compliance areas:
@@ -44,10 +44,3 @@ Compliance is an important factor for all businesses as it helps your userbase t
 
 
 Throughout this section, articles will provide instruction on using the e-Commerce tooling, as well as provide links to additional references for review.  It is up to each company to review and apply compliance based content and functionality within your site. Use this section to learn about these compliance areas and to execute that which best fits your company and content needs for your business.
-
-
-
-
-
-
-
