@@ -663,6 +663,75 @@ After providers are registered, additional details about the new deployment are 
 
 To see the new folders, you must close and reopen Event Viewer. To see additional details, you must deploy an environment again.
 
+###  Could not load file or assembly EntityFramework
+
+Issue: You are running Local Agent version 2.3.1 or above and you received the following stacktrace in the event logs while deploying a package that contains platform update 29 or lower:
+
+```stacktrace
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.FileNotFoundException: Could not load file or assembly 'EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The system cannot find the file specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.RefreshAdapters()
+--- End of inner exception stack trace ---
+ ```
+
+ Resolution: 
+   1. You need to configure the execution of Pre/Post deployment scripts.
+   2. Add the following snippet to your Predeployment.ps1 script:
+
+        ```powershell
+            $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
+            Write-Output "AgentShare is set to $agentShare"
+            & $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
+        ```
+   3. Create a TSG_UpdateFRDeployerConfig.ps1 script in the same folder as your Predeployment.ps1 script with the following content:
+
+        ```powershell
+            param (
+                [Parameter(Mandatory=$true)]
+                [string]
+                $agentShare = ''
+            )
+
+            $frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.Config |
+                Select-Object -First 1 -Expand FullName
+
+            if( -not $frConfig)
+            {
+                Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
+                return
+            }
+            Write-Output "Found config: $frConfig"
+
+            [xml]$xml = get-content $frConfig
+            $nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
+
+            if($nodeList.Count -eq 0)
+            {
+                # Create the node 
+                $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
+                $newNode.SetAttribute("enabled","true")
+                # Find the parent
+                $nodeList = $xml.GetElementsByTagName("runtime")
+                $runtimeNode = $nodeList[0]
+                $runtimeNode.AppendChild($newNode)
+
+                # Save doc
+                $xml.save($frConfig)
+                Write-Output "Inserted new node: "$newNode.Name
+            }
+            else
+            {
+                $node = $nodeList[0]
+                $attribute = $node.Attributes.GetNamedItem("enabled")
+                if($attribute.Value -eq "true")
+                {
+                    Write-Output "Node already exists: "$node.Name
+                }
+                else
+                {
+                    Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
+                }
+            }
+        ```
+
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
 If you receive an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. An example of a full path is **ax.d365ffo.onprem.contoso.com**.
