@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
+It's a common retail practice to track sales by the associate who worked with the customer by—providing assistance, up-selling, cross-selling, and processing the transaction.
 
 Tracking sales by sales representative is a measure of the associates selling abilities, while sales by cashier is a measure of speed and efficiency. Sales tracked by sales representative are also often used to calculate commissions or other incentives.
 

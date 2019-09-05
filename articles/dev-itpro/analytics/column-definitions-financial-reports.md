@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106601
@@ -125,7 +125,7 @@ The following table describes the column restriction codes.
 | ADJ                     | Restrict the amounts in the column to period adjustment amounts, if these amounts are available. |
 | XAD                     | Restrict the amounts in the column, so that period adjustment amounts are excluded. |
 | PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available. |
-| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<blockquote>[!NOTE] Not all data providers support unposted transactions. For more information, see the <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</blockquote> |
+| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. For more information, see the <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</p> |
 
 ### Restrict a column to a reporting unit
 
@@ -315,7 +315,7 @@ The **Print Control** cell can contain codes that adjust the display or the prin
 | Print control code | Translation                                     | Description |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Nonprinting                                     | Exclude the amounts in this column from the report that is printed and from calculations. To include a non-printing column in a calculation, refer to the column directly in the calculation formula. For example, the non-printing column C is included in the following calculation: **B+C+D**. However, the non-printing column C isn't included in the following calculation: **B:D**. |
-| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).<blockquote>[!NOTE] For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</blockquote> |
+| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).<p><strong>Note:</strong> For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</p> |
 | X0                 | Suppress column if all zeros or blanks          | Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros. |
 | SR                 | Suppress rounding                               | Prevent the amounts in this column from being rounded. |
 | XR                 | Suppress rollup                                 | Suppress a rollup. If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes. |
@@ -552,8 +552,8 @@ The following table shows the report results that can occur for various combinat
 | Currency Display cell                        | Currency Filter cell | Report result |
 |----------------------------------------------|----------------------|---------------|
 | Transaction currency                 | **YEN**              | **Y6,000** – The result shows only transactions that were entered in JPY. |
-| Accounting currency from Ledger | **YEN**              |**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.<blockquote>[!NOTE] The conversion rate is approximately 100 JPY per USD.</blockquote> |
-| Accounting currency from Ledger | Empty                | **$2,310** – The result shows all data in the accounting currency that is specified in the Ledger.<blockquote>[!NOTE] This amount is the sum of all transactions in accounting currency.</blockquote> |
+| Accounting currency from Ledger | **YEN**              |**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.<p><strong>Note:</strong> The conversion rate is approximately 100 JPY per USD.</p> |
+| Accounting currency from Ledger | Empty                | **$2,310** – The result shows all data in the accounting currency that is specified in the Ledger.<p><strong>Note:</strong> This amount is the sum of all transactions in accounting currency.</p> |
 | Transaction currency                 | Empty                | **$2,250** – The result shows all amounts in the currency that the transaction was performed in. This means the total is adding together amounts from different currencies. |
 
 ### Calculation column in a column definition
@@ -571,7 +571,7 @@ To add, subtract, multiply, or divide columns, enter the column letters in the o
 |----------|---------------------|-------------|
 | +        | A+C                 | Add the amount in column A to the amount in column C. |
 | :        | A:C A:C-D           | Add a range of consecutive columns. For example, the formula **A:C** adds the sums of columns A through C, and the formula **A:C-D** adds the sums of columns A through C, and then subtracts the amount in column D. |
-| -        | A-C                 | Subtract the amount in column A from the amount in column C.<blockquote>[!NOTE] You can also use the minus sign (-) to reverse the signs in a column. For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</blockquote> |
+| -        | A-C                 | Subtract the amount in column A from the amount in column C.<p><strong>Note:</strong> You can also use the minus sign (-) to reverse the signs in a column. For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</p> |
 | \*       | A\*C                | Multiply the amount in column A by the amount in column C. |
 | /        | A/C                 | Divide the amount in column A by the amount in column C. |
 

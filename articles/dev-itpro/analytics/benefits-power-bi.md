@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  HcmBenefitWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -47,7 +47,7 @@ The reports that are included in the **Benefits** Power BI content have both cha
 | Benefit Enrollment Overview | Most and least enrolled plans, enrollment by employee group, and selected benefit plan options |
 | Employee Benefits           | Employee enrollment by selected benefit                                                        |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Benefits** Power BI content. This table shows the entities that the content was based on.

@@ -17,7 +17,7 @@ ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44351
@@ -44,12 +44,12 @@ This topic explains how to set up Phased Rollout (N-1) components so that your M
 ## Overview
 The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Set up Azure AD accounts](#Set-up-Azure-AD-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Retail headquarters.
-- **[Configure N-1 components](#Configure-N-1-components)** – This section explains how to configure the N-1 components in Retail headquarters.
-- **[Install N-1 components](#Install-N-1-components)** – This section explains how to download and install N-1 components in the existing AX 2012 R3 environment.
-- **[Cutover steps to switch to N-1](#Cutover-steps-to-switch-to-N-1)** – This section explains the how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Retail headquarters.
-- **[Troubleshooting steps](#Troubleshooting-steps)** – This section describes troubleshooting steps for typical issues.
-- **[Required KBs for N-1](#Required-KBs-for-N-1)** – This section lists the Microsoft Knowledge Base articles (KBs) that are required in order to set up an N-1 environment.
+- **[Set up Azure AD accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Retail headquarters.
+- **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Retail headquarters.
+- **[Install N-1 components](#install-n-1-components)** – This section explains how to download and install N-1 components in the existing AX 2012 R3 environment.
+- **[Cutover steps to switch to N-1](#cutover-steps-to-switch-to-n-1)** – This section explains the how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Retail headquarters.
+- **[Troubleshooting steps](#troubleshooting-steps)** – This section describes troubleshooting steps for typical issues.
+- **[Required KBs for N-1](#required-kbs-for-n-1)** – This section lists the Microsoft Knowledge Base articles (KBs) that are required in order to set up an N-1 environment.
 
 ### High-level architecture
 The following illustration shows a high-level overview of the N-1 setup.
@@ -69,7 +69,7 @@ Before you start to configure and install the N-1 components, make sure that the
 > [!IMPORTANT]
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
-1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
 2. After you've finished creating the client ID and secret, the client ID must be accepted in Retail. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure N-1 components
@@ -251,7 +251,7 @@ When you're ready, follow these steps to download and install the component.
     4. Select **Install**.
 
     > [!NOTE]
-    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal).
+    > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
     > - When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 5. After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Go to **Retail \> Headquarters setup \> Azure Active Directory applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
@@ -278,7 +278,7 @@ When you're ready, follow these steps to download and install the component.
 
     5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select **Install**.
 
-        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
+        This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 ## Cutover steps to switch to N-1
 This section gives the recommended step-by-step instructions to switch an existing AX 2012 R3 channel environment from the AX 2012 R3 headquarters to the Dynamics 365 Retail headquarters. Note that these instructions are generic. Different implementations will likely have to deviate from these steps to accommodate specific business or technical requirements.
@@ -289,10 +289,10 @@ Follow these steps to prepare your environment for the cutover.
 | Step | Details | Timeline |
 |---|---|---|
 | 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
-| 2. Install the Microsoft Dynamics 365 for Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#Required-KBs-for-N-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
-| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#Set-up-Azure-AD-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover |
-| 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#Configure-N-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
-| 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#Install-N-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
+| 2. Install the Microsoft Dynamics 365 for Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
+| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover |
+| 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
+| 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
 
 ### Preparation
 Follow these steps to prepare a few days before the cutover is scheduled.

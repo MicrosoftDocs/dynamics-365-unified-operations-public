@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  HcmCompensationWorkspace
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -49,7 +49,7 @@ The reports that are included in **Compensation** the Power BI content have both
 | Position Pay Analysis      | Highest and lowest hourly and salary pay, positions with highest and lowest pay, and full-time and part-time positions |
 | Compensation Plan Analysis | Employee enrollment by selected benefit |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Compensation** Power BI content. This table shows the entities that the content was based on.

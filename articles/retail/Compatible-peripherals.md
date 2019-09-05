@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form:  RetailHardwareProfile
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: 
 
 # ms.tgt_pltfrm: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 # Peripheral compatibility for Retail
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Devices listed on this page have been tested for compatiblity with Microsoft Dynamics 365 for Retail using the [Peripheral simulator for Retail](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-peripheral-simulator). For each device, the party who performed the test and submitted successful results to Microsoft is listed in the 'Tested by' column. For devices listed as tested by 'Microsoft Corp.', support requests should be directed to Microsoft. Issues with devices tested by a party other than Microsoft should be first reported to the testing party.
 
@@ -73,7 +73,7 @@ Testing must be performed for every retail peripheral setup that goes into produ
 
 ## Supported devices
 
-Only devices that have been previously tested for compatibility, with results submitted to Microsoft, will be supported for new implementations. This is necessary to ensure new implementations have been adequately tested and to help build a library of previously tested devices. Previously, Microsoft has performed internal testing on devices and the results have been listed in places such as on the [Retail peripherals overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-peripherals-overview). Due to the sheer variance in devices in the market, that process is not does not scale. So, moving forward, the majority of testing must be done by partners, customers and – most importatly – device manufacturers. Ideally, devices will be tested proactively by manufacturers to ensure that partners and customers can make peripheral selections based on the list of compatible devices.
+Only devices that have been previously tested for compatibility, with results submitted to Microsoft, will be supported for new implementations. This is necessary to ensure new implementations have been adequately tested and to help build a library of previously tested devices. Previously, Microsoft has performed internal testing on devices and the results have been listed in places such as on the [Retail peripherals overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-peripherals-overview). Due to the sheer variance in devices in the market, that process is not does not scale. So, moving forward, the majority of testing must be done by partners, customers and – most importantly – device manufacturers. Ideally, devices will be tested proactively by manufacturers to ensure that partners and customers can make peripheral selections based on the list of compatible devices.
 
 ## Disclaimer
 

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -352,7 +352,7 @@ The Address service supports the following requests/responses for various extens
 
 On top of the Services layer is the Workflow layer. A workflow is a collection of services and business logic that together define business processes. For example, when a customer adds an item to the cart, you can use a workflow to get the price, do validation, check the inventory quantity, calculate shipping, calculate tax, and calculate discounts. You can customize the existing workflows, or you can create new workflows. You can even use a workflow to connect to a third-party system as part of your business processes.
 
-Just like services, workflows use the request/response pattern. The request object inherited from the base CRT [Request](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) class. The response object inherited from the base CRT [Response](https://technet.microsoft.com/en-us/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/en-us/library/jj764791.aspx) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
+Just like services, workflows use the request/response pattern. The request object inherited from the base CRT [Request](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.request.aspx) class. The response object inherited from the base CRT [Response](https://technet.microsoft.com/library/microsoft.dynamics.commerce.runtime.messages.response.aspx) class. A workflow also has a request handler class that extends the [WorkflowRequestHandler<TRequest, TResponse>](https://technet.microsoft.com/library/jj764791.aspx) class. To create a workflow, you create a request class and a response class, and you then create a request handler class that contains the business logic for the workflow.
 
 For example, when you create a cash-and-carry transaction or a customer order, many different steps or workflows are completed before the order is created. One of the workflow steps in the order process is the Save cart request. The Save cart request workflow is responsible for saving any changes that are made to the cart from the POS. For example, when you add an item to the cart, change the quantity, and so on, anything that you do in the POS will cause a call to the SaveCart to save the changes to the POS and database.
 

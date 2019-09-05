@@ -5,7 +5,7 @@ title: Finance and Operations Help system
 description: This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: SystemParameters
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
@@ -96,22 +96,22 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 1. Click **Feedback** to get to the comments at the bottom of the page, and then click either **Product feedback**, or **Sign in to give documentation feedback**.
 
-    ![Feedback](./media/comments.png)
-
 2. Start typing your comments, and then click **Submit feedback**.
 
     ![Post comment](./media/feedback.png)
 
-##### Suggest a change or contribute content through GitHub
+### Contribute to the documentation
 
-To suggest a change, you'll need to have a GitHub account, and sign a Contributor License Agreement. After you submit a pull request, we'll review your proposed changes. If necessary, we'll discuss them internally, and then get back to you.
+You can contribute and make edits to the Finance and Operations documentation. To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. The following video shows how you can contribute to our documentation.
 
-To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
-For more information, please refer to our contributor's guide: <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
+The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the [What's new in Dynamics 365 playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT-ErQZPP80qNKuEAr0wAAD9) available on YouTube.
+
+For more information, refer to our contributor's guide at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md>.
 
 > [!NOTE]
-> We only accept contributions to our English content set at this time.
+> We only accept contributions to our English content at this time.
 
 ## Task guides
 
@@ -199,7 +199,7 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosts or links to all product documentation for Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft's free eLearning site. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics 365 for Finance and Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
-| [Support blog](http://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Dynamics 365 for Finance and Operations Support team. |
+| [Support blog](https://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Dynamics 365 for Finance and Operations Support team. |
 | [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Provides evaluation and sales information. |

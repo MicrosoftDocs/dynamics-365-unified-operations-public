@@ -5,7 +5,7 @@ title: Use record template to create a new record
 description: This procedure shows how to use a previously defined record template to create a new record. 
 author: margoc
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: AssetTable, SysRecordTemplateSelect   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -32,13 +32,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
 
-
-
 This procedure uses the USMF company.
 
-1. Go to Fixed assets > Fixed assets > Fixed assets.
-2. Click New.
-    * You will be prompted to select a template. Select the one that corresponds to your business need.  
+1. In the **Navigation pane**, go to **Fixed assets > Fixed assets > Fixed assets**.
+2. Click **New**. You will be prompted to select a template. Select the one that corresponds to your business need.  
 3. In the list, find and select the desired record.
-4. Click OK.
+4. Click **OK**.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Task recorder
+title: Task recorder resources
 description: This topic describes how to use Task recorder to record client functions.
 author: jasongre
 manager: AnnBe
-ms.date: 09/17/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24271
@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Task recorder
+# Task recorder resources
 
 [!include [banner](../includes/banner.md)]
 

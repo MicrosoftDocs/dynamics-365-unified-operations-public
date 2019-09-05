@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18991
@@ -38,10 +38,10 @@ In Microsoft Dynamics Lifecycle Services, you can record information about custo
 
 This topic explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
 
--   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309910)
--   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](http://go.microsoft.com/fwlink/?LinkId=309911)
+-   Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 Feature Pack – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309910)
+-   Microsoft Dynamics AX 2012 R2 – Knowledgebase article [2863182](https://go.microsoft.com/fwlink/?LinkId=309911)
 
-For more information about how to work with the updated Task recorder, see [Task recorder update for Microsoft Dynamics AX 2012](http://go.microsoft.com/fwlink/?LinkID=310185).
+For more information about how to work with the updated Task recorder, see [Task recorder update for Microsoft Dynamics AX 2012](https://go.microsoft.com/fwlink/?LinkID=310185).
 
 ## Upload custom recorded business processes
 You can upload business process artifacts (\*.axbpm files) to the business process library. These files are generated from Task recorder. After they are uploaded, you can view and modify the recorded processes in Business process modeler. To upload custom business processes that you recorded, follow these steps:

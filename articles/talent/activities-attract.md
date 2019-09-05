@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Activities in the processes
-description: This topic provides information about the various types of activities that can be used in the hiring process.
-author: shielasogge
+title: Activities in the processes in Microsoft Dynamics 365 for Talent - Attract
+description: This topic provides information about the various types of activities that can be used in the hiring process in Microsoft Dynamics 365 for Talent - Attract.
+author: hasrivas
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Activities in the hiring processes
+# Activities in hiring processes
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,6 +42,9 @@ Activities can be added as a part of the hiring process in Microsoft Dynamics 36
 ## Prospect activity
 
 The Prospect activity controls whether prospects can be added to a job. By default, prospects can be added to a job. To turn off the Prospect activity, set the **Enable prospects** option to **Off**. When the Prospect activity is turned on, hiring managers can add and view prospects, and the **Prospect** tab is shown on the job.
+
+> [!NOTE]
+> To allow candidates to be added to a job from LinkedIn, you must set the **Enable prospects** option to **On**.
 
 ## Application activity
 
@@ -84,3 +87,12 @@ In Microsoft Forms, authors can change their settings to let users outside their
 
 > [!NOTE]
 > The Microsoft Forms activity is available only with the Comprehensive hiring add-on. For more information, see [Attract comprehensive hiring add-on capabilities](./attract-comprehensive-hiring.md).
+
+## Offer activity
+
+The hiring process template requires the Offer activity. To use the integrated offer management app, set **Launch Offer Management App on Prepare Offer** to **On**. If this setting is off, the candidate won't appear in the Offer app, so you'll have to track updates to a candidate's offer activity manually. To define whether hiring managers can prepare the offer for the candidate in the Offer app, set **Hiring Managers can prepare offer** to **On**. If the job has multiple positions associated with it, you can decide whether you want to prepare multiple offers against the same position number. If you want to allow only one offer per position per job, set **Allow Positions to be reused within job** to **Off**.
+
+> [!NOTE]
+> The integrated Offer Management App is available only with the Comprehensive hiring add-on. For more information, see [Attract comprehensive hiring add-on capabilities](./attract-comprehensive-hiring.md).
+
+

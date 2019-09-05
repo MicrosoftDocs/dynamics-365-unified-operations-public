@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 196163
@@ -34,13 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../../includes/banner.md)]
 
-## Scenario 
+## Scenario
+
 A retailer wants customers to be able to earn loyalty points and pay by using loyalty points in a single transaction. 
 
 ## Scenario details
+
 The retailer has set up a loyalty scheme for the channel and associated that scheme with a loyalty program. The loyalty scheme includes some earning and redemption rules. The retailer wants customers to be able to partially pay a transaction amount by using their loyalty points. The customers should then be able to earn loyalty points for the remaining transaction amount that they pay by using other payment methods.
 
 ## Assumptions
+
 Because of the flexibility that the loyalty setup provides, this scenario can quickly become very complex. We have made some assumptions to reduce the complexity of this sample. However, these assumptions aren't far removed from the real-world examples. Here are the assumptions:
 
 + No tiers are associated with the loyalty program.
@@ -52,6 +55,7 @@ Because of the flexibility that the loyalty setup provides, this scenario can qu
 > The earning and redemption rules that are mentioned here are just examples. For this sample, we have hard-coded the values. For a production scenario, the values should be read from the database instead.
 
 ## Customization approach
+
 We implement this customization in two steps. In step 1, points will be earned as though loyalty points weren't used in the transaction. Then, in step 2, the extra points that were earned will be reduced, based on the points that were redeemed.
 
 There are six service requests for the loyalty feature:
@@ -65,7 +69,7 @@ There are six service requests for the loyalty feature:
 
 To calculate the reward points for a cash-and-carry transaction, the system uses **FillInLoyaltyRewardPointLinesForSalesServiceRequest** for sales transaction lines. This request, in turn, uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. Similarly, the system uses **FillInLoyaltyRewardPointLinesForReturnServiceRequest** for return transaction lines, and this request also uses **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to do the actual reward calculation. In the out-of-box implementation of the loyalty feature, customers can't both redeem and earn loyalty points in the same transaction. In other words, if the sales transaction has a tender line for the loyalty card, **FillInLoyaltyRewardPointLinesForSalesServiceRequest** doesn't call **FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest** to calculate the reward points. 
 
-To enable loyalty points to be redeemed and earned in the same transaction, we will work with one service request,  **FillInLoyaltyRewardPointLinesForSalesServiceRequest**.
+To enable loyalty points to be redeemed and earned in the same transaction, we will work with one service request, **FillInLoyaltyRewardPointLinesForSalesServiceRequest**.
 
 ### Step 1 
 
@@ -89,7 +93,6 @@ namespace Contoso
         using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
         using System.Collections.Generic;
         using Microsoft.Dynamics.Commerce.Runtime.Messages;
-        
         public class FillInLoyaltyRewardPointLinesForSalesHandler : IRequestHandler
         {
             /// <summary>
@@ -151,7 +154,7 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
                 var LoyaltyRewardPointSalesServiceRequest = (FillInLoyaltyRewardPointLinesForSalesServiceRequest)request;
                 SalesTransaction salesTransaction = LoyaltyRewardPointSalesServiceRequest.SalesTransaction;
-                                
+
                 if (salesTransaction.LoyaltyRewardPointLines != null)
                 {
                     decimal totalReedeemedPoints = 0m;
@@ -160,7 +163,7 @@ namespace Contoso
                     // Find the redeemed reward lines in the transaction and calculate the total redeemed reward points
                     IEnumerable<LoyaltyRewardPointLine> redeemLoyaltyRewardPointLines = salesTransaction.LoyaltyRewardPointLines.Where<LoyaltyRewardPointLine>(line => line.EntryType == LoyaltyRewardPointEntryType.Redeem);
                     if (redeemLoyaltyRewardPointLines.Count() > 0)
-                    {                        
+                    {
                         foreach (var rewardPointLine in redeemLoyaltyRewardPointLines)
                         {
                             totalReedeemedPoints += rewardPointLine.RewardPointAmountQuantity;

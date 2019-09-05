@@ -5,7 +5,7 @@ title: Deployment guidelines for cash registers for Norway
 description: This topic is a deployment guide for the Retail localization for Norway.
 author: AlexChern0v
 manager: olegkl
-ms.date: 10/10/2018
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -1540,7 +1540,35 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ---
 
-4. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
+4. Modify the following files to include the resource files for Norway in deployable packages:
+    - Packages\_SharedPackagingProjectComponents\Sdk.ModernPos.Shared.csproj
+    - Packages\RetailServer\Sdk.RetailServerSetup.proj
+  
+  - For the **Sdk.ModernPos.Shared.csproj** file 
+    - Add line to the **ItemGroup** section
+    
+        ``` xml
+        <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
+        ```
+    > [Note]
+    > Instead of the <File_name> specify a name of the resource file. The same is relevant for the other examples given below.
+ 
+    - Add line to the **Target Name="CopyPackageFiles"** section
+       ``` xml
+        <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\nb-NO" SkipUnchangedFiles="true" />
+        ```
+  
+  - For the **Sdk.RetailServerSetup.proj** file 
+    - Add line to the **ItemGroup** section
+        ``` xml
+        <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
+        ```    
+    - Add line to the **Target Name="CopyPackageFiles"** section
+         ``` xml
+        <Copy SourceFiles="@(<File_name>)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\nb-NO" SkipUnchangedFiles="true" />
+        ```    
+
+5. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder.
 
     # [Application update 4](#tab/app-update-4)
 
@@ -1568,14 +1596,14 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-5. Update Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** file, add the following lines to the **extensionComposition** section.
+6. Update Retail Server configuration file. In the **RetailSDK\\Packages\\RetailServer\\Code\\web.config** file, add the following lines to the **extensionComposition** section.
 
     ``` xml
     <add source="assembly" value="Contoso.RetailServer.SalesTransactionSignatureSample" />
     ```
 
-6. Run **msbuild** for the whole Retail SDK to create deployable packages.
-7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+7. Run **msbuild** for the whole Retail SDK to create deployable packages.
+8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 

@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51774
 ms.assetid: c83d7228-86a5-404b-a978-7f6d316b7b7e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -929,17 +929,17 @@ Creates a new instance of the TextIO class.
 #### Parameters
 
 filename  
-The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see the list of http://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409. An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
+The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see [the list](https://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409). An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
 
 <!-- -->
 
 mode  
-The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see the list of http://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409. An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
+The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see [the list](https://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409). An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
 
 <!-- -->
 
 codepage  
-The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see the list of http://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409. An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
+The code page number for the character set to be read from or written to the file. The default value is 1200 (UTF-16LE). This parameter is optional. Following are the most common values: For more information about these options, see [the list](https://go.microsoft.com/fwlink/?LinkID=78282&clcid=0x409). An error is reported if an invalid code page is requested. Notice that a code page is reported as "invalid" if it is not installed on the computer (different code pages may be installed on the client and server). For example, specifying code page 1253 for Greek fails unless the computer's ACP is Greek or Greek language support has been loaded by using Control Panel &gt; Regional Options.
 
 #### Remarks
 

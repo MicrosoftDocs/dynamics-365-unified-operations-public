@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29151
@@ -148,8 +148,8 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 links
 
--   [MSDN Role Center Page Reference \[AX 2012\]](http://msdn.microsoft.com/en-us/library/cc558235.aspx)
--   [MSDN Role Center User Experience Guidelines \[AX 2012\]](http://msdn.microsoft.com/en-us/library/gg886608.aspx)
+-   [MSDN Role Center Page Reference \[AX 2012\]](https://msdn.microsoft.com/library/cc558235.aspx)
+-   [MSDN Role Center User Experience Guidelines \[AX 2012\]](https://msdn.microsoft.com/library/gg886608.aspx)
 
 ### AX 2012 example
 

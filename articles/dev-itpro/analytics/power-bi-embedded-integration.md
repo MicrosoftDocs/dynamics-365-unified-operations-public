@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270754
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 4
 Microsoft Power BI content that partners and independent software vendors (ISVs) developed can be embedded directly into the Microsoft Dynamics 365 for Finance and Operations. This topic describes some of the ways that you can use the Microsoft Power BI Embedded integration.
 
 ## Overview
-The integration of Finance and Operations and [Power BI](http://www.powerbi.com/) enables data mash-up scenarios that require access to external data sources that are supported through Microsoft Power Query for Excel. Users can personalize workspaces by embedding tiles that are hosted on PowerBI.com. Users can also add direct links to reports that are hosted on PowerBI.com. In this way, users can access and interact with the reports without leaving the application. Power BI content (PBIX files) that partners and ISVs develop can be embedded directly into the application. PBIX files that are associated with a model file are automatically published in Power BI Embedded as part of the application deployment process. Additionally, you can add X++ extensions for embedded reporting scenarios that require the following functionality:
+The integration of Finance and Operations and [Power BI](https://www.powerbi.com/) enables data mash-up scenarios that require access to external data sources that are supported through Microsoft Power Query for Excel. Users can personalize workspaces by embedding tiles that are hosted on PowerBI.com. Users can also add direct links to reports that are hosted on PowerBI.com. In this way, users can access and interact with the reports without leaving the application. Power BI content (PBIX files) that partners and ISVs develop can be embedded directly into the application. PBIX files that are associated with a model file are automatically published in Power BI Embedded as part of the application deployment process. Additionally, you can add X++ extensions for embedded reporting scenarios that require the following functionality:
 
 - Drill-down navigation into detailed pages in response to user interactions
 - Report filters that are based on user and session context information, such as company or date range
@@ -50,7 +50,7 @@ Although both Power BI services are available, it's important that you know whic
 
 ![Comparison of features across services](media/Power-BI-Embedded-integration.png)
 
-For more information about the Power BI Embedded service, see the [Power BI Embedded FAQ](https://powerbi.microsoft.com/en-us/documentation/powerbi-frequently-asked-questions/).
+For more information about the Power BI Embedded service, see the [Power BI Embedded FAQ](https://powerbi.microsoft.com/documentation/powerbi-frequently-asked-questions/).
 
 ## Advantages of Power BI Embedded
 - **Deliver Power BI workspaces and reports in the application.** If you're a power user or a business analyst, you can tweak ready-made reports or create new reports by using Power BI tools. As a developer, you can use the reports that your users create to provide rich navigation experiences in the product through workspaces. If you're in the partner and ISV community, you can build rich workspaces that include Power BI experiences, and then release those workspaces as part of your solution.
@@ -63,7 +63,7 @@ For more information about the Power BI Embedded service, see the [Power BI Embe
 **The Power BI Embedded service is automatically deployed and configured for all cloud-hosted, multi-box deployments.** Because the service relies on Microsoft Azure services, application analytical workspaces and reports are unavailable in one-box environments. The Power BI Embedded service is already available in most Azure datacenters. You can check the latest availability on the [Azure status](https://azure.microsoft.com/status/) page.
 
 > [!NOTE]
-> The Microsoft Dynamics 365 team is working on a solution that will enable analytical workspaces in one-box environments without requiring that customers host their own instance of the Power BI Embedded service. Watch for announcements on the [Dynamics 365 Roadmap](http://roadmap.dynamics.com) site.
+> The Microsoft Dynamics 365 team is working on a solution that will enable analytical workspaces in one-box environments without requiring that customers host their own instance of the Power BI Embedded service. Watch for announcements on the [Dynamics 365 Roadmap](https://roadmap.dynamics.com) site.
 
 ## Frequently asked questions
 

@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -144,9 +144,13 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Add a range of rows to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>         | Shift+Click                     |
 | Go to the next/previous page of data                                                                                   | Page up / Page down             |
 | Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
-| Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
 | Move to the first record                                                                                               | Ctrl+Home                       |
 | Move to the last record                                                                                                | Ctrl+End                        |
+| Select or clear all rows                                                                                               | Ctrl+Shift+M                    |
+| Move to the first marked row                                                                                           | Alt+Shift+M, F                    |
+| Move to the next marked row                                                                                            | Alt+Shift+M, L                    |
+| Move to the previous marked row                                                                                        | Alt+Shift+M, P                    |
+| Moved to the last marked row                                                                                           | Alt+Shift+M, N                    |
 | Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |

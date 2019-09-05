@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 8.1.2
 
 # Dynamics 365 payment data use
 
+[!include [banner](includes/banner.md)]
+
 This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
 
 ## Key terms
@@ -45,8 +47,8 @@ This topic provides an overview of the data that is managed by the payment conne
 
 This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:
 
-- **[Data used in card-present scenarios](#Data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.
-- **[Data used in card-not-present scenarios](#Data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.
+- **[Data used in card-present scenarios](#data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.
+- **[Data used in card-not-present scenarios](#data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.
 
 ## Data used in card-present scenarios
 
@@ -85,7 +87,7 @@ This section describes all data points that are sent to the payment connector fo
 |---|---|
 | amount | The amount to capture. |
 | currency | The currency for the amount to capture. |
-| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#Payment-SDK-data) section later in this topic. |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic. |
 
 #### VoidPaymentTerminalDeviceRequest
 
@@ -93,7 +95,7 @@ This section describes all data points that are sent to the payment connector fo
 |---|---|
 | amount | The amount of the payment to void. |
 | currency | The currency for the payment to void. |
-| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#Payment-SDK-data) section later in this topic. |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic. |
 
 #### RefundPaymentTerminalDeviceRequest
 
@@ -166,8 +168,8 @@ This section describes data that is sent to the payment connector for card-not-p
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | TransactionData | TerminalId | The unique identifier of the terminal where the transaction occurred. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#L2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#L3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
 
 #### Capture
 
@@ -176,8 +178,8 @@ This section describes data that is sent to the payment connector for card-not-p
 | MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#L2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#L3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
 
 #### Void
 
@@ -205,8 +207,8 @@ This section describes data that is sent to the payment connector for card-not-p
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | TransactionData | TerminalId | The unique identifier of the terminal where the transaction occurred. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#L2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#L3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
 
 #### GetPaymentAcceptPoint 
 

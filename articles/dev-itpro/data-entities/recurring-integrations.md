@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 05/09/2019
 
 ms.topic: article
 ms.prod: 
@@ -18,7 +18,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24821
@@ -52,6 +52,9 @@ Integration does the following things:
 
 ## Authorization for the integration REST API
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (Azure AD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
+
+> [!NOTE]
+> This feature is not supported with the on-premises version of Dynamics 365 for Finance and Operations.
 
 ## Set up a data project and recurring data jobs
 ### Create a data project

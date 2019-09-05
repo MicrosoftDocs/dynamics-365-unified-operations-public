@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Attract features and capabilities
-description: This topic describes the features that Attract provides for managing the process of hiring new talent.
+title: Microsoft Dynamics 365 for Talent - Attract features and capabilities
+description: This topic describes the features that Microsoft Dynamics 365 for Talent - Attract provides for managing the process of hiring new talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -51,3 +51,6 @@ Attract provides a predefined hiring process that has four basic stages: Apply, 
 
 ## Candidate app
 As soon as they have been added to a job, candidates receive an email that includes a link to get the web app. The app provides job details and is used to communicate with the hiring team. Candidates can use it to also submit their availability for interviews.
+
+## Analytic reports
+Hiring teams can use view key hiring process metrics for a single job or aggregated across all jobs with [analytic reports in Attract](analytic-reports.md). This feature is currently in [preview](access-preview-feature.md) for customers with the [Comprehensive Hiring Add-On](attract-comprehensive-hiring.md).

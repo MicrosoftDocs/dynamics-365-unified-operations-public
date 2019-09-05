@@ -18,7 +18,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -380,10 +380,10 @@ final class TableToExtend_Extension
 In this example, **DataEntityToExtend** is the data entity and **validateDelete** and **validateWrite** are methods that can be wrapped in the data entity.
 
 ```C#
-[ExtensionOf(TableStr(LedgerJournalEntity))]
-final class LedgerJournalEntity_Extension
+[ExtensionOf(tableStr(DataEntityToExtend))]
+final class DataEntityToExtend_Extension
 {
-        public boolean validateDelete()
+    public boolean validateDelete()
     {
         boolean ret;
         //...

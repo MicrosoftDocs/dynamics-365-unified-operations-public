@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263894
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 This topic describes the Finance and Operations - Employee competencies and development Power BI content. 
 
 ## Reports that are included in the content pack
-After you've connected the content pack to your Finance and Operations data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+After you've connected the content pack to your Finance and Operations data, the reports show your organization's data. If you've never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                            | Contents                                               |
 |-----------------------------------|--------------------------------------------------------|
@@ -45,7 +45,7 @@ After you've connected the content pack to your Finance and Operations data, the
 | Skill Profile                     | Skill profile for the selected employee                |
 | Skill Analysis                    | Skills by type and rating                              |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 Finance and Operations data is used to populate the reports in the Employee competencies and development content pack. The following table shows the entities that the content pack was based on.

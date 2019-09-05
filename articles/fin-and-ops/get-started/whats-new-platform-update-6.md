@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -72,7 +72,7 @@ You can now extend the number sequence scope through extensions. The scope of a 
 
 ## Ideas portal
 
-Dynamics 365 for Operations Ideas forum is now available on our [Ideas portal.](https://experience.dynamics.com/ideas/) With the Ideas portal, all Dynamics 365 for Operations users can submit new ideas, vote on existing ideas, and track status of their ideas in a consistent manner. This can now be achieved from both outside of the product ([http://experience.dynamics.com/ideas](http://experience.dynamics.com/ideas/)) and from within the application. The screenshot shows how to navigate to the Ideas portal from within Dynamics 365 for Operations.
+Dynamics 365 for Operations Ideas forum is now available on our [Ideas portal](https://experience.dynamics.com/ideas/). With the Ideas portal, all Dynamics 365 for Operations users can submit new ideas, vote on existing ideas, and track status of their ideas in a consistent manner. This can now be achieved from both outside of the product ([https://experience.dynamics.com/ideas](https://experience.dynamics.com/ideas/)) and from within the application. The screenshot shows how to navigate to the Ideas portal from within Dynamics 365 for Operations.
 
 [![ideas-menu](./media/ideas-menu.png)](./media/ideas-menu.png)
 

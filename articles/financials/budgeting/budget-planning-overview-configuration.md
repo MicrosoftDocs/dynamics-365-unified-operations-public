@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
@@ -159,6 +159,8 @@ For the example schema, you might want to create columns for the PY Sales, Contr
 [![Columns](./media/columns.png)](./media/columns.png) 
 
 You also designate whether each layout element (column) is editable, and whether it's available in any worksheet template that is created for that layout. For the example schema, in the layout that is used for the Estimate stage, the Forecast columns are editable, whereas the PY Sales and Contracts columns are read-only.
+
+[!Note] By default you will be limited to 36 columns unkless you extend budgeting planning with the steps in the [Extend the budget planning layout](./extending-budget-planning-layout.md).
 
 ### Templates
 

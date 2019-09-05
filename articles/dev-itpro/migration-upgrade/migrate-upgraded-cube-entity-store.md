@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94203
@@ -55,18 +55,30 @@ This tutorial requires the Dynamics 365 for Operations May 2016 update or later.
 ## Change upgraded aggregate measurement properties
 As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.
 
-1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+1.  Launch Visual Studio and create a new project in Application Suite.
+
+    > [!NOTE]
+    > You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+
 2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
 5.  Rename this measurement. Select **SalesCubeCopy** in Solution Explorer. Right-click and select **Rename**. Enter **SalesCubeV2** as the new name.
 6.  Double-click **SalesCubeV2** to launch the Aggregate measurement designer. Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.
-7.  The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references. **Note:** Leveraging the modeling capabilities you can quickly make a few enhancements to this model. Suggestions for improvements:
-    -   Replace views/tables that have been used to model the measure group (and/or dimensions) with an entity. You can model an entity using the underlying view and replace the view with the corresponding entity. This will enable you to leverage upcoming features such as incremental refresh and security.
-    -   Remove unwanted dimension references by adding the corresponding field to the attributes node. For example, the Sizes dimension reference can be removed because the **Size** field in the measure group is sufficiently descriptive. This will improve the runtime performance of queries as well as refresh times.
+7.  The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.
+
+    > [!NOTE]
+    > Leveraging the modeling capabilities you can quickly make a few enhancements to this model. Suggestions for improvements:
+    >
+    > -   Replace views/tables that have been used to model the measure group (and/or dimensions) with an entity. You can model an entity using the underlying view and replace the view with the corresponding entity. This will enable you to leverage upcoming features such as incremental refresh and security.
+    > -   Remove unwanted dimension references by adding the corresponding field to the attributes node. For example, the Sizes dimension reference can be removed because the **Size** field in the measure group is sufficiently descriptive. This will improve the runtime performance of queries as well as refresh times.
 
 8.  Select the **SalesCubeV2** root node in the Aggregate measurement designer. Right-click and select **Properties**.
-9.  During upgrade, aggregate measurements are set to the legacy property flag, **SSASCube**. You need to change this property to one of two supported usage types. Previously, **InMemoryRealTime** was supported as usage for aggregate measurements. **StagedEntityStore** is supported as a new usage type. **Note:** Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration. If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select **StagedEntityStore**.
+9.  During upgrade, aggregate measurements are set to the legacy property flag, **SSASCube**. You need to change this property to one of two supported usage types. Previously, **InMemoryRealTime** was supported as usage for aggregate measurements. **StagedEntityStore** is supported as a new usage type.
+
+    > [!NOTE]
+    > Modify the usage property to InMemoryRealTime if you plan to use the Aggregate measurement for embedded BI scenarios as well as Power BI integration. If you are using the Aggregate measurement only for Power BI or Cortana Intelligence Suite integration, select **StagedEntityStore**.
+
 10. Save the project. Right-click the project in Solution Explorer and select **Rebuild**.
 11. After the rebuild operation is finished, save the project, and then close Visual Studio. This completes the development work. You will author reports as a report developer or a power user.
 
@@ -80,19 +92,24 @@ As an administrator you can configure the refresh of the aggregate measurement u
 5.  The system will create a batch job for refresh of the aggregate measurement in the entity store.
 
 ## Authoring a report on Sales by State with Power BI desktop
-This step requires that you the install Power BI desktop tool that can be downloaded from [Microsoft Power BI Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=45331).
+This step requires that you the install Power BI desktop tool that can be downloaded from [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331).
 
 1.  Launch Power BI desktop. You may need to apply updates. A welcome page will display. Click **Get data**.
 2.  Alternatively, when Power BI desktop launches, on the **Home** tab select **Get Data** &gt; **SQL Server**.
 3.  In the **SQL Server Database** dialog box, enter the server name and the name of the entity store database. If you deployed a developer environment, you can enter “.” as the server name and **AxDW** as the database name. If you are working in a test environment, you need to get these parameters from your system administrator
 4.  Select the **DirectQuery** option. In this exercise, you will create Power BI reports that are executed directly on the entity store. If you had used the **Import** option, Power BI would cache data from the entity store and you would need to periodically refresh the Power BI model. **Import mode is currently not supported with reports written using entity store**. Click **OK**.
-5.  Next you will see the **Navigator** dialog box. Navigator enables you to select tables and views from the entity store that you want to report on. Enter **Sales** in the search box. The system will filter entities that are related to the **SalesCubeV2** aggregate measurement that was previously created. **Note:** The entity store stages the aggregate measurements that have been created. While entities within each aggregate measurement are prefixed and stored as individual tables, Power BI desktop enables you to combine data from multiple aggregate measurements.
+5.  Next you will see the **Navigator** dialog box. Navigator enables you to select tables and views from the entity store that you want to report on. Enter **Sales** in the search box. The system will filter entities that are related to the **SalesCubeV2** aggregate measurement that was previously created.
+
+    > [!NOTE]
+    > The entity store stages the aggregate measurements that have been created. While entities within each aggregate measurement are prefixed and stored as individual tables, Power BI desktop enables you to combine data from multiple aggregate measurements.
+
 6.  You will create a report that shows sales by state. Select **SalesCubeV2\_Customer** and **SalesCubeV2\_CustomerInvoices** from Navigator and click **Load**.
 7.  You will notice Power BI designer with **Fields** present in the entities that you have chosen (on the far right), as well as available visualization.
 
 ### Create a surrogate key that links customers and invoices (applies to platform versions before November 2016 update)
 
-**Note:** You do not need to perform this step if you are working on the November 2016 release of the platform or later. Surrogate keys are generated in aggregate measurements staged into entity store. Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys). The **SalesCubeV2\_Customer** entity does not have a surrogate key (such as AX RecID) defined in it. Next, you will create a surrogate key that enables relating a customer entity to invoices.
+> [!NOTE]
+> You do not need to perform this step if you are working on the November 2016 release of the platform or later. Surrogate keys are generated in aggregate measurements staged into entity store. Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys). The **SalesCubeV2\_Customer** entity does not have a surrogate key (such as AX RecID) defined in it. Next, you will create a surrogate key that enables relating a customer entity to invoices.
 
 1.  Select the ellipsis (…) icon next to the **SalesCubeV2\_CustomerInvoices** entity. Right-click and select **New Column**.
 2.  Enter the following expression in the **Formula editor** window.
@@ -101,7 +118,8 @@ This step requires that you the install Power BI desktop tool that can be downlo
 FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
 ```
 
-**Note:** When you enter the first few letters of the field name or function, the editor will display a list of candidate fields. This is called a type-ahead feature. You can either copy and paste this expression or use the type-ahead feature.
+> [!NOTE]
+> When you enter the first few letters of the field name or function, the editor will display a list of candidate fields. This is called a type-ahead feature. You can either copy and paste this expression or use the type-ahead feature.
 
 1.  When completed, your formula should look similar to the following.
 
@@ -119,7 +137,8 @@ FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), Sal
 
 ### Relate invoices and customers
 
-**Note:** If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store. If not, you must relate the surrogate keys that you created manually. Next you will create a relationship between **SalesCubeV2\_CustomerInvoices** and **SalesCubeV2\_Customers** entities.
+> [!NOTE]
+> If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store. If not, you must relate the surrogate keys that you created manually. Next you will create a relationship between **SalesCubeV2\_CustomerInvoices** and **SalesCubeV2\_Customers** entities.
 
 1.  Click the **Manage Relationships** button on the Power BI ribbon. You will see the **Manage Relationships** dialog box. Click the **New** button.
 2.  In the **Create Relationship** dialog box, select **SalesCubeV2CustomerInvoices** as the first table in the drop-down list. Scroll to the right and select the **FKCustomer** field as the column to relate to.
@@ -146,7 +165,7 @@ Publishing a report and model requires uploading the report to Lifecycle Service
 
 Microsoft Dynamics Lifecycle Services (LCS) is the tool used to migrate development artifacts from developer to production environments. In the May 2016 update, LCS supports migrating PBIX files (authored using the entity store) between environments.
 
-1.  Launch LCS ([http://lcs.dynamics.com](http://lcs.dynamics.com/)) from the developer environment. If you haven’t created a project in the LCS environment, create a project.
+1.  Open [LCS](https://lcs.dynamics.com/) from the developer environment. If you haven’t created a project in the LCS environment, create a project.
 2.  Scroll to the right and you will notice the **Asset Library** icon. Click the icon and launch **Asset Library**.
 
 Notice that the asset library enables adding **PowerBI report models** (PBIX files) as implementation artifacts to a project.
@@ -166,12 +185,19 @@ Notice that the asset library enables adding **PowerBI report models** (PBIX fil
 If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.
 
 1.  Launch the client from the instance that you want to use to deploy the Power BI reports. Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.
-2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**. **Note:** This form will only show the LCS projects that the current user has access to. If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.
+2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**.
+
+    > [!NOTE]
+    > This form will only show the LCS projects that the current user has access to. If this step is being performed by an administrator, either the administrator needs to have access to the project, or the PBIX artifacts need to be imported into a project that the administrator has access to.
 
 ### Publish Power BI reports to a production environment
 
 1.  Open **System Administration** &gt; **Setup** &gt; **Deploy PowerBI** from the client. You will see the file that you uploaded to LCS.
-2.  Select the **Sales Report** file and select the **Deploy Power BI files** option on the menu bar. **Note:** You may be asked to consent publishing to the PowerBI.com service. Click the link to provide consent. When consent is complete, you need to go back to the original browser window and click the **Close** button.
+2.  Select the **Sales Report** file and select the **Deploy Power BI files** option on the menu bar.
+
+    > [!NOTE]
+    > You may be asked to consent publishing to the PowerBI.com service. Click the link to provide consent. When consent is complete, you need to go back to the original browser window and click the **Close** button.
+
 3.  After you successfully publish the file, the Power BI report will appear in your PowerBI.com subscription. You will notice that the report now points to the entity store in the production environment.
 
 ## Continuing with PowerBI.com

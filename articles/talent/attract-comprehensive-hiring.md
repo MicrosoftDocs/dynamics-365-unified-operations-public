@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Attract comprehensive hiring add-on capabilities
-description: This topic provides information about the capabilities in Microsoft Dynamics 365 for Talent add-on, Attract with comprehensive hiring.
+title: Which version of Microsoft Dynamics 365 for Talent - Attract
+description: This topic provides information about the capabilities in the different versions of Microsoft Dynamics 365 for Talent - Attract.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,41 +30,63 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Attract comprehensive hiring add-on capabilities
+# Which version of Attract?
 
 [!include[banner](../includes/banner.md)]
 
-Different organizations value different sets of functionalities within Attract. As a result, there are two "levels" of the Attract product. There is an Attract product that targets smaller teams or organizations, where the hiring manager is the primary user for the hiring process. There is also a comprehensive hiring add-on that can be added to the Attract product, at an additional cost, which targets medium to large teams or organizations where the Recruiter or Talent specialist is the primary user for the hiring process.
-For more information about pricing and licensing, see the most recent [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf).
+The version of Microsoft Dynamics 365 for Talent: Attract that is right for you depends on your organization's size and needs. The basic version of Attract provides a subset of functionality that is targeted at smaller teams or organizations where the hiring manager is the primary user. You can start to use the basic version of Attract with one or more licenses.
 
-Free trials of Attract automatically include the comprehensive hiring add-on for the period of the trial. If the comprehensive hiring add-on is needed for your organizational needs, find a [local Dynamics 365 for Talent partner](https://dynamics.microsoft.com/partners/find-a-partner/) to help you with your needs.
+Attract with the Comprehensive Hiring Add-On is targeted at medium to large teams or organizations where the recruiter or talent specialist is the primary user. The Comprehensive Hiring Add-On requires that licenses be purchased through a [Microsoft Dynamics 365 partner](https://dynamics.microsoft.com/partners/find-a-partner/).
 
-## Capability details
+> [!NOTE]
+> The Attract trial showcases Attract with the Comprehensive Hiring Add-On. This add-on provides comprehensive recruiting and hiring capabilities, such as the ability to post jobs to an Attract career site or an external recruiting site such as LinkedIn. If you choose the basic version of Attract, your subscription will include a subset of the capabilities that are provided in the trial version.
 
-The following overview shows the capabilities of Attract across the Attract and Attract with comprehensive hiring add-on.
+For more information about pricing and licensing, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
-| **Capability​**                                           | **Attract​**         | **Attract with comprehensive hiring​** |
-|----------------------------------------------------------|---------------------|---------------------------------------|
-| **Audience / Primary**  **Persona​**                      | **People managers​** | **Recruiters/Talent specialists​**    |
-| Job requisition management                                | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Job level hiring process configuration                    | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Candidate creation & profile management​                  | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Intelligent interview scheduling ​                        | :heavy_check_mark:​  | :heavy_check_mark:                    |
-| Single Personal talent pool​ setup                        | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Security and role management                              | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Basic dashboard​                                          | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Candidate access to individual application details        | :heavy_check_mark:   | :heavy_check_mark:                    |
-| Job requisition approval flow                             | ​                    | :heavy_check_mark:                    |
-| Organization level hiring process template management​    | ​                    | :heavy_check_mark:                    |
-| Job posting to Attract career site​                       | ​                    | :heavy_check_mark:                    |
-| Job posting to external career sites​                     | ​                    | :heavy_check_mark:                    |
-| Candidate application flows through Attract career site   |                      | :heavy_check_mark:                    |
-| Candidate access to full profile and application history​ | ​                    | :heavy_check_mark:                    |
-| LinkedIn Recruiter connection​<sup>1</sup>                | ​                    | :heavy_check_mark:                    |
-| Offer management​                                         | ​                    | :heavy_check_mark:                    |
-| Shared and global talent pools​ setup                     | ​                    | :heavy_check_mark:                    |
-| Email template management​                                | ​                    | :heavy_check_mark:                    |
-| Candidate and job recommendations​                        | ​                    | :heavy_check_mark:                    |
+## Feature comparison
 
+| Capability | Attract | Comprehensive Hiring Add-On |
+| ---------- | :-----------: | :-------------------: |
+| Basic dashboard | :heavy_check_mark: | :heavy_check_mark: |
+| Manage security and roles | :heavy_check_mark: | :heavy_check_mark: |
+| Manage job requisitions | :heavy_check_mark: | :heavy_check_mark: |
+| Create a job-level hiring process | :heavy_check_mark: | :heavy_check_mark: |
+| Create candidates, and manage profiles | :heavy_check_mark: | :heavy_check_mark: |
+| Create a single talent pool | :heavy_check_mark: | :heavy_check_mark: |
+| Schedule interviews | :heavy_check_mark: | :heavy_check_mark: |
+| Provide candidate access to application details | :heavy_check_mark: | :heavy_check_mark: |
+| Create approval flows for job requisitions | | :heavy_check_mark: |
+| Manage organization-level hiring processes | | :heavy_check_mark: |
+| Post jobs to Attract and external career sites | | :heavy_check_mark: |
+| Create candidate application flows through an Attract career site | | :heavy_check_mark: |
+| Provide candidate access to a full profile and application history | | :heavy_check_mark: |
+| Connect with LinkedIn Recruiter<br></br>This capability requires a LinkedIn Recruiter license, which must be <br></br> purchased separately through LinkedIn.</blockquote> | | :heavy_check_mark: |
+| Manage offers | | :heavy_check_mark: |
+| Create shared and global talent pools | | :heavy_check_mark: |
+| Manage email templates | | :heavy_check_mark: |
+| Provide candidate and job recommendations | | :heavy_check_mark: |
 
-<sup>1</sup>LinkedIn recruiter licenses, which must be purchased separately through LinkedIn, are a prerequisite for this feature.
+## Find out which version of Attract you have
+
+1. In Attract, select the question mark (**?**) in the upper-right corner of the page.
+2. Select **About**.
+
+    The window that appears shows which type of license you have for Attract.
+
+    ![View your Attract license type](media/attract-license-types.png)
+
+## Frequently asked questions
+
+### Why don't I see all the features that were included in the Attract trial?
+
+There are several reasons why you might not see all the features that were included in the Attract trial:
+
+- The Attract trial showcases Attract with the Comprehensive Hiring Add-On, and you now have the basic version of Attract. The basic version of Attract includes a subset of features that is targeted at hiring managers for small teams and organizations.
+- You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct roles to use all the features. For more information, see [Security and role management in Attract](security-attract.md).
+
+### Why don't I see all the Attract features that my coworker sees?
+
+There are several reasons why you might not see all the Attract features that your coworker sees:
+
+- Your coworker is working with a trial or a license for Attract with the Comprehensive Hiring Add-On, whereas you're working with the basic version of Attract.
+- You have Attract with the Comprehensive Hiring Add-On, but you haven't been assigned the correct roles to use all the features. For more information, see [Security and role management in Attract](security-attract.md).

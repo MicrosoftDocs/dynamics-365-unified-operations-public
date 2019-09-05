@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 25 (April 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/14/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,16 +29,15 @@ ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 25. This version has a build number of 7.0.5222. For more information about Platform update 25, see [Additional resources](whats-new-platform-25.md#additional-resources).
 
 ## Extensibility enhancements
-The [second wave of platform extensibility enhancements](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) included in Platform update 25 is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
+The [second wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility2) included in Platform update 25 is documented in the April 2019 Release notes. There are fourteen enhancements detailed, with one of the highlights being that Chain of Command on an InternalUseOnlyAttribute method is now allowed with just a warning.
 
 ## PowerBI.com report pinning
 You can take advantage of improved flexibility in customization options available in the web client for power users by using built-in tooling to replace standard analytical reports embedded in the application with custom solutions hosted on PowerBI.com. With the latest Platform update, power users can replace the standard reports in application workspaces with reports hosted on PowerBI.com. These updates are immediately made available to other users of the workspace, replacing the standard solution. Additional options include the ability to revert back to the analytical reports that were originally released with the application.
@@ -46,7 +45,7 @@ You can take advantage of improved flexibility in customization options availabl
 ## Entity store in Azure Data Lake (public preview)
 Entity store is an Operational data warehouse that contains simplified transactional data for reporting with Power BI. Now you can stage entity store in your own Azure Data Lake Storage (ADLS Gen2). You can use PowerBI.com in addition to other Azure and third-party tools to work with data. When this feature is enabled, entity store data isn't populated in the relational entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with entity store.
 
-To enable this feature, see [Entity store in your own Business Data Lake](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake).
+To enable this feature, see [Entity store in your own Business Data Lake](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/erp-data-entity-store-byod-business-data-lake).
 
 ## Trickle feed support for entity store in Azure Data Lake (public preview)
 When entity store is staged in Azure Data Lake, you have the option to enable trickle feed updates. If the trickle feed option is enabled, transactional data gets updated in your own Azure Data Lake as soon as they are committed in Dynamics 365 for Finance and Operations. Use this option to enable real-time reporting with transactional data using PowerBI.com and other tools.
@@ -58,7 +57,7 @@ You can now empower users to author the reports they need without relying on a d
 Use built-in system administration tools to manage network printers across legal entities with ease. You can modify device properties and delete network printers by using a single view. These tools will drastically simplify the task of configuring network printer devices available within Dynamics 365 for Finance and Operations applications.
 
 ## Client alert email support
-Stay on top of your business data with integrated change tracking tools. With the latest Platform update, you can create alert rules that automatically dispatch email notifications to pre-defined groups of internal and external contacts when triggered by an event. With Finance and Operations, you can define custom alert rules to monitor filtered views of their data. For more information, see [Client Alerts notifications by email](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/alert-email-notifications).
+Stay on top of your business data with integrated change tracking tools. With the latest Platform update, you can create alert rules that automatically dispatch email notifications to pre-defined groups of internal and external contacts when triggered by an event. With Finance and Operations, you can define custom alert rules to monitor filtered views of their data. For more information, see [Client Alerts notifications by email](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/alert-email-notifications).
 
 ## Client alert sub-table field tracking
 The latest Platform update release includes the ability to create alert rules that monitor updates made to fields sourced from child tables. Previously, options were limited to fields sourced from the root data source. Now you can able define alert rules for all fields visible to the user including those from child tables.
@@ -69,14 +68,14 @@ Azure blob storage account can be configured as an endpoint for business events.
 For more information about business events, see [Business events](../../dev-itpro/business-events/home-page.md). 
 
 > [!Note]
-> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). For information about how to enable the feature, see [Enabling business events](../../dev-itpro/business-events/home-page.md#enabling-business-events).
+> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 ## Batch jobs single scheduler
-Improvements made in the batch framework optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which maintains a higher throughput. This is enabled by default in Platform update 25.
+Improvements are made in the batch framework to optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on batch tables and may increase throughput. This is enabled by default in Platform update 25.
 
 ## Batch Jobs enhanced forms
 The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
-Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
+Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
 
 ## Batch jobs alerts and notifications
 You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Alerts](../../dev-itpro/sysadmin/alerts.md).
@@ -89,7 +88,7 @@ For information about the bug fixes included in each of the updates that are par
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-[Check out the April '19 release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+[Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.

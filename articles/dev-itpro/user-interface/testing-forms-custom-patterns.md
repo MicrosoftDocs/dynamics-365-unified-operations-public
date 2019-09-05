@@ -5,7 +5,7 @@ title: Test forms that use custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28291
@@ -72,7 +72,7 @@ You can find the forms that use custom patterns by using the **Form Patterns** r
 Follow these steps. At each step, examine your form for layout issues. As part of your examination, look at all tab pages, and any groups that can expand/collapse content.
 
 1.  Open a browser window at full-screen size, and navigate to your form/control (in low density). It's a good idea to starting your testing at a resolution of 1366 × 768.
-2.  Press the Windows log key+Left Arrow to switch the browser window to Snap view (half the screen).
+2.  Press the Windows logo key+Left Arrow to switch the browser window to Snap view (half the screen).
 3.  Slowly resize the browser horizontally back to full width. Stop at intervals, and evaluate the form layout.
 4.  Slowly resize the browser vertically from full height to half-screen height. Stop at intervals, and evaluate the form layout.
 5.  Maximize the browser window to full-screen size. Adjust the zoom levels (50 percent, 75 percent, 125 percent, 150 percent, and 200 percent), and evaluate the form layout.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master planning and multisite functionality
+title: Master planning and multisite functionality overview
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Master planning and multisite functionality
+# Master planning and multisite functionality overview
 
 [!include [banner](../includes/banner.md)]
 

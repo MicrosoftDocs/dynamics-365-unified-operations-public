@@ -17,7 +17,7 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 20501
@@ -166,7 +166,7 @@ For this topic, we have already created workers and assigned them to the Houston
 ### Create a worker
 
 1. Go to **Retail** &gt; **Employees** &gt; **Workers**.
-2. On the Action Pane, select **+New** to create a new employee.
+2. On the Action Pane, select **New** to create a new employee.
 3. Enter the first and last name. For example, enter **John** as the first name and **Smith** as the last name.
 4. Verify that the **Legal entity** field is set to **USRT**, the **Worker type** field is set to **Employee**, and the **Employment start date** field is set to the current date at 12 AM, so that the worker's employment starts immediately.
 5. Select the **Assign a position** check box. Select position number **000544**, which is the Store manager position.

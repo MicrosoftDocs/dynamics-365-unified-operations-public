@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21681
@@ -74,7 +74,10 @@ You use country/region-specific functionality to help meet the legal, regulatory
 </table>
 
 ## Using the CountryRegionCodes property
-You create country/region context on a controlled entity by setting the ISO code value on the **CountryRegionCodes** property. You can find the list of ISO country and region codes [here](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm). Microsoft Dynamics 365 for Finance and Operations compares the values of the **CountryRegionCodes** property to the country/region context of the controlling party. If the values match, the element is shown. Otherwise, it's hidden. **Tip:** To add more than one ISO country and region code to the **CountryRegionCodes** property, use a comma-separated list.
+You create country/region context on a controlled entity by setting the ISO code value on the **CountryRegionCodes** property. You can find the list of ISO country and region codes on the [ISO website](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm). Microsoft Dynamics 365 for Finance and Operations compares the values of the **CountryRegionCodes** property to the country/region context of the controlling party. If the values match, the element is shown. Otherwise, it's hidden.
+
+> [!TIP]
+> To add more than one ISO country and region code to the **CountryRegionCodes** property, use a comma-separated list.
 
 ## Using the legal entity as the controlling party
 The **Country/region** value in the primary address of the legal entity determines the country/region context of the controlling party. The default value of the **Country/region** field is the locale of the Finance and Operations client. The following illustration shows how to set the primary address of the legal entity. [![LE\_Edit\_address](./media/le_edit_address-1024x570.jpg)](./media/le_edit_address.jpg)
@@ -88,7 +91,7 @@ In this example, the customer becomes the controlling entity. The customer's add
 Additional resources
 --------
 
-[ISO codes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
+[ISO codes](https://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
 
 
 

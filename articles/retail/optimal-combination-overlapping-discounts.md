@@ -17,7 +17,7 @@ ms.search.form: RetailParameters, RetailPeriodicDiscount,
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 89643
@@ -46,11 +46,11 @@ You can create an unlimited number of retail discounts on a common set of produc
 
 In this example, two products are required in order to qualify for each discount, and the discounts can't be combined. The discounts in this example are **Best price** discounts. Both products qualify for both discounts. Here are the two discounts.
 
-![Overlapping discount combo 01](./media/overlapping-discount-combo-01.jpg)
+![Example of two Best price discounts](./media/overlapping-discount-combo-01.jpg)
 
 For any two products, the better of these two discounts depends on the prices of the two products. When the price of both products is equal or almost equal, discount 1 is better. When the price of one product is significantly less than the price of the other product, discount 2 is better. Here is the mathematical rule for evaluating these two discounts against each other.
 
-![Overlapping discount combo 02](./media/overlapping-discount-combo-02.jpg)
+![Rule for evaluating the discounts](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > When the price of product 1 is equal to two-thirds of the price of product 2, the two discounts are equal. In this example, the effective discount percentage for discount 1 varies from a few percent (when the prices of the two products are far apart) to a maximum of 25 percent (when the two products have the same price). The effective discount percentage for discount 2 is fixed. It's always 20 percent. Because the effective discount percentage for discount 1 has a range that can be more than or less than discount 2, the best discount depends on the prices of the two products that must be discounted. In this example, the calculation is completed quickly, because only two discounts are applied on only two products. There are only two possible combinations: one application of discount 1 or one application of discount 2. There are no permutations to calculate. The value of each discount is calculated by using both products, and the best discount is used.
@@ -64,11 +64,11 @@ Next, we will use four products and the same two discounts. All four products qu
 
 To read the tables, use one product from a row and one product from a column. For example, in the table for discount 1, when you combine the two $20 products, you get $10 off. In the table for discount 2, when you combine the $15 product and the $5 product, you get $4 off.
 
-![Overlapping discount combo 03](./media/overlapping-discount-combo-03.jpg)
+![Example that uses four products for the same two discounts](./media/overlapping-discount-combo-03.jpg)
 
 First, we find the largest discount that is available from any two products by using either discount. The two tables show the discount amount for all combinations of the two products. The shaded portions of the tables represent either cases where a product is paired with itself, which we can't do, or a reverse pairing of two products that produces the same discount amount and can be ignored. By looking at the tables, you can see that discount 1 for the two $20 items is the largest discount that is available for either discount on all four products. (This discount is highlighted in green in the first table.) That leaves only the $15 product and the $5 product. By looking at the two tables again, you can see that, for these two products, discount 1 gives a $2.50 discount, whereas discount 2 gives a $4 discount. Therefore, we select discount 2. The total discount is $14. To make this discussion easier to visualize, here are two additional tables that show the effective discount percentage for all possible two-product combinations for both discount 1 and discount 2. Only half the list of combinations is included, because, for these two discounts, the order in which the two products are put into the discount doesn't matter. The highest effective discount (25 percent) is highlighted in green, and the lowest effective discount (10 percent) is highlighted in red.
 
-![Overlapping discount combo 04](./media/overlapping-discount-combo-04.jpg)
+![Effective discount percentage for all two-product combinations for both discounts](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > When prices vary, and two or more discount compete, the only way to guarantee the best combination of discounts is to evaluate both discounts and compare them.
@@ -77,7 +77,7 @@ First, we find the largest discount that is available from any two products by u
 
 This section continues the example from the previous section. We will add more products and another discount, and see how many combinations must be calculated and compared. The following table shows the number of possible discount combinations as the product quantity increases. The table shows what happens both when there are two overlapping discounts, as in the previous example, and when there are three overlapping discounts. The number of possible discount combinations that must be evaluated soon exceeds what even a fast computer can calculate and compare quickly enough to be acceptable for retail transactions.
 
-![Overlapping discount combo 05](./media/overlapping-discount-combo-05.jpg)
+![Number of possible discount combinations as the product quantity increases](./media/overlapping-discount-combo-05.jpg)
 
 When even larger quantities or more overlapping discounts are applied, the total number of possible discount combinations quickly goes into the millions, and the time that is required in order to evaluate and select the best possible combination quickly becomes noticeable. Some optimizations have been done in the retail price engine to reduce the total number of combinations that must be evaluated. However, because the number overlapping discounts and the quantities in a transaction aren't limited, a large number of combinations will always have to be evaluated whenever there are overlapping discounts. This issue is the issue that the marginal value ranking method addresses.
 
@@ -85,6 +85,6 @@ When even larger quantities or more overlapping discounts are applied, the total
 
 To resolve the issue of an exponentially increasing number of combinations that must be evaluated, an optimization exists that calculates the value per shared product of each discount on the set of products that two or more discounts can be applied to. We refer to this value as the **marginal value** of the discount for the shared products. The marginal value is the average per product increase in the total discount amount when the shared products are included in each discount. The marginal value is calculated by taking the total discount amount (DTotal), subtracting the discount amount without the shared products (DMinus\\ Shared), and dividing that difference by the number of shared products (ProductsShared).
 
-![Overlapping discount combo 06](./media/overlapping-discount-combo-06.jpg)
+![Formula for calculating marginal value](./media/overlapping-discount-combo-06.jpg)
 
 After the marginal value of each discount on a shared set of products is calculated, the discounts are applied to the shared products in order, exhaustively, from highest marginal value to lowest marginal value. For this method, all remaining discount possibilities aren't compared every time after a single instance of a discount is applied. Instead, the overlapping discounts are compared one time and then applied in order. No additional comparisons are done. You can configure the threshold to switch to the marginal value method on the **Discount** tab of the **Retail parameters** page. The acceptable time to calculate the total discount varies across retail industries. However, this time generally falls in the range of tens of milliseconds to one second.

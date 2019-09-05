@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -68,7 +68,7 @@ Microsoft provides flexible, industry-leading support, services, and resources t
 To find more information, visit:
 
 - [Dynamics 365 Support](https://www.microsoft.com/dynamics365/support)
-- [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## Step 3: Learn about FastTrack and plan your deployment
 

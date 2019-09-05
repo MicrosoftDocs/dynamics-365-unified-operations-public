@@ -10,6 +10,9 @@ ms.author: margoc
 
 Find the right online training, in person workshops, and events for your role as a user of Microsoft Dynamics 365 for Finance and Operations. 
 
+
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
+
 :::row:::
     :::column:::
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
@@ -53,7 +56,11 @@ Find the right online training, in person workshops, and events for your role as
 
     [Core platform knowledge](learning-catalog-administrator.md#core-platform-knowledge)
 
-    [Tech talks](learning-catalog-administrator.md#tech-talks)
+    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
+
+    [Servicing](learning-catalog-administrator.md#servicing)
+
+    [Testing](learning-catalog-administrator.md#testing)
 
         :::column-end:::
     :::column:::
@@ -66,9 +73,13 @@ Find the right online training, in person workshops, and events for your role as
 
     [Get started](learning-catalog-developer.md#get-started)
 
-    [Developer](learning-catalog-developer.md#developer)
+    [Core development concepts](learning-catalog-developer.md#core-development-concepts)
 
-    [Tech talks](learning-catalog-developer.md#tech-talks)
+    [Servicing](learning-catalog-administrator.md#servicing)
+
+    [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
+
+    [Testing](learning-catalog-administrator.md#testing)
 
     :::column-end:::
 :::row-end:::
@@ -91,8 +102,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
 
-    [Tech talks](learning-catalog-project-manager.md#tech-talks)
-
         :::column-end:::
     :::column:::
 
@@ -111,8 +120,6 @@ Find the right online training, in person workshops, and events for your role as
     [Manufacturing](learning-catalog-functional-consultant.md#manufacturing)
 
     [Supply chain management](learning-catalog-functional-consultant.md#supply-chain-management)
-
-    [Tech talks](learning-catalog-functional-consultant.md#tech-talks)
 
     :::column-end:::
 :::row-end:::
@@ -134,10 +141,19 @@ Find the right online training, in person workshops, and events for your role as
 
     [Solution Architects Learning Catalog](learning-catalog-solution-architect.md)
 
-    [Events](learning-catalog-solution-architect.md#events)
+    [Get started](learning-catalog-solution-architect.md#get-started)
 
-    [Tech talks](learning-catalog-solution-architect.md#tech-talks)
+    [Core platform knowledge](learning-catalog-solution-architect.md#core-platform-knowledge)
 
+    [Core development concepts](learning-catalog-solution-architect.md#core-development-concepts)
+
+    [Migration and upgrade](learning-catalog-solution-architect.md#migration-and-upgrade)
+
+    [Servicing](learning-catalog-solution-architect.md#servicing)
+
+    [Testing](learning-catalog-solution-architect.md#testing)
+
+    
     :::column-end:::
 :::row-end:::
 

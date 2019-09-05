@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -43,7 +43,6 @@ This sample is a part of the Retail software development kit (SDK). For informat
 
 This sample consists of extensions for the Hardware station, commerce runtime (CRT), and point of sale (POS). To run this sample, you must modify and build the Hardware station, CRT, and POS projects. We recommend that use you an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
-
 > [!NOTE]
 > Some steps in the procedures in this topic differ, depending on the version of Microsoft Dynamics 365 for Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
@@ -53,87 +52,88 @@ Follow these steps to set up a development environment so that you can test and 
 
 1. Extend the Hardware station component:
 
-   1. Open the Hardware station solution under **RetailSDK\SampleExtensions\HardwareStation**.
-   2. Find the **HardwareStation.Extension.FiscalRegisterSample.csproj** extension project, and compile it.
-   3. Find extension assemblies and configurations.
-      # [Retail 7.3 and earlier](#tab/retail-7-3)
+    1. Open the Hardware station solution under **RetailSDK\\SampleExtensions\\HardwareStation**.
+    2. Find the **HardwareStation.Extension.FiscalRegisterSample.csproj** extension project, and compile it.
+    3. Find extension assemblies and configurations.
 
-      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+        # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
-       - The **Interop.CleanCash_1_1.dll** assembly
+        Find the following files in **Extension.FiscalRegisterSample\\bin\\Debug**:
 
-      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
+        - The **Interop.CleanCash\_1\_1.dll** assembly
 
-      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+        # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
-       - The **Interop.CleanCash_1_1.dll** assembly
+        Find the following files in **Extension.FiscalRegisterSample\\bin\\Debug**:
 
-      # [Retail 10.0 and later](#tab/retail-10-0)
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
+        - The **Interop.CleanCash\_1\_1.dll** assembly
 
-      Find the following files in **Extension.FiscalRegisterSample\bin\Debug**:
+        # [Retail 10.0 and later](#tab/retail-10-0)
 
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
-       - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration      
-      
-      Find the following file in **RetailSDK\References\Microsoft.Dynamics.Commerce.CleanCashInterop.1.0.1\lib\net451**:
+        Find the following files in **Extension.FiscalRegisterSample\\bin\\Debug**:
 
-       - The **Interop.CleanCash_1_1.dll** assembly
-    ---
-   4. Copy the files to a deployed Hardware station machine:
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll** assembly
+        - The **Contoso.Commerce.HardwareStation.FiscalRegisterSample.dll.config** configuration
 
-       - **Remote Hardware station:** Copy the files to the **bin** folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
-       - **Local Hardware station:** Copy the files to the Modern POS client broker location.
+        Find the following file in **RetailSDK\\References\\Microsoft.Dynamics.Commerce.CleanCashInterop.1.0.1\\lib\\net451**:
 
-   5. Find the configuration file for Hardware station's extensions.
+        - The **Interop.CleanCash\_1\_1.dll** assembly
 
-      # [Retail 7.3 and earlier](#tab/retail-7-3)
+        ---
 
-      **Remote Hardware station:** The file is named **hardwarestation.shared.config**, and it's under the IIS Hardware station site location.
+    4. Copy the files to a deployed Hardware station machine:
 
-      **Local Hardware station:** The file is named **HardwareStation.Dedicated.config**, and it's under the Modern POS client broker location.
+        - **Remote Hardware station:** Copy the files to the **bin** folder under the Microsoft Internet Information Services (IIS) Hardware station site location.
+        - **Local Hardware station:** Copy the files to the Modern POS client broker location.
 
-      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+    5. Find the configuration file for Hardware station's extensions.
 
-      The file is named **HardwareStation.Extension.config**:
+        # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-      **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+        - **Remote Hardware station:** The file is named **hardwarestation.shared.config**, and it's under the IIS Hardware station site location.
+        - **Local Hardware station:** The file is named **HardwareStation.Dedicated.config**, and it's under the Modern POS client broker location.
 
-      **Local Hardware station:** The file is located under the Modern POS client broker location.
-      
-      # [Retail 10.0 and later](#tab/retail-10-0)
+        # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
-      The file is named **HardwareStation.Extension.config**:
+        The file is named **HardwareStation.Extension.config**:
 
-      **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+        - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+        - **Local Hardware station:** The file is located under the Modern POS client broker location.
 
-      **Local Hardware station:** The file is located under the Modern POS client broker location.
+        # [Retail 10.0 and later](#tab/retail-10-0)
 
-    ---
+        The file is named **HardwareStation.Extension.config**:
+
+        - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+        - **Local Hardware station:** The file is located under the Modern POS client broker location.
+
+        ---
 
     6. Add the following section to the **composition** section of the config file.
 
-      # [Retail 7.3 and earlier](#tab/retail-7-3)
+        # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-      ``` xml
-      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-      ```
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+        ```
 
-      # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+        # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
-      ``` xml
-      <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-      ```
-        
-      # [Retail 10.0 and later](#tab/retail-10-0)
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+        ```
 
-      ``` xml
-      <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
-      ```
-    ---
+        # [Retail 10.0 and later](#tab/retail-10-0)
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+        ```
+
+        ---
 
     7. Restart the Hardware station service:
 
@@ -142,37 +142,37 @@ Follow these steps to set up a development environment so that you can test and 
 
 2. Extend the CRT component:
 
-   1. Open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\SampleExtensions\CommerceRuntime**.
-   2. Find the **Runtime.Extensions.FiscalRegisterReceiptSample** project, and build it.
-   3. Find the ext.config file for CRT:
+    1. Open the CRT solution, **CommerceRuntimeSamples.sln**, under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+    2. Find the **Runtime.Extensions.FiscalRegisterReceiptSample** project, and build it.
+    3. Find the ext.config file for CRT:
 
-       - **Retail Server:** The file is named **commerceRuntime.ext.config**, and it's under the **bin\ext** folder under the IIS Retail server site location.
-       - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the **bin\ext** folder under the local CRT client broker location.
+        - **Retail Server:** The file is named **commerceRuntime.ext.config**, and it's under the **bin\\ext** folder under the IIS Retail server site location.
+        - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the **bin\\ext** folder under the local CRT client broker location.
 
-   4. Register the CRT change in the configuration file.
+    4. Register the CRT change in the configuration file.
 
-       ``` xml
-       <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
-       ```
+        ``` xml
+        <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
+        ```
 
-       > [!NOTE]
-       > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+        > [!NOTE]
+        > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-   5. Find the **Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** assembly file in **Extensions.FiscalRegisterReceiptSample\bin\Debug**.
-   6. Copy the assembly to the CRT extensions folder:
+    5. Find the **Contoso.Commerce.Runtime.FiscalRegisterReceiptSample.dll** assembly file in **Extensions.FiscalRegisterReceiptSample\\bin\\Debug**.
+    6. Copy the assembly to the CRT extensions folder:
 
-       - **Retail Server:** Copy the assembly to the **\bin\ext** folder under the IIS Retail server site location.
-       - **Local CRT on Modern POS:** Copy the assembly to the **\ext** folder under the local CRT client broker location.
+        - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail server site location.
+        - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
-      > [!NOTE]
-      > All the code changes for CRT and Retail Server are all part of RetailSdk\SampleExtensions. Therefore, the preceding steps show how to build, deploy, and test these code changes.
+        > [!NOTE]
+        > All the code changes for CRT and Retail Server are all part of RetailSdk\\SampleExtensions. Therefore, the preceding steps show how to build, deploy, and test these code changes.
 
 3. Extend the Modern POS component:
 
-    1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the **Run** command. (Modern POS must not be customized. You must enable User Account Control [UAC], and you must uninstall previously installed instances of Modern POS as required.)
+    1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the **Run** command. (Modern POS must not be customized. You must enable User Account Control \[UAC\], and you must uninstall previously installed instances of Modern POS as required.)
     2. Include **FiscalRegisterSample** in the **Pos.Extensions** project.
     3. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    3. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
+    4. Enable the extension in **Extensions\\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -181,15 +181,15 @@ Follow these steps to set up a development environment so that you can test and 
         }
         ```
 
-    4. Rebuild the solutions.
-    5. Run Modern POS in the debugger, and test the functionality.
+    5. Rebuild the solutions.
+    6. Run Modern POS in the debugger, and test the functionality.
 
 4. Extend the Cloud POS component:
 
-    1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
+    1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**, and make sure that it can be compiled without errors.
     2. Include **FiscalRegisterSample** in the **Pos.Extensions** project.
     3. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    3. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
+    4. Enable the extension in **Extensions\\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -198,9 +198,9 @@ Follow these steps to set up a development environment so that you can test and 
         }
         ```
 
-    4. Rebuild the solutions.
-    5. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
-    6. Test the functionality.
+    5. Rebuild the solutions.
+    6. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
+    7. Test the functionality.
 
 5. Set up the fiscal register configuration and other required parameters in Retail headquarters. For more information, see [Cash registers for Sweden](emea-swe-cash-registers.md).
 
@@ -211,7 +211,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
 1. Extend the POS component
 
     1. Enable the extension to be compiled in **tsconfig.json** by removing the **FiscalRegisterSample** folder from the exclude list.
-    2. Enable the extension in **Extensions\extensions.json** by adding the following lines in the appropriate place.
+    2. Enable the extension in **Extensions\\extensions.json** by adding the following lines in the appropriate place.
 
         ``` json
         {
@@ -219,7 +219,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
         }
         ```
 
-1. Make the following changes in the package config files under the **RetailSdk\Assets** folder:
+2. Make the following changes in the package config files under the **RetailSdk\\Assets** folder:
 
     1. Add the following section to the **composition** section of the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** config files.
 
@@ -252,7 +252,8 @@ Follow these steps to create and apply deployable packages that contain Retail c
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
         ```
+
         ---
 
-2. Run **msbuild** for the whole Retail SDK to create deployable packages.
-3. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+3. Run **msbuild** for the whole Retail SDK to create deployable packages.
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

@@ -66,7 +66,7 @@ Starting in Platform update 22, the "is one of" operator in the Filter Pane and 
 
 ### Configure UK payroll integration between Talent and Dayforce
 
-The integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/configure-payroll-integration).
+The integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## Coming soon
 

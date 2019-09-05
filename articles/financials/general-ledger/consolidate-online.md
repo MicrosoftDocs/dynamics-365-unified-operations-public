@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -75,7 +75,7 @@ On the **Legal entities** tab, you define the companies that should be included 
 
 ![Legal entities tab](./media/legal-entities-cons.png "Legal entities tab")
 
-![Accounts for automatic transactions page](./media/accounts%20for%20automatic%20(cons).png "Accounts for automatic transactions page")
+![Accounts for automatic transactions page](./media/accounts-for-automatic-cons.png "Accounts for automatic transactions page")
 
 ## Elimination
 On the **Elimination** tab, you have three options for processing eliminations:

@@ -5,7 +5,7 @@ title: Extensibility home page
 description: This topic provides links to topics about extensibility.
 author: FrankDahl
 manager: AnnBe
-ms.date: 02/28/2019
+ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: fdahl
-ms.search.validFrom: 2017-02-28
+ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
 
 ---
@@ -46,11 +46,8 @@ These introductory topics contain general information about customization. This 
 + [Extensibility FAQ](app-sealing-faq.md) 
 
 ## What's new
-This section lists the extensibility-related updates that have been made since July 2017.
 
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)](changes-july-2017.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility-changes-73.md)
-+ [Extensibility changes in Dynamics 365 for Finance and Operations release 8.0](Changes-80.md)
+Read [What's new for extensibility](extensibility-new.md) for extensibility-related updates that have been made since July 2017.
 
 ## Getting started
 
@@ -73,7 +70,7 @@ This section includes fundamentals, principles, and practices for making extensi
 
 ## How do I create extensions?
 
-This sections includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
+This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
 
 ### Data types
 + [Add an enum value](add-enum-value.md)
@@ -113,7 +110,7 @@ Information about customization is also shared through blogs where various topic
 + [Extending Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-dynamics-365-for-operations/)
 + [Extending class state](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
 + [Extension methods](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
-+ [Extensible base enumerations](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
++ [Extensible base enumerations](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [Static event subscription](https://blogs.msdn.microsoft.com/mfp/2015/12/10/x-in-ax7-static-event-subscription/)
 + [Responding through delegates](https://blogs.msdn.microsoft.com/mfp/2017/01/31/responding-through-delegates/)
 + [Subscribing to onValidatingWrite](https://blogs.msdn.microsoft.com/mfp/2017/01/31/subscribing-to-onvalidatingwrite/)

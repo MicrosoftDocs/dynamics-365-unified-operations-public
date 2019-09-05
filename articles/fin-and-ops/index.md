@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 for Finance and Operations documentation
+title: Dynamics 365 for Finance and Operations documentation
 description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
-author: margoc
+author: robinarh
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/25/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62303
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 for Finance and Operations documentation
+# Dynamics 365 for Finance and Operations documentation
 
 [!include [banner](includes/banner.md)]
 
@@ -69,6 +69,11 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Get notified about service updates</a></p>
 <p><a href="../dev-itpro/data-entities/data-task-automation.md">Data task automation</a></p>
 <p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation tool</a></p>
+
+<h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrations</a></h3>
+<p><a href="../dev-itpro/business-events/home-page.md">Business events</a></p>
+<p><a href="../dev-itpro/data-entities/data-entities.md">Data entities</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Flow</a></p>
 
 <h3><a href="../financials/index.md">Financial management</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
@@ -114,10 +119,6 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 
 <h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</h3>
 <p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></p>
-
-<p><a href="../dev-itpro/data-entities/integration-overview.md">Data integration</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management</a></p>
-
 <p><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></p>
 <p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></p>
@@ -128,7 +129,6 @@ Much of this content also applies to the related products: Microsoft Dynamics 36
 <p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">On-premises deployment</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></p>
 <p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
 <p><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></p>
 </td>

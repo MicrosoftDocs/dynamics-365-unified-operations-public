@@ -17,7 +17,7 @@ ms.search.form: RetailITWorkspace
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 221954
@@ -50,7 +50,7 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 <tr>
 <td>Retail headquarters</td>
 <td>Retail headquarters for Dynamics 365 for Retail can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Dynamics 365 for Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
-<blockquote>[!IMPORTANT] Building a custom POS or online store solution for Dynamics 365 for Retail is a complex task that requires extensive planning, development, and testing.</blockquote>
+<p><strong>Important:</strong> Building a custom POS or online store solution for Dynamics 365 for Retail is a complex task that requires extensive planning, development, and testing.</p>
 </td>
 </tr>
 <tr>

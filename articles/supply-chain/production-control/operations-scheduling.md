@@ -5,7 +5,7 @@ title: Operations scheduling
 description: This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,6 +71,9 @@ The operations schedule also drives master planning and determines calculations 
 -   **Backlogged productions** – Products that are planned, released, or started
 -   **Material availability** – Inventory, subproductions, suppliers, and vendors
 -   **Capacity availability** – Resources that are required for production
+
+> [!NOTE]
+> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered. 
 
 ## Cancellations
 When you run operations scheduling, you can cancel specific parts of the routing. These parts include the queue time, setup time, process time, overlap time, and transport times.

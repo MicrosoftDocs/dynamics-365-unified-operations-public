@@ -80,7 +80,7 @@ One of the other service orders that was generated for the month of January beco
 
 ## Post from projects
 
-At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** form and posts the service orders that have been completed. For more information, see [Post service orders (class form)](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** form and posts the service orders that have been completed. For more information, see [Post service orders (class form)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## Delete service orders
 
@@ -88,7 +88,7 @@ During the second half of the year, your customer decides that the service visit
 
 ## See also
 
-[Service orders (form)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

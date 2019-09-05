@@ -47,7 +47,7 @@ For Attract and Onboard, all data is native to Common Data Service.
 
 Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
-more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## Can I map financial dimensions to transfer between Talent and Finance and Operations?
 
@@ -58,7 +58,7 @@ For data that resides in Finance and Operations but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
 information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Map financial dimensions](media/MapFinancialDimensions.png)
 
 ## Sometimes when I import employees, they go into inactive workers in Finance and Operations. Why?
 
@@ -76,7 +76,7 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance and Operations for a specific entity?
 
@@ -84,7 +84,7 @@ Fields can be added or removed from the integration task. Not all data fields
 that exist on the Common Data Service entity will be populated from Core HR.
 Additional data can be populated via PowerApps.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## I set up integration as a batch job, but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
 
@@ -172,7 +172,7 @@ supported in the integration. To include additional data in Common Data Service,
 If the entity is supported and the data is available in Common Data Service, verify the mapping
 is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
-the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## The addresses for my employees are incorrect after I import them into Finance and Operations. What should I do?
 
@@ -209,12 +209,12 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
 - Data Integrator (DI): 
 
-  - [Integrate data into Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 
-  - [Data management](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)

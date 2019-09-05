@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Configure a worker using the mobile job device
-description: This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
+description: This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,45 +30,43 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure shows you how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
+This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
 
+## Verify that a worker is assigned a certain role
 
-## Assign roles to user account
-1. Go to System administration > Users > Users.
-2. Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role. In the sample data, the name would be Shannon.
-3. Highlight the user account record.
-4. In the list, click the "Name" link in the selected row to view the details of the user account.
-5. In the tree, select 'Roles\Machine operator'.
-6. Close the user account details page.
-7. Close the page.
+For this example, verify that user "SHANNON" is assigned the machine operator role before you configure the worker account.
 
-## Configure worker account.
-1. Go to Human resources > Workers > Workers.
-2. Use the Quick Filter to filter on the name of a worker where the user account is associated with the machine operator role. In the sample data, the name would be Shannon.
-3. Highlight the user account record.
-4. In the list, click the "Name" link in the selected row to view the details of the user account.
-5. Click the Employment tab.
-6. Expand the Time registration FastTab and click Activate on registration terminals.
-7. Click Activate on registration terminals.
-8. In the Calculation group field, enter or select a value.
-9. In the Default calculation group field, enter or select a value.
-10. In the Approval group field, enter or select a value.
-11. In the Standard profile field, enter or select a value.
-12. In the Profile group field, enter or select a value.
-13. Click OK.
-14. Click Edit to enter a badge number for the new time registration worker.
-15. In the Badge ID field, type a value.
-16. Click Save.
-17. Use the SaveRecord shortcut.
-18. Close the worker details page.
-19. Close the page.
+1. Go to **Navigation pane > Modules > System administration > Users > Users**.
+2. Search for a user in the quick filter. For this example, enter `shannon`.
+3. Select the link in the **User ID** column of the user account that appears.
+4. In the **User's roles** tree, select **Roles > Machine operator**.
+5. Close the **user details** and **users** pages to return to the home page.
 
-## Assign worker to device group.
-1. Go to Production control > Setup > Manufacturing execution > Configure job card for devices.
-2. Click Add.
-3. In the list, mark the selected row.
-4. Click OK.
-5. Click Edit.
-6. In the Production unit field, you can set the default filter for the worker. This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device.
+## Configure worker account
+1. Go to **Navigation pane > Modules > Human resources > Workers > Workers**.
+2. Search for a user in the quick filter. For this example, enter `shannon`.
+3. Select the link in the **Name** column of the user account that appears.
+4. Select the **Time registration** tab.
+5. Select **Activate on registration terminals**.
+6. Enter or select values in the following fields:  
+
+    - **Calculation group**  
+    - **Default calculation group**  
+    - **Approval group**  
+    - **Standard profile**  
+    - **Profile group**  
+
+7. Select **OK**.
+8. Select **Edit** to enter a badge number for the new time registration worker. Enter a value in the **Badge ID** field.
+9. Select **Save**.
+10. Close the **Worker details** and **Workers** pages.
+
+## Assign worker to device group
+1. Go to **Production control > Setup > Manufacturing execution > Configure job card for devices**.
+2. Select **Add**.
+3. In the list, select the desired worker. For this example, select **SHANNON**.
+4. Select **OK**.
+5. Select **Edit**.
+6. In the **Production unit** field, you can set the default filter for the worker. This will ensure that only production jobs for the selected production unit are shown when the worker logs on to the device. Enter the desired value.
 7. Close the page.
 

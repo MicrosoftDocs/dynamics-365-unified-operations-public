@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Deploy topologies that support continuous build and test automation
+title: Deploy and use an environment that supports continuous build and test automation
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13171
@@ -30,63 +30,59 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Deploy topologies that support continuous build and test automation
+# Deploy and use an environment that supports continuous build and test automation
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to deploy a developer topology that supports continuous build and test automation.
+This topic describes how to deploy and use an environment that supports continuous build and test automation.
 
-Prerequisite: This requires a Azure DevOps account for cloud VM deployment.
+## Prerequisites
+
+Cloud deployment of virtual machines (VMs) requires a Microsoft Azure DevOps subscription.
 
 ## Workflow
-After you have configured a Azure DevOps subscription in Lifecycle Services (LCS), you can trigger Developer Topology Deployment to set up Developer and Build VMs. In this deployment, the Developer VM is configured with workspace mapping to develop against a Azure DevOps project. The Build VM is auto-configured with the build agent/controller to build modules  Azure DevOps project and to execute automated tests with external endpoint for validation. For more information on writing custom test code or generating automated test code to integrate with build infrastructure, see [Testing and validations](testing-validation.md). A typical workflow or usage scenario is shown below. 
 
-[![build12](./media/build12-1024x693.jpg)](./media/build12.jpg)
+After you configure an Azure DevOps subscription in Microsoft Dynamics Lifecycle Services (LCS), you can use LCS to deploy developer VMs or build/test VMs. LCS configures a developer VM that can be mapped to an Azure DevOps project. LCS also configures a build VM that is automatically mapped to an Azure DevOps project and has a build agent/controller that builds modules from the Azure DevOps project and runs automated tests that have an external endpoint for validation. The following illustration shows a typical workflow.
+
+![Relationship of LCS, Azure DevOps, and VMs](./media/deploy-build-test.png)
+
+This workflow includes an LCS deployment of a developer VM and a build/test VM in Azure.
+
++ LCS creates developer and the build/test environments in Azure. To create a build/test environment, LCS must be able to determine where the source code for the Azure DevOps project is.
++ The developer works on source code on the developer VM, and the work is synced to the Azure DevOps project.
++ The build process synchonizes the code from Azure DevOps onto the build/test VM and produces deployable packages that you can apply to sandbox and production environments. The source code doesn't flow directly from the development VM to the build/test VM. They are synced through Azure DevOps.
+
+For information about how to write custom test code or generate automated test code to integrate with the build infrastructure, see [Testing and validations](testing-validation.md).
 
 ## Set up Azure DevOps
-Compare Azure DevOps features required for your organization: <https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
 
--   **TFVC vs GIT**: Currently TFVC is the only supported source control repository, Git is not supported.
--   **Suspend current builds:** If you are deploying the build agent on an existing Azure DevOps project which already has build definition created, please ensure you do not have any active triggers to queue the build. Additionally, make sure there are no builds scheduled / queued against the build pool. 
+### Choose a plan
 
-    [![BuildTriggers](./media/buildtriggers.jpg)](./media/buildtriggers.jpg)
-
--   **Free Azure DevOps accounts provide only one build pipeline**. For each Visual Studio Enterprise subscriber in your organization you're granted an additional pipeline. 
-
-
-To use more build pipelines than you're currently granted, set up your Azure DevOps account with Azure billing: [Set up billing for your account](https://docs.microsoft.com/en-us/azure/devops/organizations/billing/set-up-billing-for-your-organization-vs?view=vsts) 
-
-[![VSTS1](./media/vsts1-300x155.jpg)](./media/vsts1.jpg)
-
--   After your account is linked with the Azure subscription, follow the instructions in the Azure management portal to purchase more concurrent pipelines - [Concurrent pipelines in VSTS](https://docs.microsoft.com/en-us/azure/devops/pipelines/licensing/concurrent-jobs-vsts?branch=master&view=vsts) 
-
-
-[![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
+The first step is to [choose an Azure DevOps plan](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for your organization.
 
 > [!NOTE]
-> Make sure you increase “Private Agents” under PAID option. 
+> TFVC is the only source control repository that is supported. Git isn't supported.
 
-[![VSTS3](./media/vsts3-300x191.jpg)](./media/vsts3.jpg)
+### Set up Azure DevOps
 
--   **Build Agent Pool role and permissions:** <https://msdn.microsoft.com/library/vs/alm/build/agents/admin#agent-pools>
+To set up Azure DevOps, follow these steps.
 
-Once build agents are added, add user (who will be deploying build VM from LCS) to “Agent Pool Administrators” role. 
+1. [Create a personal access token](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops). The token is used for all LCS background actions. These actions include upgrade and deployment. When users initiate actions from LCS, LCS expects that those users will be added to Azure DevOps. The users must authorize LCS access to Azure DevOps on their behalf.
+1. [Configure LCS](../lifecycle-services/synchronize-bpm-vsts.md#lcs-project-settings-set-up-azure-devops).
 
-[![VSTS4](./media/vsts4.jpg)](./media/vsts4.jpg)
+Until you authorize LCS access to Azure DevOps, you will see the following message in action center.
 
--   **Manage agent:** If you have multiple agents configured and want to delete one, select the agent and use the delete button to the right of the status column.
+![VSTS setup in LCS error](./media/vsts-setup-in-lcs_may27.jpg)
 
-    [![build14](./media/build14.jpg)](./media/build14.jpg)
+### Suspend current builds
 
--   **Deleting Default Pool:** If for some reason you have deleted the default pool, please do not create a new pool with the name "Default". Instead create a new pool with the different name and pass the pool name from the "Advanced Settings" customization from LCS during deployment.
--   **Personal access token:** This token is used for all Lifecycle Services (LCS) background actions, including upgrade and deployment. When a user initiates actions from LCS, LCS expects that users will be added to Azure DevOps. The user must authorize LCS access to Azure DevOps on behalf of the user. Until the projects users authorize with Azure DevOps, you will see the below message in action center: 
+If you're deploying a build environment on an existing Azure DevOps project that already has a build definition, make sure that you don't have any active triggers to queue the build. Additionally, make sure that no builds are scheduled or queued against the build pool.
 
-[![VSTS setup in LCS\_May27](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)
-
-## Deploy Developer topology from LCS
-LCS provides an option to deploy a Development topology environment. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps project.
+## Deploy Developer and Build/Test environments from LCS
+LCS provides an option to deploy Development and Build/Test environments. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps project.
 
 ### Azure DevOps credential setup and linking to LCS project
+If you have not already done so, you need to first setup your LCS project to connect to your Azure DevOps project before you deploy a build environment.
 
 1. Login to the LCS portal to connect to Azure DevOps and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/).
 2. Select a project that you are working on.
@@ -104,50 +100,18 @@ As part of code Migration process or development activities, we expect you to ch
 
 ![VSTS folder structure](media/build-trunk-main-metadata.png)
 
-### Deploy developer topology (Developer and Build VM)
+### Deploy a Build environment
 
-1. In the LCS portal, select the project that is connected to Azure DevOps.
-2. In the **Environments** pane, click **+** to deploy a new environment.
+The topic [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** than select a **Build and Test** topology.
 
-   ![Azure settings](media/azure-settings.png)
+As part of the deployment wizard, you can configure the build agent name and build agent pool.
 
-3. In the **Select environment topology** pane, select **Azure**.
-
-   ![select environment topology](media/select-environment-topology.png)
-
-4. Proceed to deploy a DEV/TEST environment.
-   -   Depending on your LCS project type, some deployment steps described below may vary.
-
-5. On the **Deploy environment** pane, enter the environment name for the deployment, and select the number of instances for **Developer** VMs.
-   > [!NOTE]
-   > You can only deploy one Build VM and one Developer VM. If you don’t want to deploy a Developer VM, then set instances count to zero. 
-
-   If you want multiple Developer VMs then deploy new environment per developer VM.
-
-   [![Deploy](./media/deploy-1024x669.jpg)](./media/deploy.jpg)
-
-6. Click **Advanced settings**, select **Azure DevOps**
+Click **Advanced settings**, select **Azure DevOps**
    1.  Build Agent Name: Friendly name for build agent on Azure DevOps
    2.  Build Agent Pool: specify build agent pool name which should be used for build machine deployment. Make sure Azure DevOps contains at least one agent pool. By default, there will be the default pool. If you have deleted the default pool then build deployment will fail.
    3.  Branch Name: Specify your Azure DevOps source code branch which will be default source code sync location for the build VM. Default branch is "Main".
 
    ![Settings](media/settings.jpg)
-
-7. After the settings are verified, click **Next** to start the deployment. You can see progress of deployment under **Environments**.
-8. After the deployment is complete, you can use Remote Desktop to view Developer and Build VM.
-
-## Use a Developer VM environment
-When a Developer VM gets deployed, it’s auto-configured with a workspace that will be used to synchronize your code from source control (Azure DevOps). As this Developer VM has Microsoft Dynamics 365 for Finance and Operations deployed on it, it can also be used as a test VM.
-
-### Configure Visual Studio to connect to Azure DevOps
-
-When you open Visual Studio the first time on a Developer VM, connect to Azure DevOps using your credentials.
-
-1.  Open **Team explorer** and click **Select Team projects**.
-2.  Enter the Azure DevOps URL and click **OK**. You will be prompted for your Azure DevOps username and password.
-3.  After you are logged into the Azure DevOps, your **Default workspace** that you will use for your development.
-
-    ![manage workspaces](media/manage-workspaces.png)
 
 ## Test integration with the build
 There are two ways to integrate test as part of build process for testing and validation:

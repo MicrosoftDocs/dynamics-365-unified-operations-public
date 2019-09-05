@@ -3,9 +3,9 @@
 
 title: Personalize the user experience
 description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
-author: TLeforMicrosoft
+author: jasongre
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -53,6 +53,8 @@ The **User options** page contains several system-wide settings for the current 
 - **Account** – Adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
+In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to view and manage the personal changes that you have made to pages in the system. Feature callouts, the pop-up windows that introduce you to new features in the product (available in Platform update 26), can also be reset from this tab so that you are again alerted about previously encountered features.  
+
 ## Implicit personalizations
 
 Implicit personalizations are personalizations that you make just by interacting with controls that "remember" their current visible state.
@@ -77,7 +79,7 @@ Some of the most typical and important changes that can be made to a page are av
 
 Additionally, the most basic types of explicit personalization are available by right-clicking an element and then selecting **Personalize**. (Note that not all elements on your page can be personalized.) When you use this method of personalization, the element's property window appears.
 
-[![Personalizing an element's properties](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+![Personalizing an element's properties](./media/personalization-element-properties.png)
 
 You can use the property window to personalize an element in the following ways:
 
@@ -93,7 +95,7 @@ The property window might include other personalization capabilities, depending 
 
 If you want to make multiple changes to a page or make changes that aren't available through other mechanisms (such as reordering elements), you can use the **Personalization** toolbar. To open the **Personalization** toolbar, select **Personalize this form** in an element's property window. You can also select **Personalize this form** in the **Personalize** group on the **Options** tab of each page's Action Pane.
 
-[![Personalization toolbar](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Personalization toolbar](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### Navigating the page
 
@@ -165,13 +167,13 @@ Users who have administrator privileges can also manage personalizations for oth
 
 - **Apply** – You can import or select a personalization for one or more users. To apply a personalization to one or more users, first select a role and users who have that role. Then either select an existing personalization to apply to the selected users, or import a personalization file. The personalization is validated and will be applied to all the selected users the next time that they open the selected page.
 - **Clear** – You can clear all personalizations for a page or workspace for one or more users. First select a page or workspace to see a list of the users who have personalized it. Then select the users who should have personalizations for that page or workspace cleared, and select **Clear**. All personalizations that the selected users have applied to the selected page or workspace are deleted. This action can't be undone. However, if a personalization was saved for the page or workspace, that personalization can be reimported.
-- **Manager per User** – Select a user to see the list of pages that he or she has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user.
+- **Manager per user** – Select a user to see the list of pages that the user has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user. In addition, you can reset feature callouts for the selected user, which will make all previously dismissed pop-up windows that introduced new features display again the next time that the user encounters those features.   
 - **System** – You can temporarily disable all personalizations for all users in the system. In this case, the personalizations are deleted. All pages are just reset to their default state for all users. If you re-enable personalization later, all personalizations will be reapplied. You can also permanently delete all personalizations for all users in the system. There is no way to recover personalizations that have been deleted. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
 ## Personalization of inventory dimensions
 
 When you personalize the setup of inventory dimensions on a page, consider the settings that have been created by using the **Display dimension** option. For example, you use personalization to hide a column for the Batch number inventory dimension, but the column appears the next time that the page is opened. This behavior occurs because the **Dimension display** settings control the inventory dimension columns that are shown.
 
-The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on individual pages.
+The **Dimension display** settings apply across all pages and override any personalized setup of inventory dimension fields on each individual page.
 
-As a result, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear, you must clear that dimension as part of the **Display dimensions** option for the table. Eventually, this change will apply not only on one specific page but across all pages.
+As a result, in the preceding example, if you don't want the column for the Batch number inventory dimension to appear on a page, you must clear that dimension as part of the **Display dimensions** option for that page.

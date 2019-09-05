@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
@@ -38,15 +38,17 @@ You can consume web services by adding new class libraries to Microsoft Dynamics
 
 The following steps show how to consume an external StockQuote service from X++.
 
+Note that the web service URL in this sample is fictional.  There is no known web service at http://www.contoso.net/stockquote.asmx.  To make this code work you will need to adapt it to your specific web service.
+
 1. Create a new Class Library project in Visual Studio, and name it **ExternalServiceLibrary.csproj**.
-2. In the Visual Studio project, add a service reference to the external web service: `http://www.webservicex.net/stockquote.asmx`.
+2. In the Visual Studio project, add a service reference to the external web service: `http://www.contoso.net/stockquote.asmx`.
 3. Create a new static class, and wrap the StockQuote service operation as shown in the following example.
 
     ```
     public static string GetQuote(string s)
     {
         var binding = new System.ServiceModel.BasicHttpBinding();
-        var endpointAddress = new EndpointAddress("http://www.webservicex.net/stockquote.asmx");
+        var endpointAddress = new EndpointAddress("http://www.contoso.net/stockquote.asmx");
         ServiceLibrary.QuoteReference.StockQuoteSoapClient client = new ServiceLibrary.QuoteReference.StockQuoteSoapClient(binding, endpointAddress);
 
         //GetQuote is the operation on the StockQuote service
@@ -57,7 +59,7 @@ The following steps show how to consume an external StockQuote service from X++
 4. Build the project. The binary ExternalServiceLibrary.dll is created.
 5. Create a new Dynamics project in Visual Studio.
 6. Add **ExternalServiceLibrary.dll** as a reference.
-7. In the X++ class, you can use the external web services that were referenced in ExternalesrviceLibrary.dll.
+7. In the X++ class, you can use the external web services that were referenced in ExternalServiceLibrary.dll.
 
     ```
     public static void main(Args _args)

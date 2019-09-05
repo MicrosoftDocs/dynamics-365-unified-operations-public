@@ -46,7 +46,7 @@ You can configure how delays are calculated for a coverage group. You can then a
 
 On the **Master planning parameters** page, you can set the start time for the calculation of delays. If an order is fulfilled after this time, a delay of one day is added to the delay date of the order. 
 
-> [!NOTE}
+> [!NOTE]
 > In earlier versions, calculated delays were known as *futures messages*, the delayed date was known as the *futures date*, and a delayed transaction was referred to as *a transaction that was future set*.
 
 ## Desired date

@@ -5,7 +5,7 @@ title: Cloud operations and servicing
 description: Finance and Operations is Microsoft's Cloud ERP offering as a managed service. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
 author: manalidongre
 manager: AnnBe
-ms.date: 06/01/2017
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
@@ -42,16 +42,20 @@ In the cloud version of Microsoft Dynamics 365 for Finance and Operations, a key
 After go-live, the Production environment must be updated at regular intervals. Lifecycle Services (LCS) provides a self-serve experience to continuously update your environments.
 
 ### Update types
-- **Platform**
-  - Platform hotfixes are cumulative binary hotfixes that Microsoft releases to address any issues in the platform.
-  - Release of a new platform. When Microsoft releases a new update to the platform, use the information provided in [Upgrade to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md), to uptake the new release.
-- **Application**
-  - Application hotfixes are X++ hotfixes that address issues in the application.
-  - Application customizations are customizations that partners/ISVs develop on the base product that is shipped by Microsoft.
-  - New release of the application. For more information about this kind of update, see [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](../migration-upgrade/upgrade-latest-update.md).
+For customers who are on **Dynamics 365 for Finance and Operations version 8.0 (April 2018) and earlier**, the following updates are available:
 
-**Cloud infrastructure**
-- Microsoft is responsible for managing the infrastructure for your environments. Because of this, there are certain updates, such as operating system updates, that must be done on a monthly basis in a planned maintenance window. Other kinds of updates could include changes to the infrastructure components. 
+- **Platform updates** – A single cumulative binary update of all the platform fixes.
+- **Application hotfixes** – Application hotfixes that are released as granular X++ updates.
+- **Application release** – A new major release of the application. This type of update typically requires an upgrade.
+- **Application customizations** – Customizations that are built on top of the application. The best practice is to apply a single deployable package that consists of all your independent software vendor (ISV) solutions and customizations.
+
+For customers who are on **Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later**, the following updates are available:
+
+- **Application updates** – A single cumulative binary update of the application and the platform fixes. You can update for yourself by using the regular update flows. Otherwise, you will be automatically updated by Microsoft.
+- **Application customizations** – Customizations that are built on top of the application. The best practice is to apply a single deployable package that consists of all your ISV solutions and customizations.
+
+#### Cloud infrastructure
+Microsoft is responsible for managing the infrastructure for your environments. Therefore, some updates, such as operating system updates, must be done on a monthly basis in a planned maintenance window. Other kinds of updates might include changes to the infrastructure components. 
 
 ### Update policy
 Currently, service updates require production tenant downtime. Platform, application, and cloud infrastructure updates are applied in two kinds of maintenance windows.

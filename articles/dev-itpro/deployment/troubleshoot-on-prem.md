@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 03/21/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer, IT Pro
 # ms.devlang:
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm:
 ms.custom: 60373
@@ -127,7 +127,7 @@ You might receive the following error:
 
 > "ExtractInstallerService failed to extract" C:\Users\dynuser.CONTOSO\AppData\Local\Temp\1blssblh.w0n\FabricInstallerService.Code\FabricClient.dll.
 
-If you receive this error, download the latest version of [Azure Service Fabric](http://go.microsoft.com/fwlink/?LinkId=730690). Note that the user name and path in the error message vary, depending on your environment.
+If you receive this error, download the latest version of [Azure Service Fabric](https://go.microsoft.com/fwlink/?LinkId=730690). Note that the user name and path in the error message vary, depending on your environment.
 
 #### Service Fabric logs
 
@@ -167,8 +167,8 @@ You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis butto
 The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent. You must run this script on an orchestrator virtual machine (VM).
 
 ```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring')
-$applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType')
+$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
+$applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
 
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
@@ -264,10 +264,7 @@ Alternatively, run the following Windows PowerShell command.
 
 ## Install, upgrade, or uninstall a local agent
 
-For information about local agent installation, see the appropriate setup and deployment topic for your environment:
-
-- [Platform update 12](setup-deploy-on-premises-pu12.md)
-- [Platform update 8 or Platform update 11](setup-deploy-on-premises-pu8-pu11.md)
+For information about how to update the local agent, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 
 You can also use the following upgrade and uninstallation commands:
 
@@ -301,6 +298,35 @@ Follow these steps to troubleshoot general issues with local agent validation.
     - Applications and Services Log \> Microsoft \> Dynamics \> AX-LocalAgent
 
 ## Local agent errors
+
+### Issue
+
+**Error:** When you install the local agent, you receive the following error.
+
+```stacktrace
+LocalAgentCLI.exe Error: 0 : Exception System.InvalidOperationException: unable to get settings for telemetry setup component
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.GetComponentSettings()
+    at LBDTelemetryCommon.LBDTelemetrySetupManager.ApplyParameters()
+    at LocalAgentCLI.Program.Main(String[] args)
+Press any key to exit
+```
+
+**Reason:** You're trying to install local agent version 2.3.0 or later, but the localagent-config.json file that you're using isn't up to date.
+
+**Steps:** Get the new version of the localagent-config.json file from LCS by following the instructions in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector).
+
+You can also manually add the following values in the **components** section of the localagent-config.json file.
+```json
+{
+    "name": "LBDTelemetry",
+    "placementCriteria": "(IsOrchestratorEnabled == True)",
+    "parameters": {
+        "applicationPackagePath": {
+            "value": "Applications\\LBDTelemetry"
+        }
+    }
+},
+```
 
 ### Issue
 
@@ -474,7 +500,7 @@ The local agent user can't connect to the SQL Server instance or the database.
     uswedpl1catalog.blob.core.windows.net:443
     ```
 
-## Restart applications (such as AOS)
+## <a name="restartapplications"></a>Restart applications (such as AOS)
 
 In Service Fabric, expand **Nodes** \> **AOSx** \> **fabric:/AXSF** \> **AXSF** \> **Code Packages** \> **Code**. Select the ellipsis button (**...**), and then select **Restart**. When you're prompted, enter the code.
 
@@ -1231,7 +1257,7 @@ Import-Module -Name AzureRM -RequiredVersion 5.7.0
 > Error event: SourceId='MonitoringAgentService', Property='ServiceState'.  
 > System.Management.Automation.RuntimeException: Error: **The GUID passed was not recognized as valid by a WMI data provider.** (Exception from HRESULT: 0x80071068). Stack trace:
 
-**Steps:** To resolve this issue, restart the application package that generated the warning message. For more information, see [Restart applications (such as AOS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-on-prem#restart-applications-such-as-aos).
+**Steps:** To resolve this issue, restart the application package that generated the warning message. For more information, see [Restart applications (such as AOS)](./troubleshoot-on-prem.md#restartapplications).
 
 ## The internal time zone version number that is stored in the database is higher than the version that is supported by the kernel (13/12)
 

@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -99,7 +99,7 @@ Before you issue SPED-Reinf events to government website, use the predefined con
 
 To set up Electronic messages functionality for SPED-Reinf event communications, use the predefined configuration that is available in LCS.
 
-1.  Go to http://lcs.dynamics.com.
+1.  Go to <https://lcs.dynamics.com>.
 
 2.  Sign in.
 
@@ -172,7 +172,7 @@ Trusted certificates must be configured and used by Microsoft Dynamics, because 
 
 In Finance and Operations, you must register the Key Vault certificate in Microsoft Azure.
 
-For information about how to set up a Key Vault client, see [Setting up Azure Key Vault Client](https://support.microsoft.com/en-us/help/4040305).
+For information about how to set up a Key Vault client, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305).
 
 1.  Go to **System administration \> Setup \> Key Vault parameters**.
 
@@ -233,7 +233,8 @@ Go to **Tax \> Setup \> Electronic messages \> Web service settings**, and set u
 
 ![Webservices-settings](media/bra-web-service-settings.png)
 
-Note: In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.
+> [!NOTE]
+> In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.
 
 ### **Set up service types**
 
@@ -269,7 +270,8 @@ Go to **Fiscal books \> Setup \> Fiscal books parameters**, and set up the numbe
 
 ![Fiscal-books-parameters](media/bra-sped-fiscal-books-parameters.png)
 
-**Note**: If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To start the wizard, go to **Organization administration \> Number sequences \> Number sequences**, and select **Generate**. You will then be able to configure the related number sequence.
+> [!NOTE]
+> If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To start the wizard, go to **Organization administration \> Number sequences \> Number sequences**, and select **Generate**. You will then be able to configure the related number sequence.
 
 -   **Area:** Fiscal books
 
@@ -296,7 +298,8 @@ Every event that is transmitted has a receiving protocol. To correct an event, y
 
 The amount of time that receiving protocols are kept in the government database isn't defined. Therefore, as a precaution, it's important that the taxpayer retain them, because they provide proof that the ancillary tax obligation has been delivered and met.
 
-Note: The delivery protocol is transient information that provides proof that the event has been transmitted, and that the appropriate validation will be processed. It doesn't demonstrate compliance with the ancillary obligation.
+> [!NOTE]
+> The delivery protocol is transient information that provides proof that the event has been transmitted, and that the appropriate validation will be processed. It doesn't demonstrate compliance with the ancillary obligation.
 
 **Amendment and correction**
 

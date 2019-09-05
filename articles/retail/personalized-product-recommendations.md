@@ -48,7 +48,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
     - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendation engine suggests additional items that are likely to be purchased together.
     - If the store associate adds a customer to the transaction and then visits a **Product details** page, the recommendation engine provides personalized recommendations using the customer's transaction history.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Recommendations on the Product details page](./media/proddetails.png)](./media/proddetails.png)
 
 2. On the **Transaction** page:
 
@@ -58,13 +58,11 @@ Product recommendations are enabled for the following POS scenarios. They are av
     > [!NOTE]
     > To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Retail. The **Recommendations** control must be dropped on to the **Transaction** page.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Recommendations on the Transaction page](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. On the **Customer details** page:
+3. On the **Customer details** page, the recommendation engine suggests items based on the user ID and items in the customer's wish list.
 
-    - The recommendation engine suggests items based on the user ID and items in the customer's wish list.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Recommendations on the Customer details page](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## Configure Dynamics 365 for Retail to enable POS recommendations
 

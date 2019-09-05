@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Business events
-description: This topic provides information about business events, which s provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
+title: Business events overview
+description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,11 +26,10 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business events
+# Business events overview
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
@@ -40,38 +39,20 @@ In Finance and Operations, a business action that a user performs can be either 
 
 ## Prerequisites
 
-- Business events can be consumed via Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such asset(s) to use business events.
-- Business events are available in Platform update 24 and later. Therefore, at least Platform update 24 is required.
+Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
 
-## Enabling business events
-
-By default, the business event functionality is turned off. To turn it on, follow one of these steps.
-
-- In non-production environments, turn on the BusinessEventsMaster flight by running the following SQL statement
-
-    ```
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED, FLIGHTSERVICEID) VALUES ('BusinessEventsMaster', 1, 12719367)
-    ```
-
-- After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's. 
-key="DataAccess.FlightingServiceCatalogID" value="12719367"
-
-- Perform an IISRESET
-
-- In production environments, you must create a support case with Microsoft.
-
 ## Business events that are implemented in Finance and Operations
 
-In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md) and [Workflow business events](business-events-workflow.md).
+In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md), and [Alerts as business events](alerts-business-events.md).
 
 A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
 ## Business event catalog
 
-The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+The business events catalog can be accessed from **System administration > Set up > Business events**. The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
 The category of a business event identifies its source in Finance and Operations. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
 
@@ -86,6 +67,11 @@ In scenarios where external integration systems require the schema of the payloa
 In summary, the business event catalog helps identify the business events that are required for an implementation. It also helps identify the schema for each business event.
 
 The next step is to manage the endpoints.
+
+## Business events processing
+Finance and Operations allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
+
+The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter in the business events parameter table, which is turned off by default to indicate that manual batch job will not be effective by default.
 
 ## Managing endpoints
 
@@ -151,9 +137,12 @@ To create an endpoint to a Service Bus topic, select **New**, and then, in the *
 
 To create an endpoint, you need to create and configure an **Azure Event Grid Topic** in Azure Portal, and then create an endpoint to the Event Grid Topic in the **Business Events Workspace**. Go to the **Endpoints** tab, select **New**, and then select **Azure Event Grid** as the **Endpoint type**. In the **Endpoint URL** field, enter the URL from the **Azure Event Grid Topic**. This is the **Topic Endpoint** value in the **Overview** section of your Event Grid Topic.
 
+> [!IMPORTANT]
+> The Azure application that was registered must be also added to the Key Vault set up under Access policies in the Key Vault. For this setup to be complete, select the **Key, Secret & Certificate Management** template and then select the application as the **principal**.
+
 ![Business events Event Grid Endpoint value](../media/BusinessEventsEGTopicsEndpoint.PNG)
 
-Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Crendtial can be found under the Event Grid you created in the **Access Keys** section under Settings. 
+Key Vault information is set up in the same way that it is set up for an Azure Service Bus Queue endpoint, except the Key Vault secret should now point to the Event Grid credential, rather than the Service Bus connection string.  The Event Grid Credential can be found under the Event Grid you created in the **Access Keys** section under Settings. 
 
 ![Business events Event Grid credentials value](../media/BusinessEventsEGKeyValue.PNG)
 
@@ -178,7 +167,7 @@ After business events are activated, they appear on the **Active events** tab.
 
 From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
 
-After businessevents are inactivated, they appear on the **Inactive events** tab.
+After business events are inactivated, they appear on the **Inactive events** tab.
 
 ![Inactive business events](../media/businesseventsinactivetab.png)
 
@@ -201,16 +190,95 @@ If an error can't be successfully processed, you can use the **Download payload*
 
 ## Business event consumption models
 
-The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. The following illustration shows the consumption models that Finance and Operations makes available.
+The integration requirements and integration solution design for implementations vary. The integration requirements play a role in identifying the consumption model for business events. In summary, you must consider the following points when you design integrations that use business events:
 
-![Business events consumption model](../media/businesseventsconsumptionmodel.png)
-
-In summary, you must consider the following points when you design integrations that use business events:
-
-- Business events can be consumed via Microsoft Flow, Service Bus, or Event Grid.
-- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, or Event Grid.
+- Business events can be consumed using Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
+- Customers must bring their own subscriptions to use Microsoft Flow, Service Bus, Event Grid, or other endpoint types.
 - A business event can be activated in all legal entities or in specific legal entities.
-- A business event in a legal entity can be sent to only one endpoint. Messaging brokers make one-to-many (1:N) consumption available.
-- A business event across unique legal entities can be sent to unique endpoints or the same endpoints.
+- A business event can be sent to a unique endpoint or the same endpoints.
 - Microsoft Flow can directly subscribe to business events.
-- Endpoints such as Service Bus or Event Grid endpoints enable *n* consumers to subscribe to and receive the events.
+
+## Idempotency
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
+
+## Filtering in Azure Event Grid and Azure Service Bus
+Azure Service Bus and Azure Event Grid supports subscribing to topics by
+specifying criteria on the incoming message. For more information, see [Topic filters and actions](https://docs.microsoft.com/azure/service-bus-messaging/topic-filters) and [Understand event filtering for Event Grid subscriptions](https://docs.microsoft.com/azure/event-grid/event-filtering).
+
+A business event that is sent to an Azure Service Bus or Azure Event Grid
+has the following fields made available for this purpose. Subscribers can use
+this information to subscribe to more specific topics as required.
+
+-   **Category** – This is the business event category as displayed in the
+    business event catalog. This is useful as a filter criterion when a common
+    topic is used for receiving business events from multiple categories and
+    subscribers want to only receive business events for the category that they are
+    interested in.
+
+-   **Business event ID** – This is the class name of the business event
+    implementation as displayed in the business event catalog. This uniquely
+    identifies the business event (not the instance of the business event) and
+    thus helps in validation of received business events on the consumer side to
+    ensure the expected business event is what is being received and processed.
+
+-   **Legal entity** – This is the legal entity in which the business event
+    happened. This is a useful information to base the consuming logic on if
+    the processing and distribution of business events on the consumption side
+    must be driven by a legal entity.
+
+> [!NOTE]
+> The filterable fields that are sent in a business event can be modified to
+include custom fields. This is a developer experience.
+
+## Role-based security for business events
+Starting in Platform update 29, role-based security can be applied to business events to meet the following requirements using the appropriate security artifact.
+
+| **Requirement**                                                                                                                                | **Privilege**                                 | **Duty**                          |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-----------------------------------|
+| Only certain users must have access to view the business events catalog.                                                                       | **BusinessEventsCatalogView**                 | None                              |
+| Only certain users must have access to activate business events.                                                                               | **BusinessEventsCatalogMaintain**             | None                              |
+| Only certain users must have access to create and manage endpoints.                                                                            | **Business events security privilege**        | **Business events security duty** |
+| Users must only be able to subscribe to business events which they have been granted access to from external applications like Microsoft Flow. | **Subscribe to business events from service** | None                              |
+| Only certain users must be able to view the business events security setup.                                                                    | **BusinessEventsCatalogSecuritySetupView**    | None                              |
+| Only certain users must be able to manage business events security.                                                                            | **Maintain business events catalog security** | None                              |
+
+These privileges can be added to the required duties to grant corresponding roles appropriate access levels.
+
+### Enabling role-based security for business events
+
+Role-based security for business events must be enabled via Feature management.
+
+1.   Go to **System administration \> Feature management**.
+
+2.   Select the **Business events catalog security** feature.
+
+3.   Enable the feature.
+
+4.   Go to the business events catalog via **System administration \> Set up \> Business events \> Business events catalog.**
+
+5.   The **Security** tab in the catalog is where a business event must be mapped to one or more roles. You must complete the configuration as required.
+
+6.   Enable security by selecting the **Enable** menu button on the **Security** menu on the top navigation pane. An informational message will confirm if security is enabled or disabled.
+
+7.  Modify the necessary security role to add the appropriate privilege or the duty based on security noted in the informational message.
+
+### Subscribe to business events from service
+
+Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, which is described below. The organizational assignments that are done, if any, as part of role-based security is honored in the context of business events by letting users to only subscribe
+to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Microsoft Flow or Logic Apps.
+
+### Backward compatibility
+
+To ensure backward compatibility of business events with versions prior to Platform update 29, the following behavior must be understood.
+
+-   Role-based security for business events will be disabled by default.
+
+-   Even if the feature is enabled in Feature management, role-based security will not take effect.
+
+-   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
+
+-   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with administration role will not notice any change in behavior. However, any non-admin users will either only see business events to which their roles were assigned to in the business events catalog security configuration or they will not see any business events because their roles were not assigned to any business events.
+
+
+> [!NOTE]
+> To ensure uninterrupted functionality, it is important to understand the backward-compatibility behavior described above before you enable security on business events.

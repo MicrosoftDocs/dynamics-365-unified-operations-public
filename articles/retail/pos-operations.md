@@ -5,7 +5,7 @@ title: Online and offline point of sale (POS) operations
 description: This topic provides details about the point of sale (POS) operations in Microsoft Dynamics 365 for Retail. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -165,8 +165,8 @@ The following columns specify where the operations can be invoked:
 | 1211 | Safe drop | Perform a safe drop to move money from the register to a safe. | Yes | Yes | Yes | Yes | No |
 | 516 | Sales invoice | This operation lets the customer make payments toward the selected sales invoice. | Yes | Yes | No | No | No |
 | 502 | Salesperson | This operation lets the user set the **Sales taker** value on a sales order for customer orders in the POS. | Yes | Yes | No | Yes\* | No |
-| 2000 | Schedule management | This operation lets users create, modify, or view employee schedules. | Yes | Yes | Yes | No | No |
-| 2001 | Schedule requests | This operation lets the user request time off, swap shifts, or offer shifts to other employees. | Yes | Yes | Yes | No | No |
+| 2000 | Schedule management | This operation is not yet supported. | Yes | Yes | Yes | No | No |
+| 2001 | Schedule requests | This operation is not yet supported. | Yes | Yes | Yes | No | No |
 | 622 | Search | This operation lets users preconfigure POS buttons to perform searches by item, customer, or category. | Yes | Yes | Yes | Yes | No |
 | 1213 | Search shipping address | This operation isn't supported. | Not applicable | Not applicable | Not applicable | Not applicable | No |
 | 709 | Select hardware station | This operation lets the user select a hardware station in a list of available hardware stations. | Yes | Yes | Yes | Yes | No |

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24291
@@ -79,7 +79,10 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 
 ### Set up aggregate data
 
-Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data. **Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](../analytics/model-aggregate-data.md), depending on what tutorial files you have.
+Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data.
+
+> [!NOTE]
+> These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](../analytics/model-aggregate-data.md), depending on what tutorial files you have.
 
 1.  In Solution Explorer, under **Analytics**, double-click **FMTAggregateMeasurement**.
 2.  In the designer, right-click **FMTAggregateMeasurement**, and then click **Deploy and Process**.
@@ -138,7 +141,8 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 
         [![x5](./media/x5.png)](./media/x5.png)
 
-        **Note:** The child design component will show the properties that are available on the **FormBindingDataField** build class. This is appropriate, because you want to enable image data binding to a data field and data source. This is all that is required to add a designer property to the build class of the contact control.
+        > [!NOTE]
+        > The child design component will show the properties that are available on the **FormBindingDataField** build class. This is appropriate, because you want to enable image data binding to a data field and data source. This is all that is required to add a designer property to the build class of the contact control.
 
 3.  Press Ctrl+S to save your changes, and then close the code editor.
 4.  In Solution Explorer, right-click **FMTutorial**, and then click **Build**.
@@ -172,7 +176,9 @@ To see an example of the run-time class, in Solution Explorer, expand **Classes*
         -   If you supply **Value**, a **ValueProperty** is generated in the JavaScript view model. A developer must write code to update the value of a **ValueProperty**.
     -   The second argument of the attribute sets the name for the property as it will be defined in the JavaScript view model.
 
-    **Note:** Don't be concerned if **TitleFields** don't seem to be bound to data because the example uses a **Value** property. The **TitleFields** property returns a List that contains **FormBindingDataFields**, each of which is data-bound. The X++ method that has the **FormPropertyAttribute** attribute is a simple getter/setter that uses a **FormProperty** as the backing field. The **FormProperty** contains the logic for updating the property, based on value or data source changes. It also serves as the backing field for the property.
+    > [!NOTE]
+    > Don't be concerned if **TitleFields** don't seem to be bound to data because the example uses a **Value** property. The **TitleFields** property returns a List that contains **FormBindingDataFields**, each of which is data-bound. The X++ method that has the **FormPropertyAttribute** attribute is a simple getter/setter that uses a **FormProperty** as the backing field. The **FormProperty** contains the logic for updating the property, based on value or data source changes. It also serves as the backing field for the property.
+
 -   **Run-time commands for the control** – Commands enable the client parts of the control to trigger X++ logic, based on client-side user interactions. Commands are declared by using a **FormCommandAttribute** attribute. The single argument specifies the name of the command as it will appear in the JavaScript view model. The following example shows a command declaration in **FMTContactControl**. 
 
     [![x7](./media/x7.png)](./media/x7.png)
@@ -184,7 +190,10 @@ To see an example of the run-time class, in Solution Explorer, expand **Classes*
 
     [![x8](./media/x8.png)](./media/x8.png)
 
-3.  Add the following X++ method after the **parmDataSource** X++ method. The new method will serve as the getter/setter for **imageFieldProperty**. **Note:** You don't return the value of the image data here, because the framework will let you bind to the data in the client, as you will see later. 
+3.  Add the following X++ method after the **parmDataSource** X++ method. The new method will serve as the getter/setter for **imageFieldProperty**.
+
+    > [!NOTE]
+    > You don't return the value of the image data here, because the framework will let you bind to the data in the client, as you will see later. 
 
     [![x9](./media/x9.png)](./media/x9.png)
 
@@ -395,7 +404,7 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
     |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |         Name          |                                                                                                 RatePerDay                                                                                                  |
     |      Data Source      |                                                                                                FMTModelRate                                                                                                 |
-    |      Data Field       | RaterPerDay <strong>Note:</strong> The <strong>Data Field</strong> value must match the table field name. If you correct the spelling error, the values won't match, and you will receive a run-time error. |
+    |      Data Field       | RaterPerDay<p><strong>Note:</strong> The <strong>Data Field</strong> value must match the table field name. If you correct the spelling error, the values won't match, and you will receive a run-time error.</p> |
     | Formatting Expression |                                                                                                ${0} per day                                                                                                 |
 
 
@@ -413,7 +422,11 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
 
 26. Press Ctrl+S to save your changes to **FMTRentalRatesPart**.
 27. In Solution Explorer, right-click the **FMTClerkWorkspace** form, and then click **Set as Startup Object**.
-28. Press Ctrl+F5 to open the updated contact control in Internet Explorer. **Note:** If you receive a JavaScript error, you might have to clear the Internet Explorer cache, so that the browser loads the new JavaScript file:
+28. Press Ctrl+F5 to open the updated contact control in Internet Explorer.
+
+    > [!NOTE]
+    > If you receive a JavaScript error, you might have to clear the Internet Explorer cache, so that the browser loads the new JavaScript file:
+
     1.  When you're prompted to open the debugger, click **No**.
     2.  While Internet Explorer is open, press F12 (or click **Settings** &gt; **F12 Developer Tools**), and then press Ctrl+R.
     3.  In the **Clear Browser Cache** dialog box, click **Yes**.
@@ -424,7 +437,7 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
 In this tutorial, you've seen how you can use X++ when you define the design-time and server-side behaviors for a control, and how you can consume a powerful HTML-based and JavaScript-based framework when you design the UI and user interaction patterns. The Control Extensibility Framework helps provide a separation between the modeled behavior of a control and its physical manifestation. As a best practice, you should try to maintain this loose coupling between data, metadata, and UI when you build extensible controls.
 
 ## Bidirectional or right-to-left support
-To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document. When this attribute is changed, the browser will automatically change the layout direction of your control. You should make sure that your control doesn’t implement any styling which interferes with this layout. Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language. Selecting a RTL language will cause the client to also update the **dir** attribute appropriately. For more information, see [dir attribute](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.
+To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document. When this attribute is changed, the browser will automatically change the layout direction of your control. You should make sure that your control doesn’t implement any styling which interferes with this layout. Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language. Selecting a RTL language will cause the client to also update the **dir** attribute appropriately. For more information, see [dir attribute](https://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.
 
 
 

@@ -59,7 +59,7 @@ You can also view when the time recording for a service order was started and st
 
 ## See also
 
-[Service orders (form)](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

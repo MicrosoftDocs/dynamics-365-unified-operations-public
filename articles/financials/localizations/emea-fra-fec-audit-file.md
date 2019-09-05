@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -34,9 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure walks you through generating the Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
 
-Before you can generate an FEC file, you must import the latest version of the Electronic reporting configuration **Import configuration FEC Accounting data XML (FR)**. For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+Before you can generate a FEC audit file, you must 
+1. Import the latest version of the Electronic reporting configuration **French FEC audit file**. 
+For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+2. On the **Configurations** page, expand **Data export model**, select **French FEC model mapping**. Set **Default for model mapping** to **Yes**
 
 ## Generate the Standard Audit File for France
-1.	Go to **General Ledger** > **Inquires and reports** > **Ledger reports** > **FEC Accounting data export** to open the **Electronic report parameters** page.
-2.	Enter the date range for the file.
-3.	Click **OK**.
+1. Go to **General Ledger** > **Periodic tasks** > **Data export** to open the **Data export** page.
+2. In the **Format mapping** field, select *French FEC audit file*.
+3. Click **OK**.
+4. On the **Electronic report parameters** page, enter start and end dates of the period in the fields **Period - date from**, **Period - date to** and click **OK**.
+5. Review the generated file.

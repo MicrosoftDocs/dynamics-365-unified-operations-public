@@ -5,7 +5,7 @@ title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: manalidongre
 manager: AnnBe
-ms.date: 03/15/2019
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -100,4 +100,4 @@ If the update takes longer than the scheduled maintenance window, the extra time
 Microsoft doesn't offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
 
 ### How do I opt out of the current maintenance cycle?
-To opt out of the current maintenance cycle, file a support ticket with Microsoft. Your environment will be excluded from the maintenance cycle for the current month. However, your environment will be updated in the next month.
+To opt out of the current maintenance cycle, file a support ticket with Microsoft. The deadline for filing the support ticket to request an opt-out will be included in your notification email. Any opt-out submitted after that deadline will not be honored. Your environment will be excluded from the maintenance cycle for the current month, however your environment will be updated in the next month.

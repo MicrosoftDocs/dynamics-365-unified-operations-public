@@ -3,9 +3,9 @@
 
 title: Interview scheduling and feedback
 description: This topic provides information about interview scheduling and feedback activities in Attract.
-author: shielasogge
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -60,7 +60,7 @@ There are multiple configurations available for the interview scheduler to use a
 
 2. Select the interview duration for each interview event, and then click **OK** to start creating the schedule.
 
-    If **Recommendations** are selected, suggestions will be shown and the interview grid will be pre-populated. You will be able to see the current calendar availability of all the s elected interviewers. You will also be able to view the candidate’s calendar if they're an internal candidate.
+    If **Recommendations** are selected, suggestions will be shown and the interview grid will be pre-populated. You will be able to see the current calendar availability of all the selected interviewers. You will also be able to view the candidate’s calendar if they're an internal candidate. For the interviewers and internal candidates, you can view their busy time slots, their working hours, their out of office hours and also identify if they have marked their calendars as working elsewhere for specific time slots. 
 
 3. If there are no suggestions available, in the **Interviewers** column, click in a time slot, provide the interview title, details, and populate the location details, as necessary. You can choose to include the **Skype for Business** link for the interview.
 
@@ -79,14 +79,19 @@ There are multiple configurations available for the interview scheduler to use a
 
     Interviewer responses are captured and shown in Attract. If an interviewer declines the invite, you will be notified to make a change. To view their response in the **Scheduler** grid view, click the bubble icon.
 
-[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Attract recruiter view of an interviewer's response](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. After the interview schedule is ready to be shared with the candidate, click **Send to candidate**. You can choose to hide or show the interviewer names and slots with the candidate.
 
-8. Select an -mail template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
+8. Select an email template and send the interview summary to the candidate. The candidate can view this information in their email as well as on their candidate portal.
     
 >[!NOTE] 
 > The calendar availability of a candidate is shown only if the candidate is internal. Similarly, only an internal candidates can be used to enhance interview schedule recommendations. Currently, candidates (external or internal) don't receive an email meeting invite, instead the candidate receives only a summary of the interviews.
+
+Candidates will receive the email summarizing their interview loop. The emails contain an .ics file which can be saved to their personal calendars for easier access and notfications about the interview.
+
+>[!TIP] 
+> In case you re-send the interview schedule to the candidate, they will receive another .ics file attachment. We recommend updating the email templates for the candidate's interview summary to ensure candidates delete the previously added interview events and do not see duplicates on their calendar. 
 
 ## Feedback activity
 

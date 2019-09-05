@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 08/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
@@ -69,8 +71,8 @@ To configure SharePoint storage, follow these steps.
 
     Typically, if no default SharePoint server is specified, either there is no SharePoint site for the tenant, or a valid Microsoft Office 365 license isn't associated with the current user (the admin).
 
-4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name.
-5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser.
+4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
+5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
 
 ### Troubleshooting SharePoint communication
 
@@ -114,6 +116,29 @@ Document management appears to users as the **Attach** button (keyboard shortcut
 
 The **Attach** button will also show a count of attachments for the currently selected record, so the user can see whether there are attachments on the current record without opening that form. The count will show 0-9, and then 9+ to limit the performance impact and visual noise of determining and showing larger counts.
 
+## Attachment recovery
+
+In Platform update 29, an attachment recovery feature has been added that provides a recycle bin for record attachments to be recovered within a configured period of time.
+
+### Configuration of attachment recovery
+
+Attachment recovery can be enabled by going to **Document management parameters** > **General** >  **Deferred deletion** > **Deferred deletion enabled**. The default for **Number of days to defer deletion** is 30 days, but can be changed as needed. If the **Number of days to defer deletion** value is zero this means that the deleted attachments will be recoverable for an indefinite period. 
+
+After attachment recovery is enabled, a batch job with this name will be created, "Scans for deleted references which have reached the end of their retention period". This batch job will use the **Number of days to defer deletion** to determine how long to retain a deleted attachment based on the **Deleted data and time**.
+
+### Deleting attachments when attachment recovery is active
+
+When a user deletes an attachment, a notification will be added to the Message Center to provide confirmation of the deletion and an option to undo to the action if the deletion was unintended.
+
+Table extension support has been built-in, so that any extension or custom field values on the **DocuRef** or **DocuValue** tables will be retained to enable their recovery. 
+
+### Recovering attachments
+
+When attachment recovery is enabled, attachments can be recovered in one of three ways:
+1. Immediately after deletion, the user can use the undo link in the **Attachment deleted** notification.
+2. On the **Attachments** page, a **Deleted attachments** button provides access to the list of deleted attachments that can be recovered for a particular record. The deleted attachments can be opened for review, permanently deleted, or restored.
+3. In **System administration** > **Inquiries**, the **Deleted attachments** page provides access to the list of deleted attachments that can be recovered for any record. The deleted attachments can be opened for review, permanently deleted, or restored.
+
 ## Frequently asked questions
 
 ### What is the difference between document handling and document management?
@@ -140,10 +165,34 @@ Yes. SharePoint storage is supported natively and can be selected as the storage
 
 For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
-### If I accidentally delete an attachment stored in Azure Blob Storage, can it be restored?
+### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 
-If an attachment stored in Azure Blob Storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.
+If an attachment stored in Azure Blob storage is accidentally deleted, it cannot be restored or recovered because it has been permanently deleted and the reference to it has also been deleted.
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
 Record attachment information is stored in the DocuRef and DocuView tables. The DocuRef table is the record that represents the attachment. The DocuRef record points to the record being attached to and to a DocuView record. The DocuView record points to the file that is the attachment. Files are stored outside the database, therefore any database operations, like restoring from backup, will only affect the database information about the attachment, not the attachment file itself.
+
+### Can attachments be stored in the database?
+
+No. By default, attachments are stored in Azure Blob storage.
+
+### What are the main differences between Azure Blob storage and database storage?
+
+Database storage is Azure SQL Database. File storage is Azure Blob storage. Azure Blob storage is simpler and much less expensive.
+
+### How much storage do we get for Azure Blob storage?
+
+That information is in the [licensing guide](https://mbs.microsoft.com/Files/public/365/Dynamics365LicensingGuide.pdf). Currently, you get 40 gigabytes (GB) of storage.
+
+### What is the cost for additional storage?
+
+The cost for additional storage varies, but it's similar to the [standard Azure costs for storage](https://azure.microsoft.com/pricing/details/storage/page-blobs/). In other words, the cost is about $0.05 per GB.
+
+### How can we learn how much storage we've already used?
+
+There will be proactive communications when you're approaching your database and file storage limits. However, Microsoft Dynamics Lifecycle Services (LCS) provides some information, and you can log support requests for additional information. 
+
+### Is there an option to export all document attachments from the system?
+
+Although attachments can be exported, that capability isn't a standard capability, because there isn't a standard attachment entity. Entities that provide attachments for a specific business document or record must be built.

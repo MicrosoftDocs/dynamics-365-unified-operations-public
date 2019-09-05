@@ -115,7 +115,7 @@ You can show performance journal items that are related to the review. You can a
 
 ### Ratings
 
-You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources parameters** page under **Performance.**
+You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources shared parameters** page under **Performance.**
 
 ### Sign-offs
 

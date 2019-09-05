@@ -3,7 +3,7 @@
 
 title: Earnings and earnings generation FAQ
 description: This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220904
 ms.assetid: 8eef7aff-5d9a-47aa-b6a2-86958c3694cf
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: brpotter
+ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -85,4 +85,4 @@ When you generate earnings, you might receive the following message: "The select
 
 ## Don't see your question here?
 
-We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?LinkID=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
+We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](https://go.microsoft.com/fwlink/?LinkID=389258) in [Microsoft Dynamics Lifecycle Services](https://go.microsoft.com/fwlink/?LinkID=306505) (LCS).

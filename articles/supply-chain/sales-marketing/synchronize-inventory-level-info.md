@@ -5,7 +5,7 @@ title: Synchronize inventory level information from Finance and Operations to Fi
 description: This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 03/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -79,6 +79,14 @@ The **External product inventory** entity is only used for back end in to the in
 
 ## Prerequisites and mapping setup
 
+### Data integration
+For the project to work, you need to ensure that the Integration key is updated for msdynce_externalproductinventories.
+1.  Go to **Data integration > Connection sets**.
+2.  Select the used Connection set.
+3.  On the **Integration key** tab, ensure that the following keys are added to msdynce_externalproductinventories:
+      - msdynce_productnumber (Product Number)
+      - msdynce_warehouseid (Warehouse ID)
+      
 ### Data integration project
 You can apply filters with Advanced Query and Filtering so that only certain products and warehouses send inventory-level information from Finance and Operations to Field Service.
 
