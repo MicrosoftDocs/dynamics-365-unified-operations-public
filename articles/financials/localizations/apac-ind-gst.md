@@ -49,7 +49,7 @@ This topic provides detailed information about India Goods and Services Tax (GST
 <tbody>
 <tr>
 <td>Set up business verticals.</td>
-<td>On the <strong>Business verticals</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>Business verticals</strong>), create business verticals. For more information, see <a href="apac-ind-GST--create-business-vertical.md">Create a business vertical</a>.</td>
+<td>On the <strong>Business verticals</strong> page (<strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>India</strong> &gt; <strong>Business verticals</strong>), create business verticals. For more information, see <a href="apac-ind-GST-create-business-vertical.md">Create a business vertical</a>.</td>
 </tr>
 <tr>
 <td>Set up state codes and the union territory designation for Indian states.</td>
@@ -146,7 +146,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 
 ## Import the configuration and deploy it to a specific company
 
-Follow the process in the topic, [Import tax engine configurations](../general-ledger/tasks/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
+Follow the process in the topic, [Import tax engine configurations](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
 
 ### GST configurations
 | Version                                                                                                            | Details                                                                                                                                                                                       |
