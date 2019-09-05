@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 for Retail version 10.0.5
 description: This topic describes features that are in preview in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Release 10.0.6
 
 ---
@@ -49,10 +49,6 @@ Additionally, new tables have been added for tracking available ecommerce invent
 
 ### Install merchant properties deprecated from the Hardware station installer
 To better support future enhancements to headless installation, the merchant properties installer has been removed from the Hardware station installation experience. New for 10.0.6, the hardware station merchant properties will be set at runtime when the POS is paired to a hardware station and updated when the hardware station is made active, if needed. If both the POS and hardware station are not updated to 10.0.6 at the same time, the setting and updating of merchant properties by POS will not function correctly. This means that if the POS is updated, but not the hardware station, then the hardware station will continue to use old merchant properties until it is updated as well. 
-
-## Feature name
-  
-Description
 
 ## Additional resources
 
