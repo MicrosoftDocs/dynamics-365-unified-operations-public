@@ -84,6 +84,6 @@ This option is used to control the planning engine used for master planning
 
 **Note:** If existing planning batch jobs created for the build-in Finance and Operations planning engine are triggered when **Use Planning Optimization** is set to **Yes** these will fail, as the build-in Finance and Operations planning engine is disabled.
 
-**Setup integration with the Planning Optimization**
+#### Setup integration with the Planning Optimization
 
 With Planning Optimization preview enabled master planning is done using the Planning Optimization Add-in for Finance and Operations. This impacts the master planning result and features depending on master planning.
