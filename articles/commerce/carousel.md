@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Carousel module 
-description: This topic explains how to use a Carousel module in ecommerce pages
-author:  anupamar 
-manager: BrendanS
-ms.date: 07/19/2019
+title: Add a carousel module to a page 
+description: This topic covers carousel modules and how to add them to site pages in Dynamics 365 Commerce.
+author:  anupamar-ms
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -17,72 +17,73 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: 
+ms.search.region: Global
 ms.search.industry: 
-ms.author: jeffbl
-ms.search.validFrom: 2019-10-01
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Carousel
+# Add a carousel module to a page
 
-A Carousel is used to place multiple promotional items within a carousel view. It’s a special container module that hosts other modules inside it and provides a carousel for the user to browse the content. For example, on the home page a retailer can showcase multiple new products or promotions within a carousel.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-You can add Hero and Feature modules inside a carousel and the properties of the carousel define how these items will be rendered. 
+This topic covers carousel modules and how to add them to site pages in Dynamics 365 Commerce.
 
-## Usage examples in ecommerce:
+## Overview
 
-* Carousel can be placed on the home page with multiple promotional modules inside it
+A carousel module is used to place multiple promotional items within a carousel that customers can browse. It's a special container module that hosts other modules inside of it. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 
-- Carousel can be used on product details page with multiple promotional modules inside it
+You can add hero and feature modules inside a carousel module and the properties of the carousel define how these items will be rendered. 
 
-- Carousel can be used on any marketing page to promote multiple promotions or products
+## Examples of carousel module uses in e-Commerce
+
+- A carousel can be placed on a home page with multiple promotional modules inside it.
+- A carousel can be used on product details page with multiple promotional modules inside it.
+- A carousel can be used on any marketing page to promote multiple promotions or products.
 
 ## Carousel module properties
 
 | Property name             | Values                         | Property Description                                         |
 | :------------------------ | :----------------------------- | :----------------------------------------------------------- |
-| Auto play                 | True or False                  | When auto play is true, items inside the carousel will automatically   transition.<br />When auto play is false, the items will not transition unless the user   interacts with keyboard or mouse. |
-| Slide transition interval | In secs                        | Defines the interval to transition from one item to next     |
-| Transition animation      | Slide<br />Fade                | Defines if transition effect should be slide or fade         |
-| Width                     | Fit container<br />Fill screen | Fill container restricts the items inside the carousel to fit within   the carousel width. Fill screen allows the items to go full-bleed and does   not restrict within carousel width.<br />The values can be changed to achieve   the layout that we want. |
+| Autoplay                 | True or False                  | When the autoplay property is set to True, items inside the carousel will automatically transition.<br />When the autoplay property is set False, the items will not transition unless the customer uses the keyboard or mouse. |
+| Slide transition interval | In seconds                        | Defines the interval to transition from one item to the next     |
+| Transition animation      | Slide<br />Fade                | Defines if the transition effect should be slide or fade         |
+| Width                     | Fit container<br />Fill screen | The fit container value restricts the items inside the carousel to fit within the carousel width. The fill screen value allows items to go full-bleed and does not restrict them within carousel width.<br />The values can be changed to achieve the layout desired. |
 
- 
+## Add a carousel module to a page
 
-## Creating a page with a Carousel module
+To add a carousel module to a new page and set the required properties, do the following. 
 
-This section explains how to add a Carousel module to a new page and set the required properties. Refer to Templates and Pages for more details.
+1. Create a new page template named "Carousel template."
 
- 
+1. In the **Main** slot of the default page, add a carousel module. 
 
-1. We need to first create a template. In tooling, create a new page template “Carousel template”.
+1. Add a hero module to the carousel module.
 
-2. In the Main slot of the Default Page, add a Carousel module. 
+1. Add a feature module to the carousel module.
 
-3. Add a Hero module to the carousel.
+1. Check in and publish the template. 
 
-4. Add a Feature module to the carousel.
+1. Create a new page named "carousel page" with the carousel template you created.
 
-5. Check-in and Publish. 
+1.In the **Main** slot of the new page, add a carousel module.
 
-6. Now create a new page with the “Carousel template” and call it “Carousel page”.
+1. Set the carousel module property **Width** to **Fill screen**. 
 
-7. In the page outline, add Default Page. To the Main slot,  add Carousel module.
+1. Set the carousel module property **Transition animation* to **Slide**.
 
-8. Set Carousel module property Width to Fill screen. 
+1. Add a hero module to the carousel module. In the hero module, add an image and a heading and click **Save**. 
 
-9. Set Carousel module property Transition animation to Slide.
+1. Add a feature module to the carousel module. In the feature module, add an image, a heading, and a paragraph of test.
 
-10. To the Carousel module, add a Hero module. On the Hero module, add an Image and a Heading and save. See Hero module for more details.
+1. Save and preview the page. The page should show a carousel with two modules inside of it (hero and feature). Additional properties for carousel, hero, or feature modules can be modified to achieve the desired effect.
 
-11. To the Carousel module, add a Feature module.  On the Feature module, add an Image, Heading and Paragraph. See Feature module for more details
-
-12. Save and Preview.  Preview will show a carousel with 2 modules inside it -Hero, Feature. Additional propertis for Carousel, Hero or Feature can be changed to achieve the desired effect.
-
-13. Check-in and Publish the page.
+1. Check in and publish the page.
 
