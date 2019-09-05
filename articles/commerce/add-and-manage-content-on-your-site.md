@@ -27,7 +27,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 
 
 ---
-# Ways to add and manage content
+## Ways to add and manage content
 There are many different actions you can take to alter the look, feel, and content of your site.  Depending on the required level of customization, many of these tasks can be performed by non-developers.  Building templates, picking themes, and selecting and configuring modules can all be achieved without writing any code.  In contrast, a *new* theme or module does require development skills to leverage the e-Commerce SDK and LCS deployment workflow.  Within this section, we will focus primarily on areas of your site that do not require a developer, and where necessary point you towards tasks that will require SDK work.
 
 Read through the following documentation if you would like to...
@@ -37,7 +37,7 @@ Read through the following documentation if you would like to...
 * [re-arrange how sections are organized on a page within my site.](Templates-and-layouts.md#Layouts)
 * [change the fonts, colors, and general look of pages within my site.](Themes.md)
 
-# Page elements
+## Page elements
 
 Below is a quick look at some terms you should be familiar with in order to modify the look, feel, and content within your site.  Follow any links for a more complete explanation and walkthrough.
 
@@ -53,12 +53,8 @@ Theme | **Definition:** Defines the CSS and determines the look and feel of how 
 URL | **Definition:** "Uniform Resource Locator", a URL is a World Wide Web address that points to a webpage or other URL.<br />**Where to select:** URLs are selected wherever links are needed between pages. <br />**Where to edit**: URLs are edited in the URL editor UX, and do not require any code to create or modify. 
 Asset | **Definition:** A file binary (with an extension like .jpg, .docx, .pdf, .mpg, etc.).<br />**Where to select:** Assets are selected as module properties for modules that require them. <br />**Where to edit**: Assets are uploaded and associated metadata is edited within the asset manager UX. 
 
-
-
-
-
-# Document states and lifecycle
-## CMS Items
+## Document states and lifecycle
+### CMS Items
 
 The CMS document types listed in the section above have several different possible states within the authoring tool that affect who and when they can be edited.  These different document states help enforce data conflicts, versioning, and who and when changes are viewable by others.
 
@@ -69,8 +65,3 @@ Check in | When a CMS item is checked in, all changes are visible to other authe
 Publish | When a CMS item is published, it is pushed to your live site and becomes discoverable on the internet by non-authenticated external users.  Publish can only be performed on checked in documents. 
 Save | Save is an action that can be made on a checked out document to persist changes to the CMS before they are checked in or published.  These saved changes are not visible to other authenticated system users until the document is checked in, and not visible to external users until published. 
 Discard check out | When a checked out CMS item is discarded, all saved changes are deleted and the item is reverted to the most recently checked in version of the item. 
-
-
-
-
-
