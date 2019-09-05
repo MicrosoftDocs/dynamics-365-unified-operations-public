@@ -91,7 +91,3 @@ This section explains how to add a cart module to a new page and set the require
 9. Now create a new template and add the Cart fragment to it
 
 10. Create a page with the newly added template
-
-
-
-
