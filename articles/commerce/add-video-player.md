@@ -38,7 +38,7 @@ This topic covers video player modules and how to add them to site pages in Dyna
 
 ## Overview
 
-Video player modules are used to support video playback. There are two video player modules that are supported in starter kit, the ambient video player module and the video player module. They both support the .mp4 media type.
+Video player modules are used to support video playback. There are two video player modules that are provided in the store starter kit, the ambient video player module and the video player module. They both support the .mp4 media type.
 
 ## Ambient video player module
 
@@ -81,7 +81,7 @@ The video player module can be used to showcase videos on an the ecommerce site.
 | Playback controls      | True or False | When this property is set to True, a lay/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard |
 | Play fullscreen       | True or False | The video can be played in full screen if this property is set to True |
 | Controls               | True or False | All controls will be shown when this property is set to True. This includes play, pause, progress, closed captions, etc. |
-| Hide poster frame      | True or False   | A video can have a poster frame. If this property is set to True, the poster frame will be hidden |
+| Hide poster frame      | True or False   | A video can have a poster frame, and if this property is set to True, the poster frame will be hidden |
 | Mask level             | 0-100         | A mask that can be applied to the video for styling             |
 | Fullscreen icon style | Square or Arrow  | This property defines the style of the fullscreen icon shown on the video player |
 
@@ -90,14 +90,14 @@ The video player module can be used to showcase videos on an the ecommerce site.
 To add a video player module to a new page and set the required properties, do the following.
 
 1. Create a new page template named "video player template." 
-1. In the Main slot of the Default Page, add a container module. 
+1. In the **Main** slot of the default page, add a container module. 
 1. In the container module, add video player and ambient video player modules. 
 1. Check in the template and publish.  
 1. Create a new page using the video player template you created named "video player page." 
-1. In the Main slot of the new page, add an ambient video player module. 
+1. In the **Main** slot of the new page, add an ambient video player module. 
 1. In the settings for the ambient video player module, go to **Media** and upload a video file. You can change the autoplay, loop, and other properties as needed.
 1. Save and preview the page. 
-1. In the Main slot of the new page, add a video player module. 
+1. In the **Main** slot of the new page, add a video player module. 
 1. In the settings for the video player module, go to **Media** and upload a video file.  
 1. Save and preview the page. You should see both video modules on the page. Additional settings can be changed to customize the behavior of each module.
 1. Check in and publish the page.
