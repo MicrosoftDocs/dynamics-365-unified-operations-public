@@ -1,22 +1,22 @@
 ---
 # required metadata
 
-title: Video Player
-description: This topic reviews setting up an e-Commerce page with the Video Player module.
+title: Add a video player module to a page
+description: This topic covers video player modules and how to add them to site pages in Dynamics 365 Commerce.
 author: anupamar-ms
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -24,90 +24,80 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupamar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Video Player 
+# Add a video player module to a page
 
-Video player is used to support video playback. There are two video players that are supported in starter kit– Ambient Video Player and Video Player. They both support mp4 media type.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## Ambient video player 
+This topic covers video player modules and how to add them to site pages in Dynamics 365 Commerce.
 
-Ambient video player supports short informational videos. It should be used for videos less than 5 seconds. It supports limited video playback controls such as play and pause.  
+## Overview
 
-### Usage examples for ecommerce: 
+Video player modules are used to support video playback. There are two video player modules that are supported in starter kit, the ambient video player module and the video player module. They both support the .mp4 media type.
 
-- Short informational video highlighting new products on home page.  
-- Short informational video highlighting product features on a product details page 
+## Ambient video player module
 
+The ambient video player module supports short informational videos. It should be used for videos less than 5 seconds long, and supports limited video playback controls such as play and pause.  
 
+### Examples of ambient video player module uses in e-Commerce
 
-### Properties for Ambient video player:
+- Short informational videos highlighting new products on home page  
+- Short informational videos highlighting product features on a product details page 
+
+### Ambient video player module properties
 
 | Property name     | Values        | Property Description                                         |
 | ----------------- | ------------- | ------------------------------------------------------------ |
-| Auto play         | True or False | Auto plays the video when this setting is turned on          |
-| Mute              | True or False | Mutes the audio. The default value is True for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user plays the video.  |
-| Loop              | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media             |               | This is video file that should be played in the video player. |
-| Playback controls | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
+| Autoplay         | True or False | Autoplays the video when this property is set to True          |
+| Mute              | True or False | Mutes the audio. The default value is True for this player. In the Chrome browser, autoplay videos will be muted by default, and audio will be played only if the user plays the video.  |
+| Loop              | True or False | Repeats the video in a loop when this property is set to True   |
+| Media             |               | The video file to be played by the video player |
+| Playback controls | True or False | When this property is set to True, a play/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard |
 
- 
+## Video player module
 
-## Video Player 
+The video player module can be used to showcase videos on an the ecommerce site. It supports all playback capabilities such as play, pause, full size, closed captions, etc. In addition to supporting closed captions, the video player module also supports customization of closed captions such as font size and background color to meet Microsoft accessibility standards. 
 
-Video player can be used for videos that we want to showcase in the ecommerce site. It supports all play back capabilities such as play, pause, full size, closed captions etc. The video player supports closed captions and also supports customization of closed captions – font size, background color etc to meet Microsoft Accessibility Standards. 
+### Examples of video player module uses in e-Commerce 
 
-### Usage examples for ecommerce: 
+- Instructional videos on product details or marketing pages 
+- Promotions and policies videos on any marketing page 
+- Marketing videos that highlight product features on product details or marketing pages 
 
-- It can be used for instructional video in product details page or marketing page 
-- It can be used to market promotions and policies on any marketing page 
-- It can be used to market products by highlighting its features on a product details page or marketing page 
 
- 
-
-### Properties for Video player:
+### Video player module properties
 
 | Property name          | Values        | Property Description                                         |
 | ---------------------- | ------------- | ------------------------------------------------------------ |
-| Auto play              | True or False | Auto plays the video when this setting is turned on          |
-| Mute                   | True or False | Mutes the audio. The default value is false for this player. In Chrome browser, autoplay videos will be muted by default, audio will be played only if the user chooses to play the video.  |
-| Loop                   | True or False | Repeats the video in a loop when this setting is turned on   |
-| Media                  |               | This is the video file that should be played in the video player|
-| Playback controls      | True or False | When this setting is true, a Play/Pause button will be shown on the video. If this setting is false, the play/pause button will not be shown but the video can still be paused or resumed using keyboard action |
-| Play full screen       | True or False | The video can be played in full screen if this option is true |
-| Controls               | True or False | All controls will be shown when this option is shown. This includes Play, Pause, Progress, Closed captions etc |
-| Hide poster frame      | True, False   | A video can have a poster frame. If this setting is true, the poster frame will be hidden |
-| Mask level             | 0-100         | A mask can be applied to the video for styling.              |
-| Full screen icon style | Square Arrow  | This defines the style of the full screen icon shown on the video player. |
+| Auto play              | True or False | Autoplays the video when this property is set to True          |
+| Mute                   | True or False | Mutes the audio. The default value is False for this player. In the Chrome browser, autoplay videos will be muted by default, and audio will be played only if the user chooses to play the video.  |
+| Loop                   | True or False | Repeats the video in a loop when this property is set to True   |
+| Media                  |               | The video file to be played in the video player|
+| Playback controls      | True or False | When this property is set to True, a lay/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard |
+| Play fullscreen       | True or False | The video can be played in full screen if this property is set to True |
+| Controls               | True or False | All controls will be shown when this property is set to True. This includes play, pause, progress, closed captions, etc. |
+| Hide poster frame      | True or False   | A video can have a poster frame. If this property is set to True, the poster frame will be hidden |
+| Mask level             | 0-100         | A mask that can be applied to the video for styling             |
+| Fullscreen icon style | Square or Arrow  | This property defines the style of the fullscreen icon shown on the video player |
 
+## Add a video player module to a page 
 
-## Creating a page with video player module  
+To add a video player module to a new page and set the required properties, do the following.
 
-This section explains how to add a video player module to a new page and set the required properties. Refer to Templates and Pages for more details. 
-
-1. We need to first create a template. In tooling, create a new page template “Video player template”. 
-
-2. In the Main slot of the Default Page, add a Container module. See Container topic for more details. 
-
-3. To the Container, add a Video player module and Ambient Video player module. 
-
-4. Check-in and Publish.  
-
-5. Now create a new page with the “Video player template” and call it “Video player page” 
-
-6. In the page outline, add Ambient Video player module to the Main slot 
-
-7. In the settings for Ambient Video player module, go to Media and upload a video file. You can change the Auto play, Loop and other properties as needed.
-
-8. Save and Preview 
-
-9. Go back to the page outline, add Video player module to the Main slot 
-
-10. In the settings for Video player module, go to Media and upload a video file.  
-
-11. Save and Preview. On Preview, you should see both video modules on the page. Additional settings can be changed to customize the behavior of each module 
-
-12. Check-in and Publish
+1. Create a new page template named "video player template." 
+1. In the Main slot of the Default Page, add a container module. 
+1. In the container module, add video player and ambient video player modules. 
+1. Check in the template and publish.  
+1. Create a new page using the video player template you created named "video player page." 
+1. In the Main slot of the new page, add an ambient video player module. 
+1. In the settings for the ambient video player module, go to **Media** and upload a video file. You can change the autoplay, loop, and other properties as needed.
+1. Save and preview the page. 
+1. In the Main slot of the new page, add a video player module. 
+1. In the settings for the video player module, go to **Media** and upload a video file.  
+1. Save and preview the page. You should see both video modules on the page. Additional settings can be changed to customize the behavior of each module.
+1. Check in and publish the page.
