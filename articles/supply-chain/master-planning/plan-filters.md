@@ -40,8 +40,6 @@ The plan filter is useful when you want to limit a specific plan to a specific g
 
 If a plan filter is applied, and another filter is applied during the master planning run (runtime filter), only the intersection of the two filters will be included in the planning run.
 
-**Note:** You should avoid plan filter on the plan selected as the dynamics plan, as it would limit the dynamic plan functionality to the filtered items. E.g. updating Net requirements for an item that is not part of the plan filter will not generate any result.
-
 ### Example:
 
 Plan filter is setup to include item A,B and C
@@ -52,3 +50,5 @@ Plan filter is setup to include item A,B and C
 2. Runtime filter includes item A and D: Only item A is included in the planning run, as D is not part of the plan filer.
 3. Runtime filter includes item B: Only item B is included in the planning run, previous planning output for item A are kept.
 4. Runtime filter includes all items (Blank filter): Item A, B and C are included in the planning run, and previous planning output for item A and B will be overwritten.
+
+**Note:** You should avoid plan filter on the plan selected as the dynamics plan, as it would limit the dynamic plan functionality to the filtered items. E.g. updating Net requirements for an item that is not part of the plan filter will not generate any result.
