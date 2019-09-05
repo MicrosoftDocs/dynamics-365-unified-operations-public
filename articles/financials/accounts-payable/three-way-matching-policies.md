@@ -68,7 +68,7 @@ The invoice matching policies in this example help people in the following roles
 1.  Sammy, a worker in the receiving department at Fabrikam, receives the total quantity of machines that are shipped from Contoso. He enters a quantity of 5 on a product receipt. Because the purchase order has been fully received, the status of the purchase order changes to Received.
 2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
-    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 for Finance and Operations. This includes the following types of price matching:
+    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 Finance. This includes the following types of price matching:
         -   Net unit price matching – The net unit price on the invoice line matches the net unit price on the purchase order line, within the tolerance percentage. In this example, the net unit price tolerance is +8%.
         -   Price totals matching – The net amount on the invoice line matches the net amount on the purchase order line, within the tolerance percentage, amount, or percentage and amount. In this example, the price totals matching tolerance is +15%.
 
