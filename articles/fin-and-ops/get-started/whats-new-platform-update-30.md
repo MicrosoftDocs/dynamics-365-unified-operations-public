@@ -63,7 +63,7 @@ New Finance and Operations license types are being made available to new custome
 ## Additional resources
 
 ### Platform update 30 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com)(TBD).
+For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com) (TBD).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
