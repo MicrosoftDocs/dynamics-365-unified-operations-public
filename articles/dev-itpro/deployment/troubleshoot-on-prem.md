@@ -677,7 +677,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
  ```
 
  Resolution: 
-   1. You need to configure the execution of Pre/Post deployment scripts. Check out the [guide](../../lifecycle-services/pre-post-scripts.md).
+   1. You need to configure the execution of Pre/Post deployment scripts. Check out the [guide](../lifecycle-services/pre-post-scripts.md).
    2. Add the following snippet to your Predeployment.ps1 script:
 
         ```powershell
