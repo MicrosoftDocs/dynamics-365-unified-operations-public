@@ -28,6 +28,7 @@ ms.author: jeffbl
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 
 ---
+
 # Alert 
 
 Alert is used to show informational messages inline on a page. Alerts supports textual message and a link. For example, it can be used to show site wide promotions which appear on all pages of the site. 
