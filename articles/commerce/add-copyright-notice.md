@@ -64,5 +64,3 @@ To add a copyright notice to the end of each page using the template, do the fol
 1. Publish
 
 After these steps, the copyright footer will automatically be visible an the bottom of all pages that use this template
-
-
