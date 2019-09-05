@@ -1,10 +1,16 @@
 # Dynamics 365 Commerce online channel documentation (DRAFT)
 # Online channel management
-* [E-Commerce overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Overview-docs/articles/commerce/ecommerce-site-overview.md)
+* [Get started with an online channel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Quick%20tour%20for%20ecommerce%20site?branch=anupamar-Overview-docs)
+
+## E-Commerce overview
+* [Quick tour of Home page]()
+* [Quick tour of product details page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/f87c9693b1d251530c789b1dec2ed9cebbd2947e/articles/commerce/Quick%20tour%20of%20product%20details%20page.md)
+* [Quick tour of cart and checkout]()
+* [Quick tour of Account management]()
 
 ## Create a new e-Commerce site
-* [Deploy a new e-Commerce site (LCS)](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/psimolin-deploy-site/articles/commerce/deploy-ecommerce-site.md)
-* [Create a new Dynamics 365 online channel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/create-new-ecommerce-site?branch=stuharg-create-new-eCommerce-site)
+* [Deploy a new e-Commerce site (LCS)](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/psimolin-deploy-site/articles/commerce/deploy-e-commerce-site.md)
+* [Create a new Dynamics 365 online channel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Create%20a%20new%20Dynamics%20365%20for%20Commerce%20online%20store?branch=stuharg-create-new-eCommerce-site)
 * [Associate a site with a Dynamics 365 Commerce online channel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-associate-site-with-online-channel/articles/commerce/associate-site-online-store.md)
 * [Configuring your domain name](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/configure-your-domain-name?branch=psimolin-configure-domain-name)
 
@@ -13,29 +19,29 @@
 
 ## Manage your site
 * [Manage users and roles](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-manage-permissions/articles/commerce/manage-e-commerce-users-roles.md)
-* [Add telemetry](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-add-telemetry/articles/commerce/Add%20telemetry.md)
+* [Add telemetry](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-add-telemetry/articles/commerce/add-telemetry.md)
 
 ## Brand your site and add store details
-* [Add a logo](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add%20a%20logo?branch=josaw-logo)
+* [Add a logo](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/josaw-logo/articles/commerce/add-logo.md)
 * [Select a site theme](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-select-a-site-theme/articles/commerce/select-site-theme.md)
-* [Add a fav icon](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add%20a%20favicon%20to%20your%20site?branch=stuharg-add-a-favicon)
+* [Add a fav icon](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-add-a-favicon/articles/commerce/add-favicon.md)
 * [Add a welcome message](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/add-a-welcome-message?branch=psimolin-add-welcome-message)
 * [Add a copyright notice](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/add-copyright-notice?branch=psimolin-add-copyright-notice)
-* [Add other languages to your site](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add%20languages%20to%20your%20site?branch=stuharg-add-language)
+* [Add other languages to your site](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-add-language/articles/commerce/add-languages-to-site.md)
 * [Search engine optimization considerations](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/search-engine-optimization-considerations?branch=psimolin-seo-considerations)
   
 ## Make your site compliant
-* [Compliance overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Compliance_Overview?branch=brshoo-Compliance_Overview)
-* [Add a privacy policy](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add_A_Privacy_Policy?branch=brshoo-Add_A_Privacy_Policy)
-* [Delete personal information](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Delete_Personal_Information?branch=brshoo-Delete_Personal_Information)
-* [Cookie compliance](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Cookie_Compliance?branch=brshoo-CookieCompliance)
-* [Accessibility](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Accessibility?branch=brshoo-Accessibility)
+* [Compliance overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-Compliance_Overview/articles/commerce/compliance-overview.md)
+* [Add a privacy policy](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/brshoo-Add_A_Privacy_Policy/articles/commerce/add-privacy-page.md)
+* [Delete personal information](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/brshoo-Delete_Personal_Information/articles/commerce/delete-personal-information.md)
+* [Cookie compliance](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-CookieCompliance/articles/commerce/cookie-compliance.md)
+* [Accessibility](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-Accessibility/articles/commerce/accessibility.md)
 
 ## Add and manage content on your site
 Create a compelling customer shopping experience with your content.  Learn how to create templates and pages with dynamic product info, images and video as well as how to modify existing pages and modules within a page.
 * [Ways to add content](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add-and-manage-content-on-your-site?branch=niholman-Add-and-manage-content-on-your-site)
-* [Page elements](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add-and-manage-content-on-your-site?branch=niholman-Add-and-manage-content-on-your-site)
-* [Document states and lifecycle](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Add-and-manage-content-on-your-site?branch=niholman-Add-and-manage-content-on-your-site)
+* [Page elements](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Add-and-manage-content-on-your-site/articles/commerce/add-and-manage-content-on-your-site.md)
+* [Document states and lifecycle](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Add-and-manage-content-on-your-site/articles/commerce/add-and-manage-content-on-your-site.md)
 
 ## Pages
 * [Modify an existing page](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/modify-an-existing-page?branch=psimolin-modify-existing-page)
@@ -48,9 +54,9 @@ Create a compelling customer shopping experience with your content.  Learn how t
 * [Enrich a category](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/cenrich-a-category?branch=asharchw-commerce)
 
 ## Modules
-* [Module overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Modules?branch=niholman-Modules)
-* [Add or remove modules](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Modules?branch=niholman-Modules#add-a-module)
-* [Configure a module](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Modules?branch=niholman-Modules#configure-a-content-module)
+* [Module overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/modules?branch=niholman-Modules)
+* [Add or remove modules](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/modules?branch=niholman-Modules#add-a-module)
+* [Configure a module](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/modules?branch=niholman-Modules#configure-a-content-module)
 
 ## Fragments
 * [Create a fragment](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Fragments?branch=niholman-Fragments)
@@ -59,45 +65,45 @@ Create a compelling customer shopping experience with your content.  Learn how t
 * [Edit a fragment](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Fragments?branch=niholman-Fragments)
 
 ## Templates and layouts
-* [Templates and layouts overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts)
+* [Templates and layouts overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md)
 
 ## Templates
-* [Modify a template](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#modify-a-template)
-* [Create a new template](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#create-a-new-template)
-* [Add headers and footers to a template](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#add-headers-and-footers)
-* [Change a template theme](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#change-template-theme)
-* [Add script to a template](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#add-script-to-a-template)
-* [Save, preview, and publish a template](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#save-check-in-preview-and-publish-a-template)
+* [Modify a template](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#modify-a-template)
+* [Create a new template](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#create-a-new-template)
+* [Add headers and footers to a template](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#add-headers-and-footers)
+* [Change a template theme](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#change-template-theme)
+* [Add script to a template](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#add-script-to-a-template)
+* [Save, preview, and publish a template](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#save-check-in-preview-and-publish-a-template)
 
 ## Layouts
-* [Create a new preset layout](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#create-a-new-preset-layout)
-* [Modify a preset layout](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#modify-a-preset-layout)
-* [Change preset layout theme](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#change-preset-layout-theme)
-* [Save, preview, and publish a layout](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Templates-and-layouts?branch=niholman-Templates-and-layouts#save-preview-and-publish-a-preset-layout)
+* [Create a new preset layout](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#create-a-new-preset-layout)
+* [Modify a preset layout](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#modify-a-preset-layout)
+* [Change preset layout theme](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#change-preset-layout-theme)
+* [Save, preview, and publish a layout](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/niholman-Templates-and-layouts/articles/commerce/templates-and-layouts.md#save-preview-and-publish-a-preset-layout)
 
 ## Site Navigation
-* [Customize site navigation](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Customized%20site%20navigation?branch=stuharg-customized-site-navigation)
+* [Customize site navigation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/stuharg-customized-site-navigation/articles/commerce/customize-site-navigation.md)
 * [Create a page URL](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/create-page-URL?branch=stuharg-create-a-page-URL)
 
 ## Starter kit
-* [Starter kit overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Starter%20kit%20overview?branch=anupamar-Overview-docs)
-* [Account management](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Account%20Management?branch=anupamar-AccountManagement)
-* [Alert](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Alert?branch=anupamar-Carousel-Alert)
-* [Video player](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Video%20Player?branch=anupamar-VideoPlayer)
-* [Author a header module](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/header-module?branch=anupamar-headerFooter)
-* [Buy box](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Buy-Box?branch=anupamar-Buy-Box)
-* [Carousel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Carousel?branch=anupamar-Carousel-Alert)
-* [Cart](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Cart?branch=anupamar-Cart)
-* [Checkout](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Checkout?branch=anupamar-Checkout)
-* [Content placement](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Content%20Placement?branch=anupamar-Content-Placement)
-* [Content placement item](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Content%20Placement%20Item?branch=anupamar-Content-Placement)
-* [Content rich block](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Content%20Rich%20block?branch=anupamar-Content-rich-block)
+* [Starter kit overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Overview-docs/articles/commerce/starter-kit-overview.md)
+* [Account management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-AccountManagement/articles/commerce/account-management.md)
+* [Alert](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Carousel-Alert/articles/commerce/alert.md)
+* [Buy box](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Buy-Box/articles/commerce/buy-box.md)
+* [Carousel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Carousel-Alert/articles/commerce/carousel.md)
+* [Cart](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Cart/articles/commerce/cart.md)
+* [Checkout](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/anupamar-Checkout/articles/commerce/add-checkout-module.md)
+* [Content placement](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Content-Placement/articles/commerce/content-placement.md)
+* [Content placement item](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Content-Placement/articles/commerce/content-placement-item.md)
+* [Content rich block](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-Content-rich-block/articles/commerce/content-rich-block.md)
 * [Feature](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/feature?branch=anupamar-HeroFeature)
-* [Footer](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Footer%20module?branch=anupamar-headerFooter)
-* [Hero](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Hero?branch=anupamar-HeroFeature)
-* [Order confirmation](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Order%20confirmatio?branch=anupamar-orderconfirmation)
+* [Footer](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-headerFooter/articles/commerce/footer-module.md)
+* [Header module](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/header-module?branch=anupamar-headerFooter)
+* [Hero](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-HeroFeature/articles/commerce/hero.md)
+* [Order confirmation](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-orderconfirmation/articles/commerce/order-confirmation.md)
 * [Product placement](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/product-placement-module-overview?branch=asharchw-commerce)
-* [Ratings and reviews](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Configuring%20eCommerce%20site%20and%20pages%20with%20Ratings%20and%20Reviews?branch=gmohanv-rnr-siteandmodules)
+* [Ratings and reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-siteandmodules/articles/commerce/configure-ratings-reviews.md)
+* [Video player](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-VideoPlayer/articles/commerce/add-video-player.md)
 
 ## Search
 * [Category search page](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/category-search-page-overview?branch=asharchw-commerce)
@@ -107,13 +113,13 @@ Create a compelling customer shopping experience with your content.  Learn how t
 * [Online channel reporting](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/reporting?branch=psimolin-reporting)
 
 ## Error handling
-* [400 / 500 Page Support](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/400_500_PageSupport?branch=brshoo-400_500_PageResults)
+* [400 / 500 Page Support](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-400_500_PageResults/articles/commerce/build-pages-400-500-errors.md)
 
 # Ratings and Reviews 
-* [Ratings and Reviews overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Ratings%20and%20Reviews%20Overview?branch=gmohanv-ratingsandreview-overview)
-* [Onboarding Ratings & Reviews](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Onboarding%20Ratings%20and%20Reviews?branch=gmohanv-rnr-onboarding)
-* [Moderate ratings & reviews](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Ratings%20and%20Reviews%20Moderation?branch=gmohanv-rnr-moderation)
-* [Configure Ratings & Reviews](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Configuring%20eCommerce%20site%20and%20pages%20with%20Ratings%20and%20Reviews?branch=gmohanv-rnr-siteandmodules)
+* [Ratings and Reviews overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-ratingsandreview-overview/articles/commerce/ratings-reviews-overview.md)
+* [Onboarding Ratings & Reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-onboarding/articles/commerce/onboarding-ratings-reviews.md)
+* [Moderate ratings & reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-moderation/articles/commerce/manage-reviews.md)
+* [Configure Ratings & Reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-siteandmodules/articles/commerce/configure-ratings-reviews.md)
 * [Configure batch job for product ratings ingestion]
 
 ## Recommendations
