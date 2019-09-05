@@ -38,6 +38,25 @@
         items:
         - name: Buy Finance and Operations (on-premises)
           href: get-started/purchase-on-premises.md
+    - name: Learning catalog
+      href: get-started/learning-catalog.md
+      items: 
+      - name: Business decision makers
+        href: get-started/learning-catalog-bdm.md
+      - name: Business users
+        href: get-started/learning-catalog-business-user.md
+      - name: Implementation project managers
+        href: get-started/learning-catalog-project-manager.md
+      - name: Administrators
+        href: get-started/learning-catalog-administrator.md
+      - name: Developers
+        href: get-started/learning-catalog-developer.md
+      - name: Partner sales and marketing
+        href: get-started/learning-catalog-partner-sales.md
+      - name: Functional consultants
+        href: get-started/learning-catalog-functional-consultant.md
+      - name: Solution architects
+        href: get-started/learning-catalog-solution-architect.md
     - name: What's new or changed
       items:
       - name: What's new or changed home page
