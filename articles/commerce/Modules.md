@@ -76,7 +76,7 @@ To remove a module from a slot or container within your page, do the following.
 
 1. In the left-side outline pane, click the ellipsis button next to the name of the module you wish to remove.
 
-1. In the drop-down menu, select the trashcan button. This should launch a confirmation dialog box asking if you are sure you want to remove the module.
+1. In the drop-down menu, select the trashcan button. This will launch a confirmation dialog box asking if you are sure you want to remove the module.
 
 1. Click **OK** to remove the module.
 
