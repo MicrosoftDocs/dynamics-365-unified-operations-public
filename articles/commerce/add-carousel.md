@@ -50,7 +50,7 @@ You can add hero and feature modules inside a carousel module and the properties
 
 ## Carousel module properties
 
-| Property name             | Values                         | Property Description                                         |
+| Property name             | Values                         | Property description                                         |
 | :------------------------ | :----------------------------- | :----------------------------------------------------------- |
 | Autoplay                 | True or False                  | When the autoplay property is set to True, items inside the carousel will automatically transition.<br />When the autoplay property is set False, the items will not transition unless the customer uses the keyboard or mouse to do so. |
 | Slide transition interval | In seconds                        | Defines the interval to transition from one item to the next     |
