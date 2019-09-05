@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Alert module 
-description: This topic explains how to use a Alert module in ecommerce pages
-author:  anupamar 
-manager: BrendanS
-ms.date: 07/19/2019
+title: Add an alert module to a page 
+description: This topic covers alert modules and how to add them to site pages in Dynamics 365 Commerce.
+author:  anupamar-ms
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -17,19 +17,23 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: 
+ms.search.region: Global
 ms.search.industry: 
-ms.author: jeffbl
+ms.author: anupamar
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 
 ---
 
-# Alert 
+# Add an alert module to a page
+
+This topic covers alert modules and how to add them to site pages in Dynamics 365 Commerce.
+
+## Overview
 
 Alert is used to show informational messages inline on a page. Alerts supports textual message and a link. For example, it can be used to show site wide promotions which appear on all pages of the site. 
 
