@@ -21,5 +21,3 @@ Starter kit is a collection of modules that can be used to build an ecommerce we
 **Recommendation**: Recommendations are offered via the Product Placement module. This module supports algorithmic and editorial lists which can be showcased in any page. 
 
 See Module Customization on how to further customize a module. See Theme for details on how to create a new theme that reflects your ecommerce brand. 
-
- 
