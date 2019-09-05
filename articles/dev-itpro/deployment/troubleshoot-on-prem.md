@@ -663,7 +663,7 @@ After providers are registered, additional details about the new deployment are 
 
 To see the new folders, you must close and reopen Event Viewer. To see additional details, you must deploy an environment again.
 
-###  Could not load file or assembly EntityFramework
+###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
 
 Issue: You are running Local Agent version 2.3.1 or above and you received the following stacktrace in the event logs while deploying a package that contains platform update 29 or lower:
 
