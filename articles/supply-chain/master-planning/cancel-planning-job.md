@@ -3,7 +3,7 @@
 
 title: Cancel planning job
 description: Cancel an active planning job that uses Planning Optimization
-author: crytt
+author: ChristianRytt
 manager: AnnBe
 ms.date: 2019-09-06
 ms.topic: article
