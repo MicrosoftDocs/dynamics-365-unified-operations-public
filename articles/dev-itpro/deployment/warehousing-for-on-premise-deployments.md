@@ -97,7 +97,7 @@ certificate](https://technet.microsoft.com/library/ff710475(v=ws.10).aspx).
 
 ## Configure the application
 
-You must configure the Warehousing app on the device to connect to the Finance and Operations server through the AD FS application.
+You must configure the Warehousing app on the device to connect to the server through the AD FS application.
 
 1.  In the app, open **Connection settings**.
 2.  Enter the following information:
@@ -106,16 +106,16 @@ You must configure the Warehousing app on the device to connect to the Finance a
 
     b.  **Active Directory Client Secret** - The client secret obtained when you created an application entry in AD FS.
 
-    c.  **Active Directory Resource** - The DNS URL for Finance and Operations AOS. Append the URL with '/namespaces/AXSF'. 
+    c.  **Active Directory Resource** - The DNS URL for the AOS. Append the URL with '/namespaces/AXSF'. 
         For example: `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF`
 
-    d.  **Active Directory Tenant** - The DNS URL for Finance and Operations AD FS machine. Append the URL with '/adfs/oauth2'. 
+    d.  **Active Directory Tenant** - The DNS URL for the AD FS machine. Append the URL with '/adfs/oauth2'. 
         For example: `https://adfs.d365ffo.onprem.contoso.com/adfs/oauth2`
         Make sure to use the CNAME of the ADFS machine (in the example the CNAME is `https://adfs.d365ffo.onprem.contoso.com`)
 
-3.  **Company** - Enter the legal entity in Finance and Operations to which you want the application to connect.
+3.  **Company** - Enter the legal entity to which you want the application to connect.
 4.  Select the **Back** button in the top-left corner of the application.
 
-    The application will now connect to your Finance and Operations server and the log-in screen for the warehouse worker will display.
+    The application will now connect to your server and the log-in screen for the warehouse worker will display.
     
 5. If you do not have a telemetry ID for the Warehouse app, you might encounter some errors. This is a known issue. The workaround is to sign in to an existing client to get a Telemetry ID. This issue will be fixed in a future release.
