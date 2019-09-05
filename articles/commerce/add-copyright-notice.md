@@ -43,24 +43,23 @@ Before you can add a copyright notice on your site, you must have the following:
 - A template that includes a shared footer fragment
 - A page that uses that template
 
+## Add the copyright notice
+
 To add a copyright notice to the end of each page using the template, do the following.
 
-1. Go to **Fragments**, then click **New Page Fragment**
-1. Choose **Footer** module and name the fragment e.g. "Footer-Copyright"
-1. Click **OK**
-1. From the page outline choose **Footer**
-1. Open ellipsis menu and select **Add Module**, pick **Footer category**, Click **OK**
-1. From **Footer category** in the page outline, open ellipsis menu and click **Add Module**, pick **Content rich block item** and click **OK**
-1. Make sure that **Content rich block item** is selected from the page outline and its properties shown on the right pane
-1. Edit the content of the **Paragraph**-property. Add your copyright message, e.g. **(C) Fabrikam 2019**
-1. Check In
-1. Publish
-1. Go to **Templates**, open your template, Check Out the template
-1. Expand **Body**
-1. Expand **Default Page**
-1. Open ellipsis menu on **Footer Slot** and select **Add Fragment**
-1. Select the Fragment with the copyright text you just created and Click **Select**
-1. Check In
-1. Publish
+1. Go to **Fragments**, then click **New Page Fragment**.
+1. In the dialog box, select **Footer** module and name the fragment (for example, "Footer-Copyright").
+1. Click **OK**.
+1. In the navigation pane, click the ellipsis button next to **Footer**, and then click **Add Module**.
+1. In the dialog box, select **Footer category**, then click **OK**.
+1. In the navigation pane, click the ellipsis button next to **Footer category** and select **Add Module**.
+1. In the dialog box, select **Content rich block item**, click **OK**,and then select the **Content rich block item** in the navigation pane.
+1. Under **Paragraph** in the right-side properties pane, add your copyright message (for example, **(C) Fabrikam 2019**).
+1. Click **Save**, click **Check In**, and then click **Publish**.
+1. Go to **Templates**, select your template, and click **Check Out**.
+1. Under **Page Outline**, expand **Body**, and then expand **Default Page**.
+1. Click the ellipsis button next to **Footer Slot** and select **Add Fragment**.
+1. Select the fragment you created with the copyright text and click **Select**.
+1. Check in and publish the template.
 
-After these steps, the copyright footer will automatically be visible an the bottom of all pages that use this template
+After following these steps, the copyright footer will automatically be visible an the bottom of all pages that use the template.
