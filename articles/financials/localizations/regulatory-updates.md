@@ -32,35 +32,35 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the regulatory updates that are planned for release in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might change or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
+This topic lists the regulatory updates that are planned and released in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. To learn about other planned and released country-specific features, refer to the following resources:
-
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the following resources:
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
 - [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change. 
+Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
 We plan to deliver regulatory updates in One Version service updates that are released in time for customers to update and be ready for the enforcement date (for transactional regulatory updates), or for the first mandatory reporting deadline (for regulatory updates related to reporting). Customers and partners can preview the new regulatory updates in the Preview Early Adoption Program (PEAP).
 
-In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for some available monthly updates.
+In case of late announcement dates, late availability of requirement details or validation tools, or exceptionally large and complex changes, it might not be possible to make a regulatory update available by the General Availability date of a monthly update. In these cases, the regulatory update will be shipped as hot fixes for relevant available monthly updates.
 
-For the latest regulatory update plans, refer to the following table. 
+Regulatory updates that are released as part of the monthly updated are indicated by release version only. Regulatory updates that are delivered either as hot fixes or as part of a release preview can be identified through the abbreviations HF and PEAP, respectively. 
+
+For the latest regulatory update plans, refer to the following table.   
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6/10.05HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6/10.0.5HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
-|      August 2019          |   10.0.6      | Brazil      |   DRCST declaration SC   |
-|      August 2019          |   10.0.6/10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
-|      August 2019          |   10.0.6      | Brazil      |   Tax statement CAT 42/18    |
-|      August 2019          |   10.0.6      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6/10.0.5HF/10.0.4HF/10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
+|      August 2019          |   10.0.6(PEAP)/10.05HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
+|      August 2019          |   10.0.6(PEAP)      | Brazil      |   DRCST declaration SC   |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
+|      August 2019          |   10.0.6(PEAP)      | Brazil      |   Tax statement CAT 42/18    |
+|      August 2019          |   10.0.6(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
+|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
 |      August/July 2019          |   10.0.5/10.0.4HF/10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
 |      July 2019          |   10.0.5/10.0.4HF/10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
 |      July 2019          |   10.0.5      | Brazil      |   Sped contributions practical guide 1.31. new guidance    |
 |      July 2019          |   10.0.5      | Mexico      |   MX -CFDI 3.3 - The detail of IEPS tax transactions in XML should be optional depending on customer profile    |
-|      July 2019          |   10.0.5/10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019 - Dynamics 365 for Finance and Operations v.10     |
 |      June/July 2019          |   10.0.5/10.03HF      | United Kingdom      |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
 |      May 2019          |   10.0.4      | Brazil      |   Incoming fiscal document 66    |
 |      May 2019          |   10.0.4/10.0.3HF/10.02HF/10.0.1HF      | Brazil      |   NF-e Decree 54.308/18 - RS    |
@@ -83,7 +83,6 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      |   Germany     |E-invoicing - Customers invoices export in xRechnung 1.1 format         |
 |      April 2019          |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019  |
 |      April 2019          |   10.0.1      | Japan      |  2019 Japanese Calendar Era Change  |
-|      April 2019          |   10.0.1      |    Lithuania     |i.SAF report let's user define system Sales tax codes in association with legal tax codes  |
 |      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
 |      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
