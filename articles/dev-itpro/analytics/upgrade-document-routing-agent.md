@@ -57,3 +57,6 @@ During the uninstallation process, if you're prompted to close the Microsoft Dyn
 
 ## Install the latest Document Routing Agent
 For information about how to install the latest DRA that is available with your subscription, see [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md).
+
+    > [!NOTE]
+    > Be sure to open the DRA client after upgrading to refresh network user credentials
