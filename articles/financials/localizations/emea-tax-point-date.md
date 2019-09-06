@@ -10,9 +10,13 @@ When **Date of VAT register** feature is enabled in the **Feature management** w
 **Date of VAT register** field appears on more than 20 pages. These pages include journals, sales orders, purchase orders, free-text invoices, vendor invoice journals, and project invoices. When you update or post the documents, all taxes are posted by using the corresponding date of the VAT register, and the date is included on pages such as the customer and vendor invoice journals pages.
 
 **Date of VAT register** field appears also in the following reports:
+
 •	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Specification**
+
 •	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax transactions**
+
 •	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax transactions – details**
+
 •	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax specification by ledger transaction**
 
 ## Auto-filling of “Date of VAT register” value
@@ -22,9 +26,13 @@ When **Date of VAT register** feature is enabled in the **Feature management** w
 ![date-of-vat-filling](./media/date-of-vat-filling.png)
 
 This option fills in automatically **Date of VAT register** field during invoice creation. The following methods are available to select:
+
 •	**Manually** – no value will be defined for **Date of VAT register** field. User can manually define the value before invoice posting.
+
 •	**Document date** – value of **Date of VAT register** field will be defined automatically on document date change.
+
 •	**Posting date** - value of **Date of VAT register** field will be defined automatically on posting date change.
+
 •	**Last delivery date** - the date of last packing slip (for sales order) or product receipt (for purchase order) will be populated as **Date of VAT register** of the invoice.
 
 ## “Date of VAT register” filling after invoice posting
