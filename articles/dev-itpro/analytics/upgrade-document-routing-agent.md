@@ -5,7 +5,7 @@ title: Upgrade the Document Routing Agent
 description: This topic explains how to upgrade the Document Routing Agent.
 author: TJVass
 manager: AnnBe
-ms.date: 04/06/2018
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,5 +58,5 @@ During the uninstallation process, if you're prompted to close the Microsoft Dyn
 ## Install the latest Document Routing Agent
 For information about how to install the latest DRA that is available with your subscription, see [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md).
 
-    > [!NOTE]
-    > Be sure to open the DRA client after upgrading to refresh network user credentials
+> [!NOTE]
+> Be sure to open the DRA client after upgrading to refresh network user credentials.
