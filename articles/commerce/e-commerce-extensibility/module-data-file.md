@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Module data file
-description: A module data file contains the typings for data actions that are used by the module to fetch data. 
+title: Module data files
+description: This topic provides information about module data files. A module data file contains the typings for data actions that the module uses to fetch data. 
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -27,14 +27,14 @@ ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
-# Module data file
+# Module data files
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-A module data file contains the typings for data actions that are used by the module to fetch data. The naming convention for a module data file is MODULE_NAME.data.ts.
+A module data file contains the typings for data actions that the module uses to fetch data. The naming convention for module data files is *MODULE\_NAME.data.ts*.
 
-A set of core data actions are included in the SDK that can get data from Dynamics 365 Retail ratings and reviews or the recommendations service.  The list of data actions can be found under the SDK \node_modules\@msdyn365-commerce-modules\retail-actions\dist\lib directory.
+The software development kit (SDK) includes a set of core data actions that can get data from Microsoft Dynamics 365 Retail ratings and reviews or the recommendations service. You can find the list of data actions under the SDK's \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory.
 
 ## Example
 
