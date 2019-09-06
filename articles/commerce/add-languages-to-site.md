@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a language to your site
+title: Add languages to your site
 description: This topic explains how to add support for additional languages to a Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
