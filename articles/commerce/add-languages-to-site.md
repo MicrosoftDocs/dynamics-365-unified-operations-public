@@ -1,22 +1,22 @@
 ---
 # required metadata
 
-title: Add languages to your site
-description: This topic explains how to add support for additional languages to your Dynamics 365 for Commerce site.
-author: StuHarg
+title: Add a language to your site
+description: This topic explains how to add support for additional languages to a Dynamics 365 Commerce site.
+author: bicyclingfool
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -24,32 +24,34 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: StuHarg
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add languages to your site
-This topic explains how to add support for additional languages to your Dynamics 365 for Commerce site.
 
-You can localize your web site into any language that Dynamics 365 for Commerce supports. The languages that Dynamics 365 for Commerce supports are listed below. In order to enable a language on your web site, you first add it to an online store that is bound to your site. 
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-To add a language to an online store:
+This topic explains how to add support for additional languages to a Dynamics 365 Commerce site.
 
-1. Open the Dynamics 365 for Retail environment for your site
-2. Navigate to the list of online stores configured for this environment by going to **Modules** -> **Retail** -> **Channels** -> **online stores** or by searching for "online stores" 
-3. Select an online store you wish to configure languages for
-4. Expand the **Languages** section
-5. Click the **+Add** button
-6. Select the language you want  from the dropdown
+## Overview
 
- 
+You can localize your website into any language that Dynamics 365 Commerce supports (supported languages are listed below). To add a language on your website, you must first add it to an online store that is bound to your site. 
 
-The language you added will now be available to configure your site with from the site authoring environment. 
+## Add a language to an online store
 
-For more information about binding your site to an online store and configuring your site to use the languages you have specified in your online stores, see the [Associate a site with a Dynamics 365 online store](http://) topic. 
+To add a language to an online store, do the following.
 
- 
+1. Open the Dynamics 365 Retail environment for your site.
+2. Go to **Modules \> Retail \> Channels \> online stores** to access the list of online stores configured for your environment, or search for "online stores". 
+3. Select the online store for which you want to add a language.
+4. Expand the **Languages** section.
+5. Click **Add**.
+6. Select the language you want to add from the drop-down menu. The language you added will now be available to configure your site with from the site authoring environment. 
 
-### List of languages supported by Dynamics 365 for Commerce
+For more information about binding your site to an online store and configuring your site to use the languages you have specified in your online stores, see [Associate a site with a Dynamics 365 online store](http://). 
+
+### List of languages supported by Dynamics 365 Commerce
 
 - af
 - ar
