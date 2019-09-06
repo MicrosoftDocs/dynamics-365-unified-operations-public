@@ -121,7 +121,7 @@ yarn msdyn365 packages
 
 This command prints the packageVersions.json file that was generated at build time to the console.
 
-The packageVersions.json file includes information about Dynamics 365 Commerce and Dynamics 365 Commerce module packages, their versions, and how the versions that are used were determined.
+The packageVersions.json file includes information about Dynamics 365 Commerce packages and Dynamics 365 Commerce module packages, their versions, and how the versions that are used were determined.
 
 **Example**
 
