@@ -5,7 +5,7 @@ title: Wave step codes
 description: This topic provides an overview of wave step codes and how they are used.
 author: josaw1
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -39,9 +39,9 @@ ms.dyn365.ops.version: 10.0.5
 
 Wave step codes are codes that users can set up and use to link specific instances of wave methods to a corresponding template. The templates include templates for replenishment, containerization, label printing, load building, and sorting.
 
-When wave step codes aren't used, users must enter free text to reference a specific template from the wave process method. Free text is prone to error, because users must make sure that the wave step text that they add for a specific wave step process method in a wave template exactly matches the wave step text in the target template.
+When wave step codes aren't used, users must enter free text to reference a specific template from the wave method instance. Free text is prone to error, because users must make sure that the wave step text that they add for a specific wave step method in a wave template exactly matches the wave step text in the target template.
 
-Wave step codes for a specific wave step type are set up on a separate page. For every wave step method in a wave template that requires a wave step code, the wave step code must be selected in a drop-down list. Selection in a drop-down list replaces free text entry and helps reduce the risk and impact of human error. Setup codes are used to link a wave step method in a wave template to a target template for the method.
+Wave step codes for a specific wave step type are set up on a separate page. For every wave step method instance in a wave template that requires a wave step code, the wave step code must be selected in a drop-down list. Selection in a drop-down list replaces free text entry and helps reduce the risk and impact of human error. Setup codes are used to link a wave step method in a wave template to a target template for the method.
 
 > [!NOTE]
 > Use of the wave step codes feature is optional, and uptake is per legal entity. Therefore, if a specific legal entity uses the feature, all existing wave step codes in that legal entity are upgraded to the new structure.
@@ -63,7 +63,7 @@ Validations are done during the upgrade, and if the upgrade fails, you receive a
 
 - Duplicate wave step free texts exist.
 - Customizations exist.
-- A wave step free text that is associated with a wave step method doesn't match the expected template type.
+- A wave step free text that is associated with a wave step method instance doesn't match the expected template type.
 
 After you've resolved any conflicts that are identified during the validations, you can rerun the upgrade process.
 
@@ -77,7 +77,7 @@ Every new wave step code and its associated ID must be unique across all wave st
 
 ### Apply wave step codes
 
-After you've defined the appropriate wave step codes, they can be applied to the wave processing methods.
+After you've defined the appropriate wave step codes, they can be applied to the wave process methods.
 
 To apply wave step codes, go to the appropriate target template. Here are the target templates that the wave step codes are designated to point to:
 
@@ -87,11 +87,11 @@ To apply wave step codes, go to the appropriate target template. Here are the ta
 - **Containerization templates:** Warehouse management \> Setup \> Containers \> Container build templates
 - **Label printing templates:** Warehouse management \> Setup \> Document routing \> Wave label templates
 
-The templates in this list are applied when they are referenced from a wave processing method that is selected in a wave template. When the wave step code on a wave processing method in a wave template matches the wave step code in one of the templates types, the template is applied.
+The templates in this list are applied when they are referenced from a wave process method that is selected in a wave template. When the wave step code on a wave process method in a wave template matches the wave step code in one of the templates types, the template is applied.
 
 ### Sample scenario
 
-The following procedure helps guarantee that the replenishment template that you created will be applied for the wave template when used as the wave step codes selected match.
+The following procedure helps guarantee that the replenishment template that you created will be applied for the wave template.
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave step codes**, and create a wave step code for the **Replenishment** type.
 2. Go to **Warehouse management \> Setup \> Replenishment \> Replenishment templates**, and create a replenishment template.
