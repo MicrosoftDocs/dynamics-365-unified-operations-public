@@ -98,7 +98,7 @@ To add a buy box module to a new page and set the required properties, do the fo
 
 1. In the **Media** slot of the buy box module, add **Media Gallery**. 
 
-1.. In the **Content** slot of the buy box module, add the following modules: **Product Name**, **Product Ratings**, **Product Price**, **Product Description**, **Product Configure**, **Add to Cart**, **Add to Wishlist**, and **Find in store**. The modules in the content slot can be rearranged to achieve the desired layout.  
+1. In the **Content** slot of the buy box module, add the following modules: **Product Name**, **Product Ratings**, **Product Price**, **Product Description**, **Product Configure**, **Add to Cart**, **Add to Wishlist**, and **Find in store**. The modules in the content slot can be rearranged to achieve the desired layout.  
 
 1. Select the **Find in Store** module. In the slot inside this module, add **Pick up in Store**.  
 
