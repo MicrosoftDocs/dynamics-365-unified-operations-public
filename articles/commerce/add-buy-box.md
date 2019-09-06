@@ -44,7 +44,7 @@ On a product details page, the product ID is in the URL. A buy box module derive
 
 ## Buy box module properties and slots 
 
-As a container, a buy box module controls some basic properties such as width, which allows the modules inside the container to fit within the container or fill the screen.  
+As a container, a buy box module controls some basic properties such as "width," which allows the modules inside the container to fit within the container or fill the screen.  
 
 On a product details page, a buy box is divided into two regions, with a media region on the left and a content region on the right. By default, a buy box has a 2:1 column width but this can be overriden by the theme. These two regions are represented by slots in the buy box module. Each slot is preconfigured to only accept specific modules that are supported by the slot. For example, a media slot will only support the media gallery module.
 
