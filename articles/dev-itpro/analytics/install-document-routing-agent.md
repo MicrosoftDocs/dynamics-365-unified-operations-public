@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent (DRA) for deployments of Microsoft Dynamics 365 for Finance and Operations.  Finance and Operations offers a downloadable application that you can use to enable network printing scenarios.  You can enable network printers for specific companies by using in-client administrative pages.
+This topic describes how to install and configure the Document Routing Agent (DRA).  The DRA is a downloadable application that you can use to enable network printing scenarios.  You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
