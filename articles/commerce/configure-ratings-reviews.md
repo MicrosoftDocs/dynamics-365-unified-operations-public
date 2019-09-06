@@ -69,6 +69,8 @@ The following illustration shows the **Write a review** dialog box that appears 
 
 ![Write a review dialog box](media/rnr-eCommerce-write-review-module.png)
 
+The following table shows the write review module property that needs to be configured in the authoring tool.
+
 | Property name | Value        | Property description                 |
 |---------------|--------------|--------------------------------------|
 | Name          | Write review | The name of the write review module. |
@@ -86,6 +88,8 @@ The following illustrations shows what a PDP template looks like in Dynamics 365
 ### Product reviews list module
 
 The product reviews list module shows a list of product reviews together with sort, filter, and pagination options. This module typically appears after the ratings histogram module on a PDP.
+
+The following table shows the product reviews list module properties that need to be configured in the authoring tool.
 
 | Property name              | Value | Property description |
 |----------------------------|-------| ---------------------|
