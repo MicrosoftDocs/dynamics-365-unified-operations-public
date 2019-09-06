@@ -4953,8 +4953,12 @@
         href: ../supply-chain/inventory/warehouse-template.md
       - name: Control work by using work templates and location directives
         href: ../supply-chain/warehousing/control-warehouse-location-directives.md
+      - name: Wave processing
+        href: ../supply-chain/warehousing/wave-step-codes.md
       - name: Configure wave processing
         href: ../supply-chain/warehousing/tasks/configure-wave-processing.md
+      - name: Auto-update shipments
+        href: ../supply-chain/warehousing/auto-update-shipment.md
       - name: Create a location profile
         href: ../supply-chain/warehousing/tasks/create-location-profile.md
       - name: Configure locations in a WMS-enabled warehouse
