@@ -1,5 +1,7 @@
 # Tax point date (Date of VAT register)
 
+The tax point date for a transaction is the date the transaction takes place for VAT purposes. Use **Date of VAT register** feature when there is a need to specify tax point date which differs from the transaction date.  For specifying the tax point date, **Date of VAT register** field must be used.
+
 The **Date of VAT register** field is shared globally and can be enabled in legal entities with primary address in any country.
 
 ## “Date of VAT register” feature activating
