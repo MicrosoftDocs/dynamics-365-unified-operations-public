@@ -1,3 +1,5 @@
+---
+
 # required metadata
 
 
@@ -104,13 +106,5 @@ Contoso demo data e.g. for product and category images uses 500 x 500 pixel or 5
 
 
 
-- **File types** – Image files can be used in *.png or *.jpg type. In most cases *.jpg are even a little smaller in size.
+- **File types** – Image files can be used in \*.png or \*.jpg type. In most cases \*.jpg are a little smaller in size.
 
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-
-Contact GitH
