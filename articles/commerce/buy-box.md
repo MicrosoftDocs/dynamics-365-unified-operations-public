@@ -92,39 +92,32 @@ The buy box module retrieves product information using retail server APIs. All i
 
 ## Add a buy box module to a page 
 
-This section explains how to add a buy box module to a new page and set the required properties.  
+To add a buy box module to a new page and set the required properties, do the following.  
 
-1. In tooling, create a new fragment “Buy Box fragment” and add BuyBox module.
+1. Create a new fragment named "buy box fragment" and add a buy box module.
 
-2. In the Media slot of the Buy Box module, add Media Gallery 
+1. In the **Media** slot of the buy box module, add **Media Gallery**. 
 
-3. In the Content slot of the Buy Box module, add the modules– Product Name, Product Ratings, Product Price, Product Description, Product Configure, Add to Cart, Add to Wishlist and Find in store. 
+1.. In the **Content** slot of the buy box module, add the following modules: **Product Name**, **Product Ratings**, **Product Price**, **Product Description**, **Product Configure**, **Add to Cart**, **Add to Wishlist**, and **Find in store**. The modules in the content slot can be rearranged to achieve the desired layout.  
 
-4. The modules in Content slot can be rearranged as needed to achieve the layout needed 
+1. Select the **Find in Store** module. In the slot inside this module, add **Pick up in Store**.  
 
-5. Select the Find in Store module. To the slot inside this module, add Pick up in Store.  
+1. In the slot inside the Pick up in store module, add **Store search by Bing Maps**.  
 
-6. To the slot inside Pick up in store module, add Store search by Bing Maps.  
+1. Check in and publish the page.
 
-7. Check-in and publish.
+1. Create a template for a product details page named "PDP template."
 
-8. Create a template for a PDP, "PDP template"
+1. Add a default page. In the **Main** slot of the default page, add a **Buy box fragment**.
 
-9. Add Default page. To the Main slot of the Default page, add "Buy box fragment"
+1. Save, check in, and publish the template.
 
-10. Save. Checkin and Publish
+1. Create a page named "PDP page" using the PDP template you created. 
 
-11. Create a page with "PDP template" called "PDP page"
+1. In the **Main** slot of the default page, add a **Buy box fragment**.
 
-12. Add the buy box fragment to the Main slot of the default page.
+1. Save the page. To preview the page, add *?productid=<insert product id>* to the preview page URL. This will load and render the preview page with the product context. 
 
-13. Save.  To Preview URL add *?productid=<insert product id>*. This will load the Preview page with the product context and will render the page in preview correctly. 
-
-14. Check-in and Publish 
-
+1. Check in and publish the page. A buy box should appear on the product details page.  
  
-
-A buy box appears on the product details page.  See Quick Tour of Product Details page for additional modules that can be added below the buy box to make this page a fully functional product details page.  
-
-If specific products need a more enriched or specialized product details page, see Enrich a product details page for details <link>. 
 
