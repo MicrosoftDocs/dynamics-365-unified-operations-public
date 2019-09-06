@@ -78,13 +78,13 @@ On mobile view ports, media and content slots will stack one below the other.
 
 **Content rich block:** The content rich block module can display a CMS-driven message that the site author or retailer wants to promote in the buy box, for example "For issues with order, contact 1-800-FABRIKAM" or "Free shipping on orders over $100."  
 
-## AppSettings 
+## Buy box module settings 
 
-Buy box uses three settings that are defined in the App Settings 
+Buy box modules have three settings that can be configured, as follows.
 
-- Maximum quantity: This is the maximum number of items that can be added to the cart per item. E.g. a retailer may decide to support only 10 of each product to be sold in a single transaction.  
-- Inventory check:  When this is true, buy box will make sure the item is available in stock before adding it to cart (ship to home or pick up in store scenario). Alternatively, it can be set to false if the retailer does not want to do inventory check before placing an order 
-- Inventory buffer: Inventory is real-time and with many people making orders via multiple channels it’s hard to stay accurate. For these reasons we have a buffer defined for inventory. When doing inventory check, if the inventory is less than the buffer its treated as out-of-stock. This reduces the chances of selling an item when it’s out of stock but inventory count has not fully sync’d due to fast sales through several channels.  
+- **Maximum quantity:** This is the maximum number of items that can be added to the cart per item. For example, a retailer may decide to allow only 10 of each product to be sold in a single transaction.  
+- **Inventory check:**  When this is set to True, the buy box module will ensure that the item is in stock before adding it to the cart (for both the ship to home or pick up in store scenarios). If set to False, an inventory check will not be done before adding a product to the cart and placing an order. 
+- **Inventory buffer:** Inventory is maintained in real time, and with many customers making orders it's difficult keep inventory numbers accurate. For this reason, a buffer can be defined for inventory. When doing an inventory check, if the inventory is less than the buffer amount, it is treated as out-of-stock. This reduces the chances of selling an item when it is out of stock but inventory count has not fully synchronized due to fast sales through several channels.  
 
 ## Retail server interaction 
 
