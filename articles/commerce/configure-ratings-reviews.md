@@ -55,7 +55,7 @@ The following illustration shows what the ratings and reviews modules look like 
 ![Ratings and reviews modules on a PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
-> For information about how to optimize PDP templates and layouts so that you can share the configurations for ratings and reviews modules among multiple PDPs on your e-Commerce site, see the authoring template and layout documentation.
+> For information about how to optimize PDP templates and layouts so that you can share the configurations for ratings and reviews modules among multiple PDPs on your e-Commerce site, see [Work with templates and layouts](templates-and-layouts.md).
 
 The following illustration shows how the **Add module** dialog box presents ratings and reviews modules in Dynamics 365 Commerce.
 
