@@ -1,22 +1,22 @@
 ---
 # required metadata
 
-title: Buy Box
-description: This topic reviews setting up a Buy Box module in a Dynamics 365 e-Commerce page.
+title: Add a buy box to a page
+description: This topic covers buy box modules and how to add them to site pages in Dynamics 365 Commerce.
 author: anupamar-ms
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -24,52 +24,59 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupamar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Buy box 
+# Add a buy box to a page
 
-Buy box typically refers to the region of the product details page that is above the fold and hosts all the critical information for making a product purchase. Buy box module is special container that is used for hosting all the modules that are shown in the product details page buy box region.  
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-On a product details page, the page context has the product id information from the URL. A buy box derives all the information from this product id. In the absence of a product id, buy box will not render correctly on the page. This means the buy box cannot be used on a page that does not have product context - E.g. Home page or Marketing page. 
+This topic covers buy box modules and how to add them to site pages in Dynamics 365 Commerce.
 
-## Properties of Buy Box 
+## Overview
 
-As a container, Buy box provides some basic properties such as Width which allows the modules inside this container to fit within or fill screen.  
+"Buy box" typically refers to the area of a product details page that is above the fold and hosts all the critical information for making a product purchase. A buy box module is special container that is used for hosting all the modules that are displayed in the buy box area of a product details page.  
 
-Buy Box is divided into two regions – Media region on the left and Content region on the right. By default they have a 2:1 column width but this can be overriden by theme. These two regions are represented as slots in the buy box module. Each slot is pre-configured to only accept specific modules that are supported by the slot. E.g. Media slot will only support Media gallery module.
+On a product details page, the product ID is in the URL. A buy box module derives all the information it needs to render from this product ID. In the absence of a product ID, a buy box module will not render correctly on a page. This means that a buy box module cannot be used on a page that does not have product context (for example, a home page or marketing page). 
 
-On Mobile view port, Media and Content slots will stack one below the other.  
+## Buy box module properties  
 
-## Modules available in Buy Box 
+As a container, a buy box module provides some basic properties such as width which allows the modules inside the container to fit within the container or fill the screen.  
 
-**Media Gallery:** Media gallery is used for showcasing images of a product in a product details page. It can support one to many images. It also supports thumbnails which can be arranged horizontally (below the image as a row) or vertically (next to the image as a column). Media gallery can be added to Media slot in the buy box container. Media gallery supports only images. Videos and other formats are currently not supported. 
+A buy box is divided into two regions, a media region on the left and a content region on the right. By default, a buy box has a 2:1 column width but this can be overriden by the theme. These two regions are represented by slots in the buy box module. Each slot is preconfigured to only accept specific modules that are supported by the slot. For example, a media slot will only support the media gallery module.
 
-**Product title:** Product title is used for displaying title of a product in a product details page. It has a default heading tag of H1 but can be changed as needed. 
+On mobile view ports, media and content slots will stack one below the other.  
+
+## Modules available for use in a buy box module
+
+**Media Gallery:** The media gallery module is used for showcasing images of a product on a product details page. It can support one to many images. It also supports thumbnails which can be arranged horizontally (below the image as a row) or vertically (next to the image as a column). The media gallery module can be added to media slot in the buy box container. The media gallery module only supports  images, videos and other formats are currently not supported. 
+
+**Product title:** The product title module displays the title of a product on a product details page. It has a default heading tag of H1 but can be changed as needed. 
                   
-**Product rating:** Product rating is used to display star ratings based on user rating for the product. The buy box integrates with the Ratings service to retrieve the product ratings for each product. See Ratings service for more details. 
+**Product rating:** The product rating module displays star ratings based on customer ratings for a product. The buy box module retrieves the product ratings for each product from the ratings service.
 
-**Product price:** Product price is used to display the price of the product including strikethrough price and discounts.  
+**Product price:** The product price module displays the price of the product, including strikethrough prices and discounts.  
 
-**Product description****:** Product description is used to display the description of the product. 
+**Product description:** The product description module displays the description of the product. 
 
-**Product configure****:** The product dimensions defined for the product are shown in this module. Product configure module is used to configure size, style and other dimensions of the product. It supports two configurations – Dimension selectors can be stacked one below another or side-by-side. When a product variant is selected, other properties in the buy box update E.g. Product description, Images etc to reflect the variant information. 
+**Product configure:** The product configure module displays size, style, and dimensions of a product. It supports two configurations: dimension selectors can be stacked one below another, or side-by-side. When a product variant is selected, other properties in the buy box refresh to reflect the variant information (for example, product description, images, etc.). 
 
-**Product quantity****:** Product quantity is used to configure the quantity of the product. The maximum quantity of a product or variant that can be added to cart is restricted by a setting. This setting resides in the App settings <link>. 
+**Product quantity:** The product quantity module is used to configure the quantity of the product. The maximum quantity of a product or variant that can be added to cart is restricted by a setting.
 
-**Add to cart**: Add to cart is used to perform the add to the cart action. Only a product or a variant can be added to cart. In other words a master product cannot be added to cart. There is a setting on the module “Navigate to cart” which when true navigate the user to Cart page each time an Add to cart action is triggered. It can be set to false if the site author prefers to keep the user browsing on the product details page after items are added to cart.  
+**Add to cart:** The add to cart module is used to perform the add to the cart action. Only a product or a variant can be added to cart. In other words, a master product cannot be added to cart. There is a "Navigate to cart" setting on the module which when set to true navigates the user to the cart page each time an add to cart action is triggered. It can be set to false if the site author prefers to keep the customer browsing on the product details page after items are added to cart.  
 
-**Add to wishlist****:** Add to wishlist is used to add an item to Wishlist. Only a product or a variant can be added to wishlist. In addition, add to wishlist can be completed only if the user invoking this action is a signed-in user. There is error-handling logic in the module to make sure these conditions are met.  
+**Add to wish list:** The add to wish list module is used to add an item to the customer's wish list. Only a product or a variant can be added to a wish list. The add to wish list action can only be completed if the customer is a signed in to the site, and there is error-handling logic in the module to make sure these conditions are met.  
 
-**Find in store****:** This is the action shown on the buy box that triggers the buy online pick up in store flow 
+**Find in store:** The find in store module triggers the "buy online, pick up in store" flow. 
 
-**Pick up in store****:** This module shows the list of nearby stores where an item is available for pickup. When this module is invoked, it shows the stores available within 50 mile radius of the user’s location. This search radius is configurable in the module as part of the site authoring. For each store, if inventory check is enabled, the inventory check is done and an appropriate in-stock or out-of-stock message is shown. 
+**Pick up in store:** The pick up in store module shows the list of nearby stores where an item is available for pickup. When this module is invoked, by default it shows the stores available within a 50 mile radius of the customer's location, although the search radius can be customized in the module. For each store, if inventory check is enabled, the inventory check is done and an appropriate in-stock or out-of-stock message is shown. 
 
-**Store search by Bing Maps****:** This is store search module that is available inside the Pick up in Store module. It allows user to input a location to search for stores. This module uses the Bing Maps Geocoding APIs to convert the user inputted location to a latitude/longitude. In the absence of this module, only stores in the user’s current location will be listed and the user cannot search for another location.  
+**Store search by Bing Maps:** This store search module enables a customer to input a location to search for a stores, and is available for use inside the pick up in store module. This module uses the Bing Maps geocoding APIs to convert the customer-inputted location to a latitude and longitude. In the absence of this module, only stores in the customer's current location will be listed and the customer cannot search for another location.  
 
-**Content rich block:** Buy box supports content rich block. This is for any CMS driven message that the site author or retailer wants to promote on the buy box. E.g. “For issues with order, contact 1-800-FABRIKAM” “Free shipping on orders over $100”.  
+**Content rich block:** The content rich block module can display a CMS-driven message that the site author or retailer wants to promote in the buy box, for example "For issues with order, contact 1-800-FABRIKAM" or "Free shipping on orders over $100."  
 
 ## AppSettings 
 
@@ -81,9 +88,9 @@ Buy box uses three settings that are defined in the App Settings
 
 ## Retail server interaction 
 
-Buy box retrieves product information using Retail Server APIs. Using the product id from the page context all information is retrieved. 
+The buy box module retrieves product information using retail server APIs. All information is retrieved using the product detail page's product ID. 
 
-## Authoring a Buy Box 
+## Add a buy box module to a page 
 
 This section explains how to add a buy box module to a new page and set the required properties.  
 
