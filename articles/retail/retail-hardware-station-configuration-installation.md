@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -151,7 +151,7 @@ The Retail hardware station installer first extracts the associated files and th
     > [!NOTE]
     > - If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
     
-    > - For version 10.0.6 and above, the Install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of longon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used by until the connection to the retail server is re-established. If the point of sale client is not upgraded to 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the point of sale client is upgraded to an equal or later version. 
+    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used by until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
 
 8. The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
