@@ -38,6 +38,25 @@
         items:
         - name: Buy Finance and Operations (on-premises)
           href: get-started/purchase-on-premises.md
+    - name: Learning catalog
+      href: get-started/learning-catalog.md
+      items: 
+      - name: Business decision makers
+        href: get-started/learning-catalog-bdm.md
+      - name: Business users
+        href: get-started/learning-catalog-business-user.md
+      - name: Implementation project managers
+        href: get-started/learning-catalog-project-manager.md
+      - name: Administrators
+        href: get-started/learning-catalog-administrator.md
+      - name: Developers
+        href: get-started/learning-catalog-developer.md
+      - name: Partner sales and marketing
+        href: get-started/learning-catalog-partner-sales.md
+      - name: Functional consultants
+        href: get-started/learning-catalog-functional-consultant.md
+      - name: Solution architects
+        href: get-started/learning-catalog-solution-architect.md
     - name: What's new or changed
       items:
       - name: What's new or changed home page
@@ -50,6 +69,8 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Preview features in Finance and Operations version 10.0.6 (November 2019)
+        href: get-started/whats-new-changed-10-0-6.md
       - name: Preview features in Finance and Operations version 10.0.5 (October 2019)
         href: get-started/whats-new-changed-10-0-5.md
       - name: Finance and Operations version 10.0.4 (July 2019)
@@ -64,6 +85,8 @@
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Preview features in Platform update 30 (November 2019)
+        href: get-started/whats-new-platform-update-30.md
       - name: Preview features in Platform update 29 (October 2019)
         href: get-started/whats-new-platform-update-29.md
       - name: Platform update 28 (July 2019)
@@ -1670,6 +1693,10 @@
           href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
         - name: Withholding taxes on vendor payments
           href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md          
+    - name: Canada
+      items: 
+      - name: GST/HST Internet File Transfer
+        href: ../financials/localizations/can-gst-hst-internet-file-transfer.md
     - name: China
       items:
       - name: China overview
@@ -2209,6 +2236,8 @@
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
           items:     
+          - name: Create tax components
+            href: ../financials/localizations/tax-engine-create-tax-component.md
           - name: Import configuration
             href: ../financials/general-ledger/tax-engine-import-configuration.md
           - name: Tax engine applicability

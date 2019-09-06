@@ -5,7 +5,7 @@ title: Create new users
 description: Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. 
 author: maertenm
 manager: AnnBe 
-ms.date: 07/01/2019
+ms.date: 08/30/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,26 +30,28 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Users are internal employees of your organization, or external customers and vendors, who require access to the system to perform their jobs. System administrators can complete this procedure to add users to the system. The demo data company used to create this procedure is USMF. 
+Users are internal employees of your organization, or external customers and vendors, who require access to the system to do their jobs.
 
+## Associate a user with a license (new license types only)
+For customers who are on one of the new license types that were added in October 2019, users must be associated with a license. Users who are associated with a license are automatically added as system users who have no roles the first time that they sign in. Users who aren't associated with a licence receive a warning message.
+
+System admins can [assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) in the [Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## Add a new user
-1. Go to **Navigation pane > Modules > System administration > Users > Users**.
-2. On the **Action pane**, click **New**.
-3. In the **User ID** field, type a value. Enter a unique identifier for the user. A user ID is required.  
-4. In the **User name** field, type a value. Enter the user's name.  
-5. In the **Domain** field, type a value. Enter the user's domain.  
-6. In the **Alias** field, type a value. Enter the user's alias.  
-7. In the **Company** field, click the drop-down button to open the lookup.
-8. In the list, find and select the desired record. 
-9. In the **User's roles** section, click **Assign roles**.
-10. In the list, find and select the desired record.
-11. Click **OK**.
-12. Click **Save**.
+1. Go to **System administration \> Users \> Users**.
+2. On the Action Pane, select **New**.
+3. In the **User ID** field, enter a unique identifier for the user. A user ID is required.  
+4. In the **User name** field, enter the user's name.  
+5. In the **Domain** field, enter the user's domain.  
+6. In the **Alias** field, enter the user's alias.  
+7. In the **Company** field, select the desired company. 
+8. On the **User's roles** FastTab, select **Assign roles** to [assign users to security roles](assign-users-security-roles.md)
+9. Select **OK**.
+10. Select **Save**.
 
 ## Import users
-1. On the **Action pane**, click **Import users**.
+1. On the Action Pane, select **Import users**.
 2. In the list, mark the selected row.
-3. Click **Import users**.
-4. Click **Close**.
+3. Select **Import users**.
+4. Select **Close**.
 
