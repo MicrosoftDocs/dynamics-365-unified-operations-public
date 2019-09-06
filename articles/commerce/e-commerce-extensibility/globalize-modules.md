@@ -43,7 +43,7 @@ The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provid
 
 ## Access the CultureInfoFormatter class in a module view file
 
-An instance of the **CultureInfoFormatter** class is constructed, where the locale is derived from the **RenderingContext**. This class instance is passed in the **props** object to a modules view file. To access this, use the following syntax.
+An instance of the **CultureInfoFormatter** class is automatically created and can be accessed in the module view through the **this.props.context** object.  The following examples shows how to use the **CultureInfoFormatter** methods to format currency.
 
 ```ts
 public render(): JSX.Element | null {
@@ -246,7 +246,7 @@ cultureInfoFormatter.formatNumber(1234567.89);
 
 ## Formatting options
 
-This section covers the formatting options and property details for **ITimeFormatOptions**, **IDateFormatOptions**, and **INumberFormatOptions**. 
+This section covers the formatting options and property details for **ITimeFormatOptions**, **IDateFormatOptions**, and **INumberFormatOptions** interfaces. 
 
 ### ITimeFormatOptions 
 
@@ -290,7 +290,7 @@ interface IDateFormatOptions extends ITimeFormatOptions {
 ```
 
 > [!NOTE] 
-> All options that are provided in **ITimeFormatOptions** can be used in **IDateFormatOptions**, because time is a subcomponent of date.
+> All options that are provided in **ITimeFormatOptions** interface can be used in **IDateFormatOptions** interface, because time is a subcomponent of date.
 
 #### Property details
 
@@ -301,7 +301,7 @@ interface IDateFormatOptions extends ITimeFormatOptions {
 | month | enum | 'numeric', '2-digit', 'narrow', 'short', or 'long' | Specify the representation of the month. The **'numeric'** value shows the numeric representation of the month (for example, April is shown as **4**). The **'2-digit'** value shows the two-digit numeric representation (for example, April is shown as **04**). The **'narrow'** value shows the two-character representation (for example, April is shown as **AP**). The **'short'** value shows the three-character representation (for example, April is shown as **Apr**). The **'long'** value shows the full name. |
 | day | enum | 'numeric' or '2-digit' | Specify the representation of the day. The **'2-digit'** value forces days to be shown as two digits. | 
 
-No default value is defined for each date/time component property. However, if all component properties are undefined, the **'numeric'** value is assumed for the **year**, **month**, and **day** options.
+No default value is defined for each date/time component property. However, if all component properties are undefined, the **'numeric'** value is assumed for the **year**, **month**, and **day** property.
 
 ### INumberFormatOptions 
 
