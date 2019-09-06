@@ -5,7 +5,7 @@ title: Help prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out.
 author: TJVass
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
