@@ -51,13 +51,13 @@ The ambient video player module supports short informational videos. It should b
 
 ### Ambient video player module properties
 
-| Property name     | Values        | Property Description                                         |
+| Property name     | Values        | Property description                                         |
 | ----------------- | ------------- | ------------------------------------------------------------ |
 | Autoplay         | True or False | Autoplays the video when this property is set to True          |
 | Mute              | True or False | Mutes the audio. The default value is True for this player. In the Chrome browser, autoplay videos will be muted by default, and audio will be played only if the user plays the video.  |
 | Loop              | True or False | Repeats the video in a loop when this property is set to True   |
 | Media             |               | The video file to be played by the video player |
-| Playback controls | True or False | When this property is set to True, a play/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard |
+| Playback controls | True or False | When this property is set to True, a play/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard. |
 
 ## Video player module
 
@@ -72,18 +72,18 @@ The video player module can be used to showcase videos on an the ecommerce site.
 
 ### Video player module properties
 
-| Property name          | Values        | Property Description                                         |
+| Property name          | Values        | Property description                                         |
 | ---------------------- | ------------- | ------------------------------------------------------------ |
 | Auto play              | True or False | Autoplays the video when this property is set to True          |
 | Mute                   | True or False | Mutes the audio. The default value is False for this player. In the Chrome browser, autoplay videos will be muted by default, and audio will be played only if the user chooses to play the video.  |
 | Loop                   | True or False | Repeats the video in a loop when this property is set to True   |
 | Media                  |               | The video file to be played in the video player|
-| Playback controls      | True or False | When this property is set to True, a lay/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard |
-| Play fullscreen       | True or False | The video can be played in full screen if this property is set to True |
+| Playback controls      | True or False | When this property is set to True, a lay/pause button will be shown on the video. If this property is set to False, the play/pause button will not be shown but the video can still be paused or resumed using the keyboard. |
+| Play fullscreen       | True or False | The video can be played in full screen if this property is set to True. |
 | Controls               | True or False | All controls will be shown when this property is set to True. This includes play, pause, progress, closed captions, etc. |
-| Hide poster frame      | True or False   | A video can have a poster frame, and if this property is set to True, the poster frame will be hidden |
+| Hide poster frame      | True or False   | A video can have a poster frame, and if this property is set to True, the poster frame will be hidden. |
 | Mask level             | 0-100         | A mask that can be applied to the video for styling             |
-| Fullscreen icon style | Square or Arrow  | This property defines the style of the fullscreen icon shown on the video player |
+| Fullscreen icon style | Square or Arrow  | This property defines the style of the fullscreen icon shown on the video player. |
 
 ## Add a video player module to a page 
 
@@ -93,7 +93,7 @@ To add a video player module to a new page and set the required properties, do t
 1. In the **Main** slot of the default page, add a container module. 
 1. In the container module, add video player and ambient video player modules. 
 1. Check in the template and publish.  
-1. Create a new page using the video player template you created named "video player page." 
+1. Create a new page named "video player page" using the video player template you created.
 1. In the **Main** slot of the new page, add an ambient video player module. 
 1. In the settings for the ambient video player module, go to **Media** and upload a video file. You can change the autoplay, loop, and other properties as needed.
 1. Save and preview the page. 
