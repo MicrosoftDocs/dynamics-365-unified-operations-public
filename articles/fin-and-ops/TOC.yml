@@ -2236,6 +2236,8 @@
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
           items:     
+          - name: Create tax components
+            href: ../financials/localizations/tax-engine-create-tax-component.md
           - name: Import configuration
             href: ../financials/general-ledger/tax-engine-import-configuration.md
           - name: Tax engine applicability
