@@ -42,11 +42,11 @@ This topic covers buy box modules and how to add them to site pages in Dynamics 
 
 On a product details page, the product ID is in the URL. A buy box module derives all the information it needs to render from this product ID. In the absence of a product ID, a buy box module will not render correctly on a page. This means that a buy box module cannot be used on a page that does not have product context (for example, a home page or marketing page). 
 
-## Buy box module properties  
+## Buy box module properties and slots 
 
-As a container, a buy box module provides some basic properties such as width which allows the modules inside the container to fit within the container or fill the screen.  
+As a container, a buy box module controls some basic properties such as width, which allows the modules inside the container to fit within the container or fill the screen.  
 
-A buy box is divided into two regions, a media region on the left and a content region on the right. By default, a buy box has a 2:1 column width but this can be overriden by the theme. These two regions are represented by slots in the buy box module. Each slot is preconfigured to only accept specific modules that are supported by the slot. For example, a media slot will only support the media gallery module.
+On a product details page, a buy box is divided into two regions, with a media region on the left and a content region on the right. By default, a buy box has a 2:1 column width but this can be overriden by the theme. These two regions are represented by slots in the buy box module. Each slot is preconfigured to only accept specific modules that are supported by the slot. For example, a media slot will only support the media gallery module.
 
 On mobile view ports, media and content slots will stack one below the other.  
 
@@ -80,11 +80,11 @@ On mobile view ports, media and content slots will stack one below the other.
 
 ## Buy box module settings 
 
-Buy box modules have three settings that can be configured, as follows.
+Buy box modules have three configurable settings, as follows.
 
 - **Maximum quantity:** This is the maximum number of items that can be added to the cart per item. For example, a retailer may decide to allow only 10 of each product to be sold in a single transaction.  
 - **Inventory check:**  When this is set to True, the buy box module will ensure that the item is in stock before adding it to the cart (for both the ship to home or pick up in store scenarios). If set to False, an inventory check will not be done before adding a product to the cart and placing an order. 
-- **Inventory buffer:** Inventory is maintained in real time, and with many customers making orders it's difficult keep inventory numbers accurate. For this reason, a buffer can be defined for inventory. When doing an inventory check, if the inventory is less than the buffer amount, it is treated as out-of-stock. This reduces the chances of selling an item when it is out of stock but inventory count has not fully synchronized due to fast sales through several channels.  
+- **Inventory buffer:** Inventory is maintained in real time, and with many customers making orders it's difficult to maintain an accurate inventory count. For this reason, a buffer can be defined for inventory. When doing an inventory check, if the inventory is less than the buffer amount, the product is treated as out-of-stock. This reduces the chances of selling an item when it is out of stock but inventory count has not fully synchronized due to fast sales through several channels.  
 
 ## Retail server interaction 
 
@@ -94,7 +94,7 @@ The buy box module retrieves product information using retail server APIs. All i
 
 To add a buy box module to a new page and set the required properties, do the following.  
 
-1. Create a new fragment named "buy box fragment" and add a buy box module.
+1. Create a new fragment named "buy box fragment" and add a buy box module to it.
 
 1. In the **Media** slot of the buy box module, add **Media Gallery**. 
 
@@ -116,7 +116,7 @@ To add a buy box module to a new page and set the required properties, do the fo
 
 1. In the **Main** slot of the default page, add a **Buy box fragment**.
 
-1. Save the page. To preview the page, add *?productid=<insert product id>* to the preview page URL. This will load and render the preview page with the product context. 
+1. Save the page. To preview the page, add **?productid=&lt;*product id*&gt;** to the preview page URL. This will load and render the preview page with the product context. 
 
 1. Check in and publish the page. A buy box should appear on the product details page.  
  
