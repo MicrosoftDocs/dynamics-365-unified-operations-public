@@ -49,7 +49,7 @@ Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically mo
 1. Go to **Home \> Reviews \> Moderation**.
 1. Use the search field in the upper right of the page to filter the reviews that are shown by product ID, product name, or review text.
 
-    Additional filters let you limit the reviews by period, rating, channel, or concern status (takedown, responded, or reported).
+Additional filters let you limit the reviews by period, rating, channel, or concern status (taken down, responded, or reported).
 
 ![Moderation home page](media/rnr-moderation-home.png) 
 
