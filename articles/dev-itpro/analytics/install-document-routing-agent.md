@@ -5,7 +5,7 @@ title: Install the Document Routing Agent to enable network printing
 description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.
 author: TJVass
 manager: AnnBe
-ms.date: 01/07/2019
+ms.date: 09/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Finance and Operations.  Finance and Operations offers a downloadable application that you can use to enable network printing scenarios.  You can enable network printers for specific companies by using in-client administrative pages.
+This topic describes how to install and configure the Document Routing Agent (DRA) for deployments of Microsoft Dynamics 365 for Finance and Operations.  Finance and Operations offers a downloadable application that you can use to enable network printing scenarios.  You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
 - Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, or Microsoft Windows Server 2016.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
-- When installing the Document Routing Agent (DRA), make sure you are logged in as the Admin user.
+- When installing the DRA, make sure you are logged in as the Admin user.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the DRA must share the same domain as the Azure tenant.
 - The DRA requires .NET 4.62 or later and Adobe Acrobat Reader on the client.
 - Configure Adobe client print settings to prevent document scaling.
