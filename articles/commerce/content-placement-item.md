@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Content placement item module
-description: This topic describes content placement item module and how it can be used on ecommerce pages.
+title: Add a content placement module to a page
+description: This topic covers content placement and content placement item modules and how to add them to site pages in Dynamics 365 Commerce.
 author: anupamar-ms
-manager: Brendan Sullivan
-ms.date: 07/19/2019
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,73 +16,80 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
-ms.search.region: 
+ms.search.region: Global
 ms.search.industry: 
-ms.author: Anupama Raju
-ms.search.validFrom: 07/19/2019
-ms.dyn365.ops.version: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Content Placement Item
+# Add a content placement module to a page
 
-Content placement item is used for showcasing multiple promotions, policies, product features using both image and text. For example, it can be used on home page to show case store policies, shipping etc. 
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Content placement item is driven by CMS data which can authored in the tooling. This allows content placement items to be placed on any page. However, it can only be placed within a content placement module<link> which is the container that will host this module.  .  
+This topic covers content placement and content placement item modules and how to add them to site pages in Dynamics 365 Commerce.
 
-## Usage examples in ecommerce:
+## Overview
 
-* Content placement items can be used on home page or any marketing page to showcase informational text such as Store policies, Shipping etc.
+A content placement module is a special container that allows modules to be placed within it in a specific layout. Content placement modules supports content placement item, account welcome item, account order item, account wish list item, and account profile item modules. A content placement module is a container of other modules and derives data from the child modules that it supports. Its usage varies based on which modules are added to it.
 
-* Content placement items can be used on product details page to showcase product features.
+A content placement item module is used to showcase promotions, policies, and product features using both image and text. For example, it can be used on a home page to display store policies or shipping information. 
 
-## Content Placement Item module properties
+Content placement item modules are driven by CMS data and can be placed on any page. However, a content placement item module can only be used within a content placement module container. 
 
-| Property name | Values                                                       | Property Description                                         |
+## Examples of content placement module uses in e-Commerce
+
+* Content placement modules containing content placement item modules can be used on home or marketing pages to showcase product features, promotions, store policies, shipping information, and other informational messages using both images and text.
+
+* Content placement modules containing content placement item modules can be used on product details pages to showcase product features.
+
+* Content placement modules containing account welcome item or account order item modules can be used on account management pages.
+
+## Content placement module properties
+
+| Property name | Values                                                    | Property description                                         |
+| :-----------: | :-------------------------------------------------------- | ------------------------------------------------------------ |
+|     Width     | Fit container<br />Fill screen                            | The "Fill container" value restricts the items inside the content placement to fit within the content placement width. The "Fill screen" value allows the items to go full-bleed and does not restrict within carousel width. <br/>The values can be changed to achieve the desired layout. |
+
+## Content placement item module properties
+
+| Property name | Values                                                       | Property description                                         |
 | :-----------: | :----------------------------------------------------------- | ------------------------------------------------------------ |
 |    Heading    | Heading text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | Each content placement item module can have a heading. Heading   supports heading tag which defaults to H2 but can be changed to meet   accessibility requirements. |
-|   Paragraph   | Paragraph text                                               | Content placement item supports paragraph in rich text format. Some   basic rich text functionality is supported such a Bold, Underline, Italics,   hyperlinks etc. Some of these capabilities may be overridden by the page   theme applied on the module. |
-|     Image     | Image                                                        | An image can be associated to the text                       |
-|     Link      | Link Url <br />Link text                                     | A link can be added to the text to redirect the user to a specific   page or content |
-|   Tile size   | 1-12                                                         | Tile size on each content placement item defines the number of slots each   item should take within the content placement container. Max size of the   container is 12.    Note: If tile size for first n items in the content placement is over   12, it will reflow to the next row. |
+|   Paragraph   | Paragraph text                                               | Content placement item supports paragraph in rich text format. Some   basic rich text functionality is supported such as bold, underline, italics, hyperlinks, etc. Some of these capabilities may be overridden by the page theme applied on the module. |
+|     Image     | Image                                                        | An image can be associated to the text.                      |
+|     Link      | Link Url <br />Link text                                     | A link can be added to the text to redirect the user to a specific page. |
+|   Tile size   | 1-12                                                         | Tile size on each content placement item defines the number of slots each item should take within the content placement container. Max size of the container is 12. If tile size for first *n* items in the content placement is over 12, it will wrap to the next row. |
 
  
 
-## Creating a page with a Content placement item module 
+## Add a content placement module containing a content placement item module to a page  
 
-This section explains how to add a Content placement module to a new page and set the required properties. 
+To add a content placement module with a content placement item module to a new page and set the required properties, do the following. 
 
-1. We need to first create a template. In tooling, create a new template “Content placement template”.
+1. Create a new template named 'content placement template."
 
-2. In the Main slot the Default Page, add a Content placement module. 
+1. In the **Main** slot of the default page, add a content placement module. 
 
-3. Add a Content placement item module to the content placement module
+1. In the content placement module, add a content placement item module.
 
-4. Check-in and Publish. 
+1. Check in and publish the template. 
 
-5. Now create a new page with the “Content placement template” and call it “Content placement page”.
+1. Create a new page named "Content placement page" with the content placement template.
 
-6. Add Default page. In the page outline, add Content placement module to the Main slot of the Default page.
+1. In the **Main** slot of the Default page, add a content placement module.
 
-7. To the Content placement module, add a Content Placement item module.
+1. In the content placement module, add a content placement item module.
 
-8. In the Content placement item module property panel, choose an Image from the image picker. 
+1. In the content placement item module property pane, select an image, add a heading, add a paragraph, add a link, set the link URL, and set the tile size  to **6**.
 
-9. In the Content placement item module property panel, set a Heading 
+1. In the content placement module, add another content placement item module and repeat step 8.
 
-10. In the Content placement item module property panel, add a Paragraph 
+1. Save and preview the page. Preview will show two content placement items placed side by side. You can further alter the tile size property of each content placement item module or add more modules to achieve the desired layout. 
 
-11. In the Content placement item module property panel,, add a link and set the link url to some page.
-
-12. Set Tile size =6
-
-13. To the Content placement module, add another content placement item module and repeat steps 10-12
-
-14. Save and Preview. 
-
-15. Preview will show two content placement items placed side by side. You can further alter the Tile size property of each content placement item module or add more modules to achieve the desired layout. 
-
-16. Check-in and Publish the page. 
+1. Check in and publish the page. 
