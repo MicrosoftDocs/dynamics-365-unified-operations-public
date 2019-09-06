@@ -37,7 +37,7 @@ This topic presents an architectural overview of Microsoft Dynamics 365 Commerce
 
 ## Overview
 
-The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their online website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
+The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
 
 ## Component-based architecture
 
@@ -53,16 +53,16 @@ The extensibility design avoids dependency between the platform and the applicat
 
 Here is a typical architectural flow when a customer requests a page from an online store that uses the Dynamics 365 Commerce platform.
 
-* The platform gets a request, and does authentication, routing, and locale detection.
-* The platform generates a hydrated page object that contains page configuration data and data from external services using data actions.
-* Data actions allow for batching, aggregation, and chaining of multiple service calls, including deduplication.
-* The platform provides a set of core data actions that provide connections to Dynamics 365 Commerce services (for example, the catalog and ratings).
-* After the hydrated page object is generated, the platform calls the React application that is running on a node express server.
-* The React node application parses the view model, runs the React views server side, and generates HTML.
-* The React application consists of core SDK modules, starter kit modules, and custom modules.
-* The platform sends back the HTML together with the appropriate cookies, headers, and so on.
-* The React script initializes the components, takes over client-side execution on the browser, and renders the modules.
-* The node app supports tool pages and other developer productivity tools that are provided by the platform.
+1. The platform gets a request, and does authentication, routing, and locale detection.
+1. The platform generates a hydrated page object that contains page configuration data and data from external services that use data actions.
+1. Data actions allow for batching, aggregation, and chaining of multiple service calls, including deduplication.
+1. The platform provides a set of core data actions that provide connections to Dynamics 365 Commerce services (for example, the catalog and ratings).
+1. After the hydrated page object is generated, the platform calls the React application that is running on a node express server.
+1. The React application parses the view model, runs the React views on the server side, and generates HTML.
+1. The React application consists of core SDK modules, starter kit modules, and custom modules.
+1. The platform sends back the HTML together with the appropriate cookies, headers, and so on.
+1. The React script initializes the components, takes over client-side execution on the browser, and renders the modules.
+1. Node.js supports tool pages and other developer productivity tools that are provided by the platform.
 
 ## Partner application
 
