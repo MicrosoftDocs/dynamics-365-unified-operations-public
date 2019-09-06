@@ -1693,6 +1693,10 @@
           href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
         - name: Withholding taxes on vendor payments
           href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md          
+    - name: Canada
+      items: 
+      - name: GST/HST Internet File Transfer
+        href: ../financials/localizations/can-gst-hst-internet-file-transfer.md
     - name: China
       items:
       - name: China overview
