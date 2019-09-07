@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a content placement module to a page
+title: Add a content placement modules to a page
 description: This topic covers content placement and content placement item modules and how to add them to site pages in Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add a content placement module to a page
+# Add content placement modules to a page
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
