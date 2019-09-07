@@ -428,7 +428,7 @@ When you sell to unregistered customers, the sales are referred to as *business-
 > [!NOTE]
 > This functionality is available from the update 10.0.3
 
-In order to be correctly reflected in the GSTR reporting, sales credit notes should contain references to original sales invoices. When retail store transactions are posted through retail statements, it is not always possible to establish this reference. You can use the **Update credit notes with references to original invoices** procedure to update the Original GST transaction ID link in credit notes so that the link correctly references the related original sales invoice. The procedure is located in the **Retail > Retail IT > POS posting** menu.
+In order to be correctly reflected in the GSTR reporting, sales credit notes should contain references to original sales invoices. When retail store transactions are posted through retail statements, it is not always possible to establish this reference for retail return transactions. You can use the **Update credit notes with references to original invoices** procedure to update the **Original GST transaction ID** link in credit notes so that the link correctly references the related original sales invoice. The procedure is located in the **Retail > Retail IT > POS posting** menu.
 
 It is also recommended that you enable the **Do not aggregate returns** parameter on the **Retail parameters** page. In this case, each return transaction will be posted  as a separate sale order when posting a retail statement. Note that this option is only available if the retail transaction aggregation is enabled.
 
@@ -437,18 +437,18 @@ It is also recommended that you enable the **Do not aggregate returns** paramete
 > [!NOTE]
 > This functionality is available from the update 10.0.6
 
-You can specify customer registration numbers, such as GSTIN, VAT number (TIN), and PAN number, when creating or editing a customer master record and a customer address record in POS. The registration numbers may be printed in receipts or used for searching customers in POS.
+You can specify customer registration numbers, such as GSTIN, VAT number (TIN), and PAN number, when creating or editing a customer master record and a customer address record in POS. The customer registration numbers may be printed in receipts or used for searching customers in POS.
 
 ### Configure printing customer registration numbers in receipts
 
-To enable printing customer registration numbers in receipts, follow the precedures outlined in the [Configure language texts and custom fields](#configure-language-texts-and-custom-fields) section. Add language texts and custom fields with the following names:
+To enable printing customer registration numbers in receipts, follow the procedure outlined in the [Configure language texts and custom fields](#configure-language-texts-and-custom-fields) section. Add language texts and custom fields with the following names:
 
-- **TAXREGISTRATIONGST_IN** for GST registration number;
-- **TAXREGISTRATIONTIN_IN** for VAT registration number;
-- **TAXREGISTRATIONPAN_IN** for PAN number.
+- **TAXREGISTRATIONGST_IN** for the GST registration number;
+- **TAXREGISTRATIONTIN_IN** for the VAT registration number;
+- **TAXREGISTRATIONPAN_IN** for the PAN number.
 
 Add the custom fields to receipt profiles.
 
 ### Enable searching customers by tax registration numbers in POS
 
-To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select *Tax registration number* in the **Customer search criteria** drop-down list. Run the *1110* job on the **Disctribution schedules** page.
+To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select *Tax registration number* in the **Customer search criteria** drop-down list. Run the *1110* job on the **Distribution schedules** page.
