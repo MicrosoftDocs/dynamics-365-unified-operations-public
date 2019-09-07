@@ -7,18 +7,18 @@ author: AlexChern0v
 manager: anbee
 ms.date: 01/31/2019
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:
 audience: Developer
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
+# ms.tgt_pltfrm:
+# ms.custom:
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: jiaqia
@@ -51,8 +51,6 @@ Follow these steps to set up a development environment so that you can test and 
 ### The CRT extension components
 
 The CRT extension components are included in the CRT samples. To complete the following procedures, open the CRT solution, **CommerceRuntimeSamples.sln**. You can find this solution under **RetailSdk\\SampleExtensions\\CommerceRuntime**.
-
-#### Generic Tax Engine component
 
 # [Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -216,7 +214,7 @@ The Generic Tax Engine component is a part of sealed extensions.
     - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
-2. Register the CRT change in the extensions configuration file.
+2. Register the CRT change in the extensions configuration file:
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
@@ -224,6 +222,107 @@ The Generic Tax Engine component is a part of sealed extensions.
 
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+1. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extensions configuration file:
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    > [!IMPORTANT]
+    > Keep the order of the extensions as shown above.
+
+    > [!WARNING]
+    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+---
+
+### The Modern POS extension components
+
+Enable the Tax Registration Id extension.
+
+# [Retail 7.3.1](#tab/retail-7-3-1)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0 and later](#tab/retail-10-0)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+1. Open the solution at RetailSdk\POS\ModernPOS.sln, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
+
+2. Enable the extension in POS.Extensions\extensions.json by adding the following lines:
+
+    ``` xml
+    {
+      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+    }
+    ```
+
+3. Build the solution.
+4. Run Modern POS and test the functionality.
+
+---
+
+### The Cloud POS extension components
+
+Enable the Tax Registration Id extension.
+
+# [Retail 7.3.1](#tab/retail-7-3-1)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0 and later](#tab/retail-10-0)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+1. Open the solution at RetailSdk\POS\CloudPOS.sln, and make sure that it can be compiled without errors.
+2. Enable the extension in POS.Extensions\extensions.json by adding the following lines:
+
+    ``` xml
+    {
+      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+    }
+    ```
+
+3. Build the solution.
+4. Run Cloud POS and test the functionality.
 
 ---
 
@@ -260,6 +359,16 @@ Follow these steps to create deployable packages that contain Retail components,
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
+
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
+    ```
+
+    > [!IMPORTANT]
+    > Keep the order of the extensions as shown above.
 
     ---
 
@@ -314,6 +423,11 @@ Follow these steps to create deployable packages that contain Retail components,
     ```
 
     # [Retail 10.0 and later](#tab/retail-10-0)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
 
     > [!NOTE]
     > This step doesn't apply to this version.
@@ -406,7 +520,44 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
     ---
 
-4. Run **msbuild** for the whole Retail SDK to create deployable packages.
-5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Enable the Tax Registration Id POS extension:
+
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0 and later](#tab/retail-10-0)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+    Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
+
+    ``` xml
+    {
+      "baseUrl": "Microsoft/TaxRegistrationId.IN"
+    }
+    ```
+
+6. Run **msbuild** for the whole Retail SDK to create deployable packages.
+7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
