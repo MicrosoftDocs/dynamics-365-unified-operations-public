@@ -426,14 +426,29 @@ When you sell to unregistered customers, the sales are referred to as *business-
 ## Update retail credit notes with references to original invoices
 
 > [!NOTE]
-> This functionlaity is available from the update 10.0.3
+> This functionality is available from the update 10.0.3
 
-This feature creates a procedure that periodically updates the Original GST transaction ID link in credit notes so that the link correctly references the related original sales invoice. This link is also used in GSTR reporting.
+In order to be correctly reflected in the GSTR reporting, sales credit notes should contain references to original sales invoices. When retail store transactions are posted through retail statements, it is not always possible to establish this reference. You can use the **Update credit notes with references to original invoices** procedure to update the Original GST transaction ID link in credit notes so that the link correctly references the related original sales invoice. The procedure is located in the **Retail > Retail IT > POS posting** menu.
 
-Enable Skip aggregation for returns
+It is also recommended that you enable the **Do not aggregate returns** parameter on the **Retail parameters** page. In this case, each return transaction will be posted  as a separate sale order when posting a retail statement. Note that this option is only available if the retail transaction aggregation is enabled.
 
 ## Manage customer registration numbers from POS
 
-The feature enables entering a customer’s registration number, such as GSTIN, when creating a new customer record from Retail point of sale (POS). The registration numbers are further used for invoicing and reporting purposes.
+> [!NOTE]
+> This functionality is available from the update 10.0.6
 
-In many cases, having a GSTIN number specified for a named customer is required in retail sales. Without the ability to manage customer registration numbers from Retail point of sale (POS), the only workaround is to manage the registration numbers from retail headquarters, which leads to additional efforts and significant delays due to data synchronization. This is especially critical when a new customer record is being created from POS.
+You can specify customer registration numbers, such as GSTIN, VAT number (TIN), and PAN number, when creating or editing a customer master record and a customer address record in POS. The registration numbers may be printed in receipts or used for searching customers in POS.
+
+### Configure printing customer registration numbers in receipts
+
+To enable printing customer registration numbers in receipts, follow the precedures outlined in the [Configure language texts and custom fields](#configure-language-texts-and-custom-fields) section. Add language texts and custom fields with the following names:
+
+- **TAXREGISTRATIONGST_IN** for GST registration number;
+- **TAXREGISTRATIONTIN_IN** for VAT registration number;
+- **TAXREGISTRATIONPAN_IN** for PAN number.
+
+Add the custom fields to receipt profiles.
+
+### Enable searching customers by tax registration numbers in POS
+
+To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select *Tax registration number* in the **Customer search criteria** drop-down list. Run the *1110* job on the **Disctribution schedules** page.
