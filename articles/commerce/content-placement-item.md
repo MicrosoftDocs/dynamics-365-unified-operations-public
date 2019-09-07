@@ -54,7 +54,7 @@ Content placement item modules are driven by CMS data and can be placed on any p
 
 | Property name | Values                                                    | Property description                                         |
 | :-----------: | :-------------------------------------------------------- | ------------------------------------------------------------ |
-|     Width     | Fit container<br />Fill screen                            | The "Fill container" value restricts the items inside the content placement to fit within the content placement width. The "Fill screen" value allows the items to go full-bleed and does not restrict within carousel width. <br/>The values can be changed to achieve the desired layout. |
+|     Width     | Fit container<br />Fill screen                            | The "Fill container" value restricts the items inside the content placement to fit within the content placement width.<br/>The "Fill screen" value allows the items to go full-bleed and does not restrict within carousel width. |
 
 ## Content placement item module properties
 
@@ -63,7 +63,7 @@ Content placement item modules are driven by CMS data and can be placed on any p
 |    Heading    | Heading text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | Each content placement item module can have a heading. Heading   supports heading tag which defaults to H2 but can be changed to meet   accessibility requirements. |
 |   Paragraph   | Paragraph text                                               | Content placement item supports paragraph in rich text format. Some   basic rich text functionality is supported such as bold, underline, italics, hyperlinks, etc. Some of these capabilities may be overridden by the page theme applied on the module. |
 |     Image     | Image                                                        | An image can be associated to the text.                      |
-|     Link      | Link Url <br />Link text                                     | A link can be added to the text to redirect the user to a specific page. |
+|     Link      | Link URL <br />Link text                                     | A link can be added to the text to redirect the user to a specific page. |
 |   Tile size   | 1-12                                                         | Tile size on each content placement item defines the number of slots each item should take within the content placement container. Max size of the container is 12. If tile size for first *n* items in the content placement is over 12, it will wrap to the next row. |
 
  
