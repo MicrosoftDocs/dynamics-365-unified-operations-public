@@ -280,7 +280,7 @@ The Generic Tax Engine component is a part of sealed extensions.
 ### The ClientBroker extension components
 
 1. Open **RetailProxy.MPOSOffline.ext.config** under the local CRT client broker location.
-2. Register the Retail Proxy extensions in the extensionComposition section of the configuration file.
+2. Register the Retail Proxy extensions in the **extensionComposition** section of the configuration file.
 
 # [Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -336,9 +336,9 @@ Enable the Tax Registration Id extension.
 
 # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
-1. Open the solution at RetailSdk\POS\ModernPOS.sln, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
 
-2. Enable the extension in POS.Extensions\extensions.json by adding the following lines:
+2. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:
 
     ``` xml
     {
