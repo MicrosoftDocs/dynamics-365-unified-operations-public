@@ -1,14 +1,14 @@
 ---
  # required metadata
 
-title: Templates and layouts
-description: This topic describes how and when to use templates and layouts within the e-commerce authoring toolset.
-author: Nick Holman
-manager: Brendan Sullivan
-ms.date: 07/08/2019
+title: Work with templates
+description: This topic describes how to work with templates in Dynamics 365 Commerce.
+author: phinneyridge
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,39 +16,42 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: phinneyridge
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: niholman
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Working with templates:
+# Work with templates
 
-As discussed in the templates overview section, **templates define the set of options available to down-stream authors**.  There are multiple reasons why this is helpful to an enterprise web authoring team, and well structured templates can help with all of the goals below:
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-1. Simplify the authoring experience for day-to-day content editor roles.  
+This topic describes how to work with templates in Dynamics 365 Commerce
 
-   * Filter module options to only show relevant choices for a specific page section.
-     * *example*: *A marketing section of a template can be configured to filter out irrelevant module choices that should never be used within that context and would only add noise to content authoring tasks.*
-   * Configure module setting defaults to improve authoring efficiency.
-   * Define page fragments defaults to improve authoring efficiency.
-     * *example*: *Header and footer fragments in a template will automatically appear in every downstream page*.
+## Overview
 
-2. Ensure that enterprise sites stay on-brand by defining an approved set of module arrangement and configuration options.  
+As discussed in the [Templates and layouts overview](templates-layouts-overview.md), templates define the set of options available to downstream authors.  There are multiple reasons why this is helpful to an enterprise web authoring team, and well-structured templates can help with all of the following goals.
+
+- Simplify the authoring experience for day-to-day content editor roles.  
+    - Filter module options to only show relevant choices for a specific page section (for example, a marketing section of a template can be configured to filter out irrelevant module choices that should never be used within that context and would only add noise to content authoring tasks).
+    - Configure module setting defaults to improve authoring efficiency.
+    - Define page fragments defaults to improve authoring efficiency (for example, header and footer fragments in a template will automatically appear in every downstream page).
+- Ensure that enterprise sites stay on-brand by defining an approved set of module arrangement and configuration options.  
 
    > [!TIP] 
-   > e-Commerce sites thrive on providing customers with familiar, repeatable, and on-brand UX design patterns.  Templates can control these measures of consistency across your site.  
+   > E-Commerce sites thrive on providing customers with familiar, repeatable, and on-brand UX design patterns. Templates can control these measures of consistency across your site.  
 
-3. Improve SEO scores by ensuring repeatable and programmatically defined page definitions and metadata.
+- Improve SEO scores by ensuring repeatable and programmatically defined page definitions and metadata.
 
 > [!NOTE]
-> While templates are designed to control consistency across a site, they can theoretically be configured to not enforce any consistency.  Brand and site administrators are empowered to set any level of variability for pages in their site.  For example: a template could be left entirely open, which would allow content authors to create any page design they choose.  In this example, all of the benefits above are not applicable.
+> While templates are designed to control consistency across a site, they can theoretically be configured to not enforce any consistency. Brand and site administrators are empowered to set any level of variability for pages in their site. For example, a template could be left entirely open, which would allow content authors to create any page design they choose. In this example, all of the benefits listed above are not applicable.
 
 ## Modify a template
 Templates are modified using the template editor UI.  There are multiple navigation paths into the template editor:
