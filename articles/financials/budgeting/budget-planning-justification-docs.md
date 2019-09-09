@@ -50,7 +50,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 1.  Click **Design** in the Microsoft Dynamics Office Add-in after you’ve logged in.
 2.  For header information, use the **Add fields** button.
-3.  Select the entity data source of BudgetPlanJustification, and click **Next**. **Note:** This entity is required for any justification document. Other entities can be used but the upload back to Microsoft Dynamics 365 for Finance and Operations will fail if this entity isn’t included.
+3.  Select the entity data source of BudgetPlanJustification, and click **Next**. **Note:** This entity is required for any justification document. Other entities can be used but the upload back to Microsoft Dynamics 365 Finance will fail if this entity isn’t included.
 4.  Add the BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter, and DocumentNumber labels and values in the Word document. **Note:** You can use your own custom labels, rather than the standard labels, if needed.
 5.  Click **Done** to complete the header section.
 6.  For line level detail of budget plan amounts, click **Add table**.
