@@ -154,14 +154,13 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Create a new module](create-new-module.md)
 * [Clone a starter kit module](clone-starter-module.md)
 * [Add module configuration fields](add-module-config-fields.md)
-* [Test a module](test-module.md)
-  * [Test modules by using module mocks](test-module-mock.md)
-  * [Test modules by using page mocks](test-page-mock.md)
+* [Preview and debug a module](test-module.md)
+* [Test modules with a module mocks](test-module-mock.md)
+* [Test modules with a page mocks](test-page-mock.md)
 * [Container modules](container-modules.md)
   * [Create a layout container module](create-layout-container.md)
   * [Create a page container module](create-page-containers.md)
 * [Localizing a module](localize-module.md)
-* [Debug modules](debug-modules.md)
 
 ## Advanced module topics
 * [Module globalization with CultureInfoFormatter](globalize-modules.md)
