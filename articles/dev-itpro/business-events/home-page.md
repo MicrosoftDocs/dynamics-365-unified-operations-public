@@ -5,7 +5,7 @@ title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -71,7 +71,7 @@ The next step is to manage the endpoints.
 ## Business events processing
 Finance and Operations allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter BATCHENABLED in the business events parameter table, which is set to 0 (off) by default to indicate that manual batch job will not be effective by default. This must be set to 1 if the manual batch is being used as a workaround. This is mentioned in the [troubleshoot wiki](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/troubleshooting).
+The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter BATCHENABLED in the business events parameter table, which is set to 0 (off) by default to indicate that manual batch job will not be effective by default. This must be set to 1 if the manual batch is being used as a workaround. For more information, see [Troubleshoot business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/troubleshooting).
 
 ## Managing endpoints
 
