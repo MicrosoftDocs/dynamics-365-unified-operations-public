@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request properties object
-description: This topics covers the request properties object in Dynamics 365 Commerce.
+description: This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,46 +33,51 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topics covers the request properties object in Dynamics 365 Commerce.
+This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The request properties object represents an HTTP request and includes properties for data such as the requested URL, locale, device, user, cookie, and query string parameters. Modules can access a read-only request context object named **this.props.context** to get the request information, and can change module behavior as needed.  
+The request properties object represents an HTTP request and includes various data properties, such as the requested URL, locale, device, user, cookies, and query string parameters. To get the request information, modules can access a read-only request context object that is named **this.props.context**, and they can change module behavior as required.
 
 ## Example
-The following example shows how to access the request properties object from within the request context:
+
+The following example shows how to access the request properties object from within the request context.
 
 ```
 if (this.props.context.request.user.isAuthenticated) {
     userName = this.props.context.request.user.signinName ? this.props.context.request.user.signinName : '';
     firstName = this.props.context.request.user.firstName ? this.props.context.request.user.firstName : '';
     lastName = this.props.context.request.user.lastName ? this.props.context.request.user.lastName : '';
-}      
+}
 ```
 
 ## General properties
 
-* **url** - Provides the requested URL
-* **locale** - The locale context (example "en-us")
-* **textDirection** - The text direction, possible values "rtl" and "ltr"
-* **sitePath** - The site's full path
-* **device** - Device the request came from
-  * **Type** - Device type (example: 'pc')
-* **user** - Information about the user including:
-  * **token**
-  * **isAuthenticated**
-  * **signinURL**
-  * **signoutURL**
-  * **signUpUrl**
-  * **editProfileUrl**
-  * **signinName**
-  * **name**
-  * **firstName**
-  * **lastName**
-  * **emailAddress**
-  * **customerAccountNumber**
-* **query** - List of query string parameters
-* **cookies** - Cookie information
+* **url** – The requested URL.
+* **locale** – The locale context (for example, **"en-us"**).
+* **textDirection** – The text direction (the possible values are **"rtl"** and **"ltr"**).
+* **sitePath** – The full path of the site.
+* **device** – The device that the request came from.
+
+  * **Type** – The device type (for example, **"pc"**).
+
+* **user** – Information about the user. The following properties are included:
+
+    * **token**
+    * **isAuthenticated**
+    * **signinURL**
+    * **signoutURL**
+    * **signUpUrl**
+    * **editProfileUrl**
+    * **signinName**
+    * **name**
+    * **firstName**
+    * **lastName**
+    * **emailAddress**
+    * **customerAccountNumber**
+
+* **query** – A list of query string parameters.
+* **cookies** – Cookie information.
 
 ## Interface
 
