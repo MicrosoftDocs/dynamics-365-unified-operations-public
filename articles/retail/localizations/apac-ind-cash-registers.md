@@ -3,23 +3,23 @@
 
 title: Goods and Services Tax (GST) integration for cash registers for India
 description: This topic provides an overview of the cash register functionality that is available for India. It also provides guidelines for setting up the functionality.
-author: EvgenyPopovMBS 
+author: EvgenyPopovMBS
 manager: annbe
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod:
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
+# ms.search.form:
 audience: IT Pro
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
-# ms.tgt_pltfrm: 
-# ms.custom: 
+# ms.tgt_pltfrm:
+# ms.custom:
 ms.search.region: India
 ms.search.industry: Retail
 ms.author: v-pakris
@@ -451,4 +451,4 @@ Add the custom fields to receipt profiles.
 
 ### Enable searching customers by tax registration numbers in POS
 
-To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select *Tax registration number* in the **Customer search criteria** drop-down list. Run the *1110* job on the **Distribution schedules** page.
+To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select *Tax registration number* in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the *1110* job on the **Distribution schedules** page.
