@@ -1,93 +1,91 @@
 ---
 # required metadata
 
-title: Containers
-description: This topic reviews setting up a container module in a Dynamics 365 e-Commerce page.
+title: Add a container module to a page
+description: This topic covers container modules and how to add them to site pages in Dynamics 365 Commerce.
 author: anupamar-ms
-manager: BrendanSullivanMSFT
-ms.date: 08/30/2019
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
-audience: Developer
+ms.search.form:  
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
+ms.search.industry: 
 ms.author: anupamar
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Containers
+# Add a container module to a page
 
-A container is a module that hosts other modules in it. The properties of the container help define the layout of the modules within. Its primary purpose is to define the layout.  For instance, using a container the modules inside can be placed side by side in a two, three, four or six column view.  
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-There are three standard containers that we support –Container, Container with 2-slots and Container with 3-slots. Any module can be placed within these containers. In addition, there are some special containers such as Carousel, Content rich block, Content placement, Cart, Checkout, Buy box, Header and Footer. These containers have a specific application and cannot be used for all modules. Please refer to documentation for these containers for more details. In this document we will cover the three standard containers that are available.  
+This topic covers container modules and how to add them to site pages in Dynamics 365 Commerce.
 
-It is recommended practice to put modules within a container so they can adhere to the container width. [Need more on why] 
+## Overview
 
-Usage examples for ecommerce: 
+A container module is a module that hosts other modules within it, and is the most generic container used in Commerce. The primary purpose of a container module is to define the layout of the modules within it using the properties of the container module. For example, the modules inside a container can be placed side-by-side in a two, three, four, or six-column view. Modules can be set to render within the container width or go full-bleed on a page. A heading can also be added to a container module if needed.
 
-- A site author wants a three-column view with 3 modules placed side by side. This can be achieved with the Container with 3-slots 
-- A site author wants a six-column view with 6 modules placed side by side. This can be achieved with a Container with six columns in it. 
-- A site author wants to place a module on the page but doesn’t want it to go full-bleed on the page. This can be achieved by adding the module to the Container and restricting the Width property 
+There are three standard types of container modules: container, container with 2-slots, and container with 3-slots. Any module can be placed within these container module types. In addition, there are special container modules such as carousel, content rich block, content placement, cart, checkout, buy box, header, and footer. These containers have a specific application and can only be used to contain certain supported modules. 
 
-## Container 
+It is recommended practice to put modules within a container so they can adhere to the container width.
 
-Container is the most generic container that we support. It allows you to add a heading to the container if needed and set the number of columns for the modules to be rendered. It also allows modules to render within the container width or go full-bleed on the page. 
+## Examples of container module uses in e-Commerce
 
-### Properties for Default Container 
+- A site author wants a three-column view with three modules placed side by side. This can be achieved with the container with 3-slots. 
+- A site author wants a six-column view with six modules placed side by side. This can be achieved with a container with six columns in it. 
+- A site author wants to place a module on the page but does not want it to go full-bleed on the page. This can be achieved by adding the module to a container module and restricting the container's width property. 
 
-| Property name     | Values                                            | Property Description                                         |
+## Container module properties 
+
+| Property name     | Values                                            | Property description                                         |
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| Heading           | Heading text Heading tag = H1, H2, H3, H4, H5, H6 | A container can have a heading. Heading supports heading tag which defaults to H2 but can be changed to meet accessibility requirements |
-| Width             | Fit Container Fill screen                         | This defines if the modules should fit the width of the container or go fill the screen. The default setting is fill to width |
-| Number of columns | 1,2,3,4,6, 12                                     | The default container allows up-to 12 columns in it.         |
-
- 
+| Heading           | Heading text<br/>Heading tag = H1, H2, H3, H4, H5, H6 | The optional container heading text and heading tag. The default heading tag value is H2 but it can be modified to meet accessibility requirements. |
+| Width             | Fit container<br/>Fill screen                         | This property defines whether the modules should fit within the width of the container (the default) or fill the screen. |
+| Number of columns | 1,2,3,4,6, 12                                     | The number of columns allowed in the container, up to 12 columns.         |
 
 ## Container with 2-slots 
 
-Container with 2-slots is a container that is optimized for two column view. It has additional properties that allow the layout to be further optimized by view port. 
+Container with 2-slots is a container module that is optimized for a two-column view. It has additional properties that allow the layout to be further customized by view port (mobile, tablet, PC, etc.). 
 
-This container has 2-slots which allows a side-by-side view of modules inside it. In addition, the width of each column can be defined by view port. Below are the column width settings 
+This container has two slots which allow a side-by-side view of the modules within it. The width of each column can be defined by view port. The column width settings are as follows. 
 
-3 x 9: In this setting, the first module will have a column width of 3 and the second module will have a column width of 9. 
+**3 x 9:** The first module has a column width of three and the second module has a column width of nine. 
 
-4 x 4: In this setting, the first module will have a column width of 4 and the second module will have a column width of 4. There will 2-column padding on the left and right margin 
+**4 x 4:** The first module has a column width of four and the second module has a column width of four. There will two-column padding on the left and right margin. 
 
-6 x 6:  In this setting, both modules will have equal column width. 
+**6 x 6:** Both modules will have an equal column width of six. 
 
-8 x 4: In this setting, the first module will have a column width of8 and the second module will have a column width of 4. 
+**8 x 4:** The first module will has a column width of eight and the second module has a column width of four. 
 
-9 x 3: In this setting, the first module will have a column width of 9 and the second module will have a column width of 3. 
+**9 x 3:** The first module has a column width of nine and the second module has a column width of three. 
 
-12 x12: In this setting, both modules have full column width. This will make the modules stack one below the other. In some view ports this may be preferred even though this goes against the two-column intent. 
+**12 x 12:** Both modules have a full column width of 12, which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module. 
 
- 
 
-### Properties of Container with 2-slots 
+### Container with 2-slots properties  
 
-| Property name                   | Values                               | Property Description                                         |
+| Property name                   | Values                               | Property description                                         |
 | ------------------------------- | ------------------------------------ | ------------------------------------------------------------ |
-| Heading                         | Heading text  Heading tag            | An optional can be provided for the container                |
-| X-Small view port configuration | 3 x 9 4 x 4 6 x 6 8 x 4 9 x 3 12 x12 | This defines the layout for X-Small view ports.              |
-| Small view port configuration   | 3 x 9 4 x 4 6 x 6 8 x 4 9 x 3 12 x12 | This defines the layout for Small view ports such as Mobile  |
-| Medium view port configuration  | 3 x 9 4 x 4 6 x 6 8 x 4 9 x 3 12 x12 | This defines the layout for Medium view ports such as Tablets. |
-| Large view port configuration   | 3 x 9 4 x 4 6 x 6 8 x 4 9 x 3 12 x12 | This defines the layout of the two columns on PCs.           |
+| Heading                         | Heading text<br/>Heading tag            | An optional can be provided for the container                |
+| X-Small view port configuration | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for extra small view ports.              |
+| Small view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for small view ports such as mobile.  |
+| Medium view port configuration  | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for medium view ports such as tablets. |
+| Large view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for medium view ports such as PCs.           |
 
- 
 
 ## Container with 3-slots 
 
@@ -99,7 +97,7 @@ The width of each column can be defined by view port. Below are the column width
 
 ### Properties of Container with 3-slots 
 
-| Property name                   | Values                    | Property Description                                         |
+| Property name                   | Values                    | Property description                                         |
 | ------------------------------- | ------------------------- | ------------------------------------------------------------ |
 | Heading                         | Heading text  Heading tag | An optional can be provided for the container                |
 | X-Small view port configuration |                           | This defines the layout for X-Small view ports.              |
@@ -109,9 +107,9 @@ The width of each column can be defined by view port. Below are the column width
 
  
 
-## Adding a page with a container 
+## Add a container module to a page 
 
-This section explains how to add a video player module to a new page and set the required properties.  
+To add a container player module to a new page and set the required properties, do the following.  
 
 1. In tooling, create a new page template “Container template”. 
 
