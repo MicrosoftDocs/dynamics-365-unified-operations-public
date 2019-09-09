@@ -2,7 +2,7 @@
 # required metadata
 
 title: App settings
-description: This topic covers app settings in Dynamics 365 Commerce.
+description: This topic covers app settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers app settings in Dynamics 365 Commerce.
+This topic covers app settings in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-App settings for global configurations, routes, and themes are contained in the **\src\settings\app.settings.json** file. The following example shows a JSON file with sections for each setting.
+The \\src\\settings\\app.settings.json file holds app settings for global configurations, routes, and themes. The following example shows a JavaScript Object Notation (JSON) file that includes a section for each type of setting.
 
 ```json
 {
@@ -73,27 +73,28 @@ App settings for global configurations, routes, and themes are contained in the 
 
 ## Config section
 
-The **config** section of the **app.settings.json** file provides support for global configuration fields. These fields can be set in the authoring tools at the site level and are shared across all modules using the `this.props.context.app.config.*` API.  
+The **config** section of the app.settings.json file supports global configuration fields. These fields can be set at the site level in the authoring tools, and they are shared across all modules by using the **this.props.context.app.config.\*** application programming interface (API).
 
-These global configuration fields are helpful when you have data that should only be set once across the entire online site and the data is needed by multiple modules. An example of this is an API key for ratings and reviews with the same value across the online site that is needed by multiple modules. Modules themselves also support site-scoped configuration settings but those settings cannot be shared across different modules.  
+The global configuration fields are helpful when you have data that should be set only one time across the whole online site, but the data is required by multiple modules. For example, an API key for ratings and reviews has the same value across the online site, and that value is required by multiple modules. Modules themselves also support site-scoped configuration settings, but those settings can't be shared across different modules.
 
-Schema for these configurations follow the same schema used for module configurations.
+The schemas for these configurations follow the same schemas that are used for module configurations.
 
-## Route section
+## Routes section
 
-The **route** section in the **app.settings.json** file provides support for adding URL routes in a module. For example, if a module needs to create a link to the cart page, a "cart" route is added to the JSON file so that this route can retrieved from the module code using the authoring tools.
+The **routes** section in the app.settings.json file is used to add URL routes in a module. For example, if a module must create a link to the cart page, a **"cart"** route is added to the JSON file. The route can then be retrieved from the module code by using the authoring tools.
 
-Routes can be accessed in the module view file with the `this.props.context.app.routes.*` API.
+Routes can be accessed in the module view file by using the **this.props.context.app.routes.\*** API.
 
-## Theme section
+## Themes section
 
-The **theme** section in the **app.settings.json** file provides support for exposing themes to the authoring tools. Themes here should match theme names in the \src\themes\ directory and provide localizable friendly names that the authoring tool can show when being used to set a theme at the site level or in the template, layout, or page editors.
+The **themes** section in the app.settings.json file is used to expose themes to the authoring tools. The themes in this section should match the theme names in the \\src\\themes\\ directory. They should provide localizable friendly names that the authoring tools can show when they are used to set a theme at the site level, or in the template, layout, or page editor.
 
 ### Localized app settings
 
-Both the friendly name and description properties of each app setting should be localized for the site locale in the Commerce authoring tools. The **src/resources/authoring/global.json** file should be updated to add a settings property under which all the settings related to resource strings are listed.
+Both the **friendlyName** property and the **description** property of each app setting should be localized for the site locale in the Dynamics 365 Commerce authoring tools. The src/resources/authoring/global.json file should be updated so that it includes a **settings** property, and all the settings that are related to resource strings should be listed under that property.
 
-#### Resource schema:
+#### Resource schema
+
 ```json
 {
     "settings": {
@@ -111,7 +112,7 @@ Both the friendly name and description properties of each app setting should be 
 }
 ```
 
-Example resource file:
+Here is an example of a resource file.
 
 ``` json
 {
