@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Module definition file
-description: This topic covers module definition files in Dynamics 365 Commerce.
+title: Module definition files
+description: This topic covers module definition files in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,18 +28,18 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Module definition file
+# Module definition files
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers module definition files in Dynamics 365 Commerce.
+This topic covers module definition files in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The module definition file `MODULE_NAME.definition.json` is used to register a module and provide metadata to Dynamics 365 Commerce including the module name, description, categories, and configurations.
+A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to Dynamics 365 Commerce. This metadata includes the module name, description, categories, and configurations.
 
-The following example shows a sample definition file for a module.
+Here is an example of a module definition file.
 
 ```
 {
@@ -85,34 +85,26 @@ The following example shows a sample definition file for a module.
 }
 ```
 
-The module definition file is also used to expose configuration fields, which enables a page author to set module settings. Examples of this could be a layout alignment setting (with left, right, and center values to choose from), a module title or heading, a rich text description, a call to action link, an image URL, or Dynamics Retail product data.  
+A module definition file also exposes configuration fields, so that a page author can configure module settings. For example, there are configuration fields for a layout alignment setting (where the available values are **left**, **right**, and **center**), a module title or heading, a rich text description, a "call to action" link, an image URL, and Microsoft Dynamics 365 Retail product data.
 
-The page author can choose the configurations for a module on a specific page without affecting the setting of the module on other pages. 
+The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. 
 
 ## Module definition schema
 
-* "$type"
-    * A module can be either a “containerModule” if it can render child modules or a “contentModule” if it's a stand-alone module. Container modules will also define “slots” which are used for layout regions.  
-* "friendlyName"
-    * Friendly name that gets displayed to page authors. Minimum length is 3 characters.
-* "name":
-    * Name of the module, which must be unique across the application. This is the ID of the module referenced by authoring and should not be changed.
-* "description": 
-    * The description provides a friendly string which will be shown in the authoring tools when adding modules to pages.
-* "categories": 
-    * Categories that this module can subscribe to. The values specified here are used by container modules to allow or disallow certain modules in specific slots.
-* "tags"
-    * Tags used to search modules, all the categories are automatically added as tags
-* "module"
-    * The module section contains the file name for the default react view to load and is used to register the data actions that should be run for the module. Only one view can be provided here but you may register multiple data action.
-* "slots" 
-    * Slots are defined only on “containerModules” and exposed in the authoring tool. Slots can define allow and deny lists to allow or disallow specific modules from being accepted in the slot.
+* **"$type"** – The type of the module. A module can be either a container module, if it can render child modules, or a content module, if it's a stand-alone module. Container modules also define "slots" that are used for layout regions.
+* **"friendlyName"** – The friendly name of the module. This name is shown to page authors. The minimum length is three characters.
+* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the authoring tools. It should not be changed.
+* **"description"** – The description of the module. The description provides a friendly string that is shown in the authoring tools when modules are added to pages.
+* **"categories"** – The categories that the module can subscribe to. Container modules use the values that are specified here to allow or disallow some modules in specific slots.
+* **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
+* **"module"** – This section contains the file name of the default react view that should be loaded. It's also used to register the data actions that should be run for the module. Only one view can be provided here, but you can register multiple data actions.
+* **"slots"** – Slots are defined only in container modules. They are exposed in the authoring tools. Allow and deny lists can be defined for a slot to allow or disallow specific modules from being accepted in that slot.
 
-## Registering data actions To a module
+## Register data actions to a module
 
-If a module is dependent on data coming from a data action, the data action must be registered in the `module` section of the module definition file.
+If a module depends on data from a data action, the data action must be registered in the **module** section of the module definition file.
 
-The following example shows a module definition with data action registration.
+The following example shows a module definition file that includes data action registration.
 
 ```json
 // test-module.definition.json
@@ -133,13 +125,12 @@ The following example shows a module definition with data action registration.
         }
     }
 }
+```
 
-* "path"
-    * The path to the data action. Can be a local path or a path to an action in another package, e.g. "@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"
-* "runOn" 
-    * Controls when to run the data action. Valid values are either "server" or "client".
+* **"path"** – The path of the data action. The path can be a local path or the path of an action in another package (for example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**).
+* **"runOn"** – A setting that controls when the data action is run. Valid values are **server** or **client**.
 
-Once the data action is registered, the module will automatically run the data-action on the server or client and bind the result to `testResult` in the data.ts file.
+After the data action is registered, the module automatically runs it on either the server or the client, and binds the result to **testResult** in the data.ts file.
 
 ```typescript
 // test-module.data.ts
@@ -149,157 +140,147 @@ export interface IAsyncTestModuleData {
 }
 ```
 
-The result is that you can now access the results of this data action in your module.
-    
-## Module config schema
+You can then access the results of the data action in your module.
 
-The module "config" section contains a list of all the module's exposed configuration fields that will be used in the authoring tool.
+## Module configuration schema
 
-* config name:
-    * This local name will be used to access the config values from your react source code.
-* "friendlyName":
-    * This name will show up in authoring tools as the configuration name.
-* "description":
-    * This description will show up in authoring tools as the configuration description.
-* "type":
-    * Type of the configuration.  Possible values “string”, “bool”, “number”, “integer”, “resource” , “richText”, “image”, “imageSettings”, “video” or “array”.  Type "resource" will not show up in authoring tool, but will allow the string to be localized.
-* "enum":
-    * For an enumerator type must be set to "string"
-* "default":
-    * Used to set the default value if none is set in the authoring tool
-* "scope":
-    * Used to scope the config to the a module instance or all modules site on the site.  Possible values "module" or "site".  If set to the site, the module configuration will not show up and be configurable on a page, only at the site level settings. This will allow the value to be set once for your whole site.
-* "group":
-    * Groups are used to organize the configurations into organized groups in the authoring tool.
-* "required":
-    * This marks if a property must be set on the module.  The rendering of the module and tooling will show an error if this is not set.
-* "resourceKey":
-    * Used for localization resources
-    
-The following example shows the usage of various supported data types.
+The **config** section of the module definition file contains a list of all the module's exposed configuration fields that will be used in the authoring tools.
+
+* **configuration name** – The local name that is used to access the configuration values from your react source code.
+* **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
+* **"description"** – The description that is shown as the configuration description in the authoring tools.
+* **"type"** – The type of the configuration. Possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"resource"**, **"richText"**, **"image"**, **"imageSettings"**, **"video"**, and **"array"**. The **"resource"** type isn't shown in the authoring tools but enables the string to be localized.
+* **"enum"** – For an enumerator type, the value must be set to **"string"**.
+* **"default"** – The default value that is set if no value is set in the authoring tools.
+* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the whole site.
+* **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
+* **"required"** – A flag that specifies whether a property must be set on the module. If a required property isn't set, the rendering of the module and tooling will show an error.
+* **"resourceKey"** – This field is used for localization resources.
+
+The following example shows how the various supported data types are used.
 
 ```
 {
-  "$type": "contentModule",
-  "friendlyName": "Sample Config",
-  "name": "sample-config",
-  "description": "Sample Config",
-  "categories": ["sample-config"],
-  "tags": ["samples"],
-  "module": {
-      "view": "./sample-config",
-      "dataActions": {}
-  },
-  "config": {
-      "showText": {
-          "friendlyName": "showText",
-          "description": "example config value",
-          "type": "string",
-          "default": "Example Config Value",
-          "scope": "module",
-          "group": "Layout Properties"
-      },
-      "subTitle": {
-        "type": "richText",
-        "friendlyName": "SubTitle",
-        "description": "Sub title rich text field"
-      },
-      "bgImage": {
-          "type": "image",
-          "friendlyName": "Background image",
-          "description": "Background image"
-      },
-      "images": {
-          "type": "array",
-          "friendlyName": "Images",
-          "description": "Image Array",
-          "items": {
-              "type": "image"
-          }
-      },
-      "backgroundImageSettings": {
-          "friendlyName": "Background Image Settings",
-          "description": "Image settings for background iamge settings",
-          "type": "imageSettings"
-      },
-      "ambientVideo": {
-          "friendlyName": "Ambient Video",
-          "description": "Ambient Video",
-          "type": "video"
-      },
-      "headingArray":{
-          "type": "array",
-          "friendlyName": "Heading Array",
-          "description": "Heading Array",
-          "items": {
-              "$ref": "#/definitions/heading"
-          }
-      },
-      "heading":{
-          "$ref": "#/definitions/heading"
-      },
-      "heading2":{
-          "type": "object",
-          "friendlyName": "Heading2",
-          "description": "Heading2 property with its own enum",
-          "properties": {
-              "style": {
-                  "type": "string",
-                  "enum": {
-                      "bold": "Bold",
-                      "underline": "Underline",
-                      "italics": "Italics",
-                      "strong": "Strong",
-                      "emphasized": "Emphasized",
-                      "none": "None"
-                  },
-                  "friendlyName": "Style",
-                  "description": "Heading style"
-              }
-          }
-      }
-  },
-  "definitions": {
-      "heading": {
-          "type": "object",
-          "friendlyName": "Heading",
-          "description": "Heading property",
-          "properties": {
-              "text": {
-                  "type": "string",
-                  "friendlyName": "Text",
-                  "description": "Heading Text"
-              },
-              "style": {
-                  "type": "string",
-                  "enum": {
-                      "bold": "Bold",
-                      "underline": "Underline",
-                      "none": "None"
-                  },
-                  "friendlyName": "Style",
-                  "description": "Heading style"
-              },
-              "showImage":{
-                  "type":"boolean",
-                  "friendlyName": "Show Image?",
-                  "description": "Should Show Image"
-              },
-              "bgImage": {
-                  "type": "image",
-                  "friendlyName": "Background image",
-                  "description": "Background image"
-              },
-              "imageArray":{
-                  "type": "array",
-                  "friendlyName": "Images",
-                  "description": "Image Array",
-                  "items": {
-                      "type": "image"
-                  }
-              }
-          }
-      }
-  }
+    "$type": "contentModule",
+    "friendlyName": "Sample Config",
+    "name": "sample-config",
+    "description": "Sample Config",
+    "categories": ["sample-config"],
+    "tags": ["samples"],
+    "module": {
+        "view": "./sample-config",
+        "dataActions": {}
+    },
+    "config": {
+        "showText": {
+            "friendlyName": "showText",
+            "description": "example config value",
+            "type": "string",
+            "default": "Example Config Value",
+            "scope": "module",
+            "group": "Layout Properties"
+        },
+        "subTitle": {
+            "type": "richText",
+            "friendlyName": "SubTitle",
+            "description": "Sub title rich text field"
+        },
+        "bgImage": {
+            "type": "image",
+            "friendlyName": "Background image",
+            "description": "Background image"
+        },
+        "images": {
+            "type": "array",
+            "friendlyName": "Images",
+            "description": "Image Array",
+            "items": {
+                "type": "image"
+            }
+        },
+        "backgroundImageSettings": {
+            "friendlyName": "Background Image Settings",
+            "description": "Image settings for background image settings",
+            "type": "imageSettings"
+        },
+        "ambientVideo": {
+            "friendlyName": "Ambient Video",
+            "description": "Ambient Video",
+            "type": "video"
+        },
+        "headingArray":{
+            "type": "array",
+            "friendlyName": "Heading Array",
+            "description": "Heading Array",
+            "items": {
+                "$ref": "#/definitions/heading"
+            }
+        },
+        "heading":{
+            "$ref": "#/definitions/heading"
+        },
+        "heading2":{
+            "type": "object",
+            "friendlyName": "Heading2",
+            "description": "Heading2 property with its own enum",
+            "properties": {
+                "style": {
+                    "type": "string",
+                    "enum": {
+                        "bold": "Bold",
+                        "underline": "Underline",
+                        "italics": "Italics",
+                        "strong": "Strong",
+                        "emphasized": "Emphasized",
+                        "none": "None"
+                    },
+                    "friendlyName": "Style",
+                    "description": "Heading style"
+                }
+            }
+        }
+    },
+    "definitions": {
+        "heading": {
+            "type": "object",
+            "friendlyName": "Heading",
+            "description": "Heading property",
+            "properties": {
+                "text": {
+                    "type": "string",
+                    "friendlyName": "Text",
+                    "description": "Heading Text"
+                },
+                "style": {
+                    "type": "string",
+                    "enum": {
+                        "bold": "Bold",
+                        "underline": "Underline",
+                        "none": "None"
+                    },
+                    "friendlyName": "Style",
+                    "description": "Heading style"
+                },
+                "showImage":{
+                    "type":"boolean",
+                    "friendlyName": "Show Image?",
+                    "description": "Should Show Image"
+                },
+                "bgImage": {
+                    "type": "image",
+                    "friendlyName": "Background image",
+                    "description": "Background image"
+                },
+                "imageArray":{
+                    "type": "array",
+                    "friendlyName": "Images",
+                    "description": "Image Array",
+                    "items": {
+                        "type": "image"
+                    }
+                }
+            }
+        }
+    }
 }
 ```
