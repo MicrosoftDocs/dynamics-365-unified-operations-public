@@ -245,6 +245,71 @@ The Generic Tax Engine component is a part of sealed extensions.
 
 ---
 
+### The Retail Server extension components
+
+1. Open **web.config** in the root folder under the IIS Retail Server site location.
+2. Register the Retail Server extensions in the **extensionComposition** section of the configuration file.
+
+# [Retail 7.3.1](#tab/retail-7-3-1)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0 and later](#tab/retail-10-0)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+``` xml
+<add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
+```
+
+---
+### The ClientBroker extension components
+
+1. Open **RetailProxy.MPOSOffline.ext.config** under the local CRT client broker location.
+2. Register the Retail Proxy extensions in the extensionComposition section of the configuration file.
+
+# [Retail 7.3.1](#tab/retail-7-3-1)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0 and later](#tab/retail-10-0)
+
+> [!NOTE]
+> This step doesn't apply to this version.
+
+# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+``` xml
+<add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
+```
+
+---
+
 ### The Modern POS extension components
 
 Enable the Tax Registration Id extension.
@@ -312,8 +377,8 @@ Enable the Tax Registration Id extension.
 
 # [Retail 10.0.5 and later](#tab/retail-10-0-5)
 
-1. Open the solution at RetailSdk\POS\CloudPOS.sln, and make sure that it can be compiled without errors.
-2. Enable the extension in POS.Extensions\extensions.json by adding the following lines:
+1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
+2. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:
 
     ``` xml
     {
@@ -372,7 +437,67 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-2. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
+2. In the **RetailProxy.MPOSOffline.ext.config** configuration file under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
+
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0 and later](#tab/retail-10-0)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
+    ```
+
+    ---
+
+3. Update the Retail Server configuration file. In the **RetailSDK\Packages\RetailServer\Code\web.config** file, add the following lines to the **extensionComposition** section.
+
+    # [Retail 7.3.1](#tab/retail-7-3-1)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 7.3.2 and later](#tab/retail-7-3-2)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 8.1.3 and later](#tab/retail-8-1-3)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0 and later](#tab/retail-10-0)
+
+    > [!NOTE]
+    > This step doesn't apply to this version.
+
+    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
+    ```
+
+    ---
+
+4. In the **Customization.settings** package customization configuration file under the **RetailSdk\\BuildTools** folder, add the following lines to the **ItemGroup** section to include the CRT extensions in deployable packages.
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -434,7 +559,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-3. Modify the following files to include the Z3 libraries in deployable packages:
+5. Modify the following files to include the Z3 libraries in deployable packages:
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -527,7 +652,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
     ---
 
-5. Enable the Tax Registration Id POS extension:
+6. Enable the Tax Registration Id POS extension:
 
     # [Retail 7.3.1](#tab/retail-7-3-1)
 
@@ -551,7 +676,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
     # [Retail 10.0.5 and later](#tab/retail-10-0-5)
 
-    Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
+    Open **RetailSDK\POS\Extensions\extensions.json** and add the following lines:
 
     ``` xml
     {
@@ -559,5 +684,5 @@ Follow these steps to create deployable packages that contain Retail components,
     }
     ```
 
-6. Run **msbuild** for the whole Retail SDK to create deployable packages.
-7. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+7. Run **msbuild** for the whole Retail SDK to create deployable packages.
+8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
