@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settlement overview for centralized payments
-description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
 author: abruer
 manager: AnnBe
 ms.date: 08/02/2018
