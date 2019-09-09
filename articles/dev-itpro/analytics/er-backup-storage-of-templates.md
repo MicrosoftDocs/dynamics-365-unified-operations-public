@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 
 # Backup storage of ER templates
 
+[!include [banner](../includes/banner.md)]
+
 The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets business users configure formats for outbound documents according to the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
 
 Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of Microsoft Dynamic 365 for Finance and Operations and imported into another instance.
