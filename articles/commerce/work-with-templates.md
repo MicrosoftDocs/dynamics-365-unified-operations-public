@@ -54,94 +54,104 @@ As discussed in the [Templates and layouts overview](templates-layouts-overview.
 > While templates are designed to control consistency across a site, they can theoretically be configured to not enforce any consistency. Brand and site administrators are empowered to set any level of variability for pages in their site. For example, a template could be left entirely open, which would allow content authors to create any page design they choose. In this example, all of the benefits listed above are not applicable.
 
 ## Modify a template
-Templates are modified using the template editor UI.  There are multiple navigation paths into the template editor:
-- Navigate to the template inspector list view (**[Your Site] > Templates**) and click on a template's name to enter into the template editor UI.
+Templates are modified using the template editor. 
 
-  or,
+To enter the template editor, do one the following.
 
-- If you are in the page editor for an existing page, you can navigate to the page's template directly from the property panel.  In the outline, make sure the top node is selected and then click on the **Edit Template** link from the property panel.
+- In the navigation pane of your site, click **Templates**, then select the template you want to modify.
 
-To edit a template, follow these steps.
+  -or-
 
-1. Open a template in the editor UI using either of the above navigation paths.
+- In the page editor for an existing page, select the top node in the outline tree on the left. Then in the right-side property pane, click **Edit Template**.
 
-2. Notice the outline tree view on the left.  This outline shows the module options and structures that are available to child layouts and pages.  
+The outline tree view on the left shows the module options and structures that are available to child layouts and pages. When you select a module in the outline tree, you can view the template properties for the selected module in the property pane on the right. You will notice some unique properties that are specific to template editing, such as those listed in the following table.
 
-3. Notice the property panel on the right.  Select a module in the outline to view the template properties for the selected module.  You will notice some unique properties that are specific to template editing, such as:
-
-  | Property Name | Description |
+  | Property name | Description |
   | ---- | --- |
-  | Min Occurs | Sets the minimum number of occurrence of the the selected module.  For example, setting "Min Occurs" = 1 makes the module required, whereas setting it = 0 makes the module optional for downstream authors. |
-  | Max Occurs | Sets the maximum number of occurrence for the selected module.  For example, setting "Max Occurs" = 1 means that module can only be added once. |
-  | Min Modules (Containers) | Modules that contain other modules (containers), can set the minimum number of total modules that should be added as children.  For example, a carousel module might define that the minimum number of child modules is greater than 1. |
-  | Max Modules (Containers) | Modules that contain other modules (containers), can set the maximum number of total modules that should be added as children.  For example, a carousel module might define that the maximum number of child modules is less than 10. |
-  | Locked | You will notice a boolean control titled "locked" next to all core module properties.  This allows the template author to lock a module setting in the template that can't be overridden by any child layouts or pages.  A locked module setting becomes a centrally editable property value for all layouts and pages that use the template. |
+  | Min Occurs | Sets the minimum number of occurrence of the the selected module. For example, setting "Min Occurs" = 1 makes the module required, whereas setting it = 0 makes the module optional for downstream authors. |
+  | Max Occurs | Sets the maximum number of occurrences for the selected module. For example, setting "Max Occurs" = 1 means that the module can only be added once. |
+  | Min Modules (Containers) | Modules that contain other modules (containers modules) can set the minimum number of total modules that should be added as children. For example, a carousel module might define that the minimum number of child modules is greater than 1. |
+  | Max Modules (Containers) | Modules that contain other modules (container modules) can set the maximum number of total modules that should be added as children. For example, a carousel module might define that the maximum number of child modules is less than 10. |
+  | Locked | You will notice a boolean control titled "locked" next to all core module properties. This allows the template author to lock a module setting in the template that can't be overridden by any child layouts or pages. A locked module setting becomes a centrally editable property value for all layouts and pages that use the template. |
    
-   
-
 ## Create a new template
-To create a new template, follow these steps.
 
-1. Navigate to the **Templates** tab in the left navigation bar of your site within the Dynamics e-Commerce authoring interface.  This will bring you to the template inspector view.
-2. Click the "**New Template**" button in the action bar at the top of the inspector view.  This will launch the template creation modal window.
-3. Enter a name and description for your template.  This will be shown to authors during new page creation workflows, so enter metadata that would be useful to page authors (example: "Use this template to create general marketing pages").  This can always be edited later.
-4. Click "**OK**" to create the new template and navigate into the template editor.
-5. The template editor will show an outline on the left, and a property panel on the right.  Expand the nodes in the outline and select the "**HTML Head**" slot.  If there are no modules yet in this slot, click the ellipse menu ("**...**") and select "**Add Module**".
-6. In the module picker modal that appears, choose "**Default page summary**" from the options and then "**OK**".
-7. With the newly added module selected in the outline, enter any default settings in the property panel that you want to automatically populate for all child pages of the template.  If you don't want any defaults then just leave the values blank.
-8. Now select the "**Body**" slot and, if it is empty, click the ellipse menu ("**...**") and select "**Add Module**".
-9. Select a page container module (depending on your site, there may only be one option) and click "**OK**".
-10. Under this new page container module you will see a new set of slots (Header, Main, etc.).  This is where you can add and configure module options that are available to authors when creating pages from this template.  If you add no modules to a slot, then the default behavior is to allow all available modules types for that slot.
-11. The template is now technically valid, and can be saved, checked-in, and used for creating new pages.  But as you will see below, there are some other defaults you will likely want to configure first.
+To create a new template, do the following.
+
+1. In the navigation pane of your site, click **Templates**. This will bring you to the template inspector view.
+1. Click **New Template**. This will launch the template creation dialog box.
+1. Enter a name and description for the template. This will be shown to authors during new page creation workflows, so enter metadata that would be useful to page authors (for example, "Use this template to create general marketing pages"). This metadata can always be edited later.
+1. Click "**OK**" to create the new template and navigate into the template editor. The template editor will show an outline tree on the left, and a property pane on the right.
+1. Expand the nodes in the outline and select the **HTML Head** slot. If there are no modules yet in this slot, click the ellipsis menu (**...**) and select **Add Module**.
+6. In the **Add Module** dialog box, select **Default page summary**, then click **OK**.
+7. With the new module selected in the outline, enter any default settings in the property pane that you want to automatically populate for all child pages of the template. If you don't want any defaults, leave the values blank.
+8. In the outline tree, select the **Body** slot, click the ellipsis button (**...**), then select **Add Module**.
+9. Select a page container module (there may only be one option) and click **OK**.
+
+Under this new page container module you will see a new set of slots (Header, Main, etc.). This is where you can add and configure module options that are available to authors when creating pages from this template. If you add no modules to a slot, then the default behavior is to allow all available modules types for that slot.
+
+The template is now technically valid, and can be saved, checked in, and used for creating new pages. But as you will see below, there are some other defaults you will likely want to configure first.
 
 ## Add headers and footers
 
-If your site already has a header fragment and you've completed the "Create a new template" steps above, follow these steps to add a header and footer to your new template.
+If your site already has a header fragment, to add a header and footer to a template, do the following.
 
-1. Expand the "**Body**" slot and its child page module in the outline.
-2. Select the "**Header Slot**" in the outline.
-3. In the Header Slot's action menu ("**...**"), select "**Add Fragment**".
-4. Search for and select your site's header fragment, and press "**OK**".
-5. All pages that use this template will now automatically inherit this header fragment.
+1. In the outline tree, expand the **Body** slot and its child page module.
+2. Select **Header** slot.
+3. In the header slot, click the ellipsis button (**...**), then select **Add Fragment**.
+4. Search for and select your site's header fragment, then click **OK**.
 
-If your site does not yet have a header fragment, please do the following.
+All pages that use this template will now automatically inherit this header fragment.
 
-1. Read and follow the steps in the **Fragments > Create a fragment** section of this documentation and choose "**Header**" as the module type for the fragment.
-2. Continue with the steps in the section above.
+If your site does not yet have a header fragment, see [Create a fragment](fragments.md#create-a-fragment), then continue with the steps above.
 
 ## Change template theme
-To set the default theme for all pages that use this template, follow these steps.
 
-1. Expand the "**Body**" slot in the outline.
-2. Select the page container module within it (example: "Default Page").
-3. In the property panel on the right, locate the property settings dropdown selector titled, "**Theme**".
-4. From the selector control choose a theme (example: "default").
-5. All new pages will now default to this theme.  If you would like to restrict pages from overriding this setting at a layout or page level, set the "**Locked**" Boolean control to true.
+To set the default theme for all pages that use a template, do the following.
 
+1. Expand the "**Body**" slot in the outline tree.
+1. Select the page container module within it (for example, "Default Page").
+1. In the property pane on the right, click the **Theme** dropdown menu, then select a theme.
+
+All new pages will now default to this theme.  If you would like to restrict pages from overriding this setting at a layout or page level, set the "**Locked**" Boolean control to true.
 
 ## Add script to a template
-HTML script tags containing JavaScript can be added to your template to provide default script behaviors to the HTML head, body begin, and body end of your pages.  To add a script to your template, follow these steps.
 
-1. In the outline, select the slot where you would like your script tag to be added (HTML head, body begin, body end).
-2. In the slot's action menu ("**...**"), choose "**Add Module**".
-3. From the module picker modal, choose your desired script module (examples: External Script, Inline Script).
-4. In the property panel on the right, enter your script into the script property control (examples: "Inline Script" or "Script tags").
-5. Enter any other optional settings in the property panel that you wish to configure.
+HTML script tags containing JavaScript can be added to your template to provide default script behaviors to the HTML head, body begin, and body end sections of your pages. 
+
+To add a script to your template, do the following.
+
+1. In the outline, select the slot where you want to add the script tag (for example, HTML head, body begin, or body end).
+1. Click the slot's ellipsis button (**...**), then select **Add Module**.
+1. From the Add Module dialog box, select the desired script module (for example, "External Script" or "Inline Script").
+1. In the property pane on the right, enter your script into the script property control (for example, "Inline Script" or "Script tags").
+1. Enter any other optional settings in the property pane that you wish to configure.
 
 > [!TIP]
-> Script modules that you want to re-use for other templates can be converted intto fragments for more efficient authoring and central updates.  To convert your script module into a fragment, follow the steps in the **Fragments > Save an existing module configuration as a fragment** article within this documentation.
+> Script modules that you want to reuse for other templates can be converted into fragments for more efficient authoring and centralized updating. To convert your script module into a fragment, see [Save an existing module configuration as a fragment](fragments.md#save-an-existing-module-configuration-as-a-fragment).
 
 ## Save, check in, preview, and publish a template
-To save your template, click the "**Save**" button in the action bar at the top of the template editor.  Saved changes will not affect downstream pages until they are "**Checked In**".  To check in your changes and make them discoverable for downstream workflows, click the "**Check In**" button in the action bar.
 
-To preview your changes, either open an existing page that uses this template or create a new page from the template.  
+To save and check in your template, do the following.
+
+1. Click **Save** at the top of the template editor. Saved changes will not affect downstream pages until they are checked in.  
+1. Click **Check In**. Changes are now discoverable for downstream workflows.
+
+To preview your changes, either open an existing page that uses the template or create a new page from the template.  
 
 Once you have previewed your template changes within a page preview context, there are multiple ways to publish the template to your live site.
 
-* Publishing a page that references an unpublished template will automatically publish the template.
-* Select the template in the templates list view (**Left navigation control > Templates > Selected template**) and click the "**Publish**" button in the top action bar.
-* Go back to the template editor view and select "**Publish**" from the top action bar.
+
+* Go to **Templates**, select the template, then click **Publish**.
+
+-or-
+
+* From the template editor, click **Publish**.
+
+-or-
+
+* Publish a page that references the unpublished template. This will automatically publish the template.
 
 > [!WARNING]
 >
-> By definition, **publishing** a template (or any other CMS item) means that it is discoverable on the internet.  No not publish documents or assets until you wish to make them public.  Saved, and Checked In document versions are only discoverable to authenticated system users.
+> By definition, **publishing** a template (or any other CMS item) means that it is discoverable on the internet. Do not publish documents or assets until you wish to make them public. Saved and checked-in document versions are only discoverable to authenticated system users.
