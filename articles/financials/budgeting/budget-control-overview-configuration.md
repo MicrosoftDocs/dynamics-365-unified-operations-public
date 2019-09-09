@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget control overview
-description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Finance and Operations so that you can manage financial resources.
+description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 Finance so that you can manage financial resources.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
@@ -39,9 +39,9 @@ This article introduces budget control and provides information to help you conf
 Overview
 --------
 
-Budget control in Microsoft Dynamics 365 for Finance and Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
+Budget control supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
-After budgets have been approved in Finance and Operations, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
+After budgets have been approved in Microsoft Dynamics 365 for Finance, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
 Expenditures can be recorded by using main accounts and financial dimensions. You can configure control of the overall expenditure to meet the organization’s policies and requirements by grouping combinations of financial dimensions and main accounts. 
 
