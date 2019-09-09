@@ -35,7 +35,7 @@ In Italy, a company can define the accounting policy for posting credit note amo
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In**Feature management**, enable the feature, **Separate accounts for credit notes**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+- In **Feature management**, enable the feature, **Separate accounts for credit notes**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
 
 ## Posting accounts setup 
 You can define specific ledger accounts for use with sales orders. To do this, on the **Posting** page, select **Credit notes** and specify the ledger accounts.
