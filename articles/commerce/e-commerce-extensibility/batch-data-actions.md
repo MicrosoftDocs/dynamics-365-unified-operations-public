@@ -47,7 +47,7 @@ The main difference between a batch data action and a standard data action is th
 async function getSimpleProductAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProduct>
 ```
 
-To change this data action to a batch data action, modify the method signature so that the method can accept an array of **ProductInput** classes and return an array of **SimpleProduct**s. The following example shows how the data action method must be updated so that it can process an array of inputs and return an array.
+To change this data action to a batch data action, modify the method signature so that the method can accept an array of **ProductInput** classes and return an array of **SimpleProduct** objects. The following example shows how the data action method must be updated so that it can process an array of inputs and return an array.
 
 ```typescript
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]> {
