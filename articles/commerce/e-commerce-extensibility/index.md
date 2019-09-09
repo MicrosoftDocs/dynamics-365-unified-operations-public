@@ -172,14 +172,16 @@ Learn how to create or modify existing modules, data actions and themes to exten
 ## Develop Data Actions
 * [Data actions](data-actions.md)
 * [Create a custom data action](data-actions.md#create-a-new-custom-data-action)
+* [Testing data actions with mocks](test-data-action-mocks.md)
 * [Page load data actions](page-load-data-action.md)
 * [Event based data actions](event-based-data-actions.md)
+
+## Advanced data action topics
 * [Chaining data actions](chain-data-actions.md)
 * [Batched data actions](batch-data-actions.md)
 * [Observable data actions](create-observable-data-action.md)
 * [Share state across modules](share-state-across-modules.md)
 * [Core data actions](core-data-actions.md)
-* [Testing data actions with mocks](test-data-action-mocks.md)
 
 ## Develop themes
 * [Theming overview](theming.md)
