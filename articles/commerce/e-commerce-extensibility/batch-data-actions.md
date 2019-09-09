@@ -37,17 +37,17 @@ This topic describes how to batch data actions.
 
 ## Overview
 
-In many scenarios, you will have an application that requires many calls to the same application programming interface (API) during the load of a single page. An example is a product feature page that showcases information about many products instead of just one product. A typical approach is to make multiple calls to the data action to get products. However, because this approach uses many individual HTTP requests to get the product information, it might not be very efficient. To solve this issue, the data action architecture supports batchable data actions.
+In many scenarios, you will have an application that requires many calls to the same application programming interface (API) during the load of a single page. An example is a product feature page that showcases information about many products instead of just one product. In a typical approach, multiple calls are made to the data action to get products. However, because this approach uses many individual HTTP requests to get the product information, it might not be very efficient. To solve this issue, the data action architecture supports batchable data actions.
 
 ## Examples
 
-The main difference between a batch data action and a standard data action is the batch data action's support for an array of action inputs. Notice that in the following data action example, the action method **getSimpleProductAction** only accepts a single **ProductInput** class.
+The main difference between a batch data action and a standard data action is the batch data action's support for an array of action inputs. In the following example of a standard data action, notice that the **getSimpleProductAction** action method accepts only one **ProductInput** class.
 
 ```typescript
 async function getSimpleProductAction(input: ProductInput, ctx: IActionContext): Promise<SimpleProduct>
 ```
 
-To change this example to a batch data action, the method signature can be modified to accept an array of **ProductInput**s and return an array of **SimpleProduct**s. The following example shows the changes needed in the data action method to process an input array and return an array.
+To change this data action to a batch data action, modify the method signature so that the method can accept an array of **ProductInput** classes and return an array of **SimpleProduct**s. The following example shows how the data action method must be updated so that it can process an array of inputs and return an array.
 
 ```typescript
 async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionContext): Promise<SimpleProduct[]> {
@@ -79,7 +79,7 @@ async function getSimpleProductsAction(inputs: ProductInput[], ctx: IActionConte
     }
 ```
 
-Now that the data action method has been updated to handle an array of inputs, the **isBatched** property in the action creation call needs to be set to **true**.
+Now that the data action method has been updated so that it can handle an array of inputs, the **isBatched** property in the action creation call must be set to **true**.
 
 ```typescript
 export default createObservableDataAction({
@@ -92,4 +92,4 @@ export default createObservableDataAction({
 Because this action now supports batching, if the action is called in multiple places during a page load, the data action framework automatically groups the requests together. Therefore, this approach helps minimize the number of HTTP requests that are required and helps maximize performance.
 
 > [!NOTE]
-> Some APIs might not support batching on their side. Therefore, when you create a batch data action, confirm that the service that you're using can support the action.
+> Some APIs might not support batching on their side. Therefore, when you create a batch data action, you should confirm that the service that you're using can support the action.
