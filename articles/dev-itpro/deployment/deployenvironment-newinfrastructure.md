@@ -44,7 +44,7 @@ This topic walks through the process of deploying sandbox (Tier 2 and above) and
 6. Select the **BPM library** that will be set as the Getting started library in the product.
 7. Select from a list of available **AOT packages** (customization packages) on the Software Deployable tabs in the Asset Library if you want to apply customizations. Only packages generated from a build environment on version 8.1 and above should be selected. Applying a package from an incompatible version will have an adverse effect on the environment.
 8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
-9. Select the **email address** of the **user** that will be set as the **system administrator** in the Finance and Operations product.
+9. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
 10. After you validate the configurations, click **Submit** to trigger the deployment.
 
 The environment deployment starts immediately and could take anywhere between **1-2 hours** to complete. 
