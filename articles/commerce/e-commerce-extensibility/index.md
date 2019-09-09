@@ -169,8 +169,8 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Extend a module definition](extend-module-definition.md)
 * [Working with Cookies](cookie-data.md) 
   
-## Develop Data Actions
-* [Data actions](data-actions.md)
+## Develop data actions
+* [Data actions overview](data-actions.md)
 * [Create a custom data action](data-actions.md#create-a-new-custom-data-action)
 * [Testing data actions with mocks](test-data-action-mocks.md)
 * [Page load data actions](page-load-data-action.md)
