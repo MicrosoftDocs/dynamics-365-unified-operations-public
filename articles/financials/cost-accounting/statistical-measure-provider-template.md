@@ -229,7 +229,7 @@ Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statis
 
 | Name           | Data connector                                                                     | Statistical dimension member |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 for Finance and Operations – Statistical measures | Pack CC                      |
+| Pack CC D365FO | Dynamics 365 Finance – Statistical measures | Pack CC                      |
 
 The system recognizes that ProdRouteTrans is a table where each record belongs to a separate legal entity. Therefore, you will be asked to select the legal entity that transactions should be imported from.
 
