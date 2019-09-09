@@ -37,50 +37,51 @@ This topic describes how to work with preset layouts in Dynamics 365 Commerce.
 
 ## Overview
 
-Please be sure to read the **[Preset vs. custom layouts](#preset-and-custom-layouts)** section before continuing with the steps below.
+Please read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts) before continuing with the steps below.
 
 ## Create a new preset layout
 
-There are two methods to create a preset layout.  The first is to save an existing custom layout as a preset, and the second is to create a new preset layout from scratch.
+There are two methods to create a preset layout. The first is to save an existing custom layout as a new prest layout, and the second is to create a new preset layout.
 
-To create a preset layout from an existing custom layout, follow these steps.
+### Create a preset layout from an existing custom layout
 
-1. Open an existing page that does not currently use a preset layout and has a module structure you would like to re-use for other pages within your site.
+To create a preset layout from an existing custom layout, do the following.
 
-   > [!TIP]
+1. Open an existing page that does not currently use a preset layout and has a module structure you would like to reuse for other pages within your site.
+
+1. Click **Check out**.
+
+1. Click **Save as new layout**. The Save as new layout dialog box appears.
+
+1. Enter a name and description for your layout. The name and description are shown to other authors when they create a new page from, or switch to, your layout. Enter something helpful to a page author.
+
+1. Click **OK**.
+
+The preset layout is now available when you create new pages or choose another layout for a page within the same template hierarchy.
+
+> [!TIP]
    >
-   > To quickly see if a specific page is currently bound to a preset layout, select the page in the pages list view and read the layout metadata in the property panel on the right.  
-   
-2. Check out the page by clicking the "**Check out**" button in the page editor's action bar.
+   > To quickly see if a specific page is currently bound to a preset layout, select the page in the pages list view and inspect the layout metadata in the property panel on the right.  
 
-3. Once the page is checked out to you, there will be a new action bar button to "**Save as new layout**".  Click this button to launch the save as layout modal.
-
-4. Enter a name and description for your layout.  The name and description are shown to other authors when they create a new page from, or switch to, your layout.  Enter something helpful to a page author.
-
-5. Click "**OK**" after you have filled out the layout metadata fields.
-
-6. Your preset layout is now available when you create new pages, or choose another layout for a page within the same template hierarchy.
+### Create a preset layout
 
 To create a preset layout from scratch, follow these steps.
 
-1. From the left navigation bar select "**Layouts**" 
-
-   > [!NOTE] 
-   > Subsequent tool versions will group layouts under the templates list view.
+1. From the left navigation bar, click **Layouts**. 
    
-2. From the action bar at the top of the list view, click the "**New Layout**" button.  This will launch the new layout modal window.
+2. Click the **New Layout**. The New layout dialog box appears.
 
-3. Choose the **template** that you would like to use for your preset layout.
+3. Select the template that you would like to use for your preset layout.
 
-4. Enter a name and description for your preset layout.  The name and description are shown to other authors when they create a new page from or switch to your new layout.  Enter something helpful to a page author.
+4. Enter a name and description for your preset layout. The name and description are shown to other authors when they create a new page from, or switch to, your new layout. Enter something helpful to a page author.
 
-5. Click "**OK**" to create the new layout and enter the layout editor.
+5. Click **OK** to create the new layout and enter the layout editor.
 
-6. In the layout editor, add and configure modules using the outline and property panel just as you would in the template editor.  Your module arrangement and locked defaults will be the centralized module configuration for any pages that use this layout.
+6. In the layout editor, add and configure modules using the outline and property panel just as you would in the template editor. The module arrangement and locked defaults will be the centralized module configuration for any pages that use this layout.
 
 ## Modify a preset layout
 
-To modify a preset layout, follow these steps.
+To modify a preset layout, do the following.
 
 1. Navigate to the layout editor for the preset layout you wish to modify.  This can be done through any of these navigation paths:
    * If you are editing a page that uses a preset layout, you can navigate to the layout editor by selecting the top node in the outline view and clicking the **Layout** link in the property panel.
