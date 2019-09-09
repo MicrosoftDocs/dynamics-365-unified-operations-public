@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Edit & audit retail store transactions
-description: This topic describes the edit & audit retail store transactions functionality in Microsoft Dynamics 365 for Retail.
+title: Edit and audit retail store transactions
+description: This topic describes the functionality for editing and auditing retail store transactions. 
 author: josaw1
 manager: AnnBe
 ms.date: 09/29/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-09-29
 ms.dyn365.ops.version: 
 
 ---
-# Edit & audit retail store transactions
+# Edit and audit retail store transactions
 
 Dynamics 365 for Retail customers use first party as well as third party POS applications. In the case of first party POS application, retail store transactions are pulled into the HQ from the channels through a batch process and in the case of third party applications, these are pulled into the HQ through integration. After these transactions are pulled into the HQ, there is a consistency check process that needs to be executed that runs multiple validations on these transactions and only successfully validated retail transactions are pulled into the Retail statement to be posted in the HQ. 
 
