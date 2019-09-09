@@ -3257,6 +3257,8 @@
             href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+      - name: Support parameterized calls of ER data sources of Calculated field type
+        href: ../dev-itpro/analytics/er-calculated-field-type.md?toc=/fin-and-ops/toc.json
       - name: Configuration lifecycle
         items:
         - name: Manage configurations lifecycle
