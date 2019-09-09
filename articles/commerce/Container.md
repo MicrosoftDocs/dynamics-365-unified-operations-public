@@ -63,17 +63,17 @@ Container with 2-slots is a container module that is optimized for a two-column 
 
 This container has two slots which allow a side-by-side view of the modules within it. The width of each column can be defined by view port. The column width settings are as follows. 
 
-**3 x 9:** The first module has a column width of three and the second module has a column width of nine. 
+- **3 x 9:** The first module has a column width of three and the second module has a column width of nine. 
 
-**4 x 4:** The first module has a column width of four and the second module has a column width of four. There will two-column padding on the left and right margin. 
+- **4 x 4:** The first module has a column width of four and the second module has a column width of four. There will two-column padding on the left and right margin. 
 
-**6 x 6:** Both modules will have an equal column width of six. 
+- **6 x 6:** Both modules will have an equal column width of six. 
 
-**8 x 4:** The first module will has a column width of eight and the second module has a column width of four. 
+- **8 x 4:** The first module will has a column width of eight and the second module has a column width of four. 
 
-**9 x 3:** The first module has a column width of nine and the second module has a column width of three. 
+- **9 x 3:** The first module has a column width of nine and the second module has a column width of three. 
 
-**12 x 12:** Both modules have a full column width of 12, which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module. 
+- **12 x 12:** Both modules have a full column width of 12, which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module. 
 
 
 ### Container with 2-slots properties  
@@ -81,10 +81,10 @@ This container has two slots which allow a side-by-side view of the modules with
 | Property name                   | Values                               | Property description                                         |
 | ------------------------------- | ------------------------------------ | ------------------------------------------------------------ |
 | Heading                         | Heading text<br/>Heading tag            | An optional can be provided for the container                |
-| X-Small view port configuration | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for extra small view ports.              |
-| Small view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for small view ports such as mobile.  |
-| Medium view port configuration  | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for medium view ports such as tablets. |
-| Large view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x12 | This defines the layout for medium view ports such as PCs.           |
+| X-Small view port configuration | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x 12  | This defines the layout for extra small view ports.              |
+| Small view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x 12  | This defines the layout for small view ports such as mobile devices.  |
+| Medium view port configuration  | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x 12  | This defines the layout for medium view ports such as tablets. |
+| Large view port configuration   | 3 x 9, 4 x 4, 6 x 6, 8 x 4, 9 x 3, 12 x 12  | This defines the layout for medium view ports such as PCs.           |
 
 
 ## Container with 3-slots 
@@ -100,10 +100,10 @@ The width of each column can be defined by view port. Below are the column width
 | Property name                   | Values                    | Property description                                         |
 | ------------------------------- | ------------------------- | ------------------------------------------------------------ |
 | Heading                         | Heading text  Heading tag | An optional can be provided for the container                |
-| X-Small view port configuration |                           | This defines the layout for X-Small view ports.              |
-| Small view port configuration   |                           | This defines the layout for Small view ports such as Mobile  |
-| Medium view port configuration  |                           | This defines the layout for Medium view ports such as Tablets. |
-| Large view port configuration   |                           | This defines the layout of the two columns on PCs.           |
+| X-Small view port configuration |  | This defines the layout for extra small view ports              |
+| Small view port configuration   |  | This defines the layout for small view ports such as mobile devices.  |
+| Medium view port configuration  |  | This defines the layout for medium view ports such as tablets. |
+| Large view port configuration   |  | This defines the layout for medium view ports such as PCs.           |
 
  
 
