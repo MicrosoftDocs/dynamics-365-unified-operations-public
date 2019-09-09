@@ -3294,6 +3294,8 @@
             href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+      - name: Support parameterized calls of ER data sources of Calculated field type
+        href: ../dev-itpro/analytics/er-calculated-field-type.md?toc=/fin-and-ops/toc.json
       - name: Configuration lifecycle
         items:
         - name: Manage configurations lifecycle
@@ -3318,6 +3320,8 @@
           items: 
           - name: Configure the Electronic reporting framework
             href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+          - name: Back up and recover ER templates
+            href: ../dev-itpro/analytics/er-backup-storage-templates.md?toc=/fin-and-ops/toc.json
           - name: Create configuration provides and mark them as active
             href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
         - name: Destinations
@@ -4953,7 +4957,7 @@
         href: ../supply-chain/inventory/warehouse-template.md
       - name: Control work by using work templates and location directives
         href: ../supply-chain/warehousing/control-warehouse-location-directives.md
-      - name: Wave processing
+      - name: Wave step codes
         href: ../supply-chain/warehousing/wave-step-codes.md
       - name: Configure wave processing
         href: ../supply-chain/warehousing/tasks/configure-wave-processing.md
