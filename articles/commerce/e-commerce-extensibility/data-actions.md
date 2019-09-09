@@ -149,7 +149,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
     };
     ```
 
-## Create a new custom data action
+### Create a new custom data action
 
 To create a new custom data action, follow these steps.
 
