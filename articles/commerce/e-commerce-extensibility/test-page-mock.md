@@ -43,11 +43,11 @@ Page mock files are stored under the /src/pageMocks directory. They can be loade
 
 ## Create a new page mock
 
-To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as /src/pageMocks/campaignPage.json.
+To create a new page mock, create a blank .json file under the /src/pageMocks directory, such as **/src/pageMocks/campaignPage.json**.
 
 ## Example
 
-The following example shows a page mock that adds two instances of the same module to a page, but that uses different mock data for each instance.
+The following example shows a page mock that adds two instances of the same module to a page but uses different mock data for each instance.
 
 ```
 {
@@ -153,4 +153,4 @@ A node that is named **modules** lists the modules that are included inside the 
 ...
 ```
 
-In this example, each module has an **id** value (**ProductFeature\_\_0** and **ProductFeature\_\_1**). The **id** value represents the mock data that should be used for the module. The **id** value can be named anything, but requires a matching section in the **modules** section of the mock file, where you can configure different mock data for each instance of the module. In the example, notice that one module has an **imageAlignment** configuration setting of **left**, and the other module has an **imageAlignment** configuration setting of **right**.
+In this example, each module has an **id** value (**ProductFeature\_\_0** and **ProductFeature\_\_1**). The **id** value represents the mock data that should be used for the module. The **id** value can be named anything, but it requires a matching section in the **modules** section of the mock file, where you can configure different mock data for each instance of the module. In the example, notice that one module has an **imageAlignment** configuration setting of **left**, and the other module has an **imageAlignment** configuration setting of **right**.
