@@ -41,7 +41,7 @@ You cannot reconcile a bank statement with a bank account if any of the checks o
 
 3.  Select **Transactions** to open the **Account reconciliation** page.
 
-4.  For each transaction that is included on the bank statement, select the **Cleared** check box if the amount in Microsoft Dynamics 365 for Finance and Operations corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
+4.  For each transaction that is included on the bank statement, select the **Cleared** check box if the amount in Microsoft Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
     
 
     > [!NOTE]
