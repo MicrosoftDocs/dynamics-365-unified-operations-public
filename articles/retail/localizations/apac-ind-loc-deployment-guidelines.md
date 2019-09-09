@@ -223,7 +223,7 @@ The Generic Tax Engine component is a part of sealed extensions.
     > [!WARNING]
     > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+# [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
 1. Find the extensions configuration file for CRT:
 
@@ -270,7 +270,7 @@ The Generic Tax Engine component is a part of sealed extensions.
 > [!NOTE]
 > This step doesn't apply to this version.
 
-# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+# [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
 ``` xml
 <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
@@ -302,7 +302,7 @@ The Generic Tax Engine component is a part of sealed extensions.
 > [!NOTE]
 > This step doesn't apply to this version.
 
-# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+# [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
 ``` xml
 <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
@@ -334,7 +334,7 @@ Enable the Tax Registration Id extension.
 > [!NOTE]
 > This step doesn't apply to this version.
 
-# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+# [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
 1. Open the solution at RetailSdk\POS\ModernPOS.sln, and make sure that it can be compiled without errors. Also make sure that Modern POS can be run from Microsoft Visual Studio using the Run command. (Modern POS must not be customized. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
 
@@ -375,7 +375,7 @@ Enable the Tax Registration Id extension.
 > [!NOTE]
 > This step doesn't apply to this version.
 
-# [Retail 10.0.5 and later](#tab/retail-10-0-5)
+# [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
 1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it can be compiled without errors.
 2. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:
@@ -425,7 +425,7 @@ Follow these steps to create deployable packages that contain Retail components,
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.GenericTaxEngine" />
     ```
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdIndia" />
@@ -459,7 +459,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
@@ -489,7 +489,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     ``` xml
     <add source="assembly" value="Microsoft.Dynamics.Retail.RetailServer.TaxRegistrationIdIndia" />
@@ -552,7 +552,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     > [!NOTE]
     > This step doesn't apply to this version.
@@ -645,7 +645,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     > [!NOTE]
     > This step doesn't apply to this version.
@@ -674,7 +674,7 @@ Follow these steps to create deployable packages that contain Retail components,
     > [!NOTE]
     > This step doesn't apply to this version.
 
-    # [Retail 10.0.5 and later](#tab/retail-10-0-5)
+    # [Retail 10.0.6 and later](#tab/retail-10-0-5)
 
     Open **RetailSDK\POS\Extensions\extensions.json** and add the following lines:
 
