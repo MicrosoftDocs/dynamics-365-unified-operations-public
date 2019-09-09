@@ -1,14 +1,14 @@
 ---
  # required metadata
 
-title: Templates and layouts
-description: This topic describes how and when to use templates and layouts within the e-commerce authoring toolset.
-author: Nick Holman
-manager: Brendan Sullivan
-ms.date: 07/08/2019
+title: Work with preset layouts
+description: This topic describes how to work with preset layouts in Dynamics 365 Commerce.
+author: phinneyridge
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-commerce
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
@@ -16,19 +16,26 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: phinneyridge
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: niholman
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Working with preset layouts:
+# Work with preset layouts
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to work with preset layouts in Dynamics 365 Commerce.
+
+## Overview
 
 Please be sure to read the **[Preset vs. custom layouts](#preset-and-custom-layouts)** section before continuing with the steps below.
 
