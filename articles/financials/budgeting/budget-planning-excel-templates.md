@@ -66,7 +66,7 @@ The Excel template will contain all of the elements from the budget plan documen
 [![Example](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> To avoid potential issues with viewing and editing budget plan data using Excel, the same user should be logged into both Microsoft Dynamics 365 for Finance and Operations and the Microsoft Dynamics Office Add-in Data Connector.
+> To avoid potential issues with viewing and editing budget plan data using Excel, the same user should be logged into both Microsoft Dynamics 365 Finance and the Microsoft Dynamics Office Add-in Data Connector.
 
 ## Add a header to budget plan document template
 To add header information, select the top row in the Excel file and insert empty rows. Click **Design** in the **Data Connector** to add header fields to the Excel file.
