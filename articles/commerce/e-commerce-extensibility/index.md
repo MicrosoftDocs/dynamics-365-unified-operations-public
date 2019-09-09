@@ -171,6 +171,7 @@ Learn how to create or modify existing modules, data actions and themes to exten
   
 ## Develop Data Actions
 * [Data actions](data-actions.md)
+* [Create a custom data action](data-actions.md#create-a-new-custom-data-action)
 * [Page load data actions](page-load-data-action.md)
 * [Event based data actions](event-based-data-actions.md)
 * [Chaining data actions](chain-data-actions.md)
@@ -180,13 +181,13 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Core data actions](core-data-actions.md)
 * [Testing data actions with mocks](test-data-action-mocks.md)
 
-## Injecting script
-* [Script injectors](script-injector.md)
-
 ## Develop themes
 * [Theming overview](theming.md)
 * [Create a new theme](create-theme.md)
 * [Configure theme settings](configure-theme-settings.md)
+
+## Injecting script
+* [Script injectors](script-injector.md)
 
 ## TS-proxy
 * [TS-proxy API] (TBD)
