@@ -3318,6 +3318,8 @@
           items: 
           - name: Configure the Electronic reporting framework
             href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+          - name: Back up and recover ER templates
+            href: ../dev-itpro/analytics/er-backup-storage-templates.md?toc=/fin-and-ops/toc.json
           - name: Create configuration provides and mark them as active
             href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
         - name: Destinations
