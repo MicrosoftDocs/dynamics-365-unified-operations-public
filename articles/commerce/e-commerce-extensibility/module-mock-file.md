@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with module mock files
-description: This topic covers how to work with module mock files in Dynamics 365 Commerce.
+description: This topic covers how to work with module mock files in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,55 +33,55 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers how to work with module mock files in Dynamics 365 Commerce.
+This topic covers how to work with module mock files in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The default mock file located at `\src\MODULE_NAME\MOCKS\MODULE_NAME.json` is used to configure mock data for modules to help with local testing.
+Module mock files are used to configure mock data for modules. Therefore, they can help you do local testing. The default module mock file is located at \\src\\MODULE\_NAME\\MOCKS\\MODULE\_NAME.json.
 
-There are several config properties that set values for config fields set in the module definition file.  When modules are run on a production server, this data comes from the Dynamics CMS database as configured by the page authors instead of a mock file.
+Several configuration properties are used to set values for configuration fields that are set in the module definition file. When modules are run on a production server, this data comes from the Microsoft Dynamics content management system (CMS) database, as configured by the page authors, instead of a mock file.
 
 ### Example of a mock file
 
-The following example shows a sample mock file.
+Here is an example of a mock file.
 
 ```
 {
-  "id": "R1Module1",
-  "config": {
-    "imageAlignment": "left",
-    "productTitle": "Ethiopian Natural Limu",
-    "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
-    "productImage": {
-      "src" : "https://bit.ly/2LupO8u",
-      "altText" : "Ethiopian Natural Limu"
+    "id": "R1Module1",
+    "config": {
+        "imageAlignment": "left",
+        "productTitle": "Ethiopian Natural Limu",
+        "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast.",
+        "productImage": {
+            "src" : "https://bit.ly/2LupO8u",
+            "altText" : "Ethiopian Natural Limu"
+        },
+        "buttonText": "Buy Now",
+        "productIds": "22565430170"
     },
-    "buttonText": "Buy Now",
-    "productIds": "22565430170"
-  },
-  "typeName": "productFeature"
+    "typeName": "productFeature"
 }
 ```
 
-## Render a module with mock file data
+## Render a module by using mock file data
 
-To render a module with mock file data, run `yarn start` and navigate to https://localhost:4000/modules?type=MODULE_NAME.
+To render a module by using data from a mock file, run the **yarn start** command, and then open the following URL in a web browser: `https://localhost:4000/modules?type=MODULE_NAME`.
 
 ## Add mock files
 
-In addition to the default mock file, you may add multiple additional mock files to view and test different scenarios. 
+In addition to the default mock file, you can add multiple other mock files. In this way, you can view and test various scenarios. 
 
-To add a mock file, create a new json file in the mocks folder and give it a unique name (for example, `\src\MODULE_NAME\MOCKS\MODULE_NAME_TEST.json`).
+To add a mock file, create a new JavaScript Object Notation (JSON) file in the mocks folder, and give it a unique name (for example, **\\src\\MODULE\_NAME\\MOCKS\\MODULE\_NAME\_TEST.json**).
 
-To render a module using a different mock, run `yarn start` and navigate to https://localhost:4000/modules?type=MODULE_NAME:MODULE_NAME_TEST.
+To render a module by using a different mock file, run the **yarn start** command, and then open the following URL in a web browser: `https://localhost:4000/modules?type=MODULE_NAME:MODULE_NAME_TEST`.
 
-## Mocking actions
+## Action mocks
 
-Mocking actions in Commerce will replace the output of an action with the data specified in the loaded actionmock.json file. This is useful if you want to test your module without invoking the actual action.
+By mocking actions in Dynamics 365 Commerce, you can replace the output of an action with the data that is specified in the actionmock.json file that has been loaded. Action mocks are useful if you want to test your module without invoking the actual action.
 
-## Action mock structure
+### Action mock structure
 
-Action mocks should be created by the action developer and represent the expected output data of an action.
+Action mocks should represent the expected output data of an action. They should be created by the action developer.
 
 The following example shows the placement of the mock file.
 
@@ -96,7 +96,7 @@ my-package
 |___tslint.json
 ```
 
-The my-package.actionmock.json should be structured as follows.
+The following example shows how the my-package.actionmock.json file should be structured.
 
 ```json
 {
@@ -106,16 +106,16 @@ The my-package.actionmock.json should be structured as follows.
 }
 ```
 
-If no `CacheKey` is specified, all actions with the corresponding `CacheObjectType` will get the mock output.
+If no **CacheKey** value is specified, all actions with that have a corresponding **CacheObjectType** value get the mock output.
 
-## Use an action mock
+### Use an action mock
 
-To use the action mock in your module, include the action mock query string parameter, as in the following example.
+To use an action mock in your module, include the query string parameter for the action mock, as shown in the following example.
 
-```http://localhost:3000/modules?type=action-tester&actionMock=core-actions:get-categories```
+`http://localhost:3000/modules?type=action-tester&actionMock=core-actions:get-categories`
 
-The syntax of the query string parameter is as follows.
+Here is the syntax of the query string parameter.
 
-````{package-name}:{action-mock-file-name}````
+`{package-name}:{action-mock-file-name}`
 
-If no action mock file name is used, the package name will be used to search for the mock.
+If no action mock file name is specified, the package name is used to search for the mock.
