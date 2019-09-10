@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-Templates are a foundational element of the Dynamics 365 Commerce page model. Learning to leverage templates within your website is a critical initial step to maximize efficiency and consistency for site authoring workflows. Early decisions around template structure are important and can significantly affect cost and agility for daily, seasonal, and sitewide brand updates. Well-structured templates have other benefits such as improving sitewide SEO scores and minimizing bug counts. A good place to start with templates is to understand the functional benefits, differences, and hierarchy between 1) **templates** and 2) **layouts**, described in more detail below.
+Templates are a foundational element of the Dynamics 365 Commerce page model. Learning to leverage templates within your website is a critical initial step to maximize efficiency and consistency for site authoring workflows. Early decisions around template structure are important and can significantly affect cost and agility for daily, seasonal, and sitewide brand updates. Well-structured templates have other benefits such as improving sitewide SEO scores and minimizing bug counts. A good place to start with templates is to understand the functional benefits, differences, and hierarchy between templates and layouts, described in more detail below.
 
-The following diagram shows the page model hierarchy behind a rendered webpage
+The following diagram shows the page model hierarchy behind a rendered webpage.
 
 ![Page Model Diagram](../commerce/media/page-model-diagram.png)
 
@@ -43,9 +43,9 @@ The following diagram shows the page model hierarchy behind a rendered webpage
 
 | Entity        | Basic function                                               |
 | ------------- | ------------------------------------------------------------ |
-| Template      | Defines the module options and basic scaffolding for a set of layouts and page instances. |
-| Layout        | Defines the final module selection and arrangement for a page or set of pages. |
-| Page instance | Defines the data and content for a specific page.        |
+| Template      | Defines the module options and basic scaffolding for a set of layouts and page instances |
+| Layout        | Defines the final module selection and arrangement for a page or set of pages |
+| Page instance | Defines the data and content for a specific page        |
 
 ## Templates
 
@@ -70,6 +70,8 @@ A basic template example could be configured and described as follows.
 
 The example above describes a simple structure and set of options for downstream content authors. Notice that certain page parts (the header) are fully defined and locked within the template and can't be changed by downstream authors. Other parts (the body) are left for downstream authors to define within chosen guidelines (between the minimum of one configured module to the maximum of ten configured modules from the set of allowed modules). And other parts (the footer) are defaulted in the template but allowed to be overridden by downstream authors. The level of constraint vs. flexibility for child page and layout authors is 100% configurable using templates. Determining this balance is an important upfront step for site and brand administrators and will affect how page elements are centrally updated (locked within the template) or left to individual child levels down the page hierarchy.
 
+To get started using templates, [Work with templates](work-with-templates.md).
+
 ## Layouts
 
 Where a template defines all of the possible combinations of modules allowed for a page, a layout is an explicit selection of one of those combinations. Pages then sit below a layout in the hierarchy and define the localized content for the modules selected within the layout. 
@@ -91,6 +93,8 @@ efficient site structure that saves cost, scales, and produces better results as
 
 ### Preset and custom layouts
 
+The following diagram shows preset and custom layout scenarios.
+
 ![Template Figure 1](../commerce/media/template-figure1.png)
 
 Layouts can have one of two forms within your site: *preset* or *custom*.  
@@ -100,4 +104,6 @@ Layouts can have one of two forms within your site: *preset* or *custom*.
 
 Editing preset vs. custom layouts occur in different surface areas within the authoring toolset. Custom layouts are edited directly within the page editor since they have no dependencies on other pages. In this scenario, the existence of a layout is mostly
 transparent to the user and is only exposed in page-level properties and through layout option actions. Preset layouts, because changes to them may affect many pages, must be edited in the layout editor where publish actions consider the full downstream impact to (what could be many) child pages.
+
+To get started using preset layouts, see [Work with preset layouts](work-with-layouts.md).
 
