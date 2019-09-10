@@ -44,6 +44,9 @@ After you try to import a bank statement file, go to the Data management job his
 ## What are the differences?
 Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
 
+## Time zone differences on imported bank statements
+The date-time values in the import file can differe from the date-time values that are shown in Finance and Operations. To prevent this discrepancy, enter a time zone preference on the **Configure data sources** page. See [Set up the advanced bank reconciliation import process](set-up-advanced-bank-reconciliation-import-process.md) for more information about entering a time zone preference.
+
 ## Transformations
 Typically, the change must be made in one of three transformations. Each transformation is written for a specific standard.
 
