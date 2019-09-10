@@ -83,10 +83,10 @@ To create a new template, do the following.
 1. Enter a name and description for the template. This will be shown to authors during new page creation workflows, so enter metadata that would be useful to page authors (for example, "Use this template to create general marketing pages"). This metadata can always be edited later.
 1. Click "**OK**" to create the new template and navigate into the template editor. The template editor will show an outline tree on the left, and a property pane on the right.
 1. Expand the nodes in the outline and select the **HTML Head** slot. If there are no modules yet in this slot, click the ellipsis menu (**...**) and select **Add Module**.
-6. In the **Add Module** dialog box, select **Default page summary**, then click **OK**.
-7. With the new module selected in the outline, enter any default settings in the property pane that you want to automatically populate for all child pages of the template. If you don't want any defaults, leave the values blank.
-8. In the outline tree, select the **Body** slot, click the ellipsis button (**...**), then select **Add Module**.
-9. Select a page container module (there may only be one option) and click **OK**.
+1. In the **Add Module** dialog box, select **Default page summary**, then click **OK**.
+1. With the new module selected in the outline, enter any default settings in the property pane that you want to automatically populate for all child pages of the template. If you don't want any defaults, leave the values blank.
+1. In the outline tree, select the **Body** slot, click the ellipsis button (**...**), then select **Add Module**.
+1. Select a page container module (there may only be one option) and click **OK**.
 
 Under this new page container module you will see a new set of slots (Header, Main, etc.). This is where you can add and configure module options that are available to authors when creating pages from this template. If you add no modules to a slot, then the default behavior is to allow all available modules types for that slot.
 
@@ -97,9 +97,9 @@ The template is now technically valid, and can be saved, checked in, and used fo
 If your site already has a header fragment, to add a header and footer to a template, do the following.
 
 1. In the outline tree, expand the **Body** slot and its child page module.
-2. Select **Header** slot.
-3. In the header slot, click the ellipsis button (**...**), then select **Add Fragment**.
-4. Search for and select your site's header fragment, then click **OK**.
+1. Select **Header** slot.
+1. In the header slot, click the ellipsis button (**...**), then select **Add Fragment**.
+1. Search for and select your site's header fragment, then click **OK**.
 
 All pages that use this template will now automatically inherit this header fragment.
 
