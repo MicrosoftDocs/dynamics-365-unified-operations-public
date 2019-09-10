@@ -51,26 +51,22 @@ Footer modules support heading and width properties similar to most containers. 
 
 ## Author a footer module
 
-1. Create a page fragment with a footer module.
-
-1. Populate the footer module slots with the the desired modules (for example, "footer items," "back to top").
-
-1. In the footer category, add a footer items module, then add a heading to it.
-
-1. In the footer category, add multiple footer items with links.
-
-1. Repeat for each footer category.
-
-1. Save the page fragment.
-
-1. Check in and publish.
+1. In the navigation pane, click **Fragments**, then click **New Page Fragment**.
+1. In the New Page Fragment dialog box, select the footer module, enter a name for the page fragment, then click **OK**.
+1. In the outline tree pane, click the footer module ellipsis button (**...**), then select **Add Module**.
+1. In the Add Module dialog box, select the footer category module, then click **OK**.
+1. In the outline tree pane, click the footer category module ellipsis button (**...**), then select **Add Module**.
+1. In the Add Module dialog box, select the footer item module, then click **OK**.
+1. In the outline tree, select the footer item module. In the right-side properties pane, configure the desired heading, link and link text, and image as needed.
+1. To add additional footer items, repeat steps 5-7 as needed.
+1. To add a "back to top" link to your footer, click the footer category module ellipsis button (**...**), then select **Add Module**.
+1. In the Add Module dialog box, select the back to top module, then click **OK**.
+1. In the outline tree pane, select the back to top module. In the right-side properties pane, configure the back to top module as needed.
+1. Save, check in, and publish the page fragment.
 
 On every page template created for the site, do the following.
 
-1. In the **Main** slot of the default page, add the footer fragment to the footer module. 
-
-1. Save the template.
-
-1. Check in and publish the template.
+1. In the **Main** slot of the default page, add the footer fragment you created to the footer module. 
+1. Save, check in, and publish the template.
 
 This will ensure that every page renders the footer.
