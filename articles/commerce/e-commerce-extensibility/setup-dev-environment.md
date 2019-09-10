@@ -90,24 +90,24 @@ To download the SDK dependency packages, follow these steps.
 
     This command can take several minutes to run.
 
-## Run the app
+## Run your Node app
 
-To run the app, follow these steps.
+To run your Node app, follow these steps.
 
-1. To open the app, run the **yarn start** command.
+1. Run the **yarn start** command to open the Node app.
 
     ```
     c:\repos\MyEcommerceSite>yarn start
     ```
 
-    This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (**4000**, by default).
+This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (**4000**, by default).
 
-2. To test that the app is running correctly, open the following URLs in a web browser:
+2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
     * `https://localhost:4000/version`
     * `https://localhost:4000/_sdk/allmodules`
 
-3. To close the app, at the command prompt, press **Ctrl+C** two times.
+3. To close the Node app, at the command prompt, press **Ctrl+C** two times.
 
 ## Create a new module
 
@@ -135,7 +135,7 @@ You can find the hero module under \\src\\modules\\heroExtended.
 
 To preview a specific module (for example, campaignBanner) in a local web browser, follow these steps.
 
-1. At a command prompt, open the app by running the **yarn start** command.
+1. At a command prompt, open your Node app by running the **yarn start** command.
 
     ```
     c:\repos\MyEcommerceSite>yarn start
