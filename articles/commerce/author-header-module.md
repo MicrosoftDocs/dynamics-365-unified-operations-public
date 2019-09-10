@@ -47,7 +47,7 @@ The header module supports the heading and width property, similar to generic co
 
 The header container has multiple slots, including informational message, navigation menu, logo, search bar, cart icon, wish list icon, and account information. Each slot supports a specific set of modules.
 
-## Modules available in a header
+## Modules available in a header module
 
 The following modules can be used in the header.
 
