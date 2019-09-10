@@ -128,7 +128,7 @@ The following example shows a module definition file that includes data action r
 ```
 
 * **"path"** – The path of the data action. The path can be a local path or the path of an action in another package (for example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**).
-* **"runOn"** – A setting that controls when the data action is run. Valid values are **server** or **client**.
+* **"runOn"** – A setting that controls where the data action is run. Valid values are **server** or **client**.
 
 After the data action is registered, the module automatically runs it on either the server or the client, and binds the result to **testResult** in the data.ts file.
 
@@ -154,7 +154,7 @@ The **config** section of the module definition file contains a list of all the 
 * **"default"** – The default value that is set if no value is set in the authoring tools.
 * **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can be configured only at the site level. In this way, the value can be set one time for the whole site.
 * **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
-* **"required"** – A flag that specifies whether a property must be set on the module. If a required property isn't set, the rendering of the module and tooling will show an error.
+* **"required"** – A flag that specifies whether a property must be set on the module. If a required property isn't set, an error is shown when the module is rendered. An error is also shown in the authoring tools.
 * **"resourceKey"** – This field is used for localization resources.
 
 The following example shows how the various supported data types are used.
