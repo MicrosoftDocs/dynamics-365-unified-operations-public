@@ -2,7 +2,7 @@
 # required metadata
 
 title: Attract integration with LinkedIn FAQ
-description: This topic answers questions that you might have about integration between LinkedIn and Microsoft Dynamics 365 for Talent - Attract.
+description: This topic answers questions that you might have about integration between LinkedIn and Microsoft Dynamics 365  Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn is the world's largest online professional network. Microsoft Dynamics for Talent: Attract integrates with LinkedIn to give you access to the world's top talent. Attract lets you post jobs directly to LinkedIn, and it also lets you draw candidate information from LinkedIn into Attract.
+LinkedIn is the world's largest online professional network. Microsoft Dynamics Talent: Attract integrates with LinkedIn to give you access to the world's top talent. Attract lets you post jobs directly to LinkedIn, and it also lets you draw candidate information from LinkedIn into Attract.
 
 ## For recruiters and hiring managers
 
