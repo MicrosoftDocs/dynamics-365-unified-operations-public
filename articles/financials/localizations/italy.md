@@ -42,5 +42,6 @@ This topic provides links to documentation resources for Italy.
 - [Packing slip date verification on invoices](emea-ita-packing-slip-date-verification-on-invoice.md)
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)
 - [Sales tax books](emea-ita-fiscal-books.md)
+- [VAT management and reporting by tax point date](emea-ita-vat-management.md)
 - [Split payment for invoices issued to the Public Administration](emea-ita-split-payment-invoices-issued-public-administration.md)
 - [Withholding tax](emea-ita-withholding-tax.md)
