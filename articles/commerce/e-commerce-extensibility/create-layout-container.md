@@ -125,50 +125,70 @@ The following example shows a sample page mock, campaignContainerMock.json, that
 {
     "exception": null,
     "pageRoot": {
-        "modules": {
-            "primary": [{
-                "modules": {
-                    "slot1": [{ "id": "ProductFeature__0", "typeName": "productFeature" }],
-                    "slot2": [{ "id": "ProductFeature__1", "typeName": "productFeature" }]
+      "modules": {
+        "primary": [{
+            "modules": {
+                "slot1": [{ "id": "ProductFeature__1", "typeName": "productFeature" }],
+                "slot2": [{ "id": "ProductFeature__0", "typeName": "productFeature" }]
                 },
-                "id": "primaryArea__0",
-                "typeName": "campaignContainer"
-            }]  
-        },
-        "id": "default-page_0",
-        "typeName": "default-page"
+            "id": "primaryArea__0",
+            "typeName": "myContainer"
+        }]  
+      },
+      "id": "default-page_0",
+      "typeName": "default-page"
     },
     "modules": {
-        "default-page_0": {
-            "id": "default-page_0",
-            "typeName": "default-page"
-        },
-        "primaryArea__0": {
-            "id": "primaryArea__0",
-            "typeName": "campaignContainer"
-        },
-        "ProductFeature__0": {
-            "config": {
-                "imageAlignment": "left",
-                "productTitle": "Men's Grand Wingtip Shoe",
-                "productDetails": "Genuine leather crafted with perfection.",
-                "buttonText": "Buy Now"
+      "default-page_0": {
+        "id": "default-page_0",
+        "typeName": "default-page"
+      },
+      "primaryArea__0": {
+        "id": "primaryArea__0",
+        "typeName": "myContainer"
+      },
+      "ProductFeature__0": {
+        "config": {
+            "imageAlignment": "left",
+            "productTitle": "Ethiopian Natural Limu",
+            "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
+            "productImage": {
+              "src" : "https://bit.ly/2LupO8u",
+              "altText" : "Ethiopian Natural Limu"
             },
-            "id": "ProductFeature__0",
-            "typeName": "productFeature"
+            "buttonText": "Buy Now"
         },
-        "ProductFeature__1": {
-            "config": {
-                "imageAlignment": "right",
-                "productTitle": "Men's Grand Wingtip Shoe",
-                "productDetails": "Genuine leather crafted with perfection.",
-                "buttonText": "Buy Now"
-            },
-            "id": "ProductFeature__1",
-            "typeName": "productFeature"
-        }
+        "id": "ProductFeature__0",
+        "typeName": "productFeature"
+      },
+      "ProductFeature__1": {
+        "config": {
+            "imageAlignment": "right",
+            "productIds": "22565430170",
+            "buttonText": "Buy Now"
+        },
+        "id": "ProductFeature__1",
+        "typeName": "productFeature"
+      }
     },
     "renderingContext": {
+        "gridSettings":{
+            "xs":{
+                "w":767
+            },
+            "sm":{
+                "w":991
+            },
+            "md":{
+                "w":1199
+            },
+            "lg":{
+                "w":1599
+            },
+            "xl":{
+                "w":1600
+            }
+        },        
         "staticContext": {
             "staticCdnUrl": "/_scnr/"
         },
