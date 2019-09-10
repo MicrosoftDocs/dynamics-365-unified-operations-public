@@ -58,32 +58,30 @@ When an order is placed during checkout, the order confirmation number and custo
 
 **Marketing**: The marketing module can add marketing content to the order confirmation page.
 
-## Authoring order confirmation page
+## Author an order confirmation page module
 
-1. Create a template for Order confirmation page “Order confirmation template”
+1. Create a new page template named "order confirmation template."
 
-2. To Main Slot of the Default page, add Order confirmation module and Recommendations.
+1. In the **Main** slot of the default page, add an order confirmation module. Then, add a recommendations module to the new module.
 
-3. Save and Preview. Order confirmation module will not render since it needs context of the order confirmation id.
+1. Save and preview the template. The order confirmation module will not render since it needs the context of the order confirmation ID.
 
-4. Check-in and Publish.
+1. Check-in and publish the template.
 
-5. Create a page with the “Order confirmation template” and call it “Order confirmation page”
+1. Create a new page named "order confirmation page" using the order confirmation template you created.
 
-6. Add the Default Page on the page outline
+1. Add the default page to the page outline.
 
-7. In the Header of the Main slot, add the Header fragment.
+1. In the **Header** slot, add a header fragment.
 
-8. In the Footer of the Main slot, add the Footer fragment.
+1. In the **Footer** slot, add a footer fragment.
 
-9. In the Body of the Main slot add the order confirmation module
+1. In the **Main** slot, add an order confirmation module.
 
-10. In the property panel of the order confirmation module, add Heading “Order confirmation”
+1. In the property pane of the order confirmation module, add the heading "Order confirmation."
 
-11. Below the Order confirmation module, add Recommendations – New, Best Selling.
+1. Below the order confirmation module, add a recommendations module.
 
-12. Save and preview. 
+1. Save, preview, check in, and publish the page.
 
-13. Check-in and Publish
 
-14. Any other marketing module can be added to this page if needed. 
