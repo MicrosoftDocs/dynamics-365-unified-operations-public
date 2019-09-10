@@ -73,7 +73,7 @@ To add a feature module to a new page and set the required properties, do the fo
 
 1. Create a new page named "feature page" with the feature template you created.
 
-1. In the **Main** slot of the new page, click the ellipsis button (**...**) and select **Add Module**. The Add Module dialog box appears.
+1. In the **Main** slot of the default page, click the ellipsis button (**...**) and select **Add Module**. The Add Module dialog box appears.
 
 1. Under **Select Modules**, select a feature module and click **OK**.
 
