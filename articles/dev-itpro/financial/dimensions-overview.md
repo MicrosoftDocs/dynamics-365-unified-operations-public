@@ -56,6 +56,7 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
     [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)
 
 3. Compile the project, and then synchronize it with the database. 
+  *NOTE: You must leave the object names with the extension of .DimensionIntegration
 
     ![8](./media/8-300x260.png) 
 
