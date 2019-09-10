@@ -1,45 +1,73 @@
+---
+# required metadata
+
+title: Tax point date (Date of VAT register)
+description: This topic provides information about how to indicate when the tax date is different from the transaction date regarding VAT registration.
+author: LizaGolub
+manager: AnnBe
+ms.date: 09/10/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: United Kingdom
+# ms.search.industry: 
+ms.author: LizaGolub
+ms.search.validFrom: 2019-09-06
+ms.dyn365.ops.version: AX 10.0.6
+
+---
+
 # Tax point date (Date of VAT register)
 
-The tax point date for a transaction is the date the transaction takes place for VAT purposes. Use **Date of VAT register** feature when there is a need to specify tax point date which differs from the transaction date.  For specifying the tax point date, **Date of VAT register** field must be used.
+[!include [banner](../includes/banner.md)]
+
+The **tax point date** for a transaction is the date on which the transaction occurs for VAT purposes. Use the **Date of VAT register** feature when the tax point date is different from the transaction date and it must be pointed out. To specify the tax point date, use the **Date of VAT register** field.
 
 The **Date of VAT register** field is shared globally and can be enabled in legal entities with primary address in any country.
 
-## “Date of VAT register” feature activating
+## Active the Date of VAT register feature
 
-To switch on this functionality **Date of VAT register** feature must be enabled in the **Feature management** workspace:
+The **Date of VAT register** feature is enabled in the **Feature management** workspace.
 
 ![date-of-vat-activating](./media/date-of-vat-activating.png)
 
-When **Date of VAT register** feature is enabled in the **Feature management** workspace, user can define additionally for tax transactions date of tax point by using **Date of VAT register** field in all legal entities through the system.
-**Date of VAT register** field appears on more than 20 pages. These pages include journals, sales orders, purchase orders, free-text invoices, vendor invoice journals, and project invoices. When you update or post the documents, all taxes are posted by using the corresponding date of the VAT register, and the date is included on pages such as the customer and vendor invoice journals pages.
+After the feature is enabled, you can also define tax point transactions dates by using the **Date of VAT register** field in all of the legal entities in your application.
 
-**Date of VAT register** field appears also in the following reports:
+The **Date of VAT register** field appears on more than 20 pages. These pages include journals, sales orders, purchase orders, free-text invoices, vendor invoice journals, and project invoices. When you update or post the documents, all taxes are posted by using the corresponding date of the VAT register. The date is included on pages such as the Customer and Vendor invoice journals pages.
 
-•	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Specification**
+The **Date of VAT register** field is also included in the following reports:
 
-•	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax transactions**
+- **Specification** report (**Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Specification**)
+- **Sales tax transactions** report (**Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions**)
+- **Sales tax transactions - details** report (**Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax transactions – details**)
+- **Sales tax specification by ledger transaction** report (**Tax** \> **Inquiries and reports** \> **Sales tax reports** \> **Sales tax specification by ledger transaction**)
 
-•	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax transactions – details**
+## Auto-fill the **Date of VAT register** field
 
-•	**Tax** > **Inquiries and reports** > **Sales tax reports** > **Sales tax specification by ledger transaction**
-
-## Auto-filling of “Date of VAT register” value
-
-**Date of VAT register** feature enables possibility to select a method of auto-filling of **Date of VAT register** field via the **Date of VAT register filling** parameter on the **Sales tax groups page**:
+You can use the functionality in the **Date of VAT register** feature to auto-fill the **Date of VAT register** field. To set this up, set the **Date of VAT register filling** parameter on the **Sales tax groups** page.
 
 ![date-of-vat-filling](./media/date-of-vat-filling.png)
 
-This option fills in automatically **Date of VAT register** field during invoice creation. The following methods are available to select:
+When you create an invoice, the **Date of VAT register** field is automatically filled in. One of the following methods will be added based on the selection in the **Date of VAT register filling** field:
 
-•	**Manually** – no value will be defined for **Date of VAT register** field. User can manually define the value before invoice posting.
+- **Manually** – No value will be defined. You can manually define the value before you post the invoice.
+- **Document date** – The value will be defined automatically on date that the invoice is updated.
+- **Posting date** - The value will be the date that the invoice is posted.
+- **Last delivery date** - The date of the last packing slip (for a sales order) or product receipt (for a purchase order) for the invoice.
 
-•	**Document date** – value of **Date of VAT register** field will be defined automatically on document date change.
+## Filling the **Date of VAT register** field after the invoice is posted
 
-•	**Posting date** - value of **Date of VAT register** field will be defined automatically on posting date change.
-
-•	**Last delivery date** - the date of last packing slip (for sales order) or product receipt (for purchase order) will be populated as **Date of VAT register** of the invoice.
-
-## “Date of VAT register” filling after invoice posting
-
-If for some reason an invoice is posted with empty **Date of VAT register** field, it is still possible to fill it in. To do so, open **Tax** > **Periodic tasks** > **VAT register transactions** page. This page represents sales tax transactions with empty **Date of VAT register** field. You may select one record for update or a set of records by using a **Filter** function. To define the value for **Date of VAT register** field of the selected record, click **Date of VAT register** button on the **Action pane** of the page and specify the value in the **Date of VAT register** field of the dialog. Updated record will be automatically filtered out from the list of records on the **VAT register transactions** page.
+If for some reason an invoice is posted and the **Date of VAT register** field is empty, it is still possible to fill it in. To do this, go to **Tax** \> **Periodic tasks** \> **VAT register transactions**. The **VAT register transactions** page represents sales tax transactions with an empty **Date of VAT register** field. Select one record to update, or select multiple records by using the filter function. To define the value for **Date of VAT register** field, select **Date of VAT register**, on the **Action pane**, specify the value in the **Date of VAT register** field of the dialog. The updated records will be automatically filtered out from the list of records on the **VAT register transactions** page.
 
