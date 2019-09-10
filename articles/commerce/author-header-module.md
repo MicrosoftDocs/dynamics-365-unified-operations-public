@@ -2,7 +2,7 @@
 # required metadata
 
 title: Author a header module
-description: This topic covers header modules and how to author them in Dynamics 365 for Commerce.
+description: This topic covers header modules and how to author them in Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
 ms.date: 10/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
-This topic covers header modules and how to author them in Dynamics 365 for Commerce.
+This topic covers header modules and how to author them in Dynamics 365 Commerce.
 
 ## Overview
 
