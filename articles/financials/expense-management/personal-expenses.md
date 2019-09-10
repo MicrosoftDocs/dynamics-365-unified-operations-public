@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personal expenses on an expense report
-description: This topic explains the two methods for handling a worker's personal expenses in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains the two methods for handling a worker's personal expenses in Microsoft Dynamics 365 Finance.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 During business travel, workers might sometimes charge personal expenses to their corporate credit cards. If you don't define a process for handling personal expenses, the approval process for expense reports might be disrupted when workers submit their itemized expense reports. 
 
-In Microsoft Dynamics 365 for Finance and Operations, there are two methods for handling a worker's personal expenses:
+There are two methods for handling a worker's personal expenses:
 
 - **Paid by employee** – Your organization doesn't pay personal expenses that appear on the bill for the corporate credit card. Instead, it creates a 
 report that shows personal expenses together with the corporate expenses that were charged to the corporate credit card.
