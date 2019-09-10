@@ -125,7 +125,7 @@ The dimension classification hierarchy type is used to define policies and for r
 Cost accounting supports integration of data from source systems via a set of data connectors. The following data connectors are available:
 
 -  Imported transactions (pre-configured)
--  Dynamics 365 for Finance and Operations (pre-configured)
+-  Dynamics 365 Finance (pre-configured)
 -  Dynamics AX (configuration required)
 
 **Note:** The data connector Imported transactions is based on data entities.
@@ -134,7 +134,7 @@ Cost accounting supports integration of data from source systems via a set of da
 
 Most source systems can provide data that matches one or more data sources in Cost accounting. To align data from the source systems with the data source in Cost accounting, a data provider needs to be configured. The following table lists the availability of data providers per data connector and data source.
 
-|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 for Finance and Operations data connector**  | **Dynamics AX data connector**  |
+|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 Finance data connector**  | **Dynamics AX data connector**  |
 |---|---|---|---|
 | Cost element dimension members  |  Yes | Yes  | Yes  |
 |  Cost object dimension members |  Yes | Yes  | Yes  |
