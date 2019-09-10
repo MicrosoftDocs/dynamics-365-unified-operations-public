@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Test modules by using data action mocks
-description: This topic describes how to test modules by using data action mocks.
+title: Test data actions with mocks
+description: This topic describes how to test data actions with mock data.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,20 +28,21 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Test modules by using data action mocks
+# Test data actions with mocks
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test modules by using data action mocks.
+This topic describes how to test data actions with mock data.
 
 ## Overview
 
-To test a module without invoking the actual actions, you can create a data action mock that replaces the output of an action with the data that is specified in the loaded actionmock.json file. 
+
+By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. Action mocks are useful if you want to test your module without invoking the actual action.
 
 ## Action mock structure
 
-Action mocks should be created by the action developer. They should represent the expected output data of an action.
+Action mocks represent the expected output data of an action. They should be created by the action developer.
 
 The following example shows the placement of the action mock file.
 
@@ -71,9 +72,7 @@ The following example shows how the MODULE\_NAMEMock.actionmock.json file should
     "CacheObjectType": "MyCacheObjectType",
     "CacheKey": "MyCacheKey",
     "Mock": {
-        "result" : {
-            "foo": "bar" 
-        }
+        "foo": "bar"      
     }
 }
 ```
@@ -90,19 +89,17 @@ The following example shows a data action mock that returns product data.
         "CacheObjectType": "Product",
         "CacheKey": "*",
         "Mock": {
-            "result" : {
-                "RecordId": 22565423455,
-                "ItemId": "2101",
-                "Name": "Men's Wingtip Shoe",
-                "Description": "Genuine leather crafted to perfection.",
-                "ProductTypeValue": 3,
-                "DefaultUnitOfMeasure": "Ea",
-                "BasePrice": 129,
-                "Price": 129,
-                "AdjustedPrice": 103.2,
-                "MasterProductId": null,
-                "PrimaryImageUrl": "https://renderingdynrush73-1e0adbc991eb8c2f0ret.cloud.retail.dynamics.com/MediaServer/Products/2101_000_001.png"
-            }
+            "RecordId": 22565423455,
+            "ItemId": "2101",
+            "Name": "Men's Wingtip Shoe",
+            "Description": "Genuine leather crafted to perfection.",
+            "ProductTypeValue": 3,
+            "DefaultUnitOfMeasure": "Ea",
+            "BasePrice": 129,
+            "Price": 129,
+            "AdjustedPrice": 103.2,
+            "MasterProductId": null,
+            "PrimaryImageUrl": "https://renderingdynrush73-1e0adbc991eb8c2f0ret.cloud.retail.dynamics.com/MediaServer/Products/2101_000_001.png"            
         }
     }
 ]
@@ -113,8 +110,12 @@ The following example shows a data action mock that returns product data.
 
 ## Use an action mock in a preview
 
-To use an action mock in your preview, include the **actionMock=MODULE\_NAME:MOCK\_FILE\_NAME** query string parameter. Replace **MODULE\_NAME** with the name of the module and **MOCK\_FILE\_NAME** with the file name of the action mock file that you created earlier.
+To use an action mock in your module preview, include the query string parameter for the action mock **actionMock=MODULE_NAME:MOCK_FILE_NAME**, as shown in the following example.
 
-`https://localhost:4000/modules?type=MODULE_NAME&actionMock=MODULE_NAME:MODULE_NAMEMock`
+`https://localhost:4000/modules?type=productFeature&actionMock=productFeature:myModuleMock`
 
-If no mock file name is specified, the package name is used to search for a mock.
+Here is the syntax of the query string parameter.
+
+`{module-name}:{action-mock-file-name}`
+
+If no action mock file name is specified, the package name is used to search for the mock.
