@@ -43,7 +43,7 @@ The footer module is special container that is used for hosting the modules that
 
 Footer modules support heading and width properties similar to most containers, and also support adding multiple footer category slots. Each footer category module added will render as a column in the footer module.
 
-## Modules available in Footer
+## Modules available in a footer module
 
 **Footer items:** A footer items module can contain a heading, an image, or a link. A heading can be used alone or in combination with an image and link. Each link in the footer can be configured as a link with text (for example, Contact Us, Privacy, etc.) or a link with text and an image (for example, social media links).
 
