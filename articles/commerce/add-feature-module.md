@@ -61,7 +61,7 @@ A feature module can used on:
 |  Image placement  | Right<br />Left<br />Top<br />Bottom                         | Defines the position of the image relative to the text. For example, if Right is chosen, the image will appear on right of the text. |
 | Image column size | Values from 1-12                                             | The size of the image relative to the text, in columns. There are 12 columns on a page. The image and text will have equal size (6 x 6) by default, but this can be adjusted as needed. |
 
-## Add a feature module to a page 
+## Add a feature module to a new page 
 
 To add a feature module to a new page and set the required properties, do the following. 
 
