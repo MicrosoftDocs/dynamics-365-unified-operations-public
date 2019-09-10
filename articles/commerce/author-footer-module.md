@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
 # Author a footer module 
