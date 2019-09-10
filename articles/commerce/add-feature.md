@@ -38,60 +38,53 @@ This topic covers feature module modules and how to add them to site pages in Dy
 
 ## Overview
 
-The Feature module is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
+A feature module is used for marketing products or promotions using a combination of image and text. For example, a retailer can add a feature module to a product details page to highlight the features of the product. 
 
-Feature module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context on any other modules in the page. Technically this allows Feature to be placed on any page where a C1 wants to promote content.
+The feature module is driven by CMS data and is a standalone module that does not depend on any other modules on the page. Feature modules can be placed on any site page where a retailer wants to market or promote something (products, sales, features, etc.).
 
-## e-Commerce scenarios
+## Examples of feature module uses in e-Commerce
 
+A feature module can used on:
 
-- Feature is used on the product details page to showcase the product features
-- Feature can be used on the home page to promote products
-- Feature can be used on a category page to highlight the category of products
+- A product details page to showcase product features.
+- The home page to promote products.
+- A category page to highlight a category of products.
 
 ## Feature module properties
 
-|   Property name   | Values                                                       | Property Description                                         |
+|   Property name   | Values                                                       | Property description                                         |
 | :---------------: | :----------------------------------------------------------- | :----------------------------------------------------------- |
-|       Image       | Image file                                                   | This is the image that will be used for marketing the product or   promotion. An image can uploaded to the image gallery or an existing   image can be used. |
-|      Heading      | Heading text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | A Feature has a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements. |
-|     Paragraph     | Paragraph text                                               | Feature supports paragraph in rich text format. Some basic rich text   functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page theme applied on the module. |
-|       Link        | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Feature can have one or more call to   actions. E.g. “Shop Now” which redirects the shopper to the link. If a link   is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for   accessibilty.<br />If user wants to open the link in a new   tab, that can be configured. |
-|  Image Placement  | Right<br />Left<br />Top<br />Bottom                         | Image placement defines the position of the image relative to the text. If Right is chosen, image will be on right of the text. Four different settings are available to configure. |
-| Image Column size | Values from 1-12                                             | This defines the size of the image relative to the text. In the   default experience image and text will have equal size i.e value = 6  (i.e.12 columns total on the page). This can   be configured as needed. |
+|       Image       | Image file                                                   | The image that will be used for marketing the product or promotion. The image can uploaded to the image gallery, or an existing image can be used. |
+|      Heading      | Heading text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | The heading text and heading tag. The default heading tag is H2 but can be changed to meet accessibility requirements. |
+|     Paragraph     | Paragraph text                                               | Paragraph text in rich text format. Basic rich text functionality such as bold, underline, italics, and hyperlinks are supported. Some of this functionality may be overridden by the page theme applied to the module. |
+|       Link        | Link text<br />Link url<br />Aria label<br />Open link in new tab | Feature modules support one or more "call to action" links. If a link is added, link text, an URL, and an ARIA label are required.<br />ARIA labels should be descriptive for   accessibility.<br />Links can be configured to open in a new tab. |
+|  Image Placement  | Right<br />Left<br />Top<br />Bottom                         | Defines the position of the image relative to the text. For example, if Right is chosen, the image will appear on right of the text. |
+| Image Column size | Values from 1-12                                             | The size of the image relative to the text, in columns. There are 12 columns on a page. The image and text will have equal size (6 x 6) by default, but this can be adjusted as needed. |
 
+## Add a feature module to a page 
 
+To add a Feature module to a new page and set the required properties, do the following. 
 
-## Creating a page with a Feature module
+1. Go to **Templates** and create a new page template named "feature template."
 
-This section explains how to add a Feature module to a new page and set the required properties. Refer to Templates and Pages for more details on these actions.
+1. In the **Main** slot the default page, add a feature module. 
 
-1. We need to first create a template. In tooling, create a new page template “Feature template”.
+1. Check in and publish the template. 
 
-2. In the **Main** slot the Default Page,, add a Feature module. A Feature can be placed directly on the page or within a container <link>. Multiple Feature modules can be placed within a Carousel<link>.
+1. Create a new page named "feature page" with the feature template you created.
 
-3. Check-in and Publish. 
+1. In the **Main** slot of the new page, click the ellipsis button (**...**) and select **Add Module**. The Add Module dialog box appears.
 
-4. Now create a new page with the “Feature template” and call it “Feature page”
+1. Under **Select Modules**, select a feature module and click **OK**.
 
-5. In the page outline, add Default page. To the Main slot, add Feature module.
+1. Select the feature module in the outline tree. In the right-side properties page, click **Add an image**. Select an existing image or upload a new asset to add. 
 
-6. Expand the Feature properties and add Image. rom the image picker, choose an existing image or upload a new asset. 
+1. Click **Heading**. In the Heading dialog box, add the heading text, select the heading level, then click **OK**.
 
-7. Add a Heading, change the default text, size and Heading tag as needed
+1. Under **Rich Text**, add text as needed.
 
-8. Add a Paragraph, change the default text as needed
+1. Click **Add Action Link**. In the Action Link dialog box, add link text, a link URL, and an ARIA label for the link, then click **OK**.
 
-9. Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
+1. Save the page and preview the changes.
 
-10. Save the page and preview the changes.
-
-11. Other properties can be changed to achieve a more customized Feature – Image placement, Image column size etc.
-
-12. Check-in and Publish.
-
-    
-
-See Enriching a product details page for details on how to use Feature to enrich a product details page.
-
-See Enriching a category page for details on how use Feature to enrich a category page. 
+1. Check in and publish the page.
