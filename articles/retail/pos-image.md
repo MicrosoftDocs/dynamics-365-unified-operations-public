@@ -1,7 +1,7 @@
 ---
 
 # required metadata
-title: Using client images in POS
+title: Use client images in POS
 description: This topic is for people who implement functionality related to POS client image management in a retail environment. It provides implementation tips and guidance that to consider when planning an implementation.
 author: cbittner
 manager: annbe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 
 
-# Using client images in POS
+# Use client images in POS
 
 [!include [banner](includes/banner.md)]
 
