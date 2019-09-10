@@ -127,7 +127,8 @@ The following example shows a module definition file that includes data action r
 }
 ```
 
-Data actions are registered under the **dataActions** section within the **module** section.  Each data action is declared with their name and the following properties:
+Data actions are registered under the **dataActions** section within the **module** section. Each data action is declared with its name and the following properties:
+
 * **"path"** – The path of the data action. The path can be a local path or the path of an action in another package (for example, **"@msdyn365-commerce-modules/retail-actions/dist/lib/get-selected-variant"**).
 * **"runOn"** – A setting that controls where the data action is run. Valid values are **server** or **client**.
 
