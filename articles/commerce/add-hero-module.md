@@ -1,18 +1,56 @@
-# Hero
+---
+# required metadata
+
+title: Add a hero module to a page 
+description: This topic covers hero modules and how to add them to site pages in Dynamics 365 Commerce.
+author:  anupamar-ms
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 
+---
+
+# Add a hero module to a page
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers hero modules and how to add them to site pages in Dynamics 365 Commerce.
+
+## Overview
 
 Hero is used to market products or promotions using rich images. For example, a new product is launched in the ecommerce site and the retailer wants to promote this product on the homepage to get the shoppers attention. 
 
 Hero module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context or any other modules on the page. Technically this allows Hero to be placed on any page where a C1 wants to promote content.
 
-Usage examples in ecommerce:
+## Examples of hero module uses in e-Commerce
 
-- Hero is used on the ecommerce home page to highlight promotions and new products
-- Hero is used in a product details page to showcase product information
-- Multiple Hero modules can be placed within a carousel to highlight multiple products or promotions in the store
+- A hero module can be used on the home page of an e-Commerce site to highlight promotions and new products.
+- A hero module can be used on a product details page to showcase product information.
+- Multiple hero modules can be placed within a carousel module to highlight multiple products or promotions.
 
 ## Hero module properties
 
-| Property name  | Values                                                       | Property Description                                         |
+| Property name  | Values                                                       | Property description                                         |
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Image          | Image file                                                   | This is the image that will be used to showcase a product or a   promotion on the Hero. An image can uploaded to the image gallery or an   existing image can be used. |
 | Heading        | Heading Text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | A hero can have a heading which is embedded on the image. Heading   supports heading tag which defaults to H2 but can be changed to meet accessibility requirements |
@@ -24,9 +62,9 @@ Usage examples in ecommerce:
 
  
 
-## Creating a page with a Hero module
+## Add a hero module to a new page
 
-This section explains how to add a Hero module to a new page and set the required properties for the Hero. Refer to Templates and Pages for more details on these actions.
+To add a hero module to a new page and set the required properties, do the following.
 
 1. We need to first create a template. In tooling, add a new page template “Hero template”.
 
