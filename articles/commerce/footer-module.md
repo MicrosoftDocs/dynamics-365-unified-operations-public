@@ -1,70 +1,76 @@
 ---
 # required metadata
 
-title: Footer module
-description: 
-author: AnupamaR
+title: Author a footer module 
+description: This topic covers footer modules and how to author them in Dynamics 365 for Commerce.
+author: anupamar
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Consumer
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
+ms.author: anupamar-ms
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Footer module
+# Author a footer module 
 
-The **Footer** module is special container that is used for hosting the modules that will be displayed on the page footer. For instance, it includes links to various pages across the site such as Contact Us, Store Policies, Follow us.
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-## Properties of Footer
+This topic covers footer modules and how to author them in Dynamics 365 for Commerce.
 
-Footer supports Heading and Width property similar to most containers. Footer container has multiple Footer category slots. Each Footer category will render as a column in the footer module.
+## Overview
+
+The footer module is special container that is used for hosting the modules that will be displayed on the page footer. For example, it includes links to various pages across the site such as Contact Us and Store Policies.
+
+## Footer module properties 
+
+Footer modules support heading and width properties similar to most containers. Footer container has multiple footer category slots. Each Footer category will render as a column in the footer module.
 
 ## Modules available in Footer
 
-**Footer items:** Footer items can be a Heading, Image and/or a link. A Heading can be used standalone or in combination with image and link. Each web link on the footer can be configured as a Link E.g. Contact Us, Privacy etc. Image can also supported be for items in footer that require image and a link E.g. Social links.
+**Footer items:** A footer item can be a heading, an image, or a link. A heading can be used alone or in combination with an image and link. Each link in the footer can be configured as a link with text (for example, Contact Us, Privacy, etc.) or a link with text and an image (for example, social media links).
 
-**Back to top.** Back to top allows quick navigation to the top of the page. A destination must be provided, the default is # which takes to the top of the page. 
+**Back to top.** A back to top module provides a link for quick navigation to the top of the page. A destination is required, and the default destination value is "**#**", which takes the user to the top of the page. 
 
+## Author a footer module
 
-## Authoring a Footer Module
+1. Create a page fragment with a footer module.
 
-1. Create a page fragment with a Footer module
+1. Populate the footer module slots with the the desired modules (for example, "footer items," "back to top").
 
-2. Populate the Footer module slots with the respective modules
+1. In the footer category, add a footer items module, then add a heading to it.
 
-3. In Footer category, add Footer items. Add a Heading
+1. In the footer category, add multiple footer items with links.
 
-4. In Footer category, add multiple Footer items with Link
+1. Repeat for each footer category.
 
-5. Repeat for each footer category
+1. Save the page fragment.
 
-6. Save the page fragment
+1. Check in and publish.
 
-7. Check in and Publish
+On every page template created for the site, do the following.
 
-On every page template created for the site:
+1. In the **Main** slot of the default page, add the footer fragment to the footer module. 
 
-1. Add the Footer fragment to the Footer in the Main Slot of the Default Page
+1. Save the template.
 
-2. Save the template
+1. Check in and publish the template.
 
-3. Check in and Publish
-
-This will ensure every page renders the footer
+This will ensure that every page renders the footer.
