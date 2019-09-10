@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create and send an onboarding guide by using Dynamics 365 for Talent - Onboard
-description: This topic explains how to use the Microsoft Dynamics 365 for Talent - Onboard app to create an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
+title: Create and send an onboarding guide by using Dynamics 365 Talent - Onboard
+description: This topic explains how to use the Microsoft Dynamics 365 Talent - Onboard app to create an onboarding guide for your new hires. This task is an essential first step in a human capital management (HCM) hire-to-retire strategy.
 author: andreabichsel
 manager:
 ms.date: 05/02/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create and send an onboarding guide by using Dynamics 365 for Talent: Onboard
+# Create and send an onboarding guide
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard lets you create onboarding guides from templates that you created yourself, from templates that are available in a gallery, or from scratch.
+Microsoft Dynamics 365 Talent: Onboard lets you create onboarding guides from templates that you created yourself, from templates that are available in a gallery, or from scratch.
 
 After you've created an onboarding guide, you can send it to a new hire. Alternatively, you can send it to multiple new hires that you specify in a Microsoft Excel file that you download from the Onboard app.
 
