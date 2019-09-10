@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a feature module to a page 
-description: This topic covers feature module modules and how to add them to site pages in Dynamics 365 Commerce.
+description: This topic covers feature modules and how to add them to site pages in Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers feature module modules and how to add them to site pages in Dynamics 365 Commerce.
+This topic covers feature modules and how to add them to site pages in Dynamics 365 Commerce.
 
 ## Overview
 
