@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to work with preset layouts in Dynamics 365 Commerce.
+This topic describes how to work with preset layouts in Dynamics 365 Commerce. For more information, see [Work with templates](work-with-templates.md) and [Work with preset layouts](work-with-layouts.md).
 
 ## Overview
 
-Please read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts) before continuing with the steps below.
+Please read [Preset and custom layouts](templates-layouts-overview.md#preset-and-custom-layouts) before continuing with the steps below. For a general overview, see [Templates and layouts overview](templates-layouts-overview.md).
 
 ## Create a new preset layout
 
