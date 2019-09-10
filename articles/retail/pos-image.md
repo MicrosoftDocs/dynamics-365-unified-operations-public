@@ -41,15 +41,15 @@ This guidance applies to both Cloud POS and Modern POS, and provides some genera
 
 ## Implementation considerations
 
-- **File size**: In order to maintain good responsiveness of the POS client UI and performance while loading the different kind of images, we recommend that you prepare your images to be an appropriate file sizes for the respective purpose of use.
+- **File size**: In order to maintain good responsiveness of the POS client UI and performance while loading the different kind of images, we recommend that you prepare your images to be an appropriate file sizes for the respective purpose of use. As an example, product and category images in the Contoso demo data set are sized at 500x500 or 580x580 pixels.
 
-- **Image size**: The screens and displays of the POS devices will pre-determine reasonable image sizes (length and width). You should size the image as close to your intended screen size as possible.
+- **Image size**: The screens and displays of the POS devices will pre-determine reasonable image sizes (length and width). You should size the image as close to your intended screen size as possible. See the "Implementation example" below.
 
-- **Resolution**: Another important parameter to consider is the dots per inch (DPI), or for screen resolution, pixel per inch (PPI). Since POS client images won't be printed, the common DPI setting for rendering images on the web is a good guideline. For high resolution devices, you should take operating system (OS) scaling into account and use the effective resolution, rather than the actual pixels. Contoso demo image files are typically rendered to 96 dpi. 
+- **Resolution**: Another important parameter to consider is the dots per inch (dpi), or for screen resolution, pixel per inch (ppi). Since POS client images won't be printed, the common dpi setting for rendering images on the web is a good guideline (72 to 150 dpi). Contoso demo image files are typically rendered to 96 dpi. For high resolution devices, you should take operating system (OS) scaling into account and use the effective resolution, rather than the actual pixels. 
 
 - **File types** – You can use \*.png or \*.jpg image file types. In most cases, \*.jpg are a little smaller in size.
 
-- **Implementation example--Welcome screen**: For a welcome screen image covering two-thirds of the canvas on a common 18.5” POS display with a 1366 x 768 pixel resolution and a screen layout similar to Contoso demo data, choose an image with resolution that isn't much higher than the length and width of the screen. In this example, 911 x 512 pixel resolution is sufficient. Selecting fairly high resolution for length and width but keeping a low dpi setting will still result in reasonable small file sizes. (Contoso demo data for product and category images uses 500 x 500 pixel or 580 x 580 pixel.)     
+- **Implementation example--Welcome screen**: For a welcome screen image covering two-thirds of the canvas on a common 18.5” POS display with a 1366 x 768 pixel resolution and a screen layout similar to Contoso demo data, choose an image with resolution that isn't much higher than the length and width of the screen. In this example, 911 x 512 pixel resolution is sufficient. Selecting fairly high resolution for length and width but keeping a low dpi setting will still result in reasonable small file sizes.
 
 
 
