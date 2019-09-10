@@ -38,9 +38,9 @@ This topic covers hero modules and how to add them to site pages in Dynamics 365
 
 ## Overview
 
-Hero is used to market products or promotions using rich images. For example, a new product is launched in the ecommerce site and the retailer wants to promote this product on the homepage to get the shoppers attention. 
+A hero module is used to market products or promotions using a combination of image and text. For example, a retailer can add a hero module to the home page of an e-Commerce site to promote a new product to attract the attention of customers. 
 
-Hero module is driven by CMS data which can authored in the tooling. It’s a standalone module and does not have dependency on page context or any other modules on the page. Technically this allows Hero to be placed on any page where a C1 wants to promote content.
+The hero module is driven by CMS data and is a standalone module that does not depend on any other modules on the page. Hero modules can be placed on any site page where a retailer wants to market or promote something (products, sales, features, etc.).
 
 ## Examples of hero module uses in e-Commerce
 
@@ -52,13 +52,13 @@ Hero module is driven by CMS data which can authored in the tooling. It’s a st
 
 | Property name  | Values                                                       | Property description                                         |
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Image          | Image file                                                   | This is the image that will be used to showcase a product or a   promotion on the Hero. An image can uploaded to the image gallery or an   existing image can be used. |
-| Heading        | Heading Text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | A hero can have a heading which is embedded on the image. Heading   supports heading tag which defaults to H2 but can be changed to meet accessibility requirements |
-| Paragraph      | Paragraph text                                   | Hero has the flexibility to supports additional lines to text as rich   text. Some basic rich text functionality is supported such a Bold, Underline, Italics, hyperlinks etc. Some of these capabilities may be overridden by the page   theme applied on the module. |
-| Link           | Link text<br />Link url<br />Aria label<br />Open link in new tab | A Hero can have one or more call to actions. E.g. “Shop Now” which   redirects the shopper to the link. If a link is added, link text, url and aria label must be provided.<br />Aria-label should be descriptive for accessibilty.<br />If user wants to open the link in a new tab, that can be configured. |
-| Text placement | Top Left<br />Top Right<br />Top Center<br />Bottom Left<br />Bottom Right<br />Bottom<br />Center Left<br />Center Right<br />Center Center | This property defines the placement of text placement on the image. A total of 9 different placements are supported.|
-| Text theme   | Light<br />Dark | A color scheme can be defined for the text based on the image on the  background. If the image has dark background a light theme can be applied on the text to make it visible and to meet color contrast ratios for accessibilty. |
-| Gradient |True or false| Applies a gradient to the image. It can be used to meet color contrast ratio for accessiblity |
+| Image          | Image file                                                   | The image that will be used to showcase a product or a   promotion. An image can be uploaded to the image gallery, or an existing image can be used. |
+| Heading        | Heading Text<br /><br />Heading tag = H1, H2, H3, H4, H5, H6 | The heading text and heading tag. The default heading tag is H2 but can be changed to meet accessibility requirements. |
+| Paragraph      | Paragraph text                                   | Paragraph text in rich text format. Basic rich text functionality such as bold, underline, italics, and hyperlinks are supported. Some of this functionality may be overridden by the page theme applied to the module. |
+| Link           | Link text<br />Link url<br />Aria label<br />Open link in new tab | Hero modules support one or more "call to action" links. If a link is added, link text, an URL, and an ARIA label are required. ARIA labels should be descriptive for accessibility. Links can be configured to open in a new tab. |
+| Text placement | Top Left<br />Top Right<br />Top Center<br />Bottom Left<br />Bottom Right<br />Bottom<br />Center Left<br />Center Right<br />Center Center | Defines the position of the image relative to the text. For example, if Right is chosen, the image will appear on right of the text. |
+| Text theme   | Light<br />Dark | A color scheme can be defined for the text based on the image on the background. For example, if a hero image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility. |
+| Gradient |True or false| Applies a gradient to the image. This can be used to meet a color contrast ratio for accessibility. |
 
  
 
@@ -66,26 +66,26 @@ Hero module is driven by CMS data which can authored in the tooling. It’s a st
 
 To add a hero module to a new page and set the required properties, do the following.
 
-1. We need to first create a template. In tooling, add a new page template “Hero template”.
+1. Go to **Templates** and create a new page template named "hero template."
 
-2. In the Main slot of the Default Page, add a Hero module. A hero can be placed directly on the page or within a container<link>.  Multiple Hero images can be placed within a Carousel <link>. 
+1. In the **Main** slot of the default page, add a hero module. 
 
-3. Check-in and Publish. 
+1. Check in and publish the template.
 
-4. Now create a new page with the “Hero template” and call it “Hero page”
+1. Create a new page named "hero page" with the hero template you created.
 
-5. In the page outline, add Default Page and then add Hero module to the Main slot.
+1. In the **Main** slot of the default page, click the ellipsis button (**...**) and select **Add Module**. The Add Module dialog box appears.
 
-6. Expand the Hero properties, add Image. From the image picker, choose an existing image or upload a new asset. 
+1. Under **Select Modules**, select the hero module and click **OK**.
 
-7. Add a Heading to the Hero, change the default text as needed.
+1. Select the hero module in the outline tree. In the right-side properties pane, click **Add an image**. Select an existing image or upload a new asset to add. 
 
-8. Add a Paragraph, change the default text as needed.
+1. Click **Heading**. In the Heading dialog box, add the heading text, select the heading level, then click **OK**.
 
-9. Add a Link, set the link text to “Shop Now” and add a link url to the page you want to redirect. Set the Aria label to be description “Shop now for Surface Laptop sale”
+1. Under **Rich Text**, add text as needed.
 
-10. Save the page and preview the changes.
+1. Click **Add Action Link**. In the Action Link dialog box, add link text, a link URL, and an ARIA label for the link, then click **OK**.
 
-11. Other properties of Hero can be changed to achieve a more customized Hero – Text placement, Text theme etc
+1. Save the page and preview the changes.
 
-12. Check-in and Publish
+1. Check in and publish the page.
