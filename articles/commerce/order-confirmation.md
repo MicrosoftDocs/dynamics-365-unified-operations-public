@@ -1,57 +1,62 @@
 ---
 # required metadata
 
-title: Show order confirmation on ecommerce
-description: This topic describes how to show order confirmation on ecommerce
-author: anupamar-ms
-manager: BrendanS
-ms.date: 07/23/2019
+title: Author an order confirmation module
+description: This topic covers order confirmation modules and how to author them in Dynamics 365 Commerce.
+author: anupamar
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
 
-ms.search.form:  RetailOperations, RetailFunctionalityProfile
-audience: Application User
+# ms.search.form: 
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
-ms.search.industry: retail
+# ms.search.industry: 
 ms.author: anupamar-ms
-ms.search.validFrom: 2019-07-23
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Order confirmation
+# Author an order confirmation module
 
-Order confirmation page is used to show a confirmation message once an order is placed. This page will have the Order confirmation module which shows the order confirmation number and the email address that was provided during checkout.
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Once an order is placed during checkout, the order confirmation number and the email address are passed as query string to the order confirmation page. Order confirmation module receives the order confirmation number and the email address from the page url to render this module. This page context is required for the module to provide the status of the order.
+This topic covers order confirmation modules and how to author them in Dynamics 365 Commerce.
 
-## Usage in ecommerce:
+## Overview
 
-* To show confirmation message once an order is placed. 
+An order confirmation module is used to show a confirmation message on an order confirmation page once an order is placed. The order confirmation module displays the order confirmation number and the customer email address that was provided during checkout.
+
+When an order is placed during checkout, the order confirmation number and customer email address are passed to the order confirmation page as a query string in the page URL. The order confirmation module receives this information and renders the order status on the order confirmation page. This page context is required for the module to provide the status of the order.
+
+## Example of order confirmation module usage in e-Commerce
+
+- The order confirmation module shows a confirmation message on the order confirmation page once an order is placed. 
 
   
+## Order confirmation module properties
 
-## Properties of Order confirmation module
-
-|     Property name     | Values                                                       | Property Description                                         |
+|     Property name     | Values                                                       | Property description                                         |
 | :-------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|        Heading        | Heading text<br />Heading tag                                | The module can have a heading. Heading supports heading tag which defaults   to H2 but can be changed to meet accessibility requirements |
+|        Heading        | Heading text<br />Heading tag                                | The heading text and heading tag. The default heading tag is H2 but can be changed to meet accessibility requirements. |
 
- 
+## Modules available in an order confirmation page module 
 
-## More modules on Order confirmation page
+**Recommendations**:: The recommendations module can be placed on the order confirmation page to suggest other products to the customer. 
 
-**Recommendations**:: Recommendations can be placed on the order confirmation page to allow the user to continue their shopping journey. Any existing list can be used except Frequently bought together. 
-
-**Marketing modules**: Any marketing content can added to this page – E.g. Feature, Content Placement, Content rich block etc.
+**Marketing**: The marketing module can add marketing content to the order confirmation page.
 
 ## Authoring order confirmation page
 
