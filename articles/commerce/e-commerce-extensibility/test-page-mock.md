@@ -53,58 +53,43 @@ The following example shows a page mock that adds two instances of the same modu
 {
     "exception": null,
     "pageRoot": {
-        "modules": {
-            "primary": [
-                { "id": "ProductFeature__0", "typeName": "productFeature" },
-                { "id": "ProductFeature__1", "typeName": "productFeature" }
-            ]
-        },
-        "id": "default-page_0",
-        "typeName": "default-page"
+      "modules": {
+        "primary": [
+          { "id": "ProductFeature__0", "typeName": "productFeature" },
+          { "id": "ProductFeature__1", "typeName": "productFeature" }
+        ]
+      },
+      "id": "default-page_0",
+      "typeName": "default-page"
     },
     "modules": {
-        "default-page_0": {
-            "id": "default-page_0",
-            "typeName": "default-page"
+      "default-page_0": {
+        "id": "default-page_0",
+        "typeName": "default-page"
+      },
+      "ProductFeature__0": {
+        "config": {
+            "imageAlignment": "left",
+            "productTitle": "Ethiopian Natural Limu",
+            "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
+            "productImage": {
+              "src" : "https://bit.ly/2LupO8u",
+              "altText" : "Ethiopian Natural Limu"
+            },
+            "buttonText": "Buy Now"
         },
-        "ProductFeature__0": {
-            "config": {
-                "imageAlignment": "left"
-            },
-            "data": {
-                "$type": "productFeature",
-                "productTitle": {
-                    "text": "Ethiopian Natural Limu"
-                },
-                "productDetails": {
-                    "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast."
-                },
-                "buttonText": {
-                    "text": "Buy Now"
-                }
-            },
-            "id": "ProductFeature__0",
-            "typeName": "productFeature"
+        "id": "ProductFeature__0",
+        "typeName": "productFeature"
+      },
+      "ProductFeature__1": {
+        "config": {
+            "imageAlignment": "right",
+            "productIds": "22565430170",
+            "buttonText": "Buy Now"
         },
-        "ProductFeature__1": {
-            "config": {
-                "imageAlignment": "right"
-            },
-            "data": {
-                "$type": "productFeature",
-                "productTitle": {
-                    "text": "Ethiopian Natural Limu"
-                },
-                "productDetails": {
-                    "text": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast."
-                },
-                "buttonText": {
-                    "text": "Buy Now"
-                }
-            },
-            "id": "ProductFeature__1",
-            "typeName": "productFeature"
-        }
+        "id": "ProductFeature__1",
+        "typeName": "productFeature"
+      }
     },
     "renderingContext": {
         "gridSettings":{
@@ -122,8 +107,8 @@ The following example shows a page mock that adds two instances of the same modu
             },
             "xl":{
                 "w":1600
-            },
-        },
+            }
+        },        
         "staticContext": {
             "staticCdnUrl": "/_scnr/"
         },
@@ -131,6 +116,7 @@ The following example shows a page mock that adds two instances of the same modu
     },
     "statusCode": 200
 }
+
 ```
 
 Every page must have a root page container (**pageRoot**). In this example, the **default-page** page container is used.
