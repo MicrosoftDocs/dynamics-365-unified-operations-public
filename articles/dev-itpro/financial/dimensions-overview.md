@@ -64,7 +64,7 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
 
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
-    select * from DIMENSIONCOMBINATIONENTITY
+    `select * from DIMENSIONCOMBINATIONENTITY`
 
 ## Add dimensions  before Dynamics 365 for Finance and Operations
 To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization. 
