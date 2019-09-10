@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to work with preset layouts in Dynamics 365 Commerce. For more information, see [Work with templates](work-with-templates.md) and [Work with preset layouts](work-with-layouts.md).
+This topic describes how to work with preset layouts in Dynamics 365 Commerce.
 
 ## Overview
 
@@ -41,7 +41,7 @@ Please read [Preset and custom layouts](templates-layouts-overview.md#preset-and
 
 ## Create a new preset layout
 
-There are two methods to create a preset layout. The first is to save an existing custom layout as a new prest layout, and the second is to create a new preset layout.
+There are two methods to create a preset layout. The first is to save an existing custom layout as a new preset layout, and the second is to create a new preset layout.
 
 ### Create a preset layout from an existing custom layout
 
@@ -69,15 +69,15 @@ To create a preset layout from scratch, follow these steps.
 
 1. From the left navigation bar, click **Layouts**. 
    
-2. Click the **New Layout**. The New layout dialog box appears.
+1. Click the **New Layout**. The New layout dialog box appears.
 
-3. Select the template that you would like to use for your preset layout.
+1. Select the template that you would like to use for your preset layout.
 
-4. Enter a name and description for your preset layout. The name and description are shown to other authors when they create a new page from, or switch to, your new layout. Enter something helpful to a page author.
+1. Enter a name and description for your preset layout. The name and description are shown to other authors when they create a new page from, or switch to, your new layout. Enter something helpful to a page author.
 
-5. Click **OK** to create the new layout and enter the layout editor.
+1. Click **OK** to create the new layout and enter the layout editor.
 
-6. In the layout editor, add and configure modules using the outline and property panel just as you would in the template editor. The module arrangement and locked defaults will be the centralized module configuration for any pages that use this layout.
+1. In the layout editor, add and configure modules using the outline and property panel just as you would in the template editor. The module arrangement and locked defaults will be the centralized module configuration for any pages that use this layout.
 
 ## Modify a preset layout
 
@@ -87,7 +87,7 @@ To modify a preset layout, do the following.
    
 1. In the layout editor outline view, select a module that you wish to modify and do any of the following:
 
-    - To move a module up or down within its parent, choose the "**Move up**" or "**Move down**" options in the module's action menu ("**...**").
+    - To move a module up or down within its parent, click the module's ellipsis button (**...**), then select **Move up** or **Move down**.
     - To change default module settings, use the property pane to enter default values and optionally lock them for all downstream pages.
     - To add new modules or fragments to container modules,  click the ellipsis button (**...**), then select "**Add module**" or "**Add fragment**.
     - To remove a module from the layout, click the ellipsis button (**...**), then select **Delete**.
