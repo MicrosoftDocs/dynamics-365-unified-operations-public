@@ -58,7 +58,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
 <ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<li>Microsoft Dynamics 365 Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
