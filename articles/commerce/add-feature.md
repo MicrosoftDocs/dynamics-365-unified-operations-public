@@ -1,6 +1,42 @@
-# Create a page with a Feature module
+---
+# required metadata
 
-## Overview of the Feature module
+title: Add a feature module to a page 
+description: This topic covers feature module modules and how to add them to site pages in Dynamics 365 Commerce.
+author:  anupamar-ms
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: 
+---
+
+# Add a feature module to a page 
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers feature module modules and how to add them to site pages in Dynamics 365 Commerce.
+
+## Overview
 
 The Feature module is used for marketing products or promotions using a combination of image and text. For example, on the product details page a retailer can add a Feature module that uses both image and text to highlight the capabilities of the product. 
 
