@@ -2,10 +2,10 @@
 # required metadata
 
 title: Batch processing of alerts
-description: This topic provides information about batch processing of alerts in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about batch processing of alerts.
 author: tjvass
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 09/10/2010
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Platform update 15
 
 [!include [banner](../includes/banner.md)]
 
-Alerts are processed by the batch processing functionality in Microsoft Dynamics 365 for Finance and Operations. You must set up batch processing before alerts can be delivered.
+Alerts are processed by the batch processing functionality. You must set up batch processing before alerts can be delivered.
 
-Finance and Operations supports two types of events:
+Two types of events are supported:
 
 - Events that are triggered by change-based events. These events are also referred to as create/delete and update events.
 - Events that are triggered by due dates.
@@ -43,7 +43,7 @@ You can set up batch processes for each type of event.
 		
 ## Batch processing for change-based events
 
-Finance and Operations reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that are set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
+The system reads all change-based events that have occurred since batch processing was last run. Change-based events include updates to fields, the deletion of records, and the creation of records. These events are compared with the conditions that are set up in alert rules. When an event matches the conditions in a rule, the batch process generates an alert.
 
 ### Frequency for change-based events
 
@@ -66,7 +66,7 @@ For example, an alert rule is set up to trigger an alert when the event is **cus
 
 ## Batch processing for due-date events
 
-Finance and Operations detects all events that are caused by due dates, and these events are compared with the conditions that are set up in alert rules. The batch process generates an alert when an event matches the conditions in a rule.
+The system detects all events that are caused by due dates, and these events are compared with the conditions that are set up in alert rules. The batch process generates an alert when an event matches the conditions in a rule.
 
 ### Frequency for due-date events
 
