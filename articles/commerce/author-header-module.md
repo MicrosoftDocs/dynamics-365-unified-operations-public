@@ -67,7 +67,7 @@ The following modules can be used in the header.
 
 - **Autosuggest**: The autosuggest module shows the autosuggest results, which can be keywords, products, or categories where the search term is found.
 
-## Author the header module
+## Author a header module
 
 To author a header module, do the following.
 
