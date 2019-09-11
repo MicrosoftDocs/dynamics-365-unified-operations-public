@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to either a Microsoft Dynamics 365 for Finance and Operations environment or a Microsoft Dynamics 365 for Retail environment. 
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to a Dynamics 365 Finance, Supply Chain Management, or Retail environment. 
 
 
 > [!IMPORTANT]
