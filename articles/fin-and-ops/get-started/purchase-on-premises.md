@@ -5,7 +5,7 @@ title: Buy Finance + Operations (on-premises)
 description: This topic explains how to purchase and deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: maertenm 
 manager: AnnBe
-ms.date: 02/01/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Platform update 8
 Microsoft Dynamics 365 Finance + Operations (on-premises) offers a variety of license types to best suit the needs of your organization. To better understand how Finance + Operations (on-premises) is licensed, please work with your partner, who can access the [Licensing guide](https://mbs.microsoft.com/Files/public/365/DynamicsOperationsOnPremEnterprise.pdf) on PartnerSource. When you are ready to purchase licenses for your organization, work with your partner to follow the steps outlined in this topic.
 
 > [!IMPORTANT]
-> On-premises deployments are not supported on any public cloud infrastructure, including Azure.
+> On-premises environments are not supported on any public cloud infrastructure, including Azure.
 
 ## Purchase client access licenses
 
-To run on-premises deployments, you must obtain the proper number of client access licenses (CALs) for your organization per the licensing guide. The CAL purchased for an individual user determines the functionality that the user has the rights to use. User CALs can be purchased from the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+To run on-premises environments, you must obtain the proper number of client access licenses (CALs) for your organization per the licensing guide. The CAL purchased for an individual user determines the functionality that the user has the rights to use. User CALs can be purchased from the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 ## Purchase server licenses
 
@@ -64,7 +64,7 @@ To purchase Finance + Operations (on-premises) you must have a Microsoft Online 
 
 The Microsoft Online Services ID is required to provision and register Finance + Operations (on-premises) into entity-owned hardware and environment. See the Provisioning guide (linked to below) to complete the provisioning and registration process. If a Microsoft Online Services ID already exists, the process must be completed by the Global Administrator. If creating a Microsoft Online Services ID for the first time, the person initiating the process will be the Global Administrator.
 
-If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When you click a link below, choose to sign in with this account if you want to use this same Azure Active Directory (AAD) tenant for the on-premises deployment.
+If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. When you click a link below, choose to sign in with this account if you want to use this same Azure Active Directory (AAD) tenant for the on-premises environment.
 
 Access to the Provisioning guide can be found here:
 
