@@ -13,6 +13,8 @@
 * [Create a new Dynamics 365 online channel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Create%20a%20new%20Dynamics%20365%20for%20Commerce%20online%20store?branch=stuharg-create-new-eCommerce-site)
 * [Associate a site with a Dynamics 365 Commerce online channel](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/stuharg-associate-site-with-online-channel/articles/commerce/associate-site-online-store.md)
 * [Configuring your domain name](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/configure-your-domain-name?branch=psimolin-configure-domain-name)
+* [CDN Support](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-Add_CDN_Support/articles/commerce/includes/Adding-CDN-Support.md)
+* [Enabling IP2GEO](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/brshoo-Enabling_IP2GEO/articles/commerce/includes/Enabling%20IP2GEO%20for%20your%20Site.md)
 * [Configuring customer sign-in](Brian Shook TBD)
 
 ## Authoring tools
