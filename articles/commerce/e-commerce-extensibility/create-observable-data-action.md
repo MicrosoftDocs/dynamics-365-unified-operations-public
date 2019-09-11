@@ -97,7 +97,7 @@ export default createObservableDataAction({
 });
 ```
 
-The **createObservableDataAction** method is equivalent to the **createDataAction** method, but it returns an **IObservableAction** instead of an **IAction**, which returns an **AsyncResult** class instead of the **Promise** that a standard **IAction** returns. Therefore, you have access to additional data when the data action is consumed. This data includes the **status** and **error** properties of the data action. 
+The **createObservableDataAction** method is equivalent to the **createDataAction** method, but returns an **IObservableAction** interface instead of an **IAction** interface.  The **IObservableAction** interface returns an **AsyncResult** class instead of the **Promise** class that a standard **IAction** interface returns. The **AsyncResult** class provides additional data including the **status** and **error** properties of the data action. 
 
 A mock can be created to test the data action, as shown in the following example.
 
@@ -170,7 +170,7 @@ The following example shows a sample module definition that registers the sample
 }
 ```
 
-When you create the data.ts file, you must make sure that every **observableDataAction** is wrapped by an **AsyncResult** class. In this way, you help guarantee the correct typings when a module is written.
+When adding data action inside the module data.ts file ensure every data action that returns an **observableDataAction** object is wrapped by an **AsyncResult** class. This will guarantee the correct typings when a module is written.
 
 ```typescript
 // test-module.data.ts
@@ -179,11 +179,6 @@ export interface IAsyncTestModuleData {
     testResult: AsyncResult<string>;
 }
 ```
+When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result** and **error** properties. The **status** property contains the current state of the data action which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error the **result** property will not be filled in. Instead, the **error** property can be used to see the error details.
 
-Now that the data action is wrapped by an **AsyncResult** class, you will notice that you have access to new properties during module development. These properties include **testResult.status**, which contains the current state of the data action (**'Success'**, **'Loading'**, or **'Failed'**), and **testResult.result**, which contains the actual data that is returned by the action if it succeeds.
-
-When the module is first rendered, it shows that the data action is in a loading state, because the **setTimeout** that is used simulates an API call that is in progress. After the **setTimeout** is completed, and the action successfully returns data, the module is automatically rendered again. This time, it shows the **success** state together with the data that is returned from the action and available in the **result** property.
-
-If the data action throws an error, the **result** property isn't filled in. Instead, the module is updated accordingly on the page. The **error** property of the **AsyncResult** class is filled in, because the action wasn't able to run.
-
-By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, you can easily handle complicated scenarios in a module. Examples of complicated scenarios include showing a loading screen while an API call runs and providing contextual error messages in response to a failed data action.
+By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
