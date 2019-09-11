@@ -53,7 +53,7 @@ The account management landing page uses the following modules.
 
 **Account wishlist item:** This module is used to provide a summary of the customer's wish list items (for example, "You have 10 items in your wish list.") Its properties include heading, tile size, view details link. The view details link should be configured to redirect to the wish list page. 
 
-**Account address item:** This module is used to provide a summary of the user's addresses (for example, "You have 2 addresses added to your account."). Its properties include heading, tile size, and view details link. The view details link should be configured to redirect to the user address page
+**Account address item:** This module is used to provide a summary of the user's addresses (for example, "You have 2 addresses added to your account."). Its properties include heading, tile size, and view details link. The view details link should be configured to redirect to the user address page.
 
 **Account loyalty item:** This module is used to display and link to loyalty program information. Its properties include heading, tile size, view details link, and become a member link. The view details link should be configured to redirect to the loyalty page. The become a member link should be configured to redirect the user to a page that will enable them to join the loyalty program.
 
@@ -67,7 +67,7 @@ The order details page provides detailed information for each orde, and is acces
 
 ### User profile page
 
-The user profile page displays user account details such as name and email address. The email address cannot be removed but can be edited. The user profile page uses the user profile module.
+The user profile page displays user account details such as name and email address, and uses the user profile module. The email address cannot be removed but can be edited.
 
 ### User address page
 
