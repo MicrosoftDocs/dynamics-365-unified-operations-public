@@ -160,4 +160,4 @@ The following servicing requests and tools are supported by LCS, which may help 
 5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
 6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
 
-For more information about planning an enviornment, see [Environment planning](../../fin-and-ops/imp-lifecycle/environment-planning.md).
+For more information about planning an environment, see [Environment planning](../../fin-and-ops/imp-lifecycle/environment-planning.md).
