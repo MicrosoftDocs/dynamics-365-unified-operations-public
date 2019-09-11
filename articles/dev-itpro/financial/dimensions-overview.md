@@ -45,7 +45,8 @@ The only value that is present on Microsoft Excel templates after installation i
 
 This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
 
-**Note:**  This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
+> [!NOTE]
+> This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
 
 ## Add dimensions  Dynamics 365 for Operations (version 1611, build 7.1.1541.3036+, November 2016)
 Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio. 
