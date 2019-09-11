@@ -58,17 +58,11 @@ You can run this procedure in demo data company USMF or on your own data.
 11. Click **Save**.
 12. Close the page.
 13. Go to **Sales and marketing > Sales orders > All sales orders**.
-14. In the list, mark the selected row.
-    
-    Orders that are currently on hold have the "Do not process" and "Hold" fields marked.    
-
+14. In the list, mark the selected row. Orders that are currently on hold have the "Do not process" and "Hold" fields marked.
 15. On the Action Pane, click **Pick and pack**.
 
 ## Manage order holds
-1. Go to **Sales and marketing > Sales orders > Open orders > Order holds**.
-    
-    **Order holds** page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.
-    
+1. Go to **Sales and marketing > Sales orders > Open orders > Order holds**. **Order holds** page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.     
 2. In the list, mark the selected row.
 3. On the **Action Pane**, click **Hold checkout**.
 4. Click **Check out**.
@@ -77,7 +71,5 @@ You can run this procedure in demo data company USMF or on your own data.
 7. On the **Action Pane**, click **Clear hold**.
     - When you are ready to remove the hold and allow the order to proceed to the next fulfilment step, you must clear the hold. If the order requires no changes, you can run the Clear holds action. However, you can use the Clear and modify action if, when clearing a hold, the order has to be updated.      
     - The **Clear and submit** action is only applicable when you use Call center functionality.  
-8. Click **Clear holds**.
-    
-    The hold has now been cleared from the order and removed from the list of Active holds. To see all the holds or their subset according to a specific status, change the value in the Show field.     
+8. Click **Clear holds**. The hold has now been cleared from the order and removed from the list of Active holds. To see all the holds or their subset according to a specific status, change the value in the Show field.     
 
