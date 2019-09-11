@@ -39,7 +39,7 @@ ms.dyn365.ops.version: July 2017 update
 This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
 
 ## Prerequisites
-+ Access to a developer environment that runs platform update 8 or later.
++ Access to a developer environment that runs Platform update 8 or later.
 + An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database.
 
 ## Overview
