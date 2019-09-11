@@ -39,7 +39,7 @@ This topic describes how to globalize modules by using the **CultureInfoFormatte
 
 Globalization of an online site should include not only string localization, but also number, date, and currency formatting for the various languages and regions that your website serves.
 
-The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides a **CultureInfoFormatter** class that helps meet typical globalization requirements for the format of numbers, currencies, and dates and times.
+The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides a **CultureInfoFormatter** class that helps meet typical globalization requirements for the format of numbers, currencies as well as dates and times.
 
 ## Access the CultureInfoFormatter class in a module view file
 
@@ -290,7 +290,7 @@ interface IDateFormatOptions extends ITimeFormatOptions {
 ```
 
 > [!NOTE] 
-> All options that are provided in **ITimeFormatOptions** interface can be used in **IDateFormatOptions** interface, because time is a subcomponent of date.
+> All properties provided in **ITimeFormatOptions** interface can be used in **IDateFormatOptions** interface since the time object is a subcomponent of the date object.
 
 #### Property details
 
