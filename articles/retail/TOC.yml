@@ -606,6 +606,8 @@
       href: dev-itpro/pos-handler.md
     - name: View POS extension package information
       href: dev-itpro/view-pos-extension-package-details.md
+    - name: Test recorder and Regression suite automation tool for Retail Cloud POS
+      href: dev-itpro/pos-rsat.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Integrate POS with a new hardware device
@@ -622,6 +624,8 @@
       href: dev-itpro/extend-metadata.md
     - name: Call the CRT service in offline mode
       href: dev-itpro/call-crt-service-offline.md
+    - name: Create new Retail Server extension
+      href: dev-itpro/retail-server-extension.md
   - name: Commerce Runtime (CRT) extensibility
     items:
     - name: CRT architecture and configuration
