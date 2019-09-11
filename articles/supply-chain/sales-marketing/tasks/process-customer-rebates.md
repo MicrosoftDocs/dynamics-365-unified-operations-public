@@ -46,23 +46,14 @@ This procedure demonstrates how to process customer rebates from claim generatio
 
 ## Generate rebate claims
 1. Go to **Navigation pane > Modules > Sales and marketing > Sales orders > All sales orders**.
-2. Click **New**.
-   
-   To mimic the way in which rebate claims would be generated, the next task is to create a sales order, where the product and quantity will qualify the customer in question for a rebate.
-   
+2. Click **New**. To mimic the way in which rebate claims would be generated, the next task is to create a sales order, where the product and quantity will qualify the customer in question for a rebate.    
 3. In the **Customer account** field, enter or select a value.
 4. Click **OK**.
 5. In the **Item number** field, enter or select a value.
 6. Set **Quantity** to '40'.
 7. Under the **Sales order lines** section, click **Sales order line**.
-8. Click **Price details**.
-    
-    If you don’t see this option, it’s because you didn’t set the **Enable price details option** to 'Yes' before you started the guide.
-    
-9. Expand the **Rebates** section.
-    
-    The **Rebates** tab lists all the rebate agreements that are applicable to the current order line and shows the estimated rebate amount. Note that the displayed amounts are only indications of what future rebate claims may be. The actual rebate amounts may be different depending on: the total sales volume achieved by the customer under a periodic rebate agreement; whether the customer had returned all or partial quantities; and whether the applicable sales order was invoiced.  
-
+8. Click **Price details**. If you don’t see this option, it’s because you didn’t set the **Enable price details option** to 'Yes' before you started the guide.     
+9. Expand the **Rebates** section. The **Rebates** tab lists all the rebate agreements that are applicable to the current order line and shows the estimated rebate amount. Note that the displayed amounts are only indications of what future rebate claims may be. The actual rebate amounts may be different depending on: the total sales volume achieved by the customer under a periodic rebate agreement; whether the customer had returned all or partial quantities; and whether the applicable sales order was invoiced.
 10. Close the page.
 11. Click **Add line**.
 12. In the **Item number** field, enter or select a value.
@@ -84,17 +75,12 @@ This procedure demonstrates how to process customer rebates from claim generatio
 2. Click **Cumulate**.
 3. In the **Customer** field, enter or select a value.
 4. In the **Start date** field, select today's date.
-5. Click **OK**.
-
-    As a result of running the **Cumulate** function, the estimated claim amount has now been adjusted to account for the fact that the customer's total sales volume in the relevant period is higher than when the first rebate was generated. More specifically, because the total purchased quantity has reached 100 units, the customer now qualifies for 40 USD per unit (as per the agreement's second quantity break), or 400 USD of total rebate amount. The difference is recorded as a new claim "adjustment" for the additional 800 USD. The status of the rebate claims that were included in the Cumulate update are now set to Calculated.   
-
+5. Click **OK**. As a result of running the **Cumulate** function, the estimated claim amount has now been adjusted to account for the fact that the customer's total sales volume in the relevant period is higher than when the first rebate was generated. More specifically, because the total purchased quantity has reached 100 units, the customer now qualifies for 40 USD per unit (as per the agreement's second quantity break), or 400 USD of total rebate amount. The difference is recorded as a new claim "adjustment" for the additional 800 USD. The status of the rebate claims that were included in the Cumulate update are now set to Calculated. 
 6. In the list, mark all rows.
 7. Click **Approve**.
 8. Click **Process**.
 9. In the **Customer** field, enter or select a value.
-10. Click **OK**.
-
-    A message shows that the rebate was processed successfully, and the status of the claims has been changed to Mark. This means that as a result of a Rebate accrual journal being posted:
+10. Click **OK**. A message shows that the rebate was processed successfully, and the status of the claims has been changed to Mark. This means that as a result of a Rebate accrual journal being posted:
     - The claims have now been transferred to the temporary customer balance as deductions.
     - The Rebate accrual account has been credited to represent the future liability towards the customer.
     - The Rebate expense account has been debited, in recognition of the cost incurred in connection with the sales.   
