@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Report as finished to a license plate controlled location from the Job card device
+description: This topic decribes the process for completing finished products on a production order to inventory when a license plate controls the location.
+author: johanhoffmann
+manager: AnnBe
+ms.date: 09/06/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 19351
+ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: johanho
+ms.search.validFrom: 2019-09-06
+ms.dyn365.ops.version: AX 10.0.6
+
+---
+
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
