@@ -53,7 +53,7 @@ The Asset library supports multiple types of assets. Here are some asset types t
 - **Software deployable package** – This asset type represents all the packages that are used to update an environment with the latest set of updates.
 - **Data package** – This asset type stores assets that are used for configuration and data management.
 - **GER Configuration** – This asset type stores all localization and translation assets that are applied to the client.
-- **Dynamics 365 for Retail SDK** – This asset type stores all the latest scripts for the Retail software development kit (SDK).
+- **Retail SDK** – This asset type stores all the latest scripts for the Retail software development kit (SDK).
 
 ### Asset scopes
 Every asset that the Asset library supports has multiple scopes. Here are some of the supported asset scopes:
