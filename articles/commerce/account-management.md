@@ -43,15 +43,15 @@ Account management refers to a group of pages that are used to manage user accou
 
 The account management landing page uses the following modules.
 
-**Content Placement:** This is a container that is used for all the modules in this page. Refer to content placement for more details.
+**Content placement:** This is a container module that is used for all modules on the account management landing page.
 
-**Account Welcome item:** This module is used to provide a welcome message to the account management page. It supports a Heading. Tile size defines the width of this module within the content placement. Tile size can be values 1-12. A 12 implies full width of the content placement container.
+**Account welcome item:** This module is used to provide a welcome message on the account management page. Its properties include heading and tile size. Tile size defines the width of the module within the content placement module. Tile size values range from 1-12, with 12 being the full width of the content placement container.
 
-**Account order placement item:** This module is used to provide a summary of the number of orders placed by this user account. It supports a Heading, Tile size and a View details link. The View details link should be configured to redirect to Order history page.. See Order History page for more details.
+**Account order placement item:** This module is used to provide a summary of the number of orders placed by the user account. Its properties include heading, tile size, and view details link. The view details link should be configured to redirect to the order history page.
 
-**Account profile placement item:** This module is used to provide a summary of the user profile. It supports Heading, Tile size and a View details link. The View details link should be configured to redirect to the User profile page. See User profile page for more details.
+**Account profile placement item:** This module is used to provide a summary of the user profile. Its properties include heading, tile size, view details link. The view details link should be configured to redirect to the user profile page. 
 
-**Account wishlist item:** This module is used to provide a summary of the Wishlist items “E.g You have 10 items in Wishlist”.  It supports Heading, Tile size and a View details link. The View details link should be configured to redirect to the Wishlist page. 
+**Account wishlist item:** This module is used to provide a summary of the customer's wish list items (for example, "You have 10 items in your wish list.") Its properties include heading, tile size, view details link. The view details link should be configured to redirect to the wish list page. 
 
 **Account address item:** This module is used to provide a summary of the user's addresses (for example, "You have 2 addresses added to your account."). Its properties include heading, tile size, and view details link. The view details link should be configured to redirect to the user address page
 
