@@ -170,7 +170,7 @@ The following example shows a sample module definition that registers the sample
 }
 ```
 
-When adding data action inside the module data.ts file ensure every data action that returns an **observableDataAction** object is wrapped by an **AsyncResult** class. This will guarantee the correct typings when a module is written.
+When adding a data action inside the module data.ts file, ensure that every data action that returns an **observableDataAction** object is wrapped by an **AsyncResult** class. This will guarantee the correct typings when a module is written.
 
 ```typescript
 // test-module.data.ts
