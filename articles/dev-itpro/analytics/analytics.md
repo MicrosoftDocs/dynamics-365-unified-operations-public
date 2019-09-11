@@ -49,13 +49,13 @@ Perspectives were a concept that was designed to present data from a reporting p
 | Microsoft Dynamics AX 4.0                         | Perspectives provided the ability to model ad-hoc reporting models.                                                                            |
 | Microsoft Dynamics AX 2009                        | Perspectives added support for modeling analysis cubes.                                                                                        |
 | Microsoft Dynamics AX 2012                        | Perspective modeling capabilities were improved through richer modeling support and deeper integration with the Application Object Tree (AOT). |
-| Microsoft Dynamics 365 for Finance and Operations | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
+| Microsoft Dynamics 365 Finance and Operations | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
 
-In Finance and Operations, perspectives reside within the analytics collection in the Application Explorer. Perspectives have undergone a major upgrade and now incorporate the following improvements:
+Perspectives reside within the analytics collection in the Application Explorer. Perspectives have undergone a major upgrade and now incorporate the following improvements:
 
 - You can model new aggregate models and customize existing aggregate models as a star schema within Application Explorer.
 - Modeling for key performance indicators (KPIs) in Application Explorer is supported.
-- You can model data entities by referencing aggregate models. Data entities can be exposed to external reporting tools, such as PowerBI, as OData endpoints. Data entities can also be consumed within Microsoft Dynamics 365 for Finance and Operations.
+- You can model data entities by referencing aggregate models. Data entities can be exposed to external reporting tools, such as PowerBI, as OData endpoints. Data entities can also be consumed within Finance and Operations.
 - You can consume aggregate models directly in the programming model by using X++ or C\# code. You no longer have to write MDX code to consume aggregate data.
 - Aggregate data is a first-class citizen within Finance and Operations data access. Its behavior is similar to the behavior of detailed data. For example, aggregate data can be enriched with extended data types (EDTs) and enumerations, and you can help secure them by using Finance and Operations security concepts.
 - The aggregate data infrastructure is maintained completely within the environment. By default, aggregate measurements are real-time. As a system administrator, you can manage the latency of aggregate data and controls based on available resources and business needs, without having to deal with the complexity of scheduling and external tools.
