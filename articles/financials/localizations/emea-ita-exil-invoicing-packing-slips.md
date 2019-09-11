@@ -30,6 +30,14 @@ ms.dyn365.ops.version: 10.0.7
 
 # Invoicing of packing slips
 
-This topic explains how to set up and use invoicing of packing slips.
 
-Invoicing of packing slips. Italy.
+In Italy, companies often need to issue so-called accompanying invoices which combine an ordinary invoice with DDT (transposrt document or packing slip).
+This topic explains how to set up and print accompanying invoices which also contain all the rquired packing slips details.
+ 
+## Prerequisites
+
+- The primary address of the legal entity must be in Italy.
+- In **Feature management**, enable the feature, **Invoicing of packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+
+## Accompanying invoices printing
+No specific setup required. Once enabled with **Invoicing of packing slips** feature, the layout of invoice report will be changed from a standard to the layout that contains packing slips details.
