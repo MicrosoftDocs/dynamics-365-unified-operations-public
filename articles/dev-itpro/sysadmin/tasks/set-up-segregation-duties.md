@@ -41,9 +41,6 @@ You can set up rules to separate tasks that must be performed by different users
 7. In the list, find and select the desired record. Select the second duty that is controlled by the rule.
 10. In the **Severity** field, select an option. Select the severity of the risk that occurs when the same user or role performs both duties.  
 11. In the **Security risk** field, type a value. Enter a description of the security risk.  
-12. In the **Security mitigation** field, type a value.
-    
-    Enter a description of the actions that you take to mitigate the security risk. For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.
-    
+12. In the **Security mitigation** field, type a value. Enter a description of the actions that you take to mitigate the security risk. For example, you can mitigate the risk by conducting more detailed reviews of the process, by conducting a monthly managerial review, or by sharing resources with other departments.     
 13. Click **Save**.
 
