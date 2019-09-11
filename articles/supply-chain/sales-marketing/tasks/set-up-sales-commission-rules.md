@@ -50,9 +50,7 @@ This procedure shows you how to set up and enable sales commission calculation a
     - A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items.  
     - In the USMF demo data company, there is a sales group called "Sales reps US."  
 14. On the **Action Pane**, select **General**.
-15. Click **Sales rep.**.
-    
-    The Sales rep. page displays a list of the company's sales people who are associated with a specific commission group. You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value. The total commission share across all employees must not exceed 100. 
+15. Click **Sales rep.**. The Sales rep. page displays a list of the company's sales people who are associated with a specific commission group. You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value. The total commission share across all employees must not exceed 100. 
 16. In the list, mark the selected row.
 17. Select **Edit**.
 18. Set **Commission share** to '50'.
@@ -62,9 +60,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 22. Click **Select**.
 23. Set **Commission share** to '50'.
 24. Click **Save**.
-25. Go to **Sales and marketing > Commissions > Commission calculation**.
-    
-    In the **Commission calculation** page, you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product. As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.  
+25. Go to **Sales and marketing > Commissions > Commission calculation**. In the **Commission calculation** page, you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product. As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.  
 26. Click **New**.
 27. In the **Item code** field, select 'Group'.
 28. In the **Item relation** field, click the drop-down button to open the lookup.
@@ -80,9 +76,7 @@ This procedure shows you how to set up and enable sales commission calculation a
 36. Click **Save**.
 
 ## Setting up commission posting
-1. Go to **Navigation pane  > Sales and marketing > Commissions > Commission posting**.
-    
-    Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the **General ledger**. This is done in the **Commission posting** page. Review the setup that is available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.  
+1. Go to **Navigation pane  > Sales and marketing > Commissions > Commission posting**. Commission fees are payable to the employees and must therefore be set up to ensure correct financial posting to the appropriate accounts in the **General ledger**. This is done in the **Commission posting** page. Review the setup that is available for the current company. Typically, the commission amounts are posted to a dedicated expense account and are offset to a dedicated payable account. If you don't have the commission posting rules set up, the system will fail to complete invoicing of a sales order which has eligible commissions.  
 2. Close the page.
 
 ## Assign a commission group to a customer and a product
