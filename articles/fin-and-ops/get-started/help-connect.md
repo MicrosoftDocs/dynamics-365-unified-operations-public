@@ -2,10 +2,10 @@
 # required metadata
 
 title: Connect the Help system
-description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
+description: This topic describes the components of the Help system for Finance and Operations apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the components of the Help system for Microsoft Dynamics 365 for Finance and Operations. It provides an overview of how to connect these components and a summary of how to create custom help.
+This topic describes the components of the Help system for Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. It provides an overview of how to connect these components and a summary of how to create custom help.
 
 ## Help architecture
 
-The following illustration shows the parts of the Finance and Operations Help system. The in-product Help system pulls articles from the Finance and Operations site on https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
+The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
 
 > [!NOTE]
 > The features listed in the diagram with an asterisk (\*) are planned, but are not available yet.
@@ -63,21 +63,16 @@ On the **System parameters** page, follow these steps:
 
 1. Select the Lifecycle Services project to connect to.
 2. Select the BPM libraries (within the selected project) to retrieve task recordings from.
-
-    - For Finance and Operations, for Microsoft content, select the most recent APQC Unified Library for Finance and Operations.
-    - For Retail, we will be releasing a library in the near future.
-    - You do not need to select a library for Talent—the connection to the correct library is established for you.
-
 3. Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the **Help** pane.
 
-After you complete these steps, you can open the **Help** pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on in Finance and Operations. If no task guides are found, you can enter keywords to refine your search.
+After you complete these steps, you can open the **Help** pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you're currently on in Finance and Operations apps. If no task guides are found, you can enter keywords to refine your search.
 
 ### Showing translated task guides
 
-Translated task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In Finance and Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
+Translated task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In Finance and Operations apps, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
 
 > [!NOTE]
-> Even though many task guides have been translated, right now the Finance and Operations client is not showing the translated task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
+> Even though many task guides have been translated, right now the client is not showing the translated task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
 >
 > - If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.
 > - If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
@@ -88,7 +83,7 @@ You can use task guides to create custom help, or connect a website to the Help 
 
 ### Create custom help with task guides
 
-You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent.
+You can create custom help for Finance and Operations apps, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent.
 
 For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 
@@ -96,7 +91,7 @@ For partners, if you promote a library to be a corporate library, and include it
 
 Microsoft has provided a white paper and sample code that describe how to create and connect a custom help site to the Help pane. For more information, see:
 
-- [Create Custom Help for Finance and Operations (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## Additional resources
