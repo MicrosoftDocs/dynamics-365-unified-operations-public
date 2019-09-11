@@ -2,8 +2,7 @@
 # required metadata
 
 title: Dispose of a fixed asset as scrap
-description: The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transactions that can be eliminated include an asset’s acquisition, accumulated depreciation, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down.
-
+description: The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
 author: moaamer
 manager: Ann Beebe
 ms.date: 08/14/2019
@@ -34,55 +33,54 @@ ms.dyn365.ops.version: 10.0.6
 
 # Dispose of a fixed asset as scrap
 
-The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset’s acquisition and accumulated depreciation transactions, as well as other fixed asset transactions. Eliminating these transactions will affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down. 
+The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset's acquisition and accumulated depreciation transactions and other fixed asset transactions. Elimination of these transactions affects balance sheet accounts, such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down accounts.
 
-| Transaction                         |   | Dr | Cr |
-|-------------------------------------|---|----|----|
-| Dr. Accumulated depreciation        |   | xx |    |
-| Cr. Fixed assets gain/loss          |   |    | xx |
-|                                     |   |    |    |
-| Dr. Fixed assets gain/loss          |   | xx |    |
-| Cr. Fixed asset acquisition account |   |    | xx |
-|                                     |   |    |    |
-| Dr. Fixed assets gain/loss (NBV)    |   | xx |    |
-| Cr. Fixed assets gain/loss (NBV)    |   |    | xx |
+| Transaction                                         | Debit (Dr.) | Credit (Cr.) |
+|-----------------------------------------------------|-------------|--------------|
+| Dr. Accumulated depreciation                        | X           |              |
+| Cr. Fixed assets gain/loss                          |             | X            |
+| Dr. Fixed assets gain/loss                          | X           |              |
+| Cr. Fixed asset acquisition account                 |             | X            |
+| Dr. Fixed assets gain/loss (net book value \[NBV\]) | X           |              |
+| Cr. Fixed assets gain/loss (NBV)                    |             | X            |
 
-[!Note] We recommend working closely with your company's CFO/Controller to identify the correct accounts to use for each transaction type, and to verify that the disposal process and the transactions that it generates, update those accounts correctly.     
+> [!NOTE]
+> We recommend that you work closely with your company's chief financial officer (CFO) or controller to identify the correct accounts that should be used for each transaction type, and also to verify that the disposal process and the transactions that it generates update those accounts correctly.
 
-When disposing of a fixed asset as scrap, you must have created ledger accounts associated with the asset's acquisition value, depreciation for the current year, depreciation for prior years, and the asset's net book value. The fixed assets transaction types are listed in the Fixed assets posting profile under the **Disposal** FastTab. To view the Fixed assets posting profile, go to **Fixed assets > Setup > Fixed assets posting profile**, then open the **Disposal** FastTab and select **Scrap**. The following illustration shows the **Fixed assets posting profile** form:
+Before you dispose of a fixed asset as scrap, you must create ledger accounts that are associated with the asset's acquisition value, depreciation for the current year, depreciation for previous years, and the asset's NBV. The fixed asset transaction types are listed on the **Fixed assets posting profile** page. Go to **Fixed assets \> Setup \> Fixed asset posting profiles**, and then, on the **Disposal** FastTab, select **Scrap** in the field above the grid. The following illustration shows the list of fixed asset transaction types on the **Fixed asset posting profiles** page.
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_1.png">
 
-For the following example, assume that there is a fixed asset that was acquired on January 1, 2018, and that it will be scrapped on March 31st 2019. 
+For the following example, a fixed asset was acquired on January 1, 2018, and it will be scrapped on March 31, 2019.
 
-Acquisition price 	  		= 24,000.00 USD
+- **Acquisition price:** 24,000.00 US dollars (USD)
+- **Service life:** Two years
+- **Depreciation method:** Straight line service life
+- **Depreciation amount:** 1,000.00 USD per month
 
-Service life 		      		= 2 Years
+The NBV of a fixed asset is calculated by using the following formula:
 
-Depreciation method is straight line service line.
+Net book value = Acquisition price – Depreciation
 
-Depreciation amount			= 1000.00 USD per month
-
-This fixed asset was acquired and depreciated for 15 months from January 2018 through March 2019. This means the asset's net book value is 9,000.00 USD.
-
-Acquisition price 	= 24,000.00 USD
-
-Depreciation 		    = (15,000.00) USD
-
-Net book value	  	=    9,000.00 USD
+In this example, the fixed asset was acquired and was depreciated for 15 months, from January 2018 through March 2019. Therefore, the asset's NBV is 9,000.00 USD (24,000.00 USD – 15,000.00 USD).
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_2.png">
 
-To create a disposal journal, go to **Fixed assets > Journal entries > Fixed assets journal** then move to **Lines**, select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, do not enter an amount in either the **Debit** or **Credit** fields.  
+To create a disposal journal, go to **Fixed assets \> Journal entries \> Fixed assets journal**, and then, on the Action Pane, select **Lines**. Select **Disposal – scrap**, and then select a fixed asset ID. To fully dispose of the asset, don't enter a value in either the **Debit** field or the **Credit** field.
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_3.png">
 
-The fixed asset disposal scrap transaction will change the fixed asset book fields as the following; set the **Fixed asset status** field to **Scrapped** and add the date that the asset was scrapped.  
+The fixed asset disposal scrap transaction changes the field values for the fixed asset book in the following ways:
+
+- In the **Balance** section, the **Status** field is updated to **Scrapped**.
+- In the **Issue** section, the **Disposal date** field is set to the date when the asset was scrapped.
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_4.png">
 
-Fixed asset balance
+The following illustration shows the fixed asset balance.
 
 <img src="media/Fixed_asset_Disposal_scrap_scenario_5.png">
-Posted voucher
+
+The following illustration shows the voucher that is posted.
+
 <img src="media/Fixed_asset_Disposal_scrap_scenario_6.png">
