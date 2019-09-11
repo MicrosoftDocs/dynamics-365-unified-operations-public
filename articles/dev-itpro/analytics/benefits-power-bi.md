@@ -36,7 +36,7 @@ This topic describes the **Benefits** Microsoft Power BI content. It explains ho
 ## Accessing the Power BI content
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
-- Microsoft Dynamics 365 for Finance and Operations
+- Dynamics 365 Finance
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content
