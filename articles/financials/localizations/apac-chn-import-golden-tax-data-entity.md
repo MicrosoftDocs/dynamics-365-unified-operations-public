@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import the Chinese Golden Tax data entity
-description: This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2017
@@ -32,10 +32,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
   
-This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Finance and Operations.
+This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 Finance.
 
 > [!NOTE] 
-> You don't need to import the Chiness Golden Tax data entity for Dynamics 365 for Finance and Operations version 10.0 and later. 
+> You don't need to import the Chinese Golden Tax data entity for Dynamics 365 for Finance and Operations version 10.0 and later. 
 
 To import the Chinese Golden Tax data entity, complete the following steps.
 
