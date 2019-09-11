@@ -38,20 +38,11 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 2. Click **New**.
 3. In the **Account type** field, select 'Prospect'.
 4. In the **Prospect** field, enter or select a value.
-5. Expand the **General** section.
-    
-    Because you chose to create a quotation from the Sales and Marketing area, the type is automatically set to 'Sales quotation'. To create a quotation for a project you must access it from the **Project management and accounting** module.
-    
-6. Click **OK**.
-    
-    The fields and actions on the quotation lines are very similar to the ones on the sales order lines.   Like sales orders, quotations can be created for a specific item or, when item number is not known or does not exist at the time of quotation creation, quotations can be created for a sales category.
-    
+5. Expand the **General** section. Because you chose to create a quotation from the Sales and Marketing area, the type is automatically set to 'Sales quotation'. To create a quotation for a project you must access it from the **Project management and accounting** module.
+6. Click **OK**. The fields and actions on the quotation lines are very similar to the ones on the sales order lines.   Like sales orders, quotations can be created for a specific item or, when item number is not known or does not exist at the time of quotation creation, quotations can be created for a sales category.     
 7. In the **Item** field, enter or select a value.
 8. In the **Site** field, type a value.
-9. In the **Quantity** field, enter a number.
-    
-    If there are valid trade agreements for the item selected on the line, the applicable price and discounts will be automatically copied to the quotation line. Make sure that the Unit price field contains a value and you can also enter discount values if you want to.
-
+9. In the **Quantity** field, enter a number. If there are valid trade agreements for the item selected on the line, the applicable price and discounts will be automatically copied to the quotation line. Make sure that the Unit price field contains a value and you can also enter discount values if you want to. 
 10. Click **Save**.
 11. On the **Action Pane**, click **Sales quotation**.
 12. Click **Totals**.
@@ -64,9 +55,7 @@ This procedure demonstrates how to create and update a sales quotation. You can 
 17. On the **Action Pane**, click **Quotation**.
 18. Click **Send quotation**.
 19. Select 'Yes' in the **Print quotation** field.
-20. Click **OK**.
-    
-    The report may take a minute to generate. Don’t close the page until it does so.
+20. Click **OK**. The report may take a minute to generate. Don’t close the page until it does so.
 
 ## Update a sales quotation
 1. Go to **Navigation pane > Modules > Sales and marketing > Sales quotations > All quotations**.
