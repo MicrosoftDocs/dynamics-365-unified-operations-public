@@ -97,15 +97,15 @@ import { ICampaignContainerrProps } from './campaignContainer.props.autogenerate
  * @extends {React.PureComponent<ICampaignContainerProps<ICampaignContainerData>>}
  */
 class CampaignContainer extends React.PureComponent<ICampaignContainerProps<ICampaignContainerData>> {
-    public render(): JSX.Element {
+    public render(): JSX.Element | null {
         const { slots } = this.props;
+
         if (!slots) {
-            return (
-                <div className='row'> No Slots Configured</div>
-            );
+            return null;
         }
+
         return (
-            <div>
+            <div {...this.props.renderModuleAttributes(this.props)} id={this.props.id}>
                 {slots.slot1[0]}
                 {slots.slot2[0]}
             </div>
@@ -125,67 +125,69 @@ The following example shows a sample page mock, campaignContainerMock.json, that
 {
     "exception": null,
     "pageRoot": {
-      "modules": {
-        "primary": [{
-            "modules": {
-                "slot1": [{ "id": "ProductFeature__1", "typeName": "productFeature" }],
-                "slot2": [{ "id": "ProductFeature__0", "typeName": "productFeature" }]
-                },
-            "id": "primaryArea__0",
-            "typeName": "myContainer"
-        }]  
-      },
-      "id": "default-page_0",
-      "typeName": "default-page"
-    },
-    "modules": {
-      "default-page_0": {
-        "id": "default-page_0",
-        "typeName": "default-page"
-      },
-      "primaryArea__0": {
-        "id": "primaryArea__0",
-        "typeName": "myContainer"
-      },
-      "ProductFeature__0": {
-        "config": {
-            "imageAlignment": "left",
-            "productTitle": "Ethiopian Natural Limu",
-            "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
-            "productImage": {
-              "src" : "https://bit.ly/2LupO8u",
-              "altText" : "Ethiopian Natural Limu"
-            },
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__0",
-        "typeName": "productFeature"
-      },
-      "ProductFeature__1": {
-        "config": {
-            "imageAlignment": "right",
-            "productIds": "22565430170",
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__1",
-        "typeName": "productFeature"
-      }
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "primaryArea__0",
+                                "typeName": "myContainer",
+                                "modules": {
+                                    "slot1": [
+                                        { 
+                                            "id": "ProductFeature__0",
+                                            "typeName": "productFeature",
+                                            "config": {
+                                                "imageAlignment": "left",
+                                                "productTitle": "Ethiopian Natural Limu",
+                                                "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
+                                                "productImage": {
+                                                    "src" : "https://bit.ly/2LupO8u",
+                                                    "altText" : "Ethiopian Natural Limu"
+                                                },
+                                                "buttonText": "Buy Now"
+                                            }
+                                        }
+                                    ],
+                                    "slot2": [
+                                        {                                     
+                                            "id": "ProductFeature__1",
+                                            "typeName": "productFeature",
+                                            "config": {
+                                                "imageAlignment": "right",
+                                                "productIds": "22565430170",
+                                                "buttonText": "Buy Now"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     },
     "renderingContext": {
-        "gridSettings":{
-            "xs":{
+        "gridSettings": {
+            "xs": {
                 "w":767
             },
-            "sm":{
+            "sm": {
                 "w":991
             },
-            "md":{
+            "md": {
                 "w":1199
             },
-            "lg":{
+            "lg": {
                 "w":1599
             },
-            "xl":{
+            "xl": {
                 "w":1600
             }
         },        
