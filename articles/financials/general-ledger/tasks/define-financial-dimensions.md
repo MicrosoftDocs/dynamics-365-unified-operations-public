@@ -37,22 +37,11 @@ This task guide demonstrates adding an entity backed financial dimension and a c
 1. Go to **Navigation pane > Modules > General ledger > Chart of accounts > Dimensions > Financial dimensions**.
 2. Click **New**.
 3. In the **User values form** field, select a system-defined entity to base the financial dimension on. 
-4. In the **Dimension name** field, type a value to describe the financial dimension.
-    
-    The name can be different than the system-defined entity but cannot contain spaces or special characters.
-    
-5. Click **Activate**.
-    
-    Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.  
-
+4. In the **Dimension name** field, type a value to describe the financial dimension. The name can be different than the system-defined entity but cannot contain spaces or special characters.
+5. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.  
 6. Click **Close** on the activation message.
-7. Click **Activate**.
-    
-    Dimension activation can be scheduled to run by batch at a specific date and time.  
-
-8. On **Action pane**, click **Dimension values**.
-    
-    Some dimension values are company specific. You can verify if they are company specific by if the company name is showing in the dimension values list.  
+7. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.  
+8. On **Action pane**, click **Dimension values**. Some dimension values are company specific. You can verify if they are company specific by if the company name is showing in the dimension values list.  
 
 ## Create a custom financial dimension
 1. Close the page.
