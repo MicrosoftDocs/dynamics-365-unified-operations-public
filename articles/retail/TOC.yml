@@ -624,6 +624,8 @@
       href: dev-itpro/extend-metadata.md
     - name: Call the CRT service in offline mode
       href: dev-itpro/call-crt-service-offline.md
+    - name: Create new Retail Server extension
+      href: dev-itpro/retail-server-extension.md
   - name: Commerce Runtime (CRT) extensibility
     items:
     - name: CRT architecture and configuration
