@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sales tax calculation on general journal
-description: This topic explains how sales taxes are calculated for different types of accounts, such as vendor, customer, ledger, and project, on general journal lines.
+title: Sales tax calculation on general journal lines
+description: This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 author: EricWang
 manager: Ann Beebe
 ms.date: 08/14/2019
@@ -31,106 +31,98 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Sales Tax Calculation on General Journal
+# Sales tax calculation on general journal lines
 
+This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 
+The process can be divided into three steps:
 
-This topic explains how sales taxes are calculated for different types of accounts, such as vendor, customer, ledger, and project, on general journal lines.
+1. Determine the sales tax direction.
+2. Determine the sales tax amount on the temporary sales tax page.
+3. Determine the sales tax amount and account on the voucher.
 
-The process can be divided into 3 steps:
+## Determine the sales tax direction
 
-1. Determine sales tax direction
-2. Determine sales tax amount on the temporary sales tax form
-3. Determine sales tax amount and account on the voucher
+The way that the sales tax direction is determined depends on the type of account in the voucher. The sales tax direction is determined by rules that govern the following combinations:
 
+1. **Account type = Project** – If a voucher contains lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 3, regardless of which line the sales tax group or item sales tax group is selected on.
+2. **Account Type = Vendor** – If a voucher contains lines for accounts of the **Vendor** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 1, regardless of which sales tax group or item sales tax group is selected on which line.
+3. **Account Type = "Customer** – If a voucher contains lines for accounts of the **Customer** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 2, regardless of which sales tax group or item sales tax group is selected on which line.
+4. **Account Type = "Ledger** – If a voucher contains lines for accounts of the **Ledger** type only, the sales tax direction is determined as described in rule 4.
 
+The following sections describe each rule in more detail. 
 
-## Determine Sales Tax Direction
+### Rule 1: Account type = Vendor
 
-Determining the sales tax direction depends on the account type in the voucher. Sales tax direction is determined by rules that govern the following combinations. 
-
-1. **Account type = Project** If a voucher contains lines for a Project account type, the sales tax direction is determined as described in rule 3, regardless of which line sales tax group or item sales tax group is selected on.
-2. **Account Type = Vendor** If a voucher contains lines for Vendor account types and doesn't contain lines for Project account types  the sales tax direction is determined as described in rule 1, regardless of which sales tax group or item sales tax group is selected on which line.
-3. **Account Type = "Customer** If a voucher contains lines for Customer account types and doesn't contain lines for Project account types, the sales tax direction is determined as described in rule 2, regardelss of which sales tax group or item sales tax group is selected on which line.
-4. **Account Type = "Ledger** If a voucher only contains Ledger account lines, the sales tax direction is determined as described in rule 4.
-
-Each rule is described in greater detail as follows. 
-
-### Rule 1: Account Type = Vendor
-
-If a voucher has journal line account type ='Vendor', all the journal lines in this voucher will apply the same tax direction, the rule is:
+If a voucher has journal line where the account type is **Vendor**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
 
 ![](media/Sales-Tax-Direction-Vendor.jpg)
 
- 
+### Rule 2: Account type = Customer
 
-### Rule 2: Account Type = Customer
-
-If a voucher has journal line account type ='Customer', all the journal lines in this voucher will apply the same tax direction, the rule is
+If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
 
 ![](media/Sales-Tax-Direction-Customer.jpg)
 
-### Rule 3: Account Type = Project
+### Rule 3: Account type = Project
 
-If a voucher has journal line account type ='Project', all the journal lines in this voucher will apply the same tax direction, the rule is
+If a voucher has journal line where the account type is **Project**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
 
 ![](media/Sales-Tax-Direction-Vendor.jpg)
 
-### Rule 4: Account Type = Ledger
+### Rule 4: Account type = Ledger
 
-Below logic only applies when there only exists "Ledger" lines in a voucher
+The following illustration shows the rule that applies when a voucher has only journal lines where the account type is **Ledger**.
 
 ![](media/Sales-Tax-Direction-Ledger.jpg)
 
+### Override the sales tax direction
 
+You can override the sales tax direction when the voucher contains only lines where the account type is **Ledger**.
 
-### Sales Tax Direction Override
-
-You can override the sales tax direction when the voucher contains only Ledger lines.
-
-***Path: General Ledger-> Chart of Accounts -> Accounts -> Main Accounts -> Legal Entity Override***
+Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and select the **Legal entity overrides** FastTab.
 
 ![](media/Override-tax-direction.png)
 
-## Determine sales tax amount on temporary sales tax form
+## Determine the sales tax amount on the temporary sales tax page
 
 This section describes how the sales tax amount sign is calculated.
 
 ![](media/sales-tax-amount-sign.jpg)
 
-The generic rule for determining the sign of sales tax amounts on the temporary sales tax form is as follows.
+The following table shows the generic rule for determining the sign of sales tax amounts on the temporary sales tax page.
 
-| Journal Line Amount | Sales Tax Direction  | Sales Tax Amount Sign |
-| ------------------- | -------------------- | --------------------- |
+| Journal line amount | Sales tax direction  | Sales tax amount sign |
+|---------------------|----------------------|-----------------------|
 | Positive            | Sales Tax Receivable | Positive              |
 | Positive            | Sales Tax Payable    | Negative              |
 | Negative            | Sales Tax Receivable | Negative              |
 | Negative            | Sales Tax Payable    | Positive              |
 
-There is a special rule for vouchers containing only Project or Ledger lines, and sales tax group or item sales tax group that are selected on the Ledger line. This rule is controlled by Enable independent sales tax calculation feature for general journals. When this feature is not enabled, the Ledger line tax amount will use debit/credit direction of the Project line. When the feature is enabled, the Ledger line tax amount will use its own debit/credit direction, as shown in the following tables. 
+There is a special rule for vouchers that have only **Project** or **Ledger** lines, when a sales tax group or item sales tax group is selected on the **Ledger** line. This rule is controlled by Enable independent sales tax calculation feature for general journals. When this feature is turned off, the tax amount of the **Ledger** line uses the debit/credit direction of the **Project** line. When the feature is turned on, the tax amount of the **Ledger** line uses its own debit/credit direction. The following tables show the rule for each scenario. 
 
-Feature enabled rule
+**Rule when the feature is turned on**
 
-| Journal Line Amount of Project | Sales Tax Direction  | Sales Tax Amount Sign |
-| ------------------------------ | -------------------- | --------------------- |
+| Journal line amount of project | Sales tax direction  | Sales tax amount sign |
+|--------------------------------|----------------------|-----------------------|
 | Positive                       | Sales Tax Receivable | Positive              |
 | Negative                       | Sales Tax Receivable | Negative              |
 
-Feature disabled rule
+**Rule when the feature is turned off**
 
-| Journal Line Amount of Ledger | Sales Tax Direction  | Sales Tax Amount Sign |
-| ------------------------------ | -------------------- | --------------------- |
+| Journal line amount of ledger  | Sales tax direction  | Sales tax amount sign |
+|--------------------------------|----------------------|-----------------------|
 | Positive                       | Sales Tax Receivable | Positive              |
 | Negative                       | Sales Tax Receivable | Negative              |
 
-## Determine sales tax amount and account on voucher
+## Determine the sales tax amount and account on the voucher
 
-When you post sales taxes, the main account will be retrieved from the Ledger Posting Group profile. When sales taxes are receivable, the sytsem will use the Sales Tax Receivable account configured in the posting profile. For sales taxes that are payable, the sytems will use Sales Tax Payable account specified in the profile.
+When you post sales taxes, the main account is retrieved from the ledger posting group profile. When sales taxes are receivable, the system uses the Sales Tax Receivable account that is specified in the profile. For sales taxes that are payable, the system uses Sales Tax Payable account that is specified in the profile.
 
-The generic rule is:
+The following table shows the generic rule.
 
-| Sales Tax Direction  | Sales Tax Amount Sign | Sales Tax Account      | Amount on Voucher |
-| -------------------- | --------------------- | ---------------------- | ----------------- |
+| Sales tax direction  | Sales tax amount sign | Sales tax account      | Amount on voucher |
+|----------------------|-----------------------|------------------------|-------------------|
 | Sales Tax Receivable | Positive              | Tax Receivable Account | Positive (Debit)  |
 | Sales Tax Receivable | Negative              | Tax Receivable Account | Negative(Credit)  |
 | Sales Tax Payable    | Positive              | Tax Payable Account    | Negative(Credit)  |
