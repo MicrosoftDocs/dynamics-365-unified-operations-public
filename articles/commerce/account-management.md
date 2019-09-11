@@ -1,40 +1,47 @@
 ---
 # required metadata
 
-title: Account manangement on ecommerce
-description: This topic describes how to create account manangement modules and pages on ecommerce
-author: anupamar-ms
-manager: BrendanS
-ms.date: 07/25/2019
+title: Account management pages
+description: This topic covers account management pages in Dynamics 365 Commerce.
+manager: annbe
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-ms.search.form:  RetailOperations, RetailFunctionalityProfile
+# ms.search.form: 
+# ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anupamr-ms
-ms.search.validFrom: 2019-07-25
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
-
 ---
 
-# Account management
+# Account management pages
 
-Account Management is a group of pages that are used to manage user account related information. The pages include Account Management landing page, User Profile page, Address page, Order history page, Order details page, Loyalty page and Wishlist page.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-## Account Management Landing Page
+This topic covers account management pages in Dynamics 365 Commerce.
 
-This page uses the following modules:
+## Overview
+
+Account management refers to a group of pages that are used to manage user account-related information in Dynamics 365 Commerce. Account management pages include the account management landing page, user profile page, user address page, order history page, order details page, loyalty page, and wish list page.
+
+### Account management landing page
+
+The account management landing page uses the following modules.
 
 **Content Placement:** This is a container that is used for all the modules in this page. Refer to content placement for more details.
 
@@ -46,30 +53,30 @@ This page uses the following modules:
 
 **Account wishlist item:** This module is used to provide a summary of the Wishlist items “E.g You have 10 items in Wishlist”.  It supports Heading, Tile size and a View details link. The View details link should be configured to redirect to the Wishlist page. 
 
-**Account address item:** This module is used to provide a summary of the user addresses E.g. “You have 2 addresses added to your account”. It supports Heading, Tile size and a View details link. The View details link should be configured to redirect to the User Address page
+**Account address item:** This module is used to provide a summary of the user's addresses (for example, "You have 2 addresses added to your account."). Its properties include heading, tile size, and view details link. The view details link should be configured to redirect to the user address page
 
-**Account loyalty item:** This module is used to provide a summary of the user addresses E.g. “You have 2 addresses added to your account”. It supports Heading, Tile size, View details link and Become a Member link. The View details link should be configured to redirect to the Loyalty page. The Become a member link should be configured to redirect the user to a page that will allow them to join the loyalty program.
+**Account loyalty item:** This module is used to display and link to loyalty program information. Its properties include heading, tile size, view details link, and become a member link. The view details link should be configured to redirect to the loyalty page. The become a member link should be configured to redirect the user to a page that will enable them to join the loyalty program.
 
-## Order History Page
+### Order history page
 
-The page shows all the recent orders placed by the user. It uses Order History module. 
+The order history page uses the order history module to show all of the recent orders placed by the user. 
 
-## Order Details page
+### Order details page
 
-The Order details page provides a more detailed information of each order. It uses the order details module which requires the sales id or transaction id to retrieve the order details. It is accessed from the order history page.
+The order details page provides detailed information for each orde, and is accessed from the order history page. It uses the order details module which requires the sales ID or transaction ID to retrieve the order details.
 
-## User Profile page
+### User profile page
 
-The user profile page shows user account details such as Name, Email. Email cannot be changed but name can be edited. It uses the user profile module.
+The user profile page displays user account details such as name and email address. The email address cannot be removed but can be edited. The user profile page uses the user profile module.
 
-## User Addresses page
+### User address page
 
-The user address page shows the list of addresses associated to the user account. These are addresses the user provided during checkout or added directly from this page. The Address module is used Add, Edit, Set Primary address and render existing addresses on this page.
+The user address page displays the list of addresses associated with the user account. These are addresses that the user provided during checkout or added directly from this page. The user address module is used add and edit addresses, set the primary address, and render existing addresses on the page.
 
-## Wishlist page
+### Wish list page
 
-The Wishlist page, shows the items added to the user Wishlist. It uses the Wishlist module to show the items in the Wishlist.
+The wish list page displays the items added to the customer's wish list, and uses the wish list module to render wish list items.
 
-## Loyalty page
+### Loyalty page
 
-The user can join a loyalty program or if the user is already a loyalty member they can view their program details. They can also view the points earned and redeemed in recent transactions.
+The loyalty page enables customers to join a loyalty program, or to view their program details if already loyalty program members. They can also view points earned and redeemed in recent transactions.
