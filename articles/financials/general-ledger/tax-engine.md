@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax engine
-description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 Finance.
 author: yijialuan
 manager: AnnBe
 ms.date: 12/15/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-The Tax engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 for Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. 
+The Tax engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 Finance. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. 
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
