@@ -115,4 +115,4 @@ As of the February 2018 release of Lifecyle Services (LCS), you can execute the 
 The process described in [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
 
 ## What do I need to know if I am developing for Retail?
-If you are developing for Dynamics 365 for Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](../../retail/dev-itpro/cloud-dev-box.md).
+If you are developing for Dynamics 365 Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](../../retail/dev-itpro/cloud-dev-box.md).
