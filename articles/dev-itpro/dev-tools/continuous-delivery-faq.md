@@ -5,7 +5,7 @@ title: Development and continuous delivery FAQ
 description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -158,4 +158,6 @@ The following servicing requests and tools are supported by LCS, which may help 
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
 5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
-6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.  
+6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
+
+For more information about planning an enviornment, see [Environment planning](../../fin-and-ops/imp-lifecycle/environment-planning.md).
