@@ -62,14 +62,8 @@ This task guide demonstrates adding an entity backed financial dimension and a c
     - The name cannot contain spaces or special characters.  
     - You can also specify an account mask to limit the amount and type of information that you can enter for dimension values.   
     - You can enter characters that remain the same for each dimension value, such as letters or a hyphen. You can also enter number signs (#) and ampersands (&) as placeholders for letters and numbers that will change every time that a dimension value is created. Use a number sign (#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter.  Example: To limit the dimension value to the letters CC and three numbers, you enter CC-### as the format mask.  
-5. Click **Activate**.
-    
-    Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.
-    
-6. Click **Activate**.
-
-    Dimension activation can be scheduled to run by batch at a specific date and time. 
-    
+5. Click **Activate**. Activating the financial dimension updates the table with the financial dimension name and removes deleted dimensions. You can enter dimension values before you activate a financial dimension, but a financial dimension cannot be used until it is activated.     
+6. Click **Activate**. Dimension activation can be scheduled to run by batch at a specific date and time.      
 7. On **Action pane**, click **Dimension values**.
 8. Click **New**.
 9. In the **Dimension value** field, type a name to describe your financial dimension value.
