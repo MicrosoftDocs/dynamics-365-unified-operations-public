@@ -606,6 +606,8 @@
       href: dev-itpro/pos-handler.md
     - name: View POS extension package information
       href: dev-itpro/view-pos-extension-package-details.md
+    - name: Test recorder and Regression suite automation tool for Retail Cloud POS
+      href: dev-itpro/pos-rsat.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Integrate POS with a new hardware device
