@@ -53,59 +53,59 @@ The following example shows a page mock that adds two instances of the same modu
 {
     "exception": null,
     "pageRoot": {
-      "modules": {
-        "primary": [
-          { "id": "ProductFeature__0", "typeName": "productFeature" },
-          { "id": "ProductFeature__1", "typeName": "productFeature" }
-        ]
-      },
-      "id": "default-page_0",
-      "typeName": "default-page"
-    },
-    "modules": {
-      "default-page_0": {
-        "id": "default-page_0",
-        "typeName": "default-page"
-      },
-      "ProductFeature__0": {
-        "config": {
-            "imageAlignment": "left",
-            "productTitle": "Ethiopian Natural Limu",
-            "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
-            "productImage": {
-              "src" : "https://bit.ly/2LupO8u",
-              "altText" : "Ethiopian Natural Limu"
-            },
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__0",
-        "typeName": "productFeature"
-      },
-      "ProductFeature__1": {
-        "config": {
-            "imageAlignment": "right",
-            "productIds": "22565430170",
-            "buttonText": "Buy Now"
-        },
-        "id": "ProductFeature__1",
-        "typeName": "productFeature"
-      }
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "productFeature",
+                                "config": {
+                                    "imageAlignment": "left",
+                                    "productTitle": "Ethiopian Natural Limu",
+                                    "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness.  Available in a light or medium-dark roast.",
+                                    "productImage": {
+                                        "src" : "https://bit.ly/2LupO8u",
+                                        "altText" : "Ethiopian Natural Limu"
+                                    },
+                                    "buttonText": "Buy Now"
+                                }
+                            },
+                            {
+                                "id": "ProductFeature__1",
+                                "typeName": "productFeature",
+                                "config": {
+                                    "imageAlignment": "right",
+                                    "productIds": "22565430170",
+                                    "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
     },
     "renderingContext": {
-        "gridSettings":{
-            "xs":{
+        "gridSettings": {
+            "xs": {
                 "w":767
             },
-            "sm":{
+            "sm": {
                 "w":991
             },
-            "md":{
+            "md": {
                 "w":1199
             },
-            "lg":{
+            "lg": {
                 "w":1599
             },
-            "xl":{
+            "xl": {
                 "w":1600
             }
         },        
@@ -119,24 +119,6 @@ The following example shows a page mock that adds two instances of the same modu
 
 ```
 
-Every page must have a root page container (**pageRoot**). In this example, the **default-page** page container is used.
+Every page defines a root (**core-root** in the example above) that controls the page HTMl structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
 
-A node that is named **modules** lists the modules that are included inside the page. The **default-container** page container is then used. This page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row.
-
-```
-{
-    ...
-    "pageRoot": {
-        "modules": {
-            "primary": [
-                { "id": "ProductFeature__0", "typeName": "productFeature" },
-                { "id": "ProductFeature__1", "typeName": "productFeature" }
-            ]
-        },
-        "id": "default-page_0",
-        "typeName": "default-page"
-    },
-...
-```
-
-In this example, each module has an **id** value (**ProductFeature\_\_0** and **ProductFeature\_\_1**). The **id** value represents the mock data that should be used for the module. The **id** value can be named anything, but it requires a matching section in the **modules** section of the mock file, where you can configure different mock data for each instance of the module. In the example, notice that one module has an **imageAlignment** configuration setting of **left**, and the other module has an **imageAlignment** configuration setting of **right**.
+The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-container** page container is then used. This page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
