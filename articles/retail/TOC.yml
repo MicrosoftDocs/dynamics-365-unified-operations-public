@@ -210,6 +210,8 @@
       href: pos-application-user-language-settings.md
     - name: Set up and manage images for MPOS
       href: set-up-manage-images-retail-mpos.md
+    - name: Client images in POS
+      href: pos-image.md
   - name: Info codes and info code groups
     href: info-codes-retail.md
   - name: POS improvements for serialized products
