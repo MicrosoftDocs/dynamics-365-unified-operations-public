@@ -47,7 +47,7 @@ This time zone might not be the same as a user’s or company’s time zone, so 
 
 -	Consider limiting the number of people who can enter time zone preferences. 
 -	Avoid changing the time zone preferences for any bank accounts that already have statements imported. Changing the time zone preference could make it seem that more recent statements were imported prior to older statements. 
--	Before changing time zone preferences, review the time zone preference for all the imports that use the specific data source format. The time zone preference specified for that format will apply to all the import projects use that format. Verify that the time zone preference is appropriate for all the import projects for that use that format. 
+-	Before changing time zone preferences, review the time zone preference for all the imports that use the specific data source format. The time zone preference specified for that format will apply to all the import projects that use that format. Verify that the time zone preference is appropriate for all the import projects using that format. 
 
 
 ## Sample files
