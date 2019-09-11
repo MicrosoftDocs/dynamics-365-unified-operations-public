@@ -30,8 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Online channel reporting
 
-In order to see how your online channel is performing you have several reports available in the HQ.
-
+In order to see how your online channel is performing you have several reports available in the HQ which you can generate and view.
 They can be accessed from Retail -> Inquiries and reports -> Sales reports
 
 ### Channel summary report
