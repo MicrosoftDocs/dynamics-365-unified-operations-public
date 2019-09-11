@@ -93,7 +93,7 @@ import { ICampaignContainerrProps } from './campaignContainer.props.autogenerate
 
 /**
  *
- * CampaignContainerr component
+ * CampaignContainer component
  * @extends {React.PureComponent<ICampaignContainerProps<ICampaignContainerData>>}
  */
 class CampaignContainer extends React.PureComponent<ICampaignContainerProps<ICampaignContainerData>> {
@@ -136,7 +136,7 @@ The following example shows a sample page mock, campaignContainerMock.json, that
                         "primary": [
                             {
                                 "id": "primaryArea__0",
-                                "typeName": "myContainer",
+                                "typeName": "campaignContainer",
                                 "modules": {
                                     "slot1": [
                                         { 
