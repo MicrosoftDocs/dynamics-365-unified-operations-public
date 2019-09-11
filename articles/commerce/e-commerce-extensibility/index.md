@@ -123,7 +123,7 @@ Create a compelling customer shopping experience with your content.  Learn how t
 * [Onboarding Ratings & Reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-onboarding/articles/commerce/onboarding-ratings-reviews.md)
 * [Moderate ratings & reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-moderation/articles/commerce/manage-reviews.md)
 * [Configure Ratings & Reviews](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-siteandmodules/articles/commerce/configure-ratings-reviews.md)
-* [Configure batch job for product ratings ingestion]
+* [Configure batch job for product ratings ingestion](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/gmohanv-rnr-hqconfigurations/articles/commerce/Product%20ratings%20in%20omni%20channel.md)
 
 ## Recommendations
 * [Product recommendations overview](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/product-recommendations-overview?branch=josaw-benita1)
