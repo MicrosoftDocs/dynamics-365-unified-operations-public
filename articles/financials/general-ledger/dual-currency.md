@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual currency
-description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
 author: kweekley
 manager: AnnBe
 ms.date: 08/07/2019
