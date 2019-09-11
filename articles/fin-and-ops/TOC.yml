@@ -1945,6 +1945,8 @@
           href: ../financials/localizations/tasks/create-submit-vat-report.md
       - name: View transactions on settlement
         href: ../financials/localizations/emea-transactions-settlement-form.md
+      - name: Tax point date (Date of VAT register)
+        href: ../financials/localizations/emea-tax-point-date.md
     - name: France
       items:
       - name: France overview
