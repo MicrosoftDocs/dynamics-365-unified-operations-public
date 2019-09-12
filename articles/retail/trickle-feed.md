@@ -2,10 +2,10 @@
 # required metadata
 
 title: Trickle feed-based order creation for retail store transactions
-description: This topic describes the trickle feed-based order creation for retail store transactions functionality in Microsoft Dynamics 365 for Retail.
+description: This topic describes the trickle feed-based order creation for retail store transactions in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 09/13/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -21,48 +21,41 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
-ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2018-11-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 
 
 ---
 # Trickle feed-based order creation for retail store transactions
 
-> [!NOTE]
-> This feature is currently in Public preview. Please do reach out to the Dynamics 365 Retail team to enable this feature in production.
+[!include [banner](../includes/banner.md)]
 
-Currently Retail statement posting is an end of day operation and all the transactions are posted in the books only at the end of the day. The current posting process is as described below: 
-  1. Based on the data synchronized to the HQ, the **Post inventory** job reserves the inventory for products at a defined recurring schedule.
+[!include [banner](../includes/preview-banner.md)]
 
-  2. At the end of the day, when the stores are closed and the end-of-day operations are performed in the store, the remaining data is synchronized to the HQ. Retail transactions are then validated for accuracy using the **Validate store transactions** job. Subsequently, based on the **Calculate statements in batch** process, the system creates a statement document for every store and the **Post statements in batch** process removes the already created inventory reservation, creates sales orders for the retail transactions which in turn creates new inventory reservation and then sales orders are invoiced, payment journals are created & posted along with other related vouchers in the system.
-As evident from the above points, only temporary inventory reservations are created during the day. These inventory reservations are then removed at the end of the day and all transactions are processed as sales orders, new inventory transactions are created along with other transactions at the end of the day. There is no processing of these transactions happening during the day and all of them are back loaded to the end of the day. This creates a situation where large transactions must be processed in a limited time window and results in phenomenal load and locks, which results in statement posting failures. This lends to a situation where retailers cannot recognize revenue, payments in their books on a timely manner. 
+In Dynamics 365 for Retail versions 10.0.4 and earlier <!--- check with Anil that this is correct versioning -->, retail statement posting is an end of day operation and all transactions are posted in the books at the end of the day. There is no processing of these transactions happening during the day and all of the transactions are back loaded. Large transactions must then be processed in a limited time window, sometimes resulting in load and locks and statement posting failures. Retailers also can't recognize revenue and payments in their books throughout the day
 
-This feature aims to create a statement posting model where retail stores transactions are processed through a trickle feed mechanism throughout the day and only the financial reconciliation of tenders & other cash mgmt. transactions are processed at the end of the day. This model will split the load of creating Sales orders , invoices & payments throughout the day which will provide much better perceived performance to the end user and also fulfill the business objective of recognizing revenue, payments etc. in the books in a close to real time mode. This will also do away with the **all or nothing** nature of current statement posting process.
+With trickle feed-based order creation introduced in version 10.0.5 <!--- check with Anil that this is correct versioning -->, transactions are processed throughout the day, and only the financial reconciliation of tenders and other cash management transactions are processed at the end of the day. This functionality splits the load of creating sales orders, invoices, and payments throughout the day, providing better perceived performance and the ability to recognize revenue and payments in the books in near real-time. 
 
 
-# Details
+# How to use trickle feed-based posting
   
-  1. To enable the trickle feed based posting of retail transactions, a new license key called **Retail statements (trickle feed) – Preview** needs to be enabled from the menu path **System administration > Set up > License configuration**. Customers will have to disable the **Retail statements** key before this can be enabled. At the time of enabling the key, there should not be any pending statements to be posted. Customers can switch between the keys if there are no pending statements when the keys are being switched.
+1. To enable trickle feed-based posting of retail transactions, go to **System administration > Set up > License configuration** and disable the the **Retail statements** key.
 
-  2. This feature will split the current statement document into two different types:
-      1. Transactional statement
-      2. Financial statement
+2. On the same page, enable the **Retail statements (trickle feed) – Preview** license key. When you enable this key, make sure there are no pending statements waiting to be posted. 
 
-      The Transactional statement will pick up all unposted & validated retail transactions and create Sales order, sales invoices,           payment & discount journals, Income/ Expense transactions at a cadence as configured by the customer. The expectation is that           customers configures this process to run at much higher frequency so that documents are created as and when the retail                   transactions are uploaded into HQ through the P-job. With this process, the **Post inventory** batch job becomes redundant and           should not be used with this feature
+3. The current statement document will be split into two different types; transactional statement and financial statement.
+
+      - The transactional statement will pick up all unposted and validated retail transactions and create sales orders, sales invoices, payment and discount journals, and income-expense transactions at the cadence that you configure. You should configure this process to run at a high frequency so that documents are created when the retail transactions are uploaded into headquarters (HQ) through the P-job. The **Post inventory** batch job should not be used with this feature.
    
-      The Financial statement is designed to be created at the end of the day and **will only support the Closing method of Shift**.           This document will be limited to financial reconciliation and will only create the journals for the difference amounts between           counted amount and transaction amount for the different tenders along with journals for other cash mgmt. transactions.   
+     - The financial statement is designed to be created at the end of the day and only supports the closing method of shift. This statement will be limited to financial reconciliation and will only create the journals for the difference amounts between           counted amount and transaction amount for the different tenders, along with journals for other cash management transactions.   
 
-3)	The Transactional statement can be calculated in batch using the new menu item **Calculate transactional statements in batch** and the same can be posted in batch using the new menu item **Post transactional statements** in a batch
+<!--- this whole section needs to be validated/explained better by Anil -->
+4. To calculate the transactional statement, click **Calculate transactional statements in batch**. To post the statements in batch,  use the **Post transactional statements in batch** option.
 
-4)	The Financial statement can be calculated in batch using the new menu item **Calculate financial statements in batch** and the same can be posted in batch using the new menu item **Post financial statements in batch**.
+5. To calculate the financial statement, click **Calculate financial statements in batch**. To post the statements in batc, use the **Post financial statements in batch** option.
 
-5)	Both statement types can also be created manually, using the **Retail statements** menu item available under **Retail > Channels > Retail stores**. On clicking **New** on this form, the user will be prompted to choose the type of statement that needs to be created.
-
-6)	The batch jobs **Calculate statements in batch** and **Post statements in batch** will also be redundant with this feature and will not be available on the menu.
-
-7)	All unposted statements of either types can be seen using the **Retail statements** form with type identifier available as column on the form. The same is true for the **Posted statements** form as well.  
-
-8)	Fields on the **Retail statements** form along with actions available under the **Statement** group of the form will only show relevant data & actions based on the selected statement type.
+> [!NOTE]
+> Alternately, both statement types can be created manually. Go to **Retail > Channels > Retail stores** and click **Retail statements**. Click **New** and then choose the type of statement that you want to create.
