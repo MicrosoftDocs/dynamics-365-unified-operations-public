@@ -37,7 +37,7 @@ This topic covers ratings and reviews in Dynamics 365 Commerce.
 
 ## Overview
 
-Ratings and reviews are crucial for consumers who want to understand how other consumers perceive a product. They also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution lets retailers capture product reviews and ratings from consumers. They can then show the average ratings and review information across the e-Commerce website.
+Ratings and reviews are crucial for e-Commerce customers who want to know how other customers perceive a product. They also help consumers make purchase decisions. In Dynamics 365 Commerce, the ratings and reviews solution enables retailers to capture product reviews and ratings from customers, which they can then use to show the average of ratings and review information across the e-Commerce website.
 
 Average rating information is shown in point of sale (POS) and call center channels, so that sales associates can help users make decisions. Retailers can also use ratings and reviews as a feedback mechanism to improve the quality of a product and thereby improve sales.
 
@@ -47,7 +47,7 @@ The following diagram shows how the ratings and reviews solution works in Dynami
 
 ![Ratings and reviews in Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
-The ratings and reviews solution uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Since there is no need to wait for human approval, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take down requests, and to address any data requests from users.
+The ratings and reviews solution in Commerce uses Azure Cognitive Services to offer automatic moderation of profane words in 40 languages. Since there is no need to wait for human approval, moderation costs are reduced. The system also offers moderator tools that can be used to respond to customer concerns, feedback, and take down requests, and to address any data requests from users.
 
 The ratings and reviews solution provides widgets that show rating summaries in product lists, in search results, on product details page, and in other places. The widgets show complete review lists, and they also provide sort and filter options.
 
