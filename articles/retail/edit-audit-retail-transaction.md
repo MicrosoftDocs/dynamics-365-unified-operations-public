@@ -81,21 +81,21 @@ In Retail version 10.0.6 and higher, the option to bulk edit retail transactions
 
     - **Edit cash and carry transactions**. This option enables you to edit all the cash and carry transactions included in the statement. The following Excel worksheets are available.
     
-     - **Transaction**: This worksheet has all the header-level information for the sales transactions.
-     - **Sales transaction**: This worksheet has all the lines-level information for the sales transactions.
-     - **Payment transactions**: This worksheet has all the payment lines information for the sales transactions.
-     - **Discount transactions**: This worksheet has all the discount lines information for the sales transactions.
-     - **Tax transactions**: This worksheet has all the tax lines information for the sales transactions.
-     - **Charge transactions**: This worksheet has all the charge lines information for the sales transactions.
+       - **Transaction**: This worksheet has all the header-level information for the sales transactions.
+       - **Sales transaction**: This worksheet has all the lines-level information for the sales transactions.
+       - **Payment transactions**: This worksheet has all the payment lines information for the sales transactions.
+       - **Discount transactions**: This worksheet has all the discount lines information for the sales transactions.
+       - **Tax transactions**: This worksheet has all the tax lines information for the sales transactions.
+       - **Charge transactions**: This worksheet has all the charge lines information for the sales transactions.
 
     - **Edit cash management transactions**. This option enables you to edit all the cash management transactions included in the statement. The following Excel worksheets are available.
      
-     - **Transaction**: This worksheet has all the header-level information for the cash management transactions.
-     - **Bank tender transactions**: This worksheet has all the bank drop transaction details.
-     - **Safe tender transactions**: This worksheet has all the safe drop transaction details.
-     - **Tender declaration**: This worksheet has all the tender declaration transaction details.
-     - **Income-expense transaction**: This worksheet has all the income-expense transaction line details.
-     - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well 
+      - **Transaction**: This worksheet has all the header-level information for the cash management transactions.
+      - **Bank tender transactions**: This worksheet has all the bank drop transaction details.
+      - **Safe tender transactions**: This worksheet has all the safe drop transaction details.
+      - **Tender declaration**: This worksheet has all the tender declaration transaction details.
+      - **Income-expense transaction**: This worksheet has all the income-expense transaction line details.
+      - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well 
              as the income-expense transaction.
 
 3.	Validations are not performed when you publish bulk edited transactions. You need to ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open retail transactions is closed, you need to change the date on all the Excel worksheets that have the **Business date** column. To validate transactions after they have been edited, you can use **Revalidate transactions** on the **Retail statements** page.
