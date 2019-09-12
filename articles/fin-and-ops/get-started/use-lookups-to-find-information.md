@@ -38,7 +38,7 @@ Many fields have lookups that can help you easily find the correct or desired va
 
 ## Responsive lookups
 
-In previous versions of the product, when interacting with a lookup control, a user would have to take an explicit action to open the drop-down menu. This may have been by typing an asterisk (\*) in the control to filter the lookup based on the current value of the control, clicking the drop-down button, or by using the **Alt**+**Down arrow** keyboard shortcut. Lookup controls have been modified in the following ways to better align with current web practices:
+In previous versions, when interacting with a lookup control, a user would have to take an explicit action to open the drop-down menu. This may have been by typing an asterisk (\*) in the control to filter the lookup based on the current value of the control, clicking the drop-down button, or by using the **Alt**+**Down arrow** keyboard shortcut. Lookup controls have been modified in the following ways to better align with current web practices:
 
 - Lookup drop-down menus will now open automatically after a slight pause in typing, with the drop-down menu contents filtered based on the lookup control's value.
 
