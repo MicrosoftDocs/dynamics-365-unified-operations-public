@@ -49,7 +49,7 @@ Perspectives were a concept that was designed to present data from a reporting p
 | Microsoft Dynamics AX 4.0                         | Perspectives provided the ability to model ad-hoc reporting models.                                                                            |
 | Microsoft Dynamics AX 2009                        | Perspectives added support for modeling analysis cubes.                                                                                        |
 | Microsoft Dynamics AX 2012                        | Perspective modeling capabilities were improved through richer modeling support and deeper integration with the Application Object Tree (AOT). |
-| Finance and Operations Applications | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
+| Finance and Operations apps | Perspectives are a first-class citizen in the data access framework. They can be consumed via X++ or C\# code, and also in a model-driven way. |
 
 Perspectives reside within the analytics collection in the Application Explorer. Perspectives have undergone a major upgrade and now incorporate the following improvements:
 
