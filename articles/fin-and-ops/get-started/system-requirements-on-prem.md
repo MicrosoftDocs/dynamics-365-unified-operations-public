@@ -111,7 +111,7 @@ Consider the following domain requirements when you install Finance + Operations
 
 This section describes the hardware that is required in order to run Finance + Operations.
 
-The actual hardware requirements vary, based on the system configuration, the data composition, and the applications and features that you decide to use. Here are some of the factors that can affect the choice of appropriate hardware:
+The actual hardware requirements vary, based on the system configuration, the data composition, and the features that you decide to use. Here are some of the factors that can affect the choice of appropriate hardware:
 
 - The number of transactions per hour
 - The number of concurrent users
