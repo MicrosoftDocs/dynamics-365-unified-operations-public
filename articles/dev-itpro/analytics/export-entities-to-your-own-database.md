@@ -99,7 +99,7 @@ The **Publish** page enables several scenarios:
 
 - Publish new entities to the database.
 - Delete previously published entities from the database. (For example, you might want to re-create the schema.)
-- Compare published entities with the entity schema. (For example, if new fields are added to the application later, you can compare the fields with your database schema.)
+- Compare published entities with the entity schema. (For example, if new fields are added later, you can compare the fields with your database schema.)
 - Configure change tracking functionality that enables incremental updates of your data.
 
 The following sections discuss each option.
