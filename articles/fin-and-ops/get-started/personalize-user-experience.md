@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personalize the user experience
-description: This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how you can personalize the product.
 author: jasongre
 manager: AnnBe
 ms.date: 06/11/2019
@@ -34,22 +34,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can personalize Microsoft Dynamics 365 for Finance and Operations.
+This topic explains how you can personalize the system.
 
-There are three basic classes of personalizations in Finance and Operations.
+There are three basic classes of personalizations.
 
 - Personalizations made on a setup page. Examples include the color theme and time zone.
-- Personalizations related to page usage, called *implicit* personalizations. For example, Finance and Operations keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs.
+- Personalizations related to page usage, called *implicit* personalizations. For example, the system keeps track of the width of grid columns if you adjust them, and the expanded or collapsed state of FastTabs.
 - Personalizations a user makes to modify the appearance of a page by changing the way an element appears or acts on that page, often through an interactive personalization mode. These personalizations are called *explicit* personalizations. For example, the user might add, hide, or reorder elements on the page.
 
-Every personalization that a user makes in Finance and Operations is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
+Every personalization that a user makes is for that user only, regardless of type of personalization or the company that the user is currently interacting with. The changes that one user makes to a page don't affect other users in the system.
 
 ## System-wide options for the current user
 
 The **User options** page contains several system-wide settings for the current user. To open the **User options** page, select the **Settings** menu (the gear symbol) on the navigation bar, and then select **User options**. The **User options** page has four tabs that contain various user settings:
 
 - **Visual** – Select a color theme and the default size of elements on pages.
-- **Preferences** – Select default values that are used every time that you open Finance and Operations. These values include the company, the initial page, and the default view/edit mode. (The view/edit mode determines whether a page is locked for viewing or opened for editing every time that you open it.) This tab also includes options for the language, the time zone, and the date, time, and number format. Finally, this tab includes several miscellaneous preferences that vary from release to release.
+- **Preferences** – Select default values that are used every time that you open the system. These values include the company, the initial page, and the default view/edit mode. (The view/edit mode determines whether a page is locked for viewing or opened for editing every time that you open it.) This tab also includes options for the language, the time zone, and the date, time, and number format. Finally, this tab includes several miscellaneous preferences that vary from release to release.
 - **Account** – Adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
