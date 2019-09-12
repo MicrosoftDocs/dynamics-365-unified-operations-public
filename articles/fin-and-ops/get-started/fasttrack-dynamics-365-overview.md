@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Microsoft FastTrack for Finance and Operations
-description: This topic provides an overview of Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
+title: Microsoft FastTrack 
+description: This topic provides an overview of Microsoft FastTrack. FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster.
 author: margoc
 manager: AnnBe
 ms.date: 07/01/2019
@@ -29,30 +29,30 @@ ms.dyn365.ops.version: Version 1611, July 2017 update
 
 ---
 
-# Microsoft FastTrack for Finance and Operations
+# Microsoft FastTrack 
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft FastTrack for Microsoft Dynamics 365 for Finance and Operations is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster. When you participate in the FastTrack program, you receive guidance about implementation best practices, planning for successful rollouts, and expanding capabilities. However, you implement at your own pace. You also have access to Microsoft engineering resources who are committed to making your experience with Finance and Operations a success.
+Microsoft FastTrack is a customer success service that is designed to help you move smoothly and confidently to Microsoft Dynamics 365, so that you can realize business value faster. When you participate in the FastTrack program, you receive guidance about implementation best practices, planning for successful rollouts, and expanding capabilities. However, you implement at your own pace. You also have access to Microsoft engineering resources who are committed to making your experience a success.
 
-## Microsoft FastTrack for Finance and Operations overview
+## Microsoft FastTrack overview
 
-Finance and Operations offers different [deployment options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Microsoft provides a Dedicated FastTrack solution architect for cloud deployments only. 
+We offer different [deployment options](../../dev-itpro/deployment/choose-deployment-type.md) for cloud and on-premises environments. Microsoft provides a dedicated FastTrack solution architect for cloud deployments only. 
 
-## Eligibility for FastTrack for Finance and Operations
+## Eligibility for FastTrack 
 
 To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum for the Dynamics 365 Unified Operations Plan or equivalent.
 
 After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
 
-### Tiered services for Finance and Operations
+### Tiered services 
 
 | Number of seats                                                                         | TechTalks | Workshops     | Assessments                  | Designated FastTrack solution architect | Community |
 |-----------------------------------------------------------------------------------------|-----------|---------------|------------------------------|----------------------------------------|-----------|
 | 20–149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓         | Not available | Go-live assessment via email | Not available                          | ✓         |
 | 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓         | ✓             | Go-live assessment workshop  | ✓                                      | ✓         |
 
-### FastTrack for Finance and Operations services
+### FastTrack for services
 
 - [TechTalks](#techtalks)
 - [Community](#community)
@@ -65,10 +65,10 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 
 TechTalks focus on empowering both customers and partners by providing technical depth and best practices that are specific to the subject areas that are covered. These talks often provide an overview of available tooling and features. TechTalks are delivered in the form of live webcasts that include a question and answer (Q&A) session at the end. They can also be accessed on-demand and are publicly available. To view all TechTalks and sign up for future talks, see [FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - Tech Talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl).
 
-TechTalks provide a basic understanding that will increase the value and efficiency of the workshops that are offered. The FastTrack team will guide you to relevant TechTalks that will help you prepare for specific workshops. For a complete inventory of all recorded TechTalks that are available to stream or download, together with additional how-to videos, see [Videos for Dynamics 365 for Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/videos).
+TechTalks provide a basic understanding that will increase the value and efficiency of the workshops that are offered. The FastTrack team will guide you to relevant TechTalks that will help you prepare for specific workshops. For a complete inventory of all recorded TechTalks that are available to stream or download, see [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations).
 
 ## Community
-The FastTrack Finance and Operations community provides a platform where customers and partners can post questions and get answers from FastTrack solution architects about best practices and guidance. To participate in the community, see [FastTrack Finance and Operations Forum](https://community.dynamics.com/365/fasttrack/f/770).
+The FastTrack community provides a platform where customers and partners can post questions and get answers from FastTrack solution architects about best practices and guidance. To participate in the community, see [FastTrack Forum](https://community.dynamics.com/365/fasttrack/f/770).
 
 ## Workshops
 
@@ -76,10 +76,10 @@ Workshops are interactive outcome-based remote sessions. Customers and partners 
 
 ### Onboarding workshop
 
-The Onboarding workshop is designed to introduce FastTrack services and provide introductory guidance about a set of implementation topics that will help guarantee maximum success. For more information, see [Onboard a Finance and Operations Project](../imp-lifecycle/onboard.md). Here are some of the topics that the workshop is likely to cover:
+The Onboarding workshop is designed to introduce FastTrack services and provide introductory guidance about a set of implementation topics that will help guarantee maximum success. For more information, see [Onboard a Project](../imp-lifecycle/onboard.md). Here are some of the topics that the workshop is likely to cover:
 
 - Team introductions
-- Overview of FastTrack for Finance and Operations
+- Overview of FastTrack 
 - Project goals and objectives
 - Engagement scope, schedule, and adoption targets
 - Responsibilities among customers, partners, and the FastTrack engineering team
