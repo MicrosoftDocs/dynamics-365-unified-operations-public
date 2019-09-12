@@ -44,7 +44,7 @@ To add a welcome message to your site, do the following.
 1. Click **Fragments**.
 1. Click the header fragment you want to add the message to.
 1. Expand **Error/Information messages** in the outline tree.
-1. Select the **Alert** module. If one does not yet exist, click the ellipsis button (**...**) next to **Error/Information messages**, select **Add module**, then select the alert module and click **OK*.
+1. Select the **Alert** module. If one does not yet exist, click the ellipsis button (**...**) next to **Error/Information messages**, select **Add module**, then select the alert module and click **OK**.
 1. From the right-side property pane, select the **Data** tab.
 1. Click **Add Data Source**, then select **Content**.
 1. Add the welcome message text to the **Input Text** field. 
