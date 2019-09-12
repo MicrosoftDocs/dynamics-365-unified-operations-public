@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cloud powered search for e-commerce scale & traffic
-description: 
+title: Cloud-powered search overview
+description: This topic gives an overview of cloud-powered search in Dynamics 365 Commerce.
 author: asharchw
 manager: annbe
 ms.date: 10/01/2019
@@ -28,28 +28,49 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Cloud powered search for e-commerce scale & traffic
+# Cloud-powered search overview in Dynamics 365 Commerce
 
-Product discoverability is easiest & quick way for Retailer’s customer to be able to discover the product via browsing thru categories, search & filtering. Retailers consider product discovery as a primary tool for customer interaction across all retail channel.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Retailer’s customers are used to Web search engines, sophisticated ecommerce websites and social apps that offer great relevance, search suggestions as you type, faceted navigation, highlighting and more, all with near-instantaneous response times. If their customer cannot find the right product quickly enough they do not hesitate to move over the next best eCommerce store, as it is that easy.
+This topic gives an overview of cloud-powered search in Dynamics 365 Commerce.
 
-This cloud-powered product discoverability in Dynamics 365 Commerce will help Retailers to continue to grow their share of consumer retention & conversion rates across all channels including both eCommerce & POS. 
+## Overview
 
-With Dynamics 365 Commerce, search experience shall have following improved capabilities to help retailer achieve better product discoverability, and be scalable and performant for eCommerce traffic.
+Product discoverability is the easiest and quickest way for customers to be able to find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all retail channels.
 
-+ **Browse and search:** Search relevance and performance is key to our omnichannel experience, as product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient search helps increase conversion.
+Customers are used to the near-instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, as-you-type search suggestion, faceted navigation, and highlighting. If customers cannot find the right product quickly enough, they do not hesitate to move over to an e-Commerce store that will them find what they need quickly.
+
+The cloud-powered product discoverability in Commerce helps retailers continue to grow their share of consumer retention and conversion rates across all channels including both e-Commerce & point of sale. 
+
+The Commerce search experience has improved capabilities to help retailers achieve better product discoverability, while delivering the scalability and performance required for e-Commerce traffic.
+
+### Browse and search 
+
+Search relevance and performance is key to the omnichannel experience, since product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient search experience helps increase conversion.
+
+The following image shows an example of browse and search functionality.
 
     ![Search landing](./media/SearchLanding.png)
 
-+ **Refiners/faceted navigation/Choice summary:** Faceted navigation helps users browse for content more easily by filtering on refiners that are tied to terms in a term set. By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages. And upon, application of the user choice of refiners there shall be the summary of choices.
+### Faceted navigation and choice summary 
+
+Faceted navigation helps customers browse for content more easily by filtering on refiners that are tied to terms in a term set. By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages. And after application of the customer's choice of refiners, a summary of the choices is displayed.
+
+The following image shows an example of faceted navigation.
 
     ![ChoiceSummary](./media/ChoiceSummary.png)
 
-+ **Immersive auto-suggest:** Current auto-suggest shows only keywords that trigger search for the matching keyword. With new enhancements, users will be able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
+### Immersive autosuggest
+
+Current autosuggest shows only keywords that trigger search for the matching keyword. With new enhancements, users will be able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
+
+The following image shows an example of immersive autosuggestion.
 
     ![immersiveAutoSuggest](./media/ImmersiveAutoSuggestUX.png)
 
-+ **Sort:** With this enhancement, users will be able to sort search, browse, and refine search results by details, such as price, product name, product number, new, top-selling, or recently added.
+### Sort
+
+With enhanced sorting in Commerce, users will be able to sort search, browse, and refine search results by criteria such as price, product name, and product number, and also by whether a product is new, top-selling, or recently added.
 
 
