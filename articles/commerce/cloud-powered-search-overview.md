@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Cloud-powered search overview in Dynamics 365 Commerce
+# Cloud-powered search overview
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -39,7 +39,7 @@ This topic gives an overview of cloud-powered search in Dynamics 365 Commerce.
 
 Product discoverability is the easiest and quickest way for customers to be able to find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all retail channels.
 
-Customers are used to the near-instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, as-you-type search suggestion, faceted navigation, and highlighting. If customers cannot find the right product quickly enough, they do not hesitate to move over to an e-Commerce store that will them find what they need quickly.
+Customers are used to the near-instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, as-you-type search suggestion, faceted navigation, and highlighting. If customers cannot find the right product fast enough, they will not hesitate to move over to an e-Commerce store that helps them quickly find what they are looking for.
 
 The cloud-powered product discoverability in Commerce helps retailers continue to grow their share of consumer retention and conversion rates across all channels including both e-Commerce & point of sale. 
 
@@ -47,9 +47,9 @@ The Commerce search experience has improved capabilities to help retailers achie
 
 ### Browse and search 
 
-Search relevance and performance is key to the omnichannel experience, since product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient search experience helps increase conversion.
+Search relevance and performance is key to the omnichannel experience, since product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient browse and search experience helps increase conversion.
 
-The following image shows an example of browse and search functionality.
+The following image shows an example of typical browse and search functionality.
 
     ![Search landing](./media/SearchLanding.png)
 
@@ -57,15 +57,15 @@ The following image shows an example of browse and search functionality.
 
 Faceted navigation helps customers browse for content more easily by filtering on refiners that are tied to terms in a term set. By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages. And after application of the customer's choice of refiners, a summary of the choices is displayed.
 
-The following image shows an example of faceted navigation.
+The following image shows an example of faceted navigation in search.
 
     ![ChoiceSummary](./media/ChoiceSummary.png)
 
 ### Immersive autosuggest
 
-Current autosuggest shows only keywords that trigger search for the matching keyword. With new enhancements, users will be able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
+Current autosuggest functionality only shows keywords that trigger search for the matching keyword. With new enhancements in Commerce, users are able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
 
-The following image shows an example of immersive autosuggestion.
+The following image shows an example of immersive autosuggest in action.
 
     ![immersiveAutoSuggest](./media/ImmersiveAutoSuggestUX.png)
 
