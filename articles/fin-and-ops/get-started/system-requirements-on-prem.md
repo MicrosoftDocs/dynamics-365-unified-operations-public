@@ -41,7 +41,7 @@ This topic lists the system requirements for the current version of Microsoft Dy
 
 ## Network requirements
 
-Dynamics 365 for Finance and Operations (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.
+Dynamics 365 + Finance and Operations (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6). Consider the network environment when you plan your system, and use the following guidelines.
 
 ### Network response time
 
