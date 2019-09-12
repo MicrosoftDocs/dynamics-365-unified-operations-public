@@ -61,9 +61,9 @@ For each aging period in the aging period definition, an aging snapshot detail r
 Customer pools are queries that define a group of customer records that can be displayed and managed for collections or aging processes. Use customer pools to filter information on the Aged balances, Collections activities, and Collections cases list pages. You also use customer pools to filter the customer accounts that are included when aging snapshots are created.
 
 ## Collections agents
-By default, Finance and Operations users can view all customer information on collections list pages. You can use collections agent records to determine the customer pools that are available to filter information on the collections list pages and on the Collections page. 
+By default, users can view all customer information on collections list pages. You can use collections agent records to determine the customer pools that are available to filter information on the collections list pages and on the Collections page. 
 
-A collections agent is a person who works with customers to make sure that payments are collected in a timely manner. In Finance and Operations, collections agents are workers who are assigned to users in the User setup page.
+A collections agent is a person who works with customers to make sure that payments are collected in a timely manner. Collections agents are workers who are assigned to users in the User setup page.
 
 ## Collections list pages
 The following list pages help you organize collections information.
