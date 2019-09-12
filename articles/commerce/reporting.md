@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Reporting
-description: 
+title: Generate online channel reports in Dynamics 365 Retail
+description: This topic covers generating reports for you online channel in Dynamics 365 Retail.
 author: psimolin
-manager: brendans
+manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
@@ -28,90 +28,114 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Online channel reporting
+# Generate online channel reports in Dynamics 365 Retail
 
-In order to see how your online channel is performing you have several reports available in the HQ which you can generate and view.
-They can be accessed from Retail -> Inquiries and reports -> Sales reports
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic covers generating reports for you online channel in Dynamics 365 Retail.
+
+## Overview
+
+To see how your online channel is performing, there are several reports that you can generate and view in Dynamics 365 Retail.
+They can be accessed from Retail -> Inquiries and reports -> Sales reports.
 
 ### Channel summary report
-Report showing summary of following transactions for the selected channel - 
-1. Sales transaction
-2. Payment transactions
-3. Tax transactions
-4. Discounted transactions
 
-Steps required to produce **Channel summary report**
-1. Go to Retail > Inquiries and reports > Sales reports > Channel summary report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
+A channel summary report shows a summary of the following transactions for the selected channel.
+
+- Sales transaction
+- Payment transactions
+- Tax transactions
+- Discounted transactions
+
+To generate a channel summary report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Channel summary report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
 1. Click OK.
  
 ### Channel sales by year report 
-Use this report to view the year-over-year sales comparison for a given store. You select the year against which to compare the sales, and the report compares sales for the specified year with the previous year for a given store. 
 
-Steps required to produce **Channel sales by year report**
-1. Go to Retail > Inquiries and reports > Sales reports > Channel sales by year report.
-1. In the From calendar year field, enter a number.
-1. In the To calendar year field, enter a number.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The channel sales by year report shows a year-over-year sales comparison for a given store. You select the year against which to compare the sales, and the report compares sales for the specified year with the previous year. 
+
+To generate a channel sales by year report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Channel sales by year report**.
+1. In the **From** calendar year field, enter a number.
+1. In the **To** calendar year field, enter a number.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
 
 ### Channel sales by hour report
-Shows sales metric per hour for a selected channel / operating unit. 
 
-Steps required to produce **Channel sales by hour report**
-1. Go to Retail > Inquiries and reports > Sales reports > Channel sales by hour report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The channel sales by hour report shows sales metrics per hour for a selected channel or operating unit. 
+
+To generate a channel sales by hour report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Channel sales by hour report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
 
 ### Top customers report
-Shows sales metric for the top N customers for a selected channel \ operating unit. N = 10 to 100. Top N is based upon user selected aggregate measure. 
 
-Steps required to produce **Top customers report**
-1. Go to Retail > Inquiries and reports > Sales reports > Top customers report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The top customers report shows sales metrics for the top *N* customers for a selected channel or operating unit, where *N* is a number from 10 to 100. The value *N* is based on a user-selected aggregate measure. 
+
+To generate a top customers report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Top customers report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
 
 ### Top discounts report
-Shows sales metric for the top N discounts for a selected channel \ operating unit. N = 10 to 100. Top N is based upon user selected aggregate measure. 
 
-Steps required to produce **Top discounts report**
-1. Go to Retail > Inquiries and reports > Sales reports > Top discounts report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The top discounts report shows sales metrics for the top *N* discounts for a selected channel or operating unit, where *N* is a number from 10 to 100. The value *N* is based on a user-selected aggregate measure. 
+
+To generate a top discounts report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Top discounts report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
 
 ### Top products report
-Shows sales metric for the top N products for a selected channel \ operating unit. N = 10 to 100. Top N is based upon user selected aggregate measure. 
 
-Steps required to produce **Top products report**
-1. Go to Retail > Inquiries and reports > Sales reports > Top products report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The top products report shows sales metrics for the top *N* products for a selected channel or operating unit, where *N* is a number from 10 to 100. The value *N* is based on a user-selected aggregate measure.
+
+To generate a top products report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Top products report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
 
 ### Category sales report
-Shows sales metric for each node of category hierarchy for a selected channel\operating unit over a selected period of time. 
 
-Steps required to produce **Category sales report**
-1. Go to Retail > Inquiries and reports > Sales reports > Category sales report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. In the Channel field, select your online channel.
-1. Click OK.
+The category sales report shows sales metrics over a selected period of time for each node of a category hierarchy for a selected channel or operating unit. 
 
-### Organization sales report 
-Use this report to view the performance of your retail stores by organization unit. The organization unit is based on the default reporting hierarchy. This report includes the sales quantity and amount by store, and the profit margin for each store. 
+To generate a category sales summary report, do the following.
 
-Steps required to produce **Organization sales report**
-1. Go to Retail > Inquiries and reports > Sales reports > Organization sales report.
-1. In the From date field, enter a date.
-1. In the To date field, enter a date.
-1. Click OK.
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Category sales report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. In the **Channel** field, select your online channel.
+1. Click **OK**.
+
+### Organization sales report
+
+The organization sales report shows the performance of your retail stores by organization unit. This report includes the sales quantity and amount by store, and the profit margin for each store. The organization unit is based on the default reporting hierarchy. 
+
+To generate an organization sales report, do the following.
+
+1. Go to **Retail \> Inquiries and reports \> Sales reports \> Organization sales report**.
+1. In the **From** date field, enter a date.
+1. In the **To** date field, enter a date.
+1. Click **OK**.
