@@ -1,16 +1,47 @@
-# SEO considerations
+---
+# required metadata
 
-This article describes at high-level the SEO lifecycle of your site from development to production and your page from creation to published.
+title: SEO considerations for your site
+description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
+author: psimolin
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
 
-### Site
-For site **under development**, you should have no-index, no-follow metatags in place for pages so that search engines do not index them and store development versions of your site in their cache. To do this you need to have Default Metatags module on the template which will enable the default metatags properties under SEO properties section in the page editor. Metatags can be managed under SEO properties section.
+# optional metadata
 
-**Soft launch**
-When you are performing soft launch for your website, you should consider having no-index tags still in place to make sure that your soft launch is limited to the audience you intend to participate.
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: psimolin
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
-**Production**
-For site in production you want to make sure you have all your pages properly tagged. Dynamics 365 e-Commerce feature renders all the SEO information on the page using the information entered for a page. Modules that provide this functionality are Category Page Summary, List Page Summary and Product Page Summary. Rendering framework uses information from SEO properties section as well as module specific information to optimize search engine indexing. For site in production you want to make sure that your robots.txt allows indexing your entire site and contains link to your published sitemap document. Sitemap generation should be enabled from **Site Settings** -> **Site maps enabled**.
+---
 
-### Pages
-Because Dynamics 365 e-Commerce feature supports WYSIWYG- and authenticated preview, authors can prepare their page content without having to worry about information becoming visible to the C2 rendered site. Should there be a need to publish a page, but limit its exposure, page metatags should include the no-index tag to avoid being indexed to search engines. When the page is ready for all audiences, all of the basic SEO metadata should be present for a page to maximize search engine indexing efficiency and no-limit should be removed.
+# SEO considerations for your site
+
+This topic covers search engine optimization (SEO) considerations for your site from development to production.
+
+## A site under development
+For a site under development, you should have NOINDEX and NOFOLLOW meta tags in place for pages so that search engines do not index them and store development versions of your site in their cache. To do this, the default meta tags module needs to be added to the site page template. This will enable the default meta tags properties under SEO properties section in the page editor, where meta tags can then be managed.
+
+## Soft launch of a site
+A "soft launch" of a website is a launch to a restricted audience or market in advance of a full launch. When you are performing a soft launch of your website, you should consider leaving NOINDEX meta tags in place to ensure that the soft launch is limited to the limited audience you intend to reach.
+
+## A site in production
+For a site in production, you should ensure that all site pages are properly tagged. Dynamics 365 Commerce renders all SEO information on a page using the information entered for that page. Modules that provide this functionality are the category page summary, list page summary, and product page summary modules. To optimize search engine indexing, the rendering framework uses information from the SEO properties configured in Commerce as well as module-specific information. For a site in production, you should ensure that the robots.txt file allows indexing of your entire site and contains links to your published sitemap document. Sitemap generation should be enabled in **Site Settings \> Site maps enabled**.
+
+### Page settings for internal preview, limited audiences, and all audiences
+Because Dynamics 365 Commerce supports WYSIWYG- and authenticated preview, authors can prepare their page content without having to worry about information becoming visible to site visitors. If there is a need to publish a page but limit its exposure, page meta tags should include the NOINDEX meta tag to avoid being indexed to search engines. When a page is ready for all audiences, all of the basic SEO metadata should be present to maximize search engine indexing efficiency. Also, the NOLIMIT meta tag should be removed.
 
