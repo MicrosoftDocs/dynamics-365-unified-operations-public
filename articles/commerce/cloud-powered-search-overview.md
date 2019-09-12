@@ -63,7 +63,7 @@ The following image shows an example of faceted navigation in search.
 
 ### Immersive autosuggest
 
-Current autosuggest functionality only shows keywords that trigger search for the matching keyword. With new enhancements in Commerce, users are able to surface links to products, directly navigable to product details. There will also be support for "keywords match in various categories," which enables users to see the count of matching keywords in categories and trigger the search for the keyword for that category.
+Current autosuggest functionality only shows keywords that trigger search for the matching keyword. With new enhancements in Commerce, customers are often able to discover links to products before they finish typing. Commerce also supports "keyword match in various categories" functionality, which enables customers to see the count of matching keywords across categories and trigger a search for a keyword in other categories.
 
 The following image shows an example of immersive autosuggest in action.
 
@@ -71,6 +71,6 @@ The following image shows an example of immersive autosuggest in action.
 
 ### Sort
 
-With enhanced sorting in Commerce, users will be able to sort search, browse, and refine search results by criteria such as price, product name, and product number, and also by whether a product is new, top-selling, or recently added.
+With enhanced sorting in Commerce, customers are able to sort search, browse, and refine search results by criteria such as price, product name, and product number, and also by whether a product is new, top-selling, or recently added.
 
 
