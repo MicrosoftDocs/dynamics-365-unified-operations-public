@@ -40,7 +40,7 @@ These Supplemental Preview Terms (“Preview Terms”) are in addition to and su
 
 **“DRI”** means designated responsible individual.
 
- **“Dynamics Online Service”** means Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics 365 for Retail.
+ **“Dynamics Online Service”** means Dynamics 365 Finance, Supply Chain Management, or Retail.
  
 **“Solution Package”** means any software, data, media, service, or other materials that Participant developed for the Dynamics Online Service.
 
