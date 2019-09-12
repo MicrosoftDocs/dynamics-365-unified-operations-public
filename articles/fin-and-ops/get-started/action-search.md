@@ -38,7 +38,7 @@ This article describes the action search functionality. Action search will help 
 
 ## Introduction
 
-Pages in the product primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of the page. In previous versions, a Key Tips feature let you quickly access any button on an Action Pane by pressing the Alt key and then a series of letters.
+Pages primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of the page. In previous versions, a Key Tips feature let you quickly access any button on an Action Pane by pressing the Alt key and then a series of letters.
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
