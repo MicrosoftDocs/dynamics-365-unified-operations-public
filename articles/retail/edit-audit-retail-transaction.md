@@ -31,17 +31,18 @@ ms.dyn365.ops.version:
 ---
 # Edit and audit retail store transactions
 
-Dynamics 365 for Retail customers use first party as well as third party POS applications. In the case of first party POS application, retail store transactions are pulled into the HQ from the channels through a batch process and in the case of third party applications, these are pulled into the HQ through integration. After these transactions are pulled into the HQ, there is a consistency check process that needs to be executed that runs multiple validations on these transactions and only successfully validated retail transactions are pulled into the Retail statement to be posted in the HQ. 
+Dynamics 365 for Retail customers use first-party as well as third-party point of sale (POS) applications. With first-party POS application, retail store transactions are pulled into headquarters (HQ) from the channels through a batch process. With third-party applications, transactions are pulled into HQ through integration. In both cases, after transactions are pulled into HQ, a consistency check process needs to be executed that runs multiple validations on the transactions so that only successfully validated transactions are pulled into the statement to be posted in HQ. 
 
-It has been observed across multiple customers that many of their retail transactions fail validation for varied reasons like bug in the integration code, bug in the POS application etc. that causes inconsistent data, in addition to user error creating inconsistent data like deleting a product after they have synchronized to the channel, closing a fiscal period without posting retail transactions for that period etc.
+Sometimes, retail transactions fail validation for various reasons. For example, a bug in the integration code or a bug in the POS application may cause inconsistent data, or a user error, such as deleting a product after it was synchronized to the channel or closing a fiscal period without posting retail transactions for that period, can cause inconsistent data.
 
-While these transactions get flagged and are excluded from the Retail statements, it does create lot of disruption to the customer’s daily process to post daily retail sales to the financials especially given the fact that there is no tool or mechanism available to the customer to fix these inconsistent data on their own. Fixing of these transactions require the customer to log a support ticket with Microsoft which is not empowering enough to the customers.
+While these transactions get flagged and are excluded from the statements, the transactions can disrupt a customer’s daily process of posting daily retail sales to the financials.
 
-As such, this feature was introduced in the product that empowers a customer to edit the retail transactions that fails validation while maintaining audit of all the changes. 
+In Retail, you can edit the specific retail transactions that fail validation while maintaining audit of all the changes. 
 
-The following set of capabilities was introduced as a part of this feature:
+To edit and audit transactions, do the following.
 
-1. To use this feature, the Dynamics Excel Add-in must be installed & configured on the user’s machine
+1. Install the Dynamics Excel Add-in.
+<!--- stopped here --->
 
 2. A new tile has been introduced on the **Retail store financials** workspace called **Transaction validation failures** which provides a pre-filtered view of the Retail transaction form that failed one or more of the validation rules.
  
