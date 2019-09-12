@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: SEO considerations for your site
+title: Search engine optimization considerations for your site
 description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
 author: psimolin
 manager: annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# SEO considerations for your site
+# Search engine optimization considerations for your site
 
 This topic covers search engine optimization (SEO) considerations for your site from development to production.
 
