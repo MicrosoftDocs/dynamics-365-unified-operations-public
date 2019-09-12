@@ -63,7 +63,7 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 
 ## TechTalks
 
-TechTalks focus on empowering both customers and partners by providing technical depth and best practices that are specific to the subject areas that are covered. These talks often provide an overview of available tooling and features. TechTalks are delivered in the form of live webcasts that include a question and answer (Q&A) session at the end. They can also be accessed on-demand and are publicly available. To view all TechTalks and sign up for future talks, see [FastTrack Dynamics 365 for Finance & Operations - Enterprise Edition - Tech Talks](https://infopedia.eventbuilder.com/index?landingpageid=92tzhl).
+TechTalks focus on empowering both customers and partners by providing technical depth and best practices that are specific to the subject areas that are covered. These talks often provide an overview of available tooling and features. TechTalks are delivered in the form of live webcasts that include a question and answer (Q&A) session at the end. They can also be accessed on-demand and are publicly available. To view all TechTalks and sign up for future talks, see [Microsoft Dynamics 365 FastTrack Tech Talks](https://learning.eventbuilder.com/Dynamics365FastTrackTechTalks).
 
 TechTalks provide a basic understanding that will increase the value and efficiency of the workshops that are offered. The FastTrack team will guide you to relevant TechTalks that will help you prepare for specific workshops. For a complete inventory of all recorded TechTalks that are available to stream or download, see [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations).
 
