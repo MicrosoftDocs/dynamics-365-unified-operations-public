@@ -60,11 +60,7 @@ To subscribe to an RSS feed of all updates to the content, use the following lin
 
 [RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
-### Give feedback
-
-We really like customer feedback. You can either comment or suggest changes to our content through GitHub. For more information about our feedback system, see [this blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
-
-#### Leave us feedback
+### Leave us feedback
 
 If you have feedback or questions about a topic, leave us a comment at the bottom of the page.
 
@@ -91,7 +87,7 @@ For more information, refer to our [contributor's guide] a(https://docs.microsof
 
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are available.
 
-Microsoft shipped task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct task guides for your product.
+Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -100,13 +96,13 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 ![Task guide step instruction](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT]
-> The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.
+> The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.
 
-You can use Task recorder to create your own custom task guides. For more information, see [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+You can use Task recorder to create your own custom Task guides. For more information, see [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## In-product Help
 
-To access Help content, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides.
+To access Help content, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or Task guides.
 
 ![Help pane](./media/help-pane-wiki.png)
 
@@ -143,14 +139,14 @@ After a System administrator has completed these steps, you can open the Help pa
 
 ### Where are the translated Task guides for Microsoft libraries?
 
-Translated task guides are released in libraries with "All languages" in the title. To see localized Task guide help, make sure that you are connected to an appropriate library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
+Translated Task guides are released in libraries with "All languages" in the title. To see localized Task guide help, make sure that you are connected to an appropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
 
-- If a task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
-- If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
+- If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
+- If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Creating custom help
 
-You can create help for your users by creating custom task guides, or connect your own website to the Help pane. For details, see:
+You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
 - [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
 - [Create Custom Help (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
