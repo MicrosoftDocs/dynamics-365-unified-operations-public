@@ -46,7 +46,7 @@ You cannot reconcile a bank statement with a bank account if any of the checks o
 
     > [!NOTE]
     > <P>Do not select the <STRONG>Cleared</STRONG> check box for transactions that are not on the bank statement. These transactions will continue to be displayed in on this page until they are reconciled with a future bank statement.</P>
-    > <P>The <STRONG>Cleared</STRONG> check box is not available if the transaction has a status of <STRONG>Pending cancellation</STRONG>. Transactions might have this status if Finance and Operations is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer <STRONG>Pending cancellation</STRONG>, and you can reconcile the bank account with the bank statement.</P>
+    > <P>The <STRONG>Cleared</STRONG> check box is not available if the transaction has a status of <STRONG>Pending cancellation</STRONG>. Transactions might have this status if Finance is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer <STRONG>Pending cancellation</STRONG>, and you can reconcile the bank account with the bank statement.</P>
 
     
     To select the **Cleared** check box for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
@@ -59,7 +59,7 @@ You cannot reconcile a bank statement with a bank account if any of the checks o
 
 
 
-6.  Create transactions for entries, such as fees and interest, that are on the bank statement, but that are not recorded in Finance and Operations. Enter the **Bank transaction type** and appropriate financial dimensions.
+6.  Create transactions for entries, such as fees and interest, that are on the bank statement but that are not recorded in Finance. Enter the **Bank transaction type** and appropriate financial dimensions.
 
 7.  As the transactions on the bank statement are marked as **Cleared**, the amount in the **Unreconciled** field, which is recalculated continuously as you make changes, approaches zero. When it reaches zero, select **Reconcile account** to post the reconciliation, and the transactions and corrections that you have created.
     
