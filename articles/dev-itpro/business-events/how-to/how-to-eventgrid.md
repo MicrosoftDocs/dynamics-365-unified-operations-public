@@ -129,7 +129,7 @@ In this procedure, you will register a new application with Azure AD, and give i
 The business scenario involves sending an email message whenever a free text invoice is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the total amount of the invoice.
 
 1. Select the business event catalog and look for **free text invoice posted** business event.
-2. Then activate the business event for USMF company. Once activated, the application sends a test message to validate the configuration and cache the connection.
+2. Then activate the business event for USMF company. Once activated, a test message is sent to validate the configuration and cache the connection.
 3. To verify that the test message has been received, in the Azure portal, select your event grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
     <img alt="Event grid metrics" src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
@@ -151,12 +151,12 @@ The business scenario involves sending an email message whenever a free text inv
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 
 9. Select **New Step** to add a new action.
-10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that the application provides.
+10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the provided schema for the data contract.
 11. Click in the **Content** field of the **Parse Json** action. The pane that appears gives you the option form the previous trigger. You must select the **Data object** field of the event grid message that contains the payload that is transmitted by Finance and Operations.
 
     <img alt="Logic appas parse JSON " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
 
-    Next, you must enter the schema of the contract that is received from the application. This is only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
+    Next, you must enter the provided schema for the contract. This is only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
 12. Select your event in the business event catalog, and then select the **Download schema** link. A text file is downloaded. Open the text file, and copy the contents.
 13. Go back to Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
