@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create checks with a blank status 
-description: You can create blank status checks for a bank account from the Checks page. 
+title: Create checks that have Blank status 
+description: This topic explains how to create blank checks for a bank account on the Checks page. 
 author: Annette Bruer
 manager: AnnBe
 ms.date: 10/26/2017
@@ -30,14 +30,18 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create checks with a blank status
+# Create checks that have Blank status
+
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the capability to create blank checks. For example, you might create blank check to reocord a check that has been damaged and can't be used for payment. 
+This topic explains how to create blank checks. For example, you might create a blank check to record a check that has been damaged and can't be used for payment.
 
-The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. Blank status checks can also be created from this page. After a check has been created with a Blank status, it cannot be deleted or reused in the system. This feature is available from the **Checks** page if the **Create checks with a blank status on the Checks page** parameter on the **Feature management** page is enabled. If the feature is not enabled, then Blank status checks can be created from the **Payment by check** dialog during the Accounts payable payment generation process.
+On the **Checks** page, you perform maintenance tasks for checks. For example, you can create new check numbers and delete checks. You can also create checks that have a status of **Blank**. After blank checks are created, they can't be deleted or reused in the system.
 
-To navigate to the **Checks** page, click **Cash and bank management > Bank accounts > Bank accounts > Manage payments > Checks** or **Cash and Bank management > Inquiries and Reports > Checks**.
+> [!NOTE]
+> This feature is available on the **Checks** page only if you turn on the **Create checks with a blank status on the Checks page** feature on the **Feature management** page. If the feature isn't turned on, checks that have **Blank** status can be created only from the **Payment by check** dialog box during the payment generation process in Accounts payable.
 
-Click **Create blank checks** to complete the process. While the system is creating checks with a blank status, the associated bank account will be inactivated temporarily. This reduces the risk of generating payments at the same time that blank status checks are created. When the processing is finished, the associated bank account is reactivated.
+To open the **Checks** page, go to **Cash and bank management \> Bank accounts \> Bank accounts**, and then, on the Action Pane, on the **Manage payments** tab, in the **Related information** group, select **Checks**. Alternatively, go to **Cash and bank management \> Inquiries and reports \> Checks**.
+
+Then, to create checks that have **Blank** status, on the Action Pane, select **Create blank checks**. While the system is creating blank checks, the associated bank account is temporarily inactivated. This behavior reduces the risk that payments will be generated at the same time that blank checks are created. When the processing is completed, the associated bank account is reactivated.
