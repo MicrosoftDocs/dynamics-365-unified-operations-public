@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personalize the user experience
-description: This topic explains how you can personalize the product.
+description: This topic explains how you can personalize the system.
 author: jasongre
 manager: AnnBe
 ms.date: 06/11/2019
@@ -53,7 +53,7 @@ The **User options** page contains several system-wide settings for the current 
 - **Account** – Adjust your user name and other account-related options.
 - **Workflow** – Select workflow-related options.
 
-In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to view and manage the personal changes that you have made to pages in the system. Feature callouts, the pop-up windows that introduce you to new features in the product (available in Platform update 26), can also be reset from this tab so that you are again alerted about previously encountered features.  
+In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to view and manage the personal changes that you have made to pages in the system. Feature callouts, the pop-up windows that introduce you to new features in the system (available in Platform update 26), can also be reset from this tab so that you are again alerted about previously encountered features.  
 
 ## Implicit personalizations
 
