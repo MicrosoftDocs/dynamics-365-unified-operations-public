@@ -38,7 +38,6 @@ This topic covers generating reports for you online channel in Dynamics 365 Reta
 ## Overview
 
 To see how your online channel is performing, there are several reports that you can generate and view in Dynamics 365 Retail.
-They can be accessed from Retail -> Inquiries and reports -> Sales reports.
 
 ### Channel summary report
 
@@ -55,7 +54,7 @@ To generate a channel summary report, do the following.
 1. In the **From** date field, enter a date.
 1. In the **To** date field, enter a date.
 1. In the **Channel** field, select your online channel.
-1. Click OK.
+1. Click **OK**.
  
 ### Channel sales by year report 
 
