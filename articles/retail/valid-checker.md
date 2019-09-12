@@ -5,7 +5,7 @@ title: Retail transaction consistency checker
 description: This topic describes the retail transaction consistency checker functionality in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 09/13/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
