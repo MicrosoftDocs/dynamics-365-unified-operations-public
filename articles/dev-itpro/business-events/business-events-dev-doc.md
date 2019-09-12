@@ -50,8 +50,7 @@ other words, what is the reason for capturing the business event and how it is
 going to be used by the recipient.
 
 If the intent for capturing a business event is to take a business action
-outside of Finance and Operations in response to the business event happening in
-Finance and Operations, then this is a valid intent to capture the business
+outside of the application in response to the business event happening, then this is a valid intent to capture the business
 event. The business action that is taken in response to the business event can
 be to notify users about the business event and/or to call into another
 business application to take a business action like, creating a sales order. It is important to look at the business action generically and not
