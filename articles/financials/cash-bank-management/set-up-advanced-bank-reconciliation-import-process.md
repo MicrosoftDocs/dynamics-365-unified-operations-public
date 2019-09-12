@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. 
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. 
 
-The setup for bank statement import varies, depending on the format of your electronic bank statement. Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.
+The setup for bank statement import varies, depending on the format of your electronic bank statement. Finance supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.
 
 ## Sample files
-For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use. You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio. After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.
+For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance can use. You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio. After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.
 
 | Resource name                                           | File name                            |
 |---------------------------------------------------------|--------------------------------------|
