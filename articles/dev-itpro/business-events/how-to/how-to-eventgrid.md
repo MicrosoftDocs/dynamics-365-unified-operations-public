@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2019-6-30
 # Business events and Azure Event Grid
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to configure a Microsoft Azure Event Grid endpoint with Microsoft Dynamics 365 for Finance and Operations, and how to consume a business event from Event Grid.
+This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 
 ## Scenario overview
 
@@ -44,8 +44,8 @@ Here is an overview of the procedures that you must complete:
 
 1. Create a new event grid topic.
 2. Create a new key vault to store the key for the event grid topic.
-3. Register an Azure app that has permission to access the key vault on behalf of Finance and Operations.
-4. Configure the parameters of the Finance and Operations endpoint.
+3. Register an Azure app that has permission to access the key vault.
+4. Configure the parameters of the endpoint.
 5. Consume the business event.
 
 ## Procedure 1: Create a new event grid topic
@@ -53,7 +53,7 @@ Here is an overview of the procedures that you must complete:
 1. Sign in to the Azure portal.
 2. Select **All services \> Integration \> Event Grid Topics**.
 3. Select **Add** to create a new event grid topic. Set the parameters, and then select **Create**. You can create a new resource group as a container for your lab, or you can use an existing resource group.
-4. After deployment is completed, select the new event grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You will need this value later in Finance and Operations.
+4. After deployment is completed, select the new event grid. On the property blade, select **Overview**, and make a note of the **Topic Endpoint** value. You will need this value later.
 
     <img alt="Event grid topic" src="../../media/BEF-Howto-EventGrid-03.png" width="70%">
 
@@ -63,7 +63,7 @@ Here is an overview of the procedures that you must complete:
 
 ## Procedure 2: Create a key vault
 
-In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault on behalf of Finance and Operations.
+In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault.
 
 1. In the Azure portal, select **All services \> Security \> Key vaults**.
 2. Create a new key vault in your resource group and set the default parameters.
@@ -82,7 +82,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
 ## Procedure 3: Register a new application
 
-In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. Finance and Operations will then use this application to retrieve event grid secrets.
+In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. The application will then use this application to retrieve event grid secrets.
 
 1. In the Azure portal, select **All services \> Security \> Azure Active Directory**.
 2. Select **App registrations (preview) \> New registration**, and then enter a name for your application.
@@ -128,8 +128,8 @@ In this procedure, you will register a new application with Azure AD, and give i
 
 The business scenario involves sending an email message whenever a free text invoice is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the total amount of the invoice.
 
-1. In Finance and Operations select the business event catalog and look for **free text invoice posted** business event.
-2. Then activate the business event for USMF company. Once activated, Finance and Operations sends a test message to validate the configuration and cache the connection.
+1. Select the business event catalog and look for **free text invoice posted** business event.
+2. Then activate the business event for USMF company. Once activated, the application sends a test message to validate the configuration and cache the connection.
 3. To verify that the test message has been received, in the Azure portal, select your event grid topic, and then select **Metrics**. Verify that both the **Published Events** metric and the **Unmatched Events** metric show a value of at least **1**. If they don't, wait for the batch job to pick up your message.
 
     <img alt="Event grid metrics" src="../../media/BEF-Howto-EventGrid-08.png" width="70%">
@@ -151,14 +151,14 @@ The business scenario involves sending an email message whenever a free text inv
     <img alt="Event grid trigger parameters" src="../../media/BEF-Howto-EventGrid-12.png" width="50%">
 
 9. Select **New Step** to add a new action.
-10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
+10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that the application provides.
 11. Click in the **Content** field of the **Parse Json** action. The pane that appears gives you the option form the previous trigger. You must select the **Data object** field of the event grid message that contains the payload that is transmitted by Finance and Operations.
 
     <img alt="Logic appas parse JSON " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
 
-    Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
+    Next, you must enter the schema of the contract that is received from the application. This is only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
-12. In Finance and Operations, select your event in the business event catalog, and then select the **Download schema** link. A text file is downloaded. Open the text file, and copy the contents.
+12. Select your event in the business event catalog, and then select the **Download schema** link. A text file is downloaded. Open the text file, and copy the contents.
 13. Go back to Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
 
     <img alt="Event schema " src="../../media/BEF-Howto-EventGrid-16.png" width="70%">
