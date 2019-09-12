@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create new Retail Server extension
-description: This topic explains how to create new Retail Server extension.
+title: Create a new Retail Server extension
+description: This topic explains how to create a new Retail Server extension.
 author: mugunthanm
 manager: AnnBe
 ms.date: 08/25/2019
@@ -30,104 +30,103 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Create new Retail Server extension
+# Create a new Retail Server extension
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to create new Retail Server (RS) API and expose it for POS or other clients to consume. Modifying the existing Retail server APIs are not supported.
+This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported.
 
-There are only a few end-to-end Retail Server extension samples including CRT in the Retail SDK. You can use these sample as template to start your extensions. You can find the sample extensions in the **RetailSDK\\SampleExtensions\\RetailServer** folder.
+The Retail software development kit (SDK) includes only a few samples of end-to-end Retail Server extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 
-## End-to-end sample repository in Retail SDK
+## End-to-end sample repository in the Retail SDK
 
-| Sample Extension<br>(RetailSDK\\SampleExtensions\\RetailServer)  | CRT sample<br>(RetailSDK\\SampleExtensions\\CommerceRuntime) | POS Sample<br>(RetailSDK\\POS\\Extensions) |
+| Sample extension<br>(RetailSDK\\SampleExtensions\\RetailServer) | CRT sample<br>(RetailSDK\\SampleExtensions\\CommerceRuntime) | POS sample<br>(RetailSDK\\POS\\Extensions) |
 |---------------------------------------------|--------------------------------------------|----------------------------------------|
 | Extensions.StoreHoursSample                 | Extensions.StoreHoursSample                | StoreHoursSample                       |
 | Extensions.SalesTransactionSignatureSample  | Extensions.SalesTransactionSignatureSample | SalesTransactionSignatureSample        |
 | Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample          |                                        |
 | Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample              |                                        |
 
-## Create a new RS extension
-Follow these steps to create new RS extensions.
+## Create a new Retail Server extension
+
+Follow the steps in this section to create a new Retail Server extension.
 
 ### End-to-end flow
 
-The following image describes the flow of the extension.
+The following illustration shows the flow of the extension.
 
-![RS Extension Flow](media/RSExtensionFlow.png)
+![Retail Server extension flow](media/RSExtensionFlow.png)
 
-### RS extension class diagram
+### Retail Server extension class diagram
 
-The following diagram shows the class structure of the extension.
+The following illustration shows the class structure of the extension.
 
-![RS Extension Class diagram](media/RSClassFlow.png)
+![Retail Server extension class diagram](media/RSClassFlow.png)
 
 ### Steps
 
-1. Before creating the Retail server extension, create the Commerce Runtime extension. RS APIs should not have any logic other than calling the commerce runtime with the parameters.
-2. Create new C\# class library project using the .NET target framework minimum 4.6.1.
-3. Add a reference to your CRT extension library or project to the RS extension project. This lets you call the CRT request and response, lets you use the entities from the Retail Server extension project.
-4.  Inside the RS extension project create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. The **Controller** class will contain the method to be exposed by the RS API. Inside the controller class add methods to call the commerce runtime request.
+1. Before you create the Retail Server extension, create the CRT extension. Retail Server APIs should have no logic except logic that calls the CRT with the parameters.
+2. Create a new C\# class library project that uses the Microsoft .NET Framework version 4.6.1 or later as the target framework.
+3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response. It also lets you use the entities from the Retail Server extension project.
+4. In the Retail Server extension project, create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request.
 
-```C#
-/// <summary>;
-/// The controller to retrieve a new entity.
-/// <summary>
-[ComVisible(false)]
-public class SampleController : CommerceController<SampleEntity, long>;
-{
-    ///<summary>;
-    /// Gets the controller name used to load extended controller.
+    ```C#
+    /// <summary>;
+    /// The controller to retrieve a new entity.
     /// <summary>
-    public override string ControllerName
+    [ComVisible(false)]
+    public class SampleController : CommerceController<SampleEntity, long>;
     {
-        get { return "SampleEntity"; }
-    }
-
-    /// <summary>;
-    /// Gets the sample entity.
-    /// <summary>;
-    /// <param name="parameters">The parameters to this action.</param>
-    /// <returns>The list of sample entity.</returns>
-    [HttpPost]
-    [CommerceAuthorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
-    public System.Web.OData.PageResult<SampleEntity> GetSampleEntity(ODataActionParameters parameters)
-    {
-        if (parameters == null)
+        ///<summary>;
+        /// Gets the controller name used to load extended controller.
+        /// <summary>
+        public override string ControllerName
         {
-            throw new ArgumentNullException("parameters");
+            get { return "SampleEntity"; }
         }
-
-        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-        QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-        queryResultSettings.Paging = new PagingInfo(10);
-        var request = new CRTDataRequest((string)parameters["key"]) { QueryResultSettings = queryResultSettings };
-        PagedResult<SampleEntity> sample = runtime.Execute<CRTDataResponse>(request, null);
-        return this.ProcessPagedResults(sample);
+        /// <summary>;
+        /// Gets the sample entity.
+        /// <summary>;
+        /// <param name="parameters">The parameters to this action.</param>
+        /// <returns>The list of sample entity.</returns>
+        [HttpPost]
+        [CommerceAuthorization(CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
+        public System.Web.OData.PageResult<SampleEntity> GetSampleEntity(ODataActionParameters parameters)
+        {
+            if (parameters == null)
+            {
+                throw new ArgumentNullException("parameters");
+            }
+            var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+            QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
+            queryResultSettings.Paging = new PagingInfo(10);
+            var request = new CRTDataRequest((string)parameters["key"]) { QueryResultSettings = queryResultSettings };
+            PagedResult<SampleEntity> sample = runtime.Execute<CRTDataResponse>(request, null);
+            return this.ProcessPagedResults(sample);
+        }
     }
-}
-```
+    ```
 
-5.  Create the new **EdmModelExtender** class that extends the **IEdmModelExtender** interface. The **EdmModelExtender** (EDM) class contains the abstract data model that is used to describe the data exposed by an RS API. An OData Metadata Document is a representation of a service's data model exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
+5. Create an **EdmModelExtender** (EDM) class that extends the **IEdmModelExtender** interface. This class contains the abstract data model that is used to describe the data that a Retail Server API exposes. An Open Data Protocol (OData) Metadata Document is a representation of a service's data model that is exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
 
-    The **IEdmModelExtender** interface contains the abstract **ExtendModel** method. When you extend this interface you must implement the **ExtendModel** method. Inside the **ExtendModel** is where you will build your EDM entities and functions that are exposed for the client using the **CommerceModelBuilder** class.
+    The **IEdmModelExtender** interface contains the abstract **ExtendModel** method. When you extend this interface, you must implement the **ExtendModel** method. Inside the **ExtendModel** method, you build the EDM entities and functions that will be exposed to the client by using the **CommerceModelBuilder** class.
 
-    The CommerceModelBuilder Contains the build method to build the entities and functions:
+    The **CommerceModelBuilder** class contains the build method that is used to build the entities and functions.
 
-    | Method name              | Return type                                      | Description                                    |
-    |--------------------------|--------------------------------------------------|------------------------------------------------|
-    | BuildEntity\<TEntity\>() where TEntity : class                              | EntityTypeConfiguration\<TEntity\>       | Builds the entity.                                                             |
-    | BuildEntitySet\<TEntity\>(string entitySetName) where TEntity : class       | EntitySetConfiguration\<TEntity\>        | Builds entity set.                                                             |
-    | BuildComplexType\<TComplexType\>() where TComplexType : class               | ComplexTypeConfiguration\<TComplexType\> | Builds complex entity type.                                                    |
-    | BuildEnumType\<TEnumType\>()                                                | EnumTypeConfiguration\<TEnumType\>       | Builds enumeration type.                                                       |
-    | BindAction(string actionName)                                               | ActionConfiguration                      | Binds action in the model builder. An action represents a HTTP POST request.   |
-    | BindEntityAction\<TEntity\>(string actionName) where TEntity : class        | ActionConfiguration                      | Binds entity action of the model. An action represents a HTTP POST request.    |
-    | BindEntitySetAction\<TEntity\>(string actionName) where TEntity : class     | ActionConfiguration                      | Binds entity set action. An action represents a HTTP POST request.             |
-    | BindFunction(string functionName)                                           | FunctionConfiguration                    | Binds function in the model builder. A function represents a HTTP GET request. |
-    | BindEntityFunction\<TEntity\>(string functionName) where TEntity : class    | FunctionConfiguration                    | Binds entity function of the model. A function represents a HTTP GET request.  |
-    | BindEntitySetFunction\<TEntity\>(string functionName) where TEntity : class | FunctionConfiguration                    | Binds entity set function. A function represents a HTTP GET request.           |
+    | Method name                                                                 | Return type                              | Description |
+    |-----------------------------------------------------------------------------|------------------------------------------|-------------|
+    | BuildEntity\<TEntity\>() where TEntity : class                              | EntityTypeConfiguration\<TEntity\>       | This method builds an entity. |
+    | BuildEntitySet\<TEntity\>(string entitySetName) where TEntity : class       | EntitySetConfiguration\<TEntity\>        | This method builds an entity set. |
+    | BuildComplexType\<TComplexType\>() where TComplexType : class               | ComplexTypeConfiguration\<TComplexType\> | This method builds a complex entity type. |
+    | BuildEnumType\<TEnumType\>()                                                | EnumTypeConfiguration\<TEnumType\>       | This method builds an enumeration type. |
+    | BindAction(string actionName)                                               | ActionConfiguration                      | This method binds an action in the model builder. An action represents an HTTP POST request. |
+    | BindEntityAction\<TEntity\>(string actionName) where TEntity : class        | ActionConfiguration                      | This method binds an entity action of the model. An action represents an HTTP POST request. |
+    | BindEntitySetAction\<TEntity\>(string actionName) where TEntity : class     | ActionConfiguration                      | This method binds an entity set action. An action represents an HTTP POST request.             |
+    | BindFunction(string functionName)                                           | FunctionConfiguration                    | This method binds a function in the model builder. A function represents a HTTP GET request. |
+    | BindEntityFunction\<TEntity\>(string functionName) where TEntity : class    | FunctionConfiguration                    | This method binds an entity function of the model. A function represents an HTTP GET request. |
+    | BindEntitySetFunction\<TEntity\>(string functionName) where TEntity : class | FunctionConfiguration                    | This method binds an entity set function. A function represents an HTTP GET request. |
 
-    The following examples shows who to extend the EDM model.
+    The following example shows how to extend the EDM model.
 
     ```C#
     /// <summary>;
@@ -154,8 +153,8 @@ public class SampleController : CommerceController<SampleEntity, long>;
     }
     ```
 
-6.  Build the extension project and drop the binary in the \\RetailServer\\webroot\\bin\\Ext folder.
-7.  Update the Retail server web.config form the \\RetailServer\\webroot folder with the new RS extension library name under the extension composition section.
+6. Build the extension project, and drop the binary into the **\\RetailServer\\webroot\\bin\\Ext** folder.
+7. Update the Retail Server web.config file in the **\\RetailServer\\webroot** folder by adding the new Retail Server extension library name in the **extensionComposition** section.
 
     ```
     <extensionComposition>
@@ -165,15 +164,13 @@ public class SampleController : CommerceController<SampleEntity, long>;
     </extensionComposition>
     ```
 
-8.  Restart the Retail server in IIS to load the new RS extension.
-9.  To verify the extension successfully loaded, you can browse the metadata of the Retail Server and confirm that your entities and methods show up in the list.
+8. In Microsoft Internet Information Services (IIS), restart Retail Server to load the new Retail Server extension.
+9. To verify that the extension was successfully loaded, you can browse the Retail Server metadata, and confirm that your entities and methods appear in the list.
 
-    To browse the Retail server metadata, use the below URL type in the browser:
+    To browse the Retail Server metadata, open a URL in the following format in a web browser:
 
-    **https://Your retail server URL/Commerce/$metadata**
+    `https://Your Retail Server URL/Commerce/$metadata`
 
-10. To call the Retail Server extension in your client, you need to generate the Retail proxy. Using the generated proxy you can call your new RS APIs from the client.
+10. To call the Retail Server extension in your client, you must generate the Retail proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
-    To generate the proxy, follow the steps mentioned in [Generate Retail proxy](typescript-proxy-retail-pos).
-
-
+    For information about how to generate the Retail proxy, see [Generate Retail proxy](typescript-proxy-retail-pos).
