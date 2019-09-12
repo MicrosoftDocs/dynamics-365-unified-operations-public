@@ -48,7 +48,7 @@ The entity spreadsheets include three types of data:
 For more information about the type of data that is included in each entity spreadsheet in the data packages see the [Data packages](#data-packages-system) section of this topic. You can modify individual spreadsheets before you import the data packages, or you can import the data packages as they have been supplied and then update your data in the system.
 
 ## Using configuration data packages
-You can access configuration data packages from LCS. You can either apply them to an LCS environment, or download them so that you can manually import them into Finance and Operations.
+You can access configuration data packages from LCS. You can either apply them to an LCS environment, or download them so that you can manually import them.
 
 1. Open your LCS project, and open the Asset library.
 2. In the list of asset types, select **Process data package**.
@@ -58,7 +58,7 @@ You can access configuration data packages from LCS. You can either apply them t
 
 At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
 
-You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace in Finance and Operations to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).
+You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).
 
 ## Special considerations
 ### System setup
