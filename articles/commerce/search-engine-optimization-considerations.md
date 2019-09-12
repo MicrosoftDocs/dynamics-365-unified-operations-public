@@ -42,6 +42,6 @@ A "soft launch" of a website is a launch to a restricted audience or market in a
 ## A site in production
 For a site in production, you should ensure that all site pages are properly tagged. Dynamics 365 Commerce renders all SEO information on a page using the information entered for that page. Modules that provide this functionality are the category page summary, list page summary, and product page summary modules. To optimize search engine indexing, the rendering framework uses information from the SEO properties configured in Commerce as well as module-specific information. For a site in production, you should ensure that the robots.txt file allows indexing of your entire site and contains links to your published sitemap document. Sitemap generation should be enabled in **Site Settings \> Site maps enabled**.
 
-### Page settings for internal preview, limited audiences, and all audiences
+### Page SEO settings for internal preview, limited audiences, and all audiences
 Because Dynamics 365 Commerce supports WYSIWYG- and authenticated preview, authors can prepare their page content without having to worry about information becoming visible to site visitors. If there is a need to publish a page but limit its exposure, page meta tags should include the NOINDEX meta tag to avoid being indexed to search engines. When a page is ready for all audiences, all of the basic SEO metadata should be present to maximize search engine indexing efficiency. Also, the NOLIMIT meta tag should be removed.
 
