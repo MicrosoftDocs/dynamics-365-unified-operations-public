@@ -42,7 +42,7 @@ What is the error?
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 
 ## What are the differences?
-Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
+Compare the bank file layout definition to the Finance import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance file. In the ISO20022 files, any differences should be easy to see.
 
 ## Transformations
 Typically, the change must be made in one of three transformations. Each transformation is written for a specific standard.
@@ -84,7 +84,7 @@ When the transformation runs, it creates an output file that you can view in Vis
 
 ### Adjust the transformation
 
-Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Finance and Operations element.
+Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Finance element.
 
 ### Debit/credit indicator
 
