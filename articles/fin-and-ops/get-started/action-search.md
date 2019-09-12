@@ -60,7 +60,7 @@ You can also start action search by pressing Ctrl+/ or Alt+Q. Press the keyboard
 
 ## Understanding the results list
 
-Often, when using the product, you must know both the location and the context of a button to fully understand the purpose of that button. Therefore, additional information is shown for each item in the results list, to help you understand exactly which buttons appear in the list. In particular, the "path" of the button is shown. This path might include the labels of the following UI elements, as relevant:
+Often, you must know both the location and the context of a button to fully understand the purpose of that button. Therefore, additional information is shown for each item in the results list, to help you understand exactly which buttons appear in the list. In particular, the "path" of the button is shown. This path might include the labels of the following UI elements, as relevant:
 
 - Action Pane tab
 - Button group
