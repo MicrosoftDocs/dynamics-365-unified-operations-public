@@ -37,7 +37,7 @@ Service updates are continuous, touchless updates that provide new features and 
 
 You are in control and manage how your organization receives these updates. For example, you can sign up for the First Release program so that your organization receives updates first. You can apply the updates to any of your environments manually (self-update) or remain on the default release schedule and receive the auto-updates when you schedule them using Lifecyle Services (LCS). This topic explains the different release options and how you can use them for your organization.
 
-*Service updates* contain both application (including Financial reporting and Retail) and platform changes that are critical improvements to the service, including regulatory updates. 
+*Service updates* contain both application and platform changes that are critical improvements to the service, including regulatory updates. 
 
 ## Release processes
 
