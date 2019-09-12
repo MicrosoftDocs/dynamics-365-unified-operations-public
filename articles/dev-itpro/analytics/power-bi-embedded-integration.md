@@ -45,19 +45,14 @@ The integration of Finance and Operations and [Power BI](https://www.powerbi.com
 
 For more information about customizations that use extensions, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 
-## Why might I want to use Power BI Embedded?
-Although both Power BI services are available, it's important that you know which service is best suited to target application scenarios. The following illustration shows a comparison of features across services.
-
-![Comparison of features across services](media/Power-BI-Embedded-integration.png)
-
-For more information about the Power BI Embedded service, see the [Power BI Embedded FAQ](https://powerbi.microsoft.com/documentation/powerbi-frequently-asked-questions/).
-
 ## Advantages of Power BI Embedded
 - **Deliver Power BI workspaces and reports in the application.** If you're a power user or a business analyst, you can tweak ready-made reports or create new reports by using Power BI tools. As a developer, you can use the reports that your users create to provide rich navigation experiences in the product through workspaces. If you're in the partner and ISV community, you can build rich workspaces that include Power BI experiences, and then release those workspaces as part of your solution.
 - **The Power BI Embedded service license is bundled with Finance and Operations.** If you're an ISV or a systems integrator, you can package workspaces that are enabled for Power BI (and navigational experiences that those workspaces provide) as part of a Microsoft Dynamics Lifecyle Services (LCS) solution. Your customers get the same experience without having to have a PowerBI.com subscription. The workspaces just work with Finance and Operations.
 - **Enable drill-down into detailed pages from Power BI.** The visuals are the starting point for action. Your users can drill down to business processes and pages to act immediately on issues that they uncover. The visuals let users filter data and uncover trends. Action pages reflect just the set of data that requires attention.
 - **Help secure access to Power BI reports by using menu items.** As a developer, you can use familiar programming concepts that are available in Finance and Operations, because we have extended the same concepts to workspaces that are based on Power BI. You can create new workspaces or extend existing workspaces by adding an overview page that is driven by Power BI. Developers can associate menu items with Power BI reports and include them as links in workspaces. The role-based and task-based security in Finance and Operations can be used to help secure these menu items.
 - **Filter reports based on application context.** You can build navigation experiences by passing one or more filters to Power BI reports. For example, depending on a user’s actions or context, you can filter the Power BI report to reflect data from one business unit or a specific product. The user doesn't have to filter the data. You can define drill-through links to Finance and Operations pages, so that users can go directly to the transactional details pages.
+
+For more information about the Power BI Embedded service, see the [Power BI FAQ](https://powerbi.microsoft.com/documentation/powerbi-frequently-asked-questions/).
 
 ## Service availability
 **The Power BI Embedded service is automatically deployed and configured for all cloud-hosted, multi-box deployments.** Because the service relies on Microsoft Azure services, application analytical workspaces and reports are unavailable in one-box environments. The Power BI Embedded service is already available in most Azure datacenters. You can check the latest availability on the [Azure status](https://azure.microsoft.com/status/) page.

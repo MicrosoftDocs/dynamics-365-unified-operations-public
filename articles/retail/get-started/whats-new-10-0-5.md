@@ -53,6 +53,8 @@ The Regression suite automation tool (RSAT) enables functional power users to ex
 
 [![POS playback environement setting](.././media/Setting.png)](.././media/Setting.png)
 
+For more information on POS and RSAT, see [Test recorder and Regression suite automation tool for Retail Cloud POS](../dev-itpro/pos-rsat.md).
+
 ## Additional resources
 
 ### Dynamics 365: 2019 release wave 2 plan

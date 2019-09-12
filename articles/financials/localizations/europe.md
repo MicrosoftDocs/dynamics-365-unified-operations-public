@@ -99,6 +99,7 @@ This topic includes information and links to resources that can help you set up 
   - [VAT reporting](emea-vat-reporting.md)
   - [Create and submit VAT report](tasks/create-submit-vat-report.md)
   - [View transactions on settlement](emea-transactions-settlement-form.md)
+  - [Tax point date (Date of VAT register)](emea-tax-point-date.md)
 
 ## Additional resources
 

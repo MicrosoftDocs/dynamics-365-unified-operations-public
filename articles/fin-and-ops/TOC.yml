@@ -38,6 +38,25 @@
         items:
         - name: Buy Finance and Operations (on-premises)
           href: get-started/purchase-on-premises.md
+    - name: Learning catalog
+      href: get-started/learning-catalog.md
+      items: 
+      - name: Business decision makers
+        href: get-started/learning-catalog-bdm.md
+      - name: Business users
+        href: get-started/learning-catalog-business-user.md
+      - name: Implementation project managers
+        href: get-started/learning-catalog-project-manager.md
+      - name: Administrators
+        href: get-started/learning-catalog-administrator.md
+      - name: Developers
+        href: get-started/learning-catalog-developer.md
+      - name: Partner sales and marketing
+        href: get-started/learning-catalog-partner-sales.md
+      - name: Functional consultants
+        href: get-started/learning-catalog-functional-consultant.md
+      - name: Solution architects
+        href: get-started/learning-catalog-solution-architect.md
     - name: What's new or changed
       items:
       - name: What's new or changed home page
@@ -50,6 +69,8 @@
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: Features not implemented in on-premises deployments
         href: get-started/features-not-implemented-on-prem.md
+      - name: Preview features in Finance and Operations version 10.0.6 (November 2019)
+        href: get-started/whats-new-changed-10-0-6.md
       - name: Preview features in Finance and Operations version 10.0.5 (October 2019)
         href: get-started/whats-new-changed-10-0-5.md
       - name: Finance and Operations version 10.0.4 (July 2019)
@@ -64,6 +85,8 @@
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations version 8.1.3 (January 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Preview features in Platform update 30 (November 2019)
+        href: get-started/whats-new-platform-update-30.md
       - name: Preview features in Platform update 29 (October 2019)
         href: get-started/whats-new-platform-update-29.md
       - name: Platform update 28 (July 2019)
@@ -458,8 +481,12 @@
             href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integrated Customer Master
             href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+          - name: Unified product experience
+            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
             href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+          - name: Integrated sites and warehouses
+            href: ../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
             href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
           - name: Troubleshooting data integration
@@ -896,6 +923,8 @@
         href: ../financials/cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
         href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
+      - name: Simple bank reconciliation
+        href: ../financials/cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
         - name: Advanced bank reconciliation setup tasks
@@ -1068,6 +1097,8 @@
         href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
       - name: Dispose of a fixed asset using a free text invoice
         href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
+      - name: Dispose of a fixed asset as scrap
+        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
       - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
@@ -1288,6 +1319,8 @@
           href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
           href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Sales tax specification by ledger transaction report
+          href: ../financials/general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
           href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
         - name: Set up withholding tax
@@ -1426,6 +1459,8 @@
         href: ../financials/general-ledger/view-financial-reports.md
       - name: Report designer interface
         href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
+      - name: Keyboard shortcuts for financial reporter
+        href: ../financials/general-ledger/financial-reporting-keyboard-shortcuts.md
       - name: User preferences in financial report designer
         href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
       - name: Advanced formatting options
@@ -1638,6 +1673,8 @@
           href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
         - name: Set up adjustment codes for ICMS taxes on fiscal documents
           href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+        - name: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
+          href: ../financials/localizations/latam-bra-complement-restitution.md
         - name: Set up adjustment codes for IPI taxes
           href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
         - name: PIS and COFINS fixed assets
@@ -1660,6 +1697,10 @@
           href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
         - name: Withholding taxes on vendor payments
           href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md          
+    - name: Canada
+      items: 
+      - name: GST/HST Internet File Transfer
+        href: ../financials/localizations/can-gst-hst-internet-file-transfer.md
     - name: China
       items:
       - name: China overview
@@ -1902,6 +1943,8 @@
           href: ../financials/localizations/tasks/eur-00018-vat-reconciliation-report.md
         - name: VAT register transactions for Eastern Europe
           href: ../financials/localizations/emea-vat-register-transactions.md
+        - name: Tax point date (Date of VAT register)
+          href: ../financials/localizations/emea-tax-point-date.md
         - name: VAT reporting
           href: ../financials/localizations/emea-vat-reporting.md
         - name: Create and submit VAT report
@@ -2199,6 +2242,8 @@
         - name: Tax engine overview
           href: ../financials/general-ledger/tax-engine.md
           items:     
+          - name: Create tax components
+            href: ../financials/localizations/tax-engine-create-tax-component.md
           - name: Import configuration
             href: ../financials/general-ledger/tax-engine-import-configuration.md
           - name: Tax engine applicability
@@ -3255,6 +3300,8 @@
             href: ../dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
       - name: Split generated XML files based on file size and content quantity
         href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
+      - name: Support parameterized calls of ER data sources of Calculated field type
+        href: ../dev-itpro/analytics/er-calculated-field-type.md?toc=/fin-and-ops/toc.json
       - name: Configuration lifecycle
         items:
         - name: Manage configurations lifecycle
@@ -3279,6 +3326,8 @@
           items: 
           - name: Configure the Electronic reporting framework
             href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
+          - name: Back up and recover ER templates
+            href: ../dev-itpro/analytics/er-backup-storage-templates.md?toc=/fin-and-ops/toc.json
           - name: Create configuration provides and mark them as active
             href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
         - name: Destinations
@@ -3592,7 +3641,7 @@
         href: ../supply-chain/asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
     - name: Preventive and reactive maintenance
       items: 
-      - name: Preventive maintenance
+      - name: Preventive maintenance overview
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
       - name: Maintenance plans
         href: ../supply-chain/asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
@@ -3644,7 +3693,7 @@
         href: ../supply-chain/asset-management/warranty/warranty-on-assets-and-asset-types.md
     - name: Maintenance budgets
       items:
-      - name: Create maintenance budgets
+      - name: Maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/create-maintenance-budget.md
       - name: Update maintenance budgets
         href: ../supply-chain/asset-management/maintenance-budgets/update-maintenance-budget.md
@@ -3664,6 +3713,10 @@
         href: ../supply-chain/asset-management/controlling-and-reporting/item-where-used.md
       - name: Maintenance status
         href: ../supply-chain/asset-management/controlling-and-reporting/maintenance-status.md
+    - name: Data management
+      items:
+      - name: Target entities
+        href: ../supply-chain/asset-management/data-management/target-entities.md
   - name: Master planning
     items:
     - name: Master planning home page
@@ -4164,6 +4217,8 @@
           href: ../supply-chain/production-control/release-production-orders.md
         - name: Report production orders as finished
           href: ../supply-chain/production-control/report-production-orders-as-finished.md
+        - name: Report as finished to a license plate controlled location 
+          href: ../supply-chain/production-control/report-finished-job-device.md        
         - name: Reverse the production order status
           href: ../supply-chain/production-control/reverse-production-order-status.md
         - name: Visibility into material exceptions
@@ -4532,7 +4587,7 @@
       items:
       - name: Work breakdown structures overview
         href: ../financials/project-management/work-breakdown-structures.md
-      - name: Microsoft Project client integration
+      - name: Microsoft Project Client integration
         href: ../financials/project-management/project-integration.md
     - name: Project mobile applications overview
       href: ../financials/project-management/project-mobile-application-overview.md
@@ -4908,8 +4963,12 @@
         href: ../supply-chain/inventory/warehouse-template.md
       - name: Control work by using work templates and location directives
         href: ../supply-chain/warehousing/control-warehouse-location-directives.md
+      - name: Wave step codes
+        href: ../supply-chain/warehousing/wave-step-codes.md
       - name: Configure wave processing
         href: ../supply-chain/warehousing/tasks/configure-wave-processing.md
+      - name: Auto-update shipments
+        href: ../supply-chain/warehousing/auto-update-shipment.md
       - name: Create a location profile
         href: ../supply-chain/warehousing/tasks/create-location-profile.md
       - name: Configure locations in a WMS-enabled warehouse

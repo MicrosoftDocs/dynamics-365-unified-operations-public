@@ -60,7 +60,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 ### Create a data project
 
 1. On the main dashboard, select the **Data management** tile to open the **Data management** workspace.
-2. Select the **Import or Export** tile to create a new data project.
+2. Select the **Import** or **Export** tile to create a new data project.
 
     > [!NOTE]
     > If you have an existing data project, select **Load project** on the card for any data project on the **Data projects** tab.
