@@ -72,7 +72,7 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 ### Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, click the **Edit** (pencil) button on a topic, or go to our repo at <https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public>. The following video shows how you can contribute to our documentation.
+You can contribute and make edits to the documentation. To get started, click the **Edit** (pencil) button on a topic. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
