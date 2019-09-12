@@ -52,7 +52,7 @@ The following table lists the minimum network requirements for the connection be
 | Bandwidth | 50 kilobytes per second (KBps) per user | 100 megabytes per second (MBps)                                                            |
 | Latency   | Less than 250–300 milliseconds (ms)     | Less than 1 ms (local area network \[LAN\] only). AOS and the database must be co-located. |
 
-- Finance + Operations (on-premises) is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the datacenter that hosts Finance + Operations.
+- Finance + Operations is designed for networks that have a latency of 250–300 milliseconds (ms) or less. This latency is the latency from a browser client to the datacenter that hosts Finance + Operations.
 - Bandwidth requirements depend on your scenario. Typical scenarios require a bandwidth of more than 50 KBps between the browser and the server. However, we recommend higher bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization. The specific amount of bandwidth depends on use.
 
 Deployments where AOS and the Microsoft SQL Server database are in different datacenters aren't supported. AOS and the SQL Server database must be co-located.
