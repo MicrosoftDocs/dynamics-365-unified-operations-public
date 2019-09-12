@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.6
 ---
 
 # Sales tax calculation on general journal lines
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 
@@ -82,7 +84,7 @@ You can override the sales tax direction when the voucher contains only lines wh
 
 Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and select the **Legal entity overrides** FastTab.
 
-![](media/Override-tax-direction.png)
+[![Override tax direction](./media/Override-tax-direction.png)](./media/Override-tax-direction.png))
 
 ## Determine the sales tax amount on the temporary sales tax page
 
