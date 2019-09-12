@@ -1283,6 +1283,8 @@
           href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
           href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Sales tax specification by ledger transaction report
+          href: ../financials/general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
           href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
         - name: Set up withholding tax
