@@ -71,7 +71,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 > Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth/` or `http://contosoax7.cloud.dynamics.com/oauth/`.
 			 
 4. Click **Create**.
-5. Copy the **Application ID**. This will be used in Finance and Operations to connect to the PowerBI.com service.
+5. Copy the **Application ID**. This will be used to connect to the PowerBI.com service.
 6. Click **Settings** > **Required permissions** > **Add** > **Select an API** > **Power BI Service (Power BI)**.
 7. Click **Select**.
 8. Enable Access and click **Select**.<br>
@@ -85,7 +85,7 @@ Make a note of the **Application ID** and **Application Key**. You will use thes
 
 ## Specify Power BI settings in Finance and Operations
 
-1. In the Finance and Operations client, open the **Power BI configuration** page.<br>
+1. In the client, open the **Power BI configuration** page.<br>
     ![Power BI configuration dialog](./media/D365-PBI-Configuration.png)
 
 2. Select **Edit**.
@@ -93,7 +93,7 @@ Make a note of the **Application ID** and **Application Key**. You will use thes
 4. In the **Application ID** field, enter the **Application ID** value that you got from Power BI in the previous procedure.
 5. In the **Application Key** field, enter the **Application Key** value that you got from Power BI in the previous procedure.
 
-    You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released with Finance and Operations uses this convention.
+    You can apply the company filter only if your Power BI content has a table that is named **Company** and a column that is named **ID**. Ready-made Power BI content that is released uses this convention.
 
 6. Click **Save**.
 
