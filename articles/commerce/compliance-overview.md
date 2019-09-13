@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Compliance overview
 
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 This topic reviews guidance on using Dynamics 365 Commerce to make your sites compliant using various modules and features.
 
 Compliance is an important factor for all businesses as it helps your user base to better connect with your site content. Staying compliant can also protect a company from expensive legal actions or hefty fines. The following topics will review using Dynamics 365 Commerce to optimize your site for compliance.
