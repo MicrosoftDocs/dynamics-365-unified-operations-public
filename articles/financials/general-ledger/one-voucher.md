@@ -161,7 +161,7 @@ A new feature that was added in Microsoft Dynamics 365 for Operations version 16
 
 ### Import bank statement transactions
 
-Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance and Operations through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
+Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
 
 Transactions can be grouped by using other fields on the journal, such as the journal batch number itself or the document number.
 
