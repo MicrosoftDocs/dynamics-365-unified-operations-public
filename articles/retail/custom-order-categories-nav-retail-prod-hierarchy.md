@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change the sort order for merchandising entities
-description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Microsoft Dynamics 365 for Retail.
+description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Retail.
 author: ashishharchwani
 manager: AnnBe
 ms.date: 08/05/2019
@@ -42,7 +42,7 @@ This topic explains the concepts that are related to controlling the display ord
 
 The support for sorting various merchandising-related entities has been enhanced. This support is now better aligned with existing customer scenarios that previously required extensions from implementation partners.
 
-In versions of Microsoft Dynamics 365 for Retail that are earlier than version 10.0.5, the sort order for categories in the navigation hierarchy was alphabetical. The new custom sort order functionality lets merchandising managers configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
+In versions of Retail that are earlier than version 10.0.5, the sort order for categories in the navigation hierarchy was alphabetical. The new custom sort order functionality lets merchandising managers configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
 
 ## Configure the display order for categories in the retail product hierarchy
 
