@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-09-10
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (September 10, 2019)"
+# What's new or changed in Dynamics 365 for Talent (September 10, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,19 +37,21 @@ This topic describes features that are either new or changed in Dynamics 365 for
 
 ## Changes in Attract
 
-### Candidate e-mail login experience
+### Candidate e-mail login
 
-Candidates can now use any e-mail address to create an account and login to Talent career site to apply for jobs and look up their application status. This is in addition to a candidate already being able to log on to the Talent career site using their social accounts or their organization credentials.
+Candidates can now use any e-mail address to create an account and login to a Talent career site to apply for jobs and look up their application status. This is in addition to already being able to log on to the Talent career site using their social accounts or their organization credentials.
 
-### Job activation and posting experience
+### Job activation and posting
 
-We have made few changes to the job activation and posting experiences. Jobs needs to be activated before they can be posted to the Talent career site or to any of the external job boards including LinkedIn or Broadbean.
+We have made a few changes to job activation and posting. You need to activate jobs before posting them to the Talent career site or to any external job boards, including LinkedIn or Broadbean.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2482.
+
+Changes described in this section apply to build number 8.1.2482. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Reminder - Preview features can be enabled in Sandbox and Trial environments
 
@@ -63,43 +65,43 @@ For more details about Platform update 29, see [Preview features in Dynamics 365
 
 ### New job base entity available in data management framework (347202)
 
-With this release a new Base Job entity is available for importing/exporting data. 
+With this release, a new Base Job entity is available for importing/exporting data. 
 
-### Worker advanced security policy incorrectly displaying positions in Position Hieararchy (354868)
+### Worker advanced security policy incorrectly displays positions in Position Hierarchy (354868)
 
 With this release, positions no longer display open with a "blank" worker when users have restricted access.
 
 ### Job form close box won't close form in certain situations (342467)
 
-This release includes a change that allows for the Job form to be closed in all scenarios.
+This release includes a change that allows the Job form to close in all scenarios.
 
-### New case on employee record is locked for HR manager role (337111)
+### New case on employee record is locked for Human Resources manager role (337111)
 
-With this change, the case management form is no longer locked when accessing from the employee form.
+With this change, the case management form is no longer locked when accessing it from the employee form.
 
 ### Employment end date always defaults to 23:59:59 (351492)
 
-With this change, the employment date can be changed to a time other than 23:59:59 when manually ending an employment.
+With this change, you can change the employment date to a time other than 23:59:59 when manually ending an employment.
 
-### TUnable to set up expiring date on the earning code through Data management (336604)
+### Unable to set up expiration date on an earning code through Data management (336604)
 
-In this release, you are able to set up earning codes that expire through the "PayrollWorkerPositionEarningCodeEntity" entity.
+In this release, you can set up earning codes that expire through the **PayrollWorkerPositionEarningCodeEntity** entity.
 
-### Employee development analytic report not displaying data (348737)
+### Employee development analytic report doesn't display data (348737)
 
 In this week's release, the analytics for employee skills has been updated to provide accurate reporting.
 
-### Terms of employment date/time not defaulting to beginning of day (349101)
+### Terms of employment date/time don't default to beginning of day (349101)
 
-With this change, the start date/time will now default to the beginning of day and the end date/time will default to end of day.
+With this change, the start date/time now defaults to beginning of day and the end date/time defaults to end of day.
 
 ### Changing the employment end date on Worker action form displays an error (354092) 
 
-This changes corrects an issue when modifying the employment end date as part of the worker action.
+This change corrects an issue when modifying the employment end date as part of the worker action.
 
 ### Applying onboarding checklists across companies (338433)
 
-This release now provides the ability to apply checklists for employees that are employed in legal entities other than the logged in legal entity.
+This release now provides the ability to apply checklists for employees that are employed in legal entities other than the signed-in legal entity.
 
 ## In preview
 
