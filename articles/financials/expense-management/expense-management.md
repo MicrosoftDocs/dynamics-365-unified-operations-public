@@ -58,7 +58,7 @@ The [Microsoft Dynamics Operations Partner Community blog](https://community.dyn
 
 ### Task guides
 
-Additional help is available as task guides inside Microsoft Dynamics 365 for Finance and Operations. To access task guides, select the **Help** button on any page.
+Additional help is available as task guides. To access task guides, select the **Help** button on any page.
 
 ### Videos
 
