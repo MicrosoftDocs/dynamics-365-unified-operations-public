@@ -303,4 +303,4 @@ The following Microsoft Office applications are supported in the cloud and on-pr
 
 ## Hardware and software requirements for Retail components
 
-Currently, Finance and Operations (on-premises) doesn't include the Retail components.
+Currently, Finance + Operations (on-premises) doesn't include the Retail components.
