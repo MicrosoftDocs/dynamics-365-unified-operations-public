@@ -728,7 +728,7 @@ Cost object CC004 Packaging contributes to several cost objects. A statistical d
 </table>
 
 > [!NOTE]
-> In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template). The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
+> Statistical measures such as the production hours that a product consumes can be derived from source data. For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template). The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
 
 <table>
 <thead>
