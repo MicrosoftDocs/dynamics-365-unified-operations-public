@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (June 11, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (June 11, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -29,17 +29,17 @@ ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (June 11, 2019)
+# What's new or changed in Dynamics 365 Talent (June 11, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
 ## Changes in Attract
 
 ### Search engine optimization for job posts
 
-After you turn on **Search Engine Optimization** in the Dynamics 365 for Talent: Attract Admin center, Attract informs the Google Indexing application programming interface (API) to crawl the webpage whenever you activate and post a new job or update an existing job. In this way, the job will appear in the search results for Google and other search engines.
+After you turn on **Search Engine Optimization** in the Dynamics 365 Talent: Attract Admin center, Attract informs the Google Indexing application programming interface (API) to crawl the webpage whenever you activate and post a new job or update an existing job. In this way, the job will appear in the search results for Google and other search engines.
 
 Likewise, whenever you unpost a job, Attract informs the Indexing API, so that the unposted job will stop appearing in search results.
 
@@ -54,7 +54,7 @@ Approvals appear in an **Approvals** section on the dashboard. Approvers can rev
 
 ## Changes in Onboard
 
-This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
