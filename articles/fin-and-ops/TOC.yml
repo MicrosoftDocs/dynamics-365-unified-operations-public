@@ -915,6 +915,8 @@
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Create checks that have Blank status
+        href: ../financials/cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
         href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
@@ -1097,6 +1099,8 @@
         href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
       - name: Dispose of a fixed asset using a free text invoice
         href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
+      - name: Dispose of a fixed asset as scrap
+        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
       - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
@@ -1317,6 +1321,8 @@
           href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
           href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+        - name: Sales tax specification by ledger transaction report
+          href: ../financials/general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
           href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
         - name: Set up withholding tax
