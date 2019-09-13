@@ -109,17 +109,20 @@ To help organize your procedures, you can group steps together into tasks. To sp
 
 Tasks can be nested inside other tasks. In this way, you can better organize very long and complex business processes.
 
-[![Task](./media/StartTask.png)](./media/Recording.png)
+> [!div class="mx-imgBorder"]
+> [![Task](./media/StartTask.png)](./media/Recording.png)
 
 ### Add a new task
 
-[![New task](./media/NewTask.png)](./media/NewTask.png)
+> [!div class="mx-imgBorder"]
+> [![New task](./media/NewTask.png)](./media/NewTask.png)
 
 ### Add an annotation
 
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add an annotation to any step by selecting the **Edit** button (pencil symbol) to the right of the step.
 
-[![Annotation](./media/Annotation.png)](./media/Annotation.png)
+> [!div class="mx-imgBorder"]
+> [![Annotation](./media/Annotation.png)](./media/Annotation.png)
 
 ### Add text and notes
 
@@ -132,13 +135,15 @@ You can use the **Text** and **Notes** fields in the annotation dialog box to ad
 
 You can change user input values that are entered during a recording session. For example, if you added product 0005 during the recording session, the product ID is stored by default in the Recording.xml file. If you want to specify a different product ID, you can change the value here. The value will be shown only if there is user input.
 
-[![Edit a value and an annotation](./media/EditAnnotation.png)](./media/EditAnnotation.png)
+> [!div class="mx-imgBorder"]
+> [![Edit a value and an annotation](./media/EditAnnotation.png)](./media/EditAnnotation.png)
 
 ### Hide the test recorder pane
 
 To hide and show the test recorder pane during a recording session, select the collapse button.
 
-[![Collapse button](./media/Hide.png)](./media/Hide.png)
+> [!div class="mx-imgBorder"]
+> [![Collapse button](./media/Hide.png)](./media/Hide.png)
 
 ### Test recorder floater control
 
@@ -177,7 +182,8 @@ Follow these steps to create a new recording by using the test recorder:
 
 3. Select **Create a new recording**.
 
-    [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
+    > [!div class="mx-imgBorder"]
+    > [![Create a new recording](./media/NewTest.png)](./media/Newtest.png)
 
 4. Enter a name and description for the recording, and then select **Start**.
 
@@ -185,7 +191,8 @@ Follow these steps to create a new recording by using the test recorder:
 
 5. Perform the actions that you want to perform in the Retail POS UI.
 
-    [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
+    > [!div class="mx-imgBorder"]
+    > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
 
 ### Validation mode
 
