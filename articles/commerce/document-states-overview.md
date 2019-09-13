@@ -36,7 +36,7 @@ This topic covers the various document states of page elements in Dynamics 365 C
 
 ## Document state descriptions
 
-The CMS document types listed in the section above have several different possible states within the authoring tool that affect who and when they can be edited.  These different document states help enforce data conflicts, versioning, and who and when changes are viewable by others.
+The CMS document types listed in the [Page elements overview](page-elements-overview) have several different possible states within the authoring tool that affect who can edit them and when they can be edited. These different document states help enforce data conflict prevention and version control, and determine who can make changes to a document and when changes are viewable by others.
 
 Term | Short description
 ---|---
@@ -49,4 +49,4 @@ Discard check out | When a checked out CMS item is discarded, all saved changes 
 ## Additional resources
 
 - [Add and manage content](add-manage-content.md)
-- [Document states overview](document-states-overview.md)
+- [Page elements overview](page-elements-overview)
