@@ -624,7 +624,7 @@ For more information, see [Perform overhead calculation](cost-rollup.md#perform-
 
 ### Step 4: Process the cost allocation calculation
 
-Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
+Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
 
 [![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
