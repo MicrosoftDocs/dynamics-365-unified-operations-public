@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic includes information about impairment accounting for fixed assets in Japan.
 
-You can perform the following tasks to set up and calculate fixed asset impairments by using Microsoft Dynamics 365 for Finance and Operations:
+You can perform the following tasks to set up and calculate fixed asset impairments:
 
 -   Generate a list of fixed assets that might be impaired. You can then manually review and calculate the undiscounted cash flow, fair value, or recoverable amounts of each asset in the list to determine whether the fixed assets are impaired.
 -   Update impairment indicators, such as the undiscounted cash flow of the fixed assets.
