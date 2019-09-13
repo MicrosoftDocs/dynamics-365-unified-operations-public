@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that Microsoft Dynamics 365 for Finance and Operations provides for GST.
+This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that's provided for GST.
 
 GST is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those goods and services that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 
