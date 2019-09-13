@@ -359,7 +359,7 @@ This feature allows ISVs and partners to create a new language in Dynamics 365 f
 
 ### Global coverage – Retail
 
-Regulatory Retail features for Sweden have been added to support local requirements for cash registers, including general requirements to continuous use of cash registers, as well as an example of integration of Dynamics 365 for Retail POS with a fiscal device (control unit).
+Regulatory Retail features for Sweden have been added to support local requirements for cash registers, including general requirements to continuous use of cash registers, as well as an example of integration of Retail POS with a fiscal device (control unit).
 
 For more information, see [Cash registers for Sweden](../../retail/localizations/emea-swe-cash-registers.md).
 
@@ -790,7 +790,7 @@ To isolate the extension and core application in this release, we modified the e
 
 **Even though the code is sealed or removed from the Retail SDK, we still support extensibility through the extension points and APIs. In the new model, you will follow the extensibility pattern and customize the product without inline changes.**
 
-All the retail components will be completely sealed, and no inline changes will be supported, starting with this release. For any extension, you need to follow the extensibility pattern and extend it. In addition to the above retail components sealing, headquarters will also be sealed (no overlayering). In Dynamics 365 for Retail, extensibility is supported only through extensions.
+All the retail components will be completely sealed, and no inline changes will be supported, starting with this release. For any extension, you need to follow the extensibility pattern and extend it. In addition to the above retail components sealing, headquarters will also be sealed (no overlayering). In Retail, extensibility is supported only through extensions.
 
 ### Configuration driven extension
 
@@ -839,7 +839,7 @@ We extended the Retail initialize feature to support custom table and field init
 
 ### Retail peripheral compatibility
 
-The Peripheral simulator for Retail, included in Dynamics 365 for Retail and Dynamics 365 for Finance and Operations, introduces an important update to the previously released peripheral simulator. New to the Peripheral simulator for Retail is a point of sale simulator that can test peripheral devices for compatibility with the Modern point of sale and Hardware station without the need to deploy those components.
+The Peripheral simulator for Retail introduces an important update to the previously released peripheral simulator. New to the Peripheral simulator for Retail is a point of sale simulator that can test peripheral devices for compatibility with the Modern point of sale and Hardware station without the need to deploy those components.
 
 Depending on the scenario, the POS simulator can simulate the peripheral business logic built into the Modern POS, or it can simulate a standalone hardware station as it would interact with point of sale peripherals. Traditionally, testing devices for compatibility with the point of sale has required deployment of back office followed by configuration and deployment of the point of sale application. With point of sale simulation capability, testing peripherals for compatibility no longer requires product knowledge or access. This enables peripheral manufacturers to test their devices for compatibility without the need to ship physical devices to Microsoft or ISVs for testing.
 
@@ -854,7 +854,7 @@ Supported devices:
 - Signature capture pad
 - Bar code scanner
 
-For each supported device, the POS simulator provides the ability to test device specific capabilities for ad hoc testing, such as card swipe or displaying specific strings of text on a line display. Each supported device also has a specific self-test routine that is used for official device compatibility testing. Results from compatibility testing can be sent to Microsoft to be listed as approved for new deployments of Microsoft Dynamics 365 for Retail.
+For each supported device, the POS simulator provides the ability to test device specific capabilities for ad hoc testing, such as card swipe or displaying specific strings of text on a line display. Each supported device also has a specific self-test routine that is used for official device compatibility testing. Results from compatibility testing can be sent to Microsoft to be listed as approved for new deployments of Retail.
 
 For a description of the Peripheral simulator, see [Retail Peripheral simulator](../../retail/dev-itpro/retail-peripheral-simulator.md).
 
@@ -893,9 +893,9 @@ With the search improvement feature we have improved both product and customer s
 
 ### Upgrade and support for previous versions
 
-**Upgrade support** – For Dynamics AX 2012, you had the option to perform the data upgrade for Retail, where all historical data, posted or unposted, was upgraded. Now you can upgrade from Dynamics AX 2012 R3 to the current version of Dynamics 365 for Retail. The platform will support all the cumulative update versions of Dynamics AX 2012 R3 for upgrade. The back office and channel side are expected to be upgraded together for some customers on existing Dynamics AX 2012 R3 versions while others can leverage the N-1 support. We will support all Dynamics AX 2012 R3 versions from a database upgrade perspective for HQ. The Retailer will upgrade both HQ and Channel if you want to upgrade to Dynamics 365 for Retail without N-1 support.
+**Upgrade support** – For Dynamics AX 2012, you had the option to perform the data upgrade for Retail, where all historical data, posted or unposted, was upgraded. Now you can upgrade from Dynamics AX 2012 R3 to the current version. The platform will support all the cumulative update versions of Dynamics AX 2012 R3 for upgrade. The back office and channel side are expected to be upgraded together for some customers on existing Dynamics AX 2012 R3 versions while others can leverage the N-1 support. We will support all Dynamics AX 2012 R3 versions from a database upgrade perspective for HQ. The Retailer will upgrade both HQ and Channel if you want to upgrade without N-1 support.
 
-The Retail customer will also have an option for N-1 support if they are using Dynamics AX 2012 R3 CU11 or higher, if they don't want to disturb their existing store and run it against the new HQ. After the database upgrade is complete in HQ, the retargeting of the new Dynamics 365 Retail channel side components will happen as part of the LCS methodology, so the new channels can work with the upgraded DB. If the Retailer wants N-1 support for Channels when they upgrade to HQ, they will have to ensure that the channel is at least on 2012 R3 CU11 or above.
+The Retail customer will also have an option for N-1 support if they are using Dynamics AX 2012 R3 CU11 or higher, if they don't want to disturb their existing store and run it against the new HQ. After the database upgrade is complete in HQ, the retargeting of the new Retail channel side components will happen as part of the LCS methodology, so the new channels can work with the upgraded DB. If the Retailer wants N-1 support for Channels when they upgrade to HQ, they will have to ensure that the channel is at least on 2012 R3 CU11 or above.
 
 **Support for previous versions** – Now you can upgrade Dynamics AX 2012 R3 to Dynamics 365 for Retail. N-1 Support will enable existing Dynamics AX 2012 customers to adopt the cloud faster, with minimal interruption to their current business process. N-1 Support will enable existing Dynamics AX 2012 R3 CU 11 and CU12 customers to be able to leverage the benefits of cloud for their businesses using Dynamics 365 Operations as HQ in a hybrid model, while operating their stores in Dynamics AX 2012 R3 CU 11 or CU12. All of this occurs without interrupting the existing infrastructure. For the initial phase, we are targeting customers with Dynamics AX 2012 R3 CU 11 and 12 releases for N-1 support. Because Dynamics AX 2012 store systems are on-premises and distributed, we will support customers' existing Dynamics 2012 R3 store systems connecting to Dynamics 365 Operations HQ after they upgrade to the CU 11 and CU 12 versions. This will ensure minimal disruption in store operations.
 
