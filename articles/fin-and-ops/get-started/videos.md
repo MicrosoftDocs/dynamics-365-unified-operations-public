@@ -100,10 +100,6 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 - [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
 
-### Tax engine
-
-- [Tax engine overview](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
-
 ### Office integration
 
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
@@ -111,6 +107,11 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Organization administration
 
 - [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
+### Tax engine
+
+- [Tax engine overview](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
+
 
 ## Videos for Dynamics 365 Supply Chain Management
 
