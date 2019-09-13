@@ -65,7 +65,7 @@ Various types of destinations are supported. You can disable or enable all types
 
 ### Email destination
 
-Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients, and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER formulas to dynamically create email texts. You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature in Finance and Operations completes it. Alternatively, you can resolve an email address by using a direct reference to the ER configuration through a formula.
+Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients, and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER formulas to dynamically create email texts. You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature in the application completes it. Alternatively, you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 ### Email address types
 
@@ -94,7 +94,7 @@ Use this email type if the configuration that you use has a node in the data sou
 [![Assigning an email address data source for an email destination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg)
 
 > [!NOTE]
-> A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server in Finance and Operations, at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
+> A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
 
 ### Archive destination
 
@@ -105,7 +105,7 @@ You can use this option to send output to either a Microsoft SharePoint folder o
 The location determines where the file is saved. After the **Archive** destination is enabled, the results of configuration execution can be saved in the Job archive. You can view the results at **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting archived jobs**.
 
 > [!NOTE]
-> You can select a document type for the Job archive in Finance and Operations, at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
+> You can select a document type for the Job archive at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
 
 #### SharePoint
 
@@ -127,7 +127,7 @@ If you set **Enabled** to **Yes**, a preview of the output is created. You can v
 
 ### Power BI destination
 
-Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance of Finance and Operations to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > To override the default behavior (that is, the dialog box for a configuration), you can create a destination reference and a file destination for the main output component, and then disable all the destinations.
