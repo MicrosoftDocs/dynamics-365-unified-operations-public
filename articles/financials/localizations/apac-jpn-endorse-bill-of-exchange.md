@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics 365 for Finance and Operations, a list page for BOEs provides centralized management of the BOE lifecycle.
+In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment. A list page for BOEs provides centralized management of the BOE lifecycle.
 
 To start managing a BOE in Finance and Operations, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
 
