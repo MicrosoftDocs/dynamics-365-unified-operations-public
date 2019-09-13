@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Page elements
+title: Page elements overview
 description: This topic describes the various page elements used on a Dynamics 365 Commerce site page.
 author: phinneyridge
 manager: annbe
