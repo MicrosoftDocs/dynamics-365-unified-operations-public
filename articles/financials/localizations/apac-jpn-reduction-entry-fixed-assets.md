@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up reduction entries for fixed assets
-description: This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Finance and Operations. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
+description: This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 Finance. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 author: yijialuan
 manager: AnnBe
 ms.date: 06/20/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Finance and Operations. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
+This article provides information about reduction entries for fixed assets and how to set them. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 
 When you acquire a fixed asset by using a government subsidy, the subsidy is treated as taxable revenue. However, if you account for the whole government grant as revenue, the result is a large amount of corporate income tax, which reduces the subsidizing effect of the grant. Therefore, a special accounting treatment called a reduction entry is permitted. Basically, reduction entries defer the corporate income tax throughout the service life of the fixed asset that is acquired. Two types of accounting treatment are allowed:
 
