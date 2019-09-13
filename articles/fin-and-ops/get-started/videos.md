@@ -34,42 +34,34 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
-
-## Dynamics 365 YouTube channel
-
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for Finance and Operations apps that are hosted on the channel.
 
-### Videos for Finance and Operations development and administration
+## Videos for Finance and Operations development and administration
 
-#### Data integration
+### Data integration
 
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg)
 - [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
-#### Data management
+### Data management
 
 - [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
-#### Development
+### Development
 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Setting up a development branch and build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Setting up a development machine](https://www.youtube.com/watch?v=cqp9MetfiyM)
 - [Azure DevOps integration with Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
-#### Help system
-
-- [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
-
-#### Intelligence
+### Intelligence
 
 - [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ)
 - [How to embed PowerBI.com reports in Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
 - [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
-#### Lifecycle Services (LCS)
+### Lifecycle Services (LCS)
 
 - [Asset library in Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
 - [Cloud-hosted environments](https://www.youtube.com/watch?v=igjVt1lbyLQ&t=17s)
@@ -87,45 +79,66 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Uptake a new Dynamics 365 for Finance and Operations platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
-### Videos for Dynamics 365 Finance
+## Videos for Dynamics 365 Finance
 
-- [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
+### Costs
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
-- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
 
-#### Tax engine
-
-- [Tax engine overview](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
-
-#### Use the app
+### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-#### Office integration
+### Expenses
+- [Expense experience](https://youtu.be/Ocy-MsTvEE0)
+
+### Financial reporting
+- [Find the version of Report designer](https://www.youtube.com/embed/icfA5Q3kp4w)
+
+### Help system
+
+- [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
+
+### Tax engine
+
+- [Tax engine overview](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
+
+### Office integration
 
 - [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
-#### Organization administration
+### Organization administration
 
 - [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
 
-### Videos for Dynamics 365 Supply Chain Management
+## Videos for Dynamics 365 Supply Chain Management
 
-#### Procurement and sourcing
+### Help system
+
+- [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
+
+### Office integration
+
+- [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+
+### Organization administration
+
+- [Document management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
+### Procurement and sourcing
 
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
 
-#### Production control
+### Production control
 
 - [Batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Enhancements to the production order release process](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
 
-#### Warehouse management
+### Warehouse management
 
 - [Release production picking to the warehouse in batch](https://youtu.be/8urAJn50dQ8)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
