@@ -208,7 +208,7 @@ In addition, major changes have been made to the depreciation process. These cha
     
 ### Consolidations
     
-Functionality that was introduced in Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, go to the **Feature management** workspace and select **Enable dual currency functionality in General ledger consolidation**.
+Functionality that was introduced in Dynamics 365 Finance version 10.0.5 (October 2019) enables functionality through feature management for enhanced flexibility for consolidation and dual currency. To enable this functionality, go to the **Feature management** workspace and select **Enable dual currency functionality in General ledger consolidation**.
 
 In General ledger consolidation, a new option has been added to consolidate either the accounting or reporting currency amounts from the source companies. If the accounting or reporting currency is the same as the accounting or reporting currency in the consolidation company, the amounts will be copied directly rather than translated.
 
