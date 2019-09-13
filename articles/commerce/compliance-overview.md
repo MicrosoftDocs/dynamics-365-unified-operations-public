@@ -37,10 +37,10 @@ Compliance is an important factor for all businesses as it helps your user base 
 
 | Topic                                          | Description                                                  |
 | ---------------------------------------------- | ------------------------------------------------------------ |
-| Accessibility                                  | Accessibility ensures that your site offers full functionality for various tools to make your site accessible and functional to all. |
-| General Web Compliance                         | A review of the range of compliance-regulated web and data protocols which, in many regions, are legally required for your site. |
-| Privacy and Privacy Policies                   | Online data privacy and data rights for site users that a company's websites must follow in many regions. |
-| GDPR and Handling Data Subject Requests (DSRs) | This topic covers General Data Protection Regulation (GDPR) in the EU, and how data must be handled by those who are using data on behalf of those whom the data belongs. |
+| [Accessibility](accessibility.md)                                  | Accessibility ensures that your site offers full functionality for various tools to make your site accessible and functional to all. |
+| [General Web Compliance](cookie-compliance.md)                         | A review of the range of compliance-regulated web and data protocols which, in many regions, are legally required for your site. |
+| [Privacy and Privacy Policies](add-privacy-page.md)                   | Online data privacy and data rights for site users that a company's websites must follow in many regions. |
+| [GDPR and Handling Data Subject Requests (DSRs)](delete-personal-information.md) | This topic covers General Data Protection Regulation (GDPR) in the EU, and how data must be handled by those who are using data on behalf of those whom the data belongs. |
 
 
 It is up to each company to review and apply compliance-based content and functionality within your site. Use these topics to learn about the compliance areas and to execute that which best fits your company and content needs for your business.
