@@ -2,7 +2,7 @@
 # required metadata
 
 title: Australia overview
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Australia.
+description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Australian regulations. 
+This topic provides information about functionality that supports Australian regulations. 
 
 ## Bank file formats for Australian banks
 
