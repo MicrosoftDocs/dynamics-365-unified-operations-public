@@ -53,7 +53,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
     > [!IMPORTANT]
     > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
 
-- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Microsoft Dynamics 365 for Finance and Operations, Microsoft Dynamics 365 for Retail, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Dynamics 365 or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 - **Microsoft Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. Office 365 admin center is used to provide management functions for users and subscriptions.
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
