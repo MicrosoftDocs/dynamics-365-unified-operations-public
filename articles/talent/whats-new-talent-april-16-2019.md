@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (April 16, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (April 16, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent (April 16, 2019)
+# What's new or changed in Dynamics 365 Talent (April 16, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -52,11 +52,11 @@ Changes described in this section apply to build number 8.1.2239. Numbers in par
 
 ### Compensation region, Compensation level, Benefit option and Skill type entities in Common Data Service updated to include customer field support
 
-With this release, these Common Data Service entities have been updated to include the ability to include custom field added through Talent (Core HR).
+With this release, these Common Data Service entities have been updated to include the ability to include custom field added through Talent: Core HR.
 
 ### New Common Data Service entity support for: Compensation vesting rules, Compensation variable plan, Variable compensation
 
-With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to Common Data Service. These entities also support custom fields added through Talent (Core HR).
+With this release, Compensation vesting rules, Compensation variable plan, and Variable compensation entities have been added to Common Data Service. These entities also support custom fields added through Talent: Core HR.
 
 ### PowerBI refresh issues (314342)
 
