@@ -2,7 +2,7 @@
 # required metadata
 
 title: Separate accounts for credit notes
-description: This topic provides information about how to set up and use separate accounts for credit notes.
+description: This topic explains how to set up and use separate accounts for credit notes.
 author: ilkond
 manager: AnnBe
 ms.date: 09/09/2019
@@ -30,30 +30,34 @@ ms.dyn365.ops.version: 10.0.7
 
 # Separate accounts for credit notes
 
-In Italy, a company can define the accounting policy for posting credit note amounts to ledger accounts that are different from the revenue accounts. This is done to specifically track the amount issued on the credit notes.
+In Italy, a company can define the accounting policy so that credit note amounts are posted to ledger accounts that differ from the revenue accounts. This approach is used to track the amount that is issued on credit notes.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In **Feature management**, enable the feature, **Separate accounts for credit notes**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+- In the **Feature management** workspace, turn on the **Separate accounts for credit notes** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Posting accounts setup 
-You can define specific ledger accounts for use with sales orders. To do this, on the **Posting** page, select **Credit notes** and specify the ledger accounts.
+## Set up posting accounts
 
-You can also use this page to set up different accounts for various combinations of customers, items, and related groups.
+You can define specific ledger accounts that should be used for sales orders. To complete the setup, on the **Posting** page, select the **Credit note** option, and then specify the ledger accounts.
+
+You can also use the **Posting** page to set up different accounts for various combinations of customers, items, and related groups.
 
 ![Posting accounts setup](media/emea-ita-exil-separate-account-credit-pic1.jpg)
 
-## Posting credit notes
-### New credit note
-When you post a new credit note, the ledger account will be used instead of the standard revenue account that is defined in the sales order.
+## Post credit notes
 
-If no separate ledger account for the credit note is defined or a required Customer/Item combination is not found, then a standard sales order revenue account will be used for posting.
+### Post a new credit note
 
-### Credit note created from a sales order
-If you create a credit note based on an existing sales order, clear the **Main account** field of each credit note line as the field might be pre-populated with a revenue account from the sales order.
+When you post a new credit note, the ledger account is used instead of the standard revenue account that is defined on the sales order.
 
-![Main account clearing](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+If no separate ledger account is defined for the credit note, or if a required combination of a customer and an item isn't found, a standard sales order revenue account is used for posting.
 
-> [!NOTE] 
-> Separate accounts are applicable only for credit notes that are based on sales orders. Separate accounts are not applicable for free text credit notes because they require a ledger account to be explicitly entered.
+### Post a credit note that was created from a sales order
+
+If you create a credit note that is based on an existing sales order, clear the **Main account** field for each credit note line. A revenue account from the sales order might have been automatically entered in the field.
+
+![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+
+> [!NOTE]
+> Separate accounts are applicable only to credit notes that are based on sales orders. They aren't applicable to free-text credit notes, because free-text credit notes require that a ledger account be explicitly entered.
