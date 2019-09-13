@@ -40,10 +40,10 @@ There are many different actions you can take to alter the look, feel, and conte
 
 The following topics provide details on how to add and manage site content. They focus primarily on areas of your site that do not require a developer, and where necessary point out tasks that will require SDK work.
 
-- To change the text, image, or video on an existing site page, see [Work with modules](work-with-modules.md)
-- To ensure a foolproof and on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md)
-- To re-arrange how sections are organized on a site page, see [Work with layouts](work-with-layouts.md)
-- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md)
+- To change the text, image, or video on an existing site page, see [Work with modules](work-with-modules.md).
+- To ensure a foolproof and on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md).
+- To re-arrange how sections are organized on a site page, see [Work with layouts](work-with-layouts.md).
+- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md).
 
 ## Additional resources
 
