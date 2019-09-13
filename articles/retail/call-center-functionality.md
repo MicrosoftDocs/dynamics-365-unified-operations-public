@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call center sales functionality
-description: This topic provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Retail.
+description: This topic provides an overview of the call center sales functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/03/2018
@@ -35,15 +35,15 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-In Dynamics 365 for Retail, a call center is a type of Retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
+In Dynamics 365 Retail, a call center is a type of Retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
 
 Call center features include advanced retail price and promotions, catalogs, gift cards, loyalty programs, and coupons. Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.
 
-It's important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Dynamics 365 for Retail call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines. It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.
+It's important to note that while the call center module can be utilized by other industries outside of Retail, the current release of the Retail call center application hasn't been optimized for use in business-to-business (B2B) order processing scenarios, or scenarios where orders have a large amount of sales lines. It's recommended that users who want to utilize the call center features for order processing outside of typical direct-to-consumer transaction processing, take adequate time to test and validate that enabling call center functionality will meet functional and performance needs.
 
 In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes. The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.
 
-This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Dynamics 365 for Retail.
+This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Retail.
 
 ## Configure the call center
 
