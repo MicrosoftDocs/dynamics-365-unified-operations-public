@@ -52,7 +52,7 @@ A company is a type of legal entity. In this release of Microsoft Dynamics 365 f
 
 An operating unit is an organization that is used to divide the control of economic resources and operational processes in a business. People in an operating unit have a duty to maximize the use of scarce resources, improve processes, and account for their performance.
 
-In Microsoft Dynamics 365 for Finance and Operations, the types of operating units include cost centers, business units, value streams, departments, and retail channels. The following table provides more information about each type of operating unit.
+In Finance and Operations, the types of operating units include cost centers, business units, value streams, departments, and retail channels. The following table provides more information about each type of operating unit.
 
 | Operating unit type | Description | Purpose |
 |---------------------|-------------|---------|
