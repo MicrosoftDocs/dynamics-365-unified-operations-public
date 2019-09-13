@@ -34,4 +34,4 @@ In Dynamics 365 for Finance and Operations, there are two kinds of alerts that c
 
 The change-based alerts and due date alerts can be configured to send out a business event as a mechanism to notify or trigger external applications or systems. This allows alerts to participate in advanced user notification scenarios and also in business process integration across systems.
 
-To configure an alert, the **Send external** setting must be enabled. The business event for the change-based alert and/or the due date alert must also be active for the alert to be sent out as a business event.
+To configure an alert, the **Send externally** setting must be enabled. The business event for the change-based alert and/or the due date alert must also be active for the alert to be sent out as a business event. [Business event activation wiki](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/home-page#activating-business-events) explains the activation process in detail.
