@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-The Tax engine is an essential part of the configurable business application experience in Microsoft Dynamics 365 Finance. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. 
+The Tax engine is an essential part of the configurable business application experience in Dynamics 365 Finance. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. 
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
@@ -120,7 +120,7 @@ For the price-exclusive scenario, the engine implicitly initializes the **Tax am
 
 ### Tax accounting provider
 
-The tax accounting provider is the sub-ledger that the tax accounting scenario affects. For example, in the purchase flow, if tax must be paid to the vendor as part of the vendor invoice, the tax accounting provider is **Party/Vendor**. The list of tax accounting providers depends on the underlying ERP system. For Finance and Operations, the following tax accounting providers are available:
+The tax accounting provider is the sub-ledger that the tax accounting scenario affects. For example, in the purchase flow, if tax must be paid to the vendor as part of the vendor invoice, the tax accounting provider is **Party/Vendor**. The list of tax accounting providers depends on the underlying ERP system. For Finance, the following tax accounting providers are available:
 
 - Party
 - Inventory
