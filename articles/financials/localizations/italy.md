@@ -43,4 +43,5 @@ This topic provides links to documentation resources for Italy.
 - [Post and print a packing slip with transportation delivery details](emea-ita-packing-slip.md)
 - [Sales tax books](emea-ita-fiscal-books.md)
 - [Split payment for invoices issued to the Public Administration](emea-ita-split-payment-invoices-issued-public-administration.md)
+- [Credit invoicing (Italy)](emea-ita-credit-invoicing.md)
 - [Withholding tax](emea-ita-withholding-tax.md)
