@@ -828,6 +828,8 @@
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Create checks that have Blank status
+        href: ../financials/cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
         href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
