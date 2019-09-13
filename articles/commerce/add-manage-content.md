@@ -38,17 +38,17 @@ This topic covers how to add and manage content on your Dynamics 365 Commerce si
 
 There are many different actions you can take to alter the look, feel, and content of your site.  Depending on the required level of customization, many of these tasks can be performed by non-developers. Building templates, picking themes, and selecting and configuring modules can all be achieved without writing any code. In contrast, a new theme or module does require development skills to leverage the e-Commerce software development kit (SDK) and Lifecycle Services (LCS) deployment workflow. Within this section, we will focus primarily on areas of your site that do not require a developer, and where necessary point you towards tasks that will require SDK work.
 
-Read through the following documentation if you would like to...
+The following scenarios further describe how to add and manage content on your site.
 
-* To change the text, image, or video on an existing site page, see [Work with modules](work-with-modules.md)
-* To ensure a foolproof and on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md)
-* To re-arrange how sections are organized on a site page, see [Work with layouts](work-with-layouts.md)
-* To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md)
+- To change the text, image, or video on an existing site page, see [Work with modules](work-with-modules.md)
+- To ensure a foolproof and on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md)
+- To re-arrange how sections are organized on a site page, see [Work with layouts](work-with-layouts.md)
+- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md)
 
 ## Additional resources
 
-[Page elements](page-elements.md)
-[Document states](document-states.md)
+- [Page elements](page-elements.md)
+- [Document states](document-states.md)
 
 ## Page elements
 
