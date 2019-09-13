@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up integration with LinkedIn for AMicrosoft Dynamics 365 for Talent - Attract
-description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 for Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
+title: Set up integration with LinkedIn for AMicrosoft Dynamics 365 Talent - Attract
+description: This topic explains how to configure LinkedIn integration for Microsoft Dynamics 365 Talent - Attract so that you can easily post jobs to LinkedIn from Attract, and so that your recruiters can sync their recruiting information with a candidate's LinkedIn profile.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 for Talent: Attract. Attract lets you post jobs directly to LinkedIn, the largest professional online network.
+Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 Talent: Attract. Attract lets you post jobs directly to LinkedIn, the largest professional online network.
 
 Jobs that you post to LinkedIn through Attract are Limited Listings and are provided at no extra cost to your company. These listings are available only through LinkedIn software partners such as Attract. They don't appear in the **Careers** panel on your company's LinkedIn page, because only paid listings appear there. However, they are shown when potential candidates view all available jobs. Limited Listings are also shown in LinkedIn job searches.
 
