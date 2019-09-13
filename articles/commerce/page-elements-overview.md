@@ -49,3 +49,8 @@ Theme | **Definition:** Defines the CSS and determines the look and feel of how 
 [Fragment](work-with-fragments.md) | **Definition:** A fully configured module with localized content that can be re-used and centrally updated across multiple pages (example: a fragment created from a header module can be used in all templates and pages across your site, and centrally updated in one place).<br />**Where to select:** Fragments are selectable anywhere modules are, and can be substituted for a module to increase efficiency through re-usable and centralized authoring. <br />**Where to edit**: Fragments are edited in the fragment editor UX, and do not require any code to create or modify. 
 URL | **Definition:** "Uniform Resource Locator", a URL is a World Wide Web address that points to a webpage or other URL.<br />**Where to select:** URLs are selected wherever links are needed between pages. <br />**Where to edit**: URLs are edited in the URL editor UX, and do not require any code to create or modify. 
 Asset | **Definition:** A file binary (with an extension like .jpg, .docx, .pdf, .mpg, etc.).<br />**Where to select:** Assets are selected as module properties for modules that require them. <br />**Where to edit**: Assets are uploaded and associated metadata is edited within the asset manager UX. 
+
+## Additional resources
+
+- [Add and manage content](add-manage-content.md)
+- [Document states overview](document-states-overview.md)
