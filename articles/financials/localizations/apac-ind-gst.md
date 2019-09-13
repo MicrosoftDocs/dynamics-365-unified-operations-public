@@ -146,7 +146,7 @@ The item sales tax group should be removed on products that are assigned an HSN 
 
 ## Import the configuration and deploy it to a specific company
 
-Before you complete this task, be sure to save all the configuration files in a location that you can access from Microsoft Dynamics 365 for Finance and Operations.
+Before you complete this task, be sure to save all the configuration files in a location that you can access from Dynamics 365 Finance.
 
 Follow these steps to load the configurations and map them to a legal entity.
 
