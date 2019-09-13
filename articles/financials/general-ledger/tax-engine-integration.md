@@ -31,17 +31,17 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Microsoft Dynamics 365 Finance, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
+To integrate the [Tax engine](tax-engine.md) (also referred to as GTE) with Dynamics 365 Finance, you must implement X++ code that interacts with the Tax engine for tax calculation, and that consumes the results to show, account, and post tax for voucher and tax transactions. (The tax calculation can either include or exclude tax adjustment.) 
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
 ## Tax engine integration models
-There are three models for Tax engine integration in the Finance and Operations application:
+There are three models for Tax engine integration:
 
 - Tax engine interfaces with the Tax engine service
 - Tax business service
-- Finance and Operations application integration:
+- Finance application integration:
     - Application integration
     - Accounting integration
 
@@ -49,9 +49,9 @@ There are three models for Tax engine integration in the Finance and Operations 
 
 ###  Tax engine interfaces with the Tax engine service model
 
-This model is part of the Finance and Operations integration framework. Therefore, almost no uptake is required for partners or customers.
+This model is part of the Finance integration framework. Therefore, almost no uptake is required for partners or customers.
 
-The ITaxEngine interface and its implementation contain the basic operations of the Tax engine. These operations include calculating tax through the tax engine, persisting the calculated result to Finance and Operations tables, retrieving the tax document for the transaction, and deleting the tax document from both the Tax engine cache and Finance and Operations tables.
+The ITaxEngine interface and its implementation contain the basic operations of the Tax engine. These operations include calculating tax through the tax engine, persisting the calculated result to Finance tables, retrieving the tax document for the transaction, and deleting the tax document from both the Tax engine cache and Finance tables.
 
 The set of ITaxDocument interfaces and implementations enables information to be read from a tax document that the Tax engine calculates and returns. This set includes ITaxDocument, ITaxDocumentLine, ITaxDocumentField, ITaxDocumentComponentLine, and ITaxDocumentMeasure.
 
@@ -64,7 +64,7 @@ These interfaces also provide methods for retrieving a specified field value (**
 
 ### Tax business service model
 
-The Tax business service model is part of the Finance and Operations integration framework and almost no uptake is required for partners or customers. This model supports the interactions that the Finance and Operations application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
+The Tax business service model is part of the Finance integration framework, and almost no uptake is required for partners or customers. This model supports the interactions that the Finance application has with the Tax engine for basic operations. It uses both the interface model and the application model to calculate, account, and post tax. The Tax business service model provides the following methods:
 
 <table>
 <tr>
@@ -91,7 +91,7 @@ The Tax business service model is part of the Finance and Operations integration
 </tr>
 <tr>
 <td>SaveTaxDocument</td>
-<td>Persist a tax document to the Finance and Operations database.
+<td>Persist a tax document to the Finance database.
  <ul>
 <li><strong>Input</strong>: Taxable document identifier</li>
 <li><strong>Output</strong>: Not applicable</li>
@@ -168,13 +168,13 @@ The Tax business service model is part of the Finance and Operations integration
 
 ### Finance and Operations application integration
 
-Transaction information from Finance and Operations should be sent to the Tax engine. At the same time, the accounting and posting of tax should be aligned with the Finance and Operations implementation. Therefore, three parts are created in the Finance and Operations application:
+Transaction information from Finance should be sent to the Tax engine. At the same time, the accounting and posting of tax should be aligned with the Finance implementation. Therefore, three parts are created in the Finance application:
 
 - Taxable document
 - Tax accounting
 - Tax posting
 
-Meanwhile, the integration uses the transit document framework to maintain the relationship between the Finance and Operations transaction and the tax document.
+Meanwhile, the integration uses the transit document framework to maintain the relationship between the Finance transaction and the tax document.
 
 #### Application integration
 
@@ -184,9 +184,9 @@ A taxable document encapsulates transaction information by using a set of data p
 
 ![Taxable document](media/gte-taxable-doc.png)
 
-**TaxableDocumentDescriptor** is the class that implements a set of TaxableDocumentTypeDefinition interfaces and describes what the transaction is. Technically, TaxableDocumentDescriptors are the Finance and Operations table bases, whereas TaxableDocumentTypeDefinitions are more business-driven and are used mainly for tax configuration conditions.
+**TaxableDocumentDescriptor** is the class that implements a set of TaxableDocumentTypeDefinition interfaces and describes what the transaction is. Technically, TaxableDocumentDescriptors are the Finance table bases, whereas TaxableDocumentTypeDefinitions are more business-driven and are used mainly for tax configuration conditions.
 
-In the following example, TaxableDocumentDescriptorPurchaseOrderParm implements three interfaces that share the same Finance and Operations PurchParmTable table.
+In the following example, TaxableDocumentDescriptorPurchaseOrderParm implements three interfaces that share the same PurchParmTable table.
 
 ![Shared table example](media/gte-example-shared-table.png)
 
@@ -197,7 +197,7 @@ If additional attributes are added to a tax configuration, and they are used for
 
 ##### Transit document
 
-A transit document is an existing framework in Finance and Operations that is used for the following two purposes:
+A transit document is an existing framework in Finance that is used for the following two purposes:
 
 - Maintain the relationship between a transaction and a transit document.
 - Transfer the document from one transaction to another transaction.
@@ -215,7 +215,7 @@ Transaction integration occurs only on a case-by-case basis. For each transactio
 
 ##### Tax accounting
 
-The accounting of Finance and Operations transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance and Operations implementation on both sides:
+The accounting of Finance transactions has two parts: source document accounting and non-source document accounting. The same behavior applies to Tax engine tax accounting, which is integrated with the Finance implementation on both sides:
 
 - For source document transactions, such as a purchase order or free text invoice, the account information for tax is fetched when the tax document is created.
 - For non-source document transactions, such as a sales order or general journal, the account information is determined when tax is posted.
@@ -368,7 +368,7 @@ The following illustration shows the data providers that are used to send transa
 
 TaxableDocVendInvoiceInfoTableRowDP extends the **TaxableDocPurchTableRowDataProvider** class to set up transaction header–related information, whereas TaxableDocVendInvoiceInfoLineRowDP extends **TaxableDocPurchLineRowDataProvider** to set up invoice line–related information.
 
-The following table lists the taxable document fields that are mapped in Finance and Operations.
+The following table lists the taxable document fields that are mapped in Finance.
 
 | Taxable document field         | Logic in the AOT object                                                     | Required                     | Default value |
 |--------------------------------|-----------------------------------------------------------------------------|------------------------------|---------------|
@@ -439,7 +439,7 @@ One way to trigger tax calculation in the Tax engine is through a **Tax document
 
 The **Totals** button is used to show a transaction's financial information, such as the tax amount, discount amount, and total amounts. The tax amount that appears on the total page will also be added to the invoiced amount of the journal.
 
-For an existing implementation of Finance and Operations, a set of **PurchTotals** classes is created to handle this functionality. Therefore, Tax engine-related code is inserted into the class's **calcTax** method to help guarantee that the expected tax total amount is initiated.
+For an existing implementation of Finance, a set of **PurchTotals** classes is created to handle this functionality. Therefore, Tax engine-related code is inserted into the class's **calcTax** method to help guarantee that the expected tax total amount is initiated.
 
 ![calcTax method](media/gte-trx-totals.png)
 
@@ -447,7 +447,7 @@ For alignment with the existing logic, the existing **taxTotal** parameter is us
 
 ### Integrate with a source document
 
-A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance and Operations. The main logic is already completed and handled by the Tax engine integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
+A purchase invoice is a source document transaction. Therefore, the calculated tax result from the Tax engine should be integrated with the existing source document framework in Finance. The main logic is already completed and handled by the Tax engine integration framework. However, for each source document transaction, the distribution and journalization rules should still be defined for accounting purposes.
 
 ![Distribution and journalization rules](media/gte-distribution-journalization-rule.png)
 
