@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-## Page elements
+# Page elements overview
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -36,7 +36,7 @@ This topic describes the various page elements used on a Dynamics 365 Commerce s
 
 ## Page element definitions
 
-Below is a quick look at some terms you should be familiar with in order to modify the look, feel, and content within your site.  Follow any links for a more complete explanation and walkthrough.
+The following table provides a summary of terms you should be familiar with in order to modify the look, feel, and content within your site. Follow any links for a more complete explanation and walkthrough.
 
 Term | Notes and description 
 ---|---
