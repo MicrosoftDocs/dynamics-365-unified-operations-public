@@ -38,7 +38,7 @@ This topic provides overview and setup information for electronic messaging.
 
 Recently, the governments and legislative authorities of various countries and regions around the world have implemented reporting requirements for companies that are registered in those countries or regions. The purpose of the requirements is to enable data to be obtained from those companies in electronic format, directly from the systems where it was accounted, stored, and processed.
 
-The Electronic messages functionality in Finance and Operations supports various processes for electronic interoperation between Finance and Operations and the systems that governments and legislative authorities offer for reporting, submitting, and receiving official information.
+The Electronic messages functionality in Finance supports various processes for electronic interoperation between Finance and the systems that governments and legislative authorities offer for reporting, submitting, and receiving official information.
 
 The Electronic messages functionality is integrated with the **Electronic Reporting** (ER) module. Therefore, you can set up ER formats for electronic messages. For more information, see [Electronic reporting (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
@@ -56,11 +56,11 @@ The Electronic messages functionality supports the following scenarios:
 
 - Manually create messages, and generate reports that are based on associated exporting ER formats of various types: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, text, and Microsoft Word.
 - Automatically create and process messages that are based on information that was requested and received from an authority via an associated importing ER format.
-- Collect and process information from a data source as message items. The data source is a Finance and Operations table.
+- Collect and process information from a data source as message items. The data source is a Finance table.
 - Store additional information, and evaluate various values by calling specifically defined executable classes in relation to messages or message items.
 - Aggregate information that is collected in message items, split that information by message, and generate reports that are in associated exporting ER formats.
 - Transmit the reports that are generated to a web service by using security information that is stored in Azure Key Vault.
-- Receive a response from a web service, interpret the response, and update data in Finance and Operations as appropriate.
+- Receive a response from a web service, interpret the response, and update data in Finance as appropriate.
 - Store and review all the reports that are generated.
 - Store and review all the log information that is related to actions that are run for a message or message item.
 - Control the processing through various message statuses and message item statuses.
@@ -170,7 +170,7 @@ On the **Datasources setup** FastTab, add a line for every data source that is u
 | Name                   | Enter a name for the data source. |
 | Message item type      | Select the type of message item that should be used when records are created for the data source. |
 | Account type           | Select the type of account that should be associated with records from the data source. |
-| Master table name      | Select the table in Finance and Operations that should be a data source. |
+| Master table name      | Select the table that should be a data source. |
 | Document number field  | Select the field that the document number should be taken from in the selected table. |
 | Document date field    | Select the field that the document date should be taken from in the selected table. |
 | Document account field | Select the field that the document account should be taken from in the selected table. |
