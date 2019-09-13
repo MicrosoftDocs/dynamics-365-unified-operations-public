@@ -45,3 +45,8 @@ Check in | When a CMS item is checked in, all changes are visible to other authe
 Publish | When a CMS item is published, it is pushed to your live site and becomes discoverable on the internet by non-authenticated external users.  Publish can only be performed on checked in documents. 
 Save | Save is an action that can be made on a checked out document to persist changes to the CMS before they are checked in or published.  These saved changes are not visible to other authenticated system users until the document is checked in, and not visible to external users until published. 
 Discard check out | When a checked out CMS item is discarded, all saved changes are deleted and the item is reverted to the most recently checked in version of the item. 
+
+## Additional resources
+
+- [Add and manage content](add-manage-content.md)
+- [Document states overview](document-states-overview.md)
