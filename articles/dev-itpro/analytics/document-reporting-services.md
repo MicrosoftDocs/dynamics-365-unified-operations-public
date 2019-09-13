@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document Reporting Services
-description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
+description: This article describes the integrated reporting solution that is available in Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: TJVass
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Finance and Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
+This article describes the integrated reporting solution that are available. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 
 ## Document Reporting Services
 
-Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of Microsoft Dynamics 365 for Finance and Operations, these services are hosted in the Microsoft Azure compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
+Document Reporting Services are based on Microsoft SQL Server Reporting Services (SSRS). In the current version of the application, these services are hosted in the Microsoft Azure compute service. If you're developing in a one-box environment, the services also run locally in the Azure compute emulator.
 
 ### Service deployment – Local vs. cloud
 
@@ -48,12 +48,12 @@ In a one-box environment, developers can create, modify, and preview reports, fr
 
 ### Viewing reports in Dynamics 365 for Finance and Operations
 
-The enhanced report viewing experience that Finance and Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio.
+The enhanced report viewing experience that provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio.
 
 [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
-The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Finance and Operations.
+The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of the application.
 
 <table>
 <thead>
@@ -76,7 +76,7 @@ The following table compares the service administration prerequisites for Micros
 </table>
 
 ## Developing application reports
-The process for developing a report in the current version of Finance and Operations is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how Finance and Operations simplifies the basic procedure for adding an automatic design report that is based on a query.
+The process for developing a report in the current version is easier than it is in AX 2012, because you can create and validate a reporting solution entirely in Visual Studio 2015. The following table describes how the application simplifies the basic procedure for adding an automatic design report that is based on a query.
 
 <table>
 <thead>
