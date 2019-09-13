@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Embed PowerApps apps in Core HR
+title: Embed PowerApps apps in Dynamics 365: Core HR
 description: This topic explains how to resolve the issue where the PowerApps menu item has disappeared from the System administration module.
 author: andreabichsel
 manager: AnnBe
@@ -44,7 +44,7 @@ The user interface (UI) design has been changed, and Microsoft PowerApps is now 
 
 **Resolution**
 
-The way that PowerApps apps are embedded has been changed. PowerApps apps are now added through the personalization model. You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 for Talent.
+The way that PowerApps apps are embedded has been changed. PowerApps apps are now added through the personalization model. You can add PowerApps apps to almost all pages in Microsoft Dynamics 365 Talent.
 
 For information about how to embed PowerApps apps in Talent, see [Embed PowerApps apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
