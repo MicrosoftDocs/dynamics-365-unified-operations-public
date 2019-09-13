@@ -34,16 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.
+This topic provides an overview of the components of the Finance and Operations Help system.
 
 > [!NOTE]
-> The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
-
-The Help system is shared by the following products:
-
-- Dynamics 365 for Finance and Operations
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
+> The following products are closely related: Finance, Supply Chain Management, Retail, and Talent. The same functionality may appear in all products, therefore topics that are written for one product may apply to the same functionality in a related product.
 
 Finance and Operations includes a Help system that is based on two main components:
 
@@ -76,7 +70,7 @@ You can also find our content with any search engine. We recommend that for best
 
 ### The docs.microsoft.com table of contents
 
-Finance and Operations and Retail all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for.
+Finance, Supply Chain Management, and Retail all share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control above the table of contents to find topics that you are looking for.
 
 You can get help on other Dynamics 365 products by searching for them, or by clicking Dynamics 365 in the site breadcrumb to get to our hub page.
 
