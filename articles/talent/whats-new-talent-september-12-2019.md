@@ -53,7 +53,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 Changes described in this section apply to build number 8.1.2482. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-### Reminder - Preview features can be enabled in Sandbox and Trial environments
+### You can enable preview features in Sandbox and Trial environments
 
 When you provision a new instance of Talent, you can specify whether the instance type is Production or Sandbox. Instances of the Sandbox type allow for early testing of new features. If you want one of your existing instances to be updated to the Sandbox instance type, contact Support to initiate the change request.
 
