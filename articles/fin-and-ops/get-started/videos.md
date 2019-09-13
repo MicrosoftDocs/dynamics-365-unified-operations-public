@@ -44,11 +44,11 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Data integration
 
 - [Prospect to cash integration](https://youtu.be/AVV9x5x-XCg)
-- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### Data management
 
-- [Use data entities and data packages in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
+- [Use data entities and data packages](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
 
 ### Development
 
@@ -60,8 +60,8 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Intelligence
 
 - [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ)
-- [How to embed PowerBI.com reports in Dynamics 365 for Finance and Operations](https://youtu.be/gGWuNJDoi-M)
-- [Bring your own database (BYOD) to Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [How to embed PowerBI.com reports in Finance and Operations apps](https://youtu.be/gGWuNJDoi-M)
+- [Bring your own database (BYOD) to Finance and Operations apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### Lifecycle Services (LCS)
@@ -74,12 +74,12 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Deploying code to a sandbox environment](https://www.youtube.com/watch?v=5azLeOO078k)
 - [Deploying code to a production environment](https://www.youtube.com/watch?v=ogXo-saZkmE&t=2s)
 - [Implementation projects in Lifecycle Services](https://www.youtube.com/watch?v=V1vVOgcTuw4&t=18s)
-- [Manage the code upgrade and tool process in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
+- [Manage the code upgrade and tool process](https://www.youtube.com/watch?v=M-AtR6ocYM8&feature=youtu.be)
 - [Managing business process libraries in Lifecycle Services](https://www.youtube.com/watch?v=S5msxj-2-x0)
 - [Methodologies in Lifecycle Services](https://www.youtube.com/watch?v=YRMJ15DvgZ8)
-- [Request a Dynamics 365 for Finance and Operations production environment](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
+- [Request a production environment](https://www.youtube.com/watch?v=5j1GapLr3MY&feature=youtu.be)
 - [Refreshing data in a production environment](https://www.youtube.com/watch?v=VCd5SgkYPTw)
-- [Uptake a new Dynamics 365 for Finance and Operations platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
+- [Uptake a new platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
 ## Videos for Dynamics 365 Finance
@@ -105,7 +105,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Office integration
 
-- [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Create an Excel template for header and line patterns](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 ### Organization administration
 
@@ -124,7 +124,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Office integration
 
-- [Create an Excel template for header and line patterns in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
+- [Create an Excel template for header and line patterns](https://www.youtube.com/watch?v=RTicLb-6dbI&feature=youtu.be)
 
 ### Organization administration
 
