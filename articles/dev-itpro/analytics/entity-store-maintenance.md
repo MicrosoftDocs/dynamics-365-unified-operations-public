@@ -39,7 +39,7 @@ When maintenance is performed on the entity store, it impacts the following comp
 To resolve issues with these components, complete the procedures in this topic.
 
 > [!NOTE]
-> There will be **no impact** to the normal operation of your Finance and Operations or Retail instance.
+> There will be **no impact** to the normal operation of your application.
 
 ## If you are using application analytical workspaces
 
@@ -49,7 +49,7 @@ Application analytical workspaces and reports may not render data after certain 
 
 To resolve this issue:
 
-1. Sign in to Finance and Operations or Retail.
+1. Sign in to the application.
 2. Go to the **Batch jobs** page (**System administration \> Inquiries \> Batch jobs**).
 3. Delete all pending batch jobs associated with the entity store. These batch jobs:
 
@@ -67,7 +67,7 @@ After the refresh completes, the application analytical workspaces and reports w
 
 ## If you have deployed entity store-based reports to PowerBI.com and are using the reports within PowerBI.com
 
-After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page in Finance and Operations or Retail (**System Administration \> Setup \> Deploy Power BI files**).
+After refreshing the entity store (as described above), redeploy the reports using the **Deploy Power BI report files** page (**System Administration \> Setup \> Deploy Power BI files**).
 
 > [!NOTE]
 > Reports that were previously deployed to PowerBI.com may produce errors. If this occurs, you may need to delete and redeploy the report after the maintenance activity is completed.
