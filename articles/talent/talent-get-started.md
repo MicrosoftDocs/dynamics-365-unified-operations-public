@@ -37,10 +37,10 @@ ms.dyn365.ops.version: Talent July 2017 update
 In Microsoft Dynamics 365 for Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs. This topic includes links to topics that provide information on how to adapt the user interface to your preferences. The topic also includes links to information that can help you find information in the system efficiently and accurately. 
 
 > [!NOTE] 
-> The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
+> Dynamics 365 Finance, Supply Chain Management, Retail, and Talent are closely related. The same functionality may appear in all these products, therefore, topics written for one product may apply to the same functionality in a related product.
 
 ## Personalizing Talent 
-The following topics show how to set up many features in Dynamics 365 for Talent that make it easier for you to get your work done in a timely manner. 
+The following topics show how to set up many features in Talent that make it easier for you to get your work done in a timely manner. 
 
 -   [Personalize the user experience](../fin-and-ops/get-started/personalize-user-experience.md) - This topic explains the different ways in which you can personalize Talent and adapt parts of the product to more closely suite your preferences.
 
