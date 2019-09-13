@@ -32,10 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
+The Person search report is a refinement of the existing Data management framework. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!NOTE]
-> You can use the report with Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in Finance and Operations version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
+> You can use the report with Dynamics 365. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in Finance and Operations version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
 
 You can use the Global address book in Finance and Operations to create an instance of a person that is described in the data model as a party. 
 
@@ -68,7 +68,7 @@ You can also download a template from LCS and import it for versions 7.1 or late
 > 1.	Log in to LCS.
 > 2.	Click the **Shared asset library** tile.
 > 3.	Select the **Data package asset** type.
-> 4.	Click the template named **Template-x.x-Person search**, where x.x is the version of Finance and Operations, Talent or Retail that you're using, and download it.
+> 4.	Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
 > 5.	Open the **Data Management** workspace.
 > 6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
 > 7.	Click on the **Templates** tile.
