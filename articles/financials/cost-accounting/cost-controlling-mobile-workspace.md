@@ -84,7 +84,7 @@ The **Cost controlling** mobile workspace provides the following actions, views,
 The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
 ### Prerequisites if you use Microsoft Dynamics 365 Finance
-If Microsoft Dynamics 365 Finance has been deployed for your organization, the system administrator must publish the **Cost controlling** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+If Finance has been deployed for your organization, the system administrator must publish the **Cost controlling** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites.
