@@ -38,10 +38,10 @@ This tutorial shows how to export data and create a report, expand predefined vi
 
 ## Prerequisites
 
-For this tutorial, you must access the Microsoft Dynamics 365 for Finance and Operations environment, and you must be provisioned as an administrator on the instance.
+For this tutorial, you must access the application environment, and you must be provisioned as an administrator on the instance.
 
 ## Key concepts
-- Describe the various ways reports can be created and consumed in Finance and Operations
+- Describe the various ways reports can be created and consumed
 - Add interactivity to embedded aggregate reports in forms and workspaces
 - Use framework extensions to customize the parameter experience for SSRS based business documents
 - Export List Page data to create reports with external tools including Microsoft Excel
@@ -58,7 +58,7 @@ For this tutorial, you must access the Microsoft Dynamics 365 for Finance and Op
 - Table extensions need to be supported through the VS Query picker
 
 ## What is a report in the Finance and Operations?
-Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, Finance and Operations offers several tools to produce reports to satisfy complex business requirements. Some common applications of reports in an ERP include:
+Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, the application offers several tools to produce reports to satisfy complex business requirements. Some common applications of reports in an ERP include:
 
 - Creating and archiving transactional documents as part of a posting process
 - Producing packing slips for tracking orders from Manufacturing to Warehousing to Sales
@@ -67,7 +67,7 @@ Reports can be defined simply as any visualization of a structured data set. Thi
 - Distributing heavily branded documents to customers and employees
 - Extracting data in such a way that it articulates the health of a business
 
-The most difficult task for developers is selecting the *right* Business Intelligence visualization tool for the job, given a customer's requirements. To accomplish this, it's important to understand the capabilities offered through the tools that are available for creating reports. In the Finance and Operations, we offer tooling to support the following basic reporting requirements:
+The most difficult task for developers is selecting the *right* Business Intelligence visualization tool for the job, given a customer's requirements. To accomplish this, it's important to understand the capabilities offered through the tools that are available for creating reports. We offer tooling to support the following basic reporting requirements:
 
 - **Excel Integration** – Allows data management and analysis using Microsoft Excel
 - **Embedded Analytics** – Add aggregate data to a Workspaces using native controls like charts and grids
@@ -86,11 +86,11 @@ The following table can be used to compare the basic characteristics of these re
 | Management Reporter | Power User | Power User | Transactional                | External          | Modeled   |
 
 ## Create a report using List Pages
-In this section, we'll walk you through the process of exporting Finance and Operations data displayed in an entity details form. Here we'll demonstrate how every form in Finance and Operations can be viewed as a source of data for management and analysis using the power of Excel.
+In this section, we'll walk you through the process of exporting data displayed in an entity details form. Here we'll demonstrate how every form in can be viewed as a source of data for management and analysis using the power of Excel.
 
 ### Create an analysis report based on all rentals in Fleet Management that are marked as complete
 
-1. Open Internet Explorer, and navigate to your Finance and Operations instance base URL and sign in.
+1. Open Internet Explorer, and navigate to your instance base URL and sign in.
 
     1. On the cloud environment, the base URL is obtained from LCS
     2. On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com
@@ -117,7 +117,7 @@ In this section, we'll walk you through the process of exporting Finance and Ope
 - Direct access to real-time business information
 
 ## Expand predefined views and add navigation to charts
-Business Intelligence can be useful at every level of an organization. Use embedded controls to elevate the most relevant information based on the target persona. Native controls in Microsoft Dynamics 365 for Finance and Operations offer users an intuitive and convenient way of interacting with aggregate data allowing for informed decision making.
+Business Intelligence can be useful at every level of an organization. Use embedded controls to elevate the most relevant information based on the target persona. Native controls offer users an intuitive and convenient way of interacting with aggregate data allowing for informed decision making.
 
 ### Create development project
 
@@ -250,5 +250,5 @@ This report uses embedded VB script to keep track of running totals so that the 
 ### Advantages of SSRS reports
 
 - Built-in back office document management capabilities including email support, scheduled executions via Batch, and Print Archive
-- Parameterized views with drill-through navigations to Finance and Operations forms and other reports
+- Parameterized views with drill-through navigations to forms and other reports
 - Used to produce precision documents for compliance with local regulatory business practices
