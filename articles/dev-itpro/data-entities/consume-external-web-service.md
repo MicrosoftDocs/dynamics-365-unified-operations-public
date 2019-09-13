@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consume external web services in Finance and Operations
-description: This topic describes how to consume external web services in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to consume external web services in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 11/10/2017
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Consume external web services in Finance and Operations
+# Consume external web services
 
 [!include [banner](../includes/banner.md)]
 
-You can consume web services by adding new class libraries to Microsoft Dynamics 365 for Finance and Operations. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported.
+You can consume web services by adding new class libraries. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps have changed. Application Integration Framework (AIF) is no longer supported.
 
 The following steps show how to consume an external StockQuote service from X++.
 
