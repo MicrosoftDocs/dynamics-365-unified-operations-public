@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data task automation
-description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
+description: This topic explains how you can use data task automation in Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 04/23/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 16
 
 [!include[banner](../includes/banner.md)]
 
-Data task automation in Microsoft Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
+Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
 
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
@@ -52,7 +52,7 @@ We recommend the following approach for data task automation.
     Data task automation manager can consume packages from any sandbox and/or production environment that is related to the LCS project.
 
     > [!IMPORTANT]
-    > - The user account that runs Data task automation manager in Finance and Operations must have access to LCS and to the LCS project that is referenced in the manifest for data packages.
+    > - The user account that runs Data task automation manager must have access to LCS and to the LCS project that is referenced in the manifest for data packages.
     > - Although data task automation can be run in any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration application programming interfaces (APIs) in a production environment. Data task automation that involves integration APIs should be used only for automated testing.
 
 4. Run the data tasks, and then review the outcomes.
@@ -270,7 +270,7 @@ We recommend that you determine the granularity of your manifest as a functional
 
 - Start with as many manifests as your team thinks you logically need. Later, when the team actually starts to run the manifests, it might find that it uses fewer manifests than it expected, and it might want to merge them. In this case, you can merge manifests.
 - Consider separation of duties. For example, you might have one manifest for the setup of demo data and another manifest for the setup of the golden configuration for your environment. In this way, you can make sure that team members use only the manifests that they are supposed to use.
-- Consider user access to LCS. For example, larger and globally distributed implementation teams might have multiple instances of Finance and Operations or multiple LCS projects.
+- Consider user access to LCS. For example, larger and globally distributed implementation teams might have multiple instances of the application or multiple LCS projects.
 
 ### Inheritance
 The manifest schema supports inheritance of common elements that will apply to all tasks in the manifest. A task can override a common element to define a unique behavior. The purpose of the **Shared setup** section is to minimize repetition of configuration elements, so that elements are reused as much as possible. The goal is to keep the manifest concise and clean, to improve maintenance and readability.
