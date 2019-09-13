@@ -5,7 +5,7 @@ title: Coverage settings
 description: This topic provides information about the coverage settings that master scheduling uses to calculate item requirements.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -59,12 +59,12 @@ You can specify coverage settings in several ways:
 
 Master planning can be configured to use different replenishment methods. The replenishment methods or lot-sizing methods are the techniques used by the system to determine the batch size for purchased or produced items. 
 
-In the system, each replenishment method is assigned with a **coverage code**:
+Each replenishment method is assigned one of the following coverage codes:
 
-- **Manual**: the lot-sizing method where the system does not suggest purchased, transfer, or production orders for the item. The planner for the item will be in charge of creating the required orders for the replenishment of the item.
-- **Per requirement**: the lot-sizing method in which the system creates a planned purchase, transfer, or production order per requirement for the item. It is generally used for expensive items with intermittent demand.  
-- **Per period**: the lot-sizing method that combines all the demand for a period into one order for the item. The order will be planned for the first day of the period and its quantity will fulfill the net requirements during the established period. The period starts with the first demand of the item and covers the defined length in time. The next period will start with the next requirements of the item.
-- **Min./Max.**: the lot-sizing method that consists in the replenishment of inventory up to a certain level when the predicted on-hand is below a threshold. The replenishment quantity will be the difference between the maximum level and the predicted on-hand level. 
+- **Manual** - The lot-sizing method where the system does not suggest purchased, transfer, or production orders for the item. The planner for the item will be in charge of creating the required orders for the replenishment of the item.
+- **Per requirement** - The lot-sizing method in which the system creates a planned purchase, transfer, or production order per requirement for the item. This is generally used for expensive items with intermittent demand.  
+- **Per period** - The lot-sizing method that combines all the demand for a period into one order for the item. The order will be planned for the first day of the period and its quantity will fulfill the net requirements during the established period. The period starts with the first demand of the item and covers the defined length in time. The next period will start with the next requirements of the item.
+- **Min/Max** - The lot-sizing method that contains the replenishment of inventory up to a certain level when the predicted on-hand is below a threshold. The replenishment quantity will be the difference between the maximum level and the predicted on-hand level.
 
 
 ## Additional resources
