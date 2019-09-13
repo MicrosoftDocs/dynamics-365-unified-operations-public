@@ -37,7 +37,7 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 ## Authoring test cases using the Task recorder
 
-1. Make sure all your recordings start on the main dashboard of Finance and Operations (or Retail).
+1. Make sure all your recordings start on the main dashboard of Finance and Operations.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
 3. Chart controls are not supported. Any task recording actions related to charts will be ignored by RSAT during test case playback.
 4. When creating a recording make sure to select a tab header even if the tab is already open. For example, you can switch to another tab and then select the needed tab again to activate it before using a control on it. This will make your recording more reliable during test case playback.
