@@ -41,10 +41,10 @@ The CMS document types listed in the [Page elements overview](page-elements-over
 Term | Short description
 ---|---
 Check out | When a CMS item is checked out to you, it can't be edited by any other authenticated system users.  Any changes you make to the item are only visible to you. 
-Check in | When a CMS item is checked in, all changes are visible to other authenticated system users and the document is available to check out and edit.  Each check in creates a document version record in the item's history. 
+Check in | When a CMS item is checked in, all changes are visible to other authenticated system users and the document is available to check out and edit.  Each check-in creates a document version record in the item's history. 
 Publish | When a CMS item is published, it is pushed to your live site and becomes discoverable on the internet by non-authenticated external users.  Publish can only be performed on checked in documents. 
-Save | Save is an action that can be made on a checked out document to persist changes to the CMS before they are checked in or published.  These saved changes are not visible to other authenticated system users until the document is checked in, and not visible to external users until published. 
-Discard check out | When a checked out CMS item is discarded, all saved changes are deleted and the item is reverted to the most recently checked in version of the item. 
+Save | Save is an action that can be made on a checked-out document to save changes to the CMS before the document is checked in or published. These saved changes are not visible to other authenticated system users until the document is checked in, and not visible to external users until published. 
+Discard check out | When a checked out CMS item is discarded, all saved changes are deleted and the item reverts to the most recently checked-in version of the item. 
 
 ## Additional resources
 
