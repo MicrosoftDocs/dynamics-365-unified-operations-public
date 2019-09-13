@@ -905,7 +905,7 @@
   - name: Installation and configuration
     href: perf-test/rsat/rsat-install-configure.md
   - name: Data agnostic testing using the Regression Suite Automation Tool
-    href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+    href: ../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md
   - name: Run test cases
     href: perf-test/rsat/rsat-run.md
   - name: Validate expected values
@@ -915,7 +915,7 @@
   - name: Derived test cases
     href: perf-test/rsat/rsat-derived-test-cases.md
   - name: Use the Regression suite automation tool tutorial
-    href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+    href: ../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md
   - name: Best practices
     href: perf-test/rsat/rsat-best-practices.md
   - name: Troubleshooting
