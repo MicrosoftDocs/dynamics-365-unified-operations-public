@@ -17,7 +17,7 @@ See the screenshots below to find this functionality:
 
 4. From **Accounts payable** > **Invoices** > **Invoice journal** > **Lines**:
 
-![ita-credit-invoicing-apij](./media/ita-credit-invoicing-apuj.png)
+![ita-credit-invoicing-apij](./media/ita-credit-invoicing-apij.png)
 
 5. From **Accounts payable** > **Purchase orders** > **All purchase order**:
 
