@@ -11,4 +11,14 @@ See the screenshots below to find this functionality:
 
 
 
-3. From **Accounts receivable** > **Orders** > All sales orders:
+3. From **Accounts receivable** > **Orders** > **All sales orders**:
+
+
+
+4. From **Accounts payable** > **Invoices** > **Invoice journal** > **Lines**:
+
+
+
+
+5. From **Accounts payable** > **Purchase orders** > **All purchase order**:
+
