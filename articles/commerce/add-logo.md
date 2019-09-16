@@ -1,7 +1,7 @@
 # Add a logo
 This topic describes how to add a site logo to your Dynamics 365 for Commerce website.
 
-Probably one of the first things you'll do when building your site is to add your company or brand's logo to the header of the site. The Starter Kit for Dynamics 365 for Commerce contains a module that makes this task easy. 
+Probably one of the first things you'll do when building your site is to add your company or brand's logo to the header of the site. The Starter Kit for Dynamics 365 Commerce contains a module that makes this task easy. 
 
 ## Prerequisites
 
