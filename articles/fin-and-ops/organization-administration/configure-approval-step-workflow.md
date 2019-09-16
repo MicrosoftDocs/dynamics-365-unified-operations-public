@@ -146,7 +146,7 @@ Follow these steps to specify who the approval step should be assigned to.
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all system users. Select the users to assign the step to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>
@@ -266,11 +266,11 @@ If a user doesn't take action on a document in the allotted time, the document i
     </tr>
     <tr>
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific users</td>
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all users. Select the users to escalate the document to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>
