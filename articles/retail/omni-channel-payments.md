@@ -2,7 +2,7 @@
 # required metadata
 
 title: Omni-channel payments overview
-description: This topic provides an overview of omni-channel payments in Microsoft Dynamics 365 for Retail.
+description: This topic provides an overview of omni-channel payments in Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
 ms.date: 05/12/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of omni-channel payments in Microsoft Dynamics 365 for Retail. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
+This topic provides an overview of omni-channel payments in Dynamics 365 Retail. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
 ## Key terms
 
