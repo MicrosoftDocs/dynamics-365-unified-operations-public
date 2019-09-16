@@ -5,7 +5,7 @@ title: Removed or deprecated features
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -63,9 +63,6 @@ This list is intended to help you consider these removals and deprecations for y
 
 
 ## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### US Payroll tax updates
 
