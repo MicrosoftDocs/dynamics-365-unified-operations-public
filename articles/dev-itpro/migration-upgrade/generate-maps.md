@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 migration - Generate maps 
-description: This topic explains how to generate data maps to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to generate data maps to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations apps.
 author: kfend
 manager: AnnBe
 ms.date: 06/30/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Before you can migrate your data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations, you must align your source data with your target environment. This topic explains how to generate source-to-target mappings.
+Before you can migrate your data from Microsoft Dynamics AX 2009 to Finance and Operations apps, you must align your source data with your target environment. This topic explains how to generate source-to-target mappings.
 
 Before you can generate maps, you must provide the target URL, tenant URL, and service app ID to validate the connection.
 
@@ -42,7 +42,7 @@ Before you can generate maps, you must provide the target URL, tenant URL, and s
 Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [Install the Data migration tool](install-dmt.md).
 
 ## Generate maps
-Follow these steps to generate maps for data migration between AX 2009 and Finance and Operations.
+Follow these steps to generate maps for data migration.
 
 1. In AX 2009, in the navigation pane, go to **Data migration** \> **Setup** \> **Configure connections**.
 2. Review the field information to verify that it's correct, and then click **Validate**.
