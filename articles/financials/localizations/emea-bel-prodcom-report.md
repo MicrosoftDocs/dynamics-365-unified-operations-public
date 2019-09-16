@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Finance and Operations. 
+This topic explains how to set up and maintain PRODCOM in Dynamics 365 Finance. 
 
 Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
 
