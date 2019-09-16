@@ -59,7 +59,7 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr>
 <td>EmailPreference</td>
-<td>This sample shows how to use extension properties to extend an entity. The extended entity is persisted in both the Microsoft Dynamics 365 for Retail and channel databases, and the POS client enables access to the value. The new value is written synchronously to Retail via the RetailRealtimeTransaction service. No customization is required in the CRT or Retail Server, because extension properties flow automatically. There are changes to pages, tables, the Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
+<td>This sample shows how to use extension properties to extend an entity. The extended entity is persisted in both the Microsoft Dynamics 365 Retail and channel databases, and the POS client enables access to the value. The new value is written synchronously to Retail via the RetailRealtimeTransaction service. No customization is required in the CRT or Retail Server, because extension properties flow automatically. There are changes to pages, tables, the Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
 <td>
 <ul>
 <li>Modify an existing Modern POS/Cloud POS view or page.</li>

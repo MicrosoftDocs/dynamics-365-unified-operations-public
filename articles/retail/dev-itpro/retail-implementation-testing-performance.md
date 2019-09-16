@@ -2,7 +2,7 @@
 # required metadata
 
 title: Testing and performance issues
-description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 for Retail implementation projects.
+description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -58,12 +58,12 @@ In some cases, channel performance might not be as good as you expected. Poor pe
 - Additional channel database extensions. Make sure that your custom SQL is efficient and uses correct indexes.
 - Multiple runs of the same custom or built-in CRT SQL queries. If this approach is too expensive, caching in the CRT request handler can be applied, as appropriate.
 
-For more details, see the [Microsoft Dynamics 365 for Retail for IT pros and developers](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
+For more details, see the [Microsoft Dynamics 365 Retail for IT pros and developers](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
 
 When you investigate store performance, follow the suggestions in [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/).
 
 ### Using telemetry data to find performance issues
-If you must troubleshoot the performance of Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Finance and Operations (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [How to use Environment Monitoring View Raw Logs](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/). That information should help you determine why some batch processes or form loads are slow.
+If you must troubleshoot the performance of Microsoft Dynamics 365 Retail and Microsoft Dynamics 365 for Finance and Operations (especially slow SQL queries or SQL deadlocks), the environment diagnostics page in Microsoft Dynamics Lifecycle Services (LCS) shows valuable telemetry data. You can use this data to find potential performance issues in code, configuration, or design. For more details, see [How to use Environment Monitoring View Raw Logs](https://blogs.msdn.microsoft.com/axsa/2018/06/05/how-to-use-environment-monitoring-view-raw-logs/). That information should help you determine why some batch processes or form loads are slow.
 
 ### Performance testing
 

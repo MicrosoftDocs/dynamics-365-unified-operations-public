@@ -39,7 +39,7 @@ This page lists the resources that are available for IT pros and developers who 
 Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).
 
 ## Retail components and architecture
--   [Components of Dynamics 365 for Retail](../retail-components.md)
+-   [Components of Dynamics 365 Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)

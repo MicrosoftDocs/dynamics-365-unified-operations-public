@@ -2,7 +2,7 @@
 # required metadata
 
 title: Merge the build systems for Retail and Finance and Operations
-description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail using Azure DevOps.  
+description: This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 Retail using Azure DevOps.  
 author: andreash1
 manager: AnnBe
 ms.date: 02/06/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Azure DevOps. 
+This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Azure DevOps. 
 
 ## Enable the build system
 
@@ -69,7 +69,7 @@ Add a new step at the beginning of the build pipeline, as shown in the following
 
 This build step enables Microsoft to copy the latest built Retail binaries to the Retail bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
 
-[![Adding a copy step for binaries from the Retail SDK to the Dynamics 365 for Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Adding a copy step for binaries from the Retail SDK to the Dynamics 365 Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## Add a copy step for all Retail packages
 

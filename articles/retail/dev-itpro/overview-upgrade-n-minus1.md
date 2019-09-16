@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade and N-1 support for Retail
-description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 for Retail. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 for Retail headquarters after an upgrade. 
+description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Retail. N-1 support lets customers who have stores that run AX 2012 R3 CU10 work with Dynamics 365 Retail headquarters after an upgrade. 
 author: athinesh99
 manager: AnnBe
 ms.date: 11/14/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Upgrade and N-1 support have been enabled in the July release of Microsoft Dynamics 365 for Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Microsoft Dynamics 365 for Retail headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud by moving to Retail.
+Upgrade and N-1 support have been enabled in the July release of Microsoft Dynamics 365 Retail. N-1 support lets customers who have stores that run Microsoft Dynamics AX 2012 R3 Cumulative Update 10 (CU10) work with Microsoft Dynamics 365 Retail headquarters after an upgrade. The main purpose of upgrade and N-1 support is to let AX 2012 R3 customers take advantage of the benefits of the cloud by moving to Retail.
 
 The following features let customers upgrade in a seamless manner:
 
@@ -43,7 +43,7 @@ The following features let customers upgrade in a seamless manner:
 - The upgrade process has enhanced error handling and messaging, so that customers can quickly debug issues.
 - Users can use tools to bring forward custom X++ code in their existing Retail headquarters to the upgraded version of the headquarters.
 
-The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 for Retail](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
+The upgrade procedure is largely the same as the procedure for upgrading Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 Retail](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
 Planned downtime is required. Upgrade analysis is done first. The upgrade analysis runs against the Microsoft Dynamics AX 2012 database and is based on the Microsoft Dynamics Lifecycle Services (LCS) Diagnostic service. This step identifies tasks that can help make upgrade faster and less expensive. It also identifies the required SQL configuration, data headquarters cleanup, and deprecated features.
   
@@ -55,4 +55,4 @@ For N-1 support, the customer must install the N-1 package in Retail headquarter
 
 After the Retail headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Retail headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Retail headquarters, cashiers must change their password the first time that they sign in.
  
-For instructions for N-1 installation, see [Installing N-1 components for use with Microsoft Dynamics 365 for Retail](n-1-installation-configuration.md).
+For instructions for N-1 installation, see [Installing N-1 components for use with Microsoft Dynamics 365 Retail](n-1-installation-configuration.md).
