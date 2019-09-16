@@ -170,7 +170,7 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Request properties](request-properties-object.md)
 * [App settings](app-settings.md)
 * [Extend a module definition](extend-module-definition.md)
-* [Working with Cookies](cookie-data.md) 
+* [Working with Cookies](cookie-api-overview.md) 
   
 ## Develop data actions
 * [Data actions overview](data-actions.md)
