@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in China.
+This topic includes information and links to resources that can help you set up Dynamics 365 Finance for legal entities with a primary address in China.
 
 -   [Bill of materials comparison](apac-chn-bom-comparison.md)
 -   [Chart of accounts hierarchy](tasks/china-hierarchy-chart-accounts.md) 
