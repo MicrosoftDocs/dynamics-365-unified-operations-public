@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,7 +34,6 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to use the new test recorder tool in Retail Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
