@@ -5,7 +5,7 @@ title: Separate accounts for credit notes
 description: This topic explains how to set up and use separate accounts for credit notes.
 author: ilkond
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 10.0.7
 ---
 
 # Separate accounts for credit notes
+
+[!include [banner](../includes/banner.md)]
 
 In Italy, a company can define the accounting policy so that credit note amounts are posted to ledger accounts that differ from the revenue accounts. This approach is used to track the amount that is issued on credit notes.
 
