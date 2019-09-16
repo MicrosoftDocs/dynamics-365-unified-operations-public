@@ -146,3 +146,9 @@ To preview a specific module (for example, campaignBanner) in a local web browse
     * `https://localhost:4000/modules?type=campaignBanner`
     * `https://localhost:4000/modules?type=hero`
     * `https://localhost:4000/modules?type=banner`
+    
+## Adding an SSL certificate
+
+The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment which work against localhost.  You can find these files inside the **.ssl** folder under the root SDK folder.  Note:  *yarn start* must be run at least once for these files to be generated.
+
+To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
