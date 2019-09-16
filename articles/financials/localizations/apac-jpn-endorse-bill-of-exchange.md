@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Japan, bills of exchange (BOE) are often endorsed to a vendor and used as a method of payment. A list page for BOEs provides centralized management of the BOE lifecycle.
 
-To start managing a BOE in Finance and Operations, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
+To start managing a BOE, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
 
 ## Endorse a BOE to a vendor
 The list page shows customer BOEs that have been drawn. You can select one or more BOEs to endorse to a vendor. However, if multiple BOEs are selected, they all must have a status of **Drawn** before you can endorse them. An accounting voucher will be generated to record the balance change in the endorsed BOE account and the accounts payable account.
