@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 7.3.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail. It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
+This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Retail. It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
 
 > [!NOTE]
-> This topic applies to both Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Retail.
+> This topic applies to Dynamics 365 Finance and Operations, Supply Chain Management, and Retail.
 
 ## Prerequisites
 
