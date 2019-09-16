@@ -76,7 +76,7 @@ The following table shows the prerequisites that must be in place before you sta
 </tbody>
 </table>
 
-Finance and Operations implements the reduction entry feature on top of existing fixed asset features. To use reduction entries, you must complete the following tasks in addition to using the existing fixed asset features.
+The reduction entry feature is implemented on top of existing fixed asset features. To use reduction entries, you must complete the following tasks in addition to using the existing fixed asset features.
 
 ### Assigning a reduction entry document to a fixed asset book
 
