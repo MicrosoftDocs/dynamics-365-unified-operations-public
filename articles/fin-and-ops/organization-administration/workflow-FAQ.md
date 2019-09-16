@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow FAQ
-description: This topic answers frequently asked questions about the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic answers frequently asked questions about the workflow system.
 author: ChrisGarty 
 manager: AnnBe
 ms.date: 06/19/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic answers frequently asked questions about the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+This topic answers frequently asked questions about the workflow system.
 
 ## Why are multiple notifications received when a work item is rejected?
 When a work item is rejected, that work item is completed as rejected. Another work item is created and assigned to the originator. This means that there is a notification to the originator for the rejected work item, and a separate notification to the user assigned to the new "change requested" work item. 
