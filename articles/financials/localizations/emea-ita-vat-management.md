@@ -58,6 +58,8 @@ Make sure that you have chosen the right date in **From date** on the dialogue .
 
 **Sales tax transactions extension** consistency check is available when **Date of VAT register** feature is enabled in **Feature management** workspace.
 
+**Sales tax transactions extension** consistency check is available in build version starting from 10.0.234.21 for 10.0.6 version of the application and any version starting from 10.0.7.
+
 ## Changes in the Italian sales tax payment report
 
 You may run **Italian sales tax payment report** via the following menu items:
