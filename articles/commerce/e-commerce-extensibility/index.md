@@ -161,12 +161,12 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Test with a module mock](test-module-mock.md)
 * [Test with a page mock](test-page-mock.md)
 * [Container modules](container-modules.md)
-  * [Create a layout container module](create-layout-container.md)
-  * [Create a page container module](create-page-containers.md)
+* [Create a layout container module](create-layout-container.md)
+* [Create a page container module](create-page-containers.md)
 * [Localizing a module](localize-module.md)
 
 ## Advanced module topics
-* [Module globalization with CultureInfoFormatter](globalize-modules.md)
+* [Module globalization](globalize-modules.md)
 * [Request properties](request-properties-object.md)
 * [App settings](app-settings.md)
 * [Extend a module definition](extend-module-definition.md)
@@ -178,13 +178,13 @@ Learn how to create or modify existing modules, data actions and themes to exten
 * [Testing data actions with mocks](test-data-action-mocks.md)
 * [Page load data actions](page-load-data-action.md)
 * [Event based data actions](event-based-data-actions.md)
+* [Core data actions](core-data-actions.md)
 
 ## Advanced data action topics
 * [Chaining data actions](chain-data-actions.md)
 * [Batched data actions](batch-data-actions.md)
 * [Observable data actions](create-observable-data-action.md)
 * [Share state across modules](share-state-across-modules.md)
-* [Core data actions](core-data-actions.md)
 
 ## Develop themes
 * [Theming overview](theming.md)
