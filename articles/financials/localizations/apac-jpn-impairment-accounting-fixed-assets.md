@@ -49,7 +49,7 @@ You can use impairment indicators to identify impairment in fixed assets. On th
 Yes, you can select which assets to test for impairment. To specify the criteria, click **Query** on the **Impairment recognition test** page.
 
 ## How often can I check fixed assets for impairment?
-By creating a batch job, you can set up Finance and Operations to check the fixed assets for impairment according to a schedule.
+By creating a batch job, you can check the fixed assets for impairment according to a schedule.
 
 ## Are there types of fixed assets that are excluded from impairment testing and accounting?
 Yes, the following types of fixed assets are excluded from impairment testing and accounting:
