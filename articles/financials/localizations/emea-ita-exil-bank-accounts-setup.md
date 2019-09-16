@@ -40,7 +40,7 @@ This article explains how to save time avoiding manual entering and simplify the
 
 ## Import bank groups
 
-Import the list of banks into **Bank groups** entity using **Data management** framework.
+Import the list of banks via **Bank groups** entity using **Data management** framework.
 For more information, see [Data import and export jobs overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
 
 The source data for import can be presented as **Excel** file with the following fields:
@@ -73,9 +73,12 @@ The source data for import can be presented as **Excel** file with the following
 > **BANKGROUPID** must have the same value as **ROUTINGNUMBER**.
 
 
-### Use enhanced list of bank groups
 
-If.
+## Use enhanced list of bank groups
+
+During bank accounts set up, when inquiring the list of bank groups additional descriptive fields are available for more precise banks selection: **Bank branch name** and **City**.
+
+*...replace the picture below...*
 
 ![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
 
