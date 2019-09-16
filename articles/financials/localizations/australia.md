@@ -47,7 +47,7 @@ The names of the Australian banks and the file formats that they accept for elec
 | National Australia Bank        | Internet BankingNAB ConnectNAB Online | NAB Direct Credit Service (AU) |
 
 ## Business activity statement (BAS)
-Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature in Finance and Operations, see [Business activity statement ](apac-aus-business-activity-statement.md).
+Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature, see [Business activity statement](apac-aus-business-activity-statement.md).
 
 ## Low-value pool depreciation
 Australia uses a low-value pool depreciation method that allows low-cost and low-value assets to be allocated to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).
