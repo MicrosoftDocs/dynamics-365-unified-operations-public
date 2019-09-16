@@ -69,6 +69,9 @@ The source data for import can be presented as **Excel** file with the following
 | SUFFIX              |
 | BRANCHNAME_IT       |
 
+> [!NOTE]
+> **BANKGROUPID** must have the same value as **ROUTINGNUMBER**.
+
 
 ### Use enhanced list of bank groups
 
@@ -76,5 +79,4 @@ If.
 
 ![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
 
-> [!NOTE]
-> Bank.
+
