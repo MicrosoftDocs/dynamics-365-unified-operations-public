@@ -187,7 +187,7 @@ Batch jobs are suspended during the maintenance windows and resume when the main
 
 You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you are not already a member of the Dynamics 365 Insider Program, you will need to:
 
-1. Sign up for the Insider Program using this URL: https;//experience.dynamics.com
+1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
 2. Accept the terms and conditions to become a Dynamics 365 Insider.
 3. After your application has been approved (approximately 24 hours) you can then sign back into the Insider Portal to find the different preview programs available for you to join. 
 4. Preview Early Access Program (PEAP) and First Release: The Finance and Operations program requires that you to accept additional terms and conditions to join. Please look for these programs within the Dynamics 365 Insider Program after your nomination has been accepted.
