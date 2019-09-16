@@ -215,7 +215,7 @@ Follow these steps to load the configurations and map them to a legal entity.
 
 ## Tax setup
 
-This section walks you through the process of defining the GST and Customs tax setup in Finance and Operations.
+This section walks you through defining the GST and Customs tax setup.
 
 ### Map configuration tax types to ERP tax types (Customs)
 
