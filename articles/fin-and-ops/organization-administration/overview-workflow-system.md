@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow system overview
-description: This topic describes the workflow system in Finance and Operations applications.
+description: This topic describes the workflow system.
 author: sericks007
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the workflow system in Finance and Operations applications.
+This topic describes the workflow system.
 
 ## What is workflow?
 
@@ -42,7 +42,7 @@ The term *workflow* can be defined in two ways: as a system and as a business pr
 
 ### Workflow is a system
 
-Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
+Workflow is a system that runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
 
 ### Workflow is a business process
 
