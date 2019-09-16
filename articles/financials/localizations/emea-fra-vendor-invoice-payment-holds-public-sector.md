@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Finance and Operations are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
+The standard processes related to vendor invoice payment holds in Dynamics 365 Finance are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
 
 Set up rules for vendor invoice payment holds
 ---------------------------------------------
