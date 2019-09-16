@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail components
-description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
+description: This topic describes the various components that make up Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 03/26/2019
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
+This topic describes the various components that make up Dynamics 365 Retail.
 
-Dynamics 365 for Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
+Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
 
 <table>
 <thead>
@@ -49,13 +49,13 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 <tbody>
 <tr>
 <td>Retail headquarters</td>
-<td>Retail headquarters for Dynamics 365 for Retail can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Dynamics 365 for Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
-<p><strong>Important:</strong> Building a custom POS or online store solution for Dynamics 365 for Retail is a complex task that requires extensive planning, development, and testing.</p>
+<td>Retail headquarters for Dynamics 365 Retail can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
+<p><strong>Important:</strong> Building a custom POS or online store solution for Retail is a complex task that requires extensive planning, development, and testing.</p>
 </td>
 </tr>
 <tr>
 <td>Retail POS</td>
-<td>Dynamics 365 for Retail supports two types of POS experience:
+<td>Dynamics 365 Retail supports two types of POS experience:
 <ul>
 <li><strong>Cloud POS</strong> is a browser-based POS that can be used on mobile devices.</li>
 <li><strong>Retail Modern POS</strong> (MPOS) can be used on clients such as PCs, tablets, and phones to process sales transactions, customer orders, and daily operations, and to perform inventory management.</li>
