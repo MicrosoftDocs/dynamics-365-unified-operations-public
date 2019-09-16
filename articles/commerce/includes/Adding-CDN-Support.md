@@ -33,19 +33,19 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ## Overview
 
-This topic describes how to add your CDN to your Dynamics 365 Commerce environment.
+This topic describes how to add your CDN to your Dynamics 365 Commerce environment. 
 
-## Connecting your CDN
+## About setting up your CDN with Dynamics 365 Commerce
 
 Customers setting up an e-Commerce environment in Dynamics 365 Commerce can configure the environment to work with your CDN Service. 
 
-Your custom domain must be enabled during the e-Commerce environment provisioning, or can be set up after provisioning via a service request. The provisioning process for your e-Commerce environment will generate a hostname associated with the environment (ex: format <e-commerce-tenant-name>.commerce.dynamics.com). The generated hostname or endpoint only supports SSL certificate for *.commerce.dynamics.com. It will not support SSL for custom domains.
+Your custom domain must be enabled during the e-Commerce environment provisioning, or can be set up after provisioning via a service request. The provisioning process for your e-Commerce environment will generate a hostname associated with the environment (ex: format <e-commerce-tenant-name>.commerce.dynamics.com). The Dynamics 365 Commerce hostname or endpoint generated during provisioning only supports SSL certificate for *.commerce.dynamics.com. This generated hostname or endpoint will not support SSL for custom domains. Due to this, you need to terminate SSL for your custom domain in your CDN and forward traffic from the CDN to the Dynamics 365 Commerce generated hostname or endpoint. 
+  
+Additionally, the statics (JS or CSS files) from Dynamics 365 Commerce will get served from the Commerce generated endpoint which you need to put behind the CDN for caching purposes.
 
-Note: All statics form e-Commerce (JS or CSS files) will get served from the *commerce.dynamics.com endpoint.
+## Setting up CDN for Custom Domain
 
-## Setting up SSL for Custom Domain
-
-To ensure the SSL is set up for a custom domain and your statics (JS/CSS) are cached, your CDN will need to be configured to direct to your Dynamics 365 Commerce generated hostname for your environment. You must also cache the following pattern for statics only: /_msdyn365/_scnr/*.
+To ensure the SSL is set up for a custom domain and your statics (JS or CSS files) are cached, your CDN will need to be configured to direct to your Dynamics 365 Commerce generated hostname for your environment. You must also cache the following pattern for statics (JS or CSS files) only: /_msdyn365/_scnr/*.
 
 Any CDN service can be used. 
 
