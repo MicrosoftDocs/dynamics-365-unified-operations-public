@@ -43,6 +43,21 @@ Note, that system will not allow:
 
 -	to switch Off **Date of VAT register** feature in **Feature management** workspace if there is at least one legal entity where **Date of VAT register** parameter on **General ledger parameters** page is switched on.
 
+## “Sales tax transactions extension” consistency check
+
+**Date of VAT register** field is physically stored in a TaxTrans_W table which an extension of TaxTrans table. When a company switches on **Date of VAT register** parameter on **General ledger parameters** page, data source queries on some pages in the system starts working differently, joining the TaxTrans_W table. It is possible that user will not be able to see tax transactions posted in the past period. It is because there are no corresponding transactions in TaxTrans_W table because it was not used in the past.
+To avoid this issue, we recommend running **Sales tax transactions extension** consistency check. Open **System administration** > **Periodical tasks** > **Database** > **Consistency check** page and mark **Program** > **General ledger** > **Sales tax** > **Sales tax transactions extension** check box (you don’t need to mark the parent checkboxes if you want to run only Sales tax transactions extension check):
+
+![date-of-vat-consistency-check](./media/date-of-vat-consistency-check.png)
+
+Run **Sales tax transactions extension** consistency check with:
+-	**Check** option to find out if there are missing transactions in TaxTrans_W table in your system. As a result, system will inform you about how many transactions in TaxTrans table miss corresponding records in TaxTrans_W table.
+-	**Fix** option if you want to compensate missing records in TaxTrans_W table. As a result, system will insert corresponding records to the TaxTrans_W table and Posted sales tax transaction in the past periods will be seen again everywhere in the system. 
+
+Make sure that you have chosen the right date in **From date** on the dialogue . Leave **From date** field blank if you want to recover all the tax transactions in the system.
+
+**Sales tax transactions extension** consistency check is available when **Date of VAT register** feature is enabled in **Feature management** workspace.
+
 ## Changes in the Italian sales tax payment report
 
 You may run **Italian sales tax payment report** via the following menu items:
