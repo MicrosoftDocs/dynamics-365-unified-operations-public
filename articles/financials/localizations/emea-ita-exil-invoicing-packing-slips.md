@@ -41,3 +41,10 @@ This topic explains how to set up and print accompanying invoices which also con
 
 ## Accompanying invoices printing
 No specific setup required. Once enabled with **Invoicing of packing slips** feature, the layout of invoice report will be changed from a standard to the layout that contains packing slips details.
+
+The example of an invoice printout with packing slips details:
+![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+
+> [!NOTE]
+> The new layout is applicable only to invoices that are based on sales orders. It isn't applicable to free-text invoices, because free-text invoices do not assume packing slips.
+
