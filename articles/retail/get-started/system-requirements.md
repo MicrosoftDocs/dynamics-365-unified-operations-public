@@ -134,7 +134,7 @@ The following Microsoft Office applications are supported:
 
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016.
+    - Windows Server 2012 R2 and Windows Server 2016 (Note that Windows Server 2012 R2 is out of mainstream support at this time).
     - It is not recommended to use Retail hardware station and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -164,7 +164,7 @@ Take note that the minimum system requirements listed below are the bare minimum
 
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016.
+    - Windows Server 2012 R2 and Windows Server 2016 (Note that Windows Server 2012 R2 is out of mainstream support at this time).
     - It is not recommended to use Retail Store Scale Unit and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
