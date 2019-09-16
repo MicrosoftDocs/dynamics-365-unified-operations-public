@@ -41,7 +41,11 @@ The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includ
 
 ## Clone and update a module
 
-To clone a module and then update it, use the **yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME** command-line interface (CLI) command. When you run this command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module. This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
+To clone a module and then update it, use the **clone** command-line interface (CLI) command. When you run the below command, you replace **SDK\_MODULE\_NAME** with the name of the module that you want to modify and **NEW\_MODULE\_NAME** with the name of the new module.
+
+**yarn msdyn365 clone SDK\_MODULE\_NAME NEW\_MODULE\_NAME**
+
+This command adds the source code for the module to the /src/modules/ directory and pulls in any required dependencies for the module.
 
 ## Example
 
@@ -66,6 +70,6 @@ To preview the new module in a local web browser, follow these steps.
     c:\repos\MyEcommerceSite\yarn start
     ```
 
-2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=heroV2`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
+2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=heroExtended`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 You can now update the module code as needed.
