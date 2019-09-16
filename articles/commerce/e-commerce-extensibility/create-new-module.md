@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new module
-description: This topic describes how to create a new module.
+description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a new module.
+This topic describes how to create a new module in Dynamics 365 Commerce.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provides an **add-module** command-line interface (CLI) command to create a new module. When you run the following command, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
+To create a new module in Commerce, the online Software Development Kit (SDK) provides the **add-module** command-line interface (CLI) command. When you run the command as in the following example, you replace **MODULE\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-module MODULE\_NAME**
 
