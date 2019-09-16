@@ -32,7 +32,7 @@ ms.search.validFrom: 2016-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the standard reports that Microsoft Dynamics 365 for Finance and Operations provides to help you with the INTERVAT tax declaration and reconciliation analysis.
+This topic describes the standard reports that Dynamics 365 Finance provides to help you with the INTERVAT tax declaration and reconciliation analysis.
 
 Based on the sales tax entries for selected periods, the Belgian periodic value-added tax (VAT) declaration combines sales tax amounts into boxes (sales tax reporting codes) by sorting, splitting, and totaling information in specific ways. Therefore, control reports are required, so that the amounts in the VAT declaration can be verified in detail. The rest of this topic describes the reports that include details of the data in the VAT declaration.
 
