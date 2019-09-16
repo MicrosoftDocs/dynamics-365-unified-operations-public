@@ -4,8 +4,8 @@
 title: Deployment guidelines for cash registers for India
 description: This topic is a deployment guide for the Retail localization for India.
 author: AlexChern0v
-manager: anbee
-ms.date: 01/31/2019
+manager: annbe
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -221,7 +221,7 @@ The Generic Tax Engine component is a part of sealed extensions.
     ```
 
     > [!WARNING]
-    > Do **not** edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+    > Do *not* edit the commerceruntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
 # [Retail 10.0.6 and later](#tab/retail-10-0-6)
 
