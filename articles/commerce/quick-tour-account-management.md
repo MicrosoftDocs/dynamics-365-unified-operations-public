@@ -32,7 +32,10 @@ ms.dyn365.ops.version:
 
 **Account Management** is a group of pages and modules that allow your customers to view their account and order related information. It includes an Account management landing page, User profile page, Address page, Order history page, Order details page, Loyalty rewards page, Wishlist page.
 
-The **Account** landing page provides a quick summary of all account related information, including user profile, orders, wishlist, addresses, loyalty etc. When a user signs in and goes to “My Account” this is first the page that will be shown. From here, the user can access more details on each area. 
+The **Account** landing page provides a quick summary of all account related information, including user profile, orders, wishlist, addresses, loyalty etc. When a user signs in and goes to “My Account” this is first the page that will be shown. From here, the user can access more details on each area. Below is an example of the account management landing page.
+
+> [!div class="mx-imgBorder"]
+> ![Account Management Landing Page](media/account- management- landingpage.jpg)
 
 The **User profile** page displays the account information such as name, phone number etc. Customers can update their profile information on this page. This page can be customized to include additional user account preferences such as opt-in for marketing email.
 
