@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 
-> [!NOTE]
+> [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
 
 ## Download Retail hardware station by using self-service
