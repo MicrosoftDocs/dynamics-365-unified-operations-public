@@ -107,7 +107,7 @@ When an email is going to be sent, the user will see the **How would you like to
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
 | Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
-| Use the Microsoft Dynamics 365 for Finance and Operations email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
+| Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
 ## User (optional): Send email dialog box
