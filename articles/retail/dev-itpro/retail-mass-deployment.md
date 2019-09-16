@@ -46,6 +46,7 @@ The following table shows the delimiters that can currently be used in execution
 | -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -SkipAppxInstallation         | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application.  This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile).</p> |
 
 ## Silent servicing
 
