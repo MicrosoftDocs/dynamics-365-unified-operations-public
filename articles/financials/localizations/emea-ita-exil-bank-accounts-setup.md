@@ -38,9 +38,37 @@ This article explains how to save time avoiding manual entering and simplify the
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Bank account setup enhancement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Import bank gorups
+## Import bank groups
 
-You .
+Import the list of banks into **Bank groups** entity using **Data management** framework.
+For more information, see [Data import and export jobs overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
+
+The source data for import can be presented as **Excel** file with the following fields:
+
+| Column names        |
+|---------------------|
+| BANKGROUPID         |
+| ADDRESSCITY         |
+| ADDRESSCOUNTRY      |
+| ADDRESSCOUNTY       |
+| ADDRESSDESCRIPTION  |
+| ADDRESSDISTRICTNAME |
+| ADDRESSLATITUDE     |
+| ADDRESSLOCATIONID   |
+| ADDRESSLONGITUDE    |
+| ADDRESSSTATE        |
+| ADDRESSSTREET       |
+| ADDRESSTIMEZONE     |
+| ADDRESSVALIDFROM    |
+| ADDRESSVALIDTO      |
+| ADDRESSZIPCODE      |
+| NAME                |
+| ROUTINGNUMBER       |
+| ROUTINGNUMBERTYPE   |
+| STATEMENTFORMATID   |
+| SUFFIX              |
+| BRANCHNAME_IT       |
+
 
 ### Use enhanced list of bank groups
 
