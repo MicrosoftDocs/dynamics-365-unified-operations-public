@@ -2,5 +2,7 @@
   href: index.md
   - name: Create a new e-Commerce site
     items:
+    - name: Deploy a new e-Commerce site
+      href: deploy-ecommerce-site.md
     - name: Configure a domain name
       href: configure-your-domain-name.md
