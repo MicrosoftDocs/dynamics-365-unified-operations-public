@@ -69,7 +69,7 @@ This container has two slots which allow a side-by-side view of the modules with
 
 - **67%/33%:** First module has column width of 67% and the second module has a column width of 33%. A **33%/67%** option is also available.
 
-- **100%** Both modules have a full column width, which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module (for example, in extra small view ports such as mobile).
+- **100%:** Both modules have a full column width, which makes the modules stack one below the other. In some view ports this may be preferred (for example, in extra small view ports such as mobile), even though this goes against the two-column intent of this container module.
 
 
 ### Container with 2-slots properties  
@@ -85,9 +85,9 @@ This container has two slots which allow a side-by-side view of the modules with
 
 ## Container with 3-slots 
 
-Container with 3-slots allows 3 columns inside, its optimized for three column view. It has additional properties that allow the layout to be further optimized by view port 
+The container with 3-slots modules allows three columns inside of it, and is optimized for a three-column view. It has additional properties that allow the layout to be further optimized by view port. 
 
-The width of each column can be defined by view port. Below are the column width settings 
+The column width settings can be defined by view port, as follows. 
 
 **33%/33%/33%:** All three modules have equal column width.
 **50%/25%/25%:** The first module has a column width of 50%, and the remaining two modules have column widths of 25%. Other variations such as **25%/50%/25%** and **25%/25%/50%** are also supported.
@@ -98,7 +98,7 @@ The width of each column can be defined by view port. Below are the column width
 
 | Property name                   | Values                    | Property description                                         |
 | ------------------------------- | ------------------------- | ------------------------------------------------------------ |
-| Heading                         | Heading text  Heading tag | An optional can be provided for the container                |
+| Heading                         | Heading text  Heading tag | An optional heading can be added to the container.                |
 | X-Small view port configuration |<br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50</br> <br>16%/16%/67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for extra small view ports.              |
 | Small view port configuration   | <br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50%</br> <br>16%/16%/67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for small view ports such as mobile devices.  |
 | Medium view port configuration  | <br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50%</br> <br>16% 16% 67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for medium view ports such as tablets. |
@@ -131,6 +131,6 @@ To add a container player module to a new page and set the required properties, 
 
 1. Add two more feature modules to the container module.
 
-1. Save and preview the page. Preview should show three feature modules side by side. 
+1. Save and preview the page. Preview should show three feature modules side-by-side. 
 
 1. Check-in and publish the page once the desired layout is achieved. 
