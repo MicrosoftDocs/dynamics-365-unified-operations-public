@@ -55,21 +55,21 @@ It is recommended practice to put modules within a container so they can adhere 
 | ----------------- | ------------------------------------------------- | ------------------------------------------------------------ |
 | Heading           | Heading text<br/>Heading tag = H1, H2, H3, H4, H5, H6 | The optional container heading text and heading tag. The default heading tag value is H2 but it can be modified to meet accessibility requirements. |
 | Width             | Fit container<br/>Fill screen                         | This property defines whether the modules should fit within the width of the container (the default) or fill the screen. |
-| Number of columns | 1,2,3,4,6, 12                                     | The number of columns allowed in the container, up to 12 columns.         |
+| Number of columns | 1,2,3,4,6,12                                     | The number of columns allowed in the container, up to 12 columns.         |
 
 ## Container with 2-slots 
 
 Container with 2-slots is a container module that is optimized for a two-column view. It has additional properties that allow the layout to be further customized by view port (mobile, tablet, PC, etc.). 
 
-This container has two slots which allow a side-by-side view of the modules within it. The width of each column can be defined by view port. The column width settings are as follows. 
+This container has two slots which allow a side-by-side view of the modules within it. The width of each column can be defined for each view port. The column width settings are as follows. 
 
-- **75% 25%:** The first module has a column width of 75% and the second module has a column width of 25%. A 25% 75% option is also available.
+- **75%/25%:** The first module has a column width of 75% and the second module has a column width of 25%. A **25%/75%** option is also available.
 
-- **50%  50%** Both modules have equal column width
+- **50%/50%** Both modules have equal column width.
 
-- **67% 33%:** First module will have a 67% width and second module gets a 33% width. A 33% 67% option is also available 
+- **67%/33%:** First module has column width of 67% and the second module has a column width of 33%. A **33%/67%** option is also available.
 
-- **100%** Both modules have a full column width  which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module. E.g. in X-Small view ports such as Mobile.
+- **100%** Both modules have a full column width, which makes the modules stack one below the other. In some view ports this may be preferred, even though this goes against the two-column intent of this container module (for example, in extra small view ports such as mobile).
 
 
 ### Container with 2-slots properties  
@@ -77,10 +77,10 @@ This container has two slots which allow a side-by-side view of the modules with
 | Property name                   | Values                               | Property description                                         |
 | ------------------------------- | ------------------------------------ | ------------------------------------------------------------ |
 | Heading                         | Heading text<br/>Heading tag            | An optional can be provided for the container                |
-| X-Small view port configuration | <br>25% 75%</br> <br>75% 25%</br> <br>50% 50%</br> <br>67% 33%</br> <br>33% 67%</br> <br> 100%</br>  | This defines the layout for extra small view ports.              |
-| Small view port configuration   | <br>25% 75%</br> <br>75% 25%</br> <br>50% 50%</br> <br>67% 33%</br> <br>33% 67%</br> <br> 100%</br> | This defines the layout for small view ports such as mobile devices.  |
-| Medium view port configuration  | <br>25% 75%</br> <br>75% 25%</br> <br>50% 50%</br> <br>67% 33%</br> <br>33% 67%</br> <br> 100%</br> | This defines the layout for medium view ports such as tablets. |
-| Large view port configuration   | <br>25% 75%</br> <br>75% 25%</br> <br>50% 50%</br> <br>67% 33%</br> <br>33% 67%</br> <br> 100%</br> | This defines the layout for medium view ports such as PCs.           |
+| X-Small view port configuration | <br>25%/75%</br> <br>75%/25%</br> <br>50%/50%</br> <br>67%/33%</br> <br>33%/67%</br> <br> 100%</br>  | This defines the layout for extra small view ports.              |
+| Small view port configuration   | <br>25%/75%</br> <br>75%/25%</br> <br>50%/50%</br> <br>67%/33%</br> <br>33%/67%</br> <br> 100%</br> | This defines the layout for small view ports such as mobile devices.  |
+| Medium view port configuration  | <br>25%/75%</br> <br>75%/25%</br> <br>50%/50%</br> <br>67%/33%</br> <br>33%/67%</br> <br> 100%</br> | This defines the layout for medium view ports such as tablets. |
+| Large view port configuration   | <br>25%/75%</br> <br>75%/25%</br> <br>50%/50%</br> <br>67%/33%</br> <br>33%/67%</br> <br> 100%</br> | This defines the layout for medium view ports such as PCs.           |
 
 
 ## Container with 3-slots 
@@ -89,25 +89,22 @@ Container with 3-slots allows 3 columns inside, its optimized for three column v
 
 The width of each column can be defined by view port. Below are the column width settings 
 
-**33% 33% 33%:** All three modules have equal column width
-**50% 25% 25%:** The first module has 50% of column width, the remaining two modules have 25% column width. Other variation such as
-**25% 50% 25%** and **25% 25% 50%** are also supported
-**16% 16% 67%:** The first two modules have 16% column width and the last module has 67% column width. Other variation such as 
-**16% 67% 16%** and **67% 16% 16%** are also supported
+**33%/33%/33%:** All three modules have equal column width.
+**50%/25%/25%:** The first module has a column width of 50%, and the remaining two modules have column widths of 25%. Other variations such as **25%/50%/25%** and **25%/25%/50%** are also supported.
+**16%/16%/67%:** The first two modules have column widths of 16% and the third module has a column width of 67%. Other variations such as **16%/67%/16%** and **67%/16%/16%** are also supported.
 
 
-### Properties of Container with 3-slots 
+### Container with 3-slots properties  
 
 | Property name                   | Values                    | Property description                                         |
 | ------------------------------- | ------------------------- | ------------------------------------------------------------ |
 | Heading                         | Heading text  Heading tag | An optional can be provided for the container                |
-| X-Small view port configuration |<br>33% 33% 33%</br> <br>50% 25% 25%</br> <br>25% 50% 25%</br> <br>25% 25% 50</br> <br>16% 16% 67%</br> <br> 16% 67% 16%</br> <br> 67% 16% 16% </br>  | This defines the layout for extra small view ports              |
-| Small view port configuration   | <br>33% 33% 33%</br> <br>50% 25% 25%</br> <br>25% 50% 25%</br> <br>25% 25% 50</br> <br>16% 16% 67%</br> <br> 16% 67% 16%</br> <br> 67% 16% 16% </br>  | This defines the layout for small view ports such as mobile devices.  |
-| Medium view port configuration  | <br>33% 33% 33%</br> <br>50% 25% 25%</br> <br>25% 50% 25%</br> <br>25% 25% 50</br> <br>16% 16% 67%</br> <br> 16% 67% 16%</br> <br> 67% 16% 16% </br>  | This defines the layout for medium view ports such as tablets. |
-| Large view port configuration   |<br>33% 33% 33%</br> <br>50% 25% 25%</br> <br>25% 50% 25%</br> <br>25% 25% 50</br> <br>16% 16% 67%</br> <br> 16% 67% 16%</br> <br> 67% 16% 16% </br>   | This defines the layout for medium view ports such as PCs.           |
+| X-Small view port configuration |<br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50</br> <br>16%/16%/67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for extra small view ports.              |
+| Small view port configuration   | <br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50%</br> <br>16%/16%/67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for small view ports such as mobile devices.  |
+| Medium view port configuration  | <br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50%</br> <br>16% 16% 67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>  | This defines the layout for medium view ports such as tablets. |
+| Large view port configuration   |<br>33%/33%/33%</br> <br>50%/25%/25%</br> <br>25%/50%/25%</br> <br>25%/25%/50%</br> <br>16%/16%/67%</br> <br> 16%/67%/16%</br> <br> 67%/16%/16% </br>   | This defines the layout for medium view ports such as PCs.           |
 
  
-
 ## Add a container module to a page 
 
 To add a container player module to a new page and set the required properties, do the following.  
