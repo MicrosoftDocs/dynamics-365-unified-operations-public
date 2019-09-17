@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the regulatory updates that are planned and released in Microsoft Dynamics 365 for Finance and Operations supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
+This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
 Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the following resources:
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
@@ -97,5 +97,5 @@ For the latest regulatory update plans, refer to the following table.
 
 ## Additional resources
 - Find all planned and released regulatory updates on [Lifecycle Service - Issue search](https://lcs.dynamics.com/Logon/Index) (sign in required).
-- For a list of the localizations that are supported for Dynamics 365 for Finance and Operations, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
+- For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
 
