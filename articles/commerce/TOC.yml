@@ -6,3 +6,8 @@
       href: deploy-ecommerce-site.md
     - name: Configure a domain name
       href: configure-your-domain-name.md
+  - name: Ratings and reviews
+    items:
+    - name: Configure ratings and reviews
+      href: configure-ratings-reviews.md
+      
