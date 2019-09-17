@@ -51,18 +51,17 @@ This article explains how to manage secrets when you are using an extension with
 
 To consume the secret in the extension we added the below request and response:
 
-| Request/Response                               | Parameters               | Description                                                                                                                                    |
-|------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| GetUserDefinedSecretStringValueServiceRequest  | string secretName        | Request class for getting user defined secrets from headquarters.                                                                              |
-| GetUserDefinedSecretStringValueServiceResponse | string SecretStringValue | Response class for getting user defined secrets from headquarters.                                                                             
-                                                                                                                                                   
-   The response will SecretStringValue and extensons can type cast it to X509Certificate2 type or use it as string value depends on the scenario.  |
+| Request/Response                               | Parameters               | Description                        |
+|------------------------------------------------|--------------------------|------------------------------------|
+| GetUserDefinedSecretStringValueServiceRequest  | string secretName        | Request class for getting user defined secrets from headquarters. |
+| GetUserDefinedSecretStringValueServiceResponse | string SecretStringValue | Response class for getting user defined secrets from headquarters. The response returns a **SecretStringValue** value and extensons can type cast it to **X509Certificate2** or use it as string value.  |
 
-Steps to read the secret in CRT extension:
+To read the secret in the CRT extension:
 
-1.  Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail SDK RetailSDK\\SampleExtensions\\CommerceRuntime)
-2.  In the CRT extension you can create new request/response or add pre/post trigger for the existing CRT request and call this.
-3.  For example, in the below sample we will add trigger for the SaveCartRequest and call the GetUserDefinedSecretStringValueServiceRequest to read the secret by passing the secret key configured in the HQ. You no need to write custom code to read the secret from HQ, use our request and response to read the value.
+1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail SDK (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
+2. In the CRT extension you can create a new request/response or add a pre/post trigger for the existing CRT request and then call it.
+
+In the following example, we added a trigger for **SaveCartRequest** and called **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key configured in Retail Headquarters. You do not need to write custom code to read the secret from Retail Headquarters, use the request and response to read the value.
 
 ```csharp
  public class CustomSaveCartTrigger : IRequestTrigger
