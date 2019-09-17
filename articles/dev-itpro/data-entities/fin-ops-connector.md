@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-The Dynamics 365 for Finance and Operations connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with an instance of Dynamics 365 for Finance and Operations. An external application can use the available trigger and actions to integrate with Finance and Operations.
+The application connector allows Microsoft Flow, PowerApps, Data Integrator, and Logic Apps to integrate with Finance and Operations. An external application can use the available trigger and actions to integrate with them.
 
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
@@ -41,19 +41,19 @@ We recommend that you read the following topics as a prerequisite to familiarize
 - [Recurring integrations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/fin-and-ops/toc.json) 
 
 ## Triggers
-Business events in Finance and Operations are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
+Business events are exposed using the trigger *When a business event occurs*. For detailed information about business events, refer to [Business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-flow) and [Business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/home-page).
 
 ## Actions
 
-This section describes the actions that are available in the Dynamics 365 for Finance and Operations connector.
+This section describes the actions that are available in the connector.
 
 **Get a record**
 
-This action can be used to fetch a record for a specific data entity from the target instance of Finance and Operations.
+This action can be used to fetch a record for a specific data entity from the target instance.
 
-*Instance* refers to the URL of the target instance of Dynamics 365 for Finance and Operations to which the connector must connect. The expected value is to enter the URL without the ‘https://’ prefix or choose one from the drop-down menu. This lists of all the Finance and Operations environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
+*Instance* refers to the URL of the target instance of the application to which the connector must connect. The expected value is to enter the URL without the ‘https://’ prefix or choose one from the drop-down menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
 
-*Entity name* refers to the data entity in Finance and Operations from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
+*Entity name* refers to the data entity from which the record must be fetched. The drop-down menu shows the list of data entities from the target environment.
 
 *Object ID* refers to the primary keys fields that must be specified to uniquely identify the record that must be fetched. The values must be specified as a comma-separated list of values in the order that is defined in the entity.
 
@@ -61,9 +61,9 @@ This action can be used to fetch a record for a specific data entity from the ta
 
 This action can be used to create data records for a data entity.
 
-*Instance* refers to the URL of the target instance of Dynamics 365 for Finance and Operations to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the Finance and Operations environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
 
-*Entity name* refers to the data entity in Finance and Operations in which the record must be created. The dropdown menu shows the list of data entities from the target environment.
+*Entity name* refers to the data entity in which the record must be created. The dropdown menu shows the list of data entities from the target environment.
 
 Based on the selected data entity, the list of fields displayed will be vary.
 
@@ -79,7 +79,7 @@ This action can be used to delete an existing data record for a data entity. The
 
 This action can be used to invoke methods on a data entity to perform a business action.
 
-*Instance* refers to the URL of the target instance of Dynamics 365 for Finance and Operations to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the Finance and Operations environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
 
 *Action* refers to the method on the data entity that must be executed in Finance and Operations. Based on the selected method, the list of fields displayed will be vary. These fields represent the parameters for the selected method.
 
@@ -87,4 +87,4 @@ This action can be used to invoke methods on a data entity to perform a business
 
 This action can be used to get the list of entities for further use in the app that is being developed.
 
-*Instance* refers to the URL of the target instance of Dynamics 365 for Finance and Operations to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the Finance and Operations environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
+*Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
