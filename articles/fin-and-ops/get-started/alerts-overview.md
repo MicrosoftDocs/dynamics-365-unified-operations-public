@@ -5,7 +5,7 @@ title: Alerts overview
 description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
 author: tjvass
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -82,3 +82,19 @@ An alert rule has five components:
 ## Email notifications from alerts
 
 Email notifications from alerts are not yet enabled. This will be enabled in a future update.
+
+## Videos
+
+### How to use alerts to monitor filtered data
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3DWZ3]
+
+The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### Alert rule options
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E4PV]
+
+The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+

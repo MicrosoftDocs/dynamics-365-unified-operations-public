@@ -4,7 +4,9 @@
   items:
   - name: What's new or changed
     href: get-started/whats-new.md
-  - name: Preview features in Dynamics 365 for Retail 10.0.5
+  - name: Preview features in Dynamics 365 for Retail 10.0.6
+    href: get-started/whats-new-10-0-6.md
+  - name: What's new or changed in Dynamics 365 for Retail 10.0.5
     href: get-started/whats-new-10-0-5.md
   - name: What's new or changed in Dynamics 365 for Retail 10.0.3
     href: get-started/whats-new-10-0-3.md
@@ -208,6 +210,8 @@
       href: pos-application-user-language-settings.md
     - name: Set up and manage images for MPOS
       href: set-up-manage-images-retail-mpos.md
+    - name: Client images in POS
+      href: pos-image.md
   - name: Info codes and info code groups
     href: info-codes-retail.md
   - name: POS improvements for serialized products
@@ -602,6 +606,8 @@
       href: dev-itpro/pos-handler.md
     - name: View POS extension package information
       href: dev-itpro/view-pos-extension-package-details.md
+    - name: Test recorder and Regression suite automation tool for Retail Cloud POS
+      href: dev-itpro/pos-rsat.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Integrate POS with a new hardware device
@@ -618,6 +624,8 @@
       href: dev-itpro/extend-metadata.md
     - name: Call the CRT service in offline mode
       href: dev-itpro/call-crt-service-offline.md
+    - name: Create new Retail Server extension
+      href: dev-itpro/retail-server-extension.md
   - name: Commerce Runtime (CRT) extensibility
     items:
     - name: CRT architecture and configuration

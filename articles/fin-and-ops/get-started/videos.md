@@ -52,6 +52,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Development
 
+- [How to resolve conflicts in Visual Studio](https://youtu.be/4rxO0zUN2zU)
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Setting up a development branch and build](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Setting up a development machine](https://www.youtube.com/watch?v=cqp9MetfiyM)
@@ -82,12 +83,8 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 - [Uptake a new platform release after Platform update 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Use telemetry to monitor key performance counters in Dynamics Lifecycle Services](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
 
-## Videos for Dynamics 365 Finance
 
-### Costs
-- [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
-- [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
-- [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
+## Videos for Dynamics 365 Finance
 
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
@@ -117,6 +114,11 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 
 ## Videos for Dynamics 365 Supply Chain Management
+
+### Costs
+- [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
+- [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
+- [Use Excel for cost analysis](https://youtu.be/-HKHYdClvx8)
 
 ### Help system
 
@@ -150,4 +152,5 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ## FastTrack Tech Talks
 
 [FastTrack Tech Talks](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) focus on providing technical depth and best practices that provide customers and partners with detailed knowledge that's specific to the subject areas.
+
 

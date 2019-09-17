@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Finance and Operations version 10.0.5 (October 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in October.
+title: What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/18/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,8 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# What's new or changed in Finance and Operations version 10.0.5 (October 2019)
+
+# What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
 
 [!include [banner](../includes/banner.md)]
 

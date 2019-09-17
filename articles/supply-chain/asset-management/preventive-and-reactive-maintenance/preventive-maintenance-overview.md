@@ -5,7 +5,7 @@ title: Preventive maintenance overview
 description: This topic explains preventive maintenance in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -40,7 +40,7 @@ This topic explains preventive maintenance in Asset Management. Preventive maint
 
 Maintenance plans are used for preventive and reactive maintenance on individual assets. Maintenance rounds are used for preventive maintenance on a group or a set of assets. Maintenance plans and maintenance rounds are used for generating work order proposals. The work order proposals are saved as maintenance schedule lines, which can be bundled and converted into work orders.
 
-The figure below provides an overview of the work flow from creating maintenance plans and maintenance rounds to creating work orders for assets, based on those maintenance plans and maintenance rounds.
+The following illustration provides an overview of the work flow from creating maintenance plans and maintenance rounds to creating work orders for assets, based on those maintenance plans and maintenance rounds.
 
 ![Figure 1](media/01-preventive-maintenance.png)
 
