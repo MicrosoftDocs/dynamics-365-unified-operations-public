@@ -48,7 +48,7 @@ The notification framework in POS runs periodically for the configured operation
 
 When CRT returns the response for notification it returns the number of notifications, messages and action parameters. The POS framework have built in logic to parse the response and get the POS operation id and call it when the user clicks the notification. Write custom logic inside the operation on what should happen when the POS user clicks the notification, additional parameter from CRT to POS can be sent using the action property, additional properties will be available inside the operation request in POS.
 
-**Ex:** To notify the POS user to prepare orders for pickup, inside CRT check is there any order for pickup if so update the notification response with relevant parameter. POS will parse the response and show the notification. When the POS user clicks the notification, POS will call the operation with the parameter from the notification (it’s up to the extension logic whether to send parameters or not) and inside the operation read all the pending orders for pickup and show it in the UI for the POS user to take further action.
+**Ex:** To notify the POS user to prepare orders for pickup, inside CRT check is there any order for pickup if so, update the notification response with relevant parameter. POS will parse the response and show the notification. When the POS user clicks the notification, POS will call the operation with the parameter from the notification (it’s up to the extension logic whether to send parameters or not) and inside the operation read all the pending orders for pickup and show it in the UI for the POS user to take further action.
 
 **Steps required to enable notification for custom operation:**
 
@@ -231,20 +231,20 @@ There is a sample available in Retail SDK on how to extend the notification serv
 
 9.  Next step is to create a new operation in POS with the same operation id used in the CRT extension in this case its “*5000*”. Use any operation id greater than 5000.
 
- When the user clicks the notification tile, the POS framework will call the operation handler for the operation id you used, inside the handler you can add required logic on what should happen when the user clicks the notification. Check this link for how to create a operation request, response and handler for POS: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/add-pos-operations>
+ When the user clicks the notification tile, the POS framework will call the operation handler for the operation id used, inside the handler add required logic on what should happen when the POS user clicks the notification. Check this link for how to create a POS  operation request, response and handler for POS: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/add-pos-operations>
 
- **Note:** The action property in the Notification detail entity will be sent to your POS operation request, use that action property if you want to pass any custom information from the notification service to POS.
+ **Note:** The action property in the Notification detail entity will be sent to the POS operation request, use that action property to pass any custom information from the notification service to POS.
 10.  Configure the notification scheduler by following the steps in the below link:
      <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/notifications-pos>
 
-**Validate your customization:**
+**Validate the customization:**
 
 <!-- -->
 
-1.  Launch the Cloud POS or Modern POS (where you have deployed your POS customization)
+1.  Launch the extended Cloud POS or Modern POS.
 
 2.  POS should trigger the notification service based on your notification scheduler configuration.
 
-3.  You can debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should hit whenever the notification service is called from POS.
+3.  Debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should hit whenever the notification service is called from POS.
 
-4.  When you receive the notification in POS, click the notification it should then call the POS operation handler and inside the handler you can write the required logic.
+4.  When the notification received in POS, click the notification it should then call the POS operation handler and execute the custom logic written inside the handler.
