@@ -5,7 +5,7 @@ title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integr
 description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -159,8 +159,7 @@ the execution time in Step 2.
 
 ## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
-The integration to Finance and Operations is a two-step process. First, verify
-that the Talent data is updated and available in Common Data Service. This can be verified in PowerApps by looking at the data within the data entities.
+The integration to Finance and Operations is a two-step process. First, verify that the Talent data is updated and available in Common Data Service. You can verify this in PowerApps by looking at the data within the data entities.
 
 ![Data in Common Data Service](media/DataInCDS.png)
 
