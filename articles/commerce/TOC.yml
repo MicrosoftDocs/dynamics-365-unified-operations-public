@@ -14,7 +14,16 @@
     items:
     - name: Configure ratings and reviews
       href: configure-ratings-reviews.md
-  - name: Recommendations
+  - name: Product recommendations
     items:
     - name: Product recommendations
       href: product-recommendations.md
+    - name: Enable omni-channel product recommendations
+      href: enable-product-recommendations.md
+    - name: Create curated product recommendation lists
+      href: create-editorial-recommendation-lists.md
+    - name: Manage AI-ML-based product recommendation results
+      href: modify-product-recommendation-results.md
+    - name: Product recommendations FAQ
+      href: faq-recommendations.md
+    
