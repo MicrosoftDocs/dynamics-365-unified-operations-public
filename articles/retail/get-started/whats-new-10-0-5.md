@@ -1,11 +1,12 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Retail version 10.0.5
-description: This topic describes features that are in preview in Dynamics 365 Retail. 
+
+title: What's new or changed in Dynamics 365 for Retail version 10.0.5
+description: This topic describes features that are in new or changed in Dynamics 365 for Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -31,12 +32,13 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # What's new or changed in Dynamics 365 for Retail version 10.0.5
 
-[!include [banner](../../includes/preview-banner.md)]
+
 [!include [banner](../../includes/banner.md)]
 
 This topic describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
 
-To learn about the features in Finance and Operations, see [Preview features in Finance and Operations version 10.0.5 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
+
+To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.5 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
 
 ## Test recorder and Regression suite automation tool for Retail Cloud POS
   
@@ -52,6 +54,8 @@ Test recorder is a new feature added in POS to significantly reduce the time and
 The Regression suite automation tool (RSAT) enables functional power users to execute the test case in Retail POS and update the test execution result back in Azure DevOps for reporting and investigation. RSAT provides options to investigate the test failures. RSAT decouples the test parameters from test steps and stores the parameters in Microsoft Excel files for easy editing of the test parameter values. The RSAT tool is now updated with a Retail POS tab to specify the Retail specific settings to play back Retail POS recordings and generate retail parameters and variable files.
 
 [![POS playback environement setting](.././media/Setting.png)](.././media/Setting.png)
+
+For more information on POS and RSAT, see [Test recorder and Regression suite automation tool for Retail Cloud POS](../dev-itpro/pos-rsat.md).
 
 ## Additional resources
 
