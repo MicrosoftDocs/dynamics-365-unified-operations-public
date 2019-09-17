@@ -64,54 +64,49 @@ To read the secret in the CRT extension:
 In the following example, we added a trigger for **SaveCartRequest** and called **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key configured in Retail Headquarters. You do not need to write custom code to read the secret from Retail Headquarters, use the request and response to read the value.
 
 ```csharp
- public class CustomSaveCartTrigger : IRequestTrigger
- {
- /// <summary>
- /// Gets the list of supported request types.
- /// </summary>
- public IEnumerable<Type> SupportedRequestTypes
- {
- get
- {
- return new[]
- {
- typeof(SaveCartRequest)
- };
- }
- }
+public class CustomSaveCartTrigger : IRequestTrigger
+{
+    /// <summary>
+    /// Gets the list of supported request types.
+    /// </summary>
+    public IEnumerable<Type> SupportedRequestTypes
+    {
+        get
+        {
+            return new[]{ typeof(SaveCartRequest) };
+        }
+    }
 
- /// <summary>
- /// Pre trigger code.
- /// </summary>
- /// <param name="request">The request.</param>
- public void OnExecuting(Request request)
- {
- ThrowIf.Null(request, "request");
- Type requestedType = request.GetType();
- if (requestedType == typeof(SaveCartRequest))
- {
- // Sample code to get the secret in string format.
- var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
- string response = request.RequestContext.Execute< GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
- // Sample code to get the secret in X509Certificate2 format.
- var request = new GetUserDefinedSecretStringValueServiceRequest ();
- X509Certificate2 response = request.RequestContext.Execute< GetUserDefinedSecretStringValueServiceRequest >(request).Certificate;
- // custom code to additional processing with secrets.
- }
- }
+     /// <summary>
+     /// Pre trigger code.
+     /// </summary>
+     /// <param name="request">The request.</param>
+     public void OnExecuting(Request request)
+     {
+         ThrowIf.Null(request, "request");
+         Type requestedType = request.GetType();
+         if (requestedType == typeof(SaveCartRequest))
+         {
+             // Sample code to get the secret in string format.
+             var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+             string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
+             // Sample code to get the secret in X509Certificate2 format.
+             var request = new GetUserDefinedSecretStringValueServiceRequest ();
+             X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+             // custom code to additional processing with secrets.
+         }
+     }
 
- /// <summary>
- /// Post trigger code.
- /// </summary>
+     /// <summary>
+     /// Post trigger code.
+     /// </summary>
 
- /// <param name="request">The request.</param>
- /// <param name="response">The response.</param>
+     /// <param name="request">The request.</param>
+     /// <param name="response">The response.</param>
 
- public void OnExecuted(Request request, Response response)
- {
- }
- }
-}
+     public void OnExecuted(Request request, Response response)
+     {
+     }
 
  }
  ```
@@ -123,7 +118,7 @@ In the following example, we added a trigger for **SaveCartRequest** and called 
     ```
 
 ## Credential rotation
-Credential management with this approach allows for more streamlined credential rotation. To update a secret, an IT admin only needs to update the secret in Key Vault, with no need to change the extension. Once a secret is updated, the new value gets used once the cache expires.
+Credential management with this approach allows for more streamlined credential rotation. To update a secret, an IT admin only needs to update the secret in Key Vault, with no need to change the extension. Once a secret is updated, the new value is used after the cache expires.
 
 ## Offline support
-Currently, offline support for credentials requires the extension code to handle failover to offline when Key Vault credential is not available/accessible.
+Offline support for credentials requires the extension code to handle failover to offline when Key Vault credential is not available or accessible.
