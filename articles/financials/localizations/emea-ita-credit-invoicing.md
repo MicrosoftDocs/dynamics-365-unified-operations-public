@@ -44,7 +44,7 @@ In **General ledger**, go to **Journal entries** \> **General journal** \> **Lin
 
 ![ita-credit-invoicing-gl](./media/ita-credit-invoicing-gl.png)
 
-In **Accounts receivable**, go to**Invoices** \> **All free text invoice**. On the Action Pane, on the **Invoice** tab, in the **Functions** group, click **Credit invoicing**.
+In **Accounts receivable**, go to **Invoices** \> **All free text invoice**. On the Action Pane, on the **Invoice** tab, in the **Functions** group, click **Credit invoicing**.
 
 ![ita-credit-invoicing-fti](./media/ita-credit-invoicing-fti.png)
 
