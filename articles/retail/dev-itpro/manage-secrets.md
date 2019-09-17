@@ -59,57 +59,54 @@ To consume the secret in the extension we added the below request and response:
 To read the secret in the CRT extension:
 
 1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail SDK (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
-2. In the CRT extension you can create a new request/response or add a pre/post trigger for the existing CRT request and then call it.
-
-In the following example, we added a trigger for **SaveCartRequest** and called **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key configured in Retail Headquarters. You do not need to write custom code to read the secret from Retail Headquarters, use the request and response to read the value.
-
-```csharp
-public class CustomSaveCartTrigger : IRequestTrigger
-{
-    /// <summary>
-    /// Gets the list of supported request types.
-    /// </summary>
-    public IEnumerable<Type> SupportedRequestTypes
+2. In the CRT extension you can create a new request/response or add a pre/post trigger for the existing CRT request and then call it. In the following example, we added a trigger for **SaveCartRequest** and called **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key configured in Retail Headquarters. You do not need to write custom code to read the secret from Retail Headquarters, use the request and response to read the value.
+    ```csharp
+    public class CustomSaveCartTrigger : IRequestTrigger
     {
-        get
+        /// <summary>
+        /// Gets the list of supported request types.
+        /// </summary>
+        public IEnumerable<Type> SupportedRequestTypes
         {
-            return new[]{ typeof(SaveCartRequest) };
+            get
+            {
+                return new[]{ typeof(SaveCartRequest) };
+            }
         }
-    }
 
-     /// <summary>
-     /// Pre trigger code.
-     /// </summary>
-     /// <param name="request">The request.</param>
-     public void OnExecuting(Request request)
-     {
-         ThrowIf.Null(request, "request");
-         Type requestedType = request.GetType();
-         if (requestedType == typeof(SaveCartRequest))
+         /// <summary>
+         /// Pre trigger code.
+         /// </summary>
+         /// <param name="request">The request.</param>
+         public void OnExecuting(Request request)
          {
-             // Sample code to get the secret in string format.
-             var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
-             string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
-             // Sample code to get the secret in X509Certificate2 format.
-             var request = new GetUserDefinedSecretStringValueServiceRequest ();
-             X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
-             // custom code to additional processing with secrets.
+             ThrowIf.Null(request, "request");
+             Type requestedType = request.GetType();
+             if (requestedType == typeof(SaveCartRequest))
+             {
+                 // Sample code to get the secret in string format.
+                 var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+                 string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
+                 // Sample code to get the secret in X509Certificate2 format.
+                 var request = new GetUserDefinedSecretStringValueServiceRequest ();
+                 X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+                 // custom code to additional processing with secrets.
+             }
          }
+
+         /// <summary>
+         /// Post trigger code.
+         /// </summary>
+
+         /// <param name="request">The request.</param>
+         /// <param name="response">The response.</param>
+
+         public void OnExecuted(Request request, Response response)
+         {
+         }
+
      }
-
-     /// <summary>
-     /// Post trigger code.
-     /// </summary>
-
-     /// <param name="request">The request.</param>
-     /// <param name="response">The response.</param>
-
-     public void OnExecuted(Request request, Response response)
-     {
-     }
-
- }
- ```
+     ```
 4. Build the CRT extension project.
 5. Copy the output class library and paste it in the …\\RetailServer\\webroot\\bin\\Ext for manual testing.
 6. Update the extension composition section in the CommerceRuntime.Ext.config file with the custom library information, like below:
