@@ -638,5 +638,3 @@
     items:
     - name: Loyalty extension
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-- name: Dynamics 365 Commerce (Preview)
-  href: ../commerce/toc.yml
