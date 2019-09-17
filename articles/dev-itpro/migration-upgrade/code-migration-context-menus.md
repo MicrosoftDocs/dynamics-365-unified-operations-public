@@ -89,7 +89,7 @@ Construct the list of submenus and menu options, and add it to the control’s c
 2.  Move the **switch()** statement for processing options into this override.
 
 ## Code example
-This section illustrates the migration of a context menu from Dynamics AX 2012 to Finance and Operations apps. The **MainAccount** form is used as an example.
+This section illustrates the migration of a context menu from Dynamics AX 2012 to Finance and Operations. The **MainAccount** form is used as an example.
 
 ### Original code
 
