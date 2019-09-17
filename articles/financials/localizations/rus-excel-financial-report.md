@@ -96,8 +96,8 @@ Before you complete this procedure, see [ER Design a configuration for generatin
         > [!NOTE]
         > If any of the information about the organization on your financial report isn't in scope **Financial reports model**, you can follow these steps:
         >
-        > 1. If the missed data is external to Microsoft Dynamics 365 for Finance and Operations, create format User input parameter.
-        > 2. Create a derived model that is based on the **Financial reports model**, and add new model elements. Then create a derived model mapping that is based on **Financial reports model mapping**, and bind new model elements to Finance and Operations data sources.
+        > 1. If the missed data is external to Dynamics 365 Finance, create format User input parameter.
+        > 2. Create a derived model that is based on the **Financial reports model**, and add new model elements. Then create a derived model mapping that is based on **Financial reports model mapping**, and bind new model elements to Finance data sources.
         >
         > For more information about how to create ER data models, see [ER Design domain specific data model](../../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json).
  
