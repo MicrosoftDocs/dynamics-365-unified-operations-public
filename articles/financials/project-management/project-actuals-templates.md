@@ -33,21 +33,21 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Dynamics 365 Project Service Automation to Dynamics 365 Finance.
 
-The template synchronizes transactions from Project Service Automation into a staging table in Finance and Operations. After synchronization is completed, you **must** import the data from the staging table into the integration journal.
+The template synchronizes transactions from Project Service Automation into a staging table in Finance. After synchronization is completed, you **must** import the data from the staging table into the integration journal.
 
 > [!NOTE]
-> - Project actuals integration is available in Microsoft Dynamics 365 for Finance and Operations version 8.0.1 or later.
+> - Project actuals integration is available starting in version 8.0.1 of our product.
 > - If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
 > - If you're using Finance and Operations 7.3.0, and you are bringing fee transactions over from Project Service Automation, you must install KB 4345320 in order to include those fees in the project invoice.
-> - If you're entering sales tax amounts on time or expense transactions in Project Service Automation, you must install Project Service Automation Update 7. Otherwise, the tax actuals won't be linked to the associated time or expense actuals, and they won't be synchronized to Finance and Operations. For more information, contact Support.
+> - If you're entering sales tax amounts on time or expense transactions in Project Service Automation, you must install Project Service Automation Update 7. Otherwise, the tax actuals won't be linked to the associated time or expense actuals, and they won't be synchronized to Finance. For more information, contact Support.
 
-## Data flow for Project Service Automation to Finance and Operations
+## Data flow for Project Service Automation to Finance
 
-The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance and Operations. The integration templates that are available with the Data integration feature enable the flow of data about project actuals from Project Service Automation to Finance and Operations.
+The Project Service Automation to Finance integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance. The integration templates that are available with the Data integration feature enable the flow of data about project actuals from Project Service Automation to Finance.
 
-The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
+The following illustration shows how the data is synchronized between Project Service Automation and Finance.
 
 [![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectActualsFlow.jpg)](./media/ProjectActualsFlow.jpg)
 
@@ -57,7 +57,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 To access the available templates, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize project actuals from Project Service Automation to Finance and Operations:
+The following template and underlying tasks are used to synchronize project actuals from Project Service Automation to Finance:
 
 - **Name of the template in Data integration:** Project actuals (PSA to Fin and Ops)
 - **Name of the tasks in the project:**
@@ -67,14 +67,14 @@ The following template and underlying tasks are used to synchronize project actu
 
 ### Entity set
 
-| Project Service Automation | Finance and Operations                                   |
+| Project Service Automation | Finance                                   |
 |----------------------------|----------------------------------------------------------|
 | Actuals                    | Integration entity for project actuals                   |
 | Transaction Connections    | Integration entity for project transaction relationships |
 
 ### Entity flow
 
-Project actuals are managed in Project Service Automation, and they are synchronized to the project integration journal in Finance and Operations. The accounting will be applied based on default financial dimensions and the posting setup.
+Project actuals are managed in Project Service Automation, and they are synchronized to the project integration journal in Finance. The accounting will be applied based on default financial dimensions and the posting setup.
 
 ### Prerequisites
 
@@ -84,11 +84,11 @@ Before synchronization of actuals can occur, you must configure the Project Serv
 
 In the project actuals template, you must use Microsoft Power Query for Excel to complete these tasks:
 
-- Transform the transaction type in Project Service Automation to the correct transaction type in Finance and Operations. This transformation is already defined in the Project actuals (PSA to Fin and Ops) template.
-- Transform the billing type in Project Service Automation to the correct billing type in Finance and Operations. This transformation is already defined in the Project actuals (PSA to Fin and Ops) template. The billing type is then mapped to the line property, based on the configuration on the **Project Service Automation integration parameters** page.
+- Transform the transaction type in Project Service Automation to the correct transaction type in Finance. This transformation is already defined in the Project actuals (PSA to Fin and Ops) template.
+- Transform the billing type in Project Service Automation to the correct billing type in Finance. This transformation is already defined in the Project actuals (PSA to Fin and Ops) template. The billing type is then mapped to the line property, based on the configuration on the **Project Service Automation integration parameters** page.
 - Filter to specific resource organizational units that must be synchronized with this template.
-- If intercompany time or intercompany expense actuals will be synchronized to Finance and Operations, you must transform the contract organizational unit to the correct legal entity in Finance and Operations. In the Project actuals (PSA to Fin and Ops) template, a conditional column is defined based on demo data. You must update the last inserted conditional column to the correct legal entities. Otherwise, either an integration error might occur, or incorrect actual transactions might be imported into Finance and Operations.
-- If intercompany time or intercompany expense actuals won't be synchronized to Finance and operations, you must delete the last inserted conditional column from your template. Otherwise, either an integration error might occur, or incorrect actual transactions might be imported into Finance and Operations.
+- If intercompany time or intercompany expense actuals will be synchronized to Finance, you must transform the contract organizational unit to the correct legal entity in Finance. In the Project actuals (PSA to Fin and Ops) template, a conditional column is defined based on demo data. You must update the last inserted conditional column to the correct legal entities. Otherwise, either an integration error might occur, or incorrect actual transactions might be imported into Finance.
+- If intercompany time or intercompany expense actuals won't be synchronized to Finance, you must delete the last inserted conditional column from your template. Otherwise, either an integration error might occur, or incorrect actual transactions might be imported into Finance.
 
 #### Contract organizational unit
 To update the inserted conditional column in the template, click the **Map** arrow to open the mapping. Select the **Advanced Query and Filtering** link to open Power Query.
@@ -98,7 +98,7 @@ To update the inserted conditional column in the template, click the **Map** arr
 
 ### Template mapping in Data integration
 
-The following illustrations show an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+The following illustrations show an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance.
 
 [![Template mapping](./media/ActualsMapping.jpg)](./media/ActualsMapping.jpg)
 
@@ -106,13 +106,13 @@ The following illustrations show an example of the template task mapping in Data
 
 ## Import from staging table after integration from Project Service Automation
 
-The Import from staging table periodic process must be run after the synchronization of actuals from Project Service Automation to Finance and Operations. This process will import the project transactions from the staging table into the Project Service Automation integration journal, where the accounting is applied and the imported transactions can be posted. We recommend that you run this process in batch mode and optionally can be set up to run as a recurring batch.
+The Import from staging table periodic process must be run after the synchronization of actuals from Project Service Automation to Finance. This process will import the project transactions from the staging table into the Project Service Automation integration journal, where the accounting is applied and the imported transactions can be posted. We recommend that you run this process in batch mode; it can optionally be set up to run as a recurring batch.
 
-## Update actuals from Finance and Operations
+## Update actuals from Finance
 
 ### Template and tasks
 
-The following template and underlying tasks are used to synchronize the voucher number and sales taxes for posted project transactions from Finance and Operations to Project Service Automation:
+The following template and underlying tasks are used to synchronize the voucher number and sales taxes for posted project transactions from Finance to Project Service Automation:
 
 - **Name of the template in Data integration:** Project actuals update (Fin Ops to PSA)
 - **Name of the tasks in the project:**
@@ -122,25 +122,25 @@ The following template and underlying tasks are used to synchronize the voucher 
 
 ### Entity set
 
-| Finance and Operations                                   | Project Service Automation |
+| Finance                                                  | Project Service Automation |
 |----------------------------------------------------------|----------------------------|
 | Integration entity for project actuals                   | Actuals                    |
 | Integration entity for project transaction relationships | Transaction Connections    |
 
 ### Entity flow
 
-Project actuals are managed in Project Service Automation, and they are synchronized to the project integration journal in Finance and Operations. After actuals are posted in Finance and Operations, they are updated in Project Service Automation with the voucher number from Finance and Operations. If sales taxes were added in Finance and Operations, new tax actuals are created in Project Service Automation.
+Project actuals are managed in Project Service Automation, and they are synchronized to the project integration journal in Finance. After actuals are posted in Finance, they are updated in Project Service Automation with the voucher number from Finance. If sales taxes were added in Finance, new tax actuals are created in Project Service Automation.
 
 ### Power Query
 
 In the project actuals update template, you must use Power Query to complete these tasks:
 
-- Transform the transaction type in Finance and Operations to the correct transaction type in Project Service Automation. This transformation is already defined in the Project actuals update (Fin Ops to PSA) template.
-- Transform the billing type in Finance and Operations to the correct billing type in Project Service Automation. This transformation is already defined in the Project actuals update (Fin Ops to PSA) template.
+- Transform the transaction type in Finance to the correct transaction type in Project Service Automation. This transformation is already defined in the Project actuals update (Fin Ops to PSA) template.
+- Transform the billing type in Finance to the correct billing type in Project Service Automation. This transformation is already defined in the Project actuals update (Fin Ops to PSA) template.
 
 ### Template mapping in Data integration
 
-The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Finance and Operations to Project Service Automation.
+The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Finance to Project Service Automation.
 
 [![Template mapping](./media/ActualsUpdateMapping.jpg)](./media/ActualsUpdateMapping.jpg)
 
