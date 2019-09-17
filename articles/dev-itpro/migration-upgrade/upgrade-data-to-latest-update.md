@@ -40,7 +40,7 @@ The topic provides instructions for upgrading your Finance and Operations databa
 In Tier 2 or higher environments, including Production, you will run through the self-service upgrade steps as outlined in [Self-service upgrade to the latest version](self-service-upgrade.md).
 
 > [!IMPORTANT]
-> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Microsoft Dynamics 365 for Finance and Operations 8.0.
+> - You do **not** have to upgrade your database if you're updating to the latest **platform** of Finance and Operations. Platform updates are backward-compatible. This topic applies only to the process of upgrading between releases of Finance and Operations applications, such as an upgrade from Microsoft Dynamics 365 for Operations version 1611 (November 2016) to Finance and Operations 8.0.
 > - This process doesn't apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 > - All upgraded custom code has to be applied on the environment before running the data upgrade process.
 > - If you are on version 8.0 or later, there is no longer a data upgrade between application versions.
