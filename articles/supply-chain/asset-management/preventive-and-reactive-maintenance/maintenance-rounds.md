@@ -5,7 +5,7 @@ title: Maintenance rounds
 description: This topic explains maintenance rounds in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,18 +25,16 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Maintenance rounds
 
-
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 In **Asset Management**, you can create maintenance rounds for various assets, on which you need to carry out a similar task at regular intervals. For example, lubrication jobs or safety inspection jobs that need to be carried out on a number of machines within the same intervals. First step is to create a maintenance round, including assets that require the same form of maintenance job. Next, you schedule the maintenance rounds. When you have completed the maintenance rounds schedule, you can see all the job records relating to the round in the **All maintenance schedule** and **Open maintenance schedule lines**.
 
@@ -88,12 +86,14 @@ In **Asset Management**, you can create maintenance rounds for various assets, o
 >[!NOTE]
 >The **Assets** and **Lines** fields located in the **Details** group on the **Header** FastTab show the total number of assets and lines related to the selected maintenance round.
 
+The illustration below shows and example of a maintenance round containing three assets.
+
 ![Figure 1](media/13-preventive-maintenance.png)
 
 
 ## Schedule maintenance rounds
 
-When you have set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
+When you've set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
 
 1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select maintenance schedule line in the list > **Maintenance rounds** button.
 
@@ -111,6 +111,8 @@ When you have set up a maintenance round, you run a schedule job to schedule all
 6. Click **OK**.
 
 7. You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
+
+The two illustrations below show a schedule job in the **Schedule maintenance rounds** dialog, and the maintenance schedule lines created in **All maintenance schedule** based on that schedule job.
 
 ![Figure 2](media/14-preventive-maintenance.png)
 

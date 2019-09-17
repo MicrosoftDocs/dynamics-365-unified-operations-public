@@ -5,7 +5,7 @@ title: Prepare Finance and Operations for integration with MTD for VAT (United K
 description: This topic walks you through the process of setting up Dynamics 365 Finance and Operations for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview-banner](../includes/preview-banner.md)]
+
 
 This topic walks you through the process of setting up Dynamics 365 Finance for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom (UK).
 

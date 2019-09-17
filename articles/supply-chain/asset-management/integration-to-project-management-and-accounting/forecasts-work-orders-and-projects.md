@@ -5,7 +5,7 @@ title: Forecasts, work orders, and projects
 description: This topic explains forecasts and work order integration with the Project management and accounting module in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -65,7 +65,7 @@ Example: In the figure below, the setup of asset type "Truck Engine" means that 
 
 ![Figure 1](media/01-integration-to-pma.png)
 
-The purpose of the project ID on the work order job, and the related activity number (**Asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order job, and the asset selected on the work order job, in the **Project management and accounting** module. 
+The purpose of the project ID on the work order job, and the related activity number (**Asset management** > **Common** > **Work orders** > **All Work orders** > select work order in list > **Line details** FastTab > **Project ID** field and **Activity number** field), is to track costs related to the work order job, and the asset selected on the work order job, in the **Project management and accounting** module. Read more about cost control in Asset Management in [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
 In the figure below, you see a graphic overview of work order projects and related project activities.
 
