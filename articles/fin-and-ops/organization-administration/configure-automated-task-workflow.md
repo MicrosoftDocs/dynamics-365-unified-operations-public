@@ -109,7 +109,7 @@ You can send notifications to people when an automated task has been run or canc
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>
