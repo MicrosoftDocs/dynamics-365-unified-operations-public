@@ -1,6 +1,124 @@
-- name: Welcome to Dynamics 365 Supply Chain Management
-  href: index.md
+- name: Dynamics 365 Supply Chain Management
+  items:
+  - name: Dynamics 365 Supply Chain Management documentation
+    href: index.md
   - name: Get started
     items:
-    - name: What's new or changed
-      href: whats-new.md
+    - name: Before you buy guidance
+      href: ../get-started/before-you-buy.md
+    - name: Sign up for preview subscription
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
+    - name: Deploy a demo environment
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
+  - name: Cost accounting
+    items:
+      - name: Cost accounting home page
+        href: ../financials/cost-accounting/cost-accounting-home-page.md
+      - name: Cost accounting terminology
+        href: ../financials/cost-accounting/terms-cost-accounting.md
+      - name: Fiscal calendars, fiscal years, and periods
+        href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+      - name: Financial dimensions
+        href: ../financials/general-ledger/financial-dimensions.md
+      - name: Financial dimensions and posting
+        href: ../financials/general-ledger/Default-dimensions.md
+      - name: Add financial dimensions to the CFO workspace
+        href: ../financials/general-ledger/CFO-workspace.md
+      - name: Create account structures
+        href: ../financials/general-ledger/tasks/create-account-structures.md
+      - name: Budgeting overview
+        href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+      - name: Create dimensions and import dimension members
+        href: ../financials/cost-accounting/cost-dimension.md
+      - name: Cost element dimensions
+        href: ../financials/cost-accounting/cost-elements.md
+      - name: Create cost elements
+        href: ../financials/cost-accounting/tasks/create-cost-elements.md
+      - name: Cost object dimensions
+        href: ../financials/cost-accounting/cost-objects.md
+      - name: Create cost objects
+        href: ../financials/cost-accounting/tasks/create-cost-objects.md
+      - name: Map cost element dimension members to a common set of dimension members
+        href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
+      - name: Map a cost element dimension
+        href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
+      - name: Dimension hierarchy
+        href: ../financials/cost-accounting/dimension-hierarchy.md
+      - name: Create an organization report hierarchy
+        href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
+      - name: Access rights of a cost object controller
+        href: ../financials/cost-accounting/access-rights-cost-object-controller.md
+      - name: Configure access rights for a cost object controller
+        href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+      - name: Define cost control units
+        href: ../financials/cost-accounting/tasks/define-cost-control-units.md
+      - name: Create a cost accounting ledger
+        href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
+      - name: Statistical dimension members and statistical measure provider templates
+        href: ../financials/cost-accounting/statistical-measure-provider-template.md
+      - name: Allocation bases
+        href: ../financials/cost-accounting/allocation-bases.md
+      - name: Create and assign a cost allocation policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+      - name: Create and assign a cost behavior policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+      - name: Create and assign a cost distribution policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+      - name: Create a cost rollup policy
+        href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
+      - name: Manage data source for the cost accounting ledger
+        href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+      - name: Process and trace source data
+        href: ../financials/cost-accounting/tasks/process-trace-source-data.md
+      - name: Overhead calculation
+        href: ../financials/cost-accounting/overhead-calculation.md
+      - name: Cost rollup policy and overhead calculation
+        href: ../financials/cost-accounting/cost-rollup.md
+      - name: Configure cost control workspace
+        href: ../financials/cost-accounting/cost-control-workspace.md
+      - name: Configure cost control workspace parameters
+        href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+      - name: Understand access list security and RLS in Microsoft Power BI
+        href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+      - name: Use content pack for Microsoft Power BI reporting
+        href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+      - name: Use cost control workspace for Finance and Operations mobile application
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+  - name: Cost management
+    items:
+  - name: Globalization
+    items:
+  - name: Inventory management
+    items:
+  - name: Master planning
+    items:
+  - name: Mobile app
+    items:
+  - name: Office integration
+    items:
+  - name: Organization administration
+    items:
+  - name: Procurement and sourcing
+    items:
+  - name: Product information management
+    items:
+  - name: Production control
+    items:
+  - name: Sales and marketing
+    items:
+  - name: Service management
+    items:
+  - name: Transportation management
+    items:
+  - name: Vendor collaboration
+    items:
+  - name: Warehouse management
+    items:
+  - name: Supply Chain Management development 
+    items:
+    - name: Gantt control development guide
+      href: ../dev-itpro/user-interface/gantt-development-guide.md
+    - name: Create a new transportation management engine
+      href: ../transportation/create-new-transportation-management-engine.md
+- name: Finance and Operations development and administration 
+  href: ../dev-itpro/toc.yml
