@@ -45,7 +45,7 @@ This topic explains how to enable, set up and use miscellaneous charges per kilo
 
 ## Set up miscellaneous charges per kilogram
 
-A new field **Cost charges per kg** is added in released products Master Data in **Foreign trade** FastTab and **Intrastat** section.
+In released products Master Data in **Foreign trade** FastTab, **Intrastat** section, in the field **Cost charges per kg** define charge amount per kilorgam.
 
 *...replace the picture when a proper label is ready*
 
@@ -58,11 +58,11 @@ A new field **Cost charges per kg** is added in released products Master Data in
 
 When transferring transactions to Intrastat declaration (for more information, see [Transfer transactions to the Intrastat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/transfer-transactions-intrastat)), **Statistical charges amount** will be calculated using the formula:
 
-*Charges amount = Cost of each kilogram * Gross weight (in kilograms)*
+>*Charges amount = Cost of each kilogram * Gross weight (in kilograms)*
 
 If **Chagres percentage** is also defined then both types of miscellaneous charges will be used in the calculation:
 
-*Charges amount = (Invoice amount * Charges percentage) + Cost of each kilogram * Gross weight*
+>*Charges amount = (Invoice amount * Charges percentage) + Cost of each kilogram * Gross weight*
 
 *...replace the picture when a proper label is ready*
 ![Charges amount](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
