@@ -32,11 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-In general, Microsoft invests significant resources to extend the business process functionality of Microsoft Dynamics applications by developing features and functionality that address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
+In general, Microsoft invests significant resources to extend business process functionality by developing features and functionality that address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Dynamics 365 Finance generally available.
 
-Microsoft Dynamics AX and Microsoft Dynamics 365 for Finance and Operations help organizations run their business operations and also manage their obligations to comply with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Mexico.
+Dynamics 365 Finance helps organizations run their business operations and also manage their obligations to comply with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Mexico.
 
-However, Microsoft Dynamics AX and Finance and Operations don't address all laws, regulations, or commercial requirements in Mexico, because laws and regulations vary in the way that they affect organizations. For example, regulatory features that Microsoft creates and makes generally available "out of the box" for Microsoft Dynamics AX and Finance and Operations in Mexico don't typically include functionality that supports the following, except as specifically noted in this topic:
+However, Finance doesn't address all laws, regulations, or commercial requirements in Mexico, because laws and regulations vary in the way that they affect organizations. For example, regulatory features that Microsoft creates and makes generally available "out of the box" for Finance in Mexico don't typically include functionality that supports the following, except as specifically noted in this topic:
 
 - National Standards
 - Payroll
@@ -46,14 +46,14 @@ However, Microsoft Dynamics AX and Finance and Operations don't address all laws
 
 Additional details are available in the [Localization Availability Guide](https://aka.ms/ax-availabilityguide).
 
-Channel partners are an important part of our global strategy for delivering Microsoft Dynamics AX and Finance and Operations to help customers meet requirements for Mexico. By taking advantage of the extensible nature of the development architecture of Microsoft Dynamics AX and Finance and Operations, channel partners can address a customer's specific business needs during implementation through either of the following approaches:
+Channel partners are an important part of our global strategy for helping customers meet requirements for Mexico. By taking advantage of the extensible nature of the development architecture of Finance, channel partners can address a customer's specific business needs during implementation through either of the following approaches:
 
 - Configuration of the software (when available)
 - Partner-created customizations or localizations (when required)
 
 Although channel partners might provide solutions that meet specific regulatory requirements that are unique to municipalities, cities, states, or other regions in Mexico, Microsoft doesn't provide any guarantees or warranties (expressed, implied, statutory, or otherwise) that partner-created solutions comply with local business, tax and regulatory, legal, or other applicable requirements.
 
-Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations that they create or implement on behalf of customers, and also for any updates to such solutions. They are also solely responsible for any support or other service that is provided to customers for these solutions. You must contact your channel partner for information about the solutions that the channel partner creates for licensed versions of Microsoft Dynamics AX or Finance and Operations.
+Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations that they create or implement on behalf of customers, and also for any updates to such solutions. They are also solely responsible for any support or other service that is provided to customers for these solutions. You must contact your channel partner for information about the solutions that the channel partner creates for licensed versions of Finance.
 
 This topic describes the strategy and scope of specific requirements that Microsoft has implemented as part of the Microsoft Dynamics AX and Finance and Operations software that it made generally commercially available in Mexico.
 
@@ -87,29 +87,29 @@ This topic describes the strategy and scope of specific requirements that Micros
 
 ## Mexican localization strategy
 
-In general, the Microsoft strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Mexico consists of providing localizations for Microsoft Dynamics AX and Finance and Operations that do the following:
+In general, the Microsoft strategy for addressing the tax, financial, accounting, or statutory reporting requirements for Mexico consists of providing localizations that do the following:
 
 - Implement the federal tax requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section later in this topic.
 - Deliver specific new regulatory features through configurations or through the development of new functionality that implements the federal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section, in accordance with the information that is specified in this topic.
-- Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Microsoft Dynamics AX or Finance and Operations.
+- Deliver specific new regulatory features in the most recent service pack that is available, or in a new service pack, for supported versions of Finance.
 - Apply National Standards and competitive features in the localization, as Microsoft, at its sole discretion, determines them to be necessary or appropriate, based on business needs in the region.
 - Don't focus on the requirements of specific businesses, segments, verticals, regions, or large enterprises, even when these requirements are required by laws, statutes, or regulations at the federal, state, or city levels.
 - Exclude municipal requirements, except for the municipal requirements that are detailed in the [Mexican localization scope](#mexican-localization-scope) section.
 
-There are specific laws and requirements that are out of scope for Microsoft Dynamics AX and Finance and Operations. These laws and requirements are listed in the [Out of scope](#out-of-scope) section later in this topic.
+There are specific laws and requirements that are out of scope for Finance. These laws and requirements are listed in the [Out of scope](#out-of-scope) section later in this topic.
 
-The Mexican localizations that Microsoft develops for Microsoft Dynamics AX and Finance and Operations are limited to the features and functionality that are described in this topic. Therefore, Microsoft Dynamics AX and Finance and Operations must be analyzed by prospective customers or by a tax professional (such as an accounting and tax auditor, tax law firm, or tax consulting firm) who can perform an assessment to determine whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
+The Mexican localizations that Microsoft develops are limited to the features and functionality that are described in this topic. Therefore, Finance must be analyzed by prospective customers or by a tax professional (such as an accounting and tax auditor, tax law firm, or tax consulting firm) who can perform an assessment to determine whether the functionality is appropriate to meet the customer's business needs, or whether custom solutions are required.
 
 ## Mexican localization scope
-The user interface and online Help for Microsoft Dynamics AX and Finance and Operations are translated into Mexican Spanish. Additional documentation, such as white papers and training materials, might be available in English only and might not be available when the software is first made generally available in Mexico.
+The user interface and online Help are translated into Mexican Spanish. Additional documentation, such as white papers and training materials, might be available in English only and might not be available when the software is first made generally available in Mexico.
 
-The localization scope for the version of Microsoft Dynamics AX and Finance and Operations that is available in Mexico is limited to tax calculation, accounting transactions, and issuing and receiving invoices in the following scenarios: 
+The localization scope for the version of Finance that is available in Mexico is limited to tax calculation, accounting transactions, and issuing and receiving invoices in the following scenarios: 
 
 - Procure to pay
 - Quote to cash
 - Regulatory/statutory reporting
 
-For a list of the specific features that Microsoft delivers and supports as part of the Mexican localizations for Microsoft Dynamics AX and Finance and Operations, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Microsoft Dynamics AX, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
+For a list of the specific features that Microsoft delivers and supports, see the [Supported features](#supported-features) section later in this document. You can find details about each feature in Help within Finance, in online Help, and in white papers that are published on the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/gfmlocalizationportalmc.htm?printpage=false&sid=xdtafwuk1xh2l5jdjhhv0joy&stext=gfm%20localization%20portal).
 
 ## Market availability
 Microsoft aims to deliver regulatory features in a manner that provides enough time for installation. In the case of tax and regulatory updates that contain changes that are required in order to implement tax, accounting, financial, or regulatory/statutory reporting requirements that commonly affect a majority of businesses in Mexico, our goal is to release the updates before the effective date or other date that is mandated by the applicable government authority, whether at the federal or state level as identified in the [Mexican localization strategy](#mexican-localization-strategy) section, so that our channel partners have enough time to update their customer solutions. Internally, we call this date the *market required date* (MRD).
@@ -127,17 +127,17 @@ Any dates that Microsoft publishes are for planning purposes only and are subjec
 Microsoft makes no representations, warranties, or guarantees about the timeliness or completeness of any tax or regulatory update that it provides, and, to the maximum extent that is permitted under applicable law, disclaims all implied warranties and conditions, such as implied warranties or conditions of merchantability and fitness for a particular purpose.
 
 ## Supported features
-The following table lists the specific features that Microsoft delivers and supports as part of the Mexican localizations for Microsoft Dynamics AX and Finance and Operations.
+The following table lists the specific features that Microsoft delivers and supports as part of the Mexican localizations for past and present versions of our product.
 
 <table>
 <thead>
 <tr>
 <th>Area</th>
 <th>Item</th>
-<th>AX 2009</th>
-<th>AX 2012 RTM-R2</th>
-<th>AX 2012 R3</th>
-<th>Finance and Operations</th>
+<th>Dynamics AX 2009</th>
+<th>Dynamics AX 2012 RTM-R2</th>
+<th>Dynamics AX 2012 R3</th>
+<th>Finance</th>
 </tr>
 </thead>
 <tbody>
@@ -539,10 +539,10 @@ The following table lists the specific features that Microsoft delivers and supp
 </table>
 
 ## Out of scope
-Some capabilities of Microsoft Dynamics AX and Finance and Operations that are generally available in other countries or regions might not be available in the Microsoft Dynamics AX and Finance and Operations Mexican localizations. The following items are out of scope or are otherwise not permitted for Mexico.
+Some capabilities that are generally available in other countries or regions might not be available in the Mexican localizations of our product. The following items are out of scope or are otherwise not permitted for Mexico.
 
 ### Requirements
-The following specific requirements are out of scope for the Microsoft Dynamics AX and Finance and Operations Mexican localizations:
+The following specific requirements are out of scope for Mexican localizations:
 
 - Foreign trade (incoming).
 - Impuesto Empressarial a Tasa Única (IETU) tax declaration.
@@ -558,7 +558,7 @@ The following specific requirements are out of scope for the Microsoft Dynamics 
 - Requirements from regulatory agencies or autarchies other than SAT.
 
 ### Modules
-The following modules are out of scope for the Microsoft Dynamics AX and Finance and Operations Mexican localizations:
+The following modules are out of scope for Mexican localizations:
 
 - Budgeting
 - Cost accounting
@@ -574,7 +574,7 @@ The following modules are out of scope for the Microsoft Dynamics AX and Finance
 - Enterprise Portal for Microsoft Dynamics AX
 
 ### Features and functionality
-The following features and functionality are out of scope for the Microsoft Dynamics AX and Finance and Operations Mexican localizations:
+The following features and functionality are out of scope for Mexican localizations:
 
 - Cash flow
 - Collection management
@@ -590,13 +590,13 @@ The following features and functionality are out of scope for the Microsoft Dyna
 - Vendor self-service portal
 
 ### Industries
-- **In general:** The following industry is out of scope for the Microsoft Dynamics AX and Finance and Operations Mexican localizations:
+- **In general:** The following industry is out of scope for Mexican localizations:
 
     - Public Sector
 
 - **Retail industry:**
 
-    - **Retail services:** The following online services are out of scope for the retail industry for the Microsoft Dynamics AX and Finance and Operations Mexican localizations:
+    - **Retail services:** The following online services are out of scope for the retail industry for Mexican localizations:
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP
