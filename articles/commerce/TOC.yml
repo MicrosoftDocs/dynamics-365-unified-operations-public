@@ -14,4 +14,7 @@
     items:
     - name: Configure ratings and reviews
       href: configure-ratings-reviews.md
-      
+  - name: Recommendations
+    items:
+    - name: Product recommendations
+      href: product-recommendations.md
