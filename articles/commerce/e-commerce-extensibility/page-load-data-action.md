@@ -114,7 +114,7 @@ The following example shows a module that uses the data action earlier in this t
 }
 ```
 
-Here, the **module.dataActions** property indicates the data actions that should be run when a module is loaded on a page. The name of every key in the data actions object refers to the name of the property that the result will be assigned to in the module's data properties (in this case, the **this.props.data.product** property). Additionally, the **path** property of every data action points to a file that has as its default export the data action that should be run.
+Here, the **module.dataActions** property indicates the data actions that should be run when a module is loaded on a page. The name of every key in the data actions object refers to the name of the property that the result will be assigned to in the module's data properties (in this case, the **this.props.data.product** property). Additionally, the **path** property of every data action points to a file that exports the data action that should be run. Generally the data action is the default export of the file it was written in.
 
 Notice that the **productId** configuration property defines what is used as input for the data action. Page authors can use this configuration property to specify a product ID as input for the module when the page is built. This configuration property is also required by the example of the **createInput** method earlier in this topic. When the module is configured on a page, the **productId** value that is specified in the module's configuration is loaded on that page.
 
