@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Invoicing of packing slips
 
+[!include [banner](../includes/banner.md)]
 
 In Italy, companies often need to issue so-called accompanying invoices which combine an ordinary invoice with DDT (transposrt document or packing slip).
 This topic explains how to set up and print accompanying invoices which also contain all the rquired packing slips details.
@@ -43,6 +44,7 @@ This topic explains how to set up and print accompanying invoices which also con
 No specific setup required. Once enabled with **Invoicing of packing slips** feature, the layout of invoice report will be changed from a standard to the layout that contains packing slips details.
 
 The example of an invoice printout with packing slips details:
+*...replace the picture below...*
 ![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
 
 > [!NOTE]
