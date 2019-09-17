@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 migration - Create templates 
-description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations apps, like Finance and Supply Chain Management.
+description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 09/12/2018
