@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
+title: What's new or changed in Finance and Operations version 10.0.5 (October 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -21,90 +21,86 @@ ms.reviewer: tfehr
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
-ms.assetid:
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: Platform update 29
+ms.search.validFrom:  
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+# What's new or changed in Finance and Operations version 10.0.5 (October 2019)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
-
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
-## Feature management
-The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. In Platform update 29, additional features have been added, including:
-- Enable all features that are not enabled.
-- Automatically enable all features after an update.
-- Do not allow a feature to be enabled based on a condition, such as an existing config key is turned on.
-- Add a button called **Check for updates** that manually searches for new features and adds them to the list of features.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
-For more information, see [Feature management overview](feature-management/feature-management-overview.md).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
 
-## Data management job history clean up
-[Job history clean-up functionality](../../dev-itpro/data-entities/data-import-export-job.md#job-history-clean-up-available-in-platform-update-29-and-later) in Data management must be used to schedule a periodic cleanup of the execution history. This functionality replaces the existing staging table clean-up functionality, which is now deprecated.
+## Revenue recognition
 
-## Business events catalog security
-[Role-based security](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) can be now applied to individual business events in the business event catalog. When this security is enabled and configured, users will be able to only view and subscribe to business events to which their roles have access. This security also applies to integration scenarios, such as Microsoft Flow.
+Revenue recognition allows you to define revenue prices and revenue schedules for multi-element sales of hardware, software, support, and subscriptions to fulfill US Generally Accepted Accounting Principles (GAAP) and International Financial Reporting Standards (IFRS) requirements.
 
-## Attachment recovery
-An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
+- **Revenue prices** - Revenue prices can be defined on released products and then used to determine the price at which to recognize revenue. The revenue price can differ from the sale price that is offered to the customer.
 
-## Session idle timeout
-The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the user interface and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that may cause an extra load on the system. For more information, see [Set the session idle timeout](../../dev-itpro/sysadmin/session-idle-timeout.md).
+- **Revenue schedules**- Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across the month, or based on a set number of occurrences.
 
-## Visual refresh of the web client to align with the Fluent design language
-As part of the Dynamics 365 app-wide effort, we are incrementally working toward a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. For more information, see the [Visual refresh of the web client to align with the Fluent design language](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) topic in the Release Plans.
+- **Multiple sales order reallocation** - Reallocation allows the revenue price to be recalculated after a new sales order line is added to an invoiced sales order or to a new sales order. The new line will be reallocated if the additional item should be have been included in the original contractual agreement.
 
-As part of this change, the workspace tiles on the dashboard now have a new visual style. See [Creating icons for workspace tiles](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.
+- **Workspace** - The new workspace is used to review the status of the revenues schedule records created for deferred revenue.
 
-##  Saved views (Preview)
-Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) topic. Note that this preview feature will continue to evolve and change until it becomes generally available. 
+## Cancel bank reconciliation
 
-## New grid control (Preview) 
-The [new grid control](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/user-productivity-new-grid) is now available in preview. This new grid serves as a replacement for the existing grid control and features faster rendering, smoother scrolling, easier navigation in the grid, and drag-and-drop column reordering. The new grid also allows for grand totals at the bottom of numeric columns in tabular grids in a footer that can be enabled using the right-click context menu from column headers. Once enabled, all tabular and list grids will automatically switch to use the new grid, unless the page has a grid with a non-react extensible control, in which case the existing grid control will be used on that page. Note that this preview feature will continue to evolve and change until it becomes generally available.
+Users will be able to cancel bank reconciliations in chronological order of reconciliation starting with the most recent. History is tracked to show when and by whom the reconciliation was reversed. This will prevent users from having to manually adjust journals to correct any errors that occurred during the periodic process.
 
-To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.  
+## Create checks with a blank status on the Checks page
 
-## Workflow work item notifications in the action center 
-Users can now opt-in to receive notifications in the Action Center by going to **Settings** > **User options** > **Workflow** > **Notifications** > **Send notifications to Action Center**. When enabled, the user will receive a notification for each new work item that is assigned to them.
+The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. When this feature is enabled, you cannot create checks with a blank status during the payment process, which results in wasted check stock.
 
-## Workflows can now support reset
-Workflows can now support reset from the Workflow History form by optionally implementing the **WorkflowIRecallUnrecoverable** interface. The vendor invoice workflow has used this interface to allow unrecoverable vendor invoice workflows to be recalled and placed in a canceled state.
+## Reset workflow status for vendor invoices
 
-## Workflow deletion will confirm business event subscription deletions
-When business event subscriptions associated with the workflow are found, a confirmation dialog box will provide a list of any related business event subscriptions so that the user is fully aware of the effects of deleting the workflow.
+You can use the Workflow history page to reset the workflow status to Draft. This page can be opened from the **Vendor invoice** page or by going to **Common > Inquires > Workflow**. To reset the workflow status to Draft, select **Recall**. You can also reset the workflow status to Draft by selecting the **Recall** action on either the **Vendor invoice** or **Pending vendor invoices** page. After the workflow status is reset to Draft, it becomes available for editing on the **Vendor invoice** page.
 
-## Improved payloads for workflow business events
-Standard workflow context has been added to the payloads for all Workflow Business Events including owner, originator, and last note.
+## Dual currency consolidation
 
-## Flow templates for workflow work item
-Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see [Workflow Business Events](../../dev-itpro/business-events/business-events-workflow.md).
+This feature helps you control the currency (either the accounting or reporting currency) that is used as the transaction currency in the consolidation company. You can also automatically copy amounts from the source company to the consolidation company, if the currencies are the same.
 
-## Extensibility enhancements
-The following enhanced extensibility capabilities have been added in Platform update 29:
+- **Add the “Select consolidation amount from” control on the consolidate online form** - When this feature is enabled, the user can choose whether the accounting currency or the reporting currency from the source company will be used as the transaction currency in the consolidation company.
 
-- Enable extension of WorkflowApproval properties, WorkflowTask properties, and addition of WorkflowOutcomes into a WorkflowTask (Ref# 198831).
-- Enable event triggering for fields on forms that come from table field groups (Ref# 247364).
-- Enable the use of the FormObservable attribute in class declarations (Ref# 198797).
-- Add model name to extension default naming to reduce conflicts (Ref# 300468).
-- Enable use of extension table fields in form datasources and security privileges (Ref# 315634).
-- Custom privilege for a standard form control should consider needed permission property value set on extension form (Ref# 313650).
-- Allow table display methods added via extension to be used as lookup methods (Ref# 243486).
-- Enable display methods to be added to Form Datasources via extension (Ref# 256004).
+- **Directly copy amounts from the source company to the consolidation company if the currencies are the same** - When the feature is enabled, the accounting or reporting currency amounts from the source company will be copied directly to the accounting or reporting currency amounts in the consolidation company if either of the currencies are the same. The accounting and reporting currency amounts in the consolidation company are calculated using the exchange rate if neither of the currencies is the same.
 
-## CodeLens for method references in the X++ editor
-The X++ source code editor now takes advantage of the CodeLens functionality of Visual Studio. The number of references to an X++ method is shown in CodeLens right above the method declaration line. You can click on the reference count to find all references to the method. 
+## Gender in currency declension for Eastern Europe 
+
+You can now define the currency gender. On **Currencies** page, select **Declension**. In the **Gender** field, select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of the amount written in text in local language on a Cash order. For example, if the amount of 1,01 EUR is written in English text as *One euro 01 cent* on a cash order, when you set up **Gender** for EUR currency as **Neuter**, this amount will be translated to Czech language and written on a cash order as *Edno euro 01 cent*.
+
+For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms).
+
+## Cash control (Public Sector)
+
+Cash control lets you define a limit (threshold) to prevent transactions from being posted if no cash balance is available, or if the transaction will cause the balance to fall below the defined limit. Accounts payable vendor invoices and General ledger advanced ledger entries are validated when they are created, edited, and posted. If transaction posting will cause the related cash account's balance to be reduced below the limit that is defined for the account, the user receives an error message and must change the account to continue.
+
+## Forecast position distribution (Public Sector)
+
+You can maintain financial dimension default templates for forecast positions by using the controls on the **Financial dimensions** FastTab on the **Forecast position** page. The grid in the upper part of the FastTab shows all the distribution lines together with their percentage. The lower part of the FastTab shows the forecast position's default dimensions.
+
+You can validate whether the default dimensions for a forecast position are correct for your organization's chart of accounts. For any forecast position, on the **Forecast position** page, select **Validate** on the Action Pane to determine whether the setup of financial dimensions for that forecast position is valid. This validation is quick and can help you identify errors before you generate a budget plan from a forecast position. You can also validate multiple forecast positions at the same time on the **Forecast positions** page.
+
+## Deferred put
+The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
+
+For more information, see [Deferred processing of warehouse work](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/deferred-put)
+
+## Journal unlock
+A new button is available on the journal page to unlock a journal that has a status of **Locked by system** set to Yes. This unlock can be performed by an administrator of the system who has analyzed any executing batch jobs and confirmed this journal is no longer actively being processed by a batch job. This button is enabled by the feature named **Journal Unlock button** on the **Feature management** page.
 
 ## Additional resources
 
-### Platform update 29 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 29, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e).
+### Bug fixes
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e).
+
+### Platform update 29
+Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [What's new or changed in Finance and Operations platform update 29 (October 2019)](whats-new-platform-update-29.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
