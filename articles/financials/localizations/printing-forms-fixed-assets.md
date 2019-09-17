@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](../includes/banner.md)]
 
 
-The following unified printing forms for fixed assets are supported in Dynamics 365 for Finance and Operations.
+The following unified printing forms for fixed assets are supported.
 
 | **Form code** | **Form name**                                               |
 |---------------|-------------------------------------------------------------|
