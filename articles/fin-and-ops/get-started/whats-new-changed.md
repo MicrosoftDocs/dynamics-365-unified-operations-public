@@ -40,7 +40,7 @@ This page points you to topics that can help you learn about the new features in
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 > [!Note]
-> Dynamics 365 for Finance and Operations is now being licensed as Dynamics 365 Finance and Dynamics 365 Supply Chain Management. For more information about these licensing changes, see the [Microsoft Dynamics 365 Pricing and Licensing](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365PricingandLicensing) information on PartnerSource.
+> Dynamics 365 for Finance and Operations is now being licensed as Dynamics 365 Finance and Dynamics 365 Supply Chain Management. For more information about these licensing changes, see [Microsoft Dynamics 365 Pricing and Licensing](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365PricingandLicensing) on PartnerSource.
 
 
 [!include [release notes](../includes/release-notes.md)]
