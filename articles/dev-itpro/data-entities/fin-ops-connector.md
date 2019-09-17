@@ -81,7 +81,7 @@ This action can be used to invoke methods on a data entity to perform a business
 
 *Instance* refers to the URL of the target instance to which the connector must connect. The syntax for this value is to enter the URL without the ‘https://’ prefix or choose one from the drop- menu. This lists of all the environments that are deployed in the Azure Active Directory tenant for the user account that was used to sign in to the specific client like Microsoft Flow, PowerApps, or Logic App.
 
-*Action* refers to the method on the data entity that must be executed in Finance and Operations. Based on the selected method, the list of fields displayed will be vary. These fields represent the parameters for the selected method.
+*Action* refers to the method on the data entity that must be executed. Based on the selected method, the list of fields displayed will be vary. These fields represent the parameters for the selected method.
 
 **Get list of entities**
 
