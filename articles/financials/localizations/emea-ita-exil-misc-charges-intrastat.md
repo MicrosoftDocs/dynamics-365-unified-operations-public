@@ -48,7 +48,8 @@ This topic explains how to enable, set up and use miscellaneous charges per kilo
 A new field **Cost charges per kg** is added in released products Master Data in **Foreign trade** FastTab and **Intrastat** section.
 
 *...replace the picture when a proper label is ready*
-![Cost charges per kg](media/emea-ita-exil-misc-charge-kg-pic.jpg)
+
+![Cost charges per kg](media/emea-ita-exil-misc-charge-kg-pic1.jpg)
 
 > [!NOTE]
 > Make sure that inventory units for reported products are defined as kilograms and products gross weight is also defined.
