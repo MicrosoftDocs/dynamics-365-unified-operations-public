@@ -5,7 +5,7 @@ title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,15 +83,15 @@ To view the parameters that can be configured for the Finance and Operations dem
 
 ### Forecast algorithm parameters
 
-Under the tab **Allocation keys** you can set the **Forecast algorithm parameters** for each Item allocation key. The following options are available:
+On the **Allocation keys** tab you can set the **Forecast algorithm parameters** for each item allocation key. The following options are available.
 - **Confidence level percentage**: A confidence interval consists of a range of values that act as good estimates for the demand forecast. A 95% confidence level percentage indicates there is a 5% risk that the future demand falls outside the confidence interval range.
-- **Force seasonality**: Specifies whether to force the model to use a certain type of seasonality. Applies to ARIMA and ETS only. Options: AUTO(default), NONE, ADDITIVE, MULTIPLICATIVE
-- **Forecasting model**: Options: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. In order to select best fit model, use ALL.
+- **Force seasonality**: Specifies whether to force the model to use a certain type of seasonality. Applies to ARIMA and ETS only. Options: AUTO(default), NONE, ADDITIVE, MULTIPLICATIVE.
+- **Forecasting model**: Options: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALL. To select best fit model, use **ALL**.
 - **Maximum forecasted value**: Specifies the maximum value to use for predictions. Format: +1E[n] or numeric constant.
 - **Minimum forecasted value**: Specifies the minimum value to use for predictions. Format: -1E[n] or numeric constant.
-- **Missing value substitution**: Specifies how gaps in historical data are filled. Options: numeric value, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL
-- **Missing value substitution scope**: Specifies whether the value substitution applies only to the data range of each individual granularity attribute, or to the entire dataset. Options: GRANULARITY_ATTRIBUTE(default), GLOBAL
-- **Seasonality hint**: For seasonal data, provide a hint to the forecasting model, to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, fill in 6 for data that repeats itself every 6 months.
+- **Missing value substitution**: Specifies how gaps in historical data are filled. Options: numeric value, MEAN, PREVIOUS, INTERPOLATE LINEAR, INTERPOLATE POLYNOMIAL.
+- **Missing value substitution scope**: Specifies whether the value substitution applies only to the data range of each individual granularity attribute, or to the entire dataset. Options: GRANULARITY_ATTRIBUTE(default), GLOBAL.
+- **Seasonality hint**: For seasonal data, provide a hint to the forecasting model to improve forecast accuracy. Format: integer number, representing the number of buckets a demand pattern repeats itself. For example, enter "6" for data that repeats itself every 6 months.
 - **Test set size percentage**: Percentage of historical data to be used as a test set for forecast accuracy calculation. 
 
 Additional resources
