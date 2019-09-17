@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage secrets for Retail channels
+title: Manage secrets for retail channels
 description: This topic explains how to extend the channel database.
 author: AamirAllaq
 manager: AnnBe
@@ -29,37 +29,41 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Manage secrets for Retail channels
+# Manage secrets for retail channels
 
-This article explains how to manage secrets when you are using an extension with Retail channels that require access to secrets. 
+This topic explains how to manage secrets when you're using an extension with retail channels that require access to secrets.
 
-## Azure Key Vault setup
+## Key Vault setup
 
 1. The extension developer follows these development steps:
-    1. Create a test secret in Azure Key Vault.
-    2. Configure the head office client to connect to the Azure Key Vault.
-    3. Specify an extension key name for the Key Vault secret in the **Head Office > Key Vault Parameters** form. The same name must be used in the next step.
-    4. Use the CommerceRuntime API **GetUserDefinedSecretStringValueServiceRequest** to get the secrets. Pass a unique secret name to identify the secret.  
-    5.  As part of extension setup documentation, state the secret name referenced within the extension. A recommended pattern for the extension developer is to use a namespace for the secret name to avoid conflicts with other extensions.
+
+    1. Create a test secret in Microsoft Azure Key Vault.
+    2. Configure the head-office client to connect to Key Vault.
+    3. On the **Key Vault Parameters** page (**Head Office \> Key Vault Parameters**), specify an extension key name for the Key Vault secret. The same name must be used in the next step.
+    4. Use the **GetUserDefinedSecretStringValueServiceRequest** Commerce Runtime (CRT) application programming interface (API) to get the secret. Pass a unique secret name to identify the secret.
+    5. As part of the documentation of the extension setup, state the secret name that is referenced in the extension. We recommend that the extension developer use a namespace for the secret name, because this approach helps prevent conflicts with other extensions.
+
 2. The IT pro or implementation partner follows these deployment and configuration steps:
-    1. Apply the extension to customer environment. For details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
-    2. Upload (or type in) the desired secrets to Azure Key Vault. For details, see [What is Azure Key Vault?](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-overview)
-    3. Configure the head office client to connect to Azure Key Vault in **Head Office > Key Vault Parameters** form.
-    4. Specify the extension secret name for the Key Vault secret in the head-office client in the **Head Office > Key Vault Parameters** form.
+
+    1. Apply the extension to the customer environment. For details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
+    2. Upload the desired secrets to Key Vault (or enter them). For details, see [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-overview)
+    3. On the **Key Vault Parameters** page (**Head Office \> Key Vault Parameters**), configure the head-office client to connect to Key Vault.
+    4. On the **Key Vault Parameters** page, specify the extension secret name for the Key Vault secret in the head-office client.
 
 ## Consume the secret in the CRT extension
 
-To consume the secret in the extension we added the below request and response:
+To consume the secret in the extension, add the following request and response.
 
-| Request/Response                               | Parameters               | Description                        |
-|------------------------------------------------|--------------------------|------------------------------------|
-| GetUserDefinedSecretStringValueServiceRequest  | string secretName        | Request class for getting user defined secrets from headquarters. |
-| GetUserDefinedSecretStringValueServiceResponse | string SecretStringValue | Response class for getting user defined secrets from headquarters. The response returns a **SecretStringValue** value and extensons can type cast it to **X509Certificate2** or use it as string value.  |
+| Request/response                               | Parameters                   | Description |
+|------------------------------------------------|------------------------------|-------------|
+| GetUserDefinedSecretStringValueServiceRequest  | string **secretName**        | The request class that is used to get user-defined secrets from Retail headquarters. |
+| GetUserDefinedSecretStringValueServiceResponse | string **SecretStringValue** | The response class that is used to get user-defined secrets from Retail headquarters. The response returns a **SecretStringValue** value, and extensions can type-cast this value to **X509Certificate2** or use it as string value. |
 
-To read the secret in the CRT extension:
+To read the secret in the CRT extension, follow these steps.
 
-1. Create a new CRT extension project (C# class library project type). Use the sample templates from the Retail SDK (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
-2. In the CRT extension you can create a new request/response or add a pre/post trigger for the existing CRT request and then call it. In the following example, we added a trigger for **SaveCartRequest** and called **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key configured in Retail Headquarters. You do not need to write custom code to read the secret from Retail Headquarters, use the request and response to read the value.
+1. Create a new CRT extension project (C\# class library project type). Use the sample templates from the Retail software development kit (SDK) (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
+2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Retail headquarters. You don't have to write custom code to read the secret from Retail headquarters. You can use the request and response to read the value.
+
     ```csharp
     public class CustomSaveCartTrigger : IRequestTrigger
     {
@@ -74,48 +78,50 @@ To read the secret in the CRT extension:
             }
         }
 
-         /// <summary>
-         /// Pre trigger code.
-         /// </summary>
-         /// <param name="request">The request.</param>
-         public void OnExecuting(Request request)
-         {
-             ThrowIf.Null(request, "request");
-             Type requestedType = request.GetType();
-             if (requestedType == typeof(SaveCartRequest))
-             {
-                 // Sample code to get the secret in string format.
-                 var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
-                 string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
-                 // Sample code to get the secret in X509Certificate2 format.
-                 var request = new GetUserDefinedSecretStringValueServiceRequest ();
-                 X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
-                 // custom code to additional processing with secrets.
-             }
-         }
+        /// <summary>
+        /// Pre trigger code.
+        /// </summary>
+        /// <param name="request">The request.</param>
+        public void OnExecuting(Request request)
+        {
+            ThrowIf.Null(request, "request");
+            Type requestedType = request.GetType();
+            if (requestedType == typeof(SaveCartRequest))
+            {
+                // Sample code to get the secret in string format.
+                var request = new GetUserDefinedSecretStringValueServiceRequest("SecretName");
+                string response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceResponse>(request).SecretStringValue;
+                // Sample code to get the secret in X509Certificate2 format.
+                var request = new GetUserDefinedSecretStringValueServiceRequest ();
+                X509Certificate2 response = request.RequestContext.Execute<GetUserDefinedSecretStringValueServiceRequest>(request).Certificate;
+                // custom code to additional processing with secrets.
+            }
+        }
 
-         /// <summary>
-         /// Post trigger code.
-         /// </summary>
+        /// <summary>
+        /// Post trigger code.
+        /// </summary>
+        /// <param name="request">The request.</param>
+        /// <param name="response">The response.</param>
 
-         /// <param name="request">The request.</param>
-         /// <param name="response">The response.</param>
+        public void OnExecuted(Request request, Response response)
+        {
+        }
+    }
+    ```
 
-         public void OnExecuted(Request request, Response response)
-         {
-         }
-
-     }
-     ```
 3. Build the CRT extension project.
-4. Copy the output class library and paste it in the …\\RetailServer\\webroot\\bin\\Ext for manual testing.
-5. Update the extension composition section in the CommerceRuntime.Ext.config file with the custom library information, like below:
+4. Copy the output class library, and paste it into **…\\RetailServer\\webroot\\bin\\Ext** for manual testing.
+5. In the **CommerceRuntime.Ext.config** file, update the extension composition section with the custom library information. Here is an example.
+
     ```Xml
     <add source="assembly" value="your custom library name" />
     ```
 
 ## Credential rotation
-Credential management with this approach allows for more streamlined credential rotation. To update a secret, an IT admin only needs to update the secret in Key Vault, with no need to change the extension. Once a secret is updated, the new value is used after the cache expires.
+
+When this approach is used for credential management, credential rotation is more streamlined. To update a secret, an IT admin just has to update the secret in Key Vault. No change is required to the extension. After a secret is updated, the new value starts to be used when the cache expires.
 
 ## Offline support
-Offline support for credentials requires the extension code to handle failover to offline when Key Vault credential is not available or accessible.
+
+Offline support for credentials requires that the extension code handle failover to offline when Key Vault credentials aren't available or accessible.
