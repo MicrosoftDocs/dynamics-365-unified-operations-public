@@ -59,7 +59,7 @@ When transferring transactions to Intrastat declaration (for more information, s
 
 *Charges amount = Cost of each kilogram * Gross weight (in kilograms)*
 
-If **Chagres percentage** is also defined then both miscellaneous charges will be used in the calculation:
+If **Chagres percentage** is also defined then both types of miscellaneous charges will be used in the calculation:
 
 *Charges amount = (Invoice amount * Charges percentage) + Cost of each kilogram * Gross weight*
 
