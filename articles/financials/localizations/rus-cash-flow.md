@@ -43,7 +43,7 @@ Here are the main goals of a Treasury company:
 - Control the company's cash position.
 - Maintain the company's cash flows through centralized control.
 
-This topic provides a step-by-step example that shows the settings and user activities for cash flow management in Microsoft Dynamics 365 for Finance and Operations. 
+This topic provides a step-by-step example that shows the settings and user activities for cash flow management. 
 
 > [!NOTE]
 > The data set that is used in this topic is for demo purposes only. The codes that you use for ledger accounts, value-added tax (VAT), rates, and so on, should comply with the rules that are accepted in your company.
