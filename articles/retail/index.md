@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Welcome to Dynamics 365 for Retail 
-description: Home page for Dynamics 365 for Retail
+title: Welcome to Dynamics 365 Retail 
+description: Home page for Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Welcome to Dynamics 365 for Retail
+# Welcome to Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
+Microsoft Dynamics 365 Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
 > [!NOTE]
-> Dynamics 365 for Retail is closely related to Dynamics 365 for Finance and Operations, and Dynamics 365 for Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail; in topics that are primarily related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations; in topics that are primarily related to human resources, the product name will be Dynamics 365 for Talent.
+> Dynamics 365 Retail is closely related to Dynamics 365 Finance, Supply Chain Management, and Talent. The same functionality may appear in all products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 Retail; in topics that are primarily related to Finance, the product name will be Dynamics 365 Finance; in topics primarily related to Supply Chain Management, the product name will be Dynamics 365 Supply Chain Management; in topics that are primarily related to human resources, the product name will be Dynamics 365 Talent.
 
 In the left pane, select a feature area to learn more about it.
 
