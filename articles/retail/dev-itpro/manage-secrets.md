@@ -29,23 +29,23 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Manage secrets for Retail Channels
+# Manage secrets for Retail channels
 
 This article explains how to manage secrets when you are using an extension with Retail channels that require access to secrets. 
 
 ## Sequence
 
-1. Development steps for extension developer.
-    1. Create a test secret in Azure Key Vault
-    2. Configure head office client to connect to the Azure Key Vault
-    3. Specify an extension key name for a Key Vault secret in Head Office>Key Vault Parameters form. The same name must be used in the next step.
-    4. Use a CommerceRuntime API (GetUserDefinedSecretStringValueServiceRequest) to get secrets. Pass a unique secret name to identify the secret.  
+1. The extension developer follows these development steps:
+    1. Create a test secret in Azure Key Vault.
+    2. Configure the head office client to connect to the Azure Key Vault.
+    3. Specify an extension key name for the Key Vault secret in the **Head Office > Key Vault Parameters** form. The same name must be used in the next step.
+    4. Use the CommerceRuntime API **GetUserDefinedSecretStringValueServiceRequest** to get the secrets. Pass a unique secret name to identify the secret.  
     5.  As part of extension setup documentation, state the secret name referenced within the extension. A recommended pattern for the extension developer is to use a namespace for the secret name to avoid conflicts with other extensions.
-2.	Deployment & configuration steps for IT Pro or implementation partner
-    1. Apply the extension to customer environment (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/retail/toc.json).
-    2. Upload (or type in) desired secrets to Azure Key Vault (https://docs.microsoft.com/en-us/azure/key-vault/key-vault-overview)
-    3. Configure head office client to connect to Azure Key Vault in Head Office>Key Vault Parameters form.
-    4. Specify extension secret name for a Key Vault secret in the head-office client in Head Office>Key Vault Parameters form.
+2. The IT pro or implementation partner follows these deployment and configuration steps:
+    1. Apply the extension to customer environment. For details, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
+    2. Upload (or type in) the desired secrets to Azure Key Vault. For details, see [What is Azure Key Vault?](https://docs.microsoft.com/en-us/azure/key-vault/key-vault-overview)
+    3. Configure the head office client to connect to Azure Key Vault in **Head Office > Key Vault Parameters** form.
+    4. Specify the extension secret name for the Key Vault secret in the head-office client in the **Head Office > Key Vault Parameters** form.
 
 ## Consume the secret in the CRT extension
 
