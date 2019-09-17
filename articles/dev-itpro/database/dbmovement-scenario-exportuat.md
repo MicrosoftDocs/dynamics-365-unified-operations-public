@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This topic explains a database export scenario for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 07/08/2019
@@ -42,7 +42,7 @@ In this tutorial, you will learn how to:
 > * Download the database backup.
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
-As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 ## Known limitations
 
@@ -183,7 +183,7 @@ If you're using Financial Reporting, you must reset the Financial Reporting data
 
 ## Reenter data from encrypted and environment-specific fields in the target database
 
-In the Finance and Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in *Table.Field* format.
+In the client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. The field names are given in *Table.Field* format.
 
 | Field name                                               | Where to set the value |
 |----------------------------------------------------------|------------------------|
