@@ -78,10 +78,14 @@ The source data for import can be presented as **Excel** file with the following
 
 ## Use enhanced list of bank groups
 
-During bank accounts set up, when inquiring the list of bank groups additional descriptive fields are available for more precise banks selection: **Bank branch name** and **City**.
+When **Bank account setup enhancement** feature is enabled, additional descriptive fields  **Bank branch name** and **City** are available for bank groups.
 
 *...replace the picture below...*
 
-![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+![Clearing the main account](media/emea-ita-exil-bank-pic.jpg)
 
+During bank accounts set up, when inquiring the list of bank groups additional descriptive fields are available for more precise banks selection.
 
+*...replace the picture below...*
+
+![Clearing the main account](media/emea-ita-exil-bank-pic2.jpg)
