@@ -4207,6 +4207,7 @@
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-
+- name: Dynamics 365 Commerce (Preview)
+  href: ../commerce/toc.yml
 
 
