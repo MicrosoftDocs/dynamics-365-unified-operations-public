@@ -5,7 +5,7 @@
   - name: Get started
     items:
     - name: Before you buy guidance
-      href: ../get-started/before-you-buy.md
+      href: ../../get-started/before-you-buy.md
     - name: Sign up for preview subscription
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
     - name: Deploy a demo environment
@@ -119,6 +119,6 @@
     - name: Gantt control development guide
       href: ../dev-itpro/user-interface/gantt-development-guide.md
     - name: Create a new transportation management engine
-      href: ../transportation/create-new-transportation-management-engine.md
+      href: ../../transportation/create-new-transportation-management-engine.md
 - name: Finance and Operations development and administration 
   href: ../dev-itpro/toc.yml
