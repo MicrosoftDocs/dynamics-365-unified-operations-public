@@ -40,22 +40,22 @@ To activate this functionaltiy in the **Accounts receivable** area, go to **Acco
 
 ## Locate the Credit invoicing button
 
-From **General ledger** \> **Journal entries** \> **General journal** \> **Lines**:
+In **General ledger**, go to **Journal entries** \> **General journal** \> **Lines**, and on the Action Pane, select **Functions** \> **Credit invoicing**.
 
 ![ita-credit-invoicing-gl](./media/ita-credit-invoicing-gl.png)
 
-From **Accounts receivable** \> **Invoices** \> **All free text invoice**:
+In **Accounts receivable**, go to**Invoices** \> **All free text invoice**. On the Action Pane, on the **Invoice** tab, in the **Functions** group, click **Credit invoicing**.
 
 ![ita-credit-invoicing-fti](./media/ita-credit-invoicing-fti.png)
 
-From **Accounts receivable** \> **Orders** \> **All sales orders**:
+In **Accounts receivable**, go to **Orders** \> **All sales orders**. On the Action Pane, on the **Invoice** tab, in the **Correction** group, select **Credit invoicing**.
 
 ![ita-credit-invoicing-so](./media/ita-credit-invoicing-so.png)
 
-From **Accounts payable** \> **Invoices** \> **Invoice journal** > **Lines**:
+In **Accounts payable**, go to **Invoices** \> **Invoice journal** > **Lines**, and on the Action Pane, on the **Functions** tab, select **Credit invoicing**.
 
 ![ita-credit-invoicing-apij](./media/ita-credit-invoicing-apij.png)
 
-From **Accounts payable** \> **Purchase orders** \> **All purchase order**:
+In **Accounts payable**, go to **Purchase orders** \> **All purchase order**. On the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 
 ![ita-credit-invoicing-po](./media/ita-credit-invoicing-po.png)
