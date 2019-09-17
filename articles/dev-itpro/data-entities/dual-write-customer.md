@@ -56,7 +56,7 @@ When a non-sellable contact participates in a quotation or order process, **Sell
 
 Customer data includes all information about the customer, such as the customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of entity maps works together during customer data interaction, as shown in the following table.
 
-Finance and Operations    | Customer Engagement application
+Finance and Operations    | Other Dynamics 365 apps
 --------------------------|---------------------------------
 Customer V3               | Account
 Customer V3               | Contact
@@ -146,7 +146,7 @@ PARTYNUMBER | = | msdyn\_partynumber
 
 ## Customer V3 to Contact
 
-This template synchronizes customer master data for consumers and end users between Finance and Operations and Customer Engagement.
+This template synchronizes customer master data for consumers and end users between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-contact-1.png) -->
 <!-- ![](media/dual-write-contact-2.png) -->
@@ -218,7 +218,7 @@ SALESMEMO | = | description
 
 ## Contacts
 
-This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-contacts.png) -->
 
@@ -253,7 +253,7 @@ none | \>\> | msdyn\_contactpersonid
 
 ## Customer Groups
 
-This template synchronizes customer group information between Finance and Operations and Customer Engagement.
+This template synchronizes customer group information between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-customer-groups.png) -->
 
@@ -267,7 +267,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymenttermname.msdyn\_
 
 ## Customer Payment Methods
 
-This template synchronizes customer payment method information between Finance and Operations and Customer Engagement.
+This template synchronizes customer payment method information between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-customer-payment-methods.png) -->
 
@@ -291,7 +291,7 @@ DIRECTDEBIT | \>\< | msdyn\_directdebit
 
 ## Loyalty Cards
 
-This template synchronizes customer loyalty card information between Finance and Operations and Customer Engagement.
+This template synchronizes customer loyalty card information between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-loyalty-cards.png) -->
 
@@ -306,7 +306,7 @@ LOYALTYENROLLMENTDATE | = | msdyn\_enrollmentdate
 
 ## Payment Schedules
 
-This template synchronizes payment schedule reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment schedule reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-payment-schedules.png) -->
 
@@ -325,7 +325,7 @@ NOTES | = | msdyn\_note
 
 ## Payment Schedule Lines
 
-Syncs payment schedule lines reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+Syncs payment schedule lines reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-payment-schedule-lines.png) -->
 
@@ -340,7 +340,7 @@ PERCENTORAMOUNTVALUE | = | msdyn\_percentoramountvalue
 
 ## Payment days
 
-This template synchronizes payment days reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment days reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-payment-days.png) -->
 
@@ -351,7 +351,7 @@ DESCRIPTION | = | msdyn\_description
 
 ## Payment Day Lines
 
-This template synchronizes payment day lines reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment day lines reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 appst.
 
 <!-- ![](media/dual-write-payment-day-lines.png) -->
 
@@ -365,7 +365,7 @@ NAME | = | msdyn\_paymentday.msdyn\_name
 
 ## Payment Terms
 
-This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-payment-terms.png) -->
 
@@ -387,7 +387,7 @@ PAYMENTSCHEDULENAME | = | msdyn\_paymentschedulename.msdyn\_name
 
 ## Name Affixes
 
-This template synchronizes name affixes reference data, for both customers and vendors, between Finance and Operations and Customer Engagement.
+This template synchronizes name affixes reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-name-affixes.png) -->
 
