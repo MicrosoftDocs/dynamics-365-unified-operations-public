@@ -6,6 +6,8 @@
       href: deploy-ecommerce-site.md
     - name: Configure a domain name
       href: configure-your-domain-name.md
+    - name: Associate an online site with a channel
+      href: associate-site-online-store.md
   - name: Manage e-Commerce users and roles
     href: manage-ecommerce-users-roles.md
   - name: Ratings and reviews
