@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: What's new or changed in Finance and Operations releases
+title: What's new or changed home page
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
@@ -38,10 +38,6 @@ ms.dyn365.ops.version: Platform update 2
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
-
-> [!Note]
-> Dynamics 365 for Finance and Operations is now being licensed as Dynamics 365 Finance and Dynamics 365 Supply Chain Management. For more information about these licensing changes, see [Microsoft Dynamics 365 Pricing and Licensing](https://mbs.microsoft.com/partnersource/northamerica/pricing-ordering/licensing-policies/Dyn365PricingandLicensing) on PartnerSource.
-
 
 [!include [release notes](../includes/release-notes.md)]
 
