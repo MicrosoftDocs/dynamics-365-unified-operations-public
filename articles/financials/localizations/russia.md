@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Russian regulations. 
+This topic provides information about functionality that supports Russian regulations. 
 
 ## General ledger
 
