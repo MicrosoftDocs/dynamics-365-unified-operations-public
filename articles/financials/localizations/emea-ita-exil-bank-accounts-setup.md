@@ -28,10 +28,12 @@ ms.dyn365.ops.version: 10.0.7
 
 ---
 
-# Improvement of bank accounts setup
+# Bank data usability enhancement
 
-Companies often need to enter and maintain vast number of banking information. The cost of using wrong bank requiusites is pretty high.
-This article explains how to save time avoiding manual entering and simplify the process of banks data registration via import of all Italian banks from reliable sources and how reduce the risk of making mistakes using bank data customers and vendors.
+[!include [banner](../includes/banner.md)]
+
+Companies often need to enter and maintain vast number of banking information. The cost of using wrong bank requisites is pretty high.
+This article explains how to save time avoiding manual entering and simplify the process of banks data registration via import of all Italian banks from reliable sources and how reduce the risk of making mistakes using bank data for customers and vendors.
 
 ## Prerequisites
 
@@ -43,7 +45,7 @@ This article explains how to save time avoiding manual entering and simplify the
 Import the list of banks via **Bank groups** entity using **Data management** framework.
 For more information, see [Data import and export jobs overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
 
-The source data for import can be presented as **Excel** file with the following fields:
+The source data for import can be presented as **Excel** file with the following structure:
 
 | Column names        |
 |---------------------|
