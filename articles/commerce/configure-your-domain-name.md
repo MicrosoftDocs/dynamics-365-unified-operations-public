@@ -39,7 +39,7 @@ This topic explains how to configure a domain name for a Microsoft Dynamics 365 
 
 ## Add domains during e-Commerce initialization
 
-To associate domains with your e-Commerce environment, initialize e-Commerce as described in [Deploy an e-Commerce site](deploy-e-commerce-site.md). During initialization, you're asked to provide information that will be used to provision your e-Commerce environment. In the **Supported host names** field, add all the domains that you plan to use with this environment. Multiple domains should be separated with semi-colon. In this way, the domains are configured in all the required e-Commerce components, and they are ready to be used when you switch traffic from your content delivery network (CDN) or web server and point it to the e-Commerce front ends.
+To associate domains with your e-Commerce environment, initialize e-Commerce as described in [Deploy an e-Commerce site](deploy-ecommerce-site.md). During initialization, you're asked to provide information that will be used to provision your e-Commerce environment. In the **Supported host names** field, add all the domains that you plan to use with this environment. Multiple domains should be separated with semi-colon. In this way, the domains are configured in all the required e-Commerce components, and they are ready to be used when you switch traffic from your content delivery network (CDN) or web server and point it to the e-Commerce front ends.
 
 ## Add domains after e-Commerce initialization
 
