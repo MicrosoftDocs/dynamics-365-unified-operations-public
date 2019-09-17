@@ -55,11 +55,11 @@ To create a curated product recommendation list, follow these steps.
 
 ## Example List
 
-![Example Curated List in back office](./examplecuratedrecolist.png)
+![Example Curated List in back office](examplecuratedrecolist.png)
 
 ## Additional resources
 
-[Product recommendations overview](product-recommendations-overview.md)
+[Product recommendations overview](product-recommendations.md)
 
 [Enable omni-channel product recommendations](enable-product-recommendations.md)
 
