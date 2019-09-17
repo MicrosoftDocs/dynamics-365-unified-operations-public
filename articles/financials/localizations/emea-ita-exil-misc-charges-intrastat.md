@@ -43,6 +43,11 @@ This topic explains how to enable, set up and use miscellaneous charges per kilo
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Miscellaneous charges per kilogram in Intrastat declaration** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up 
+## Set up miscellaneous charges per kilogram
 
-You can 
+A new field **Cost charges per kg** is added in release products Master Data in **Foreign trade** section.
+
+![Clearing the main account](media/emea-ita-exil-separate-account-credit-pic2.JPG)
+
+> [!NOTE]
+> Make sure that inventory units for reported products are defined as kilograms.
