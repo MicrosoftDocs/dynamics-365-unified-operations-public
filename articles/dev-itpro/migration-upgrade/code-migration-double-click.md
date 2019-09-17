@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In Finance and Operations apps like Finance and Supply Chain Management, the **mouseDblClick()** override has been deprecated, and you will need to move this logic to new controls.
+In Finance and Operations, the **mouseDblClick()** override has been deprecated, and you will need to move this logic to new controls.
 
 In Microsoft Dynamics AX 2012, the mouse double-click event was used for various reasons. For example, it helped provide a better user experience and provided an alternative way to run certain scenarios. Here are some examples of common usage patterns:
 
