@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 This article explains how to manage secrets when you are using an extension with Retail channels that require access to secrets. 
 
-## Sequence
+## Azure Key Vault setup
 
 1. The extension developer follows these development steps:
     1. Create a test secret in Azure Key Vault.
