@@ -55,7 +55,7 @@ To start to work with the VAT declaration, follow these steps.
     Follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.05 v.5.06 package**. The file that is downloaded is named **VAT declaration v.5.05 v.5.06 package.zip**.
-    2. In Microsoft Dynamics 365 for Finance and Operations, in the **Data management** workspace, select **Import**.
+    2. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
     3. In the **Job details** section, set the following values:
 
         - In the **Name** field, enter any name for the job.
@@ -64,7 +64,7 @@ To start to work with the VAT declaration, follow these steps.
     4. In the **Upload data file** field, select **Upload**, and then select the **VAT declaration v.5.05 v.5.06 package.zip** file that you downloaded earlier.
     5. After the data entities are uploaded, select **Import**.
 
-3. In Finance and Operations, go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that you imported. (All the data that was imported is presented only in the Russian language.)
+3. In Finance, go to **General ledger \> Financial reports setup \> Financial reports**, and validate the financial reports that you imported. (All the data that was imported is presented only in the Russian language.)
 
     | Report | Report code | Description |
     |---|---|---|
