@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The cloud version of Microsoft Dynamics 365 for Finance and Operations provides several features that allow for deeper integration with Microsoft Power BI. Some of these features haven't yet been implemented for on-premises deployments of Finance and Operations. However, the availability of Entity Store in on-premises deployments lets customers use PowerBI.com to report on and analyze Finance and Operations data. 
+The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features haven't yet been implemented for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets customers use PowerBI.com to report on and analyze data. 
 
 This topic outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019) and later.
 
@@ -128,10 +128,10 @@ Currently, you can enable Entity Store only during initial deployment. If it mus
 
 ## Authoring and distributing reports by using Entity Store on-premises
 
-Entity Store is an operational data warehouse that is included with Finance and Operations. It lets power users and business analysts author reports that use simplified and enriched Finance and Operations data. Entity Store contains aggregate measurements, which are simplified star schemas. For more information about how to author reports by using Entity Store, see [Create analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md).
+Entity Store is an operational data warehouse that is included. It lets power users and business analysts author reports that use simplified and enriched data. Entity Store contains aggregate measurements, which are simplified star schemas. For more information about how to author reports by using Entity Store, see [Create analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md).
 
 Note the following additional steps that are specific to on-premises deployments:
 
 - For on-premises environments, you don't have to use LCS to deploy Power BI reports to production or sandbox environments. Because admins can point PowerBI.com datasets to specific Entity Store databases in on-premises environments, you don't have to use the functionality that LCS offers. However, you might have to configure the on-premises gateway to enable PowerBI.com to access data on-premises. For more information about the gateway, see [Power BI gateway documentation](https://powerbi.microsoft.com/gateway/).
-- Although cloud-based Finance and Operations environments support only reports that are authored by using the DirectQuery option, on-premises Entity Store supports both DirectQuery reports and Import mode reports.
+- Although cloud-based application environments support only reports that are authored by using the DirectQuery option, on-premises Entity Store supports both DirectQuery reports and Import mode reports.
 - Analytical workspaces aren't yet implemented in on-premises deployments. Instead of viewing reports in analytical workspaces, you can deploy them to PowerBI.com environments. The reports can then be used by users who have access to PowerBI.com. Your users might require appropriate licenses to access reports on PowerBI.com.
