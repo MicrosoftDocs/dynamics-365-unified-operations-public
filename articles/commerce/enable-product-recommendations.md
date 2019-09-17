@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 for Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations-overview.md).
+This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 for Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 ## Recommendations pre-check
 Before enabling, please note that product recommendations are only supported for F&O customers supporting build 10.0.6 and have migrated their storage to using BDL. 
@@ -51,7 +51,7 @@ To turn on product recommendations, follow these steps.
 1. In the list of retail shared parameters, select **Recommendation Lists**.
 1. Set the **Enable recommendations** option to **Yes**.
 
-![enable product recommendations](./enableproductrecommendations.png)
+![enable product recommendations](enableproductrecommendations.png)
 
 > [!NOTE]
 > This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 for Commerce.
@@ -65,7 +65,7 @@ After enabling recommendations in the back office, the recommendations pannel mu
 
 ## Additional resources
 
-[Product recommendations overview](product-recommendations-overview.md)
+[Product recommendations overview](product-recommendations.md)
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
 
