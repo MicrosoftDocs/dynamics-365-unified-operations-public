@@ -42,13 +42,13 @@ This topic explains how to add a product recommendation list to an e-Commerce pa
 3. In the module wizard, select the list to add to the page.
 4. Save your changes.
 
-To learn more about the types of lists that you can add to a page, see [Product recommendations overview](product-recommendations-overview.md).
+To learn more about the types of lists that you can add to a page, see [Product recommendations overview](product-recommendations.md).
 
 To learn more about the **product collection** module, see [product collection module overview](product-placement-module-overview.md).
 
 ## Additional resources
 
-[Product recommendations overview](product-recommendations-overview.md)
+[Product recommendations overview](product-recommendations.md)
 
 [Enable omni-channel product recommendations](enable-product-recommendations.md)
 
