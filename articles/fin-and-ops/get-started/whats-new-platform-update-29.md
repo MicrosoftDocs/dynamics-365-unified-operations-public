@@ -103,7 +103,7 @@ The X++ source code editor now takes advantage of the CodeLens functionality of 
 ## Additional resources
 
 ### Platform update 29 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 29, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e).
+For information about the bug fixes included in each of the updates that are part of Platform update 29, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=4515866&bugId=348252&dbType=3&qc=75eda4912fe476283a638fbb74fe1619ee8d1ac63a506b1197697c1c4693d1fc).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
