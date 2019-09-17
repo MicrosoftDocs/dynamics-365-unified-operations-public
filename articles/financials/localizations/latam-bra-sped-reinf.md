@@ -87,13 +87,13 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 
 **SPED-Reinf setup**
 
-This section describes the configuration that is required for Finance and Operations.
+This section describes the configuration that is required.
 
 ### **Set up Electronic messages functionality**
 
-Electronic messages functionality is new in Finance and Operations. It lets you maintain and track various processes for electronic messages when there is an exchange of information between Finance and Operations and tax authority web services.
+Electronic messages functionality is new in Dynamics 365 Finance. It lets you maintain and track various processes for electronic messages when there is an exchange of information between Finance and tax authority web services.
 
-Before you issue SPED-Reinf events to government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Finance and Operations, users will able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.
+Before you issue SPED-Reinf events to government website, use the predefined configuration that Microsoft has prepared to meet SPED-Reinf requirements. This configuration is delivered as a data entity. After it's imported into Finance, users will able to generate, validate, and deliver all events that are described in the SPED-Reinf scope.
 
 #### **Import the configuration from the data entity**
 
@@ -107,7 +107,7 @@ To set up Electronic messages functionality for SPED-Reinf event communications,
 
 4.  On the **Data package** tab, select the SPED Reinf events communications data entities, and save the file in the location where data entities should be stored.
 
-5.  Sign in to Finance and Operations.
+5.  Sign in to Finance.
 
 6.  Go to **Workspaces \> Data management**, and then select the **Import** tile.
 
@@ -170,7 +170,7 @@ Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on 
 
 Trusted certificates must be configured and used by Microsoft Dynamics, because the SPED-Reinf should always be signed by an e-CNPJ certificate that is authorized by the ICP-Brazil entity, regardless of any other signatures. This e-CNPJ certificate should match the first eight digits of the root fiscal establishment's CNPJ, because the report is issued by the root fiscal establishment and the related fiscal establishments.
 
-In Finance and Operations, you must register the Key Vault certificate in Microsoft Azure.
+In Finance, you must register the Key Vault certificate in Microsoft Azure.
 
 For information about how to set up a Key Vault client, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305).
 
