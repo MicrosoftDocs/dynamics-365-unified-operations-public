@@ -40,7 +40,7 @@ This topic explains how to use the formula designer in Electronic reporting (ER)
 
 ER supports the formula designer. Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:
 
-- Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
+- Transform data that is received from an application database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
 - Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format. (For example, the formatting might be done in accordance with the requested language or culture, or the encoding).
 - Control the process of creating electronic documents. (For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data. They can also interrupt the document creation process or throw messages to users.)
 
@@ -62,11 +62,11 @@ You can open the **Formula designer** page when you perform any of the following
 
 The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:
 
-- From Finance and Operations data sources and runtime parameters to an ER data model
+- From application data sources and runtime parameters to an ER data model
 - From an ER data model to an ER format
-- From Finance and Operations data sources and runtime parameters to an ER format
+- From application data sources and runtime parameters to an ER format
 
-The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.
+The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table to two decimal places and then returns the rounded value.
 
 [![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
@@ -213,12 +213,12 @@ All characters in the name of a referencing data source that don't represent a l
 - The **Today's date & time** data source must be referred to in an ER expression as **'Today''s date & time'**.
 - The **name()** method of the **Customers** data source must be referred to in an ER expression as **Customers.'name()'**.
 
-If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:
+If the methods of application data sources have parameters, the following syntax is used to call those methods:
 
 - If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the **String** data type, this method must be referred to in an ER expression as **System.'isLanguageRTL'("EN-US")**.
 - Quotation marks aren't required when a method name contains only alphanumeric symbols. However, they are required for a method of a table if the name includes brackets.
 
-When the **System** data source is added to an ER mapping that refers to the **Global** Finance and Operations application class, the expression returns the Boolean value **FALSE**. The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.
+When the **System** data source is added to an ER mapping that refers to the **Global** application class, the expression returns the Boolean value **FALSE**. The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.
 
 You can limit the way that values are passed to the parameters of this type of method:
 
