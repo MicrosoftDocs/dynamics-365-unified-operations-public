@@ -107,9 +107,9 @@ To read the secret in the CRT extension:
 
      }
      ```
-4. Build the CRT extension project.
-5. Copy the output class library and paste it in the …\\RetailServer\\webroot\\bin\\Ext for manual testing.
-6. Update the extension composition section in the CommerceRuntime.Ext.config file with the custom library information, like below:
+3. Build the CRT extension project.
+4. Copy the output class library and paste it in the …\\RetailServer\\webroot\\bin\\Ext for manual testing.
+5. Update the extension composition section in the CommerceRuntime.Ext.config file with the custom library information, like below:
     ```Xml
     <add source="assembly" value="your custom library name" />
     ```
