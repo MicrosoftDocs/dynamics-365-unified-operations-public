@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to Dynamics 365 for Finance and Operations 
-description: This topic describes how to use the Data migration tool (DMT) to migrate data from Microsoft Dynamics AX 2009 to the latest Finance and Operations apps.
+description: This topic describes how to use the Data migration tool (DMT) to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 09/12/2018
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate your data from AX 2009 to the latest Finance and Operations apps. Using the DMT is the only supported upgrade path from AX 2009. The DMT helps you find and fill gaps between the table schemas for each version, as well as helping you move your data. 
+You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate your data from AX 2009 to Finance and Operations. Using the DMT is the only supported upgrade path from AX 2009. The DMT helps you find and fill gaps between the table schemas for each version, as well as helping you move your data. 
 
 ## Archictecture
-The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (Finance and Operations apps).
+The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (Finance and Operations).
 
 ![Data migration technical flow](media/dmt_technical_flow.png)
 
