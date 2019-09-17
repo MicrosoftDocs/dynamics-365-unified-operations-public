@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
+**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
 **Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
 
@@ -64,7 +64,7 @@ On the **Main accounts** page, you must define your main account so that one of 
 
 Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts. Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough. The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.
 
-To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
+To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
 
 ## Entity store
 The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
@@ -95,7 +95,7 @@ Currently, the data on embedded Power BI reports can't be limited to the legal e
 
 
 ## Financial reporting vs. Finanical insights
-Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 The following comparison chart will help differentiate the two options:
 
@@ -249,7 +249,7 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 ## Additional resources for Power BI
 
-The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.
+The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
