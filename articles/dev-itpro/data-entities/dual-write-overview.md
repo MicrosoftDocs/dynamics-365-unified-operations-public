@@ -2,7 +2,7 @@
 # required metadata
 
 title: Near-real-time data integration between Finance and Operations and Common Data Service
-description: This topic provides an overview of the integration between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
+description: This topic provides an overview of the integration between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -30,15 +30,15 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-# Near-real-time data integration between Finance and Operations and Common Data Service
+# Near-real-time data integration with Common Data Service
 
 [!include [banner](../includes/banner.md)]
 
 [!include [preview](../includes/preview-banner.md)]
 
-In the current digital world, business ecosystems use the Microsoft Dynamics 365 suite as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications is essential. Customer Engagement applications are built on top of Common Data Service. Integration between Finance and Operations data with Common Data Service lets Customer Engagement applications communicate coherently and fluently with Finance and Operations.
+In the current digital world, business ecosystems use the Microsoft Dynamics 365 suite as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Finance and Operations and Dynamics 365 for Customer Engagement applications is essential. Customer Engagement applications are built on top of Common Data Service. Integration between Finance and Operations data with Common Data Service lets Customer Engagement applications communicate coherently and fluently with Finance and Operations.
 
-Finance and Operations and Common Data Service provide near-real-time data synchronization between Finance and Operations and Customer Engagement applications via a dual-write framework. The coverage is broad and spans 28 surface areas of Finance and Operations. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.
+Finance and Operations and Common Data Service provide near-real-time data synchronization between Finance and Operations and Customer Engagement applications via a dual-write framework. The coverage is broad and spans 28 surface areas of the application. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.
 
 ![Architecture overview diagram](media/dual-write-overview.jpg)
 
