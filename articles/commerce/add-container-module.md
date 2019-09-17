@@ -109,32 +109,28 @@ The width of each column can be defined by view port. Below are the column width
 
 To add a container player module to a new page and set the required properties, do the following.  
 
-1. In tooling, create a new page template “Container template”. 
+1. Create a new page template named "container template." 
 
-2. In the Main slot of the template, add a Container. 
+1. In the **Main** slot of the default page, add a container module. 
 
-3. To the default container, add a Feature module 
+1. Add a feature module to the container module.  
 
-4. Check-in and Publish.  
+1. Check in and publish the template.   
 
-1. Now create a new page with the “Container template” and call it “Container page” 
+1. Create a new page named "container page" with the container template you created.
 
-1. In the page outline, add Container. 
+1. In the **Main** slot of the new page, add a container module.
 
-1. To the Container, set the number of columns =1 and Width=Fill container width 
+1. In the container module properties, set the number of columns to **1** and the width to **Fill container width**. 
 
-1. Add a Feature, set the heading.  
+1. Add a feature module to the container module, and configure the heading.  
 
-1. Save and Preview. 
+1. Save and preview the page. Preview should show one feature module that is within the container width. 
 
-1. Preview will show one Feature module that is within container width. 
+1. In the container module property pane, change the number of columns to **3**. 
 
-1. Now change the Number of columns in Container property panel to 3. 
+1. Add two more feature modules to the container module.
 
-1. Add two more Features modules to the Container 
+1. Save and preview the page. Preview should show three feature modules side by side. 
 
-1. Save and Preview.  
-
-1. Preview will show three Feature modules side by side. 
-
-1. Check-in and Publish the page once the desired layout is achieved. 
+1. Check-in and publish the page once the desired layout is achieved. 
