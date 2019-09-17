@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about date and time fields, and time zones in Finance and Operations applications.
+This article provides information about date and time fields, and time zones.
 
 ## Date and time fields
 
 There are three types of date and time fields that correspond to different data types in the database:
 
-- **Combined date/time fields** – These fields are the preferred method of entering date and time data in Finance and Operations applications. The **utcdatetime** data type stores time and date data in a single field in Coordinated Universal Time (UTC). UTC is the primary time standard by which the world regulates clocks and time. It is, within about 1 second, mean solar time at 0° longitude; it does not observe daylight saving time. Time zones around the world are expressed using positive or negative offsets from UTC. For most purposes, UTC is considered interchangeable with Greenwich Mean Time (GMT). The current version of UTC is defined by International Telecommunications Union Recommendation (ITU-R TF.460-6).
+- **Combined date/time fields** – These fields are the preferred method of entering date and time data. The **utcdatetime** data type stores time and date data in a single field in Coordinated Universal Time (UTC). UTC is the primary time standard by which the world regulates clocks and time. It is, within about 1 second, mean solar time at 0° longitude; it does not observe daylight saving time. Time zones around the world are expressed using positive or negative offsets from UTC. For most purposes, UTC is considered interchangeable with Greenwich Mean Time (GMT). The current version of UTC is defined by International Telecommunications Union Recommendation (ITU-R TF.460-6).
 - **Date fields** – These fields are used to enter dates only. The **date** data type stores a day, month, and year. However, these values are not stored in UTC and cannot be associated with a time zone.
 - **Time fields** – These fields are used to display the number of seconds that have elapsed since midnight on the current date. The **timeofDay** data type stores an integer value. Time values are not stored in UTC.
 
