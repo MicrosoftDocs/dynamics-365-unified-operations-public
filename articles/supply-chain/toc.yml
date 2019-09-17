@@ -1,0 +1,6 @@
+- name: Welcome to Dynamics 365 Supply Chain Management
+  href: index.md
+  - name: Get started
+    items:
+    - name: What's new or changed
+      href: whats-new.md
