@@ -46,7 +46,7 @@ Before changing the parameters, learn about how they will affect the results bel
 ### Trending product list
 
 The **Trending** product list has two parameters that can be changed:
-![Example Trending list default parameters](./media/exampletrendingparameters.PNG)
+![Example Trending list default parameters](./media/exampletrendingparameters.PNG "Example Trending list default parameters")
 1. **Include new products from last X days** - Products that have been added within the specified number of days before the current date can be used to select product candidates. The default value in the picture suggests that products as old has 180 days can be used in the trending product list.
 1. **Include sales from last X days** - Sales transactions that have occurred within the specified number of days before the current date can be used to order the products. The default value above suggests that all purchases made of a product in the last 30 days would be used to determine the placement of the product in the trending product list. 
 
