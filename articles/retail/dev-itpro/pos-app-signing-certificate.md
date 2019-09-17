@@ -56,6 +56,9 @@ Download the [Download File task](https://docs.microsoft.com/en-us/visualstudio/
 
 1. Download and Add the Secure File task as first step in the Azure DevOps build pipeline. You can download the secure file task from [here](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
 2. Upload the certificate to the Secure file task and set Reference name under Output Variables. Ex: MySigningCert
+    > [!div class="mx-imgBorder"]
+    > [![Secure file task](media/SecureFile.png)]
+
     ![Secure file task](media/SecureFile.png)
 3. Create a new variable in the Azure DevOps pipeline by clicking the New Variable button under the Variables tab.
 4. Provide some name for the variable. Ex: CertFile. In the value field $(MySigningCert.secureFilePath).
