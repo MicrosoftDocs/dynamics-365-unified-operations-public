@@ -636,6 +636,8 @@
       href: dev-itpro/commerce-runtime-extensibility.md
     - name: Add customer preference data to channel databases
       href: dev-itpro/add-customer-preference-channel.md
+    - name: Manage secrets for Retail channels
+      href: dev-itpro/manage-secrets.md
     - name: Add properties to sales orders
       href: dev-itpro/add-properties-sales-order.md
     - name: CRT extensibility and triggers
