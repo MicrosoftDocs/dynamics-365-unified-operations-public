@@ -160,9 +160,7 @@ the execution time in Step 2.
 ## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
 The integration to Finance and Operations is a two-step process. First, verify
-that the Talent data is updated and available in Common Data Service. This is a near real-time
-sync and can be verified in PowerApps by looking at the data within the data
-entities.
+that the Talent data is updated and available in Common Data Service. This can be verified in PowerApps by looking at the data within the data entities.
 
 ![Data in Common Data Service](media/DataInCDS.png)
 
