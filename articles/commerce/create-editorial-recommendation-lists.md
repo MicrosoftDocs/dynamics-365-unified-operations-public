@@ -55,7 +55,7 @@ To create a curated product recommendation list, follow these steps.
 
 ## Example List
 
-![Example Curated List in back office](examplecuratedrecolist.png)
+![Example Curated List in back office](../media/examplecuratedrecolist.png)
 
 ## Additional resources
 
