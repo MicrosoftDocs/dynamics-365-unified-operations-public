@@ -60,33 +60,33 @@ To upload a site configuration package by using LCS, follow these steps.
 
     ![Uploading to LCS](media/lcs-deploy-1.png)
 
-2. Select **Sign in**, and enter your LCS-provided account credentials. The main dashboard appears.
+1. Select **Sign in**, and enter your LCS-provided account credentials. The main dashboard appears.
 
     ![Uploading to LCS](media/lcs-deploy-2.png)
 
-3. Select the e-Commerce project that you will be using. The project dashboard appears.
+1. Select the e-Commerce project that you will be using. The project dashboard appears.
 
     ![Uploading to LCS](media/lcs-deploy-3.png)
 
-4. Scroll to the right to see more options.
+1. Scroll to the right to see more options.
 
     ![Uploading to LCS](media/lcs-deploy-4.png)
 
-5. To upload the package, in the **More tools** section, select the **Asset Library** tile.
-6. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Retail representative to obtain the required code.
+1. To upload the package, in the **More tools** section, select the **Asset Library** tile.
+1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Retail representative to obtain the required code.
 
     ![Uploading to LCS](media/lcs-deploy-5.png)
 
-7. Select the plus sign (+).
-8. In the **Upload e-Commerce package file** dialog box, enter a name and description for the package, and then select **Add a file**.
+1. Select the plus sign (+).
+1. In the **Upload e-Commerce package file** dialog box, enter a name and description for the package, and then select **Add a file**.
 
     ![Uploading to LCS](media/lcs-deploy-6.png)
 
-9. In the **Upload file asset** dialog box, select **Browse**, and browse to the location of the package zip file that you created earlier. Select the file, and then select **Upload**.
+1. In the **Upload file asset** dialog box, select **Browse**, and browse to the location of the package zip file that you created earlier. Select the file, and then select **Upload**.
 
     ![Uploading to LCS](media/lcs-deploy-7.png)
 
-10. When the upload is completed, you're returned to the **Upload e-Commerce package file** dialog box. Select **Confirm** to process the upload.
+1. When the upload is completed, you're returned to the **Upload e-Commerce package file** dialog box. Select **Confirm** to process the upload.
 
     ![Uploading to LCS](media/lcs-deploy-8.png)
 
