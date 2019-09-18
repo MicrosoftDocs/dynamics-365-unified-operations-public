@@ -32,7 +32,9 @@ ms.dyn365.ops.version:
 
 ## Cart
 
-The **Cart page** serves as the shopping bag which includes all the items added to the Cart.
+The **Cart page** serves as the shopping bag which includes all the items added to the Cart. Here is a screenshot of the Cart page built with web starter kit and Fabrikam theme.
+
+![Cart page](./media/cart2.png)
 
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to Header and Footer for more details.
 
@@ -44,7 +46,11 @@ From the Cart, a shopper can proceed to checkout. Checkout can be initiated as a
 
 ## Checkout
 
-The Checkout page is where your customers enter the information needed to place an order. The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to Header and Footer for more details.
+The Checkout page is where your customers enter the information needed to place an order. Here is a screenshot of the Cart page built with web starter kit and Fabrikam theme.
+
+![Checkout page](./media/Checkout.png)
+
+The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to Header and Footer for more details.
 
 The main body of the Checkout page is where all order information is collected. This includes shipping address, delivery options, payment etc. Checkout has a step by step flow as the workflow requires information to be entered in a certain order to be processed (e.g. shipping address must be entered before shipping costs can be calculated and so that payment can be authorized.)
 
