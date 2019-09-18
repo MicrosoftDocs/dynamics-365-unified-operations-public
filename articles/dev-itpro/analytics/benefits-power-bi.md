@@ -37,7 +37,6 @@ This topic describes the **Benefits** Microsoft Power BI content. It explains ho
 The **Benefits** Power BI content is shown in the **Benefits management** workspace if you use one of the following products:
 
 - Dynamics 365 Finance
-- Dynamics 365 Supply Chain Management
 - Microsoft Dynamics 365 for Talent
 
 ## Reports that are included in the Power BI content
