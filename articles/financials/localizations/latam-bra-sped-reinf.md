@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPED-Reinf tax statement (Brazil)
-description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 for Finance and Operations for Brazil.
+description: This topic provides information about setting up SPED-Reinf events using Fiscal books and the SII reporting register framework in Microsoft Dynamics 365 Finance for Brazil.
 author: sndray
 manager: AnnBe
 ms.date: 01/19/2019
