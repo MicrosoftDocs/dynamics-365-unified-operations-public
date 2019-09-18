@@ -60,7 +60,7 @@ If you purchase a low-value fixed asset in the middle of a fiscal year, Dynamics
 -   Acquisition date = December 1, 2012
 -   Number of years to equally divide the depreciation amount = 1 year
 
-The depreciation for the fiscal year from April 1, 2012 to March 31, 2013 is calculated as shown in the following table.
+The depreciation for the fiscal year from April 1, 2012, to March 31, 2013, is calculated as shown in the following table.
 
 | Start date    | End date       | Depreciation amount for the fiscal period | Accumulated depreciation | Remaining depreciation amount | Depreciation amount for the month |
 |---------------|----------------|-------------------------------------------|--------------------------|-------------------------------|-----------------------------------|
