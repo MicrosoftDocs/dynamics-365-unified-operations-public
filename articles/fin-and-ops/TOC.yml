@@ -2696,6 +2696,10 @@
           href: ../supply-chain/localizations/rus-goods-transit-postponed.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+      - name: Inventory
+        items: 
+        - name: Goods in transit from vendor
+          href: ../financials/localizations/rus-goods-transit-vendor.md
       - name: Reporting
         items:
         - name: Financial reporting
