@@ -38,13 +38,15 @@ The top of the page has a Header which shows all the product categories and othe
 
 The main section of a Home page highlights products, category or products and promotions. This can be done using various modules.
 
-**Hero**: The top of the Home page typically shows one or more Hero images which highlight new products and promotions in the store. If there are multiple Hero modules, they are hosted within a Carousel for the user to browse. Refer to the Hero module help topic for more details.
+**Hero**: The top of the Home page typically shows one or more Hero images which highlight new products and promotions in the store. If there are multiple Hero modules, they are hosted within a Carousel for the user to browse. Refer to the Hero module help topic for more details. In the screenshot of the Homepage the first item on the page "New Arrivals" is a Hero.
 
 **Feature**: A feature can also be used within a Carousel or independently to showcase products and promotions. Refer to the Feature help topic for more details.
 
-**Content Placement:** The Content Placement module is used to showcase multiple products or category of products using a mix of images text in a multi-column view. Refer to Content Placement for more details.
+![Feature](./media/Feature.png)
 
-**Video Player:** A video player can be used to showcase video content on the home page. Refer to Video Player for more details.
+**Content Placement:** The Content Placement module is used to showcase multiple products or category of products using a mix of images text in a multi-column view. In the screenshot of the Homepage the 3-column items which say Shop Womens, SHop Mens, Shop Shoes are using a content placement module.  Refer to Content Placement for more details.
+
+**Video Player:** A video player can be used to showcase video content on the home page. Refer to Video Player for more details. In the home page example there is a video player shown.
 
 **Content Rich block**: Content rick block can be used in a single or multi-column view for text content on the home page. Refer to Content Rick block for more details.
 
