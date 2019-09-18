@@ -2,7 +2,7 @@
 # required metadata
 
 title: View and design financial reports
-description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations.
+description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 Finance.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/20/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Finance and Operations. Financial reporting consists of a viewing experience within Finance and Operations and a click-once report designer that lets you create and edit financial reports.
+This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 Finance. Financial reporting consists of a viewing experience within the application and a click-once report designer that lets you create and edit financial reports.
 
 ## Exercise 1: Generate and explore a default financial report
 
@@ -67,7 +67,7 @@ For this exercise, you will be generating and exploring an existing default repo
 13. Select **Report Options**.
 14. Select **Add a dimension filter** and choose **Business Unit**.
 15. Type 001 into the field and select **OK**. The report now displays only the data for the 001 Business Unit. This is a personalized view of the report and isn't available for others to view.
-16. Close the filtered report. Financial reports can be displayed in any currency that has been added to Finance and Operations.
+16. Close the filtered report. Financial reports can be displayed in any currency that has been added to the application.
 17. Select **Currency**, then select **EUR**. The report now displays in Euros. Any currency codes or currency symbols included in the report design now display in the applied currency. If no currency symbol is defined for a currency, the currency symbol is not displayed.
 18. Close the **GL Detail** report.
 19. Close **Report Designer**.
@@ -81,7 +81,7 @@ In this exercise, you will be modifying an existing default report. You will be 
 4. Select **File**, then **Save As** and name the report Detailed Trial Balance with Attributes.
 
     > [!NOTE]
-    > Any time a new report is created in report designer, the financial reports list is updated in Finance and Operations.
+    > Any time a new report is created in report designer, the financial reports list is updated.
 
 5. From the report definition, select the row definition icon to open the **Trial Balance – Default row definition**.
 6. Save the row definition as **Detailed Trial Balance with Attributes**.
