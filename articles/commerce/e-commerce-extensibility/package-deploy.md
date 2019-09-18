@@ -102,7 +102,7 @@ If the processing was successfully completed, a check mark appears in the **Vali
 
 To deploy a package, follow these steps.
 
-1. In LCS, go to the project dashboard, and select the environment that you want to deploy a package to. For example, in the following illustration, the **RushE2E-TIE-SB3** PPE environment is selected.
+1. In LCS, go to the project dashboard, and select the environment that you want to deploy a package to. For example, in the following illustration, the **RushE2E-TIE-SB3** pre-production environment is selected.
 
     ![Deploying to LCS](media/lcs-deploy-11.png)
 
@@ -126,4 +126,4 @@ You can now track the deployment status in the **Details** section.
 
 ![Deploying to LCS](media/lcs-deploy-16.png)
 
-After the deployment is completed, you should see your changes in the authoring tools or on rendering pages. For example, new modules or themes will be available to page authors, or rendering changes will appear in the online environment.
+After the deployment is completed, you should see your changes in the authoring tools or on pages that are rendered. For example, new modules or themes will be available to page authors, or changes are rendered and will appear in the online environment.
