@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation of Microsoft Dynamics 365 for Finance and Operations, it's important that you discuss and plan your environment early in the project.
+This topic provides an overview of various aspects that you must consider while you plan for your project's environment. To help guarantee a successful cloud implementation, it's important that you discuss and plan your environment early in the project.
 
 ## Environment planning overview
 
@@ -73,7 +73,7 @@ You can use the following environment types for your project:
 
 The standard cloud offer includes three environments:
 
-- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as an automated build environment, or to customize Finance and Operations and do unit testing for the changes. Additional develop/test instances can be purchased separately as an optional add-on.
+- **Tier-1 environment: Develop and test** – One develop/test instance is provided for the duration of the subscription. This instance is a non-production single-box instance that the customer can use as an automated build environment, or to customize and perform unit testing for the changes. Additional develop/test instances can be purchased separately as an optional add-on.
 - **Tier-2 environment: Standard Acceptance Testing** – One Standard Acceptance Testing (UAT) instance is provided for the duration of the subscription. This instance is a non-production multi-box instance that customers can use for UAT, integration testing, and training. Additional sandbox/staging instances can be purchased separately as an optional add-on.
 - **Production environment** – One production instance is provided per tenant. The production multi-box instance includes disaster recovery and high availability. It will be provisioned when the implementation approaches the Operate phase, after the required activities in the Microsoft Dynamics Lifecycle Services (LCS) methodology and a successful go-live assessment are completed. Additionally, some file storage and database storage are included in the offer:
 
@@ -82,7 +82,7 @@ The standard cloud offer includes three environments:
 
 ### Provisioning of standard environments
 
-The various Finance and Operations environments are provisioned at different times. The following table shows the suggested timing for the environments in the Finance and Operations standard cloud offer.
+The various environments are provisioned at different times. The following table shows the suggested timing for the environments in the standard cloud offer.
 
 | Environment                     | When does provisioning occur? | Is it self-service? |
 |---------------------------------|-------------------------------|---------------------|
@@ -115,7 +115,7 @@ The following illustrations shows the environment planning process.
 
 ## Additional environments
 
-Additional environments can be purchased as add-ons, or they can be deployed as cloud-hosted environments. The following illustration shows a *sample* overview of standard and additional environments, based on the complexity of the Finance and Operations implementation.
+Additional environments can be purchased as add-ons, or they can be deployed as cloud-hosted environments. The following illustration shows a *sample* overview of standard and additional environments, based on the complexity of the implementation.
 
 ![Environment purpose and complexity](./media/environment-planning-2-purpose-complexity-matrix.png)
 
@@ -160,7 +160,7 @@ After a subscription estimate is activated, you can view transaction lines per h
 ![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure that is currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) will be available as a service from Microsoft. Therefore, to copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/).
+> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure that is currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) will be available as a service from Microsoft. Therefore, to copy a database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/).
 
 ### Purchasing add-on environments
 
