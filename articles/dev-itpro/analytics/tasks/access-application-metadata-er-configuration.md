@@ -38,7 +38,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 
 ## Import metadata configuration 
 1. Click **Metadata configurations**. 
-2. Import the ER metadata configuration that contains metadata from the Finance and Operations application that is configured to generate electronic documents for foreign trade business. This ER metadata configuration has been exported as XML file while the steps in the [(ER) Prepare application metadata to be used in RCS](prepare-application-metadata-rcs.md) procedure have been completed. 
+2. Import the ER metadata configuration that contains metadata that has been configured to generate electronic documents for foreign trade business. This ER metadata configuration has been exported as XML file while the steps in the [(ER) Prepare application metadata to be used in RCS](prepare-application-metadata-rcs.md) procedure have been completed. 
 3. Click **Exchange**. 
 4. Click **Load from XML file**. 
 5. Click **Browse** and select the ‘Foreign trade metadata.xml’ file. 
@@ -124,7 +124,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 36.	Click **Save**. 
 37.	Close the page. 
 38.	Close the page. 
-39.	When you need to extend the existing set of metadata, you can do it in Finance and Operations. Then you can export the new completed version of ER metadata configuration from Finance and Operation,s import it to RCS, and update the prerequisites of the configured model mapping configuration referring to a new version of imported metadata configuration. 
+39.	When needed, you can extend the existing set of metadata and then export the new completed version of ER metadata configuration from the system. You can then import it to RCS, and update the prerequisites of the configured model mapping configuration referring to a new version of imported metadata configuration. 
 
 > [!NOTE]
 > This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used).
