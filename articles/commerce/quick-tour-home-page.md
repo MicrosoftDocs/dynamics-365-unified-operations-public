@@ -30,7 +30,9 @@ ms.dyn365.ops.version:
 
 # Quick tour of Home page
 
-The **Home page** is the default page a shopper lands on when visiting an ecommerce site. This page typically showcases the products and promotions using a combination of marketing modules. It needs to be rich with images and text to keep the shopper engaged. Products need to be listed on the home page so the shopper can quickly discover products without a lot of effort and continue their shopping journey. 
+The **Home page** is the default page a shopper lands on when visiting an ecommerce site. This page typically showcases the products and promotions using a combination of marketing modules. It needs to be rich with images and text to keep the shopper engaged. Products need to be listed on the home page so the shopper can quickly discover products without a lot of effort and continue their shopping journey.  Below is an example of a Home page built with web starter kit and Fabrikam theme.
+
+![Home page](./media/Homepage2.png)
 
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
 
@@ -47,5 +49,7 @@ The main section of a Home page highlights products, category or products and pr
 **Content Rich block**: Content rick block can be used in a single or multi-column view for text content on the home page. Refer to Content Rick block for more details.
 
 **Recommendations:** Product recommendations lists such as New, Trending, Best Selling etc. can be displayed on the Home page. These lists showcase products based on shopping trends. Lists can be algorithmically generated or curated manually. They help the shopper quickly discover top products and continue their shopping journey.
+
+![Recommendations](./media/Recommendations.png)
 
 NOTE: These modules can be used on any page but their placement on the Home Page is important because your customers’ first interaction with your site happens on your Home page.
