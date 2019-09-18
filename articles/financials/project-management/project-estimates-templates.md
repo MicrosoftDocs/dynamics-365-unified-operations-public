@@ -33,20 +33,20 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Microsoft Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations.
+This topic describes the templates and underlying tasks that are used to synchronize project hour estimates and project expense estimates directly from Dynamics 365 Project Service Automation to Dynamics 365 Finance.
 
 > [!NOTE]
-> - Project task integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available in Microsoft Dynamics 365 for Finance and Operations version 8.0.
-> - Actuals integration is available in Microsoft Dynamics 365 for Finance and Operations version 8.0.1 or later.
+> - Project task integration, expense transaction categories, hour estimates, expense estimates, and functionality locking is available in Dynamics 365 for Finance and Operations version 8.0.
+> - Actuals integration is available in version 8.0.1 or later of our product.
 > - If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
 
-## Data flow for Project Service Automation to Finance and Operations
+## Data flow for Project Service Automation to Finance
 
-The Project Service Automation to Finance and Operations integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance and Operations. The integration templates that are available with the Data integration feature enable the flow of data about project hour estimates and project expense estimates from Project Service Automation to Finance and Operations.
+The Project Service Automation to Finance integration solution uses the Data integration feature to synchronize data across instances of Project Service Automation and Finance. The integration templates that are available with the Data integration feature enable the flow of data about project hour estimates and project expense estimates from Project Service Automation to Finance.
 
-The following illustration shows how the data is synchronized between Project Service Automation and Finance and Operations.
+The following illustration shows how the data is synchronized between Project Service Automation and Finance.
 
-[![Data flow for Project Service Automation integration with Finance and Operations](./media/ProjectEstimatesFlow.png)](./media/ProjectEstimatesFlow.png)
+[![Data flow for Project Service Automation integration with Finance](./media/ProjectEstimatesFlow.png)](./media/ProjectEstimatesFlow.png)
 
 ## Project hour estimates
 
@@ -54,7 +54,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 To access the available templates, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize project hour estimates from Project Service Automation to Finance and Operations:
+The following template and underlying tasks are used to synchronize project hour estimates from Project Service Automation to Finance:
 
 - **Name of the template in Data integration:** Project hour estimates (PSA to Fin and Ops)
 - **Name of the tasks in the project:**
@@ -64,13 +64,13 @@ The following template and underlying tasks are used to synchronize project hour
 
 ### Entity set
 
-| Project Service Automation | Finance and Operations                        |
+| Project Service Automation | Finance                                       |
 |----------------------------|-----------------------------------------------|
 | Project tasks              | Integration entity for project hour estimates |
 
 ### Entity flow
 
-Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project hour forecasts.
+Project hour estimates are managed in Project Service Automation, and they are synchronized to Finance as project hour forecasts.
 
 ### Prerequisites
 
@@ -97,11 +97,11 @@ The Project hour estimates (PSA to Fin and Ops) template has a default filter th
 
 #### Filter out empty transaction category rows
 
-You must add a filter to remove any rows that have empty transaction categories. This task is required, regardless of whether you're using the default template or creating your own template. This filter removes any summary rows from Project Service Automation that might cause the hour forecasts in Finance and Operations to be incorrect. Select **Advanced Query and Filtering** link to filter out null records in the **msdyn\_transactioncategory\_value** column.
+You must add a filter to remove any rows that have empty transaction categories. This task is required, regardless of whether you're using the default template or creating your own template. This filter removes any summary rows from Project Service Automation that might cause the hour forecasts in Finance to be incorrect. Select **Advanced Query and Filtering** link to filter out null records in the **msdyn\_transactioncategory\_value** column.
 
 ### Template mapping in Data integration
 
-The following illustration shows an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+The following illustration shows an example of the template task mapping in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance.
 
 [![Template mapping](./media/ProjectHourEstimatesMapping.jpg)](./media/ProjectHourEstimatesMapping.jpg)
 
@@ -109,7 +109,7 @@ The following illustration shows an example of the template task mapping in Data
 
 ### Template and tasks
 
-The following template and underlying tasks are used to synchronize project expense estimates from Project Service Automation to Finance and Operations:
+The following template and underlying tasks are used to synchronize project expense estimates from Project Service Automation to Finance:
 
 - **Name of the template in Data integration:** Project expense estimates (PSA to Fin and Ops)
 - **Name of the tasks in the project:**
@@ -119,14 +119,14 @@ The following template and underlying tasks are used to synchronize project expe
 
 ### Entity set
 
-| Project Service Automation | Finance and Operations                                   |
+| Project Service Automation | Finance                                                  |
 |----------------------------|----------------------------------------------------------|
 | Transaction Connections    | Integration entity for project transaction relationships |
 | Estimate Lines             | Integration entity for project expense estimates         |
 
 ### Entity flow
 
-Project expense estimates are managed in Project Service Automation, and they are synchronized to Finance and Operations as project expense forecasts.
+Project expense estimates are managed in Project Service Automation, and they are synchronized to Finance as project expense forecasts.
 
 ### Prerequisites
 
@@ -171,7 +171,7 @@ else **null**
 
 ### Template mapping in Data integration
 
-The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance and Operations.
+The following illustrations show examples of the template task mappings in Data integration. The mapping shows the field information that will be synchronized from Project Service Automation to Finance.
 
 [![Template mapping](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)](./media/ExpenseEstimateTransactionRelationshipsMapping.jpg)
 
