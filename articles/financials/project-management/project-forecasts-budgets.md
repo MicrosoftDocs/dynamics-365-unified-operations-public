@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations provides two ways to manage and control your projects: project forecasts and project budgets. 
+There are two ways to manage and control your projects: project forecasts and project budgets. 
 
 Use project forecasting if your organization has an operational perspective, and if it focuses on revenues and costs that are derived from specific transactions. Use project budgeting if your organization focuses more on the financial amounts. 
 
