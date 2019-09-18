@@ -124,7 +124,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 36.	Click **Save**. 
 37.	Close the page. 
 38.	Close the page. 
-39.	When needed, you can extend the existing set of metadata and then export the new completed version of ER metadata configuration from the system. You can then import it to RCS, and update the prerequisites of the configured model mapping configuration referring to a new version of imported metadata configuration. 
+39.	When needed, you can extend the existing set of metadata and then export the new completed version of ER metadata configuration. You can then import it to RCS, and update the prerequisites of the configured model mapping configuration referring to a new version of imported metadata configuration. 
 
 > [!NOTE]
 > This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used).
