@@ -33,6 +33,9 @@ ms.dyn365.ops.version: Platform update 28
 [!include [banner](../includes/banner.md)]
 
 >[!IMPORTANT]
+>Currently this feature is not compatible with Financial Reporting. 
+
+>[!IMPORTANT]
 >It is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 or later.
 
 This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
