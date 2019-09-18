@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This topic explains how to approve vendors for specific procurement categories in Dynamics 365 for Finance and Operations. When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up. This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category. This task would usually be carried out by a procurement professional. You can use this procedure in demo data company USMF.
+This topic explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management. When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up. This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category. This task would usually be carried out by a procurement professional. You can use this procedure in demo data company USMF.
 
 1. In the navigation pane, go to **Modules > Procurement and sourcing > Vendors > All vendors**.
 2. Select the vendor that you want to set as an approved or preferred vendor for a category.
