@@ -43,20 +43,20 @@ To activate the functionality in the **Accounts receivable** module, go to **Acc
 
 In the **General ledger** module, go to **Journal entries** \> **General journal**, select **Lines**, and then, on the Action Pane, select **Functions** \> **Credit invoicing**.
 
-![ita-credit-invoicing-gl](./media/ita-credit-invoicing-gl.png)
+![General journal lines page with Credit invoicing option](./media/ita-credit-invoicing-gl.png)
 
-In the **Accounts receivable** module, go to **Invoices** \> **All free text invoice**, and then, on the Action Pane, on the **Invoice** tab, in the **Functions** group, select **Credit invoicing**.
+In the **Accounts receivable** module, go to **Invoices** \> **All free text invoices**, and then, on the Action Pane, on the **Invoice** tab, in the **Functions** group, select **Credit invoicing**.
 
-![ita-credit-invoicing-fti](./media/ita-credit-invoicing-fti.png)
+![All free text invoices page with Credit invoicing option](./media/ita-credit-invoicing-fti.png)
 
 In the **Accounts receivable** module, go to **Orders** \> **All sales orders**, and then, on the Action Pane, on the **Invoice** tab, in the **Correction** group, select **Credit invoicing**.
 
-![ita-credit-invoicing-so](./media/ita-credit-invoicing-so.png)
+![All sales orders page with Credit invoicing option](./media/ita-credit-invoicing-so.png)
 
 In the **Accounts payable** module, go to **Invoices** \> **Invoice journal**, select **Lines**, and then, on the Action Pane, select **Functions** \> **Credit invoicing**.
 
-![ita-credit-invoicing-apij](./media/ita-credit-invoicing-apij.png)
+![Invoice journal lines page with Credit invoicing option](./media/ita-credit-invoicing-apij.png)
 
-In the **Accounts payable** module, go to **Purchase orders** \> **All purchase order**, and then, on the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
+In the **Accounts payable** module, go to **Purchase orders** \> **All purchase orders**, and then, on the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 
-![ita-credit-invoicing-po](./media/ita-credit-invoicing-po.png)
+![All purchase orders page with Credit invoicing page](./media/ita-credit-invoicing-po.png)
