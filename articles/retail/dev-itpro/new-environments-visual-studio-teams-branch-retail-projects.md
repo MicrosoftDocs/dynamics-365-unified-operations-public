@@ -257,7 +257,7 @@ Regardless of whether there are customizations in the code branches, the followi
 5. Optional: Restore a recent copy of a production database that has good data.
 
     1. Rename the existing database **AxDB\_Orig**.
-    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
+    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
     3. In Visual Studio, refresh the model store.
     4. In Visual Studio, do a full build if the source and destination environments of the database are on different versions.
     5. In Visual Studio, run a full database synchronization.
@@ -284,10 +284,10 @@ Regardless of whether there are customizations in the code branches, the followi
 11. Install MPOS or MPOSOffline by running the installer at **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe**. You must complete this step one time to deploy the ClientBroker files.
 12. In Visual Studio, open **ModernPOS.sln** (as an administrator), and do a full rebuild.
 13. Press F5 to start MPOS in the debugger.
-14. In Finance and Operations, open the **Channel profiles** page, and copy the Retail Server URL for the default channel profile.
+14. In Retail, open the **Channel profiles** page, and copy the Retail Server URL for the default channel profile.
 15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Retail Server.
-16. In Finance and Operations, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
-17. In Finance and Operations, run job **1060** (**AX/Distribution schedule**).
+16. In Retail, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
+17. In Retail, run job **1060** (**AX/Distribution schedule**).
 18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Retail Server URL, select a store and a register, and finish the activation.
 
 You should now be able to run MPOS in the debugger from your local sources.
