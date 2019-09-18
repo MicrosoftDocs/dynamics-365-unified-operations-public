@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 05/09/2019
+ms.date: 09/28/2019
 
 ms.topic: article
 ms.prod: 
@@ -156,7 +156,7 @@ https://<base URL>/api/connector/ack/<activity ID>
 POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 ```
 > [!NOTE]
-> Until a message is successfully acknowledged, the same message will become available to dequeue every 30 minutes. In cases when a message is being dequeued more than one time, the dequeue response will have the last dequeued date time set. It will be blank for the first dequeue of a message. It is therefore important to ensure that a message is successfully acknowledged to prevent download of the same message again. When an acknowledgement fails, having a re-try logic to acknowledge is recomended.
+> [!NOTE] Until a message is successfully acknowledged, the same message will become available to dequeue every 30 minutes. In cases when a message is being dequeued more than one time, the dequeue response will use the last dequeued date time. This will be blank for the first dequeue of a message. It is important to ensure that a message is successfully acknowledged to prevent a repeated download of the same message. When an acknowledgement fails, having re-try logic to acknowledge the failure is recommended.
 
 ### API for getting message status
 The API to get the status of a message is available as of hotfix KB 4058074 for Platform update 12. This API is particularly useful in import scenarios to determine if a message has been successfully processed. A message is created when the enqueue process is completed. If the message returns a failed status, you can set your integration app to retry or take another action.
