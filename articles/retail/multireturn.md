@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](includes/banner.md)]
 
 
-In Dynamics 365 for Finance and Operations version 10.0, returns can be made across multiple orders and invoices, whereas in releases prior to 10.0, returns could only be processed by a single invoice at a time. 
+Returns can be made across multiple orders and invoices. 
 
 ## Configure Retail to support returns across multiple customer order and invoices
 
