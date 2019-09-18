@@ -350,12 +350,11 @@ Notice that the results of the test execution are also sent to Azure DevOps so t
 
 This test suite must fail when at least one of the generated outputs doesn't match the corresponding baseline. To achieve this situation, you can use your derived version of the **BACS (UK)** format that will generate a payment file that has different content than the corresponding baseline. To simulate this situation, you can use the same **BACS (UK)** format but change the payment amount on the processed payment line.
 
-1. Open the application in a web browser.
-2. Go to **Accounts payable \> Payments \> Payment journal**.
-3. Select **Lines**.
-4. Select the payment line, and then select **Payment status \> None**.
-5. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
-6. Select **Save** to save your changes.
+1. Open the application and go to **Accounts payable \> Payments \> Payment journal**.
+2. Select **Lines**.
+3. Select the payment line, and then select **Payment status \> None**.
+4. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
+5. Select **Save** to save your changes.
 
 ### Run the tests in RSAT
 
