@@ -127,5 +127,5 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 39.	When you need to extend the existing set of metadata, you can do it in Finance and Operations. Then you can export the new completed version of ER metadata configuration from Finance and Operation,s import it to RCS, and update the prerequisites of the configured model mapping configuration referring to a new version of imported metadata configuration. 
 
 > [!NOTE]
-> This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used for Dynamics 365 Finance and Operations).
+> This way of getting information about application metadata is the only one available for locally deployed applications (when local business data (LBD), or on-premises, deployment model is used).
 		
