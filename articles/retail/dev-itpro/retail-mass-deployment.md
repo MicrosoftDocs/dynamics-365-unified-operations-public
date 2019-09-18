@@ -35,7 +35,8 @@ This topic explains how you can use self-service to do silent servicing updates 
 
 ## Delimiters for mass deployment
 
-The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to the July 2017 version with Application update 3 or later.
+The following table shows the delimiters that can currently be used in execution commands for mass deployment. 
+
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
@@ -51,7 +52,7 @@ The following table shows the delimiters that can currently be used in execution
 
 ### Before you begin
 
-To use this functionality, you must be using the July 2017 version with Application update 3 or later. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
+Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
 
 ### Examples of commands for silent servicing
 
