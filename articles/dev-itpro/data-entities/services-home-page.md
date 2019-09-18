@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Finance and Operations. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
+This topic describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
 
 ## List of services
-The following table lists all the service endpoints, and compares the endpoints available for Finance and Operations, and AX 2012.
+The following table lists all the service endpoints, and compares the endpoints available for the application, and AX 2012.
 
 | Service endpoint            | AX 2012 | Finance and Operations         |
 |-----------------------------|---------|--------------------------------|
@@ -85,7 +85,7 @@ And below is the illustration describes how authorization works for Service to s
 
 **Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
 
-Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide). For Finance and Operation specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide). For specific configuration in this process, the following additional information must be used in context.
 
 Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:
@@ -99,7 +99,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 
 ### Register your external application in Finance and Operations
 
-1. In Finance and Operations, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
+1. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
