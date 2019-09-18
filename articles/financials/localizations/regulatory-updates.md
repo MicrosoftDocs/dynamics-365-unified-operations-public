@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory updates
-description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/23/2019
@@ -36,7 +36,7 @@ This topic lists the regulatory updates that are planned and released in Dynamic
 
 Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the following resources:
 - [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+- [What's new for Microsoft Dynamics 365 Finance](../../fin-and-ops/get-started/whats-new-changed.md)
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
