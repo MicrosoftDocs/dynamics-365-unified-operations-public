@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system, such as Microsoft Dynamics 365 for Finance and Operations, and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). For Finance and Operations, we have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
+The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). We have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
 
 ## Architecture
 Integration does the following things:
@@ -51,10 +51,10 @@ Integration does the following things:
     ![Set up recurring integrations](./media/set-up-recurring.png)
 
 ## Authorization for the integration REST API
-The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (Azure AD) and give it appropriate permission to Finance and Operations. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
+The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that will interact with that recurring job. Therefore, be sure to make a note of the application ID.
 
 > [!NOTE]
-> This feature is not supported with the on-premises version of Dynamics 365 for Finance and Operations.
+> This feature is not supported with Dynamics 365 Finance + Operations (on-premises).
 
 ## Set up a data project and recurring data jobs
 ### Create a data project
@@ -102,7 +102,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
 You can use integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
 
 ## Integration REST APIs
-The following set of APIs is used to exchange data between the integration client and Finance and Operations.
+The following set of APIs is used to exchange data between the integration client and the application.
 
 ### API for import (enqueue)
 Make an HTTP POST call against the following URL.
@@ -136,7 +136,7 @@ https://<base URL>/api/connector/dequeue/<activity ID>
 GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 ```
 
-After the client downloads the data, an acknowledgment must be sent back to Finance and Operations, so that you can mark the data as received.
+After the client downloads the data, an acknowledgment must be sent back to the application, so that you can mark the data as received.
 
 In cases when there was no file uploaded to the blob, the dequeue API will return a response indicating as such.
 
@@ -198,7 +198,7 @@ The batch job status is retrieved asynchronously from the batch framework for th
 ![Batch job status](./media/show-batch-status.png)
 
 ### Preventing uploads when there are no records
-When you use recurring exports in Finance and Operations, you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
+When you use recurring exports you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
 
 You can set the **Prevent upload when zero records** option either when you configure a recurring export job or after a job has been created. This option is available only when you use files or packages as data sources.
 
@@ -214,6 +214,6 @@ The **Total records exported** column shows the total count of records that were
 The **File uploaded successfully** column contains a check mark if the file or the package was uploaded successfully. If the file wasn't uploaded because of an error, or because there were no records, the column will be blank.
 
 ### Http vs Https
-The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in Finance and Operations environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from Finance and Operations.
+The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in application environments that use a load balancer, such as production environments. (You cannot see the behavior in one box environments). We recommend that you change the URI scheme to HTTPS in the middleware application that is trying to dequeue from the application.
 
 ![Batch job status](./media/show-batch-status.png)
