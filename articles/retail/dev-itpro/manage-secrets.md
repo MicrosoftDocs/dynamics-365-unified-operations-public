@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 # Manage secrets for retail channels
 
+[!include [banner](../includes/banner.md)]
+
 This topic explains how to manage secrets when you're using an extension with retail channels that require access to secrets.
 
 ## Key Vault setup
