@@ -106,19 +106,19 @@ To deploy a package, follow these steps.
 
     ![Deploying to LCS](media/lcs-deploy-11.png)
 
-2. In the **Environment features** section on the right side of the page, select **Manage**.
+1. In the **Environment features** section on the right side of the page, select **Manage**.
 
     ![Deploying to LCS](media/lcs-deploy-12.png)
 
-3. Select the **E-Commerce (Preview)** tab.
+1. Select the **E-Commerce (Preview)** tab.
 
     ![Deploying to LCS](media/lcs-deploy-13.png)
 
-4. Select **Apply extension** to select the package to deploy.
+1. Select **Apply extension** to select the package to deploy.
 
     ![Deploying to LCS](media/lcs-deploy-14.png)
 
-5. In the **Update e-Commerce** dialog box, select the package that you uploaded earlier, and then select **Update**.
+1. In the **Update e-Commerce** dialog box, select the package that you uploaded earlier, and then select **Update**.
 
     ![Deploying to LCS](media/lcs-deploy-15.png)
 
