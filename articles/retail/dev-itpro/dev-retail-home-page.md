@@ -109,6 +109,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
 -   [Add customer preference data to a channel database](add-customer-preference-channel.md)
 -   [Add properties to a sales order](add-properties-sales-order.md)
+-   [Manage secrets for retail channels](manage-secrets.md)
 
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
