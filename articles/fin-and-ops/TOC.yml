@@ -2280,6 +2280,8 @@
         href: ../financials/localizations/emea-ita-credit-invoicing.md
       - name: Sales tax books
         href: ../financials/localizations/emea-ita-fiscal-books.md
+      - name: VAT management and reporting by tax point date (Date of VAT register)
+        href: ../financials/localizations/emea-ita-vat-management.md
       - name: Split payment for invoices issued to the Public Administration
         href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
       - name: Withholding tax
