@@ -41,7 +41,7 @@ Finance and Operations offers different [deployment options](../../dev-itpro/dep
 
 ## Eligibility for FastTrack for Finance and Operations
 
-To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum for the Dynamics 365 Unified Operations Plan or equivalent.
+To get started with FastTrack, your project must meet the minimum license requirement. For more information, see the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409). Currently, there is a 20-seat minimum for the Dynamics 365 Finance and Operations Plan or equivalent.
 
 After your **Implementation project** workspace is provisioned in Microsoft Dynamics Lifecycle Services (LCS), the FastTrack team will contact your project team to onboard the project and provide information about the program. No action is required on your part. You just have to make sure that the user information in LCS is up to date, and that the email addresses in the setup are monitored.
 
