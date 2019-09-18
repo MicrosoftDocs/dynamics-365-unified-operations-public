@@ -40,6 +40,8 @@ The main section of a Home page highlights products, category or products and pr
 
 **Hero**: The top of the Home page typically shows one or more Hero images which highlight new products and promotions in the store. If there are multiple Hero modules, they are hosted within a Carousel for the user to browse. Refer to the Hero module help topic for more details. In the screenshot of the Homepage the first item on the page "New Arrivals" is a Hero.
 
+![Hero](./media/Hero.png)
+
 **Feature**: A feature can also be used within a Carousel or independently to showcase products and promotions. Refer to the Feature help topic for more details.
 
 ![Feature](./media/Feature.png)
