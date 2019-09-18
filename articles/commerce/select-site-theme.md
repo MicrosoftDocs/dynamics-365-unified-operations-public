@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select a site theme
-description: This topic describes how to set or change your site's theme in Dynamics 365 Commerce.
+description: This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
 ms.date: 10/01/2019
@@ -33,25 +33,22 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set or change your site's theme in Dynamics 365 Commerce.
+This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Your site's layout and style (fonts, sizes, colors, etc.) are defined by the theme you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](http://). See [Create a new theme](http://) for more information on building and deploying themes.
+A site's layout and style (for example, fonts, sizes, and colors) are defined by the theme that you select and apply to the site. A theme is created and deployed by a developer at your company. For an overview of themes, see [Theming overview](http://). For more information about how to create and deploy themes, see [Create a new theme](http://).
 
-When you create a new site, it is configured with a theme called Fabrikam which is provided as part of the starter kit. After you have deployed additional themes for your site, you can configure the site to use one of those themes. 
+By default, when you first create a site, it uses a theme that is named **Fabrikam**. This default theme is provided as part of the starter kit. After you've deployed additional themes for your site, you can configure the site so that it uses one of them instead.
 
 ## Select the site theme
 
-To select the theme that is applied to your site, do the following.
+To select the theme that is applied to your site, follow these steps.
 
-1. Navigate to your site in the site authoring environment
-1. Go to **Site Management** > **Extensibility**.
-1. Under **Theme**, select a theme option from the drop-down menu.
+1. In the site authoring environment, go to your site.
+1. Go to **Site Management** \> **Extensibility**.
+1. Under **Theme**, select a theme on the drop-down menu.
+1. To apply the selected theme to your site, select **Save and publish**.
 
-[!NOTE]
-The theme you select will be applied to your published site as soon as you click **Save and publish** on the Extensibility page. If you wish to preview a theme on your site, you can use your development or sandbox environment. 
-
- 
-
- 
+> [!NOTE]
+> The theme that you select is published to your site as soon as you select **Save and publish** on the **Extensibility** page. To preview a theme on your site before you apply it, you can use your development or sandbox environment.
