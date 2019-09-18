@@ -32,6 +32,9 @@ ms.dyn365.ops.version:
 
 The **Product details** page is the page that provides detailed information about a product. It allows your customers to configure and choose the options (dimensions) of the product. It should have all the information about the product so the user can make a purchase decision.
 
+![Product details page](./media/PDP.png)
+
+
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
 
 The main section on the Product details page begins with a **Buy Box**. This is the most important module on the product details page. The buy box is technically a container module that hosts several modules which hold key information about the product such as the product name, product images, description, price and product ratings. It allows the user to configure the dimensions of the product (e.g. size, style, color etc.) and add it to cart. A buy box module needs context of a product id which is derived from the page context. If this module is placed on a page where the page context does not have product id, it will not render the information correctly. 
