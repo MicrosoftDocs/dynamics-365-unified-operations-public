@@ -58,45 +58,45 @@ To upload a site configuration package by using LCS, follow these steps.
 
 1. Go to <https://lcs.dynamics.com>. (Alternatively, if you're using the test integration LCS server, go to <https://lcs.tie.dynamics.com>). You should see a sign-in page that resembles the following illustration.
 
-    ![Uploading to LCS](media/lcs-deploy-1.png)
+    ![LCS sign-in page](media/lcs-deploy-1.png)
 
 1. Select **Sign in**, and enter your LCS-provided account credentials. The main dashboard appears.
 
-    ![Uploading to LCS](media/lcs-deploy-2.png)
+    ![LCS main dashboard](media/lcs-deploy-2.png)
 
 1. Select the e-Commerce project that you will be using. The project dashboard appears.
 
-    ![Uploading to LCS](media/lcs-deploy-3.png)
+    ![LCS project dashboard](media/lcs-deploy-3.png)
 
 1. Scroll to the right to see more options.
 
-    ![Uploading to LCS](media/lcs-deploy-4.png)
+    ![LCS options when scrolling to the right](media/lcs-deploy-4.png)
 
 1. To upload the package, in the **More tools** section, select the **Asset Library** tile.
 1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Retail representative to obtain the required code.
 
-    ![Uploading to LCS](media/lcs-deploy-5.png)
+    ![LCS asset library](media/lcs-deploy-5.png)
 
 1. Select the plus sign (+).
 1. In the **Upload e-Commerce package file** dialog box, enter a name and description for the package, and then select **Add a file**.
 
-    ![Uploading to LCS](media/lcs-deploy-6.png)
+    ![LCS "Upload e-Commerce package file" dialog box](media/lcs-deploy-6.png)
 
 1. In the **Upload file asset** dialog box, select **Browse**, and browse to the location of the package zip file that you created earlier. Select the file, and then select **Upload**.
 
-    ![Uploading to LCS](media/lcs-deploy-7.png)
+    ![LCS "Upload file asset" dialog box](media/lcs-deploy-7.png)
 
 1. When the upload is completed, you're returned to the **Upload e-Commerce package file** dialog box. Select **Confirm** to process the upload.
 
-    ![Uploading to LCS](media/lcs-deploy-8.png)
+    ![LCS "Upload e-Commerce package file" dialog box after upload](media/lcs-deploy-8.png)
 
 While the upload is being processed, you might have to refresh the page to see status updates. The processing can take between 45 and 50 minutes. When it's completed, a success or failure message is shown.
 
-![Uploading to LCS](media/lcs-deploy-9.png)
+![Upload being processed in LCS asset library](media/lcs-deploy-9.png)
 
 If the processing was successfully completed, a check mark appears in the **Valid** column.
 
-![Uploading to LCS](media/lcs-deploy-10.png)
+![Upload successfully processed in LCS asset library](media/lcs-deploy-10.png)
 
 ## Deploy a package
 
@@ -104,26 +104,26 @@ To deploy a package, follow these steps.
 
 1. In LCS, go to the project dashboard, and select the environment that you want to deploy a package to. For example, in the following illustration, the **RushE2E-TIE-SB3** pre-production environment is selected.
 
-    ![Deploying to LCS](media/lcs-deploy-11.png)
+    ![Selecting an environment in the LCS project dashboard](media/lcs-deploy-11.png)
 
 1. In the **Environment features** section on the right side of the page, select **Manage**.
 
-    ![Deploying to LCS](media/lcs-deploy-12.png)
+    !["Environment features" in LCS project dashboard](media/lcs-deploy-12.png)
 
 1. Select the **E-Commerce (Preview)** tab.
 
-    ![Deploying to LCS](media/lcs-deploy-13.png)
+    !["E-Commerce (Preview)" tab in LCS project dashboard](media/lcs-deploy-13.png)
 
 1. Select **Apply extension** to select the package to deploy.
 
-    ![Deploying to LCS](media/lcs-deploy-14.png)
+    !["Apply extension" in LCS project dashboard](media/lcs-deploy-14.png)
 
 1. In the **Update e-Commerce** dialog box, select the package that you uploaded earlier, and then select **Update**.
 
-    ![Deploying to LCS](media/lcs-deploy-15.png)
+    !["Update e-Commerce" dialog box in LCS project dashboard](media/lcs-deploy-15.png)
 
 You can now track the deployment status in the **Details** section.
 
-![Deploying to LCS](media/lcs-deploy-16.png)
+!["Details" section of "E-Commerce (Preview)" tab in LCS project dashboard](media/lcs-deploy-16.png)
 
 After the deployment is completed, you should see your changes in the authoring tools or on pages that are rendered. For example, new modules or themes will be available to page authors, or changes are rendered and will appear in the online environment.
