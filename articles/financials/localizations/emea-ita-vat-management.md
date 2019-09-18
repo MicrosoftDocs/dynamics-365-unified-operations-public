@@ -54,7 +54,7 @@ For more information about the Date of VAT register feature, see [Tax point date
 
 When the Date of VAT register feature is turned on, users in legal entities that have their primary address in Italy will be able to set the **Date of VAT register** option on **General ledger parameters** page to **Yes**.
 
-![date-of-vat-filling](./media/date-of-vat-gl-parameter.png)
+![General ledger parameters page, Sales tax tab, Date of VAT register field is highlighted](./media/date-of-vat-gl-parameter.png)
 
 When this option is set to **Yes**, the **Settle and post sales tax** process and the **Italian sales tax payment** report will consider sales tax transactions based on the date when the VAT was registered instead of the date when the transaction was posted.
 
@@ -71,7 +71,7 @@ The **Date of VAT register** field is stored in a TaxTrans_W table. This table i
 
 To help avoid this issue, you can run the **Sales tax transactions extension** consistency check. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog box, expand **Program** \> **General ledger** \> **Sales tax**, and then select the **Sales tax transactions extension** check box. You don't have to select the parent check boxes if you want to run only the **Sales tax transactions extension** consistency check.
 
-![date-of-vat-consistency-check](./media/date-of-vat-consistency-check.png)
+![ Consistency check dialog box with Sales tax transactions extension check box highlighted](./media/date-of-vat-consistency-check.png)
 
 When you run the **Sales tax transactions extension** consistency check, set the following options:
 
