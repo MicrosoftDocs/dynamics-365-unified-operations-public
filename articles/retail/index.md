@@ -36,8 +36,6 @@ ms.dyn365.ops.version: Version 1611
 
 Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
-> [!NOTE]
-> Dynamics 365 for Retail is closely related to Dynamics 365 for Finance and Operations, and Dynamics 365 for Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail; in topics that are primarily related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations; in topics that are primarily related to human resources, the product name will be Dynamics 365 for Talent.
 
 In the left pane, select a feature area to learn more about it.
 
@@ -83,8 +81,8 @@ You will set up several components to define the relationships among a store, th
 
 If you've been asked to customize your environment, or if you're responsible for deploying and maintaining your system, be sure to see the developer and system administrator content that is specific to Retail, in addition to the more general content.
 
-- [Dynamics 365 for Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
-- [Development and Administration for Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
+- [Development and Administration for Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## Additional resources
 
