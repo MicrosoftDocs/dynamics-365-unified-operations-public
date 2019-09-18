@@ -34,28 +34,29 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 
 ## Activate credit invoicing
-To activate this functionality in the **Accounts payable** area, go to  **Accounts payable** \> **Setup** \> **Parameters**, and on the **Updates** tab, mark the **Credit invoicing** check box.
 
-To activate this functionaltiy in the **Accounts receivable** area, go to **Accounts receivable** \> **Setup** \> **Parameters**, and on the **Updates** tab, makr the **Credit invoicing** check box.
+To activate the credit invoicing functionality in the **Accounts payable** module, go to **Accounts payable** \> **Setup** \> **Parameters**, and then, on the **Updates** tab, select the **Credit invoicing** check box.
 
-## Locate the Credit invoicing button
+To activate the functionality in the **Accounts receivable** module, go to **Accounts receivable** \> **Setup** \> **Parameters**, and then, on the **Updates** tab, select the **Credit invoicing** check box.
 
-In **General ledger**, go to **Journal entries** \> **General journal** \> **Lines**, and on the Action Pane, select **Functions** \> **Credit invoicing**.
+## Find the Credit invoicing button
+
+In the **General ledger** module, go to **Journal entries** \> **General journal**, select **Lines**, and then, on the Action Pane, select **Functions** \> **Credit invoicing**.
 
 ![ita-credit-invoicing-gl](./media/ita-credit-invoicing-gl.png)
 
-In **Accounts receivable**, go to **Invoices** \> **All free text invoice**. On the Action Pane, on the **Invoice** tab, in the **Functions** group, click **Credit invoicing**.
+In the **Accounts receivable** module, go to **Invoices** \> **All free text invoice**, and then, on the Action Pane, on the **Invoice** tab, in the **Functions** group, select **Credit invoicing**.
 
 ![ita-credit-invoicing-fti](./media/ita-credit-invoicing-fti.png)
 
-In **Accounts receivable**, go to **Orders** \> **All sales orders**. On the Action Pane, on the **Invoice** tab, in the **Correction** group, select **Credit invoicing**.
+In the **Accounts receivable** module, go to **Orders** \> **All sales orders**, and then, on the Action Pane, on the **Invoice** tab, in the **Correction** group, select **Credit invoicing**.
 
 ![ita-credit-invoicing-so](./media/ita-credit-invoicing-so.png)
 
-In **Accounts payable**, go to **Invoices** \> **Invoice journal** > **Lines**, and on the Action Pane, on the **Functions** tab, select **Credit invoicing**.
+In the **Accounts payable** module, go to **Invoices** \> **Invoice journal**, select **Lines**, and then, on the Action Pane, select **Functions** \> **Credit invoicing**.
 
 ![ita-credit-invoicing-apij](./media/ita-credit-invoicing-apij.png)
 
-In **Accounts payable**, go to **Purchase orders** \> **All purchase order**. On the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
+In the **Accounts payable** module, go to **Purchase orders** \> **All purchase order**, and then, on the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 
 ![ita-credit-invoicing-po](./media/ita-credit-invoicing-po.png)
