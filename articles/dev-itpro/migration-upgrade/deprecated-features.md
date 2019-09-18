@@ -61,6 +61,26 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
+### Blacklist report (IT) – Feature reference IT-00001
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Not legally required. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Italian localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Blacklist report (IT) – Feature reference IT-00001**. |
+
+### Domestic tax report – Feature reference IT-00003
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Not legally required. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Italian localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Domestic tax report – Feature reference IT-00003**. |
+
 
 ## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
 
