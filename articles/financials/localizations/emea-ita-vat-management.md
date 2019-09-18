@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: VAT management and reporting by tax point date (Date of VAT register
+title: VAT management and reporting by tax point date (Date of VAT register)
 description: This topic provides information about the changes to value-added tax (VAT) management in Italy.
 author: LizaGolub
 manager: AnnBe
@@ -31,100 +31,98 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, on the 23rd of October 2018, the Law Decree 119 (L.D.119/2018) introduced a change in the Italian value-added tax (VAT) management that would go into effect on July 1, 2019. Here is a summary of the change:
+On October 23, 2018, Law Decree 119 (L.D.119/2018) in Italy introduced a change in Italian value-added tax (VAT) management. This change went into effect on July 1, 2019. Here is a summary of the change:
 
--	VAT payers can recover input VAT in the monthly VAT settlement when the VAT point is triggered. This can occur even if the purchase invoice is received and recorded in the input VAT ledger before the fifteenth day of the following month. This rule doesn’t apply to transactions where the VAT point is triggered in a fiscal year that differs from the fiscal year in which the purchase invoice is received.
--	For the supply of services and goods, the invoice can be issued by the fifteenth day of the month after the month in which the VAT point was triggered. Invoices that are issued and booked before the fifteenth day of the month after the month in which the VAT point was triggered, must be included in the VAT settlement of the previous month.
--	Starting July 1, 2019, the invoice can be issued within 10 days of the VAT point. If the invoice isn’t issued at the VAT point, in addition to the invoice date, it should include a reference to the VAT point date.
-- Invoices that are booked before the fifteenth day of the next month, but have a reference to the previous VAT settlement, should not interrupt the sequential posting. Invoices with a VAT point date in the previous month but invoice date in the current month, should be booked in a chronological sequence with the invoices in the current month that contain a reference that these invoices are related to the previous VAT settlement.
-- Companies that issue the sales invoice on the same day without applying the change that is introduced by L.D.119/2018, remain compliant.
+- VAT payers can recover input VAT in the monthly VAT settlement when the VAT point is triggered. This recovery can occur even if the purchase invoice is received and recorded in the input VAT ledger before the fifteenth day of the next month. This rule doesn't apply to transactions where the VAT point is triggered in a fiscal year that differs from the fiscal year when the purchase invoice is received.
+- For the supply of goods and services, the invoice can be issued by the fifteenth day of the month after the month when the VAT point was triggered. Invoices that are issued and booked before the fifteenth day of the month after the month when the VAT point was triggered must be included in the VAT settlement of the previous month.
+- As of July 1, 2019, the invoice can be issued within 10 days of the VAT point. If the invoice isn't issued at the VAT point, it should include a reference to the VAT point date in addition to the invoice date.
+- Invoices that are booked before the fifteenth day of the next month but have a reference to the previous VAT settlement should not interrupt the sequential posting. If invoices have a VAT point date in the previous month but an invoice date in the current month, they should be booked in chronological order with the invoices in the current month that have a reference that indicates that these invoices are related to the previous VAT settlement.
+- Companies that issue the sales invoice on the same day, without applying the change that is introduced by L.D.119/2018, remain compliant.
 
-This feature is delivered to support the changes introduced by the L.D.119/2018 on **Microsoft Dynamics 365 for Finance and Operations** starting from version **10.0.6**.
+The Date of VAT register feature supports the changes that were introduced by L.D.119/2018. It's delivered in Microsoft Dynamics 365 for Finance and Operations version 10.0.6 (November 2019) and later.
 
-Before you can use this feature, you must enable the **Date of VAT register** feature in **Feature management** workspace which introduces the new date-type field, **Date of VAT register** for VAT transactions. The additional date will serve as a VAT point determination criterion for including VAT transactions in the scope of the sales tax settlement period and, effectively, in VAT returns reporting.
+Before you can use the Date of VAT register feature, you must turn it on in the **Feature management** workspace. This feature introduces a new date-type field, **Date of VAT register**, for VAT transactions. The additional date will be used as a VAT point determination criterion for the inclusion of VAT transactions in the scope of the sales tax settlement period and, effectively, in reporting for VAT returns.
 
 > [!NOTE]
-> The system doesn’t allow an invoice to be posted if it has the **Date of VAT register** field in a closed interval of the sales tax settlement period. 
-> The system doesn’t allow the **Date of VAT register** field to be updated with a value in a closed interval of the sales tax settlement period.
+> The system doesn't allow an invoice to be posted if the value of the **Date of VAT register** field for the invoice is in a closed interval of the sales tax settlement period.
+>
+> Additionally, the system doesn't allow the **Date of VAT register** field to be updated with a value that is in a closed interval of the sales tax settlement period.
 
-For more information about the **Date of VAT register** feature, see [Tax point date (Date of VAT register)](emea-tax-point-date.md).
+For more information about the Date of VAT register feature, see [Tax point date (Date of VAT register)](emea-tax-point-date.md).
 
-## “Date of VAT register” impact on VAT settlement and reporting
+## Effect of the Date of VAT register feature on VAT settlement and reporting
 
-When the **Date of VAT register** feature is enabled, users in legal entity with **primary address in Italy** will be able to activate **Date of VAT register** parameter on **General ledger parameters** page.
+When the Date of VAT register feature is turned on, users in legal entities that have their primary address in Italy will be able to set the **Date of VAT register** option on **General ledger parameters** page to **Yes**.
 
 ![date-of-vat-filling](./media/date-of-vat-gl-parameter.png)
 
-When this parameter is enabled, the **Settle and post sales tax** process and the **Italian sales tax payment report** will consider sales tax transactions by the date the VAT was registered instead of the date the transaction was posted.
+When this option is set to **Yes**, the **Settle and post sales tax** process and the **Italian sales tax payment** report will consider sales tax transactions based on the date when the VAT was registered instead of the date when the transaction was posted.
 
 > [!NOTE]
-> The system will not allow you to: 
+> The system won't allow you to perform these actions: 
 > 
-> - Enable the **Date of VAT register** parameter on the **General ledger parameters** page if there are tax transactions posted in open interval of sales tax settlement period if the value in the **Date of VAT register** field is in a closed interval of the sales tax settlement period.
-> -	Disable the **Date of VAT register** parameter on the **General ledger parameters** page if there are tax transactions with value in the **Date of VAT register** field in a closed interval of the sales tax settlement period but posted in open interval of sthe sales tax settlement period.
-> - Turn off the **Date of VAT register** feature in the **Feature management** workspace if there is at least one legal entity where the  **Date of VAT register** parameter on **General ledger parameters** page is enabled.
+> - Set the **Date of VAT register** option on the **General ledger parameters** page to **Yes** if any tax transactions were posted in an open interval of the sales tax settlement period, but the value of the **Date of VAT register** field is in a closed interval of the sales tax settlement period.
+> - Set the **Date of VAT register** option on the **General ledger parameters** page to **No** if the value of the **Date of VAT register** field for any tax transactions is in a closed interval of the sales tax settlement period, but the transactions were posted in an open interval of the sales tax settlement period.
+> - Turn off the Date of VAT register feature in the **Feature management** workspace if the **Date of VAT register** option on the **General ledger parameters** page is set to **Yes** in at least one legal entity.
 
-## “Sales tax transactions extension” consistency check
+## Sales tax transactions extension consistency check
 
-The **Date of VAT register** field is stored in a TaxTrans_W table which an extension of TaxTrans table. When a company switches on **Date of VAT register** parameter, data source queries on some pages in the system begin working differently, joining the TaxTrans_W table. It is possible that a user will not be able to see tax transactions that were posted in the past period. This is because the TaxTrans_W table was not used in the past and therefore there are no corresponding transactions in the table.
+The **Date of VAT register** field is stored in a TaxTrans_W table. This table is an extension of the TaxTrans table. When a company sets the **Date of VAT register** option on the **General ledger parameters** page to **Yes**, data source queries on some pages in the system start to work differently. Those queries now join the TaxTrans_W table. Therefore, users might not be able to see tax transactions that were posted in an earlier period. This issue occurs because the TaxTrans_W table wasn't previously used, and therefore there are no corresponding transactions in the table.
 
-To avoid this issue, run the **Sales tax transactions extension** consistency check. Select **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. On the **Consistency check** page, select **Program** \> **General ledger** \> **Sales tax**, and then mark the **Sales tax transactions extension** check box. You don’t need to mark the parent check boxes if you want to only run the sales tax transactions extension check.
+To help avoid this issue, you can run the **Sales tax transactions extension** consistency check. Go to **System administration** \> **Periodical tasks** \> **Database** \> **Consistency check**. In the **Consistency check** dialog box, expand **Program** \> **General ledger** \> **Sales tax**, and then select the **Sales tax transactions extension** check box. You don't have to select the parent check boxes if you want to run only the **Sales tax transactions extension** consistency check.
 
 ![date-of-vat-consistency-check](./media/date-of-vat-consistency-check.png)
 
-Run the **Sales tax transactions extension** consistency check with the following options:
+When you run the **Sales tax transactions extension** consistency check, set the following options:
 
--	**Check**: Find out if there are missing transactions in the TaxTrans_W table. The system will inform you about the number of transactions in TaxTrans table that are missing corresponding records in TaxTrans_W table.
--	**Fix**: Compensate missing records in TaxTrans_W table. The system will insert corresponding records to the TaxTrans_W table and the  posted sales tax transactions in previous periods will be seen again everywhere in the system. 
+- **Check** – Determine whether any transactions are missing in the TaxTrans_W table. The system will notify you about the number of transactions in the TaxTrans table that lack corresponding records in the TaxTrans_W table.
+- **Fix** – Compensate for missing records in the TaxTrans_W table. The system will insert corresponding records into the TaxTrans_W table. Sales tax transactions that were posted in previous periods will again be seen everywhere in the system. 
 
-Make sure that you have chosen the correct date in **From date** field on the dialog. Leave the **From date** field blank if you want to recover all of the tax transactions in the system.
+Make sure that you select the correct date in the **From date** field in the **Consistency check** dialog box. Leave the **From date** field blank if you want to recover all the tax transactions in the system.
 
-The **Sales tax transactions extension** consistency check is available when the **Date of VAT register** feature is enabled in the **Feature management** workspace.
-
-The **Sales tax transactions extension** consistency check is available in build versions starting from 10.0.234.21 for 10.0.6 version of the application and any version starting from 10.0.7.
+The **Sales tax transactions extension** consistency check is available in build version 10.0.234.21 and later for version 10.0.6 of the application, and for version 10.0.7 and later. In these versions, it's available only when the Date of VAT register feature is turned on in the **Feature management** workspace.
 
 ## Changes in the Italian sales tax payment report
 
-You can run the **Italian sales tax payment report** by using the following menu items:
+You can run the **Italian sales tax payment** report by using any of the following methods:
 
--	**Tax** \> **Declarations** \> **Sales tax** \> **Sales tax (Italy)**
-- **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**
-- **Tax** \> **Inquires and reports** \> **Sales tax payments**, **Sales tax (Italy)** button
--	**Tax** \> **Inquires and reports** \> **Sales tax payments**, **Print report** button (when Italian report layout is defined for the **Sales tax authority** that is specified for the **Sales tax settlement period** of the selected sales tax payment line).
+- Go to **Tax** \> **Declarations** \> **Sales tax** \> **Sales tax (Italy)**.
+- Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
+- Go to **Tax** \> **Inquires and reports** \> **Sales tax payments**, and then select **Sales tax (Italy)**.
+- Go to **Tax** \> **Inquires and reports** \> **Sales tax payments**, and then select **Print report**. You can use this method only if an Italian report layout is defined for the sales tax authority that is specified for the sales tax settlement period of the selected sales tax payment line.
 
-The **Date of VAT register** parameter on the **General ledger parameters** page doesn’t impact the list of invoices on the **Sales tax book sections** pages. All of the invoices posted in the related **Sales tax book sections** during the selected period will be included in the report. Nevertheless, the resulting amounts of VAT will be calculated depending on **Date of VAT register** parameter on **General ledger parameters** page.
+The setting of the **Date of VAT register** option on the **General ledger parameters** page doesn't affect the list of invoices on the **Sales tax book sections** pages. The report will include all the invoices that were posted in the related sales tax book sections during the selected period.
 
--	When the **Date of VAT register** parameter on the **General ledger parameters** page is enabled, the VAT amounts are calculated based on the information in the **Date of VAT register** field for tax transactions in the period.
+However, the setting of the **Date of VAT register** option on the **General ledger parameters** page does affect the calculation of the resulting VAT amounts:
 
--	When the **Date of VAT register** parameter on the **General ledger parameters** page is not enabled, the VAT amounts are calculated based on the posting date of tax transactions in the period.
+- If the **Date of VAT register** option is set to **Yes**, the VAT amounts are calculated based on the information in the **Date of VAT register** field for tax transactions in the period.
+- If the **Date of VAT register** option is set to **No**, the VAT amounts are calculated based on the posting date of tax transactions in the period.
 
-When the **Date of VAT register** parameter is enabled, the **Italian sales tax payment** report provides the following information:
+When the **Date of VAT register** option on the **General ledger parameters** page is set to **Yes**, the **Italian sales tax payment** report provides the following information:
 
-- Pages of the sales tax books sections that include the new **Date of VAT point (Date of VAT register)** column (in Italian: “Momento di effettuazione dell’operazione”) which represents the value of the **Date of VAT register** field for the tax transaction.
+- Pages for the sales tax books sections include a new **Date of VAT point (Date of VAT register)** column (**Momento di effettuazione dell'operazione** in Italian). This column represents the value of the **Date of VAT register** field for the tax transaction.
+- The totals for each sales tax book section are represented in three groups:
 
-- The totals by for each sales tax book section is represented in three groups:
+    - Operations in the actual period that have a competence date in the actual period
+    - Operations in the actual period that have a competence date in the previous period
+    - Operations in the next period that have a competence date in the actual period
 
-     - Operations in the actual period with a competence date in the actual period
-     - Operations in the actual period with a competence date in the previous period
-     - Operations in the next period with a competence date in the actual period
+- The totals by sales and purchase books are represented on three lines: 
 
-- The totals by sales and purchase books are represented in three lines: 
+    - Total operations in the actual period that have a competence date in the actual period
+    - Total operations in the actual period that have a competence date in the previous period
+    - Total operations in the next period that have a competence date in the actual period
 
-     - Total operations in the actual period with a competence date in the actual period
-     - Total operations in the actual period with a competence date in the previous period
-     - Total operations in the next period with a competence date in the actual period
+- A summary section represents the total VAT amounts by sales tax books sections. These amounts are grouped by sales tax book sections. This information is represented separately in three parts:
 
-- A summary section that represents the total VAT amounts by sales tax books sections that are grouped by sales tax book sections. This is represented separately in three parts:
+    - Operations in the actual period that have a competence date in the actual period
+    - Operations in the actual period that have a competence date in the previous period
+    - Operations in the next period that have a competence date in the actual period
 
-     - Operations in the actual period with competence date in the actual period
-     - Operations in the actual period with competence date in the previous period
-     - Operations in the next period with competence date in the actual period
+- The totals in the summary section represent total VAT amounts by sales tax books sections. These amounts are grouped by sales tax book sections. This information is represented separately on three lines:
 
-- The totals in teh summary section which represent total VAT amounts by sales tax books sections that are grouped by sales tax book sections. This is represented separately in three lines:
+    - Total operations in the actual period that have a competence date in the actual period
+    - Total operations in the actual period that have a competence date in the previous period
+    - Total operations in the next period that have a competence date in the actual period
 
-     - Total operations in the actual period with competence date in the actual period
-     - Total operations in the actual period with competence date in the previous period
-     - Total operations in the next period with competence date in the actual period
-
-- Additionally, the **Total calculated considering competence date** amount is provided in a separate line.
-
+- The **Total calculated considering competence date** amount is provided on a separate line.
