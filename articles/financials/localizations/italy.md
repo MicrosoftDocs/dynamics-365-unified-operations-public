@@ -2,7 +2,7 @@
 # required metadata
 
 title: Italy overview
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Italy. 
+description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Italy. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019
