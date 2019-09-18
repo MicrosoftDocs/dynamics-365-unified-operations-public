@@ -172,14 +172,14 @@ Operating units use the country context of the parent legal entity. Operating un
 
 #### If the organization is modeled as a legal entity
 
-For countries/regions that are supported by Finance + Operations, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (A CustomerSource logon is required.)
+For countries/regions that are supported, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (A CustomerSource logon is required.)
 
 > [!NOTE]
 > A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
 
 #### If the organization is modeled as an operating unit
 
-Statutory reports must be created by using another application. You must ensure that data is captured in Finance + Operations to support the requirements of each operating unit, where they differ from the requirements of headquarters.
+Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations apps to support the requirements of each operating unit, where they differ from the requirements of headquarters.
 
 ### Currency
 
