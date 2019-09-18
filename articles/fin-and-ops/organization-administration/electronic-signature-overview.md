@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic signatures overview
-description: This article provides an overview of electronic signatures and describes how they can be used in Finance and Operations applications.
+description: This article provides an overview of electronic signatures and describes how they can be used.
 author: maertenm
 manager: AnnBe
 ms.date: 07/25/2019
