@@ -5,7 +5,7 @@ title: Cloud deployment overview
 description: This topic describes the cloud environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage for Finance and Operations apps. 
 author: kfend
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,15 +69,19 @@ Here's how the lifecycle maps to the available environments.
 A production instance has the following capabilities.
 
 ## Security and compliance
-Dynamics 365 for Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+Dynamics 365 for Finance and Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
-All Dynamics 365 for Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
+All Dynamics 365 for Finance and Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
 > [!IMPORTANT]
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
 > - By default, automatic Windows update is enabled for all Tier 1 - 5 sandboxes and should NOT be disabled. This ensures that any time that Microsoft pushes security or critical infrastructure updates to your environment, your environment receives the latest set of updates and is updated each month with the operating system fixes that Microsoft releases.  
 > -	Admin passwords on these environments should NOT be changed. Environments that have admin passwords changed will be flagged by Microsoft. Microsoft reserves the right to, and will reset the admin password.  
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations is not covered by a FedRAMP ATO at this time. If Dynamics 365 for Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Dynamics 365 for Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
+
 
 ## Remote Desktop
 

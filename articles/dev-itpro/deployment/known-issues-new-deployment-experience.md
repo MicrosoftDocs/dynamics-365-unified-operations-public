@@ -67,8 +67,6 @@ The following features that have infrastructure dependencies are not yet impleme
 |-----------------------------|-----------------------------------------------------------|
 | Retail                      | Retail support is not yet enabled.                        |
 | Trace Parser                | Perf tools are not yet supported.                         |
-| Reporting – Print to Screen | Only print to PDF is supported at this time.              |
-| Export to Word              | Export to Word functionality is not enabled at this time. |
 
 ### Features not intended to be implemented
 The following features are deprecated and will not be implemented in the modern deployment experience.
@@ -77,16 +75,3 @@ The following features are deprecated and will not be implemented in the modern 
 |--------------|-------------------------------------|
 | Custom fonts | Custom fonts will not be supported. |
 
-### Known issues in this release
-Known issues are listed below. These are bugs that are being worked on actively. Hotfixes will be provided in future releases.
-
-#### Financial reporting
-
--   **Default reports are not imported by default:** To import the default reports, do the following:
-
-    1.  Launch Report designer by going to **General Ledger \> Inquiries and reports \> Financial reports.**
-    2.  Click **New**.
-    3.  Go to **Tools \> Import Default Reports**. 
-    4.  Reports will load into the web client after a few minutes.
-
--   **Print to PDF is printing to XPS instead** (due to a print driver access issue).
