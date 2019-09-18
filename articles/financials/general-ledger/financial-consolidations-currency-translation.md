@@ -35,16 +35,16 @@ ms.dyn365.ops.version: 8.0.1
 
 This topic takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
-This topic was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Operations and Financial reporting. Basic setup isn't covered.
+This topic was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
 
 > [!NOTE]
-> The term *legal entity* is used in Finance and Operations, and the term *company* is used in Financial reporting. Both these terms are used in this topic. However, for the purposes of this topic, their meanings are the same.
+> The term *legal entity* is used in Finance, and the term *company* is used in Financial reporting. Both these terms are used in this topic. However, for the purposes of this topic, their meanings are the same.
 
 ## Audience
 This topic is intended for finance and accounting users and application consultants who want to use Finance and Reporting and Financial reporting to consolidate multi-company and multi-currency data.
 
 ## Approach
-Finance and Operations uses a separate legal entity to process a consolidation. It enables single-instance consolidation but provides an option to bring in data from other sources. The consolidation process must be run every time that changes are made in the source legal entities.
+Finance uses a separate legal entity to process a consolidation. It enables single-instance consolidation but provides an option to bring in data from other sources. The consolidation process must be run every time that changes are made in the source legal entities.
 
 Financial reporting can consolidate multiple companies during report generation. Although the data is stored in a data mart, is versioned, and can be exported, every source company is the owner and container of the data. The report can be run at any time, even every minute (for example). It provides many additional benefits, such as the ability to drill down to all companies and dimensions.
 
@@ -120,7 +120,7 @@ The Export company balances functionality also works like the Consolidate online
 To eliminate intercompany transactions, you can create an elimination rule. Alternatively, you can do a manual elimination entry in a company that is designated an elimination company. If you create an elimination rule, you have two options for the elimination method: **Net change** and **Fixed**.
 
 ### Set up elimination rules
-When you set up elimination rules in Finance and Operations, you can create a financial dimension that is used specifically for elimination. Most customers name this financial dimension **Trading Partner** or something similar. If you decide not to use a financial dimension, make sure that you have main accounts that are used only for intercompany transactions.
+When you set up elimination rules in Finance, you can create a financial dimension that is used specifically for elimination. Most customers name this financial dimension **Trading Partner** or something similar. If you decide not to use a financial dimension, make sure that you have main accounts that are used only for intercompany transactions.
 
 You can find the setup for eliminations in the **Setup** area of the **Consolidations** module. After you enter a description for the rule, you must select the company that the elimination journal will be posted to. The company that you select should have **Use for financial elimination process** selected in the legal entity setup.
 
@@ -166,10 +166,10 @@ For more information about how currency revaluation works in the **General ledge
 ## Benefits of using Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting
 Customers who use Financial reporting for financial consolidations and currency translation, or to complement Consolidate online for consolidated reporting, will gain various benefits:
 
-- **Depth of data** – You can create consolidated reports that bring together actual and budget data at both the account level and the dimension level. For Finance and Operations, this data includes data from both budget control and budget planning.
+- **Depth of data** – You can create consolidated reports that bring together actual and budget data at both the account level and the dimension level. For Finance, this data includes data from both budget control and budget planning.
 - **Dynamic consolidations** – Consolidations can be done at any time and at any level in the organizational hierarchy.
 - **Complete audit capabilities** – All dimensions, accounts, and transactional detail are maintained for analysis and audit. In addition, Financial reporting provides full drill-back to the original transaction in any of the legal entities that are consolidated.
-- **Streamlined currency translation** – After minimal setup in Finance and Operations, you can translate any Financial reporting report into any reporting currency that has been set up. In addition, you can set up an unlimited number of reporting currencies.
+- **Streamlined currency translation** – After minimal setup in Finance, you can translate any Financial reporting report into any reporting currency that has been set up. In addition, you can set up an unlimited number of reporting currencies.
 - **Post eliminations at the source** – You can create and print an elimination report to verify elimination transactions. You can then post any new eliminations as standard intercompany transactions. You can also use an elimination legal entity for any transaction that you don't want in your legal entities.
 
 ## Supported consolidation scenarios
