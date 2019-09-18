@@ -44,11 +44,11 @@ To install Modern POS (MPOS) in Windows OS you should sign the MPOS app with a s
 
 ## Using Secure File task is the recommended approach for UWP app signing
 
-<https://docs.microsoft.com/en-us/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing>
+For information on package signing, see [Configure package signing](https://docs.microsoft.com/en-us/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). The process is shown in the following image:
 
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
-## Steps to configure the certificate for signing:
+## Steps to configure the certificate for signing
 
 ### Certificate in the file system/secure location:
 
