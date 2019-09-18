@@ -58,7 +58,7 @@ Dynamics 365 Project Timesheet** parameter.
 
 1.  Start the app on your mobile device.
 
-2.  Enter your Microsoft Dynamics 365 for Finance and Operations URL.
+2.  Enter your Finance URL.
 
 3.  The first time that you sign in, you're prompted for your user name and
     password. Enter your credentials.
