@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 
-In Microsoft Dynamics 365 for Finance and Operations, there are two approaches for subcontracting: production orders and lean manufacturing. In the lean manufacturing approach, the subcontracting work is modeled as a service that is related to an activity of a production flow. A special type of cost group type that is named **Direct outsourcing** has been introduced, and the subcontracting services are no longer part of a bill of materials (BOM). The cost accounting of subcontracted work is fully integrated into the costing solution for lean manufacturing.
+In Microsoft Dynamics 365 Supply Chain Management, there are two approaches for subcontracting: production orders and lean manufacturing. In the lean manufacturing approach, the subcontracting work is modeled as a service that is related to an activity of a production flow. A special type of cost group type that is named **Direct outsourcing** has been introduced, and the subcontracting services are no longer part of a bill of materials (BOM). The cost accounting of subcontracted work is fully integrated into the costing solution for lean manufacturing.
 
 ## Production flows that involve subcontractors
 The basic principle of a production flow doesn't change when activities are subcontracted. Material still flows between locations, process activities convert material to products, and transfer activities move material or products from one location to another. You can model locations and work cells as vendor-managed by assigning the vendor account to a warehouse or to a resource of a resource group.  
