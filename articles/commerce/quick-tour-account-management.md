@@ -2,62 +2,88 @@
 # required metadata
 
 title: Quick tour of account management
-description: 
-author: AnupamaR
+description: This topic provides a quick tour of account management pages in Dynamics 365 Commerce.
+author: anupamar-ms
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
-audience: Consumer
+ms.search.form:  
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Account management
+# Quick tour of account management
 
-**Account Management** is a group of pages and modules that allow your customers to view their account and order related information. It includes an Account management landing page, User profile page, Address page, Order history page, Order details page, Loyalty rewards page, Wishlist page.
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-The **Account** landing page provides a quick summary of all account related information, including user profile, orders, wishlist, addresses, loyalty etc. When a user signs in and goes to “My Account” this is first the page that will be shown. From here, the user can access more details on each area. Below is an example of the account management landing page.
+This topic provides a quick tour of account management pages in Dynamics 365 Commerce.
+
+## Overview
+"Account Management" is a group of pages and modules that enable customers to view account and order-related information. It includes an account management landing page, user profile page, address page, order history page, order details page, loyalty rewards page, and wish list page.
+
+### Account management landing page
+
+The account management landing page provides a quick summary of all account-related information, including user profile, orders, wish list, addresses, loyalty, etc. When a customer signs in and goes to "My Account," this is first the page that will be shown. From there, the customer can access more details on each area. 
+
+Below is an example of the account management landing page.
 
 ![Account Management Landing Page](./media/Account-Management.png)
 
-The **User profile** page displays the account information such as name, phone number etc. Customers can update their profile information on this page. This page can be customized to include additional user account preferences such as opt-in for marketing email.Below is an example of the user profile page built with starter kit.
+### User profile page
+
+The user profile page displays the account information such as name and phone number. Customers can update their profile information on this page. This page can be customized to include additional customer account preferences such as opt-in for marketing email.
+
+Below is an example of the user profile page built with the starter kit.
 
 ![Account Management Landing Page](./media/Account-Management-MyProfile.png)
 
-The **Address** page allows the user to add an address to their account. It also shows the list of addresses that the user has added/saved to their account. These are addresses that the user entered in the Address page or while placing an order. Below is an example of Address page.
+### Address page
+
+The address page enables customers to add an address to their account. It also shows the list of addresses that a customer has added or saved to their account. These are addresses that the customer entered on the address page, or while placing an order. 
+
+Below is an example of the address page.
 
 ![Account Management User Address Page](./media/Account-Management-Address.png)
 
-The **Order history** page shows a summary of all orders submitted by a customer with this account. It gives a quick summary of the items ordered, confirmation number, sales id, tracking information etc. For more detailed information on each order, there is an Order details page which includes a more detailed breakdown of the order. The detailed break down includes shipping address, payment information, discounts, taxes and shipping costs for the order.
+### Order history page
 
-The followings examples show order history and order details page.
+The order history page shows a summary of all orders submitted by a customer with this account. It gives a quick summary of the items ordered, confirmation number, sales ID, tracking information, etc. For more detailed information on each order, there is an order details page that includes a more detailed breakdown of the order, which includes shipping address, payment information, discounts, taxes, and shipping costs for the order.
+
+The followings examples show the order history and order details page.
 
 ![Account Management Order History](./media/Account-Management-OrderHistory.png)
 ![Account Management Order Details](./media/Account-Management-OrderDetails.png)
 
+### Loyalty rewards page
 
-The **Loyalty page** allows allows the user to become a loyalty member. Once the user is signed up for loyalty the details of the loyalty program including points earned and redeemed can be viewed in the loyalty rewards page. 
+The loyalty rewards page enables a customer to become a loyalty program member. Once a customer is signed up for a loyalty program, details including points earned and points redeemed can be viewed on the loyalty rewards page. 
+
+Below is an example of a loyalty rewards page.
 
 ![Account Management Order Details](./media/Account-Management-Loyalty.png)
 
-The **Wishlist page** shows the list of items added to Wishlist by the shopper. A product or variant can be added to Wishlist. From Wishlist page, shopper can remove an item from Wishlist or directly Add to Cart. Below is an example of Wishlist page.
+### Wish list page
+
+The wish list page displays the list of items added to the wish list by a customer. A product or product variant can be added to the wish list. From the wish list page, a customer can remove an item or add one directly to the cart. 
+
+Below is an example of a wish list page.
 
 ![Account Management Wishlist page](./media/Account-Management-Wishlist.png)
 
-Refer to the Account Management module help topic for details on the modules and authoring. 
+Refer to [Account Management](account-management.md) for details on account management modules and authoring. 
