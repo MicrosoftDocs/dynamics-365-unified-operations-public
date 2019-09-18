@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance holder transactions
-description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Finance and Operations.
+description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
