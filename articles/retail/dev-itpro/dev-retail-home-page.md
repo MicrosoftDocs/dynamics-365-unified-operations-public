@@ -85,7 +85,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
-- [pos-app-signing-certificate](pos-app-signing-certificate.md)
+- [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
