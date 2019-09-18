@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Approve vendors for specific procurement categories
-description:  This topic explains how to approve vendors for specific procurement categories in Dynamics 365 for Finance and Operations.
+description:  This topic explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management.
 author: mkirknel
 manager: AnnBe 
 ms.date: 07/30/2019
