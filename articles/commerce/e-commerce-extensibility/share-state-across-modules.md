@@ -34,7 +34,7 @@ This topic describes how to share state across multiple modules by using data ac
 
 ## Overview
 
-Data actions perform the important role of state management in situations where you must share state across multiple modules on the same page.
+Data actions perform the important role of state management in situations where you must share state across multiple modules on the same page.  In general, state is shared within the application statue of the running Node application.
 
 ## Examples
 
@@ -208,4 +208,4 @@ export default class SampleButton extends React.Component<ISampleButtonProps<ISa
 }
 ```
 
-As you can see, the **onClick** handler makes a call to the **actionContext.update()**. This method lets you directly change the application state. When the state is changed, MobX takes over and re-renders all the modules that are observing the piece of state that includes the **sample-message** module.
+As you can see, the **onClick** handler makes a call to the **actionContext.update()**. This method lets you directly change the application state. When the state is changed, MobX takes over and re-renders all the modules that are observing the state that includes the **sample-message** module.
