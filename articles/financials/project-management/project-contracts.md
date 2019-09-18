@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides examples of the project contracts that you can create for various types of projects and funding sources, and how you can manage contracts and invoice project customers in Microsoft Dynamics 365 for Finance and Operations.
+This article provides examples of the project contracts that you can create for various types of projects and funding sources, and how you can manage contracts and invoice project customers.
 
 The type of project that you create for a project contract determines the method that is used to invoice project customers. You can change a project contract and the related project, but you can't change the project type. 
 
@@ -52,7 +52,7 @@ Some project contracts specify that multiple parties share the responsibility fo
 -   A  road project is co-funded by two municipalities.
 -   A bridge project is funded by a government grant and a private corporation.
 
-In Finance and Operations, you can split the billing for a single transaction or an entire project among multiple customers, grants, or organizations. 
+In Dynamics 365 Finance, you can split the billing for a single transaction or an entire project among multiple customers, grants, or organizations. 
 
 In projects that have multiple funders, all parties that contribute to the funding of an advanced funding project are called funding sources. After a customer, organization, or grant is defined as a funding source, it can be assigned to one or more funding rules. Funding rules contain the criteria that determines how charges are allocated to the various funding sources for a project. 
 
