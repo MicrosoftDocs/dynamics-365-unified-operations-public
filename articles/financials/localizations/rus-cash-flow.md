@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash flow management (Russia)
-description: This topic walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/11/2019
