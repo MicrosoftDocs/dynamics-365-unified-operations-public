@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance holders overview
-description: Learn about advance holder functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: Learn about advance holder functionality in Microsoft Dynamics 365 Finance.
 author: LizaGolub
 manager: AnnBe
 ms.date: 07/25/2019
