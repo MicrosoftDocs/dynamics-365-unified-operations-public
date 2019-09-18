@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
+You can enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 
 Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
 
