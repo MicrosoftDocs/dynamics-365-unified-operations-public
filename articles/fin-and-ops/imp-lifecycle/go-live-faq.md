@@ -60,7 +60,7 @@ The **Production** button in LCS is available only after you've completed the **
 
 ## My sandbox environment is currently on a platform update that is set to expire in two months. Can I request a production environment that has the latest platform update?
 
-No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the application and platform versions that you select must match the application and platform versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest platform update to your sandbox environment, test it, and sign off.
+No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the versions that you select must match the versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest update to your sandbox environment, test it, and sign off.
 
 For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
