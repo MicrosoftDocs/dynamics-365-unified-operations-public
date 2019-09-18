@@ -99,7 +99,7 @@ Branching is an important practice in software development. The [Branching and M
 >
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
-For more information about the delivery of implementation projects for Microsoft Dynamics 365 for Finance and Operations, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
+For more information about the delivery of implementation projects, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
 
 There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
 
@@ -113,7 +113,7 @@ Here is an explanation of the setup. The numbers in brackets refer to the number
 - The **Main** branch \[1\] is for changes that meet a certain quality bar and are ready for testing by other people. This testing might include user acceptance tests, performance tests, integration tests, and sanity tests after hotfixes. Deployable packages for this branch must be created by a build environment. As a best practice, you should not generate X++ packages in a Tier 1 environment and then deploy those packages into an official test or production environment. Otherwise, uncommitted source changes could be included. The correct approach is always to deploy packages that were built on official build environments.
 - The **ProdRel1** branch \[3\] holds all source code exactly as it's deployed in a production environment at any given point. A build environment can be used but isn't required. If packages from the Main branch are deployed to a production environment, the code should be merged (from Main to ProdRel1) after a production deployment. By having a branch for production, you can generate official builds later if you require them.
 - All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the Retail software development kit (SDK) in **RetailSdk** folders \[5, 6, 7\]. The Retail SDK includes base Microsoft code and code extensions. This base code and the code extensions can differ in each branch.
-- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see [Dynamics 365 for Finance and Operations hotfix and deployment cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
+- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see this [cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
 
 For small Retail projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
 
