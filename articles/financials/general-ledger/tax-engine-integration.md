@@ -166,7 +166,7 @@ The Tax business service model is part of the Finance integration framework, and
 </tr>
 </table>
 
-### Finance and Operations application integration
+### Finance application integration
 
 Transaction information from Finance should be sent to the Tax engine. At the same time, the accounting and posting of tax should be aligned with the Finance implementation. Therefore, three parts are created in the Finance application:
 
@@ -209,7 +209,7 @@ This framework lets you easily find a transaction's document and track the trans
 
 #### Transaction integration
 
-Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance and Operations integration example – Purchase order invoice](#example-finance-and-operations-integration--purchase-order-invoice) section later in this topic.
+Transaction integration occurs only on a case-by-case basis. For each transaction and scenario, the Tax business service should be called in the appropriate manner for tax calculation, tax assumption, and tax posting. For an example, see the [Finance integration example – Purchase order invoice](#example-finance-integration--purchase-order-invoice) section later in this topic.
 
 #### Accounting integration
 
@@ -234,7 +234,7 @@ The following illustration shows how TaxTrans and the voucher are created.
 > [!NOTE]
 > If **taxTrans** fields should be filled with additional fields from the tax document, you should update the **TaxAcctTaxTransTaxDocAttrMapping** class, the **TaxAcctTxTransTaxDocMeasureMapping** class, or the extended classes of one of these classes in the appropriate manner for data binding.
 
-## Example: Finance and Operations integration – Purchase order invoice
+## Example: Finance integration – Purchase order invoice
 
 This section provides an example of how the Tax engine is integrated with purchase order invoices. Related transaction tables include VendInvoiceInfoTable, VendInvoiceInfoLine, VendInvoiceJour, and VendInvoiceTrans.
 
