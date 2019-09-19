@@ -18,6 +18,10 @@
     items:
     - name: Select a site theme
       href: select-site-theme.md
+  - name: Add and manage content on your site
+    items:
+    - name: Add a checkout module to a page
+      href: add-checkout-module.md
   - name: Ratings and reviews
     items:
     - name: Configure ratings and reviews
