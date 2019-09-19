@@ -2,39 +2,44 @@
 # required metadata
 
 title: Quick tour of cart and checkout
-description: 
-author: AnupamaR
+description: This topic provides a quick tour of cart and checkout in Dynamics 365 Commerce.
+author: anupamar-ms
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
-audience: Consumer
+ms.search.form:  
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
----
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 
 # Quick tour of cart and checkout
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic provides a quick tour of cart and checkout in Dynamics 365 Commerce.
+
+## Overview
 
 ## Cart
 
 The **Cart page** serves as the shopping bag which includes all the items added to the Cart. Here is a screenshot of the Cart page built with web starter kit and Fabrikam theme.
 
-![Cart page](./media/cart2.png)
+![Cart page](./media/cart2.PNG)
 
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to Header and Footer for more details.
 
@@ -48,7 +53,7 @@ From the Cart, a shopper can proceed to checkout. Checkout can be initiated as a
 
 The Checkout page is where your customers enter the information needed to place an order. Here is a screenshot of the Cart page built with web starter kit and Fabrikam theme.
 
-![Checkout page](./media/Checkout.png)
+![Checkout page](./media/Checkout.PNG)
 
 The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to Header and Footer for more details.
 
