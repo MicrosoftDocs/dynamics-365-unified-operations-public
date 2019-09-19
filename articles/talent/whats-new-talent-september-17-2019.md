@@ -52,7 +52,7 @@ For more information about how changes are published, see [Provision Talent](./p
 
 ### Human Resources staff can't see performance review details once assigned to them by workflow (370308)
 
-With this week's update, HR professionals will be able to see performance review details that have been assigned to them through workflow processing. you can now view reviews by navigating to **Employee self-service > Work items assigned to me**.
+With this week's update, HR professionals will be able to see performance review details that have been assigned to them through workflow processing. To view reviews, navigate to **Employee self-service > Work items assigned to me**.
 
 ### Job family field missing in the Manage changes page for job details (346031)
 
