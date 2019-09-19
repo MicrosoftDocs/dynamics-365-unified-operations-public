@@ -45,7 +45,7 @@ This topic describes the steps that you must follow to enable the integration. I
 
 ## Enable the integration
 
-In Talent, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 for Finance and Operations, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance and Operations.
+In Talent, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 Finance, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance.
 
 To turn on the integration in Talent, follow these steps.
 
