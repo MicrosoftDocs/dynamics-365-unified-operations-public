@@ -40,7 +40,7 @@ This topic describes how to use Task recorder to record client functions.
 
 ### The new Task recorder
 
-In Microsoft Dynamics 365 for Finance and Operations, Task recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task recorder.
+Task recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task recorder.
 
 ### Architecture
 
@@ -255,8 +255,8 @@ To **Skip** a step or *remove* a step from a recording, play back until the step
 
 **Play until** behaves similarly to **Play**, but allows you to play only a sub-set of the steps, rather than all of the steps. Simply select the step in the list that you want the playback to stop at, and then click **Play until. **Task recorder will begin executing the steps in the list, and it will stop when it has executed the step that you selected.
 
-## New editing features that simplify maintenance
-These features are only available in Platform update 2 or later. You can find these features on the **Settings &gt; Task recorder &gt; Edit recording** menu. With these recently added features, you can:
+## Editing features that simplify maintenance
+You can find these features on the **Settings &gt; Task recorder &gt; Edit recording** menu. With these recently added features, you can:
 -   Insert steps without re-recording the entire file.
 -   Move steps under a sub-task without re-recording the entire file.
 -   Collapse Recording name and description fields.
@@ -410,9 +410,9 @@ After completing a business process recording using Task recorder, a developer m
 
 [![ImportNewProject\_TaskRecorderGuide](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
-7.  In the **New Project** dialog, provide a name for the Finance and Operations project.
+7.  In the **New Project** dialog box, provide a name for the project.
 8.  After the project is created, the user can open and inspect the generated code.
-9.  To run the test, **BUILD** the Finance and Operations project.
+9.  To run the test, **BUILD** the project.
 10. Go to **Test &gt; Windows &gt;Test Explorer**.
 
 ## Work in progress
