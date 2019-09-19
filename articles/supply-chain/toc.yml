@@ -266,8 +266,58 @@
     items:
   - name: Mobile app
     items:
+    - name: Mobile app home page
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+    - name: Mobile workspaces
+      items:
+      - name: Available mobile workspaces
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+      - name: Company directory
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Cost controlling
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+      - name: Expense management
+        href: ../financials/expense-management/expense-management-mobile-workspace.md
+      - name: Inventory on-hand
+        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
+      - name: Invoice approvals
+        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: My team
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md
+      - name: Project time entry
+        href: ../financials/project-management/project-time-entry-mobile-workspace.md
+      - name: Project timesheet
+        href: ../financials/project-management/project-timesheet.md
+      - name: Purchase order approval
+        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+      - name: Sales orders
+        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
+      - name: Vendor collaboration
+        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
+    - name: Publish mobile workspaces
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
   - name: Office integration
     items:
+    - name: Office integration overview
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
+    - name: Office integration tutorial
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
+    - name: Open entity data in Excel and update it using the Excel add-in
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
+    - name: Create Open in Excel experiences
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
+    - name: Add templates to the Open lines in Excel menu
+      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/fin-and-ops/toc.json
+    - name: Customize the Open in Microsoft Office menu
+      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/fin-and-ops/toc.json
+    - name: Configure and send email
+      href: organization-administration/configure-email.md
+    - name: Develop email experiences
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md
+    - name: Troubleshoot the Office integration
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
   - name: Organization administration
     items:
   - name: Procurement and sourcing
