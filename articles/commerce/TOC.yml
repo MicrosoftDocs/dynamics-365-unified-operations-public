@@ -8,13 +8,19 @@
       href: configure-your-domain-name.md
     - name: Associate an online site with a channel
       href: associate-site-online-store.md
-  - name: Manage e-Commerce users and roles
-    href: manage-ecommerce-users-roles.md
+  - name: Manage your site
+    items:
+    - name: Manage users and roles
+      href: manage-ecommerce-users-roles.md
+  - name: Brand your site and add store details
+    items:
+    - name: Select a site theme
+      href: select-site-theme.md
   - name: Ratings and reviews
     items:
     - name: Configure ratings and reviews
       href: configure-ratings-reviews.md
-  - name: Product recommendations
+  - name: Recommendations
     items:
     - name: Product recommendations
       href: product-recommendations.md
