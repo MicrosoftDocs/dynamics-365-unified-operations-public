@@ -43,7 +43,7 @@ The project management and accounting functionality can be used in multiple indu
 
 [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Dynamics 365 Finance can help with the planning, execution, and analysis of these projects.
+In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality can help with the planning, execution, and analysis of these projects.
 
 ## Project phases
 Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. 
