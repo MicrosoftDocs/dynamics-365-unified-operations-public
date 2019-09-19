@@ -48,7 +48,7 @@ To complete the steps in this topic, you must have a development environment tha
 
 Before you run a single-user test, you must work with your business team to define your end-to-end scenarios and then use Task recorder to create a recording of the steps in each scenario. For more information about how to create a task recording, see [Task recorder](../user-interface/task-recorder.md). The scenarios that you should test depend on your customer's business requirements. In this topic, you will use the "Create and confirm a sales order" sample scenario.
 
-1. Sign in to Finance and Operations as a Sales persona.
+1. Sign in as a Sales persona.
 2. Turn on Task recorder, and create and confirm a sales order that includes the following information:
 
     - Customer account
@@ -60,7 +60,7 @@ Before you run a single-user test, you must work with your business team to defi
 
 3. When you've finished, select **Save as developer recording** to download the XML file.
 
-## Configure a Finance and Operations development environment
+## Configure a development environment
 
 1. Download the [selenium-dotnet-strongnamed-3.13.1.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/) and [IEDriverServer\_Win32\_3.13.0.zip](https://selenium-release.storage.googleapis.com/index.html?path=3.13/) files.
 2. Unblock and unzip the files.
