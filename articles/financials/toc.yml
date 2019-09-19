@@ -5,837 +5,837 @@
   - name: Financial management
     items:
     - name: Financial management home page
-      href: ../financials/index.md
+      href: /index.md
     - name: Accounts payable
       items:
       - name: Accounts payable home page
-        href: ../financials/accounts-payable/accounts-payable.md
+        href: accounts-payable/accounts-payable.md
       - name: Vendor invoices overview
-        href: ../financials/accounts-payable/vendor-invoices-overview.md
+        href: accounts-payable/vendor-invoices-overview.md
       - name: Configure Accounts payable
         items:
         - name: Configure Accounts payable overview
-          href: ../financials/accounts-payable/accounts-payable-overview.md
+          href: accounts-payable/accounts-payable-overview.md
         - name: Key invoice data into accounts payable using a vendor invoice
-          href: ../financials/accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
+          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
         - name: Key invoice data into accounts payable using an approval journal
-          href: ../financials/accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
         - name: Key invoice data into the AP system using invoice pool
-          href: ../financials/accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
         - name: Record a vendor invoice in the invoice journal
-          href: ../financials/accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+          href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
-        href: ../financials/general-ledger/tasks/audit-invoices-key-data-ap-system.md
+        href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
       - name: Three-way matching policies
-        href: ../financials/accounts-payable/three-way-matching-policies.md
+        href: accounts-payable/three-way-matching-policies.md
       - name: Accounts payable invoice matching
         items:
         - name: Accounts payable invoice matching overview
-          href: ../financials/accounts-payable/accounts-payable-invoice-matching.md
+          href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up accounts payable invoice matching validation
-          href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+          href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
-        href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
+        href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
-        href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+        href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
       - name: Set up vendor invoice policies
-        href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+        href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Record vendor invoice and match against received quantity
-        href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
+        href: accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
-        href: ../financials/accounts-payable/positive-pay-overview.md
+        href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
-        href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
+        href: accounts-payable/set-up-generate-positive-pay-files.md
       - name: Default offset accounts for vendor invoice journals and invoice approval journals
-        href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+        href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
       - name: Vendor workflow
-        href: ../financials/accounts-payable/vendor-workflow.md
+        href: accounts-payable/vendor-workflow.md
       - name: Resolve discrepancies during invoice totals matching
         items:
         - name: Resolve discrepancies during invoice totals matching overview
-          href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
+          href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
         - name: Research or resolve exceptions
-          href: ../financials/accounts-payable/tasks/research-resolve-exceptions.md
+          href: accounts-payable/tasks/research-resolve-exceptions.md
       - name: Vendor posting profiles
-        href: ../financials/accounts-payable/vendor-posting-profiles.md
+        href: accounts-payable/vendor-posting-profiles.md
       - name: Foreign currency revaluation for Accounts payable and Accounts receivable
-        href: ../financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
+        href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
       - name: Mobile invoice approvals
-        href: ../financials/accounts-payable/mobile-invoice-approvals.md
+        href: accounts-payable/mobile-invoice-approvals.md
       - name: Vendor collaboration invoicing workspace
-        href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
+        href: accounts-payable/vendor-portal-invoicing-workspace.md
       - name: Vendor invoice automation
-        href: ../financials/accounts-payable/vendor-invoice-automation.md
+        href: accounts-payable/vendor-invoice-automation.md
       - name: Broker contract management
-        href: ../financials/accounts-payable/broker-contract.md
+        href: accounts-payable/broker-contract.md
       - name: Royalty contract management
-        href: ../financials/accounts-payable/royalty-contract.md
+        href: accounts-payable/royalty-contract.md
       - name: Payments and settlements
         items:
         - name: Centralized payments for Accounts payable
-          href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
+          href: accounts-payable/centralized-payments-accounts-payable.md
         - name: Configure settlement
-          href: ../financials/cash-bank-management/configure-settlement.md
+          href: cash-bank-management/configure-settlement.md
         - name: Settle remainder
-          href: ../financials/cash-bank-management/settle-remainder.md
+          href: cash-bank-management/settle-remainder.md
         - name: Vendor payment overview
-          href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
+          href: cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
-          href: ../financials/accounts-payable/vendor-payments-workspace.md
+          href: accounts-payable/vendor-payments-workspace.md
         - name: Specify a cross rate
-          href: ../financials/accounts-payable/specify-cross-rate.md
+          href: accounts-payable/specify-cross-rate.md
         - name: Define vendor payment fees
-          href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
+          href: accounts-payable/tasks/define-vendor-payment-fees.md
         - name: Define vendor payment terms
-          href: ../financials/accounts-payable/tasks/define-vendor-payment-terms.md
+          href: accounts-payable/tasks/define-vendor-payment-terms.md
         - name: Create vendor payments by using a payment proposal
-          href: ../financials/accounts-payable/create-vendor-payments-payment-proposal.md
+          href: accounts-payable/create-vendor-payments-payment-proposal.md
         - name: Reverse a vendor payment
-          href: ../financials/accounts-payable/reverse-vendor-payment.md
+          href: accounts-payable/reverse-vendor-payment.md
         - name: Electronic reporting for vendor checks
-          href: ../financials/accounts-payable/electronic-reporting-sample-vendor-checks.md
+          href: accounts-payable/electronic-reporting-sample-vendor-checks.md
         - name: Prepayment invoices and prepayments overview
-          href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
+          href: accounts-payable/prepayments-invoices-vs-prepayments.md
         - name: Settle a partial vendor payment before the discount date
-          href: ../financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md
+          href: accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md
         - name: Settle a partial vendor payment that has discounts on vendor credit notes
-          href: ../financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md
+          href: accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md
         - name: Settle a partial vendor payment that has multiple discount periods
-          href: ../financials/accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md
+          href: accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md
         - name: Settle a partial vendor payment or final payment before discount
-          href: ../financials/accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md
+          href: accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md
         - name: Single voucher with multiple customer or vendor records
-          href: ../financials/accounts-payable/single-voucher-multiple-customer-vendor-records.md
+          href: accounts-payable/single-voucher-multiple-customer-vendor-records.md
         - name: Take a cash discount outside the cash discount period
-          href: ../financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
+          href: accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
         - name: Take a discount that is more than the calculated discount for a vendor payment
-          href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
+          href: accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
         - name: Vendor payments for a partial amount
-          href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+          href: accounts-payable/vendor-payments-partial-amount.md
         - name: Vendor transactions list page
-          href: ../financials/accounts-payable/vendor-transaction-list-page.md
+          href: accounts-payable/vendor-transaction-list-page.md
     - name: Accounts receivable
       items:
       - name: Accounts receivable home page
-        href: ../financials/accounts-receivable/accounts-receivable.md
+        href: accounts-receivable/accounts-receivable.md
       - name: Credit and collections in Accounts receivable
-        href: ../financials/accounts-receivable/collections-credit-accounts-receivable.md
+        href: accounts-receivable/collections-credit-accounts-receivable.md
       - name: Configure Accounts receivables and credit and collections
-        href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
+        href: accounts-receivable/accounts-receivables-set-up-overview.md
       - name: Set up credit and collections
-        href: ../financials/accounts-receivable/set-up-collections.md
+        href: accounts-receivable/set-up-collections.md
       - name: Review collections information
-        href: ../financials/accounts-receivable/tasks/review-collections-information.md
+        href: accounts-receivable/tasks/review-collections-information.md
       - name: Revenue recognition overview
-        href: ../financials/accounts-receivable/revenue-recognition-overview.md
+        href: accounts-receivable/revenue-recognition-overview.md
       - name: Set up and process recurring invoices
-        href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
+        href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
-        href: ../financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+        href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Customer posting profiles
-        href: ../financials/accounts-receivable/customer-posting-profiles.md
+        href: accounts-receivable/customer-posting-profiles.md
       - name: SEPA direct debit overview
-        href: ../financials/accounts-receivable/sepa-direct-debit-overview.md
+        href: accounts-receivable/sepa-direct-debit-overview.md
       - name: SEPA direct debit mandate
-        href: ../financials/accounts-receivable/sepa-direct-debit-mandate.md
+        href: accounts-receivable/sepa-direct-debit-mandate.md
       - name: Credit card setup, authorization, and capture
-        href: ../financials/accounts-receivable/credit-card-authorizations.md
+        href: accounts-receivable/credit-card-authorizations.md
       - name: Create a free text invoice
-        href: ../financials/accounts-receivable/create-free-text-invoice-new.md
+        href: accounts-receivable/create-free-text-invoice-new.md
       - name: Create a free text invoice template
-        href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md  
+        href: accounts-receivable/create-free-text-invoice-template-new.md  
       - name: Correct a free text invoice
-        href: ../financials/accounts-receivable/correct-free-text-invoice.md
+        href: accounts-receivable/correct-free-text-invoice.md
       - name: Assign a free text invoice template to a customer
-        href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+        href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
       - name: Generate and post recurring free text invoices
-        href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+        href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
       - name: Create sales order invoices
-        href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
+        href: accounts-receivable/tasks/create-sales-order-invoices.md
       - name: Set up interest rates for an interest code
-        href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
+        href: accounts-receivable/set-up-interest-rates-interest-code.md
       - name: Waive, reinstate, or reverse interest fees
-        href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
       - name: Process interest
-        href: ../financials/accounts-receivable/tasks/process-interest.md
+        href: accounts-receivable/tasks/process-interest.md
       - name: Create a customer invoice
-        href: ../financials/accounts-receivable/configure-customer-invoices.md
+        href: accounts-receivable/configure-customer-invoices.md
       - name: Deposit customer payments
-        href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
+        href: accounts-receivable/tasks/deposit-customer-payments.md
       - name: Establish customer payment terms
-        href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+        href: general-ledger/tasks/establish-customer-payment-terms.md
       - name: Establish customer method of payment
-        href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+        href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
-        href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
+        href: accounts-receivable/tasks/establish-customer-payment-fees.md
       - name: Set up bills of exchange
-        href: ../financials/accounts-receivable/set-up-bills-exchange.md
+        href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
-        href: ../financials/accounts-receivable/close-accounts-receivable.md
+        href: accounts-receivable/close-accounts-receivable.md
       - name: Create a collection letter sequence
-        href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+        href: accounts-receivable/tasks/create-collection-letter-sequence.md
       - name: Process collection letters
-        href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+        href: accounts-receivable/tasks/process-collection-letters.md
       - name: Create a direct debit mandate for a customer
-        href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+        href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
       - name: Create an interest code with a range
-        href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+        href: accounts-receivable/tasks/create-interest-code-range.md
       - name: Create a write-off journal for a customer
-        href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+        href: accounts-receivable/tasks/create-write-off-journal-customer.md
       - name: Set up and generate accounts receivable aging information
-        href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
       - name: Copy customers by using shared number sequences
-        href: ../financials/accounts-receivable/copy-customer.md
+        href: accounts-receivable/copy-customer.md
       - name: Customer workflow
-        href: ../financials/accounts-receivable/customer-workflow.md
+        href: accounts-receivable/customer-workflow.md
       - name: Payments and settlements
         items:
         - name: Customer payment overview
-          href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
+          href: cash-bank-management/tasks/customer-payment-overview.md
         - name: Use a customer payment to settle multiple invoices that span multiple discount periods
-          href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
+          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Centralized payments for Accounts receivable
-          href: ../financials/accounts-receivable/centralized-payments-accounts-receivable.md
+          href: accounts-receivable/centralized-payments-accounts-receivable.md
         - name: Settle partial customer payment or final payment before discount
-          href: ../financials/accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
+          href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
         - name: Settle a partial customer payment before the discount date with a final payment after the discount date
-          href: ../financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
+          href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
         - name: Settle a partial customer payment that has discounts on credit notes
-          href: ../financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
+          href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
         - name: Settle a partial customer payment that has multiple discount periods
-          href: ../financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+          href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
         - name: Reimburse customers
-          href: ../financials/accounts-receivable/reimburse-customers.md
+          href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
-          href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+          href: accounts-receivable/customer-payments-partial-amount.md
         - name: Customer transactions list page
-          href: ../financials/accounts-receivable/customer-transactions-list-page.md
+          href: accounts-receivable/customer-transactions-list-page.md
     - name: Budgeting
       items:
       - name: Budgeting home page
-        href: ../financials/budgeting/budgeting-overview.md
+        href: budgeting/budgeting-overview.md
       - name: Budget planning overview
-        href: ../financials/budgeting/budget-planning-overview-configuration.md
+        href: budgeting/budget-planning-overview-configuration.md
       - name: Budget control overview
-        href: ../financials/budgeting/budget-control-overview-configuration.md
+        href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
-        href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+        href: budgeting/basic-budgeting-overview-configuration.md
       - name: Position forecasting
-        href: ../financials/budgeting/position-forecasting.md
+        href: budgeting/position-forecasting.md
       - name: Budget planning justification documents
-        href: ../financials/budgeting/budget-planning-justification-docs.md
+        href: budgeting/budget-planning-justification-docs.md
       - name: Create a budget from transaction accounts and total accounts
-        href: ../financials/budgeting/create-budget-transaction-accounts-total-accounts.md
+        href: budgeting/create-budget-transaction-accounts-total-accounts.md
       - name: Budget planning templates for Excel
-        href: ../financials/budgeting/budget-planning-excel-templates.md
+        href: budgeting/budget-planning-excel-templates.md
       - name: Position budgeting troubleshooting
-        href: ../financials/budgeting/position-budgeting-set-up-issues.md
+        href: budgeting/position-budgeting-set-up-issues.md
       - name: Budget planning
-        href: ../financials/budgeting/budget-plan.md
+        href: budgeting/budget-plan.md
       - name: Budget planning data allocation
-        href: ../financials/budgeting/budget-planning-data-allocation.md
+        href: budgeting/budget-planning-data-allocation.md
       - name: Budget planning integration with other modules
-        href: ../financials/budgeting/budget-planning-integration-other-modules.md
+        href: budgeting/budget-planning-integration-other-modules.md
     - name: Cash and bank management
       items:
       - name: Cash and bank management home page
-        href: ../financials/cash-bank-management/cash-bank-management.md
+        href: cash-bank-management/cash-bank-management.md
       - name: Cash flow forecasting
-        href: ../financials/cash-bank-management/cash-flow-forecasting.md
+        href: cash-bank-management/cash-flow-forecasting.md
       - name: Bank management workspace
-        href: ../financials/cash-bank-management/Bank-management-workspace.md
+        href: cash-bank-management/Bank-management-workspace.md
       - name: Bank foreign currency revaluation
-        href: ../financials/cash-bank-management/bank-revaluation.md
+        href: cash-bank-management/bank-revaluation.md
       - name: Cash discounts
-        href: ../financials/cash-bank-management/cash-discounts.md
+        href: cash-bank-management/cash-discounts.md
       - name: Cash discounts for overpayments
-        href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+        href: cash-bank-management/cash-discount-handling-overpayments.md
       - name: Manage IBAN account validation
-        href: ../financials/cash-bank-management/iban-validation.md
+        href: cash-bank-management/iban-validation.md
       - name: Settlement overview
-        href: ../financials/cash-bank-management/settlement-overview.md
+        href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
-        href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
+        href: cash-bank-management/settlement-overview-centralized-payments.md
       - name: Letters of credit
-        href: ../financials/cash-bank-management/letters-of-credit.md
+        href: cash-bank-management/letters-of-credit.md
       - name: Create a bank facility agreement for a letter of credit
-        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+        href: cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
       - name: Set up bank facilities and posting profiles for letter of credit
-        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
+        href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
       - name: Letters of credit and import collections
-        href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+        href: cash-bank-management/letters-of-credit-import-collections.md
       - name: Export a letter of credit
-        href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+        href: cash-bank-management/tasks/export-letter-credit.md
       - name: Import a letter of credit
-        href: ../financials/cash-bank-management/tasks/import-letter-credit.md
+        href: cash-bank-management/tasks/import-letter-credit.md
       - name: Letters of guarantee
-        href: ../financials/cash-bank-management/letters-of-guarantee.md
+        href: cash-bank-management/letters-of-guarantee.md
       - name: Letter of guarantee transaction
-        href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+        href: cash-bank-management/tasks/letter-guarantee-transaction.md
       - name: Create a bank facility agreement for the letter of guarantee
-        href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+        href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
       - name: Set up bank facilities and posting profiles for letters of guarantee
-        href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
+        href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
       - name: Postdated checks
-        href: ../financials/cash-bank-management/postdated-checks.md
+        href: cash-bank-management/postdated-checks.md
       - name: Set up postdated checks
-        href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+        href: cash-bank-management/tasks/set-up-postdated-checks.md
       - name: Register and post a postdated check for a customer
-        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+        href: cash-bank-management/tasks/register-post-postdated-check-customer.md
       - name: Register and post a postdated check for a vendor
-        href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+        href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
       - name: Settle a postdated check from a customer
-        href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+        href: cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
-        href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
+        href: cash-bank-management/tasks/settle-postdated-check-vendor.md
       - name: Create checks that have Blank status
-        href: ../financials/cash-bank-management/create-check-with-blank-status.md
+        href: cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
-        href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
+        href: accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
-        href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+        href: cash-bank-management/cash-discount-handling-overpayments.md
       - name: Set up centralized payments
-        href: ../financials/cash-bank-management/set-up-centralized-payments.md
+        href: cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
-        href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
+        href: accounts-receivable/automatic-settlement-prioritization.md
       - name: Simple bank reconciliation
-        href: ../financials/cash-bank-management/reconcile-bank-account.md        
+        href: cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
         - name: Advanced bank reconciliation setup tasks
-          href: ../financials/cash-bank-management/configure-advanced-bank-reconciliation.md
+          href: cash-bank-management/configure-advanced-bank-reconciliation.md
         - name: Set up the advanced bank reconciliation import process
-          href: ../financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+          href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
         - name: Set up bank reconciliation matching rules
-          href: ../financials/cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+          href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
         - name: Reconcile bank statements by using advanced bank reconciliation
-          href: ../financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
+          href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
         - name: Advanced bank reconciliation MT940 Import – Composite data entity upgrade
-          href: ../financials/cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
+          href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
         - name: Advanced bank reconciliation overview
-          href: ../financials/cash-bank-management/advanced-bank-reconciliation-overview.md
+          href: cash-bank-management/advanced-bank-reconciliation-overview.md
         - name: Bank statement file import troubleshooting
-          href: ../financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
+          href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
         - name: Update the bank journal composite entity
-          href: ../financials/cash-bank-management/upgrade-bank-journal-composite-entity.md
+          href: cash-bank-management/upgrade-bank-journal-composite-entity.md
     - name: Cost accounting
       items:
       - name: Cost accounting home page
-        href: ../financials/cost-accounting/cost-accounting-home-page.md
+        href: cost-accounting/cost-accounting-home-page.md
       - name: Cost accounting terminology
-        href: ../financials/cost-accounting/terms-cost-accounting.md
+        href: cost-accounting/terms-cost-accounting.md
       - name: Fiscal calendars, fiscal years, and periods
-        href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+        href: budgeting/fiscal-calendars-fiscal-years-periods.md
       - name: Financial dimensions
-        href: ../financials/general-ledger/financial-dimensions.md
+        href: general-ledger/financial-dimensions.md
       - name: Financial dimensions and posting
-        href: ../financials/general-ledger/Default-dimensions.md
+        href: general-ledger/Default-dimensions.md
       - name: Add financial dimensions to the CFO workspace
-        href: ../financials/general-ledger/CFO-workspace.md
+        href: general-ledger/CFO-workspace.md
       - name: Create account structures
-        href: ../financials/general-ledger/tasks/create-account-structures.md
+        href: general-ledger/tasks/create-account-structures.md
       - name: Budgeting overview
-        href: ../financials/budgeting/basic-budgeting-overview-configuration.md
+        href: budgeting/basic-budgeting-overview-configuration.md
       - name: Create dimensions and import dimension members
-        href: ../financials/cost-accounting/cost-dimension.md
+        href: cost-accounting/cost-dimension.md
       - name: Cost element dimensions
-        href: ../financials/cost-accounting/cost-elements.md
+        href: cost-accounting/cost-elements.md
       - name: Create cost elements
-        href: ../financials/cost-accounting/tasks/create-cost-elements.md
+        href: cost-accounting/tasks/create-cost-elements.md
       - name: Cost object dimensions
-        href: ../financials/cost-accounting/cost-objects.md
+        href: cost-accounting/cost-objects.md
       - name: Create cost objects
-        href: ../financials/cost-accounting/tasks/create-cost-objects.md
+        href: cost-accounting/tasks/create-cost-objects.md
       - name: Map cost element dimension members to a common set of dimension members
-        href: ../financials/cost-accounting/map-cost-elements-dimension-members.md
+        href: cost-accounting/map-cost-elements-dimension-members.md
       - name: Map a cost element dimension
-        href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md
+        href: cost-accounting/tasks/map-cost-element-dimension.md
       - name: Dimension hierarchy
-        href: ../financials/cost-accounting/dimension-hierarchy.md
+        href: cost-accounting/dimension-hierarchy.md
       - name: Create an organization report hierarchy
-        href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md
+        href: cost-accounting/tasks/create-an-organization-report-hierarchy.md
       - name: Access rights of a cost object controller
-        href: ../financials/cost-accounting/access-rights-cost-object-controller.md
+        href: cost-accounting/access-rights-cost-object-controller.md
       - name: Configure access rights for a cost object controller
-        href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+        href: cost-accounting/tasks/configure-access-rights-cost-object-controller.md
       - name: Define cost control units
-        href: ../financials/cost-accounting/tasks/define-cost-control-units.md
+        href: cost-accounting/tasks/define-cost-control-units.md
       - name: Create a cost accounting ledger
-        href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md
+        href: cost-accounting/tasks/create-cost-accounting-ledger.md
       - name: Statistical dimension members and statistical measure provider templates
-        href: ../financials/cost-accounting/statistical-measure-provider-template.md
+        href: cost-accounting/statistical-measure-provider-template.md
       - name: Allocation bases
-        href: ../financials/cost-accounting/allocation-bases.md
+        href: cost-accounting/allocation-bases.md
       - name: Create and assign a cost allocation policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+        href: cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
       - name: Create and assign a cost behavior policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+        href: cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
       - name: Create and assign a cost distribution policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+        href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
       - name: Create a cost rollup policy
-        href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md
+        href: cost-accounting/tasks/create-cost-rollup-policy.md
       - name: Manage data source for the cost accounting ledger
-        href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+        href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
       - name: Process and trace source data
-        href: ../financials/cost-accounting/tasks/process-trace-source-data.md
+        href: cost-accounting/tasks/process-trace-source-data.md
       - name: Overhead calculation
-        href: ../financials/cost-accounting/overhead-calculation.md
+        href: cost-accounting/overhead-calculation.md
       - name: Cost rollup policy and overhead calculation
-        href: ../financials/cost-accounting/cost-rollup.md
+        href: cost-accounting/cost-rollup.md
       - name: Configure cost control workspace
-        href: ../financials/cost-accounting/cost-control-workspace.md
+        href: cost-accounting/cost-control-workspace.md
       - name: Configure cost control workspace parameters
-        href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+        href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
       - name: Understand access list security and RLS in Microsoft Power BI
         href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Use content pack for Microsoft Power BI reporting
         href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
       - name: Use cost control workspace for Finance and Operations mobile application
-        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+        href: cost-accounting/cost-controlling-mobile-workspace.md
     - name: Expense management
       items:
       - name: Expense management overview
-        href: ../financials/expense-management/expense-management.md
+        href: expense-management/expense-management.md
       - name: Expense reports reimagined
-        href: ../financials/expense-management/ExpenseWorkspaceNew.md
+        href: expense-management/ExpenseWorkspaceNew.md
       - name: Plan expense management
-        href: ../financials/expense-management/plan-expense-management.md
+        href: expense-management/plan-expense-management.md
       - name: Expense management parameters
-        href: ../financials/expense-management/Expense-Management-Parameters.md
+        href: expense-management/Expense-Management-Parameters.md
       - name: Expense management mobile workspace
-        href: ../financials/expense-management/expense-management-mobile-workspace.md
+        href: expense-management/expense-management-mobile-workspace.md
       - name: Set up workflows for expense management
-        href: ../financials/expense-management/expense-workflows.md
+        href: expense-management/expense-workflows.md
       - name: Expense management workflow
-        href: ../financials/expense-management/expense-workflow.md
+        href: expense-management/expense-workflow.md
       - name: Import and maintain credit card transactions
-        href: ../financials/expense-management/import-credit-card.md
+        href: expense-management/import-credit-card.md
       - name: Distributions on an expense report
-        href: ../financials/expense-management/expense-report-distributions.md
+        href: expense-management/expense-report-distributions.md
       - name: Intercompany expenses
-        href: ../financials/expense-management/intercompany-expense.md
+        href: expense-management/intercompany-expense.md
       - name: Expense policies
-        href: ../financials/expense-management/travel-expense-policies.md
+        href: expense-management/travel-expense-policies.md
       - name: View an expense report
-        href: ../financials/expense-management/view-expense-report.md
+        href: expense-management/view-expense-report.md
       - name: Post an expense report
-        href: ../financials/expense-management/post-expense.md
+        href: expense-management/post-expense.md
       - name: Expense reports and multiple approvers
-        href: ../financials/expense-management/expense-report-multiple-approvers.md
+        href: expense-management/expense-report-multiple-approvers.md
       - name: VAT recovery in Expense management
-        href: ../financials/expense-management/VAT-expense-report.md
+        href: expense-management/VAT-expense-report.md
       - name: Per diem rules
-        href: ../financials/expense-management/per-diem.md
+        href: expense-management/per-diem.md
       - name: Travel requisitions
-        href: ../financials/expense-management/travel-req.md
+        href: expense-management/travel-req.md
       - name: Personal expenses on an expense report
-        href: ../financials/expense-management/personal-expenses.md
+        href: expense-management/personal-expenses.md
     - name: Fixed assets
       items:
       - name: Fixed assets home page
-        href: ../financials/fixed-assets/fixed-assets.md
+        href: fixed-assets/fixed-assets.md
       - name: Create a fixed asset
-        href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+        href: fixed-assets/tasks/create-fixed-asset.md
       - name: Enter an addition to a fixed asset
-        href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+        href: fixed-assets/tasks/enter-addition-fixed-asset.md
       - name: Propose fixed asset acquisitions
-        href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+        href: fixed-assets/tasks/propose-fixed-asset-acquisitions.md
       - name: Reclassify fixed assets
-        href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
+        href: fixed-assets/tasks/reclassify-fixed-assets.md
       - name: Fixed asset workspace
-        href: ../financials/fixed-assets/fixed-asset-management-workspace.md
+        href: fixed-assets/fixed-asset-management-workspace.md
       - name: Fixed assets roll forward report
-        href: ../financials/fixed-assets/Fixed-asset-roll-forward-report.md
+        href: fixed-assets/Fixed-asset-roll-forward-report.md
       - name: Depreciation book upgrade overview
-        href: ../financials/fixed-assets/depreciation-book-upgrade-considerations.md
+        href: fixed-assets/depreciation-book-upgrade-considerations.md
       - name: Derived books
-        href: ../financials/fixed-assets/derived-books.md
+        href: fixed-assets/derived-books.md
       - name: Fixed asset value model and depreciation book merge
-        href: ../financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
+        href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
       - name: Post with derived books
-        href: ../financials/fixed-assets/post-derived-value-models.md
+        href: fixed-assets/post-derived-value-models.md
       - name: Post fixed asset transactions to posting layers
-        href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
+        href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
       - name: Fixed asset transaction options
-        href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
+        href: fixed-assets/enter-fixed-asset-transactions.md
       - name: Transfer a fixed asset
-        href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+        href: fixed-assets/tasks/transfer-fixed-asset.md
       - name: Split a fixed asset
-        href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+        href: fixed-assets/tasks/split-fixed-asset.md
       - name: Set up fixed asset groups
-        href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+        href: fixed-assets/tasks/set-up-fixed-asset-groups.md
       - name: Change a fixed asset group
-        href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
+        href: fixed-assets/tasks/change-fixed-asset-group.md
       - name: Recalculate replacement costs and insured values for fixed asset groups
-        href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
+        href: fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
       - name: Fixed asset disposal posting accounts
-        href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+        href: fixed-assets/fixed-asset-disposal-posting-accounts.md
       - name: Dispose of a fixed asset using a free text invoice
-        href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
+        href: fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
       - name: Dispose of a fixed asset as scrap
-        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
+        href: fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
       - name: Fixed asset mass update
-        href: ../financials/fixed-assets/fixed-asset-mass-update.md
+        href: fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
-        href: ../financials/fixed-assets/acquire-assets-procurement.md
+        href: fixed-assets/acquire-assets-procurement.md
       - name: Set up and integration
         items:
         - name: Set up fixed assets
-          href: ../financials/fixed-assets/set-up-fixed-assets.md
+          href: fixed-assets/set-up-fixed-assets.md
         - name: Set up fixed asset posting profiles
-          href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
+          href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
         - name: Fixed assets integration
-          href: ../financials/fixed-assets/fixed-asset-integration.md
+          href: fixed-assets/fixed-asset-integration.md
         - name: Create and acquire assets from accounts payable
-          href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+          href: fixed-assets/tasks/create-acquire-assets-accounts-payable.md
         - name: 'Set up depreciation books '
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+          href: fixed-assets/tasks/set-up-depreciation-books-2016-05.md
         - name: Set up and create depreciation profiles
-          href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+          href: fixed-assets/tasks/set-up-depreciation-profiles.md
         - name: Set up value models
-          href: ../financials/fixed-assets/tasks/set-up-value-models.md
+          href: fixed-assets/tasks/set-up-value-models.md
       - name: Depreciation methods
         items:
         - name: Depreciation conventions
-          href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
+          href: fixed-assets/Fixed-asset-depreciation-conventions.md
         - name: 125 percent reducing balance depreciation
-          href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
+          href: fixed-assets/125-percent-reducing-balance-depreciation.md
         - name: 150 percent reducing balance depreciation
-          href: ../financials/fixed-assets/150-percent-reducing-balance-depreciation.md
+          href: fixed-assets/150-percent-reducing-balance-depreciation.md
         - name: 175 percent reducing balance depreciation
-          href: ../financials/fixed-assets/175-percent-reducing-balance-depreciation.md
+          href: fixed-assets/175-percent-reducing-balance-depreciation.md
         - name: 200 percent reducing balance depreciation
-          href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
+          href: fixed-assets/200-percent-reducing-balance-depreciation.md
         - name: Bonus depreciation
-          href: ../financials/fixed-assets/bonus-depreciation.md
+          href: fixed-assets/bonus-depreciation.md
         - name: Set up bonus depreciation
-          href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
+          href: fixed-assets/tasks/set-up-bonus-depreciation.md
         - name: Consumption depreciation
-          href: ../financials/fixed-assets/consumption-depreciation.md
+          href: fixed-assets/consumption-depreciation.md
         - name: Depreciation effects with reversals
-          href: ../financials/fixed-assets/depreciation-effects-reversals.md
+          href: fixed-assets/depreciation-effects-reversals.md
         - name: Depreciation methods and conventions
-          href: ../financials/fixed-assets/depreciation-methods-conventions.md
+          href: fixed-assets/depreciation-methods-conventions.md
         - name: Create a depreciation proposal
-          href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
+          href: fixed-assets/tasks/create-depreciation-proposal.md
         - name: Factor depreciation
-          href: ../financials/fixed-assets/factor-depreciation.md
+          href: fixed-assets/factor-depreciation.md
         - name: Fixed asset acquisition posting accounts
-          href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
+          href: fixed-assets/fixed-asset-acquisition-posting-accounts.md
         - name: Fixed asset depreciation
-          href: ../financials/fixed-assets/fixed-asset-depreciation.md
+          href: fixed-assets/fixed-asset-depreciation.md
         - name: Calculate fixed asset depreciation across legal entities
-          href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+          href: fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
         - name: Change depreciation conventions for multiple fixed assets
-          href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
+          href: fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
         - name: Manual depreciation
-          href: ../financials/fixed-assets/manual-depreciation.md
+          href: fixed-assets/manual-depreciation.md
         - name: Reduce balance depreciation
-          href: ../financials/fixed-assets/reduce-balance-depreciation.md
+          href: fixed-assets/reduce-balance-depreciation.md
         - name: Round-off amount for depreciation calculations
-          href: ../financials/fixed-assets/round-off-amount-depreciation-calculations.md
+          href: fixed-assets/round-off-amount-depreciation-calculations.md
         - name: Straight line life remaining depreciation
-          href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
+          href: fixed-assets/straight-line-life-remaining-depreciation.md
         - name: Straight line service life depreciation
-          href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
+          href: fixed-assets/straight-line-service-life-depreciation.md
     - name: General ledger
       items:
       - name: General ledger overview
-        href: ../financials/general-ledger/general-ledger.md
+        href: general-ledger/general-ledger.md
       - name: Accounts
         items:
         - name: Accruals overview
-          href: ../financials/general-ledger/accruals-overview.md
+          href: general-ledger/accruals-overview.md
         - name: Elimination rules
-          href: ../financials/general-ledger/elimination-rules.md
+          href: general-ledger/elimination-rules.md
         - name: Account and dimension combinations
-          href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+          href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
         - name: Balanced journals for interunit accounting
-          href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
+          href: general-ledger/example-balanced-journals-interunit-accounting.md
         - name: Posting definitions
-          href: ../financials/general-ledger/posting-definitions.md
+          href: general-ledger/posting-definitions.md
         - name: Posting definition examples
-          href: ../financials/general-ledger/example-posting-definitions.md
+          href: general-ledger/example-posting-definitions.md
         - name: General ledger account balances
-          href: ../financials/general-ledger/general-ledger-account-balances.md
+          href: general-ledger/general-ledger-account-balances.md
         - name: Define financial dimensions
-          href: ../financials/general-ledger/tasks/define-financial-dimensions.md
+          href: general-ledger/tasks/define-financial-dimensions.md
         - name: Maintain financial dimension default templates
-          href: ../financials/general-ledger/tasks/maintain-financial-dimension-default-templates.md
+          href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
         - name: Create account structures
-          href: ../financials/general-ledger/tasks/create-account-structures.md
+          href: general-ledger/tasks/create-account-structures.md
         - name: Financial dimensions and posting
-          href: ../financials/general-ledger/default-dimensions.md
+          href: general-ledger/default-dimensions.md
         - name: Create accrual schemes
-          href: ../financials/general-ledger/tasks/create-accrual-schemes.md
+          href: general-ledger/tasks/create-accrual-schemes.md
         - name: Financial consolidations and currency translation
           items:
           - name: Financial consolidations and currency translation overview 
-            href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+            href: general-ledger/financial-consolidations-currency-translation.md
           - name: Consolidate online
-            href: ../financials/general-ledger/consolidate-online.md
+            href: general-ledger/consolidate-online.md
           - name: Generate consolidated financial statements
-            href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+            href: general-ledger/generating-consolidated-financial-statements.md
         - name: Create consolidation groups and additional consolidation account
-          href: ../financials/general-ledger/tasks/create-consolidation-groups.md
+          href: general-ledger/tasks/create-consolidation-groups.md
         - name: Main account types
-          href: ../financials/general-ledger/main-account-types.md
+          href: general-ledger/main-account-types.md
         - name: Create a main account
-          href: ../financials/general-ledger/tasks/create-main-account.md
+          href: general-ledger/tasks/create-main-account.md
         - name: Plan your chart of accounts
-          href: ../financials/general-ledger/plan-chart-of-accounts.md
+          href: general-ledger/plan-chart-of-accounts.md
         - name: Settle transactions between ledger accounts
-          href: ../financials/general-ledger/tasks/settle-transactions-between-ledger-accounts.md
+          href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
         - name: Set up a ledger account alias
-          href: ../financials/general-ledger/tasks/set-up-ledger-account-alias.md
+          href: general-ledger/tasks/set-up-ledger-account-alias.md
         - name: Set up main account categories
-          href: ../financials/general-ledger/tasks/set-up-main-account-categories.md
+          href: general-ledger/tasks/set-up-main-account-categories.md
         - name: Accounting source explorer
-          href: ../financials/accounts-payable/accounting-source-explorer.md
+          href: accounts-payable/accounting-source-explorer.md
         - name: Accounting distributions
-          href: ../financials/accounts-payable/accounting-distributions.md
+          href: accounts-payable/accounting-distributions.md
         - name: Process allocations
-          href: ../financials/general-ledger/process-allocations.md
+          href: general-ledger/process-allocations.md
         - name: Financial dimensions
-          href: ../financials/general-ledger/financial-dimensions.md
+          href: general-ledger/financial-dimensions.md
         - name: Convert accounting or reporting currencies
-          href: ../financials/general-ledger/convert-accounting-reporting-currencies.md
+          href: general-ledger/convert-accounting-reporting-currencies.md
         - name: Consolidation account groups and accounts
-          href: ../financials/budgeting/consolidation-account-groups-consolidation-accounts.md
+          href: budgeting/consolidation-account-groups-consolidation-accounts.md
         - name: Consolidation and elimination overview
-          href: ../financials/budgeting/consolidation-elimination-overview.md
+          href: budgeting/consolidation-elimination-overview.md
         - name: Fiscal calendars, fiscal years, and periods
-          href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
+          href: budgeting/fiscal-calendars-fiscal-years-periods.md
         - name: Configure account structures
-          href: ../financials/general-ledger/configure-account-structures.md
+          href: general-ledger/configure-account-structures.md
         - name: Dual currency
-          href: ../financials/general-ledger/dual-currency.md
+          href: general-ledger/dual-currency.md
       - name: Journals and ledgers
         items:
         - name: General journal processing
-          href: ../financials/general-ledger/general-journal-processing.md
+          href: general-ledger/general-journal-processing.md
         - name: Post periodic journals
-          href: ../financials/general-ledger/tasks/post-periodic-journals.md
+          href: general-ledger/tasks/post-periodic-journals.md
         - name: Process ledger allocation journal
-          href: ../financials/general-ledger/tasks/process-ledger-allocation-journal.md
+          href: general-ledger/tasks/process-ledger-allocation-journal.md
         - name: Intercompany accounting setup
-          href: ../financials/general-ledger/intercompany-accounting-setup.md
+          href: general-ledger/intercompany-accounting-setup.md
         - name: Ledger allocation rules
-          href: ../financials/general-ledger/ledger-allocation-rules.md
+          href: general-ledger/ledger-allocation-rules.md
         - name: Create advanced rules for journals
-          href: ../financials/general-ledger/tasks/create-advanced-rules-journals.md
+          href: general-ledger/tasks/create-advanced-rules-journals.md
         - name: Create and assign advanced rule structures
-          href: ../financials/general-ledger/tasks/create-assign-advanced-rule-structures.md
+          href: general-ledger/tasks/create-assign-advanced-rule-structures.md
         - name: Ledger journal types
-          href: ../financials/general-ledger/ledger-journal-types.md
+          href: general-ledger/ledger-journal-types.md
         - name: Create and validate journals
-          href: ../financials/general-ledger/tasks/create-validate-journals.md
+          href: general-ledger/tasks/create-validate-journals.md
         - name: View journal entries or transactions
-          href: ../financials/general-ledger/tasks/view-journal-entries-or-transactions.md
+          href: general-ledger/tasks/view-journal-entries-or-transactions.md
         - name: View a related intercompany voucher from a journal
-          href: ../financials/general-ledger/tasks/view-related-intercompany-voucher-journal.md
+          href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
         - name: Create a journal entry using a template
-          href: ../financials/general-ledger/tasks/create-journal-entry-template.md
+          href: general-ledger/tasks/create-journal-entry-template.md
         - name: Create ledger accrual transactions
-          href: ../financials/general-ledger/tasks/create-ledger-accrual-transactions.md
+          href: general-ledger/tasks/create-ledger-accrual-transactions.md
         - name: Publish journal lines and documents from Excel
-          href: ../financials/general-ledger/open-lines-excel-journals-documents.md
+          href: general-ledger/open-lines-excel-journals-documents.md
         - name: View journal entries and transactions
-          href: ../financials/general-ledger/view-journal-entries-transactions.md
+          href: general-ledger/view-journal-entries-transactions.md
         - name: Journalize posted journal entries
-          href: ../financials/general-ledger/tasks/journalize-posted-journal-entries.md
+          href: general-ledger/tasks/journalize-posted-journal-entries.md
         - name: Currency revaluation in a consolidation company
-          href: ../financials/general-ledger/currency-revaluation-consolidation-company.md
+          href: general-ledger/currency-revaluation-consolidation-company.md
         - name: Foreign currency revaluation for General ledger
-          href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
+          href: general-ledger/foreign-currency-revaluation-general-ledger.md
         - name: Import currency exchange rates
-          href: ../financials/general-ledger/import-currency-exchange-rates.md
+          href: general-ledger/import-currency-exchange-rates.md
         - name: One voucher
-          href: ../financials/general-ledger/one-voucher.md
+          href: general-ledger/one-voucher.md
         - name: Ledger settlements
-          href: ../financials/general-ledger/ledger-settlements.md
+          href: general-ledger/ledger-settlements.md
       - name: Period-end close
         items:
         - name: Close the general ledger at period end
-          href: ../financials/general-ledger/close-general-ledger-at-period-end.md
+          href: general-ledger/close-general-ledger-at-period-end.md
         - name: Financial period close workspace
-          href: ../financials/general-ledger/financial-period-close-workspace.md
+          href: general-ledger/financial-period-close-workspace.md
         - name: Year-end close
-          href: ../financials/general-ledger/year-end-close.md
+          href: general-ledger/year-end-close.md
         - name: Close the fiscal year
-          href: ../financials/general-ledger/tasks/close-fiscal-year.md
+          href: general-ledger/tasks/close-fiscal-year.md
         - name: Mass financial period close
-          href: ../financials/general-ledger/tasks/mass-financial-period-close.md
+          href: general-ledger/tasks/mass-financial-period-close.md
       - name: Sales tax
         items:
         - name: Sales tax overview
-          href: ../financials/general-ledger/indirect-taxes-overview.md
+          href: general-ledger/indirect-taxes-overview.md
         - name: Sales tax rates based on the marginal base and calculation methods
-          href: ../financials/general-ledger/marginal-base-field.md
+          href: general-ledger/marginal-base-field.md
         - name: Sales tax payments and rounding rules
-          href: ../financials/general-ledger/round-sales-tax-payments.md
+          href: general-ledger/round-sales-tax-payments.md
         - name: Sales tax calculation methods in the Origin field
-          href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+          href: general-ledger/sales-tax-calculation-methods-origin-field.md
         - name: Whole amount and interval calculation options for sales tax codes
-          href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+          href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
         - name: Calculate and adjust sales tax on a vendor invoice
-          href: ../financials/general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
         - name: Create a sales tax payment
-          href: ../financials/general-ledger/tasks/create-sales-tax-payment.md
+          href: general-ledger/tasks/create-sales-tax-payment.md
         - name: Create sales tax transactions on documents
-          href: ../financials/general-ledger/tasks/create-sales-tax-transactions-documents.md
+          href: general-ledger/tasks/create-sales-tax-transactions-documents.md
         - name: Set up ledger posting groups for sales tax
-          href: ../financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+          href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
         - name: Set up sales tax authorities
-          href: ../financials/general-ledger/tasks/set-up-sales-tax-authorities.md
+          href: general-ledger/tasks/set-up-sales-tax-authorities.md
         - name: Set up sales tax codes
-          href: ../financials/general-ledger/tasks/set-up-sales-tax-codes.md
+          href: general-ledger/tasks/set-up-sales-tax-codes.md
         - name: Set up sales tax groups and item sales tax groups
-          href: ../financials/general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+          href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
         - name: Set up sales tax reporting codes
-          href: ../financials/general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+          href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
         - name: Sales tax specification by ledger transaction report
-          href: ../financials/general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+          href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
         - name: Set up sales tax settlement periods
-          href: ../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+          href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
         - name: Set up withholding tax
-          href: ../financials/general-ledger/tasks/set-up-withholding-tax.md
+          href: general-ledger/tasks/set-up-withholding-tax.md
         - name: View posted sales tax transactions
-          href: ../financials/general-ledger/tasks/view-posted-sales-tax-transactions.md     
+          href: general-ledger/tasks/view-posted-sales-tax-transactions.md     
       - name: Audit workbench
         items:
         - name: Audit policy rules
-          href: ../financials/general-ledger/audit-policy-rules.md
+          href: general-ledger/audit-policy-rules.md
         - name: Audit policy violations and cases
-          href: ../financials/general-ledger/audit-policy-violations-cases.md
+          href: general-ledger/audit-policy-violations-cases.md
         - name: Define audit policies for source documents
-          href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md 
+          href: general-ledger/tasks/define-audit-policies-source-documents.md 
     - name: Public sector
       items:
       - name: Public sector home page
-        href: ../financials/public-sector/public-sector-functionality.md
+        href: public-sector/public-sector-functionality.md
       - name: Plan for public sector functionality
-        href: ../financials/public-sector/plan-public-sector-functionality.md
+        href: public-sector/plan-public-sector-functionality.md
       - name: Create cover and signature pages for a payments report for the public sector
-        href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+        href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
-          href: ../financials/public-sector/accounts-payable-public-sector.md
+          href: public-sector/accounts-payable-public-sector.md
         - name: Purchase order codes in the public sector
-          href: ../financials/public-sector/purchase-order-codes-public-sector.md
+          href: public-sector/purchase-order-codes-public-sector.md
         - name: Create and assign a trading partner code in the public sector
-          href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
+          href: public-sector/tasks/create-assign-trading-partner-code-public-sector.md
         - name: Posting definitions in the public sector
-          href: ../financials/public-sector/posting-definitions-public-sector.md
+          href: public-sector/posting-definitions-public-sector.md
         - name: One-time vendors in the public sector
-          href: ../financials/public-sector/one-time-vendors-public-sector.md
+          href: public-sector/one-time-vendors-public-sector.md
         - name: Create a one-time vendor and invoice in the public sector
-          href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+          href: public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
         - name: Create a vendor certification type in the public sector
-          href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+          href: public-sector/tasks/create-vendor-certification-type-public-sector.md
         - name: Import and create multiple one-time vendors and invoices in the public sector
-          href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+          href: public-sector/tasks/import-multiple-one-time-vendors.md
         - name: Plan for one-time vendors in the public sector
-          href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+          href: public-sector/plan-one-time-vendors-public-sector.md
         - name: Control access to purchase agreements in the public sector
-          href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+          href: public-sector/tasks/control-access-purchase-agreements-public-sector.md
         - name: Set up purchase agreement classifications in the public sector
-          href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+          href: public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
       - name: Accounts receivable in the public sector
         items:
         - name: Accounts receivable in the public sector overview
-          href: ../financials/public-sector/accounts-receivable-public-sector.md
+          href: public-sector/accounts-receivable-public-sector.md
         - name: Billing classifications and billing codes in the public sector
-          href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+          href: public-sector/billing-classifications-billing-codes-public-sector.md
         - name: Create a billing classification in the public sector
-          href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+          href: public-sector/tasks/create-billing-classification-public-sector.md
         - name: Create a billing code for the public sector
-          href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
+          href: public-sector/tasks/create-billing-code-public-sector.md
         - name: Settlement priority in the public sector
-          href: ../financials/public-sector/settlement-priority-public-sector.md
+          href: public-sector/settlement-priority-public-sector.md
         - name: Free text invoices in the public sector
-          href: ../financials/public-sector/free-text-invoices-public-sector.md
+          href: public-sector/free-text-invoices-public-sector.md
         - name: Reimbursements in the public sector
-          href: ../financials/public-sector/reimbursements-public-sector.md
+          href: public-sector/reimbursements-public-sector.md
       - name: Budgeting in the public sector
         items:
         - name: Budgeting in the public sector overview
-          href: ../financials/public-sector/budgeting-public-sector.md
+          href: public-sector/budgeting-public-sector.md
         - name: Create an original budget and reverse preliminary budget entries in the public sector
-          href: ../financials/public-sector/tasks/create-original-budget.md
+          href: public-sector/tasks/create-original-budget.md
         - name: Create a preliminary budget for public sector
-          href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
+          href: public-sector/tasks/create-preliminary-budget-public-sector.md
         - name: Budget analysis report
-          href: ../financials/public-sector/budget-analysis-report.md
+          href: public-sector/budget-analysis-report.md
         - name: Budget analysis in the public sector
-          href: ../financials/public-sector/budget-analysis-public-sector.md
+          href: public-sector/budget-analysis-public-sector.md
         - name: Preliminary budgets and apportionments in the public sector
-          href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+          href: public-sector/preliminary-budgets-apportionments-public-sector.md
         - name: Create a commitment to reserve budget funds for the public sector
-          href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
+          href: public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
         - name: General budget reservations
-          href: ../financials/public-sector/general-budget-reservations.md
+          href: public-sector/general-budget-reservations.md
         - name: Set up general budget reservation rules and reservation types
-          href: ../financials/public-sector/rules-reservation-types.md
+          href: public-sector/rules-reservation-types.md
         - name: Maintain general budget reservations
-          href: ../financials/public-sector/general-budget-reservation-tasks.md
+          href: public-sector/general-budget-reservation-tasks.md
         - name: Set up general budget reservations and submit them to a workflow
-          href: ../financials/public-sector/workflow-general-budget-reservations.md
+          href: public-sector/workflow-general-budget-reservations.md
         - name: Project accounting with general budget reservations
-          href: ../financials/public-sector/general-budget-reservations-project-accounting.md
+          href: public-sector/general-budget-reservations-project-accounting.md
       - name: Fixed assets in the public sector
-        href: ../financials/public-sector/fixed-asset-public-sector.md
+        href: public-sector/fixed-asset-public-sector.md
       - name: General ledger in the public sector
         items:
         - name: General ledger in the public sector overview
-          href: ../financials/public-sector/general-ledger-public-sector.md
+          href: public-sector/general-ledger-public-sector.md
         - name: Advanced ledger entries in the public sector
-          href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+          href: public-sector/advanced-ledger-entries-public-sector.md
         - name: Create an advanced ledger entry in the public sector
-          href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
+          href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
         - name: Year-end processing in the public sector
-          href: ../financials/public-sector/year-end-processing-public-sector.md
+          href: public-sector/year-end-processing-public-sector.md
         - name: Derived financial hierarchies in the public sector
-          href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+          href: public-sector/derived-financial-hierarchies-public-sector.md
         - name: Set up a derived financial hierarchy in the public sector
-          href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
+          href: public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
         - name: Set up interest distribution for cash accounts
-          href: ../financials/public-sector/interest-distribution.md
+          href: public-sector/interest-distribution.md
       - name: Procurement and sourcing in the public sector
-        href: ../financials/public-sector/procurement-sourcing-public-sector.md
+        href: public-sector/procurement-sourcing-public-sector.md
       - name: Security roles in the public sector
-        href: ../financials/public-sector/security-roles-public-sector.md
+        href: public-sector/security-roles-public-sector.md
       - name: Funds in the public sector
-        href: ../financials/public-sector/funds-public-sector.md
+        href: public-sector/funds-public-sector.md
       - name: Set up a fund in the public sector
-        href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+        href: public-sector/tasks/set-up-fund-public-sector.md
       - name: Create a fund type in the public sector
-        href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+        href: public-sector/tasks/create-fund-type-public-sector.md
       - name: Add a certification type to a vendor in the public sector
-        href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
+        href: public-sector/tasks/add-certification-type-vendor-public-sector.md
     - name: Financial reporting
       items:
       - name: Financial reporting overview
-        href: ../financials/general-ledger/financial-reporting-getting-started.md
+        href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
         href: ../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
       - name: Financial report components
         href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
       - name: Balance sheet financial reports
-        href: ../financials/general-ledger/balance-sheet-financial-reports.md
+        href: general-ledger/balance-sheet-financial-reports.md
       - name: Generate financial reports
         href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
       - name: Income statement financial report
-        href: ../financials/general-ledger/income-statement-financial-report.md
+        href: general-ledger/income-statement-financial-report.md
       - name: Trial balance financial reports
-        href: ../financials/general-ledger/trial-balance-financial-reports.md
+        href: general-ledger/trial-balance-financial-reports.md
       - name: View financial reports
-        href: ../financials/general-ledger/view-financial-reports.md
+        href: general-ledger/view-financial-reports.md
       - name: Report designer interface
         href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
       - name: Keyboard shortcuts for financial reporter
-        href: ../financials/general-ledger/financial-reporting-keyboard-shortcuts.md
+        href: general-ledger/financial-reporting-keyboard-shortcuts.md
       - name: User preferences in financial report designer
         href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
       - name: Advanced formatting options
@@ -853,7 +853,7 @@
       - name: Reset the financial reporting data mart
         href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Electronic messaging
-      href: ../financials/general-ledger/electronic-messaging.md
+      href: general-ledger/electronic-messaging.md
   - name: Globalization
     items:
     - name: Globalization resources
