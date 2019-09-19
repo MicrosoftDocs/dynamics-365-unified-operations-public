@@ -61,7 +61,7 @@ In Attract and Onboard, problems logged by end users through the report a proble
 Changes described in this section apply to build number 8.1.2216.
 
 ### Platform update 25
-For more information about Platform update 25, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+For more information about Platform update 25 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  Advanced compensation security (fixed and variable)
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These might include records for executives or regional employees. This change allows HR to manage and maintain compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans. These security roles determine access to plans and related employee data, such as salary or bonus records, so that only those roles can process compensation for the employee groups.
