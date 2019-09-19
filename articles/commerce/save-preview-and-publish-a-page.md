@@ -20,3 +20,21 @@ If you want to publish single page from page editor, the procedure is very simil
 When you publish a page, it publishes just the page. In order to be able to navigate to your page and see it, you should also have URL pointing to it.
 
 One important thing to keep in mind is that to be able to publish a page any images or fragments referenced by the page must also be published.
+
+### Steps to save, preview and publish a page
+1. Log in to the authoring tool
+1. Locate and click **Fabrikam**-site under **Sites**
+1. Locate **Homepage**-page under **Pages** and open it in the page editor by clicking it
+1. Check out the page by clicking **Check Out** from the action bar
+1. Perform any changes on the page
+1. Click **Save** from the action bar
+1. Click **Check In** from the action bar, in the **Comments**-field describe the change you did and click **OK**
+1. Click **Preview** from the action bar to validate your change
+1. Close the preview-tab to get back to the authoring tool
+1. Click **Publish** from the action bar
+
+### Steps to publish URL
+1. Log in to the authoring tool
+1. Locate and click **Fabrikam**-site under **Sites**
+1. Locate your URL under **URLs** and select it
+1. Click **Publish** from the action bar
