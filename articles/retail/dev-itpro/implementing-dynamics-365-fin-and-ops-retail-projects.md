@@ -37,7 +37,7 @@ This topic provides links to other topics that will help new implementers of Ret
 
 Some of the information in these topics can also be found on blogs and pages at other locations, such as <https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/index> and <https://dynamicsnotes.com>. You can read those blogs and pages separately, or you can read this topic from beginning to end and review the linked documents within the subtopics as you require them during the implementation process.
 
-The information focuses on implementations of Microsoft Dynamics 365 for Finance and Operations that include Retail functionality.
+The information focuses on implementations of Finance and Operations apps that include Retail functionality.
 
 [Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
