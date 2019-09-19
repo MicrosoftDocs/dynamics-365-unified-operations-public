@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features
+title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Removed or deprecated features
+# Removed or deprecated features for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ This list is intended to help you consider these removals and deprecations for y
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
 
-## Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30
+## Finance and Operations 10.0.6 with Platform update 30
 
 > [!IMPORTANT]
 > Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
@@ -83,7 +83,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Domestic tax report – Feature reference IT-00003**. |
 
 
-## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
+## Finance and Operations 10.0.5 with Platform update 29
 
 ### US Payroll tax updates
 
