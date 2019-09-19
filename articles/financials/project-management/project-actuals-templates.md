@@ -38,9 +38,9 @@ This topic describes the templates and underlying tasks that are used to synchro
 The template synchronizes transactions from Project Service Automation into a staging table in Finance. After synchronization is completed, you **must** import the data from the staging table into the integration journal.
 
 > [!NOTE]
-> - Project actuals integration is available starting in version 8.0.1 of our product.
-> - If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
-> - If you're using Finance and Operations 7.3.0, and you are bringing fee transactions over from Project Service Automation, you must install KB 4345320 in order to include those fees in the project invoice.
+> - Project actuals integration is available starting in version 8.0.1.
+> - If you're using Enterprise edition 7.3.0 after you install KB 4132657 and KB 4132660, you will be able to use the templates to integrate project tasks, expense transaction categories, hour estimates, expense estimates, and actuals, and to configure functionality locking. If you must reset the accounting distributions, we recommend that you also install KB 4131710.
+> - If you're using version 7.3.0, and you are bringing fee transactions over from Project Service Automation, you must install KB 4345320 in order to include those fees in the project invoice.
 > - If you're entering sales tax amounts on time or expense transactions in Project Service Automation, you must install Project Service Automation Update 7. Otherwise, the tax actuals won't be linked to the associated time or expense actuals, and they won't be synchronized to Finance. For more information, contact Support.
 
 ## Data flow for Project Service Automation to Finance
