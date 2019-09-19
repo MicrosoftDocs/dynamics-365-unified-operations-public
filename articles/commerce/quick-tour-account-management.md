@@ -43,7 +43,7 @@ The account management landing page provides a quick summary of all account-rela
 
 Below is an example of the account management landing page.
 
-![Account Management Landing Page](./media/Account-Management.png)
+![Account Management Landing Page](./media/Account-Management.PNG)
 
 ### User profile page
 
@@ -51,7 +51,7 @@ The user profile page displays the account information such as name and phone nu
 
 Below is an example of the user profile page built with the starter kit.
 
-![Account Management Landing Page](./media/Account-Management-MyProfile.png)
+![Account Management Landing Page](./media/Account-Management-MyProfile.PNG)
 
 ### Address page
 
@@ -67,8 +67,8 @@ The order history page shows a summary of all orders submitted by a customer wit
 
 The followings examples show the order history and order details page.
 
-![Account Management Order History](./media/Account-Management-OrderHistory.png)
-![Account Management Order Details](./media/Account-Management-OrderDetails.png)
+![Account Management Order History](./media/Account-Management-OrderHistory.PNG)
+![Account Management Order Details](./media/Account-Management-OrderDetails.PNG)
 
 ### Loyalty rewards page
 
@@ -76,7 +76,7 @@ The loyalty rewards page enables a customer to become a loyalty program member. 
 
 Below is an example of a loyalty rewards page.
 
-![Account Management Order Details](./media/Account-Management-Loyalty.png)
+![Account Management Order Details](./media/Account-Management-Loyalty.PNG)
 
 ### Wish list page
 
@@ -84,6 +84,6 @@ The wish list page displays the list of items added to the wish list by a custom
 
 Below is an example of a wish list page.
 
-![Account Management Wishlist page](./media/Account-Management-Wishlist.png)
+![Account Management Wishlist page](./media/Account-Management-Wishlist.PNG)
 
 Refer to [Account Management](account-management.md) for details on account management modules and authoring. 
