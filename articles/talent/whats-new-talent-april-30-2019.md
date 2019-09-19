@@ -104,4 +104,4 @@ The ability to track employee time off and understand how time off is calculated
 
 ### Email support for alerts
 
-In platform update 26, users can create alert rules that automatically send email notifications to contacts when notifications are triggered by an event.
+In platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when notifications are triggered by an event.
