@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (July 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Talent July 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (July 2018)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.
 
 ## PowerApps personalization
 
