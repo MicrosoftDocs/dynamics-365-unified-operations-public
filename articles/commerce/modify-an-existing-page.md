@@ -1,4 +1,42 @@
+---
+# required metadata
+
+title: Modify an existing site page
+description: This topic describes how to to modify an existing site page in Dynamics 365 Commerce.
+author: psimolin
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: psimolin
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+
 # Modify an existing page
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic describes how to to modify an existing site page in Dynamics 365 Commerce.
+
+## Overview
 
 This topic describes what actions user needs to take in order to modify an existing page.
 
@@ -19,6 +57,8 @@ After performing your modifications and previewing them, you should check in you
 Should you want to publish your modifications right away, you would activate the "Publish" button from the action ribbon and the latest checked in version of the page with your modifications would be published and available to external users viewing your site. 
 
 ### Steps to change the video on the home page
+
+
 1. Log in to the authoring tool
 1. Locate and click **Fabrikam**-site under **Sites**
 1. Locate **Homepage**-page under **Pages** and open it in the page editor by clicking it
