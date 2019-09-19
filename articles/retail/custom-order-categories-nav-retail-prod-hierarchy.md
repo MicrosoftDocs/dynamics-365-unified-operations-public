@@ -3,7 +3,7 @@
 
 title: Change the sort order for merchandising entities
 description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Microsoft Dynamics 365 for Retail.
-author: ashishharchwani
+author: josaw1
 manager: AnnBe
 ms.date: 08/05/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Change the sort order for merchandising entities
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Retailers consider product discovery a primary tool for customer interaction across all retail channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.

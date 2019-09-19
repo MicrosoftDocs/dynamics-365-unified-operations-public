@@ -5,7 +5,7 @@ title: Security architecture
 description: This topic provides an overview of the security architecture of Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/13/2017
+ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security architecture
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the security architecture of Finance and Operations.
 

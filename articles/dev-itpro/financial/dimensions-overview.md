@@ -45,9 +45,10 @@ The only value that is present on Microsoft Excel templates after installation i
 
 This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
 
-**Note:**  This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
+> [!NOTE]
+> This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
 
-## Add dimensions 
+## Add dimensions  before Dynamics 365 for Finance and Operations
 To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization. 
 
 1. Open the Application Explorer in Visual Studio (**View** &gt; **Application Explorer**). 
@@ -112,6 +113,7 @@ select * from DIMENSIONCOMBINATIONENTITY
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [Extensibility home page](../extensibility/extensibility-home-page.md)
+
 
 
 
