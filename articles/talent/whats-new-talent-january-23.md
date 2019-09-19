@@ -57,5 +57,5 @@ When changing the job on a position, job fields will default to the position. An
 ### Probation period and calendar are not displayed for future hired employees.
 With this change, **Probation period** and **Calendar** fields have been added to the **Manage changes** page to allow for data entry for future and past employees.
 
-### Platform update 23
-Minor bug fixes have been included as part of Platform update 23. For more information, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 23 (January 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### Platform update 23 for Finance and Operations
+Minor bug fixes have been included as part of Platform update 23 for Finance and Operations. For more information, see [What's new or changed in Dynamics 365 Finance and Operations platform update 23 (January 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
