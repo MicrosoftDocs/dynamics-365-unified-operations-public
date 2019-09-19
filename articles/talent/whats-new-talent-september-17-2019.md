@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 for Talent (September 17, 2019)"
+# What's new or changed in Dynamics 365 for Talent (September 17, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2492.
+Changes described in this section apply to build number 8.1.2492. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### You can enable preview features in Sandbox and Trial environments
 
@@ -50,13 +50,13 @@ When you provision a new instance of Talent, you can specify whether the instanc
 
 For more information about how changes are published, see [Provision Talent](./provisioning-talent.md).
 
-### HR staff is unable to see performance review details once assigned to them by workflow. (370308)
+### Human Resources staff can't see performance review details once assigned to them by workflow (370308)
 
-With this week's update, HR professionals will be able to see performance review details that have been assigned to them via the workflow processing. Reviews can now be viewed through Employee self-service > Work items assigned to me
+With this week's update, HR professionals will be able to see performance review details that have been assigned to them through workflow processing. you can now view reviews by navigating to **Employee self-service > Work items assigned to me**.
 
-### Job family field missing in the "Manage changes" page for job details (346031)
+### Job family field missing in the Manage changes page for job details (346031)
 
-In this release, the job family field has been added to the Manage changes form for job details.
+In this release, the job family field has been added to the **Manage changes** page for job details.
 
 ## In preview
 
@@ -64,5 +64,4 @@ In this release, the job family field has been added to the Manage changes form 
 
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
-For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md).
-View the changes in the video posted [Here](https://aka.ms/ROGT19RW2ROV).
+For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To see the changes, watch the video [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
