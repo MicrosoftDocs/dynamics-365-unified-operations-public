@@ -22,3 +22,35 @@ Note: Dynamics 365 e-Commerce feature decouples URLs and content. Page can be cr
 
 For more information on page editing, please see the following articles
 - (Chris to reconcile : https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/5781/files#diff-c38debc450971f13ad973303bba03074)
+
+### Steps to add a new page
+1. Log in to the authoring tool
+1. Locate and click **Fabrikam**-site under **Sites**
+1. Click **New Page** from the action bar
+1. On the **New Page**-dialog, choose marketing template from the list
+1. Add **Page Name**, e.g. "My New Page"
+1. Add **URL**, e.g. "mynewpage"
+1. Click **OK**. You will be sent to the page editor. Notice that the page automatically gets proper headers and footers from the template
+1. From the **Page Outline**, select **Main Slot**
+1. Open the ellipsis-menu right of **Main Slot**
+1. Select **Add Module** from the menu
+1. Select **Container** and click **OK**
+1. Open the ellipsis-menu right of **Fluid Container**
+1. Select **Add Module** from the menu
+1. Choose **Content rich block** from the list and click **OK**
+1. Open the ellipsis-menu right of **Content Rich Block**
+1. Select **Add Module** from the menu
+1. Choose **Content rich block item** from the list and click **OK**
+1. From the module inspector on the right side of the screen, locate and click **Paragraph** property
+1. Type in "My test text"
+1. Click **Save** from the action bar
+1. Click **Check In** from the action bar, in the **Comments**-field write "Added new page" and click **OK**
+1. Click **Preview** from the action bar to preview your page
+1. Close the preview-tab to get back to the authoring tool
+1. Click **Publish** from the action bar
+1. Click **Fabrikam** (your site name) from the breadcrumb
+1. Click **URLs** from the menu on the left
+1. Locate your URL (mynewpage) from the list and select it
+1. Click **Publish** from the action bar
+
+
