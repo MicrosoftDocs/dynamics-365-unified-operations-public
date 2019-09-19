@@ -661,7 +661,7 @@
     - name: Create a payment integration for a payment terminal
       href: dev-itpro/end-to-end-payment-extension.md
     - name: Implementing a payment connector and payment device (white paper)
-      href: http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx
+      href: https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf
     - name: Deploy payment connectors
       href: dev-itpro/deploy-payment-connector.md
     - name: Create custom localized error messages for payment terminal extensions
