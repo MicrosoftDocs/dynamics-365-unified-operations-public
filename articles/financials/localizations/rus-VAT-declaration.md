@@ -55,7 +55,7 @@ To start to work with the VAT declaration, follow these steps.
     Follow these steps:
 
     1. In the LCS Shared asset library, select **Data package** as the asset type. Download the package that is named **VAT declaration v.5.05 v.5.06 package**. The file that is downloaded is named **VAT declaration v.5.05 v.5.06 package.zip**.
-    2. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
+    2. In the **Data management** workspace, select **Import**.
     3. In the **Job details** section, set the following values:
 
         - In the **Name** field, enter any name for the job.
