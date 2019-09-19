@@ -95,7 +95,7 @@
       - name: Glossary
         href: get-started/glossary.md?toc=/supply-chain/toc.json
     - name: Learning catalog
-     items: 
+      items: 
       - name: Learning catalog home page
         href: get-started/learning-catalog.md?toc=/supply-chain/toc.json
       - name: Business decision makers
