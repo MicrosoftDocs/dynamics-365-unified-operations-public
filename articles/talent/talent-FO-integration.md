@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
-description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
+title: Dynamics 365 for Talent to Dynamics 365 Finance integration FAQ
+description: This topic explains what data is synchronized in a Talent and Finance integration.
 author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2019
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
+# Dynamics 365 for Talent to Dynamics 365 Finance integration FAQ
 
 [!include [banner](includes/banner.md)]
 
-This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finance and Operations.
+This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 Finance.
 
 ## Is all data synchronized or just some data entities?
 
 With Core Human Resources (HR), a subset of the data is synchronized. For a list of all
-the entities, see [Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+the entities, see [Integration from Dynamics 365 for Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 For Attract and Onboard, all data is native to Common Data Service.
 
@@ -49,18 +49,18 @@ Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
 more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-## Can I map financial dimensions to transfer between Talent and Finance and Operations?
+## Can I map financial dimensions to transfer between Talent and Finance?
 
 Financial dimensions aren’t currently in Common Data Service and as a result aren’t
 part of the default template. This entity is planned, but currently no release timeline is available.
 
-For data that resides in Finance and Operations but does not exist in Talent,
+For data that resides in Finance but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
-information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
+information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 
-## Sometimes when I import employees, they go into inactive workers in Finance and Operations. Why?
+## Sometimes when I import employees, they go into inactive workers in Finance. Why?
 
 You may get this error if employees don’t have an active employment detail
 record in Talent. To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
@@ -78,7 +78,7 @@ passing it into the destination.
 
 ![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
-## Can I specify which fields to send to Finance and Operations for a specific entity?
+## Can I specify which fields to send to Finance for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
 that exist on the Common Data Service entity will be populated from Core HR.
@@ -94,7 +94,7 @@ No special setup is required for exception handling. The Data Integrator will au
 
 No, integration is currently one-way (Talent to Finance and
 Operations). However, there is a default template available to send data from Talent to
-Finance and Operations.
+Finance.
 
 ## Can I allow record deletion as part of my integration?
 
@@ -117,14 +117,14 @@ the existing template.
 
 ## If I have N number of legal entities where workers have employments, do I need to create a mapping for each of them?
 
-Yes, for each legal entity in Finance and Operations, you'll need a separate
+Yes, for each legal entity in Finance, you'll need a separate 
 integration project in the data integration.
 
 ## I need to transfer data that is not part of the default template provided by Microsoft. Can I do this?
 
 Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Common Data Service entities. The entity must be in Common Data Service for it to be included in the template. 
 
-## I just created new Finance and Operations and Talent environments, and I'm getting the error "The data value violates integrity constraints." Why?
+## I just created new Finance and Talent environments, and I'm getting the error "The data value violates integrity constraints." Why?
 
 Reasons for this error can include:
 
@@ -136,12 +136,12 @@ Operations.
 
 ## If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?
 
-Data Integrator will create multiple projects in Finance and Operations. The
-relationship between the Data Integrator task and the Finance and Operations project
+Data Integrator will create multiple projects in Finance. The
+relationship between the Data Integrator task and the Finance project
 is one to one.
 
 Trace the time from the Data Integrator execution history and look for the index -1
-project in Finance and Operations. If the task number is 9 in Data Integrator, the index in Finance and Operations is 8.
+project in Finance. If the task number is 9 in Data Integrator, the index in Finance is 8.
 
 1. Capture the task index from Data Integrator (in this example it is "9").
 
@@ -151,15 +151,15 @@ project in Finance and Operations. If the task number is 9 in Data Integrator, t
 
 ![Track execution time of project](media/CaptureTimeOfExecution.png)
 
-3. In Finance and Operations, identify index - 1. In this example, the
+3. In Finance, identify index - 1. In this example, the
 project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
 ![Identify index](media/IdentifyIndex.png)
 
-## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
+## After integrating Talent and Finance, I don’t see my Talent data in Finance. What do I do?
 
-The integration to Finance and Operations is a two-step process. First, verify
+The integration to Finance is a two-step process. First, verify
 that the Talent data is updated and available in Common Data Service. This is a near real-time
 sync and can be verified in PowerApps by looking at the data within the data
 entities.
@@ -174,15 +174,15 @@ is correct in Data Integrator. If the integrator mapping looks okay, then
 verify the data management jobs have successfully run. Errors may occur during
 the execution of the batch jobs. For more information about Data Management, see [Data management](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
-## The addresses for my employees are incorrect after I import them into Finance and Operations. What should I do?
+## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
 The number sequence for **Location ID** uses the same pattern in both Talent and
-Finance and Operations. The number sequence needs to be unique on both sides so
+Finance. The number sequence needs to be unique on both sides so
 there are no address collisions when integrating data from Common Data Service to Finance and
 Operations.
 
 During implementation of Talent, verify that the number sequences are not the same in
-Talent and Finance and Operations. Validate that all number sequences are not
+Talent and Finance. Validate that all number sequences are not
 identical where data may be maintained in both systems.
 
 ## When creating my connection set, I am unable to see the connection in the Connection drop-down list. What do I do?
@@ -193,13 +193,13 @@ Make sure when creating your connections, you choose Dynamics 365 for Finance an
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
-entity that is present in Talent and Common Data Service is also present in Finance and Operations.
+entity that is present in Talent and Common Data Service is also present in Finance.
 Also, make sure that you are selecting the correct legal entities for the
 associated Connection Set.
 
-## After setting up my project, the field mapping for Finance and Operations appears to be empty. What should I do?
+## After setting up my project, the field mapping for Finance appears to be empty. What should I do?
 
-Refresh the data entities in Finance and Operations by going to **Data management \> Framework
+Refresh the data entities in Finance by going to **Data management \> Framework
 Parameters \> Entity settings \> Refresh entity list.** This should take a couple
 of minutes to complete, then you should see those mappings. This issue occurs when new projects are created.
 
