@@ -76,7 +76,7 @@ If you're using a BPM library that already has all of the necessary task recordi
 8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
  >[!NOTE]
- > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of Dynamics 365 for Finance and Operations.
+ > To enable the effective execution of your tests using automation tools, make sure all of your task recordings start on the main dashboard of your application.
  > For end-to-end processes that are performed by more than one user, we recommend that you divide your task recordings into user-specific tasks. This simplifies the maintenance of test cases and allows you to execute test cases in the context of security roles, which is a best a practice. 
 
 #### Upload an AXTR file to BPM
@@ -160,7 +160,7 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 ## Execute your tests
 
 ### Run manual test cases
-After you have a test suite, you are ready to use it for regression testing after updates have been made to your Dynamics 365 for Finance and Operations application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use Azure DevOps to mark the test cases as passed or failed.
+After you have a test suite, you are ready to use it for regression testing after updates have been made to your application in a sandbox or test environment. You can run the test cases in your test suite manually or play the task recordings that are part of the test suite and use Azure DevOps to mark the test cases as passed or failed.
 
 ![VSTS test marked](./media/vsts_test_marked.png "VSTS test marked")
 
