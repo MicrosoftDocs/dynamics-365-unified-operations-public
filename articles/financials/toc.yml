@@ -182,438 +182,434 @@
         href: get-started/move-lcs-implementation-project-tenant.md?toc=/financials/toc.json 
       - name: Multiple LCS projects and production environments on one Azure AD tenant
         href: get-started/implement-multiple-projects-aad-tenant.md?toc=/financials/toc.json    
-  - name: Financial management
+  - name: Accounts payable
     items:
-    - name: Financial management home page
-      href: /index.md
-    - name: Accounts payable
+    - name: Accounts payable home page
+      href: accounts-payable/accounts-payable.md
+    - name: Vendor invoices overview
+      href: accounts-payable/vendor-invoices-overview.md
+    - name: Configure Accounts payable
       items:
-      - name: Accounts payable home page
-        href: accounts-payable/accounts-payable.md
-      - name: Vendor invoices overview
-        href: accounts-payable/vendor-invoices-overview.md
-      - name: Configure Accounts payable
-        items:
-        - name: Configure Accounts payable overview
-          href: accounts-payable/accounts-payable-overview.md
-        - name: Key invoice data into accounts payable using a vendor invoice
-          href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
-        - name: Key invoice data into accounts payable using an approval journal
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
-        - name: Key invoice data into the AP system using invoice pool
-          href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-        - name: Record a vendor invoice in the invoice journal
-          href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-      - name: Audit invoices and key data in accounts payable
-        href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
-      - name: Three-way matching policies
-        href: accounts-payable/three-way-matching-policies.md
-      - name: Accounts payable invoice matching
-        items:
-        - name: Accounts payable invoice matching overview
-          href: accounts-payable/accounts-payable-invoice-matching.md
-        - name: Set up accounts payable invoice matching validation
-          href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-      - name: Accounting distributions and subledger journal entries for vendor invoices
-        href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
-      - name: Invoice matching and intercompany purchase orders
-        href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
-      - name: Set up vendor invoice policies
-        href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-      - name: Record vendor invoice and match against received quantity
-        href: accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
-      - name: Positive pay overview
-        href: accounts-payable/positive-pay-overview.md
-      - name: Set up and generate positive pay files
-        href: accounts-payable/set-up-generate-positive-pay-files.md
-      - name: Default offset accounts for vendor invoice journals and invoice approval journals
-        href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
-      - name: Vendor workflow
-        href: accounts-payable/vendor-workflow.md
-      - name: Resolve discrepancies during invoice totals matching
-        items:
-        - name: Resolve discrepancies during invoice totals matching overview
-          href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
-        - name: Research or resolve exceptions
-          href: accounts-payable/tasks/research-resolve-exceptions.md
-      - name: Vendor posting profiles
-        href: accounts-payable/vendor-posting-profiles.md
-      - name: Foreign currency revaluation for Accounts payable and Accounts receivable
-        href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
-      - name: Mobile invoice approvals
-        href: accounts-payable/mobile-invoice-approvals.md
-      - name: Vendor collaboration invoicing workspace
-        href: accounts-payable/vendor-portal-invoicing-workspace.md
-      - name: Vendor invoice automation
-        href: accounts-payable/vendor-invoice-automation.md
-      - name: Broker contract management
-        href: accounts-payable/broker-contract.md
-      - name: Royalty contract management
-        href: accounts-payable/royalty-contract.md
-      - name: Payments and settlements
-        items:
-        - name: Centralized payments for Accounts payable
-          href: accounts-payable/centralized-payments-accounts-payable.md
-        - name: Configure settlement
-          href: cash-bank-management/configure-settlement.md
-        - name: Settle remainder
-          href: cash-bank-management/settle-remainder.md
-        - name: Vendor payment overview
-          href: cash-bank-management/tasks/vendor-payment-overview.md
-        - name: Vendor payments workspace
-          href: accounts-payable/vendor-payments-workspace.md
-        - name: Specify a cross rate
-          href: accounts-payable/specify-cross-rate.md
-        - name: Define vendor payment fees
-          href: accounts-payable/tasks/define-vendor-payment-fees.md
-        - name: Define vendor payment terms
-          href: accounts-payable/tasks/define-vendor-payment-terms.md
-        - name: Create vendor payments by using a payment proposal
-          href: accounts-payable/create-vendor-payments-payment-proposal.md
-        - name: Reverse a vendor payment
-          href: accounts-payable/reverse-vendor-payment.md
-        - name: Electronic reporting for vendor checks
-          href: accounts-payable/electronic-reporting-sample-vendor-checks.md
-        - name: Prepayment invoices and prepayments overview
-          href: accounts-payable/prepayments-invoices-vs-prepayments.md
-        - name: Settle a partial vendor payment before the discount date
-          href: accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md
-        - name: Settle a partial vendor payment that has discounts on vendor credit notes
-          href: accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md
-        - name: Settle a partial vendor payment that has multiple discount periods
-          href: accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md
-        - name: Settle a partial vendor payment or final payment before discount
-          href: accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md
-        - name: Single voucher with multiple customer or vendor records
-          href: accounts-payable/single-voucher-multiple-customer-vendor-records.md
-        - name: Take a cash discount outside the cash discount period
-          href: accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
-        - name: Take a discount that is more than the calculated discount for a vendor payment
-          href: accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
-        - name: Vendor payments for a partial amount
-          href: accounts-payable/vendor-payments-partial-amount.md
-        - name: Vendor transactions list page
-          href: accounts-payable/vendor-transaction-list-page.md
-    - name: Accounts receivable
+      - name: Configure Accounts payable overview
+        href: accounts-payable/accounts-payable-overview.md
+      - name: Key invoice data into accounts payable using a vendor invoice
+        href: accounts-payable/tasks/key-invoice-data-ap-system-vendor-invoice.md
+      - name: Key invoice data into accounts payable using an approval journal
+        href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
+      - name: Key invoice data into the AP system using invoice pool
+        href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+      - name: Record a vendor invoice in the invoice journal
+        href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+    - name: Audit invoices and key data in accounts payable
+      href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
+    - name: Three-way matching policies
+      href: accounts-payable/three-way-matching-policies.md
+    - name: Accounts payable invoice matching
       items:
-      - name: Accounts receivable home page
-        href: accounts-receivable/accounts-receivable.md
-      - name: Credit and collections in Accounts receivable
-        href: accounts-receivable/collections-credit-accounts-receivable.md
-      - name: Configure Accounts receivables and credit and collections
-        href: accounts-receivable/accounts-receivables-set-up-overview.md
-      - name: Set up credit and collections
-        href: accounts-receivable/set-up-collections.md
-      - name: Review collections information
-        href: accounts-receivable/tasks/review-collections-information.md
-      - name: Revenue recognition overview
-        href: accounts-receivable/revenue-recognition-overview.md
-      - name: Set up and process recurring invoices
-        href: accounts-receivable/set-up-process-recurring-invoices.md
-      - name: Accounting distributions and subledger journal entries for free text invoices
-        href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
-      - name: Customer posting profiles
-        href: accounts-receivable/customer-posting-profiles.md
-      - name: SEPA direct debit overview
-        href: accounts-receivable/sepa-direct-debit-overview.md
-      - name: SEPA direct debit mandate
-        href: accounts-receivable/sepa-direct-debit-mandate.md
-      - name: Credit card setup, authorization, and capture
-        href: accounts-receivable/credit-card-authorizations.md
-      - name: Create a free text invoice
-        href: accounts-receivable/create-free-text-invoice-new.md
-      - name: Create a free text invoice template
-        href: accounts-receivable/create-free-text-invoice-template-new.md  
-      - name: Correct a free text invoice
-        href: accounts-receivable/correct-free-text-invoice.md
-      - name: Assign a free text invoice template to a customer
-        href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-      - name: Generate and post recurring free text invoices
-        href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
-      - name: Create sales order invoices
-        href: accounts-receivable/tasks/create-sales-order-invoices.md
-      - name: Set up interest rates for an interest code
-        href: accounts-receivable/set-up-interest-rates-interest-code.md
-      - name: Waive, reinstate, or reverse interest fees
-        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-      - name: Process interest
-        href: accounts-receivable/tasks/process-interest.md
-      - name: Create a customer invoice
-        href: accounts-receivable/configure-customer-invoices.md
-      - name: Deposit customer payments
-        href: accounts-receivable/tasks/deposit-customer-payments.md
-      - name: Establish customer payment terms
-        href: general-ledger/tasks/establish-customer-payment-terms.md
-      - name: Establish customer method of payment
-        href: accounts-receivable/tasks/establish-customer-method-payment.md
-      - name: Establish customer payment fees
-        href: accounts-receivable/tasks/establish-customer-payment-fees.md
-      - name: Set up bills of exchange
-        href: accounts-receivable/set-up-bills-exchange.md
-      - name: Close Accounts receivable
-        href: accounts-receivable/close-accounts-receivable.md
-      - name: Create a collection letter sequence
-        href: accounts-receivable/tasks/create-collection-letter-sequence.md
-      - name: Process collection letters
-        href: accounts-receivable/tasks/process-collection-letters.md
-      - name: Create a direct debit mandate for a customer
-        href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-      - name: Create an interest code with a range
-        href: accounts-receivable/tasks/create-interest-code-range.md
-      - name: Create a write-off journal for a customer
-        href: accounts-receivable/tasks/create-write-off-journal-customer.md
-      - name: Set up and generate accounts receivable aging information
-        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-      - name: Copy customers by using shared number sequences
-        href: accounts-receivable/copy-customer.md
-      - name: Customer workflow
-        href: accounts-receivable/customer-workflow.md
-      - name: Payments and settlements
-        items:
-        - name: Customer payment overview
-          href: cash-bank-management/tasks/customer-payment-overview.md
-        - name: Use a customer payment to settle multiple invoices that span multiple discount periods
-          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
-        - name: Centralized payments for Accounts receivable
-          href: accounts-receivable/centralized-payments-accounts-receivable.md
-        - name: Settle partial customer payment or final payment before discount
-          href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
-        - name: Settle a partial customer payment before the discount date with a final payment after the discount date
-          href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
-        - name: Settle a partial customer payment that has discounts on credit notes
-          href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-        - name: Settle a partial customer payment that has multiple discount periods
-          href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
-        - name: Reimburse customers
-          href: accounts-receivable/reimburse-customers.md
-        - name: Customer payments for a partial amount
-          href: accounts-receivable/customer-payments-partial-amount.md
-        - name: Customer transactions list page
-          href: accounts-receivable/customer-transactions-list-page.md
-    - name: Budgeting
+      - name: Accounts payable invoice matching overview
+        href: accounts-payable/accounts-payable-invoice-matching.md
+      - name: Set up accounts payable invoice matching validation
+        href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+    - name: Accounting distributions and subledger journal entries for vendor invoices
+      href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
+    - name: Invoice matching and intercompany purchase orders
+      href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
+    - name: Set up vendor invoice policies
+      href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+    - name: Record vendor invoice and match against received quantity
+      href: accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
+    - name: Positive pay overview
+      href: accounts-payable/positive-pay-overview.md
+    - name: Set up and generate positive pay files
+      href: accounts-payable/set-up-generate-positive-pay-files.md
+    - name: Default offset accounts for vendor invoice journals and invoice approval journals
+      href: accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+    - name: Vendor workflow
+      href: accounts-payable/vendor-workflow.md
+    - name: Resolve discrepancies during invoice totals matching
       items:
-      - name: Budgeting home page
-        href: budgeting/budgeting-overview.md
-      - name: Budget planning overview
-        href: budgeting/budget-planning-overview-configuration.md
-      - name: Budget control overview
-        href: budgeting/budget-control-overview-configuration.md
-      - name: Budgeting overview
-        href: budgeting/basic-budgeting-overview-configuration.md
-      - name: Position forecasting
-        href: budgeting/position-forecasting.md
-      - name: Budget planning justification documents
-        href: budgeting/budget-planning-justification-docs.md
-      - name: Create a budget from transaction accounts and total accounts
-        href: budgeting/create-budget-transaction-accounts-total-accounts.md
-      - name: Budget planning templates for Excel
-        href: budgeting/budget-planning-excel-templates.md
-      - name: Position budgeting troubleshooting
-        href: budgeting/position-budgeting-set-up-issues.md
-      - name: Budget planning
-        href: budgeting/budget-plan.md
-      - name: Budget planning data allocation
-        href: budgeting/budget-planning-data-allocation.md
-      - name: Budget planning integration with other modules
-        href: budgeting/budget-planning-integration-other-modules.md
-    - name: Cash and bank management
+      - name: Resolve discrepancies during invoice totals matching overview
+        href: accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
+      - name: Research or resolve exceptions
+        href: accounts-payable/tasks/research-resolve-exceptions.md
+    - name: Vendor posting profiles
+      href: accounts-payable/vendor-posting-profiles.md
+    - name: Foreign currency revaluation for Accounts payable and Accounts receivable
+      href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
+    - name: Mobile invoice approvals
+      href: accounts-payable/mobile-invoice-approvals.md
+    - name: Vendor collaboration invoicing workspace
+      href: accounts-payable/vendor-portal-invoicing-workspace.md
+    - name: Vendor invoice automation
+      href: accounts-payable/vendor-invoice-automation.md
+    - name: Broker contract management
+      href: accounts-payable/broker-contract.md
+    - name: Royalty contract management
+      href: accounts-payable/royalty-contract.md
+    - name: Payments and settlements
       items:
-      - name: Cash and bank management home page
-        href: cash-bank-management/cash-bank-management.md
-      - name: Cash flow forecasting
-        href: cash-bank-management/cash-flow-forecasting.md
-      - name: Bank management workspace
-        href: cash-bank-management/Bank-management-workspace.md
-      - name: Bank foreign currency revaluation
-        href: cash-bank-management/bank-revaluation.md
-      - name: Cash discounts
-        href: cash-bank-management/cash-discounts.md
-      - name: Cash discounts for overpayments
-        href: cash-bank-management/cash-discount-handling-overpayments.md
-      - name: Manage IBAN account validation
-        href: cash-bank-management/iban-validation.md
-      - name: Settlement overview
-        href: cash-bank-management/settlement-overview.md
-      - name: Settlement overview for centralized payments
-        href: cash-bank-management/settlement-overview-centralized-payments.md
-      - name: Letters of credit
-        href: cash-bank-management/letters-of-credit.md
-      - name: Create a bank facility agreement for a letter of credit
-        href: cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-      - name: Set up bank facilities and posting profiles for letter of credit
-        href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-      - name: Letters of credit and import collections
-        href: cash-bank-management/letters-of-credit-import-collections.md
-      - name: Export a letter of credit
-        href: cash-bank-management/tasks/export-letter-credit.md
-      - name: Import a letter of credit
-        href: cash-bank-management/tasks/import-letter-credit.md
-      - name: Letters of guarantee
-        href: cash-bank-management/letters-of-guarantee.md
-      - name: Letter of guarantee transaction
-        href: cash-bank-management/tasks/letter-guarantee-transaction.md
-      - name: Create a bank facility agreement for the letter of guarantee
-        href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-      - name: Set up bank facilities and posting profiles for letters of guarantee
-        href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-      - name: Postdated checks
-        href: cash-bank-management/postdated-checks.md
-      - name: Set up postdated checks
-        href: cash-bank-management/tasks/set-up-postdated-checks.md
-      - name: Register and post a postdated check for a customer
-        href: cash-bank-management/tasks/register-post-postdated-check-customer.md
-      - name: Register and post a postdated check for a vendor
-        href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
-      - name: Settle a postdated check from a customer
-        href: cash-bank-management/tasks/settle-postdated-check-customer.md
-      - name: Settle a postdated check for a vendor
-        href: cash-bank-management/tasks/settle-postdated-check-vendor.md
-      - name: Create checks that have Blank status
-        href: cash-bank-management/create-check-with-blank-status.md
-      - name: Prepayment invoices vs. prepayments
+      - name: Centralized payments for Accounts payable
+        href: accounts-payable/centralized-payments-accounts-payable.md
+      - name: Configure settlement
+        href: cash-bank-management/configure-settlement.md
+      - name: Settle remainder
+        href: cash-bank-management/settle-remainder.md
+      - name: Vendor payment overview
+        href: cash-bank-management/tasks/vendor-payment-overview.md
+      - name: Vendor payments workspace
+        href: accounts-payable/vendor-payments-workspace.md
+      - name: Specify a cross rate
+        href: accounts-payable/specify-cross-rate.md
+      - name: Define vendor payment fees
+        href: accounts-payable/tasks/define-vendor-payment-fees.md
+      - name: Define vendor payment terms
+        href: accounts-payable/tasks/define-vendor-payment-terms.md
+      - name: Create vendor payments by using a payment proposal
+        href: accounts-payable/create-vendor-payments-payment-proposal.md
+      - name: Reverse a vendor payment
+        href: accounts-payable/reverse-vendor-payment.md
+      - name: Electronic reporting for vendor checks
+        href: accounts-payable/electronic-reporting-sample-vendor-checks.md
+      - name: Prepayment invoices and prepayments overview
         href: accounts-payable/prepayments-invoices-vs-prepayments.md
-      - name: Handling cash discounts for overpayments
-        href: cash-bank-management/cash-discount-handling-overpayments.md
-      - name: Set up centralized payments
-        href: cash-bank-management/set-up-centralized-payments.md
-      - name: Automatic settlement and prioritization
-        href: accounts-receivable/automatic-settlement-prioritization.md
-      - name: Simple bank reconciliation
-        href: cash-bank-management/reconcile-bank-account.md        
-      - name: Advanced bank reconciliation
-        items:
-        - name: Advanced bank reconciliation setup tasks
-          href: cash-bank-management/configure-advanced-bank-reconciliation.md
-        - name: Set up the advanced bank reconciliation import process
-          href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
-        - name: Set up bank reconciliation matching rules
-          href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
-        - name: Reconcile bank statements by using advanced bank reconciliation
-          href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-        - name: Advanced bank reconciliation MT940 Import – Composite data entity upgrade
-          href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
-        - name: Advanced bank reconciliation overview
-          href: cash-bank-management/advanced-bank-reconciliation-overview.md
-        - name: Bank statement file import troubleshooting
-          href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
-        - name: Update the bank journal composite entity
-          href: cash-bank-management/upgrade-bank-journal-composite-entity.md
-    - name: Cost accounting
+      - name: Settle a partial vendor payment before the discount date
+        href: accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md
+      - name: Settle a partial vendor payment that has discounts on vendor credit notes
+        href: accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md
+      - name: Settle a partial vendor payment that has multiple discount periods
+        href: accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md
+      - name: Settle a partial vendor payment or final payment before discount
+        href: accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md
+      - name: Single voucher with multiple customer or vendor records
+        href: accounts-payable/single-voucher-multiple-customer-vendor-records.md
+      - name: Take a cash discount outside the cash discount period
+        href: accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md
+      - name: Take a discount that is more than the calculated discount for a vendor payment
+        href: accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
+      - name: Vendor payments for a partial amount
+        href: accounts-payable/vendor-payments-partial-amount.md
+      - name: Vendor transactions list page
+        href: accounts-payable/vendor-transaction-list-page.md
+  - name: Accounts receivable
+    items:
+    - name: Accounts receivable home page
+      href: accounts-receivable/accounts-receivable.md
+    - name: Credit and collections in Accounts receivable
+      href: accounts-receivable/collections-credit-accounts-receivable.md
+    - name: Configure Accounts receivables and credit and collections
+      href: accounts-receivable/accounts-receivables-set-up-overview.md
+    - name: Set up credit and collections
+      href: accounts-receivable/set-up-collections.md
+    - name: Review collections information
+      href: accounts-receivable/tasks/review-collections-information.md
+    - name: Revenue recognition overview
+      href: accounts-receivable/revenue-recognition-overview.md
+    - name: Set up and process recurring invoices
+      href: accounts-receivable/set-up-process-recurring-invoices.md
+    - name: Accounting distributions and subledger journal entries for free text invoices
+      href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+    - name: Customer posting profiles
+      href: accounts-receivable/customer-posting-profiles.md
+    - name: SEPA direct debit overview
+      href: accounts-receivable/sepa-direct-debit-overview.md
+    - name: SEPA direct debit mandate
+      href: accounts-receivable/sepa-direct-debit-mandate.md
+    - name: Credit card setup, authorization, and capture
+      href: accounts-receivable/credit-card-authorizations.md
+    - name: Create a free text invoice
+      href: accounts-receivable/create-free-text-invoice-new.md
+    - name: Create a free text invoice template
+      href: accounts-receivable/create-free-text-invoice-template-new.md  
+    - name: Correct a free text invoice
+      href: accounts-receivable/correct-free-text-invoice.md
+    - name: Assign a free text invoice template to a customer
+      href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+    - name: Generate and post recurring free text invoices
+      href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
+    - name: Create sales order invoices
+      href: accounts-receivable/tasks/create-sales-order-invoices.md
+    - name: Set up interest rates for an interest code
+      href: accounts-receivable/set-up-interest-rates-interest-code.md
+    - name: Waive, reinstate, or reverse interest fees
+      href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+    - name: Process interest
+      href: accounts-receivable/tasks/process-interest.md
+    - name: Create a customer invoice
+      href: accounts-receivable/configure-customer-invoices.md
+    - name: Deposit customer payments
+      href: accounts-receivable/tasks/deposit-customer-payments.md
+    - name: Establish customer payment terms
+      href: general-ledger/tasks/establish-customer-payment-terms.md
+    - name: Establish customer method of payment
+      href: accounts-receivable/tasks/establish-customer-method-payment.md
+    - name: Establish customer payment fees
+      href: accounts-receivable/tasks/establish-customer-payment-fees.md
+    - name: Set up bills of exchange
+      href: accounts-receivable/set-up-bills-exchange.md
+    - name: Close Accounts receivable
+      href: accounts-receivable/close-accounts-receivable.md
+    - name: Create a collection letter sequence
+      href: accounts-receivable/tasks/create-collection-letter-sequence.md
+    - name: Process collection letters
+      href: accounts-receivable/tasks/process-collection-letters.md
+    - name: Create a direct debit mandate for a customer
+      href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+    - name: Create an interest code with a range
+      href: accounts-receivable/tasks/create-interest-code-range.md
+    - name: Create a write-off journal for a customer
+      href: accounts-receivable/tasks/create-write-off-journal-customer.md
+    - name: Set up and generate accounts receivable aging information
+      href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+    - name: Copy customers by using shared number sequences
+      href: accounts-receivable/copy-customer.md
+    - name: Customer workflow
+      href: accounts-receivable/customer-workflow.md
+    - name: Payments and settlements
       items:
-      - name: Cost accounting home page
-        href: cost-accounting/cost-accounting-home-page.md
-      - name: Cost accounting terminology
-        href: cost-accounting/terms-cost-accounting.md
-      - name: Fiscal calendars, fiscal years, and periods
-        href: budgeting/fiscal-calendars-fiscal-years-periods.md
-      - name: Financial dimensions
-        href: general-ledger/financial-dimensions.md
-      - name: Financial dimensions and posting
-        href: general-ledger/Default-dimensions.md
-      - name: Add financial dimensions to the CFO workspace
-        href: general-ledger/CFO-workspace.md
-      - name: Create account structures
-        href: general-ledger/tasks/create-account-structures.md
-      - name: Budgeting overview
-        href: budgeting/basic-budgeting-overview-configuration.md
-      - name: Create dimensions and import dimension members
-        href: cost-accounting/cost-dimension.md
-      - name: Cost element dimensions
-        href: cost-accounting/cost-elements.md
-      - name: Create cost elements
-        href: cost-accounting/tasks/create-cost-elements.md
-      - name: Cost object dimensions
-        href: cost-accounting/cost-objects.md
-      - name: Create cost objects
-        href: cost-accounting/tasks/create-cost-objects.md
-      - name: Map cost element dimension members to a common set of dimension members
-        href: cost-accounting/map-cost-elements-dimension-members.md
-      - name: Map a cost element dimension
-        href: cost-accounting/tasks/map-cost-element-dimension.md
-      - name: Dimension hierarchy
-        href: cost-accounting/dimension-hierarchy.md
-      - name: Create an organization report hierarchy
-        href: cost-accounting/tasks/create-an-organization-report-hierarchy.md
-      - name: Access rights of a cost object controller
-        href: cost-accounting/access-rights-cost-object-controller.md
-      - name: Configure access rights for a cost object controller
-        href: cost-accounting/tasks/configure-access-rights-cost-object-controller.md
-      - name: Define cost control units
-        href: cost-accounting/tasks/define-cost-control-units.md
-      - name: Create a cost accounting ledger
-        href: cost-accounting/tasks/create-cost-accounting-ledger.md
-      - name: Statistical dimension members and statistical measure provider templates
-        href: cost-accounting/statistical-measure-provider-template.md
-      - name: Allocation bases
-        href: cost-accounting/allocation-bases.md
-      - name: Create and assign a cost allocation policy to a cost control unit
-        href: cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
-      - name: Create and assign a cost behavior policy to a cost control unit
-        href: cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
-      - name: Create and assign a cost distribution policy to a cost control unit
-        href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
-      - name: Create a cost rollup policy
-        href: cost-accounting/tasks/create-cost-rollup-policy.md
-      - name: Manage data source for the cost accounting ledger
-        href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
-      - name: Process and trace source data
-        href: cost-accounting/tasks/process-trace-source-data.md
-      - name: Overhead calculation
-        href: cost-accounting/overhead-calculation.md
-      - name: Cost rollup policy and overhead calculation
-        href: cost-accounting/cost-rollup.md
-      - name: Configure cost control workspace
-        href: cost-accounting/cost-control-workspace.md
-      - name: Configure cost control workspace parameters
-        href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
-      - name: Understand access list security and RLS in Microsoft Power BI
-        href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
-      - name: Use content pack for Microsoft Power BI reporting
-        href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
-      - name: Use cost control workspace for Finance and Operations mobile application
-        href: cost-accounting/cost-controlling-mobile-workspace.md
-    - name: Expense management
+      - name: Customer payment overview
+        href: cash-bank-management/tasks/customer-payment-overview.md
+      - name: Use a customer payment to settle multiple invoices that span multiple discount periods
+        href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
+      - name: Centralized payments for Accounts receivable
+        href: accounts-receivable/centralized-payments-accounts-receivable.md
+      - name: Settle partial customer payment or final payment before discount
+        href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
+      - name: Settle a partial customer payment before the discount date with a final payment after the discount date
+        href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
+      - name: Settle a partial customer payment that has discounts on credit notes
+        href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
+      - name: Settle a partial customer payment that has multiple discount periods
+        href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+      - name: Reimburse customers
+        href: accounts-receivable/reimburse-customers.md
+      - name: Customer payments for a partial amount
+        href: accounts-receivable/customer-payments-partial-amount.md
+      - name: Customer transactions list page
+        href: accounts-receivable/customer-transactions-list-page.md
+  - name: Budgeting
+    items:
+    - name: Budgeting home page
+      href: budgeting/budgeting-overview.md
+    - name: Budget planning overview
+      href: budgeting/budget-planning-overview-configuration.md
+    - name: Budget control overview
+      href: budgeting/budget-control-overview-configuration.md
+    - name: Budgeting overview
+      href: budgeting/basic-budgeting-overview-configuration.md
+    - name: Position forecasting
+      href: budgeting/position-forecasting.md
+    - name: Budget planning justification documents
+      href: budgeting/budget-planning-justification-docs.md
+    - name: Create a budget from transaction accounts and total accounts
+      href: budgeting/create-budget-transaction-accounts-total-accounts.md
+    - name: Budget planning templates for Excel
+      href: budgeting/budget-planning-excel-templates.md
+    - name: Position budgeting troubleshooting
+      href: budgeting/position-budgeting-set-up-issues.md
+    - name: Budget planning
+      href: budgeting/budget-plan.md
+    - name: Budget planning data allocation
+      href: budgeting/budget-planning-data-allocation.md
+    - name: Budget planning integration with other modules
+      href: budgeting/budget-planning-integration-other-modules.md
+  - name: Cash and bank management
+    items:
+    - name: Cash and bank management home page
+      href: cash-bank-management/cash-bank-management.md
+    - name: Cash flow forecasting
+      href: cash-bank-management/cash-flow-forecasting.md
+    - name: Bank management workspace
+      href: cash-bank-management/Bank-management-workspace.md
+    - name: Bank foreign currency revaluation
+      href: cash-bank-management/bank-revaluation.md
+    - name: Cash discounts
+      href: cash-bank-management/cash-discounts.md
+    - name: Cash discounts for overpayments
+      href: cash-bank-management/cash-discount-handling-overpayments.md
+    - name: Manage IBAN account validation
+      href: cash-bank-management/iban-validation.md
+    - name: Settlement overview
+      href: cash-bank-management/settlement-overview.md
+    - name: Settlement overview for centralized payments
+      href: cash-bank-management/settlement-overview-centralized-payments.md
+    - name: Letters of credit
+      href: cash-bank-management/letters-of-credit.md
+    - name: Create a bank facility agreement for a letter of credit
+      href: cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+    - name: Set up bank facilities and posting profiles for letter of credit
+      href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
+    - name: Letters of credit and import collections
+      href: cash-bank-management/letters-of-credit-import-collections.md
+    - name: Export a letter of credit
+      href: cash-bank-management/tasks/export-letter-credit.md
+    - name: Import a letter of credit
+      href: cash-bank-management/tasks/import-letter-credit.md
+    - name: Letters of guarantee
+      href: cash-bank-management/letters-of-guarantee.md
+    - name: Letter of guarantee transaction
+      href: cash-bank-management/tasks/letter-guarantee-transaction.md
+    - name: Create a bank facility agreement for the letter of guarantee
+      href: cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+    - name: Set up bank facilities and posting profiles for letters of guarantee
+      href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
+    - name: Postdated checks
+      href: cash-bank-management/postdated-checks.md
+    - name: Set up postdated checks
+      href: cash-bank-management/tasks/set-up-postdated-checks.md
+    - name: Register and post a postdated check for a customer
+      href: cash-bank-management/tasks/register-post-postdated-check-customer.md
+    - name: Register and post a postdated check for a vendor
+      href: cash-bank-management/tasks/register-post-postdated-check-vendor.md
+    - name: Settle a postdated check from a customer
+      href: cash-bank-management/tasks/settle-postdated-check-customer.md
+    - name: Settle a postdated check for a vendor
+      href: cash-bank-management/tasks/settle-postdated-check-vendor.md
+    - name: Create checks that have Blank status
+      href: cash-bank-management/create-check-with-blank-status.md
+    - name: Prepayment invoices vs. prepayments
+      href: accounts-payable/prepayments-invoices-vs-prepayments.md
+    - name: Handling cash discounts for overpayments
+      href: cash-bank-management/cash-discount-handling-overpayments.md
+    - name: Set up centralized payments
+      href: cash-bank-management/set-up-centralized-payments.md
+    - name: Automatic settlement and prioritization
+      href: accounts-receivable/automatic-settlement-prioritization.md
+    - name: Simple bank reconciliation
+      href: cash-bank-management/reconcile-bank-account.md        
+    - name: Advanced bank reconciliation
       items:
-      - name: Expense management overview
-        href: expense-management/expense-management.md
-      - name: Expense reports reimagined
-        href: expense-management/ExpenseWorkspaceNew.md
-      - name: Plan expense management
-        href: expense-management/plan-expense-management.md
-      - name: Expense management parameters
-        href: expense-management/Expense-Management-Parameters.md
-      - name: Expense management mobile workspace
-        href: expense-management/expense-management-mobile-workspace.md
-      - name: Set up workflows for expense management
-        href: expense-management/expense-workflows.md
-      - name: Expense management workflow
-        href: expense-management/expense-workflow.md
-      - name: Import and maintain credit card transactions
-        href: expense-management/import-credit-card.md
-      - name: Distributions on an expense report
-        href: expense-management/expense-report-distributions.md
-      - name: Intercompany expenses
-        href: expense-management/intercompany-expense.md
-      - name: Expense policies
-        href: expense-management/travel-expense-policies.md
-      - name: View an expense report
-        href: expense-management/view-expense-report.md
-      - name: Post an expense report
-        href: expense-management/post-expense.md
-      - name: Expense reports and multiple approvers
-        href: expense-management/expense-report-multiple-approvers.md
-      - name: VAT recovery in Expense management
-        href: expense-management/VAT-expense-report.md
-      - name: Per diem rules
-        href: expense-management/per-diem.md
-      - name: Travel requisitions
-        href: expense-management/travel-req.md
-      - name: Personal expenses on an expense report
-        href: expense-management/personal-expenses.md
-    - name: Fixed assets
-      items:
-      - name: Fixed assets home page
-        href: fixed-assets/fixed-assets.md
+      - name: Advanced bank reconciliation setup tasks
+        href: cash-bank-management/configure-advanced-bank-reconciliation.md
+      - name: Set up the advanced bank reconciliation import process
+        href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
+      - name: Set up bank reconciliation matching rules
+        href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
+      - name: Reconcile bank statements by using advanced bank reconciliation
+        href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
+      - name: Advanced bank reconciliation MT940 Import – Composite data entity upgrade
+        href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
+      - name: Advanced bank reconciliation overview
+        href: cash-bank-management/advanced-bank-reconciliation-overview.md
+      - name: Bank statement file import troubleshooting
+        href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
+      - name: Update the bank journal composite entity
+        href: cash-bank-management/upgrade-bank-journal-composite-entity.md
+  - name: Cost accounting
+    items:
+    - name: Cost accounting home page
+      href: cost-accounting/cost-accounting-home-page.md
+    - name: Cost accounting terminology
+      href: cost-accounting/terms-cost-accounting.md
+    - name: Fiscal calendars, fiscal years, and periods
+      href: budgeting/fiscal-calendars-fiscal-years-periods.md
+    - name: Financial dimensions
+      href: general-ledger/financial-dimensions.md
+    - name: Financial dimensions and posting
+      href: general-ledger/Default-dimensions.md
+    - name: Add financial dimensions to the CFO workspace
+      href: general-ledger/CFO-workspace.md
+    - name: Create account structures
+      href: general-ledger/tasks/create-account-structures.md
+    - name: Budgeting overview
+      href: budgeting/basic-budgeting-overview-configuration.md
+    - name: Create dimensions and import dimension members
+      href: cost-accounting/cost-dimension.md
+    - name: Cost element dimensions
+      href: cost-accounting/cost-elements.md
+    - name: Create cost elements
+      href: cost-accounting/tasks/create-cost-elements.md
+    - name: Cost object dimensions
+      href: cost-accounting/cost-objects.md
+    - name: Create cost objects
+      href: cost-accounting/tasks/create-cost-objects.md
+    - name: Map cost element dimension members to a common set of dimension members
+      href: cost-accounting/map-cost-elements-dimension-members.md
+    - name: Map a cost element dimension
+      href: cost-accounting/tasks/map-cost-element-dimension.md
+    - name: Dimension hierarchy
+      href: cost-accounting/dimension-hierarchy.md
+    - name: Create an organization report hierarchy
+      href: cost-accounting/tasks/create-an-organization-report-hierarchy.md
+    - name: Access rights of a cost object controller
+      href: cost-accounting/access-rights-cost-object-controller.md
+    - name: Configure access rights for a cost object controller
+      href: cost-accounting/tasks/configure-access-rights-cost-object-controller.md
+    - name: Define cost control units
+      href: cost-accounting/tasks/define-cost-control-units.md
+    - name: Create a cost accounting ledger
+      href: cost-accounting/tasks/create-cost-accounting-ledger.md
+    - name: Statistical dimension members and statistical measure provider templates
+      href: cost-accounting/statistical-measure-provider-template.md
+    - name: Allocation bases
+      href: cost-accounting/allocation-bases.md
+    - name: Create and assign a cost allocation policy to a cost control unit
+      href: cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md
+    - name: Create and assign a cost behavior policy to a cost control unit
+      href: cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md
+    - name: Create and assign a cost distribution policy to a cost control unit
+      href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
+    - name: Create a cost rollup policy
+      href: cost-accounting/tasks/create-cost-rollup-policy.md
+    - name: Manage data source for the cost accounting ledger
+      href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
+    - name: Process and trace source data
+      href: cost-accounting/tasks/process-trace-source-data.md
+    - name: Overhead calculation
+      href: cost-accounting/overhead-calculation.md
+    - name: Cost rollup policy and overhead calculation
+      href: cost-accounting/cost-rollup.md
+    - name: Configure cost control workspace
+      href: cost-accounting/cost-control-workspace.md
+    - name: Configure cost control workspace parameters
+      href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
+    - name: Understand access list security and RLS in Microsoft Power BI
+      href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+    - name: Use content pack for Microsoft Power BI reporting
+      href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+    - name: Use cost control workspace for Finance and Operations mobile application
+      href: cost-accounting/cost-controlling-mobile-workspace.md
+  - name: Expense management
+    items:
+    - name: Expense management overview
+      href: expense-management/expense-management.md
+    - name: Expense reports reimagined
+      href: expense-management/ExpenseWorkspaceNew.md
+    - name: Plan expense management
+      href: expense-management/plan-expense-management.md
+    - name: Expense management parameters
+      href: expense-management/Expense-Management-Parameters.md
+    - name: Expense management mobile workspace
+      href: expense-management/expense-management-mobile-workspace.md
+    - name: Set up workflows for expense management
+      href: expense-management/expense-workflows.md
+    - name: Expense management workflow
+      href: expense-management/expense-workflow.md
+    - name: Import and maintain credit card transactions
+      href: expense-management/import-credit-card.md
+    - name: Distributions on an expense report
+      href: expense-management/expense-report-distributions.md
+    - name: Intercompany expenses
+      href: expense-management/intercompany-expense.md
+    - name: Expense policies
+      href: expense-management/travel-expense-policies.md
+    - name: View an expense report
+      href: expense-management/view-expense-report.md
+    - name: Post an expense report
+      href: expense-management/post-expense.md
+    - name: Expense reports and multiple approvers
+      href: expense-management/expense-report-multiple-approvers.md
+    - name: VAT recovery in Expense management
+      href: expense-management/VAT-expense-report.md
+    - name: Per diem rules
+      href: expense-management/per-diem.md
+    - name: Travel requisitions
+      href: expense-management/travel-req.md
+    - name: Personal expenses on an expense report
+      href: expense-management/personal-expenses.md
+  - name: Fixed assets
+    items:
+    - name: Fixed assets home page
+      href: fixed-assets/fixed-assets.md
       - name: Create a fixed asset
         href: fixed-assets/tasks/create-fixed-asset.md
       - name: Enter an addition to a fixed asset
