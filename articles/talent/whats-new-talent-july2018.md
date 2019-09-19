@@ -38,7 +38,7 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 ## PowerApps personalization
 
-Microsoft Dynamics 365 for Talent supports integration with the Microsoft PowerApps service. PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
+Talent supports integration with the Microsoft PowerApps service. PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
 
 For more information, see [Embed PowerApps apps](../fin-and-ops/get-started/embed-power-apps.md).
 
