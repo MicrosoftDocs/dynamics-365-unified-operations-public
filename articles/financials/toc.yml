@@ -610,110 +610,110 @@
     items:
     - name: Fixed assets home page
       href: fixed-assets/fixed-assets.md
-      - name: Create a fixed asset
-        href: fixed-assets/tasks/create-fixed-asset.md
-      - name: Enter an addition to a fixed asset
-        href: fixed-assets/tasks/enter-addition-fixed-asset.md
-      - name: Propose fixed asset acquisitions
-        href: fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-      - name: Reclassify fixed assets
-        href: fixed-assets/tasks/reclassify-fixed-assets.md
-      - name: Fixed asset workspace
-        href: fixed-assets/fixed-asset-management-workspace.md
-      - name: Fixed assets roll forward report
-        href: fixed-assets/Fixed-asset-roll-forward-report.md
-      - name: Depreciation book upgrade overview
-        href: fixed-assets/depreciation-book-upgrade-considerations.md
-      - name: Derived books
-        href: fixed-assets/derived-books.md
-      - name: Fixed asset value model and depreciation book merge
-        href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
-      - name: Post with derived books
-        href: fixed-assets/post-derived-value-models.md
-      - name: Post fixed asset transactions to posting layers
-        href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
-      - name: Fixed asset transaction options
-        href: fixed-assets/enter-fixed-asset-transactions.md
-      - name: Transfer a fixed asset
-        href: fixed-assets/tasks/transfer-fixed-asset.md
-      - name: Split a fixed asset
-        href: fixed-assets/tasks/split-fixed-asset.md
-      - name: Set up fixed asset groups
-        href: fixed-assets/tasks/set-up-fixed-asset-groups.md
-      - name: Change a fixed asset group
-        href: fixed-assets/tasks/change-fixed-asset-group.md
-      - name: Recalculate replacement costs and insured values for fixed asset groups
-        href: fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
-      - name: Fixed asset disposal posting accounts
-        href: fixed-assets/fixed-asset-disposal-posting-accounts.md
-      - name: Dispose of a fixed asset using a free text invoice
-        href: fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-      - name: Dispose of a fixed asset as scrap
-        href: fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
-      - name: Fixed asset mass update
-        href: fixed-assets/fixed-asset-mass-update.md
-      - name: Acquire assets through procurement
-        href: fixed-assets/acquire-assets-procurement.md
-      - name: Set up and integration
-        items:
-        - name: Set up fixed assets
-          href: fixed-assets/set-up-fixed-assets.md
-        - name: Set up fixed asset posting profiles
-          href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-        - name: Fixed assets integration
-          href: fixed-assets/fixed-asset-integration.md
-        - name: Create and acquire assets from accounts payable
-          href: fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-        - name: 'Set up depreciation books '
-          href: fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-        - name: Set up and create depreciation profiles
-          href: fixed-assets/tasks/set-up-depreciation-profiles.md
-        - name: Set up value models
-          href: fixed-assets/tasks/set-up-value-models.md
-      - name: Depreciation methods
-        items:
-        - name: Depreciation conventions
-          href: fixed-assets/Fixed-asset-depreciation-conventions.md
-        - name: 125 percent reducing balance depreciation
-          href: fixed-assets/125-percent-reducing-balance-depreciation.md
-        - name: 150 percent reducing balance depreciation
-          href: fixed-assets/150-percent-reducing-balance-depreciation.md
-        - name: 175 percent reducing balance depreciation
-          href: fixed-assets/175-percent-reducing-balance-depreciation.md
-        - name: 200 percent reducing balance depreciation
-          href: fixed-assets/200-percent-reducing-balance-depreciation.md
-        - name: Bonus depreciation
-          href: fixed-assets/bonus-depreciation.md
-        - name: Set up bonus depreciation
-          href: fixed-assets/tasks/set-up-bonus-depreciation.md
-        - name: Consumption depreciation
-          href: fixed-assets/consumption-depreciation.md
-        - name: Depreciation effects with reversals
-          href: fixed-assets/depreciation-effects-reversals.md
-        - name: Depreciation methods and conventions
-          href: fixed-assets/depreciation-methods-conventions.md
-        - name: Create a depreciation proposal
-          href: fixed-assets/tasks/create-depreciation-proposal.md
-        - name: Factor depreciation
-          href: fixed-assets/factor-depreciation.md
-        - name: Fixed asset acquisition posting accounts
-          href: fixed-assets/fixed-asset-acquisition-posting-accounts.md
-        - name: Fixed asset depreciation
-          href: fixed-assets/fixed-asset-depreciation.md
-        - name: Calculate fixed asset depreciation across legal entities
-          href: fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-        - name: Change depreciation conventions for multiple fixed assets
-          href: fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-        - name: Manual depreciation
-          href: fixed-assets/manual-depreciation.md
-        - name: Reduce balance depreciation
-          href: fixed-assets/reduce-balance-depreciation.md
-        - name: Round-off amount for depreciation calculations
-          href: fixed-assets/round-off-amount-depreciation-calculations.md
-        - name: Straight line life remaining depreciation
-          href: fixed-assets/straight-line-life-remaining-depreciation.md
-        - name: Straight line service life depreciation
-          href: fixed-assets/straight-line-service-life-depreciation.md
+    - name: Create a fixed asset
+      href: fixed-assets/tasks/create-fixed-asset.md
+    - name: Enter an addition to a fixed asset
+      href: fixed-assets/tasks/enter-addition-fixed-asset.md
+    - name: Propose fixed asset acquisitions
+      href: fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+    - name: Reclassify fixed assets
+      href: fixed-assets/tasks/reclassify-fixed-assets.md
+    - name: Fixed asset workspace
+      href: fixed-assets/fixed-asset-management-workspace.md
+    - name: Fixed assets roll forward report
+      href: fixed-assets/Fixed-asset-roll-forward-report.md
+    - name: Depreciation book upgrade overview
+      href: fixed-assets/depreciation-book-upgrade-considerations.md
+    - name: Derived books
+      href: fixed-assets/derived-books.md
+    - name: Fixed asset value model and depreciation book merge
+      href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
+    - name: Post with derived books
+      href: fixed-assets/post-derived-value-models.md
+    - name: Post fixed asset transactions to posting layers
+      href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
+    - name: Fixed asset transaction options
+      href: fixed-assets/enter-fixed-asset-transactions.md
+    - name: Transfer a fixed asset
+      href: fixed-assets/tasks/transfer-fixed-asset.md
+    - name: Split a fixed asset
+      href: fixed-assets/tasks/split-fixed-asset.md
+    - name: Set up fixed asset groups
+      href: fixed-assets/tasks/set-up-fixed-asset-groups.md
+    - name: Change a fixed asset group
+      href: fixed-assets/tasks/change-fixed-asset-group.md
+    - name: Recalculate replacement costs and insured values for fixed asset groups
+      href: fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
+    - name: Fixed asset disposal posting accounts
+      href: fixed-assets/fixed-asset-disposal-posting-accounts.md
+    - name: Dispose of a fixed asset using a free text invoice
+      href: fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
+    - name: Dispose of a fixed asset as scrap
+      href: fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
+    - name: Fixed asset mass update
+      href: fixed-assets/fixed-asset-mass-update.md
+    - name: Acquire assets through procurement
+      href: fixed-assets/acquire-assets-procurement.md
+    - name: Set up and integration
+      items:
+      - name: Set up fixed assets
+        href: fixed-assets/set-up-fixed-assets.md
+      - name: Set up fixed asset posting profiles
+        href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
+      - name: Fixed assets integration
+        href: fixed-assets/fixed-asset-integration.md
+      - name: Create and acquire assets from accounts payable
+        href: fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+      - name: 'Set up depreciation books '
+        href: fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+      - name: Set up and create depreciation profiles
+        href: fixed-assets/tasks/set-up-depreciation-profiles.md
+      - name: Set up value models
+        href: fixed-assets/tasks/set-up-value-models.md
+    - name: Depreciation methods
+      items:
+      - name: Depreciation conventions
+        href: fixed-assets/Fixed-asset-depreciation-conventions.md
+      - name: 125 percent reducing balance depreciation
+        href: fixed-assets/125-percent-reducing-balance-depreciation.md
+      - name: 150 percent reducing balance depreciation
+        href: fixed-assets/150-percent-reducing-balance-depreciation.md
+      - name: 175 percent reducing balance depreciation
+        href: fixed-assets/175-percent-reducing-balance-depreciation.md
+      - name: 200 percent reducing balance depreciation
+        href: fixed-assets/200-percent-reducing-balance-depreciation.md
+      - name: Bonus depreciation
+        href: fixed-assets/bonus-depreciation.md
+      - name: Set up bonus depreciation
+        href: fixed-assets/tasks/set-up-bonus-depreciation.md
+      - name: Consumption depreciation
+        href: fixed-assets/consumption-depreciation.md
+      - name: Depreciation effects with reversals
+        href: fixed-assets/depreciation-effects-reversals.md
+      - name: Depreciation methods and conventions
+        href: fixed-assets/depreciation-methods-conventions.md
+      - name: Create a depreciation proposal
+        href: fixed-assets/tasks/create-depreciation-proposal.md
+      - name: Factor depreciation
+        href: fixed-assets/factor-depreciation.md
+      - name: Fixed asset acquisition posting accounts
+        href: fixed-assets/fixed-asset-acquisition-posting-accounts.md
+      - name: Fixed asset depreciation
+        href: fixed-assets/fixed-asset-depreciation.md
+      - name: Calculate fixed asset depreciation across legal entities
+        href: fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+      - name: Change depreciation conventions for multiple fixed assets
+        href: fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
+      - name: Manual depreciation
+        href: fixed-assets/manual-depreciation.md
+      - name: Reduce balance depreciation
+        href: fixed-assets/reduce-balance-depreciation.md
+      - name: Round-off amount for depreciation calculations
+        href: fixed-assets/round-off-amount-depreciation-calculations.md
+      - name: Straight line life remaining depreciation
+        href: fixed-assets/straight-line-life-remaining-depreciation.md
+      - name: Straight line service life depreciation
+        href: fixed-assets/straight-line-service-life-depreciation.md
     - name: General ledger
       items:
       - name: General ledger overview
