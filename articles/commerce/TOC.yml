@@ -2,6 +2,8 @@
   items:
   - name: Create a new e-Commerce site
     items:
+    - name: Online store overview
+      href: online-store-overview.md
     - name: Deploy a new e-Commerce site
       href: deploy-ecommerce-site.md
     - name: Configure a domain name
