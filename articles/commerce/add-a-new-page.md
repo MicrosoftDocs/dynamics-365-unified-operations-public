@@ -1,5 +1,42 @@
-# Add a new page
-This topic describes how to add a new page to your e-Commerce website.
+---
+# required metadata
+
+title: Add a new site page
+description: This topic describes how to add a new site page in Dynamics 365 Commerce.
+author: psimolin
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: psimolin
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
+---
+
+# Add a new site page
+
+This topic describes how to add a new site page in Dynamics 365 Commerce.
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+## Overview
 
 After you have finished with your templates and fragments, next step is to start creating pages that utilize them.
 
@@ -23,11 +60,13 @@ Note: Dynamics 365 e-Commerce feature decouples URLs and content. Page can be cr
 For more information on page editing, please see the following articles
 - (Chris to reconcile : https://github.com/MicrosoftDocs/Dynamics-365-Operations/pull/5781/files#diff-c38debc450971f13ad973303bba03074)
 
-### Steps to add a new page
-1. Log in to the authoring tool
+### Add a new page
+
+To add a new site page to your site, do the following.
+
 1. Locate and click **Fabrikam**-site under **Sites**
 1. Click **New Page** from the action bar
-1. On the **New Page**-dialog, choose marketing template from the list
+1. In the **New Page** dialog box, select a template.
 1. Add **Page Name**, e.g. "My New Page"
 1. Add **URL**, e.g. "mynewpage"
 1. Click **OK**. You will be sent to the page editor. Notice that the page automatically gets proper headers and footers from the template
