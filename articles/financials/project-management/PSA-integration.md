@@ -67,7 +67,7 @@ The following illustration shows how data is synchronized as part of the integra
 
 ## System requirements for Finance
 
-To use the Project Service Automation to Finance integration solution, you must install Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12 or later.
+To use the Project Service Automation to Finance integration solution, you must install Enterprise edition 7.3 with Platform update 12 or later.
 
 ## System requirements for Project Service Automation
 
