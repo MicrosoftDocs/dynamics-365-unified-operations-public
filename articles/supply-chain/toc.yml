@@ -11,177 +11,177 @@
     - name: One Version service updates 
      items:
       - name: One Version service updates overview
-        href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+        href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/supply-chain/toc.json
       - name: One Version service updates FAQ
-        href: get-started/one-version.md
+        href: get-started/one-version.md?toc=/supply-chain/toc.json
       - name: Software lifecycle policy - Cloud
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/supply-chain/toc.json
       - name: Software lifecycle policy - On-premises
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/supply-chain/toc.json
       - name: Service update availability
-        href: get-started/public-preview-releases.md
+        href: get-started/public-preview-releases.md?toc=/supply-chain/toc.json
       - name: Apply updates to cloud environments
-        href: ../dev-itpro/deployment/apply-deployable-package-system.md
+        href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/supply-chain/toc.json
       - name: Configure service updates
-        href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+        href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/supply-chain/toc.json
       - name: Pause service updates
-        href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+        href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/supply-chain/toc.json
       - name: Get notified about service updates
-        href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+        href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/supply-chain/toc.json
       - name: Data task automation
-        href: ../dev-itpro/data-entities/data-task-automation.md
+        href: ../dev-itpro/data-entities/data-task-automation.md?toc=/supply-chain/toc.json
       - name: Delivering ISV solutions using One Version
-        href: ../dev-itpro/lifecycle-services/oneversion-isv.md
+        href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/supply-chain/toc.json
       - name: Create and automate user acceptance tests
-        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md    
+        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/supply-chain/toc.json   
     - name: Deploy a demo environment
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/supply-chain/toc.json
     - name: Deployment considerations
       items:
       - name: Deployment options
-        href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/supply-chain/toc.json
       - name: Cloud deployment
-        href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/supply-chain/toc.json
       - name: System requirements for cloud deployments
-        href: get-started/system-requirements.md
+        href: get-started/system-requirements.md?toc=/supply-chain/toc.json
       - name: On-premises deployment
-        href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/supply-chain/toc.json
       - name: System requirements for on-premises deployments
-        href: get-started/system-requirements-on-prem.md
+        href: get-started/system-requirements-on-prem.md?toc=/supply-chain/toc.json
       - name: Buy Finance + Operations (on-premises)
-        href: get-started/purchase-on-premises.md
+        href: get-started/purchase-on-premises.md?toc=/supply-chain/toc.json
       - name: Configure Warehousing for on-premises deployments
-        href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/supply-chain/toc.json
       - name: Finance and Operations operated by 21Vianet in China
-        href: ../dev-itpro/deployment/china-local-deployment.md
+        href: ../dev-itpro/deployment/china-local-deployment.md?toc=/supply-chain/toc.json
       - name: Finance and Operations in France
-        href: ../dev-itpro/deployment/france-local-deployment.md
+        href: ../dev-itpro/deployment/france-local-deployment.md?toc=/supply-chain/toc.json
     - name: What's new or changed
       items:
       - name: What's new or changed home page
         href: get-started/whats-new-changed.md
       - name: Preview features in Finance and Operations 10.0.6 (November 2019)
-        href: get-started/whats-new-changed-10-0-6.md
+        href: get-started/whats-new-changed-10-0-6.md?toc=/supply-chain/toc.json
       - name: Finance and Operations 10.0.5 (October 2019)
-        href: get-started/whats-new-changed-10-0-5.md
+        href: get-started/whats-new-changed-10-0-5.md?toc=/supply-chain/toc.json
       - name: Finance and Operations 10.0.4 (July 2019)
-        href: get-started/whats-new-changed-10-0-4.md
+        href: get-started/whats-new-changed-10-0-4.md?toc=/supply-chain/toc.json
       - name: Finance and Operations, Enterprise edition 7.3
-        href: get-started/whats-new-application-7.3-update.md
+        href: get-started/whats-new-application-7.3-update.md?toc=/supply-chain/toc.json
       - name: Removed or deprecated features
-        href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/supply-chain/toc.json
       - name: AX 2012 features that were postponed
-        href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
+        href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/supply-chain/toc.json
       - name: Features not implemented in on-premises deployments
-        href: get-started/features-not-implemented-on-prem.md
+        href: get-started/features-not-implemented-on-prem.md?toc=/supply-chain/toc.json
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: get-started/mainstream-support-ax-2009-2012.md
+        href: get-started/mainstream-support-ax-2009-2012.md?toc=/supply-chain/toc.json
     - name: Documentation resources
       items:
       - name: Help system
-        href: get-started/help-overview.md
+        href: get-started/help-overview.md?toc=/supply-chain/toc.json
       - name: Connect the Help system
-        href: get-started/help-connect.md
+        href: get-started/help-connect.md?toc=/supply-chain/toc.json
       - name: Connect a custom help site
-        href: get-started/help-custom.md        
+        href: get-started/help-custom.md?toc=/supply-chain/toc.json    
       - name: View and export field descriptions
-        href: get-started/view-export-field-descriptions.md
+        href: get-started/view-export-field-descriptions.md?toc=/supply-chain/toc.json
       - name: Task Recorder
-        href: ../dev-itpro/user-interface/task-recorder.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/user-interface/task-recorder.md?toc=/supply-chain/toc.json
       - name: Create documentation or training with Task Recorder
-        href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/supply-chain/toc.json
       - name: Videos for Finance and Operations
-        href: get-started/videos.md
+        href: get-started/videos.md?toc=/supply-chain/toc.json
       - name: Glossary
-        href: get-started/glossary.md
+        href: get-started/glossary.md?toc=/supply-chain/toc.json
     - name: Learning catalog
      items: 
       - name: Learning catalog home page
-        href: get-started/learning-catalog.md
+        href: get-started/learning-catalog.md?toc=/supply-chain/toc.json
       - name: Business decision makers
-        href: get-started/learning-catalog-bdm.md
+        href: get-started/learning-catalog-bdm.md?toc=/supply-chain/toc.json
       - name: Business users
-        href: get-started/learning-catalog-business-user.md
+        href: get-started/learning-catalog-business-user.md?toc=/supply-chain/toc.json
       - name: Implementation project managers
-        href: get-started/learning-catalog-project-manager.md
+        href: get-started/learning-catalog-project-manager.md?toc=/supply-chain/toc.json
       - name: Administrators
-        href: get-started/learning-catalog-administrator.md
+        href: get-started/learning-catalog-administrator.md?toc=/supply-chain/toc.json
       - name: Developers
-        href: get-started/learning-catalog-developer.md
+        href: get-started/learning-catalog-developer.md?toc=/supply-chain/toc.json
       - name: Partner sales and marketing
-        href: get-started/learning-catalog-partner-sales.md
+        href: get-started/learning-catalog-partner-sales.md?toc=/supply-chain/toc.json
       - name: Functional consultants
-        href: get-started/learning-catalog-functional-consultant.md
+        href: get-started/learning-catalog-functional-consultant.md?toc=/supply-chain/toc.json
       - name: Solution architects
-        href: get-started/learning-catalog-solution-architect.md
+        href: get-started/learning-catalog-solution-architect.md?toc=/supply-chain/toc.json
     - name: Explore the user interface
       items:
       - name: User interface elements
-        href: get-started/user-interface-elements.md
+        href: get-started/user-interface-elements.md?toc=/supply-chain/toc.json
       - name: Accessibility features
-        href: get-started/accessibility-features.md
+        href: get-started/accessibility-features.md?toc=/supply-chain/toc.json
       - name: Feature management overview
-        href: get-started/feature-management/feature-management-overview.md
+        href: get-started/feature-management/feature-management-overview.md?toc=/supply-chain/toc.json
       - name: Client FAQ
-        href: get-started/client-faq.md
+        href: get-started/client-faq.md?toc=/supply-chain/toc.json
       - name: Action search
-        href: get-started/action-search.md
+        href: get-started/action-search.md?toc=/supply-chain/toc.json
       - name: Advanced filtering and query syntax
-        href: get-started/advanced-filtering-query-options.md
+        href: get-started/advanced-filtering-query-options.md?toc=/supply-chain/toc.json
       - name: Configure and filter workspaces
-        href: get-started/configure-filter-workspaces.md
+        href: get-started/configure-filter-workspaces.md?toc=/supply-chain/toc.json
       - name: Show pages side by side by using the Open in new window feature
-        href: get-started/display-pages-side-by-side.md
+        href: get-started/display-pages-side-by-side.md?toc=/supply-chain/toc.json
       - name: Keyboard shortcuts
-        href: get-started/shortcut-keys.md
+        href: get-started/shortcut-keys.md?toc=/supply-chain/toc.json
       - name: Change the banners or logo images for legal entities
-        href: get-started/tasks/change-banner-or-logo.md
+        href: get-started/tasks/change-banner-or-logo.md?toc=/supply-chain/toc.json
       - name: Navigation search
-        href: get-started/navigation-search.md
+        href: get-started/navigation-search.md?toc=/supply-chain/toc.json
       - name: Personalize the user experience
-        href: get-started/personalize-user-experience.md
+        href: get-started/personalize-user-experience.md?toc=/supply-chain/toc.json
       - name: Saved views
-        href: get-started/saved-views.md
+        href: get-started/saved-views.md?toc=/supply-chain/toc.json
       - name: Create and work with custom fields
-        href: get-started/user-defined-fields.md
+        href: get-started/user-defined-fields.md?toc=/supply-chain/toc.json
       - name: Embed PowerApps apps
-        href: get-started/embed-power-apps.md
+        href: get-started/embed-power-apps.md?toc=/supply-chain/toc.json
       - name: Find information by using lookups
-        href: get-started/use-lookups-to-find-information.md
+        href: get-started/use-lookups-to-find-information.md?toc=/supply-chain/toc.json
       - name: Change the date for a session
-        href: organization-administration/tasks/change-date-session.md
+        href: organization-administration/tasks/change-date-session.md?toc=/supply-chain/toc.json
       - name: Set a user's preferred time zone
-        href: organization-administration/tasks/set-users-preferred-time-zone.md
+        href: organization-administration/tasks/set-users-preferred-time-zone.md?toc=/supply-chain/toc.json
       - name: Understand Lifecycle Services
-        href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/supply-chain/toc.json
     - name: Implementation lifecycle management
       items:
       - name: Implementation lifecycle management home page
-        href: imp-lifecycle/implementation-lifecycle.md
+        href: imp-lifecycle/implementation-lifecycle.md?toc=/supply-chain/toc.json
       - name: Finance and Operations architecture
-        href: imp-lifecycle/architecture-overview.md    
+        href: imp-lifecycle/architecture-overview.md?toc=/supply-chain/toc.json
       - name: Microsoft FastTrack for Finance and Operations
-        href: get-started/fasttrack-dynamics-365-overview.md
+        href: get-started/fasttrack-dynamics-365-overview.md?toc=/supply-chain/toc.json
       - name: Onboard an implementation project
-        href: imp-lifecycle/onboard.md
+        href: imp-lifecycle/onboard.md?toc=/supply-chain/toc.json
       - name: Environment planning
-        href: imp-lifecycle/environment-planning.md   
+        href: imp-lifecycle/environment-planning.md?toc=/supply-chain/toc.json   
       - name: Prepare for go-live
-        href: imp-lifecycle/prepare-go-live.md
+        href: imp-lifecycle/prepare-go-live.md?toc=/supply-chain/toc.json
       - name: Go-live FAQ
-        href: imp-lifecycle/go-live-faq.md
+        href: imp-lifecycle/go-live-faq.md?toc=/supply-chain/toc.json
       - name: Submit a service request
-        href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/supply-chain/toc.json
       - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-        href: get-started/subscription-overview.md      
+        href: get-started/subscription-overview.md?toc=/supply-chain/toc.json    
       - name: Move environments between data centers
-        href: get-started/move-environments-data-center.md      
+        href: get-started/move-environments-data-center.md?toc=/supply-chain/toc.json      
       - name: Move licenses between agreement types
-        href: get-started/move-licenses-between-agreement-types.md 
+        href: get-started/move-licenses-between-agreement-types.md?toc=/supply-chain/toc.json 
       - name: Move LCS implementation projects to different Azure AD tenants
-        href: get-started/move-lcs-implementation-project-tenant.md 
+        href: get-started/move-lcs-implementation-project-tenant.md?toc=/supply-chain/toc.json 
       - name: Multiple LCS projects and production environments on one Azure AD tenant
-        href: get-started/implement-multiple-projects-aad-tenant.md
+        href: get-started/implement-multiple-projects-aad-tenant.md?toc=/supply-chain/toc.json
   - name: Cost accounting
     items:
       - name: Cost accounting home page
@@ -267,193 +267,193 @@
   - name: Mobile app
     items:
     - name: Mobile app home page
-      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/supply-chain/toc.json
     - name: Mobile workspaces
       items:
       - name: Available mobile workspaces
-        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/supply-chain/toc.json
       - name: Company directory
-        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Cost controlling
-        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Expense management
-        href: ../financials/expense-management/expense-management-mobile-workspace.md
+        href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Inventory on-hand
-        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
+        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Invoice approvals
-        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: My team
-        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Project mobile applications overview
-        href: ../financials/project-management/project-mobile-application-overview.md
+        href: ../financials/project-management/project-mobile-application-overview.md?toc=/supply-chain/toc.json
       - name: Project time entry
-        href: ../financials/project-management/project-time-entry-mobile-workspace.md
+        href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Project timesheet
-        href: ../financials/project-management/project-timesheet.md
+        href: ../financials/project-management/project-timesheet.md?toc=/supply-chain/toc.json
       - name: Purchase order approval
-        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Sales orders
-        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
+        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/supply-chain/toc.json
       - name: Vendor collaboration
-        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
+        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/supply-chain/toc.json
     - name: Publish mobile workspaces
-      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/supply-chain/toc.json
   - name: Office integration
     items:
     - name: Office integration overview
-      href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/supply-chain/toc.json
     - name: Office integration tutorial
-      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/supply-chain/toc.json
     - name: Open entity data in Excel and update it using the Excel add-in
-      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/supply-chain/toc.json
     - name: Create Open in Excel experiences
-      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/supply-chain/toc.json
     - name: Add templates to the Open lines in Excel menu
-      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/supply-chain/toc.json
     - name: Customize the Open in Microsoft Office menu
-      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/supply-chain/toc.json
     - name: Configure and send email
-      href: organization-administration/configure-email.md
+      href: organization-administration/configure-email.md?toc=/supply-chain/toc.json
     - name: Develop email experiences
-      href: ../dev-itpro/dev-tools/sysmailer-develop.md
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/supply-chain/toc.json
     - name: Troubleshoot the Office integration
-      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/supply-chain/toc.json
   - name: Organization administration
     items:
     - name: Organization administration home page
-      href: organization-administration/organization-administration-home-page.md
+      href: organization-administration/organization-administration-home-page.md?toc=/supply-chain/toc.json
     - name: Number sequences
       items:
       - name: Number sequences overview
-        href: organization-administration/number-sequence-overview.md
+        href: organization-administration/number-sequence-overview.md?toc=/supply-chain/toc.json
       - name: Set up number sequences on an individual basis
-        href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
+        href: organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/supply-chain/toc.json
       - name: Set up number sequences using a wizard
-        href: organization-administration/tasks/set-up-number-sequences-wizard.md
+        href: organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/supply-chain/toc.json
     - name: Organizations and organizational hierarchies
       items:
       - name: Organizations and organizational hierarchies overview
-        href: organization-administration/organizations-organizational-hierarchies.md
+        href: organization-administration/organizations-organizational-hierarchies.md?toc=/supply-chain/toc.json
       - name: Plan your organizational hierarchy
-        href: organization-administration/plan-organizational-hierarchy.md
+        href: organization-administration/plan-organizational-hierarchy.md?toc=/supply-chain/toc.json
       - name: Create an organization hierarchy
-        href: organization-administration/tasks/create-organization-hierarchy.md
+        href: organization-administration/tasks/create-organization-hierarchy.md?toc=/supply-chain/toc.json
       - name: Create legal entities
-        href: organization-administration/tasks/create-legal-entity.md
+        href: organization-administration/tasks/create-legal-entity.md?toc=/supply-chain/toc.json
       - name: Create operating units
-        href: organization-administration/tasks/create-operating-unit.md
+        href: organization-administration/tasks/create-operating-unit.md?toc=/supply-chain/toc.json
     - name: Global address book
       items:
       - name: Global address book overview
-        href: organization-administration/overview-global-address-book.md
+        href: organization-administration/overview-global-address-book.md?toc=/supply-chain/toc.json
       - name: Plan for the global address book and other address books
-        href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
+        href: organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/supply-chain/toc.json
       - name: Configure the global address book
-        href: organization-administration/tasks/configure-global-address-book.md
+        href: organization-administration/tasks/configure-global-address-book.md?toc=/supply-chain/toc.json
       - name: Address books FAQ
-        href: organization-administration/qa-address-books.md
+        href: organization-administration/qa-address-books.md?toc=/supply-chain/toc.json
       - name: Configure address books
-        href: organization-administration/tasks/address-books.md
+        href: organization-administration/tasks/address-books.md?toc=/supply-chain/toc.json
     - name: Workflow system
       items:
       - name: Workflow system overview
-        href: organization-administration/overview-workflow-system.md
+        href: organization-administration/overview-workflow-system.md?toc=/supply-chain/toc.json
       - name: Workflow system architecture
-        href: organization-administration/workflow-system-architecture.md
+        href: organization-administration/workflow-system-architecture.md?toc=/supply-chain/toc.json
       - name: Workflow elements
-        href: organization-administration/workflow-elements.md
+        href: organization-administration/workflow-elements.md?toc=/supply-chain/toc.json
       - name: Workflow actions
-        href: organization-administration/workflow-actions.md
+        href: organization-administration/workflow-actions.md?toc=/supply-chain/toc.json
       - name: Create workflows
         items:
         - name: Create workflows overview
-          href: organization-administration/create-workflow.md
+          href: organization-administration/create-workflow.md?toc=/supply-chain/toc.json
         - name: Configure workflow properties
-          href: organization-administration/configure-workflow-properties.md
+          href: organization-administration/configure-workflow-properties.md?toc=/supply-chain/toc.json
         - name: Configure manual tasks
-          href: organization-administration/configure-manual-task-workflow.md
+          href: organization-administration/configure-manual-task-workflow.md?toc=/supply-chain/toc.json
         - name: Configure automated tasks
-          href: organization-administration/configure-automated-task-workflow.md
+          href: organization-administration/configure-automated-task-workflow.md?toc=/supply-chain/toc.json
         - name: Configure approval processes
-          href: organization-administration/configure-approval-process-workflow.md
+          href: organization-administration/configure-approval-process-workflow.md?toc=/supply-chain/toc.json
         - name: Configure approval steps
-          href: organization-administration/configure-approval-step-workflow.md
+          href: organization-administration/configure-approval-step-workflow.md?toc=/supply-chain/toc.json
         - name: Configure manual decisions
-          href: organization-administration/configure-manual-decision-workflow.md
+          href: organization-administration/configure-manual-decision-workflow.md?toc=/supply-chain/toc.json
         - name: Configure conditional decisions
-          href: organization-administration/configure-conditional-decision-workflow.md
+          href: organization-administration/configure-conditional-decision-workflow.md?toc=/supply-chain/toc.json
         - name: Configure parallel activities
-          href: organization-administration/configure-parallel-activity-workflow.md
+          href: organization-administration/configure-parallel-activity-workflow.md?toc=/supply-chain/toc.json
         - name: Configure parallel branches
-          href: organization-administration/configure-parallel-branch-workflow.md
+          href: organization-administration/configure-parallel-branch-workflow.md?toc=/supply-chain/toc.json
         - name: Configure line-item workflows
-          href: organization-administration/configure-line-item-workflow.md
+          href: organization-administration/configure-line-item-workflow.md?toc=/supply-chain/toc.json
       - name: Configure the Workflow Message Processing batch job as critical
-        href: organization-administration/workflow-batch-job-critical.md
+        href: organization-administration/workflow-batch-job-critical.md?toc=/supply-chain/toc.json
       - name: Delegate work items in a workflow
-        href: organization-administration/tasks/delegate-work-items-workflow.md
+        href: organization-administration/tasks/delegate-work-items-workflow.md?toc=/supply-chain/toc.json
       - name: View workflow history
-        href: organization-administration/tasks/view-workflow-history.md
+        href: organization-administration/tasks/view-workflow-history.md?toc=/supply-chain/toc.json
       - name: Configure the system to send workflow-related email to users
-        href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
+        href: organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/supply-chain/toc.json
       - name: Workflow types
         items:
         - name: Creating a workflow type
-          href: organization-administration/workflow-type-create.md
+          href: organization-administration/workflow-type-create.md?toc=/supply-chain/toc.json
         - name: Workflow type checklist
-          href: organization-administration/workflow-type-checklist.md
+          href: organization-administration/workflow-type-checklist.md?toc=/supply-chain/toc.json
         - name: Create a workflow category
-          href: organization-administration/workflow-type-category.md
+          href: organization-administration/workflow-type-category.md?toc=/supply-chain/toc.json
         - name: Create a query for a workflow type
-          href: organization-administration/workflow-type-query.md
+          href: organization-administration/workflow-type-query.md?toc=/supply-chain/toc.json
         - name: Create a new workflow type
-          href: organization-administration/workflow-type-create-new.md
+          href: organization-administration/workflow-type-create-new.md?toc=/supply-chain/toc.json
         - name: Create a workflow document class
-          href: organization-administration/workflow-type-document-create.md
+          href: organization-administration/workflow-type-document-create.md?toc=/supply-chain/toc.json
         - name: Create a SubmitToWorkflow class
-          href: organization-administration/workflow-type-submit-to-workflow.md
+          href: organization-administration/workflow-type-submit-to-workflow.md?toc=/supply-chain/toc.json
         - name: Associate a workflow document class with a workflow type
-          href: organization-administration/workflow-type-associate-document.md
+          href: organization-administration/workflow-type-associate-document.md?toc=/supply-chain/toc.json
       - name: Workflow types report
-        href: organization-administration/workflow-types-report.md
+        href: organization-administration/workflow-types-report.md?toc=/supply-chain/toc.json
       - name: Workflow FAQ
-        href: organization-administration/workflow-FAQ.md
+        href: organization-administration/workflow-FAQ.md?toc=/supply-chain/toc.json
     - name: Alerts
       items:
       - name: Alerts overview
-        href: get-started/alerts-overview.md
+        href: get-started/alerts-overview.md?toc=/supply-chain/toc.json
       - name: Create alert rules
-        href: get-started/create-alerts.md
+        href: get-started/create-alerts.md?toc=/supply-chain/toc.json
       - name: Batch processing of alerts
-        href: get-started/alerts-managing.md
+        href: get-started/alerts-managing.md?toc=/supply-chain/toc.json
       - name: Client alert notifications by email
-        href: get-started/alert-email-notifications.md
+        href: get-started/alert-email-notifications.md?toc=/supply-chain/toc.json
     - name: Electronic signatures
       items:
       - name: Electronic signatures overview
-        href: organization-administration/electronic-signature-overview.md
+        href: organization-administration/electronic-signature-overview.md?toc=/supply-chain/toc.json
       - name: Set up electronic signatures
-        href: organization-administration/tasks/set-up-electronic-signatures.md
+        href: organization-administration/tasks/set-up-electronic-signatures.md?toc=/supply-chain/toc.json
     - name: Case management
       items:
       - name: Case management overview
-        href: organization-administration/cases.md
+        href: organization-administration/cases.md?toc=/supply-chain/toc.json
       - name: Plan case security, processes, and categories
-        href: organization-administration/plan-case-management.md
+        href: organization-administration/plan-case-management.md?toc=/supply-chain/toc.json
     - name: Record templates
       items:
       - name: Record templates overview
-        href: organization-administration/record-templates.md
+        href: organization-administration/record-templates.md?toc=/supply-chain/toc.json
       - name: Create a record template
-        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/supply-chain/toc.json
       - name: Use a record template to create a new record
-        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
+        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/supply-chain/toc.json
     - name: Configure document management
-      href: organization-administration/configure-document-management.md
+      href: organization-administration/configure-document-management.md?toc=/supply-chain/toc.json
     - name: Configure and send email
-      href: organization-administration/configure-email.md
+      href: organization-administration/configure-email.md?toc=/supply-chain/toc.json
     - name: Date/time data and time zones
-      href: organization-administration/date-time-zones.md
+      href: organization-administration/date-time-zones.md?toc=/supply-chain/toc.json
   - name: Procurement and sourcing
     items:
   - name: Product information management
@@ -473,8 +473,8 @@
   - name: Supply Chain Management development 
     items:
     - name: Gantt control development guide
-      href: ../dev-itpro/user-interface/gantt-development-guide.md
+      href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/supply-chain/toc.json
     - name: Create a new transportation management engine
-      href: ../../transportation/create-new-transportation-management-engine.md
+      href: ../../transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
 - name: Finance and Operations development and administration 
   href: ../dev-itpro/toc.yml
