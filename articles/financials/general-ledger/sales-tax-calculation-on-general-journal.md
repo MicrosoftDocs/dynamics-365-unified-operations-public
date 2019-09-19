@@ -104,19 +104,17 @@ The following diagram illustrates the rule graphically.
 
 ![Tax direction possibilities for ledger accounts](media/Sales-Tax-Direction-Ledger.jpg)
 
-### Override the sales tax direction
+#### Override the sales tax direction
 
 You can override the sales tax direction when the voucher contains only lines where the account type is **Ledger**.
 
 Go to **General ledger \> Chart of accounts \> Accounts \> Main accounts**, and select the **Legal entity overrides** FastTab.
 
-[![Override tax direction](./media/Override-tax-direction.png)](./media/Override-tax-direction.png))
-
-## Determine the sales tax amount on the temporary sales tax page
+## Determine the sales tax amount
 
 This section describes how the sales tax amount sign is calculated.
 
-![](media/sales-tax-amount-sign.jpg)
+![Sales tax transactions page](media/sales-tax-amount-sign.jpg)
 
 The following table shows the generic rule for determining the sign of sales tax amounts on the temporary sales tax page.
 
