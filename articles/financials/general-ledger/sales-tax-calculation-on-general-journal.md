@@ -45,18 +45,11 @@ The process can be divided into three steps:
 
 ## Determine the sales tax direction
 
-The way that the sales tax direction is determined depends on the type of account in the voucher. The sales tax direction is determined by rules that govern the following combinations:
-
-**Account type is Project** – If a voucher contains lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 3, regardless of which line the sales tax group or item sales tax group is selected on.
-**Account Type is Vendor** – If a voucher contains lines for accounts of the **Vendor** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 1, regardless of which sales tax group or item sales tax group is selected on which line.
-**Account Type is "Customer** – If a voucher contains lines for accounts of the **Customer** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 2, regardless of which sales tax group or item sales tax group is selected on which line.
-**Account Type is "Ledger** – If a voucher contains lines for accounts of the **Ledger** type only, the sales tax direction is determined as described in rule 4.
-
-The following sections describe each rule in more detail. 
+The way that the sales tax direction is determined depends on the type of account in the voucher. The sales tax direction is determined by the combination of account type and sales tax code. The following sections the possibilities in more detail. 
 
 ### Account type is Project
 
-If a voucher has journal line where the account type is **Project**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule. . The following points show the possible tax directions for project accounts.
+If a voucher has journal line where the account type is **Project**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule. The following points show the possible tax directions for project accounts.
 
 •	If the sales tax code is use tax, then sales tax direction is Use Tax.
 •	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
@@ -67,7 +60,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for project accounts](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Vendor
 
@@ -81,7 +74,7 @@ Otherwise, sales tax direction is Sales Tax Payable.
 
 The following diagram illustrates the rule graphically.
 
-![](media/Sales-Tax-Direction-Vendor.jpg)
+![Tax direction possibilities for vendor accounts](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### Account type is Customer
 
@@ -96,7 +89,7 @@ Otherwise, sales tax direction is Sales Tax Receivable.
 
 The following diagram illustrates the rule graphically.
 
-![](media/Sales-Tax-Direction-Customer.jpg)
+![Tax direction possibilities for customer accounts](media/Sales-Tax-Direction-Customer.jpg)
 
 ### Account type is Ledger
 
@@ -109,7 +102,7 @@ Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sal
 
 The following diagram illustrates the rule graphically.
 
-![](media/Sales-Tax-Direction-Ledger.jpg)
+![Tax direction possibilities for ledger accounts](media/Sales-Tax-Direction-Ledger.jpg)
 
 ### Override the sales tax direction
 
