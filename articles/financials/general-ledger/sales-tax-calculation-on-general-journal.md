@@ -39,42 +39,75 @@ This topic explains how sales taxes are calculated for different types of accoun
 
 The process can be divided into three steps:
 
-1. Determine the sales tax direction.
-2. Determine the sales tax amount on the temporary sales tax page.
-3. Determine the sales tax amount and account on the voucher.
+- Determine the sales tax direction.
+- Determine the sales tax amount on the temporary sales tax page.
+- Determine the sales tax amount and account on the voucher.
 
 ## Determine the sales tax direction
 
 The way that the sales tax direction is determined depends on the type of account in the voucher. The sales tax direction is determined by rules that govern the following combinations:
 
-1. **Account type = Project** – If a voucher contains lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 3, regardless of which line the sales tax group or item sales tax group is selected on.
-2. **Account Type = Vendor** – If a voucher contains lines for accounts of the **Vendor** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 1, regardless of which sales tax group or item sales tax group is selected on which line.
-3. **Account Type = "Customer** – If a voucher contains lines for accounts of the **Customer** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 2, regardless of which sales tax group or item sales tax group is selected on which line.
-4. **Account Type = "Ledger** – If a voucher contains lines for accounts of the **Ledger** type only, the sales tax direction is determined as described in rule 4.
+**Account type is Project** – If a voucher contains lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 3, regardless of which line the sales tax group or item sales tax group is selected on.
+**Account Type is Vendor** – If a voucher contains lines for accounts of the **Vendor** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 1, regardless of which sales tax group or item sales tax group is selected on which line.
+**Account Type is "Customer** – If a voucher contains lines for accounts of the **Customer** type and doesn't contain lines for accounts of the **Project** type, the sales tax direction is determined as described in rule 2, regardless of which sales tax group or item sales tax group is selected on which line.
+**Account Type is "Ledger** – If a voucher contains lines for accounts of the **Ledger** type only, the sales tax direction is determined as described in rule 4.
 
 The following sections describe each rule in more detail. 
 
-### Rule 1: Account type = Vendor
+### Account type is Project
 
-If a voucher has journal line where the account type is **Vendor**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
+If a voucher has journal line where the account type is **Project**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule. . The following points show the possible tax directions for project accounts.
+
+•	If the sales tax code is use tax, then sales tax direction is Use Tax.
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
+•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Payable.
+•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Payable.
+
+Otherwise, sales tax direction is Sales Tax Receivable.
+
+The following diagram illustrates the rule graphically.
 
 ![](media/Sales-Tax-Direction-Vendor.jpg)
 
-### Rule 2: Account type = Customer
+### Account type is Vendor
 
-If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
+If a voucher has journal line where the account type is **Vendor**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for vendor accounts. 
+
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
+•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Receivable.
+•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Receivable.
+
+Otherwise, sales tax direction is Sales Tax Payable.
+
+The following diagram illustrates the rule graphically.
+
+![](media/Sales-Tax-Direction-Vendor.jpg)
+
+### Account type is Customer
+
+If a voucher has journal line where the account type is **Customer**, all the journal lines in the voucher apply the same tax direction. The following points show the possible tax directions for customer accounts.
+
+•	If the sales tax code is use tax, then sales tax direction is Use Tax.
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
+•	If the sales tax code is intracom VAT, then sales tax direction is Sales Tax Payable.
+•	If the sales tax code is reverse charge, then sales tax direction is Sales Tax Payable.
+
+Otherwise, sales tax direction is Sales Tax Receivable.
+
+The following diagram illustrates the rule graphically.
 
 ![](media/Sales-Tax-Direction-Customer.jpg)
 
-### Rule 3: Account type = Project
+### Account type is Ledger
 
-If a voucher has journal line where the account type is **Project**, all the journal lines in the voucher apply the same tax direction. The following illustration shows the rule.
+The following illustration shows the rule that applies when a voucher has only journal lines where the account type is **Ledger**. The following points show the possible tax directions for ledger accounts.
 
-![](media/Sales-Tax-Direction-Vendor.jpg)
+•	If the sales tax code is use tax, then sales tax direction is Use Tax.
+•	If the sales tax code is exempt tax, then sales tax direction is Tax Free Purchase.
 
-### Rule 4: Account type = Ledger
+Otherwise, if the journal amount is debit (positive) ,sales tax direction is Sales Tax Receivable; if the journal amount is credit (negative) ,sales tax direction is Sales Tax Payable.
 
-The following illustration shows the rule that applies when a voucher has only journal lines where the account type is **Ledger**.
+The following diagram illustrates the rule graphically.
 
 ![](media/Sales-Tax-Direction-Ledger.jpg)
 
