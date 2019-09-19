@@ -71,7 +71,7 @@ Common Data Service entities now syncronize correctly when updated using the Com
 In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
 
 ###  Email support for alerts
-With Platform update 24, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
+With Platform update 24 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
 
 ### Duplicate employee check: Interface changes
 With this change, duplicates are detected as you enter name fields, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.
