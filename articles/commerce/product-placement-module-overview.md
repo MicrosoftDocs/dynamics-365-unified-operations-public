@@ -2,7 +2,7 @@
 
 Product collection represent physical products and services on the website. On interaction, the product collection typically navigates to a detail page for users to purchase, acquire, or learn more about the product or service. 
 
-Retailers consider product discovery as a primary tool for customer interaction across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
+Product discovery is a primary tool for retailers to engage with their shoppers across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
 
 The source for the product groups or collection – could be an editorial collections (manually defined in back-office as related products for a product, or product lists), algorithmic lists like new, best-selling, trending or machine-learning based recommendations. 
 
@@ -10,7 +10,7 @@ The source for the product groups or collection – could be an editorial collec
 
 > **Note** Always use product collection to show a group of products of a similar type or theme other than the categorized products or search results. And for categorized products & search results use Category page summary > Category page > Product Slot > Product search result.
 
-| # | Product collection kind     |Type| Description                                                                                                                                                                                                                   |
+| # | Product collection kind     | Type | Description                                                                                                                                                                                                                   |
 |---|----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1 | Related products           | Editorial | This list shows products configured as related products in the back office by a Merchandising manager for the relation type chosen by the author.|
 | 2 | Curated product lists    | Editorial | Here are the custom lists created in the back office by merchandizers and editors.|
