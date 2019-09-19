@@ -80,6 +80,7 @@ The standard cloud offer includes three environments:
     - **File storage:** Every customer receives 100 gigabytes (GB) of file/Azure blob cloud storage for files and binary data. Additional file/blob storage can be purchased.
     - **Database storage:** Every subscription includes 10 GB of Azure SQL Database storage per customer at no additional charge. Additional storage capacity is provided at no charge as an organization increases the number of user and device service licenses. For more information about the various environments and the various types of storage, download the latest *Microsoft Dynamics 365 Licensing Guide* from [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
 
+
 ### Provisioning of standard environments
 
 The various environments are provisioned at different times. The following table shows the suggested timing for the environments in the standard cloud offer.
