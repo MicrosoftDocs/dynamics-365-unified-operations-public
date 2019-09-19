@@ -51,7 +51,7 @@ Explore Dynamics 365 for Talent by watching the video [How to get started with D
 
 
 > [!NOTE] 
-> Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 for Finance and Operations. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 for Finance and Operations; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
+> Dynamics 365 for Talent is closely related to Human resources in Dynamics 365 Finance. The same functionality may appear in both products. As a result, in topics that are primarily related Human resources, the product name will be Dynamics 365 Finance; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent. Topics that are written for one product may apply to the same functionality in a related product.
 
 Develop a strategy for managing your human resources
 ---------------------------------------------------------
