@@ -85,7 +85,7 @@ To quickly generate test data that includes invoices and attachments, follow the
 Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:
 
 + The import job that processes the invoice imports it into the same company in which the job was scheduled in the **Data management** workspace. In other words, the company of the job determines the company that the invoice belongs to.
-+ When the data package that contains invoices is sent to Finance and Operations, the caller (that is, the integration application that runs outside of Finance and Operations) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance and Operations is overridden, and the invoices are imported into the company that was passed via the HTTP request.
++ When the data package that contains invoices is sent to Finance, the caller (that is, the integration application that runs outside of Finance) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance is overridden, and the invoices are imported into the company that was passed via the HTTP request.
 
 > [!NOTE]
 > This behavior is standard data management behavior. It’s explained here, in the context of invoices, just for the sake of completeness.
