@@ -45,7 +45,7 @@ There are two ways to access the details of the revenue recognition schedule.
 - You can open the revenue recognition schedule directly from an invoiced sales order. In this case, the information in the revenue schedule is filtered to show the details only for the selected sales order. This approach is useful when you're validating the schedule details for a sales order.
 - You can open the revenue recognition schedule from the **Revenue recognition \> Periodic tasks** page. This approach is often used when revenue is recognized at the end of a period. When the page is first opened, no information is shown. Use the filters above the grid to define criteria for the schedule details that should be shown. You can filter on the invoice dates by entering a date range, sales order, customer, project ID, or state.
 
-[![Revenue schedules page](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)]
+[![Revenue schedules page](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
 
 The **Financial dimension** FastTab below the grid shows the financial dimensions of the sales order line. These dimensions were considered during posting to deferred revenue. They are also considered when the revenue is recognized. The dimension values that are used depend on the account structure that is assigned to the revenue and deferred revenue main accounts.
 
