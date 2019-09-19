@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.3.0
 This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Dynamics 365 Project Service Automation to Dynamics 365 Finance.
 
 > [!NOTE] 
-> If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0, you must install KB 4074835.
+> If you're using Enterprise edition 7.3.0, you must install KB 4074835.
 
 ## Data flow for Project Service Automation to Finance
 
