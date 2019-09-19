@@ -24,6 +24,8 @@
       href: add-checkout-module.md
   - name: Ratings and reviews
     items:
+    - name: Manage ratings and reviews
+      href: manage-reviews.md
     - name: Configure ratings and reviews
       href: configure-ratings-reviews.md
   - name: Recommendations
