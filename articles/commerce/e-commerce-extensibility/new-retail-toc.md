@@ -16,6 +16,20 @@
 * What's new or changed in Dynamics 365 for Retail 10.0.2
 * What's new or changed in Dynamics 365 for Retail 10.0.1
 * What's new or changed in Dynamics 365 for Retail (April 2019)
+### Removed or deprecated features
+* Removed or deprecated featues in Retail
+* Removed or deprecated features in Finance and Operations (or whatever we’ll call this)
+### Documentation resources 
+* Help system overview 
+* Connect the help system 
+* Connect a customer help site 
+* Task recorder 
+* Create documentation or training 
+* Videos 
+* Glossary 
+### Get started using the product (or “Explore the user interface”) 
+* User interface elements 
+* ...
 ## Implementation lifecycle management
 * Implementation lifecycle management home page
 * Microsoft FastTrack for Dynamics 365
