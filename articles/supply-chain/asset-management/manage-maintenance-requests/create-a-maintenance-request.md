@@ -46,7 +46,7 @@ The **Active maintenance requests** section of the **Related information** pane 
 2. Select **New**.
 3. In the **Create request** dialog box, in the **Maintenance request type** field, select the type of maintenance request. A default type is suggested.
 4. In the **Description** field, enter a name or title that briefly describes the maintenance request.
-5. In the **Functional location** and **Asset** fields, select a functional location or an asset, or a combination of a functional location and an asset, as you require. You can create a maintenance request without selecting an asset, and the asset can be added to the maintenance request later. If the maintenance worker who is signed in to Microsoft Dynamics 365 for Finance and Operations is related to a resource that is related to an asset, the **Asset** field is automatically set.
+5. In the **Functional location** and **Asset** fields, select a functional location or an asset, or a combination of a functional location and an asset, as you require. You can create a maintenance request without selecting an asset, and the asset can be added to the maintenance request later. If the maintenance worker who is signed in is related to a resource that is related to an asset, the **Asset** field is automatically set.
 
     If a maintenance request is already attached to the selected asset, a message bar appears at the top of the **Create request** dialog box to notify you about the ID of the existing maintenance request. A message bar also notifies you if the asset is covered by a warranty agreement.
 
