@@ -1,34 +1,41 @@
 ---
 # required metadata
 
-title: Quick tour of Home page
-description: 
-author: AnupamaR
+title: Quick tour of home page
+description: This topic provides a quick tour of the home page in Dynamics 365 Commerce.
+author: anupamar-ms
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
-audience: Consumer
+ms.search.form:  
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+
 ---
 
 # Quick tour of Home page
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic provides a quick tour of the home page in Dynamics 365 Commerce.
+
+## Overview
 
 The **Home page** is the default page a shopper lands on when visiting an ecommerce site. This page typically showcases the products and promotions using a combination of marketing modules. It needs to be rich with images and text to keep the shopper engaged. Products need to be listed on the home page so the shopper can quickly discover products without a lot of effort and continue their shopping journey.  Below is an example of a Home page built with web starter kit and Fabrikam theme.
 
