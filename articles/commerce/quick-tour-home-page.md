@@ -37,30 +37,39 @@ This topic provides a quick tour of the home page in Dynamics 365 Commerce.
 
 ## Overview
 
-The **Home page** is the default page a shopper lands on when visiting an ecommerce site. This page typically showcases the products and promotions using a combination of marketing modules. It needs to be rich with images and text to keep the shopper engaged. Products need to be listed on the home page so the shopper can quickly discover products without a lot of effort and continue their shopping journey.  Below is an example of a Home page built with web starter kit and Fabrikam theme.
+The home page is the default page a shopper lands on when visiting an e-Commerce site. This page typically showcases products and promotions using a combination of marketing modules. The home page should be rich with images and text to keep the shopper engaged. 
+
+The following image shows an example of a home page built with the online starter kit and Fabrikam theme.
 
 ![Home page](./media/Homepage2.PNG)
 
-The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
+The top of the page has a header which shows all the product categories and other pages that the retailer wants the customer to browse. On the bottom of the page is a footer with quick links to various topics that may interest customers. 
 
-The main section of a Home page highlights products, category or products and promotions. This can be done using various modules.
+The main section of a home page highlights products, categories, or promotions. This can be done using various Commerce modules.
 
-**Hero**: The top of the Home page typically shows one or more Hero images which highlight new products and promotions in the store. If there are multiple Hero modules, they are hosted within a Carousel for the user to browse. Refer to the Hero module help topic for more details. In the screenshot of the Homepage the first item on the page "New Arrivals" is a Hero.
+**Hero**: The top of the home page typically shows one or more "hero" images that highlight new products and promotions in the store. If there are multiple hero images, they are hosted within a carousel module for the user to browse. 
+
+The following image shows an example of a home page where the first item on the page ("New Arrivals") is a hero.
 
 ![Hero](./media/Hero.PNG)
 
-**Feature**: A feature can also be used within a Carousel or independently to showcase products and promotions. Refer to the Feature help topic for more details.
+**Feature**: A feature module is used for marketing products or promotions using a combination of image and text. A feature can be used independently or within a carousel module to showcase products and promotions. 
+
+The following image shows an example of feature modules on a home page.
 
 ![Feature](./media/Feature.PNG)
 
-**Content Placement:** The Content Placement module is used to showcase multiple products or category of products using a mix of images text in a multi-column view. In the screenshot of the Homepage the 3-column items which say Shop Womens, SHop Mens, Shop Shoes are using a content placement module.  Refer to Content Placement for more details.
+**Content Placement:** The content placement module is used to showcase multiple products or category of products using a mix of images and text in a multi-column view. In the home page screenshot above, the three column items which say "Shop Womens," "Shop Mens," and "Shop Accessories" are using a content placement module.  
 
-**Video Player:** A video player can be used to showcase video content on the home page. Refer to Video Player for more details. In the home page example there is a video player shown.
+**Video Player:** A video player module can be used to showcase video content on the home page. A video player shown in the home page example there is .
 
-**Content Rich block**: Content rick block can be used in a single or multi-column view for text content on the home page. Refer to Content Rick block for more details.
+**Content Rich block**: Content rick block can be used in a single or multi-column view for text content on the home page screenshot above.
 
-**Recommendations:** Product recommendations lists such as New, Trending, Best Selling etc. can be displayed on the Home page. These lists showcase products based on shopping trends. Lists can be algorithmically generated or curated manually. They help the shopper quickly discover top products and continue their shopping journey.
+**Recommendations:** Product recommendations lists such as "New," "Trending," and "Best Selling" can be displayed on the home page. These lists showcase products based on shopping trends, and can be algorithmically generated or curated manually. They help customers quickly discover top products and then continue their shopping journey.
+
+The following image shows an example of product recommendations on a home page.
 
 ![Recommendations](./media/Recommendations.PNG)
 
-NOTE: These modules can be used on any page but their placement on the Home Page is important because your customers’ first interaction with your site happens on your Home page.
+> [!NOTE] 
+> All of the modules above can be used on any site page but their placement on the home page is important because that is where customers first interact with your site.
