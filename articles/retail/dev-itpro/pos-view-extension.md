@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This topic focuses on the extension of existing POS views via the Retail SDK.
 
-> [!NOTE]
-> This topic applies to Microsoft Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+
 
 POS views support the following extension points and patterns:
 
