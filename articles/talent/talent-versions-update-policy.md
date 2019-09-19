@@ -38,7 +38,7 @@ This topic describes requirements for Microsoft Dynamics 365 for Talent, includi
 
 ## Supported web browsers
 
-The Microsoft Dynamics 365 for Talent web application can run in any of the following web browsers that run on the specified operating systems: 
+Microsoft Dynamics 365 for Talent can run in any of the following web browsers that run on the specified operating systems: 
 
 *   Microsoft Edge (latest publicly available version) on Windows 10
 *   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
