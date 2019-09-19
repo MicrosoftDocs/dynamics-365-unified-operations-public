@@ -139,11 +139,11 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 ### Controls could do this
 
-**Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
+**Indicate an expanded state** - Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
 
 - *aria-expanded (state)* - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
-**Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+**Describe applicable context menu** - Finance and Operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 
