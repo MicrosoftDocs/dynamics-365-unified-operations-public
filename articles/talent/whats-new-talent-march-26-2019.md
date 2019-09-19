@@ -97,7 +97,7 @@ Organizations might require reason codes to be set on specific leave types when 
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles granted with access can process compensation for these employees.
 
 ###  Email support for alerts
-With Platform update 25, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
+With Platform update 25 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
 
 ### Duplicate employee checks: User interface changes
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't open automatically.
