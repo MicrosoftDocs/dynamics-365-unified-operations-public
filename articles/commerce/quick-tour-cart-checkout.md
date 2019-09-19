@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of cart and checkout
+# Quick tour of cart and checkout pages
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -66,23 +66,37 @@ The following image show an example checkout page built with the online starter 
 
 The main body of the checkout page is where all order information is collected. This includes shipping address, delivery options, payment, etc. Checkout has a step-by-step flow as the workflow requires information to be entered in a certain order to be processed (for example, the shipping address must be entered before shipping costs can be calculated and payment can be authorized.)
 
+### Shipping address
+
 A shipping address is required if items need to be shipped. The shipping address format can be configured in Dynamics 365 Retail for each locale (for example, if the country selected is United States, the shipping address will require street address, state, zip code, etc.). There is some basic input validation such as alphanumeric, maximum length, and number that is done for shipping address fields. The address itself is not verified for validity, but this can be done using customized third party services. 
 
 The shipping address is applied to all items in the cart that have the ship option selected. It is not possible to ship individual cart items to separate addresses when using the starter kit checkout flow. If this capability is required, it can be accomplished through customization of the checkout modules. 
 
 Once the shipping address is provided, shipping methods that are available from the Commerce online store will be shown. The shipping methods and the addresses they support can be configured in Retail.  
 
+### Payment
+
 The next step in the checkout flow is payment. In e-Commerce, orders can be placed using multiple forms of payment such as credit card, gift card, and loyalty points. A combination of these payment methods can be used to place the order. Depending on which payment methods are used, additional information may be required. For example, a credit card payment requires a billing address. Credit card payments are processed using the Adyen Payment Connector. 
+
+### Loyalty points
 
 Loyalty points can be redeemed for an order during the checkout flow. To do so, the customer must be a loyalty program member with accrued points. The loyalty points module is only displayed if the user has an existing loyalty membership. For non-members and guest users, this module is hidden.
 
+### Gift cards
+
 The online starter kit supports redeeming internal gift cards to place an order. The customer must be signed in to apply the internal gift card. For additional security, it is recommended to customize the flow using a personal identification number (PIN) on internal gift cards.
 
+### Signed-in and guest users
+
 The checkout process can be completed as a guest user or a signed-in user. If the user is signed-in, account information such as saved shipping address and saved credit card details will automatically be retrieved. 
+
+### Order summary
 
 Checkout also shows a summary of the line items in the cart for the shopper to verify before making a purchase. The line items cannot be edited during the checkout flow. A link to the cart is provided for the user to go back and edit line items if needed.
 
 Once shipping and billing information is provided, the order summary will reflect the amount due after loyalty, gift card, and other payments have been applied.
+
+### Order confirmation and email
 
 When an order is placed, a confirmation number is provided to the shopper. At the time the order is placed, the payment is authorized but not charged. When the order is fulfilled (either shipped or picked up), the payment will be charged. 
 
