@@ -184,80 +184,186 @@
         href: get-started/implement-multiple-projects-aad-tenant.md?toc=/supply-chain/toc.json
   - name: Cost accounting
     items:
-      - name: Cost accounting home page
-        href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/supply-chain/toc.json
-      - name: Cost accounting terminology
-        href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/supply-chain/toc.json
-      - name: Fiscal calendars, fiscal years, and periods
-        href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/supply-chain/toc.json
-      - name: Financial dimensions
-        href: ../financials/general-ledger/financial-dimensions.md?toc=/supply-chain/toc.json
-      - name: Financial dimensions and posting
-        href: ../financials/general-ledger/Default-dimensions.md?toc=/supply-chain/toc.json
-      - name: Add financial dimensions to the CFO workspace
-        href: ../financials/general-ledger/CFO-workspace.md?toc=/supply-chain/toc.json
-      - name: Create account structures
-        href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/supply-chain/toc.json
-      - name: Budgeting overview
-        href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/supply-chain/toc.json
-      - name: Create dimensions and import dimension members
-        href: ../financials/cost-accounting/cost-dimension.md?toc=/supply-chain/toc.json
-      - name: Cost element dimensions
-        href: ../financials/cost-accounting/cost-elements.md?toc=/supply-chain/toc.json
-      - name: Create cost elements
-        href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/supply-chain/toc.json
-      - name: Cost object dimensions
-        href: ../financials/cost-accounting/cost-objects.md?toc=/supply-chain/toc.json
-      - name: Create cost objects
-        href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/supply-chain/toc.json
-      - name: Map cost element dimension members to a common set of dimension members
-        href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/supply-chain/toc.json
-      - name: Map a cost element dimension
-        href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/supply-chain/toc.json
-      - name: Dimension hierarchy
-        href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/supply-chain/toc.json
-      - name: Create an organization report hierarchy
-        href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/supply-chain/toc.json
-      - name: Access rights of a cost object controller
-        href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
-      - name: Configure access rights for a cost object controller
-        href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
-      - name: Define cost control units
-        href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/supply-chain/toc.json
-      - name: Create a cost accounting ledger
-        href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/supply-chain/toc.json
-      - name: Statistical dimension members and statistical measure provider templates
-        href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/supply-chain/toc.json
-      - name: Allocation bases
-        href: ../financials/cost-accounting/allocation-bases.md?toc=/supply-chain/toc.json
-      - name: Create and assign a cost allocation policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/supply-chain/toc.json
-      - name: Create and assign a cost behavior policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/supply-chain/toc.json
-      - name: Create and assign a cost distribution policy to a cost control unit
-        href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/supply-chain/toc.json
-      - name: Create a cost rollup policy
-        href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/supply-chain/toc.json
-      - name: Manage data source for the cost accounting ledger
-        href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/supply-chain/toc.json
-      - name: Process and trace source data
-        href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/supply-chain/toc.json
-      - name: Overhead calculation
-        href: ../financials/cost-accounting/overhead-calculation.md?toc=/supply-chain/toc.json
-      - name: Cost rollup policy and overhead calculation
-        href: ../financials/cost-accounting/cost-rollup.md?toc=/supply-chain/toc.json
-      - name: Configure cost control workspace
-        href: ../financials/cost-accounting/cost-control-workspace.md?toc=/supply-chain/toc.json
-      - name: Configure cost control workspace parameters
-        href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/supply-chain/toc.json
-      - name: Understand access list security and RLS in Microsoft Power BI
-        href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/supply-chain/toc.json
-      - name: Use content pack for Microsoft Power BI reporting
-        href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/supply-chain/toc.json
-      - name: Use cost control workspace for Finance and Operations mobile application
-        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+    - name: Cost accounting home page
+      href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/supply-chain/toc.json
+    - name: Cost accounting terminology
+      href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/supply-chain/toc.json
+    - name: Fiscal calendars, fiscal years, and periods
+      href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/supply-chain/toc.json
+    - name: Financial dimensions
+      href: ../financials/general-ledger/financial-dimensions.md?toc=/supply-chain/toc.json
+    - name: Financial dimensions and posting
+      href: ../financials/general-ledger/Default-dimensions.md?toc=/supply-chain/toc.json
+    - name: Add financial dimensions to the CFO workspace
+      href: ../financials/general-ledger/CFO-workspace.md?toc=/supply-chain/toc.json
+    - name: Create account structures
+      href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/supply-chain/toc.json
+    - name: Budgeting overview
+      href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/supply-chain/toc.json
+    - name: Create dimensions and import dimension members
+      href: ../financials/cost-accounting/cost-dimension.md?toc=/supply-chain/toc.json
+    - name: Cost element dimensions
+      href: ../financials/cost-accounting/cost-elements.md?toc=/supply-chain/toc.json
+    - name: Create cost elements
+      href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/supply-chain/toc.json
+    - name: Cost object dimensions
+      href: ../financials/cost-accounting/cost-objects.md?toc=/supply-chain/toc.json
+    - name: Create cost objects
+      href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/supply-chain/toc.json
+    - name: Map cost element dimension members to a common set of dimension members
+      href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/supply-chain/toc.json
+    - name: Map a cost element dimension  
+      href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/supply-chain/toc.json
+     - name: Dimension hierarchy
+      href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/supply-chain/toc.json
+    - name: Create an organization report hierarchy
+      href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/supply-chain/toc.json
+    - name: Access rights of a cost object controller
+      href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    - name: Configure access rights for a cost object controller
+      href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    - name: Define cost control units
+      href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/supply-chain/toc.json
+    - name: Create a cost accounting ledger
+      href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    - name: Statistical dimension members and statistical measure provider templates
+      href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/supply-chain/toc.json
+    - name: Allocation bases
+      href: ../financials/cost-accounting/allocation-bases.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost allocation policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost behavior policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost distribution policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create a cost rollup policy
+      href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/supply-chain/toc.json
+    - name: Manage data source for the cost accounting ledger
+      href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    - name: Process and trace source data
+      href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/supply-chain/toc.json
+    - name: Overhead calculation
+      href: ../financials/cost-accounting/overhead-calculation.md?toc=/supply-chain/toc.json
+    - name: Cost rollup policy and overhead calculation
+      href: ../financials/cost-accounting/cost-rollup.md?toc=/supply-chain/toc.json
+    - name: Configure cost control workspace
+      href: ../financials/cost-accounting/cost-control-workspace.md?toc=/supply-chain/toc.json
+    - name: Configure cost control workspace parameters
+      href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/supply-chain/toc.json
+    - name: Understand access list security and RLS in Microsoft Power BI
+      href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/supply-chain/toc.json
+    - name: Use content pack for Microsoft Power BI reporting
+      href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/supply-chain/toc.json
+    - name: Use cost control workspace for Finance and Operations mobile application
+      href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
   - name: Cost management
     items:
+    - name: Cost management home page
+      href: cost-management/cost-management-home-page.md
+    - name: Prerequisites for standard costs
+      items:
+      - name: Prerequisites for standard costs overview
+        href: cost-management/prerequisites-standard-costs.md
+      - name: Standard cost conversion overview
+        href: cost-management/standard-cost-conversion-overview.md
+      - name: Prerequisite for a standard cost conversion
+        href: cost-management/prerequisites-standard-cost-conversion.md
+      - name: Manage standard cost updates
+        href: cost-management/manage-standard-cost-updates.md
+      - name: Restrictions on costing versions for standard costs
+        href: cost-management/restrictions-costing-versions-standard-costs.md
+      - name: Information used in BOM calculations with standard costs
+        href: /cost-management/information-used-bom-calculations-standard-costs.md
+      - name: Update standard costs in a manufacturing environment
+        href: cost-management/update-standard-costs-manufacturing-environment.md
+      - name: Update standard costs for a new manufactured item
+        href: cost-management/update-standard-costs-new-manufactured-item.md
+      - name: Update standard costs in a non-manufacturing environment
+        href: cost-management/update-standard-costs-non-manufacturing-environment.md
+      - name: Prepare to maintain standard costs for manufactured items
+        href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+    - name: Costing versions
+      items:
+      - name: Costing versions overview
+        href: cost-management/costing-versions.md
+      - name: Costing sheets
+        href: cost-management/costing-sheets.md
+      - name: Simulate cost changes by using a costing version for planned costs
+        href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+    - name: Inventory accounting
+      items:
+      - name: Cost objects
+        href: cost-management/cost-object.md
+      - name: View cost object balance
+        href: cost-management/tasks/view-cost-object-balance.md
+      - name: View inventory statement and KPI by cost object
+        href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+      - name: Cost entries
+        href: cost-management/cost-entries.md
+      - name: View cost entries for a cost object
+        href: ost-management/tasks/view-cost-entries-cost-object.md
+      - name: Cost groups
+        href: cost-management/cost-groups.md
+      - name: FIFO with physical value and marking
+        href: cost-management/fifo-physical-value-marking.md
+      - name: Include physical value
+        href: cost-management/include-physical-value.md
+      - name: Inventory object values
+        href: cost-management/physical-quantity.md
+      - name: LIFO Date with physical value and marking
+        href: cost-management/lifo-date-physical-value-marking.md
+      - name: LIFO with physical value and marking
+        href: cost-management/lifo-physical-value-marking.md
+      - name: Moving average
+        href: cost-management/moving-average.md
+      - name: Physical and financial updates
+        href: cost-management/physical-financial-updates.md
+      - name: Running average cost price
+        href: cost-management/running-average-cost-price.md
+      - name: Tracking running average cost per inventory dimension
+        href: cost-management/track-running-average-cost-per-inventory-dimension.md
+      - name: Weighted average date
+        href: cost-management/weighted-average-date.md
+      - name: Weighted average with physical value and marking
+        href: cost-management/weighted-average-physical-value-marking.md
+      - name: Inventory close
+        href: cost-management/inventory-close.md
+      - name: Adjust on-hand inventory cost values
+        href: cost-management/adjust-hand-inventory-cost-values.md
+    - name: Manufacturing accounting
+      items:
+      - name: BOM calculations
+        href: cost-management/bom-calculations.md
+      - name: BOM calculation groups
+        href: cost-management/bom-calculation-groups.md
+      - name: Backflush costing
+        href: cost-management/backflush-costing.md
+      - name: Common sources of production variances
+        href: cost-management/common-sources-of-production-variances.md
+      - name: Cost categories used in production routing
+        href: cost-management/cost-categories-used-production-routings.md
+      - name: Cost categories used in Production control and Project management accounting
+        href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+      - name: Display charges for a manufactured item
+        href: cost-management/charges-manufactured-item.md
+      - name: Production order cost analysis
+        href: cost-management/production-order-cost-analysis.md
+      - name: Production order cost estimation
+        href: /cost-management/production-order-cost-estimation.md
+      - name: View current WIP status on a production order
+        href: cost-management/tasks/view-current-wip-status-production-order.md
+      - name: Compare active, estimated, and realized costs on a production order
+        href: cost-management/tasks/compare-active-estimated-realized-costs.md
+      - name: Production posting
+        href: cost-management/production-posting.md
+      - name: Set up products that can be produced or procured
+        href: cost-management/manufactured-items-treated-as-purchased-items.md
+      - name: Total cost allocation method
+        href: cost-management/methodology-total-cost-allocation.md
+      - name: Amortize constant costs for a manufactured item
+        href: cost-management/amortize-constant-costs-manufactured-item.md
+    - name: Cost management Power BI content pack
+      href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/supply-chain/toc.json
   - name: Globalization
     items:
   - name: Inventory management
