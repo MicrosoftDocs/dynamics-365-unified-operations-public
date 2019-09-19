@@ -18,8 +18,7 @@ After performing your modifications and previewing them, you should check in you
 
 Should you want to publish your modifications right away, you would activate the "Publish" button from the action ribbon and the latest checked in version of the page with your modifications would be published and available to external users viewing your site. 
 
-Steps required to change the video on the home page
-
+### Steps to change the video on the home page
 1. Log in to the authoring tool
 1. Locate and click **Fabrikam**-site under **Sites**
 1. Locate **Homepage**-page under **Pages** and open it in the page editor by clicking it
