@@ -60,9 +60,9 @@ This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
 
 The changes that are described in this section apply to build number 8.1.2337.
 
-### Platform update 27
+### Platform update 27 for Finance and Operations
 
-For more details about Platform update 27, see [Preview features in Dynamics 365 for Finance and Operations platform update 27 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+For more details about Platform update 27 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 27 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### Feature management workspace in Talent
 
