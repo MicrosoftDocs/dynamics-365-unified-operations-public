@@ -214,7 +214,7 @@
       href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/supply-chain/toc.json
     - name: Map a cost element dimension  
       href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/supply-chain/toc.json
-     - name: Dimension hierarchy
+    - name: Dimension hierarchy
       href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/supply-chain/toc.json
     - name: Create an organization report hierarchy
       href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/supply-chain/toc.json
