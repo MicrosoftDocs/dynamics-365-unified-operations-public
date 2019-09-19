@@ -17,3 +17,21 @@ Hint: You can also directly click on a module visible in the WYSIWYG-preview to 
 After performing your modifications and previewing them, you should check in your changes by activating "Check in" from the action ribbon, describing your modifications in the comment field and proceed with "OK". You will again see that the action ribbon will change to reflect the new state of the page and you will also see notification telling you the same.
 
 Should you want to publish your modifications right away, you would activate the "Publish" button from the action ribbon and the latest checked in version of the page with your modifications would be published and available to external users viewing your site. 
+
+Steps required to change the video on the home page
+
+1. Log in to the authoring tool
+1. Locate and click **Fabrikam**-site under **Sites**
+1. Locate **Homepage**-page under **Pages** and open it in the page editor by clicking it
+1. Check out the page by clicking **Check Out** from the action bar
+1. From **Page Outline** on the left, expand **Main Slot**
+1. Expand all the **Fluid container**-modules under **Main Slot**
+1. Locate and click **Video player**-module
+1. From the module inspector on the right side of the screen, locate and click **video** property - asset picker will open
+1. From the asset picker, choose any one of the available video assets or upload a new video asset by clicking **Upload new asset**
+1. Proceed by clicking **OK**
+1. Click **Save** from the action bar
+1. Click **Check In** from the action bar, in the **Comments**-field write "Changed the video" and click **OK**
+1. Click **Preview** from the action bar to validate your change
+1. Close the preview-tab to get back to the authoring tool
+1. Click **Publish** from the action bar
