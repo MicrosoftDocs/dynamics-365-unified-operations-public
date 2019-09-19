@@ -104,7 +104,7 @@ Make sure to read through the privacy statement before you log any requests.
 > [!NOTE]
 > We will not release extensibility requests as hotfixes.  
 
-Extensibility requests are exclusive for Dynamics 365 for Finance and Operations only. We are not planning to accommodate extensibility requests for Dynamics AX 2012 or earlier releases.
+Extensibility requests are exclusive for the application. We are not planning to accommodate extensibility requests for Dynamics AX 2012 or earlier releases.
 
 ## When will my extensibility requests be enabled?
 
