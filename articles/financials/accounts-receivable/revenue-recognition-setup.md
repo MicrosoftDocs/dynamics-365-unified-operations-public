@@ -29,6 +29,8 @@ ms.dyn365.ops.version: 8.0.4
 ---
 
 # Revenue recognition setup
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This topic describes the setup options and their implications.
 
