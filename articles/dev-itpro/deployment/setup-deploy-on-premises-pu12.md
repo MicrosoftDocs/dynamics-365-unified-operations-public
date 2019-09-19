@@ -196,8 +196,8 @@ The following steps must be completed to set up the infrastructure for Finance +
 18. [Configure AD FS](#configureadfs)
 19. [Configure a connector and install an on-premises local agent](#configureconnector)
 20. [Tear down CredSSP, if remoting was used](#teardowncredssp)
-21. [Deploy your Finance + Operations (on-premises) environment from LCS](#deploy)
-22. [Connect to your Finance + Operations (on-premises) environment](#connect)
+21. [Deploy your Finance + Operations environment from LCS](#deploy)
+22. [Connect to your Finance + Operations environment](#connect)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
@@ -952,7 +952,7 @@ If any of the remoting scripts were used during setup, be sure to execute the fo
 
 If the previous remoting PowerShell window was accidentally closed and CredSSP was left enabled, the script will disable it on all the machines specified in the configuration file.
 
-### <a name="deploy"></a> 21. Deploy your Finance + Operations (on-premises) environment from LCS
+### <a name="deploy"></a> 21. Deploy your Finance + Operations environment from LCS
 
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get the needed values.
 
