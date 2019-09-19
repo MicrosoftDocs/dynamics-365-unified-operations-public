@@ -110,7 +110,6 @@ To configure a site to show ratings and reviews, follow these steps.
 1. Go to **Home \> Sites**.
 1. Select the name of your site. 
 1. Go to **Site management \> Extensibility**. 
-1. In the **Ratings/Reviews tenant id** field, enter your tenant ID (for example, **d247ff89-1bb8-42bf-955e-a731fbc57c75**). You can find the tenant ID in your Microsoft Dynamics 365 Lifecycle Services (LCS) settings. 
 1. In the **Review Text Max Length** field, enter the maximum number of characters that review text can have (for example, **1000**). 
 1. In the **Review Title Max Length** field, enter the maximum number of characters that review titles can have (for example, **55**). 
 1. Select **Save and Publish**. 
