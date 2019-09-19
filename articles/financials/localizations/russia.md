@@ -2,7 +2,7 @@
 # required metadata
 
 title: Russia overview
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
+description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019
