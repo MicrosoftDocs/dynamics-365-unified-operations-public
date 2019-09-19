@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new Dynamics 365 e-Commerce site
-description: This topic introduces the concept of an online store and how they're used in Dynamics 365 for Commerce. It also provides a link to more information about online stores and how to set one up in Dynamics 365.
+description: This topic introduces the concept of an online store and how they're used in Dynamics 365 Commerce. It also provides a link to more information about online stores and how to set one up.
 author: StuHarg
 manager: annbe
 ms.date: 08/30/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 ---
 # Create a new Dynamics 365 e-Commerce site
 
-This topic introduces the concept of an online store and how they're used in Dynamics 365 Commerce. It also provides a link to more information about online stores and how to set one up in Dynamics 365.
+This topic introduces the concept of an online store and how they're used in Dynamics 365 Commerce. It also provides a link to more information about online stores and how to set one up.
 
 Before you can build your site in Dynamics 365 Commerce, you must have at least one online store set up in Dynamics 365. An online store in Dynamics 365 is where you establish the products, pricing, languages, payment methods, delivery modes, fulfillment centers and other aspects of the online experience you enable for your customers. 
 
