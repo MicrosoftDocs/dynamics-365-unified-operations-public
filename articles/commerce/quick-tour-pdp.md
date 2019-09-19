@@ -36,14 +36,13 @@ This topic provides a quick tour of product details pages in Dynamics 365 Commer
 
 ## Overview
 
-The **Product details** page is the page that provides detailed information about a product. It allows your customers to configure and choose the options (dimensions) of the product. It should have all the information about the product so the user can make a purchase decision.
+A product details page (PDP) provides detailed information about a product, and enables customers to select product options such as size, style, and color. A PDP should showcase all the product information a customer needs to make a purchase decision.
 
-![Product details page](./media/PDP.png)
+![Product details page](./media/PDP.PNG)
 
+The top of the page has a header which shows all the product categories and other pages that the retailer wants the customer to browse. On the bottom of the page is a footer with quick links to various topics that may interest customers.
 
-The top of the page has a Header which shows all the product categories and other pages that retailer wants the shopper to browse. On the bottom of the page is a Footer with quick links to various topics that a shopper may be interested. Refer to the help topics for Header and Footer for more details.
-
-The main section on the Product details page begins with a **Buy Box**. This is the most important module on the product details page. The buy box is technically a container module that hosts several modules which hold key information about the product such as the product name, product images, description, price and product ratings. It allows the user to configure the dimensions of the product (e.g. size, style, color etc.) and add it to cart. A buy box module needs context of a product id which is derived from the page context. If this module is placed on a page where the page context does not have product id, it will not render the information correctly. 
+The main section of the PDP begins with a *buy box*, which is the most important module on a PDP. The buy box is a container module that hosts several modules which hold key information about the product such as product name, product images, description, price, and product ratings. It enables the user to select any product options (for example, size, style, and color) and add it to cart. A buy box module needs context of a product id which is derived from the page context. If this module is placed on a page where the page context does not have product id, it will not render the information correctly. 
 
 A buy box also allows the shopper to buy the product online and pick up in a nearby store. The buy online and pick up in store module integrates with Bing Maps APIs to find nearby stores and stores in a user specified location
 
