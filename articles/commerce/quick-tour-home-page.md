@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quick tour of home page
+title: Quick tour of the home page
 description: This topic provides a quick tour of the home page in Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Quick tour of Home page
+# Quick tour of the home page
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -63,11 +63,11 @@ The following image shows an example of feature modules on a home page.
 
 **Video Player:** A video player module can be used to showcase video content on the home page. A video player shown in the home page example there is .
 
-**Content Rich block**: Content rick block can be used in a single or multi-column view for text content on the home page screenshot above.
+**Content Rich block**: A content rich block module can be used in a single or multi-column view for text content on the home page.
 
 **Recommendations:** Product recommendations lists such as "New," "Trending," and "Best Selling" can be displayed on the home page. These lists showcase products based on shopping trends, and can be algorithmically generated or curated manually. They help customers quickly discover top products and then continue their shopping journey.
 
-The following image shows an example of product recommendations on a home page.
+The following image shows an example of product recommendations modules on a home page.
 
 ![Recommendations](./media/Recommendations.PNG)
 
