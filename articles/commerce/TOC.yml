@@ -26,6 +26,8 @@
     items:
     - name: Product recommendations
       href: product-recommendations.md
+    - name: Add product recommendations lists to e-Commerce pages
+      href: add-reco-list-to-page.md
     - name: Enable omni-channel product recommendations
       href: enable-product-recommendations.md
     - name: Create curated product recommendation lists
