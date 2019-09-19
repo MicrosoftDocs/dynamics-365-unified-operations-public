@@ -320,6 +320,143 @@
       href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/fin-and-ops/toc.json
   - name: Organization administration
     items:
+    - name: Organization administration home page
+      href: organization-administration/organization-administration-home-page.md
+    - name: Number sequences
+      items:
+      - name: Number sequences overview
+        href: organization-administration/number-sequence-overview.md
+      - name: Set up number sequences on an individual basis
+        href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
+      - name: Set up number sequences using a wizard
+        href: organization-administration/tasks/set-up-number-sequences-wizard.md
+    - name: Organizations and organizational hierarchies
+      items:
+      - name: Organizations and organizational hierarchies overview
+        href: organization-administration/organizations-organizational-hierarchies.md
+      - name: Plan your organizational hierarchy
+        href: organization-administration/plan-organizational-hierarchy.md
+      - name: Create an organization hierarchy
+        href: organization-administration/tasks/create-organization-hierarchy.md
+      - name: Create legal entities
+        href: organization-administration/tasks/create-legal-entity.md
+      - name: Create operating units
+        href: organization-administration/tasks/create-operating-unit.md
+    - name: Global address book
+      items:
+      - name: Global address book overview
+        href: organization-administration/overview-global-address-book.md
+      - name: Plan for the global address book and other address books
+        href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
+      - name: Configure the global address book
+        href: organization-administration/tasks/configure-global-address-book.md
+      - name: Address books FAQ
+        href: organization-administration/qa-address-books.md
+      - name: Configure address books
+        href: organization-administration/tasks/address-books.md
+    - name: Workflow system
+      items:
+      - name: Workflow system overview
+        href: organization-administration/overview-workflow-system.md
+      - name: Workflow system architecture
+        href: organization-administration/workflow-system-architecture.md
+      - name: Workflow elements
+        href: organization-administration/workflow-elements.md
+      - name: Workflow actions
+        href: organization-administration/workflow-actions.md
+      - name: Create workflows
+        items:
+        - name: Create workflows overview
+          href: organization-administration/create-workflow.md
+        - name: Configure workflow properties
+          href: organization-administration/configure-workflow-properties.md
+        - name: Configure manual tasks
+          href: organization-administration/configure-manual-task-workflow.md
+        - name: Configure automated tasks
+          href: organization-administration/configure-automated-task-workflow.md
+        - name: Configure approval processes
+          href: organization-administration/configure-approval-process-workflow.md
+        - name: Configure approval steps
+          href: organization-administration/configure-approval-step-workflow.md
+        - name: Configure manual decisions
+          href: organization-administration/configure-manual-decision-workflow.md
+        - name: Configure conditional decisions
+          href: organization-administration/configure-conditional-decision-workflow.md
+        - name: Configure parallel activities
+          href: organization-administration/configure-parallel-activity-workflow.md
+        - name: Configure parallel branches
+          href: organization-administration/configure-parallel-branch-workflow.md
+        - name: Configure line-item workflows
+          href: organization-administration/configure-line-item-workflow.md
+      - name: Configure the Workflow Message Processing batch job as critical
+        href: organization-administration/workflow-batch-job-critical.md
+      - name: Delegate work items in a workflow
+        href: organization-administration/tasks/delegate-work-items-workflow.md
+      - name: View workflow history
+        href: organization-administration/tasks/view-workflow-history.md
+      - name: Configure the system to send workflow-related email to users
+        href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
+      - name: Workflow types
+        items:
+        - name: Creating a workflow type
+          href: organization-administration/workflow-type-create.md
+        - name: Workflow type checklist
+          href: organization-administration/workflow-type-checklist.md
+        - name: Create a workflow category
+          href: organization-administration/workflow-type-category.md
+        - name: Create a query for a workflow type
+          href: organization-administration/workflow-type-query.md
+        - name: Create a new workflow type
+          href: organization-administration/workflow-type-create-new.md
+        - name: Create a workflow document class
+          href: organization-administration/workflow-type-document-create.md
+        - name: Create a SubmitToWorkflow class
+          href: organization-administration/workflow-type-submit-to-workflow.md
+        - name: Associate a workflow document class with a workflow type
+          href: organization-administration/workflow-type-associate-document.md
+      - name: Workflow types report
+        href: organization-administration/workflow-types-report.md
+      - name: Workflow FAQ
+        href: organization-administration/workflow-FAQ.md
+    - name: Alerts
+      items:
+      - name: Alerts overview
+        href: get-started/alerts-overview.md
+      - name: Create alert rules
+        href: get-started/create-alerts.md
+      - name: Batch processing of alerts
+        href: get-started/alerts-managing.md
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md
+    - name: Electronic signatures
+      items:
+      - name: Electronic signatures overview
+        href: organization-administration/electronic-signature-overview.md
+      - name: Set up electronic signatures
+        href: organization-administration/tasks/set-up-electronic-signatures.md
+    - name: Case management
+      items:
+      - name: Case management overview
+        href: organization-administration/cases.md
+      - name: Plan case security, processes, and categories
+        href: organization-administration/plan-case-management.md
+    - name: Record templates
+      items:
+      - name: Record templates overview
+        href: organization-administration/record-templates.md
+      - name: Create a record template
+        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
+      - name: Use a record template to create a new record
+        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
+    - name: Configure document management
+      href: organization-administration/configure-document-management.md
+    - name: Configure and send email
+      href: organization-administration/configure-email.md
+    - name: Date/time data and time zones
+      href: organization-administration/date-time-zones.md
+    
+    
+    
   - name: Procurement and sourcing
     items:
   - name: Product information management
