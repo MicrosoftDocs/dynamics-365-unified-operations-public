@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronization of sales orders directly between Sales and Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations.
+description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/09/2019
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations.
+The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Finance and Operations.
 
 ## Data flow in Prospect to cash
 
@@ -77,7 +77,7 @@ Sales orders are created in Sales and synchronized to Finance and Operations whe
 
 You don't have to create orders in Sales. You can create new sales orders in Finance and Operations instead. After a sales order has a status of **Confirmed**, it's synchronized to Sales as described in the previous paragraph.
 
-In Finance and operations, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
+In Finance and Operations, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
 
 - On the sales order, both the ordering customer and the invoicing customer have to originate from Sales to be included in the synchronization. In Finance and Operations, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** fields are used to filter sales orders from the data entities.
 - The sales order in Finance and Operations must be confirmed. Only confirmed sales orders or sales orders that have a higher processing status, such as **Shipped** or **Invoiced**, are synchronized to Sales.
