@@ -25,6 +25,7 @@ ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+---
 
 # Quick tour of cart and checkout
 
