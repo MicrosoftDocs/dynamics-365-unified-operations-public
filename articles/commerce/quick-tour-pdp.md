@@ -1,34 +1,40 @@
 ---
 # required metadata
 
-title: Quick tour of product details
-description: 
-author: AnupamaR
+title: Quick tour of product details pages
+description: This topic provides a quick tour of product details pages in Dynamics 365 Commerce.
+author: anupamar-ms
 manager: annbe
-ms.date: 08/30/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-retail
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: 
-audience: Consumer
+ms.search.form:  
+audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: AnupamaR
-ms.search.validFrom: 2019-08-30
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of product details page
+# Quick tour of product details pages
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+This topic provides a quick tour of product details pages in Dynamics 365 Commerce.
+
+## Overview
 
 The **Product details** page is the page that provides detailed information about a product. It allows your customers to configure and choose the options (dimensions) of the product. It should have all the information about the product so the user can make a purchase decision.
 
