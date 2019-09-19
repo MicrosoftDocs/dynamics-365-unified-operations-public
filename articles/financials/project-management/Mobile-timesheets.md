@@ -35,7 +35,7 @@ ms.dyn365.ops.version: April 2018 update
 
 **Timesheets for my review (Optimized for mobile)** allows project managers, who have timesheet approval rights, to review and approve project timesheets on a mobile device. Editing or viewing financial dimension information is not supported from the mobile app. **Timesheets for my review (Optimized for mobile)** can be accessed via the web browser on your mobile device.
 
-This mobile application is compatible for iPhone with Dynamics 365 for Finance and Operations platform update 15.
+This mobile application is compatible for iPhone with Platform update 15.
 Android will be compatible with Platform update 16, when it becomes available.
 
 ## Create a project timesheet on your mobile device
