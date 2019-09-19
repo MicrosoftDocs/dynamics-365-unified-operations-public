@@ -91,7 +91,7 @@ It's typical that employees who join an organization have a future start date. T
 
 ## Known issues
 
-### Changes to the Core HR integration template (Talent Common Data Service to Finance and Operations)
+### Changes to the Core HR integration template (Talent Common Data Service to Finance)
 The template for Core HR has been updated to an "advanced query template". Therefore, by default, the advanced query will be available for projects that are created by using this template. Additionally, any default mapping functions will be visible only in the advanced query editor. (Default mapping functions appear as "FN" in the mappings.)
 
 For more information about mapping errors, see [What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
