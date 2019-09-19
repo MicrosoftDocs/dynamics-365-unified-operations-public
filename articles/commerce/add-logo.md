@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Add a logo
+# Add a logo to your site
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -49,9 +49,9 @@ Before you can add a logo to all the pages of your site, you must do the followi
 
 1. Upload your logo to the digital assets manager, which is accessed through the Assets page. 
 1. Create a header fragment. See [Work with fragments](work-with-fragments.md) for more information on creating and using fragments.
-1. Include the header fragment in the template that the pages of your site use for their layout and module options. See the [Work with templates](work-with-templates.md) for more information on templates. 
+1. Include the header fragment in the template that the pages of your site use for their layout and module options. See [Work with templates](work-with-templates.md) for more information on templates. 
 
-## Add a logo to your site's header fragment
+## Add a logo to the header fragment
 
 To add a logo to the header fragment for your site, do the following.
 
@@ -59,10 +59,10 @@ To add a logo to the header fragment for your site, do the following.
 2. Click **Check out**.
 3. Expand the **Header slot** and the **Logo slot**.
 4. Click the ellipsis button (**...**) of the logo slot, then select **Add module**.
-5. Select the **Logo** module. CIn the right-side properties pane, configure the logo module to display your logo.
+5. Select the **Logo** module. In the right-side properties pane, configure the logo module to display your logo.
 7. Save, check in, and publish the header fragment.
 
-After you publish your header fragment, all pages whose template includes the header fragment you updated will display your logo. 
+After you publish your header fragment, all pages that use the template containing the header fragment you updated will display your logo. 
 
  
 
