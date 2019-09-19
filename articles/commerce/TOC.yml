@@ -1,45 +1,45 @@
 - name: Welcome to Dynamics 365 Commerce (Preview)
+  href: index.md
+- name: Create a new e-Commerce site
   items:
-  - name: Create a new e-Commerce site
-    items:
-    - name: Online store overview
-      href: online-store-overview.md
-    - name: Deploy a new e-Commerce site
-      href: deploy-ecommerce-site.md
-    - name: Configure a domain name
-      href: configure-your-domain-name.md
-    - name: Associate an online site with a channel
-      href: associate-site-online-store.md
-  - name: Manage your site
-    items:
-    - name: Manage users and roles
-      href: manage-ecommerce-users-roles.md
-  - name: Brand your site and add store details
-    items:
-    - name: Select a site theme
-      href: select-site-theme.md
-  - name: Add and manage content on your site
-    items:
-    - name: Add a checkout module to a page
-      href: add-checkout-module.md
-  - name: Ratings and reviews
-    items:
-    - name: Manage ratings and reviews
-      href: manage-reviews.md
-    - name: Configure ratings and reviews
-      href: configure-ratings-reviews.md
-  - name: Recommendations
-    items:
-    - name: Product recommendations
-      href: product-recommendations.md
-    - name: Add product recommendations lists to e-Commerce pages
-      href: add-reco-list-to-page.md
-    - name: Enable omni-channel product recommendations
-      href: enable-product-recommendations.md
-    - name: Create curated product recommendation lists
-      href: create-editorial-recommendation-lists.md
-    - name: Manage AI-ML-based product recommendation results
-      href: modify-product-recommendation-results.md
-    - name: Product recommendations FAQ
-      href: faq-recommendations.md
+  - name: Online store overview
+    href: online-store-overview.md
+  - name: Deploy a new e-Commerce site
+    href: deploy-ecommerce-site.md
+  - name: Configure a domain name
+    href: configure-your-domain-name.md
+  - name: Associate an online site with a channel
+    href: associate-site-online-store.md
+- name: Manage your site
+  items:
+  - name: Manage users and roles
+    href: manage-ecommerce-users-roles.md
+- name: Brand your site and add store details
+  items:
+  - name: Select a site theme
+    href: select-site-theme.md
+- name: Add and manage content on your site
+  items:
+  - name: Add a checkout module to a page
+    href: add-checkout-module.md
+- name: Ratings and reviews
+  items:
+  - name: Manage ratings and reviews
+    href: manage-reviews.md
+  - name: Configure ratings and reviews
+    href: configure-ratings-reviews.md
+- name: Recommendations
+  items:
+  - name: Product recommendations
+    href: product-recommendations.md
+  - name: Add product recommendations lists to e-Commerce pages
+    href: add-reco-list-to-page.md
+  - name: Enable omni-channel product recommendations
+    href: enable-product-recommendations.md
+  - name: Create curated product recommendation lists
+    href: create-editorial-recommendation-lists.md
+  - name: Manage AI-ML-based product recommendation results
+    href: modify-product-recommendation-results.md
+  - name: Product recommendations FAQ
+    href: faq-recommendations.md
     
