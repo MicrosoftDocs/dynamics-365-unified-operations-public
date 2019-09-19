@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new e-Commerce site
-description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 for Commerce.
+description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Microsoft Dynamics 365 Commerce.
 author: stuharg
 manager: AnnBe
 ms.date: 10/01/2019
