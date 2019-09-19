@@ -636,7 +636,7 @@ If none of the preceding solutions work, follow these steps.
 
 ## Gateway fails to deploy
 
-**Issue:** You receive the following error in the event viewer logs:
+**Issue:** You receive the following error in the event viewer logs.
 
 ```stacktrace
 Message Module aos failed Detail System.InvalidOperationException: Gateway app and Bootstrapper app are not healthy at AOSSetupHybridCloud.Program.Main(String[] args) 
@@ -647,7 +647,7 @@ at SetupCore.SetupManager.LaunchProcessInAppDomain(String startupExe, String wor
 at SetupCore.SetupManager.<>c__DisplayClass12_1.<InvokeModules>b__6()
 ```
 
-You also receive the following error message in the SFExplorer for the Gateway application:
+You also receive the following error message in the SFExplorer for the Gateway application.
 
 ```stacktrace
 'System.RA' reported Warning for property 'ReplicaOpenStatus'.
@@ -665,9 +665,9 @@ Category does not exist.
    at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.d__10`2.MoveNext()
 ```
 
-**Reason:** The pointers to the performance counter that the gateway needs are seemingly corrupt.
+**Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
 
-**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If the first time you get an error about being unable to rebuild the performance counters, try executing the command again. 
+**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
 
 ## Management Reporter
 
@@ -773,7 +773,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 
 ### Unable to deploy Financial Reporting Service
 
-**Issue:** You are unable to finish deployment of PU26 and later packages due to Financial Reporting with the following error being present in the application log on SF:
+**Issue:** You are unable to finish deployment of Platform update 26 and later for Financial Reporting because the following error is in the application log for Service Fabric.
 
 ```stacktrace
 Application: FinancialReportingDeployer.exe Framework Version: v4.0.30319  
@@ -785,9 +785,9 @@ Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.Stri
 Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
 ```
 
-**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 was not correctly installed or got corrupted in some or all of the MR nodes.
+**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 was not correctly installed or is corrupt in some or all of the MR nodes.
 
-**Steps:** Run the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013 again.
+**Steps:** Re-run the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
 
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
