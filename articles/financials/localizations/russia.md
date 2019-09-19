@@ -93,6 +93,9 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
 
+## Inventory
+- [Goods in transit from vendor](rus-goods-transit-vendor.md)
+
 ## Reporting
 
 - [Financial reporting](rus-financial-reports.md)
