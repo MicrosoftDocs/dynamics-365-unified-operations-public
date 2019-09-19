@@ -9,7 +9,7 @@
     - name: Sign up for preview subscription
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/supply-chain/toc.json
     - name: One Version service updates 
-     items:
+      items:
       - name: One Version service updates overview
         href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/supply-chain/toc.json
       - name: One Version service updates FAQ
