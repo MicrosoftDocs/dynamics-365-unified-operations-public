@@ -65,3 +65,4 @@ In this release, the job family field has been added to the Manage changes form 
 This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
 
 For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md).
+View the changes in the video posted [Here](https://aka.ms/ROGT19RW2ROV).
