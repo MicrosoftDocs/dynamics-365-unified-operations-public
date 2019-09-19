@@ -60,7 +60,7 @@ In Attract and Onboard, problems logged by end users through the report a proble
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2216.
 
-### Platform update 25
+### Platform update 25 for Finance and Operations
 For more information about Platform update 25 for Finance and Operations, see [Preview features in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  Advanced compensation security (fixed and variable)
