@@ -55,8 +55,8 @@ The prerequisites differ, based on the version of Microsoft Dynamics 365 that ha
 ### Prerequisites if you use Dynamics 365 Finance
 If Finance has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### Prerequisites if you use Dynamics 365 for Operations version 1611 with platform update 3 or later
-If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
+### Prerequisites if you use version 1611 with Platform update 3 or later
+If version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
 <thead>
