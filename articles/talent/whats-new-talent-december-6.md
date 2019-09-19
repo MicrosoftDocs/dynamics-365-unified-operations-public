@@ -38,7 +38,7 @@ ms.dyn365.ops.version: Talent
 This topic describes features that are either new or changed in Core HR.
 
 
-## Platform update 22
+## Platform update 22 for Finance and Operations
 
 ### Export up to 1 million rows to Excel
 
@@ -46,7 +46,7 @@ The Export to Excel feature can now be configured to allow users to export up to
 
 ### Restyled personalization toolbar
 
-The personalization toolbar has been restyled in Platform update 22 to help users more easily tailor their own experiences in Talent. The following changes were made: 
+The personalization toolbar has been restyled in Platform update 22 for Finance and Operations to help users more easily tailor their own experiences in Talent. The following changes were made: 
 
 -  The name of each personalization tool is now shown along with an icon, which helps users quickly recognize the tool they are interested in using.
 -  The description for how to use the current tool is also now shown, which helps users understand how to make the needed personalizations.  
@@ -54,13 +54,13 @@ The personalization toolbar has been restyled in Platform update 22 to help user
 
 ### Optimized "is one of" filtering experience
 
-The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple values. A new and improved experience for the "is one of" operator is available in Platform update 22. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+The "is one of" filtering operator is available for most fields when using the Filter Pane and grid header drop-down lists. This operator allows a user to filter a field based on multiple values. A new and improved experience for the "is one of" operator is available in Platform update 22 for Finance and Operations. To learn more, see [Optimized "is one of" filtering experience](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### Paste lists from Excel into filter fields with the "is one of" operator
 
 For some tasks, users might have a list of values in Excel that they'd like to use to filter data in Talent. For example, a Human Resource user might have identified a set of employees from a report that need additional research in the system, and it would be ideal for this user to be able to copy the list directly from Excel into a filter field in Talent.
 
-Starting in Platform update 22, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Starting in Platform update 22 for Finance and Operations, the "is one of" operator in the Filter Pane and grid column filtering now recognizes lists copied from Excel so that they can be pasted directly into a filter field. This includes a collection of values copied from different rows and columns in Excel. To learn more about this feature, see [Paste lists from Excel into filter fields with the "is one of" operator](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## In preview
 
@@ -94,9 +94,9 @@ Changes have been made to correct attachments. When adding a new attachment to a
 
 ## Known issues
 
-### Mapping errors in the integration with Finance and Operations
+### Mapping errors in the integration with Finance
 
-The following issues have been identified in the current template for integrating Talent with Finance and Operations. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
+The following issues have been identified in the current template for integrating Talent with Finance. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
 
 >[!NOTE]
 > The Job Positions to Positions Parent Job Assignment task does not integrate data. This is an issue that is currently being researched. There is no workaround in the current mapping. 
