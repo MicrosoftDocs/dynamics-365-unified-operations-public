@@ -109,7 +109,7 @@ There are three ways to add items to a work order maintenance forecast: You can 
 
 ## Automatic update of work order forecasts
 
-In Asset Management, you can automatically update any changes in work order forecasts regarding hour costs, item costs, and expenses, which have been updated in other modules in Dynamics 365 for Finance and Operations. This is done to ensure that the latest cost prices are always used in your work order forecasts. It is also possible to make similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+In Asset Management, you can automatically update any changes in work order forecasts regarding hour costs, item costs, and expenses, which have been updated in other modules. This is done to ensure that the latest cost prices are always used in your work order forecasts. It is also possible to make similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Click **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.
 
