@@ -738,7 +738,7 @@
         href: ../financials/accounts-receivable/revenue-recognition-setup.md
       - name: Revenue recognition on sales orders
         href: ../financials/accounts-receivable/revenue-recognition-so-basics.md
-       - name: Recognize deferred revenue
+      - name: Recognize deferred revenue
         href: ../financials/accounts-receivable/revenue-recognition-recognize-deferred-revenue.md       
       - name: Set up and process recurring invoices
         href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
