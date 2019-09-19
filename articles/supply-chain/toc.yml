@@ -8,8 +8,180 @@
       href: ../../get-started/before-you-buy.md?toc=/supply-chain/toc.json
     - name: Sign up for preview subscription
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/supply-chain/toc.json
+    - name: One Version service updates 
+     items:
+      - name: One Version service updates overview
+        href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+      - name: One Version service updates FAQ
+        href: get-started/one-version.md
+      - name: Software lifecycle policy - Cloud
+        href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+      - name: Software lifecycle policy - On-premises
+        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+      - name: Service update availability
+        href: get-started/public-preview-releases.md
+      - name: Apply updates to cloud environments
+        href: ../dev-itpro/deployment/apply-deployable-package-system.md
+      - name: Configure service updates
+        href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+      - name: Pause service updates
+        href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+      - name: Get notified about service updates
+        href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+      - name: Data task automation
+        href: ../dev-itpro/data-entities/data-task-automation.md
+      - name: Delivering ISV solutions using One Version
+        href: ../dev-itpro/lifecycle-services/oneversion-isv.md
+      - name: Create and automate user acceptance tests
+        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md    
     - name: Deploy a demo environment
       href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/supply-chain/toc.json
+    - name: Deployment considerations
+      items:
+      - name: Deployment options
+        href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
+      - name: Cloud deployment
+        href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/fin-and-ops/toc.json
+      - name: System requirements for cloud deployments
+        href: get-started/system-requirements.md
+      - name: On-premises deployment
+        href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
+      - name: System requirements for on-premises deployments
+        href: get-started/system-requirements-on-prem.md
+      - name: Buy Finance + Operations (on-premises)
+        href: get-started/purchase-on-premises.md
+      - name: Configure Warehousing for on-premises deployments
+        href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
+      - name: Finance and Operations operated by 21Vianet in China
+        href: ../dev-itpro/deployment/china-local-deployment.md
+      - name: Finance and Operations in France
+        href: ../dev-itpro/deployment/france-local-deployment.md
+    - name: What's new or changed
+      items:
+      - name: What's new or changed home page
+        href: get-started/whats-new-changed.md
+      - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+        href: get-started/whats-new-changed-10-0-6.md
+      - name: Finance and Operations 10.0.5 (October 2019)
+        href: get-started/whats-new-changed-10-0-5.md
+      - name: Finance and Operations 10.0.4 (July 2019)
+        href: get-started/whats-new-changed-10-0-4.md
+      - name: Finance and Operations, Enterprise edition 7.3
+        href: get-started/whats-new-application-7.3-update.md
+      - name: Removed or deprecated features
+        href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
+      - name: AX 2012 features that were postponed
+        href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
+      - name: Features not implemented in on-premises deployments
+        href: get-started/features-not-implemented-on-prem.md
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: get-started/mainstream-support-ax-2009-2012.md
+    - name: Documentation resources
+      items:
+      - name: Help system
+        href: get-started/help-overview.md
+      - name: Connect the Help system
+        href: get-started/help-connect.md
+      - name: Connect a custom help site
+        href: get-started/help-custom.md        
+      - name: View and export field descriptions
+        href: get-started/view-export-field-descriptions.md
+      - name: Task Recorder
+        href: ../dev-itpro/user-interface/task-recorder.md?toc=/fin-and-ops/toc.json
+      - name: Create documentation or training with Task Recorder
+        href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
+      - name: Videos for Finance and Operations
+        href: get-started/videos.md
+      - name: Glossary
+        href: get-started/glossary.md
+    - name: Learning catalog
+     items: 
+      - name: Learning catalog home page
+        href: get-started/learning-catalog.md
+      - name: Business decision makers
+        href: get-started/learning-catalog-bdm.md
+      - name: Business users
+        href: get-started/learning-catalog-business-user.md
+      - name: Implementation project managers
+        href: get-started/learning-catalog-project-manager.md
+      - name: Administrators
+        href: get-started/learning-catalog-administrator.md
+      - name: Developers
+        href: get-started/learning-catalog-developer.md
+      - name: Partner sales and marketing
+        href: get-started/learning-catalog-partner-sales.md
+      - name: Functional consultants
+        href: get-started/learning-catalog-functional-consultant.md
+      - name: Solution architects
+        href: get-started/learning-catalog-solution-architect.md
+    - name: Explore the user interface
+      items:
+      - name: User interface elements
+        href: get-started/user-interface-elements.md
+      - name: Accessibility features
+        href: get-started/accessibility-features.md
+      - name: Feature management overview
+        href: get-started/feature-management/feature-management-overview.md
+      - name: Client FAQ
+        href: get-started/client-faq.md
+      - name: Action search
+        href: get-started/action-search.md
+      - name: Advanced filtering and query syntax
+        href: get-started/advanced-filtering-query-options.md
+      - name: Configure and filter workspaces
+        href: get-started/configure-filter-workspaces.md
+      - name: Show pages side by side by using the Open in new window feature
+        href: get-started/display-pages-side-by-side.md
+      - name: Keyboard shortcuts
+        href: get-started/shortcut-keys.md
+      - name: Change the banners or logo images for legal entities
+        href: get-started/tasks/change-banner-or-logo.md
+      - name: Navigation search
+        href: get-started/navigation-search.md
+      - name: Personalize the user experience
+        href: get-started/personalize-user-experience.md
+      - name: Saved views
+        href: get-started/saved-views.md
+      - name: Create and work with custom fields
+        href: get-started/user-defined-fields.md
+      - name: Embed PowerApps apps
+        href: get-started/embed-power-apps.md
+      - name: Find information by using lookups
+        href: get-started/use-lookups-to-find-information.md
+      - name: Change the date for a session
+        href: organization-administration/tasks/change-date-session.md
+      - name: Set a user's preferred time zone
+        href: organization-administration/tasks/set-users-preferred-time-zone.md
+      - name: Understand Lifecycle Services
+        href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
+    - name: Implementation lifecycle management
+      items:
+      - name: Implementation lifecycle management home page
+        href: imp-lifecycle/implementation-lifecycle.md
+      - name: Finance and Operations architecture
+        href: imp-lifecycle/architecture-overview.md    
+      - name: Microsoft FastTrack for Finance and Operations
+        href: get-started/fasttrack-dynamics-365-overview.md
+      - name: Onboard an implementation project
+        href: imp-lifecycle/onboard.md
+      - name: Environment planning
+        href: imp-lifecycle/environment-planning.md   
+      - name: Prepare for go-live
+        href: imp-lifecycle/prepare-go-live.md
+      - name: Go-live FAQ
+        href: imp-lifecycle/go-live-faq.md
+      - name: Submit a service request
+        href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
+      - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        href: get-started/subscription-overview.md      
+      - name: Move environments between data centers
+        href: get-started/move-environments-data-center.md      
+      - name: Move licenses between agreement types
+        href: get-started/move-licenses-between-agreement-types.md 
+      - name: Move LCS implementation projects to different Azure AD tenants
+        href: get-started/move-lcs-implementation-project-tenant.md 
+      - name: Multiple LCS projects and production environments on one Azure AD tenant
+        href: get-started/implement-multiple-projects-aad-tenant.md
   - name: Cost accounting
     items:
       - name: Cost accounting home page
