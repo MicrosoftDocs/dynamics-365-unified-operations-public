@@ -86,7 +86,7 @@ You may receive the following error when running a test case, or the error detai
 
 ![Enumerate error message box](media/cannot-enumerate.png)
  
-To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the Finance and Operations environment that RSAT is connecting to.
+To resolve this error, verify the **Admin user name** specified in the RSAT settings dialog box. The **Admin user name** must be the email address of a user that belongs to the System Administrator role on the environment that RSAT is connecting to.
 
 ## Browser
 
