@@ -671,7 +671,7 @@ Generate a transport tax declaration
         (2019)**. The file that is downloaded is named **RU Transport tax
         declaration v5.05 (2019).zip**.
 
-    -   In Dynamics 365 Finance, in the **Data
+    -   In the **Data
         management** workspace, select **Import**.
 
     -   In the **Job details** section, set the following values:
