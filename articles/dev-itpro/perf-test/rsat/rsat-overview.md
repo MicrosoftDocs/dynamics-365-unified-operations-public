@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 ## Overview
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your Dynamics 365 for Finance and Operations production environment.
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your production environment.
 
 This tool enables functional power users to record business tasks using the Finance and Operations Task recorder and convert these recordings into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services (LCS) using the Business Process Modeler (BPM) libraries. These libraries are also fully integrated with Azure DevOps Services (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
