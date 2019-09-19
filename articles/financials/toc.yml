@@ -2543,7 +2543,7 @@
         href: hr/tasks/set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr/tasks/maintain-employee-injury-illness-information.md
-    - name: Mobile app
+  - name: Mobile app
     items:
     - name: Mobile app home page
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
@@ -2732,9 +2732,8 @@
     - name: Configure and send email
       href: organization-administration/configure-email.md
     - name: Date/time data and time zones
-      href: organization-administration/date-time-zones.md      
-        
-        
+      href: organization-administration/date-time-zones.md  
+      
     - name: US Payroll
       items:
       - name: US Payroll overview
