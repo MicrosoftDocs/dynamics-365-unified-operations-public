@@ -52,7 +52,7 @@ A theme can be set on the master page in a similar manner. In this case, the the
 * There is no limit to the number of SCSS files that your theme can contain.
 * Your theme entry point can import other SCSS files by using relative paths.
 * Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-* If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in a scss file:
+* If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in a SCSS file:
 
 ```
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
