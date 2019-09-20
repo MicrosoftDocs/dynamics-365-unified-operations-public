@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 10.0.5
 To install Modern POS (MPOS) in Windows you must sign the MPOS app with a signing certificate from a trusted provider. To sign the MPOS app with a certificate, there are these options in the **Retail SDK\\Build tool\\Customization.settings** file:
 
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task and use the secure file task output path variable as parameter in the Customization.settings file.
-    > ![NOTE] 
+    > [!NOTE] 
     > The Secure File task doesn’t support password protected certificate. You must remove the password before uploading to this task. Since the certificate is uploaded to the secure file system task in Azure, it's fine to remove the password only for this step. You should discuss removing the password discuss with your security experts to determine if this is the correct action for your project. The certificate uploaded to the build task can be accessed only by the build pipeline during build flow and no other process can access it. So, with secure file task the additional layer of password security is not required only during the build signing process. Don’t remove the certificate password for other scenarios.
 - Use a certificate placed in the file system: You download or generate a certificate and place it in the file system where the build is running. The VSO agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign with that certificate.
@@ -80,5 +80,5 @@ If you use a thumbprint to sign the MPOS app then install the certificate locall
 
 This option will work fine if the build user is a local user but if you are using the Azure DevOps/VSO agents to generate the build then the agent may not have permission to access the cert store to use the certificate for signing or the build machine will not have the certificate installed. The workaround in this case is change the build user to local user and install the certificate in the box but this option will not work well if you don’t have admin access to the box.
 
-> ![NOTE]
+> [!NOTE]
 > If the .pfx file or Secure File task option is used to sign the app then leave the **ModernPOSPackageCertificateThumbprint** node in the **Customization.settings** file empty and if thumbprint option is used then leave the **ModernPOSPackageCertificateKeyFile** empty. If both the values are updated, then the build will fail.
