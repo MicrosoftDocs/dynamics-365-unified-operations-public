@@ -28,6 +28,38 @@
       href: ../fin-and-ops/get-started/whats-new-platform-update-20.md
     - name: Platform update 15 (March 2018)
       href: ../fin-and-ops/get-started/whats-new-platform-update-15.md    
+  - name: Business events
+    items:
+    - name: Business events overview
+      href: ../dev-itpro/business-events/home-page.md
+    - name: Application business events
+      href: ../dev-itpro/business-events/app-business-events.md
+    - name: Workflow business events
+      href: ../dev-itpro/business-events/business-events-workflow.md
+    - name: Alerts as business events
+      href: ../dev-itpro/business-events/alerts-business-events.md
+    - name: Business events in Microsoft Flow
+      href: ../dev-itpro/business-events/business-events-flow.md
+    - name: Business events developer documentation
+      href: ../dev-itpro/business-events/business-events-dev-doc.md
+    - name: Troubleshoot business events
+      href: ../dev-itpro/business-events/troubleshooting.md
+    - name: Use cases for business events
+      href: ../dev-itpro/business-events/potential-use-cases.md
+    - name: Tutorials
+      items: 
+      - name: Business events and Microsoft Flow
+        href: ../dev-itpro/business-events/how-to/how-to-flow.md
+      - name: Business events and Azure Event Grid
+        href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
+      - name: Business events and Azure Service Bus
+        href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
+      - name: Business events and workflow approvals
+        href: ../dev-itpro/business-events/how-to/how-to-workflow.md
+      - name: Business events and Microsoft Forms Pro 
+        href: ../dev-itpro/business-events/how-to/FormsPro.md
+      - name: Business events and Azure Event Hubs
+        href: ../dev-itpro/business-events/how-to/event-hub.md      
   - name: System requirements for cloud deployments
     href: ../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json
   - name: System requirements for on-premises deployments
