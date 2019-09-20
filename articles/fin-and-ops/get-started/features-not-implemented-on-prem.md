@@ -5,7 +5,7 @@ title: Features that aren't implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
