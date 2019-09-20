@@ -117,7 +117,7 @@ Schedule estimation is usually the second step in creating a WBS. As a best prac
 **Task dependencies** 
 In a WBS, you can create a predecessor relationship between tasks. When you assign predecessor tasks to a task, that task can start only after all its predecessor tasks have been completed. The planned start date of the task is automatically set to the latest date of all its predecessors. 
 
-**Task scheduling in Microsoft Dynamics 365 for Finance and Operations** 
+**Task scheduling** 
 The following factors determine the scheduling of leaf node tasks:
 
 -   Predecessors
