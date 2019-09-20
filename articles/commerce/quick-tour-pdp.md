@@ -38,7 +38,7 @@ This topic provides a quick tour of product details pages in Dynamics 365 Commer
 
 A product details page (PDP) provides detailed information about a product, and enables customers to select product options such as size, style, and color. A PDP should showcase all the product information a customer needs to make a purchase decision.
 
-![Product details page](./media/PDP.PNG)
+![Product details page](./media/pdp.PNG)
 
 ### Header and footer modules
 
