@@ -49,7 +49,7 @@ Before you can test a service by using an external application, you must registe
 For details, see:
 
 - [Register an application with AAD](services-home-page.md#register-a-web-application-with-aad)
-- [Register your external application in Finance and Operations](services-home-page.md#register-your-external-application-in-finance-and-operations)
+- [Register your external application](services-home-page.md#register-your-external-application-in-finance-and-operations)
 
 ## Query OData by using Postman
 
@@ -121,7 +121,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 In our example, we have now successfully authenticated and then used the OData service to read a customer record.
 
-## Query the Finance and Operations SOAP custom service by using SoapUI
+## Query the SOAP custom service in your application by using SoapUI
 
 SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make SOAP requests to and receive responses.
 
