@@ -37,40 +37,28 @@ This topic explains how to add a favicon to your site.
 
 ## Overview
 
-A favicon is a small image file that is displayed on the browser's tab, address bar, browser history, and bookmarks or favorites, among other places. It is a good idea to display a favicon on your site as it represents and reinforces your brand, and helps distinguish your site from other sites your customers visit. 
+A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places. We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.
 
-Although you can add favicons that support various sizes and file types to your site, this example will provide instructions for adding a single favicon. The location and process for adding additional favicons will be the same. 
+Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon. However, the same process and location are used to add more favicons.
 
-### Upload a favicon to your site's assets collection
+## Upload a favicon to your site's asset collection
 
-To upload a favicon to your site's assets collection, do the following.
+To upload a favicon to your site's asset collection, follow these steps.
 
-1. Go to **Assets > Upload > Upload assets**.
-1. Locate and select your favicon from your local file system.
-1. Enter a title and click **OK**. 
-1. Copy the public URL for the favicon from the property pane on the right.
+1. Go to **Assets \> Upload \> Upload assets**.
+1. Find and select the favicon on your local file system.
+1. Enter a title, and then select **OK**. 
+1. In the property pane on the right, copy the public URL of the favicon.
 
-[!NOTE]
-If you don't select the **Publish assets after upload** option, you will need to return to **Assets** and manually publish the image  later. 
+> [!NOTE]
+> If you don't select the **Publish assets after upload** option, you must return to **Assets** and manually publish the favicon later.
 
-### Create the HTML for the favicon image
+## Create the HTML for the favicon
 
-To create the HTML for the favicon image, do the following.
+To create the HTML for the favicon, use the following HTML snippet. For the **href** attribute, replace **"Public\_URL\_for\_your\_favicon"** with the public URL that you copied earlier.
 
-- Use the following HTML snippet, replacing the value of the href attribute ("Public_URL_for_your_favicon") with the public URL of your favicon copied earlier. 
+`&lt;link rel="shortcut icon" href="Public_URL_for_your_favicon" /&gt;`
 
-  ``
-  &lt;link rel="shortcut icon" href="Public_URL_for_your_favicon" /&gt;
-  ``
+## Add the HTML for the favicon to the \<head\> element of your pages
 
-### Add the HTML for the favicon to the <head> tag of your pages
-
-The procedure for adding a favicon to your site is the same one you would follow for adding any kind of HTML or script to the <head> tag of your site pages. Those steps are outlined in [Adding script to your master templates](http://). 
-
- 
-
- 
-
- 
-
- 
+To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages. For information about that procedure, see [Adding script to your master templates](http://).
