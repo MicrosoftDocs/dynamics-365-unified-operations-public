@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Before you buy guidance
+title: Before you buy
 description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
 author: kfend
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
