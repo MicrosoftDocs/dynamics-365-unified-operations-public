@@ -5,7 +5,7 @@ title: Action search
 description: This article describes the action search functionality. Action search will help you find and run actions on a page.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
