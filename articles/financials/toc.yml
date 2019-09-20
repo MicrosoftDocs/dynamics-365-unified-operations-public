@@ -1552,12 +1552,6 @@
         href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
       - name: Update method of payment on customer
         href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
-      - name: Retail
-        items:
-        - name: Cash registers
-          href: ../retail/localizations/emea-fra-cash-registers.md
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/emea-fra-deployment.md
     - name: Germany
       items:
       - name: Germany overview
@@ -1786,8 +1780,6 @@
           href: ../financials/localizations/apac-ind-GST-tax-returns.md
         - name: Tax inquiry
           href: ../financials/localizations/apac-ind-GST-tax-inquiry.md
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
       - name: Tax engine
         items: 
         - name: Tax engine overview
@@ -2013,8 +2005,6 @@
         href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
       - name: Generate a fixed asset transfer between warehouses document
         href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
-      - name: Invoice and packing slip numbering
-        href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
       - name: VAT statement details
         href: ../financials/localizations/emea-ltu-vat-statement-details.md
     - name: Malaysia
@@ -2101,10 +2091,6 @@
         href: ../financials/localizations/emea-nor-nets-import-format.md
       - name: VAT statement
         href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
-      - name: Cash registers
-        href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
-      - name: Deployment guidelines for cash registers
-        href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
     - name: Poland
       items:
       - name: Poland overview
@@ -2337,8 +2323,6 @@
         href: ../financials/localizations/emea-swe-sie-standard-report.md
       - name: Import payment formats
         href: ../financials/localizations/emea-swe-payment-formats-import.md
-      - name: Cash registers
-        href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
     - name: Switzerland
       items:
       - name: Switzerland overview
