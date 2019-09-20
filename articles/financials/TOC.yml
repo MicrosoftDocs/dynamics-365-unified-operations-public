@@ -2372,23 +2372,23 @@
   - name: Human resources
     items:
     - name: Human resources overview
-      href: hr/hr-landing-page.md
+      href: ../fin-and-ops/hr/hr-landing-page.md
     - name: Develop a human resources strategy
       items:
       - name: Create goals
-        href: hr/tasks/create-goal.md
+        href: ../fin-and-ops/hr/tasks/create-goal.md
       - name: Organize your workforce using departments, jobs, and positions
         href: ../talent/departments-jobs-positions.md
       - name: Set up job components
         href: ../talent/create-job.md
       - name: Define new departments
-        href: hr/tasks/define-new-departments.md
+        href: ../fin-and-ops/hr/tasks/define-new-departments.md
       - name: Define new jobs
-        href: hr/tasks/define-new-jobs.md
+        href: ../fin-and-ops/hr/tasks/define-new-jobs.md
       - name: Create a department and associate it with the department hierarchy
         href: ../talent/create-department-add-department-hierarchy.md
       - name: Create calendars and generate working times
-        href: hr/tasks/create-calendar-working-times.md
+        href: ../fin-and-ops/hr/tasks/create-calendar-working-times.md
       - name: Set up HR parameters across legal entities
         href: ../talent/set-up-hr-parameters-across-legal-entities.md
       - name: Set up company-specific HR parameters
@@ -2398,7 +2398,7 @@
       - name: Use workflow to manage employee information
         href: ../talent/workflow-manage-employee-information.md
       - name: Modify reporting relationships for positions
-        href: hr/tasks/modify-reporting-relationships-position.md
+        href: ../fin-and-ops/hr/tasks/modify-reporting-relationships-position.md
       - name: Approve application inbox records
         href: hr/tasks/approve-application-inbox-records.md
       - name: Enter worker information
