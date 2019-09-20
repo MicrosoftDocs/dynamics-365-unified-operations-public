@@ -287,7 +287,7 @@
       - name: Restrictions on costing versions for standard costs
         href: cost-management/restrictions-costing-versions-standard-costs.md
       - name: Information used in BOM calculations with standard costs
-        href: /cost-management/information-used-bom-calculations-standard-costs.md
+        href: cost-management/information-used-bom-calculations-standard-costs.md
       - name: Update standard costs in a manufacturing environment
         href: cost-management/update-standard-costs-manufacturing-environment.md
       - name: Update standard costs for a new manufactured item
@@ -378,8 +378,6 @@
         href: cost-management/amortize-constant-costs-manufactured-item.md
     - name: Cost management Power BI content pack
       href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/supply-chain/toc.json
-  - name: Globalization
-    items:
   - name: Inventory management
     items:
   - name: Master planning
@@ -577,137 +575,137 @@
   - name: Procurement and sourcing
     items:
     - name: Procurement and sourcing overview
-      href: ../supply-chain/procurement/procurement-sourcing-overview.md
+      href: procurement/procurement-sourcing-overview.md
     - name: Procurement and sourcing workflow
-      href: ../supply-chain/procurement/procurement-sourcing-workflows.md
+      href: procurement/procurement-sourcing-workflows.md
   - name: Procurement catalogs
     items:
     - name: Procurement catalogs overview
-      href: ../supply-chain/procurement/procurement-catalogs.md
+      href: procurement/procurement-catalogs.md
     - name: Create a procurement catalog
-      href: ../supply-chain/procurement/tasks/create-procurement-catalog.md
+      href: procurement/tasks/create-procurement-catalog.md
     - name: Set up a procurement category hierarchy
-      href: ../supply-chain/procurement/tasks/set-up-procurement-category-hierarchy.md
+      href: procurement/tasks/set-up-procurement-category-hierarchy.md
   - name: Purchase requisitions
     items:
     - name: Purchase requisitions overview
-      href: ../supply-chain/procurement/purchase-requisitions-overview.md
+      href: procurement/purchase-requisitions-overview.md
     - name: Purchase requisition workflow
-      href: ../supply-chain/procurement/purchase-requisitions-workflow.md
+      href: procurement/purchase-requisitions-workflow.md
   - name: Request for quotations (RFQs)
     items:
     - name: Request for quotations (RFQs) overview
-      href: ../supply-chain/procurement/request-quotations.md
+      href: procurement/request-quotations.md
     - name: Create a request for quotation
-      href: ../supply-chain/procurement/tasks/create-request-quotation.md
+      href: procurement/tasks/create-request-quotation.md
     - name: Create a requisition that uses an RFQ
-      href: ../supply-chain/procurement/tasks/create-requisition-uses-rfq.md
+      href: procurement/tasks/create-requisition-uses-rfq.md
     - name: Create a scoring method for RFQs
-      href: ../supply-chain/procurement/tasks/create-scoring-method-rfqs.md
+      href: procurement/tasks/create-scoring-method-rfqs.md
     - name: Create solicitation types and scoring criteria for RFQs
-      href: ../supply-chain/procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+      href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
     - name: Enter and compare RFQ bids and award contracts
-      href: ../supply-chain/procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+      href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
   - name: Purchase orders
     items:
     - name: Purchase order overview
-      href: ../supply-chain/procurement/purchase-order-overview.md
+      href: procurement/purchase-order-overview.md
     - name: Approve and confirm purchase orders
-      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+      href: procurement/purchase-order-approval-confirmation.md
     - name: Purchase order approval mobile workspace
-      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+      href: procurement/purchase-order-mobile-workspace.md
     - name: Record the receipt of goods on the purchase order
-      href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+      href: tasks/record-receipt-goods-purchase-order.md
   - name: Purchase order creation
     items:
     - name: Create purchase orders manually
-      href: ../supply-chain/procurement/purchase-order-creation.md
+      href: procurement/purchase-order-creation.md
     - name: Create a purchase order
-      href: ../supply-chain/procurement/tasks/create-purchase-order.md
+      href: procurement/tasks/create-purchase-order.md
     - name: Create a purchase order with a delivery schedule
-      href: ../supply-chain/procurement/tasks/create-purchase-order-delivery-schedule.md
+      href: procurement/tasks/create-purchase-order-delivery-schedule.md
     - name: Create a purchase order for a one-time supplier
-      href: ../supply-chain/procurement/tasks/create-purchase-order-one-time-supplier.md
+      href: procurement/tasks/create-purchase-order-one-time-supplier.md
     - name: Create a purchase release order when creating the purchase order
-      href: ../supply-chain/procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+      href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
     - name: Create a purchase release order from a purchase agreement
-      href: ../supply-chain/procurement/tasks/create-purchase-release-order-purchase-agreement.md
+      href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
     - name: Create a purchase return order
-      href: ../supply-chain/procurement/tasks/create-purchase-return-order.md
+      href: procurement/tasks/create-purchase-return-order.md
     - name: Create project purchase order
-      href: ../supply-chain/procurement/tasks/create-project-purchase-order.md
+      href: procurement/tasks/create-project-purchase-order.md
     - name: Create a repeat purchase order
-      href: ../supply-chain/procurement/tasks/create-repeat-purchase-order.md
+      href: procurement/tasks/create-repeat-purchase-order.md
     - name: Create a requisition for consumption
-      href: ../supply-chain/procurement/tasks/create-requisition-consumption.md
+      href: procurement/tasks/create-requisition-consumption.md
   - name: Prices, discounts, and rebates
     items:
     - name: Purchase agreements
-      href: ../supply-chain/procurement/purchase-agreements.md
+      href: procurement/purchase-agreements.md
     - name: Create a purchase agreement
-      href: ../supply-chain/procurement/tasks/create-purchase-agreement.md
+      href: procurement/tasks/create-purchase-agreement.md
     - name: Vendor rebates
-      href: ../supply-chain/procurement/vendor-rebates.md
+      href: procurement/vendor-rebates.md
   - name: Purchasing policies
     items:
     - name: Purchasing policies overview
-      href: ../supply-chain/procurement/purchase-policies.md
+      href: procurement/purchase-policies.md
     - name: Create purchasing policies
-      href: ../supply-chain/procurement/tasks/create-purchasing-policies.md
+      href: procurement/tasks/create-purchasing-policies.md
     - name: Set up policies for procurement category hierarchies
-      href: ../supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+      href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
   - name: Product receipts and invoicing
     items:
     - name: Product receipt against purchase orders
-      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+      href: procurement/product-receipt-against-purchase-orders.md
     - name: Overview of vendor invoices
-      href: ../financials/accounts-payable/vendor-invoices-overview.md
+      href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/supply-chain/toc.json
   - name: Vendor management and collaboration
     items:
     - name: Set up and maintain vendor collaboration
-      href: ../supply-chain/procurement/set-up-maintain-vendor-collaboration.md
+      href: procurement/set-up-maintain-vendor-collaboration.md
     - name: Manage vendor collaboration users
-      href: ../supply-chain/procurement/manage-vendor-collaboration-users.md
+      href: procurement/manage-vendor-collaboration-users.md
     - name: Set up vendor accounts
-       href: ../supply-chain/procurement/set-up-vendor-accounts.md
+       href: procurement/set-up-vendor-accounts.md
     - name: Create a vendor account
-      href: ../supply-chain/procurement/tasks/create-vendor-account.md
+      href: procurement/tasks/create-vendor-account.md
     - name: Create a vendor bank account
-      href: ../supply-chain/procurement/tasks/create-vendor-bank-account.md
+      href: procurement/tasks/create-vendor-bank-account.md
     - name: Vendor posting profiles
-      href: ../financials/accounts-payable/vendor-posting-profiles.md
+      href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/supply-chain/toc.json
     - name: Vendor request configurations
-      href: ../supply-chain/procurement/vendor-request-configurations.md
+      href: procurement/vendor-request-configurations.md
     - name: Vendor onboarding
-      href: ../supply-chain/procurement/vendor-onboarding.md
+      href: procurement/vendor-onboarding.md
     - name: Vendor collaboration with external vendors
-      href: ../supply-chain/procurement/vendor-collaboration-work-external-vendors.md
+      href: procurement/vendor-collaboration-work-external-vendors.md
     - name: Vendor collaboration with customers
-      href: ../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+      href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
     - name: Import vendor catalogs
-      href: ../supply-chain/procurement/vendor-catalogs-import.md
+      href: procurement/vendor-catalogs-import.md
     - name: Set up an external catalog for PunchOut eProcurement
-      href: ../supply-chain/procurement/set-up-external-catalog-for-punchout.md
+      href: procurement/set-up-external-catalog-for-punchout.md
     - name: Use external catalogs for PunchOut eProcurement
-      href: ../supply-chain/procurement/use-external-catalogs-for-punchout.md
+      href: procurement/use-external-catalogs-for-punchout.md
     - name: Vendor collaboration mobile workspace
-      href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
+      href: procurement/vendor-collaboration-mobile-workspace.md
     - name: Approve vendors for specific procurement categories
-      href: ../supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories.md
+      href: procurement/tasks/approve-vendors-specific-procurement-categories.md
     - name: Approve vendors for specific products
-      href: ../supply-chain/procurement/tasks/approve-vendors-specific-products.md
+      href: procurement/tasks/approve-vendors-specific-products.md
     - name: Search for vendors
-      href: ../supply-chain/procurement/tasks/search-vendors.md
+      href: procurement/tasks/search-vendors.md
     - name: Set up permissions for ordering products on behalf of someone else
-      href: ../supply-chain/procurement/tasks/set-up-permissions-ordering-products.md
+      href: procurement/tasks/set-up-permissions-ordering-products.md
   - name: Procurement and sourcing tasks
     items:
     - name: Set up project resource information
-      href: ../supply-chain/procurement/tasks/set-up-project-resource-information.md
+      href: procurement/tasks/set-up-project-resource-information.md
     - name: Submit and approve project budgets
-      href: ../supply-chain/procurement/tasks/submit-approve-project-budget.md
+      href: procurement/tasks/submit-approve-project-budget.md
     - name: Submit and approve project budget revisions
-      href: ../supply-chain/procurement/tasks/submit-approve-project-budget-revision.md
+      href: procurement/tasks/submit-approve-project-budget-revision.md
   - name: Product information management
     items:
   - name: Production control
