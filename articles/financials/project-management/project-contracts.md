@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project contracts
-description: This topic provides examples of the project contracts that you can create for various types of projects and funding sources, and how you can manage contracts and invoice project customers in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides examples of the project contracts that you can create for various types of projects and funding sources, and how you can manage contracts and invoice project customers.
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
