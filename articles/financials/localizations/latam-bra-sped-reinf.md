@@ -49,8 +49,6 @@ Microsoft Dynamics supports the generation of SPED-Reinf events through the **Fi
 -   Supported versions: Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365
     for Finance and Operations.
 
--   Microsoft Dynamics AX 2009 fiscal books integration isn't supported.
-
 -   Electronic power of attorney (procuração eletronica) isn't supported.
 
 **Table of events**
