@@ -49,7 +49,7 @@ To ensure the SSL is set up for a custom domain and your statics (JS or CSS file
 
 Any CDN service can be used. 
 
-<u>Example CDN Services</u>: 
+<u>**Example CDN Services**</u>: 
 
 **Azure Front Door**- Azure's CDN solution available. For more information on Azure Front Door, please see details at https://docs.microsoft.com/en-us/azure/frontdoor/ .
 
