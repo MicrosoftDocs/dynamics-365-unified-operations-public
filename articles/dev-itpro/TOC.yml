@@ -1066,12 +1066,6 @@
         href: financial/create-exchange-rate-8.md
     - name: Settle transactions using CustTrans::settleTransaction
       href: financial/settletransact-obsolete.md
-  - name: Supply chain development
-    items:
-    - name: Gantt control development guide
-      href: user-interface/gantt-development-guide.md
-    - name: Create a new transportation management engine
-      href: ../supply-chain/transportation/create-new-transportation-management-engine.md
   - name: Deployment
     items:
     - name: Deploy demo environments
@@ -1480,3 +1474,10 @@
       href: lifecycle-services/cloud-operations-servicing.md
     - name: Manage Finance and Operations support experiences
       href: lifecycle-services/cloud-powered-support-lcs.md
+  - name: Supply chain development
+    items:
+    - name: Gantt control development guide
+      href: user-interface/gantt-development-guide.md
+    - name: Create a new transportation management engine
+      href: ../supply-chain/transportation/create-new-transportation-management-engine.md
+
