@@ -299,7 +299,7 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 
 ### Import the modified ER model mapping configuration from RCS into the application
 
-Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration into Finance and Operations.
+Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration.
 
 ## Run the modified ER solution to trace execution
 
@@ -311,7 +311,7 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 ### Export the generated trace from the application
 
-Repeat the steps in the [Export the generated trace from Finance and Operations](#export-trace) section earlier in this topic to save a new performance trace locally.
+Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this topic to save a new performance trace locally.
 
 ### Import the generated trace into RCS
 
@@ -335,7 +335,7 @@ Notice that the number of calls to the LedgerTransTypeList data source has been 
 
 In addition to RCS, some versions might offer capabilities for an ER framework designer experience. These versions have an **Enable design mode** option that can be turned on. You can find this option on the **General** tab of the **Electronic reporting parameters** page, which you can open from the **Electronic reporting** workspace.
 
-![Enable design mode option on the Electronic reporting parameters page in Finance and Operations](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Enable design mode option on the Electronic reporting parameters page](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 If you use one of these versions, you can analyze the details of generated performance traces directly in the application. You don't have to export them from the application and import them into RCS.
 
@@ -369,7 +369,7 @@ Because of improvements that have been made to the ER framework, the performance
     - Set the **Collect query statistics** option to **Yes**.
     - Set the **Trace query** option to **Yes**.
 
-    ![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![User parameters dialog box](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### Run the ER format
 
