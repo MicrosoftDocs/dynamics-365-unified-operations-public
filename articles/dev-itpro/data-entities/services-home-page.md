@@ -97,9 +97,9 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
  > [!IMPORTANT]
  > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive an Azure AD token.
 
-### Register your external application in Finance and Operations
+### Register your external application 
 
-1. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**.
+1. In the application, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
