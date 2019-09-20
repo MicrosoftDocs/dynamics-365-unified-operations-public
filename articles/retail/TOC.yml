@@ -1,211 +1,211 @@
 - name: Dynamics 365 Retail
   items: 
-  - name: Dynamics 365 Retail documentation
-    href: index.md
-  - name: Get started
+- name: Dynamics 365 Retail documentation
+  href: index.md
+- name: Get started
+  items:
+  - name: Before you buy
+    href: ../fin-and-ops/get-started/before-you-buy.md?toc=/retail/toc.json
+  - name: Sign up for preview subscription
+    href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+  - name: One Version service updates 
     items:
-    - name: Before you buy
-      href: ../fin-and-ops/get-started/before-you-buy.md?toc=/retail/toc.json
-    - name: Sign up for preview subscription
-      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
-    - name: One Version service updates 
+    - name: One Version service updates overview
+      href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/retail/toc.json
+    - name: One Version service updates FAQ
+      href: ../fin-and-ops/get-started/one-version.md?toc=/retail/toc.json
+    - name: Software lifecycle policy - Cloud
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/retail/toc.json
+    - name: Software lifecycle policy - On-premises
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/retail/toc.json
+    - name: Service update availability
+      href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/retail/toc.json
+    - name: Apply updates to cloud environments
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Configure service updates
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/retail/toc.json
+    - name: Pause service updates
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/retail/toc.json
+    - name: Get notified about service updates
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/retail/toc.json
+    - name: Data task automation
+      href: ../dev-itpro/data-entities/data-task-automation.md?toc=/retail/toc.json
+    - name: Delivering ISV solutions using One Version
+      href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/retail/toc.json
+    - name: Create and automate user acceptance tests
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/retail/toc.json   
+  - name: Deploy a demo environment
+    href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+  - name: Deployment considerations
+    items:
+    - name: Deployment options
+      href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/retail/toc.json
+    - name: Cloud deployment
+      href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/retail/toc.json
+    - name: System requirements for cloud deployments
+      href: get-started/system-requirements.md?toc=/retail/toc.json
+    - name: On-premises deployment
+      href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/retail/toc.json
+    - name: System requirements for on-premises deployments
+      href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/retail/toc.json
+    - name: Buy Finance + Operations (on-premises)
+      href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/retail/toc.json
+    - name: Finance and Operations operated by 21Vianet in China
+      href: ../dev-itpro/deployment/china-local-deployment.md?toc=/retail/toc.json
+    - name: Finance and Operations in France
+      href: ../dev-itpro/deployment/france-local-deployment.md?toc=/retail/toc.json
+  - name: What's new or changed
+    items:
+    - name: What's new or changed in Retail home page
+      href: get-started/whats-new.md
+    - name: Preview features in Retail 10.0.6
+      href: get-started/whats-new-10-0-6.md
+    - name: Retail 10.0.5
+      href: get-started/whats-new-10-0-5.md
+    - name: Retail 10.0.3
+      href: get-started/whats-new-10-0-3.md
+    - name: Retail 10.0.2
+      href: get-started/whats-new-10-0-2.md
+    - name: Retail 10.0.1
+      href: get-started/whats-new-10-0-1.md
+    - name: Retail (April 2019)
+      href: get-started/april-whats-new.md
+    - name: What's new or changed in previous versions
       items:
-      - name: One Version service updates overview
-        href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/retail/toc.json
-      - name: One Version service updates FAQ
-        href: ../fin-and-ops/get-started/one-version.md?toc=/retail/toc.json
-      - name: Software lifecycle policy - Cloud
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/retail/toc.json
-      - name: Software lifecycle policy - On-premises
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/retail/toc.json
-      - name: Service update availability
-        href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/retail/toc.json
-      - name: Apply updates to cloud environments
-        href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
-      - name: Configure service updates
-        href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/retail/toc.json
-      - name: Pause service updates
-        href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/retail/toc.json
-      - name: Get notified about service updates
-        href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/retail/toc.json
-      - name: Data task automation
-        href: ../dev-itpro/data-entities/data-task-automation.md?toc=/retail/toc.json
-      - name: Delivering ISV solutions using One Version
-        href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/retail/toc.json
-      - name: Create and automate user acceptance tests
-        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/retail/toc.json   
-    - name: Deploy a demo environment
-      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
-    - name: Deployment considerations
+      - name: What's new or changed in Finance and Operations home page
+        href: ../fin-and-ops/get-started/whats-new-changed.md
+      - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+        href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/retail/toc.json
+      - name: Finance and Operations 10.0.5 (October 2019)
+        href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/retail/toc.json
+      - name: Finance and Operations 10.0.4 (July 2019)
+        href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/retail/toc.json
+      - name: Finance and Operations, Enterprise edition 7.3
+        href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/retail/toc.json
+    - name: Removed or deprecated features
       items:
-      - name: Deployment options
-        href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/retail/toc.json
-      - name: Cloud deployment
-        href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/retail/toc.json
-      - name: System requirements for cloud deployments
-        href: get-started/system-requirements.md?toc=/retail/toc.json
-      - name: On-premises deployment
-        href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/retail/toc.json
-      - name: System requirements for on-premises deployments
-        href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/retail/toc.json
-      - name: Buy Finance + Operations (on-premises)
-        href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/retail/toc.json
-      - name: Finance and Operations operated by 21Vianet in China
-        href: ../dev-itpro/deployment/china-local-deployment.md?toc=/retail/toc.json
-      - name: Finance and Operations in France
-        href: ../dev-itpro/deployment/france-local-deployment.md?toc=/retail/toc.json
-    - name: What's new or changed
-      items:
-      - name: What's new or changed in Retail home page
-        href: get-started/whats-new.md
-      - name: Preview features in Retail 10.0.6
-        href: get-started/whats-new-10-0-6.md
-      - name: Retail 10.0.5
-        href: get-started/whats-new-10-0-5.md
-      - name: Retail 10.0.3
-        href: get-started/whats-new-10-0-3.md
-      - name: Retail 10.0.2
-        href: get-started/whats-new-10-0-2.md
-      - name: Retail 10.0.1
-        href: get-started/whats-new-10-0-1.md
-      - name: Retail (April 2019)
-        href: get-started/april-whats-new.md
-      - name: What's new or changed in previous versions
-        items:
-        - name: What's new or changed in Finance and Operations home page
-          href: ../fin-and-ops/get-started/whats-new-changed.md
-        - name: Preview features in Finance and Operations 10.0.6 (November 2019)
-          href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/retail/toc.json
-        - name: Finance and Operations 10.0.5 (October 2019)
-          href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/retail/toc.json
-        - name: Finance and Operations 10.0.4 (July 2019)
-          href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/retail/toc.json
-        - name: Finance and Operations, Enterprise edition 7.3
-          href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/retail/toc.json
-      - name: Removed or deprecated features
-        items:
-        - name: Removed or deprecated features in Finance and Operations
-          href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/retail/toc.json
-      - name: AX 2012 features that were postponed
-        href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/retail/toc.json
-      - name: Features not implemented in on-premises deployments
-        href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/retail/toc.json
-      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/retail/toc.json
-    - name: Documentation resources
-      items:
-      - name: Help system
-        href: ../fin-and-ops/get-started/help-overview.md?toc=/retail/toc.json
-      - name: Connect the Help system
-        href: ../fin-and-ops/get-started/help-connect.md?toc=/retail/toc.json
-      - name: Connect a custom help site
-        href: ../fin-and-ops/get-started/help-custom.md?toc=/retail/toc.json    
-      - name: View and export field descriptions
-        href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/retail/toc.json
-      - name: Task Recorder
-        href: ../dev-itpro/user-interface/task-recorder.md?toc=/retail/toc.json
-      - name: Create documentation or training with Task Recorder
-        href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/retail/toc.json
-      - name: Videos for Finance and Operations
-        href: ../fin-and-ops/get-started/videos.md?toc=/retail/toc.json
-      - name: Glossary
-        href: ../fin-and-ops/get-started/glossary.md?toc=/retail/toc.json
-    - name: Learning catalog
-      items: 
-      - name: Learning catalog home page
-        href: ../fin-and-ops/get-started/learning-catalog.md?toc=/retail/toc.json
-      - name: Business decision makers
-        href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/retail/toc.json
-      - name: Business users
-        href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/retail/toc.json
-      - name: Implementation project managers
-        href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/retail/toc.json
-      - name: Administrators
-        href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/retail/toc.json
-      - name: Developers
-        href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/retail/toc.json
-      - name: Partner sales and marketing
-        href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/retail/toc.json
-      - name: Functional consultants
-        href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/retail/toc.json
-      - name: Solution architects
-        href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/retail/toc.json
-    - name: Explore the user interface
-      items:
-      - name: User interface elements
-        href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/retail/toc.json
-      - name: Accessibility features
-        href: ../fin-and-ops/get-started/accessibility-features.md?toc=/retail/toc.json
-      - name: Feature management overview
-        href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/retail/toc.json
-      - name: Client FAQ
-        href: ../fin-and-ops/get-started/client-faq.md?toc=/retail/toc.json
-      - name: Action search
-        href: ../fin-and-ops/get-started/action-search.md?toc=/retail/toc.json
-      - name: Advanced filtering and query syntax
-        href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/retail/toc.json
-      - name: Configure and filter workspaces
-        href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/retail/toc.json
-      - name: Show pages side by side by using the Open in new window feature
-        href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/retail/toc.json
-      - name: Keyboard shortcuts
-        href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/retail/toc.json
-      - name: Change the banners or logo images for legal entities
-        href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/retail/toc.json
-      - name: Navigation search
-        href: ../fin-and-ops/get-started/navigation-search.md?toc=/retail/toc.json
-      - name: Personalize the user experience
-        href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/retail/toc.json
-      - name: Saved views
-        href: ../fin-and-ops/get-started/saved-views.md?toc=/retail/toc.json
-      - name: Create and work with custom fields
-        href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/retail/toc.json
-      - name: Embed PowerApps apps
-        href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/retail/toc.json
-      - name: Find information by using lookups
-        href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/retail/toc.json
-      - name: Change the date for a session
-        href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/retail/toc.json
-      - name: Set a user's preferred time zone
-        href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/retail/toc.json
-      - name: Understand Lifecycle Services
-        href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/retail/toc.json
-    - name: Implementation lifecycle management
-      items:
-      - name: Implementation lifecycle management home page
-        href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/retail/toc.json
-      - name: Finance and Operations architecture
-        href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/retail/toc.json
-      - name: Microsoft FastTrack for Finance and Operations
-        href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/retail/toc.json
-      - name: Onboard an implementation project
-        href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/retail/toc.json
-      - name: Environment planning
-        href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/retail/toc.json   
-      - name: Prepare for go-live
-        href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/retail/toc.json
-      - name: Go-live FAQ
-        href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/retail/toc.json
-      - name: Submit a service request
-        href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/retail/toc.json
-      - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-        href: ../fin-and-ops/get-started/subscription-overview.md?toc=/retail/toc.json    
-      - name: Move environments between data centers
-        href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/retail/toc.json      
-      - name: Move licenses between agreement types
-        href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/retail/toc.json 
-      - name: Move LCS implementation projects to different Azure AD tenants
-        href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/retail/toc.json 
-      - name: Multiple LCS projects and production environments on one Azure AD tenant
-        href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/retail/toc.json  
-      - name: Implement Finance and Operations Retail projects
-        href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-      - name: Set up new environments, Azure DevOps, and branches for Retail projects
-        href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-      - name: Update code and environments for Retail projects
-        href: dev-itpro/updating-environments.md
-      - name: Testing and performance issues
-        href: dev-itpro/retail-implementation-testing-performance.md   
+      - name: Removed or deprecated features in Finance and Operations
+        href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/retail/toc.json
+    - name: AX 2012 features that were postponed
+      href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/retail/toc.json
+    - name: Features not implemented in on-premises deployments
+      href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/retail/toc.json
+    - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+      href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/retail/toc.json
+  - name: Documentation resources
+    items:
+    - name: Help system
+      href: ../fin-and-ops/get-started/help-overview.md?toc=/retail/toc.json
+    - name: Connect the Help system
+      href: ../fin-and-ops/get-started/help-connect.md?toc=/retail/toc.json
+    - name: Connect a custom help site
+      href: ../fin-and-ops/get-started/help-custom.md?toc=/retail/toc.json    
+    - name: View and export field descriptions
+      href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/retail/toc.json
+    - name: Task Recorder
+      href: ../dev-itpro/user-interface/task-recorder.md?toc=/retail/toc.json
+    - name: Create documentation or training with Task Recorder
+      href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/retail/toc.json
+    - name: Videos for Finance and Operations
+      href: ../fin-and-ops/get-started/videos.md?toc=/retail/toc.json
+    - name: Glossary
+      href: ../fin-and-ops/get-started/glossary.md?toc=/retail/toc.json
+  - name: Learning catalog
+    items: 
+    - name: Learning catalog home page
+      href: ../fin-and-ops/get-started/learning-catalog.md?toc=/retail/toc.json
+    - name: Business decision makers
+      href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/retail/toc.json
+    - name: Business users
+      href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/retail/toc.json
+    - name: Implementation project managers
+      href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/retail/toc.json
+    - name: Administrators
+      href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/retail/toc.json
+    - name: Developers
+      href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/retail/toc.json
+    - name: Partner sales and marketing
+      href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/retail/toc.json
+    - name: Functional consultants
+      href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/retail/toc.json
+    - name: Solution architects
+      href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/retail/toc.json
+  - name: Explore the user interface
+    items:
+    - name: User interface elements
+      href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/retail/toc.json
+    - name: Accessibility features
+      href: ../fin-and-ops/get-started/accessibility-features.md?toc=/retail/toc.json
+    - name: Feature management overview
+      href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/retail/toc.json
+    - name: Client FAQ
+      href: ../fin-and-ops/get-started/client-faq.md?toc=/retail/toc.json
+    - name: Action search
+      href: ../fin-and-ops/get-started/action-search.md?toc=/retail/toc.json
+    - name: Advanced filtering and query syntax
+      href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/retail/toc.json
+    - name: Configure and filter workspaces
+      href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/retail/toc.json
+    - name: Show pages side by side by using the Open in new window feature
+      href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/retail/toc.json
+    - name: Keyboard shortcuts
+      href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/retail/toc.json
+    - name: Change the banners or logo images for legal entities
+      href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/retail/toc.json
+    - name: Navigation search
+      href: ../fin-and-ops/get-started/navigation-search.md?toc=/retail/toc.json
+    - name: Personalize the user experience
+      href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/retail/toc.json
+    - name: Saved views
+      href: ../fin-and-ops/get-started/saved-views.md?toc=/retail/toc.json
+    - name: Create and work with custom fields
+      href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/retail/toc.json
+    - name: Embed PowerApps apps
+      href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/retail/toc.json
+    - name: Find information by using lookups
+      href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/retail/toc.json
+    - name: Change the date for a session
+      href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/retail/toc.json
+    - name: Set a user's preferred time zone
+      href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/retail/toc.json
+    - name: Understand Lifecycle Services
+      href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/retail/toc.json
+  - name: Implementation lifecycle management
+    items:
+    - name: Implementation lifecycle management home page
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/retail/toc.json
+    - name: Finance and Operations architecture
+      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/retail/toc.json
+    - name: Microsoft FastTrack for Finance and Operations
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/retail/toc.json
+    - name: Onboard an implementation project
+      href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/retail/toc.json
+    - name: Environment planning
+      href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/retail/toc.json   
+    - name: Prepare for go-live
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/retail/toc.json
+    - name: Go-live FAQ
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/retail/toc.json
+    - name: Submit a service request
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/retail/toc.json
+    - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+      href: ../fin-and-ops/get-started/subscription-overview.md?toc=/retail/toc.json    
+    - name: Move environments between data centers
+      href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/retail/toc.json      
+    - name: Move licenses between agreement types
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/retail/toc.json 
+    - name: Move LCS implementation projects to different Azure AD tenants
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/retail/toc.json 
+    - name: Multiple LCS projects and production environments on one Azure AD tenant
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/retail/toc.json  
+    - name: Implement Finance and Operations Retail projects
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+    - name: Set up new environments, Azure DevOps, and branches for Retail projects
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+    - name: Update code and environments for Retail projects
+      href: dev-itpro/updating-environments.md
+    - name: Testing and performance issues
+      href: dev-itpro/retail-implementation-testing-performance.md   
 - name: Distributed order management (DOM)
   items:
   - name: DOM overview
