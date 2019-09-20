@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting guide for data integration
-description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 Finance and Common Data Service.
+description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 Finance and Operations apps and the Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/25/2019
