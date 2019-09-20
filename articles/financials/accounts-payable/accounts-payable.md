@@ -143,7 +143,7 @@ The [Microsoft Dynamics Operations Partner Community Blog](https://community.dyn
 [How to manage payables in Dynamics 365 Finance](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+Additional help is available as task guides inside the application. To access task guides, click the Help button on any page.
 
 #### Videos
 
