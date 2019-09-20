@@ -48,15 +48,14 @@ For all the slots within the Category Page fill out the modules you’d like you
       1. *Collection Choice Summary* provides easy UI for managing active refiners. Choice summary by collection shows choices in a summary format for a product collection and refined by choices in a refine menu.
       1. *Collection Title* allows author to provide a contextual title for list page.
    1. *Sorting Modules Slot* contains the sorting dropdown (sort-by-collection module)  
-   1. *Products Slot* contains the product list module (product-search-result)
-   ![Product slot - product search result - Category and search results](./media/Category_page_body_productsSlot_searchresults.png)
-   
-   And user can control following properties for look and feel of the product tiles 
+   1. *Products Slot* contains the product list module (product-search-result). And user can control following properties for look and feel of the product tiles 
       1. Size of the heading 
       1. View products as cards or plain using 'Card layout of the module' settings
       1. Number of items to be displayed per page
       1. Show/hide product description, product price, product ratings
       1. Image quality 
+   ![Product slot - product search result - Category and search results](./media/Category_page_body_productsSlot_searchresults.png) 
+   
    > **Note**: All of the aforementioned modules should be authorable by following supporting self-explanatory tooltips for every configuration in the tools.  
 
 Once you are happy with the template, Check-in and publish the template. Then we have to create both a Search Page and a Category Page based on these templates. 
