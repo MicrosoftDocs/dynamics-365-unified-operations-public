@@ -5,7 +5,7 @@ title: Hardware sizing requirements for on-premises environments
 description: This topic lists the hardware sizing requirements for an on-premises environment.
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
