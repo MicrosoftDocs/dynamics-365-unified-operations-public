@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Azure Event Grid
-description: This topics provides information about the business events that are available for consumption in Azure Event Grid via the Finance and Operations connector.
+description: This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 08/13/2019
