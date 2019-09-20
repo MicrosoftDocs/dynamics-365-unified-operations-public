@@ -5,7 +5,7 @@ title: Demo data overview
 description: This topic provides an overview of the demo data.
 author: sericks007
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
