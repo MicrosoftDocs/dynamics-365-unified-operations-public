@@ -2504,7 +2504,7 @@
       - name: Create open-ended questions
         href: hr/tasks/create-open-ended-question.md
       - name: Create closed-ended questions
-        href: hr/tasks/create-closed-ended-question.md
+        href: ../fin-and-ops/hr/tasks/create-closed-ended-question.md
       - name: Make questions dependent on the answer of the previous question
         href: hr/tasks/make-question-dependent-answer-previous-question.md
     - name: Workplace safety and compliance (United States)
