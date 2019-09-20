@@ -36,13 +36,13 @@ Organizations that want to streamline their Accounts payable (AP) processes ofte
 
 ## Solution context
 
-The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed into Finance and Operations for automatic processing of invoices and attachments.
+The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed for automatic processing of invoices and attachments.
 
-The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that Finance and Operations can consume them.
+The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.
 
 ![Sample integration scenario](media/vendor_invoice_automation_01.png)
 
-Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments in Finance and Operations.
+Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments.
 
 ### Solution components
 
@@ -56,7 +56,7 @@ The rest of this topic provides detailed descriptions of these solution componen
 
 ## Data entities
 
-A data package is the unit of work that must be sent to Finance and Operations, so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:
+A data package is the unit of work that must be sent so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:
 
 + Vendor invoice header
 + Vendor invoice line
@@ -68,7 +68,7 @@ This topic doesn’t give a detailed definition of a data package. It also doesn
 
 To quickly generate test data that includes invoices and attachments, follow these steps.
 
-1. Sign in to your Finance and Operations instance.
+1. Sign in to your instance.
 1. Go to **Accounts payables** > **Invoices** > **Pending vendor invoices**.
 1. Create invoices that have lines and attachments.
 
