@@ -1265,6 +1265,8 @@
           href: ../financials/general-ledger/round-sales-tax-payments.md
         - name: Sales tax calculation methods in the Origin field
           href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+        - name: Sales tax calculation on general jounal lines
+          href: ../financials/general-ledger/sales-tax-calculation-on-general-journal.md          
         - name: Whole amount and interval calculation options for sales tax codes
           href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
         - name: Calculate and adjust sales tax on a vendor invoice
