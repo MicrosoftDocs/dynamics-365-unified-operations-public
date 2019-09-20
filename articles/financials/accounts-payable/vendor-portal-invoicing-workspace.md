@@ -46,9 +46,9 @@ Vendor collaboration invoicing workspace
 
 The **Summary** tiles give an overview of the invoices for the selected vendor. You can view invoices by their state.
 -   Draft invoices have not been submitted to workflow.
--   Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in Finance and Operations.
--   Approved, not paid invoices are those that have been posted in Finance and Operations, but they have not yet been fully paid.
--   Paid invoices are those that have been fully paid in Finance and Operations.
+-   Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in the application.
+-   Approved, not paid invoices are those that have been posted, but they have not yet been fully paid.
+-   Paid invoices are those that have been fully paid in the application.
 
 Clicking on a tile will open a filtered view of the **Invoices list** page.
 
