@@ -5,7 +5,7 @@
   - name: Get started
     items:
     - name: Before you buy
-      href: ../../get-started/before-you-buy.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/before-you-buy.md?toc=/supply-chain/toc.json
     - name: Sign up for preview subscription
       href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/supply-chain/toc.json
     - name: One Version service updates 
