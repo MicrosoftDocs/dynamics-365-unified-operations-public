@@ -14,6 +14,8 @@
     items:
     - name: Manage users and roles
       href: manage-ecommerce-users-roles.md
+    - name: Add script code to site pages to support telemetry
+      href: add-telemetry.md
   - name: Brand your site and add store details
     items:
     - name: Select a site theme
