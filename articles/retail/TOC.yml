@@ -608,8 +608,6 @@
       href: dev-itpro/view-pos-extension-package-details.md
     - name: Test recorder and Regression suite automation tool for Retail Cloud POS
       href: dev-itpro/pos-rsat.md
-    - name: Sign MPOS with code signing certificate
-      href: dev-itpro/pos-app-signing-certificate.md
   - name: Hardware Station and extensibility
     href: dev-itpro/hardware-station-extensibility.md
   - name: Integrate POS with a new hardware device
@@ -716,6 +714,8 @@
       href: dev-itpro/pos-control-non-screen.md
     - name: Development in cloud-hosted dev environments without admin access
       href: dev-itpro/cloud-dev-box.md
+    - name: Sign MPOS with code signing certificate
+      href: dev-itpro/pos-app-signing-certificate.md
   - name: Commerce runtime
     items:
     - name: Loyalty extension
