@@ -838,6 +838,237 @@
         href: pim/tasks/transfer-data-product-models.md
 - name: Production control
   items:
+  - name: Production process overview
+    href: production-control/production-process-overview.md
+  - name: 'Mixed mode planning: Combine discrete, process, and lean sourcing'
+    href: production-control/mixed-mode-plan.md
+  - name: Manage subcontracting work in production
+    href: production-control/manage-subcontract-work-production.md
+  - name: Discrete manufacturing
+    items:
+    - name: Maintain production master data
+      items:
+      - name: Production setup requirements
+        href: production-control/production-set-up-requirements.md
+      - name: Bills of materials and formulas
+        href: production-control/bill-of-material-bom.md
+      - name: BOM designer functionality
+        href: production-control/bom-designer-functionality.md
+      - name: Phantom items
+        href: production-control/phantom-items.md
+      - name: BOM calculations
+        href: cost-management/bom-calculations.md
+      - name: Manage unit of measure
+        href: pim/tasks/manage-unit-measure.md
+      - name: Production parameters in Manufacturing execution
+        href: production-control/production-parameters-manufacturing-execution.md
+      - name: Operations resources
+        href: production-control/operations-resources.md
+      - name: Create an operations resource
+        href: production-control/tasks/create-operations-resource.md
+      - name: Resource capabilities
+        href: production-control/resource-capabilities.md
+      - name: Define resource capabilities
+        href: production-control/tasks/define-resource-capabilities.md
+      - name: Routes and operations
+        href: production-control/routes-operations.md
+      - name: Warehouse work policies
+        href: warehousing/warehouse-work-policies.md
+      - name: Create working time scheduling properties
+        href: production-control/tasks/create-working-time-scheduling-properties.md
+      - name: Create working time templates
+        href: production-control/tasks/create-working-time-templates.md
+      - name: Define discrete manufacturing resource group
+        href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+      - name: Add an existing activity to a production flow version
+        href: production-control/tasks/add-existing-activity-production-flow-version.md
+      - name: Deactivate a production flow version
+        href: production-control/tasks/deactivate-production-flow-version.md
+      - name: Define an expiry date for a production flow version
+        href: production-control/tasks/define-expiry-date-production-flow-version.md
+      - name: Define production flow models
+        href: production-control/tasks/define-production-flow-models.md
+    - name: Schedule production operations
+      items:
+      - name: Operations scheduling
+        href: production-control/operations-scheduling.md
+      - name: Job scheduling
+        href: production-control/job-scheduling.md
+      - name: Gantt chart for job scheduling
+        href: production-control/visual-scheduling-production.md
+      - name: Operations scheduling options
+        href: production-control/operation-scheduling-options.md
+      - name: Schedule a production order with operations and job scheduling
+        href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+    - name: Operate production jobs
+      items:
+      - name: Manage production order lifecycle
+        items:
+        - name: Production order lifecycle overview
+          href: production-control/create-production-orders.md
+        - name: Create a production order
+          href: production-control/tasks/create-production-order.md
+        - name: Estimate a production order
+          href: production-control/tasks/estimate-production-order.md
+        - name: Schedule a production order
+          href: production-control/tasks/schedule-production-order.md
+        - name: Release a production order
+          href: production-control/tasks/release-production-order.md
+        - name: Start a production order
+          href: production-control/tasks/start-production-order.md
+        - name: Report a production order as finished
+          href: production-control/tasks/report-production-order-finished.md
+        - name: End a production order
+          href: production-control/tasks/end-production-order.md
+      - name: Release production orders
+        href: production-control/release-production-orders.md
+      - name: Report production orders as finished
+        href: production-control/report-production-orders-as-finished.md
+      - name: Report as finished to a license plate controlled location 
+        href: production-control/report-finished-job-device.md        
+      - name: Reverse the production order status
+        href: production-control/reverse-production-order-status.md
+      - name: Visibility into material exceptions
+        href: production-control/improved-visibility-into-material-exceptions.md
+      - name: Release BOM and formula lines to the warehouse
+        href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+      - name: Register material consumption using a mobile device
+        href: production-control/register-material-consumption-hand-held-device.md
+      - name: Control raw material consumption by using flushing principles
+        href: production-control/flushing-principles.md
+      - name: Cross-docking from production orders to outbound docks
+        href: production-control/cross-docking-opportunities.md
+      - name: Set the production output location for finished goods
+        href: production-control/production-output-location.md
+      - name: Report BOMs as finished
+        href: production-control/report-boms-as-finished.md
+      - name: Report as finished to a plate-controlled location
+        href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+      - name: Report progress on a mobile job device
+        href: production-control/tasks/report-progress-mobile-job-device.md
+      - name: Use the safety stock journal to update minimum coverage
+        href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+      - name: Material substitution in manufacturing
+        href: production-control/substitute-items-bom-lines.md
+      - name: Registration for manufacturing execution
+        href: production-control/registration-manufacturing-execution.md
+      - name: Production feedback
+        href: production-control/production-feedback.md
+      - name: Enable the payroll process for time and attendance
+        href: production-control/tasks/payroll-process-time-attendance.md
+      - name: Configure a worker using the mobile job device
+        href: production-control/tasks/worker-mobile-job-device.md
+    - name: Manage financials in production
+      items:
+      - name: Allocate time to jobs in a job bundle
+        href: production-control/allocate-time-jobs-job-bundle.md
+      - name: Calculate material consumption
+        href: production-control/consumption.md
+      - name: Production posting
+        href: cost-management/production-posting.md
+    - name: Time and attendance registration
+      items:
+      - name: Time and attendance registration overview
+        href: production-control/time-attendance-registrations.md
+      - name: Pay based on registrations
+        href: production-control/pay-based-on-registrations.md
+      - name: Absence registration in Time and attendance
+        href: production-control/absence-registration-in-time-and-attendance.md
+      - name: Flex groups
+        href: production-control/time-attendance-flex-groups.md
+  - name: Lean manufacturing
+    items:
+    - name: Lean manufacturing overview
+      href: production-control/lean-manufacturing-overview.md
+    - name: Activity-based subcontracting
+      href: production-control/activity-based-subcontracting.md
+    - name: Maintain production master data
+      items:
+      - name: Model a lean organization
+        href: production-control/lean-manufacturing-modeling-lean-organization.md
+      - name: Operations resources
+        href: production-control/operations-resources.md
+      - name: Define lean manufacturing work cells
+        href: production-control/tasks/define-lean-manufacturing-work-cells.md
+      - name: Define lean schedule groups
+        href: production-control/tasks/define-lean-schedule-groups.md
+    - name: Schedule kanban jobs
+      items:
+      - name: Visual scheduling for lean manufacturing
+        href: production-control/visual-scheduling-lean-manufacturing.md
+      - name: Kanban job scheduling for lean manufacturing
+        href: production-control/lean-manufacturing-kanban-job-scheduling.md
+      - name: Job scheduling
+        href: production-control/job-scheduling.md
+    - name: Operate kanban jobs
+      items:
+      - name: Kanban transfer board support for barcode scanners
+        href: production-control/kanban-transfer-board-support-barcode-scanner.md
+      - name: Production feedback
+        href: production-control/production-feedback.md
+      - name: Create a production flow version
+        href: production-control/tasks/create-production-flow-version.md
+      - name: Create process activities for lean manufacturing
+        href: production-control/tasks/create-process-activities-lean-manufacturing.md
+      - name: Create transfer activities for lean manufacturing
+        href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+      - name: Validate a production flow and version
+        href: production-control/tasks/validate-production-flow-version.md
+      - name: Activate a production flow version
+        href: production-control/tasks/activate-production-flow-version.md
+      - name: 'Create activity relation: Successor'
+        href: production-control/tasks/create-activity-relation-successor.md
+      - name: Add a predecessor to a production flow activity
+        href: production-control/tasks/add-predecessor-production-flow-activity.md
+      - name: Create a value stream
+        href: production-control/tasks/create-value-stream.md
+      - name: Lean pegging from sales orders
+        href: production-control/tasks/lean-pegging-sales-orders.md
+      - name: Create a subcontracted work cell for lean manufacturing
+        href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+      - name: Add a kanban quantity calculation policy to a kanban rule
+        href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+      - name: Calculate kanban quantity suggestions
+        href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+      - name: Change kanban rules for a process job
+        href: production-control/tasks/change-kanban-rules-process-job.md
+      - name: Create a BOM line event kanban rule
+        href: production-control/tasks/create-bom-line-event-kanban-rule.md
+      - name: Create a fixed quantity kanban rule for manufacturing
+        href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+      - name: Create a kanban rule using a kanban line event
+        href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+      - name: Create a kanban rule using a minimum stock event
+        href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+      - name: Create a kanban rule for multiple activities
+        href: production-control/tasks/create-kanban-rule-multiple-activities.md
+      - name: Create a new kanban rule by duplicating an existing kanban rule
+        href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+      - name: Create a replacement kanban rule
+        href: production-control/tasks/create-replacement-kanban-rule.md
+      - name: Create a sales event kanban rule
+        href: production-control/tasks/create-sales-event-kanban-rule.md
+      - name: Create a withdrawal kanban rule
+        href: production-control/tasks/create-withdrawal-kanban-rule.md
+      - name: Execute kanban process jobs
+        href: production-control/tasks/execute-kanban-process-jobs.md
+      - name: Move scheduled kanban jobs
+        href: production-control/tasks/move-scheduled-kanban-jobs.md
+      - name: Prepare a process kanban job when materials are available for the work cell
+        href: production-control/tasks/prepare-kanban-job-materials.md
+      - name: Prepare a process kanban job when materials are not available for the work cell
+        href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+      - name: Remove a kanban job from the schedule
+        href: production-control/tasks/remove-kanban-job-schedule.md
+      - name: Revert kanban job status
+        href: production-control/tasks/revert-kanban-job-status.md
+      - name: Schedule kanban jobs)
+        href: production-control/tasks/schedule-kanban-jobs.md
+      - name: Transfer materials with kanban jobs
+        href: production-control/tasks/transfer-materials-kanban-jobs.md
+      - name: Update kanban status
+        href: production-control/tasks/update-kanban-status.md
+ 
 - name: Sales and marketing
   items:
 - name: Service management
