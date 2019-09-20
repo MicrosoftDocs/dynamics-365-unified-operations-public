@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of the Brazilian localization
-description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil that have been implemented as part of Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 R3, and Microsoft Dynamics 365 Finance. 
+description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
 manager: AnnBe
 ms.date: 08/02/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. It's intended for channel partners and businesses using Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 R3, and Microsoft Dynamics 365 for Finance and Operations. Channel partners or businesses that use this information when they implement other versions of Microsoft Dynamics do so at their own risk.
+This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. 
 
 In general, Microsoft invests significant resources on extending the business process functionality of Finance and Operations applications, by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
 
