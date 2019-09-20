@@ -99,7 +99,7 @@ The selected field group displays the columns that are available in the template
 
 Repeat these steps to insert the **Adjustment** column. Use formula = AxTable1\[Total request\]\*$I$1 for this column. This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.
 
-Save and close the Excel file. Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan. 
+Save and close the Excel file. In **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
