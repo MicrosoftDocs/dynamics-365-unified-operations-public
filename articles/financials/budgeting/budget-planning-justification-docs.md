@@ -61,7 +61,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 ##### Set up the Budget planning process to use the Justification template
 
-1.  In Finance and Operations, go to **Budgeting** &gt; **Setup** &gt; **Budget planning** &gt; **Justification document templates**.
+1.  Go to **Budgeting** &gt; **Setup** &gt; **Budget planning** &gt; **Justification document templates**.
 2.  Click **New** and browse to your newly created Microsoft Word document.
 3.  Enter a template display name and description. Click **OK**.
 4.  Go to **Budgeting** &gt; **Setup** &gt; **Budget** **planning** &gt; **Budget planning process**.
@@ -70,7 +70,7 @@ A budget plan template is created by the budget manager in Microsoft Word and as
 
 ##### Edit and save personalized justification documents
 
-1.  In Finance and Operations, create a new budget plan or open an existing budget plan.
+1.  Create a new budget plan or open an existing budget plan.
 2.  In the **Justification** drop-down menu, select **Create new justification**.
 3.  After filling in the details, select to upload the personalized document from the **Justification** drop-down menu.
 
