@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 ---
 
-# Before you buy guidance
+# Before you buy
 
 [!include [banner](../includes/banner.md)]
 
