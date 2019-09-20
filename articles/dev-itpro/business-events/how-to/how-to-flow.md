@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Microsoft Flow
-description: This topics provides information about the business events that are available for consumption in Microsoft Flow via the Finance and Operations connector.
+description: This topics provides information about the business events that are available for consumption in Microsoft Flow using the connector.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 08/07/2019
