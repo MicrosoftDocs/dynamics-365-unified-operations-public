@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize site navigation
-description: This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Dynamics 365 Commerce site.
+description: This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
 ms.date: 10/01/2019
@@ -32,65 +32,68 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create a customized online navigation hierarchy to organize your products for browsing on your Dynamics 365 Commerce site.
+This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 
 ## Overview
 
-Online storefronts typically provide the ability for customers to discover and browse products by navigating through product categories. This capability is usually provided by tabs at the top of the page or a left navigation bar. In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products contained within those categories. 
+Online storefronts typically let customers discover and browse products by navigating through product categories. This capability is usually provided by tabs at the top of the page or by a navigation bar on the left. In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.
 
 ## Create a retail channel navigation hierarchy
 
-To create a retail channel navigation hierarchy, do the following.
+To create a retail channel navigation hierarchy, follow these steps.
 
-1. Go to **Retail > Products and categories > Category and product management**.
-1. Click **Category hierarchies**, then click **New**.
+1. Go to **Retail \> Products and categories \> Category and product management**.
+1. Select **Category hierarchies**, and then select **New**.
 1. Name the hierarchy.
-    - The topmost category you create is the root category node and will not be displayed on your site. If you wish to create a category hierarchy that has a single top-level node on your site, create and name that category as a child of the root category. 
-1. Click **New category node** and name the category. 
-1. Continue creating sibling and child categories as needed.
 
-You can now assign products to each category you created under the top-level category. 
+    > [!NOTE]
+    > The topmost category that you create is the root category node. It won't be shown on your site. To create a category hierarchy where a single top-level node is shown on your site, create and name the category as a child of the root category.
+
+1. Select **New category node**, and name the category.
+1. Continue to create sibling and child categories as you require.
+
+You can now assign products to each category that you created under the top-level category.
 
 ## Customize the order of categories
 
-By default, the categories you define will be displayed in alphabetical order on your site. However, you can also customize the display order of categories.
+By default, the categories that you define will appear in alphabetical order on your site. However, you can also customize the display order of categories.
 
 ## Assign a category hierarchy type
 
-1. Go to **Retail > Products and categories > Category and product management > Category hierarchies**.
-1. Under **SET UP** in the top menu, click **Associate hierarchy type**.
-1. Click **New**.
-1. In the dropdown in the **Category hierarchy type** column, select **Retail channel navigation hierarchy**.
-1. In the dropdown in the **Category hierarchy** column, select the channel navigation hierarchy you just created.
+1. Go to **Retail \> Products and categories \> Category and product management**.
+1. Select **Category hierarchies**.
+1. On the Action Pane, on the **Category hierarchy** tab, in the **Set up** group, select **Associate hierarchy type**.
+1. Select **New**.
+1. In the **Category hierarchy type** field, select **Retail channel navigation hierarchy**.
+1. In the **Category hierarchy** field, select the channel navigation hierarchy that you created earlier.
 
 ## Publish new or updated navigation hierarchies
 
-To make your navigation hierarchy available to your online storefront, do the following:
+To make your navigation hierarchy available to your online storefront, follow these steps.
 
-1. Go to **Retail > Channel setup > Channel categories and product attributes**.
-1. In the tree, select your online store.
-1. Click **Publish channel updates**.
-1. Go to **Retail > Retail IT > Distribution schedule**.
+1. Go to **Retail \> Channel setup \> Channel categories and product attributes**.
+1. In the tree on the left, select your online store.
+1. Select **Publish channel updates**.
+1. Go to **Retail \> Retail IT \> Distribution schedule**.
 1. In the list, find and select **Job 1040**.
-1. Click **Run now**.
-1. Repeat steps 6 and 7 for jobs 1070 and 1150.
+1. Select **Run now**.
+1. Repeat steps 5 and 6 for jobs 1070 and 1150.
 
-## Display categories on your site
+## Show categories on your site
 
-To display your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location within a template or fragment. See [Creating templates](http://) and [Creating fragments](http://) for more information. Provided that you have published your retail navigation hierarchy to the channel that your site is bound to, the Navigation menu module will display your navigation hierarchy. 
+To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment. For more information, see [Creating templates](http://) and [Creating fragments](http://). The navigation menu module will then show your navigation hierarchy, provided that you've published your retail navigation hierarchy to the channel that your site is bound to.
 
-[!NOTE]
-The navigation menu module that comes with the store starter kit will only allow users to navigate to categories that do not have subcategories. If you would like your customers to be able to navigate to categories that contain subcategories, you will need to customize the navigation menu module. 
+> [!NOTE]
+> The navigation menu module that is included in the store starter kit lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
 
 ## Add custom navigation options
 
-You can also add navigation options to your navigation menu that aren't part of your product category hierarchy. For example, you can add a Contact Us menu item at the end of the list of product categories which can point to a specific page on your site that you have built for this purpose. 
+On your navigation menu, you can add navigation options that aren't part of your product category hierarchy. For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.
 
-To add custom navigation options to your navigation menu, do the following.
+To add custom navigation options to your navigation menu, follow these steps.
 
-1. Select the navigation menu module within the template or fragment that you wish to customize.
-1. In the property panel, click the **Data** tab.
-1. Click **+Add item** to create a new CMS navigation item.
+1. In the template or fragment that you want to customize, select the navigation menu module.
+1. In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.
 1. Enter link text and a URL.
-1. Repeat steps 3 and 4 to add more custom menu items.
-1. When finished, save and check in the fragment. 
+1. Repeat steps 2 and 3 to add more custom navigation options.
+1. When you've finished, save the template or fragment, and check it in.
