@@ -38,7 +38,7 @@ This topic describes how to add a new site page in Dynamics 365 Commerce.
 
 ## Overview
 
-After you have finished with your templates and fragments, next step is to start creating pages that utilize them.
+After you have created templates and fragments for your site, the next step is to start creating pages that use them.
 
 First, you need to open the authoring tool and navigate to the site you would like to add the new page on. Make sure that "Pages" is selected from the action ribbon, no pages are selected and then proceed to activate the "New page"-button.
 
@@ -64,32 +64,26 @@ For more information on page editing, please see the following articles
 
 To add a new site page to your site, do the following.
 
-1. Locate and click **Fabrikam**-site under **Sites**
-1. Click **New Page** from the action bar
-1. In the **New Page** dialog box, select a template.
-1. Add **Page Name**, e.g. "My New Page"
-1. Add **URL**, e.g. "mynewpage"
-1. Click **OK**. You will be sent to the page editor. Notice that the page automatically gets proper headers and footers from the template
-1. From the **Page Outline**, select **Main Slot**
-1. Open the ellipsis-menu right of **Main Slot**
-1. Select **Add Module** from the menu
-1. Select **Container** and click **OK**
-1. Open the ellipsis-menu right of **Fluid Container**
-1. Select **Add Module** from the menu
-1. Choose **Content rich block** from the list and click **OK**
-1. Open the ellipsis-menu right of **Content Rich Block**
-1. Select **Add Module** from the menu
-1. Choose **Content rich block item** from the list and click **OK**
-1. From the module inspector on the right side of the screen, locate and click **Paragraph** property
-1. Type in "My test text"
-1. Click **Save** from the action bar
-1. Click **Check In** from the action bar, in the **Comments**-field write "Added new page" and click **OK**
-1. Click **Preview** from the action bar to preview your page
-1. Close the preview-tab to get back to the authoring tool
-1. Click **Publish** from the action bar
-1. Click **Fabrikam** (your site name) from the breadcrumb
-1. Click **URLs** from the menu on the left
-1. Locate your URL (mynewpage) from the list and select it
-1. Click **Publish** from the action bar
+1. Under **Sites**, click **Fabrikam** (or your site name).
+1. Click **New Page**.
+1. In the **New Page** dialog box, select a template, then click **OK**.
+1. In the **Page Name** text box, enter a page name (for example, "My New Page").
+1. In the **URL** text box, enter a string to complet the URL (for example, "mynewpage").
+1. Click **OK**. The page editor opens. Notice that the page automatically gets proper headers and footers from the template chosen.
+1. From the **Page Outline**, select **Main Slot**.
+1. Click the ellipsis button (**...**), then select **Add Module**.
+1. Select **Container**, then click **OK**
+1. Select **Fluid Container**, click the ellipsis button (**...**), then select **Add Module**.
+1. Select **Content Rich block**, then click **OK**.
+1. Select **Content Rich Block**, click the ellipsis button (**...**), then select **Add Module**. 
+1. Select **Content rich block item**, then click **OK**.
+1. On the right-side properties pane, click **Paragraph**, then in the text box enter "My test text".
+1. Click **Save**, then click **Check In**. In the **Comments** text box, enter "Added new page", then click **OK**.
+1. Click **Preview** to preview your page. When done, close the preview tab to return to the authoring tool.
+1. Click **Publish**.
+1. From the breadcrumb, click **Fabrikam** (or your site name).
+1. On the left-side navigation pane, click **URLs**.
+1. Locate your URL (mynewpage) from the list and select it.
+1. Click **Publish**.
 
 
