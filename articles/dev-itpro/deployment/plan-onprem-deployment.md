@@ -5,7 +5,7 @@ title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
