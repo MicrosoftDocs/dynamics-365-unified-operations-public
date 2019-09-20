@@ -2,7 +2,7 @@
 # required metadata
 
 title: Telemetry logger
-description: This topic covers the telemetry logger in Microsoft Dynamics 365 Commerce.
+description: This topic covers the telemetry logger in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers the telemetry logger in Microsoft Dynamics 365 Commerce.
+This topic covers the telemetry logger in Dynamics 365 Commerce.
 
 ## Overview
 
@@ -41,9 +41,9 @@ The Dynamics 365 Commerce online software development kit (SDK) includes a custo
 
 ## Access the telemetry logger
 
-By default, the telemetry logger is available to all react components. It can be accessed with the **this.props.telemetry** property from with the module view code file.
+By default, the telemetry logger is available to all react components. It can be accessed with the **this.props.telemetry** property from the module view code file.
 
-Sometimes, you will want to access the telemetry logger in a shared component instead of having to pass it down through the properties of every component in your module. The SDK repository includes a **WithContext()** utility that lets you inject the telemetry logger directly into your component.
+Sometimes you will want to access the telemetry logger in a shared component instead of having to pass it down through the properties of every component in your module. The SDK repository includes a **WithContext()** utility that lets you inject the telemetry logger directly into your component.
 
 When the telemetry logger runs in a development environment, all logs are also shown in the console.
 
