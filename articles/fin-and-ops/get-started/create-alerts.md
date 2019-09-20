@@ -5,7 +5,7 @@ title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
