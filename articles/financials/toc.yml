@@ -95,7 +95,7 @@
       - name: Glossary
         href: ../fin-and-ops/get-started/glossary.md?toc=/financials/toc.json
     - name: Learning catalog
-     items: 
+      items: 
       - name: Learning catalog home page
         href: ../fin-and-ops/get-started/learning-catalog.md?toc=/financials/toc.json
       - name: Business decision makers
