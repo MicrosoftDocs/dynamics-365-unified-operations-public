@@ -1,7 +1,5 @@
 - name: Welcome to Dynamics 365 for Retail
   href: index.md
-  - name: Dynamics 365 Supply Chain Management documentation
-    href: index.md
   - name: Get started
     items:
     - name: Before you buy
