@@ -5,7 +5,7 @@ title: In-place upgrade process for on-premises environments
 description: This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations versions 7.x to 8.1.  
 author: laneswenka
 manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
