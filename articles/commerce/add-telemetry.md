@@ -33,33 +33,33 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
+This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.
 
 ## Overview
 
-Web analytics are an essential tool for understanding how your customers interact with your site and helping you make decisions that optimize the experience for maximum conversion. There are many web analytics packages available to help you in this regard, including (but not limited to) Google Analytics, Clicky, Moz Analytics, KISSMetrics, and others. Most web analytics packages require you to add client-side script within the <head> tag of the HTML on all pages of your site. 
- 
-[!NOTE]
-These instructions are equally applicable for any other custom client-side functionality not offered natively by Dynamics 365 Commerce. 
+Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion. Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics. Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.
 
-### Create a reusable fragment to contain your script code
+> [!NOTE]
+> The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.
 
-To create a fragment for your script code that can be reused across all pages on your site, do the following.
+## Create a reusable fragment for your script code
 
-1. Go to **Fragments > New page fragment**.
-3. Select **External Script**, enter a name for the fragment and click **OK**.
-4. In the fragment hierarchy, click the **script injector** module child of the fragment you just created.
-5. Add your client-side script and make other configuration options in the property panel on the right. See the help topic for the [External Script module](http://) for information about configuring this module.  
+After you create a fragment for your script code, it can be reused across all pages on your site.
 
-### Add the fragment to your template(s)
+1. Go to **Fragments \> New page fragment**.
+2. Select **External Script**, enter a name for the fragment, and then select **OK**.
+3. In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.
+4. In the property pane on the right, add your client-side script, and set other configuration options as you require. For information about how to configure the module, see [External Script module](http://).
 
-1. Go to **Templates** and open the template for the pages to which you want to add web analytics script.
-3. Expand the template hierarchy in the left pane to expose the **HTML Head** slot.
-4. Click on the ellipsis for the HTML Head slot and click **Add fragment**.
-5. Select the fragment you created for your web analytics script.
-6. Save the template and check it in.
+## Add the fragment to templates
 
-[!NOTE]
-When done, you will need to publish the fragment and the master template. 
+1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
+2. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
+3. Select the ellipsis button (**...**) for the **HTML Head** slot, and then select **Add fragment**.
+4. Select the fragment that you created for your script code.
+5. Save the template, and check it in.
 
-For further information about adding script to master templates, see the [Add script to master templates](http://) help topic.
+> [!NOTE]
+> After you've finished, you must publish the fragment and the master template. 
+
+For more information about how to add script code to master templates, see [Add script to master templates](http://).
