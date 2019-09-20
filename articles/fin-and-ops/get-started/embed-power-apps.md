@@ -5,7 +5,7 @@ title: Embed PowerApps apps
 description: This topic describes how to embed PowerApps into the client to augment the product's functionality.
 author: jasongre
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
