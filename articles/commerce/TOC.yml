@@ -18,6 +18,8 @@
     items:
     - name: Select a site theme
       href: select-site-theme.md
+    - name: Add a favicon
+      href: add-favicon.md
   - name: Add and manage content on your site
     items:
     - name: Add a checkout module to a page
