@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 
-## View master planning progress Gantt chart
+## Gantt chart to view master planning progress
 
 From **View master planning progress,** it is possible to view details from historical master planning runs presented as a Gantt chart. This is useful to understand the time spend on the various phases of master planning. For a current active planning job **View master planning progress** can be used to track progress and view the estimated remaining time.
 
