@@ -39,21 +39,30 @@ This topic presents an overview of online site theming in Microsoft Dynamics 365
 
 Dynamics 365 Commerce lets you apply a Sassy Cascading Style Sheets (SCSS) theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and also a campaign theme that is applied only to a subset of pages on the site.
 
-After a theme is created and uploaded to your production site, authoring tools can be used to set the theme on the site in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. Therefore, all the modules on that page have a consistent look and feel.
+After a theme is created and uploaded to your production site, authoring tools can be used to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. Therefore, all the modules on that page have a consistent look and feel.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
 ![Theme selection](media/theming-1.png)
 
-A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that inherit from the master page. Note that if the "locked" property is turned off, individual pages can override the theme.
+A theme can be set on the master page in a similar manner. In this case, the theme is applied to all pages that are derived from the master page. Note that if the **locked** property is turned off, individual pages can override the theme.
 
 ## Best practices
 
 * There is no limit to the number of SCSS files that your theme can contain.
 * Your theme entry point can import other SCSS files by using relative paths.
 * Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-* If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file.
-* You can optionally import the **react-ts-strap-default-theme**, which addresses accessibility issues with Bootstrap 4.
+* If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in a scss file:
+
+```
+$fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
+@import "bootstrap/scss/bootstrap";
+body {
+    background: $brand-primary;
+    color: $brand-secondary;
+}
+...
+```
 
 ## Consume SCSS files that are distributed by using Node Package Manager
 
