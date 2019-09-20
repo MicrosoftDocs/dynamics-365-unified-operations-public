@@ -182,6 +182,20 @@
         href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/supply-chain/toc.json 
       - name: Multiple LCS projects and production environments on one Azure AD tenant
         href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/supply-chain/toc.json
+  - name: Globalization
+    items:
+    - name: Globalization resources
+      href: ../dev-itpro/lcs-solutions/country-region.md?toc=/supply-chain/toc.json
+    - name: Regulatory updates
+      href: ../financials/localizations/regulatory-updates.md?toc=/supply-chain/toc.json
+    - name: Russia
+      items: 
+      - name: Russia overview
+        href: ../financials/localizations/russia.md?toc=/supply-chain/toc.json
+      - name: Inventory
+        items: 
+        - name: Goods in transit from vendor
+          href: ../financials/localizations/rus-goods-transit-vendor.md?toc=/supply-chain/toc.json
   - name: Cost accounting
     items:
     - name: Cost accounting home page
