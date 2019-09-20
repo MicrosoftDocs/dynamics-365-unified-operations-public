@@ -130,6 +130,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)
