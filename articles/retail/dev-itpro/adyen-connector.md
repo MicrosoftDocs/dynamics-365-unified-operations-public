@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -337,7 +337,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
     | Cloud API Key | This field is used only for the card-not-present payment integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
-    | Supported Tender Types | Enter the tender types that the connector should process. These values are case Sensitive | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
+    | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |
 
 4. On the Action Pane, select **Save**.
@@ -360,7 +360,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
 5. Save your changes.
 6. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
-7. On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. Note the values in this URL are case sensitive
+7. On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. Note, the values in this URL are case sensitive.
 
 #### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Update the Modern POS or IIS Hardware Station configuration
 
