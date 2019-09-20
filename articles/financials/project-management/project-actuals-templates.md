@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize project actuals directly from Project Service Automation to the project integration journal for posting in Finance and Operations
-description: This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes the templates and underlying tasks that are used to synchronize project actuals directly from Microsoft Dynamics 365 for Project Service Automation to Finance and Operations.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
