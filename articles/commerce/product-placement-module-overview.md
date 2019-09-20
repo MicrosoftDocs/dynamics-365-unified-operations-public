@@ -64,9 +64,10 @@ Once you are happy with the template, Check-in and publish the template. Then we
  
 1. Go to your site and create a new page  - choose the template you may have created in the above steps. 
 
-1. Go to the Page editor for your page & observe the Page Outline on the left
+2. Go to the Page editor for your page & observe the Page Outline on the left
 >*Notice only modules (with MinOccurs =1) that were associated with slots as part of template definition, found under the category page, are readily available with template-based configurations.* 
-1. Once the pages have been authored and checked in/published, you should create the appropriate URLs for the pages: 
+
+3. Once the pages have been authored and checked in/published, you should create the appropriate URLs for the pages: 
    1.*Search Page: should have a URL path of '/search'*
        1. Go to URLs > Create a new URL and associate your search page
        ![searchPageToURLAssociation](./media/SearchURL_page_association.png)
