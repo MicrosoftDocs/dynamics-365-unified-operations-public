@@ -59,26 +59,5 @@ The **Recommendations module** is a key module on the product details page. When
 
 Any **marketing module** can be added to a product details page. These modules will be driven via CMS data. If the marketing content is unique to a specific product this can be achieved by enriching a product details page. See the [Enriching a product details page]() help topic for more information. 
 
- 
-
-## Authoring a product details page
-
-1. Create a fragment for buy box – “Buy box fragment”. This fragment should include the Buy Box module and all the other modules that it supports.
-2. Create a template “PDP template”
-3. In the Header of the Main slot, add the Header fragment.
-4. In the Footer of the Main slot, add the Footer fragment.
-5. In the Body of the Main slot add the “Buy box fragment”
-6. In the Body of the Main slot add the Product Specifications module
-7. In the Body of the Main slot add the Recommendations module and choose property as Related.
-8. In the Body of the Main slot add the Recommendations module and choose People Also Like
-9. In the Body of the Main slot add the Recommendations module and choose Trending.
-10. In the Body of the Main slot add the Ratings and Reviews module
-11. Save and preview. To preview a PDP, add to URL “?productid=<insert>”.  Since most of the modules need product id context, this query string is needed to be able to preview them
-12. Check-in and Publish
-13. Any other marketing module can be added to this page if needed. 
 
 
-
-## Enriching a product details page
-
-If you want a Product details page to have a more tailored experience for a specific product, you can choose to enrich the Product details page for that product. For example, if you’re adding a new model to a line of products, you might choose to add a marketing video and some product storytelling to get the shoppers attention. This can be done via enriching the page for this product. Refer to [Enriching a product details page]() for more details.
