@@ -166,7 +166,7 @@ Now, when INV2 is paid, the following entry will be made. Notice that the exchan
 | 14000056    | 200110-001- | Vendor balance     |                                          | -2.00                                   |
 
 ## One voucher for balance transfers and netting scenarios
-Two commonly used scenarios that utilize one voucher that contains multiple customers or vendors include balance transfers from one customer/vendor to another customer/vendor, and netting of a customer and vendor that are the same organization. The following two examples illustrate the preferred method for entering these scenarios in Finance and Operations, as an alternative to entering them in one voucher. 
+Two commonly used scenarios that utilize one voucher that contains multiple customers or vendors include balance transfers from one customer/vendor to another customer/vendor, and netting of a customer and vendor that are the same organization. The following two examples illustrate the preferred method for entering these scenarios, as an alternative to entering them in one voucher. 
 
 A *balance transfer* is one voucher with multiple customers, entered for the purpose of transferring the balance from one customer to another customer (same for vendors). This scenario can occur when the responsibility for paying the invoice shifts to another party, such as a child company shifting the responsibility to a parent company. 
 
@@ -180,7 +180,7 @@ To illustrate, assume the following sale is made to customer ACME. The following
 | 401100-002-023-    | Revenue          |           | 100        |
 | 130100-002-        | Customer balance | 100       |            |
 
-Next, the user transfers the balance due from ACME to the insurance company, in one voucher in the Accounts receivable payment journal. In Finance and Operations, the insurance company is set up as customer Insurance.
+Next, the user transfers the balance due from ACME to the insurance company, in one voucher in the Accounts receivable payment journal. The insurance company is set up as customer Insurance.
 
 |             |                  |             |                 |           |            |                 |                    |
 |-------------|------------------|-------------|-----------------|-----------|------------|-----------------|--------------------|
