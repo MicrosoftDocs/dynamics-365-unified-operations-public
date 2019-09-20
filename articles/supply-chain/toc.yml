@@ -667,7 +667,7 @@
     - name: Manage vendor collaboration users
       href: procurement/manage-vendor-collaboration-users.md
     - name: Set up vendor accounts
-       href: procurement/set-up-vendor-accounts.md
+      href: procurement/set-up-vendor-accounts.md
     - name: Create a vendor account
       href: procurement/tasks/create-vendor-account.md
     - name: Create a vendor bank account
@@ -838,9 +838,6 @@
           href: pim/tasks/approve-product-configuration-model.md
         - name: Transfer data for product models
           href: pim/tasks/transfer-data-product-models.md
-    
-    
-    
   - name: Production control
     items:
   - name: Sales and marketing
