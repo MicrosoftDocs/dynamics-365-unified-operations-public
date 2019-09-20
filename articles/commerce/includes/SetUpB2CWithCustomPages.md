@@ -119,9 +119,17 @@ Build out 5 Templates and Pages total as follows:
 
 - A 'Sign In' template and page using the 'Sign in' module.
 - A 'Sign Up' template and page using the 'Sign up' module.
+
+![Sign In Sign Up Modules](/articles/commerce/media/B2C_SignInSignUp_Module.png "Sign In Sign Up Modules")
+
 - A 'Password Reset' template and page using the 'Password reset' module.
 - A 'Password Reset verification' template and page using the 'Password reset verification' module.
+
+![Password Reset Module](/articles/commerce/media/B2C_PasswordReset_Modules.png "Password Reset module")
+
 - A 'Profile Edit' template and page using the 'Account profile edit' module
+
+![Profile edit Module](/articles/commerce/media/B2C_ProfileEdit_Module.png "Profile edit Module")
 
 When building the pages:
 
