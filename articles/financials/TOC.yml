@@ -2400,43 +2400,43 @@
       - name: Modify reporting relationships for positions
         href: ../fin-and-ops/hr/tasks/modify-reporting-relationships-position.md
       - name: Approve application inbox records
-        href: hr/tasks/approve-application-inbox-records.md
+        href: ../fin-and-ops/hr/tasks/approve-application-inbox-records.md
       - name: Enter worker information
-        href: hr/tasks/enter-worker-information.md
+        href: ../fin-and-ops/hr/tasks/enter-worker-information.md
       - name: Loan items to workers
-        href: hr/tasks/loan-item-worker.md
+        href: ../fin-and-ops/hr/tasks/loan-item-worker.md
       - name: Create loan items
-        href: hr/tasks/create-loan-items.md
+        href: ../fin-and-ops/hr/tasks/create-loan-items.md
       - name: Manage items lent to workers
         href: ../talent/loan-items.md
       - name: Develop a succession plan
-        href: hr/tasks/develop-succession-plan.md
+        href: ../fin-and-ops/hr/tasks/develop-succession-plan.md
       - name: Enter project timesheets
-        href: hr/tasks/enter-project-timesheets.md
+        href: ../fin-and-ops/hr/tasks/enter-project-timesheets.md
       - name: Manage email templates
-        href: hr/tasks/manage-email-templates.md
+        href: ../fin-and-ops/hr/tasks/manage-email-templates.md
       - name: Manage leaves of absence
-        href: hr/tasks/manage-leave-absence.md
+        href: ../fin-and-ops/hr/tasks/manage-leave-absence.md
     - name: Recruiting
       items:
       - name: Manage recruiting processes
-        href: hr/manage-recruiting-process.md
+        href: ../fin-and-ops/hr/manage-recruiting-process.md
       - name: Mass hire projects
-        href: hr/mass-hire-projects.md
+        href: ../fin-and-ops/hr/mass-hire-projects.md
       - name: Create mass hire projects
-        href: hr/tasks/create-mass-hire-project.md
+        href: ../fin-and-ops/hr/tasks/create-mass-hire-project.md
       - name: Manually enter applicant and application data
-        href: hr/tasks/enter-applicant-application-data-manually.md
+        href: ../fin-and-ops/hr/tasks/enter-applicant-application-data-manually.md
       - name: Develop and open job requisitions
-        href: hr/tasks/develop-open-job-requisition.md
+        href: ../fin-and-ops/hr/tasks/develop-open-job-requisition.md
       - name: Set up positions
-        href: hr/tasks/set-up-positions.md
+        href: ../fin-and-ops/hr/tasks/set-up-positions.md
       - name: Hire candidates through recruitment
-        href: hr/tasks/hire-candidate-through-recruiting.md
+        href: ../fin-and-ops/hr/tasks/hire-candidate-through-recruiting.md
       - name: Hire an existing employees through recruitment
-        href: hr/tasks/hire-existing-employee-through-recruiting.md
+        href: ../fin-and-ops/hr/tasks/hire-existing-employee-through-recruiting.md
       - name: Identify and deploy candidate selection tools
-        href: hr/tasks/identify-deploy-candidate-selection-tools.md
+        href: ../fin-and-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
     - name: Motivate employees
       items:
       - name: Compensation plans
@@ -2446,21 +2446,21 @@
       - name: Create variable compensation plans
         href: ../talent/create-variable-compensation-plans.md
       - name: Define compensation processes and calculate results
-        href: hr/tasks/define-compensation-process-calculate-results.md
+        href: ../fin-and-ops/hr/tasks/define-compensation-process-calculate-results.md
       - name: Process compensation
         href: ../talent/process-compensation.md
       - name: Set up compensation grids
-        href: hr/tasks/set-up-compensation-grids.md
+        href: ../fin-and-ops/hr/tasks/set-up-compensation-grids.md
       - name: Develop salary/compensation structures and plans
-        href: hr/tasks/develop-salary-compensation-structure-plan.md
+        href: ../fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan.md
       - name: Add information to your performance journal and send praise
-        href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+        href: ../fin-and-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md
       - name: Enroll employees in a fixed compensation plan
-        href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+        href: ../fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md
       - name: Enroll employees in a variable compensation plan
-        href: hr/tasks/enroll-employee-variable-compensation-plan.md
+        href: ../fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan.md
       - name: Create performance reviews
-        href: hr/tasks/create-performance-review.md
+        href: ../fin-and-ops/hr/tasks/create-performance-review.md
     - name: Develop and train employees
       items:
       - name: Performance management overview
@@ -2476,17 +2476,17 @@
       - name: Benefit eligibility policies
         href: ../talent/benefit-eligibility-policies.md
       - name: Benefit eligibility process
-        href: hr/tasks/benefit-eligibility-process.md
+        href: ../fin-and-ops/hr/tasks/benefit-eligibility-process.md
       - name: Define benefit eligibility rules and policies
-        href: hr/tasks/define-benefit-eligibility-rules-policies.md
+        href: ../fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies.md
       - name: Deliver an employee benefits program
-        href: hr/tasks/deliver-employee-benefits-program.md
+        href: ../fin-and-ops/hr/tasks/deliver-employee-benefits-program.md
       - name: Create new benefits
-        href: hr/tasks/create-new-benefit.md
+        href: ../fin-and-ops/hr/tasks/create-new-benefit.md
       - name: Enroll workers in benefits and remove benefits from workers
-        href: hr/tasks/enroll-remove-benefits-workers.md
+        href: ../fin-and-ops/hr/tasks/enroll-remove-benefits-workers.md
       - name: Manage benefit expiration dates
-        href: hr/tasks/manage-benefit-expiration-dates.md
+        href: ../fin-and-ops/hr/tasks/manage-benefit-expiration-dates.md
     - name: Gather information using questionnaires
       items:
       - name: Questionnaires
@@ -2496,33 +2496,33 @@
       - name: Distribute and complete a questionnaire
         href: ../talent/distribute-questionnaires.md
       - name: Distribute questionnaires using scheduling
-        href: hr/tasks/distribute-questionnaires-scheduling.md
+        href: ../fin-and-ops/hr/tasks/distribute-questionnaires-scheduling.md
       - name: Evaluate the results of a questionnaire
         href: ../talent/evaluate-questionnaire-results.md
       - name: Analyze questionnaire results
         href: hr/tasks/analyze-questionnaire-results.md
       - name: Create open-ended questions
-        href: hr/tasks/create-open-ended-question.md
+        href: ../fin-and-ops/hr/tasks/create-open-ended-question.md
       - name: Create closed-ended questions
         href: ../fin-and-ops/hr/tasks/create-closed-ended-question.md
       - name: Make questions dependent on the answer of the previous question
-        href: hr/tasks/make-question-dependent-answer-previous-question.md
+        href: ../fin-and-ops/hr/tasks/make-question-dependent-answer-previous-question.md
     - name: Workplace safety and compliance (United States)
       items:
       - name: Form I-9 verification
-        href: hr/localizations/noam-usa-form-i-9-verification.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md
       - name: Verify employment eligibility using Form I-9
-        href: hr/localizations/tasks/employment-verification-i9-verification.md
+        href: ../fin-and-ops/hr/localizations/tasks/employment-verification-i9-verification.md
       - name: Set up Form I-9 document types
-        href: hr/localizations/tasks/set-up-i9-document-types.md
+        href: ../fin-and-ops/hr/localizations/tasks/set-up-i9-document-types.md
       - name: Comply with the Americans with Disabilities Act
-        href: hr/localizations/noam-usa-comply-ada.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md
       - name: Manage worker accommodations
-        href: hr/localizations/tasks/manage-worker-accommodations.md
+        href: ../fin-and-ops/hr/localizations/tasks/manage-worker-accommodations.md
       - name: Set up injury and illness information
-        href: hr/tasks/set-up-injury-illness-information.md
+        href: ../fin-and-ops/hr/tasks/set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
-        href: hr/tasks/maintain-employee-injury-illness-information.md
+        href: ../fin-and-ops/hr/tasks/maintain-employee-injury-illness-information.md
   - name: Mobile app
     items:
     - name: Mobile app home page
