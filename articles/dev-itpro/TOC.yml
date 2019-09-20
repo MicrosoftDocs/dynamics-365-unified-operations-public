@@ -31,35 +31,35 @@
   - name: Business events
     items:
     - name: Business events overview
-      href: ../dev-itpro/business-events/home-page.md
+      href: business-events/home-page.md
     - name: Application business events
-      href: ../dev-itpro/business-events/app-business-events.md
+      href: business-events/app-business-events.md
     - name: Workflow business events
-      href: ../dev-itpro/business-events/business-events-workflow.md
+      href: business-events/business-events-workflow.md
     - name: Alerts as business events
-      href: ../dev-itpro/business-events/alerts-business-events.md
+      href: business-events/alerts-business-events.md
     - name: Business events in Microsoft Flow
-      href: ../dev-itpro/business-events/business-events-flow.md
+      href: business-events/business-events-flow.md
     - name: Business events developer documentation
-      href: ../dev-itpro/business-events/business-events-dev-doc.md
+      href: business-events/business-events-dev-doc.md
     - name: Troubleshoot business events
-      href: ../dev-itpro/business-events/troubleshooting.md
+      href: business-events/troubleshooting.md
     - name: Use cases for business events
-      href: ../dev-itpro/business-events/potential-use-cases.md
+      href: business-events/potential-use-cases.md
     - name: Tutorials
       items: 
       - name: Business events and Microsoft Flow
-        href: ../dev-itpro/business-events/how-to/how-to-flow.md
+        href: business-events/how-to/how-to-flow.md
       - name: Business events and Azure Event Grid
-        href: ../dev-itpro/business-events/how-to/how-to-eventgrid.md
+        href: business-events/how-to/how-to-eventgrid.md
       - name: Business events and Azure Service Bus
-        href: ../dev-itpro/business-events/how-to/how-to-servicebus.md
+        href: business-events/how-to/how-to-servicebus.md
       - name: Business events and workflow approvals
-        href: ../dev-itpro/business-events/how-to/how-to-workflow.md
+        href: business-events/how-to/how-to-workflow.md
       - name: Business events and Microsoft Forms Pro 
-        href: ../dev-itpro/business-events/how-to/FormsPro.md
+        href: business-events/how-to/FormsPro.md
       - name: Business events and Azure Event Hubs
-        href: ../dev-itpro/business-events/how-to/event-hub.md      
+        href: business-events/how-to/event-hub.md      
   - name: Continuous delivery
     items:
     - name: Continuous delivery home page
@@ -75,67 +75,67 @@
   - name: Data integration
     items:
     - name: Choose a data integration (import/export) strategy
-      href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
+      href: data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
     - name: Data integration APIs
       items:
       - name: Data management package REST API
-        href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
       - name: Service endpoints
         items:
         - name: Service endpoints overview
-          href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
+          href: data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
         - name: Service authentication troubleshooting
-          href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
+          href: data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
       - name: OData
-        href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
+        href: data-entities/odata.md?toc=/fin-and-ops/toc.json
       - name: Custom service development
-        href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
+        href: data-entities/custom-services.md?toc=/fin-and-ops/toc.json
       - name: Recurring integrations
-        href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+        href: data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
       - name: Test services using third-party utilities
-        href: ../dev-itpro/data-entities/third-party-service-test.md
+        href: data-entities/third-party-service-test.md
     - name: Finance and Operations Connector
-      href: ../dev-itpro/data-entities/fin-ops-connector.md
+      href: data-entities/fin-ops-connector.md
     - name: Development for integration
       items:
       - name: Data integration using data entities
         items:
         - name: Data integration using data entities overview
-          href: ../dev-itpro/data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
+          href: data-entities/data-management-integration-data-entity.md?toc=/fin-and-ops/toc.json
         - name: Develop an entity for data migration
-          href: ../dev-itpro/data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
+          href: data-entities/develop-entity-for-data-migration.md?toc=/fin-and-ops/toc.json
         - name: Develop composite data entities
-          href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
+          href: data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
         - name: Configure financial cross-company data sharing
-          href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
+          href: data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
         - name: Create record templates to facilitate data entry
-          href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
+          href: data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
         - name: Create records using record templates
-          href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
+          href: data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
       - name: Data integration using Common Data Service
         items:
         - name: Data integration using Common Data Service overview
-          href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
+          href: data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
         - name: Synchronous, bidirectional integration
           items: 
           - name: Near-real time data integration
-            href: ../dev-itpro/data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-overview.md?toc=/fin-and-ops/toc.json
           - name: Organization hierarchy on Common Data Service
-            href: ../dev-itpro/data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-organization.md?toc=/fin-and-ops/toc.json
           - name: Company concept in Common Data Services
-            href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
           - name: Integrated Customer Master
-            href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
           - name: Unified product experience
-            href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
           - name: Integrated Vendor Master
-            href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
           - name: Integrated sites and warehouses
-            href: ../dev-itpro/data-entities/dual-write-sites-and-warehouses.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-sites-and-warehouses.md?toc=/fin-and-ops/toc.json
           - name: Initial synchronization
-            href: ../dev-itpro/data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-initial.md?toc=/fin-and-ops/toc.json
           - name: Troubleshooting data integration
-            href: ../dev-itpro/data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
+            href: data-entities/dual-write-troubleshooting.md?toc=/fin-and-ops/toc.json
         - name: Asynchronous, unidirectional integration
           items:
           - name: Configure a prospect to cash scenario
@@ -193,87 +193,87 @@
             - name: Synchronize project actuals to the project integration journal
               href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
     - name: Consuming external web services
-      href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+      href: data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Electronic messaging
       href: ../financials/general-ledger/electronic-messaging.md
   - name: Data management
     items:
     - name: Data management overview
-      href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
+      href: data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
     - name: Data entities
       items:
       - name: Data entities overview
-        href: ../dev-itpro/data-entities/data-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-entities.md?toc=/fin-and-ops/toc.json
       - name: Configuration data projects
-        href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
+        href: data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
       - name: Copy configuration data between companies or legal entities
         items:
         - name: Copy configuration data overview
-          href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
+          href: data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
         - name: Configuration data packages
-          href: ../dev-itpro/data-entities/configuration-data-packages.md
+          href: data-entities/configuration-data-packages.md
         - name: Configuration data packages (July 2017 release only)
-          href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+          href: data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
         - name: Make Entity Store available as a Data Lake
-          href: ../dev-itpro/data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
+          href: data-entities/entity-store-data-lake.md?toc=/fin-and-ops/toc.json
       - name: Configuration data templates
-        href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
+        href: data-entities/configuration-data-templates.md?toc=/fin-and-ops/toc.json
       - name: Track changes to an entity
-        href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
+        href: data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
       - name: Find information about standard data entities
-        href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
       - name: Data templates with multiple worksheets
-        href: ../dev-itpro/data-entities/excel-template-multiple.md
+        href: data-entities/excel-template-multiple.md
       - name: Enable change tracking for entities
-        href: ../dev-itpro/data-entities/entity-change-track.md 
+        href: data-entities/entity-change-track.md 
       - name: Configuration keys and data entities
-        href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
       - name: Configuration data packages
-        href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
+        href: data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
     - name: Data import and export jobs
       items:
       - name: Data import and export jobs overview
-        href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json
       - name: Best practices for importing vouchers using the General journal entity
-        href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
+        href: data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
     - name: Development for data entities
       items:
       - name: Design principles and best practices for data entities
-        href: ../dev-itpro/dev-tools/design-best-practices.md
+        href: dev-tools/design-best-practices.md
       - name: Create new data entities
-        href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Data entity properties
-        href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Create computed columns and virtual fields
-        href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-entity-computed-columns-virtual-fields.md?toc=/fin-and-ops/toc.json
       - name: Cross-company behavior
-        href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/fin-and-ops/toc.json
+        href: data-entities/cross-company-behavior.md?toc=/fin-and-ops/toc.json
       - name: Handling country/region codes
-        href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/fin-and-ops/toc.json
+        href: data-entities/countryregion-codes-configuration-keys.md?toc=/fin-and-ops/toc.json
       - name: Inheritance patterns
-        href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/fin-and-ops/toc.json
+        href: data-entities/support-super-type-sub-type.md?toc=/fin-and-ops/toc.json
       - name: Data entity wizard rules
-        href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/fin-and-ops/toc.json
+        href: data-entities/data-entity-wizard-rules.md?toc=/fin-and-ops/toc.json
       - name: Metadata properties
-        href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Validations, defaults, and unmapped fields
-        href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
+        href: data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
       - name: Security and data entities
-        href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
+        href: data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
       - name: Use third-party service testing utilities
-        href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+        href: data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
       - name: Create read-only entities that expose financial dimensions
-        href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
+        href: financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
     - name: Bring your own database
-      href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
+      href: analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
     - name: Automated Entity store refresh
-      href: ../dev-itpro/analytics/automated-entity-store-refresh.md
+      href: analytics/automated-entity-store-refresh.md
     - name: Data task automation
-      href: ../dev-itpro/data-entities/data-task-automation.md
+      href: data-entities/data-task-automation.md
     - name: Data validation checklist workspace
-      href: ../dev-itpro/user-interface/data-validation-workspace.md
+      href: user-interface/data-validation-workspace.md
     - name: Data management error descriptions
-      href: ../dev-itpro/data-entities/dm-error-descriptions.md  
+      href: data-entities/dm-error-descriptions.md  
   - name: Database movement operations
     items:
     - name: Overview
