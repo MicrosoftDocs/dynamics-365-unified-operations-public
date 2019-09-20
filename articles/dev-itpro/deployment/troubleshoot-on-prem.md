@@ -634,6 +634,41 @@ If none of the preceding solutions work, follow these steps.
 
 8. In LCS, reconfigure the environment.
 
+## Gateway fails to deploy
+
+**Issue:** You receive the following error in the event viewer logs.
+
+```stacktrace
+Message Module aos failed Detail System.InvalidOperationException: Gateway app and Bootstrapper app are not healthy at AOSSetupHybridCloud.Program.Main(String[] args) 
+at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args) 
+at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
+at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
+at SetupCore.SetupManager.LaunchProcessInAppDomain(String startupExe, String workingDir, String currentFolder, String[] moduleArgs) 
+at SetupCore.SetupManager.<>c__DisplayClass12_1.<InvokeModules>b__6()
+```
+
+You also receive the following error message in the SFExplorer for the Gateway application.
+
+```stacktrace
+'System.RA' reported Warning for property 'ReplicaOpenStatus'.
+Replica had multiple failures during open on AOS_13. API call: IStatelessServiceInstance.Open(); Error = System.InvalidOperationException (-2146233079)
+Category does not exist.
+   at System.Diagnostics.PerformanceCounterLib.CounterExists(String machine, String category, String counter)
+   at System.Diagnostics.PerformanceCounter.InitializeImpl()
+   at System.Diagnostics.PerformanceCounter..ctor(String categoryName, String counterName, String instanceName, Boolean readOnly)
+   at System.Diagnostics.PerformanceCounter..ctor(String categoryName, String counterName, String instanceName)
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.Helpers.CpuPerfCounter..ctor()
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.GzipContentDelegatingHandler..ctor()
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.ClusterGateway.ConfigureApp(IAppBuilder appBuilder)
+   at Microsoft.Owin.Hosting.Engine.HostingEngine.Start(StartContext context)
+   at Microsoft.Dynamics.LBD.Gateways.Common.OwinCommunicationListener.b__9_0()
+   at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.d__10`2.MoveNext()
+```
+
+**Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
+
+**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
+
 ## Management Reporter
 
 Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
@@ -735,6 +770,24 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
                 }
             }
         ```
+
+### Unable to deploy Financial Reporting Service
+
+**Issue:** You are unable to finish deployment of Platform update 26 and later for Financial Reporting because the following error is in the application log for Service Fabric.
+
+```stacktrace
+Application: FinancialReportingDeployer.exe Framework Version: v4.0.30319  
+Description: The process was terminated due to an unhandled exception. 
+Exception  Info: System.DllNotFoundException at  
+Microsoft.Cloud.InstrumentationFramework.NativeIfxInterop.InitializeIfxFromCloudAgentConfigureSamplingAndTracing_x64(System.String,  System.String, UInt32, UInt32, Boolean) at  Microsoft.Cloud.InstrumentationFramework.IfxInitializer.IfxInitialize(System.String,  Microsoft.Cloud.InstrumentationFramework.InstrumentationSpecification,  Microsoft.Cloud.InstrumentationFramework.AuditSpecification) at  Microsoft.Dynamics.Performance.Logger.IfxLogger..cctor() Exception Info:  System.TypeInitializationException at  
+Microsoft.Dynamics.Performance.Logger.IfxLogger..ctor(System.String,  Microsoft.Dynamics.Performance.Logger.IfxLoggerOptions) at  
+Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.String)  at  
+Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
+```
+
+**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 was not correctly installed or is corrupt in some or all of the MR nodes.
+
+**Steps:** Re-run the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
 
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
