@@ -130,7 +130,7 @@ As a general guidance, when working with the mobile designer, make sure to 'publ
 
 ### Create the workspace
 
-1.  In a browser, open Finance and Operations, and sign in.
+1.  In a browser, and sign in to the application.
 2.  After you’ve signed in, append **&mode=mobile** to the URL as shown in the following example, and refresh the page: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
 3.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**. The mobile app designer must show up just as Task recorder shows up.
 4.  Click **Add** to create a new workspace. For this example, name the workspace **My approvals**.
@@ -142,9 +142,9 @@ As a general guidance, when working with the mobile designer, make sure to 'publ
 
 ### Vendor invoices assigned to me
 
-The first mobile page that you should design is the list of invoices that are assigned to the user for review. To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page in Finance and Operations. Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions. This setup meets the requirements for this scenario.
+The first mobile page that you should design is the list of invoices that are assigned to the user for review. To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page. Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions. This setup meets the requirements for this scenario.
 
-1.  In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  In the URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**
 3.  Select your workspace and click **Edit**
 4.  Click **Add page** to create the first mobile page.
@@ -175,9 +175,9 @@ The first mobile page that you should design is the list of invoices that are as
 
 ### Vendor invoice details
 
-To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. [![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. [![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1. In the Finance and Operations URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
+1. In the URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
 2. Open the mobile designer from the **Settings** (gear) button.
 3. Click the **Edit** button to start edit mode in the workspace.
 4. Select the **My vendor invoices** page that you created earlier, and then click **Edit**.
@@ -210,7 +210,7 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
 
 ### Workflow actions
 
-To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Finance and Operations. To open this page, replace the name of the menu item in the URL, as you did earlier. Then open the mobile designer from the **Settings** (gear) button. Follow these steps to add workflow actions on the details page. You must have invoices assigned to you that are in the appropriate state to make the workflow actions available to you that you are going to design for.
+To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page. To open this page, replace the name of the menu item in the URL, as you did earlier. Then open the mobile designer from the **Settings** (gear) button. Follow these steps to add workflow actions on the details page. You must have invoices assigned to you that are in the appropriate state to make the workflow actions available to you that you are going to design for.
 
 #### Record workflow actions
 1.  Click the **Edit** button to start edit mode in the workspace.
@@ -311,7 +311,7 @@ To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page in Fina
 
 ### Vendor invoice line distributions
 
-The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices in Finance and Operations include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. 
+The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. 
 
 > [!NOTE] 
 > Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario. In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.
@@ -414,7 +414,7 @@ The requirements for this scenario confirm that there will be only line-level di
 
 ### Validation
 
-From your mobile device, open the app, and connect to your Finance and Operations instance. Make sure that you sign in to the company where vendor invoices are assigned to you for review. You should be able to perform the following actions:
+From your mobile device, open the app, and connect to your instance. Make sure that you sign in to the company where vendor invoices are assigned to you for review. You should be able to perform the following actions:
 
 -   See the **My approvals** workspace.
 -   Drill into the **My approvals** workspace and see the **My vendor invoices** page.
