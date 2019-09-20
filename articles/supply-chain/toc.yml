@@ -149,7 +149,7 @@
       - name: Find information by using lookups
         href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/supply-chain/toc.json
       - name: Change the date for a session
-        href: organization-administration/tasks/change-date-session.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/supply-chain/toc.json
       - name: Set a user's preferred time zone
         href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/supply-chain/toc.json
       - name: Understand Lifecycle Services
@@ -301,7 +301,7 @@
       - name: Cost entries
         href: cost-management/cost-entries.md
       - name: View cost entries for a cost object
-        href: ost-management/tasks/view-cost-entries-cost-object.md
+        href: cost-management/tasks/view-cost-entries-cost-object.md
       - name: Cost groups
         href: cost-management/cost-groups.md
       - name: FIFO with physical value and marking
@@ -419,7 +419,7 @@
     - name: Customize the Open in Microsoft Office menu
       href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/supply-chain/toc.json
     - name: Configure and send email
-      href: organization-administration/configure-email.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/supply-chain/toc.json
     - name: Develop email experiences
       href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/supply-chain/toc.json
     - name: Troubleshoot the Office integration
@@ -581,6 +581,6 @@
     - name: Gantt control development guide
       href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/supply-chain/toc.json
     - name: Create a new transportation management engine
-      href: ../../transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
+      href: transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
 - name: Finance and Operations development and administration 
   href: ../dev-itpro/toc.yml
