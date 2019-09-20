@@ -110,19 +110,18 @@ In this procedure, you will register a new application with Azure AD, and give i
 
 10. Save your new access policy.
 
-## Procedure 4: Configure a Business Events endpoint in Finance and Operations
+## Procedure 4: Configure a Business Events endpoint
 
-1. Sign in to Finance and Operations.
-2. Go to **System administration \> Setup \> Business events**.
-3. Select **Endpoints**.
-4. Select **New**.
-5. Select **Azure Event Grid**.
-6. Select **Next**.
-7. Set the required parameter values.
+1. Sign in to the application and go to **System administration \> Setup \> Business events**.
+2. Select **Endpoints**.
+3. Select **New**.
+4. Select **Azure Event Grid**.
+5. Select **Next**.
+6. Set the required parameter values.
 
     <img alt="Event grid endpoint" src="../../media/BEF-Howto-EventGrid-06.png" width="50%">
 
-8. Select **OK**.
+7. Select **OK**.
 
 ## Procedure 5: Consume a business event
 
