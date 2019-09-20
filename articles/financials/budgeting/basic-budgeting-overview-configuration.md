@@ -41,7 +41,7 @@ Overview
 
 The approved budget for a legal entity is maintained in a document that is known as a *budget register entry*. The lines in a budget register entry document are known as *budget account* entries, and contain financial dimension information, dates, and the amounts of the approved budget. The budget register entry document is integrated with basic financial reports and inquiry pages where ledger actual amounts are compared to budget amounts. 
 
-There are multiple methods for creating budget register entries in Finance and Operations:
+There are multiple methods for creating budget register entries:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.
