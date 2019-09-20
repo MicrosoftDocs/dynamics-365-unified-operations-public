@@ -43,7 +43,7 @@
       - name: Cloud deployment
         href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/retail/toc.json
       - name: System requirements for cloud deployments
-        href: ../retail/get-started/system-requirements.md?toc=/retail/toc.json
+        href: get-started/system-requirements.md?toc=/retail/toc.json
       - name: On-premises deployment
         href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/retail/toc.json
       - name: System requirements for on-premises deployments
