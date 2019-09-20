@@ -1105,8 +1105,6 @@
         href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
       - name: Dispose of a fixed asset using a free text invoice
         href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-      - name: Dispose of a fixed asset as scrap
-        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
       - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
@@ -1309,6 +1307,8 @@
           href: ../financials/general-ledger/round-sales-tax-payments.md
         - name: Sales tax calculation methods in the Origin field
           href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+        - name: Sales tax calculation on general jounal lines
+          href: ../financials/general-ledger/sales-tax-calculation-on-general-journal.md          
         - name: Whole amount and interval calculation options for sales tax codes
           href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
         - name: Calculate and adjust sales tax on a vendor invoice
