@@ -51,14 +51,14 @@ To upload a favicon to your site's asset collection, follow these steps.
 1. In the property pane on the right, copy the public URL of the favicon.
 
 > [!NOTE]
-> If you don't select the **Publish assets after upload** option, you must return to **Assets** and manually publish the favicon later.
+> If you don't select the **Publish assets after upload** option, you must return to **Assets** page and manually publish the favicon later.
 
 ## Create the HTML for the favicon
 
 To create the HTML for the favicon, use the following HTML snippet. For the **href** attribute, replace **"Public\_URL\_for\_your\_favicon"** with the public URL that you copied earlier.
 
-`&lt;link rel="shortcut icon" href="Public_URL_for_your_favicon" /&gt;`
+`<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
 ## Add the HTML for the favicon to the \<head\> element of your pages
 
-To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages. For information about that procedure, see [Adding script to your master templates](http://).
+To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages.
