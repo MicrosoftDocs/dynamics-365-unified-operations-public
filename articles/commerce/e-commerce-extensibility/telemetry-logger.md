@@ -41,15 +41,11 @@ The Dynamics 365 Commerce online software development kit (SDK) includes a custo
 
 ## Access the telemetry logger
 
-By default, the telemetry logger is available to all react components. It can be accessed as the **this.props.telemetry** property, as follows.
-
-```typescript
-this.props.telemetry
-```
+By default, the telemetry logger is available to all react components. It can be accessed with the **this.props.telemetry** property from with the module view code file.
 
 Sometimes, you will want to access the telemetry logger in a shared component instead of having to pass it down through the properties of every component in your module. The SDK repository includes a **WithContext()** utility that lets you inject the telemetry logger directly into your component.
 
-By default, the telemetry logger logs all events to an "application insights" instance. When the telemetry logger runs in a development environment, all logs are also shown in the console.
+When the telemetry logger runs in a development environment, all logs are also shown in the console.
 
 ## Trace logging
 
@@ -138,4 +134,4 @@ this.props.telemetry.exception(new Error("Something is broken!"));
 
 You might be confused about when you should use **.error()** to log an error in your application, and when you should use **.exception()**. This confusion can arise because the names are similar, and because you can use **.error()** to log **Error** objects, by passing the **Error** objects as additional parameters.
 
-The best guidance is to use **.exception()** to log actual **Error** objects and **.error()** to log string messages that state that an error has occurred in the business logic. The reason for this guidance is that, in the AppInsights back end, **.exception()** logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from **.error()** are treated as another trace log, and more detailed analysis might be required to find the issue than if you use **.exception()**. Therefore, it can take more time to recognize that an issue has occurred. In addition, **.exception()** allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
+The best guidance is to use **.exception()** to log actual **Error** objects and **.error()** to log string messages that state that an error has occurred in the business logic. Generally, **.exception()** logs are more easily correlated with issues and allow for faster debugging when real issues arise. The messages from **.error()** are treated as another trace log, and more detailed analysis might be required to find the issue than if you use **.exception()**. Therefore, it can take more time to recognize that an issue has occurred. In addition, **.exception()** allows for better tracking across different requests. Therefore, it supports features such as automatic alerting when an issue begins to affect many requests.
