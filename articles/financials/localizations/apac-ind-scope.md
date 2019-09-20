@@ -33,7 +33,7 @@ ms.search.validFrom: 2019-6-21
 
 [!include [banner](../includes/banner.md)]
 
-In general, Microsoft devotes significant resources to generating the business process functionality of Finance and Operations applications by developing features and functionality that address specific tax accounting or financial regulatory requirements in countries or regions where Dynamics 365 is generally available.
+In general, Microsoft devotes significant resources to generating the business process functionality of our applications by developing features and functionality that address specific tax accounting or financial regulatory requirements in countries or regions where Dynamics 365 Finance is generally available.
 
 The software, which helps business operations comply with country/region-specific laws, regulations, and common business practices for handling routine activities, is designed to include features and functionality that address the specific central and state government tax, accounting, and financial or statutory reporting laws or regulations that usually govern business in India. However, because laws and regulations are diverse and numerous, not all laws, regulations, or commercial requirements in India are covered. For example, regulatory features that Microsoft develops and makes generally available in India don't usually support industry-specific laws or national standards, laws that are specific to particular states, or city or municipal legal requirements, except as noted in this topic.
 
