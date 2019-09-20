@@ -189,3 +189,15 @@ Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (polici
   - In the User attributes section:
     - Set Given Name, and Surname fields for "Requires Verification" to "No"
     - Set Given Name and Surname fields for "Optional" to "No"
+
+The login modules as seen in the Starter Kit have default strings set for the labels and descriptions. These items can be customized in the SDK by updating the values in the module's global.json.
+
+For example, the text for the forget password link showing as "Forgotten password?" can be edited in the Module's global.json of the starter kit to "Forgot Password?".
+
+![Sign Up Module Strings](/articles/commerce/media/B2C_SignUp_ModuleFace.png "Sign Up Module Strings")
+
+
+
+![SDK Global JSON editing string labels for modules](/articles/commerce/media/B2C_CustomizingStringsForModule.png "SDK Global JSON editing string labels for modules")
+
+Once completed, deploying the updated modules package will reflect the changes in the displaying module in the Commerce Authoring Tools and when published.
