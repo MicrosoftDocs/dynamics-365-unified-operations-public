@@ -1,0 +1,586 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+  - name: Dynamics 365 Supply Chain Management documentation
+    href: index.md
+  - name: Get started
+    items:
+    - name: Before you buy
+      href: ../../get-started/before-you-buy.md?toc=/supply-chain/toc.json
+    - name: Sign up for preview subscription
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/supply-chain/toc.json
+    - name: One Version service updates 
+      items:
+      - name: One Version service updates overview
+        href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/supply-chain/toc.json
+      - name: One Version service updates FAQ
+        href: get-started/one-version.md?toc=/supply-chain/toc.json
+      - name: Software lifecycle policy - Cloud
+        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/supply-chain/toc.json
+      - name: Software lifecycle policy - On-premises
+        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/supply-chain/toc.json
+      - name: Service update availability
+        href: get-started/public-preview-releases.md?toc=/supply-chain/toc.json
+      - name: Apply updates to cloud environments
+        href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/supply-chain/toc.json
+      - name: Configure service updates
+        href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/supply-chain/toc.json
+      - name: Pause service updates
+        href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/supply-chain/toc.json
+      - name: Get notified about service updates
+        href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/supply-chain/toc.json
+      - name: Data task automation
+        href: ../dev-itpro/data-entities/data-task-automation.md?toc=/supply-chain/toc.json
+      - name: Delivering ISV solutions using One Version
+        href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/supply-chain/toc.json
+      - name: Create and automate user acceptance tests
+        href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/supply-chain/toc.json   
+    - name: Deploy a demo environment
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/supply-chain/toc.json
+    - name: Deployment considerations
+      items:
+      - name: Deployment options
+        href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/supply-chain/toc.json
+      - name: Cloud deployment
+        href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/supply-chain/toc.json
+      - name: System requirements for cloud deployments
+        href: get-started/system-requirements.md?toc=/supply-chain/toc.json
+      - name: On-premises deployment
+        href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/supply-chain/toc.json
+      - name: System requirements for on-premises deployments
+        href: get-started/system-requirements-on-prem.md?toc=/supply-chain/toc.json
+      - name: Buy Finance + Operations (on-premises)
+        href: get-started/purchase-on-premises.md?toc=/supply-chain/toc.json
+      - name: Configure Warehousing for on-premises deployments
+        href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations operated by 21Vianet in China
+        href: ../dev-itpro/deployment/china-local-deployment.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations in France
+        href: ../dev-itpro/deployment/france-local-deployment.md?toc=/supply-chain/toc.json
+    - name: What's new or changed
+      items:
+      - name: What's new or changed home page
+        href: get-started/whats-new-changed.md
+      - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+        href: get-started/whats-new-changed-10-0-6.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations 10.0.5 (October 2019)
+        href: get-started/whats-new-changed-10-0-5.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations 10.0.4 (July 2019)
+        href: get-started/whats-new-changed-10-0-4.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations, Enterprise edition 7.3
+        href: get-started/whats-new-application-7.3-update.md?toc=/supply-chain/toc.json
+      - name: Removed or deprecated features
+        href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/supply-chain/toc.json
+      - name: AX 2012 features that were postponed
+        href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/supply-chain/toc.json
+      - name: Features not implemented in on-premises deployments
+        href: get-started/features-not-implemented-on-prem.md?toc=/supply-chain/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: get-started/mainstream-support-ax-2009-2012.md?toc=/supply-chain/toc.json
+    - name: Documentation resources
+      items:
+      - name: Help system
+        href: get-started/help-overview.md?toc=/supply-chain/toc.json
+      - name: Connect the Help system
+        href: get-started/help-connect.md?toc=/supply-chain/toc.json
+      - name: Connect a custom help site
+        href: get-started/help-custom.md?toc=/supply-chain/toc.json    
+      - name: View and export field descriptions
+        href: get-started/view-export-field-descriptions.md?toc=/supply-chain/toc.json
+      - name: Task Recorder
+        href: ../dev-itpro/user-interface/task-recorder.md?toc=/supply-chain/toc.json
+      - name: Create documentation or training with Task Recorder
+        href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/supply-chain/toc.json
+      - name: Videos for Finance and Operations
+        href: get-started/videos.md?toc=/supply-chain/toc.json
+      - name: Glossary
+        href: get-started/glossary.md?toc=/supply-chain/toc.json
+    - name: Learning catalog
+      items: 
+      - name: Learning catalog home page
+        href: get-started/learning-catalog.md?toc=/supply-chain/toc.json
+      - name: Business decision makers
+        href: get-started/learning-catalog-bdm.md?toc=/supply-chain/toc.json
+      - name: Business users
+        href: get-started/learning-catalog-business-user.md?toc=/supply-chain/toc.json
+      - name: Implementation project managers
+        href: get-started/learning-catalog-project-manager.md?toc=/supply-chain/toc.json
+      - name: Administrators
+        href: get-started/learning-catalog-administrator.md?toc=/supply-chain/toc.json
+      - name: Developers
+        href: get-started/learning-catalog-developer.md?toc=/supply-chain/toc.json
+      - name: Partner sales and marketing
+        href: get-started/learning-catalog-partner-sales.md?toc=/supply-chain/toc.json
+      - name: Functional consultants
+        href: get-started/learning-catalog-functional-consultant.md?toc=/supply-chain/toc.json
+      - name: Solution architects
+        href: get-started/learning-catalog-solution-architect.md?toc=/supply-chain/toc.json
+    - name: Explore the user interface
+      items:
+      - name: User interface elements
+        href: get-started/user-interface-elements.md?toc=/supply-chain/toc.json
+      - name: Accessibility features
+        href: get-started/accessibility-features.md?toc=/supply-chain/toc.json
+      - name: Feature management overview
+        href: get-started/feature-management/feature-management-overview.md?toc=/supply-chain/toc.json
+      - name: Client FAQ
+        href: get-started/client-faq.md?toc=/supply-chain/toc.json
+      - name: Action search
+        href: get-started/action-search.md?toc=/supply-chain/toc.json
+      - name: Advanced filtering and query syntax
+        href: get-started/advanced-filtering-query-options.md?toc=/supply-chain/toc.json
+      - name: Configure and filter workspaces
+        href: get-started/configure-filter-workspaces.md?toc=/supply-chain/toc.json
+      - name: Show pages side by side by using the Open in new window feature
+        href: get-started/display-pages-side-by-side.md?toc=/supply-chain/toc.json
+      - name: Keyboard shortcuts
+        href: get-started/shortcut-keys.md?toc=/supply-chain/toc.json
+      - name: Change the banners or logo images for legal entities
+        href: get-started/tasks/change-banner-or-logo.md?toc=/supply-chain/toc.json
+      - name: Navigation search
+        href: get-started/navigation-search.md?toc=/supply-chain/toc.json
+      - name: Personalize the user experience
+        href: get-started/personalize-user-experience.md?toc=/supply-chain/toc.json
+      - name: Saved views
+        href: get-started/saved-views.md?toc=/supply-chain/toc.json
+      - name: Create and work with custom fields
+        href: get-started/user-defined-fields.md?toc=/supply-chain/toc.json
+      - name: Embed PowerApps apps
+        href: get-started/embed-power-apps.md?toc=/supply-chain/toc.json
+      - name: Find information by using lookups
+        href: get-started/use-lookups-to-find-information.md?toc=/supply-chain/toc.json
+      - name: Change the date for a session
+        href: organization-administration/tasks/change-date-session.md?toc=/supply-chain/toc.json
+      - name: Set a user's preferred time zone
+        href: organization-administration/tasks/set-users-preferred-time-zone.md?toc=/supply-chain/toc.json
+      - name: Understand Lifecycle Services
+        href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/supply-chain/toc.json
+    - name: Implementation lifecycle management
+      items:
+      - name: Implementation lifecycle management home page
+        href: imp-lifecycle/implementation-lifecycle.md?toc=/supply-chain/toc.json
+      - name: Finance and Operations architecture
+        href: imp-lifecycle/architecture-overview.md?toc=/supply-chain/toc.json
+      - name: Microsoft FastTrack for Finance and Operations
+        href: get-started/fasttrack-dynamics-365-overview.md?toc=/supply-chain/toc.json
+      - name: Onboard an implementation project
+        href: imp-lifecycle/onboard.md?toc=/supply-chain/toc.json
+      - name: Environment planning
+        href: imp-lifecycle/environment-planning.md?toc=/supply-chain/toc.json   
+      - name: Prepare for go-live
+        href: imp-lifecycle/prepare-go-live.md?toc=/supply-chain/toc.json
+      - name: Go-live FAQ
+        href: imp-lifecycle/go-live-faq.md?toc=/supply-chain/toc.json
+      - name: Submit a service request
+        href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/supply-chain/toc.json
+      - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+        href: get-started/subscription-overview.md?toc=/supply-chain/toc.json    
+      - name: Move environments between data centers
+        href: get-started/move-environments-data-center.md?toc=/supply-chain/toc.json      
+      - name: Move licenses between agreement types
+        href: get-started/move-licenses-between-agreement-types.md?toc=/supply-chain/toc.json 
+      - name: Move LCS implementation projects to different Azure AD tenants
+        href: get-started/move-lcs-implementation-project-tenant.md?toc=/supply-chain/toc.json 
+      - name: Multiple LCS projects and production environments on one Azure AD tenant
+        href: get-started/implement-multiple-projects-aad-tenant.md?toc=/supply-chain/toc.json
+  - name: Cost accounting
+    items:
+    - name: Cost accounting home page
+      href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/supply-chain/toc.json
+    - name: Cost accounting terminology
+      href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/supply-chain/toc.json
+    - name: Fiscal calendars, fiscal years, and periods
+      href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/supply-chain/toc.json
+    - name: Financial dimensions
+      href: ../financials/general-ledger/financial-dimensions.md?toc=/supply-chain/toc.json
+    - name: Financial dimensions and posting
+      href: ../financials/general-ledger/Default-dimensions.md?toc=/supply-chain/toc.json
+    - name: Add financial dimensions to the CFO workspace
+      href: ../financials/general-ledger/CFO-workspace.md?toc=/supply-chain/toc.json
+    - name: Create account structures
+      href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/supply-chain/toc.json
+    - name: Budgeting overview
+      href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/supply-chain/toc.json
+    - name: Create dimensions and import dimension members
+      href: ../financials/cost-accounting/cost-dimension.md?toc=/supply-chain/toc.json
+    - name: Cost element dimensions
+      href: ../financials/cost-accounting/cost-elements.md?toc=/supply-chain/toc.json
+    - name: Create cost elements
+      href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/supply-chain/toc.json
+    - name: Cost object dimensions
+      href: ../financials/cost-accounting/cost-objects.md?toc=/supply-chain/toc.json
+    - name: Create cost objects
+      href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/supply-chain/toc.json
+    - name: Map cost element dimension members to a common set of dimension members
+      href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/supply-chain/toc.json
+    - name: Map a cost element dimension  
+      href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/supply-chain/toc.json
+    - name: Dimension hierarchy
+      href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/supply-chain/toc.json
+    - name: Create an organization report hierarchy
+      href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/supply-chain/toc.json
+    - name: Access rights of a cost object controller
+      href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    - name: Configure access rights for a cost object controller
+      href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    - name: Define cost control units
+      href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/supply-chain/toc.json
+    - name: Create a cost accounting ledger
+      href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    - name: Statistical dimension members and statistical measure provider templates
+      href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/supply-chain/toc.json
+    - name: Allocation bases
+      href: ../financials/cost-accounting/allocation-bases.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost allocation policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost behavior policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create and assign a cost distribution policy to a cost control unit
+      href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    - name: Create a cost rollup policy
+      href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/supply-chain/toc.json
+    - name: Manage data source for the cost accounting ledger
+      href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    - name: Process and trace source data
+      href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/supply-chain/toc.json
+    - name: Overhead calculation
+      href: ../financials/cost-accounting/overhead-calculation.md?toc=/supply-chain/toc.json
+    - name: Cost rollup policy and overhead calculation
+      href: ../financials/cost-accounting/cost-rollup.md?toc=/supply-chain/toc.json
+    - name: Configure cost control workspace
+      href: ../financials/cost-accounting/cost-control-workspace.md?toc=/supply-chain/toc.json
+    - name: Configure cost control workspace parameters
+      href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/supply-chain/toc.json
+    - name: Understand access list security and RLS in Microsoft Power BI
+      href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/supply-chain/toc.json
+    - name: Use content pack for Microsoft Power BI reporting
+      href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/supply-chain/toc.json
+    - name: Use cost control workspace for Finance and Operations mobile application
+      href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+  - name: Cost management
+    items:
+    - name: Cost management home page
+      href: cost-management/cost-management-home-page.md
+    - name: Prerequisites for standard costs
+      items:
+      - name: Prerequisites for standard costs overview
+        href: cost-management/prerequisites-standard-costs.md
+      - name: Standard cost conversion overview
+        href: cost-management/standard-cost-conversion-overview.md
+      - name: Prerequisite for a standard cost conversion
+        href: cost-management/prerequisites-standard-cost-conversion.md
+      - name: Manage standard cost updates
+        href: cost-management/manage-standard-cost-updates.md
+      - name: Restrictions on costing versions for standard costs
+        href: cost-management/restrictions-costing-versions-standard-costs.md
+      - name: Information used in BOM calculations with standard costs
+        href: /cost-management/information-used-bom-calculations-standard-costs.md
+      - name: Update standard costs in a manufacturing environment
+        href: cost-management/update-standard-costs-manufacturing-environment.md
+      - name: Update standard costs for a new manufactured item
+        href: cost-management/update-standard-costs-new-manufactured-item.md
+      - name: Update standard costs in a non-manufacturing environment
+        href: cost-management/update-standard-costs-non-manufacturing-environment.md
+      - name: Prepare to maintain standard costs for manufactured items
+        href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+    - name: Costing versions
+      items:
+      - name: Costing versions overview
+        href: cost-management/costing-versions.md
+      - name: Costing sheets
+        href: cost-management/costing-sheets.md
+      - name: Simulate cost changes by using a costing version for planned costs
+        href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+    - name: Inventory accounting
+      items:
+      - name: Cost objects
+        href: cost-management/cost-object.md
+      - name: View cost object balance
+        href: cost-management/tasks/view-cost-object-balance.md
+      - name: View inventory statement and KPI by cost object
+        href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+      - name: Cost entries
+        href: cost-management/cost-entries.md
+      - name: View cost entries for a cost object
+        href: ost-management/tasks/view-cost-entries-cost-object.md
+      - name: Cost groups
+        href: cost-management/cost-groups.md
+      - name: FIFO with physical value and marking
+        href: cost-management/fifo-physical-value-marking.md
+      - name: Include physical value
+        href: cost-management/include-physical-value.md
+      - name: Inventory object values
+        href: cost-management/physical-quantity.md
+      - name: LIFO Date with physical value and marking
+        href: cost-management/lifo-date-physical-value-marking.md
+      - name: LIFO with physical value and marking
+        href: cost-management/lifo-physical-value-marking.md
+      - name: Moving average
+        href: cost-management/moving-average.md
+      - name: Physical and financial updates
+        href: cost-management/physical-financial-updates.md
+      - name: Running average cost price
+        href: cost-management/running-average-cost-price.md
+      - name: Tracking running average cost per inventory dimension
+        href: cost-management/track-running-average-cost-per-inventory-dimension.md
+      - name: Weighted average date
+        href: cost-management/weighted-average-date.md
+      - name: Weighted average with physical value and marking
+        href: cost-management/weighted-average-physical-value-marking.md
+      - name: Inventory close
+        href: cost-management/inventory-close.md
+      - name: Adjust on-hand inventory cost values
+        href: cost-management/adjust-hand-inventory-cost-values.md
+    - name: Manufacturing accounting
+      items:
+      - name: BOM calculations
+        href: cost-management/bom-calculations.md
+      - name: BOM calculation groups
+        href: cost-management/bom-calculation-groups.md
+      - name: Backflush costing
+        href: cost-management/backflush-costing.md
+      - name: Common sources of production variances
+        href: cost-management/common-sources-of-production-variances.md
+      - name: Cost categories used in production routing
+        href: cost-management/cost-categories-used-production-routings.md
+      - name: Cost categories used in Production control and Project management accounting
+        href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+      - name: Display charges for a manufactured item
+        href: cost-management/charges-manufactured-item.md
+      - name: Production order cost analysis
+        href: cost-management/production-order-cost-analysis.md
+      - name: Production order cost estimation
+        href: /cost-management/production-order-cost-estimation.md
+      - name: View current WIP status on a production order
+        href: cost-management/tasks/view-current-wip-status-production-order.md
+      - name: Compare active, estimated, and realized costs on a production order
+        href: cost-management/tasks/compare-active-estimated-realized-costs.md
+      - name: Production posting
+        href: cost-management/production-posting.md
+      - name: Set up products that can be produced or procured
+        href: cost-management/manufactured-items-treated-as-purchased-items.md
+      - name: Total cost allocation method
+        href: cost-management/methodology-total-cost-allocation.md
+      - name: Amortize constant costs for a manufactured item
+        href: cost-management/amortize-constant-costs-manufactured-item.md
+    - name: Cost management Power BI content pack
+      href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/supply-chain/toc.json
+  - name: Globalization
+    items:
+  - name: Inventory management
+    items:
+  - name: Master planning
+    items:
+  - name: Mobile app
+    items:
+    - name: Mobile app home page
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/supply-chain/toc.json
+    - name: Mobile workspaces
+      items:
+      - name: Available mobile workspaces
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/supply-chain/toc.json
+      - name: Company directory
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Cost controlling
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Expense management
+        href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Inventory on-hand
+        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Invoice approvals
+        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: My team
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md?toc=/supply-chain/toc.json
+      - name: Project time entry
+        href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Project timesheet
+        href: ../financials/project-management/project-timesheet.md?toc=/supply-chain/toc.json
+      - name: Purchase order approval
+        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Sales orders
+        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Vendor collaboration
+        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/supply-chain/toc.json
+    - name: Publish mobile workspaces
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/supply-chain/toc.json
+  - name: Office integration
+    items:
+    - name: Office integration overview
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/supply-chain/toc.json
+    - name: Office integration tutorial
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/supply-chain/toc.json
+    - name: Open entity data in Excel and update it using the Excel add-in
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/supply-chain/toc.json
+    - name: Create Open in Excel experiences
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/supply-chain/toc.json
+    - name: Add templates to the Open lines in Excel menu
+      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/supply-chain/toc.json
+    - name: Customize the Open in Microsoft Office menu
+      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/supply-chain/toc.json
+    - name: Configure and send email
+      href: organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    - name: Develop email experiences
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/supply-chain/toc.json
+    - name: Troubleshoot the Office integration
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/supply-chain/toc.json
+  - name: Organization administration
+    items:
+    - name: Organization administration home page
+      href: organization-administration/organization-administration-home-page.md?toc=/supply-chain/toc.json
+    - name: Number sequences
+      items:
+      - name: Number sequences overview
+        href: organization-administration/number-sequence-overview.md?toc=/supply-chain/toc.json
+      - name: Set up number sequences on an individual basis
+        href: organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/supply-chain/toc.json
+      - name: Set up number sequences using a wizard
+        href: organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/supply-chain/toc.json
+    - name: Organizations and organizational hierarchies
+      items:
+      - name: Organizations and organizational hierarchies overview
+        href: organization-administration/organizations-organizational-hierarchies.md?toc=/supply-chain/toc.json
+      - name: Plan your organizational hierarchy
+        href: organization-administration/plan-organizational-hierarchy.md?toc=/supply-chain/toc.json
+      - name: Create an organization hierarchy
+        href: organization-administration/tasks/create-organization-hierarchy.md?toc=/supply-chain/toc.json
+      - name: Create legal entities
+        href: organization-administration/tasks/create-legal-entity.md?toc=/supply-chain/toc.json
+      - name: Create operating units
+        href: organization-administration/tasks/create-operating-unit.md?toc=/supply-chain/toc.json
+    - name: Global address book
+      items:
+      - name: Global address book overview
+        href: organization-administration/overview-global-address-book.md?toc=/supply-chain/toc.json
+      - name: Plan for the global address book and other address books
+        href: organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/supply-chain/toc.json
+      - name: Configure the global address book
+        href: organization-administration/tasks/configure-global-address-book.md?toc=/supply-chain/toc.json
+      - name: Address books FAQ
+        href: organization-administration/qa-address-books.md?toc=/supply-chain/toc.json
+      - name: Configure address books
+        href: organization-administration/tasks/address-books.md?toc=/supply-chain/toc.json
+    - name: Workflow system
+      items:
+      - name: Workflow system overview
+        href: organization-administration/overview-workflow-system.md?toc=/supply-chain/toc.json
+      - name: Workflow system architecture
+        href: organization-administration/workflow-system-architecture.md?toc=/supply-chain/toc.json
+      - name: Workflow elements
+        href: organization-administration/workflow-elements.md?toc=/supply-chain/toc.json
+      - name: Workflow actions
+        href: organization-administration/workflow-actions.md?toc=/supply-chain/toc.json
+      - name: Create workflows
+        items:
+        - name: Create workflows overview
+          href: organization-administration/create-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure workflow properties
+          href: organization-administration/configure-workflow-properties.md?toc=/supply-chain/toc.json
+        - name: Configure manual tasks
+          href: organization-administration/configure-manual-task-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure automated tasks
+          href: organization-administration/configure-automated-task-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure approval processes
+          href: organization-administration/configure-approval-process-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure approval steps
+          href: organization-administration/configure-approval-step-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure manual decisions
+          href: organization-administration/configure-manual-decision-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure conditional decisions
+          href: organization-administration/configure-conditional-decision-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure parallel activities
+          href: organization-administration/configure-parallel-activity-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure parallel branches
+          href: organization-administration/configure-parallel-branch-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure line-item workflows
+          href: organization-administration/configure-line-item-workflow.md?toc=/supply-chain/toc.json
+      - name: Configure the Workflow Message Processing batch job as critical
+        href: organization-administration/workflow-batch-job-critical.md?toc=/supply-chain/toc.json
+      - name: Delegate work items in a workflow
+        href: organization-administration/tasks/delegate-work-items-workflow.md?toc=/supply-chain/toc.json
+      - name: View workflow history
+        href: organization-administration/tasks/view-workflow-history.md?toc=/supply-chain/toc.json
+      - name: Configure the system to send workflow-related email to users
+        href: organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/supply-chain/toc.json
+      - name: Workflow types
+        items:
+        - name: Creating a workflow type
+          href: organization-administration/workflow-type-create.md?toc=/supply-chain/toc.json
+        - name: Workflow type checklist
+          href: organization-administration/workflow-type-checklist.md?toc=/supply-chain/toc.json
+        - name: Create a workflow category
+          href: organization-administration/workflow-type-category.md?toc=/supply-chain/toc.json
+        - name: Create a query for a workflow type
+          href: organization-administration/workflow-type-query.md?toc=/supply-chain/toc.json
+        - name: Create a new workflow type
+          href: organization-administration/workflow-type-create-new.md?toc=/supply-chain/toc.json
+        - name: Create a workflow document class
+          href: organization-administration/workflow-type-document-create.md?toc=/supply-chain/toc.json
+        - name: Create a SubmitToWorkflow class
+          href: organization-administration/workflow-type-submit-to-workflow.md?toc=/supply-chain/toc.json
+        - name: Associate a workflow document class with a workflow type
+          href: organization-administration/workflow-type-associate-document.md?toc=/supply-chain/toc.json
+      - name: Workflow types report
+        href: organization-administration/workflow-types-report.md?toc=/supply-chain/toc.json
+      - name: Workflow FAQ
+        href: organization-administration/workflow-FAQ.md?toc=/supply-chain/toc.json
+    - name: Alerts
+      items:
+      - name: Alerts overview
+        href: get-started/alerts-overview.md?toc=/supply-chain/toc.json
+      - name: Create alert rules
+        href: get-started/create-alerts.md?toc=/supply-chain/toc.json
+      - name: Batch processing of alerts
+        href: get-started/alerts-managing.md?toc=/supply-chain/toc.json
+      - name: Client alert notifications by email
+        href: get-started/alert-email-notifications.md?toc=/supply-chain/toc.json
+    - name: Electronic signatures
+      items:
+      - name: Electronic signatures overview
+        href: organization-administration/electronic-signature-overview.md?toc=/supply-chain/toc.json
+      - name: Set up electronic signatures
+        href: organization-administration/tasks/set-up-electronic-signatures.md?toc=/supply-chain/toc.json
+    - name: Case management
+      items:
+      - name: Case management overview
+        href: organization-administration/cases.md?toc=/supply-chain/toc.json
+      - name: Plan case security, processes, and categories
+        href: organization-administration/plan-case-management.md?toc=/supply-chain/toc.json
+    - name: Record templates
+      items:
+      - name: Record templates overview
+        href: organization-administration/record-templates.md?toc=/supply-chain/toc.json
+      - name: Create a record template
+        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/supply-chain/toc.json
+      - name: Use a record template to create a new record
+        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/supply-chain/toc.json
+    - name: Configure document management
+      href: organization-administration/configure-document-management.md?toc=/supply-chain/toc.json
+    - name: Configure and send email
+      href: organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    - name: Date/time data and time zones
+      href: organization-administration/date-time-zones.md?toc=/supply-chain/toc.json
+  - name: Procurement and sourcing
+    items:
+  - name: Product information management
+    items:
+  - name: Production control
+    items:
+  - name: Sales and marketing
+    items:
+  - name: Service management
+    items:
+  - name: Transportation management
+    items:
+  - name: Vendor collaboration
+    items:
+  - name: Warehouse management
+    items:
+  - name: Supply Chain Management development 
+    items:
+    - name: Gantt control development guide
+      href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/supply-chain/toc.json
+    - name: Create a new transportation management engine
+      href: ../../transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
+- name: Finance and Operations development and administration 
+  href: ../dev-itpro/toc.yml
