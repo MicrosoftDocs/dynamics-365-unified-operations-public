@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settlement priority in the public sector
-description: In Microsoft Dynamics 365 for Finance and Operations, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
+description: In Microsoft Dynamics 365 Finance, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
