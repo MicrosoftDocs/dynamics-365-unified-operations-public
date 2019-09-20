@@ -57,7 +57,7 @@ System will take the parameter value on journal header as final. Parameter value
 2. Click **Sales tax** tab
 3. Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it
 
-![](media\delayed-tax-calculation-gl.png)
+![](media/delayed-tax-calculation-gl.png)
 
 
 
@@ -66,7 +66,7 @@ System will take the parameter value on journal header as final. Parameter value
 1. Go to **General ledger > Journal setup > Journal names**
 2. Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it
 
-![](media\delayed-tax-calculation-journal-name.png)
+![](media/delayed-tax-calculation-journal-name.png)
 
 ## Enable delayed tax calculation by journal
 
@@ -76,4 +76,4 @@ System will take the parameter value on journal header as final. Parameter value
 4. Click **Setup**
 5. Find parameter **Delayed tax calculation**, turn on/off it
 
-![](media\delayed-tax-calculation-journal-header.png)
+![](media/delayed-tax-calculation-journal-header.png)
