@@ -2500,7 +2500,7 @@
       - name: Evaluate the results of a questionnaire
         href: ../talent/evaluate-questionnaire-results.md
       - name: Analyze questionnaire results
-        href: hr/tasks/analyze-questionnaire-results.md
+        href: ../fin-and-ops/hr/tasks/analyze-questionnaire-results.md
       - name: Create open-ended questions
         href: ../fin-and-ops/hr/tasks/create-open-ended-question.md
       - name: Create closed-ended questions
@@ -2716,68 +2716,68 @@
   - name: US Payroll
     items:
     - name: US Payroll overview
-      href: hr/localizations/noam-usa-payroll.md
+      href: ../fin-and-ops/hr/localizations/noam-usa-payroll.md
     - name: Payroll setup
       items:
       - name: Set up payroll for workers
-        href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks.md
       - name: Set up work cycles and work periods
-        href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks.md
       - name: Set up benefit accrual plans
-        href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
       - name: Set up benefits
-        href: hr/localizations/noam-usa-benefit-set-up-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks.md
     - name: Set up pay cycles and pay periods
-      href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
+      href: ../fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
     - name: Set up payroll calculation frequencies
-      href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
+      href: ../fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
     - name: Set up work schedules and leave
-      href: hr/localizations/noam-usa-work-schedule-leave-tasks.md
+      href: ../fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks.md
     - name: Codes and taxes
       items:
       - name: Set up earning codes and earning code groups
-        href: hr/localizations/noam-usa-earning-code-group-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks.md
       - name: Set up taxes, tax regions, tax codes, and tax groups
-        href: hr/localizations/noam-usa-tax-information-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-tax-information-tasks.md
       - name: Tax codes, tax groups, and posting definitions FAQ
-        href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
       - name: Enter payroll beginning balances
-        href: hr/localizations/noam-usa-enter-beginning-balances.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-enter-beginning-balances.md
     - name: Garnishments, tax levies, and premium pay
       items:
       - name: Set up garnishments and tax levies
-        href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
       - name: Enroll workers in garnishments or tax levies
-        href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
       - name: Set up premium earnings
-        href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks.md
       - name: Garnishments, tax levies, and administrative fees FAQ
-        href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
     - name: Track time off for the Family and Medical Leave Act
-      href: hr/localizations/noam-usa-track-time-for-fmla.md
+      href: ../fin-and-ops/hr/localizations/noam-usa-track-time-for-fmla.md
     - name: Payroll processing tasks
       items:
       - name: Earnings and earnings generation FAQ
-        href: hr/localizations/noam-usa-earnings-generation-process.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-earnings-generation-process.md
       - name: Generate earnings for workers
-        href: hr/localizations/noam-usa-generate-earnings.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-generate-earnings.md
       - name: Issue worker payments
-        href: hr/localizations/noam-usa-issue-worker-payments.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-issue-worker-payments.md
       - name: Post payroll distributions and generate vendor invoices
-        href: hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
       - name: Pay statements and payment generation FAQ
-        href: hr/localizations/noam-usa-pay-statements-payment-generation-process.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process.md
     - name: Complete the payment process
       items:
       - name: Process existing payroll payments
-        href: hr/localizations/noam-usa-existing-payroll-payments.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments.md
       - name: Process existing earnings
-        href: hr/localizations/noam-usa-existing-earnings.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-existing-earnings.md
       - name: Generate and work with pay statements
-        href: hr/localizations/noam-usa-pay-statements.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-pay-statements.md
     - name: Maintenance and reporting
       items:
       - name: Payroll data updates FAQ
-        href: hr/localizations/noam-usa-payroll-data-updates.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-payroll-data-updates.md
       - name: Standard payroll reports
-        href: hr/localizations/noam-usa-generate-payroll-reports.md
+        href: ../fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports.md
