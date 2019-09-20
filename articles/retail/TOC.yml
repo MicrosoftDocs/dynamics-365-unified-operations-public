@@ -868,3 +868,193 @@
     items:
     - name: Loyalty extension
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+  - name: Mobile app
+    items:
+    - name: Mobile app home page
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/supply-chain/toc.json
+    - name: Mobile workspaces
+      items:
+      - name: Available mobile workspaces
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/supply-chain/toc.json
+      - name: Company directory
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Cost controlling
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Expense management
+        href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Inventory on-hand
+        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Invoice approvals
+        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: My team
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md?toc=/supply-chain/toc.json
+      - name: Project time entry
+        href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Project timesheet
+        href: ../financials/project-management/project-timesheet.md?toc=/supply-chain/toc.json
+      - name: Purchase order approval
+        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Sales orders
+        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/supply-chain/toc.json
+      - name: Vendor collaboration
+        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/supply-chain/toc.json
+    - name: Publish mobile workspaces
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/supply-chain/toc.json
+  - name: Office integration
+    items:
+    - name: Office integration overview
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/supply-chain/toc.json
+    - name: Office integration tutorial
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/supply-chain/toc.json
+    - name: Open entity data in Excel and update it using the Excel add-in
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/supply-chain/toc.json
+    - name: Create Open in Excel experiences
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/supply-chain/toc.json
+    - name: Add templates to the Open lines in Excel menu
+      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/supply-chain/toc.json
+    - name: Customize the Open in Microsoft Office menu
+      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/supply-chain/toc.json
+    - name: Configure and send email
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    - name: Develop email experiences
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/supply-chain/toc.json
+    - name: Troubleshoot the Office integration
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/supply-chain/toc.json
+  - name: Organization administration
+    items:
+    - name: Organization administration home page
+      href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/supply-chain/toc.json
+    - name: Number sequences
+      items:
+      - name: Number sequences overview
+        href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/supply-chain/toc.json
+      - name: Set up number sequences on an individual basis
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/supply-chain/toc.json
+      - name: Set up number sequences using a wizard
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/supply-chain/toc.json
+    - name: Organizations and organizational hierarchies
+      items:
+      - name: Organizations and organizational hierarchies overview
+        href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/supply-chain/toc.json
+      - name: Plan your organizational hierarchy
+        href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/supply-chain/toc.json
+      - name: Create an organization hierarchy
+        href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/supply-chain/toc.json
+      - name: Create legal entities
+        href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/supply-chain/toc.json
+      - name: Create operating units
+        href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/supply-chain/toc.json
+    - name: Global address book
+      items:
+      - name: Global address book overview
+        href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/supply-chain/toc.json
+      - name: Plan for the global address book and other address books
+        href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/supply-chain/toc.json
+      - name: Configure the global address book
+        href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/supply-chain/toc.json
+      - name: Address books FAQ
+        href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/supply-chain/toc.json
+      - name: Configure address books
+        href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/supply-chain/toc.json
+    - name: Workflow system
+      items:
+      - name: Workflow system overview
+        href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/supply-chain/toc.json
+      - name: Workflow system architecture
+        href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/supply-chain/toc.json
+      - name: Workflow elements
+        href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/supply-chain/toc.json
+      - name: Workflow actions
+        href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/supply-chain/toc.json
+      - name: Create workflows
+        items:
+        - name: Create workflows overview
+          href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure workflow properties
+          href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/supply-chain/toc.json
+        - name: Configure manual tasks
+          href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure automated tasks
+          href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure approval processes
+          href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure approval steps
+          href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure manual decisions
+          href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure conditional decisions
+          href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure parallel activities
+          href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure parallel branches
+          href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/supply-chain/toc.json
+        - name: Configure line-item workflows
+          href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/supply-chain/toc.json
+      - name: Configure the Workflow Message Processing batch job as critical
+        href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/supply-chain/toc.json
+      - name: Delegate work items in a workflow
+        href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/supply-chain/toc.json
+      - name: View workflow history
+        href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/supply-chain/toc.json
+      - name: Configure the system to send workflow-related email to users
+        href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/supply-chain/toc.json
+      - name: Workflow types
+        items:
+        - name: Creating a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/supply-chain/toc.json
+        - name: Workflow type checklist
+          href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/supply-chain/toc.json
+        - name: Create a workflow category
+          href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/supply-chain/toc.json
+        - name: Create a query for a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/supply-chain/toc.json
+        - name: Create a new workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/supply-chain/toc.json
+        - name: Create a workflow document class
+          href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/supply-chain/toc.json
+        - name: Create a SubmitToWorkflow class
+          href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/supply-chain/toc.json
+        - name: Associate a workflow document class with a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/supply-chain/toc.json
+      - name: Workflow types report
+        href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/supply-chain/toc.json
+      - name: Workflow FAQ
+        href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/supply-chain/toc.json
+    - name: Alerts
+      items:
+      - name: Alerts overview
+        href: ../fin-and-ops/get-started/alerts-overview.md?toc=/supply-chain/toc.json
+      - name: Create alert rules
+        href: ../fin-and-ops/get-started/create-alerts.md?toc=/supply-chain/toc.json
+      - name: Batch processing of alerts
+        href: ../fin-and-ops/get-started/alerts-managing.md?toc=/supply-chain/toc.json
+      - name: Client alert notifications by email
+        href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/supply-chain/toc.json
+    - name: Electronic signatures
+      items:
+      - name: Electronic signatures overview
+        href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/supply-chain/toc.json
+      - name: Set up electronic signatures
+        href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/supply-chain/toc.json
+    - name: Case management
+      items:
+      - name: Case management overview
+        href: ../fin-and-ops/organization-administration/cases.md?toc=/supply-chain/toc.json
+      - name: Plan case security, processes, and categories
+        href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/supply-chain/toc.json
+    - name: Record templates
+      items:
+      - name: Record templates overview
+        href: ../fin-and-ops/organization-administration/record-templates.md?toc=/supply-chain/toc.json
+      - name: Create a record template
+        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/supply-chain/toc.json
+      - name: Use a record template to create a new record
+        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/supply-chain/toc.json
+    - name: Configure document management
+      href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/supply-chain/toc.json
+    - name: Configure and send email
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    - name: Date/time data and time zones
+      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/supply-chain/toc.json
