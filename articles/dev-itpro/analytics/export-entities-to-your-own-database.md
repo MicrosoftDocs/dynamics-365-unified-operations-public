@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -155,7 +155,7 @@ You can use the **Export** page to export data from Finance and Operations into 
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the Finance and Operations batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
-The same job can also be used to export data from all companies. In platform prior to upate 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md). Starting platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. 
+The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. 
 
 > [!NOTE]
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
