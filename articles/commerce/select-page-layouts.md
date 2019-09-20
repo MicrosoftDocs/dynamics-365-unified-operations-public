@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select page layouts
-description: This article explains how to create and select page layouts in Dynamics 365 Commerce.
+description: This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -35,35 +35,33 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This article explains how to create and select page layouts in Dynamics 365 Commerce.
+This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
 
 ## Create layouts for an existing page
 
-[!NOTE]
-To be able to create layouts, the page will need at least two modules under the main slot.
+> [!NOTE]
+> You can create layouts for an existing page only if that page has at least two modules under the main slot.
 
-To create layouts for an existing page, do the following.
+To create layouts for an existing page, follow these steps.
 
-1. Go to **Pages** and find the existing page in the list. Use search if required.
-1. Select the page, check it out, and click on the page to open it. Make note of the module order.
-1. Click **Save as New Layout**.
-1. Enter a name for the layout and click **OK**.
-1. Click **Convert to Embedded Layout**.
-1. Change the order of the modules as needed and make note of the new order.
-1. Click **Save as New Layout**.
-1. Enter a name for the layout and click **OK**.
-1. Click **Change Layout**, then select the layout you created first and click **OK**. Make note of the module order change to match the module order saved with the layout.
+1. Go to **Pages**, and find the existing page in the list. Use the search feature as you require.
+1. Select the page, check it out, and then select it to open it. Make a note of the module order.
+1. Select **Save as New Layout**.
+1. Enter a name for the layout, and then select **OK**.
+1. Select **Convert to Embedded Layout**.
+1. Change the order of the modules as you require, and make a note of the new order.
+1. Select **Save as New Layout**.
+1. Enter a name for the layout, and then select **OK**.
+1. Select **Change Layout**, select the first layout that you created, and then select **OK**. Make a note of the module order. Change it so that it matches the module order that was saved with the layout.
 
 ## Select a different layout for an existing page
 
-[!NOTE]
-To select a different layout, the existing page must have been created using a template with more than one layout.
+> [!NOTE]
+> You can select a different layout for an existing page only if the template that was used to create that page has more than one layout.
 
-Select a different layout for an existing page, do the following.
+To select a different layout for an existing page, follow these steps.
 
-1. Go to **Pages** and find the existing page in the list. Use search if required.
-1. Select the page, check it out, and click on the page to open it.
-1. Click **Change layout**.
-1. Select the new layout for the page and click **OK**. The page editor will refresh to show the new layout.
-
-
+1. Go to **Pages**, and find the existing page in the list. Use the search feature as you require.
+1. Select the page, check it out, and then select it to open it.
+1. Select **Change layout**.
+1. Select the new layout for the page, and then select **OK**. The page editor is refreshed to show the new layout.
