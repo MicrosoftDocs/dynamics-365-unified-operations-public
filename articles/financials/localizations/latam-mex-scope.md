@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of Mexican localization
-description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico that have been implemented as part of Microsoft Dynamics AX or Microsoft Dynamics 365 Finance.
+description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico that have been implemented as Microsoft Dynamics 365 Finance.
 author: sndray
 manager: AnnBe
 ms.date: 04/11/2018
