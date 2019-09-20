@@ -708,6 +708,139 @@
       href: procurement/tasks/submit-approve-project-budget-revision.md
   - name: Product information management
     items:
+    - name: Product information overview
+      href: pim/product-information.md
+    - name: Product information
+      items:
+      - name: Product identifiers
+        href: pim/product-identifiers.md
+      - name: Create a hierarchy of product classification
+        href: pim/tasks/create-hierarchy-product-classification.md
+      - name: Classify a product using category hierarchies
+        href: pim/tasks/classify-product-category-hierarchies.md
+      - name: Product number nomenclature
+        href: pim/product-variant-identification-nomenclature.md
+      - name: Create a product number nomenclature for predefined product variants
+        href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+      - name: Create a product number nomenclature for configured product variants
+        href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+      - name: Create a new product
+        href: pim/tasks/create-new-product.md
+      - name: Create a product master
+        href: pim/tasks/create-product-master.md
+      - name: Create predefined product variants
+        href: pim/tasks/create-predefined-product-variants.md
+      - name: Unit of measure conversion per product variant
+        href: pim/uom-conversion-per-product-variant.md
+      - name: Create a released product for a single company
+        href: pim/tasks/create-released-product-single-company.md
+      - name: Product lifecycle state
+        items:
+        - name: Product lifecycle state overview
+          href: pim/product-lifecycle.md
+        - name: Create a new product lifecycle state
+          href: pim/tasks/new-product-lifecycle-state.md
+        - name: Create a default product lifecycle state
+          href: pim/tasks/default-product-lifecycle-state.md
+        - name: Assign a product lifecycle state to a released product master
+          href: pim/tasks/product-lifecycle-state-released-product-master.md
+        - name: Assign a product lifecycle state to a released product
+          href: pim/tasks/product-lifecycle-state-released-product.md
+        - name: Find obsolete product variants
+          href: pim/tasks/obsolete-product-variants.md
+        - name: Exclude products from Master planning
+          href: pim/tasks/exclude-products-master-planning.md
+      - name: Create a bar code for a product
+        href: pim/tasks/create-bar-code-product.md
+      - name: Enter the GTIN code for a product
+        href: pim/tasks/enter-gtin-code-product.md
+      - name: Create batch attributes for a product
+        href: pim/tasks/create-batch-attributes-product.md
+      - name: Add an image to a product
+        href: pim/tasks/add-image-product.md
+      - name: Translation of product information FAQ
+        href: pim/translations-product-related-information.md
+      - name: Search for product during order entry
+        href: pim/search-products-product-variants.md
+      - name: Default order settings for dimensions and product variants
+        href: production-control/default-order-settings.md
+      - name: Bills of materials and formulas
+        href: production-control/bill-of-material-bom.md
+      - name: Use the BOM designer
+        href: production-control/bom-designer-functionality.md
+      - name: Use the formula designer
+        href: production-control/formula-designer.md
+      - name: Add variant products to purchase orders using variant weights
+        href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+      - name: Create a sales order for a configurable product
+        href: pim/tasks/create-sales-order-configurable-product.md
+      - name: Create sales price selection criteria
+        href: pim/tasks/create-sales-price-selection-criteria.md
+      - name: Set up attribute-based pricing for configurable products
+        href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+      - name: BOM calculations
+        href: cost-management/bom-calculations.md
+    - name: Product configuration
+      items:
+      - name: Product configuration overview
+        href: pim/build-product-configuration-model.md
+      - name: Create dimension-based configuration
+        items:
+        - name: Dimension-based product configuration overview
+          href: pim/dimension-based-product-configuration.md
+        - name: Product dimension
+          href: pim/product-dimensions.md
+        - name: Create a dimension-based product master
+          href: pim/tasks/create-dimension-based-product-master.md
+        - name: Release a dimension-based product master
+          href: pim/tasks/release-dimension-based-product-master.md
+        - name: Complete basic setup of a released product master
+          href: pim/tasks/complete-basic-setup-released-product-master.md
+        - name: Define configuration groups
+          href: pim/tasks/define-configuration-groups.md
+        - name: Create a bill of materials for a dimension-based product master
+          href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+        - name: Define configuration routes
+          href: pim/tasks/define-configuration-route.md
+        - name: Create configuration rules
+          href: pim/tasks/create-configuration-rules.md
+        - name: Create dimension-based configurations
+          href: pim/tasks/create-dimension-based-configurations.md
+      - name: Create constraint-based configuration
+        items:
+        - name: Set up a product configuration model
+          href: pim/set-up-maintain-product-configuration-model.md
+        - name: Calculation for product configuration model FAQ
+          href: pim/calculate-product-configuration-models.md
+        - name: Configuration rule
+          href: pim/configuration-rules.md
+        - name: Expression constraint and table constraint
+          href: pim/expression-constraints-table-constraints-product-configuration-models.md
+        - name: Solver strategy for product configuration
+          href: pim/solver-strategy-product-configuration.md
+        - name: Reuse product configuration
+          href: pim/reuse-product-configurations.md
+        - name: System-defined and user-defined table constraint
+          href: pim/system-defined-user-defined-table-constraints.md
+        - name: Create product model components
+          href: pim/tasks/create-product-model-components.md
+        - name: Create a product configuration model
+          href: pim/tasks/create-product-configuration-model.md
+        - name: Add an expression constraint to a product configuration model
+          href: pim/tasks/add-expression-constraint-product-configuration-model.md
+        - name: Add a calculation to a product configuration model
+          href: pim/tasks/add-calculation-product-configuration-model.md
+        - name: Maintain BOM for a product configuration model
+          href: pim/tasks/maintain-bom-product-configuration-model.md
+        - name: Maintain a route for a product model
+          href: pim/tasks/maintain-route-product-model.md
+        - name: Approve a product configuration model
+          href: pim/tasks/approve-product-configuration-model.md
+        - name: Transfer data for product models
+          href: pim/tasks/transfer-data-product-models.md
+    
+    
+    
   - name: Production control
     items:
   - name: Sales and marketing
