@@ -43,15 +43,13 @@
       - name: Cloud deployment
         href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/retail/toc.json
       - name: System requirements for cloud deployments
-        href: ../fin-and-ops/get-started/system-requirements.md?toc=/retail/toc.json
+        href: ../retail/get-started/system-requirements.md?toc=/retail/toc.json
       - name: On-premises deployment
         href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/retail/toc.json
       - name: System requirements for on-premises deployments
         href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/retail/toc.json
       - name: Buy Finance + Operations (on-premises)
         href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/retail/toc.json
-      - name: Configure Warehousing for on-premises deployments
-        href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/retail/toc.json
       - name: Finance and Operations operated by 21Vianet in China
         href: ../dev-itpro/deployment/china-local-deployment.md?toc=/retail/toc.json
       - name: Finance and Operations in France
