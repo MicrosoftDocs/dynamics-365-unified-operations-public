@@ -68,11 +68,11 @@ Once you are happy with the template, Check-in and publish the template. Then we
 >*Notice only modules (with MinOccurs =1) that were associated with slots as part of template definition, found under the category page, are readily available with template-based configurations.* 
 
 3. Once the pages have been authored and checked in/published, you should create the appropriate URLs for the pages: 
-   1.*Search Page: should have a URL path of '/search'*
-       1. Go to URLs > Create a new URL and associate your search page
+  +.*Search Page: should have a URL path of '/search'*
+       +. Go to URLs > Create a new URL and associate your search page
        ![searchPageToURLAssociation](./media/SearchURL_page_association.png)
-   1.*Category Page: should have an alias of 'category-default'. By using the category-default alias, you should now be able to select a category to populate the page for WYSIWYG page editing.* 
-       1. Go to URLs > Create a new Alias and associate your category page
+  +.*Category Page: should have an alias of 'category-default'. By using the category-default alias, you should now be able to select a category to populate the page for WYSIWYG page editing.* 
+       +. Go to URLs > Create a new Alias and associate your category page
        ![category-default-alias](./media/CategoryDefaultAlias.png)
  
  
