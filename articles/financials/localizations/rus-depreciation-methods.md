@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various methods that can be used for fixed asset depreciation for Russia and their implementation in the aplication.
+This topic describes the various methods that can be used for fixed asset depreciation for Russia and their implementation in the application.
 The process of calculating monthly depreciation can be done in several ways. In tax accounting and accounting, there are a linear and non-linear depreciation calculation methods.
 
 ## Linear and non-linear depreciation methods
@@ -61,7 +61,7 @@ In addition, when an asset's net book value (remaider) reaches 20 percent of its
 > [!NOTE] 
 > **Non-lilear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methos](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
 
-See additional description of the depreciation methods, implemented in aplication, below.  
+See additional description of the depreciation methods, implemented in application, below.  
 
 ## Product output-mileage depreciation method 
 
