@@ -1056,7 +1056,7 @@
       href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
     - name: Date/time data and time zones
       href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/retail/toc.json
-- name: Development and administration for Finance and Operations apps
+- name: Finance and Operations apps development and administration
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 Commerce
   href: ../commerce/toc.yml
