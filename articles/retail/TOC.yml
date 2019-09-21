@@ -653,9 +653,8 @@
     - name: Configure retail workers
       href: tasks/worker.md
   - name: Retail development and administration
+    href: dev-itpro/dev-retail-home-page.md
     items:
-    - name: Retail for IT pros and developers
-      href: dev-itpro/dev-retail-home-page.md
     - name: Architecture
       items:
       - name: Retail components
@@ -1058,4 +1057,3 @@
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 Commerce (Preview)
   href: ../commerce/toc.yml
-
