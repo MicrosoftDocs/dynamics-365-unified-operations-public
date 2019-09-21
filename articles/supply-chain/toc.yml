@@ -1068,22 +1068,514 @@
         href: production-control/tasks/transfer-materials-kanban-jobs.md
       - name: Update kanban status
         href: production-control/tasks/update-kanban-status.md
- 
 - name: Sales and marketing
   items:
+  - name: Sales and marketing overview
+    href: sales-marketing/overview-sales-marketing.md
+  - name: Sales orders
+    items:
+    - name: Order promising
+      href: sales-marketing/delivery-dates-available-promise-calculations.md
+    - name: Order entry deadlines
+      href: sales-marketing/order-entry-deadlines.md
+    - name: Delivery alternatives
+      href: sales-marketing/delivery-alternatives.md
+    - name: Direct deliveries
+      href: sales-marketing/direct-deliveries.md
+    - name: Delivery schedules
+      href: sales-marketing/delivery-schedules.md
+    - name: Create a delivery schedule
+      href: sales-marketing/tasks/create-delivery-schedule.md
+    - name: Serial numbers in the sales process
+      href: sales-marketing/register-serial-numbers-sales-process.md
+    - name: Reservation from same batch
+      href: sales-marketing/reserve-same-batch-sales-order.md
+    - name: Sales orders mobile workspace
+      href: sales-marketing/sales-orders-mobile-workspace.md
+    - name: Ship orders as direct deliveries
+      href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+    - name: Ship sales orders without warehousing
+      href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+    - name: Create a purchase order from a sales order
+      href: sales-marketing/tasks/create-purchase-order-sales-order.md
+    - name: Create sales orders
+      href: sales-marketing/tasks/create-sales-orders.md
+    - name: Manage order holds
+      href: sales-marketing/tasks/manage-order-holds.md
+    - name: Confirm sales orders
+      href: sales-marketing/tasks/confirm-sales-orders.md
+  - name: Sales agreements
+    items:
+    - name: Sales agreements overview
+      href: sales-marketing/sales-agreements.md
+    - name: Enter sales agreements
+      href: sales-marketing/tasks/enter-sales-agreements.md
+    - name: Fulfill sales agreements
+      href: sales-marketing/tasks/fulfill-sales-agreements.md
+    - name: Generate and process customer rebates
+      href: sales-marketing/tasks/process-customer-rebates.md
+    - name: Process rebates for payment
+      href: sales-marketing/tasks/process-rebates-payment.md
+    - name: Look up applicable prices and discounts
+      href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+  - name: Sales quotations
+    items:
+    - name: Price simulation
+      href: sales-marketing/price-simulation.md
+    - name: Mass create sales quotations
+      href: sales-marketing/tasks/mass-sales-quotations.md
+    - name: Create and edit sales quotations
+      href: sales-marketing/tasks/create-edit-sales-quotations.md
+  - name: Returns
+    items:
+    - name: Sales returns
+      href: warehousing/sales-returns.md
+  - name: Commission
+    items:
+    - name: Register sales commissions
+      href: sales-marketing/tasks/register-sales-commissions.md
+    - name: Set up sales commission rules
+      href: sales-marketing/tasks/set-up-sales-commission-rules.md
+  - name: Trade allowance
+    href: sales-marketing/trade-allowance.md
+  - name: Create a new trade agreement
+    href: sales-marketing/tasks/create-new-trade-agreement.md
 - name: Service management
   items:
+  - name: Service management overview
+    href: service-management/service-management-home-page.md
+  - name: Set up customer service
+    items:
+    - name: Set up service agreements
+      items:
+      - name: Service agreements overview
+        href: service-management/service-agreement-groups.md
+      - name: Create service agreements
+        href: service-management/create-service-agreements.md
+      - name: Service intervals
+        href: service-management/service-intervals.md
+      - name: Set up service intervals
+        href: service-management/set-up-service-intervals.md
+      - name: Time windows
+        href: service-management/time-windows.md
+      - name: Create time windows
+        href: service-management/create-time-windows.md
+      - name: Create a service template group
+        href: service-management/create-service-template-group.md
+    - name: Set up service tasks
+      items:
+      - name: Service tasks overview
+        href: service-management/service-tasks.md
+      - name: Create service task relations
+        href: service-management/create-service-task-relations.md
+    - name: Set up service objects
+      items:
+      - name: Service objects overview
+        href: service-management/service-objects.md
+      - name: Create service objects
+        href: service-management/create-service-task-relations.md
+      - name: Attach inventory items to service objects
+        href: service-management/attach-inventory-items-service-objects.md
+      - name: Service object groups
+        href: service-management/service-object-groups.md
+      - name: Set up template to represent objects at customer site
+        href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+      - name: Service object relations
+        href: service-management/service-object-relations.md
+      - name: Create service object relations
+        href: service-management/create-service-object-relations.md
+      - name: Template BOMs
+        href: service-management/template-boms.md
+      - name: Create a template BOM
+        href: service-management/create-template-bom.md
+      - name: Attach templates to service objects
+        href: service-management/attach-templates-service-objects.md
+    - name: Define reason codes for service orders
+      items: 
+      - name: Reason codes for service orders
+        href: service-management/reason-codes-service-orders.md
+      - name: Service order stages
+        href: service-management/service-order-stages.md
+      - name: Set up service order stages
+        href: service-management/set-up-service-order-stages.md
+      - name: Create reason codes
+        href: service-management/create-reason-codes.md
+    - name: Set up service agreements and subscriptions
+      items:
+      - name: Service level agreements overview
+        href: service-management/service-level-agreements.md
+      - name: Subscription sales prices
+        href: service-management/subscription-sales-prices.md
+      - name: Subscription groups
+        href: service-management/subscription-groups.md
+      - name: Set up subscription groups
+        href: service-management/set-up-subscription-groups.md
+      - name: Use stage reason codes
+        href: service-management/use-stage-reason-codes.md
+      - name: Integration for service agreements and projects
+        href: service-management/integration-service-agreements-projects.md
+    - name: Set up repair management
+      href: service-management/repair-management.md
+    - name: Set up customer returns
+      items:
+      - name: Customer returns overview
+        href: service-management/disposition-and-return-reason-codes.md
+      - name: Set up disposition codes
+        href: service-management/set-up-disposition-codes.md
+      - name: Set up return reason codes
+        href: service-management/set-up-return-reason-code.md
+      - name: Specify how to dispose of returned items
+        href: service-management/specify-how-to-dispose-of-returned-items.md
+  - name: Work with customer service
+    items:
+    - name: Work with customer service overview
+      href: service-management/working-with-customer-service.md
+    - name: Fulfill service agreements
+      items:
+      - name: Fulfill service agreements overview
+        href: service-management/fulfill-service-agreements-overview.md
+      - name: Develop and establish agreements
+        items:
+        - name: Develop and establish service agreements overview
+          href: service-management/service-agreements.md
+        - name: Create service agreements
+          href: service-management/create-service-agreements.md
+        - name: Service subscriptions
+          href: service-management/service-subscriptions.md
+        - name: Service templates
+          href: service-management/service-template.md
+        - name: Copy service templates lines
+          href: service-management/copy-service-template-lines.md
+      - name: Change the service order stage
+        href: service-management/change-service-order-stage.md
+      - name: Update and evaluate agreements
+        items:
+        - name: Manage template BOMs on object relations
+          href: service-management/manage-template-boms-on-object-relations.md
+        - name: Delete a service BOM
+          href: service-management/delete-service-bom.md
+        - name: Indexed sales prices
+          href: service-management/indexed-sales-prices.md
+        - name: Reduce the days on subscription fees
+          href: service-management/reduce-the-days-on-subscription-fees.md
+        - name: Reduction days example
+          href: service-management/reduction-days-example.md
+        - name: Update and index subscription sales prices
+          href: service-management/update-and-index-subscription-sales-prices.md
+    - name: Handle customer inquiries
+      items:
+      - name: Fulfill service agreements overview
+        href: service-management/fulfill-service-agreements-overview.md
+      - name: Start and stop time recording on a service order
+        href: service-management/start-and-stop-time-recording-on-a-service-order.md
+      - name: View the start time and duration of a service order
+        href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+      - name: View stage reason codes
+        href: service-management/view-stage-reason-codes.md
+      - name: View compliance with service level agreements
+        href: service-management/view-compliance-with-service-level-agreements.md
+    - name: Authorize customer returns
+      items:
+      - name: Disposition codes and return reason codes
+        href: service-management/disposition-and-return-reason-codes.md
+      - name: Return cost price and return lot ID
+        href: service-management/return-cost-price-and-return-lot-id.md
+      - name: Cancel a return order
+        href: service-management/cancel-return-order.md
+      - name: Create an item replacement order
+        href: service-management/create-item-replacement-order.md
+      - name: Delete a return order
+        href: service-management/delete-return-order.md
+      - name: Pass returned items on to inspection
+        href: service-management/pass-returned-items-on-to-inspection.md
+      - name: Post arrival journal for returned products
+        href: service-management/post-arrival-journal-for-returned-products.md
+      - name: Receive partial deliveries of returned items
+        href: service-management/receive-partial-deliveries-returned-items.md
+      - name: Receive returned items
+        href: service-management/receiving-returned-items.md
+      - name: Register the receipt of returned items
+        href: service-management/register-the-receipt-of-returned-items.md
+      - name: Take returned items through inspection
+        href: service-management/take-returned-items-through-inspection.md
+      - name: Packing slip updates for returns
+        href: service-management/packing-slip-updates-returns.md
+      - name: Perform invoice updates for returns
+        href: service-management/perform-invoice-updates-for-returns.md
+    - name: Deliver services
+      items:
+      - name: Plan and allocate service orders
+        items:
+        - name: Service orders
+          href: service-management/service-orders.md
+        - name: Automatically create service orders
+          href: service-management/auto-create-service-orders.md
+        - name: Service status and progress field interaction
+          href: service-management/service-status-and-progress-field-interaction.md
+        - name: Create service orders automatically
+          href: service-management/create-service-orders-automatically.md
+        - name: Create item requirements for service orders
+          href: service-management/create-item-requirements-service-orders.md
+        - name: Service order item requirements
+          href: service-management/service-order-item-requirements.md
+        - name: Subscription workflow overview
+          href: service-management/subscription-workflow-overview.md
+        - name: Combine service orders
+          href: service-management/combine-service-orders.md
+        - name: Create service subscriptions from a subscription group
+          href: service-management/create-service-subscriptions-from-subscription-group.md
+        - name: Project attached to service agreement
+          href: service-management/project-attached-to-service-agreement.md
+        - name: Create service subscriptions from a project
+          href: service-management/create-service-subscriptions-from-project.md
+      - name: Dispatching service order activities
+        items:
+        - name: Service activities
+          href: service-management/service-activities.md
+        - name: Dispatch board
+          href: service-management/dispatch-board.md
+        - name: Set up service activity types
+          href: service-management/set-up-service-activity-types.md
+        - name: Set up a preferred technician
+          href: service-management/set-up-preferred-technician.md
+        - name: Set up dispatch teams
+          href: service-management/set-up-dispatch-teams.md
+        - name: Prioritize service orders
+          href: service-management/prioritize-service-orders.md
+        - name: View the status of service orders
+          href: service-management/view-the-status-of-service-orders.md
+        - name: Monitor service activities
+          href: service-management/monitor-service-activities.md
+        - name: Reassign activities
+          href: service-management/reassign-activities.md
+        - name: Reverse changes in a dispatch board
+          href: service-management/reverse-changes-in-a-dispatch-board.md
+        - name: View undispatched service orders
+          href: service-management/view-undispatched-service-orders.md
+        - name: Modify a Service BOM
+          href: service-management/modify-service-bom.md
+      - name: Deliver service
+        items:
+        - name: Credit subscription transactions
+          href: service-management/credit-subscription-transactions.md
+        - name: Create subscription fee transactions
+          href: service-management/create-subscription-fee-transactions.md
+        - name: Accruing subscriptions
+          href: service-management/accruing-subscriptions.md
+        - name: Move service order lines
+          href: service-management/move-service-order-lines.md
+        - name: Cancel service orders
+          href: service-management/cancel-service-orders.md
+        - name: Create service orders manually
+          href: service-management/create-service-orders-manually.md
+        - name: Accrue subscription revenue
+          href: service-management/accrue-subscription-revenue.md
+        - name: Delete service orders
+          href: service-management/delete-service-orders.md
+        - name: Invoice subscription transactions
+          href: service-management/invoice-subscription-transactions.md
 - name: Transportation management
   items:
-- name: Vendor collaboration
-  items:
+  - name: Transportation management
+    items:
+    - name: Transportation management overview
+      href: transportation/transportation-management-overview.md
+    - name: Transportation management engines
+      href: transportation/transportation-management-engines.md
+    - name: Create a new transportation management engine
+      href: transportation/create-new-transportation-management-engine.md
+    - name: Associate a fuel index with a carrier as an accessorial charge
+      href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+    - name: Create a bill of lading
+      href: transportation/create-bill-of-lading.md
+    - name: Plan freight transportation routes
+      href: transportation/plan-freight-transportation-routes-multiple-stops.md
+    - name: Plan loads using hub consolidation
+      items:
+      - name: Plan loads using hub consolidation overview
+        href: transportation/plan-loads-hub-consolidation.md
+      - name: Plan loads and shipments using the Load planning workbench
+        href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+    - name: Include container weight and volume on load
+      href: transportation/include-container-weight-volume-on-load.md
+    - name: Reconcile freight manually
+      href: transportation/tasks/reconcile-freight-manually.md
+    - name: Reconcile freight
+      href: transportation/reconcile-freight-transportation-management.md
+    - name: Register driver check-in and check-out for an appointment
+      href: transportation/tasks/register-driver-check-check-out-appointment.md
+    - name: Set up a carrier fuel index
+      href: transportation/tasks/set-up-carrier-fuel-index.md
+    - name: Set up a transportation tender
+      href: transportation/tasks/set-up-transportation-tender.md
+    - name: Set up accessorial assignments
+      href: transportation/tasks/set-up-accessorial-assignments.md
+    - name: Set up an appointment for a load
+      href: transportation/tasks/set-up-appointment-load.md
+    - name: Set up automatic freight reconciliation
+      href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+    - name: Set up hub accessorial charges and accessorial masters
+      href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+    - name: Set up rate masters
+      href: transportation/tasks/set-up-rate-masters.md
+    - name: Set up shipping carriers
+      href: transportation/tasks/set-up-shipping-carriers.md
+    - name: Set up transportation constraints for an item
+      href: transportation/tasks/set-up-transportation-constraints-item.md
 - name: Warehouse management
   items:
+  - name: Warehouse management overview
+    href: warehousing/warehouse-management-overview.md
+  - name: Warehouse configuration
+    items:
+    - name: Warehouse configuration overview
+      href: warehousing/warehouse-configuration.md
+    - name: Set up a warehouse by using a warehouse configuration template
+      href: inventory/warehouse-template.md
+    - name: Control work by using work templates and location directives
+      href: warehousing/control-warehouse-location-directives.md
+    - name: Wave step codes
+      href: warehousing/wave-step-codes.md
+    - name: Configure wave processing
+      href: warehousing/tasks/configure-wave-processing.md
+    - name: Auto-update shipments
+      href: warehousing/auto-update-shipment.md
+    - name: Create a location profile
+      href: warehousing/tasks/create-location-profile.md
+    - name: Configure locations in a WMS-enabled warehouse
+      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+    - name: Schedule load utilization
+      href: warehousing/schedule-load-utilization.md
+    - name: Schedule workload capacity
+      href: warehousing/schedule-workload-capacity.md
+    - name: Set up dispositions codes
+      href: warehousing/tasks/set-up-dispositions-codes.md
+    - name: Unit of measure and stocking policies
+      href: warehousing/unit-measure-stocking-policies.md
+    - name: Warehouse Power BI content
+      href: ../dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+    - name: System grouping on an open work list
+      href: warehousing/system-group-on-open-work-list.md
+    - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
+      href: warehousing/scan-bar-codes-using-a-camera.md
+    - name: Mobile barcode support
+      href: warehousing/mobile-barcode-support.md
+    - name: Set up warehouse for transfer orders
+      href: warehousing/transfer-orders-warehouse.md
+  - name: Warehouse work policies
+    items:
+    - name: Warehouse work policies overview
+      href: warehousing/warehouse-work-policies.md
+    - name: Set up warehouse work policies
+      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+    - name: Movement of inventory with associated work in Warehouse management
+      href: warehousing/move-inventory-associated-work.md
+    - name: Create a work class
+      href: warehousing/tasks/create-work-class.md
+    - name: Manage warehouse workers
+      href: warehousing/manage-warehouse-workers.md
+    - name: Deferred processing of warehouse work
+      href: warehousing/deferred-put.md
+  - name: Partial release and partial shipment
+    items:
+    - name: Partial shipment of a transport load
+      href: warehousing/partial-shipping-of-transport-loads.md
+    - name: Batch release of partially reserved transfer orders
+      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+  - name: Picking and packing
+    items:
+    - name: Set up cluster picking
+      href: warehousing/set-up-cluster-picking.md
+    - name: Set up containerization
+      href: warehousing/tasks/set-up-containerization.md
+    - name: Batch and license plate confirmation
+      href: warehousing/batch-and-license-plate-confirmation.md
+    - name: Enable license plate label printing
+      href: warehousing/tasks/license-plate-label-printing.md
+    - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
+      href: warehousing/scan-bar-codes-using-a-camera.md
+    - name: Piece picking confirmation
+      href: warehousing/piece-picking-confirmation.md
+    - name: Packing materials and fees
+      href: warehousing/pack-materials-packing-material-fees.md
+    - name: Set up manual packing (February & May 2016 only)
+      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+    - name: Set up short picking item reallocation
+      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+  - name: Inventory counting
+    items:
+    - name: Reason codes for inventory counting
+      href: warehousing/reason-codes-for-counting-journals.md
+    - name: Block inventory
+      href: inventory/inventory-blocking.md
+    - name: Cycle counting
+      href: warehousing/cycle-counting.md
+    - name: Define cycle counting
+      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+    - name: Partial location cycle counting
+      href: warehousing/partial-location-cycle-counting.md
+    - name: Define partial location cycle counting process
+      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+    - name: Inventory journal
+      href: inventory/inventory-journals.md
+    - name: Inventory location
+      href: inventory/inventory-locations.md
+    - name: Inventory status
+      href: inventory/inventory-statuses.md
+    - name: Inventory tag counting
+      href: inventory/inventory-tag-counting.md
+  - name: Replenishment
+    items:
+    - name: Replenishment overview
+      href: warehousing/replenishment.md
+    - name: Immediate replenishment
+      href: warehousing/immediate-replenishment.md
+    - name: Replenishment with withdrawal kanbans
+      href: warehousing/material-replenishment-withdrawal-kanban.md
+    - name: Set up a min-max replenishment process
+      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+  - name: Install and configure the warehousing app
+    items:
+    - name: Install and configure overview
+      href: warehousing/install-configure-warehousing-app.md
+    - name: Configure field names in warehousing app
+      href: warehousing/configure-app-field-names-priorities-warehouse.md
+    - name: Set up mobile devices for warehouse work
+      href: warehousing/configure-mobile-devices-warehouse.md
+    - name: Set up a mobile device menu item for completing work in a purchase order
+      href: warehousing/tasks/set-up-mobile-device-menu.md
+    - name: Set up a mobile device menu item to register received items
+      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+    - name: Create a mobile device menu item for license plate consolidation
+      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+    - name: Mixed license plate receiving on a mobile device
+      href: warehousing/mixed-license-plate-receiving.md
+    - name: Configure Display older batches within warehouse on a mobile device
+      href: warehousing/display-older-batches-within-warehouses.md
+    - name: Pick oldest batch on a mobile device
+      href: warehousing/pick-oldest-batch.md
+    - name: Process guide framework
+      href: warehousing/process-guide-framework.md
+  - name: Upgrade and migration
+    items:
+    - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
+      href: warehousing/upgrade-migration-warehouse-management-processes.md
+  - name: Receipts for registration and put-away
+    items:
+    - name: Register items for an advanced warehousing enabled item using an item arrival journal
+      href: warehousing/tasks/register-items-advanced-warehousing.md
+    - name: Register items for a basic warehousing enabled item using an item arrival journal
+      href: warehousing/tasks/register-items-basic-warehousing.md
+    - name: Cross-dock products from receiving warehouse to stores
+      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+    - name: Set up a location directive for purchase order put-away
+      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+    - name: Set up a work template for purchase orders
 - name: Supply Chain Management development 
   items:
   - name: Gantt control development guide
     href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/supply-chain/toc.json
   - name: Create a new transportation management engine
     href: transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
-- name: Finance and Operations development and administration 
+- name: Finance and Operations apps development and administration 
   href: ../dev-itpro/toc.yml
