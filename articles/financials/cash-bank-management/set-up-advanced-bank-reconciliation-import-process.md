@@ -53,7 +53,7 @@ This time zone might not be the same as a user’s or company’s time zone, so 
  
  - Users can adjust their own time zone using their **User options**.
 
-Note the following actions that can help minimize potential date and time conflicts when you import bank statements. 
+Note that the following actions can help minimize potential date and time conflicts when you import bank statements. 
 
  - Avoid changing the time zone preferences for any bank accounts that have already had statements imported. Changing the time zone preference could impact the ordering of new statements relative to existing statements due to the time zone adjustment. 
  
