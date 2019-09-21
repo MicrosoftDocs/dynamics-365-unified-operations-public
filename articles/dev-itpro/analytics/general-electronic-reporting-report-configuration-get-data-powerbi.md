@@ -40,11 +40,11 @@ This topic explains how you can use your Electronic reporting (ER) configuration
 
 Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights. Electronic reporting (ER) lets users easily configure data sources and arrange the transfer of data from the application to Power BI. The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format. The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose. The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on). Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on the application pages. This topic explains the following tasks:
 
-- Configure Finance and Operations.
-- Prepare your ER format configuration to get data from Finance and Operations.
+- Configure Microsoft Dynamics 365 Finance.
+- Prepare your ER format configuration to get data from the Finance application.
 - Configure the ER environment to transfer data to Power BI.
 - Use transferred data to create a Power BI report.
-- Make the Power BI report accessible in Finance and Operations.
+- Make the Power BI report accessible in Finance.
 
 ## Prerequisites
 To complete the example in this topic, you must have the following access:
@@ -189,7 +189,7 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 
     [![Updated map](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
-## Access Power BI report in Finance and Operations
+## Access Power BI report in Finance
 Set up the integration with Power BI. For more information, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md).
 
 1. On the **Electronic reporting** workspace page that supports Power BI integration (**Organization administration** &gt; **Workspaces** &gt; **Electronic reporting workspace**), click **Options** &gt; **Open report catalog**.
