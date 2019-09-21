@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes the relationship between configuration keys and data entities.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 05/10/2019
