@@ -62,7 +62,7 @@ When the Document Routing Agent runs as a desktop application, it continues to t
 
 4. Copy the configuration file from step 1, and paste it into the following directory: C:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing. This step helps guarantee that all your previous configuration settings are used for the new version of the Document Routing Agent application.
 5. Run the Document Routing Agent.
-6. Sign in by using your Microsoft Azure Active Directory (Azure AD) or Finance and Operations credentials.
+6. Sign in by using your Microsoft Azure Active Directory (Azure AD) or your credentials for your Finance and Operations apps.
 7. View and verify your settings and printers by clicking the appropriate menu items.
 
 The next section provides detailed instructions for selecting the Windows service execution mode.
