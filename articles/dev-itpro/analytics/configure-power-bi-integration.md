@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Overview
 
-Finance and Operations lets users pin tiles, dashboards, and reports from their own PowerBI.com account to workspaces.
+Users can pin tiles, dashboards, and reports from their own PowerBI.com account to application workspace.
 
 This functionality requires a one-time configuration of your environment. An administrator must do this step to enable Microsoft Power BI to communicate and authenticate correctly.
 
-For a Finance and Operations workspace to show a Power BI tile, the server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the application workspace. The fact that the server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from the user's PowerBI.com subscription.
+For a workspace to show a Power BI tile, the server must contact the Power BI service on behalf of a user and access the visualization. It must then redraw the visualization in the application workspace. The fact that the server contacts the Power BI service "on behalf of a user" is important. When a user, such as `D365User@contoso.com`, contacts the PowerBI.com service, Power BI should show only tiles and reports from the user's PowerBI.com subscription.
 
 By completing this configuration step, you enable to contact the PowerBI.com service.
 
@@ -65,7 +65,7 @@ By completing this configuration step, you enable to contact the PowerBI.com ser
 
 - **Name** - Your app name.
 - **Application type** - Web app/API
-- **Sign-on URL** - The base URL of your Finance and Operations client. For example, `https://contosoax7.cloud.dynamics.com`.
+- **Sign-on URL** - The base URL of your client. For example, `https://contosoax7.cloud.dynamics.com`.
 
 > [!NOTE]
 > Depending on your version, you may need to add /oauth as a suffix to the URL, or use http instead of https as the protocol, such as: `https://contosoax7.cloud.dynamics.com/oauth/` or `http://contosoax7.cloud.dynamics.com/oauth/`.
