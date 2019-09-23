@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent (DRA).  The DRA is a downloadable application that you can use to enable network printing scenarios.  You can enable network printers for specific companies by using in-client administrative pages.
+This topic describes how to install and configure the Document Routing Agent (DRA).  The DRA is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
@@ -133,7 +133,7 @@ Yes. The Azure Active Directory token must be refreshed every 90 days. Failing t
 
 No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.
 
-### Does the user who installs the Document Routing Agent have to be part of a Finance and Operations security group?
+### Does the user who installs the Document Routing Agent have to be part of a Finance and Operations apps security group?
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
