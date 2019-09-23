@@ -60,7 +60,8 @@ To notify the POS user to prepare orders for pickup, inside CRT check if there a
 4. Configure the notification service in Retail Headquarters with the custom operation. When the scheduler runs it includea the custom operation too. For instructions on to configure notification in POS, see [Add POS operations to POS layouts by using Button grid designer](../notifications-pos).
     When the POS user clicks the notification, the framework calls the right operation based on the response returned form the CRT. The notification service runs for all the notification configured in retail headquarters and returns the response with the operation id and notification details. So, POS will have the context of operation ID and the framework will use this to call your operation implementation.
 
-> [!NOTE] The notification scheduler checks both CRT and Retail Headquarters to check if there are any new notifications. Depending on the scenario extend the real time transaction service in Retail Headquarters or only CRT. Scenarios where real-time processing is required for the notification then extend the Real-time transaction service method in Retail Headquarters if real-time processing is not required the extend only CRT.
+> [!NOTE] 
+> The notification scheduler checks both CRT and Retail Headquarters to check if there are any new notifications. Depending on the scenario extend the real time transaction service in Retail Headquarters or only CRT. Scenarios where real-time processing is required for the notification then extend the Real-time transaction service method in Retail Headquarters if real-time processing is not required the extend only CRT.
 
 ## Extend the notification service in CRT
 
