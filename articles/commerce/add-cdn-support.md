@@ -91,7 +91,7 @@ To configure a backend pool in Commerce, do the following.
 
 The following image shows the Commerce **Add a backend pool** screen.
 
-![CDN Backend Pool](/articles/commerce/media/CDN_BackendPool.png "CDN Backend Pool")
+![CDN Backend Pool](./media/CDN_BackendPool.png)
 
 ### Set up rules
 
