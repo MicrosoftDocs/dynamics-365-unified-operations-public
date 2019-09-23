@@ -149,7 +149,7 @@ namespace Contoso
 7. Once done with the changes build the project and drop the output library in **\RetailServer\webroot\bin\Ext**.
 8. Register the output library in **CommerceRuntime.Ext.config**.
 9. Create a new operation in POS with the same operation ID used in the CRT extension. In this example, it is **5000**. Use any operation ID greater than 5000.
-    When the user clicks the notification tile, the POS framework calls the operation handler for the operation id used. Inside the handler, add required logic for what should happen when the POS user clicks the notification. For instructions on how to create a POS  operation request, response, and handler, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations).
+    When the user clicks the notification tile, the POS framework calls the operation handler for the operation id used. Inside the handler, add required logic for what should happen when the POS user clicks the notification. For instructions on how to create a POS  operation request, response, and handler, see [Add POS operations to POS layouts by using Button grid designer](add-POS-operations.md).
     > [!NOTE]
     > The action property in the Notification detail entity will be sent to the POS operation request, use that action property to pass any custom information from the notification service to POS.
 10. Configure the notification scheduler according to the instructions in [Show order notifications in the point of sale (POS)](../notifications-pos.md).
