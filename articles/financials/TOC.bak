@@ -158,9 +158,9 @@
       items:
       - name: Implementation lifecycle management home page
         href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/financials/toc.json
-      - name: Finance and Operations architecture
+      - name: Architecture for Finance and Operations apps
         href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/financials/toc.json    
-      - name: Microsoft FastTrack for Finance and Operations
+      - name: Microsoft FastTrack
         href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/financials/toc.json
       - name: Onboard an implementation project
         href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/financials/toc.json
@@ -566,7 +566,7 @@
       href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
     - name: Use content pack for Microsoft Power BI reporting
       href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
-    - name: Use cost control workspace for Finance and Operations mobile application
+    - name: Use cost control workspace for mobile application
       href: cost-accounting/cost-controlling-mobile-workspace.md
   - name: Electronic messaging
     href: general-ledger/electronic-messaging.md
