@@ -4,6 +4,8 @@
     href: overview.md
   - name: Create a new e-Commerce site
     items:
+    - name: Create an e-Commerce site
+      href: create-ecommerce-site.md
     - name: Online store overview
       href: online-store-overview.md
     - name: Deploy a new e-Commerce site
