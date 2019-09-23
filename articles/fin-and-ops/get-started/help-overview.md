@@ -82,7 +82,7 @@ You can get help on other Dynamics 365 products by searching for them, or by cli
 
 ### Use an RSS feed
 
-To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager:
+To subscribe to an RSS feed of all updates to the Finance and Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager:
 
 [RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
