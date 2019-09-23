@@ -24,8 +24,12 @@
       href: add-favicon.md
   - name: Add and manage content on your site
     items:
-    - name: Add a checkout module to a page
-      href: add-checkout-module.md
+    - name: Pages
+      items:
+      - name: Select page layouts
+        href: select-page-layouts.md
+      - name: Add a checkout module to a page
+        href: add-checkout-module.md
   - name: Ratings and reviews
     items:
     - name: Manage ratings and reviews
