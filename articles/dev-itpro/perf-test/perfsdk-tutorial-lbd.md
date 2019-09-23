@@ -166,10 +166,10 @@ Follow these steps in the development environment.
 
 11. In the **CloudEnvironment.Config** file, specify values for the following keys. These values replace the placeholder values in square brackets in the template.
 
-    - **HostName** – Specify the URL that is used to access your Microsoft Dynamics 365 for Finance and Operations on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
+    - **HostName** – Specify the URL that is used to access your on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
     - **SoapHostName** – Specify the same URL that you specified for **HostName**.
     - **SelfSigningCertificateThumbprint** – Specify the thumbprint that you retrieved from Windows PowerShell in step 7.
-    - **UserFormat** – Specify the email address of a user who has the System Administrator role in your Finance and Operations on-premises environment. The user must be an Active Directory Federation Services (AD FS) user.
+    - **UserFormat** – Specify the email address of a user who has the System Administrator role in your on-premises environment. The user must be an Active Directory Federation Services (AD FS) user.
     - **UserPassword** – Specify the password of the user whose email address you specified for **UserFormat**.
     - **Username** – Specify the same email address that you specified for **UserFormat**.
     - **NetworkDomain** – Specify the URL of the AD FS identity provider. You can find this value by running the following SQL query against the **AXDB** database of your on-premises deployment.
@@ -215,7 +215,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     > Setting the **AosRole** to **AosRoleUnknown** disables the limit on the number of web sessions per user. This is necessary to complete load testing with a large user load because the load test will create many sessions for a single user. Once you are finished with your load testing, reset this value to **"AosRoleWeb"**.
 
 
-7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the Finance and Operations application.
+7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the application.
 
     ![Restarting Finance and Operations from Service Fabric Explorer](./media/ServiceFabricExplorerRestart.png)
 

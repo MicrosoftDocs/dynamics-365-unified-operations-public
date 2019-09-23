@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.0.4
 
 [!include [banner](../includes/banner.md)]
 
-The customer workflow has been added to Microsoft Dynamics 365 for Finance and Operations version 8.0.4. You can change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
+The customer workflow has been added to version 8.0.4. You can change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
 
 ## Set up the customer workflow
 
@@ -65,4 +65,4 @@ After you have at least one proposed change, two additional menus appear on the 
 
     The status on the page is changed to **Changes pending approval**.
 
-The workflow follows the standard workflow process in Finance and Operations. The approver is directed to the **Customer** page, where he or she can review the changes on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.
+The workflow follows the standard workflow process in the application. The approver is directed to the **Customer** page, where he or she can review the changes on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.

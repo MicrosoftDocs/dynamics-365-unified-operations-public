@@ -2,7 +2,7 @@
 # required metadata
 
 title: United Kingdom overview
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for the United Kingdom. 
+description: This topic provides links to documentation resources for the United Kingdom. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019

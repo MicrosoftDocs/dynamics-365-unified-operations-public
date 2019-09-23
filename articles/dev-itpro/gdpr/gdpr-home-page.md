@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation (including Dynamics 365 for Retail), Dynamics 365 for Talent, and Microsoft Dynamics AX 2012. 
+This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation (including Dynamics 365 for Retail), Dynamics 365 Talent, and Microsoft Dynamics AX 2012. 
 
 Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This topic points to content that will help you complete those tasks.
 
@@ -48,7 +48,7 @@ Your first step in responding to a request for data will usually be to use the P
 ## Product-specific considerations
 
 - [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
-- [Respond to a DSR request for data from Microsoft Dynamics 365 for Talent](respond-dsr-request-talent.md)
+- [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
 - [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
 - [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
 

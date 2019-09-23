@@ -5,7 +5,7 @@ title: Maintenance schedule
 description: This topic explains maintenance schedule in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -69,7 +69,7 @@ To open a maintenance schedule:
 - When a maintenance schedule line has been related to a work order, the work order ID will be displayed in the **Work order** field.  
 - In **All assets** details view > **Asset maintenance plans** FastTab, you can select maintenance plans for the asset. Later, if you delete a maintenance plan line related to an asset in **All assets**, you also automatically delete all maintenance schedule lines with status "Created" that have been created based on that maintenance plan. See also [Create an asset](../objects/create-an-object.md).
 
-The figure below shows the **All maintenance schedule** list page.
+The illustration below shows the **All maintenance schedule** list page.
 
 ![Figure 1](media/16-preventive-maintenance.png)
 

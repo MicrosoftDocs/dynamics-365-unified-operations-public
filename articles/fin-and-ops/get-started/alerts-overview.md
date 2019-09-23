@@ -2,10 +2,10 @@
 # required metadata
 
 title: Alerts overview
-description: This topic provides general information about alerts in Microsoft Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to track during the workday.
+description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
 author: tjvass
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 15
 [!include [banner](../includes/banner.md)]
 
 ## About alerts
-Alerts form a notification system for critical events in Microsoft Dynamics 365 for Finance and Operations. You can use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.
+Alerts form a notification system for critical events in the system. You can use alerts to stay informed about events that you want to track during the workday. You can easily create your own set of alert rules so that you're alerted about deliveries that are overdue, orders that are deleted, prices that change, or other events that you must respond to.
 
-In enterprise resource planning (ERP), there are several typical scenarios where the alerts feature in Finance and Operations can be used. Here are some examples.
+In enterprise resource planning (ERP), there are several typical scenarios where the alerts feature can be used. Here are some examples.
 
 ### Scenario 1: Create an alert rule for new sales orders
 
@@ -64,7 +64,7 @@ Additionally, you can refine alert rules by setting conditions. For example, you
 
 ## Preparing for an alert
 
-Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, in Finance and Operations, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
+Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
 ## Components of an alert rule
 
@@ -82,3 +82,19 @@ An alert rule has five components:
 ## Email notifications from alerts
 
 Email notifications from alerts are not yet enabled. This will be enabled in a future update.
+
+## Videos
+
+### How to use alerts to monitor filtered data
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3DWZ3]
+
+The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+### Alert rule options
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3E4PV]
+
+The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
+

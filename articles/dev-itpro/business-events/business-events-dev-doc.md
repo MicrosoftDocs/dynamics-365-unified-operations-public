@@ -5,7 +5,7 @@ title: Business events developer documentation
 description: This topic walks you through the development process and best practices for implementing business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/28/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,119 +32,67 @@ ms.dyn365.ops.version: 2019-02-28
 
 This topic walks you through the development process and best practices for implementing business events.
 
-## What is a business event and what is not a business event?
-This question comes up every time we start to think about use cases where
-business events can help. Is creation of a vendor a business event? Or is
-confirming a purchase order a business event? Is it a business event if you
-capture the event at the table level? Or should business events only be captured
-at the business logic level in a business process? These are not only valid
-questions, but also a key topic of discussion when planning and architecting a
-solution for integration. The following guidelines can be used to help with this
-thought process and decision making.
+## What is a business event, and what isn't a business event?
 
-Intent
-------
+This question comes up every time that we start to think about use cases where business events can help. Is the creation of a vendor a business event? Is confirmation of a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events be captured only at the business logic level in a business process? These questions aren't just valid, but they are also a key topic of discussion when a solution is planned and architected for integration. The following guidelines can help with this thought process and decision making.
 
-The intent behind capturing the business event must be clearly understood. In
-other words, what is the reason for capturing the business event and how it is
-going to be used by the recipient.
+## Intent
 
-If the intent for capturing a business event is to take a business action
-outside of Finance and Operations in response to the business event happening in
-Finance and Operations, then this is a valid intent to capture the business
-event. The business action that is taken in response to the business event can
-be to notify users about the business event and/or to call into another
-business application to take a business action like, creating a sales order. It is important to look at the business action generically and not
-base the need for a business event on the type of business action that will be
-taken.
+The intent behind capturing a business event must be clearly understood. In other words, what is the reason for capturing the business event, and how it will be used by the recipient?
 
-If the intent of capturing the business event is to transfer data to the
-recipient and in effect, realizing a data export scenario, then this will not be
-a good use case for using business events. In fact, the use of business events
-for data transfer use cases will be a misuse of the business events framework.
-Such scenarios must continue to use data export mechanisms already available in
-data management.
+If your intent is to capture a business event so that you can take a business action outside Microsoft Dynamics 365 for Finance and Operations in response to a business event that occurs in Finance and Operations, you have a good use case for business events. The business action that is taken in response to the business event can be to notify users about the business event and/or to call into another business application to take a business action, such as creation of a sales order. It's important that you look at the business action generically and not base the need for a business event on the type of business action that will be taken.
 
-Fidelity
---------
+If your intent is to transfer data to a recipient and, in effect, realize a data export scenario, you don't have a good use case for business events. In fact, the use of business events for data transfer scenarios is a misuse of the business events framework. Such scenarios must continue to use data export mechanisms that are already available in data management.
 
-When the intent is clear and a legitimate need for a business event is
-established, the next step is to evaluate the approach that must be taken to
-capture the business event. The following section summarizes the approach that
-must be evaluated.
+## Fidelity
 
-Regardless of which approach is taken, the fidelity of business events is
-significant to ensure the following aspects are taken care of and as a result, must
-influence the design choice for implementing the business event. However, the
-design choice that you take to implement a business event must not influence the
-concept of business events--the chosen design must not be used
-as a decision-making tool to determine if it is a business event. The
-intent discussed previously must be used for such decisions.
+When the intent is clear, and a legitimate need for a business event is established, the next step is to evaluate the approach that must be used to capture the business event. This section summarizes the approach that must be evaluated.
 
--   **Durable business events** - There should be no false business events sent
-    to the recipient. If a purchase order confirmation business event was sent
-    out, then the recipient must trust that the purchase order was indeed
-    confirmed. The design choice must ensure this transactional nature and hence
-    must not take a design choice that would violate this expectation.
+Regardless of the approach that is used, the fidelity of business events is significant, because it helps guarantee that the following aspects are taken care of. Therefore, it must influence the design choice for implementing the business event. However, the design choice that you make to implement a business event must not influence the concept of business events. In other words, the chosen design must not be used as a decision-making tool, to determine whether an event is a business event. The intent must be used to make those decisions.
 
--   **Targeted** - Business events must be designed to optimize the consumption
-    story for the recipient. In other words, make it as easy as possible
-    for the recipient to consume business events. Hence, business events must be
-    as specific as possible and targeted to a specific use case. Business
-    events must not be generic thereby, leaving the consumer to determine what
-    the business event was for by trying to understand the payload. The design
-    choice made must allow for this to be preserved.
+- **Durable business events** – No false business events should be sent to the recipient. If a purchase order confirmation business event is sent out, the recipient expects and must trust that the purchase order was really confirmed. The design choice must help guarantee this transactional nature. Therefore, you must not make a design choice that violates the recipient's expectations.
+- **Targeted** – Business events must be designed to optimize the consumption story for the recipient. In other words, you should make it as easy as possible for the recipient to consume business events. Therefore, business events must be as specific as possible and must be targeted to specific use cases. They must not be generic, so that the consumer has to determine what the business event is for by trying to understand the payload. The design choice must allow for preservation of targeted business events.
+- **Noiseless** – The design should include very little effort to filter out noise. To make business events very specific, avoid writing filtering logic to filter out conditions that don't match the expected business event. The chosen approach must help guarantee that the business event is implemented in code at a sufficiently specific point so that no filtering of noise is required. Any attempt to filter noise by adding logic can affect performance and might also become complicated in specific use cases.
 
--   **Noiseless** - There should be very little effort in the design to filter out
-    the noise. To make business events very specific, avoid writing
-    filtering logic to filter out conditions that do not match the expected
-    business event. The chosen approach must be such that the point at which the
-    business event is implemented in code is specific enough to avoid the need
-    for any filtering of noise. Any attempt to filter the noise by adding logic
-    can not only be taxing on performance but, it may also get complicated based
-    on specific use cases.
-
-| **Capturing at business logic level**                                                                                    | **Capturing at table level**                                                                                         |
-|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Ensures durability by being in the transaction                                                                           | Ensures durability by being in the transaction.                                                                      |
-| Allows for targeted business events.                                                                                     | Difficult to enable targeted business events due to the lower level capturing of events.                             |
-| Makes it easy to remain noiseless.                                                                                       | Difficult to remain noiseless unless additional effort is taken to put sound logic in place to filter out the noise. |
-| Provides additional context of the business process, which can significantly improve the durability and the quality of payload. | Business process context is most likely lost due to the lower level capturing of events.                             |
-
+| Capture at the business logic level | Capture at the table level |
+|-------------------------------------|----------------------------|
+| Capture at this level helps guarantee durability because it occurs in the transaction. | Capture at this level helps guarantee durability because it occurs in the transaction. |
+| Capture at this level allows for targeted business events. | Because events are captured at a lower level, it's difficult to provide targeted business events. |
+| It's easy to remain noiseless. | It's difficult to remain noiseless unless additional effort is made to implement sound logic that filters out noise. |
+| Capture at this level provides additional context for the business process, and can significantly improve the durability and quality of the payload. | Because events are captured at a lower level, business process context is probably lost. |
 
 > [!NOTE]
-> In general, implementing business events at the table level may pose additional challenges than what is described above. For example, if the business logic is executed via a stored procedure that updates data in the underlying table, then it is possible that the business event will not even get generated because it was implemented in the table insert method in X++. You could potentially encounter additional challenges based on specific use cases. As a result, it is not recommended that you implement business events at the table level.
+> In general, if you implement business events at the table level, you might face other challenges, in addition to the challenges that are described in the preceding table. For example, if the business logic is run via a stored procedure that updates data in the underlying table, the business event might not even be generated, because it was implemented in the table insert method in X++. You might encounter additional challenges in specific use cases. Therefore, we don't recommend that you implement business events at the table level.
 
-## Implementing a business event
+## Implement a business event
 
-Implementing a business event and sending it is a fairly straightforward process:
+The process for implementing a business event and sending it is fairly straightforward.
+
 1. Build the contract.
 2. Build the event.
 3. Add code to send the event. 
 
 Two classes must be implemented:
 
-- **Business event** – This class extends the **BusinessEventsBase** class. It provides support for constructing the business event, building the payload, and sending the business event.
+- **Business event** – This class extends the **BusinessEventsBase** class. It supports constructing the business event, building the payload, and sending the business event.
 - **Business event contract** – This class extends the **BusinessEventsContract** class. It defines the payload of the business event and allows for population of the contract at runtime. 
 
 ### BusinessEventsBase extension
 
 #### Naming convention
 
-The names of business events should follow this pattern: <noun/noun phrase><past tense action>BusinessEvent
+The names of business events should follow the pattern \<noun or noun phrase\>\<past tense action\>BusinessEvent. The \<noun or noun phrase\> part of the name should comply with existing definitions for application area prefixes.
 
 **Examples**
 
 - VendorInvoicePostedBusinessEvent
 - CollectionLetterSentBusinessEvent
 
-The <noun/noun phrase> part of the name should comply with existing definitions for application area prefixes.
-
 #### Implementation
 
-The process of implementing a **BusinessEventsBase** extension is straightforward. It involves extending the **BusinessEventsBase** class, and implementing a static constructor method, a private **new** method, methods to maintain internal state, and the **buildContract** method.
+The process of implementing an extension of the **BusinessEventsBase** class is straightforward. It involves extending the **BusinessEventsBase** class, and implementing a static constructor method, a private **new** method, methods to maintain internal state, and the **buildContract** method.
 
-1. Implement a static **newFrom<my_buffer>** method. The <my_buffer> part of the method name is typically the table buffer that is used to initialize the business event contract.
+1. Implement a static **newFrom\<my\_buffer\>** method. The \<my\_buffer\> part of the method name is typically the table buffer that is used to initialize the business event contract.
 
     ```
     static public SalesInvoicePostedBusinessEvent
@@ -165,7 +113,7 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
     public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 
-    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description, and also the module that it's part of. Labels must be defined for the name and description arguments, but should be referenced without the '@' symbol to avoid storing localized data.
+    Note the **BusinessEvents** attribute. This attribute provides the business events framework with information about the business event's contract, name, and description. It also provides the module that the business event is part of. Labels must be defined for the name and description arguments. However, these labels should be referenced without the at symbol (@) to avoid storing localized data.
 
 3. Implement a private **new** method. This method is called only from the static constructor method.
 
@@ -185,7 +133,7 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
     }
     ```
 
-5. Implement the **buildContract** method. Note that you'll need an EventContract stub for this step.
+5. Implement the **buildContract** method. Note that you need an **EventContract** stub for this step.
 
     ```
     [Wrappable(true), Replaceable(true)]
@@ -196,7 +144,7 @@ The process of implementing a **BusinessEventsBase** extension is straightforwar
     }
     ```
 
-    For extensibility, the **buildContract** method must be attributed with the **Wrappable(true)** and **Replaceable(true)** attributes. The **buildContract** method will be called only when a business event is enabled for a company.
+    For extensibility, the **buildContract** method must have the **Wrappable(true)** and **Replaceable(true)** attributes. The **buildContract** method is called only when a business event is enabled for a company.
 
 Here is the complete implementation of the "Sales order invoice posted" business event.
 
@@ -255,7 +203,7 @@ The process of implementing a business event contract involves extending the **B
     BusinessEventsContract
     ```
 
-    The class must be attributed with the **DataContract** attribute.
+    The class must have the **DataContract** attribute.
 
 2. Add private variables to hold the contract state.
 
@@ -286,7 +234,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **initialize** method is responsible for setting the business event contract class's private state, based on data that is provided through the static constructor method.
+    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method.
 
 4. Implement a static constructor method.
 
@@ -313,17 +261,17 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **parm** methods should be attributed with the **DataMember('<name>')** and **BusinessEventsDataMember('<description>')** attributes. The name that you provide on the attribute (for example **'InvoiceAccount'**) will be visible to data contract consumers. The description provided in the BusinessEventsDataMember will be visible in the Business Events catalog UI when describing this contract's data members.
+    The **parm** methods should have the **DataMember('\<name\>')** and **BusinessEventsDataMember('\<description\>')** attributes. The name that you provide on the **DataMember** attribute (for example, **'InvoiceAccount'**) will be visible to data contract consumers. The description that you provide in the **BusinessEventsDataMember** attribute will be visible in the Business Events catalog user interface (UI) and used to describe this contract's data members.
 
 > [!NOTE]
-> - **RecId** values should not be part of a business event payload. Use the alternate key (AK) instead.
+> - **RecId** values should not be part of a business event's payload. Use the alternate key (AK) instead.
 > - Enumeration (enum) values must be converted to their symbol value before they can be published. Use the **enum2Symbol** method to convert an enum's value to the symbol string. Here is an example:
 >
 >    ```
 >    status = enum2Symbol(enumNum(CustVendDisputeStatus), _custDispute.Status);
 >    ```
 
-In some cases, population of the data contract's internal state will require that you implement additional retrieval methods. These retrieval methods should be implemented as private methods, and they should be called from the **initialize** method.
+In some cases, population of the data contract's internal state requires that you implement additional retrieval methods. These retrieval methods should be implemented as private methods, and they should be called from the **initialize** method.
 
 Here is the complete implementation of the "Sales order invoice posted" business event contract.
 
@@ -425,9 +373,9 @@ BusinessEventsContract
 
 ## Sending a business event
 
-You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point within a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the section on source document framework support below.
+You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point in a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the [Source document framework support](#source-document-framework-support) section later in this topic.
 
-Other frameworks also provide common points for sending business events. For example, the **CustVendVoucher** class hierarchy in AOT has a **post** method that is used to send business events that are related to posting customer or vendor vouchers. Overrides of the base class implementation provide specialization of the logic for sending business events. For an example, see **CustVoucher.createBusinessEvent** or **VendVoucher.createBusinessEvent** in AOT.
+Other frameworks also provide common points for sending business events. For example, the **CustVendVoucher** class hierarchy in the Application Object Tree (AOT) has a **post** method that is used to send business events that are related to posting customer or vendor vouchers. Overrides of the base class implementation provide specialization of the logic for sending business events. For an example, see **CustVoucher.createBusinessEvent** or **VendVoucher.createBusinessEvent** in the AOT.
 
 The sending of a business event is linked to the commit of the underlying transaction. If the underlying transaction is aborted, the business event won't be sent. Therefore, applications can send the business event at the point where the payload information is available.
 
@@ -466,46 +414,46 @@ This example shows how to extend the **CustFreeTextInvoicePostedBusinessEventCon
 
 Create a contract that consists of the standard business event contract plus any additional information that must be included in the payload.
 
-    ```
-    [DataContract]
-    public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-    extends BusinessEventsContract
-    {
-        // standard contract
-        private CustFreeTextInvoicePostedBusinessEventContract
-        custFreeTextInvoicePostedBusinessEventContract;
-        // contract extensions
-        private str customerClassification;
-    }
-    ```
+```
+[DataContract]
+public class CustFreeTextInvoicePostedBusinessEventExtendedContract
+extends BusinessEventsContract
+{
+    // standard contract
+    private CustFreeTextInvoicePostedBusinessEventContract
+    custFreeTextInvoicePostedBusinessEventContract;
+    // contract extensions
+    private str customerClassification;
+}
+```
 
 #### Step 2: Create an initialize method
 
 Create an **initialize** method that initializes the value of the private contract.
 
-    ```
-    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
-    {
-        custFreeTextInvoicePostedBusinessEventContract =
-        _custFreeTextInvoicePostedBusinessEventContract;
-    }
-    ```
+```
+private void initialize(CustFreeTextInvoicePostedBusinessEventContract
+_custFreeTextInvoicePostedBusinessEventContract)
+{
+    custFreeTextInvoicePostedBusinessEventContract =
+    _custFreeTextInvoicePostedBusinessEventContract;
+}
+```
 
 #### Step 3: Create a static newFrom method
 
 Create a static **newFrom** method that takes the standard contract as an argument and calls the **initialize** method.
 
-    ```
-    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
-    {
-        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-        return contract;
-    }
-    ```
+```
+public static CustFreeTextInvoicePostedBusinessEventExtendedContract
+newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
+_custFreeTextInvoicePostedBusinessEventContract)
+{
+    var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
+    contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
+    return contract;
+}
+```
 
 #### Step 4: Map parm methods
 
@@ -527,7 +475,7 @@ custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
 }
 ```
 
-#### Step 5: Add parms methods for additional payload data
+#### Step 5: Add parm methods for additional payload data
 
 ```
 [DataMember('CustomerClassification')]
@@ -646,237 +594,182 @@ public final class FreeTextInvoicePostedBusinessEventContract_Extension
 }
 ```
 
-## Extending filters to have custom fields (if supported by the middleware)
+## Extending filters so that they have custom fields (if the middleware supports this extension)
 
-Some middleware systems allow for filtering of the events. For example, Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used for filtering events when reading from the Azure Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties like Subject, Event Type, and ID. To support these different properties for the different systems, the Business Events framework uses a concept called PayloadContext, which can be extended to include custom fields for filtering by the different eventing systems.
+Some middleware systems allow for filtering of the events. For example, Microsoft Azure Service Bus has a property bag that can be populated with key-value pairs. These key-value pairs can be used to filter events when reading from the Service Bus Queue or Topic. Additionally, Azure Event Grid has filterable message properties such as **Subject**, **Event Type**, and **ID**. To support these various properties for the different systems, the Business Events framework uses a concept that is named *payload context*. This concept can be extended so that it includes custom fields that the different eventing systems can use for filtering.
 
 ### Payload context
 
-The Business Events framework supports a concept of *payload context*, which provides a means for decorating messages sent by the framework with context about the payload. In some scenarios, additional context may be required when sending messages to endpoints, so the framework has hookpoints where the context can be overwritten and the adapters can be customized.
+The Business Events framework supports the payload context concept. Payload context provides a way to decorate messages that the framework sends with context about the payload. In some scenarios, additional context might be required when messages are sent to endpoints. Therefore, the framework has hookpoints where the context can be overwritten and the adapters can be customized.
 
-### Adding a custom payload context
+### Step 1: Add a custom payload context
 
-A custom payload context must extend from the class BusinessEventsCommitLogPayloadContext.
+A custom payload context must be extended from the **BusinessEventsCommitLogPayloadContext** class.
 
 ```
-class CustomCommitLogPayloadContext extends
-BusinessEventsCommitLogPayloadContext
-
+class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
-
-private utcdatetime eventTime;
-
-public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
-
-{
-
-eventTime = \_eventTime;
-
-return eventTime;
-
+    private utcdatetime eventTime;
+    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    {
+        eventTime = \_eventTime;
+        return eventTime;
+    }
 }
-
-}  
 ```
 
-### Constructing the custom payload context
+### Step 2: Construct the custom payload context
 
-A Chain of Command (CoC) extension will need to be written for the BusinessEventsSender.buildPayloadContext method to construct the new payload context type.
+A Chain of Command (CoC) extension must be written for the **BusinessEventsSender.buildPayloadContext** method, so that it can construct the new payload context type.
 
 ```
 [ExtensionOf(classStr(BusinessEventsSender))]
-
 public final class CustomPayloadContextBusinessEventsSender_Extension
-
 {
-
-protected BusinessEventsCommitLogPayloadContext
-buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
-
-{
-
-BusinessEventsCommitLogPayloadContext payloadContext = next
-buildPayloadContext(_commitLogEntry);
-
-CustomCommitLogPayloadContext customPayloadContext = new
-CustomCommitLogPayloadContext();
-
-customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
-
-customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
-
-return customPayloadContext;
-
+    protected BusinessEventsCommitLogPayloadContext
+    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    {
+        BusinessEventsCommitLogPayloadContext payloadContext = next
+        buildPayloadContext(_commitLogEntry);
+        CustomCommitLogPayloadContext customPayloadContext = new
+        CustomCommitLogPayloadContext();
+        customPayloadContext.initFromBusinessEventsCommitLogEntry(_commitLogEntry);
+        customPayloadContext.parmEventTime(_commitLogEntry.parmEventTime());
+        return customPayloadContext;
+    }
 }
-
-}  
 ```
 
-### Consuming the custom payload context from an adapter
+### Step 3: Consume the custom payload context from an adapter
 
-Adapters that consume payload context are written in such a way that they expose CoC methods to allow consuming new payload contexts. The following example explores what this looks like for the Service Bus adapter, which has a generic property bag that can be filtered on by the consumers of the Service Bus.
+Adapters that consume payload context are written in such a way that they expose CoC methods that allow for the consumption of new payload contexts. The following example shows what this step looks like for the Service Bus adapter. This adapter has a generic property bag that Service Bus consumers can filter on.
 
-The BusinessEventsServiceBusAdapter has the CoC method called addProperties.
+The **BusinessEventsServiceBusAdapter** has the CoC method that is named **addProperties**.
 
 ```
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
-
 public final class CustomBusinessEventsServiceBusAdapter_Extension
-
 {
-
-protected void addProperties(BrokeredMessage \_message,
-BusinessEventsEndpointPayloadContext \_context)
-
-{
-
-if (_context is CustomCommitLogPayloadContext)
-
-{
-
-CustomCommitLogPayloadContext customPayloadContext = \_context as
-CustomCommitLogPayloadContext;
-
-var propertyBag = \_message.Properties;
-
-propertyBag.Add('EventId', customPayloadContext.parmEventId());
-
-propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
-
-*// Convert the enum to string to be able to serialize the property.*
-
-propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
-customPayloadContext.parmBusinessEventCategory()));
-
-propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
-
-propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
-
+    protected void addProperties(BrokeredMessage \_message,
+    BusinessEventsEndpointPayloadContext \_context)
+    {
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = \_context as
+            CustomCommitLogPayloadContext;
+            var propertyBag = \_message.Properties;
+            propertyBag.Add('EventId', customPayloadContext.parmEventId());
+            propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
+            // Convert the enum to string to be able to serialize the property.
+            propertyBag.Add('BusinessEventCategory', enum2Symbol(enumNum(ModuleAxapta),
+            customPayloadContext.parmBusinessEventCategory()));
+            propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
+            propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
 }
-
-}
-
-}  
 ```
 
 ## Adding a custom endpoint type
-The Business Events framework supports adding new endpoint types in addition to the ones that ship out of the box. An example of how to do this is describe with the below.
+The Business Events framework supports the addition of new endpoint types to the out-of-box endpoint types. This section provides an example that shows how to add new custom endpoint types.
 
-### Add new endpoint type
+### Step 1: Add a new endpoint type
 
-Each endpoint type is represented by the enum BusinessEventsEndpointType. Adding a new endpoint starts by extending this enum, as shown in the following section.
+Each endpoint type is represented by the **BusinessEventsEndpointType** enum. The first step in the process of adding a new endpoint is to extend this enum, as shown in the following section.
 
 ![Business event endpoint](../media/customendpoint1.png)
 
-### Add new endpoint table to the hierarchy
+### Step 2: Add a new endpoint table to the hierarchy
 
-All endpoint data is stored in a hierarchy table, the root of which is BusinessEventsEndpoint. A new endpoint table must extend this root table by setting the Support Inheritance property = Yes, and the Extends property = “BusinessEventsEndpoint” (or any other endpoint in the BusinessEventsEndpoint hierarchy).
+All endpoint data is stored in a hierarchy table. The root of this table is the BusinessEventsEndpoint table. A new endpoint table must extend this root table by setting the **Support Inheritance** property to **Yes** and the **Extends** property to **"BusinessEventsEndpoint"** (or any other endpoint in the BusinessEventsEndpoint hierarchy).
 
 ![Business event endpoint](../media/customendpoint2.png)
 
-The new table will then hold the definition of the custom fields needed to initialize and communicate with this endpoint in code. To avoid the possibility of conflict, field names should be qualified to the specific endpoint where they belong. For example, two endpoints can have the concept of a “URL” field, but to distinguish them, their names should be specific to the custom endpoint like “CustomURL”.
+The new table then holds the definition of the custom fields that are required to initialize and communicate with the endpoint in code. To help avoid conflict, you should qualify field names to the specific endpoint where they belong. For example, two endpoints can have the concept of a **URL** field. To distinguish the fields, names should be specific to the custom endpoint. For example, name the field for the custom endpoint **CustomURL**.
 
 ![Business event endpoint](../media/customendpoint3.png)
 
-### Add new EndpointAdapter class that implements IBusinessEventsEndpoint
+### Step 3: Add a new endpoint adapter class that implements the IBusinessEventsEndpoint interface
 
-The new endpoint adapter class must implement the IBusinessEventsEndpoint interface as well as be decorated with the BusinessEventsEndpointAttribute attribute.
+The new endpoint adapter class must implement the **IBusinessEventsEndpoint** interface. It must also be decorated with the **BusinessEventsEndpointAttribute** attribute.
 
 ```
-
 [BusinessEventsEndpoint(BusinessEventsEndpointType::CustomEndpoint)]
-
 public class CustomEndpointAdapter implements IBusinessEventsEndpoint
-
-{  
-```
-
-The initialize method should be implemented to check the type of the BusinessEventsEndpoint buffer that is passed in, and initialize when it is of the correct type for this new adapter, as shown below.
-
-```
-
-if (!(_endpoint is CustomBusinessEventsEndpoint))
-
 {
+```
 
-BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-\_endpoint.RecId);
+The **initialize** method should be implemented to check the type of the **BusinessEventsEndpoint** buffer that is passed in, and then, if the buffer is of the correct type, initialize it, as shown in the following example.
 
+```
+if (!(_endpoint is CustomBusinessEventsEndpoint))
+{
+    BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
+    \_endpoint.RecId);
 }
-
 CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
 CustomBusinessEventsEndpoint;
-
 customField = customBusinessEventsEndpoint.CustomField;
-
 if (!customField)
-
 {
-
-throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
-classStr(CustomEndpointAdapter), varStr(customField)));
-
+    throw warning(strFmt("\@BusinessEvents:MissingAdapterConstructorParameter",
+    classStr(CustomEndpointAdapter), varStr(customField)));
 }
-
 ```
 
-### Extend the EndpointConfiguration form
+### Step 4: Extend the EndpointConfiguration form
 
-Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold
-your custom field input.
+Add a new group control under FormDesign/BusinessEventsEndpointConfigurationGroup/EndpointFieldsGroup/ to hold your custom field input.
 
 ![Business event endpoint](../media/customendpoint4.png)
 
-The custom field input should be bound to the new table and field created in the previous step. Create a class extension to extend the getConcreteType and showOtherFields methods of BusinessEventsEndpointConfiguration form, as shown below.
+The custom field input should be bound to the new table and field that you created in the previous step. Create a class extension to extend the **getConcreteType** and **showOtherFields** methods of **BusinessEventsEndpointConfiguration** form, as shown in the following example.
 
 ![Business event endpoint](../media/customendpoint5.png)
 
 ```
-
 [ExtensionOf(formStr(BusinessEventsEndpointConfiguration))]
-
 final public class CustomBusinessEventsEndpointConfiguration_Extension
-
 {
+    public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
+    {
+        TableName tableName = next getConcreteTableType(_endpointType);
+        if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
+        {
+            tableName = tableStr(CustomBusinessEventsEndpoint);
+        }
+        return tableName;
+    }
+    public void showOtherFields()
+    {
+        next showOtherFields();
+        BusinessEventsEndpointType selection =
+        any2Enum(EndpointTypeSelection.selection());
+        if (selection == BusinessEventsEndpointType::CustomEndpoint)
+        {
+            this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
+            CustomFields))).visible(true);
+        }
+    }
+}
+```
 
-public TableName getConcreteTableType(BusinessEventsEndpointType \_endpointType)
+## Adding human-readable data fields to the payload
 
+This feature is available in Platform update 30 and later.
+
+The serialization of business events uses FormJsonSerializer to serialize objects in the data contract. FormJsonSerializer can format **UtcDataTime** values in the ISO 8601 date and time format. This format is human-readable when the payload of a business event is viewed. For example, a **UtcDataTime** value can now be formatted as **"2007-12-05T14:30Z"** instead of **"/Date(1196865000000)/"**. In the "/Date(N)" format, N is the number of milliseconds that have passed since January 1, 1970, UTC+0. The ISO format is more often understood by tools that parse JavaScript Object Notation (JSON).
+
+To get the human-readable format, use the extended data type (EDT) that is named **DateTimeIso8601** as the type of the value in the data contract. Alternatively, use an EDT that is derived from the **DateTimeIso8601** EDT.
+
+```X++
+[DataMember("TestIsoEdtUtcDateTime")]
+public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._testIsoDateTime)
 {
-
-TableName tableName = next getConcreteTableType(_endpointType);
-
-if (_endpointType == BusinessEventsEndpointType::CustomEndpoint)
-
-{
-
-tableName = tableStr(CustomBusinessEventsEndpoint);
-
+    if (!prmIsDefault(_value))
+    {
+        this._testIsoDateTime = _value;
+    }
+    return this._testIsoDateTime;
 }
-
-return tableName;
-
-}
-
-public void showOtherFields()
-
-{
-
-next showOtherFields();
-
-BusinessEventsEndpointType selection =
-any2Enum(EndpointTypeSelection.selection());
-
-if (selection == BusinessEventsEndpointType::CustomEndpoint)
-
-{
-
-this.control(this.controlId(formControlStr(BusinessEventsEndpointConfiguration,
-CustomFields))).visible(true);
-
-}
-
-}
-
-}
-
 ```

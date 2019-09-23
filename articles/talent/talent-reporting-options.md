@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting options in Talent
-description: This topic explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.
+description: This topic explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 Talent reports or create new reports.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -40,7 +40,7 @@ This issue applies to all environments.
 
 **Symptom**
 
-The customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.
+The customer wants to customize Microsoft Dynamics 365 Talent reports or create new reports.
 
 **Issue**
 

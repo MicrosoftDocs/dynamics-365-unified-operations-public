@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and work with custom fields
-description: This topic shows how Microsoft Dynamics 365 for Finance and Operations allows some users to create custom fields to tailor the application to fit their business.
+description: This topic shows how to create custom fields to tailor the application to fit their business.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include [banner](../includes/banner.md)]
 
-While Microsoft Dynamics 365 for Finance and Operations provides an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, Finance and Operations allows you to create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
+While there is an extensive set of fields out-of-the-box for managing a broad range of business processes, sometimes there is a need for a company to track additional information in the system. To accommodate this need, you can create custom fields to tailor the application to fit your business, provided you have permissions to the feature.
 
 The ability to add custom fields is available in platform update 13 and later.
 
-This video shows how easy it is to add a custom field to a page: [Adding custom fields in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+This video shows how easy it is to add a custom field to a page: [Adding custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
 
 ## Creating custom fields
 

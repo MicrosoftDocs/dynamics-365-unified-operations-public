@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import data from Excel data entity templates that have multiple worksheets
-description: This topic describes how to import data using Excel data entity templates into Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to import data using Excel data entity templates into Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 13
 
 [!include [banner](../includes/banner.md)]
 
-Data management in Microsoft Dynamics 365 for Finance and Operations supports Microsoft Excel-based templates for data entities. These templates can contain one or more worksheets. Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities. An example would be sites and warehouses.
+Data management in the application supports Microsoft Excel-based templates for data entities. These templates can contain one or more worksheets. Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities. An example would be sites and warehouses.
 
 ## Upload a file once and map it to all entities
 Let's take an example where there is one Excel file with worksheets called **Sites** and **Warehouses**. To set up the data import project, you would add the first data entity, **Sites** and then upload the file. You will be able to select **Sites** as the worksheet to be used for this entity.

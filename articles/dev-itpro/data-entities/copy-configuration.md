@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy configuration data between companies or legal entities overview
-description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to use a configuration data project and configuration data templates to move configuration data for a company or legal entity between instances of Finance and Operations.
 
 author: mikefalkner
 manager: AnnBe
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include [banner](../includes/banner.md)]
 
-There are two options for copying configuration data in Microsoft Dynamics 365 for Finance and Operations:
+There are two options for copying configuration data in Finance and Operations:
 
-- To move data between instances of Finance and Operations, you must first export it from one company and then import it to another company.
+- To move data between instances, you must first export it from one company and then import it to another company.
 - To move data from one legal entity to another legal entity in the same instance, you can use the **Copy into legal entity** feature.
 
 ## Export a configuration
@@ -71,7 +71,7 @@ Before you export a configuration, you might want to use some additional feature
 - To add filters to the entity, use the **Filter** button. If you add a filter, the **Filter** button changes to an **Edit** button. The data will be filtered before it's exported. If you've added a template, and the template includes filters, those filters will be added to your project. However, you can modify or remove them as you require.
 - If you must change the entity mappings, use the **View map** button. If you've added a template, and the template includes mapping changes, those changes will be applied to your project. However, you can modify them as you require.
 - To temporarily prevent the entity from being used when you export a data project, use the check box in the **Disable** column.
-- To open the contents of the grid in a Microsoft Excel workbook, use the **Open in Excel** button. Modify the entities as you require, and then use the **Publish** button to upload the changes back into Finance and Operations.
+- To open the contents of the grid in a Microsoft Excel workbook, use the **Open in Excel** button. Modify the entities as you require, and then use the **Publish** button to upload the changes back.
 
 When the export is completed, complete the following tasks:
 
@@ -203,7 +203,7 @@ To export a single legal entity, you can create a Copy into legal entity data pr
 
 ## Import a configuration
 
-The **Data management** workspace is also your hub for importing configuration data projects. You can build a configuration project from an existing data project that you exported. Alternatively, you can build a configuration project from individual files that contain data that is formatted correctly for import into Finance and Operations.
+The **Data management** workspace is also your hub for importing configuration data projects. You can build a configuration project from an existing data project that you exported. Alternatively, you can build a configuration project from individual files that contain data that is formatted correctly for import.
 
 To import a configuration, follow these steps.
 
@@ -291,7 +291,7 @@ The following entities require special handling when they are used to copy into 
 | Fixed assets | Fixed assets depreciation profile manual schedule| The fixed asset depreciation profile must be processed first. Change the sequence on your data project for fixed asset depreciation profile to 15 (instead of 10). We will update the default templates in the monthly application release 4 to this value.|
 | General ledger | Intercompany accounting | The copy into legal entity feature does not support intercompany accounting at this time. The issue will be addressed in a future release.|
 | General ledger | Journal names| Only the journal names for the source legal entity will be copied to the destination companies. If you select the lookup in the journal names form, you will only see the number sequences that are available for that legal entity. However, if you choose to enter a number sequence manually that is not on that list, it will not be included in the copy process.|
-| General ledger | Ledger allocation rules destination| If you are running a version of Finance and Operations earlier than version 7.3, if you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue has been resolved in version 7.3.|
+| General ledger | Ledger allocation rules destination| If you are running a version earlier than version 7.3, if you have cross company allocation rules, you will not see the destination rules for legal entities that do not match the source legal entity. The copy into legal entity feature will only copy the destination records when the destination is equal to the source. The issue has been resolved in version 7.3.|
 | General ledger | Ledger fiscal calendar year/period| The process is currently exporting all of the legal entities instead of just the source legal entity. The copy process works correctly. The issue has been resolved in version 7.3.|
 | General ledger | Ledger parameters | If you check for continuous number sequences but you have number sequences that are used on journal names and are not continuous, the imports will fail. You should temporarily turn off that setting in the ledger parameters. In addition, the ledger parameters must be processed first. Change the sequence on your data project for ledger parameters to 15 (instead of 40). We will update the default templates in the monthly application release 3 to this value. |
 | Inventory management | Inventory dimension parameters | There is an issue where an error on import is shown but the correct number of parameters are imported. The issue will be addressed in a future release.|
@@ -318,7 +318,7 @@ The class must also extend the **DMFRulesBase** class. This extension will requi
 
 ### Obsolete entities
 
-As Finance and Operations is updated, the functionality of an entity might have to be updated. A new entity might be created that has a different name. In this case, the original entity will be marked as obsolete. You will no longer be able to add obsolete entities to a new data project or template.
+As the application is updated, the functionality of an entity might have to be updated. A new entity might be created that has a different name. In this case, the original entity will be marked as obsolete. You will no longer be able to add obsolete entities to a new data project or template.
 
 If you load a data package that contains an obsolete entity, you will receive a warning about the existence of obsolete entities. However, you will still be able to import your data. You can find the obsolete entity by selecting the **Obsolete** column and filtering on **Yes**.
 

@@ -5,7 +5,7 @@ title: Create alert rules
 description: This topic provides information about alerts and explains how to create an alert rule so that you're notified about events such as a date that arrives or a specific change that occurs.
 author: tjvass
 manager: AnnBe
-ms.date: 06/08/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Platform update 15
 
 ## Getting started
 
-Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
+Before you set up an alert rule, decide when or in what situations you want to receive alerts. When you know which event you want to be notified about, find the page where the data that causes that event appears. The event can be a date that arrives or a specific change that occurs. Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears. After you have this information, you can create the alert rule.
 
-When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up in Finance and Operations.
+When you create an alert rule, you define the criteria that must be met before an alert is triggered. You can think of criteria as a match between the occurrence of an event and the fulfillment of specific conditions. When an event occurs, the system starts to perform a check according to the conditions that are set up.
 
 ## Events
 

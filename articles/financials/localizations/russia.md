@@ -2,7 +2,7 @@
 # required metadata
 
 title: Russia overview
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Russia.
+description: This topic provides an overview of functionality that is specific to Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Russian regulations. 
+This topic provides information about functionality that supports Russian regulations. 
 
 ## General ledger
 
@@ -92,6 +92,9 @@ This topic provides information about Dynamics 365 for Finance and Operations fu
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
+
+## Inventory
+- [Goods in transit from vendor](rus-goods-transit-vendor.md)
 
 ## Reporting
 

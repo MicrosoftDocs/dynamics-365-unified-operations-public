@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations lets you perform the following tasks:
+Dynamics 365 Finance lets you perform the following tasks:
 
 - Register transactions for a sale, purchase, or transfer of foreign currency that is done by using the **Money transfers in transit** ledger account.
 - Automatically calculate the profit/loss amounts that are caused by the foreign currency conversion for a sale or purchase of foreign currency. (The calculation considers the foreign currency exchange rate of the Central Bank and the exchange rate of the legal entity's bank on the date of the foreign currency transfer.) Also automatically generate transactions for profit/loss from the foreign currency conversion.

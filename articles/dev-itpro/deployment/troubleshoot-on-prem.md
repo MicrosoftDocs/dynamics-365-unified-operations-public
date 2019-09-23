@@ -2,10 +2,10 @@
 # required metadata
 
 title: Troubleshoot on-premises deployments
-description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
+This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Access Service Fabric Explorer
 
@@ -56,7 +56,7 @@ The primary node is shown. For stateless services or the remaining applications,
 
 Note the following points:
 
-- OrchestrationService orchestrates the deployment and servicing actions for Finance and Operations.
+- OrchestrationService orchestrates the deployment and servicing actions for Finance + Operations.
 - ArtifactsManager downloads files from Microsoft Azure cloud storage to the local agent file share. It also unzips the files into the required format.
 
 ### Review the orchestrator event logs
@@ -634,6 +634,41 @@ If none of the preceding solutions work, follow these steps.
 
 8. In LCS, reconfigure the environment.
 
+## Gateway fails to deploy
+
+**Issue:** You receive the following error in the event viewer logs.
+
+```stacktrace
+Message Module aos failed Detail System.InvalidOperationException: Gateway app and Bootstrapper app are not healthy at AOSSetupHybridCloud.Program.Main(String[] args) 
+at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args) 
+at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
+at System.AppDomain.ExecuteAssembly(String assemblyFile, String[] args) 
+at SetupCore.SetupManager.LaunchProcessInAppDomain(String startupExe, String workingDir, String currentFolder, String[] moduleArgs) 
+at SetupCore.SetupManager.<>c__DisplayClass12_1.<InvokeModules>b__6()
+```
+
+You also receive the following error message in the SFExplorer for the Gateway application.
+
+```stacktrace
+'System.RA' reported Warning for property 'ReplicaOpenStatus'.
+Replica had multiple failures during open on AOS_13. API call: IStatelessServiceInstance.Open(); Error = System.InvalidOperationException (-2146233079)
+Category does not exist.
+   at System.Diagnostics.PerformanceCounterLib.CounterExists(String machine, String category, String counter)
+   at System.Diagnostics.PerformanceCounter.InitializeImpl()
+   at System.Diagnostics.PerformanceCounter..ctor(String categoryName, String counterName, String instanceName, Boolean readOnly)
+   at System.Diagnostics.PerformanceCounter..ctor(String categoryName, String counterName, String instanceName)
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.Helpers.CpuPerfCounter..ctor()
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.GzipContentDelegatingHandler..ctor()
+   at Microsoft.Dynamics.LBD.Gateways.ClusterGateway.ClusterGateway.ConfigureApp(IAppBuilder appBuilder)
+   at Microsoft.Owin.Hosting.Engine.HostingEngine.Start(StartContext context)
+   at Microsoft.Dynamics.LBD.Gateways.Common.OwinCommunicationListener.b__9_0()
+   at Microsoft.D365.ServicePlatform.Context.ServiceContext.Activity.d__10`2.MoveNext()
+```
+
+**Reason:** The pointers to the performance counter that the gateway needs may be corrupt.
+
+**Resolution:** Run lodctr /R in a Command Prompt running as Administrator in all AOS nodes where the Gateway is unhealthy. If you recieve an error about not being able to rebuild the performance counters, try executing the command again. 
+
 ## Management Reporter
 
 Additional logging can be done by registering providers. Download [ETWManifest.zip](https://go.microsoft.com/fwlink/?linkid=864672) to the **primary** orchestrator machine, and then run the following commands. To determine which machine is the primary instance, in Service Fabric Explorer, expand **Cluster** \> **Applications** \> **LocalAgentType** \> **fabric:/LocalAgent/OrchestrationService** \> **(GUID)**.
@@ -663,6 +698,97 @@ After providers are registered, additional details about the new deployment are 
 
 To see the new folders, you must close and reopen Event Viewer. To see additional details, you must deploy an environment again.
 
+###  <a name="FREntityFramework"></a> Could not load file or assembly EntityFramework
+
+**Issue**: You are running Local Agent version 2.3.1 or later and you received the following stacktrace in the event logs while deploying a package that contains Platform update 29 or earlier:
+
+```stacktrace
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. --->
+System.IO.FileNotFoundException: Could not load file or assembly 'EntityFramework, Version=6.0.0.0,
+Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The system cannot find the file
+specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.RefreshAdapters()
+--- End of inner exception stack trace ---
+ ```
+
+ **Resolution**: 
+   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
+   2. Add the following code to your Predeployment.ps1 script:
+
+        ```powershell
+            $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
+            Write-Output "AgentShare is set to $agentShare"
+            & $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
+        ```
+   3. Create a TSG_UpdateFRDeployerConfig.ps1 script in the same folder as your Predeployment.ps1 script with the following content:
+
+        ```powershell
+            param (
+                [Parameter(Mandatory=$true)]
+                [string]
+                $agentShare = ''
+            )
+
+            $frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.Config |
+                Select-Object -First 1 -Expand FullName
+
+            if( -not $frConfig)
+            {
+                Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
+                return
+            }
+            Write-Output "Found config: $frConfig"
+
+            [xml]$xml = get-content $frConfig
+            $nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
+
+            if($nodeList.Count -eq 0)
+            {
+                # Create the node 
+                $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
+                $newNode.SetAttribute("enabled","true")
+                # Find the parent
+                $nodeList = $xml.GetElementsByTagName("runtime")
+                $runtimeNode = $nodeList[0]
+                $runtimeNode.AppendChild($newNode)
+
+                # Save doc
+                $xml.save($frConfig)
+                Write-Output "Inserted new node: "$newNode.Name
+            }
+            else
+            {
+                $node = $nodeList[0]
+                $attribute = $node.Attributes.GetNamedItem("enabled")
+                if($attribute.Value -eq "true")
+                {
+                    Write-Output "Node already exists: "$node.Name
+                }
+                else
+                {
+                    Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
+                }
+            }
+        ```
+
+### Unable to deploy Financial Reporting Service
+
+**Issue:** You are unable to finish deployment of Platform update 26 and later for Financial Reporting because the following error is in the application log for Service Fabric.
+
+```stacktrace
+Application: FinancialReportingDeployer.exe Framework Version: v4.0.30319  
+Description: The process was terminated due to an unhandled exception. 
+Exception  Info: System.DllNotFoundException at  
+Microsoft.Cloud.InstrumentationFramework.NativeIfxInterop.InitializeIfxFromCloudAgentConfigureSamplingAndTracing_x64(System.String,  System.String, UInt32, UInt32, Boolean) at  Microsoft.Cloud.InstrumentationFramework.IfxInitializer.IfxInitialize(System.String,  Microsoft.Cloud.InstrumentationFramework.InstrumentationSpecification,  Microsoft.Cloud.InstrumentationFramework.AuditSpecification) at  Microsoft.Dynamics.Performance.Logger.IfxLogger..cctor() Exception Info:  System.TypeInitializationException at  
+Microsoft.Dynamics.Performance.Logger.IfxLogger..ctor(System.String,  Microsoft.Dynamics.Performance.Logger.IfxLoggerOptions) at  
+Microsoft.Dynamics.Performance.Logger.IfxLoggerProvider.CreateLogger(System.String)  at  
+Microsoft.Extensions.Logging.Logger..ctor(Microsoft.Extensions.Logging.LoggerFactory,  System.String) at  
+```
+
+**Reason:** The Microsoft Visual C++ Redistributable Package for Visual Studio 2013 was not correctly installed or is corrupt in some or all of the MR nodes.
+
+**Steps:** Re-run the installation of the Microsoft Visual C++ Redistributable Package for Visual Studio 2013.
+
 ### An error occurs while AddAXDatabaseChangeTracking is running
 
 If you receive an error while you run AddAXDatabaseChangeTracking at Microsoft.Dynamics.Performance.Deployment.FinancialReportingDeployer.Utility.InvokeCmdletAndValidateSuccess(DeploymentCmdlet cmdlet), verify that the full path is correct. An example of a full path is **ax.d365ffo.onprem.contoso.com**.
@@ -671,7 +797,7 @@ The error might also occur because of an issue with the star certificate. For ex
 
 ### Run the initialize database script, and validate that databases have correct users
 
-If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance and Operations by going to
+If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance + Operations by going to
 `https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`.
 
 Next, check the certificates of the service in the wif.config file. To find the file, sign in to one of the AOS machines, and then, in Task Manager, find **AxService.exe**. Right-click, and select **Open file location**. In the wif.config file, you should see three thumbprints. Note the following requirements for these thumbprints:
@@ -760,7 +886,7 @@ In these cases, you can follow these steps to resolve the issue:
 
 Verify the AD FS Manager by going to **ADFS** \> **Application groups**. Double-click **Microsoft Dynamics 365 for Operations on-premises**. Then, under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.
 
-Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance and Operations.
+Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance + Operations.
 
 ### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
 
@@ -823,7 +949,7 @@ The following sections provide focused debugging steps for claims that are retur
 1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
 2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
 3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
-4. Open Finance and Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
+4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 5. Sign in by using the USERINFO.NETWORKALIAS account and password.
 6. After you're signed in, stop Fiddler from capturing traffic.
 
@@ -1285,9 +1411,9 @@ In Platform update 20 and later, there is database synchronization log issue whe
 
 To resolve this issue, go to \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log. For example, go to C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log. Here, you can see the output from DatabaseSynchronize in the Code\_AXSF\_M\_\<X\>.out files. Troubleshoot any issues that pertain to this component.
 
-## You can't access Finance and Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"
+## You can't access Finance + Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"
 
-After a user enters credentials to sign in to Finance and Operations, the browser briefly shows the application layout. However, it then tries to redirect outside Finance and Operations, but fails with the following error:
+After a user enters credentials to sign in to Finance + Operations, the browser briefly shows the application layout. However, it then tries to redirect outside Finance + Operations, but fails with the following error:
 
 > AADSTS50058: A silent sign-in request was sent but no user is signed in.
 
@@ -1301,7 +1427,7 @@ To resolve the issue, run the following SQL Server query.
 update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
 ```
 
-Alternatively, turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration** \> **Setup** \> **Client performance options**). To use this approach, you must be able to sign in to Finance and Operations. Therefore, you must first block redirection in the browser. After you disable the Skype presence, you can unblock redirection again.
+Alternatively, turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration** \> **Setup** \> **Client performance options**). To use this approach, you must be able to sign in to Finance + Operations. Therefore, you must first block redirection in the browser. After you disable the Skype presence, you can unblock redirection again.
 
 The Google Chrome browser blocks redirection by default.
 

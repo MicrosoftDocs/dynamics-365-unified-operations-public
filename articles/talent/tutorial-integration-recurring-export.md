@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring data export using Azure Logic apps
-description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 for Talent on a recurring schedule.
+description: This tutorial shows how to create an Azure logic app that exports data from Dynamics 365 Talent on a recurring schedule.
 author: andreabichsel 
 manager: AnnBe
 ms.date: 06/19/2019
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Talent January 2019 update
 
 [!include[banner](../includes/banner.md)]
 
-This tutorial shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 for Talent Core HR on a recurring schedule. The tutorial takes advantage of Core HR's DMF package REST application programming interface (API) to export the data. After the data has been exported, the logic app saves the exported data package to a Microsoft OneDrive for Business folder.
+This tutorial shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Talent: Core HR on a recurring schedule. The tutorial takes advantage of Core HR's DMF package REST application programming interface (API) to export the data. After the data has been exported, the logic app saves the exported data package to a Microsoft OneDrive for Business folder.
 
 ## Business scenario
 
-In one typical business scenario for Microsoft Dynamics 365 integrations, data must be exported to a downstream system on a recurring schedule. This tutorial shows how to export all worker records from Microsoft Dynamics 365 for Talent and save the list of workers in a OneDrive for Business folder.
+In one typical business scenario for Microsoft Dynamics 365 integrations, data must be exported to a downstream system on a recurring schedule. This tutorial shows how to export all worker records from Microsoft Dynamics 365 Talent and save the list of workers in a OneDrive for Business folder.
 
 > [!TIP]
 > The specific data that is exported in this tutorial and the destination of the exported data are only examples. You can easily change them to meet your business needs.
@@ -44,7 +44,7 @@ In one typical business scenario for Microsoft Dynamics 365 integrations, data m
 
 This tutorial uses the following technologies:
 
-- **[Dynamics 365 for Talent Core HR](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
+- **[Dynamics 365 Talent: Core HR](https://dynamics.microsoft.com/talent/overview/)** – The master data source for workers that will be exported.
 - **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – The technology that provides orchestration and scheduling of the recurring export.
 
     - **[Connectors](https://docs.microsoft.com/azure/connectors/apis-list)** – The technology that is used to connect the logic app to the required endpoints.

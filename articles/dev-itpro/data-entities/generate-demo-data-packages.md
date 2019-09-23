@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data for Microsoft Dynamics 365 for Finance and Operations, is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -174,7 +174,7 @@ After you load the data packages, you must also manually follow these steps.
 
 ### Scenario scripts
 
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts for Dynamics 365 Finance and Operations](https://go.microsoft.com/fwlink/?linkid=861599).
+Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts](https://go.microsoft.com/fwlink/?linkid=861599).
 
 ## Transactions and automatic posting
 

@@ -45,7 +45,7 @@ You can also copy customers between legal entities if you use manual customer ID
 
 ## Copy a customer
 
-To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box. Notice that the new customer ID isn't assigned immediately. This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations. Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new customer or copy a customer. Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.
+To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box. Notice that the new customer ID isn't assigned immediately. This behavior differs from the behavior in previous versions. Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new customer or copy a customer. Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.
 
 If you're creating a new customer, you can continue to fill in all the fields as you usually do. When you've finished, and you select **Save**, you will see that the customer ID was assigned automatically. Alternatively, for manual number sequences, you will see that your manual customer ID was used.
 

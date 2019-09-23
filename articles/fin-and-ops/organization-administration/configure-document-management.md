@@ -35,7 +35,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
-To learn more about document management, watch the short [Document Management in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
+To learn more about document management, watch the short [Document Management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
 
 ## Configure document types
 
@@ -96,9 +96,9 @@ To specify file types, follow these steps.
 
 The attachments preview uses the Web app Open Platform Interface (WOPI) that is provided by Microsoft Office Online Server. On the **Document management parameters** page, on the **General** tab, in the **Office Web Apps Server** field, specify the Office Online Server instance to use for attachment previews. The default value is `https://onenote.officeapps.live.com`. This value points to the cloud-based WOPI server.
 
-### For an on-premises environment
+### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
-When an environment is on-premises, the default cloud-based WOPI server can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
+The defaul cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
@@ -161,9 +161,9 @@ File types include Microsoft Word documents and images. A file type is denoted b
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
-### How does the default storage location for Document Management change in on-premises environments?
+### How does the default storage location for Document Management change in Finnce + Operations environments?
 
-For on-premises environments, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
+For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
 ### If I accidentally delete an attachment stored in Azure Blob storage, can it be restored?
 

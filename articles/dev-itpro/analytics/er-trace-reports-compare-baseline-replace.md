@@ -202,13 +202,13 @@ The execution log contains information about the results of the comparison of th
 
 ### Export baseline settings
 
-The new ER capabilities let you export baseline settings for the selected ER format from the current Finance and Operations environment and store them as XML files. 
+The new ER capabilities let you export baseline settings for the selected ER format from the current environment and store them as XML files. 
 
 To export baseline settings, on the **Electronic reporting format baselines** page, select **Export**.
 
 ### Import baseline settings
 
-Exported baseline settings can be imported into a different Finance and Operations environment. The environment must first be imported as an ER format. You can then import the baseline settings.
+Exported baseline settings can be imported into a different environment. The environment must first be imported as an ER format. You can then import the baseline settings.
 
 To import baseline settings from a locally stored XML file, on the **Electronic reporting format baselines** page, select **Import**, and then select **Browse** to select the XML file.
 

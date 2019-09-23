@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Deferrals are expense types that are stored differently in general accounting principles and tax accounting principles. To use the deferral functionality in Microsoft Dynamics 365 for Finance and Operations, you must complete the following setup:
+Deferrals are expense types that are stored differently in general accounting principles and tax accounting principles. To use the deferral functionality, you must complete the following setup:
 
 - [Write-off methods](#write-off-methods)
 - [Value models](#value-models)

@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 08/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -134,7 +134,7 @@ During development it can be useful to attach a debugger to get more detailed in
 #### Prerequisites
 - Azure-hosted development machine (so the mobile device can point to it)
 
-#### Steps to debug the serverside
+#### Steps to debug the server side
 1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
@@ -154,7 +154,7 @@ During development it can be useful to attach a debugger to get more detailed in
 9. If more changes or validation is needed, repeat the process.
 
 ## Change needed for ADFS to support Mobile Client in on-premises environments 
-If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
+If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
 
 ## Troubleshooting
 ### The Mobile Client app is not working correctly on particular devices
@@ -174,9 +174,11 @@ Here are some tips for workspace creation and modification:
 - After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
 - Verify that recordings are correct using the "Job steps".
 - Play back recordings using task recorder playback to verify them.
+- Don't navigate to a page before starting the recording, because the context from the previous page might need to be captured.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
 - When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
 - Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
+- When adding a lookup field, select a value in a lookup instead of just adding the lookup field. This will ensure that the correct value is selected.
 - If you re-record a lookup, all the references also need to be re-recorded because the GUID for the lookup will change.
 - If you want to add a field to a page, you need to add all the fields again, because the list is cleared at the beginning of each edit. This is a limitation of task recorder. Note that reordering is also not possible.
 - In the workspace XML, GUIDs are used as references to forms and controls instead of names. GUIDs are used to ensure uniqueness, but this comes at the cost of maintainability. Those GUIDs are regenerated on each modification, so partial edits are very difficult. The use of GUIDs would be very costly to change, so it is unlikely that changes would be made in the future to use simpler string name references.

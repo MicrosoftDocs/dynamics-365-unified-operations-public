@@ -2,10 +2,10 @@
 # required metadata
 
 title: Service update availability
-description: This topic provides information about the different release options for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the different release options.
 author: meeramahabala
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include [banner](../includes/banner.md)]
 
-With Dynamics 365 for Finance and Operations, you receive continuous, touchless service updates and features instead of doing expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
+Service updates are continuous, touchless updates that provide new features and fuctionality. They elminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
 
 You are in control and manage how your organization receives these updates. For example, you can sign up for the First Release program so that your organization receives updates first. You can apply the updates to any of your environments manually (self-update) or remain on the default release schedule and receive the auto-updates when you schedule them using Lifecyle Services (LCS). This topic explains the different release options and how you can use them for your organization.
 
-*Service updates* contain both application (including Financial reporting and Retail) and platform changes that are critical improvements to the service, including regulatory updates. 
+*Service updates* contain both application and platform changes that are critical improvements to the service, including regulatory updates. 
 
 ## Release processes
 
-Each new release is designed and developed by the Dynamics 365 for Finance and Operations team. Any new release is first validated by the feature team, then by the entire Finance and Operations and Retail teams. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. In addition, a [Release Validation Program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) is available for customers to join. This program allows customers to share artifacts, such as databases and code, that is used for benchmarking and tested with automation to provide an additional layer of quality assurance.
+Any new release is first validated by the feature team, then by the entire development team. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. In addition, a [Release Validation Program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) is available for customers to join. This program allows customers to share artifacts, such as databases and code, that is used for benchmarking and tested with automation to provide an additional layer of quality assurance.
 
 Preview Early Access Program (PEAP) is available to partners, customers, and ISV’s who opt in through the [Insider Program](https://experience.dynamics.com/).  As a participant in the PEAP program you will have first access and visibility into the preview for the upcoming service update.  The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft.  During this phase, the service update must be deployed on a Dev/Test environment.  This release cannot be used in production. To join the PEAP program, sign up via the [Insider Program](https://experience.dynamics.com/). 
 
@@ -68,7 +68,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.2 Platform update 26 | April 12, 2019              | May 17,2019                       | Production starting: June 1, 2019            | August 12, 2019   |
 | 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting: July 1, 2019            | September 9, 2019 |
 | 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting: August 1, 2019          | October 14, 2019  |
-| 10.0.5 Platform update 29 | August 2, 2019 (Public Preview)              | September 13, 2019                | Production starting: October 1, 2019         | December 2, 2019  |
+| 10.0.5 Platform update 29 | August 2, 2019 (Public Preview)              | September 17, 2019                | Production starting: October 1, 2019         | December 2, 2019  |
 | 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting: November 1, 2019         | January 13, 2020  
 | 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting: January 1, 2020          | March 9, 2020     |
 | 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting: February 1, 2020         | April 13, 2020    |
@@ -77,6 +77,6 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
 
-Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. Once your nomination has been accepted, join the program **Finance and Operations: Preview Early Access Program (PEAP)**.
+Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. Once your nomination has been accepted, join the program.
 
 Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).  
