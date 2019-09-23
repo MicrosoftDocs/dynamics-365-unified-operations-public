@@ -44,7 +44,7 @@ To get support for Talent, use the resources in the following table. These resou
 | Use the cloud-powered support tool. | In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), go to your project, and select the **Support** tile. From there, you can submit issues two ways:<ul><li>On the **Active issues** tab, select the issue that you want to submit, and then select **Submit to Microsoft**.</li><li>On the **Submitted to Microsoft** tab, select **Submit a new Incident** to submit a new issue.</li></ul> |
 | Get in-app support. | Select the **Help** button (**?**) in the upper-right corner of the page. Then, if you're in Core HR, select **Support**. If you're in Attract or Onboard, select **Report a problem**. Issues are reported on the **Active issues** tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft. (If you have the stand-alone version of Onboard, issues are submitted directly to Microsoft.) |
 | Get help with questions about Talent licensing. | Contact your partner or Microsoft sales representative. |
-| Request new features and functionality in Talent. | On the main Talent page in the application, select the **Help** button (**?**), and then select **Ideas**. You can also visit [Dynamics 365 Application Ideas](https://experience.dynamics.com/ideas/) to view, search, or vote for existing ideas, or to add new ideas. |
+| Request new features and functionality in Talent. | On the main Talent page, select the **Help** button (**?**), and then select **Ideas**. You can also visit [Dynamics 365 Application Ideas](https://experience.dynamics.com/ideas/) to view, search, or vote for existing ideas, or to add new ideas. |
 
 ## Support for the Onboard stand-alone app
 

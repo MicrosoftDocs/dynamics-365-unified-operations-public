@@ -83,7 +83,7 @@ Common Data Service entities (this is the case for Attract and Onboard) or synch
 to/from the Common Data Service entities (this is the case for Core HR).
 
 Once the data entities that expose the data your integrating apps require are
-present in Common Data Service, you can make full use of the [Common Data Service platform and the APIs it
+present in Common Data Service, you can make full use of [Common Data Service and the APIs it
 supports](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer).
 Among the supported APIs is the [Dynamics 365 Web
 API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api),
@@ -104,9 +104,7 @@ one of the other integration technologies described below.
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
 ### DMF/DIXF entities
-Talent: Core HR, built primarily on the same platform as
-Dynamics 365 for Finance and Operations, provides a [Data Management Framework
-(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
+Core HR, built primarily on the same platform as Dynamics 365 Finance and Operations, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
 DIXF, and a set of data entities that can be used for importing/exporting data
 into/from Talent. While Common Data Service entities are the preferred data integration
 interface for Talent, the DMF entities will still be useful in some
@@ -205,8 +203,7 @@ manually.
 Data Integrator projects are appropriate for Common Data Service batch integrations and
 make a great choice for integrations between the Dynamics 365 family of
 applications. As an example, Microsoft provides an out-of-the-box Data
-Integrator template that can be used for integrating data from Dynamics 365 for
-Talent: Core HR into Dynamics 365 for Finance and Operations. For more information, see [Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+Integrator template that can be used for integrating data from Core HR into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 ### Power Query
 

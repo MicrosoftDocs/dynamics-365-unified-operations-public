@@ -97,9 +97,9 @@ When the ability to forecast is released, the balance displayed changes to  be t
 
 ## Known issue
 
-### Mapping errors in the integration with Finance and Operations
+### Mapping errors in the integration with Finance
 
-The following issues have been identified in the current template for integrating Talent with Dynamics 365 for Finance and Operations. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
+The following issues have been identified in the current template for integrating Talent with Dynamics 365 Finance. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
 
 >[!NOTE]
 > The Job Positions to Positions Parent Job Assignment task does not integrate data. This is an issue that is currently being researched. There is no workaround in the current mapping. 

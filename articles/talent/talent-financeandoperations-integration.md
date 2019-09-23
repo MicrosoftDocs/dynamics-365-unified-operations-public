@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations
-description: This topic describes the integration between Talent and Finance and Operations. 
+title: Integration from Dynamics 365 Talent to Dynamics 365 Finance
+description: This topic describes the integration between Talent and Finance. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2018
@@ -27,41 +27,41 @@ ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: 
 ---
 
-# Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations
+# Integration from Dynamics 365 Talent to Dynamics 365 Finance
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the functionality available for integration from Dynamics 365 Talent and Dynamics 365 for Finance and Operations. The Talent to Finance and Operations template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance and Operations. The template does not provide the ability for data to flow back from Finance and Operations into Talent. 
+This topic describes the functionality available for integration from Dynamics 365 Talent and Dynamics 365 Finance. The Talent to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance. The template does not provide the ability for data to flow back from Finance into Talent. 
 
-![Talent to Finance and Operations Integration Flow](./media/TalentFinOpsFlow.png)
+![Talent to Finance Integration Flow](./media/TalentFinOpsFlow.png)
 
-The Talent to Finance and Operations solution provides the following types of data synchronization. 
+The Talent to Finance solution provides the following types of data synchronization. 
 
-- Maintain jobs in Talent and sync them from Talent to Finance and Operations.
-- Maintain positions and position assignments in Talent and sync them from Talent to Finance and Operations.
-- Maintain employments in Talent and sync them from Talent to Finance and Operations.
-- Maintain workers and worker addresses in Talent and sync them from Talent to Finance and Operations.
+- Maintain jobs in Talent and sync them from Talent to Finance.
+- Maintain positions and position assignments in Talent and sync them from Talent to Finance.
+- Maintain employments in Talent and sync them from Talent to Finance.
+- Maintain workers and worker addresses in Talent and sync them from Talent to Finance.
 
 ## System requirements for Talent
-The integration solution requires the following versions of the Talent and Finance and Operations apps. 
+The integration solution requires the following versions of Talent and Finance: 
 - Dynamics 365 Talent on Common Data Service.
-- Dynamics 365 for Finance and Operations version 7.2 and later.
+- Dynamics 365 Finance version 7.2 and later.
 
 ## Template and tasks
 
 To access the template, do the following.
 1. Open [PowerApps Admin Center](https://admin.powerapps.com/). 
-1. Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be created for each legal entity that you want to integrate into in Finance and Operations.
+1. Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be created for each legal entity that you want to integrate into in Finance.
 
-The following template is used to synchronize records from Talent to Finance and Operations.
+The following template is used to synchronize records from Talent to Finance.
 
-- **Name of the template in Data integration:** Core HR (Talent Common Data Service to Finance and Operations)
+- **Name of the template in Data integration:** Core HR (Talent Common Data Service to Finance)
 
   > [!NOTE]
   > The name of the task contains the entities used in each application. The source (Talent) is on the left and the destination
 (Finance and Operations) is on the right.
 
-The following underlying tasks are used to synchronize records from Talent to Finance and Operations.
+The following underlying tasks are used to synchronize records from Talent to Finance.
 - Job Functions to Compensation Job Function
 - Departments to Operating Unit
 - Job Types to Compensation Job Type
@@ -244,15 +244,15 @@ The following underlying tasks are used to synchronize records from Talent to Fi
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
 ## Integration considerations
-When integrating data from Talent to Finance and Operations, the integration will attempt to match records based on the ID. If the match
-occurs, the data in Finance and Operations will be overwritten with the values in Talent. However, an issue may occur if logically
-these are different records and the same ID was generated in either Talent or Finance and Operations based on the respective number sequence.
+When integrating data from Talent to Finance, the integration will attempt to match records based on the ID. If the match
+occurs, the data in Finance will be overwritten with the values in Talent. However, an issue may occur if logically
+these are different records and the same ID was generated in either Talent or Finance based on the respective number sequence.
 
-The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance and Operations, the Talent information will overwrite the Finance and Operations information. 
+The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance, the Talent information will overwrite the Finance and Operations information. 
 
 To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
-The location ID used for worker address isn't part of a number sequence. When integrating a worker address from Talent to Finance and Operations, if the worker address already exists in Finance and Operations, a duplicate address record may be created. 
+The location ID used for worker address isn't part of a number sequence. When integrating a worker address from Talent to Finance, if the worker address already exists in Finance, a duplicate address record may be created. 
 
 The following illustration shows an example of a template mapping in Data Integrator. 
 

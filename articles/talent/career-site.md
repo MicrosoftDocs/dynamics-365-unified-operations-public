@@ -91,7 +91,7 @@ The following list contains the commonly used career site URLs and how to access
 
 -   **Individual job post apply URL** - When you [post an external
     job](Creating-jobs-Attract.md#postings) for the first time, you can copy
-    the **Apply** link from the Attract application. The URL for this link will
+    the **Apply** link from Attract. The URL for this link will
     be in the following format: 
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 

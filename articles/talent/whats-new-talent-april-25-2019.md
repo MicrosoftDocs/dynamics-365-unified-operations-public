@@ -83,4 +83,4 @@ With this change, duplicates are detected as you enter name fields, and a status
 ## Known issues
 
 ### Email support for alerts
-With Platform update 26, users can create alert rules that automatically send email notifications to contacts when triggered by an event.
+With Platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when triggered by an event.
