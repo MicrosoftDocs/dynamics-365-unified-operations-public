@@ -39,7 +39,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to synchronize inventory on-hand levels from Finance and Operations to Dynamics 365  Field Service.
+The following template and underlying tasks are used to synchronize inventory on-hand levels from Finance and Operations to Dynamics 365 Field Service.
 
 **Template in Data integration**
 - Product Inventory (Fin and Ops to Field Service)
