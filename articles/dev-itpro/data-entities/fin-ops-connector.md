@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Finance and Operations Connector
-description: This topic provides information about the Finance and Operations Connector for Microsoft Flow and Logic Apps.
+title: Application Connector
+description: This topic provides information about the Application Connector for Microsoft Flow and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/05/2019
