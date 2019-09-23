@@ -43,7 +43,7 @@ Batch jobs that run frequently can lead to unsustainable growth of the batch job
 
 **Resolution**
 
-Clean up your batch job history. We recommend cleaning up your batch job history weekly, but you might need to run the cleanup more or less frequently, depending on your environment. Likewise, the following procedure contains our recommended settings, but you can change these depending on your needs.
+Schedule an automatic task to clean up your batch job history. We recommend setting up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment. The following procedure contains our recommended settings, but you can change these depending on your needs.
 
 1. In Talent, select **System administration**.
 
