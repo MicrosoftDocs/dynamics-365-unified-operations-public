@@ -57,7 +57,7 @@ For this tutorial, you must access the application environment, and you must be 
 - Network Print monitoring form
 - Table extensions need to be supported through the VS Query picker
 
-## What is a report in the Finance and Operations?
+## What is a report in Dynamics 365 Finance and Operations apps?
 Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, the application offers several tools to produce reports to satisfy complex business requirements. Some common applications of reports in an ERP include:
 
 - Creating and archiving transactional documents as part of a posting process
