@@ -104,7 +104,7 @@ The traditional customer search can be time-consuming, because it searches acros
 
 ![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
 
-To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 for Finance and Operations, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
+To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 Retail, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
 
 ![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
 
