@@ -716,6 +716,8 @@
       href: dev-itpro/pos-control-non-screen.md
     - name: Development in cloud-hosted dev environments without admin access
       href: dev-itpro/cloud-dev-box.md
+    - name: Show custom notifications in POS
+      href: dev-itpro/extend-pos-notification.md
     - name: Sign MPOS with code signing certificate
       href: dev-itpro/pos-app-signing-certificate.md
   - name: Commerce runtime
