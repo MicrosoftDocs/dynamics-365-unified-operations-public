@@ -714,6 +714,8 @@
       href: dev-itpro/pos-control-non-screen.md
     - name: Development in cloud-hosted dev environments without admin access
       href: dev-itpro/cloud-dev-box.md
+    - name: Show custom notifications in POS
+      href: extend-pos-notification.md
   - name: Commerce runtime
     items:
     - name: Loyalty extension
