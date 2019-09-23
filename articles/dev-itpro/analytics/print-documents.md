@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document printing overview
-description: In Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
+description: You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: TJVass
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed in Finance and Operations.
+You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 
 ## Printing overview
 
@@ -45,7 +45,7 @@ The application provides integrated services and client applications that make i
 
 By using a dedicated host and following a few easy steps, system administrators can configure deployments so that users can print directly from business applications on network devices.
 
-### Printing scenarios in Finance and Operations applications
+### Application printing scenarios 
 
 The following table describes the three primary printing scenarios.
 
