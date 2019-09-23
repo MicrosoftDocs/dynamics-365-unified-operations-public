@@ -38,7 +38,7 @@ This topic provides an overview of the components of the Help system. The Help s
 
 - Dynamics 365 Finance 
 - Dynamics 365 Retail
-- Dyanmics 365 Supply Chain Management
+- Dynamics 365 Supply Chain Management
 - Dynamics 365 Talent
 
 You can access help from the Help pane in whichever product you are using. 
