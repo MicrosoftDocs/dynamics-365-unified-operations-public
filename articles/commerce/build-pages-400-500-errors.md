@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build custom response pages for 4xx/5xx status code errors
-description: This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Commerce.
+description: This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
 author: brshoo
 manager: annbe
 ms.date: 10/01/2019
@@ -29,52 +29,52 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Build custom response pages for 4xx/5xx status code errors 
+# Build custom response pages for 4xx/5xx status code errors
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to build custom response pages for 4xx and 5xx status code errors using the authoring tools in Dynamics 365 Commerce.
+This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A server will issue HTTP response status code errors when a request is not successful. The 404 and 500 status codes are captured and returned in the case of a page not found our server error. In Dynamics 365 Commerce, application users can build custom response pages to display to end users in the event of these status code error responses.
+If a request isn't successful, the server issues HTTP response status code errors. The 404 status code is captured and returned if a page isn't found, and the 500 status code is captured and returned if a server error occurs. In Dynamics 365 Commerce, application users can build custom status code error response pages that are shown to users for these status code error responses.
 
 ## Build a status code error response page
-To begin building a status code error response page, do the following.
 
-1. Sign in to Dynamics 365 Commerce in your preferred browser. 
-1. Select the site for which you will be building the 4xx/5xx status code error response page. 
+To start to build a status code error response page, follow these steps.
+
+1. In your preferred web browser, sign in to Dynamics 365 Commerce. 
+1. Select the site that you want to build a 4xx/5xx status code error response page for.
 
 ### Build the template
 
-To build the template, do the following.
+To build the template for the status code error response page, follow these steps.
 
-1. Go to **Templates > New template**.
+1. Go to **Templates \> New template**.
 1. Name the new template.
-1. Build the template according to how you want the error page to be structured.
-1. Check in and publish the template.
+1. Build the template, based on the structure that you want the status code error response page to have.
+1. Check the template in, and publish it.
 
-### Build the error page
+### Build the status code error response page
 
-To build the error page, do the following.
+To build the status code error response page, follow these steps.
 
-1. Go to **Pages > New Page**.
-1. Name the error page. Do not fill in the **URL** field at this time. 
-1. Build out the error page.
-1. Check in and publish the error page.
+1. Go to **Pages \> New Page**.
+1. Name the status code error response page, but do **not** set the **URL** field.
+1. Build the page.
+1. Check the page in, and publish it.
 
-[!NOTE]
-You can create separate error pages for 4xx and 5xx status code errors, or use the same general error page for both errors.
+> [!NOTE]
+> You can create separate status code error response pages for 4xx and 5xx status code errors. Alternatively, you can use the same general status code error response page for both error categories.
 
-### Set up a redirect for the error page
+### Set up a redirect for the status code error response page
 
-To set up a redirect for the error page, do the following.
+To set up a redirect for the status code error response page, follow these steps.
 
-1. Go to **URLs > New > New Alias** and select the new error page.
-1. In the **Alias** field, enter *default-4xx* or *default-5xx* depending on which error page you are setting up. These aliases must be published to work actively.
-1. Click **OK** to commit the linking.
+1. Go to **URLs \> New \> New Alias**, and select the status code error response page that you built earlier.
+1. In the **Alias** field, enter either **default-4xx** or **default-5xx**, depending on the status code error response page that you're setting up a redirect for. These aliases must be published. Otherwise, the redirect won't work.
+1. Select **OK** to commit the linking.
 
-[!NOTE]
-If using a single page instance for both error categories, repeat the process and link a new alias to the same page.
-
+> [!NOTE]
+> If you're using a single status code error response page for both error categories, repeat this procedure to link an alias for the other error category to the same page.
