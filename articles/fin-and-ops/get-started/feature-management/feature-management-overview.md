@@ -4,7 +4,7 @@ title: Feature management overview
 description: This topic describes the Feature management feature and how you can use it.
 author: mikefalkner
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include [banner](../../includes/banner.md)]
 
-Features are added and updated in every release of Microsoft Dynamics 365 for Finance and Operations. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
+Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
 ## The Feature management workspace
 

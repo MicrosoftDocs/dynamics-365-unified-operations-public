@@ -36,11 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
-Microsoft Dynamics 365 for Finance and Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page.
+Some of the more complex fields have field descriptions. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page.
 
 Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions.
 
-If you have access to the Finance and Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](../../dev-itpro/user-interface/customize-field-help.md).
+If you have access to the development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## See field descriptions in the user interface
 

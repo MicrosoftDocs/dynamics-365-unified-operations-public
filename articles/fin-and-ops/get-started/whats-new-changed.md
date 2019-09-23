@@ -32,13 +32,11 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # What's new or changed home page
-
 [!include [banner](../includes/banner.md)]
 
-This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
-
 
 [!include [release notes](../includes/release-notes.md)]
 
@@ -69,7 +67,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>10.0.5</td>
 <td>10.0.197</td>
 <td>October 2019</td>
-<td><a href="whats-new-changed-10-0-5.md">>What's new or changed in Dynamics 365 for Finance and Operations version 10.0.5 (October 2019)</a></td>
+<td><a href="whats-new-changed-10-0-5.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.5 (October 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -204,7 +202,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>Platform update 29</td>
 <td>7.0.5372</td>
 <td>October 2019</td>
-<td><a href="whats-new-platform-update-29.md">>What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)</a></td>
+<td><a href="whats-new-platform-update-29.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>

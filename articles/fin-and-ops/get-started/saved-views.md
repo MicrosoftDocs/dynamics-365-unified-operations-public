@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 28
 [!include [preview banner](../includes/preview-banner.md)]
 
 ## Introduction
-Personalization plays an important role in allowing users and organizations to optimize the user experience in Microsoft Dynamics 365 for Finance and Operations to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
+Personalization plays an important role in allowing users and organizations to optimize the user experience to meet their needs. For more details on personalization, see [Personalize the user experience](personalize-user-experience.md).
 
 With traditional personalization, users could only have a single set of personalizations per form. Saved views expands on personalization in several important ways:
 
@@ -174,7 +174,7 @@ Note that if personalization is turned off for the environment, views will be di
 When views are enabled, any existing personalizations for a user and form are saved into a new view called **My view** that is automatically set as the default view. This is meant to ensure that there is a consistent user experience before and after views are enabled, except for the view selector control appearing on forms.  
 
 ### What pages support views? 
-Views are available on most but not all pages in Finance and Operations. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
+Views are available on most, but not all pages. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
 
 ### Who is allowed to publish views?
 Currently system administrators are the only users who have rights to publish views.  A new security role is planned in a future update, which would provide customers more flexibility to who can publish.  
