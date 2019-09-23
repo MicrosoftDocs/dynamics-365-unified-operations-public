@@ -36,11 +36,11 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-It's typical for customer records to be mastered in more than one application. For example, sales activity can bring in commercial customer records through a Microsoft Dynamics 365 for Sales application, and e-Commerce or retail sales can bring in customer records through a Dynamics 365 for Finance and Operations application. Regardless of where the customer record originates, it's integrated behind the scenes across application boundaries and infrastructure differences. Integrated customer mastering helps handle multi-mastering scenarios and provides a comprehensive view of the customer to the Dynamics 365 application suite.
+It's typical for customer records to be mastered in more than one application. For example, sales activity can bring in commercial customer records through a Microsoft Dynamics 365 for Sales application, and e-Commerce or retail sales can bring in customer records through a Finance and Operations application. Regardless of where the customer record originates, it's integrated behind the scenes across application boundaries and infrastructure differences. Integrated customer mastering helps handle multi-mastering scenarios and provides a comprehensive view of the customer to the Dynamics 365 application suite.
 
 ## Customer data flow
 
-*Customer* is a well-defined concept in both Finance and Operations and Common Data Service. Therefore, the integration of customer data just involves harmonizing the customer concept between Finance and Operations and Common Data Service applications. The following illustration shows the customer data flow.
+*Customer* is a well-defined concept in applications. Therefore, the integration of customer data just involves harmonizing the customer concept between the two applications. The following illustration shows the customer data flow.
 
 ![Customer data flow](media/dual-write-customer-data-flow.png)
 
@@ -56,7 +56,7 @@ When a non-sellable contact participates in a quotation or order process, **Sell
 
 Customer data includes all information about the customer, such as the customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of entity maps works together during customer data interaction, as shown in the following table.
 
-Finance and Operations    | Other Dynamics 365 apps
+Finance and Operations apps    | Other Dynamics 365 apps
 --------------------------|---------------------------------
 Customer V3               | Account
 Customer V3               | Contact
@@ -75,7 +75,7 @@ Name Affixes              | Msdyn\_nameaffixes
 
 ## Customer V3 to Account
 
-This template synchronizes customer master information for commercial and organizational customers between Finance and Operations and Common Data Service.
+This template synchronizes customer master information for commercial and organizational customers between Finance and Operations apps and Common Data Service.
 
 <!-- ![](media/dual-write-account-1.png) -->
 
@@ -351,7 +351,7 @@ DESCRIPTION | = | msdyn\_description
 
 ## Payment Day Lines
 
-This template synchronizes payment day lines reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 appst.
+This template synchronizes payment day lines reference data, for both customers and vendors, between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![](media/dual-write-payment-day-lines.png) -->
 

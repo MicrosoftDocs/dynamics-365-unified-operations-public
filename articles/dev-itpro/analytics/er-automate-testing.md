@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automate testing with Electronic reporting
-description: This topic explains how you can use the baseline feature of Electronic reporting (ER) framework to automate testing of functionality in Microsoft Dynamics 365 for Finance and Operations that is powered by ER. 
+description: This topic explains how you can use the baseline feature of Electronic reporting (ER) framework to automate testing of functionality. 
 author: NickSelin
 manager: AnnBe
 ms.date: 07/02/2019
@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can use the Electronic reporting (ER) framework to automate testing of some functionality in Microsoft Dynamics 365 for Finance and Operations. The example in this topic shows how to automate the testing of vendor payment processing.
+This topic explains how you can use the Electronic reporting (ER) framework to automate testing of some functionality. The example in this topic shows how to automate the testing of vendor payment processing.
 
-Finance and Operations uses the ER framework to generate payment files and corresponding documents during vendor payment processing. The ER framework consists of a data model, model mappings, and format components that support payment processing for different payment types and the generation of documents in different formats. These components can be downloaded from Microsoft Dynamics Lifecycle Services (LCS) and imported into the Finance and Operations instance.
+The application uses the ER framework to generate payment files and corresponding documents during vendor payment processing. The ER framework consists of a data model, model mappings, and format components that support payment processing for different payment types and the generation of documents in different formats. These components can be downloaded from Microsoft Dynamics Lifecycle Services (LCS) and imported into the instance.
 
 You also can customize each Microsoft component and use it as the basis of your own custom component. By creating a custom version, you can make changes that support specific requirements. For example, you can adjust the ER data model and ER model mapping to access customer-specific application data, or you can change an ER format to modify the layout of a generated document.
 
-You can use customized ER formats in your Finance and Operations instance to process payment files that generate vendor payments and also to process control reports. Versioning is supported in ER components. Therefore, Microsoft can provide updated versions of ER solutions for vendor payment processing, and you can automatically merge the updated version with your customized component by rebasing it. However, you must test the rebased version to make sure that it works as you expect.
+You can use customized ER formats to process payment files that generate vendor payments and also to process control reports. Versioning is supported in ER components. Therefore, Microsoft can provide updated versions of ER solutions for vendor payment processing, and you can automatically merge the updated version with your customized component by rebasing it. However, you must test the rebased version to make sure that it works as you expect.
 
-ER data models and ER model mappings are common for many ER formats that are used to process payments of different types and to generate country/region-specific payment documents. Therefore, it's highly desirable to automate user acceptance and integration testing so that it's automatically done in multiple Finance and Operations companies but considers the country/region context of each target company, uses different datasets, and so on.
+ER data models and ER model mappings are common for many ER formats that are used to process payments of different types and to generate country/region-specific payment documents. Therefore, it's highly desirable to automate user acceptance and integration testing so that it's automatically done in multiple companies but considers the country/region context of each target company, uses different datasets, and so on.
 
 For more information about how to create a custom version of a format that is based on the format that you received from a configuration provider, see [ER Upgrade your format by adopting a new, base version of that format](./tasks/er-upgrade-format.md).
 
@@ -66,12 +66,12 @@ Functional power users can run user acceptance and integration tests.
 
 Before you can complete the tasks in this topic, you must complete the following prerequisites:
 
-- Deploy a Finance and Operations topology that supports test automation. You must have access to the Finance and Operations instance of this topology for the **System administrator** role. This topology must contain the Finance and Operations demo data that will be used in this example. For more information, see [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md).
-- To run user acceptance and integration tests automatically, you must install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install RSAT and configure it to work with Finance and Operations and Azure DevOps, see [Dynamics 365 for Finance and Operations, Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool. The following illustration shows an example of the RSAT settings. The blue rectangle encloses the parameters that specify access to Azure DevOps. The green rectangle encloses the parameters that specify access to the Finance and Operations instance.
+- Deploy a topology that supports test automation. You must have access to the instance of this topology for the **System administrator** role. This topology must contain the demo data that will be used in this example. For more information, see [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md).
+- To run user acceptance and integration tests automatically, you must install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install and configure RSAT and configure it to work with Finance and Operations apps and Azure DevOps, see [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool. The following illustration shows an example of the RSAT settings. The blue rectangle encloses the parameters that specify access to Azure DevOps. The green rectangle encloses the parameters that specify access to the instance.
 
     ![RSAT settings](media/GER-Configure.png "Screenshot of the RSAT Settings dialog box")
 
-- To organize test cases in suites to help guarantee the correct execution sequence, so that you can collect logs of test executions for further reporting and investigation, you must have access to Azure DevOps from the deployed Finance and Operations topology.
+- To organize test cases in suites to help guarantee the correct execution sequence, so that you can collect logs of test executions for further reporting and investigation, you must have access to Azure DevOps from the deployed topology.
 - To complete the example in this topic, we recommend that you download [ER usage for RSAT tests](https://go.microsoft.com/fwlink/?linkid=874684). This zip file contains the following task guides:
 
     | Content                                           | File name and location |
@@ -81,7 +81,7 @@ Before you can complete the tasks in this topic, you must complete the following
 
 ## Prepare the Accounts payable module to process vendor payments
 
-1. Sign in to your Finance and Operations instance.
+1. Sign in to your instance.
 2. Download the following ER configurations from LCS. For instructions, see [ER Import a configuration from Lifecycle Services](./tasks/er-import-configuration-lifecycle-services.md).
 
     - **Payment model** ER model configuration
@@ -214,7 +214,7 @@ As a functional power user, you can record your own steps to test vendor payment
 
 ### Reset user settings
 
-1. Open the default Finance and Operations dashboard.
+1. Open the default dashboard.
 2. Select the **Settings** button (the gear symbol).
 3. Select **User options**.
 4. Select **Usage data**.
@@ -334,7 +334,7 @@ This task recording performs the following actions:
 1. In RSAT, select the loaded tests.
 2. Select **Run**.
 
-Notice that test cases are automatically run in Finance and Operations by using a web browser.
+Notice that test cases are automatically run in the application by using a web browser.
 
 ### Analyze the results of test execution
 
@@ -350,19 +350,18 @@ Notice that the results of the test execution are also sent to Azure DevOps so t
 
 This test suite must fail when at least one of the generated outputs doesn't match the corresponding baseline. To achieve this situation, you can use your derived version of the **BACS (UK)** format that will generate a payment file that has different content than the corresponding baseline. To simulate this situation, you can use the same **BACS (UK)** format but change the payment amount on the processed payment line.
 
-1. Open Finance and Operations in a web browser.
-2. Go to **Accounts payable \> Payments \> Payment journal**.
-3. Select **Lines**.
-4. Select the payment line, and then select **Payment status \> None**.
-5. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
-6. Select **Save** to save your changes.
+1. Open the application and go to **Accounts payable \> Payments \> Payment journal**.
+2. Select **Lines**.
+3. Select the payment line, and then select **Payment status \> None**.
+4. In the **Debit** field, change the value from **1,000.00** to **2,000.00**.
+5. Select **Save** to save your changes.
 
 ### Run the tests in RSAT
 
 1. In RSAT, select the loaded tests.
 2. Select **Run**.
 
-Notice that test cases are automatically run in Finance and Operations by using a web browser.
+Notice that test cases are automatically run in the application by using a web browser.
 
 ### Analyze the results of test execution
 
