@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a new e-Commerce site
+title: Create an e-Commerce site
 description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Create a new e-Commerce site
+# Create an e-Commerce site
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
