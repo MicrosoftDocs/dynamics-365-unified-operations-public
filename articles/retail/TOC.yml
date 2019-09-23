@@ -98,7 +98,7 @@
         href: ../dev-itpro/user-interface/task-recorder.md?toc=/retail/toc.json
       - name: Create documentation or training with Task recorder
         href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/retail/toc.json
-      - name: Videos for Finance and Operations
+      - name: Videos
         href: ../fin-and-ops/get-started/videos.md?toc=/retail/toc.json
       - name: Glossary
         href: ../fin-and-ops/get-started/glossary.md?toc=/retail/toc.json
@@ -166,7 +166,7 @@
       items:
       - name: Implementation lifecycle management home page
         href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/retail/toc.json
-      - name: Finance and Operations architecture
+      - name: Architecture for Finance and Operations apps
         href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/retail/toc.json
       - name: Microsoft FastTrack for Finance and Operations
         href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/retail/toc.json
