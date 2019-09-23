@@ -34,13 +34,13 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include[banner](../includes/banner.md)]
 
-The procedures in this topic are examples that show how a user in either the **System administrator** role or the **Electronic reporting developer** role can configure an Electronic reporting (ER) format that generates reports as PDF files by using fillable PDF documents as report templates. These steps can be performed in any company of Microsoft Dynamics 365 for Finance and Operations or Regulatory Configuration Services (RCS).
+The procedures in this topic are examples that show how a user in either the **System administrator** role or the **Electronic reporting developer** role can configure an Electronic reporting (ER) format that generates reports as PDF files by using fillable PDF documents as report templates. These steps can be performed in any company of Dynamics 365 Finance or Regulatory Configuration Services (RCS).
 
 ## Prerequisites
 
 Before you begin, you must have one of the following types of access, depending on the service that you use to complete the procedures in this topic:
 
-- Access to Finance and Operations for one of the following roles:
+- Access to Finance for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
