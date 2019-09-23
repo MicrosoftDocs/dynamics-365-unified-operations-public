@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations version 10.0.6 (November 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.6. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -63,7 +63,7 @@ You can add a reference link from the Purchase order lines back to the correspon
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e) (TBD).
+For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
 
 ### Platform update 30
 Microsoft Dynamics 365 for Finance and Operations version 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [Preview features in Finance and Operations platform update 30 (November 2019)](whats-new-platform-update-30.md).

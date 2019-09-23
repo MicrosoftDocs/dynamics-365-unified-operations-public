@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow types report
-description: This topic points you to a report that lists the workflow types that are available in Finance and Operations.
+description: This topic points you to a report that lists the available workflow types.
 author: sericks007
 manager: AnnBe
 ms.date: 11/03/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to a report that lists the workflow types that are available in Finance and Operations.
+This topic points you to a report that lists the available workflow types.
 
 To create a workflow, you must first select the *type* of workflow that you want to create. For example, you may want to create a **Purchase requisition line review** workflow to define who must approve line items on purchase requisitions. For more information about creating a workflow, see [Create a workflow](create-workflow.md).
 

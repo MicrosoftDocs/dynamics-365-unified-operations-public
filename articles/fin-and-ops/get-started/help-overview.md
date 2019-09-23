@@ -37,13 +37,13 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides an overview of the components of the Microsoft Dynamics 365 for Finance and Operations Help system.
 
 > [!NOTE]
-> The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 for Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 for Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
+> The following products are closely related: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; and Dynamics 365 Talent. The same functionality may appear in all 3 products. As a result, in topics that are primarily related to Retail, the product name will be Dynamics 365 for Retail; in topics that are primarily related to Talent, the product name will be Dynamics 365 Talent; and in topics that are related to the core product, the product name will be Dynamics 365 for Finance and Operations. Topics that are written for one product may apply to the same functionality in a related product.
 
 The Help system is shared by the following products:
 
 - Dynamics 365 for Finance and Operations
 - Dynamics 365 for Retail
-- Dynamics 365 for Talent
+- Dynamics 365 Talent
 
 Finance and Operations includes a Help system that is based on two main components:
 
@@ -82,7 +82,7 @@ You can get help on other Dynamics 365 products by searching for them, or by cli
 
 ### Use an RSS feed
 
-To subscribe to an RSS feed of all updates to the Unified Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager:
+To subscribe to an RSS feed of all updates to the Finance and Operations content, use the following link from a browser that supports RSS feeds, such as Internet Explorer, or an RSS feed manager:
 
 [RSS feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -141,7 +141,7 @@ To access Help content within Finance and Operations, either click the **Help** 
 From the Help pane, you can access articles that apply to the Finance and Operations client. When you first open the Help pane and click the **Help** tab, you'll see the articles that apply to the page that you're currently on in Finance and Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article.
 
 > [!IMPORTANT]
-> This section does not apply to Dynamics 365 for Talent. The Help system for Talent is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Talent.
+> This section does not apply to Dynamics 365 Talent. The Help system for Talent is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Talent.
 
 ### Accessing Task guides from the Help pane
 

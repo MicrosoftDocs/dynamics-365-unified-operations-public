@@ -6,7 +6,7 @@ title: What's new or changed home page
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 09/04/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>10.0.5</td>
 <td>10.0.197</td>
 <td>October 2019</td>
-<td><a href="whats-new-changed-10-0-5.md">Preview features in Dynamics 365 for Finance and Operations version 10.0.5 (October 2019)</a></td>
+<td><a href="whats-new-changed-10-0-5.md">>What's new or changed in Dynamics 365 for Finance and Operations version 10.0.5 (October 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -204,7 +204,7 @@ This table lists the major releases of the application. For monthly cloud update
 <td>Platform update 29</td>
 <td>7.0.5372</td>
 <td>October 2019</td>
-<td><a href="whats-new-platform-update-29.md">Preview features in Dynamics 365 for Finance and Operations platform update 29 (October 2019)</a></td>
+<td><a href="whats-new-platform-update-29.md">>What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)</a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>

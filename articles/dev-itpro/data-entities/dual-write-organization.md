@@ -54,7 +54,7 @@ Organization hierarchy entity maps are available for one-way synchronization of 
 
 ## Internal Organization Hierarchy Purpose
 
-This template provides one-way synchronization of the Organization Hierarchy Purpose entity from Finance and Operations apps to other Dynamics 365 applications.
+This template provides one-way synchronization of the Organization Hierarchy Purpose entity from Finance and Operations to other Dynamics 365 apps.
 
 <!-- ![architecture image](media/dual-write-purpose.png) -->
 
@@ -68,7 +68,7 @@ SETASDEFAULT | \>\> | msdyn\_setasdefault
 
 ## Internal Organization Hierarchy Type
 
-This template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations apps to other Dynamics 365 applications.
+Tihs template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations to other Dynamics 365 apps.
 
 <!-- ![architecture image](media/dual-write-type.png) -->
 
@@ -78,7 +78,7 @@ NAME | \> | msdyn\_name
 
 ## Internal Organization Hierarchy
 
-This template provides one-way synchronization of the Organization Hierarchy Published entity from Finance and Operations apps to other Dynamics 365 applications.
+This template provides one-way synchronization of the Organization Hierarchy Published entity from Finance and Operations to other Dynamics 365 apps.
 
 <!-- ![architecture image](media/dual-write-organization.png) -->
 

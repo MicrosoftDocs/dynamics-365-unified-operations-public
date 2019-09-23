@@ -40,7 +40,6 @@ The term *vendor* refers to a supplier organization or a sole proprietor that is
 
 Integration of vendor data between Finance and Operations apps and other Dynamics 365 applications lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
 
-
 ### Vendor data flow
 
 If you want to use other Dynamics 365 apps for vendor mastering, and you want to isolate vendor information from customer information, you can use the new vendor design.
@@ -187,7 +186,6 @@ This template synchronizes all primary, secondary, and tertiary contact informat
 ## Vendor Groups
 
 This template synchronizes vendor group information between Finance and Operations app and other Dynamics 365 apps.
->>>>>>> master
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 

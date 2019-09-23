@@ -71,7 +71,7 @@
         href: get-started/features-not-implemented-on-prem.md
       - name: Preview features in Finance and Operations version 10.0.6 (November 2019)
         href: get-started/whats-new-changed-10-0-6.md
-      - name: Preview features in Finance and Operations version 10.0.5 (October 2019)
+      - name: Finance and Operations version 10.0.5 (October 2019)
         href: get-started/whats-new-changed-10-0-5.md
       - name: Finance and Operations version 10.0.4 (July 2019)
         href: get-started/whats-new-changed-10-0-4.md
@@ -87,7 +87,7 @@
         href: get-started/whats-new-changed-8-1-3.md
       - name: Preview features in Platform update 30 (November 2019)
         href: get-started/whats-new-platform-update-30.md
-      - name: Preview features in Platform update 29 (October 2019)
+      - name: Platform update 29 (October 2019)
         href: get-started/whats-new-platform-update-29.md
       - name: Platform update 28 (July 2019)
         href: get-started/whats-new-platform-update-28.md 
@@ -755,6 +755,12 @@
         href: ../financials/accounts-receivable/tasks/review-collections-information.md
       - name: Revenue recognition overview
         href: ../financials/accounts-receivable/revenue-recognition-overview.md
+      - name: Revenue recognition setup
+        href: ../financials/accounts-receivable/revenue-recognition-setup.md
+      - name: Revenue recognition on sales orders
+        href: ../financials/accounts-receivable/revenue-recognition-so-basics.md
+      - name: Recognize deferred revenue
+        href: ../financials/accounts-receivable/revenue-recognition-recognize-deferred-revenue.md       
       - name: Set up and process recurring invoices
         href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -915,6 +921,8 @@
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
       - name: Settle a postdated check for a vendor
         href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
+      - name: Create checks that have Blank status
+        href: ../financials/cash-bank-management/create-check-with-blank-status.md
       - name: Prepayment invoices vs. prepayments
         href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
       - name: Handling cash discounts for overpayments
@@ -1098,7 +1106,7 @@
       - name: Dispose of a fixed asset using a free text invoice
         href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
       - name: Dispose of a fixed asset as scrap
-        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md
+        href: ../financials/fixed-assets/dispose-of-a-fixed-asset-as-scrap.md        
       - name: Fixed asset mass update
         href: ../financials/fixed-assets/fixed-asset-mass-update.md
       - name: Acquire assets through procurement
@@ -1301,6 +1309,8 @@
           href: ../financials/general-ledger/round-sales-tax-payments.md
         - name: Sales tax calculation methods in the Origin field
           href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+        - name: Sales tax calculation on general jounal lines
+          href: ../financials/general-ledger/sales-tax-calculation-on-general-journal.md          
         - name: Whole amount and interval calculation options for sales tax codes
           href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
         - name: Calculate and adjust sales tax on a vendor invoice
@@ -2274,8 +2284,12 @@
         href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
       - name: Post and print a packing slip with transportation delivery details
         href: ../financials/localizations/emea-ita-packing-slip.md
+      - name: Credit invoicing (Italy)
+        href: ../financials/localizations/emea-ita-credit-invoicing.md
       - name: Sales tax books
         href: ../financials/localizations/emea-ita-fiscal-books.md
+      - name: VAT management and reporting by tax point date (Date of VAT register)
+        href: ../financials/localizations/emea-ita-vat-management.md
       - name: Split payment for invoices issued to the Public Administration
         href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
       - name: Withholding tax
@@ -2694,6 +2708,10 @@
           href: ../supply-chain/localizations/rus-goods-transit-postponed.md
         - name: Cash flow management
           href: ../financials/localizations/rus-cash-flow.md
+      - name: Inventory
+        items: 
+        - name: Goods in transit from vendor
+          href: ../financials/localizations/rus-goods-transit-vendor.md
       - name: Reporting
         items:
         - name: Financial reporting

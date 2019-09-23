@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -162,6 +162,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | AOS       | Internet Information Services (IIS) | **Windows features:** WAS, WAS-Process-Model, WAS-NET-Environment, WAS-Config-APIs, Web-Server, Web-WebServer, Web-Security, Web-Filtering, Web-App-Dev, Web-Net-Ext, Web-Mgmt-Tools, Web-Mgmt-Console |
 | AOS       | SQL Server Management Studio 17.2 | <https://go.microsoft.com/fwlink/?linkid=854085> |
 | AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
+| AOS       | Microsoft Visual C++ Redistributable Packages for Microsoft Visual Studio 2017 | <https://lcs.dynamics.com/V2/SharedAssetLibrary> > Models > "VC++ 17 Redistributables" |
 | AOS       | Microsoft Access Database Engine 2010 Redistributable | <https://www.microsoft.com/download/details.aspx?id=13255> |
 | BI        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | BI        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
@@ -169,6 +170,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 | MR        | .NET Framework version 2.0–3.5 (CLR 2.0) | **Windows features:** NET-Framework-Features, NET-Framework-Core, NET-HTTP-Activation, NET-Non-HTTP-Activ |
 | MR        | .NET Framework version 4.0–4.6 (CLR 4.0) | **Windows features:** NET-Framework-45-Features, NET-Framework-45-Core, NET-Framework-45-ASPNET, NET-WCF-Services45, NET-WCF-TCP-PortSharing45 |
 | MR        | Visual C++ Redistributable Packages for Visual Studio 2013 | <https://support.microsoft.com/help/3179560> |
+| ORCH      | The Microsoft .NET Framework version 4.0–4.8 (CLR 4.0) | <https://dotnet.microsoft.com/download/thank-you/net48-offline> |
 
 ### Overview
 
