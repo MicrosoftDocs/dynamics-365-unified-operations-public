@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality.
+This topic provides an overview of the cash register functionality that is available for France in Dynamics 365 Retail. It also provides guidelines for setting up the functionality.
 
 The functionality consists of the following parts:
 
@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Retail for France
 
-This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 Retail documentation](../index.md).
 
 To use the France-specific functionality for Retail, you must complete these tasks:
 
@@ -220,7 +220,9 @@ You must make the following changes on the **Legal entities** page. These settin
 
 ### Set up VAT per French requirements
 
+
 You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 
@@ -356,4 +358,4 @@ There is an option to separately configure the Retail scheduler. Click **Retail 
 
 ### Configure Retail channel components
 
-To enable France-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
+To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).

@@ -41,7 +41,7 @@ Retailers often set different discounts in different channels. This topic review
 
 Retailers often offer different discounts in different channels. This is may be done to address local market conditions or to deal with competing retailers.
 
-Microsoft Dynamics 365 for Retail uses price groups to define channel-specific discounts. Price groups can be assigned to one or more of the following entities: channels, catalogs, affiliations, and loyalty programs. This article discusses channels, but the same concepts apply to catalog discounts, affiliations discounts, and loyalty discounts.
+Retail uses price groups to define channel-specific discounts. Price groups can be assigned to one or more of the following entities: channels, catalogs, affiliations, and loyalty programs. This article discusses channels, but the same concepts apply to catalog discounts, affiliations discounts, and loyalty discounts.
 
 ## Price groups
 

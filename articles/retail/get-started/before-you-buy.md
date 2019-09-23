@@ -2,7 +2,7 @@
 # required metadata
 
 title: Before you buy Retail
-description: New to Dynamics 365 for Retail? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
+description: New to Dynamics 365 Retail? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
 author: jblucher
 manager: AnnBe
 ms.date: 09/28/2017
@@ -31,17 +31,17 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-New to Dynamics 365 for Retail? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
+New to Dynamics 365 Retail? We've put together some guidance to help you, whether you're still evaluating or ready to make a purchase.
 
 ## Step 1: Try out Retail free for 30 days
 
-You can try Dynamics 365 for Retail for 30 days through a simple email sign-up process. The trial version includes "Getting started" task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and work through scenarios, but it cannot be customized. Demo data is included to help you better understand the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. For more details, go to [www.microsoft.com/dynamics365/retail](https://www.microsoft.com/dynamics365/retail).
+You can try Retail for 30 days through a simple email sign-up process. The trial version includes "Getting started" task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and work through scenarios, but it cannot be customized. Demo data is included to help you better understand the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. For more details, go to [www.microsoft.com/dynamics365/retail](https://www.microsoft.com/dynamics365/retail).
 
 ## Step 2: Buy and manage a subscription
 
 To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization's needs.
 
-There are a couple ways to buy a subscription of Dynamics 365 for Retail:
+There are a couple ways to buy a subscription of Dynamics 365 Retail:
 
 - Buy through a partner and use volume licensing.
 - Buy through a Cloud Solution Provider.
@@ -50,7 +50,7 @@ There are a couple ways to buy a subscription of Dynamics 365 for Retail:
 
 If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/licensing/how-to-buy/how-to-buy.aspx).
 
-In volume licensing, Dynamics 365 for Retail is available through:
+In volume licensing, Dynamics 365 Retail is available through:
 
 - Enterprise Agreement
 - Enterprise Agreement Subscription

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Open URL in POS
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Retail. 
 author: AamirAllaq
 manager: AnnBe
 ms.date: 01/28/2019

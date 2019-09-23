@@ -30,7 +30,9 @@ ms.dyn365.ops.version: 7.3.1
 
 [!include [banner](../includes/banner.md)]
 
+
 This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
+
 
 ## Prerequisites
 

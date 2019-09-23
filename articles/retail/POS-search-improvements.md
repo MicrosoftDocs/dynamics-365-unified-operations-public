@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -104,7 +104,10 @@ The traditional customer search can be time-consuming, because it searches acros
 
 ![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
 
+
+
 To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 Retail, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
+
 
 ![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
 
@@ -116,6 +119,6 @@ The **Display order** field determines the order in which shortcuts are shown in
 > [!NOTE]
 > A custom property that is added to the enum doesn't affect the standard customer search algorithm. In other words, the customer search algorithm won't search in the custom property. Users can use a custom property for searches only if that custom property is added as a shortcut, or if the default search algorithm is overridden.
 
-In an upcoming release of Microsoft Dynamics 365 for Retail, retailers will be able to set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). A new **Default customer search mode** option will be available in the POS functionality profile. Set it to **On** to set the default search mode to **Search all stores**. Every customer search attempt will then make a real-time call to the headquarters.
+In an upcoming release of Retail, retailers will be able to set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). A new **Default customer search mode** option will be available in the POS functionality profile. Set it to **On** to set the default search mode to **Search all stores**. Every customer search attempt will then make a real-time call to the headquarters.
 
 To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.

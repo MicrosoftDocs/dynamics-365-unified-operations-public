@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assortment management
-description: This topic explains the basic concepts of assortment management in Microsoft Dynamics 365 for Retail and provides implementation considerations for your project.
+description: This topic explains the basic concepts of assortment management in Dynamics 365 Retail and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Application update 5
 
 ## Overview
 
-Microsoft Dynamics 365 for Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
+Dynamics 365 Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
 
 In Retail, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
 

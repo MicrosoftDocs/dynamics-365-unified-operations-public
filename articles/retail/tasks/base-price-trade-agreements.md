@@ -58,7 +58,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 24. Click **Create trade agreements**.
 25. Click **New**.
 26. In the **Name** field, click the drop-down button to open the lookup.
-27. In the list, select 'Retail'. In the demo data, the 'Retail' journal name has the default relation of 'Price (sales)'. That means all new lines created will default to sales price trade agreements.  
+27. In the list, select **Retail**. In the demo data, the **Retail** journal name has the default relation of **Price (sales)**. That means all new lines created will default to sales price trade agreements.  
 28. On the **Action pane**, click **Lines**.
 29. In the **Account code** field, select 'Group'.
 30. In the **Account selection** field, click the drop-down button to open the lookup.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data screen layouts in Retail Modern POS (MPOS) and Cloud POS
-description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
+description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Retail.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Microsoft Dynamics 365 for Retail.
+This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Retail.
 
 ## Overview
 
@@ -44,7 +44,7 @@ The sample screen layouts that are included with Retail demo data provide conten
 
 ## Anatomy of a screen layout ID
 
-To find screen layouts in Retail, go to **Retail** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
+To find screen layouts, go to **Retail** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
 ![Screen layouts page in Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -111,7 +111,7 @@ The following table shows the layout sizes that are provided for typical screen 
 \* These additional layout sizes are available only in Adventure Works and Fabrikam layouts.
 
 > [!TIP]
-> POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content in Retail by going to **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
+> POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content by going to **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
 ![Screen layouts and layout resolutions/sizes in Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 

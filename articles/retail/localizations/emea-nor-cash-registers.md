@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 4
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This topic provides an overview of the cash register functionality that is available for Norway in Dynamics 365 Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
 - Norway-specific features, such as digital signatures for sales transactions.
@@ -118,9 +118,9 @@ The SAF-T Cash Register format is implemented at Retail Headquarters by using [E
 
 ## Setting up Retail for Norway
 
-This section describes the Retail settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-To use the Norway-specific functionality for Retail, you must complete these tasks:
+To use the Norway-specific functionality, you must complete these tasks:
 
 - Set the **Country/region** field to **NOR** (Norway) in the primary address of the legal entity.
 - Set the **ISO code** field to **NO** (Norway) in the POS functionality profile of every store that is located in Norway.
@@ -134,6 +134,7 @@ Make sure that the name of the legal entity is specified. This name will be prin
 Additionally, on the **Bank account information** FastTab, in the **Routing number** field, specify the organization number.
 
 ### Set up value-added tax (VAT) per Norwegian requirements
+
 
 You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
@@ -220,4 +221,4 @@ You must also map required master data to predefined SAF-T standard codes. For m
 
 ### Configure Retail channel components
 
-To enable Norway-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).
+To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up call center channels
-description: This topic provides information about how to process orders for call centers by using Microsoft Dynamics 365 for Retail.
+description: This topic provides information about how to process orders for call centers by using Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-A company can define multiple call center channels in Microsoft Dynamics 365 for Retail. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
+A company can define multiple call center channels in Dynamics 365 Retail. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
 
 When a new call center channel is created, it's systematically assigned an operating unit number. Because call centers are created as operating units, users can link the call center channel to various Retail features, such as assortments, catalogs, and specific modes of delivery.
 
@@ -80,6 +80,8 @@ When you define the call center channel, you must link channel users to the call
 
 By default, the **Retail sale** flag on the sales order header is turned on for all orders that call center users create. The orders can then take advantage of the system's retail-specific price and promotions features.
 
+
 Users who aren't linked to a call center channel use the standard order entry features of Microsoft Dynamics 365 Finance. Orders that these users enter through the sales order entry form will not be systematically identified as Retail orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, retail pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+
 
 After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.

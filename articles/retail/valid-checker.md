@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail transaction consistency checker
-description: This topic describes the retail transaction consistency checker functionality in Microsoft Dynamics 365 for Retail.
+description: This topic describes the retail transaction consistency checker functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic describes the retail transaction consistency checker functionality. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
-When a statement is posted in Microsoft Dynamics 365 for Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
+When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
 
 - The transaction total on the header table does not match the transaction total on the lines.
 - The line count on the header table does not match with the number of lines in the transaction table.
