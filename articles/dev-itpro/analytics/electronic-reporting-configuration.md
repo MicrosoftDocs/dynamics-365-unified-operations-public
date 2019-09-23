@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 
 ## Electronic reporting
 
@@ -47,7 +47,7 @@ General electronic reporting (GER) is a new configurable tool that helps you cre
 - Visual editors are used to author all components of the GER configuration.
 - A Microsoft Excel–like formula language is used for data transformation.
 
-### One configuration for multiple Microsoft Dynamics 365 for Finance and Operations releases
+### One configuration for multiple Dynamics 365 Finance releases
 
 - Manage one domain specific data model that is defined in business terms.
 - Isolate application release specifics in release-dependent data model mappings.
@@ -66,7 +66,7 @@ GER lets users define electronic format structures, and then describe how those 
 
 ## What's new here
 
-| What can you do? | Microsoft Dynamics AX 2012 | Current version of Finance and Operations | Why is this important? |
+| What can you do? | Microsoft Dynamics AX 2012 | Current version of Finance  | Why is this important? |
 |------------------|----------------------------|-------------------------------------------|------------------------|
 | Configure and generate electronic documents to meet the legal requirements in various countries/regions. | Electronic documents are hard-coded in X++ or as Extensible Stylesheet Language Transformations (XSLTs). | GER is a new tool for configuring and generating electronic documents that target a business user instead of a developer. | GER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. |
 | Configure regulatory updates to formats. | Any format adjustments require development effort. | A business user can configure the formats, based on domain-specific data models (for example, for payments, Intrastat reports, or tax reports). | GER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. |
