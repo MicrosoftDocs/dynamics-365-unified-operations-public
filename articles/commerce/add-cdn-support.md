@@ -123,13 +123,13 @@ To set up a caching rule in Commerce, do the following.
 
 The following image shows the Commerce **Add a rule** screen.
 
-![CDN Add A Caching Rule](/articles/commerce/media/CDN_CachingRule.png)
+![CDN Add A Caching Rule](./media/CDN_CachingRule.png)
 
 After this initial configuration is deployed, you must add your custom domain to the Azure Front Door configuration. To add the custom domain (for example, www.fabrikam.com), you need to configure a CNAME for the domain.
 
 The following image shows the Commerce **CNAME configuration** screen.
 
-![CNAME Configuration](/articles/commerce/media/CNAME_Configuration.png)
+![CNAME Configuration](./media/CNAME_Configuration.png)
 
 >[!NOTE]
 > If the domain to be used is already active and live, please reach out to support for enabling this domain with Azure Front Door to set up a test.
@@ -137,6 +137,6 @@ You can choose to use Azure Front Door to manage the certificate, or use your ow
 
 The following image shows the Commerce **Custom Domain HTTPS** screen.
 
-![Custom Domain Certificate](/articles/commerce/media/Custom_Domain_HTTPS.png)
+![Custom Domain Certificate](./media/Custom_Domain_HTTPS.png)
 
 Your CDN should now be configured for use with your Commerce site.
