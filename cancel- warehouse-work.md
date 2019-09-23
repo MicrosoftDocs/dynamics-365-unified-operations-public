@@ -47,7 +47,7 @@ During warehouse picking operations, a worker may encounter situations where aft
 Unlike the standard **Cancel** button that is accessible directly from the Work header, the **Cancel work** function does not have a pre-condition for the last completed work line to be of type *Put*. In other words, to execute cancel logic it does not require item quantity on a work line to be on a non-user location. 
 
    > [!NOTE]
-     > Warehouse users must continue to use the regular **Cancel** action on the work page for work that needs to be canceled for operational reasons.
+   > Warehouse users must continue to use the regular **Cancel** action on the work page for work that needs to be canceled for operational reasons.
 
 Only work of type **Sales**, **Transfer issue**, **Raw material picking**, or **Replenishment** can be canceled by this job. Cancellation will not be executed for frozen raw material picking work or work that can be canceled by a regular cancel function (see Note above). 
 
