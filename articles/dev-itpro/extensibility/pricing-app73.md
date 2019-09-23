@@ -3,7 +3,7 @@
 # required metadata
 
 title: Price and discount extensibility
-description: This topic describes how to extend pricing functionality in Microsoft Dynamics 365 for Finance and Operations
+description: This topic describes how to extend pricing functionality.
 author: smithanataraj
 manager: AnnBe
 ms.date: 12/21/2017
