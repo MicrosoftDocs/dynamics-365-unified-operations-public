@@ -180,7 +180,7 @@ The following steps explain how a user in the System administrator or Electronic
 18. Close the page.
 19. Close the page.
 20. Click Edit.
-    * If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 for Finance and Operations, Enterprise edition” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration. Skip the next step otherwise.  
+    * If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration. Skip the next step otherwise.  
 21. Select Yes in the Default for model mapping field.
 22. In the tree, select '1099 Payments model'.
 23. Click Designer.
