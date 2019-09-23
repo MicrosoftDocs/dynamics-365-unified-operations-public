@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Finance and Operations. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
+The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Finance and Operations. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
 
 For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
 

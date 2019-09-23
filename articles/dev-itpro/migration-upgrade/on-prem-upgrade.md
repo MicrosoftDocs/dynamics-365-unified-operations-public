@@ -5,7 +5,7 @@ title: In-place upgrade process for on-premises environments
 description: This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations versions 7.x to 8.1.  
 author: laneswenka
 manager: AnnBe
-ms.date: 06/18/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
-This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
+This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 8.1.  
 
 ## On-premises upgrade from version 7.x (with Platform update 8-20) to 8.1
 
@@ -202,7 +202,7 @@ An overview of each path is given below:
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-    d.  The database will need to be configured. Follow the steps under [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
+    d.  The database will need to be configured. Follow the steps under [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
     e.  In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 12c (typically AXDB).
 
@@ -327,7 +327,7 @@ An overview of each path is given below:
 
 15. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-16. The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
+16. The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
 17. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 15 (typically AXDB).
 
@@ -402,7 +402,7 @@ An overview of each path is given below:
 
 14. Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms?view=sql-server-2017).
 
-15. The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance-and-operations-database).
+15. The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
 16. In LCS, set up a new environment and deploy it with version 8.1 (Redeploy). For more information, see [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you should specify should be the one created in step 14 (typically AXDB).
 
@@ -436,7 +436,7 @@ The parameters that can be passed to the script are:
 
 -   **-DatabaseName** - Database name that you want to upgrade.
 
--   **-DatabaseServer** - Database server containing Microsoft Dynamics 365 for Finance and Operations, on-premises database.
+-   **-DatabaseServer** - Database server containing Finance and Operations (on-premises) database.
 
 -   **-DatabaseUser** - Username for SQL Authentication.
 

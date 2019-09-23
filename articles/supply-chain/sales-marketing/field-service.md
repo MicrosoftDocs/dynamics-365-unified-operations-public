@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations enables synchronization of business processes between Finance and Operations and Microsoft Dynamics 365 for Field Service. The integration scenarios are configured by using extensible Data integrator templates and the Common Data Service (CDS) to enable the synchronization of business processes.
+Finance and Operations enables synchronization of business processes between Finance and Operations and Dynamics 365 Field Service. The integration scenarios are configured by using extensible Data integrator templates and the Common Data Service (CDS) to enable the synchronization of business processes.
 Standard templates can be used to create custom integration projects, where additional standard and custom fields and entities can be mapped to adjust the integration and meet specific business needs. 
 
 The field service integration builds on top of the existing prospect-to-cash functionality.
@@ -60,8 +60,8 @@ The additional functionality in this second phase focused on giving field techni
 - On-hand inventory information
 - Inventory transfers
 - Inventory adjustments
-- Dynamics 365 for Finance and Operations projects connected with Dynamics 365 for Field Service work orders
-- Dynamics 365 for Field Service work orders with link to Dynamics 365 for Finance and Operations projects, apply this project number to the Dynamics 365 for Finance and Operations sales order to allow invoicing from the project. 
+- Finance and Operations projects connected with Dynamics 365 Field Service work orders
+- Dynamics 365 Field Service work orders with link to Finance and Operations projects, apply this project number to the sales order to allow invoicing from the project. 
 
 ![Synchronization of business processes between Finance and Operations and Field Service](./media/FSv2overview.png)
 

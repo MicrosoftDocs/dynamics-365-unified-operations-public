@@ -43,7 +43,7 @@ The allocation base is used to measure and quantify activities, such as machine 
 
 **Cost accounting**
 
-Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data, so that management can make the best possible decisions for price updates, budgets, cost control, and so on. The source data that is used for cost analysis is treated independently in Cost accounting. Therefore, updates in Cost accounting don’t affect the source data. However, when you collect cost data from various sources, and especially when you import the main accounts from General ledger in Microsoft Dynamics 365 for Finance and Operations as cost elements, there is data redundancy, because the same data exists in both General ledger and Cost accounting. This redundancy is required, because you use financial management for external reporting and Cost accounting for internal reporting.
+Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data, so that management can make the best possible decisions for price updates, budgets, cost control, and so on. The source data that is used for cost analysis is treated independently in Cost accounting. Therefore, updates in Cost accounting don’t affect the source data. However, when you collect cost data from various sources, and especially when you import the main accounts from General ledger as cost elements, there is data redundancy, because the same data exists in both General ledger and Cost accounting. This redundancy is required, because you use financial management for external reporting and Cost accounting for internal reporting.
 
 **Cost accounting ledger**
 
@@ -100,7 +100,7 @@ Is used to distribute cost from one cost object to one or more other cost object
 
 **Cost allocation**
 
-Is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the order to perform the allocations in and iterate over it. The balance of a cost object is allocated by a single allocation base. Allocations across cost object dimensions and their respective members are supported. The allocation order is controlled by the cost control unit.
+Is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the order to perform the allocations in and iterate over it. The balance of a cost object is allocated by a single allocation base. Allocations across cost object dimensions and their respective members are supported. The allocation order is controlled by the cost control unit.
 
 **Cost allocation policy**
 
@@ -125,7 +125,7 @@ The dimension classification hierarchy type is used to define policies and for r
 Cost accounting supports integration of data from source systems via a set of data connectors. The following data connectors are available:
 
 -  Imported transactions (pre-configured)
--  Dynamics 365 for Finance and Operations (pre-configured)
+-  Dynamics 365 Finance (pre-configured)
 -  Dynamics AX (configuration required)
 
 **Note:** The data connector Imported transactions is based on data entities.
@@ -134,7 +134,7 @@ Cost accounting supports integration of data from source systems via a set of da
 
 Most source systems can provide data that matches one or more data sources in Cost accounting. To align data from the source systems with the data source in Cost accounting, a data provider needs to be configured. The following table lists the availability of data providers per data connector and data source.
 
-|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 for Finance and Operations data connector**  | **Dynamics AX data connector**  |
+|  **Data sources** |  **Imported transactions data connector** | **Dynamics 365 Finance data connector**  | **Dynamics AX data connector**  |
 |---|---|---|---|
 | Cost element dimension members  |  Yes | Yes  | Yes  |
 |  Cost object dimension members |  Yes | Yes  | Yes  |

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Phantom items
-description: This topic describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Dynamics 365 Supply Chain Management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/15/2018
@@ -55,7 +55,7 @@ In this structure, you can see that there is no notion of parts F and G, and the
 
 Unlike the Engineering BOM, which had two operations sheets, the Manufacturing BOM has only one operations sheet. The packaging operation that was linked to part G has also been elevated and is now part of the operations sheet for product H. The assembly of the electrical unit is the first operation. This order makes good sense, because this unit is used in the next operation, which is the machine assembly. The last operation is the packaging operation, which consumes two packing materials (C and D).
 
-In Microsoft Dynamics 365 for Finance and Operations, the transition between the Engineering BOM and the Manufacturing BOM is enabled through the Phantom BOM line type. As the term “phantom” indicates, parts F and G have disappeared during the transition between the two BOM types. In this example, the Phantom line type is applied to the BOM lines for parts F and G in the Engineering BOM. When a production or batch order is created, the Engineering BOM is copied to the production or batch order. Then, when the order is estimated, the transition from the Engineering BOM to the Manufacturing BOM occurs, as shown in the preceding illustrations. From the operations sheet in the second illustration, packaging materials C and D are input for the operation. 
+In Finance and Operations, the transition between the Engineering BOM and the Manufacturing BOM is enabled through the Phantom BOM line type. As the term “phantom” indicates, parts F and G have disappeared during the transition between the two BOM types. In this example, the Phantom line type is applied to the BOM lines for parts F and G in the Engineering BOM. When a production or batch order is created, the Engineering BOM is copied to the production or batch order. Then, when the order is estimated, the transition from the Engineering BOM to the Manufacturing BOM occurs, as shown in the preceding illustrations. From the operations sheet in the second illustration, packaging materials C and D are input for the operation. 
 
 ## Multilevel phantom BOM structures
 The Phantom line type can be used in multilevel BOM structures, as shown in the following illustration. In this illustration, (a) is the BOM for product G, and (b) is the route sheet for parts E and F and product G. 

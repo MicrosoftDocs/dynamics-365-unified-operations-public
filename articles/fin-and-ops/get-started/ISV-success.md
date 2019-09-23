@@ -5,7 +5,7 @@ title: Microsoft Dynamics Insider Program
 description: These Supplemental Preview Terms (“Preview Terms”) are in addition to and supplement the Microsoft Dynamics 365 Insider Program Agreement (“Program Agreement” and, as supplemented by these Preview Terms, the “Agreement”) that Participant accepted.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ These Supplemental Preview Terms (“Preview Terms”) are in addition to and su
 
 **“DRI”** means designated responsible individual.
 
- **“Dynamics Online Service”** means Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics 365 for Retail.
+ **“Dynamics Online Service”** means Dynamics 365 Finance, Supply Chain Management, or Retail.
  
 **“Solution Package”** means any software, data, media, service, or other materials that Participant developed for the Dynamics Online Service.
 

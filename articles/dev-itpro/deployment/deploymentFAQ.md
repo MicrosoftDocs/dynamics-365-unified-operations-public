@@ -5,7 +5,7 @@ title: Self-service deployment FAQ
 description: This topic provides answers to some frequently asked questions about self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/14/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,8 +74,8 @@ As soon as you submit the request, it's automatically approved. Within a minute 
 > [!NOTE]
 > The credentials are valid for eight hours, and then they will expire. After the credentials expire, you will have to request access again. 
 
-### Access Finance and Operation logs
-You can view and download all Finance and Operations logs from the **Activity** tab on the LCS environment monitoring page.
+### Access log files
+You can view and download all log files from the **Activity** tab on the LCS environment monitoring page.
 
 ### Use perfmon tools
 Although you can no longer use Remote Desktop and then use perfmon.exe to diagnose performance issues, you can monitor critical health metrics for CPU and memory consumption through LCS. In addition, you can run predefined queries on demand, and you can run predefined actions to mitigate performance issues on your Tier 2+ environments. 

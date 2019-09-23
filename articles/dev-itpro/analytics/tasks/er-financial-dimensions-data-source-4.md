@@ -48,5 +48,5 @@ To complete these steps, you must first complete the steps in the “ER Use fina
 9. In the Criteria field, type '00057'.
 10. Click OK.
 11. Click OK.
-    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.  
+    * Review the generated output. Note that for each transaction of the selected batch, the financial dimensions from the corresponding dimensions set are presented. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 

@@ -61,7 +61,7 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
 17. In the Item type field, select 'String'.
 18. Click Add.
 
-## Map new data model elements to Dynamics 365 for Finance and Operations, Enterprise edition data sources
+## Map new data model elements to data sources
 1. Click Map model to datasource.
 2. Use the Quick Filter to filter on the Definition field with a value of 'InvoiceCustomer'.
     * InvoiceCustomer  

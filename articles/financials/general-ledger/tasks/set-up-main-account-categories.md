@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up main account categories
-description: This topic explains how to set up main account categories in Dynamics 365 for Finance and Operations. 
+description: This topic explains how to set up main account categories in Dynamics 365 Finance. 
 author: aprilolson
 manager: AnnBe 
 ms.date: 08/08/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This topic explains how to set up main account categories in Dynamics 365 for Finance and Operations. Main account categories are used for the default reports in financial reporting and in Power BI. Main account categories that are created by default can be renamed but not deleted. Additional account categories can be created and used for reporting and analysis purposes. This topic uses the USMF demo company.
+This topic explains how to set up main account categories. Main account categories are used for the default reports in financial reporting and in Power BI. Main account categories that are created by default can be renamed but not deleted. Additional account categories can be created and used for reporting and analysis purposes. This topic uses the USMF demo company.
 
 ## Create a main account category
 1. In the navigation pane, go to **Modules > General Ledger > Chart of accounts > Accounts > Main account categories**.

@@ -5,7 +5,7 @@ title: Maintenance operations for deployments
 description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how to perform maintenance operations for a Microsoft Dynamics 365 for Finance and Operations environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
+This topic explains how to perform maintenance operations for an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 ## Restart services
 
@@ -49,7 +49,7 @@ To restart a service, follow these steps.
 
 ## Maintenance mode
 
-Finance and Operations includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
+Finance and Operations apps includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
 
 To turn maintenance mode on or off, follow these steps.
 
@@ -63,7 +63,7 @@ To turn maintenance mode on or off, follow these steps.
 
 ## Access database
 
-Remote access is turned off for environments that were deployed by using the [self-service deployment](infrastructure-stack.md) experience. During implementation of Finance and Operations, if you must connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 standard acceptance test environments for troubleshooting purposes, access will be granted as it's required. The access won't be persistent.
+Remote access is turned off for environments that were deployed by using the [self-service deployment](infrastructure-stack.md) experience. During implementation, if you must connect to the database on your Tier 2, Tier 3, Tier 4 or Tier 5 standard acceptance test environments for troubleshooting purposes, access will be granted as it's required. The access won't be persistent.
 
 To connect to a database, follow these steps.
 

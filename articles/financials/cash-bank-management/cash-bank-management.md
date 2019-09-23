@@ -102,7 +102,7 @@ You can find opinions, news, and other information on the [Microsoft Dynamics 36
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
 #### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+Additional help is available as task guides inside Finance. To access task guides, click the Help button on any page.
 
 #### Videos
 

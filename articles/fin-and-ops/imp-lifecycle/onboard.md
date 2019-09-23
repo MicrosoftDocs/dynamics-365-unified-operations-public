@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Onboard a Finance and Operations implementation project
-description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+title: Onboard an implementation project
+description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 08/22/2019
@@ -27,11 +27,11 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Onboard a Finance and Operations implementation project
+# Onboard an implementation project
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+This topic describes how to onboard a Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Microsoft 365 Admin Center
 
@@ -47,7 +47,7 @@ After your organization has purchased a subscription to Finance and Operations, 
 6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
 7. The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.  
    > [!NOTE]
-   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, at least one additional Project Owner must be assigned to the implementation project.
+   > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 
    For an overview of LCS user management, including the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
@@ -65,7 +65,7 @@ After the LCS **Implementation project** workspace is provisioned, the Microso
 
 All LCS **Implementation projects** will receive an email from the FastTrack team welcoming them to the service after they successfully complete the project onboarding. If project onboarding is not completed within a few weeks after creating an LCS **Implementation project** creation, a reminder will be sent to the project team.
 
-For qualifying projects, FastTrack will email the project team offering an onboarding meeting, which is a 60-minute conference call. For more information about qualifying projects, see [Eligibility for FastTrack for Finance and Operations](../get-started/fasttrack-dynamics-365-overview.md#eligibility-for-fasttrack-for-finance-and-operations). The onboarding meeting is optional. During this call, the FastTrack team will introduce the FastTrack program and discuss important topics such as tenant validation, environment planning, application lifecycle management, and go-live readiness. If necessary, during the call we will assist the team in completing the **Project onboarding**. It is suggested that Project managers and Delivery leads as well as Solution Architects from customer and partner participate in the onboarding meeting. 
+For qualifying projects, FastTrack will email the project team offering an onboarding meeting, which is a 60-minute conference call. For more information about qualifying projects, see [Eligibility for FastTrack](../get-started/fasttrack-dynamics-365-overview.md#eligibility-for-fasttrack). The onboarding meeting is optional. During this call, the FastTrack team will introduce the FastTrack program and discuss important topics such as tenant validation, environment planning, application lifecycle management, and go-live readiness. If necessary, during the call we will assist the team in completing the **Project onboarding**. It is suggested that Project managers and Delivery leads as well as Solution Architects from customer and partner participate in the onboarding meeting. 
 > [!NOTE]
 > All onboarding-related emails from the FastTrack team will originate from Dynamics 365 Onboarding (<ond365@microsoft.com>), so please ensure that any spam blocker/filter allows email from this address.
 

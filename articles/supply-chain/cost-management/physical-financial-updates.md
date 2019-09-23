@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 
-Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations. Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.
+Inventory transactions can be physically updated and financially updated in Dynamics 365 Supply Chain Management. Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.
 
 ## Physical increases
 When a physical transaction is posted, the status of the transaction record is **Received**. The following transactions are considered physical increases:

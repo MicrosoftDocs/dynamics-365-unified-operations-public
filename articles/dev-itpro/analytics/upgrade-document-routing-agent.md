@@ -31,15 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations with platform update 12 includes several important enhancements to the components that provide network printing capabilities. For example, the solution for managing the print job queue has been redesigned so that the Print Job Management service can be scaled to satisfy high-volume printing requirements. Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers upgrade **all** existing DRA clients that are hosted on-premises.
+Platform update 12 includes several important enhancements to the components that provide network printing capabilities. For example, the solution for managing the print job queue has been redesigned so that the Print Job Management service can be scaled to satisfy high-volume printing requirements. Although the Print Job Management service is backward-compatible with in-market versions of the Document Routing Agent (DRA) client, we strongly recommend that customers upgrade **all** existing DRA clients that are hosted on-premises.
 
 If you don't upgrade existing installations of the DRA to Platform update 12 or later, you might experience the following issues:
 
-- Observable performance degradation in Finance and Operations applications
+- Observable performance degradation in applications
 - Document loss that is associated with orphaned print jobs
 - Inconsistent handling of printed documents that have custom margins
 
-IT administrators must perform the following procedures on each domain resource that is used to host a DRA for Finance and Operations.
+IT administrators must perform the following procedures on each domain resource that is used to host a DRA.
 
 ## Get started
 To continue to run the DRA as a Microsoft Windows service, you must have both the user name and the password of the domain account that is used to run the service. This information must be available after the upgrade is completed. To find the information for the active service account, start the Microsoft Management Console (MMC) Services snap-in, and select **Microsoft Dynamics 365 Document Routing Service** in the list.

@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 > [!Important]
-> Exchange rates and amount difference settings are designed to correctly reflect exchange rate and amount diferences in accounting and tax accounting. However, the amount difference has been canceled in accounting and tax accounting since 01.01.2007 - in accounting and since 01.01.2015 - in tax accounting. Nevertheless, the amount difference functionality still exists in Finance and Operations. This topic describes that functionality.   
+> Exchange rates and amount difference settings are designed to correctly reflect exchange rate and amount differences in accounting and tax accounting. However, the amount difference has been canceled in accounting and tax accounting since 01.01.2007 - in accounting and since 01.01.2015 - in tax accounting. Nevertheless, the amount difference functionality still exists in Dynamics 365 Finance. This topic describes that functionality.   
 
 You use the **Currency revaluation accounts** page to set up the loss or gain calculation for currency exchange.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: SQL Server Reporting Services (SSRS) reports that are available
-description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
+description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 author: sericks007
 manager: AnnBe
 ms.date: 01/25/2018
@@ -33,12 +33,12 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Finance and Operations.
+This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 
-Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, Finance and Operations offers several tools to produce reports to satisfy complex business requirements. One of these tools is SQL Server Reporting Services. SSRS reports provide the following advantages:
+Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, the application offers several tools to produce reports to satisfy complex business requirements. One of these tools is SQL Server Reporting Services. SSRS reports provide the following advantages:
 
 - Back office document management capabilities including email support, scheduled executions via batches, and print archive functionality.
-- Parameterized views with drill-through navigation to Finance and Operations pages and other reports.
+- Parameterized views with drill-through navigation to application pages and other reports.
 - Used to produce precision documents for compliance with local regulatory business practices.
 
 For more information, see [Create next-generation reporting solutions](create-nextgen-reporting-solutions.md).

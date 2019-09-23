@@ -2,7 +2,7 @@
 # required metadata
 
 title: Golden configuration promotion
-description: This topic explains a golden configuration promotion for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019
@@ -41,19 +41,19 @@ In this tutorial, you will learn how to:
 > * Run the import to the target UAT environment.
 > * Copy the UAT environment into a production environment.
 
-As an example of this scenario, a customer who hasn't gone live with Microsoft Dynamics 365 for Finance and Operations is instead preparing for a Conference Room Pilot, mock go-live, or go-live. This scenario supports promoting a baseline golden database from a developer environment to a UAT environment and eventually to production.
+As an example of this scenario, a customer who hasn't gone live is instead preparing for a Conference Room Pilot, mock go-live, or go-live. This scenario supports promoting a baseline golden database from a developer environment to a UAT environment and eventually to production.
 
 ## Prerequisites
 
 To complete this tutorial, you must have a developer environment that is deployed with a database that is curated as a golden configuration database. You must also have at least one standard UAT environment deployed and, optionally, a production environment.
 
-The developer environment must run the same *application version* of Finance and Operations as the target UAT environment. In addition, the *platform version* of the developer environment must be earlier than or the same as the platform version in the target UAT environment.
+The developer environment must run the same *application version* as the target UAT environment. In addition, the *platform version* of the developer environment must be earlier than or the same as the platform version in the target UAT environment.
 
 ## Before you begin
 
 ### Supported SQL Server collation
 
-The only supported collation for Finance and Operations databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Make sure that your Microsoft SQL Server and database collations in development environments are set to this value. Also make sure that any configuration environments that are published to sandbox have this collation.
+The only supported collation databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Make sure that your Microsoft SQL Server and database collations in development environments are set to this value. Also make sure that any configuration environments that are published to sandbox have this collation.
 
 ### Document the values of encrypted fields
 
@@ -98,7 +98,7 @@ NOUNLOAD, STATS = 5
 
 Run the following script against the AxDB\_CopyForExport database that you created in the previous section. This script makes the following changes:
 
-- Set the **SysGlobalConfiguration** flag to inform Finance and Operations that the database is Azure-based.
+- Set the **SysGlobalConfiguration** flag to inform the application that the database is Azure-based.
 - Remove a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. References to tempDB aren't allowed in an Azure SQL database. The database synchronization process will re-create the reference later.
 - Drop users, because Microsoft Windows users are forbidden in Azure SQL databases. Other users must be re-created later, so that they're correctly linked to the appropriate sign-in on the target server.
 - Clear encrypted hardware profile merchant properties.

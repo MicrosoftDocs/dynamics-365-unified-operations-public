@@ -730,7 +730,7 @@ Generate a land tax declaration
         (2018)**. The file that is downloaded is named **RU Land tax declaration
         v5.06 (2018).zip**.
 
-    -   In Microsoft Dynamics 365 for Finance and Operations, in the **Data
+    -   In the **Data
         management** workspace, select **Import**.
 
     -   In the **Job details** section, set the following values:

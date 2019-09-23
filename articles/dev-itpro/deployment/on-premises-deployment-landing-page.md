@@ -5,7 +5,7 @@ title: On-premises deployment home page
 description: This topic provides information and links to content about on-premises deployments.
 author: kfend
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
+You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This topic provides links to content that contains information specific to on-premises deployments.
 
 ## Get started
 - [On-premises deployment option](on-premises-overview.md)
 - [Plan and prepare for on-premises deployments](plan-onprem-deployment.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Buy Finance and Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Buy Finance + Operations (on-premises)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Comparison of cloud and on-premises features](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## Onboard
@@ -56,7 +56,7 @@ You can deploy Microsoft Dynamics 365 for Finance and Operations (on-premises). 
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
-- [Set up technical support for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 - [Apply updates to on-premises deployments](apply-updates-on-premises.md)
 - [Redeploy on-premises environments](redeploy-on-prem.md)

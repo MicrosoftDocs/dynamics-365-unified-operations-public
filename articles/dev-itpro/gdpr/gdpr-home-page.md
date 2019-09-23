@@ -48,7 +48,7 @@ Your first step in responding to a request for data will usually be to use the P
 ## Product-specific considerations
 
 - [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
-- [Respond to a DSR request for data from Microsoft Dynamics 365 for Talent](respond-dsr-request-talent.md)
+- [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
 - [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
 - [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
 

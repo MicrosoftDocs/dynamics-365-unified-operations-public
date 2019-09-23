@@ -36,7 +36,7 @@ You can move your subscriptions and your Microsoft Dynamics Lifecyle Services (L
 - Subscriptions were accidentally purchased against the incorrect Azure AD tenant.
 
     > [!NOTE]
-    > If you're a cloud service provider, and you sell subscriptions for Microsoft Dynamics 365 for Finance and Operations to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Azure AD tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Azure AD tenant for the customer.
+    > If you're a cloud service provider, and you sell subscriptions for Finance and Operations apps to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Azure AD tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Azure AD tenant for the customer.
 
 - The customer changes the structure of the Azure AD tenant after the subscription is purchased.
 

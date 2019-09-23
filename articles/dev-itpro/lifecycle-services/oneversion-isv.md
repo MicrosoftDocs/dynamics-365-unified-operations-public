@@ -1,6 +1,6 @@
 ---
 title: Delivering ISV solutions - One Version guidelines
-description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions to Microsoft Dynamics 365 for Finance and Operations.
+description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/12/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Thanks to Microsoft Dynamics 365 Finance and Operations One Version, new updates are now automatically broadcast, downtime is minimal, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
+Thanks to One Version, new updates are now automatically broadcast, downtime is minimal, and customers enjoy the benefits of staying current with recent features and fixes without having to go through expensive upgrades.
 
 Feature management lets customers control when new features are applied. Therefore, as an independent software vendor (ISV) partner, you can innovate together with Microsoft to take advantage of new features without having to handle the waiting times that come with long release cycles. When all your customers run on current versions, you have fewer versions to maintain. You can focus instead on building quality into the solutions that you provide for your customers.
 
@@ -68,7 +68,7 @@ This topic includes the following sections:
 
 ## Servicing customers
 
-Finance and Operations runs on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from support tickets that are submitted by customers or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
+Dynamics 365 Finance and Operations apps run on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from support tickets that are submitted by customers or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
 
 When Microsoft analyzes an issue, it might determine that the issue is related to your ISV solution. Microsoft reports this type of issue to you, so that you can follow up offline.
 
@@ -84,7 +84,7 @@ This recommendation applies to servicing and maintaining your released solution.
 
 Microsoft diligently tries to guarantee compatibility with existing customizations. To achieve this goal, Microsoft uses strict practices in its engineering processes, together with tool and automation support that helps identify API contracts that are unintentionally broken. Telemetry lets Microsoft engineers determine customizations that reference or extend a Microsoft API.
 
-Finance and Operations updates that are applied to customer environments are intended to be functionally compatible and binary-compatible with existing customizations. This compatibility covers not only APIs, but also functionality and the user experience. Customers must explicitly opt in to all new experiences.
+Updates to Finance and Operations apps that are applied to customer environments are intended to be functionally compatible and binary-compatible with existing customizations. This compatibility covers not only APIs, but also functionality and the user experience. Customers must explicitly opt in to all new experiences.
 
 Any deprecation or breaking change in binary or functional compatibility will be announced 12 months in advance. Therefore, you will have enough time to align your customizations with an alternative design. You must pay attention to the monthly updates to Microsoft documentation, and you must review the APIs that are marked as obsolete (deprecated) or internal. In this way, you will be able to manage changes in a timely manner.
 
@@ -118,7 +118,7 @@ Design-time breaking changes that are binary-compatible don't require a 12-month
 
 ## Developing new releases
 
-Together, One Version and the fact that the Finance and Operations solution runs as a service provide a great vehicle for collecting feedback. Feedback is useful, because it helps Microsoft decide which new features it should add to upcoming updates. Historically, the Microsoft approach has been to release major releases that include many new features. However, the new model encourages a different approach. Therefore, Microsoft has moved to a series of continuous updates that gradually build on the available capabilities of the system. In many cases, one update contains an initial small feature that Microsoft then enriches in later updates. In some cases, Microsoft must provide staging for new features, and must use feature exposure to hide the new features or control modifications to them.
+Together, One Version and the fact that the Finance and Operations apps run as a service provides a great vehicle for collecting feedback. Feedback is useful, because it helps Microsoft decide which new features it should add to upcoming updates. Historically, the Microsoft approach has been to release major releases that include many new features. However, the new model encourages a different approach. Therefore, Microsoft has moved to a series of continuous updates that gradually build on the available capabilities of the system. In many cases, one update contains an initial small feature that Microsoft then enriches in later updates. In some cases, Microsoft must provide staging for new features, and must use feature exposure to hide the new features or control modifications to them.
 
 We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
@@ -142,7 +142,7 @@ Design for backward compatibility to avoid breaking customer implementations. A 
 
 ### Data upgrade
 
-The types of data upgrade jobs that existed in earlier versions of Finance and Operations are no longer supported. This change was made because Microsoft wants to provide minimum downtime while a production environment is updated.
+The types of data upgrade jobs that existed in earlier versions are no longer supported. This change was made because Microsoft wants to provide minimum downtime while a production environment is updated.
 
 Database synchronization is still run during upgrade, and it supports basic operations such as adding new tables, field, and indexes.
 

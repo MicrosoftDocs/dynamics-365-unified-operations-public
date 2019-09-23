@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations
+title: Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations
 description: This topic describes the integration between Talent and Finance and Operations. 
 author: andreabichsel
 manager: AnnBe
@@ -27,11 +27,11 @@ ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: 
 ---
 
-# Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations
+# Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the functionality available for integration from Dynamics 365 for Talent and Dynamics 365 for Finance and Operations. The Talent to Finance and Operations template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance and Operations. The template does not provide the ability for data to flow back from Finance and Operations into Talent. 
+This topic describes the functionality available for integration from Dynamics 365 Talent and Dynamics 365 for Finance and Operations. The Talent to Finance and Operations template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance and Operations. The template does not provide the ability for data to flow back from Finance and Operations into Talent. 
 
 ![Talent to Finance and Operations Integration Flow](./media/TalentFinOpsFlow.png)
 
@@ -44,7 +44,7 @@ The Talent to Finance and Operations solution provides the following types of da
 
 ## System requirements for Talent
 The integration solution requires the following versions of the Talent and Finance and Operations apps. 
-- Dynamics 365 for Talent on Common Data Service.
+- Dynamics 365 Talent on Common Data Service.
 - Dynamics 365 for Finance and Operations version 7.2 and later.
 
 ## Template and tasks

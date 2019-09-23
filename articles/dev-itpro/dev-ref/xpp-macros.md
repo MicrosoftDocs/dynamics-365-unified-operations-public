@@ -508,7 +508,7 @@ To create a macro library:
 
 ### Code examples
 
-Finance and Operations has a macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
+There is a macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
 
     static void SystemProvidedMacroLibraryJob(Args _args)
     {

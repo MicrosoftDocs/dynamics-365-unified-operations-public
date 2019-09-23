@@ -55,7 +55,7 @@ This topic explains how to update the local agent. The latest version of the loc
 - This release removes the monitoring agent and introduces a new service called LBDTelemetry, which will be used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot Finance + Operations deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
 
 ## What's new in local agent 2.1.0?
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.
@@ -71,11 +71,11 @@ This topic explains how to update the local agent. The latest version of the loc
 ## Download the latest local agent and configuration from LCS
 
 > [!NOTE]
-> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model and click on Dynamics 365 for Finance and Operations on-premises - Local agent v1.1.0**.
+> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 for Finance and Operations on-premises - Local agent v1.1.0**.
 
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
 
-1. In LCS, select **Project settings** &gt; **On-prem connectors**.
+1. In LCS, select **Project settings** > **On-prem connectors**.
 2. Select the connector to your environment, and then select **Edit**.
 3. On the menu on the left side of the page, select **Setup host infrastructure**, and then select **Download agent installer**.
 

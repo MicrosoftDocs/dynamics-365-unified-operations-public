@@ -155,7 +155,7 @@ In this case, the tally is maintained in the **ParametersCount** and **Underscor
 
 Now that the concepts have been introduced, we are ready to author business rules. Basically you need to:
 
-1. Define the situation you want to diagnose in terms of properties of the AST. You will write <strong>Visit\</strong>* methods that can do the analysis.
+1. Define the situation you want to diagnose in terms of properties of the AST. You will write <strong>Visit</strong>* methods that can do the analysis.
 2. When the error condition has been found, a diagnostic message must be generated. There is an API that is used for this purpose; basically you need to write some boilerplate code for each diagnostic message.
 3. You need to hook your new best practice rule into the rest of the framework, so the user can decide whether or not to include your rule in his work and to actually run it if so directed.
 

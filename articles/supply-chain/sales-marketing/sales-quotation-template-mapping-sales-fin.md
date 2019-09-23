@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations. 
+description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Finance and Operations. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations.
+The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Finance and Operations.
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).

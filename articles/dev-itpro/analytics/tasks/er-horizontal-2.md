@@ -53,5 +53,5 @@ This procedure is for a feature that was added in Dynamics 365 for Operations ve
     * 00057..00058  
 7. Click OK.
 8. Click OK.
-    * Review the generated output. Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions. The report header in those columns represents financial dimensions’ names. The transactions’ lines in those columns represent financial dimensions. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this Dynamics 365 for Finance and Operations, Enterprise edition instance.  
+    * Review the generated output. Note that the newly created Excel file contains the same number of columns that were selected for financial dimensions. The report header in those columns represents financial dimensions’ names. The transactions’ lines in those columns represent financial dimensions. Run this report and select different dimensions to see that the report is not dependent on the number of selected dimensions or the number of dimensions configured for this instance.  
 

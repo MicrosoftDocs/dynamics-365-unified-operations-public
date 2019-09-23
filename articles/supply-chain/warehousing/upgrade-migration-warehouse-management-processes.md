@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Microsoft Dynamics 365 for Finance and Operations.
+This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Finance and Operations.
 
 Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Finance and Operations.
 

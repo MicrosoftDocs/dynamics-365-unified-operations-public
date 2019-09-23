@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Support for Dynamics 365 for Finance and Operations operated by 21Vianet in China
-description: Dynamics 365 for Finance and Operations provides many self-service support options and support through 21Vianet. 
+title: Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China
+description: Dynamics 365 Finance and Operations apps provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/01/2019
@@ -30,17 +30,18 @@ ms.dyn365.ops.version:
 
 ---
 
-# Support for Dynamics 365 for Finance and Operations operated by 21Vianet in China
+# Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 for Finance and Operations provides many self-service support options and support through 21Vianet.
+Dynamics 365 Finance and Operations apps provides many self-service support options and support through 21Vianet.
 
 ## Self-help resources
 
 
-- [Dynamics 365 for Finance and Operations help documentation](../../fin-and-ops/index.md)
-- [Dynamics 365 for Finance and Operations operated by 21Vianet](../deployment/china-local-deployment.md)
+- [Dynamics 365 Finance](../../fin-and-ops/index.md)
+- [Dynamics 365 Supply Chain Management](../../supply-chain/index.md)
+- [Dynamics 365 Finance and Operations apps operated by 21Vianet](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)
 
@@ -52,7 +53,7 @@ Dynamics 365 for Finance and Operations provides many self-service support optio
 
 Pre-sales support phone number: +86 400-886-6134
 
-Pre-sales support for Finance and Operations provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
+Pre-sales support provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. 
 
 ### Billing and subscription management support through 21Vianet
 
@@ -72,7 +73,7 @@ Here are some examples of billing and subscription management issues:
 
 ### Assisted Technical support through 21Vianet
 
-When you experience a technical issue with your Finance and Operations deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
+When you experience a technical issue with your deployment, report it to 21Vianet through the [LCS portal](https://lcs.dynamics.cn/) or by calling the support number at +86 400-089-0365.  Technical support hours of operations are Monday through Friday during local business hours 9:00 to 18:00 China Standard Time (CST).
 
 A support request (SR) is handled within hours, depending on the severity of its impact to your business:
 
@@ -81,7 +82,7 @@ A support request (SR) is handled within hours, depending on the severity of its
 
 
 ### Get Premier support
-If you run mission-critical solutions on Dynamics 365 Finance and Operations, Premier support offers additional value:
+If you run mission-critical solutions, Premier support offers additional value:
 
 - Proven advisory services designed to maximize your Dynamics 365 investment.
 - A designated service delivery manager committed to improving your Dynamics 365 experience.
@@ -91,8 +92,8 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Dynamics 365 for Finance and Operations operated by 21Vianet in China](../deployment/china-local-deployment.md)
-- [Dynamics 365 for Customer Engagement operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
+- [Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
+- [Dynamics 365 Customer Engagement operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
 - [Dynamics 365  Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic walks you through the process of setting up Microsoft Dynamics 365 Finance and Operations for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom (UK).
+This topic walks you through the process of setting up Dynamics 365 Finance for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom (UK).
 
 ## Making Tax Digital – VAT statement submission
 
@@ -63,16 +63,16 @@ Software that is compatible with MTD must support the following requirements:
 
 As HMRC mentions in Making Tax Digital for Business VAT Guide for Vendors, users must sign up for the MTD service for VAT, even if they have already signed up to use the MTD service for income tax. For more information about how to get ready for MTD, see [Making Tax Digital: how VAT businesses and other VAT entities can get ready](https://www.gov.uk/government/publications/making-tax-digital-how-vat-businesses-and-other-vat-entities-can-get-ready).
 
-The solution that supports the MTD for VAT requirements in Finance and Operations is based on the Electronic messages functionality. This functionality provides a flexible approach for setting up and supporting reporting processes. The setup package for MTD for VAT for the UK covers the following scope of interoperation to help companies in the UK meet their VAT obligations:
+The solution that supports the MTD for VAT requirements is based on the Electronic messages functionality. This functionality provides a flexible approach for setting up and supporting reporting processes. The setup package for MTD for VAT for the UK covers the following scope of interoperation to help companies in the UK meet their VAT obligations:
 
-- **Retrieve VAT obligations (Mandatory)** – Users can initiate a request to HMRC to obtain their company's VAT obligations for a specific period. For each user's request, HMRC will post information about the company's VAT obligations, as that information is defined in the company's profile on the HMRC side. VAT obligations contain information about the VAT period, the due date for submission, and the status of the obligation. This information will be reflected in Finance and Operations.
-- **Submit VAT return for period (Mandatory)** – The system collects information about VAT returns. The information that is collected is based on the sales tax payment transactions that have been posted in the system via the sales tax settlement process, with respect to the VAT obligations that are registered in the system. After this information is collected, a VAT return report in JavaScript Object Notation (JSON) format is generated. The user will submit this report to HMRC. The HMRC response to the submission will be reflected in Finance and Operations.
-- **Retrieve VAT liabilities (Optional)** – Users can initiate a request to HMRC to obtain their company's VAT liabilities for a specific period. In response to each user's request, HMRC will post information about the company's VAT liabilities, as that information is defined in the company's profile on the HMRC side. This information will be stored in Finance and Operations as an attachment to the related electronic message. This attachment will be in JSON format.
-- **Retrieve VAT payments (Optional)** – Users can initiate a request to HMRC to obtain their company's VAT payments for a specific period. In response to each user's request, HMRC will post information about the company's VAT payments, as that information is defined in the company's profile on the HMRC side. This information will be stored in Finance and Operations as an attachment to the related electronic message. This attachment will be in JSON format.
+- **Retrieve VAT obligations (Mandatory)** – Users can initiate a request to HMRC to obtain their company's VAT obligations for a specific period. For each user's request, HMRC will post information about the company's VAT obligations, as that information is defined in the company's profile on the HMRC side. VAT obligations contain information about the VAT period, the due date for submission, and the status of the obligation. This information will be reflected in Finance.
+- **Submit VAT return for period (Mandatory)** – The system collects information about VAT returns. The information that is collected is based on the sales tax payment transactions that have been posted in the system via the sales tax settlement process, with respect to the VAT obligations that are registered in the system. After this information is collected, a VAT return report in JavaScript Object Notation (JSON) format is generated. The user will submit this report to HMRC. The HMRC response to the submission will be reflected in Finance.
+- **Retrieve VAT liabilities (Optional)** – Users can initiate a request to HMRC to obtain their company's VAT liabilities for a specific period. In response to each user's request, HMRC will post information about the company's VAT liabilities, as that information is defined in the company's profile on the HMRC side. This information will be stored in Finance as an attachment to the related electronic message. This attachment will be in JSON format.
+- **Retrieve VAT payments (Optional)** – Users can initiate a request to HMRC to obtain their company's VAT payments for a specific period. In response to each user's request, HMRC will post information about the company's VAT payments, as that information is defined in the company's profile on the HMRC side. This information will be stored in Finance as an attachment to the related electronic message. This attachment will be in JSON format.
 
 The setup package for MTD for VAT for the UK doesn't cover the View VAT Return endpoint that might be required. However, the Electronic messages functionality lets you set up and support this endpoint.
 
-When a company is signed up for the MTD service for VAT in HMRC, they should complete the following tasks in Finance and Operations. These tasks will prepare Finance and Operations to interoperate with the HMRC web service to retrieve VAT obligations and submit VAT returns.
+When a company is signed up for the MTD service for VAT in HMRC, they should complete the following tasks. These tasks will prepare Finance to interoperate with the HMRC web service to retrieve VAT obligations and submit VAT returns.
 
 - Import and set up Electronic reporting (ER) configurations.
 - Set up application-specific parameters.
@@ -88,7 +88,7 @@ When a company is signed up for the MTD service for VAT in HMRC, they should com
 
 ## Import and set up ER configurations
 
-To prepare Finance and Operations to operate with MTD for VAT, the ER configurations in the following table must be imported.
+To prepare Finance to operate with MTD for VAT, the ER configurations in the following table must be imported.
 
 | Number | ER configuration name                       | Type                                 | Description |
 |--------|---------------------------------------------|--------------------------------------|-------------|
@@ -172,7 +172,7 @@ The process of setting up the Electronic messages functionality for MTD for VAT 
 
 In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type. Find **UK MTD-VAT setup.zip** in the list of data package files, and download it to your computer.
 
-After the UK MTD-VAT setup.zip file is downloaded, open Finance and Operations, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
+After the UK MTD-VAT setup.zip file is downloaded, open Finance, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
 
 Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synchronized. To do this, complete the following steps.
 
@@ -188,7 +188,7 @@ You must now import data from the UK MTD-VAT setup.zip file into the selected co
 For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json).
 
 > [!NOTE]
-> Some records in the data entities in the package include a link to ER configurations. It's important that ER configurations be imported into Finance and Operations before you start to import the data entities package.
+> Some records in the data entities in the package include a link to ER configurations. It's important that ER configurations be imported into Finance before you start to import the data entities package.
 
 The **UK MTD-VAT setup** package provides a setup for two sets of processing that can be used independently:
 
@@ -197,7 +197,7 @@ The **UK MTD-VAT setup** package provides a setup for two sets of processing tha
 
 The **UK MTD-VAT setup** package also provides a setup for two web applications that are used to interoperate with HMRC web services:
 
-- **Dynamics 365 for Finance and Operations** – For interoperation with the **production** HMRC web service.
+- **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
 For more information about the predefined setup that is included in the data entities in the package for MTD for VAT, see [Appendix 1: Electronic messages setup for MTD for VAT](#appendix-1-electronic-messages-setup-for-mtd-for-vat) later in this topic. 
@@ -218,7 +218,7 @@ To work with the Electronic messages functionality, you must define related numb
 
 ### VAT statement format mapping
 
-Finance and Operations lets you generate a paper format of **VAT 100 report** by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction directly from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). In both cases, the **VAT 100** report is generated in Microsoft SQL Server Reporting Services (SSRS) format.
+You can generate a paper format of **VAT 100 report** by using the **Report sales tax for settlement period** dialog box (**Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**). Alternatively, you can generate the statement for a selected sales tax payment transaction directly from the **Sales tax payments** page (**Tax** \> **Inquiries and reports** \> **Sales tax inquiries** \> **Sales tax payments**). In both cases, the **VAT 100** report is generated in Microsoft SQL Server Reporting Services (SSRS) format.
 
 To generate the **VAT 100** report in Excel format instead of SSRS format, you must define an ER format on the **General ledger parameters** page. Go to **Tax** \> **Setup** \> **General ledger parameters**, and then, on the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, select **VAT Declaration Excel (UK)**.
 
@@ -226,7 +226,7 @@ If you leave the **VAT statement format mapping** field blank, the **VAT 100** r
 
 ## Define a sales tax settlement period
 
-Electronic message processing that is defined for MTD for VAT in the UK MTD-VAT setup.zip file is company-agnostic. Therefore, it can be implemented in any legal entity in Finance and Operations.
+Electronic message processing that is defined for MTD for VAT in the UK MTD-VAT setup.zip file is company-agnostic. Therefore, it can be implemented in any legal entity in Finance.
 
 Both the **UK MTD VAT returns** processing (for production) and the **UK MTD VAT TEST** processing (for sandbox) let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production purposes or testing purposes. The collection of sales tax payment transactions is implemented via the **Populate VAT return records** action of the **Populate record** type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the **Populate VAT return records** action. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**, and select the **Populate VAT return records** action. On the **Datasource setup** FastTab, select the **VAT payment** record, and then select **Edit query**. For the **Settlement period** field of the **Sales tax payments** table, define the sales tax settlement period when tax transactions from the selected legal entity must be reported to HMRC.
 
@@ -260,9 +260,9 @@ Each web application on the HMRC side has three parameters that uniquely identif
 
 These parameters are used when requests are addressed to HMRC. They must be filled in before you start the authorization process for a web application.
 
-For the sandbox application, you can manually obtain these parameters from the **Manage credentials** section of your sandbox application on the HMRC portal. Copy the parameters, and then, on the **Web applications** page in Finance and Operations (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**), select the **Sandbox HMRC** web application, and paste the parameters into the appropriate fields in the **Authorization parameters** section on the **General** FastTab.
+For the sandbox application, you can manually obtain these parameters from the **Manage credentials** section of your sandbox application on the HMRC portal. Copy the parameters, and then, on the **Web applications** page in Finance (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**), select the **Sandbox HMRC** web application, and paste the parameters into the appropriate fields in the **Authorization parameters** section on the **General** FastTab.
 
-For the production application (**Dynamics 365 for Finance and Operations**), these parameters are delivered via the package of data entities and stored in the system in encrypted format. When you import predefined setup of Electronic messages functionality for MTD for VAT these parameters will be imported as well, no additional manual actions are needed, once imported, the production application is ready for authorization (obtain an authorization code and access token).
+For the production application, these parameters are delivered via the package of data entities and stored in the system in encrypted format. When you import predefined setup of Electronic messages functionality for MTD for VAT these parameters will be imported as well, no additional manual actions are needed, once imported, the production application is ready for authorization (obtain an authorization code and access token).
 
 ## Obtain an authorization code for sandbox 
 
@@ -295,7 +295,7 @@ We recommend that you enter **read:vat write:vat** in this field, because the sa
 
 ## Obtain an authorization code for production
 
-When a company is ready to interoperate in real life with MTD for VAT, it must create an HMRC online account and link it to the Finance and Operations application by selecting **Microsoft Dynamics 365 for Finance and Operations** as the software. The company will then receive credentials that are linked to its VAT registration number:
+When a company is ready to interoperate in real life with MTD for VAT, it must create an HMRC online account and link it to the Finance application by selecting **Microsoft Dynamics 365 Finance** as the software. The company will then receive credentials that are linked to its VAT registration number:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested
@@ -314,7 +314,7 @@ After the company has user credentials, an authorization process can be initiali
 - Get an authorization code.
 - Get an access token.
 
-To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize for (**Dynamics 365 for Finance and Operations**), and select **Get authorization code**. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic report parameters** page, set the **Scope** field. The following values are allowed by HMRC:
+To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize, and select **Get authorization code**. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic report parameters** page, set the **Scope** field. The following values are allowed by HMRC:
 
 - read:vat
 - write:vat
@@ -326,7 +326,7 @@ We recommend that you enter **read:vat write:vat** in this field, because the sa
 
 Initialize retrieval of an access token within 10 minutes from the moment when an authorization code is generated by HMRC.
 
-Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize for (**Sandbox HMRC** for testing purposes or **Dynamics 365 for Finance and Operations** for production). On the **Web applications** page, select **Obtain access token** on the Action Pane to request an access token from HMRC. Paste the authorization code that you copied to the clipboard from the HMRC portal earlier, and then select **OK**. The access token request is sent to HMRC, and the access token will be automatically saved in Finance and Operations from HMRC's response. You can't review the token from the user interface. However, the **Access token will expire in** field shows the validity period of the access toke.
+Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize. On the **Web applications** page, select **Obtain access token** on the Action Pane to request an access token from HMRC. Paste the authorization code that you copied to the clipboard from the HMRC portal earlier, and then select **OK**. The access token request is sent to HMRC, and the access token will be automatically saved in Finance from HMRC's response. You can't review the token from the user interface. However, the **Access token will expire in** field shows the validity period of the access toke.
 
 Each access token is valid for four hours from the moment when it's created by HMRC. To receive a new access token, you don't have to renew an authorization code. You just have to refresh the access token. To manually initiate a refresh of an access token, on the **Web applications** page, select **Refresh access token** on the Action Pane. A refresh access token request is sent to HMRC, and a new access token will be automatically saved in the system from HMRC's response.
 
@@ -386,11 +386,11 @@ Change the **Gov-Test-Scenario** property in the new format for all the scenario
 
 ### Collect data for VAT return
 
-The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/tasks/create-sales-tax-payment) job in Finance and Operations. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
 
 Before you start to prepare and submit a VAT return to HMRC, complete the regular **Settle and post sales tax** job for the period that you will report to HMRC. When this job is run, new sales tax payment transactions are created. Go to **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** to view the sales tax payments. You can review the resulting values for each sales tax payment transaction on the **VAT 100** report in SSRS or Excel format. For information about how to define the format that is used, see the [Set up General ledger parameters](#vat-statement-format-mapping) section of this topic. To generate a **VAT 100** report for selected sales tax payment transactions, select **Print report** on the Action Pane.
 
-In Finance and Operations, you can run the **Settle and post sales tax** job several times for the same period before you submit a VAT return to HMRC. All the sales tax payment transactions can be included on the same VAT return report for a period. The transactions that the system fills in for reporting depend on the sales tax settlement period that is defined in the **Populate VAT return records** action for the processing. For more information, see the [Define a sales tax settlement period](#define-a-sales-tax-settlement-period) section of this topic.
+You can run the **Settle and post sales tax** job several times for the same period before you submit a VAT return to HMRC. All the sales tax payment transactions can be included on the same VAT return report for a period. The transactions that the system fills in for reporting depend on the sales tax settlement period that is defined in the **Populate VAT return records** action for the processing. For more information, see the [Define a sales tax settlement period](#define-a-sales-tax-settlement-period) section of this topic.
 
 > [!IMPORTANT]
 > MTD for VAT lets you submit a VAT return only one time for each reporting period. As HMRC states on the official website, the current amendment process will stay in place for VAT:
@@ -480,7 +480,7 @@ The following security privileges are available for electronic messages.
 
 To prevent fraud, the HMRC APIs provide HTTP headers that must be used to pass audit data.
 
-Depending on the architecture of the environment that is used by a company which interoperates with the MTD for VAT, a different set of HTTP headers for fraud prevention must be transmitted. The header, **Gov-Client-Connection-Method** must represent the connection method used for the request made by the company. It is supposed that most companies using Finance and Operations in cloud architecture use the **WEB\_APP\_VIA\_SERVER** connection method interoperating with HMRC through Electronic messages functionality. It is also possible that a user may initiate a batch job for interoperation with HMRC. In this case, the connection method will be transmitted as **BATCH\_PROCESS\_DIRECT**. 
+Depending on the architecture of the environment that is used by a company which interoperates with the MTD for VAT, a different set of HTTP headers for fraud prevention must be transmitted. The header, **Gov-Client-Connection-Method** must represent the connection method used for the request made by the company. It is supposed that most companies using Finance in cloud architecture use the **WEB\_APP\_VIA\_SERVER** connection method interoperating with HMRC through Electronic messages functionality. It is also possible that a user may initiate a batch job for interoperation with HMRC. In this case, the connection method will be transmitted as **BATCH\_PROCESS\_DIRECT**. 
 
 The **WEB\_APP\_VIA\_SERVER** connection method assumes transmission of the following headers.
 
@@ -556,7 +556,7 @@ For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be install
 
 ### Implementation details
 
-In Finance and Operations, request headers are composed in the **MTD VAT web request headers format (UK)** format in the ER module. This format configuration was extended so that it includes the necessary nodes.
+Request headers are composed in the **MTD VAT web request headers format (UK)** format in the ER module. This format configuration was extended so that it includes the necessary nodes.
 
 ![JSON object](media/format-new-nodes-all.png)
 
@@ -663,14 +663,14 @@ The following web applications are used by the **UK MTD VAT TEST** and **UK MTD 
 
 | Name                                    | Description                                              |
 |-----------------------------------------|----------------------------------------------------------|
-| Dynamics 365 for Finance and Operations | HMRC Web application for Finance and Operations          |
-| Sandbox HMRC                            | HMRC sandbox for Dynamics 365 for Finance and Operations |
+| Dynamics 365 Finance | HMRC Web application for Finance and Operations          |
+| Sandbox HMRC                            | HMRC sandbox for Dynamics 365 Finance |
 
 The following table shows the parameters of the web applications.
 
 | Parameter                                            | Value                                  |
 |------------------------------------------------------|----------------------------------------|
-| Base URL for "**Dynamics 365 for Finance and Operations**" | `https://api.service.hmrc.gov.uk`      |
+| Base URL for "**Dynamics 365 Finance**" | `https://api.service.hmrc.gov.uk`      |
 | Base URL for "**Sandbox HMRC**"                            | `https://test-api.service.hmrc.gov.uk` |
 | Authorization URL path                               | /oauth/authorize                       |
 | Token URL path                                       | /oauth/token                           |
@@ -688,8 +688,8 @@ The following web services are used by the **UK MTD VAT TEST** and **UK MTD VAT 
 
 | Name                | Description                                                              | Web application                         |
 |---------------------|--------------------------------------------------------------------------|-----------------------------------------|
-| HMRC GET            | The HMRC web service for GET requests.                                   | Dynamics 365 for Finance and Operations |
-| HMRC POST           | The HMRC web service for POST requests.                                  | Dynamics 365 for Finance and Operations |
+| HMRC GET            | The HMRC web service for GET requests.                                   | Dynamics 365 Finance |
+| HMRC POST           | The HMRC web service for POST requests.                                  | Dynamics 365 Finance |
 | HMRC sandbox GET    | The sandbox that is used to test the HMRC web service for GET requests.  | Sandbox HMRC                            |
 | HMRC sandbox POST   | The sandbox that is used to test the HMRC web service for POST requests. | Sandbox HMRC                            |
 | HMRC TEST USER POST | The HMRC web service that is used to POST test user requests.            | Sandbox HMRC                            |

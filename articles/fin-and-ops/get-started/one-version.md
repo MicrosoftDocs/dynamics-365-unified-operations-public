@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 ## Schedule for April 10.0 release
 
@@ -190,11 +190,11 @@ You can join the [First release program](https://experience.dynamics.com/insider
 1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
 2. Accept the terms and conditions to become a Dynamics 365 Insider.
 3. After your application has been approved (approximately 24 hours) you can then sign back into the Insider Portal to find the different preview programs available for you to join. 
-4. Preview Early Access Program (PEAP) and First Release: The Finance and Operations program requires that you to accept additional terms and conditions to join. Please look for these programs within the Dynamics 365 Insider Program after your nomination has been accepted.
+4. Preview Early Access Program (PEAP) and First Release: The program requires that you accept additional terms and conditions to join. Please look for these programs within the Dynamics 365 Insider Program after your nomination has been accepted.
 
 ### Is there tooling available to support testing the latest release?
 
-The [Regression Suite Automation Tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) for Finance and Operations is [available now](https://www.microsoft.com/download/details.aspx?id=57357). This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your Dynamics 365 for Finance and Operations production environment. It enables functional power users to record business tasks using the Finance and Operations Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.
+The [Regression Suite Automation Tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests) is [available now](https://www.microsoft.com/download/details.aspx?id=57357). This tool significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your production environment. It enables functional power users to record business tasks using the Task recorder and convert them into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services using the Business Process Modeler (BPM) libraries and fully integrated with Azure DevOps for test execution, reporting, and investigation. Test data parameters are decoupled from test steps and stored in Excel data files.
 
 ### How can I test and validate that the integrations continue to work?
 
@@ -235,7 +235,7 @@ Customer reported issues are searchable via Lifecycle Services Issue Search.  Yo
 
 ### How can I upgrade to 8.x?
 
-Refer to the [Process for moving to the latest update of Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
+Refer to the [Process for moving to the latest update](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update#scenario-3-upgrade-to-the-latest-application-release-1) topic to learn how to upgrade to the latest application. Updating from [8.0 to 8.1](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/appupdate-80-81) will not require any data upgrade and will be a self-serve update with much reduced downtime.
 
 ## Retail service updates
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../includes/banner.md)]
 
-Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes in Microsoft Dynamics 365 for Finance and Operations, with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in Microsoft Dynamics 365 for Finance and Operations. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined in Finance and Operations.
+Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) is a tool that you can use to create, view, and modify repeatable implementations that are based on business process libraries and flowcharts. BPM helps you align your business processes with industry-standard processes that are described by the [American Productivity &amp; Quality Center (APQC)](https://www.apqc.org/). You can perform fit-gap analysis between your business requirements and the default processes in the Finance and Operations apps. Additionally, you can add new business processes and create flowcharts for processes that aren't already defined.
 
 BPM is compatible with the following programs:
 
@@ -40,7 +40,7 @@ BPM is compatible with the following programs:
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
 > [!NOTE]
-> The information in this topic is specific only to Dynamics 365 for Finance and Operations. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](ax-2012/business-process-modeler-lcs.md). 
+> The information in this topic is specific only to Finance and Operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](ax-2012/business-process-modeler-lcs.md). 
 
 ## Prerequisites
 

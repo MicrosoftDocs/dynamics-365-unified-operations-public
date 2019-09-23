@@ -5,7 +5,7 @@ title: End of mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 201
 description: This topic provides details about the end of  mainstream support for Microsoft Dynamics AX 2009, Dynamics AX 2012, and Dynamics AX 2012 R2.
 author: meeramahabala
 manager: AnnBe
-ms.date: 10/05/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,10 +37,10 @@ Mainstream support for Dynamics AX 2012 R3 continues through October 12, 2021. M
 
 Dynamics AX 2009 SP1, Dynamics AX 2012, and Dynamics AX 2012 R2 customers can selectively integrate those changes as required. Customers and partners can get the source code from packages attached to relevant Dynamics AX 2012 R3 KB articles published on Lifecycle Services (LCS) and discoverable through Issue Search.
 
-Customers are advised to upgrade to the latest version of Dynamics 365 for Finance and Operations:
+Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Talent:
 
 - Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page) that is available.
-- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Dynamics 365 for Finance and Operations through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
+- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. Additional upgrade information is available in the [Upgrade from AX 2012 to Finance and Operations apps](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012) topic.
 
 ## Frequently asked questions
 

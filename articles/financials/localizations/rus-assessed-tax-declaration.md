@@ -742,7 +742,7 @@ Generate an assessed tax declaration and an assessed tax advance payments calcul
         (2019)**. The file that is downloaded is named **RU Property tax
         declaration v5.05 (2019).zip**.
 
-    -   In Microsoft Dynamics 365 for Finance and Operations, in the **Data
+    -   In Dynamics 365 Finance, in the **Data
         management** workspace, select **Import**.
 
     -   In the **Job details** section, set the following values:

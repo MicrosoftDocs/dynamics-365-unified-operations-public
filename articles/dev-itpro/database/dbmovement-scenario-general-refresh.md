@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refresh for training purposes
-description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains a general-purpose database refresh scenario for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 01/28/2019
@@ -42,7 +42,7 @@ In this tutorial, you will learn how to:
 > * Reconfigure the target environment.
 > * Enable selected users.
 
-As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to load a recent copy of production transactions into the user acceptance testing (UAT) environment. In this way, the customer can support training of new employees and evaluate configuration changes without affecting the live environment.
+As an example of this scenario, a customer who has already gone live with the application wants to load a recent copy of production transactions into the user acceptance testing (UAT) environment. In this way, the customer can support training of new employees and evaluate configuration changes without affecting the live environment.
 
 ## Prerequisites
 

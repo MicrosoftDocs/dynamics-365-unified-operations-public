@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor forecast accuracy
-description: This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Finance and Operations calculates, and explains how you can view the accuracy values.
+description: This article describes the types of forecast accuracy that Finance and Operations calculates, and explains how you can view the accuracy values.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Finance and Operations calculates, and explains how you can view the accuracy values.
+This article describes the types of forecast accuracy that Finance and Operations calculates, and explains how you can view the accuracy values.
 
 Finance and Operations calculates the following types of forecast accuracy:
 

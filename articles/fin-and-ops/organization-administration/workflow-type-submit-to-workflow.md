@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a SubmitToWorkflow class
-description: This topic describes how to create a SubmitToWorkflow class in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to create a SubmitToWorkflow class.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 for Finance and operations, a workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This topic describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
+A workflow is started when the user selects the **Submit** button on the workflow toolbar. The **Submit** button is bound to an action menu item that calls the **main** method of a class that you create to activate a workflow. This topic describes how to create a **SubmitToWorkflow** class and use the name of the workflow type to activate the workflow.
 
 You can also activate a workflow by using the workflow configuration ID or the workflow sequence number. The basic procedure is the same. For more information, see [Activating a workflow](https://docs.microsoft.com/dynamicsax-2012/developer/activating-a-workflow).
 
@@ -50,7 +50,7 @@ You can also activate a workflow by using the workflow configuration ID or the w
 5. Enter the following code for the **main** method to use the name of the workflow type to activate the workflow.
 
     > [!NOTE]
-    > This example applies to workflow submissions for the Finance and Operations client. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
+    > This example applies to workflow submissions. For an example that also works with Enterprise Portal, see [Adding enterprise portal support for workflow submission](https://docs.microsoft.com/dynamicsax-2012/developer/adding-enterprise-portal-support-for-workflow-submission).
 
     ```X++
     public static void main(Args args)

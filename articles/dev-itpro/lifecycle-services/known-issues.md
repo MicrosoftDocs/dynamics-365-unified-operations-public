@@ -2,7 +2,7 @@
 # required metadata
 
 title: Known issues
-description: This topic explains how to view the known issues that you might experience when you use Dynamics 365 for Finance and Operations.
+description: This topic explains how to view the known issues that you might experience when you use Finance and Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 03/25/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to view the known issues that you might experience when you use Microsoft Dynamics 365 for Finance and Operations.
+This topic explains how to view the known issues that you might experience when you use Finance and Operations.
 
 You can find known issues in Finance and Operations by using the Issue search tool in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) (LCS). You can sign in to LCS by using your CustomerSource or PartnerSource account. Then, in the **Issue search** field, enter the search text that is shown in the following table. 
 
