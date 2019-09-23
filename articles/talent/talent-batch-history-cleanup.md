@@ -59,11 +59,15 @@ Clean up your batch job history. We recommend cleaning up your batch job history
 
    ![Set recurrence](media/talent-batch-history-cleanup-recurrence.png)
 
-5. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
+5. Under **Define recurrence**, set the **Start date** and **Start time** to occur during off-hours or the weekend, and then select **NO END DATE**. 
+
+   ![Define recurrence start date and time](media/talent-batch-history-cleanup-define-recurrence.png)
+
+6. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
 
    ![Set cleanup to repeat weekly](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
-6. Select **OK**.
+7. Select **OK**.
 
-7. Change any other parameters under **Run in the background** as necessary, and then select **OK**.
+8. Change any other parameters under **Run in the background** as necessary, and then select **OK**.
 
