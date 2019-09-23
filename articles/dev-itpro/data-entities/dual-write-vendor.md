@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated vendor master
-description: This topic describes vendor data integration between Finance and Operations and Common Data Service.
+description: This topic describes vendor data integration between Finance and Operations apps and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/15/2019
@@ -36,9 +36,9 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Microsoft Dynamics 365 for Finance and Operations, a vendor concept doesn't exist in Dynamics 365 for Customer Engagement. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
+The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Finance and Operations apps, a vendor concept doesn't exist in all Dynamics 365 applications. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
 
-Integration of vendor data between Finance and Operations and Customer Engagement lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
+Integration of vendor data between Finance and Operations apps and other Dynamics 365 applications lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
 
 ### Vendor data flow
 
@@ -56,7 +56,7 @@ Vendor contact information resembles customer contact information. Behind the sc
 
 Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps works together during vendor data interaction, as shown in the following table.
 
-Finance and Operations  | Customer Engagement application
+Finance and Operations apps  | Customer Engagement application
 ------------------------|---------------------------------
 Vendor V2               | Account
 Vendor V2               | Msdyn\_vendors
@@ -74,11 +74,11 @@ Name Affixes            | Msdyn\_nameaffixes
 
 ## Vendor V2 and Account 
 
-Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations integration.
+Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
 
 ## Vendor V2 and Msdyn\_vendors
 
-Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations integration. 
+Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
 
 <!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
 
@@ -181,11 +181,11 @@ VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
 
 ## Contacts
 
-This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations and Customer Engagement. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
+This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations apps and other Dynamics 365 applications. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
 
 ## Vendor Groups
 
-This template synchronizes  vendor group information between Finance and Operations and Customer Engagement.
+This template synchronizes  vendor group information between Finance and Operations apps and other Dynamics 365 applications.
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
@@ -198,7 +198,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_
 
 ### Vendor Payment Method
 
-This template synchronizes vendor payment method information between Finance and Operations and Customer Engagement.
+This template synchronizes vendor payment method information between Finance and Operations apps and other Dynamics 365 applications.
 
 <!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
 
