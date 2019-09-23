@@ -612,8 +612,6 @@
     href: procurement/purchase-order-approval-confirmation.md
   - name: Purchase order approval mobile workspace
     href: procurement/purchase-order-mobile-workspace.md
-  - name: Record the receipt of goods on the purchase order
-    href: tasks/record-receipt-goods-purchase-order.md
 - name: Purchase order creation
   items:
   - name: Create purchase orders manually
