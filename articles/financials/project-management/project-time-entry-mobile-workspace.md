@@ -36,7 +36,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information about the **Project time entry** mobile workspace. This workspace lets users enter and save time against a project by using their mobile device.
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app. 
+This mobile workspace is intended to be used with the Dynamics 365 Unified Ops mobile app. 
 
 ## Overview
 As part of their daily work, project resources are often on-site or traveling. The **Project time entry** mobile workspace lets users enter their billable or non-billable time against a project on the mobile device of their choice. Therefore, project resources can record time entries anytime and anywhere. They can also view time entries that have already been recorded. 
@@ -52,11 +52,11 @@ Specifically, in the **Project time entry** mobile workspace, users can perform 
 ## Prerequisites
 The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations
-If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Dynamics 365 Finance
+If Finance has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
-If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
+### Prerequisites if you use version 1611 with Platform update 3 or later
+If version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
 <thead>

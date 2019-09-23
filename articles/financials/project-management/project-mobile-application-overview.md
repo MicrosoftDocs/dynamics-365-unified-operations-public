@@ -38,7 +38,7 @@ Three mobile applications that are related to project time are available for Mic
 
 ## Project Timesheet mobile app
 
-The Dynamics 365 Project Timesheet mobile app lets users submit and approve timesheets for projects on their mobile device. This mobile app surfaces the timesheet functionality in the Project management and accounting area of Microsoft Dynamics 365 for Finance and Operations. It helps improve user productivity and efficiency, and also helps with the timely entry and approval of project timesheets.
+The Dynamics 365 Project Timesheet mobile app lets users submit and approve timesheets for projects on their mobile device. This mobile app surfaces the timesheet functionality in the Project management and accounting area of Dynamics 365 Finance. It helps improve user productivity and efficiency, and also helps with the timely entry and approval of project timesheets.
 
 ## Project Time Entry workspace
 
@@ -46,7 +46,7 @@ The Project Time Entry workspace lets users enter and save time against a projec
 
 ## My timesheets/Timesheets for my review
 
-My timesheets (Optimized for mobile) and Timesheets for my review (Optimized for mobile) make up a solution that lets employees create, submit, and approve project timesheets on a mobile device. Workers can access the Finance and Operations functionality through the URL for the application. This solution doesn't require the Dynamics 365 for Unified Operations mobile application.
+My timesheets (Optimized for mobile) and Timesheets for my review (Optimized for mobile) make up a solution that lets employees create, submit, and approve project timesheets on a mobile device. Workers can access the Finance functionality through the URL for the application. This solution doesn't require the Dynamics 365 for Unified Operations mobile application.
 
 ## For more information
 

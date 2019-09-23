@@ -113,7 +113,7 @@ You can find opinions, news, and other information about Accounts receivable and
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
 #### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+Additional help is available as task guides inside the application. To access task guides, click the Help button on any page.
 
 #### Videos
 

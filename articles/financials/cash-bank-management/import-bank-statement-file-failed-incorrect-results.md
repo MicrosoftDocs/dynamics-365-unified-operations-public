@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank statement file import troubleshooting
-description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+description: It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 for Finance and Operations supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
+It's important that the bank statement file from the bank match the layout that Microsoft Dynamics 365 Finance supports. Because of strict standards for bank statements, most integrations will work correctly. However, sometimes the statement file can't be imported or has incorrect results. Typically, these issues are caused by small differences in the bank statement file. This article explains how to fix these differences and resolve the issues.
 
 What is the error?
 ------------------
@@ -42,7 +42,7 @@ What is the error?
 After you try to import a bank statement file, go to the Data management job history and its execution details to find the error. The error can help by pointing to the statement, balance, or statement line. However, it's unlikely to provide enough information to help you identify the field or element that is causing the issue.
 
 ## What are the differences?
-Compare the bank file layout definition to the Finance and Operations import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance and Operations file. In the ISO20022 files, any differences should be easy to see.
+Compare the bank file layout definition to the Finance import definition, and note any differences in the fields and elements. Compare the bank statement file to the related sample Finance file. In the ISO20022 files, any differences should be easy to see.
 
 ## Time zone differences on imported bank statements
 The date-time values in the import file can differ from the date-time values that are shown in Finance and Operations. To prevent this discrepancy, enter a time zone preference on the **Configure data sources** page. See [Set up the advanced bank reconciliation import process](set-up-advanced-bank-reconciliation-import-process.md) for more information about entering a time zone preference.
@@ -87,7 +87,7 @@ When the transformation runs, it creates an output file that you can view in Vis
 
 ### Adjust the transformation
 
-Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Finance and Operations element.
+Adjust the transformation to get the appropriate field or element in the bank statement file. Then map that field or element to the appropriate Finance element.
 
 ### Debit/credit indicator
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer transactions list page
-description: This topic provides information about the Customer transactions list page for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the Customer transactions list page for Microsoft Dynamics 365 Finance.
 author: mikefalkner
 manager: aolson
 ms.date: 08/28/2018

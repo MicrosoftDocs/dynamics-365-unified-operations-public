@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintain general budget reservations
-description: This topic provides steps for working with general budget reservations for Public sector in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides steps for working with general budget reservations for Public sector in Microsoft Dynamics 365 Finance.
 author: AlexRenney
 manager: AnnBe
 ms.date: 04/25/2019
