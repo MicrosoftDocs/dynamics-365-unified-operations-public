@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations in France
-description: This topic provides information about the availability of Dynamics 365 for Finance and Operations in France's data centers.
+title: Finance and Operations in France
+description: This topic provides information about the availability of Finance and Operations in France's data centers.
 author: tfehr
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 for Finance and Operations in France
+# Finance and Operations in France
 
 [!include [banner](../includes/banner.md)]
 

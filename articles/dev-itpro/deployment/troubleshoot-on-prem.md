@@ -2,10 +2,10 @@
 # required metadata
 
 title: Troubleshoot on-premises deployments
-description: This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations.
+This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 
 ## Access Service Fabric Explorer
 
@@ -56,7 +56,7 @@ The primary node is shown. For stateless services or the remaining applications,
 
 Note the following points:
 
-- OrchestrationService orchestrates the deployment and servicing actions for Finance and Operations.
+- OrchestrationService orchestrates the deployment and servicing actions for Finance + Operations.
 - ArtifactsManager downloads files from Microsoft Azure cloud storage to the local agent file share. It also unzips the files into the required format.
 
 ### Review the orchestrator event logs
@@ -797,7 +797,7 @@ The error might also occur because of an issue with the star certificate. For ex
 
 ### Run the initialize database script, and validate that databases have correct users
 
-If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance and Operations by going to
+If you receive only the AddAXDatabaseChangeTracking event, try to reach the MetadataService service for Finance + Operations by going to
 `https://ax.d365ffo.contoso.com/namespaces/AXSF/services/MetadataService`.
 
 Next, check the certificates of the service in the wif.config file. To find the file, sign in to one of the AOS machines, and then, in Task Manager, find **AxService.exe**. Right-click, and select **Open file location**. In the wif.config file, you should see three thumbprints. Note the following requirements for these thumbprints:
@@ -886,7 +886,7 @@ In these cases, you can follow these steps to resolve the issue:
 
 Verify the AD FS Manager by going to **ADFS** \> **Application groups**. Double-click **Microsoft Dynamics 365 for Operations on-premises**. Then, under **Native application**, double-click **Microsoft Dynamics 365 for Operations on-premises - Native application**.
 
-Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance and Operations.
+Note the **Redirect URI** value. It should match the DNS forward lookup zone for Finance + Operations.
 
 ### Error: "Could not establish trust relationship for the SSL/TLS secure channel"
 
@@ -949,7 +949,7 @@ The following sections provide focused debugging steps for claims that are retur
 1. Open Fiddler, go to **Tools \> Options \> HTTPS**, and select **Decrypt HTTPS traffic**.
 2. Start to capture traffic (the shortcut key is F12). You can verify that that traffic is being captured by looking at the lower left of the tool.
 3. Open an InPrivate instance of Internet Explorer or an Incognito instance of Chrome.
-4. Open Finance and Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
+4. Open Finance + Operations (for example, `https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/`).
 5. Sign in by using the USERINFO.NETWORKALIAS account and password.
 6. After you're signed in, stop Fiddler from capturing traffic.
 
@@ -1411,9 +1411,9 @@ In Platform update 20 and later, there is database synchronization log issue whe
 
 To resolve this issue, go to \<SF-dir\>\\AOS\_\<x\>\\Fabric\\work\\Applications\\AXSFType\_App\<X\>\\log. For example, go to C:\\ProgramData\\SF\\AOS\_11\\Fabric\\work\\Applications\\AXSFType\_App183\\log. Here, you can see the output from DatabaseSynchronize in the Code\_AXSF\_M\_\<X\>.out files. Troubleshoot any issues that pertain to this component.
 
-## You can't access Finance and Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"
+## You can't access Finance + Operations: "AADSTS50058: A silent sign-in request was sent but no user is signed in"
 
-After a user enters credentials to sign in to Finance and Operations, the browser briefly shows the application layout. However, it then tries to redirect outside Finance and Operations, but fails with the following error:
+After a user enters credentials to sign in to Finance + Operations, the browser briefly shows the application layout. However, it then tries to redirect outside Finance + Operations, but fails with the following error:
 
 > AADSTS50058: A silent sign-in request was sent but no user is signed in.
 
@@ -1427,7 +1427,7 @@ To resolve the issue, run the following SQL Server query.
 update [AXDB].[dbo].[SYSCLIENTPERF] set SkypeEnabled = 0
 ```
 
-Alternatively, turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration** \> **Setup** \> **Client performance options**). To use this approach, you must be able to sign in to Finance and Operations. Therefore, you must first block redirection in the browser. After you disable the Skype presence, you can unblock redirection again.
+Alternatively, turn off the **Skype presence enabled** option on the **Client performance options** page (**System administration** \> **Setup** \> **Client performance options**). To use this approach, you must be able to sign in to Finance + Operations. Therefore, you must first block redirection in the browser. After you disable the Skype presence, you can unblock redirection again.
 
 The Google Chrome browser blocks redirection by default.
 

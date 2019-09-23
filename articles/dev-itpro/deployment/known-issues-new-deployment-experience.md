@@ -5,7 +5,7 @@ title: Known issues with self-service deployment
 description: This topic lists known issues that you might experience when using self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,7 +44,20 @@ The following LCS features are deprecated and will not be implemented in self-se
 | System diagnostics | System diagnostics has been deprecated. All data and functionality provided by system diagnostics today will be available through other features in the product and LCS. |
 | Service requests   | Service requests are being replaced with self-service actions. |
 
-## Finance and Operations 
+### Known issues in this release
+Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
+
+-   Log files listing deployment failures are not yet available through LCS. Currently, you can open a support ticket if you need the log files.
+
+-   LCS integration from the application environment does not work. The features that are not available as a result of this include:
+
+    -   Getting started
+
+    -   Online Help enabled through BPM libraries. Online Help from docs.microsoft.com is available.
+
+    -   Raising support tickets from within the application. Cloud-powered support from LCS is enabled.
+
+## Finance and Operations apps 
 
 ### Features not yet implemented
 
