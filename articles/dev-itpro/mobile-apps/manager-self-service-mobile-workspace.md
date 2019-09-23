@@ -57,12 +57,12 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<ul><li>A Finance and Operations app</li>
+<li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/dynamics365/talent">Talent webpage</a>.
+<td>If you don&#39;t already have a Finance and Operations app deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">

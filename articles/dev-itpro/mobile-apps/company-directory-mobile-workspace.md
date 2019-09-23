@@ -5,7 +5,7 @@ title: Company directory mobile workspace
 description: This topic provides information about the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -57,12 +57,12 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tbody>
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
-<ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
+<ul><li>A Finance and Operations app</li>
 <li>Microsoft Dynamics 365 Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don&#39;t already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/dynamics365/talent">Talent webpage</a>.
+<td>If you don&#39;t already have a Finance and Operations app deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don&#39;t already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">

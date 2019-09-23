@@ -5,7 +5,7 @@ title: Available mobile workspaces
 description: This topic lists the mobile workspaces that are available for use.
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,6 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic lists the mobile workspaces that are available for use with the Dynamics 365 for Unified Operations mobile app.
 
-> [!NOTE]
-> The mobile app was previously named *Microsoft Dynamics 365 for Finance and Operations*.
 
 | Mobile workspace     | Description   | Availability   |
 |----------------------|---------------|--------------|
