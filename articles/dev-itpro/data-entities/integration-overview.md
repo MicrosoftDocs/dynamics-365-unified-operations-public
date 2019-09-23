@@ -5,7 +5,7 @@ title: Choose a data integration (import/export) strategy
 description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/29/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,7 @@ The following examples illustrate this point. You can't assume that the caller w
 |----------------|-------------------------------------|-----------------------------------|
 | OData          | DbResourceContextaveChanges         | DbResourceContextaveChangesAsync |
 | Custom service | httpRequestetResponse               | httpRequesteginGetResponse |
-| SOAP           | UserSessionServiceetUserSessionInfo | UserSessionServiceetUserSessionInfoAsync |
+| SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
 | Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
 Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run in Finance and Operations. Here are some examples:
