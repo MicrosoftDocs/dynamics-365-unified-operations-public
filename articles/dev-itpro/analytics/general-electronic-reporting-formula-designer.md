@@ -106,7 +106,7 @@ Each rule of the process flow control is designed as an individual validation. T
 
 - The validation is evaluated when the **INSTAT** node is created during generation of the XML file.
 - If the list of transactions is empty, the validation stops the execution process and returns **FALSE**.
-- The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.
+- The validation returns an error message that includes the text of label SYS70894 in the user's preferred language.
 
 [![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
@@ -243,16 +243,16 @@ The following tables describe the data manipulation functions that you can use t
 |----------|-------------|---------|
 | ADDDAYS (datetime, days) | Add the specified number of days to the specified date/time value. | **ADDDAYS (NOW(), 7)** returns the date and time seven days in the future. |
 | DATETODATETIME (date) | Convert the specified date value to a date/time value. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table. |
-| NOW () | Return the current Finance and Operations application server date and time as a date/time value. | |
-| TODAY () | Return the current Finance and Operations application server date as a date value. | |
+| NOW () | Return the current application server date and time as a date/time value. | |
+| TODAY () | Return the current application server date as a date value. | |
 | NULLDATE () | Return a **null** date value. | |
 | NULLDATETIME () | Return a **null** date/time value. | |
-| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
-| SESSIONTODAY () | Return the current Finance and Operations session date as a date value. | |
-| SESSIONNOW () | Return the current Finance and Operations session date and time as a date/time value. | |
-| DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
+| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| SESSIONTODAY () | Return the current application session date as a date value. | |
+| SESSIONNOW () | Return the current application session date and time as a date/time value. | |
+| DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current application session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
+| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current application session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | DAYOFYEAR (date) | Return an integer representation of the number of days between January 1 and the specified date. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. |
 | DAYS (date 1, date 2) | Return the number of days between the first specified date and the second specified date. Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |
 
@@ -484,7 +484,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| CASE (expression, option 1, result 1 \[, option 2, result 2\] … \[, default result\]) | Evaluate the specified expression value against the specified alternative options. Return the result of the option that equals the value of the expression. Otherwise, return the optional default result, if a default result is specified. (The default result is the last parameter that isn't preceded by an option.) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current Finance and Operations session date is between October and December. Otherwise, it returns a blank string. |
+| CASE (expression, option 1, result 1 \[, option 2, result 2\] … \[, default result\]) | Evaluate the specified expression value against the specified alternative options. Return the result of the option that equals the value of the expression. Otherwise, return the optional default result, if a default result is specified. (The default result is the last parameter that isn't preceded by an option.) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current application session date is between October and December. Otherwise, it returns a blank string. |
 | IF (condition, value 1, value 2) | Return the first specified value when the specified condition is met. Otherwise, return the second specified value. If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists. | **IF (1=2, "condition is met", "condition is not met")** returns the string **"condition is not met"**. |
 | NOT (condition) | Return the reversed logical value of the specified condition. | **NOT (TRUE)** returns **FALSE**. |
 | AND (condition 1\[, condition 2, …\]) | Return **TRUE** if *all* specified conditions are true. Otherwise, return **FALSE**. | **AND (1=1, "a"="a")** returns **TRUE**. **AND (1=2, "a"="a")** returns **FALSE**. |
@@ -644,8 +644,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>TEXT (input)</td>
-<td>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
-<td>If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current Finance and Operations session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</td>
+<td>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current application instance. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
+<td>If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current applicatoin session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
@@ -654,12 +654,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:</p>
 <ul>
-<li>Finance and Operations label SYS70894, which has the following text:
+<li>Label SYS70894, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Nothing to print&quot;</li>
 <li><strong>For the DE language:</strong> &quot;Nichts zu drucken&quot;</li>
 </ul></li>
-<li>Finance and Operations label SYS18389, which has the following text:
+<li>Label SYS18389, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
 <li><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
