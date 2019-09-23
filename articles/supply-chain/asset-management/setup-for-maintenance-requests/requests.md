@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/preview-banner.md)]
 
-You can set up various types of requests to use in your company. Maintenance requests are one type. Maintenance requests are used to request that a work order be required for a specific job. A maintenance request can be created by any user who has access to Asset Management functionality in Microsoft Dynamics 365 for Finance and Operations. A planner or manager can then decide whether a maintenance request should be converted to a work order, or whether it should complete its own lifecycle.
+You can set up various types of requests to use in your company. Maintenance requests are one type. Maintenance requests are used to request that a work order be required for a specific job. A maintenance request can be created by any user who has access to Asset Management functionality in Finance and Operations. A planner or manager can then decide whether a maintenance request should be converted to a work order, or whether it should complete its own lifecycle.
 
 ## View maintenance requests
 

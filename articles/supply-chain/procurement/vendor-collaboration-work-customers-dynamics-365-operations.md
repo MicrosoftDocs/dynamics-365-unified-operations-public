@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration with customers
-description: This topic describes how you can use vendor collaboration in Microsoft Dynamics 365 for Finance and Operations, to work with POs and monitor consignment inventory.
+description: This topic describes how you can use vendor collaboration in Finance and Operations, to work with POs and monitor consignment inventory.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
+This topic describes how you can use vendor collaboration to work with customers in Finance and Operations. Vendors can complete a series of business processes from the following workspaces:
 
 - **Purchase order confirmation** – Monitor and respond to purchase orders (POs).
 - **Vendor bidding** – View requests for quotation (RFQs), and respond to them by entering bids.

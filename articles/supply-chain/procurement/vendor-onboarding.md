@@ -32,12 +32,12 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, based on information that is collected from a person who represents the vendor.
+New vendors can be onboarded and registered as vendors in Finance and Operations, based on information that is collected from a person who represents the vendor.
 
 The process consists of the following steps, where various roles perform actions in the system.
 
 1. **Data management OData** – Entity import - The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
-2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
+2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page.
 3. **User provisioning workflow** - When a procurement professional has verified the information in the incoming request and has decided to continue with the onboarding process, the user request workflow provisions the new user and sends an invitation email to accept the contact person as an authenticated user of Microsoft Dynamics 365.
 4. **Vendor registration wizard** - The vendor's contact person signs in to Finance and Operations by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
 5. **Approval workflow** - A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
@@ -52,7 +52,7 @@ The following table shows the steps and roles that are involved in the process.
 | Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
-For a quick demonstration of the vendor onboarding process, watch this short YouTube video: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video about [how to onboard a new vendor in Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## Importing the prospective vendor registration request
 
