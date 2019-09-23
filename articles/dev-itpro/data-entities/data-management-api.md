@@ -42,7 +42,7 @@ Two APIs support file-based integration scenarios: the Data management framework
 
 | Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|--------------------------------------|-----------------------------|
-| Scheduling          | Scheduling in Finance and Operations | Scheduling outside Finance and Operations |
+| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations |
 | Format              | Files and data packages | Only data packages |
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
@@ -278,7 +278,7 @@ HTTP/1.1 200 OK
 
 | Parameter                | Description |
 |--------------------------|-------------|
-| string packageUrl        | The URL of the data package in the Blob storage that is associated with Finance and Operations. |
+| string packageUrl        | The URL of the data package in the Blob storage that is associated with a Finance and Operations app. |
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
