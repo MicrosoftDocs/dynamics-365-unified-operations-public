@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../../includes/preview-banner.md)]
 
 
-In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets. If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs registered on the investment projects in the **Project management and accounting** module and the **Fixed assets** module in Dynamics 365 for Finance and Operations.
+In Asset Management, assets can be related to fixed assets, and you can create work orders for those assets. If you use this functionality, you can get a complete overview of fixed assets, related investment projects, and the costs registered on the investment projects in the **Project management and accounting** module and the **Fixed assets** module in Finance and Operations.
 
 >[!NOTE]
 >The **Fixed asset number** field is only filled out on the work order job project if type "Investment" is selected as the project type on the work order job project.

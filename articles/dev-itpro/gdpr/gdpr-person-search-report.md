@@ -2,7 +2,7 @@
 # required metadata
 
 title: Person search report
-description: This topic provides information about the Personal data report for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the Personal data report for Finance and Operations.
 author: rschloma
 manager: AnnBe
 ms.date: 01/24/2018
@@ -32,18 +32,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Person search report is a refinement of the existing Data management framework of Microsoft Dynamics 365 for Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
+The Person search report is a refinement of the existing Data management framework of Finance and Operations. The Data management framework offers a pre-packaged set of entities that Microsoft authored to identify personal data that is used to define a person and the roles that a person might be assigned to in Finance and Operations. 
 
 > [!NOTE]
-> You can use the report with Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in Finance and Operations version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
+> You can use the report with Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. The report is not currently available for Microsoft Dynamics AX 2012. The Person search report is available in version 8.0. The report is also available in version 7.3 (delivered via monthly update 7.3.2), in version 7.2 (via KB 4132615), and in version 7.1 (via KB 4132441). The Person search report may be updated periodically. Before using this report, you need to ensure that you have obtained and applied all relevant hotfixes. 
 
-You can use the Global address book in Finance and Operations to create an instance of a person that is described in the data model as a party. 
+You can use the Global address book to create an instance of a person that is described in the data model as a party. 
 
 When you add a contact, customer, user, worker, or other person in Finance and Operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
 
 ![Address book structure](../../fin-and-ops/organization-administration/media/address-book-structure.png)
 
-At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person in Finance and Operations is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data. The Person search report can help with both these tasks.
+At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data. The Person search report can help with both these tasks.
 
 The Person search report is extensible. If you find that the existing entities do not contain all of the personal data you are looking for, they can be extended, or new entities can be written. In addition, you can change the data mappings for each entity and remove fields that you don't want to export.
 
@@ -51,7 +51,7 @@ The Person search report lets you specify different identifiers for a person, su
 
 On rare occasions, a single person might be entered in your system more than once. The Person search report lets you specify each person instance to be included on a single report. For example, someone named Fred Smith might be both "Fred Smith" and "F. D. Smith" in your address book.
 
-An individual might exist as multiple parties in Finance and Operations data. You can provide multiple identifiers for each party type, and each party type's personal data will be included on a single report.
+An individual might exist as multiple parties in data. You can provide multiple identifiers for each party type, and each party type's personal data will be included on a single report.
 
 ## Download the default template
 
@@ -68,7 +68,7 @@ You can also download a template from LCS and import it for versions 7.1 or late
 > 1.	Log in to LCS.
 > 2.	Click the **Shared asset library** tile.
 > 3.	Select the **Data package asset** type.
-> 4.	Click the template named **Template-x.x-Person search**, where x.x is the version of Finance and Operations, Talent or Retail that you're using, and download it.
+> 4.	Click the template named **Template-x.x-Person search**, where x.x is the version of Finance, Supply Chain Management, Retail or Talent that you're using, and download it.
 > 5.	Open the **Data Management** workspace.
 > 6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
 > 7.	Click on the **Templates** tile.

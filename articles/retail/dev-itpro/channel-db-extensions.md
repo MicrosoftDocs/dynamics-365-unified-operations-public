@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -55,7 +55,7 @@ We introduced a new schema called the **ext schema** to support extensions. In p
 ## Best practices for channel DB extensions
 
 - Don’t modify anything in the CRT, AX, or DBO schemas. Use the **ext schema** for all extension scenarios.
-- Don’t access any CRT, AX, or DBO objects in the **ext schema**. You must use the commerce runtime data service to access any channel DB artifacts.
+- If available, we recommend getting data through commerce runtime data services, as opposed to accessing channel DB artifacts directly from CRT, AX, or DBO objects.
 
 ### Don't do this
 The following is an example of what you should not do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
@@ -97,10 +97,10 @@ END;
 
 
 ### Don't do this
-- If you are creating extension table or new table all should be done in ext schema.
-- Don’t modify any views, procedures, functions or any of the database artifacts.
-- Don’t access or call any of any database artifacts including views, defined types, functions and procedures from your extensions.
-- To access the database artifacts, use the CRT data service. For example, suppose you want to extend the product search view to search some custom fields or to show custom columns in journal views. Don’t modify the views or procedures or functions in SQL. Instead, use the CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
+- If you are creating extension table or new table, everything should be done in ext schema.
+- Don’t modify any views, procedures, functions, or any of the database artifacts.
+- Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+
 
 ```sql
 CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
@@ -111,8 +111,8 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     sdht.CLOSINGTIME,
     sdht.RECID,
     rst.STORENUMBER
-    FROM [ext].[CONTOSORETAILSTOREHOURSTABLE\] sdht
-    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE  --DONT access ax schema object
+    FROM [ext].[CONTOSORETAILSTOREHOURSTABLE] sdht
+    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE
 )
 ```
 

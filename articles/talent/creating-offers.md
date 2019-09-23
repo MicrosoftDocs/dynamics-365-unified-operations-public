@@ -2,7 +2,7 @@
 # required metadata
 
 title: Creating, approving, and signing offers
-description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 for Talent.
+description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -118,7 +118,7 @@ There are several actions you can take before sending the offer to the candidate
 If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license at this step. 
 
 ### DocuSign
-If DocuSign was chosen as the preferred e-sign method, offer creators need to connect their DocuSign license. Once signed in, the default account and permissions associated with the user's DocuSign profile are connected to Talent Attract. 
+If DocuSign was chosen as the preferred e-sign method, offer creators need to connect their DocuSign license. Once signed in, the default account and permissions associated with the user's DocuSign profile are connected to Talent: Attract. 
 
 -  You can view and edit the email template as needed.
 

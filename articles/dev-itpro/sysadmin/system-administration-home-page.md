@@ -50,7 +50,7 @@ In July 2018 we announced a change to the way we deliver Dynamics 365 updates th
 ## Implementation management with Lifecycle Services
 Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your Finance and Operations implementations.
 
-The lifecycle of a Finance and Operations implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
+The lifecycle of an implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
 
 The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [FastTrack for Dynamics program](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
 
@@ -58,7 +58,7 @@ The management of the implementation involves many different stakeholders from t
 - [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
 
 ## Deployment
-You can deploy Finance and Operations in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
+You can deploy in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 for Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
@@ -82,7 +82,7 @@ The following content will help you move a database to new environment and resto
 - [Create a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
 
 ## Security
-Finance and Operations uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
+Finance and Operation apps uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
 
 Role-based security is aligned with the structure of the business. The security roles that a user is assigned to depend on the user's responsibilities in the organization, and his or her participation in business processes. The administrator grants access to the duties that users in a role perform, not to the program elements that users must use.
 
@@ -92,7 +92,7 @@ Because rules can be set up for automatic role assignment, the administrator doe
 - [Security architecture](security-architecture.md)
 
 ## Batch processing
-Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
+Many tasks can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
 
 - [Batch processing overview](batch-processing-overview.md)
 - [Batch server overview](batch-server-overview.md)

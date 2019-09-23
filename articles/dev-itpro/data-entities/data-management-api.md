@@ -32,17 +32,17 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate with Microsoft Dynamics 365 for Finance and Operations by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. For on-premises deployments, this functionality is currently available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 12 (November 2017) (version 7.2), build 7.0.4709.41184, and later.
+This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. For on-premises deployments, this functionality is currently available for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 12 (November 2017) (version 7.2), build 7.0.4709.41184, and later.
 
 Although on-premises support has been added, API names haven't been changed. Therefore, Microsoft can keep a single API set for both cloud deployments and on-premises deployments.
 
 ## Choosing an integration API
 
-Two APIs in Finance and Operations support file-based integration scenarios: the Data management framework's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use.
+Two APIs support file-based integration scenarios: the Data management framework's package API and the recurring integrations API. Both APIs support both data import scenarios and data export scenarios. The following table describes the main decision points that you should consider when you're trying to decide which API to use.
 
 | Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|--------------------------------------|-----------------------------|
-| Scheduling          | Scheduling in Finance and Operations | Scheduling outside Finance and Operations |
+| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations |
 | Format              | Files and data packages | Only data packages |
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
@@ -56,9 +56,9 @@ If you decide that the recurring integrations API meets your requirement better 
 The Data management framework's package API uses OAuth 2.0 to authorize access. The API must be called by using a valid OAuth access token. For more information about OAuth 2.0 and Microsoft Azure Active Directory (Azure AD), see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-oauth-code). For on-premises deployments, Active Directory Federation Services (AD FS) is used for authorization.
 
 > [!NOTE]
-> When you use the Client Credentials Grant flow, Finance and Operations maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
+> When you use the Client Credentials Grant flow, the application maintains an access control list. You can find the access control list at **System administration** \> **Setup** \> **Azure Active Directory applications**. The **Azure Active Directory applications** page shows the approved client IDs and the user security mapping that should be enforced when the API is called by using the Client Credentials Grant flow.
 >
-> For on-premises deployments, this list must have a valid client ID from AD FS. Additionally, for on-premises use, **\<baseurl\>** in the following examples must append **/namespaces/AXSF** when a connection is made to Finance and Operations.
+> For on-premises deployments, this list must have a valid client ID from AD FS. Additionally, for on-premises use, **\<baseurl\>** in the following examples must append **/namespaces/AXSF** when a connection is made.
 
 ## Import APIs
 
@@ -203,7 +203,7 @@ HTTP/1.1 200 OK
 
 ### GetAzureWritableUrl
 
-The **GetAzureWritableUrl** API is used to get a writable blob URL. The method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container for Finance and Operations. For on-premises deployments, this API will still return the URL that has been abstracted to local storage.
+The **GetAzureWritableUrl** API is used to get a writable blob URL. The method includes a shared access signature (SAS) token that is embedded in the URL. You can use this method to upload a data package to the Azure Blob storage container. For on-premises deployments, this API will still return the URL that has been abstracted to local storage.
 
 > [!NOTE]
 > An SAS is valid only during an expiry time window. Any request that is issued after the window has passed returns an error. For more information, see [Using shared access signatures (SAS)](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
@@ -244,7 +244,7 @@ HTTP/1.1 200 OK
 
 ### ImportFromPackage
 
-The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Blob storage that is associated with your implementation of Finance and Operations. For on-premises deployments, the import will be initiated from the local storage that the file was uploaded previously to.
+The **ImportFromPackage** API is used to initiate an import from the data package that is uploaded to the Blob storage that is associated with your implementation. For on-premises deployments, the import will be initiated from the local storage that the file was uploaded previously to.
 
 > [!NOTE]
 > Starting in Platform update 12, the **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
@@ -278,7 +278,7 @@ HTTP/1.1 200 OK
 
 | Parameter                | Description |
 |--------------------------|-------------|
-| string packageUrl        | The URL of the data package in the Blob storage that is associated with Finance and Operations. |
+| string packageUrl        | The URL of the data package in the Blob storage that is associated with a Finance and Operations app. |
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
@@ -302,7 +302,7 @@ The following APIs are used to export files (data packages).
 
 The **ExportToPackage** API is used to initiate an export of a data package. This API is applicable to both cloud deployments and on-premises deployments.
 
-- The export data project must be created in Finance and Operations before you call this API. If the project doesn't exist, a call to the API returns an error.
+- The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
 
 ```CSharp

@@ -145,14 +145,14 @@ Toolbars (previously called Action Pane strips) are Actions Panes that have the 
 ### Overflow behavior in Toolbars
 Toolbars have the same overflow feature as standard Action Panes.  See the section above for more details. 
 
-Starting in Platform Update 6, Toolbars have a new capability that allows developers to provide a cleaner action story by designating certain buttons to always render in overflow. This makes it easier to differentiate actions that users will commonly use versus those that are infrequently or rarely used.  This behavior is controlled by a new metadata property called **AlwaysInOverflow** that exists on Button groups inside Toolbars.  
+Toolbars allow developers to provide a cleaner action story by designating certain buttons to always render in overflow. This makes it easier to differentiate actions that users will commonly use versus those that are infrequently or rarely used.  This behavior is controlled by a new metadata property called **AlwaysInOverflow** that exists on Button groups inside Toolbars.  
 
 ## Right-click context menus
-Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the Microsoft Dynamics 365 for Finance and Operations context menu, which shows both system-defined actions and developer-defined actions. 
+Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the application context menu, which shows both system-defined actions and developer-defined actions. 
 
-+ If you right-click on an image, in an editable field, or if text is selected, then the browser's context menu will appear.  This is to provide access to browser functionality like **Cut**, **Copy**, and **Paste**.  We cannot embed these actions into the Finance and Operations context menus since browsers do not allow programmatic access to the system clipboard for security reasons.  
++ If you right-click on an image, in an editable field, or if text is selected, then the browser's context menu will appear.  This is to provide access to browser functionality like **Cut**, **Copy**, and **Paste**.  Actions cannot be embedded into context menus because browsers do not allow programmatic access to the system clipboard for security reasons.  
 
-+ Other right-click targets (for example, on a field label or on the value of a read-only control) should trigger the Finance and Operations context menu.  
++ Other right-click targets (for example, on a field label or on the value of a read-only control) should trigger the context menu.  
 
 **Note:** Context menus are intended to provide an alternate route to a command, and should not be only way to execute a command. Therefore, any action that is added to a control's context menu should also have a corresponding action that is available outside the context menu. 
 

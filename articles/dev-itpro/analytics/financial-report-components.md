@@ -86,7 +86,7 @@ You can view all the building blocks that are assigned to a building block group
 
 ### Export a building block group
 
-You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between Finance and Operations installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
+You can export a building block group or specific report building blocks in a building block group. You can use the exported building block group as a backup. You can also copy the exported data between installations. Report designer includes the referenced font styles and dimension sets together with the building block group.
 
 1. In Report Designer, on the **Company** menu, click **Building Block Groups**.
 2. In the **Building Block Groups** dialog box, select the building block group to export, and then click **Export**.

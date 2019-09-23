@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Introduction
 
-In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for an unlimited number of dimensions. The user could also dynamically create dimensions and enter them in any order. Microsoft Dynamics 365 for Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
+In Microsoft Dynamics AX 2009, the number of dimensions was limited to a minimum of three and a maximum of ten. Additionally, the dimensions were entered in a fixed order. Therefore, code customization and database synchronization were required for every dimension that was added. Then, in Microsoft Dynamics AX 2012, the dimension framework was expanded to allow for an unlimited number of dimensions. The user could also dynamically create dimensions and enter them in any order. Finance and Operations keeps the behavior from AX 2012. The unlimited nature of the model, the advantages that come from relational database design, and optimization for performance requirements have led to a data model that is more complex than any earlier data model.
 
 ## Part 1: "What happens when I create a ledger account combination?"
 
@@ -62,7 +62,7 @@ The data about each dimension is stored in the DimensionAttribute table. The SQL
 
 [![Query results for DimensionAttribute storage](./media/FinancialDimensionSQL.png)](./media/FinancialDimensionSQL.png)
 
-The **Type** value indicates whether the dimension is backed by an existing entity in the system or a custom list. Note that the dimension framework doesn't directly reference the backing table for an existing entity, such as CustTable. Instead, a custom view is created to make an entity available in the system, so that it can be used in the dimension framework. By default, 36 existing entities can be used as dimensions in Finance and Operations.
+The **Type** value indicates whether the dimension is backed by an existing entity in the system or a custom list. Note that the dimension framework doesn't directly reference the backing table for an existing entity, such as CustTable. Instead, a custom view is created to make an entity available in the system, so that it can be used in the dimension framework. By default, 36 existing entities can be used as dimensions.
 
 More than one dimension can be created based on the same entity. Sometimes, an entity in the system might be used for multiple purposes when transaction activity is classified in the system. In this case, multiple dimensions can be defined for the entity, one for each purpose. A typical example is a cost center backing entity that is used to represent both the primary cost center (for example, selling) and the cost center that the transaction is being traded against (for example, purchasing).
 
@@ -104,9 +104,9 @@ Dimension enumerations and default dimensions are two mechanisms that are used t
 
 A dimension enumeration is a set of references to existing dimensions that are persisted for later use. These dimensions have no particular ordering, and the dimension framework imposes no constraints on the dimensions that appear in the set. However, in most cases, the consuming code constrains the set to the set of dimensions that are available in the current ledger. Dimension enumerations are stored in the DimensionAttributeSet and DimensionAttributeSetItem tables.
 
-Each set specifies an enumeration type. This enumeration type is the enumeration Id of the BaseEnum that represents the source of enumeration values that are associated with each dimension. You can find the enumeration number by using the **enumNum()** method. Therefore, it isn't a list of user-entered values from backing entities but a list of enumeration values that are defined by the developer. An example in Finance and Operations is the storage of a list of dimensions that are associated with each main account, and that are either fixed (labeled **Fixed value**) or not fixed (**Not fixed**).
+Each set specifies an enumeration type. This enumeration type is the enumeration Id of the BaseEnum that represents the source of enumeration values that are associated with each dimension. You can find the enumeration number by using the **enumNum()** method. Therefore, it isn't a list of user-entered values from backing entities but a list of enumeration values that are defined by the developer. An example is the storage of a list of dimensions that are associated with each main account, and that are either fixed (labeled **Fixed value**) or not fixed (**Not fixed**).
 
-The following illustration shows an example of dimension enumerations on a page in Finance and Operations.
+The following illustration shows an example of dimension enumerations on a page.
 
 [![Dimension enumerations on a page](./media/DimensionEnumerationsOnForm.png)](./media/DimensionEnumerationsOnForm.png) 
 
@@ -124,7 +124,7 @@ The MainAccountLegalEntity record references the DimensionAttributeSet record by
 
 As dimension enumerations hold a set of dimensions that have associated enumeration values, a default dimension holds a set of dimensions that have specific dimension values. The term *default dimensions* comes from the fact that these sets are typically entered on master data records, not directly on transactions, and they are used to enter default values in a ledger account combination. As for dimension enumerations, no specific structure is associated with default dimensions, and in most instances, the consuming code constrains the set to the dimensions that are available for the current ledger. Default dimensions are stored in the DimensionAttributeValueSet and DimensionAttributeValueSetItem tables.
 
-The following illustration shows an example of default dimensions on a page in Finance and Operations.
+The following illustration shows an example of default dimensions on a page.
 
 [![Default dimensions on a page](./media/DefaultDimensionsOnForm.png)](./media/DefaultDimensionsOnForm.png)
 
@@ -144,7 +144,7 @@ This part of the topic covers the "Structures" and "Constraints" regions that ar
 
 [![Structures and constraints in the framework](./media/StructuresAndConstraintsInFramework.png)](./media/StructuresAndConstraintsInFramework.png)
 
-As was previously stated, the Finance and Operations dimension framework allows for an unlimited number of dimensions. Additionally, when users enter a ledger account combination, they can specify which dimensions to include, and in which order. They can also constrain the values that can be entered for each segment in that ledger account combination.
+As was previously stated, the dimension framework allows for an unlimited number of dimensions. Additionally, when users enter a ledger account combination, they can specify which dimensions to include, and in which order. They can also constrain the values that can be entered for each segment in that ledger account combination.
 
 ### Account structures
 

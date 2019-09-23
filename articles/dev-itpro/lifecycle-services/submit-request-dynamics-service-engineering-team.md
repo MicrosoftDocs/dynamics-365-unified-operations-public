@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Find support for Microsoft Dynamics for Finance and Operations](lcs-support.md).
+> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Find support](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -94,7 +94,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
         > [!NOTE]
         > If you need to refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
 
-    - **Sandbox to Production** - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy the database" section of [Copy Finance and Operations databases from SQL Server to production Azure SQL Database environments](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
+    - **Sandbox to Production** - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy the database" section of [Copy Finance and Operations apps databases from SQL Server to production Azure SQL Database environments](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 

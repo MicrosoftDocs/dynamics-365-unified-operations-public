@@ -82,6 +82,7 @@ This page lists the resources that are available for IT pros and developers who 
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -106,6 +107,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
 -   [Add customer preference data to a channel database](add-customer-preference-channel.md)
 -   [Add properties to a sales order](add-properties-sales-order.md)
+-   [Manage secrets for retail channels](manage-secrets.md)
 
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
@@ -125,7 +127,8 @@ This page lists the resources that are available for IT pros and developers who 
 - [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
-- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
+- [Show custom notifications in POS](extend-pos-notification.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

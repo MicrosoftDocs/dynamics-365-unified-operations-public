@@ -5,7 +5,7 @@ title: Update an environment
 description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 06/07/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic walks through the process of applying updates to a Microsoft Dynamics 365 for Finance and Operations environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
+This topic walks through the process of applying updates to an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 > [!IMPORTANT]
 > In the next-generation infrastructure, updates are applied differently than they are applied in the current flow. *Whatever is provided in the package is applied to the environment, and it **overwrites** whatever is already present in that environment.* Therefore, you **must** create a single deployable package that contains all customizations and independent software vendor (ISV) solutions from your build environment. If the list of models in the environment differs from the list of models in in the package, you receive a warning before the update is applied. For information about how to create a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
 
 ## Supported package types
 
-Because environments that are deployed by using the [self-service deployment](infrastructure-stack.md) experience will be running on Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) or a later version, the following package types are supported:
+Because environments that are deployed by using the [self-service deployment](infrastructure-stack.md) experience will be running on version 8.1 (October 2018) or a later version, the following package types are supported:
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This type of deployable package is created in a **build** environment.
 - **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs), and other binaries and metadata that the platform and application depend on. This type of package is released by Microsoft.

@@ -56,7 +56,7 @@ For each type of benefit, such as vision or dental, an organization can offer on
 [![benefit pic](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## Eligibility
-Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Microsoft Talent, you can set the type of eligibility that applies to that benefit. 
+Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Dynamics 365 Talent, you can set the type of eligibility that applies to that benefit. 
 
 You can make a benefit available to all workers. For example, some companies offer parking passes to all employees as a fringe benefit. When you create this benefit, you set the eligibility to **All workers are eligible**. 
 

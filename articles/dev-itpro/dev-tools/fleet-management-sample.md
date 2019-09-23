@@ -61,7 +61,7 @@ To work with the sample, you must install the provided demo data.
 ## Use the Fleet Management application to rent a vehicle
 Remember that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
-1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Finance and Operations.
+1.  Open Internet Explorer, and sign into the Finance and Operations application.
 2.  To return to the **Dashboard**, select the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main working hub. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
 

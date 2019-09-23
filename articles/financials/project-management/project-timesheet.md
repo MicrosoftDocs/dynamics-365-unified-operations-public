@@ -38,8 +38,8 @@ ms.search.validFrom: 2019-01-15
 
 The Microsoft Dynamics 365 Project Timesheet mobile app enables users to submit
 and approve timesheets for projects on their mobile device (iPhone or Android). This mobile app surfaces the timesheet functionality that
-resides in the Project management and accounting area of Microsoft Dynamics 365
-for Finance and Operations, improving user productivity and efficiency, as well
+resides in the Project management and accounting area of Dynamics 365
+Finance, improving user productivity and efficiency, as well
 as enabling timely entry and approval of project timesheets.
 
 ## Download and install the mobile app
@@ -49,7 +49,7 @@ Android or iPhone from the mobile store for your device.
 
 ## Enable the app 
 
-In Dynamics 365 for Finance and Operations, the Project Timesheet
+In Finance, the Project Timesheet
 mobile app must be enabled. To enable the functionality, go to **Project
 management and accounting parameters \> Timesheet** and select the **Enable Microsoft
 Dynamics 365 Project Timesheet** parameter.
@@ -58,7 +58,7 @@ Dynamics 365 Project Timesheet** parameter.
 
 1.  Start the app on your mobile device.
 
-2.  Enter your Microsoft Dynamics 365 for Finance and Operations URL.
+2.  Enter your Finance URL.
 
 3.  The first time that you sign in, you're prompted for your user name and
     password. Enter your credentials.

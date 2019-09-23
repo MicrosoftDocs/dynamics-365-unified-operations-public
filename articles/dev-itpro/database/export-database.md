@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a database
-description: This topic explains how to export a database for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to export a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database for Dynamics 365 for Finance and Operations from a sandbox user acceptance testing (UAT) environment to the Asset library.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to export a database from a sandbox user acceptance testing (UAT) environment to the Asset library.
 
 ## Self-service export database
 
@@ -111,7 +111,7 @@ SELECT * FROM sys.dm_database_copies
 ```
 
 > [!WARNING] 
-> Retaining copies of the database for an extended period is not allowed in any Finance and Operations environment. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice.
+> Retaining copies of the database for an extended period is not allowed in any Dynamics 365 Finance and Operation apps environments. Microsoft reserves the right to delete any copies of the database older than 7 days without any prior notice.
 
 ### Prepare the database
 
@@ -264,7 +264,7 @@ Here is an explanation of the parameters:
 - **sdn (source database name)** – The name of the database to export.
 - **tf (target file)** – The path and name of the file to export to.
 - **sp (source password)** – The SQL password for the source SQL Server.
-- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Finance and Operations SQL instance during deployment. You can retrieve the password for this user from your project in Dynamics Lifecycle Services.
+- **su (source user)** – The SQL user name for the source SQL Server. We recommend that you use the **sqladmin** user. This user is created on every Dynamics Finance and Operations apps SQL instance during deployment. You can retrieve the password for this user from your project in Dynamics Lifecycle Services.
 
 After the export is completed, run the following command to delete the database copy.
 

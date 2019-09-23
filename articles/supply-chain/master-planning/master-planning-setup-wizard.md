@@ -32,7 +32,6 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Master planning setup wizard
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic provides a guide for the **Master planning setup wizard**. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.

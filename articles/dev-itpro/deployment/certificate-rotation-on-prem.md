@@ -5,7 +5,7 @@ title: Certificate rotation
 description: This topic explains how to place existing certificates and update the references within the environment to use the new certificates.
 author: PeterRFriis
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include[banner](../includes/banner.md)]
 
-You may need to rotate the certificates used by your Finance and Operations on-premises environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
+You may need to rotate the certificates used by your Dynamics 365 Finance + Operations (on-premises) environment as they approach their expiration date. In this topic, you will learn how to replace the existing certificates and update the references within the environment to use the new certificates.
 
 > [!NOTE]
 > Old certificates must remain in place until the certificate rotation process is complete, removing them in advance will cause the rotation process to fail.
@@ -83,7 +83,7 @@ You may need to rotate the certificates used by your Finance and Operations on-p
 
 6. If axdataenciphermentcert certificates are rotated, you need to regenerate the credentials.json file. For more information, see [Encrypt credentials](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/setup-deploy-on-premises-pu12#encryptcred).
 
-7. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your Finance and Operations (on-premises) environment from LCS](setup-deploy-on-premises-pu12.md#deploy).
+7. Run the following PowerShell command to have values that can be used in LCS later. For more information, see [Deploy your on-premises environment from LCS](setup-deploy-on-premises-pu12.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml

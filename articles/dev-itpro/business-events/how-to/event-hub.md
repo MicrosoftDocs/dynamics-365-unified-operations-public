@@ -53,7 +53,7 @@ This tutorial describes the steps that you must follow to make business events w
 
     ![Connection string](../../media/BE_EH_connectionstring.jpg)
 
-6. In Finance and Operations, create an endpoint configuration for the event hub. Go to **System administration \> Setup \> Business events \> Business events catalog**, and then, on the **Endpoints** tab, select **New** to open the **Configure new endpoint** wizard.
+6. Create an endpoint configuration for the event hub. Go to **System administration \> Setup \> Business events \> Business events catalog**, and then, on the **Endpoints** tab, select **New** to open the **Configure new endpoint** wizard.
 
     ![Configure new endpoint wizard](../../media/BE_EH_endpointconfig.jpg)
 

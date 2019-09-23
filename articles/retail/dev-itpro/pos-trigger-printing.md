@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -187,6 +187,12 @@ The following table lists the available triggers and denotes whether they can be
 | PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
+
+## Reason code triggers
+| Trigger              | Type           | Description                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
+
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.

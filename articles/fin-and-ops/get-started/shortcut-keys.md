@@ -2,10 +2,10 @@
 # required metadata
 
 title: Keyboard shortcuts
-description: The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations. 
+description: The following keyboard shortcuts can help you quickly and efficiently enter data. 
 author: jasongre
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The following keyboard shortcuts apply across Dynamics 365 for Finance and Operations.
+The following keyboard shortcuts can help you quickly and efficiently enter data.
 
 > [!NOTE]
 > The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -53,7 +53,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to next/previous option in a menu          | Down arrow / Up arrow            |
 | Close a tab on the Action Pane or a menu        | Esc                              |
 | Simulate a right-click                          | Shift+F10                        |
-| Open the Finance and Operations context menu    | Ctrl+F10                         |
+| Open the context menu    | Ctrl+F10                         |
 | Execute the default button on a form/dialog box | Alt+Enter                        |
 | Click a button or tile                          | Enter or Space                   |
 | View refresh information for a count tile       | Alt+Up arrow                     |
@@ -161,8 +161,8 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
-| Enter the session date in a date field                                       | D+Tab                         |
-| Enter the current date in a date field                                       | T+Tab                         |
+| Enter the session date in a date field                                       | D                         |
+| Enter the current date in a date field                                       | T                         |
 | Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
@@ -242,3 +242,7 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move up/down a row in the lookup                                                                                        | Up arrow / Down arrow            |
 | Move up/down a page in the lookup                                                                                       | Page up / Page down              |
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
+## Additional resources
+
+- [Keyboard shortcuts in Report Designer](../../financials/general-ledger/financial-reporting-keyboard-shortcuts.md)
+

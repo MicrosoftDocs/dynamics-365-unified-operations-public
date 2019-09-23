@@ -73,7 +73,7 @@ Because of the issues that were mentioned earlier, the One voucher functionality
 - **Spring 2018 release** – By default, the functionality will be turned off by default through the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. However, you can turn the functionality on if your organization has a scenario that falls into one of the functional gaps that are listed later in this topic.
 
     - If customers have a business scenario that doesn't require One voucher, they shouldn't turn the functionality on. Microsoft won't fix "bugs" in the areas that are identified later in this topic if this functionality is used even though another solution exists.
-    - Stop using One voucher for integrations into Microsoft Dynamics 365 for Finance and Operations, unless the functionality is required for one of the functional gaps.
+    - Stop using One voucher for integrations, unless you need the functionality for one of the functional gaps.
 
 - **Later releases** – All functional gaps will be filled. **After the functional gaps are filled and new features are delivered, it will be at least one year before the One voucher functionality is permanently turned off**, because customers and independent software vendors (ISVs) must have enough time to react to the new functionality. For example, they might have to update their business processes, entities, and integrations.
 
@@ -161,7 +161,7 @@ A new feature that was added in Microsoft Dynamics 365 for Operations version 16
 
 ### Import bank statement transactions
 
-Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance and Operations through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
+Banks often pay and receive payments on an organization's behalf, and those transactions are recorded in Finance through a file that is received from the bank. Organizations often want to group together those transactions by using the bank statement number in the file. Because each transaction is shown in detail on the bank statement, no summarization is required in the bank subledger.
 
 Transactions can be grouped by using other fields on the journal, such as the journal batch number itself or the document number.
 

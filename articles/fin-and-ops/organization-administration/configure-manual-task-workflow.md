@@ -143,11 +143,11 @@ Follow these steps to specify who the manual task should be assigned to.
     </tr>
     <tr>
     <td>User</td>
-    <td>Specific Microsoft Dynamics 365 for Finance and Operations users</td>
+    <td>Specific users</td>
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all users. Select the users to assign the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>
@@ -245,11 +245,11 @@ If a user doesn't complete the manual task in the allotted time, the task is ove
     </tr>
     <tr>
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific users</td>
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all users. Select the users to escalate the task to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>
@@ -348,11 +348,11 @@ You can send notifications to people when a manual task has been delegated, esca
     </tr>
     <tr>
     <td>User</td>
-    <td>Specific Finance and Operations users</td>
+    <td>Specific users</td>
     <td>
     <ol>
     <li>After you select <strong>User</strong>, click the <strong>User</strong> tab.</li>
-    <li>The <strong>Available users</strong> list includes all Finance and Operations users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
+    <li>The <strong>Available users</strong> list includes all users. Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</li>
     </ol>
     </td>
     </tr>

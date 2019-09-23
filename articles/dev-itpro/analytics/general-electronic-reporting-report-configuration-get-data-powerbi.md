@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Electronic reporting (ER) to pull data into Power BI
-description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. 
+description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. 
 author: NickSelin
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,28 +34,28 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
+This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
 
 ## Overview
 
-Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights. Electronic reporting (ER) lets users of Microsoft Dynamics 365 for Finance and Operations easily configure data sources and arrange the transfer of data from Finance and Operations to Power BI. The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format. The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose. The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on). Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on Finance and Operations pages. This topic explains the following tasks:
+Microsoft Power BI is a collection of software services, apps, and connectors that work together to turn external sources of data into coherent, visually immersive, and interactive insights. Electronic reporting (ER) lets users easily configure data sources and arrange the transfer of data from the application to Power BI. The data is transferred as files in the OpenXML worksheet (Microsoft Excel workbook file) format. The transferred files are stored on a Microsoft SharePoint Server that has been configured for that purpose. The stored files are used in Power BI to make reports that include visualizations (tables, charts, maps, and so on). Power BI reports are shared with Power BI users, and they are accessed in Power BI dashboards and on the application pages. This topic explains the following tasks:
 
-- Configure Finance and Operations.
-- Prepare your ER format configuration to get data from Finance and Operations.
+- Configure Microsoft Dynamics 365 Finance.
+- Prepare your ER format configuration to get data from the Finance application.
 - Configure the ER environment to transfer data to Power BI.
 - Use transferred data to create a Power BI report.
-- Make the Power BI report accessible in Finance and Operations.
+- Make the Power BI report accessible in Finance.
 
 ## Prerequisites
 To complete the example in this topic, you must have the following access:
 
-- Access to Finance and Operations for one of the following roles:
+- Access for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
     - System administrator
 
-- Access to the SharePoint Server that is configured for use with Finance and Operations
+- Access to the SharePoint Server that is configured for use with the application
 - Access to the Power BI framework
 
 ## Configure document management parameters
@@ -65,7 +65,7 @@ To complete the example in this topic, you must have the following access:
     [![Document management parameters page](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. Open the configured SharePoint site. Create a new folder where ER will store Excel files that have the business data that the Power BI reports require as a source of Power BI datasets.
-4. In Finance and Operations, on the **Document types** page, create a new document type that will be used to access the SharePoint folder that you just created. Enter **File** in the **Group** field and **SharePoint** in the **Location** field, and then enter the address of the SharePoint folder.
+4. On the **Document types** page, create a new document type that will be used to access the SharePoint folder that you just created. Enter **File** in the **Group** field and **SharePoint** in the **Location** field, and then enter the address of the SharePoint folder.
 
     [![Document types page](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
@@ -139,7 +139,7 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 
 3. Select the completed version of the **Import / export activities** configuration, and then click **Run**. Note that the configured destination is applied to the output result that is generated in Excel format.
 4. Set the **Batch processing** option to **Yes** to run this report in unattended mode.
-5. Click **Recurrence** to schedule the required recurrence of this batch execution. The recurrence defines how often the updated data will be transferred from Finance and Operations to Power BI.
+5. Click **Recurrence** to schedule the required recurrence of this batch execution. The recurrence defines how often the updated data will be transferred to Power BI.
 
     [![Electronic report parameters dialog box](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
 
@@ -165,7 +165,7 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 
     [![Dataset on the dashboard](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
-5. Configure the refresh schedule for this dataset to force a periodic update. Periodic updates enable the consumption of new business data that comes from Finance and Operations via periodic execution of the ER report through new versions of the Excel file that are created on the SharePoint Server.
+5. Configure the refresh schedule for this dataset to force a periodic update. Periodic updates enable the consumption of new business data that comes via periodic execution of the ER report through new versions of the Excel file that are created on the SharePoint Server.
 
 ## Create a Power BI report by using the new dataset
 1. Click the **Import and export details** Power BI dataset that you created.
@@ -189,12 +189,12 @@ Click the **Settings** button for the new destination record. Then, in the **Des
 
     [![Updated map](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
-## Access Power BI report in Finance and Operations
-Set up the integration between Finance and Operations and Power BI. For more information, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md).
+## Access Power BI report in Finance
+Set up the integration with Power BI. For more information, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md).
 
 1. On the **Electronic reporting** workspace page that supports Power BI integration (**Organization administration** &gt; **Workspaces** &gt; **Electronic reporting workspace**), click **Options** &gt; **Open report catalog**.
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page.
-3. Click the action item to open the Finance and Operations page that shows the report that you designed in Power BI.
+3. Click the action item to open the page that shows the report that you designed in Power BI.
 
     [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 

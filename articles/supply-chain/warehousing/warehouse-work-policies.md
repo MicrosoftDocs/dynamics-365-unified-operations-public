@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Warehouse work policies in Microsoft Dynamics 365 for Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
+Warehouse work policies in Finance and Operations control whether warehouse work is created by warehouse processes in manufacturing, based on work order type, inventory location, and product.
 
 This work policy controls whether warehouse work is created for warehouse processes in manufacturing. You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**. For example, product L0101 is reported as finished to output location 001. The finished good is later consumed in another production order at output location 001. In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001. The work policy is an individual entity that can be described through the following information:
 
