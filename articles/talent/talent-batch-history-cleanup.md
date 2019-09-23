@@ -61,7 +61,7 @@ Clean up your batch job history. We recommend cleaning up your batch job history
 
 5. Under **RECURRENCE PATTERN**, select **Days** and set **REPEAT AFTER SPECIFIED INTERVAL** to **7**.
 
-   ![Set cleanup to repeat weekly](media/talent-batch-history-recurrence-pattern.png)
+   ![Set cleanup to repeat weekly](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 6. Select **OK**.
 
