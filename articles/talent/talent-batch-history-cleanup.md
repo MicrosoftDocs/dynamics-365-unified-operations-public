@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Resolve performance issues with Microsoft Dynamics 365 Talent by cleaning up the batch job history
-description: This topic explains how to resolve performance issues with Microsoft Dynamics 365 Talent by cleaning up the batch job history.
+title: Resolve performance issues with Microsoft Dynamics 365 Talent caused by batch job history
+description: This topic explains how to resolve some performance issues with Microsoft Dynamics 365 Talent by cleaning up the batch job history.
 author: andreabichsel
 manager: AnnBe
 ms.date: 09/23/2019
@@ -29,21 +29,21 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Resolve performance issues by cleaning up the batch job history
+# Resolve performance issues caused by batch job history
 
 [!include [banner](../includes/banner.md)]
 
 **Issue**
 
-You're experiencing performance issues with Microsoft Dynamics 365 Talent.
+Customers who retain a large batch job history might experience performance issues with Microsoft Dynamics 365 Talent.
 
 **Cause**
 
-Excessive batch job history can cause performance issues.
+Batch jobs that run frequently can lead to unsustainable growth of the batch job history. This can cause performance issues. 
 
 **Resolution**
 
-Clean up your batch job history. We recommend cleaning up your batch job history weekly, but you might need to run it more or less frequently, depending on your environment. Likewise, the following procedure contains our recommended settings, but you can change these depending on your needs.
+Clean up your batch job history. We recommend cleaning up your batch job history weekly, but you might need to run the cleanup more or less frequently, depending on your environment. Likewise, the following procedure contains our recommended settings, but you can change these depending on your needs.
 
 1. In Talent, select **System administration**.
 
