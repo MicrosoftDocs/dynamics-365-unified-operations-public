@@ -90,146 +90,72 @@ There is a sample in the Retail SDK on how to extend the notification service (*
 3. Inside the project there is a class file called **NotificationExtensionService.cs**. Open the file.
 4. **GetNotificationsExtensionServiceRequest** class is overridden to add custom notification. Override the **GetNotificationsExtensionServiceRequest** and return the **GetNotificationsExtensionServiceResponse**.
 5. Either create a new class and override the **GetNotificationsExtensionServiceRequest** or use the sample template. The following steps assume that the template is used:
-6. In the NotificationExtensionService class, there is a method called Process, inside the method the code checks the operation id and based on the operation id and creates notification details object and add the notifications if any. Check if it's custom operation id then write logic to check is there any notification if so create a notification object with the details and return it with the response. Then POS will parse the response and show the notification.
+6. In the **NotificationExtensionService** class, there is a method names **Process**. Inside the method the code checks the operation ID and based on the operation ID it creates notification details object and adds any notifications. Check if it's custom operation ID and then write logic to check is there are any notification. If so, then create a notification object with the details and return it with the response. Then POS will parse the response and show the notification.
+    > [!NOTE]
+    > Remove the sample implementation inside the process method and just keep the custom logic.
 
-    **Note:** Remove the sample implementation inside the process method and just keep the custom logic.
-
-    Ex:
-```C#
- /**
-
- * SAMPLE CODE NOTICE
- *
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
-
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
-
-* THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
-
-* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
-
- */
-
- namespace Contoso
-
- {
-
- namespace Commerce.Runtime.NotificationSample
-
- {
-
- using System;
-
- using Microsoft.Dynamics.Commerce.Runtime;
-
- using Microsoft.Dynamics.Commerce.Runtime.DataModel;
-
- using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
-
- /// <summary>
-
- /// Service class responsible executing the service requests.
-
- /// </summary>
-
- public class NotificationExtensionService : SingleRequestHandler<GetNotificationsExtensionServiceRequest, GetNotificationsExtensionServiceResponse>
-
- {
-
- /// <summary>
-
- /// The handler for the <c>GetNotificationsExtensionServiceRequest</c> request.
-
- /// </summary>
-
- /// <param name="request">The request with the operation.</param>
-
- /// <returns>The notification details for the operation.</returns>
-
- protected override GetNotificationsExtensionServiceResponse Process(GetNotificationsExtensionServiceRequest request)
-
- {
-
- ThrowIf.Null(request, "request");
-
- NotificationDetailCollection details = new NotificationDetailCollection();
-
- DateTimeOffset lastNotificationDateTime = DateTimeOffset.Now;
-
- string myOperationId = "5000";
-
- // do the actual work here
-
- if ((request.SubscribedOperation).ToString() == myOperationId)
-
- {
-
- NotificationDetail detail = new NotificationDetail()
-
- {
-
- // Text which will display for the notification detail in the POS notification center
-
- DisplayText = "Custom notification",
-
- // Number of notifications found
-
- ItemCount = 1,
-
- // Timestamp of creation of latest notification item (Used to determine whether notification is new)
-
- LastUpdatedDateTime = lastNotificationDateTime,
-
- // Boolean value representing whether the attempt to get notifications for the given operation was successful
-
- IsSuccess = true,
-
- // If you would like POS to navigate to a specific action property for the given operation
-
- // when the notification tile is clicked, define the action property as well.
-
- ActionProperty = "1"
-
- };
-
- details.Add(detail);
-
- }
-
- var serviceResponse = new GetNotificationsExtensionServiceResponse(details);
-
- return serviceResponse;
-
- }
-
- }
-
- }
-
+```csharp
+namespace Contoso
+{
+    namespace Commerce.Runtime.NotificationSample
+    {
+        using System;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+        /// <summary>
+        /// Service class responsible executing the service requests.
+        /// </summary>
+        public class NotificationExtensionService : SingleRequestHandler<GetNotificationsExtensionServiceRequest, GetNotificationsExtensionServiceResponse>
+        {
+            /// <summary>
+            /// The handler for the <c>GetNotificationsExtensionServiceRequest</c> request.
+            /// </summary>
+            /// <param name="request">The request with the operation.</param>
+            /// <returns>The notification details for the operation.</returns>
+            protected override GetNotificationsExtensionServiceResponse Process(GetNotificationsExtensionServiceRequest request)
+            {
+                ThrowIf.Null(request, "request");
+                NotificationDetailCollection details = new NotificationDetailCollection();
+                DateTimeOffset lastNotificationDateTime = DateTimeOffset.Now;
+                string myOperationId = "5000";
+                // do the actual work here
+                if ((request.SubscribedOperation).ToString() == myOperationId)
+                {
+                    NotificationDetail detail = new NotificationDetail()
+                    {
+                    // Text which will display for the notification detail in the POS notification center
+                    DisplayText = "Custom notification",
+                    // Number of notifications found
+                    ItemCount = 1,
+                    // Timestamp of creation of latest notification item (Used to determine whether notification is new)
+                    LastUpdatedDateTime = lastNotificationDateTime,
+                    // Boolean value representing whether the attempt to get notifications for the given operation was successful
+                    IsSuccess = true,
+                    // If you would like POS to navigate to a specific action property for the given operation
+                    // when the notification tile is clicked, define the action property as well.
+                    ActionProperty = "1"
+                    };
+                details.Add(detail);
+                }
+                var serviceResponse = new GetNotificationsExtensionServiceResponse(details);
+                return serviceResponse;
+            }
+        }
+    }
 }
 ```
-7.  Once done with the changes build the project and drop the output library in
+7. Once done with the changes build the project and drop the output library in **\RetailServer\webroot\bin\Ext**.
+8. Register the output library in **CommerceRuntime.Ext.config**.
+9. Create a new operation in POS with the same operation ID used in the CRT extension. In this example, it is **5000**. Use any operation ID greater than 5000.
+    When the user clicks the notification tile, the POS framework calls the operation handler for the operation id used. Inside the handler, add required logic for what should happen when the POS user clicks the notification. For instructions on how to create a POS  operation request, response, and handler, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations).
+    > [!NOTE]
+    > The action property in the Notification detail entity will be sent to the POS operation request, use that action property to pass any custom information from the notification service to POS.
+10. Configure the notification scheduler according to the instructions in [Show order notifications in the point of sale (POS)](../notifications-pos>
 
-    \RetailServer\webroot\bin\Ext
+## Validate the customization
 
-8.  Register the output library in CommerceRuntime.Ext.config.
-
-9.  Next step is to create a new operation in POS with the same operation id used in the CRT extension in this case its “*5000*”. Use any operation id greater than 5000.
-
- When the user clicks the notification tile, the POS framework will call the operation handler for the operation id used, inside the handler add required logic on what should happen when the POS user clicks the notification. Check this link for how to create a POS  operation request, response and handler for POS: <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/add-pos-operations>
-
- **Note:** The action property in the Notification detail entity will be sent to the POS operation request, use that action property to pass any custom information from the notification service to POS.
-10.  Configure the notification scheduler by following the steps in the below link:
-     <https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/notifications-pos>
-
-**Validate the customization:**
-
-<!-- -->
-
-1.  Launch the extended Cloud POS or Modern POS.
-
-2.  POS should trigger the notification service based on your notification scheduler configuration.
-
-3.  Debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should hit whenever the notification service is called from POS.
-
-4.  When the notification received in POS, click the notification it should then call the POS operation handler and execute the custom logic written inside the handler.
+1. Launch the extended Cloud POS or Modern POS.
+2. POS triggers the notification service based on your notification scheduler configuration.
+3. Debug the CRT code by attaching the CRT project to w3wp.exe. The breakpoint should hit whenever the notification service is called from POS.
+4. When the notification received in POS, click the notification. It should call the POS operation handler and execute the custom logic written inside the handler.
