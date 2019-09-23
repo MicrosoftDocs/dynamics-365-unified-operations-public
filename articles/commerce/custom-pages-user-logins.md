@@ -48,6 +48,8 @@ pTo use custom pages authored in Commerce to handle user login flows, you will n
 
 Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure Portal, select the "User flows (policies) menu under the "Policies" section in the left navigation pane. 
 
+The following image show the (lorem ipsum).   
+
 ![B2C Custom Policies Menu](./media/B2C_CustomPage_PoliciesMenu.png)
 
 The 'Sign up and sign in', 'Profile editing', and 'Password reset' flows can be configured as follows.
@@ -59,18 +61,23 @@ To configure the sign up and sign in flow, do the following.
 - Select the "New user flow" button and choose the **Sign up and sign in** policy under the Recommended section.
 - Name your policy (ex: B2C_1_SignInSignUp). 
 
-**<u>Note</u>**: The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Dynamics 365 Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly named policy by submitting the new policy name with a service request.
+>[!NOTE]
+> The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Dynamics 365 Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly named policy by submitting the new policy name with a service request.
 
 - Choose the Identity Providers utilized for the policy (ex: Email signup). Email signup must be chosen at minimum.
 - Select the following attributes and claims for the Sign in and sign up policy:
   - Collect Attributes: Email Address, Given Name, Surname
   - Return Claims: Email addresse**s**, Given Name, Identity Provider, Surname, User's Object ID
+  
+The following image show the (lorem ipsum).   
 
 ![Sign Up Sign In Claims](./media/B2C_SignInSignUp_Attributes.png)
 
 - Click "Create" to create the policy.
 - Select this newly created policy and double-click to update its configurations.
 - Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
+
+The following image show the (lorem ipsum).   
 
 ![Sign Up Sign In Enable Javascript]./media/B2C_SignInSignUp_EnableJavascript.png)
 
@@ -86,6 +93,8 @@ To configure the profile editing flow, do the following.
 - Select the following attributes and claims for the Profile editing policy:
   - Collect Attributes: Email Addresse**s**, Surname
   - Return claim: Email Addresse**s**, Given Name, Identity Provider, Surname, User's Object ID
+  
+The following image show the (lorem ipsum).   
 
 ![Profile edit Claims](./media/B2C_ProfileEdit_Attributes.png)
 
@@ -101,12 +110,16 @@ To configure the password reset flow, do the following.
 
 - Select the "New user flow" button and choose the **Password reset v1.1** policy under the **<u>Preview</u>** section.
 
+The following image show the (lorem ipsum).   
+
  ![Password Reset v1.1 menu](./media/B2C_ForgetPassword_Menu.png)
 
 - Name your policy (ex: B2C_1_ForgetPassword). 
 - Select "Reset password using email address" under Identity Providers section
 - Select the following claims for the Profile editing policy:
   - Return claim: Email Addresse**s**, Given Name, Surname, User's Object ID
+
+The following image show the (lorem ipsum).   
 
 ![Password Reset Claims](./media/B2C_ForgetPassword_Attributes.png)
 
@@ -125,14 +138,20 @@ Build out 5 Templates and Pages total as follows:
 - A 'Sign In' template and page using the 'Sign in' module.
 - A 'Sign Up' template and page using the 'Sign up' module.
 
+The following image show the (lorem ipsum).   
+
 ![Sign In Sign Up Modules](./media/B2C_SignInSignUp_Module.png)
 
 - A 'Password Reset' template and page using the 'Password reset' module.
 - A 'Password Reset verification' template and page using the 'Password reset verification' module.
 
+The following image show the (lorem ipsum).   
+
 ![Password Reset Module](./media/B2C_PasswordReset_Modules.png)
 
 - A 'Profile Edit' template and page using the 'Account profile edit' module
+
+The following image show the (lorem ipsum).   
 
 ![Profile edit Module](./media/B2C_ProfileEdit_Module.png)
 
@@ -143,8 +162,6 @@ When building the pages:
 - Publish all pages and URLs to utilize in the AAD B2C setup.
 
 Once published, collect the URLs to use in the AAD B2C Policy remaining setup. Each URL will be used with a "?preloadscripts=true" suffix added.
-
-
 
 ## Set up custom pages in the AAD B2C policies
 
