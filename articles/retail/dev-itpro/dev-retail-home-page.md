@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This page lists the resources that are available for IT pros and developers who support Retail.
 
 ## Retail components and architecture
--   [Components of Dynamics 365 for Retail](../retail-components.md)
+-   [Components of Dynamics 365 Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)

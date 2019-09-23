@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Implement Finance and Operations Retail projects
-description: This topic describes recommended practices for Microsoft Dynamics 365 for Retail implementation projects.
+title: Implement Retail projects
+description: This topic describes recommended practices for Microsoft Dynamics 365 Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Implement Finance and Operations Retail projects
+# Implement Retail projects
 
 [!include [banner](../../includes/banner.md)]
 

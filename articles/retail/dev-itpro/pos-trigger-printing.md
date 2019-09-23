@@ -38,6 +38,7 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable.
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
+
 The following table lists the available triggers and denotes whether they can be cancelled.
 
 ## Application triggers
@@ -393,7 +394,9 @@ To implement this scenario, you must complete these steps.
 
 ## Override the CRT receipt request to generate the receipt data
 
+
 This section explains how to override the existing CRT request to print a receipt for suspended transactions. 
+
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).

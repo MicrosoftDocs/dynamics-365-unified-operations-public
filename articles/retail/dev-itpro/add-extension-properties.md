@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This tutorial shows how to use extension properties to extend an entity. 
 
-In this tutorial, an entity is extended in Microsoft 365 for Retail, and persisted in both Retail and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
+In this tutorial, an entity is extended in Microsoft 365 Retail, and persisted in both Retail and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
 
 Create a new Dynamics AX project
 --------------------------------
@@ -82,7 +82,7 @@ Create a new Dynamics AX project
 
 7.  Save all your changes, and build your project again.
 8.  Run **iisreset**.
-9.  In Dynamics 365 for Retail, go to **Accounts receivable** &gt; **Common** &gt; **Customers** &gt; **All customers**.
+9.  In Dynamics 365 Retail, go to **Accounts receivable** &gt; **Common** &gt; **Customers** &gt; **All customers**.
 10. Edit a customer record. On the **Retail** FastTab, select the **Email Opt In** check box, and then save your change.
 
 ## Customize the existing RetailTransactionService class so that it handles the new data correctly
@@ -194,7 +194,7 @@ Create a new Dynamics AX project
 4.  Compile the project.
 
 ## Configure CDX to sync the new table
-1.  In Dynamics 365 for Retail, go to **Retail** &gt; **Setup** &gt; **Retail scheduler** &gt; **Retail channel** **schema**, and edit the channel schema by adding a new table:
+1.  In Dynamics 365 Retail, go to **Retail** &gt; **Setup** &gt; **Retail scheduler** &gt; **Retail channel** **schema**, and edit the channel schema by adding a new table:
     1.  Click **Channel tables**, and then click **New**.
     2.  Name the table **ax.RetailCustPreference**, and save it.
     3.  Add the following fields: **ACCOUNTNUM**, **DATAAREAID**, **EMAILOPTIN**, and **RECID**.

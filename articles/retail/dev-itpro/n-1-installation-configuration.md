@@ -2,7 +2,7 @@
 # required metadata
 
 title: Phased Rollout (N-1) installation, configuration, and cutover guide
-description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 for Retail headquarters.
+description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 Retail headquarters.
 author: jashanno
 manager: AnnBe
 ms.date: 07/31/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Retail Server, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 for Retail headquarters.
+This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Retail Server, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Retail headquarters.
 
 ## Key terms
 | Term | Description |
@@ -57,7 +57,7 @@ The following illustration shows a high-level overview of the N-1 setup.
 ![Phased Rollout (N-1) architecture](media/CDX/N-1/Overview.jpg)
 
 ## Verify that the N-1 license key is turned on
-Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 R3 to Microsoft Dynamics 365 for Retail. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
+Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 R3 to Microsoft Dynamics 365 Retail. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
 
 1. Sign in to Retail headquarters, and go to **System administration \> Setup \> License configuration**.
 2. On the **Configuration keys** tab, expand the **Retail** key, expand the **Retail scheduler** key, and verify that the check box for the **Retail Data Commerce Exchange backward compatibility** key is selected.
@@ -288,8 +288,8 @@ Follow these steps to prepare your environment for the cutover.
 
 | Step | Details | Timeline |
 |---|---|---|
-| 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 for Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
-| 2. Install the Microsoft Dynamics 365 for Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
+| 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
+| 2. Install the Microsoft Dynamics 365 Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
 | 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover |
 | 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
 | 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
@@ -394,7 +394,7 @@ This section describes troubleshooting steps for errors that you might encounter
 ## Required KBs for N-1
 The following list describes all the KBs that are required for N-1 to work correctly.
 
-### Dynamics 365 for Retail – Microsoft Dynamics 365 7.2 headquarters
+### Dynamics 365 Retail – Microsoft Dynamics 365 7.2 headquarters
 | KB number | Title |
 |---|---|
 | 4095190 | Expose RetailSharedParameter's TransactionServiceProfileID in the RetailSharedParameters form as it is required to enable N-1 functionality when customer did not follow th official upgrade process to move data from 6.3 to D365 |

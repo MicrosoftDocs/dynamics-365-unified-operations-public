@@ -34,7 +34,9 @@ ms.dyn365.ops.version: AX 7.3.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this topic doesn’t provide detailed instructions of every step in the process. 
+This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this topic doesn’t provide detailed instructions of every step in the process. This topic is applicable for Dynamics 365 Retail and Dynamics 365 Finance.
+
+
 The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like Azure DevOps or Git.
 
 ## Update the Retail SDK

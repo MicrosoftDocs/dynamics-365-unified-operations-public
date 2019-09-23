@@ -3,7 +3,7 @@
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for Retail projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 for Retail implementation projects.
+description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Most environments for Microsoft Dynamics 365 for Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Microsoft Dynamics 365 Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Development Tier 1 environments
 

@@ -34,6 +34,8 @@ ms.dyn365.ops.version: 8.0.1
 
 This topic explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Retail server or Commerce Runtime Services (CRT). You can also add custom error messages for Retail server or CRT in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
 
+
+
 ## Retail POS labels and messages (error, warning, and information)
 
 This section explains how to modify POS UI labels and POS messages by overriding the default strings.

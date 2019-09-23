@@ -35,6 +35,7 @@ ms.dyn365.ops.version: AX 10.0.1
 
 
 
+
 In the **Settings** view in the point of sale (POS), the **Extension packages** section shows the list of POS extension packages that are included as part of the core POS. The tile for each package shows the status of that package. The package status indicates whether the extension was loaded, could not be loaded, or was skipped.
 
 ## Extension package status

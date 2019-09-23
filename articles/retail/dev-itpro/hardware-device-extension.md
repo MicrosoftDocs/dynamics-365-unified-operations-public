@@ -32,7 +32,9 @@ ms.dyn365.ops.version: AX 7.3.0, Retail July 2017 update
 
 # Integrate POS with a new hardware device
 
+
 This topic explains how to integrate POS with a new hardware device. 
+
 
 To call Hardware station from POS you need to use a request and a response:
 
