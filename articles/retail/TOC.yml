@@ -653,7 +653,9 @@
     - name: Configure retail workers
       href: tasks/worker.md
   - name: Retail development and administration
-    href: dev-itpro/dev-retail-home-page.md
+    items:
+    - name: Retail development and administration overview
+      href: dev-itpro/dev-retail-home-page.md
     - name: Retail SDK architecture
       href: dev-itpro/retail-sdk/retail-sdk-overview.md
     - name: Upcoming changes in the Retail SDK
