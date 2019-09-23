@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add CDN support
-description: This topic describes how to add your content delivery network (CDN) to the Dynamics 365 Commerce environment.
+description: This topic describes how to add a content delivery network (CDN) to your Dynamics 365 Commerce environment.
 author: brianshook
 manager: annbe
 ms.date: 10/01/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add your content delivery network (CDN) to the Dynamics 365 Commerce environment.
+This topic describes how to add a content delivery network (CDN) to your Dynamics 365 Commerce environment.
 
 ## Overview
 
@@ -54,7 +54,7 @@ To ensure that SSL is set up and statics are cached, you must configure your CDN
 
 `/_msdyn365/_scnr/&#42;`
 
-Once you have provisioned your Commerce environment with the custom domain provided (or provided the custom domain for your environment using a service request), point the custom domain to the Commerce-generated hostname or endpoint (ex: format <e-commerce-tenant-name>.commerce.dynamics.com).
+Once you have provisioned your Commerce environment with the custom domain provided (or provided the custom domain for your environment using a service request), point your custom domain to the Commerce-generated hostname or endpoint.
 
 As noted, the generated hostname or endpoint will only support an SSL certificate for &#42;.commerce.dynamics.com; it will not support SSL for custom domains.
 
@@ -85,12 +85,9 @@ The documented Azure Front Door setup steps can be found at https://docs.microso
 To configure a backend pool in Commerce, do the following.
 
 1. Add <ecom-tenant-name>.commerce.dynamics.com to a backend pool as a custom host (empty backend host header).
-1. Set up a Health Probe as ''/keepalive' with intervals of 255 seconds.
-1. Use the default values in the Load Balancing section.
-
-The following image shows the Commerce backend configuration screen.
-
-![CDN Add A Backend](/articles/commerce/media/CDN_BackendPool_Setup.png "CDN Add A Backend")
+1. In the **Path** box under **HEALTH PROBES**, enter **/keepalive**
+1. In the **Intervals (seconds)** box, enter **255**.
+1. Under **LOAD BALANCING**, use the default values.
 
 The following image shows the Commerce **Add a backend pool** screen.
 
@@ -112,25 +109,23 @@ To set up a routing rule in Commerce, do the following.
 
 To set up a caching rule in Commerce, do the following.
 
-1. Name the rule 'statics'
-1. Set Accepted protocol to 'HTTP and HTTPS'
-1. Set frontend hosts to 'dynamics-ecom-tenant-name.azurefd.net'
-1. Patterns to Match set to '/_msdyn365/_scnr/*'
-1. Route Details, set Route type to "Forward"
-1. Set Backend pool to 'ecom-backend'
-1. Select "Match request" for Forwarding protocol
-1. Set URL rewrite to 'Disabled'
-1. Set Caching to 'Enabled'
-1. Query string caching behavior set to "Cache every unique URL"
-1. Dynamic compression to 'Enabled'
+1. In the **Name** box, enter **statics**.
+1. In the **Accepted protocol** drop-down list, select **HTTP and HTTPS**.
+1. In the **Frontend hosts** box, enter **dynamics-ecom-tenant-name.azurefd.net**.
+1. In the first box under **PATTERNS TO MATCH**, enter **/_msdyn365/_scnr/&#42;**.
+1. For **Route type** under **Route Details**, select **Forward**.
+1. In the **Backend pool**  drop-down list, select **ecom-backend**.
+1. For **Forwarding protocol**, select **Match request**.
+1. For **URL rewrite**, select **Disabled**.
+1. For **Caching**, select **Disabled**.
+1. In the **Query string caching behavior** drop-down list, select **Cache every unique URL**.
+1. For **Dynamic compression**, select **Enabled**.
 
 The following image shows the Commerce **Add a rule** screen.
 
 ![CDN Add A Caching Rule](/articles/commerce/media/CDN_CachingRule.png)
 
-After this initial configuration is deployed, add custom domain to this Azure Front Door configuration.
-
-To add the custom domain (ex: www.fabrikam.com), you need to configure a CNAME for the domain.
+After this initial configuration is deployed, you must add your custom domain to the Azure Front Door configuration. To add the custom domain (for example, www.fabrikam.com), you need to configure a CNAME for the domain.
 
 The following image shows the Commerce **CNAME configuration** screen.
 
@@ -139,7 +134,7 @@ The following image shows the Commerce **CNAME configuration** screen.
 >[!NOTE]
 > If the domain to be used is already active and live, please reach out to support for enabling this domain with Azure Front Door to set up a test.
 
-You can choose to use Azure Front Door's to manage the certificate, or use your own certificate for the custom domain.
+You can choose to use Azure Front Door to manage the certificate, or use your own certificate for the custom domain.
 
 The following image shows the Commerce **Custom Domain HTTPS** screen.
 
