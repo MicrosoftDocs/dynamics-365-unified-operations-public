@@ -62,7 +62,7 @@ Be aware that Microsoft also provides a standard feature that lets you restore a
 Use Remote Desktop to connect to all the computers in the environment, and stop the following Windows services by using services.msc. These services will have open connections to the database.
 
 - World wide web publishing service (on all AOS computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+- Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
 ### Import the .bacpac file
@@ -179,7 +179,7 @@ DEALLOCATE retail_ftx;
 1. Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the database. After you stop the services, you can replace the existing Finance and Operations database with the newly imported database.
 
     - World wide web publishing service (on all AOS computers)
-    - Microsoft Dynamics 365 for Finance and Operations Batch Management service (on non-private AOS computers only)
+    - Batch Management service (on non-private AOS computers only)
     - Management Reporter 2012 Process service (on business intelligence \[BI\] computers only)
 
 2. On the AOS computer where the bacpac import was performed, run the following script in Management Studio. This script renames the original database and then renames the newly imported database so that it uses the original database name. In this example, the original database was named axdb\_123456789, and the newly imported database was named importeddb.
@@ -203,7 +203,7 @@ DEALLOCATE retail_ftx;
 4. Use services.msc to restart the services that you stopped earlier:
 
     - World wide web publishing service (on all AOS computers)
-    - Microsoft Dynamics 365 for Finance and Operations Batch Management service (on non-private AOS computers only)
+    - Batch Management service (on non-private AOS computers only)
     - Management Reporter 2012 Process service (on BI computers only)
 
 5. At this point, you can open the application URL and sign in. Verify that the application works as you expect. Then drop the original database by running the following script in Management Studio on the AOS computer where you performed the bacpac import.
