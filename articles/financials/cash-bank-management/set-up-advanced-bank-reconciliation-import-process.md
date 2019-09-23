@@ -38,6 +38,27 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 
 The setup for bank statement import varies, depending on the format of your electronic bank statement. Finance and Operations supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.
 
+## Set time zone preference
+When you configure the bank statement import settings, it can be important to consider the time zone of the date-time data within the bank statement files that will be imported. The default is to assume any date and time values are already in Coordinated Universal Time (UTC) and so no time zone conversion will be applied when you import the data. 
+
+There is an option available to specify a time zone to use for importing data. This option is availble in the **Time zone preference** field on each **Source data format details** page (**Data management workspace > Configure data sources > Select a data format > Regional settings** FastTab). This time zone preference you enter will apply to all the imports that use that source data format. You can create as many data source formats as needed for importing data from multiple time zones. The time zone preference should be the local time zone of the date and time data in the import file. The time zone preference should be the local time zone of the date-time data in the import file. 
+
+This time zone might not be the same as a user’s or company’s time zone, so be sure to clarify what time zone the date and time data is using. We recommend that you consider the following points when setting a time zone preference. 
+
+ - The time zone preference will apply to all imports using that source data format. You can create as many data source formats as needed to handle importing data from multiple time zones. 
+ 
+ - The time zone preference should be the local time zone of the date and time data in the import file. 
+ 
+ - The time zone of the date and time data might not be the same as a user’s or company’s time zone.
+ 
+ - Users can adjust their own time zone using their **User options**.
+
+Note that the following actions can help minimize potential date and time conflicts when you import bank statements. 
+
+ - Avoid changing the time zone preferences for any bank accounts that have already had statements imported. Changing the time zone preference could impact the ordering of new statements relative to existing statements due to the time zone adjustment. 
+ 
+ - Review all the imports that use the selected data source format. The time zone preference specified for the format will apply to all the import projects that use that format. Verify that the time zone preference is appropriate for all the import projects that use that format.
+
 ## Sample files
 For all three formats, you must have files that translate the electronic bank statement from the original format to a format that Finance and Operations can use. You can find the required resource files under the **Resources** node in Application Explorer in Microsoft Visual Studio. After you find the files, copy them to a single known location, so that you can more easily upload them during the setup process.
 
