@@ -5,7 +5,7 @@ title: Synchronize project contracts and projects directly from Project Service 
 description: This topic describes the template and underlying tasks that are used to synchronize project contracts and projects directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 for Finance and Operations.
 author: KimANelson
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -54,9 +54,21 @@ The following illustration shows how the data is synchronized between Project Se
 
 To access the available templates, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
+The following templates and underlying tasks are used to synchronize project contracts and projects from Project Service Automation to Finance and Operations:
 
+### Integrating with Dynamics 365 Project Service Automation v2.x
 - **Name of the template in Data integration:** Projects and contracts (PSA to Fin and Ops)
+- **Name of the tasks in the project:**
+
+    - Project contracts PSA to Fin and Ops
+    - Projects PSA to Fin and Ops
+    - Project contract lines PSA to Fin and Ops
+    - Project contract line milestones PSA to Fin and Ops
+  
+### Integrating with Dynamics 365 Project Service Automation v3.x
+There is a schema change in Project Service Automation that impacts the Project contract line milestone template and use of the v2 version of the template is required to integrate Project Service Automation v3.x with Dynamics.
+
+- **Name of the template in Data integration:** Projects and Contracts (PSA 3.x to Fin and Ops) - v2
 - **Name of the tasks in the project:**
 
     - Project contracts PSA to Fin and Ops
@@ -140,3 +152,7 @@ The following illustrations show examples of the template task mappings in Data 
 [![Template mapping](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Template mapping](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
+
+#### Project contract line milestone mapping in the Projects and Contracts (PSA 3.x to Dynamics) - v2 template:
+
+[![Template mapping](./media/ProjectContractLineMilestoneMapping_v2.jpg)](./media/ProjectContractLineMilestoneMapping_v2.jpg)

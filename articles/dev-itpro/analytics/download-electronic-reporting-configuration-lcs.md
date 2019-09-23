@@ -38,7 +38,7 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 
 This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 
-1. Sign in to Finance and Operations by using one of the following roles:
+1. Sign in to the application by using one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -66,10 +66,10 @@ This tutorial guides you through the process of downloading the newest version o
 
 7. In the configurations tree in the left pane, select the ER configuration that you require.
 8. On the **Versions** FastTab, select the required version of the selected ER configuration.
-9. Click **Import** to download the selected version from LCS to the current Finance and Operations instance.
+9. Click **Import** to download the selected version from LCS to the current instance.
 
     > [!NOTE]
-    > The **Import** button is unavailable for ER configuration versions that are already present in the current Finance and Operations instance.
+    > The **Import** button is unavailable for ER configuration versions that are already present in the current instance.
 
     [![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using metadata in Dynamics 365 for Finance and Operations. Application metadata will be accessed online by using the RCS connected application. Sample ER model mapping will be configured to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md). If you have not completed the steps in the topic, [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md), go to the [Electronic reporting examples page](https://go.microsoft.com/fwlink/?linkid=862266) to download and save the following ER configurations: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, and then complete the steps in the procedure.
+The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations. Application metadata will be accessed online by using the RCS connected application. Sample ER model mapping will be configured to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md). If you have not completed the steps in the topic, [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md), go to the [Electronic reporting examples page](https://go.microsoft.com/fwlink/?linkid=862266) to download and save the following ER configurations: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, and then complete the steps in the procedure.
 
 ## Prerequisites
 1. Go to **All workspaces** > **Electronic reporting**. 
@@ -52,7 +52,7 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 13. Click **Browse** and select the **Foreign trade mapping.xml** file. 
 14. Click **OK**. 
 
-## Register connected Dynamics 365 for Finance and Operations application
+## Register a connected application
 1. Close the page. 
 2. Close the page. 
 3. Go to **All workspaces** > **Electronic reporting**. 

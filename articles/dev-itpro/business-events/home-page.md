@@ -5,7 +5,7 @@ title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,32 +29,31 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events overview
 
 [!include[banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
-In Finance and Operations, a business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios. 
+A business action that a user performs can be either a workflow action or a non-workflow action. Approval of a purchase requisition is an example of a workflow action, whereas confirmation of a purchase order is an example of a non-workflow action. Both types of actions can generate business events that external systems can use in integration and notification scenarios. 
 
 ## Prerequisites
 
 Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
-> Business events must not be considered a mechanism for exporting data out of Finance and Operations. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
+> Business events must not be considered a mechanism for exporting data. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
 
-## Business events that are implemented in Finance and Operations
+## Business events that are implemented
 
-In Finance and Operations, business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md), and [Alerts as business events](alerts-business-events.md).
+Business events are implemented in some business processes out of the box. These business events include both workflow and non-workflow business events. For more information, see [Application business events](app-business-events.md), [Workflow business events](business-events-workflow.md), and [Alerts as business events](alerts-business-events.md).
 
 A developer must use extensions to implement new business events. For more information, see [Business events developer documentation](business-events-dev-doc.md).
 
 ## Business event catalog
 
-The business events catalog can be accessed from **System administration > Set up > Business events**. The business event catalog lists the business events that are available in the instance of Finance and Operations that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
+The business events catalog can be accessed from **System administration > Set up > Business events**. The business event catalog lists the business events that are available in the instance that you're using. The catalog is useful because it shows which business events are available, and you can filter it by category, business event ID, and name.
 
-The category of a business event identifies its source in Finance and Operations. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
+The category of a business event identifies its source. Business events that originate from the workflow system are assigned to the **Workflow** category. For business events that originate from other modules, the module name is used as the category name. 
 
 The business event catalog is built during database synchronization at the time of deployment. Therefore, users should see the complete list of business events in the catalog. However, if an explicit update of the catalog is required, you can select **Manage \> Rebuild business events catalog**.
 
@@ -69,13 +68,13 @@ In summary, the business event catalog helps identify the business events that a
 The next step is to manage the endpoints.
 
 ## Business events processing
-Finance and Operations allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
+The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter in the business events parameter table, which is turned off by default to indicate that manual batch job will not be effective by default.
+The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter BATCHENABLED in the business events parameter table, which is set to 0 (off) by default to indicate that manual batch job will not be effective by default. This must be set to 1 if the manual batch is being used as a workaround. For more information, see [Troubleshoot business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/troubleshooting).
 
 ## Managing endpoints
 
-Endpoints let you manage the destinations that Finance and Operations must send business events to. The following types of endpoints are currently supported. Therefore, endpoints can be created for these messaging and event brokers out of the box.
+Endpoints let you manage the destinations for sending business events to. The following types of endpoints are currently supported. Endpoints can be created for these messaging and event brokers out of the box.
 
 - Azure Service Bus Queue
 - Azure Service Bus Topic
@@ -88,7 +87,7 @@ Some scenarios might require multiple endpoints for organized distribution of bu
 
 The Azure-based endpoints must be in the customer's Azure subscription. For example, if Event Grid is used as an endpoint, the endpoint must be in the customer's Azure subscription.
 
-Finance and Operations doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
+The application doesn't provision the endpoints. It just sends events to the endpoints that are provided. Customer might incur additional costs if they use these endpoints in their Azure subscription.
 
 ![Business events endpoint](../media/businesseventsendpoint.png)
 

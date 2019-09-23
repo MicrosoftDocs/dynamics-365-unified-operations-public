@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Prepare application metadata to be used in RCS
-description: The steps in this topic explain how a user can create a new Electronic reporting (ER) configuration that contains Finance and Operations application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS).
+description: The steps in this topic explain how a user can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS).
 author: NickSelin
 manager: AnnBe 
 ms.date: 06/28/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 # Prepare application metadata to be used in RCS
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains Microsoft Dynamics 365 for Finance and Operations application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS). This configuration will be used for designing a sample ER model mapping configuration to access foreign trade transactions. In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company. To complete these steps, you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS). This configuration will be used for designing a sample ER model mapping configuration to access foreign trade transactions. In this example, you will create a configuration for sample company, Litware, Inc. These steps can be performed in any company. To complete these steps, you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 
 ## Prerequisites
 1.	Go to **Organization administration** > **Workspaces** > **Electronic reporting**. 
@@ -83,4 +83,4 @@ We added metadata information about the Intrastat table of records.
 2.	Click **Export as XML file**. 
 3.	Click **OK**. 
 	
-The created ER metadata configuration has been saved as XML file that can be imported to RCS and used as the source of information about metadata for the foreign trade business domain in Finance and Operations. Based on this information, we can specify the mapping between application metadata and ER data model.
+The created ER metadata configuration has been saved as XML file that can be imported to RCS and used as the source of information about metadata for the foreign trade business domain. Based on this information, we can specify the mapping between application metadata and ER data model.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security and role management in Attract
-description: This topic provides information about role security in Microsoft Dynamics 365 for Talent - Attract.
+description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/08/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
+Microsoft Dynamics 365 Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
 
 Attract provides five basic user roles:
 

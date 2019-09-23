@@ -48,7 +48,7 @@ The following illustration shows the parts of the Finance and Operations Help sy
 ## Connecting the Help system
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Microsoft Dynamics 365 for Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Microsoft Dynamics 365 Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 

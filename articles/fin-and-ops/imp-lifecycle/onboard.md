@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Onboard a Finance and Operations implementation project
-description: This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+title: Onboard an implementation project
+description: This topic describes how to onboard a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 08/22/2019
@@ -27,11 +27,11 @@ ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Onboard a Finance and Operations implementation project
+# Onboard an implementation project
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to onboard a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+This topic describes how to onboard a Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Microsoft 365 Admin Center
 
@@ -47,7 +47,7 @@ After your organization has purchased a subscription to Finance and Operations, 
 6. Accept and confirm any other prompts displayed to complete the Implementation Project provisioning.
 7. The Tenant Administrator is assigned the Project Owner security role in the provisioned Implementation Project.  
    > [!NOTE]
-   > If the Tenant Administrator will not be a participant in the Finance and Operations implementation, at least one additional Project Owner must be assigned to the implementation project.
+   > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 
    For an overview of LCS user management, including the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 

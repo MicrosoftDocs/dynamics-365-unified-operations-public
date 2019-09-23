@@ -34,12 +34,12 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-The Electronic reporting (ER) tool lets users define electronic format structures and then describe how those structures should be filled by using data and algorithms that exist in Dynamics 365 for Finance and Operations. For more information, see [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md). To specify the data flow for retrieving Finance and Operations data and using it to generate  an electronic document, you need to do the following:
+The Electronic reporting (ER) tool lets users define electronic format structures and then describe how those structures should be filled by using data and algorithms that exist in the application. For more information, see [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md). To specify the data flow for retrieving Finance and Operations data and using it to generate  an electronic document, you need to do the following:
 
 - Bind configured data sources to elements of the designed domain-specific data model. The model structure and selected data sources might be part of a complex hierarchical structure. Because of this, final bindings can be quite large and contain many elements of different types (for example, relations, tables, and methods,). The bindings can become less readable and quite complex to review and understand, especially for non-owners. 
 - Bind data model elements with format components to define what data will be populated from the data model to the generated format’s output.
 
-To improve usability of ER mapping designers, the relative path feature has been released. By default, the relative path representation option is turned on for any new instance of Finance and Operations where ER design experience is enabled (Microsoft Dynamics 365 for Finance and operations, Microsoft Regulatory Configuration Service). 
+To improve usability of ER mapping designers, the relative path feature has been released. By default, the relative path representation option is turned on for any new instance of the application where ER design experience is enabled (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). 
 We implemented the relative path parameter so that users can keep using the full path when work with this presentation of ER bindings.
 
 [![User parameters](./media/relative-path-01.png)](./media/relative-path-01.png)

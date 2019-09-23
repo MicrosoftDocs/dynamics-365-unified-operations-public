@@ -5,7 +5,7 @@ title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -116,6 +116,7 @@ The Finance and Operations applications represent the next-generation enterprise
 - [Customize App Suite reports using extensions](../analytics/customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
+- [How to resolve conflicts in Visual Studio (video)](https://youtu.be/4rxO0zUN2zU)
 - [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments

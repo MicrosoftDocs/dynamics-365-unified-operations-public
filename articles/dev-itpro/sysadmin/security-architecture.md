@@ -5,7 +5,7 @@ title: Security architecture
 description: This topic provides an overview of the security architecture of Microsoft Dynamics 365 for Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/13/2017
+ms.date: 08/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security architecture
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the security architecture of Dynamics 365 for Finance and Operations.
 
@@ -42,7 +43,7 @@ When you understand the security architecture of Finance and Operations, you can
 ## Authentication
 By default, only authenticated users who have user rights in Finance and Operations can establish a connection. 
 
-Finance and Operations uses Microsoft Azure Active Directory (AAD) as a primary identity provider. To access the system, users must be provisioned into a Finance and Operations instance and should have a valid AAD account in an authorized tenant.
+Finance and Operations uses Microsoft Azure Active Directory (Azure AD) as the primary identity provider. To access the system, users must be added to the Finance and Operations instance. If users are associated with a Finance and Operations license, the first time that they sign in, they are automatically added as system users who have no roles.
 
 ## Authorization
 Authorization is the control of access to the Finance and Operations program. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the Finance and Operations client. 

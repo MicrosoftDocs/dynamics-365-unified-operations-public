@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Change the date for a session
-description: This topic explains how to change the date for a session in Dynamics 365 for Finance and Operations.
+description: This topic explains how to change the date for a session.
 author: pvillads
 manager: AnnBe 
 ms.date: 07/31/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This topic explains how to change the date for a session in Dynamics 365 for Finance and Operations. By default, the current date is used when entering and posting journal entries or source documents. You can change the date that is used for your current session. Use this feature to back-date journal entries or source documents, as necessary.
+This topic explains how to change the date for a session. By default, the current date is used when entering and posting journal entries or source documents. You can change the date that is used for your current session. Use this feature to back-date journal entries or source documents, as necessary.
 
 1. In the navigation pane, go to **Modules > Common > Common > Session date and time**.
 2. In the **Date** field, enter a date.
