@@ -1,4 +1,5 @@
 - name: Welcome to Dynamics 365 Commerce (Preview)
+  href: index.md
   items:
   - name: Create a new e-Commerce site
     items:
