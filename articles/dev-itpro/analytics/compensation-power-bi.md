@@ -36,8 +36,8 @@ This topic describes the **Compensation** Microsoft Power BI content. It explain
 ## Accessing the Power BI content
 The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:
 
-- Finance and Operations
-- Microsoft Dynamics 365 for Talent
+- Finance and Operations apps
+- Microsoft Dynamics 365 Talent
 
 ## Reports that are included in the Power BI content
 The reports that are included in **Compensation** the Power BI content have both charts and tables that contain additional information. The following table describes the reports.

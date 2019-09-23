@@ -36,17 +36,18 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Finance and Operations apps, a vendor concept doesn't exist in all Dynamics 365 applications. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
+The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Finance and Operations apps, a vendor concept doesn't exist in other Dynamics 365 apps. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
 
 Integration of vendor data between Finance and Operations apps and other Dynamics 365 applications lets you multi-master the data. Regardless of where the vendor data originates, it's integrated behind the scenes across application boundaries and infrastructure differences. 
 
+
 ### Vendor data flow
 
-If you want to use Customer Engagement for vendor mastering, and you want to isolate vendor information from customer information, you can use the new vendor design.
+If you want to use other Dynamics 365 apps for vendor mastering, and you want to isolate vendor information from customer information, you can use the new vendor design.
 
 ![Vendor data flow](media/dual-write-vendor-data-flow.png)
 
-If you want to use Customer Engagement for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the vendor detail.
+If you want to use other Dynamics 365 apps for vendor mastering, and you want to continue to use the Account entity to store vendor information, you can use the new extended vendor design. In this design, extended vendor information, such as the vendor group and vendor posting profile, are stored in the vendor detail.
 
 ![Extended vendor data flow](media/dual-write-vendor-detail.jpg)
 
@@ -181,11 +182,12 @@ VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
 
 ## Contacts
 
-This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations apps and other Dynamics 365 applications. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
+This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations apps and other Dynamics 365 apps. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
 
 ## Vendor Groups
 
-This template synchronizes  vendor group information between Finance and Operations apps and other Dynamics 365 applications.
+This template synchronizes vendor group information between Finance and Operations app and other Dynamics 365 apps.
+>>>>>>> master
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
@@ -198,7 +200,7 @@ CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_
 
 ### Vendor Payment Method
 
-This template synchronizes vendor payment method information between Finance and Operations apps and other Dynamics 365 applications.
+This template synchronizes vendor payment method information between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
 

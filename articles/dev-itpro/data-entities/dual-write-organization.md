@@ -68,7 +68,7 @@ SETASDEFAULT | \>\> | msdyn\_setasdefault
 
 ## Internal Organization Hierarchy Type
 
-Tihs template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations apps to other Dynamics 365 applications.
+This template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations apps to other Dynamics 365 applications.
 
 <!-- ![architecture image](media/dual-write-type.png) -->
 
@@ -124,7 +124,7 @@ LEGALENTITYID | \> | msdyn\_companycode
 
 ## Company
 
-Provides bidirectional synchronization of legal entity (company) information between Dynamics 365 applications.
+Provides bidirectional synchronization of legal entity (company) information between Finance and Operations and other Dynamics 365 apps.
 
 <!-- ![architecture image](media/dual-write-company.png) -->
 
