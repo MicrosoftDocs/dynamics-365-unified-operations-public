@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
 
-This topic provides the detailed process for upgrading on-premises environments of Microsoft Dynamics 365 for Finance and Operations from version 7.x to 8.1.  
+This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 8.1.  
 
 ## On-premises upgrade from version 7.x (with Platform update 8-20) to 8.1
 
@@ -436,7 +436,7 @@ The parameters that can be passed to the script are:
 
 -   **-DatabaseName** - Database name that you want to upgrade.
 
--   **-DatabaseServer** - Database server containing Microsoft Dynamics 365 for Finance and Operations, on-premises database.
+-   **-DatabaseServer** - Database server containing Finance and Operations (on-premises) database.
 
 -   **-DatabaseUser** - Username for SQL Authentication.
 

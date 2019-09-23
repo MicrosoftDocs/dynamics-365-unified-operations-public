@@ -33,14 +33,14 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the steps required to update existing Dynamics 365 for Finance and Operations 8.0 environments to 10.0.X application releases.
+This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 
 ## Background
 
 Traditionally, moving to a newer application version has involved a rigorous upgrade that includes deployment of additional virtual machines, code upgrade, data upgrade, and scheduling several days in advance with the Microsoft Dynamics Service Engineering (DSE) team.  You will notice that we are making the uptake of the latest version simpler, and this will continue to improve over time.
 
 > [!NOTE]
-> We are supporting an update experience as compared to a full upgrade.  This is possible because there are **no Data Upgrade or Code Upgrade** steps between the 8.0 and 10.0.X application schema. The target environments will be updated just like you would apply a Platform update.
+> We are supporting an update experience as compared to a full upgrade. This is possible because there are **no Data Upgrade or Code Upgrade** steps between the 8.0 and 10.0.X application schema. The target environments will be updated just like you would apply a Platform update.
 
 The high-level process to update from version 8.0 to 10.0.X includes the following:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
-description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. 
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Finance and Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). [![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -60,7 +60,7 @@ As part of the code upgrade process, analysis services projects from the Applica
     > [!NOTE]
     > You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
 
-2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Finance and Operations.
+2.  Open Application Explorer. Go to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
 5.  Rename this measurement. Select **SalesCubeCopy** in Solution Explorer. Right-click and select **Rename**. Enter **SalesCubeV2** as the new name.
@@ -106,10 +106,10 @@ This step requires that you the install Power BI desktop tool that can be downlo
 6.  You will create a report that shows sales by state. Select **SalesCubeV2\_Customer** and **SalesCubeV2\_CustomerInvoices** from Navigator and click **Load**.
 7.  You will notice Power BI designer with **Fields** present in the entities that you have chosen (on the far right), as well as available visualization.
 
-### Create a surrogate key that links customers and invoices (applies to platform versions before November 2016 update)
+### Create a surrogate key that links customers and invoices (applies to Platform versions before November 2016 update)
 
 > [!NOTE]
-> You do not need to perform this step if you are working on the November 2016 release of the platform or later. Surrogate keys are generated in aggregate measurements staged into entity store. Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys). The **SalesCubeV2\_Customer** entity does not have a surrogate key (such as AX RecID) defined in it. Next, you will create a surrogate key that enables relating a customer entity to invoices.
+> Surrogate keys are generated in aggregate measurements staged into entity store. Power BI desktop does not enable you to relate table joins using multiple fields (also known as, composite keys). The **SalesCubeV2\_Customer** entity does not have a surrogate key (such as AX RecID) defined in it. Next, you will create a surrogate key that enables relating a customer entity to invoices.
 
 1.  Select the ellipsis (…) icon next to the **SalesCubeV2\_CustomerInvoices** entity. Right-click and select **New Column**.
 2.  Enter the following expression in the **Formula editor** window.
@@ -138,7 +138,7 @@ FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), Sal
 ### Relate invoices and customers
 
 > [!NOTE]
-> If you are on the November 2016 version of the platform or later, you can relate the surrogate keys already created within entity store. If not, you must relate the surrogate keys that you created manually. Next you will create a relationship between **SalesCubeV2\_CustomerInvoices** and **SalesCubeV2\_Customers** entities.
+> You can relate the surrogate keys already created within entity store. If not, you must relate the surrogate keys that you created manually. Next you will create a relationship between **SalesCubeV2\_CustomerInvoices** and **SalesCubeV2\_Customers** entities.
 
 1.  Click the **Manage Relationships** button on the Power BI ribbon. You will see the **Manage Relationships** dialog box. Click the **New** button.
 2.  In the **Create Relationship** dialog box, select **SalesCubeV2CustomerInvoices** as the first table in the drop-down list. Scroll to the right and select the **FKCustomer** field as the column to relate to.
@@ -182,7 +182,7 @@ Notice that the asset library enables adding **PowerBI report models** (PBIX fil
 
 ### Configure an LCS project
 
-If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations is able to consume assets within the project.
+If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations apps can consume assets within the project.
 
 1.  Launch the client from the instance that you want to use to deploy the Power BI reports. Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.
 2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**.

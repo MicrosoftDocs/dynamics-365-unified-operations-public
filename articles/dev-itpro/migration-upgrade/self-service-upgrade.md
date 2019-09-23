@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service upgrade to the latest version
-description: This topic explains the process for moving to the latest update of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 manager: AnnBe
 ms.date: 08/16/2019
@@ -42,7 +42,6 @@ ms.dyn365.ops.version: 10.0.1
 
 In this tutorial, you will learn how to perform these tasks:
 
-> [!div class="checklist"]
 > * Understand which version to select.
 > * Refactor your customizations as extensions.
 > * Run the data upgrade in a development environment.
@@ -53,7 +52,7 @@ In this tutorial, you will learn how to perform these tasks:
 
 To align the self-service upgrade process to support continuous updates, each new release will cause the oldest release version to be discontinued.
 
-For example, you have application version 7.3 with platform update (PU) 23. Currently, the supported upgrade versions are 8.1.3 with PU 23, 10.0.0 with PU 24, and 10.0.1 with PU 25. When the next release, 10.0.2 with PU 26, is made generally available, it will be added to the available upgrade options, and 8.1.3 with PU 23 will be removed.
+For example, you have application version 7.3 with Platform update (PU) 23. Currently, the supported upgrade versions are 8.1.3 with PU 23, 10.0.0 with PU 24, and 10.0.1 with PU 25. When the next release, 10.0.2 with PU 26, is made generally available, it will be added to the available upgrade options, and 8.1.3 with PU 23 will be removed.
 
 Because of this continuous process of adding a new version and removing the oldest version, we recommend that customers upgrade to the latest version that is available. In that way, you have two months in which you can upgrade your sandbox environment and then later upgrade your production environment to the same version.
 

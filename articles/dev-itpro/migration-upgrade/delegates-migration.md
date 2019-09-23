@@ -39,7 +39,7 @@ This topic explains how delegate methods serve as a means for defining a contrac
 Overview
 --------
 
-Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](../dev-tools/models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
+Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models](../dev-tools/models.md).
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -79,7 +79,7 @@ When comparing this overlay with the code from Dynamics AX 2012, this is a simpl
 
 [![5](./media/51.png)](./media/51.png) 
 
-However, the Finance and Operations section does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the section for Finance and Operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
 [![6](./media/61.png)](./media/61.png) 
 
@@ -159,6 +159,3 @@ Methods two and three can be used in parallel to the metadata search. The class 
 Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
-
-
-
