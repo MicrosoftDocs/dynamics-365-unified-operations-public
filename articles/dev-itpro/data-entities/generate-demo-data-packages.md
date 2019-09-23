@@ -174,7 +174,7 @@ After you load the data packages, you must also manually follow these steps.
 
 ### Scenario scripts
 
-Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts for Dynamics 365 Finance and Operations](https://go.microsoft.com/fwlink/?linkid=861599).
+Scripts have been provided for many of the scenarios that the demo data supports. You can find these scripts in [Demo data scripts](https://go.microsoft.com/fwlink/?linkid=861599).
 
 ## Transactions and automatic posting
 
