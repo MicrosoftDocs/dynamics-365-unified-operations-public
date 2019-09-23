@@ -56,8 +56,8 @@ To notify the POS user to prepare orders for pickup, inside CRT check if there a
     > [!NOTE]
     > Use an operation ID greater than 5000 for custom operation.
 2. Extend the notification service.  When the scheduler for the notification service runs, it calls both the CRT and Real time transaction service extension code to get the notification message.
-3.  Extend POS. In POS write the logic inside the POS operation for what should happen when the user clicks the notification. For instructions on how to create a new pos operation, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations).
-4. Configure the notification service in Retail Headquarters with the custom operation. When the scheduler runs it includea the custom operation too. For instructions on to configure notification in POS, see [Add POS operations to POS layouts by using Button grid designer](../notifications-pos).
+3.  Extend POS. In POS write the logic inside the POS operation for what should happen when the user clicks the notification. For instructions on how to create a new pos operation, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations.md).
+4. Configure the notification service in Retail Headquarters with the custom operation. When the scheduler runs it includea the custom operation too. For instructions on to configure notification in POS, see [Add POS operations to POS layouts by using Button grid designer](../notifications-pos.md).
     When the POS user clicks the notification, the framework calls the right operation based on the response returned form the CRT. The notification service runs for all the notification configured in retail headquarters and returns the response with the operation id and notification details. So, POS will have the context of operation ID and the framework will use this to call your operation implementation.
 
 > [!NOTE] 
