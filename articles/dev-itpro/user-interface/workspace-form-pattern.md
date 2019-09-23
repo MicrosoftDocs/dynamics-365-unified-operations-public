@@ -40,7 +40,7 @@ This topic discusses workspace form patterns. Workspaces are the primary way tha
 
 Workspaces are a new concept, and are meant to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business “activity” that you want to support. An “activity” is less granular than a task and more granular than a legacy “area page.” A workspace is intended to provide a one-page overview of the activity, and to help users understand the current status, the upcoming workload, and the performance of the process or user. Users should be able to start the most typical tasks for the activity directly from the workspace. If possible, users should also be able to complete tasks directly in the workspace, based on the overview that they just received. Currently, there are two workspace patterns:
 
--   **Tabbed workspace**: This is a new workspace pattern that is being made available in Platform Update 7. Instead of forcing a horizontally-scrolling panorama for content, this pattern uses standard tabs to allow the development of vertically-scrolling workspaces. This is particularly being used to embed Power BI reports into workspaces. Additional subpatterns to help define content inside these tabs will likely be provided in the future.
+-   **Tabbed workspace**: Instead of forcing a horizontally-scrolling panorama for content, this pattern uses standard tabs to allow the development of vertically-scrolling workspaces. This is particularly being used to embed Power BI reports into workspaces. Additional subpatterns to help define content inside these tabs will likely be provided in the future.
 -   **Operational workspace**: This is the standard pattern currently used for workspace development. Because of the set of components that are permitted in it, this pattern has superior performance over the deprecated "workspace" pattern. For this reason and to ensure visual and behavioral consistency with the other workspaces in the system, we recommend that you use this pattern.
 -   (Deprecated) **Workspace**: This pattern is only mentioned for the sake of completeness. Do **not** use this pattern. It will soon be removed from the product.
 
@@ -56,7 +56,7 @@ The rest of this topic will focus on the Operational workspace pattern and the T
 
 [![Workspace(2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
-## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
+## Pattern changes for Finance and Operations
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
 
 ## Model

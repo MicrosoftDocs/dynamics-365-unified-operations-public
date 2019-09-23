@@ -66,7 +66,7 @@ You can filter the task list in several ways. Click **Edit task** to change the
 status of a task or assign a task. Click **Attachments** to view attachments for a
 task.
 
-The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations page
+The task name is a hyperlink to the page
 where the user must go to complete the work. You can set this hyperlink by using
 the **Menu item name** field when you edit or create a task from the **Configure
 data validation project** form.

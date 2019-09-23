@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to sensitive data
-description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the user log functionality.
 author: ToddLefor
 manager: AnnBe
 ms.date: 12/31/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-System administrators can use the **User log** page in Microsoft Dynamics 365 for Finance and Operations to keep an audit log of users who have logged on to the system. Knowing who has logged in can help protect your organization's data. We've enhanced the user logging capability to let the administrator identify roles that provide access to sensitive data. 
+System administrators can use the **User log** page to keep an audit log of users who have logged on to the system. Knowing who has logged in can help protect your organization's data. We've enhanced the user logging capability to let the administrator identify roles that provide access to sensitive data. 
 
 ![Data flow from customers](../media/gdpr-sensitive-data-1.jpg)
 

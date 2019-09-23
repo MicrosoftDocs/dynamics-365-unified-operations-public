@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export business-to-business (B2B) users to Azure Active Directory
-description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about implementing the business-to-business transaction functionality.
 author: sarvanisathish
 manager: AnnBe
 ms.date: 04/09/2019
@@ -91,9 +91,9 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
     > [!WARNING]
     > Be sure to copy the key **Value** after saving the key. This value will not be available when you leave the blade.
 
-### Configure the B2B invitation service settings in Finance and Operations
+### Configure the B2B invitation service settings
 
-1. Sign in to Dynamics 365 for Finance and Operations as administrator.
+1. Sign in to Finance and Operations as administrator.
 
 2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 

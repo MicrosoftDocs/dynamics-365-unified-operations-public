@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. Specifically, the information in this topic applies to Tier 1 VMs that run Platform update 12 and later.
+This topic provides answers to frequently asked questions (FAQ) about virtual machines (VMs) that don't allow administrator access. 
 
 ## How can I install a deployable package?
 Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
@@ -41,7 +41,7 @@ Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a d
 For more information about how to install a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
 
 ## Is the Finance and Operations website accessible when Visual Studio isn't running?
-Yes, you can access the Microsoft Dynamics 365 for Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the Finance and Operations website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
+Yes, you can access the Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
 
 ## What about the other services?
 You can restart Microsoft Windows services such as Microsoft SQL Server, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), SQL Server Analysis Services (SSAS), Batch, Financial reporting (formerly Management Reporter), and IIS. (For IIS, you must restart the World Wide Web Publishing Service because you can't use iisreset.exe.)
@@ -53,7 +53,7 @@ Yes, you have full access to the service volume drive. Therefore, you can clean 
 Both a Microsoft Azure environment on a private Azure subscription and a local virtual hard disk (VHD) allow administrator access. However, you must run Visual Studio as an administrator. This requirement applies because the administrator has access to these alternatives only through the **administrator** group, not explicitly.
 
 ## Can I run Visual Studio as an administrator?
-Starting with Platform update 12, you're no longer required to run Visual Studio as an administrator. You can no longer use the Remote Desktop Protocol (RDP) to connect as an administrator to VMs that are under a Microsoft-owned Azure subscription. These VMs include the Tier 1 VM that is included in the subscription and Tier 1 add-on VMs. However, if you're connecting as an administrator to a VM that isn't under a Microsoft-owned subscription, you must still run Visual Studio as an administrator.
+You are not required to run Visual Studio as an administrator. You cannot use the Remote Desktop Protocol (RDP) to connect as an administrator to VMs that are under a Microsoft-owned Azure subscription. These VMs include the Tier 1 VM that is included in the subscription and Tier 1 add-on VMs. However, if you're connecting as an administrator to a VM that isn't under a Microsoft-owned subscription, you must still run Visual Studio as an administrator.
 
 ## A "get latest" operation in Visual Studio failed because files are blocked by the AOS instance. How do I start and stop IIS?
 You must use IIS Express. See the next question for more information.
@@ -104,7 +104,7 @@ You can put the system into maintenance mode to change the license configuration
 ### Development environments
 Use LCS to install a license deployable package on any cloud development environment.
 ### Build environments
-LCS does not allow AOT or license deployable packages to be installed on build environments. To work around this, remote into the VM and use the **-devinstall** option to install a license deployable package from the command line as described in the topic, [Install deployable packages from the command line](../deployment/install-deployable-package.md). This command line install works as of platform update 17. If you are running on a platform version that is older than platform update 17, and you do not have admin access to your build environment, create a support request and ask Microsoft to install your license deployable package.
+LCS does not allow AOT or license deployable packages to be installed on build environments. To work around this, remote into the VM and use the **-devinstall** option to install a license deployable package from the command line as described in the topic, [Install deployable packages from the command line](../deployment/install-deployable-package.md). This command line install works as of platform update 17. If you are running on a platform version that is older than Platform update 17, and you do not have admin access to your build environment, create a support request and ask Microsoft to install your license deployable package.
 
 ## Is licensing Visual Studio by entering a product key supported?
 Entering a product key directly in Visual Studio is not supported. Instead, use Visual Studio subscription licensing and sign in to Visual Studio with the email address (user account) associated with the license. You can link a Visual Studio license to a user account by assigning an MSDN license to the user account or by assigning a license to the user account by using https://www.visualstudio.com/subscriptions-administration.

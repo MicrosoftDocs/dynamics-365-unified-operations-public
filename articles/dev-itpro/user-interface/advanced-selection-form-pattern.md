@@ -50,9 +50,6 @@ The Advanced Selection form pattern should be used when the primary user task is
 -   [List Panel](list-panel-subpattern.md)
 -   [Dialog](dialog-form-pattern.md)
 
-## Pattern changes
-This is a new pattern in Finance and Operations.
-
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn’t include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
