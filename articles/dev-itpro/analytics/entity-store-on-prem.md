@@ -42,8 +42,8 @@ This topic outlines the analytical capabilities that are available in on-premise
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
 | Analytical workspaces                                                        | Available | **Not yet implemented**<p>Customers can use the reports that are built on Entity Store together with PowerBI.com.</p> |
 | Pin reports, tiles, and dashboards from PowerBI.com into the client.         | Available | **Not yet implemented** |
-| Author and distribute Power BI reports that use Finance and Operations data. | Available | **Available**<p>Customers can modify ready-made reports and create new reports by using Entity Store on-premises.</p> |
-| Extract Finance and Operations data into data warehouses.                    | Available | **Available** |
+| Author and distribute Power BI reports that use application data. | Available | **Available**<p>Customers can modify ready-made reports and create new reports by using Entity Store on-premises.</p> |
+| Extract application data into data warehouses.                    | Available | **Available** |
 
 ## Enable Entity Store on-premises
 
@@ -53,8 +53,8 @@ This topic supplements the [Set up and deploy on-premises environments](../deplo
 
 | User account               | Type     | Purpose | User name |
 |----------------------------|----------|---------|-----------|
-| AOS SQL AXDW DB Admin user | SQL user | Finance and Operations uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwadmin |
-| AOS SQL AXDW FB Admin user | SQL user | Finance and Operations uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwruntimeuser |
+| AOS SQL AXDW DB Admin user | SQL user | The application uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwadmin |
+| AOS SQL AXDW FB Admin user | SQL user | The application uses this user to enter information in the AXDW database. This user is optional and must be created only if you want Entity Store support. | axdwruntimeuser |
 
 ### [14. Configure the databases](../deployment/setup-deploy-on-premises-pu12.md#configuredb)
 
@@ -104,7 +104,7 @@ Create a Credentials.json file as shown here. The **AosDWAuth** category is opti
 Here is an explanation of the preceding code lines:
 
 - **AccountPassword** is the encrypted domain user password for the Application Object Server (AOS) domain user (contoso\\axserviceuser).
-- **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDB). **SqlPwd** is the encrypted SQL password.
+- **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the application database (AXDB). **SqlPwd** is the encrypted SQL password.
 - **DWUser** is the encrypted SQL user (axdwadmin) that has access to the Entity Store database (AXDW). **DWPwd** is the encrypted SQL password that is entered when the Initialize-Database.ps1 script is run.
 - **DWRuntimeUser** is the encrypted SQL user (axdwruntimeuser) that has access to the Entity Store database (AXDW). **DWRuntimePwd** is the encrypted SQL password that is entered when the Initialize-Database.ps1 script is run.
 
