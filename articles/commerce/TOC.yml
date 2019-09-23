@@ -30,6 +30,10 @@
         href: select-page-layouts.md
       - name: Add a checkout module to a page
         href: add-checkout-module.md
+    - name: Site navigation
+      items:
+      - name: Customize site navigation
+        href: customize-site-navigation.md
   - name: Ratings and reviews
     items:
     - name: Manage ratings and reviews
