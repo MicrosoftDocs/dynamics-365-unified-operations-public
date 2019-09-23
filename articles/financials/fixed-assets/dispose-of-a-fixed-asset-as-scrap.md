@@ -80,7 +80,7 @@ The fixed asset disposal scrap transaction changes the field values for the fixe
 - In the **Balance** section, the **Status** field is updated to **Scrapped**.
 - In the **Issue** section, the **Disposal date** field is set to the date when the asset was scrapped.
 
-[![Fixed assets journal detail](./media/Fixed_asset_Disposal_scrap_scenario_4.png](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Fixed assets journal detail](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 The following illustration shows the fixed asset balance.
 
@@ -89,4 +89,3 @@ The following illustration shows the fixed asset balance.
 The following illustration shows the voucher that is posted.
 
 [![Net book value](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
-

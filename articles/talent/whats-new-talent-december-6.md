@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (December 6, 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent Core HR (December 6, 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (December 6, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -66,7 +66,7 @@ Starting in Platform update 22, the "is one of" operator in the Filter Pane and 
 
 ### Configure UK payroll integration between Talent and Dayforce
 
-The integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+The integration between Talent and Ceridian Dayforce is available in preview for the UK. Refer to the following topic for more information, [Configure the payroll integration between Talent and Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## Coming soon
 

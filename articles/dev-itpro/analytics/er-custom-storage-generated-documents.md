@@ -38,17 +38,17 @@ The application programming interface (API) of the Electronic reporting (ER) fra
 
 ## Prerequisites
 
-You must deploy a Microsoft Dynamics 365 for Finance and Operations topology that supports continuous build. (For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) You must have access to this Finance and Operations topology for one of the following roles:
+You must deploy a topology that supports continuous build. (For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) You must have access to this topology for one of the following roles:
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
 - System administrator
 
-You must also have access to the development environment for this Finance and Operations topology.
+You must also have access to the development environment for this topology.
 
 ## Create or import an ER format configuration
 
-In the current Finance and Operations topology, [create a new ER format](tasks/er-format-configuration-2016-11.md) to generate documents that you plan to add a custom storage location for. Alternatively, [import an existing ER format into this topology](general-electronic-reporting-manage-configuration-lifecycle.md).
+In the current topology, [create a new ER format](tasks/er-format-configuration-2016-11.md) to generate documents that you plan to add a custom storage location for. Alternatively, [import an existing ER format into this topology](general-electronic-reporting-manage-configuration-lifecycle.md).
 
 ![Format designer page](media/er-extend-file-storages-format.png)
 

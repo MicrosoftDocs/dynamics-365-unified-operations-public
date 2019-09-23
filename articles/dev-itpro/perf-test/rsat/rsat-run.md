@@ -61,24 +61,24 @@ You can also generate binary and XML files only without overwriting your paramet
 
 This section describes how to modify Excel files to specify input and validation parameters for your test run. Select one or more test cases you want to modify and select **Edit**. This will open an Excel window for each selected test case. Alternatively, you can open the Excel files directly from the working directory. 
 
-In addition to the **General** tab, the Excel file contains a data tab for every Finance and Operations form that the test case visits.
+In addition to the **General** tab, the Excel file contains a data tab for every form that the test case visits.
 
-Select the desired form (Excel tab) that you want to edit and identify the parameter values that you want to change. Values are identified by their control name. If you are not sure which control is correct, open the form in Finance and Operations, right-click the control whose value you want to change, and select **form information**.
+Select the desired form (Excel tab) that you want to edit and identify the parameter values that you want to change. Values are identified by their control name. If you are not sure which control is correct, open the form in the application, right-click the control whose value you want to change, and select **form information**.
 
 Save the Excel files when you are done making edits.
 
 ### Run a test as a specific user
-By default, tests are executed in Finance and Operations using the admin role. If you want to run the test as a specific security role, specify the email address of a Finance and Operations user under the **Test User** parameter in the **General** tab of the Excel parameter file. The **Test User** must be a valid user of the Finance and Operations environments you are connecting to. The test will run under the security roles that the specific user belongs to. You need version 1.200 or newer for this feature to be functional.
+By default, tests are executed using the admin role. If you want to run the test as a specific security role, specify the email address of a user under the **Test User** parameter in the **General** tab of the Excel parameter file. The **Test User** must be a valid user of the environments you are connecting to. The test will run under the security roles that the specific user belongs to. You need version 1.200 or newer for this feature to be functional.
 
 ![Test user column](media/run-specific-user.png)
  
 ### Run a test in the context of a specific company
-The **General** tab of the Excel parameter file also allows you to specify the name of a Finance and Operations legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog box of the tool.
+The **General** tab of the Excel parameter file also allows you to specify the name of a legal entity (Company). The test will run in the context of this company. You can specify your default company in the **Settings** dialog box of the tool.
 
 ### Infolog and message validation
 Excel parameter files that are generated using version 1.200 or newer contain a **MessageValidation** tab.
 
-You can enter messages in this tab under **Message Validation**. After a test case completes execution, it validates that the messages specified here appear in the Finance and Operations Infolog. The test case will fail if these messages are not found.
+You can enter messages in this tab under **Message Validation**. After a test case completes execution, it validates that the messages specified here appear in the Infolog. The test case will fail if these messages are not found.
 
 You can specify any expected messages including error messages that are expected. If an expected error occurred, but exists in this section, the test will not fail.
  
@@ -86,7 +86,7 @@ You can specify any expected messages including error messages that are expected
 
 
 ## Run
-Select **Run** to execute the selected test cases. Only test cases with existing automation files can be run. The tool will open Finance and Operations and execute these tests with the data you entered in Excel.
+Select **Run** to execute the selected test cases. Only test cases with existing automation files can be run. The tool will open and execute these tests with the data you entered in Excel.
 
 You can modify the order in which test cases are executed using the up and down arrow buttons.
 

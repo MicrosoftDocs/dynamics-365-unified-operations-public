@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose a data integration (import/export) strategy 
-description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 09/18/2019
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios for Microsoft Dynamics 365 for Finance and Operations.
+This topic is intended to help architects and developers make sound design decisions when they implement integration scenarios.
 
-The topic describes integration patterns, integration scenarios, and integration solutions and best practices for Finance and Operations. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
+The topic describes integration patterns, integration scenarios, and integration solutions and best practices. However, it doesn't include technical details about how to use or set up every integration pattern. It also doesn't include sample integration code.
 
 > [!NOTE]
 > When providing guidance and discussing scenarios for choosing a pattern, data volume numbers are mentioned. These numbers must be only used to gauge the pattern and must not be considered as hard system limits. The absolute numbers will vary in real production environments due to various factors, configurations are only one aspect of this scenario. 
 
-The following table lists the integration patterns that are available for Finance and Operations.
+The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
@@ -67,7 +67,7 @@ The following table lists the inbound integration patterns that are available.
 | OData          | Synchronous  | No    |
 | Batch data API | Asynchronous | Yes   |
 
-Before you compare synchronous and asynchronous patterns, you should be aware that all the REST and SOAP integration application programming interfaces (APIs) that Finance and Operations provides can be invoked either synchronously or asynchronously.
+Before you compare synchronous and asynchronous patterns, you should be aware that all the REST and SOAP integration application programming interfaces (APIs) can be invoked either synchronously or asynchronously.
 
 The following examples illustrate this point. You can't assume that the caller will be blocked when the Open Data Protocol (OData) is used for integration. The caller might not be blocked, depending on how a call is made.
 
@@ -78,7 +78,7 @@ The following examples illustrate this point. You can't assume that the caller w
 | SOAP           | UserSessionServiceGetUserSessionInfo | UserSessionServiceGetUserSessionInfoAsync |
 | Batch data API | ImportFromPackage                   | [BeginInvoke](/dotnet/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously) |
 
-Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run in Finance and Operations. Here are some examples:
+Both OData and custom services are synchronous integration patterns, because when these APIs are called, business logic is immediately run. Here are some examples:
 
 - If OData is used to insert product records, the records are immediately inserted as part of the OData call.
 - If a custom service is used to look up on-hand inventory, business logic is immediately run as part of the JSON/SOAP call, and an inventory sum number is immediately returned.
@@ -108,7 +108,7 @@ Here are some typical scenarios that use OData integrations.
 
 ### Create and update product information
 
-A manufacturer runs Finance and Operations, but defines and configures its product by using a third-party application that is hosted on-premises. This manufacturer wants to move its production information from the on-premises application to Finance and Operations. When a product is defined, or when it's changed in the on-premises application, the user should see the same change, in real time, in Finance and Operations.
+A manufacturer defines and configures its product by using a third-party application that is hosted on-premises. This manufacturer wants to move its production information from the on-premises application to Finance and Operations. When a product is defined, or when it's changed in the on-premises application, the user should see the same change, in real time.
 
 | Decision                    | Information              |
 |-----------------------------|--------------------------|
@@ -133,7 +133,7 @@ In the third-party application:
 
 ### Read the status of customer orders
 
-A company runs Finance and Operations but has a self-hosted customer portal where customers can check the status of their orders. Order status information is maintained in Finance and Operations.
+A company has a self-hosted customer portal where customers can check the status of their orders. Order status information is maintained in the application.
 
 | Decision                    | Information            |
 |-----------------------------|------------------------|
@@ -143,7 +143,7 @@ A company runs Finance and Operations but has a self-hosted customer portal wher
 
 #### Recommended solution
 
-This scenario is best implemented by using the OData service endpoints to read order status information from Finance and Operations.
+This scenario is best implemented by using the OData service endpoints to read order status information.
 
 In Finance and Operations:
 
@@ -156,7 +156,7 @@ On the customer portal site:
 
 ### Approve BOMs
 
-A company runs Finance and Operations but uses a product lifecycle management (PLM) system that is hosted on-premises. The PLM system has a workflow that sends the finished bill of materials (BOM) information to Finance and Operations for approval.
+A company uses a product lifecycle management (PLM) system that is hosted on-premises. The PLM system has a workflow that sends the finished bill of materials (BOM) information to the application for approval.
 
 | Decision                    | Information            |
 |-----------------------------|------------------------|
@@ -187,7 +187,7 @@ Here are some typical scenarios that use a custom service.
 
 ### Look up on-hand inventory
 
-An energy company has field workers who schedule installation jobs for heaters. This company uses Finance and Operations for the back office and third-party software as a service (SaaS) to schedule appointments. When field workers schedule appointments, they must look up inventory availability to make sure that installation parts are available for the job.
+An energy company has field workers who schedule installation jobs for heaters. This company uses the application for the back office and third-party software as a service (SaaS) to schedule appointments. When field workers schedule appointments, they must look up inventory availability to make sure that installation parts are available for the job.
 
 | Decision                    | Information            |
 |-----------------------------|------------------------|
@@ -210,7 +210,7 @@ In the scheduling application:
 > [!NOTE]
 > You can find an example of this type of custom service in the Retail Real Time Services implementation: **RetailTransactionServiceInventory::inventoryLookup**.
 
-You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, you can use multiple methods to expose the same data and business logic in Finance and Operations, and all the methods are equally valid and effective. In this case, choose the method that works best for a given scenario and that a developer is most comfortable with.
+You can also use the inventorySiteOnHand entity to achieve the same result. Sometimes, you can use multiple methods to expose the same data and business logic, and all the methods are equally valid and effective. In this case, choose the method that works best for a given scenario and that a developer is most comfortable with.
 
 ## Typical scenarios and patterns that use batch data integrations
 
@@ -218,7 +218,7 @@ Here are some typical scenarios that use batch data APIs.
 
 ### Import large volumes of sales orders
 
-A company receives a large volume of sales orders from a front-end system that runs on-premises. These orders must periodically be sent to Finance and Operations for processing and management.
+A company receives a large volume of sales orders from a front-end system that runs on-premises. These orders must periodically be sent to the application for processing and management.
 
 | Decision                    | Information                 |
 |-----------------------------|-----------------------------|
@@ -237,7 +237,7 @@ In Finance and Operations:
 
 In the on-premises system:
 
-- Use the REST batch data API to import files into Finance and Operations.
+- Use the REST batch data API to import files.
 
 ### Export large volumes of purchase orders
 
@@ -265,10 +265,10 @@ In the on-premises inventory system:
 
 ## Typical scenarios and patterns that call external web services
 
-It's typical that Finance and Operations calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, Finance and Operations acts as the integration client. When you write an integration client for Finance and Operations, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consuming external web services](consume-external-web-service.md).
+It's typical that the application calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, the application acts as the integration client. When you write an integration client, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consuming external web services](consume-external-web-service.md).
 
 > [!IMPORTANT]
-> Because of security requirements, Finance and Operations production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that Finance and Operations calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls from Finance and Operations fail. The exception error message resembles the following message:
+> Because of security requirements, production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that the application calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls fail. The exception error message resembles the following message:
 >
 > *Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host.*
 >

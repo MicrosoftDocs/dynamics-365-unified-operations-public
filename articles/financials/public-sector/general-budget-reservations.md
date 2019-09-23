@@ -2,7 +2,7 @@
 # required metadata
 
 title: General budget reservations
-description: This topic provides information about general budget reservations for Public sector in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about general budget reservations for Public sector.
 author: AlexRenney
 manager: AnnBe
 ms.date: 04/25/2019
@@ -38,7 +38,7 @@ A *general budget reservation* is a document that is sometimes also referred to 
 
 General budget reservations are available only if the following conditions are met:
 
-- You have Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) or a later version.
+- You have version 8.1 or later.
 - The **Public sector**, **Encumbrance process**, and **Pre-encumbrance process** configuration keys are turned on.
 - You're using posting definitions. (However, you don't have to use posting definitions if you don't activate commitment accounting.)
 - The Budget control configuration is activated and configured, and budget control is turned on.

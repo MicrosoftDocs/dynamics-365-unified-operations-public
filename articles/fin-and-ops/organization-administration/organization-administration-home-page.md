@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organization administration home page
-description: This topic points to resources that will help you use Microsoft Dynamics 365 for Finance and Operations in your organization.
+description: This topic points to resources that will help you in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points to content that will help power users and administrators configure Microsoft Dynamics 365 for Finance and Operations. This content will help them configure the system to work smoothly and effectively for your organization and business.
+This topic points to content that will help power users and administrators configure the system to work smoothly and effectively for your organization and business.
 
 Much of the content listed here applies to features in the **Organizational administration** module. However, there are a couple of tasks, such as creating and using a record template, that can be performed in any module to help your organization run more efficiently.
 
@@ -50,7 +50,7 @@ Number sequences are used to generate readable, unique identifiers for master da
 
 An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
 
-Before you set up organizations and organization hierarchies in Finance and Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Finance and Operations and on business processes.
+Before you set up organizations and organization hierarchies, make sure that you plan how your business will be modeled. The organization model has a significant effect on implementation and business processes.
 
 - [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
@@ -71,7 +71,7 @@ After you create the global address book, you can create additional address book
 
 ## Workflow
 
-Workflow is a system that is installed with Finance and Operations that you can use to create individual workflows, or business processes. When you create a workflow, you specify how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.
+Workflow is a system that you can use to create individual workflows, or business processes. When you create a workflow, you specify how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.
 
 - [Workflow overview](overview-workflow-system.md)
 - [Workflow elements](workflow-elements.md)
@@ -82,7 +82,7 @@ Workflow is a system that is installed with Finance and Operations that you can 
 
 An electronic signature confirms the identity of a person who is about to start or approve a computing process. In some industries, an electronic signature is as legally binding as a handwritten signature. Electronic signatures are a regulations compliance requirement for several regulated industries, such as pharmaceuticals, food and beverage, and aerospace and defense.
 
-In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
+You can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
 - [Electronic signature overview](electronic-signature-overview.md)
 - [Set up electronic signatures](tasks/set-up-electronic-signatures.md) (Task guide)

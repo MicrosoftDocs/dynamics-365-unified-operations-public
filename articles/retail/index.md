@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
 > [!NOTE]
-> Dynamics 365 for Retail is closely related to Dynamics 365 for Finance and Operations, and Dynamics 365 for Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail; in topics that are primarily related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations; in topics that are primarily related to human resources, the product name will be Dynamics 365 for Talent.
+> Dynamics 365 for Retail is closely related to Dynamics 365 for Finance and Operations, and Dynamics 365 Talent. The same functionality may appear in all three products. As a result, in topics that are primarily related to Retail, the product name will be Microsoft Dynamics 365 for Retail; in topics that are primarily related to the core product (Finance and Operations), the product name will be Microsoft Dynamics 365 for Finance and Operations; in topics that are primarily related to human resources, the product name will be Dynamics 365 Talent.
 
 In the left pane, select a feature area to learn more about it.
 

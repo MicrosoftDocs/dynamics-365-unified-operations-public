@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense reports reimagined
-description: This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 for Finance and Operations. The new experience simplifies the process of completing expense reports and decreases the time that is required.
+description: This topic provides information about the redesigned and reimagined experience for expense report entry in Microsoft Dynamics 365 Finance. The new experience simplifies the process of completing expense reports and decreases the time that is required.
 author: ryansandness
 manager: AnnBe
 ms.date: 06/14/2019

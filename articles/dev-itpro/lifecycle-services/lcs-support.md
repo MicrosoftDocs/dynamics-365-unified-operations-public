@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get support for Finance and Operations or Lifecycle Services (LCS)
-description: This article explains how to get help with Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
+title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
+description: This article explains how to get help with Microsoft Dynamics 365 Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
 ms.date: 08/28/2018
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get support for Finance and Operations or Lifecycle Services (LCS)
+# Get support for Finance and Operations apps or Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to get help with Finance and Operations or Microsoft Dynamics Lifecycle Services (LCS). 
+This article explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 
 ## Contact support
 
-Use the information in this article to contact Microsoft if you have technical questions about Finance and Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS).
+Use the information in this article to contact Microsoft if you have technical questions, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS).
 
-### Finance and Operations support
+### Finance and Operations apps support
 
-To obtain support for Finance and Operations or LCS, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you're troubleshooting.
+To obtain support, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you're troubleshooting.
 
 <table>
 <colgroup>
@@ -58,11 +58,11 @@ To obtain support for Finance and Operations or LCS, use the resources in the fo
 <tbody>
 <tr class="odd">
 <td>Ask the community.</td>
-<td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Dynamics 365 for Finance and Operations community</span></a> page to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2013438"><span style="color: #0066cc;">Community page</span></a> to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr class="even">
 <td>Use the Issue search tool.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Finance and Operations. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
+<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
 </tr>
 <tr class="odd">
 <td>Use the Cloud-powered support tool.</td>
@@ -74,16 +74,16 @@ To obtain support for Finance and Operations or LCS, use the resources in the fo
 Note: Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</td>
 </tr>
 <tr class="even">
-<td>Open a support ticket with the Finance and Operations support team.</td>
+<td>Open a support ticket with the support team.</td>
 <td>If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng"><span style="color: #0066cc;">Contact Microsoft Business Solutions Support</span></a> for information about to contact a Microsoft Dynamics Regional Operations Center. The support team can help you resolve the following types of technical issues:
 <ul>
 <li>Errors that occur when you use LCS or issues that occur when you try to access LCS.</li>
-<li>Errors that occur when you use Finance and Operations.</li>
+<li>Errors that occur when you use Finance and Operations apps.</li>
 </ul>
 For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx"><span style="color: #0066cc;">Website Support</span></a>.</td>
 </tr>
 <tr class="odd">
-<td>Get help with questions about Finance and Operations licensing.</td>
+<td>Get help with questions about Finance and Operations apps licensing.</td>
 <td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
 </tr>
 <tr class="even">
@@ -96,6 +96,6 @@ For technical questions that are related to signing in to and accessing Customer
 
 ## Additional resources
 - [Get support for Dynamics 365 for Retail](../../retail/retail-support.md)
-- [Get support for Dynamics 365 for Talent](../../talent/talent-support.md)
+- [Get support for Dynamics 365 Talent](../../talent/talent-support.md)
 - For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
 

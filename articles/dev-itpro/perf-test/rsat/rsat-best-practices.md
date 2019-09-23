@@ -37,7 +37,7 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 ## Authoring test cases using the Task recorder
 
-1. Make sure all your recordings start on the main dashboard of Finance and Operations (or Retail).
+1. Make sure all your recordings start on the main dashboard.
 2. Keep individual recordings short and focus on a business task performed by one user, like creating a sales order. This simplifies maintainability and reusability of test cases.
 3. Chart controls are not supported. Any task recording actions related to charts will be ignored by RSAT during test case playback.
 4. When creating a recording make sure to select a tab header even if the tab is already open. For example, you can switch to another tab and then select the needed tab again to activate it before using a control on it. This will make your recording more reliable during test case playback.
@@ -56,7 +56,7 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 
 4. For test parameters that need a unique value, for example, the product receipt number in the **Product Receipt** form or the invoice number in the **Vendor Invoice** form, use the **RandBetween(a,b)** Excel function to generate a unique number every time the test case is executed.
 5. The default values in Excel come from the task recording. For **Reference Group** controls such as storage dimensions or tracking dimensions, it stores the key of the lookup instead of the value, for example, **2** instead of **SiteWH**. We recommend that you update these fields with the actual value in Excel so that the test is more robust and resilient to changes.
-6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your Finance and Operations environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.   
+6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.   
 
     ![Set locale, date, time, and number format](media/locale.png)
 
@@ -92,11 +92,11 @@ This sequence is recommended after installing a new version of the tool.
 
 If you want to modify an existing task recording, note these best practices. 
 
-In the Finance and Operations web client, open the Task recorder pane and start editing the recording using the **Edit Recording** option.
+In the web client, open the Task recorder pane and start editing the recording using the **Edit Recording** option.
 
 ![Edit recording option](media/edit-recording.png)
   
-When you finish editing, save or download the recording, then play it back in the Finance and Operations client and verify that all the steps work correctly.
+When you finish editing, save or download the recording, then play it back in the client and verify that all the steps work correctly.
 
 ![Playback recording option](media/playback-recording.png)
  

@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The following PowerBI.com solutions are available for Dynamics 365 for Finance and Operations environments.
+The following PowerBI.com solutions are available for application environments.
 
 ## PowerBI.com solutions available from Lifecycle Services (LCS)
 
 The following PowerBI.com solutions are available in the Shared assets library of LCS. Refer to the version information in the Shared assets library to download the correct version for your environment.
 
 > [!NOTE]
-> Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions of Dynamics 365 for Finance and Operations. Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics in this list indicate where these PowerBI.com solutions have been embedded in Finance and Operations, where applicable.
+> Most of the PowerBI.com solutions in the following list have been embedded in analytical workspaces in recent versions. Using analytical workspaces eliminates the need to download these solutions from the Shared assets library in LCS. The topics in this list indicate where these PowerBI.com solutions have been embedded where applicable.
 
 - [Actual vs budget](ledger-budgets-power-bi.md)
 - [Cash overview](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)

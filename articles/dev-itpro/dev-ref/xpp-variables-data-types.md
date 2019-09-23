@@ -236,7 +236,7 @@ If you're in the scope of the class where the constant (**const**) is defined, y
     }
 
 ## Null values for data types
-Microsoft Dynamics 365 for Finance and Operations doesn't support the concept of **null** values that is available in many other database management systems (DBMSs). A variable in X++ always has a type and a value. However, for each data type, one value is considered **null** (for example, when the **validateField** table method is run).
+The concept of **null** values that is available in many other database management systems (DBMSs) is not supported. A variable in X++ always has a type and a value. However, for each data type, one value is considered **null** (for example, when the **validateField** table method is run).
 
 | Type | Value that is treated as null |
 |------|-------------------------------|

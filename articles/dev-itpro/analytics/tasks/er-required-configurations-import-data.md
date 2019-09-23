@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Create required configurations to import data from an external file
-description: The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file. 
+description: The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Microsoft Dynamics 365 Finance application from an external file. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations, Enterprise edition application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, “ER Create a configuration provider and mark it as active.” These steps can be completed using the USMF data set. You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data in to the application from an external file. In this example, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the Task guide, “ER Create a configuration provider and mark it as active.” These steps can be completed using the USMF data set. You must also download and save the following files locally using links from the Electronic reporting overview topic (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
-    * ER offers business users the ability to configure the process of importing external data files to tables in Dynamics 365 for Finance and Operations, Enterprise edition in either .XML or .TXT format. First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing. Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model. The ER format configuration that maps to the designed data model must be created for that abstract data model. Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables in Dynamics 365 for Finance and Operations, Enterprise edition.  The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application’s destinations.  
-    * The following scenario shows the ER data import capabilities. This includes vendor transactions that are tracked externally and then imported in to Dynamics 365 for Finance and Operations, Enterprise edition to be reported later in Vendor’s settlement for 1099’s.   
+    * ER offers business users the ability to configure the process of importing external data files to tables in either .XML or .TXT format. First, an abstract data model and an ER data model configuration must be designed to represent the data that you are importing. Next, you need to define the structure of the file that you are importing and the method that you will use to port the data from the file to the abstract data model. The ER format configuration that maps to the designed data model must be created for that abstract data model. Then, the data model configuration must be extended with a mapping that describes how the imported data is persisted as abstract data model data and how it is used to update tables.  The ER data model configuration must be appended with a new model mapping that describes the binding of the data model to the application’s destinations.  
+    * The following scenario shows the ER data import capabilities. This includes vendor transactions that are tracked externally and then imported to be reported later in Vendor’s settlement for 1099’s.   
 
 ## Add a new ER model configuration
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Verify that the configuration provider for sample company ‘Litware, Inc.’ is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active.”   
 2. Click Reporting configurations.
-    * Instead of creating of a new model to support data import, load the file, 1099model.xml, that you previously downloaded. This file contains the custom data model of vendors’ transactions. This data model is mapped to the Dynamics 365 for Finance and Operations, Enterprise edition data components that are in the AOT data entity.   
+    * Instead of creating of a new model to support data import, load the file, 1099model.xml, that you previously downloaded. This file contains the custom data model of vendors’ transactions. This data model is mapped to the data components that are in the AOT data entity.   
 3. Click Exchange.
 4. Click Load from XML file.
     * Click Browse and navigate to the 1099model.xml file that you previously downloaded.  
@@ -48,7 +48,7 @@ The following steps explain how a user in the System administrator or Electronic
 
 ## Review data model settings
 1. Click Designer.
-    * This model is designed to represent vendors’ transactions from the business standpoint and are separate from the implementation in Dynamics 365 for Finance and Operations, Enterprise edition.   
+    * This model is designed to represent vendors’ transactions from the business standpoint and are separate from the implementation.   
 2. In the tree, expand '1099-MISC'.
 3. In the tree, select '1099-MISC\Transactions'.
 4. In the tree, expand '1099-MISC\Transactions'.
@@ -110,7 +110,7 @@ The following steps explain how a user in the System administrator or Electronic
 1. In the tree, select '1099 Payments model'.
 2. Click Designer.
 3. Click Map model to datasource.
-    * The mapping For 1099 manual transactions import has been defined with the To destination direction type. This means that it has been entered to support data import and contains the setting of rules defining how the imported external file and persisted as abstract data model data is used to update tables in the Dynamics 365 for Finance and Operations, Enterprise edition application.  
+    * The mapping For 1099 manual transactions import has been defined with the To destination direction type. This means that it has been entered to support data import and contains the setting of rules defining how the imported external file and persisted as abstract data model data is used to update tables in the application.  
 4. Click Designer.
 5. In the tree, expand 'model: Data model 1099 Payments model'.
 6. In the tree, expand 'model: Data model 1099 Payments model\Transactions: Record list'.
@@ -124,7 +124,7 @@ The following steps explain how a user in the System administrator or Electronic
 12. In the tree, select 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.
 13. Click Edit destination.
     * This ER destination was added to specify how the imported data will update the application tables. In this case, the data table VendSettlementTax1099 has been selected. Because the record action Insert has been selected, the imported transactions will be inserted in the table VendSettlementTax1099. Note that a single model mapping may contain several destinations. This means that the imported data can be used to update multiple application’s tables at once. Tables, views, and data entities can be used as ER destinations.   
-    * If the mapping will be called from a point in the Dynamics 365 for Finance and Operations, Enterprise edition application (such as button or menu item) that was specifically designed for this action, the ER destination should be marked as the integration point. In this example this is the ERTableDestination#VendSettlementTax1099 point.  
+    * If the mapping will be called from a point in the application (such as button or menu item) that was specifically designed for this action, the ER destination should be marked as the integration point. In this example this is the ERTableDestination#VendSettlementTax1099 point.  
 14. Click Cancel.
 15. Click Show all.
 16. Click Show mapped only.
@@ -180,15 +180,15 @@ The following steps explain how a user in the System administrator or Electronic
 18. Close the page.
 19. Close the page.
 20. Click Edit.
-    * If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 for Finance and Operations, Enterprise edition” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration. Skip the next step otherwise.  
+    * If you installed the hotfix “KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), execute the next step “Turn the flag ‘Default for model mapping’ on” for the entered format configuration. Skip the next step otherwise.  
 21. Select Yes in the Default for model mapping field.
 22. In the tree, select '1099 Payments model'.
 23. Click Designer.
 24. Click Map model to datasource.
 25. Click Run.
-    * If you installed the hotfix, KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions of Dynamics 365 for Finance and Operations, Enterprise edition (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), select the preferred model mapping in the lookup field. If you haven't installed the hotfix yet, skip to the next step as the mapping has already been selected by the definition of the default format configuration.  
+    * If you installed the hotfix, KB 4012871 Support of GER model mappings in separated configurations with an ability to specify different kinds of prerequisites for deploying them on different versions (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), select the preferred model mapping in the lookup field. If you haven't installed the hotfix yet, skip to the next step as the mapping has already been selected by the definition of the default format configuration.  
     * If you have not installed the hotfix, KB 4012871, notice that the dialog box contains an additional model mapping question that is used to parse the file that you are importing. The data is then ported from the dialog box to the data model. Currently, you can choose which format mapping must be used depending on the type of file that you plan to import.  
-    * If you plan to call this model mapping from a point in Dynamics 365 for Finance and Operations, Enterprise edition that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.  
+    * If you plan to call this model mapping from a point in the application that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.  
 26. Click Cancel.
 27. Close the page.
 28. Close the page.

@@ -100,7 +100,7 @@ Use the **Terms of payment** page to specify a due date limit, so that you can m
 
 ## Calculate invoice due dates based on the payment schedule and the payment day
 
-You can specify the payment schedule and the payment day for a customer invoice, a free text invoice, a vendor invoice, or a project invoice before you generate the invoice. In Microsoft Dynamics 365 for Finance and Operations, the payment due dates of vendor invoices and project invoices are calculated based on the delivery dates of items and services. For customer invoices, the due dates are calculated based on the customer invoice receipt dates.
+You can specify the payment schedule and the payment day for a customer invoice, a free text invoice, a vendor invoice, or a project invoice before you generate the invoice. The payment due dates of vendor invoices and project invoices are calculated based on the delivery dates of items and services. For customer invoices, the due dates are calculated based on the customer invoice receipt dates.
 
 On the **Due date limits** page, you can specify the number of days in the grace period that an invoice payment must be made within. You can set the **Use the delivery date to calculate the payment due date** option to **Yes** on the **Terms of payment** page to use the delivery date to calculate the invoice due dates.
 

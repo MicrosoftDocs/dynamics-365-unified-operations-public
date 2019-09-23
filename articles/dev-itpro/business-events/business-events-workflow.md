@@ -93,7 +93,7 @@ For a step-by-step guide to setting up work item completion in Microsoft Flow, s
 
 There are a number of key factors that need to work correctly in order for workflow business events to run without errors:
 
-- **Workflow** - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside Finance and Operations so that state changes are occurring, then the events won't occur. Adjust the workflow configuration as needed. If needed, review the workflow details in the **Workflow History** form.
+- **Workflow** - Ensure that the workflow is running correctly and creating work items correctly. If the workflow doesn't work inside the application so that state changes are occurring, then the events won't occur. Adjust the workflow configuration as needed. If needed, review the workflow details in the **Workflow History** form.
 
 - **Flow** - Ensure that the Flow subscription is available in the **System administration > Setup > Business events > Business events catalog** on the **Active events** tab. If the Flow subscription isn't there, then check the Flow and recreate it if needed.
 

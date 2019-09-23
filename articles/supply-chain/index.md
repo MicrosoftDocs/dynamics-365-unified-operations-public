@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Supply chain management home page
-description: This page provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management.   
+title: Supply Chain Management home page
+description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/09/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Supply chain management home page
+# Supply Chain Management home page
 
 [!include [banner](includes/banner.md)]
 

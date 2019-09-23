@@ -127,7 +127,7 @@ Select **GST**, click **Lookups**.
 
 ![CGST condition](media/gte-tax-document-applicability-static-lookups.png)
 
-Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment, such as Finance and Operations.
+Because a lookup can handle both static applicability rules and dynamic applicability rules, the **Source type** drop-down list is for this purpose. Use **Configuration** for the static applicability rule, which means that the data used in the lookup comes from the configuration. Use **User data** for the dynamic applicability rule, which means that the data used in the lookup comes from the runtime environment.
 
 A lookup is a matrix. The relation of each line is *OR*, and the relation of each column within the line is *AND*. If the value of the cell is empty, it means that all of the values satisfy the condition. 
 
@@ -157,7 +157,7 @@ Many applicability rules depend on the runtime data. For example, some tax compo
 
 Select **CESS**, click **Lookups**.
 
-In India, CESS is applicable for certain goods and services. In Finance and Operations, HSN represents goods, SAC represents services, so HSN Code and SAC are used in the lookup. The **Source type** is **User data**, because the real value of HSN Code and SAC come from Finance and Operations.
+In India, CESS is applicable for certain goods and services. In Dynamics 365 Finance, HSN represents goods, and SAC represents services, so the HSN Code and SAC are used in the lookup. The **Source type** is **User data**, because the real value of the HSN Code and SAC comes from Finance.
 
 Now, let's check how the CGST rate is determined. Select **CGST > Rate**, click **Lookups**.
 

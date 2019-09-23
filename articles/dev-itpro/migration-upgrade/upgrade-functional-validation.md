@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Functional test passes
-description: This topic explains how to perform a functional test pass to validate an upgraded Dynamics 365 for Finance and Operations, environment. 
+description: This topic explains how to perform a functional test pass to validate an upgraded Finance and Operations environment. 
 author: tariqbell
 manager: AnnBe
 ms.date: 01/31/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-After data upgrade is completed, we recommend that you complete a full functional test pass of all business processes. In a full functional test pass, you do an extensive retest of all business processes that are performed by using Microsoft Dynamics 365 for Finance and Operations. Tests should include both processes that have been brought forward from Microsoft Dynamics AX 2012 and new processes that use features from Finance and Operations.
+After data upgrade is completed, we recommend that you complete a full functional test pass of all business processes. In a full functional test pass, you do an extensive retest of all business processes that are performed by using Finance and Operations. Tests should include both processes that have been brought forward from Microsoft Dynamics AX 2012 and new processes that use features from Finance and Operations.
 
 Depending on your code quality, bug remediation and retesting might require several iterations of the functional test pass. After a bug is fixed, take care to retest all  processes that are involved, to make sure that no downstream or upstream processes are affected by the change.
 

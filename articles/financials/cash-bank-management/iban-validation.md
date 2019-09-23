@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 8.0.4
 
 International Bank Account Number (IBAN) validation increases the amount of validation that is done when you add an IBAN to a bank account.
 
-Information about the structure of the IBAN is stored in Microsoft Dynamics 365 for Finance and Operations. That information is automatically loaded when you first use the IBAN on bank accounts. It contains the length of the IBAN, the starting positions of the bank account number and the routing number, and the length of the bank account number and routing number.
+Information about the structure of the IBAN is stored in Microsoft Dynamics 365 Finance. That information is automatically loaded when you first use the IBAN on bank accounts. It contains the length of the IBAN, the starting positions of the bank account number and the routing number, and the length of the bank account number and routing number.
 
 ## Set up IBAN structures
 

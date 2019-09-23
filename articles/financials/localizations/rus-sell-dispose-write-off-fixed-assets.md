@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sell, dispose, and write-off assets (Russia)
-description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 for Finance and Operations in Russia.
+description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2018

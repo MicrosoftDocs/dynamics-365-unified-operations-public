@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting guide for data integration
-description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 for Finance and Operations and Common Data Service.
+description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 Finance and Operations apps and the Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/25/2019
@@ -49,22 +49,22 @@ If you experience an issue or error during dual-write synchronization, follow th
 4. On the **Settings** menu, select **Customization \> Plug-In Trace Log**.
 5. Select **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** as the type name to show the error details.
 
-## Inspect dual-write synchronization errors in Finance and Operations
+## Inspect dual-write synchronization errors
 
 Follow these steps to inspect errors during testing.
 
 1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
 2. Open the LCS project to do dual-write testing for.
 3. Select **Cloud-hosted environments**.
-4. Make a Remote desktop connection to the Dynamics 365 for Finance and Operations virtual machine (VM) by using local account that is shown in LCS.
+4. Make a Remote desktop connection to the application virtual machine (VM) by using local account that is shown in LCS.
 5. Open Event Viewer. 
 6. Go to **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**. The errors and details are shown.
 
-## Unlink one Common Data Service environment from Finance and Operations and link another environment
+## Unlink one Common Data Service environment from the application and link another environment
 
 Follow these steps to update links.
 
-1. Go to the Finance and Operations environment.
+1. Go to the application environment.
 2. Open Data Management.
 3. Select **Link to CDS for apps**.
 4. Select all the mappings that are running, and then select **Stop**.
