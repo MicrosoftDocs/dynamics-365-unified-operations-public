@@ -49,7 +49,7 @@ Before you can test a service by using an external application, you must registe
 For details, see:
 
 - [Register an application with AAD](services-home-page.md#register-a-web-application-with-aad)
-- [Register your external application](services-home-page.md#register-your-external-application-in-finance-and-operations)
+- [Register your external application](services-home-page.md#register-your-external-application)
 
 ## Query OData by using Postman
 
