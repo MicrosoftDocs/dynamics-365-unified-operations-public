@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export copies of Finance and Operations databases to restore later
-description: This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
+description: This topic explains how to export a Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 12/27/2018
@@ -31,20 +31,20 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Export copies of Finance and Operations databases to restore later
+# Export copies of databases to restore later
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to export a Microsoft Dynamics 365 for Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments.
+This topic explains how to export a Finance and Operations database to a file, and then reimport that file into the same instance or another instance of the application. This procedure can be used only in non-production environments.
 
 > [!NOTE]
 > This topic applies to Microsoft Azure SQL databases that are connected to sandbox user acceptance testing (UAT) environments.
 
-There are several situations where you might want to keep a copy of a Finance and Operations database process:
+There are several situations where you might want to keep a copy of a database process:
 
 - You want to make strategic backups that you can restore to later. For example, before or after a major code update, you might want copies that you can use for reference later.
 - You want to back up a database before destructive testing and then restore it after the testing is completed.
-- When you upgrade to a new major release of Finance and Operations, you can use this process to export your old test database and bring it forward to the new version.
+- When you upgrade to a new major release, you can use this process to export your old test database and bring it forward to the new version.
 
 Be aware that Microsoft also provides a standard feature that lets you restore an Azure SQL database environment to a specific point in time within the last 35 days. This restore is done via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
@@ -55,14 +55,14 @@ Be aware that Microsoft also provides a standard feature that lets you restore a
 
 [!include [dbmovement-export](../includes/dbmovement-export.md)]
 
-## Import the Finance and Operations database
+## Import the database
 
 ### Stop services
 
-Use Remote Desktop to connect to all the computers in the environment, and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database.
+Use Remote Desktop to connect to all the computers in the environment, and stop the following Windows services by using services.msc. These services will have open connections to the database.
 
 - World wide web publishing service (on all AOS computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+- Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
 ### Import the .bacpac file
@@ -84,7 +84,7 @@ Here is an explanation of the parameters:
 - **sf (source file)** – The path and name of the file to import from.
 - **tu (target user)** – The SQL user name for the target Azure SQL database instance. We recommend that you use the standard **sqladmin** user. You can retrieve the password for this user from your LCS project.
 - **tp (target password)** – The password for the target Azure SQL database user.
-- **DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current Finance and Operations database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
+- **DatabaseServiceObjective** – Specifies the performance level of the database such as S1, P2 or P4. To meet performance requirements and comply with your service agreement, use the same service objective level as the current database (AXDB) on this environment. To query the service level objective of the current database, run the following query.
 
     ```
     SELECT  d.name,   
@@ -94,7 +94,7 @@ Here is an explanation of the parameters:
     ON d.database_id = slo.database_id;  
     ```
 
-### Run a script to update the Finance and Operations database
+### Run a script to update the database
 
 If the source and target environments have different SQL user passwords, you must run the following script. You must also run this script if you aren't sure whether the passwords differ. Run the script against the imported database. The script drops the database users and then re-creates them so that they have the correct passwords for the target environment.
 
@@ -176,10 +176,10 @@ DEALLOCATE retail_ftx;
 ```
 ## Synchronize the database
 
-1. Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the Finance and Operations database. After you stop the services, you can replace the existing Finance and Operations database with the newly imported database.
+1. Use Remote Desktop to connect to all the computers in the target environment, and stop the following Windows services by using services.msc. These services will have open connections to the database. After you stop the services, you can replace the existing Finance and Operations database with the newly imported database.
 
     - World wide web publishing service (on all AOS computers)
-    - Microsoft Dynamics 365 for Finance and Operations Batch Management service (on non-private AOS computers only)
+    - Batch Management service (on non-private AOS computers only)
     - Management Reporter 2012 Process service (on business intelligence \[BI\] computers only)
 
 2. On the AOS computer where the bacpac import was performed, run the following script in Management Studio. This script renames the original database and then renames the newly imported database so that it uses the original database name. In this example, the original database was named axdb\_123456789, and the newly imported database was named importeddb.
@@ -203,10 +203,10 @@ DEALLOCATE retail_ftx;
 4. Use services.msc to restart the services that you stopped earlier:
 
     - World wide web publishing service (on all AOS computers)
-    - Microsoft Dynamics 365 for Finance and Operations Batch Management service (on non-private AOS computers only)
+    - Batch Management service (on non-private AOS computers only)
     - Management Reporter 2012 Process service (on BI computers only)
 
-5. At this point, you can open the Finance and Operations application URL and sign in. Verify that the application works as you expect. Then drop the original database by running the following script in Management Studio on the AOS computer where you performed the bacpac import.
+5. At this point, you can open the application URL and sign in. Verify that the application works as you expect. Then drop the original database by running the following script in Management Studio on the AOS computer where you performed the bacpac import.
 
     ```
     DROP DATABASE [axdb_123456789_original]

@@ -47,7 +47,7 @@ Follow these steps to set up the project.
 1.  Add a new project by clicking the plus sign (**+**).
 2.  Enter a name that uses the following project naming convention: **REG-Alerts-Country/region name**
 3.  Enter a project description.
-4.  For the product name, specify the latest version of Microsoft Dynamics 365 for Finance and Operations.
+4.  For the product name, specify the latest version of your Dynamics 365 Finance and Operations app.
 5.  For the product version, specify the latest version.
 6.  Specify the industry:
     -   Select **Other** if the solution is related to all industries.

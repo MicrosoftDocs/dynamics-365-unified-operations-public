@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Accounts payable overview
-description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
+description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: abruer
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations. It also describes setup steps that you must complete before you start to set up Accounts payable.
+This article describes the pages that you use to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
 Prerequisites for Accounts payable setup
 ----------------------------------------

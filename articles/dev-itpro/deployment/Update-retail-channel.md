@@ -5,7 +5,7 @@ title: Apply updates and extensions to cloud hosted Retail channel components
 description: This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 12/11/2018
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

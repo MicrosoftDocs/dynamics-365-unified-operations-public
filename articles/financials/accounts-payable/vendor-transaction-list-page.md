@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor transactions list page
-description: This topic provides information about the Vendor transactions list page for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the Vendor transactions list page for Microsoft Dynamics 365 Finance.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018

@@ -35,6 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
+
 In Dynamics 365 Retail, a call center is a type of Retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
 
 Call center features include advanced retail price and promotions, catalogs, gift cards, loyalty programs, and coupons. Call center orders are also leveraged by the point of sale (POS) application to support cross-channel order fulfillment scenarios.
@@ -44,6 +45,7 @@ It's important to note that while the call center module can be utilized by othe
 In addition to supporting order creation, the call center module also provides a user-friendly customer service application that makes it easier for users to locate customer accounts and review all of the related customer order data and attributes. The customer service screen is designed to enable a user to quickly access order related data that will allow them to answer the most common order-related questions received from customers.
 
 This page provides links to relevant documentation related to the setup, configuration, and functional use of the call center features in Retail.
+
 
 ## Configure the call center
 

@@ -38,7 +38,7 @@ ms.search.validFrom: 2016-11-30
 This topic provides information about the **Expense management** mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports. Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.
 
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace is intended to be used with the Dynamics 365 Unified Ops mobile app.
 
 
 ## Overview
@@ -48,11 +48,11 @@ Many organizations require that a copy of a receipt be attached to a travel-rela
 
 Specifically, the **Expense management** mobile workspace lets users perform these tasks:
 
-- Take a photo of a receipt, and upload it to Microsoft Dynamics 365 for Finance and Operations. You can then attach that photo to an expense report later.
+- Take a photo of a receipt, and upload it to Dynamics 365 Finance. You can then attach that photo to an expense report later.
 - Upload a file as a captured receipt. You can then attach that file to an expense report later.
 - Create a new expense line by using an attached receipt. You can then add the line item to an expense report later, and submit it for approval and reimbursement.
 
-If you're using Microsoft Dynamics 365 for Finance and Operations, you can also use these features:
+You can also use these features:
 
 - Create a new expense report.
 - Attach credit card transactions and other previously created expenses to an expense report.
@@ -64,13 +64,13 @@ If you're using Microsoft Dynamics 365 for Finance and Operations, you can also 
 - Approve or reject expense reports that you're an assigned approver for.
 
 ## Prerequisites
-The prerequisites vary, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+The prerequisites vary, based on the version that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
-If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Dynamics 365 Finance 
+If Finance has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
-If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
+### Prerequisites if you use version 1611 with platform update 3 or later
+If version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
 <thead>
@@ -101,7 +101,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 </table>
 
 ## Download and install the Dynamics 365 for Operations mobile app
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Dynamics 365 Unified Ops mobile app:
 
 - [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

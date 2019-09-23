@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sweden overview
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Sweden. 
+description: This topic provides links to documentation resources for Sweden. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019

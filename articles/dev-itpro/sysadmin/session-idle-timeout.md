@@ -40,6 +40,9 @@ You can set the values from 5 minutes to 60 minutes.
 
 This function has a default value of 30 minutes. You can set the value up to 60 minutes, however doing so might cause extra load on the system.
 
+> [!NOTE] 
+> This feature is available as of Platform update 29.
+
 > [!IMPORTANT]
 > If you previously set a session idle timeout in the web.config (**WebClientStatefulSessionTimeoutInSeconds** key) through a support request, then that old value will still be honored. The change in default will only affect those who had not explicitly set a new session idle timeout in the web config.
 

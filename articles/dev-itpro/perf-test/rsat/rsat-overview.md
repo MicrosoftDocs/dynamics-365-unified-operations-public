@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 ## Overview
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your Dynamics 365 for Finance and Operations production environment.
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your production environment.
 
-This tool enables functional power users to record business tasks using the Finance and Operations Task recorder and convert these recordings into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services (LCS) using the Business Process Modeler (BPM) libraries. These libraries are also fully integrated with Azure DevOps Services (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
+This tool enables functional power users to record business tasks using the Task recorder and convert these recordings into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services (LCS) using the Business Process Modeler (BPM) libraries. These libraries are also fully integrated with Azure DevOps Services (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
 RSAT usage is described in these topics:
 
@@ -51,7 +51,7 @@ RSAT usage is described in these topics:
 
 
 ## End-to-end flow
-This tool is part of the end to end flow described below. Finance and Operations, along with LCS and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
+This tool is part of the end to end flow described below. The application, along with LCS and Azure DevOps, provide a set of tools for test case authoring (using Task recorder), configuration, execution, investigation, and reporting.
 
 ![Author, configure, and execute](media/end-to-end.png)
 
@@ -60,7 +60,7 @@ To learn more about this this process, see [Create and automate user acceptance 
 ## Lifecycle Services
 Using Lifecycle Services (LCS) and BPM is recommended but not required. BPM is a great tool to manage and distribute test libraries, especially for Microsoft partners and independent software vendors. 
 
-You can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. Developer recording files can be created directly from the Task recorder pane in Finance and Operations.
+You can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. Developer recording files can be created directly from the Task recorder pane.
 
 ![Save task recording as developer](media/save-as-developer.png)
 
@@ -76,7 +76,7 @@ The Regression suite automation tool is intended to be used for business cycle t
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
 
 ### Unit and component testing
-For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools of Finance and Operations. For component tests, take advantage of the [Acceptance Test Library](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
+For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance Test Library](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
 + Lets you create consistent test data.
 + Increases the readability of test code.
 + Provides improved discoverability of the methods that are used to create test data.

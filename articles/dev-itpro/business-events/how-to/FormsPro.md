@@ -55,7 +55,7 @@ If you haven't used Forms Pro before, you should first read the [Forms Pro docum
 
     The customer email address and other information that is required for the scenario must be in the payload of the business event. If the payload doesn't have this data, it can be extended so that it includes the appropriate fields. For more information, see the [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
 
-4. Because Microsoft Flow is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in Microsoft Dynamics 365 for Finance and Operations. Instead, set up Microsoft Flow so that it subscribes directly to the business event.
+4. Because Microsoft Flow is used to orchestrate this scenario, don't activate the **When a change based alert occurs** business event in the application. Instead, set up Microsoft Flow so that it subscribes directly to the business event.
 
     ![Flow](../../media/Flow1.png)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to network printers across legal entities
-description: This topic provides information about how to use the new System administration utility to set up network printers.
+description: This topic provides information about how to use the System administration utility to set up network printers.
 author: tjvass
 manager: AnnBe
 ms.date: 12/11/2018
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Access to the new System administration utility is managed by the Carbon Flighting Service. Microsoft Dynamics 365 for Finance and Operations platform update 23 (December 2018) includes the **System network printers management** page for system admins.
+> Access to the System administration utility is managed by the Carbon Flighting Service. The **System network printers management** page is only available for system admins.
 
-Domain admins register network printers with the Microsoft Dynamics 365 for Finance and Operations service by using the Document Routing Agent (DRA). After the printers are registered, the organization admin is responsible for making them available to users. The settings are managed on the **Manage network printers** page (**Organization administration** \> **Setup** \> **Network printers**).
+Domain admins register network printers with the Finance and Operations service by using the Document Routing Agent (DRA). After the printers are registered, the organization admin is responsible for making them available to users. The settings are managed on the **Manage network printers** page (**Organization administration** \> **Setup** \> **Network printers**).
 
 Because the settings on the **Manage network printers** page are intended for organization admins, the data is limited to the active legal entity. Because system admins can't manage network printer settings across legal entities, it can be difficult to update settings across legal entities in some situations, such as when network printer changes occur. For example, a network printer instance is deleted when a network printer path is updated or hardware is replaced, or someone tries to purge all documents in the printer queue.
 

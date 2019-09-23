@@ -39,7 +39,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The **Cost management** Microsoft Power BI content is intended for inventory accountants or individuals in the organization who are responsible for or interested in the status of inventory or work in progress (WIP), or who are responsible for or interested in analyzing standard cost variances.
 
 > [!NOTE]
-> The **Cost management** Power BI content described in this this topic applies to Dynamics 365 for Finance and Operations 8.0.
+> The **Cost management** Power BI content described in this this topic applies to Dynamics 365 Finance and Operations 8.0.
 > 
 > The **Cost management** Power BI content pack, available on the AppSource site, has been deprecated. For more information about that deprecation, see [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
@@ -176,7 +176,7 @@ The following tables provide an overview of the visualizations in the **Cost man
 
 ## Understanding the data model and entities
 
-Data from Microsoft Dynamics 365 for Finance and Operations is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
+Data from the application is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
 
 The key aggregate measurements of the following objects are used as the basis of the Power BI content.
 

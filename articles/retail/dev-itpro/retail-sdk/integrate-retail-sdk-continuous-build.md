@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes the steps for merging the build systems for both Dynamics 365 for Finance and Operations, and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Azure DevOps. 
+This article describes the steps for merging the build systems for Finance and Operations apps and Dynamics 365 for Retail. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Finance and Operations and Retail components. This article outlines the manual steps for merging both build systems using Azure DevOps. 
 
 ## Enable the build system
 

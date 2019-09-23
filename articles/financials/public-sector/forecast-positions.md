@@ -2,7 +2,7 @@
 # required metadata
 
 title: Forecast position distribution
-description: This topic provides information about the position budgeting functionality that is available for the public sector in Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides information about the position budgeting functionality that is available for the public sector. 
 author: velofog
 manager: AnnBe
 ms.date: 08/07/2019

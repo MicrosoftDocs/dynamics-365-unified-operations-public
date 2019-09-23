@@ -426,7 +426,7 @@ During an export, column names will be exported in uppercase. Imports are not ca
 ## Tips and tricks
 
 ### Max join limits
-During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit in Finance and Operations. Increasing the join limit is not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
+During entity development, take care to ensure that the overall structure of the entity does not exceed the max join limit of 26. This is the default limit. Increasing the join limit is not recomended becaues it can have unintended consequences. If this limit is exceeded, the entity will most likely fail to process records and will result in the following SQL error. It is also recomended to manage the total number of columns in the entity to avoid this error.
 
 ```
 Cannot create a row of size xxx which is greater than the allowable maximum row size of 8060

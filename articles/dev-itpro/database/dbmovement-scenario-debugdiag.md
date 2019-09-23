@@ -2,7 +2,7 @@
 # required metadata
 
 title: Debug a copy of the production database
-description: This topic explains a debugging and diagnostics scenario for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains a debugging and diagnostics scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 03/11/2019
@@ -42,7 +42,7 @@ In this tutorial, you will learn how to:
 > * Update your developer environment so that it connects to the UAT database.
 > * Set a breakpoint, and start to debug the data.
 
-As an example of this scenario, a customer who has already gone live with Microsoft Dynamics 365 for Finance and Operations wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions that are stuck, or develop new features and reports by using realistic datasets.
+As an example of this scenario, a customer who has already gone live wants to debug a recent copy of production transactions from his or her development environment. In this way, the customer will be able to debug specific transactions that are stuck, or develop new features and reports by using realistic datasets.
 
 ## Prerequisites
 

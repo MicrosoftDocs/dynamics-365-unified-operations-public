@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 1
 If you're a power user or a business analyst, you probably create many reports for your organization. You might create these reports in Microsoft Excel by formatting and relating data before you share it with other people. People in your organization might even come to you when they require modifications to the report. This solution offers an easy way to create rich, interactive reports. As a report writer, you can use Microsoft Power BI Desktop as the reporting tool. The reports that you create can then be published to PowerBI.com. For more information about Power BI Desktop, see [Create stunning reports and visualizations with Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
 ## Accessing the local Entity Store by using DirectQuery
-In Microsoft Dynamics 365 for Finance and Operations, you can create Microsoft Power BI reports by using Open Data Protocol (OData) endpoints that are exposed via data entities. Despite the limitations of this approach, the Entity Store still supports it for legacy solutions. However, DirectQuery is now the preferred method for sourcing data for analytical solutions. For more information about the benefits and limitations of DirectQuery, see [Use DirectQuery in Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/).
+You can create Microsoft Power BI reports by using Open Data Protocol (OData) endpoints that are exposed via data entities. Despite the limitations of this approach, the Entity Store still supports it for legacy solutions. However, DirectQuery is now the preferred method for sourcing data for analytical solutions. For more information about the benefits and limitations of DirectQuery, see [Use DirectQuery in Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-use-directquery/).
 
 When you use Power BI Desktop, you can create a report in your development or test environment by connecting directly to the local Entity Store database. When you're satisfied with the report, your administrator can help you migrate it to your production environment. The rest of this section walks you through this process.
 
@@ -47,7 +47,7 @@ When you use Power BI Desktop, you can create a report in your development or te
 ### Step 1: Populate the local Entity Store database
 For this example, we will stage the aggregate models that the Retail analytical solution consumes in the local Entity Store. The models that the Retail application uses are defined in the RetailCube aggregate measurement. 
 
-1. In the Finance and Operations client, open the **Entity Store** page. (Select **System administration** \> **Setup** \> **Entity Store**.) 
+1. In the client, open the **Entity Store** page. (Select **System administration** \> **Setup** \> **Entity Store**.) 
 2. Select the **RetailCube** aggregate measurement, and then select **Refresh**. 
 3. Enter a name for the job that will be run in the background, and then select **OK**.
 
@@ -91,4 +91,4 @@ Power BI Desktop also supports the creation of calculations and lets you combine
 
 ## Validating reports in a demo environment
 
-The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the Finance and Operations client. 
+The report shows the demo or test data in your developer environment. If you want to integrate the report into a demo environment, you can continue to publish this report to your PowerBI.com account and pin it to the client. 

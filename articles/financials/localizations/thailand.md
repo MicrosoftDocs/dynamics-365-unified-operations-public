@@ -2,7 +2,7 @@
 # required metadata
 
 title: Thailand overview
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Thailand. 
+description: This topic provides links to documentation resources for Thailand. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019

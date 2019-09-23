@@ -39,7 +39,7 @@ This topic provides information about the **Vendor collaboration** mobile worksp
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
 ## Overview 
-The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the Microsoft Dynamics 365 for Finance and Operations, web client. 
+The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the Finance and Operations, web client. 
 
 >[!NOTE]
 > The mobile workspace should be used as a supplement to the vendor collaboration web interface, not a replacement for it. 
@@ -65,8 +65,8 @@ The **Vendor collaboration** mobile workspace lets a vendor perform these tasks:
 ## Prerequisites
 The prerequisites vary, depending on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
-If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Finance and Operations 
+If Finance and Operations has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
 If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

@@ -38,7 +38,7 @@ When you plan and set up your chart of accounts, you must consider how the vario
 
 ## Chart of accounts and financial dimension components
 
-Microsoft Dynamics 365 for Finance and Operations, has a rich, rule-based system for defining valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
+A rich, rule-based system is used to define valid combinations of main accounts and financial dimension values. This section gives a brief overview of the functionality of each component and explains where you can find the component.
 
 ### Account structures
 
@@ -121,7 +121,7 @@ To achieve what you want in this example, you can change the configuration in se
 
 ## Additional resources 
 
-Some of the following resources refer to an earlier version of Finance and Operations. However, much of the information about the application of default dimensions and many of the concepts are the same in the earlier version, and the references are still valid.
+Some of the following resources refer to an earlier version of our software. However, much of the information about the application of default dimensions and many of the concepts are the same in the earlier version, and the references are still valid.
 
 [Balanced journals for interunit accounting](example-balanced-journals-interunit-accounting.md)
 

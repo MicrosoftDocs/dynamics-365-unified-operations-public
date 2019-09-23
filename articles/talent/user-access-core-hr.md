@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: User can access Core HR but not the Onboard or Attract app
-description: This topic explains how to resolve the issue where a user can access Microsoft Dynamics 365 for Talent Core HR, but can't access the Attract or Onboard app.
+title: User can access Core HR but not Onboard or Attract
+description: This topic explains how to resolve the issue where a user can access Microsoft Dynamics 365 Talent - Core HR, but can't access Attract or Onboard.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -30,14 +30,14 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# User can access Core HR but not the Onboard or Attract app
+# User can access Core HR but not Onboard or Attract
 
 [!include [banner](includes/banner.md)]
 
 **Environment details**
 
 - The Microsoft Dynamics Lifecycle Services (LCS) deployment was done by user A.
-- User A added user B as a user to Microsoft Dynamics 365 for Talent Core HR.
+- User A added user B as a user to Microsoft Dynamics 365 Talent: Core HR.
 
 **Issue**
 

@@ -40,7 +40,7 @@ These steps can be completed using any dataset. Before you begin, download and s
 1. Go to Organization administration > Workspaces > Electronic reporting.
     * Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active. If you don’t see this configuration provider, complete the steps in the procedure, “Create a configuration provider and mark it as active”.  
 2. Click Reporting configurations.
-    * The following scenario will be used to show the capabilities of parsing incoming electronic documents in XML format: ERP application (Dynamics 365 for Finance and Operations)  requests data from the web service (such as http://efsta.org/ EFSTA fiscal service) and parses the incoming responses to update application data accordingly. For the most efficient way to parse, a single ER format is used despite the different structure of expected incoming documents in XML format.   
+    * The following scenario will be used to show the capabilities of parsing incoming electronic documents in XML format: ERP application requests data from the web service (such as http://efsta.org/ EFSTA fiscal service) and parses the incoming responses to update application data accordingly. For the most efficient way to parse, a single ER format is used despite the different structure of expected incoming documents in XML format.   
 
 ## Import and review ER configurations
 Import the ER model configuration that contains the sample data model designed to store the details of the incoming file.  

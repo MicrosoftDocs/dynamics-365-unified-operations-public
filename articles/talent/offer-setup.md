@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up offer management
-description: This topic describes how to set up offers in Talent.
+description: This topic describes how to set up offers in Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-When a candidate is moved to the offer stage in Dynamics 365 for Talent: Attract, you need to ensure that the
+When a candidate is moved to the offer stage in Dynamics 365 Talent: Attract, you need to ensure that the
 offers can be quickly created for the candidate, approved as necessary, and sent
 out to the candidate. Because most offers are standard, they can be created from reusable templates. In Attract, all
 offers are rolled into an offer package, which is a collection of one or

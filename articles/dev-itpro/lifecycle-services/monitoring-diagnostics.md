@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
-description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
+description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Finance and Operations environments that you manage.
 author: manalidongre
 manager: AnnBe
 ms.date: 07/02/2019
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Finance and Operations environments that you manage.
+This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Dynamics 365 Finance and Operations app environments that you manage.
 
-To have a successful onboarding experience to the cloud service for Microsoft Dynamics 365 for Finance and Operations, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for Dynamics 365 for Finance and Operations, contains a collection of monitoring and diagnostics tools that can help to ensure that you have an accurate view of the environments that you manage.
+To have a successful onboarding experience to the cloud service for Finance and Operations, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help to ensure that you have an accurate view of the environments that you manage.
 
 ## Telemetry data
 
@@ -61,7 +61,7 @@ Analytics is another critical use case for the telemetry data that is collected.
 
 ## Responsibilities
 
-For a managed cloud service such as Dynamics 365 for Finance and Operations, Microsoft is responsible for actively monitoring the health of production environments at all times. If a customer's environment is affected by an issue, the Microsoft Service Engineering team is immediately alerted. The team will start to investigate the issue and will work with you to find a resolution. However, you're responsible for proactively or reactively monitoring and troubleshooting the health of non-production environments.
+For a managed cloud service such as Finance and Operations, Microsoft is responsible for actively monitoring the health of production environments at all times. If a customer's environment is affected by an issue, the Microsoft Service Engineering team is immediately alerted. The team will start to investigate the issue and will work with you to find a resolution. However, you're responsible for proactively or reactively monitoring and troubleshooting the health of non-production environments.
 
 ## Access the Monitoring and diagnostics portal
 

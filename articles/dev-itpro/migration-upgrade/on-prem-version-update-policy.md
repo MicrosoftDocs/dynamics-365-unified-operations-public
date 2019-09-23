@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software lifecycle policy and on-premises releases
-description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
+description: This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 author: meeramahabala
 manager: AnnBe
 ms.date: 03/20/2019
@@ -33,21 +33,21 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 for Finance and Operations (on-premises) releases.
+This topic outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 
 ## Modern Lifecycle Policy 
-Microsoft Dynamics 365 for Finance and Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
+Finance + Operations (on-premises) software is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881/modern-lifecycle-policy).  
 
-Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations on-premises software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, the customer will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance and Operations (on-premises) software. 
+Licensed customers must stay current with updates to the Finance + Operations (on-premises) software in accordance with the following servicing and system requirements. This policy requires that the customer maintain Software Assurance (SA) or the Enhancement Plan, and deploy updates as noted later in this topic. Customers who want to use the Fixed Support Lifecycle Policy (5+5) must downgrade to Microsoft Dynamics AX 2012 R3. If a customer lapses on SA or the Enhancement Plan, the customer will be eligible only for the perpetual license rights to Microsoft Dynamics AX 2012 R3 and must uninstall Microsoft Dynamics 365 for Finance and Operations (on-premises) software. 
 
 ## On-premises software update policies 
-The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Dynamics 365 for Finance and Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
+The customer is in full control of its on-premises deployments and must follow this policy. The customer is in control of installing updates in its on-premises environments. Microsoft will support the Finance + Operations (on-premises) software through December 31, 2027, at a minimum, but only if the customer keeps the deployed software current according to this policy.
 
 Critical fixes and non-critical updates are handled in the following way: 
   - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to support reliability and availability. Critical fixes will be made available in the latest platform update version.  
   - **Non-critical updates** – Customers must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates.   
 
-## Dynamics 365 for Finance and Operations on-premises release dates
+## Finance + Operations (on-premises) release dates
 
 ### Continuous service updates
 As of November 2018, on-premises service updates are released continuously.  For more information about version numbers and availability dates, see [Software lifecycle policy and cloud releases](versions-update-policy.md). For more information about One Version service updates, see [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
@@ -74,11 +74,11 @@ Platform releases expire at the end of the month of their software lifecycle.
 | [Continuous service updates](on-prem-version-update-policy.md#continuous-service-updates)| - | - | - | - |
 |  Platform update 20 | 7.0.5030  | November 2018  | February 2019 | December 2027     |
 |  Platform update 15 | 7.0.4841  | June 2018  | September 2018 | December 2027     |
-|  Platform Update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
-|  Platform Update 11 | 7.0.4679.35176 | October 2017 | April 2018 | December 2027     |
-|  Platform Update 10 | 7.0.4641.16233 | August 2017 | April 2018 | December 2027     |
-|  Platform Update 9 | 7.0.4612.35162 | August 2017 | April 2018 | December 2027     |
-|  Platform Update 8 | 7.0.4565.1612 | July 2017 | April 2018 | December 2027     |
+|  Platform update 12 | 7.0.4709.41182  | March 2018  | June 2018 | December 2027     |
+|  Platform update 11 | 7.0.4679.35176 | October 2017 | April 2018 | December 2027     |
+|  Platform update 10 | 7.0.4641.16233 | August 2017 | April 2018 | December 2027     |
+|  Platform update 9 | 7.0.4612.35162 | August 2017 | April 2018 | December 2027     |
+|  Platform update 8 | 7.0.4565.1612 | July 2017 | April 2018 | December 2027     |
 
   > [!NOTE]
   > Platform releases are cumulative in nature. Any fixes, critical or non-critical, will require customers to take the latest available version of the platform. 

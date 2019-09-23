@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Retail for France
 
-This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 Retail documentation](../index.md).
 
 To use the France-specific functionality for Retail, you must complete these tasks:
 
@@ -220,7 +220,9 @@ You must make the following changes on the **Legal entities** page. These settin
 
 ### Set up VAT per French requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 

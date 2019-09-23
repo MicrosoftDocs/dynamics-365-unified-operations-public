@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (August 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Talent August 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (August 2018)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.104**
 
-This topic describes features that are either new or changed in Dynamics 365 for
-Talent Core HR.
+This topic describes features that are either new or changed in Dynamics 365 Talent: Core HR.
 
 ## View expiring records in Manager self service
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: On-premises deployment overview
-description: Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises or Local Business Data (LBD) deployment option. 
+description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. 
 author: kfend
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,17 +33,18 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations, now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center. Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments. LCS is an application management portal that provides tools and services for managing the application lifecycle of your Microsoft Dynamics 365 for Finance and Operations implementations in the cloud and on-premises. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments. 
+Microsoft Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center. Customers and partners will utilize Microsoft Dynamics Lifecycle Services (LCS) to manage their on-premises deployments. LCS is an application management portal that provides tools and services for managing the application lifecycle of your implementations in the cloud and on-premises. LCS features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, are used to help support on-premises deployments.
+
 > [!IMPORTANT]
-> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
+> Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Azure. 
 
 ## Architecture 
 
-The on-premises deployment option uses Finance and Operations cloud components running on-premises using Microsoft Azure Server Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server. 
+The on-premises deployment option uses cloud components running on-premises using Microsoft Azure Server Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server. 
 
 On-premises deployment defines two types of Service Fabric standalone clusters: clusters for production environments and clusters for sandbox environments. The following roles or node types are deployed into both types of clusters: 
 
-- Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios. 
+- Application Object Servers (AOS) – Provides the ability to run the application functionality in client, batch, and import/export scenarios. 
 - Management Reporter (MR) – Provides financial reporting functionality. 
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality. 
 - Environment Orchestrator – Enables on-premises environment management from LCS. 

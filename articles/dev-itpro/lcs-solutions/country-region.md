@@ -31,15 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0
 # Globalization resources
 
 ## Local and regional deployments
-If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider when you deploy Finance and Operations. Consider the following resources that might be relevant to you:
+If your government regulations require data to be stored differently or serviced differently than is required for other countries/regions, there might be country/region requirements you must consider during deployment. Consider the following resources that might be relevant to you:
 
-[Microsoft Dynamics 365 for Finance and Operations - operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Microsoft Dynamics 365 Finance and Operations apps operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## Localization and regulatory features
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations includes functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
+Dynamics 365 Finance and Operations apps include functionality for the country/regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you do the following: 
 - Learn more about developing country/region-specific solutions.
@@ -70,8 +70,8 @@ The following resources provide information about planned and new localization f
 #### Dynamics 365 release notes
 The [Dynamics 365 release notes](https://docs.microsoft.com/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
 
-#### Finance and Operations what's new
-The [What's new content](../../fin-and-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of Finance and Operations.
+#### Finance and Operations apps what's new
+The [What's new content](../../fin-and-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of the Finance and Operations apps.
 
 ### Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
@@ -88,7 +88,7 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 ### Task guides
 Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
 
-To find task guides, navigate to a page in Microsoft Dynamics 365 for Finance and Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
+To find task guides, navigate to a page in in the application and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
 
 To learn more, see [Task guides](../../fin-and-ops/get-started/help-overview.md#task-guides).
 

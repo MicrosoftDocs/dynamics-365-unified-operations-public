@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include[banner](../includes/banner.md)]
 
-You can streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Microsoft Dynamics 365 for Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
+You can streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
 
 The embedded viewer offers consistency between the screen presentation and the printed output. In addition, report viewing times are drastically reduced when compared to the legacy experience. The Preview option is available on all supported devices and does not require any additional third-party software. Documents can be easily downloaded and navigated by using the built-in viewer toolbar options.
 
@@ -56,7 +56,7 @@ The hosted PDF document viewer control is automatically available in most deploy
 ## Additional feature information
 
 - Expandable/collapsible sections are available by default. These interactive operations do not function after the PDF document has been created.
-- The printer drop-down menu allows users to choose from locally connected devices. This list does not include network printers connected through the Finance and Operations service.
+- The printer drop-down menu allows users to choose from locally connected devices. This list does not include network printers connected through the service.
 - Documents are downloaded to the local device using the built-in toolbar actions.
 - Application extensions are available to activate embedded drill-thru links in PDF documents.
 - Use the **Print destination** options to produce documents in formats other than PDF.

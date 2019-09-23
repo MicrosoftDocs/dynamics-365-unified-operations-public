@@ -49,10 +49,9 @@ To view available updates:
         
     If you're running an environment that has Retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 for Retail, all updates, even updates for application models, are released as binary updates.    
     
-    For all versions of Microsoft Dynamics 365 for Retail, and Microsoft Dynamics 365 for Finance and Operations version 8.1 and later, all updates, including updates for application models, are released as binary updates.
+    For all versions of Microsoft Dynamics 365 for Retail, and Finance and Operations apps that are version 8.1 and later, all updates, including updates for application models, are released as binary updates.
 
-- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, X++ updates must be compiled in a developer environment and merged with any customizations. X++ updates apply only to Microsoft Dynamics 365 for Finance and Operations version 8.0 and earlier. 
-
+- **X++ updates** include updates to specific application functionality in application models. These updates can be independently downloaded and applied. You can select specific X++ updates to apply to your environment. Dependent X++ updates are automatically selected and downloaded. X++ updates are source code updates. Before they can be applied to a non-development environment, X++ updates must be compiled in a developer environment and merged with any customizations. X++ updates apply only to version 8.0 and earlier. 
 
 ## Update option by product and version
 Based on your product and version, you will have different update options from Lifecycle Services.  
@@ -60,9 +59,9 @@ Based on your product and version, you will have different update options from L
 ### Dynamics 365 for Retail 
 - **Application version 8.0 and earlier** - There will be a single tile that is a cumulative, combined binary update of all the application and platform changes.
 
-- **Application version 8.1 and later** - This includes the same update options as Dynamics 365 for Finance and Operations for version 8.1 and later, as described in the following section.
+- **Application version 8.1 and later** - This includes the same update options as version 8.1 and later, as described in the following section.
 
-### Dynamics 365 for Finance and Operations
+### Finance and Operations
 - **Application version 8.1 and later** - All updates for version 8.1 and later will be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
 
      Based on your environment version and the [service update availability](../../fin-and-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  

@@ -44,7 +44,7 @@ The degree of detail in a WBS depends on the level of accuracy that is required 
 
 By contrast, projects in industries such as media and advertising, software, and IT infrastructure tend to be one of a kind, and productivity is relative to the experience and competency of the individual who is performing the task. Therefore, these industries use a WBS to get an approximation of the size of a project, not to track the progress of that project in detail. 
 
-Building a WBS is an intensive process that is usually done over a long period, and that requires collaboration and information from a wide variety of people. This topic describes how you can use WBS enhancements in Microsoft Dynamics 365 for Finance and Operations to meet your requirements for estimates and tracking.
+Building a WBS is an intensive process that is usually done over a long period, and that requires collaboration and information from a wide variety of people. This topic describes how you can use WBS enhancements to meet your requirements for estimates and tracking.
 
 ## Prerequisites for creating a WBS
 To create a WBS, you must be able to create a work schedule and estimate the cost of work.
@@ -113,11 +113,11 @@ When you click **Move up** and **Move down**, you change the position of a task 
 
 ### Schedule estimation
 
-Schedule estimation is usually the second step in creating a WBS. As a best practice, you should complete schedule estimation after you create the tasks. The **Work breakdown structure** page in Finance and Operations has two sections. The upper pane is intended for schedule estimation, and the lower pane includes an **Estimated costs and revenues** tab that you can use for cost estimation. 
+Schedule estimation is usually the second step in creating a WBS. As a best practice, you should complete schedule estimation after you create the tasks. The **Work breakdown structure** page in Finance has two sections. The upper pane is intended for schedule estimation, and the lower pane includes an **Estimated costs and revenues** tab that you can use for cost estimation. 
 **Task dependencies** 
 In a WBS, you can create a predecessor relationship between tasks. When you assign predecessor tasks to a task, that task can start only after all its predecessor tasks have been completed. The planned start date of the task is automatically set to the latest date of all its predecessors. 
 
-**Task scheduling in Microsoft Dynamics 365 for Finance and Operations** 
+**Task scheduling** 
 The following factors determine the scheduling of leaf node tasks:
 
 -   Predecessors
@@ -136,7 +136,7 @@ When automatic scheduling assistance is turned on, the following rules apply to 
 
 Number of people × Duration × Number of hours in a standard working day in the project calendar. 
 
-In some cases, you might want to deviate from these rules. You can turn off automatic scheduling to prevent Finance and Operations from automatically setting or correcting any properties of leaf node tasks. When you enter information for a task that causes a violation of any scheduling rules, a scheduling error icon is shown for the task. 
+In some cases, you might want to deviate from these rules. You can turn off automatic scheduling to prevent Finance from automatically setting or correcting any properties of leaf node tasks. When you enter information for a task that causes a violation of any scheduling rules, a scheduling error icon is shown for the task. 
 If you don’t want scheduling errors to be displayed, click **Scheduling errors are shown** to turn off the feature. 
 
 > [!NOTE] 
@@ -149,7 +149,7 @@ When automatic scheduling assistance is turned on, scheduling errors aren’t li
 When you double-click the schedule error icon for a specific task, a dialog box displays all the scheduling errors for that task. You can decide which scheduling errors to fix for the task. 
 
 **Fixing all scheduling errors** 
-If you want Finance and Operations to fix all scheduling errors in the WBS, on the Action Pane, click **Fix all scheduling discrepancies**. 
+If you want Finance to fix all scheduling errors in the WBS, on the Action Pane, click **Fix all scheduling discrepancies**. 
 
 > [!NOTE] 
 > This feature can cause significant modifications to the WBS. Errors are corrected in the following order:
@@ -185,7 +185,7 @@ The cost and sales price for each labor or expense estimate line are based on th
 ## Tracking progress on the WBS
 Some industries track the progress of a project against a WBS at a very granular level, whereas others track progress at a higher level of the WBS. This section describes how you can use WBS tracking for your project requirements. 
 
-Finance and Operations has three views for the WBS of a project: the Planning view, Effort tracking view, and Cost tracking view.
+Finance has three views for the WBS of a project: the Planning view, Effort tracking view, and Cost tracking view.
 
 ### Planning view
 
@@ -265,14 +265,14 @@ The time phase on the earned value chart is displayed by week or by month. This 
 **Planned value** 
 EVM theory states that the planned value plot represents the rate at which the project’s team planned to earn value on the project. 
 
-Finance and Operations uses the 0:100 earning rule when it plots planned value. Under this rule, the value of the task is posted to the task as of its end date. No value is posted until the task is 100 percent completed. 
+Finance uses the 0:100 earning rule when it plots planned value. Under this rule, the value of the task is posted to the task as of its end date. No value is posted until the task is 100 percent completed. 
 
 In Project management and accounting, you enter the end date of the leaf nodes and the planned cost for it. When the graph of planned value is displayed by week, planned value is summarized by week for all leaf node tasks for the duration of the project. 
 
 **Earned value** 
 EVM theory states that the earned value plot represents the rate at which the project’s team is actually earning value on the project. 
 
-Finance and Operations uses the 0:100 earning rule when its plots earned value. Under this rule, the value of the task is posted to the task as of its end date. No value is posted until the task is 100 percent completed. 
+Finance uses the 0:100 earning rule when its plots earned value. Under this rule, the value of the task is posted to the task as of its end date. No value is posted until the task is 100 percent completed. 
 
 When earned value is calculated, the progress percentage of each task is considered. Under the 0:100 earning rule, only tasks that are completed in a given period are considered for the calculation of earned value as of the end of that period. Earned value on the project is calculated for all tasks that have been completed when the graph is created. 
 

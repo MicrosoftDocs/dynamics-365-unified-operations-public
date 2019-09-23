@@ -88,7 +88,7 @@ Before you begin, make sure that the following parameters are set up on the **Pa
 Pay statements are generated for the pay cycle, pay period, and payment run type that you specify. When you generate pay statements, all released earnings that match the specified criteria are automatically collected. Before you generate a pay statement, you must generate and release the earnings for the pay cycle and pay period. For more information, see [Generate earnings](noam-usa-generate-earnings.md) and [Work with existing earnings](noam-usa-existing-earnings.md).
 
 > [!NOTE]
-> If a worker payment occurs outside Microsoft Dynamics 365 for Finance and Operations, see "Record payments made outside Payroll" in [Pay statements and the payment generation process FAQ](noam-usa-pay-statements-payment-generation-process.md).
+> If a worker payment occurs outside the system, see "Record payments made outside Payroll" in [Pay statements and the payment generation process FAQ](noam-usa-pay-statements-payment-generation-process.md).
 
 To generate pay statements, follow these steps.
 

@@ -91,7 +91,7 @@ For more information about each service, see the CRT request/response document i
 | ShippingService            | This service calculates shipping costs and determines shipping options for the current order. |
 | StockCountService          | This service creates, commits, and synchronizes stock journals. |
 | StoreOperationService      | This service maintains store-related operation services, such as Save and Drop, Tender declaration, and Search journal. |
-| TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information from Microsoft Dynamics 365 for Finance and Operations, or from a third-party sales tax service. |
+| TaxService                 | This service calculates the sales tax for the current order. You can use sales tax information provided, or from a third-party sales tax service. |
 | TotalingService            | This service calculates the totals on the sales transactions and sales lines. |
 
 For extension scenarios, you can override any of the requests in the service class. For example, to change the customer search flow, extend the **CustomersSearchServiceRequest** request from the **CustomerService** service.

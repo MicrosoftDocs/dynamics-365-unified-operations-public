@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create configuration providers and mark them as active
-description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER) in Dynamics 365 for Finance and Operations. 
+description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). 
 author: NickSelin
 manager: AnnBe 
 ms.date: 07/02/2019

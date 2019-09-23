@@ -2,7 +2,7 @@
 # required metadata
 
 title: Changes in X++ and the X++ compiler
-description: This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic reviews the changes made to the compiler for Finance and Operations applications.
 author: pvillads
 manager: AnnBe
 ms.date: 11/03/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Finance and Operations. The X++ compiler has been rewritten. No backward-incompatible changes have been introduced to X++ except where required by structural changes to the product. A few language enhancements have been added. A new X++ best practice tool has also been implemented, which allows the addition of user-defined custom rules.
+This topic reviews the changes made to the compiler for Finance and Operations applications. The X++ compiler has been rewritten. No backward-incompatible changes have been introduced to X++ except where required by structural changes to the product. A few language enhancements have been added. A new X++ best practice tool has also been implemented, which allows the addition of user-defined custom rules.
 
 ## No more p-code, everything is in .NET Framework CIL
 Through Microsoft Dynamics AX 2012, X++ source code was compiled into p-code, which was understood by the interpreter at run time. Optionally, you could then compile the p-code into Microsoft .NET CIL (Common Intermediate Language). CIL is what the .NET compilers for C\# and Visual Basic generate. However, X++ CIL code was usable only in limited cases, mainly for code executed in services and batch jobs. The new X++ compiler generates CIL only. There is no more p-code. The following tools that worked with p-code are now obsolete and have been removed from Dynamics AX and replaced by .NET tools:
@@ -103,7 +103,7 @@ There are a few changes to X++ that require corresponding changes in legacy cust
     -   `pause`
     -   `window`
 -   In legacy X++, it was possible to designate a method to run either on the client or the server. This is no longer possible. All compiled X++ code is executed as .NET CIL on the server. There is no longer any X++ code that is evaluated at the client site or in the browser, therefore, the two keywords, *client* and *server*, are now ignored. Their use doesn't cause a compile error, but they should not be used in any new X++ code.
--   In Microsoft Dynamics AX 2012, there were a few areas where X++ behaved differently when compiled to p-code versus CIL. In Dynamics 365 for Finance and Operations, all these areas behave as they did in CIL in Microsoft Dynamics AX 2012. The significant behavioral differences between X++ p-code versus X+ as CIL were as follows:
+-   In Microsoft Dynamics AX 2012, there were a few areas where X++ behaved differently when compiled to p-code versus CIL. In Finance and Operations applications, all these areas behave as they did in CIL in Microsoft Dynamics AX 2012. The significant behavioral differences between X++ p-code versus X+ as CIL were as follows:
     -   In CIL, the `real `data type is represented as `System.Decimal`. This means the range and precision for each `real` is different than it was under p-code. This change was already in effect in Microsoft Dynamics AX 2012 when .NET CIL was run.
     -   An assignment of one entire array to another was performed in value in p-code mode, but it's performed by reference in CIL mode.
     -   CIL helper methods such as `Global::runClassMethodIL` have been removed, since they're no longer relevant.

@@ -135,7 +135,8 @@ Additionally, on the **Bank account information** FastTab, in the **Routing numb
 
 ### Set up value-added tax (VAT) per Norwegian requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Finance and Operations, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in Norway.
 

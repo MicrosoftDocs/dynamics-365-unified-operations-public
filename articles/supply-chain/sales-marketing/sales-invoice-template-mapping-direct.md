@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
-description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales. 
+description: This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Finance and Operations to Dynamics 365 Sales. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Microsoft Dynamics 365 for Finance and Operations, to Microsoft Dynamics 365 for Sales.
+This topic discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Finance and Operations to Dynamics 365 Sales.
 
 ## Data flow in Prospect to cash
 

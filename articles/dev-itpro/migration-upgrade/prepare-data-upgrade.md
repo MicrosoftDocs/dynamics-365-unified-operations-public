@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
-description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Finance and Operations.
 author: robadawy
 manager: AnnBe
 ms.date: 02/27/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Microsoft Dynamics 365 for Finance and Operations.
+This topic describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to Finance and Operations.
 
 ## Installation
 Use the pre-upgrade checklist to enter data that will be required for the upgrade procedure. 
@@ -60,7 +60,7 @@ If the process is successful, the task is marked as completed.
 
 Another goal during data upgrade is to preserve security role assignments. This task resembles the previous “Prepare model metadata” task. Security role information that is stored in the AX 2012 model database must be copied to the AX 2012 business data database, so that the information is preserved in the Finance and Operations environment after upgrade. During data upgrade runs, the same security role will be restored in the upgraded Finance and Operations environment.
 
-1. In the Dynamics 365 for Finance and Operations data upgrade checklist, click **Prepare security role metadata**.
+1. In the Finance and Operations data upgrade checklist, click **Prepare security role metadata**.
 1. When you’re prompted, click **Yes**.
 1. Wait for the copy process to be completed.
 

@@ -80,6 +80,8 @@ When you define the call center channel, you must link channel users to the call
 
 By default, the **Retail sale** flag on the sales order header is turned on for all orders that call center users create. The orders can then take advantage of the system's retail-specific price and promotions features.
 
-Users who aren't linked to a call center channel use the standard order entry features of Finance and Operations. Orders that these users enter through the sales order entry form will not be systematically identified as Retail orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, retail pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+
+Users who aren't linked to a call center channel use the standard order entry features of Microsoft Dynamics 365 Finance. Orders that these users enter through the sales order entry form will not be systematically identified as Retail orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, retail pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+
 
 After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.

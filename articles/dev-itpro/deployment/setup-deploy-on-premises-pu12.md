@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up and deploy on-premises environments (Platform update 12 and later)
-description: This topic provides information about how to plan, set up, and deploy an on-premises environment for Microsoft Dynamics 365 for Finance and Operations with Platform update 12 and later.
+description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,18 +34,18 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations (on-premises) with Platform update 12 and later.
+This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 
 > [!IMPORTANT]
 > This topic applies only to deploying on-premises environments on Platform update 12 and later. For information about deploying to Platform update 8 or Platform update 11 installations, see [Set up and deploy on-premises environments (Platform updates 8 and 11)](setup-deploy-on-premises-pu8-pu11.md). 
 
-The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is now available. You can post questions or feedback you may have about the on-premises deployment there.
+The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. You can post questions or feedback you may have about the on-premises deployment there.
 
 If you have questions or feedback about the content in this topic, please post them in the **Comments** section at the bottom of this page.
 
-## Finance and Operations components
+## Finance + Operations components
 
-The Finance and Operations application consists of three main components:
+The Finance + Operations application consists of three main components:
 
 - Application Object Server (AOS)
 - Business Intelligence (BI)
@@ -54,7 +54,7 @@ The Finance and Operations application consists of three main components:
 These components depend on the following system software:
 
 - Microsoft Windows Server 2016 (only English OS installations are supported)
-- Microsoft SQL Server 2016 SP2, which has the following features:
+- Microsoft SQL Server 2016 SP1, which has the following features:
   - Full-text index search is enabled.
   - SQL Server Reporting Services (SSRS) - This is deployed on BI virtual machines.
   - SQL Server Integration Services (SSIS) - This is deployed on AOS virtual machines.
@@ -75,7 +75,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -83,9 +83,9 @@ The on-premises application works with AD FS. To interact with LCS, you must als
 
 ## Standalone Service Fabric
 
-Finance and Operations uses standalone Service Fabric. For more information, see the [Service Fabric documentation](/azure/service-fabric/).
+Finance + Operations uses standalone Service Fabric. For more information, see the [Service Fabric documentation](/azure/service-fabric/).
 
-Setup of Finance and Operations will deploy a set of applications inside Service Fabric (SF). During deployment, each node in the cluster will be defined via configuration to have one of the following node types:
+Setup of Finance + Operations will deploy a set of applications inside Service Fabric (SF). During deployment, each node in the cluster will be defined via configuration to have one of the following node types:
 
 - **AOSNodeType** - Hosts the application object server (business logic).
 - **OrchestratorType** - Functions as Service Fabric primary nodes, and hosts deployment- and servicing logic.
@@ -94,14 +94,14 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 
 ## Infrastructure
 
-Finance and Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
+Finance + Operations falls under Microsoft’s standard support policy regarding operation on non-Microsoft virtualization platforms – specifically VMWare. For more information, read [Support policy for Microsoft software](https://support.microsoft.com/help/897615/support-policy-for-microsoft-software-that-runs-on-non-microsoft-hardw). In short, we support our products in this environment, but if we are asked to investigate an issue, we may ask the customer to first reproduce the problem without the virtualization platform or on the Microsoft virtualization platform.
 
 If you are using VMWare, you must implement the fixes that are documented on the following web pages:
 - [After upgrading a virtual machine to hardware version 11, network dependent workloads experience performance degradation (2129176)](https://kb.vmware.com/s/article/2129176)
 - [Several issues with vmxnet3 virtual adapter](https://vinfrastructure.it/2016/05/several-issues-vmxnet3-virtual-adapter)
 
  > [!WARNING]
- > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
+ > Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Azure.
 
 The hardware configuration includes the following components:
 
@@ -148,7 +148,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 
 - Active Directory Domain Services (AD DS) must be installed and configured in your network.
 - AD FS must be deployed.
-- SQL Server 2016 SP2 must be installed on the SSRS machines.
+- SQL Server 2016 SP1 must be installed on the SSRS machines.
 - SQL Server Reporting Services 2016 must be installed in **Native** mode on the SSRS machines.
 
 The following prerequisite software is installed on the VMs by the infrastructure setup scripts downloaded from LCS.
@@ -174,7 +174,7 @@ The following prerequisite software is installed on the VMs by the infrastructur
 
 ### Overview
 
-The following steps must be completed to set up the infrastructure for Finance and Operations. Reading all the steps before you begin will make it easier to plan your setup.
+The following steps must be completed to set up the infrastructure for Finance + Operations. Reading all the steps before you begin will make it easier to plan your setup.
 
 1. [Plan your domain name and DNS zones](#plandomain)
 2. [Plan and acquire your certificates](#plancert)
@@ -196,14 +196,14 @@ The following steps must be completed to set up the infrastructure for Finance a
 18. [Configure AD FS](#configureadfs)
 19. [Configure a connector and install an on-premises local agent](#configureconnector)
 20. [Tear down CredSSP, if remoting was used](#teardowncredssp)
-21. [Deploy your Finance and Operations (on-premises) environment from LCS](#deploy)
-22. [Connect to your Finance and Operations (on-premises) environment](#connect)
+21. [Deploy your Finance + Operations environment from LCS](#deploy)
+22. [Connect to your Finance + Operations environment](#connect)
 
 ### <a name="plandomain"></a> 1. Plan your domain name and DNS zones
 
 We recommend that you use a publicly registered domain name for your production installation of AOS. In that way, the installation can be accessed outside the network, if outside access is required.
 
-For example, if your company's domain is contoso.com, your zone for Finance and Operations (on-premises) might be d365ffo.onprem.contoso.com, and the host names might be as follows:
+For example, if your company's domain is contoso.com, your zone for Finance + Operations might be d365ffo.onprem.contoso.com, and the host names might be as follows:
 
 - ax.d365ffo.onprem.contoso.com for AOS machines
 - sf.d365ffo.onprem.contoso.com for the Service Fabric cluster
@@ -257,7 +257,7 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="plansvcacct"></a> 3. Plan your users and service accounts
 
-You must create several user or service accounts for Finance and Operations (on-premises) to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
+You must create several user or service accounts for Finance + Operations to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
 
 | User account                                            | Type           | Purpose | User name |
 |---------------------------------------------------------|----------------|---------|-----------|
@@ -266,7 +266,7 @@ You must create several user or service accounts for Finance and Operations (on-
 | Financial Reporting Click Once Designer Service Account | gMSA           |         | Contoso\\svc-FRCO$ |
 | AOS Service Account                                     | gMSA           | This user should be created for future proofing. We plan to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you will help to ensure a seamless transition to the gMSA. | Contoso\\svc-AXSF$ |
 | AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release. | Contoso\\AXServiceUser |
-| AOS SQL DB Admin user                                   | SQL user       | Finance and Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases. | AXDBAdmin |
+| AOS SQL DB Admin user                                   | SQL user       | Finance + Operations uses this user to authenticate with SQL\*. This user will also be replaced by the gMSA user in upcoming releases. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA           | This account is used by the local agent to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
 \* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
@@ -541,7 +541,7 @@ For each database, **infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml** d
 
 ### <a name="configurelcs"></a> 11. Configure LCS connectivity for the tenant
 
-Deployment and servicing of Finance and Operations is orchestrated through LCS by using an on-premises local agent. To establish connectivity from LCS to the Finance and Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, Contoso.onmicrosoft.com).
+Deployment and servicing of Finance + Operations is orchestrated through LCS by using an on-premises local agent. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf on your Azure AD tenant (for example, Contoso.onmicrosoft.com).
 
 Use the on-premises agent certificate that you acquired from a certificate authority or the self-signed certificate that you generated by using scripts.
 
@@ -634,7 +634,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
 ### <a name="setupsql"></a> 13. Set up SQL Server
 
-1. Install SQL Server 2016 SP2 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
+1. Install SQL Server 2016 SP1 with high availability. (Unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. You may want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
     > You must enable the [SQL Server and Windows Authentication mode](https://docs.microsoft.com/sql/database-engine/configure-windows/change-server-authentication-mode).
@@ -645,7 +645,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     > Make sure that Always-On is set up as described in [Select Initial Data Synchronization Page (Always On Availability Group Wizards)](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards), and follow the instructions in [To Prepare Secondary Databases Manually](/sql/database-engine/availability-groups/windows/select-initial-data-synchronization-page-always-on-availability-group-wizards#PrepareSecondaryDbs).
 
 2. Run the SQL service as a domain user.
-3. Get an SSL certificate from a certificate authority to configure Finance and Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following example.
+3. Get an SSL certificate from a certificate authority to configure Finance + Operations. For testing purposes, you can create and use a self-signed certificate. You will need to replace the computer name and domain name in the following example.
 
     **Self-signed certificate for a Clustered SQL instance**
 
@@ -680,7 +680,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 
     1. Import the certificate into LocalMachine\\My, unless you are setting up Always-On, in which case the certificate already exists on the node.
     2. Grant certificate permissions to the service account that is used to run the SQL service. In Microsoft Management Console (MMC), right-click the certificate (**certlm.msc**), and then select **Tasks** \> **Manage Private Keys**.
-    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP2: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
+    3. Add the certificate thumbprint to HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\*MSSQL.x*\\MSSQLServer\\SuperSocketNetLib\\Certificate. For example, with SQL Server 2016 SP1: HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL13.MSSQLSERVER\\MSSQLServer\\SuperSocketNetLib\\Certificate
         1. From the start menu, type **regedit**, then select **regedit** to open the registry editor.
         2. Navigate to the certificate, right-click **Modify**, then replace the value with the certificate thumbprint.
     4. In Microsoft SQL Server Configuration Manager, set **ForceEncryption** to **Yes**.
@@ -713,7 +713,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
 5. Ensure the database section in the infrastructure\ConfigTempate.xml is configured correctly with the following:
     1. The database name.
     2. The db file and log settings. The db settings should not be lower than the defaults specified.
-    3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance and Operations database is AXDB.
+    3. The path to the backup file downloaded from LCS Shared Asset library. The default name for the Finance + Operations database is AXDB.
 
    > [!WARNING]
    > - The user running the SQL service and the user running the scripts should have READ access on the folder or share where the backup file is located.
@@ -735,7 +735,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
    - Create an empty database named **OrchestratorData**. This database is used by the on-premises local agent to orchestrate deployments.
    - Grant the local agent gMSA (svc-LocalAgent$) **db\_owner** permissions on the database.
 
-#### Configure the Finance and Operations database
+#### Configure the Finance + Operations database
 
 1. Execute the following scripts.
 
@@ -817,7 +817,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](htt
     ```
 
     - **AccountPassword** is the encrypted domain user password for the AOS domain user (contoso\\axserviceuser).
-    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance and Operations database (AXDB), and **SqlPassword** is the encrypted SQL password.
+    - **SqlUser** is the encrypted SQL user (axdbadmin) that has access to the Finance + Operations database (AXDB), and **SqlPassword** is the encrypted SQL password.
 
 4. Copy the .json file to the SMB file share, \\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json.
 5. Update the Credentials.json file with encrypted values.
@@ -851,11 +851,11 @@ For more information, see [Install integration services](https://docs.microsoft.
 
 Before you can complete this procedure, AD FS must be deployed on Windows Server 2016. For information about how to deploy AD FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
-Finance and Operations requires additional configuration beyond the default out-of-box configuration of AD FS. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
+Finance + Operations requires additional configuration beyond the default out-of-box configuration of AD FS. The following Windows PowerShell commands must be run on the machine where the AD FS role service is installed. The user account must have enough permissions to administer AD FS. For example, the user must have a domain administrator account. For complex AD FS scenarios, consult your domain administrator.
 
 1. Configure the AD FS identifier so that it matches the AD FS token issuer.
 
-   This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance and Operations client.
+   This command is related to adding new users using the **Import users** option on the **Users** page (**System administration > Users > Users**) in the Finance + Operations client.
 
     ```PowerShell
     $adfsProperties = Get-AdfsProperties
@@ -864,7 +864,7 @@ Finance and Operations requires additional configuration beyond the default out-
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-   This command is related to using forms authentication upon signing into the Finance and Operations client. Other options, such as single sign-on, may be available which require additional setup.
+   This command is related to using forms authentication upon signing into the Finance + Operations client. Other options, such as single sign-on, may be available which require additional setup.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
@@ -881,7 +881,7 @@ Finance and Operations requires additional configuration beyond the default out-
     Set-AdfsClaimsProviderTrust -TargetIdentifier 'AD AUTHORITY' -AlternateLoginID mail -LookupForests $domainName
     ```
 
-In order for AD FS to trust Finance and Operations for the exchange of authentication, various application entries must be registered in AD FS under an AD FS application group. To speed up the setup process and help reduce errors, you can use the following script for registration. Copy the Publish-ADFSApplicationGroup.ps1 script and D365FO-OP directory to a machine where the AD FS role service is installed. Then run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
+In order for AD FS to trust Finance + Operations for the exchange of authentication, various application entries must be registered in AD FS under an AD FS application group. To speed up the setup process and help reduce errors, you can use the following script for registration. Copy the Publish-ADFSApplicationGroup.ps1 script and D365FO-OP directory to a machine where the AD FS role service is installed. Then run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
 For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS in a later step. Should you lose the client IDs, log in to the machine which has AD FS installed, open **Server Manager** \> **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises** and find the client IDs under the native applications.
 
@@ -901,7 +901,7 @@ Finally, make sure that you can access the AD FS OpenID Configuration URL on a S
 
 If you successfully access the URL, a JavaScript Object Notation (JSON) file is returned that contains your AD FS configuration, and you will see that your AD FS URL is trusted.
 
-You've now completed the setup of the infrastructure. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Finance and Operations environment.
+You've now completed the setup of the infrastructure. The following sections describe how to navigate to [LCS](https://lcs.dynamics.com) to set up your connector and deploy your Finance + Operations environment.
 
 ### <a name="configureconnector"></a> 19. Configure a connector and install an on-premises local agent
 
@@ -952,7 +952,7 @@ If any of the remoting scripts were used during setup, be sure to execute the fo
 
 If the previous remoting PowerShell window was accidentally closed and CredSSP was left enabled, the script will disable it on all the machines specified in the configuration file.
 
-### <a name="deploy"></a> 21. Deploy your Finance and Operations (on-premises) environment from LCS
+### <a name="deploy"></a> 21. Deploy your Finance + Operations environment from LCS
 
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**. Execute the following script on the primary domain controller VM, which must have access to ADFS and the DNS server settings, to get the needed values.
 
@@ -989,7 +989,7 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 See the [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 ![Deployed](./media/Deployed.png)
 
-### <a name="connect"></a> 22. Connect to your Finance and Operations (on-premises) environment
+### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
 
 ## Additional resources
@@ -999,7 +999,7 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
-- [Set up technical support for Finance and Operations](../lifecycle-services/support-experience.md)
+- [Set up technical support](../lifecycle-services/support-experience.md)
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 
 ## Known issues

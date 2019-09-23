@@ -2,8 +2,8 @@
 # required metadata
 
 title: India Goods and Services Tax (GST) overview
-description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 for Finance and Operations. 
-author: kfend
+description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance. 
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/05/2019
 ms.topic: article
@@ -145,7 +145,12 @@ The item sales tax group should be removed on products that are assigned an HSN 
 </table>
 
 ## Import the configuration and deploy it to a specific company
+Before you complete this task, be sure to save all the configuration files in a location that you can access from Dynamics 365 Finance.
 
+Follow these steps to load the configurations and map them to a legal entity.
+
+### Tax configurations
+=======
 Follow the process in the topic, [Import tax engine configurations](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
 
 ### GST configurations
@@ -214,7 +219,7 @@ Follow the process in the topic, [Import tax engine configurations](../general-l
 
 ## Tax setup
 
-This section walks you through the process of defining the GST and Customs tax setup in Finance and Operations.
+This section walks you through defining the GST and Customs tax setup.
 
 ### Map configuration tax types to ERP tax types (Customs)
 

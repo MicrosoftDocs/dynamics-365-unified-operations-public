@@ -57,7 +57,7 @@ DTS currently supports the following product versions.
 | Product name | Versions | Supported format for user interface files | Supported format for documentation files | Notes |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
-| Microsoft Dynamics 365 for Finance and Operations | All versions | .label.txt | .docx, .html | .txt is the Finance and Operations specific label format and .html is the custom help solution format. |
+| Dynamics 365 Finance and Operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
 | Microsoft Dynamics 365 for Retail | All versions | .label.txt | .docx | |
 | Microsoft Dynamics CRM | All versions | .resx | .docx | |
 | Microsoft Dynamics NAV | All versions | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |

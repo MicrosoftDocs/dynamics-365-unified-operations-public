@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Removed or deprecated features
+title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Removed or deprecated features
+# Removed or deprecated features for Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+This topic describes features that have been removed or deprecated for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -42,11 +42,12 @@ This topic describes features that have been removed or deprecated for Dynamics 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Starting with the Dynamics 365 for Finance and Operations July 2017 release with platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
+> Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30
+
+## Finance and Operations 10.0.6 with Platform update 30
 
 > [!IMPORTANT]
 > Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
@@ -61,8 +62,28 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
+### Blacklist report (IT) – Feature reference IT-00001
 
-## Dynamics 365 for Finance and Operations 10.0.5 with Platform update 29
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Not legally required. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Italian localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Blacklist report (IT) – Feature reference IT-00001**. |
+
+### Domestic tax report – Feature reference IT-00003
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Not legally required. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Italian localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **Domestic tax report – Feature reference IT-00003**. |
+
+
+## Finance and Operations 10.0.5 with Platform update 29
 
 ### US Payroll tax updates
 
@@ -84,7 +105,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All  |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is December 2020. |
 
-## Dynamics 365 for Finance and Operations 10.0.4 with Platform update 28
+## Finance and Operations 10.0.4 with Platform update 28
 
 ### France: FEC Accounting data export in XML
 
@@ -108,7 +129,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Status**                         | Deprecated: Starting in April 2020, the legacy navigation bar will no longer be available. Until that point, customers can revert to the legacy navigation bar through the **Client performance options** page. |
 
 
-## Dynamics 365 for Finance and Operations 10.0.2 with Platform update 26
+## Finance and Operations 10.0.2 with Platform update 26
 
 
 ### Legacy default action behavior
@@ -152,7 +173,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is April 2020. |
 
-## Dynamics 365 for Finance and Operations 10.0.1 with platform update 25
+## Finance and Operations 10.0.1 with Platform update 25
 
 ### Deprecated APIs and potential breaking changes
 
@@ -177,7 +198,7 @@ Support for creating project-based sales orders where the project contract has m
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: The warning will become a compilation error in Platform update 26. |
 
-## Dynamics 365 for Finance and Operations 10.0.0 with platform update 24
+## Finance and Operations 10.0.0 with Platform update 24
 
 ### Renaming released products 
 |   |  |
@@ -186,10 +207,10 @@ Support for creating project-based sales orders where the project contract has m
 | **Replaced by another feature?**   | No. |
 | **Product areas affected**         | Product information management |
 | **Deployment option**              | All  |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 10.0.0 with platform update 24. In exceptional cases, such as to recover from a previous rename of the primary key of a released product, it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
+| **Status**                         | Removed as of Finance and Operations 10.0.0 with Platform update 24. In exceptional cases, such as to recover from a previous rename of the primary key of a released product, it is possible to request Microsoft to temporarily remove this restriction on the rename primary key operation for released products. |
 
 
-## Dynamics 365 for Finance and Operations 8.1.3 with platform update 23
+## Finance and Operations 8.1.3 with Platform update 23
 
 ### SQL Server Reporting Services ReportViewer Control
 Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
@@ -228,7 +249,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 #### Complete list
 To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
 
-## Dynamics 365 for Finance and Operations 8.1 with platform update 20
+## Finance and Operations 8.1 with Platform update 20
 
 ### Batch transfer rules for subledger journal account entries
 The Synchronous transfer mode is being deprecated in the General ledger parameters.  This mode is replaced by Asynchronous and scheduled batch only, which already exist as options for transfer. For additional information, see the [General Ledger Parameters – Batch transfer rules](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules) blog.
@@ -250,7 +271,7 @@ Feature for configuring .txt and .xml file formats of declarations.
 | **Replaced by another feature?**   | Yes. |
 | **Product areas affected**         | General Ledger |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+| **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
 ### Financial reports generator for Russia
 A tool for setting up data collection for accounting and tax reports, and to export data to XLS and DOC report templates. Functional parts: Export data to XLS and DOC report templates, queries, fixed requisites are removed. 
@@ -261,7 +282,7 @@ A tool for setting up data collection for accounting and tax reports, and to exp
 | **Replaced by another feature?**   | Yes. Financial reports setup user interface should be used for setting up data collection rules by GL accounts or tax registers. Export data to various file types, fixed requisites and query-like data collection rules should be configured in Electronic reporting. |
 | **Product areas affected**         | General ledger. |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+| **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
 ### Integration with external providers for sending electronic reporting through communication channels for Russia
 Feature exporting generated electronic files of declarations to folder for further sending to official providers of electronic reporting as well as importing state back.
@@ -272,7 +293,7 @@ Feature exporting generated electronic files of declarations to folder for furth
 | **Replaced by another feature?**   | Yes.  |
 | **Product areas affected**         | General Ledger, Tax |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+| **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
 
 ### Profit tax register wizard
@@ -280,17 +301,17 @@ Feature for creating templates for new profit tax registers. This feature create
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Feature is not compatible with the Dynamics 365 for Finance and Operations extensibility model. |
+| **Reason for deprecation/removal** | Feature is not compatible with the Finance and Operations extensibility model. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Tax |
 | **Deployment option**              | All |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations 8.1 with platform update 20. |
+| **Status**                         | Removed as of Finance and Operations 8.1 with Platform update 20. |
 
 
-## Dynamics 365 for Finance and Operations 8.0 with platform update 15
+## Finance and Operations 8.0 with Platform update 15
 No features have been removed or deprecated with this release. Platform update 15 is cumulative and contains new or changed features from Platform update 13, Platform update 14, and Platform update 15.
 
-## Dynamics 365 for Finance and Operations, Enterprise edition 7.3 with platform update 12
+## Finance and Operations, Enterprise edition 7.3 with Platform update 12
 
 ### Personalized product recommendations 
 Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
@@ -312,7 +333,7 @@ The possibility to introduce custom functions to be used in the ER expression bu
 | **Replaced by another feature?**   | None. Whenever a new built-in function is needed, a new extension request must be addressed to the ER framework team.<br><br>As a temporary work around while the requested function is under development by the ER team, the required logic can be programmed as a method of a custom application class. This method can be accessed in an ER expression as a property of the added ER data source of the **Application\Class** type that refers to that custom application class.  |
 | **Product areas affected**         | Electronic reporting framework                                                      |
 | **Deployment option**              | All                                                                                      |
-| **Status**                         | Removed as of Dynamics 365 for Finance and Operations, Enterprise edition 7.3.    |
+| **Status**                         | Removed as of Finance and Operations, Enterprise edition 7.3.    |
 
 ### Inventory by item group and Inventory by inventory dimension aging reports
 
@@ -409,7 +430,7 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 | **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Retail 7.2  and later. |
 
 
-## Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with platform update 8
+## Finance and Operations, Enterprise edition July 2017 with Platform update 8
 
 ### Currency conversion for accounting and reporting currencies
 
@@ -447,7 +468,7 @@ A matching rule was used to select and mark a bank document when documents were 
 | **Deployment option**              | All                                                                                    |
 | **Status**                         | Removed as of July 2017.                                                               |
 
-## Dynamics 365 for Operations 1611 with platform update 3
+## Dynamics 365 for Operations 1611 with Platform update 3
 
 ### AEB payment formats for Spain
 
@@ -528,7 +549,7 @@ EDIFACT-DIRDEB payment format for payment collection (direct debit).
 
 ### EDIVAT for Belgium
 
-EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail. Microsoft Dynamics AX 2012 retains the read-only solution to enable access to the historical data.
+EDIVAT is an obsolete Belgian standard for electronic declaration via secure mail. Dynamics AX 2012 retains the read-only solution to enable access to the historical data.
 
 |   |  |
 |------------|--------------------|
@@ -539,7 +560,7 @@ EDIVAT is an obsolete Belgian standard for electronic declaration via secure mai
 
 ### eGiro EDIFACT CREMUL payment import format for Norway
 
-eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments. In Microsoft Dynamics AX, eGiro is implemented as a customer payment import format.
+eGiro is based on the international UN EDIFACT CREMUL (Multiple Credit Advice Message) standard that is used for automatic posting of customer payments. In Dynamics AX, eGiro is implemented as a customer payment import format.
 
 |   |  |
 |------------|--------------------|
@@ -759,8 +780,8 @@ Two formats for exporting payments are available for Finland. LM02 (FI) is used 
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Microsoft Dynamics AX 2012 R3.                                                                         |
-| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
+| **Reason for deprecation/removal** | The Warehouse management II solution (WMS II) that was available in the **Inventory management** module duplicates functionality that is in the **Warehouse management** module that was released in Dynamics AX 2012 R3.                                                                         |
+| **Replaced by another feature?**   | The **Warehouse management** module that was released in AX 2012 R3, Dynamics AX 2012 R3 CU8, and Dynamics AX 2012 R3 CU9 replaces the Warehouse management II features. The new module has more advanced features and more flexible warehouse management processes than Warehouse management II. |
 | **Product areas affected**         | Inventory management, Sales and marketing, Procurement and sourcing   |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611.    |
 
@@ -781,7 +802,7 @@ A workflow for managing the creation of employee goals is one of several workflo
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Performance management has been completely redesigned in Microsoft Dynamics 365 for Finance and Operations.     |
+| **Reason for deprecation/removal** | Performance management has been completely redesigned in Finance and Operations.     |
 | **Replaced by another feature?**   | The redesigned Performance management feature gives more control over the content of the goals, the measurements that are used to track progress, and the attachment of supporting documentation. Goals can be stored as templates and then reused. This feature can help you set up additional goals for your employees more quickly. |
 | **Product areas affected**         | Human capital management                 |
 | **Status**                         | Removed as of Dynamics 365 for Operations version 1611. |
@@ -917,13 +938,13 @@ The Compliance Center was an Enterprise Portal site for managing the documentati
 
 ### Connector for Microsoft Dynamics
 
-This tool was used to integrate key data from Microsoft Dynamics CRM to Microsoft Dynamics ERP applications.
+This tool was used to integrate key data from Microsoft Dynamics CRM to Dynamics ERP applications.
 
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | This functionality has been replaced by another feature. |
 | **Replaced by another feature?**   | Common data service                                      |
-| **Product areas affected**         | Connector for Microsoft Dynamics                         |
+| **Product areas affected**         | Connector for Dynamics                         |
 | **Status**                         | Removed as of Dynamics AX 7.0.                           |
 
 ### Container unit and multi dimension on-hand
@@ -964,11 +985,11 @@ This tool was used to integrate key data from Microsoft Dynamics CRM to Microsof
 
 ### Data partitions
 
-Data partitions provide a logical separation of data in the Microsoft Dynamics AX database.
+Data partitions provide a logical separation of data in the Dynamics AX database.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Data partitions were introduced in Microsoft Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations. |
+| **Reason for deprecation/removal** | Data partitions were introduced in Dynamics AX 2012 R2 to enable data isolation. In a common scenario, a company has subsidiaries, and the data from one subsidiary should not be visible to another subsidiary, even though both subsidiaries are managed by the same IT department. However, extra scripts and management overhead throughout the program were required in order to create new partitions and populate them with data, and to back up partition data. In the cloud, where we have access to platform as a service (PaaS) database services (Microsoft Azure SQL Database), it's much more efficient to use a database as the isolation container than to do isolation in the program. Regardless of whether data partitioning is required for subsidiaries, for multiple tenants, or just for scale, we believe that the scenarios can be handled better through multiple instances of Finance and Operations. |
 | **Replaced by another feature?**   | Customers using data partitions must use multiple instances of Finance and Operations if database level separation is a critical issue.    |
 | **Product areas affected**         | All modules  |
 | **Status**                         | Removed as of Dynamics AX 7.0.  |
@@ -976,11 +997,11 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 
 ### Database and file share storage for attachments
 
-Microsoft Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.
+Dynamics AX 2012 allowed storage of attachments in the database and in file shares. Both of those options are no longer supported.
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares. Database storage has been deprecated in favor of Azure Blob storage. Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Dynamics 365 for Finance and Operations client forms. This provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Blob storage is the default storage mechanism for Document Management and works immediately. |
+| **Reason for deprecation/removal** | Files share storage is no longer supported because cloud-hosted environments cannot communicate with local file shares. Database storage has been deprecated in favor of Azure Blob storage. Azure Blob storage is equivalent to storage in the database, as documents can only be accessed through Finance and Operations client forms. This provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Blob storage is the default storage mechanism for Document Management and works immediately. |
 | **Replaced by another feature?**   | Database storage has been deprecated in favor of Azure Blob storage.   |
 | **Product areas affected**         | All modules  |
 | **Status**                         | Removed as of Dynamics AX 7.0.   |
@@ -1163,7 +1184,7 @@ This feature enabled the generation of Mexican electronic invoices by using the 
 
 ### Mexico realized and unrealized VAT
 
-Microsoft Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.
+Dynamics AX 2012 managed unrealized value-added tax (VAT) by using Mexico-specific functionality for unrealized tax.
 
 |   |  |
 |------------|--------------------|

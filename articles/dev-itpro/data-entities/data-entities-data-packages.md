@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data management overview
-description: This topic provides information about data management in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use the data management framework to manage data entities and data entity packages in Microsoft Dynamics 365 for Finance and Operations.
+This topic describes how you can use the data management framework to manage data entities and data entity packages in Finance and Operations.
 
 The data management framework consists of the following concepts:
 
@@ -53,7 +53,7 @@ The data management framework supports using data entities in the following core
 
 ## Data entities
 
-Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV's to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions of Microsoft Dynamics 365 for Finance and Operations, there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
+Data entities provide conceptual abstraction and encapsulation of underlying table schema that represent data concepts and functionalities. In Microsoft Dynamics AX 2012, most tables, like the Customer and Vendor tables, were de-normalized and split into multiple tables. This was beneficial from a database design point of view, but made it difficult for implementers and ISV's to use without a thorough understanding of the physical schema. Data entities were introduced as part of data management to be used as a layer of abstraction to easily understand by using business concepts. In previous versions there were multiple ways to manage data, such as Microsoft Excel Add-ins, AIF, and DIXF. The concept of data entities combines those different concepts into one. After data entities are created, you should be able to reuse them for an Excel Add-ins, import/export, or integration. The following table shows core data management scenarios.
 
 <table>
 <tbody>
@@ -85,7 +85,7 @@ Using the data management framework, you can quickly migrate reference, master, 
 
 - You can select only the entities you need to migrate.
 - If an import error occurs, you can skip selected records and choose to proceed with the import using only the good data, opting to then fix and import the bad data later. You will be able to partially continue and use errors to quickly find bad data.
-- You can move data entities straight from one Finance and Operations system to another, without having to go through Excel, or XML.
+- You can move data entities straight from one system to another, without having to go through Excel, or XML.
 - Data imports can be easily scheduled using a batch, which offers flexibility when it is required to run. For example, you can migrate customer groups, customers, vendors, and other data entities in the system at any time.
 
 ## Set up and copy configuration
@@ -271,7 +271,7 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 
 | Flight name                           | Description |
 |---------------------------------------|---------------|
-| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job (supported for BYOD only and not files). By default, this is OFF. |
+| DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job (supported for BYOD only and not files). By default, this is OFF. This flight is no longer needed after Platform update 27 because this feature can be turned ON using a parameter in data management framework parameters.|
 | DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
 | EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
 | DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
@@ -284,7 +284,7 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFDisableXSLTTransformationForCompositeEntity     | This can disable the application of transformations on composite entities. |
 | DMFDisableInputFileCheckInPackageImport     | Additional validations are made to ensure if any entity file is missing from a data package, error message is shown. This is the default behavior. If required, this can be turned OFF by this flight.  |
 | FillEmptyXMLFileWhenExportingCompositeEntity     | Prior to Platform update 15, when exporting composite entities that did not have any records to export, the XML file generated did not have any schema elements. This behavior can be changed to output empty schema by enabling this flight. By default, the behavior will still be to output empty schema.  |
-| EnableNewNamingForPackageAPIExport     | A fix was made to ensure unique names are used for the execution ID using the package API for exports. This will now result in a new naming convention for the execution ID's. If there is a need to revert to the previous naming convention, you can enable this flight. However, by doing this, the issue fixed in the bug 265164 will re-occur. This issue will only occur when calls are made in quick succession so that the time stamps used in the naming convention are the same. |
+| EnableNewNamingForPackageAPIExport     | A fix was made to ensure unique names are used for the execution ID when ExportToPackage is used for export scenarios. Duplicate execution ID's were being created when ExportToPackage was called in quick succession. To preserve compatibility, this behavior is OFF by default. Turning this flight ON will enable this new behavior where new naming convention for execution ID's will ensure unique names.|
 | DMFDisableDoubleByteCharacterExport     | A fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
 | DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 | DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
