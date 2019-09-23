@@ -127,7 +127,7 @@ If you set **Enabled** to **Yes**, a preview of the output is created. You can v
 
 ### Power BI destination
 
-Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your instance to Microsoft Power BI services. The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose. For more information, see [Use an Electronic reporting configuration to provide Power BI with data from Finance](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > To override the default behavior (that is, the dialog box for a configuration), you can create a destination reference and a file destination for the main output component, and then disable all the destinations.
