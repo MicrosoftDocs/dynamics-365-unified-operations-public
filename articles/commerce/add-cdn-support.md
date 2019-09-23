@@ -84,7 +84,7 @@ The documented Azure Front Door setup steps can be found at https://docs.microso
 
 To configure a backend pool in Commerce, do the following.
 
-1. Add <ecom-tenant-name>.commerce.dynamics.com to a backend pool as a custom host (empty backend host header).
+1. Add &lt;ecom-tenant-name&gt;.commerce.dynamics.com to a backend pool as a custom host (empty backend host header).
 1. In the **Path** box under **HEALTH PROBES**, enter **/keepalive**
 1. In the **Intervals (seconds)** box, enter **255**.
 1. Under **LOAD BALANCING**, use the default values.
