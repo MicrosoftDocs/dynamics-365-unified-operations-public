@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up technical support for Finance and Operations
+title: Set up technical support for Finance and Operations apps
 description: This topic provides information about the support experience for cloud and on-premises deployments. It describes the setup that is required and explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up technical support for Finance and Operations
-
+# Set up technical support 
 [!include [banner](../includes/banner.md)]
 
  Prerequisites
 --------------
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created during the subscription setup for Microsoft Dynamics 365 for Finance and Operations.
+Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the Microsoft Dynamics 365 Finance and Operations apps.
 
 ## Create an Azure DevOps project
 The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
@@ -81,7 +80,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 9.  Copy the token and paste it in a safe location because it won't be accessible after you move away from the page.
 
 ## Configure LCS
-1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that Finance and Operations is deployed in.
+1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that the application is deployed in.
 2.  Open the project in LCS.
 3.  Click **Project settings**, and then click the **Azure DevOps** link.
 
@@ -103,7 +102,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 If you are on Finance and Operations platform update 4, or if you have consumed KB 4010473 for platform update 3, skip to the next section.
 
 [!WARNING]
-If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Azure DevOps project is not available.
+If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
 
 1.  In the client, click the **Help** menu, or question mark icon, in the upper-right corner. [![AX7-help-Contact\_Your\_Support](./media/ax7-help-contact_your_support1.png)](./media/ax7-help-contact_your_support1.png)
 2.  Click **Contact your support team**.
@@ -122,7 +121,7 @@ You should receive a confirmation message that states that the issue has been su
 If you have not taken platform update 4 for Finance and Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft. In the client, on the top bar, click **?**, and then click **Support**. 
 
 [!WARNING]
-If you have an on-premises deployment of Finance and Operations, the option to search for existing issues and submit a support incident from the Dynamics 365 for Finance and Operations on-premises client to your Azure DevOps project is not available.
+If you have an on-premises deployment, the option to search for existing issues and submit a support incident from the on-premises client to your Azure DevOps project is not available.
 
 [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) 
 
@@ -204,7 +203,7 @@ You can submit issues to Microsoft support. When you submit an issue to Microsof
 [!NOTE]
 The information in this section is not applicable to on-premises deployments. 
 
-When you deploy Finance and Operations from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
+When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
 [![Configure Contact support](./media/configure-contact-support.jpg)](./media/configure-contact-support.jpg)
 
 ## Support plans (on-premises only)
