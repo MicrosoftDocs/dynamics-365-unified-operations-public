@@ -40,7 +40,7 @@ Dynamics 365 Finance and Operations apps provides many self-service support opti
 
 
 - [Dynamics 365 Finance](../../fin-and-ops/index.md)
-- [Dynamics 365 Supply Chain Management](../../supply-chain-management/index.md)
+- [Dynamics 365 Supply Chain Management](../../supply-chain/index.md)
 - [Dynamics 365 Finance and Operations apps operated by 21Vianet](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)
