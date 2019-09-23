@@ -49,7 +49,7 @@ The following options are available for document publishing:
 
 ![Document publishing services](media/document-publishing-services.png)
 
-For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Printing in Finance and Operations applications](print-documents.md).
+For a high-level summary of the options for information access that are available in the cloud-hosted solution, see [Printing in the application](print-documents.md).
 
 ## Comparing the cloud-hosted and on-premises services
 Unlike the cloud-hosted service, the on-premises publishing service produces documents as PDF files that are automatically downloaded to the browser. Therefore, users can save documents or print hard copies by using local connected devices. Administrators can manage access to network printers directly from the application, by using built-in administrative pages. Users can interact with reports on demand, or they can schedule automatic jobs to securely generate and distribute documents on a recurring basis.
