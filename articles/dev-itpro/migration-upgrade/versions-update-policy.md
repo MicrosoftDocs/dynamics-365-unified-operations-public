@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software lifecycle policy and cloud releases
-description: This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
+description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
 ms.date: 07/08/2019
@@ -33,12 +33,12 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic outlines the lifecycle and support policies for the Microsoft Dynamics 365 for Finance and Operations online service.
+This topic outlines the lifecycle and support policies for the Finance and Operations online service.
 
 ## Modern Lifecycle Policy
-The Dynamics 365 for Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Dynamics 365 for Finance and Operations online service in accordance with the following servicing and system requirements:
+The Finance and Operations online service is covered by the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are serviced and supported continuously. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881). Licensed customers must stay current with updates to the Finance and Operations online service in accordance with the following servicing and system requirements:
 
-- Customers purchasing subscriptions of Microsoft Dynamics 365 for Finance and Operations and operating on the following Application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 2 consecutive service updates.
+- Customers purchasing subscriptions of Finance and Operations and operating on the following application versions will experience continuous updates of the Platform and Financial Reporting. Microsoft will continually update these components with the option to postpone up to 2 consecutive service updates.
     - Dynamics 365 for Operations version 1611 (November 2016)
     - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
     - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
@@ -48,25 +48,25 @@ The Dynamics 365 for Finance and Operations online service is covered by the Mod
 
 - Critical fixes and non-critical updates are handled in the following way:
 
-    - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to adhere to the availability service level agreement (SLA) that the service supports. Critical fixes will be made available in the latest platform update version and in the latest service update for customers operating on version 8.1. In addition, to help protect the customer and the online service, Microsoft might apply critical fixes directly to a customer's Dynamics 365 for Finance and Operations environments. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. The critical fix will update the system to the latest update version.
+    - **Critical fixes** – Critical fixes include security fixes and any fixes that are required to adhere to the availability service level agreement (SLA) that the service supports. Critical fixes will be made available in the latest platform update version and in the latest service update for customers operating on version 8.1. In addition, to help protect the customer and the online service, Microsoft might apply critical fixes directly to a customer's environment. If a critical fix must be applied, Microsoft will notify the customer about the required downtime window (if there will be any downtime) and apply the fix to the applicable environment. The critical fix will update the system to the latest update version.
 
-    - **Non-critical updates** – Customers operating on the following Application releases must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates. 
+    - **Non-critical updates** – Customers operating on the following application releases must update to the most current Finance and Operations platform and financial reporter version to deploy non-critical updates. 
     
        - Dynamics 365 for Operations version 1611 (November 2016)
        - Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
        - Dynamics 365 for Finance and Operations, Enterprise edition 7.3
        - Dynamics 365 for Finance and Operations, version 8.0 (April 2018)
      
-      Customers operating on release 8.1 must update to the most current Finance and Operations service update to deploy non-critical updates.
+      Customers operating on release 8.1 must update to the most current service update to deploy non-critical updates.
 
 > [!Note]
-> Application and Platform releases expire at the end of the month of their software lifecycle.
+> Application and platform releases expire at the end of the month of their software lifecycle.
 >
 > Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on an older version. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 >
 > All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
 
-## Dates and versions for Finance and Operations application and platform releases
+## Dates and versions for application and platform releases
 
 ### Table 1: Continuous update releases
 
@@ -81,7 +81,7 @@ For information about the new features included in each release, click the links
 
 ### Table 2: Application releases
 
-For information about the new features included in each release, click the links in the **Version** column.
+For information about the new features included in each release, select the links in the **Version** column.
 
 | **Release**                                                 | **Major or minor release** | **Version**                                                                                                                                           | **Build number** | **Availability** | **End of Service** |
 |-------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|--------------------|
@@ -97,7 +97,7 @@ For information about the new features included in each release, click the links
 
 ### Table 3: Platform releases
 
-For information about the new features included in each release, click the links in the **Release** column.
+For information about the new features included in each release, select the links in the **Release** column.
 
 | **Release**                                                                                                                                                  | **Build number** | **Availability** | **Expiration date**        |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|------------------|----------------------------|
@@ -131,7 +131,7 @@ For information about the new features included in each release, click the links
 
 ### Table 4: Application updates
 
-The application updates listed below consist of a small subset of application enhancements released on top of Dynamics 365 for Finance and Operations versions 8.0, 7.3, and 7.2 (July 2017). These updates do not affect the support lifecycle of the release--support is in-line with the policies for each release.
+The application updates listed below consist of a small subset of application enhancements released on top of Finance and Operations versions 8.0, 7.3, and 7.2 (July 2017). These updates do not affect the support lifecycle of the release--support is in-line with the policies for each release.
 
 Note that application updates are not cumulative. The individual packages only contain the enhancements that were included in that specific release. However, if there is a dependency between two packages, then both packages will be included.
 
@@ -155,7 +155,7 @@ For information about the new features included in each update, click the links 
 | Dynamics 365 for Finance and Operations, Enterprise edition | Application update 1: [KB 4035749 Application Update 1 for Dynamics 365 for Finance and Operations (Binary part)\*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035749&bugId=3845890&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df), [KB 4035751 Application Update 1 for Dynamics 365 for Finance and Operations (X++ part)\*](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4035751&bugId=3845891&qc=5339dbbd18aacbc8bdcbe4123d749d28803653d6c68f787bd8fc3337e97693df)                     | 7.2.11792.62089  | July 2017        |
 
 
-\* The link points to a Knowledge Base (KB) article. You must log in to Lifecycle Services (LCS) to view the KB article.
+\* The link points to a Knowledge Base (KB) article. You must sign in to Lifecycle Services (LCS) to view the KB article.
 
 ## Support matrix
 

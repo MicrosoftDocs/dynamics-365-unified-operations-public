@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This topic describes the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other topics. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 for Finance and Operations. This recording uses the USRT company in demo data.
+This topic describes the manual steps for creating, calculating, and posting a statement for a store. There are also batch jobs that can be configured for the same tasks. The steps for configuring and running the batch jobs can be found in other topics. To complete this procedure, you must have transactions that were completed in POS and then pulled into Dynamics 365 Retail. This recording uses the USRT company in demo data.
 
 1. Select **Retail store financials** from the home page.
 2. Select **New statement**.

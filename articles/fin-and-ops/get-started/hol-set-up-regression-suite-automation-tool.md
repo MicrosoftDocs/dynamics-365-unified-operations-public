@@ -5,7 +5,7 @@ title: Set up and install Regression suite automation tool tutorial
 description: This topic is a tutorial that shows how to set up and install Regression suite automation tool (RSAT).
 author: kfend
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,15 +40,15 @@ This topic is a tutorial that helps you get setup and get started with RSAT and 
 ## Key concepts
 
 - Understand the installation and prerequisite setup that are required for the various applications that support Regression suite automation tool (RSAT).
-- Understand how the Task recorder feature in Microsoft Dynamics 365 for Finance and Operations, together with Microsoft Dynamics Lifecycle Services (LCS) and Microsoft Azure DevOps, let you create, configure, run, investigate, and report on test cases.
-- Empower functional users to record business tasks by using Task recorder in Finance and Operations, and then convert the task recordings into a suite of automated tests, without having to write source code.
+- Understand how the Task recorder feature, together with Microsoft Dynamics Lifecycle Services (LCS) and Microsoft Azure DevOps, let you create, configure, run, investigate, and report on test cases.
+- Empower functional users to record business tasks by using Task recorder, and then convert the task recordings into a suite of automated tests, without having to write source code.
 
 ## Before you begin
 
 ### Prerequisites
 
-- A Finance and Operations environment that runs Microsoft Dynamics 365 for Finance and Operations version 10.0 (April 2019) or later is required for this tutorial. For customers who are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, Platform update 20 (PU20) or later is also supported.
-- The user must have admin rights to the Finance and Operations environment.
+- An environment that runs Microsoft Dynamics 365 for Finance and Operations version 10.0 (April 2019) or later is required for this tutorial. For customers who are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, Platform update 20 (PU20) or later is also supported.
+- The user must have admin rights to the environment.
 - You must have access to the customer tenant LCS and Azure DevOps (previously known as Microsoft Visual Studio Team Services \[VSTS\]).
 - The user that is creating and managing tests suites must have an Azure DevOps Test Plans or Test Manager license. The following licenses will also give you access to Test Plans:
     - Visual Studio Enterprise license
@@ -204,14 +204,14 @@ If you created a new Azure DevOps project earlier, configure the LCS project to 
 
     ![Name and Description fields](./media/setup_rsa_tool_24.png)
 
-## Finance and Operations environment
+## Environment
 
 ### Version requirement
 
-A Finance and Operations test or sandbox environment that runs version 10 is required. For customers that are using version 7.3, Platform update 20 or later is also supported.
+A test or sandbox environment that runs version 10 is required. For customers that are using version 7.3, Platform update 20 or later is also supported.
 
 > [!NOTE]
-> RSAT must have access to your Finance and Operations test environment via a web browser.
+> RSAT must have access to your test environment via a web browser.
 
 ### User criteria
 
@@ -219,9 +219,9 @@ The user must have admin rights to this environment.
 
 ### Set up Help settings to connect with LCS
 
-This step is required in order to connect with LCS so that task recordings can be saved to the appropriate BPM library in LCS through the Finance and Operations client.
+This step is required in order to connect with LCS so that task recordings can be saved to the appropriate BPM library in LCS through the client.
 
-1. Open the Finance and Operations client.
+1. Open the client.
 2. Go to **System Administration \> Setup \> System parameters**.
 3. On the **Help** tab, in the **Lifecycle Services help configuration** field, select the relevant LCS project (**RSAT** for this tutorial).
 
@@ -237,13 +237,13 @@ This step is required in order to connect with LCS so that task recordings can b
 ## Task recordings
 
 > [!NOTE]
-> Make sure that all your task recordings start on the main dashboard of Finance and Operations. Keep individual recordings short, and focus on one business task, such as creating a sales order.
+> Make sure that all your task recordings start on the main dashboard. Keep individual recordings short, and focus on one business task, such as creating a sales order.
 
 ### Create a task recording and save it to the BPM library
 
 Create a corresponding task recording that you can attach to the simple business process that was created in the new BPM library.
 
-1. Open the Finance and Operations client.
+1. Open the client.
 2. On the main dashboard, select the **Settings** button (the gear symbol), and then select **Task recorder**.
 
     ![Commands on the Settings menu](./media/setup_rsa_tool_27.png)
@@ -338,7 +338,7 @@ Now that a task recording is attached to the business process, you must validate
 
 ## Install and Configure RSAT
 
-RSAT can be installed on any computer that runs Windows 10 and that can connect to the Finance and Operations environment via a web browser (Internet Explorer or Google Chrome).
+RSAT can be installed on any computer that runs Windows 10 and that can connect to the environment via a web browser (Internet Explorer or Google Chrome).
 
 > [!NOTE]
 > Before you install a new version of the tool, we recommend that you uninstall the previous version.
@@ -385,7 +385,7 @@ To enable authentication, you must generate and install a certificate on the sam
 #### Configure the AOS computer to trust the connection
 
 > [!NOTE]
-> If the Finance and Operations environment is a Tier 2+ environment, the certificate thumbprint must be updated in the wif.config file for **all** AOS computers for the environment.
+> If the environment is a Tier 2+ environment, the certificate thumbprint must be updated in the wif.config file for **all** AOS computers for the environment.
 
 1. Establish a Remote Desktop Protocol (RDP) connection to the AOS computer. Sign-in details are available on the environment details page in LCS.
 2. Open Microsoft Internet Information Services (IIS), and find **AOSService** in the list of sites.
@@ -412,7 +412,7 @@ To enable authentication, you must generate and install a certificate on the sam
     ```
 
     > [!NOTE]
-    > If multiple users are using the same Finance and Operations application, each user must generate separate thumbprints, and each of those thumbprints must be added in the **\<keys\>** section.
+    > If multiple users are using the same application, each user must generate separate thumbprints, and each of those thumbprints must be added in the **\<keys\>** section.
 
 5. If there is more than one AOS computer, repeat steps 3 through 4 for each additional computer.
 
@@ -426,7 +426,7 @@ To enable authentication, you must generate and install a certificate on the sam
 
 #### Tier 2+ environment
 
-If a Tier 2+ (Standard Acceptance Test sandbox or higher) Finance and Operations environment is used, verify or set the following registry setting on the computer where RSAT is installed. This step is required because it helps you avoid authentication or RSAT connection errors.
+If a Tier 2+ (Standard Acceptance Test sandbox or higher) environment is used, verify or set the following registry setting on the computer where RSAT is installed. This step is required because it helps you avoid authentication or RSAT connection errors.
 
 ```
 if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
@@ -506,15 +506,15 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
     - **Access Token** – Enter the access token that lets the tool connect to Azure DevOps. Use the personal access token that you created earlier in this tutorial. For more information, see [Authenticate access with personal access tokens](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Project Name** – Select the name of your Azure DevOps project.
     - **Test Plan** – Select the Azure DevOps test plan that contains your test cases. For more information, see [Create test plans and test suites](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). After you select a test plan, select **Test Connection** to test your connection to Azure DevOps.
-    - **Hostname** – Enter the host name of the Finance and Operations test environment, such as **\<myaos\>.cloudax.dynamics.com**. Don't include the **https://** or **http://** prefix.
-    - **SOAP Hostname** – Enter the SOAP host name of the Finance and Operations test environment. Typically, the SOAP host name is the same as the host name, but it has a **soap** suffix. Here is an example: **\<myaos\>soap.cloudax.dynamics.com**. Don't include the **https://** or **http://** prefix.
+    - **Hostname** – Enter the host name of the test environment, such as **\<myaos\>.cloudax.dynamics.com**. Don't include the **https://** or **http://** prefix.
+    - **SOAP Hostname** – Enter the SOAP host name of the test environment. Typically, the SOAP host name is the same as the host name, but it has a **soap** suffix. Here is an example: **\<myaos\>soap.cloudax.dynamics.com**. Don't include the **https://** or **http://** prefix.
 
         > [!NOTE]
         > To find the host name and SOAP host name, open IIS Manager, right-click **Sites \> AOSService**, and then select **Edit bindings**. The values in the **Host Name** column give you the host name and SOAP host name (the SOAP host name has the suffix **soap** in the URL).
 
         ![Host name and SOAP host name in the Host Name column](./media/setup_rsa_tool_63.png)
 
-    - **Admin user name** – Enter the email address of an admin user in the Finance and Operations test environment.
+    - **Admin user name** – Enter the email address of an admin user in the test environment.
     - **Thumbprint** – Enter the thumbprint of the authentication certificate, as described earlier in this tutorial.
     - **Working directory** – Specify the folder location for storing test automation files, such as Excel test data files. For example, enter or select **C:\\Temp\\RegressionTool**.
 
@@ -524,7 +524,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
     - **Default browser** – Select either **Internet Explorer** or **Google Chrome**. Make sure that the appropriate browser drivers have been installed.
     - **Test run timeout** – Specify the time-out period, in minutes, for test runs. When the time-out period elapses, all active windows are closed, and pending test cases fail.
     - **Test action timeout** – This field controls the time-out period, in minutes, for Finance and Operation environment server requests. Usually, the default value (2 minutes) should be enough. However, for slower environments, you might want to increase the value if errors that are related to time-outs occur.
-    - **Company name** – Enter the company name to use as your default Finance and Operations company when Excel parameter files are created. You can change the company later by editing the Excel parameter file.
+    - **Company name** – Enter the company name to use as your default company when Excel parameter files are created. You can change the company later by editing the Excel parameter file.
 
     ![Settings dialog box](./media/setup_rsa_tool_62.png)
 
@@ -640,7 +640,7 @@ In older versions of RSAT, you had to install Selenium and browser drivers. You 
     ```
 
     > [!NOTE]
-    > In addition to the **General** tab, the Excel parameter file contains a data tab for every Finance and Operations form page the test case visits.
+    > In addition to the **General** tab, the Excel parameter file contains a data tab for every form page the test case visits.
 
     ![Product number field](./media/setup_rsa_tool_81.png)
 
@@ -668,7 +668,7 @@ In this section, you will create a saved variable in the first test case, create
 
 #### Modify an existing task recording to create a saved variable
 
-1. Open the Finance and Operations client.
+1. Open the client.
 2. Select the **Settings** button (the gear symbol), and then select **Task recorder**.
 3. Select **Edit Recording**.
 

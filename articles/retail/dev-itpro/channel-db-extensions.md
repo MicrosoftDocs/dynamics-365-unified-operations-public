@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 09/09/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 The channel database (channel DB) holds transactional and master data from one or more retail channels, such as an online store or a brick-and-mortar store. The master data is pushed down from the Retail Headquarters (Retail HQ) to the channel database using the commerce data exchange (CDX). The transactional data stored in the channel database is pulled back to the headquarters using the CDX.
 
-In this topic we explain how to extend the channel database for different scenarios. The steps here apply only to Dynamics 365 for Retail, Dynamics 365 for Finance and Operations.
+In this topic we explain how to extend the channel database for different scenarios. 
 
 Before discussing the different scenarios for extension, it's important to understand the recent enhancements to channel DB extensions.
 
@@ -47,7 +47,7 @@ We have made some improvements to how extensions are handled during an upgrade. 
 
 ## Ext schema
 
-In Dynamics 365 for Retail and Dynamics 365 Finance and Operations we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Retail and Finance and Operations, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
+We introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. You cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
 
 > [!NOTE]
 > If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Dynamics 365 Finance and Operations will not automatically push the changes to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
@@ -55,7 +55,7 @@ In Dynamics 365 for Retail and Dynamics 365 Finance and Operations we introduced
 ## Best practices for channel DB extensions
 
 - Don’t modify anything in the CRT, AX, or DBO schemas. Use the **ext schema** for all extension scenarios.
-- Don’t access any CRT, AX, or DBO objects in the **ext schema**. You must use the commerce runtime data service to access any channel DB artifacts.
+- If available, we recommend getting data through commerce runtime data services, as opposed to accessing channel DB artifacts directly from CRT, AX, or DBO objects.
 
 ### Don't do this
 The following is an example of what you should not do. Instead, you should use the CRT data service to get the primary key value and then use the primary key to insert into your extension table.
@@ -97,10 +97,10 @@ END;
 
 
 ### Don't do this
-- If you are creating extension table or new table all should be done in ext schema.
-- Don’t modify any views, procedures, functions or any of the database artifacts.
-- Don’t access or call any of any database artifacts including views, defined types, functions and procedures from your extensions.
-- To access the database artifacts, use the CRT data service. For example, suppose you want to extend the product search view to search some custom fields or to show custom columns in journal views. Don’t modify the views or procedures or functions in SQL. Instead, use the CRT data service and do the extension either by overriding or using post triggers and then call your extended procedures.
+- If you are creating extension table or new table, everything should be done in ext schema.
+- Don’t modify any views, procedures, functions, or any of the database artifacts.
+- Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
+
 
 ```sql
 CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
@@ -111,8 +111,8 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
     sdht.CLOSINGTIME,
     sdht.RECID,
     rst.STORENUMBER
-    FROM [ext].[CONTOSORETAILSTOREHOURSTABLE\] sdht
-    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE  --DONT access ax schema object
+    FROM [ext].[CONTOSORETAILSTOREHOURSTABLE] sdht
+    INNER JOIN [ax].RETAILSTORETABLE rst ON rst.RECID = sdht.RETAILSTORETABLE
 )
 ```
 

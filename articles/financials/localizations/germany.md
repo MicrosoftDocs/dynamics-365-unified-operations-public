@@ -2,7 +2,7 @@
 # required metadata
 
 title: Germany overview
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Germany.
+description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019

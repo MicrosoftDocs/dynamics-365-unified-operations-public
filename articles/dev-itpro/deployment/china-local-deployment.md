@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations - operated by 21Vianet in China
-description: This topic provides information about Dynamics 365 for Finance and Operations - operated by 21Vianet in China.
+title: Finance and Operations apps - operated by 21Vianet in China
+description: This topic provides information about inance and Operations apps - operated by 21Vianet in China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,21 +30,21 @@ ms.dyn365.ops.version:
 
 ---
 
-# Dynamics 365 for Finance and Operations - operated by 21Vianet in China
+# Finance and Operations - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 online services operated by 21Vianet is designed to comply with regulatory requirements in China. The services are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“**21Vianet**”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in mainland China.
 
-Microsoft strives to maintain functional parity between our commercially available service and Dynamics 365 for Finance and Operations operated by 21Vianet in China. However, there are notable exceptions to this, which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
+Microsoft strives to maintain functional parity between our commercially available service and Finance and Operations apps operated by 21Vianet in China. However, there are notable exceptions to this, which are affected by dependent service or partner-solution availability, market priorities, or compliance regulations.
 
 ## Provisioning
 
-Customers in China have two options from which to select how they want to access Dynamics 365 for Finance and Operations.
+Customers in China have two options from which to select how they want to access Finance and Operations.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Dynamics 365 for Finance and Operations services in China. This option provides a consistent Dynamics 365 Finance and Operations experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Operations services in China. This option provides a consistent Finance and Operations experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
-- Services operated by Microsoft – This option is for Dynamics 365 for Finance and Operations customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
+- Services operated by Microsoft – This option is for Finance and Operations customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
 
 There are a few technical limitations during the provisioning of services that need to be taken in to account to avoid potential issues. 
 
@@ -84,7 +84,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Dynamics 365 Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
+    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
     
     -   [Extensibility support requests](../extensibility/extensibility-requests.md) will be unavailable.
     
@@ -105,7 +105,7 @@ Due to certain technical dependencies, the following features listed will not be
 ## Additional resources
 
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Support for Dynamics 365 for Finance and Operations - operated by 21Vianet](../lifecycle-services/21vianet-support.md)
+- [Support for Finance and Operations - operated by 21Vianet](../lifecycle-services/21vianet-support.md)
 - [Dynamics 365 for Customer Engagement - operated by 21Vianet](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)

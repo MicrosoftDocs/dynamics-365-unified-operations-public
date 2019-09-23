@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import a database
-description: This topic explains how to import a database for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to import a database for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 01/29/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to import a database for Microsoft Dynamics 365 for Finance and Operations into a sandbox user acceptance testing (UAT) environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to import a database into a sandbox user acceptance testing (UAT) environment.
 
 ## Self-service import database
 

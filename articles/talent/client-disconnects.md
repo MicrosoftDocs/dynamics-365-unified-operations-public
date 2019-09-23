@@ -53,7 +53,7 @@ This issue often occurs when users are in the implementation stage, are comparin
 
 **Browser types:** Google Chrome, Internet Explorer, and Microsoft Edge
 
-Microsoft Dynamics 365 for Talent disconnects users when two different sessions are open at the same time for the same user and the same browser type. (For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs. If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Talent disconnects one of the sessions.
+Microsoft Dynamics 365 Talent disconnects users when two different sessions are open at the same time for the same user and the same browser type. (For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs. If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Talent disconnects one of the sessions.
 
 **Solution**
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (August 20, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (August 20, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (August 20, 2019)
+# What's new or changed in Dynamics 365 Talent (August 20, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -47,11 +47,11 @@ Rejection reason and comments are now displayed in the **Activity** tab for a ca
 
 ## Changes in Onboard
 
-This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-This release includes minor bug fixes for Dynamics 365 for Talent: Core HR. Changes described in this section apply to build number 8.1.2429.
+This release includes minor bug fixes for Dynamics 365 Talent: Core HR. Changes described in this section apply to build number 8.1.2429.
 
 ### In preview
 

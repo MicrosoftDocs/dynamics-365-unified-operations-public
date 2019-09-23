@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move environments between data centers
-description: This topic explains how to move Microsoft Dynamics 365 for Finance and Operations environments that are managed by Microsoft to a different Microsoft Azure data center.
+description: This topic explains how to move environments that are managed by Microsoft to a different Microsoft Azure data center.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
 ms.date: 06/04/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-Occasionally, you must move Microsoft Dynamics 365 for Finance and Operations environments that are managed by Microsoft to a different Microsoft Azure data center. Here are some scenarios where this move might be required:
+Occasionally, you must move environments that are managed by Microsoft to a different Microsoft Azure data center. Here are some scenarios where this move might be required:
 
 - The data center that you planned to use wasn't available when the environments were originally deployed.
 - The project creators didn't do enough research to determine the best data center before the environments were originally deployed.
@@ -54,7 +54,7 @@ Before you begin the move, you must save your data.
 - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
 - **Tier 2 and higher environments that are based on Azure SQL Database:** Choose one of the following options:
 
-    - **Option 1:** Follow the process that is described in [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+    - **Option 1:** Follow the process that is described in [Copy a database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
     - **Option 2:** If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.
     - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
     - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.

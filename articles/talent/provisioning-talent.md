@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provision Talent
-description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 for Talent. 
+description: This topic walks you through the process of provisioning a new environment for Microsoft Dynamics 365 Talent. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/15/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 for Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
+This topic walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Talent. This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Talent service plan, and you can't complete the steps in this topic, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Talent project. Unless a licensing issue prevents you from provisioning Talent, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
@@ -42,8 +42,8 @@ To use LCS to manage your Talent environments, you must first create an LCS proj
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Talent.
 2. Select the plus sign (**+**) to create a project.
-3. Select **Microsoft Dynamics 365 for Talent** as the product name and product version.
-4. Select the **Dynamics 365 for Talent** methodology.
+3. Select **Microsoft Dynamics 365 Talent** as the product name and product version.
+4. Select the **Dynamics 365 Talent** methodology.
 5. Select **Create**.
 
 For information about how to get started with Talent, see the **Talent** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Talent environment.

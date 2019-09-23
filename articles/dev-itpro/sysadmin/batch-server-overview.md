@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch processing and batch servers
-description: This article describes batch processing and batch servers, and how to plan for their use.
+description: This topic describes batch processing and batch servers, and how to plan for their use.
 author: maertenm
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes batch processing and batch servers, and how to plan for their use.
+This topic describes batch processing and batch servers, and how to plan for their use.
 
 The batch framework provides an asynchronous, server-based batch processing environment that can process tasks across multiple instances of Application Object Server (AOS). 
 
@@ -56,7 +56,7 @@ All batch servers can be managed from a single location.
 
 One typical use of batch servers is to load balance jobs across multiple servers. You can set the number of threads that the batch server will process. 
 
-Because batch servers are also active AOS instances that service requests from Microsoft Dynamics 365 for Finance and Operations clients and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
+Because batch servers are also active AOS instances that service requests from the client and other associated components, you must carefully determine when an AOS instance should be available to process batches. 
 
 
 ## Walkthroughs

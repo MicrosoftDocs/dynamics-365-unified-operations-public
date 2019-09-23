@@ -63,7 +63,7 @@ If you're not using Azure DevOps or TFS for source control, use the following co
 
 #### With version control (recommended)
 
-If you're using Azure DevOps or TFS for source control, follow the steps below: **Prepare** the installation of the hotfix package using the command below. (This step is not available if you are using a platform that is older than platform update 2 (August 2016))
+If you're using Azure DevOps or TFS for source control, follow the steps below: **Prepare** the installation of the hotfix package using the command below. This step is not available if you are using a platform that is older than Platform update 2 (August 2016))
 
     SCDPBundleInstall.exe -prepare -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
 
@@ -75,7 +75,7 @@ This will create a changeset of all the existing files on your environment that 
 
     SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfixes> -metadatastorepath=<metadata packages root folder> -tfsworkspacepath=<path of local workspace folder> -tfsprojecturi=<URI of the Azure DevOps or TFS project collection>
 
-(If you are using a platform that is older than platform update 2 (August 2016), you do not need to specify the **-install** option) Here is an example.
+If you are using a platform that is older than Platform update 2 (August 2016), you do not need to specify the **-install** option. Here is an example.
 
     SCDPBundleInstall.exe -install -packagepath=c:\temp\hotfixbundle1234.axscdppkg -metadatastorepath= c:\AOSService\PackagesLocalDirectory -tfsworkspacepath= c:\AOSService\PackagesLocalDirectory -tfsprojecturi=https://myaccount.visualstudio.com/defaultcollection
 
@@ -111,13 +111,16 @@ Sometimes, a metadata hotfix package contains changes to objects that have been 
 Build all models that are affected by the hotfix, and test your application.
 
 ## Check pending changes in to version control
-When you're satisfied with all changes that are related to this update, check in your pending changes to Azure DevOps by using Team Explorer in Microsoft Visual Studio. Enter a comment in the **Comment** field, and then click **Check In**. A history of the changes is preserved in your source code repository. **Note:** If you use a build environment for build and test automation, the build automation process can build metadata hotfix files are in your Azure DevOps project. A hotfix can be built only if the descriptor file of the model that it belongs to is checked in to version control. For example, if the hotfix installation process modified a file that belongs to the Directory model (this file will appear in your list of pending changes), make sure that the descriptor file of the Directory model (c:\\AOSService\\PackagesLocalDirectory\\Directory\\Descriptor\\Directory.xml) is already checked in to your Azure DevOps project. If it isn't checked in, manually add it to your list of pending changes before you check in by using Source Control Explorer. [![Manually adding the descriptor file to the list of pending changes](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
+When you're satisfied with all changes that are related to this update, check in your pending changes to Azure DevOps by using Team Explorer in Microsoft Visual Studio. Enter a comment in the **Comment** field, and then click **Check In**. A history of the changes is preserved in your source code repository. 
+
+> [!NOTE]
+> If you use a build environment for build and test automation, the build automation process can build metadata hotfix files are in your Azure DevOps project. A hotfix can be built only if the descriptor file of the model that it belongs to is checked in to version control. For example, if the hotfix installation process modified a file that belongs to the Directory model (this file will appear in your list of pending changes), make sure that the descriptor file of the Directory model (c:\\AOSService\\PackagesLocalDirectory\\Directory\\Descriptor\\Directory.xml) is already checked in to your Azure DevOps project. If it isn't checked in, manually add it to your list of pending changes before you check in by using Source Control Explorer. 
+
+[![Manually adding the descriptor file to the list of pending changes](./media/configureinstallhotfix-8.png)](./media/configureinstallhotfix-8.png)
 
 ## Synchronize other development VMs
 After a hotfix has been installed on a development VM as described in this article, you don't have to reinstall, resolve conflicts, and validate on other development VMs that are connected to the same Azure DevOps project. Developers and testers who are connected to the same Azure DevOps project can just synchronize the changes into their local VM and then build.
 
 ## Deploy
 After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md).
-
-
 

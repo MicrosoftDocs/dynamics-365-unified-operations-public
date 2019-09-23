@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (October 31, 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 10/31/2018
@@ -29,7 +29,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (October 31, 2018)
 
 [!include [banner](includes/banner.md)]
 

@@ -55,7 +55,7 @@ ms.dyn365.ops.version: 10.0.1
 
     1. In the LCS Shared asset library, select **Data package** as the asset type.
     2. Download the **RU Accounting reporting 5.07 (2016)** package. The file that is downloaded is named **RU Accounting reporting 5.07 (2016).zip**.
-    3. In Microsoft Dynamics 365 for Finance and Operations, in the **Data management** workspace, select **Import**.
+    3. In Dynamics 365 Finance, in the **Data management** workspace, select **Import**.
     4. In the **Job details** section, enter any name for the job.
     5. In the **Data source format** field, select **Package**.
     6. In the **Upload data file** field, select **Upload**, and then select the **RU Accounting reporting 5.07 (2016).zip** file that you downloaded earlier.

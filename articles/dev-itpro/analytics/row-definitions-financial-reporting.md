@@ -50,7 +50,7 @@ A row definition is a report component, or building block, that specifies the co
 A row definition can contain up to 20,000 financial dimension rows and can include the following information:
 
 - Descriptive text that adds meaning to the report by creating section headings, lines, and spaces, such as **Cash** or **Total Revenue**
-- Links to financial data, which can include dimension values in the Microsoft Dynamics 365 for Finance and Operations
+- Links to financial data, which can include dimension values in the Microsoft Dynamics 365 Finance
 
     > [!NOTE]
     > You can set up a row definition to pull data from the financial dimensions system every time that the report is generated.

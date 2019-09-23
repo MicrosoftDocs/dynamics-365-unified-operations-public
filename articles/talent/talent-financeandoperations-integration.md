@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Integration from Dynamics 365 for Talent to Dynamics 365 Finance
+title: Integration from Dynamics 365 Talent to Dynamics 365 Finance
 description: This topic describes the integration between Talent and Finance. 
 author: andreabichsel
 manager: AnnBe
@@ -27,11 +27,11 @@ ms.search.validFrom: 2018-10-8
 ms.dyn365.ops.version: 
 ---
 
-# Integration from Dynamics 365 for Talent to Dynamics 365 Finance
+# Integration from Dynamics 365 Talent to Dynamics 365 Finance
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the functionality available for integration from Dynamics 365 for Talent and Dynamics 365 Finance. The Talent to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance. The template does not provide the ability for data to flow back from Finance into Talent. 
+This topic describes the functionality available for integration from Dynamics 365 Talent and Dynamics 365 Finance. The Talent to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance. The template does not provide the ability for data to flow back from Finance into Talent. 
 
 ![Talent to Finance Integration Flow](./media/TalentFinOpsFlow.png)
 
@@ -44,7 +44,7 @@ The Talent to Finance solution provides the following types of data synchronizat
 
 ## System requirements for Talent
 The integration solution requires the following versions of Talent and Finance: 
-- Dynamics 365 for Talent on Common Data Service.
+- Dynamics 365 Talent on Common Data Service.
 - Dynamics 365 Finance version 7.2 and later.
 
 ## Template and tasks

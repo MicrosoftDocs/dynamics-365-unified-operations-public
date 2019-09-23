@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Data integration guidance for Dynamics 365 for Talent
-description: This topic provides guidance on various options for integrating with data managed by Dynamics 365 for Talent.
+title: Data integration guidance for Dynamics 365 Talent
+description: This topic provides guidance on various options for integrating with data managed by Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/15/2019
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Talent January 2019 update
 
 ---
 
-# Data integration guidance for Dynamics 365 for Talent
+# Data integration guidance for Dynamics 365 Talent
 
 [!include[banner](../includes/banner.md)]
 
 
 ## Overview
-Dynamics 365 for Talent manages business data that is useful in a variety of
+Dynamics 365 Talent manages business data that is useful in a variety of
 business processes. This topic provides guidance on various options for
-integrating with data managed by Dynamics 365 for Talent, describing the
+integrating with data managed by Talent, describing the
 characteristics of different integration technologies so that integrators can
 make informed decisions regarding which technologies best fit their needs.
 
@@ -49,14 +49,14 @@ the business relates to data gathered by another part of the business, and these
 relations can be used to improve business processes and business intelligence
 across your organization. Providing easy, secure, stable access to your business
 data, regardless of which system “owns” the data is a key tenet to the vision we
-have for data integration with Dynamics 365 for Talent.
+have for data integration with Talent.
 
 Historically, integrating data between multiple systems has been difficult.
 Microsoft is taking steps to make data integration easier, and a large step
 toward that goal is realized through [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
-Going forward, Dynamics 365 for Talent is making Common Data Service the preferred
+Going forward, Talent is making Common Data Service the preferred
 public interface for Talent data. Over time, we expect that all the most important
-data managed by Dynamics 365 for Talent will be exposed in Common Data Service. We recommend Common Data Service
+data managed by Talent will be exposed in Common Data Service. We recommend Common Data Service
 as the technology of choice for most integrating applications. While we realize
 that not all data your application may require is currently present in Common Data Service, and
 that your project timelines may require an alternative technology, please
@@ -64,17 +64,17 @@ let us know when Common Data Service does not meet your integration needs.
 
 ## Integration technologies
 The following sections describe the different data integration technologies
-available for use with Dynamics 365 for Talent (Core HR).
+available for use with Talent: Core HR.
 
 ### Common Data Service entities
-Common Data Service is the preferred public data interface for Dynamics 365 for Talent. Common Data Service is
+Common Data Service is the preferred public data interface for Talent. Common Data Service is
 built on a mature platform, having grown out of the Dynamics 365 “XRM” platform,
 upon which the [Dynamics 365 Customer
 Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement)
 solutions are built.
 
 Common Data Service provides a platform for data entities and an API for accessing those
-entities. When Dynamics 365 for Talent is deployed in your organization, Talent
+entities. When Talent is deployed in your organization, Talent
 is connected to a Common Data Service instance and the entities that maintain Talent data are
 deployed into that Common Data Service instance, making the entities and their data available to
 any application that can connect to the Common Data Service instance. Depending on which Talent
@@ -95,7 +95,7 @@ application that connects to OData feeds.
 
 > [!NOTE]
 > With the decision to make Common Data Service the preferred data interface for
-Talent (Core HR) being relatively recent, you may find that the Core HR data
+Talent: Core HR being relatively recent, you may find that the Core HR data
 entities you need for your integration are not yet available in Common Data Service<sup>1</sup>. If the
 Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
@@ -104,9 +104,7 @@ one of the other integration technologies described below.
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
 ### DMF/DIXF entities
-Dynamics 365 for Talent (Core HR), built primarily on the same platform as
-Dynamics 365 Finance, provides a [Data Management Framework
-(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
+Core HR, built primarily on the same platform as Dynamics 365 Finance and Operations, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
 DIXF, and a set of data entities that can be used for importing/exporting data
 into/from Talent. While Common Data Service entities are the preferred data integration
 interface for Talent, the DMF entities will still be useful in some
@@ -144,8 +142,8 @@ interact with the DMF, allowing actions such as:
 
 - Checking the status of an import/export operation.
 
-The DMF Package REST API is fully supported in Dynamics 365 for Talent (Core
-HR).
+The DMF Package REST API is fully supported in Talent: Core
+HR.
 
 ### Azure SQL DB (BYOD)
 
@@ -159,7 +157,7 @@ that can connect to a SQL datastore.
 BYOD should generally be considered a read-only solution. While you are able to
 manipulate and store whatever data you want in the Azure SQL database (such as for
 data mashups), data stored in the Azure SQL database will not be synchronized
-back to Talent Core HR.
+back to Talent: Core HR.
 
 BYOD is appropriate for reporting solutions, data integrations, data mashups, as
 a data source for an [Azure Data
@@ -172,7 +170,7 @@ Factory](https://docs.microsoft.com/azure/data-factory/) pipeline.
 Most DMF entities are also enabled for access through the Talent data service
 (OData). The documentation provided for the [Finance and Operations OData
 service](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata)
-generally also applies to Talent (Core HR), although documentation about
+generally also applies to Talent: Core HR, although documentation about
 creating your own OData-exposed entities will not apply.
 
 While Common Data Service and the OData implementation provided by Common Data Service (through the [Dynamics
@@ -205,8 +203,7 @@ manually.
 Data Integrator projects are appropriate for Common Data Service batch integrations and
 make a great choice for integrations between the Dynamics 365 family of
 applications. As an example, Microsoft provides an out-of-the-box Data
-Integrator template that can be used for integrating data from Dynamics 365 for
-Talent (Core HR) into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 for Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
+Integrator template that can be used for integrating data from Core HR into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 ### Power Query
 
@@ -247,7 +244,7 @@ and OData-enabled entities.
 ## Summary
 Your business data is a valuable asset, but its value can be greatly diminished
 if it is hard to use the data for your specific purposes (such as reporting, data
-mashups, or custom applications). Dynamics 365 for Talent provides several
+mashups, or custom applications). Dynamics 365 Talent provides several
 technologies for working with your data outside of the Talent application’s user interface (UI),
 allowing integrating applications access to the data. This topic has described
 the available integration technologies and some of their key characteristics.

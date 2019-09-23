@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and Azure Service Bus
-description: This topic explains how to configure a Microsft Azure Service Bus endpoint with Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
+description: This topic explains how to configure a Microsft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
 ms.date: 08/13/2019
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 2019-6-30
 # Business events and Azure Service Bus
 [!include[banner](../../includes/banner.md)]
 
-This topic explains how to configure a Microsoft Azure Service Bus endpoint and Microsoft Dynamics 365 Finance and Operations, and how to consume a business event from Service Bus.
+This topic explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 
 ## Scenario overview
 
@@ -45,8 +45,8 @@ Here is an overview of the procedures that you must complete:
 1. Create a new Service Bus namespace.
 2. Create a new Service Bus topic and subscription.
 3. Create a new key vault to store the Service Bus key.
-4. Register an Azure app that has permission to access the key vault on behalf of Finance and Operations.
-5. Configure a Business Events endpoint in Finance and Operations.
+4. Register an Azure app that has permission to access the key vault.
+5. Configure a Business Events endpoint.
 6. Consume the business event.
 
 ## Create a new Service Bus namespace
@@ -80,7 +80,7 @@ Here is an overview of the procedures that you must complete:
 
 ## Create a new key vault
 
-In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string in Finance and Operations, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault on behalf of Finance and Operations.
+In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault.
 
 1. In the Azure portal, select **All services \> Security \> Key vaults**.
 2. Create a new key vault in your resource group and set the default parameters.
@@ -127,30 +127,29 @@ In this procedure, you will register a new application with Azure AD, and give i
 
 10. Save your new access policy.
 
-## Configure a Business Events endpoint in Finance and Operations
+## Configure a Business Events endpoint 
 
-1. Sign in to Finance and Operations.
-2. Go to **System administration \> Setup \> Business events**.
-3. Select **Endpoints**.
-4. Select **New**.
-5. Select **Azure Service Bus Topic**.
-6. Select **Next**.
-7. Set the required parameter values.
+1. Sign in to the application and go to **System administration** \> **Setup** \> **Business events**.
+2. Select **Endpoints**.
+3. Select **New**.
+4. Select **Azure Service Bus Topic**.
+5. Select **Next**.
+6. Set the required parameter values.
 
     <img alt="Service Bus dndpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
 
-8. Select **OK**.
+7. Select **OK**.
 
 ## Consume a business event
 
 The business scenario involves sending an email or a message to a team channel whenever a customer payment is posted for the USMF company. The message must contain details such as the customer account number, the customer name, and the amount of the payment.
 
-1. In Finance and Operations select the business event catalog and look for **customer payment posted** business event
+1. Select the business event catalog and look for **customer payment posted** business event
 2. Activate the business event for USMF company.
 
     <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
 
-    After you activate a business event that uses the new Service Bus endpoint, Finance and Operations sends a test message to verify that the configuration is accurate and to cache the connection.
+    After you activate a business event that uses the new Service Bus endpoint, the application sends a test message to verify that the configuration is accurate and to cache the connection.
 
 3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus topic, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.
 
@@ -185,7 +184,7 @@ The business scenario involves sending an email or a message to a team channel w
     <img alt="Logic apps trigger " src="../../media/BEF-Howto-servicebus-17.png" width="70%">
 
 11. Select **New step** to add a new action.
-12. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract that Finance and Operations provides.
+12. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the schema of the data contract.
 
     The body content that is received from the Service Bus is encoded into base64 format. Therefore, you must transform it to string format before the JavaScript Object Notation (JSON) payload can be parsed. 
 
@@ -197,9 +196,9 @@ The business scenario involves sending an email or a message to a team channel w
 
     <img alt="Service Bus message body " src="../../media/BEF-Howto-servicebus-20.png" width="50%">
 
-    Next, you must enter the schema of the contract that is received from Finance and Operations. Finance and Operations provides only a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
+    Next, you must enter the schema of the contract that is received from the application. The application only provides a sample payload. However, you can use a capability of Azure Logic Apps to generate a schema from a payload.
 
-15. In Finance and Operations, select your event in the business event catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
+15. Select your event in the business event catalog, and then select the **Download schema** link. Open the text file that is downloaded, and copy the contents.
 16. Go back to your Logic Apps, and select the **Use sample payload to generate schema** link. Paste the contents of the text file, and then select **Done**.
 
     <img alt="Message schema " src="../../media/BEF-Howto-servicebus-22.png" width="70%">

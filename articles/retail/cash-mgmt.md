@@ -37,7 +37,7 @@ ms.dyn365.ops.version:
 
 Cash management is a key function for retailers in physical stores. Retailers want their stores to have systems that can help them provide complete traceability and accountability of cash and its movement across the different registers and cashiers in a store. They must be able to reconcile any differences and determine accountability.
 
-Microsoft Dynamics 365 for Retail has cash management capabilities in its point of sale (POS) application. However, in versions of Retail that are earlier than version 10.0.3, cash management functionality isn't robust enough to provide complete traceability of cash movements in stores. Although retailers can reconcile the cash for a store, they can't precisely determine accountability in the event of a cash discrepancy.
+Microsoft Dynamics 365 Retail has cash management capabilities in its point of sale (POS) application. However, in versions of Retail that are earlier than version 10.0.3, cash management functionality isn't robust enough to provide complete traceability of cash movements in stores. Although retailers can reconcile the cash for a store, they can't precisely determine accountability in the event of a cash discrepancy.
 
 In Microsoft Dynamics 365 for Retail version 10.0.3 and later, retailers will gain traceability for cash handling. As part of this traceability, retailers will be able to define safes, make two-sided cash transactions, and reconcile cash management transactions.
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Show pages side by side by using the Open in new window feature
-description: This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Finance and Operations.
+description: This article explains how to display pages side-by-side.
 author: aneesmsft
 manager: AnnBe
-ms.date: 09/07/2017
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Finance and Operations.
+This article explains how to display pages side-by-side.
 
-Microsoft Dynamics 365 for Finance and Operations helps you perform tasks efficiently. In some cases, you may want to view multiple pages side-by-side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to do this you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
+You may want to view multiple pages side-by-side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to do this you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.
 
 Continuing with the example mentioned above, when viewing the lines, you can click the **Open in new window** icon.
 
@@ -50,8 +50,8 @@ The dynamic linking and refreshing happens due to the relations that exist betwe
 
 Some pages have multiple views such as the Grid view, Header view, and Details view. The **Open in new window** icon causes the entire page to be opened in the new browser window. Therefore, you cannot keep two views of the same page side-by-side using the **Open in new window** feature. However, almost all such pages have a navigation list that you can use to switch between records and achieve a similar experience.
 
-Before using the **Open in new window** feature, you should configure your browser's pop-up blocker to allow pop-ups from the URL of the Finance and Operations site. As an example, you could allow pop-ups from "\*.dynamics.com".
+Before using the **Open in new window** feature, you should configure your browser's pop-up blocker to allow pop-ups from the URL of the site. As an example, you could allow pop-ups from "\*.dynamics.com".
 
-The **Open in new window** feature is only available when there is more than one page open in the window. Also, the pop-up window automatically closes when there are no more pages open (that is, when the last page in that window is closed). Finance and Operations also closes open pages when you navigate to a different area in the application. Therefore, if you have pop-up windows open and navigate to a different area in the application, the pop-up windows are automatically closed because the pages in those windows were closed by the system.
+The **Open in new window** feature is only available when there is more than one page open in the window. Also, the pop-up window automatically closes when there are no more pages open (that is, when the last page in that window is closed). The system also closes open pages when you navigate to a different area in the application. Therefore, if you have pop-up windows open and navigate to a different area in the application, the pop-up windows are automatically closed because the pages in those windows were closed by the system.
 
-The top bar in the pop-up windows displays information about the company the page was opened in and is read-only. The pop-up windows also rely on the main Finance and Operations browser window. If the main window is closed or refreshed, all open pop-up windows will become read only. This means that you can still view the information in these windows, but you will not be able to interact with it.
+The top bar in the pop-up windows displays information about the company the page was opened in and is read-only. The pop-up windows also rely on the main browser window. If the main window is closed or refreshed, all open pop-up windows will become read only. This means that you can still view the information in these windows, but you will not be able to interact with it.

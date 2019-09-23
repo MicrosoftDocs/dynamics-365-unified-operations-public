@@ -40,7 +40,7 @@ For conceptual information about financial dimensions and how they affect busine
 
 ### Entering default dimensions
 
-More than 250 pages in Microsoft Dynamics 365 for Finance and Operations let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project. 
+More than 250 pages let you enter default financial dimensions. The dimensions are shown on a FastTab that lists them together with values and descriptions. In standard demo data, more than 30 dimensions are available. However, the following example of a **Financial dimensions** FastTab shows just five dimensions: BusinessUnit, CostCenter, Department, ItemGroup, and Project. 
 
 ![Financial dimensions FastTab](./media/DefaultDimensionEntry.png "Financial dimensions FastTab")
 

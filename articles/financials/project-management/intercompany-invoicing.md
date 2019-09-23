@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intercompany invoicing
-description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
+description: This article provides information and examples about intercompany invoicing for projects.
 author: KimANelson
 manager: AnnBe
 ms.date: 09/14/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Finance and Operations.
+This article provides information and examples about intercompany invoicing for projects.
 
 Your organization might have multiple divisions, subsidiaries, and other legal entities that transfer products and services to each other for projects. The legal entity that provides the service or product is called the *lending legal entity*, and the legal entity that receives the service or product is called the *borrowing legal entity*. 
 
@@ -57,7 +57,7 @@ The goal is to make cost control, revenue recognition, taxes, and transfer price
     -   **Contribution ratio** – The number that you enter in the **Pricing** field is the contribution ratio, which is expressed as a percentage of the sales price.
 
 ## Example 1: Set up parameters for intercompany invoicing
-In this example, USSI is a lending legal entity, and its resources are reporting time against the borrowing legal entity, FRSI, which owns the contract with the end customer. Hours and expenses that USSI employees report can be included in the project invoice that FRSI generates. In addition, there is a third source of transactions that can originate from the lending legal entity (USSI in this example) when it provides shared vendors services to subsidiaries (such as FRSI) and then passes on those costs to projects within those subsidiaries. All matching invoice documents and tax calculations are completed by Finance and Operations. 
+In this example, USSI is a lending legal entity, and its resources are reporting time against the borrowing legal entity, FRSI, which owns the contract with the end customer. Hours and expenses that USSI employees report can be included in the project invoice that FRSI generates. In addition, there is a third source of transactions that can originate from the lending legal entity (USSI in this example) when it provides shared vendors services to subsidiaries (such as FRSI) and then passes on those costs to projects within those subsidiaries. All matching invoice documents and tax calculations are completed by Finance. 
 
 For this example, FRSI must be a customer in the USSI legal entity, and USSI must be a vendor in the FRSI legal entity. You can then set up an intercompany relationship between the two legal entities. The following procedure shows how to set up the parameters so that both legal entities can participate in intercompany invoicing.
 

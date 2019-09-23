@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
 
-The Business activity statement feature in Microsoft Dynamics 365 for Finance and Operations is designed to help you fill out your BAS. It resembles the calculation worksheet that the Australian Taxation Office provides when you receive the BAS form in the mail. The BAS includes the following taxation liabilities:
+The Business activity statement feature is designed to help you fill out your BAS. It resembles the calculation worksheet that the Australian Taxation Office provides when you receive the BAS form in the mail. The BAS includes the following taxation liabilities:
 
 - Goods and Services Tax (GST) amounts that you owe the Australian Taxation Office from sales
 - GST amounts that the Australian Taxation Office owes you from purchases

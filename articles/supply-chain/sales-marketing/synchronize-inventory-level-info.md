@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize inventory level information from Finance and Operations to Field Service 
-description: This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+description: This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Finance and Operations to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -34,12 +34,12 @@ ms.search.validFrom: 2018-12-01
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+This topic discusses the templates and underlying tasks that are used to synchronize inventory-level information from Finance and Operations to Dynamics 365 Field Service.
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to synchronize inventory on-hand levels from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+The following template and underlying tasks are used to synchronize inventory on-hand levels from Finance and Operations to Dynamics 365 Field Service.
 
 **Template in Data integration**
 - Product Inventory (Fin and Ops to Field Service)

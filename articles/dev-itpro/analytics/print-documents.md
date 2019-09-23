@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document printing overview
-description: In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
+description: You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: TJVass
 manager: AnnBe
 ms.date: 07/25/2019
@@ -34,20 +34,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 for Finance and Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
+You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 
 ## Printing overview
 
-Microsoft Dynamics 365 for Finance and Operations provides integrated services and client applications that make it easy to generate, store, and distribute documents that support business activity. In Finance and Operations, you can print documents by using either a local printer or a network-connected device. In addition, you can export Finance and Operations pages and reports directly from the client, as PDF files or Microsoft Office documents. Finally, the distributed workload lets you print business documents directly from a mobile device by using network resources. Although printing requirements might vary, all industries typically must create hard copies of business documents by using Finance and Operations. Printing documents on network devices from hosted applications presents a unique set of challenges. Here are some examples:
+The application provides integrated services and client applications that make it easy to generate, store, and distribute documents that support business activity. You can print documents by using either a local printer or a network-connected device. In addition, you can export pages and reports directly from the client, as PDF files or Microsoft Office documents. Finally, the distributed workload lets you print business documents directly from a mobile device by using network resources. Although printing requirements might vary, all industries typically must create hard copies of business documents by using the application. Printing documents on network devices from hosted applications presents a unique set of challenges. Here are some examples:
 
 - Print drivers might not be available on the user's device.
 - The user's device might not be connected to the corporate network.
 
 By using a dedicated host and following a few easy steps, system administrators can configure deployments so that users can print directly from business applications on network devices.
 
-### Printing scenarios in Finance and Operations applications
+### Application printing scenarios 
 
-The following table describes the three primary printing scenarios in Finance and Operations applications.
+The following table describes the three primary printing scenarios.
 
 | Scenario                        | Goal                                                      | Solution |
 |---------------------------------|-----------------------------------------------------------|----------|
@@ -55,7 +55,7 @@ The following table describes the three primary printing scenarios in Finance an
 | 2. Interactive printing         | Print a precision document on a locally connected device. | You can export a PDF version of the report and download it to the browser. |
 | 3. Printing on a network device | Send a precision document to a domain printer device.     | A precision document is sent to a client application that runs on a server that is hosted in the customer's domain. |
 
-Because the solution varies, depending on the scenario, Finance and Operations applications provide built-in services and tooling to help users accomplish their goals:
+Because the solution varies, depending on the scenario, applications provide built-in services and tooling to help users accomplish their goals:
 
 - **Scenario 1** is supported by the browser's rendering of the HTML5 client.
 - **Scenario 2** uses client applications and Microsoft Office 365 services.
@@ -80,4 +80,4 @@ The following diagram shows the basic components that help support network print
 
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
-Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in Finance and Operations applications.
+Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in applications.
