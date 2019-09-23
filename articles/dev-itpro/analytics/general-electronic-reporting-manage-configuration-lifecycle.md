@@ -76,7 +76,7 @@ The following roles and related activities are associated with the ER configurat
 | Role                                       | Activities                                                      | Description |
 |--------------------------------------------|-----------------------------------------------------------------|-------------|
 | Electronic reporting functional consultant | Create and manage ER components (models and formats).           | A business person who designs ER domain–specific data models, designs the required templates for electronic documents, and binds them accordingly. |
-| Electronic reporting developer             | Create and manage data model mappings.                          | A Finance and Operations specialist who selects the required Finance and Operations data sources and binds them to ER domain–specific data models. |
+| Electronic reporting developer             | Create and manage data model mappings.                          | A specialist who selects the required Finance data sources and binds them to ER domain–specific data models. |
 | Accounting supervisor                      | Configure process-related settings that reference ER artifacts. | For example, an **Accounting supervisor** role that allows the settings of an ER configuration to be used in a particular Accounts payable payment method to generate an electronic payment message for processing invoices. |
 | Accounts payable payments clerk            | Use ER artifacts in a specific business process.                | For example, an **Accounts payable payments clerk** role that allows electronic payment messages to be generated for processing invoices, based on the ER format that is configured for a specific payment method. |
 
