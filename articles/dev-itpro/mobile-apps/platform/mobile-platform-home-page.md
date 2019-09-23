@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 08/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../../includes/banner.md)]
 
-By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to Finance and Operations. 
+By using mobile apps, you can reuse business logic and modeling. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to your cloud app. 
 
 ## Get started
 
@@ -134,7 +134,7 @@ During development it can be useful to attach a debugger to get more detailed in
 #### Prerequisites
 - Azure-hosted development machine (so the mobile device can point to it)
 
-#### Steps to debug the serverside
+#### Steps to debug the server side
 1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Unified Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
 
 2. Open the Unified Operations app on your device, point to the Azure-hosted development machine, and sign in.
@@ -154,7 +154,7 @@ During development it can be useful to attach a debugger to get more detailed in
 9. If more changes or validation is needed, repeat the process.
 
 ## Change needed for ADFS to support Mobile Client in on-premises environments 
-If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia)
+If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Microsoft Dynamics Unified Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
 
 ## Troubleshooting
 ### The Mobile Client app is not working correctly on particular devices
@@ -163,10 +163,10 @@ To completely uninstall the app, don't use the "long-press wiggle and x on the a
 
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
-- Review the documentation provided in the Dynamics 365 for Finance and Operations Help system.
+- Review the documentation provided in the Help system.
 - Review the [Fleet Management Samples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) for examples.
 - Publish and review the Expense Management workspace, and other standard workspaces, for examples. Demo data for the USSI company is useful when using the Expense Management workspace. The forms and X++ code that make up the Expense Management workspace can be found in the Application Explorer by searching for the "ExpenseMobile" prefix.
-- Leverage the [Dynamics Community forums for Finance and Operations (AX)](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
+- Leverage the [Dynamics Community forums](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
 
 ### Tips for workspace creation and modification
 Here are some tips for workspace creation and modification:
@@ -174,9 +174,11 @@ Here are some tips for workspace creation and modification:
 - After recording a form, you have to close the form instead of clicking **Done**, otherwise the form remains open.
 - Verify that recordings are correct using the "Job steps".
 - Play back recordings using task recorder playback to verify them.
+- Don't navigate to a page before starting the recording, because the context from the previous page might need to be captured.
 - If you re-record a page with a grid then you need to re-record the link to the Details page because otherwise it won't be there.
 - When recording an action, change the value of the fields to add them. When recording is complete, close the form instead of clicking **Save**.
 - Lookups in mobile are list pages that have been recorded. **Select field data** and **Select field to display** are used to select the **field to use as the value to save** (data) and the **field to show the user** (display).
+- When adding a lookup field, select a value in a lookup instead of just adding the lookup field. This will ensure that the correct value is selected.
 - If you re-record a lookup, all the references also need to be re-recorded because the GUID for the lookup will change.
 - If you want to add a field to a page, you need to add all the fields again, because the list is cleared at the beginning of each edit. This is a limitation of task recorder. Note that reordering is also not possible.
 - In the workspace XML, GUIDs are used as references to forms and controls instead of names. GUIDs are used to ensure uniqueness, but this comes at the cost of maintainability. Those GUIDs are regenerated on each modification, so partial edits are very difficult. The use of GUIDs would be very costly to change, so it is unlikely that changes would be made in the future to use simpler string name references.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Filters and Toolbar subpatterns
-description: This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
+description: This topic provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
+This topic provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 
 Usage
 -----
@@ -61,9 +61,6 @@ Two subpatterns are described in this article:
 ### Filters and Toolbar - Stacked
 
 [![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
-
-## Pattern changes for Microsoft Dynamics 365 for Finance and Operations
-These patterns didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model
 ### Filters and Toolbar - Inline: High-level structure

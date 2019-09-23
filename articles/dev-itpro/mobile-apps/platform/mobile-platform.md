@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Mobile platform for Finance and Operations
-description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
+title: Mobile platform 
+description: This topic describes the platform for the mobile phone app which enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Mobile platform for Finance and Operations
+# Mobile platform
 
 [!include [banner](../../includes/banner.md)]
 

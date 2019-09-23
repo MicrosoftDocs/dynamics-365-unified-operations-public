@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the process for configuring tax integration for China.
 
-## Prerequisites for Finance and Operations version 10.0 and later
+## Prerequisites for Dynamics 365 Finance version 10.0 and later
 
 To enable the system to generate this code as output in the exported file, you must complete the following tasks in the order in which they are listed.
 

@@ -39,7 +39,7 @@ This article describes the default reports for trial balances. It also describes
 Default trial balance reports
 -----------------------------
 
-Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations.
+Three trial balance reports are available in Financial reporting.
 
 | Default report                                 | What it does                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -904,6 +904,8 @@
     href: perf-test/rsat/rsat-overview.md
   - name: Installation and configuration
     href: perf-test/rsat/rsat-install-configure.md
+  - name: Data agnostic testing using the Regression Suite Automation Tool
+    href: ../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md
   - name: Run test cases
     href: perf-test/rsat/rsat-run.md
   - name: Validate expected values
@@ -912,6 +914,8 @@
     href: perf-test/rsat/rsat-chain-test-cases.md
   - name: Derived test cases
     href: perf-test/rsat/rsat-derived-test-cases.md
+  - name: Use the Regression suite automation tool tutorial
+    href: ../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md
   - name: Best practices
     href: perf-test/rsat/rsat-best-practices.md
   - name: Troubleshooting
@@ -1226,7 +1230,7 @@
       href: migration-upgrade/deprecated-features.md  
     - name: Deprecation of methods and metadata elements
       href: migration-upgrade/deprecation-deletion-apis.md
-    - name: Deprecated APIs (June 2017)
+    - name: Deprecated APIs
       href: migration-upgrade/deprecated-apis.md
 - name: System administration
   items:

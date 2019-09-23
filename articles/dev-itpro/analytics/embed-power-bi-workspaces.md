@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed Power BI in workspaces
-description: Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: TJVass
 manager: AnnBe
 ms.date: 07/23/2019
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 
 ## Overview
 
-Workspaces in Finance and Operations provide an overview of business processes or business units. With rich workspaces, users can get a bird's-eye view of the state of business before diving into details and taking action. Workspaces contain visuals, count tiles, and KPIs as well as quick links to reports and pages. Within a workspace, all controls are tightly integrated to provide a highly-productive and engaging work environment to the user. Power BI Embedded is a Microsoft Azure service that enables ISVs and app developers to surface Power BI data experiences within their applications. With Power BI Embedded, developers can deliver always-up-to-date views with Direct Query. To learn more about how the Power BI Embedded service integrates with Finance and Operations, see [Power BI Embedded integration](power-bi-embedded-integration.md).
+Workspaces in the application provide an overview of business processes or business units. With rich workspaces, users can get a bird's-eye view of the state of business before diving into details and taking action. Workspaces contain visuals, count tiles, and KPIs as well as quick links to reports and pages. Within a workspace, all controls are tightly integrated to provide a highly-productive and engaging work environment to the user. Power BI Embedded is a Microsoft Azure service that enables ISVs and app developers to surface Power BI data experiences within their applications. With Power BI Embedded, developers can deliver always-up-to-date views with Direct Query. To learn more about how the Power BI Embedded service integrates with the application, see [Power BI Embedded integration](power-bi-embedded-integration.md).
 
 ## Power BI in workspaces
-Finance and Operations now delivers interactive reports that seamlessly integrate into application workspaces. By using rich infographics and visuals supported by Power BI (including the large number of controls provided by third parties), workspaces can provide a highly-visual, yet interactive experience for users. Using infographics in the overview page, users can get a quick glance of the state of the business. They can interact with data by simply clicking or touching visuals on the page. They can see the cause and effect, perform simple what-if operations without leaving the workspace. Thanks to stunning yet interactive visuals, your users will have fun exploring data and discovering hidden trends.
+The application now delivers interactive reports that seamlessly integrate into application workspaces. By using rich infographics and visuals supported by Power BI (including the large number of controls provided by third parties), workspaces can provide a highly-visual, yet interactive experience for users. Using infographics in the overview page, users can get a quick glance of the state of the business. They can interact with data by simply clicking or touching visuals on the page. They can see the cause and effect, perform simple what-if operations without leaving the workspace. Thanks to stunning yet interactive visuals, your users will have fun exploring data and discovering hidden trends.
 
 The following screenshot shows Power BI in a workspace.
 
@@ -58,7 +58,7 @@ The following screenshot shows an operational workspace.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3nnj4]
 
-The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
 ## What's next?

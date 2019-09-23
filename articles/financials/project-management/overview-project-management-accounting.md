@@ -43,7 +43,7 @@ The project management and accounting functionality can be used in multiple indu
 
 [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Finance and Operations can help with the planning, execution, and analysis of these projects.
+In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality can help with the planning, execution, and analysis of these projects.
 
 ## Project phases
 Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. 
@@ -85,7 +85,7 @@ You can use forecasting if your organization has an operational perspective and 
 
 ### Create projects
 
-You can create six types of projects in Microsoft Finance and Operations. Each project type is set up differently for costs and revenue recognition. The project type that you choose depends on the purpose of the project. The following table describes the typical use of each project type.
+You can create six types of projects in Finance. Each project type is set up differently for costs and revenue recognition. The project type that you choose depends on the purpose of the project. The following table describes the typical use of each project type.
                                                                                                             
 <table>
   <tr>
@@ -255,7 +255,7 @@ The following table describes the methods for calculating the cost to complete a
 <tbody>
 <tr class="odd">
 <td>Total cost – actual</td>
-<td>Estimated costs must be entered manually. After the <strong>Total cost</strong> or <strong>Total quantity</strong> column on the <strong>Cost estimate</strong> page is completed, the actual costs are subtracted from the user-entered totals. The result is the cost to complete the project. Typically, the progress of costs isn&#39;t tracked based on, for example, the number of hotel stays and meals that are recorded in each period. Instead. Tracking is usually based on a comparison against the total amount of estimated hours. This approach doesn&#39;t require a forecast model, and the total cost or total quantity can be changed manually. When a value is entered in the <strong>Total cost</strong> or <strong>Total quantity</strong> column, Finance and Operations compares this value against the actual transactions that are posted in the period, and then decreases the value in the <strong>Quantity to complete</strong> or <strong>Cost to complete</strong> column.</td>
+<td>Estimated costs must be entered manually. After the <strong>Total cost</strong> or <strong>Total quantity</strong> column on the <strong>Cost estimate</strong> page is completed, the actual costs are subtracted from the user-entered totals. The result is the cost to complete the project. Typically, the progress of costs isn&#39;t tracked based on, for example, the number of hotel stays and meals that are recorded in each period. Instead. Tracking is usually based on a comparison against the total amount of estimated hours. This approach doesn&#39;t require a forecast model, and the total cost or total quantity can be changed manually. When a value is entered in the <strong>Total cost</strong> or <strong>Total quantity</strong> column, Finance compares this value against the actual transactions that are posted in the period, and then decreases the value in the <strong>Quantity to complete</strong> or <strong>Cost to complete</strong> column.</td>
 </tr>
 <tr class="even">
 <td>Total budget – actual</td>
@@ -265,7 +265,7 @@ The following table describes the methods for calculating the cost to complete a
 <li>Compare forecast transactions with actual transactions.</li>
 <li>Maintain, decrease, or increase the estimates for the next period.</li>
 </ol>
-Finance and Operations doesn't automatically decrease the forecasted estimates. Therefore, it's a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. 
+Finance doesn't automatically decrease the forecasted estimates. Therefore, it's a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. 
 <br></br> <strong>NOTE:</strong> When you select this method, use at least two forecast models. One model should contain the original forecast. For the other model, you should copy forecast transactions from another model. This method is valid only for Fixed-prices and Investment projects.</td>
 </tr>
 <tr class="odd">

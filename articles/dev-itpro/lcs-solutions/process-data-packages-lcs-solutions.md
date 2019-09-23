@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Process and consume data packages in Finance and Operations solutions
-description: This topic explains how to process and consume data packages in a Microsoft Dynamics 365 for Finance and Operations solution.
+title: Process and consume data packages in Dynamics 365 Finance and Operations apps solution
+description: This topic explains how to process and consume data packages in a solution.
 author: kfend
 manager: AnnBe
 ms.date: 02/28/2019
@@ -29,15 +29,15 @@ ms.author: omarc
 
 ---
 
-# Process and consume data packages in Finance and Operations solutions
+# Process and consume data packages in Dynamics 365 Finance and Operations apps solution
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics 365 for Finance and Operations data package can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, process, or function. For example, the data entities that are required for general ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.
+A data package for a Dynamics 365 Finance and Operations app can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, process, or function. For example, the data entities that are required for general ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.
 
-Before you create your data package, plan out what it should include. In this way, you help guarantee that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in Finance and Operations. Follow these steps to create a data package.
+Before you create your data package, plan out what it should include. In this way, you help guarantee that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in your application. Follow these steps to create a data package.
 
-1.  In Finance and Operations, select **System administration** &gt; **Workspaces** &gt; **Data Management IT**.
+1.  In the application, select **System administration** &gt; **Workspaces** &gt; **Data Management IT**.
 2.  Select the **Export** tile, and then, in the **Name** field, enter **Data project**.
 3.  In the **Target data format** field, select the format for the export. The data formats that are available include comma-separated value (CSV) format and Microsoft Excel format.
 4.  In the **Entity name** field, enter or select an entity. You can add multiple entities, but you must add each entity separately.
@@ -102,9 +102,9 @@ Follow these steps to consolidate the data packages that you uploaded to LCS int
 
 ## Consume a PDP
 > [!IMPORTANT]
-> For the PDP consumption requirement, you have the option to consume data packages directly via the Data Management Framework in your Finance and Operations environment. However, note that only the consumption of data packages via the LCS PDP tool is optional. You must still create the PDP and upload it to your Asset library. 
+> For the PDP consumption requirement, you have the option to consume data packages directly via the Data Management Framework in your environment. However, note that only the consumption of data packages via the LCS PDP tool is optional. You must still create the PDP and upload it to your Asset library. 
 
-The Consume flow lets you review a business process, and apply the configuration and data that are required in order to implement the business process in your Finance and Operations environment. To consume PDPs, you must have the following items:
+The Consume flow lets you review a business process, and apply the configuration and data that are required in order to implement the business process in your environment. To consume PDPs, you must have the following items:
 
 -   An implementation business process library for the solution in your working LCS project
 -   PDPs
@@ -164,4 +164,4 @@ Follow these steps to consume the PDP.
 
 ### Additional resources
 
-[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
+[Publishing an App AppSource](lcs-solutions-app-source.md)

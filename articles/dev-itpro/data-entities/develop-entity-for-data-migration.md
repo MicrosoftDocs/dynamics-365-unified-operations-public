@@ -85,7 +85,7 @@ The entity also has the following fields:
 
 #### Steps
 
-1. In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations project.
+1. In Visual Studio, create a new application project.
 2. In Solution Explorer, select the project, and then right-click **Properties**.
 3. Specify the following project properties, and then click **OK**.
 

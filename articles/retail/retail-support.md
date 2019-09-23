@@ -80,7 +80,7 @@ To obtain support for Retail, use the resources in the following table. These re
 For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website Support</a>.</td>
 </tr>
 <tr>
-<td>Get help with questions about Retail or Finance and Operations licensing.</td>
+<td>Get help with questions about licensing.</td>
 <td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
 </tr>
 <tr>

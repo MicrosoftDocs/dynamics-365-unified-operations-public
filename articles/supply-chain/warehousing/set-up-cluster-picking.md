@@ -48,7 +48,7 @@ the worker must break the cluster and then re-create it.
 If needed, a worker can pass a cluster to another worker. This changes the
 cluster status to Passed. When the worker uses a mobile device to indicate that
 the picking and put away work is completed, the shipment or load must be
-confirmed in the Dynamics 365 for Finance and Operations client.
+confirmed in the Finance and Operations client.
 
 ## Set up cluster picking
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Topic name
+title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 description: Full description that appears in the search results. Often the first paragraph of your topic.
 author: ShellyBakke
 manager: AnnBe

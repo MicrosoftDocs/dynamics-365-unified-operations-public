@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
-Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).
-
 ## Retail components and architecture
 -   [Components of Dynamics 365 Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
@@ -84,6 +82,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -108,6 +107,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
 -   [Add customer preference data to a channel database](add-customer-preference-channel.md)
 -   [Add properties to a sales order](add-properties-sales-order.md)
+-   [Manage secrets for retail channels](manage-secrets.md)
 
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
@@ -127,7 +127,8 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
-- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
+- [Show custom notifications in POS](extend-pos-notification.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)

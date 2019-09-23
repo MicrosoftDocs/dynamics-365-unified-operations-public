@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project accounting with general budget reservations
-description: This topic provides information about project accounting that uses general budget reservations for Public sector in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about project accounting that uses general budget reservations for Public sector.
 author: AlexRenney
 manager: AnnBe
 ms.date: 04/25/2019

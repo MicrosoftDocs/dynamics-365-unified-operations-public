@@ -166,7 +166,7 @@ static void noRecurrenceButton(Args _args)
 Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.
 
 - **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
-- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in Finance and Operations in the ImageListAppl\* application classes.
+- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in the ImageListAppl\* application classes.
 
 ## Query object model
 The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. The following table describes the classes in the query object model.

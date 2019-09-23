@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial provides guidelines on how to take traces in Microsoft Dynamics 365 for Finance and Operations.
+This tutorial provides guidelines on how to take traces.
 
 In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Microsoft Dynamics AX 2012 version, but it is not backward compatible and can't be used to analyze AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
 
@@ -44,9 +44,6 @@ This tutorial requires that you access the environment as an administrator on th
 ## Capture the trace
 1.  Before you trace make sure your scenario is in a "Warm" state meaning you executed the scenario you want to trace once before you take the trace. That will prevent things like metadata loading and other possible warm up tasks from being in the trace.
 2.  In the navigation bar, select **Settings**, and then click **Trace**. 
-
-    [![Trace1](./media/trace1-300x176.jpg)](./media/trace1.jpg)
-
 3.  Name the trace that you are about to capture, and then click **Start trace**.
 4.  Perform actions that need to be analyzed like for example opening "Accounts payable &gt; Vendors &gt; All vendors".
 5.  When you are finished, click **Stop trace**. Then, you can select one of the following options (for this tutorial, select the second option):

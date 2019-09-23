@@ -2,8 +2,8 @@
 
 # required metadata
 
-title:  Set up your career site in Microsoft Dynamics 365 for Talent - Attract
-description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 for Talent - Attract.
+title:  Set up your career site in Microsoft Dynamics 365 Talent - Attract
+description: This topic provides an overview of the candidate-facing career site functionality in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 [!include[banner](../includes/banner.md)]
 
 This topic provides an overview of the candidate-facing career site
-functionality in Microsoft Dynamics 365 for Talent: Attract. It also explains
+functionality in Microsoft Dynamics 365 Talent: Attract. It also explains
 how to set up this functionality.
 
 Attract provides one career site for each environment in a tenant. For example,
@@ -91,7 +91,7 @@ The following list contains the commonly used career site URLs and how to access
 
 -   **Individual job post apply URL** - When you [post an external
     job](Creating-jobs-Attract.md#postings) for the first time, you can copy
-    the **Apply** link from the Attract application. The URL for this link will
+    the **Apply** link from Attract. The URL for this link will
     be in the following format: 
     [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 

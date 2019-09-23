@@ -65,7 +65,7 @@ You can store contacts for a vendor. These contacts can then be used on document
 
 To add contacts for a vendor, on the **All vendors** page, on the **Vendor** tab, in the **Set up** group, click **Contacts** &gt; **Add contacts**.  
 
-You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Microsoft Dynamics 365 for Finance and Operations, and edit the information as you require.  
+You can create vendor contacts from scratch. Alternatively, you can copy details from another person who is already registered in Finance and Operations, and edit the information as you require.  
 
 **Note:** Adding a contact for a vendor isn't the same as adding contact information for that vendor. Although you might add general contact information for a vendor, you might also have several specific people who are contacts at that company, and who all have their own contact information.  
 

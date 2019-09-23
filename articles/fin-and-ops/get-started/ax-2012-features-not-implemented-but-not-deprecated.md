@@ -5,7 +5,7 @@ title: AX 2012 features that were postponed
 description: This topic lists features of Microsoft Dynamics AX 2012 that were postponed, and indicates whether the features have been implemented since the AX 7.0 release.
 author: sericks007
 manager: AnnBe
-ms.date: 04/16/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -49,7 +49,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <tbody>
 <tr>
 <td>Absence management in Human resources</td>
-<td>Functionality for entering absence transactions isn't included in Finance and Operations. Additionally, functionality for approving absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Functionality for entering absence transactions isn't included. Additionally, functionality for approving absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 <td>Implemented in Dynamics 365 for Talent</td>
 </tr>
 <tr>
@@ -101,7 +101,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
 <td>External questionnaire functionality hasn't been implemented.
-<p>Recruiting functionality is available in the Attract app for Talent.</p>
+<p>Recruiting functionality is available in Talent: Attract.</p>
 </td>
 </tr>
 <tr>
@@ -423,7 +423,7 @@ For a detailed list of when each version of the product was released, see [Softw
 </tr>
 <tr>
 <td>Vendor requests - external request to become a new vendor</td>
-<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account in Finance and Operations.</td>
+<td>Dynamics AX 2012 provided the ability for an anonymous user to sign up to be a vendor in the system, which could lead to a vendor request for adding a new vendor to the vendor master. In version 7.3, the anonymous request from a prospective vendor can be imported via an entity (Data Management/OData), which can lead to inviting the vendor - or the vendor's contact person - to register additional details about the prospective vendor. The information provided is included in a new vendor request that can be reviewed and approved via a workflow process. An approval of the vendor request leads to creation of a new vendor account.</td>
 <td>Implemented in version 7.3</td>
 </tr>
 <tr>

@@ -36,7 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic provides an overview of e-Commerce capabilities.
 
+
 Microsoft Dynamics 365 Retail includes a fully-integrated omni-channel e-Commerce platform that enables third-party online stores to easily plugin and create a full-featured e-commerce site. The platform includes a rich shopping cart and checkout features that support cross channel scenarios. In addition, the platform can create a single customer identity and enable managing the customer account, order history, wish lists, and loyalty through the online store. The e-Commerce experience is integrated with a highly-scalable Retail server that exposes all required customer experiences. The platform supports integrated payments and Open ID integration to provide seamless user authentication. By using this suite of e-Commerce features, you can centrally manage products, merchandizing, and order fulfillment for all aspects of your online sales channel. The following image shows how an external online store can integrate with the Dynamics E-Commerce platform. 
+
 
 [![ECommerceUpdated](./media/ecommerceupdated-1024x545.png)](./media/ecommerceupdated.png) 
 

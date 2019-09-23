@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (March 5, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (March 5, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/05/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (March 5, 2019)
+# What's new or changed in Dynamics 365 Talent (March 5, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Talent
+This topic describes features that are either new or changed in Talent.
 
 ## Changes in Attract
 
@@ -82,5 +82,5 @@ Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to 
 ###  Advanced compensation security (fixed and variable)
 In many organizations, compensation and benefits managers can only access certain compensation records, such as records for executives or regional-based employees. With this change, you can manage and maintain the compensation plans for different employee populations in the organization. Fixed and variable plans can be assigned security roles, which will determine the access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the given access will be able to process compensation for those employees.
 
-###  Platform update 24
-For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  Platform update 24 for Finance and Operations
+For additional details about Platform update 24 for Finance and Operations, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

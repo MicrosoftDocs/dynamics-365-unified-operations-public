@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Power BI is a suite of business analytics tools that let you analyze data and share insights. By using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use the reports interactively on many devices. Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration.
+Microsoft Power BI is a suite of business analytics tools that let you analyze data and share insights. By using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use the reports interactively on many devices. The application uses Power BI for data exploration.
 
 ## Data exploration through Power BI
-There are various types of reporting in Finance and Operations.
+There are various types of reporting.
 
 ![Data exploration](./media/data-exploration.png)
 
@@ -53,7 +53,7 @@ In Power BI, thanks to the in-memory database technologies in Microsoft SQL Serv
 
 Therefore, although you might use the term _report_ to refer to Power BI artifacts, you should think about the larger scenario that is involved. Your users are exploring data! Power BI is the tool of choice when you must address data exploration and visualization requirements.
 
-For a detailed discussion of reporting concepts in Finance and Operations, see [Information access and reporting](information-access-reporting.md).
+For a detailed discussion of reporting concepts, see [Information access and reporting](information-access-reporting.md).
 
 ## Ready-made Power BI content
 You can use ready-made Power BI reports right away. Two types of Power BI content are available:
@@ -64,7 +64,7 @@ You can use ready-made Power BI reports right away. Two types of Power BI conten
 Depending on your version, you can use one of both types of content.
 
 ### Power BI content that is available in LCS
-LCS is a service that can manage your Finance and Operations environments. LCS is operated by Microsoft. Power BI reports are developed by using Entity store and are then distributed in LCS as implementation assets. In LCS, you will find not only content that is developed by Microsoft, but also content that is developed by independent software vendors (ISVs) and partners.
+LCS is a service that can manage your environments. LCS is operated by Microsoft. Power BI reports are developed by using Entity store and are then distributed in LCS as implementation assets. In LCS, you will find not only content that is developed by Microsoft, but also content that is developed by independent software vendors (ISVs) and partners.
 
 We will continue to release Power BI content that is based on Entity store. For information, see the [Roadmap](https://roadmap.dynamics.com).
 
@@ -79,7 +79,7 @@ You should use the ready-made Power BI content as a first step. You can modify r
 ### Creating high-volume, near-real-time "operational Power BI reports" by using Entity store
 Entity store is an operational data store that is built specifically for Power BI integration. To create high-volume, near-real-time Power BI reports that use Entity store, a business analyst or a developer can use Power BI desktop, which is the authoring tool for Power BI reports. Like other artifacts that developers create, these reports must be distributed to your users via LCS.
 
-Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in Finance and Operations.
+Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in application.
 
 For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
@@ -103,15 +103,15 @@ After your reports are uploaded, your users can view, adjust, and explore them e
 
 For more information about Power BI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/documentation/powerbi-service-how-should-i-share-my-dashboard/).
 
-## Pinning Power BI content to the Finance and Operations client
-PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to workspaces in Finance and Operations. Power BI content in Dynamics 365 provides contextual insights that are related to business operations.
+## Pinning Power BI content to the client
+PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to workspaces. Power BI content in Dynamics 365 provides contextual insights that are related to business operations.
 
 You can pin two types of objects from PowerBI.com: tiles in PowerBI.com dashboards, and reports.
 
 Before you can pin Power BI content, you must configure Power BI in your Dynamics 365 environment.
 
 ### One-time configuration of PowerBI.com integration
-Before you can pin tiles or reports, an administrator must configure integration with PowerBI.com in your Finance and Operations environment. This configuration must be done only one time per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
+Before you can pin tiles or reports, an administrator must configure integration with PowerBI.com in your environment. This configuration must be done only one time per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
 
 ### Pinning PowerBI.com tiles
 Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).

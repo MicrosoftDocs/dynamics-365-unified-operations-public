@@ -61,13 +61,13 @@ In the right pane, click **Browse** to choose a file, and then click **Upload**.
 
 
 ## Activity diagrams that are created from task recordings
-You can create a task recording in your Finance and Operations environment, and save it directly to Microsoft Dynamics Lifecycle Services (LCS). In this way, you can associate the task recording with a business process in a BPM library. For more information, see [Connecting the help system](../../fin-and-ops/get-started/help-connect.md) and [Create documentation or training using task recordings](../user-interface/task-recorder-training-docs.md).
+You can create a task recording in your environment and save it directly to Microsoft Dynamics Lifecycle Services (LCS). In this way, you can associate the task recording with a business process in a BPM library. For more information, see [Connecting the help system](../../fin-and-ops/get-started/help-connect.md) and [Create documentation or training using task recordings](../user-interface/task-recorder-training-docs.md).
 
-The Task recorder tool in Finance and Operations lets you create a distributable recording file. Recording files have the .axtr file name extension. You can associate a business process in BPM with a task recording by manually uploading the recording file. 
+The Task recorder tool lets you create a distributable recording file. Recording files have the .axtr file name extension. You can associate a business process in BPM with a task recording by manually uploading the recording file. 
 
 To upload a recording file, select the business process, and then, in the right pane, on the **Overview** tab, select **Upload**.
 
-BPM automatically generates an activity diagram and detailed process steps for all task recordings that are created in Finance and Operations. The following illustration shows an example.
+BPM automatically generates an activity diagram and detailed process steps for all task recordings that are created. The following illustration shows an example.
 
 ![Example of an activity diagram and process steps for a task recording](./media/NEWBPM_BlogPost17-1024x483.png "Example of an activity diagram and process steps for a task recording")
 

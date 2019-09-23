@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (July 9, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (July 9, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/09/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-07-09
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (July 9, 2019)
+# What's new or changed in Dynamics 365 Talent (July 9, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -52,9 +52,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 Changes described in this section apply to build number 8.1.2374.
 
-### Platform update 28
+### Platform update 28 for Finance and Operations
 
-For more details about Platform update 28, see [Preview features in Dynamics 365 for Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### Entity support for custom fields in Common Data Service 
 
