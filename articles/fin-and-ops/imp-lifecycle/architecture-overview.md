@@ -48,7 +48,7 @@ The cloud architecture consists of these conceptual areas:
 
     The tenant is created when customers sign up for their first subscription to any Microsoft online service, such as Office 365, Microsoft Dynamics 365, or Azure. Any later subscriptions to the same online services or other online services can be grouped within the same tenant.
 
-    An organization can have multiple AAD tenants. If there are multiple tenants, make sure that any subscriptions for Finance and Operations appsare associated with the correct tenant.
+    An organization can have multiple AAD tenants. If there are multiple tenants, make sure that any subscriptions for Finance and Operations apps are associated with the correct tenant.
 
 - **Azure Active Directory (AAD)** – AAD is the multi-tenant, cloud-based directory and identity management service from Microsoft that combines core directory services, application access management, and identity protection in a single solution. For more information, see [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/). Finance and Operations apps use AAD as the store for identity. Access to AAD is provided as part of a subscription to Finance and Operations apps.
 - **Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. It's used to provide management functions for users (AAD) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Office 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
