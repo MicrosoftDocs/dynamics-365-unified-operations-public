@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Go-live for Finance and Operations implementation projects FAQ
-description: This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
+title: Go-live for implementation projects FAQ
+description: This topic lists frequently asked questions about how to go live with an implementation project.
 author: sshashi7
 manager: AnnBe
 ms.date: 07/12/2019
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Go-live for Finance and Operations implementation projects FAQ
+# Go-live for implementation projects FAQ
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists frequently asked questions about how to go live with a Microsoft Dynamics 365 for Finance and Operations project.
+This topic lists frequently asked questions about how to go live with an implementation project.
 
 ## When can I configure and request my production environment?
 
@@ -46,7 +46,7 @@ For a list of the prerequisites, see [Preparing for Go-live](prepare-go-live.md)
 
 ## What is a Go-live assessment/review, and why is it required?
 
-The Go-live assessment/review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every Finance and Operations project before you can request to go live in a production environment.
+The Go-live assessment/review is part of the [Microsoft FastTrack program](../get-started/fasttrack-dynamics-365-overview.md). During this review, a solution architect assesses whether an implementation project is ready for a successful cutover and go-live. This review is mandatory for every implementation project before you can request to go live in a production environment.
 
 ## I want to request my production environment. Who do I contact for a Go-live assessment/review?
 If a FastTrack solution architect is assigned to your project, contact him or her directly. Otherwise, based on the go-live date that is specified in Microsoft Dynamics Lifecycle Services (LCS), you will receive an email that instructs you to fill out the Pre-go-live checklist and send it to <d365fogl@microsoft.com> a few weeks before the go-live date. If you haven't received an email, and you're ready for go-live, you can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) page, complete it, and send it to d365fogl@microsoft.com.
@@ -58,9 +58,9 @@ The **Production** button in LCS is available only after you've completed the **
 > [!NOTE]
 > Your production environment won't be deployed until the Go-live assessment/review has been completed.
 
-## My sandbox environment is currently on a platform update that is set to expire in two months. Can I request a production environment that has the latest platform update?
+## My sandbox environment is currently on an update that is set to expire in two months. Can I request a production environment that has the latest update?
 
-No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the application and platform versions that you select must match the application and platform versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest platform update to your sandbox environment, test it, and sign off.
+No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the versions that you select must match the versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest update to your sandbox environment, test it, and sign off.
 
 For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
@@ -85,7 +85,7 @@ Yes. As long as the status of the production environment is **Queued**, you can 
 
 After the Go-live assessment with the Microsoft FastTrack team is completed and the production request is submitted, deployment of the production environment should be completed within 48 hours.
 
-## What level of access do I have in my Finance and Operations production environment? Can I sign in to the VM?
+## What level of access do I have in my production environment? Can I sign in to the VM?
 
 No. Access to the production environment is limited. You can't access the virtual machine (VM) or Microsoft Internet Information Services (IIS). You also can't access the database through Microsoft SQL Server Management Studio.
 

@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
+The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
-In Dynamics 365 for Finance and Operations both administrators and users set the behavior of the email subsystem.
+Both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 
@@ -107,7 +107,7 @@ When an email is going to be sent, the user will see the **How would you like to
 |------------------------------------------------------------------------|-------------|
 | Use an email app, such as Outlook                                      | Provides the user with a generated email (.eml) file. |
 | Use Exchange email server                                              | Uses the Exchange Online server associated with the tenant. The email will be sent using Exchange Web Services (EWS). On-premises Exchange servers are not supported at this time for the **Exchange** mail provider. |
-| Use the Microsoft Dynamics 365 for Finance and Operations email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
+| Use the system email client | Opens the **Send email** composition dialog box and then sends the resulting email via SMTP. |
 | Do not ask again                                                       | If this field is not selected, the next time an email is sent the most recently selected option will be used and the dialog box will not open. |
 
 ## User (optional): Send email dialog box

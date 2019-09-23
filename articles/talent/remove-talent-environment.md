@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove Talent environments
-description: This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 for Talent. 
+description: This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Talent. 
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 for Talent.
+This topic walks you through the process of removing a test drive or production environment for Microsoft Dynamics 365 Talent.
 
 ## Removing a test drive environment
 

@@ -101,7 +101,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added to Talent in a future update.</td>
 <td>External questionnaire functionality hasn't been implemented.
-<p>Recruiting functionality is available in the Attract app for Talent.</p>
+<p>Recruiting functionality is available in Talent: Attract.</p>
 </td>
 </tr>
 <tr>

@@ -39,7 +39,7 @@ This topic describes the **Workforce metrics** Microsoft Power BI content. It ex
 ## Accessing the Power BI content
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
-- Microsoft Dynamics 365 for Finance and Operations
+- Microsoft Dynamics 365 Finance
 - Microsoft Dynamics 365 for Talent
 
 ## Metrics that are included in the Power BI content
@@ -66,7 +66,7 @@ You can filter the charts and tiles on these reports, and pin the charts and til
 Be sure to download the **Workforce metrics** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 > [!NOTE]
-> The .pbix files available in Lifecycle Services apply to Finance and Operations only.
+> The .pbix files available in Lifecycle Services apply to Finance and Operations apps only.
 
 ## Understanding the data model and entities
 The following table shows the entities that the content was based on.

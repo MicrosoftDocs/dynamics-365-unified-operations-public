@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
+title: Dynamics 365 Talent to Dynamics 365 for Finance and Operations integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance and Operations integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Dynamics 365 for Talent to Dynamics 365 for Finance and Operations integration FAQ
+# Dynamics 365 Talent to Dynamics 365 for Finance and Operations integration FAQ
 
 [!include [banner](includes/banner.md)]
 
-This topic answers common questions associated about what data is synchronized when Dynamics 365 for Talent is integrated with Dynamics 365 for Finance and Operations.
+This topic answers common questions associated about what data is synchronized when Dynamics 365 Talent is integrated with Dynamics 365 for Finance and Operations.
 
 ## Is all data synchronized or just some data entities?
 
 With Core Human Resources (HR), a subset of the data is synchronized. For a list of all
-the entities, see [Integration from Dynamics 365 for Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
 
 For Attract and Onboard, all data is native to Common Data Service.
 
@@ -56,7 +56,7 @@ part of the default template. This entity is planned, but currently no release t
 
 For data that resides in Finance and Operations but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
-information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 for Talent Core HR (October 31, 2018)](whats-new-talent-october-31.md).
+information about how to configure links between Talent and Finance and Operations, see [What's new or changed in Dynamics 365 Talent: Core HR (October 31, 2018)](whats-new-talent-october-31.md).
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 
@@ -159,10 +159,7 @@ the execution time in Step 2.
 
 ## After integrating Talent and Finance and Operations, I don’t see my Talent data in Finance and Operations. What do I do?
 
-The integration to Finance and Operations is a two-step process. First, verify
-that the Talent data is updated and available in Common Data Service. This is a near real-time
-sync and can be verified in PowerApps by looking at the data within the data
-entities.
+The integration to Finance and Operations is a two-step process. First, verify that the Talent data is updated and available in Common Data Service. You can verify this in PowerApps by looking at the data within the data entities.
 
 ![Data in Common Data Service](media/DataInCDS.png)
 

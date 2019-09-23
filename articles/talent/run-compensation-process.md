@@ -2,7 +2,7 @@
 # required metadata
 
 title: Run the compensation process
-description: This topic explains how to resolve an issue where the customer is trying to run the compensation process in Microsoft Dynamics 365 for Talent but isn't having any success.
+description: This topic explains how to resolve an issue where the customer is trying to run the compensation process in Microsoft Dynamics 365 Talent but isn't having any success.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent
 
 **Issue**
 
-The customer is trying to run the compensation process in Microsoft Dynamics 365 for Talent but isn't having any success.
+The customer is trying to run the compensation process in Microsoft Dynamics 365 Talent but isn't having any success.
 
 **Cause**
 

@@ -244,7 +244,7 @@ Control of the input to the new method could be a security risk. Therefore, this
 ## Class AOSSessionInfo
     class AOSSessionInfo extends Object
 
-The AOSSessionInfo class is used to provide information about a session for Finance and Operations Application Object Server (AOS).
+The AOSSessionInfo class is used to provide information about a session for the Application Object Server (AOS).
 
 ### Remarks
 
@@ -1040,7 +1040,7 @@ The AsciiIo class provides functionality for reading and writing ASCII files.
 
 ### Remarks
 
-The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in Finance and Operations, such as an .xpo file.
+The TextIo class provides functionality for reading and writing files that use various code pages. The AsciiIO class supports only ANSI code page (ACP) characters. Existing code that uses the AsciiIO class must be converted to use the TextIO class if the file contains non-ACP characters, or if it is a file that is used only in a Finance and Operations application, such as an .xpo file.
 
 ### Examples
 

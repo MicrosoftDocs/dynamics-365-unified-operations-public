@@ -111,7 +111,7 @@ Next is another use of LINQ in C\#, except this time the more standard syntax is
         .OrderBy(primaryAndForeign => primaryAndForeign.P.AccountNum)
         .Select(primaryAndForeign => primaryAndForeign.P);
 
-There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by Finance and Operations.
+There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the Finance and Operations applications.
 
 ### Limitation of the specialized LINQ syntax
 

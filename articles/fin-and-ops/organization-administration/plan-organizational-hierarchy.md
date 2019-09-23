@@ -34,27 +34,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Finance and Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Finance and Operations and on business processes.
+Before you set up organizations and organization hierarchies, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation and business processes.
 
 Organizational hierarchies represent the relationships between the organizations that make up a business. Therefore, the most important consideration when you model organizations is the structure of your business. We recommend that you define organization structures based on feedback from executives and senior managers from functional areas, such as finance and accounting, human resources, operations, purchasing, and sales and marketing.
 
-When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your Microsoft Dynamics 365 for Finance and Operations partner to create hierarchies that address both organizational and statutory reporting needs.
+When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your partner to create hierarchies that address both organizational and statutory reporting needs.
 
 > [!NOTE]
-> Although you can use financial dimensions to represent legal entities without creating the legal entities in Finance and Operations, financial dimensions aren't designed to address the operational or business needs of legal entities. The interunit accounting functionality in Finance and Operations is designed to address only the accounting entries that are created by each transaction.
+> Although you can use financial dimensions to represent legal entities without creating the legal entities, financial dimensions aren't designed to address the operational or business needs of legal entities. The interunit accounting functionality is designed to address only the accounting entries that are created by each transaction.
 
 > [!IMPORTANT]
-> You shouldn't decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Finance and Operations Partner for additional guidance. Your Finance and Operations Partner has gained experience in various industries and across the customer base.
+> You shouldn't decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Partner for additional guidance. Your Partner has gained experience in various industries and across the customer base.
 
 ## Decide whether to model internal organizations as legal entities or operating units
 
-You must have at least one legal entity to represent your business in Finance and Operations. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance.
+You must have at least one legal entity to represent your business. A legal entity can enter legal contracts and is required to prepare financial statements that report on its performance.
 
-In Finance and Operations, legal entities can be used for transactional business or for consolidation. This means that a legal entity in Finance and Operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
+Legal entities can be used for transactional business or for consolidation. This means that a legal entity in Finance and Operations does not necessarily represent a real entity in your business. For example, a company that participates in transactions can own subsidiary legal entities. In this scenario, a legal entity is required for transactions, and a virtual legal entity is required to consolidate the results and balances of the subsidiary legal entities.
 
 Internal organizations in your business, such as regional offices, can be represented as additional legal entities, or as operating units of the main legal entity. An operating unit is not required to be a legally defined organization. Operating units are used to control economic resources and operational processes in the business. For example, departments and cost centers are operating units.
 
-Some functionality in Finance and Operations works differently depending on whether the organization is a legal entity or an operating unit. Carefully consider the functionality described below as you make your decision.
+Some functionality works differently depending on whether the organization is a legal entity or an operating unit. Carefully consider the functionality described below as you make your decision.
 
 ### Master data
 
@@ -80,7 +80,7 @@ Module parameters are shared among operating units.
 
 #### If the organization is modeled as a legal entity
 
-Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize Finance and Operations to secure data by company ID.
+Most data is automatically secured by company ID. A company ID is a unique identifier for the data that is associated with a legal entity. A company can be associated with only one legal entity, and a legal entity can be associated with only one company. Users can access data only for the companies that they have access to. You do not need to customize to secure data by company ID.
 
 #### If the organization is modeled as an operating unit
 
@@ -162,7 +162,7 @@ If you model the regional office as an operating unit, the invoice and payment f
 
 #### If the organization is modeled as a legal entity
 
-A legal entity is subject to the tax laws of the tax authority in the country/region where the legal entity is registered. For example, a legal entity that is registered in Denmark is subject to Danish tax laws and regulations. In Finance and Operations, a legal entity can belong to only one country/region. The country/region that you select for the primary address of the legal entity controls the country/region-specific features that are available to that legal entity. For example, if the primary address of the legal entity is in Denmark, features that are related to Danish tax laws and regulations become available. Therefore, if your organizations are in different countries/regions and require different local tax options, you must set up the organizations as separate legal entities.
+A legal entity is subject to the tax laws of the tax authority in the country/region where the legal entity is registered. For example, a legal entity that is registered in Denmark is subject to Danish tax laws and regulations. A legal entity can belong to only one country/region. The country/region that you select for the primary address of the legal entity controls the country/region-specific features that are available to that legal entity. For example, if the primary address of the legal entity is in Denmark, features that are related to Danish tax laws and regulations become available. Therefore, if your organizations are in different countries/regions and require different local tax options, you must set up the organizations as separate legal entities.
 
 #### If the organization is modeled as an operating unit
 
@@ -172,14 +172,14 @@ Operating units use the country context of the parent legal entity. Operating un
 
 #### If the organization is modeled as a legal entity
 
-For countries/regions that are supported by Finance and Operations, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC) for Finance and Operations. (A CustomerSource logon is required.)
+For countries/regions that are supported, most statutory reports can be created. For information about which reports are available for each country/region, see the [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (A CustomerSource logon is required.)
 
 > [!NOTE]
-> In Finance and Operations, a posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
+> A posting layer in the general ledger allows you to make adjusting entries to a parent company that uses a different accounting standard than the child company. For example, for a company that uses generally accepted accounting practices in the United Kingdom (UK GAAP), you can make adjusting entries in the posting layer. These entries can be consolidated into a parent company that uses generally accepted accounting principles (GAAP) in the United States. The adjusting entries do not affect UK GAAP reporting.
 
 #### If the organization is modeled as an operating unit
 
-Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations to support the requirements of each operating unit, where they differ from the requirements of headquarters.
+Statutory reports must be created by using another application. You must ensure that data is captured in Finance and Operations apps to support the requirements of each operating unit, where they differ from the requirements of headquarters.
 
 ### Currency
 

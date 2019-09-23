@@ -61,7 +61,7 @@ You must use IIS Express. See the next question for more information.
 ## What are the instructions for using IIS Express?
 When IIS Express is started, an icon appears in the notification area (near the clock). When you right-click on the IIS Express icon, all the running sites are listed. You can stop IIS Express from that menu. Some actions in Visual Studio cause IIS Express to be started, but you can also explicitly start IIS Express from Visual Studio by selecting **Restart IIS Express** on the **Dynamics 365** menu.
 
-To ensure that debugging functions properly with IIS Express and Unified Operations Visual Studio projects, we recommend the following Internet Options settings:
+To ensure that debugging functions properly with IIS Express and Finance and Operations Visual Studio projects, we recommend the following Internet Options settings:
 
 - Go to **Control Panel** > **Internet Options** > **Security** tab > **Internet**, and clear the **Enable Protected Mode** check box.
 - Go to **Control Panel** > **Internet Options** > **Security** tab > **Restricted sites**, and clear the **Enable Protected Mode** check box.

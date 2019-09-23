@@ -42,9 +42,9 @@ This topic walks you through examples of the following tasks:
 
 ## Prepare application metadata that can be used in RCS
 
-The following procedure shows how a user of Finance and Operations who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the Microsoft Dynamics 365 for Finance and Operations application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS). The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.
+The following procedure shows how a user of Finance and Operations who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS). The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.
 
-For this example, you want to use RCS to design an ER solution for Finance and Operations that will be used to generate electronic documents that contain information from the foreign trade business domain. To specify the mapping between the ER data model and the sources of required data, you must have access to application metadata for Finance and Operations in RCS. Therefore, as part of the process of designing the ER solution, you must configure a new ER metadata configuration that contains all the metadata that is currently required in order to generate ER reports for the selected business domain.
+For this example, you want to use RCS to design an ER solution for the application that will be used to generate electronic documents that contain information from the foreign trade business domain. To specify the mapping between the ER data model and the sources of required data, you must have access to application metadata in RCS. Therefore, as part of the process of designing the ER solution, you must configure a new ER metadata configuration that contains all the metadata that is currently required in order to generate ER reports for the selected business domain.
 
 > [!NOTE]
 > In this example, you will create a configuration for the sample company, Litware, Inc. These steps can be performed in any company.
@@ -94,11 +94,11 @@ You must add metadata information about the Intrastat table of records.
     1. Select **Exchange \> Export as XML file**.
     2. Select **OK**.
 
-The ER metadata configuration that you created is saved as the **Foreign trade metadata.xml** file. You can now import it into RCS, so that it can be used as the source of metadata for the foreign trade business domain in Finance and Operations. Based on this information, you can specify the mapping between application metadata and the ER data model.
+The ER metadata configuration that you created is saved as the **Foreign trade metadata.xml** file. You can now import it into RCS, so that it can be used as the source of metadata for the foreign trade business domain. Based on this information, you can specify the mapping between application metadata and the ER data model.
 
 ## Access application metadata by using an ER configuration
 
-The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata from the Finance and Operations application. Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions.
+The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata from the application. Application metadata will be accessed by using an ER metadata configuration that contains a sample set of metadata to access foreign trade transactions.
 
 Before you can complete this procedure, you must first complete the following procedures:
 
@@ -107,7 +107,7 @@ Before you can complete this procedure, you must first complete the following pr
 
 1. Go to **All workspaces \> Electronic reporting**.
 2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure. 
-3. Import the ER metadata configuration that contains metadata for the Finance and Operations application, and that is configured to generate electronic documents for the foreign trade business domain. You created this ER metadata configuration and exported it as an XML file in the [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs) procedure earlier in this topic.
+3. Import the ER metadata configuration that contains metadata for the application, and that is configured to generate electronic documents for the foreign trade business domain. You created this ER metadata configuration and exported it as an XML file in the [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs) procedure earlier in this topic.
 
     1. Select **Metadata configurations**.
     2. Select **Exchange**.
@@ -199,14 +199,14 @@ Before you can complete this procedure, you must first complete the following pr
 
     29. Select **Save**.
 
-As you require, you can extend the existing set of metadata in Finance and Operations. You can then export the new completed version of the ER metadata configuration from Finance and Operations, import it into RCS, and update the prerequisites of the configured model mapping configuration to refer to a new version of the imported metadata configuration.
+As you require, you can extend the existing set of metadata in the application. You can then export the new completed version of the ER metadata configuration, import it into RCS, and update the prerequisites of the configured model mapping configuration to refer to a new version of the imported metadata configuration.
 
 > [!NOTE]
-> This method for getting information about application metadata is the only available method for applications that are locally deployed (that is, when a local business data \[LBD\], or on-premises, deployment model is used for Finance and Operations).
+> This method for getting information about application metadata is the only available method for applications that are locally deployed (that is, when a local business data \[LBD\], or on-premises, deployment model is used for the application).
 
 ## Access application metadata by using connected applications
 
-The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata of the Finance and Operations application. Application metadata will be accessed online by using RCS connected application. A sample ER model mapping will be configured to access foreign trade transactions.
+The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata of the application. Application metadata will be accessed online by using RCS connected application. A sample ER model mapping will be configured to access foreign trade transactions.
 
 To complete this procedure, you must first complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure in RCS. If you haven't yet completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, go to [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page to download the following ER configuration files in advance and save them locally: **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml**.
 
@@ -224,7 +224,7 @@ If you've already completed the [Access application metadata by using an ER conf
     3. Select **Browse**, and select a file.
     4. Select **OK**.
 
-### Register the connection with Finance and Operations
+### Register the connection with the application
 
 1. Go to **All workspaces \> Electronic reporting**.
 2. Select **Connected applications**.
@@ -287,4 +287,4 @@ When you must evaluate this model mapping by using the metadata of a different v
 
 ## Additional resources
 
-Alternatively, you can play the **Prepare application metadata that can be used in RCS** task guide in Finance and Operationsas as well as the **Access application metadata by using an ER configuration** and **Access application metadata by using connected applications** task guides in RCS. These task guides can be downloaded from the [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page.
+Alternatively, you can play the **Prepare application metadata that can be used in RCS** task guide in the application as as well as the **Access application metadata by using an ER configuration** and **Access application metadata by using connected applications** task guides in RCS. These task guides can be downloaded from the [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page.

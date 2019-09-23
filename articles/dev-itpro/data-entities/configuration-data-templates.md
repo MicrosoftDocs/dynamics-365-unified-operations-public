@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include [banner](../includes/banner.md)]
 
-Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace of Microsoft Dynamics 365 for Finance and Operations.
+Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace.
 
 > [!IMPORTANT]
 > Default configuration templates available out-of-the- box will always have the latest version of an entity. Templates can be created from an existing data project as needed.
@@ -52,15 +52,15 @@ To create a template, follow these steps.
 
 Your template can now be used in a project. However, you might want to use some additional features to control the export process.
 
-- Use the **Open in Excel** button to open the contents of the grid in a Microsoft Excel workbook. Modify the entities as you require, and then select **Publish** to upload the changes back into Finance and Operations.
-- If you exported a template and want to bring that template back into Finance and Operations, select **Import template**, browse to the template file, and then select **Create template** to load it.
+- Use the **Open in Excel** button to open the contents of the grid in a Microsoft Excel workbook. Modify the entities as you require, and then select **Publish** to upload the changes back.
+- If you exported a template and want to bring that template back, select **Import template**, browse to the template file, and then select **Create template** to load it.
 - To replace the contents of an open template, select **Replace from template**, browse to the template file that has the entities to import, and then select **Create template** to load the template file. The values in the open template will be overwritten.
 - To create a template from a project, select **New** to create a template. Enter an ID and name for the template, and then select **Replace template from project**. In the list of projects that appears, select a project, and then select **Create template** to bring the project entities from that project into the open template. The values in the open template will be overwritten.
 
 ## Default data templates
 In July 2017 update, we released predefined templates to help you create configuration data projects. The templates are sequenced, so that the data that the entities generate will be processed in the correct order. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. For more information, see the "Sequencing in the default templates" section.
 
-Default templates are delivered together with each new release of Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Finance and Operations. However, for the current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
+Default templates are delivered together with each new release. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance. However, for the current releases, select the **Templates** tile in the **Data management** workspace, and then select **Load default templates** to load the templates. To see the **Load default templates** menu, you must use **Enhanced view**.
 
 After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. The templates will then be replaced with the latest versions. If you've made changes to the templates, you can make a copy of the old templates by exporting them.
 
