@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed Power BI in workspaces
-description: Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: TJVass
 manager: AnnBe
 ms.date: 07/23/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-Finance and Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
+Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 
 ## Overview
 
@@ -58,7 +58,7 @@ The following screenshot shows an operational workspace.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3nnj4]
 
-The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ) video (shown above) is included in the [Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
 ## What's next?
