@@ -102,7 +102,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Finance and Operations, especially the following assets:
+After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into the application, especially the following assets:
 
 - Master data (for example, customers and vendors)
 - Subsets of documents (for example, sales orders)
