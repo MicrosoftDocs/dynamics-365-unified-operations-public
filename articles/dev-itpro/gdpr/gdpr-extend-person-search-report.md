@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend the Person search report
-description: This topic walks you through the process of extending the Person search report for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic walks you through the process of extending the Person search report for Finance and Operations.
 author: rschloma
 manager: AnnBe
 ms.date: 01/24/2018
@@ -32,10 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Person search report for Microsoft Dynamics 365 for Finance and Operations is backed by an intelligent search processor that is designed to manage a collection of entities for a single person. The Person search report searches Finance and Operations data and creates a set of resulting identifiers. Each result references a search category (for example, Customer) and a result record in a related table. For information about using the Person search report, refer the [Person search report](gdpr-person-search-report.md) topic.
+The Person search report for Finance and Operations apps is backed by an intelligent search processor that is designed to manage a collection of entities for a single person. The Person search report searches Finance and Operations data and creates a set of resulting identifiers. Each result references a search category (for example, Customer) and a result record in a related table. For information about using the Person search report, refer the [Person search report](gdpr-person-search-report.md) topic.
 
 > [!NOTE]
-> The Person search is available for Finance, Supply Chain Management, Retail, and Talent. References to Finance and Operations in this topic also apply to Retail and Talent. The Person search report is not currently available for Microsoft Dynamics AX 2012.
+> The Person search is available for Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. The Person search report is not currently available for Microsoft Dynamics AX 2012.
 
 ## Add another entity to the default template
 
