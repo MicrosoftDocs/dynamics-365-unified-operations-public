@@ -34,25 +34,27 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to build custom pages for user logins in Dynamics 365 Commerce
+This topic describes how to build custom pages for user logins in Dynamics 365 Commerce.
 
 ## Overview
 
-This topic describes how to build custom pages in Dynamics 365 Commerce to use for customized User Logins with your Azure Active Directory (AAD) business-to-consumer (B2C) tenant. 
+This topic describes how to build custom pages in Dynamics 365 Commerce to use for customized user Logins with your Azure Active Directory (AAD) business-to-consumer (B2C) tenant. 
 
 ## Get started
 
-To use custom pages authored in the Dynamics 365 Commerce Authoring Tools to use for login flows, users will need to set up the AAD Policies to be referenced in the Commerce environment. Users can set up the different 'Sign in and sign up', 'Password Reset', and 'Edit Profile' AAD B2C policies in their AAD B2C Application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning in LCS for your Dynamics 365 Commerce environment. Users can build out a custom page in the Commerce Authoring Tools using the Sign In, Password Reset, or Edit Profile modules. These published page URLs are then referenced in your AAD B2C policy configurations in the Azure Portal.
+pTo use custom pages authored in Commerce to handle user login flows, you will need to set up the AAD policies that will be referenced in the Commerce environment. You can set up the 'Sign in and sign up', 'Password Reset', and 'Edit Profile' AAD B2C policies using the AAD B2C application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning in Lifecycle Services (LCS) for your Commerce environment. You can build out a custom page in Commerce using the sign in, password reset, or edit profile modules. These published page URLs are then referenced in your AAD B2C policy configurations in the Azure Portal.
 
 ## Set up B2C policies
 
-Once you have set up your AAD B2C tenant and associated to your Commerce environment, in the Azure AD B2C page in the Azure Portal, select the "User flows (policies) menu under the "Policies" section in the left navigation pane. 
+Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure Portal, select the "User flows (policies) menu under the "Policies" section in the left navigation pane. 
 
 ![B2C Custom Policies Menu](./media/B2C_CustomPage_PoliciesMenu.png)
 
-Build out the 'Sign up and sign in', 'Profile editing', and 'Password reset' flows by using the following configurations:
+The 'Sign up and sign in', 'Profile editing', and 'Password reset' flows can be configured as follows.
 
 ### Sign up and sign in flow
+
+To configure the sign up and sign in flow, do the following.
 
 - Select the "New user flow" button and choose the **Sign up and sign in** policy under the Recommended section.
 - Name your policy (ex: B2C_1_SignInSignUp). 
@@ -74,9 +76,9 @@ Build out the 'Sign up and sign in', 'Profile editing', and 'Password reset' flo
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
 
-
-
 ### Profile editing flow 
+
+To configure the profile editing flow, do the following.
 
 - Select the "New user flow" button and choose the **Profile editing** policy under the Recommended section.
 - Name your policy (ex: B2C_1_EditProfile). 
@@ -93,9 +95,9 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
 
-
-
 ### Password reset flow
+
+To configure the password reset flow, do the following.
 
 - Select the "New user flow" button and choose the **Password reset v1.1** policy under the **<u>Preview</u>** section.
 
@@ -113,8 +115,6 @@ We'll come back to this policy once we have built out the custom pages to finish
 - Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
-
-
 
 ## Build the custom pages
 
