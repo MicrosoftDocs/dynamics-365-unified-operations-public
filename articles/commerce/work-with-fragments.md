@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with fragments
-description: This topic describes why, when, and how to use fragments in Dynamics 365 Commerce.
+description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: niholman
 manager: annbe
 ms.date: 10/01/2019
@@ -33,93 +33,90 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes why, when, and how to use fragments in Dynamics 365 Commerce.
+This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Fragments make possible a centralized authoring experience for reusable module configurations needed throughout your site. For example, headers, footers, and banners are often configured as fragments because they are shared across many pages. A great way to think of fragments is that they act like mini-webpages that can be inserted into other pages within your site. Fragments have their own lifecycle, which means they are created, referenced, updated, and deleted as independent entities within the authoring tools. Once fragments are configured, they are available to use everywhere that a module can be used within your site structure. Fragments can be referenced within pages, layouts, templates, and within other fragments.
+Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site. For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages. You can think of fragments as miniature webpages that can be inserted into other pages on your site. Fragments have their own lifecycle. In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.
+
+After fragments are configured, they can be used wherever modules can be used in your site structure. Fragments can be referenced on pages, in layouts, in templates, and in other fragments.
 
 > [!NOTE]
->
-> Fragments can nest within other fragments up to seven levels deep.
+> Fragments can be nested up to seven levels deep inside other fragments.
 
-As an example, let's imagine a seasonal event that we want to promote across many pages within our site. We could use a fragment to do this. Creating the new fragment will begin by choosing a module type to start from. For this example, we could choose for our fragment to be built from a Hero module.
+For example, if you want to promote a seasonal event cross many pages on our site, you can use a fragment. The first step in the process of creating a new fragment is to select the type of module that you want to start from. For this example, you can build the fragment from a hero module.
 
 > [!NOTE]
-> Fragments can be configured from any module type. 
+> Fragments can be built from any module type.
 
-We can then configure this Hero fragment with our specific promotional content, and localize it if necessary. This new standalone Hero fragment is now consumable as a preconfigured module throughout our site. We can easily add it to templates, specific pages, or within other fragments that can contain Hero modules. All the places where the fragment is added are references to the central Hero fragment that we created. If we decide to publish changes to our fragment, these will immediately be reflected everywhere the fragment is referenced across the site. Fragments are a powerful and efficient way to reuse and centrally manage module configurations within a site, and effective use of them can add up to significant agility and cost savings when managing site content.
+You can then configure the hero fragment with your specific promotional content. You can also localize it as you require. The new stand-alone hero fragment can then be consumed as a preconfigured module throughout your site. You can easily add it to templates, to specific pages, or to other fragments that can contain hero modules.
+
+All the places where the fragment is added are references to the central hero fragment that you created. If you publish changes to the fragment, those changes are immediately reflected in all the places where the fragment is referenced across the site. Therefore, fragments provide a powerful and efficient way to reuse and centrally manage module configurations on a site. By effectively using them, you can significantly increase agility and help reduce the cost that is associated with managing site content.
 
 ![Common Concepts - Fragments Diagram 1](../commerce/media/fragment-figure1.png)
 
 ## Create a fragment
 
-To create a fragment, you can either create a new one or save an existing module configuration as a fragment.
+You can either create a new fragment or save an existing module configuration as a fragment.
 
 ### Create a new fragment
 
-To create a new fragment, do the following.
+To create a new fragment, follow these steps.
 
-1. In the left navigation pane, click **Fragments**.
+1. In the navigation pane on the left, select **Fragments**.
+1. Select **New Page Fragment**. A dialog box appears that shows all the available module types. As was mentioned earlier, fragments can be created from any module type.
+1. Select a module type for your fragment, and then select **OK**.
 
-1. Click **New Page Fragment**. A dialog box appears showing all module type options.
-
-1. Choose a module type for your fragment, and click **OK**.
-
-   > [!NOTE]
-   > As mentioned above, fragments can be created from any module type.  
-
-   > [!TIP]
-   > A generic container module type will allow the most flexibility for future updates and configurations of your fragment. 
+    > [!TIP]
+    > By selecting a generic container module type, you get the most flexibility when you must update and configure your fragment later.
 
 ### Save an existing module configuration as a fragment
 
-To convert an already-configured module into a reusable fragment, do the following.
+To convert a previously configured module to a reusable fragment, follow these steps.
 
-1. Open a page or template that contains a module that you want to convert into a fragment. 
-1. In the left-side outline pane, click the ellipsis button ("…") next to the name of the module.
-1. In the drop-down menu, select **Save as Fragment**. A fragment dialog box appears..
+1. Open a page or template that contains the module that you want to convert to a fragment.
+1. In the outline pane on the left, select the ellipsis button (**...**) next to the name of the module, and then select **Save as Fragment**. A dialog box appears.
 1. Enter a name and metadata for the fragment.
-1. Click **OK** to save the module configuration as a fragment that can now be added to other pages.
+1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
 
-## Add, remove, or edit fragments within a page
+## Add, remove, or edit fragments on a page
 
 The following procedures describe how to add, remove, and edit fragments.
 
 ### Add a fragment
 
-To add a fragment to a page, do the following.
+To add a fragment to a page, follow these steps.
 
-1. In the left-side outline pane, select a container or slot that allows children to be added to it. (See note below.)
-1. Click the ellipsis button ("…") next to the container or slot name.
-1. From the drop-down menu, select **Add Fragment**. A dialog box appears.
->[!NOTE] 
-> If the container or slot does not allow new child modules, the **Add Fragment** option will be disabled. 
-1. In the dialog box, search for and select a fragment add. (If there are no options, you may first need to create a fragment from a supported module type for your container/slot).
-1. Click **OK** to add the new fragment to your page within the originally selected container or slot.
+1. In the outline pane on the left, select a container or slot that child modules can be added to.
+1. Select the ellipsis button next to the name of the container or slot, and then select **Add Fragment**. A dialog box appears.
+
+    > [!NOTE]
+    > If the container or slot doesn't support new child modules, the **Add Fragment** option is unavailable.
+
+1. In the dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
+1. Select **OK** to add the selected fragment to the selected container or slot on your page.
 
 > [!NOTE]
-> Modules allowed within a container or slot are defined by the page's template or the module's own definition. 
+> The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.
 
 ### Remove a fragment
 
-To remove a fragment from a slot or container within a page, do the following.
+To remove a fragment from a slot or container on a page, follow these steps.
 
-1. In the left-side outline pane, click the ellipsis button ("…") next to the name of the fragment you want to remove.
-1. In the drop-down menu, select the trashcan button. This will launch a confirmation dialog box asking if you are sure you want to remove the fragment.
-1. Click **OK** to remove the
+1. In the outline pane on the left, select the ellipsis button next to the name of the fragment to remove, and then select the trash can button.
+1. When you're prompted to confirm that you want to remove the fragment, select **OK**.
 
 > [!NOTE]
-> Removing a fragment from a page will *not* delete the fragment from your site, and will only remove the reference to it from within the current page.  Fragments can only be deleted from your site within the fragment inspector UI and can only be performed if the fragment is not currently referenced by other pages, templates, or other fragments.
+> When you remove a fragment from a page, you just remove the reference to it from that page. You do **not** delete the fragment from your site. To delete fragments from your site, you must use the fragment inspector user interface (UI). You can delete fragments from a site only if they aren't currently referenced by any pages, templates, or other fragments.
 
 ### Edit a fragment
 
-Fragment edits can only be performed from within the fragment editor UX.  This is by design and ensures that authors do not confuse editing modules for a specific page with editing a fragment that may be shared across many pages.  
+To edit fragments, you must use the fragment editor UI. This restriction is by design. It helps guarantee that authors don't confuse the process of editing the modules for a specific page with the process of editing fragments that might be shared across many pages.
 
-To edit a fragment, do the following.
+To edit a fragment, follow these steps.
 
-1. In the left-side navigation pane, click **Fragments**. 
-1. Under **Fragments**, select the fragment you want to edit. The fragment's module properties and structure can then be edited like modules are edited within the page editor view.
+1. In the navigation pane on the left, select **Fragments**.
+1. Under **Fragments**, select the fragment to edit.
+1. Edit the fragment's module properties and structure as you require. The process resembles the process for editing modules are edited in the page editor view.
 
-> [!NOTE]
-> You can also edit a fragment by selecting one in a page, template, or parent fragment, and then clicking **Edit Fragment** in the right-side properties pane.
+You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.
