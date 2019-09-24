@@ -38,8 +38,6 @@
     items:
     - name: Select page layouts
       href: select-page-layouts.md
-    - name: Add a checkout module to a page
-      href: add-checkout-module.md
   - name: Modules
     items:
     - name: Work with modules
@@ -52,10 +50,12 @@
       href: create-page-URL.md
   - name: Starter kit
     items: 
-    - name: Add an alert module to a page 
+    - name: Add an alert module 
       href: add-alert.md
-    - name: Add a carousel module to a page
+    - name: Add a carousel module
       href: add-carousel.md
+    - name: Add a checkout module
+      href: add-checkout-module.md
     - name: Create a header module
       href: author-header-module.md
     - name: Create a footer module
