@@ -104,26 +104,26 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 To configure the "Password reset" user login flow, do the following.
 
-- Select the "New user flow" button and choose the **Password reset v1.1** policy under the **<u>Preview</u>** section.
+1. Click **New user flow**, then in the **Preview** section, select the **Password reset v1.1** policy.
 
-The following image show the (lorem ipsum).   
+The following image shows the **Preview** section of the **Select a user flow type** screen.   
 
  ![Password Reset v1.1 menu](./media/B2C_ForgetPassword_Menu.png)
 
-- Name your policy (ex: B2C_1_ForgetPassword). 
-- Select "Reset password using email address" under Identity Providers section
-- Select the following claims for the Profile editing policy:
-  - Return claim: Email Addresse**s**, Given Name, Surname, User's Object ID
+1. Enter a name for the policy (for example, "B2C_1_ForgetPassword"). 
+1. In the **Identity Providers** section, select **Reset password using email address**.
+1. Select the following claims:
+    - Under **Return claim**: **Email Addresses**, **Given Name,** **Surname,** **User's Object ID**
 
-The following image show the (lorem ipsum).   
+The following image shows the **Application claims** screen with the correct claims selected.
 
 ![Password Reset Claims](./media/B2C_ForgetPassword_Attributes.png)
 
-- Click "Create" to create the policy.
-- Select this newly created policy and double-click to update its configurations.
-- Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
+1. Click **OK** to create the policy.
+1. Double-click the new policy name, then in the navigation pane click **Properties.**.
+1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
 
-We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
+We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy to return to the **User Flows (policies)** page in the Azure portal.
 
 ## Build the custom pages
 
