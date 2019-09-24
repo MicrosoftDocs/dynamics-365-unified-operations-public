@@ -3,61 +3,61 @@
 - name: What's new or changed
   items:
   - name: Preview features in Platform update 30 (November 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-30.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-30.md
   - name: Platform update 29 (October 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-29.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-29.md
   - name: Platform update 28 (July 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-28.md 
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-28.md 
   - name: Platform update 27 (June 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-27.md 
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-27.md 
   - name: Platform update 26 (May 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-26.md 
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-26.md 
   - name: Platform update 25 (April 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-25.md 
+    href: ../../fin-and-ops/get-started/whats-new-platform-25.md 
   - name: Platform update 24 (March 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-24.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-24.md
   - name: Platform update 23 (January 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-23.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-23.md
   - name: Platform update 22 (December 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-22.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-22.md
   - name: Platform update 21 (November 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-21.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-21.md
   - name: Platform update 20 (September 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-20.md
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-20.md
   - name: Platform update 15 (March 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-15.md    
+    href: ../../fin-and-ops/get-started/whats-new-platform-update-15.md    
 - name: Business events
   items:
   - name: Business events overview
-    href: business-events/home-page.md
+    href: ../../dev-itpro/business-events/home-page.md
   - name: Application business events
-    href: business-events/app-business-events.md
+    href: ../../dev-itpro/business-events/app-business-events.md
   - name: Workflow business events
-    href: business-events/business-events-workflow.md
+    href: ../../dev-itpro/business-events/business-events-workflow.md
   - name: Alerts as business events
-    href: business-events/alerts-business-events.md
+    href: ../../dev-itpro/business-events/alerts-business-events.md
   - name: Business events in Microsoft Flow
-    href: business-events/business-events-flow.md
+    href: ../../dev-itpro/business-events/business-events-flow.md
   - name: Business events developer documentation
-    href: business-events/business-events-dev-doc.md
+    href: ../../dev-itpro/business-events/business-events-dev-doc.md
   - name: Troubleshoot business events
-    href: business-events/troubleshooting.md
+    href: ../../dev-itpro/business-events/troubleshooting.md
   - name: Use cases for business events
-    href: business-events/potential-use-cases.md
+    href: ../../dev-itpro/business-events/potential-use-cases.md
   - name: Tutorials
     items: 
     - name: Business events and Microsoft Flow
-      href: business-events/how-to/how-to-flow.md
+      href: ../../dev-itpro/business-events/how-to/how-to-flow.md
     - name: Business events and Azure Event Grid
-      href: business-events/how-to/how-to-eventgrid.md
+      href: ../../dev-itpro/business-events/how-to/how-to-eventgrid.md
     - name: Business events and Azure Service Bus
-      href: business-events/how-to/how-to-servicebus.md
+      href: ../../dev-itpro/business-events/how-to/how-to-servicebus.md
     - name: Business events and workflow approvals
-      href: business-events/how-to/how-to-workflow.md
+      href: ../../dev-itpro/business-events/how-to/how-to-workflow.md
     - name: Business events and Microsoft Forms Pro 
-      href: business-events/how-to/FormsPro.md
+      href: ../../dev-itpro/business-events/how-to/FormsPro.md
     - name: Business events and Azure Event Hubs
-      href: business-events/how-to/event-hub.md      
+      href: ../../dev-itpro/business-events/how-to/event-hub.md      
 - name: Continuous delivery
   items:
   - name: Continuous delivery home page
@@ -139,61 +139,61 @@
         - name: Configure a prospect to cash scenario
           items:
           - name: Prospect to cash
-            href: ../supply-chain/sales-marketing/prospect-to-cash.md
+            href: ../../supply-chain/sales-marketing/prospect-to-cash.md
           - name: Synchronize accounts directly from Sales to customers in Finance and Operations
-            href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+            href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
           - name: Synchronize products directly from Finance and Operations to products in Sales
-            href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
+            href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
           - name: Synchronize contacts directly from Sales to contacts or customers in Finance and Operations
-            href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+            href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
           - name: Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
-            href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+            href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
           - name: Synchronization of sales orders directly between Sales and Finance and Operations
-            href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+            href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
           - name: Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
-            href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+            href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
         - name: Configure integration with Field Service
           items:
           - name: Configure integration with Field Service overview
-            href: ../supply-chain/sales-marketing/field-service.md
+            href: ../../supply-chain/sales-marketing/field-service.md
           - name: Synchronize products in Finance and Operations to products in Field Service
-            href: ../supply-chain/sales-marketing/field-service-product.md
+            href: ../../supply-chain/sales-marketing/field-service-product.md
           - name: Synchronize work orders in Field Service to sales orders in Finance and Operations
-            href: ../supply-chain/sales-marketing/field-service-work-order.md
+            href: ../../supply-chain/sales-marketing/field-service-work-order.md
           - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
-            href: ../supply-chain/sales-marketing/field-service-invoice.md
+            href: ../../supply-chain/sales-marketing/field-service-invoice.md
           - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
-            href: ../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+            href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
           - name: Synchronize inventory level information from Finance and Operations to Field Service 
-            href: ../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+            href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
           - name: Synchronize products with inventory unit from Finance and Operations to Field Service
-            href: ../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+            href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
           - name: Synchronize project list from Finance and Operations to Field Service
-            href: ../supply-chain/sales-marketing/synchronize-project-list.md
+            href: ../../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Synchronize warehouses from Finance and Operations to Field Service
-            href: ../supply-chain/sales-marketing/synchronize-warehouse.md
+            href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
           - name: Synchronize work orders with project from Field Service to Finance and Operations
-            href: ../supply-chain/sales-marketing/synchronize-work-orders.md
+            href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
         - name: Configure Project Service Automation integration
           items:
           - name: Project Service Automation overview
-            href: ../financials/project-management/PSA-integration.md
+            href: ../../financials/project-management/PSA-integration.md
           - name: Project Service Automation integration parameters
-            href: ../financials/project-management/PSA-parameters.md
+            href: ../../financials/project-management/PSA-parameters.md
           - name: Synchronize project contracts and projects
-            href: ../financials/project-management/project-contracts-templates.md
+            href: ../../financials/project-management/project-contracts-templates.md
           - name: Synchronize project tasks
-            href: ../financials/project-management/project-tasks-template.md
+            href: ../../financials/project-management/project-tasks-template.md
           - name: Synchronize project expense categories
-            href: ../financials/project-management/project-categories-templates.md
+            href: ../../financials/project-management/project-categories-templates.md
           - name: Synchronize project estimates from to project forecasts
-            href: ../financials/project-management/project-estimates-templates.md
+            href: ../../financials/project-management/project-estimates-templates.md
           - name: Synchronize project actuals to the project integration journal
-            href: ../financials/project-management/project-actuals-templates.md
+            href: ../../financials/project-management/project-actuals-templates.md
   - name: Consuming external web services
     href: data-entities/consume-external-web-service.md
   - name: Electronic messaging
-    href: ../financials/general-ledger/electronic-messaging.md
+    href: ../../financials/general-ledger/electronic-messaging.md
 - name: Data management
   items:
   - name: Data management overview
@@ -301,7 +301,7 @@
 - name: Demo data
   items: 
   - name: Demo data overview
-    href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+    href: ../../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   - name: Generate demo data using data packages
     href: data-entities/generate-demo-data-packages.md
 - name: Deployment
@@ -333,7 +333,7 @@
     - name: Azure ExpressRoute and Finance and Operations
       href: deployment/expressroute.md
     - name: Finance and Operations architecture
-      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+      href: ../../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
     - name: Apply updates and extensions to cloud hosted Retail channel components
@@ -351,7 +351,7 @@
     - name: Plan and prepare for on-premises deployments
       href: deployment/plan-onprem-deployment.md
     - name: Hardware sizing requirements
-      href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+      href: ../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
     - name: Set up on-premises projects
       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
     - name: Set up and deploy on-premises environments
@@ -1155,7 +1155,7 @@
   - name: Installation and configuration
     href: perf-test/rsat/rsat-install-configure.md
   - name: Data agnostic testing using the Regression Suite Automation Tool
-    href: ../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+    href: ../../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md
   - name: Run test cases
     href: perf-test/rsat/rsat-run.md
   - name: Validate expected values
@@ -1165,7 +1165,7 @@
   - name: Derived test cases
     href: perf-test/rsat/rsat-derived-test-cases.md
   - name: Use the Regression suite automation tool tutorial
-    href: ../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md
+    href: ../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md
   - name: Best practices
     href: perf-test/rsat/rsat-best-practices.md
   - name: Troubleshooting
@@ -1437,7 +1437,7 @@
     - name: Dynamics Symbol font
       href: user-interface/symbol-font.md
     - name: Saved views
-      href: ../fin-and-ops/get-started/saved-views.md
+      href: ../../fin-and-ops/get-started/saved-views.md
     - name: Build forms that fully utilize saved views
       href: user-interface/understanding-saved-views.md
     - name: Test forms that use custom patterns
