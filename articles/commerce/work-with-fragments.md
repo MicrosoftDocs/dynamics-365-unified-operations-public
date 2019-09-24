@@ -3,7 +3,7 @@
 
 title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
-author: niholman
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
