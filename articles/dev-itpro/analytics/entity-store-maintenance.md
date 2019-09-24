@@ -39,7 +39,7 @@ When maintenance is performed on the entity store, it impacts the following comp
 To resolve issues with these components, complete the procedures in this topic.
 
 > [!NOTE]
-> There will be **no impact** to the normal operation of your application instance.
+> There will be **no impact** to the normal operation of your application.
 
 ## If you are using application analytical workspaces
 

@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../includes/banner.md)]
 
-The Microsoft Dynamics 365 for Retail functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican retail companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices). When a company closes the daily process, it must issue a Global CFDI document to consolidate all receipts that were issued to the final consumers. This document includes the following information for each transaction that is registered during the period:
+The Retail functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican retail companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices). When a company closes the daily process, it must issue a Global CFDI document to consolidate all receipts that were issued to the final consumers. This document includes the following information for each transaction that is registered during the period:
 
 - A receipt number
 - A corresponding amount

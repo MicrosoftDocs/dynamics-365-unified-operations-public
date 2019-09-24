@@ -516,7 +516,7 @@ No new features have been added.
 </tr>
 <tr>
 <td>(EU) Set up Intrastat commodity codes in category hierarchies.</td>
-<td>Intrastat commodity codes is a separate list. While there is category hierarchy of type Commodity code, these commodity codes could be defaulted in Retail HQent and sales categories.</td>
+u<td>Intrastat commodity codes is a separate list. While there is category hierarchy of type Commodity code, these commodity codes could be defaulted in Retail HQent and sales categories.</td>
 <td>Separate list of Intrastat commodity codes are merged with product hierarchy of type Commodity code.</td>
 <td>This unifies the approach for assigning commodity codes to released products and categories in sales and purchase documents.</td>
 </tr>

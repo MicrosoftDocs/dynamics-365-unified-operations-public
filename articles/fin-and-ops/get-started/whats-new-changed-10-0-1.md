@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.1
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](whats-new-changed-10-0-1.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
+To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/whats-new-10-0-1).
 
 
 ## Enable edit for externally maintained fields

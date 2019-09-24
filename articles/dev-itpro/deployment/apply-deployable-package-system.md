@@ -35,7 +35,6 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to cloud environments. 
 
-
 > [!IMPORTANT]
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
 

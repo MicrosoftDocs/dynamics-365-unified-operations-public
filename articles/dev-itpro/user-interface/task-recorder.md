@@ -51,7 +51,7 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Microsoft Dynamics 365 Talent and Microsoft Dynamics 365 for Retail. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Retail or Talent. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
 
 ## Create a recording
 The following steps show the process for creating a new recording using Task recorder.
