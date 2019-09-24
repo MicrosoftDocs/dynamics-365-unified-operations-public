@@ -1,6 +1,6 @@
-- name: Dynamics 365 Retail hi
+- name: Dynamics 365 Retail
   items: 
-  - name: Welcome to Dynamics 365 Retail hi
+  - name: Welcome to Dynamics 365 Retail
     href: index.md
   - name: Get started
     items:
