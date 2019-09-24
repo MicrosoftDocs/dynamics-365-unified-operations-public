@@ -3,7 +3,7 @@
 
 title: Default category landing page and search results page
 description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
-author: asharchw
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
