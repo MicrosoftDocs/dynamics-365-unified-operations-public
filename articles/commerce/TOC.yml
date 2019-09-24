@@ -44,6 +44,10 @@
     items:
     - name: Work with modules
       href: work-with-modules.md
+  - name: Fragments
+    items:
+    - name: Work with fragments
+      href: work-with-fragments.md
   - name: Site navigation
     items:
     - name: Customize site navigation
