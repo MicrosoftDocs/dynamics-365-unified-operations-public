@@ -35,9 +35,15 @@ ms.dyn365.ops.version: Platform update 21
 
 This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios. To change the decimal point precision, change the **NoOfDecimals** property as needed.
 
+Extended data types are hierarchical, extended data types inherit behavior from the data type they extend. When changing the number of decimals for one extended data type, then the number of decimals on all derived extended data types will follow. In other words, if you find an extended data type where **NoOfDecimalsIsExtensible** is false, then check the parent extended data type, as the number of decimals might be extensible in this wider scope.
+
 ## Weight
 Weight data can be maintained with a maximum of two decimals by default. 
 If you require the ability to enter, maintain, and view weight data with a maximum precision of six decimals, you must extend the decimal point precision for the **WeightBase** extended data type.
+
+## Product width, height and depth
+These physical dimensions can be maintained with a maximum of two decimals by default. 
+If you require the ability to enter, maintain, and view this data with a maximum precision of six decimals, you must extend the decimal point precision for the **InventWidth**, **InventHeight** and **InventDepth** extended data types respectively.
 
 ## Product quantity
 Quantity data that is related to the procuring, consuming, producing, storing, and selling of products can be maintained with a maximum of two decimals by default.
