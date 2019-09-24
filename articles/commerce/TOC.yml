@@ -40,6 +40,10 @@
       href: select-page-layouts.md
     - name: Add a checkout module to a page
       href: add-checkout-module.md
+  - name: Modules
+    items:
+    - name: Work with modules
+      href: work-with-modules.md
   - name: Site navigation
     items:
     - name: Customize site navigation
