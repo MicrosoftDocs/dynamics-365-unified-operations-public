@@ -56,6 +56,8 @@
       href: add-carousel.md
     - name: Add a checkout module
       href: add-checkout-module.md
+    - name: Add a content rich block module
+      href: add-content-rich-block.md
     - name: Create a header module
       href: author-header-module.md
     - name: Create a footer module
