@@ -53,7 +53,9 @@ You can then configure the hero fragment with your specific promotional content.
 
 All the places where the fragment is added are references to the central hero fragment that you created. If you publish changes to the fragment, those changes are immediately reflected in all the places where the fragment is referenced across the site. Therefore, fragments provide a powerful and efficient way to reuse and centrally manage module configurations on a site. By effectively using them, you can significantly increase agility and help reduce the cost that is associated with managing site content.
 
-![Common Concepts - Fragments Diagram 1](../commerce/media/fragment-figure1.png)
+The following illustration shows how fragments can be used to centralize authoring of shared module configurations across an e-Commerce site.
+
+![An illustration showing how fragments can be used to centralize authoring of shared module configurations across an e-Commerce site](./media/fragment-figure1.png)
 
 ## Create a fragment
 
