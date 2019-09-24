@@ -2712,7 +2712,7 @@
     - name: Configure and send email
       href: ../fin-and-ops/organization-administration/configure-email.md?toc=/financials/toc.json
     - name: Date/time data and time zones
-      href: ../fin-and-ops/organization-administration/date-time-zones.md ?toc=/financials/toc.json   
+      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/financials/toc.json   
   - name: US Payroll
     items:
     - name: US Payroll overview
