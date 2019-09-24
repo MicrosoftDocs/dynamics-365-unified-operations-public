@@ -56,7 +56,7 @@ The ambient video player module supports short informational videos. It should b
 | Autoplay          | **True** or **False** | When the value is set to **True**, the video is automatically played. |
 | Mute              | **True** or **False** | When the value is set to **True**, the audio is muted. For this player, the default value is **True**. In the Google Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
 | Loop              | **True** or **False** | When the value is set to **True**, the video is repeated in a loop. |
-| Media             |                       | The video file that is played by the video player. |
+| Media             |  Video file path and name | The video file that is played by the video player. |
 | Playback controls | **True** or **False** | When the value is set to **True**, a play/pause button is shown on the video. If the value is set to **False**, the play/pause button isn't shown, but users can still pause and resume the video by using the keyboard. |
 
 ## Video player module
@@ -76,7 +76,7 @@ The video player module can be used to showcase videos on an e-Commerce site. It
 | Auto play             | **True** or **False**               | When the value is set to **True**, the video is automatically played. |
 | Mute                  | **True** or **False**               | When the value is set to **True**, the audio is muted. For this player, the default value is **False**. In the Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
 | Loop                  | **True** or **False**               | When the value is set to **True**, the video is repeated in a loop. |
-| Media                 |                                     | The video file that is played in the video player. |
+| Media                 | Video file path and name | The video file that is played in the video player. |
 | Playback controls     | **True** or **False**               | When the value is set to **True**, a play/pause button is shown on the video. If the value is set to **False**, the play/pause button isn't shown, but users can still pause and resume the video by using the keyboard. |
 | Play fullscreen       | **True** or **False**               | When the value is set to **True**, the video is played in full-screen mode. |
 | Controls              | **True** or **False**               | When the value is set to **True**, all controls are shown. These controls include play and pause buttons, a progress indicator, and closed captions. |
