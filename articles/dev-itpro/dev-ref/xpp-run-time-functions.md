@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ runtime functions
+title: X++ runtime function resources
 description: This topic describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31461
 ms.assetid: 9cf83640-536c-4a99-8e0d-7a4e97d3c91f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ runtime functions
+# X++ runtime function resources
 
 [!include [banner](../includes/banner.md)]
 
@@ -61,9 +61,9 @@ The following table lists and describes only the categories of X++ functions. Th
 | [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
 | [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).                  |
 | [Date](#date)             | Functions that operate on the date data type. For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).                                                     |
-| [Math](#Math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |
+| [Math](#math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |
 | [Reflection](#reflection) | Functions that access the metadata about objects and return other metadata about them. For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md). |
-| [Session](#Session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).             |
+| [Session](#session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).             |
 | [String](#string)         | Functions that operate on the str data type. For more information, see [X++ String Run-Time Functions](xpp-string-run-time-functions.md).                                                 |
 | Other                     | [beep](#beep), [newGuid](#newguid), [sleep](#sleep)                                                                                                                                                                        |
 

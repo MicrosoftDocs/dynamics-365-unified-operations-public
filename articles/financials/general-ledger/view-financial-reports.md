@@ -2,10 +2,10 @@
 # required metadata
 
 title: View financial reports
-description: This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+description: This topic describes how to view and explore financial reports in Microsoft Dynamics 365 Finance. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10334
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+This topic describes how to view and explore financial reports. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
 Financial reporting overview
 ----------------------------
@@ -50,12 +50,11 @@ Financial reports can include multiple levels of detail. The financial level is 
 If the data is budget data, you can choose to open budget account entries. To close any of the levels of the report and return where you started, you can either press the Esc key or click the **Close** button (**X**) in the upper right.
 
 ## Change report options
-You can change the report date, apply attribute and dimension filters, or change the budget scenario on an **Actual versus budget** report. On the Action Pane, click **Report options**, and then follow one or more of these steps:
+You can apply attribute and dimension filters, or change the budget scenario on an **Actual versus budget** report. On the Action Pane, click **Report options**, and then follow one or more of these steps:
 
--   To change the base period and base year of a report, select a base period and a base year, and then click **OK**.
 -   To apply attribute filters to a report, select **Add an attribute filter**. Select the attribute, type the attribute value, and then click **OK**. For example, if you select the **Account Category** attribute, enter **SALES** as the attribute value. To remove an attribute filter, click **Clear**.
 -   To apply dimension filters to a report, select **Add a dimension filter**. Select the dimension, and then either type the dimension ID or select the dimension in the list. To remove a dimension filter, click **Clear**.
--   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different year, be sure to update the base year. For example, if the current scenario is for FY2015, and you select a new scenario that is for FY2016, you should change the base year to **2016**.
+-   To change the scenario on an **Actual versus budget** report, select a new scenario, and then click **OK**. If the selected scenario is for a different fiscal year, there will not be any results returned. For example, if a report is generated for FY2015 and the current scenario is for FY2015 and the new scenario selected is for FY2016, no results will be returned. If a new scenario for a different fiscal year is needed, generate a new version of the report for the fiscal year related to the scenario.
 
 When you click **OK**, all the options that you selected are applied to the report. If you decide that you don't want to apply the selected options, click **Cancel**.
 
@@ -66,23 +65,20 @@ You can refresh (update) a financial report so that it shows the most recent dat
 After you update a financial report, you can publish it. Other people in the organization will then be able to view it. To publish a report, on the Action Pane, click **Publish**.
 
 ## Display a financial report in a different currency
-A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance and Operations.
+A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance.
 
 ## Display a summarized view of the financial report
 A financial report can contain detail lines and summary lines. Detail lines are lines that contain main accounts or dimensions. Summary lines are description, total, and calculation lines. To display just the summary lines of a report, click **Show**, and then click **Summary lines only**. The report is collapsed and displays only the summary lines. To view the detail lines together with the summary lines, click **Show**, and then click **Summary lines only** again.
 
-## Open a financial report from a previous month
-You can view reports for the current month or previous months without regenerating the report. To open the report for a previous month, click **Show**, and then click **Previous reports**. A list of the previous months that the report has been generated for appears. Expand the month to view the report for, select the date, and then click **OK**. The report for the previous month is displayed. To return to the current month’s report, click **Cancel**.
-
 ## Print a financial report
-To print a financial report, on the Action Pane, click **Print**, and then follow one or more of these steps to set the print options:
+Printing a financial report will create a PDF file which can then be manually printed. To create a printable financial report, on the Action Pane, click **Print**, and then follow one or more of these steps to set the print options:
 
 -   To include the various detail levels in the printed report, set the slider to **Yes** or **No**. If a report uses a reporting tree, you can choose to include all reporting units or just the current reporting unit.
 -   To set the page size, select a page size in the list.
 -   To set the page layout, select a layout in the list. If you want the report content to fit the width that you selected, set the slider to **Yes**.
 -   To set the page margins, type the size of the top, bottom, left, and right margins in inches.
 
-After you've finished setting the print options, click **Print** to print the report. If you decide that you don’t want to print the report, click **Cancel** instead. A preview of the printed report is displayed. You can select the printer to send the report to, and you can also adjust the print options.
+After you've finished setting the print options, click **Print** to continue and be prompted whether you wish to download the file, or save the file to OneDrive or SharePoint. If you decide that you don’t want to continue, click **Cancel** instead. Once you continue, The report will begin rendering on the server and you will be prompted to download the report in PDF format. You can now view the report in your PDF viewer and from here you can select the printer to send the report to, and make any further adjustments for the print options.
 
 ## Export a financial report
 To export a financial report, on the Action Pane, click **Export**. The report is exported to Microsoft Excel, and your browser prompts you to open or save the exported file. The export settings that are defined in the report design are applied to the exported report.    
@@ -90,7 +86,7 @@ To export a financial report, on the Action Pane, click **Export**. The report i
 Additional resources
 --------
 
-[Financial reporting for Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Financial reporting](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -35,7 +35,8 @@ This topic explains how you can use self-service to do silent servicing updates 
 
 ## Delimiters for mass deployment
 
-The following table shows the delimiters that can currently be used in execution commands for mass deployment. These delimiters apply to the July 2017 version with Application update 3 or later.
+The following table shows the delimiters that can currently be used in execution commands for mass deployment. 
+
 
 | Delimiter                 | Description |
 |---------------------------|-------------|
@@ -46,12 +47,13 @@ The following table shows the delimiters that can currently be used in execution
 | -SkipPrerequisiteCheck    | Skip the check for prerequisites and prerequisite installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipSystemInfoCollection | Skip the process of collecting system information at the beginning of the installation.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
 | -SkipMerchantInfo         | Skip the installation of merchant account information at the end of the self-service installer for Hardware station.<p><p>You should use this delimiter only for development and testing. We don't recommend that you use it for a standard installation.</p> |
+| -SkipAppxInstallation         | Beginning in the October 2018 release of Dynamics 365, this delimiter will skip the installation of the APPX Retail Modern POS application.  This delimiter is required to perform the application installation through the SYSTEM account or a service account (Any account that does not have a user profile).</p> |
 
 ## Silent servicing
 
 ### Before you begin
 
-To use this functionality, you must be using the July 2017 version with Application update 3 or later. Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
+Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
 
 ### Examples of commands for silent servicing
 

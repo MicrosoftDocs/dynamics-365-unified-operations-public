@@ -5,7 +5,7 @@ title: Configure and run job to post statements
 description: This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores. 
 author: josaw1
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -33,11 +33,13 @@ ms.dyn365.ops.version: Version 7.0.0
 This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores. This procedure uses the USRT company in demo data.
 
 1. Go to All workspaces > .. > Retail store financials.
-2. Click Post statements.
+2. Click Post statements in batch.
     * Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node. Select a node if you want to create the batch job for a group of stores.  
     * Click the arrow to add your selection.  
 3. Click the Run in the background tab.
+![Run in the background](../dev-itpro/media/runbackground.png "Run in the background") 
 4. Check or uncheck the Batch processing checkbox.
+![Batch Processing](../dev-itpro/media/batchprocessing.png "Batch Processing & Recurrance") 
 5. Click Recurrence.
 6. In the Start date field, enter a date.
 7. In the Start time field, enter a time.

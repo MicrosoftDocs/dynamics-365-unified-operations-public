@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
-description: This topic explains what to do if the customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.
-author: Darinkramer
+title: Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
+description: This topic explains what to do if the customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
@@ -17,26 +17,26 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
 ---
 
-# Talent doesn't appear among the Microsoft Dynamics 365 apps (CDS1.0)
+# Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
 
 [!include [banner](includes/banner.md)]
 
 **Issue**
 
-The customer doesn't see the Microsoft Dynamics 365 for Talent app among the Microsoft Dynamics 365 apps.
+The customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.
 
 **Resolution**
 

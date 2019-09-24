@@ -5,7 +5,7 @@ title: Architecture and design considerations for the mobile platform
 description: This topic provides in-depth information on designing mobile apps.
 author: makhabaz
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
@@ -38,23 +38,23 @@ The mobile app communicates with Application Object Server (AOS) to get the meta
 
 ![Mobile architecture](media/mobilearchitecture.png)
 
-The mobile app platform doesn't assume connectivity to Finance and Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
+The mobile app platform doesn't assume connectivity to Finance and Operations apps. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
 
 ![Navigation concepts in the mobile app](media/mobilephoneapp1.png)
 
--   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Finance and Operations environment.
+-   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your environment.
 -   In each **workspace**, you can see a list of **pages** that are available for that workspace.
--   On a **page**, you can view data that is collected from one or more Finance and Operations forms.
+-   On a **page**, you can view data that is collected from one or more forms.
 -   From a **page**, you can navigate to other **pages** for related data, such as an entity details or lines.
 -   On a **page**, you can see a list of **actions** that are available for that page.
 -   **Actions** let you create or edit existing data.
 
 ### Notes
 
-At any time, you can pull-to-refresh in the mobile app to make the mobile app update its data or metadata. After you edit an existing workspace or publish a workspace, be sure to pull-to-refresh in the mobile app, in either the list of workspaces (if you added a workspace or business logic) or the list of pages (if you modified a page or an action). Workspaces that have been published to Finance and Operations are visible to all users. In Microsoft Dynamics 365 for Finance and Operations platform update 3, menu item security automatically hides pages that the user doesn’t have access to. If a user doesn’t have access to any pages in a workspace, the workspace itself is hidden.
+At any time, you can pull-to-refresh in the mobile app to make the mobile app update its data or metadata. After you edit an existing workspace or publish a workspace, be sure to pull-to-refresh in the mobile app, in either the list of workspaces (if you added a workspace or business logic) or the list of pages (if you modified a page or an action). Workspaces that have been published are visible to all users. In Platform update 3, menu item security automatically hides pages that the user doesn’t have access to. If a user doesn’t have access to any pages in a workspace, the workspace itself is hidden.
 
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
@@ -63,7 +63,7 @@ The mobile app designer lets you select the specific data fields from forms that
 
 ![Mobile app designer](media/mobileappdesigner.png)
 
-1.  Open the Finance and Operations client. 
+1.  Open the client. 
 2.  Go to **Settings** &gt; **Mobile app**.
 3.  Create a new workspace, or select an existing workspace to edit.
 4.  Specify the name of the workspace, an icon, and a color.

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configuration keys and data entities
-description: This topic describes the relationship between configuration keys and data entities in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes the relationship between configuration keys and data entities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/01/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application user
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25341
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 13
 
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 
-To learn more about configuration keys in Finance and Operations, see the [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md).
+To learn more about configuration keys, see the [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md).
 
 ### Configuration key assignments
 Configuration keys can be assigned to one or all of the following artifacts.
@@ -48,7 +48,7 @@ Configuration keys can be assigned to one or all of the following artifacts.
 
 The following table summarizes how configuration key values on the different artifacts that underlie an object change the expected behavior of the object.
 
-| Configuation key setting on data entity | Configuration key setting on table | Configuration key setting on table field | Configuration key on data entity field | Expected behavior |
+| Configuration key setting on data entity | Configuration key setting on table | Configuration key setting on table field | Configuration key on data entity field | Expected behavior |
 |-----------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
 | Disabled                                | Not evaluated                      | Not evaluated                            | Not evaluated                          | If the configuration key for the data entity is disabled, the data entity will not be functional. It does not matter whether the configuration keys in the underlying tables and fields are enabled or disabled. |
 | Enabled                                 | Disabled                           | Not evaluated                            | Not evaluated                          | If the configuration key for a data entity is enabled, the data management framework checks the configuration key on each of the underlying tables. If the configuration key for a table is disabled, that table will not be available in the data entity for functional use. If a table's configuration key is disabled, the table and data entity configuration key settings are not evaluated. If the primary table in the entity has its configuration key disabled, then the system will act as though the entity's configuration key were disabled. |
@@ -92,7 +92,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 - When the user loads a template into a data project
 - When an existing data project is loaded
 - When a template is loaded into a data project
-- Before the export/import job is executed (batch, non-batch, recurring, Odata)
+- Before the export/import job is executed (batch, non-batch, recurring, OData)
 - When the user generates mapping
 - When the user maps fields in the mapping UI
 - When the user adds only 'importable fields'

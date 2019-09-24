@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic reporting (ER)
+title: Electronic reporting (ER) overview
 description: This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic reporting (ER)
+# Electronic reporting (ER) overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -45,8 +45,8 @@ ER currently supports the TEXT, XML, Microsoft Word document, and OPENXML worksh
 ## Capabilities
 The ER engine has the following capabilities:
 
-- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Microsoft Dynamics 365 for Finance and Operations.
-- It makes a report's format insulated from the current Finance and Operations implementation. In other words, the format is applicable for different versions of Finance and Operations.
+- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Finance and Operations.
+- It makes a report's format insulated from the current implementation. In other words, the format is applicable for different versions.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
 - It supports the ability to distribute formats to partners and customers through Microsoft Dynamics Lifecycle Services (LCS).
@@ -61,7 +61,7 @@ ER supports two types of components: **Data model** and **Format**.
 A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
 - A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- A model mapping that links selected Finance and Operations data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
@@ -74,9 +74,9 @@ Note that business entities such as company and payment transactions are designe
 
 A model mapping that supports outgoing electronic documents has the following capabilities:
 
-- It can use different Finance and Operations data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
+- It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of Finance and Operations data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
+- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
 
 [![Formula designer](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
@@ -138,11 +138,11 @@ Versioning is supported for ER components. The following workflow is provided to
 Versions that have either **Completed** or **Shared** status are available for other data interchange. The following actions can be performed on a component that has these statuses:
 
 - The component can be serialized in XML format and exported as a file in XML format.
-- The component can be reserialized from an XML file and imported into Finance and Operations as a new version of an ER component.
+- The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
 
 #### Component date effectivity
 
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The Finance and Operations session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
+ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
 
 #### Component access
 
@@ -152,13 +152,13 @@ Different versions of a data format component can have different settings for IS
 
 #### Configuration
 
-An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in Finance and Operations.
+An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
 Each model configuration contains a data model component. A new format configuration can be derived from a specific data model configuration. In the configuration tree, the format configuration that is created appears as a child of the original data model configuration.
 
 The format configuration that is created contains a format component. The data model component of the original model configuration is automatically inserted into the format component of the child format configuration as a default data source.
 
-An ER configuration is shared for Finance and Operations companies.
+An ER configuration is shared for application companies.
 
 #### Provider
 
@@ -168,24 +168,35 @@ To learn how to register a new ER provider, play the task guide, **ER Create a c
 
 #### Repository
 
-An ER repository stores ER configurations. Four types of ER repositories are currently supported: **Operations resources**, **LCS project (LCS)**, **File system**, and **Regulatory Configuration Services (RCS)**.
+An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, releases as part of the Finance and Operations solution. Those configurations can be imported into the current Finance and Operations instance and used for electronic reporting. They can also be used for additional localizations and customizations.
+- LCS shared library
+- LCS project
+- File system
+- Regulatory Configuration Services (RCS)
+- Operations resources
 
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current Finance and Operations instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
 
-A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current Finance and Operations instance. 
-Note that this repository type is accessible in the following Dynamics 365 for Finance and Operations environments:
-- cloud hosted environments deployed for development purposes (containing test models of enclosed suites)
-- deployed locally environments (on-premise or local business data deployment (LBD))
+An **LCS shared library** repository provides access to the list of configurations within the Shared asset library in Lifecycle Services (LCS). This type of ER repository can only be registered for the Microsoft provider. From the LCS Shared asset library you can import the latest versions of ER configurations into the current instance.
 
-Visit the [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md) page for more details about this.
+An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected at the repository registration stage. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current Finance and Operations instance.
 
-An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current Finance and Operations instance and used for electronic reporting.
+A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can  import configurations from a **File system** repository into the current instance. 
 
-Visit the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](./rcs-download-configurations.md) page for more details about this.
+Note that this repository type is accessible in the following environments:
 
-Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current Finance and Operations instance. Each repository can be dedicated to a specific configuration provider.
+- Cloud-hosted environments deployed for development purposes (containing test models of enclosed suites)
+- Locally deployed environments (on-premises)
+
+For more information, see [Import Electronic reporting (ER) configurations](./electronic-reporting-import-ger-configurations.md).
+
+An **RCS instance** repository provides access to the list of configurations of a specific RCS instance that was selected at the repository registration stage. ER lets you import completed or shared configurations from the selected RCS instance into the current instance so you can use them for electronic reporting.
+
+For more information, see [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using corresponding the ER repository.
+
+Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
 ## Supported scenarios
 ### Building a data model
@@ -198,7 +209,7 @@ To become familiar with the details of this scenario, play the **ER Design domai
 
 ### Translating data model content
 
-Data model content (labels and descriptions) can be translated into other languages that Finance and Operations supports. You might want to translate data model content for the following reasons:
+Data model content (labels and descriptions) can be translated into other languages that the applications supports. You might want to translate data model content for the following reasons:
 
 - At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
 - At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
@@ -211,20 +222,20 @@ The following illustration shows an example where data model content is translat
 
 ### Configuring data model mappings for outgoing documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific Finance and Operations data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model).
+ER provides a model mapping designer that lets users map data models that they have designed to specific application data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model).
 
 [![Example of data model mapping](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
 To become familiar with the details of this scenario, play the **ER Define model mapping and select data sources** and **ER Map data model to selected data sources** task guides (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Configuring data model mappings for incoming documents
-ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the Finance and Operations updatable data components (tables, data entities, and views). Based on the mapping, the Finance and Operations data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. The following illustration shows an example of this type of data model mapping. In this example, the **Import mapping for NETS** model mapping of the payment domain data model is used to support the import of bank statements in the NETS bank format for Norway.
+ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the updatable data components (tables, data entities, and views). Based on the mapping, the data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. The following illustration shows an example of this type of data model mapping. In this example, the **Import mapping for NETS** model mapping of the payment domain data model is used to support the import of bank statements in the NETS bank format for Norway.
 
 [![Import mapping for NETS data model example](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
 ### Storing a designed model component as a model configuration
 
-ER can store a designed data model, together with associated data mappings, as a model configuration of the current Finance and Operations instance. The following illustration shows an example of this type of data model configuration (the payment model configuration).
+ER can store a designed data model, together with associated data mappings, as a model configuration of the current instance. The following illustration shows an example of this type of data model configuration (the payment model configuration).
 
 To become familiar with the details of this scenario, play the **ER Map data model to selected data sources** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
@@ -270,11 +281,11 @@ To become familiar with the details of this scenario, play the Create required E
 
 ### Storing a designed format component in a format configuration
 
-ER can store a designed format together with the configured data mappings as a format configuration of the current Finance and Operations instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration). To become familiar with the details of this scenario, play the **ER Design domain specific format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER can store a designed format together with the configured data mappings as a format configuration of the current instance. The preceding illustration shows an example of this type of format configuration (**BACS (UK)**, which is a child of the **Payment model** configuration). To become familiar with the details of this scenario, play the **ER Design domain specific format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-### Configuring Finance and Operations to start to use a created format internally
+### Configuring Finance to start to use a created format internally
 
-Finance and Operations can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations:
+The application can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations:
 
 [![BACS (UK) format configuration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -289,7 +300,7 @@ The owner of a component (model or format) that has been created can use ER to p
 
 ### Importing an ER component from LCS to use it internally
 
-ER lets you import ER components from LCS to the current Finance and Operations instance. A repository of the **LCS project** type is required. When an ER component has been imported from LCS to the current Finance and Operations instance, the owner of the instance becomes a consumer of the service that is provided by the owner (author) of the imported component. For example, if a format component is designed to generate a specific electronic document from Finance and Operations in a country/region-specific format (localization scenario), it's assumed that the service consumer will be able to obtain any updates that are made to that format, to keep it compliant with legislative requirements. To become familiar with the details of this scenario, play the **ER Import a configuration from Lifecycle Services** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+ER lets you import ER components from LCS to the current instance. A repository of the **LCS project** type is required. When an ER component has been imported from LCS to the current instance, the owner of the instance becomes a consumer of the service that is provided by the owner (author) of the imported component. For example, if a format component is designed to generate a specific electronic document from the application in a country/region-specific format (localization scenario), it's assumed that the service consumer will be able to obtain any updates that are made to that format, to keep it compliant with legislative requirements. To become familiar with the details of this scenario, play the **ER Import a configuration from Lifecycle Services** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Building a format selecting another format as a base (customization)
 
@@ -299,7 +310,7 @@ ER lets you create (derive) a new component from the current version of a compon
 
 ER lets you automatically adopt changes of the latest version of the base component in the current draft version of the derived component. This process is known as *rebasing*. For example, a new regulatory change that has been introduced in the latest version of the format that was imported from LCS can be automatically merged into the customized version of this format of the electronic document. Any changes that can't be merged automatically are considered conflicts. These conflicts are presented for manual resolution in the designer tool for the appropriate component. To become familiar with the details of this scenario, play the **ER Upgrade format by adoption of new base version of that format** task guide (part of the **7.5.5.3 Acquire/Develop changed IT service/solution component (10683)** business process).
 
-## List of ER configurations that are delivered in the Finance and Operations solution
+## List of ER configurations that are delivered in the Finance application
 
 | Domain-specific data model configurations: Title | Domain                | Data model–dependent format configurations: Title | Description                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
@@ -383,6 +394,5 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 ## Additional resources
 
-[Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
-
-[Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
+- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)

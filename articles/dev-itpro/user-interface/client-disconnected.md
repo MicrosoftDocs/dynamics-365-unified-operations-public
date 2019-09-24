@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29151
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Platform Update 8
 [!include [banner](../includes/banner.md)]
 
 
-The configuration of the local network for an on-premises deployment of Dynamics 365 for Finance and Operations can affect the features that are available in the web client. In particular, if the network configuration does not allow a client machine to access the internet, several degradations in the web client will occur. These include:    
+The configuration of the local network for a deployment of Dynamics 365 Finance + Operations (on-premises) can affect the features that are available in the web client. In particular, if the network configuration does not allow a client machine to access the internet, several degradations in the web client will occur. These include:    
 
 + The Office app launcher and Dynamics 365 areas in the navigation bar will no longer be clickable.
 + The Help pane will not be accessible.  
 + The Ideas portal will not be accessible from the web client. 
 + Users will see their initials instead of a user image. 
 + Skype integration will not be available.  
-+ The favorite icon shown in the browser tab will be the browser's default favorite icon instead of the Finance and Operations icon. 
++ The favorite icon shown in the browser tab will be the browser's default favorite icon instead of the application icon. 
 + The Open in Excel options are hidden because the Excel Add-in will not run.
 
 In addition to platform features that may not be accessible when the client can't access the internet, there may also be application features that rely on an internet connection that developers will need to hide or turn off. To facilitate this, developers can use the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the internet.

@@ -4,7 +4,7 @@ title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model. &lt;br&gt;
 author: shadykdc
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,7 +13,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom:

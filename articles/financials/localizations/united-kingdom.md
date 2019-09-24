@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: United Kingdom
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for the United Kingdom. 
+title: United Kingdom overview
+description: This topic provides links to documentation resources for the United Kingdom. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# United Kingdom 
+# United Kingdom overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,3 +41,7 @@ This topic provides links to documentation resources for United Kingdom.
 - [Set up item sales tax groups for reverse charge VAT](tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md)
 - [Set up reverse charge VAT item groups, rules, and parameters](tasks/gb-00002-reverse-charge-vat-item-groups.md)
 - [Set up sales tax groups for reverse charge VAT](tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md)
+
+## Regulatory updates for the United Kingdom
+
+For a complete list of regulatory updates for all countries/regions, see [Regulatory updates](regulatory-updates.md).

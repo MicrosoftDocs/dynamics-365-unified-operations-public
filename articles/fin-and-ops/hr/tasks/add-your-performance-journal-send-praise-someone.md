@@ -3,7 +3,7 @@
  
 title: Add to your performance journal and send praise to someone
 description: The performance journal holds information that relates to how you met your goals or how you performed during a period. 
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

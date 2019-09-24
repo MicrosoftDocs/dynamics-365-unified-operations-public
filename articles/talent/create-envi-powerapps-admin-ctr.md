@@ -3,7 +3,7 @@
 
 title: Can't create an environment in the PowerApps Admin center
 description: This topic explains what to do if the admin can't create an environment in the Microsoft PowerApps Admin center.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
 
@@ -51,4 +51,4 @@ Make sure that the tenant admin has assigned a valid PowerApps P2 license direct
 Note that various Microsoft Office SKUs also provide the right, together with standalone PowerApps Plan 2 SKUs. The important point is that one of these SKUs must be present.
 
 1. Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).

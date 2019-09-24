@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
-author: josaw1
+title: What's new or changed in Dynamics 365 Talent - Core HR (July 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
+author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Talent July 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (July 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (July 2018)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.
 
 ## PowerApps personalization
 
-Microsoft Dynamics 365 for Talent supports integration with the Microsoft PowerApps service. PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
+Talent supports integration with the Microsoft PowerApps service. PowerApps lets both developers and non-technical users build custom business apps for mobile devices, tablets, and the web without having to write code. Apps that you, your organization, or the broader ecosystem develop by using PowerApps can then be embedded in the Talent client to augment the product's functionality. For example, you might build an app that supplements Talent with information that is retrieved from another system.
 
 For more information, see [Embed PowerApps apps](../fin-and-ops/get-started/embed-power-apps.md).
 

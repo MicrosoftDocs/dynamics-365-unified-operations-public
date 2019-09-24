@@ -18,7 +18,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
@@ -588,7 +588,7 @@ The group of changes in this section includes several different approaches to ex
 |FormLetterJournalPost.post|
 |FormletterService.run|
 |From ProjTable.init|
-|HierarchyTemplateCopying.copyHierachy|
+|HierarchyTemplateCopying.copyHierarchy|
 |HrmAbsenceRequestAction.run|
 |InterCompanyUpdateRemPhys_PurchLine::synchronizeExternal|
 |InterCompanyUpdateRemPhys_PurchLine::synchronizeInternal|

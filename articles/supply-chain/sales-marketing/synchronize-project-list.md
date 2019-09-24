@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronize project list from Finance and Operations to Field Service
-description: This topic discusses the templates and underlying tasks that are used to synchronize projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+description: This topic discusses the templates and underlying tasks that are used to synchronize projects from Finance and Operations to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -34,21 +34,21 @@ ms.search.validFrom: 2018-12-01
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+This topic discusses the templates and underlying tasks that are used to synchronize projects from Finance and Operations to Dynamics 365 Field Service.
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to run synchronization of projects from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+The following template and underlying tasks are used to run synchronization of projects from Finance and Operations to Field Service.
 
 **Template in Data integration**
-- Projects (Finance and Operations to Field Service)
+- Projects (Fin and Ops to Field Service)
 
 **Task in the Data integration project**
 - Projects
 
 The following synchronization tasks are required before synchronization of project list can occur:
-- Accounts (Sales to Finance and Operations) 
+- Accounts (Sales to Fin and Ops) 
 
 ## Entity set
 | Field Service           | Finance and Operations  |
@@ -68,6 +68,6 @@ Enable change tracking for Data entity projects.
 ## Template mapping in Data integration
 
 
-### Projects (Finance and Operations to Field Service): Projects
+### Projects (Fin and Ops to Field Service): Projects
 
 [![Template mapping in Data integration](./media/FSProject1.png)](./media/FSProject1.png)

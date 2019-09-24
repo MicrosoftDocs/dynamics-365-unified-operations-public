@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Translation Service
+title: Dynamics 365 Translation Service overview
 description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS). DTS is designed to enhance the experience for partners and ISVs when they translate their solutions or add a new language for supported Microsoft Dynamics products.
 author: ejcho
 manager: AnnBe
-ms.date: 09/13/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Microsoft Dynamics 365 Translation Service
+# Dynamics 365 Translation Service overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,10 @@ The following illustration shows, at a high level, how the service works.
 Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [XLIFF Translation Memory (TM)](./use-translation-service-tm.md).
 
 ## Custom-trained MT system
-DTS uses Microsoft Translator Hub (MT Hub) from Microsoft Research to customize the MT system for Microsoft Dynamics products. The custom-trained MT system can be used only for GA languages for Microsoft Dynamics, unless partners and ISVs upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
+DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
+
+> [!NOTE]
+> Microsoft Translator supports the text translation through the Microsoft Translator Text API. DTS uses V3 Translator API because V2 will be discontinued on April 30, 2019 with the retirement of[Microsoft Translator Hub](https://www.microsoft.com/translator/business/hub/). For information about the supported languages for V3, see [Language and region support for the Translator Text API](https://docs.microsoft.com/azure/cognitive-services/translator/language-support#customization). 
 
 ## Supported products
 DTS currently supports the following product versions.
@@ -54,10 +57,10 @@ DTS currently supports the following product versions.
 | Product name | Versions | Supported format for user interface files | Supported format for documentation files | Notes |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
-| Microsoft Dynamics 365 for Finance and Operations | All versions | .label.txt | .docx | |
+| Dynamics 365 Finance and Operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
 | Microsoft Dynamics 365 for Retail | All versions | .label.txt | .docx | |
-| Microsoft Dynamics CRM | 2011–2016 | .resx | .docx | |
-| Microsoft Dynamics NAV | 2015–2018 | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | NAV-specific formats are used for .txt, .xml, and .xlf files. |
+| Microsoft Dynamics CRM | All versions | .resx | .docx | |
+| Microsoft Dynamics NAV | All versions | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |
 
 ## Accessing DTS
 You can access DTS in two places in LCS:

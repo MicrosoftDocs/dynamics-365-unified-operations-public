@@ -2,7 +2,7 @@
 # required metadata
 
 title: Royalty contract management
-description: This topic describes royalty contract management for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes royalty contract management for Microsoft Dynamics 365 Finance.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/02/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: roschlom
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

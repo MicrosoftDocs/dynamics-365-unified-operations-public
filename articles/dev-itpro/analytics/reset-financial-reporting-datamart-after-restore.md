@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset the Financial reporting data mart
-description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
 manager: AnnBe
 ms.date: 02/07/2018
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
@@ -33,26 +33,26 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 for Finance and Operations:
+This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 Finance:
 
 - Financial reporting release 7.2.6.0 and later
 - Financial reporting release 7.0.10000.4 and later
-- Microsoft Dynamics 365 for Finance and Operations (on-premises)
+- Microsoft Dynamics 365 Finance + Operations (on-premises) 
 
-To get Finance and Operations Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
+To get Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
-## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.2.6.0 and later
+## Reset the Financial reporting data mart for Financial reporting release 7.2.6.0 and later
 
 ### Reset the Financial reporting data mart from Report designer
 
 > [!NOTE]
-> The steps in this process are supported for Finance and Operations Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
+> The steps in this process are supported for Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
 
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
 In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
 
-- The Finance and Operations database was restored, but the data mart database wasn't restored.
+- The application database was restored, but the data mart database wasn't restored.
 - You see incorrect data for a period.
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
@@ -74,20 +74,20 @@ The **Data status** grid provides a snapshot of the transactions, exchange rates
 
 ##### Misaligned main account categories
 
-If you're using a release that is earlier than Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
+If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
 
-### Reset the data mart in Finance and Operations Financial reporting release 7.2.6.0
+### Reset the data mart in Financial reporting release 7.2.6.0
 
-To reset the data mart in Finance and Operations Financial reporting release 7.2.6.0 and earlier, in the **Reset Data Mart** dialog box, select the **Reset data mart** check box, and then select **OK**. You should reset the data mart only during scheduled downtime.
+To reset the data mart in Financial reporting release 7.2.6.0 and earlier, in the **Reset Data Mart** dialog box, select the **Reset data mart** check box, and then select **OK**. You should reset the data mart only during scheduled downtime.
 
 [![Reset data mart check box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
-### Reset the data mart and select a reason in Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.3.0
+### Reset the data mart and select a reason in Financial reporting release 7.3.0
 
 If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field. The following options are available:
 
 - **Missing or incorrect data** – Based on the statistics, you've determined that data might be missing. Before you continue, we recommend that you work with Support to determine the root cause.
-- **Restore database** – The Finance and Operations database was restored, but the database for the Financial reporting data mart wasn't restored.
+- **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
 
 [![Reset data mart](./media/Integration.png)](./media/Integration.png)
@@ -108,12 +108,12 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 > [!NOTE]
 > The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says "Integration complete" in the bottom-left corner.
 
-## Reset the Financial reporting data mart for Finance and Operations Financial reporting release 7.0.10000.4 and later
+## Reset the Financial reporting data mart for Financial reporting release 7.0.10000.4 and later
 
-If you ever restore your Finance and Operations database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored Finance and Operations database.
+If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
 
 > [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics AX application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version of Finance and Operations, contact Support for assistance.
+> The steps in this process are supported for Microsoft Dynamics AX application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Export report definitions
 
@@ -147,7 +147,7 @@ You can copy or upload the file to a secure location. In this way, the file can 
 The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
 - World wide web publishing service (on all Application Object Servers [AOS] computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+- Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on Business intelligence [BI] computers only)
 
 ### Reset
@@ -158,9 +158,9 @@ Download the latest MinorVersionDataUpgrade.zip package. For instructions about 
 
 An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
-#### Run scripts against the Finance and Operations database
+#### Run scripts against the database
 
-Run the following scripts against the Finance and Operations database (not against the Financial reporting database):
+Run the following scripts against the database (not against the Financial reporting database):
 
 - DataUpgrade.zip\\AosService\\Scripts\\ConfigureAxReportingIntegration.sql
 - DataUpgrade.zip\\AosService\\Scripts\\GrantAzViewChangeTracking.sql
@@ -169,7 +169,7 @@ These scripts help guarantee that the users, roles, and change tracking settings
 
 #### Run a Windows PowerShell command to reset the database
 
-On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between Finance and Operations and Financial reporting.
+On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.
 
 ```
 F:
@@ -196,7 +196,7 @@ Here is an explanation of the parameters in the **Reset-DatamartIntegration** co
 Use services.msc to restart the services that you stopped earlier:
 
 - World wide web publishing service (on all AOS computers)
-- Microsoft Dynamics 365 for Finance and Operations Batch Management Service (on non-private AOS computers only)
+- Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
 #### Import report definitions
@@ -207,7 +207,7 @@ Import your report designs from Report designer by using the file that was creat
 2. Select the building block group to export, and then select **Export**.
 
     > [!NOTE]
-    > For Finance and Operations, only one building block group is supported, **Default**.
+    > Only one building block group is supported, **Default**.
 
 3. Select the **Default** building block, and then select **Import**.
 4. Select the file that contains the exported report definitions, and then select **Open**.
@@ -218,9 +218,9 @@ Import your report designs from Report designer by using the file that was creat
 
 6. Select **Import**.
 
-## Reset the Financial reporting data mart for Finance and Operations (on-premises)
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) 
 
-1. Instruct all users to exit Report designer and the Financial reporting area of Finance and Operations.
+1. Instruct all users to exit Report designer and the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
 
     ```
@@ -236,8 +236,8 @@ Import your report designs from Report designer by using the file that was creat
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
     ```
 
-3. Truncate or delete all records from the FINANCIALREPORTS table in the Finance and Operations database (AXDB).
-4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the Finance and Operations database. If the table doesn't exist in the Finance and Operations database, skip this step.
+3. Truncate or delete all records from the FINANCIALREPORTS table in the database (AXDB).
+4. Truncate or delete all records from the FINANCIALREPORTVERSION table, if this table exists in the database. If the table doesn't exist in the database, skip this step.
 5. Run the **ResetDatamart.sql** script against the Financial reporting database. This script disables the data mart integration, deletes all the data mart data, and then reenables the data mart integration.
 
     ```

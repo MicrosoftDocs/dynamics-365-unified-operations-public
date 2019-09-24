@@ -3,7 +3,7 @@
  
 title: Develop succession plan
 description: As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person. 
-author: kherr75
+author: andreabichsel
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: HcmSkillMapping   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

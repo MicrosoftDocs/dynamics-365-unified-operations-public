@@ -5,7 +5,7 @@ title: Add custom controls to Retail Modern POS (MPOS) screen layouts
 description: This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 65801
@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 # Add custom controls to Retail Modern POS (MPOS) screen layouts
 
 [!include [banner](../includes/banner.md)]
+
+> [!NOTE]
+> This topic is applicable only for version 7.1 and earlier.
 
 This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 
@@ -139,7 +142,3 @@ You want to provide the cashier and manager more information about sales. For ex
 2.  On the welcome screen, click the **Current transaction** button.
 3.  Add any item to the transaction, and verify that the total quantity is shown correctly in the custom control.
 4.  Void any line in the transaction, and verify that the voided line count is shown correctly in the custom control.
-
-
-
-

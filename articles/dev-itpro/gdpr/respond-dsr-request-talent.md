@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond to requests for personal data in Talent
-description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 for Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
+description: This topic describes how you, as a data controller, can use Microsoft Dynamics 365 Talent as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
 manager: AnnBe
 ms.date: 01/31/2018
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic can help both businesses that use Microsoft Dynamics 365 for Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
+This topic can help both businesses that use Microsoft Dynamics 365 Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
 
 For Talent, Microsoft acts as a processor. As a data processor, Talent provides processes and features that let you comply with your GDPR obligations as a data controller.
 
@@ -111,10 +111,10 @@ Only terminated workers can be deleted from Talent. Follow these steps to delete
 
 Compensation isn't assigned to contractors. Therefore, those steps can be skipped in the preceding process.
 
-An admin can search and export personal data in Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboarding via <https://attract.talent.dynamics.com/personreport>.
+An admin can search and export personal data in Microsoft Dynamics 365 Talent: Attract and Microsoft Dynamics 365 Talent: Onboard via <https://attract.talent.dynamics.com/personreport>.
 
 ## Additional resources
-You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
+You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 
 
 

@@ -3,7 +3,7 @@
  
 title: Modify reporting relationships for a position
 description: This procedure shows how to change the reporting relationship for an employee. 
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: HcmPosition, HcmPositionReportsToDialog, HcmPositionLookup   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

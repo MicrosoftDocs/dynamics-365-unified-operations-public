@@ -2,7 +2,7 @@
 # required metadata
 
 title: Server-side development (workspace X++ APIs)
-description: Microsoft Dynamics 365 for Finance and Operations includes support for a mobile phone app that enables rich offline and mobile interactions, and an easy-to-use designer experience.
+description: This topic provides details about the platform that supports the mobile phone app, which enables rich offline and mobile interactions, and an easy-to-use designer experience.
 author: RobinARH
 manager: AnnBe
 ms.date: 11/10/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544

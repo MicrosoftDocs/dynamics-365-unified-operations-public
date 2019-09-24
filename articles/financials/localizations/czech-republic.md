@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Czech Republic
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to the Czech Republic.
+title: Czech Republic overview
+description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Czech Republic
+# Czech Republic overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in the Czech Republic.
+This topic includes information and links to resources that can help you set up legal entities with a primary address in the Czech Republic.
 
 ## Fixed assets
 The following topics cover information that pertains to fixed assets in the Czech Republic:
@@ -54,7 +54,7 @@ When legal entities that have a primary address in the Czech Republic purchase f
 -   The output VAT is paid in the VAT period when the invoice was issued (document date).
 -   The input VAT wasn't deducted before the document receipt (VAT register date).
 
-Information about intra-community VAT can be calculated and posted automatically. When you post an EU vendor invoice, two VAT transactions for the same amount are created. One VAT transaction is created for payable sales tax, and the other transaction is created for receivable sales tax. To reflect this requirement in Finance and Operations, you should complete the following setup:
+Information about intra-community VAT can be calculated and posted automatically. When you post an EU vendor invoice, two VAT transactions for the same amount are created. One VAT transaction is created for payable sales tax, and the other transaction is created for receivable sales tax. To reflect this requirement, you should complete the following setup:
 
 -   Select the **Intra-community VAT** check box on the **Accounts payables parameters** page (**Accounts payable** > **Setup** > **Accounts payables parameters**).
 -   Select the **Document date for intra-community VAT** check box on the **Accounts payables parameters** page.

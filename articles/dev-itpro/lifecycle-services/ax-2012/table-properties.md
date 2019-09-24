@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18141
@@ -126,7 +126,7 @@ The following table describes the properties of table elements in the AOT.
 </tr>
 <tr class="even">
 <td><strong><span class="ui">DeveloperDocumentation</span></strong></td>
-<td>Describes the purpose of a table and explains how it is used in the application. A description is typically no more than five sentences long and is written as a single paragraph.</td>
+<td>Describes the purpose of a table and explains how it is used. A description is typically no more than five sentences long and is written as a single paragraph.</td>
 <td></td>
 </tr>
 <tr class="odd">

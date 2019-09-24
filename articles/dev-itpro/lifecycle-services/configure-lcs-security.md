@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6154
@@ -35,8 +35,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
+Currently, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft Office 365 portal](https://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Microsoft Dynamics Lifecycle Services (LCS). For Microsoft Dynamics AX 2012, organization-level access to LCS is controlled by the association of a person’s Microsoft ID with an organization in CustomerSource or PartnerSource. Therefore, users of CustomerSource or PartnerSource automatically have access to their organization’s workspace in LCS, and can view all projects that they have been invited to participate in. Users who are administrators for their organization in CustomerSource and PartnerSource will be administrators in LCS. Although an administrator can invite people who don’t have CustomerSource or PartnerSource credentials to be members of an organization in LCS, we don't recommend this approach. People who are invited to be members of an LCS organization aren't provided with credentials in CustomerSource or PartnerSource. Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD or CustomerSource or PartnerSource, to be team members.
 
-For the current version of Microsoft Dynamics 365 for Finance and Operations, users can sign in by using the Microsoft Azure Active Directory (Azure AD) credentials that they created in the [Microsoft Office 365 portal](http://go.microsoft.com/fwlink/?LinkID=324287) when they signed up. Users who are administrators for their organization in Azure AD will be administrators in Microsoft Dynamics Lifecycle Services (LCS). For Microsoft Dynamics AX 2012, organization-level access to LCS is controlled by the association of a person’s Microsoft ID with an organization in CustomerSource or PartnerSource. Therefore, users of CustomerSource or PartnerSource automatically have access to their organization’s workspace in LCS, and can view all projects that they have been invited to participate in. Users who are administrators for their organization in CustomerSource and PartnerSource will be administrators in LCS. Although an administrator can invite people who don’t have CustomerSource or PartnerSource credentials to be members of an organization in LCS, we don't recommend this approach. People who are invited to be members of an LCS organization aren't provided with credentials in CustomerSource or PartnerSource. Project-level access to LCS is by invitation. You can invite members of your organization to be project owners and team members. Additionally, you can invite users who aren't part of your organization, and who don't have accounts in Azure AD or CustomerSource or PartnerSource, to be team members. **Important:** We strongly recommend that you manage all users within your company at the organization level. In that way, you help guarantee that their relationship with your organization is correct in CustomerSource, PartnerSource, and Azure AD. Additionally, you help guarantee that users can access the benefits that are available to your organization.
+> [!IMPORTANT]
+> We strongly recommend that you manage all users within your company at the organization level. In that way, you help guarantee that their relationship with your organization is correct in CustomerSource, PartnerSource, and Azure AD. Additionally, you help guarantee that users can access the benefits that are available to your organization.
 
 ## Manage LCS organization users
 Only an administrator can manage users. Follow these steps.
@@ -46,7 +48,7 @@ Only an administrator can manage users. Follow these steps.
 
 ### Invite a user to an LCS project
 
-1.  Sign in to [LCS](http://lcs.dynamics.com/).
+1.  Sign in to [LCS](https://lcs.dynamics.com/).
 2.  Click the project to add the user to.
 3.  Click the **Project users** tile, and then, on the **Project users** page, click the plus sign (**+**).
 4.  Enter the user’s email address, select the correct security role, and then click **Invite**.
@@ -60,7 +62,7 @@ Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource
 
 ### Determining the administrator for your organization in CustomerSource or PartnerSource
 
-If you don’t know your CustomerSource administrator, or if your organization doesn’t have a CustomerSource administrator, send an email message to [itmbssup@microsoft.com](http://itmbssup@microsoft.com) for help.
+If you don’t know your CustomerSource administrator, or if your organization doesn’t have a CustomerSource administrator, send an email message to [itmbssup@microsoft.com](mailto:itmbssup@microsoft.com) for help.
 
 ## Configuring project security
 You can invite users from inside or outside your organization to join your project as users. The following table describes the roles that are available for users.

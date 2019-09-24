@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.2. This version was released in December 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -67,6 +67,15 @@ Resume will only happen once. This means that if the main thread unexpectedly st
 
 ## Intrastat format changes for Belgium
 This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+
+## India-specific features
+In this release, if [GTE](../../financials/general-ledger/tax-engine.md) is enabled for a legal entity, some global fields and buttons will be hidden from the user interface. This simplifies the user interface for users by hiding fields and buttons on taxable documents like Purchase orders and Sales order that don't apply when GTE is used. The following fields or buttons will be hidden if GTE is enabled.
+
+ - Sales tax group
+ - Item sales tax group
+ - Sales tax button
+ 
+The current standard GST configuration does not include VAT, so if your business needs to handle VAT, you must extend the configuration to use VAT. For more information, see [Extending tax engine configurations](../../financials/general-ledger/extend-tax-engine-configurations.md).
 
 ## Russian-specific features
 This release includes the following features specific for Russia:
@@ -125,5 +134,5 @@ For more information, see [Import a configuration from Lifecycle Services](../..
 
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 
-For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
+For more information, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
 

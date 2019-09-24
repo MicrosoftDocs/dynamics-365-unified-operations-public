@@ -5,7 +5,7 @@ title: Create and apply branding to the Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 251594
@@ -33,9 +33,7 @@ ms.dyn365.ops.version: Version 1611
 # Create and apply branding to the Retail Experience app
 
 [!include [banner](../includes/banner.md)]
-
-This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
-
+ 
 You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This topic explains how to build the app, connect, and apply your branding.
 
 ## Development tools
@@ -43,16 +41,16 @@ The Retail Experience app supports the Android and iOS phone platforms. The app 
 
 ### Install Xamarin
 
-You can download Xamarin from <https://www.xamarin.com/download>. For a tutorial that shows how to install Xamarin on Windows, see <https://developer.xamarin.com/videos/?v=Installing_Xamarin_on_Windows>.
+You can download Xamarin from [Visual Studio Tools for Xamarin](https://www.xamarin.com/download). 
+
+For a tutorial that shows how to install Xamarin on Windows, see [Installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/index?pivots=windows).
 
 ### Update Xamarin
 
 After you've installed Xamarin, you must update it to the latest stable version.
 
 -   **Windows:** In Microsoft Visual Studio, click **Tools** &gt; **Options** &gt;**Environment** &gt; **Xamarin** &gt; **Other**.
--   **Mac:** In Xamarin Studio, click **Check for Updates** &gt; **Update channel**. (For more information about this step, see [https://developer.xamarin.com/recipes/cross-platform/ide/change\_updates\_channel/.](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/))
-
-For more information, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
+-   **Mac:** In Xamarin Studio, click **Check for Updates** &gt; **Update channel**. For more information, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
 
 ### Connecting to a Mac
 
@@ -77,16 +75,22 @@ You must modify the Retail Experience app solution before it can be loaded corre
         <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
 
 4.  In Visual Studio, open Sample.ShoppingApp.sln, and add existing projects from the Droid and iOS folders. (Right-click the solution, and then select **Add** &gt; **Existing Projects in Visual Studio**.)
-5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app so please upgrade the Xamarin.Forms version as described below:
+5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app. Please upgrade the Xamarin.Forms version as described below:
     1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
     2.  Open the files package.config file for both Android and iOS projects and replace the line "&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;" with "&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;"
 
 ## Connect to an online channel
-The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. **Note:** The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Retail Server endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
+The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
+
+> [!NOTE]
+> The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Retail Server endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
 
 -   In the **&lt;DataServiceUrl&gt;** tag, add the URL of the Retail Server.
 -   In the **&lt;MediaBaseUrl&gt;** tag, add the URL of the media server. Make sure that this URL has a slash (/) at the end.
--   In the **&lt;OperatingUnitNumber&gt;** tag, add the operating unit number of the online channel that you want to use together with the app. **Note:** Enter the complete operating unit number. For example, in the demo data, the operating unit number for Contoso online store is 068.
+-   In the **&lt;OperatingUnitNumber&gt;** tag, add the operating unit number of the online channel that you want to use together with the app. 
+
+> [!NOTE]
+> Enter the complete operating unit number. For example, in the demo data, the operating unit number for Contoso online store is 068.
 
 ## Connect to a payment connector
 To enable payments to be accepted from the app, you must set up a payment connector on the online channel that is used for the app. The payment connector loads the card-related controls on a host HTML page. We have added a host page that is named CardPaymentHost.html to the Retail SDK. We have also verified that this host page works with the MasterCard connector. However, you might have to edit this page to meet the requirements of the other payment providers. Different connectors might provide pages. The host page can be hosted on any website that you choose. However, we recommend that you host it on your eCommerce site, if you have an eCommerce site. After the page has been hosted, add the URL of the host page in the **&lt;CardPaymentHostPageUrl&gt;** tag.
@@ -98,10 +102,13 @@ Add the following links to the about page:
 -   In the **&lt;PrivacyPolicyUrl&gt;** tag, add a link to the privacy policy.
 -   In the **&lt;ThirdPartyNoticesUrl&gt;** tag, add a link to the third-party notices.
 
-**Note:** If these links are missing, and the user clicks them, the app might stop responding. Therefore, be sure to add the links to these tags. The about page has an **&lt;EvaluationModeEnabled&gt;** tag that is used to enable Evaluation Mode view. Evaluation Mode lets retailers easily change the Retail Server endpoint without having to change any code. This feature helps retailers evaluate the app for various channels. **Evaluation Mode must be disabled in the production version of the app.** By default, Evaluation Mode is disabled in the Retail SDK.
+> [!NOTE]
+> If these links are missing, and the user clicks them, the app might stop responding. Therefore, be sure to add the links to these tags. The About page has an **&lt;EvaluationModeEnabled&gt;** tag that is used to enable Evaluation Mode view. Evaluation Mode lets retailers easily change the Retail Server endpoint without having to change any code. This feature helps retailers evaluate the app for various channels. **Evaluation Mode must be disabled in the production version of the app.** By default, Evaluation Mode is disabled in the Retail SDK.
 
 ## Apply branding
-After you've successfully built the Retail Experience app by using the Microsoft sample branding, you can change icons, labels, and colors to make the app meet your own branding requirements. The following list shows some of the icons, labels, and colors that retailers might want to change. This list isn't exhaustive. **Icons**
+After you've successfully built the Retail Experience app by using the Microsoft sample branding, you can change icons, labels, and colors to make the app meet your own branding requirements. The following list shows some of the icons, labels, and colors that retailers might want to change. This list isn't exhaustive. 
+
+**Icons**
 
 -   **App** – The icon that users see after the app is installed on their phones.
 -   **Retailer's brand** – The icon that appears on the menu flyout on Android.
@@ -113,14 +120,14 @@ After you've successfully built the Retail Experience app by using the Microsoft
 
 **Labels/texts**
 
--   App name (the name that appears below the app icon when the app is installed on the phone)
--   Shop icon name and the corresponding page title
--   Information icon name and the corresponding page title
--   Confirmation messages that appear as toast notifications
--   "Add to cart" button text and the corresponding page title
--   "Checkout" button text and the corresponding page title
--   "Place order" button text
--   About page label and the corresponding page title
+-   App name (the name that appears below the app icon when the app is installed on the phone).
+-   Shop icon name and the corresponding page title.
+-   Information icon name and the corresponding page title.
+-   Confirmation messages that appear as toast notifications.
+-   "Add to cart" button text and the corresponding page title.
+-   "Checkout" button text and the corresponding page title.
+-   "Place order" button text.
+-   About page label and the corresponding page title.
 
 **Colors**
 
@@ -133,7 +140,7 @@ After you've successfully built the Retail Experience app by using the Microsoft
 
 #### Icons
 
-To change the icons for the Android app, open the Resource folder, and update the icons in each drawable folder. These drawable folders contain images for Android at different resolutions. You can either preserve the sizes of the images in these folders or change them to meet your requirements. For information about how Android handles different screen sizes, see <https://developer.android.com/guide/practices/screens_support.html>. The splash screen is put in the drawable folder and is a special type of image that Android requires. For more information about the splash screen, see <https://developer.android.com/studio/write/draw9patch.html>.
+To change the icons for the Android app, open the Resource folder, and update the icons in each drawable folder. These drawable folders contain images for Android at different resolutions. You can either preserve the sizes of the images in these folders or change them to meet your requirements. For information about how Android handles different screen sizes, see [Screen compatibility overview](https://developer.android.com/guide/practices/screens_support.html). The splash screen is put in the drawable folder and is a special type of image that Android requires. For more information about the splash screen, see [Create resizable bitmaps](https://developer.android.com/studio/write/draw9patch.html).
 
 #### Label/text
 
@@ -150,11 +157,15 @@ To change the text labels on the Android app, open the TextResources.resx file, 
 | "Place order" button text                                  | **Pages\_CheckoutPage\_PlaceOrder**                                                                      |
 | About page label and the corresponding page title          | **Pages\_AccountPage\_About** and **Pages\_AboutPage\_Title**, respectively                              |
 
-**Note:** Some of the resources in the TextResources.resx file aren't used by the Android app, but they are used by the iOS app. Examples include **MainTabs\_Cart** and **MainTabs\_Products**. You can change those resources from the Android app without affecting the iOS app.
+> [!NOTE]
+> Some of the resources in the TextResources.resx file aren't used by the Android app, but they are used by the iOS app. Examples include **MainTabs\_Cart** and **MainTabs\_Products**. You can change those resources from the Android app without affecting the iOS app.
 
 #### Colors
 
-To change the colors that appear in the Android app, open the config.xml file and colors.xml files (colors.xml is under Resources-&gt;values folder). Now change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground in both the files** and keep them consistent. **Note**: The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
+To change the colors that appear in the Android app, open the config.xml file and colors.xml files (colors.xml is under Resources-&gt;values folder). Now change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground in both the files** and keep them consistent. 
+
+> [!NOTE]
+> The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
 
 ### Applying branding to the iOS app
 
@@ -177,16 +188,20 @@ To change the text for the iOS app, open the TextResources.resx file, and edit t
 | "Place order" button text                                  | **Pages\_CheckoutPage\_PlaceOrder**                                                                  |
 | About page label and the corresponding page title          | **Pages\_AccountPage\_About** and **Pages\_AboutPage\_Title**, respectively                          |
 
-**Note:** Some of the resources in the info.plist file aren't used by the iOS app, but they are used by the Android app. An example is **MenuPage\_Products**. You can change those resources from the iOS app without affecting the Android app.
+> [!NOTE]
+> Some of the resources in the info.plist file aren't used by the iOS app, but they are used by the Android app. An example is **MenuPage\_Products**. You can change those resources from the iOS app without affecting the Android app.
 
 #### Colors
 
-To change the colors that appear in the iOS app, open the config.xml file, and change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground**. **Note**: The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
+To change the colors that appear in the iOS app, open the config.xml file, and change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground**. 
 
-## Build, test and distribute apps
+[!NOTE]
+> The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
+
+## Build, test, and distribute apps
 The next step is to build the app and test on devices. Testing will be followed by publishing the app to the public app stores. We have added the standard external links from Xamarin and Apple which explain the basics of Android and iOS app distribution.
 
-### Android:
+### Android
 
 To test the Android app on an emulator follow the below steps on Visual Studio
 
@@ -194,18 +209,24 @@ To test the Android app on an emulator follow the below steps on Visual Studio
 2.  Build Release | Any CPU.
 3.  Run in Marshmallow emulator.
 
-The below link from Xamarin explains how to use the Archive manager on Visual studio to **create an .apk file** that can be signed by a signing certificate. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_1\_-\_preparing\_an\_application\_for\_release/\#\_Archive\_for\_Publishing\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_1_-_preparing_an_application_for_release/#_Archive_for_Publishing_) The below link from Xamarin explains how to create a signing certificate and **sign the .apk file** for ad hoc and Google Play store distribution. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/part\_2\_-\_signing\_the\_android\_application\_package/\#\_Signing\_the\_APK\_](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_2_-_signing_the_android_application_package/#_Signing_the_APK_) The below link explains the steps involved with the **public distribution of an application** created with Xamarin.Android via channels such as email, a private web server, Google Play, or the Amazon App Store for Android. [https://developer.xamarin.com/guides/android/deployment,\_testing,\_and\_metrics/publishing\_an\_application/](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/)
+To learn how to use the Archive manager on Visual Studio to **create an .apk file** that can be signed by a signing certificate, see [Preparing an Application for Release](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_1_-_preparing_an_application_for_release/#_Archive_for_Publishing_).
 
-### iOS:
+For details about  how to create a signing certificate and **sign the .apk file** for ad hoc and Google Play store distribution, see [Signing the Android Application Package](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/part_2_-_signing_the_android_application_package/#_Signing_the_APK_).
 
-To test the iOS app on an emulator follow the below steps on Visual Studio
+For more information about the steps involved with the **public distribution of an application** created with Xamarin.Android via channels such as email, a private web server, Google Play, or the Amazon App Store for Android, see [Publishing an Application](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/publishing_an_application/).
 
-1.  Select iOS as startup project
-2.  Connect to Mac as explained above
+### iOS
+
+To test the iOS app on an emulator, use the following steps in Visual Studio.
+
+1.  Select iOS as startup project.
+2.  Connect to Mac as explained above.
 3.  Build Release | iPhone.
-4.  Run it in VS.
+4.  Run the app in Visual Studio.
 
-The below link from Xamarin explains the **distribution techniques** that are available for Xamarin.iOS applications and provides pointers to more detailed documents. [https://developer.xamarin.com/guides/ios/deployment,\_testing,\_and\_metrics/app\_distribution/](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/app_distribution/) The below link from Apple explains how to **maintain your signing identities and certificates** [https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) **Note**: If you are using the certificates as a part of Apple Developer Enterprise Program if you install an app manually (e.g. for testing) then you must also manually establish trust as described in the following link. [https://support.apple.com/en-us/HT204460](https://support.apple.com/en-us/HT204460)
+For detailed information about the distribution techniques that are available for Xamarin.iOS applications, see [Xamarin.iOS App Distribution overview](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/app_distribution/).
 
+To learn how to maintain your signing identities and certificates, refer to [What is app signing](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html). 
 
-
+[!NOTE]
+> If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).

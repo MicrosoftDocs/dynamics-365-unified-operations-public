@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data task automation
-description: This topic explains how you can use data task automation in Microsoft Dynamics 365 for Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
+description: This topic explains how you can use data task automation in Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 04/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 # ROBOTS: 
 audience: Developer
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,10 +30,12 @@ ms.dyn365.ops.version: Platform update 16
 
 [!include[banner](../includes/banner.md)]
 
-Data task automation in Microsoft Dynamics 365 for Finance and Operations lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
+Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
 
 > [!IMPORTANT]
 > Data task automation isn't currently supported for on-premises environments.
+
+> The user who executes data task automation must be in the same tenant as the application environment and LCS project.
 
 We recommend the following approach for data task automation.
 
@@ -50,7 +52,7 @@ We recommend the following approach for data task automation.
     Data task automation manager can consume packages from any sandbox and/or production environment that is related to the LCS project.
 
     > [!IMPORTANT]
-    > - The user account that runs Data task automation manager in Finance and Operations must have access to LCS and to the LCS project that is referenced in the manifest for data packages.
+    > - The user account that runs Data task automation manager must have access to LCS and to the LCS project that is referenced in the manifest for data packages.
     > - Although data task automation can be run in any environment in the cloud, we strongly recommend that you not run any import/export tasks that use integration application programming interfaces (APIs) in a production environment. Data task automation that involves integration APIs should be used only for automated testing.
 
 4. Run the data tasks, and then review the outcomes.
@@ -139,7 +141,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 | \<SharedSetup\>   | \<JobDefinition\>                | 1..n                | ID        | The job definition ID is used in the tasks to reference the definition to be used for the data project. |
 | \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values: <br> - Import <br> - Export |
 |                   | \<Truncate\>                     | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*. |
-|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue/dequeue API’s.|
+|                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue API. Dequeue API is not supported yet. Package API supports both export and import.|
 |                   | \<ConfigurationOnly\>            | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
 |                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*. |
 |                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*. |
@@ -150,7 +152,6 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 |                   | \<PreventUploadWhenZeroRecords\> | 1..1                |           | This is a Boolean field with possible values of Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Export*. |
 |                   | \<UseCompanyFromMessage\>        | 1..1                |           | This is a Boolean field which can be set to Yes or No. This is applicable only when mode is set to *recurring batch* and operation is *Import*. |
 |                   | \<LegalEntity\>                  | 1..1                |           | This is used to specify the legal entity in which the import/export job must be executed. |
-|                   | \<ConfigurationOnly\>            | 1..1                |           | This is used to create data projects and recurring schedules to be configured. The operation of import or export will not be executed. However, it is required to specify the operation and mode for the data project to be configured correctly. This is a Boolean field which takes Yes or No. |
 |                   | \<PackageAPIExecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
 |                   | \<PackageAPIOverwrite\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
 |                   | \<PackageAPIReexecute\>            | 1..1                |           | Refer to package API documentation to understand this parameter. This is a Boolean field which takes 'true' or 'false'. |
@@ -269,7 +270,7 @@ We recommend that you determine the granularity of your manifest as a functional
 
 - Start with as many manifests as your team thinks you logically need. Later, when the team actually starts to run the manifests, it might find that it uses fewer manifests than it expected, and it might want to merge them. In this case, you can merge manifests.
 - Consider separation of duties. For example, you might have one manifest for the setup of demo data and another manifest for the setup of the golden configuration for your environment. In this way, you can make sure that team members use only the manifests that they are supposed to use.
-- Consider user access to LCS. For example, larger and globally distributed implementation teams might have multiple instances of Finance and Operations or multiple LCS projects.
+- Consider user access to LCS. For example, larger and globally distributed implementation teams might have multiple instances of the application or multiple LCS projects.
 
 ### Inheritance
 The manifest schema supports inheritance of common elements that will apply to all tasks in the manifest. A task can override a common element to define a unique behavior. The purpose of the **Shared setup** section is to minimize repetition of configuration elements, so that elements are reused as much as possible. The goal is to keep the manifest concise and clean, to improve maintenance and readability.

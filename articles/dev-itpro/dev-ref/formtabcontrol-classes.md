@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63443
 ms.assetid: 7a521bd7-da3d-469a-8397-d8fb5e6d5ed1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -89,7 +89,7 @@ Class FormTabControl
 | public FieldId countryRegionContextField(\[FieldId value\])                                                         |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source that is used by the control or the form.                                                                                                     |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -124,7 +124,7 @@ Class FormTabControl
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                                           |
@@ -762,7 +762,7 @@ The ID of the data source to use.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -773,7 +773,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -1397,7 +1397,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2522,7 +2522,7 @@ value
 | public str countryRegionCodes(\[str value\])                                                                        | Gets or sets the comma-separated list of country/region codes for the control.                                                                                          |
 | public AnyType data(int column, int row)                                                                            |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -2555,7 +2555,7 @@ value
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                                           |
@@ -3037,7 +3037,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -3048,7 +3048,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -3667,7 +3667,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -4665,7 +4665,7 @@ Sets the focus on the control.
 | public FieldId countryRegionContextField(\[FieldId value\])                                                         |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source that will be used by the control or the form.                                                                                                |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -4701,7 +4701,7 @@ Sets the focus on the control.
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public int panelStyle(\[int value\])                                                                                |                                                                                                                                                                         |
@@ -5375,7 +5375,7 @@ The identifier of the data source that will be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -5386,7 +5386,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -6031,7 +6031,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -7061,7 +7061,7 @@ e
 | public int displayLength(\[int value\], \[AutoMode mode\])                                                  |                                                                                                                                                                         |
 | public AutoMode displayLengthMode(\[AutoMode mode\])                                                        |                                                                                                                                                                         |
 | public int displayLengthValue(\[int value\])                                                                |                                                                                                                                                                         |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Indicates whether to enable or disable drag-and-drop operations for the control.                                                                                        |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -7131,7 +7131,7 @@ e
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -7512,7 +7512,7 @@ The value in the following table is for the Thai language edition of Windows.
 |-------|---------------|
 | 222   | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN website, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method charFromPos
 
@@ -7755,7 +7755,7 @@ value
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -7766,7 +7766,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -8813,7 +8813,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -9966,7 +9966,7 @@ charIndexTo
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public boolean delete(int Idx)                                                                              | Deletes the specified item from the form tree control.                                                                                                                  |
 | public boolean deleteAll()                                                                                  | Deletes all items from the form tree control.                                                                                                                           |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether drag-and-drop operations are enabled or disabled for the control.                                                                                    |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -10024,7 +10024,7 @@ charIndexTo
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button while the mouse pointer is over the control.                                                                          |
 | public int moveItem(int Idx, int newParent, \[int insertAfter\])                                            |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -10499,7 +10499,7 @@ The value in the following table is for the Thai language edition of Windows.
 |-------|---------------|
 | 222   | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN website, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method checkBox
 
@@ -10718,7 +10718,7 @@ The following example shows how to delete all items from a form tree control.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -10729,7 +10729,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -11900,7 +11900,7 @@ insertAfter
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -13369,7 +13369,7 @@ Data
 | public str dataMethod(\[str value\])                                                                                           |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                                     | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                                       | Gets or sets a data source that will be used by the control or the form.                                                                                                |
-| public int displayTarget(\[int value\])                                                                                        | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                                        | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                             | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                              | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                                  | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -13427,7 +13427,7 @@ Data
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                                    | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                                    | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                                      | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.                               |
+| public str name(\[str value\])                                                                                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                               |
 | public int neededPermission(\[int value\])                                                                                     |                                                                                                                                                                         |
 | public str normalImage(\[str value\])                                                                                          |                                                                                                                                                                         |
 | public int onHScroll(int pos)                                                                                                  |                                                                                                                                                                         |
@@ -13815,7 +13815,7 @@ The identifier of the data source that will be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -13826,7 +13826,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -14746,7 +14746,7 @@ Typically, when this method is overridden, the return value from a call to the s
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

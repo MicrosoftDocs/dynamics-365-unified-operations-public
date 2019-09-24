@@ -5,7 +5,7 @@ title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
 author: robinarh
 manager: AnnBe
-ms.date: 04/11/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Platform Update 8
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations now supports running business processes in customer data centers with the on-premises deployment option. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
+Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database will run in the customer’s data center.
 
 This topic will help you plan and prepare for your on-premises deployment.
 
 > [!IMPORTANT]
->   On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure. 
+>   Dynamics 365 Finance + Operations (on-premises) is not supported on any public cloud infrastructure, including Azure. 
 
 ## Differences between cloud deployments and on-premises deployments
-The features in cloud deployments and on-premises deployments of Finance and Operations differ. These differences will affect your planning. The differences are described in the following topics:
+The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
 - [Cloud and on-premises feature comparison](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 - [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
@@ -62,10 +62,10 @@ For more information about LCS, see [Lifecycle Services](../lifecycle-services/l
 There are four types of environments that you need to plan for. This section describes the four environments and how to access and deploy them.
 
 ### Demo environment
-You can sign up for a demo environment to learn about Finance and Operations. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md).
+You can sign up for a demo environment to learn about the system. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md).
 
 ### Developer environment
-The development experience for Finance and Operations is the same for cloud and on-premises deployments. To access a developer environment, see [Access instances](../dev-tools/access-instances.md).
+The development experience is the same for cloud and on-premises deployments. To access a developer environment, see [Access instances](../dev-tools/access-instances.md).
 
 ### Sandbox environment
 Business users and functional team members validate application functionality by using a sandbox environment. This functionality includes customizations and data that was brought forward from Microsoft Dynamics AX 2012 environments. To deploy an on-premises sandbox environment, see [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
@@ -93,7 +93,7 @@ At a minimum, an on-premises production environment requires:
 An on-premises deployment uses Azure Service Fabric standalone clusters. Service Fabric is the next-generation Microsoft middleware platform for building and managing enterprise-class, high-scale applications. Service Fabric standalone clusters can be deployed on any computer that is running Windows Server.
 
 An on-premises deployment has a standalone cluster for each sandbox environment and a standalone cluster for each production environment. The following roles or node types are deployed into both types of clusters:
-- Application Object Servers (AOS) – Provides the ability to run the Finance and Operations application functionality in client, batch, and import/export scenarios.
+- Application Object Servers (AOS) – Provides the ability to run the application functionality in client, batch, and import/export scenarios.
 - Management Reporter (MR) – Provides financial reporting functionality.
 - SQL Server Reporting Services (SSRS) – Provides document reporting functionality.
 - Environment Orchestrator – Enables on-premises environment management from LCS.
@@ -104,9 +104,9 @@ The following diagram shows the node types deployed in a Service Fabric standalo
 
 ### Service Fabric resources
 To learn more about Service Fabric, see the following topics:
-- [Azure Service Fabric documentation](https://docs.microsoft.com/en-us/azure/service-fabric) - To learn more about Service Fabric.
-- [Service Fabric application upgrade](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-upgrade) - An Azure Service Fabric application is a collection of services that requires periodic upgrades.
-- [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
+- [Azure Service Fabric documentation](https://docs.microsoft.com/azure/service-fabric) - To learn more about Service Fabric.
+- [Service Fabric application upgrade](https://docs.microsoft.com/azure/service-fabric/service-fabric-application-upgrade) - An Azure Service Fabric application is a collection of services that requires periodic upgrades.
+- [Plan and prepare your Service Fabric standalone cluster deployment](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) - Additional information about Service Fabric clusters and antivirus exclusions.
 
 ## System requirements
 Review the system requirements in [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
@@ -144,7 +144,7 @@ As you understand the load that impacts your infrastructure, you also need to un
 - **Reporting and analytics** – Reporting and analytics typically include running heavy queries against the database systems. Reducing the frequency of when data intensive reports run will help reduce their impact. It’s also important to understand how the design of your queries impacts their performance.
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
 
-## Sizing your Finance and Operations environment
+## Sizing your environment
 To determine your sizing requirements, you must know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this topic focuses primarily on AOS and SQL Server.
 
 In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS. The database tier should be set up in an Always On highly-available setup.
@@ -172,7 +172,7 @@ In general, the compute tiers scale out and should be set up in an N+1 fashion, 
 You should always utilize SQL Server in either a cluster or mirroring setup. The second SQL node should have the same number of cores as the primary node.
 
 #### Active Directory Federation Services (AD FS)
-For AD FS sizing, see the [AD FS Server Capacity documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity). A [sizing spreadsheet](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
+For AD FS sizing, see the [AD FS Server Capacity documentation](https://docs.microsoft.com/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity). A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
 
 ### AOS (Online and batch)
 
@@ -199,10 +199,10 @@ For AD FS sizing, see the [AD FS Server Capacity documentation](https://docs.mic
 In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well. Only in cases where there is heavy use will you need more than two nodes, after which you can scale as needed.
 
 ### SQL Server Reporting Services
-For the current release of Dynamics 365 for Finance and Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, the node would need to be replaced.
+For the current release of Finance + Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, the node would need to be replaced.
 
 ### Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-capacity).
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-capacity).
 
 ### Virtualization and oversubscription
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – core, memory, and disk.
@@ -211,18 +211,18 @@ Mission critical services like the AOS should be hosted on Virtual hosts that ha
 
 The following authentication methods are used with on-premises deployments:
 
-- **Azure Active Directory (Azure AD)** - Azure AD is the authentication method used to log in to LCS. Azure AD is used configure the LCS Local Agent. For more information, see [What is Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis)
-- **Active Directory Domain Services (AD DS)** - The machines that host Finance and Operations (on-premises) components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services).
+- **Azure Active Directory (Azure AD)** - Azure AD is the authentication method used to log in to LCS. Azure AD is used configure the LCS Local Agent. For more information, see [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)
+- **Active Directory Domain Services (AD DS)** - The machines that host Finance + Operations components must belong to an Active Directory domain. You must configure Active Directory Domain Services (AD DS) in native mode. For more information, see [Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services).
 - **Active Directory Federation Services (AD FS)** - AD FS is the authentication method used in an on-premises deployment. AD FS provides access control and single sign on across a wide variety of applications including Office 365, cloud-based SaaS applications, and applications on the corporate network.
   - For the IT organization, it enables you to provide sign on and access control to both modern and legacy applications, on-premises and in the cloud, based on the same set of credentials and policies.
   - For the user, it provides seamless sign on using the same, familiar account credentials.
   - For the developer, it provides an easy way to authenticate users whose identities live in the organizational directory. This means you can focus your efforts on your application, not authentication or identity.
 
-    For more information, see [Active Directory Federation Services](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-federation-services).
+    For more information, see [Active Directory Federation Services](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
 
 ## Data stored in Azure data centers
 
-The on-premises deployment option for Finance and Operations stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/how-microsoft-defines-customer-data).
+The on-premises deployment option for Finance + Operations stores core customer data on-premises. Core customer data is a subset of the customer data definition provided in the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/how-microsoft-defines-customer-data).
 
 The following table outlines the services that are used to store customer data in Azure data centers located in the United States. Services include Lifecycle Services (LCS), Microsoft Office signup portal, and Azure Active Directory. These services enable initial onboarding, initiation, tracking of support incidents, and service updates and upgrades. All other customer data, referred to as core customer data, is stored on-premises.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Australia
-description: This topic provides an overview of Dynamics 365 for Finance and Operations functionality that is specific to Australia.
+title: Australia overview
+description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Australia
+# Australia overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Dynamics 365 for Finance and Operations functionality that supports Australian regulations. 
+This topic provides information about functionality that supports Australian regulations. 
 
 ## Bank file formats for Australian banks
 
@@ -47,7 +47,7 @@ The names of the Australian banks and the file formats that they accept for elec
 | National Australia Bank        | Internet BankingNAB ConnectNAB Online | NAB Direct Credit Service (AU) |
 
 ## Business activity statement (BAS)
-Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature in Finance and Operations, see [Business activity statement ](apac-aus-business-activity-statement.md).
+Australian businesses report taxation obligations to the Australian Tax Office using the Business activity statement (BAS). For more information about the business activity statement feature, see [Business activity statement](apac-aus-business-activity-statement.md).
 
 ## Low-value pool depreciation
 Australia uses a low-value pool depreciation method that allows low-cost and low-value assets to be allocated to a low-value pool if the cost or opening adjustable value is less than a specified amount. For more information, see [Low-value pool depreciation](apac-aus-low-value-pool-depreciation.md).

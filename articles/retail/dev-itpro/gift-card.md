@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for external gift cards
-description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 for Retail.
+description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
@@ -17,7 +17,7 @@ ms.technology:
  # ROBOTS: 
 audience: Developer
 ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Application update 4
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 
-Microsoft Dynamics 365 for Retail now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
+Microsoft Dynamics 365 Retail now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
 
 The out-of-box Verifone Payment connector has also been updated so that it supports the functionality for external gift cards. The initial update enables integration with GiveX.
 
@@ -81,15 +81,16 @@ The external gift card must be configured for both the Retail headquarters and t
     ![Setting the Gift card item number field](./media/05_02.png)
 
 12. Select **Save**.
-13. Open the **Button grid** page.
-14. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
-15. On the Action Pane, select **Designer** to download the button designer application.
-16. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
+13. Select **Card setup** and click **New** to map the gift card created in step 4 to the newly created external gift card payment method.  
+14. Open the **Button grid** page.
+15. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
+16. On the Action Pane, select **Designer** to download the button designer application.
+17. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
 
     ![New button](./media/07.png)
 
-17. Right-click the new button, and then select **Button properties**.
-18. Set the **Action**, **Payment type**, and **Text on button** properties according to the following matrix.
+18. Right-click the new button, and then select **Button properties**.
+19. Set the **Action**, **Payment type**, and **Text on button** properties according to the following matrix.
 
     | Action            | Payment type       | Text on button        |
     |-------------------|--------------------|-----------------------|
@@ -102,12 +103,12 @@ The external gift card must be configured for both the Retail headquarters and t
 
     ![Completed button layout](./media/10.png)
 
-19. Close the designer.
-20. Search for **Distribution Schedule**.
-21. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
-22. On the Action Pane, select **Run now**.
-23. Check the status of the job by searching for **Download sessions**.
-24. Wait until **Applied** appears next to all the jobs, and then close the browser.
+20. Close the designer.
+21. Search for **Distribution Schedule**.
+22. In the navigation bar on the left side of the page, search for **1090**, **1115**, and **1070**.
+23. On the Action Pane, select **Run now**.
+24. Check the status of the job by searching for **Download sessions**.
+25. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
 ## Reset IIS if you're using Retail Store Scale Unit
 

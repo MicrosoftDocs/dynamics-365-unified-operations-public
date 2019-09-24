@@ -2,7 +2,7 @@
 # required metadata
 
 title: Register fixed assets acquisitions (Russia)
-description: This topic walks you through registering fixed assets acquisitions for Microsoft Dynamics 365 for Finance and Operations in Russia.
+description: This topic walks you through registering fixed assets acquisitions for Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/12/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom

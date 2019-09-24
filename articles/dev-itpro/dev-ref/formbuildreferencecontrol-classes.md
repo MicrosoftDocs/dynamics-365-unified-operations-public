@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63613
 ms.assetid: 0cc4deb6-201c-403e-a4bf-961e3eda1adf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -123,7 +123,7 @@ container
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                           |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                           |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                                 |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                           |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                           |
 | public FieldId referenceField(\[FieldId value\])                                                            |                                                                                                                                           |
@@ -354,7 +354,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -952,7 +952,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1382,7 +1382,7 @@ overrideObject
 | public int lookupButton(\[int value\])                                                                      |                                                                                                                                           |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                           |
 | public boolean multiLine(\[boolean value\])                                                                 |                                                                                                                                           |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                           |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                           |
 | public boolean replaceOnLookup(\[boolean value\])                                                           |                                                                                                                                           |
@@ -1633,7 +1633,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -2371,7 +2371,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2779,7 +2779,7 @@ overrideObject
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                           |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                           |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                           |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                           |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                           |
 | public FieldId referenceField(\[FieldId value\])                                                            |                                                                                                                                           |
@@ -3459,7 +3459,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3835,7 +3835,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int left(int value, \[int mode\])                                                                    |                                                                                                                                         |
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
 | public boolean skip(\[boolean value\])                                                                      | Sets or returns a value that indicates whether the control is skipped when the user presses the TAB key to move to the control.         |
@@ -4054,7 +4054,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -4502,7 +4502,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -4890,7 +4890,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public boolean lookupOnly(\[boolean value\])                                                                |                                                                                                                                         |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                         |
 | public boolean multiLine(\[boolean value\])                                                                 |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public boolean passwordStyle(\[boolean value\])                                                             |                                                                                                                                         |
 | public FieldId presenceDataField(\[FieldId value\])                                                         |                                                                                                                                         |
@@ -5165,7 +5165,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -5913,7 +5913,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -6377,7 +6377,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int rightMargin(\[int value\], \[AutoMode mode\])                                                    |                                                                                                                                         |
 | public AutoMode rightMarginMode(\[AutoMode mode\])                                                          |                                                                                                                                         |
@@ -7064,7 +7064,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -7596,7 +7596,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int rightMargin(\[int value\])                                                                       |                                                                                                                                         |
 | public int row(\[int value\])                                                                               |                                                                                                                                         |
@@ -8055,7 +8055,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -8457,7 +8457,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public int moveControl(int controlId, \[int insertAfterControlId\])                                         | Moves a specified control to the control.                                                                                               |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int panelStyle(\[int value\])                                                                        |                                                                                                                                         |
 | public str parentPage(\[str value\])                                                                        |                                                                                                                                         |
@@ -9172,7 +9172,7 @@ In general, if the specified control can be contained in the control and can be 
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -9680,7 +9680,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int limitTextValue(\[int value\])                                                                    |                                                                                                                                         |
 | public int lookupButton(\[int value\])                                                                      |                                                                                                                                         |
 | public boolean mandatory(\[boolean value\])                                                                 |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                         |
 | public boolean replaceOnLookup(\[boolean value\])                                                           |                                                                                                                                         |
@@ -9946,7 +9946,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -10674,7 +10674,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -11137,7 +11137,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public boolean linesAtRoot(\[boolean value\])                                                               |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public boolean rowSelect(\[boolean value\])                                                                 |                                                                                                                                         |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                   |                                                                                                                                         |
@@ -11384,7 +11384,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to values that are based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method checkBox
 
@@ -11770,7 +11770,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -12157,7 +12157,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int leftMode(\[int value\])                                                                          |                                                                                                                                         |
 | public int leftValue(\[int value\])                                                                         |                                                                                                                                         |
 | public str location(\[str value\])                                                                          |                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                         |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                         |
 | public int promptrect(\[int value\])                                                                        |                                                                                                                                         |
@@ -12858,7 +12858,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -13190,7 +13190,7 @@ overrideObject
 | public str disabledImage(\[str value\])                                                                     | Gets or sets the disabled image of the button.                                                                                                                          |
 | public int disabledImageLocation(\[int value\])                                                             |                                                                                                                                                                         |
 | public int disabledResource(\[int value\])                                                                  | Gets or sets the resource ID of the image to use as the disabled button image.                                                                                          |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -13225,7 +13225,7 @@ overrideObject
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int multiSelect(\[int value\])                                                                       |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.                           |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.                           |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public int needsRecord(\[int value\])                                                                       |                                                                                                                                                                         |
 | public str normalImage(\[str value\])                                                                       |                                                                                                                                                                         |
@@ -13616,7 +13616,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -13766,7 +13766,7 @@ The resource ID of the image to use as the disabled button image. Both icon and 
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -13777,7 +13777,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both
 
 ### Method dragDrop
 
@@ -14423,7 +14423,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -15355,7 +15355,7 @@ The string value to use to filter data; optional.
 | public FieldId countryRegionContextField(\[FieldId value\])                                                         |                                                                                                                                                                         |
 | public str dataRelationPath(\[str value\])                                                                          | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
 | public int dataSource(\[AnyType value\])                                                                            | Gets or sets a data source to be used by the control or the form.                                                                                                       |
-| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                             | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                                  | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                                   | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                                       | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -15393,7 +15393,7 @@ The string value to use to filter data; optional.
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                         | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                           | Is called when the user releases the mouse button over the control area.                                                                                                |
 | public int moveControl(int controlId, \[int insertAfterId\])                                                        |                                                                                                                                                                         |
-| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                 |
+| public str name(\[str value\])                                                                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                          |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                             |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                                  | Retrieves the parent control for the control.                                                                                                                           |
@@ -15902,7 +15902,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -16115,7 +16115,7 @@ The identifier of the data source to be used.
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -16126,7 +16126,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -16807,7 +16807,7 @@ insertAfterId
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -17711,7 +17711,7 @@ Shows the shortcut menu for the control.
 | public List configurationKeyEx()                                                                            | Retrieves a list that contains the IDs of configuration keys that are in effect for the control.                                                                        |
 | public str countryRegionCodes(\[str value\])                                                                | Gets or sets the comma-separated list of country/region codes for the control.                                                                                          |
 | public str dataRelationPath(\[str value\])                                                                  | Gets or sets the period-delimited list of relations that links the field binding of the DataField object to a relative table.                                           |
-| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both. |
+| public int displayTarget(\[int value\])                                                                     | Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both. |
 | public int dragDrop(\[int value\])                                                                          | Determines whether to enable or disable drag-and-drop operations for the control.                                                                                       |
 | public FormDrag dragOver(FormControl dragSource, FormDrag dragMode, int x, int y)                           | Raises the dragOver event to indicate that a mouse drag operation is over the current control.                                                                          |
 | public FormDrag dragOverEx(Array dragSource, FormDrag dragMode, int x, int y)                               | Raises the dragOverEx event to indicate that a mouse drag operation is over the current control.                                                                        |
@@ -17738,7 +17738,7 @@ Shows the shortcut menu for the control.
 | public int mouseDown(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user clicks the mouse button over the control.                                                                                                       |
 | public int mouseMove(int x, int y, int button, boolean Ctrl, boolean Shift)                                 | Is called when the user moves the mouse pointer over the control.                                                                                                       |
 | public int mouseUp(int x, int y, int button, boolean Ctrl, boolean Shift)                                   | Is called when the user releases the mouse button over the control area.                                                                                                |
-| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.                                 |
+| public str name(\[str value\])                                                                              | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.                                 |
 | public int neededPermission(\[int value\])                                                                  |                                                                                                                                                                         |
 | public container SysObsoleteAttribute()                                                                     |                                                                                                                                                                         |
 | public FormControl parentControl()                                                                          | Retrieves the parent control for the control.                                                                                                                           |
@@ -17972,7 +17972,7 @@ This method is used by the reference group control to track exactly which relati
 
 ### Method displayTarget
 
-Gets or sets the value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal for Finance and Operations, or in both.
+Gets or sets the value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
     public int displayTarget([int value])
 
@@ -17983,7 +17983,7 @@ The integer value that indicates where the control is displayed; optional.
 
 #### Return Value
 
-The value that indicates whether the control is displayed in the Finance and Operations client, in Enterprise Portal, or in both.
+The value that indicates whether the control is displayed in the client, in Enterprise Portal, or in both.
 
 ### Method dragDrop
 
@@ -18538,7 +18538,7 @@ Typically, when this method is overridden, the return value from a call to super
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

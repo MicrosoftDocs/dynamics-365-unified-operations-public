@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize the Open in Microsoft Office menu
-description: Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
+description: Most pages include an Open in Microsoft Office menu. This topic provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 author: ChrisGarty
 manager: AnnBe
 ms.date: 06/20/2017
@@ -43,7 +43,7 @@ The **Open in Microsoft Office** menu button (**Open in Office** menu) is a syst
 
 | Menu item       | Description                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Export to Excel | The data is exported to an Excel workbook. The workbook contains no references back to Microsoft Dynamics 365 for Finance and Operations, and the data can't be refreshed.                                                                                               |
+| Export to Excel | The data is exported to an Excel workbook. The workbook contains no references back to Finance and Operations, and the data can't be refreshed.                                                                                               |
 | Export to Word  | The data is exported to a Word document. The document contains no references back to Finance and Operations, and the data can't be refreshed.                                                                                                           |
 | Open in Excel   | A workbook is created that contains the Microsoft Dynamics Office add-in. The workbook contains a reference back to Finance and Operations, and the data can be refreshed, updated, and published from the Data Connector that is hosted in the add-in. |
 

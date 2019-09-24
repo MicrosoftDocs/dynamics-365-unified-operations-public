@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  Vendor
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -64,4 +64,4 @@ After you have at least one proposed change, two additional tabs appear on the a
 
     The status on the page is changed to **Changes pending approval**.
 
-The workflow follows the standard workflow process in Microsoft Dynamics 365 for Finance and Operations. The approver is directed to the **Vendor** page, where he or she can review the changes on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.
+The workflow follows the standard workflow process. The approver is directed to the **Vendor** page, where he or she can review the changes on the **Proposed changes** page and then select **Workflow \> Approve** to approve the workflow. After all approvals are completed, the fields are updated with the values that you proposed.

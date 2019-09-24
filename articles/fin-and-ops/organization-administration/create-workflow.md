@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create workflows
+title: Create workflows overview
 description: This topic explains how to create a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# Create workflows
+# Create workflows overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ This topic explains how to create a workflow.
 
 ## Open the workflow editor
 
-The Microsoft Dynamics 365 for Finance and Operations module that you're working in determines the types of workflow that you can create. Follow these steps to select the type of workflow to create and open the workflow editor.
+The module that you're working in determines the types of workflow that you can create. Follow these steps to select the type of workflow to create and open the workflow editor.
 
 1. Open the module that you want to create a new workflow for. For example, to create a workflow for purchase requisitions, click **Procurement and sourcing**.
 2. Click **Setup** &gt; **\[Module name\] workflows**.

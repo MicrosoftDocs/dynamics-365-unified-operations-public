@@ -3,7 +3,7 @@
 
 title: Distribute and schedule questionnaires
 description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -89,7 +89,7 @@ You can specify planning types for a questionnaire schedule on the **Questionnai
 
 You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire. 
 
-Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. 
+Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 Finance. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. 
 
 For example, if you select the Courses table, you can decide which specific course the questionnaire will be for. When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.
 

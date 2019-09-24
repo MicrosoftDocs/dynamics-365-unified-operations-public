@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workflow system
-description: This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+title: Workflow system overview
+description: This topic describes the workflow system.
 author: sericks007
 manager: AnnBe
-ms.date: 08/17/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Workflow system
+# Workflow system overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the workflow system in Microsoft Dynamics 365 for Finance and Operations.
+This topic describes the workflow system.
 
 ## What is workflow?
 
@@ -42,7 +42,7 @@ The term *workflow* can be defined in two ways: as a system and as a business pr
 
 ### Workflow is a system
 
-Workflow is a system that is installed with Finance and Operations and runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
+Workflow is a system that runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
 
 ### Workflow is a business process
 
@@ -77,3 +77,4 @@ There are several benefits of using the workflow system in your organization:
 + [Configure a parallel activity in a workflow](configure-parallel-activity-workflow.md)
 + [Configure a parallel branch in a workflow](configure-parallel-branch-workflow.md)
 + [Configure a line-item workflow](configure-line-item-workflow.md)
++ [Workflow FAQ](workflow-FAQ.md)

@@ -3,7 +3,7 @@
 
 title: Formalize business processes
 description: This topic explains how you can use the Business process feature to create a business process template for processes that must be completed in your organization.
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGeneric
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ShielaS
+ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
@@ -47,7 +47,7 @@ For each business process, you can define a process owner. The process owner has
 A process owner can't create new business processes or business process templates, or delete active business processes or business process templates.
 
 ## Tasks
-A business process often consists of multiple tasks. Some tasks, such as a review of internal course offerings, can be completed in Microsoft Dynamics 365 for Talent[?]. In this case, an option is selected in the **Task link** field. Other tasks might involve reviewing or completing pages on a website. In this case, **URL** is selected in the **Task link** field, and then the web address can be entered. You can enter URLs for both external and internal sites. You can also create tasks for activities that you complete manually, such as a review of the accessibility of all structures. In this case, a task link isn't required. This flexibility lets you track multiple kinds of tasks in a comprehensive process.
+A business process often consists of multiple tasks. Some tasks, such as a review of internal course offerings, can be completed in Microsoft Dynamics 365 Talent. In this case, an option is selected in the **Task link** field. Other tasks might involve reviewing or completing pages on a website. In this case, **URL** is selected in the **Task link** field, and then the web address can be entered. You can enter URLs for both external and internal sites. You can also create tasks for activities that you complete manually, such as a review of the accessibility of all structures. In this case, a task link isn't required. This flexibility lets you track multiple kinds of tasks in a comprehensive process.
 
 Tasks can be assigned either to a specific worker or to a position. For example, the Compensation and benefits manager will always be the person who does a review of insurance premiums. Therefore, when you create this task, select **Position** in the **Assignment type** field, and then select **Comp and benefit manager** in the **Position** list. When the business process is started, the task is assigned to the worker who is in the **Comp and benefits manager** position. To assign a task to a specific worker, select **Worker** in the **Assignment type** field, and then select the appropriate person.
 

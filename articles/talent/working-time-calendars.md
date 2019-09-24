@@ -2,8 +2,8 @@
 # required metadata
 
 title: Working time calendars
-description: This topic describes working time calendars in Dynamics 365 for Talent -- Core HR as well as how to set up calendars.
-author: jcart1106
+description: This topic describes working time calendars in Dynamics 365 Talent - Core HR as well as how to set up calendars.
+author: andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 

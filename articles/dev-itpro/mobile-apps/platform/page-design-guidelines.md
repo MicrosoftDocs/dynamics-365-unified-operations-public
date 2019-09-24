@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
@@ -38,7 +38,7 @@ Before you begin to use the designer to build pages and actions, it’s importan
 
 ### How do I create a list view for an entity in the mobile app?
 
-1.  Identify or create a form in Finance and Operations that contains a grid for the entity.
+1.  Identify or create a form in the web client that contains a grid for the entity.
 2.  Make sure that the grid is bound to the table that represents the entity.
 3.  Make sure that the form has a menu item that is root-navigable.
 4.  Make sure that the form can be opened directly via a URL that includes the menu item parameter.
@@ -53,7 +53,7 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ### How do I create a details view for an entity in the mobile app?
 
-1.  Identify or create a form in Finance and Operations that contains the details view for this entity.
+1.  Identify or create a form in the web client that contains the details view for this entity.
 2.  Make sure that the Master Root Data Source on the form is bound to the table that represents the entity.
 3.  Make sure that the form has a menu item that is root-navigable.
 4.  Make sure that the form can be opened directly via a URL that includes the menu item parameter.
@@ -87,14 +87,14 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ###### How do I make the list show up in-line in the details view?
 
-1.  Identify or create a form in Finance and Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
+1.  Identify or create a form in the web client that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
 2.  Make sure that the form contains a grid that is bound to the table that represents the related entity.
 3.  Make sure that the table for the related entity is *active joined* to the table for the entity that contains the reference.
 4.  Create a details view page that contains the desired fields for the entity, and that also contains a list that has the desired fields from the related entity.
 
 ###### How do I make the list accessible from a link in the details view (instead of in-line)?
 
-1.  Identify or create a form in Finance and Operations that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
+1.  Identify or create a form in the web client that contains the details view for the entity, and make sure that the form adheres to the guidelines in the "How do I create a details view for an entity in the mobile app" section.
 2.  Make sure that the form contains a grid that is bound to the table that represents the related entity.
 3.  Make sure that the table for the related entity is *active joined* to the table for the entity that contains the reference.
 4.  Use the form to create a details view page that contains the desired fields for the entity.

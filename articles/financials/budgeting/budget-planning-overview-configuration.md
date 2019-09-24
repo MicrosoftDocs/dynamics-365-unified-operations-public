@@ -17,7 +17,7 @@ ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
@@ -41,7 +41,7 @@ Overview of budget planning
 
 You perform budget planning when you're preparing the budgets that an organization will implement. An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. 
 
-When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Finance and Operations, it will be easier for you to implement budget planning in your organization.
+When you understand the concepts and terminology that are used in Microsoft Dynamics 365 Finance, it will be easier for you to implement budget planning in your organization.
 
 ### Key terms
 
@@ -62,7 +62,7 @@ You can use budget planning to perform the following tasks:
 -   Automatically route the budget plans, together with worksheets, justification documents, and other attachments, for review and approval.
 -   Consolidate multiple budget plans from a lower level of the organization into a single parent budget plan at a higher level of the organization. You can also develop a single budget plan at a higher level of the organization and allocate the budget to lower levels of the organization.
 
-Budget planning is integrated with other Microsoft Dynamics 365 for Finance and Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
+Budget planning is integrated with other modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
 
 ## Configuring budget planning
 The **Budget planning configuration** page contains most of the settings that you require in order to set up budget planning. The following sections describe some key factors that you should consider as you configure budget planning. After you've completed the configuration, you set up budget planning processes.
@@ -97,7 +97,7 @@ You create the budget planning workflow in the **Workflow stages** section of th
 
 A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a Budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow would be created for the sales departments, and another would be created for the headquarters. A Budgeting workflow moves the budget plans through the stages. 
 
-You create the Budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows in Finance and Operations. The following illustration shows an example of a Headquarters workflow. 
+You create the Budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows. The following illustration shows an example of a Headquarters workflow. 
 
 [![Budgeting workflow for budget planning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
@@ -159,6 +159,8 @@ For the example schema, you might want to create columns for the PY Sales, Contr
 [![Columns](./media/columns.png)](./media/columns.png) 
 
 You also designate whether each layout element (column) is editable, and whether it's available in any worksheet template that is created for that layout. For the example schema, in the layout that is used for the Estimate stage, the Forecast columns are editable, whereas the PY Sales and Contracts columns are read-only.
+
+[!Note] By default you will be limited to 36 columns unkless you extend budgeting planning with the steps in the [Extend the budget planning layout](./extending-budget-planning-layout.md).
 
 ### Templates
 

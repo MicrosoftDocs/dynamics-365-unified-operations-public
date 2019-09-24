@@ -70,7 +70,7 @@ Connect the LCS project to your Azure subscription. This will enable LCS to depl
 
 4. Click **Next**.
 5. Click **Download** to download a management certificate. This management certificate enables LCS to communicate with Azure on your behalf. By default, the management certificate is saved to the **Downloads** folder on your computer and is named **LifecycleServicesDeployment.cer.**
-6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/en-us/azure/azure-api-management-certs).
+6. Upload the management certificate to Azure. To do so, see the instructions in [Upload an Azure Management API Management Certificate](https://docs.microsoft.com/azure/azure-api-management-certs).
 
 7. Go back to the browser that displays the **Microsoft Azure setup** panel in LCS. Click **Next**.
 8. Select a region. The AX 2012 R3 environment will be deployed to a datacenter in this region.
@@ -168,7 +168,7 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
 11. Click **Done**. The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
     -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 14. Click **Next**.
@@ -211,7 +211,7 @@ From the **Cloud-hosted environments** page, select your Retail mobility environ
 
 ### Install Modern POS on external devices
 
-Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/EN-US/library/dn741434.aspx).
+Dynamics AX includes Modern POS, a point-of-sale app for PCs, tablets, and phones. For instructions about how to install it, see [Install Retail Modern POS](https://technet.microsoft.com/library/dn741434.aspx).
 
 ## 6. Learn more about the service accounts for this environment
 The following sections provide information about the service accounts that were created when you deployed the environment.

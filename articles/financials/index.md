@@ -2,8 +2,8 @@
 # required metadata
 
 title: Financial management home page
-description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
-author: ShylaThompson
+description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
+author: roschlom
 manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 206434
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
+This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 
 Select a feature area to learn more about it.
 
@@ -60,11 +60,9 @@ Select a feature area to learn more about it.
 
 ### Blogs
 
-You can find opinions, news, and other information about Accounts payable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-There are many posts about financial management on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for an older version of the product, the same concepts still apply, and the procedures are also similar in the current version.
-
-The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+- [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
+- [Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials) 
+- [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
 
 ### Task guides
 Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.

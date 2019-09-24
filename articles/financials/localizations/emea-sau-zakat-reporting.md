@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265024
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
 
-Saudi companies of all types and companies owned by nationals of the Gulf Cooperation Council (GCC) that conduct business in Saudi Arabia must pay Zakat to the Department of Zakat and Income Tax (DZIT) at the end of the fiscal year. Companies must also generate and submit a set of 14 Zakat reports along with their balance sheet and profit-and-loss statement to DZIT within a month of year-end. Microsoft Dynamics 365 for Finance and Operations allows you to generate the required Zakat reports:
+Saudi companies of all types and companies owned by nationals of the Gulf Cooperation Council (GCC) that conduct business in Saudi Arabia must pay Zakat to the Department of Zakat and Income Tax (DZIT) at the end of the fiscal year. Companies must also generate and submit a set of 14 Zakat reports along with their balance sheet and profit-and-loss statement to DZIT within a month of year-end. You can generate these required Zakat reports:
 -   Zakat main report
 -   Revenue for main activity report
 -   Revenue from other activity report

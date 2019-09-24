@@ -2,10 +2,10 @@
 # required metadata
 
 title: Define expense policies
-description: You can define expense policies that your workers must follow when entering and submitting expense reports and travel requisitions in Microsoft Dynamics 365 for Finance and Operations. 
-author: saraschi2
+description: You can define expense policies that your workers must follow when entering and submitting expense reports and travel requisitions in Microsoft Dynamics 365 Finance. 
+author: ryansandness
 manager: AnnBe
-ms.date: 02/23/2018
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,18 +16,18 @@ ms.technology:
 ms.search.form:  SysPolicyListPage, TrvPolicyRule
 audience: Application User
 # ms.devlang: 
-ms.reviewer:  shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: ryansand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Expense policies
+# Define expense policies
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,9 +46,13 @@ You can define three types of policies:
 
 - Error – Requires the worker to revise the expense to comply with the policy before submitting the expense report or travel requisition. 		
  
-  - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
- 
-  You can also set up a date range for which expense policies are in effect. For example, airline fares for flights between Denmark      
-  and New York City can be expensive during the peak holiday travel season. You can define a flight expense rule that restricts the      
-  cost of flights to New York City to a limit of DKK 5000, and you can specify that this rule be in effect between March 15 and      
-  September 15.
+ - Justification – Requires the worker or a manager to enter a justification for exceeding the policy amount before submitting the expense report or travel requisition.        
+
+## Policy tips
+Here are a few suggestions that can assist you whe creating new policies for expense management. 
+* Policies are date effective and won't take effect if the policy is created with a date after the date that the expense occurred. For example, if you are creating a new policy today to enforce a maximum meal expense of $50, then any existing expenses entered as of yesterday won't be checked against this policy.
+* When creating a policy for an expense category that can be itemized, consider adding a condition for expense line type. Some policies such as requiring a receipt may not make sense for itemized lines and should only be applied to the header line or a non-itemized line. 
+
+## When to evaluate policies
+
+In expense management parameters, there is an option to either evaluate expense management policies when a line is saved or when an expense report is submitted. If you choose to evaluate when a line is saved this ensures that users have earlier visibility into what they need to do to complete their expense report all at once. Otherwise, you can delay policy evaluation and save time if you have validation occur at the end, during submission to workflow.

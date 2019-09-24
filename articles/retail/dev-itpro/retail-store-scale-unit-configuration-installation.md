@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 12/17/2018
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -16,7 +16,7 @@ ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, Retai
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 ms.custom: 219744
@@ -33,7 +33,10 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud point of sale (POS) components. A Microsoft Dynamics 365 for Retail environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud point of sale (POS) components. A Microsoft Dynamics 365 Retail environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+
+> [!IMPORTANT]
+> It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (Formerly called Secrets) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
 ## Before you begin
 
@@ -90,7 +93,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 12. In the **Name** field, enter a unique name for the channel profile.
 
     > [!IMPORTANT]
-    > For on-premises deployments, use the value **Default** in this field.
+    > For on-premises deployments, any value can be entered in this field, however, the value **Default** is common.
 
 13. On the Action Pane, select **Save**.
 14. On the **Profile properties** FastTab for the new channel profile, select **Add**.
@@ -123,6 +126,9 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
     > [!NOTE]
     > After the first Retail Store Scale Unit is created, it requires less data generation to perform a full data sync from the Channel database instead of the Channel data group.
+    
+    > [!IMPORTANT]
+    > For on-premises deployments, there is no **Default** channel data group.  Create a new data group (and associate it to the channel database and distribution schedule jobs).
 
 ### Download the Retail Store Scale Unit installer
 
@@ -138,7 +144,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
     > - StoreSystemAosUrl should have the value used to access headquarters (AX).  It is critical to keep a trailing slash at the end of this URL (for example, **https://myContosoURL.com/namespaces/AXSF/**).
     > - AADTokenIssuerPrefix should have the value **https://NOTUSED.microsoft.com**
     > - TransactionServiceAzureAuthority should have the value **https://<ADFS FQDN including .com>/adfs**.
-    > - TransactionServiceAzureResource should have the same value as the **StoreSystemAosUrl** listed in the same configuration file.
+    > - TransactionServiceAzureResource should have the base URL value of the **StoreSystemAosUrl** edited as shown above. For instance, based on the above example **https://myContosoURL.com** would be used as the value, removing the **/namespaces/AXSF/** portion of the URL.
 
 5. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 
@@ -224,6 +230,9 @@ The last steps require validation and verification that the Azure application ID
 
 2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Retail.
 
+    > [!IMPORTANT] 
+    > In an on-premises environment, this step is not required to be completed.
+
     1. In Retail headquarters, go to **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2. Select **Identity providers**.
     3. On the **Identity providers** FastTab, select the provider that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are set, based on your selection.
@@ -306,7 +315,7 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
 15. Start Microsoft Windows Firewall with Advanced Security.
 16. In Windows Firewall, create an inbound rule to open TCP port 1433.
 
-For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
+For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/library/ms175043.aspx).
 
 #### Installation on the second computer
 
@@ -325,7 +334,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 4. Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. 
 
-    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
+    For more information about Azure Web Apps, how to create them, and how to generate a new key (secret), see [Use portal to create an Azure Active Directory application and service principal that can access resources](https://azure.microsoft.com/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI are not important.
 
 5. When setup is successful, don't exit the installer. 
 
@@ -415,5 +424,5 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 
 1. Press the Windows logo key, and then enter **Control Panel** in the search box. In the search results, select **Control Panel**.
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**.
-3. In the **Programs and Features** window, select **Microsoft Dynamics 365 for Retail Store system**, and then, above the list of programs, select **Uninstall**.
+3. In the **Programs and Features** window, select **Microsoft Dynamics 365 Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4. Wait for the uninstaller to finish removing the program.

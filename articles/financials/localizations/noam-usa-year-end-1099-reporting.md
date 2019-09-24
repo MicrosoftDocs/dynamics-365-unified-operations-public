@@ -17,7 +17,7 @@ ms.search.form: Tax1099Fields, Tax1099Summary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6861
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
 
-When you set up a vendor to be a 1099 vendor, the amounts are tracked within Microsoft Dynamics 365 for Finance and Operations throughout the year. On invoice lines, you use the 1099 box and 1099 amount fields to track 1099 amounts. As you settle payments against these invoices that contain 1099 information, the 1099 settled values are tracked.
+When you set up a vendor to be a 1099 vendor, the amounts are tracked within Dynamics 365 Finance throughout the year. On invoice lines, you use the 1099 box and 1099 amount fields to track 1099 amounts. As you settle payments against these invoices that contain 1099 information, the 1099 settled values are tracked.
 After you settle payments against an invoice, you can modify any 1099 amount using the Tax 1099 transactions page. Some invoice lines for a vendor might need 1099 tracking whereas others do not. You can clear the 1099 settled option for any invoice line that needs no 1099 tracking. You can also create a new 1099 transaction that is not associated with an invoice by selecting the Manual 1099 transactions option on the Vendor settlement for 1099s page. If you set up a 1099 vendor during the calendar year after you have already processed transactions for that vendor, you can update the previous transactions to be 1099 transactions. On the Vendors page, select the action Update 1099 to update transactions. This calculates 1099 amounts for paid invoices that are in the specified date range, according to the settings on the Tax 1099 tab on the Vendors page.
 > [!NOTE]
 > You can run the process to update 1099 amounts for only one vendor at a time. 

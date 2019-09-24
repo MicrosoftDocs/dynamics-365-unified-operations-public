@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scope of the Brazilian localization
-description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil that have been implemented as part of Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 R3, and Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
 manager: AnnBe
 ms.date: 08/02/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has implemented as part of the Microsoft Dynamics software that it made generally commercially available in Brazil. It's intended for channel partners and users of Microsoft Dynamics AX 2012 R2, Microsoft Dynamics AX 2012 R3, and Microsoft Dynamics 365 for Finance and Operations. Channel partners or users who use this information when they implement other versions of Microsoft Dynamics do so at their own risk.
+This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. 
 
-In general, Microsoft invests significant resources on extending the business process functionality of Microsoft Dynamics applications, by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
+In general, Microsoft invests significant resources on extending the business process functionality of Finance and Operations applications, by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
 
-Microsoft Dynamics helps organizations run their business operations while managing their obligations to comply with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Brazil.
+The software helps organizations run their business operations while complying with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Brazil.
 
 However, Microsoft Dynamics doesn't address all laws, regulations, or commercial requirements in Brazil, because laws and regulations vary in the way that they affect organizations. Additional details are available in the [Localization Availability Guide](https://aka.ms/ax-availabilityguide).
 
@@ -471,7 +471,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td></td>
 <td>The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
-    <blockquote><strong>NOTE</strong><br>The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.</blockquote>
+<p><strong>Note:</strong> The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>
@@ -810,7 +810,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <td></td>
 <td>The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-<blockquote><strong>NOTE</strong><br>Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/en-hk/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</blockquote>
+<p><strong>Note:</strong> Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</p>
 </td>
 <td>Yes</td>
 <td>Yes</td>

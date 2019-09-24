@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21551
@@ -41,7 +41,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides a walk-through for application developers who want to help secure analytical workspaces and reports that are delivered by using Microsoft Power BI Embedded. It describes the recommended strategies for securing access to both the reports and the data set, based on viewer access rights. By using the techniques that are described in this topic, you can hide reports from users and filter reports to show the data set that is appropriate for a specific user, based on the active company context.
 
 ## Prerequisites
-+ Access to a developer environment that runs Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 with Platform update 8 or later
++ Access to a developer environment that runs Platform update 8 or later
 + An analytical report (.pbix file) that was created by using Microsoft Power BI Desktop, and that has a data model that is sourced from the Entity store database
 
 ## Overview
@@ -58,12 +58,12 @@ Create scenario-specific .pbix files to deliver analytical views:
     > [!NOTE]
     > These analytical reports are often used to deliver reports that contain medium-business-impact and high-business-impact data.
 
-For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
+For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
 
 ## Help secure analytical views that are provided through embedded Power BI reports
 Power BI report filters and the **Filter** pane serve as a mechanism for passing session context into the report that is embedded on the **Analytics** tab. The capability to turn the visibility of the **Filter** pane on and off isn't a security feature. Power BI report filters and the capability to hide and show the **Filter** pane are user experience (UX) decisions that the application designer makes.
 
-Row-level security that is defined in Finance and Operations isn't inherited by Power BI reports. Instead, application developers can help secure the workspace or the report.
+Row-level security that is defined isn't inherited by Power BI reports. Instead, application developers can help secure the workspace or the report.
 
 ### Help secure analytical workspaces on the Analytics tab
 Analytical workspaces are embedded Power BI reports that are shown in a form control. Unless you complete the following procedure, anyone who has access to the workspace can see the **Analytics** tab and access the Power BI reports.
@@ -83,7 +83,7 @@ Analytical workspaces are embedded Power BI reports that are shown in a form con
 The preceding logic will prevent the Power BI Viewer control from being initialized. Therefore, an empty tab will appear on the page. By default, the framework automatically hides empty tabs. Therefore, the **Analytics** tab is hidden and can't be access if the user doesn't have access to the menu item that is associated with the analytical workspace.
 
 ### Help secure analytical reports
-Embedded Power BI reports in the application are secured by using menu items. Users who try to access a Power BI report directly, by using a menu item in Finance and Operations, will receive an error. Follow these steps to help secure the analytical reports.
+Embedded Power BI reports in the application are secured by using menu items. Users who try to access a Power BI report directly, by using a menu item in application, will receive an error. Follow these steps to help secure the analytical reports.
 
 1. Add a menu item for the report or the appropriate tab. By default, the first tab of the report will be shown if no other tab is selected.
 2. Link the menu item to the **PowerBIEmbedded\_App** configuration key.

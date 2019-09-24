@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales and marketing
+title: Sales and marketing overview
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92303
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Sales and marketing
+# Sales and marketing overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -47,7 +47,7 @@ In sales and marketing, the initial interactions that you have with potential cu
 
 ### Campaigns
 
-A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Microsoft Dynamics 365 for Finance and Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
+A campaign targets the contacts for prospects, leads, opportunities, and customers that have been selected to participate in the campaign. In Finance and Operations, you can create several types of campaigns, such as telemarketing, mailing, and email campaigns, to maximize your customer potential. As your campaign progresses and you receive positive responses, you can begin the sales process with those recipients who have responded positively to the campaign.
 
 ## Sales
 You use the sales functionality to create quotations, up-sell and cross-sell to new and existing customers, create sales orders, and create sales invoices for customers. The following process flow shows the business process for sales. [![Business process for sales](./media/sales01.jpg)](./media/sales01.jpg)

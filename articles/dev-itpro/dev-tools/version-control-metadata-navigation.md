@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23401
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This tutorial will walk you through configuring Azure DevOpss (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
+This tutorial will walk you through configuring Azure DevOps (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
 ## Configure your Azure DevOps account and project
 
@@ -42,9 +42,13 @@ In this section, you'll create a new project in Azure DevOps. This project will 
 
 ### Sign up to Azure DevOps, create an account, and create a new project
 
-Navigate to <http://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this topic. 
+Navigate to <https://www.visualstudio.com/> to sign up for Azure DevOps. Click **Sign up**. If you already have an account in Azure DevOps, go to the Create a Azure DevOps project section later in this topic. 
 
-1.  Sign in with your Microsoft account. **Note**: You can also use an organizational account (Microsoft Office 365 domain).
+1.  Sign in with your Microsoft account.
+
+    > [!NOTE]
+    > You can also use an organizational account (Microsoft Office 365 domain).
+
 2.  Create a Azure DevOps account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
 
     [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
@@ -58,7 +62,7 @@ Navigate to <http://www.visualstudio.com/> to sign up for Azure DevOps. Click **
 
 If you already have a Azure DevOps account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
-1. Go to http://.visualstudio.com.
+1. Go to <https://www.visualstudio.com/>.
 2. Under **Recent projects & teams**, click **New** to create a new project. 
 
    [![ClickNew\_UsingDevoTools](./media/clicknew_usingdevotools.png)](./media/clicknew_usingdevotools.png)
@@ -96,9 +100,12 @@ Your model store root folder contains source files of all packages and models th
 
 1. In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
 2. Open **Source Control Explorer** from **Team Explorer**.
-3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically c:\\packages), an example is shown in the image below. **Note**: Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
+3. Map the **Metadata** folder of your team project to the root folder of the model store on your local drive (Typically c:\\packages), an example is shown in the image below.
 
-   [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
+    > [!NOTE]
+    > Your model store may be located under I:\\AosService\\PackagesLocalDirectory or another drive, depending on your machine configuration.
+
+    [![VSOfolders2](./media/vsofolders21.png)](./media/vsofolders21.png)
 
 4. Click **Map**, and on the next dialog, click **No**.
 5. Similarly, map the <strong>/Trunk/Main/Projects **server folder to the **local projects folder</strong> that will hold your Visual Studio solution and project files.
@@ -108,7 +115,8 @@ This section describes the steps needed to add a solution to Azure DevOps source
 
 ### Open the FleetManagement solution
 
-Note: This is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
+> [!NOTE]
+> This is only an example. You can open any project/solution to learn about the process of adding a solution to source control.
 
 1.  On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2.  Browse to the desktop and open the **FleetManagement** folder.
@@ -119,7 +127,10 @@ Note: This is only an example. You can open any project/solution to learn about 
 
 1.  In **Solution Explorer**, right-click the Fleet Management solution, and select **Add Solution to Source Control.**
 2.  On the next dialog, select **Team Foundation Version Control**, and then click **Next**.
-3.  In the **Team Project Location**, select **Projects**, as shown in this image (**Note**: If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted)
+3.  In the **Team Project Location**, select **Projects**, as shown in this image.
+
+    > [!NOTE]
+    > If you have already mapped the server Projects folder to a local folder that contains the FleetManagement solution, steps 2 and 3 are omitted.
 
     [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
 
@@ -132,11 +143,18 @@ All Visual Studio projects belong to models. Models are source code distribution
 
 1.  In Visual Studio, in **Team Explorer**, open **Source Control Explorer**, and then right-click on the metadata folder (for example, **\Trunk\Main\Metadata**).
 2.  In the **Source Control Explorer** toolbar, click **Add Item to Folder**.
-3.  Select your model descriptor file. The model descriptor file is the XML file manifest of your model. It's located in the **Descriptor** folder of the package that the model belongs to. The following image shows an example of where the model descriptor file of the Fleet Management model exists (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml). **Note**: Your model store may be located under I:\AosService\PackagesLocalDirectory or c:\AosService\PackagesLocalDirectory or another drive, depending on your machine configuration.
+3.  Select your model descriptor file. The model descriptor file is the XML file manifest of your model. It's located in the **Descriptor** folder of the package that the model belongs to. The following image shows an example of where the model descriptor file of the Fleet Management model exists (c:\\packages\\FleetManagement\\Descriptor\\FleetManagement.xml).
+
+    > [!NOTE]
+    > Your model store may be located under I:\AosService\PackagesLocalDirectory or c:\AosService\PackagesLocalDirectory or another drive, depending on your machine configuration.
 
     [![AddSourceControl\_UsingDevoTools](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
-4.  Click **Finish**. **Note**: Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+4.  Click **Finish**.
+
+    > [!NOTE]
+    > Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
+
 5.  Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Azure DevOps.
 
 ### Experiment with source control

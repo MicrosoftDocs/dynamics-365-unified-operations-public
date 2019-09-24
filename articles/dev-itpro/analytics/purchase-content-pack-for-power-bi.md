@@ -5,7 +5,7 @@ title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that are used to build the content.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: PurchaseSpendAnalysisPowerBI
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265434
@@ -38,7 +38,7 @@ This topic describes what is included in the **Purchase spend analysis** Microso
 
 ## Overview
 
-The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep an eye on purchase spending. Managers can analyze purchase spending in the following ways:
+The **Purchase spend analysis** Power BI content was designed to help purchasing managers and managers who are responsible for budgets keep track of purchase spending. Managers can analyze purchase spending in the following ways:
 
 - Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)
 - Year-over-year purchase change (by vendor group and procurement category)
@@ -49,88 +49,88 @@ The content uses purchase transactional data, and provides both an aggregate vie
 The **Purchase spend analysis** Power BI content is shown on the **Purchase and spend analysis** page (**Procurement and sourcing** \> **Inquiries and reports** \> **Purchase performance analysis** \> **Purchase and spend analysis**).
 
 ## Metrics that are included in the Power BI content
-The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations.
+The **Purchase spend analysis** Power BI content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. 
 
-<table>
-<thead>
-<tr>
-<th>Report page</th>
-<th>Charts</th>
-<th>Tiles</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Purchase by vendor</td>
-<td><ul>
-<li>Top 10 vendors by purchase (stacked bar chart)</li>
-<li>Total purchase by vendor group / country / name (pie chart)</li>
-<li>Purchase by vendor group / country / name (column chart)</li>
-<li>Average purchase by vendor group / country / name (column chart)</li>
-</ul></td>
-<td><ul>
-<li>Total purchase</li>
-<li>YOY purchase growth</li>
-<li>Total # vendors</li>
-<li>Total # of active vendors</li>
-</ul></td>
-</tr>
-<tr>
-<td>Purchase by product</td>
-<td><ul>
-<li>Purchase by procurement category / product name (column chart)</li>
-<li>Total purchase by procurement category / product name (pie chart)</li>
-<li>Top 10 products by purchase (stacked bar chart)</li>
-</ul></td>
-<td><ul>
-<li>Total # of products</li>
-<li>Total active products percentage of total # of products</li>
-<li>Number of products accounting for 80% purchase</li>
-</ul></td>
-</tr>
-<tr>
-<td>Purchase by period*</td>
-<td><ul>
-<li>Purchase by month / day (column chart)</li>
-<li>Cumulative purchase YOY variance (waterfall chart)</li>
-<li>Total purchase YOY growth (column chart)</li>
-<li>Procurement statement (matrix)</li>
-</ul></td>
-<td><ul>
-<li>YOY purchase growth</li>
-<li>YOY purchase growth %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Purchase by vendor location</td>
-<td><ul>
-<li>Purchase by city</li>
-<li>Purchase YOY growth %</li>
-<li>Purchase by country</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Purchase spend analysis by time</td>
-<td><ul>
-<li>Purchase current year by month / day (line chart)</li>
-<li>Purchase current and last year (line and column chart)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Purchase spend analysis by vendor</td>
-<td><ul>
-<li>Top 10 vendor purchase % of purchase (funnel)</li>
-<li>Top 10 vendors with increased spending YOY</li>
-<li>Top 10 vendors with decreased spending YOY</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+The following sections provide an overview of the visualizations.
 
-\* Purchase this year and last year, and growth by procurement category
+### Purchase by vendor report page
+**Charts**
+- Top 10 vendors by purchase (stacked bar chart)
+- Total purchase by vendor group / country / name (pie chart)
+- Purchase by vendor group / country / name (column chart)
+- Average purchase by vendor group / country / name (column chart)
+
+**Tiles**
+- Total purchase
+- YOY purchase growth
+- Total # vendors
+- Total # of active vendors
+
+**Example**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### Purchase by product report page
+
+**Charts**
+- Purchase by procurement category / product name (column chart)
+- Total purchase by procurement category / product name (pie chart)
+- Top 10 products by purchase (stacked bar chart)
+
+**Tiles**
+- Total # of products</li>
+- Total active products percentage of total # of products
+- Number of products accounting for 80% purchase
+
+**Example**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### Purchase by period report page
+This page shows purchases this year and last year, and growth by procurement category.
+
+**Charts** 
+- Purchase by month / day (column chart)
+- Cumulative purchase YOY variance (waterfall chart)
+- Total purchase YOY growth (column chart)
+- Procurement statement (matrix)
+
+**Tiles**
+- YOY purchase growth
+- YOY purchase growth %
+
+**Example**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### Purchase by vendor location report page
+
+**Charts**
+- Purchase by city
+- Purchase YOY growth %
+- Purchase by country
+
+**Example**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### Purchase spend analysis by time report page
+
+**Charts** 
+- Purchase current year by month / day (line chart)
+- Purchase current and last year (line and column chart)
+
+**Example**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### Purchase spend analysis by vendor report page
+
+**Charts** 
+- Top 10 vendor purchase % of purchase (funnel)
+- Top 10 vendors with increased spending YOY
+- Top 10 vendors with decreased spending YOY
+
+**Example** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## Data model and entities
 The following data is used to fill the report pages in the **Purchase spend analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).

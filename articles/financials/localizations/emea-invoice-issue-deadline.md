@@ -17,7 +17,7 @@ ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10923
@@ -57,7 +57,7 @@ Use the **Set up calculation for invoice issue due date** page to set up an invo
 You can set up date control parameters to help guarantee that customer invoices and credit notes for customer transactions are generated within the specified period after the delivery is made. You can find these parameters in the **Invoice dates control** area of the **Accounts receivable parameters** page.
 
 ## Example
-To set up Microsoft Dynamics 365 for Finance and Operations to calculate invoice issue due dates for intra-EU shipments on the fifteenth day of the month after the supply is delivered, create a date interval code and calculation rule that have the following settings.
+To calculate invoice issue due dates for intra-EU shipments on the fifteenth day of the month after the supply is delivered, create a date interval code and calculation rule that have the following settings.
 
 ### Date interval code
 

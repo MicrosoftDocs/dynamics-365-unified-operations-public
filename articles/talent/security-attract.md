@@ -2,10 +2,10 @@
 # required metadata
 
 title: Security and role management in Attract
-description: This topic provides information about role security in Microsoft Dynamics 365 for Talent - Attract.
-author: josaw1
+description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,24 +17,24 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw1
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Security and role management in Attract
+# Set user permissions
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
+Microsoft Dynamics 365 Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
 
 Attract provides five basic user roles:
 
@@ -57,7 +57,7 @@ The following sections provide a high-level description of each role. The tables
 
 ## Administrator
 
-Users who are assigned to the Administrator role can access and change all data in Attract. Admins can create, read, update, and delete data. They also have access to the Admin center, where they can configure the Attract application and set up user information. We recommend that at least one individual be assigned to the Administrator role. By default, the environment admin in Microsoft PowerApps is set as an admin in Attract. If you signed up for the trial version of Attract, the Administrator role is automatically assigned to you. Currently, to create jobs, users who have the Administrator role must also have either the Recruiter role or the Hiring Manager role.
+Users who are assigned to the Administrator role can access and change all data in Attract. Admins can create, read, update, and delete data. They also have access to the Admin center, where they can configure Attract and set up user information. We recommend that at least one individual be assigned to the Administrator role. By default, the environment admin in Microsoft PowerApps is set as an admin in Attract. If you signed up for the trial version of Attract, the Administrator role is automatically assigned to you. Currently, to create jobs, users who have the Administrator role must also have either the Recruiter role or the Hiring Manager role.
 
 ## Hiring Manager
 
@@ -75,6 +75,16 @@ Any user who has a Microsoft Azure Active Directory (Azure AD) account in the or
 
 Users who are assigned to the Read-only role have read-only access to all data in the Attract environment. However, they can't create or edit any data.
 
+## Find out which roles you have
+
+1.  In Attract, click the question mark (**?**) in the top right corner of the page.
+
+2.  Click **About**.
+
+    You will see which roles you have for Attract in the window that appears:
+
+    ![View your Attract license type](media/attract-license-types.png)
+    
 ## Delegated roles
 
 For each job that they are on the hiring team for, recruiters and hiring managers can designate one or more delegates for themselves. However, they can't designate delegates for other people on the hiring team.
@@ -105,14 +115,16 @@ The following privileges apply to the job-specific data for applicants and the a
 | Data or action          | Recruiter | Hiring Manager | Interviewer |
 |-------------------------|-----------|----------------|-------------|
 | Application documents   | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only |
-| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Create |
+| Application Notes       | Create, read, update, and delete for jobs that the user is on the hiring team for | Create, read, update, and delete for jobs that the user is on the hiring team for | Read-only|
 | Application Activity    | View, if the user is on the hiring team | View, if the user is on the hiring team | Read-only |
 | Application feedback    | Add and view all feedback if the user is on the hiring team | Add and view all feedback if the user is on the hiring team | Can add feedback\*\* |
 | Reject application      | Can reject if the user is on the hiring team | Not allowed | Not allowed |
 | Advance stage           | Can reject if the user is on the hiring team | Can advance if the user is on the hiring team | Not allowed |
 | Launch offer management | Can start offer management | There is a configuration option on the offer activity. | Not allowed |
 
-\*\* A configuration option in the [feedback activity setup](./activities-attract.md#feedback-activity) controls whether interviewers can see each other's feedback.
+
+\*\* A configuration option in the [feedback activity setup](./activities-attract.md) controls whether interviewers can see each other's feedback.
+
 
 ## Process templates
 

@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -70,7 +70,7 @@ The following data is used for the report pages in the **Production performance*
 
 The following table shows the key aggregate measurements that are used as the basis of the Power BI content.
 
-| Entity                   | Key aggregate measurements  | Data source for Finance and Operations | Field              |
+| Entity                   | Key aggregate measurements  | Data source for Finance and Operations apps | Field              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

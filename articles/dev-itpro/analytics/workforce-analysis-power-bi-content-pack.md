@@ -17,7 +17,7 @@ ms.search.form: HcmWorkforceWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 264084
@@ -39,7 +39,7 @@ This topic describes the **Workforce metrics** Microsoft Power BI content. It ex
 ## Accessing the Power BI content
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
-- Microsoft Dynamics 365 for Finance and Operations
+- Microsoft Dynamics 365 Finance
 - Microsoft Dynamics 365 for Talent
 
 ## Metrics that are included in the Power BI content
@@ -61,12 +61,12 @@ The following table lists the metrics that are shown on each report.
 | Employee Birthdays                               | Birthdays this month, birthdays next month, employee birthdays, and birthdays by month and department |
 | Mass Hire Projects                               | Total mass hire projects, mass hire projects by status, mass hire projects by department and owner, mass hire projects by job, and mass hire projects |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Be sure to download the **Workforce metrics** Power BI content that applies to the version of Microsoft Dynamics 365 that you're using.
 
 > [!NOTE]
-> The .pbix files available in Lifecycle Services apply to Finance and Operations only.
+> The .pbix files available in Lifecycle Services apply to Finance and Operations apps only.
 
 ## Understanding the data model and entities
 The following table shows the entities that the content was based on.

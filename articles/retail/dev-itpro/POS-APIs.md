@@ -5,7 +5,7 @@ title: Retail POS APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 12/03/2018
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail 
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -34,7 +34,8 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
-Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations or Dynamics 365 for Retail with the latest hotfix. 
+Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations applications or Dynamics 365 Retail. 
+
 
 POS APIs are categorized into three different scenarios:
 
@@ -207,6 +208,8 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | CarryoutSelectedProductsOperationRequest |
 | AddCouponsOperationRequest |
 | CreateNonSalesTransactionServiceRequest |
+| ReturnTransactionOperationRequest |
+| AddLoyaltyCardToCartOperationRequest |
 
 ### Payments
 
@@ -378,6 +381,8 @@ The following is a list of APIs exposed to perform sales orders-related function
 | RegisterPrintReceiptCopyEventRequest             |
 | MarkAsPickedServiceRequest                       |
 | PrintPackingSlipClientRequest                    |
+| PickUpCustomerOrderLinesClientRequest            |
+
 
 ### Shifts
 
@@ -424,3 +429,7 @@ The following is a list of APIs exposed to perform store operations-related func
 | GetCurrenciesServiceRequest                     |
 | GetSrsReportDataSetServiceRequest               |
 | SearchCommissionSalesGroupsServiceRequest       |
+| IssueLoyaltyCardOperationRequest                |
+| GetPickingAndReceivingOrdersClientRequest       |
+
+

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23661
@@ -41,7 +41,7 @@ The following procedure is for one-box development environments only.
 The following procedure is for one-box development environments only.
 
 -   Download the patch .zip file from Lifecycle Services (LCS).
--   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on windows, see <http://www.microsoft.com/en-us/Typography/TrueTypeInstall.aspx>.  Any fonts that have already been installed do not need to be installed again.
+-   If there are any font files in the Reporting Service patch’s data folder, install these to the machine where SQL Server Reporting Services (SSRS) is running. For more information about installing fonts on Windows, see [How to install or remove a font in Windows](https://support.microsoft.com/help/314960/how-to-install-or-remove-a-font-in-windows).  Any fonts that have already been installed do not need to be installed again.
 -   Copy the files in the Reporting Services patch scripts folder to the Report plug-in folder located under C:\\Packages\\Plugins\\AxReportVmRoleStartupTask.
 -   Change the directory to the Report plug-in folder where you stored the script files.
 -   Using one of the methods listed below, replace the old instance of reporting extensions.
@@ -64,7 +64,8 @@ Complete the following procedure as a user in the administrator group for the ma
 2.  Find the SQL Server Reporting Services binary folder. This folder is usually located at C:\\Program Files\\Microsoft SQL Server\\MSRS11.MSSQLSERVER\\Reporting Services\\ReportServer\\bin.
 3.  If any of the following files are in the patch, copy them to the SQL Server Reporting Services bin folder.* *
 
-**Note:** Patches can either be full patches, which would contain all of the files used by the service, or incremental patches, which contain only the files that have changed. If you have an incremental patch, then some files may not be included. Files not included in the patch do not need to be replaced.
+> [!NOTE]
+> Patches can either be full patches, which would contain all of the files used by the service, or incremental patches, which contain only the files that have changed. If you have an incremental patch, then some files may not be included. Files not included in the patch do not need to be replaced.
 
 -   Microsoft.Dynamics.AX.Framework.Services.Platform.Client.dll
 -   Microsoft.Dynamics.Framework.ReportsExtensions.dll

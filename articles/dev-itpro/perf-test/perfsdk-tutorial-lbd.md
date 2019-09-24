@@ -3,9 +3,9 @@
 
 title: Performance SDK and multiuser testing in on-premises environments
 description: This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
-author: kfend
+author: hasaid
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -35,6 +35,16 @@ ms.dyn365.ops.version: Platform update 19
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
+
+  > [!IMPORTANT]
+  > Visual Studio 2019 will be the last version of Visual Studio with web performance and load test features. In the future, we will be publishing some recommendations for alternative solutions.  
+  
+  > - If you are using the Visual Studio and Test Controller/Test Agent for on-premises load testing, Visual Studio 2019 will be the last version. You can continue using it until the end of support cycle. 
+ 
+ >  - If you are using the cloud-based load testing service, the cloud-based load testing service will continue to run through March 31, 2020. Until then, you can continue to use all of the experiences powered by this service without interruption. Alternatively, you can switch to on-premises load testing. 
+ 
+ > For more information, see [Cloud-based load testing service end of life](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/).
+
 
 ## Prerequisites
 
@@ -74,7 +84,7 @@ Follow these steps in the development environment.
 
     [![TestRoot environment variable](./media/EnvironmentVariable.PNG)](./media/EnvironmentVariable.PNG)
 
-2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [http://selenium-release.storage.googleapis.com/index.html?path=2.42/](http://selenium-release.storage.googleapis.com/index.html?path=2.42/), and extract the files.
+2. Download the **selenium-dotnet-strongnamed-2.42.0.zip** and **IEDriverServer\_Win32\_2.42.0.zip** files from [https://selenium-release.storage.googleapis.com/index.html?path=2.42/](https://selenium-release.storage.googleapis.com/index.html?path=2.42/), and extract the files.
 3. Copy the dynamic-link libraries (DLLs) from the **selenium-dotnet-strongnamed-2.42.0.zip\net40** folder to the **PerfSDK\\Common\\External\\Selenium** folder. Also copy the **IEDriverServer.exe** from the **IEDriverServer\_Win32\_2.42.0.zip** to the **PerfSDK\\Common\\External\\Selenium** folder.
 
     [![DLLs in the PerfSDK\Common\External\Selenium folder](./media/perf103d.png)](./media/perf103d.png)
@@ -156,10 +166,10 @@ Follow these steps in the development environment.
 
 11. In the **CloudEnvironment.Config** file, specify values for the following keys. These values replace the placeholder values in square brackets in the template.
 
-    - **HostName** – Specify the URL that is used to access your Microsoft Dynamics 365 for Finance and Operations on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
+    - **HostName** – Specify the URL that is used to access your on-premises environment. The URL should be **\[yourD365FOdomain\]/namespaces/AXSF**.
     - **SoapHostName** – Specify the same URL that you specified for **HostName**.
     - **SelfSigningCertificateThumbprint** – Specify the thumbprint that you retrieved from Windows PowerShell in step 7.
-    - **UserFormat** – Specify the email address of a user who has the System Administrator role in your Finance and Operations on-premises environment. The user must be an Active Directory Federation Services (AD FS) user.
+    - **UserFormat** – Specify the email address of a user who has the System Administrator role in your on-premises environment. The user must be an Active Directory Federation Services (AD FS) user.
     - **UserPassword** – Specify the password of the user whose email address you specified for **UserFormat**.
     - **Username** – Specify the same email address that you specified for **UserFormat**.
     - **NetworkDomain** – Specify the URL of the AD FS identity provider. You can find this value by running the following SQL query against the **AXDB** database of your on-premises deployment.
@@ -205,7 +215,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
     > Setting the **AosRole** to **AosRoleUnknown** disables the limit on the number of web sessions per user. This is necessary to complete load testing with a large user load because the load test will create many sessions for a single user. Once you are finished with your load testing, reset this value to **"AosRoleWeb"**.
 
 
-7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the Finance and Operations application.
+7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the application.
 
     ![Restarting Finance and Operations from Service Fabric Explorer](./media/ServiceFabricExplorerRestart.png)
 
@@ -270,7 +280,7 @@ Make sure that the values that you entered when you made the task recording are 
     Environment.SetEnvironmentVariable("testroot", testroot);
     ```
 
-2. Download the installer (.msi) file for Microsoft ODBC Driver 13 for SQL Server from [https://www.microsoft.com/en-us/download/details.aspx?id=50420](https://www.microsoft.com/en-us/download/details.aspx?id=50420). (Select the 64-bit version of the .msi file.) Put the file in the **Visual Studio Online** folder in the **PerfSDK** directory.
+2. Download the installer (.msi) file for Microsoft ODBC Driver 13 for SQL Server from [https://www.microsoft.com/download/details.aspx?id=50420](https://www.microsoft.com/download/details.aspx?id=50420). (Select the 64-bit version of the .msi file.) Put the file in the **Visual Studio Online** folder in the **PerfSDK** directory.
 3. Modify the contents of the **setup.cmd** file in the **Visual Studio Online** folder so that they match the following code.
 
     ```

@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Deployment guidelines for cash registers for France
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 for Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 This localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -43,6 +43,7 @@ This localization consists of extensions for the Commerce runtime (CRT), Retail 
 The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](https://docs.microsoft.com/azure/key-vault/key-vault-get-started). The Retail localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
 
 ### Prerequisites
+
 The following steps must be completed before you can use a certificate that is stored in Azure Key Vault storage:
 
 - The Azure Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
@@ -347,13 +348,29 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 # [Retail 7.3.5 and later](#tab/retail-7-3-5)
 
-> [!NOTE]
-> No additional actions are required.
+1. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 # [Retail 8.1.1 and later](#tab/retail-8-1-1)
 
-> [!NOTE]
-> No additional actions are required.
+1. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
+
+2. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
+    ```
 
 ---
 
@@ -660,6 +677,7 @@ You must complete the following procedure to enable the extensions in offline mo
 7. Test the functionality.
 
 ### Set up required parameters in Retail headquarters
+
 For more information, see [Cash registers for France](./emea-fra-cash-registers.md).
 
 ## Production environment

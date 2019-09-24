@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 # Parse incoming documents to update application data
 [!include [banner](../includes/banner.md)]
 
-You can design Electronic reporting (ER) formats and run them in Microsoft Dynamics 365 for Finance and Operations, to parse incoming electronic documents and then use their content to update application data.
+You can design Electronic reporting (ER) formats and run them in the application, to parse incoming electronic documents and then use their content to update application data.
 
 The following new ER functionality that has been introduced improves the parsing of incoming electronic documents in XML format:
 

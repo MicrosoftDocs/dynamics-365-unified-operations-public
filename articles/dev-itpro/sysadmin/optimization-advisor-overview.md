@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Optimization advisor
-description: This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations. 
+title: Optimization advisor overview
+description: This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: SelfHealingWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Optimization advisor
+# Optimization advisor overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Optimization advisor to help guarantee optimal configuration of Microsoft Dynamics 365 Finance and Operations.
+This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations.
 
 ## Overview
 
-Incorrect configuration and setup of a module can adversely affect the availability of features in Finance and Operations, system performance, and the smooth operation of business processes. The quality of business data (for example, the correctness, completeness, and cleanliness of the data) also affects system performance, and an organization's decision-making capabilities, productivity, and so on.
+Incorrect configuration and setup of a module can adversely affect the availability of application features, system performance, and the smooth operation of business processes. The quality of business data (for example, the correctness, completeness, and cleanliness of the data) also affects system performance, and an organization's decision-making capabilities, productivity, and so on.
 
 The **Optimization advisor** workspace is a tool that lets power users, business analysts, functional consultants, and IT support functions identify issues in module configuration and business data. Optimization advisor suggests best practices for module configuration and identifies business data that is obsolete or incorrect.
 
-Optimization advisor periodically runs a set of best practice rules. A default set of rules is released together with Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). However, users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create new rules](./create-rules-optimization-advisor.md).
+Optimization advisor periodically runs a set of best practice rules. A default set of rules is available, however users can also create rules that are specific to their customizations, solutions from independent software vendors (ISVs), and business data. For more information about how to create rules, see [Create new rules](./create-rules-optimization-advisor.md).
 
 When a violation of a rule is detected, an optimization opportunity is generated and appears in the **Optimization advisor** workspace. A user can take appropriate corrective action directly from the **Optimization advisor** workspace.
 

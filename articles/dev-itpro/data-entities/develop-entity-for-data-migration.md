@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
@@ -85,7 +85,7 @@ The entity also has the following fields:
 
 #### Steps
 
-1. In Visual Studio, create a new Microsoft Dynamics 365 for Finance and Operations project.
+1. In Visual Studio, create a new application project.
 2. In Solution Explorer, select the project, and then right-click **Properties**.
 3. Specify the following project properties, and then click **OK**.
 

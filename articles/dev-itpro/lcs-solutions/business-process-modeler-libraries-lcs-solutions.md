@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Business process modeler libraries for Finance and Operations solutions
+title: Set up Business process modeler libraries 
 description: This topic explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196953
@@ -28,14 +28,13 @@ ms.author: omarc
 
 ---
 
-# Set up Business process modeler libraries for Finance and Operations solutions
+# Set up Business process modeler libraries
 
 [!include [banner](../includes/banner.md)]
 
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 
-Create a business process library
----------------------------------
+## Create a business process library
 
 There are two ways to create a BPM library. You can create a new library that has no lines or task recordings, or you can copy an existing library.
 
@@ -50,7 +49,7 @@ There are two ways to create a BPM library. You can create a new library that ha
 2.  To create a new library, right-click any library, and then, in the lower-left corner of the window, select **Create**. To copy an existing library, right-click that library, and then, in the lower-left corner of the window, select **Copy**.
 
     [![Location of the Copy button](./media/bpm_03.png)](./media/bpm_03.png)
-=======
+
     -   **Global libraries** – Cross-industry standard business processes. [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  Enter a name for the library.
@@ -99,11 +98,11 @@ There are two sections in business process libraries: **Core Business Processes*
 
 ## Create a task recording and associate it with a business process
 
-Task recordings should be created in a Microsoft Finance and Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Finance and Operations](../user-interface/task-recorder.md).
+Task recordings should be created in an environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder](../user-interface/task-recorder.md).
 
 ### Create a task recording
 
-1.  In Finance and Operations, select the **Settings** button in the upper-right corner, and then select **Task recorder**.
+1.  In your application, select the **Settings** button in the upper-right corner, and then select **Task recorder**.
 2.  Select **Create recording**.
 3.  Enter a name and description for the recording.
 4.  Perform the task that you want to record.
@@ -124,22 +123,20 @@ Task recordings can be played as task guides. Task guides are used to guide user
 
 ### Set up task guides
 
-1.  In Finance and Operations, select **System administration** &gt; **Setup** &gt; **System parameters**.
+1.  In your application, select **System administration** &gt; **Setup** &gt; **System parameters**.
 2.  On the **Help** tab, select the LCS project where the business process library that you want to work with is stored.
 3.  Select the business process libraries that have the task recordings that you want to play as task guides.
 4.  Adjust the order of the business process libraries as you require. The order of the business process libraries determines the order that the task guides appear in. Therefore, the task guides for the first business process library appear first when a user uses the task guide functionality.
 
 ### Use task guides
 
-1.  In Finance and Operations, open the page where you want to run the task guide.
+1.  In your application, open the page where you want to run the task guide.
 2.  In the upper-right corner, select the **Settings** button, and then select **Task recorder**.
 3.  Select a task guide.
 4.  Select **Start Task guide**.
 5.  Follow the steps in the task guide. If you select **Unlock**, you can work without following the task guide.
 6.  When you've finished, select **Stop Task guide**.
 
+## Additional resources
 
-Additional resources
---------
-
-[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
+[Publishing an App in AppSource](lcs-solutions-app-source.md)

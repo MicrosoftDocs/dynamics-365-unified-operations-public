@@ -2,10 +2,10 @@
 # required metadata
 
 title: Prepare for go-live
-description: This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+description: This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 11/01/2018
+ms.date: 07/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to prepare to go live with a Microsoft Dynamics 365 for Finance and Operations project by using Microsoft Dynamics Lifecycle Services (LCS).
+This topic describes how to prepare to go live with a project by using Microsoft Dynamics Lifecycle Services (LCS).
 
 This graphic lists the phases of the go-live process.
 ![Go-live process](./media/go-live-process.PNG)
@@ -42,7 +42,7 @@ The following table lists all the steps in the process, with the expected durati
 |---|--------|---------------|-----|-------|
 | 1 | Update Go-live date in LCS | At the latest 2-3 months in advance | Partner/Customer | The milestone dates should be kept up to date on an ongoing basis |
 | 2 | Complete and send check list | After UAT complete | Partner/Customer | Follow the instructions provided in the "FastTrack Go-live assessment" section later in this topic. |
-| 3 | Project assessment (Fast Track Essentials) | 2-business days for initial report, plus additional time for mitigation, if required | FastTrack Architect | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
+| 3 | Project assessment (Fast Track Essentials) | 3-business days for initial report, plus additional time for mitigation, if required | FastTrack Architect | Architect delivers assessment after checklist is received and continues review until questions are clarified and mitigations are in place, if applicable. |
 |   | Project workshop (Fast Track) | To coordinate with architect assigned | FastTrack Architect | |
 | 4 | Release for production deployment | Upon successfully completed assessment | FastTrack Architect | If the production deployment request has already been submitted, deployment will start. However, we request that you only submit the Production request after the assessment has successfully completed. |
 | 5 | Production deployment request | Self-service | Customer | The production deployment request should only be submitted after the FastTrack Architect has finished the assessment. |
@@ -50,7 +50,7 @@ The following table lists all the steps in the process, with the expected durati
 |   | Deployment | 48 hours | Dynamic Service Engineering (DSE) | Status in LCS reflects the deployment progress. If there are any questions about your request, they will be posted as Comments on the service request. |
 | 6 | Deployable package installation request | Self-service | Customer | Follow the instructions in the topic, [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md). |
 |   | Package installation | Depends on number of packages, minimum 5 hours lead time and 4 hours downtime per package | Dynamic Service Engineering (DSE) | Generally, 95% of updates are applied in less than one hour, however we still recommend that you provide a downtime window of four hours in case a rollback is required for any reason. When the package deployment succeeds, the environment will be available as soon as the package deployment has finished, which means that the longer downtime window does not have any negative effect on the availability of the system. |
-| 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Must exactly follow instructions documented in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md). |
+| 7 | Database copy from Sandbox request (if applicable) | Self-service | Customer | Follow the instructions in the topic, [Golden configuration promotion](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md). |
 |   | Copy database | Five hours lead time and two hours downtime | Dynamic Service Engineering (DSE) | Generally, the database copy is completed in less than one hour. We still recommend that you provide a downtime window of two hours in case a rollback is required for any reason. |
 | 8 | Production ready | After all previous steps have been completed | Customer/Partner | Customer/Partner can take control of the production environment. |
 |   | Cutover activities | Depends on the project | Customer/Partner | |
@@ -60,9 +60,9 @@ The following table lists all the steps in the process, with the expected durati
 
 A major milestone in each implementation project is the cutover to the production environment.
 
-To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).
+To help ensure that the production environment is used for live operations, Microsoft will provision the production instance only when the implementation is approaching the Operate phase, after the required activities in the LCS methodology are completed. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+Customers must complete the Analysis, Design and develop, and Test phases in the LCS methodology before the **Configure** button that is used to request the production environment becomes available. To complete a phase in LCS, you must first complete every required step in that phase. When all the steps in a phase are completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. If you require more help, see [Lifecycle Services for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 The process of completing a step has two parts:
 
@@ -89,22 +89,15 @@ Regardless of whether the environment is a cloud-hosted environment or a downloa
 
 ## FastTrack Go-live assessment
 
-All Finance and Operations customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
+All customers must complete a go-live review with the Microsoft FastTrack team before their production environment can be deployed. This assessment should be successfully completed before you request your Production environment. If you aren't familiar with Microsoft FastTrack, see [Microsoft FastTrack for Dynamics 365 overview](../get-started/fasttrack-dynamics-365-overview.md).
 
-About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist:
+About eight weeks before go-live, the FastTrack team will ask you to fill in a go-live checklist. 
 
-- If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, the solution architect will contact you.
-- If you have 20–149 seats, the checklist will be sent to you from <go-live@microsoft.com>.
-
-
-You can also download the checklist from CustomerSource at [FastTrack pre-go-live checklist](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/fasttrack-checklist-fin-and-ops).
+You can download the checklist from **Dynamics 365 Community** on the [Go-live Planning TechTalk](https://aka.ms/FastTrackPreGoLiveChecklist) page.  
 
 The project manager or a key project member must complete the go-live checklist during the pre-go-live phase of the project. Typically, the checklist is completed four to six weeks before the proposed go-live date, when UAT is completed or almost completed.
 
-When you've completed the go-live checklist, follow one of these steps:
-
-- If you have 20–149 seats, send the checklist to <go-live@microsoft.com>.
-- If you have 150 or more seats, and a Microsoft solution architect is assigned to your project, send the checklist to the solution architect.
+When you've completed the go-live checklist, email it to **Dynamics 365 FO Go-Live** d365fogl@microsoft.com. Always include a key stakeholder from the customer and the implementation partner on the email.
 
 After the checklist is submitted, a Microsoft solution architect will review the project and provide an assessment that describes the potential risks, best practices, and recommendations for a successful go-live of the project. In some cases, the solution architect might highlight risk factors and ask for a mitigation plan. When the assessment is completed, the solution architect will indicate that you're ready to request the production environment in LCS.
 

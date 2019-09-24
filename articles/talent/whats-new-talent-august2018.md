@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (August 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 08/27/2018
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Talent August 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (August 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (August 2018)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.104**
 
-This topic describes features that are either new or changed in Dynamics 365 for
-Talent Core HR.
+This topic describes features that are either new or changed in Dynamics 365 Talent: Core HR.
 
 ## View expiring records in Manager self service
 
@@ -106,7 +105,7 @@ you understand what’s being used during the accrual process.
 Document templates have been enabled throughout Core HR. This feature allows you to create letters and reports based on Word templates that you create.
 
 Additional information about this feature is available in the
-[Office integration tutorial](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
+[Office integration tutorial](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/talent/toc.json).
 
 
 ## Other fixes

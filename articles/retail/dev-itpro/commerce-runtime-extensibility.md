@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 104593
@@ -104,8 +104,8 @@ Before you learn about the CRT extension patterns, you should understand how a C
 Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.</blockquote>
 <p>For details about the attributes, see the following topics:</p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/order-attributes">Order attributes</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/customer-attributes">Customer attributes</a></li>
+<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/order-attributes">Order attributes</a></li>
+<li><a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/customer-attributes">Customer attributes</a></li>
 </ul>
 </td>
 </tr>

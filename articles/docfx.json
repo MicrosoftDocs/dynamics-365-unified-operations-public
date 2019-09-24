@@ -40,7 +40,7 @@
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
-      "feedback_product_url": "https://experience.dynamics.com/ideas/list/?forum=16691718-61e2-e611-8101-5065f38b21f1",
+      "feedback_product_url": "https://ideas.dynamics.com",
       "contributors_to_exclude": [
         "OpenLocalizationService"
       ],
@@ -82,8 +82,36 @@
       }
     },
     "fileMetadata": {
+      "featureFlags": {
+        "dev-itpro/**/*.md": [
+          "show_learn_banner"
+        ],
+        "fin-and-ops/**/*.md": [
+          "show_learn_banner"
+        ],
+        "financials/**/*.md": [
+          "show_learn_banner"
+        ],
+        "supply-chain/**/*.md": [
+          "show_learn_banner"
+        ]
+      },
+      "learn_banner_products": {
+        "dev-itpro/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "fin-and-ops/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "financials/**/*.md": [
+          "dynamics-finance-operations"
+        ],
+        "supply-chain/**/*.md": [
+          "dynamics-finance-operations"
+        ]
+      },
         "feedback_product_url": {
-          "retail/**/*.md": "https://experience.dynamics.com/ideas/list/?forum=fd509429-7e87-e711-8105-c4346bb5988c"
+          "retail/**/*.md": "https://ideas.dynamics.com"
         },
        "searchScope": {
           "talent/**.md": [

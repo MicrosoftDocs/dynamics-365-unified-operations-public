@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master plans
+title: Master plans overview
 description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. 
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Master plans
+# Master plans overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,7 +55,7 @@ Additional resources
 
 [Coverage settings](coverage-settings.md)
 
-[Separating tactical and operative planning for master scheduling](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Separating tactical and operative planning for master scheduling](https://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
 [Master Planning: Use a static and dynamic Master Plan or use one plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
 

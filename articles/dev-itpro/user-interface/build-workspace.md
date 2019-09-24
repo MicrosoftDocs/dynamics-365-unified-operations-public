@@ -5,7 +5,7 @@ title: Build workspaces
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
-ms.date: 08/25/2017
+ms.date: 07/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10794
@@ -322,7 +322,7 @@ Next, you will next see how to include an additional list in the workspace. This
     | Property       | Value              |
     |----------------|--------------------|
     | Name           | VehicleQuickFilter |
-    | Target Control | VehicleGrid        |
+    | Target Control | VehicleList        |
 
 23. Press **Ctrl+S** to save.
 
@@ -337,7 +337,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property        | Value       |
     |-----------------|-------------|
-    | Table           | FMTVehicles |
+    | Table           | FMTVehicle  |
     | Dynamics Fields | Yes         |
 
 7.  Right-click **Ranges**, and then click **New Range**.
@@ -360,7 +360,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
     | Property       | Value                |
     |----------------|----------------------|
-    | Menu item name | FMTAvailableVehicles |
+    | Object         | FMTAvailableVehicles |
     | Query          | FMTAvailableVehicles |
 
 6.  Press **Ctrl+S** to save.
@@ -457,10 +457,10 @@ The second step is to define a table that has the fields that are returned from 
 
     | Field type    | Field name            | EDT/enum type               |
     |---------------|-----------------------|-----------------------------|
-    | String        | First Name            | FirstName (EDT)             |
-    | String        | Last Name             | LastName (EDT)              |
+    | String        | FirstName             | FirstName (EDT)             |
+    | String        | LastName              | LastName (EDT)              |
     | Container     | Image                 | Bitmap (EDT)                |
-    | Int64         | Vehicle               | FMTVehicleRecID (EDT)       |
+    | Int64         | Vehicle               | FMTVehicleRecId (EDT)       |
     | Utc Date Time | StartDate             | StartDateTime (EDT)         |
     | Utc Date Time | EndDate               | EndDateTime (EDT)           |
     | Int64         | SysDataCacheContextId | SysDataCacheContextId (EDT) |

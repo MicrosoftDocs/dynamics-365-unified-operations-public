@@ -5,7 +5,7 @@ title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
 author: robadawy
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-An AOT package is a deployment and compilation unit of one or more models that can be applied to a Microsoft Dynamics 365 for Finance and Operations environment, or a Microsoft Dynamics 365 for Retail environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
+An AOT package is a deployment and compilation unit of one or more models that can be applied to an environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox and production environments. This article guides you through the process of creating and applying a deployable package. 
 
 ## Overview of the process
 
@@ -44,8 +44,12 @@ In order to deploy your code and customizations to a runtime environment (Demo, 
 > [!NOTE]
 > Application Deployable Packages do not contain source code.
 
+> It is always recommended to use a build environment to create deployable packages that are intended to go to production.
+
 ## Create a deployable package
-After you have completed the development stage, follow these steps to create a deployable package from Visual Studio.
+We recommend using a build environment to create deployable packages. You can also create a deployable package on a development environment. 
+
+On a development environment, after you have completed development and testing, follow these steps to create a deployable package in Visual Studio.
 
 1.  In Microsoft Visual Studio, select **Dynamics 365** &gt; **Deploy** &gt; **Create Deployment Package**.
 ![Create deployment package](./media/createdeploymentpackage-986x1024.png)

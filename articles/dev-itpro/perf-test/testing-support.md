@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24161
@@ -45,7 +45,7 @@ When you create a project in Visual Studio, you can add an X++ unit test. You ex
 
     class FMUnitTestSample extends SysTestCase
     {
-        [SysTestMethodAttribute]
+        [SysTestMethod]
         public void testTotalsEngineConfig()
         {
         }
@@ -72,5 +72,6 @@ You can import the XML for Task Recorder recordings to generate test code that c
 
 Generated code is based on the SysTest Framework and FormAdaptors. FormAdaptors are wrapper classes over pages. They provide strongly typed application programming interfaces (APIs) that can be used to test page functionality. Pre-generated FormAdaptors are included for each package for built-in pages. In a test module, add a reference to a corresponding FormAdaptor for packages and "Test Essentials," which contain helper methods to run test code.
 
+## Advanced Options
 
-
+For advanced options to categorize and filter tests for execution, see [systest-filtering.md]

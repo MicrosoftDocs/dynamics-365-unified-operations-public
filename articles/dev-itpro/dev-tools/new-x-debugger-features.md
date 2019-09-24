@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26801
@@ -142,7 +142,7 @@ We'll show how a singleton, called instance in the example below, can be created
         instance = new Singleton();
       }
 
-      public static Singleton Instance()
+      public static Singleton instance()
       {
         return Singleton::instance;
       }
@@ -152,7 +152,7 @@ The singleton will guarantee that only one instance of the class will ever be ca
 
     {
         …
-        Singleton i = Singleton::Instance();
+        Singleton i = Singleton::instance();
       }
 
 ## Assignment of field members inline
@@ -506,7 +506,7 @@ If the type of the element that is added to the container is any type that the c
 but an error will be thrown at runtime.
 
 ## Cross company clause can contain arbitrary expressions
-The cross company clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax hasn't been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
+The cross company clause can be used on select statements to indicate the companies that the search statement should take into account. The syntax has been enhanced to allow arbitrary expressions (of type container) instead of a single identifier, which is a variable of type container.
 
       private void SampleMethod()
       {

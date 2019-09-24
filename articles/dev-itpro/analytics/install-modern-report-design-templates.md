@@ -17,7 +17,7 @@ ms.search.form: PrintMgmtSetupUIMain
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
@@ -38,7 +38,7 @@ This topic explains how to install the modern report design templates in the app
 
 ## Introduction
 
-A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in Microsoft Dynamics 365 for Finance and Operations. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
+A new set of developer tools is available that takes the form of report designs for several core business documents in the application suite. These report designs have been re-imagined so that flexible branding appears in the header and footer of public-facing documents when transactions are generated in the application. The following illustration shows how an earlier design for a sales invoice differs from a modern sales invoice design.
 
 [![Examples of an earlier sales invoice design and a modern sales invoice design](./media/design-comparison-1024x653.png)](./media/design-comparison.png)
 
@@ -46,7 +46,7 @@ After you complete the installation, you can use the built-in brand management t
 
 ## Why aren't these designs the default designs for the application suite reports?
 
-We are maintaining the legacy solutions for Finance and Operations for two primary reasons:
+We are maintaining the legacy solutions for two primary reasons:
 
 - **Modern designs don't include code.** Although the legacy solutions use embedded Microsoft Visual Basic (VB) code to recognize configuration keys and honor regulatory requirements that vary by region, the modern report designs offer much less flexibility. The benefit of a simple design that has minimal code behind it comes at the expense of reusability across regions.
 - **Modern designs aren't available for all business documents.** There is a gap between the supported business documents and the availability of modern report designs. Although the legacy designs aren't as aesthetically pleasing, they provide a sense of consistency.
@@ -65,7 +65,7 @@ Follow these steps to install the modern report designs for the application suit
     > [!NOTE]
     > Be sure to select the appropriate model file for the version of the application that you're using.
 
-2. Import the model file into your local development environment. To install a model file in a Finance and Operations development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
+2. Import the model file into your local development environment. To install a model file in a development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
 
     ```
     ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Peripheral simulator for Retail
-description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 for Retail.
+description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 Retail.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 03/22/2018
@@ -17,7 +17,7 @@ ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetails
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 266544
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
+The peripheral simulator for Retail is a utility that Microsoft provides as part of Microsoft Dynamics 365 Retail and as a standalone utility. The utility has two primary components, a *virtual peripheral simulator* and a *point of sale (POS) simulator*.
 
 The virtual peripheral simulator is provided primarily to support testing of scenarios that usually require physical POS peripheral devices. The POS simulator is used to test the compatibility of physical peripheral devices with Retail without having to deploy the POS client.
 
@@ -340,7 +340,7 @@ To view the values that are entered in a free text field, click **Lock and claim
 #### Line display &gt; Advanced tab settings
 
 - **Binary conversion** – Some line displays require that text be converted into binary format. To determine whether this conversion is required, see the device’s documentation.
-- **Character set** – The code page for the characters that are sent to the device. For the identifiers of specific code pages, see <https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx>.
+- **Character set** – The code page for the characters that are sent to the device. For the identifiers of specific code pages, see <https://msdn.microsoft.com/library/windows/desktop/dd317756(v=vs.85).aspx>.
 
 #### MSR
 

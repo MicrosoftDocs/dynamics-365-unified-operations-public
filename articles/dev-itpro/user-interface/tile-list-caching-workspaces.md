@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16341
@@ -113,7 +113,7 @@ The third step is to create a class that defines the relationship between the ca
         }
     }
 
-In some circumstances, you might also have to implement the **parmQueryableToCacheMapping()** method. This method is required when at least one column name in your cache table doesn't match the name of the corresponding column in the backing table (for example, if you must add two fields that have the same name but are from different tables). In this case, you can implement this method to define the column mapping between the cache table and the backing tables. The syntax is the same as the syntax for the **Query::Insert\_RecordSet()** method (<https://msdn.microsoft.com/en-us/library/query.insert_recordset.aspx>).
+In some circumstances, you might also have to implement the **parmQueryableToCacheMapping()** method. This method is required when at least one column name in your cache table doesn't match the name of the corresponding column in the backing table (for example, if you must add two fields that have the same name but are from different tables). In this case, you can implement this method to define the column mapping between the cache table and the backing tables. The syntax is the same as the syntax for the **Query::Insert\_RecordSet()** method (<https://msdn.microsoft.com/library/query.insert_recordset.aspx>).
 
     public Map parmQueryableToCacheMapping()
     {
@@ -162,7 +162,7 @@ Lists of data in workspaces should also be responsive to user actions, especiall
 ## Common mistakes and tips for query optimization
 Here a few general guidelines to consider when you optimize queries. This isn't an extensive guide to query optimization but provides just a few simple guiding principles.
 
--   **Trace the statement by using SQL Profiler.** Attach the Microsoft SQL Server Profiler to the database, and capture the SQL statement that you want to optimize. You can use the tuning template that is provided in a default installation. Don’t forget to disable tracing after you've obtained the statement that you're interested in. For more information, see <https://msdn.microsoft.com/en-us/library/ms175047.aspx>.
+-   **Trace the statement by using SQL Profiler.** Attach the Microsoft SQL Server Profiler to the database, and capture the SQL statement that you want to optimize. You can use the tuning template that is provided in a default installation. Don’t forget to disable tracing after you've obtained the statement that you're interested in. For more information, see <https://msdn.microsoft.com/library/ms175047.aspx>.
 -   **Always look at the query plan.** In Microsoft SQL Server Management Studio, make sure that you've enabled **Include actual Execution Plan**. Look at the query plan, and watch out for any warnings. The thickness of the arrows indicate how many rows have been fetched and brought to the next step.
 -   **Compare CPU milliseconds and logical I/O.** One good way to determine whether a change to a given SQL statement improved the statement is to look at the logical I/O and CPU milliseconds. To obtain these numbers, use the following statements in the query editor:
     -   set statistics time on

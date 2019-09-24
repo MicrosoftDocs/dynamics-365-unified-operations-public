@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: CustPosting, VendParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -53,7 +53,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 <thead>
 <tr>
 <th>SAT catalog</th>
-<th>Microsoft Dynamics 365 for Finance and Operations mapping</th>
+<th>Dynamics 365 Finance mapping</th>
 </tr>
 </thead>
 <tbody>
@@ -109,7 +109,7 @@ This information must be entered in the <strong>Payment type</strong> field on t
 </tr>
 <tr>
 <td>cMoneda</td>
-<td>This information is identified by the <strong>Currency code</strong> value that is configured in Finance and Operations.
+<td>This information is identified by the <strong>Currency code</strong> value that is configured in Finance.
 
 The government defines the exchange rate variation that is allowed. This value must be configured at <strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Currencies</strong> &gt; <strong>Electronic invoices</strong>. You can enter the <strong>Exchange rate variation limit</strong> value per currency.</td>
 </tr>
@@ -119,7 +119,7 @@ The government defines the exchange rate variation that is allowed. This value m
 </tr>
 <tr>
 <td>cPais</td>
-<td>This information is identified by the <strong>Country code</strong> value that is configured in Finance and Operations.</td>
+<td>This information is identified by the <strong>Country code</strong> value that is configured in Finance.</td>
 </tr>
 <tr>
 <td>c_PatenteAduanal</td>

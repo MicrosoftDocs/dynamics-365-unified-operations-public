@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Batch processing
-description: This topic provides an overview of batch processing in Microsoft Dynamics 365 for Finance and Operations.
+title: Batch processing overview
+description: This topic provides an overview of batch processing.
 author: hasaid
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Batch processing
+# Batch processing overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of batch processing in Microsoft Dynamics 365 for Finance and Operations.
+This topic provides an overview of batch processing.
 
 Many tasks in Finance and Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. 
 
@@ -61,3 +61,8 @@ Administrators and Batch managers can perform common tasks including creating an
 -  [Batch manager role](runby.md)
 -  [Batch active period](activeperiod.md)
 -  [Copy a batch job](copy-batch-job.md)
+-  [Configure batch alerts](alerts.md)
+-  [Batch enhanced forms](enhanced-forms.md)
+-  [Batch history cleanup](batch-history-cleanup.md)
+-  [Abort an executing batch job](batch-abort.md)
+

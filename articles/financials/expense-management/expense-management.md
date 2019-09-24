@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Expense management
-description: Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business.
+title: Expense management overview
+description: This topic provides general information about Expense management and links to additional resources. You can use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees spend when they incur expenses for your business.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: TrvExpenseWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15001
@@ -30,36 +30,36 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Expense management
+# Expense management overview
 
 [!include [banner](../includes/banner.md)]
 
-Use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees are spending when they incur expenses for your business. You can also define expense policies and automate the reimbursement of travel expenses. 
+You can use Expense management to create an integrated workflow where you can store payment method information, import credit card transactions, and track the money that employees spend when they incur expenses for your business. You can also define expense policies and automate the reimbursement of travel expenses.
 
-[Planning expense management](plan-expense-management.md) 
+For more information, see [Configure expense management](plan-expense-management.md).
 
-### Additional resources
+## Additional resources
 
-#### What's new and in development
+### What's new and in development
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development. 
+To see what new features are planned, see the [Microsoft Dynamics 365 release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
 
-#### Blogs
+#### Expense report entry
 
-You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Expense report entry has been redesigned to simplify the experience and decrease the time that is required to complete expense reports. You can turn on this functionality in Feature management. You can add a new setup page to configure the visibility of expense fields, and specify what data is required, optional, or not available when expense reports are entered. When this functionality is turned on, a new expense workspace is available. This workspace replaces the previous expense workspace and is the landing page for the improved entry experience.
 
-There are many posts about Accounts receivable on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). Although some of these posts were written for the previous version of Accounts receivable, the same concepts still apply. and the procedures are also similar in the current version.
+For more information, see [Expense reports reimagined](ExpenseWorkspaceNew.md).
 
-The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
+### Blogs
 
-#### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-#### Videos
+The [Microsoft Dynamics Operations Partner Community blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
-Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+### Task guides
 
+Additional help is available as task guides. To access task guides, select the **Help** button on any page.
 
+### Videos
 
-
-
+Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).

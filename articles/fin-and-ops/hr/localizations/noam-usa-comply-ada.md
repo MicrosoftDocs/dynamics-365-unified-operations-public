@@ -17,7 +17,7 @@ ms.search.form: HcmADARequirement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
@@ -60,4 +60,4 @@ Accommodations represent changes to work environments or business operations tha
 
 ## Additional resources
 
-[Dynamics 365 for Talent](../../../talent/index.md)
+[Dynamics 365 Talent](../../../talent/index.md)

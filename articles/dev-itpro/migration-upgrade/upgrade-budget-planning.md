@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade budget planning
-description: There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
+description: There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Dynamics 365 Finance. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 author: ryansandness
 manager: AnnBe
 ms.date: 04/10/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272923
@@ -34,12 +34,12 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Finance and Operations. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
+There are significant differences in budget planning between Microsoft Dynamics AX 2012 and Dynamics 365 Finance. Some features were not upgraded and therefore require reconfiguration. This topic explains what must be reconfigured and also describes new features that should be considered after the upgrade is completed.  
 
-Budget planning in Microsoft Dynamics 365 for Finance and Operations has many enhancements that weren't available in Microsoft Dynamics AX 2012. This topic explains the changes that customers who upgrade must make. It also points out the new features that should be considered in the upgrade process. Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this topic are made. However, reports should continue to work and not require additional changes.
+Budget planning in Finance has many enhancements that weren't available in Dynamics AX 2012. This topic explains the changes that customers who upgrade must make. It also points out the new features that should be considered in the upgrade process. Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this topic are made. However, reports should continue to work and not require additional changes.
 
 ## Overview of changes
-Many significant changes have been made in Budgeting for Finance and Operations. These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup. The following areas in AX 2012 no longer exist in Finance and Operations:
+Many significant changes have been made in Budgeting for Finance and Operations. These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup. The following areas in AX 2012 no longer exist in Finance:
 
 -   Budget plan templates (Budget planning configuration)
 -   Budget plan folders (Budget planning configuration)
@@ -56,15 +56,15 @@ Columns are a new concept that replace parts of the Excel template and also matr
 
 ### Layouts
 
-Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the Finance and Operations client is better than the user experience in AX 2012. To enter data in the Finance and Operations client, you're no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
+Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the Finance and Operations client is better than the user experience in AX 2012. To enter data in the Finance client, you're no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
 
 ### Budget planning processes
 
-Budget planning processes are mostly the same as in AX 2012. The most significant change is the replacement of templates with layouts. If any processes were previously completed in AX 2012, the processes are updated to a status of in-progress so that changes can be made. You must assign layouts will need for each stage rule to determine which scenarios and time periods appear when the plan is opened in the client. The layouts also determine which Excel template is opened outside Dynamic 365 for Finance and Operations so that you can view the budget. **Default account structure** is a new required field for the Budget planning process. For each Budget planning process, assign the primary account structure that should be used for budgeting.
+Budget planning processes are mostly the same as in AX 2012. The most significant change is the replacement of templates with layouts. If any processes were previously completed in AX 2012, the processes are updated to a status of in-progress so that changes can be made. You must assign layouts will need for each stage rule to determine which scenarios and time periods appear when the plan is opened in the client. The layouts also determine which Excel template is opened outside Dynamic 365 Finance so that you can view the budget. **Default account structure** is a new required field for the Budget planning process. For each Budget planning process, assign the primary account structure that should be used for budgeting.
 
 ### Attachments
 
-In AX 2012, justification documents were saved to an attachment folder. No previous justification documents are upgraded. Justification documents are now stored in the database. If this information should be saved in the upgraded version, you can upload final justification documents for each plan as an attachment by using the **Justification** button on the Action Pane. In AX 2012, Excel worksheets for each budget plan were created based on the template. In Finance and Operations, all plans open a copy of the layout. However, no changes to the Excel file are saved. Any formulas or supporting information that were used on a per-plan basis must be added via comments, a justification document, or some other supplemental process.
+In AX 2012, justification documents were saved to an attachment folder. No previous justification documents are upgraded. Justification documents are now stored in the database. If this information should be saved in the upgraded version, you can upload final justification documents for each plan as an attachment by using the **Justification** button on the Action Pane. In AX 2012, Excel worksheets for each budget plan were created based on the template. In Finance, all plans open a copy of the layout. However, no changes to the Excel file are saved. Any formulas or supporting information that were used on a per-plan basis must be added via comments, a justification document, or some other supplemental process.
 
 ## Configuring an upgraded environment from AX 2012
 To help you determine how to configure the upgraded system, the following example uses an upgraded budget process from AX 2012 demo data. Default configuration data for columns were created to help with the upgrade process. You can update or delete this default data if doesn't meet your configuration requirements. **Note:** There are new required fields that won't be set in the system. If you get stuck on a page, such as the **Budget planning configuration** page, and can't navigate away, you can close your browser and then reopen it to a different page to enter details in the correct order. There are required fields that aren't yet set. Therefore, issues might occur until everything is configured and all required fields have been set. This topic explains how to set these fields, as required. Here are some of these required fields:
@@ -132,7 +132,7 @@ The following options were added as periodic processes. These options let you ge
 
 ### More complete tracking of amounts
 
-In AX 2012, Budget planning had a single plan amount that was stored for each value. In Finance and Operations, the data model has been expanded. There are now accounting currency, transaction currency, and reporting currency amounts for each value. During the upgrade, these new columns are automatically filled in for existing data.
+In AX 2012, budget planning had a single plan amount that was stored for each value. In Finance, the data model has been expanded. There are now accounting currency, transaction currency, and reporting currency amounts for each value. During the upgrade, these new columns are automatically filled in for existing data.
 
 ### Do not convert currency in aggregation
 

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
@@ -45,7 +45,7 @@ A number of APIs from Dynamics AX 2012 have been identified. The reason for the 
 - Chatty (cause lot of traffic back and forth between server and client).
 - Redundant (framework automatically handles these now).
 
-Throughout this table, under the <br/>**Reason for Deprecation** heading, "the client" refers to the Microsoft Dynamics 365 for Finance and Operations Web client.
+Throughout this table, under the <br/>**Reason for Deprecation** heading, "the client" refers to the web client.
 
 ## List of deprecated APIs
 

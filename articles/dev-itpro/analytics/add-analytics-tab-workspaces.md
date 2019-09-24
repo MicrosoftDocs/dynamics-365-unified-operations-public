@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS:
 audience: Application user, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom:
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This feature is supported in Dynamics 365 for Finance and Operations (version 7.2 and later).
+> This feature is supported in Finance and Operations (version 7.2 and later).
 
 ## Introduction
 This topic shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
@@ -51,10 +51,10 @@ Whether you extend an existing application workspace or introduce a new workspac
 4. Optional: Add extensions to customize the view.
 
 > [!NOTE]
-> For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
+> For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). This page is a great source for insights that can help you create compelling analytical reporting solutions.
 
 ## Add a .pbix file as a resource
-Before you begin, you must create or obtain the Power BI report that you will embed in the workspace. For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
+Before you begin, you must create or obtain the Power BI report that you will embed in the workspace. For more information about how to create analytical reports, see [Getting started with Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
 
 Follow these steps to add a .pbix file as a Visual Studio project artifact.
 

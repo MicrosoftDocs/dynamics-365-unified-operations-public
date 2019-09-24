@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -33,7 +33,7 @@ ms.search.validFrom: 2016-05-31
 
 [!include [banner](../includes/banner.md)]
 
-Use these procedures to set up storno accounting in Microsoft Dynamics 365 for Finance and Operations. In storno accounting, you reverse the sign on amounts to reverse incorrect original transactions. For example, the following transactions are incorrectly recorded.
+Use these procedures to set up storno accounting. In storno accounting, you reverse the sign on amounts to reverse incorrect original transactions. For example, the following transactions are incorrectly recorded.
 
 |Description        | Debit |Credit  |
 |-------------------|-------|--------|

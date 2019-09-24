@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52531
 ms.assetid: 97f18d4d-1704-40fd-a0a2-2624a5798d66
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -825,7 +825,7 @@ fUpdateExistingData
 | public str creationTime(\[str value\])                  |                                                                                                                                   |
 | public FormBuildDataSource dataSource(int dataSourceNo) |                                                                                                                                   |
 | public int dataSourceCount()                            |                                                                                                                                   |
-| public str name(\[str value\])                          | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                          | Gets or sets the name used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                      |                                                                                                                                   |
 | public void load(str name, \[boolean buildMode\])       |                                                                                                                                   |
 | public void finalize()                                  |                                                                                                                                   |
@@ -940,7 +940,7 @@ dataSourceNo
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3571,7 +3571,7 @@ arrayIndex
 ## Class DictEnum
     class DictEnum extends Object
 
-The DictEnum class obtains meta-information about the base enum enumerations in the Finance and Operations Application Object Tree (AOT).
+The DictEnum class obtains meta-information about the base enum enumerations in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -3773,7 +3773,7 @@ The label of the enumeration item that is specified by index; an empty string if
 
 #### Remarks
 
-For backward compatibility with earlier versions of Finance and Operations, "Name" in DictEnum::value2Name refers to the enumeration item's label property. To make your code more readable, use the DictEnum::value2Label method instead of the DictEnum::value2Name method. To retrieve the value of the name property of the enumeration item as shown in the AOT, use the DictEnum::value2Symbol method.
+For backward compatibility with earlier versions, "Name" in DictEnum::value2Name refers to the enumeration item's label property. To make your code more readable, use the DictEnum::value2Label method instead of the DictEnum::value2Name method. To retrieve the value of the name property of the enumeration item as shown in the AOT, use the DictEnum::value2Symbol method.
 
 #### Examples
 
@@ -3892,7 +3892,7 @@ The enumeration value for name; 255 if name is not a valid label of an enumerati
 
 #### Remarks
 
-For backward compatibility with earlier versions of Finance and Operations, name refers to the label. Enumeration items that do not have labels cannot be found by using the DictEnum::name2Value method.
+For backward compatibility with earlier versions, name refers to the label. Enumeration items that do not have labels cannot be found by using the DictEnum::name2Value method.
 
 ### Method showAsRadio
 
@@ -4943,7 +4943,7 @@ Returns the specified field from the field group.
 #### Parameters
 
 fieldNumber  
-The one-based index to the list of fields in the field group. The index is in the same order as the Finance and Operations Application Object Tree (AOT).
+The one-based index to the list of fields in the field group. The index is in the same order as the Application Object Tree (AOT).
 
 #### Return Value
 
@@ -5446,7 +5446,7 @@ The ID of the index that is used to create this instance of the DictIndex class.
 ## Class Dictionary
     class Dictionary extends Object
 
-The Dictionary class provides information about tables, extended data types, classes, and other items in the Finance and Operations Application Object Tree (AOT).
+The Dictionary class provides information about tables, extended data types, classes, and other items in the Application Object Tree (AOT).
 
 ### Remarks
 
@@ -5456,32 +5456,32 @@ The Dictionary class provides information about tables, extended data types, cla
 
 | Method                                                                                                                                       | Description                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| public int classCnt()                                                                                                                        | Indicates the number of classes in Finance and Operations.                                                        |
+| public int classCnt()                                                                                                                        | Indicates the number of classes.                                                        |
 | public ClassId classCnt2Id(int cnt)                                                                                                          | Provides the ID of a specified class.                                                                            |
 | public str className(ClassId classId)                                                                                                        | Provides the name of a specified class.                                                                          |
 | public ClassId className2Id(str name)                                                                                                        | Provides the ID for a specified class, based on the class name.                                                  |
 | public ClassId classNext(ClassId classId)                                                                                                    | Indicates the class that succeeds a specified class, based on the class IDs.                                     |
 | public DictClass classObject(ClassId classId)                                                                                                | Provides information about a specified class by returning a DictClass object.                                    |
-| public int configurationKeyCnt()                                                                                                             | Indicates the number of configuration keys in Finance and Operations.                                             |
+| public int configurationKeyCnt()                                                                                                             | Indicates the number of configuration keys.                                             |
 | public ConfigurationKeyId configurationKeyCnt2Id(int cnt)                                                                                    | Provides the ID of a specified configuration key.                                                                |
 | public str configurationKeyName(ConfigurationKeyId configurationKey)                                                                         | Provides the name of a specified configuration key.                                                              |
 | public ConfigurationKeyId configurationKeyName2Id(str name)                                                                                  | Provides the ID for a specified configuration key, based on the configuration key name.                          |
 | public ConfigurationKeyId configurationKeyNext(ConfigurationKeyId configurationKey)                                                          | Indicates the configuration key that succeeds a specified configuration key, based on the configuration key IDs. |
 | public DictConfigurationKey configurationKeyObject(ConfigurationKeyId configurationKey)                                                      | Provides information about a specified configuration key by returning a DictConfigurationKey object.             |
 | public SelectableDataArea currentCompany()                                                                                                   | Indicates the current company for which data is available in the database.                                       |
-| public int enumCnt()                                                                                                                         | Indicates the number of enumeration types in Finance and Operations.                                              |
+| public int enumCnt()                                                                                                                         | Indicates the number of enumeration types.                                              |
 | public EnumId enumCnt2Id(int cnt)                                                                                                            | Provides the ID of a specified enumeration type.                                                                 |
 | public str enumName(EnumId typeId)                                                                                                           | Provides the name for a specified enumeration.                                                                   |
 | public EnumId enumName2Id(str name)                                                                                                          | Provides the ID of a specified enumeration, based on the name.                                                   |
 | public EnumId enumNext(EnumId typeId)                                                                                                        | Indicates the enumeration type that succeeds a specified enumeration type, based on the enumeration type IDs.    |
 | public DictEnum enumObject(EnumId typeId)                                                                                                    | Provides information about a specified enumeration by returning a DictEnum object.                               |
-| public int licenseCodeCnt()                                                                                                                  | Indicates the number of license codes in Finance and Operations.                                                  |
+| public int licenseCodeCnt()                                                                                                                  | Indicates the number of license codes.                                                  |
 | public LicenseCodeId licenseCodeCnt2Id(int cnt)                                                                                              | Provides the ID of a specified license code.                                                                     |
 | public str licenseCodeName(LicenseCodeId licenseCode)                                                                                        | Provides the name of a specified license code.                                                                   |
 | public LicenseCodeId licenseCodeName2Id(str name)                                                                                            | Provides the ID for a specified license code, based on the license code name.                                    |
 | public LicenseCodeId licenseCodeNext(LicenseCodeId licenseCode)                                                                              | Indicates the license code that succeeds a specified license code, based on the license code IDs.                |
 | public DictLicenseCode licenseCodeObject(LicenseCodeId licenseCode)                                                                          | Provides information about a specified license code by returning a DictLicenseCode object.                       |
-| public int tableCnt()                                                                                                                        | Indicates the number of tables in Finance and Operations.                                                         |
+| public int tableCnt()                                                                                                                        | Indicates the number of tables.                                                         |
 | public TableId tableCnt2Id(int cnt)                                                                                                          | Provides the ID of a specified table.                                                                            |
 | public str tableName(TableId tableId)                                                                                                        | Provides the name of a specified table.                                                                          |
 | public TableId tableName2Id(str name)                                                                                                        | Provides the ID for a specified table, based on the table name.                                                  |
@@ -5490,28 +5490,28 @@ The Dictionary class provides information about tables, extended data types, cla
 | public boolean tableSql(TableId tableId)                                                                                                     | Indicates whether a table is a SQL table.                                                                        |
 | public boolean tableSystem(TableId tableId)                                                                                                  | Indicates whether a table is a system table.                                                                     |
 | public int testCode(int id, str value, str name, str serialno, str expiryDate, \[int userCount\], \[boolean verifyCert\], \[str timestamp\]) |                                                                                                                  |
-| public int typeCnt()                                                                                                                         | Indicates the number of extended data types in Finance and Operations.                                            |
+| public int typeCnt()                                                                                                                         | Indicates the number of extended data types.                                            |
 | public ExtendedTypeId typeCnt2Id(int cnt)                                                                                                    | Provides the ID of a specified extended data type.                                                               |
 | public str typeName(ExtendedTypeId typeId)                                                                                                   | Provides the name of a specified extended data type.                                                             |
 | public ExtendedTypeId typeName2Id(str name)                                                                                                  | Provides the ID for a specified extended data type, based on the extended data type name.                        |
 | public ExtendedTypeId typeNext(ExtendedTypeId typeId)                                                                                        | Indicates the extended data type that succeeds a specified extended data type, based on the IDs.                 |
 | public DictType typeObject(ExtendedTypeId typeId)                                                                                            | Provides information about a specified extended data type by returning a DictType object.                        |
 | ::public static boolean safeMode()                                                                                                           |                                                                                                                  |
-| ::public static void loginSettingsFlush()                                                                                                    | Refreshes the logon settings for Finance and Operations.                                                          |
-| ::public static void dataFlush(\[TableId tableId\])                                                                                          | Refreshes the table data in Finance and Operations.                                                               |
-| public void tableFlush()                                                                                                                     | Refreshes the tables in Finance and Operations.                                                                   |
-| public void enumFlush()                                                                                                                      | Refreshes the enumeration types in Finance and Operations.                                                        |
+| ::public static void loginSettingsFlush()                                                                                                    | Refreshes the logon settings.                                                          |
+| ::public static void dataFlush(\[TableId tableId\])                                                                                          | Refreshes the table data.                                                               |
+| public void tableFlush()                                                                                                                     | Refreshes the tables.                                                                   |
+| public void enumFlush()                                                                                                                      | Refreshes the enumeration types.                                                        |
 | public void new()                                                                                                                            | Initializes a new instance of the Dictionary class.                                                              |
-| public void classFlush()                                                                                                                     | Refreshes the classes in Finance and Operations.                                                                  |
+| public void classFlush()                                                                                                                     | Refreshes the classes.                                                                  |
 | public void reloadSecurity(\[boolean reloadCodes\], \[boolean setSynchronizeRequired\], \[boolean flushTable\])                              | Reloads the feature key system.                                                                                  |
-| public void typeFlush()                                                                                                                      | Refreshes the extended data types in Finance and Operations.                                                      |
-| public void configurationKeyFlush()                                                                                                          | Refreshes the configuration keys in Finance and Operations.                                                       |
-| public void licenseCodeFlush()                                                                                                               | Refreshes the license codes in Finance and Operations.                                                            |
+| public void typeFlush()                                                                                                                      | Refreshes the extended data types.                                                      |
+| public void configurationKeyFlush()                                                                                                          | Refreshes the configuration keys.                                                       |
+| public void licenseCodeFlush()                                                                                                               | Refreshes the license codes.                                                            |
 | ::public static void aodFlush()                                                                                                              | Refreshes the .aod file.                                                                                         |
 
 ### Method classCnt
 
-Indicates the number of classes in Finance and Operations.
+Indicates the number of classes.
 
     public int classCnt()
 
@@ -5528,7 +5528,7 @@ Provides the ID of a specified class.
 #### Parameters
 
 cnt  
-An integer value that specifies a class, based on the order of classes in Finance and Operations.
+An integer value that specifies a class, based on the order of classes.
 
 #### Return Value
 
@@ -5600,7 +5600,7 @@ A DictClass object that contains information about the specified class.
 
 ### Method configurationKeyCnt
 
-Indicates the number of configuration keys in Finance and Operations.
+Indicates the number of configuration keys.
 
     public int configurationKeyCnt()
 
@@ -5617,7 +5617,7 @@ Provides the ID of a specified configuration key.
 #### Parameters
 
 cnt  
-An integer that specifies a configuration key, based on the order of configuration keys in Finance and Operations.
+An integer that specifies a configuration key, based on the order of configuration keys.
 
 #### Return Value
 
@@ -5695,7 +5695,7 @@ A selectableDataArea system data type value that indicates the current company.
 
 ### Method enumCnt
 
-Indicates the number of enumeration types in Finance and Operations.
+Indicates the number of enumeration types.
 
     public int enumCnt()
 
@@ -5712,7 +5712,7 @@ Provides the ID of a specified enumeration type.
 #### Parameters
 
 cnt  
-An integer that specifies an enumeration type, based on the order of enumeration types in Finance and Operations.
+An integer that specifies an enumeration type, based on the order of enumeration types.
 
 #### Return Value
 
@@ -5780,7 +5780,7 @@ A DictEnum object that contains information about the specified enumeration.
 
 ### Method licenseCodeCnt
 
-Indicates the number of license codes in Finance and Operations.
+Indicates the number of license codes.
 
     public int licenseCodeCnt()
 
@@ -5797,7 +5797,7 @@ Provides the ID of a specified license code.
 #### Parameters
 
 cnt  
-An integer that specifies a license code, based on the order of license codes in Finance and Operations.
+An integer that specifies a license code, based on the order of license codes.
 
 #### Return Value
 
@@ -5865,7 +5865,7 @@ A DictLicenseCode object that contains information about the specified license c
 
 ### Method tableCnt
 
-Indicates the number of tables in Finance and Operations.
+Indicates the number of tables.
 
     public int tableCnt()
 
@@ -6026,7 +6026,7 @@ timestamp
 
 ### Method typeCnt
 
-Indicates the number of extended data types in Finance and Operations.
+Indicates the number of extended data types.
 
     public int typeCnt()
 
@@ -6043,7 +6043,7 @@ Provides the ID of a specified extended data type.
 #### Parameters
 
 cnt  
-An integer that specifies an extended data type, based on the order of extended data types in Finance and Operations.
+An integer that specifies an extended data type, based on the order of extended data types.
 
 #### Return Value
 
@@ -6117,13 +6117,13 @@ A DictType object that contains information about the specified extended data ty
 
 ### Method loginSettingsFlush
 
-Refreshes the logon settings for Finance and Operations.
+Refreshes the logon settings.
 
     public static void loginSettingsFlush()
 
 ### Method dataFlush
 
-Refreshes the table data in Finance and Operations.
+Refreshes the table data.
 
     public static void dataFlush([TableId tableId])
 
@@ -6138,13 +6138,13 @@ By default, this method refreshes data in all tables.
 
 ### Method tableFlush
 
-Refreshes the tables in Finance and Operations.
+Refreshes the tables.
 
     public void tableFlush()
 
 ### Method enumFlush
 
-Refreshes the enumeration types in Finance and Operations.
+Refreshes the enumeration types.
 
     public void enumFlush()
 
@@ -6156,7 +6156,7 @@ Initializes a new instance of the Dictionary class.
 
 ### Method classFlush
 
-Refreshes the classes in Finance and Operations.
+Refreshes the classes.
 
     public void classFlush()
 
@@ -6184,19 +6184,19 @@ The default value for the \_reloadCodes parameter is false. The default value fo
 
 ### Method typeFlush
 
-Refreshes the extended data types in Finance and Operations.
+Refreshes the extended data types.
 
     public void typeFlush()
 
 ### Method configurationKeyFlush
 
-Refreshes the configuration keys in Finance and Operations.
+Refreshes the configuration keys.
 
     public void configurationKeyFlush()
 
 ### Method licenseCodeFlush
 
-Refreshes the license codes in Finance and Operations.
+Refreshes the license codes.
 
     public void licenseCodeFlush()
 
@@ -6314,7 +6314,7 @@ licenseCodeId
 | public ClassRunMode runMode()                               | Specifies where a method is run.                                                                                                                             |
 | public int varCnt()                                         | Gets the number of variables for the method.                                                                                                                 |
 | public str varName(int variableNumber)                      | Gets the name of the specified variable.                                                                                                                     |
-| public void setMethod(MemberFunction method)                | Specifies the application object type of a node in the Finance and Operations Application Object Tree (AOT) by using an instance of the MemberFunction class. |
+| public void setMethod(MemberFunction method)                | Specifies the application object type of a node in the Application Object Tree (AOT) by using an instance of the MemberFunction class. |
 | public void new(UtilElementType utilType, int id, str name) | Initializes a new instance of the Object class.                                                                                                              |
 
 ### Method accessSpecifier
@@ -6628,7 +6628,7 @@ The name of the specified variable.
 
 ### Method setMethod
 
-Specifies the application object type of a node in the Finance and Operations Application Object Tree (AOT) by using an instance of the MemberFunction class.
+Specifies the application object type of a node in the Application Object Tree (AOT) by using an instance of the MemberFunction class.
 
     public void setMethod(MemberFunction method)
 
@@ -7188,7 +7188,7 @@ An AOSAuthorization system enumeration value.
 
 #### Remarks
 
-The AOSAuthorization::None value indicates that an authorization check is not performed. Use table properties to set the AOSAuthorization property for a table. In the Finance and Operations Application Object Tree (AOT), right-click the table, and then click Properties to access the table properties.
+The AOSAuthorization::None value indicates that an authorization check is not performed. Use table properties to set the AOSAuthorization property for a table. In the Application Object Tree (AOT), right-click the table, and then click Properties to access the table properties.
 
 #### Examples
 
@@ -9532,7 +9532,7 @@ A Boolean value that indicates whether the user interface language is used for t
 
 #### Return Value
 
-A string value for the Help text that is displayed for the extended data type, or for an array element if the arrayEntry value is provided. The Help text corresponds to the Help Text property for an extended data type or array element in the Finance and Operations Application Object Tree (AOT). When an extended data type does not have Help text, the method returns the Help text that is defined for the extended data type that the extended data type extends.
+A string value for the Help text that is displayed for the extended data type, or for an array element if the arrayEntry value is provided. The Help text corresponds to the Help Text property for an extended data type or array element in the Application Object Tree (AOT). When an extended data type does not have Help text, the method returns the Help text that is defined for the extended data type that the extended data type extends.
 
 ### Method helpDefined
 
@@ -10331,11 +10331,11 @@ This class lets you create, read, update, and delete X++ code and metadata. Make
 | public Date creationDate(\[Date value\])                                                                                                                                                          | Gets or sets the date that an application object was created.                                                                           |
 | public str creationTime(\[str value\])                                                                                                                                                            |                                                                                                                                         |
 | public str description(\[str value\])                                                                                                                                                             | Sets or returns the description of the documentation node.                                                                              |
-| public str name(\[str value\])                                                                                                                                                                    | Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object. |
+| public str name(\[str value\])                                                                                                                                                                    | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int neededAccessLevel(\[int value\])                                                                                                                                                       | Gets or sets the neededAccessLevel property for the MenuFunction class.                                                                 |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                                                                                                                                         | Sets or returns the security key for the documentation node.                                                                            |
 | public str title(\[str value\])                                                                                                                                                                   | Sets or returns the title of the documentation node.                                                                                    |
-| ::public static DocNode findAOTElementDocNode(ApplCodeDocType HelpType, str Name, \[str ParentName\], \[int Mode\])                                                                               | Performs a search for an element documentation node in the Finance and Operations Application Object Tree (AOT).                         |
+| ::public static DocNode findAOTElementDocNode(ApplCodeDocType HelpType, str Name, \[str ParentName\], \[int Mode\])                                                                               | Performs a search for an element documentation node in the Application Object Tree (AOT).                         |
 | ::public static DocNode findApplicationDocNode(ApplHelpType HelpType, str Name, \[str ParentName\], \[int Mode\])                                                                                 | Performs a search for an application element documentation node.                                                                        |
 | ::public static DocNode findKernelDocNode(KernelHelpType HelpType, str Name, \[str ParentName\], \[int Mode\])                                                                                    | Performs a search for a kernel element documentation node.                                                                              |
 | ::public static DocNode getNodeDetached(UtilFileType helpType, int UtilType, str Name, \[int ParentId\], \[int Type\], \[UtilEntryLevel Utillevel\], \[boolean Forcelevel\], \[boolean OldUtil\]) | Returns the specified documentation node.                                                                                               |
@@ -10473,7 +10473,7 @@ The description of the documentation node.
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or other Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -10552,7 +10552,7 @@ The title of the documentation node.
 
 ### Method findAOTElementDocNode
 
-Performs a search for an element documentation node in the Finance and Operations Application Object Tree (AOT).
+Performs a search for an element documentation node in the Application Object Tree (AOT).
 
     public static DocNode findAOTElementDocNode(ApplCodeDocType HelpType, str Name, [str ParentName], [int Mode])
 

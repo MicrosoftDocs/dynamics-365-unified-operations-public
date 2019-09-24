@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27001
@@ -39,7 +39,7 @@ This topic explains how delegate methods serve as a means for defining a contrac
 Overview
 --------
 
-Microsoft Dynamics 365 for Finance and Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [Models](../dev-tools/models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. 
+Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models](../dev-tools/models.md).
 
 [![Del1](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -66,7 +66,7 @@ In order for a delegate to be properly handled, the delegate method declaration,
 
 ![static delegate handler](media/static-delegate-handler.png)
 
-Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](http://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
+Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
 
 ## Example scenarios
 ### Overlaying an existing delegate
@@ -79,7 +79,7 @@ When comparing this overlay with the code from Dynamics AX 2012, this is a simpl
 
 [![5](./media/51.png)](./media/51.png) 
 
-However, the Finance and Operations section does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the section for Finance and Operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
 [![6](./media/61.png)](./media/61.png) 
 
@@ -113,8 +113,8 @@ delegate void applyDiscountDelegate(real _receiptTotal, EventHandlerResult _resu
 } 
 ```
 
-
-**Note:** The signature for the delegate declaration, the delegate instance, and the delegate handler must match. We now have to create an instance of the delegate at the point in the code where we would like the delegate handler to be run. The changes in between the &lt;isv&gt; tags represent the added code. 
+> [!NOTE]
+> The signature for the delegate declaration, the delegate instance, and the delegate handler must match. We now have to create an instance of the delegate at the point in the code where we would like the delegate handler to be run. The changes in between the &lt;isv&gt; tags represent the added code. 
 
 ![calculateTotalTax method](media/calculate-total-tax.png)
 
@@ -122,7 +122,10 @@ With the delegate in place, we now add a handler method in the Application Suite
 
 ![applyDiscountDelegateHandler method](media/apply-discount-delegate-handler.png)
 
-Using the SubscribesTo keyword, we tie the applyDiscountDelegateHandler method as a handler to the applyDiscountDelegate delegate. **Note:** There can be more than one handler per delegate. There is **not** a defined order in the processing of handler methods. If order is important, delegate handler pairs should be chained together. With the final classes below, when the calculateTotalTax() method is run, the applyDiscountDelegate is fired and handled, updating the receiptTotal to provide an accurate tax calculation.
+Using the SubscribesTo keyword, we tie the applyDiscountDelegateHandler method as a handler to the applyDiscountDelegate delegate.
+
+> [!NOTE]
+> There can be more than one handler per delegate. There is **not** a defined order in the processing of handler methods. If order is important, delegate handler pairs should be chained together. With the final classes below, when the calculateTotalTax() method is run, the applyDiscountDelegate is fired and handled, updating the receiptTotal to provide an accurate tax calculation.
 
 #### Full Code
 
@@ -156,6 +159,3 @@ Methods two and three can be used in parallel to the metadata search. The class 
 Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. 
 
 [![Del18](./media/del18-1024x328.png)](./media/del18.png)
-
-
-

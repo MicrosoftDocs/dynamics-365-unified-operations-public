@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Brazil
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Brazil. 
+title: Brazil overview
+description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Brazil. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Brazil 
+# Brazil overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Brazil. 
+This topic includes information and links to resources that can help you set up legal entities with a primary address in Brazil. 
   
 - [Fiscal books](latam-bra-fiscal-books.md)
   - [Configure fiscal books](latam-bra-configure-fiscal-books.md)
@@ -56,8 +56,8 @@ This topic includes information and links to resources that can help you set up 
    - [Set up NF-e federal parameters](tasks/br-00053-1-set-up-nf-e-federal-parameters.md)
    - [Set up NF-e parameters for a fiscal establishment](tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md)
 - [Parameters for legal entities](latam-bra-legal-entity-parameters.md)
-- [Acquire a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
-- [Dispose a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
+- [Acquire and dispose a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
+- [SPED ECD](latam-bra-sped-ecd.md)
 - [Taxes](latam-bra-calculate-taxes.md)
   - [Calculate tax on purchase quotations](tasks/br-00031-tax-calculation-purchase-quotation.md)
   - [Create a tax assessment - ICMS](tasks/br-10001-4-create-tax-assessment-icms.md)

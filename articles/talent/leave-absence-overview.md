@@ -3,7 +3,7 @@
 
 title: Leave and absence management
 description: This topic provides an overview of the Leave and absence management module. 
-author: ryansandness
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: LeaveAbsenceWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ryansand
+ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 

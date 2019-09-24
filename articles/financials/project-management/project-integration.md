@@ -17,7 +17,7 @@ ms.search.form: ProjWbsTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 87983
@@ -36,10 +36,10 @@ ms.dyn365.ops.version: 7.3
 
 Planning and maintaining a project schedule can be complex, so project managers need to use tools that help them manage this task. 
 Integration with Microsoft Project Client provides support to open and manage a project work breakdown structure. The project manager 
-can publish any changes back to the Finance and Operations project work breakdown structure.
+can publish any changes back to the Dynamics 365 Finance project work breakdown structure.
 
 > [!NOTE]
-> If you are using Microsoft Dynamics 365 for Finance and Operations, July update, you must install KB 4054797 and 4055884.
+> If you are using the July update (version 10.0.4), you must install KB 4054797 and 4055884.
 
 ## Configure the Microsoft Project Client add-in
 To enable the integration with Microsoft Project Client, a Microsoft Dynamics 365 add-in is required to be installed in the user’s 
@@ -50,7 +50,7 @@ client Microsoft Project application. This is done by opening the **Project mana
 •	Click **Open**, then click **Run** when prompted.
 
 ## Open and edit an existing draft work breakdown structure in Microsoft Project Client
-If a project in Finance and Operations already has a work breakdown structure created, the work breakdown structure can be opened in the
+If a project in Dynamics 365 Finance already has a work breakdown structure created, the work breakdown structure can be opened in the
 Microsoft Project Client application if the work breakdown structure is in a draft status. To open from the **Project** page, click 
 **Open in Microsoft Project** link from the **Plan** tab. This page can also be opened from within the Microsoft Project Client 
 application by clicking **Open** in the **Microsoft Dynamics 365** tab. Select the **Legal entity** and **Project** from the list.
@@ -59,14 +59,14 @@ application by clicking **Open** in the **Microsoft Dynamics 365** tab. Select t
 > If you're using Internet Explorer as your browser, you will need to click **Save** to manually open from the location that the file is downloaded to. Or, click **Save and open** to open the file in Microsoft Project Client. Do not rename the file name when saving.
 
 Before making any edits to the file using Microsoft Project Client, you need to check it out. Click **Check out** in the **Microsoft 
-Dynamics 365** tab. This will prevent other users from editing the work breakdown structure from within Finance and Operations at the 
+Dynamics 365** tab. This will prevent other users from editing the work breakdown structure from within Finance at the 
 same time. To publish the work breakdown structure after completing any edits, click **Check in** on the **Microsoft Dynamics 365** tab.
 
-If a project team has already been added to the project in Finance and Operations, the resource list will be populated with the team 
+If a project team has already been added to the project in Finance, the resource list will be populated with the team 
 members. If a project team has not yet been added to the project, you can select resources and build the team within Microsoft Project 
 Client by clicking the **Resources** button on the **Microsoft Dynamics 365** tab. 
 
-The following data will be synced back to Finance and Operations as part of the check in process:
+The following data will be synced back to Finance as part of the check-in process:
 
 •	Task name
 
@@ -106,7 +106,7 @@ To create a new work breakdown structure using Microsoft Project Client, follow 
 
 5.	Click **Check out** on the **Microsoft Dynamics 365** tab.
 
-6.	When ready to publish to Finance and Operations, click **Check in** on the **Microsoft Dynamics 365** tab.
+6.	When ready to publish to Finance, click **Check in** on the **Microsoft Dynamics 365** tab.
 
 ## Replace the existing work breakdown structure for an existing project using Microsoft Project Client
 To create a new work breakdown structure using Microsoft Project Client and replace an existing work breakdown structure for an existing

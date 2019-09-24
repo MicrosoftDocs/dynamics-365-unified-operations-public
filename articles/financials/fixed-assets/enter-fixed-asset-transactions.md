@@ -2,10 +2,10 @@
 # required metadata
 
 title: Fixed asset transaction options
-description: This article describes the different methods available to create fixed asset transactions.
+description: This topic describes the different methods available to create fixed asset transactions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: AssetTable, PurchCreateOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23061
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the different methods available to create fixed asset transactions.
+This topic describes the different methods available to create fixed asset transactions.
 
 You can set up Fixed assets for integration with Accounts payable, Accounts receivable, Procurement and sourcing, and General ledger. You can also transfer items in Inventory management to Fixed assets if you want to use those items internally.
 
@@ -70,8 +70,6 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 | ** **                               | Accounts receivable      | Free text invoice                         |
 
 
+The Depreciation periods remaining value of the fixed asset is not updated when a depreciation transaction type journal line is manually created or imported through a data entity. This value is updated when the depreciation proposal process is used to create the journal line.
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
-
-
-

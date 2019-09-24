@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195943
@@ -41,13 +41,13 @@ When you troubleshoot service authentication issues, there are a few basic and c
 ## Inspect the JWT
 ### Capture the JWT from an HTTP request
 
-1. Download Fiddler from <http://www.telerik.com/fiddler>.
+1. Download Fiddler from <https://www.telerik.com/fiddler>.
 2. Set up HTTPS capture to watch the HTTPS traffic from the client.
 3. Find the Open Authorization (OAuth) JSON Web Token (JWT). It's the value of the HTTP "Authorization" header without the "bearer" segment.
 
 ### Use a deserializer tool to look at the token contents
 
-1. Go to <http://jwt.io>, and paste the JWT into the input panel.
+1. Go to <https://jwt.io>, and paste the JWT into the input panel.
 2. View the contents in the form of name-value pairs. See the example that follows.
 3. Verify that the following information is correct:
 

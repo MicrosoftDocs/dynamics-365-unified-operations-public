@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Provisioning for the Dynamics 365 for Talent modular apps
-description: This topic provides information about how to provision the standalone modular applications that can be purchased to provide core human resources (HR) functionality that is included in Microsoft Dynamics 365 for Talent. This functionality provides additional experiences, such as Attract and Onboard.
-author: rschloma
+title: Provisioning for the Dynamics 365 for Talent - Onboard app
+description: This topic provides information about how to provision the standalone Dynamics 365 Talent - Onboard app.
+author: andreabichsel
 manager: AnnBe
-ms.date: 08/03/2018
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,36 +18,36 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro 
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
-
 ---
-# Provisioning for the Dynamics 365 for Talent modular apps
+
+# Provisioning for the Onboard app
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent includes core human resources (HR) capabilities and functionality that provide additional experiences, such as Attract and Onboard. This functionality can also be purchased as standalone modular applications through web-direct. Examples include Microsoft Dynamics 365 for Talent: Attract and Microsoft Dynamics 365 for Talent: Onboard SKUs. Depending on whether you purchase full Talent or the modular applications, the experience differs somewhat.
+The full version of Microsoft Dynamics 365 Talent includes core human resources (HR) capabilities plus Attract and Onboard, which provide recruiting and onboarding experiences for your organization. You can also purchase a standalone version of the Onboard app. Depending on whether you purchase the full version of Talent or the standalone Onboard app, the provisioning experience is slightly different.
 
-Modular applications are automatically provisioned when you initiate a trial of the services or purchase them through web-direct. Customers can sign up for trials of Attract and Onboard separately.
+The Onboard app is automatically provisioned when you start a trial or purchase it online. The full version of Talent requires Microsoft Dynamics Lifecycle Services (LCS) for provisioning, but the standalone Onboard app doesn't require LCS.
 
-Although Microsoft Dynamics Lifecycle Services (LCS) is used to provision Talent, it isn't used to provision the modular applications.
+With the standalone Onboard app, you don't select the exact location where it should be provisioned. Instead, the following factors determine where Onboard is provisioned:
 
-Customers don't select the exact location where the modular applications should be provisioned. Instead, the following factors determine where the modular applications are provisioned:
+- The location of your organization's existing Microsoft PowerApps environments, if any.
+- If no PowerApps environments exist, the location of the organization's existing tenant.
+- The data centers that Talent currently supports.
 
-+ The location of the organization's existing Microsoft PowerApps environments
-+ If no PowerApps environments exist, the location of the organization's existing tenant
-+ The data centers that Talent currently supports
+The Onboard app is provisioned only in supported countries or regions. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
 
-Modular applications will be provisioned only in supported countries or regions. The following illustration shows the logic that is used. (The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency.)
+The following illustration shows the logic used for provisioning the standalone Onboard app.
 
-[![Provisioning process for modular applications, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
+[![Provisioning process for the standalone Onboard app, based on country/region](./media/modular-apps-diagram-mod-app-tech.png)](./media/modular-apps-diagram-mod-app-tech.png)
 
-Unlike Talent, the modular applications don't maintain a list of the environments that each user can access. Users are automatically signed in to the last environment that they used. They can then select different environments by using the **Settings** button (the gear symbol).
+Unlike the full version of Talent, the standalone Onboard app doesn't maintain a list of the environments that each user can access. Users are automatically signed in to the last environment they used. They can then select different environments by using the **Settings** button (the gear symbol).

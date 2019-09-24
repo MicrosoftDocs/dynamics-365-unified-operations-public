@@ -2,8 +2,8 @@
 # required metadata
 
 title: Email templates
-description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 for Talent - Attract.
-author: josaw
+description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 Talent - Attract.
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Email templates
 [!include[banner](../includes/banner.md)]
 
-By using the email template library, admins can create a uniform theme and branding for all emails that are sent through Microsoft Dynamics 365 for Talent: Attract. Admins can also curate a collection of email content templates that other users can consume. The hiring team can use these templates in their workflow to send emails more efficiently. Some emails in Attract are configured to be sent automatically, and the admin can use the email template library to customize the content for those emails.
+By using the email template library, admins can create a uniform theme and branding for all emails that are sent through Microsoft Dynamics 365 Talent: Attract and Offer. Admins can also curate a collection of email content templates that other users can consume. The hiring team can use these templates in their workflow to send emails more efficiently. Some emails are configured to be sent automatically, and the admin can use the email template library to customize the content for those emails.
 
 > [!NOTE]
 > To use Email templates, your organization must have the Comprehensive Hiring add-on.
@@ -42,7 +42,7 @@ By using the email template library, admins can create a uniform theme and brand
 
 To create consistent branding for all email communications, the admin must first set the global header and footer for all email templates. In the Admin center, on the **Email template settings** tab, in the **Header** section, the admin can upload an image to use as the header or banner for all emails. The image might be a company logo, a letterhead, or any other representative image. We recommend that the width be between 25 and 800 pixels, and that the height be between 25 and 150 pixels, because these dimensions are optimal for most email clients, such as Microsoft Outlook. The image must be a JPEG, JPG, PNG, or SVG file, and the file size must be less than 1 megabyte (MB). After an image is uploaded, a preview of the header is generated and shown. If the header image must be removed or replaced, the admin can use the **Remove** option above the preview.
 
-In the **Footer** section, the admin can provide links to the company's privacy policy for communications, and to the terms and conditions. These links are incorporated into a footer that is automatically generated. A preview of this footer is then shown.
+In the **Footer** section, the admin can provide links to the company's privacy policy for communications, and to the terms and conditions. These links are incorporated into a footer that is automatically generated. A preview of this footer is then shown. The admin can also choose a particular language in which email footers will be sent as part of all emails. The same language configuration will also be used for putting together the interview summary table. 
 
 Be sure to save your changes before you close the Admin center.
 
@@ -51,7 +51,7 @@ Be sure to save your changes before you close the Admin center.
 
 ## Email template library 
 
-After the global template configurations are set up, the admin can start to create and curate templates for all emails that are sent from Attract. The email template library is available only to admins. To open the library, on the main navigation menu, select the **Email templates** tab. The library is categorized by the various activities in Attract that emails must be sent for, such as scheduling, assessment, and job creation. The admin can select any category to view all the email types that are associated with the activity. For example, select **Scheduling** to view the various types of email that are sent during the scheduling process and all the templates that are available for each type of email. Each subsection in a category represents a type of email.
+After the global template configurations are set up, the admin can start to create and curate templates for all emails that are sent from Attract and Offer. The email template library is available only to admins. To open the library, on the main navigation menu, select the **Email templates** tab. The library is categorized by the various activities in Attract that emails must be sent for, such as scheduling, assessment, job creation and offer. The admin can select any category to view all the email types that are associated with the activity. For example, select **Scheduling** to view the various types of email that are sent during the scheduling process and all the templates that are available for each type of email. Each subsection in a category represents a type of email.
 
 Some types of email can have more than one recipient. For example, in the **Scheduling** category, the emails that are sent when the interview schedule summary is needed, are sent to both candidates and interviewers. Each section has two main columns: **Template Title** and **Recipient**. Each row in a section represents a single template for a type of email. At first, a lock symbol will appear in the row for every template. This symbol indicates that the template is the standard template that is provided with Attract, and that it can't be deleted. For any template, the admin can use the ellipsis button (**...**) to duplicate the template, set it as a default template, or delete it. When a template is set as a default template, one of two behaviors can occur. The behavior is indicated by the badge or badges that appear in the row for the template:
 

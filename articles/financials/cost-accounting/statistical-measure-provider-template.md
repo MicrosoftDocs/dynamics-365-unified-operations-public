@@ -17,7 +17,7 @@ ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimens
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -76,7 +76,7 @@ Here are some examples of typical statistical dimension members.
 
 ## Statistical measure provider template
 
-Statistical measures can originate from many kinds of sources. Microsoft Dynamics 365 for Finance and Operations, is a great source to extract statistical measures from. You can use a statistical measure provider template to easily configure the statistical measures that you want to extract.
+Statistical measures can originate from many kinds of sources. Dynamics 365 Finance is a great source to extract statistical measures from. You can use a statistical measure provider template to easily configure the statistical measures that you want to extract.
 
 The definition of a statistical measure provider template is generic and can be reused in multiple statistical dimension members.
 
@@ -135,13 +135,13 @@ Before you can get statistical measures into Cost accounting, you must establish
 > [!NOTE]
 > In this example, we will create a relation only for the **Actual version**.
 
-Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 for Finance and Operations – Statistical measures** data connector, because we want to extract data from Finance and Operations.
+Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 Finance – Statistical measures** data connector, because we want to extract data from Finance.
 
 **Data source**
 
 | Name        | Data connector                                                                     | Statistical dimension member |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| FTEs D365FO | Dynamics 365 for Finance and Operations – Statistical measures | FTEs                         |
+| FTEs D365FO | Dynamics 365 Finance – Statistical measures | FTEs                         |
 
 **Data provider configuration**
 
@@ -223,13 +223,13 @@ Before you can get statistical measures into Cost accounting, you must establish
 > [!NOTE]
 > In this example, we will create a relation only for the **Actual version**.
 
-Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 for Finance and Operations – Statistical measures** data connector, because we want to extract data from Finance and Operations.
+Go to **Cost accounting ledger** \> **Actual version** \> **Manage** \> **Statistical measures** to establish the relation. For this scenario, select the **Dynamics 365 Finance – Statistical measures** data connector, because we want to extract data from Finance.
 
 **Data source**
 
 | Name           | Data connector                                                                     | Statistical dimension member |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Pack CC D365FO | Dynamics 365 for Finance and Operations – Statistical measures | Pack CC                      |
+| Pack CC D365FO | Dynamics 365 Finance – Statistical measures | Pack CC                      |
 
 The system recognizes that ProdRouteTrans is a table where each record belongs to a separate legal entity. Therefore, you will be asked to select the legal entity that transactions should be imported from.
 

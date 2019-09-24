@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities
+title: Data entities overview
 description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/16/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 22051
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities
+# Data entities overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -102,7 +102,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Finance and Operations, especially the following assets:
+After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into the application, especially the following assets:
 
 - Master data (for example, customers and vendors)
 - Subsets of documents (for example, sales orders)
@@ -187,7 +187,7 @@ Refreshing the entity list ensures all entities are available in the environment
 ## Configuration keys and data entities
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 
-To learn more about configuration keys in Finance and Operations, see the [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md).
+To learn more about configuration keys, see the [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md).
 
 ### Configuration key assignments
 Configuration keys can be assigned to one or all of the following artifacts.

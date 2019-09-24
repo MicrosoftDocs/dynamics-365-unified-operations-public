@@ -2,10 +2,10 @@
 # required metadata
 
 title: On-premises diagnostics
-description: This topic provides information about how to expose the diagnostic data for on-premises deployments of Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/08/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform Update 12
 
 [!include [banner](../includes/banner.md)]
 
-The Microsoft Dynamics 365 for Finance and Operations team monitors the health and performance of the Azure Services that provide functionality for our cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who have implemented Finance and Operations on-premises and would like to have the ability to monitor the health and performance of their on-premises solution, there are several third-party offerings available. 
+The Microsoft Dynamics 365 team monitors the health and performance of the Azure Services that provide functionality for our cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who have implemented Finance + Operations (on-premises) and would like to have the ability to monitor the health and performance of their on-premises solution, there are several third-party offerings available. 
 
 This topic describes the setup and configuration of Elastic Stack, a third-party product, and one of many choices that can provide  diagnostic monitoring of your on-premises solution.
 
@@ -49,7 +49,7 @@ When you consider a diagnostic solution, consider the following fundamentals of 
 > By default, communication in an Elastic Stack cluster is not sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The paid version of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see Setting up TLS on a cluster. There is also an open source Elasticsearch plug-in. Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS. Microsoft recommends that you always utilize encrypted communication using HTTPs, VPN, or another secure, encrypted protocol. Many industry certifications and laws require the use of encrypted transmission if your content includes end user, customer, personal, or sensitive data.
 
 ## Diagnostic data guidelines
-To diagnose the deployment and execution of Microsoft Dynamics 365 for Finance and Operations, you must have access to diagnostic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
+To diagnose the deployment and execution of Finance + Operations (on-premises), you must have access to diagnostic data. For a cloud deployment, Microsoft stores and monitors the diagnostic data from services to help keep the environment healthy. For an on-premises deployment, the customer is responsible for this task.
 
 You can select the diagnostic data store and query tool that you prefer to use. However, at a minimum, the tool should perform the following tasks:
 
@@ -71,10 +71,10 @@ To meet the diagnostic data guidelines that are listed in the previous section, 
 
 If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this topic. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 for Finance and Operations 7.3 with platform update 12.
 
-This topic describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for a on-premises deployment of Finance and Operations. For guidance that isn't related to Finance and Operations, see the documentation on Elastic.co.
+This topic describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for an on-premises deployment. For guidance that isn't related to Finance + Operations (on-premises), see the documentation on Elastic.co.
 
 ## Install and configure the Elastic Stack
-All hosted components of the Elastic Stack, except Winlogbeat, run on Java. For the test scenario, Microsoft first downloaded and installed the latest version of Java Runtime Environment (JRE) 8 (64-bit) on each node that will run Elasticsearch, Logstash, or Kibana (that is, all the Orchestrator nodes). You can get Java 8 from [http://www.oracle.com/technetwork/java/javase/downloads/index.html](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
+All hosted components of the Elastic Stack, except Winlogbeat, run on Java. For the test scenario, Microsoft first downloaded and installed the latest version of Java Runtime Environment (JRE) 8 (64-bit) on each node that will run Elasticsearch, Logstash, or Kibana (that is, all the Orchestrator nodes). You can get Java 8 from [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 As of June 2018, the Elastic Stack runs on Java 8. Any attempt to run it on a newer version of Java might not work.
 
@@ -86,7 +86,7 @@ Remember to open ports in the firewall for the various components on each node.
 If you get stuck during setup, Elastic.co has extensive and well-written documentation about the installation and configuration of the Elastic Stack. For help with specific types of errors, web searches yield reliable results from both the Elastic.co forum and StackOverflow.
 
 ### Component matrix
-For its tests, Microsoft used the following setup for a small to medium-sized Finance and Operations deployment.
+For its tests, Microsoft used the following setup for a small to medium-sized deployment.
 
 | Node            | Elasticsearch | Logstash | Kibana | Winlogbeat |
 |-----------------|---------------|----------|--------|------------|
@@ -150,7 +150,7 @@ To help ensure that Logstash runs on startup, we used the Non-Sucking Service Ma
 
 In the tests that Microsoft performed, NSSM had trouble restarting the installed services. Because NSSM wasn't 100-percent reliable for Logstash and Kibana, the service was treated as an OS startup service and little else.
 
-Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on Finance and Operations diagnostics.
+Microsoft created a configuration file for Logstash and put it in [C:\\ELK\\Logstash\\6.2.4\\config](https://aka.ms/ConfigFilesOnPremises). This file performs useful transformations on diagnostics.
 
 To make the configuration work for your setup, you must change the **hosts** fields in the **output** section so that they point to the Elasticsearch nodes in your cluster. For example, change **hosts** to **\["ORCH1:9200", "ORCH2:9200"\]**.
 

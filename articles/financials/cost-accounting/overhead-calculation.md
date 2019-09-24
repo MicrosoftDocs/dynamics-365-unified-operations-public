@@ -17,7 +17,7 @@ ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 272163
@@ -624,7 +624,7 @@ For more information, see [Perform overhead calculation](cost-rollup.md#perform-
 
 ### Step 4: Process the cost allocation calculation
 
-Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance and Operations supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
+Allocation is used to allocate the balance of a cost object to other cost objects by applying an allocation base. Finance supports the reciprocal allocation method. In the reciprocal allocation method, the mutual services that auxiliary cost objects exchange are fully recognized. The system automatically determines the correct order to perform the allocations in. The balance of a cost object is allocated by a single allocation base. Allocations across cost objects dimensions and their respective members are supported. The allocation order is controlled by the cost control unit. 
 
 [![Reciprocal method](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
@@ -728,7 +728,7 @@ Cost object CC004 Packaging contributes to several cost objects. A statistical d
 </table>
 
 > [!NOTE]
-> In Finance and Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template). The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
+> Statistical measures such as the production hours that a product consumes can be derived from source data. For more information, see [Statistical measure provider template](statistical-measure-provider-template.md#statistical-measure-provider-template). The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
 
 <table>
 <thead>

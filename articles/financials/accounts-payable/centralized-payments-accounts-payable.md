@@ -3,9 +3,9 @@
 
 title: Centralized payments for Accounts payable
 description: Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14341
@@ -38,7 +38,7 @@ Organizations that include multiple legal entities can create and manage payment
 
 Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. Additionally, the organization saves time, because the payment process is streamlined.
 
-In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices. Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment. During the settlement process, the applicable due-to and due-from transactions are generated. You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled. 
+In a centralized payments organization, there are many legal entities for operations, and each operating legal entity manages its own vendor invoices. Payments for all the operating legal entities are generated from a single legal entity, which is known as the legal entity of the payment. During the settlement process, the applicable due-to and due-from transactions are generated. You can specify which legal entity in the organization receives the realized gain or realized loss transactions, and how cash discount transactions that are related to a cross-company payment are handled. On the centralized payment journal line, the **Account type** should be set to Vendor. The **Offset account typ**e should be set to Bank or Ledger. The bank account should be in the current company. 
 
 The following examples illustrate how posting is handled in various scenarios. The following configuration is assumed for all these examples:
 

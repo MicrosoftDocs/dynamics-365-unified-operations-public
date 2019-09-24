@@ -2,10 +2,10 @@
 # required metadata
 
 title: Apply the latest platform update to environments
-description: This topic explains how to apply the latest platform update to your Microsoft Dynamics 365 Finance and Operations Enterprise edition environment.
+description: This topic explains how to apply the latest platform update to your Finance and Operations environment.
 author: tariqbell
 manager: AnnBe
-ms.date: 07/09/2018
+ms.date: 08/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 253274
@@ -33,27 +33,27 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to apply the latest platform release to your Microsoft Dynamics 365 for Finance and Operations environment.
+This topic explains how to apply the latest platform release to your Finance and Operations environment.
 
 ## Overview
 
-The Microsoft Dynamics 365 for Finance and Operations platform consists of the following components:
+In Finance and Operations, the platform consists of the following components:
 
--   Finance and Operations platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
+-   Binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services.
 -   The following Application Object Tree (AOT) packages:
     -   Application Platform
     -   Application Foundation
     -   Test Essentials
 
 > [!IMPORTANT]
-> To move to the latest Finance and Operations platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. If you are running on a platform that is older than Platform update 3, see the section [Upgrading to Platform update 3 from an earlier build](#Upgrading-to-platform-update-3-from-an-earlier-build) section at the end of this topic.
+> To move to the latest platform, your Finance and Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in Platform update 3, so that seamless continuous updates can be made to the platform. 
 
 ## Overall flow
-The following illustration shows the overall process for upgrading the Finance and Operations platform to the latest update.
+The following illustration shows the overall process for upgrading the platform to the latest update.
 
 [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
-If you are already running on platform update 4 or later, updating the Finance and Operations platform to the latest release is a simple servicing operation. Once the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page: Select Apply updates under Maintain then select the platform update package.
+If you are already running on Platform update 4 or later, updating to the latest release is a simple servicing operation. After the platform update package is in your LCS asset library, follow the flow to apply an update from the LCS environment page. Select **Apply updates** under **Maintain**, then select the platform update package.
 
 [![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
@@ -105,7 +105,7 @@ Platform update packages are released by Microsoft and can be imported from the 
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
 > [!NOTE]
-> Step 3 is not applicable when upgrading to platform update 4 or later.
+> Step 3 is not applicable when upgrading to Platform update 4 or later.
 
 4.  Follow the instructions for installing a deployable package. See [Install a deployable package](../deployment/install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
@@ -123,7 +123,7 @@ AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopo
 ### Install the Visual Studio development tools (Platform update 3 or earlier)
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 4 or later, development tools are automatically installed as part of installing the deployable package.
+> Skip this section if you are updating to Platform update 4 or later, development tools are automatically installed as part of installing the deployable package.
 
 Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
@@ -147,7 +147,7 @@ xppfagen.exe -metadata=j:\AosService\PackagesLocalDirectory -model="DirectoryFor
 ### Install the Data Management service (Platform update 3 or earlier)
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
+> Skip this section if you are updating to Platform update 4 or newer, the data management service is automatically installed as part of installing the deployable package.
 
 After the deployable package is installed, follow these instructions to install the new Data Management service. Open a **Command Prompt** window as an administrator, and run the following commands from the .\\DIXFService\\Scripts folder.
 
@@ -164,9 +164,9 @@ If you're connected to an earlier release of Microsoft SQL Server Integration Se
 ## Apply the platform update package on a build environment (Platform update 6 or earlier)
 
 > [!NOTE]
-> Skip this section if you are updating to platform update 7 or newer. This was a pre-requesite step for build environments.
+> Skip this section if you are updating to Platform update 7 or newer. This was a prerequesite step for build environments.
 
-If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Finance and Operations platform. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
+If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer platform update. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
@@ -182,43 +182,7 @@ After the metadata backup has been restored, delete (or rename) the metadata bac
 
 After you've prepared your build environment for this update, apply the platform update package by using the same method that you use on other environments.
 
-## Upgrading to platform update 3 from an earlier build
-When upgrading to platform update 3 from an earlier build, there are some very important considerations because of two key changes in update 3:
-
-- It is no longer possible to overlayer platform models (Application Platform, Application Foundation, Test Essentials).
-- You need to delete all X++ hotfixes to the platform that are in you version control (see the section below)
-- The Directory model is no longer in platform, it has moved to the application in Finance and Operations release 1611.
-
-This means two things:
-
-1.  If taking only platform update 3 and not taking the application update (Finance and Operations version 1611), then you cannot have overlayering on any of the following models. All overlayering on these models must be removed before attempting to install update 3:
-    -   Application Platform
-    -   Application Foundation
-    -   Test Essentials
-    -   Directory
-
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Finance and Operations version 1611) as described in [Overview of moving to the latest update of Finance and Operations](upgrade-latest-update.md).
-
-### Delete platform metadata hotfixes from your Azure DevOps project (Platform update 2 or earlier)
-
-> [!NOTE]
-> This section is not relevant if you are already on Platform update 3 and updating to a newer platform.
-
-Before you install the new platform update, you must clean up your Microsoft Azure DevOps source control project.
-Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your Azure DevOps project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
-
--   Application Platform
--   Application Foundation
--   TestEssentials
--   Directory
-
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
-![View History](./media/checkinhistory.png)
-
 Additional resources
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
-
-
-

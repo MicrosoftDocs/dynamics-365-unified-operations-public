@@ -3,7 +3,7 @@
 
 title: Vendor invoice automation
 description: This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: VendEditInvoiceHeaderStagingListPage 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -32,17 +32,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 
-Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Microsoft Dynamics 365 for Finance and Operations now enables this “last mile” automation out of the box, through an invoice automation solution.
+Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Now this “last mile” automation is enabled out of the box, through an invoice automation solution.
 
 ## Solution context
 
-The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed into Finance and Operations for automatic processing of invoices and attachments.
+The invoice automation solution enables a standard interface that can accept invoice metadata for the invoice header and invoice lines, and also attachments that are applicable to the invoice. Any external system that can generate artifacts that comply with this interface will be able to send the feed for automatic processing of invoices and attachments.
 
-The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that Finance and Operations can consume them.
+The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that they can be consumed.
 
 ![Sample integration scenario](media/vendor_invoice_automation_01.png)
 
-Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments in Finance and Operations.
+Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments.
 
 ### Solution components
 
@@ -56,7 +56,7 @@ The rest of this topic provides detailed descriptions of these solution componen
 
 ## Data entities
 
-A data package is the unit of work that must be sent to Finance and Operations, so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:
+A data package is the unit of work that must be sent so that invoice headers, invoice lines, and invoice attachments can be created. The following data entities are used for the artifacts that make up the data package:
 
 + Vendor invoice header
 + Vendor invoice line
@@ -68,7 +68,7 @@ This topic doesn’t give a detailed definition of a data package. It also doesn
 
 To quickly generate test data that includes invoices and attachments, follow these steps.
 
-1. Sign in to your Finance and Operations instance.
+1. Sign in to your instance.
 1. Go to **Accounts payables** > **Invoices** > **Pending vendor invoices**.
 1. Create invoices that have lines and attachments.
 
@@ -85,7 +85,7 @@ To quickly generate test data that includes invoices and attachments, follow the
 Invoices that are imported via data packages can be associated with the legal entity that they belong to in two ways:
 
 + The import job that processes the invoice imports it into the same company in which the job was scheduled in the **Data management** workspace. In other words, the company of the job determines the company that the invoice belongs to.
-+ When the data package that contains invoices is sent to Finance and Operations, the caller (that is, the integration application that runs outside of Finance and Operations) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance and Operations is overridden, and the invoices are imported into the company that was passed via the HTTP request.
++ When the data package that contains invoices is sent to Finance, the caller (that is, the integration application that runs outside of Finance) can explicitly mention the company ID in the HTTP request. In this case, the company context in which the processing job runs in Finance is overridden, and the invoices are imported into the company that was passed via the HTTP request.
 
 > [!NOTE]
 > This behavior is standard data management behavior. It’s explained here, in the context of invoices, just for the sake of completeness.

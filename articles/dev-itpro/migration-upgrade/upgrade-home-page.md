@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrades, updates, and hotfixes home page
-description: These topics describe the process for upgrading, updating, and applying hotfixes to your Dynamics 365 for Finance and Operations environment and data.
+title: Upgrades, updates, and hotfixes resources
+description: This topic shows where to find information about upgrading, updating, and applying hotfixes to your Finance and Operations environment and data.
 author: margoc
 manager: AnnBe
-ms.date: 02/14/2018
+ms.date: 07/23/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Upgrades, updates, and hotfixes home page
+# Upgrades, updates, and hotfixes resources
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Upgrades, updates, and hotfixes can include moving to new product versions, code
 
 The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.
 
-## Upgrade from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations
+## Upgrade from Microsoft Dynamics AX 2012 to Finance and Operations
 
 To get started, review the following topics:
 
@@ -62,7 +62,7 @@ If you are upgrading a cloud version of Finance and Operations, review the follo
 
 
 ### On-premises
-If you are applying updates to a cloud version of Finance and Operations, review the following topic:
+If you are applying updates to an on-premises version of Finance and Operations, review the following topic:
 
 - [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)

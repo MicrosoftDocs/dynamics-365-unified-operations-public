@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28231
@@ -152,8 +152,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX 2012 How to Add Controls to the Filter Pane](http://msdn.microsoft.com/EN-US/library/cc577231.aspx)
--   [MSDN AX 2012 List Page Overview – section Filter Pane](http://msdn.microsoft.com/EN-US/library/cc616937.aspx)
+-   [MSDN AX 2012 How to Add Controls to the Filter Pane](https://msdn.microsoft.com/library/cc577231.aspx)
+-   [MSDN AX 2012 List Page Overview – section Filter Pane](https://msdn.microsoft.com/library/cc616937.aspx)
 
 #### AX 2012 example
 

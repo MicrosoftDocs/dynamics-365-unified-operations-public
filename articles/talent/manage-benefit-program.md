@@ -3,9 +3,9 @@
 
 title: Define and manage a benefits program
 description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up an manage benefits.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,14 +17,14 @@ ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
@@ -44,7 +44,8 @@ Before workers can be enrolled in benefits, you must create the elements of each
 [![Benefit process flow](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## Benefit elements
-Before you begin to create to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
+
+Before you begin to create benefits and enroll workers in them, you must define the elements that make up a benefit: the type, plan, and options.
 
 -   **Type** – A collection of plans for a specific benefit, such as medical or parking.
 -   **Plan** – A specific benefit that is contracted from a provider.
@@ -55,7 +56,7 @@ For each type of benefit, such as vision or dental, an organization can offer on
 [![benefit pic](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## Eligibility
-Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Microsoft Talent, you can set the type of eligibility that applies to that benefit. 
+Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Dynamics 365 Talent, you can set the type of eligibility that applies to that benefit. 
 
 You can make a benefit available to all workers. For example, some companies offer parking passes to all employees as a fringe benefit. When you create this benefit, you set the eligibility to **All workers are eligible**. 
 

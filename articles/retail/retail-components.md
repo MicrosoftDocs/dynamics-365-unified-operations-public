@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail components
-description: This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
+description: This topic describes the various components that make up Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 03/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.search.form: RetailITWorkspace
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 221954
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the various components that make up Microsoft Dynamics 365 for Retail.
+This topic describes the various components that make up Dynamics 365 Retail.
 
-Dynamics 365 for Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
+Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
 
 <table>
 <thead>
@@ -49,13 +49,13 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 <tbody>
 <tr>
 <td>Retail headquarters</td>
-<td>Retail headquarters for Dynamics 365 for Retail can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Dynamics 365 for Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
-<blockquote>[!IMPORTANT] Building a custom POS or online store solution for Dynamics 365 for Retail is a complex task that requires extensive planning, development, and testing.</blockquote>
+<td>Retail headquarters for Dynamics 365 Retail can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
+<p><strong>Important:</strong> Building a custom POS or online store solution for Retail is a complex task that requires extensive planning, development, and testing.</p>
 </td>
 </tr>
 <tr>
 <td>Retail POS</td>
-<td>Dynamics 365 for Retail supports two types of POS experience:
+<td>Dynamics 365 Retail supports two types of POS experience:
 <ul>
 <li><strong>Cloud POS</strong> is a browser-based POS that can be used on mobile devices.</li>
 <li><strong>Retail Modern POS</strong> (MPOS) can be used on clients such as PCs, tablets, and phones to process sales transactions, customer orders, and daily operations, and to perform inventory management.</li>
@@ -74,6 +74,9 @@ Dynamics 365 for Retail provides mid-market and large retailers with a complete 
 <td>Retail Store Scale Unit</td>
 <td>Retail Store Scale Unit is a set of features that supports selling products in a store that does not have constant Internet connectivity to a back office or headquarters (HQ). The Store Scale Unit is designed specifically for in-store operation, and enables cross terminal transactions and shift operations even when you are not connected to the back office.</td>
 </tr>
+<tr>
+<td>Retail Cloud Scale Unit</td>
+<td>Retail Cloud Scale Unit is a set of components that enables Retail channel operations (such as point of sale operations) in a store or e-Commerce operation. Retail Cloud Scale Unit includes Retail Server, Retail channel database, and Cloud POS. Retail Cloud Scale Unit is hosted and managed by Microsoft. Retail Cloud Scale Unit supersedes the previous iteration of cloud-hosted Retail Server, Retail channel database, and Cloud POS.</td>
 <tr>
 <td>Commerce runtime</td>
 <td>Commerce runtime (CRT) serves as the core engine that supports the business logic across the various channels. Commerce runtime contains a data access layer, services layer, workflow layer, and an application programming interface (API) layer.</td>

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Time and attendance management in Retail
-description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail. 
+description: This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Retail. 
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Retail.
+This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Retail.
 
 ## Manage worker setup and scheduling
 
@@ -130,7 +130,7 @@ On POS:
 
 ## Process and manage time registrations
 
-A Dynamics 365 for Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
+A Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
 
 ### Primary operations
 

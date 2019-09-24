@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
@@ -36,10 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 This topic explains how to add a new custom column to a POS transaction page using the screen layout designer. You can add more information to a transaction page by using the custom column feature. A custom column can be added to the transaction page receipt grid by using the screen layout designer. You can adjust the width and position of the columns by using the designer. There are 10 custom columns in the layout for extensions scenarios. You can use all 10 in one layout. The custom columns are already added to the designer metadata. After adding the column to the layout, you run the distribution job so that the column shows up on the transaction page.
 
 > [!NOTE]
-> This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+> This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Add a custom column to the page
-1. Sign in to Dynamics 365 for Retail.
+1. Sign in to Dynamics 365 Retail.
 2. Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
 3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
 4. Follow the instructions if prompted to install and enter the Azure Active Directory (AAD) credentials to launch the designer.

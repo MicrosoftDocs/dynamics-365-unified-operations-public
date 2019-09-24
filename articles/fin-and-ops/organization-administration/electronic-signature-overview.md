@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic signatures
-description: This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Finance and Operations.
+title: Electronic signatures overview
+description: This article provides an overview of electronic signatures and describes how they can be used.
 author: maertenm
 manager: AnnBe
-ms.date: 08/24/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic signatures
+# Electronic signatures overview
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Finance and Operations.
+This article provides an overview of electronic signatures and describes how they can be used.
 
 ## What is an electronic signature?
 
@@ -43,13 +43,13 @@ An electronic signature confirms the identity of a person who is about to start 
 Electronic signatures are a regulations compliance requirement for several regulated industries, such as pharmaceuticals, food and beverage, and aerospace and defense. They are also required for compliance with regulations in 21 CFR Part 11 that was issued by the Food and Drug Administration (FDA) in the United States.
 
 > [!NOTE]
-> An electronic signature by itself isn't the same as a digital signature. An electronic signature is just a substitute for a handwritten signature, whereas a digital signature provides additional security measures. A digital signature can help identify whether another user or process has tampered with the data. A digital signature can also be verified, and this verification can't be refuted by the owner of the certificate that was used to sign the data. As described below, electronic signatures in Microsoft Dynamics 365 for Finance and Operations have built-in digital signature functionality.
+> An electronic signature by itself isn't the same as a digital signature. An electronic signature is just a substitute for a handwritten signature, whereas a digital signature provides additional security measures. A digital signature can help identify whether another user or process has tampered with the data. A digital signature can also be verified, and this verification can't be refuted by the owner of the certificate that was used to sign the data. As described below, electronic signatures have built-in digital signature functionality.
 
-## Electronic signatures in Dynamics 365 for Finance and Operations
+## Electronic signatures
 
-In Finance and Operations, you can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
+You can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
-Electronic signatures have built-in digital signature functionality. Every user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that is associated with that certificate is validated. Finance and Operations records electronic signature information in a log to provide an audit trail. To set up electronic signatures, see [Set up electronic signatures (Task guide)](tasks/set-up-electronic-signatures.md).
+Electronic signatures have built-in digital signature functionality. Every user who signs documents must obtain a valid cryptographic certificate. When a document is signed, the private key that is associated with that certificate is validated. Electronic signature information is recorded in a log to provide an audit trail. To set up electronic signatures, see [Set up electronic signatures (Task guide)](tasks/set-up-electronic-signatures.md).
 
 ## Users who require access to electronic signatures
 
@@ -79,16 +79,16 @@ If you use a role other than **Information technology manager**, make sure that 
 
 ### Get a certificate
 
-Before you sign documents electronically in Finance and Operations, you must request a certificate.
+Before you sign documents electronically, you must request a certificate.
 
 > [!NOTE]
-> Finance and Operations uses Microsoft SQL Server features to create certificates and enable electronic signing. No additional certificate or public key infrastructure (PKI) is required.
+> Microsoft SQL Server features are used to create certificates and enable electronic signing. No additional certificate or public key infrastructure (PKI) is required.
 
-When you request a certificate, a public key and a private key are created for you in the Finance and Operations database. The private key is encrypted by using a password that is known only to you. When you sign a document electronically, your identity is verified when you enter the password.
+When you request a certificate, a public key and a private key are created for you. The private key is encrypted by using a password that is known only to you. When you sign a document electronically, your identity is verified when you enter the password.
 
 To request a certificate, on the **Options** page, on the **Accounts** tab, click **Get certificate**.
 
-You must enter and confirm the password that you will use for signing. The password is used to protect your private key and authorize the use of your certificate. This password isn't stored in the database, and it isn't available to anyone else, not even to the Finance and Operations administrator.
+You must enter and confirm the password that you will use for signing. The password is used to protect your private key and authorize the use of your certificate. This password isn't stored in the database, and it isn't available to anyone else, not even to the administrator.
 
 If you forget the password that is connected with your certificate, that certificate must be reset. If you reset the certificate, you don't affect documents that you signed by using the previous certificate. To reset the certificate, on the **Options** page, click **Reset certificate**.
 
@@ -105,7 +105,7 @@ The **Sign document** page is displayed when you make a change that requires an 
 
 ### Sign for another user's changes
 
-Occasionally, you might want a user to sign for another user's changes. For example, a supervisor might be required to sign for changes that an employee makes to a bill of materials (BOM). Use this procedure to designate a Finance and Operations user as a signer for another user.
+Occasionally, you might want a user to sign for another user's changes. For example, a supervisor might be required to sign for changes that an employee makes to a bill of materials (BOM). Use this procedure to designate a user as a signer for another user.
 
 > [!NOTE]
 > When one user signs for another user's change, the signature must be provided at the workstation of the user who made the change. The user can't save the change until the signature has been provided.

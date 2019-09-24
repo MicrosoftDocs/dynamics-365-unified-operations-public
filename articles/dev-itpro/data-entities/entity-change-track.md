@@ -2,10 +2,10 @@
 # required metadata
 
 title: Enable change tracking for entities
-description: Use change tracking to enable incremental export of data from Microsoft Dynamics 365 for Finance and Operations.
+description: Use change tracking to enable incremental export of data from Finance and Operations.
 author: Milindav2
 manager: AnnBe
-ms.date: 08/27/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265974
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Change tracking enables incremental export of data from Microsoft Dynamics 365 for Finance and Operations by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time. For bring your own database (BYOD) use cases, change tracking can also track deletes if the entity supports this.
+Change tracking enables incremental export of data from Finance and Operations by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time. Although, change tracking can be enabled for BYOD and non-BYOD scenarios, it must be noted that only for bring your own database (BYOD) use cases, change tracking also tracks deletes if the entity supports this.
 
-## Enable change tracking
+## Enable change tracking for BYOD
 You can enable change tracking when you publish one or more entities to a data store (BYOD).
 
 1. In the **Data management** workspace, select **Configure entity export to database**.
@@ -56,6 +56,9 @@ You can enable change tracking when you publish one or more entities to a data s
 
     > [!NOTE]
     > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
+
+## Enable change tracking for non-BYOD scenarios
+For non-BYOD scenarios, change tracking can be enabled from the data entities list page in data management by selecting the entities and clicking **Change tracking**.
 
 ## Custom query for change tracking
 The following example shows how to add a static method to an entity. You must make sure that the method returns a query, and that the root node is the same as the entity. For example, for the Customer entity, the root node is custTable, and the change tracking query for it is also custtable.

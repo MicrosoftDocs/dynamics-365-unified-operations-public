@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+description: This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/03/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
+This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 > [!NOTE]
 > The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
@@ -85,7 +85,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 ## Set up security roles that are used when prospective vendors are onboarded
 
-To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This rolle will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#Set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
+To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
 
 For information about how to onboard prospective vendors, see [Vendor onboarding](vendor-onboarding.md).
 
@@ -160,7 +160,7 @@ New vendor collaboration users are provisioned via the workflow that you set up 
 
 If the email address of a new vendor collaboration user belongs to a domain that is registered with Azure as a tenant (that is, if it's a managed domain account), the email address must be an existing Azure AD account. Otherwise, the provisioning process can't be completed.
 
-For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/en-us/documentation/articles/active-directory-b2b-collaboration-overview/).
+For more information about the process that is used in the **Send Azure B2B user invitation** task in the workflow for Azure AD account management, see [Azure Active Directory B2B collaboration](https://azure.microsoft.com/documentation/articles/active-directory-b2b-collaboration-overview/).
 
 ## Additional resources
 

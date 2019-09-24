@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8
+ms.dyn365.ops.version: Platform update 8 for Finance and Operations
 ---
 
 # Add financial dimensions to aggregate measurements

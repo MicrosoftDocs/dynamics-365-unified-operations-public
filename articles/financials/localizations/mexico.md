@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Mexico
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Mexico. 
+title: Mexico overview
+description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Mexico. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Mexico 
+# Mexico overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in Mexico. 
+This topic includes information and links to resources that can help you set up legal entities with a primary address in Mexico. 
 
 
 - [Scope of localization](latam-mex-scope.md)

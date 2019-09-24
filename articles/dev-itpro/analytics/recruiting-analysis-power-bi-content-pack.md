@@ -17,7 +17,7 @@ ms.search.form: HcmRecruitmentWorkspace
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263934
@@ -51,7 +51,7 @@ The **Recruitment management** workspace contains an **Analytics** tab. This tab
 
 ## Understanding the data model and entities
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in
-Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 The following table shows the entities that the **Recruiting** Power BI content was based on.
 

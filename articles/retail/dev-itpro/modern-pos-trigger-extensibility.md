@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 17751
@@ -42,7 +42,7 @@ This topic explains the client-side trigger functionality in Modern POS and Clou
 Trigger overview
 ----------------
 
-Triggers are events that are raised by Microsoft Dynamics 365 for Retail for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
+Triggers are events that are raised by Microsoft Dynamics 365 Retail for Retail POS. Triggers let you insert custom code before or after operations. There are two kinds of triggers: pre-triggers and post-triggers.
 
 | Pre-triggers                                                                                                                                                                                                                                                    | Post-triggers                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

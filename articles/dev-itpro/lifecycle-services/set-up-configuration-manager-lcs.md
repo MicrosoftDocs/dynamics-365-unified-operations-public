@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62673
@@ -40,13 +40,16 @@ ms.dyn365.ops.version: 2012
 ## Before you begin
 Before you begin, your environment must include the following components:
 
-- A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx).
+- A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](https://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx).
 - A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012)](./ax-2012/install-dixf.md). 
-  > [!IMPORTANT]
-  > You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
+
+    > [!IMPORTANT]
+    > You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
+
 - An AX 2012 R3 project in Lifecycle Services. 
-  > [!WARNING]
-  > Copying configurations between environments can be a destructive operation. All project owners have the right to configure and perform these operations. Make sure that only trusted individuals are set as project owners.
+
+    > [!WARNING]
+    > Copying configurations between environments can be a destructive operation. All project owners have the right to configure and perform these operations. Make sure that only trusted individuals are set as project owners.
 
 ## Create Data Import/Export Framework source data formats in AX 2012 R3
 You must create both a Dynamics AX and a CSV source data format to manage configurations in all environments where you intend to export and import configurations.
@@ -82,10 +85,12 @@ Complete the following procedure in the environment that you intend to export a 
    | <strong>Multiple value separator</strong> |       ;        |
 
    ![DIXF settings for Configuration manager](./media/dixfconfigurationmanager.png)
+
 5. Repeat this procedure in the environment that you intend to import the configuration to.
 
 ## Install and configure the local component of the System diagnostics (Lifecycle Services)
 Complete the following procedure in the environment that you intend to export a configuration from. 
+
 > [!IMPORTANT]
 > If you have already installed the local component of the System diagnostics for your project and environment, you must uninstall it by using **Add/Remove programs**. Only one instance of Microsoft Dynamics AX Application Object Server (AOS) per environment can be used with Configuration management, regardless of the number of instances that are discovered.
 
@@ -93,6 +98,7 @@ Complete the following procedure in the environment that you intend to export a 
 2.  Click **Start** &gt; **Microsoft Dynamics AX Lifecycle Services Diagnostic Service Discovery**.
 3.  In the **Environment Discovery** window, enter a name for the environment, and the fully-qualified name of the Microsoft SQL Server instance and database. Then click Discover environment.
 4.  After discovery is completed, enter the values in the **Configuration management (Beta)** section, click **Save**, and then click **Upload environment**.
+
     <table>
     <colgroup>
     <col width="50%" />
@@ -108,20 +114,8 @@ Complete the following procedure in the environment that you intend to export a 
     <tr class="odd">
     <td><span class="ui">Enable configuration overwrites</span></td>
     <td>Select this option to enable configurations to be copied and overwritten for the specified AOS instance.
-    <div class="alert">
-    <table>
-    <thead>
-    <tr class="header">
-    <th><strong>Caution</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>We strongly recommend that you disable configuration overwrites when you have fully configured an environment.</td>
-    </tr>
-    </tbody>
-    </table>
-    </div></td>
+    <p><strong>Important:</strong> We strongly recommend that you disable configuration overwrites when you have fully configured an environment.</p>
+    </td>
     </tr>
     <tr class="even">
     <td><span class="ui">AOS instance</span></td>
@@ -130,25 +124,14 @@ Complete the following procedure in the environment that you intend to export a 
     <tr class="odd">
     <td><span class="ui">Storage location</span></td>
     <td>Specify the location where configurations are stored locally. The AOS service account and the Data Import/Export Framework service account must have read and write access to this location.
-    <div class="alert">
-    <table>
-    <thead>
-    <tr class="header">
-    <th><strong>Important</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>We strongly recommend that you use the same directory that is used for the Data Import/Export Framework.Be aware that the shared directory might contain sensitive data, depending on what you are importing and exporting. Make sure that as few users as possible, in addition to the AOS service account and the Data Import/Export Framework service account, have access to the location.</td>
-    </tr>
-    </tbody>
-    </table>
-    </div></td>
+    <p><strong>Important:</strong> We strongly recommend that you use the same directory that is used for the Data Import/Export Framework.Be aware that the shared directory might contain sensitive data, depending on what you are importing and exporting. Make sure that as few users as possible, in addition to the AOS service account and the Data Import/Export Framework service account, have access to the location.</p>
+    </td>
     </tr>
     </tbody>
     </table>
 
     ![System diagnostic discovery for Config manager](./media/systemdiagnosticconfigurationmanagerdiscoverysettings.png)
+
 5.  Repeat this procedure in the environment that you intend to import a configuration to.
 
 ## Next steps

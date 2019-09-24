@@ -3,7 +3,7 @@
 
 title: Set up work schedules and leave
 description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HcmLeaveType, WorkTimeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221494
 ms.assetid: 60ce2f9f-73a7-4903-89da-6af7d681cc7a
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: brpotter
+ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

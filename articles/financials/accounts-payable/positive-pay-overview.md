@@ -3,7 +3,7 @@
 
 title: Positive pay overview
 description: This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BankPositivePaySummary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 88463
@@ -46,7 +46,7 @@ Positive pay files are created by using data entities. Before you generate a pos
 
 For each bank account that you want to generate positive pay information for, you must assign the positive pay format. After you generate payments, you can generate a positive pay file for a single legal entity and a single bank account. Alternatively, you can generate positive pay files for multiple legal entities and bank accounts at the same time. 
 
-After the checks that are listed in a positive pay file have been paid, you receive a confirmation number from your bank. You can then confirm the positive pay file in Microsoft Dynamics 365 for Finance and Operations. 
+After the checks that are listed in a positive pay file have been paid, you receive a confirmation number from your bank. You can then confirm the positive pay file in the system. 
 
 If you must change a positive pay file, you can recall it. Then, for each check in the positive pay file, the field that indicates whether that check has been included in a positive pay file is reset.
 

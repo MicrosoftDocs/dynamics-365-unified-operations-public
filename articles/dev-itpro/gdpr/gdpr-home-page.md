@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Resources for responding to GDPR data requests
-description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, and other Dynamics products.
+title: Respond to GDPR data requests resources
+description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Finance and Operations apps, and other Dynamics 365 products.
 author: rschloma
 manager: AnnBe
-ms.date: 05/18/2018
+ms.date: 07/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tlefor
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Resources for responding to GDPR data requests
+# Respond to GDPR data requests resources
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation (including Dynamics 365 for Retail), Dynamics 365 for Talent, and Microsoft Dynamics AX 2012. 
+This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Dynamics 365 Finance, Supply Chain Management, Retail, Talent, and Microsoft Dynamics AX 2012. 
 
 Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This topic points to content that will help you complete those tasks.
 
@@ -48,7 +48,7 @@ Your first step in responding to a request for data will usually be to use the P
 ## Product-specific considerations
 
 - [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
-- [Respond to a DSR request for data from Microsoft Dynamics 365 for Talent](respond-dsr-request-talent.md)
+- [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
 - [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
 - [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
 
@@ -61,7 +61,7 @@ You can try Compliance Manager yourself by visiting [https://aka.ms/compliancema
 ### Resources
 There are a number of resources to help you learn more about Compliance Manager and what it can do you help you meet complex compliance obligations.
 
-> [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/en-us/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office, November 2017)
+> [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office, November 2017)
 > 
 > [Compliance Manager preview is now available](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community, November 2017)
 > 
@@ -69,7 +69,7 @@ There are a number of resources to help you learn more about Compliance Manager 
 > 
 > [Announcing Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community, September 2017)
 > 
-> [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/en-us/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
+> [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
 > 
 > [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsft Secure, September 2017)
 

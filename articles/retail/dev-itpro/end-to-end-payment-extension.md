@@ -3,7 +3,7 @@
 
 title: Create an end-to-end payment integration for a payment terminal
 description: This topic describes how to create an end-to-end payment integration for a payment terminal.
-author: 
+author: Reza-Assadi
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to write a payment integration for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
+This topic describes how to write a payment integration for Microsoft Dynamics 365 Retail Modern POS and Cloud POS (the POS) for a payment terminal that can directly communicate with the payment gateway.
 
 ## Key terms
 
@@ -49,8 +49,8 @@ The following illustration shows a high-level overview of the payment terminal i
 
 This topic describes the following steps that are required to create an end-to-end payment integration for a payment terminal:
 
-- **[Write a payment connector](#Write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
-- **[Write a payment processor](#Write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
+- **[Write a payment connector](#write-a-payment-connector):** The payment connector is the main integration point between the POS and the payment terminal. The section for this step describes how to implement and configure a new payment connector that can relay payment requests (for example, authorize, refund, and void requests) to the payment terminal. 
+- **[Write a payment processor](#write-a-payment-processor):** The payment processor is used to define the merchant properties that are used as part of the payment integration. The section for this step describes how to implement a new payment processor. It includes information about the interfaces that you should implement and patterns that you should follow.
 
 ## Write a payment connector
 This section describes how to write a new payment connector.
@@ -87,7 +87,7 @@ namespace Contoso.Commerce.HardwareStation.PaymentSample
 }
 ```
 
-The **HandlerName** string is used to configure the payment connector that is used on a given POS register through the Microsoft Dynamics 365 for Finance and Operations client (see the information later in this topic).
+The **HandlerName** string is used to configure the payment connector that is used on a given POS register through the client (see the information later in this topic).
 
 #### Implement supported payment requests
 To process payment-related flows, the payment connector must define the supported request types that it can handle. Additionally, the **Execute** method must be implemented to route each request that the connector supports to a given method. The following example shows the complete list of supported request types and an example of a specific request (that is, an authorize request).
@@ -203,8 +203,8 @@ public OpenPaymentTerminalDeviceRequest(string token, string deviceName, Setting
 | Variable | Description |
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
-| deviceName | The name of the device, as defined on the **POS hardware profile** page in the Finance and Operations client. |
-| terminalSettings | The set of payment terminal–specific configuration properties that are defined in the Finance and Operations client, such as the minimum amount for signature capture and the debit cash-back limit. |
+| deviceName | The name of the device, as defined on the **POS hardware profile** page in the client. |
+| terminalSettings | The set of payment terminal–specific configuration properties that are defined in the client, such as the minimum amount for signature capture and the debit cash-back limit. |
 | deviceConfig | The set of payment terminal–specific configuration properties in the form of name/value pairs, such as the IP address and port in the case of network devices. |
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
 
@@ -220,7 +220,7 @@ public BeginTransactionPaymentTerminalDeviceRequest(string token, string payment
 |---|---|
 | token | The unique token value that is generated when the payment terminal is initially locked for the transaction. |
 | paymentConnectorName | The name of the payment connector that is used as part of the payment flow. This variable is used if you plan to integrate with payment flows that use the **IPaymentProcessor** interface. |
-| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 | isTestMode | A value that indicates whether the payment connector is being used in testing mode. |
 | extensionTransactionProperties | The set of extension configuration properties in the form of name/value pairs. |
@@ -560,27 +560,27 @@ To help guarantee that the Hardware Station loads the payment connector, you mus
 </hardwareStationExtension>
 ```
 
-### Configure the payment connector on the POS hardware profile page in the Finance and Operations client
-To determine the correct payment connector that should be loaded on the POS, you must set the value of the **PaymentTerminalDevice** property in the **Device name** field on the **PIN pad** FastTab of the **POS hardware profile** page in the Finance and Operations client, as shown in the following illustration.
+### Configure the payment connector on the POS hardware profile page in the client
+To determine the correct payment connector that should be loaded on the POS, you must set the value of the **PaymentTerminalDevice** property in the **Device name** field on the **PIN pad** FastTab of the **POS hardware profile** page in the client, as shown in the following illustration.
 
-![Configure payment connector on the POS hardware profile page in the Finance and Operations client](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
+![Configure payment connector on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/SamplePaymentDeviceConfigurInAx.jpg)
 
 ## Write a payment processor
-Payment processes are usually used only if a direct connection to a payment gateway is established. This scenario most often occurs in card-not-present sales transactions or more complex card-present scenarios. Additionally, the payment processor is used to process the merchant properties that are configured through the **POS hardware profile** page in the Finance and Operations client.
+Payment processes are usually used only if a direct connection to a payment gateway is established. This scenario most often occurs in card-not-present sales transactions or more complex card-present scenarios. Additionally, the payment processor is used to process the merchant properties that are configured through the **POS hardware profile** page in the client.
 
 > [!NOTE]
 > The payment processor is currently required, even if all payment requests are handled directly through the payment terminal and no merchant properties must be set through the POS.
 
 ### Understanding the merchant properties flows
-The following sections describe how the merchant properties are set on the **POS hardware profile** page in the Finance and Operations client, and how they are passed to the payment connector during payment flows on the POS.
+The following sections describe how the merchant properties are set on the **POS hardware profile** page in the client, and how they are passed to the payment connector during payment flows on the POS.
 
 #### Set merchant properties on the POS hardware profile page in the Finance and Operations client
-The following illustration shows how the merchant properties are set through the **POS hardware profile** page in the Finance and Operations client. To enable the merchant properties to be set, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. Two interface methods are required: **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**.
+The following illustration shows how the merchant properties are set through the **POS hardware profile** page in the client. To enable the merchant properties to be set, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. Two interface methods are required: **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**.
 
-![Setting merchant properties on the POS hardware profile page in the Finance and Operations client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
+![Setting merchant properties on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### Set merchant properties on payment connector during POS sales transaction
-The following illustration shows how the merchant properties are retrieved from the Finance and Operations database through the Retail Server and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
+The following illustration shows how the merchant properties are retrieved from the database through the Retail Server and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
 
 ![Setting merchant properties on the payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 

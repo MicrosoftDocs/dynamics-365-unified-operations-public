@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sell, dispose, and write-off assets (Russia)
-description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 for Finance and Operations in Russia.
+description: This topic explains how to sell, dispose, and write-off assets in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/30/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -51,7 +51,7 @@ There are three ways to create a disposal transaction:
 
 
 > [!NOTE]
-> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal. For more information, see [Set up automatic creation of deferrals account](#Set-up-the-automatic-creation-of-a-deferrals-account).
+> When you create a transaction for the partial write-off or disposal of a fixed asset, if the transaction accrues a loss, the transaction details are posted to a deferral account. This account contains the values of the calculated loss and the write-off time. The write-off time is calculated by using the fixed asset depreciation factor and the difference between the useful life of the depreciated asset and the actual period that the asset is used before its disposal. For more information, see [Set up the automatic creation of a deferrals account](#set-up-the-automatic-creation-of-a-deferrals-account).
 
 You can record the sale of fixed assets in Fixed assets, or you can create a sales order or a free text invoice in Accounts receivable. When you sell a fixed asset, you must calculate its depreciation during that period.
 

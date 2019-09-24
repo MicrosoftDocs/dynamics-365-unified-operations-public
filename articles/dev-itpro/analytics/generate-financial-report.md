@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68843
@@ -47,7 +47,7 @@ When you generate a report, the options that you have specified on the Report de
 
 ## Generate a financial report
 
-To generate a financal report with Microsoft Dynamics 365 for Finance and Operations, go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
+To generate a financal report go to **General ledger** \> **Inquiries and reports** \> **Financial reports**.
 
 - Select a report to generate and click **Generate**.
 - Fill in the **Report date** field and click **OK**.

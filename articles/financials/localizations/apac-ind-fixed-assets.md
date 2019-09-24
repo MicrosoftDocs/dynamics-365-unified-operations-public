@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets for India
-description:  This topic includes information about fixed assets for India in Microsoft Dynamics 365 for Finance and Operations.
+title: India fixed assets overview
+description:  This topic includes information about fixed assets for India in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 manager: AnnBe
-ms.date: 01/05/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Fixed assets for India
+# India fixed assets overview
 
 [!include [banner](../includes/banner.md)]
 

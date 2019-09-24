@@ -2,10 +2,10 @@
 # required metadata
 
 title: Apply updates to on-premises deployments
-description: This topic explains how to apply updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises).
 author: manalidongre
 manager: AnnBe
-ms.date: 07/05/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to apply supported updates to an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations. All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
+This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises). All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Search for and download updates
 For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
@@ -44,12 +44,12 @@ For more information about how to find the updates that you can apply to your on
 ## Update an on-premises deployment
 You can apply updates to an on-premises environment either during deployment or after the deployment is completed.
 
-While an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings. For more information about how to apply customizations or application X++ updates, see [Develop and Deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
+While an on-premises environment is being deployed, you can select to deploy a custom package in the **Advanced** settings. For more information about how to apply customizations or application X++ updates, see [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
 To apply updates to an on-premises environment after it has been deployed, in LCS, on the **Environment details** page for the environment, under **Maintain**, select **Apply updates**.
 
 > [!NOTE]
-> You can apply updates after deployment only on environments that have Platform update 12 or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
+> You can apply updates after deployment only on environments that have Platform update 12 for Finance and Operations or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
 > If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
@@ -115,7 +115,7 @@ When preparation fails, the envrironment state is **Deployed**. When the applica
 - **Preparation stage:** If the operation fails during the **Preparation** stage, the logs are uploaded to LCS. In the log files, select **Download logs** to download the log files. If the package has any merge issues, the error is included in the log file.
 - **Deploying stage:** If the operation fails during the **Deploying** stage, the logs are located in the on-premises environment. You must sign in to the environment, and then access the logs and event viewer.
 
-For more information about how to use the troubleshooting logs, see [Troubleshoot Dynamics 365 for Finance and Operations on-premises](troubleshoot-on-prem.md).
+For more information about how to use the troubleshooting logs, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
 
 After you review the logs and determine the cause of the failure, complete one of the following operations to restore the environment to a healthy state. No actions can be performed on an environment that is in a **Failed** state. The environment must first be restored to a healthy state.
 

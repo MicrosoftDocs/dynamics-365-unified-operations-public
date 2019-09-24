@@ -50,11 +50,11 @@ The **Discount concurrency control model** is described below in detail; however
 
 The discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The **Best price and compound concurrency control model** option on the **Discounts** tab on the **Retail parameters** page is different from the **Discount concurrency mode** property on each discount.
 
-In earlier versions of Dynamics 365 for Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
+In earlier versions of Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
 
-### Background on why this change was made in Dynamics 365 for Retail
+### Background on why this change was made in Retail
 
-In previous versions of Dynamics 365 for Retail, you could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall application lifecycle management, the Dynamics 365 application has been sealed and overlaying customizations are no longer allowed. New extensibility points have been added to enable the same types of customizations that were the most common. Most discount customizations are in one of the following categories.
+In previous versions of Retail, you could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall application lifecycle management, the Dynamics 365 application has been sealed and overlaying customizations are no longer allowed. New extensibility points have been added to enable the same types of customizations that were the most common. Most discount customizations are in one of the following categories.
 
 - **Minor changes to existing discounts:** For example, moving the start date and end date from the discount header to the discount lines.
 - **New discount types:** In some cases, companies need to introduce a new type of discount. For example, capping the total discount amount for a simple discount.
@@ -85,7 +85,7 @@ In the first scenario, **Best price and compound within priority, never compound
 
     The following image shows a concise view of how the pricing algorithm loops through the discounts across various priorities. Note that this diagram applies for both the discount concurrency control models, but the difference is in the way in which the pricing algorithm treats discounts at different priorities. This difference is elaborated using the following example.
 
-    ![Simplified pricing logic](./media/Simplified%20pricing%20logic.png "Simplified pricing logic")
+    ![Simplified pricing logic](./media/Simplified-pricing-logic.png "Simplified pricing logic")
 
 2. Within priority 10, the retail pricing engine first considers the discounts that have the concurrency mode set to **Exclusive**. If there is more than one exclusive discount applicable to the product, then the best exclusive discount is applied. When a product gets an exclusive discount, no other discounts can be applied to this product at any priority.
 
@@ -104,7 +104,7 @@ At this point, all the discounts at the highest priorities have been evaluated.
 
 The above logic is showcased in the following image, which shows the detailed view of how the pricing algorithm loops through the discounts across various priorities. Note that this diagram applies for both the discount concurrency control models, but the difference is in the way in which the pricing algorithm treats discounts at different priorities.
 
-![Detailed pricing logic](./media/Detailed%20pricing%20logic.png "Detailed pricing logic")
+![Detailed pricing logic](./media/Detailed-pricing-logic.png "Detailed pricing logic")
 
 In this example, let's assume the following setup.
 

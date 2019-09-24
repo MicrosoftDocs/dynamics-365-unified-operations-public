@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189643
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -42,10 +42,12 @@ FAQ and guidelines
 - [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
 ## Build and test automation
-- [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
 - [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
 - [Integrate the Retail SDK with the continuous build system (Azure DevOps)](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [SysTest filtering using Class and Method attributes](../perf-test/systest-filtering.md)
+- [Acceptance test library](../perf-test/acceptance-test-library.md)
 
 ### Advanced topics in build automation
 - [Exclude test packages from the build output](exclude-test-packages.md)
@@ -54,7 +56,7 @@ FAQ and guidelines
 
 ### Blogs
 
-- [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
+- [Insider tips on development and customization (blog)](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax)
 
 ## Servicing
 - [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)

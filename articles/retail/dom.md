@@ -2,7 +2,7 @@
 # required metadata
 
 title: Distributed order management (DOM)
-description: This topic describes the distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.
+description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/15/2018
@@ -68,7 +68,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         1. In Microsoft Dynamics Lifecycle Services, open the Shared asset library, select **Model** as the asset type, and download the **DOM license** file.
         2. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
         3. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
-        4. Go to the Retail headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
+        4. Go to the Retail Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
 
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.

@@ -2,11 +2,11 @@
 
 # required metadata
 
-title: What's new or changed
+title: What's new or changed home page
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 12/05/2018
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27141
@@ -26,19 +26,17 @@ ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
-ms.search.validFrom: 2016-08-30
+ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# What's new or changed
-
+# What's new or changed home page
 [!include [banner](../includes/banner.md)]
 
-This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
-
 
 [!include [release notes](../includes/release-notes.md)]
 
@@ -57,6 +55,55 @@ This table lists the major releases of the application. For monthly cloud update
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.6</td>
+<td>10.0.234</td>
+<td>November 2019</td>
+<td><a href="whats-new-changed-10-0-6.md">Preview features in Dynamics 365 for Finance and Operations version 10.0.6 (November 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.5</td>
+<td>10.0.197</td>
+<td>October 2019</td>
+<td><a href="whats-new-changed-10-0-5.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.5 (October 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.4</td>
+<td>10.0.136</td>
+<td>July 2019</td>
+<td><a href="whats-new-changed-10-0-4.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.4 (July 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.3</td>
+<td>10.0.107</td>
+<td>June 2019</td>
+<td><a href="whats-new-changed-10-0-3.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.3 (June 2019)</a></td>
+</tr><tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.2</td>
+<td>10.0.80</td>
+<td>May 2019</td>
+<td><a href="whats-new-changed-10-0-2.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.2 (May 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.1</td>
+<td>10.0.51</td>
+<td>April 2019</td>
+<td><a href="whats-new-changed-10-0-1.md">What's new or changed in Dynamics 365 for Finance and Operations version 10.0.1 (April 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0</td>
+<td>10.0.8</td>
+<td>April 2019</td>
+<td><a href="whats-new-changed-10-0-1.md">What's new or changed in Finance and Operations version 10.0 (April 2019)
+</a></td>
+</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>8.1.3</td>
@@ -143,6 +190,53 @@ This table lists the major releases of the application. For monthly cloud update
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 30</td>
+<td>7.0.5407</td>
+<td>November 2019</td>
+<td><a href="whats-new-platform-update-30.md">Preview features in Dynamics 365 for Finance and Operations platform update 30 (November 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 29</td>
+<td>7.0.5372</td>
+<td>October 2019</td>
+<td><a href="whats-new-platform-update-29.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 28</td>
+<td>7.0.5314</td>
+<td>July 2019</td>
+<td><a href="whats-new-platform-update-28.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 28 (July 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 27</td>
+<td>7.0.5286</td>
+<td>June 2019</td>
+<td><a href="whats-new-platform-update-27.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019)</a></td>
+</tr><tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 26</td>
+<td>7.0.5257</td>
+<td>May 2019</td>
+<td><a href="whats-new-platform-update-26.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 26 (May 2019)</a></td>
+</tr>
+<tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 25</td>
+<td>7.0.5222</td>
+<td>April 2019</td>
+<td><a href="whats-new-platform-25.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)</a></td>
+</tr><tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Platform update 24</td>
+<td>7.0.5179</td>
+<td>March 2019</td>
+<td><a href="whats-new-platform-update-24.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 24 (March 2019)</a></td>
+</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 23</td>

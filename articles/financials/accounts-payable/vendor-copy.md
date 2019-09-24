@@ -17,7 +17,7 @@ ms.search.form:  VendTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -46,7 +46,7 @@ You can also copy vendors between legal entities if you use manual vendor IDs. H
 
 ## Copy a vendor
 
-To copy a vendor, select **New** on the **All vendors** list page to open the **All vendors, new record** page. Notice that the new vendor ID isn't assigned immediately. This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations. Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor. Therefore, the vendor ID isn't assigned until you select **Save** at the bottom of the page.
+To copy a vendor, select **New** on the **All vendors** list page to open the **All vendors, new record** page. Notice that the new vendor ID isn't assigned immediately. This behavior differs from the behavior in previous versions. Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use. Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor. Therefore, the vendor ID isn't assigned until you select **Save** at the bottom of the page.
 
 If you're creating a new vendor, you can continue to fill in all the fields as you usually do. When you've finished, and you select **Save**, you will see that the vendor ID was assigned automatically. Alternatively, for manual number sequences, you will see that your manual vendor ID was used.
 

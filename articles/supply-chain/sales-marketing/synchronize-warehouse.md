@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronize warehouses from Finance and Operations to Field Service
-description: This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+description: This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Finance and Operations to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -34,15 +34,15 @@ ms.search.validFrom: 2018-12-01
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Finance and Operations to Dynamics 365 Field Service.
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to run synchronization of warehouses from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+The following template and underlying tasks are used to run synchronization of warehouses from Finance and Operations to Field Service.
 
 **Template in Data integration**
-- Warehouses (Finance and Operations to Field Service)
+- Warehouses (Fin and Ops to Field Service)
 
 **Task in the Data integration project**
 - Warehouse
@@ -80,6 +80,6 @@ To ensure that the **Integration key** exists for **msdyn_warehouses**:
 
 The following illustration shows the template mapping in Data integration.
 
-### Warehouses (Finance and Operations to Field Service): Warehouse
+### Warehouses (Fin and Ops to Field Service): Warehouse
 
 [![Template mapping in Data integration](./media/Warehouse1.png)](./media/Warehouse1.png)

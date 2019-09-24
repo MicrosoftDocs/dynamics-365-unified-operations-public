@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: China
+title: China overview
 description: This topic provides an overview of functionality specific to China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/15/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# China
+# China overview
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up Dynamics 365 for Finance and Operations for legal entities with a primary address in China.
+This topic includes information and links to resources that can help you set up legal entities with a primary address in China.
 
 -   [Bill of materials comparison](apac-chn-bom-comparison.md)
 -   [Chart of accounts hierarchy](tasks/china-hierarchy-chart-accounts.md) 

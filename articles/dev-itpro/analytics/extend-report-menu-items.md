@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend report menu items to redirect user navigations
+title: Extend report menu items to redirect user navigation
 description: This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
 author: TJVass
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: kfend
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266674
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Extend report menu items to redirect user navigations
+# Extend report menu items to redirect user navigation
 
 [!include [banner](../includes/banner.md)]
 
 This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution.
 
-Microsoft Dynamics 365 for Finance and Operations includes an expanded set of tools to support custom reporting solutions. This topic focuses on the process of extending existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. By using this technique, you will avoid the inconvenience of tracking down and replacing all references to an existing application report. Just extend an existing application menu item to redirect application navigations to reports that are defined in an extension model. The following illustration shows a typical application customization.
+This topic focuses on the process of extending existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. By using this technique, you will avoid the inconvenience of tracking down and replacing all references to an existing application report. Just extend an existing application menu item to redirect application navigations to reports that are defined in an extension model. The following illustration shows a typical application customization.
 
 [![extendingmenuitem](./media/extendingmenuitem.png)](./media/extendingmenuitem.png)
 

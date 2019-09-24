@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up pay invoice scenarios
-description: This topic describes how to configure Dynamics 365 for Retail to support various scenarios relating to invoice payments.
+description: This topic describes how to configure Dynamics 365 Retail to support various scenarios relating to invoice payments.
 author: josaw1
 manager: AnnBe
 ms.date: 11/14/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-The Pay invoice functionality in Dynamics 365 for Retail has been expanded to support:
+The Pay invoice functionality in Dynamics 365 Retail has been expanded to support:
 
 - Payoff of multiple sales order invoices in a single POS transaction.
 - Payment of various customer invoice types including free text invoices, project-based invoices, and credit notes.

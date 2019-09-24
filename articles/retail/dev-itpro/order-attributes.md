@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
@@ -37,7 +37,7 @@ Previously, the attribute framework supported attributes only in online orders. 
 
 ## Why and when you should order attributes
 
-If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Retail headquarters, use customer attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Retail headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Retail headquarters. However, customer attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
+If you want to add new fields to cash-and-carry transactions, customer orders, or call center orders, and if you want to capture the information in the POS or Retail headquarters, use order attributes. Previously, to add a new field to a cash-and-carry transaction (transaction header or lines) or a customer order in the POS, you had to create a new extension table in Retail headquarters and the channel database, and then make inline changes to CRT and POS code to handle the various screens and operations. You also had to configure Commerce Data Exchange to synchronize the data between the channel database and Retail headquarters. However, order attributes now let you complete all these actions through configuration. You don't have to write any code or create custom extension tables, but you still need to create the core business logic and the POS UI.
 
 This first version supports only the **String** attribute type, but future versions will support other attribute types. If you want the data to come from the master table, and that data involves complex search logic and core business logic in X++, you should use extension properties.
 
@@ -64,7 +64,7 @@ Next, you must define the attributes. Follow these steps for each attribute that
 2. On the **Attributes** page, select **New** to add a new attribute.
 3. Enter a name, friendly name, and description for the attribute. Additionally, enter any Help text that should be shown to the user for the attribute.
 4. In the **Attribute type** field, select the attribute type to assign to the attribute.
-5. Depending on the attribute type, in the **Default value** field, enter the value or range of values that is shown by default when the attribute is assigned to a customer.
+5. Depending on the attribute type, in the **Default value** field, enter the value or range of values that is shown by default when the attribute is assigned to a channel.
 6. Select **Translate**. Then, on the **Text translation** page, enter the name, description, friendly name, and Help text for the attribute in additional languages.
 
 ## Define attribute groups
@@ -96,9 +96,9 @@ Next, you must define the attributes. Follow these steps for each attribute that
 2. Select **Products (1040)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**. This step is required only if you added any new attributes, attribute types, or attribute groups.
 3. Select **Channel configuration job (1070)**, and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
-# Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)
+## Show order attributes in the POS transaction screen using the Attribute control (this feature is available in version 8.1.3 and later)
 
-## Retail headquarters
+### Retail headquarters
 
 1. Select **Retail > Channel setup > POS Setup > POS > Screen layouts**.
 2. On the screen layout page, click **New** to create a new screen layout, or select an existing screen layout.
@@ -114,7 +114,7 @@ Next, you must define the attributes. Follow these steps for each attribute that
 	12. Go to **Retail > Retail IT > Distribution schedule**.
 	13. Select the Registers job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select Yes.
 
-## POS
+### POS
 
 1. Start POS, and add any item to a transaction. You should see the Attribute panel in the transaction screen with the configured attributes both for header and lines.
 2. Click the **Edit** icon in the attribute panel to update the attribute value.

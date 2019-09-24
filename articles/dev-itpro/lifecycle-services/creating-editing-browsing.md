@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer, IT Pro
 # ms.devlang:
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: AX 2012, Operations	
 # ms.tgt_pltfrm:
 ms.custom: 13301
@@ -132,7 +132,7 @@ You can search for words or phrases in your BPM library. The search functionalit
 
     For example, enter **technology** (word) or **"information technology"** (phrase) in the search box.
 
-- You can also search for Application Object Tree (AOT) elements that are part of the task recordings for Microsoft Dynamics 365 for Finance and Operations, that are in your library. Typically, these AOT elements are the names of pages or menu items. When you search for an AOT element, prefix it with a dollar sign ($). For example, enter **$CustTable** in the search box.
+- You can also search for Application Object Tree (AOT) elements that are part of the task recordings that are in your library. Typically, these AOT elements are the names of pages or menu items. When you search for an AOT element, prefix it with a dollar sign ($). For example, enter **$CustTable** in the search box.
 
 ![Search box](./media/searching.png "Search box")
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounts payable invoice matching
+title: Accounts payable invoice matching overview
 description: Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27361
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Accounts payable invoice matching
+# Accounts payable invoice matching overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ You can use the following types of Accounts payable invoice matching:
 
 Two-way matching and three-way matching always match price information by the unit price. You can also configure these matching policies to match price information by the price total.
 -   Net unit price matching – Match price information for two-way matching or three-way matching by comparing the net unit price for each line on the invoice with the corresponding net unit price on the purchase order. The net unit price is determined by the following formula: Net amount of the line / Quantity of the line
--   Price totals matching – Match price information for two-way matching or three-way matching by comparing the net amount (price total) for each line on the invoice with the corresponding net amount on the purchase order. The net amount is determined by the following formula: (Unit price \* Line quantity) + Line charges - Line discounts
+-   Price totals matching – Match price information for two-way matching or three-way matching by comparing the net amount (price total) for each line on the invoice with the corresponding net amount on the purchase order. The net amount is determined by the following formula: *(Unit price \* Line quantity) + Line charges - Line discounts*. When matching price totals by percentage, the system compares values using the transaction currency. When matching price totals by amount, the system compares the values using the accounting currency.
 
 Typically, invoice matching calculations are automatically performed when you edit vendor invoices on the Vendor invoice page. Alternatively, invoice matching can be performed on demand, as needed. Invoice matching on demand is controlled for the legal entity by the Automatically update invoice header status To on the Accounts payable parameters page on the Invoice validation tab. Invoice matching can also be performed as part of an invoice review process. You can view the results of invoice matching on the Vendor invoice page and related invoice matching pages.
 

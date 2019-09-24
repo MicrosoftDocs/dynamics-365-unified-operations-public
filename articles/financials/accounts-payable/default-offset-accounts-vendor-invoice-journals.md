@@ -3,7 +3,7 @@
 
 title: Default offset accounts for vendor invoice journals and invoice approval journals
 description: This topic will help you decide where you should assign default accounts for invoice journals.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62093

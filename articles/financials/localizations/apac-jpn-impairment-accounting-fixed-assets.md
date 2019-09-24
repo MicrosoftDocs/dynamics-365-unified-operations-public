@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP, AssetImpairmentManageTestResult_JP
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28811
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic includes information about impairment accounting for fixed assets in Japan.
 
-You can perform the following tasks to set up and calculate fixed asset impairments by using Microsoft Dynamics 365 for Finance and Operations:
+You can perform the following tasks to set up and calculate fixed asset impairments:
 
 -   Generate a list of fixed assets that might be impaired. You can then manually review and calculate the undiscounted cash flow, fair value, or recoverable amounts of each asset in the list to determine whether the fixed assets are impaired.
 -   Update impairment indicators, such as the undiscounted cash flow of the fixed assets.
@@ -49,7 +49,7 @@ You can use impairment indicators to identify impairment in fixed assets. On th
 Yes, you can select which assets to test for impairment. To specify the criteria, click **Query** on the **Impairment recognition test** page.
 
 ## How often can I check fixed assets for impairment?
-By creating a batch job, you can set up Finance and Operations to check the fixed assets for impairment according to a schedule.
+By creating a batch job, you can check the fixed assets for impairment according to a schedule.
 
 ## Are there types of fixed assets that are excluded from impairment testing and accounting?
 Yes, the following types of fixed assets are excluded from impairment testing and accounting:

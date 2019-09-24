@@ -3,7 +3,7 @@
 
 title: Set up benefits
 description: This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 10/01/2018
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221174
 ms.assetid: eb7d562e-075f-448a-b9c2-0a06e938805b
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: brpotter
+ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 

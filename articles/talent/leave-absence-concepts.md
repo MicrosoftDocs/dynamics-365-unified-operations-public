@@ -3,7 +3,7 @@
 
 title: Leave and absence concepts
 description: This topic describes leave and absence concepts, and how time-off balances are determined. 
-author: jcart
+author: andreabichsel
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 # ms.search.form: LeaveAbsenceWorkspace
 audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: jcart
+ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: 
 ---

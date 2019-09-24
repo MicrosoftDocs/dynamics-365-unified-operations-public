@@ -2,7 +2,7 @@
 # required metadata
 
 title: Broker contract management
-description: This topic describes broker contract management for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes broker contract management by automating administrative tasks that comprise it.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

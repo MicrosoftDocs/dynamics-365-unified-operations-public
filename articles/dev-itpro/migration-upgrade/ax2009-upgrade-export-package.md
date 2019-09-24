@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 migration - Export packages
-description: This topic explains how to export a data package for migration from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to export a data package for migration from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 06/26/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Data Import/Export Framework (DIXF) service in Microsoft Dynamics AX 2009 to retrieve data that must be migrated to Microsoft Dynamics 365 for Finance and Operations. The export process is completed through a job ID. When you export, you can specify how the export job is defined. You can select the source data to export, the conversion value, and the field mapping. You can also apply a query to each source to limit what is exported.
+You can use the Data Import/Export Framework (DIXF) service in Microsoft Dynamics AX 2009 to retrieve data that must be migrated to  Finance and Operations. The export process is completed through a job ID. When you export, you can specify how the export job is defined. You can select the source data to export, the conversion value, and the field mapping. You can also apply a query to each source to limit what is exported.
 
 The export package that the Data migration tool (DMT) generates can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, such as import. For example, the data entities that are required for system setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.
 

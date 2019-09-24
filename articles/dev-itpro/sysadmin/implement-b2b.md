@@ -2,10 +2,10 @@
 # required metadata
 
 title: Export business-to-business (B2B) users to Azure Active Directory
-description: This topic provides information about implementing the business-to-business transaction functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about implementing the business-to-business transaction functionality.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 07/10/2018
+ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,12 +67,15 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 8. In the **Add API access** pane, do the following:
     1. Click the **Select an API** tab. Click **Microsoft Graph**, and then click **Select**.
     
-    2. In the **Select permissions** tab, select the following **application permissions**:
+    2. In the **Select permissions** tab, select the following **application permissions** and set them to **Yes**:
          - **Invite guest users to the organization**
          - **Read and write directory data**
          - **Read and write all users' full profiles**
     
-    3. Select the following delegated permission:
+    3. Select the following **delegated permissions** and set them to **Yes**:
+         - **Invite guest users to the organization**
+         - **Read and write directory data**
+         - **Read and write all users' full profiles**
          - **Sign in and read user profile**
      
     4. Click **Select** and **Done**.
@@ -88,9 +91,9 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
     > [!WARNING]
     > Be sure to copy the key **Value** after saving the key. This value will not be available when you leave the blade.
 
-### Configure the B2B invitation service settings in Finance and Operations
+### Configure the B2B invitation service settings
 
-1. Sign in to Dynamics 365 for Finance and Operations as administrator.
+1. Sign in to Finance and Operations as administrator.
 
 2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 

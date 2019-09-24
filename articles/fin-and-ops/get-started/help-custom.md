@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Connect a custom help site to Dynamics 365 for Finance and Operations
+title: Connect to a custom help site
 description: Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.  
 author: margoc
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: SystemParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
@@ -30,17 +30,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Connect a custom help site to Dynamics 365 for Finance and Operations
+# Connect to a custom help site
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane in Microsoft Dynamics 365 for Finance and Operations.
+Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.
 
 The process for setting up a custom Help solution consists of publishing content as HTML, deploying a site and extending the help pane to connect to the site.
 
 ## Resources
 
-- [Create Custom Help for Finance and Operations (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 - [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
 
 ## See also

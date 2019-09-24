@@ -55,7 +55,7 @@ This topic describes how to create a dispatch team. After you create a dispatch 
 
 
 > [!NOTE]
-> <P>You can assign a worker to this dispatch team in the <STRONG>Worker</STRONG> form. For more information about how to assign a worker to a dispatch team, see <A href="https://technet.microsoft.com/en-us/library/dn776288(v=ax.60)">Dispatch workers (form)</A>.</P>
+> <P>You can assign a worker to this dispatch team in the <STRONG>Worker</STRONG> form. For more information about how to assign a worker to a dispatch team, see <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Dispatch workers (form)</A>.</P>
 
 
 

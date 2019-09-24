@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13441
@@ -34,9 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use the Trace parser to consume traces and analyze performance in your Microsoft Dynamics 365 for Finance and Operations deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
+This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
 
-**Note:** There are many more features in the Trace parser are similar to Microsoft Dynamics AX 2012. See <http://blogs.msdn.com/axperf> for more information.
+> [!NOTE]
+> There are many more features in the Trace parser are similar to Microsoft Dynamics AX 2012. See the [Dynamics Ax Performance Team Blog](https://blogs.msdn.com/axperf) for more information.
 
 ## Finding the Trace parser
 Trace parser should be preinstalled with your developer deployment or VHD. The install location is here: C:\\Program Files (x86)\\Microsoft Dynamics AX\\Microsoft.Dynamics.AX.Tracing.TraceParser.exe In case it is not installed you can find the "traceparser.msi" in C:\\PerfSDK. If the for any reason the PerfSDK is not installed you can find the .msi here: C:\\Services\\PerfSDK\\Scripts.

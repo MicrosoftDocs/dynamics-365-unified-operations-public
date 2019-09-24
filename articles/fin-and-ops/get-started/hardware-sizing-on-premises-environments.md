@@ -5,7 +5,7 @@ title: Hardware sizing requirements for on-premises environments
 description: This topic lists the hardware sizing requirements for an on-premises environment.
 author: kfend
 manager: AnnBe
-ms.date: 06/23/2017
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55651
@@ -66,10 +66,10 @@ As you understand the load that impacts your infrastructure, you also need to un
 
 - **Data composition** – This is mostly about how your system will be set up and configured. For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be. Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.
 - **Extensions** – Customizations can be simple or complex. The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed. For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs. This is even more critical when the extensions are not coded according to best practices for performance and scalability.
-- **Reporting and analytics** – These factors typically include running heavy queries against the various databases in the Finance and Operations database systems. Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.
+- **Reporting and analytics** – These factors typically include running heavy queries against the various databases in the system. Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.
 - **Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.
 
-## Sizing your Finance and Operations environment
+## Sizing your environment
 
 To understand your sizing requirements, you need to know the peak volume of transactions that you need to process. Most auxiliary systems, like Management Reporter or SSRS, are less mission critical. As a result, this document focuses mostly on AOS and SQL Server.
 
@@ -92,7 +92,7 @@ To understand your sizing requirements, you need to know the peak volume of tran
     - Usage of additional functionality, such as database log and alerts. Extreme database logging will further reduce throughput per hour per core below 3K lines.
     - Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).
     - Transaction characterization.
-    - 2 GB to 4 GB memory for each core.
+    - 2 GB to 16 GB memory for each core.
     - Auxiliary databases on DB server such as Management reporter and SSRS databases.
     - Temp DB = 15% of DB size, with as many files as physical processors.
     - SAN size and throughput based on total concurrent transaction volume/usage.
@@ -105,7 +105,7 @@ We recommend always utilizing SQL Server in either a cluster or mirroring setup.
 
 For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
-A [sizing spreadsheet](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
+A [sizing spreadsheet](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.
 
 ## AOS (Online and batch)
 

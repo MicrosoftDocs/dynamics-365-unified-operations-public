@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85213
 ms.assetid: ca186dda-8a78-4969-9be0-b81be00892e5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -892,7 +892,7 @@ The following table describes the properties that are available for indexes on t
 
 | Property              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AllowDuplicates       | If you set this property to **Yes**, the index can be non-unique. If you don't create at least one unique index, Finance and Operations creates a unique index by combining the first index and the RecId.                                                                                                                                                                                                                                                     |
+| AllowDuplicates       | If you set this property to **Yes**, the index can be non-unique. If you don't create at least one unique index, a unique index is created by combining the first index and the RecId.                                                                                                                                                                                                                                                     |
 | AlternateKey          | Specify whether this index is part of an alternate key. The index field must have a unique value in every record.                                                                                                                                                                                                                                                                                                                                                   |
 | ConfigurationKey      | Set the configuration key. An index field that is disabled through a configuration key is automatically removed from the index.                                                                                                                                                                                                                                                                                                                                     |
 | Enabled               | You can use this property to disable the index.                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -924,7 +924,7 @@ The following table describes the properties for a table relation in Application
 <tbody>
 <tr class="odd">
 <td>Cardinality</td>
-<td>The number of times that each primary key value from the referenced table must occur in the foreign key column of the current table. For example, the <strong>OneMore</strong> value means one or more, but not zero. This value indicates that every parent key value must occur in the child table&#39;s foreign key column at least one time. A relation node under a SalesLine table might use the <strong>OneMore</strong> value when the business rule requires that every record in the parent SalesTable table relate to at least one item that is being sold. Currently, Finance and Operations doesn&#39;t use the <strong>Cardinality</strong> property. However, future releases might use this property and the <strong>RelatedTableCardinality</strong> property.</td>
+<td>The number of times that each primary key value from the referenced table must occur in the foreign key column of the current table. For example, the <strong>OneMore</strong> value means one or more, but not zero. This value indicates that every parent key value must occur in the child table&#39;s foreign key column at least one time. A relation node under a SalesLine table might use the <strong>OneMore</strong> value when the business rule requires that every record in the parent SalesTable table relate to at least one item that is being sold. Currently, the <strong>Cardinality</strong> property is not used. However, future releases might use this property and the <strong>RelatedTableCardinality</strong> property.</td>
 </tr>
 <tr class="even">
 <td>CreateNavigationPropertyMethods</td>
@@ -964,7 +964,7 @@ The following table describes the properties for a table relation in Application
 </tr>
 <tr class="even">
 <td>RelationshipType</td>
-<td>Select a value that describes the subtle relationship between two tables. For example, the <strong>Composition</strong> value indicates that the child record can&#39;t meaningfully exist unless it&#39;s related to a specific parent record. The record for the fourth floor in the Floor table can&#39;t exist unless it references a record in the parent Building table. <strong>Note:</strong> The DeleteActions should be compatible with this property setting. For a Composition relationship, the DeleteActions should include delete cascade behavior. Currently, Finance and Operations doesn&#39;t use the <strong>RelationshipType</strong> property. However, a future release might use this property.</td>
+<td>Select a value that describes the subtle relationship between two tables. For example, the <strong>Composition</strong> value indicates that the child record can&#39;t meaningfully exist unless it&#39;s related to a specific parent record. The record for the fourth floor in the Floor table can&#39;t exist unless it references a record in the parent Building table. <strong>Note:</strong> The DeleteActions should be compatible with this property setting. For a Composition relationship, the DeleteActions should include delete cascade behavior. Currently, the <strong>RelationshipType</strong> property is not used. However, a future release might use this property.</td>
 </tr>
 <tr class="odd">
 <td>Role</td>

@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 7.3.2
 ---
 # Cash register functionality for France
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality.
+This topic provides an overview of the cash register functionality that is available for France in Dynamics 365 Retail. It also provides guidelines for setting up the functionality.
 
 The functionality consists of the following parts:
 
@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Retail for France
 
-This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 Retail documentation](../index.md).
 
 To use the France-specific functionality for Retail, you must complete these tasks:
 
@@ -220,7 +220,9 @@ You must make the following changes on the **Legal entities** page. These settin
 
 ### Set up VAT per French requirements
 
-You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 
@@ -329,9 +331,9 @@ Then, on the **Key Vault parameters** page, you must specify the parameters for 
 
 Finally, on the **Retail parameters** page, you must specify the parameters for digital signatures:
 
-- **Certificate** - Select the certificate that you configured in the previous step.
-- **Hash function** - Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
-- **Encoding** - Specify the encoding of the signed data, such as **UTF-8**.
+- **Certificate** – Select the certificate that you configured in the previous step.
+- **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
+- **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
 
 ### Configure the archive export format
 
@@ -352,8 +354,8 @@ To enable audit events, you must reinitialize the Retail Extensible enumerations
 
 On the **General** FastTab of the **Retail parameters** page, click **Initialize**. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
 
-There is an option to separately configure the Retail scheduler. Click **Retail scheduler** > **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
+There is an option to separately configure the Retail scheduler. Click **Retail scheduler** \> **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
 
 ### Configure Retail channel components
 
-To enable France-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
+To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).

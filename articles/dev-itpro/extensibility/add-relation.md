@@ -6,7 +6,7 @@ title: Add relations to tables through extension
 description: This topic explains how to add a relation to a table.
 author: ivanv-microsoft
 manager: AnnBe
-ms.date: 07/10/2017
+ms.date: 04/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,7 +19,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 268724
@@ -51,3 +51,11 @@ In the following example, a new field, **MyInventLocationId**, is added to the I
 The following illustration shows the new relation.
 
 ![New relation](media/AddRelationToExistingTable.jpg)
+
+## Troubleshooting
+
+### Navigation property methods not working
+**Issue** - Navigation property methods do not work when a foreign key relation is created using a table extension. The compiler will not allow a call to a navigation method on the extended table.
+
+**Solution** - Navigation methods are not supported at this time.
+

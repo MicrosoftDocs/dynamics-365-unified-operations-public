@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 There are several samples in the Retail SDK that demonstrate retail extensions. This topic explains how to run these samples. 
 
-This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix.
+
 
 ## Run the SampleExtensions in POS
 1. Open **ModernPos.Sln** or **CloudPos.sln** from the **Retail SDK\\POS** folder.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General ledger and Financial reporting home page
+title: General ledger and Financial reporting overview
 description: Use General ledger to define and manage the legal entity’s financial records.  
 author: ShylaThompson
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.search.form: GeneralJournalEntryWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65431
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# General ledger 
+# General ledger overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +42,7 @@ entries. These entries are classified using the accounts that are listed in a ch
 
 You can allocate, or distribute, monetary amounts to one or more accounts or account and dimension combinations based on allocation 
 rules. There are two types of allocations: fixed and variable. You can also settle transactions between ledger accounts and revalue 
-currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same Microsoft Dynamics 365 for Finance and Operations database or in separate databases.
+currency amounts. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year. You can use the consolidation functionality to combine the financial results for several subsidiary legal entities into results for a single, consolidated organization. The subsidiaries can be in the same database or in separate databases.
 
 - [Consolidation and elimination overview](../budgeting/consolidation-elimination-overview.md)
 - [General ledger account balances](general-ledger-account-balances.md)
@@ -65,26 +65,20 @@ your tax authorities require.
 
 ## Additional resources
 
-### What's new
+#### What's new and in development
 
-Go to the [Release notes](https://docs.microsoft.com/en-us/business-applications-release-notes/) to see what new features have been released. 
+Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features have been planned. 
+
+#### Blogs
+
+You can find opinions, news, and other information on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+
+The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
 ### Videos
 
 Check out the how-to videos that are now available on the 
 [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
-
-### Blogs
-
-You can find opinions, news, and other information about Accounts payable and other solutions on the
-[Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-There are many posts about General ledger on the [Microsoft Dynamics AX product team blog](https://blogs.msdn.microsoft.com/dax/). 
-Although some of these posts were written for the previous version of General ledger, the same concepts still apply, and the 
-procedures are also similar in the current version.
-
-The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) 
-gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in MBS Operations.
 
 #### Community blogs
 

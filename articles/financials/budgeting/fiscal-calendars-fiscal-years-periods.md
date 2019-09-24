@@ -5,7 +5,7 @@ title: Fiscal calendars, fiscal years, and periods
 description: This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: FiscalCalendars
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25851
@@ -48,7 +48,7 @@ A closing period is used to separate general ledger transactions that are genera
 When you create a closing period, select a period that has a status of Open and that has the dates that you want to use. The new closing period will copy the starting and ending dates from the existing period. The original period will continue to exist. For example, you select Period 12, which is the last period in the fiscal year, and that has dates of August 1 through August 31. You enter a name for the closing period, such as Close. After you create the new closing period, you now have the original period and the closing period. Both have dates that start on August 1 and end on August 31.
 
 ## Select fiscal calendars for ledgers, fixed assets, and budget cycles
-Fiscal calendars are used with fixed asset depreciation, financial transactions, and budget cycles. When you create a fiscal calendar, you can use it for multiple purposes. You can select a fiscal calendar for a value model or depreciation book to make it a fixed asset calendar. You can select a fiscal calendar for a ledger to make it a ledger calendar. And you can select a fiscal calendar for a budget cycle to make it a budget calendar. You can use the same fiscal calendar for all of these.
+Fiscal calendars are used with fixed asset depreciation, financial transactions, and budget cycles. When you create a fiscal calendar, you can use it for multiple purposes. You can select a fiscal calendar for a fixed asset book to make it a fixed asset calendar. You can select a fiscal calendar for a ledger to make it a ledger calendar. And you can select a fiscal calendar for a budget cycle to make it a budget calendar. You can use the same fiscal calendar for all of these.
 
 ### Select a fiscal calendar for your legal entity
 
@@ -56,7 +56,7 @@ Select the fiscal calendar that you want to use for the ledger for your legal en
 
 ### Select a fiscal calendar for fixed assets
 
-You can select a fiscal calendar for a value model or depreciation book, and that fiscal calendar will be used by the fixed assets that use the selected value model or depreciation book. You can select from any fiscal calendar that is defined on the Fiscal calendars page.
+You can select a fiscal calendar for a fixed asset book, and that fiscal calendar will be used by the fixed assets that use the selected book. You can select from any fiscal calendar that is defined on the Fiscal calendars page.
 
 ### Define budget cycle time spans
 

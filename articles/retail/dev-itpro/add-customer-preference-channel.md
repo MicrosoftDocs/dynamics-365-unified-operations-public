@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 18081
@@ -55,7 +55,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 
 1. In Retail Headquarters, click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler subjobs**, and then click **New**.
 2. In the **Subjob number** and **Description** fields, enter **RetailCustPreference**.
-3. In the **Retail channel schema** field, select **Dynamics 365 for Retail.**
+3. In the **Retail channel schema** field, select **Dynamics 365 Retail.**
 4. In the **Channel table name** field, select **ax.RetailCustPreference**.
 5. In the **table name** field, select **RetailCustPreference**.
 6. On the **Channel field mapping** tab, click **Match fields**. The **From** field and **To** field columns are filled in. **Alternative approach, instead of using the UI in the steps above this can also accomplished in code:**
@@ -80,7 +80,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
    6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
 
 7. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
-8. On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 for Retail.**
+8. On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 Retail.**
 9. On the **Retail data distribution** tab, click **Export**.
 10. Follow one of these steps, depending on the browser that you're using:
     -   If you're using Google Chrome, you should be prompted to download an XML file. Save the file to a path.
@@ -96,11 +96,11 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
                 </LinkGroup>
             </Table>
 
-12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 for Retail.**
+12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 Retail.**
 13. On the **Retail data distribution** tab, click **Import**.
 14. In the dialog box that opens, click **Browse**, select the XML file that you just edited, and then click **OK** to import the file.
 15. Close the **Retail channel schema** page.
 16. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Scheduler job**.
 17. On the **Scheduler job** page, click **1010** to select the “Customers” job.
 18. On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number. Click **Save**.
-19. On the <strong>Retail channel schema</strong> page, select **Dynamics 365 for Retail** as the schema name, and then click **Generate queries**.
+19. On the <strong>Retail channel schema</strong> page, select **Dynamics 365 Retail** as the schema name, and then click **Generate queries**.

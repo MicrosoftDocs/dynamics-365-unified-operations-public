@@ -2,10 +2,10 @@
 # required metadata 
  
 title: ER Create a format configuration (November 2016)
-description: The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). 
+description: This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). 
 author: NickSelin
 manager: AnnBe 
-ms.date: 11/27/2018
+ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). This format configuration will define the format of electronic documents that are used for processing payments. In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.
+This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). This format configuration will define the format of electronic documents that are used for processing payments. In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.
 
 
 ## Create a new format configuration
@@ -38,8 +38,10 @@ The following steps explain how a user in the System Administrator or Electronic
 2. Click **Reporting configurations**.
 3. In the tree, select **Payments (simplified model)**.
 4. Click **Create configuration** to open the drop dialog.
+
  > [!NOTE]
  > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page. 
+ 
 5. In the **New** field, enter **Format based on data model PaymentModel**.
 6. In the **Name** field, type **BACS (UK fictitious)**.
 7. In the **Description** field, type **BACS vendor payment format (UK fictitious)**.
@@ -47,9 +49,6 @@ The following steps explain how a user in the System Administrator or Electronic
     * A particular format of electronic document can be defined. Leave this field blank if you want to select a format at run-time.  
 8. In the **Data model definition** field, enter or select a value.
 9. Click **Create configuration**. A new configuration has been created. The draft version can be used to store the design format for managing electronic documents.  
- > [!NOTE]
- > If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.
-
 
 ## Design the format of an electronic document
 1. Click **Designer**.

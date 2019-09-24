@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure and process an exchange on a return order
-description: This topic explains how to configure an exchange on a return in Microsoft Dynamics 365 for Retail.
+description: This topic explains how to configure an exchange on a return in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In previous versions of Microsoft Dynamics 365 for Retail, returns against customer orders were processed by using the return order document in Retail headquarters. However, the return order document can be used to process only products that are being returned. The returned products are indicated by a negative quantity on the return order lines. By contrast, sales are indicated by a positive quantity. However, the return order document doesn't support positive quantities. Because of this limitation, previous versions of Retail didn't support scenarios where product exchanges are done by using the return order document.
+In previous versions of Dynamics 365 Retail, returns against customer orders were processed by using the return order document in Retail Headquarters. However, the return order document can be used to process only products that are being returned. The returned products are indicated by a negative quantity on the return order lines. By contrast, sales are indicated by a positive quantity. However, the return order document doesn't support positive quantities. Because of this limitation, previous versions of Retail didn't support scenarios where product exchanges are done by using the return order document.
 
 However, functionality has been added to support scenarios where exchanges are done on return orders. Retail now uses the sales order document instead of the return order document to process these types of transactions.
 
@@ -48,7 +48,7 @@ Follow these steps to configure the system to support exchanges on return orders
 
 After the system is configured as described in the previous section, the point of sale (POS) user will still select a sales order or sales invoice to process a return, as in previous versions of Retail. However, after the return items are added to the cart, the user will be able to add new sales lines to the cart.
 
-For these new sales lines, the user must define all the attributes that are required in order to process a customer order line. These attributes include the delivery method and fulfillment location. The payment that is due for the transaction will be a net of the return order lines and sales order lines. When payment is tendered for the transaction, the return order will be posted as a sales order document in Retail headquarters, and the system will immediately invoice the return lines.
+For these new sales lines, the user must define all the attributes that are required in order to process a customer order line. These attributes include the delivery method and fulfillment location. The payment that is due for the transaction will be a net of the return order lines and sales order lines. When payment is tendered for the transaction, the return order will be posted as a sales order document in Retail Headquarters, and the system will immediately invoice the return lines.
 
 To provide better visibility into the various amounts for the cart, three new amount fields have been added to the cart. You can use the screen designer to make these new fields available in the POS user interface (UI).
 

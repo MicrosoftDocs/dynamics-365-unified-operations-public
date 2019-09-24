@@ -5,7 +5,7 @@ title: Create a hierarchy of product classification
 description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -34,39 +34,38 @@ This procedure shows how to create a new category hierarchy and assign a commodi
 
 
 ## Create the new category hierarchy
-1. Go to Product information management > Setup > Categories and attributes > Category hierarchies.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Description field, type a value.
-5. Click Create.
+1. Go to **Navigation pane > Modules > Product information management > Setup > Categories and attributes > Category hierarchies**.
+2. Click **New**.
+3. In the **Name** field, type a value.
+4. In the **Description** field, type a value.
+5. Click **Create**.
 
 ## Build the hierarchy
-1. Click New category node.
-2. In the Name field, type a value.
-3. In the Code field, type a value.
-4. In the Friendly name field, type a value.
-5. Click New category node.
-6. In the Name field, type a value.
-7. In the Code field, type a value.
-8. In the Friendly name field, type a value.
-9. Click New category node.
-10. In the Name field, type a value.
-11. In the Code field, type a value.
-12. In the Friendly name field, type a value.
-13. Click New category node.
-14. In the Name field, type a value.
-15. In the Code field, type a value.
-16. In the Friendly name field, type a value.
+1. Click **New** category node.
+2. In the **Name** field, type a value.
+3. In the **Code** field, type a value.
+4. In the **Friendly name** field, type a value.
+5. Click **New** category node.
+6. In the **Name** field, type a value.
+7. In the **Code** field, type a value.
+8. In the **Friendly name** field, type a value.
+9. Click **New** category node.
+10. In the **Name** field, type a value.
+11. In the **Code** field, type a value.
+12. In the **Friendly name** field, type a value.
+13. Click **New** category node.
+14. In the **Name** field, type a value.
+15. In the **Code** field, type a value.
+16. In the **Friendly name** field, type a value.
 17. Close the page.
 
 ## Classify the hierarchy
 1. In the list, find and select the desired record.
-2. On the Action Pane, click Category hierarchy.
-3. Click Associate hierarchy type.
-4. Click New.
-5. In the Category hierarchy type field, select an option.
-    * Select the Commodity code category hierarchy type for product classification.  
-6. In the Category hierarchy field, click the drop-down button to open the lookup.
+2. On the **Action Pane**, click **Category hierarchy**.
+3. Click **Associate hierarchy type**.
+4. Click **New**.
+5. In the **Category hierarchy type** field, select an option. Select the **Commodity code category hierarchy type for product classification**.  
+6. In the **Category hierarchy** field, click the drop-down button to open the lookup.
 7. In the list, find and select the desired record.
 8. In the list, click the link in the selected row.
 9. Close the page.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail for IT pros and developers home page
+title: Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,29 +17,27 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail for IT pros and developers home page
+# Retail for IT pros and developers
 
 [!include [banner](../includes/banner.md)]
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
-Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).
-
 ## Retail components and architecture
--   [Components of Dynamics 365 for Retail](../retail-components.md)
+-   [Components of Dynamics 365 Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
@@ -84,6 +82,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
 
 ## Integrating Retail
 -   [Create a Retail Experience app](create-retail-experience-app.md)
@@ -97,6 +96,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 ## Retail hardware station
 -   [Retail hardware station configuration and installation](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
+-   [Integrate POS with a new hardware device](hardware-device-extension.md)
 
 ## Retail Store Scale Unit
 -   [Retail Store Scale Unit overview](retail-store-system-begin.md)
@@ -107,6 +107,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 -   [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
 -   [Add customer preference data to a channel database](add-customer-preference-channel.md)
 -   [Add properties to a sales order](add-properties-sales-order.md)
+-   [Manage secrets for retail channels](manage-secrets.md)
 
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
@@ -126,7 +127,8 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 - [Retail Modern POS triggers and printing](pos-trigger-printing.md)
 - [Add a custom control to a Retail Modern POS non-screen designer-based view](pos-control-non-screen.md)
 - [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
-- [Configuration steps for Retail developers working on cloud-hosted development boxes](cloud-dev-box.md)
+- [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
+- [Show custom notifications in POS](extend-pos-notification.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)
@@ -135,7 +137,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 
 ## Payment connectors
 - [Payment integration with a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 

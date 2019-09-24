@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get support for Dynamics 365 for Retail
-description: This article explains how to get help with Microsoft Dynamics 365 for Retail. 
+title: Get support for Dynamics 365 Retail
+description: This article explains how to get help with Microsoft Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Retail
 
 ---
 
-# Get support for Dynamics 365 for Retail
+# Get support for Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to get help with Dynamics 365 for Retail.
+This article explains how to get help with Dynamics 365 Retail.
 
 ## Contact support
 
@@ -54,7 +54,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <tbody>
 <tr>
 <td>Ask the community.</td>
-<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> community page to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> community page to find help with your questions from the Dynamics community.</td>
 </tr>
 <tr>
 <td>Use the Issue search tool.</td>
@@ -67,7 +67,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
 <li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit a new Incident</strong> to submit the issue.</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</blockquote>
+<p><strong>Note:</strong> Microsoft Premier Customers and Partners can also submit premier support tickets using the steps above.</p>
 </td>
 </tr>
 <tr>
@@ -80,7 +80,7 @@ To obtain support for Retail, use the resources in the following table. These re
 For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website Support</a>.</td>
 </tr>
 <tr>
-<td>Get help with questions about Retail or Finance and Operations licensing.</td>
+<td>Get help with questions about licensing.</td>
 <td>Contact your partner, large account reseller (LAR), or Microsoft sales representative.</td>
 </tr>
 <tr>
@@ -90,4 +90,4 @@ For technical questions that are related to signing in to and accessing Customer
 </tbody>
 </table>
 
-For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://dynamics.microsoft.com/en-us/support/).
+For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://dynamics.microsoft.com/support/).

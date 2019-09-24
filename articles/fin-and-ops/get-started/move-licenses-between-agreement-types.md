@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope:  Operations 
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -68,7 +68,7 @@ Before you begin the move, you must complete the following tasks:
     - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
     - **Tier 2 and higher environments that are based on Azure SQL Database:** Use one of the following options:
 
-        - **Option 1:** Follow the process that is described in [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+        - **Option 1:** Follow the process that is described in [Copy a database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
         - **Option 2:** If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.
         - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
         - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.

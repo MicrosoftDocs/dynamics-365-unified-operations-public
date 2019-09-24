@@ -2,7 +2,7 @@
 # required metadata
 
 title: Code migration - Context menu code
-description: A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations. It also includes UX guidelines for context menus.
+description: This topic provides details about the programming model that is required for context menus (shortcut menus).
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16301
@@ -34,16 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations. It also includes UX guidelines for context menus.
+A programming model is required for context menus (shortcut menus). This topic outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Finance and Operations. It also includes user experience (UX) guidelines for context menus.
 
-In Microsoft Dynamics AX 2012 and earlier versions, developers modified right-click context menus (shortcut menus) by using the **PopupMenu** class. This class relied on Microsoft Windows application programming interfaces (APIs) that aren't available on the web. In Finance and Operations, the **ContextMenu** APIs have been created as replacements to provide similar functionality. Previously, the **context()** and **showContextMenu()** method overrides were the entry points for modifying context menus for specific controls. These overrides typically contained code to add options to the context menu, and also to process the user’s selection. The code for processing the user's selection used a wait model. In Finance and Operations, these overrides are being removed, and the wait model is being eliminated. Instead, developers must create two overrides: **getContextMenuOptions()** to add options to the context menu and **selectedMenuOption()** to process the user’s selection.
+In Dynamics AX 2012 and earlier versions, developers modified right-click context menus (shortcut menus) by using the **PopupMenu** class. This class relied on Microsoft Windows application programming interfaces (APIs) that aren't available on the web. In Finance and Operations, the **ContextMenu** APIs have been created as replacements to provide similar functionality. Previously, the **context()** and **showContextMenu()** method overrides were the entry points for modifying context menus for specific controls. These overrides typically contained code to add options to the context menu, and also to process the user’s selection. The code for processing the user's selection used a wait model. Because these overrides are being removed and the wait model is being eliminated, developers must now create two overrides: **getContextMenuOptions()** to add options to the context menu and **selectedMenuOption()** to process the user’s selection.
 
-## Migrate context menu code in Finance and Operations
+## Migrate context menu code 
 Migration from the **PopupMenu** APIs to the **ContextMenu** APIs can be broken down into three main steps.
 
 ### Step 1. Add a constant for each menu option that must be added
 
-The old **insertItem()** method in the **PopupMenu** class returned an identifier for the menu option that was being added. This identifier was saved into a variable for future reference. Because developers will define the menu identifier for themselves in Finance and Operations, it's a good idea to define constants for each option to help with code readability.
+The old **insertItem()** method in the **PopupMenu** class returned an identifier for the menu option that was being added. This identifier was saved into a variable for future reference. Because developers will define the menu identifier, it's a good idea to define constants for each option to help with code readability.
 
 -   At the form level, add a constant for each menu option that is being added to the context menu. The value must be unique within each context menu. Note that you must modify the old variable name if it conflicts with another variable on the form or control.
 
@@ -150,7 +150,5 @@ As you migrate context menus, consider the following guidelines:
 -   Right-click is a shortcut. Therefore, the commands on the context menu should **always** be available in other places on the page.
 -   Don't create submenus of context menus. Submenus are hard to use and aren't touch-friendly.
 -   Limit the number of menu items to five.
-
-
 
 

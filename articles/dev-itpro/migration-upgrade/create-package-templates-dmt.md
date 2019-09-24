@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 migration - Create templates 
-description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
 author: kfend
 manager: AnnBe
 ms.date: 09/12/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope:  Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Packages are created by following a predefined sequence. This sequence is based on the dependencies that the data entities have on each another. Because of these dependencies, when you import data entities into Microsoft Dynamics 365 for Finance and Operations, you must import the data entities in the defined order. Otherwise, you might encounter issues during import and configuration.
+Packages are created by following a predefined sequence. This sequence is based on the dependencies that the data entities have on each another. Because of these dependencies, when you import data entities, you must import the data entities in the defined order. Otherwise, you might encounter issues during import and configuration.
 
 The Data migration tool (DMT) provides twenty predefined templates, as shown in the following illustration.
 

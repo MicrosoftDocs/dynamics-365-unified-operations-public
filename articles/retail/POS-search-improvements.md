@@ -2,10 +2,10 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in Microsoft Dynamics 365 for Retail. 
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Retail. 
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -45,7 +45,7 @@ By default, product searches are done on the store assortment. This type of sear
 On the **Change catalog** page, employees can easily select any store, or they can search for products across all stores.
 
 ![Changing the catalog](./media/Changecatalog.png "Changing the catalog")
- 
+
 A local product search searches in the following product properties:
 
 - Product number
@@ -60,7 +60,7 @@ A local product search searches in the following product properties:
 The experience for local product searches is now more user-friendly. The following enhancements have been made:
 
 - Product and customer drop-down menus have been added to the search bar, so that employees can select either **Product** or **Customer** before they do the search. By default, **Product** is selected, as shown in the illustration that follows.
-- For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match *any* search term or only results that match *all* search terms. This setting is available in the POS functionality profile, in a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results. Those results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
+- For multiple-keyword searches (that is, for searches that use search terms), retailers can configure whether the search results include results that match *any* search term or only results that match *all* search terms. The setting for this functionality is available in the POS functionality profile, in a new group that is named **Product search**. The default setting is **Match any search term**. This setting is also the recommended setting. When the **Match any search term** setting is used, all products that fully or partially match one or more search terms are returned as results. Those results are automatically sorted in ascending order of products that have the most keyword matches (full or partial).
 
     The **Match all search terms** setting returns only products that match all the search terms (full or partial). This setting is helpful when the product names are lengthy, and employees want to see only limited products in the search results. However, this type of search has two limitations:
 
@@ -70,11 +70,20 @@ The experience for local product searches is now more user-friendly. The followi
 - Retailers can now configure product search to show search suggestions as users type product names. A new setting for this functionality is available in the POS functionality profile, in a group that is named **Product search**. The setting is named **Show search suggestions while typing**. This functionality can help employees quickly find the product that they are searching for, because they don't have to type the whole name manually.
 - The product search algorithm now also searches for the searched terms in the **Search name** property of the product.
 
-    ![Product suggestions](./media/Productsuggestions.png "Product suggestions")
+![Product suggestions](./media/Productsuggestions.png "Product suggestions")
 
 ## Customer search
 
-Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. In the case of multiple-keyword searches, the customer search algorithm returns all customers that match any of the searched keywords. However, the customers that match the most keywords appear at the top of the results. This behavior is analogous to the way that other search engines show results. They first show the results that match the most searched terms, and then they show the results that partially match the search keywords. This behavior helps cashiers in situations where they are using multiple keywords for their search, but one of the keywords has a spelling mistake.
+Customer search is used to find customers for various purposes. For example, cashiers might want to view a customer's wish list or purchase history, or add the customer to a transaction. The search algorithm matches the search terms against the values that are present in the following customer properties:
+
+- Name
+- Email address
+- Phone number
+- Loyalty card number
+- Address
+- Account number
+
+Among these properties, the name provides the most flexibility for multiple-keyword searches, because the algorithm returns all customers that match any of the searched keywords. The customers that match the most keywords appear at the top of the results. This behavior helps cashiers in situations where they search by typing the full name, but last name and first name were swapped during the initial data entry. However, for performance reasons, all the other properties preserve the order of the search keywords. Therefore, if the order of the search keywords doesn't match the order that the data is stored in, no results will be returned.
 
 By default, a customer search is done on the customer address books that are associated with the store. This type of search is known as a *local customer search*. However, employees can also search for customers globally. In other words, they can search across the stores of the company and across all other legal entities. This type of search is known as a *remote customer search*.
 
@@ -91,11 +100,14 @@ In a remote customer search, the customer ID isn't shown for customers from the 
 
 Searches that are based on the phone number have been simplified. These searches now ignore special characters, such as spaces, hyphens, and brackets, that might have been added when the customer was created. Therefore, cashiers don't have to worry about the phone number format when they search. They can also search for customers by typing a partial phone number. If a phone number includes special characters, it can also be found by searching for the numbers that appear after the special characters. For example, if a customer's phone number was entered as **123-456-7890**, a cashier can search for the customer by typing **123**, **456**, **7890**, or **1234567890**, or by entering the first few numbers of the phone number.
 
-The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can now search in a single custom property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
+The traditional customer search can be time-consuming, because it searches across multiple fields. Instead, cashiers can now search in a single customer property, such as name, email address, or phone number. The properties that the customer search algorithm uses are collectively known as the *customer search criteria*. The system admin can easily configure one or more criteria as shortcuts that will appear in POS. Because the search is limited to a single criterion, only the relevant search results are shown, and the performance is much better than the performance of a standard customer search. The following illustration shows the customer search shortcuts in POS.
 
 ![Customer search shortcuts](./media/SearchShortcutsPOS.png "Customer search shortcuts")
 
-To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 for Finance and Operations, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
+
+
+To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 Retail, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
+
 
 ![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")
 
@@ -106,3 +118,7 @@ The **Display order** field determines the order in which shortcuts are shown in
 
 > [!NOTE]
 > A custom property that is added to the enum doesn't affect the standard customer search algorithm. In other words, the customer search algorithm won't search in the custom property. Users can use a custom property for searches only if that custom property is added as a shortcut, or if the default search algorithm is overridden.
+
+In an upcoming release of Retail, retailers will be able to set the default customer search mode in POS to **Search all stores**. This configuration can be helpful in scenarios where customers that were created outside POS must be searched immediately (for example, even before the distribution job is run). A new **Default customer search mode** option will be available in the POS functionality profile. Set it to **On** to set the default search mode to **Search all stores**. Every customer search attempt will then make a real-time call to the headquarters.
+
+To help prevent unexpected performances issues, this configuration is hidden behind a flighting flag that his named **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Therefore, to show the **Default customer search mode** setting the user interface (UI), the retailer should create a support ticket for its user acceptance testing (UAT) and production environments. After the ticket is received, the engineering team will work with the retailer to make sure that the retailer does testing in its non-production environments to assess the performance and implement any optimizations that are required.

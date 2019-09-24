@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 269134
@@ -45,7 +45,7 @@ You can perform the following tasks to import Nota fiscal eletrônica (NF-e) XML
     -   View the DANFE for the NF-e XML document.
     -   Use an access key to inquire about the current status of the NF-e at the Secretaria da Fazenda (SEFAZ).
 -   Manually enter an access key for an NF-e that you didn't receive an XML document for.
--   Post electronic fiscal documents that have access keys that aren't validated by SEFAZ. Alternatively, you can set up Microsoft Dynamics 365 for Finance and Operations to post only electronic fiscal documents that have access keys that are validated by SEFAZ.
+-   Post electronic fiscal documents that have access keys that aren't validated by SEFAZ. Alternatively, you can set up Dynamics 365 Finance to post only electronic fiscal documents that have access keys that are validated by SEFAZ.
 -   If you post electronic fiscal documents for which the access keys aren't available on the **Received NF-e XML documents** page, you can update the access keys or XML documents for the electronic fiscal documents after posting is completed. You can view the following posted NF-e documents that require access keys or XML documents:
     -   NF-e documents that have access keys that aren't validated by SEFAZ.
     -   NF-e documents for which the status is updated from **Approved** to **Canceled**.
@@ -53,7 +53,7 @@ You can perform the following tasks to import Nota fiscal eletrônica (NF-e) XML
     -   NF-e documents for which the access keys aren't available in the received NF-e XML documents.
 -   View electronic fiscal documents that aren't posted, but that you received the access keys for.
 
-You can set up Finance and Operations to inquire about the status of NF-e access keys at SEFAZ multiple times. In this case, the last inquiry is made after the amount of time that the vendor has to cancel an approved NF-e has passed.
+You can set up Finance to inquire about the status of NF-e access keys at SEFAZ multiple times. In this case, the last inquiry is made after the amount of time that the vendor has to cancel an approved NF-e has passed.
 
 ## How do I import XML documents and DANFE files from emails?
 You can use the **Import XML files from email** page to import the XML documents and DANFE files for NF-e documents from emails. Before you can import the files, you must set up email accounts that are used to import NF-e XML documents and DANFE files.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize model elements through extension
-description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.
+description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate extension capabilities, this model contains elements that extend the functionality of the Fleet Management application.
 author: robadawy
 manager: AnnBe
 ms.date: 11/08/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11184

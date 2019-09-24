@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Classify a product using category hierarchies
-description: Use category hierarchies to classify products for export, procurement, sales, or other purposes. 
+description: This topic describes how to classify a product using category hierarchies. 
 author: ShylaThompson
 manager: AnnBe 
-ms.date: 09/26/2016
+ms.date: 08/02/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -30,18 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Use category hierarchies to classify products for export, procurement, sales, or other purposes. This task is typically performed by a product manager. The example uses product number M0009 in demo data company USMF.
+This topic describes how to classify a product using category hierarchies. Use category hierarchies to classify products for export, procurement, sales, or other purposes. This task is typically performed by a product manager. The example uses product number M0009 in demo data company USMF.
 
-1. Click Released product maintenance.
-2. Click All released products.
+1. Select **Released product maintenance**.
+2. Select **All released products**.
 3. In the list, find and select the desired record.
-4. On the Action Pane, click Product.
-5. Click Product categories.
-6. Click New.
-7. In the Category hierarchy field, enter or select a value.
-8. In the Category field, enter or select a value.
-9. Click New.
-10. In the Category hierarchy field, enter or select a value.
-11. In the Category field, enter or select a value.
+4. On the Action Pane, select **Product**.
+5. Select **Product categories**.
+6. Select **New**.
+7. In the **Category hierarchy** field, enter or select a value.
+8. In the **Category** field, enter or select a value.
+9. Select **New**.
+10. In the **Category hierarchy** field, enter or select a value.
+11. In the **Category** field, enter or select a value.
 12. Close the page.
 

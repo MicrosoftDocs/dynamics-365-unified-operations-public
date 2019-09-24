@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -40,7 +40,7 @@ Use this procedure to manage the general ledger data source for a cost accountin
 6. Click New.
 7. In the Name field, type a value.
 8. In the Data provider field, enter or select a value.
-    * For this example, select Dynamics 365 for Finance and Operations - General ledger entries.  
+    * For this example, select Dynamics 365 Finance - General ledger entries.  
 9. In the Cost element dimension field, enter or select a value.
     * For this example, select Cost elements.  
 10. Click Save.

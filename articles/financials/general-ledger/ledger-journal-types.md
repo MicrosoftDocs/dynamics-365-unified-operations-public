@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15631
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the journal types that you can set up for financial journals. Use the **Journal names** page to set up journals that you can use throughout Microsoft Dynamics 365 for Finance and Operations.
+This topic describes the journal types that you can set up for financial journals. Use the **Journal names** page to set up journals that you can use throughout Dynamics 365 Finance.
 
 | Journal type                      | Purpose                       | Enter transactions on this page                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|

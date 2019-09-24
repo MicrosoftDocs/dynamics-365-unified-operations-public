@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 255544
@@ -50,9 +50,9 @@ We have created new, purpose-built forms in the **Fleet Management** module. The
 We provide a sample workspace for Reservation management. This workspace is based on the **Fleet Management** module.
 
 1.  [Download the file that contains the sample workspace](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.xml file).
-2.  Sign in to your non-production client. (You must sign in as a Microsoft Dynamics 365 for Finance and Operations administrator.)
+2.  Sign in to your non-production client. (You must sign in as an administrator.)
 3.  In the address bar, add **&mode=mobile** to the end of the URL, and then press Enter.
-4.  In the client, go to **Settings** &gt; **Mobile app**. The mobile app designer will appear docked next to the Finance and Operations client.
+4.  In the client, go to **Settings** &gt; **Mobile app**. The mobile app designer will appear docked next to the client.
 5.  Click the **Overflow** button (**…**), and then click **Import**.
 6.  Click the **Browse** button that appears at the bottom of the page.
 7.  In the file selection dialog box that appears, select one of the XML files that you previously extracted from the zip file.

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 85493
@@ -39,7 +39,7 @@ To enable diagnostics and troubleshooting, all Retail components, which include 
 Viewing events in Event Viewer
 ------------------------------
 
-You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged. For more information about Event Viewer, see [Event Viewer](https://technet.microsoft.com/en-us/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) on TechNet. You can also use Event Viewer to view events remotely from computers that you have access to. For more information about how to use Event Viewer to view events remotely, see [Work with Event Logs on a Remote Computer](https://technet.microsoft.com/en-us/library/cc766438.aspx) on TechNet. Typically, Event Viewer is used for troubleshooting in the following use cases:
+You can use Event Viewer to view events for components that are installed on computers that run Microsoft Windows, if you have physical access to the computer where the events are logged. For more information about Event Viewer, see [Event Viewer](https://technet.microsoft.com/library/4229f239-16a6-4ecd-b3cf-aec03dc08cd5) on TechNet. You can also use Event Viewer to view events remotely from computers that you have access to. For more information about how to use Event Viewer to view events remotely, see [Work with Event Logs on a Remote Computer](https://technet.microsoft.com/library/cc766438.aspx) on TechNet. Typically, Event Viewer is used for troubleshooting in the following use cases:
 
 -   Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer
 -   Client components, when you're running a conference room pilot and have access to Event Viewer for that computer
@@ -71,7 +71,7 @@ Currently, some of the events that are logged by various Retail components are s
 [![Enable Log command on the shortcut menu for a debug log](./media/enable-debugging-log.png)](./media/enable-debugging-log.png)
 
 ## Viewing events by using the (F12) browser developer tools console
-Because Retail Cloud POS is a browser-based component, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://msdn.microsoft.com/en-us/library/dn255006(v=vs.85).aspx) on MSDN. To use the browser developer tools for Retail Cloud POS, you must use a supported browser version.
+Because Retail Cloud POS is a browser-based component, you can use the browser developer tools console to view events for it. For information about the Microsoft browser developer tools console, see [Using the Console to view errors and debug](https://msdn.microsoft.com/library/dn255006(v=vs.85).aspx) on MSDN. To use the browser developer tools for Retail Cloud POS, you must use a supported browser version.
 
 ### View events in the browser developer tools console
 
@@ -132,8 +132,7 @@ LCS Log Search lets you view data from all the components from a single portal. 
 
 -   Retail Modern POS
 -   Retail Cloud POS
--   Retail Hardware Station
--   Retail Server
+-   Retail Server (running on Retail Cloud Scale Unit)
 
 LCS Log Search does **not** include logs from the following Retail components:
 
@@ -141,6 +140,8 @@ LCS Log Search does **not** include logs from the following Retail components:
 -   Retail receipt designer
 -   Self-service installer for Retail Modern POS
 -   Self-service installer for Retail Hardware Station
+-   Retail Server (running on Retail Store Scale Unit)
+-   Retail Hardware Station
 
 ### Access LCS Log Search
 
@@ -153,7 +154,7 @@ To access LCS Log Search, follow these steps.
 5.  On the **Environment details** page, click **Environment Monitoring**.
 6.  On the **Environment monitoring** page, click **View raw logs**.
 7.  On the **Log Search** page, select one of the following queries:
-    -   **Retail error events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Hardware Station
+    -   **Retail client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Server (running on Retail Cloud Scale Unit)
     -   **All logs** query, which includes data from Retail Server, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
 
 You can filter by the following criteria to refine your query:

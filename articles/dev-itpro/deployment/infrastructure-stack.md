@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Self-service deployment
-description: This topic provides an overview self-service deployment for Finance and Operations.
+title: Self-service deployment overview
+description: This topic provides an overview of self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 12/19/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,15 +27,15 @@ ms.dyn365.ops.version: 8.1.1
 
 ---
 
-# Self-service deployment
+# Self-service deployment overview
 
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-Self-service deployment is available for Dynamics 365 for Finance and Operations cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
+Self-service deployment is available for cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 > [!IMPORTANT]
-> The functionality for this feature will be released incrementally, based on your Microsoft Azure country/region. However, this functionality is currently available only for **new customers** who are in the process of signing up for Finance and Operations. There is no change in existing environments for current customers.
+> The functionality for this feature will be released incrementally, based on your Microsoft Azure country/region. However, this functionality is currently available only for **new customers** who are in the process of signing up for Finance and Operations apps. There is no change in existing environments for current customers.
 >
 > Note that not all new customers will see this functionality. However, the number of new customers who have access to it will gradually increase. 
 

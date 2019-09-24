@@ -3,9 +3,9 @@
 
 title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 11/02/2018
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ---
@@ -61,8 +61,11 @@ The following tables list the product areas. Cloud and on-premises support is li
 | Help | | Yes | No |
 | Human resources | | Yes | Yes |
 | Intelligence | | Yes | Yes |
-| | Electronic reporting (ER) - Integration with LCS | Yes | No |
-| | Electronic reporting (ER) - Integration with SharePoint | Yes | No |
+| | Electronic reporting (ER) | Yes | Yes |
+| | ER: Integration with LCS | Yes | No |
+| | ER: Integration with SharePoint | Yes | No |
+| | ER: Integration with Regulatory Configuration Services (RCS) | Yes | No |
+| | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No | Yes |
 | | Integration with PowerBI.com | Yes | No |
 | | Analytical workspaces | Yes | No |
 | | Intelligent business process: Recommendations | Yes | No |
@@ -122,7 +125,7 @@ The following tables list the product areas. Cloud and on-premises support is li
 ### Retail 
 To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md).
 
-## Dynamics 365 for Talent
+## Dynamics 365 Talent
 
 | Area | Feature | Cloud | On-premises |
 |---|---|---|---|

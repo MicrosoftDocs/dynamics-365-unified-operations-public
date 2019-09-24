@@ -5,7 +5,7 @@ title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/27/2018
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 24411
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This topic focuses on the extension of existing POS views via the Retail SDK.
 
-> [!NOTE]
-> This topic applies to Microsoft Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 for Retail with platform update 8 and Retail App update 4 hotfix.
+
 
 POS views support the following extension points and patterns:
 
@@ -61,9 +60,10 @@ The following table shows the POS views that currently support extensions. It al
 | InventoryLookupView             | No                            | Yes                          | Yes                                  |
 | ShowJournalView                 | No                            | Yes                          | Yes                                  |
 | SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
-| AddressAddEditView              | Yes                           | No                           | No                                    |
+| AddressAddEditView              | Yes                           | No                           | Yes                                    |
 | PaymentView                     | No                            | No                           | Yes                                  |
-| PriceCheckView                  | Yes                           | No                           | No                                   |
+| PriceCheckView                  | Yes                           | No                           | Yes                                   |
+| PriceCheckViewPhone             | No                            | No                           | Yes                                   |
 | SearchOrdersView                | No                            | Yes                          | No                                   |
 | SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
@@ -76,14 +76,19 @@ The following table shows the POS views that currently support extensions. It al
 | ManageShiftView                 | No                            | No                           | Yes                               |  
 | ReportDetailsView               | No                            | No                           | Yes                               |
 | SearchReceiptsView              | No                            | No                           | Yes                               |
-| StockCountDetailsView           | No                            | No                          | Yes                               |
-| TransferOrderDetailsView        | No                            | No                          | Yes                               |
+| StockCountDetailsView           | No                            | No                           | Yes                               |
+| TransferOrderDetailsView        | No                            | No                           | Yes                               |
+| FulfillmentLineView             | No                            | Yes                          | No                               |
+| ReturnTransactionView           | No                            | Yes                          | Yes                               |
 
 
 > [!NOTE]
 > The table shown above is updated based on the latest released version and hotfix. In earlier versions, some of these extension points will not be available.
 
-Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters. 
+> [!NOTE]
+> In Show journal (lines grid) and Return transaction view custom columns are supported using the row sub fields. These sub fields will be displayed as rows instead of columns, like the info code messages or serial number or discounts values.
+
+Filter extensions are also supported in **Show journal view** and **Search order views** to add custom filters. **Search order views** also supports setting default parameters for search in the user interface (UI) using extension. For example, if you want to add default store search parameter you can do that by using extension and showing that in the UI. 
 
 ## Add a custom column and an app bar button
 

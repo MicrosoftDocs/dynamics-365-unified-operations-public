@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ---
 
-# Create formats to use Document Management files in ER output
+# ER Use Document Management files in format outputs (Part 3: Create format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14721
@@ -156,7 +156,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
+-   [AX 2012 MSDN List Page Guidelines (including FactBoxes)](https://msdn.microsoft.com/library/gg853328.aspx)
 
 #### AX 2012 example
 

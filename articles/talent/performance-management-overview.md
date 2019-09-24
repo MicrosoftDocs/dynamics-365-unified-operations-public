@@ -3,7 +3,7 @@
 
 title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
-author: mikefalkner
+author: andreabichsel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Talent
 # ms.tgt_pltfrm: 
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mfalkner
+ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -115,7 +115,7 @@ You can show performance journal items that are related to the review. You can a
 
 ### Ratings
 
-You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources parameters** page under **Performance.**
+You can apply a rating to any goal or competency that is on the review. You can define the rating models for each review. The defaults for ratings are on the **Human resources shared parameters** page under **Performance.**
 
 ### Sign-offs
 

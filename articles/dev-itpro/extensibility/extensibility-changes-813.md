@@ -15,10 +15,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
+# ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -35,7 +35,6 @@ ms.dyn365.ops.version: App 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview-banner](../includes/preview-banner.md)]
 
 This is a list of extensibility features that were implemented in Dynamics 365 for Finance and Operations version 8.1.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 

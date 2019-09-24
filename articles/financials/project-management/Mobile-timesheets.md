@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -31,17 +31,14 @@ ms.dyn365.ops.version: April 2018 update
 
 [!include [banner](../includes/banner.md)]
 
-# Overview
-
 **My timesheets (Optimized for mobile)** allows employees to create and submit project timesheets to record their hours for a specific project on a mobile device. Employees can create a new timesheet or copy data from an existing timesheet to ensure rapid, accurate time entry. If you are designated as a delegate, you can also enter a timesheet for another worker. The app allows employees to filter by project, resource, or approval status to quickly locate and select a timesheet. It also provides employees with the ability to save favorites, which saves the project and activity information on the timesheet. The saved favorites can be used to create future timesheets, speeding the time entry process. Editing or viewing financial dimension information is not supported from the mobile app. **My timesheets (Optimized for mobile)** can be accessed via the web browser on your mobile device.
 
 **Timesheets for my review (Optimized for mobile)** allows project managers, who have timesheet approval rights, to review and approve project timesheets on a mobile device. Editing or viewing financial dimension information is not supported from the mobile app. **Timesheets for my review (Optimized for mobile)** can be accessed via the web browser on your mobile device.
 
-This mobile application is compatible for iPhone with Dynamics 365 for Finance and Operations platform update 15.
+This mobile application is compatible with iPhone with Platform update 15.
 Android will be compatible with Platform update 16, when it becomes available.
 
-Create a project timesheet on your mobile device
-------------------------------------------------
+## Create a project timesheet on your mobile device
 
 1.  Note the Dynamics 365 URL for the **Project management and accounting** \> **Timesheets** \> **My timesheets(Optimized for mobile)** page.
 

@@ -5,7 +5,7 @@ title: Financial Insights
 description: Financial Insights uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements.
 author: kweekley
 manager: AnnBe
-ms.date: 08/14/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106233
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in Microsoft Dynamics 365 Finance and Operations. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
+**Financial Insights** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial Insights** is analytical reporting. Personas across an organization can view, research, understand, and act. 
 
 **Financial Insights** combines data from the general ledger and subledgers to give a more complete picture of the financial health of an organization.
 
@@ -49,7 +49,7 @@ Currently, **Financial Insights** is used to view data for either the active leg
 
 The **CFO overview** workspace shows the same visuals as **Financial Insights**, but is focused on letting you view and filter the data on existing reports. In future releases, you will be able to add new visuals to the **Financial Insights** workspace. The new visuals might also be available in workspaces that are focused on other roles, such as project managers or accounts payable managers. The **CFO overview** workspace continues to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-## Finance and Operations setup
+## Dynamics 365 Finance setup
 **General ledger**
 
 The main account type and the main account categories are used to fill in appropriate default main accounts on the **Balance sheet** financial statement and the various **Income statement** financial statements in **Financial Insights**.
@@ -64,7 +64,7 @@ On the **Main accounts** page, you must define your main account so that one of 
 
 Do not assign any other main account type, such as **Balance sheet** or **Profit and Loss**, to your main accounts. Reporting can't determine the type of main account when other main account types are assigned, because they aren't granular enough. The type of main account must be determined to show liabilities and revenue as positive amounts on financial reports.
 
-To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to Finance and Operations.
+To appear on the financial statements and to be included in various other visuals, such as KPIs, each main account must be assigned a main account category. The main account categories have been enhanced so that they include a display order. The display order is used specifically on financial statements in **Financial Insights**. After you edit or add a new main account category, you can change the **Display order** value to define the order that the main account categories should be shown in on a financial statement. If you must change the display order for many main account categories, you can use the Open in Excel feature to quickly edit and publish the changes back to the application.
 
 ## Entity store
 The data for **Financial Insights** is pulled from the Entity store (**System administration** \> **Setup** \> **Entity store**). If you open the **CFO overview** or **Financial Insights** workspace, and the following warning message appears in the visuals, you must update the entities.
@@ -73,10 +73,9 @@ The data for **Financial Insights** is pulled from the Entity store (**System ad
 
 You must update the following entities to see data in the **Financial Insights** and **CFO overview** workspaces:
 
+- Financial reporting transaction data version 2 (**Note:** This is new with version 10.0.1 and replaces the previous entity.)
+- Financial reporting transaction data
 - CustCollectionsBIMeasurements
-- FinancialReportingOtherData
-- FinancialReportingReferenceData
-- FinancialReportingTransactionData
 - LedgerCovLiquidityMeasurement
 - Purchase cube
 - Sales cube
@@ -96,7 +95,7 @@ Currently, the data on embedded Power BI reports can't be limited to the legal e
 
 
 ## Financial reporting vs. Finanical insights
-Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in Finance and Operations. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
+Although **Financial insights** contains financial statements, it isn't a replacement for Financial reporting in the application. The default financial statements in **Financial insights** are limited in scope and don't include all types of financial statements. Financial reporting is still the primary tool for designing, creating, and generating statutory financial statements.
 
 The following comparison chart will help differentiate the two options:
 
@@ -110,7 +109,7 @@ The following comparison chart will help differentiate the two options:
 | **Support reporting hierarchy/Organization hierarchy**   | Yes                                                               | No |
 | **Report on subledger data**                             | Yes Limited to only vendor, customer                              | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc. |
 | **Reporting Currency**                                   | Yes Accounting currency and translate to reporting currency       | No Accounting currency only |
-| **Security**                                             | Yes Adheres to Finance and Operations and reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
+| **Security**                                             | Yes Adheres to Finance reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
 | **Support different Chart of accounts and fiscal years** | Yes                                                               | No |
 | **report on external data**                              | No                                                                | No |
 | **Support consolidations**                               | Yes                                                               | Limited Can report on multiple companies but use accounting currency only |
@@ -250,8 +249,8 @@ Power BI doesn't provide an option to hide and show empty rows. If a row doesn't
 
 ## Additional resources for Power BI
 
-The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports into Finance and Operations.
+The information in the following resources isn't required in order to enable the embedded reports for the **CFO overview** or **Financial Insights** workspace in a production environment. Instead, they are helpful for dev boxes and if you want to embed your own Power BI reports.
 
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
-- <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>

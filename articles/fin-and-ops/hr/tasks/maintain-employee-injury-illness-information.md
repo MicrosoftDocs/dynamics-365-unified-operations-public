@@ -3,7 +3,7 @@
  
 title: Maintain employee injury and illness information
 description: It is recommended to complete the 'Setup injury and illness' task guide first, as some of the setup information is used here. 
-author: ShielaSogge
+author: andreabichsel
 manager: AnnBe 
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shielas
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -34,7 +34,7 @@ It is recommended to complete the 'Setup injury and illness' task guide first, a
 
 
 
-This task recording covers the basic steps to creating an injury or illness case. Besides tracking the details of the injury or illness, there is a case status that is tracked as well.  The case defaults with an 'open' status.  The statuses can be managed from the 'Case status' menu item in the application bar at the top of the form.
+This task recording covers the basic steps to creating an injury or illness case. Besides tracking the details of the injury or illness, there is a case status that is tracked as well.  The case defaults with an 'open' status.  The statuses can be managed from the 'Case status' menu item at the top of the page.
 
 1. Go to Human resources > Workers > Injury and illness > Injury or illness incidents.
 2. Click New.

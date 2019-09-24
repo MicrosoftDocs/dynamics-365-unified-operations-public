@@ -2,10 +2,10 @@
 # required metadata
 
 title: Creating, approving, and signing offers
-description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 for Talent.
-author: josaw
+description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 Talent.
+author: andreabichsel
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,20 +17,20 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: josaw
+ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Creating, approving, and signing offers
+# Create, approve, and sign offers
 
 [!include[banner](../includes/banner.md)]
 
@@ -112,15 +112,20 @@ There are several actions you can take before sending the offer to the candidate
 
 -  There may be additional documents that you want to include in the offer acceptance process. You will have the option to list the document type required.
 
-- e-Signature option: If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license. There are two ways to do this. Go to User **Settings** in **Offer**, under **Connections** connect to **Adobe Sign**. Alternatively, you will be asked to connect the Send offer to the candidate screen if the connection wasn't already established based on the user settings. 
+- e-Signature option: There are two ways to connect the e-signature provider of your choice. Go to **User Settings** in **Offer**, under **Connections**, connect to **Adobe Sign** or **DocuSign**. Alternatively, you will be asked to connect the **Send offer to the candidate** page if the connection wasn't already established based on the user settings. The e-signature account only needs to be connected once. The same user license is used for all future offer packages that will be sent out by the same user. 
 
-> [!NOTE]
-> Users only need to connect their Adobe Sign accounts once. The same user license is used for all future offer packages that will be sent out by the same user. 
+### Adobe Sign
+If Adobe Sign was chosen as the preferred e-sign method, offer creators need to connect their Adobe Sign license at this step. 
+
+### DocuSign
+If DocuSign was chosen as the preferred e-sign method, offer creators need to connect their DocuSign license. Once signed in, the default account and permissions associated with the user's DocuSign profile are connected to Talent: Attract. 
 
 -  You can view and edit the email template as needed.
 
 When the offer is ready and you click **Send to candidate**, the candidate will receive an email that an offer is waiting for review.
 
+>[!NOTE]
+> If you are using Adobe Sign or DocuSign and you run into an error while sending the offer to the candidate, try disconnecting and reconnecting the e-signature user account from **User Settings**. If the issue persists, please contact our support using the **Report a problem** link.
 
 ## Candidate’s actions after receiving an offer
 

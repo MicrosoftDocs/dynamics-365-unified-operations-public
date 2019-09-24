@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106601
@@ -67,7 +67,7 @@ A column definition can contain two to 255 columns.
 A column definition includes the following information:
 
 - A column of the descriptions for the row definition
-- Amount columns that show data from the financial data, a Microsoft Excel worksheet, or calculations that are based on other data in the column definition
+- Amount columns that show data from the financial data or calculations that are based on other data in the column definition
 - Formatting columns
 - Attribute columns
 
@@ -125,7 +125,7 @@ The following table describes the column restriction codes.
 | ADJ                     | Restrict the amounts in the column to period adjustment amounts, if these amounts are available. |
 | XAD                     | Restrict the amounts in the column, so that period adjustment amounts are excluded. |
 | PT                      | Restrict the amounts in the column, so that only posted transactions are included, if these transactions are available. |
-| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<blockquote>[!NOTE] Not all data providers support unposted transactions. For more information, see the <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</blockquote> |
+| UPT                     | Restrict the amounts in the column, so that only unposted transactions are included, if these transactions are available.<p><strong>Note:</strong> Not all data providers support unposted transactions. For more information, see the <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>data integration guide</a> for your Microsoft Dynamics ERP system.</p> |
 
 ### Restrict a column to a reporting unit
 
@@ -175,10 +175,10 @@ You can use the **Column Header** dialog box to add, modify, and delete the head
 
 ### Create an automatically generated header
 
-Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC**, **FD**, and **WKS** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
+Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
 
 > [!NOTE]
-> The format of some of the text, such as the long date, depends on your regional settings on the Finance and Operations server. To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**. The following table lists the available autotext options for column headers.
+> The format of some of the text, such as the long date, depends on your regional settings on the server. To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**. The following table lists the available autotext options for column headers.
 
 
 | Autotext option and code                | Description |
@@ -296,7 +296,7 @@ The **Extra Spaces Before Column** cell specifies the width of the separator bet
 1. In Report Designer, open the column definition to modify.
 2. In the **Extra Spaces Before Column** cell, enter the number of spaces to insert between columns.
 
-### Specify a currency
+### Specify a format currency override
 
 The **Format/Currency Override** cell specifies the formatting of the decimal, currency, and percentage amounts in the column. This formatting overrides any formatting that is specified in the report definition or system defaults.
 
@@ -315,7 +315,7 @@ The **Print Control** cell can contain codes that adjust the display or the prin
 | Print control code | Translation                                     | Description |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Nonprinting                                     | Exclude the amounts in this column from the report that is printed and from calculations. To include a non-printing column in a calculation, refer to the column directly in the calculation formula. For example, the non-printing column C is included in the following calculation: **B+C+D**. However, the non-printing column C isn't included in the following calculation: **B:D**. |
-| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).<blockquote>[!NOTE] For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</blockquote> |
+| XCR                | Change sign if typical balance of row is credit | Create a budget or comparative report where any unfavorable variance (such as a revenue shortfall or an expense overrun) is always negative. Apply this code to a **CALC** column to reverse the sign of the column amount if the typical balance of a given row is a credit (as identified by a **C** in the **Normal Balance** column of the row definition).<p><strong>Note:</strong> For <strong>TOT</strong> rows and </strong>CAL</strong> rows that typically carry a credit balance, be sure to enter a <strong>C</strong> in the <strong>Normal Balance</strong> column in the row definition.</p> |
 | X0                 | Suppress column if all zeros or blanks          | Exclude an **FD** column from the report if all cells in that column are either empty or contain zeros. |
 | SR                 | Suppress rounding                               | Prevent the amounts in this column from being rounded. |
 | XR                 | Suppress rollup                                 | Suppress a rollup. If the report uses a reporting tree, the amounts in this column aren't rolled up into subsequent parent nodes. |
@@ -366,7 +366,7 @@ The type of information that each column on a report includes is specified by th
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Display financial data or data from an Excel worksheet when you use a <strong>Link to Financial Dimensions</strong> column or a <strong>Link to Worksheet</strong> column in the row definition. When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:
+    <td>Display financial data when you use a <strong>Link to Financial Dimensions</strong> column in the row definition. When you select the <strong>FD</strong> column type, default settings are automatically specified for the following rows:
     <ul>
     <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
     <li><strong>Book Code/Attribute Category:</strong> ACTUAL</li>
@@ -400,15 +400,6 @@ The type of information that each column on a report includes is specified by th
     <tr>
     <td>PAGE</td>
     <td>Insert a vertical page break in the report. The columns that are to the right of the <strong>PAGE</strong> column appear on a different page.</td>
-    </tr>
-    <tr>
-    <td>WKS</td>
-    <td>Display data that is pulled from an Excel worksheet. When you select the <strong>WKS</strong> column type, default settings are automatically specified for the following rows:
-    <ul>
-    <li><strong>Fiscal Year:</strong> PERIODIC</li>
-    <li><strong>Period:</strong> BASE</li>
-    </ul>
-    You can change these default settings.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -525,13 +516,13 @@ You can also use any combination of alphanumeric characters for exact matching, 
 
 ### Format a multiple-currency report in a column definition
 
-A multiple-currency report can display amounts in the natural (local) currency, the functional (default) currency, or the reporting currency. A company's functional currency is defined in the Microsoft Dynamics ERP system. Don't confuse this ERP setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports. The following currency-related cells are available in the column definition:
+A multiple-currency report can display amounts in the ledger's accounting currency, the ledger's reporting, the originating transaction currency, or the translated reporting currency. A company's accounting currency is defined in the Ledgers setup. Don't confuse this setting with the operating system's regional options setting, where you can configure the default currency symbols that are used on reports. The following currency-related cells are available in the column definition:
 
-- **Currency Display** – Specify the type of currency (natural, functional, or reporting) that the transactions are displayed in. This functionality is sometimes referred to as currency translation. Currency translation is the ability to report general ledger amounts in a currency that might not be the functional currency of the company or the currency that the transaction was entered in.
+- **Currency Display** – Specify the type of currency (accounting, reporting, transaction, or translated reporting) that the transactions are displayed in. Translated to a reporting currency functionality is sometimes referred to as currency translation. Currency translation is the ability to report general ledger amounts in a currency that might not be the functional or reporting currency of the company or the currency that the transaction was entered in.
 - **Currency Filter** – Specify a currency filter. Only transactions that are entered in the selected currency are displayed on the report.
 
-> [!NOTE]
-> To create reports that use multiple currencies, you must select the **Include all reporting currencies** check box on the **Report** tab of the report definition. To determine a company's functional currency, follow these steps.
+> 
+To determine a company's accounting currency, follow these steps.
 
 1. In Report Designer, on the **Company** menu, click **Companies**.
 2. In the **Companies** dialog box, select a company, and then click **View**.
@@ -540,20 +531,18 @@ A multiple-currency report can display amounts in the natural (local) currency, 
 #### Specify the currency on a multiple-currency report
 
 1. In Report Designer, open the column definition to modify.
-2. Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Natural/originating currency**, **Functional currency from company information**, or the reporting currency.
+2. Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Ledger accounting currency**, **Ledger reporting**, transaction currency, or select to translate to a different reporting currency.
 3. Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
 
-> [!NOTE]
-> The options that are described here might differ, depending on the ERP system. For more information, see your [Microsoft ERP system documentation](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### Example for Currency Display and Currency Filter cells
 
 Phyllis has made the following currency selections in her column definition:
 
 - **Currency Filter:** Yen
-- **Currency Display:** Functional (U.S. dollars)
+- **Currency Display:** Accounting currency from Ledger (U.S. dollars)
 
-Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY). Because of the currency display that she selected, the report displays those transactions in the functional currency, U.S. dollars (USD).
+Because of the currency filter that Phyllis selected, the report includes only transactions that were entered in Japanese yen (JPY). Because of the currency display that she selected, the report displays those transactions in the accounting currency, U.S. dollars (USD).
 
 #### Currency Filter and Currency Display combinations
 
@@ -562,10 +551,10 @@ The following table shows the report results that can occur for various combinat
 
 | Currency Display cell                        | Currency Filter cell | Report result |
 |----------------------------------------------|----------------------|---------------|
-| Natural/originating currency                 | **YEN**              | **Y6,000** – The result shows only transactions that were entered in JPY. |
-| Functional currency from company information | **YEN**              |**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.<blockquote>[!NOTE] The conversion rate is approximately 100 JPY per USD.</blockquote> |
-| Functional currency from company information | Empty                | **$2,310** – The result shows all data in the functional currency that is specified in the company information.<blockquote>[!NOTE] This amount is the sum of all transactions in functional currency.</blockquote> |
-| Natural/originating currency                 | Empty                | **$2,250** – The result shows all amounts in the currency that the transaction was performed in. |
+| Transaction currency                 | **YEN**              | **Y6,000** – The result shows only transactions that were entered in JPY. |
+| Accounting currency from Ledger | **YEN**              |**$60** – The result shows only transactions that were entered in JPY and displays those transactions in USD.<p><strong>Note:</strong> The conversion rate is approximately 100 JPY per USD.</p> |
+| Accounting currency from Ledger | Empty                | **$2,310** – The result shows all data in the accounting currency that is specified in the Ledger.<p><strong>Note:</strong> This amount is the sum of all transactions in accounting currency.</p> |
+| Transaction currency                 | Empty                | **$2,250** – The result shows all amounts in the currency that the transaction was performed in. This means the total is adding together amounts from different currencies. |
 
 ### Calculation column in a column definition
 
@@ -582,7 +571,7 @@ To add, subtract, multiply, or divide columns, enter the column letters in the o
 |----------|---------------------|-------------|
 | +        | A+C                 | Add the amount in column A to the amount in column C. |
 | :        | A:C A:C-D           | Add a range of consecutive columns. For example, the formula **A:C** adds the sums of columns A through C, and the formula **A:C-D** adds the sums of columns A through C, and then subtracts the amount in column D. |
-| -        | A-C                 | Subtract the amount in column A from the amount in column C.<blockquote>[!NOTE] You can also use the minus sign (-) to reverse the signs in a column. For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</blockquote> |
+| -        | A-C                 | Subtract the amount in column A from the amount in column C.<p><strong>Note:</strong> You can also use the minus sign (-) to reverse the signs in a column. For example, use <strong>-A+B</strong> to add the reverse of the amount in column A to the amount in column B.</p> |
 | \*       | A\*C                | Multiply the amount in column A by the amount in column C. |
 | /        | A/C                 | Divide the amount in column A by the amount in column C. |
 

@@ -3,7 +3,7 @@
 
 title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14312

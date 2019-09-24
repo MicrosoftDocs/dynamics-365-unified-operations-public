@@ -2,7 +2,7 @@
 # required metadata
 
 title: Page layout in the web client
-description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
+description: This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28251
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
+This topic discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 
 Introduction
 ------------
@@ -51,7 +51,7 @@ Layout is a design process that specifies how the controls on a page appear in t
 
 A grid is a special type of control that has some container behaviors, such as flexible sizing (**SizeToAvailable**). However, a grid has special visualizations and isn't a general-purpose container control.
 
-## Layout: Dynamics AX 2012 vs. Microsoft Dynamics 365 for Finance and Operations
+## Layout: Dynamics AX 2012 vs. Finance and Operations apps
 ### Layout in Dynamics AX 2012
 
 In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almost always vertical, and columns are manually set to provide some horizontal spread.
@@ -60,7 +60,7 @@ In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almo
 
 **Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In Dynamics AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
 
-### Layout in Finance and Operations
+### Layout in Finance and Operations 
 
 In Finance and Operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
 

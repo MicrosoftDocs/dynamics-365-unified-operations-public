@@ -2,7 +2,7 @@
 # required metadata
 
 title: Trade allowance management
-description: This topic describes trade allowance management for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes trade allowance management for Finance and Operations.
 author: t-benebo
 manager: AnnBe
 ms.date: 08/17/2018
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 

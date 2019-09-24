@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58702
 ms.assetid: e932e25e-b72a-428a-830a-20160e81e334
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -60,10 +60,10 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str createdBy(\[str value\])                        | Gets or sets the name of the user who created the application object.                                                                         |
 | public Date creationDate(\[Date value\])                   | Gets or sets the date that an application object was created.                                                                                 |
 | public str creationTime(\[str value\])                     |                                                                                                                                               |
-| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                               |
 | public void AOTsetSource(str source, \[boolean isStatic\]) | Sets the source code of this node.                                                                                                            |
-| public void AOTrun()                                       | Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).                                                |
+| public void AOTrun()                                       | Compiles this node and its subtree in the Application Object Tree (AOT).                                                |
 | public void AOTedit(\[int Line\], \[int Column\])          | Opens the appropriate editor for this node.                                                                                                   |
 
 ### Method AOTgetSource
@@ -162,7 +162,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -216,7 +216,7 @@ This method is overridden by nodes that have source code.
 
 ### Method AOTrun
 
-Compiles this node and its subtree in the Finance and Operations Application Object Tree (AOT).
+Compiles this node and its subtree in the Application Object Tree (AOT).
 
     public void AOTrun()
 

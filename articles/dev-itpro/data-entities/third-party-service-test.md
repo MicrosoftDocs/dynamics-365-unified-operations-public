@@ -2,10 +2,10 @@
 # required metadata
 
 title: Test services by using third-party utilities
-description: This topic describes how to set up third-party utilities to test services for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to set up third-party utilities to test services.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services for Microsoft Dynamics 365 for Finance and Operations. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
+At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
 - Explore and analyze how an interaction's messages are constructed.
 - Test the response of a service to a well-known request.
@@ -49,11 +49,11 @@ Before you can test a service by using an external application, you must registe
 For details, see:
 
 - [Register an application with AAD](services-home-page.md#register-a-web-application-with-aad)
-- [Register your external application in Finance and Operations](services-home-page.md#register-your-external-application-in-finance-and-operations)
+- [Register your external application](services-home-page.md#register-your-external-application)
 
-## Query Finance and Operations OData by using Postman
+## Query OData by using Postman
 
-Postman (<https://www.getpostman.com/postman>) is a tool that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from Finance and Operations.
+Postman (<https://www.getpostman.com/postman>) is a tool that is often used to interact with RESTful services (such as OData) in scenarios that involve the development and testing of application programming interfaces (APIs). This procedure isn't an endorsement of Postman, and other similar tools are available. However, we are using Postman to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make OData requests to and receive responses from the application.
 
 1. Start Postman.
 2. In the upper-right corner, select the gear button, and then select **Manage environments** to create or update an environment.
@@ -66,7 +66,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     | client\_id     | The Azure AD application ID that you registered during the setup of prerequisites                   |
     | client\_secret | The secret key that you generated during application registration during the setup of prerequisites |
     | grant\_type    | client\_credentials                                                                                 |
-    | resource       | The base URL of the Finance and Operations instance                                                 |
+    | resource       | The base URL of the instance without the trailing '/'                                                 |
 
 5. To verify that the key-value pairs can be parsed correctly, select **Key-Value Edit**, and review the results.
 6. Close the environment page.
@@ -121,9 +121,9 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
 In our example, we have now successfully authenticated and then used the OData service to read a customer record.
 
-## Query the Finance and Operations SOAP custom service by using SoapUI
+## Query the SOAP custom service in your application by using SoapUI
 
-SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make SOAP requests to and receive responses from Finance and Operations.
+SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with SOAP and REST web services in scenarios that involve API development and testing. This procedure isn't an endorsement of SoapUI, and other similar tools are available. However, we are using SoapUI to illustrate the concepts and messages that are involved when you use OAuth to authenticate with Azure AD, and then make SOAP requests to and receive responses.
 
 1. Start SoapUI, and select the **SOAP** button to create a project.
 2. Complete the information for the project:
@@ -151,7 +151,7 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
     | grant\_type    | client\_credentials                                             |
     | client\_id     | The application ID from the Azure AD application registration   |
     | client\_secret | The secret key value from the Azure AD application registration |
-    | resource       | The URL of the Finance and Operations instance                  |
+    | resource       | The URL of the instance without the trailing '/'                 |
 
 9. To make sure that the parameters are in the POST body, select **Post QueryString**, and then select **Play**. An access token should be returned in the response pane. The values will be most readable if you use the **JSON response** tab. Copy the access token so that you can use it in the authorization header of subsequent requests.
 10. Go back to the first request node under the **GetUserSessionInfo** SOAP sample request. In the request pane on the left, select the plus sign (**+**) button to add a header that is named **Authorization**. Paste the access token into the **Value** field, and add the prefix **Bearer**.

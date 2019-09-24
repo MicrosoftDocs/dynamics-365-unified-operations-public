@@ -113,7 +113,7 @@ As an alternative to using the **Arrival overview** form, you can use the **Regi
 
 ## See also
 
-[Arrival overview (form)](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
+[Arrival overview (form)](https://technet.microsoft.com/library/hh227654\(v=ax.60\))
 
   
 

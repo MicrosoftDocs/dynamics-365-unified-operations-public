@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51721
 ms.assetid: c41fab91-b526-4a6a-b0ed-574fdc037848
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -895,7 +895,7 @@ Initializes a new instance of the RelativeFieldBinding class.
 ## Class Report
     class Report extends TreeNode
 
-The Report class lets users use reports that are present in the Finance and Operations Application Object Tree (AOT) and report creation by using code instead of the AOT.
+The Report class lets users use reports that are present in the Application Object Tree (AOT) and report creation by using code instead of the AOT.
 
 ### Remarks
 
@@ -948,7 +948,7 @@ The following code example creates and runs a report that is not present in the 
 | public int designCount()                                            | Retrieves the number of designs in a given report.                                                                                        |
 | public ReportDesign designNumber(\[int number\])                    | Gets an existing design.                                                                                                                  |
 | public boolean interactive(\[boolean value\])                       |                                                                                                                                           |
-| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                      | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                                  |                                                                                                                                           |
 | public container pack()                                             | Serializes the current instance of the Report class.                                                                                      |
 | public Query query(\[Query query\])                                 |                                                                                                                                           |
@@ -1221,7 +1221,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1569,7 +1569,7 @@ You must have access to the development security key (SysDevelopment) before thi
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -2391,7 +2391,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -3425,7 +3425,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -3693,7 +3693,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -4433,7 +4433,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -5101,7 +5101,7 @@ unit
 | public str menuItemName(\[str value\])                                   |                                                                                                                                            |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                            |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                            |
-| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that used in the code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                            |
 | public int position(\[int value\])                                       |                                                                                                                                            |
 | public str previewInfo(str string)                                       |                                                                                                                                            |
@@ -5369,7 +5369,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -6109,7 +6109,7 @@ value
 
 ### Method name
 
-Gets or sets the name that used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -6688,7 +6688,7 @@ The ReportDesign class determines the contents of a report.
 
 ### Remarks
 
-A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Finance and Operations Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
+A ReportDesign object is a collection of ReportSection objects or SectionTemplate objects that determines the contents of a report. Each report contains a ReportDesign node in the Application Object Tree (AOT), below the Designs node. The ReportDesign node always contains a node that is named AutoDesignSpecs, and it can contain a node that is named Design, which is referred to as the generated design. A ReportDesign node should contain either one or more SectionTemplate nodes (below the AutoDesignSpecs node) or a generated design. If it contains both, only the generated design is used. This class lets you create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report that does not have a generated design offers more flexibility to the end user than a report that has a generated design. For example, a user who is running a report that does not have a generated design can decide in the query which sums to include in the report. A generated design is then created during the execution of the report, and it will contain footer sections that correspond to the user's choice. If a report has a generated design, the existence of footer sections in the generated design controls which sums are printed in the report.
 
 ### Examples
 
@@ -6776,7 +6776,7 @@ The following example creates a simple report that is not present in the AOT.
 | public str lookupCaption(\[str lan\])                                                                  |                                                                                                                                           |
 | public str lookupLabel(str label, \[str lan\])                                                         |                                                                                                                                           |
 | public int makeAutoSection(\[Query query\])                                                            |                                                                                                                                           |
-| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                         | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int orientation(\[int value\])                                                                  |                                                                                                                                           |
 | public container pack()                                                                                | Serializes the current instance of the ReportDesign class.                                                                                |
 | public container packPageSettings()                                                                    |                                                                                                                                           |
@@ -7135,7 +7135,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method collate
 
@@ -7536,7 +7536,7 @@ query
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -8317,7 +8317,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -8595,7 +8595,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -9285,7 +9285,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -10021,7 +10021,7 @@ The ReportGuidControl class enables you to create, read, update, and delete X++ 
 | public str menuItemName(\[str value\])                                   |                                                                                                                                               |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                               |
 | public int position(\[int value\])                                       |                                                                                                                                               |
 | public str previewInfo(str string)                                       |                                                                                                                                               |
@@ -10289,7 +10289,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -10979,7 +10979,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -11654,7 +11654,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -11939,7 +11939,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -12703,7 +12703,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -13365,7 +13365,7 @@ The height and height calculation mode can be set separately.
 | public Date creationDate(\[Date value\])     | Gets or sets the date an application object was created.                                                                                  |
 | public str creationTime(\[str value\])       |                                                                                                                                           |
 | public str designs(\[str value\])            |                                                                                                                                           |
-| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])               | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])           |                                                                                                                                           |
 | public str projectGuid(\[str value\])        |                                                                                                                                           |
 | public str referencedProjects(\[str value\]) |                                                                                                                                           |
@@ -13462,7 +13462,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -13759,7 +13759,7 @@ The ReportOutputUser class implements a user-defined target for report formattin
 
 ### Remarks
 
-By default, Finance and Operations prints reports to a screen, printer, file, or email address. The following API items support a user-defined target:
+By default, reports are printed to a screen, printer, file, or email address. The following API items support a user-defined target:
 
 -   ReportOutputUserType system enumeration
 -   ViewerClass value for the PrintMedium system enumeration
@@ -14347,7 +14347,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -14624,7 +14624,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -15184,7 +15184,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -15851,7 +15851,7 @@ The ReportRealControl class enables you to create, read, update, and delete X++ 
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                               |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                               |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                               |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                               |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                               |
@@ -16150,7 +16150,7 @@ The value in the following table is for the Thai language edition of Microsoft W
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -16968,7 +16968,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -19432,7 +19432,7 @@ The following example adds a section to a report:
 | public LineType lineLeft(\[LineType value\])                                                 | Gets or sets the type of line that is used as the left border of a section.                                                               |
 | public LineType lineRight(\[LineType value\])                                                |                                                                                                                                           |
 | public TableId map(\[TableId value\])                                                        |                                                                                                                                           |
-| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int noOfHeadingLines(\[int value\], \[AutoMode mode\])                                |                                                                                                                                           |
 | public AutoMode noOfHeadingLinesMode(\[AutoMode mode\])                                      |                                                                                                                                           |
 | public int noOfHeadingLinesValue(\[int value\])                                              |                                                                                                                                           |
@@ -20151,7 +20151,7 @@ The value in the following table is for the Thai language edition of Windows:
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -20782,7 +20782,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -21236,7 +21236,7 @@ Prints the section on the report.
 
 #### Remarks
 
-This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Finance and Operations Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
+This method is called when the section is triggered. For example, a body section is triggered when ReportRun::send method is executed. It is the super method call in the executeSection method that actually prints the section in the report. In the Application Object Tree (AOT), you will find the executeSection method below each section's methods node. If you want to perform some action before a section is printed, such as go to the next page, this action can be coded in the executeSection method.
 
 ### Method rightMargin
 
@@ -22913,7 +22913,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -23191,7 +23191,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -23897,7 +23897,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -24578,7 +24578,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public AutoMode minNoOfDecimalsMode(\[AutoMode mode\])                   |                                                                                                                                   |
 | public int minNoOfDecimalsValue(\[int value\])                           |                                                                                                                                   |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                   |
-| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name used in code to identify a form, report, table, query, or other application object. |
 | public int noOfDecimals(\[int value\], \[AutoMode mode\])                |                                                                                                                                   |
 | public AutoMode noOfDecimalsMode(\[AutoMode mode\])                      |                                                                                                                                   |
 | public int noOfDecimalsValue(\[int value\])                              |                                                                                                                                   |
@@ -24875,7 +24875,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -25693,7 +25693,7 @@ value
 
 ### Method name
 
-Gets or sets the name used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -26455,7 +26455,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -26726,7 +26726,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -27402,7 +27402,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -28087,7 +28087,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                           |
 | public MenuItemType menuItemType(\[MenuItemType value\])                 |                                                                                                                                           |
 | public str modelFieldName(\[str value\])                                 |                                                                                                                                           |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public int numberOfLines(int height100mm)                                |                                                                                                                                           |
 | public int position(\[int value\])                                       |                                                                                                                                           |
 | public str previewInfo(str string)                                       |                                                                                                                                           |
@@ -28360,7 +28360,7 @@ The value in the following table is for the Thai language edition of Windows.
 |--------|---------------|
 | 222    | THAI\_CHARSET |
 
-The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the MSDN Web site, http://go.microsoft.com/fwlink/?LinkID=85972.
+The default character set is set to a value, depending on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
 
 ### Method colorScheme
 
@@ -29050,7 +29050,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -29808,7 +29808,7 @@ The ResultSet class provides access to a table of data generated by executing a 
 
 ### Remarks
 
-For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing an instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, Finance and Operations attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
+For maximum portability, ResultSet columns within each row should be read in left-to-right order and each column should be read only once. A ResultSet provides access to a table of data generated by executing an instance. The table rows are retrieved in sequence. Within a row its column values can be accessed in any order. A ResultSet maintains a cursor that points to its current row of data. Initially the cursor is positioned before the first row. The 'next' method moves the cursor to the next row. For the getXX methods, the application attempts to convert the underlying data to the specified type and returns a suitable value. The getXX methods retrieve column values for the current row. You retrieve values using the index number of the column. Columns are numbered from 1. A ResultSet is automatically closed by the statement that generated it when that Statement is closed, re-executed, or is used to retrieve the next result from a sequence of multiple results.
 
 ### Examples
 
@@ -29836,7 +29836,7 @@ For maximum portability, ResultSet columns within each row should be read in lef
 |-------------------------------------------|-------------------------------------------------------------------------------------------|
 | public boolean getBoolean(int ColumnID)   | Retrieves the Boolean value of a column in the current row.                               |
 | public int getByte(int ColumnID)          |                                                                                           |
-| public Date getDate(int ColumnID)         | Retrieves the value of a column in the current row as an Finance and Operationsdate value. |
+| public Date getDate(int ColumnID)         | Retrieves the value of a column in the current row as a date value. |
 | public DateTime getDateTime(int ColumnID) |                                                                                           |
 | public Guid getGuid(int ColumnID)         |                                                                                           |
 | public int getInt(int ColumnID)           | Retrieves the value of a column in the current row as an integer.                         |
@@ -29875,7 +29875,7 @@ ColumnID
 
 ### Method getDate
 
-Retrieves the value of a column in the current row as an Finance and Operationsdate value.
+Retrieves the value of a column in the current row as a date value.
 
     public Date getDate(int ColumnID)
 
@@ -30179,7 +30179,7 @@ Initializes a new instance of the CodeAccessPermission class.
 #### Parameters
 
 userId  
-A userId system data type that specifies an Finance and Operations user.
+A userId system data type that specifies a user.
 
 #### Examples
 
@@ -30193,7 +30193,3230 @@ The following example shows a new instance of the RunAsPermission class. The Sys
         _userInfo = SysUserInfo::find(); 
         _userId = _userInfo.Id; 
         _perm = new RunAsPermission(_userId); 
+
+    }
+unit  
+
+#### Remarks
+
+Exact mode is used if the value parameter is omitted. Calculate the height according to the following table:
+
+| Mode.            | Height calculation.                                                                       |
+|------------------|-------------------------------------------------------------------------------------------|
+| -1 Exact.        | The exact height in pixels of the controls is used.                                       |
+| 0 Auto.          | The height of the control is calculated automatically and the value parameter is ignored. |
+| 1 Column height. | The layout of the form determines the height of the control.                              |
+
+The height and height calculation mode can be set separately.
+
+### Method rightMargin
+
+    public void rightMargin(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method left
+
+    public void left(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method width
+
+Gets or sets the width of the control.
+
+    public void width(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+#### Remarks
+
+Exact mode is used if the value parameter is omitted. Calculate the width according to the following table:
+
+| Mode.           | Width calculation.                                                                       |
+|-----------------|------------------------------------------------------------------------------------------|
+| -1 Exact.       | The exact width in pixels of the controls is used.                                       |
+| 0 Auto.         | The width of the control is calculated automatically and the value parameter is ignored. |
+| 1 Column width. | The layout of the form determines the width of the control.                              |
+
+The width and width calculation mode can be set separately.
+
+### Method extraSumWidth
+
+    public void extraSumWidth(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method topMargin
+
+    public void topMargin(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method leftMargin
+
+    public void leftMargin(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method labelWidth
+
+    public void labelWidth(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method top
+
+    public void top(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+### Method bottomMargin
+
+    public void bottomMargin(Real value, Units unit)
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+unit  
+
+## Class ReportRun
+    class ReportRun extends ObjectRun
+
+The ReportRun class generates and prints a report or previews a report on the screen.
+
+### Remarks
+
+As opposed to the , which defines the structure of a report, a ReportRun object contains the runtime characteristics of the report. A ReportRun object can be created by using one of the following arguments:
+
+-   An Args object where the name and optionally designName parameters are specified.
+-   A created container, by using the for example.
+-   The report name and an optional design name.
+
+The section template node type allows the sections to be defined once and reuse them many times in different reports. A typical example of this would be a check or a giro.
+
+### Examples
+
+The following example runs the Customer design of the existing Cust report:
+
+    static void testReportRun(args a) 
+    {  
+        reportRun rr; 
+        args aa = new args("Cust"); 
+        aa.designName("Customer"); 
+        rr = new reportRun(aa); 
+        rr.run(); 
     }
 
+### Methods
 
+| Method                                                                                                                                                    | Description                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| public boolean allPages(\[boolean all\])                                                                                                                  |                                                                                                                                                   |
+| public boolean callMenuFunction(xMenuFunction menuFunction)                                                                                               |                                                                                                                                                   |
+| public str caption(str reportSpelling, str reportName, str designCaption, str designName)                                                                 | Creates a caption when previewing a report, or a document name when printing a report.                                                            |
+| public boolean collate(\[boolean collate\])                                                                                                               |                                                                                                                                                   |
+| public TableId columnHeadings(\[TableId tableId\])                                                                                                        | Provides control of column headings in a report.                                                                                                  |
+| public ReportControl control()                                                                                                                            | Retrieves the control that is being executed.                                                                                                     |
+| public int copies(\[int numberOfCopies\])                                                                                                                 |                                                                                                                                                   |
+| public int copiesTotal()                                                                                                                                  | Enables marking copies of reports.                                                                                                                |
+| public int copy()                                                                                                                                         | Returns the number of the copy of a report.                                                                                                       |
+| public str copyDescription()                                                                                                                              |                                                                                                                                                   |
+| public xFormRun createProgressForm()                                                                                                                      | Creates the form that contains progress information.                                                                                              |
+| public int currentYmm100()                                                                                                                                |                                                                                                                                                   |
+| public ReportDesign design(\[AnyType nameOrReportDesign\])                                                                                                | Gets or sets the name of the design.                                                                                                              |
+| public str deviceName(\[str device\])                                                                                                                     |                                                                                                                                                   |
+| public Object dialog(Object dialog)                                                                                                                       |                                                                                                                                                   |
+| public str driverName()                                                                                                                                   | Returns the printer driver name.                                                                                                                  |
+| public boolean enableAllBodies(\[boolean enable\])                                                                                                        |                                                                                                                                                   |
+| public boolean execute(int number)                                                                                                                        | Prints the programmable sections of a report.                                                                                                     |
+| public boolean executeBodyColumnHeadings(TableId tableId, \[FieldId fieldId\])                                                                            | Prints the column headings of a body section in a report.                                                                                         |
+| public boolean executeColumnHeadings(ReportSection section)                                                                                               |                                                                                                                                                   |
+| public boolean executeControlColumnHeadings(int number)                                                                                                   | Executes the column headings of a programmable section.                                                                                           |
+| public boolean executeFooter(\[TableId tableId\], \[FieldId fieldId\])                                                                                    | Execute a footer section.                                                                                                                         |
+| public boolean executeHeader(\[TableId tableId\], \[FieldId fieldId\])                                                                                    | Executes a header section.                                                                                                                        |
+| public boolean executeSection(ReportSection section)                                                                                                      | Prints the specified section in the report.                                                                                                       |
+| public boolean fetch()                                                                                                                                    | Executes the report query and calls the send method for the record that is found by the query.                                                    |
+| public int from(\[int fromPage\])                                                                                                                         |                                                                                                                                                   |
+| public int generateDesign(\[Query query\], \[int designNo\])                                                                                              |                                                                                                                                                   |
+| public boolean getDeclineOverwrite()                                                                                                                      |                                                                                                                                                   |
+| public int getNumberOfPrinters()                                                                                                                          |                                                                                                                                                   |
+| public str getPrinter(int number)                                                                                                                         |                                                                                                                                                   |
+| public str getRangeDescription(int number)                                                                                                                |                                                                                                                                                   |
+| public ReportViewer getReportViewer()                                                                                                                     |                                                                                                                                                   |
+| public PrintMedium getTarget()                                                                                                                            |                                                                                                                                                   |
+| public boolean hasGeneratedDesign()                                                                                                                       |                                                                                                                                                   |
+| public str headerDescription()                                                                                                                            |                                                                                                                                                   |
+| public int heightOfPageFooters()                                                                                                                          |                                                                                                                                                   |
+| public int indent()                                                                                                                                       |                                                                                                                                                   |
+| public boolean isBodyEnabled(TableId tableId)                                                                                                             |                                                                                                                                                   |
+| public Int64 jobId()                                                                                                                                      |                                                                                                                                                   |
+| public Common last(TableId tableId)                                                                                                                       |                                                                                                                                                   |
+| public int mm100Left()                                                                                                                                    |                                                                                                                                                   |
+| public int mm100PageHeight()                                                                                                                              |                                                                                                                                                   |
+| public str name(\[str name\])                                                                                                                             | Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.                         |
+| public container pack()                                                                                                                                   | Serializes the current instance of the ReportRun class.                                                                                           |
+| public container packDesign()                                                                                                                             |                                                                                                                                                   |
+| public container packPageSettings()                                                                                                                       |                                                                                                                                                   |
+| public container packPrinterSettings()                                                                                                                    |                                                                                                                                                   |
+| public container packPrintJobSettings()                                                                                                                   |                                                                                                                                                   |
+| public container packSubtotalSettings()                                                                                                                   |                                                                                                                                                   |
+| public int page(\[int number\])                                                                                                                           |                                                                                                                                                   |
+| public boolean pageFormatting()                                                                                                                           | Displays the printer properties of the printer.                                                                                                   |
+| public int pagesTotal()                                                                                                                                   |                                                                                                                                                   |
+| public str passThrough(str str)                                                                                                                           |                                                                                                                                                   |
+| public int pixelsLeft()                                                                                                                                   |                                                                                                                                                   |
+| public int print()                                                                                                                                        | Sends the generated report to a print medium, such as a printer or the screen.                                                                    |
+| public int printerAttributes()                                                                                                                            |                                                                                                                                                   |
+| public int printerAveragePPM()                                                                                                                            |                                                                                                                                                   |
+| public str printerComment()                                                                                                                               |                                                                                                                                                   |
+| public str printerDatatype()                                                                                                                              |                                                                                                                                                   |
+| public int printerDefaultPriority()                                                                                                                       |                                                                                                                                                   |
+| public str printerDriverName()                                                                                                                            |                                                                                                                                                   |
+| public str printerFontInfo()                                                                                                                              | Indicates which font is used to print the report.                                                                                                 |
+| public str printerLocation()                                                                                                                              |                                                                                                                                                   |
+| public int printerPageHeight()                                                                                                                            |                                                                                                                                                   |
+| public int printerPageWidth()                                                                                                                             |                                                                                                                                                   |
+| public int printerPaper()                                                                                                                                 |                                                                                                                                                   |
+| public str printerParameters()                                                                                                                            |                                                                                                                                                   |
+| public str printerPortName()                                                                                                                              |                                                                                                                                                   |
+| public str printerPrinterName()                                                                                                                           |                                                                                                                                                   |
+| public str printerPrintProcessor()                                                                                                                        |                                                                                                                                                   |
+| public int printerPriority()                                                                                                                              |                                                                                                                                                   |
+| public int printerQueuedJobs()                                                                                                                            |                                                                                                                                                   |
+| public str printerSepFile()                                                                                                                               |                                                                                                                                                   |
+| public str printerServerName()                                                                                                                            |                                                                                                                                                   |
+| public boolean printerSettings(\[int showWhat\])                                                                                                          | Enables the user to select printer settings.                                                                                                      |
+| public str printerShareName()                                                                                                                             |                                                                                                                                                   |
+| public TimeOfDay printerStartTime()                                                                                                                       |                                                                                                                                                   |
+| public int printerStatus()                                                                                                                                |                                                                                                                                                   |
+| public TimeOfDay printerUntilTime()                                                                                                                       |                                                                                                                                                   |
+| public PrintJobSettings printJobSettings(\[container packedPrintJobSettings\])                                                                            |                                                                                                                                                   |
+| public int printSum()                                                                                                                                     |                                                                                                                                                   |
+| public xFormRun progressForm(\[xFormRun form\])                                                                                                           |                                                                                                                                                   |
+| public str progressInfo(int pageNo, int lineNo)                                                                                                           | Creates a string that describes how much of the report has been generated during the execution of a report every time that a section is executed. |
+| public boolean prompt(\[boolean enableCopy\], \[boolean enablePages\], \[boolean enableDevice\], \[boolean enableProperties\], \[boolean enablePrintTo\]) | Prompts the user a report is run.                                                                                                                 |
+| public Query query(\[Query query\])                                                                                                                       |                                                                                                                                                   |
+| public QueryRun queryRun(\[QueryRun queryRun\])                                                                                                           |                                                                                                                                                   |
+| public Report report()                                                                                                                                    |                                                                                                                                                   |
+| public str reportUser(\[str user\])                                                                                                                       |                                                                                                                                                   |
+| public int rulerCM()                                                                                                                                      |                                                                                                                                                   |
+| public int rulerINCH()                                                                                                                                    |                                                                                                                                                   |
+| public str screenFontInfo()                                                                                                                               |                                                                                                                                                   |
+| public ReportSection section()                                                                                                                            |                                                                                                                                                   |
+| public int sectionsLeft(ReportSection section)                                                                                                            |                                                                                                                                                   |
+| public boolean send(Common cursor, \[int level\], \[boolean triggerOffBody\], \[boolean newPageBeforeBody\])                                              | Triggers the body sections that belong to a section group.                                                                                        |
+| public PrintMedium setTarget(PrintMedium target)                                                                                                          |                                                                                                                                                   |
+| public boolean showMenuFunction(xMenuFunction menuFunction)                                                                                               |                                                                                                                                                   |
+| public boolean showMenuReference(WebMenu menuReference)                                                                                                   |                                                                                                                                                   |
+| public str sortInfo(Common cursor)                                                                                                                        |                                                                                                                                                   |
+| public Date startDate()                                                                                                                                   |                                                                                                                                                   |
+| public DateTime startDateTime()                                                                                                                           |                                                                                                                                                   |
+| public Date startMachineDate()                                                                                                                            |                                                                                                                                                   |
+| public TimeOfDay startTime()                                                                                                                              |                                                                                                                                                   |
+| public Real sum(TableId tableId, FieldId fieldId, \[int indent\])                                                                                         |                                                                                                                                                   |
+| public Real sumControl(str fieldName, \[int indent\])                                                                                                     |                                                                                                                                                   |
+| public Real sumControlNeg(str fieldName, \[int indent\])                                                                                                  |                                                                                                                                                   |
+| public Real sumControlPos(str fieldName, \[int indent\])                                                                                                  |                                                                                                                                                   |
+| public str sumDescription()                                                                                                                               |                                                                                                                                                   |
+| public Real sumNeg(TableId tableId, FieldId fieldId, \[int indent\])                                                                                      |                                                                                                                                                   |
+| public Real sumPos(TableId tableId, FieldId fieldId, \[int indent\])                                                                                      |                                                                                                                                                   |
+| public boolean suppressReportIsEmptyMessage(\[boolean suppress\])                                                                                         |                                                                                                                                                   |
+| public str title(\[str title\])                                                                                                                           | Gets or sets the print job description.                                                                                                           |
+| public int to(\[int toPage\])                                                                                                                             |                                                                                                                                                   |
+| public str toString()                                                                                                                                     | Returns a textual description of the class.                                                                                                       |
+| public boolean unpackPageSettings(container packedPageSetup)                                                                                              |                                                                                                                                                   |
+| public boolean unpackPrinterSettings(container packedPrinterSetup)                                                                                        |                                                                                                                                                   |
+| public boolean unpackPrintJobSettings(container packedPrintJobSettings)                                                                                   |                                                                                                                                                   |
+| public boolean unpackSubtotalSettings(container packedSubtotalSetup)                                                                                      |                                                                                                                                                   |
+| public PrinterOrientation userSelectedOrientation()                                                                                                       |                                                                                                                                                   |
+| public void disableBody(\[TableId tableId\])                                                                                                              |                                                                                                                                                   |
+| public void attach()                                                                                                                                      |                                                                                                                                                   |
+| public void new(AnyType argsOrReportOrContainer, \[str designName\], \[boolean isWebReport\])                                                             | Initializes an instance of the ReportRun class.                                                                                                   |
+| public void disableSection(ReportSection section)                                                                                                         |                                                                                                                                                   |
+| public void arrangeLevelGlobal()                                                                                                                          |                                                                                                                                                   |
+| public void setEscapeSequence(str str)                                                                                                                    |                                                                                                                                                   |
+| public void enableBody(\[TableId tableId\])                                                                                                               |                                                                                                                                                   |
+| public void clearAllRangeDescriptions()                                                                                                                   |                                                                                                                                                   |
+| public void header(ReportSection headerSection, TableId tableId, FieldId fieldId)                                                                         | Controls the header.                                                                                                                              |
+| public void unpackDesign(container packedDesign)                                                                                                          |                                                                                                                                                   |
+| public void newPage(\[boolean doPageFooter\])                                                                                                             |                                                                                                                                                   |
+| public void footer(ReportSection footerSection, TableId tableId, FieldId fieldId)                                                                         | Controls the footer.                                                                                                                              |
+| public void reset(\[boolean delayExceptions\])                                                                                                            | Enables a single instance of the ReportRun class to create multiple reports.                                                                      |
+| public void arrangeLevelNone()                                                                                                                            |                                                                                                                                                   |
+| public void run()                                                                                                                                         | Runs the report.                                                                                                                                  |
+| public void gotoYmm100(\[int mm100\])                                                                                                                     |                                                                                                                                                   |
+| public void disableColumnHeadings(\[TableId tableId\])                                                                                                    |                                                                                                                                                   |
+| public void enablePageFooter()                                                                                                                            |                                                                                                                                                   |
+| public void init()                                                                                                                                        |                                                                                                                                                   |
+| public void arrangeLevelControl()                                                                                                                         |                                                                                                                                                   |
+| public void disablePageFooter()                                                                                                                           |                                                                                                                                                   |
+| public void addPendingSums()                                                                                                                              | Prints the relevant footers of the report.                                                                                                        |
+| public void arrangeLevelSection()                                                                                                                         |                                                                                                                                                   |
+| public void enableSection(ReportSection section)                                                                                                          |                                                                                                                                                   |
+| public void detach()                                                                                                                                      |                                                                                                                                                   |
+| public void addRangeDescription(int x, int y, str text, \[str fontName\], \[int fontSize\])                                                               |                                                                                                                                                   |
+| public void finalize()                                                                                                                                    |                                                                                                                                                   |
 
+### Method allPages
+
+    public boolean allPages([boolean all])
+
+#### Parameters
+
+all  
+
+#### Return Value
+
+### Method callMenuFunction
+
+    public boolean callMenuFunction(xMenuFunction menuFunction)
+
+#### Parameters
+
+menuFunction  
+
+#### Return Value
+
+### Method caption
+
+Creates a caption when previewing a report, or a document name when printing a report.
+
+    public str caption(str reportSpelling, str reportName, str designCaption, str designName)
+
+#### Parameters
+
+reportSpelling  
+The name of the design.
+
+<!-- -->
+
+reportName  
+The name of the design.
+
+<!-- -->
+
+designCaption  
+The name of the design.
+
+<!-- -->
+
+designName  
+The name of the design.
+
+#### Return Value
+
+A string that contains "DesignLabel - ReportSpelling" if the DesignLabel is not empty. A string that contains "ReportName(DesignName) - ReportSpelling" if the DesignLabel is empty.
+
+#### Remarks
+
+The call to the super method in this method creates a string that is used as a caption when previewing a report and as the document name when printing a report. It is recommended that you always fill out the Caption property of the report design so that the caption that is used during the preview of the report is in the actual language.
+
+### Method collate
+
+    public boolean collate([boolean collate])
+
+#### Parameters
+
+collate  
+
+#### Return Value
+
+### Method columnHeadings
+
+Provides control of column headings in a report.
+
+    public TableId columnHeadings([TableId tableId])
+
+#### Parameters
+
+tableId  
+A table ID; optional.
+
+#### Return Value
+
+The last tableId value for which columnHeading objects were printed.
+
+### Method control
+
+Retrieves the control that is being executed.
+
+    public ReportControl control()
+
+#### Return Value
+
+The control that is being executed.
+
+#### Remarks
+
+This method is intended for internal use.
+
+### Method copies
+
+    public int copies([int numberOfCopies])
+
+#### Parameters
+
+numberOfCopies  
+
+#### Return Value
+
+### Method copiesTotal
+
+Enables marking copies of reports.
+
+    public int copiesTotal()
+
+#### Return Value
+
+The number of copies the user requested in the sysPrintForm form.
+
+#### Remarks
+
+Controls are typically evaluated during the execution of a report. A control that uses this method is evaluated when the report is printed.
+
+### Method copy
+
+Returns the number of the copy of a report.
+
+    public int copy()
+
+#### Return Value
+
+The number of the copy.
+
+#### Remarks
+
+If the user prints three copies of a report a control that have a dataFunction method, this method will return one for the first copy, two for the second copy, and three for the last copy.
+
+### Method copyDescription
+
+    public str copyDescription()
+
+#### Return Value
+
+### Method createProgressForm
+
+Creates the form that contains progress information.
+
+    public xFormRun createProgressForm()
+
+#### Return Value
+
+The form to use to display the progress information.
+
+#### Remarks
+
+You can overload this method. The method is called when the first page is created. The default implementation will open the SysPrintProgress form. If you implement your own progress form, you must implement the setNames and setPagePercent methods because these methods are called within the kernel. This form is shown when the pages are created, not when the pages are printed.
+
+### Method currentYmm100
+
+    public int currentYmm100()
+
+#### Return Value
+
+### Method design
+
+Gets or sets the name of the design.
+
+    public ReportDesign design([AnyType nameOrReportDesign])
+
+#### Parameters
+
+nameOrReportDesign  
+The name of the design; optional.
+
+#### Return Value
+
+The name of the design.
+
+#### Remarks
+
+This method can be used to change from one design to another while the report is executed.
+
+### Method deviceName
+
+    public str deviceName([str device])
+
+#### Parameters
+
+device  
+
+#### Return Value
+
+### Method dialog
+
+    public Object dialog(Object dialog)
+
+#### Parameters
+
+dialog  
+
+#### Return Value
+
+### Method driverName
+
+Returns the printer driver name.
+
+    public str driverName()
+
+#### Return Value
+
+The printer driver name.
+
+#### Remarks
+
+The method often returns the string "winspool". This is the printer driver name that is used when the printer device context is created. If no printers have been set up on the computer, the string "Screen" is returned.
+
+### Method enableAllBodies
+
+    public boolean enableAllBodies([boolean enable])
+
+#### Parameters
+
+enable  
+
+#### Return Value
+
+### Method execute
+
+Prints the programmable sections of a report.
+
+    public boolean execute(int number)
+
+#### Parameters
+
+number  
+The controlNumber value of the programmable section.
+
+#### Return Value
+
+false if the toPage object has been generated; otherwise, true.
+
+### Method executeBodyColumnHeadings
+
+Prints the column headings of a body section in a report.
+
+    public boolean executeBodyColumnHeadings(TableId tableId, [FieldId fieldId])
+
+#### Parameters
+
+tableId  
+The field ID of the DataField property of a section group; optional.
+
+<!-- -->
+
+fieldId  
+The field ID of the DataField property of a section group; optional.
+
+#### Return Value
+
+true if any column headings were printed; otherwise, false.
+
+#### Remarks
+
+This method is useful when a report should contain more column headings than those automatically printed in the report.
+
+### Method executeColumnHeadings
+
+    public boolean executeColumnHeadings(ReportSection section)
+
+#### Parameters
+
+section  
+
+#### Return Value
+
+### Method executeControlColumnHeadings
+
+Executes the column headings of a programmable section.
+
+    public boolean executeControlColumnHeadings(int number)
+
+#### Parameters
+
+number  
+The controlNumber value of the programmable section.
+
+#### Return Value
+
+true if any sections were printed; otherwise, false.
+
+#### Remarks
+
+This method is useful if you want to add columnHeading objects to a programmable section. If a programmable section causes a page break, the columnHeadings objects of the section are repeated. Under these circumstances this method not have to be called.
+
+### Method executeFooter
+
+Execute a footer section.
+
+    public boolean executeFooter([TableId tableId], [FieldId fieldId])
+
+#### Parameters
+
+tableId  
+The field ID of the dataField property of the footer section group; optional.
+
+<!-- -->
+
+fieldId  
+The field ID of the dataField property of the footer section group; optional.
+
+#### Return Value
+
+true if anything was printed; otherwise, false.
+
+### Method executeHeader
+
+Executes a header section.
+
+    public boolean executeHeader([TableId tableId], [FieldId fieldId])
+
+#### Parameters
+
+tableId  
+The field ID of the dataField property of the header section group; optional.
+
+<!-- -->
+
+fieldId  
+The field ID of the dataField property of the header section group; optional.
+
+#### Return Value
+
+### Method executeSection
+
+Prints the specified section in the report.
+
+    public boolean executeSection(ReportSection section)
+
+#### Parameters
+
+section  
+The section to print.
+
+#### Return Value
+
+### Method fetch
+
+Executes the report query and calls the send method for the record that is found by the query.
+
+    public boolean fetch()
+
+#### Return Value
+
+true if execution of the report should continue; otherwise, false.
+
+#### Remarks
+
+The fetch method is called from the super call in the run method.
+
+### Method from
+
+    public int from([int fromPage])
+
+#### Parameters
+
+fromPage  
+
+#### Return Value
+
+### Method generateDesign
+
+    public int generateDesign([Query query], [int designNo])
+
+#### Parameters
+
+query  
+
+<!-- -->
+
+designNo  
+
+#### Return Value
+
+### Method getDeclineOverwrite
+
+    public boolean getDeclineOverwrite()
+
+#### Return Value
+
+### Method getNumberOfPrinters
+
+    public int getNumberOfPrinters()
+
+#### Return Value
+
+### Method getPrinter
+
+    public str getPrinter(int number)
+
+#### Parameters
+
+number  
+
+#### Return Value
+
+### Method getRangeDescription
+
+    public str getRangeDescription(int number)
+
+#### Parameters
+
+number  
+
+#### Return Value
+
+### Method getReportViewer
+
+    public ReportViewer getReportViewer()
+
+#### Return Value
+
+### Method getTarget
+
+    public PrintMedium getTarget()
+
+#### Return Value
+
+### Method hasGeneratedDesign
+
+    public boolean hasGeneratedDesign()
+
+#### Return Value
+
+### Method headerDescription
+
+    public str headerDescription()
+
+#### Return Value
+
+### Method heightOfPageFooters
+
+    public int heightOfPageFooters()
+
+#### Return Value
+
+### Method indent
+
+    public int indent()
+
+#### Return Value
+
+### Method isBodyEnabled
+
+    public boolean isBodyEnabled(TableId tableId)
+
+#### Parameters
+
+tableId  
+
+#### Return Value
+
+### Method jobId
+
+    public Int64 jobId()
+
+#### Return Value
+
+### Method last
+
+    public Common last(TableId tableId)
+
+#### Parameters
+
+tableId  
+
+#### Return Value
+
+### Method mm100Left
+
+    public int mm100Left()
+
+#### Return Value
+
+### Method mm100PageHeight
+
+    public int mm100PageHeight()
+
+#### Return Value
+
+### Method name
+
+Gets or sets the name that is used in code to identify a form, report, table, query, or another MSDAX application object.
+
+    public str name([str name])
+
+#### Parameters
+
+name  
+
+#### Return Value
+
+The name that is used in code to identify an application object.
+
+#### Remarks
+
+The name property value of an object must meet the following criteria to avoid code conflicts:
+
+-   Begins with a letter.
+-   Doesn't exceed 250 characters.
+-   Can include numbers and underscore characters.
+-   Cannot include punctuation or spaces.
+-   Tables cannot have the same name as other public objects, such as extended data types, base enums, classes, and so on.
+
+### Method pack
+
+Serializes the current instance of the ReportRun class.
+
+    public container pack()
+
+#### Return Value
+
+A container that contains the current instance of the ReportRun class.
+
+### Method packDesign
+
+    public container packDesign()
+
+#### Return Value
+
+### Method packPageSettings
+
+    public container packPageSettings()
+
+#### Return Value
+
+### Method packPrinterSettings
+
+    public container packPrinterSettings()
+
+#### Return Value
+
+### Method packPrintJobSettings
+
+    public container packPrintJobSettings()
+
+#### Return Value
+
+### Method packSubtotalSettings
+
+    public container packSubtotalSettings()
+
+#### Return Value
+
+### Method page
+
+    public int page([int number])
+
+#### Parameters
+
+number  
+
+#### Return Value
+
+### Method pageFormatting
+
+Displays the printer properties of the printer.
+
+    public boolean pageFormatting()
+
+#### Return Value
+
+#### Remarks
+
+This method on the Report object is never called by the kernel. It could be called by the sysPrintForm form when the user clicks the Properties button, but instead, the sysPrintForm form calls the directly.
+
+### Method pagesTotal
+
+    public int pagesTotal()
+
+#### Return Value
+
+### Method passThrough
+
+    public str passThrough(str str)
+
+#### Parameters
+
+str  
+
+#### Return Value
+
+### Method pixelsLeft
+
+    public int pixelsLeft()
+
+#### Return Value
+
+### Method print
+
+Sends the generated report to a print medium, such as a printer or the screen.
+
+    public int print()
+
+#### Return Value
+
+#### Remarks
+
+The call to the super method in this method directs the generated report to a printMedium object, such as printer or screen. If the target is a screen, the call to the super method will create a reportViewer object on the client and call the showPage method. If the target is a printer, the call to the super method will create a reportOutput object and call the print method on this object. If the outputToClient method of the PrintJobSettings class has been called with a parameter of true, a reportViewer object will be created and the print method of that object will be called. In in this manner, a report that is generated on the server can be output to a printer that is set up on the client.
+
+### Method printerAttributes
+
+    public int printerAttributes()
+
+#### Return Value
+
+### Method printerAveragePPM
+
+    public int printerAveragePPM()
+
+#### Return Value
+
+### Method printerComment
+
+    public str printerComment()
+
+#### Return Value
+
+### Method printerDatatype
+
+    public str printerDatatype()
+
+#### Return Value
+
+### Method printerDefaultPriority
+
+    public int printerDefaultPriority()
+
+#### Return Value
+
+### Method printerDriverName
+
+    public str printerDriverName()
+
+#### Return Value
+
+### Method printerFontInfo
+
+Indicates which font is used to print the report.
+
+    public str printerFontInfo()
+
+#### Return Value
+
+The name of the font.
+
+#### Remarks
+
+The font to use to print the report is not necessarily the same as that set on the font property of the control as that font might not be available on the user system.
+
+### Method printerLocation
+
+    public str printerLocation()
+
+#### Return Value
+
+### Method printerPageHeight
+
+    public int printerPageHeight()
+
+#### Return Value
+
+### Method printerPageWidth
+
+    public int printerPageWidth()
+
+#### Return Value
+
+### Method printerPaper
+
+    public int printerPaper()
+
+#### Return Value
+
+### Method printerParameters
+
+    public str printerParameters()
+
+#### Return Value
+
+### Method printerPortName
+
+    public str printerPortName()
+
+#### Return Value
+
+### Method printerPrinterName
+
+    public str printerPrinterName()
+
+#### Return Value
+
+### Method printerPrintProcessor
+
+    public str printerPrintProcessor()
+
+#### Return Value
+
+### Method printerPriority
+
+    public int printerPriority()
+
+#### Return Value
+
+### Method printerQueuedJobs
+
+    public int printerQueuedJobs()
+
+#### Return Value
+
+### Method printerSepFile
+
+    public str printerSepFile()
+
+#### Return Value
+
+### Method printerServerName
+
+    public str printerServerName()
+
+#### Return Value
+
+### Method printerSettings
+
+Enables the user to select printer settings.
+
+    public boolean printerSettings([int showWhat])
+
+#### Parameters
+
+showWhat  
+This parameter is currently not functional.
+
+#### Return Value
+
+true if execution of the report should continue; otherwise, false.
+
+#### Remarks
+
+The call to the super method in this method runs the sysPrintForm form. The prompt method is called from the super method call in the prompt method. The PrintFormName property on the reportDesign object determines which form the call to the super method in the printerSettings object will run.
+
+### Method printerShareName
+
+    public str printerShareName()
+
+#### Return Value
+
+### Method printerStartTime
+
+    public TimeOfDay printerStartTime()
+
+#### Return Value
+
+### Method printerStatus
+
+    public int printerStatus()
+
+#### Return Value
+
+### Method printerUntilTime
+
+    public TimeOfDay printerUntilTime()
+
+#### Return Value
+
+### Method printJobSettings
+
+    public PrintJobSettings printJobSettings([container packedPrintJobSettings])
+
+#### Parameters
+
+packedPrintJobSettings  
+
+#### Return Value
+
+### Method printSum
+
+    public int printSum()
+
+#### Return Value
+
+### Method progressForm
+
+    public xFormRun progressForm([xFormRun form])
+
+#### Parameters
+
+form  
+
+#### Return Value
+
+### Method progressInfo
+
+Creates a string that describes how much of the report has been generated during the execution of a report every time that a section is executed.
+
+    public str progressInfo(int pageNo, int lineNo)
+
+#### Parameters
+
+pageNo  
+The section number of the page.
+
+<!-- -->
+
+lineNo  
+The section number of the page.
+
+#### Return Value
+
+A string that describes how much of the report has been generated.
+
+### Method prompt
+
+Prompts the user a report is run.
+
+    public boolean prompt([boolean enableCopy], [boolean enablePages], [boolean enableDevice], [boolean enableProperties], [boolean enablePrintTo])
+
+#### Parameters
+
+enableCopy  
+A Boolean value that indicates whether the user can select the target in the sysPrintForm form; optional.
+
+<!-- -->
+
+enablePages  
+A Boolean value that indicates whether the user can select the target in the sysPrintForm form; optional.
+
+<!-- -->
+
+enableDevice  
+A Boolean value that indicates whether the user can select the target in the sysPrintForm form; optional.
+
+<!-- -->
+
+enableProperties  
+A Boolean value that indicates whether the user can select the target in the sysPrintForm form; optional.
+
+<!-- -->
+
+enablePrintTo  
+A Boolean value that indicates whether the user can select the target in the sysPrintForm form; optional.
+
+#### Return Value
+
+true if execution of report should continue; otherwise, false.
+
+#### Remarks
+
+The call to the super method in the prompt method runs the sysPrintForm form. This method is called from the run method.
+
+### Method query
+
+    public Query query([Query query])
+
+#### Parameters
+
+query  
+
+#### Return Value
+
+### Method queryRun
+
+    public QueryRun queryRun([QueryRun queryRun])
+
+#### Parameters
+
+queryRun  
+
+#### Return Value
+
+### Method report
+
+    public Report report()
+
+#### Return Value
+
+### Method reportUser
+
+    public str reportUser([str user])
+
+#### Parameters
+
+user  
+
+#### Return Value
+
+### Method rulerCM
+
+    public int rulerCM()
+
+#### Return Value
+
+### Method rulerINCH
+
+    public int rulerINCH()
+
+#### Return Value
+
+### Method screenFontInfo
+
+    public str screenFontInfo()
+
+#### Return Value
+
+### Method section
+
+    public ReportSection section()
+
+#### Return Value
+
+### Method sectionsLeft
+
+    public int sectionsLeft(ReportSection section)
+
+#### Parameters
+
+section  
+
+#### Return Value
+
+### Method send
+
+Triggers the body sections that belong to a section group.
+
+    public boolean send(Common cursor, [int level], [boolean triggerOffBody], [boolean newPageBeforeBody])
+
+#### Parameters
+
+cursor  
+
+<!-- -->
+
+level  
+
+<!-- -->
+
+triggerOffBody  
+
+<!-- -->
+
+newPageBeforeBody  
+
+#### Return Value
+
+false if the toPage object has been generated; otherwise true.
+
+#### Remarks
+
+The executeSection method of the ReportSection class is called on each triggered section. By default in a master-detail report, the records from the master table have level of one, and the records from the details table have level of two.
+
+### Method setTarget
+
+    public PrintMedium setTarget(PrintMedium target)
+
+#### Parameters
+
+target  
+
+#### Return Value
+
+### Method showMenuFunction
+
+    public boolean showMenuFunction(xMenuFunction menuFunction)
+
+#### Parameters
+
+menuFunction  
+
+#### Return Value
+
+### Method showMenuReference
+
+    public boolean showMenuReference(WebMenu menuReference)
+
+#### Parameters
+
+menuReference  
+
+#### Return Value
+
+### Method sortInfo
+
+    public str sortInfo(Common cursor)
+
+#### Parameters
+
+cursor  
+
+#### Return Value
+
+### Method startDate
+
+    public Date startDate()
+
+#### Return Value
+
+### Method startDateTime
+
+    public DateTime startDateTime()
+
+#### Return Value
+
+### Method startMachineDate
+
+    public Date startMachineDate()
+
+#### Return Value
+
+### Method startTime
+
+    public TimeOfDay startTime()
+
+#### Return Value
+
+### Method sum
+
+    public Real sum(TableId tableId, FieldId fieldId, [int indent])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method sumControl
+
+    public Real sumControl(str fieldName, [int indent])
+
+#### Parameters
+
+fieldName  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method sumControlNeg
+
+    public Real sumControlNeg(str fieldName, [int indent])
+
+#### Parameters
+
+fieldName  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method sumControlPos
+
+    public Real sumControlPos(str fieldName, [int indent])
+
+#### Parameters
+
+fieldName  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method sumDescription
+
+    public str sumDescription()
+
+#### Return Value
+
+### Method sumNeg
+
+    public Real sumNeg(TableId tableId, FieldId fieldId, [int indent])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method sumPos
+
+    public Real sumPos(TableId tableId, FieldId fieldId, [int indent])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+<!-- -->
+
+indent  
+
+#### Return Value
+
+### Method suppressReportIsEmptyMessage
+
+    public boolean suppressReportIsEmptyMessage([boolean suppress])
+
+#### Parameters
+
+suppress  
+
+#### Return Value
+
+### Method title
+
+Gets or sets the print job description.
+
+    public str title([str title])
+
+#### Parameters
+
+title  
+The new printJobDescription value; optional.
+
+#### Return Value
+
+A string that contains the job description.
+
+#### Remarks
+
+If reports are written to the printArchive object, the print job description is stored in the jobDescription field of the printJobHeader table. If the report is previewed, the print job description is used as the caption. This method is not called by the kernel during the execution of a report. Therefore, overriding the method will have no effect.
+
+### Method to
+
+    public int to([int toPage])
+
+#### Parameters
+
+toPage  
+
+#### Return Value
+
+### Method toString
+
+Returns a textual description of the class.
+
+    public str toString()
+
+#### Return Value
+
+A string that describes the class.
+
+#### Remarks
+
+For most classes the toString method returns a string that contains the class handle and name, but for some classes more information is returned in the string.
+
+### Method unpackPageSettings
+
+    public boolean unpackPageSettings(container packedPageSetup)
+
+#### Parameters
+
+packedPageSetup  
+
+#### Return Value
+
+### Method unpackPrinterSettings
+
+    public boolean unpackPrinterSettings(container packedPrinterSetup)
+
+#### Parameters
+
+packedPrinterSetup  
+
+#### Return Value
+
+### Method unpackPrintJobSettings
+
+    public boolean unpackPrintJobSettings(container packedPrintJobSettings)
+
+#### Parameters
+
+packedPrintJobSettings  
+
+#### Return Value
+
+### Method unpackSubtotalSettings
+
+    public boolean unpackSubtotalSettings(container packedSubtotalSetup)
+
+#### Parameters
+
+packedSubtotalSetup  
+
+#### Return Value
+
+### Method userSelectedOrientation
+
+    public PrinterOrientation userSelectedOrientation()
+
+#### Return Value
+
+### Method disableBody
+
+    public void disableBody([TableId tableId])
+
+#### Parameters
+
+tableId  
+
+### Method attach
+
+    public void attach()
+
+### Method new
+
+Initializes an instance of the ReportRun class.
+
+    public void new(AnyType argsOrReportOrContainer, [str designName], [boolean isWebReport])
+
+#### Parameters
+
+argsOrReportOrContainer  
+
+<!-- -->
+
+designName  
+
+<!-- -->
+
+isWebReport  
+
+### Method disableSection
+
+    public void disableSection(ReportSection section)
+
+#### Parameters
+
+section  
+
+### Method arrangeLevelGlobal
+
+    public void arrangeLevelGlobal()
+
+### Method setEscapeSequence
+
+    public void setEscapeSequence(str str)
+
+#### Parameters
+
+str  
+
+### Method enableBody
+
+    public void enableBody([TableId tableId])
+
+#### Parameters
+
+tableId  
+
+### Method clearAllRangeDescriptions
+
+    public void clearAllRangeDescriptions()
+
+### Method header
+
+Controls the header.
+
+    public void header(ReportSection headerSection, TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+headerSection  
+The ID of the field that contains the changed value.
+
+<!-- -->
+
+tableId  
+The ID of the field that contains the changed value.
+
+<!-- -->
+
+fieldId  
+The ID of the field that contains the changed value.
+
+#### Remarks
+
+This method works just like the footer method, except it is called before a group of records, whereas the footer method is called after a group of records.
+
+### Method unpackDesign
+
+    public void unpackDesign(container packedDesign)
+
+#### Parameters
+
+packedDesign  
+
+### Method newPage
+
+    public void newPage([boolean doPageFooter])
+
+#### Parameters
+
+doPageFooter  
+
+### Method footer
+
+Controls the footer.
+
+    public void footer(ReportSection footerSection, TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+footerSection  
+The ID of the field that contains the changed value.
+
+<!-- -->
+
+tableId  
+The ID of the field that contains the changed value.
+
+<!-- -->
+
+fieldId  
+The ID of the field that contains the changed value.
+
+#### Remarks
+
+This method is called when a field is sorted after it changes value, even if the user has chosen not to print headers or footers. One call of the send method can trigger the printing of multiple footer sections and header sections before the body sections. The header and footer methods allow the user to execute code before or after printing the header or footer.
+
+### Method reset
+
+Enables a single instance of the ReportRun class to create multiple reports.
+
+    public void reset([boolean delayExceptions])
+
+#### Parameters
+
+delayExceptions  
+
+### Method arrangeLevelNone
+
+    public void arrangeLevelNone()
+
+### Method run
+
+Runs the report.
+
+    public void run()
+
+#### Remarks
+
+The call to the super method in this method calls the following methods:
+
+-   prompt - Lets the user select the printer in the sysPrintForm form
+-   fetch - Runs the report query
+-   print - Directs the report to the printer or display.
+
+### Method gotoYmm100
+
+    public void gotoYmm100([int mm100])
+
+#### Parameters
+
+mm100  
+
+### Method disableColumnHeadings
+
+    public void disableColumnHeadings([TableId tableId])
+
+#### Parameters
+
+tableId  
+
+### Method enablePageFooter
+
+    public void enablePageFooter()
+
+### Method init
+
+    public void init()
+
+### Method arrangeLevelControl
+
+    public void arrangeLevelControl()
+
+### Method disablePageFooter
+
+    public void disablePageFooter()
+
+### Method addPendingSums
+
+Prints the relevant footers of the report.
+
+    public void addPendingSums()
+
+#### Remarks
+
+This method should only be called in reports where the fetch method is called more than once.
+
+### Method arrangeLevelSection
+
+    public void arrangeLevelSection()
+
+### Method enableSection
+
+    public void enableSection(ReportSection section)
+
+#### Parameters
+
+section  
+
+### Method detach
+
+    public void detach()
+
+### Method addRangeDescription
+
+    public void addRangeDescription(int x, int y, str text, [str fontName], [int fontSize])
+
+#### Parameters
+
+x  
+
+<!-- -->
+
+y  
+
+<!-- -->
+
+text  
+
+<!-- -->
+
+fontName  
+
+<!-- -->
+
+fontSize  
+
+### Method finalize
+
+    public void finalize()
+
+## Class ReportSection
+    class ReportSection extends TreeNode
+
+The ReportSection class contains a collection of report controls.
+
+### Remarks
+
+A section is printed on the report when the query for the report is executed or when the methods of the report are executed. This class lets you to create, read, update, and delete X++ code and metadata. Make sure that the user has access to the development security key (SysDevelopment) before this API is called. A report section can be one of the following types: prologue, page header, header, footer, page footer, epilogue, programmable section, header, body, or footer. The section template node type lets you define sections one time and then reuse them many times in different reports. A typical example of this is a check or a giro.
+
+### Examples
+
+The following example adds a section to a report:
+
+    static void test(args a) 
+    {  
+        report r; 
+        reportDesign rd; 
+        reportSection rs; 
+        reportRun rr; 
+        // Create a simple report that is not present in  
+        // the Application Object Tree. 
+        r = new report(); 
+        rd = r.addDesign("myDesign"); 
+        rs = rd.addProgrammableSection(1);  
+        // Add a section triggered by execute(1). 
+        rs.addTextControl("Hello world"); 
+        // Run the report. 
+        rr = new reportRun(r); 
+        if (rr.prompt()) // Run the sysPrintForm form. 
+        { 
+            rr.execute(1); // Execute the programmableSection. 
+            rr.print();   // Print report to the target 
+                          // (for example, printer or screen) 
+                          // selected during the previous prompt call. 
+        } 
+    }
+
+### Methods
+
+| Method                                                                                       | Description                                                                                                                               |
+|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| public ReportBitmapControl addBitmapControl()                                                | Adds a bitmap control to a report section.                                                                                                |
+| public ReportShapeControl addBoxControl(\[ShapeType type\])                                  | Adds a shape control to a report section.                                                                                                 |
+| public ReportControl addControl(TableId tableId, FieldId fieldId, \[int arrayIndex\])        | Adds a report control to a report section.                                                                                                |
+| public ReportDateControl addDateControl(TableId tableId, FieldId fieldId)                    | Adds a date control to a report section.                                                                                                  |
+| public ReportDateControl addDateDisplayControl(str displayFunc, \[TableId tableId\])         | Adds a date control to a report section.                                                                                                  |
+| public ReportDateTimeControl addDateTimeControl(TableId tableId, FieldId fieldId)            |                                                                                                                                           |
+| public ReportDateTimeControl addDateTimeDisplayControl(str displayFunc, \[TableId tableId\]) |                                                                                                                                           |
+| public ReportControl addDisplayControl(str displayFunc, \[TableId tableId\])                 |                                                                                                                                           |
+| public ReportEnumControl addEnumControl(TableId tableId, FieldId fieldId)                    |                                                                                                                                           |
+| public ReportEnumControl addEnumDisplayControl(str displayFunc, \[TableId tableId\])         |                                                                                                                                           |
+| public ReportFieldGroup addFieldGroup(TableId tableId, str name)                             |                                                                                                                                           |
+| public ReportGuidControl addGuidControl(TableId tableId, FieldId fieldId)                    |                                                                                                                                           |
+| public ReportGuidControl addGuidDisplayControl(str displayFunc, \[TableId tableId\])         |                                                                                                                                           |
+| public ReportInt64Control addInt64Control(TableId tableId, FieldId fieldId)                  |                                                                                                                                           |
+| public ReportInt64Control addInt64DisplayControl(str displayFunc, \[TableId tableId\])       |                                                                                                                                           |
+| public ReportIntegerControl addIntegerControl(TableId tableId, FieldId fieldId)              |                                                                                                                                           |
+| public ReportIntegerControl addIntegerDisplayControl(str displayFunc, \[TableId tableId\])   |                                                                                                                                           |
+| public ReportPromptControl addPromptControl(TableId tableId, \[FieldId fieldId\])            |                                                                                                                                           |
+| public ReportRealControl addRealControl(TableId tableId, FieldId fieldId)                    |                                                                                                                                           |
+| public ReportRealControl addRealDisplayControl(str displayFunc, \[TableId tableId\])         |                                                                                                                                           |
+| public ReportSectionGroup addSection(TableId tableId, \[FieldId fieldId\])                   |                                                                                                                                           |
+| public ReportShapeControl addShapeControl(\[ShapeType type\])                                |                                                                                                                                           |
+| public ReportStringControl addStringControl(TableId tableId, FieldId fieldId)                |                                                                                                                                           |
+| public ReportStringControl addStringDisplayControl(str displayFunc, \[TableId tableId\])     |                                                                                                                                           |
+| public ReportSumControl addSumControl(TableId tableId, FieldId fieldId)                      |                                                                                                                                           |
+| public ReportSumControl addSumNameControl(str name)                                          |                                                                                                                                           |
+| public ReportTextControl addTextControl(str text)                                            |                                                                                                                                           |
+| public ReportTimeControl addTimeControl(TableId tableId, FieldId fieldId)                    |                                                                                                                                           |
+| public ReportTimeControl addTimeDisplayControl(str displayFunc, \[TableId tableId\])         |                                                                                                                                           |
+| public int arrange()                                                                         |                                                                                                                                           |
+| public int arrangeMethod(\[int value\])                                                      |                                                                                                                                           |
+| public int arrangeWhen(\[int value\])                                                        |                                                                                                                                           |
+| public boolean autoDeclaration(\[boolean value\])                                            | Determines whether the system can declare a member variable that has the same name as the control.                                        |
+| public boolean autoHeader(\[boolean value\])                                                 |                                                                                                                                           |
+| public int bold(\[int value\])                                                               | Gets or sets the weight of font that is used to output text in the control.                                                               |
+| public int bottomMarginAndFrame()                                                            |                                                                                                                                           |
+| public int bottomMarginMode(\[int value\])                                                   |                                                                                                                                           |
+| public str bottomMarginStr(\[str value\])                                                    |                                                                                                                                           |
+| public Units bottomMarginUnit(\[Units value\])                                               |                                                                                                                                           |
+| public Real bottomMarginValue(\[Real value\])                                                |                                                                                                                                           |
+| public int bottomMode(\[int value\])                                                         |                                                                                                                                           |
+| public str bottomStr(\[str value\])                                                          |                                                                                                                                           |
+| public Units bottomUnit(\[Units value\])                                                     |                                                                                                                                           |
+| public Real bottomValue(\[Real value\])                                                      |                                                                                                                                           |
+| public int characterSet(\[int value\])                                                       | Gets or sets the character set of the font.                                                                                               |
+| public int colorScheme(\[int value\])                                                        | Gets or sets the color scheme of the control.                                                                                             |
+| public int columnHeadingsStrategy(\[int value\])                                             |                                                                                                                                           |
+| public int columns(\[int value\], \[ColumnsMode mode\])                                      |                                                                                                                                           |
+| public ColumnsMode columnsMode(\[ColumnsMode mode\])                                         |                                                                                                                                           |
+| public int columnspaceMode(\[int value\])                                                    |                                                                                                                                           |
+| public str columnspaceStr(\[str value\])                                                     |                                                                                                                                           |
+| public Units columnspaceUnit(\[Units value\])                                                |                                                                                                                                           |
+| public Real columnspaceValue(\[Real value\])                                                 |                                                                                                                                           |
+| public int columnsValue(\[int value\])                                                       |                                                                                                                                           |
+| public ReportControl control(FieldId fieldId, \[TableId tableId\])                           | Finds a control in the section, based on the control’s table and dataField properties.                                                    |
+| public int controlCount()                                                                    |                                                                                                                                           |
+| public ReportControl controlName(str name)                                                   | Finds a control in a section, based on the control's Name property.                                                                       |
+| public ReportControl controlNo(int number)                                                   |                                                                                                                                           |
+| public int controlNumber(\[int value\])                                                      |                                                                                                                                           |
+| public int delete()                                                                          | Deletes the current node from the AOT.                                                                                                    |
+| public str font(\[str value\])                                                               | Gets or sets the name of the font for the control to use.                                                                                 |
+| public int fontSize(\[int value\])                                                           | Gets or sets the size of the font for the control to use.                                                                                 |
+| public str footerText(\[str value\])                                                         |                                                                                                                                           |
+| public int foregroundColor(\[int value\])                                                    | Gets or sets the text color for the control to use.                                                                                       |
+| public boolean grandHeader(\[boolean value\])                                                |                                                                                                                                           |
+| public boolean grandTotal(\[boolean value\])                                                 | Determines whether the FooterText property value can be displayed.                                                                        |
+| public boolean hasButtons(\[boolean value\])                                                 |                                                                                                                                           |
+| public int headerDetailLevel(\[int value\], \[AutoMode mode\])                               |                                                                                                                                           |
+| public AutoMode headerDetailLevelMode(\[AutoMode mode\])                                     |                                                                                                                                           |
+| public int headerDetailLevelValue(\[int value\])                                             |                                                                                                                                           |
+| public str headerText(\[str value\])                                                         |                                                                                                                                           |
+| public int height100mm(\[int height\])                                                       | Gets or sets the height of a section, excluding the height of the border and the top and bottom margins.                                  |
+| public int heightmm100(\[int heightInclMargins\])                                            | Gets or sets the height of a section, including the height of the border and the top and bottom margins.                                  |
+| public int heightMode(\[int value\])                                                         | Gets or sets a calculation mode for the height of the control.                                                                            |
+| public str heightStr(\[str value\])                                                          |                                                                                                                                           |
+| public Units heightUnit(\[Units value\])                                                     |                                                                                                                                           |
+| public Real heightValue(\[Real value\])                                                      | Gets or sets the height of the control.                                                                                                   |
+| public boolean italic(\[boolean value\])                                                     |                                                                                                                                           |
+| public str label()                                                                           | Gets the description of the section node in the AOT.                                                                                      |
+| public int labelBottomMarginMode(\[int value\])                                              |                                                                                                                                           |
+| public str labelBottomMarginStr(\[str value\])                                               |                                                                                                                                           |
+| public Units labelBottomMarginUnit(\[Units value\])                                          |                                                                                                                                           |
+| public Real labelBottomMarginValue(\[Real value\])                                           |                                                                                                                                           |
+| public int labelTopMarginMode(\[int value\])                                                 |                                                                                                                                           |
+| public str labelTopMarginStr(\[str value\])                                                  |                                                                                                                                           |
+| public Units labelTopMarginUnit(\[Units value\])                                             |                                                                                                                                           |
+| public Real labelTopMarginValue(\[Real value\])                                              |                                                                                                                                           |
+| public int leftMarginMode(\[int value\])                                                     |                                                                                                                                           |
+| public int leftMarginsEtc()                                                                  |                                                                                                                                           |
+| public str leftMarginStr(\[str value\])                                                      |                                                                                                                                           |
+| public Units leftMarginUnit(\[Units value\])                                                 |                                                                                                                                           |
+| public Real leftMarginValue(\[Real value\])                                                  |                                                                                                                                           |
+| public LineType lineAbove(\[LineType value\])                                                |                                                                                                                                           |
+| public LineType lineBelow(\[LineType value\])                                                |                                                                                                                                           |
+| public LineType lineLeft(\[LineType value\])                                                 | Gets or sets the type of line that is used as the left border of a section.                                                               |
+| public LineType lineRight(\[LineType value\])                                                |                                                                                                                                           |
+| public TableId map(\[TableId value\])                                                        |                                                                                                                                           |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
+| public int noOfHeadingLines(\[int value\], \[AutoMode mode\])                                |                                                                                                                                           |
+| public AutoMode noOfHeadingLinesMode(\[AutoMode mode\])                                      |                                                                                                                                           |
+| public int noOfHeadingLinesValue(\[int value\])                                              |                                                                                                                                           |
+| public str resolutionX(\[str value\])                                                        |                                                                                                                                           |
+| public int resolutionXStr(str value)                                                         |                                                                                                                                           |
+| public Units resolutionXUnit(\[Units value\])                                                |                                                                                                                                           |
+| public str resolutionY(\[str value\])                                                        |                                                                                                                                           |
+| public int resolutionYStr(str value)                                                         |                                                                                                                                           |
+| public Units resolutionYUnit(\[Units value\])                                                |                                                                                                                                           |
+| public int rightMarginMode(\[int value\])                                                    |                                                                                                                                           |
+| public int rightMarginsEtc()                                                                 |                                                                                                                                           |
+| public str rightMarginStr(\[str value\])                                                     |                                                                                                                                           |
+| public Units rightMarginUnit(\[Units value\])                                                |                                                                                                                                           |
+| public Real rightMarginValue(\[Real value\])                                                 |                                                                                                                                           |
+| public int ruler(\[int value\])                                                              |                                                                                                                                           |
+| public ReportSectionGroup sectionGroup(TableId tableId, \[FieldId fieldId\])                 | Finds an existing section group in the generated design.                                                                                  |
+| public ReportBlockType sectionType()                                                         | Retrieves the type of a given report section, such as ReportBlockType::Prolog, ReportBlockType::PageHeader, or ReportBlockType::Body.     |
+| public int sumDetailLevel(\[int value\], \[AutoMode mode\])                                  |                                                                                                                                           |
+| public AutoMode sumDetailLevelMode(\[AutoMode mode\])                                        |                                                                                                                                           |
+| public int sumDetailLevelValue(\[int value\])                                                |                                                                                                                                           |
+| public TableId table(\[TableId value\])                                                      | Gets or sets the table ID associated with the object.                                                                                     |
+| public LineThickness thickness(\[LineThickness value\])                                      |                                                                                                                                           |
+| public int topMarginAndFrame()                                                               |                                                                                                                                           |
+| public int topMarginMode(\[int value\])                                                      |                                                                                                                                           |
+| public str topMarginStr(\[str value\])                                                       |                                                                                                                                           |
+| public Units topMarginUnit(\[Units value\])                                                  |                                                                                                                                           |
+| public Real topMarginValue(\[Real value\])                                                   |                                                                                                                                           |
+| public int topMode(\[int value\])                                                            |                                                                                                                                           |
+| public str topStr(\[str value\])                                                             |                                                                                                                                           |
+| public Units topUnit(\[Units value\])                                                        |                                                                                                                                           |
+| public Real topValue(\[Real value\])                                                         |                                                                                                                                           |
+| public boolean underline(\[boolean value\])                                                  |                                                                                                                                           |
+| public void columnspace(Real value, Units unit)                                              |                                                                                                                                           |
+| public void bottom(Real value, Units unit)                                                   |                                                                                                                                           |
+| public void labelBottomMargin(Real value, Units unit)                                        |                                                                                                                                           |
+| public void labelTopMargin(Real value, Units unit)                                           |                                                                                                                                           |
+| public void executeColumnHeadings()                                                          |                                                                                                                                           |
+| public void executeSection()                                                                 | Prints the section on the report.                                                                                                         |
+| public void rightMargin(Real value, Units unit)                                              |                                                                                                                                           |
+| public void bottomMargin(Real value, Units unit)                                             |                                                                                                                                           |
+| public void topMargin(Real value, Units unit)                                                |                                                                                                                                           |
+| public void leftMargin(Real value, Units unit)                                               |                                                                                                                                           |
+| public void top(Real value, Units unit)                                                      |                                                                                                                                           |
+| public void height(Real value, Units unit)                                                   | Gets or sets the height of the control.                                                                                                   |
+
+### Method addBitmapControl
+
+Adds a bitmap control to a report section.
+
+    public ReportBitmapControl addBitmapControl()
+
+#### Return Value
+
+The bitmap control that is created.
+
+### Method addBoxControl
+
+Adds a shape control to a report section.
+
+    public ReportShapeControl addBoxControl([ShapeType type])
+
+#### Parameters
+
+type  
+The type of shape control to add; optional.
+
+#### Return Value
+
+The shape control that is created.
+
+### Method addControl
+
+Adds a report control to a report section.
+
+    public ReportControl addControl(TableId tableId, FieldId fieldId, [int arrayIndex])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+<!-- -->
+
+arrayIndex  
+
+#### Return Value
+
+The report control that is created.
+
+#### Remarks
+
+This method adds the specified type of control, such as string, enumeration, integer, real, or date, depending on the type of the field that is specified by the arguments.
+
+### Method addDateControl
+
+Adds a date control to a report section.
+
+    public ReportDateControl addDateControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+The field ID.
+
+<!-- -->
+
+fieldId  
+The field ID.
+
+#### Return Value
+
+The date control that is created.
+
+#### Examples
+
+    static void test(args a) 
+    { 
+        reportRun rr; 
+        inventTrans rec; 
+        int i; 
+        // Create a simple report that is not present in 
+        // the Application Object Tree. 
+        report r = new report(); 
+        reportDesign rd = r.addDesign("myDesign"); 
+        reportSection rs = rd.AddSection(reportBlockType::body,  
+        tablenum(inventTrans)); 
+        int t = tablenum(inventTrans); 
+        int f; 
+        f = fieldnum(inventTrans, datePhysical); 
+        rs.addDateControl(t,f); 
+        // run the report 
+        rr = new reportRun(r); 
+        // Run the sysPrintForm form. 
+        if (rr.prompt())  
+        { 
+            while select rec 
+                rr.send(rec); 
+            // Print report to the target (e.g. printer or screen) selected during the  
+            // prompt call above. 
+            rr.print();  
+        } 
+    }
+
+### Method addDateDisplayControl
+
+Adds a date control to a report section.
+
+    public ReportDateControl addDateDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+The name of the table on which the display method is declared; optional.
+
+<!-- -->
+
+tableId  
+The name of the table on which the display method is declared; optional.
+
+#### Return Value
+
+The date control that is created.
+
+#### Remarks
+
+The data control shows the result when a display method returns a date.
+
+### Method addDateTimeControl
+
+    public ReportDateTimeControl addDateTimeControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addDateTimeDisplayControl
+
+    public ReportDateTimeControl addDateTimeDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addDisplayControl
+
+    public ReportControl addDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addEnumControl
+
+    public ReportEnumControl addEnumControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addEnumDisplayControl
+
+    public ReportEnumControl addEnumDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addFieldGroup
+
+    public ReportFieldGroup addFieldGroup(TableId tableId, str name)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+name  
+
+#### Return Value
+
+### Method addGuidControl
+
+    public ReportGuidControl addGuidControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addGuidDisplayControl
+
+    public ReportGuidControl addGuidDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addInt64Control
+
+    public ReportInt64Control addInt64Control(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addInt64DisplayControl
+
+    public ReportInt64Control addInt64DisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addIntegerControl
+
+    public ReportIntegerControl addIntegerControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addIntegerDisplayControl
+
+    public ReportIntegerControl addIntegerDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addPromptControl
+
+    public ReportPromptControl addPromptControl(TableId tableId, [FieldId fieldId])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addRealControl
+
+    public ReportRealControl addRealControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addRealDisplayControl
+
+    public ReportRealControl addRealDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addSection
+
+    public ReportSectionGroup addSection(TableId tableId, [FieldId fieldId])
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addShapeControl
+
+    public ReportShapeControl addShapeControl([ShapeType type])
+
+#### Parameters
+
+type  
+
+#### Return Value
+
+### Method addStringControl
+
+    public ReportStringControl addStringControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addStringDisplayControl
+
+    public ReportStringControl addStringDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method addSumControl
+
+    public ReportSumControl addSumControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addSumNameControl
+
+    public ReportSumControl addSumNameControl(str name)
+
+#### Parameters
+
+name  
+
+#### Return Value
+
+### Method addTextControl
+
+    public ReportTextControl addTextControl(str text)
+
+#### Parameters
+
+text  
+
+#### Return Value
+
+### Method addTimeControl
+
+    public ReportTimeControl addTimeControl(TableId tableId, FieldId fieldId)
+
+#### Parameters
+
+tableId  
+
+<!-- -->
+
+fieldId  
+
+#### Return Value
+
+### Method addTimeDisplayControl
+
+    public ReportTimeControl addTimeDisplayControl(str displayFunc, [TableId tableId])
+
+#### Parameters
+
+displayFunc  
+
+<!-- -->
+
+tableId  
+
+#### Return Value
+
+### Method arrange
+
+    public int arrange()
+
+#### Return Value
+
+### Method arrangeMethod
+
+    public int arrangeMethod([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method arrangeWhen
+
+    public int arrangeWhen([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method autoDeclaration
+
+Determines whether the system can declare a member variable that has the same name as the control.
+
+    public boolean autoDeclaration([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+true if the member variable can be declared for this control; otherwise, false.
+
+#### Remarks
+
+Controls cannot have identical names.
+
+### Method autoHeader
+
+    public boolean autoHeader([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bold
+
+Gets or sets the weight of font that is used to output text in the control.
+
+    public int bold([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+An integer value between zero and nine, inclusive.
+
+#### Remarks
+
+The integer that is returned contains the weight of the font as follows:
+
+-   0 Use the default font weight.
+-   1 Thin.
+-   2 Extra-light.
+-   3 Light.
+-   4 Normal.
+-   5 Medium.
+-   6 Semibold.
+-   7 Bold.
+-   8 Extra-bold.
+-   9 Heavy.
+
+### Method bottomMarginAndFrame
+
+    public int bottomMarginAndFrame()
+
+#### Return Value
+
+### Method bottomMarginMode
+
+    public int bottomMarginMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomMarginStr
+
+    public str bottomMarginStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomMarginUnit
+
+    public Units bottomMarginUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomMarginValue
+
+    public Real bottomMarginValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomMode
+
+    public int bottomMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomStr
+
+    public str bottomStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomUnit
+
+    public Units bottomUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method bottomValue
+
+    public Real bottomValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method characterSet
+
+Gets or sets the character set of the font.
+
+    public int characterSet([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+An integer value that indicates the character set of the font.
+
+#### Remarks
+
+The values for the integer that is returned indicate the character set according to the following table:
+
+| Value. | Description.         |
+|--------|----------------------|
+| 0      | ANSI\_CHARSET        |
+| 1      | DEFAULT\_CHARSET     |
+| 2      | SYMBOL\_CHARSET      |
+| 77     | MAC\_CHARSET         |
+| 128    | SHIFTJIS\_CHARSET    |
+| 129    | HANGUL\_CHARSET      |
+| 134    | GB2312\_CHARSET      |
+| 136    | CHINESEBIG5\_CHARSET |
+| 161    | GREEK\_CHARSET       |
+| 162    | TURKISH\_CHARSET     |
+| 163    | VIETNAMESE\_CHARSET  |
+| 186    | BALTIC\_CHARSET      |
+| 204    | RUSSIAN\_CHARSET     |
+| 238    | EASTEUROPE\_CHARSET  |
+| 255    | OEM\_CHARSET         |
+
+The value in the following table is for the Korean language edition of Microsoft Windows:
+
+| Value. | Description.   |
+|--------|----------------|
+| 130    | JOHAB\_CHARSET |
+
+The values in the following table are for the Middle East language edition of Windows:
+
+| Value. | Description.    |
+|--------|-----------------|
+| 177    | HEBREW\_CHARSET |
+| 178    | ARABIC\_CHARSET |
+
+The value in the following table is for the Thai language edition of Windows:
+
+| Value. | Description.  |
+|--------|---------------|
+| 222    | THAI\_CHARSET |
+
+The default character set is set to a value that is based on the current system locale. For example, when the system locale is English (United States), it is set as ANSI\_CHARSET. For more information, see the LOGFONT structure on the [MSDN website](https://go.microsoft.com/fwlink/?LinkID=85972).
+
+### Method colorScheme
+
+Gets or sets the color scheme of the control.
+
+    public int colorScheme([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+An integer between zero and two, inclusive.
+
+#### Remarks
+
+The color scheme is defined according to the following table:
+
+| Value. | Style.                 |
+|--------|------------------------|
+| 0      | Default.               |
+| 1      | The Windows palette.   |
+| 2      | The true-color scheme. |
+
+### Method columnHeadingsStrategy
+
+    public int columnHeadingsStrategy([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method columns
+
+    public int columns([int value], [ColumnsMode mode])
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+mode  
+
+#### Return Value
+
+### Method columnsMode
+
+    public ColumnsMode columnsMode([ColumnsMode mode])
+
+#### Parameters
+
+mode  
+
+#### Return Value
+
+### Method columnspaceMode
+
+    public int columnspaceMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method columnspaceStr
+
+    public str columnspaceStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method columnspaceUnit
+
+    public Units columnspaceUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method columnspaceValue
+
+    public Real columnspaceValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method columnsValue
+
+    public int columnsValue([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method control
+
+Finds a control in the section, based on the control’s table and dataField properties.
+
+    public ReportControl control(FieldId fieldId, [TableId tableId])
+
+#### Parameters
+
+fieldId  
+The control's table property; optional.
+
+<!-- -->
+
+tableId  
+The control's table property; optional.
+
+#### Return Value
+
+The report control that is found.
+
+#### Remarks
+
+If the table ID is not supplied, the table property from the section’s parent section group is used.
+
+### Method controlCount
+
+    public int controlCount()
+
+#### Return Value
+
+### Method controlName
+
+Finds a control in a section, based on the control's Name property.
+
+    public ReportControl controlName(str name)
+
+#### Parameters
+
+name  
+The Name property of the control.
+
+#### Return Value
+
+The control that is found.
+
+### Method controlNo
+
+    public ReportControl controlNo(int number)
+
+#### Parameters
+
+number  
+
+#### Return Value
+
+### Method controlNumber
+
+    public int controlNumber([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method delete
+
+Deletes the current node from the AOT.
+
+    public int delete()
+
+#### Return Value
+
+### Method font
+
+Gets or sets the name of the font for the control to use.
+
+    public str font([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+The name of the font to use, such as Tahoma or Verdana.
+
+### Method fontSize
+
+Gets or sets the size of the font for the control to use.
+
+    public int fontSize([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+The height of the font in points.
+
+### Method footerText
+
+    public str footerText([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method foregroundColor
+
+Gets or sets the text color for the control to use.
+
+    public int foregroundColor([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+An integer that contains a packed RGB color.
+
+#### Remarks
+
+The integer that is returned contains a packed RGB color as follows:
+
+-   The low-order byte contains a value for the relative intensity of red.
+-   The second byte contains a value for green.
+-   The third byte contains a value for blue.
+-   The high-order byte must be zero.
+-   The maximum value for a single byte is 255.
+
+### Method grandHeader
+
+    public boolean grandHeader([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method grandTotal
+
+Determines whether the FooterText property value can be displayed.
+
+    public boolean grandTotal([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+true if the FooterText property value is displayed; otherwise, false.
+
+#### Remarks
+
+The grandTotal property is available only when a report has unnested, multiple data sources.
+
+### Method hasButtons
+
+    public boolean hasButtons([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method headerDetailLevel
+
+    public int headerDetailLevel([int value], [AutoMode mode])
+
+#### Parameters
+
+value  
+
+<!-- -->
+
+mode  
+
+#### Return Value
+
+### Method headerDetailLevelMode
+
+    public AutoMode headerDetailLevelMode([AutoMode mode])
+
+#### Parameters
+
+mode  
+
+#### Return Value
+
+### Method headerDetailLevelValue
+
+    public int headerDetailLevelValue([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method headerText
+
+    public str headerText([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method height100mm
+
+Gets or sets the height of a section, excluding the height of the border and the top and bottom margins.
+
+    public int height100mm([int height])
+
+#### Parameters
+
+height  
+The new value in 1/100 mm; optional.
+
+#### Return Value
+
+The height in 1/100 mm.
+
+#### Remarks
+
+This method acts as a heightExclBorderAndMargins method. The height that is returned corresponds to the value of the height property. Before you use this function to set the height property, make sure that the height property is not set to AUTO. Otherwise, built-in logic might recalculate the value.
+
+### Method heightmm100
+
+Gets or sets the height of a section, including the height of the border and the top and bottom margins.
+
+    public int heightmm100([int heightInclMargins])
+
+#### Parameters
+
+heightInclMargins  
+The new total height of the section in 1/100 mm; optional.
+
+#### Return Value
+
+The height in 1/100 mm.
+
+#### Remarks
+
+This method acts as a heightInclBorderAndMargins method. Before you use this function to set the height property, make sure that the height property is not set to AUTO. Otherwise, the built-in logic might set the height. If the heightmm100 method returns 1000, the total height of the section is 10 mm.
+
+### Method heightMode
+
+Gets or sets a calculation mode for the height of the control.
+
+    public int heightMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+The calculation mode.
+
+#### Remarks
+
+Calculate the height according to the following table:
+
+| Mode.          | Height Calculation.                                                                       |
+|----------------|-------------------------------------------------------------------------------------------|
+| Exact.         | The exact height in pixels of the controls is used.                                       |
+| Auto.          | The height of the control is calculated automatically and the value parameter is ignored. |
+| Column height. | The layout of the form determines the height of the control.                              |
+
+The height of the control might change when the mode is set to auto or column height.
+
+### Method heightStr
+
+    public str heightStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method heightUnit
+
+    public Units heightUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method heightValue
+
+Gets or sets the height of the control.
+
+    public Real heightValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+The height in pixels.
+
+#### Remarks
+
+The height of the control is not changed unless the exact height calculation mode is used.
+
+### Method italic
+
+    public boolean italic([boolean value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method label
+
+Gets the description of the section node in the AOT.
+
+    public str label()
+
+#### Return Value
+
+A string that contains the description of the section node.
+
+### Method labelBottomMarginMode
+
+    public int labelBottomMarginMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelBottomMarginStr
+
+    public str labelBottomMarginStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelBottomMarginUnit
+
+    public Units labelBottomMarginUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelBottomMarginValue
+
+    public Real labelBottomMarginValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelTopMarginMode
+
+    public int labelTopMarginMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelTopMarginStr
+
+    public str labelTopMarginStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelTopMarginUnit
+
+    public Units labelTopMarginUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method labelTopMarginValue
+
+    public Real labelTopMarginValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method leftMarginMode
+
+    public int leftMarginMode([int value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method leftMarginsEtc
+
+    public int leftMarginsEtc()
+
+#### Return Value
+
+### Method leftMarginStr
+
+    public str leftMarginStr([str value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method leftMarginUnit
+
+    public Units leftMarginUnit([Units value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method leftMarginValue
+
+    public Real leftMarginValue([Real value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method lineAbove
+
+    public LineType lineAbove([LineType value])
+
+#### Parameters
+
+value  
+
+#### Return Value
+
+### Method lineBelow
+
+    public LineType lineBelow([LineType value])
+
+#### Parameters
+
+value  
+
+#### Return Valu

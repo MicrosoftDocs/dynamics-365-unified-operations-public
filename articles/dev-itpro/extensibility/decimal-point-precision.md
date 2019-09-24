@@ -5,7 +5,7 @@ title: Extending decimal point precision for selected data types
 description: This topic describes how to extend decimal point precision for selected data types.
 author: LarsBlaaberg
 manager: 
-ms.date: 10/10/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios.
+This topic describes how to extend decimal point precision for selected data types. You can create extensions of specific extended data types of the type Real, to change the decimal point precision for certain scenarios. To change the decimal point precision, change the **NoOfDecimals** property as needed.
 
 ## Weight
 Weight data can be maintained with a maximum of two decimals by default. 

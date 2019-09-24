@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 01/17/2019
+ms.date: 08/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 83892
@@ -38,7 +38,6 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable.
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
-This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
 
 The following table lists the available triggers and denotes whether they can be cancelled.
 
@@ -53,7 +52,11 @@ The following table lists the available triggers and denotes whether they can be
 | PostLogOffTrigger         | Non-cancelable | Executed after the POS log off.                                                                                                      | 
 | PreLockTerminalTrigger    | Cancelable     | Executed before the POS register lock.  |
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
-| PostDeviceActivation      | Non-Cancelable | Executed after the POS activation.   | 
+| PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
+| PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
+| PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
+| PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
+| PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 
 
 ## Cash management triggers
@@ -77,6 +80,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
+| PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
 
 ## Discount triggers
 
@@ -98,6 +102,8 @@ The following table lists the available triggers and denotes whether they can be
 | Trigger              | Type           | Description                                                                                                                                           |
 |----------------------|----------------|-------------------------|
 | PreOperationTrigger  | Cancelable     | Generic trigger executed before all POS operations. You can use this trigger if there is no specific trigger available for a POS operation. |
+| PreOperationValidationTrigger | Cancelable | Generic trigger executed before the operation validation begins.   |
+| OperationFailureTrigger | Non-cancelable | Generic trigger executed after any POS operation failed.  |
 | PostOperationTrigger | Non-cancelable | Generic trigger executed after all POS operations. You can use this trigger if there is no specific trigger available for a POS operation.  |
 
 ## Payment triggers
@@ -144,6 +150,10 @@ The following table lists the available triggers and denotes whether they can be
 | PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
 | PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
+| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by clicking the ship button.|
+| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
+| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
+
 
 ## Shift triggers
 | Trigger              | Type           | Description                                             |
@@ -178,6 +188,12 @@ The following table lists the available triggers and denotes whether they can be
 | PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
+
+## Reason code triggers
+| Trigger              | Type           | Description                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
+
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
@@ -378,7 +394,9 @@ To implement this scenario, you must complete these steps.
 
 ## Override the CRT receipt request to generate the receipt data
 
-This section explains how to override the existing CRT request to print a receipt for suspended transactions. This section is applicable to Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics 365 for Retail with platform update 8.
+
+This section explains how to override the existing CRT request to print a receipt for suspended transactions. 
+
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
@@ -639,7 +657,7 @@ This section explains how to override the existing CRT request to print a receip
 
 ## Add the custom receipt layout
 
-1. Open Dynamics 365 for Finance and Operations, Enterpise edition.
+1. Open Dynamics 365 Retail.
 2. Go to **Retail** > **Channel setup** > **POS setup** > **POS** > **Receipts formats**.
 3. Click **New** in **Receipts formats**.
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.

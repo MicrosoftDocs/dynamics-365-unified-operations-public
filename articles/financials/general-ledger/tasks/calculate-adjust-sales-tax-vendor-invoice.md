@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Calculate and adjust sales tax on a vendor invoice
-description: If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. 
+description: This topic explains how to adjust sales tax on a vendor invoice in Dynamics 365 Finance. 
 author: twheeloc
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 07/31/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice, VendTableLookup, TaxTmpWorkTrans   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations 
 # ms.tgt_pltfrm:  
 # ms.custom:  
@@ -30,26 +30,20 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
+This topic explains how to adjust sales tax on a vendor invoice. If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
 
-1. Go to Accounts payable > Invoices > Invoice journal.
-2. Click New.
-3. In the list, mark the selected row.
-4. In the Name field, click the drop-down button to open the lookup.
-5. In the list, click the link in the selected row.
-6. Click Lines.
-7. In the list, mark the selected row.
-8. In the Account field, specify the desired values.
-9. In the Invoice field, type a value.
-10. In the Credit field, enter a number.
-11. In the Offset account field, specify the desired values.
-12. Click Sales tax.
-13. In the Total actual sales tax amount field, enter a number.
-14. Click OK.
-15. Click Save.
-16. Click Sales tax.
-17. On the Adjustment tab, the sales tax amounts can be adjusted per sales tax code.
-18. Click Reset actual from calculated amounts.
-19. Click OK.
-20. Click Save.
+1. In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice journal**.
+2. Select **New**.
+3. In the **Name** field of the new row, select an option in the drop-down menu.
+4. In the Action Pane, select **Lines**.
+5. In the **Account** field, specify the desired values.
+6. In the **Invoice** field, type a value.
+7. In the **Credit** field, enter a number.
+8. In the **Offset account** field, specify the desired values.
+9. Select **Sales tax**.
+10. In the **Total actual sales tax amount** field, enter a number.
+11. On the **Adjustment** tab, the sales tax amounts can be adjusted per sales tax code.
+12. Select **Reset actual from calculated amounts**.
+13. Select **OK**.
+14. Select **Save**.
 

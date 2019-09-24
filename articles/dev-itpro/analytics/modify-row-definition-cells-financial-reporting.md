@@ -2,10 +2,10 @@
 # required metadata
 
 title: Modify row definition cells
-description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
+description: This topic describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58881
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
+This topic describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
 
 ## Specify a row code in a row definition
 
@@ -391,7 +391,7 @@ You can limit a row to an existing book code. The column definition must include
 Some accounting systems support account attributes and transaction attributes in the financial data. These attributes function like virtual account segments, and can carry additional information about the account or transaction. This additional information might be account IDs, batch IDs, postal codes, or other attributes. If your accounting system supports attributes, you can use account attributes or transaction attributes as row modifiers in the row definition. For information about how to override row information, see the "Override a column definition" section earlier in this article.
 
 ## Specify a Link to Financial Dimensions cell
-The **Link to Financial Dimensions** cell contains links to the financial data that should be included in each row of a report. This cell contains dimension values, but you can specify cells in a Microsoft Excel worksheet instead of, or in addition to, segment values or dimension values. To open the **Dimensions** dialog box, double-click the **Link to Financial Dimensions** cell.
+The **Link to Financial Dimensions** cell contains links to the financial data that should be included in each row of a report. This cell contains dimension values. To open the **Dimensions** dialog box, double-click the **Link to Financial Dimensions** cell.
 
 > [!NOTE]
 > Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. To specify information for a row that is already in the row definition, add the information in the **Link to Financial Dimensions** cell. To add new rows that link to the financial data, use the **Insert Rows from** dialog box to create new rows in the report definition. The column title changes, depending on how the column is configured, as shown in the following table.
@@ -399,9 +399,7 @@ The **Link to Financial Dimensions** cell contains links to the financial data t
 | Link type that is selected       | The description of the Link column changes to this |
 |----------------------------------|----------------------------------------------------|
 | Financial Dimensions             | Link to Financial Dimensions                       |
-| External Worksheet               | Link to Worksheet                                  |
-| Financial Dimensions + Worksheet | Link to Financial Dimensions + Worksheet           |
-| Management Reporter Report       | Management Reporter Report                         |
+| Report Worksheet                 | Financial Reporting Report                         |
 
 ### Specify a dimension or range
 
@@ -409,7 +407,7 @@ The **Link to Financial Dimensions** cell contains links to the financial data t
 2. Double-click a cell in the **Link to Financial Dimensions** column.
 3. In the **Dimensions** dialog box, double-click a cell under the dimension name.
 4. In the dialog box for the dimension, select **Individual or range**.
-5. In the **From** field, enter the starting dimension, or click ![Browse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
+5. In the **From** field, enter the starting dimension, or click ![Browse](media/browse.gif "Browse") to search for available dimensions. To enter a range of dimensions, enter the ending dimension in the **To** field.
 6. Click **OK** to close the dialog box for the dimension. The **Dimensions** dialog box displays the updated dimension or range.
 7. Click **OK** to close the **Dimensions** dialog box.
 
@@ -486,7 +484,7 @@ The following table describes the fields in the **Dimensions** dialog box.
 
 | Item                | Description |
 |---------------------|-------------|
-| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
+| Individual or range | In the **From** field, enter the name of an account, or click the **Browse** button ![Browse](media/browse.gif "Browse") to browse for the account. To select a range, enter or browse for a value in the **To** field. |
 | Dimension Value Set | In the **Name** field, enter the name of a dimension value set. To create, modify, copy, or delete a set, click **Manage Dimension Value Sets**. The **Formula** field is populated with the formula from the **Link to Financial Dimensions** cell for this dimension value set in the row definition. |
 | Totaling accounts   | In the **Name** field, enter or browse for a dimension of totaling accounts. The **Formula** field is populated with the formula in the **Link to Financial Dimensions** cell for this totaling account in the report definition. |
 

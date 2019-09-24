@@ -2,10 +2,10 @@
 # required metadata
 
 title: Business intelligence (BI) and reporting home page
-description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 03/27/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27681
@@ -34,15 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available in Microsoft Dynamics 365 for Finance and Operations.
+This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
 
 ## Get started
 - [Information access and reporting](information-access-reporting.md)
 - [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Business intelligence](https://blogs.msdn.microsoft.com/dynamicsaxbi/) (blog)
+- [Finance and Operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## Analytical workspaces
-Finance and Operations delivers interactive reports that are seamlessly integrated into application workspaces. Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.
+Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.
 
 Users can interact with data by clicking or touching visuals on the page. They can see cause and effect, and do simple what-if operations without leaving the workspace. Thanks to stunning, interactive visuals, your users will have fun exploring data and discovering hidden trends.
 
@@ -79,7 +79,7 @@ To learn more, see the following topics:
 - [Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 ## Financial reporting
-Standard financial reports are provided that use the default main account categories in Finance and Operations. You can use the report designer to create or modify traditional financial statements, such as income statements and balance sheets. You can then share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
+Standard financial reports are provided that use the default main account categories. You can use the report designer to create or modify traditional financial statements, such as income statements and balance sheets. You can then share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
 [![Financial reporting example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
@@ -90,7 +90,7 @@ To learn more, see the following topics:
 - [Financial report components](financial-report-components.md)
 
 ## Technical reference reports
-The following reports provide reference information about the objects in Finance and Operations:
+The following reports provide reference information about the objects:
 
 - [Data entities report](../data-entities/data-entities-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)

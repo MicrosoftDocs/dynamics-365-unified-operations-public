@@ -5,7 +5,7 @@ title: Asset library in Lifecycle Services (LCS)
 description: This topic provides information about the Asset Library functionality in Lifecycle Services (LCS).
 author: manalidongre
 manager: AnnBe
-ms.date: 06/22/2017
+ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266824
@@ -43,6 +43,9 @@ The Asset library is a storage location for the various assets that are associat
 - **Project-level Asset library** – The project-level Asset library is used to share assets across environments within a project in LCS. This library can be accessed by all users within a project. To access the project-level Asset library, sign in to LCS, and open a project. Then, on the hamburger menu, click **Asset library**.
 
     [![Opening the project-level Asset library](./media/ProjectAssetLibrary.jpg)](./media/ProjectAssetLibrary.jpg)
+    
+    > [!NOTE]
+    > Uploading versions for the same asset in the project asset library is not supported. 
 
 ## Asset library support
 The Asset library supports multiple types of assets. Here are some asset types that are frequently used:
@@ -56,7 +59,7 @@ The Asset library supports multiple types of assets. Here are some asset types t
 Every asset that the Asset library supports has multiple scopes. Here are some of the supported asset scopes:
 
 - **Me** – When an asset is uploaded, it's set to the **Me** scope. An asset that has the **Me** scope is visible only to the person who uploaded the asset.
-- **Project** – When a project is imported from the **Global** scope to another project, it's set to the **Project** scope.
+- **Project** – When an asset is imported from the **Global** scope to another project, it's set to the **Project** scope.
 - **Organization** – When an asset must be shared with multiple users within a tenant, the tenant admin can promote the asset to the **Organization** scope.
 - **Global** – Only Microsoft can upload assets to the **Global** scope. These assets are assets that Microsoft wants to be made publicly available to all LCS projects and users.
 

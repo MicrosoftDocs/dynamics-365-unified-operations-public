@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense workflow
-description: This topic explains how you can use the workflow system in Microsoft Dynamics 365 for Finance and Operations, to set up a review process for expense reports in Expense management.
+description: This topic explains how you can use the workflow system in Microsoft Dynamics 365 Finance, to set up a review process for expense reports in Expense management.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/13/2017
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  WorkflowtableListPageRnr
 audience: Application User
 # ms.devlang: 
-ms.reviewer:  shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can use the workflow system in Microsoft Dynamics 365 for Finance and Operations, to set up a review process for expense reports in Expense management. You can set up a workflow that uses the following criteria to determine who approves expense reports:
+You can use the workflow system to set up a review process for expense reports in Expense management. You can set up a workflow that uses the following criteria to determine who approves expense reports:
 
 - The employee reporting hierarchy and predefined approval limits
 - Multi-level approval that supports interim approvers and a final approver

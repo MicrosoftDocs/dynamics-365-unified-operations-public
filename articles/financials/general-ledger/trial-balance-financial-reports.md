@@ -17,7 +17,7 @@ ms.search.form: LedgerTrialBalanceListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12314
@@ -39,7 +39,7 @@ This article describes the default reports for trial balances. It also describes
 Default trial balance reports
 -----------------------------
 
-Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations.
+Three trial balance reports are available in Financial reporting.
 
 | Default report                                 | What it does                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -111,7 +111,7 @@ Additional resources
 
 [View financial reports](view-financial-reports.md)
 
-[Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

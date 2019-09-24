@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55901
 ms.assetid: ca08dc94-1481-4ac0-80f4-d092da5c1c90
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -78,7 +78,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public int updatePermissions(\[int value\])              |                                                                                                             |
 | public int viewUserLicense(\[int value\])                | Microsoft internal use only.                                                                                |
 | ::public static void runCalled(str name, \[xArgs args\]) |                                                                                                             |
-| public void AOTrun(\[xArgs args\])                       | Compiles this node and its sub-tree in the Finance and Operations Application Object Tree (AOT).             |
+| public void AOTrun(\[xArgs args\])                       | Compiles this node and its sub-tree in the Application Object Tree (AOT).             |
 | ::public static void runClient(str name, \[xArgs args\]) |                                                                                                             |
 | public void run(\[xArgs args\])                          |                                                                                                             |
 | public void new(str name)                                | Initializes a new instance of the TreeNode class.                                                           |
@@ -378,7 +378,7 @@ args
 
 ### Method AOTrun
 
-Compiles this node and its sub-tree in the Finance and Operations Application Object Tree (AOT).
+Compiles this node and its sub-tree in the Application Object Tree (AOT).
 
     public void AOTrun([xArgs args])
 
@@ -453,7 +453,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public EnumId enumTypeParameter(\[EnumId value\]) | Gets or sets the enumTypeParameter property for the MenuFunction class.                                                                   |
 | public str helpText(\[str value\])                | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                     |
-| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public str object(\[str value\])                  | Gets or sets the object that the MenuFunction class runs.                                                                                 |
 | public int objectType(\[int value\])              |                                                                                                                                           |
 | public Guid origin(\[Guid value\])                |                                                                                                                                           |
@@ -606,7 +606,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -721,7 +721,7 @@ value
 | public str filename(\[str value\])                            |                                                                                                                                               |
 | public List getRelatedWebControls(\[boolean firstLevelOnly\]) | Get a list of web controls that are related to this web control.                                                                              |
 | public str helpText(\[str value\])                            | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                      |
-| public str name(\[str value\])                                | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                            |                                                                                                                                               |
 | public str relativePath(\[str value\])                        |                                                                                                                                               |
 | public str version(\[str value\])                             |                                                                                                                                               |
@@ -867,7 +867,7 @@ Set the HelpText property for an object by using the property dialog box. The he
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1001,7 +1001,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public EnumId enumTypeParameter(\[EnumId value\]) | Gets or sets the enumTypeParameter property for the MenuFunction class.                                                                       |
 | public str helpText(\[str value\])                | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                      |
 | public str label(\[str value\])                   | Gets or sets the label for a control.                                                                                                         |
-| public str name(\[str value\])                    | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                    | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public str object(\[str value\])                  | Gets or sets the object that the MenuFunction class runs.                                                                                     |
 | public int objectType(\[int value\])              |                                                                                                                                               |
 | public Guid origin(\[Guid value\])                |                                                                                                                                               |
@@ -1155,7 +1155,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1279,7 +1279,7 @@ name
 | public str creationTime(\[str value\])                     |                                                                                                                                           |
 | public str helpText(\[str value\])                         | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
 | public boolean mOSSOnly(\[boolean value\])                 |                                                                                                                                           |
-| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                           |
 | public str pageTitle(\[str value\])                        |                                                                                                                                           |
 | public boolean publicPage(\[boolean value\])               |                                                                                                                                           |
@@ -1412,7 +1412,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1567,7 +1567,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str menuItemName(\[str value\])                                   |                                                                                                                                               |
 | public WebMenuItemType menuItemType(\[WebMenuItemType value\])           |                                                                                                                                               |
 | public str menuName()                                                    |                                                                                                                                               |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public int neededAccessLevel(\[int value\])                              | Gets or sets the neededAccessLevel property for the MenuFunction class.                                                                       |
 | public Guid origin(\[Guid value\])                                       |                                                                                                                                               |
 | public SecurityKeyId securityKey(\[SecurityKeyId value\])                |                                                                                                                                               |
@@ -1734,7 +1734,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -1891,7 +1891,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str creationTime(\[str value\])                                                           |                                                                                                                                               |
 | public str helpText(\[str value\])                                                               | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                      |
 | public str label(\[str value\])                                                                  | Gets or sets the label for a control.                                                                                                         |
-| public str name(\[str value\])                                                                   | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                                   | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                                                               |                                                                                                                                               |
 | ::public static WebMenuFunction createWebMenuFunction(str name, WebMenuItemType webMenuItemType) |                                                                                                                                               |
 
@@ -2013,7 +2013,7 @@ The label determines which text is displayed in the control or adjacent to it. T
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2077,7 +2077,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public str label()                                             |                                                                                                                                           |
 | public str menuItemName(\[str value\])                         |                                                                                                                                           |
 | public WebMenuItemType menuItemType(\[WebMenuItemType value\]) |                                                                                                                                           |
-| public str name(\[str value\])                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                 | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public str parameters(\[str value\])                           | Gets or sets the list of parameters that are passed to objects that are run by the MenuFunction class.                                    |
 | public boolean showParentModule(\[boolean value\])             |                                                                                                                                           |
 
@@ -2109,7 +2109,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2186,7 +2186,7 @@ value
 | public WebMenuItemType menuItemType(\[WebMenuItemType value\])           |                                                                                                                                                |
 | public str moduleName()                                                  |                                                                                                                                                |
 | public str modulePath()                                                  |                                                                                                                                                |
-| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, rabble, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                           | Gets or sets the name that is used in the code to identify a form, report, rabble, query, or other application object. |
 | public int neededAccessLevel(\[int value\])                              | Gets or sets the neededAccessLevel property for the MenuFunction class.                                                                        |
 | public Guid origin(\[Guid value\])                                       |                                                                                                                                                |
 | public boolean publicModule(\[boolean value\])                           |                                                                                                                                                |
@@ -2388,7 +2388,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, rabble, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, rabble, query, or other application object.
 
     public str name([str value])
 
@@ -2570,7 +2570,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public str helpText(\[str value\])                         | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
 | public str imageResource(\[str value\])                    |                                                                                                                                           |
 | public boolean mOSSOnly(\[boolean value\])                 |                                                                                                                                           |
-| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                           |
 | public str pageTitle(\[str value\])                        |                                                                                                                                           |
 | public str parentPage(\[str value\])                       |                                                                                                                                           |
@@ -2716,7 +2716,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2872,7 +2872,7 @@ Make sure that the user has access to the development security key (SysDevelopme
 | public str creationTime(\[str value\])                     |                                                                                                                                           |
 | public str filename(\[str value\])                         |                                                                                                                                           |
 | public str helpText(\[str value\])                         | Gets or sets the help text to display at the bottom of the screen when a field or control is pointed to.                                  |
-| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                             | Gets or sets the name that is used in code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                         |                                                                                                                                           |
 | public str relativePath(\[str value\])                     |                                                                                                                                           |
 | public str version(\[str value\])                          |                                                                                                                                           |
@@ -3002,7 +3002,7 @@ Set the HelpText property for an object by using the property dialog box. The he
 
 ### Method name
 
-Gets or sets the name that is used in code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

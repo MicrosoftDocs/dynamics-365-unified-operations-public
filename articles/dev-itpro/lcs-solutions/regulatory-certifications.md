@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27581
@@ -46,7 +46,7 @@ The following table explains the components of the naming convention.
 
 | Component name      |  Format | Description                                                                                                                   | Example                           |
 |---------------------|---------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Country/region code | XX      | The two-letter ISO country/region code (from the [ISO 3166 standard](http://www.iso.org/iso/country_names_and_code_elements)) | PT (= Portugal)                   |
+| Country/region code | XX      | The two-letter ISO country/region code (from the [ISO 3166 standard](https://www.iso.org/iso/country_names_and_code_elements)) | PT (= Portugal)                   |
 | Feature type        | REG     | The type of feature                                                                                                           | REG                               |
 | Certification name  | Text    | A short title that describes the certification and its application                                                            | Certification for Fiscal printers |
 

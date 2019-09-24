@@ -5,7 +5,7 @@ title: Development and continuous delivery FAQ
 description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 09/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202614
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management for Microsoft Dynamics 365 for Finance and Operations.
+This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 
 Customization
 -------------
@@ -54,7 +54,7 @@ For more information, see [Extensibility home page](../extensibility/extensibili
 You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](lock-models.md) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
 
 ### How can I define the scope of my models? How many models or packages should I create?
-Designing models and model elements is no different than designing other types of software libraries. You should apply [SOLID (object-oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) design principles. In addition, we recommend the following tips that are specific to the Dynamics 365 Unified Operations platform:
+Designing models and model elements is no different than designing other types of software libraries. You should apply [SOLID (object-oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) design principles. In addition, we recommend the following tips that are specific to the platform:
 -   If there are components in your solution that you want to ship and service more frequent than the rest, they are good candidates to place in a separate model and package.
 -   It is common practice to start with two packages (each with one model) at the initial stage of an implementation, one foundation package that contains extensions to the Microsoft platform packages and one application package that contains extensions to the Microsoft application packages. More models can be introduced on an as-needed basis.
 -   Existing packages can be subdivided into smaller packages when necessary. If your implementation is already live using one of your packages, avoid renaming a package, to help simplify lifecycle management.
@@ -64,7 +64,7 @@ Designing models and model elements is no different than designing other types o
 
 Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md) for more details.
 
-Do not use build environments for development activities and keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they are updated with a Microsoft binary or platform updates from LCS. 
+Do not use build environments for development activities. Do not keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they are updated with a Microsoft binary or platform updates from LCS. 
 For example, if you apply a binary hotfix or platform update to a build VM, the VM prepares itself for the next build as part of the update. This will remove your customizations and also trigger a database synchronization.
 
 ### What strategy do I use for test automation?
@@ -121,9 +121,9 @@ The following is a summary of a Visual Studio (VS) with MSDN subscriptions benef
 
 -   Includes a Microsoft Azure subscription with a $50 monthly credit for Visual Studio Professional with MSDN and $150 for VS Enterprise with MSDN.
 -   Subscriptions come with lower dev/test rate, you will pay the Linux rates instead of the Windows rates.
--   For more details, visit <https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/>
+-   For more details, visit <https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/>
 
-As a Microsoft partner, acquire Microsoft core competencies to earn free VS Enterprise with MSDN subscriptions. For example, an application development competency for a gold partner will earn 25 free MSDN Enterprise licenses in addition to the 10 licenses that come with the core benefits. For more details, visit [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/). These benefits make cloud development very economical, for example:
+As a Microsoft partner, acquire Microsoft core competencies to earn free VS Enterprise with MSDN subscriptions. For example, an application development competency for a gold partner will earn 25 free MSDN Enterprise licenses in addition to the 10 licenses that come with the core benefits. For more details, visit [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/). These benefits make cloud development very economical, for example:
 
 -   D12v2 VM list price = $470/month (4 core, 28 Gigs)
 -   D12v2 VM price if running on MSDN Azure subscription or any other dev/test subscription = $276/month
@@ -158,4 +158,6 @@ The following servicing requests and tools are supported by LCS, which may help 
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
 5. Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
-6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.  
+6.  Apply updates (Hotfixes, customizations) to a sandbox environments for validation before applying them to a production environment.
+
+For more information about planning an environment, see [Environment planning](../../fin-and-ops/imp-lifecycle/environment-planning.md).

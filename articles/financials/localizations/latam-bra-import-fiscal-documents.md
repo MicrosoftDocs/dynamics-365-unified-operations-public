@@ -17,7 +17,7 @@ ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 270204

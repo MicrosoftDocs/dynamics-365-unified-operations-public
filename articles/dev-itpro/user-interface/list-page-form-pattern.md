@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer 
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14241
@@ -139,8 +139,8 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 links
 
--   [MSDN AX 2012 List Page User Experience Guidelines](http://msdn.microsoft.com/EN-US/library/gg853328.aspx)
--   [MSDN AX 2012 List Page Forms](http://msdn.microsoft.com/en-us/library/cc635077.aspx)
+-   [MSDN AX 2012 List Page User Experience Guidelines](https://msdn.microsoft.com/library/gg853328.aspx)
+-   [MSDN AX 2012 List Page Forms](https://msdn.microsoft.com/library/cc635077.aspx)
 
 #### AX 2012 example
 

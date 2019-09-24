@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure reverse proxies for on-premises environments
-description: This topic describes how you can secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy.
+title: Configure proxies for on-premises environments
+description: This topic describes how you can secure the on-premises environment behind a proxy.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 02/06/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,13 +27,13 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8 
 ---
 
-# Configure reverse proxies for on-premises environments
+# Configure proxies for on-premises environments
 
 [!include [banner](../includes/banner.md)]
 
-You may want to secure the Dynamics 365 for Finance and Operations on-premises environment behind a reverse proxy. Reverse proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the Finance and Operations environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the Finance and Operations environment. This adds another measure of security and enables load balancing. 
+You may want to secure the Dynamics 365 Finance + Operations (on-premises) environment behind a proxy. Proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the environment. This adds another measure of security and enables load balancing. 
 
-## Configure the reverse proxy
+## Configure the proxy
 
 Perform the following steps in **each** node of type **OrchestratorType** in the Microsoft Azure Service Fabric cluster.
 

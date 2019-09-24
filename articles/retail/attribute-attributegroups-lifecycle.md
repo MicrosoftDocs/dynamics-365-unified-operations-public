@@ -34,7 +34,8 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 [!include [banner](includes/banner.md)]
 
-*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). In Microsoft Dynamics 365 for Finance and Operations, attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
+*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). Attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
+
 
 For example, a typical television product might have the following attributes.
 
@@ -57,7 +58,7 @@ For example, a typical television product might have the following attributes.
 
 ## Attributes and attribute types
 
-Attributes are based on *attribute types*. The attribute type identifies the type of data that can be entered for a specific attribute. Finance and Operations currently supports the following attribute types:
+Attributes are based on *attribute types*. The attribute type identifies the type of data that can be entered for a specific attribute. The following attribute types are supported:
 
 - **Currency** – This type supports a currency value. It can be bounded (that is, it can support a range of values), or it can be left open.
 - **DateTime** – This type supports a date and time value. It can be bounded or left open.
@@ -67,9 +68,9 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 - **Boolean** – This type supports a binary value (**true** or **false**).
 - **Reference** – This type references other attributes.
 
-### Set up attribute types in Finance and Operations
+### Set up attribute types
 
-1. Sign in to the Finance and Operations back-office client as a retail merchandising manager.
+1. Sign in to the back-office client as a retail merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.
 3. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
 
@@ -78,7 +79,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 ![Attribute types](media/AttributeType.png)
 
-### Set up an attribute in Finance and Operations
+### Set up an attribute
 
 1. Sign in to the back-office client as a retail merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
@@ -105,13 +106,13 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 - Ignore case and format
 - Complete match
 
-These options were originally intended to improve the search functionality for the online storefront. Although Finance and Operations doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
+These options were originally intended to improve the search functionality for the online storefront. Although Retail doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
 For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## Filter settings for attributes
 
-Filter settings for attributes let you define how the filters for attributes are shown in the retail POS. To access the filter settings for an attribute, on the **Attributes** page in Finance and Operations, select the attribute, and then, on the Action Pane, select **Filter settings**.
+Filter settings for attributes let you define how the filters for attributes are shown in the retail POS. To access the filter settings for an attribute, on the **Attributes** page, select the attribute, and then, on the Action Pane, select **Filter settings**.
 
 The **Filter display preferences** page includes the following fields:
 
@@ -180,8 +181,8 @@ Follow these steps to assign attribute groups to categories in the Retail produc
 > [!NOTE]
 > This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
 >
-> - **Retail** &gt; **Category and product management** &gt; **Channel navigation categories**
-> - **Retail** &gt; **Category and product management** &gt; **Supplemental product categories**
+> - Retail &gt; Category and product management &gt; Channel navigation categories
+> - Retail &gt; Category and product management &gt; Supplemental product categories
 
 ### Assign attribute groups to retail stores
 
@@ -237,7 +238,7 @@ The default values of attributes can be overridden for individual products at th
     - Channel product attributes
 
     > [!NOTE]
-    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+    > If shared product media and shared product attributes are created, they apply to all the retail products.
 
 ![Catalog product attribute groups](media/CatalogProdAttrValues.png)
 
@@ -259,4 +260,4 @@ The default values of attributes can be overridden for individual products at th
     - Channel product attributes
 
     > [!NOTE]
-    > If shared product media and shared product attributes are created in Finance and Operations, they apply to all the retail products.
+    > If shared product media and shared product attributes are created, they apply to all the retail products.

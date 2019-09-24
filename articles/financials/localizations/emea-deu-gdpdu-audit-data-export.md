@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: German audit file (GDPdU/GoBD)
-description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+title: German audit file (GDPdU/GoBD) overview
+description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 Finance Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: mrolecki
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: ERWorkspace
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59201
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# German audit file (GDPdU/GoBD)
+# German audit file (GDPdU/GoBD) overview
 
 [!include [banner](../includes/banner.md)]
 
-Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
+Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how Dynamics 365 Finance supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 
 Companies in Germany and some other countries/regions are legally required to export data for all transactions and master data from a fiscal year, and to provide this data to auditors within a reasonable time. The data must be collected in a specific file format, so that it can be imported to the auditor’s audit environment. This procedure is controlled by tax authorities. The data that must be exported depends on the requirements for an audit. For example, a typical set of exported data includes the following master data and transaction tables:
 
@@ -49,7 +49,7 @@ Companies in Germany and some other countries/regions are legally required to ex
 -   Fixed assets master data
 -   Fixed assets transactions
 
-In the current version of Finance and Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
+In the current version of Finance, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations. Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.
 
 ## Table groups and table definitions
 The following sections list the tables that are set up as examples in the **German audit file** electronic reporting data model configuration. You can use these tables out of the box to export the data. You can also customize existing table groups and extend the list of supported table groups in the configuration of the **German audit file** electronic reporting data model.

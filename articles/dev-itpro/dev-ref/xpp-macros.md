@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189441
 ms.assetid: a2de1498-2c9d-4c5d-b396-5c8703a5ef72
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -508,7 +508,7 @@ To create a macro library:
 
 ### Code examples
 
-Finance and Operations has a macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
+There is a macro library that is named **Event.** This macro library contains the directive **\#define.DefaultEventPollFrequency(15)**. The following code sample shows that the **\#macrolib.Event** directive makes the macro **\#DefaultEventPollFrequency** available.
 
     static void SystemProvidedMacroLibraryJob(Args _args)
     {

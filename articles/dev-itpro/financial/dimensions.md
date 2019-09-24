@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13461
@@ -66,7 +66,7 @@ The entity exposes a default dimension field, **DimensionDefaultDisplayValue**. 
 ## Create an entity by using a wizard
 This section describes how to create a data entity by using a wizard. We recommend that you use the wizard. It requires only that you select the SFK field of the dimension. The wizard creates the required data source, fields, and relations that have all the correct settings.
 
-1. Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 365 for Finance and Operations project.
+1. Click **File** &gt; **New** &gt; **Project** to create a new project.
 2. In Solution Explorer, right-click your project, and then click **Properties**. The **Property Pages** dialog box for your project opens.
 3. In the **Property Pages** dialog box, follow these steps:
    1.  Change the value of the **Model** property to **Application Suite Unit tests**, and then click **OK**. You must set this property only one time per project.

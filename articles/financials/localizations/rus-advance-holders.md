@@ -1,10 +1,10 @@
 ---
 # required metadata
-title: Advance holders for Russia
+title: Russia advance holders overview
 description: This topic explains how to register and set up advance holders for Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/01/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form:  HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Advance holders for Russia
+# Russia advance holders overview
 [!include [banner](../includes/banner.md)]
 
 ## Set up parameters for advance holders

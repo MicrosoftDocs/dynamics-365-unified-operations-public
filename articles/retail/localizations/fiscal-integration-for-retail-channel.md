@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fiscal integration for Retail channel
-description: This topic provides an overview of the fiscal integration for Retail POS. 
+title: Overview of fiscal integration for Retail channels
+description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. 
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -23,116 +23,127 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10.0
 
 ---
-# Fiscal integration for Retail channel
+# Overview of fiscal integration for Retail channels
 
 [!include [banner](../includes/banner.md)]
 
-This topic is an overview of the fiscal integration functionality that is available in Microsoft Dynamics 365 for Retail. The fiscal integration functionality is a framework designed to support local fiscal laws that are aimed to prevent fraud in the Retail industry. Typical scenarios that could be covered by using fiscal integration include:
+## Introduction
 
-- Printing a fiscal receipt and giving it to the customer.
-- Securing the submission of the information related to sales and returns performed on POS to an external service provided by the authority.
-- Using data protection with a digital signature authorized by the authority.
+This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
-This topic provides guidelines for setting up fiscal integration so users can perform the following tasks. 
+- Register a retail sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
+- Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
+- Help guarantee inalterability of sales transaction data through digital signatures.
 
-- Configure fiscal connectors, which are fiscal devices or services used for fiscal registration purposes like saving, digital signatures, and secured submission of fiscal data.
-- Configure the document provider, which defines an output method and an algorithm of fiscal document generation.
-- Configure the fiscal registration process, which is defines a sequence of steps and a group of connectors used on each step.
-- Assign fiscal registration processes to POS functionality profiles.
-- Assign connector technical profiles, either to hardware profiles (for the local fiscal connectors) or to POS functionality profiles (for other fiscal connector types).
+The fiscal integration functionality is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the software development kit (SDK). For more information about the fiscal integration samples, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail SDK overview](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## Fiscal integration execution flow
-The following scenario shows the common fiscal integration execution flow.
+To support other scenarios that aren't supported by a fiscal integration sample, to integrate Retail POS with other fiscal devices or services, or to cover requirements of other countries or regions, you must either extend an existing fiscal integration sample or create a new sample by using an existing sample as an example.
 
-1. Initialization of the fiscal registration process.
-  
-   After performing some actions where fiscal registration is required, such as after a retail transaction has been concluded, the fiscal registration process is associated with the current POS functionality profile.
+## Fiscal registration process and fiscal integration samples for fiscal devices
 
-1. Search for a fiscal connector.
-   
-   For each fiscal registration step included in the fiscal registration process, the system matches the list of fiscal connectors. These connectors have a functional profile included in the specified connector group, with a list of connectors that have a technical profile associated with the current hardware profile (for a connector type that equals **Local** only) or with the current POS functionality profile (for other connector types).
-   
-1. Perform the fiscal integration.
+A fiscal registration process in Retail POS can consist of one or more steps. Each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device that is connected to a Hardware station:
 
-   The system executes all necessary actions defined by an assembly linked with the found connector. This is done in accordance with the settings of the functional profile and technical profile that were found on the previous step for this connector.
+- **Commerce runtime (CRT) extension** – This component serializes retail transaction/event data in the format that is also used for interaction with the fiscal device, parses responses from the fiscal device, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered. This component is often referred to as a *fiscal document provider*.
+- **Hardware station extension** – This component initializes the communication with the fiscal device, sends requests and direct commands to the fiscal device based on the retail transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device. This component is often referred to as a *fiscal connector*.
 
-## Setup needed before using fiscal integration
-Before using the fiscal integration functionality, you should define the following settings:
+A fiscal integration sample for a fiscal device contains the CRT and Hardware station extensions for a fiscal document provider and a fiscal connector, respectively. It also contains the following component configurations:
 
-- Define the number sequence on the **Retail parameters** page for the fiscal functional profile number.
-  
-- Define the number sequences on the **Retail shared parameters** page for the following references:
-  
-  - Fiscal technical profile number
-  - Fiscal connector group number
-  - Registration process number
+- **Fiscal document provider configuration** – This configuration defines an output method and a format for fiscal documents. It also contains a data mapping for taxes and payment methods, to make data from Retail POS compatible with the values that are predefined in the fiscal device firmware.
+- **Fiscal connector configuration** – This configuration defines the physical communication with the specific fiscal device.
 
-- Create a **Fiscal connector** in **Retail > Channel setup > Fiscal integration > Fiscal connectors** for each device or service that you plan to use for fiscal integration purposes.
+A fiscal registration process for a specific POS register is defined by a corresponding setting in the POS functionality profile. For more details about how to configure a fiscal registration process, upload fiscal document provider and fiscal connector configurations, and change their parameters, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Create a **Fiscal document provider** in **Retail > Channel setup > Fiscal integration > Fiscal document providers** for all fiscal connectors. Data mapping is considered a part of the fiscal document provider. To set up different data mappings for the same connector (like state-specific regulations), you should create different fiscal document providers.
+The following example shows a typical fiscal registration execution flow for a fiscal device. The flow starts with an event in the POS (for example, finalization of a sales transaction) and implements the following sequence of steps:
 
-- Create a **Connector functional profile** in **Retail > Channel setup > Fiscal integration > Connector functional profiles** for each fiscal document provider.
-  - Select a connector name.
-  - Select a document provider.
-  - Specify VAT rates settings on the **Service setup** tab.
-  - Specify VAT codes mapping and tender type mapping on the **Data mapping** tab.
+1. The POS requests a fiscal document from CRT.
+2. CRT determines whether the current event requires fiscal registration.
+3. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
+4. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the retail transaction or event.
+5. The POS sends the fiscal document that CRT prepares to a Hardware station.
+6. The Hardware station runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
+7. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
+8. CRT saves the response to the channel database.
 
-  #### Examples 
+![Solution schema](media/emea-fiscal-integration-solution.png "Solution schema")
 
-  |  | Format | Example | 
-  |--------|--------|--------|
-  | VAT rates settings | value : VATrate | 1 : 2000, 2 : 1800 |
-  | VAT codes mapping | VATcode : value | vat20 : 1, vat18 : 2 |
-  | Tender types mapping | TenderTyp : value | Cash : 1, Card : 2 |
+## Error handling
 
-- Create **Fiscal connector groups** in **Retail > Channel setup > Fiscal integration > Fiscal connector group**. A connector group is a subset of functional profiles linked with fiscal connectors that perform identical functions and are used at the same stage within a fiscal registration process.
+The fiscal integration framework provides the following options to handle failures during fiscal registration:
 
-   - Add functional profiles to the connector group. Click **Add** on the **Functional profiles** page and select a profile number.
-   - If you want to suspend usage of the functional profile, set **Disable** to **Yes**. 
-   
-     This change affects the current connector group only. You can continue using the same functional profile in other connector groups.
+- **Retry** – Operators can use this option when the failure can be resolved quickly, and the fiscal registration can be rerun. For example, this option can be used when the fiscal device isn't connected, the fiscal printer is out of paper, or there is a paper jam in the fiscal printer.
+- **Cancel** – This option lets operators postpone the fiscal registration of the current transaction or event if it fails. After the registration is postponed, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
+- **Skip** – Operators can use this option when the fiscal registration can be omitted under specific conditions and regular operations can be continued on the POS. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal.
+- **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
 
-     >[!NOTE]
-     > Within a connector group, each fiscal connector can only have one functional profile.
+> [!NOTE]
+> The **Skip** and **Mark as registered** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
 
-- Create a **Connector technical profile** in **Retail > Channel setup > Fiscal integration > Connector technical profiles** for each fiscal connector.
-  - Select a connector name.
-  - Select a connector type: 
-      - **Local** - Set this type for physical devices or applications installed on a local machine.
-      - **Internal** - Set this type for fiscal devices and services connected to Retail Server.
-      - **External** - For external fiscal services like a web-portal provided by a tax authority.
-	
-  - Specify settings on the **Connection** tab.
+The **Skip** and **Mark as registered** options enable info codes to capture some specific information about the failure, such as the reason for the failure or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > An updated version of a configuration that was loaded earlier will be loaded for both functional and technical profiles. If an appropriate connector or document provider is already in use, you will be notified. By default, all changes that have been made manually in functional and technical profiles will be stored. In order to override these profiles with the default set of parameters from a configuration, click **Update** on the **Connector functional profiles** page and **Connector technical profiles** page.
- 
-- Create a **Fiscal registration process** in **Retail > Channel setup > Fiscal integration > Fiscal registration processes** for each unique process of the fiscal integration. A registration process is defined by the sequence of the registration steps and the connector group used on each step. 
-  
-  - Add registration steps to the process:
-	  - Click **Add**.
-	  - Select a connector type.
-	  
-	  >[!NOTE]
-	  > This field defines where the system will search in a technical profile for the connector, either in hardware profiles for connector type **Local**, or in POS functionality profiles for other fiscal connector types.
-	  
-   - Select a connector group.
-   
-     >[!NOTE]
-     > Click **Validate** to check the integrity of the registration process structure. It’s recommended that validations be made in the following cases:
-       >- For a new registration process after all the settings are completed, including binding to POS functionality profiles and hardware profiles.
-       >- After making updates to an existing registration process.
+### Optional fiscal registration
 
--  Bind fiscal registration processes to POS functionality profiles in **Retail > Channel setup > POS setup > POS profiles > Functionality profiles**.
-   - Click **Edit** and select a **Process number** on the **Fiscal registration process** tab.
-- Bind the connector technical profiles to the hardware profiles in **Retail > Channel setup > POS setup > POS profiles > Hardware profiles**.
-   - Click **Edit**, then click **New** on the **Fiscal technical profile** tab.
-   - Select a connector technical profile in the **Profile number** field.
-   
-     >[!NOTE]
-     > You can add several technical profiles to a hardware profile. However, this is not supported if a hardware profile has more than one intersection with any connector group. To avoid incorrect settings, it’s recommended that you validate the registration process after updating all the hardware profiles.
+Fiscal registration might be mandatory for some operations but optional for others. For example, the fiscal registration of regular sales and returns might be mandatory, but the fiscal registration of operations that are related to customer deposits might be optional. In this case, failure to complete the fiscal registration of a sale should block further sales, but failure to complete the fiscal registration of a customer deposit should not block further sales. To distinguish mandatory and optional operations, we recommend that you handle them through different document providers, and that you set up separate steps in the fiscal registration process for those providers. The **Continue on error** parameter should be enabled for any step that is related to optional fiscal registration. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### Manually running fiscal registration
+
+If the fiscal registration of a transaction or event has been postponed after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### Fiscal registration health check
+
+The health check procedure for fiscal registrations verifies the availability of the fiscal device or service when specific events occur. If the fiscal registration can't currently be completed, the operator is notified in advance.
+
+The POS runs the health check when the following events occur:
+
+- A new transaction is opened.
+- A suspended transaction is recalled.
+- A sales or return transaction is finalized.
+
+If the health check fails, the POS shows the health check dialog box. This dialog box provides the following buttons:
+
+- **OK** – This button lets the operator ignore a health check error and continue to process the operation. Operators can select this button only if the **Allow skip health check error** permission is enabled for them.
+- **Cancel** – If the operator selects this button, the POS cancels the last action (for example, an item isn't added to a new transaction).
+
+> [!NOTE]
+> The health check is run only if the current operation requires fiscal registration, and if  the **Continue on error** parameter is disabled for the current step of the fiscal registration process. For more details, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+## Storing fiscal response in fiscal transaction
+
+When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip** or **Mark as registered** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
+
+Fiscal transactions are transferred to Retail Headquarters by the *P-job*, together with retail transactions. On the **Fiscal transactions** FastTab of the **Retail store transactions** page, you can view the fiscal transactions that are linked to retail transactions.
+
+A fiscal transaction stores the following details:
+
+- Fiscal registration process details (process, connector group, connector, and so on). It also stores the serial number of the fiscal device in the **Register number** field, if this information is included in the fiscal response.
+- The status of the fiscal registration: **Completed** for successful registration, **Skipped** if the operator selected the **Skip** option for a failed registration, or **Marked as registered** if the operator selected the **Mark as registered** option.
+- Info code transactions that are related to a selected fiscal transaction. To view the info code transactions, on the **Fiscal transactions** FastTab, select a fiscal transaction that has a status of **Skipped** or **Marked as registered**, and then select **Info code transactions**.
+
+## Fiscal texts for discounts
+
+Some countries or regions have special requirements about additional texts that must be printed on fiscal receipts when different kinds of discounts are applied. The fiscal integration functionality lets you set up a special text for a discount that is printed after a discount line on a fiscal receipt. For manual discounts, you can configure a fiscal text for the info code that is specified as the **Product discount** info code in the POS functionality profile. For more details about how to set up fiscal texts for discounts, see [Set up fiscal texts for discounts](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## Printing fiscal X and fiscal Z reports
+
+Fiscal integration functionality supports generation of end-of-day statements that are specific to the integrated fiscal device or service:
+
+- New buttons that run corresponding operations should be added to the POS screen layout. For more details, see [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- In the fiscal integration sample, these operations should be matched to the corresponding operations of the fiscal device.
+
+## Fiscal integration samples in the Retail SDK
+
+The following fiscal integration samples are currently available in the Retail SDK:
+
+- [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md)
+- [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)
+- [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md)
+- [Fiscal registration service integration sample for Czech Republic](emea-cze-fi-sample.md)
+
+The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
+
+- [Digital signature for France](emea-fra-cash-registers.md)
+- [Digital signature for Norway](emea-nor-cash-registers.md)
+- [Control unit integration sample for Sweden](./retail-sdk-control-unit-sample.md)

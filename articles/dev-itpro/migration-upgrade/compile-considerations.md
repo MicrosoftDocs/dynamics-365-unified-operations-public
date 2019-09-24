@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan and prepare for compiling code against the latest update
-description: This topic highlights potential issues that a developer might see when compiling partner code with the latest update from Microsoft Dynamics 365 for Finance and Operations.
+description: This topic highlights potential issues that a developer might see when compiling partner code with the latest product updates.
 author: dfroslie
 manager: AnnBe
 
@@ -19,7 +19,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 102343

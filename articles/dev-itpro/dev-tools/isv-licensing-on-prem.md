@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment of Microsoft Dynamics 365 for Finance and Operations.
+This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
 
 > [!IMPORTANT]
 > The process that is described in this topic is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.

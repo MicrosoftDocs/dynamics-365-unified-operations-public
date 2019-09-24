@@ -2,7 +2,7 @@
 # required metadata
 
 title: NF-e certificates for Brazil
-description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 for Finance and Operations. This includes information about the solution you should use for each state tax authority.
+description: This topic provides information about NF-e certificates for Microsoft Dynamics 365 Finance. This includes information about the solution you should use for each state tax authority.
 author: sndray
 manager: AnnBe
 ms.date: 01/31/2018
@@ -17,7 +17,7 @@ ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -43,18 +43,18 @@ Before you can generate an NF e, you must complete the following tasks:
 - Set up a fiscal document type for NF e.
 
 ## Set up certificates
-The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process, so that Microsoft Dynamics 365 for Finance and Operations, can connect with the state web services.
+The process that you use to install certificates varies, depending on the state where the NF e fiscal document is issued. You must use the correct certificate installation process so that Dynamics 365 Finance can connect with the state web services.
 
 The Brazilian government updated the root certification authority (CA) that is used to issue the certificate that is required in order to establish a Secure Sockets Layer (SSL) connection on server side. The current version of the root CA is AC Raiz v5. By default, the previous version (AC Raiz v2) is deployed on Microsoft Windows.
 
 ## Solutions
 - Manually install root CA v5 (AC Raiz v5) – The root certificate must be installed in Trusted Root Certification Authorities store. Although the Brazilian government created a new root certificate (v5), Windows Security hasn’t yet added this certificate to the Trusted Root Certification Authorities store. Therefore, you must open an incident in Windows Support and then manually install the certificate. You can use this workaround until the Windows Security group reaches an agreement with the Brazilian government.
-- Install the NF-e proxy on an on-premises VM – The tax authorities for the states of Ceará (CE), Goias (GO), and Pernambuco (PE) didn’t enable the most secure and market-standard protocol, Transport Layer Security (TLS) 1.2, in their web servers. However, the Windows virtual machines (VMs) that are used to run Finance and Operations follow Microsoft security policy and allow only connections that use TLS 1.2. Therefore, the system can’t connect directly to these web services. To route communications to those three states, customers must install a proxy web service on an on-premises Windows VM in their Microsoft Azure subscription.
+- Install the NF-e proxy on an on-premises VM – The tax authorities for the states of Ceará (CE), Goias (GO), and Pernambuco (PE) didn’t enable the most secure and market-standard protocol, Transport Layer Security (TLS) 1.2, in their web servers. However, the Windows virtual machines (VMs) that are used to run Finance follow Microsoft security policy and allow only connections that use TLS 1.2. Therefore, the system can’t connect directly to these web services. To route communications to those three states, customers must install a proxy web service on an on-premises Windows VM in their Microsoft Azure subscription.
 
 Brazilian certificates must be installed via Azure Key Vault. Key Vault lets you store encrypt keys, certificates, and secrets (such as authentication keys, storage account keys, data encryption keys, .pxf files, and passwords) by using keys that are protected by hardware security modules (HSMs).
 
 For more information about how to use keys and secrets with Key Vault, see [About keys, secrets, and certificates](https://docs.microsoft.com/rest/api/keyvault/about-keys--secrets-and-certificates).
-The following table lists each tax authority and the solution that you should use to install certificates for it in Finance and Operations.
+The following table lists each tax authority and the solution that you should use to install certificates for it.
 
 |Tax authority|	States|	Solution|
 |-------------|-------|---------|

@@ -5,7 +5,7 @@ title: Submit service requests to the Dynamics Service Engineering team
 description: This topic explains how you can submit service requests directly to the Dynamics Service Engineering team by using Microsoft Dynamics Lifecycle Services (LCS). 
 author: manalidongre
 manager: AnnBe
-ms.date: 12/27/2018
+ms.date: 06/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254564
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Find support for Microsoft Dynamics for Finance and Operations](lcs-support.md).
+> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Find support](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -84,21 +84,19 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
 1. On the **Work items** page, on the **Service requests** tab, select **Add**.
 2. In the **Create request** dialog box, select the type of service request to create. The options on the page then reflect the specific type of request that you selected.
 
-   - **Database point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
+   - **Sandbox point-in-time restore request** – Select this request type to restore a *non-production* database to a specific point in time. For more information, see [Request a point-in-time restore](../database/request-point-in-time-restore.md).
 
         > [!NOTE]
-        > If you must restore a *production* database during the cutover phase, select the **Sandbox to Production** type. If you must restore a production database when you're already live in operations, submit a support ticket through LCS.
+        > If you need to restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you need to restore a production database when you're already live in operations, submit a support ticket through LCS.
 
    - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).  *This request type is being retired on January 31, 2019*.
 
         > [!NOTE]
-        > If you must refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
+        > If you need to refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
 
-    - **Sandbox to Production** - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy database" section of [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
+    - **Sandbox to Production** - Perform a database refresh of your configuration data to a production environment during the cutover phase. For more information, see the "Submit a service request to copy the database" section of [Copy Finance and Operations apps databases from SQL Server to production Azure SQL Database environments](../database/copy-database-from-sql-server-to-azure-sql.md#submit-a-service-request-to-copy-the-database).
 
-   - **Other request** – You must use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
-
-     - Restore a production database to a specific point in time during the cutover phase. In this case, use the approach described for a database refresh to a production environment. However, in this case, the service request must be worded as follows: *This is a request for a point-in-time restore of production during the cutover phase. Restore point in UTC: \<mm/dd/yyyy hh:mm in UTC\>. I acknowledge that this will overwrite the database currently in production.*
+   - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
       - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
       - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
@@ -125,11 +123,10 @@ Here are some typical examples of service requests that will be denied:
 |--------------------------------|-------------------------|-------------------|-----------|----------|
 | Environment deployment         | Any | Environment deployment | Service level agreement (SLA): within two business days | |
 | Package application            | Production | Deployable package application | Five hours | Five hours |
-| Database point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
-| Database refresh               | From production to any Tier 2 or higher sandbox, or between any two Tier 2 or higher sandboxes | Database refresh | Twenty-four hours | Four hours |
+| Sandbox point-in-time restore | Any Tier 2 or higher sandbox | Database point-in-time restore | Five hours | Four hours |
+| Production point-in-time restore | Production | Database point-in-time restore | Five hours | Four hours |
 | Sandbox to Production          | Tier 2 or higher sandbox to Production | Sandbox to Production | Five hours | Four hours |
-| Other                          | Production | Database point-in-time restore | Five hours | Two hours |
-|                                | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
+| Other                          | Production | Maintenance mode | Five hours | Not applicable, because the customer indicates in the service request when the environment should be taken out of maintenance mode again |
 |                                | Production | IP whitelist rules | Five hours | Two hours |
 |                                | Production | Power BI Embedded | Five hours | Two hours |
 

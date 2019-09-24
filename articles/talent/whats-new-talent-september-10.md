@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (September 10, 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/12/2018
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (September 10, 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (September 10, 2018)
 
 [!include [banner](includes/banner.md)]
 
 **Build 8.1.138.0**
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.
 
 ## Allow specific time of day on time-off requests (half days)
 

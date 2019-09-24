@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89563
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 1
 Keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
 ## Overview
-For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Microsoft Dynamics 365 for Finance and Operations and supported browsers, shortcuts that are planned for implementation in Dynamics 365 for Finance and Operations, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
+For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Finance and Operations apps and supported browsers, shortcuts that are planned for implementation in Dynamics 365 for Finance and Operations, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
 
 ## Choosing a key combination
 When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you be aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
@@ -47,23 +47,23 @@ When you're trying to choose a key combination to use as a keyboard shortcut, it
 
 Because of these potential issues, we recommend that you adhere to this guidance when you choose a key combination:
 
-- **Don't** choose any key combination that is currently used by Dynamics 365 for Finance and Operations, or that is planned for future implementation in Dynamics 365 for Finance and Operations.
+- **Don't** choose any key combination that is currently used by Finance and Operations apps, or that is planned for future implementation.
 - **Do** pick key combinations that will work in all supported browsers.
 - **Do** be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.
 - **Do** use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.
 - **Don't** choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.
 
 ### Keyboard shortcut links
-Here are links to the keyboard shortcuts that are documented for Dynamics 365 for Finance and Operations and supported browsers:
+Here are links to the keyboard shortcuts that are documented for Finance and Operations apps and supported browsers:
 
 - <a href="../../fin-and-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
-- <a href="https://support.microsoft.com/en-us/help/13805">Microsoft Edge</a>
+- <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>
 - <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
-- <a href="https://support.microsoft.com/en-us/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
+- <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>
 - <a href="https://support.apple.com/kb/PH21483">Apple Safari</a>
 
-### Planned keyboard shortcuts for Dynamics 365 for Finance and Operations
-In addition to the keyboard shortcuts that are currently used by Dynamics 365 for Finance and Operations, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
+### Planned keyboard shortcuts 
+In addition to the keyboard shortcuts that are currently used, there are several shortcuts that are planned for future implementation. To avoid conflicts with framework-provided shortcuts, you should not choose the following key combinations for extensible controls.
 <table>
 <tbody>
 <tr>

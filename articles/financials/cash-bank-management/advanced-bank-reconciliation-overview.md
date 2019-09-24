@@ -17,7 +17,7 @@ ms.search.form: BankReconciliationMatchRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 22104
@@ -44,12 +44,12 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     -   The functionality can be extended to any format.
 
 2.  Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.
-    -   A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 for Finance and Operations bank transaction lines during the reconciliation process. Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.
+    -   A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 Finance bank transaction lines during the reconciliation process. Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.
 
-3.  Reconcile bank statements with Finance and Operations bank transactions.
+3.  Reconcile bank statements with Finance bank transactions.
     -   Perform automatic matching and creation of reconciliation journals.
-    -   View bank statements and Finance and Operations bank transactions side by side.
-    -   Automatically post Finance and Operations bank transactions if they appear on a bank statement but don't appear in Finance and Operations.
+    -   View bank statements and Finance bank transactions side by side.
+    -   Automatically post Finance bank transactions if they appear on a bank statement but don't appear in the Finance app.
     -   Generate a reconciliation statement.
 
 

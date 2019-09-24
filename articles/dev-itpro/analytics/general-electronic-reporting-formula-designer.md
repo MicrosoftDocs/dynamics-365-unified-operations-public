@@ -4,8 +4,8 @@
 title: Formula designer in Electronic reporting (ER)
 description: This topic explains how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
-manager: AnnBe
-ms.date: 10/03/2018
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormat
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
@@ -40,7 +40,7 @@ This topic explains how to use the formula designer in Electronic reporting (ER)
 
 ER supports the formula designer. Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:
 
-- Transform data that is received from a Microsoft Dynamics 365 for Finance and Operations database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
+- Transform data that is received from an application database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
 - Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format. (For example, the formatting might be done in accordance with the requested language or culture, or the encoding).
 - Control the process of creating electronic documents. (For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data. They can also interrupt the document creation process or throw messages to users.)
 
@@ -62,11 +62,11 @@ You can open the **Formula designer** page when you perform any of the following
 
 The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:
 
-- From Finance and Operations data sources and runtime parameters to an ER data model
+- From application data sources and runtime parameters to an ER data model
 - From an ER data model to an ER format
-- From Finance and Operations data sources and runtime parameters to an ER format
+- From application data sources and runtime parameters to an ER format
 
-The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table in Finance and Operations to two decimal places and then returns the rounded value.
+The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table to two decimal places and then returns the rounded value.
 
 [![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
@@ -106,7 +106,7 @@ Each rule of the process flow control is designed as an individual validation. T
 
 - The validation is evaluated when the **INSTAT** node is created during generation of the XML file.
 - If the list of transactions is empty, the validation stops the execution process and returns **FALSE**.
-- The validation returns an error message that includes the text of Finance and Operations label SYS70894 in the user's preferred language.
+- The validation returns an error message that includes the text of label SYS70894 in the user's preferred language.
 
 [![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
@@ -118,6 +118,33 @@ The ER formula designer can also be used to generate a file name for a generatin
 - An expression enables (by returning **TRUE**) the file creation process for batches that contain at least one record.
 
 [![File control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### Documents content control
+
+The ER formula designer can be used to configure expressions that control what data will be placed in generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. These expression can be entered for a single format element in the **Enabled** field on the **Mapping** tab on the **Operations designer** page as a logic condition returning the **Boolean** value:
+
+-	When **True** is returned, the current format element is executed.
+-	When **False** is returned, the current format element is skipped.
+
+The following illustration shows expressions of this type (the version, **11.12.11** of the **ISO20022 Credit transfer (NO)** format configuration provided by Microsoft is an example). The **XMLHeader** format component is configured to describe the structure of the credit transfer message, following the ISO 20022 XML message standards. The **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** format component is configured to add to the generated message, the **Ustrd** XML element, and place the remittance information in an unstructured format as text of the following XML elements:
+
+-	The **PaymentNotes** component is used to output the text of payment notes.
+-	The **DelimitedSequence** component outputs comma-separated invoice numbers that are used to settle the current credit transfer.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> The **PaymentNotes** and **DelimitedSequence** components are labeled using a question mark. This means that the usage of both components is conditional, based on the following criteria:
+
+-	Defined for the **PaymentNote**s component, the **@.PaymentsNotes<>""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, the text of payment notes when this text for the current credit transfer is not blank.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-	Defined for the **DelimitedSequence** component, **@.PaymentsNotes=""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, separated by comma invoice numbers that are used to settle the current credit transfer when the text of payment notes for this credit transfer is blank.
+
+[![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Based on this setting, the generated message for each debtor payment, **Ustrd** XML element, will contain either text of payment notes or, when such text is blank, text separated by comma invoice numbers used to settle this payment.
 
 ### Basic syntax
 
@@ -186,12 +213,12 @@ All characters in the name of a referencing data source that don't represent a l
 - The **Today's date & time** data source must be referred to in an ER expression as **'Today''s date & time'**.
 - The **name()** method of the **Customers** data source must be referred to in an ER expression as **Customers.'name()'**.
 
-If the methods of Finance and Operations data sources have parameters, the following syntax is used to call those methods:
+If the methods of application data sources have parameters, the following syntax is used to call those methods:
 
 - If the **isLanguageRTL** method of the **System** data source has an **EN-US** parameter of the **String** data type, this method must be referred to in an ER expression as **System.'isLanguageRTL'("EN-US")**.
 - Quotation marks aren't required when a method name contains only alphanumeric symbols. However, they are required for a method of a table if the name includes brackets.
 
-When the **System** data source is added to an ER mapping that refers to the **Global** Finance and Operations application class, the expression returns the Boolean value **FALSE**. The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.
+When the **System** data source is added to an ER mapping that refers to the **Global** application class, the expression returns the Boolean value **FALSE**. The modified expression **System.' isLanguageRTL'("AR")** returns the Boolean value **TRUE**.
 
 You can limit the way that values are passed to the parameters of this type of method:
 
@@ -216,16 +243,16 @@ The following tables describe the data manipulation functions that you can use t
 |----------|-------------|---------|
 | ADDDAYS (datetime, days) | Add the specified number of days to the specified date/time value. | **ADDDAYS (NOW(), 7)** returns the date and time seven days in the future. |
 | DATETODATETIME (date) | Convert the specified date value to a date/time value. | **DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Finance and Operations session date, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an ER data source of the **Finance and Operations/Table** type and refers to the CompanyInfo table. |
-| NOW () | Return the current Finance and Operations application server date and time as a date/time value. | |
-| TODAY () | Return the current Finance and Operations application server date as a date value. | |
+| NOW () | Return the current application server date and time as a date/time value. | |
+| TODAY () | Return the current application server date as a date value. | |
 | NULLDATE () | Return a **null** date value. | |
 | NULLDATETIME () | Return a **null** date/time value. | |
-| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current Finance and Operations application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current Finance and Operations application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
-| SESSIONTODAY () | Return the current Finance and Operations session date as a date value. | |
-| SESSIONNOW () | Return the current Finance and Operations session date and time as a date/time value. | |
-| DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Finance and Operations session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
-| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Finance and Operations session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| DATETIMEFORMAT (datetime, format) | Convert the specified date/time value to a string in the specified format. (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returns the current application server date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
+| DATETIMEFORMAT (datetime, format, culture) | Convert the specified date/time value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** returns the current application server date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
+| SESSIONTODAY () | Return the current application session date as a date value. | |
+| SESSIONNOW () | Return the current application session date and time as a date/time value. | |
+| DATEFORMAT (date, format) | Return a string representation of the specified date in the specified format. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current application session date, December 24, 2015, as **"24-12-2015"**, based on the specified custom format. |
+| DATEFORMAT (date, format, culture) | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current application session date, December 24, 2015, as **"24.12.2015"**, based on the selected German culture. |
 | DAYOFYEAR (date) | Return an integer representation of the number of days between January 1 and the specified date. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**. |
 | DAYS (date 1, date 2) | Return the number of days between the first specified date and the second specified date. Return a positive value when the first date is later than the second date, return **0** (zero) when the first date equals the second date, or return a negative value when the first date is earlier than the second date. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** returns **-1**. |
 
@@ -445,6 +472,11 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>Return the specified list after the query has been modified to filter for the specified condition. This function differs from the <strong>WHERE</strong> function, because the specified condition is applied to any ER data source of the <strong>Table records</strong> type at the database level. The list and condition can be defined by using tables and relations.</td>
 <td>If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> returns a list of just the vendors that belong to vendor group 40. If <strong>Vendor</strong> is configured as an ER data source that refers to the VendTable table, and if <strong>parmVendorBankGroup</strong> is configured as an ER data source that returns a value of the <strong>String</strong> data type, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returns a list of just the vendor accounts that belong to a specific bank group.</td>
 </tr>
+<tr>
+<td>INDEX (list, index)</td>
+<td>This function returns a record that is selected by a specific numeric index in the list. An exception is thrown if the index is out of range of the records in the list.</td>
+<td>If you enter the data source <strong>DS</strong> for the <strong>Calculated field</strong> type and it contains the expression <strong>SPLIT ("A|B|C", “|”), 2</strong>, the expression <strong>DS.Value</strong> returns the text value, “B”. The expression <strong>INDEX (SPLIT ("A|B|C", “|”), 2).Value</strong> also returns the “B” text value.</td>
+</tr>
 </tbody>
 </table>
 
@@ -452,7 +484,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| CASE (expression, option 1, result 1 \[, option 2, result 2\] … \[, default result\]) | Evaluate the specified expression value against the specified alternative options. Return the result of the option that equals the value of the expression. Otherwise, return the optional default result, if a default result is specified. (The default result is the last parameter that isn't preceded by an option.) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current Finance and Operations session date is between October and December. Otherwise, it returns a blank string. |
+| CASE (expression, option 1, result 1 \[, option 2, result 2\] … \[, default result\]) | Evaluate the specified expression value against the specified alternative options. Return the result of the option that equals the value of the expression. Otherwise, return the optional default result, if a default result is specified. (The default result is the last parameter that isn't preceded by an option.) | **CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12", "WINTER", "")** returns the string **"WINTER"** when the current application session date is between October and December. Otherwise, it returns a blank string. |
 | IF (condition, value 1, value 2) | Return the first specified value when the specified condition is met. Otherwise, return the second specified value. If value 1 and value 2 are records or record lists, the result has only the fields that exist in both lists. | **IF (1=2, "condition is met", "condition is not met")** returns the string **"condition is not met"**. |
 | NOT (condition) | Return the reversed logical value of the specified condition. | **NOT (TRUE)** returns **FALSE**. |
 | AND (condition 1\[, condition 2, …\]) | Return **TRUE** if *all* specified conditions are true. Otherwise, return **FALSE**. | **AND (1=1, "a"="a")** returns **TRUE**. **AND (1=2, "a"="a")** returns **FALSE**. |
@@ -612,8 +644,8 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>TEXT (input)</td>
-<td>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
-<td>If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current Finance and Operations session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</td>
+<td>Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current application instance. For values of the <strong>real</strong> type, the string conversion is limited to two decimal places.</td>
+<td>If the server locale of the Finance and Operations instance is defined as <strong>EN-US</strong>, <strong>TEXT (NOW ())</strong> returns the current applicatoin session date, December 17, 2015, as the text string <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returns <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
 <tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
@@ -622,12 +654,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>In the ER format that is designed to generate an electronic file for selected customers, <strong>PaymentModel</strong> is selected as a data source and controls the process flow. An exception is thrown to inform the user when a selected customer is stopped for the date when the report is processed. The formula that is designed for this type of processing control can use the following resources:</p>
 <ul>
-<li>Finance and Operations label SYS70894, which has the following text:
+<li>Label SYS70894, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Nothing to print&quot;</li>
 <li><strong>For the DE language:</strong> &quot;Nichts zu drucken&quot;</li>
 </ul></li>
-<li>Finance and Operations label SYS18389, which has the following text:
+<li>Label SYS18389, which has the following text:
 <ul>
 <li><strong>For the EN-US language:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
 <li><strong>For the DE language:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
@@ -641,7 +673,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <p>&quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot;</p>
 <blockquote>[!NOTE] The following syntax is applied in ER formulas for labels:
 <ul>
-<li><strong>For labels from Finance and Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where <strong>X</strong> is the label ID in the Application Object Tree (AOT)</li>
+<li><strong>For labels from Finance and Operations apps resources:</strong> <strong>@&quot;X&quot;</strong>, where <strong>X</strong> is the label ID in the Application Object Tree (AOT)</li>
 <li><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where <strong>X</strong> is the label ID in the ER configuration</li>
 </ul>
 </blockquote>
@@ -649,13 +681,18 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>NUMBERFORMAT (number, format)</td>
-<td>Return a string representation of the specified number in the specified format. (For information about the supported formats, see <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</td>
+<td>Return a string representation of the specified number in the specified format. (For information about the supported formats, see <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">standard</a> and <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">custom</a>.) The context that this function is run in determines the culture that is used to format numbers.</td>
 <td>For the EN-US culture, <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> returns <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returns <strong>&quot;10&quot;</strong>.</td>
+</tr>
+<tr>
+<td>NUMBERFORMAT (number, format, culture)</td>
+<td>Return a string representation of the specified number in the specified format and given culture. (For information about the supported formats, see <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">standard</a> and <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">custom</a>.).</td>
+<td><strong>NUMBERFORMAT (10/3, “F2”, "de")</strong> returns <strong>3,33</strong> while <strong>NUMBERFORMAT (10/3, “F2”, "en-us")</strong> returns <strong>3.33</strong>.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)</td>
 <td>Return the specified number after it has been spelled out (converted to text strings) in the specified language. The language code is optional. When it's defined as an empty string, the language code for the running context is used. (The language code for the running context is defined for a generating folder or file.) The currency code is also optional. When it's defined as an empty string, the company currency is used.
-<blockquote>[!NOTE] The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for Finance and Operations companies where the country's or region's context supports declension of currency names.</blockquote>
+<blockquote>[!NOTE] The <strong>print currency name flag</strong> and <strong>decimal points</strong> parameters are analyzed only for the following language codes: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, and <strong>RU</strong>. Additionally, the <strong>print currency name flag</strong> parameter is analyzed only for companies where the country's or region's context supports declension of currency names.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returns <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returns <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returns <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -705,7 +742,7 @@ When these data sources are defined, you can use an expression such as <strong>F
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| TEXT (input) | Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current Finance and Operations instance. For values of the **real** type, the string conversion is limited to two decimal places. | If the server locale of the Finance and Operations instance is defined as **EN-US**, **TEXT (NOW ())** returns the current Finance and Operations session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returns **"0.33"**. |
+| TEXT (input) | Return the specified input after it has been converted to a text string that is formatted according to the server locale settings of the current application instance. For values of the **real** type, the string conversion is limited to two decimal places. | If the server locale of the Finance and Operations instance is defined as **EN-US**, **TEXT (NOW ())** returns the current Finance and Operations session date, December 17, 2015, as the text string **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returns **"0.33"**. |
 | QRCODE (string) | Return a Quick Response Code (QR code) image in base64 binary format for the specified string. | **QRCODE ("Sample text")** returns **U2FtcGxlIHRleHQ=**. |
 
 ### Data collection functions
@@ -723,16 +760,16 @@ When these data sources are defined, you can use an expression such as <strong>F
 
 | Function | Description | Example |
 |----------|-------------|---------|
-| CONVERTCURRENCY (amount, source currency, target currency, date, company) | Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified Finance and Operations company on the specified date. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company. |
-| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE] The rounding rule must be specified as a value of the Finance and Operations **RoundOffType** enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
+| CONVERTCURRENCY (amount, source currency, target currency, date, company) | Convert the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified company on the specified date. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returns the equivalent of one euro in US dollars on the current session date, based on settings for the DEMF company. |
+| ROUNDAMOUNT (number, decimals, round rule) | Round the specified amount to the specified number of decimal places according to the specified rounding rule.<blockquote>[!NOTE] The rounding rule must be specified as a value of the **RoundOffType** enumeration.</blockquote> | If the **model.RoundOff** parameter is set to **Downward**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.78**. If the **model.RoundOff** parameter is set to either **Normal** or **Rounding-up**, **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** returns the value **1000.79**. |
 | CURCredRef (digits) | Return a creditor reference, based on the digits of the specified invoice number. | **CURCredRef ("VEND-200002")** returns **"2200002"**. |
 | MOD\_97 (digits) | Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number. | **MOD\_97 ("VEND-200002")** returns **"20000285"**. |
 | ISOCredRef (digits) | Return an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.<blockquote>[!NOTE] To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function.</blockquote> | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (string, number) | Get the specified additional financial dimension ID. In the **string** parameter, dimensions are represented as IDs that are separated by commas. The **number** parameter defines the sequence code of the requested dimension in the string. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returns **"CC"**. |
-| GetCurrentCompany () | Return a text representation of the code for the legal entity (company) that a user is currently signed in to. | **GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company in Finance and Operations. |
+| GetCurrentCompany () | Return a text representation of the code for the legal entity (company) that a user is currently signed in to. | **GETCURRENTCOMPANY ()** returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company. |
 | CH\_BANK\_MOD\_10 (digits) | Return a creditor reference as an MOD10 expression, based on the digits of the specified invoice number. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returns **3**. |
 | FA\_SUM (fixed asset code, value model code, start date, end date) | Return the prepared data container of the fixed asset amount for the specified period. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returns the prepared data container of fixed asset **"COMP-000001"** that has the **"Current"** value model for a period from **Date1** to **Date2**. |
-| FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date) | Return the prepared data container of the fixed asset balance. The reporting year must be specified as a value of the **AssetYear** enumeration in Finance and Operations. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returns the prepared data container of balances for fixed asset **"COMP-000001"** that has the **"Current"** value model on the current Finance and Operations session date. |
+| FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date) | Return the prepared data container of the fixed asset balance. The reporting year must be specified as a value of the **AssetYear** enumeration. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returns the prepared data container of balances for fixed asset **"COMP-000001"** that has the **"Current"** value model on the current application session date. |
 | TABLENAME2ID (string) | Return an integer representation of a table ID for the specified table name. | **TABLENAME2ID ("Intrastat")** returns **1510**. |
 | ISVALIDCHARACTERISO7064 (string) | Return the Boolean value **TRUE** when the specified string represents a valid international bank account number (IBAN). Otherwise, return the Boolean value **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returns **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** returns **FALSE**. |
 | NUMSEQVALUE (number sequence code, scope, scope id) | Return the new generated value of a number sequence, based on the specified number sequence code, scope, and scope ID. The scope must be specified as a value of the **ERExpressionNumberSequenceScopeType** enumeration (**Shared**, **Legal entity**, or **Company**). For the **Shared** scope, specify an empty string as the scope ID. For the **Company** and **Legal entity** scopes, specify the company code as the scope ID. For the **Company** and **Legal entity** scopes, if you specify an empty string as the scope ID, the current company code is used. | You define the following data sources in your model mapping:<ul><li>**enumScope** (**Dynamics 365 for Operations enumeration** type), which refers to the **ERExpressionNumberSequenceScopeType** enumeration</li><li>**NumSeq** (**Calculated field** type), which contains the expression **NUMSEQVALUE ("Gene\_1", enumScope.Company, "")**</li></ul>When the **NumSeq** data source is called, it returns the new generated value of the **Gene\_1** number sequence that has been configured for the company that supplies the context that the ER format is run under. |

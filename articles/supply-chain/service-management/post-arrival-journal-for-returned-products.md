@@ -58,7 +58,7 @@ After the journal is posted, the returned items are registered in inventory, and
 
 ## See also
 
-[Location journal (form)](https://technet.microsoft.com/en-us/library/aa584822\(v=ax.60\))
+[Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))
 
   
 

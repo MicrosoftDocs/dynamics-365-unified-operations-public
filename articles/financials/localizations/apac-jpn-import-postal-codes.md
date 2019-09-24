@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form: DirPartyTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-In Japan, the Japan Postal Office provides a ZIP code file that you can import into Microsoft Dynamics 365 for Finance and Operations. This topic walks you through the process for importing ZIP/postal codes. This example uses the JPMF demo data company.
+In Japan, the Japan Postal Office provides a ZIP code file that you can import into Dynamics 365 Finance. This topic walks you through the process for importing ZIP/postal codes. This example uses the JPMF demo data company.
 
 ## Prepare the ZIP code file
 
-1. Download the comma-separated values (CSV) file from the Japan Postal Office home page: <http://www.post.japanpost.jp/zipcode/download.html>
+1. Download the comma-separated values (CSV) file from the [Japan Postal Office home page](https://www.post.japanpost.jp/zipcode/download.html).
 2. Open the file for editing, and add the following row for column headings.
 
         LocalAuthCode,OldZipCode,ZipCode,PrefectureName,KanaCity,KanaStreetName,State,City,StreetName,MoreZipCodeFlag,SmallerAreaFlag,StreetChomeFlag,MoreStreetFlag,UpdateFlag,Reason

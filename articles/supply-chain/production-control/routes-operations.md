@@ -5,7 +5,7 @@ title: Routes and operations
 description: This topic provides information about routes and operations. 
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ This topic provides information about routes and operations. A route defines the
 Overview
 --------
 
-A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Microsoft Dynamics 365 for Finance and Operations consists of four separate elements that, together, describe the production process:
+A route describes the order of operations that is required in order to produce a product or product variant. For each operation, the route also defines the operations resources that are required, the time that is required in order to set up and perform the operation, and how the cost should be calculated. You can use the same route to produce multiple products, or you can define a unique route for each product or product variant. You can even have multiple routes for the same product. In this case, the route that is used varies, depending on factors such as the quantity that must be produced. The definition of a route in Finance and Operations consists of four separate elements that, together, describe the production process:
 
 -   **Route** – A route defines the structure of the production process. In other words, it defines the order of operations.
 -   **Operation** – An operation identifies a named step in a route, such as **Assembly**. The same operation can occur in multiple routes and can have different operation numbers.
@@ -63,11 +63,10 @@ If you enable the more complex route networks in the Production control paramete
 
 [![Route network](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Notes:**
-
--   Each operation can have only one successor operation, and the whole route must end in a single operation.
--   There is no guarantee that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
--   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
+> [!NOTE]
+> -   Each operation can have only one successor operation, and the entire route must end in a single operation.
+> -   This does not ensure that multiple operations that have the same successor operation (for example, operations 30 and 40 in the preceding illustration) will actually be run in parallel. The availability and capacity of resources might put constraints on the way that operations are scheduled.
+> -   You can't use 0 (zero) as the operation number. That number is reserved and is used to specify that the last operation in the route has no successor operation.
 
 ### Parallel operations
 
@@ -126,7 +125,8 @@ You can also specify that an operation relation is specific to a site. In this w
 
 Operation relations give you lots of flexibility when you define your routes. Additionally, the ability to define default properties helps reduce the amount of master data that you must maintain. However, this flexibility also means that you must be aware of the context that you modify an operation relation in.  
 
-**Note:** Because the operational properties are stored in operation relations per operation per route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, resource requirements, and so on. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two distinct operations, such as Assembly1 and Assembly2.
+> [!NOTE]
+> Because the operational properties are stored in operation relations per operation for each route, all occurrences of the same operation (for example, Assembly) have the same setup time, run time, and resource requirements. Therefore, if two occurrences of an operation must occur in the same route but have different run times, you must create two separate operations, such as Assembly1 and Assembly2.
 
 ### Modifying product-specific routes
 
@@ -136,7 +136,8 @@ On the **Route** page, you can modify the operational properties of the operatio
 
 You can also manually create an operation that is specific to a route and released product by using the **Copy and edit relation** function.  
 
-**Note:** If you add a new operation to a route on the **Route** page, an operation relation is created only for the current released product. Therefore, if the route is also used to produce other released products, no applicable operation relation will exist for those released products, and the route can no longer be used for those released products.
+> [!NOTE]
+> If you add a new operation to a route on the **Route** page, an operation relation is created only for the current released product. Therefore, if the route is also used to produce other released products, no applicable operation relation will exist for those released products, and the route can no longer be used for those released products.
 
 ### Maintaining operation relations per route
 
@@ -230,19 +231,34 @@ If you don't specify an operations resource or resource group as part of the res
 -   **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
 -   **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. This value is multiplied by the order quantity and the **Factor** value from the operation relation.
 -   **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
--   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource-dependent.
+-   **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 
+### Set up route groups
 
-Additional resources
---------
+You can define the route groups and the setup for its route or job types under **Production control > Setup > Routes > Route groups**. For each Route/job type in the route group, you can select or clear the following options:
 
-[Bills of materials and formulas](bill-of-material-bom.md)
+- **Activation** - Select this option to enable calculations and scheduling for the selected job type, and to receive job feedback when you run job scheduling. You need to select this option to enable the job type and then, select the rest of the options for that job type. If the activation is not selected, that job type will not be enabled, regardless of the selection of the other options. 
+- **Job management** - Select this option to include the job type in job management when you run job scheduling. 
+- **Working time** Select this option to schedule the job type according to the working time calendar that is defined for the operations resource, otherwise the Gregorian calendar is used. Working time can be scheduled either according to the Gregorian calendar or the defined working calendar. If you select this option, scheduling is based on the defined working time calendar. Additionally, the job of the job type is scheduled from midnight on the date that is defined as the job's starting date.
+- **Capacity** - Select this option to reserve capacity for the job type when you run job scheduling. If you select this option, capacity is reserved when scheduling is run for the selected job type. This gives you an overview of which job types in each route group use the operations resources. For example, in a situation where drying resources are bottleneck resources, these resources must be specified as bottlenecks. Drying operations that are assigned to queue time job types will reserve drying resources. 
 
-[Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+For each of the job types, you first need to activate or de-activate it. When de-activated, none of the other setup (Job management, working time, and capacity) will be considered, as the job type will not be active. 
 
-[Resource capabilities](resource-capabilities.md)
+Among the job types you can find Overlap. Overlap allows different jobs to be performed at the same time. When jobs are overlapping, the resources can be used but cannot be reserved for the specific jobs.
+Therefore, when Activation is selected for Overlap, the rest of the settings (Job management, Working time, and Capacity) do not make any impact in the route group. 
 
-[Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> When you upgrade versions, you might encounter the following error: **"CRL Error occurred while invoking the scheduling engine"**. If you receive this error, go to the **Route groups** page and for all the routes where you have activated **Overlap**, clear the **Job management**, **Working time**, and **Capacity** options. 
+
+## Additional resources
+
+- [Bills of materials and formulas](bill-of-material-bom.md)
+
+- [Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)
+
+- [Resource capabilities](resource-capabilities.md)
+
+- [Electronic signature overview](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

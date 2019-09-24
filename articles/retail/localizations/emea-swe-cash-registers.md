@@ -16,7 +16,7 @@ ms.technology:
 ms.search.form:  RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This topic provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one retail receipt
 - Sweden-specific features, such as additional counters in daily POS reports
-- A sample for integration of Dynamics 365 for Retail POS with Sweden-specific fiscal devices that are known as control units.
+- A sample for integration of Retail POS with Sweden-specific fiscal devices that are known as control units.
 
-## Overview of cash register functionality for Sweden 
+## Overview of cash register functionality for Sweden
 
 ### Common POS features
 
@@ -47,7 +47,7 @@ Additionally, the following POS features that were implemented for Sweden have b
 - **Prohibit sales and returns from being combined on one retail receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.
 - **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
 - **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail headquarters. You can view the audit events on the **Audit events** page.
-- **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time. 
+- **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time.
 
 ### Sweden-specific POS features
 
@@ -71,7 +71,7 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 Retail includes a sample for integration of POS with Sweden-specific fiscal devices that are known as control units. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK). The sample includes the following capabilities:
 
 - Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
-- The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page in Retail.
+- The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page.
 - Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.
 - The fiscal data for a transaction is printed on the **Electronic journal (Sweden)** channel report.
 - If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, a new transaction can't be started, and the current shift can't be closed. The operator will be asked to try to register the unregistered transaction again in the control unit. If the second attempt fails, the operator can skip the registration, provided that he or she has a special permission. If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.
@@ -79,13 +79,13 @@ Retail includes a sample for integration of POS with Sweden-specific fiscal devi
 > [!NOTE]
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
 
-For more information about the control unit integration sample, see the [sample deployment guide](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md).
+For more information about the control unit integration sample, see the [Sample deployment guide](./retail-sdk-control-unit-sample.md).
 
 ## Setting up Retail for Sweden
 
-This section describes the Retail settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
 
-To use the Sweden-specific functionality for Retail, you must complete these tasks:
+To use the Sweden-specific functionality, you must complete these tasks:
 
 - Set the **Country/region** field to **SWE** (Sweden) in the primary address of the legal entity.
 - Set the **ISO code** field to **SE** (Sweden) in the POS functionality profile of every store that is located in Sweden.
@@ -101,15 +101,17 @@ You must specify the following general settings for Sweden.
 
 1. Set up the following parameters for value-added tax (VAT) per Swedish requirements:
 
-   - Sales tax codes
-   - Sales tax groups
-   - Item sales tax groups
-   - Sales tax settings in items (item sales tax groups for sales)
+    - Sales tax codes
+    - Sales tax groups
+    - Item sales tax groups
+    - Sales tax settings in items (item sales tax groups for sales)
 
-     For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
+    For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
-    
+
     - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
     - Select the **Prices include sales tax** check box.
     - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
@@ -131,15 +133,14 @@ You must specify the following general settings for Sweden.
 
     - Change the value of the **Print behavior** field to **Always print** for the receipt format.
     - In the Receipt format designer, make these changes:
-    
+
         - Add at least the following fields to the **Header** section of the receipt layout:
-        
+
             - **Store name** and **Tax Identification Number** fields, so that the company name and identity number are printed receipts. Alternatively, you can add the company name and identity number to the layout as free-format text.
             - **Store address**, **Date**, **Time 24H**, **Receipt Number**, and **Register number** fields.
             - **Reprint Message** field, so that the "Copy" indicator is printed on receipt copies. Set the **Font size** field for the **Reprint Message** field to **Large**.
-    
-        - Add at least the following field to the **Lines** section of the receipt layout: **Item name**, **Qty**, and **Total price with tax**.
 
+        - Add at least the following field to the **Lines** section of the receipt layout: **Item name**, **Qty**, and **Total price with tax**.
         - Add at least the following fields to the **Footer** section of the receipt layout:
 
             - Tax fields, so that the receipt tax amounts for each tax rate are printed. For example, add the **Tax Id**, **Tax percentage**, and **Tax amounts** fields to one line of the layout.
@@ -149,7 +150,7 @@ You must specify the following general settings for Sweden.
 
 ### Control unit–specific settings
 
-You must specify the following settings to enable the [integration sample](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md), so that Retail POS is integrated with control units for Sweden.
+You must specify the following settings to enable the [integration sample](./retail-sdk-control-unit-sample.md), so that Retail POS is integrated with control units for Sweden.
 
 1. Create fiscal register configurations, and assign them to hardware profiles:
 
@@ -164,7 +165,7 @@ You must specify the following settings to enable the [integration sample](../de
             </TaxMapping>
         </UnitConfiguration>
         ```
-        
+
         You can also export a sample configuration by clicking **Export sample configuration** on the Action Pane.
 
     3. On the **Hardware profiles** page, select the hardware profile of the Hardware station that the POS is paired with and the control unit is connected to. On the **Fiscal register** FastTab, set the following fields:
@@ -181,12 +182,12 @@ You must specify the following settings to enable the [integration sample](../de
 
             - **Name:** **FiscalRegisterControlCode**
             - **Caption text ID:** The text ID that you specified for the control code field (**900001** in the preceding example)
-            
+
         - Manufacturing number of the control unit:
 
             - **Name:** **FiscalRegisterId**
             - **Caption text ID:** The text ID that you specified for the control unit ID field (**900002** in the preceding example)
-            
-    3. For sales receipt formats, in the Receipt format designer, in the **Footer** section of the receipt layout, add the fields for the specified captions  (**Control code** and **Control unit ID** in the preceding example).
+
+    3. For sales receipt formats, in the Receipt format designer, in the **Footer** section of the receipt layout, add the fields for the specified captions (**Control code** and **Control unit ID** in the preceding example).
 
 3. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box.

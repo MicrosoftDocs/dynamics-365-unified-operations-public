@@ -2,10 +2,10 @@
 # required metadata
 
 title: Synchronization of sales orders directly between Sales and Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations.
+description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include [banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Microsoft Dynamics 365 for Sales and Microsoft Dynamics 365 for Finance and Operations.
+The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Finance and Operations.
 
 ## Data flow in Prospect to cash
 
@@ -77,7 +77,7 @@ Sales orders are created in Sales and synchronized to Finance and Operations whe
 
 You don't have to create orders in Sales. You can create new sales orders in Finance and Operations instead. After a sales order has a status of **Confirmed**, it's synchronized to Sales as described in the previous paragraph.
 
-In Finance and operations, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
+In Finance and Operations, filters in the template help guarantee that only the relevant sales orders are included in the synchronization:
 
 - On the sales order, both the ordering customer and the invoicing customer have to originate from Sales to be included in the synchronization. In Finance and Operations, the **OrderingCustomerIsExternallyMaintained** and **InvoiceCustomerIsExternallyMaintained** fields are used to filter sales orders from the data entities.
 - The sales order in Finance and Operations must be confirmed. Only confirmed sales orders or sales orders that have a higher processing status, such as **Shipped** or **Invoiced**, are synchronized to Sales.
@@ -150,6 +150,16 @@ Before you synchronize sales orders, it's important that you update the followin
 ### Setup in Finance and Operations
 
 - Go to **Sales and marketing** &gt; **Periodic tasks** &gt; **Calculate sales totals**, and set the job to run as a batch job. Set the **Calculate totals for sales orders** option to **Yes**. This step is important, because only sales orders where sales totals are calculated will be synchronized to Sales. The frequency of the batch job should be aligned with the frequency of sales order synchronization.
+
+If you also use work order integration, you need to set up the sales origin. The sales origin is used to distinguish sales orders in Finance and Operations that were created from work orders in Field Service. When a sales order has a sales origin of the **Work order integration** type, the **External work order status** field appears on the sales order header. Additionally, the sales origin ensures that sales orders that were created from work orders in Field Service are filtered out during sales order synchronization from Finance and Operations to Field Service.
+
+1. Go to **Sales and marketing** \> **Setup** \> **Sales orders** \> **Sales origin**.
+2. Select **New** to create a new sales origin.
+3. In the **Sales origin** field, enter a name for the sales origin, such as **SalesOrder**.
+4. In the **Description** field, enter a description, such as **Sales Order from Sales**.
+5. Select the **Origin type assignment** check box.
+6. Set the **Sales origin type** field to **Sales order integration**.
+7. Select **Save**.
 
 ### Setup in the Sales Orders (Sales to Fin and Ops) - Direct Data integration project
 

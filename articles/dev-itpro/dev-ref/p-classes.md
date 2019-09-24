@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: robinr
+ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52231
 ms.assetid: 50842cd5-c27f-43aa-8a6d-bc9d3b02fd60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -486,7 +486,7 @@ Returns the processId value of the process that is running this method.
 
 #### Return Value
 
-The processId value of the Finance and Operations process that is running this method.
+The processId value of the process that is running this method.
 
 #### Examples
 
@@ -2526,7 +2526,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | public TreeNode findGroupMember(str name, UtilElementType type, \[boolean searchSubgroups\]) | Searches the projectGroup for a specific element. It can be used to search a specific group or the whole project.                             |
 | public str groupMask(\[str value\])                                                          |                                                                                                                                               |
-| public str name(\[str value\])                                                               | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public boolean preventEditProperties(\[boolean value\])                                      |                                                                                                                                               |
 | public GroupNodeType projectGroupType(\[GroupNodeType value\])                               |                                                                                                                                               |
 | public void addUtilNode(UtilElementType type, str name)                                      | Adds a node to the projectGroup.                                                                                                              |
@@ -2573,7 +2573,7 @@ value
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 
@@ -2712,7 +2712,7 @@ This class enables you to create, read, update, and delete X++ code and metadata
 | public str import(str buffer)                                                                |                                                                                                                                               |
 | public boolean isRunNode()                                                                   |                                                                                                                                               |
 | public ProjectNode loadForInspection()                                                       | Returns a loaded version of a projectNode found in the project overview window.                                                               |
-| public str name(\[str value\])                                                               | Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object. |
+| public str name(\[str value\])                                                               | Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object. |
 | public Guid origin(\[Guid value\])                                                           |                                                                                                                                               |
 | public boolean removeFromProject(TreeNode node)                                              |                                                                                                                                               |
 | public str tooltipText(TreeNode node)                                                        |                                                                                                                                               |
@@ -2925,7 +2925,7 @@ To get a loaded projectNode while also opening the project window, use the metho
 
 ### Method name
 
-Gets or sets the name that is used in the code to identify a form, report, table, query, or another Finance and Operations application object.
+Gets or sets the name that is used in the code to identify a form, report, table, query, or other application object.
 
     public str name([str value])
 

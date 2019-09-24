@@ -1,7 +1,7 @@
 ---
 # required metadata
-title: What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (December 14, 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
@@ -16,7 +16,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent Core HR (December 14, 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (December 14, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -68,7 +68,7 @@ With this change, leap days are now supported in Power BI.
 
 ### Integration between Core HR and Attract
 
-A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following CDS for Apps (CDS 2.0) entities are used:
+A change has been made to update the integration between Core HR and Attract related to candidates to hire. For candidates to hire to be visible in the **Personnel Management** workspace, the following Common Data Service entities are used:
 
 Job Application
 - Status Reason needs to be set to Offer Accepted
@@ -97,9 +97,9 @@ When the ability to forecast is released, the balance displayed changes to  be t
 
 ## Known issue
 
-### Mapping errors in the integration with Finance and Operations
+### Mapping errors in the integration with Finance
 
-The following issues have been identified in the current template for integrating Talent with Dynamics 365 for Finance and Operations. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
+The following issues have been identified in the current template for integrating Talent with Dynamics 365 Finance. A new template will be published soon and will be applied to all new integration projects that are created. For existing integration projects, the task mappings can be updated. Refer to the following table for updated mappings. 
 
 >[!NOTE]
 > The Job Positions to Positions Parent Job Assignment task does not integrate data. This is an issue that is currently being researched. There is no workaround in the current mapping. 
@@ -142,7 +142,7 @@ The Workers to Work task needs the following mappings updated.
 
 The Gender field transform also needs to be updated. Select the **fn** (function) map type for Gender and update the following value mappings.
 
-| CDS value                   | Finance and Operations value                     |
+| Common Data Service value                   | Finance and Operations value                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Male                                             |
 | 75440001                    | Female                                           |

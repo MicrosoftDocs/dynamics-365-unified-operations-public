@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build a product configuration model
+title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Build a product configuration model
+# Product configuration overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,9 @@ A product configuration model consists of one or more components that are tied t
 
 Each component has one or more attributes that identify its properties. The attributes are what users will choose during the configuration process. Attributes control both inter-component and intra-component relationships through inclusion in constraints or calculations. Through conditions that are applied to BOM lines, the attributes can be used to determine which physical parts the configured product will consist of. Additionally, an attribute can control the property of a BOM line through a mapping mechanism. Similar functionality exists for route operations regarding both inclusion and property settings.
 
+>[!NOTE]
+> When you create attribute types, avoid creating a high numbner of values for the attribute type domain. Doing so could cause slowdowns in the product configurator. 
+
 ### Expression constraints
 
 Use of a constraint-based product configuration model implies that some limitations exist when the user selects values for the various attributes. Such limitations can be implemented as expression constraints by using the Optimization Modeling Language (OML). Alternatively, a constraint can be implemented in the form of a table constraint.
@@ -74,7 +77,7 @@ Table constraints can be user-defined or system-defined.
 
 A user-defined table constraint is built by the user. The user selects a combination of attribute types to represent the columns of the table and then enters values from the domains of the selected attribute types to form the rows in the table constraint.  
 
-A system-defined table constraint is defined by selecting which Microsoft Dynamics 365 for Finance and Operations table to use as a reference and then selecting fields from this table to form the columns in the constraint. The rows of the table constraint are the rows of the Finance and Operations table that are present at configuration time.  
+A system-defined table constraint is defined by selecting which Finance and Operations table to use as a reference and then selecting fields from this table to form the columns in the constraint. The rows of the table constraint are the rows of the Finance and Operations table that are present at configuration time.  
 
 A table constraint is included in a product configuration model by referencing the table constraint definition and mapping the relevant attributes in the model to the columns in the table constraint.
 
