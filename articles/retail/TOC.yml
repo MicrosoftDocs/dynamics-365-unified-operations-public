@@ -1061,3 +1061,5 @@
         items:
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
+  - name: Finance and Operations apps development and administration 
+    href: ../dev-itpro/toc.yml
