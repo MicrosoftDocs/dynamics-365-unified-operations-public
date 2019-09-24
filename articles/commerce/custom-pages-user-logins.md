@@ -118,39 +118,27 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 ## Build the custom pages
 
-In the Dynamics 365 Commerce authoring tools, navigate to your site and select a New Page. 
+To build the custom pages to handle user logins, do the following.
 
-Build out 5 Templates and Pages total as follows:
+1. In Commerce authoring tools, navigate to your site. 
+1. Build five (5) templates and 5 pages total as follows:
 
 - A 'Sign In' template and page using the 'Sign in' module.
 - A 'Sign Up' template and page using the 'Sign up' module.
-
-The following image show the (lorem ipsum).   
-
-![Sign In Sign Up Modules](./media/B2C_SignInSignUp_Module.png)
-
 - A 'Password Reset' template and page using the 'Password reset' module.
 - A 'Password Reset verification' template and page using the 'Password reset verification' module.
-
-The following image show the (lorem ipsum).   
-
-![Password Reset Module](./media/B2C_PasswordReset_Modules.png)
-
 - A 'Profile Edit' template and page using the 'Account profile edit' module
-
-The following image show the (lorem ipsum).   
-
-![Profile edit Module](./media/B2C_ProfileEdit_Module.png)
 
 When building the pages:
 
-- Use a layout and style that best suits your business needs per page/module
-- **Do Not** re-use Universal Headers and Footers with relative links.  As these pages will be hosted in the AAD B2C domain when in use, only direct URLs should be used for any links.
+- Use a layout and style that best suits your business needs per page or module
 - Publish all pages and URLs to utilize in the AAD B2C setup.
+- Once published, collect the URLs to use for the AAD B2C policy configurations. Each URL will be used with a `?preloadscripts=true` suffix added.
 
-Once published, collect the URLs to use in the AAD B2C Policy remaining setup. Each URL will be used with a "?preloadscripts=true" suffix added.
+>[!IMPORTANT]
+>- Do not re-use Universal Headers and Footers with relative links.  As these pages will be hosted in the AAD B2C domain when in use, only direct URLs should be used for any links.
 
-## Set up custom pages in the AAD B2C policies
+## Configure AAD B2C policies with custom page information 
 
 Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (policies)" menu.
 
