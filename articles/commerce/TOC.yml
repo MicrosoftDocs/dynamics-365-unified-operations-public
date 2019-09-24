@@ -26,6 +26,10 @@
     href: add-favicon.md
   - name: Add a copyright notice
     href: add-copyright-notice.md
+- name: Make your site compliant
+  items:
+  - name: Add a privacy policy page
+    href: add-privacy-page.md
 - name: Add and manage content on your site
   items:
   - name: Pages
