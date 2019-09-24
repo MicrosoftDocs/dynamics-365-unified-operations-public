@@ -495,165 +495,165 @@
     - name: Write best practice rules
       href: ../../dev-itpro/dev-tools/author-best-practice-rules.md
     - name: Application Explorer properties
-      ../../dev-itpro/dev-ref/application-explorer-aot-properties.md
+      href: ../../dev-itpro/dev-ref/application-explorer-aot-properties.md
     - name: X++ language reference
       items:
       - name: X++ language reference overview
-        ../../dev-itpro/dev-ref/xpp-language-reference.md
+        href: ../../dev-itpro/dev-ref/xpp-language-reference.md
       - name: Variables and data types
         items:
         - name: Variables
-          ../../dev-itpro/dev-ref/xpp-variables-data-types.md
+          href: ../../dev-itpro/dev-ref/xpp-variables-data-types.md
         - name: Primitive data types
-          ../../dev-itpro/dev-ref/xpp-data-primitive.md
+          href: ../../dev-itpro/dev-ref/xpp-data-primitive.md
         - name: Composite data types
-          ../../dev-itpro/dev-ref/xpp-data-composite.md
+          href: ../../dev-itpro/dev-ref/xpp-data-composite.md
         - name: Collection classes
-          ../../dev-itpro/dev-ref/xpp-data-collection.md
+          href: ../../dev-itpro/dev-ref/xpp-data-collection.md
         - name: Extended data types
-          ../../dev-itpro/dev-ref/xpp-data-edt.md
+          href: ../../dev-itpro/dev-ref/xpp-data-edt.md
       - name: Statements, loops, and exception handling
         items:
         - name: Comments, using, and print
-          ../../dev-itpro/dev-ref/xpp-statements-loops.md
+          href: ../../dev-itpro/dev-ref/xpp-statements-loops.md
         - name: Conditional statements
-          ../../dev-itpro/dev-ref/xpp-conditional.md
+          href: ../../dev-itpro/dev-ref/xpp-conditional.md
         - name: Loop statements
-          ../../dev-itpro/dev-ref/xpp-loops.md
+          href: ../../dev-itpro/dev-ref/xpp-loops.md
         - name: Exception handling
-          ../../dev-itpro/dev-ref/xpp-exceptions.md     
+          href: ../../dev-itpro/dev-ref/xpp-exceptions.md     
       - name: SQL connection error X++ exception
-        ../../dev-itpro/dev-ref/sql-connection-error.md
+        href: ../../dev-itpro/dev-ref/sql-connection-error.md
       - name: X++ operators
-        ../../dev-itpro/dev-ref/xpp-operators.md
+        href: ../../dev-itpro/dev-ref/xpp-operators.md
       - name: X++ operator precedence
-        ../../dev-itpro/dev-ref/xpp-operator-precedence.md
+        href: ../../dev-itpro/dev-ref/xpp-operator-precedence.md
       - name: X++ Classes and methods
         items:
         - name: Classes and methods
-          ../../dev-itpro/dev-ref/xpp-classes-methods.md
+          href: ../../dev-itpro/dev-ref/xpp-classes-methods.md
         - name: Inheritance
-          ../../dev-itpro/dev-ref/xpp-inheritance.md
+          href: ../../dev-itpro/dev-ref/xpp-inheritance.md
         - name: Static class members
-          ../../dev-itpro/dev-ref/xpp-static-classes.md
+          href: ../../dev-itpro/dev-ref/xpp-static-classes.md
         - name: Interfaces
-          ../../dev-itpro/dev-ref/xpp-interfaces.md
+          href: ../../dev-itpro/dev-ref/xpp-interfaces.md
         - name: Libraries
-          ../../dev-itpro/dev-ref/xpp-library-objects.md
+          href: ../../dev-itpro/dev-ref/xpp-library-objects.md
         - name: Events
-          ../../dev-itpro/dev-ref/xpp-events.md
+          href: ../../dev-itpro/dev-ref/xpp-events.md
       - name: X++ data selection and manipulation
-        ../../dev-itpro/dev-ref/xpp-data-query.md
+        href: ../../dev-itpro/dev-ref/xpp-data-query.md
       - name: Data access using the SysDa API
-        ../../dev-itpro/dev-ref/sysda.md
+        href: ../../dev-itpro/dev-ref/sysda.md
       - name: X++ macros
-        ../../dev-itpro/dev-ref/xpp-macros.md
+        href: ../../dev-itpro/dev-ref/xpp-macros.md
       - name: X++ attribute classes
-        ../../dev-itpro/dev-ref/xpp-attribute-classes.md
+        href: ../../dev-itpro/dev-ref/xpp-attribute-classes.md
       - name: 'X++ and C# comparison'
-        ../../dev-itpro/dev-ref/xpp-cs-comparison.md
+        href: ../../dev-itpro/dev-ref/xpp-cs-comparison.md
       - name: X++ syntax
-        ../../dev-itpro/dev-ref/xpp-syntax.md
+        href: ../../dev-itpro/dev-ref/xpp-syntax.md
   - name: API, class, and table reference
     items:
     - name: API, class, and table resources
-      ../../dev-itpro/dev-ref/api-reference.md
+      href: ../../dev-itpro/dev-ref/api-reference.md
     - name: X++ compile-time functions
-      ../../dev-itpro/dev-ref/xpp-compile-time-functions.md
+      href: ../../dev-itpro/dev-ref/xpp-compile-time-functions.md
     - name: X++ runtime functions
       items:
       - name: X++ runtime function resources
-        ../../dev-itpro/dev-ref/xpp-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-run-time-functions.md
       - name: X++ business runtime functions
-        ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-business-run-time-functions.md
       - name: X++ container runtime functions
-        ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-container-run-time-functions.md
       - name: X++ conversion runtime functions
-        ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-conversion-run-time-functions.md
       - name: X++ date runtime functions
-        ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-date-run-time-functions.md
       - name: X++ math runtime functions
-        ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-math-run-time-functions.md
       - name: X++ reflection runtime functions
-        ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-reflection-run-time-functions.md
       - name: X++ session runtime functions
-        ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-session-run-time-functions.md
       - name: X++ string runtime functions
-        ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md
+        href: ../../dev-itpro/dev-ref/xpp-string-run-time-functions.md
     - name: System tables
-      ../../dev-itpro/dev-ref/system-tables.md
+      href: ../../dev-itpro/dev-ref/system-tables.md
     - name: System classes
       items:
       - name: A classes
-        ../../dev-itpro/dev-ref/a-classes.md
+        href: ../../dev-itpro/dev-ref/a-classes.md
       - name: B classes
-        ../../dev-itpro/dev-ref/b-classes.md
+        href: ../../dev-itpro/dev-ref/b-classes.md
       - name: C classes
-        ../../dev-itpro/dev-ref/c-classes.md
+        href: ../../dev-itpro/dev-ref/c-classes.md
       - name: D classes
-        ../../dev-itpro/dev-ref/d-classes.md
+        href: ../../dev-itpro/dev-ref/d-classes.md
       - name: E classes
-        ../../dev-itpro/dev-ref/e-classes.md
+        href: ../../dev-itpro/dev-ref/e-classes.md
       - name: F classes (FieldBinding to FormBuildAnimateControl)
-        ../../dev-itpro/dev-ref/fieldbinding-classes.md
+        href: ../../dev-itpro/dev-ref/fieldbinding-classes.md
       - name: F classes (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
-        ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formbuildbuttoncontrol-classes.md
       - name: F classes (FormBuildFilterPaneControl to FormBuildRealControl)
-        ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formbuildfilterpanecontrol-classes.md
       - name: F classes (FormBuildReferenceControl to FormButtonSeparatorControl)
-        ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formbuildreferencecontrol-classes.md
       - name: F classes (FormChangeTracker to FormControlEventArgs)
-        ../../dev-itpro/dev-ref/formchangetracker-classes.md
+        href: ../../dev-itpro/dev-ref/formchangetracker-classes.md
       - name: F classes (FormDataObject to FormFastTabHeaderControl)
-        ../../dev-itpro/dev-ref/formdataobject-classes.md
+        href: ../../dev-itpro/dev-ref/formdataobject-classes.md
       - name: F classes (FormFastTabSummarySeparator to FormGridControl)
-        ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md
+        href: ../../dev-itpro/dev-ref/formfasttabsummaryseparator-classes.md
       - name: F classes (FormGroupControl to FormIntControl)
-        ../../dev-itpro/dev-ref/formgroupcontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formgroupcontrol-classes.md
       - name: F classes (FormListBoxControl to FormNotifyEventArgs)
-        ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formlistboxcontrol-classes.md
       - name: F classes (FormObject to FormRealControl)
-        ../../dev-itpro/dev-ref/formobject-classes.md
+        href: ../../dev-itpro/dev-ref/formobject-classes.md
       - name: F classes (FormReferenceControl to FormStringControl)
-        ../../dev-itpro/dev-ref/formreferencecontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formreferencecontrol-classes.md
       - name: F classes (FormTabControl to FormWindowControl)
-        ../../dev-itpro/dev-ref/formtabcontrol-classes.md
+        href: ../../dev-itpro/dev-ref/formtabcontrol-classes.md
       - name: G classes
-        ../../dev-itpro/dev-ref/g-classes.md
+        href: ../../dev-itpro/dev-ref/g-classes.md
       - name: H classes
-        ../../dev-itpro/dev-ref/h-classes.md
+        href: ../../dev-itpro/dev-ref/h-classes.md
       - name: I classes
-        ../../dev-itpro/dev-ref/i-classes.md
+        href: ../../dev-itpro/dev-ref/i-classes.md
       - name: J classes
-        ../../dev-itpro/dev-ref/j-classes.md
+        href: ../../dev-itpro/dev-ref/j-classes.md
       - name: K classes
-        ../../dev-itpro/dev-ref/k-classes.md
+        href: ../../dev-itpro/dev-ref/k-classes.md
       - name: L classes
-        ../../dev-itpro/dev-ref/l-classes.md
+        href: ../../dev-itpro/dev-ref/l-classes.md
       - name: M classes
-        ../../dev-itpro/dev-ref/m-classes.md
+        href: ../../dev-itpro/dev-ref/m-classes.md
       - name: N classes
-        ../../dev-itpro/dev-ref/n-classes.md
+        href: ../../dev-itpro/dev-ref/n-classes.md
       - name: O classes
-        ../../dev-itpro/dev-ref/o-classes.md
+        href: ../../dev-itpro/dev-ref/o-classes.md
       - name: P classes
-        ../../dev-itpro/dev-ref/p-classes.md
+        href: ../../dev-itpro/dev-ref/p-classes.md
       - name: Q classes
-        ../../dev-itpro/dev-ref/q-classes.md
+        href: ../../dev-itpro/dev-ref/q-classes.md
       - name: R classes
-        ../../dev-itpro/dev-ref/r-classes.md
+        href: ../../dev-itpro/dev-ref/r-classes.md
       - name: S classes
-        ../../dev-itpro/dev-ref/s-classes.md
+        href: ../../dev-itpro/dev-ref/s-classes.md
       - name: T classes
-        ../../dev-itpro/dev-ref/t-classes.md
+        href: ../../dev-itpro/dev-ref/t-classes.md
       - name: U classes
-        ../../dev-itpro/dev-ref/u-classes.md
+        href: ../../dev-itpro/dev-ref/u-classes.md
       - name: V classes
-        ../../dev-itpro/dev-ref/v-classes.md
+        href: ../../dev-itpro/dev-ref/v-classes.md
       - name: W classes
-        ../../dev-itpro/dev-ref/w-classes.md
+        href: ../../dev-itpro/dev-ref/w-classes.md
       - name: X classes
-        ../../dev-itpro/dev-ref/x-classes.md
+        href: ../../dev-itpro/dev-ref/x-classes.md
   - name: Extensibility
     items:
     - name: Extensibility home page
@@ -849,25 +849,25 @@
 - name: General Data Protection Regulation (GDPR)
   items:
   - name: General Data Protection Regulation overview
-    ../../dev-itpro/gdpr/gdpr-guide.md
+    href: ../../dev-itpro/gdpr/gdpr-guide.md
   - name: Respond to GDPR data requests
     items:
     - name: Respond to GDPR data requests resources
-      ../../dev-itpro/gdpr/gdpr-home-page.md
+      href: ../../dev-itpro/gdpr/gdpr-home-page.md
     - name: Asset classifications
-      ../../dev-itpro/gdpr/gdpr-asset-classification-values.md
+      href: ../../dev-itpro/gdpr/gdpr-asset-classification-values.md
     - name: Person search report
-      ../../dev-itpro/gdpr/gdpr-person-search-report.md
+      href: ../../dev-itpro/gdpr/gdpr-person-search-report.md
     - name: Extend the Person search report
-      ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md
+      href: ../../dev-itpro/gdpr/gdpr-extend-person-search-report.md
     - name: Manage access to sensitive data
-      ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md
+      href: ../../dev-itpro/gdpr/gdpr-auditing-sensitive-data.md
     - name: Respond to requests for personal data using Talent
-      ../../dev-itpro/gdpr/respond-dsr-request-talent.md
+      href: ../../dev-itpro/gdpr/respond-dsr-request-talent.md
     - name: Respond to requests for personal data in AX 2012
-      ../../dev-itpro/gdpr/gdpr-ax2012.md
+      href: ../../dev-itpro/gdpr/gdpr-ax2012.md
     - name: GDPR data requests for LCS
-      ../../dev-itpro/gdpr/gdpr-lcs.md
+      href: ../../dev-itpro/gdpr/gdpr-lcs.md
 - name: Lifecycle Services
   items:
   - name: Resources for Lifecycle Services
