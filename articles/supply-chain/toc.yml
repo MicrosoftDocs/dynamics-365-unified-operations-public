@@ -1580,4 +1580,4 @@
       - name: Create a new transportation management engine
         href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Finance and Operations apps development and administration 
-    href: ../dev-itpro/toc.yml
+    href: dev-itpro/toc.yml
