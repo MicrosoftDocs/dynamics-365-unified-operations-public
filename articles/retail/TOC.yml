@@ -842,10 +842,10 @@
       href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
     - name: Date/time data and time zones
       href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/retail/toc.json
-- name: Retail development and administration
-  items:
-  - name: Retail development and administration overview
-    href: dev-itpro/dev-retail-home-page.md
+  - name: Retail development and administration
+    items:
+    - name: Retail development and administration overview
+      href: dev-itpro/dev-retail-home-page.md
     - name: Architecture
       items:
       - name: Retail components
