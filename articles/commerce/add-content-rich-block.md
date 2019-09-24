@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a content rich block module to a page
-description: This topic covers content rich block modules and how to add them to site pages in Dynamics 365 Commerce.
+description: This topic covers content rich block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -32,67 +32,52 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers content rich block modules and how to add them to site pages in Dynamics 365 Commerce.
+This topic covers content rich block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A content rich block module is a special container that allows one or more content rich block items to be placed within it. This container allows one or more content rich block items to be placed within it. Content rich block modules are used for textual content on a page, which can be informational or promotional.
+A content rich block module is a special container that one or more content rich block items can be put inside. Content rich block modules are used for textual content on a page. This content can be either informational or promotional.
 
-Content rich block modules are driven by CMS data and can be placed on any page. They are standalone modules that do not depend on page context or on any other modulese. 
+Content rich block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
 
-## Examples of content rich block module uses in e-Commerce
+## Examples of content rich block modules in e-Commerce
 
-Content rich block can be used:
+Content rich block modules can be used in the following ways:
 
 * To showcase product features on a product details page.
-* On any page for informational purposes (for example, benefits of loyalty programs, shipping and return policies, frequently asked questions, about us content, etc.).
-* To add custom messages on a product details page (for example, "Free shipping for orders over $50"). 
-* For disclaimers and contact details on product details pages, cart pages, checkout pages, etc. (for example, "Shipping and returns are subject to store policies").
- 
+* For informational purposes on any page. For example, they can explain the benefits of loyalty programs, describe shipping and return policies, answer frequently asked questions, or provide "about us" content.
+* To add custom messages on a product details page. (for example, "Free shipping for orders over $50").
+* For disclaimers and contact details on product details pages, cart pages, checkout pages, and other pages (for example, "Shipping and returns are subject to store policies").
+
 ## Content rich block module properties
 
-|   Property name   | Values                         | Property description                                         |
-| :---------------: | :----------------------------- | ------------------------------------------------------------ |
-| Number of columns | 1 to 4                     | Number of columns in a content rich block, up to 4 columns      |
-|       Width       | Fill container<br />Fill screen | The "fill container" value restricts items inside the container to fit within the container width. The "fill screen" property allows items inside the container to go full-bleed and does not restrict them to fit within container width.<br />The values can be changed to achieve the layout desired. |
-
- 
+| Property name     | Value                                 | Property |
+|-------------------|---------------------------------------|----------|
+| Number of columns | A number from **1** through **4**     | The number of columns in the content rich block. There can be up to four columns. |
+| Width             | **Fill container** or **Fill screen** | If the value is set to **Fill container**, the items inside the container are restricted to the width of the container. If the value is set to **Fill screen**, the items aren't restricted to the container width but can go into full-screen mode. You can change the value to achieve the desired layout. |
 
 ## Content rich block item module properties
 
-| Property name | Values         | Property description                                         |
-| :-----------: | :--------------: | ------------------------------------------------------------ |
-|   Paragraph   | Paragraph text | The text that accompanies each content rich block item. Some basic rich text capabilities such as bold, underline, and italics are supported. |
+| Property name | Value          | Description |
+|---------------|----------------|-------------|
+| Paragraph     | Paragraph text | The text that accompanies each content rich block item. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
 
- 
-## Add a content rich block module
+## Add a content rich block module to a page
 
-To add a content rich block module to a new page and set the required properties, do the following.
+To add a content rich block module to a new page and set the required properties, follow these steps.
 
-1. Create a new page template named "Content template."
-
-1. In the **Main** slot of the default page, add a content rich block module. 
-
-1. Check in and publish the template.
-
-1. Create a new page named "Content page" using the content template you created.
-
+1. Create a page template that is named **Content template**.
+1. In the **Main** slot of the default page, add a content rich block module.
+1. Check in the template, and publish it.
+1. Use the content template that you just created to create a page that is named **Content page**.
 1. In the **Main** slot of the new page, add a content rich block module.
+1. In the properties of the content rich block module, set number of columns to **2**.
+1. In the content rich block module, select **Add a module**, and add a content rich block item (for example, **item1**).
+1. In the new content rich block item, add paragraph text.
+1. In the content rich block module, select **Add a module**, and add a content rich block item (for example, **item2**).
+1. In the new content rich block item, add paragraph text.
+1. Save the page, and preview the changes. You should see two rich text blocks in a two-column view.
+1. Check in the page, and publish it.
 
-1. Expand the content rich block module properties and set number of columns to **2**.
-
-1. In the content rich block module, select **Add a module**, then add a content rich block item (for example, "item1"). 
-
-1. In content rich block item 1, add paragraph text.
-
-1. In the content rich block module, select **Add a module**, then add a content rich block item (for example, "item2"). 
-
-1. In content rich block item 2, add paragraph text.
-
-1. Save the page and preview the changes. You should see two rich text blocks placed in two column view. 
-
-1. Check in and publish the page.
-
->[!NOTE] 
-> If a third content rich block item is added, it will stack below the two items added previously. By changing the number of columns and items in the container, different layouts can be achieved for textual content.
-
+> [!NOTE]
+> If you add a third content rich block item, it will be stacked below the two items that you previously added. By changing the number of columns and items in the container, you can achieve different layouts for textual content.
