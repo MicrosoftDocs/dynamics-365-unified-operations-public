@@ -43,9 +43,9 @@ The full, or absolute, URL that points to a page on your site consists of distin
 - `/en-us` – The site's language path.
 - `/contactus` – The relative URL for the **Contact Us** page. A relative URL is also known as a URL *slug*.
 
-You establish your site's domain and optional language path when you set up the site. You can add more domains and language paths to your site through the online stores page in the site's settings. For more information about how to set up domains and language paths for additional online stores, see [Associate a site with a Dynamics 365 online store](.md).
+You establish your site's domain and optional language path when you set up the site. You can add more domains and language paths to your site through the online stores page in the site's settings.
 
-The URL slug for a page exists as a standalone entity in the site authoring environment. A page URL consists of two parts: a name that represents the URL slug, and a pointer to a page on either your site or an external site. A URL can also be configured to act as a redirect to another page on either your site or an external site.
+The URL slug for a page exists as a standalone entity in the site authoring environment. A page URL consists of two parts: a name that represents the URL slug, and a pointer to a page on either your site or an external site. A page URL can also be configured to act as a redirect to another page on either your site or an external site.
 
 ## Create a page URL
 
@@ -56,7 +56,7 @@ There are two ways to create page URLs:
 
 ### Create a page URL when you create a page
 
-If you provide a name in the URL field when you create a new page, a page URL that points to that page is automatically created on the **URLs** page. After you publish the URL and the page that it points to, site users (your customers) can access the page that is associated with the URL.
+If you provide a name in the **URL** field when you create a new page, a page URL that points to that page is automatically created on the **URLs** page. After you publish the URL and the page that it points to, site users (your customers) can access the page that is associated with the URL.
 
 > [!NOTE]
 > If you publish a URL without publishing the page that it points to, site users receive a 404 error when they try to access the page. If you publish a page without publishing the URL that points to it, the page can't be accessed by using a URL.
