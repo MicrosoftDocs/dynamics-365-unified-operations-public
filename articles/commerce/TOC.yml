@@ -26,6 +26,8 @@
     href: add-favicon.md
   - name: Add a copyright notice
     href: add-copyright-notice.md
+  - name: Add languages to your site
+    href: add-languages-to-site.md
 - name: Make your site compliant
   items:
   - name: Add a privacy policy page
