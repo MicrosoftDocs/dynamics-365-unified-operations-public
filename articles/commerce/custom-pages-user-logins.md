@@ -56,22 +56,20 @@ To configure the "Sign up and sign in" user login flow, do the following.
 
 1. Click **New user flow**, then in the **Recommended** section, select the **Sign up and sign in** policy.
 1. Enter a name for the policy (for example, "B2C_1_SignInSignUp"). 
-
->[!NOTE]
-> The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly-named policy by submitting the new policy name using a service request.
-
 1. Select the **Identity Providers** used for the policy (for example, **Email signup**). **Email signup** must be chosen at a minimum.
 1. Select the following attributes and claims:
     - Under **Collect attribute**: **Email Address**, **Given Name**, **Surname**
     - Under **Return claim**: **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
-  
-The following image shows the **User attributes and claims** screen with the correct attributes and claims selected.   
-
-![Sign Up Sign In Claims](./media/B2C_SignInSignUp_Attributes.png)
-
 1. Click **OK** to create the policy.
 1. Double-click the new policy name, then in the navigation pane click **Properties.**
 1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
+
+>[!NOTE]
+> The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly-named policy by submitting the new policy name using a service request.
+
+The following image shows the **User attributes and claims** screen with the correct attributes and claims selected.   
+
+![Sign Up Sign In Claims](./media/B2C_SignInSignUp_Attributes.png)
 
 The following image show the policy **Properties** screen.   
 
@@ -89,11 +87,6 @@ To configure the "Profile editing" user login flow, do the following.
 1. Select the following attributes and claims:
     - Under **Collect attribute**: **Email Addresses**, **Surname**
     - Under **Return claim**: **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
-  
-The following image show the (lorem ipsum).   
-
-![Profile edit Claims](./media/B2C_ProfileEdit_Attributes.png)
-
 1. Click **OK** to create the policy.
 1. Double-click the new policy name, then in the navigation pane click **Properties.**.
 1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
@@ -105,23 +98,21 @@ We'll come back to this policy once we have built out the custom pages to finish
 To configure the "Password reset" user login flow, do the following.
 
 1. Click **New user flow**, then in the **Preview** section, select the **Password reset v1.1** policy.
+1. Enter a name for the policy (for example, "B2C_1_ForgetPassword"). 
+1. In the **Identity Providers** section, select **Reset password using email address**.
+1. Select the following claims:
+    - Under **Return claim**: **Email Addresses**, **Given Name,** **Surname,** **User's Object ID**
+1. Click **OK** to create the policy.
+1. Double-click the new policy name, then in the navigation pane click **Properties.**.
+1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
 
 The following image shows the **Preview** section of the **Select a user flow type** screen.   
 
  ![Password Reset v1.1 menu](./media/B2C_ForgetPassword_Menu.png)
 
-1. Enter a name for the policy (for example, "B2C_1_ForgetPassword"). 
-1. In the **Identity Providers** section, select **Reset password using email address**.
-1. Select the following claims:
-    - Under **Return claim**: **Email Addresses**, **Given Name,** **Surname,** **User's Object ID**
-
 The following image shows the **Application claims** screen with the correct claims selected.
 
 ![Password Reset Claims](./media/B2C_ForgetPassword_Attributes.png)
-
-1. Click **OK** to create the policy.
-1. Double-click the new policy name, then in the navigation pane click **Properties.**.
-1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy to return to the **User Flows (policies)** page in the Azure portal.
 
