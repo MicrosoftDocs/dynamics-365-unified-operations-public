@@ -3,7 +3,7 @@
 
 title: Plan history and logs
 description: View the history of planning jobs triggered with Planning Optimzation.
-author: ChrsitianRytt
+author: ChristianRytt
 manager: AnnBe
 ms.date: 2019-09-06
 ms.topic: article
