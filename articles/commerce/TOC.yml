@@ -24,6 +24,8 @@
     href: select-site-theme.md
   - name: Add a favicon
     href: add-favicon.md
+  - name: Add a copyright notice
+    href: add-copyright-notice.md
 - name: Add and manage content on your site
   items:
   - name: Pages
