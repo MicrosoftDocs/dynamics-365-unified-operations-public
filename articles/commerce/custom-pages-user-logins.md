@@ -50,7 +50,7 @@ Once you have set up your AAD B2C tenant and associated it with your Commerce en
 
 The "Sign up and sign in," "Profile editing," and "Password reset" user login flows can then be configured as follows.
 
-### Sign up and sign in flow
+### Configure the "Sign up and sign in" user login flow
 
 To configure the "Sign up and sign in" user login flow, do the following.
 
@@ -62,45 +62,45 @@ To configure the "Sign up and sign in" user login flow, do the following.
 
 1. Select the **Identity Providers** used for the policy (for example, **Email signup**). **Email signup** must be chosen at a minimum.
 1. Select the following attributes and claims:
-  - Under **Collect attribute**: **Email Address**, **Given Name**, **Surname**
-  - Under **Return claim**: **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
+    - Under **Collect attribute**: **Email Address**, **Given Name**, **Surname**
+    - Under **Return claim**: **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
   
 The following image shows the **User attributes and claims** screen with the correct attributes and claims selected.   
 
 ![Sign Up Sign In Claims](./media/B2C_SignInSignUp_Attributes.png)
 
-1. Click **Create** to create the policy.
-- Select this newly created policy and double-click to update its configurations.
-- Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
+1. Click **OK** to create the policy.
+1. Double-click the new policy name, then in the navigation pane click **Properties.**
+1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
 
-The following image show the (lorem ipsum).   
+The following image show the policy **Properties** screen.   
 
 ![Sign Up Sign In Enable Javascript](./media/B2C_SignInSignUp_EnableJavascript.png)
 
-We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
+We'll come back to this policy once we have built out the custom pages to finish the policy setup. Close out of the policy to return to the **User Flows (policies)** page of the Azure portal.
 
-### Profile editing flow 
+### Configure the "Profile editing" user login flow 
 
 To configure the "Profile editing" user login flow, do the following.
 
-- Select the "New user flow" button and choose the **Profile editing** policy under the Recommended section.
-- Name your policy (ex: B2C_1_EditProfile). 
-- Choose the Identity Providers utilized for the policy (ex: Local Account SignIn). Local Account SignIn must be chosen at minimum
-- Select the following attributes and claims for the Profile editing policy:
-  - Collect Attributes: Email Addresse**s**, Surname
-  - Return claim: Email Addresse**s**, Given Name, Identity Provider, Surname, User's Object ID
+1. Click **New user flow**, then in the **Recommended** section, select the **Profile editing** policy.
+1. Enter a name for the policy (for example, "B2C_1_EditProfile"). 
+1. Select the **Identity Providers** used for the policy (for example, **Local Account SignIn**). **Local Account SignIn** must be chosen at a minimum.
+1. Select the following attributes and claims:
+    - Under **Collect attribute**: **Email Addresses**, **Surname**
+    - Under **Return claim**: **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
   
 The following image show the (lorem ipsum).   
 
 ![Profile edit Claims](./media/B2C_ProfileEdit_Attributes.png)
 
-- Click "Create" to create the policy.
-- Select this newly created policy and double-click to update its configurations.
-- Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
+1. Click **OK** to create the policy.
+1. Double-click the new policy name, then in the navigation pane click **Properties.**.
+1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
 
-We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
+We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy to return to the **User Flows (policies)** page in the Azure portal.
 
-### Password reset flow
+### Configure the "Password reset" user login flow
 
 To configure the "Password reset" user login flow, do the following.
 
