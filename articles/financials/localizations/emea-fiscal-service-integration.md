@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 7.3
 
 In Austria, all cash payments should be signed by an external device or service, and they should be securely stored. In the Czech Republic, all cash payments should be sent to the government portal for a fiscal signature. In both countries, a cash receipt should be issued where the signature is printed.
 
-To support these country-specific requirements, Microsoft Dynamics 365 for Finance and Operations, lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.
+To support these country-specific requirements, Dynamics 365 Finance lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.
 
 > [!NOTE]
 > It's assumed that the third-party fiscal service meets all other country-specific legal requirements about registered transactions. You're responsible for correctly setting up and administering the fiscal service.
@@ -77,7 +77,7 @@ Every cash register must be set up to communicate with the fiscal service. You c
 <li><strong>Cash register URL</strong> – Enter the URL of the fiscal service.
 <p><strong>Warning:</strong> Third-party services or other services that you configure here don&#39;t require certification, and they might not meet Microsoft privacy standards. You should review each service&#39;s privacy documentation and work with each service provider to learn more about the level of compliance that each service provides. You&#39;re responsible for making sure that these services meet your security-related, privacy-related, and legal standards. You bear the risk of using these services. Microsoft gives no express warranties, guarantees, or conditions. We strongly recommend that you use only services that provide secure and authorized connections (that is, services that use the HTTPS protocol).</p>
 </li>
-<li><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service). In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored. For more information, see <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</li>
+<li><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (the Finance app and the third-party fiscal service). In this field, select the name of the Azure Key Vault instance where the Finance certificate is stored. For more information, see <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</li>
 <li><strong>Class name</strong> – Select the class where specifics of the integration with the fiscal service are implemented. The available class is <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
 </ul>
 </td>

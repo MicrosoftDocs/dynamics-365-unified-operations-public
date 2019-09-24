@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-The integration between Microsoft Dynamics 365 for Talent and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Talent and Dayforce before you can process a pay run.
+The integration between Microsoft Dynamics 365 Talent and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Talent and Dayforce before you can process a pay run.
 
 When you use a service such as Dayforce to complete pay runs, you must enable the integration in Talent. The integration requires specific data from Talent. Therefore, you must verify that data that is mapped to Dayforce is configured in Talent in a manner that supports the integration. The integration uses the following broad categories of data:
 
@@ -45,7 +45,7 @@ This topic describes the steps that you must follow to enable the integration. I
 
 ## Enable the integration
 
-In Talent, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 for Finance and Operations, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance and Operations.
+In Talent, you must turn on the integration and enter the configuration information to connect to Dayforce. If you want the general ledger transaction that is produced to be imported into Microsoft Dynamics 365 Finance, you must also set up a Microsoft Azure storage account and enter the Azure Storage connection string in Finance.
 
 To turn on the integration in Talent, follow these steps.
 

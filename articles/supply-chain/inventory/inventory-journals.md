@@ -40,7 +40,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how you can use inventory journals to post various types of physical inventory transactions.
 
-The inventory journals in Microsoft Dynamics 365 for Finance and Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
+The inventory journals in Finance and Operations are used to post physical inventory transactions of various types, such as the posting of issues and receipts, inventory movements, the creation of bills of materials (BOMs), and the reconciliation of physical inventory. All these inventory journals are used in a similar way, but they are divided into different types.
 
 ## Types of inventory journals
 The following types of inventory journals are available:
@@ -110,7 +110,7 @@ Data entities support the following types of integration scenarios:
 For more information, see [Data entities](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Not all inventory journals are OData-enabled, therefore you cannot use the Excel data connector to get data published, updated, and imported back to Dynamics 365 for Finance and Operations. 
+> Not all inventory journals are OData-enabled, therefore you cannot use the Excel data connector to get data published, updated, and imported back to Finance and Operations. 
 
 Another difference between the journal data entities is the ability to use composite entities that include both the header and line data. Currently, you can use the composite entities for:
 -   Inventory adjustment journal

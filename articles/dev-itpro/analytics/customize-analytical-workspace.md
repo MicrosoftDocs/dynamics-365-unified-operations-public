@@ -55,13 +55,13 @@ Here are some important points to note about this service capability:
 - Customizations are limited to the report design canvas. Users can't change the definitions of report data sets.
 - Report customizations that are made to the analytical workspace apply to all users in the environment.
 - The service automatically preserves report customizations during product upgrades.
-- The Microsoft Dynamics 365 for Finance and Operations service doesn't support the export of customizations that are made to analytical workspaces.
+- The service doesn't support the export of customizations that are made to analytical workspaces.
 
 ### Customize an analytical workspace
 
 To customize the embedded application solutions, a user must be a member of the System Report Editors security group. Members of this security group can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
 
-1. Sign in to Finance and Operations, and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
+1. Sign in and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
 
     ![Compensation management workspace](media/compensation-management-workspace.png)
 
@@ -69,7 +69,7 @@ To customize the embedded application solutions, a user must be a member of the 
 
     ![Analytics tab in the Compensation management analytical workspace](media/compensation-management-analytics.png)
 
-    By default, you see the standard analytical workspace solution that is packaged with your Finance and Operations application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
+    By default, you see the standard analytical workspace solution that is packaged with your application. The reports in this solution are automatically deployed and configured for your environment during the provisioning process.
 
     > [!NOTE]
     > The analytical workspaces require a hosted Microsoft Power BI service that is available only for dedicated environments. For more information, see [Accessing Analytical Workspaces and Reports on 1Box environment](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/).

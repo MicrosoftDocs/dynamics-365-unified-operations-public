@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 05/10/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,8 +33,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to a Dynamics 365 Finance, Supply Chain Management, or Retail environment. 
-
+This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to cloud environments. 
 
 > [!IMPORTANT]
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
@@ -66,7 +65,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
 
-> If your environment is on an Application version 8.1 and above then the **Platform Update package does not apply** to your environment. Starting with 8.1 and above release, Application and Platform binary update package is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
+> If your environment is on an application version 8.1 and later, then the **Platform Update package** does not apply to your environment. Starting with 8.1 and later releases, **Application and Platform Binary update package** is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page, clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
 
 ## Prerequisite steps
 
@@ -128,7 +127,7 @@ If you're using retail components (such as Retail Modern POS), after you've appl
 
 Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
 
-**Deployable package** – A deployable package is a unit of deployment that can be applied in any Finance and Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. That is, a Finance and Operations deployable package cannot be applied in a Retail environment, and vice versa. If you have an existing customization for Finance and Operations that is compatible with Retail, and would like to apply it to a  Retail environment, you will need to re-package your source code in a Retail development environment, and conversely if moving in the other direction.   
+**Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. For example, a Finance and Operations deployable package cannot be applied in a Retail app environment, and vice versa. If you have an existing customization for a Finance and Operations app that is compatible with the Retail app, and you would like to apply it to a Retail environment, you will need to re-package your source code in a Retail development environment, and conversely if moving in the other direction.   
 
 [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 

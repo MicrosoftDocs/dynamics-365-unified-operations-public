@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call center catalogs
-description: This topic describes the call center–specific functionality for catalogs in Microsoft Dynamics 365 for Retail.
+description: This topic describes the call center–specific functionality for catalogs in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the call center–specific functionality linked to the catalog capabilities in Microsoft Dynamics 365 for Retail.
+This topic describes the call center–specific functionality linked to the catalog capabilities in Dynamics 365 Retail.
 
-The catalog features found in Dynamics 365 for Retail can be used for multiple purposes. Initially the catalog features were created to support third party e-Commerce integrations. Catalog setup allowed companies to create a grouping of products and attributes that could be published externally for consumption by a third party e-Commerce solution.
+The catalog features found in Retail can be used for multiple purposes. Initially the catalog features were created to support third party e-Commerce integrations. Catalog setup allowed companies to create a grouping of products and attributes that could be published externally for consumption by a third party e-Commerce solution.
 
-When call center channel support was added to Dynamics 365 for Retail, the catalog concept was expanded to add additional capabilities for supporting and managing features related to traditional direct-to-consumer marketing catalogs. A direct-to-consumer company will often produce printed catalogs, which are then mailed to one or more segments of customers. These catalogs will typically have specific promotions or offers that will only be honored if the customer provides a catalog identification code at the time of order creation.
+When call center channel support was added to Retail, the catalog concept was expanded to add additional capabilities for supporting and managing features related to traditional direct-to-consumer marketing catalogs. A direct-to-consumer company will often produce printed catalogs, which are then mailed to one or more segments of customers. These catalogs will typically have specific promotions or offers that will only be honored if the customer provides a catalog identification code at the time of order creation.
 
-Direct-to-consumer marketing companies are very focused on tracking the response to these catalogs to ensure that the costs to produce and mail them are justified. To track the response, a code is traditionally printed on the back of the catalog and this code is then requested and applied when the catalog recipient calls to place an order by phone (or now more traditionally the code may be entered when the customer places an order online). While there are different industry terms that have been used to identify this catalog tracking code (including key code, promo code, catalog code, source code), we refer to the code in Dynamics 365 for Retail as the **Source code ID**.
+Direct-to-consumer marketing companies are very focused on tracking the response to these catalogs to ensure that the costs to produce and mail them are justified. To track the response, a code is traditionally printed on the back of the catalog and this code is then requested and applied when the catalog recipient calls to place an order by phone (or now more traditionally the code may be entered when the customer places an order online). While there are different industry terms that have been used to identify this catalog tracking code (including key code, promo code, catalog code, source code), we refer to the code in Retail as the **Source code ID**.
 
 ## Basic catalog setup
 
@@ -97,7 +97,7 @@ When configuring the products in the catalog, use the **Product page layout** ac
 
 ## Catalog requests
 
-As catalogs are configured and published in Dynamics 365 for Retail, the **Send catalog** feature can be utilized. This feature is available on the **Customer search** and **Customer service** pages. After selecting a customer record through **Customer search** or while viewing a selected customers account from **Customer service**, users may select the **Send catalog** option which will open a dialog box allowing the user to choose from a list of any published and active catalogs. A user can select a catalog and a quantity, and a particular source code ID to send. When they click the **Send** button, a request is stored which can then be managed by printing the **Catalog requests** report. This report is found by navigating to **Retail** \> **Call center reports** \> **Catalog requests report**. It lists all the catalog requests, including the customer name and address details of the customer who requested the catalog. This report can be used internally or the data can be transmitted to a third party supporting external processes for physically sending the catalog to the customer.
+As catalogs are configured and published in Retail, the **Send catalog** feature can be utilized. This feature is available on the **Customer search** and **Customer service** pages. After selecting a customer record through **Customer search** or while viewing a selected customers account from **Customer service**, users may select the **Send catalog** option which will open a dialog box allowing the user to choose from a list of any published and active catalogs. A user can select a catalog and a quantity, and a particular source code ID to send. When they click the **Send** button, a request is stored which can then be managed by printing the **Catalog requests** report. This report is found by navigating to **Retail** \> **Call center reports** \> **Catalog requests report**. It lists all the catalog requests, including the customer name and address details of the customer who requested the catalog. This report can be used internally or the data can be transmitted to a third party supporting external processes for physically sending the catalog to the customer.
 
 ## Additional features
 

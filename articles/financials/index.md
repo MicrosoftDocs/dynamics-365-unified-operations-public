@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial management home page
-description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
+description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 author: roschlom
 manager: AnnBe
 ms.date: 06/20/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations. 
+This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 
 Select a feature area to learn more about it.
 

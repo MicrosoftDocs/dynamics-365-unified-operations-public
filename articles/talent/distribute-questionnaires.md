@@ -89,7 +89,7 @@ You can specify planning types for a questionnaire schedule on the **Questionnai
 
 You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire. 
 
-Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. 
+Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 Finance. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. 
 
 For example, if you select the Courses table, you can decide which specific course the questionnaire will be for. When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.
 

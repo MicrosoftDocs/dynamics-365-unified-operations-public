@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Upcoming changes in the Retail SDK
 [!include [banner](../includes/banner.md)]
 
-In a future release of Dynamics 365 for Retail, a new set of features is planned to simplify the development and servicing process for retail channel customization. To uptake some of these features, you may need to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy, and Retail server extensions to map to the new library reference model and integrated development environment (IDE).
+In a future release of Dynamics 365 Retail, a new set of features is planned to simplify the development and servicing process for retail channel customization. To uptake some of these features, you may need to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy, and Retail server extensions to map to the new library reference model and integrated development environment (IDE).
 
 Microsoft is publishing this topic before the new features are released, so that you can plan and prepare to uptake them.
 

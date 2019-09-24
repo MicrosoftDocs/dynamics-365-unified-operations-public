@@ -2,7 +2,7 @@
 # required metadata
 
 title: View financial reports
-description: This topic describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+description: This topic describes how to view and explore financial reports in Microsoft Dynamics 365 Finance. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 author: kweekley
 manager: AnnBe
 ms.date: 03/25/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to view and explore financial reports in Microsoft Dynamics 365 for Finance and Operations. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
+This topic describes how to view and explore financial reports. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
 Financial reporting overview
 ----------------------------
@@ -65,7 +65,7 @@ You can refresh (update) a financial report so that it shows the most recent dat
 After you update a financial report, you can publish it. Other people in the organization will then be able to view it. To publish a report, on the Action Pane, click **Publish**.
 
 ## Display a financial report in a different currency
-A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance and Operations.
+A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance.
 
 ## Display a summarized view of the financial report
 A financial report can contain detail lines and summary lines. Detail lines are lines that contain main accounts or dimensions. Summary lines are description, total, and calculation lines. To display just the summary lines of a report, click **Show**, and then click **Summary lines only**. The report is collapsed and displays only the summary lines. To view the detail lines together with the summary lines, click **Show**, and then click **Summary lines only** again.

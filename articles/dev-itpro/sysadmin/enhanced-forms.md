@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enhanced batch forms
-description: This topic provides information about the enhanced batch forms in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about enhanced batch forms.
 author: hasaid
 manager: AnnBe
 ms.date: 03/18/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 25
 [!include [banner](../includes/banner.md)]
 
 
-An enhanced detail transaction form (page) has been added to Microsoft Dynamics 365 for Finance and Operations. You can open this form by selecting the job ID for a batch job. The enhanced form provides a header and lines that summarize the batch tasks and constraints that are related to the selected batch job.
+You can open an enhanced detail transaction form by selecting the job ID for a batch job. The enhanced form provides a header and lines that summarize the batch tasks and constraints that are related to the selected batch job.
 
 ## Switch to the enhanced form
 

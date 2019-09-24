@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new workflow type
-description: This topic describes how to create a workflow type in Application Explorer in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to create a workflow type in Application Explorer.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019
@@ -60,7 +60,7 @@ A workflow type defines the following information:
     | Document menu item | Select the menu item that points to the main page that shows the document that you're creating the workflow type for. |
     | Document web menu item | Select the web menu item that points to the Enterprise Portal page that shows the document that you're creating the workflow type for. |
 
-3. Specify the types of menu items that you want to create. You can create menu items for the Microsoft Dynamics 365 for Finance and Operations client, web menu items for Enterprise Portal, or items for both the client and Enterprise Portal.
+3. Specify the types of menu items that you want to create. You can create menu items, web menu items, or both.
 4. Select **Next**. A list of all the resources that will be created for the workflow type is shown.
 5. Select **Finish** to create the resources. The wizard creates classes, menu items, web menu items, the workflow type, and a project that contains all the items.
 6. When dialog box appears that indicates the status, select **OK**. The project that contains the workflow type resources is shown.

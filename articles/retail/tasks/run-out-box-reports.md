@@ -45,7 +45,7 @@ The demo data company used to create this recording is USRT. This recording is i
 5. In the To date field, enter a date.
 6. In the Channel field, click the drop-down button to open the lookup.
 7. In the tree, select 'Contoso Retail\Contoso Retail USA\Central\Houston'.
-    * This shows the default retail organization hierarchy for Retail reporting purpose.   Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.      As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.     
+    * This shows the default retail organization hierarchy for Retail reporting purpose.   Go to Organization administration >  Organizations > Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked. As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.     
 8. Click OK.
 9. In the View field, select an option.
 10. In the By field, select an option.
@@ -57,7 +57,7 @@ The demo data company used to create this recording is USRT. This recording is i
 3. In the To date field, enter a date.
 4. In the Channel field, click the drop-down button to open the lookup.
 5. In the tree, select 'Contoso Retail\Contoso Retail USA\West\Seattle'.
-    * This shows the default retail organization hierarchy for Retail reporting purpose.   Go to Organization administration >Organizations >Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked.      As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.     
+    * This shows the default retail organization hierarchy for Retail reporting purpose.   Go to Organization administration  > Organizations > Organization hierarchy purposes and choose Retail reporting and under Assigned hierarchies, check the hierarchy name for which Default column is checked. As part of demo data (used for this task recording) you would notice, Retail Stores by Region, is the default organization hierarchy for the Retail reporting purpose.     
 6. Click OK.
 7. Click OK.
 

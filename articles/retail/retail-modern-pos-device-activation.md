@@ -57,7 +57,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have credentials to sign in to Retail headquarters.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
-- Verify that the Microsoft Dynamics 365 for Retail, environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify that the environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
 
 ## Download and install Retail Modern POS
 
@@ -101,7 +101,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
     > [!NOTE]
     > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then, while the device is still selected, select **Download** again.
-    > - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Retail Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device in Retail. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
+    > - The installation package that you must use varies, depending on whether you require offline support, and whether the device that Retail Modern POS will be installed on is a Windows tablet or a phone device (such as a Windows Phone, an Android device, or an iOS device). The correct package is automatically selected for download, based on the register settings and the application type that is set for the device. If the offline package is selected for a Windows tablet, but Microsoft SQL Server isn't already installed (or if it doesn't meet the requirements for the offline package), SQL Server is downloaded and installed silently.
 
 7. On the Notification bar that appears at the bottom of the Internet Explorer window, select **Save**. (The Notification bar might appear in a different place in other browsers.)
 8. After the setup installer has been saved, on the Notification bar, select **Run**. (This step might differ, depending on your browser.)

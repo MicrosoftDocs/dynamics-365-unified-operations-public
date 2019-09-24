@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview of fiscal integration for Retail channels
-description: This topic provides an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. 
+description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. 
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: 10.0
 
 ## Introduction
 
-This topic is an overview of the fiscal integration capabilities that are available in Microsoft Dynamics 365 for Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
+This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
 - Register a retail sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
 - Help guarantee inalterability of sales transaction data through digital signatures.
 
-The fiscal integration functionality in Retail is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the Retail software development kit (SDK). For more information about the fiscal integration samples that are available in the Retail SDK, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail SDK overview](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The fiscal integration functionality is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the software development kit (SDK). For more information about the fiscal integration samples, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail SDK overview](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 To support other scenarios that aren't supported by a fiscal integration sample, to integrate Retail POS with other fiscal devices or services, or to cover requirements of other countries or regions, you must either extend an existing fiscal integration sample or create a new sample by using an existing sample as an example.
 
@@ -135,7 +135,7 @@ Fiscal integration functionality supports generation of end-of-day statements th
 
 ## Fiscal integration samples in the Retail SDK
 
-The following fiscal integration samples are currently available in the Retail SDK that is released with Retail:
+The following fiscal integration samples are currently available in the Retail SDK:
 
 - [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md)
 - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)

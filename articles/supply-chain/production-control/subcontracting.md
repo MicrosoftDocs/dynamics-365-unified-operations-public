@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subcontracting
-description: This topic will help you build a walkthrough of subcontracting in manufacturing in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic will help you build a walkthrough of subcontracting in manufacturing in Finance and Operations.
 author: christophernread 
 manager: AnnBe
 ms.date: 09/28/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic will help you build a walkthrough of subcontracting in manufacturing in Microsoft Dynamics 365 for Finance and Operations. The first part of this topic describes the setup of the data. The second part takes you through the steps in the walkthrough.
+This topic will help you build a walkthrough of subcontracting in manufacturing in Finance and Operations. The first part of this topic describes the setup of the data. The second part takes you through the steps in the walkthrough.
 
 ## Target audience
 

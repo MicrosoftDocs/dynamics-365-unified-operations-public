@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a recommendations control to the transaction screen on POS devices
-description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
+description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
@@ -37,9 +37,9 @@ ms.dyn365.ops.version: Version 1611
 > [!NOTE]
 > We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
 
-This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
+This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Dynamics 365 Retail.
 
-You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail. *Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.
+You can display product recommendations on your POS device when you use Retail. *Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.
 
 ## Open Layout designer
 
@@ -70,7 +70,7 @@ There are two configurations options available. Choose the option that works bes
     [![Recommendations control added to the layout](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 3. Click the **X** to save and exit Layout designer.
-4. In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
+4. In Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
 5. In the list, select **1090 Registers**.
 6. Click **Run now**.
 
@@ -91,7 +91,7 @@ There are two configurations options available. Choose the option that works bes
 7. In the **Image** field, select the image to appear on the tab.
 8. Click **OK**. The new tab appears in the button grid.
 9. Click the **X** to save and exit Layout designer.
-10. In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
+10. In Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
 11. In the list, select **1090 Registers**.
 12. Click **Run now**.
 

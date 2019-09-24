@@ -50,11 +50,11 @@ The **Discount concurrency control model** is described below in detail; however
 
 The discount concurrency control model changes when and how multiple discounts are applied to products in a transaction. The **Best price and compound concurrency control model** option on the **Discounts** tab on the **Retail parameters** page is different from the **Discount concurrency mode** property on each discount.
 
-In earlier versions of Dynamics 365 for Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
+In earlier versions of Retail, there was only one way to apply multiple discounts based on the **discount type**, **discount concurrency mode**, and **pricing priority** (if used) properties of discounts. Now, the discount concurrency control model setting affects how all discounts compete and compound together.
 
-### Background on why this change was made in Dynamics 365 for Retail
+### Background on why this change was made in Retail
 
-In previous versions of Dynamics 365 for Retail, you could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall application lifecycle management, the Dynamics 365 application has been sealed and overlaying customizations are no longer allowed. New extensibility points have been added to enable the same types of customizations that were the most common. Most discount customizations are in one of the following categories.
+In previous versions of Retail, you could directly customize the price engine by overlaying their custom business logic in the price engine. With the transition to an online service and to improve overall application lifecycle management, the Dynamics 365 application has been sealed and overlaying customizations are no longer allowed. New extensibility points have been added to enable the same types of customizations that were the most common. Most discount customizations are in one of the following categories.
 
 - **Minor changes to existing discounts:** For example, moving the start date and end date from the discount header to the discount lines.
 - **New discount types:** In some cases, companies need to introduce a new type of discount. For example, capping the total discount amount for a simple discount.

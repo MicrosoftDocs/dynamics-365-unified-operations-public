@@ -99,11 +99,11 @@ There are two sections in business process libraries: **Core Business Processes*
 
 ## Create a task recording and associate it with a business process
 
-Task recordings should be created in a Microsoft Finance and Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Finance and Operations](../user-interface/task-recorder.md).
+Task recordings should be created in an environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder](../user-interface/task-recorder.md).
 
 ### Create a task recording
 
-1.  In Finance and Operations, select the **Settings** button in the upper-right corner, and then select **Task recorder**.
+1.  In the application, select the **Settings** button in the upper-right corner, and then select **Task recorder**.
 2.  Select **Create recording**.
 3.  Enter a name and description for the recording.
 4.  Perform the task that you want to record.
@@ -124,14 +124,14 @@ Task recordings can be played as task guides. Task guides are used to guide user
 
 ### Set up task guides
 
-1.  In Finance and Operations, select **System administration** &gt; **Setup** &gt; **System parameters**.
+1.  In the application, select **System administration** &gt; **Setup** &gt; **System parameters**.
 2.  On the **Help** tab, select the LCS project where the business process library that you want to work with is stored.
 3.  Select the business process libraries that have the task recordings that you want to play as task guides.
 4.  Adjust the order of the business process libraries as you require. The order of the business process libraries determines the order that the task guides appear in. Therefore, the task guides for the first business process library appear first when a user uses the task guide functionality.
 
 ### Use task guides
 
-1.  In Finance and Operations, open the page where you want to run the task guide.
+1.  In the application, open the page where you want to run the task guide.
 2.  In the upper-right corner, select the **Settings** button, and then select **Task recorder**.
 3.  Select a task guide.
 4.  Select **Start Task guide**.
@@ -142,4 +142,4 @@ Task recordings can be played as task guides. Task guides are used to guide user
 Additional resources
 --------
 
-[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
+[Publishing an App in AppSource](lcs-solutions-app-source.md)

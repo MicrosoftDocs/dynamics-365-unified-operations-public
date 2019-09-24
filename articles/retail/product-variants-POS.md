@@ -57,7 +57,7 @@ On the **Inventory lookup** page, you can use the numeric keyboard to enter a pr
 The list of locations includes two types of entities:
 
 - **Retail stores** – The list shows stores that are configured by using the store locator group for the current store in the Retail headquarters.
-- **Distribution centers** – Various types of distribution centers (such as warehouses) can be configured in Microsoft Dynamics 365 for Retail. However, the list shows inventory availability information only for distribution centers of the **Standard** default type.
+- **Distribution centers** – Various types of distribution centers (such as warehouses) can be configured in Retail. However, the list shows inventory availability information only for distribution centers of the **Standard** default type.
 
     > [!NOTE]
     > Inventory availability information isn't shown for warehouses of the **Transit**, **Quarantine**, and **Goods in Route** types for the POS.

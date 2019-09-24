@@ -30,10 +30,9 @@ ms.dyn365.ops.version: 7.3.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST) in Microsoft Dynamics 365 for Retail. It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
 
-> [!NOTE]
-> This topic applies to both Microsoft Dynamics 365 for Finance and Operations, and Microsoft Dynamics 365 for Retail.
+This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
+
 
 ## Prerequisites
 
@@ -56,7 +55,7 @@ The following table shows the navigation paths for the India tax entities in Ret
 | Tax setup                           | Retail \> Channel setup \> Sales taxes \> Tax configuration \> Tax setup      |
 
 > [!NOTE]
-> The navigation paths for the India tax entities in Retail differ from the navigations paths in Finance and Operations. For information about the navigation paths in Finance and Operations, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+> The navigation paths for the India tax entities in Retail differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
 
 ## Validate tax information for the retail store
 

@@ -52,18 +52,18 @@ PA-DSS implementation guides that are available are linked to in the **Version**
 | ----------------------------|---------------------- | ----------- |
 | Microsoft Dynamics 365 for Operations | [1611](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/installation-setup-guides/PADSSImplementationguide365Operations) | 7.1  |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [July 2017*](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide)  | 7.2 |
-| Microsoft Dynamics 365 for Retail | [July 2017](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
+| Microsoft Dynamics 365 Retail | [July 2017](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide) | 7.2  |
 
-\*  The PDF document in this link applies to both Dynamics 365 for Retail (as it states) *and* Dynamics 365 for Finance and Operations, Enterprise edition.
+\*  The PDF document in this link applies to both Dynamics 365 Retail (as it states) *and* Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Certification in progress
 
 | Release  | Version | Build |
 | ---------------------------|----------------------- | ----------- |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
-| Microsoft Dynamics 365 for Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
+| Microsoft Dynamics 365 Retail | [7.3](https://mbs.microsoft.com/customersource/Global/365Enterprise/learning/documentation/installation-setup-guides/msd365retailpadssguide73) | 7.3 |
 | Microsoft Dynamics 365 for Finance and Operations | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8) | 8.0 |
-| Microsoft Dynamics 365 for Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
+| Microsoft Dynamics 365 Retail | [8.0](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/installation-setup-guides/msd365PADSSImplGuide8)  | 8.0 |
 | Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | 8.1 | 8.1 |
-| Microsoft Dynamics 365 for Retail | 8.1  | 8.1 |
+| Microsoft Dynamics 365 Retail | 8.1  | 8.1 |
 

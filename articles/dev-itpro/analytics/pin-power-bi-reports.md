@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pin Power BI reports to workspaces
-description: Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Finance and Operations to give your users an interactive data exploration experience.
+description: Microsoft Dynamics 365 Finance uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 author: MilindaV2
 manager: AnnBe
 ms.date: 11/02/2017
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Finance and Operations to give your users an interactive data exploration experience.
+Microsoft Dynamics 365 Finance uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 
 This topic assumes that you're familiar with the feature that lets you pin Microsoft Power BI tiles to a workspace. For more information, see [Power BI integration](power-bi-integration.md). If you're a developer who is creating a workspace, to let users pin Power BI tiles to the workspace, embed the Power BI tile control.
 
 ## Pin Power BI reports to workspaces
-Microsoft Dynamics AX platform update 1 (May 2016) introduced the capability to pin Power BI reports to workspaces. Power BI reports can be added to any workspace that contains a **Links** section. In other words, the reports can be added to most of the out-of-box workspaces that are included in the product. To enable Power BI reports and tiles, you must configure Power BI to work with Microsoft Dynamics 365 for Finance and Operations. This one-time operation must be completed by an administrator in a Dynamics 365 for Finance and Operations environment. For instructions, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md). After you've configured Power BI to work with Dynamics 365 for Finance and Operations, open the **Ledger budgets and forecasts** workspace in the client. In the workspace, click the **Options** tab. Notice that this tab contains buttons to open the (Power BI) tile catalog and the (Power BI) report catalog. Click **Open report catalog**. A dialog box that contains a list of reports appears. The list of reports comes from the reports that you have in your Power BI account. If you open PowerBI.com in a browser, you will see that the same list of reports is used across your Power BI dashboards. Select some reports, as shown in the following illustration, and then click **OK** to continue.
+Microsoft Dynamics AX platform update 1 (May 2016) introduced the capability to pin Power BI reports to workspaces. Power BI reports can be added to any workspace that contains a **Links** section. In other words, the reports can be added to most of the out-of-box workspaces that are included in the product. To enable Power BI reports and tiles, you must configure Power BI to work with the application. This one-time operation must be completed by an administrator of the environment. For instructions, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md). After you've configured Power BI to work with the application, open the **Ledger budgets and forecasts** workspace in the client. In the workspace, click the **Options** tab. Notice that this tab contains buttons to open the (Power BI) tile catalog and the (Power BI) report catalog. Click **Open report catalog**. A dialog box that contains a list of reports appears. The list of reports comes from the reports that you have in your Power BI account. If you open PowerBI.com in a browser, you will see that the same list of reports is used across your Power BI dashboards. Select some reports, as shown in the following illustration, and then click **OK** to continue.
 
 [![Open report catalog dialog box](./media/ledger-budgets-workspace-list-of-reports-chosen-1024x570.jpg)](./media/ledger-budgets-workspace-list-of-reports-chosen.jpg)
 

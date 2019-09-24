@@ -2,10 +2,10 @@
 # required metadata
 
 title: Accessibility features
-description: This topic describes the functionality that is designed to help users who have various disabilities use Dynamics 365 Finance, Supply Chain Management, Retail, and Talent.
+description: This topic describes the functionality that is designed to help users who have various disabilities.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 11/05/2018
+ms.date: 09/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the functionality that is designed to help users who have various disabilities use Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
+This topic describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
@@ -90,7 +90,7 @@ However, you might find that some fields that you often use to perform tasks are
 
 ## Form patterns
 
-Almost 90 percent of the pages in the product are based on a small set of patterns. These patterns are referred to as *form patterns*. Each form pattern is used to provide the actions that are most often performed on the page. A form pattern helps guarantee familiarity and ease of understanding, because frequently used actions and data are always presented in the same location on different pages. Because of the small number of form patterns, users can easily learn the system, regardless of the number of pages in it, and can confidently use it after they recognize the form patterns.
+Almost 90 percent of the pages in the app are based on a small set of patterns. These patterns are referred to as *form patterns*. Each form pattern is used to provide the actions that are most often performed on the page. A form pattern helps guarantee familiarity and ease of understanding, because frequently used actions and data are always presented in the same location on different pages. Because of the small number of form patterns, users can easily learn the system, regardless of the number of pages in it, and can confidently use it after they recognize the form patterns.
 
 To learn more about form patterns, see [Form styles and patterns](../../dev-itpro/user-interface/form-styles-patterns.md).
 

@@ -3,7 +3,7 @@
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for Retail projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 for Retail implementation projects.
+description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Most environments for Microsoft Dynamics 365 for Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Microsoft Dynamics 365 Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Development Tier 1 environments
 
@@ -99,7 +99,7 @@ Branching is an important practice in software development. The [Branching and M
 >
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
 
-For more information about the delivery of implementation projects for Microsoft Dynamics 365 for Finance and Operations, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
+For more information about the delivery of implementation projects, watch [Continuous Delivery Using Dynamics 365 for Operations (video)](https://mbspartner.microsoft.com/D365/Videos/101393).
 
 There is no single best strategy for creating branches. The strategy depends on the project and the size of the implementation. The approach that Joris De Gruyter mentions in the preceding video is a successful method.
 
@@ -113,7 +113,7 @@ Here is an explanation of the setup. The numbers in brackets refer to the number
 - The **Main** branch \[1\] is for changes that meet a certain quality bar and are ready for testing by other people. This testing might include user acceptance tests, performance tests, integration tests, and sanity tests after hotfixes. Deployable packages for this branch must be created by a build environment. As a best practice, you should not generate X++ packages in a Tier 1 environment and then deploy those packages into an official test or production environment. Otherwise, uncommitted source changes could be included. The correct approach is always to deploy packages that were built on official build environments.
 - The **ProdRel1** branch \[3\] holds all source code exactly as it's deployed in a production environment at any given point. A build environment can be used but isn't required. If packages from the Main branch are deployed to a production environment, the code should be merged (from Main to ProdRel1) after a production deployment. By having a branch for production, you can generate official builds later if you require them.
 - All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the Retail software development kit (SDK) in **RetailSdk** folders \[5, 6, 7\]. The Retail SDK includes base Microsoft code and code extensions. This base code and the code extensions can differ in each branch.
-- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see [Dynamics 365 for Finance and Operations hotfix and deployment cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
+- The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see this [cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
 
 For small Retail projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
 
@@ -257,7 +257,7 @@ Regardless of whether there are customizations in the code branches, the followi
 5. Optional: Restore a recent copy of a production database that has good data.
 
     1. Rename the existing database **AxDB\_Orig**.
-    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
+    2. In Microsoft SQL Server Management Studio, restore the .bak file. (If a .bacpac file exists, follow the steps in [Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/database/copy-database-from-azure-sql-to-sql-server).)
     3. In Visual Studio, refresh the model store.
     4. In Visual Studio, do a full build if the source and destination environments of the database are on different versions.
     5. In Visual Studio, run a full database synchronization.
@@ -284,10 +284,10 @@ Regardless of whether there are customizations in the code branches, the followi
 11. Install MPOS or MPOSOffline by running the installer at **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe**. You must complete this step one time to deploy the ClientBroker files.
 12. In Visual Studio, open **ModernPOS.sln** (as an administrator), and do a full rebuild.
 13. Press F5 to start MPOS in the debugger.
-14. In Finance and Operations, open the **Channel profiles** page, and copy the Retail Server URL for the default channel profile.
+14. In Retail, open the **Channel profiles** page, and copy the Retail Server URL for the default channel profile.
 15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Retail Server.
-16. In Finance and Operations, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
-17. In Finance and Operations, run job **1060** (**AX/Distribution schedule**).
+16. In Retail, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
+17. In Retail, run job **1060** (**AX/Distribution schedule**).
 18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Retail Server URL, select a store and a register, and finish the activation.
 
 You should now be able to run MPOS in the debugger from your local sources.

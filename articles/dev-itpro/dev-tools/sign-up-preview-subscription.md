@@ -53,7 +53,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
     > [!IMPORTANT]
     > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Office 365 or Microsoft Dynamics CRM Online.
 
-- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Dynamics 365 or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
+- **Microsoft account** – Microsoft accounts were formerly known as Passport accounts or Windows Live ID accounts. Currently, Microsoft accounts can't be used with Finance and Operations applications, Microsoft Dynamics 365 Retail, or other Microsoft Online Services. However, Microsoft accounts are still required for Microsoft Connect and other Microsoft Business Solutions sites, such as CustomerSource, PartnerSource, Information Source, and Microsoft Dynamics Community. You will continue to use your Microsoft account to access these services.
 - **Microsoft Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. Office 365 admin center is used to provide management functions for users and subscriptions.
 - **Environments** – You can deploy as many single instances of a virtual machine (VM) as you require. We call these instances *environments*.
 
@@ -66,7 +66,7 @@ This topic explains how to subscribe to the preview/partner offer and deploy an 
 > [!IMPORTANT]
 > Only one person (tenant administrator) in an organization must perform this task. If you aren't the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the procedure.
 
-1. Finance and Operations and Retail are available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details about how to access trials on [CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/news-events/news/md365financeoperationsenterprisecusttrial). Partners can find the details on [PartnerSource](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
+1. Finance and Operations applications and Retail are available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details about how to access trials on [CustomerSource](https://mbs.microsoft.com/customersource/Global/365Enterprise/news-events/news/md365financeoperationsenterprisecusttrial). Partners can find the details on [PartnerSource](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
 2. On the **Account setup** page, in the **Country or region** field, select the country or region.
 3. Follow the wizard and prompts to complete the sign-up, until you reach the last step.
 
@@ -85,7 +85,7 @@ To use LCS to manage your environments, you must create a new project.
 5. Select the project type.
 6. Enter the project information, and then select **Create**.
 
-    If you plan to evaluate Retail, be sure to select **Microsoft Dynamics 365 for Retail** in the **Product name** field.
+    If you plan to evaluate Retail, be sure to select **Microsoft Dynamics 365 Retail** in the **Product name** field.
 
     The new project for managing your instance is created.
 

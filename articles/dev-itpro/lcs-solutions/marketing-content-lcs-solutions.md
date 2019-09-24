@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Stage and publish Finance and Operations solutions
+title: Stage and publish solutions for Finance and Operations apps
 description: This topic explains how to upload the marketing content for your Microsoft Dynamics Lifecycle Services (LCS) solution package to the Microsoft Cloud Partner Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
@@ -29,13 +29,13 @@ ms.author: omarc
 
 ---
 
-# Stage and publish Finance and Operations solutions
+# Stage and publish solutions for Finance and Operations apps 
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to upload the marketing content of your Microsoft Dynamics 365 for Finance and Operations solution package to the Microsoft Cloud Partner Portal. It also explains how to stage and publish your solution. Access to the portal is granted after you've been formally onboarded and registered as a publisher by the Microsoft AppSource Team for Finance and Operations. To start the onboarding process, see [Tell us about your company](https://appsource.microsoft.com/partners/signup).
+This topic explains how to upload the marketing content of your solution package to the Microsoft Cloud Partner Portal. It also explains how to stage and publish your solution. Access to the portal is granted after you've been formally onboarded and registered as a publisher by the Microsoft AppSource Team for Finance and Operations. To start the onboarding process, see [Tell us about your company](https://appsource.microsoft.com/partners/signup).
 
-Before you can publish the marketing content for your Finance and Operations solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. You can then upload your marketing content and manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/documentation/articles/marketplace-publishing-accounts-creation-registration/).
+Before you can publish the marketing content for your solution package to the Cloud Partner Portal, you must set up a Developer Center account with Microsoft. You can then upload your marketing content and manage the content through the lifecycle of application. For information about how to set up a Developer Center account, see [Create a Microsoft Developer account](https://azure.microsoft.com/documentation/articles/marketplace-publishing-accounts-creation-registration/).
 
 ## Upload marketing materials, set up legal information, identify the support team, and set up lead management
 After you've been registered as a publisher on the Cloud Partner Portal, you can create your new offer, upload a marketing summary, a description of your solution, and other marketing materials, and set up lead management.
@@ -52,4 +52,4 @@ To access the instructions to create and publish your new offer from the Cloud P
 Additional resources
 --------
 
-[Publishing an App for Dynamics 365 for Finance and Operations in AppSource](lcs-solutions-app-source.md)
+[Publishing an App in AppSource](lcs-solutions-app-source.md)

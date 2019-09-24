@@ -60,7 +60,7 @@ This section describes all data points that are sent to the payment connector fo
 
 | Field | Description |
 |---|---|
-| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Microsoft Dynamics 365 for Finance and Operations client. |
+| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 
 #### UpdateLineItemsPaymentTerminalDeviceRequest

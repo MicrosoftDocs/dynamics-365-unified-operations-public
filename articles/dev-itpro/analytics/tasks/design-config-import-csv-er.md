@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design ER configurations to import data from external CSV files
-description: Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format. 
+description: Use this procedure to design Electronic reporting (ER) configurations to import data in to the Finance and Operations application from an external file in CSV format. 
 author: NickSelin
 manager: AnnBe 
 ms.date: 12/12/2017
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to design Electronic reporting (ER) configurations to import data in to the Dynamics 365 for Finance and Operations application from an external file in CSV format. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.” 
+Use this procedure to design Electronic reporting (ER) configurations to import data in to the application from an external file in CSV format. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the procedure, “ER Create a configuration provider and mark it as active.” 
 
 This procedure is created for users with the assigned role of System administrator or Electronic reporting developer. These steps can be completed using the USMF data set. 
 
 You must also download and save the following files locally: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Go to Organization administration > Workspaces > Electronic reporting.
-    * You can configure a process to import external files in XML, TXT, or CSV format to tables in the Dynamics 365 for Finance and Operations application. First, you must create an abstract data model to represent the imported data, from a business standpoint – an ER data model configuration is created for that. Next, define a structure of the imported file that maps to the designed data model as the way to port data from the file to the abstract data model – an ER format configuration is created for that. Then, the ER data model configuration must be extended with a new model mapping that describes how the data from the imported file and the persisted data from the abstract data model is used to update the application tables or data entities.  
+    * You can configure a process to import external files in XML, TXT, or CSV format to tables in the application. First, you must create an abstract data model to represent the imported data, from a business standpoint – an ER data model configuration is created for that. Next, define a structure of the imported file that maps to the designed data model as the way to port data from the file to the abstract data model – an ER format configuration is created for that. Then, the ER data model configuration must be extended with a new model mapping that describes how the data from the imported file and the persisted data from the abstract data model is used to update the application tables or data entities.  
     * The following steps show how externally tracked vendors’ transactions are imported from the external CSV file for later use in the vendor’s settlement for 1099’s forms.   
     * Verify that the configuration provider for sample company, Litware, Inc. is available and marked as active. If you don’t see this configuration provider, you must first complete the steps in the procedure, “Create a configuration provider and mark it as active”.  
 2. Click Reporting configurations.

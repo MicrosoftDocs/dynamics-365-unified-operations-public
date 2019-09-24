@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 28
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Saved views are an important expansion of personalization capabilities in Dynamics 365 for Finance and Operations. While the [Saved views](../../fin-and-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
+Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-and-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
 ## “User-perceived” pages
 Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user’s perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 

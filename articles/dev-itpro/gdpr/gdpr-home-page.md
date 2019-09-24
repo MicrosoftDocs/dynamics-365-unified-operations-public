@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond to GDPR data requests resources
-description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Microsoft Dynamics 365 for Finance and Operation, and other Dynamics products.
+description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR) as a customer using Finance and Operations apps, and other Dynamics 365 products.
 author: rschloma
 manager: AnnBe
 ms.date: 07/23/2019
@@ -48,7 +48,7 @@ Your first step in responding to a request for data will usually be to use the P
 ## Product-specific considerations
 
 - [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
-- [Respond to a DSR request for data from Microsoft Dynamics 365 for Talent](respond-dsr-request-talent.md)
+- [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
 - [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
 - [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Retail version 10.0.3
-description: This topic describes features that are in preview in Dynamics 365 for Retail. 
+description: This topic describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
 ms.date: 06/14/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail in 10.0.3. 
+This topic describes features that are new or changed in Dynamics 365 Retail. 
 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
@@ -45,7 +45,7 @@ This feature adds additional capabilities to the new POS features for autocharge
 
 ## HQ extensions 
 
-This release adds numerous extension points so that it's easier to customize Dynamics 365 for Retail. The following extension points have been added to support custom extension scenarios.
+This release adds numerous extension points so that it's easier to customize Retail. The following extension points have been added to support custom extension scenarios.
 
 - Retail headquarters: Refactored methods to support extensibility. These methods have been refactored to support extensibility through chain of command, delegates, or by providing access to members.
 - Methods:

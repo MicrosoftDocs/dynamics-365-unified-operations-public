@@ -1,2 +1,2 @@
 > [!NOTE]
-> This topic applies to both Finance, Supply Chain Management, and Retail. 
+> This topic applies to Finance, Supply Chain Management, and Retail. 

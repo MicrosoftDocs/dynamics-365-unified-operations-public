@@ -38,7 +38,7 @@ This topic describes the steps for displaying images on a page or in a grid. The
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
 
-Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Finance and Operations doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
+Finance and Operation apps do not use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. 
 
 For ImageList uses, the runtime accepts the old **ImageID** value and maps it to a symbol, so that existing code continues to work.
 
@@ -53,14 +53,12 @@ AX 2012 offers the following storage options for images:
 -   A file location where developers or ISVs can load images at run time
 -   A database field that is stored as a bitmap
 
-Finance and Operations offers the following storage options for images:
+The following storage options are available for images:
 
 -   An AOS resource where developers or ISVs can add their own image resources
 -   A URL location where developers or ISVs can load images at run time
 -   A database field that is stored as a container.
 -   A symbol font, where images are rendered by name from the font
-
-In Finance and Operations, embedded resources (kernel resources) have been retired. 
 
 Images that are stored as AOS resources allow for the use of an image that isn't categorized as user data, and can be used with your application. 
 

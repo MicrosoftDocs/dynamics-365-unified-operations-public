@@ -2,7 +2,7 @@
 # required metadata
 
 title: General Data Protection Regulation overview
-description: This topic provides information about the user log functionality in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic provides information about the user log functionality in Finance and Operations.
 author: ToddLefor
 manager: AnnBe
 ms.date: 07/23/2019
@@ -62,13 +62,13 @@ To determine responsibilities for compliance, the GDPR identifies the following 
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
 + **C2** – C2 is C1's customer.
 
-For Microsoft Dynamics 365 for Finance and Operations, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
+For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
 
-The following illustration shows the flow of data from your customer to the Finance and Operations database, and the roles that you and Microsoft play in that process. For Finance and Operations, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
+The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
 ![Data flow from customers](../media/gdpr-customers-controller-processor.jpg)
 
-When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant to Finance and Operations.
+When a data subject chooses to submit a DSR, the data subject makes the request to the controller. Data subjects won't approach Microsoft to exercise their rights for data that your business has collected. As the processor, Microsoft assists the controller by providing features, or just by making sure that the actions are possible. In other words, the controller accepts and responds to a DSR request, and the processor assists with or enables the compliance request. The following table outlines some of the roles and responsibilities that are relevant.
 
 <table>
 <colgroup>
@@ -144,7 +144,7 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 </td>
 <td>
 <ul>
-<li>Uses Dynamics 365 for Finance and Operations to locate the data and fulfill the request. </li>
+<li>Uses Finance and Operations to locate the data and fulfill the request. </li>
 <li>Writes a customization.</li>
 <li>Reaches out to third parties for shared-controller DSRs.</li>
 <li>Reaches out to Microsoft for activity data.</li> 
@@ -214,7 +214,7 @@ When data is located, use in-product features to correct the data where the prod
 An organization might decide to take any of the following actions in response to a DSR request to erase data:
 
 + Delete or otherwise erase personal data where the product enables that action directly.
-+ Anonymize the personal data where Finance and Operations enables that action directly.
++ Anonymize the personal data where the product enables that action directly.
 + Author a customization to erase/modify the personal data.
 
 \* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
@@ -272,7 +272,7 @@ Roles that are associated with party records are referred to as party roles. The
 + **Worker** – A person who assumes the role of an employee or a contractor, or who is paid in exchange for services.
 + **User** – A person who is a user of the system. The user isn't identified in the Global address book.
 + **Vendor** – A party that supplies products to one or more legal entities in exchange for payment.
-+ **Competitor** – A person or organization that provides goods or services that are like the goods or services that your business provides. Out of the box, Finance and Operations has no particular identification for competitors.
++ **Competitor** – A person or organization that provides goods or services that are like the goods or services that your business provides. Out of the box, there is no particular identification for competitors.
 + **Applicant** – A person who makes a formal written or electronic request to work for an organization or fill an open position in it.
 + **Contact** – A person, either inside or outside your organization, that you've created an entry for. In this entry, you can save information such as the person's street and email addresses, telephone and fax numbers, and webpage URLs.
 
@@ -299,7 +299,7 @@ Some organizations conduct their activities only through business-to-business re
 
 ## Additional notes that apply to requests for data
 
-+ Data in Management Reporter and in Microsoft Power BI presentations is generated from the information that is entered in various financial documents and then transferred to those applications for reporting purposes. Any request for data should be fulfilled from the financial documents in Finance and Operations by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Management Reporter or Power BI to fulfill a GDPR request unless you have made customizations that have altered the base functionality.
++ Data in Management Reporter and in Microsoft Power BI presentations is generated from the information that is entered in various financial documents and then transferred to those applications for reporting purposes. Any request for data should be fulfilled from the financial documents by using tools such as reports, Export to Excel, and the Person search report. You should not need to do additional reporting from Management Reporter or Power BI to fulfill a GDPR request unless you have made customizations that have altered the base functionality.
 + Personal data that is included in documents or attachments might also need to be returned to the data subject, independent of any reporting.
 + If a master record has transactional data associated with it, it can't be deleted.
 + Similarly, transactions that have been posted or completed can't be deleted.
@@ -330,11 +330,11 @@ You should expect data requests to come to your company. You can categorize the 
 + Applicants
 + Competitors
 
-Personal data might also be contained in other roles that aren't listed here. Pages within Finance and Operations used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata) page on CustomerSource. 
+Personal data might also be contained in other roles that aren't listed here. Pages used to enter, view or edit personal data have been provided in worksheets for most roles in the preceding list. You can view or download the spreadsheets from the [Reference documents for finding and managing personal data](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/referencedocumentspersonaldata) page on CustomerSource. 
 
 ## Detailed inventory
 
-As you use Finance and Operations, you might find that you generate or collect large amounts of data that resides in multiple data stores. To help you make sense of where your data resides, we've introduced a data marker for each piece of data in our data stores. This marker is called "Asset Classification," and it can be used to identify or track personal data in Finance and Operations. Any data that you collect has been described as "customer content." Some customer content might contain personal data, and some customer content might contain business data. You can choose to treat all customer content as personal data, or you can change the classification yourself, so that you can identify and track any data that you feel is considered "Personal Data." Although Microsoft has a supplied a set of default classifications, you're free to use any classification or identifiers that you choose.
+As you use Finance and Operations apps, you might find that you generate or collect large amounts of data that resides in multiple data stores. To help you make sense of where your data resides, we've introduced a data marker for each piece of data in our data stores. This marker is called "Asset Classification," and it can be used to identify or track personal data. Any data that you collect has been described as "customer content." Some customer content might contain personal data, and some customer content might contain business data. You can choose to treat all customer content as personal data, or you can change the classification yourself, so that you can identify and track any data that you feel is considered "Personal Data." Although Microsoft has a supplied a set of default classifications, you're free to use any classification or identifiers that you choose.
 
 <Link to documentation on how to modify asset classifications>
 
@@ -366,11 +366,11 @@ The GDPR specifies that systems must stop processing a minor's personal data if 
 
 ### Displaying your organizations user rights and privacy notice
 
-In the **About** box in Finance and Operation, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
+In the **About** box, you will find links to the Microsoft user rights documentation, and to the Microsoft privacy and cookies documentation. You can also add a link to your organization's privacy statement.
 
 ![Solution explorer showing the asset](../media/gdpr-privacy-01-w-note.jpg)
 
-On the **System parameters** page in Finance and Operations, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
+On the **System parameters** page, system administrator can add links to the organization's user rights and privacy notices. You can add a valid URL for one or both notice types.
 
 ![System parameters where you add a link to your organization's privacy statement](../media/gdpr-privacy-02.jpg)
 

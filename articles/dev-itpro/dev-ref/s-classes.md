@@ -3650,7 +3650,7 @@ The format string that is used for casting the string to one case.
 
 #### Remarks
 
-Finance and Operations style for placeholder(s) is used (i.e. "%1").
+Finance and Operations application style for placeholder(s) is used (i.e. "%1").
 
 ### Method sqlLiteral
 

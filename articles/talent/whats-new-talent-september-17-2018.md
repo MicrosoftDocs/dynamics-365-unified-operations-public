@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent Core HR.
+title: What's new or changed in Dynamics 365 Talent - Core HR (September 17, 2018)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent - Core HR.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# What's new or changed in Dynamics 365 for Talent Core HR (September 17, 2018)
+# What's new or changed in Dynamics 365 Talent: Core HR (September 17, 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -42,13 +42,13 @@ This topic describes features that are either new or changed in Core HR.
 
 A new accrual type has been added to Leave plans. The accrual schedule can now be based on months of service or hours worked. For more information, see [Accrue time off based on hours worked](leave-accrue-hours-worked.md).
 
-## Platform update 18
+## Platform update 18 for Finance and Operations
 
-Platform update 18 is now part of the Talent release. 
+Platform update 18 for Finance and Operations is now part of the Talent release. 
 
 -   Mandatory and other fields can be hidden via personalization. This allows a user to create a simplified experience where mandatory fields that are defaulted by business logic are not shown. Hidden mandatory fields are also temporarily made visible if they are empty when a save is attempted.
 
--   In Platform update 18, the Talent web client now aligns its visuals with Microsoft Fluent Design.
+-   In Platform update 18 for Finance and Operations, the Talent web client now aligns its visuals with Microsoft Fluent Design.
 
     -   When fields are in “read mode”, you can simply select the edit option in the fields to switch the form to edit.
 

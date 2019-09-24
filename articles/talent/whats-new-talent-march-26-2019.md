@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (March 26, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (March 26, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (March 26, 2019)
+# What's new or changed in Dynamics 365 Talent (March 26, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -57,7 +57,7 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ### Custom field support available for select entities in Common Data Service 
 
-The following Common Data Service entities now support customer fields created in Dynamics 365 for Talent:
+The following Common Data Service entities now support customer fields created in Talent:
 
 - Worker
 - Ethnic origin
@@ -76,7 +76,7 @@ With this change, the employment history page now displays employment records ch
 In this release, fixed compensation plans now appear when restricting users by company in security. All security settings will be honored, and fixed plans will appear for those companies the user has permissions to access. 
 
 ### Can't delete Job records using Open in Excel option in Talent
-With this release, you can now remove job records by using the **Open in Excel** option in Dynamics 365 for Talent.
+With this release, you can now remove job records by using the **Open in Excel** option in Talent.
 
 ### Upgrade to Common Data Service
 Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
@@ -97,7 +97,7 @@ Organizations might require reason codes to be set on specific leave types when 
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles granted with access can process compensation for these employees.
 
 ###  Email support for alerts
-With Platform update 25, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
+With Platform update 25 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event. 
 
 ### Duplicate employee checks: User interface changes
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. To avoid interrupting data entry, the duplicates form doesn't open automatically.

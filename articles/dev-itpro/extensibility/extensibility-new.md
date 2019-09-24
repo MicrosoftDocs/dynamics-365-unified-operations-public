@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to extensibility updates for Dynamics 365 for Finance and Operations.
+This topic provides links to extensibility updates.
 
 + [Extensibility changes version 10.0.3](extensibility-changes-10-3.md)
 + [Extensibility changes version 10.0.2](extensibility-changes-10-2.md)

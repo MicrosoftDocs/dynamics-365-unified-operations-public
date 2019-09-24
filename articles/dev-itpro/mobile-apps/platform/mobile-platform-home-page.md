@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../../includes/banner.md)]
 
-By using mobile apps, you can reuse business logic and modeling from Microsoft Dynamics 365 for Finance and Operations. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to Finance and Operations. 
+By using mobile apps, you can reuse business logic and modeling. Mobile apps enable rich offline and mobile interactions, and provide an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile apps that expose this functionality. The mobile platform makes it easy to change the forms and mobile app definitions to include customizations that are made to your cloud app. 
 
 ## Get started
 
@@ -163,10 +163,10 @@ To completely uninstall the app, don't use the "long-press wiggle and x on the a
 
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
-- Review the documentation provided in the Dynamics 365 for Finance and Operations Help system.
+- Review the documentation provided in the Help system.
 - Review the [Fleet Management Samples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) for examples.
 - Publish and review the Expense Management workspace, and other standard workspaces, for examples. Demo data for the USSI company is useful when using the Expense Management workspace. The forms and X++ code that make up the Expense Management workspace can be found in the Application Explorer by searching for the "ExpenseMobile" prefix.
-- Leverage the [Dynamics Community forums for Finance and Operations (AX)](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
+- Leverage the [Dynamics Community forums](https://community.dynamics.com/ax/f/33) by searching for answers and asking questions when needed.
 
 ### Tips for workspace creation and modification
 Here are some tips for workspace creation and modification:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Iceland overview
-description: This topic provides links to Microsoft Dynamics 365 for Finance and Operations documentation resources for Iceland. 
+description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Iceland. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 07/25/2019

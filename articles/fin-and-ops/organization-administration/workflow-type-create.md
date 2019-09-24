@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a workflow type
-description: This topic describes how to create a workflow type in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic describes how to create workflow types.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/19/2019

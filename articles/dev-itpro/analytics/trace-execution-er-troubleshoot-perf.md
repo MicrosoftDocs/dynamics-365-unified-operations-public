@@ -34,19 +34,19 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include[banner](../includes/banner.md)]
 
-As part of the process of designing Electronic reporting (ER) configurations to generate electronic documents, you define the method that is used to get data out of Microsoft Dynamics 365 for Finance and Operations and enter it in the output that is generated. The ER performance trace feature helps significantly reduce the time and cost that are involved in collecting the details of ER format execution and using them to troubleshoot performance issues. This tutorial provides guidelines about how to take performance traces for executed ER formats in Finance and Operations, and how to use the information from these traces to help improve performance.
+As part of the process of designing Electronic reporting (ER) configurations to generate electronic documents, you define the method that is used to get data out of the application and enter it in the output that is generated. The ER performance trace feature helps significantly reduce the time and cost that are involved in collecting the details of ER format execution and using them to troubleshoot performance issues. This tutorial provides guidelines about how to take performance traces for executed ER formats, and how to use the information from these traces to help improve performance.
 
 ## Prerequisites
 
 To complete the examples in this tutorial, you must have the following access:
 
-- Access to Finance and Operations for one of the following roles:
+- Access to one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
     - System administrator
 
-- Access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as Finance and Operations, for one of the following roles:
+- Access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as the application, for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -63,23 +63,23 @@ You must also download and locally store the following files.
 
 ### Configure ER parameters
 
-Each ER performance trace that is generated in Finance and Operations is stored as an attachment of the execution log record. The Document management (DM) framework of Finance and Operations is used to manage these attachments. You must configure ER parameters in advance, to specify the DM document type that should be used to attach performance traces. In Finance and Operation, in the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
+Each ER performance trace that is generated in the application is stored as an attachment of the execution log record. The Document management (DM) framework is used to manage these attachments. You must configure ER parameters in advance, to specify the DM document type that should be used to attach performance traces. In the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
 
-![Electronic reporting parameters page in Finance and Operations](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Electronic reporting parameters page](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 To be available in the **Others** lookup field, a DM document type must be configured in the following manner on the **Document types** page (**Organization administration \> Document management \> Document types**):
 
 - **Class:** Attach file
 - **Group:** File
 
-![Document types page in Finance and Operations](./media/GER-PerfTrace-DM-DocumentType.png)
+![Document types page](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
-> The selected document type must be available in every company of the current Finance and Operations instance, because DM attachments are company-specific.
+> The selected document type must be available in every company of the current instance, because DM attachments are company-specific.
 
 ### Configure RCS parameters
 
-ER performance traces that are generated in Finance and Operations will be imported into RCS for analysis by using the ER format designer and the ER mapping designer. Because ER performance traces are stored as attachments of the execution log record that is related to the ER format, you must configure RCS parameters in advance, to specify the DM document type that should be used to attach performance traces. In the instance of RCS that has been provisioned for your company, in the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
+ER performance traces that are generated will be imported into RCS for analysis by using the ER format designer and the ER mapping designer. Because ER performance traces are stored as attachments of the execution log record that is related to the ER format, you must configure RCS parameters in advance, to specify the DM document type that should be used to attach performance traces. In the instance of RCS that has been provisioned for your company, in the **Electronic reporting** workspace, select **Electronic reporting parameters**. Then, on the **Electronic reporting parameters** page, on the **Attachments** tab, in the **Others** field, select the DM document type to use for performance traces.
 
 ![Electronic reporting parameters page in RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
@@ -105,26 +105,26 @@ Assume that you've started to design a new ER solution to generate a new report 
 
 ## Run the ER solution to trace execution
 
-Assume that you've finished designing the first version of the ER solution. You now want to test it in your Finance and Operations instance and analyze execution performance.
+Assume that you've finished designing the first version of the ER solution. You now want to test it in your instance and analyze execution performance.
 
 ### <a id='import-configuration'></a>Import an ER configuration from RCS into Finance and Operations
 
-1. Sign in to your Finance and Operations instance.
-2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your Finance and Operations instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) procedure.
-3. Follow these steps to import the configurations from RCS into Finance and Operations:
+1. Sign in to your application instance.
+2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations) procedure.
+3. Follow these steps to import the configurations from RCS into the application:
 
     1. In the **Electronic reporting** workspace, on the tile for the **Litware, Inc.** configuration provider, select **Repositories**.
     2. On the **Configuration repository** page, select the repository of the **RCS** type, and then select **Open**.
     3. On the **Configurations** FastTab, select the **Performance trace format** configuration.
     4. On the **Versions** FastTab, select version **1.1** of the selected configuration, and then select **Import**.
 
-    ![Configuration repository page in Finance and Operations](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Configuration repository page](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 The corresponding versions of the data model and model mapping configurations are automatically imported as prerequisites for the imported ER format configuration.
 
 ### Turn on the ER performance trace
 
-1. In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configurations**.
+1. Go to **Organization administration \> Electronic reporting \> Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, in the **Execution tracing** section, follow these steps:
 
@@ -150,11 +150,11 @@ The corresponding versions of the data model and model mapping configurations ar
     > [!NOTE]
     > The parameters in the **User parameters** dialog box are specific to the user and the current company.
 
-    ![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![User parameters dialog box](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a id='run-format'></a>Run the ER format
 
-1. In Finance and Operations, select the **DEMF** company.
+1. Select the **DEMF** company.
 2. Go to **Organization administration \> Electronic reporting \> Configurations**.
 3. On the **Configurations** page, in the configuration tree, select the **Performance trace format** item.
 4. On the Action Pane, select **Run**.
@@ -163,19 +163,19 @@ Notice that the file that is generated presents information about 265 transactio
 
 ## Review the execution trace
 
-### <a id='export-trace'></a>Export the generated trace from Finance and Operations
+### <a id='export-trace'></a>Export the generated trace from the application
 
 Performance traces are decoupled from the source ER format and can be serialized to an external zip file.
 
-1. In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configuration debug logs**.
+1. Go to **Organization administration \> Electronic reporting \> Configuration debug logs**.
 2. On the **Electronic reporting run logs** page, in the left pane, in the **Configuration name** field, select **Performance trace format** to find the log records that have been generated by the execution of the **Performance trace format** configuration.
 3. Select the **Attachments** button (the paper clip symbol) in the upper-right corner of the page, or press **Ctrl+Shift+A**.
 
-    ![Attachments button on the Electronic reporting run logs page in Finance and Operations](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Attachments button on the Electronic reporting run logs page](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. On the **Attachments for Electronic reporting run logs** page, on the Action Pane, select **Open** to get the performance trace as a zip file and store it locally.
 
-    ![Attachments for Electronic reporting run logs page in Finance and Operations](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Attachments for Electronic reporting run logs](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > The trace that is generated has a reference to the source ER report via a unique report identifier in **GUID** format only. The version numbering of the format isn't considered.
@@ -189,7 +189,7 @@ Notice that the association between the performance trace that has been generate
 3. On the Action Pane, select **Designer**.
 4. On the **Format designer** page, on the Action Pane, select **Performance trace**.
 5. In the **Performance trace result settings** dialog box, select **Import performance trace**.
-6. Select **Browse** to select the zip file that you exported from Finance and Operations earlier.
+6. Select **Browse** to select the zip file that you exported earlier.
 7. Select **OK**.
 
     ![Performance trace result settings dialog box in RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
@@ -297,9 +297,9 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 2. Select **Change status**.
 3. Select **Complete**.
 
-### Import the modified ER model mapping configuration from RCS into Finance and Operations
+### Import the modified ER model mapping configuration from RCS into the application
 
-Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration into Finance and Operations.
+Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this topic to import version 1.2 of the **Performance trace mapping** configuration.
 
 ## Run the modified ER solution to trace execution
 
@@ -309,9 +309,9 @@ Repeat the steps in the [Run the ER format](#run-format) section earlier in this
 
 ## Review the execution trace
 
-### Export the generated trace from Finance and Operations
+### Export the generated trace from the application
 
-Repeat the steps in the [Export the generated trace from Finance and Operations](#export-trace) section earlier in this topic to save a new performance trace locally.
+Repeat the steps in the [Export the generated trace from the application](#export-trace) section earlier in this topic to save a new performance trace locally.
 
 ### Import the generated trace into RCS
 
@@ -331,19 +331,19 @@ Notice that the number of calls to the LedgerTransTypeList data source has been 
 
 ![Trace information for the LedgerTransTypeList data source on the Model mapping designer page in RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
-## Review the execution trace in Finance and Operations
+## Review the execution trace in the application
 
-In addition to RCS, some versions of Finance and Operations might offer capabilities for an ER framework designer experience. These versions of Finance and Operations have an **Enable design mode** option that can be turned on. You can find this option on the **General** tab of the **Electronic reporting parameters** page, which you can open from the **Electronic reporting** workspace.
+In addition to RCS, some versions might offer capabilities for an ER framework designer experience. These versions have an **Enable design mode** option that can be turned on. You can find this option on the **General** tab of the **Electronic reporting parameters** page, which you can open from the **Electronic reporting** workspace.
 
-![Enable design mode option on the Electronic reporting parameters page in Finance and Operations](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Enable design mode option on the Electronic reporting parameters page](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
-If you use one of these versions of Finance and Operations, you can analyze the details of generated performance traces directly in Finance and Operations. You don't have to export them from Finance and Operation and import them into RCS.
+If you use one of these versions, you can analyze the details of generated performance traces directly in the application. You don't have to export them from the application and import them into RCS.
 
 ## Review the execution trace by using external tools
 
 ### Configure user parameters
 
-1. In Finance and Operations, go to **Organization administration \> Electronic reporting \> Configurations**.
+1. Go to **Organization administration \> Electronic reporting \> Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, in the **Execution tracing** section, in the **Execution trace format** field, select **PerfView XML**.
 
@@ -361,7 +361,7 @@ Because of improvements that have been made to the ER framework, the performance
 
 ### Configure user parameters
 
-1. In Finance and Operations, go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, in the **Execution tracing** section, set the following parameters:
 
@@ -369,7 +369,7 @@ Because of improvements that have been made to the ER framework, the performance
     - Set the **Collect query statistics** option to **Yes**.
     - Set the **Trace query** option to **Yes**.
 
-    ![User parameters dialog box in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![User parameters dialog box](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### Run the ER format
 

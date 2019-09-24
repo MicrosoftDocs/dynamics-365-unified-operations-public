@@ -96,5 +96,5 @@ In this example, you will create a configuration and upload it to LCS for sample
 10. Click Open.
     * Select the LCS repository and open it.  
     * Note that the selected configuration is shown as an asset of the selected LCS project.  
-    * Open LCS using https://lcs.dynamics.com. Open a project that was used earlier for repository registration, open the ‘Asset library’ of this project, and expand the content of the ‘GER configuration’ asset type – the uploaded ER configuration will be available. Note that the uploaded LCS configuration can be imported to another Microsoft Dynamics 365 for Finance and Operations, Enterprise edition instance if providers have access to this LCS project.  
+    * Open LCS using https://lcs.dynamics.com. Open a project that was used earlier for repository registration, open the ‘Asset library’ of this project, and expand the content of the ‘GER configuration’ asset type – the uploaded ER configuration will be available. Note that the uploaded LCS configuration can be imported to another instance if providers have access to this LCS project.  
 

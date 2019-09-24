@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refresh database
-description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database for  Dynamics 365 for Finance and Operations to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to perform a refresh of the database to a sandbox user acceptance testing (UAT) environment. A database refresh lets you copy the transactional and financial reporting databases of your production environment into the target, sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target, sandbox UAT environment.
 
 > [!IMPORTANT]
 > Copying production data to your sandbox environment for the purpose of production reporting is not supported.
@@ -78,7 +78,7 @@ Here is the list of requirements and conditions of operation for a database refr
 
 - A refresh erases the existing database in the target environment. The existing database can't be recovered after the refresh is completed.
 - The target environment will be unavailable until the refresh process is completed.
-- The refresh will affect only the Finance and Operations and Financial Reporting databases.
+- The refresh will affect only the application and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.

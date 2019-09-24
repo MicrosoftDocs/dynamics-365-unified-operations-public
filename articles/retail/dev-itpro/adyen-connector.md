@@ -5,7 +5,7 @@ title: Dynamics 365 Payment Connector for Adyen
 description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -40,7 +40,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 | Term | Description |
 |---|---|
-| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 for Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
+| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
 | Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
@@ -59,51 +59,51 @@ The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard paymen
 ### Supported Versions
 
 #### Microsoft Dynamics 365 Supported Versions
-The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 for Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
+The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
 
 #### Supported Adyen Firmware Versions
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 for Retail POS.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
 
 ---
 
 # [8.1.3](#tab/8-1-3)
-### Dynamics 365 for Retail POS version 8.1.3
+### Dynamics 365 Retail POS version 8.1.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0](#tab/10-0)
-### Dynamics 365 for Retail POS version 10.0
+### Dynamics 365 Retail POS version 10.0
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.1](#tab/10-0-1)
-### Dynamics 365 for Retail POS version 10.0.1
+### Dynamics 365 Retail POS version 10.0.1
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.2](#tab/10-0-2)
-### Dynamics 365 for Retail POS version 10.0.2
+### Dynamics 365 Retail POS version 10.0.2
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # [10.0.3](#tab/10-0-3)
-### Dynamics 365 for Retail POS version 10.0.3
+### Dynamics 365 Retail POS version 10.0.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # [10.0.4](#tab/10-0-4)
-### Dynamics 365 for Retail POS version 10.0.4
+### Dynamics 365 Retail POS version 10.0.4
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_38p6 |
 
 # [10.0.5](#tab/10-0-5)
-### Dynamics 365 for Retail POS version 10.0.5
+### Dynamics 365 Retail POS version 10.0.5
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_40p6 |
@@ -337,7 +337,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
     | Cloud API Key | This field is used only for the card-not-present payment integration and should be left blank. | No | Yes | *Leave this field blank.* |
     | Supported Currencies | Enter the currencies that the connector should process. Note that, in card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
-    | Supported Tender Types | Enter the tender types that the connector should process. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
+    | Supported Tender Types | Enter the tender types that the connector should process. These values are case sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. The possible values are **SVS** and **GIVEX**. | No | No | SVS |
 
 4. On the Action Pane, select **Save**.
@@ -360,7 +360,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
 5. Save your changes.
 6. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
-7. On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`.
+7. On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. Note, the values in this URL are case sensitive.
 
 #### <a id="update-the-modern-pos-or-iis-hardware-station-configuration"></a>Update the Modern POS or IIS Hardware Station configuration
 

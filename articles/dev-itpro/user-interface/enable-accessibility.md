@@ -109,7 +109,9 @@ Importantly, your control should not only identify itself by name, but (using a 
     <button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
     <div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
 
-**Indicate when it is busy** It may not always be clear to the visually-impaired user why the control isn’t responsive. Providing a “busy” message helps in these cases.
+**Indicate when it is busy** 
+
+It may not always be clear to the visually-impaired user why the control isn’t responsive. Providing a “busy” message helps in these cases.
 
 - *aria-busy (state)* - Indicates whether an element, and its subtree, are currently being updated.
 
@@ -117,7 +119,9 @@ Importantly, your control should not only identify itself by name, but (using a 
 
     <p aria-live=”polite” aria-busy=”true”></p>
 
-**Indicate that the contents have been validated and are invalid** The async nature will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
+**Indicate that the contents have been validated and are invalid** 
+
+The async nature will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
 
 - *aria-invalid (state)* - Indicates the entered value does not conform to the format expected by the application.
 
@@ -125,11 +129,15 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 - *aria-readonly* - Indicates that the element is not editable, but is otherwise operable. See related *aria-disabled*.
 
-**Indicate that the field requires input (mandatory)** The sighted user understands that a field is mandatory through a visual symbol. The non-sighted user will need an identifying tag.
+**Indicate that the field requires input (mandatory)** 
+
+The sighted user understands that a field is mandatory through a visual symbol. The non-sighted user will need an identifying tag.
 
 - *aria-required* - Indicates that user input is required on the element before a form may be submitted.
 
-**Describe the state of a toggled value** A toggle control has a toggled state. This tag will express that state.
+**Describe the state of a toggled value** 
+
+A toggle control has a toggled state. This tag will express that state.
 
 - *aria-pressed (state)* - Indicates the current "pressed" state of toggle buttons. See related *aria-checked* and *aria-selected*.
 
@@ -139,11 +147,11 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 ### Controls could do this
 
-**Indicate an expanded state** Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
+**Indicate an expanded state** - Complex interactions can be learned, but current state isn’t always easy to determine without experimentation. When using an *aria-expanded* tag, the control describes its current state. An example is tabbing to a tab or FastTab section of a control.
 
 - *aria-expanded (state)* - Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed.
 
-**Describe applicable context menu** Microsoft Dynamics 365 for Finance and Operations provides a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+**Describe applicable context menu** - Finance and Operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 

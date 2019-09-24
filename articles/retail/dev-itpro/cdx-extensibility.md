@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 for Retail platform update 8.
+This topic explains how you can extend the Retail initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
 
 CDX is a system that transfers data between Retail headquarters (Retail HQ) and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the names of the source tables and destination tables, and the transfer field mapping of those tables. There are two ways to configure the data synchronization between Retail HQ and the channel database:
 
@@ -99,7 +99,7 @@ If you created a new Retail HQ table and a new channel database table, follow th
     </RetailCdxSeedData>
 ```
 
-By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Finance and Operations side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table on the Finance and Operations side. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
+By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Finance and Operations side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
 
 Similarly, in the mapping section, only the names of fields on the Finance and Operations side are specified (**AxFields**). By default, it's assumed that the same field name is also used on the channel side. However, the field name on the corresponding channel table might sometimes differ from the field name on the Finance and Operations side. In this case, in the mapping, you can use the **ToName** attribute of the **&lt;Field&gt;** node to set the name of the field on the channel side.
 
@@ -227,7 +227,7 @@ To move an existing subjob to another job, you can change the **ScheduledByJob**
 ```
 
 ## CDX sample - Pull new columns to an existing table
-In Microsoft Dynamics 365 for Retail App update 5, we added a new sample in RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables, it has all the sample SQL scripts, ax project files for different CDX extension scenarios, please use it as a reference for different CDX extension scenarios.
+In Microsoft Dynamics 365 Retail App update 5, we added a new sample in RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables, it has all the sample SQL scripts, ax project files for different CDX extension scenarios, please use it as a reference for different CDX extension scenarios.
 
 In the next sections, we discuss the steps and best practices for customizing Retail transactional tables by using extension tables. Another section shows how to customize CDX to upload the customized (extension) tables on the channel side back to Finance and Operations. We have also included a section that describes how to test the customization.
 

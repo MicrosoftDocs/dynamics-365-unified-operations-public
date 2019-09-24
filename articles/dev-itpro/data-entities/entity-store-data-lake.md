@@ -85,7 +85,7 @@ When this feature is turned on, Entity store data isn't populated in the relatio
 
 Before you start, you must complete these tasks in the Azure portal.
 
-1. **Create storage accounts.** Provision a storage account in the same data center where your Microsoft Dynamics 365 for Finance and Operations environment is provisioned. Make a note of the connection string for the storage account, because you will have to provide it later.
+1. **Create storage accounts.** Provision a storage account in the same data center where your environment is provisioned. Make a note of the connection string for the storage account, because you will have to provide it later.
 2. **Create a Key Vault and a secret.** Provision Azure Key Vault in your own subscription. You will need the Domain Name System (DNS) name of the Key Vault entry that you created. Also add a secret to Key Vault. As the value, specify the connection string that you made a note of in the previous task. Make a note of the name of the secret, because you will have to provide it later.
 3. **Register the app.** Create an Azure Active Directory (Azure AD) application, and grant application programming interface (API) access to Key vault. Make a note of the application ID and its application key (secret), because you will have to provide them later.
 4. **Add a service principal to Key Vault.** In Key Vault, use the **Access policies** option to grant the Azure AD application **Get** and **List** permissions. In this way, the application will have access to the secrets in Key Vault.
@@ -97,7 +97,7 @@ The following sections describe each task in more detail.
 1. In the Azure portal, create a new storage account.
 2. In the **Create storage account** dialog box, provide values for the following parameter fields:
 
-    - **Location:** Select the data center where your Finance and Operations environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
+    - **Location:** Select the data center where your environment is located. If the data center that you select is in a different Azure region, you will incur additional data movement costs. If your Microsoft Power BI and/or your data warehouse is in a different region, you can use replication to move storage between regions.
     - **Performance:** We recommend that you select **Standard**.
     - **Account kind:** You must select **StorageV2**.
 
@@ -115,7 +115,7 @@ The following sections describe each task in more detail.
 ### Create a Key Vault and a secret
 
 1. In the Azure portal, create a new Key Vault.
-2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your Finance and Operations environment is located.
+2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
 3. After Key Vault is created, select it in the list, and then select **Secrets**.
 4. Select **Generate/Import**.
 5. In the **Create a secret** dialog box, in the **Upload options** field, select **Manual**.
@@ -130,7 +130,7 @@ The following sections describe each task in more detail.
 
     - **Name:** Enter the name of the app.
     - **Application type:** Select **Web API**.
-    - **Sign-on URL:** Copy the root URL for Finance and Operations, and paste it here.
+    - **Sign-on URL:** Copy the root URL and paste it here.
 
 3. After the application is created, select it, and then select **Settings**.
 4. Select the **Required permissions** option.

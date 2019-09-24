@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payments FAQ
-description: This topic describes the payment options that are available in Dynamics 365 for Retail.
+description: This topic describes the payment options that are available in Dynamics 365 Retail.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/16/2017
@@ -64,7 +64,7 @@ Yes, but you must connect them using customization.
 The SLA for the out-of-box Verifone connector is owned by Verifone. Please contact Verifone support for information about their SLA. For the Adyen connector, refer to the Adyen connector [overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) if the issue is related to setup. For other setup or functional issues with the connector itself, create a support request with Microsoft. If the issue is originating from the device itself or Adyen's processing service, contact Adyen support at support-dynamics365@adyen.com. 
         
 ## If a supported payment provider issues an update, will Microsoft automatically update the payment connector or do I need to work with the payment provider to get the updated payment connector?
-If a payment connector update is issued by the payment connector provider, the updated version of the payment connector will be included in the next planned release of Dynamics 365 for Retail. However, the customer can also work directly with the payment connector provider to uptake it earlier.
+If a payment connector update is issued by the payment connector provider, the updated version of the payment connector will be included in the next planned release of Dynamics 365 Retail. However, the customer can also work directly with the payment connector provider to uptake it earlier.
 
         
 Related topics: 

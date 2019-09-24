@@ -45,7 +45,7 @@ To set up the communication, your vendor has to provide pieces of information fo
 ## Setting up an external catalog
 
 The external catalog should enable an employee who enters a purchase requisition to be redirected to an external site to select products. 
-The products that the employee selects from the external catalog are returned to Dynamics 365 for Finance and Operations with up-to-date price information and from here, they can be added to the purchase requisition. 
+The products that the employee selects from the external catalog are returned to Finance and Operations with up-to-date price information and from here, they can be added to the purchase requisition. 
 The intention is not to enable employees to place an order on the external site. 
 When setting up the external catalog, you need to make sure that the purpose of the site that can be accessed by the external catalog is to collect quote information and not to place a real order.
 

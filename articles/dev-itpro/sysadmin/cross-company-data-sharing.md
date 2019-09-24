@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment.
+description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment.
 author: aprilolson
 manager: AnnBe
 ms.date: 02/19/2019
@@ -34,12 +34,12 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
 What is this feature and how does it work?
 ------------------------------------------
 
-Cross-company data sharing lets you replicate (share) reference and group data among companies in a Finance and Operations deployment. Data integrity is verified before replication occurs. 
+Cross-company data sharing lets you replicate (share) reference and group data among companies. Data integrity is verified before replication occurs. 
 
 Here are some examples of cross-company data sharing:
 
@@ -103,7 +103,7 @@ Customer and vendor master data sharing allows you to share customer and vendor 
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
 
-For details about how to configure Finance and Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
+For details about how to use a template, see [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 ## Currently supported cross-company data sharing templates
 <table>

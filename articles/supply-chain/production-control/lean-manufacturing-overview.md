@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lean manufacturing overview
-description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 for Finance and Operations.
+description: This article provides an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.
+This article provides an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management.
 
 Lean manufacturing offers tools that you can use to model lean operations. These tools support and promote the following concepts and business activities:
 -   Create a lean manufacturing foundation by modeling manufacturing and logistics processes as production flows.
 -   Implement a lean pull system by using kanbans to signal demand requirements.
 -   Monitor and maintain kanban jobs.
 
-The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules. These structures are fully integrated with Finance and Operations processes. You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.
+The lean manufacturing architecture consists of production flows, activities, and kanban rules. These structures are fully integrated with Finance and Operations processes. You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies. These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.
 
 | **Important**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
