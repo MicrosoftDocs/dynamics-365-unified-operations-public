@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default category landing page and search results page
-description: This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 for Commerce e-Commerce.
+description: This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 author: asharchw
 manager: annbe
 ms.date: 10/01/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Default category landing page and search results page
 
-This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 for Commerce e-Commerce.
+This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 
 ## Default category landing page
 
-The default category landing page is the page that website users typically are taken to when they select a category from the navigation hierarchy. The category page lets you browse, and you can also sort and refine the categorized products.
+The default category landing page is the page that website users typically are taken to when they select a category in the navigation hierarchy. The category page lets you browse, and you can also sort and refine the categorized products.
 
 ![Default category landing page](./media/SimpleCategoryLandingDressCategory.png)
 
@@ -42,7 +42,7 @@ At the top of the page is a header that shows all the product categories and oth
 
 The following components are essential for a category:
 
-- **Product placement tiles** show the products that the merchandising manager has defined in a category as part of the navigation hierarchy configuration.
+- **Product placement tiles** show the products that the merchandising manager has defined in a category as part of the configuration of the navigation hierarchy.
 - **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
 - **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
@@ -64,9 +64,9 @@ If you want a category landing page to have a more tailored experience for a spe
 
 ## Auto-suggest and search results pages
 
-Website users can explore a site either by going to a category from the navigation hierarchy or by typing a search term in the search bar.
+Website users can explore a site either by going to a category from the navigation hierarchy or by entering a search term in the search field.
 
-As soon as users start to type in the search bar, they experience the immersive auto-suggest functionality that suggests search terms.
+As soon as users start to type in the search field, they experience the immersive auto-suggest functionality that suggests search terms.
 
 Here are some of the types of suggestions that might be shown:
 
@@ -76,7 +76,7 @@ Here are some of the types of suggestions that might be shown:
 
 ![Immersive auto-suggest](./media/ImmersiveAutoSuggestUX.png)
 
-When users clicks a 'keyword' or a 'scoped category search' suggestion, or when they enter a search that has no known suggestions, the user is re-directed to a search results page. Users can then browse, sort, and refine the list of search results to find the desired item.
+When users select one of the keyword or scoped category search suggestions, or when there are no suggestions for the search term that they enter, they are redirected to a search results page. The users can then browse, sort, and refine the list of search results to find the desired item.
 
 ![Search landing](./media/SearchLanding.png)
 
