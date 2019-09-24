@@ -3,7 +3,7 @@
 
 title: Add a privacy policy page
 description: This topic describes how to add a privacy policy page to your site in Microsoft Dynamics 365 Commerce.
-author: brshoo
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
@@ -53,7 +53,7 @@ To start, in the authoring tools, go to the site that you want to build a privac
 ### Create a template
 
 > [!NOTE]
-> If a template that can be used for the privacy policy page has already been created, skip ahead to the [Build a privacy policy page](#build-a-privacy-page) section.
+> If a template that can be used for the privacy policy page has already been created, skip ahead to the Build a privacy policy page section below.
 
 To create a template, follow these steps.
 
