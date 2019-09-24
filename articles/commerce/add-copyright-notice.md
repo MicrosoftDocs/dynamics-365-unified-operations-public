@@ -41,8 +41,8 @@ This topic describes how to add a copyright notice to your e-Commerce website.
 
 Before you can add a copyright notice to your site, you must have the following items:
 
-- A template that includes a shared footer fragment
-- A page that uses that template
+- A template that includes a shared footer fragment.
+- A page that uses that template.
 
 ## Add a copyright notice
 
