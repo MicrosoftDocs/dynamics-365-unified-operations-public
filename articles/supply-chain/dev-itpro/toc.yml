@@ -261,7 +261,7 @@
     - name: Use third-party service testing utilities
       href: ../../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create read-only entities that expose financial dimensions
-      href: ../../financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      href: ../../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Bring your own database
     href: ../../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Automated Entity store refresh
@@ -1551,9 +1551,9 @@
     - name: Custom Filter Group subpattern
       href: ../../dev-itpro/user-interface/custom-filter-group-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Dimension Entry Control subpattern
-      href: ../../financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      href: ../../dev-itpro/financial/dimension-entry-control-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Dimension Expression Builder subpattern
-      href: ../../financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      href: ../../dev-itpro/financial/dimension-expression-builder-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Fields and Field Groups subpattern
       href: ../../dev-itpro/user-interface/fields-field-groups-subpattern.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Filters and Toolbar subpatterns
