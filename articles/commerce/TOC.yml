@@ -52,6 +52,10 @@
       href: add-alert.md
     - name: Add a carousel module to a page
       href: add-carousel.md
+    - name: Create a header module
+      href: author-header-module.md
+    - name: Create a footer module
+      href: author-footer-module.md 
   - name: Error handling
     items:
     - name: Build custom response pages for 4xx/5xx status code errors
