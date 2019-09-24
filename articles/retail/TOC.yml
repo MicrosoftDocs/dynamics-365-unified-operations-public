@@ -652,248 +652,200 @@
       href: tasks/use-continuity-program.md
     - name: Configure retail workers
       href: tasks/worker.md
-    - name: Mobile app
+  - name: Mobile app
+    items:
+    - name: Mobile app home page
+      href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/retail/toc.json
+    - name: Mobile workspaces
       items:
-      - name: Mobile app home page
-        href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/retail/toc.json
-      - name: Mobile workspaces
-        items:
-        - name: Available mobile workspaces
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/retail/toc.json
-        - name: Company directory
-          href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/retail/toc.json
-        - name: Cost controlling
-          href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/retail/toc.json
-        - name: Expense management
-          href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/retail/toc.json
-        - name: Inventory on-hand
-          href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/retail/toc.json
-        - name: Invoice approvals
-          href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/retail/toc.json
-        - name: My team
-          href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/retail/toc.json
-        - name: Project mobile applications overview
-          href: ../financials/project-management/project-mobile-application-overview.md?toc=/retail/toc.json
-        - name: Project time entry
-          href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
-        - name: Project timesheet
-          href: ../financials/project-management/project-timesheet.md?toc=/retail/toc.json
-        - name: Purchase order approval
-          href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/retail/toc.json
-        - name: Sales orders
-          href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/retail/toc.json
-        - name: Vendor collaboration
-          href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/retail/toc.json
-      - name: Publish mobile workspaces
-        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/retail/toc.json
-    - name: Office integration
+      - name: Available mobile workspaces
+        href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/retail/toc.json
+      - name: Company directory
+        href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/retail/toc.json
+      - name: Cost controlling
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/retail/toc.json
+      - name: Expense management
+        href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/retail/toc.json
+      - name: Inventory on-hand
+        href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/retail/toc.json
+      - name: Invoice approvals
+        href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/retail/toc.json
+      - name: My team
+        href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/retail/toc.json
+      - name: Project mobile applications overview
+        href: ../financials/project-management/project-mobile-application-overview.md?toc=/retail/toc.json
+      - name: Project time entry
+        href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+      - name: Project timesheet
+        href: ../financials/project-management/project-timesheet.md?toc=/retail/toc.json
+      - name: Purchase order approval
+        href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/retail/toc.json
+      - name: Sales orders
+        href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/retail/toc.json
+      - name: Vendor collaboration
+        href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/retail/toc.json
+    - name: Publish mobile workspaces
+      href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/retail/toc.json
+  - name: Office integration
+    items:
+    - name: Office integration overview
+      href: ../dev-itpro/office-integration/office-integration.md?toc=/retail/toc.json
+    - name: Office integration tutorial
+      href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/retail/toc.json
+    - name: Open entity data in Excel and update it using the Excel add-in
+      href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/retail/toc.json
+    - name: Create Open in Excel experiences
+      href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/retail/toc.json
+    - name: Add templates to the Open lines in Excel menu
+      href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/retail/toc.json
+    - name: Customize the Open in Microsoft Office menu
+      href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/retail/toc.json
+    - name: Configure and send email
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
+    - name: Develop email experiences
+      href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/retail/toc.json
+    - name: Troubleshoot the Office integration
+      href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/retail/toc.json
+  - name: Organization administration
+    items:
+    - name: Organization administration home page
+      href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/retail/toc.json
+    - name: Number sequences
       items:
-      - name: Office integration overview
-        href: ../dev-itpro/office-integration/office-integration.md?toc=/retail/toc.json
-      - name: Office integration tutorial
-        href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/retail/toc.json
-      - name: Open entity data in Excel and update it using the Excel add-in
-        href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/retail/toc.json
-      - name: Create Open in Excel experiences
-        href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/retail/toc.json
-      - name: Add templates to the Open lines in Excel menu
-        href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/retail/toc.json
-      - name: Customize the Open in Microsoft Office menu
-        href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/retail/toc.json
-      - name: Configure and send email
-        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
-      - name: Develop email experiences
-        href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/retail/toc.json
-      - name: Troubleshoot the Office integration
-        href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/retail/toc.json
-    - name: Organization administration
+      - name: Number sequences overview
+        href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/retail/toc.json
+      - name: Set up number sequences on an individual basis
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/retail/toc.json
+      - name: Set up number sequences using a wizard
+        href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/retail/toc.json
+    - name: Organizations and organizational hierarchies
       items:
-      - name: Organization administration home page
-        href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/retail/toc.json
-      - name: Number sequences
+      - name: Organizations and organizational hierarchies overview
+        href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/retail/toc.json
+      - name: Plan your organizational hierarchy
+        href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/retail/toc.json
+      - name: Create an organization hierarchy
+        href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/retail/toc.json
+      - name: Create legal entities
+        href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/retail/toc.json
+      - name: Create operating units
+        href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/retail/toc.json
+    - name: Global address book
+      items:
+      - name: Global address book overview
+        href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/retail/toc.json
+      - name: Plan for the global address book and other address books
+        href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/retail/toc.json
+      - name: Configure the global address book
+        href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/retail/toc.json
+      - name: Address books FAQ
+        href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/retail/toc.json
+      - name: Configure address books
+        href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/retail/toc.json
+    - name: Workflow system
+      items:
+      - name: Workflow system overview
+        href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/retail/toc.json
+      - name: Workflow system architecture
+        href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/retail/toc.json
+      - name: Workflow elements
+        href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/retail/toc.json
+      - name: Workflow actions
+        href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/retail/toc.json
+      - name: Create workflows
         items:
-        - name: Number sequences overview
-          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/retail/toc.json
-        - name: Set up number sequences on an individual basis
-          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/retail/toc.json
-        - name: Set up number sequences using a wizard
-          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/retail/toc.json
-      - name: Organizations and organizational hierarchies
+        - name: Create workflows overview
+          href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/retail/toc.json
+        - name: Configure workflow properties
+          href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/retail/toc.json
+        - name: Configure manual tasks
+          href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/retail/toc.json
+        - name: Configure automated tasks
+          href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/retail/toc.json
+        - name: Configure approval processes
+          href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/retail/toc.json
+        - name: Configure approval steps
+          href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/retail/toc.json
+        - name: Configure manual decisions
+          href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/retail/toc.json
+        - name: Configure conditional decisions
+          href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/retail/toc.json
+        - name: Configure parallel activities
+          href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/retail/toc.json
+        - name: Configure parallel branches
+          href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/retail/toc.json
+        - name: Configure line-item workflows
+          href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/retail/toc.json
+      - name: Configure the Workflow Message Processing batch job as critical
+        href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/retail/toc.json
+      - name: Delegate work items in a workflow
+        href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/retail/toc.json
+      - name: View workflow history
+        href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/retail/toc.json
+      - name: Configure the system to send workflow-related email to users
+        href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/retail/toc.json
+      - name: Workflow types
         items:
-        - name: Organizations and organizational hierarchies overview
-          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/retail/toc.json
-        - name: Plan your organizational hierarchy
-          href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/retail/toc.json
-        - name: Create an organization hierarchy
-          href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/retail/toc.json
-        - name: Create legal entities
-          href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/retail/toc.json
-        - name: Create operating units
-          href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/retail/toc.json
-      - name: Global address book
-        items:
-        - name: Global address book overview
-          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/retail/toc.json
-        - name: Plan for the global address book and other address books
-          href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/retail/toc.json
-        - name: Configure the global address book
-          href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/retail/toc.json
-        - name: Address books FAQ
-          href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/retail/toc.json
-        - name: Configure address books
-          href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/retail/toc.json
-      - name: Workflow system
-        items:
-        - name: Workflow system overview
-          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/retail/toc.json
-        - name: Workflow system architecture
-          href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/retail/toc.json
-        - name: Workflow elements
-          href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/retail/toc.json
-        - name: Workflow actions
-          href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/retail/toc.json
-        - name: Create workflows
-          items:
-          - name: Create workflows overview
-            href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/retail/toc.json
-          - name: Configure workflow properties
-            href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/retail/toc.json
-          - name: Configure manual tasks
-            href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/retail/toc.json
-          - name: Configure automated tasks
-            href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/retail/toc.json
-          - name: Configure approval processes
-            href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/retail/toc.json
-          - name: Configure approval steps
-            href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/retail/toc.json
-          - name: Configure manual decisions
-            href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/retail/toc.json
-          - name: Configure conditional decisions
-            href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/retail/toc.json
-          - name: Configure parallel activities
-            href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/retail/toc.json
-          - name: Configure parallel branches
-            href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/retail/toc.json
-          - name: Configure line-item workflows
-            href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/retail/toc.json
-        - name: Configure the Workflow Message Processing batch job as critical
-          href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/retail/toc.json
-        - name: Delegate work items in a workflow
-          href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/retail/toc.json
-        - name: View workflow history
-          href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/retail/toc.json
-        - name: Configure the system to send workflow-related email to users
-          href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/retail/toc.json
-        - name: Workflow types
-          items:
-          - name: Creating a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/retail/toc.json
-          - name: Workflow type checklist
-            href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/retail/toc.json
-          - name: Create a workflow category
-            href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/retail/toc.json
-          - name: Create a query for a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/retail/toc.json
-          - name: Create a new workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/retail/toc.json
-          - name: Create a workflow document class
-            href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/retail/toc.json
-          - name: Create a SubmitToWorkflow class
-            href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/retail/toc.json
-          - name: Associate a workflow document class with a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/retail/toc.json
-        - name: Workflow types report
-          href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/retail/toc.json
-        - name: Workflow FAQ
-          href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/retail/toc.json
-      - name: Alerts
-        items:
-        - name: Alerts overview
-          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/retail/toc.json
-        - name: Create alert rules
-          href: ../fin-and-ops/get-started/create-alerts.md?toc=/retail/toc.json
-        - name: Batch processing of alerts
-          href: ../fin-and-ops/get-started/alerts-managing.md?toc=/retail/toc.json
-        - name: Client alert notifications by email
-          href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/retail/toc.json
-      - name: Electronic signatures
-        items:
-        - name: Electronic signatures overview
-          href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/retail/toc.json
-        - name: Set up electronic signatures
-          href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/retail/toc.json
-      - name: Case management
-        items:
-        - name: Case management overview
-          href: ../fin-and-ops/organization-administration/cases.md?toc=/retail/toc.json
-        - name: Plan case security, processes, and categories
-          href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/retail/toc.json
-      - name: Record templates
-        items:
-        - name: Record templates overview
-          href: ../fin-and-ops/organization-administration/record-templates.md?toc=/retail/toc.json
-        - name: Create a record template
-          href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/retail/toc.json
-        - name: Use a record template to create a new record
-          href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/retail/toc.json
-      - name: Configure document management
-        href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/retail/toc.json
-      - name: Configure and send email
-        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
-      - name: Date/time data and time zones
-        href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/retail/toc.json
-- name: Retail development and administration
+        - name: Creating a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/retail/toc.json
+        - name: Workflow type checklist
+          href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/retail/toc.json
+        - name: Create a workflow category
+          href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/retail/toc.json
+        - name: Create a query for a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/retail/toc.json
+        - name: Create a new workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/retail/toc.json
+        - name: Create a workflow document class
+          href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/retail/toc.json
+        - name: Create a SubmitToWorkflow class
+          href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/retail/toc.json
+        - name: Associate a workflow document class with a workflow type
+          href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/retail/toc.json
+      - name: Workflow types report
+        href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/retail/toc.json
+      - name: Workflow FAQ
+        href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/retail/toc.json
+    - name: Alerts
+      items:
+      - name: Alerts overview
+        href: ../fin-and-ops/get-started/alerts-overview.md?toc=/retail/toc.json
+      - name: Create alert rules
+        href: ../fin-and-ops/get-started/create-alerts.md?toc=/retail/toc.json
+      - name: Batch processing of alerts
+        href: ../fin-and-ops/get-started/alerts-managing.md?toc=/retail/toc.json
+      - name: Client alert notifications by email
+        href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/retail/toc.json
+    - name: Electronic signatures
+      items:
+      - name: Electronic signatures overview
+        href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/retail/toc.json
+      - name: Set up electronic signatures
+        href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/retail/toc.json
+    - name: Case management
+      items:
+      - name: Case management overview
+        href: ../fin-and-ops/organization-administration/cases.md?toc=/retail/toc.json
+      - name: Plan case security, processes, and categories
+        href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/retail/toc.json
+    - name: Record templates
+      items:
+      - name: Record templates overview
+        href: ../fin-and-ops/organization-administration/record-templates.md?toc=/retail/toc.json
+      - name: Create a record template
+        href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/retail/toc.json
+      - name: Use a record template to create a new record
+        href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/retail/toc.json
+    - name: Configure document management
+      href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/retail/toc.json
+    - name: Configure and send email
+      href: ../fin-and-ops/organization-administration/configure-email.md?toc=/retail/toc.json
+    - name: Date/time data and time zones
+      href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/retail/toc.json
+  - name: Retail development and administration
     items:
     - name: Retail development and administration overview
       href: dev-itpro/dev-retail-home-page.md
-    - name: Retail SDK architecture
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
-    - name: Upcoming changes in the Retail SDK
-      href: dev-itpro/UpcomingSDKChanges.md
-    - name: Merge the build systems for Retail and Finance and Operations
-      href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-    - name: Retail SDK extensibility samples
-      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-    - name: Create retail deployable packages
-      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-    - name: Retail SDK samples
-      href: dev-itpro/retail-sdk/retail-sdk-samples.md
-    - name: Extension points for packing slips
-      href: dev-itpro/extensions-shipping-carrier-integration.md
-    - name: Channel database extensions
-      href: dev-itpro/channel-db-extensions.md
-    - name: Enable custom CDX synchronization via extension
-      href: dev-itpro/cdx-extensibility.md
-    - name: Add custom fields to the POS Totals panel
-      href: dev-itpro/custom-field-pos-totals.md
-    - name: Define and set order attributes
-      href: dev-itpro/order-attributes.md
-    - name: Customer attributes
-      href: dev-itpro/customer-attributes.md
-    - name: Retail Typescript and C# proxies
-      href: dev-itpro/typescript-proxy-retail-pos.md
-    - name: Run the Retail POS samples
-      href: dev-itpro/pos-run-samples.md
-    - name: Extend POS views to add custom columns and app bar buttons
-      href: dev-itpro/pos-view-extension.md
-    - name: Add custom controls to Retail Modern POS transaction pages
-      href: dev-itpro/pos-custom-transaction.md
-    - name: Add custom columns to a POS transaction grid
-      href: dev-itpro/pos-custom-transaction-column.md
-    - name: Call POS APIs or operations from POS extensions
-      href: dev-itpro/pos-api-extension.md
-    - name: Retail Modern POS triggers and printing
-      href: dev-itpro/pos-trigger-printing.md
-    - name: Add custom controls to non-screen designer-based POS views
-      href: dev-itpro/pos-control-non-screen.md
-    - name: Development in cloud-hosted dev environments without admin access
-      href: dev-itpro/cloud-dev-box.md
-    - name: Show custom notifications in POS
-      href: dev-itpro/extend-pos-notification.md
-    - name: Sign MPOS with code signing certificate
-      href: dev-itpro/pos-app-signing-certificate.md
-  - name: Commerce runtime
-    items:
     - name: Architecture
       items:
       - name: Retail components
@@ -1053,7 +1005,7 @@
       - name: Payment data use
         href: payment-connector-data-fields.md
       - name: Enable duplicate payment protection for payment connector
-        href: dev-itpro/duplicate-payment-protection.md
+        href: dev-itpro/duplicate-payment-protection.md  - name: Retail SDK architecture
     - name: Retail SDK
       items:
       - name: Retail SDK architecture
@@ -1098,6 +1050,10 @@
         href: dev-itpro/pos-control-non-screen.md
       - name: Development in cloud-hosted dev environments without admin access
         href: dev-itpro/cloud-dev-box.md
+      - name: Show custom notifications in POS
+        href: dev-itpro/extend-pos-notification.md
+      - name: Sign MPOS with code signing certificate
+        href: dev-itpro/pos-app-signing-certificate.md
     - name: Commerce runtime
       items:
       - name: Loyalty extension
