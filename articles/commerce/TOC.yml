@@ -30,6 +30,8 @@
   items:
   - name: Add a privacy policy page
     href: add-privacy-page.md
+  - name: Delete personal information  
+    href: delete-personal-information.md
 - name: Add and manage content on your site
   items:
   - name: Pages
