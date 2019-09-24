@@ -5119,8 +5119,5 @@
         href: ../supply-chain/transportation/tasks/set-up-location-directive-purchase-order-put-away.md
       - name: Set up a work template for purchase orders
         href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
-- name: Development & administration for Finance and Operations
-  href: ../dev-itpro/toc.yml
-- name: Dynamics 365 for Retail
-  href: ../retail/toc.yml
+
 
