@@ -43,7 +43,7 @@ A header module is automatically optimized for the device that the site is being
 
 ## Properties of a header
 
-Like generic containers, a header module supports the heading and width property.
+Like generic containers, a header module supports the **heading** and **width** properties.
 
 A header module has multiple slots. For example, there are slots for an informational message, navigation menu, logo, search bar, cart icon, wish list icon, and account information. Each slot supports a specific set of modules.
 
@@ -72,6 +72,6 @@ To create a header module, follow these steps.
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
-1. On the default page, add the header fragment to the header in the main slot.
-2. Save the template. 
-3. Check in the template, and publish it.
+1. On the default page, add the page fragment containing the header module to the header in the main slot.
+1. Save the template. 
+1. Check in the template, and publish it.
