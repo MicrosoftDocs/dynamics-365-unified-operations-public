@@ -3,7 +3,7 @@
 
 title: Delete personal information
 description: This topic discusses the guidelines that are available to handle data subject requests per General Data Protection Regulation (GDPR) standards in Microsoft Dynamics 365 e-Commerce.
-author: brshoo
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
