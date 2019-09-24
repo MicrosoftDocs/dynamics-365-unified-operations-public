@@ -30,6 +30,68 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
+## Gantt chart to view master planning progress
+
+From **View master planning progress,** it is possible to view details from historical master planning runs presented as a Gantt chart. This is useful to understand the time spend on the various phases of master planning. For a current active planning job **View master planning progress** can be used to track progress and view the estimated remaining time.
+
+### Get started
+
+To use this feature, you need to enable the following feature flag. This feature is available in version 10.0.7 and later.
+
+1. Go to **Feature management**.
+2. Select **Master planning progress visualization** in the list. If it's not displayed under **New**, select **Not enabled** or **All**.
+3. Select **Enable now** or use **Schedule** to pick a time to enable the feature.
+
+You can access **View master planning progress** to view both historical planning jobs and active planning jobs.
+
+Historical planning jobs:
+
+- Master plans - **Master planning > Setup > Plans > Master plans > History > Inquiries > View progress**
+- Master planning workspace - **Master planning > Workspaces > Master planning tile: History > Inquiries > View progress**
+
+Active planning jobs (only available when a planning job is processing):
+
+- Master planning workspace - **Master planning > Workspaces > Unfinished planning process > Inquiries > View progress**
+- Master planning workspace: **Master planning > Workspaces > Master planning tile: View progress > Inquiries > View progress**
+
+### Analyzing a master planning job
+
+In the Gantt chart, each of the following planning processes can be expanded to show additional details about the time spend.
+
+- Initializing
+- Deleting and inserting data
+- Coverage planning
+- Delays
+- Action messages
+- Finalization
+- Auto-firming
+
+This tool is useful if you want to view the impact of having **Action messages** enabled.
+
+**Navigating in the Gantt chart**
+
+- Click a plus sign **(+)** in the tree view, to expand the selected group and show the details.
+- Click a minus sign **(-)** in the tree view to collapse the selected group.
+- Keyboard navigation is possible with arrows. USe the up and down arrows to navigate rows. Use the right and left arrows to expand and collapse groups.
+- **Expand all** and **Collapse all** allows you to open or close all levels in the Gantt chart.
+- Hover over a task (lowest level in the Gantt) to see the related process time.
+
+**Show additional master planning run**
+
+By selecting a master planning job in the drop-down menu, you can view an additional master planning run in the Gantt chart and compare the two jobs.
+
+### Visualize progress
+
+If you view a master planning job that is currently running, the progress is shown with colors in the Gantt. The following colors apply to the blue theme, they will be different for other color themes.
+
+- Dark blue - Completed planning tasks.
+- Orange - Current task in progress.
+- Light blue - Estimate for remaining tasks.
+
+The color is only indicated on the lowest level in the Gantt chart. Use **Expand all** to view all tasks in the master planning job. The estimate of remaining tasks is done based on historical master planning jobs.
+
+## Run master planning with Track processing time enabled
+
 The production planner wants to see if a master planning run is in progress. Use the demo data company USMF to complete this procedure.
 
 
