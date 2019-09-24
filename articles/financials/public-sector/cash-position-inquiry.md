@@ -26,7 +26,7 @@ Microsoft® Dynamics® 365 for Finance and Operations automatically calculates a
 
 6. In the Column six and Column seven groups: 
 - Specify a label for column six (for example, "General budget reservations" or "Encunbrances") and column seven (for example, "Pre-encumbrances").
-- For both columns, specify account numbers for the debit and credit main accounts, debit-only main accounts, and credit-only main accounts.
+- For both columns, specify account numbers for the **Debit and credit main accounts**, **Debit-only main accounts**, and **Credit-only main accounts**.
 7. In the Column eight group: 
 - Specify a column label (for example, "Unencumbered balance"). 
 
