@@ -2781,3 +2781,55 @@
         href: ../fin-and-ops/hr/localizations/noam-usa-payroll-data-updates.md
       - name: Standard payroll reports
         href: ../fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports.md
+  - name: Financials development
+    items:
+    - name: Financials development home page
+      href: ../dev-itpro/financial/financial-dev-home-page.md
+    - name: Financial dimension framework
+      items:
+      - name: Ledger account combinations
+        href: ../dev-itpro/financial/LedgerAccountCombinations.md
+      - name: Default financial dimensions
+        href: ../dev-itpro/financial/dimension-defaulting.md
+      - name: Support for different dimension patterns
+        href: ../dev-itpro/financial/dimensions.md
+      - name: Add dimensions to Excel templates
+        href: ../dev-itpro/financial/dimensions-overview.md
+      - name: Support for Dimension Entry controls on dialogs
+        href: ../dev-itpro/financial/dimension-entry-control-dialog-support.md
+      - name: Migrate default dimensions controls to Dimension Entry controls
+        href: ../dev-itpro/financial/dimension-entry-control-migration.md
+      - name: Uptake of Dimension Entry controls
+        href: ../dev-itpro/financial/dimension-entry-control-uptake.md
+      - name: Dimension Expression Builder subpattern
+        href: ../dev-itpro/financial/dimension-expression-builder-subpattern.md
+      - name: Financial dimension configuration
+        href: ../dev-itpro/financial/financial-dimension-configuration-integration.md
+      - name: Financial dimension activation
+        href: ../dev-itpro/financial/activate-financial-dimensions.md
+      - name: Financial dimensions and main accounts in right-to-left languages
+        href: ../dev-itpro/financial/financial-dimensions-main-accounts-right-left-language.md
+      - name: Make backing tables consumable as financial dimensions
+        href: ../dev-itpro/financial/dimensionable-entities.md
+      - name: Add lookup values for financial dimensions to Excel templates
+        href: ../dev-itpro/financial/add-dimensions-excel-templates.md
+    - name: Segmented entry control
+      items: 
+      - name: Migrate Segmented Entry controls
+        href: ../dev-itpro/financial/segmented-entry-control-conversion.md
+      - name: Support for Segmented Entry controls on dialogs
+        href: ../dev-itpro/financial/segmented-entry-control-dialog-support.md
+      - name: Design-time metadata for Segmented Entry controls
+        href: ../dev-itpro/financial/segmented-entry-control-metadata-specification.md
+      - name: Migration guidance for Segmented Entry controls
+        href: ../dev-itpro/financial/segmented-entry-control-migration-guidance.md
+      - name: Parm methods for Segmented Entry controls
+        href: ../dev-itpro/financial/segmented-entry-control-parm-method-specification.md
+    - name: Currency Exchange rate providers
+      items: 
+      - name: Create exchange rate providers
+        href: ../dev-itpro/financial/create-exchange-rate-providers.md
+      - name: Create exchange rate providers in Finance and Operations version 8.0
+        href: ../dev-itpro/financial/create-exchange-rate-8.md
+    - name: Settle transactions using CustTrans::settleTransaction
+      href: ../dev-itpro/financial/settletransact-obsolete.md
