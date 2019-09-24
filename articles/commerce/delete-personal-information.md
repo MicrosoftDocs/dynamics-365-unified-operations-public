@@ -2,7 +2,7 @@
 # required metadata
 
 title: Delete personal information
-description: This topic discusses the guidelines that are available to handle data subject requests per General Data Protection Regulation (GDPR) standards in Microsoft Dynamics 365 e-Commerce.
+description: This topic discusses the guidelines that are available to handle data subject requests per General Data Protection Regulation (GDPR) standards in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the guidelines that are available to handle data subject rights (DSR) requests per General Data Protection Regulation (GDPR) standards in Microsoft Dynamics 365 e-Commerce. To better understand this topic, see the [General Data Protection Regulation overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide) topic for Dynamics 365 for Finance and Operations.
+This topic discusses the guidelines that are available to handle data subject rights (DSR) requests per General Data Protection Regulation (GDPR) standards in Microsoft Dynamics 365 Commerce. To better understand this topic, see the [General Data Protection Regulation overview](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide) topic for Dynamics 365 for Finance and Operations apps.
 
 ## Overview
 
@@ -49,7 +49,7 @@ By default, Dynamics 365 Commerce functionality uses internal data inventory and
 
 ## Respond to employee DSR requests
 
-In addition to using the functionality of the Finance and Operations [Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report), Dynamics 365 Commerce stores personal information in the form of the history logs for authoring actions. These actions include Checkout and Check In, Publish, and Save. For each action item that is logged in history, the user's alias is shown.
+In addition to using the functionality of the [Person search report](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#the-person-search-report), Dynamics 365 Commerce stores personal information in the form of the history logs for authoring actions. These actions include Checkout and Check In, Publish, and Save. For each action item that is logged in history, the user's alias is shown.
 
 In Dynamics 365 Commerce, when a content item (for example, a page, template, or video) is selected, users can select the **Show History** button in the menu above the item.
 
