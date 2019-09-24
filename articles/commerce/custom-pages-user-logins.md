@@ -50,7 +50,7 @@ Once you have set up your AAD B2C tenant and associated it with your Commerce en
 
 The "Sign up and sign in," "Profile editing," and "Password reset" user login flows can then be configured as follows.
 
-### Configure the "Sign up and sign in" user login flow
+### Configure the "Sign up and sign in" policy
 
 To configure the "Sign up and sign in" user login flow, do the following.
 
@@ -77,7 +77,7 @@ The following image show the policy **Properties** screen.
 
 We'll come back to this policy once we have built out the custom pages to finish the policy setup. Close out of the policy to return to the **User Flows (policies)** page of the Azure portal.
 
-### Configure the "Profile editing" user login flow 
+### Configure the "Profile editing" policy
 
 To configure the "Profile editing" user login flow, do the following.
 
@@ -93,7 +93,7 @@ To configure the "Profile editing" user login flow, do the following.
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy to return to the **User Flows (policies)** page in the Azure portal.
 
-### Configure the "Password reset" user login flow
+### Configure the "Password reset" policy
 
 To configure the "Password reset" user login flow, do the following.
 
@@ -109,7 +109,6 @@ To configure the "Password reset" user login flow, do the following.
 The following image shows the **Preview** section of the **Select a user flow type** screen.   
 
  ![Password Reset v1.1 menu](./media/B2C_ForgetPassword_Menu.png)
-
 The following image shows the **Application claims** screen with the correct claims selected.
 
 ![Password Reset Claims](./media/B2C_ForgetPassword_Attributes.png)
@@ -136,13 +135,15 @@ When building the pages:
 - Once published, collect the URLs to use for the AAD B2C policy configurations. Each URL will be used with a `?preloadscripts=true` suffix added.
 
 >[!IMPORTANT]
->- Do not re-use Universal Headers and Footers with relative links.  As these pages will be hosted in the AAD B2C domain when in use, only direct URLs should be used for any links.
+>Do not re-use Universal Headers and Footers with relative links.  As these pages will be hosted in the AAD B2C domain when in use, only direct URLs should be used for any links.
 
 ## Configure AAD B2C policies with custom page information 
 
 Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (policies)" menu.
 
-#### Sign up and sign in
+### Update the "Sign up and sign in" policy with custom page information
+
+To update the "Sign up and sign in" policy with custom page information, do the following.
 
 - Select your earlier built **Sign in and sign up** policy. 
 - Navigate to the 'Page layouts' section. 
@@ -162,7 +163,23 @@ The following image show the (lorem ipsum).
 
 ![Sign Up Page Policy Configuration](./media/B2C_SignUp_PageURLConfig.png)
 
-#### Password Reset
+### Update the "Profile editing" policy with custom page information
+
+To update the "Profile editing" policy with custom page information, do the following.
+
+- Select your earlier built **Profile Editing** policy. 
+- Navigate to the 'Page layouts' section. 
+- Select the "Profile edit page" Layout
+  - Set "Use custom page content" to "Yes"
+  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/profile-edit?preloadscripts=true")
+  - Set the Page Layout Version (Preview) to 1.2.0
+  - In the User attributes section:
+    - Set Given Name, and Surname fields for "Requires Verification" to "No"
+    - Set Given Name and Surname fields for "Optional" to "No"
+    
+### Update the "Password reset" policy with custom page information
+
+To update the "Password reset" policy with custom page information, do the following.
 
 - Select your earlier built **Password Reset** policy. 
 - Navigate to the 'Page layouts' section. 
@@ -174,18 +191,6 @@ The following image show the (lorem ipsum).
   - Set "Use custom page content" to "Yes"
   - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/password-reset-verification?preloadscripts=true")
   - Set the Page Layout Version (Preview) to 1.2.0
-
-#### Profile Editing
-
-- Select your earlier built **Profile Editing** policy. 
-- Navigate to the 'Page layouts' section. 
-- Select the "Profile edit page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/profile-edit?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
-  - In the User attributes section:
-    - Set Given Name, and Surname fields for "Requires Verification" to "No"
-    - Set Given Name and Surname fields for "Optional" to "No"
 
 The login modules as seen in the Starter Kit have default strings set for the labels and descriptions. These items can be customized in the SDK by updating the values in the module's global.json.
 
