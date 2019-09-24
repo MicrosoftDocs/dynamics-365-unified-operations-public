@@ -2,7 +2,7 @@
 # required metadata
 
 title: Default category landing page and search results page
-description: This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
+description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: asharchw
 manager: annbe
 ms.date: 10/01/2019
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Default category landing page and search results page
 
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 This topic provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 
 ## Default category landing page
@@ -43,7 +46,7 @@ At the top of the page is a header that shows all the product categories and oth
 The following components are essential for a category:
 
 - **Product placement tiles** show the products that the merchandising manager has defined in a category as part of the configuration of the navigation hierarchy.
-- **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
+- **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the metadata related to channel categories and product attributes.
 - **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
     - Price – low to high
