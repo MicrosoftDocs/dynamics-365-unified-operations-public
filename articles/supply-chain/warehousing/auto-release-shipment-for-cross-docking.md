@@ -1,8 +1,40 @@
+---
+# required metadata
+
+title: Auto release shipment for cross docking 
+description: This topic describes a cross docking strategy that allows automatical release of a demand order to the warehouse when production order supplying the demand quantity is reported as finished, so that the quantity is moved from the production output location directly to outbound location.
+author: omulvad
+manager: AnnBe
+ms.date: 9/24/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: WHSCrossDockingTemplate 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: omulvad
+ms.search.validFrom: 2019-10-1
+ms.dyn365.ops.version: 10.0.6
+
+---
+
 # Auto release shipment for cross docking
 
 This topic describes a cross docking strategy that allows you to automatically release a demand order to the warehouse, and to move the quantity required for its fulfillment from the production output location directly to outbound location when production order supplying the demand quantity is reported as finished.
 
-Cross docking is a warehouse handling flow where quantity required to fulfil an outbound order is directed towards the order&#39;s outbound dock or staging area from the location of the inbound order (purchase, transfer or production) receipt. While the Advanced cross-docking feature [link to the article] supports all supply and demand orders, and requires the outbound demand to be released by the time cross-dock opportunity is identified, the Auto-release shipment feature:
+Cross docking is a warehouse handling flow where quantity required to fulfil an outbound order is directed towards the order&#39;s outbound dock or staging area from the location of the inbound order (purchase, transfer or production) receipt. While the Advanced cross-docking feature supports all supply and demand orders, and requires the outbound demand to be released by the time cross-dock opportunity is identified, the Auto-release shipment feature:
 
 - supports only production order as supply, and sales and transfer orders as demand
 - does not require the demand order to have been released to warehouse prior to registration of the supply receipt, i.e. report as finished of production order, for the cross-docking work operation to commence
@@ -57,7 +89,7 @@ For this scenario, you must have demo data installed, and you must use the **USM
 6. In the **Warehouse** field, enter the warehouse number where you want to set up cross docking process. For this example, select &#39;51&#39;.
 
   > [!Note] 
-   > As soon as you select &#39;At supply receipt&#39; as a demand release policy for the template, all other fields on the form become disabled. Likewise, you cannot define any supply sources. This is because the Cross docking with the automatic shipment release feature only supports production orders as supply source and requires marking to exist between sales and production orders. The fields on the **Planning** tab and **Supply sources** tab are open for edit if you select ´Before supply receipt` as a demand release policy. Learn more about the Advanced cross-docking feature [insert link].
+   > As soon as you select &#39;At supply receipt&#39; as a demand release policy for the template, all other fields on the form become disabled. Likewise, you cannot define any supply sources. This is because the Cross docking with the automatic shipment release feature only supports production orders as supply source and requires marking to exist between sales and production orders. The fields on the **Planning** tab and **Supply sources** tab are open for edit if you select ´Before supply receipt` as a demand release policy. Learn more about the Advanced cross-docking feature.
 
 ### Work classes
 
