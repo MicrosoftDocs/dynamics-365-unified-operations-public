@@ -67,7 +67,9 @@
     - name: Create a header module
       href: author-header-module.md
     - name: Create a footer module
-      href: author-footer-module.md 
+      href: author-footer-module.md
+    - name: Add a video player module
+      href: add-video-player.md
   - name: Error handling
     items:
     - name: Build custom response pages for 4xx/5xx status code errors
