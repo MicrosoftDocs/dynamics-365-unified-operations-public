@@ -64,8 +64,8 @@ To create a template, follow these steps.
     For example, the **HTML Head** slot might require a module, such as a **Default External Script** module.
 
 1. In the **Body** slot, add a **Default Page** module.
-1. In the **Default Page** module, in the **Main Slot**, add a **Content Rich Block** module.
-1. In the **Content Rich Block** module, add a **Content rich block item**.
+1. In the **Default Page** module, in the **Main** slot, add a **Content Rich Block** module.
+1. In the **Content Rich Block** module, add a **Content rich block item** module.
 1. Check the template in, and publish it.
 
 ### Build a privacy policy page
@@ -75,8 +75,8 @@ To build a privacy policy page, follow these steps.
 1. Go to **Pages \> New Page**.
 1. Select the template for the privacy policy page.
 1. Enter a page name and URL, and then select **OK**. 
-1. In the **Main Slot** of the page, add a **Content Rich Block** module.
-1. In the **Content Rich Block** module, add a **Content rich block item**.
+1. In the **Main** slot of the page, add a **Content Rich Block** module.
+1. In the **Content Rich Block** module, add a **Content rich block item** module.
 1. In the properties pane for the **Content Rich Block** module, select **Add Data Source**, and then select **Rich Text Content**.
 1. In the rich text editor, enter the content for the privacy policy page. Expand the rich text editor to full screen mode as you require.
 1. When you've finished entering content, select **Preview** to preview the page in the web browser.
@@ -95,8 +95,8 @@ You can add a link to the privacy policy page to a fragment. In this way, you ca
 To add a link to a footer fragment, follow these steps.
 
 1. Go to **Fragments \> New Page Fragment**.
-1. Select the **Footer** module, and then, under **Page Fragment Name**, enter a name.
-1. Under the **sub footer** slot, add a sub footer module.
+1. Select the **Footer** module, and then enter a name in the **Page Fragment Name** field.
+1. In the **sub footer** slot, add a sub footer module.
 1. In the properties pane, select **Add Data Source**, and then select **Links**.
 1. Enter the link text and the URL of the privacy policy page.
 
