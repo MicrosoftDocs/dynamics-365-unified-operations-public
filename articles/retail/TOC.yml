@@ -843,57 +843,9 @@
       - name: Date/time data and time zones
         href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/retail/toc.json
 - name: Retail development and administration
-    items:
-    - name: Retail development and administration overview
-      href: dev-itpro/dev-retail-home-page.md
-    - name: Retail SDK architecture
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
-    - name: Upcoming changes in the Retail SDK
-      href: dev-itpro/UpcomingSDKChanges.md
-    - name: Merge the build systems for Retail and Finance and Operations
-      href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-    - name: Retail SDK extensibility samples
-      href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-    - name: Create retail deployable packages
-      href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-    - name: Retail SDK samples
-      href: dev-itpro/retail-sdk/retail-sdk-samples.md
-    - name: Extension points for packing slips
-      href: dev-itpro/extensions-shipping-carrier-integration.md
-    - name: Channel database extensions
-      href: dev-itpro/channel-db-extensions.md
-    - name: Enable custom CDX synchronization via extension
-      href: dev-itpro/cdx-extensibility.md
-    - name: Add custom fields to the POS Totals panel
-      href: dev-itpro/custom-field-pos-totals.md
-    - name: Define and set order attributes
-      href: dev-itpro/order-attributes.md
-    - name: Customer attributes
-      href: dev-itpro/customer-attributes.md
-    - name: Retail Typescript and C# proxies
-      href: dev-itpro/typescript-proxy-retail-pos.md
-    - name: Run the Retail POS samples
-      href: dev-itpro/pos-run-samples.md
-    - name: Extend POS views to add custom columns and app bar buttons
-      href: dev-itpro/pos-view-extension.md
-    - name: Add custom controls to Retail Modern POS transaction pages
-      href: dev-itpro/pos-custom-transaction.md
-    - name: Add custom columns to a POS transaction grid
-      href: dev-itpro/pos-custom-transaction-column.md
-    - name: Call POS APIs or operations from POS extensions
-      href: dev-itpro/pos-api-extension.md
-    - name: Retail Modern POS triggers and printing
-      href: dev-itpro/pos-trigger-printing.md
-    - name: Add custom controls to non-screen designer-based POS views
-      href: dev-itpro/pos-control-non-screen.md
-    - name: Development in cloud-hosted dev environments without admin access
-      href: dev-itpro/cloud-dev-box.md
-    - name: Show custom notifications in POS
-      href: dev-itpro/extend-pos-notification.md
-    - name: Sign MPOS with code signing certificate
-      href: dev-itpro/pos-app-signing-certificate.md
-  - name: Commerce runtime
-    items:
+  items:
+  - name: Retail development and administration overview
+    href: dev-itpro/dev-retail-home-page.md
     - name: Architecture
       items:
       - name: Retail components
@@ -1053,7 +1005,7 @@
       - name: Payment data use
         href: payment-connector-data-fields.md
       - name: Enable duplicate payment protection for payment connector
-        href: dev-itpro/duplicate-payment-protection.md
+        href: dev-itpro/duplicate-payment-protection.md  - name: Retail SDK architecture
     - name: Retail SDK
       items:
       - name: Retail SDK architecture
@@ -1098,6 +1050,10 @@
         href: dev-itpro/pos-control-non-screen.md
       - name: Development in cloud-hosted dev environments without admin access
         href: dev-itpro/cloud-dev-box.md
+      - name: Show custom notifications in POS
+        href: dev-itpro/extend-pos-notification.md
+      - name: Sign MPOS with code signing certificate
+        href: dev-itpro/pos-app-signing-certificate.md
     - name: Commerce runtime
       items:
       - name: Loyalty extension
