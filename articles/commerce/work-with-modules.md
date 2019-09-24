@@ -3,7 +3,7 @@
 
 title: Work with modules
 description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
-author: niholman
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
