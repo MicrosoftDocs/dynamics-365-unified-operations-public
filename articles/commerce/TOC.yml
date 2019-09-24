@@ -46,10 +46,16 @@
       href: customize-site-navigation.md
     - name: Create a page URL
       href: create-page-URL.md
-- name: Error handling
-  items:
-  - name: Build custom response pages for 4xx/5xx status code errors
-    href: build-pages-400-500-errors.md
+  - name: Starter kit
+    items: 
+    - name: Add an alert module to a page 
+      href: add-alert.md
+    - name: Add a carousel module to a page
+      href: add-carousel.md
+  - name: Error handling
+    items:
+    - name: Build custom response pages for 4xx/5xx status code errors
+      href: build-pages-400-500-errors.md
 - name: Ratings and reviews
   items:
   - name: Manage ratings and reviews
