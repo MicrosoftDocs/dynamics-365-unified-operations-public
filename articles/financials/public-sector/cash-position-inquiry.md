@@ -29,6 +29,7 @@ Microsoft® Dynamics® 365 for Finance and Operations automatically calculates a
 - For both columns, specify account numbers for the debit and credit main accounts, debit-only main accounts, and credit-only main accounts.
 7. In the Column eight group: 
 - Specify a column label (for example, "Unencumbered balance"). 
+
 [Note!]
 - Microsoft® Dynamics® 365 for Finance and Operations automatically calculates a result from the accounts you specified for columns five through seven: Ending balance minus Encumbrances, minus Pre-encumbrances.
 
