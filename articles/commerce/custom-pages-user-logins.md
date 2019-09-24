@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up custom pages for user logins
-description: This topic describes how to build custom pages for user logins in Dynamics 365 Commerce.
+description: This topic describes how to build custom pages in Dynamics 365 Commerce that handle customized Azure Active Directory (AAD) business-to-consumer (B2C) tenant user logins.
 author: brianshook
 manager: annbe
 ms.date: 10/01/2019
@@ -34,15 +34,13 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to build custom pages for user logins in Dynamics 365 Commerce.
+This topic describes how to build custom pages in Dynamics 365 Commerce that handle customized Azure Active Directory (AAD) business-to-consumer (B2C) tenant user logins.
 
 ## Overview
 
-This topic describes how to build custom pages in Dynamics 365 Commerce to use for customized user Logins with your Azure Active Directory (AAD) business-to-consumer (B2C) tenant. 
+To use custom pages authored in Commerce to handle user login flows, you must set up the AAD policies that will be referenced in the Commerce environment. You can configure the "Sign in and sign up," "Password reset," and "Edit profile" AAD B2C policies using the AAD B2C application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning that is done using Microsoft Lifecycle Services (LCS). 
 
-## Get started
-
-pTo use custom pages authored in Commerce to handle user login flows, you will need to set up the AAD policies that will be referenced in the Commerce environment. You can set up the 'Sign in and sign up', 'Password Reset', and 'Edit Profile' AAD B2C policies using the AAD B2C application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning in Lifecycle Services (LCS) for your Commerce environment. You can build out a custom page in Commerce using the sign in, password reset, or edit profile modules. These published page URLs are then referenced in your AAD B2C policy configurations in the Azure Portal.
+The custom Commerce pages can be built using the sign in, password reset, or edit profile modules. The published page URLs for these custom pages should then be referenced in AAD B2C policy configurations in the Azure portal.
 
 ## Set up B2C policies
 
@@ -183,6 +181,8 @@ Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (polici
     - Set Email Address, Given Name, and Surname fields for "Requires Verification" to "No"
     - Set Given Name and Surname fields for "Optional" to "No"
 
+The following image show the (lorem ipsum).  
+
 ![Sign Up Page Policy Configuration](./media/B2C_SignUp_PageURLConfig.png)
 
 #### Password Reset
@@ -214,8 +214,11 @@ The login modules as seen in the Starter Kit have default strings set for the la
 
 For example, the text for the forget password link showing as "Forgotten password?" can be edited in the Module's global.json of the starter kit to "Forgot Password?".
 
+The following image show the (lorem ipsum).  
+
 ![Sign Up Module Strings](./media/B2C_SignUp_ModuleFace.png)
 
+The following image show the (lorem ipsum).  
 
 ![SDK Global JSON editing string labels for modules](./media/B2C_CustomizingStringsForModule.png)
 
