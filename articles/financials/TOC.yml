@@ -2835,3 +2835,5 @@
           href: ../dev-itpro/financial/create-exchange-rate-8.md
       - name: Settle transactions using CustTrans::settleTransaction
         href: ../dev-itpro/financial/settletransact-obsolete.md
+  - name: Finance and Operations apps development and administration 
+    href: ../dev-itpro/toc.yml
