@@ -1005,7 +1005,7 @@
       - name: Payment data use
         href: payment-connector-data-fields.md
       - name: Enable duplicate payment protection for payment connector
-        href: dev-itpro/duplicate-payment-protection.md  - name: Retail SDK architecture
+        href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
       items:
       - name: Retail SDK architecture
