@@ -3,271 +3,271 @@
 - name: Get started
   items:
   - name: Before you buy
-    href: ../fin-and-ops/get-started/before-you-buy.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Sign up for preview subscription
-    href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: One Version service updates 
     items:
     - name: One Version service updates overview
-      href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: One Version service updates FAQ
-      href: ../fin-and-ops/get-started/one-version.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Software lifecycle policy - Cloud
-      href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Software lifecycle policy - On-premises
-      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Service update availability
-      href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Apply updates to cloud environments
-      href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure service updates
-      href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Pause service updates
-      href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Get notified about service updates
-      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Data task automation
-      href: ../dev-itpro/data-entities/data-task-automation.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Delivering ISV solutions using One Version
-      href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create and automate user acceptance tests
-      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/supply-chain/toc.json   
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/supply-chain/toc.json   
   - name: Deploy a demo environment
-    href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Deployment considerations
     items:
     - name: Deployment options
-      href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Cloud deployment
-      href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: System requirements for cloud deployments
-      href: ../fin-and-ops/get-started/system-requirements.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: On-premises deployment
-      href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: System requirements for on-premises deployments
-      href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Buy Finance + Operations (on-premises)
-      href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure Warehousing for on-premises deployments
-      href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Finance and Operations operated by 21Vianet in China
-      href: ../dev-itpro/deployment/china-local-deployment.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Finance and Operations in France
-      href: ../dev-itpro/deployment/france-local-deployment.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: What's new or changed
     items:
     - name: What's new or changed home page
       href: ../fin-and-ops/get-started/whats-new-changed.md
     - name: Preview features in Finance and Operations 10.0.6 (November 2019)
-      href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Finance and Operations 10.0.5 (October 2019)
-      href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Finance and Operations 10.0.4 (July 2019)
-      href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Finance and Operations, Enterprise edition 7.3
-      href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Removed or deprecated features
-      href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: AX 2012 features that were postponed
-      href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Features not implemented in on-premises deployments
-      href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-      href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Documentation resources
     items:
     - name: Help system
-      href: ../fin-and-ops/get-started/help-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Connect the Help system
-      href: ../fin-and-ops/get-started/help-connect.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Connect a custom help site
-      href: ../fin-and-ops/get-started/help-custom.md?toc=/supply-chain/toc.json    
+      href: ../fin-and-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/supply-chain/toc.json    
     - name: View and export field descriptions
-      href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Task Recorder
-      href: ../dev-itpro/user-interface/task-recorder.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create documentation or training with Task Recorder
-      href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Videos
-      href: ../fin-and-ops/get-started/videos.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/videos.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Glossary
-      href: ../fin-and-ops/get-started/glossary.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Learning catalog
     items: 
     - name: Learning catalog home page
-      href: ../fin-and-ops/get-started/learning-catalog.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Business decision makers
-      href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Business users
-      href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Implementation project managers
-      href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Administrators
-      href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Developers
-      href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Partner sales and marketing
-      href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Functional consultants
-      href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Solution architects
-      href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Explore the user interface
     items:
     - name: User interface elements
-      href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Accessibility features
-      href: ../fin-and-ops/get-started/accessibility-features.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Feature management overview
-      href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Client FAQ
-      href: ../fin-and-ops/get-started/client-faq.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Action search
-      href: ../fin-and-ops/get-started/action-search.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Advanced filtering and query syntax
-      href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure and filter workspaces
-      href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Show pages side by side by using the Open in new window feature
-      href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Keyboard shortcuts
-      href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Change the banners or logo images for legal entities
-      href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Navigation search
-      href: ../fin-and-ops/get-started/navigation-search.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Personalize the user experience
-      href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Saved views
-      href: ../fin-and-ops/get-started/saved-views.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create and work with custom fields
-      href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Embed PowerApps apps
-      href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Find information by using lookups
-      href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Change the date for a session
-      href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Set a user's preferred time zone
-      href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Understand Lifecycle Services
-      href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Implementation lifecycle management
     items:
     - name: Implementation lifecycle management home page
-      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Architecture for Finance and Operations apps
-      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Microsoft FastTrack for Finance and Operations
-      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Onboard an implementation project
-      href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Environment planning
-      href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/supply-chain/toc.json   
+      href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json   
     - name: Prepare for go-live
-      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Go-live FAQ
-      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Submit a service request
-      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-      href: ../fin-and-ops/get-started/subscription-overview.md?toc=/supply-chain/toc.json    
+      href: ../fin-and-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json    
     - name: Move environments between data centers
-      href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/supply-chain/toc.json      
+      href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/supply-chain/toc.json      
     - name: Move licenses between agreement types
-      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/supply-chain/toc.json 
+      href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/supply-chain/toc.json 
     - name: Move LCS implementation projects to different Azure AD tenants
-      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/supply-chain/toc.json 
+      href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json 
     - name: Multiple LCS projects and production environments on one Azure AD tenant
-      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Globalization
   items:
   - name: Globalization resources
-    href: ../dev-itpro/lcs-solutions/country-region.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Regulatory updates
-    href: ../financials/localizations/regulatory-updates.md?toc=/supply-chain/toc.json
+    href: ../financials/localizations/regulatory-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Russia
     items: 
     - name: Russia overview
-      href: ../financials/localizations/russia.md?toc=/supply-chain/toc.json
+      href: ../financials/localizations/russia.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Inventory
       items: 
       - name: Goods in transit from vendor
-        href: ../financials/localizations/rus-goods-transit-vendor.md?toc=/supply-chain/toc.json
+        href: ../financials/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Cost accounting
   items:
   - name: Cost accounting home page
-    href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Cost accounting terminology
-    href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Fiscal calendars, fiscal years, and periods
-    href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/supply-chain/toc.json
+    href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Financial dimensions
-    href: ../financials/general-ledger/financial-dimensions.md?toc=/supply-chain/toc.json
+    href: ../financials/general-ledger/financial-dimensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Financial dimensions and posting
-    href: ../financials/general-ledger/Default-dimensions.md?toc=/supply-chain/toc.json
+    href: ../financials/general-ledger/Default-dimensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Add financial dimensions to the CFO workspace
-    href: ../financials/general-ledger/CFO-workspace.md?toc=/supply-chain/toc.json
+    href: ../financials/general-ledger/CFO-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create account structures
-    href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/supply-chain/toc.json
+    href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Budgeting overview
-    href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/supply-chain/toc.json
+    href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create dimensions and import dimension members
-    href: ../financials/cost-accounting/cost-dimension.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-dimension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Cost element dimensions
-    href: ../financials/cost-accounting/cost-elements.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create cost elements
-    href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Cost object dimensions
-    href: ../financials/cost-accounting/cost-objects.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-objects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create cost objects
-    href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Map cost element dimension members to a common set of dimension members
-    href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Map a cost element dimension  
-    href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Dimension hierarchy
-    href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create an organization report hierarchy
-    href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Access rights of a cost object controller
-    href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure access rights for a cost object controller
-    href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Define cost control units
-    href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create a cost accounting ledger
-    href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Statistical dimension members and statistical measure provider templates
-    href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Allocation bases
-    href: ../financials/cost-accounting/allocation-bases.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/allocation-bases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create and assign a cost allocation policy to a cost control unit
-    href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create and assign a cost behavior policy to a cost control unit
-    href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create and assign a cost distribution policy to a cost control unit
-    href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create a cost rollup policy
-    href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Manage data source for the cost accounting ledger
-    href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Process and trace source data
-    href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Overhead calculation
-    href: ../financials/cost-accounting/overhead-calculation.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/overhead-calculation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Cost rollup policy and overhead calculation
-    href: ../financials/cost-accounting/cost-rollup.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-rollup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure cost control workspace
-    href: ../financials/cost-accounting/cost-control-workspace.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-control-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure cost control workspace parameters
-    href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Understand access list security and RLS in Microsoft Power BI
-    href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Use content pack for Microsoft Power BI reporting
-    href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Use cost control workspace for Finance and Operations mobile application
-    href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+    href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Cost management
   items:
   - name: Cost management home page
@@ -375,7 +375,7 @@
     - name: Amortize constant costs for a manufactured item
       href: cost-management/amortize-constant-costs-manufactured-item.md
   - name: Cost management Power BI content pack
-    href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Inventory management
   items:
 - name: Master planning
@@ -383,193 +383,193 @@
 - name: Mobile app
   items:
   - name: Mobile app home page
-    href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Mobile workspaces
     items:
     - name: Available mobile workspaces
-      href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Company directory
-      href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Cost controlling
-      href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Expense management
-      href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Inventory on-hand
-      href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Invoice approvals
-      href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: My team
-      href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Project mobile applications overview
-      href: ../financials/project-management/project-mobile-application-overview.md?toc=/supply-chain/toc.json
+      href: ../financials/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Project time entry
-      href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Project timesheet
-      href: ../financials/project-management/project-timesheet.md?toc=/supply-chain/toc.json
+      href: ../financials/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Purchase order approval
-      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Sales orders
-      href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Vendor collaboration
-      href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/supply-chain/toc.json
+      href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Publish mobile workspaces
-    href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Office integration
   items:
   - name: Office integration overview
-    href: ../dev-itpro/office-integration/office-integration.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Office integration tutorial
-    href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Open entity data in Excel and update it using the Excel add-in
-    href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create Open in Excel experiences
-    href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Add templates to the Open lines in Excel menu
-    href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Customize the Open in Microsoft Office menu
-    href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure and send email
-    href: ../fin-and-ops/organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Develop email experiences
-    href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Troubleshoot the Office integration
-    href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Organization administration
   items:
   - name: Organization administration home page
-    href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Number sequences
     items:
     - name: Number sequences overview
-      href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Set up number sequences on an individual basis
-      href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Set up number sequences using a wizard
-      href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Organizations and organizational hierarchies
     items:
     - name: Organizations and organizational hierarchies overview
-      href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Plan your organizational hierarchy
-      href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create an organization hierarchy
-      href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create legal entities
-      href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create operating units
-      href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Global address book
     items:
     - name: Global address book overview
-      href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Plan for the global address book and other address books
-      href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure the global address book
-      href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Address books FAQ
-      href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure address books
-      href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Workflow system
     items:
     - name: Workflow system overview
-      href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow system architecture
-      href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow elements
-      href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow actions
-      href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create workflows
       items:
       - name: Create workflows overview
-        href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure workflow properties
-        href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure manual tasks
-        href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure automated tasks
-        href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure approval processes
-        href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure approval steps
-        href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure manual decisions
-        href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure conditional decisions
-        href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure parallel activities
-        href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure parallel branches
-        href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Configure line-item workflows
-        href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure the Workflow Message Processing batch job as critical
-      href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Delegate work items in a workflow
-      href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: View workflow history
-      href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Configure the system to send workflow-related email to users
-      href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow types
       items:
       - name: Creating a workflow type
-        href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Workflow type checklist
-        href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Create a workflow category
-        href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Create a query for a workflow type
-        href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Create a new workflow type
-        href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Create a workflow document class
-        href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Create a SubmitToWorkflow class
-        href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: Associate a workflow document class with a workflow type
-        href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/supply-chain/toc.json
+        href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow types report
-      href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Workflow FAQ
-      href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Alerts
     items:
     - name: Alerts overview
-      href: ../fin-and-ops/get-started/alerts-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create alert rules
-      href: ../fin-and-ops/get-started/create-alerts.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Batch processing of alerts
-      href: ../fin-and-ops/get-started/alerts-managing.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Client alert notifications by email
-      href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Electronic signatures
     items:
     - name: Electronic signatures overview
-      href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Set up electronic signatures
-      href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Case management
     items:
     - name: Case management overview
-      href: ../fin-and-ops/organization-administration/cases.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Plan case security, processes, and categories
-      href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Record templates
     items:
     - name: Record templates overview
-      href: ../fin-and-ops/organization-administration/record-templates.md?toc=/supply-chain/toc.json
+      href: ../fin-and-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Create a record template
-      href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Use a record template to create a new record
-      href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/supply-chain/toc.json
+      href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure document management
-    href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Configure and send email
-    href: ../fin-and-ops/organization-administration/configure-email.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Date/time data and time zones
-    href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/supply-chain/toc.json
+    href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Procurement and sourcing
   items:
   - name: Procurement and sourcing overview
@@ -655,7 +655,7 @@
   - name: Product receipt against purchase orders
     href: procurement/product-receipt-against-purchase-orders.md
   - name: Overview of vendor invoices
-    href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/supply-chain/toc.json
+    href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Vendor management and collaboration
   items:
   - name: Set up and maintain vendor collaboration
@@ -669,7 +669,7 @@
   - name: Create a vendor bank account
     href: procurement/tasks/create-vendor-bank-account.md
   - name: Vendor posting profiles
-    href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/supply-chain/toc.json
+    href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Vendor request configurations
     href: procurement/vendor-request-configurations.md
   - name: Vendor onboarding
@@ -1572,8 +1572,8 @@
 - name: Supply Chain Management development 
   items:
   - name: Gantt control development guide
-    href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/supply-chain/toc.json
+    href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
   - name: Create a new transportation management engine
-    href: transportation/create-new-transportation-management-engine.md?toc=/supply-chain/toc.json
+    href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Finance and Operations apps development and administration 
   href: ../dev-itpro/toc.yml
