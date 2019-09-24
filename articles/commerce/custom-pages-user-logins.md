@@ -38,52 +38,50 @@ This topic describes how to build custom pages in Dynamics 365 Commerce that han
 
 ## Overview
 
-To use custom pages authored in Commerce to handle user login flows, you must set up the AAD policies that will be referenced in the Commerce environment. You can configure the "Sign in and sign up," "Password reset," and "Edit profile" AAD B2C policies using the AAD B2C application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning that is done using Microsoft Lifecycle Services (LCS). 
+To use custom pages authored in Commerce to handle user login flows, you must set up the AAD policies that will be referenced in the Commerce environment. You can configure the "Sign in and sign up," "Profile editing," and "Password reset" AAD B2C policies using the AAD B2C application. The AAD B2C tenant and policy names can then be referenced for use during the Commerce environment provisioning that is done using Microsoft Lifecycle Services (LCS). 
 
-The custom Commerce pages can be built using the sign in, password reset, or edit profile modules. The published page URLs for these custom pages should then be referenced in AAD B2C policy configurations in the Azure portal.
+The custom Commerce pages can be built using the sign in, edit profile, or password reset modules. The published page URLs for these custom pages should then be referenced in AAD B2C policy configurations in the Azure portal.
 
 ## Set up B2C policies
 
-Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure Portal, select the "User flows (policies) menu under the "Policies" section in the left navigation pane. 
-
-The following image show the (lorem ipsum).   
+Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure Portal, select **User flows (policies)** in the **Policies** section, as shown in the following screenshot.   
 
 ![B2C Custom Policies Menu](./media/B2C_CustomPage_PoliciesMenu.png)
 
-The 'Sign up and sign in', 'Profile editing', and 'Password reset' flows can be configured as follows.
+The "Sign up and sign in," "Profile editing," and "Password reset" user login flows can then be configured as follows.
 
 ### Sign up and sign in flow
 
-To configure the sign up and sign in flow, do the following.
+To configure the "Sign up and sign in" user login flow, do the following.
 
-- Select the "New user flow" button and choose the **Sign up and sign in** policy under the Recommended section.
-- Name your policy (ex: B2C_1_SignInSignUp). 
+1. Click **New user flow**, then in the **Recommended** section, select the **Sign up and sign in** policy.
+1. Enter a name for the policy (for example, "B2C_1_SignInSignUp"). 
 
 >[!NOTE]
-> The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Dynamics 365 Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly named policy by submitting the new policy name with a service request.
+> The policy name will be fully referenced (with the 'B2C_1_' prefix included) in the Commerce environment. Policies cannot be renamed once created. If replacing an existing policy for your Commerce environment, you can delete the original and build a new policy with the same name. Or, if already provisioned, you can use a newly-named policy by submitting the new policy name using a service request.
 
-- Choose the Identity Providers utilized for the policy (ex: Email signup). Email signup must be chosen at minimum.
-- Select the following attributes and claims for the Sign in and sign up policy:
-  - Collect Attributes: Email Address, Given Name, Surname
-  - Return Claims: Email addresse**s**, Given Name, Identity Provider, Surname, User's Object ID
+1. Select the **Identity Providers** used for the policy (for example, **Email signup**). **Email signup** must be chosen at a minimum.
+1. Select the following attributes and claims:
+  - Under **Collect attribute**: **Email Address**, **Given Name**, **Surname**
+  - Under **Return claim**: **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
   
-The following image show the (lorem ipsum).   
+The following image shows the **User attributes and claims** screen with the correct attributes and claims selected.   
 
 ![Sign Up Sign In Claims](./media/B2C_SignInSignUp_Attributes.png)
 
-- Click "Create" to create the policy.
+1. Click **Create** to create the policy.
 - Select this newly created policy and double-click to update its configurations.
 - Under "Properties", set "Enable JavaScript enforcing page layout (preview)" to 'On'.
 
 The following image show the (lorem ipsum).   
 
-![Sign Up Sign In Enable Javascript]./media/B2C_SignInSignUp_EnableJavascript.png)
+![Sign Up Sign In Enable Javascript](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 We'll come back to this policy once we have built out the custom pages to finish the Policy setup. Close out of the policy (the upper-right 'x' button) to return to the User Flows (policies) page in the Azure Portal.
 
 ### Profile editing flow 
 
-To configure the profile editing flow, do the following.
+To configure the "Profile editing" user login flow, do the following.
 
 - Select the "New user flow" button and choose the **Profile editing** policy under the Recommended section.
 - Name your policy (ex: B2C_1_EditProfile). 
@@ -104,7 +102,7 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 ### Password reset flow
 
-To configure the password reset flow, do the following.
+To configure the "Password reset" user login flow, do the following.
 
 - Select the "New user flow" button and choose the **Password reset v1.1** policy under the **<u>Preview</u>** section.
 
