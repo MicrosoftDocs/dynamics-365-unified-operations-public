@@ -110,6 +110,10 @@ Note: The person logging in needs to be either Azure subscription admin or co-ad
 At this stage the environment has been provisioned end-to-end, but there are still few configuration steps that need to be taken care of before you can start evaluating the environment.
 ### Before starting
 Log in to the environment (HQ)
+1. From the menu, select "Cloud-hosted environments"
+1. Select your environment from the list
+1. Click "Full details" from the environment info on the right
+1. Click "Login" to open a menu, choose "Log on to environment"
 
 Make sure that USRT legal entity is selected (top right corner)
 ### Configure email server (optional)
@@ -139,7 +143,7 @@ Please note, that the SMTP server or email service you enter here must be access
 1. In the Terminal architecture field, type "Cloud".
 1. In the Cloud API Key field, type "AQErhmfxLozMahxGw0m/n3Q5qf3VZYJOH5xZV2NCGkLbgvUTMqYgtNDRiE0wdBDBXVsNvuR83LVYjEgiTGAH-xWSpGqRh+wr/ROze9bt0RqZaKbdcSl7YRm9icu05FPc=-9Xsbf4z2hjhhpYB2".
 1. In the Allow saving payment information in e-commerce field, type "True".
-1. Click Credit card types.
+1. Click Credit card types from the action pane
 1. In the list, select "Amex".
 1. In the Payment journal field, enter or select "CustPay".
 1. In the list, select "Debit".
@@ -157,7 +161,31 @@ Please note, that the SMTP server or email service you enter here must be access
 1. Select Yes in the "Default processor for new credit cards"-field.
 1. Click Save.
 ### Configure POS
-1. 
+##### Associate worker with your identity
+1. Go to Human resources > Workers > Workers.
+1. In the list, find and select record 000713 - "Andrew Collette"
+1. On the Action Pane, click Retail.
+1. Click Associate existing identity.
+1. In the Email field (right of "Search using email"), type your email address.
+1. Click Search.
+1. Select the record with your name.
+1. Click OK.
+1. Click Save.
+##### Activate Cloud POS
+1. Log in to the LCS portal
+1. Navigate to your project
+1. From the menu, select "Cloud-hosted environments"
+1. Select your environment from the list
+1. Click "Full details" from the environment info on the right
+1. Click "Login" to open a menu, choose "Log on to Cloud Point of Sale", POS should load up
+1. Click "Next"
+1. Log in with your AAD account
+1. Under "Store name", choose "San Francisco"
+1. Click "Next"
+1. Under "Register and device", choose "SANFRAN-1"
+1. Click "Activate"
+1. You should be logged out and end up in the POS login screen
+1. You can now log in to the Cloud POS experience using Operator ID 000713 and password (TBD)
 ### Site setup
 1. Log in to the site management tool using the URL you noted earlier
 1. Click on the "Fabrikam"-site, site setup dialog will open
@@ -240,7 +268,7 @@ Replace \{CMS_TENANT_NAME\} with your CMS tenant identifier. Have this URL avail
 ##### Run full data sync
 1. Go to Retail > Headquarters setup > Retail scheduler > Channel database.
 1. "Default" channel should be selected from the list on the left, select the other channel available
-1. Click "Full data sync" from the action bar
+1. Click "Full data sync" from the action pane
 1. Enter "9999" as the distribution schedule
 1. Click OK.
 1. Click OK.
