@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Generate online channel reports in Dynamics 365 Retail
+title: Generate online channel reports
 description: This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Retail.
 author: psimolin
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Generate online channel reports in Dynamics 365 Retail
+# Generate online channel reports
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
