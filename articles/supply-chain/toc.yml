@@ -1,0 +1,1761 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+  - name: Dynamics 365 Supply Chain Management
+    items:
+    - name: Dynamics 365 Supply Chain Management home page
+      href: index.md
+    - name: Get started
+      items:
+      - name: Before you buy
+        href: ../fin-and-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Sign up for preview subscription
+        href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: One Version service updates 
+        items:
+        - name: One Version service updates overview
+          href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: One Version service updates FAQ
+          href: ../fin-and-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Software lifecycle policy - Cloud
+          href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Software lifecycle policy - On-premises
+          href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Service update availability
+          href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Apply updates to cloud environments
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure service updates
+          href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Pause service updates
+          href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Get notified about service updates
+          href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Data task automation
+          href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Delivering ISV solutions using One Version
+          href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create and automate user acceptance tests
+          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/supply-chain/toc.json   
+      - name: Deploy a demo environment
+        href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Deployment considerations
+        items:
+        - name: Deployment options
+          href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Cloud deployment
+          href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: System requirements for cloud deployments
+          href: ../fin-and-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: On-premises deployment
+          href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: System requirements for on-premises deployments
+          href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Buy Finance + Operations (on-premises)
+          href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure Warehousing for on-premises deployments
+          href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations operated by 21Vianet in China
+          href: ../dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations in France
+          href: ../dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: What's new or changed
+        items:
+        - name: What's new or changed home page
+          href: ../fin-and-ops/get-started/whats-new-changed.md
+        - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+          href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations 10.0.5 (October 2019)
+          href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations 10.0.4 (July 2019)
+          href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Finance and Operations, Enterprise edition 7.3
+          href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Removed or deprecated features
+          href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: AX 2012 features that were postponed
+          href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Features not implemented in on-premises deployments
+          href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+          href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Documentation resources
+        items:
+        - name: Help system
+          href: ../fin-and-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Connect the Help system
+          href: ../fin-and-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Connect a custom help site
+          href: ../fin-and-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/supply-chain/toc.json    
+        - name: View and export field descriptions
+          href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Task Recorder
+          href: ../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create documentation or training with Task Recorder
+          href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Videos
+          href: ../fin-and-ops/get-started/videos.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Glossary
+          href: ../fin-and-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Learning catalog
+        items: 
+        - name: Learning catalog home page
+          href: ../fin-and-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Business decision makers
+          href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Business users
+          href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Implementation project managers
+          href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Administrators
+          href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Developers
+          href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Partner sales and marketing
+          href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Functional consultants
+          href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Solution architects
+          href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Explore the user interface
+        items:
+        - name: User interface elements
+          href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Accessibility features
+          href: ../fin-and-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Feature management overview
+          href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Client FAQ
+          href: ../fin-and-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Action search
+          href: ../fin-and-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Advanced filtering and query syntax
+          href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure and filter workspaces
+          href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Show pages side by side by using the Open in new window feature
+          href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Keyboard shortcuts
+          href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Change the banners or logo images for legal entities
+          href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Navigation search
+          href: ../fin-and-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Personalize the user experience
+          href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Saved views
+          href: ../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create and work with custom fields
+          href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Embed PowerApps apps
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Find information by using lookups
+          href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Change the date for a session
+          href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Set a user's preferred time zone
+          href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Understand Lifecycle Services
+          href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Implementation lifecycle management
+        items:
+        - name: Implementation lifecycle management home page
+          href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Architecture for Finance and Operations apps
+          href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Microsoft FastTrack for Finance and Operations
+          href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Onboard an implementation project
+          href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Environment planning
+          href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/supply-chain/toc.json   
+        - name: Prepare for go-live
+          href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Go-live FAQ
+          href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Submit a service request
+          href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
+          href: ../fin-and-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json    
+        - name: Move environments between data centers
+          href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/supply-chain/toc.json      
+        - name: Move licenses between agreement types
+          href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/supply-chain/toc.json 
+        - name: Move LCS implementation projects to different Azure AD tenants
+          href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json 
+        - name: Multiple LCS projects and production environments on one Azure AD tenant
+          href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Globalization
+      items:
+      - name: Globalization resources
+        href: ../dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Regulatory updates
+        href: ../financials/localizations/regulatory-updates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Russia
+        items: 
+        - name: Russia overview
+          href: ../financials/localizations/russia.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Inventory
+          items: 
+          - name: Goods in transit from vendor
+            href: ../financials/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Cost accounting
+      items:
+      - name: Cost accounting home page
+        href: ../financials/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Cost accounting terminology
+        href: ../financials/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Fiscal calendars, fiscal years, and periods
+        href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Financial dimensions
+        href: ../financials/general-ledger/financial-dimensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Financial dimensions and posting
+        href: ../financials/general-ledger/Default-dimensions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Add financial dimensions to the CFO workspace
+        href: ../financials/general-ledger/CFO-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create account structures
+        href: ../financials/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Budgeting overview
+        href: ../financials/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create dimensions and import dimension members
+        href: ../financials/cost-accounting/cost-dimension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Cost element dimensions
+        href: ../financials/cost-accounting/cost-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create cost elements
+        href: ../financials/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Cost object dimensions
+        href: ../financials/cost-accounting/cost-objects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create cost objects
+        href: ../financials/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Map cost element dimension members to a common set of dimension members
+        href: ../financials/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Map a cost element dimension  
+        href: ../financials/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Dimension hierarchy
+        href: ../financials/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create an organization report hierarchy
+        href: ../financials/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Access rights of a cost object controller
+        href: ../financials/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure access rights for a cost object controller
+        href: ../financials/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Define cost control units
+        href: ../financials/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create a cost accounting ledger
+        href: ../financials/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Statistical dimension members and statistical measure provider templates
+        href: ../financials/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Allocation bases
+        href: ../financials/cost-accounting/allocation-bases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create and assign a cost allocation policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create and assign a cost behavior policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create and assign a cost distribution policy to a cost control unit
+        href: ../financials/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create a cost rollup policy
+        href: ../financials/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Manage data source for the cost accounting ledger
+        href: ../financials/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Process and trace source data
+        href: ../financials/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Overhead calculation
+        href: ../financials/cost-accounting/overhead-calculation.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Cost rollup policy and overhead calculation
+        href: ../financials/cost-accounting/cost-rollup.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure cost control workspace
+        href: ../financials/cost-accounting/cost-control-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure cost control workspace parameters
+        href: ../financials/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Understand access list security and RLS in Microsoft Power BI
+        href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Use content pack for Microsoft Power BI reporting
+        href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Use cost control workspace for Finance and Operations mobile application
+        href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Cost management
+      items:
+      - name: Cost management home page
+        href: cost-management/cost-management-home-page.md
+      - name: Prerequisites for standard costs
+        items:
+        - name: Prerequisites for standard costs overview
+          href: cost-management/prerequisites-standard-costs.md
+        - name: Standard cost conversion overview
+          href: cost-management/standard-cost-conversion-overview.md
+        - name: Prerequisite for a standard cost conversion
+          href: cost-management/prerequisites-standard-cost-conversion.md
+        - name: Manage standard cost updates
+          href: cost-management/manage-standard-cost-updates.md
+        - name: Restrictions on costing versions for standard costs
+          href: cost-management/restrictions-costing-versions-standard-costs.md
+        - name: Information used in BOM calculations with standard costs
+          href: cost-management/information-used-bom-calculations-standard-costs.md
+        - name: Update standard costs in a manufacturing environment
+          href: cost-management/update-standard-costs-manufacturing-environment.md
+        - name: Update standard costs for a new manufactured item
+          href: cost-management/update-standard-costs-new-manufactured-item.md
+        - name: Update standard costs in a non-manufacturing environment
+          href: cost-management/update-standard-costs-non-manufacturing-environment.md
+        - name: Prepare to maintain standard costs for manufactured items
+          href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+      - name: Costing versions
+        items:
+        - name: Costing versions overview
+          href: cost-management/costing-versions.md
+        - name: Costing sheets
+          href: cost-management/costing-sheets.md
+        - name: Simulate cost changes by using a costing version for planned costs
+          href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+      - name: Inventory accounting
+        items:
+        - name: Cost objects
+          href: cost-management/cost-object.md
+        - name: View cost object balance
+          href: cost-management/tasks/view-cost-object-balance.md
+        - name: View inventory statement and KPI by cost object
+          href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+        - name: Cost entries
+          href: cost-management/cost-entries.md
+        - name: View cost entries for a cost object
+          href: cost-management/tasks/view-cost-entries-cost-object.md
+        - name: Cost groups
+          href: cost-management/cost-groups.md
+        - name: FIFO with physical value and marking
+          href: cost-management/fifo-physical-value-marking.md
+        - name: Include physical value
+          href: cost-management/include-physical-value.md
+        - name: Inventory object values
+          href: cost-management/physical-quantity.md
+        - name: LIFO Date with physical value and marking
+          href: cost-management/lifo-date-physical-value-marking.md
+        - name: LIFO with physical value and marking
+          href: cost-management/lifo-physical-value-marking.md
+        - name: Moving average
+          href: cost-management/moving-average.md
+        - name: Physical and financial updates
+          href: cost-management/physical-financial-updates.md
+        - name: Running average cost price
+          href: cost-management/running-average-cost-price.md
+        - name: Tracking running average cost per inventory dimension
+          href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Weighted average date
+          href: cost-management/weighted-average-date.md
+        - name: Weighted average with physical value and marking
+          href: cost-management/weighted-average-physical-value-marking.md
+        - name: Inventory close
+          href: cost-management/inventory-close.md
+        - name: Adjust on-hand inventory cost values
+          href: cost-management/adjust-hand-inventory-cost-values.md
+      - name: Manufacturing accounting
+        items:
+        - name: BOM calculations
+          href: cost-management/bom-calculations.md
+        - name: BOM calculation groups
+          href: cost-management/bom-calculation-groups.md
+        - name: Backflush costing
+          href: cost-management/backflush-costing.md
+        - name: Common sources of production variances
+          href: cost-management/common-sources-of-production-variances.md
+        - name: Cost categories used in production routing
+          href: cost-management/cost-categories-used-production-routings.md
+        - name: Cost categories used in Production control and Project management accounting
+          href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+        - name: Display charges for a manufactured item
+          href: cost-management/charges-manufactured-item.md
+        - name: Production order cost analysis
+          href: cost-management/production-order-cost-analysis.md
+        - name: Production order cost estimation
+          href: /cost-management/production-order-cost-estimation.md
+        - name: View current WIP status on a production order
+          href: cost-management/tasks/view-current-wip-status-production-order.md
+        - name: Compare active, estimated, and realized costs on a production order
+          href: cost-management/tasks/compare-active-estimated-realized-costs.md
+        - name: Production posting
+          href: cost-management/production-posting.md
+        - name: Set up products that can be produced or procured
+          href: cost-management/manufactured-items-treated-as-purchased-items.md
+        - name: Total cost allocation method
+          href: cost-management/methodology-total-cost-allocation.md
+        - name: Amortize constant costs for a manufactured item
+          href: cost-management/amortize-constant-costs-manufactured-item.md
+      - name: Cost management Power BI content pack
+        href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Inventory management
+      items:
+      - name: Inventory management overview
+        href: ../supply-chain/inventory/inventory-home-page.md
+      - name: Arrival
+        items:
+        - name: Arrival overview
+          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Set up an item arrival overview profile
+          href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
+      - name: Quality management
+        items:
+        - name: Quality management overview
+          href: ../supply-chain/inventory/enable-quality-management.md
+        - name: Quality management processes
+          href: ../supply-chain/inventory/quality-management-processes.md
+        - name: Nonconformance management
+          href: ../supply-chain/inventory/enable-nonconformance-management.md
+        - name: Set up prerequisites for management
+          href: ../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md
+        - name: Create and process a conformance
+          href: ../supply-chain/inventory/tasks/create-process-non-conformance.md
+        - name: Quarantine orders
+          href: ../supply-chain/inventory/quarantine-orders.md
+        - name: Set up quality orders
+          href: ../supply-chain/inventory/tasks/set-up-quality-orders.md
+        - name: Inspect the quality of goods
+          href: ../supply-chain/inventory/tasks/inspect-quality-goods.md
+        - name: Inventory blocking
+          href: ../supply-chain/inventory/inventory-blocking.md
+        - name: Create and maintain inventory blocking
+          href: ../supply-chain/inventory/tasks/create-maintain-inventory-blocking.md
+      - name: Inventory operations
+        items:
+        - name: Inventory journals
+          href: ../supply-chain/inventory/inventory-journals.md
+        - name: Inventory locations
+          href: ../supply-chain/inventory/inventory-locations.md
+        - name: Inventory statuses
+          href: ../supply-chain/inventory/inventory-statuses.md
+        - name: Create a new warehouse layout
+          href: ../supply-chain/inventory/tasks/create-new-warehouse-layout.md
+        - name: Maintain bar code types
+          href: ../supply-chain/inventory/tasks/maintain-barcode-types.md
+        - name: Check the availability of stock
+          href: ../supply-chain/inventory/tasks/check-availability-stock.md
+        - name: Initialize stock levels in the warehouse
+          href: ../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md
+        - name: Transfer physical inventory within the warehouse
+          href: ../supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse.md
+        - name: Adjust stock levels in the warehouse (basic warehousing)
+          href: ../supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+        - name: Inventory tag counting
+          href: ../supply-chain/inventory/inventory-tag-counting.md
+        - name: Count inventory in a warehouse
+          href: ../supply-chain/inventory/tasks/count-inventory-warehouse.md
+        - name: Define inventory counting processes
+          href: ../supply-chain/inventory/tasks/define-inventory-counting-processes.md
+        - name: Set up consignment
+          href: ../supply-chain/inventory/consignment.md
+        - name: Change the ownership of consignment inventory based on production demand
+          href: ../supply-chain/inventory/tasks/change-ownership-consignment.md
+        - name: Create a consignment replenishment order
+          href: ../supply-chain/inventory/tasks/create-consignment-replenishment-order.md
+        - name: Monitor consignment inventory using vendor collaboration
+          href: ../supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+        - name: Item and raw material tracing in inventory, production, and sales
+          href: ../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md
+        - name: Trace an item or raw material
+          href: ../supply-chain/inventory/tasks/trace-item-or-raw-material.md
+        - name: Merge inventory batch
+          href: ../supply-chain/inventory/merge-inventory-batches.md
+        - name: Correct inventory tracking information
+          href: ../supply-chain/inventory/tasks/correct-inventory-tracking-information.md
+        - name: Register serial number in the sales process
+          href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+        - name: Inventory on-hand mobile workspace
+          href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
+      - name: Outbound process
+        items:
+        - name: Outbound process overview
+          href: ../supply-chain/inventory/outbound-process.md
+        - name: Reserve inventory quantities
+          href: ../supply-chain/inventory/reserve-inventory-quantities.md
+        - name: Reserve the same batch for a sales order
+          href: ../supply-chain/sales-marketing/reserve-same-batch-sales-order.md
+      - name: Inventory control
+        items:
+        - name: Inventory close
+          href: ../supply-chain/cost-management/inventory-close.md
+        - name: Running average cost price
+          href: ../supply-chain/cost-management/running-average-cost-price.md
+        - name: Adjust on-hand inventory cost value
+          href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
+        - name: Tracking running average cost per inventory dimension
+          href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+    - name: Master planning
+      items:
+      - name: Master planning home page
+        href: ../supply-chain/master-planning/master-planning-home-page.md
+      - name: Master plans
+        items:
+        - name: Master plans overview
+          href: ../supply-chain/master-planning/master-plans.md
+        - name: Set up master plans
+          href: ../supply-chain/master-planning/master-planning-setup.md
+        - name: Master planning setup wizard
+          href: ../supply-chain/master-planning/master-planning-setup-wizard.md
+        - name: Coverage settings
+          href: ../supply-chain/master-planning/coverage-settings.md
+        - name: Define coverage rules for items
+          href: ../supply-chain/master-planning/tasks/define-coverage-rules-items.md
+        - name: Generate a constrained plan
+          href: ../supply-chain/master-planning/tasks/constrained-plan.md
+        - name: Create a material plan for co-products
+          href: ../supply-chain/master-planning/tasks/create-material-plan-co-products.md
+        - name: Maintain planned orders
+          href: ../supply-chain/master-planning/maintain-planned-orders.md
+        - name: Safety stock fulfillment for items
+          href: ../supply-chain/master-planning/safety-stock-replenishment.md
+        - name: Delays
+          href: ../supply-chain/master-planning/delays.md
+        - name: Use tracing for explosion
+          href: ../supply-chain/master-planning/trace-explosion.md
+        - name: Action messages
+          href: ../supply-chain/master-planning/action-messages.md
+        - name: Monitor a master planning run
+          href: ../supply-chain/master-planning/tasks/monitor-master-planning-run.md
+        - name: Create a schedule for a site
+          href: ../supply-chain/master-planning/tasks/create-schedule-site.md
+        - name: Create a plan for a site
+          href: ../supply-chain/master-planning/tasks/create-plan-site.md
+        - name: Calendars and master planning
+          href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+        - name: Improve master planning performance
+          href: ../supply-chain/master-planning/master-planning-performance.md
+        - name: Master plans and multisite functionality
+          items:
+          - name: Master planning and multisite functionality overview
+            href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
+          - name: Master planning for site coverage, mandatory warehouse
+            href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
+          - name: Master planning for site coverage, warehouse not mandatory
+            href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+          - name: Master planning for site and warehouse coverage, warehouse mandatory
+            href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+          - name: Master planning for site and warehouse coverage, warehouse not mandatory
+            href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+          - name: Determine the BOM version
+            href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
+          - name: Explosion of a BOM version
+            href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+        - name: Negative days and dynamic negative days
+          href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
+        - name: Create an intercompany plan
+          href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
+        - name: View outbound planned intercompany demand
+          href: ../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md
+        - name: Collaborate with internal supply chain customers
+          href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
+      - name: Demand forecasting
+        items:
+        - name: Demand forecasting overview
+          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
+        - name: Demand forecasting setup
+          href: ../supply-chain/master-planning/demand-forecasting-setup.md
+        - name: Import historical data for demand forecasts
+          href: ../supply-chain/master-planning/import-historical-data.md
+        - name: Generate a statistical baseline forecast
+          href: ../supply-chain/master-planning/generate-statistical-baseline-forecast.md
+        - name: Make manual adjustment to the baseline forecast
+          href: ../supply-chain/master-planning/manual-adjustments-baseline-forecast.md
+        - name: Authorize an adjusted forecast
+          href: ../supply-chain/master-planning/authorize-adjusted-forecast.md
+        - name: Monitor forecast accuracy
+          href: ../supply-chain/master-planning/monitor-forecast-accuracy.md
+        - name: Remove outliers from historical transaction data when calculating a demand forecast
+          href: ../supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast.md
+        - name: Reduction keys
+          href: ../supply-chain/master-planning/reduction-keys.md
+        - name: Create a baseline forecast
+          href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
+        - name: Modify a demand forecast manually
+          href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
+    - name: Mobile app
+      items:
+      - name: Mobile app home page
+        href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Mobile workspaces
+        items:
+        - name: Available mobile workspaces
+          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Company directory
+          href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Cost controlling
+          href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Expense management
+          href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Inventory on-hand
+          href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Invoice approvals
+          href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: My team
+          href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Project mobile applications overview
+          href: ../financials/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Project time entry
+          href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Project timesheet
+          href: ../financials/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Purchase order approval
+          href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Sales orders
+          href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vendor collaboration
+          href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Publish mobile workspaces
+        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Office integration
+      items:
+      - name: Office integration overview
+        href: ../dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Office integration tutorial
+        href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Open entity data in Excel and update it using the Excel add-in
+        href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create Open in Excel experiences
+        href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Add templates to the Open lines in Excel menu
+        href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Customize the Open in Microsoft Office menu
+        href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure and send email
+        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Develop email experiences
+        href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Troubleshoot the Office integration
+        href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Organization administration
+      items:
+      - name: Organization administration home page
+        href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Number sequences
+        items:
+        - name: Number sequences overview
+          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Set up number sequences on an individual basis
+          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Set up number sequences using a wizard
+          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Organizations and organizational hierarchies
+        items:
+        - name: Organizations and organizational hierarchies overview
+          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Plan your organizational hierarchy
+          href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create an organization hierarchy
+          href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create legal entities
+          href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create operating units
+          href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Global address book
+        items:
+        - name: Global address book overview
+          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Plan for the global address book and other address books
+          href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure the global address book
+          href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Address books FAQ
+          href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure address books
+          href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Workflow system
+        items:
+        - name: Workflow system overview
+          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow system architecture
+          href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow elements
+          href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow actions
+          href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create workflows
+          items:
+          - name: Create workflows overview
+            href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure workflow properties
+            href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure manual tasks
+            href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure automated tasks
+            href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure approval processes
+            href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure approval steps
+            href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure manual decisions
+            href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure conditional decisions
+            href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure parallel activities
+            href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure parallel branches
+            href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Configure line-item workflows
+            href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure the Workflow Message Processing batch job as critical
+          href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Delegate work items in a workflow
+          href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: View workflow history
+          href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Configure the system to send workflow-related email to users
+          href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow types
+          items:
+          - name: Creating a workflow type
+            href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Workflow type checklist
+            href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Create a workflow category
+            href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Create a query for a workflow type
+            href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Create a new workflow type
+            href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Create a workflow document class
+            href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Create a SubmitToWorkflow class
+            href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+          - name: Associate a workflow document class with a workflow type
+            href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow types report
+          href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Workflow FAQ
+          href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Alerts
+        items:
+        - name: Alerts overview
+          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create alert rules
+          href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Batch processing of alerts
+          href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Client alert notifications by email
+          href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Electronic signatures
+        items:
+        - name: Electronic signatures overview
+          href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Set up electronic signatures
+          href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Case management
+        items:
+        - name: Case management overview
+          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Plan case security, processes, and categories
+          href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Record templates
+        items:
+        - name: Record templates overview
+          href: ../fin-and-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Create a record template
+          href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Use a record template to create a new record
+          href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure document management
+        href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Configure and send email
+        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Date/time data and time zones
+        href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Procurement and sourcing
+      items:
+      - name: Procurement and sourcing overview
+        href: procurement/procurement-sourcing-overview.md
+      - name: Procurement and sourcing workflow
+        href: procurement/procurement-sourcing-workflows.md
+      - name: Procurement catalogs
+        items:
+        - name: Procurement catalogs overview
+          href: procurement/procurement-catalogs.md
+        - name: Create a procurement catalog
+          href: procurement/tasks/create-procurement-catalog.md
+        - name: Set up a procurement category hierarchy
+          href: procurement/tasks/set-up-procurement-category-hierarchy.md
+      - name: Purchase requisitions
+        items:
+        - name: Purchase requisitions overview
+          href: procurement/purchase-requisitions-overview.md
+        - name: Purchase requisition workflow
+          href: procurement/purchase-requisitions-workflow.md
+      - name: Request for quotations (RFQs)
+        items:
+        - name: Request for quotations (RFQs) overview
+          href: procurement/request-quotations.md
+        - name: Create a request for quotation
+          href: procurement/tasks/create-request-quotation.md
+        - name: Create a requisition that uses an RFQ
+          href: procurement/tasks/create-requisition-uses-rfq.md
+        - name: Create a scoring method for RFQs
+          href: procurement/tasks/create-scoring-method-rfqs.md
+        - name: Create solicitation types and scoring criteria for RFQs
+          href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+        - name: Enter and compare RFQ bids and award contracts
+          href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+      - name: Purchase orders
+        items:
+        - name: Purchase order overview
+          href: procurement/purchase-order-overview.md
+        - name: Approve and confirm purchase orders
+          href: procurement/purchase-order-approval-confirmation.md
+        - name: Purchase order approval mobile workspace
+          href: procurement/purchase-order-mobile-workspace.md
+      - name: Purchase order creation
+        items:
+        - name: Create purchase orders manually
+          href: procurement/purchase-order-creation.md
+        - name: Create a purchase order
+          href: procurement/tasks/create-purchase-order.md
+        - name: Create a purchase order with a delivery schedule
+          href: procurement/tasks/create-purchase-order-delivery-schedule.md
+        - name: Create a purchase order for a one-time supplier
+          href: procurement/tasks/create-purchase-order-one-time-supplier.md
+        - name: Create a purchase release order when creating the purchase order
+          href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+        - name: Create a purchase release order from a purchase agreement
+          href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+        - name: Create a purchase return order
+          href: procurement/tasks/create-purchase-return-order.md
+        - name: Create project purchase order
+          href: procurement/tasks/create-project-purchase-order.md
+        - name: Create a repeat purchase order
+          href: procurement/tasks/create-repeat-purchase-order.md
+        - name: Create a requisition for consumption
+          href: procurement/tasks/create-requisition-consumption.md
+      - name: Prices, discounts, and rebates
+        items:
+        - name: Purchase agreements
+          href: procurement/purchase-agreements.md
+        - name: Create a purchase agreement
+          href: procurement/tasks/create-purchase-agreement.md
+        - name: Vendor rebates
+          href: procurement/vendor-rebates.md
+      - name: Purchasing policies
+        items:
+        - name: Purchasing policies overview
+          href: procurement/purchase-policies.md
+        - name: Create purchasing policies
+          href: procurement/tasks/create-purchasing-policies.md
+        - name: Set up policies for procurement category hierarchies
+          href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+      - name: Product receipts and invoicing
+        items:
+        - name: Product receipt against purchase orders
+          href: procurement/product-receipt-against-purchase-orders.md
+        - name: Overview of vendor invoices
+          href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Vendor management and collaboration
+        items:
+        - name: Set up and maintain vendor collaboration
+          href: procurement/set-up-maintain-vendor-collaboration.md
+        - name: Manage vendor collaboration users
+          href: procurement/manage-vendor-collaboration-users.md
+        - name: Set up vendor accounts
+          href: procurement/set-up-vendor-accounts.md
+        - name: Create a vendor account
+          href: procurement/tasks/create-vendor-account.md
+        - name: Create a vendor bank account
+          href: procurement/tasks/create-vendor-bank-account.md
+        - name: Vendor posting profiles
+          href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vendor request configurations
+          href: procurement/vendor-request-configurations.md
+        - name: Vendor onboarding
+          href: procurement/vendor-onboarding.md
+        - name: Vendor collaboration with external vendors
+          href: procurement/vendor-collaboration-work-external-vendors.md
+        - name: Vendor collaboration with customers
+          href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+        - name: Import vendor catalogs
+          href: procurement/vendor-catalogs-import.md
+        - name: Set up an external catalog for PunchOut eProcurement
+          href: procurement/set-up-external-catalog-for-punchout.md
+        - name: Use external catalogs for PunchOut eProcurement
+          href: procurement/use-external-catalogs-for-punchout.md
+        - name: Vendor collaboration mobile workspace
+          href: procurement/vendor-collaboration-mobile-workspace.md
+        - name: Approve vendors for specific procurement categories
+          href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+        - name: Approve vendors for specific products
+          href: procurement/tasks/approve-vendors-specific-products.md
+        - name: Search for vendors
+          href: procurement/tasks/search-vendors.md
+        - name: Set up permissions for ordering products on behalf of someone else
+          href: procurement/tasks/set-up-permissions-ordering-products.md
+      - name: Procurement and sourcing tasks
+        items:
+        - name: Set up project resource information
+          href: procurement/tasks/set-up-project-resource-information.md
+        - name: Submit and approve project budgets
+          href: procurement/tasks/submit-approve-project-budget.md
+        - name: Submit and approve project budget revisions
+          href: procurement/tasks/submit-approve-project-budget-revision.md
+    - name: Product information management
+      items:
+      - name: Product information overview
+        href: pim/product-information.md
+      - name: Product information
+        items:
+        - name: Product identifiers
+          href: pim/product-identifiers.md
+        - name: Create a hierarchy of product classification
+          href: pim/tasks/create-hierarchy-product-classification.md
+        - name: Classify a product using category hierarchies
+          href: pim/tasks/classify-product-category-hierarchies.md
+        - name: Product number nomenclature
+          href: pim/product-variant-identification-nomenclature.md
+        - name: Create a product number nomenclature for predefined product variants
+          href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+        - name: Create a product number nomenclature for configured product variants
+          href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+        - name: Create a new product
+          href: pim/tasks/create-new-product.md
+        - name: Create a product master
+          href: pim/tasks/create-product-master.md
+        - name: Create predefined product variants
+          href: pim/tasks/create-predefined-product-variants.md
+        - name: Unit of measure conversion per product variant
+          href: pim/uom-conversion-per-product-variant.md
+        - name: Create a released product for a single company
+          href: pim/tasks/create-released-product-single-company.md
+        - name: Product lifecycle state
+          items:
+          - name: Product lifecycle state overview
+            href: pim/product-lifecycle.md
+          - name: Create a new product lifecycle state
+            href: pim/tasks/new-product-lifecycle-state.md
+          - name: Create a default product lifecycle state
+            href: pim/tasks/default-product-lifecycle-state.md
+          - name: Assign a product lifecycle state to a released product master
+            href: pim/tasks/product-lifecycle-state-released-product-master.md
+          - name: Assign a product lifecycle state to a released product
+            href: pim/tasks/product-lifecycle-state-released-product.md
+          - name: Find obsolete product variants
+            href: pim/tasks/obsolete-product-variants.md
+          - name: Exclude products from Master planning
+            href: pim/tasks/exclude-products-master-planning.md
+        - name: Create a bar code for a product
+          href: pim/tasks/create-bar-code-product.md
+        - name: Enter the GTIN code for a product
+          href: pim/tasks/enter-gtin-code-product.md
+        - name: Create batch attributes for a product
+          href: pim/tasks/create-batch-attributes-product.md
+        - name: Add an image to a product
+          href: pim/tasks/add-image-product.md
+        - name: Translation of product information FAQ
+          href: pim/translations-product-related-information.md
+        - name: Search for product during order entry
+          href: pim/search-products-product-variants.md
+        - name: Default order settings for dimensions and product variants
+          href: production-control/default-order-settings.md
+        - name: Bills of materials and formulas
+          href: production-control/bill-of-material-bom.md
+        - name: Use the BOM designer
+          href: production-control/bom-designer-functionality.md
+        - name: Use the formula designer
+          href: production-control/formula-designer.md
+        - name: Add variant products to purchase orders using variant weights
+          href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+        - name: Create a sales order for a configurable product
+          href: pim/tasks/create-sales-order-configurable-product.md
+        - name: Create sales price selection criteria
+          href: pim/tasks/create-sales-price-selection-criteria.md
+        - name: Set up attribute-based pricing for configurable products
+          href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+        - name: BOM calculations
+          href: cost-management/bom-calculations.md
+      - name: Product configuration
+        items:
+        - name: Product configuration overview
+          href: pim/build-product-configuration-model.md
+        - name: Create dimension-based configuration
+          items:
+          - name: Dimension-based product configuration overview
+            href: pim/dimension-based-product-configuration.md
+          - name: Product dimension
+            href: pim/product-dimensions.md
+          - name: Create a dimension-based product master
+            href: pim/tasks/create-dimension-based-product-master.md
+          - name: Release a dimension-based product master
+            href: pim/tasks/release-dimension-based-product-master.md
+          - name: Complete basic setup of a released product master
+            href: pim/tasks/complete-basic-setup-released-product-master.md
+          - name: Define configuration groups
+            href: pim/tasks/define-configuration-groups.md
+          - name: Create a bill of materials for a dimension-based product master
+            href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+          - name: Define configuration routes
+            href: pim/tasks/define-configuration-route.md
+          - name: Create configuration rules
+            href: pim/tasks/create-configuration-rules.md
+          - name: Create dimension-based configurations
+            href: pim/tasks/create-dimension-based-configurations.md
+        - name: Create constraint-based configuration
+          items:
+          - name: Set up a product configuration model
+            href: pim/set-up-maintain-product-configuration-model.md
+          - name: Calculation for product configuration model FAQ
+            href: pim/calculate-product-configuration-models.md
+          - name: Configuration rule
+            href: pim/configuration-rules.md
+          - name: Expression constraint and table constraint
+            href: pim/expression-constraints-table-constraints-product-configuration-models.md
+          - name: Solver strategy for product configuration
+            href: pim/solver-strategy-product-configuration.md
+          - name: Reuse product configuration
+            href: pim/reuse-product-configurations.md
+          - name: System-defined and user-defined table constraint
+            href: pim/system-defined-user-defined-table-constraints.md
+          - name: Create product model components
+            href: pim/tasks/create-product-model-components.md
+          - name: Create a product configuration model
+            href: pim/tasks/create-product-configuration-model.md
+          - name: Add an expression constraint to a product configuration model
+            href: pim/tasks/add-expression-constraint-product-configuration-model.md
+          - name: Add a calculation to a product configuration model
+            href: pim/tasks/add-calculation-product-configuration-model.md
+          - name: Maintain BOM for a product configuration model
+            href: pim/tasks/maintain-bom-product-configuration-model.md
+          - name: Maintain a route for a product model
+            href: pim/tasks/maintain-route-product-model.md
+          - name: Approve a product configuration model
+            href: pim/tasks/approve-product-configuration-model.md
+          - name: Transfer data for product models
+            href: pim/tasks/transfer-data-product-models.md
+    - name: Production control
+      items:
+      - name: Production process overview
+        href: production-control/production-process-overview.md
+      - name: 'Mixed mode planning: Combine discrete, process, and lean sourcing'
+        href: production-control/mixed-mode-plan.md
+      - name: Manage subcontracting work in production
+        href: production-control/manage-subcontract-work-production.md
+      - name: Discrete manufacturing
+        items:
+        - name: Maintain production master data
+          items:
+          - name: Production setup requirements
+            href: production-control/production-set-up-requirements.md
+          - name: Bills of materials and formulas
+            href: production-control/bill-of-material-bom.md
+          - name: BOM designer functionality
+            href: production-control/bom-designer-functionality.md
+          - name: Phantom items
+            href: production-control/phantom-items.md
+          - name: BOM calculations
+            href: cost-management/bom-calculations.md
+          - name: Manage unit of measure
+            href: pim/tasks/manage-unit-measure.md
+          - name: Production parameters in Manufacturing execution
+            href: production-control/production-parameters-manufacturing-execution.md
+          - name: Operations resources
+            href: production-control/operations-resources.md
+          - name: Create an operations resource
+            href: production-control/tasks/create-operations-resource.md
+          - name: Resource capabilities
+            href: production-control/resource-capabilities.md
+          - name: Define resource capabilities
+            href: production-control/tasks/define-resource-capabilities.md
+          - name: Routes and operations
+            href: production-control/routes-operations.md
+          - name: Warehouse work policies
+            href: warehousing/warehouse-work-policies.md
+          - name: Create working time scheduling properties
+            href: production-control/tasks/create-working-time-scheduling-properties.md
+          - name: Create working time templates
+            href: production-control/tasks/create-working-time-templates.md
+          - name: Define discrete manufacturing resource group
+            href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+          - name: Add an existing activity to a production flow version
+            href: production-control/tasks/add-existing-activity-production-flow-version.md
+          - name: Deactivate a production flow version
+            href: production-control/tasks/deactivate-production-flow-version.md
+          - name: Define an expiry date for a production flow version
+            href: production-control/tasks/define-expiry-date-production-flow-version.md
+          - name: Define production flow models
+            href: production-control/tasks/define-production-flow-models.md
+        - name: Schedule production operations
+          items:
+          - name: Operations scheduling
+            href: production-control/operations-scheduling.md
+          - name: Job scheduling
+            href: production-control/job-scheduling.md
+          - name: Gantt chart for job scheduling
+            href: production-control/visual-scheduling-production.md
+          - name: Operations scheduling options
+            href: production-control/operation-scheduling-options.md
+          - name: Schedule a production order with operations and job scheduling
+            href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+        - name: Operate production jobs
+          items:
+          - name: Manage production order lifecycle
+            items:
+            - name: Production order lifecycle overview
+              href: production-control/create-production-orders.md
+            - name: Create a production order
+              href: production-control/tasks/create-production-order.md
+            - name: Estimate a production order
+              href: production-control/tasks/estimate-production-order.md
+            - name: Schedule a production order
+              href: production-control/tasks/schedule-production-order.md
+            - name: Release a production order
+              href: production-control/tasks/release-production-order.md
+            - name: Start a production order
+              href: production-control/tasks/start-production-order.md
+            - name: Report a production order as finished
+              href: production-control/tasks/report-production-order-finished.md
+            - name: End a production order
+              href: production-control/tasks/end-production-order.md
+          - name: Release production orders
+            href: production-control/release-production-orders.md
+          - name: Report production orders as finished
+            href: production-control/report-production-orders-as-finished.md
+          - name: Report as finished to a license plate controlled location 
+            href: production-control/report-finished-job-device.md        
+          - name: Reverse the production order status
+            href: production-control/reverse-production-order-status.md
+          - name: Visibility into material exceptions
+            href: production-control/improved-visibility-into-material-exceptions.md
+          - name: Release BOM and formula lines to the warehouse
+            href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+          - name: Register material consumption using a mobile device
+            href: production-control/register-material-consumption-hand-held-device.md
+          - name: Control raw material consumption by using flushing principles
+            href: production-control/flushing-principles.md
+          - name: Cross-docking from production orders to outbound docks
+            href: production-control/cross-docking-opportunities.md
+          - name: Set the production output location for finished goods
+            href: production-control/production-output-location.md
+          - name: Report BOMs as finished
+            href: production-control/report-boms-as-finished.md
+          - name: Report as finished to a plate-controlled location
+            href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+          - name: Report progress on a mobile job device
+            href: production-control/tasks/report-progress-mobile-job-device.md
+          - name: Use the safety stock journal to update minimum coverage
+            href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+          - name: Material substitution in manufacturing
+            href: production-control/substitute-items-bom-lines.md
+          - name: Registration for manufacturing execution
+            href: production-control/registration-manufacturing-execution.md
+          - name: Production feedback
+            href: production-control/production-feedback.md
+          - name: Enable the payroll process for time and attendance
+            href: production-control/tasks/payroll-process-time-attendance.md
+          - name: Configure a worker using the mobile job device
+            href: production-control/tasks/worker-mobile-job-device.md
+        - name: Manage financials in production
+          items:
+          - name: Allocate time to jobs in a job bundle
+            href: production-control/allocate-time-jobs-job-bundle.md
+          - name: Calculate material consumption
+            href: production-control/consumption.md
+          - name: Production posting
+            href: cost-management/production-posting.md
+        - name: Time and attendance registration
+          items:
+          - name: Time and attendance registration overview
+            href: production-control/time-attendance-registrations.md
+          - name: Pay based on registrations
+            href: production-control/pay-based-on-registrations.md
+          - name: Absence registration in Time and attendance
+            href: production-control/absence-registration-in-time-and-attendance.md
+          - name: Flex groups
+            href: production-control/time-attendance-flex-groups.md
+      - name: Lean manufacturing
+        items:
+        - name: Lean manufacturing overview
+          href: production-control/lean-manufacturing-overview.md
+        - name: Activity-based subcontracting
+          href: production-control/activity-based-subcontracting.md
+        - name: Maintain production master data
+          items:
+          - name: Model a lean organization
+            href: production-control/lean-manufacturing-modeling-lean-organization.md
+          - name: Operations resources
+            href: production-control/operations-resources.md
+          - name: Define lean manufacturing work cells
+            href: production-control/tasks/define-lean-manufacturing-work-cells.md
+          - name: Define lean schedule groups
+            href: production-control/tasks/define-lean-schedule-groups.md
+        - name: Schedule kanban jobs
+          items:
+          - name: Visual scheduling for lean manufacturing
+            href: production-control/visual-scheduling-lean-manufacturing.md
+          - name: Kanban job scheduling for lean manufacturing
+            href: production-control/lean-manufacturing-kanban-job-scheduling.md
+          - name: Job scheduling
+            href: production-control/job-scheduling.md
+        - name: Operate kanban jobs
+          items:
+          - name: Kanban transfer board support for barcode scanners
+            href: production-control/kanban-transfer-board-support-barcode-scanner.md
+          - name: Production feedback
+            href: production-control/production-feedback.md
+          - name: Create a production flow version
+            href: production-control/tasks/create-production-flow-version.md
+          - name: Create process activities for lean manufacturing
+            href: production-control/tasks/create-process-activities-lean-manufacturing.md
+          - name: Create transfer activities for lean manufacturing
+            href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+          - name: Validate a production flow and version
+            href: production-control/tasks/validate-production-flow-version.md
+          - name: Activate a production flow version
+            href: production-control/tasks/activate-production-flow-version.md
+          - name: 'Create activity relation: Successor'
+            href: production-control/tasks/create-activity-relation-successor.md
+          - name: Add a predecessor to a production flow activity
+            href: production-control/tasks/add-predecessor-production-flow-activity.md
+          - name: Create a value stream
+            href: production-control/tasks/create-value-stream.md
+          - name: Lean pegging from sales orders
+            href: production-control/tasks/lean-pegging-sales-orders.md
+          - name: Create a subcontracted work cell for lean manufacturing
+            href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+          - name: Add a kanban quantity calculation policy to a kanban rule
+            href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+          - name: Calculate kanban quantity suggestions
+            href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+          - name: Change kanban rules for a process job
+            href: production-control/tasks/change-kanban-rules-process-job.md
+          - name: Create a BOM line event kanban rule
+            href: production-control/tasks/create-bom-line-event-kanban-rule.md
+          - name: Create a fixed quantity kanban rule for manufacturing
+            href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+          - name: Create a kanban rule using a kanban line event
+            href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+          - name: Create a kanban rule using a minimum stock event
+            href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+          - name: Create a kanban rule for multiple activities
+            href: production-control/tasks/create-kanban-rule-multiple-activities.md
+          - name: Create a new kanban rule by duplicating an existing kanban rule
+            href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+          - name: Create a replacement kanban rule
+            href: production-control/tasks/create-replacement-kanban-rule.md
+          - name: Create a sales event kanban rule
+            href: production-control/tasks/create-sales-event-kanban-rule.md
+          - name: Create a withdrawal kanban rule
+            href: production-control/tasks/create-withdrawal-kanban-rule.md
+          - name: Execute kanban process jobs
+            href: production-control/tasks/execute-kanban-process-jobs.md
+          - name: Move scheduled kanban jobs
+            href: production-control/tasks/move-scheduled-kanban-jobs.md
+          - name: Prepare a process kanban job when materials are available for the work cell
+            href: production-control/tasks/prepare-kanban-job-materials.md
+          - name: Prepare a process kanban job when materials are not available for the work cell
+            href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+          - name: Remove a kanban job from the schedule
+            href: production-control/tasks/remove-kanban-job-schedule.md
+          - name: Revert kanban job status
+            href: production-control/tasks/revert-kanban-job-status.md
+          - name: Schedule kanban jobs)
+            href: production-control/tasks/schedule-kanban-jobs.md
+          - name: Transfer materials with kanban jobs
+            href: production-control/tasks/transfer-materials-kanban-jobs.md
+          - name: Update kanban status
+            href: production-control/tasks/update-kanban-status.md
+    - name: Sales and marketing
+      items:
+      - name: Sales and marketing overview
+        href: sales-marketing/overview-sales-marketing.md
+      - name: Sales orders
+        items:
+        - name: Order promising
+          href: sales-marketing/delivery-dates-available-promise-calculations.md
+        - name: Order entry deadlines
+          href: sales-marketing/order-entry-deadlines.md
+        - name: Delivery alternatives
+          href: sales-marketing/delivery-alternatives.md
+        - name: Direct deliveries
+          href: sales-marketing/direct-deliveries.md
+        - name: Delivery schedules
+          href: sales-marketing/delivery-schedules.md
+        - name: Create a delivery schedule
+          href: sales-marketing/tasks/create-delivery-schedule.md
+        - name: Serial numbers in the sales process
+          href: sales-marketing/register-serial-numbers-sales-process.md
+        - name: Reservation from same batch
+          href: sales-marketing/reserve-same-batch-sales-order.md
+        - name: Sales orders mobile workspace
+          href: sales-marketing/sales-orders-mobile-workspace.md
+        - name: Ship orders as direct deliveries
+          href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+        - name: Ship sales orders without warehousing
+          href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+        - name: Create a purchase order from a sales order
+          href: sales-marketing/tasks/create-purchase-order-sales-order.md
+        - name: Create sales orders
+          href: sales-marketing/tasks/create-sales-orders.md
+        - name: Manage order holds
+          href: sales-marketing/tasks/manage-order-holds.md
+        - name: Confirm sales orders
+          href: sales-marketing/tasks/confirm-sales-orders.md
+      - name: Sales agreements
+        items:
+        - name: Sales agreements overview
+          href: sales-marketing/sales-agreements.md
+        - name: Enter sales agreements
+          href: sales-marketing/tasks/enter-sales-agreements.md
+        - name: Fulfill sales agreements
+          href: sales-marketing/tasks/fulfill-sales-agreements.md
+        - name: Generate and process customer rebates
+          href: sales-marketing/tasks/process-customer-rebates.md
+        - name: Process rebates for payment
+          href: sales-marketing/tasks/process-rebates-payment.md
+        - name: Look up applicable prices and discounts
+          href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+      - name: Sales quotations
+        items:
+        - name: Price simulation
+          href: sales-marketing/price-simulation.md
+        - name: Mass create sales quotations
+          href: sales-marketing/tasks/mass-sales-quotations.md
+        - name: Create and edit sales quotations
+          href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Returns
+        items:
+        - name: Sales returns
+          href: warehousing/sales-returns.md
+      - name: Commission
+        items:
+        - name: Register sales commissions
+          href: sales-marketing/tasks/register-sales-commissions.md
+        - name: Set up sales commission rules
+          href: sales-marketing/tasks/set-up-sales-commission-rules.md
+      - name: Trade allowance
+        href: sales-marketing/trade-allowance.md
+      - name: Create a new trade agreement
+        href: sales-marketing/tasks/create-new-trade-agreement.md
+    - name: Service management
+      items:
+      - name: Service management overview
+        href: service-management/service-management-home-page.md
+      - name: Set up customer service
+        items:
+        - name: Set up service agreements
+          items:
+          - name: Service agreements overview
+            href: service-management/service-agreement-groups.md
+          - name: Create service agreements
+            href: service-management/create-service-agreements.md
+          - name: Service intervals
+            href: service-management/service-intervals.md
+          - name: Set up service intervals
+            href: service-management/set-up-service-intervals.md
+          - name: Time windows
+            href: service-management/time-windows.md
+          - name: Create time windows
+            href: service-management/create-time-windows.md
+          - name: Create a service template group
+            href: service-management/create-service-template-group.md
+        - name: Set up service tasks
+          items:
+          - name: Service tasks overview
+            href: service-management/service-tasks.md
+          - name: Create service task relations
+            href: service-management/create-service-task-relations.md
+        - name: Set up service objects
+          items:
+          - name: Service objects overview
+            href: service-management/service-objects.md
+          - name: Create service objects
+            href: service-management/create-service-task-relations.md
+          - name: Attach inventory items to service objects
+            href: service-management/attach-inventory-items-service-objects.md
+          - name: Service object groups
+            href: service-management/service-object-groups.md
+          - name: Set up template to represent objects at customer site
+            href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+          - name: Service object relations
+            href: service-management/service-object-relations.md
+          - name: Create service object relations
+            href: service-management/create-service-object-relations.md
+          - name: Template BOMs
+            href: service-management/template-boms.md
+          - name: Create a template BOM
+            href: service-management/create-template-bom.md
+          - name: Attach templates to service objects
+            href: service-management/attach-templates-service-objects.md
+        - name: Define reason codes for service orders
+          items: 
+          - name: Reason codes for service orders
+            href: service-management/reason-codes-service-orders.md
+          - name: Service order stages
+            href: service-management/service-order-stages.md
+          - name: Set up service order stages
+            href: service-management/set-up-service-order-stages.md
+          - name: Create reason codes
+            href: service-management/create-reason-codes.md
+        - name: Set up service agreements and subscriptions
+          items:
+          - name: Service level agreements overview
+            href: service-management/service-level-agreements.md
+          - name: Subscription sales prices
+            href: service-management/subscription-sales-prices.md
+          - name: Subscription groups
+            href: service-management/subscription-groups.md
+          - name: Set up subscription groups
+            href: service-management/set-up-subscription-groups.md
+          - name: Use stage reason codes
+            href: service-management/use-stage-reason-codes.md
+          - name: Integration for service agreements and projects
+            href: service-management/integration-service-agreements-projects.md
+        - name: Set up repair management
+          href: service-management/repair-management.md
+        - name: Set up customer returns
+          items:
+          - name: Customer returns overview
+            href: service-management/disposition-and-return-reason-codes.md
+          - name: Set up disposition codes
+            href: service-management/set-up-disposition-codes.md
+          - name: Set up return reason codes
+            href: service-management/set-up-return-reason-code.md
+          - name: Specify how to dispose of returned items
+            href: service-management/specify-how-to-dispose-of-returned-items.md
+      - name: Work with customer service
+        items:
+        - name: Work with customer service overview
+          href: service-management/working-with-customer-service.md
+        - name: Fulfill service agreements
+          items:
+          - name: Fulfill service agreements overview
+            href: service-management/fulfill-service-agreements-overview.md
+          - name: Develop and establish agreements
+            items:
+            - name: Develop and establish service agreements overview
+              href: service-management/service-agreements.md
+            - name: Create service agreements
+              href: service-management/create-service-agreements.md
+            - name: Service subscriptions
+              href: service-management/service-subscriptions.md
+            - name: Service templates
+              href: service-management/service-template.md
+            - name: Copy service templates lines
+              href: service-management/copy-service-template-lines.md
+          - name: Change the service order stage
+            href: service-management/change-service-order-stage.md
+          - name: Update and evaluate agreements
+            items:
+            - name: Manage template BOMs on object relations
+              href: service-management/manage-template-boms-on-object-relations.md
+            - name: Delete a service BOM
+              href: service-management/delete-service-bom.md
+            - name: Indexed sales prices
+              href: service-management/indexed-sales-prices.md
+            - name: Reduce the days on subscription fees
+              href: service-management/reduce-the-days-on-subscription-fees.md
+            - name: Reduction days example
+              href: service-management/reduction-days-example.md
+            - name: Update and index subscription sales prices
+              href: service-management/update-and-index-subscription-sales-prices.md
+        - name: Handle customer inquiries
+          items:
+          - name: Fulfill service agreements overview
+            href: service-management/fulfill-service-agreements-overview.md
+          - name: Start and stop time recording on a service order
+            href: service-management/start-and-stop-time-recording-on-a-service-order.md
+          - name: View the start time and duration of a service order
+            href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+          - name: View stage reason codes
+            href: service-management/view-stage-reason-codes.md
+          - name: View compliance with service level agreements
+            href: service-management/view-compliance-with-service-level-agreements.md
+        - name: Authorize customer returns
+          items:
+          - name: Disposition codes and return reason codes
+            href: service-management/disposition-and-return-reason-codes.md
+          - name: Return cost price and return lot ID
+            href: service-management/return-cost-price-and-return-lot-id.md
+          - name: Cancel a return order
+            href: service-management/cancel-return-order.md
+          - name: Create an item replacement order
+            href: service-management/create-item-replacement-order.md
+          - name: Delete a return order
+            href: service-management/delete-return-order.md
+          - name: Pass returned items on to inspection
+            href: service-management/pass-returned-items-on-to-inspection.md
+          - name: Post arrival journal for returned products
+            href: service-management/post-arrival-journal-for-returned-products.md
+          - name: Receive partial deliveries of returned items
+            href: service-management/receive-partial-deliveries-returned-items.md
+          - name: Receive returned items
+            href: service-management/receiving-returned-items.md
+          - name: Register the receipt of returned items
+            href: service-management/register-the-receipt-of-returned-items.md
+          - name: Take returned items through inspection
+            href: service-management/take-returned-items-through-inspection.md
+          - name: Packing slip updates for returns
+            href: service-management/packing-slip-updates-returns.md
+          - name: Perform invoice updates for returns
+            href: service-management/perform-invoice-updates-for-returns.md
+        - name: Deliver services
+          items:
+          - name: Plan and allocate service orders
+            items:
+            - name: Service orders
+              href: service-management/service-orders.md
+            - name: Automatically create service orders
+              href: service-management/auto-create-service-orders.md
+            - name: Service status and progress field interaction
+              href: service-management/service-status-and-progress-field-interaction.md
+            - name: Create service orders automatically
+              href: service-management/create-service-orders-automatically.md
+            - name: Create item requirements for service orders
+              href: service-management/create-item-requirements-service-orders.md
+            - name: Service order item requirements
+              href: service-management/service-order-item-requirements.md
+            - name: Subscription workflow overview
+              href: service-management/subscription-workflow-overview.md
+            - name: Combine service orders
+              href: service-management/combine-service-orders.md
+            - name: Create service subscriptions from a subscription group
+              href: service-management/create-service-subscriptions-from-subscription-group.md
+            - name: Project attached to service agreement
+              href: service-management/project-attached-to-service-agreement.md
+            - name: Create service subscriptions from a project
+              href: service-management/create-service-subscriptions-from-project.md
+          - name: Dispatching service order activities
+            items:
+            - name: Service activities
+              href: service-management/service-activities.md
+            - name: Dispatch board
+              href: service-management/dispatch-board.md
+            - name: Set up service activity types
+              href: service-management/set-up-service-activity-types.md
+            - name: Set up a preferred technician
+              href: service-management/set-up-preferred-technician.md
+            - name: Set up dispatch teams
+              href: service-management/set-up-dispatch-teams.md
+            - name: Prioritize service orders
+              href: service-management/prioritize-service-orders.md
+            - name: View the status of service orders
+              href: service-management/view-the-status-of-service-orders.md
+            - name: Monitor service activities
+              href: service-management/monitor-service-activities.md
+            - name: Reassign activities
+              href: service-management/reassign-activities.md
+            - name: Reverse changes in a dispatch board
+              href: service-management/reverse-changes-in-a-dispatch-board.md
+            - name: View undispatched service orders
+              href: service-management/view-undispatched-service-orders.md
+            - name: Modify a Service BOM
+              href: service-management/modify-service-bom.md
+          - name: Deliver service
+            items:
+            - name: Credit subscription transactions
+              href: service-management/credit-subscription-transactions.md
+            - name: Create subscription fee transactions
+              href: service-management/create-subscription-fee-transactions.md
+            - name: Accruing subscriptions
+              href: service-management/accruing-subscriptions.md
+            - name: Move service order lines
+              href: service-management/move-service-order-lines.md
+            - name: Cancel service orders
+              href: service-management/cancel-service-orders.md
+            - name: Create service orders manually
+              href: service-management/create-service-orders-manually.md
+            - name: Accrue subscription revenue
+              href: service-management/accrue-subscription-revenue.md
+            - name: Delete service orders
+              href: service-management/delete-service-orders.md
+            - name: Invoice subscription transactions
+              href: service-management/invoice-subscription-transactions.md
+    - name: Transportation management
+      items:
+      - name: Transportation management overview
+        href: transportation/transportation-management-overview.md
+      - name: Transportation management engines
+        href: transportation/transportation-management-engines.md
+      - name: Create a new transportation management engine
+        href: transportation/create-new-transportation-management-engine.md
+      - name: Associate a fuel index with a carrier as an accessorial charge
+        href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+      - name: Create a bill of lading
+        href: transportation/create-bill-of-lading.md
+      - name: Plan freight transportation routes
+        href: transportation/plan-freight-transportation-routes-multiple-stops.md
+      - name: Plan loads using hub consolidation
+        items:
+        - name: Plan loads using hub consolidation overview
+          href: transportation/plan-loads-hub-consolidation.md
+        - name: Plan loads and shipments using the Load planning workbench
+          href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+      - name: Include container weight and volume on load
+        href: transportation/include-container-weight-volume-on-load.md
+      - name: Reconcile freight manually
+        href: transportation/tasks/reconcile-freight-manually.md
+      - name: Reconcile freight
+        href: transportation/reconcile-freight-transportation-management.md
+      - name: Register driver check-in and check-out for an appointment
+        href: transportation/tasks/register-driver-check-check-out-appointment.md
+      - name: Set up a carrier fuel index
+        href: transportation/tasks/set-up-carrier-fuel-index.md
+      - name: Set up a transportation tender
+        href: transportation/tasks/set-up-transportation-tender.md
+      - name: Set up accessorial assignments
+        href: transportation/tasks/set-up-accessorial-assignments.md
+      - name: Set up an appointment for a load
+        href: transportation/tasks/set-up-appointment-load.md
+      - name: Set up automatic freight reconciliation
+        href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+      - name: Set up hub accessorial charges and accessorial masters
+        href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+      - name: Set up rate masters
+        href: transportation/tasks/set-up-rate-masters.md
+      - name: Set up shipping carriers
+        href: transportation/tasks/set-up-shipping-carriers.md
+      - name: Set up transportation constraints for an item
+        href: transportation/tasks/set-up-transportation-constraints-item.md
+    - name: Warehouse management
+      items:
+      - name: Warehouse management overview
+        href: warehousing/warehouse-management-overview.md
+      - name: Warehouse configuration
+        items:
+        - name: Warehouse configuration overview
+          href: warehousing/warehouse-configuration.md
+        - name: Set up a warehouse by using a warehouse configuration template
+          href: inventory/warehouse-template.md
+        - name: Control work by using work templates and location directives
+          href: warehousing/control-warehouse-location-directives.md
+        - name: Wave step codes
+          href: warehousing/wave-step-codes.md
+        - name: Configure wave processing
+          href: warehousing/tasks/configure-wave-processing.md
+        - name: Auto-update shipments
+          href: warehousing/auto-update-shipment.md
+        - name: Create a location profile
+          href: warehousing/tasks/create-location-profile.md
+        - name: Configure locations in a WMS-enabled warehouse
+          href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+        - name: Schedule load utilization
+          href: warehousing/schedule-load-utilization.md
+        - name: Schedule workload capacity
+          href: warehousing/schedule-workload-capacity.md
+        - name: Set up dispositions codes
+          href: warehousing/tasks/set-up-dispositions-codes.md
+        - name: Unit of measure and stocking policies
+          href: warehousing/unit-measure-stocking-policies.md
+        - name: Warehouse Power BI content
+          href: ../dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+        - name: System grouping on an open work list
+          href: warehousing/system-group-on-open-work-list.md
+        - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
+          href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Mobile barcode support
+          href: warehousing/mobile-barcode-support.md
+        - name: Set up warehouse for transfer orders
+          href: warehousing/transfer-orders-warehouse.md
+      - name: Warehouse work policies
+        items:
+        - name: Warehouse work policies overview
+          href: warehousing/warehouse-work-policies.md
+        - name: Set up warehouse work policies
+          href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+        - name: Movement of inventory with associated work in Warehouse management
+          href: warehousing/move-inventory-associated-work.md
+        - name: Create a work class
+          href: warehousing/tasks/create-work-class.md
+        - name: Manage warehouse workers
+          href: warehousing/manage-warehouse-workers.md
+        - name: Deferred processing of warehouse work
+          href: warehousing/deferred-put.md
+      - name: Partial release and partial shipment
+        items:
+        - name: Partial shipment of a transport load
+          href: warehousing/partial-shipping-of-transport-loads.md
+        - name: Batch release of partially reserved transfer orders
+          href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+      - name: Picking and packing
+        items:
+        - name: Set up cluster picking
+          href: warehousing/set-up-cluster-picking.md
+        - name: Set up containerization
+          href: warehousing/tasks/set-up-containerization.md
+        - name: Batch and license plate confirmation
+          href: warehousing/batch-and-license-plate-confirmation.md
+        - name: Enable license plate label printing
+          href: warehousing/tasks/license-plate-label-printing.md
+        - name: Scan bar codes using a camera in Dynamics 365 for Finance and Operations
+          href: warehousing/scan-bar-codes-using-a-camera.md
+        - name: Piece picking confirmation
+          href: warehousing/piece-picking-confirmation.md
+        - name: Packing materials and fees
+          href: warehousing/pack-materials-packing-material-fees.md
+        - name: Set up manual packing (February & May 2016 only)
+          href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+        - name: Set up short picking item reallocation
+          href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+      - name: Inventory counting
+        items:
+        - name: Reason codes for inventory counting
+          href: warehousing/reason-codes-for-counting-journals.md
+        - name: Block inventory
+          href: inventory/inventory-blocking.md
+        - name: Cycle counting
+          href: warehousing/cycle-counting.md
+        - name: Define cycle counting
+          href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+        - name: Partial location cycle counting
+          href: warehousing/partial-location-cycle-counting.md
+        - name: Define partial location cycle counting process
+          href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+        - name: Inventory journal
+          href: inventory/inventory-journals.md
+        - name: Inventory location
+          href: inventory/inventory-locations.md
+        - name: Inventory status
+          href: inventory/inventory-statuses.md
+        - name: Inventory tag counting
+          href: inventory/inventory-tag-counting.md
+      - name: Replenishment
+        items:
+        - name: Replenishment overview
+          href: warehousing/replenishment.md
+        - name: Immediate replenishment
+          href: warehousing/immediate-replenishment.md
+        - name: Replenishment with withdrawal kanbans
+          href: warehousing/material-replenishment-withdrawal-kanban.md
+        - name: Set up a min-max replenishment process
+          href: warehousing/tasks/set-up-min-max-replenishment-process.md
+      - name: Install and configure the warehousing app
+        items:
+        - name: Install and configure overview
+          href: warehousing/install-configure-warehousing-app.md
+        - name: Configure field names in warehousing app
+          href: warehousing/configure-app-field-names-priorities-warehouse.md
+        - name: Set up mobile devices for warehouse work
+          href: warehousing/configure-mobile-devices-warehouse.md
+        - name: Set up a mobile device menu item for completing work in a purchase order
+          href: warehousing/tasks/set-up-mobile-device-menu.md
+        - name: Set up a mobile device menu item to register received items
+          href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+        - name: Create a mobile device menu item for license plate consolidation
+          href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+        - name: Mixed license plate receiving on a mobile device
+          href: warehousing/mixed-license-plate-receiving.md
+        - name: Configure Display older batches within warehouse on a mobile device
+          href: warehousing/display-older-batches-within-warehouses.md
+        - name: Pick oldest batch on a mobile device
+          href: warehousing/pick-oldest-batch.md
+        - name: Process guide framework
+          href: warehousing/process-guide-framework.md
+      - name: Upgrade and migration
+        items:
+        - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to Finance and Operations
+          href: warehousing/upgrade-migration-warehouse-management-processes.md
+      - name: Receipts for registration and put-away
+        items:
+        - name: Register items for an advanced warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-advanced-warehousing.md
+        - name: Register items for a basic warehousing enabled item using an item arrival journal
+          href: warehousing/tasks/register-items-basic-warehousing.md
+        - name: Cross-dock products from receiving warehouse to stores
+          href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+        - name: Set up a location directive for purchase order put-away
+          href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+        - name: Set up a work template for purchase orders
+    - name: Supply Chain Management development 
+      items:
+      - name: Gantt control development guide
+        href: ../dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Create a new transportation management engine
+        href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+  - name: Finance and Operations apps development and administration 
+    href: dev-itpro/toc.yml
