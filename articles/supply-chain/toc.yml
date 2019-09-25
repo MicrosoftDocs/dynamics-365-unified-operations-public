@@ -382,8 +382,188 @@
         href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
     - name: Inventory management
       items:
+      - name: Inventory management overview
+        href: ../supply-chain/inventory/inventory-home-page.md
+      - name: Arrival
+        items:
+        - name: Arrival overview
+          href: ../supply-chain/inventory/arrival-overview.md
+        - name: Set up an item arrival overview profile
+          href: ../supply-chain/inventory/tasks/set-up-item-arrival-overview-profile.md
+      - name: Quality management
+        items:
+        - name: Quality management overview
+          href: ../supply-chain/inventory/enable-quality-management.md
+        - name: Quality management processes
+          href: ../supply-chain/inventory/quality-management-processes.md
+        - name: Nonconformance management
+          href: ../supply-chain/inventory/enable-nonconformance-management.md
+        - name: Set up prerequisites for management
+          href: ../supply-chain/inventory/tasks/set-up-prerequisites-nonconformance-management.md
+        - name: Create and process a conformance
+          href: ../supply-chain/inventory/tasks/create-process-non-conformance.md
+        - name: Quarantine orders
+          href: ../supply-chain/inventory/quarantine-orders.md
+        - name: Set up quality orders
+          href: ../supply-chain/inventory/tasks/set-up-quality-orders.md
+        - name: Inspect the quality of goods
+          href: ../supply-chain/inventory/tasks/inspect-quality-goods.md
+        - name: Inventory blocking
+          href: ../supply-chain/inventory/inventory-blocking.md
+        - name: Create and maintain inventory blocking
+          href: ../supply-chain/inventory/tasks/create-maintain-inventory-blocking.md
+      - name: Inventory operations
+        items:
+        - name: Inventory journals
+          href: ../supply-chain/inventory/inventory-journals.md
+        - name: Inventory locations
+          href: ../supply-chain/inventory/inventory-locations.md
+        - name: Inventory statuses
+          href: ../supply-chain/inventory/inventory-statuses.md
+        - name: Create a new warehouse layout
+          href: ../supply-chain/inventory/tasks/create-new-warehouse-layout.md
+        - name: Maintain bar code types
+          href: ../supply-chain/inventory/tasks/maintain-barcode-types.md
+        - name: Check the availability of stock
+          href: ../supply-chain/inventory/tasks/check-availability-stock.md
+        - name: Initialize stock levels in the warehouse
+          href: ../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md
+        - name: Transfer physical inventory within the warehouse
+          href: ../supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse.md
+        - name: Adjust stock levels in the warehouse (basic warehousing)
+          href: ../supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+        - name: Inventory tag counting
+          href: ../supply-chain/inventory/inventory-tag-counting.md
+        - name: Count inventory in a warehouse
+          href: ../supply-chain/inventory/tasks/count-inventory-warehouse.md
+        - name: Define inventory counting processes
+          href: ../supply-chain/inventory/tasks/define-inventory-counting-processes.md
+        - name: Set up consignment
+          href: ../supply-chain/inventory/consignment.md
+        - name: Change the ownership of consignment inventory based on production demand
+          href: ../supply-chain/inventory/tasks/change-ownership-consignment.md
+        - name: Create a consignment replenishment order
+          href: ../supply-chain/inventory/tasks/create-consignment-replenishment-order.md
+        - name: Monitor consignment inventory using vendor collaboration
+          href: ../supply-chain/inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+        - name: Item and raw material tracing in inventory, production, and sales
+          href: ../supply-chain/inventory/trace-items-raw-materials-inventory-production-sales.md
+        - name: Trace an item or raw material
+          href: ../supply-chain/inventory/tasks/trace-item-or-raw-material.md
+        - name: Merge inventory batch
+          href: ../supply-chain/inventory/merge-inventory-batches.md
+        - name: Correct inventory tracking information
+          href: ../supply-chain/inventory/tasks/correct-inventory-tracking-information.md
+        - name: Register serial number in the sales process
+          href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+        - name: Inventory on-hand mobile workspace
+          href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md
+      - name: Outbound process
+        items:
+        - name: Outbound process overview
+          href: ../supply-chain/inventory/outbound-process.md
+        - name: Reserve inventory quantities
+          href: ../supply-chain/inventory/reserve-inventory-quantities.md
+        - name: Reserve the same batch for a sales order
+          href: ../supply-chain/sales-marketing/reserve-same-batch-sales-order.md
+      - name: Inventory control
+        items:
+        - name: Inventory close
+          href: ../supply-chain/cost-management/inventory-close.md
+        - name: Running average cost price
+          href: ../supply-chain/cost-management/running-average-cost-price.md
+        - name: Adjust on-hand inventory cost value
+          href: ../supply-chain/cost-management/adjust-hand-inventory-cost-values.md
+        - name: Tracking running average cost per inventory dimension
+          href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
     - name: Master planning
       items:
+      - name: Master planning home page
+        href: ../supply-chain/master-planning/master-planning-home-page.md
+      - name: Master plans
+        items:
+        - name: Master plans overview
+          href: ../supply-chain/master-planning/master-plans.md
+        - name: Set up master plans
+          href: ../supply-chain/master-planning/master-planning-setup.md
+        - name: Master planning setup wizard
+          href: ../supply-chain/master-planning/master-planning-setup-wizard.md
+        - name: Coverage settings
+          href: ../supply-chain/master-planning/coverage-settings.md
+        - name: Define coverage rules for items
+          href: ../supply-chain/master-planning/tasks/define-coverage-rules-items.md
+        - name: Generate a constrained plan
+          href: ../supply-chain/master-planning/tasks/constrained-plan.md
+        - name: Create a material plan for co-products
+          href: ../supply-chain/master-planning/tasks/create-material-plan-co-products.md
+        - name: Maintain planned orders
+          href: ../supply-chain/master-planning/maintain-planned-orders.md
+        - name: Safety stock fulfillment for items
+          href: ../supply-chain/master-planning/safety-stock-replenishment.md
+        - name: Delays
+          href: ../supply-chain/master-planning/delays.md
+        - name: Use tracing for explosion
+          href: ../supply-chain/master-planning/trace-explosion.md
+        - name: Action messages
+          href: ../supply-chain/master-planning/action-messages.md
+        - name: Monitor a master planning run
+          href: ../supply-chain/master-planning/tasks/monitor-master-planning-run.md
+        - name: Create a schedule for a site
+          href: ../supply-chain/master-planning/tasks/create-schedule-site.md
+        - name: Create a plan for a site
+          href: ../supply-chain/master-planning/tasks/create-plan-site.md
+        - name: Calendars and master planning
+          href: ../supply-chain/master-planning/supply-chain-calendars-master-planning.md
+        - name: Improve master planning performance
+          href: ../supply-chain/master-planning/master-planning-performance.md
+        - name: Master plans and multisite functionality
+          items:
+          - name: Master planning and multisite functionality overview
+            href: ../supply-chain/master-planning/master-plan-multisite-functionality.md
+          - name: Master planning for site coverage, mandatory warehouse
+            href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md
+          - name: Master planning for site coverage, warehouse not mandatory
+            href: ../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+          - name: Master planning for site and warehouse coverage, warehouse mandatory
+            href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+          - name: Master planning for site and warehouse coverage, warehouse not mandatory
+            href: ../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+          - name: Determine the BOM version
+            href: ../supply-chain/master-planning/master-plan-bom-version-determined.md
+          - name: Explosion of a BOM version
+            href: ../supply-chain/master-planning/master-plan-explosion-bom-version.md
+        - name: Negative days and dynamic negative days
+          href: ../supply-chain/master-planning/more-about-dynamic-negative-days.md
+        - name: Create an intercompany plan
+          href: ../supply-chain/master-planning/tasks/create-intercompany-plan.md
+        - name: View outbound planned intercompany demand
+          href: ../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md
+        - name: Collaborate with internal supply chain customers
+          href: ../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md
+      - name: Demand forecasting
+        items:
+        - name: Demand forecasting overview
+          href: ../supply-chain/master-planning/introduction-demand-forecasting.md
+        - name: Demand forecasting setup
+          href: ../supply-chain/master-planning/demand-forecasting-setup.md
+        - name: Import historical data for demand forecasts
+          href: ../supply-chain/master-planning/import-historical-data.md
+        - name: Generate a statistical baseline forecast
+          href: ../supply-chain/master-planning/generate-statistical-baseline-forecast.md
+        - name: Make manual adjustment to the baseline forecast
+          href: ../supply-chain/master-planning/manual-adjustments-baseline-forecast.md
+        - name: Authorize an adjusted forecast
+          href: ../supply-chain/master-planning/authorize-adjusted-forecast.md
+        - name: Monitor forecast accuracy
+          href: ../supply-chain/master-planning/monitor-forecast-accuracy.md
+        - name: Remove outliers from historical transaction data when calculating a demand forecast
+          href: ../supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast.md
+        - name: Reduction keys
+          href: ../supply-chain/master-planning/reduction-keys.md
+        - name: Create a baseline forecast
+          href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
+        - name: Modify a demand forecast manually
+          href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
     - name: Mobile app
       items:
       - name: Mobile app home page
@@ -580,132 +760,132 @@
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
         href: procurement/procurement-sourcing-workflows.md
-    - name: Procurement catalogs
-      items:
-      - name: Procurement catalogs overview
-        href: procurement/procurement-catalogs.md
-      - name: Create a procurement catalog
-        href: procurement/tasks/create-procurement-catalog.md
-      - name: Set up a procurement category hierarchy
-        href: procurement/tasks/set-up-procurement-category-hierarchy.md
-    - name: Purchase requisitions
-      items:
-      - name: Purchase requisitions overview
-        href: procurement/purchase-requisitions-overview.md
-      - name: Purchase requisition workflow
-        href: procurement/purchase-requisitions-workflow.md
-    - name: Request for quotations (RFQs)
-      items:
-      - name: Request for quotations (RFQs) overview
-        href: procurement/request-quotations.md
-      - name: Create a request for quotation
-        href: procurement/tasks/create-request-quotation.md
-      - name: Create a requisition that uses an RFQ
-        href: procurement/tasks/create-requisition-uses-rfq.md
-      - name: Create a scoring method for RFQs
-        href: procurement/tasks/create-scoring-method-rfqs.md
-      - name: Create solicitation types and scoring criteria for RFQs
-        href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
-      - name: Enter and compare RFQ bids and award contracts
-        href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
-    - name: Purchase orders
-      items:
-      - name: Purchase order overview
-        href: procurement/purchase-order-overview.md
-      - name: Approve and confirm purchase orders
-        href: procurement/purchase-order-approval-confirmation.md
-      - name: Purchase order approval mobile workspace
-        href: procurement/purchase-order-mobile-workspace.md
-    - name: Purchase order creation
-      items:
-      - name: Create purchase orders manually
-        href: procurement/purchase-order-creation.md
-      - name: Create a purchase order
-        href: procurement/tasks/create-purchase-order.md
-      - name: Create a purchase order with a delivery schedule
-        href: procurement/tasks/create-purchase-order-delivery-schedule.md
-      - name: Create a purchase order for a one-time supplier
-        href: procurement/tasks/create-purchase-order-one-time-supplier.md
-      - name: Create a purchase release order when creating the purchase order
-        href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-      - name: Create a purchase release order from a purchase agreement
-        href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
-      - name: Create a purchase return order
-        href: procurement/tasks/create-purchase-return-order.md
-      - name: Create project purchase order
-        href: procurement/tasks/create-project-purchase-order.md
-      - name: Create a repeat purchase order
-        href: procurement/tasks/create-repeat-purchase-order.md
-      - name: Create a requisition for consumption
-        href: procurement/tasks/create-requisition-consumption.md
-    - name: Prices, discounts, and rebates
-      items:
-      - name: Purchase agreements
-        href: procurement/purchase-agreements.md
-      - name: Create a purchase agreement
-        href: procurement/tasks/create-purchase-agreement.md
-      - name: Vendor rebates
-        href: procurement/vendor-rebates.md
-    - name: Purchasing policies
-      items:
-      - name: Purchasing policies overview
-        href: procurement/purchase-policies.md
-      - name: Create purchasing policies
-        href: procurement/tasks/create-purchasing-policies.md
-      - name: Set up policies for procurement category hierarchies
-        href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
-    - name: Product receipts and invoicing
-      items:
-      - name: Product receipt against purchase orders
-        href: procurement/product-receipt-against-purchase-orders.md
-      - name: Overview of vendor invoices
-        href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-    - name: Vendor management and collaboration
-      items:
-      - name: Set up and maintain vendor collaboration
-        href: procurement/set-up-maintain-vendor-collaboration.md
-      - name: Manage vendor collaboration users
-        href: procurement/manage-vendor-collaboration-users.md
-      - name: Set up vendor accounts
-        href: procurement/set-up-vendor-accounts.md
-      - name: Create a vendor account
-        href: procurement/tasks/create-vendor-account.md
-      - name: Create a vendor bank account
-        href: procurement/tasks/create-vendor-bank-account.md
-      - name: Vendor posting profiles
-        href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-      - name: Vendor request configurations
-        href: procurement/vendor-request-configurations.md
-      - name: Vendor onboarding
-        href: procurement/vendor-onboarding.md
-      - name: Vendor collaboration with external vendors
-        href: procurement/vendor-collaboration-work-external-vendors.md
-      - name: Vendor collaboration with customers
-        href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
-      - name: Import vendor catalogs
-        href: procurement/vendor-catalogs-import.md
-      - name: Set up an external catalog for PunchOut eProcurement
-        href: procurement/set-up-external-catalog-for-punchout.md
-      - name: Use external catalogs for PunchOut eProcurement
-        href: procurement/use-external-catalogs-for-punchout.md
-      - name: Vendor collaboration mobile workspace
-        href: procurement/vendor-collaboration-mobile-workspace.md
-      - name: Approve vendors for specific procurement categories
-        href: procurement/tasks/approve-vendors-specific-procurement-categories.md
-      - name: Approve vendors for specific products
-        href: procurement/tasks/approve-vendors-specific-products.md
-      - name: Search for vendors
-        href: procurement/tasks/search-vendors.md
-      - name: Set up permissions for ordering products on behalf of someone else
-        href: procurement/tasks/set-up-permissions-ordering-products.md
-    - name: Procurement and sourcing tasks
-      items:
-      - name: Set up project resource information
-        href: procurement/tasks/set-up-project-resource-information.md
-      - name: Submit and approve project budgets
-        href: procurement/tasks/submit-approve-project-budget.md
-      - name: Submit and approve project budget revisions
-        href: procurement/tasks/submit-approve-project-budget-revision.md
+      - name: Procurement catalogs
+        items:
+        - name: Procurement catalogs overview
+          href: procurement/procurement-catalogs.md
+        - name: Create a procurement catalog
+          href: procurement/tasks/create-procurement-catalog.md
+        - name: Set up a procurement category hierarchy
+          href: procurement/tasks/set-up-procurement-category-hierarchy.md
+      - name: Purchase requisitions
+        items:
+        - name: Purchase requisitions overview
+          href: procurement/purchase-requisitions-overview.md
+        - name: Purchase requisition workflow
+          href: procurement/purchase-requisitions-workflow.md
+      - name: Request for quotations (RFQs)
+        items:
+        - name: Request for quotations (RFQs) overview
+          href: procurement/request-quotations.md
+        - name: Create a request for quotation
+          href: procurement/tasks/create-request-quotation.md
+        - name: Create a requisition that uses an RFQ
+          href: procurement/tasks/create-requisition-uses-rfq.md
+        - name: Create a scoring method for RFQs
+          href: procurement/tasks/create-scoring-method-rfqs.md
+        - name: Create solicitation types and scoring criteria for RFQs
+          href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+        - name: Enter and compare RFQ bids and award contracts
+          href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+      - name: Purchase orders
+        items:
+        - name: Purchase order overview
+          href: procurement/purchase-order-overview.md
+        - name: Approve and confirm purchase orders
+          href: procurement/purchase-order-approval-confirmation.md
+        - name: Purchase order approval mobile workspace
+          href: procurement/purchase-order-mobile-workspace.md
+      - name: Purchase order creation
+        items:
+        - name: Create purchase orders manually
+          href: procurement/purchase-order-creation.md
+        - name: Create a purchase order
+          href: procurement/tasks/create-purchase-order.md
+        - name: Create a purchase order with a delivery schedule
+          href: procurement/tasks/create-purchase-order-delivery-schedule.md
+        - name: Create a purchase order for a one-time supplier
+          href: procurement/tasks/create-purchase-order-one-time-supplier.md
+        - name: Create a purchase release order when creating the purchase order
+          href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+        - name: Create a purchase release order from a purchase agreement
+          href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+        - name: Create a purchase return order
+          href: procurement/tasks/create-purchase-return-order.md
+        - name: Create project purchase order
+          href: procurement/tasks/create-project-purchase-order.md
+        - name: Create a repeat purchase order
+          href: procurement/tasks/create-repeat-purchase-order.md
+        - name: Create a requisition for consumption
+          href: procurement/tasks/create-requisition-consumption.md
+      - name: Prices, discounts, and rebates
+        items:
+        - name: Purchase agreements
+          href: procurement/purchase-agreements.md
+        - name: Create a purchase agreement
+          href: procurement/tasks/create-purchase-agreement.md
+        - name: Vendor rebates
+          href: procurement/vendor-rebates.md
+      - name: Purchasing policies
+        items:
+        - name: Purchasing policies overview
+          href: procurement/purchase-policies.md
+        - name: Create purchasing policies
+          href: procurement/tasks/create-purchasing-policies.md
+        - name: Set up policies for procurement category hierarchies
+          href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+      - name: Product receipts and invoicing
+        items:
+        - name: Product receipt against purchase orders
+          href: procurement/product-receipt-against-purchase-orders.md
+        - name: Overview of vendor invoices
+          href: ../financials/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+      - name: Vendor management and collaboration
+        items:
+        - name: Set up and maintain vendor collaboration
+          href: procurement/set-up-maintain-vendor-collaboration.md
+        - name: Manage vendor collaboration users
+          href: procurement/manage-vendor-collaboration-users.md
+        - name: Set up vendor accounts
+          href: procurement/set-up-vendor-accounts.md
+        - name: Create a vendor account
+          href: procurement/tasks/create-vendor-account.md
+        - name: Create a vendor bank account
+          href: procurement/tasks/create-vendor-bank-account.md
+        - name: Vendor posting profiles
+          href: ../financials/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+        - name: Vendor request configurations
+          href: procurement/vendor-request-configurations.md
+        - name: Vendor onboarding
+          href: procurement/vendor-onboarding.md
+        - name: Vendor collaboration with external vendors
+          href: procurement/vendor-collaboration-work-external-vendors.md
+        - name: Vendor collaboration with customers
+          href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+        - name: Import vendor catalogs
+          href: procurement/vendor-catalogs-import.md
+        - name: Set up an external catalog for PunchOut eProcurement
+          href: procurement/set-up-external-catalog-for-punchout.md
+        - name: Use external catalogs for PunchOut eProcurement
+          href: procurement/use-external-catalogs-for-punchout.md
+        - name: Vendor collaboration mobile workspace
+          href: procurement/vendor-collaboration-mobile-workspace.md
+        - name: Approve vendors for specific procurement categories
+          href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+        - name: Approve vendors for specific products
+          href: procurement/tasks/approve-vendors-specific-products.md
+        - name: Search for vendors
+          href: procurement/tasks/search-vendors.md
+        - name: Set up permissions for ordering products on behalf of someone else
+          href: procurement/tasks/set-up-permissions-ordering-products.md
+      - name: Procurement and sourcing tasks
+        items:
+        - name: Set up project resource information
+          href: procurement/tasks/set-up-project-resource-information.md
+        - name: Submit and approve project budgets
+          href: procurement/tasks/submit-approve-project-budget.md
+        - name: Submit and approve project budget revisions
+          href: procurement/tasks/submit-approve-project-budget-revision.md
     - name: Product information management
       items:
       - name: Product information overview
@@ -1378,52 +1558,50 @@
               href: service-management/invoice-subscription-transactions.md
     - name: Transportation management
       items:
-      - name: Transportation management
+      - name: Transportation management overview
+        href: transportation/transportation-management-overview.md
+      - name: Transportation management engines
+        href: transportation/transportation-management-engines.md
+      - name: Create a new transportation management engine
+        href: transportation/create-new-transportation-management-engine.md
+      - name: Associate a fuel index with a carrier as an accessorial charge
+        href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+      - name: Create a bill of lading
+        href: transportation/create-bill-of-lading.md
+      - name: Plan freight transportation routes
+        href: transportation/plan-freight-transportation-routes-multiple-stops.md
+      - name: Plan loads using hub consolidation
         items:
-        - name: Transportation management overview
-          href: transportation/transportation-management-overview.md
-        - name: Transportation management engines
-          href: transportation/transportation-management-engines.md
-        - name: Create a new transportation management engine
-          href: transportation/create-new-transportation-management-engine.md
-        - name: Associate a fuel index with a carrier as an accessorial charge
-          href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
-        - name: Create a bill of lading
-          href: transportation/create-bill-of-lading.md
-        - name: Plan freight transportation routes
-          href: transportation/plan-freight-transportation-routes-multiple-stops.md
-        - name: Plan loads using hub consolidation
-          items:
-          - name: Plan loads using hub consolidation overview
-            href: transportation/plan-loads-hub-consolidation.md
-          - name: Plan loads and shipments using the Load planning workbench
-            href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
-        - name: Include container weight and volume on load
-          href: transportation/include-container-weight-volume-on-load.md
-        - name: Reconcile freight manually
-          href: transportation/tasks/reconcile-freight-manually.md
-        - name: Reconcile freight
-          href: transportation/reconcile-freight-transportation-management.md
-        - name: Register driver check-in and check-out for an appointment
-          href: transportation/tasks/register-driver-check-check-out-appointment.md
-        - name: Set up a carrier fuel index
-          href: transportation/tasks/set-up-carrier-fuel-index.md
-        - name: Set up a transportation tender
-          href: transportation/tasks/set-up-transportation-tender.md
-        - name: Set up accessorial assignments
-          href: transportation/tasks/set-up-accessorial-assignments.md
-        - name: Set up an appointment for a load
-          href: transportation/tasks/set-up-appointment-load.md
-        - name: Set up automatic freight reconciliation
-          href: transportation/tasks/set-up-automatic-freight-reconciliation.md
-        - name: Set up hub accessorial charges and accessorial masters
-          href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
-        - name: Set up rate masters
-          href: transportation/tasks/set-up-rate-masters.md
-        - name: Set up shipping carriers
-          href: transportation/tasks/set-up-shipping-carriers.md
-        - name: Set up transportation constraints for an item
-          href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Plan loads using hub consolidation overview
+          href: transportation/plan-loads-hub-consolidation.md
+        - name: Plan loads and shipments using the Load planning workbench
+          href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+      - name: Include container weight and volume on load
+        href: transportation/include-container-weight-volume-on-load.md
+      - name: Reconcile freight manually
+        href: transportation/tasks/reconcile-freight-manually.md
+      - name: Reconcile freight
+        href: transportation/reconcile-freight-transportation-management.md
+      - name: Register driver check-in and check-out for an appointment
+        href: transportation/tasks/register-driver-check-check-out-appointment.md
+      - name: Set up a carrier fuel index
+        href: transportation/tasks/set-up-carrier-fuel-index.md
+      - name: Set up a transportation tender
+        href: transportation/tasks/set-up-transportation-tender.md
+      - name: Set up accessorial assignments
+        href: transportation/tasks/set-up-accessorial-assignments.md
+      - name: Set up an appointment for a load
+        href: transportation/tasks/set-up-appointment-load.md
+      - name: Set up automatic freight reconciliation
+        href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+      - name: Set up hub accessorial charges and accessorial masters
+        href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+      - name: Set up rate masters
+        href: transportation/tasks/set-up-rate-masters.md
+      - name: Set up shipping carriers
+        href: transportation/tasks/set-up-shipping-carriers.md
+      - name: Set up transportation constraints for an item
+        href: transportation/tasks/set-up-transportation-constraints-item.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
