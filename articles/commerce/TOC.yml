@@ -24,9 +24,11 @@
     href: select-site-theme.md
   - name: Add a favicon
     href: add-favicon.md
+  - name: Add a welcome message
+    href: add-welcome-message.md 
   - name: Add a copyright notice
     href: add-copyright-notice.md
-  - name: Add languages to your site
+  - name: Add languages
     href: add-languages-to-site.md
 - name: Make your site compliant
   items:
