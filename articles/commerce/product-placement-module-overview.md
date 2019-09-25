@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Product discovery via category browse, search results & product collection modules
-description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
+title: Product placement module overview
+description: This topic covers product placement modules in Dynamics 365 Commerce.
 author: asharchw
 manager: annbe
 ms.date: 10/01/2019
@@ -37,13 +37,16 @@ ms.dyn365.ops.version: Release 10.0.5
 
 Product discovery is a primary tool for retailers to engage with their shoppers across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
 
-Product collection represent physical products and services on the website. On interaction, the product collection typically navigates to a detail page for users to purchase, acquire, or learn more about the product or service. 
+Product collection modules represent physical products and services on the website. On interaction, the product collection typically navigates to a detail page for users to purchase, acquire, or learn more about the product or service. 
 
 The source for the product groups or collection – could be an editorial collections (manually defined in back-office as related products for a product, or product lists), algorithmic lists like new, best-selling, trending or machine-learning based recommendations. 
 
-  ![product collection across various interactions on the site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![product collection across various interactions on the site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
-> **Note** Always use product collection to show a group of products of a similar type or theme other than the search results. And for default categorized products & search results use 'Category page summary > Category page > Product Slot > Product search result'.
+> [!NOTE]
+> Always use product collection modules to show a group of products of a similar type or theme other than the search results. And for default categorized products & search results use 'Category page summary > Category page > Product Slot > Product search result'.
+
+The following table shows product collection modules and their types and descriptions.
 
 | # | Product collection kind     | Type | Description                                                                                                                                                                                                                   |
 |---|----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,7 +62,8 @@ The source for the product groups or collection – could be an editorial collec
 
 # How to add a category browse / search results pages to your website pages
 
-> **Note**: This is a generic setup for a list page, which currently encompasses both Category and Search pages. They can be created using the same template, or using different templates both based on the "Category Page" module, depending on desired enrichment experience. 
+> [!NOTE]
+> This is a generic setup for a list page, which currently encompasses both Category and Search pages. They can be created using the same template, or using different templates both based on the "Category Page" module, depending on desired enrichment experience. 
 
 1. Go to your site and create a new template 
 ![start defining category template](./media/Category_template.png)
@@ -91,11 +95,13 @@ For all the slots within the Category Page fill out the modules you’d like you
       1. Image quality 
    ![Product slot - product search result - Category and search results](./media/Category_page_body_productsSlot_searchresults.png) 
    
-   > **Note**: All of the aforementioned modules should be authorable by following supporting self-explanatory tooltips for every configuration in the tools.  
+> [!NOTE]
+> All of the aforementioned modules should be authorable by following supporting self-explanatory tooltips for every configuration in the tools.  
 
 Once you are happy with the template, Check-in and publish the template. Then we have to create both a Search Page and a Category Page based on these templates. 
 
- > **Note** : These pages will work in a contextual manner, as for category page there will be no default category to use, and for search page there will be no search query. 
+> [!NOTE]
+> These pages will work in a contextual manner, as for category page there will be no default category to use, and for search page there will be no search query. 
  
 1. Go to your site and create a new page  - choose the template you may have created in the above steps. 
 
@@ -111,7 +117,7 @@ Once you are happy with the template, Check-in and publish the template. Then we
        ![category-default-alias](./media/CategoryDefaultAlias.png)
  
  
-# How to add a product collection to a category page and make an enriched category page
+## Add a product collection module to a category page
 
 1. Go to sites, create a new page and choose the template same as your default category page
 1. From the page editor (assuming you are able to check out the page). From Page Outline, select 'Sub footer slot' and 'Add container'
