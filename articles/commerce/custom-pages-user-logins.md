@@ -117,26 +117,25 @@ We'll come back to this policy once we have built out the custom pages to finish
 To build the custom pages to handle user logins, do the following.
 
 1. In Commerce authoring tools, navigate to your site. 
-1. Build five (5) templates and 5 pages total as follows:
+1. Build five templates and five pages as follows:
+    - A 'Sign In' template and page that use the 'Sign in' module.
+    - A 'Sign Up' template and page that use the 'Sign up' module.
+    - A 'Password Reset' template and page that use the 'Password reset' module.
+    - A 'Password Reset verification' template and page that use the 'Password reset verification' module.
+    - A 'Profile Edit' template and page that use the 'Account profile edit' module
 
-- A 'Sign In' template and page using the 'Sign in' module.
-- A 'Sign Up' template and page using the 'Sign up' module.
-- A 'Password Reset' template and page using the 'Password reset' module.
-- A 'Password Reset verification' template and page using the 'Password reset verification' module.
-- A 'Profile Edit' template and page using the 'Account profile edit' module
+When building the pages, do the following.
 
-When building the pages:
-
-- Use a layout and style that best suits your business needs per page or module
+- Use a layout and style that best suits your business needs per page or module.
 - Publish all pages and URLs to utilize in the AAD B2C setup.
 - Once published, collect the URLs to use for the AAD B2C policy configurations. Each URL will be used with a `?preloadscripts=true` suffix added.
 
 >[!IMPORTANT]
->Do not re-use Universal Headers and Footers with relative links.  As these pages will be hosted in the AAD B2C domain when in use, only direct URLs should be used for any links.
+>Do not reuse universal headers and footers with relative links. As these pages will be hosted in the AAD B2C domain when in use, only absolute URLs should be used for any links.
 
 ## Configure AAD B2C policies with custom page information 
 
-Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (policies)" menu.
+Navigate back to the Azure Portal AAD B2C page and go to the **User Flows (policies)** menu.
 
 ### Update the "Sign up and sign in" policy with custom page information
 
@@ -145,11 +144,11 @@ To update the "Sign up and sign in" policy with custom page information, do the 
 1. In the previously-built **Sign in and sign up** policy, go to the **Page layouts** section. 
 1. Select the **Unified sign up or sign in page** layout.
 1. For **Use custom page content**, select **Yes**.
-1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, `www.<*my domain*>.com/sign-in?preloadscripts=true`).
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 1. Select the **Local account sign up page** layout.
 1. For **Use custom page content**, select **Yes**.
-1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, `www.<*my domain*>.com/sign-in?preloadscripts=true`).
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 1. In the **User attributes** section, do the following.
     1. For **Email Address**, **Given Name**, and **Surname**, select **No** for **Requires Verification".
@@ -166,7 +165,7 @@ To update the "Profile editing" policy with custom page information, do the foll
 1. In the previously-built **Profile Editing** policy, go to the **Page layouts** section.
 1. Select the **Profile edit page"** layout.
 1. For **Use custom page content**, select **Yes**.
-1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, `www.<*my domain*>.com/sign-in?preloadscripts=true`).
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 1. In the **User attributes** section, do the following.
     1. For **Email Address**, **Given Name**, select **No** for **Requires Verification".
@@ -179,11 +178,11 @@ To update the "Password reset" policy with custom page information, do the follo
 1. In the previously-built **Password Reset** policy, go to the **Page layouts** section.
 1. Select the **New password page** layout.
 1. For **Use custom page content**, select **Yes**.
-1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, `www.<*my domain*>.com/sign-in?preloadscripts=true`).
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 1. Select the **Account verification page" Layout
 1. For **Use custom page content**, select **Yes**
-1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, `www.<*my domain*>.com/sign-in?preloadscripts=true`).
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 
 ## Customize default text strings for labels and descriptions
