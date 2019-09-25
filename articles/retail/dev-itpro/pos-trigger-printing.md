@@ -74,14 +74,21 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                   | Type                    | Description                                                        |
 |---------------------------|-------------------------|--------------------------------------------------------------------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before creating a new customer.             |
-| PostCustomerAddTrigger    | Non-cancelable          | Executed after creating a new customer.              |
-| PreCustomerClearTrigger   | PreCustomerClearTrigger | Executed before the customer cleared from the cart. |
+| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |
+| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |
+| PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |
 | PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
+| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |
+| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |
+| PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |
+| PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |
+| PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |
+
+
 
 ## Discount triggers
 
