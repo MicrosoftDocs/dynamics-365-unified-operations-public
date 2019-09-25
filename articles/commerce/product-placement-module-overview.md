@@ -28,10 +28,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Product discovery via category browse, search results & product collection modules  
+# Product placement module overview  
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
+This topic covers product placement modules in Dynamics 365 Commerce.
 
 ## Overview
 
@@ -48,17 +50,17 @@ The source for the product groups or collection – could be an editorial collec
 
 The following table shows product collection modules and their types and descriptions.
 
-| # | Product collection kind     | Type | Description                                                                                                                                                                                                                   |
-|---|----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | Category browse           | Editorial | Retailers create a retail channel navigation category hierarchy to set up a category structure for products that they offer through their online. |
-| 1 | Search results           | Search-query | This list shows products that best-match the search query by the shopper.|
-| 1 | Related products           | Editorial | This list shows products configured as related products in the back office by a Merchandising manager for the relation type chosen by the author.|
-| 1 | Curated product lists    | Editorial | Here are the custom lists created in the back office by merchandizers and editors.|
-| 3 | New                        | Algorithmic | This list shows the newest products assorted to channels and catalogs.|
-| 4 | Best selling               | Algorithmic | This list shows products ranked by the highest number of sales.                      |               
-| 5 | Trending                   | Algorithmic | This list shows the highest performing products for a given time period.|
-| 6 | Frequently bought together | AI / ML  | This list uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased for a given seed item.|
-| 7 | People also like           | AI / ML | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
+| Product collection module     | Type | Description                                                                                                                                                                                                                   |
+|----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Category browse           | Editorial | Retailers create a retail channel navigation category hierarchy to set up a category structure for products that they offer through their online. |
+| Search results           | Search-query | This list shows products that best-match the search query by the shopper.|
+| Related products           | Editorial | This list shows products configured as related products in the back office by a Merchandising manager for the relation type chosen by the author.|
+| Curated product lists    | Editorial | Here are the custom lists created in the back office by merchandizers and editors.|
+| New                        | Algorithmic | This list shows the newest products assorted to channels and catalogs.|
+| Best selling               | Algorithmic | This list shows products ranked by the highest number of sales.                      |               
+| Trending                   | Algorithmic | This list shows the highest performing products for a given time period.|
+| Frequently bought together | AI / ML  | This list uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased for a given seed item.|
+| People also like           | AI / ML | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
 
 ## Add category browse and search results modules to a category page
 
