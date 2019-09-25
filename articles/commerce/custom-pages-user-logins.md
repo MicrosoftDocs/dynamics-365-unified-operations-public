@@ -44,7 +44,7 @@ The custom Commerce pages can be built using the sign in, edit profile, or passw
 
 ## Set up B2C policies
 
-Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure Portal, select **User flows (policies)** in the **Policies** section, as shown in the following screenshot.   
+Once you have set up your AAD B2C tenant and associated it with your Commerce environment, in the Azure AD B2C page in the Azure portal, select **User flows (policies)** in the **Policies** section, as shown in the following screenshot.   
 
 ![B2C Custom Policies Menu](./media/B2C_CustomPage_PoliciesMenu.png)
 
@@ -145,7 +145,7 @@ Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (polici
 
 To update the "Sign up and sign in" policy with custom page information, do the following.
 
-1. In the previously-built **Sign in and sign up** policy, navigate to the **Page layouts** section. 
+1. In the previously-built **Sign in and sign up** policy, go to the **Page layouts** section. 
 1. Select the **Unified sign up or sign in page** layout.
 1. For **Use custom page content**, select **Yes**.
 1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
@@ -155,10 +155,10 @@ To update the "Sign up and sign in" policy with custom page information, do the 
 1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
 1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 1. In the **User attributes** section, do the following.
-    1. For **Email Address**, **Given Name**, and **Surname**,  fields for "Requires Verification" to "No"
-    1. Set Given Name and Surname fields for "Optional" to "No"
+    1. For **Email Address**, **Given Name**, and **Surname**, select **No** for **Requires Verification".
+    1. For **Given Name** and **Surname**, select **No** for **Optional**.
 
-The following image show the (lorem ipsum).  
+The following image show the **Page layouts** screen.  
 
 ![Sign Up Page Policy Configuration](./media/B2C_SignUp_PageURLConfig.png)
 
@@ -166,41 +166,41 @@ The following image show the (lorem ipsum).
 
 To update the "Profile editing" policy with custom page information, do the following.
 
-- Select your earlier built **Profile Editing** policy. 
-- Navigate to the 'Page layouts' section. 
-- Select the "Profile edit page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/profile-edit?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
-  - In the User attributes section:
-    - Set Given Name, and Surname fields for "Requires Verification" to "No"
-    - Set Given Name and Surname fields for "Optional" to "No"
+1. In the previously-built **Profile Editing** policy, go to the **Page layouts** section.
+1. Select the **Profile edit page"** layout.
+1. For **Use custom page content**, select **Yes**.
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
+1. In the **User attributes** section, do the following.
+    1. For **Email Address**, **Given Name**, select **No** for **Requires Verification".
+    1. For **Given Name** and **Surname**, select **No** for **Optional**.
     
 ### Update the "Password reset" policy with custom page information
 
 To update the "Password reset" policy with custom page information, do the following.
 
-- Select your earlier built **Password Reset** policy. 
-- Navigate to the 'Page layouts' section. 
-- Select the "New password page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/password-reset?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
-- Select the "Account verification page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/password-reset-verification?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
+1. In the previously-built **Password Reset** policy, go to the **Page layouts** section.
+1. Select the **New password page** layout.
+1. For **Use custom page content**, select **Yes**.
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
+1. Select the **Account verification page" Layout
+1. For **Use custom page content**, select **Yes**
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
 
-The login modules as seen in the Starter Kit have default strings set for the labels and descriptions. These items can be customized in the SDK by updating the values in the module's global.json.
+## Customize default text strings for labels and descriptions
 
-For example, the text for the forget password link showing as "Forgotten password?" can be edited in the Module's global.json of the starter kit to "Forgot Password?".
+Starter kit login modules are prepopulated with default text strings for the labels and descriptions. These items can be customized in the SDK by updating the values in the login module's global.json file.
 
-The following image show the (lorem ipsum).  
+For example, the text for the forget password link showing as "Forgotten password?" can be edited in the the starter kit login module's global.json file of  to "Forgot Password?".
+
+The following image shows default "Forgotten password?" text string on the sign-in screen.  
 
 ![Sign Up Module Strings](./media/B2C_SignUp_ModuleFace.png)
 
-The following image show the (lorem ipsum).  
+The following image shows where text strings can be edited in the login module's global.json file.  
 
 ![SDK Global JSON editing string labels for modules](./media/B2C_CustomizingStringsForModule.png)
 
-Once completed, deploying the updated modules package will reflect the changes in the displaying module in the Commerce Authoring Tools and when published.
+Once updated and published, the changes will appear in the displaying module both in Commerce and on the live sign-in page.
