@@ -52,19 +52,19 @@ The following diagram shows different types of product collections used on an e-
 
 ## Product collection modules, types, and descriptions
 
-The following table shows product collection modules and their types and descriptions.
+The following table lists various types of Commerce product collection modules and their descriptions.
 
 | Product collection module     | Type | Description                                                                                                                                                                                                                   |
 |----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Category browse           | Editorial | Retailers create a retail channel navigation category hierarchy to set up a category structure for products that they offer through their online. |
-| Search results           | Search-query | This list shows products that best-match the search query by the shopper.|
-| Related products           | Editorial | This list shows products configured as related products in the back office by a merchandising manager for the relation type chosen by the author.|
-| Curated product lists    | Editorial | Here are the custom lists created in the back office by merchandizers and editors.|
-| New                        | Algorithmic | This list shows the newest products assorted to channels and catalogs.|
-| Best selling               | Algorithmic | This list shows products ranked by the highest number of sales.                      |               
-| Trending                   | Algorithmic | This list shows the highest performing products for a given time period.|
-| Frequently bought together | Artificial intelligence / Machine learning  | This list uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased for a given seed item.|
-| People also like           | Artificial intelligence / Machine learning | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
+| Category browse           | Editorial | Uses a retail channel navigation category hierarchy created by retailers to a display a browsing flow for products offered in a site category|
+| Search results           | Search-query | Displays a list of products that best match the search query entered by the customer|
+| Related products           | Editorial | Displays a list of products configured as related products in Retail by a merchandising manager for the relation type chosen by the author|
+| Curated product lists    | Editorial | Displays custom lists created in Retail by merchandizers and editors|
+| New                        | Algorithmic | Displays a list of the newest products assorted to channels and catalogs|
+| Best selling               | Algorithmic | Displays a list of products ranked by the highest number of sales                      |               
+| Trending                   | Algorithmic | Displays a list of the highest performing products for a given time period|
+| Frequently bought together | Artificial intelligence / Machine learning  | Uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased with a given product|
+| People also like           | Artificial intelligence / Machine learning | Uses machine learning to analyze consumer purchase patterns to recommend items related to a given product|
 
 For information on using product collection modules, see [Add collection modules to a category page](add-product-collection-modules.md).
 
