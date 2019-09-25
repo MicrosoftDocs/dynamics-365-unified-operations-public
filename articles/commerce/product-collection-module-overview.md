@@ -43,12 +43,12 @@ Product collection modules represent physical products and services on the websi
 
 The sources for product collections can be editorial lists (manually defined in Dynamics 365 Retail as related products for a product, or product lists), algorithmic lists (such as "new," "best-selling," or "trending"), or machine learning-based recommendations. 
 
-The following diagram shows different types of product collections used on an e-Commerce site.
+The following diagram shows the different types of product collections used on an e-Commerce site.
 
-![product collection across various interactions on the site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![A diagram showing the different types of product collections used on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type or theme other than the search results. And for default categorized products & search results use 'Category page summary > Category page > Product Slot > Product search result'.
+> Always use product collection modules to show a group of products of a similar type or theme other than the search results. 
 
 ## Product collection modules, types, and descriptions
 
@@ -57,7 +57,7 @@ The following table lists various types of Commerce product collection modules a
 | Product collection module     | Type | Description                                                                                                                                                                                                                   |
 |----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Category browse           | Editorial | Uses a retail channel navigation category hierarchy created by retailers to a display a browsing flow for products offered in a site category|
-| Search results           | Search-query | Displays a list of products that best match the search query entered by the customer|
+| Search results           | Search query | Displays a list of products that best match the search query entered by the customer|
 | Related products           | Editorial | Displays a list of products configured as related products in Retail by a merchandising manager for the relation type chosen by the author|
 | Curated product lists    | Editorial | Displays custom lists created in Retail by merchandizers and editors|
 | New                        | Algorithmic | Displays a list of the newest products assorted to channels and catalogs|
