@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8. For more information about version 10.0, see [Additional resources](whats-new-changed-10.md#additional-resources).
 
-To learn about the features in Microsoft Dynamics 365 for Retail, see [What's new or changed in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
+To learn about the features in Retail, see [What's new or changed in Dynamics 365 for Retail (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/retail/get-started/april-whats-new).
 
 ## Extensibility enhancements
 

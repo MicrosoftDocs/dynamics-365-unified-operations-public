@@ -68,7 +68,7 @@ You can also download a template from LCS and import it for versions 7.1 or late
 > 1.	Log in to LCS.
 > 2.	Click the **Shared asset library** tile.
 > 3.	Select the **Data package asset** type.
-> 4.	Click the template named **Template-x.x-Person search**, where x.x is the version of Finance, Supply Chain Management, Retail or Talent that you're using, and download it.
+> 4.	Click the template named **Template-x.x-Person search**, where x.x is the application version that you're using, and download it.
 > 5.	Open the **Data Management** workspace.
 > 6.	If this is the first time that the workspace has been opened, the workspace will load all of the data entities. All entities loaded before you download the template.
 > 7.	Click on the **Templates** tile.

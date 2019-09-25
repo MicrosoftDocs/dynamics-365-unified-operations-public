@@ -433,6 +433,8 @@
       href: corehr-custom-fields.md  
   - name: Troubleshoot Talent
     items:
+    - name: Optimize performance with auto cleanup tasks
+      href: talent-batch-history-cleanup.md
     - name: Troubleshoot posting jobs to LinkedIn
       href: attract-troubleshoot-linkedin.md
     - name: Analytic reports aren't updated
