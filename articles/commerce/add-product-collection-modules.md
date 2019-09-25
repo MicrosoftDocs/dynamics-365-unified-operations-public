@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add product collection modules to a category page
+title: Add a product collection module to a category page
 description: This topic describes how to add product collection modules to a category page in Dynamics 365 Commerce.
 author: asharchw
 manager: annbe
@@ -28,12 +28,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Add product collection modules to a category page  
+# Add a product collection module to a category page  
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add product collection modules to a category page in Dynamics 365 Commerce.
+This topic describes how to add a product collection module to a category page in Dynamics 365 Commerce.
 
 ## Overview
 
