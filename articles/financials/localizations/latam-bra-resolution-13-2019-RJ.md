@@ -1,5 +1,36 @@
-Overview
-========
+---
+# required metadata
+
+title: SPED fiscal resolution 13/2019 RJ
+description: This topic explains how to set up and generate SPED ECD text files.
+author: v-oloski
+manager: AnnBe
+ms.date: 09/24/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology:
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Brazil
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: 7.0
+
+---
+
+# SPED fiscal resolution 13/2019 RJ
+
+[!include [banner](../includes/banner.md)]
 
 RJ has published Resolution 13/2019, ( “Resolution” below in text) which defines
 how an NF-e should be issued, and how to record such information in the EFD ICMS
