@@ -72,10 +72,6 @@
       href: author-footer-module.md
     - name: Add a video player module
       href: add-video-player.md
-  - name: Error handling
-    items:
-    - name: Build custom response pages for 4xx/5xx status code errors
-      href: build-pages-400-500-errors.md
 - name: Ratings and reviews
   items:
   - name: Manage ratings and reviews
@@ -96,4 +92,11 @@
     href: modify-product-recommendation-results.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
-
+- name: Reporting
+  items:
+  - name: Generate online channel reports
+    href: generate-reports.md
+- name: Error handling
+  items:
+  - name: Build custom response pages for 4xx/5xx status code errors
+    href: build-pages-400-500-errors.md
