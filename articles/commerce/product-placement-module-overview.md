@@ -60,10 +60,13 @@ The following table shows product collection modules and their types and descrip
 | 6 | Frequently bought together | AI / ML  | This list uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased for a given seed item.|
 | 7 | People also like           | AI / ML | This list uses machine learning to analyze consumer purchase patterns to recommend related items for a given seed item.|
 
-# How to add a category browse / search results pages to your website pages
+## Add category browse and search results modules to a category page
 
 > [!NOTE]
 > This is a generic setup for a list page, which currently encompasses both Category and Search pages. They can be created using the same template, or using different templates both based on the "Category Page" module, depending on desired enrichment experience. 
+
+To add category browse and search results modules to a category page, do the following.
+
 
 1. Go to your site and create a new template 
 ![start defining category template](./media/Category_template.png)
@@ -118,6 +121,8 @@ Once you are happy with the template, Check-in and publish the template. Then we
  
  
 ## Add a product collection module to a category page
+
+To add a product collection module to a category page, do the following.
 
 1. Go to sites, create a new page and choose the template same as your default category page
 1. From the page editor (assuming you are able to check out the page). From Page Outline, select 'Sub footer slot' and 'Add container'
