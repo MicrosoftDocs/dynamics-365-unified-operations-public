@@ -37,19 +37,20 @@ This topic describes how to add product collection modules to a category page in
 
 ## Overview
 
-
+Product collection modules provide retailers with a quick and intuitive visual interface for authoring product collections and enable them to build compelling shopping experiences. For more information, see [Product collection module overview](product-collection-module-overview.md).
 
 ## Add a product collection module to a category page
 
 To add a product collection module to a category page, do the following.
 
-1. Go to sites, create a new page and choose the template same as your default category page
-1. From the page editor (assuming you are able to check out the page). From Page Outline, select 'Sub footer slot' and 'Add container'
-1. Upon adding container - choose to 'Add module'
-1. Next, choose 'Product collection' module
+1. In your site in Commerce, create a new page using the same template as your default category page.
+1. From the page outline, select **Sub footer slot**, click the ellipsis button (**...**), then select **Add Module**.
+1. In the **Add Module** dialog box, select **Container**, then click **OK**.
+1. In the **Container** module, click the ellipsis button (**...**), then select **Add Module**.
+1. In the **Add Module** dialog box, select **Product collection**, then click **OK**.
 1. Configure settings to choose appropriate data source and inputs for product collection
-   1. From Product Collection module settings - click on '+ Add a product list'
-   1. From Type you may be able to select the following 
+1. In the right-side properties pane of the product collection module, click **+Add a product list**.
+1. From Type you may be able to select the following 
    
 | Type                       | Description                                                                                                                                                                                                                                     | General practice                                                 | Context derivable from page context | Context author can override over page context | Sample                                                             |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------|-----------------------------------------------|--------------------------------------------------------------------|
