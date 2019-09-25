@@ -1,6 +1,5 @@
 # Dynamics 365 Commerce online channel documentation (DRAFT)
 # Online channel management
-* [Get started with an online channel](https://review.docs.microsoft.com/en-us/dynamics365/unified-operations/commerce/Quick%20tour%20for%20ecommerce%20site?branch=anupamar-Overview-docs)
 
 ## E-Commerce overview
 * [Quick tour of Home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/anupamar-quicktours/articles/commerce/quick-tour-home-page.md)
