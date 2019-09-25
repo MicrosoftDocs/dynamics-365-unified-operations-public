@@ -1,4 +1,39 @@
+---
+# required metadata
+
+title: Product discovery via category browse, search results & product collection modules
+description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
+author: asharchw
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-retail
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Application user
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: asharchw
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+---
+
 # Product discovery via category browse, search results & product collection modules  
+
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
+
+## Overview
 
 Product discovery is a primary tool for retailers to engage with their shoppers across their website. With this module, we aim to provide retailers a quick & intuitive visual interface for authoring the product collections & enable them to build compelling shopping experiences on their website.
 
