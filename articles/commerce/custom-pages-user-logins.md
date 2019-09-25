@@ -145,19 +145,18 @@ Navigate back to the Azure Portal AAD B2C Page and go to the "User Flows (polici
 
 To update the "Sign up and sign in" policy with custom page information, do the following.
 
-- Select your earlier built **Sign in and sign up** policy. 
-- Navigate to the 'Page layouts' section. 
-- Select the "Unified sign up or sign in page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/sign-in?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
-- Select the "Local account sign up page" Layout
-  - Set "Use custom page content" to "Yes"
-  - In the "Custom page URI" textbox, enter your full Sign In URL with the preloadscripts=true suffix. (Ex: "www.<my domain>.com/sign-up?preloadscripts=true")
-  - Set the Page Layout Version (Preview) to 1.2.0
-  - In the User attributes section:
-    - Set Email Address, Given Name, and Surname fields for "Requires Verification" to "No"
-    - Set Given Name and Surname fields for "Optional" to "No"
+1. In the previously-built **Sign in and sign up** policy, navigate to the **Page layouts** section. 
+1. Select the **Unified sign up or sign in page** layout.
+1. For **Use custom page content**, select **Yes**.
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
+1. Select the **Local account sign up page** layout.
+1. For **Use custom page content**, select **Yes**.
+1. In the **Custom page URI** box, enter your full sign-in URL with the "?preloadscripts=true" suffix (for example, "www.&lt;*my domain*&gt;.com/sign-in?preloadscripts=true").
+1. In the **Page Layout Version (Preview)** dropdown list, select **1.2.0**.
+1. In the **User attributes** section, do the following.
+    1. For **Email Address**, **Given Name**, and **Surname**,  fields for "Requires Verification" to "No"
+    1. Set Given Name and Surname fields for "Optional" to "No"
 
 The following image show the (lorem ipsum).  
 
