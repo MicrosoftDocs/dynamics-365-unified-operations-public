@@ -52,7 +52,7 @@ The "Sign up and sign in," "Profile editing," and "Password reset" user login fl
 
 ### Configure the "Sign up and sign in" policy
 
-To configure the "Sign up and sign in" user login flow, do the following.
+To configure the "Sign up and sign in" policy, do the following.
 
 1. Click **New user flow**, then in the **Recommended** section, select the **Sign up and sign in** policy.
 1. Enter a name for the policy (for example, "B2C_1_SignInSignUp"). 
@@ -78,7 +78,7 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 ### Configure the "Profile editing" policy
 
-To configure the "Profile editing" user login flow, do the following.
+To configure the "Profile editing" policy, do the following.
 
 1. Click **New user flow**, then in the **Recommended** section, select the **Profile editing** policy.
 1. Enter a name for the policy (for example, "B2C_1_EditProfile"). 
@@ -93,7 +93,7 @@ We'll come back to this policy once we have built out the custom pages to finish
 
 ### Configure the "Password reset" policy
 
-To configure the "Password reset" user login flow, do the following.
+To configure the "Password reset" policy, do the following.
 
 1. Click **New user flow**, then in the **Preview** section, select the **Password reset v1.1** policy.
 1. Enter a name for the policy (for example, "B2C_1_ForgetPassword"). 
