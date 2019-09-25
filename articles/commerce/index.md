@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Welcome to Dynamics 365 Commerce
+title: Help resources for Dynamics 365 Commerce
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Welcome to Dynamics 365 Commerce
+# Help resources for Dynamics 365 Commerce
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
