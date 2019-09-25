@@ -57,9 +57,8 @@ To configure the "Sign up and sign in" user login flow, do the following.
 1. Click **New user flow**, then in the **Recommended** section, select the **Sign up and sign in** policy.
 1. Enter a name for the policy (for example, "B2C_1_SignInSignUp"). 
 1. Select the **Identity Providers** used for the policy (for example, **Email signup**). **Email signup** must be chosen at a minimum.
-1. Select the following attributes and claims:
-    - Under **Collect attribute**: **Email Address**, **Given Name**, **Surname**
-    - Under **Return claim**: **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
+1. In the **Collect attribute** column, select **Email Address**, **Given Name**, and **Surname**.
+1. In the **Return claim** column, select **Email addresses**, **Given Name**, **Identity Provider**, **Surname**, and **User's Object ID**.
 1. Click **OK** to create the policy.
 1. Double-click the new policy name, then in the navigation pane click **Properties.**
 1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
@@ -84,9 +83,8 @@ To configure the "Profile editing" user login flow, do the following.
 1. Click **New user flow**, then in the **Recommended** section, select the **Profile editing** policy.
 1. Enter a name for the policy (for example, "B2C_1_EditProfile"). 
 1. Select the **Identity Providers** used for the policy (for example, **Local Account SignIn**). **Local Account SignIn** must be chosen at a minimum.
-1. Select the following attributes and claims:
-    - Under **Collect attribute**: **Email Addresses**, **Surname**
-    - Under **Return claim**: **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, **User's Object ID**
+1. In the **Collect attribute** column, select **Email Addresses** and **Surname**.
+1. In the **Return claim** column, select **Email Addresses**, **Given Name**, **Identity Provider**, **Surname**, and **User's Object ID**.
 1. Click **OK** to create the policy.
 1. Double-click the new policy name, then in the navigation pane click **Properties.**.
 1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
@@ -100,8 +98,7 @@ To configure the "Password reset" user login flow, do the following.
 1. Click **New user flow**, then in the **Preview** section, select the **Password reset v1.1** policy.
 1. Enter a name for the policy (for example, "B2C_1_ForgetPassword"). 
 1. In the **Identity Providers** section, select **Reset password using email address**.
-1. Select the following claims:
-    - Under **Return claim**: **Email Addresses**, **Given Name,** **Surname,** **User's Object ID**
+1. In the **Return claim**column, select **Email Addresses,** **Given Name**, **Surname**, and **User's Object ID**.
 1. Click **OK** to create the policy.
 1. Double-click the new policy name, then in the navigation pane click **Properties.**.
 1. For **Enable JavaScript enforcing page layout (preview)**, select **On**.
