@@ -2,8 +2,8 @@
 # required metadata
 
 title: Cloud-powered search overview
-description: This topic gives an overview of cloud-powered search in Dynamics 365 Commerce.
-author: v-chgri
+description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
+author: asharchw
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
@@ -33,44 +33,46 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of cloud-powered search in Dynamics 365 Commerce.
+This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Product discoverability is the easiest and quickest way for customers to be able to find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all retail channels.
+Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across all retail channels.
 
-Customers are used to the near-instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, as-you-type search suggestion, faceted navigation, and highlighting. If customers cannot find the right product fast enough, they will not hesitate to move over to an e-Commerce store that helps them quickly find what they are looking for.
+Customers are accustomed to the nearly instantaneous response times of web search engines, sophisticated e-Commerce websites, social apps, automatic suggestions that appear as they type search terms, faceted navigation, and highlighting. If customers can't find the product that they are looking for quickly enough in one e-Commerce store, they won't hesitate to go to a different e-Commerce store.
 
-The cloud-powered product discoverability in Commerce helps retailers continue to grow their share of consumer retention and conversion rates across all channels including both e-Commerce & point of sale. 
+The cloud-powered product discoverability in Dynamics 365 Commerce helps retailers continue to increase consumer retention and conversion rates across all channels, both e-Commerce channels and point of sale (POS) channels.
 
-The Commerce search experience has improved capabilities to help retailers achieve better product discoverability, while delivering the scalability and performance required for e-Commerce traffic.
+The Dynamics 365 Commerce search experience has improved capabilities to help retailers achieve better product discoverability. At the same time, these capabilities deliver the scalability and performance that are required for e-Commerce traffic.
 
-### Browse and search 
+## Browse and search
 
-Search relevance and performance is key to the omnichannel experience, since product discovery relies primarily on search for information retrieval and content navigation. An effective and efficient browse and search experience helps increase conversion.
+Search relevance and performance are key factors in the omnichannel experience, because product discovery relies primarily on search functionality for information retrieval and content navigation. An effective and efficient browse and search experience helps increase conversion.
 
-The following image shows an example of typical browse and search functionality.
+The following illustration shows an example of typical browse and search functionality.
 
-    ![Search landing](./media/SearchLanding.png)
+![Search landing page](./media/SearchLanding.png)
 
-### Faceted navigation and choice summary 
+## Faceted navigation and choice summary 
 
-Faceted navigation helps customers browse for content more easily by filtering on refiners that are tied to terms in a term set. By using faceted navigation, you can configure different refiners for different terms in a term set without having to create additional pages. And after application of the customer's choice of refiners, a summary of the choices is displayed.
+Faceted navigation helps customers more easily browse for content by letting them filter on refiners that are linked to terms in a term set. After a customer has selected and applied refiners, a summary of the choices is shown. 
 
-The following image shows an example of faceted navigation in search.
+By using faceted navigation, you can configure different refiners for different terms in a term set, without having to create additional pages. 
 
-    ![ChoiceSummary](./media/ChoiceSummary.png)
+The following illustration shows an example where faceted navigation is used in a search.
 
-### Immersive autosuggest
+![Choice summary](./media/ChoiceSummary.png)
 
-Current autosuggest functionality only shows keywords that trigger search for the matching keyword. With new enhancements in Commerce, customers are often able to discover links to products before they finish typing. Commerce also supports "keyword match in various categories" functionality, which enables customers to see the count of matching keywords across categories and trigger a search for a keyword in other categories.
+## Immersive autosuggest
 
-The following image shows an example of immersive autosuggest in action.
+Current autosuggest functionality just shows keywords that trigger a search for the matching keyword. Because of new enhancements in Dynamics 365 Commerce, customers can often discover links to products before they have finished typing.
 
-    ![immersiveAutoSuggest](./media/ImmersiveAutoSuggestUX.png)
+Dynamics 365 Commerce also supports functionality for keyword matches in various categories. This functionality lets customers see the number of matching keywords across categories and trigger a search for a keyword in other categories.
 
-### Sort
+The following illustration shows an example where immersive autosuggest is being used.
 
-With enhanced sorting in Commerce, customers are able to sort search, browse, and refine search results by criteria such as price, product name, and product number, and also by whether a product is new, top-selling, or recently added.
+![immersive autosuggest](./media/ImmersiveAutoSuggestUX.png)
 
+## Sort
 
+Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and browse search results, and refine them by criteria such as price, product name, and product number. Customers can also sort results based on whether a product is new, top-selling, or recently added.
