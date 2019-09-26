@@ -3,6 +3,7 @@
 
 title: Account management pages
 description: This topic covers account management pages in Microsoft Dynamics 365 Commerce.
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
