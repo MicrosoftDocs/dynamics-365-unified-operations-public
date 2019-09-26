@@ -60,6 +60,8 @@
       href: create-page-URL.md
   - name: Starter kit
     items: 
+    - name: Starter kit overview
+      href: starter-kit-overview.md
     - name: Account management page
       href: account-management.md
     - name: Add an alert module 
