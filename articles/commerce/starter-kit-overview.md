@@ -2,7 +2,7 @@
 # required metadata
 
 title: Starter kit overview 
-description: This topic presents an overview of the Dynamics 365 Commerce starter kit.
+description: This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
 author:  anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -34,30 +34,24 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of the Dynamics 365 Commerce starter kit.
+This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
 
 ## Overview
 
-The Dynamics 365 Commerce starter kit is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface and functional behavior aspects. A theme (using CSS) can be applied to these modules to change their look and feel. A theme for a fictitious e-Commerce site named "Fabrikam" is provided as part of the starter kit to use as a reference. 
+The Dynamics 365 Commerce starter kit is a collection of modules that can be used to build an e-Commerce website. Modules have both user interface (UI) aspects and functional behavior aspects.
+
+Themes can be applied to the modules in the starter kit to change their look and feel. The themes use Cascading Style Sheets (CSS). A theme for a fictitious e-Commerce site that is named "Fabrikam" is provided as part of the starter kit and can be used as a reference.
 
 ## Starter kit modules
 
-The following types of modules are provided in the starter kit.
+The following types of modules are provided in the starter kit:
 
-**Container module**: A container module is a simple modules that acts as a host for other modules. It controls the layout of the modules within it.
-
-**Marketing modules**: Marketing modules include Hero, Feature, Content Placement, Content Rich Nlock, Video Player, and Carousel modules, all of which can be used to showcase content. These modules can be placed on any page and are driven by CMS data.
-
-**Header and footer modules**: Header and footer modules appear in the header and footer of all site pages. These properties of these modules can be used to configure them as needed.
-
-**Search modules**: Products can be discovered using the search module in the header, and search results appear on the search results page. Products can also be discovered on category pages, which are dedicated pages for each category supported in the channel navigation hierarchy. In addition, refiners modules can be used to further filter results on search and category pages.
-
-**Product details page modules:** Product details pages use a number of modules to display product information. The buy box module enables the customer to a view product and add it to the cart. Other modules such as the tech specs module display the product details. The ratings and reviews module can used to view and provide reviews.
-
-**Buy online pick up in store module:** The buy online pick up in store module integrates with Bing Maps to find stores nearby where the shopper can pick up a purchased product.
-
-**Purchase modules**: Purchase modules include the cart module which can be used for adding items to the cart. The checkout module captures shipping address, delivery options, gift card, loyalty program, and credit card information for processing an order. Once an order is placed, order confirmation module can be used to show the confirmation details.
-
-**Account management modules**: Sign-in and sign-up modules enable a customer to create an account or sign in to an existing account. Once an account is created, the order history and order details modules can be used to view recent order and order details respectively.
-
-**Recommendations module**: Recommendations are displayed using the product placement module. This module supports algorithmic and editorial lists which can be showcased on any page. 
+- **Container module** – A container module is a simple module that acts as a host for other modules. It controls the layout of the modules that are inside it.
+- **Marketing modules** – Marketing modules include hero, feature, content placement, content rich block, video player, and carousel modules. All these modules can be used to showcase content. They can be put on any page and are driven by data from the content management system (CMS).
+- **Header and footer modules** – Header and footer modules appear in the header and footer of all site pages. These modules can be configured as required through properties.
+- **Search modules** – Products can be discovered by using the search module in the header. Search results appear on the search results page. Products can also be discovered on category pages, which are dedicated pages for each category that is supported in the channel navigation hierarchy. In addition, refiner modules can be used to further filter results on search results and category pages.
+- **Product details page modules** – Product details pages use several modules to show product information. The buy box module lets customers view products and add them to the cart. Other modules such, as the tech specs module, show the product details. The ratings and reviews module can used to view and provide reviews.
+- **Buy online pick up in store module** – The buy online pick up in store module is integrated with Bing Maps. It can be used to find nearby stores where customers can pick up products that they have purchased.
+- **Purchase modules** – Purchase modules include the cart module, which can be used to add items to the cart. The checkout module captures the shipping address, delivery options, and gift card, loyalty program, and credit card information, so that an order can be processed. After an order is placed, the order confirmation module can be used to show the confirmation details.
+- **Account management modules** – The sign-in module lets customers sign in to an existing account, and the sign-up module lets them create a new account. After an account is created, the order history module can be used to view recent orders, and the order details module can be used to view order details.
+- **Recommendations module** – Recommendations are shown by using the product placement module. This module supports algorithmic and editorial lists that can be showcased on any page.
