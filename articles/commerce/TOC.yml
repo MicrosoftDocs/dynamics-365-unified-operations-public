@@ -73,7 +73,7 @@
     - name: Add a checkout module
       href: add-checkout-module.md
     - name: Add a content placement module
-      name: add-content-placement-modules.md
+      href: add-content-placement-modules.md
     - name: Add a content rich block module
       href: add-content-rich-block.md
     - name: Create a header module
