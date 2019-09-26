@@ -97,7 +97,8 @@ END;
 
 
 ### Don't do this
-- If you are creating extension table or new table, everything should be done in ext schema.
+- Don't create any new extension table, views or procs in crt, ax or dbo schema. All extension artifacts must be done in ext schema. 
+- Don't use any of the crt, ax or dbo schema data types in ext schema. Please create custom types in ext schema and use it.
 - Don’t modify any views, procedures, functions, or any of the database artifacts.
 - Avoid accessing or calling database artifacts from your extensions, if possible. Instead, use the CRT data service to get data. The benefits of using the data service are that it will continue to be supported until the SLA, even if breaking changes are made to the database schema in the future. However, there will be instances in which the CRT data service does not expose the data that you need. In these cases, it is still possible to access this data by creating a view which joins on a channel DB artifact. Creating views can be a powerful tool to structure the data in a format you need at a database level, as opposed to doing it in memory through CRT extensions.
 
