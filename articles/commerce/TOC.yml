@@ -64,11 +64,13 @@
       href: account-management.md
     - name: Add an alert module 
       href: add-alert.md
+    - name: Add a buy box
+      href: add-buy-box.md
     - name: Add a carousel module
       href: add-carousel.md
     - name: Add a checkout module
       href: add-checkout-module.md
-    - name: Add content placement modules
+    - name: Add a content placement module
       name: add-content-placement-modules.md
     - name: Add a content rich block module
       href: add-content-rich-block.md
