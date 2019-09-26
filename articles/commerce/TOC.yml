@@ -42,6 +42,8 @@
     items:
     - name: Select page layouts
       href: select-page-layouts.md
+    - name: Search engine optimization (SEO) considerations for your site
+      href: search-engine-optimization-considerations.md
   - name: Modules
     items:
     - name: Work with modules
