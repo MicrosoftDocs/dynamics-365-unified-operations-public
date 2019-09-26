@@ -40,4 +40,4 @@ Each week there are new releases for Talent. These releases are listed in the ta
 
 The table of contents will continue to be updated each week, so check back to find all of the new features and changes in the latest releases of Talent.
 
-[!include [release notes](../fin-and-ops/includes/release-notes.md)]
+[!include [release notes](../fin-ops-core/fin-ops/includes/release-notes.md)]
