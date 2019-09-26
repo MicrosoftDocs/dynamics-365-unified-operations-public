@@ -2,16 +2,16 @@
   href: index.md
 - name: Create a new e-Commerce site
   items:
-  - name: Create an e-Commerce site
-    href: create-ecommerce-site.md
   - name: Online store overview
     href: online-store-overview.md
+  - name: Create an e-Commerce site
+    href: create-ecommerce-site.md
   - name: Deploy a new e-Commerce site
     href: deploy-ecommerce-site.md
-  - name: Configure a domain name
-    href: configure-your-domain-name.md
   - name: Associate an online site with a channel
     href: associate-site-online-store.md
+  - name: Configure your domain name
+    href: configure-your-domain-name.md
 - name: Manage your site
   items:
   - name: Manage users and roles
