@@ -46,13 +46,13 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Proceed with "**Create**"
 1. You are sent to the project view
 
-! [Project creation - versions](file://project1.png)
+![Project creation - versions](./media/project1.png)
 
-! [Project creation - topology 1](file://project2.png)
+![Project creation - topology 1](./media/project2.png)
 
-! [Project creation - topology 2](file://project3.png)
+![Project creation - topology 2](./media/project3.png)
 
-! [Project creation - environment parameters](file://project4.png)
+![Project creation - environment parameters](./media/project4.png)
 ##### Add Azure Connector
 1. Click "**Project settings**" from the tools tiles to the far right
 1. Select "**Azure connectors**"
