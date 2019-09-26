@@ -3,29 +3,29 @@
 - name: What's new or changed
   items:
   - name: Preview features in Platform update 30 (November 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-30.md
+    href: ../fin-ops/get-started/whats-new-platform-update-30.md
   - name: Platform update 29 (October 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-29.md
+    href: ../fin-ops/get-started/whats-new-platform-update-29.md
   - name: Platform update 28 (July 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-28.md 
+    href: ../fin-ops/get-started/whats-new-platform-update-28.md 
   - name: Platform update 27 (June 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-27.md 
+    href: ../fin-ops/get-started/whats-new-platform-update-27.md 
   - name: Platform update 26 (May 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-26.md 
+    href: ../fin-ops/get-started/whats-new-platform-update-26.md 
   - name: Platform update 25 (April 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-25.md 
+    href: ../fin-ops/get-started/whats-new-platform-25.md 
   - name: Platform update 24 (March 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-24.md
+    href: ../fin-ops/get-started/whats-new-platform-update-24.md
   - name: Platform update 23 (January 2019)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-23.md
+    href: ../fin-ops/get-started/whats-new-platform-update-23.md
   - name: Platform update 22 (December 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-22.md
+    href: ../fin-ops/get-started/whats-new-platform-update-22.md
   - name: Platform update 21 (November 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-21.md
+    href: ../fin-ops/get-started/whats-new-platform-update-21.md
   - name: Platform update 20 (September 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-20.md
+    href: ../fin-ops/get-started/whats-new-platform-update-20.md
   - name: Platform update 15 (March 2018)
-    href: ../fin-and-ops/get-started/whats-new-platform-update-15.md    
+    href: ../fin-ops/get-started/whats-new-platform-update-15.md    
 - name: Business events
   items:
   - name: Business events overview
@@ -301,7 +301,7 @@
 - name: Demo data
   items: 
   - name: Demo data overview
-    href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
+    href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   - name: Generate demo data using data packages
     href: data-entities/generate-demo-data-packages.md
 - name: Deployment
@@ -333,7 +333,7 @@
     - name: Azure ExpressRoute and Finance and Operations
       href: deployment/expressroute.md
     - name: Finance and Operations architecture
-      href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
+      href: ../fin-ops/imp-lifecycle/architecture-overview.md
     - name: Apply updates to cloud environments
       href: deployment/apply-deployable-package-system.md
     - name: Apply updates and extensions to cloud hosted Retail channel components
@@ -351,7 +351,7 @@
     - name: Plan and prepare for on-premises deployments
       href: deployment/plan-onprem-deployment.md
     - name: Hardware sizing requirements
-      href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
     - name: Set up on-premises projects
       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
     - name: Set up and deploy on-premises environments
@@ -1155,7 +1155,7 @@
   - name: Installation and configuration
     href: perf-test/rsat/rsat-install-configure.md
   - name: Data agnostic testing using the Regression Suite Automation Tool
-    href: ../fin-and-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+    href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
   - name: Run test cases
     href: perf-test/rsat/rsat-run.md
   - name: Validate expected values
@@ -1165,7 +1165,7 @@
   - name: Derived test cases
     href: perf-test/rsat/rsat-derived-test-cases.md
   - name: Use the Regression suite automation tool tutorial
-    href: ../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md
+    href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
   - name: Best practices
     href: perf-test/rsat/rsat-best-practices.md
   - name: Troubleshooting
@@ -1437,7 +1437,7 @@
     - name: Dynamics Symbol font
       href: user-interface/symbol-font.md
     - name: Saved views
-      href: ../fin-and-ops/get-started/saved-views.md
+      href: ../fin-ops/get-started/saved-views.md
     - name: Build forms that fully utilize saved views
       href: user-interface/understanding-saved-views.md
     - name: Test forms that use custom patterns
