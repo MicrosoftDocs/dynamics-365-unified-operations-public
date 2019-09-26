@@ -169,6 +169,9 @@ The following steps show the CRT code changes. For MPOS and the channel database
 
 Before you try this sample, be sure to create the custom tables, views, and stored procedures in the channel database. Additionally, make the relevant changes to MPOS. The full sample code, together with additional comments, is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample folder of the SDK. For information about how to create custom database artifacts, see the RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder of the SDK.
 
+> [!NOTE]
+> The above code sample and the sample script in RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder is using [crt].EXTENSIONPROPERTIESTABLETYPE, starting form version 7.3 we don’t support using crt or ax schema objects/data types in ext schema. You must create your custom extension table property type in ext schema and use it.
+
 ### Best practice
 
 Because the order of triggers isn't guaranteed when the triggers are chained, and because of the internal cache mechanism, the pre-triggers should not change the *request* message, and the post-triggers should not change the *response* message. Extension properties are allowed, because no core properties are being changed. You should use pre-triggers and post-triggers to handle extension properties. You should also use pre-triggers to do validation and post-triggers to do additional actions.
