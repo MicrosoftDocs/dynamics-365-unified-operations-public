@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Create a layout container module
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic describes how to create, test, and preview a layout container module.
 
