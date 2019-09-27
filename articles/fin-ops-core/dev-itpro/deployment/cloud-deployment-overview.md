@@ -69,9 +69,9 @@ Here's how the lifecycle maps to the available environments.
 A production instance has the following capabilities.
 
 ## Security and compliance
-Dynamics 365 for Finance and Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
+Finance and Operations is PA-DSS 3.1 certified which means that all communications between components are secured out-of-the-box. 
 
-All Dynamics 365 for Finance and Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
+All Finance and Operations front-end virtual machines in Microsoft Azure are configured during deployment to only accept TLS 1.2. 
 
 > [!IMPORTANT]
 > Customers who have administrator access to Microsoft-managed sandboxes, including any add-on sandboxes purchased, must follow these guidelines:
@@ -80,7 +80,7 @@ All Dynamics 365 for Finance and Operations front-end virtual machines in Micros
 > - Adding new user accounts to any Microsoft managed VM is NOT permitted. Microsoft reserves the right to, and will remove the newly added user accounts without providing notice.
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations is not covered by a FedRAMP ATO at this time. If Dynamics 365 for Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Dynamics 365 for Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
+> Finance and Operations is not covered by a FedRAMP ATO at this time. If Finance and Operations is provisioned in the United States, all Customer Data at rest is stored in data centers located in the United States, as described in the [Trust Center](https://www.microsoft.com/trustcenter/privacy/dynamics365-finance-operations). Finance and Operations does not support any other Dynamics 365 US Government or Office 365 GCC compliance attributes (for example, access by U.S. screened personnel, and support for CJIS and IRS 1075).  
 
 
 ## Remote Desktop
