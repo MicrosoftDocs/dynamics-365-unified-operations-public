@@ -34,6 +34,8 @@
       href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json   
   - name: Deploy a demo environment
     href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Configure an e-Commerce evaluation environment
+    href: provisioning-guide.md
   - name: Deployment considerations
     items:
     - name: Deployment options
