@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets business users configure formats for outbound documents according to the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
 
-Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of Microsoft Dynamic 365 for Finance and Operations and imported into another instance.
+Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of Finance and Operations and imported into another instance.
 
 The ER framework uses the [Document management framework](../../fin-and-ops/organization-administration/configure-document-management.md) to keep the required templates for the current Finance and Operations instance. Depending on the settings of the ER framework, Microsoft Azure Blob storage or a Microsoft SharePoint folder can be selected as the physical primary storage location for templates. (For more information, see [Configure the ER framework](electronic-reporting-er-configure-parameters.md).) The DocuValue table holds an individual record for each template. In each record, the **AccessInformation** field stores the path of a template file that is located in the configured storage location.
 
@@ -89,7 +89,7 @@ By default, the process of automatically creating backup copies of templates tha
 
 If you set the **Stop making backup copies of templates** option to **Yes** and don't want to keep the backup copies that were previously made of templates, select **Clean up backup storage** on the **Electronic reporting parameters** page.
 
-If you upgraded your environment to Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
+If you upgraded your environment to Finance and Operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
 
 ![Electronic reporting parameters page](./media/GER-BackupTemplates-5.png)
 
