@@ -80,7 +80,7 @@ Download the following files to complete the task guides mentioned above.
 | Incoming file in .XLSX format - template    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Incoming file in .XLSX format - sample data | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Dynamics 365 for Finance and Operation application, download the following file.
+If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Finance and Operation application, download the following file.
 
 | Content description    | File                                                            |
 |------------------------|-----------------------------------------------------------------|
@@ -125,7 +125,7 @@ Download the following files to complete the task guide mentioned above.
 | ER format configuration                | [1099formatcsv.xml](https://go.microsoft.com/fwlink/?linkid=862266)  |
 | Sample of incoming file in .csv format | [1099entriescsv.csv](https://go.microsoft.com/fwlink/?linkid=862266) |
 
-Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, **ER Create required configurations to import data from an external file for electronic reporting** in the current Dynamics 365 for Finance and Operation application.
+Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, **ER Create required configurations to import data from an external file for electronic reporting** in the current Finance and Operation application.
 
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
