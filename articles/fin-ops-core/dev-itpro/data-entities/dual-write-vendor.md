@@ -185,7 +185,7 @@ This template synchronizes all primary, secondary, and tertiary contact informat
 
 ## Vendor Groups
 
-This template synchronizes vendor group information between Finance and Operations app and other Dynamics 365 apps.
+This template synchronizes vendor group information between Finance and Operations apps and other Dynamics 365 apps.
 
 <!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
 
