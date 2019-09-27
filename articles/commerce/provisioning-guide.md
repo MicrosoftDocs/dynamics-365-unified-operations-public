@@ -3,36 +3,36 @@ This guide provides you step-by-step instructions for provisioning and configuri
 ## Summary
 To provision the environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit also have some specific parameters you need to use when provisioning them to be able to start the e-Commerce provisioning later. These instructions contain all the required steps you need to take and parameters you need to use.
 
-After successful provisioning, there are a few post-provisioning steps you need to take to prepare your Preview environment for use. There are some steps which are optional, depending on which aspects of the system are you expecting to evaluate. Should you later change your mind, you can always run the optional steps later.
+After successful provisioning, there are a few post-provisioning steps you need to take to prepare your Preview environment for use. Some steps are optional, depending on which aspects of the system you wish to evaluate. Should you later change your mind, you can always run the optional steps later.
 
-Should you have questions about the provisioning steps or if you experience issues, please visit Microsoft Dynamics 365 Commerce Preview Yammer-group at https://aka.ms/Dynamics365CommercePreviewYammer
+If you have any questions about the provisioning steps or you encounter any issues, please let us know on Microsoft Dynamics 365 Commerce Preview Yammer group at https://aka.ms/Dynamics365CommercePreviewYammer
 
 ## Prerequisites
-To complete the provisioning successfully, the following prerequisites must be met
-* You have **LCS access**
-* You have been **accepted into the Dynamics 365 Commerce preview program**
+The following are prerequisites for provisioning your Dynamics 365 Public Preview environment:
+* You have access to **LCS** (Lifecycle Services portal)
+* You have been **accepted into the Dynamics 365 Commerce Preview program**
 * You have the required permissions to create either **Prospective presales**- or **Migrate, create solutions, and learn**-project
 * You are a member of the **Environment manager** or **Project Owner** role in the project where you will be provisioning the environment
-* You either need to have admin access to your Azure subscription or request a subscription admin to help you with the two steps that require admin permissions
+* You have admin access to your Azure subscription, or contact with a subscription admin who can perform the two steps that require admin permissions on your behalf
 * You have your **AAD Tenant Id** available
 * You have created a **AAD security group** to be used as **e-Commerce system admins group** and you have its ID available
 * You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same SG as the system admin group above)
 ## Provisioning preview environment
-These instructions cover the provisioning of Microsoft Dynamics 365 Commerce Preview environment. After successfully completing these steps, you will have a Preview environment ready to be configured. All the activities described here take place in the LCS portal.
+These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce Preview environment. After successfully completing these steps, you will have a Preview environment that is ready to be configured. All the activities described here take place in the LCS portal.
 ### Before starting
 ##### Grant access to e-Commerce applications
-1. For this step you will need to know your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. Easiest way to achieve this is to craft an URL like this:
+1. For this step you will need to know your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. The easiest way to accomplish this is to assemble a URL like this:
 
 https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345
 
-2. **Do not click the URL directly**, instead copy and paste it to your browser or text editor and replace **\{AAD_TENANT_ID\}** with your **AAD Tenant Id**, before navigating to the URL with browser
-3. You will be presented with Microsoft AAD login dialog and confirmed if you wish to grant **"e-Commerce UX"** access to your subscription
-4. You will be sent to a page which confirms if the operation was successful or not
+2. **Do not click the URL directly**, instead copy and paste it into your browser or text editor and replace **\{AAD_TENANT_ID\}** with your **AAD Tenant Id**, before navigating to the URL
+3. You will be presented with the Microsoft AAD login dialog where you will confirme that you wish to grant **"e-Commerce UX"** access to your subscription
+4. You will be sent to a page which confirms whether the operation was successful
 
 *Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
 ##### Log in to the LCS
 1. Log in to the LCS portal at https://lcs.dynamics.com
-1. Make sure that you are logged in with the LCS account that was used to request the preview access
+1. Make sure that you are logged in with the LCS account you used to request access to the Preview
 ### Create project
 ##### Creating new project
 1. Click "**+**" to create a new project
@@ -276,7 +276,7 @@ Create "**OpenID URL**" by replacing **\{YOUR_DOMAIN\}** with your domain, e.g. 
 ### How to find the ID of your AAD security group
 AAD security group ID is a GUID and looks like this: **436ea7f5-ee6c-40c1-9f08-825c5811066a** (example)
 
-This step assumes that user is a member of the group they are attempting to locate ID for
+This step assumes that the user is a member of the group they are attempting to locate ID for
 1. Navigate to the Graph Explorer at https://developer.microsoft.com/en-us/graph/graph-explorer#
 1. Click "**Sign In with Microsoft**" and sign in using your credentials
 1. After signing in, click "**show more samples**" from the left
@@ -284,7 +284,7 @@ This step assumes that user is a member of the group they are attempting to loca
 1. Close the right pane
 1. Click "**all groups I belong to**"
 1. Locate your group from the "**Response Preview**" text box
-1. Security group id is noted under property "**id**"
+1. Security group ID is noted under property "**id**"
 ### Useful links
 * LCS (Lifecycle services) - https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide
 * RCSU (Retail Cloud Scale Unit) - https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit
@@ -294,18 +294,18 @@ This step assumes that user is a member of the group they are attempting to loca
 ### Microsoft Dynamics 365 Commerce Preview support
 If you experience issues while performing the provisioning steps, please visit the Microsoft Dynamics 365 Commerce Preview Yammer group for assistance. https://aka.ms/Dynamics365CommercePreviewYammer
 
-If you are having issues accessing the Yammer group, you can also reach us with email at mailto:Dynamics365Commerce@microsoft.com. This email address is not actively monitored so expect delay in response.
+If you are having issues accessing the Yammer group, you can also reach us via email at mailto:Dynamics365Commerce@microsoft.com. This email address is not actively monitored so expect a delay in response.
 ***
 ## Prerequisites for optional features
 If you want to evaluate transactional email features, the following prerequisites must be met:
-* You have email server available for your use (SMTP server) which can be used from the Azure subscription where you provision the preview environment to
-* Have the server FQDN/IP, SMTP port number and authentication details available
+* You have an email server available for your use (SMTP server) which can be used from the Azure subscription where you provision the preview environment
+* You have the server FQDN/IP, SMTP port number and authentication details available
 
 If you want to evaluate Digital Asset Management features, specifically ingest new omni-channel images, the following prerequisites must be met:
 * You need to have your **CMS tenant name** available - instructions on how to find it can be found below with the step details
 ### Configure image backend (optional)
 ##### Finding your CMS tenant identifier
-Note: This step *cannot* be done before "**Site Setup**"
+Note: Before you can complete this step, you must complete "**Site Setup**"
 1. Log in to the site management tool using the URL you noted earlier
 1. Open "**Fabrikam**"-site
 1. Choose "**Assets**" from the menu on the left
@@ -331,18 +331,18 @@ Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL a
 
 ### Configure email server (optional)
 Please note, that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
-1. Log in to the environment (HQ)
+1. Log in to the HQ environment
 1. Using the menu on the left, go to **System administration > Setup > Email > Email parameters**
 1. Click the **SMTP settings** tab
 1. In the **Outgoing mail server field**, type the FQDN or IP-address of your SMTP-server or email service
-1. In the **SMTP port number** field, enter the port number (default 25)
-1. In the **User name** field, type a value. (if authentication is required)
-1. In the **Password** field, type a value. (if authentication is required)
+1. In the **SMTP port number** field, enter the port number (default is the 25 when not using SSL)
+1. In the **User name** field, type a value (if authentication is required)
+1. In the **Password** field, type a value (if authentication is required)
 1. Click **Save**
 1. Click **Refresh**
 1. Click the **Test email** tab
 1. In the Email provider field, choose "**SMTP**"
-1. In the **Send to** field, type your email address (if sending the test email to yourself)
+1. In the **Send to** field, enter the email address where you want the test email to be delivered
 1. Click **Send test email**
 ### Configure email templates (optional)
 The email template for each transactional event that you wish to send emails for needs to be updated with a valid sender email address.
