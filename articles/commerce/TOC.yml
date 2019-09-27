@@ -772,6 +772,14 @@
     href: manage-ecommerce-users-roles.md
   - name: Add script code to site pages to support telemetry
     href: add-telemetry.md
+- name: Add and manage content on your site
+  items:
+  - name: Ways to add content
+    href: add-manage-content.md
+  - name: Page elements
+    href: page-elements-overview.md
+  - name: Document states and lifecycle
+    href: document-states-overview.md 
 - name: Brand your site and add store details
   items:
   - name: Add a logo
