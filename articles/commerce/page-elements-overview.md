@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Page elements overview
+title: Page elements
 description: This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Page elements overview
+# Page elements
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
