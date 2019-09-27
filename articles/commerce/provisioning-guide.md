@@ -41,7 +41,7 @@ To provision the environment successfully, the project needs to be created with 
 
 After successful provisioning, there are a few post-provisioning steps you need to take to prepare your Preview environment. Some steps are optional, depending on which aspects of the system you wish to evaluate. Should you later change your mind, you can always run the optional steps later.
 
-If you have any questions about the provisioning steps or you encounter any issues, please let us know on Microsoft Dynamics 365 Commerce Preview Yammer group: https://aka.ms/Dynamics365CommercePreviewYammer
+If you have any questions about the provisioning steps or you encounter any issues, please let us know on [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer). 
 
 ## Prerequisites
 The following are prerequisites for provisioning your Dynamics 365 Preview environment:
