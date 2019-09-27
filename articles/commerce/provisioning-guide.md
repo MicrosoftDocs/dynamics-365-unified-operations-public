@@ -151,34 +151,6 @@ Log in to the environment (HQ)
 
 Make sure that **USRT** legal entity is selected (top right corner)
 
-### Configure payment connector
-1. Using the menu on the left, go to **Accounts receivable > Payments setup > Payment services**
-1. Click New
-1. In the Payment service field, type "Adyen"
-1. In the Payment connector field, select "Dynamics 365 Payment Connector for Adyen"
-1. Expand the Payment service account section
-1. In the Gateway environment field, type "Test"
-1. In the Merchant account ID field, type "DynamicsCommerceDemo"
-1. In the Terminal architecture field, type "Cloud"
-1. In the Cloud API Key field, type "AQErhmfxLozMahxGw0m/n3Q5qf3VZYJOH5xZV2NCGkLbgvUTMqYgtNDRiE0wdBDBXVsNvuR83LVYjEgiTGAH-xWSpGqRh+wr/ROze9bt0RqZaKbdcSl7YRm9icu05FPc=-9Xsbf4z2hjhhpYB2"
-1. In the Allow saving payment information in e-commerce field, type "True"
-1. Click Credit card types from the action pane
-1. In the list, select "Amex"
-1. In the Payment journal field, enter or select "CustPay"
-1. In the list, select "Debit"
-1. In the Payment journal field, enter or select "CustPay"
-1. In the list, select "Discover"
-1. In the Payment journal field, enter or select "CustPay"
-1. In the list, select "GiftCard"
-1. In the Payment journal field, enter or select "CustPay"
-1. In the list, select "MasterCard"
-1. In the Payment journal field, enter or select "CustPay"
-1. In the list, select "Visa"
-1. In the Payment journal field, enter or select "CustPay"
-1. Click Save
-1. Close the page
-1. Select Yes in the "Default processor for new credit cards"-field
-1. Click Save
 ### Configure POS
 ##### Associate worker with your identity
 1. Using the menu on the left, go to **Human resources > Workers > Workers**
@@ -364,4 +336,60 @@ The email template for each transactional event that you wish to send emails for
 	1. In the **Sender email** field, type the email address to be used as sender email address for this email template
 	1. (Optional) In the **Sender name** field, type a name that will be used as sender for this email template
 1. Click **Save**
+### Customizing email templates (optional)
+You might want to customize the email templates to use different images or update the links in the template to link back to your Preview environment. The steps below explain how to download the default templates, customize them and update the templates in the system.
+1. Using browser, download the following HTML-documents to your local computer
+	1. [Order confirmation template](./includes/CnfmOrder.html)
+	1. [Issue gift card template](./includes/IssueGiftCard.html)
+	1. [New order template](./includes/NewOrder.html)
+	1. [Pack order template](./includes/PackOrder.html)
+	1. [Pick order template](./includes/PickOrder.html)
+1. Customize the templates using text- or HTML-editor, please see a list of supported tokens below
+1. Log in to the environment (HQ)
+1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**
+1. Expand the list on the left to see all the templates
+1. For each of the templates you wish to customize, perform the following steps:
+	1. Select the template from the list
+	1. Under "**Email message content**", select appropriate language version of the template from the list (default en-us)
+	1. Under "**Email message content**", click "**Edit**", you should see "**Upload email template**" pane opening
+	1. Click "**Browse**" and locate the HTML-file with the customized content
+	1. Click "**Upload**", your template is uploaded to the system and preview is shown
+	1. Click "**OK**"
+	1. (Optional) Customize the "**Subject**" property of the template
+	1. Click "**Save**"
 
+##### Supported tokens in the template
+These tokens will be replaced at email rendering time with the actual values that apply to the customer and their order:
+
+**Sales order** - The following tokens apply to the overall sales order
+
+|Name of the token|Token|
+|---|---|
+|Order number|%salesid%|
+|Customer's name|%customername%|
+|Delivery address|%deliveryaddress%|
+|Billing address|%customeraddress%|
+|Order date|%shipdate%|
+|Delivery mode|%modeofdelivery%|
+|Discount|%discount%|
+|Sales tax|%tax%|
+|Order total|%total%|
+
+**Sales line** - These tokens are populated for each product in the order.
+
+NOTE: place the Product list - start and Product list - end tokens below at the beginning and end of the block of HTML that repeats for every product.
+
+|Name of the token|Token|
+|---|---|
+|Product list - start|\<!--%tablebegin.salesline% -->|
+|Product list - end|\<!--%tableend.salesline%-->|
+|Product name|%lineproductname%|
+|Description|%lineproductdescription%|
+|Quantity|%linequantity%|
+|Line unit price|%lineprice% (verify)|
+|line item total|%linenetamount%|
+|line discount|%linediscount%|
+|Ship date|%lineshipdate%|
+|Procurement method|%linedeliverymode%|
+|delivery address|%linedeliveryaddress%|
+|Sales unit of the line (?)|%lineunit%|
