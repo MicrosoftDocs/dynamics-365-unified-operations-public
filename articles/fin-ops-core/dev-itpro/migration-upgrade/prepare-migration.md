@@ -39,7 +39,7 @@ This topic describes how the Lifecycle Services code upgrade service and Visual 
 Prerequisites
 -------------
 
-You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
+You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Finance and  Operations development, customization, and user interface concepts before you upgrade your code. Here are some references.
 
 -   [Development tools](../dev-tools/developer-home-page.md)
 -   [Models and packages](../dev-tools/models.md)
