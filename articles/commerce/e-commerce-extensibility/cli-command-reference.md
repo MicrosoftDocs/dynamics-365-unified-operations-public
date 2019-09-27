@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # CLI command reference
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
