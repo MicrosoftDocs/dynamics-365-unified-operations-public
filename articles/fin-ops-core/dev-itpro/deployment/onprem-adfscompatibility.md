@@ -2,7 +2,7 @@
 # required metadata
 
 title: AD FS Office 365 compatibility
-description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
+description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft Office 365.
 author: faix
 manager: AnnBe
 ms.date: 09/03/2019
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 28
 
 > It is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 or later.
 
-This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Microsoft Dynamics 365 for Finance and Operations on-premises environment and for Microsoft Office 365.
+This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft Office 365.
 
 ## Existing deployments
 
