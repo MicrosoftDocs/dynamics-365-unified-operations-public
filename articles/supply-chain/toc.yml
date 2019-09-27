@@ -62,7 +62,7 @@
         items:
         - name: What's new or changed in Supply Chain Management
           href: get-started/whats-new-home-page.md
-        - name: Supply Chain Managment 10.0.6
+        - name: Supply Chain Managment 10.0.6 (November 2019)
           href: get-started/whats-new-scm-10-0-6.md
         - name: What's new or changed in previous versions
           items:
