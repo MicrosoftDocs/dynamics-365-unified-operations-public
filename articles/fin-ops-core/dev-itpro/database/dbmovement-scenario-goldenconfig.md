@@ -2,7 +2,7 @@
 # required metadata
 
 title: Golden configuration promotion
-description: This topic explains a golden configuration promotion for Finance and Operations.
+description: This topic explains a golden configuration promotion for Finance and Operations applications.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019
