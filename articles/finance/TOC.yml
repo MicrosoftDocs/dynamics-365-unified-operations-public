@@ -778,8 +778,6 @@
           href: general-ledger/process-allocations.md
         - name: Financial dimensions
           href: general-ledger/financial-dimensions.md
-        - name: Convert accounting or reporting currencies
-          href: general-ledger/convert-accounting-reporting-currencies.md
         - name: Consolidation account groups and accounts
           href: budgeting/consolidation-account-groups-consolidation-accounts.md
         - name: Consolidation and elimination overview
