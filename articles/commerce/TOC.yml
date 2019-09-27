@@ -922,6 +922,210 @@
   items:
   - name: Loyalty overview
     href: ../retail/set-up-customer-loyalty-program.md
+- name: Payments
+  items:
+  - name: Payment methods
+    href: ../retail/payment-methods.md
+  - name: Payment methods in call centers
+    href: ../retail/work-with-payments.md
+  - name: Credit card setup, authorization, and capture
+    href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Configure cash denominations for the POS
+    href: ../retail/cash-denominations.md
+  - name: Configure credit card processing
+    href: ../retail/tasks/configure-credit-card-processing.md
+  - name: Dynamics 365 Payment Connector for Adyen
+    href: ../retail/dev-itpro/adyen-connector.md
+  - name: Saving online payment instruments with the Adyen connector
+    href: ../retail/dev-itpro/adyen-connector-listPI.md
+  - name: Set up pay invoice scenarios
+    href: ../retail/payinvoice.md
+  - name: Duplicate payments prevention
+    href: ../retail/duplicate-payment-protection.md
+  - name: Omni-channel payments overview
+    href: ../retail/omni-channel-payments.md
+  - name: Payments FAQ
+    href: ../retail/dev-itpro/payments-retail.md
+- name: Advanced auto charges
+  items:
+  - name: Configure and use advanced auto charges
+    href: ../retail/omni-auto-charges.md
+  - name: Prorate header charges to matching sales lines
+    href: ../retail/pro-rate-charges-matching-lines.md
+- name: Sales tax
+  items:
+  - name: Sales tax overview
+    href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Sales tax calculation methods in the Origin field
+    href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Sales tax assignment and overrides
+    href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Whole amount and Interval calculation options for sales tax codes
+    href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json    
+- name: Purchase orders
+  items:
+  - name: Purchase order overview
+    href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Create purchase orders
+    href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Product receipt against purchase orders
+    href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Approve and confirm purchase orders
+    href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Purchase order approval mobile workspace
+    href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Inventory
+  items:
+  - name: Store inventory management
+    href: ../retail/work-with-store-inventory.md
+  - name: Register serial numbers in the sales process
+    href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Inventory journals
+    href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Inventory tag counting
+    href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: FIFO with physical value and marking
+    href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: LIFO Date with physical value and marking
+    href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: LIFO with physical value and marking
+    href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Weighted average date
+    href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Weighted average with physical value and marking
+    href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Quarantine orders
+    href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Running average cost price
+    href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Track running average cost per inventory dimension
+    href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/unified-operations/retail/toc.json
+- name: Statements
+  items:
+  - name: Retail statements
+    href: ../retail/retail-statements.md
+  - name: Retail transaction consistency checker
+    href: ../retail/valid-checker.md
+  - name: Create, calculate, and post statements for a retail store
+    href: ../retail/tasks/create-calculate-post-statement-retail-store.md
+  - name: Improvements to statement posting functionality
+    href: ../retail/statement-posting-EOD.md
+  - name: Improved handling of batch tracked items
+    href: ../retail/batch.md
+  - name: Configure Retail parameters that affect retail statements
+    href: ../retail/tasks/parameter-configurations-retail-statements.md
+  - name: Configure payment method settings that affect retail statements
+    href: ../retail/tasks/payment-configurations-retail-statements.md
+  - name: Configure and run a job to calculate statements
+    href: ../retail/tasks/run-job-calculate-statements.md
+  - name: Configure and run a job to post statements
+    href: ../retail/tasks/run-job-post-statements.md
+  - name: Configure store settings that affect retail statements
+    href: ../retail/tasks/store-configurations-retail-statements.md
+- name: Distributed order management (DOM)
+  items:
+  - name: DOM overview
+    href: ../retail/dom.md
+  - name: Cost configuration
+    href: ../retail/cost.md
+- name: Order fulfillment and processing
+  items:
+  - name: Store order fulfillment
+    href: ../retail/Order-fulfillment-overview.md
+  - name: Set up order fulfillment for stores
+    href: ../retail/Order-fulfillment-POS-setup.md
+  - name: Show order notifications in the POS
+    href: ../retail/Notifications-POS.md
+- name: Returns
+  items:
+  - name: Linked refunds
+    href: ../retail/dev-itpro/linked-refunds.md
+  - name: Sell and return products not included in a store's assortment
+    href: ../retail/sell-return-outside-assortments.md
+  - name: Configure and process an exchange on a return order
+    href: ../retail/orderexchanges.md
+  - name: Restrict payment methods for returns without a receipt
+    href: ../retail/payment-methods-restrictions.md
+  - name: Return items across multiple customer orders and invoices
+    href: ../retail/multireturn.md
+- name: Modern Point of Sale (MPOS) and Cloud POS
+  items:
+  - name: Choose between MPOS and Cloud POS
+    href: ../retail/MPOS-or-CPOS.md
+  - name: Online and offline POS operations
+    href: ../retail/pos-operations.md
+  - name: Device activation of a customized Retail MPOS
+    href: ../retail/dev-itpro/retail-POS-activation-changes.md
+  - name: Demo data screen layouts in MPOS and Cloud POS
+    href: ../retail/demo-data.md
+  - name: Product and customer search in the POS
+    href: ../retail/POS-search-improvements.md
+  - name: Search for products and product variants during order entry
+    href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Cash management improvements
+    href: ../retail/cash-mgmt.md 
+  - name: Inventory lookup in the POS
+    href: ../retail/product-variants-POS.md
+  - name: Suspend and resume transactions in the POS
+    href: ../retail/pos-suspend-recall-transactions.md
+  - name: Offline POS functionality
+    href: ../retail/pos-offline-functionality.md
+  - name: Shift and cash drawer management
+    href: ../retail/shift-drawer-management.md
+  - name: Cash out gift card balance
+    href: ../retail/dev-itpro/gift-card-cash-out.md
+  - name: Ship orders from another store
+    href: ../retail/charge-send.md
+  - name: Task recorder and Help for MPOS and Cloud POS
+    href: ../retail/task-recorder-retail-pos.md
+  - name: Hardware peripherals
+    items:
+    - name: Retail peripherals
+      href: ../retail/retail-peripherals-overview.md
+    - name: Retail peripheral simulator
+      href: ../retail/dev-itpro/retail-peripheral-simulator.md
+    - name: Connect peripherals to the POS
+      href: ../retail/define-maintain-channel-clients-registers-hw-stations.md
+  - name: Screen layouts
+    items:
+    - name: Demo data screen layouts in MPOS/CPOS
+      href: ../retail/demo-data.md
+    - name: Screen layouts for the POS
+      href: ../retail/pos-screen-layouts.md
+    - name: Install the Retail POS layout designer
+      href: ../retail/install-pos-layout-designer.md
+    - name: Choose notification settings
+      href: ../retail/Notifications-POS.md
+    - name: POS application and user language settings
+      href: ../retail/pos-application-user-language-settings.md
+    - name: Set up and manage images for MPOS
+      href: ../retail/set-up-manage-images-retail-mpos.md
+    - name: Client images in POS
+      href: ../retail/pos-image.md
+  - name: Customer orders
+    items:
+    - name: Customer orders in MPOS
+      href: ../retail/customer-orders-overview.md
+    - name: Hybrid customer orders
+      href: ../retail/hybrid-customer-orders.md
+  - name: Sales associates
+    items:
+    - name: Track commissions in the POS using sales groups
+      href: ../retail/pos-sales-groups-track-commissions.md
+  - name: Device activation
+    items:
+    - name: Configure, install and activate MPOS
+      href: ../retail/retail-modern-pos-device-activation.md
+    - name: Set up extended logon functionality for MPOS and Cloud POS
+      href: ../retail/extended-logon.md
+    - name: Manage Retail activation accounts and validate devices
+      href: ../retail/set-up-activation-accounts-validate-devices-hq.md
+  - name: Receipts
+    items:
+    - name: Set up and design receipt formats
+      href: ../retail/receipt-templates-printing.md
+    - name: Send email receipts from MPOS
+      href: ../retail/email-receipts.md
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
