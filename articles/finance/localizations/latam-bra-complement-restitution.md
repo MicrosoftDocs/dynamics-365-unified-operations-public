@@ -270,7 +270,7 @@ The following records are out of scope: 2112 (outgoing fiscal documents that are
 
 On the **Presumed tax** FastTab of the **Fiscal books parameters per state** page, set the following parameters:
 
--  **Presumed tax calculation algorithm** – Select the method that is used to calculate the presumed ICMS-ST tax when outgoing fiscal documents to final and non-final consumers are generated and posted in Finance and Operations. This parameter is used to fill in the related tags when the NF-e fiscal document model.
+-  **Presumed tax calculation algorithm** – Select the method that is used to calculate the presumed ICMS-ST tax when outgoing fiscal documents to final and non-final consumers are generated and posted in Dynamics 365 Finance. This parameter is used to fill in the related tags when the NF-e fiscal document model.
 
     -  **Last purchase** – Use information from the latest incoming fiscal documents that were posted during the period.
 
@@ -382,7 +382,7 @@ Here is how the average algorithm for presumed tax calculation works:
 
 For RS state, use the **Generate adjustments** button to generate the related tax adjustment that must be reported in SPED Fiscal.
 
-Depending on the type of company business (retail or non-retail), Finance and Operations generates the related adjustments:
+Depending on the type of company business (retail or non-retail), Finance generates the related adjustments:
 
   - Debit for outgoing fiscal documents.
   - Credit for incoming fiscal documents.
