@@ -1276,3 +1276,6 @@
     href: ../retail/tasks/use-continuity-program.md
   - name: Configure retail workers
     href: ../retail/tasks/worker.md
+- name: Retail development and administration
+  href: ../retail/dev-itpro/dev-retail-home-page
+  
