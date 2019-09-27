@@ -42,7 +42,7 @@ This tutorial requires that you have access to an environment, and that you be p
 
 ## Keywords
 - **Model** - You configure your model to refer to two other models. This enables your model to reference metadata and code elements that are in other packages.
-- **Project** - You create a **Unified Operations** project, and you associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
+- **Project** - You create a project and then associate your project to your new model. You add elements to your project, which are also added to your model. Specifically, you add an extended data type (EDT). You also add a table that you populate with fields and a method.
 - **Designer** - Each time you add an item to your project, a designer is displayed that is tailored to the item type you selected. The **Properties** window adjusts each time a different node of the designer is highlighted. You make updates in the designers and in the **Properties** window.
 - **EDT** - Extended data type.
 
