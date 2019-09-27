@@ -91,7 +91,7 @@ Use the following procedure to configure the client application so that it can c
 
 After you've successfully signed in, the **Printers** button becomes available on the toolbar.
 
-## Register network printers in Finance and Operations
+## Register network printers
 Before you complete this procedure, make sure that you've installed all the network printers on the local host computer. All the printer devices that are installed will be available for service registration. Be sure to select only the printers that you want to expose in the applications.
 
 1. On the toolbar, click **Printers**.
