@@ -55,7 +55,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 ![Project creation - environment parameters](./media/project4.png)
 ##### Add Azure Connector
 1. If you are a partner, click "**Project settings**" from the tools tiles to the far right
-1. If you are a customer, choose "**Project settings**" from the menu
+1. If you are a customer, choose "**Project settings**" from the top menu
 1. Select "**Azure connectors**"
 1. Click "**+ Add**" to add Azure Connector
 1. Enter name as you see fit
@@ -84,7 +84,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 ### Import Extension
 1. Navigate back to your project front page by clicking the project name on the top
 1. If you are a partner, click "**Asset library**" from the tools tiles to the far right
-1. If you are a customer, choose "**Asset library**" from the menu
+1. If you are a customer, choose "**Asset library**" from the top menu
 1. Select "**Software deployable package**" from the list on the left
 1. Click "**IMPORT**" from the action pane
 1. Select "**Dynamics 365 Commerce Preview Demo Extension**" from the list of assets under "**SHARED ASSET LIBRARY**"
@@ -93,7 +93,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 
 ![Project creation - versions](./media/import.png)
 ### Deploy environment
-1. From the menu, select "**Cloud-hosted environments**"
+1. From the top menu, select "**Cloud-hosted environments**"
 1. Click "**+ Add**" to add ahttps://lcs.dynamics.com/v2n environment
 1. For "**Application version**", select "**10.0.6**"
 1. For  "**Platform version**" select "**Platform Update 30**"
@@ -143,8 +143,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 ## Post-provisioning steps
 At this stage, the environment has been provisioned end-to-end, but there are still few configuration steps that need to be taken care of before you can start evaluating the environment.
 ### Before starting
-Log in to the environment (HQ)
-1. From the menu, select "**Cloud-hosted environments**"
+1. From the top menu, select "**Cloud-hosted environments**"
 1. Select your environment from the list
 1. Click "**Full details**" from the environment info on the right
 1. Click "**Login**" to open a menu, choose "**Log on to environment**"
@@ -269,6 +268,12 @@ This step assumes that the user is a member of the group they are attempting to 
 1. Click "**all groups I belong to**"
 1. Locate your group from the "**Response Preview**" text box
 1. Security group ID is noted under property "**id**"
+### Test credit card information to perform test purchases
+In order to perform test transactions on the site, you can use this test credit card information:
+
+Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
+
+*Note: You should not attempt to use actual credit card information on the test site under any circumstances!*
 ### Useful links
 * LCS (Lifecycle services) - https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide
 * RCSU (Retail Cloud Scale Unit) - https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit
@@ -390,6 +395,6 @@ These tokens will be replaced at email rendering time with the actual values tha
 |Ship date|%lineshipdate%|
 |Procurement method|%linedeliverymode%|
 |delivery address|%linedeliveryaddress%|
-|Sales unit of the line (?)|%lineunit%|
+|Sales unit of the line|%lineunit%|
 
 *NOTE: place the Product list - start and Product list - end tokens below at the beginning and end of the block of HTML that repeats for every product.*
