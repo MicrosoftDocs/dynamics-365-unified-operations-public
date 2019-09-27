@@ -786,16 +786,6 @@
     href: add-copyright-notice.md
   - name: Add languages
     href: add-languages-to-site.md
-- name: Make your site compliant
-  items:
-  - name: Compliance overview
-    href: compliance-overview.md
-  - name: Add a privacy policy page
-    href: add-privacy-page.md
-  - name: Delete personal information  
-    href: delete-personal-information.md
-  - name: Cookie compliance
-    href: cookie-compliance.md
 - name: Pages
   items:
   - name: Select page layouts
