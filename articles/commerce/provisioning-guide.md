@@ -188,7 +188,7 @@ Make sure that **USRT** legal entity is selected (top right corner)
 ### Set up and run jobs
 ##### Scheduling a recurring product availability job
 1. Log in to the environment (HQ)
-1. Using the menu on the left, go to **Retail > Retail IT > Products and inventory > Product availability**
+1. Using the menu on the left, go to **Modules > Retail > Retail IT > Products and inventory > Product availability**
 1. Expand the **Run in the background** section
 1. Select **Yes** in the **Batch processing** field
 1. Click **Recurrence**
@@ -197,7 +197,7 @@ Make sure that **USRT** legal entity is selected (top right corner)
 1. Click OK
 1. Click OK
 ##### Scheduling a recurring P-job
-1. Using the menu on the left, go to **All workspaces > Retail IT**
+1. Using the menu on the left, go to **Workspaces > Retail IT**
 1. Click **Distribution schedule**
 1. Select **P-0001**
 1. Click **Create batch job**
@@ -209,7 +209,7 @@ Make sure that **USRT** legal entity is selected (top right corner)
 1. Click OK
 1. Click OK
 ##### Scheduling recurring order synchronization
-1. Using the menu on the left, go to **All workspaces > Retail store financials**
+1. Using the menu on the left, go to **Workspaces > Retail store financials**
 1. Under "**Posting**" on the right side-menu, Click **Synchronize orders**
 1. In the **Organization hierarchy** field, select '**Retail Stores by Region**'
 1. Make sure that the root node is selected
