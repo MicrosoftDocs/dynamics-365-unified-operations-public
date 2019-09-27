@@ -93,7 +93,7 @@ Setup of Finance and Operations will deploy a set of applications inside Service
 Finance and Operations is designed to work on a Hyper-V virtualized environment that is based on Windows Servers.
 
  > [!WARNING]
- > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
+ > On-premises deployments of Finance and Operations are not supported on any public cloud infrastructure, including Azure.
 
 The hardware configuration includes the following components:
 
