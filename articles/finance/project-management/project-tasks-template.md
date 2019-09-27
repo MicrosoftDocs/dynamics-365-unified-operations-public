@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize project tasks directly from Project Service Automation to Finance and Operations
-description: This topic describes the template and underlying task that are used to synchronize project tasks directly from Microsoft Dynamics 365 for Project Service Automation to Microsoft Dynamics 365 Finance.
+description: This topic describes the template and underlying task that are used to synchronize project tasks directly from Microsoft Dynamics 365 Project Service Automation to Dynamics 365 Finance.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/20/2018
