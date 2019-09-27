@@ -31,17 +31,13 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
-
-## Schedule for April 10.0 release
-
-### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. The ability to set up this configuration or pause updates is available through LCS. Customers will be able to pause up to 2 consecutive updates. Here are a few examples:
-
-- The customer is currently on version 8.1.2 and can choose to pause version 10. The customer will be required to take version 10.0.1
-- The customer is currently on version 8.1.3, the customer can choose to pause version 10 and version 10.0.1. The customer will be required to take the service update 10.0.2.  
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [new flexible service updates being made available] (https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/).   This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 
+### Can the update be delayed, what is the policy?
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to delay up to 3 consecutive updates.  Below is an example:
+      Customer is currently on version 10.0.2, customer can pause updates 10.0.3, 10.0.4, and 10.0.5.  The customer must take the 10.0.6 update when it is available.
+  
 ### With a release date in early April, when will the GA package be made available?
 Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
  
