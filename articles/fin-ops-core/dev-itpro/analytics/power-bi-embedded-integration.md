@@ -47,9 +47,9 @@ For more information about customizations that use extensions, see [Customizatio
 
 ## Advantages of Power BI Embedded
 - **Deliver Power BI workspaces and reports in the application.** If you're a power user or a business analyst, you can tweak ready-made reports or create new reports by using Power BI tools. As a developer, you can use the reports that your users create to provide rich navigation experiences in the product through workspaces. If you're in the partner and ISV community, you can build rich workspaces that include Power BI experiences, and then release those workspaces as part of your solution.
-- **The Power BI Embedded service license is bundled with the application.** If you're an ISV or a systems integrator, you can package workspaces that are enabled for Power BI (and navigational experiences that those workspaces provide) as part of a Microsoft Dynamics Lifecyle Services (LCS) solution. Your customers get the same experience without having to have a PowerBI.com subscription. The workspaces just work with Finance and Operations.
+- **The Power BI Embedded service license is bundled with the application.** If you're an ISV or a systems integrator, you can package workspaces that are enabled for Power BI (and navigational experiences that those workspaces provide) as part of a Microsoft Dynamics Lifecyle Services (LCS) solution. Your customers get the same experience without having to have a PowerBI.com subscription. The workspaces just work with Finance and Operations applications.
 - **Enable drill-down into detailed pages from Power BI.** The visuals are the starting point for action. Your users can drill down to business processes and pages to act immediately on issues that they uncover. The visuals let users filter data and uncover trends. Action pages reflect just the set of data that requires attention.
-- **Help secure access to Power BI reports by using menu items.** As a developer, you can use familiar programming concepts that are available in Finance and Operations, because we have extended the same concepts to workspaces that are based on Power BI. You can create new workspaces or extend existing workspaces by adding an overview page that is driven by Power BI. Developers can associate menu items with Power BI reports and include them as links in workspaces. The role-based and task-based security in Finance and Operations can be used to help secure these menu items.
+- **Help secure access to Power BI reports by using menu items.** As a developer, you can use familiar programming concepts that are available in Finance and Operations apps, because we have extended the same concepts to workspaces that are based on Power BI. You can create new workspaces or extend existing workspaces by adding an overview page that is driven by Power BI. Developers can associate menu items with Power BI reports and include them as links in workspaces. The role-based and task-based security in Finance and Operations apps can be used to help secure these menu items.
 - **Filter reports based on application context.** You can build navigation experiences by passing one or more filters to Power BI reports. For example, depending on a user’s actions or context, you can filter the Power BI report to reflect data from one business unit or a specific product. The user doesn't have to filter the data. You can define drill-through links to Finance and Operations pages, so that users can go directly to the transactional details pages.
 
 For more information about the Power BI Embedded service, see the [Power BI FAQ](https://powerbi.microsoft.com/documentation/powerbi-frequently-asked-questions/).
@@ -75,10 +75,10 @@ No, you can't currently do data mash-ups by using external data in the embedded 
 Yes, the single company view prevents users from accessing data from companies that they don’t have access to. For more information about how to help secure custom solutions, see [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md).
  
 ### How is currency shown across multiple companies?
-Currency is shown as a system currency. The system currency is defined on the **System parameters** page in Finance and Operations.
+Currency is shown as a system currency. The system currency is defined on the **System parameters** page .
  
 ### Can I drill from summary balances back into Finance and Operations?
-Yes, you can drill into the details on a Power BI report. However, there is limited support for drill-down into Finance and Operations.
+Yes, you can drill into the details on a Power BI report. However, there is limited support for drill-down into Finance and Operations apps.
  
 ### What languages are currently supported?
 Currently, only English is supported. However, the Power BI team plans to add support for other languages.
