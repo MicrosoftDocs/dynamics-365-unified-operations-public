@@ -55,7 +55,7 @@
   - name: What's new or changed
     items:
     - name: What's new or changed in Retail home page
-      href: get-started/whats-new.md
+      href: ../retail/get-started/whats-new.md
     - name: Preview features in Retail 10.0.6
       href: get-started/whats-new-10-0-6.md
     - name: Retail 10.0.5
