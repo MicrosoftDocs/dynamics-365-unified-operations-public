@@ -48,7 +48,7 @@ This function has a default value of 30 minutes. You can set the value up to 60 
 
 To change the value, follow these steps:
 
-1. From the Finance and Operations dashboard, select the **System Administration** workspace.
+1. From the dashboard, select the **System Administration** workspace.
 2. Select **System Settings**. This opens the **System parameters** page.
 3. In the **Session management** section, set **Session idle timeout in minutes**.
 4. Select **Save**. 
