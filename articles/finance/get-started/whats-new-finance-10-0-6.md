@@ -38,6 +38,53 @@ This topic describes features that are either new or changed in Microsoft Dynami
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
+## “Select consolidation amount from” control on the consolidate online for dual currency consolidation
+This features helps you control the currency (either the accounting or reporting currency) that's used as the transaction currency in the consolidation company and can automatically copy amounts from the source company to the consolidation company if the currencies are the same.
+
+## Cancel bank reconciliation
+Users will be able to cancel bank reconciliations in chronological order of reconciliation starting with the most recent. History is tracked to show when and by whom the reconciliation was reversed. This will prevent users from having to manually adjust journals to correct any errors that occurred during the periodic process.
+
+## Create checks with a blank status on the Checks page
+The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. During the payment process, when this feature is enabled, you can't create checks with a blank status during the payment process. This enhancement helps prevent wasting checks unnecessarily.
+
+## Reset workflow status for vendor invoices from Unrecoverable to Draft
+You can use the Workflow history page to reset the workflow status to Draft. This page can be opened from the Vendor invoice page or by going to Common > Inquires > Workflow. To reset the workflow status to Draft, select Recall. You can also reset the workflow status to Draft by selecting the Recall action on either the Vendor invoice or Pending vendor invoices page. After the workflow status is reset to Draft, it becomes available for editing on the Vendor invoice page.
+
+## Revenue recognition
+Revenue recognition management helps accounting and finance professionals automate the steps they take to comply with International Financial Reporting Standard (IFRS) 15 and Accounting Standards Codification (ASC) 606.
+
+New capabilities will include support for product bundles and kits such as:
+
+- Software and maintenance
+- Software and services
+- Software
+- Hardware and service
+
+These capabilities will handle the following features:
+
+- Revenue pricing 
+- Revenue schedules
+- Bundle setup 
+- Multiple sales order reallocation
+- Workspace navigation and reporting
+
+## Revenue pricing
+Users can enter a different price that they will recognize as different from what they charge the customer.
+
+![Revenue pricing screenshot](media/revenuepricing.png "Revenue pricing screenshot")
+
+## Revenue schedules
+Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
+
+![Revenue schedules screenshot](../accounts-receivable/media/revenueschedules.png "Revenue schedule screenshot")
+
+## Multiple sales order reallocation
+
+![Multiple sales order reallocation screenshot](media/multiplesalesorderreallocation.png "Multiple sales order reallocation")
+
+## Workspace 
+The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
+
 ## Project contact committed detail
 You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
 
