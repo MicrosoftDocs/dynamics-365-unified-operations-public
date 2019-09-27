@@ -33,9 +33,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-changed-10-0-6.md#additional-resources).
-
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 for Retail, see [Preview features in Dynamics 365 for Retail version 10.0.6](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-changed-10-0-6.md#additional-resources).
 
 ## Product configuration models V2 data entity
 
@@ -61,7 +59,7 @@ You can add a reference link from the Purchase order lines back to the correspon
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
+For information about the bug fixes included in each of the updates that are part of 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
 
 ### Platform update 30
 Microsoft Dynamics 365 for Finance and Operations version 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [Preview features in Finance and Operations platform update 30 (November 2019)](whats-new-platform-update-30.md).
