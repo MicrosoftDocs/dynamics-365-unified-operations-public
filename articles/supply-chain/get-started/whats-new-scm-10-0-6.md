@@ -62,7 +62,7 @@ You can add a reference link from the Purchase order lines back to the correspon
 For information about the bug fixes included in each of the updates that are part of 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
 
 ### Platform update 30
-Microsoft Dynamics 365 Supply Chain Management 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [What's new or changed in Platform update 30)](../fin-ops-core/fin-ops/get-started/whats-new-platform-update-30.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [What's new or changed in Platform update 30)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-30.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -70,7 +70,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
