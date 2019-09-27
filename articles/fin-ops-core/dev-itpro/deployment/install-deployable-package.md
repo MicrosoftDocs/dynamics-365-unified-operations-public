@@ -60,7 +60,7 @@ An AOT deployable package is a package that contains customizations and extensio
     AXUpdateInstaller.exe devinstall
     ```
 
-    The **devinstall** option installs the AOT deployable package on the VM. As of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition with platform update 12, the **devinstall** option doesn't require that you be an administrator on the VM.
+    The **devinstall** option installs the AOT deployable package on the VM. 
     
     > [!NOTE]
     > This command doesn't run database synchronization. You must run database synchronization from Microsoft Visual Studio after you install the deployable package.
