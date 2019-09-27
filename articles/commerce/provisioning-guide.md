@@ -358,7 +358,7 @@ You might want to customize the email templates to use different images or updat
 	1. (Optional) Customize the "**Subject**" property of the template
 	1. Click "**Save**"
 
-##### Supported tokens in the template
+#### Supported tokens in the email template
 These tokens will be replaced at email rendering time with the actual values that apply to the customer and their order:
 
 **Sales order** - The following tokens apply to the overall sales order
@@ -377,8 +377,6 @@ These tokens will be replaced at email rendering time with the actual values tha
 
 **Sales line** - These tokens are populated for each product in the order.
 
-NOTE: place the Product list - start and Product list - end tokens below at the beginning and end of the block of HTML that repeats for every product.
-
 |Name of the token|Token|
 |---|---|
 |Product list - start|\<!--%tablebegin.salesline% -->|
@@ -393,3 +391,5 @@ NOTE: place the Product list - start and Product list - end tokens below at the 
 |Procurement method|%linedeliverymode%|
 |delivery address|%linedeliveryaddress%|
 |Sales unit of the line (?)|%lineunit%|
+
+*NOTE: place the Product list - start and Product list - end tokens below at the beginning and end of the block of HTML that repeats for every product.*
