@@ -1214,8 +1214,6 @@
       href: https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json
     - name: Get support for Finance and Operations operated by 21Vianet in China
       href: lifecycle-services/21vianet-support.md
-    - name: Log a premier support ticket
-      href: lifecycle-services/premier-support.md
     - name: Submit requests to the Dynamics Service Engineering team
       href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
     - name: Set up technical support for Finance and Operations
