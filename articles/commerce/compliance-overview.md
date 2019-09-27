@@ -43,6 +43,6 @@ Compliance is an important factor for all businesses, because it helps your user
 | [Accessibility](accessibility.md) | Accessibility helps guarantee that your site offers full functionality for various tools, so that the site can be accessed and used by everyone who visits it. |
 | [General web compliance](cookie-compliance.md) | This topic describes the range of compliance-regulated web and data protocols that are legally required for sites in many regions. |
 | [Privacy and privacy policies](add-privacy-page.md) | This topic describes the policies about online data privacy and data rights for site users that company websites in many regions must follow. |
-| [GDPR and handling data subject requests (DSRs)](delete-personal-information.md) | This topic covers the General Data Protection Regulation (GDPR) in the European Union (EU). It also describes how data must be handled by those who use data on behalf of those that the data belongs to. |
+| [GDPR and handling data subject requests (DSRs)](delete-personal-information.md) | This topic covers the General Data Protection Regulation (GDPR) in the European Union (EU). It also describes how companies must handle data that they use on behalf of the people who own that data. |
 
 Every company is responsible for reviewing compliance-based content and functionality and applying them to its site. Use these topics to learn about the various compliance areas, and implement the areas that best fit your company and the content needs of your business.
