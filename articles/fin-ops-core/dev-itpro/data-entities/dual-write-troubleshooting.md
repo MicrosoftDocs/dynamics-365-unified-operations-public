@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshooting guide for data integration
-description: This topic provides troubleshooting information for data integration between Microsoft Dynamics 365 Finance and Operations apps and the Common Data Service.
+description: This topic provides troubleshooting information for data integration between Finance and Operations apps and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 07/25/2019
@@ -44,7 +44,7 @@ If you experience an issue or error during dual-write synchronization, follow th
 
     You can now inspect the errors.
 
-2. Sign in to Microsoft Dynamics 365 for Sales.
+2. Sign in to Microsoft Dynamics 365 Sales.
 3. Select the **Settings** button (the gear symbol), and then select **Advanced Settings**.
 4. On the **Settings** menu, select **Customization \> Plug-In Trace Log**.
 5. Select **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** as the type name to show the error details.
