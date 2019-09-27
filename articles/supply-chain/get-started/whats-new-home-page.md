@@ -34,13 +34,9 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 Supply Chain Management.
 
-For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+| Version | Build number | Availability | Learn more |
+|---------|--------------|---------------|-------------|
+| 10.0.6 | 10.0.XXX       | November 2019 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)](whats-new-scm-10-0-6.md)|
 
-
-[!include [release notes](../includes/release-notes.md)]
-
-## Application releases
-
-This table lists the major releases of the application. For monthly cloud updates, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
