@@ -54,7 +54,8 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 
 ![Project creation - environment parameters](./media/project4.png)
 ##### Add Azure Connector
-1. Click "**Project settings**" from the tools tiles to the far right
+1. If you are a partner, click "**Project settings**" from the tools tiles to the far right
+1. If you are a customer, choose "**Project settings**" from the menu
 1. Select "**Azure connectors**"
 1. Click "**+ Add**" to add Azure Connector
 1. Enter name as you see fit
@@ -80,9 +81,20 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For "**Azure region**", choose either "**East US**", "**East US 2**", "**West US**" or "**West US 2**"
 1. Proceed with "**Connect**"
 1. Your Azure Connector should appear in the list
+### Import Extension
+1. Navigate back to your project front page by clicking the project name on the top
+1. If you are a partner, click "**Asset library**" from the tools tiles to the far right
+1. If you are a customer, choose "**Asset library**" from the menu
+1. Select "**Software deployable package**" from the list on the left
+1. Click "**IMPORT**" from the action pane
+1. Select "**Dynamics 365 Commerce Preview Demo Extension**" from the list of assets under "**SHARED ASSET LIBRARY**"
+1. Click "**Pick**"
+1. You will be returned to the Asset library and you should see the extension in the list
+
+![Project creation - versions](./media/import.png)
 ### Deploy environment
 1. From the menu, select "**Cloud-hosted environments**"
-1. Click "**+ Add**" to add an environment
+1. Click "**+ Add**" to add ahttps://lcs.dynamics.com/v2n environment
 1. For "**Application version**", select "**10.0.6**"
 1. For  "**Platform version**" select "**Platform Update 30**"
 1. Proceed with "**Next**"
