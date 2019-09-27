@@ -565,9 +565,9 @@
       - name: Configure cost control workspace parameters
         href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
       - name: Understand access list security and RLS in Microsoft Power BI
-        href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Use content pack for Microsoft Power BI reporting
-        href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Use cost control workspace for mobile application
         href: cost-accounting/cost-controlling-mobile-workspace.md
     - name: Electronic messaging
@@ -997,13 +997,13 @@
       - name: Financial reporting overview
         href: general-ledger/financial-reporting-getting-started.md
       - name: Financial reporting overview
-        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Financial report components
-        href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Balance sheet financial reports
         href: general-ledger/balance-sheet-financial-reports.md
       - name: Generate financial reports
-        href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Income statement financial report
         href: general-ledger/income-statement-financial-report.md
       - name: Trial balance financial reports
@@ -1011,29 +1011,29 @@
       - name: View financial reports
         href: general-ledger/view-financial-reports.md
       - name: Report designer interface
-        href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Keyboard shortcuts for financial reporter
         href: general-ledger/financial-reporting-keyboard-shortcuts.md
       - name: User preferences in financial report designer
-        href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Advanced formatting options
-        href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Organize report components in report designer
-        href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Report definitions
-        href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Row definitions
-        href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Column definitions
-        href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Modify row definition cells
-        href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Reset the financial reporting data mart
-        href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/unified-operations/finance/toc.json
     - name: Globalization
       items:
       - name: Globalization resources
-        href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
+        href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Regulatory updates
         href: ../financials/localizations/regulatory-updates.md
       - name: Australia
@@ -1575,7 +1575,7 @@
         - name: Journal list report
           href: ../financials/localizations/emea-deu-journal-list-report.md
         - name: Set up electronic tax declarations
-          href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Hungary
         items:
         - name: Hungary overview
@@ -1643,7 +1643,7 @@
           - name: India GST reference groups
             href: ../financials/localizations/apac-ind-gst-reference-groups.md
           - name: GST integration for cash registers
-            href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+            href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/unified-operations/finance/toc.json
           - name: Master data setup
             items:
             - name: Create a business vertical
@@ -2378,25 +2378,25 @@
         - name: Create goals
           href: ../fin-ops-core/fin-ops/hr/tasks/create-goal.md
         - name: Organize your workforce using departments, jobs, and positions
-          href: ../talent/departments-jobs-positions.md
+          href: ../talent/departments-jobs-positions.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Set up job components
-          href: ../talent/create-job.md
+          href: ../talent/create-job.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Define new departments
           href: ../fin-ops-core/fin-ops/hr/tasks/define-new-departments.md
         - name: Define new jobs
           href: ../fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md
         - name: Create a department and associate it with the department hierarchy
-          href: ../talent/create-department-add-department-hierarchy.md
+          href: ../talent/create-department-add-department-hierarchy.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Create calendars and generate working times
           href: ../fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md
         - name: Set up HR parameters across legal entities
-          href: ../talent/set-up-hr-parameters-across-legal-entities.md
+          href: ../talent/set-up-hr-parameters-across-legal-entities.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Set up company-specific HR parameters
-          href: ../talent/set-up-company-specific-hr-parameters.md
+          href: ../talent/set-up-company-specific-hr-parameters.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Personnel actions FAQ
-          href: ../talent/personnel-actions-faq.md
+          href: ../talent/personnel-actions-faq.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Use workflow to manage employee information
-          href: ../talent/workflow-manage-employee-information.md
+          href: ../talent/workflow-manage-employee-information.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Modify reporting relationships for positions
           href: ../fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md
         - name: Approve application inbox records
@@ -2408,7 +2408,7 @@
         - name: Create loan items
           href: ../fin-ops-core/fin-ops/hr/tasks/create-loan-items.md
         - name: Manage items lent to workers
-          href: ../talent/loan-items.md
+          href: ../talent/loan-items.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Develop a succession plan
           href: ../fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md
         - name: Enter project timesheets
@@ -2440,15 +2440,15 @@
       - name: Motivate employees
         items:
         - name: Compensation plans
-          href: ../talent/compensation-plans.md
+          href: ../talent/compensation-plans.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Create fixed compensation plans
-          href: ../talent/create-fixed-compensation-plans.md
+          href: ../talent/create-fixed-compensation-plans.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Create variable compensation plans
-          href: ../talent/create-variable-compensation-plans.md
+          href: ../talent/create-variable-compensation-plans.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Define compensation processes and calculate results
           href: ../fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md
         - name: Process compensation
-          href: ../talent/process-compensation.md
+          href: ../talent/process-compensation.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Set up compensation grids
           href: ../fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md
         - name: Develop salary/compensation structures and plans
@@ -2464,17 +2464,17 @@
       - name: Develop and train employees
         items:
         - name: Performance management overview
-          href: ../talent/performance-management-overview.md
+          href: ../talent/performance-management-overview.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Align workforce skills with business needs
-          href: ../talent/skills.md
+          href: ../talent/skills.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Set up training courses
-          href: ../talent/courses.md
+          href: ../talent/courses.md?toc=/dynamics365/unified-operations/finance/toc.json
       - name: Create and maintain benefits
         items:
         - name: Manage a benefits program
-          href: ../talent/manage-benefit-program.md
+          href: ../talent/manage-benefit-program.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Benefit eligibility policies
-          href: ../talent/benefit-eligibility-policies.md
+          href: ../talent/benefit-eligibility-policies.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Benefit eligibility process
           href: ../fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md
         - name: Define benefit eligibility rules and policies
@@ -2490,15 +2490,15 @@
       - name: Gather information using questionnaires
         items:
         - name: Questionnaires
-          href: ../talent/questionnaires.md
+          href: ../talent/questionnaires.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Design a questionnaire
-          href: ../talent/design-questionnaires.md
+          href: ../talent/design-questionnaires.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Distribute and complete a questionnaire
-          href: ../talent/distribute-questionnaires.md
+          href: ../talent/distribute-questionnaires.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Distribute questionnaires using scheduling
           href: ../fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md
         - name: Evaluate the results of a questionnaire
-          href: ../talent/evaluate-questionnaire-results.md
+          href: ../talent/evaluate-questionnaire-results.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Analyze questionnaire results
           href: ../fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md
         - name: Create open-ended questions
