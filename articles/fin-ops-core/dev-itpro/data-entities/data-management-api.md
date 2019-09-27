@@ -42,12 +42,12 @@ Two APIs support file-based integration scenarios: the Data management framework
 
 | Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|--------------------------------------|-----------------------------|
-| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations |
+| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations apps |
 | Format              | Files and data packages | Only data packages |
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
-| Availability        | Microsoft Dynamics Finance and Operations (February 2016) and later. Note: This is not supported with the on-premises version of Dynamics 365 for Finance and Operations. | Microsoft Dynamics 365 for Finance and Operations with platform update 5 (March 2017) and later |
+| Availability        | Microsoft Dynamics Finance and Operations (February 2016) and later. Note: This is not supported with the on-premises version of Dynamics 365 Finance and Operations. | Microsoft Dynamics 365 for Finance and Operations with platform update 5 (March 2017) and later |
 
 If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
 
