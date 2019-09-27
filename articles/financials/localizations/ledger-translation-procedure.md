@@ -99,9 +99,8 @@ You can create translation group rules to specify all translation settings.
 3.  Select **Add**, and then, in the **Method** field, select **Ledger
     translation**.
 
-![](media/58adca1cfc7053a8fa317c738f98f45a.jpg)
+![Translation groups](media/1%20Translation%20groups.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  On the **Ledger parameters** FastTab, in the **Default currency group**
     field, select the currency group that should be used by default for the
@@ -195,9 +194,8 @@ during translation.
 >   \> [!NOTE]  
 >   \> You can set up multiple currency conversion rules for one rule group.
 
-![](media/7a76598396313f1f513813a7d850d04d.jpg)
+![](media/2%20Currency%20groups.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Create a currency group.
 
