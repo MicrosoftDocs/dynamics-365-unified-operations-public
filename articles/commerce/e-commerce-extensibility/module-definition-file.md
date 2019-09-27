@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Module definition files
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic covers module definition files in Microsoft Dynamics 365 Commerce.
 
