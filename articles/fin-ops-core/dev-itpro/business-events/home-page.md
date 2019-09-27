@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 for Finance and Operations.
+description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 Finance and Operations applications.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 09/09/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 for Finance and Operations. In this way, the systems can perform business actions in response to the business events.
+Business events provide a mechanism that lets external systems receive notifications from Microsoft Dynamics 365 Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
