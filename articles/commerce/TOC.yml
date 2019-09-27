@@ -57,11 +57,11 @@
   - name: What's new or changed
     items:
     - name: What's new or changed in Retail home page
-      href: get-started/whats-new.md
+      href: ../retail/get-started/whats-new.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: Preview features in Retail 10.0.6
-      href: get-started/whats-new-10-0-6.md
+      href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: Retail 10.0.5
-      href: get-started/whats-new-10-0-5.md
+      href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: What's new or changed in previous versions
       items:
       - name: What's new or changed in Finance and Operations home page
@@ -191,13 +191,13 @@
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/commerce/toc.json  
     - name: Implement Finance and Operations Retail projects
-      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+      href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: Set up new environments, Azure DevOps, and branches for Retail projects
-      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+      href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: Update code and environments for Retail projects
-      href: dev-itpro/updating-environments.md
+      href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/unified-operations/commerce/toc.json
     - name: Testing and performance issues
-      href: dev-itpro/retail-implementation-testing-performance.md   
+      href: ../retail/dev-itpro/retail-implementation-testing-performance.md ?toc=/dynamics365/unified-operations/commerce/toc.json  
 - name: Intelligence
   items:
   - name: Intelligence home page
