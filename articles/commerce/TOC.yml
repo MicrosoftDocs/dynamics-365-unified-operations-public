@@ -20,6 +20,8 @@
     href: add-telemetry.md
 - name: Brand your site and add store details
   items:
+  - name: Add a logo
+    href: add-logo.md 
   - name: Select a site theme
     href: select-site-theme.md
   - name: Add a favicon
@@ -32,10 +34,14 @@
     href: add-languages-to-site.md
 - name: Make your site compliant
   items:
+  - name: Compliance overview
+    href: compliance-overview.md
   - name: Add a privacy policy page
     href: add-privacy-page.md
   - name: Delete personal information  
     href: delete-personal-information.md
+  - name: Cookie compliance
+    href: cookie-compliance.md
 - name: Add and manage content on your site
   items:
   - name: Pages
@@ -92,6 +98,8 @@
       href: add-video-player.md
 - name: Ratings and reviews
   items:
+  - name: Ratings and reviews overview
+    href: ratings-reviews-overview.md
   - name: Manage ratings and reviews
     href: manage-reviews.md
   - name: Configure ratings and reviews
