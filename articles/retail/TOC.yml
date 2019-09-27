@@ -7,55 +7,55 @@
     - name: Get started
       items:
       - name: Before you buy
-        href: ../fin-and-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Sign up for preview subscription
-        href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
-          href: ../dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: One Version service updates FAQ
-          href: ../fin-and-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Software lifecycle policy - Cloud
-          href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Software lifecycle policy - On-premises
-          href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Service update availability
-          href: ../fin-and-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Apply updates to cloud environments
-          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure service updates
-          href: ../dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Pause service updates
-          href: ../dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Get notified about service updates
-          href: ../dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Data task automation
-          href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Delivering ISV solutions using One Version
-          href: ../dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create and automate user acceptance tests
-          href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json   
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/retail/toc.json   
       - name: Deploy a demo environment
-        href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Deployment considerations
         items:
         - name: Deployment options
-          href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Cloud deployment
-          href: ../dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: System requirements for cloud deployments
-          href: ../fin-and-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: On-premises deployment
-          href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: System requirements for on-premises deployments
-          href: ../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Buy Finance + Operations (on-premises)
-          href: ../fin-and-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Finance and Operations operated by 21Vianet in China
-          href: ../dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Finance and Operations in France
-          href: ../dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: What's new or changed
         items:
         - name: What's new or changed in Retail home page
@@ -67,131 +67,131 @@
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
-            href: ../fin-and-ops/get-started/whats-new-changed.md
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
           - name: Preview features in Finance and Operations 10.0.6 (November 2019)
-            href: ../fin-and-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Finance and Operations 10.0.5 (October 2019)
-            href: ../fin-and-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-and-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
-            href: ../fin-and-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
-            href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: AX 2012 features that were postponed
-          href: ../fin-and-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Features not implemented in on-premises deployments
-          href: ../fin-and-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-          href: ../fin-and-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Documentation resources
         items:
         - name: Help system
-          href: ../fin-and-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Connect the Help system
-          href: ../fin-and-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Connect a custom help site
-          href: ../fin-and-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/retail/toc.json    
+          href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/unified-operations/retail/toc.json    
         - name: View and export field descriptions
-          href: ../fin-and-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Task recorder
-          href: ../dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create documentation or training with Task recorder
-          href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Videos
-          href: ../fin-and-ops/get-started/videos.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Glossary
-          href: ../fin-and-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Learning catalog
         items: 
         - name: Learning catalog home page
-          href: ../fin-and-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Business decision makers
-          href: ../fin-and-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Business users
-          href: ../fin-and-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Implementation project managers
-          href: ../fin-and-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Administrators
-          href: ../fin-and-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Developers
-          href: ../fin-and-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Partner sales and marketing
-          href: ../fin-and-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Functional consultants
-          href: ../fin-and-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Solution architects
-          href: ../fin-and-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Explore the user interface
         items:
         - name: User interface elements
-          href: ../fin-and-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Accessibility features
-          href: ../fin-and-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Feature management overview
-          href: ../fin-and-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Client FAQ
-          href: ../fin-and-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Action search
-          href: ../fin-and-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Advanced filtering and query syntax
-          href: ../fin-and-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure and filter workspaces
-          href: ../fin-and-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Show pages side by side by using the Open in new window feature
-          href: ../fin-and-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Keyboard shortcuts
-          href: ../fin-and-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Change the banners or logo images for legal entities
-          href: ../fin-and-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Navigation search
-          href: ../fin-and-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Personalize the user experience
-          href: ../fin-and-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Saved views
-          href: ../fin-and-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create and work with custom fields
-          href: ../fin-and-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Embed PowerApps apps
-          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Find information by using lookups
-          href: ../fin-and-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Change the date for a session
-          href: ../fin-and-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Set a user's preferred time zone
-          href: ../fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Understand Lifecycle Services
-          href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
-          href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Architecture for Finance and Operations apps
-          href: ../fin-and-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Microsoft FastTrack for Finance and Operations
-          href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Onboard an implementation project
-          href: ../fin-and-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Environment planning
-          href: ../fin-and-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/retail/toc.json   
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/unified-operations/retail/toc.json   
         - name: Prepare for go-live
-          href: ../fin-and-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Go-live FAQ
-          href: ../fin-and-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Submit a service request
-          href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-          href: ../fin-and-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/retail/toc.json    
+          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/unified-operations/retail/toc.json    
         - name: Move environments between data centers
-          href: ../fin-and-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/retail/toc.json      
+          href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/unified-operations/retail/toc.json      
         - name: Move licenses between agreement types
-          href: ../fin-and-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/retail/toc.json 
+          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/unified-operations/retail/toc.json 
         - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json 
+          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
-          href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json  
+          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/retail/toc.json  
         - name: Implement Finance and Operations Retail projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
         - name: Set up new environments, Azure DevOps, and branches for Retail projects
@@ -203,29 +203,29 @@
     - name: Mobile app
       items:
       - name: Mobile app home page
-        href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Mobile workspaces
         items:
         - name: Available mobile workspaces
-          href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Company directory
-          href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Cost controlling
-          href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Expense management
-          href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Invoice approvals
-          href: ../dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: My team
-          href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Project mobile applications overview
-          href: ../financials/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Project time entry
-          href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
         - name: Project timesheet
-          href: ../financials/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Sales orders
@@ -233,163 +233,163 @@
         - name: Vendor collaboration
           href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Publish mobile workspaces
-        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
     - name: Office integration
       items:
       - name: Office integration overview
-        href: ../dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Office integration tutorial
-        href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Open entity data in Excel and update it using the Excel add-in
-        href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Create Open in Excel experiences
-        href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Add templates to the Open lines in Excel menu
-        href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Customize the Open in Microsoft Office menu
-        href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Configure and send email
-        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Develop email experiences
-        href: ../dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Troubleshoot the Office integration
-        href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/retail/toc.json
     - name: Organization administration
       items:
       - name: Organization administration home page
-        href: ../fin-and-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Number sequences
         items:
         - name: Number sequences overview
-          href: ../fin-and-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Set up number sequences on an individual basis
-          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Set up number sequences using a wizard
-          href: ../fin-and-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Organizations and organizational hierarchies
         items:
         - name: Organizations and organizational hierarchies overview
-          href: ../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Plan your organizational hierarchy
-          href: ../fin-and-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create an organization hierarchy
-          href: ../fin-and-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create legal entities
-          href: ../fin-and-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create operating units
-          href: ../fin-and-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Global address book
         items:
         - name: Global address book overview
-          href: ../fin-and-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Plan for the global address book and other address books
-          href: ../fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure the global address book
-          href: ../fin-and-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Address books FAQ
-          href: ../fin-and-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure address books
-          href: ../fin-and-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Workflow system
         items:
         - name: Workflow system overview
-          href: ../fin-and-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow system architecture
-          href: ../fin-and-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow elements
-          href: ../fin-and-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow actions
-          href: ../fin-and-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create workflows
           items:
           - name: Create workflows overview
-            href: ../fin-and-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure workflow properties
-            href: ../fin-and-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure manual tasks
-            href: ../fin-and-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure automated tasks
-            href: ../fin-and-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure approval processes
-            href: ../fin-and-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure approval steps
-            href: ../fin-and-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure manual decisions
-            href: ../fin-and-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure conditional decisions
-            href: ../fin-and-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure parallel activities
-            href: ../fin-and-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure parallel branches
-            href: ../fin-and-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Configure line-item workflows
-            href: ../fin-and-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure the Workflow Message Processing batch job as critical
-          href: ../fin-and-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Delegate work items in a workflow
-          href: ../fin-and-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: View workflow history
-          href: ../fin-and-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Configure the system to send workflow-related email to users
-          href: ../fin-and-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow types
           items:
           - name: Creating a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Workflow type checklist
-            href: ../fin-and-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Create a workflow category
-            href: ../fin-and-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Create a query for a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Create a new workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Create a workflow document class
-            href: ../fin-and-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Create a SubmitToWorkflow class
-            href: ../fin-and-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Associate a workflow document class with a workflow type
-            href: ../fin-and-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/retail/toc.json
+            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow types report
-          href: ../fin-and-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workflow FAQ
-          href: ../fin-and-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Alerts
         items:
         - name: Alerts overview
-          href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create alert rules
-          href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Batch processing of alerts
-          href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Client alert notifications by email
-          href: ../fin-and-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Electronic signatures
         items:
         - name: Electronic signatures overview
-          href: ../fin-and-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Set up electronic signatures
-          href: ../fin-and-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Case management
         items:
         - name: Case management overview
-          href: ../fin-and-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Plan case security, processes, and categories
-          href: ../fin-and-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Record templates
         items:
         - name: Record templates overview
-          href: ../fin-and-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Create a record template
-          href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Use a record template to create a new record
-          href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Configure document management
-        href: ../fin-and-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Configure and send email
-        href: ../fin-and-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Date/time data and time zones
-        href: ../fin-and-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/unified-operations/retail/toc.json
     - name: Channel setup and management
       items:
       - name: Channel setup
@@ -503,7 +503,7 @@
       - name: Payment methods
         href: payment-methods.md
       - name: Credit card setup, authorization, and capture
-        href: ../financials/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Configure cash denominations for the POS
         href: cash-denominations.md
       - name: Configure credit card processing
@@ -529,13 +529,13 @@
     - name: Sales tax
       items:
       - name: Sales tax overview
-        href: ../financials/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Sales tax calculation methods in the Origin field
-        href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+        href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Sales tax assignment and overrides
         href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Whole amount and Interval calculation options for sales tax codes
-        href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json    
+        href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json    
     - name: Purchase orders
       items:
       - name: Purchase order overview
@@ -775,7 +775,7 @@
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
-          href: ../financials/localizations/latam-mex-global-cfdi-3-3.md
+          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
       - name: Norway
         items:
         - name: Cash register functionality
@@ -864,7 +864,7 @@
         - name: Retail online store publishing architecture
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
-          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
         - name: Retail capabilities available in on-premises deployments
@@ -890,7 +890,7 @@
         - name: Retail component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
         - name: Apply a deployable package
-          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: Upgrade and N-1 support
         items:
         - name: Upgrade and N-1 support for Retail
@@ -906,7 +906,7 @@
       - name: Environment configuration
         items:
         - name: Add links to your organization's legal terms and privacy statement
-          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Manage Bing Maps
           href: dev-itpro/manage-bing-maps.md
       - name: Localize Retail extension resources and label files
@@ -1061,5 +1061,9 @@
         items:
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-  - name: Finance and Operations apps development and administration 
-    href: dev-itpro/toc.yml
+- name: Finance and Operations apps development and administration 
+  href: ../fin-ops-core/dev-itpro/index.md
+- name: Dynamics 365 Finance
+  href: ../finance/index.md
+- name: Dynamics 365 Supply Chain Management 
+  href: ../supply-chain/index.md
