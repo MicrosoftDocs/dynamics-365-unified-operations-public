@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 15
 
 When maintenance is performed on the entity store, it impacts the following components:
 
-- Application analytical workspaces, if you are on Dynamics 365 Finance or Dynamics 365 for Retail 7.2 or higher and have configured analytical workspaces for embedded analytical reports.
+- Application analytical workspaces.
 - Entity store-based reports that have been deployed to PowerBI.com.
 
 To resolve issues with these components, complete the procedures in this topic.
