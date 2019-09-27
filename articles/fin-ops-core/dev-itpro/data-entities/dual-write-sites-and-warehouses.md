@@ -42,7 +42,7 @@ This topic describes the integration of site and warehouse data between Finance 
 
 With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table.
 
-Finance and Operations  | Other Dynamics 365 apps
+Finance and Operations apps | Other Dynamics 365 apps
 --------------------------|---------------------------------
 Sites                     | msdyn_operationalsites
 Warehouses                | warehouses
