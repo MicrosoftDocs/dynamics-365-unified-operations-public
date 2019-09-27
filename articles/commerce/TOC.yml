@@ -898,6 +898,29 @@
     href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/unified-operations/commerce/toc.json
   - name: Change the sort order for merchandising entities
     href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/unified-operations/commerce/toc.json
+- name: Pricing and discounts
+  items:
+  - name: Retail discounts
+    href: ../retail/retail-discounts-overview.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Retail sales price management
+    href: ../retail/price-management.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Price adjustments and discounts
+    href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Apply multiple discounts to a product
+    href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Determine the optimal combination of overlapping discounts
+    href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Define channel-specific discounts
+    href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Options for preventing discounts for retail products
+    href: ../retail/prevent-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Shipping discount overview
+    href: ../retail/retail-shipping-discount.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Set up coupons for retail sales
+    href: ../retail/retail-coupons.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Retail price reports
+    href: ../retail/price-report.md?toc=/dynamics365/unified-operations/commerce/toc.json
+
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
