@@ -57,9 +57,9 @@
     - name: What's new or changed in Retail home page
       href: ../retail/get-started/whats-new.md
     - name: Preview features in Retail 10.0.6
-      href: get-started/whats-new-10-0-6.md
+      href: ../retail/get-started/whats-new-10-0-6.md
     - name: Retail 10.0.5
-      href: get-started/whats-new-10-0-5.md
+      href: ../retail/get-started/whats-new-10-0-5.md
     - name: What's new or changed in previous versions
       items:
       - name: What's new or changed in Finance and Operations home page
@@ -189,13 +189,13 @@
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/commerce/toc.json  
     - name: Implement Finance and Operations Retail projects
-      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
+      href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
     - name: Set up new environments, Azure DevOps, and branches for Retail projects
-      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
+      href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Update code and environments for Retail projects
-      href: dev-itpro/updating-environments.md
+      href: ../retail/dev-itpro/updating-environments.md
     - name: Testing and performance issues
-      href: dev-itpro/retail-implementation-testing-performance.md   
+      href: ../retail/dev-itpro/retail-implementation-testing-performance.md   
 - name: Intelligence
   items:
   - name: Intelligence home page
@@ -735,23 +735,23 @@
 - name: Core cross-channel setup
   items:
   - name: Initialize seed data in new Retail environments
-    href: enable-configure-retail-functionality.md
+    href: ../retail/enable-configure-retail-functionality.md
   - name: Configure and install Retail hardware station
-    href: retail-hardware-station-configuration-installation.md
+    href: ../retail/retail-hardware-station-configuration-installation.md
   - name: Info codes and info code groups
-    href: info-codes-retail.md       
+    href: ../retail/info-codes-retail.md     
 - name: Store channel management 
   items:
   - name: Set up retail channels
-    href: define-maintain-retail-channels.md
+    href: ../retail/define-maintain-retail-channels.md
   - name: Create and change store hours
-    href: dev-itpro/store-hours.md
+    href: ../retail/dev-itpro/store-hours.md
   - name: Configure and install Retail hardware station
-    href: retail-hardware-station-configuration-installation.md
+    href: ../retail/retail-hardware-station-configuration-installation.md
 - name: Online channel management 
   items:
   - name: Set up online stores
-    href: online-stores.md
+    href: ../retail/online-stores.md
 - name: Create an e-Commerce site
   items:
   - name: Online store overview
@@ -854,6 +854,74 @@
   items:
   - name: Build custom response pages for 4xx/5xx status code errors
     href: build-pages-400-500-errors.md
+- name: Call center channel management
+  items:
+  - name: Call center sales functionality
+    href: ../retail/call-center-functionality.md
+  - name: Set up call center channels
+    href: ../retail/set-up-order-processing-options.md
+  - name: Call center catalogs
+    href: ../retail/call-center-catalogs.md
+  - name: Configure delivery modes and charges
+    href: ../retail/configure-call-center-delivery.md
+  - name: Set up and work with fraud alerts
+    href: ../retail/set-up-fraud-alerts.md
+  - name: Set up continuity programs for call centers
+    href: ../retail/set-up-continuity-program.md
+  - name: Configure and work with call center order holds
+    href: ../retail/work-with-order-holds.md
+- name: Products and merchandising
+  items:
+  - name: Product information overview
+    href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Retail hierarchies
+    href: ../retail/retail-hierarchies.md
+  - name: Attributes and attribute groups
+    href: ../retail/attribute-attributegroups-lifecycle.md
+  - name: Create and manage attributes
+    href: ../retail/create-manage-attributes.md
+  - name: Set up retail products
+    href: ../retail/set-up-retail-products.md
+  - name: Manage retail product categories and products
+    href: ../retail/category-management-product-creation.md
+  - name: Product dimensions
+    href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Assortment management
+    href: ../retail/assortments.md
+  - name: Set up assortments
+    href: ../retail/set-up-assortments.md
+  - name: Set up bar codes
+    href: ../retail/set-up-bar-codes.md
+  - name: Set up bar code masks
+    href: ../retail/set-up-bar-code-masks.md
+  - name: Change the sort order for merchandising entities
+    href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md
+- name: Pricing and discounts
+  items:
+  - name: Retail discounts
+    href: ../retail/retail-discounts-overview.md
+  - name: Retail sales price management
+    href: ../retail/price-management.md
+  - name: Price adjustments and discounts
+    href: ../retail/price-adjustments-discounts.md
+  - name: Apply multiple discounts to a product
+    href: ../retail/Apply-multiple-retail-discounts.md
+  - name: Determine the optimal combination of overlapping discounts
+    href: ../retail/optimal-combination-overlapping-discounts.md
+  - name: Define channel-specific discounts
+    href: ../retail/define-channel-specific-discounts.md
+  - name: Options for preventing discounts for retail products
+    href: ../retail/prevent-discounts.md
+  - name: Shipping discount overview
+    href: ../retail/retail-shipping-discount.md
+  - name: Set up coupons for retail sales
+    href: ../retail/retail-coupons.md
+  - name: Retail price reports
+    href: ../retail/price-report.md
+- name: Loyalty
+  items:
+  - name: Loyalty overview
+    href: ../retail/set-up-customer-loyalty-program.md
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
@@ -876,3 +944,4 @@
     href: modify-product-recommendation-results.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
+
