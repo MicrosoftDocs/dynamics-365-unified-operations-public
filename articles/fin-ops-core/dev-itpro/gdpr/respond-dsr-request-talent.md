@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic can help both businesses that use Microsoft Dynamics 365 Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
+This topic can help both businesses that use Microsoft Dynamics 365 Talent, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the European Union's General Data Protection Regulation (GDPR) and the related resources that Microsoft provides, see [General Data Protection Regulation overview](./gdpr-guide.md).
 
 For Talent, Microsoft acts as a processor. As a data processor, Talent provides processes and features that let you comply with your GDPR obligations as a data controller.
 
@@ -119,4 +119,4 @@ You can learn more about the GDPR on the [European Union's website](https://euro
 
 
 ### Disclaimer
-(c)2018 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
+(c)2019 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
