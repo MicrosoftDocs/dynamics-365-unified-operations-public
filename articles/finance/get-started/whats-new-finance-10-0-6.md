@@ -71,16 +71,16 @@ These capabilities will handle the following features:
 ## Revenue pricing
 Users can enter a different price that they will recognize as different from what they charge the customer.
 
-![Revenue pricing screenshot](media/revenuepricing.png "Revenue pricing screenshot")
+[![Revenue pricing screenshot](./accounts-receivable/media/revenuepricing.png)](./accounts-receivable/media/revenuepricing.png)
 
 ## Revenue schedules
 Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
 
-![Revenue schedules screenshot](../accounts-receivable/media/revenueschedules.png "Revenue schedule screenshot")
+[![Revenue schedules screenshot](../accounts-receivable/media/revenueschedules.png)](../accounts-receivable/media/revenueschedules.png)
 
 ## Multiple sales order reallocation
 
-![Multiple sales order reallocation screenshot](media/multiplesalesorderreallocation.png "Multiple sales order reallocation")
+[![Multiple sales order reallocation screenshot](/accounts-receivable/media/multiplesalesorderreallocation.png)](/accounts-receivable/media/multiplesalesorderreallocation.png)
 
 ## Workspace 
 The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
