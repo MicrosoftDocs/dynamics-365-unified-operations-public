@@ -1148,4 +1148,131 @@
     href: modify-product-recommendation-results.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
-
+- name: Monitoring and analysis
+  items:
+  - name: Monitor sales and margin performance
+    href: ../retail/monitor-sales-margin-performance.md
+  - name: Analyze sales trends and patterns
+    href: ../retail/analyze-sales-trends-patterns.md
+  - name: Assess sales performance by product
+    href: ../retail/sales-performance-products.md
+  - name: Assess customer and product profitability
+    href: ../retail/assess-customer-product-profitability.md
+  - name: Analyze store performance
+    href: ../retail/store-performance-information.md
+  - name: Set up Recency, Frequency, and Monetary (RFM) analysis
+    href: ../retail/set-up-rfm-analysis.md
+- name: Localization and regulatory features
+  items:
+  - name: Fiscal integration overview for Retail channel
+    href: ../retail/localizations/fiscal-integration-for-retail-channel.md
+  - name: Set up fiscal integration for Retail channel
+    href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md
+  - name: Austria
+    items:
+    - name: Fiscal registration service integration sample for Austria
+      href: ../retail/localizations/emea-aut-fi-sample.md
+  - name: Eastern Europe
+    items: 
+    - name: Advance invoices for Retail for Eastern Europe
+      href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md
+    - name: Petty cash management for Retail for Eastern Europe
+      href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md
+    - name: Retail customer invoices and return sales orders in Eastern European countries
+      href: ../retail/localizations/emea-eeu-retail-invoices.md
+    - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+      href: ../retail/localizations/emea-eeu-deployment.md
+    - name: Fiscal printer integration sample for Poland
+      href: ../retail/localizations/emea-pol-fpi-sample.md
+    - name: Fiscal registration service integration sample for Czech Republic
+      href: ../retail/localizations/emea-cze-fi-sample.md
+  - name: France
+    items:
+    - name: Cash register functionality
+      href: ../retail/localizations/emea-fra-cash-registers.md
+    - name: Deployment guidelines for cash registers
+      href: ../retail/localizations/emea-fra-deployment.md
+  - name: India
+    items:
+    - name: Goods and Services Tax (GST) integration for cash registers
+      href: ../retail/localizations/apac-ind-cash-registers.md
+    - name: Deployment guidelines for cash registers
+      href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md
+    - name: Support for upgrade and N-1 for India
+      href: ../retail/localizations/apac-ind-n-1-for-india.md
+  - name: Italy
+    items:
+    - name: Fiscal printer integration sample for Italy
+      href: ../retail/localizations/emea-ita-fpi-sample.md
+  - name: Mexico
+    items:
+    - name: Global CFDI e-invoices for Mexico
+      href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+  - name: Norway
+    items:
+    - name: Cash register functionality
+      href: ../retail/localizations/emea-nor-cash-registers.md
+    - name: Deployment guidelines for cash registers
+      href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md
+  - name: Sweden
+    items:
+    - name: Cash register functionality
+      href: ../retail/localizations/emea-swe-cash-registers.md
+    - name: Sample for Retail POS integration with control units
+      href: ../retail/localizations/retail-sdk-control-unit-sample.md
+- name: Retail tasks
+  items:
+  - name: Create channel-specific trade agreements
+    href: ../retail/tasks/base-price-trade-agreements.md
+  - name: Create trade agreements using category pricing rules
+    href: ../retail/tasks/category-pricing-rules-trade-agreements.md
+  - name: Configure functionality profiles for sales representatives
+    href: ../retail/tasks/configure-functionality-profile-sales-representative.md
+  - name: Create devices and associate them with registers
+    href: ../retail/tasks/create-associate-device.md
+  - name: Create hardware stations
+    href: ../retail/tasks/create-associate-hardware-station.md
+  - name: Create POS registers
+    href: ../retail/tasks/create-associate-registers.md
+  - name: Create call center orders
+    href: ../retail/tasks/create-call-center-orders.md
+  - name: Create financial dimensions for POS registers and configure dimension values on registers
+    href: ../retail/tasks/create-financial-dimensions-pos.md
+  - name: Create financial dimensions for retail channels and configure dimension values on stores
+    href: ../retail/tasks/create-financial-dimensions-retail-channels.md
+  - name: Create POS permission groups
+    href: ../retail/tasks/create-pos-permission-groups.md
+  - name: Create POS visual profiles
+    href: ../retail/tasks/create-pos-visual-profile-2016-02.md
+  - name: Create product packages for purchase orders
+    href: ../retail/tasks/create-product-packages-purchase-orders.md
+  - name: Create call center channels and define channel attributes
+    href: ../retail/tasks/define-call-center-channel-channel-attributes.md
+  - name: Define channel attributes
+    href: ../retail/tasks/define-channel-attributes.md
+  - name: Define continuity schedules
+    href: ../retail/tasks/define-continuity-schedules.md
+  - name: Define loyalty programs
+    href: ../retail/tasks/define-loyalty-programs.md
+  - name: Define loyalty reward points
+    href: ../retail/tasks/define-loyalty-reward-points.md
+  - name: Define loyalty schemes
+    href: ../retail/tasks/define-loyalty-schemes.md
+  - name: Design the relationships between organizational units
+    href: ../retail/tasks/design-relationships-between-organizational-units.md
+  - name: Manage assortments
+    href: ../retail/tasks/manage-assortments-2016-11.md
+  - name: Download hardware stations by using self-service
+    href: ../retail/tasks/perform-self-service-download-hardware-station.md
+  - name: Post online sales and payments
+    href: ../retail/tasks/posting-online-sales-payments.md
+  - name: Process adjustments of loyalty reward points
+    href: ../retail/tasks/process-loyalty-reward-point-adjustments.md
+  - name: Push products from distribution centers to stores via buyer's push
+    href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md
+  - name: Set up rules and parameters for cross-docking and buyer's push
+    href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+  - name: Selling continuity programs and processing sales orders
+    href: ../retail/tasks/use-continuity-program.md
+  - name: Configure retail workers
+    href: ../retail/tasks/worker.md
