@@ -34,8 +34,6 @@
       href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/commerce/toc.json   
   - name: Deploy a demo environment
     href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Commerce Preview environment provisioning guide
-    href: provisioning-guide.md
   - name: Deployment considerations
     items:
     - name: Deployment options
@@ -856,48 +854,6 @@
   items:
   - name: Build custom response pages for 4xx/5xx status code errors
     href: build-pages-400-500-errors.md
-- name: Call center chanel management
-  items:
-  - name: Call center sales functionality
-    href: ../retail/call-center-functionality.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up call center channels
-    href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Call center catalogs
-    href: ../retail/call-center-catalogs.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Configure delivery modes and charges
-    href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up and work with fraud alerts
-    href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up continuity programs for call centers
-    href: ../retail/set-up-continuity-program.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Configure and work with call center order holds
-    href: ../retail/work-with-order-holds.md?toc=/dynamics365/unified-operations/commerce/toc.json
-- name: Products and merchandising
-  items:
-  - name: Product information overview
-    href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Retail hierarchies
-    href: ../retail/retail-hierarchies.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Attributes and attribute groups
-    href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Create and manage attributes
-    href: ../retail/create-manage-attributes.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up retail products
-    href: ../retail/set-up-retail-products.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Manage retail product categories and products
-    href: ../retail/category-management-product-creation.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Product dimensions
-    href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Assortment management
-    href: ../retail/assortments.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up assortments
-    href: ../retail/set-up-assortments.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up bar codes
-    href: ../retail/set-up-bar-codes.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up bar code masks
-    href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Change the sort order for merchandising entities
-    href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/unified-operations/commerce/toc.json
 - name: Pricing and discounts
   items:
   - name: Retail discounts
