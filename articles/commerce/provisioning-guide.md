@@ -379,12 +379,12 @@ The email template for each transactional event that you wish to send emails for
 1. Click **Save**.
 ### Customizing email templates (optional)
 You might want to customize the email templates to use different images or update the links in the template to link back to your Preview environment. The steps below explain how to download the default templates, customize them and update the templates in the system.
-1. Using a browser, download the following HTML documents to your local computer:
-	1. [Order confirmation template](./includes/CnfmOrder.html)
-	1. [Issue gift card template](./includes/IssueGiftCard.html)
-	1. [New order template](./includes/NewOrder.html)
-	1. [Pack order template](./includes/PackOrder.html)
-	1. [Pick order template](./includes/PickOrder.html)
+1. Using a browser, download [the Microsoft Dynamics 365 Commerce Preview default email templates .zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) containing the following HTML documents to your local computer.
+	1. Order confirmation template
+	1. Issue gift card template
+	1. New order template
+	1. Pack order template
+	1. Pick order template
 1. Customize the templates using a text or HTML editor. Please see a list of supported tokens below.
 1. Log in to the environment (HQ).
 1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**.
