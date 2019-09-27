@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-changed-10-0-6.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-scm-10-0-6.md#additional-resources).
 
 ## Product configuration models V2 data entity
 
