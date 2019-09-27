@@ -317,7 +317,7 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 * [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 * [Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail)
 ### Microsoft Dynamics 365 Commerce Preview support
-If you experience issues while performing the provisioning steps, please visit the Microsoft Dynamics 365 Commerce Preview Yammer group for assistance: https://aka.ms/Dynamics365CommercePreviewYammer
+If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
 If you are having issues accessing the Yammer group, you can also reach us via email at **Dynamics365Commerce@microsoft.com**. This email address is not actively monitored so expect a delay in response.
 ***
