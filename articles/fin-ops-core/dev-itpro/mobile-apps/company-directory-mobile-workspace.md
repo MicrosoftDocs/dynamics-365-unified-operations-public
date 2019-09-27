@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 
-This mobile workspace can be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace can be used with the Finance and Operations mobile app.
 
 ## Overview
 The **Company directory** mobile workspace lets users perform these tasks:
@@ -74,7 +74,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </table>
 
 ## Download and install the mobile app
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
