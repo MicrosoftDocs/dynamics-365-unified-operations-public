@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This topic explains a database export scenario for Finance and Operations.
+description: This topic explains a database export scenario for Finance and Operations applications.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 07/08/2019
