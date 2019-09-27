@@ -53,7 +53,7 @@ This procedure is intended for users who have the System administrator or Electr
 7. Select Microsoft Dynamics 365 for Operations (1611).
 8. In the Version field, type '[7.1.1541.3036,8)'.
     * [7.1.1541.3036,8)  
-    * Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance. If it’s downloaded in advance, it must be completed in Finance and Operations, the version of which must be 7.1.1541.3036 or later, but must not exceed major version 8.   
+    * Dependencies that you enter will be evaluated when this configuration is downloaded from any ER repository. This configuration version will be downloaded from the ER repository when version 1 of the ‘Sample data model’ configuration is either already in place or downloaded in advance. If it’s downloaded in advance, it must be completed in Finance and Operations version 7.1.1541.3036 or later, but must not exceed major version 8.   
 9. Click Save.
 10. Close the page.
 11. Click Change status.
