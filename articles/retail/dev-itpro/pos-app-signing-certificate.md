@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -38,7 +38,7 @@ To install Modern POS (MPOS) in Windows you must sign the MPOS app with a signin
 
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task and use the secure file task output path variable as parameter in the Customization.settings file.
     > [!NOTE] 
-    > The Secure File task doesn’t support password protected certificate. You must remove the password before uploading to this task. Since the certificate is uploaded to the secure file system task in Azure, it's fine to remove the password only for this step. You should discuss removing the password discuss with your security experts to determine if this is the correct action for your project. The certificate uploaded to the build task can be accessed only by the build pipeline during build flow and no other process can access it. So, with secure file task the additional layer of password security is not required only during the build signing process. Don’t remove the certificate password for other scenarios.
+    > The Secure file task doesn’t support password protected certificate. You must remove the password before uploading to this task. Because the certificate is uploaded to the secure file system task in Microsoft Azure, it's okay to remove the password only for this step. You must discuss removing the password with your security experts to determine if this is the correct action for your project. The certificate uploaded to the build task can be accessed only by the build pipeline during the build flow and no other process can access it. With secure file task, the additional layer of password security is not required during the build signing process. Do not remove the certificate password for other scenarios.
 - Use a certificate placed in the file system: You download or generate a certificate and place it in the file system where the build is running. The VSO agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign with that certificate.
 
