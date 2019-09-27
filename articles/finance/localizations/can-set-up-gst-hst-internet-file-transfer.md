@@ -42,7 +42,7 @@ Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or H
 
   - GST/HST Internet File Transfer (GIFT) – An uploading tool used to submit text files to the CRA website for filing GST/HST returns and remitting payments.
 
-GIFT is supported by Microsoft Dynamics AX and Dynamics 365 for Finance and Operation. Before you generate a GIFT file, you should set up your software identification code, sales tax code, and sales tax group. 
+Before you generate a GIFT file, you should set up your software identification code, sales tax code, and sales tax group. 
 
 Use the following procedures to enter legal entity details, sales tax code, and sales tax group for GIFT, and to create sales tax entries for taxes paid on acquisition.
 
