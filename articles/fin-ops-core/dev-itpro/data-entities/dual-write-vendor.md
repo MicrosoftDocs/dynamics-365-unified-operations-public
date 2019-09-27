@@ -56,7 +56,7 @@ Vendor contact information resembles customer contact information. Behind the sc
 
 Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of entity maps works together during vendor data interaction, as shown in the following table.
 
-Finance and Operations apps  | Customer Engagement application
+Finance and Operations apps  | Other Dynamics 365 apps
 ------------------------|---------------------------------
 Vendor V2               | Account
 Vendor V2               | Msdyn\_vendors
