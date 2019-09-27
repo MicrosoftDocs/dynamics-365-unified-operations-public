@@ -920,7 +920,10 @@
     href: ../retail/retail-coupons.md?toc=/dynamics365/unified-operations/commerce/toc.json
   - name: Retail price reports
     href: ../retail/price-report.md?toc=/dynamics365/unified-operations/commerce/toc.json
-
+- name: Loyalty
+  items:
+  - name: Loyalty overview
+    href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/unified-operations/commerce/toc.json
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
