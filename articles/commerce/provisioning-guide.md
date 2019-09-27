@@ -164,7 +164,7 @@ Make sure that **USRT** legal entity is selected (top right corner)
 ##### Activate Cloud POS
 1. Log in to the LCS portal
 1. Navigate to your project
-1. From the menu, select "**Cloud-hosted environments**"
+1. From the top menu, select "**Cloud-hosted environments**"
 1. Select your environment from the list
 1. Click "**Full details**" from the environment info on the right
 1. Click "**Login**" to open a menu, choose "**Log on to Cloud Point of Sale**", POS should load up
