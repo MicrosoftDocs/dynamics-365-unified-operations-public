@@ -146,7 +146,7 @@ We have created larger templates that cover multiple module areas. You can use t
 
 - System and Shared, which include system setup, global address book, shared general ledger, and workflow
 - Financials, which includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
-- Supply chain management, which includes inventory management, product management, procurement, sales and marketing, limited warehouse management, production control, and costing
+- Supply Chain Management, which includes inventory management, product management, procurement, sales and marketing, limited warehouse management, production control, and costing
 
 The Expense and Project Management templates aren't included in a larger template. However, they are designed so that they can easily be merged into a project that uses other templates.
 
