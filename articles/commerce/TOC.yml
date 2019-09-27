@@ -741,7 +741,7 @@
   - name: Configure and install Retail hardware station
     href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/unified-operations/commerce/toc.json
   - name: Info codes and info code groups
-    href: ../retail/info-codes-retail.md  ?toc=/dynamics365/unified-operations/commerce/toc.json     
+    href: ../retail/info-codes-retail.md?toc=/dynamics365/unified-operations/commerce/toc.json     
 - name: Store channel management 
   items:
   - name: Set up retail channels
