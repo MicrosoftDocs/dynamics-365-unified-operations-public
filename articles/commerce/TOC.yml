@@ -55,11 +55,11 @@
   - name: What's new or changed
     items:
     - name: What's new or changed in Retail home page
-      href: ../retail/get-started/whats-new.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: get-started/whats-new.md
     - name: Preview features in Retail 10.0.6
-      href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: get-started/whats-new-10-0-6.md
     - name: Retail 10.0.5
-      href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: get-started/whats-new-10-0-5.md
     - name: What's new or changed in previous versions
       items:
       - name: What's new or changed in Finance and Operations home page
@@ -189,13 +189,13 @@
     - name: Multiple LCS projects and production environments on one Azure AD tenant
       href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/unified-operations/commerce/toc.json  
     - name: Implement Finance and Operations Retail projects
-      href: ../retail/dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
     - name: Set up new environments, Azure DevOps, and branches for Retail projects
-      href: ../retail/dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
     - name: Update code and environments for Retail projects
-      href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/unified-operations/commerce/toc.json
+      href: dev-itpro/updating-environments.md
     - name: Testing and performance issues
-      href: ../retail/dev-itpro/retail-implementation-testing-performance.md ?toc=/dynamics365/unified-operations/commerce/toc.json  
+      href: dev-itpro/retail-implementation-testing-performance.md   
 - name: Intelligence
   items:
   - name: Intelligence home page
@@ -735,23 +735,23 @@
 - name: Core cross-channel setup
   items:
   - name: Initialize seed data in new Retail environments
-    href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: enable-configure-retail-functionality.md
   - name: Configure and install Retail hardware station
-    href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: retail-hardware-station-configuration-installation.md
   - name: Info codes and info code groups
-    href: ../retail/info-codes-retail.md?toc=/dynamics365/unified-operations/commerce/toc.json     
+    href: info-codes-retail.md       
 - name: Store channel management 
   items:
   - name: Set up retail channels
-    href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: define-maintain-retail-channels.md
   - name: Create and change store hours
-    href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: dev-itpro/store-hours.md
   - name: Configure and install Retail hardware station
-    href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: retail-hardware-station-configuration-installation.md
 - name: Online channel management 
   items:
   - name: Set up online stores
-    href: ../retail/online-stores.md?toc=/dynamics365/unified-operations/commerce/toc.json
+    href: online-stores.md
 - name: Create an e-Commerce site
   items:
   - name: Online store overview
@@ -854,74 +854,6 @@
   items:
   - name: Build custom response pages for 4xx/5xx status code errors
     href: build-pages-400-500-errors.md
-- name: Call center channel management
-  items:
-  - name: Call center sales functionality
-    href: ../retail/call-center-functionality.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up call center channels
-    href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Call center catalogs
-    href: ../retail/call-center-catalogs.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Configure delivery modes and charges
-    href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up and work with fraud alerts
-    href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up continuity programs for call centers
-    href: ../retail/set-up-continuity-program.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Configure and work with call center order holds
-    href: ../retail/work-with-order-holds.md?toc=/dynamics365/unified-operations/commerce/toc.json
-- name: Products and merchandising
-  items:
-  - name: Product information overview
-    href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Retail hierarchies
-    href: ../retail/retail-hierarchies.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Attributes and attribute groups
-    href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Create and manage attributes
-    href: ../retail/create-manage-attributes.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up retail products
-    href: ../retail/set-up-retail-products.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Manage retail product categories and products
-    href: ../retail/category-management-product-creation.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Product dimensions
-    href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Assortment management
-    href: ../retail/assortments.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up assortments
-    href: ../retail/set-up-assortments.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up bar codes
-    href: ../retail/set-up-bar-codes.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up bar code masks
-    href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Change the sort order for merchandising entities
-    href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/unified-operations/commerce/toc.json
-- name: Pricing and discounts
-  items:
-  - name: Retail discounts
-    href: ../retail/retail-discounts-overview.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Retail sales price management
-    href: ../retail/price-management.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Price adjustments and discounts
-    href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Apply multiple discounts to a product
-    href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Determine the optimal combination of overlapping discounts
-    href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Define channel-specific discounts
-    href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Options for preventing discounts for retail products
-    href: ../retail/prevent-discounts.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Shipping discount overview
-    href: ../retail/retail-shipping-discount.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Set up coupons for retail sales
-    href: ../retail/retail-coupons.md?toc=/dynamics365/unified-operations/commerce/toc.json
-  - name: Retail price reports
-    href: ../retail/price-report.md?toc=/dynamics365/unified-operations/commerce/toc.json
-- name: Loyalty
-  items:
-  - name: Loyalty overview
-    href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/unified-operations/commerce/toc.json
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
@@ -944,4 +876,3 @@
     href: modify-product-recommendation-results.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
-
