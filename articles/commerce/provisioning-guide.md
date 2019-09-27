@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 Commerce Preview environment provisioning guide
+title: Configure an e-Commerce evaluation environment
 description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
 author: v-chgri
 manager: annbe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Dynamics 365 Commerce Preview environment provisioning guide
+# Configure an e-Commerce evaluation environment
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
