@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project Service Automation overview
-description: This topic provides information about the Project Service Automation to Finance and Operations integration solution. This integration solution uses the Data Integration feature to synchronize data across instances of Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 for Project Service Automation via Common Data Service.
+description: This topic provides information about the Dynamics 365 Project Service Automation to Dynamics 365 Finance integration solution.
 author: KimANelson
 manager: AnnBe
 ms.date: 07/25/2019
