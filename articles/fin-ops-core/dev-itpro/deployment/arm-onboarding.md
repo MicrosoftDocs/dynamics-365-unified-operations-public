@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 
-To deploy Microsoft Azure Resource Manager (ARM) topologies, which include Microsoft Dynamics 365 for Operations Platform update 2 (August 2016), you must complete the ARM onboarding process for your connectors. To start the onboarding process, you must have the following items:
+To deploy Microsoft Azure Resource Manager (ARM) topologies, you must complete the ARM onboarding process for your connectors. To start the onboarding process, you must have the following items:
 
 -   The Azure subscription ID that you're deploying to
 -   Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows, and the Upload Management certificate
