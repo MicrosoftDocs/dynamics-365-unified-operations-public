@@ -48,7 +48,7 @@ Download the following files to complete the task guides mentioned above.
 | Incoming file in .XLSX format - template    | [1099import-template.xlsx](https://go.microsoft.com/fwlink/?linkid=862266) |
 | Incoming file in .XLSX format - sample data | [1099import-data.xlsx](https://go.microsoft.com/fwlink/?linkid=862266)     |
 
-If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Dynamics 365 for Finance and Operation application, download the following file.
+If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Finance and Operation application, download the following file.
 
 | Content description    | File                                                            |
 |------------------------|-----------------------------------------------------------------|
