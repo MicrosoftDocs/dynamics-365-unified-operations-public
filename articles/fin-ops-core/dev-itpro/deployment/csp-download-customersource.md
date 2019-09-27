@@ -44,8 +44,3 @@ If you haven’t previously accessed CustomerSource, here are some resources to 
 
 - [Need Access to Customer Source?](https://mbs.microsoft.com/customersource/northamerica/news-events/news-events/NeedAccesstoCustomerSource)
 - [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
-
-  **Note** There is currently no on-premises release of the current release of Dynamics 365 for Operations, version 1611.
-
-
-
