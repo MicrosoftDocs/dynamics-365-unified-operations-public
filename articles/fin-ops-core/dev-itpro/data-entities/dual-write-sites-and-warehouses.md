@@ -36,13 +36,13 @@ ms.search.validFrom: 2019-08-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. Operational sites and warehouses are common concepts in a supply chain management application. They are used to model the supply chain of your company.
+This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
 
 ## Templates
 
 With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table.
 
-Finance and Operations  | Customer Engagement application
+Finance and Operations  | Other Dynamics 365 apps
 --------------------------|---------------------------------
 Sites                     | msdyn_operationalsites
 Warehouses                | warehouses
