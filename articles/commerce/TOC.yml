@@ -830,6 +830,8 @@
     href: add-cart-module.md
   - name: Add a checkout module
     href: add-checkout-module.md
+  - name: Add a container module
+    href: add-container-module.md
   - name: Add a content placement module
     href: add-content-placement-modules.md
   - name: Add a content rich block module
