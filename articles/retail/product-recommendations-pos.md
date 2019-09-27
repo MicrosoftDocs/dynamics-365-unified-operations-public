@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Product recommendations for POS
+title: Product recommendations on POS
 description: This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 9/27/19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,17 +30,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Personalized product recommendations
+# Product recommendations on POS
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](../dev-itpro/migration-upgrade/deprecated-features.md).
+In Dynamics 365 for Retail build 10.0.6, product recommendations can be displayed on the point of sale (POS) device. At its core, product Recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. To implement this feature on POS, follow the steps on [how to add recommendations to your POS devices.](add-recommendations-control-pos-screen.md) 
 
-In Dynamics 365 for Retail build 10.0.6, product recommendations can be displayed on the point of sale (POS) device. At its core, product Recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. 
-
-By showcasing products targeted to a customer's interests and buying habits, or through patterns of products that are frequently bought together, product recommendations can help retailers with up-sell and cross-sell and ultimately enhance customer retention and participation. 
-
+For more information about product recommendations features, read the [product-recommendations overview.](product-recommendations-overview.md) 
 
 ## Scenarios
 
@@ -82,4 +78,6 @@ To set up product recommendations, follow these steps:
 ## Additional resources
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
+[Product recommendations overview](product-recommendations-overview.md)
+[Enable product recommendations](enable-product-recommendations.md) 
 
