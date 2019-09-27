@@ -3,9 +3,9 @@
 
 title: Add a recommendations control to the transaction screen on POS devices
 description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 9/27/19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -34,12 +34,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> We are removing the current version of the product recommendation service as we redesign this feature with a better algorithm and newer retail-oriented capabilities. For more information see [Removed or deprecated features](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features).
+This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail. For more information about product recommendations, read the  [product recommendations on POS documentation.](product-recommendations-pos.md)
 
-This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
-
-You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail. *Recommendations* are items that your customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer.
+You can display product recommendations on your POS device when you use Microsoft Dynamics 365 for Retail. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer. 
 
 ## Open Layout designer
 
@@ -97,4 +94,5 @@ There are two configurations options available. Choose the option that works bes
 
 ## Additional resources
 
-[Personalized product recommendations overview](personalized-product-recommendations.md)
+[product recommendations on POS](product-recommendations-pos.md)
+[product recommendations overview](product-recommendations-overview.md)
