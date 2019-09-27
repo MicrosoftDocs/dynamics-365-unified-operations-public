@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Request properties object
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 
