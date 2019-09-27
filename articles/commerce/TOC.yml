@@ -34,6 +34,8 @@
       href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/unified-operations/commerce/toc.json   
   - name: Deploy a demo environment
     href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Commerce Preview environment provisioning guide
+    href: provisioning-guide.md
   - name: Deployment considerations
     items:
     - name: Deployment options
@@ -735,19 +737,19 @@
 - name: Core cross-channel setup
   items:
   - name: Initialize seed data in new Retail environments
-    href: enable-configure-retail-functionality.md
+    href: ../retail/enable-configure-retail-functionality.md
   - name: Configure and install Retail hardware station
-    href: retail-hardware-station-configuration-installation.md
+    href: ../retail/retail-hardware-station-configuration-installation.md
   - name: Info codes and info code groups
-    href: info-codes-retail.md       
+    href: ../retail/info-codes-retail.md       
 - name: Store channel management 
   items:
   - name: Set up retail channels
-    href: define-maintain-retail-channels.md
+    href: ../retail/define-maintain-retail-channels.md
   - name: Create and change store hours
-    href: dev-itpro/store-hours.md
+    href: ../retail/dev-itpro/store-hours.md
   - name: Configure and install Retail hardware station
-    href: retail-hardware-station-configuration-installation.md
+    href: ../retail/retail-hardware-station-configuration-installation.md
 - name: Online channel management 
   items:
   - name: Set up online stores
@@ -854,6 +856,46 @@
   items:
   - name: Build custom response pages for 4xx/5xx status code errors
     href: build-pages-400-500-errors.md
+- name: Call center chanel management
+  items:
+  - name: Call center sales functionality
+    href: ../retail/call-center-functionality.md
+  - name: Set up call center channels
+    href: ../retail/set-up-order-processing-options.md
+  - name: Call center catalogs
+    href: ../retail/call-center-catalogs.md
+  - name: Configure delivery modes and charges
+    href: ../retail/configure-call-center-delivery.md
+  - name: Set up and work with fraud alerts
+    href: ../retail/set-up-fraud-alerts.md
+  - name: Set up continuity programs for call centers
+    href: ../retail/set-up-continuity-program.md
+  - name: Configure and work with call center order holds
+    href: ../retail/work-with-order-holds.md
+- name: Products and merchandising
+  items:
+  - name: Product information overview
+    href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Retail hierarchies
+    href: ../retail/retail-hierarchies.md
+  - name: Attributes and attribute groups
+    href: ../retail/attribute-attributegroups-lifecycle.md
+  - name: Create and manage attributes
+    href: ../retail/create-manage-attributes.md
+  - name: Set up retail products
+    href: ../retail/set-up-retail-products.md
+  - name: Manage retail product categories and products
+    href: ../retail/category-management-product-creation.md
+  - name: Product dimensions
+    href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/commerce/toc.json
+  - name: Assortment management
+    href: ../retail/assortments.md
+  - name: Set up assortments
+    href: ../retail/set-up-assortments.md
+  - name: Set up bar codes
+    href: ../retail/set-up-bar-codes.md
+  - name: Set up bar code masks
+    href: ../retail/set-up-bar-code-masks.md
 - name: Ratings and reviews
   items:
   - name: Ratings and reviews overview
