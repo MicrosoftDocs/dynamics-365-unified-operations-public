@@ -1390,5 +1390,5 @@
     - name: Package configurations and deploy them to an online environment
       href: ../e-commerce-extensibility/package-deploy.md
     - name: SDK and core library updates
-      href: ../e-commerce-extensibility/sdk-updates.md
+      href: e-commerce-extensibility/sdk-updates.md
 
