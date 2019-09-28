@@ -139,7 +139,7 @@ To format a date according to the conventions for a specific locale, use the **f
 formatDate(date: Date, options?: IDateFormatOptions): string;
 ```
 
-The **options** argument is optional. It lets you control the localization and formatting. For more information about date formatting properties, see [IDateFormatOptions](#IDateFormatOptions).
+The **options** argument is optional. It lets you control the localization and formatting. For more information about date formatting properties, see [IDateFormatOptions](#idateformatoptions).
 
 #### Date formatting examples
 
@@ -181,7 +181,7 @@ To format a time according to the conventions for a specific locale, use the **f
 formatTime(time: Date, options?: ITimeFormatOptions): string;
 ```
 
-The **options** argument is optional. It lets you control the localization and formatting. For more information about time formatting properties, see [ITimeFormatOptions](#ITimeFormatOptions).
+The **options** argument is optional. It lets you control the localization and formatting. For more information about time formatting properties, see [ITimeFormatOptions](#itimeformatoptions).
 
 #### Time formatting examples
 
@@ -215,7 +215,7 @@ To format a number according to the conventions for a specific locale, use the *
 formatNumber(value: number, options?: INumberFormatOptions): string;
 ```
 
-The **options** argument is optional. It lets you control the localization and formatting. For more information about number formatting properties, see [INumberFormatOptions](#INumberFormatOptions).
+The **options** argument is optional. It lets you control the localization and formatting. For more information about number formatting properties, see [INumberFormatOptions](#inumberformatoptions).
 
 #### Number formatting examples
 
