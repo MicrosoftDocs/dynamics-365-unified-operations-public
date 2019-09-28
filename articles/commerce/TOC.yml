@@ -754,108 +754,108 @@
   items:
   - name: Set up online stores
     href: ../retail/online-stores.md
-- name: Create an e-Commerce site
-  items:
-  - name: Online store overview
-    href: online-store-overview.md
   - name: Create an e-Commerce site
-    href: create-ecommerce-site.md
-  - name: Deploy a new e-Commerce site
-    href: deploy-ecommerce-site.md
-  - name: Associate an online site with a channel
-    href: associate-site-online-store.md
-  - name: Configure your domain name
-    href: configure-your-domain-name.md
-- name: Manage your site
-  items:
-  - name: Manage users and roles
-    href: manage-ecommerce-users-roles.md
-  - name: Add script code to site pages to support telemetry
-    href: add-telemetry.md
-- name: Add and manage content on your site
-  items:
-  - name: Ways to add content
-    href: add-manage-content.md
-  - name: Page elements
-    href: page-elements-overview.md
-  - name: Document states and lifecycle
-    href: document-states-overview.md 
-- name: Brand your site and add store details
-  items:
-  - name: Add a logo
-    href: add-logo.md 
-  - name: Select a site theme
-    href: select-site-theme.md
-  - name: Add a favicon
-    href: add-favicon.md
-  - name: Add a welcome message
-    href: add-welcome-message.md 
-  - name: Add a copyright notice
-    href: add-copyright-notice.md
-  - name: Add languages
-    href: add-languages-to-site.md
-- name: Pages
-  items:
-  - name: Select page layouts
-    href: select-page-layouts.md
-  - name: Search engine optimization (SEO) considerations for your site
-    href: search-engine-optimization-considerations.md
-- name: Modules
-  items:
-  - name: Work with modules
-    href: work-with-modules.md
-- name: Fragments
-  items:
-  - name: Work with fragments
-    href: work-with-fragments.md
-- name: Site navigation
-  items:
-  - name: Customize site navigation
-    href: customize-site-navigation.md
-  - name: Create a page URL
-    href: create-page-URL.md
-- name: Starter kit
-  items: 
-  - name: Starter kit overview
-    href: starter-kit-overview.md
-  - name: Account management page
-    href: account-management.md
-  - name: Add an alert module 
-    href: add-alert.md
-  - name: Add a buy box
-    href: add-buy-box.md
-  - name: Add a carousel module
-    href: add-carousel.md
-  - name: Add a cart module
-    href: add-cart-module.md
-  - name: Add a checkout module
-    href: add-checkout-module.md
-  - name: Add a container module
-    href: add-container-module.md
-  - name: Add a content placement module
-    href: add-content-placement-modules.md
-  - name: Add a content rich block module
-    href: add-content-rich-block.md
-  - name: Add a feature module
-    href: add-feature-module.md
-  - name: Create a footer module
-    href: author-footer-module.md
-  - name: Create a header module
-    href: author-header-module.md
-  - name: Add a hero module
-    href: add-hero-module.md 
-  - name: Create an order confirmation module
-    href: order-confirmation-module.md 
-  - name: Add a video player module
-    href: add-video-player.md
-- name: Reporting
-  items:
-  - name: Generate online channel reports
-    href: generate-reports.md
-- name: Error handling
-  items:
-  - name: Build custom response pages for 4xx/5xx status code errors
-    href: build-pages-400-500-errors.md
+    items:
+    - name: Online store overview
+      href: online-store-overview.md
+    - name: Create an e-Commerce site
+      href: create-ecommerce-site.md
+    - name: Deploy a new e-Commerce site
+      href: deploy-ecommerce-site.md
+    - name: Associate an online site with a channel
+      href: associate-site-online-store.md
+    - name: Configure your domain name
+      href: configure-your-domain-name.md
+  - name: Manage your site
+    items:
+    - name: Manage users and roles
+      href: manage-ecommerce-users-roles.md
+    - name: Add script code to site pages to support telemetry
+      href: add-telemetry.md
+  - name: Add and manage content on your site
+    items:
+    - name: Ways to add content
+      href: add-manage-content.md
+    - name: Page elements
+      href: page-elements-overview.md
+    - name: Document states and lifecycle
+      href: document-states-overview.md 
+  - name: Brand your site and add store details
+    items:
+    - name: Add a logo
+      href: add-logo.md 
+    - name: Select a site theme
+      href: select-site-theme.md
+    - name: Add a favicon
+      href: add-favicon.md
+    - name: Add a welcome message
+      href: add-welcome-message.md 
+    - name: Add a copyright notice
+      href: add-copyright-notice.md
+    - name: Add languages
+      href: add-languages-to-site.md
+  - name: Pages
+    items:
+    - name: Select page layouts
+      href: select-page-layouts.md
+    - name: Search engine optimization (SEO) considerations for your site
+      href: search-engine-optimization-considerations.md
+  - name: Modules
+    items:
+    - name: Work with modules
+      href: work-with-modules.md
+  - name: Fragments
+    items:
+    - name: Work with fragments
+      href: work-with-fragments.md
+  - name: Site navigation
+    items:
+    - name: Customize site navigation
+      href: customize-site-navigation.md
+    - name: Create a page URL
+      href: create-page-URL.md
+  - name: Starter kit
+    items: 
+    - name: Starter kit overview
+      href: starter-kit-overview.md
+    - name: Account management page
+      href: account-management.md
+    - name: Add an alert module 
+      href: add-alert.md
+    - name: Add a buy box
+      href: add-buy-box.md
+    - name: Add a carousel module
+      href: add-carousel.md
+    - name: Add a cart module
+      href: add-cart-module.md
+    - name: Add a checkout module
+      href: add-checkout-module.md
+    - name: Add a container module
+      href: add-container-module.md
+    - name: Add a content placement module
+      href: add-content-placement-modules.md
+    - name: Add a content rich block module
+      href: add-content-rich-block.md
+    - name: Add a feature module
+      href: add-feature-module.md
+    - name: Create a footer module
+      href: author-footer-module.md
+    - name: Create a header module
+      href: author-header-module.md
+    - name: Add a hero module
+      href: add-hero-module.md 
+    - name: Create an order confirmation module
+      href: order-confirmation-module.md 
+    - name: Add a video player module
+      href: add-video-player.md
+  - name: Reporting
+    items:
+    - name: Generate online channel reports
+      href: generate-reports.md
+  - name: Error handling
+    items:
+    - name: Build custom response pages for 4xx/5xx status code errors
+      href: build-pages-400-500-errors.md
 - name: Call center channel management
   items:
   - name: Call center sales functionality
@@ -1290,14 +1290,26 @@
       href: e-commerce-extensibility/cli-command-reference.md
   - name: Develop modules
     items:
+    - name: Create a new module
+      href: e-commerce-extensibility/create-new-module.md 
     - name: Clone a starter kit module
       href: e-commerce-extensibility/clone-starter-module.md
     - name: Add module configuration fields
       href: e-commerce-extensibility/add-module-config-fields.md
+    - name: Container modules
+      href: e-commerce-extensibility/container-modules.md
+    - name: Create a layout container module
+      href: e-commerce-extensibility/create-layout-container.md
   - name: Advanced module topics
     items:
     - name: App settings
       href: e-commerce-extensibility/app-settings.md
+    - name: Working with cookies
+      href: e-commerce-extensibility/cookie-api-overview.md 
+  - name: Develop data actions
+    items:
+    - name: Core data actions
+      href: e-commerce-extensibility/core-data-actions.md
   - name: Advanced data action topics
     items:
     - name: Chain data actions
