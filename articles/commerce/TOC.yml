@@ -1279,7 +1279,7 @@
   - name: Configure retail workers
     href: ../retail/tasks/worker.md
 - name: Retail development and administration
-  href: retail/dev-itpro/dev-retail-home-page.md
+  href: ../retail/dev-itpro/dev-retail-home-page.md
 - name: Online channel extensibility
   href: e-commerce-extensibility/overview.md
   items:
