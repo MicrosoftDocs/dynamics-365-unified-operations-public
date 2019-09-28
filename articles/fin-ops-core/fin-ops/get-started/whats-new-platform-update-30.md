@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 for Finance and Operations platform update 30 (November 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 30. 
+title: Preview features in Platform update 30 for Finance and Operations (November 2019)
+description: This topic describes features that are in preview in Platform update 30 for Finance and Operations. 
 author: tonyafehr
 manager: AnnBe
 ms.date: 09/04/2019
@@ -29,12 +29,12 @@ ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
 
 ---
-# Preview features in Dynamics 365 for Finance and Operations platform update 30 (November 2019)
+# Preview features in Platform update 30 for Finance and Operations (November 2019)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 30. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-30.md#additional-resources).
+This topic describes preview features that are new or changed for Platform update 30 for Finance and Operations. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-30.md#additional-resources).
 
 ## Readable date time format for dateTime fields in business event payload
 When a new business event is coded, a dateTime field can be enabled to output the value in a human readable format in the business event payload. Existing business event can also be modified to include a readable dateTime field in the payload thereby, preserving compatibility. The developer documentation for this is described in [Business events developer documentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-dev-doc).
@@ -57,7 +57,7 @@ In the future, the first metadata types to get **Feature Class** property suppor
 Currently, the Feature Class property and the FeatureStateProvider API can be used to reference an existing feature in Feature Management, but additional features cannot be defined. That support is likely to be enabled once the **Feature Class** property work is complete. 
 
 ## New license types support associating users with a license
-New Finance and Operations license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
+New license types are being made available to new customers. For customers on those new licenses, users need to be associated with a license. If a license is associated with a new user, the first time they sign in they will be added as a system user. If a license is not associated with a user, then they will recieve a brief warning.
 
 
 ## Additional resources
@@ -71,7 +71,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated in Finance and Operations applications.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
