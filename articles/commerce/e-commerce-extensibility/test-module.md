@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Test a module
+title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Test a module
+# Preview and debug a module
 
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
