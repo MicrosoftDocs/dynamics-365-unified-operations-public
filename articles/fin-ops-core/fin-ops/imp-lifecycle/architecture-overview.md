@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Finance and Operations apps architecture
-description: This topic provides an overview of the architecture of Finance and Operations apps.
+title: Finance and Operations application architecture
+description: This topic provides an overview of the architecture of Finance and Operations applications.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
 ms.date: 06/04/2018
@@ -30,18 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Finance and Operations applications architecture
+# Finance and Operations application architecture
 
 [!include [banner](../includes/banner.md)]
 
-The Finance and Operations apps cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
+The Finance and Operations application cloud architecture contains all the elements that are common to all Microsoft cloud offerings, as described in [Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). Beyond this, it also includes services that automate software deployment and provisioning, operational monitoring and reporting, and seamless application lifecycle management.
 
 ![Cloud architecture](./media/cloud-architecture.png)
 
 The cloud architecture consists of these conceptual areas:
 
 - **Subscription** – A subscription to Finance and Operations apps gives you an online cloud environment (or multiple environments) and experience.
-- **Licenses** – Customers must purchase subscription licenses (SLs) for their organization, or for their affiliates' employees and on-site agents, vendors, or contractors who directly or indirectly access Finance and Operations apps. Finance and Operations apps are licensed through Microsoft Volume Licensing and the Microsoft Cloud Solution Provider (CSP) program. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
+- **Licenses** – Customers must purchase subscription licenses (SLs) for their organization, or for their affiliates' employees and on-site agents, vendors, or contractors who directly or indirectly access Finance and Operations apps. These apps are licensed through Microsoft Volume Licensing and the Microsoft Cloud Solution Provider (CSP) program. For more information, download the latest [Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
 - **Tenant** – In Microsoft Azure Active Directory (AAD), a tenant represents an organization. It's a dedicated instance of the AAD service that an organization receives and owns when it creates a relationship with Microsoft (for example, by signing up for a Microsoft cloud service, such as Azure, Microsoft Intune, or Microsoft Office 365). Every AAD tenant is distinct and separate from other AAD tenants. For more information about AAD tenants, see [How to get an Azure Active Directory Tenant](https://docs.microsoft.com//azure/active-directory/develop/active-directory-howto-tenant).
 
     A tenant houses the company's user information. This information includes passwords, user profile data, permissions, and related information. The tenant also contains groups, applications, and other information that pertains to an organization and its security.
