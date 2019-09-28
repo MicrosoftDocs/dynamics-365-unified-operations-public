@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
-Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created in Finance and Operations.
+Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created.
 
 ## Return order process
 The following illustration gives an overview of the return order process.  
@@ -290,7 +290,7 @@ This scenario involves two companies in the same organization, as shown in the f
 
 ![Simple intercompany return](./media/SalesReturn07.png)
 
-The order chain can be established when a vendor return order is created in the buying company or a customer return order is created in the selling company. Finance and Operations creates the corresponding order in the other company and makes sure that the header and line information on the vendor return order reflects the settings on the customer return order. The return order that is established can either include or exclude the reference (**Find sales order**) to an existing customer invoice. The packing slips and invoices of the two orders can be processed individually. For example, you don't have to generate a packing slip for the vendor return order before you generate the packing slip for the customer return order.
+The order chain can be established when a vendor return order is created in the buying company or a customer return order is created in the selling company. The corresponding order is created in the other company and makes sure that the header and line information on the vendor return order reflects the settings on the customer return order. The return order that is established can either include or exclude the reference (**Find sales order**) to an existing customer invoice. The packing slips and invoices of the two orders can be processed individually. For example, you don't have to generate a packing slip for the vendor return order before you generate the packing slip for the customer return order.
 
 ### Direct delivery shipment returns among three parties
 
