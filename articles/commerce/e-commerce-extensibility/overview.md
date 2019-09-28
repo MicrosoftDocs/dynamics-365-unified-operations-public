@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Online platform extensibility
+title: Online channel extensibility
 description: This topic covers online platform extensibility in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Online platform extensibility
+# Online channel extensibility
 
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
