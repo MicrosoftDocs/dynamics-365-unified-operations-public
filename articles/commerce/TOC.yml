@@ -1374,7 +1374,7 @@
     - name: Theming overview
       href: ../e-commerce-extensibility/theming.md
     - name: Create a theme
-      href:../ e-commerce-extensibility/create-theme.md
+      href: ../ e-commerce-extensibility/create-theme.md
     - name: Configure theme settings
       href: ../e-commerce-extensibility/configure-theme-settings.md 
   - name: Inject script
