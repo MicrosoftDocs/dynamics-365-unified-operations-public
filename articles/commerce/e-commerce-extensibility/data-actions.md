@@ -141,7 +141,7 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
     }
     ```
 
-* **createInput method** – This optional method can be used to build an instance of an action input class that is used to load data when a page is first populated. For more information, see [Page load data actions](TBD).
+* **createInput method** – This optional method can be used to build an instance of an action input class that is used to load data when a page is first populated. 
 
     ```Typescript
     const createInput = (args: Msdyn365.ICreateActionContext): Msdyn365.IActionInput => {
