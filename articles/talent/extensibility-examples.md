@@ -2,14 +2,14 @@
 # required metadata
 
 title: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
-description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow.
+description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft PowerApps and Microsoft Flow.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 # optional metadata
 
 ms.search.form: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
 
-This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 for Talent that use Microsoft PowerApps and Microsoft Flow. You can import the solution package that is associated with each example into your PowerApps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
+This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft PowerApps and Microsoft Flow. You can import the solution package that is associated with each example into your PowerApps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
 > [!IMPORTANT]
 > If you want to use the templates and app that are described in this topic "as is," be sure to test them to make sure that they cover all the scenarios that are specific to your implementation.
@@ -83,7 +83,7 @@ The **Flow – Email Notification** template can be used for email notification 
 
 This template can be extended to track changes to the candidate stage throughout the recruiting process, and to send notifications to the hiring team and candidate.
 
-In general, for entities that are stored in Common Data Service, flows can be set up to send notifications for events that occur in Core HR, Attract, or Dynamics 365 Talent: Onboard.
+In general, for entities that are stored in Common Data Service, flows can be set up to send notifications for events that occur in Core HR, Attract, or Onboard.
 
 To download the **Flow – Email Notification** template, go to [Flow – Email Notification](https://go.microsoft.com/fwlink/?linkid=2082103) on the Microsoft Download Center.
 
@@ -110,7 +110,7 @@ You can use the Referral App to add candidates to a shared talent pool. The refe
 
 You can embed this app in Employee self-service (ESS) for submitting referrals, or you can be use it as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
-To download **Referral App**, go to [Dynamics 365 for Talent extensibility solution: Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
+To download **Referral App**, go to [Dynamics 365 Talent extensibility solution: Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 

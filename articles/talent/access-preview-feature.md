@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Access preview features in Microsoft Dynamics 365 for Talent
-description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 for Talent, and it lists the features that are currently enabled for preview.
+title: Access preview features in Microsoft Dynamics 365 Talent
+description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Talent, and it lists the features that are currently enabled for preview.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 [!include[banner](../includes/banner.md)]
 
-As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 for Talent, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
+As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 Talent, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
 
-This topic describes how you can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features. For more information about new features in Talent, see [What's new or changed in Dynamics 365 for Talent](./whats-new.md) and [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes).
+This topic describes how you can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features. For more information about new features in Talent, see [What's new or changed in Dynamics 365 Talent](./whats-new.md) and [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes).
 
 ## Enable or disable preview features
 
@@ -47,7 +47,7 @@ To access preview features, you must first enable them in your environment. Enab
 
 ### Attract
 
-1. Sign in to Microsoft Dynamics 365 for Talent: Attract.
+1. Sign in to Microsoft Dynamics 365 Talent: Attract.
 2. On the **Setup** menu (the gear symbol) in the upper-right corner, select **Admin center**.
 3. On the **Feature management** tab, select the option next to **Preview features** so that it turns blue and says **On**.
 
@@ -74,7 +74,7 @@ To access preview features, you must first enable them in your environment. Enab
 
 ### Onboard
 
-No preview features are currently available for Microsoft Dynamics 365 for Talent: Onboard.
+No preview features are currently available for Microsoft Dynamics 365 Talent: Onboard.
 
 ## Features that are currently in preview
 

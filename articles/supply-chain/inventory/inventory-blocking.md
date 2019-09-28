@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory blocking
-description: This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations. You can use inventory blocking to prevent items from being processed or consumed.
+description: This article provides an overview of inventory blocking, which is part of the quality inspection process in Finance and Operations. You can use inventory blocking to prevent items from being processed or consumed.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics 365 for Finance and Operations. You can use inventory blocking to prevent items from being processed or consumed.
+This article provides an overview of inventory blocking, which is part of the quality inspection process in Finance and Operations. You can use inventory blocking to prevent items from being processed or consumed.
 
 You can block inventory items in the following ways:
 -   Manually

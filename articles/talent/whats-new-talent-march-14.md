@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (March 14, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (March 14, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/14/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-03-14
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (March 14, 2019)
+# What's new or changed in Dynamics 365 Talent (March 14, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -50,8 +50,8 @@ Changes made in this release enable performance management scenarios when using 
 ### Mass assign checklists to workers
 With this change, you can now select multiple employees and bulk assign one or more checklists to those employees. 
 
-### Platform update 24
-For additional details about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
+### Platform update 24 for Finance and Operations
+For additional details about Platform update 24 for Finance and Operations, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24). Significant changes in platform 24 include: 
 
 - Alerts are enabled in Talent.
 - The updated navigation bar now aligns with the Office header.
@@ -71,7 +71,7 @@ Common Data Service entities now syncronize correctly when updated using the Com
 In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
 
 ###  Email support for alerts
-With Platform update 24, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
+With Platform update 24 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
 
 ### Duplicate employee check: Interface changes
 With this change, duplicates are detected as you enter name fields, and a status displays how many were found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.

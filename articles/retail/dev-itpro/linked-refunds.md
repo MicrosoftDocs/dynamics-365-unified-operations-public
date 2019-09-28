@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Retail 10.0.1 update
 
 Returns are an important operation for retailers. The ability to accept returns for sales and refund payments to customers gives retailers a way to service the needs of customers and to help resolve their issues.
 
-This topic provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 for Retail version 10.0.1.
+This topic provides information about how to configure and use linked refunds. A linked refund is a refund of a transaction that was previously approved and confirmed. The refund can be either a full refund or a partial refund of the transaction, and it can't exceed the full amount of the original authorization. The functionality for linked refunds is available in Microsoft Dynamics 365 Retail version 10.0.1.
 
-In Microsoft Dynamics 365 for Retail version 10.0 and earlier, retailers can process refunds to cards, but cashiers must manually specify these refunds. Cashiers can process refunds to the original mode of payment only if the customer provides that mode of payment. Therefore, by providing new card details, customers can use the return process to move balances from one card to another and therefore do unauthorized card balance transfers.
+In Microsoft Dynamics 365 Retail version 10.0 and earlier, retailers can process refunds to cards, but cashiers must manually specify these refunds. Cashiers can process refunds to the original mode of payment only if the customer provides that mode of payment. Therefore, by providing new card details, customers can use the return process to move balances from one card to another and therefore do unauthorized card balance transfers.
 
 By using linked refunds, retailers can greatly reduce risk by making sure that refunds are processed only to the card that was authorized during the original transaction. To help prevent unauthorized card balance transfers, the system can prompt cashiers to use the confirmed and approved card token to process refunds. By using the original mode of payment for refunds, retailers can help reduce their card authorization costs.
 
@@ -52,7 +52,7 @@ Customers who aren't using the out-of-box implementation of the Adyen Connector 
 
 ## Turn on the linked refunds functionality
 
-The linked refunds functionality works with the omni-channel payments functionality that is available in Microsoft Dynamics 365 for Retail 8.1.3 and later.
+The linked refunds functionality works with the omni-channel payments functionality that is available in Microsoft Dynamics 365 Retail 8.1.3 and later.
 
 To turn on the linked refunds functionality, go to **Retail \> Headquarters setup \> Parameters \> Retail Shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 

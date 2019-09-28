@@ -2,7 +2,7 @@
 # required metadata
 
 title: Email templates
-description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 for Talent - Attract.
+description: This topic provides information about the email templates that you can create and use in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/19/2018
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 # Email templates
 [!include[banner](../includes/banner.md)]
 
-By using the email template library, admins can create a uniform theme and branding for all emails that are sent through Microsoft Dynamics 365 for Talent: Attract and Offer. Admins can also curate a collection of email content templates that other users can consume. The hiring team can use these templates in their workflow to send emails more efficiently. Some emails are configured to be sent automatically, and the admin can use the email template library to customize the content for those emails.
+By using the email template library, admins can create a uniform theme and branding for all emails that are sent through Microsoft Dynamics 365 Talent: Attract and Offer. Admins can also curate a collection of email content templates that other users can consume. The hiring team can use these templates in their workflow to send emails more efficiently. Some emails are configured to be sent automatically, and the admin can use the email template library to customize the content for those emails.
 
 > [!NOTE]
 > To use Email templates, your organization must have the Comprehensive Hiring add-on.

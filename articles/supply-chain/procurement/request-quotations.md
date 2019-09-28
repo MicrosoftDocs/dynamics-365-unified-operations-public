@@ -70,7 +70,7 @@ reply sheet that the vendor can fill in.
 
 This topic covers the process for handling RFQs when vendor collaboration isn't
 used. If your system is set up for vendor collaboration, vendors can enter bids
-directly in Microsoft Dynamics 365 for Finance and Operations. For more
+directly in Finance and Operations. For more
 information, see [Vendor collaboration with
 customers](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) and [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
@@ -87,7 +87,7 @@ settings.
 
 > [!NOTE]
 > The name of the **Request for quotation** page has been changed. In earlier releases
-of Dynamics 365 for Finance and Operations, this page is called **Request for
+of Finance and Operations, this page is called **Request for
 quotations reply**.
 
 If you added scoring criteria to your RFQ case, the RFQ will have a scoring

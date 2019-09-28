@@ -35,13 +35,10 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize work orders in Microsoft Dynamics 365 
-for Field Service to sales order in Microsoft Dynamics 365 for Finance and Operations.
+This topic discusses the templates and underlying tasks that are used to synchronize work orders in Dynamics 365 Field Service to sales order in Finance and Operations.
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/field-service-integration.png)](./media/field-service-integration.png)
 
-This topic discusses the templates and underlying tasks that are used to synchronize work orders in Field Service to sales orders in 
-Finance and Operations.
 
 ## Templates and tasks
 
@@ -170,7 +167,7 @@ Synchronization of **Estimated** values versus **Used** values is managed throug
 
 ### Sales origin
 
-To keep track of sales orders in Finance and Operations that originate from work orders, you can create a sales origin where the **Origin type assignment** option is set to **Yes** and the **Sales origin type** field is set to **Work order integration**.
+To keep track of sales orders that originate from work orders, you can create a sales origin where the **Origin type assignment** option is set to **Yes** and the **Sales origin type** field is set to **Work order integration**.
 
 By default, the mapping selects the sales origin for the **Work order integration** sales origin type for all sales orders that are created from work orders. This behavior can be useful when you work with the sales order in Finance and Operations. You must make sure that sales orders that originate from work orders aren't synchronized back to Field Service as work orders.
 
@@ -178,7 +175,7 @@ For details about how to create the correct sales origin setup in Finance and Op
 
 ### Status
 
-When the sales order originates from a work order, the **External work order status** field appears on the **Setup** tab on the sales order header. This field shows the system status from the work order in Field Service, to help track the synchronized work order status of sales orders in the Finance and Operations. This field can also help the user of Finance and Operations determine when the sales order should be shipped or invoiced.
+When the sales order originates from a work order, the **External work order status** field appears on the **Setup** tab on the sales order header. This field shows the system status from the work order in Field Service, to help track the synchronized work order status of sales orders in the Finance and Operations. This field can also help the user determine when the sales order should be shipped or invoiced.
 
 The **External work order status** field can have the following values:
 
@@ -193,7 +190,7 @@ To support the integration between Field Service and Finance and Operations, add
 
 ### Work Order entity
 
-The **Has Externally Maintained Products Only** field has been added to the **Work Order** entity and appears on the page. It's used to consistently track whether a work order consists entirely of externally maintained products. A work order consists entirely of externally maintained products when all the related products are maintained in Finance and Operations. This field helps guarantee that users don't synchronize work orders that have products that are unknown to Finance and Operations.
+The **Has Externally Maintained Products Only** field has been added to the **Work Order** entity and appears on the page. It's used to consistently track whether a work order consists entirely of externally maintained products. A work order consists entirely of externally maintained products when all the related products are maintained in Finance and Operations. This field helps guarantee that users don't synchronize work orders that have products that are unknown.
 
 ### Work Order Product entity
 

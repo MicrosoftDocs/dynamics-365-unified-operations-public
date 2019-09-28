@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
-description: This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Microsoft Dynamics 365 for Field Service to free text invoices in Microsoft Dynamics 365 for Finance and Operations.
+description: This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Dynamics 365  Field Service to free text invoices in Finance and Operations.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/10/2018
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-07-8
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Microsoft Dynamics 365 for Field Service to free text invoices in Microsoft Dynamics 365 for Finance and Operations.
+This topic discusses the templates and underlying tasks that are used to synchronize agreement invoices in Dynamics 365 Field Service to free text invoices in Finance and Operations.
 
 ## Templates and tasks
 

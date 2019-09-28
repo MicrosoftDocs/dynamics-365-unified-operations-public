@@ -88,8 +88,8 @@ The following illustration shows a production order that has two operations, 10 
 
 ![Example of the release of material per operation number](media/two-operations.PNG)
 
-For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video:
-[Enhancements to the production order release process in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
+For a quick demonstration of how to release material in proportion to the amount of finished goods, watch this short YouTube video about 
+[enhancements to the production order release process in Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
 ### Release material in proportion to the amount of finished goods
 

@@ -68,7 +68,7 @@ The **Service level** and **Criticality** fields relate to work orders created f
 
 ## Asset
 
-You can select a **Resource** for the asset. The resource selection determines which calendar is used for work order scheduling. Resource selection is often used for fixed assets. In Dynamics 365 for Finance and Operations, resources and
+You can select a **Resource** for the asset. The resource selection determines which calendar is used for work order scheduling. Resource selection is often used for fixed assets. Resources and
 resource groups are set up in **Organization administration** > **Resources** > **Resource groups** or **Resources**.
 
 In the **Fixed assets number** field, you can select a fixed asset to be related to the asset. This is relevant if your asset is related to an investment project.

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 This topic describes how the batch balancing process is supported. 
 
-Watch a [video on batch balancing in Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
+Watch a [video on batch balancing in Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 In the batch balancing process, the amount of ingredients to use in a production
 batch is calculated from the concentration of active ingredients in selected

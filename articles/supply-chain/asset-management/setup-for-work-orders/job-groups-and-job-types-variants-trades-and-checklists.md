@@ -230,7 +230,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 26. To set up attachments on a selected maintenance job type default line, select **Attach documents**. Attachments that are set up on a maintenance job type default line are automatically included on work order lines that use that maintenance job type default line.
 27. Select **New**, and then select a document type.
 28. Upload the document or file.
-29. Set the fields on the **Attachments** page. The attachment setup uses standard document setup functionality in Microsoft Dynamics 365 for Finance and Operations.
+29. Set the fields on the **Attachments** page. The attachment setup uses standard document setup functionality in Finance and Operations.
 30. Select **Save** to save the attachment.
 
     > [!NOTE]
@@ -266,7 +266,7 @@ After you've created the required maintenance job type default combinations, you
 
 ## Automatic update of maintenance job type forecasts
 
-In Asset Management, you can automatically update any changes to maintenance job type forecasts for hour costs, item costs, and expenses that have been updated in other modules in Finance and Operations. In this way, you help guarantee that your maintenance job type forecasts always use the latest cost prices.
+In Asset Management, you can automatically update any changes to maintenance job type forecasts for hour costs, item costs, and expenses that have been updated in other modules. In this way, you help guarantee that your maintenance job type forecasts always use the latest cost prices.
 
 1. Select **Asset management** \> **Periodic** \> **Forecast** \> **Update maintenance job type forecast**.
 2. In the **Update maintenance job type forecast** dialog box, on the **Records to include** FastTab, you can add selections for specific maintenance job types as you require. Select **Filter**, and then select **Select** to make the selections.

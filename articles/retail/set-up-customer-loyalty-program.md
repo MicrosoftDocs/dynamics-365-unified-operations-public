@@ -2,7 +2,7 @@
 # required metadata
 
 title: Loyalty overview
-description: This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
+description: This topic describes the loyalty capabilities within Dynamics 365 Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the Retailer's brand. In Microsoft Dynamics 365 for Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel. This topic describes the loyalty capabilities within Microsoft Dynamics 365 for Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
+Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the Retailer's brand. In Dynamics 365 Retail, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel. This topic describes the loyalty capabilities within Retail and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 
 You can set up your loyalty program so that they include the following options.
 
@@ -47,7 +47,7 @@ You can set up your loyalty program so that they include the following options.
 
 ## Setting up loyalty programs
 
-You must set up several components to enable the loyalty feature in Dynamics 365 for Retail. The following diagram illustrates the loyalty components and how they relate to each other.
+You must set up several components to enable the loyalty feature in Retail. The following diagram illustrates the loyalty components and how they relate to each other.
 
 ![Loyalty setup process flow](./media/loyaltyprocess.gif "Loyalty components and how they relate to each other")
 
@@ -74,7 +74,7 @@ The following table describes the processes that must be run to send the loyalty
 
 | Process name                         | Description | Page name |
 |--------------------------------------|-------------|-----------|
-| 1050 (loyalty information)           | Run this process to send the loyalty data from Dynamics 365 for Retail to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores. | Distribution schedule |
+| 1050 (loyalty information)           | Run this process to send the loyalty data from Retail to the retail stores. It's a good idea to schedule this process to run frequently, so that loyalty data is transmitted to all stores. | Distribution schedule |
 | Process loyalty schemes              | Run this process to associate loyalty schemes with the retail channels that the loyalty scheme is assigned to. This process can be scheduled to run as a batch process. You must run this process if you change loyalty configuration data, such as loyalty schemes, loyalty programs, or loyalty reward points. | Process loyalty schemes |
 | Post earned loyalty points in batches | Run this process to update loyalty cards so that they include transactions that were processed offline. This process applies only if the **Post earned points in batches** check box is selected on the **Retail shared parameters** page, so rewards can be earned offline. | Post earned loyalty points in batches |
 | Update loyalty card tiers            | Run this process to evaluate the customer's earning activity against the tier rules for a loyalty program, and to update the customer's tier status. This process is required only if you change the tier rules in loyalty programs and want the updated rules to be retroactively applied to loyalty cards that have already been issued. This process can be run as a batch process or for individual cards. | Update loyalty card tiers |
@@ -94,7 +94,7 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 
     ![Excluded affiliations](./media/Excluded-affiliations.png "Exclude affiliations from earning loyalty points")
 	
-- Retailers can generate loyalty card numbers in the channels. Prior to the October 2018 update, retailers could use physical loyalty cards or generate a loyalty card using some unique customer information such as a phone number. To enable the automatic generation of loyalty cards in the retail stores, turn on **Generate loyalty card number** in the functionality profile associated to the store. For online channels, retailers can use the IssueLoyaltyCard API to issue loyalty cards to customers. Retailers can either provide a loyalty card number to this API, which will be used to generate the loyalty card, or the system will use the loyalty card number sequence set in Dynamics 365 for Retail. However, if the number sequence is not present, and the retailer does not provide a loyalty card number while calling the API, then an error is displayed.
+- Retailers can generate loyalty card numbers in the channels. Prior to the October 2018 update, retailers could use physical loyalty cards or generate a loyalty card using some unique customer information such as a phone number. To enable the automatic generation of loyalty cards in the retail stores, turn on **Generate loyalty card number** in the functionality profile associated to the store. For online channels, retailers can use the IssueLoyaltyCard API to issue loyalty cards to customers. Retailers can either provide a loyalty card number to this API, which will be used to generate the loyalty card, or the system will use the loyalty card number sequence set in Retail. However, if the number sequence is not present, and the retailer does not provide a loyalty card number while calling the API, then an error is displayed.
 
     ![Generate loyalty card](./media/Generate-loyalty-card.png "Automatically generate loyalty card number")
 
@@ -142,7 +142,7 @@ Retail has new loyalty functionality as a part of the October 2018 release. Each
 	- Realizing an activity has occurred that should be rewarded.
 	- Rewarding the appropriate points.
 
-    The first step is external to Microsoft Dynamics 365 for Retail, such as tweeting about the brand or liking the brand on Facebook. After this activity has been recognized, the retailers can call the above-mentioned Retail server API and award loyalty points in real time. In such scenarios, there is no need for a review step because an activity has occurred and corresponding points should be awarded. However, there are scenarios where the retailer would want to review the records prior to awarding the points. For example, the retailer has set up a workshop in the store for which the customers sign up on the ecommerce website or any other event registering application. However, only the attending customers should earn loyalty points. For such scenarios, in the 10.0 release, we introduced a data entity named **Retail loyalty other activity type lines**. This data entity enables the retailers to use either Data Import/Export Framework (DIXF) or OData API to record the activities that should award customers with loyalty points. The data entity stores the activities in a journal named **Loyalty lines for other activities**, which can be used for review and modification purposes. After the data has been reviewed, the IT user can either manually post the activity lines or run a job named **Process other activity type for loyalty lines**, which will post all the unposted activity lines and award the points to the customers based on the earning rules. In the above scenario, the event registration application would call OData API to send the customer information to Dynamics 365 for Retail. However, the IT user can post the activity lines for only those customers who attended the workshop and delete the activity lines for the other customers. 
+    The first step is external to Retail, such as tweeting about the brand or liking the brand on Facebook. After this activity has been recognized, the retailers can call the above-mentioned Retail server API and award loyalty points in real time. In such scenarios, there is no need for a review step because an activity has occurred and corresponding points should be awarded. However, there are scenarios where the retailer would want to review the records prior to awarding the points. For example, the retailer has set up a workshop in the store for which the customers sign up on the ecommerce website or any other event registering application. However, only the attending customers should earn loyalty points. For such scenarios, in the 10.0 release, we introduced a data entity named **Retail loyalty other activity type lines**. This data entity enables the retailers to use either Data Import/Export Framework (DIXF) or OData API to record the activities that should award customers with loyalty points. The data entity stores the activities in a journal named **Loyalty lines for other activities**, which can be used for review and modification purposes. After the data has been reviewed, the IT user can either manually post the activity lines or run a job named **Process other activity type for loyalty lines**, which will post all the unposted activity lines and award the points to the customers based on the earning rules. In the above scenario, the event registration application would call OData API to send the customer information to Dynamics 365 for Retail. However, the IT user can post the activity lines for only those customers who attended the workshop and delete the activity lines for the other customers. 
 
     > [!NOTE]
     > Currently, the system forces users to set up a number sequence for "other activity types", but this will not be a required step in future releases. To set up a number sequence, go to **Retail shared parameters** \> **Number sequences** and select a number sequence for **Loyalty other activity type ID**.

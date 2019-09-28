@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic explains asset documents in Asset Management.
 
-In Asset Management, you can set up documents so that they are automatically related to job types, asset manufacturers, asset types, or assets, for example. This functionality is useful when updated document versions are released. In that case, you just have to put the updated document in the standard location that you use for your Microsoft Dynamics 365 for Finance and Operations documents, and attach the document to the asset document record that you've created. The updated document can then be accessed from the **All assets**, **Active assets**, **My active assets**, **All work orders**, and **Active work order jobs** menu items. The process for attaching documents to an asset document record uses the standard document handling system in Finance and Operations.
+In Asset Management, you can set up documents so that they are automatically related to job types, asset manufacturers, asset types, or assets, for example. This functionality is useful when updated document versions are released. In that case, you just have to put the updated document in the standard location that you use for your Finance and Operations documents, and attach the document to the asset document record that you've created. The updated document can then be accessed from the **All assets**, **Active assets**, **My active assets**, **All work orders**, and **Active work order jobs** menu items. The process for attaching documents to an asset document record uses the standard document handling system.
 
 **Example 1:** A document that is related to a job type might describe a procedure for that job type.
 
@@ -53,5 +53,5 @@ In Asset Management, you can set up documents so that they are automatically rel
     > [!NOTE]
     > When the system searches for documents that should be related to an asset or a work order, Asset Management goes through all asset document records to check for a possible match. It always checks the most specific combination first. In other words, Asset Management first checks for a match for the **Job requirement** field. If no match is found, it checks for a match for the **Job type variant** field. If no match is found, it checks for a match for the **Job type** field, and so on. As you can see in the layout of the **Asset documents** page, this behavior means that, to find the most specific combination, Asset Management checks each record from right to left for a match. Several documents might be related to an asset or a work order. You can edit the service level on a maintenance request or a work order as you require.
 
-4. Select **Attachments**. The standard **Document handling** page in Finance and Operations appears.
+4. Select **Attachments**. The standard **Document handling** page appears.
 5. Set up the documents or notes that should be attached to the asset document record. After you attach documents, the **Attachments** field shows the number of documents that are related to the record.

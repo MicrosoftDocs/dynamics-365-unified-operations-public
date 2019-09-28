@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
-Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created in Microsoft Dynamics 365 for Finance and Operations.
+Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created in Finance and Operations.
 
 ## Return order process
 The following illustration gives an overview of the return order process.  

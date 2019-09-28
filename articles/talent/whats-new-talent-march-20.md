@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (March 20, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (March 20, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/20/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (March 20, 2019)
+# What's new or changed in Dynamics 365 Talent (March 20, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -85,7 +85,7 @@ Changes have been made to correct an issue when editing the name sequence on the
 In many organizations, the compensation and benefits managers might only have access to certain compensation records. These could be for executives or regional employees. With this change, HR can manage and maintain the compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans that determine access to the plans and the employee data related to the plans, such as salary or bonus records. Only the roles with the access granted can process compensation for those employees.
 
 ###  Email support for alerts
-With Platform update 24, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
+With Platform update 24 for Finance and Operations, users can create alert rules that automatically dispatch email notifications to contacts when triggered by an event.
 
 ### Duplicate employee check: Interface changes
 With this change, duplicates are detected as you enter name fields, and a status displays the number of duplicates found. You can select the provided link to open a new page to evaluate whether to use the detected match. The duplicates form doesn't automatically open, to avoid interrupting data entry.

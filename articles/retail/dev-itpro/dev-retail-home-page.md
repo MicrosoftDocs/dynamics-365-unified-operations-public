@@ -36,10 +36,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
-Retail is dependent on Finance and Operations. We recommend that you familiarize yourself with the core [deployment and development content](../../dev-itpro/index.md).
-
 ## Retail components and architecture
--   [Components of Dynamics 365 for Retail](../retail-components.md)
+-   [Components of Dynamics 365 Retail](../retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
@@ -139,7 +137,7 @@ Retail is dependent on Finance and Operations. We recommend that you familiarize
 
 ## Payment connectors
 - [Payment integration with a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 

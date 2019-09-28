@@ -2,7 +2,7 @@
 # required metadata
 
 title: Post jobs to external career sites from Attract
-description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to external recruiting sites
+description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to external recruiting sites
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean. After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.
+Microsoft Dynamics 365 Talent: Attract helps you get the talent you need by letting you post your jobs directly from Attract to Broadbean. After you [create a job](./creating-jobs-attract.md), all you have to do is click a button to put your job in front of all the potential job candidates on Broadbean.
 
 Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers various products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
 

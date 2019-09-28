@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Work with date and time in Microsoft Dynamics 365 for Talent 
-description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 for Talent. Gain clarity in what to expect when interacting with Date and Time data in a form in Dynamics 365 for Talent, an external source, or the Common Data Service.  
+title: Work with date and time in Microsoft Dynamics 365 Talent 
+description: Understand what to expect when using Date and Time fields in Microsoft Dynamics 365 Talent. Gain clarity in what to expect when interacting with Date and Time data in a form in Talent, an external source, or the Common Data Service.  
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent
 
 [!include [banner](includes/banner.md)]
 
-**Date and Time** fields are a fundamental concept in Dynamics 365 for Talent. It's important to understand how to work with **Date and Time** data in a Dynamics 365 form, Common Data Service, and external sources.
+**Date and Time** fields are a fundamental concept in Dynamics 365 Talent. It's important to understand how to work with **Date and Time** data in a Dynamics 365 form, Common Data Service, and external sources.
 
 ## Understanding the difference between Date and Date and Time field data types
 

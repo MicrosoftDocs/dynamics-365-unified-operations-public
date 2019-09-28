@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (April 23, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (April 23, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/23/2019
@@ -29,17 +29,17 @@ ms.search.validFrom: 2019-04-23
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (April 23, 2019)
+# What's new or changed in Dynamics 365 Talent (April 23, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
-This release includes minor bug fixes for Dynamics 365 for Talent: Attract.
+This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
-This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 Changes described in this section apply to build number 8.1.2253. Numbers in parentheses refer to support numbers in Lifecycle Services (LCS).
@@ -83,4 +83,4 @@ With this change, duplicates are detected as you enter name fields, and a status
 ## Known issues
 
 ### Email support for alerts
-With Platform update 26, users can create alert rules that automatically send email notifications to contacts when triggered by an event.
+With Platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when triggered by an event.

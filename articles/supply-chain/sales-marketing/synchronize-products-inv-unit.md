@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize products with inventory unit from Finance and Operations to Field Service
-description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+description: This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Finance and Operations to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -34,7 +34,7 @@ ms.search.validFrom: 2018-12-01
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Microsoft Dynamics 365 for Finance and Operations to Microsoft Dynamics 365 for Field Service.
+This topic discusses the templates and underlying task that are used to synchronize products with inventory unit from Finance and Operations to Dynamics 365 Field Service.
 
 [![Synchronization of business processes between Finance and Operations and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 

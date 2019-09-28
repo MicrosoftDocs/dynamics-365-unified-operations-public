@@ -47,7 +47,7 @@ The attributes that you can set up vary, depending on the element. For example, 
 
 ## Create attribute types
 
-You can create your own attribute types. Additionally, you can transfer product dimensions from Microsoft Dynamics 365 for Finance and Operations to the **Attribute types** page.
+You can create your own attribute types. Additionally, you can transfer product dimensions from Finance and Operations to the **Attribute types** page.
 
 1. Select **Asset management** \> **Setup** \> **Attribute types**.
 2. The first time that you set up attribute types, select **Create product dimensions** to automatically transfer standard Finance and Operations product dimensions.
