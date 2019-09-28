@@ -1300,6 +1300,8 @@
       href: e-commerce-extensibility/container-modules.md
     - name: Create a layout container module
       href: e-commerce-extensibility/create-layout-container.md
+    - name: Create a page container module
+      href: e-commerce-extensibility/create-page-containers.md
   - name: Advanced module topics
     items:
     - name: App settings
@@ -1308,6 +1310,8 @@
       href: e-commerce-extensibility/cookie-api-overview.md 
   - name: Develop data actions
     items:
+    - name: Data actions overview
+      href: e-commerce-extensibility/data-actions.md
     - name: Core data actions
       href: e-commerce-extensibility/core-data-actions.md
   - name: Advanced data action topics
@@ -1316,8 +1320,12 @@
       href: e-commerce-extensibility/chain-data-actions.md
     - name: Batch data actions
       href: e-commerce-extensibility/batch-data-actions.md
+    - name: Observable data actions
+      href: e-commerce-extensibility/create-observable-data-action.md 
   - name: Develop themes
     items:
+    - name: Create a theme
+      href: e-commerce-extensibility/create-theme.md
     - name: Configure theme settings
       href: e-commerce-extensibility/configure-theme-settings.md 
    
