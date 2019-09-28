@@ -1280,4 +1280,32 @@
     href: ../retail/tasks/worker.md
 - name: Retail development and administration
   href: ../retail/dev-itpro/dev-retail-home-page.md
-  
+- name: Online channel extensibility
+  items:
+  - name: Platform overview
+    items:
+    - name: Architectural overview
+      href: e-commerce-extensibility/architectural-overview.md
+    - name: CLI command reference
+      href: e-commerce-extensibility/cli-command-reference.md
+  - name: Develop modules
+    items:
+    - name: Clone a starter kit module
+      href: e-commerce-extensibility/clone-starter-module.md
+    - name: Add module configuration fields
+      href: e-commerce-extensibility/add-module-config-fields.md
+  - name: Advanced module topics
+    items:
+    - name: App settings
+      href: e-commerce-extensibility/app-settings.md
+  - name: Advanced data action topics
+    items:
+    - name: Chain data actions
+      href: e-commerce-extensibility/chain-data-actions.md
+    - name: Batch data actions
+      href: e-commerce-extensibility/batch-data-actions.md
+  - name: Develop themes
+    items:
+    - name: Configure theme settings
+      href: e-commerce-extensibility/configure-theme-settings.md 
+   
