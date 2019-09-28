@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-
 # optional metadata
 
 ms.search.form: EcoResProductEntityIdentifierCode
@@ -59,19 +58,19 @@ Additionally, you will be able to search and filter on the product number, the p
 
 ## Product name and description
 
-The product name and description are the human-readable identifiers of a product and can be maintained in many languages. By default, the Supply Chain Mangement client shows all product information in the default company language, not in the user's language. However, translated product names and descriptions are used in all communication with customers and vendors. The translations are based on the language code of the customer and vendor accounts.
+The product name and description are the human-readable identifiers of a product and can be maintained in many languages. By default, the Supply Chain Management client shows all product information in the default company language, not in the user's language. However, translated product names and descriptions are used in all communication with customers and vendors. The translations are based on the language code of the customer and vendor accounts.
 
 For product variants, the product name can be generated through a product nomenclature template. Because there is no requirement that product names be unique, you might find multiple products that have the same name.
 
 ## Product and item search names
 
-Supply Chain Mangement offers a secondary search name for products and also for items (released products). This search name doesn't have to be unique, and it can be changed after a product or product variant is created. We recommend that you use the search name to search for products by categories. The search names enable quick searches, especially in sales and purchase processes.
+Supply Chain Management offers a secondary search name for products and also for items (released products). This search name doesn't have to be unique, and it can be changed after a product or product variant is created. We recommend that you use the search name to search for products by categories. The search names enable quick searches, especially in sales and purchase processes.
 
 The search name can also contain a customer or vendor product ID, or some other external product ID, if this external ID is the primary search criterion for a product.
 
 ## External product identifiers (Customer and vendor identifiers)
 
-For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders, purchase orders, packing slips, and invoices. In the current version of Supply Chain Mangement, the external references aren't shown on core operations pages. The only exception is the vendor item number. This number is shown in the **Product information** dialog box if a default vendor is defined for the released product.
+For released products, you can maintain the item numbers, item names, and item descriptions that the customer or vendor uses. The references are shown on external documents, such as sales orders, purchase orders, packing slips, and invoices. In the current version of Supply Chain Management, the external references aren't shown on core operations pages. The only exception is the vendor item number. This number is shown in the **Product information** dialog box if a default vendor is defined for the released product.
 
 You can maintain the external product identifiers by released product, released product variant, customer or customer group, or vendor or vendor group.
 
@@ -80,7 +79,7 @@ On the **Released products** page, follow one of these steps.
 - For customers, on the **Sell** tab, in the **Related information** group, select **External item description**.
 - For vendors, on the **Purchase** tab, in the **Related information** group, select **External item description**.
 
-On the **External item descriptions** page, you can associate the customer's or vendor's item number with a released product. This association must be done for each legal entity. The following information can be captured. Unfortunately, the labels are slightly misleading in the current version of Supply Chain Mangement. However, these labels might be changed in a future version.
+On the **External item descriptions** page, you can associate the customer's or vendor's item number with a released product. This association must be done for each legal entity. The following information can be captured. Unfortunately, the labels are slightly misleading in the current version of Supply Chain Management. However, these labels might be changed in a future version.
 
 | Field | Corresponding customer information | Corresponding vendor information |
 |-------|------------------------------------|----------------------------------|
@@ -109,7 +108,7 @@ In e-commerce, it's crucial that all parties speak a common language and refer t
 
 We recommend that you maintain the GTIN as a bar code. However, you can also maintain it on the **Item - GTIN** page. To open this page, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN codes**. Note that the GTIN isn't maintained as a global number. Instead, it's maintained by legal entity.
 
-In Supply Chain Mangement, you define packaging variants in the warehouse operations by defining specific units of measure. For example, an item might be stored in pieces, in bundles of six, in trays of 18, or in full pallets. A specific unit of measure will be defined for each of these packaging variants. Because the GTIN is typically related to the packaging unit of a product, the **Item - GTIN** page lets you maintain multiple GTIN codes per product and unit of measure. However, you can't use the same GTIN code more than one time for different items or product variants of a legal entity.
+In Supply Chain Management, you define packaging variants in the warehouse operations by defining specific units of measure. For example, an item might be stored in pieces, in bundles of six, in trays of 18, or in full pallets. A specific unit of measure will be defined for each of these packaging variants. Because the GTIN is typically related to the packaging unit of a product, the **Item - GTIN** page lets you maintain multiple GTIN codes per product and unit of measure. However, you can't use the same GTIN code more than one time for different items or product variants of a legal entity.
 
 To maintain **GTIN codes**, on the **Released products** page, on the **Manage inventory** tab, in the **Warehouse** group, select **GTIN**.
 
@@ -145,7 +144,7 @@ You can define two different number sequences:
 - The **Item number** number sequence for the item number per legal entity
 
 > [!NOTE]
-> You should use the item number as a separate identifier only when you migrate different legal entities from different sources that had different numbering systems. You should always try to use a product identifier that is unique across all legal entities. Therefore, you should set the **Manual** option to **Yes** for the **Item number** number sequence. In this way, the item number will follow the product number on creation. If Supply Chain Mangement isn't the leading system for new product numbers, you should set the **Manual** option to **Yes** for both the **Item number** and **Product number** number sequences.
+> You should use the item number as a separate identifier only when you migrate different legal entities from different sources that had different numbering systems. You should always try to use a product identifier that is unique across all legal entities. Therefore, you should set the **Manual** option to **Yes** for the **Item number** number sequence. In this way, the item number will follow the product number on creation. If Supply Chain Management isn't the leading system for new product numbers, you should set the **Manual** option to **Yes** for both the **Item number** and **Product number** number sequences.
 
 When you use the **Released product V2** entity to create products, multiple settings can affect how the number sequences are used to create the product number and item number:
 
