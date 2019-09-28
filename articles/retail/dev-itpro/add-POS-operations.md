@@ -33,8 +33,8 @@ ms.dyn365.ops.version: Application update 4
 
 This topic explains how to create a new point of sale (POS) operation and add it to the POS layout by using Button grid designer. This topic applies to the following applications where Platform update 8 and the Application update 4 hotfix are installed:
 
-- Microsoft Dynamics 365 for Finance and Operations
-- Microsoft Dynamics 365 Retail
+- Finance
+- Dynamics 365 Retail
 
 If you want your business logic to be run in the POS when users click a button, you should create POS operations. POS operations can run multiple activities or workflows. For example, they can open a new view, ask for user input, or run business logic. All standard and custom POS operations support pre-triggers and post-triggers.
 
