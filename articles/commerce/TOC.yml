@@ -1281,7 +1281,14 @@
 - name: Retail development and administration
   href: ../retail/dev-itpro/dev-retail-home-page.md
 - name: Online channel extensibility
+  href: e-commerce-extensibility/overview.md
   items:
+  - name: Get started
+    items:
+    - name: System requirements
+      href: e-commerce-extensibility/system-requirements.md
+    - name: Set up a development environment
+      href: e-commerce-extensibility/setup-dev-environment.md
   - name: Platform overview
     items:
     - name: Architectural overview
@@ -1312,8 +1319,14 @@
       href: e-commerce-extensibility/clone-starter-module.md
     - name: Add module configuration fields
       href: e-commerce-extensibility/add-module-config-fields.md
+    - name: Preview and debug modules
+      href: e-commerce-extensibility/test-module.md 
     - name: Debug modules
       href: e-commerce-extensibility/debug-modules.md
+    - name: Test modules by using mocks
+      href: e-commerce-extensibility/test-module-mock.md
+    - name: Test modules by using page mocks
+      href: e-commerce-extensibility/test-page-mock.md 
     - name: Container modules
       href: e-commerce-extensibility/container-modules.md
     - name: Create a layout container module
@@ -1324,6 +1337,8 @@
     items:
     - name: Module globalization
       href: e-commerce-extensibility/globalize-modules.md
+    - name: Request properties object
+      href: e-commerce-extensibility/request-properties-object.md
     - name: App settings
       href: e-commerce-extensibility/app-settings.md
     - name: Extend a module definition
@@ -1336,6 +1351,10 @@
     items:
     - name: Data actions overview
       href: e-commerce-extensibility/data-actions.md
+    - name: Test data actions with mocks
+      href: e-commerce-extensibility/test-data-action-mocks.md
+    - name: Page load data actions
+      href: e-commerce-extensibility/page-load-data-action.md
     - name: Event-based data actions
       href: e-commerce-extensibility/event-based-data-actions.md
     - name: Core data actions
@@ -1348,10 +1367,27 @@
       href: e-commerce-extensibility/batch-data-actions.md
     - name: Observable data actions
       href: e-commerce-extensibility/create-observable-data-action.md 
+    - name: Share state across modules
+      href: e-commerce-extensibility/share-state-across-modules.md
   - name: Develop themes
     items:
+    - name: Theming overview
+      href: e-commerce-extensibility/theming.md
     - name: Create a theme
       href: e-commerce-extensibility/create-theme.md
     - name: Configure theme settings
       href: e-commerce-extensibility/configure-theme-settings.md 
-   
+  - name: Inject script
+    items:
+    - name: Script injectors
+      href: e-commerce-extensibility/script-injector.md
+  - name: Telemetry and analytics
+    items: 
+    - name: Telemetry logger
+      href: e-commerce-extensibility/telemetry-logger.md
+  - name: Deployment and maintenance
+    items:
+    - name: Package configurations and deploy them to an online environment
+      href: e-commerce-extensibility/package-deploy.md
+    - name: SDK and core library updates
+      href: e-commerce-extensibility/sdk-updates.md
