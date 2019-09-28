@@ -42,12 +42,12 @@ This topic provides information about the **Purchase order approval** mobile wor
 ## Overview 
 Purchase orders that requires approval go through an approval workflow. The workflow can include various steps that require that one or more people take action. For example, a person might have to complete a task or approve the purchase order. 
 
-The **Purchase order approval** mobile workspace lets you easily view and respond to purchase orders from your mobile device. This workspace also lets you take the same workflow actions that you can take from the Finance and Operations, web client.
+The **Purchase order approval** mobile workspace lets you easily view and respond to purchase orders from your mobile device. This workspace also lets you take the same workflow actions that you can take from the web client.
 
 ## Prerequisites
-The prerequisites vary, depending on the version of Finance and Operations that has been deployed for your organization.
+The prerequisites vary, depending on the version of Supply Chain Mangement that has been deployed for your organization.
 
-### Prerequisites if you use Finance and Operations 
+### Prerequisites if you use Supply Chain Mangement 
 If Finance and Operations has been deployed for your organization, the system administrator must publish the **Purchase order approval** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or later
@@ -82,7 +82,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </table>
 
 ## Download and install the mobile app
-Download and install the Microsoft Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 - [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
