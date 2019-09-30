@@ -1030,8 +1030,6 @@
         items:
         - name: Add a recommendations control on POS devices
           href: add-recommendations-control-pos-screen.md
-        - name: Configure machine learning-powered product recommendations
-          href: tasks/configure-machine-learning-product-recommendations.md
       - name: Customer orders
         items:
         - name: Customer orders in MPOS
