@@ -30,8 +30,8 @@ ms.dyn365.ops.version: 10.0.0
 
 # Versioning and support
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This topic provides an overview of the versioning and breaking change policies for the Database Movement API.
 
