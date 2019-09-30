@@ -1026,8 +1026,6 @@
           href: pos-image.md
       - name: Product recommendations
         items:
-        - name: Personalized product recommendations
-          href: personalized-product-recommendations.md
         - name: Add a recommendations control on POS devices
           href: add-recommendations-control-pos-screen.md
         - name: Configure machine learning-powered product recommendations
