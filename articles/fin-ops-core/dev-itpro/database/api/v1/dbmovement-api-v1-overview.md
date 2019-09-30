@@ -30,8 +30,8 @@ ms.dyn365.ops.version: 10.0.0
 
 # API v1 reference
 
-[!include [banner](../../../../includes/banner.md)]
-[!include [banner](../../../../includes/preview-banner.md)]
+[!include [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/preview-banner.md)]
 
 Welcome to the Database Movement API reference for the v1 endpoint.  Resources available on the v1 endpoint (https://lcsapi.lcs.dynamics.com/databasemovement/v1) are in private preview status, and are receiving additional feedback.  Updates to the API may be breaking in nature. 
 
