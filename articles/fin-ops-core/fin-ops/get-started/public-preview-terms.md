@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: [Topic name]
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+title: Topic name
+description: Topic description
 author: ShellyBakke
 manager: AnnBe
 ms.date: 10/01/2019
