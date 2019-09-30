@@ -5,7 +5,7 @@ title: Preview features in Finance and Operations apps version 10.0.6 (November 
 description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.6. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/29/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
