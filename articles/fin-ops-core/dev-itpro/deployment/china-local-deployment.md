@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Finance and Operations apps - operated by 21Vianet in China
-description: This topic provides information about inance and Operations apps - operated by 21Vianet in China.
+title: Finance and Operations apps operated by 21Vianet in China
+description: This topic provides information about Finance and Operations apps operated by 21Vianet in China.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/20/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Finance and Operations - operated by 21Vianet in China
+# Finance and Operations apps operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
