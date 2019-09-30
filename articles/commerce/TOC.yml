@@ -4,7 +4,7 @@
   items:
   - name: Before you buy
     href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Sign up for preview subscription
+  - name: Sign up for preview subscriptions
     href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
   - name: One Version service updates 
     items:
