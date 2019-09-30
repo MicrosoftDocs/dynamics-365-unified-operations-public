@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Opt in to use ratings and reviews 
