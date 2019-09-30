@@ -1122,6 +1122,8 @@
     items:
     - name: Available mobile workspaces
       href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Asset management
+      href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
     - name: Company directory
       href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
     - name: Cost controlling
