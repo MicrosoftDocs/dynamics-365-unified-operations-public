@@ -68,6 +68,6 @@ The extension contains a datafile called 'RecoMockDataset.csv' which allows you 
 
 ## Additional Resources
 
-[Product recommendations overview](../retail/product-recommendations-overview.md)
+[Product recommendations overview](retail/product-recommendations.md)
 
-[Environment planning](../retail/environment-planning.md)
+[Environment planning](retail/environment-planning.md)
