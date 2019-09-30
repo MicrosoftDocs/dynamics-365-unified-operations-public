@@ -8,7 +8,7 @@
       items:
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
-      - name: Sign up for preview subscription
+      - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: One Version service updates 
         items:
@@ -52,9 +52,9 @@
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Finance and Operations operated by 21Vianet in China
+        - name: Finance and Operations apps operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Finance and Operations in France
+        - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: What's new or changed
         items:
