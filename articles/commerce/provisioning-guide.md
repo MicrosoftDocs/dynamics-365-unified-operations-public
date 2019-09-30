@@ -73,6 +73,16 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 ##### Log in to the LCS
 1. Log in to the LCS portal: https://lcs.dynamics.com
 1. Make sure that you are logged in with the same LCS account you used to request access to the Preview.
+##### Confirm that preview features are available and enabled
+1. On the LCS front page, scroll all the way to the right and click "**Preview feature management**" tile.
+1. Scroll down to the "PRIVATE PREVIEW FEATURES", make sure that the following features are available and enabled.
+	1. **e-Commerce Evaluation**
+	1. **Commerce Preview Program Environments**
+1. If you are unable to see these features in the list, please reach out to us with your account and tenant details. Please see "**Additional resources**" section for link to Yammer group and other contact information.
+
+![Preview management tile](./media/preview1.png)
+
+![Preview features](./media/preview2.png)
 ### Create project
 ##### Creating new project
 1. Click **+** to create a new project.
