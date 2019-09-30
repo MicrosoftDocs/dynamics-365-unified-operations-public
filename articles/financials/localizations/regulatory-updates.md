@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/23/2019
+ms.date: 09/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -50,30 +50,30 @@ For the latest regulatory update plans, refer to the following table.
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6(PEAP)/10.05HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
+|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
+|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
 |      August 2019          |   10.0.6(PEAP)      | Brazil      |   DRCST declaration SC   |
-|      August 2019          |   10.0.6(PEAP)/10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
+|      August 2019          |   10.0.6(PEAP), 10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
 |      August 2019          |   10.0.6(PEAP)      | Brazil      |   Tax statement CAT 42/18    |
 |      August 2019          |   10.0.6(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6(PEAP)/10.0.5HF/10.0.4HF/10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
-|      August/July 2019          |   10.0.5/10.0.4HF/10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
-|      July 2019          |   10.0.5/10.0.4HF/10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
+|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
+|      August - July 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
+|      July 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
 |      July 2019          |   10.0.5      | Brazil      |   Sped contributions practical guide 1.31. new guidance    |
 |      July 2019          |   10.0.5      | Mexico      |   MX -CFDI 3.3 - The detail of IEPS tax transactions in XML should be optional depending on customer profile    |
-|      June/July 2019          |   10.0.5/10.03HF      | United Kingdom      |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
+|      June - July 2019          |   10.0.5, 10.0.3HF      | United Kingdom      |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
 |      May 2019          |   10.0.4      | Brazil      |   Incoming fiscal document 66    |
-|      May 2019          |   10.0.4/10.0.3HF/10.02HF/10.0.1HF      | Brazil      |   NF-e Decree 54.308/18 - RS    |
-|      May 2019          |   10.0.4/10.0.3HF/10.0.2HF/10.0.1HF      | Brazil      |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e    |
-|      May 2019          |   10.0.4/10.0.3HF      | India      |   Display of "Place of supply" and "State" in the GST Tax Invoice    |
+|      May 2019          |   10.0.4, 10.0.3HF, 10.02HF, 10.0.1HF      | Brazil      |   NF-e Decree 54.308/18 - RS    |
+|      May 2019          |   10.0.4, 10.0.3HF, 10.0.2HF, 10.0.1HF      | Brazil      |   NF-e and NFC-e - Resolution 13/2019 and Ordinance SUCIEF 55/2019- RJ - new conditions for exempt tags output in NF-e    |
+|      May 2019          |   10.0.4, 10.0.3HF      | India      |   Display of "Place of supply" and "State" in the GST Tax Invoice    |
 |      May 2019          |   10.0.4      | Mexico      |   DIOT third party declaration - changes in layout 2019    |
 |      April 2019          |   10.0.3      | Brazil      |   ICMS fiscal document adjustments enable table 5.2    |
-|      April 2019          |   10.0.3/10.0.2HF/10.0.1HF      | Brazil      |   NF-e new NT 2018.005 - v.1.20    |
-|      April 2019          |   10.0.3/10.0.2HF/10.0.1HF      | Brazil     |   SPED ECD Layout 7    |
+|      April 2019          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazil      |   NF-e new NT 2018.005 - v.1.20    |
+|      April 2019          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazil     |   SPED ECD Layout 7    |
 |      April 2019          |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019    |
 |      April 2019          |   10.0.3      | India      |   Adjustment of tax in customs currency in BOE instead of doing in transaction currency    |
 |      April 2019          |   10.0.3      | India      |   Calculation of tax  in customs currency in BOE instead of doing in transaction currency)    |
-|      April 2019          |   10.0.3/10.02HF/10.0.1HF      | India      |   IEC number format change    |
+|      April 2019          |   10.0.3, 10.02HF, 10.0.1HF      | India      |   IEC number format change    |
 |      April 2019          |   10.0.3      | Lithuania      |   Lithuania i.SAF report let's user define system Sales tax codes in association with legal tax codes)    |
 |      April 2019          |   10.0.3      | Poland      |   SAF invoices (JPK_FA) v.2 from 1st of July 2019    |
 |      April 2019          |   10.0.2      | Italy      |   Italy: "new Spesometro" (Esterometro) to support file splitting by file volume and limits of number of records    |
