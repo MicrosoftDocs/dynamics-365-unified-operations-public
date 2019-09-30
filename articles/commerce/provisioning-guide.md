@@ -75,7 +75,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Make sure that you are logged in with the same LCS account you used to request access to the Preview.
 ##### Confirm that preview features are available and enabled
 1. On the LCS front page, scroll all the way to the right and click "**Preview feature management**" tile.
-1. Scroll down to the "PRIVATE PREVIEW FEATURES" and make sure that the following features are available and enabled.
+1. Scroll down to the "PRIVATE PREVIEW FEATURES" and make sure that the following features are available and enabled:
 	1. **e-Commerce Evaluation**
 	1. **Commerce Preview Program Environments**
 1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account and tenant details. Please see "**Additional resources**" section for information on how to contact.
