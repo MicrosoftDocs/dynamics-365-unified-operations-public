@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product recommendations on POS
-description: This topic describes using product recommendations on POS.
+description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
 manager: AnnBe
 ms.date: 10/01/19
