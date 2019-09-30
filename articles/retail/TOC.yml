@@ -8,7 +8,7 @@
       items:
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/retail/toc.json
-      - name: Sign up for preview subscription
+      - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: One Version service updates 
         items:
@@ -52,9 +52,9 @@
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Finance and Operations operated by 21Vianet in China
+        - name: Finance and Operations apps operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Finance and Operations in France
+        - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/retail/toc.json
       - name: What's new or changed
         items:
@@ -64,13 +64,13 @@
           href: get-started/whats-new-10-0-6.md
         - name: Retail 10.0.5
           href: get-started/whats-new-10-0-5.md
-        - name: What's new or changed in previous versions
+        - name: What's new or changed in Finance and Operations
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-          - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+          - name: Preview features in Finance and Operations apps 10.0.6 (November 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/retail/toc.json
-          - name: Finance and Operations 10.0.5 (October 2019)
+          - name: Finance and Operations apps 10.0.5 (October 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/retail/toc.json
           - name: Finance and Operations 10.0.4 (July 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/retail/toc.json
@@ -1408,7 +1408,7 @@
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
   - name: Dynamics 365 Commerce (Preview)
-    href: ../commerce/toc.yml
+    href: ../commerce/toc.yml  
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

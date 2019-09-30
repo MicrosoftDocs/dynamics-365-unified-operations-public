@@ -8,7 +8,7 @@
       items:
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-      - name: Sign up for preview subscription
+      - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: One Version service updates 
         items:
@@ -54,17 +54,17 @@
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Configure Warehousing for on-premises deployments
           href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Finance and Operations operated by 21Vianet in China
+        - name: Finance and Operations apps operated by 21Vianet in China
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Finance and Operations in France
+        - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
       - name: What's new or changed
         items:
         - name: What's new or changed home page
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-        - name: Preview features in Finance and Operations 10.0.6 (November 2019)
+        - name: Preview features in Finance and Operations apps 10.0.6 (November 2019)
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Finance and Operations 10.0.5 (October 2019)
+        - name: Finance and Operations apps 10.0.5 (October 2019)
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Finance and Operations 10.0.4 (July 2019)
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
