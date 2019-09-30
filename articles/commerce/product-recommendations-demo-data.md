@@ -70,4 +70,4 @@ The extension contains a datafile called 'RecoMockDataset.csv' which allows you 
 
 [Product recommendations overview](product-recommendations.md)
 
-[Environment planning](retail/environment-planning.md)
+[Environment planning](../fin-ops-core/environment-planning.md)
