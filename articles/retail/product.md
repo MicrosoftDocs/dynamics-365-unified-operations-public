@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 At its core, product Recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. To implement this feature on POS, follow the steps on [how to add recommendations to your POS devices.](add-recommendations-control-pos-screen.md) 
 
-For more information about product recommendations features, read the [product-recommendations overview.](product-recommendations.md) 
+For more information about product recommendations features, read the [product-recommendations overview.](commerce/product-recommendations.md) 
 
 ## Scenarios
 
@@ -78,5 +78,5 @@ To set up product recommendations, follow these steps:
 ## Additional resources
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
-[Product recommendations overview](product-recommendations.md)
+[Product recommendations overview](commerce/product-recommendations.md)
 [Enable product recommendations](commerce/enable-product-recommendations.md) 
