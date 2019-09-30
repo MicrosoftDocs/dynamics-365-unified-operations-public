@@ -42,7 +42,7 @@ apply prospectively and do not alter your or Microsoft’s rights relating to
 pre-updated software or services). IF YOU COMPLY WITH THIS AGREEMENT, YOU HAVE
 THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THIS AGREEMENT.
 
-1.	**INSTALLATION AND USE RIGHTS.**
+**INSTALLATION AND USE RIGHTS.**
 
 1.	**Internal Use.** You may (i) install and use any number of copies of
 the software to develop and test your customization packages you create
