@@ -104,4 +104,4 @@ There are two configurations options available. Choose the option that works bes
 
 [product recommendations on POS](product.md)
 
-[product recommendations overview](product-recommendations.md)
+[product recommendations overview](commerce/product-recommendations.md)
