@@ -31,6 +31,7 @@ ms.dyn365.ops.version: 8.1
 # Database movement operations home page
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.
 
@@ -41,7 +42,7 @@ Learn how to perform the individual operations on your Standard or Premier Accep
  * [Refresh database](database-refresh.md)
  * [Export a database](export-database.md)
  * [Import a database](import-database.md)
- * [Database point-in-time restore (PITR)](database-point-in-time-restore.md)
+ * [Point-in-time restore (PITR)](database-point-in-time-restore.md)
 
  ## Step-by-step tutorials
  Learn how to achieve common implementation scenarios using DataALM to your advantage:
@@ -50,6 +51,15 @@ Learn how to perform the individual operations on your Standard or Premier Accep
  * [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
  * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
  * [Destructive testing](dbmovement-scenario-destructivetests.md)
+
+ ## Database Movement API
+ Our Database Movement API enables you to integrate several of the above database movement operations in to your overall ALM process.  In addition, by using the API with your scheduling engine of choice, you can build in recurrence to execute daily or on-demand.
+ * [Overview](./api/dbmovement-api-overview.md)
+ * [Versioning and support](./api/dbmovement-api-versioning.md)
+ * [Authentication](./api/dbmovement-api-authentication.md)
+ * [Throttling](./api/dbmovement-abpi-throttling.md)
+ * [Reference](./api/v1/dbmovement-api-v1-overview.md)
  
+
  > [!IMPORTANT]
  > New features around point-in-time restore, and RESTful APIs are in private preview. To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
