@@ -30,8 +30,8 @@ ms.dyn365.ops.version: 10.0.0
 
 # Create database refresh
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../../includes/banner.md)]
+[!include [banner](../../../includes/preview-banner.md)]
 
 Create a database refresh between two environments.  Note that the same validation rules apply to the API as from the LCS environment details page.
 

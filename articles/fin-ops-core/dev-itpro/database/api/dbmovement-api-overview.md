@@ -30,8 +30,8 @@ ms.dyn365.ops.version: 10.0.0
 
 # Introducing the Database Movement API
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Database Movement API is a RESTful endpoint used for data lifecycle management of Microsoft Dynamics 365 environments. It provides a versioned set of capabilities that you can use to copy databases between environments, list and download database backups, with more actions coming in subsequent releases.
 
