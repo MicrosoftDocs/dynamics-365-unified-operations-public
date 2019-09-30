@@ -198,6 +198,223 @@
           items: 
           - name: Goods in transit from vendor
             href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+    - name: Asset management
+      items:
+      - name: Asset management overview
+        href: asset-management/index.md
+        items:
+        - name: Functional locations and assets
+          href: asset-management/overview/functional-locations-and-objects.md
+        - name: Assets and work orders
+          href: asset-management/overview/objects-and-work-orders.md     
+      - name: Setup for functional locations
+        items:
+        - name: Functional location lifecycle states
+          href: asset-management/setup-for-functional-locations/functional-location-stages.md
+        - name: Maintenance attribute types
+          href: asset-management/setup-for-functional-locations/functional-location-types.md
+        - name: Functional location types
+          href: asset-management/setup-for-functional-locations/specification-types.md
+      - name: Functional locations
+        items:
+        - name: Introduction to functional locations
+          href: asset-management/functional-locations/introduction-to-functional-locations.md
+        - name: Create functional locations
+          href: asset-management/functional-locations/create-functional-locations.md
+        - name: Install assets on functional locations
+          href: asset-management/functional-locations/install-objects-on-functional-locations.md
+      - name: Setup for assets
+        items:
+        - name: Asset types
+          href: asset-management/setup-for-objects/object-types.md
+        - name: Condition assessment
+          href: asset-management/setup-for-objects/condition-assessment.md
+        - name: Asset manufacturer and model
+          href: asset-management/setup-for-objects/product-and-model.md
+        - name: Counters
+          href: asset-management/setup-for-objects/counters.md
+        - name: Asset management parameters
+          href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+        - name: Asset lifecycle states
+          href: asset-management/setup-for-objects/object-stages.md
+        - name: Asset service levels
+          href: asset-management/setup-for-objects/object-priorities.md
+        - name: Asset criticalities
+          href: asset-management/setup-for-objects/object-criticalities.md
+        - name: Asset documents
+          href: asset-management/setup-for-objects/object-documents.md
+        - name: Maintenance workers and worker groups
+          href: asset-management/setup-for-objects/workers-and-worker-groups.md
+      - name: Assets
+        items: 
+        - name: Introduction to assets
+          href: asset-management/objects/introduction-to-objects.md
+        - name: Create an asset
+          href: asset-management/objects/create-an-object.md
+        - name: Multi-level assets
+          href: asset-management/objects/multi-level-objects.md
+        - name: Move, replace, and install assets
+          href: asset-management/objects/move-replace-and-install-objects.md
+        - name: Create assets based on purchase orders
+          href: asset-management/objects/create-objects-based-on-purchase-orders.md
+        - name: Asset BOM
+          href: /asset-management/objects/object-bom.md
+        - name: Asset event history
+          href: asset-management/objects/object-timeline.md
+        - name: Asset view
+          href: asset-management/objects/object-view.md
+        - name: Asset attribute overview
+          href: asset-management/objects/object-specification-overview.md
+      - name: Setup for maintenance requests
+        items:
+        - name: Maintenance requests
+          href: asset-management/setup-for-maintenance-requests/requests.md
+        - name: Maintenance request lifecycle states
+          href: asset-management/setup-for-maintenance-requests/request-stages.md
+        - name: Maintenance request types
+          href: asset-management/setup-for-maintenance-requests/request-types.md
+        - name: Responsible maintenance workers
+          href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+      - name: Manage maintenance requests
+        items:
+        - name: Maintenance requests
+          href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+        - name: Create a maintenance request
+          href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+        - name: Create a work order from a maintenance request
+          href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+        - name: Asset loans
+          href: asset-management/manage-maintenance-requests/asset-loan.md
+        - name: Inbound and outbound assets
+          href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+        - name: Maintenance request reports
+          href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+      - name: Setup for work orders
+        items:
+        - name: Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists
+          href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+        - name: Work order lifecycle states
+          href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+        - name: Work order types
+          href: asset-management/setup-for-work-orders/work-order-types.md
+        - name: Work order project setup
+          href: asset-management/setup-for-work-orders/work-order-project-setup.md
+        - name: Service level and description
+          href: asset-management/setup-for-work-orders/service-level-and-description.md
+        - name: Scheduled execution
+          href: asset-management/setup-for-work-orders/scheduled-execution.md
+        - name: Fault management
+          href: asset-management/setup-for-work-orders/fault-management.md
+      - name: Work orders
+        items:
+        - name: Introduction to work orders
+          href: asset-management/work-orders/introduction-to-work-orders.md
+        - name: Manually created work orders
+          href: asset-management/work-orders/manually-created-workorders.md
+        - name: Maintenance forecasts
+          href: asset-management/work-orders/maintenance-forecasts.md
+        - name: Procurement
+          href: asset-management/work-orders/procurement.md
+        - name: Manual update of asset counters
+          href: asset-management/work-orders/manual-update-of-asset-counters.md
+        - name: Automatic update of asset counters
+          href: asset-management/work-orders/automatic-update-of-asset-counters.md
+        - name: Maintenance checklists
+          href: asset-management/work-orders/maintenance-checklists.md
+        - name: Maintenance downtime
+          href: asset-management/work-orders/maintenance-downtime.md
+        - name: Add fault to work order
+          href: asset-management/work-orders/add-fault-to-work-order.md
+        - name: Work order report
+          href: asset-management/work-orders/work-order-report.md
+        - name: Work order pools
+          href: asset-management/work-orders/work-order-pools.md
+        - name: Active work order maintenance jobs
+          href: asset-management/work-orders/active-work-order-jobs-overview.md
+        - name: Work orders and fixed assets
+          href: asset-management/work-orders/work-orders-and-fixed-assets.md
+      - name: Integration to Project management and accounting
+        items:
+        - name: Forecasts, work orders, and projects
+          href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+      - name: Preventive and reactive maintenance
+        items: 
+        - name: Preventive maintenance overview
+          href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+        - name: Maintenance plans
+          href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+        - name: Schedule maintenance plans
+          href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+        - name: Maintenance rounds
+          href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+        - name: Maintenance schedule
+          href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+        - name: Maintenance schedule cost
+          href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+        - name: Create work orders
+          href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+        - name: Maintenance downtime
+          href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+      - name: Capacity planning
+        items:
+        - name: Calculate capacity load
+          href: asset-management/capacity-planning/calculate-capacity-load.md
+        - name: Calculate item forecast
+          href: asset-management/capacity-planning/calculate-item-forecast.md
+      - name: Work order scheduling
+        items: 
+        - name: Maintenance worker calendar and scheduling
+          href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+        - name: Preferred maintenance workers
+          href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+        - name: Schedule work orders
+          href: asset-management/work-order-scheduling/schedule-work-orders.md
+        - name: Dispatch work order
+          href: asset-management/work-order-scheduling/dispatch-work-order.md
+        - name: Schedule work order on specific date and time
+          href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+        - name: Scheduled work order maintenance jobs
+          href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+        - name: Calculate capacity load on scheduled work orders
+          href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+      - name: Consumption
+        items: 
+        - name: Register consumption
+          href: asset-management/consumption/register-consumption.md
+        - name: Create consumption reports
+          href: asset-management/consumption/create-consumption-reports.md
+      - name: Warranty
+        items: 
+        - name: Warranty agreement
+          href: asset-management/warranty/warranty-agreement.md
+        - name: Warranty on assets and asset types
+          href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+      - name: Maintenance budgets
+        items:
+        - name: Maintenance budgets
+          href: asset-management/maintenance-budgets/create-maintenance-budget.md
+        - name: Update maintenance budgets
+          href: asset-management/maintenance-budgets/update-maintenance-budget.md
+      - name: Controlling and reporting
+        items: 
+        - name: Cost and date control
+          href: asset-management/controlling-and-reporting/cost-and-date-control.md
+        - name: Work hour control
+          href: asset-management/controlling-and-reporting/work-hour-control.md
+        - name: Asset fault cost control
+          href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+        - name: Asset fault analysis
+          href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+        - name: Asset KPIs
+          href: asset-management/controlling-and-reporting/asset-kpis.md
+        - name: Item where used
+          href: asset-management/controlling-and-reporting/item-where-used.md
+        - name: Maintenance status
+          href: asset-management/controlling-and-reporting/maintenance-status.md
+    - name: Data management
+      items:
+      - name: Target entities
+        href: asset-management/data-management/target-entities.md
     - name: Cost accounting
       items:
       - name: Cost accounting home page
