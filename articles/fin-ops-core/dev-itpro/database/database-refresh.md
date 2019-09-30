@@ -94,7 +94,7 @@ Here is the list of requirements and conditions of operation for a database refr
 ## Known issues
 
 ### Refresh is denied for environments running Platform update 11 or earlier
-The database refresh process can't be completed if the environment is running Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 or earlier.  In December 2019, this will increase to Platform update 20. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
+The database refresh process can't be completed if the environment is running Platform update 11 or earlier.  In December 2019, this will increase to Platform update 20. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
