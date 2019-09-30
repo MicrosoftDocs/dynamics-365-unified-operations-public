@@ -29,7 +29,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.6
 
 ---
-# Preview features in Finance and Operations apps for version 10.0.6 (November 2019)
+# Preview features in Finance and Operations apps version 10.0.6 (November 2019)
 
 [!include [banner](../includes/banner.md)]
 
