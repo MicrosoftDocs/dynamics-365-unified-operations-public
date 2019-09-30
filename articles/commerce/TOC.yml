@@ -1136,7 +1136,7 @@
     href: manage-reviews.md
   - name: Configure ratings and reviews
     href: configure-ratings-reviews.md
-- name: Recommendations
+- name: Omni-channel product recommendations
   items:
   - name: Product recommendations
     href: product-recommendations.md
@@ -1148,8 +1148,16 @@
     href: create-editorial-recommendation-lists.md
   - name: Manage AI-ML-based product recommendation results
     href: modify-product-recommendation-results.md
+  - name: Onmi-channel product recommendations using demo data
+    href: product-recommendations-demo-data.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
+  - name: POS experiences
+    items: 
+    - name: Product recommendations on POS 
+      href: ../retail/product.md
+    - name: Add a recommendations control on POS devices
+      href: ../retail/add-recommendations-control-pos-screen
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
