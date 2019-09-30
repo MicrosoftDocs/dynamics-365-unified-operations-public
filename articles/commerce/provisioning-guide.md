@@ -36,6 +36,8 @@ ms.dyn365.ops.version:
 
 This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment. Before you begin, we recommend that you at least skim through the documentation to get an idea of what the process entails and what the guide contains.
 
+*Note: If you have not been granted access to the Microsoft Dynamics 365 Commerce Preview yet, you can request preview access from the [Commerce website](https://aka.ms/Dynamics365CommerceWebsite).*
+
 ## Summary
 To provision the environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit also have some specific parameters you need to use to start the e-Commerce provisioning later. The instructions in this guide contain all the required steps you need to take and parameters you need to use.
 
@@ -55,6 +57,8 @@ The following are prerequisites for provisioning your Dynamics 365 Preview envir
 * You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same SG as the system admin group above)
 ## Provisioning preview environment
 These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce Preview environment. After successfully completing these steps, you will have a Preview environment that is ready to be configured. All the activities described here take place in the LCS portal.
+
+*Please note that the preview access is tied to the LCS account and organization you specified in your preview application. You need to use that same account for provisioning. If you have to use different LCS account or tenant for the Preview environment, you need to provide us with those details. For contact information, please see "**Additional resources**" section below.*
 ### Before starting
 ##### Grant access to e-Commerce applications
 1. For this step, you need your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. The easiest way to accomplish this is to assemble a URL like this:
@@ -121,6 +125,9 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 
 ![Project creation - versions](./media/import.png)
 ### Deploy environment
+
+*Note: It is possible that steps 6, 7 and/or 8 are not shown to you as the screens with single option are skipped. When you are in the environment parameters view, please confirm that you have the text "**Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)**" right above "**Environment name**"-field. (Screenshot below)*
+
 1. From the top menu, select **Cloud-hosted environments**.
 1. Click **+ Add** to add ahttps://lcs.dynamics.com/v2n environment.
 1. For **Application version**, select **10.0.6**.
@@ -130,7 +137,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For environment topology, choose **Dynamics 365 Commerce (Preview) - Demo**.
 1. If you configured a single Azure Connector earlier, that will be used for this environment. If you configured multiple Azure Connectors, you have the option to select which connector you would like to use: **East US**, **East US 2**, **West US** or **West US 2** (recommended for best end-to-end performance)
 1. Enter an **Environment name**.
-1. Adjust the VM size as you see fit.
+1. Adjust the VM size as you see fit. (Recommended VM SKU is **D13 v2**)
 1. Leave **Advanced settings** as they are.
 1. After studying the pricing and licensing terms on the screen, check the box to indicate agreement.
 1. Click **Next**.
@@ -152,7 +159,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
 1. For region, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For version, specify **XXXXX**.
+1. For "**Select a version**", first select "Specify a version" from the drop down list, then specify **XXXXX** in the text field that appears below.
 1. Enable **Apply extension**.
 1. From the list of extensions, choose **Dynamics 365 Commerce Preview Demo Extension**.
 1. Click **Initialize**.
@@ -170,6 +177,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For **AAD security group for system admin**, enter the AAD SG ID that you wish to use as e-Commerce system admin group.
 1. For **AAD security group for ratings and review moderator**, enter the AAD SG ID that you wish to use as Ratings and Reviews moderator group.
 1. Leave the B2C values empty (7 fields that start with B2C).
+1. Leave "**Enable ratings and review service**" enabled.
 1. Click **Initialize**.
 1. You are returned to the **Retail management** view with the **e-Commerce (Preview)** tab activated. Your e-Commerce initialization has started.
 1. Before proceeding, wait until your e-Commerce initialization status is **INITIALIZATION SUCCESSFUL**.
@@ -263,6 +271,16 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Select **Yes** in the **Batch processing** field.
 1. Click **Recurrence**.
 1. Set the **Recurrence pattern** to **Minutes**.
+1. Select the **No end date** option.
+1. In the **Count** field, enter **2**.
+1. Click **OK**.
+1. Click **OK**.
+##### Scheduling a recurring email distributor batch job
+1. Log in to the environment (HQ).
+1. Using the menu on the left, go to **Modules > System administration > Periodic tasks > Email processing > Email distributor batch.**.
+1. Expand the **Run in the background** section.
+1. Select **Yes** in the **Batch processing** field.
+1. Click **Recurrence**.
 1. Select the **No end date** option.
 1. In the **Count** field, enter **2**.
 1. Click **OK**.
