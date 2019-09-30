@@ -81,14 +81,6 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
 1. You are sent to the project view.
-
-![Project creation - versions](./media/project1.png)
-
-![Project creation - topology 1](./media/project2.png)
-
-![Project creation - topology 2](./media/project3.png)
-
-![Project creation - environment parameters](./media/project4.png)
 ##### Add Azure Connector
 1. If you are a partner, click **Project settings** from the tools tiles to the far right.
 1. If you are a customer, choose **Project settings** from the top menu.
@@ -146,6 +138,14 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. You will return to the **Cloud-hosted environments** view and your environment should appear in the list.
 1. Your requested environment will show as queued and then deploying. It will take some time for all of the environment workflows to complete, so please check back after a few hours (approximately 6 – 9 hours).
 1. Before proceeding, make sure that your environment status is **Deployed**.
+
+![Project creation - versions](./media/project1.png)
+
+![Project creation - topology 1](./media/project2.png)
+
+![Project creation - topology 2](./media/project3.png)
+
+![Project creation - environment parameters](./media/project4.png)
 ### Initialize RCSU
 1. While in the **Cloud-hosted environments** view, select your environment from the list.
 1. From the environment view on the right side of the screen, click **Full details**. The environment details view will display.
@@ -188,7 +188,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 
 ### Configure POS
 ##### Associate worker with your identity
-1. Using the menu on the left, go to **Human resources > Workers > Workers**.
+1. Using the menu on the left, go to **Modules > Human resources > Workers > Workers**.
 1. In the list, find and select record **000713 - Andrew Collette**.
 1. On the Action Pane, click **Retail**.
 1. Click **Associate existing identity**.
@@ -224,7 +224,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 ### Set up and run jobs
 ##### Scheduling a recurring product availability job
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Retail > Retail IT > Products and inventory > Product availability**.
+1. Using the menu on the left, go to **Modules > Retail > Retail IT > Products and inventory > Product availability**.
 1. Expand the **Run in the background** section.
 1. Select **Yes** in the **Batch processing** field.
 1. Click **Recurrence**.
@@ -233,7 +233,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring P-job
-1. Using the menu on the left, go to **All workspaces > Retail IT**.
+1. Using the menu on the left, go to **Workspaces > Retail IT**.
 1. Click **Distribution schedule**.
 1. Select **P-0001**.
 1. Click **Create batch job**.
@@ -245,7 +245,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling recurring order synchronization
-1. Using the menu on the left, go to **All workspaces > Retail store financials**.
+1. Using the menu on the left, go to **Workspaces > Retail store financials**.
 1. Under **Posting** on the right side-menu, click **Synchronize orders**.
 1. In the **Organization hierarchy** field, select **Retail Stores by Region**.
 1. Make sure that the root node is selected.
@@ -258,7 +258,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring send notifications job
-1. Using the menu on the left, go to **Retail > Retail IT > Email and notifications > Send email notification**.
+1. Using the menu on the left, go to **Modules > Retail > Retail IT > Email and notifications > Send email notification**.
 1. Expand the **Run in the background** section.
 1. Select **Yes** in the **Batch processing** field.
 1. Click **Recurrence**.
@@ -268,7 +268,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Run full data sync
-1. Using the menu on the left, go to **Retail > Headquarters setup > Retail scheduler > Channel database**.
+1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
 1. **Default** channel should be selected from the list on the left. Select the other channel available.
 1. Click **Full data sync** from the action pane.
 1. Enter **9999** as the distribution schedule.
@@ -346,7 +346,7 @@ https://cms-ppe-imageresizer-mr.trafficmanager.net/cms/api/{CMS_TENANT_NAME}/ima
 Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL available when performing the following steps:
 
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Retail > Channel setup > Channel profiles**.
+1. Using the menu on the left, go to **Modules > Retail > Channel setup > Channel profiles**.
 1. Click **Edit**.
 1. From the **Profile properties**, replace the property value for **Media Server Base URL** with the URL you created earlier (DAM Base URL).
 1. Select the other channel from the list on the left, under **Default** channel.
@@ -357,7 +357,7 @@ Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL a
 ### Configure email server (optional)
 Please note that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **System administration > Setup > Email > Email parameters**.
+1. Using the menu on the left, go to **Modules > System administration > Setup > Email > Email parameters**.
 1. Click the **SMTP settings** tab.
 1. In the **Outgoing mail server field**, type the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number (default is the 25 when not using SSL).
@@ -371,7 +371,7 @@ Please note that the SMTP server or email service you enter here must be accessi
 1. Click **Send test email**.
 ### Configure email templates (optional)
 The email template for each transactional event that you wish to send emails for needs to be updated with a valid sender email address.
-1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**.
+1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
 1. Click **Show list**.
 1. For each of the templates in the list:
 	1. In the **Sender email** field, type the sender email address for this email template.
@@ -387,7 +387,7 @@ You might want to customize the email templates to use different images or updat
 	1. Pick order template
 1. Customize the templates using a text or HTML editor. Please see a list of supported tokens below.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**.
+1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
 1. Expand the list on the left to see all the templates.
 1. For each of the templates you wish to customize, perform the following steps:
 	1. Select the template from the list.
