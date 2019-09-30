@@ -5,7 +5,7 @@ title: Product recommendations on POS
 description: This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
 author: bebeale
 manager: AnnBe
-ms.date: 9/27/19
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 At its core, product Recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. To implement this feature on POS, follow the steps on [how to add recommendations to your POS devices.](add-recommendations-control-pos-screen.md) 
 
-For more information about product recommendations features, read the [product-recommendations overview.](product-recommendations-overview.md) 
+For more information about product recommendations features, read the [product-recommendations overview.](product-recommendations.md) 
 
 ## Scenarios
 
@@ -62,7 +62,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
 To set up product recommendations, follow these steps:
 
 1. Ensure your service has been updated to the **10.0.6 build.**
-2. Follow the instructions on how to [enable product recommendations](enable-product-recommendations.md) for your business.
+2. Follow the instructions on how to [enable product recommendations](commerce/enable-product-recommendations.md) for your business.
 3. Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**, and then drop the **recommendations** control where needed.
 4. Go to **Retail parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
 5. To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
@@ -73,10 +73,10 @@ To set up product recommendations, follow these steps:
 
 - Navigate to **Retail Parameters** \> **Recommendation lists** \> **Disable product recommendations** and run **Global configuration job \[9999\]**. 
 - If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.
-- If you have additional questions, check out the [Recommendations FAQ](faq-recommendations.md) for more information.
+- If you have additional questions, check out the [Recommendations FAQ](commerce/faq-recommendations.md) for more information.
 
 ## Additional resources
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
-[Product recommendations overview](product-recommendations-overview.md)
-[Enable product recommendations](enable-product-recommendations.md) 
+[Product recommendations overview](product-recommendations.md)
+[Enable product recommendations](commerce/enable-product-recommendations.md) 
