@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable omni-channel product recommendations
+title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 for Commerce customers. 
 author: bebeale
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Enable omni-channel product recommendations
+# Enable product recommendations
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
