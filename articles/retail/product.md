@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product recommendations on POS
-description: This topic applies to Dynamics 365 for Retail and Dynamics 365 for Finance and Operations.
+description: This topic describes using product recommendations on POS.
 author: bebeale
 manager: AnnBe
 ms.date: 10/01/19
