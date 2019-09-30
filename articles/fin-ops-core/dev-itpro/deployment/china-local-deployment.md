@@ -92,7 +92,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
--   [Embedded PowerApps](../../fin-and-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
+-   [Embedded PowerApps](../../../fin-and-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
 
 -   [Data integration by using Common Data Service](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
 
