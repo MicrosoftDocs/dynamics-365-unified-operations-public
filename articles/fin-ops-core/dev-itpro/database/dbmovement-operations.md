@@ -55,9 +55,9 @@ Learn how to perform the individual operations on your Standard or Premier Accep
  ## Database Movement API
  Our Database Movement API enables you to integrate several of the above database movement operations in to your overall ALM process.  In addition, by using the API with your scheduling engine of choice, you can build in recurrence to execute daily or on-demand.
  * [Overview](./api/dbmovement-api-overview.md)
- * [Versioning and support](./api/dbmovement-api-versioning.md)
+ * [Versioning and support](./api/dbmovement-api-versioning-support.md)
  * [Authentication](./api/dbmovement-api-authentication.md)
- * [Throttling](./api/dbmovement-abpi-throttling.md)
+ * [Throttling](./api/dbmovement-api-throttling.md)
  * [Reference](./api/v1/dbmovement-api-v1-overview.md)
  
 
