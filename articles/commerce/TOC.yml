@@ -1136,7 +1136,7 @@
     href: manage-reviews.md
   - name: Configure ratings and reviews
     href: configure-ratings-reviews.md
-- name: Recommendations
+- name: Omni-channel product recommendations
   items:
   - name: Product recommendations
     href: product-recommendations.md
@@ -1148,8 +1148,16 @@
     href: create-editorial-recommendation-lists.md
   - name: Manage AI-ML-based product recommendation results
     href: modify-product-recommendation-results.md
+  - name: Onmi-channel product recommendations using demo data
+    href: product-recommendations-demo-data.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
+  - name: POS experiences
+    items: 
+    - name: Product recommendations on POS 
+      href: ../retail/product.md
+    - name: Add a recommendations control on POS devices
+      href: ../retail/add-recommendations-control-pos-screen.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
@@ -1279,7 +1287,221 @@
   - name: Configure retail workers
     href: ../retail/tasks/worker.md
 - name: Retail development and administration
-  href: ../retail/dev-itpro/dev-retail-home-page.md
+  items:
+  - name: Retail development and administration overview
+    href: ../retail/dev-itpro/dev-retail-home-page.md
+  - name: Architecture
+    items:
+    - name: Retail components
+      href: ../retail/retail-components.md
+    - name: Retail Server architecture
+      href: ../retail/dev-itpro/retail-server-architecture.md
+    - name: Select an in-store topology
+      href: ../retail/dev-itpro/retail-in-store-topology.md
+    - name: Commerce Data Exchange and retail channel communications
+      href: ../retail/dev-itpro/define-retail-channel-communications-cdx.md
+    - name: Retail Modern POS architecture
+      href: ../retail/dev-itpro/retail-modern-pos-architecture.md
+    - name: Retail online store publishing architecture
+      href: ../retail/dev-itpro/retail-online-store-publishing-architecture.md
+    - name: Retail Channel Performance Power BI content
+      href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Payment Application Data Security Standards (PA-DSS) certification
+      href: ../retail/dev-itpro/PA-DSS-Certification.md
+    - name: Retail capabilities available in on-premises deployments
+      href: ../retail/retail-onprem.md
+  - name: Deployment and hotfixes
+    items:
+    - name: Retail Store Scale Unit
+      href: ../retail/dev-itpro/retail-store-system-begin.md
+    - name: Configure and install Retail Store Scale Unit
+      href: ../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md
+    - name: Retail Modern POS configuration and installation
+      href: ../retail/retail-modern-pos-device-activation.md
+    - name: Manage Retail accounts and devices from headquarters
+      href: ../retail/set-up-activation-accounts-validate-devices-hq.md
+    - name: Retail POS device activation
+      href: ../retail/dev-itpro/retail-device-activation.md
+    - name: Help secure Cloud POS in shared environments
+      href: ../retail/dev-itpro/secure-retail-cloud-pos.md
+    - name: Retail Hardware Station configuration and installation
+      href: ../retail/retail-hardware-station-configuration-installation.md
+    - name: Mass deployment of Retail self-service components
+      href: ../retail/dev-itpro/retail-mass-deployment.md
+    - name: Retail component events for diagnostics and troubleshooting
+      href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+    - name: Apply a deployable package
+      href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Upgrade and N-1 support
+    items:
+    - name: Upgrade and N-1 support for Retail
+      href: ../retail/dev-itpro/overview-upgrade-n-minus1.md
+    - name: Phased Rollout (N-1) installation, configuration, and cutover
+      href: ../retail/dev-itpro/n-1-installation-configuration.md
+    - name: Upgrade the Retail channel extension to the latest Retail SDK
+      href: ../retail/dev-itpro/retailSDK-update.md
+  - name: Implementation guidance
+    items:
+    - name: Device management implementation guidance
+      href: ../retail/implementation-considerations-devices.md
+  - name: Environment configuration
+    items:
+    - name: Add links to your organization's legal terms and privacy statement
+      href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Manage Bing Maps
+      href: ../retail/dev-itpro/manage-bing-maps.md
+  - name: Localize Retail extension resources and label files
+    href: ../retail/dev-itpro/extension-resource-localization.md
+  - name: Point of sale extensibility
+    items:
+    - name: Retail POS screen layouts
+      href: ../retail/pos-screen-layouts.md
+    - name: Open URL in POS
+      href: ../retail/Open-URL-in-POS.md
+    - name: Install the POS Layout designer
+      href: ../retail/install-pos-layout-designer.md
+    - name: Retail Modern POS in offline mode
+      href: ../retail/dev-itpro/retail-modern-pos-offline.md
+    - name: Extend the POS Dual display view
+      href: ../retail/dev-itpro/pos-dual-display-extension.md
+    - name: Retail Modern POS and Cloud POS trigger extensibility
+      href: ../retail/dev-itpro/modern-pos-trigger-extensibility.md
+    - name: Add custom controls to POS views
+      href: ../retail/dev-itpro/pos-custom-control.md
+    - name: Add POS operations to POS layouts using Button grid designer
+      href: ../retail/dev-itpro/add-POS-operations.md  
+    - name: Retail POS APIs
+      href: ../retail/dev-itpro/POS-APIs.md
+    - name: POS payment extension
+      href: ../retail/dev-itpro/pos-payment-extension.md
+    - name: Support for external gift cards
+      href: ../retail/dev-itpro/gift-card.md
+    - name: Create and apply branding to the Retail Experience app
+      href: ../retail/dev-itpro/create-retail-experience-app.md
+    - name: Set up POS Hybrid app on Android and iOS
+      href: ../retail/dev-itpro/hybridApp.md
+    - name: Override POS request handler
+      href: ../retail/dev-itpro/pos-handler.md
+    - name: View POS extension package information
+      href: ../retail/dev-itpro/view-pos-extension-package-details.md
+    - name: Test recorder and Regression suite automation tool for Retail Cloud POS
+      href: ../retail/dev-itpro/pos-rsat.md
+  - name: Hardware Station and extensibility
+    href: ../retail/dev-itpro/hardware-station-extensibility.md
+  - name: Integrate POS with a new hardware device
+    href: ../retail/dev-itpro/hardware-device-extension.md
+  - name: Retail Server extensibility
+    items:
+    - name: Extend a Retail Server OData controller
+      href: ../retail/dev-itpro/extend-retail-server-odata-controller.md
+    - name: Create a Web API controller for Retail Server
+      href: ../retail/dev-itpro/odata-controllers-api.md
+    - name: Retail Server customer and consumer APIs
+      href: ../retail/dev-itpro/retail-server-customer-consumer-api.md
+    - name: Extend the default Retail Server metadata controller
+      href: ../retail/dev-itpro/extend-metadata.md
+    - name: Call the CRT service in offline mode
+      href: ../retail/dev-itpro/call-crt-service-offline.md
+    - name: Create new Retail Server extension
+      href: ../retail/dev-itpro/retail-server-extension.md
+  - name: Commerce Runtime (CRT) extensibility
+    items:
+    - name: CRT architecture and configuration
+      href: ../retail/dev-itpro/commerce-runtime-overview.md
+    - name: CRT services
+      href: ../retail/dev-itpro/crt-services.md
+    - name: CRT and Retail Server extensibility
+      href: ../retail/dev-itpro/commerce-runtime-extensibility.md
+    - name: Add customer preference data to channel databases
+      href: ../retail/dev-itpro/add-customer-preference-channel.md
+    - name: Manage secrets for Retail channels
+      href: ../retail/dev-itpro/manage-secrets.md
+    - name: Add properties to sales orders
+      href: ../retail/dev-itpro/add-properties-sales-order.md
+    - name: CRT extensibility and triggers
+      href: ../retail/dev-itpro/commerce-runtime-extensibility-trigger.md
+    - name: Block transactions using triggers
+      href: ../retail/dev-itpro/trigger-example-blocking-transaction.md
+    - name: Implement a return policy using triggers
+      href: ../retail/dev-itpro/trigger-example-return-policy.md
+  - name: e-Commerce extensibility
+    items:
+    - name: Configure online stores
+      href: ../retail/dev-itpro/configure-online-store.md
+    - name: Configure authentication providers
+      href: ../retail/dev-itpro/configure-authentication-providers.md
+    - name: e-Commerce platform
+      href: ../retail/dev-itpro/ecommerce-platform.md
+    - name: e-Commerce platform SDK
+      href: ../retail/dev-itpro/ecommerce-platform-sdk.md
+  - name: Payment connector extensibility
+    items:
+    - name: Create a payment integration for a payment terminal
+      href: ../retail/dev-itpro/end-to-end-payment-extension.md
+    - name: Implementing a payment connector and payment device (white paper)
+      href: https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf
+    - name: Deploy payment connectors
+      href: ../retail/dev-itpro/deploy-payment-connector.md
+    - name: Create custom localized error messages for payment terminal extensions
+      href: ../retail/dev-itpro/payment-custom-error-messages.md
+    - name: Create Windows installers for payment connectors
+      href: ../retail/dev-itpro/create-windows-installer-payment-connector.md
+    - name: Payment data use
+      href: ../retail/payment-connector-data-fields.md
+    - name: Enable duplicate payment protection for payment connector
+      href: ../retail/dev-itpro/duplicate-payment-protection.md
+  - name: Retail SDK
+    items:
+    - name: Retail SDK architecture
+      href: ../retail/dev-itpro/retail-sdk/retail-sdk-overview.md
+    - name: Upcoming changes in the Retail SDK
+      href: ../retail/dev-itpro/UpcomingSDKChanges.md
+    - name: Merge the build systems for Retail and Finance and Operations
+      href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+    - name: Retail SDK extensibility samples
+      href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+    - name: Create retail deployable packages
+      href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md
+    - name: Retail SDK samples
+      href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md
+    - name: Extension points for packing slips
+      href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md
+    - name: Channel database extensions
+      href: ../retail/dev-itpro/channel-db-extensions.md
+    - name: Enable custom CDX synchronization via extension
+      href: ../retail/dev-itpro/cdx-extensibility.md
+    - name: Add custom fields to the POS Totals panel
+      href: ../retail/dev-itpro/custom-field-pos-totals.md
+    - name: Define and set order attributes
+      href: ../retail/dev-itpro/order-attributes.md
+    - name: Customer attributes
+      href: ../retail/dev-itpro/customer-attributes.md
+    - name: Retail Typescript and C# proxies
+      href: ../retail/dev-itpro/typescript-proxy-retail-pos.md
+    - name: Run the Retail POS samples
+      href: ../retail/dev-itpro/pos-run-samples.md
+    - name: Extend POS views to add custom columns and app bar buttons
+      href: ../retail/dev-itpro/pos-view-extension.md
+    - name: Add custom controls to Retail Modern POS transaction pages
+      href: ../retail/dev-itpro/pos-custom-transaction.md
+    - name: Add custom columns to a POS transaction grid
+      href: ../retail/dev-itpro/pos-custom-transaction-column.md
+    - name: Call POS APIs or operations from POS extensions
+      href: ../retail/dev-itpro/pos-api-extension.md
+    - name: Retail Modern POS triggers and printing
+      href: ../retail/dev-itpro/pos-trigger-printing.md
+    - name: Add custom controls to non-screen designer-based POS views
+      href: ../retail/dev-itpro/pos-control-non-screen.md
+    - name: Development in cloud-hosted dev environments without admin access
+      href: ../retail/dev-itpro/cloud-dev-box.md
+    - name: Show custom notifications in POS
+      href: ../retail/dev-itpro/extend-pos-notification.md
+    - name: Sign MPOS with code signing certificate
+      href: ../retail/dev-itpro/pos-app-signing-certificate.md
+  - name: Commerce runtime
+    items:
+    - name: Loyalty extension
+      href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md
 - name: Online channel extensibility
   href: e-commerce-extensibility/overview.md
   items:
