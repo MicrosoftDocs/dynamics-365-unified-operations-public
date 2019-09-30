@@ -71,19 +71,21 @@ These capabilities will handle the following features:
 ## Revenue pricing
 Users can enter a different price that they will recognize as different from what they charge the customer.
 
-[![Revenue pricing screenshot](./accounts-receivable/media/revenuepricing.png)](./accounts-receivable/media/revenuepricing.png)
+[![Revenue pricing screenshot](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)
 
 ## Revenue schedules
 Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
 
-[![Revenue schedules screenshot](../accounts-receivable/media/revenueschedules.png)](../accounts-receivable/media/revenueschedules.png)
+[![Revenue schedules screenshot](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/rev-rec-whats-new-2-revenue-schedules.png)
 
 ## Multiple sales order reallocation
 
-[![Multiple sales order reallocation screenshot](/accounts-receivable/media/multiplesalesorderreallocation.png)](/accounts-receivable/media/multiplesalesorderreallocation.png)
+[![Multiple sales order reallocation screenshot](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)
 
 ## Workspace 
 The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
+
+[![Revenue recognition workspace screenshot](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)
 
 ## Project contact committed detail
 You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
